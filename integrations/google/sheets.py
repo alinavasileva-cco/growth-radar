@@ -22,7 +22,7 @@ def _client_from_env() -> gspread.Client:
 
 
 def sync_opportunities_to_sheet(opportunities: Iterable[dict]) -> int:
-    """Перезаписывает лист Opportunities актуальным рейтингом компаний."""
+    """Перезаписывает лист Companies актуальной сегментированной базой."""
     spreadsheet_id = os.getenv("GOOGLE_SHEET_ID", "").strip()
     if not spreadsheet_id:
         raise RuntimeError("Переменная GOOGLE_SHEET_ID не задана.")
@@ -31,19 +31,37 @@ def sync_opportunities_to_sheet(opportunities: Iterable[dict]) -> int:
     spreadsheet = client.open_by_key(spreadsheet_id)
 
     try:
-        worksheet = spreadsheet.worksheet("Opportunities")
+        worksheet = spreadsheet.worksheet("Companies")
     except gspread.WorksheetNotFound:
-        worksheet = spreadsheet.add_worksheet(title="Opportunities", rows=1000, cols=12)
+        worksheet = spreadsheet.add_worksheet(title="Companies", rows=1500, cols=30)
 
     headers = [
         "Компания",
+        "Юрлицо",
+        "ИНН",
+        "Город",
+        "Сегмент рынка",
+        "Подсегмент",
+        "ОКВЭД",
+        "Выручка",
+        "Предыдущая выручка",
+        "Динамика, %",
+        "Прибыль",
+        "Собственник",
+        "Директор",
+        "Прямой контакт",
+        "Роль контакта",
+        "Прямой email",
+        "Прямой телефон",
+        "Telegram",
+        "Сайт",
+        "Триггер",
+        "Почему нужен консалтинг",
         "Growth Score",
         "Сигналы",
-        "Количество событий",
-        "Почему интересно",
-        "Последнее событие",
-        "Ссылка",
         "Статус",
+        "Приоритет",
+        "Источник",
     ]
 
     rows = [headers]
@@ -51,13 +69,31 @@ def sync_opportunities_to_sheet(opportunities: Iterable[dict]) -> int:
         rows.append(
             [
                 item.get("company", ""),
+                item.get("legal_name", ""),
+                item.get("inn", ""),
+                item.get("city", ""),
+                item.get("market_segment", ""),
+                item.get("market_subsegment", ""),
+                item.get("okved_main", ""),
+                item.get("revenue_latest", ""),
+                item.get("revenue_previous", ""),
+                item.get("revenue_change_pct", ""),
+                item.get("profit_latest", ""),
+                item.get("owner_name", ""),
+                item.get("director_name", ""),
+                item.get("direct_contact_name", ""),
+                item.get("direct_contact_role", ""),
+                item.get("direct_email", ""),
+                item.get("direct_phone", ""),
+                item.get("telegram", ""),
+                item.get("website", ""),
+                item.get("trigger", ""),
+                item.get("consulting_reason", ""),
                 item.get("score", 0),
                 item.get("signals", ""),
-                item.get("events_count", 0),
-                item.get("reason", ""),
-                item.get("latest_title", ""),
-                item.get("latest_url", ""),
                 item.get("status", "new"),
+                item.get("priority", ""),
+                item.get("source_url", ""),
             ]
         )
 
