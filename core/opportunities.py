@@ -94,8 +94,15 @@ def build_opportunities(
     grouped: dict[str, list[GrowthEvent]] = defaultdict(list)
 
     for event in events:
-        if event.company_name:
-            grouped[event.company_name.strip()].append(event)
+        if not event.company_name:
+            continue
+        matched_profile = find_company_profile(profiles, event.company_name)
+        canonical_company = (
+            matched_profile.get("company")
+            if matched_profile
+            else event.company_name.strip()
+        )
+        grouped[str(canonical_company)].append(event)
 
     # Verified profiles are included even if no fresh news was found today.
     for profile in _unique_profiles(profiles):
