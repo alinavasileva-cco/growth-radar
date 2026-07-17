@@ -1,0 +1,76 @@
+name: Publish MVP results
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'mvp-results/**'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-results:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Growth Radar MVP
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+          GROWTH_RADAR_MIN_SCORE: '15'
+        run: python main.py
+
+      - name: Prepare review files
+        run: |
+          mkdir -p mvp-results
+          cp data/latest_events.csv mvp-results/latest_events.csv
+          cp data/hot_opportunities.csv mvp-results/hot_opportunities.csv
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+
+          source = Path('data/hot_opportunities.csv')
+          target = Path('mvp-results/review_100_companies.csv')
+
+          with source.open('r', encoding='utf-8-sig', newline='') as src:
+              rows = list(csv.DictReader(src))[:100]
+
+          fields = [
+              'company', 'score', 'signals', 'events_count', 'reason',
+              'latest_title', 'latest_url', 'status',
+              'user_rating', 'user_comment'
+          ]
+
+          with target.open('w', encoding='utf-8-sig', newline='') as dst:
+              writer = csv.DictWriter(dst, fieldnames=fields)
+              writer.writeheader()
+              for row in rows:
+                  row['user_rating'] = ''
+                  row['user_comment'] = ''
+                  writer.writerow({field: row.get(field, '') for field in fields})
+          PY
+
+      - name: Commit fresh MVP results
+        run: |
+          git config user.name "growth-radar-bot"
+          git config user.email "growth-radar-bot@users.noreply.github.com"
+          git add mvp-results/
+          if git diff --cached --quiet; then
+            echo "Results have not changed."
+          else
+            git commit -m "Обновить реальные результаты MVP [skip ci]"
+            git push
+          fi
