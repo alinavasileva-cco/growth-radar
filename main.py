@@ -25,6 +25,15 @@ def main() -> None:
     opportunities = build_opportunities(events)
     export_opportunities_csv(opportunities, opportunities_export_path)
 
+    google_sync_enabled = os.getenv("GOOGLE_SHEETS_SYNC", "false").lower() == "true"
+    if google_sync_enabled:
+        from integrations.google.sheets import sync_opportunities_to_sheet
+
+        synced = sync_opportunities_to_sheet(opportunities)
+        print(f"В Google Sheets записано компаний: {synced}")
+    else:
+        print("Google Sheets: синхронизация пока отключена.")
+
     print(f"Собрано публикаций: {len(raw_items)}")
     print(f"Событий после классификации: {len(all_events)}")
     print(f"Релевантных событий (score >= {min_score}): {len(events)}")
