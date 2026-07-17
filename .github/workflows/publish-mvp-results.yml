@@ -1,7 +1,9 @@
-name: Publish MVP results
+name: Publish company pipeline
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 6 * * *'
   push:
     branches: [main]
     paths-ignore:
@@ -13,6 +15,7 @@ permissions:
 jobs:
   publish-results:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,43 +30,52 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Growth Radar MVP
+      - name: Run Growth Radar
         env:
           PYTHONPATH: ${{ github.workspace }}
           GROWTH_RADAR_MIN_SCORE: '15'
         run: python main.py
 
-      - name: Prepare review files
+      - name: Prepare company files
         run: |
           mkdir -p mvp-results
           cp data/latest_events.csv mvp-results/latest_events.csv
-          cp data/hot_opportunities.csv mvp-results/hot_opportunities.csv
+          cp data/company_pipeline.csv mvp-results/company_pipeline.csv
+          cp data/outreach_ready.csv mvp-results/outreach_ready.csv
           python - <<'PY'
           import csv
+          from collections import Counter
           from pathlib import Path
 
-          source = Path('data/hot_opportunities.csv')
-          target = Path('mvp-results/review_100_companies.csv')
+          source = Path('data/company_pipeline.csv')
+          review_target = Path('mvp-results/review_1000_companies.csv')
+          summary_target = Path('mvp-results/segment_summary.csv')
 
           with source.open('r', encoding='utf-8-sig', newline='') as src:
-              rows = list(csv.DictReader(src))[:100]
+              rows = list(csv.DictReader(src))[:1000]
 
-          fields = [
-              'company', 'score', 'signals', 'events_count', 'reason',
-              'latest_title', 'latest_url', 'status',
-              'user_rating', 'user_comment'
-          ]
-
-          with target.open('w', encoding='utf-8-sig', newline='') as dst:
-              writer = csv.DictWriter(dst, fieldnames=fields)
+          source_fields = list(rows[0].keys()) if rows else []
+          review_fields = source_fields + ['user_rating', 'user_comment']
+          with review_target.open('w', encoding='utf-8-sig', newline='') as dst:
+              writer = csv.DictWriter(dst, fieldnames=review_fields)
               writer.writeheader()
               for row in rows:
                   row['user_rating'] = ''
                   row['user_comment'] = ''
-                  writer.writerow({field: row.get(field, '') for field in fields})
+                  writer.writerow(row)
+
+          counts = Counter(
+              (row.get('market_segment') or 'Unknown', row.get('status') or 'unknown')
+              for row in rows
+          )
+          with summary_target.open('w', encoding='utf-8-sig', newline='') as dst:
+              writer = csv.writer(dst)
+              writer.writerow(['market_segment', 'status', 'companies_count'])
+              for (segment, status), count in sorted(counts.items()):
+                  writer.writerow([segment, status, count])
           PY
 
-      - name: Commit fresh MVP results
+      - name: Commit fresh results
         run: |
           git config user.name "growth-radar-bot"
           git config user.email "growth-radar-bot@users.noreply.github.com"
@@ -71,6 +83,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Results have not changed."
           else
-            git commit -m "Обновить реальные результаты MVP [skip ci]"
+            git commit -m "Обновить базу компаний [skip ci]"
             git push
           fi
