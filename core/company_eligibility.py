@@ -1,4 +1,5 @@
 import csv
+import re
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
@@ -46,11 +47,23 @@ PROFILE_FIELDS = [
 ]
 
 
+def normalize_company_key(value: str | None) -> str:
+    """Normalize commercial and legal names for reliable joining."""
+    if not value:
+        return ""
+    normalized = str(value).casefold().replace("ё", "е")
+    normalized = re.sub(r"\b(ооо|ао|пао|зао|оао|ип|компания|группа компаний|гк)\b", " ", normalized)
+    normalized = re.sub(r"[«»\"'`()]", " ", normalized)
+    normalized = re.sub(r"[^a-zа-я0-9]+", " ", normalized)
+    return " ".join(normalized.split())
+
+
 def load_company_profiles(path: Path) -> dict[str, dict[str, Any]]:
     """Load verified company data used for selection and outreach.
 
-    A company can be indexed by commercial name, legal name or INN. This makes
-    news/vacancy signals easier to join with the verified registry record.
+    A company can be indexed by commercial name, legal name, aliases separated
+    by a slash, normalized name or INN. This makes signals easier to join with
+    the verified registry record.
     """
     if not path.exists():
         return {}
@@ -59,15 +72,29 @@ def load_company_profiles(path: Path) -> dict[str, dict[str, Any]]:
     with path.open("r", encoding="utf-8-sig", newline="") as file:
         for raw_row in csv.DictReader(file):
             row = {field: (raw_row.get(field) or "").strip() for field in PROFILE_FIELDS}
-            keys = {
-                row.get("company", "").casefold(),
-                row.get("legal_name", "").casefold(),
-                row.get("inn", "").casefold(),
-            }
+            names = [row.get("company", ""), row.get("legal_name", "")]
+            aliases: list[str] = []
+            for name in names:
+                aliases.extend(part.strip() for part in name.split("/") if part.strip())
+
+            keys = {row.get("inn", "").casefold()}
+            for name in names + aliases:
+                keys.add(name.casefold())
+                keys.add(normalize_company_key(name))
+
             for key in keys:
                 if key:
                     profiles[key] = row
     return profiles
+
+
+def find_company_profile(
+    profiles: dict[str, dict[str, Any]],
+    company_name: str | None,
+) -> dict[str, Any] | None:
+    if not company_name:
+        return None
+    return profiles.get(company_name.casefold()) or profiles.get(normalize_company_key(company_name))
 
 
 def _to_float(value: Any) -> float | None:
