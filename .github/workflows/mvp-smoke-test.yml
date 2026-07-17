@@ -3,6 +3,8 @@ name: MVP smoke test
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -33,24 +35,34 @@ jobs:
           GROWTH_RADAR_MIN_SCORE: "15"
         run: python main.py
 
-      - name: Validate CSV output
+      - name: Validate company output
         run: |
           test -f data/latest_events.csv
+          test -f data/company_pipeline.csv
+          test -f data/outreach_ready.csv
           python - <<'PY'
           import csv
           from pathlib import Path
 
-          path = Path("data/latest_events.csv")
+          path = Path("data/company_pipeline.csv")
           with path.open(encoding="utf-8-sig") as file:
-              rows = list(csv.reader(file))
+              rows = list(csv.DictReader(file))
 
-          assert rows, "CSV is empty"
-          assert rows[0][:5] == ["Дата", "Компания", "Событие", "Сигнал", "Балл"]
-          print(f"CSV rows including header: {len(rows)}")
+          required = {
+              "company", "inn", "okved_main", "market_segment",
+              "market_subsegment", "owner_name", "direct_contact_found",
+              "outreach_ready", "status"
+          }
+          assert rows, "Company pipeline is empty"
+          assert required.issubset(rows[0]), f"Missing columns: {required - set(rows[0])}"
+          print(f"Companies: {len(rows)}")
           PY
 
       - name: Upload MVP result
         uses: actions/upload-artifact@v4
         with:
           name: growth-radar-mvp-result
-          path: data/latest_events.csv
+          path: |
+            data/latest_events.csv
+            data/company_pipeline.csv
+            data/outreach_ready.csv
