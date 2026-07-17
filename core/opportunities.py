@@ -67,5 +67,5 @@ def export_opportunities_csv(opportunities: list[dict], output_path: Path) -> No
                 "latest_title", "latest_url", "status",
             ],
         )
-        writer.writerow()
+        writer.writeheader()
         writer.writerows(opportunities)
