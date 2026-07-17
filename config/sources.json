@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "name": "Тестовый RSS — РБК Бизнес",
+      "category": "small_business_news",
+      "format": "rss",
+      "url": "https://rssexport.rbc.ru/rbcnews/news/30/full.rss",
+      "enabled": false,
+      "limit": 30,
+      "note": "Отключён до проверки доступности и релевантности."
+    }
+  ]
+}
