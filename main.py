@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 from collectors.news.rss_collector import collect_rss_sources
@@ -10,17 +11,23 @@ def main() -> None:
     db_path = root / "data" / "growth_radar.db"
     sources_path = root / "config" / "sources.json"
     export_path = root / "data" / "latest_events.csv"
+    min_score = int(os.getenv("GROWTH_RADAR_MIN_SCORE", "15"))
 
     init_db(db_path)
     raw_items = collect_rss_sources(sources_path)
-    events = process_raw_items(raw_items)
+    all_events = process_raw_items(raw_items)
+    events = [event for event in all_events if event.score >= min_score]
     inserted = save_events(db_path, events)
     export_events_csv(db_path, export_path)
 
     print(f"Собрано публикаций: {len(raw_items)}")
-    print(f"Подготовлено событий: {len(events)}")
+    print(f"Событий после классификации: {len(all_events)}")
+    print(f"Релевантных событий (score >= {min_score}): {len(events)}")
     print(f"Новых событий сохранено: {inserted}")
     print(f"Выгрузка: {export_path}")
+
+    if not raw_items:
+        raise RuntimeError("Ни один источник не вернул публикации.")
 
 
 if __name__ == "__main__":
