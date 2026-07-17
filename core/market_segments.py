@@ -47,7 +47,7 @@ def classify_okved(okved: str | None, okved_name: str | None = None) -> MarketSe
     code = normalize_okved(okved)
     if code:
         for prefixes, result in _OKVED_RULES:
-            if any(code == prefix or code.startswith(f"{prefix}.") for prefix in prefixes):
+            if any(code.startswith(prefix) for prefix in prefixes):
                 return result
 
     name = (okved_name or "").casefold()
