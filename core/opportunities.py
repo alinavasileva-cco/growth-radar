@@ -3,7 +3,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any, Iterable
 
-from core.company_eligibility import classify_company
+from core.company_eligibility import classify_company, find_company_profile
 from core.models import GrowthEvent
 
 
@@ -105,7 +105,7 @@ def build_opportunities(
 
     opportunities: list[dict[str, Any]] = []
     for company, company_events in grouped.items():
-        profile = profiles.get(company.casefold())
+        profile = find_company_profile(profiles, company)
         assessment = classify_company(profile)
 
         if company_events:
