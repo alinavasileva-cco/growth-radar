@@ -8,6 +8,12 @@ from core.opportunities import (
     export_opportunities_csv,
     export_outreach_ready_csv,
 )
+from core.owner_first_reporting import (
+    build_owner_first_ready,
+    build_run_metrics,
+    export_owner_first_ready,
+    export_run_metrics,
+)
 from core.pipeline import process_raw_items
 from database.db import export_events_csv, init_db, save_events
 
@@ -20,6 +26,8 @@ def main() -> None:
     events_export_path = root / "data" / "latest_events.csv"
     opportunities_export_path = root / "data" / "company_pipeline.csv"
     outreach_export_path = root / "data" / "outreach_ready.csv"
+    strict_ready_export_path = root / "mvp-results" / "owner_first_ready.csv"
+    metrics_export_path = root / "mvp-results" / "run_metrics.json"
     min_score = int(os.getenv("GROWTH_RADAR_MIN_SCORE", "15"))
 
     init_db(db_path)
@@ -34,6 +42,11 @@ def main() -> None:
     export_opportunities_csv(opportunities, opportunities_export_path)
     export_outreach_ready_csv(opportunities, outreach_export_path)
 
+    strict_ready = build_owner_first_ready(profiles)
+    export_owner_first_ready(strict_ready, strict_ready_export_path)
+    metrics = build_run_metrics(opportunities, strict_ready)
+    export_run_metrics(metrics, metrics_export_path)
+
     google_sync_enabled = os.getenv("GOOGLE_SHEETS_SYNC", "false").lower() == "true"
     if google_sync_enabled:
         from integrations.google.sheets import sync_opportunities_to_sheet
@@ -43,7 +56,6 @@ def main() -> None:
     else:
         print("Google Sheets: синхронизация пока отключена.")
 
-    outreach_ready = [item for item in opportunities if item.get("outreach_ready")]
     needs_direct_contact = [item for item in opportunities if item.get("status") == "needs_direct_contact"]
     market_segments = {item.get("market_segment") for item in opportunities if item.get("market_segment")}
 
@@ -54,10 +66,11 @@ def main() -> None:
     print(f"Компаний в рабочем списке: {len(opportunities)}")
     print(f"Сегментов рынка: {len(market_segments)}")
     print(f"Нужен прямой контакт ЛПР: {len(needs_direct_contact)}")
-    print(f"Готовы к отправке: {len(outreach_ready)}")
+    print(f"Полностью прошли owner-first фильтр: {len(strict_ready)}")
     print(f"Выгрузка событий: {events_export_path}")
     print(f"Рабочая база компаний: {opportunities_export_path}")
-    print(f"Готовые к контакту: {outreach_export_path}")
+    print(f"Строго готовые компании: {strict_ready_export_path}")
+    print(f"Метрики запуска: {metrics_export_path}")
 
     if not raw_items and not profiles:
         raise RuntimeError("Источники не вернули публикации и база профилей пуста.")
