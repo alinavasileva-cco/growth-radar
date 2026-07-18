@@ -1,0 +1,12 @@
+{
+  "last_run_at": "2026-07-18T23:59:41+03:00",
+  "total_screened": 25,
+  "fully_verified_total": 0,
+  "excluded_total": 14,
+  "in_review_total": 11,
+  "personal_contacts_found": 0,
+  "corporate_contacts_found": 0,
+  "new_fully_verified_since_notification": 0,
+  "last_notification_at": null,
+  "notification_batch_size": 10
+}
