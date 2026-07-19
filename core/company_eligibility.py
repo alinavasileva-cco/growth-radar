@@ -79,11 +79,15 @@ def _company_age_years(value: Any) -> float | None:
     return (date.today() - registered).days / 365.25
 
 
-def _has_direct_contact(profile: dict[str, Any]) -> bool:
+def _has_personal_contact(profile: dict[str, Any]) -> bool:
     return bool((profile.get("direct_contact_name") or "").strip()) and any(
         (profile.get(field) or "").strip()
         for field in ("direct_email", "direct_phone", "telegram", "vk_url", "linkedin_url")
     )
+
+
+def _has_corporate_contact(profile: dict[str, Any]) -> bool:
+    return any((profile.get(field) or "").strip() for field in ("general_email", "general_phone"))
 
 
 def _has_recent_leadership_vacancy(profile: dict[str, Any]) -> bool:
@@ -91,11 +95,14 @@ def _has_recent_leadership_vacancy(profile: dict[str, Any]) -> bool:
         (profile.get("vacancy_title") or "").strip()
         and (profile.get("vacancy_url") or "").strip()
         and (profile.get("vacancy_date") or "").strip()
+        and (profile.get("vacancy_employer_name") or "").strip()
         and (profile.get("vacancy_status") or "").strip().casefold() in {"active", "recent"}
     )
 
 
-def _strict_owner_first_ready(profile: dict[str, Any], eligible: bool) -> tuple[bool, list[str]]:
+def _strict_owner_first_ready(
+    profile: dict[str, Any], eligible: bool, market_segment: str
+) -> tuple[bool, list[str]]:
     required = {
         "legal_name": profile.get("legal_name"),
         "inn": profile.get("inn"),
@@ -113,11 +120,13 @@ def _strict_owner_first_ready(profile: dict[str, Any], eligible: bool) -> tuple[
         "reporting_discrepancy": profile.get("reporting_discrepancy"),
     }
     missing = [name for name, value in required.items() if not str(value or "").strip()]
+    if market_segment in {"", "Unknown"}:
+        missing.append("practical_segment")
     if (profile.get("legal_match_status") or "").strip().casefold() != "exact":
         missing.append("exact_legal_match")
     if not _has_recent_leadership_vacancy(profile):
         missing.append("recent_leadership_vacancy")
-    if not _has_direct_contact(profile):
+    if not _has_personal_contact(profile):
         missing.append("personal_contact")
     ready = eligible and not missing
     return ready, missing
@@ -129,8 +138,8 @@ def classify_company(profile: dict[str, Any] | None) -> dict[str, Any]:
             "eligible": False, "selection_segment": "needs_financial_check", "market_segment": "Unknown",
             "market_subsegment": "Нет ОКВЭД", "revenue_latest": None, "revenue_previous": None,
             "revenue_change_pct": None, "identity_verified": False, "direct_contact_found": False,
-            "outreach_ready": False, "missing_requirements": ["verified_profile"],
-            "reason": "Нет подтверждённой карточки компании.",
+            "corporate_contact_found": False, "outreach_ready": False,
+            "missing_requirements": ["verified_profile"], "reason": "Нет подтверждённой карточки компании.",
         }
 
     latest = _to_float(profile.get("revenue_latest"))
@@ -148,15 +157,19 @@ def classify_company(profile: dict[str, Any] | None) -> dict[str, Any]:
     else:
         selection_segment, eligible, reason = "outside_target", False, "Компания не соответствует текущим финансовым критериям отбора."
 
-    identity_verified = bool(profile.get("inn") and profile.get("ogrn") and profile.get("legal_name") and (profile.get("owner_name") or profile.get("director_name")))
-    direct_contact_found = _has_direct_contact(profile)
-    outreach_ready, missing = _strict_owner_first_ready(profile, eligible)
+    identity_verified = bool(
+        profile.get("inn") and profile.get("ogrn") and profile.get("legal_name")
+        and (profile.get("owner_name") or profile.get("director_name"))
+    )
+    direct_contact_found = _has_personal_contact(profile)
+    corporate_contact_found = _has_corporate_contact(profile)
+    outreach_ready, missing = _strict_owner_first_ready(profile, eligible, market.segment)
 
     return {
         "eligible": eligible, "selection_segment": selection_segment, "market_segment": market.segment,
         "market_subsegment": market.subsegment, "revenue_latest": latest, "revenue_previous": previous,
         "revenue_change_pct": change_pct, "identity_verified": identity_verified,
-        "direct_contact_found": direct_contact_found, "outreach_ready": outreach_ready,
-        "missing_requirements": missing,
+        "direct_contact_found": direct_contact_found, "corporate_contact_found": corporate_contact_found,
+        "outreach_ready": outreach_ready, "missing_requirements": missing,
         "reason": reason if not missing else f"{reason} Не подтверждено: {', '.join(missing)}.",
     }
