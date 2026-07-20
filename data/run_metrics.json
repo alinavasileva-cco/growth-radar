@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-07-20T16:19:00+03:00",
+  "latest_run_id": "GR-20260720-001",
+  "canonical_pool": 10,
+  "unique_lead_ids": 10,
+  "unique_inns": 10,
+  "contacts": 31,
+  "evidence_records": 20,
+  "contactable": 7,
+  "need_recheck": 1,
+  "reserve": 2,
+  "blocked": 0,
+  "excluded": 0,
+  "today_target": 100,
+  "remaining_to_today_target": 90,
+  "total_target": 5000,
+  "remaining_to_total_target": 4990,
+  "outreach_sent": 0,
+  "notes": "104 старые сырые записи не включены в canonical_pool до нормализации. В текущем RUN фактически восстановлены и записаны 10 уникальных компаний."
+}
