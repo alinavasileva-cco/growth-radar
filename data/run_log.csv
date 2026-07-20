@@ -1,0 +1,2 @@
+run_id,run_date,total_before,total_after,active_wip,backlog,new_candidates,new_unique_inn,stage_transitions,finance_verified,business_need_confirmed,lpr_identified,contact_routes,new_a,new_b,blocked,excluded,main_bottleneck,next_priority
+GR-RUN-001,2026-07-20,104,104,25,79,0,2,4,0,2,0,3,0,0,0,0,"103 из 104 записей не имели юридической идентификации; сборщик записывал заголовки и нецелевые объекты вместо компаний","LEGAL MATCH для 8–12 ACTIVE WIP; финансы СДЭК и МойОфис; минимум 2 ЛПР; очистка шума"
