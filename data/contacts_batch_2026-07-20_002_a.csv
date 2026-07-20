@@ -1,0 +1,20 @@
+Contact ID,Lead ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is Personal,Is LPR,Is Intermediary,Reliability,Date Checked,Notes
+C-032,GRM-011,ET.LASER,9705129176,,,+7 (499) 110-16-66,phone,корпоративный маршрут,официальный сайт,https://et-laser.ru/about,false,false,true,HIGH,2026-07-20,Просить передать Виктору Галушину или генеральному директору
+C-033,GRM-011,ET.LASER,9705129176,,,info@et-laser.ru,email,корпоративный маршрут,официальный сайт,https://et-laser.ru/about,false,false,true,HIGH,2026-07-20,Рабочий email компании
+C-034,GRM-011,ET.LASER,9705129176,,,https://et-laser.ru/about,form,корпоративная форма,официальный сайт,https://et-laser.ru/about,false,false,true,HIGH,2026-07-20,Форма обращения директору
+C-035,GRM-011,ET.LASER,9705129176,,,https://et-laser.ru/partnership,form,партнёрский маршрут,официальный сайт,https://et-laser.ru/partnership,false,false,true,HIGH,2026-07-20,Маршрут по партнёрской программе
+C-036,GRM-012,AldanDev,9726056391,,,+7 915 211-46-17,mobile,корпоративный маршрут,официальный сайт,https://aldandev.com/,false,false,true,HIGH,2026-07-20,Просить передать Илье Сотникову
+C-037,GRM-012,AldanDev,9726056391,,,team@aldandev.com,email,корпоративный маршрут,официальный сайт,https://aldandev.com/,false,false,true,HIGH,2026-07-20,Рабочий email команды
+C-038,GRM-012,AldanDev,9726056391,,,https://aldandev.com/,form,корпоративная форма,официальный сайт,https://aldandev.com/,false,false,true,HIGH,2026-07-20,Форма связи на сайте
+C-039,GRM-013,УЗЕЛ СИЛА,6312113811,Ненашев Сергей Владимирович,Собственник и директор,+7 916 140-55-99,mobile,прямой публичный контакт ЛПР,официальный сайт,https://uzel-sila.ru/контакты/,true,true,false,HIGH,2026-07-20,Именной контакт директора
+C-040,GRM-013,УЗЕЛ СИЛА,6312113811,,,+7 927 716-38-13,mobile,корпоративный маршрут,официальный сайт,https://uzel-sila.ru/контакты/,false,false,true,HIGH,2026-07-20,Дополнительный рабочий телефон
+C-041,GRM-013,УЗЕЛ СИЛА,6312113811,,,8 800 755-37-57,phone,общий резервный контакт,официальный сайт,https://uzel-sila.ru/контакты/,false,false,true,HIGH,2026-07-20,Общий телефон
+C-042,GRM-013,УЗЕЛ СИЛА,6312113811,,,sale@uzel-sila.ru,email,корпоративный маршрут,официальный сайт,https://uzel-sila.ru/контакты/,false,false,true,HIGH,2026-07-20,Коммерческий email
+C-043,GRM-013,УЗЕЛ СИЛА,6312113811,,,info@uzel-sila.ru,email,общий резервный контакт,официальный сайт,https://uzel-sila.ru/контакты/,false,false,true,HIGH,2026-07-20,Общий email
+C-044,GRM-013,УЗЕЛ СИЛА,6312113811,,,https://uzel-sila.ru/контакты/,form,корпоративная форма,официальный сайт,https://uzel-sila.ru/контакты/,false,false,true,HIGH,2026-07-20,Форма обратной связи
+C-045,GRM-014,1КЛИК,9715234324,,,+7 (495) 223-12-05,phone,корпоративный маршрут,официальный сайт,https://www.1clickgroup.ru/,false,false,true,HIGH,2026-07-20,Просить передать Антону Агафонову
+C-046,GRM-014,1КЛИК,9715234324,,,mail@1clickgroup.ru,email,корпоративный маршрут,официальный сайт,https://www.1clickgroup.ru/,false,false,true,HIGH,2026-07-20,Рабочий email компании
+C-047,GRM-014,1КЛИК,9715234324,,,https://www.1clickgroup.ru/,form,корпоративная форма,официальный сайт,https://www.1clickgroup.ru/,false,false,true,HIGH,2026-07-20,Форма связи
+C-048,GRM-015,БашСептик,740420063985,Ядгаров Артур Уралович,Собственник / ИП,+7 960 804-29-96,mobile,публичный контакт бизнеса,официальный сайт,https://bashseptik.ru/,false,true,false,HIGH,2026-07-20,Основной телефон бизнеса собственника
+C-049,GRM-015,БашСептик,740420063985,,,https://bashseptik.ru/,form,корпоративная форма,официальный сайт,https://bashseptik.ru/,false,false,true,HIGH,2026-07-20,Форма сайта
+C-050,GRM-015,БашСептик,740420063985,Ядгаров Артур Уралович,Собственник / ИП,https://h.careers/job/953dd533-1aa9-490b-a78c-b2f66a3adef9,HH,прямой маршрут через вакансию собственника,вакансия,https://h.careers/job/953dd533-1aa9-490b-a78c-b2f66a3adef9,true,true,false,HIGH,2026-07-20,"Использовать как консультант, не как соискатель"
