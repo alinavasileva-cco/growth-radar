@@ -1,0 +1,2 @@
+Run ID,Start Time,End Time,Unique Companies Added,Unique INNs Added,Contacts Found,Contactable Companies,Need Recheck,Reserve,Blocked,Excluded,Total Pool,Remaining To 100,Remaining To 1000,Report,Metrics Commit
+GR-20260729-031,2026-07-29T01:09:00+04:00,2026-07-29T01:24:00+04:00,1,1,1,1,0,0,0,0,62,38,938,reports/run_2026-07-29_031.md,33b05a70a38d347feceaba1ac7d6b81c8145f46b
