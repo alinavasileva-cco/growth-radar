@@ -1,0 +1,2 @@
+Run ID,Start Time,End Time,Unique Companies Added,Unique INNs Added,Contacts Found,Contactable Companies,Need Recheck,Reserve,Blocked,Excluded,Total Pool,Remaining To 100,Remaining To 1000,Report,Data Commit SHA
+GR-20260729-043,2026-07-29T11:11:28+04:00,2026-07-29T11:28:00+04:00,1,1,1,1,0,0,0,0,74,26,926,reports/run_2026-07-29_043.md,6d5c1d373ea1da40b852ec268eb0cb6ca8e6e553
