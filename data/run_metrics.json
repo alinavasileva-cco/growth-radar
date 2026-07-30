@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-30T17:08:06+04:00",
-  "latest_run_id": "GR-20260730-074",
-  "canonical_pool": 104,
-  "unique_lead_ids": 104,
-  "unique_inns": 103,
+  "generated_at": "2026-07-30T18:11:59+04:00",
+  "latest_run_id": "GR-20260730-075",
+  "canonical_pool": 105,
+  "unique_lead_ids": 105,
+  "unique_inns": 104,
   "temporary_keys": 1,
-  "contacts": 152,
-  "evidence_records": 494,
-  "contactable": 88,
+  "contacts": 153,
+  "evidence_records": 501,
+  "contactable": 89,
   "need_recheck": 6,
   "reserve": 9,
   "blocked": 0,
@@ -15,7 +15,7 @@
   "today_target": 100,
   "remaining_to_today_target": 0,
   "total_target": 1000,
-  "remaining_to_total_target": 896,
+  "remaining_to_total_target": 895,
   "outreach_sent": 0,
-  "notes": "RUN 074 — добавлен Feliks Station Catering / ООО «ФОРЕВЕНТ» после проверки ИНН/ОГРН, действующего статуса, связи бренда с юрлицом, собственника, финансового и операционного масштаба, S1-сигнала построения B2B-системы продаж и корпоративных маршрутов. Обращения не готовились и не отправлялись."
+  "notes": "RUN 075 — добавлена ACELED / Линии Света / ООО «ТОРГ-ЛАЙТ» после проверки ИНН/ОГРН, действующего статуса, связи бренда с юрлицом, собственника, финансового масштаба, S1-сигнала создания коммерческой системы и корпоративных маршрутов. Обращения не готовились и не отправлялись."
 }
