@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-30T23:19:00+04:00",
-  "latest_run_id": "GR-20260730-080",
-  "canonical_pool": 110,
-  "unique_lead_ids": 110,
-  "unique_inns": 109,
+  "generated_at": "2026-07-31T00:27:00+04:00",
+  "latest_run_id": "GR-20260731-081",
+  "canonical_pool": 111,
+  "unique_lead_ids": 111,
+  "unique_inns": 110,
   "temporary_keys": 1,
-  "contacts": 158,
-  "evidence_records": 536,
-  "contactable": 94,
+  "contacts": 162,
+  "evidence_records": 543,
+  "contactable": 95,
   "need_recheck": 6,
   "reserve": 9,
   "blocked": 0,
@@ -15,7 +15,7 @@
   "today_target": 100,
   "remaining_to_today_target": 0,
   "total_target": 1000,
-  "remaining_to_total_target": 890,
+  "remaining_to_total_target": 889,
   "outreach_sent": 0,
-  "notes": "RUN 080 — добавлена ООО «МАРРОБ РУС» после дедупликации и проверки действующего юрлица, ИНН/ОГРН, связи бренда с ООО, масштаба, собственника и генерального директора Натальи Шабалтас, S1-сигнала построения отдела продаж с нуля, CRM, воронки и KPI, а также корпоративных маршрутов. Обращения не готовились и не отправлялись."
+  "notes": "RUN 081 — добавлен Chacha's Club / ИП Кожомин Кирилл Павлович после дедупликации и проверки действующего ИП, ИНН/ОГРНИП, связи бренда с ИП, owner-first S1-сигнала, операционного масштаба более 10000 участников, бизнес-модели подписки и корпоративных маршрутов. Обращения не готовились и не отправлялись."
 }
