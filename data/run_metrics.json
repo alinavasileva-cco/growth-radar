@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-31T02:24:00+04:00",
-  "latest_run_id": "GR-20260731-083",
-  "canonical_pool": 112,
-  "unique_lead_ids": 112,
-  "unique_inns": 111,
+  "generated_at": "2026-07-31T03:08:00+04:00",
+  "latest_run_id": "GR-20260731-084",
+  "canonical_pool": 113,
+  "unique_lead_ids": 113,
+  "unique_inns": 112,
   "temporary_keys": 1,
-  "contacts": 166,
-  "evidence_records": 550,
-  "contactable": 96,
+  "contacts": 170,
+  "evidence_records": 557,
+  "contactable": 97,
   "need_recheck": 6,
   "reserve": 9,
   "blocked": 0,
@@ -15,7 +15,7 @@
   "today_target": 100,
   "remaining_to_today_target": 0,
   "total_target": 1000,
-  "remaining_to_total_target": 888,
+  "remaining_to_total_target": 887,
   "outreach_sent": 0,
-  "notes": "RUN 083 — нулевой качественный запуск. LEONID GRIVKO не добавлен из-за процесса ликвидации ООО «ДЕЛОВАЯ МОДА» с 01.06.2026. Estore Creating не добавлен из-за неподтверждённой связки розничного бренда с ООО «ИСТОР КРИЭЙТИНГ» и отсутствия практического маршрута помимо HeadHunter. Канонические лиды, контакты и доказательства не изменялись; обращения не готовились и не отправлялись."
+  "notes": "RUN 084 — добавлены Лапушкины Снеки / ИП Лапушкин Сергей Андреевич. Подтверждены действующий ИП, ИНН, ОГРНИП, связь бренда и владельца, операционный масштаб, owner-first S1-сигнал и четыре корпоративных маршрута. Финансовые показатели ИП не добавлялись. Обращения не готовились и не отправлялись."
 }
