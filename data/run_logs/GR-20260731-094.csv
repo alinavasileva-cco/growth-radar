@@ -1,0 +1,2 @@
+Run ID,Run Date,Run Type,Companies Added,Canonical Companies,Pending Integration,Confirmed Total,Contacts,Evidence,Outreach Sent,Result,Notes
+GR-20260731-094,2026-07-31,Integrity audit,0,116,1,117,191,589,0,ZERO RUN,"GRM-117 confirmed in increment but absent from leads_master.csv; no new candidates added until canonical synchronization"
