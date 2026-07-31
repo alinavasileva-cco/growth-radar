@@ -1,0 +1,9 @@
+Run ID,Lead ID,Evidence Type,Claim,Source URL,Source Class,Confidence,Verified At
+GR-20260731-088,GRM-114,Brand-to-legal linkage,Официальный сайт публикует ООО «Городская ферма» ИНН 7723381960 ОГРН 1157746213976,https://gorodskayaferma.ru/farm/,Official,HIGH,2026-07-31T07:08:00+04:00
+GR-20260731-088,GRM-114,Legal status,ООО «Городская Ферма» действует; ИНН 7723381960 ОГРН 1157746213976,https://www.tbank.ru/business/contractor/legal/1157746213976/,Registry aggregator,HIGH,2026-07-31T07:08:00+04:00
+GR-20260731-088,GRM-114,Management,Генеральный директор с 21.05.2026 — Нистратов Роман Валентинович,https://www.tbank.ru/business/contractor/legal/1157746213976/,Registry aggregator,HIGH,2026-07-31T07:08:00+04:00
+GR-20260731-088,GRM-114,Ownership,Учредители: Саарян Тигран Ашикович 80%; АО «Конгломерат САДР» 20%,https://www.tbank.ru/business/contractor/legal/1157746213976/,Registry aggregator,HIGH,2026-07-31T07:08:00+04:00
+GR-20260731-088,GRM-114,Financial scale,Выручка за 2025 год 205.61 млн ₽; прибыль 9.53 млн ₽,https://www.tbank.ru/business/contractor/legal/1157746213976/,Financial registry aggregator,HIGH,2026-07-31T07:08:00+04:00
+GR-20260731-088,GRM-114,Operational scale,В вакансии заявлены около 140 000 гостей в год и цель 200 000 гостей,https://hh.ru/vacancy/129528164,HeadHunter/Mixed,MEDIUM,2026-07-31T07:08:00+04:00
+GR-20260731-088,GRM-114,Business signal,Запуск клубной подписки и запрос на построение новой системы продаж и маркетинга с прямой работой с собственником,https://hh.ru/vacancy/129528164,HeadHunter/Mixed,HIGH,2026-07-31T07:08:00+04:00
+GR-20260731-088,GRM-114,Contacts,Официальные телефоны +7 495 968-31-28 и +7 495 589-15-74; email info@gorferma24.ru; форма сайта,https://gorodskayaferma.ru/contacts/,Official,HIGH,2026-07-31T07:08:00+04:00
