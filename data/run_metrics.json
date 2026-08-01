@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-01T11:53:00+03:00",
-  "latest_run_id": "GR-20260801-097",
+  "generated_at": "2026-08-01T12:50:00+03:00",
+  "latest_run_id": "GR-20260801-098",
   "canonical_pool": 116,
   "pending_integration": 1,
   "confirmed_total_with_increments": 117,
@@ -19,5 +19,5 @@
   "total_target": 1000,
   "remaining_to_total_target": 883,
   "outreach_sent": 0,
-  "notes": "RUN 097 — нулевой технический запуск. GRM-117 подтверждён в increment RUN 093, но его присутствие в каноническом leads_master.csv и отдельный commit SHA синхронизации master по-прежнему не подтверждены. Новые компании не добавлялись, чтобы сохранить достоверную дедупликацию."
+  "notes": "RUN 098 — нулевой технический запуск. GRM-117 подтверждён в increment RUN 093, но его присутствие в каноническом leads_master.csv и отдельный commit SHA синхронизации master по-прежнему не подтверждены. Новые компании не добавлялись, чтобы сохранить достоверную дедупликацию."
 }
