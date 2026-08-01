@@ -25,3 +25,5 @@ jobs:
           git add -A
           git commit -m 'fix: restore and validate Growth Radar canonical database'
           git push
+
+# retrigger: 2026-08-01T15:49:00+03:00
