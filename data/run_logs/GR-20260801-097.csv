@@ -1,0 +1,2 @@
+Run ID,Start Time,End Time,Unique Companies Added,Unique INNs Added,Contacts Found,Contactable Companies,Need Recheck,Reserve,Blocked,Excluded,Canonical Pool,Confirmed Increment Pending,Confirmed Total,Remaining To 1000,Report,Status
+GR-20260801-097,2026-08-01T11:48:06+03:00,2026-08-01T11:53:00+03:00,0,0,0,101,6,9,0,1,116,1,117,883,reports/run_2026-08-01_097.md,BLOCKED_CANONICAL_SYNC_NOT_CONFIRMED
