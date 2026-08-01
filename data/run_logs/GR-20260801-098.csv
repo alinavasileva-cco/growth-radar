@@ -1,0 +1,2 @@
+Run ID,Run Date,Run Type,New Companies,Canonical Pool,Pending Integration,Confirmed Total,Contactable,Contacts,Evidence,Outreach Sent,Status,Blocker
+GR-20260801-098,2026-08-01,TECHNICAL_ZERO,0,116,1,117,101,191,589,0,BLOCKED,GRM-117 confirmed in increment but not confirmed in data/leads_master.csv
