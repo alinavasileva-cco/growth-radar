@@ -1,0 +1,2 @@
+Run ID,Run Date,Run Type,New Leads,New Contacts,New Evidence,Result,Blocker,Outreach Sent
+GR-20260801-100,2026-08-01,TECHNICAL_ZERO,0,0,0,BLOCKED,"Actual data/leads_master.csv blob contains only GRM-001–GRM-020 while configuration and metrics claim 116 canonical cards; full master reconstruction required before reliable deduplication",0
