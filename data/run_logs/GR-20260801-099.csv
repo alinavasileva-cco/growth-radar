@@ -1,0 +1,2 @@
+Run ID,Run Date,Run Type,New Companies,Canonical Pool,Pending Integration,Confirmed Total,Contactable,Contacts,Evidence,Outreach Sent,Status,Blocker,Report
+GR-20260801-099,2026-08-01,TECHNICAL_ZERO,0,116,1,117,101,191,589,0,BLOCKED,"GRM-117 подтверждён в increment, но его интеграция в data/leads_master.csv отдельным commit SHA не подтверждена; безопасная полная замена master через доступный API-ответ невозможна без риска потери строк",reports/run_2026-08-01_099.md
