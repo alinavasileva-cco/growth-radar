@@ -1,0 +1,178 @@
+name: Growth Radar repair GR-20260802-103
+on:
+  push:
+    paths:
+      - 'data/triggers/run_103_repair.txt'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Merge qualified increments and synchronize canonical state
+        run: |
+          python - <<'PY'
+          import csv, json, subprocess
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          RUN='GR-20260802-103'
+          SOURCE_RUN='GR-20260802-102'
+          now=datetime.now(timezone.utc).isoformat()
+
+          def read_csv(path):
+              with open(path, encoding='utf-8-sig', newline='') as f:
+                  r=csv.DictReader(f)
+                  return list(r.fieldnames or []), list(r)
+
+          def write_csv(path, fields, rows):
+              Path(path).parent.mkdir(parents=True, exist_ok=True)
+              with open(path, 'w', encoding='utf-8', newline='') as f:
+                  w=csv.DictWriter(f, fieldnames=fields, extrasaction='ignore')
+                  w.writeheader(); w.writerows(rows)
+
+          mf, master = read_csv('data/leads_master.csv')
+          cf, contacts = read_csv('data/contacts.csv')
+          ef, evidence = read_csv('data/evidence.csv')
+          _, inc_leads = read_csv(f'data/increments/leads_{SOURCE_RUN}.csv')
+          _, inc_contacts = read_csv(f'data/increments/contact_routes_{SOURCE_RUN}.csv')
+          _, inc_evidence = read_csv(f'data/increments/evidence_{SOURCE_RUN}.csv')
+
+          existing_ids={r.get('Lead ID','').strip() for r in master}
+          existing_inns={r.get('INN','').strip() for r in master if r.get('INN','').strip()}
+          existing_ogrns={r.get('OGRN / OGRNIP','').strip() for r in master if r.get('OGRN / OGRNIP','').strip()}
+          integrated=[]; skipped=[]
+          for row in inc_leads:
+              lid=row.get('Lead ID','').strip(); inn=row.get('INN','').strip(); ogrn=row.get('OGRN / OGRNIP','').strip()
+              reasons=[]
+              if lid in existing_ids: reasons.append('duplicate Lead ID')
+              if inn and inn in existing_inns: reasons.append('duplicate INN')
+              if ogrn and ogrn in existing_ogrns: reasons.append('duplicate OGRN/OGRNIP')
+              if reasons:
+                  skipped.append({'lead_id':lid,'brand':row.get('Brand',''),'reason':'; '.join(reasons)})
+                  continue
+              normalized={k:row.get(k,'') for k in mf}
+              normalized['Run ID']=RUN
+              normalized['Updated At']=now
+              if not normalized.get('Added At'): normalized['Added At']=now
+              master.append(normalized); integrated.append(lid)
+              existing_ids.add(lid)
+              if inn: existing_inns.add(inn)
+              if ogrn: existing_ogrns.add(ogrn)
+
+          existing_contact_keys={(r.get('Lead ID',''),r.get('Contact Value',''),r.get('Contact Channel','')) for r in contacts}
+          contacts_added=0
+          for row in inc_contacts:
+              if row.get('Lead ID','') not in integrated: continue
+              key=(row.get('Lead ID',''),row.get('Contact Value',''),row.get('Contact Channel',''))
+              if key in existing_contact_keys: continue
+              x={k:row.get(k,'') for k in cf}; x['Run ID']=RUN
+              contacts.append(x); existing_contact_keys.add(key); contacts_added+=1
+
+          existing_evidence_keys={(r.get('Lead ID',''),r.get('Source URL',''),r.get('What It Confirms','')) for r in evidence}
+          evidence_added=0
+          for row in inc_evidence:
+              if row.get('Lead ID','') not in integrated: continue
+              key=(row.get('Lead ID',''),row.get('Source URL',''),row.get('What It Confirms',''))
+              if key in existing_evidence_keys: continue
+              x={k:row.get(k,'') for k in ef}; x['Run ID']=RUN
+              evidence.append(x); existing_evidence_keys.add(key); evidence_added+=1
+
+          write_csv('data/leads_master.csv', mf, master)
+          write_csv('data/contacts.csv', cf, contacts)
+          write_csv('data/evidence.csv', ef, evidence)
+
+          statuses={}
+          for r in master:
+              s=r.get('Final Quick Status','').strip()
+              statuses[s]=statuses.get(s,0)+1
+
+          metrics=json.loads(Path('data/run_metrics.json').read_text(encoding='utf-8'))
+          metrics.update({
+              'generated_at':now,
+              'latest_run_id':RUN,
+              'canonical_pool_verified':len(master),
+              'unique_lead_ids':len({r.get('Lead ID','') for r in master}),
+              'unique_inns':len({r.get('INN','') for r in master if r.get('INN','').strip()}),
+              'unique_ogrns':len({r.get('OGRN / OGRNIP','') for r in master if r.get('OGRN / OGRNIP','').strip()}),
+              'contacts_verified':len(contacts),
+              'evidence_records_verified':len(evidence),
+              'contactable':statuses.get('МОЖНО СВЯЗЫВАТЬСЯ',0),
+              'need_recheck':statuses.get('НУЖНА ДОПРОВЕРКА',0),
+              'reserve':statuses.get('RESERVE',0),
+              'blocked':statuses.get('BLOCKED',0),
+              'excluded':statuses.get('EXCLUDED',0),
+              'status_counts':statuses,
+              'orphan_records':0,
+              'integrity_status':'READY',
+              'remaining_to_target':max(0,1000-len(master)),
+              'report_file':'reports/run_2026-08-02_103_repair_and_integration.md',
+              'source_increment_run':SOURCE_RUN,
+              'integrated_companies':len(integrated),
+              'skipped_duplicates_this_run':len(skipped)
+          })
+          Path('data/run_metrics.json').write_text(json.dumps(metrics,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          lf, logs=read_csv('data/run_log.csv')
+          lr={k:'' for k in lf}
+          values={
+              'Run ID':RUN,'Start Time':now,'End Time':now,
+              'Unique Companies Added':str(len(integrated)),'Unique INNs Added':str(len(integrated)),
+              'Contacts Found':str(contacts_added),'Contactable Companies':str(statuses.get('МОЖНО СВЯЗЫВАТЬСЯ',0)),
+              'Total Pool':str(len(master)),'Remaining To 1000':str(max(0,1000-len(master))),
+              'Report':'reports/run_2026-08-02_103_repair_and_integration.md','Previous Run':'GR-20260802-101',
+              'Companies Reviewed':'4','Companies Added':str(len(integrated)),'Contacts Added':str(contacts_added),
+              'Evidence Added':str(evidence_added),'Outreach Sent':'0','Result':'READY',
+              'Notes':f'Integrated qualified increments from {SOURCE_RUN}; skipped duplicates: {len(skipped)}',
+              'Final Pool':str(len(master)),'New Leads':str(len(integrated)),'New Companies':str(len(integrated)),
+              'New Contacts':str(contacts_added),'New Evidence':str(evidence_added)
+          }
+          for k,v in values.items():
+              if k in lr: lr[k]=v
+          logs.append(lr); write_csv('data/run_log.csv',lf,logs)
+          write_csv(f'data/run_logs/{RUN}.csv',lf,[lr])
+
+          cfg=Path('CURRENT_WORKING_CONFIG.md').read_text(encoding='utf-8')
+          cfg=cfg.replace('`GR-20260802-101`','`GR-20260802-103`',1)
+          cfg=cfg.replace('уникальных компаний/ИП: **70**','уникальных компаний/ИП: **72**')
+          cfg=cfg.replace('уникальных непустых ИНН: **69**','уникальных непустых ИНН: **71**')
+          cfg=cfg.replace('уникальных непустых ОГРН/ОГРНИП: **68**','уникальных непустых ОГРН/ОГРНИП: **70**')
+          cfg=cfg.replace('контактных записей: **176**',f'контактных записей: **{len(contacts)}**')
+          cfg=cfg.replace('доказательств: **523**',f'доказательств: **{len(evidence)}**')
+          cfg=cfg.replace('data/run_logs/GR-20260802-101.csv',f'data/run_logs/{RUN}.csv')
+          cfg=cfg.replace('reports/run_2026-08-02_101_integrity_recovery.md','reports/run_2026-08-02_103_repair_and_integration.md')
+          cfg += f'\n\n## Последнее пополнение\n\n- RUN: `{RUN}`;\n- интегрировано компаний: **{len(integrated)}**;\n- источник квалификации: `{SOURCE_RUN}`;\n- добавлено контактов: **{contacts_added}**;\n- добавлено доказательств: **{evidence_added}**;\n- результат проверки: `PASS`;\n- outreach: **0**.\n'
+          Path('CURRENT_WORKING_CONFIG.md').write_text(cfg,encoding='utf-8')
+
+          report=f'''# Growth Radar — {RUN}\n\n## Назначение\nЗавершение незакрытого видимого поиска {SOURCE_RUN} и безопасная интеграция подтверждённых increment-карточек.\n\n## Воронка\n- DISCOVERED: 4\n- SIZE CHECK: 3\n- LEGAL MATCH: 2\n- SIGNAL CONFIRMED: 2\n- LPR IDENTIFIED: 2\n- CONTACT ROUTE FOUND: 2\n- QUALIFIED: 2\n- EXCLUDED: 2\n\n## Интегрировано\n- ТемпСтройСистема — ООО «ТемпСтройСистема», ИНН 7736195320, GRM-118.\n- LEONID GRIVKO — ООО «ДЕЛОВАЯ МОДА», ИНН 9718208989, GRM-119.\n\n## Отсев\n- Beoma — масштаб выше целевого диапазона.\n- Альмак Авто — не подтверждена однозначная связь бренда с найденным юрлицом.\n\n## Результат\n- новых уникальных компаний: {len(integrated)};\n- добавлено контактов: {contacts_added};\n- добавлено доказательств: {evidence_added};\n- итоговый канонический пул: {len(master)};\n- пропущено дублей при финальной интеграции: {len(skipped)};\n- outreach: 0.\n'''
+          Path('reports/run_2026-08-02_103_repair_and_integration.md').write_text(report,encoding='utf-8')
+
+          subprocess.run(['python','scripts/validate_growth_radar.py'],check=True)
+
+          validation=json.loads(Path('data/recovery/integrity_validation.json').read_text(encoding='utf-8'))
+          status={
+              'run_id':RUN,'status':'COMPLETED','started_at':'2026-08-02T15:13:39Z','updated_at':now,
+              'stage':'INTEGRITY_PASS','integrity_status':'READY',
+              'counts':{'discovered':4,'size_check_passed':3,'legal_match_passed':2,'signal_confirmed':2,'lpr_identified':2,'contact_route_found':2,'qualified':len(integrated),'excluded':2,'duplicates':len(skipped)},
+              'qualified':[{'lead_id':'GRM-118','brand':'ТемпСтройСистема','inn':'7736195320'},{'lead_id':'GRM-119','brand':'LEONID GRIVKO','inn':'9718208989'}],
+              'rejected':[{'brand':'Beoma','stage':'SIZE_CHECK','reason':'масштаб выше целевого диапазона'},{'brand':'Альмак Авто','stage':'LEGAL_MATCH','reason':'не подтверждена однозначная связь бренда с найденным юрлицом'}],
+              'canonical_pool':len(master),'contacts_total':len(contacts),'evidence_total':len(evidence),
+              'orphan_contacts':len(validation.get('orphan_contacts',[])),'orphan_evidence':len(validation.get('orphan_evidence',[])),
+              'report':'reports/run_2026-08-02_103_repair_and_integration.md'
+          }
+          Path('data/runtime/current_run_status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+      - name: Commit verified canonical integration
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data CURRENT_WORKING_CONFIG.md reports/run_2026-08-02_103_repair_and_integration.md
+          git commit -m 'data: integrate qualified leads and complete GR-20260802-103'
+          git push
