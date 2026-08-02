@@ -1,28 +1,18 @@
 {
   "run_id": "GR-20260802-102",
   "status": "RUNNING",
-  "stage": "DISCOVERED",
+  "stage": "SIZE_CHECK",
   "started_at": "2026-08-02T17:55:00+03:00",
-  "updated_at": "2026-08-02T17:58:00+03:00",
+  "updated_at": "2026-08-02T18:02:00+03:00",
   "integrity_status": "READY",
-  "counts": {
-    "discovered": 4,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "excluded": 0,
-    "duplicates": 0
-  },
+  "counts": {"discovered":4,"size_check_passed":3,"legal_match_passed":0,"signal_confirmed":0,"lpr_identified":0,"contact_route_found":0,"qualified":0,"excluded":1,"duplicates":0},
   "passed": {
-    "discovered": [
-      {"brand":"Альмак Авто","source":"HH vacancy 129309064","signal":"масштабирование B2B и партнёрских СТО"},
-      {"brand":"ТемпСтройСистема","source":"HH vacancy 129535324","signal":"пересборка коммерческого контура и P&L"},
-      {"brand":"LEONID GRIVKO","source":"HH vacancy 129468122","signal":"единый коммерческий контур, запуск B2B и автоматизация"},
-      {"brand":"Beoma","source":"HH vacancy 129664280","signal":"рост с 80 до 150+ млн рублей в месяц"}
+    "discovered":["Альмак Авто","ТемпСтройСистема","LEONID GRIVKO","Beoma"],
+    "size_check":[
+      {"brand":"Альмак Авто","revenue_rub":42313000,"employees":2},
+      {"brand":"ТемпСтройСистема","revenue_rub":19700000,"employees":5},
+      {"brand":"LEONID GRIVKO","revenue_rub":31812000,"employees":"not disclosed"}
     ]
   },
-  "rejected": []
+  "rejected":[{"brand":"Beoma","stage":"SIZE_CHECK","reason":"заявленный текущий оборот около 80 млн руб. в месяц, что существенно выше целевого диапазона"}]
 }
