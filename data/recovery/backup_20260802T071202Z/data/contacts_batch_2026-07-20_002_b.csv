@@ -1,0 +1,19 @@
+Contact ID,Lead ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is Personal,Is LPR,Is Intermediary,Reliability,Date Checked,Notes
+C-051,GRM-016,LABÁ,4705094340,,,https://labacosmetic.com/,form,корпоративная форма,официальный сайт,https://labacosmetic.com/,false,false,true,MEDIUM,2026-07-20,Публичного телефона или email не найдено
+C-052,GRM-017,HEALTHBAND,5031144330,,,+7 (495) 255-44-99,phone,корпоративный маршрут,официальный сайт,https://healthband.ru/kontakty,false,false,true,HIGH,2026-07-20,Телефон московского офиса
+C-053,GRM-017,HEALTHBAND,5031144330,,,+7 (499) 433-05-20,phone,корпоративный маршрут,официальный сайт,https://healthband.ru/kontakty,false,false,true,HIGH,2026-07-20,Дополнительный телефон
+C-054,GRM-017,HEALTHBAND,5031144330,,,mail@healthband.ru,email,корпоративный маршрут,официальный сайт,https://healthband.ru/kontakty,false,false,true,HIGH,2026-07-20,Рабочий email
+C-055,GRM-017,HEALTHBAND,5031144330,,,+7 (777) 084-63-00,mobile,региональный корпоративный маршрут,официальный сайт,https://healthband.ru/kontakty,false,false,true,HIGH,2026-07-20,Контакт подразделения в Казахстане
+C-056,GRM-017,HEALTHBAND,5031144330,,,almaty@healthband.net,email,региональный корпоративный маршрут,официальный сайт,https://healthband.ru/kontakty,false,false,true,HIGH,2026-07-20,Email подразделения в Казахстане
+C-057,GRM-018,MED YU MED,7730315567,,,8 800 550-08-96,phone,корпоративный маршрут,официальный сайт,https://med-yu-med.ru/kontakty/,false,false,true,HIGH,2026-07-20,Общий телефон сети
+C-058,GRM-018,MED YU MED,7730315567,,,info@med-yu-med.ru,email,корпоративный маршрут,официальный сайт,https://med-yu-med.ru/kontakty/,false,false,true,HIGH,2026-07-20,Рабочий email
+C-059,GRM-018,MED YU MED,7730315567,,,WhatsApp с официального сайта,WhatsApp,корпоративный маршрут,официальный сайт,https://med-yu-med.ru/kontakty/,false,false,true,HIGH,2026-07-20,Мессенджер сети
+C-060,GRM-018,MED YU MED,7730315567,,,Telegram с официального сайта,Telegram,публичный профиль бренда,официальный сайт,https://med-yu-med.ru/kontakty/,false,false,true,HIGH,2026-07-20,Telegram сети
+C-061,GRM-018,MED YU MED,7730315567,,,+7 926 731-52-35,mobile,корпоративный маршрут интернет-магазина,официальный сайт,https://med-yu-med.ru/kontakty/,false,false,true,HIGH,2026-07-20,Контакт интернет-магазина
+C-062,GRM-019,МОНИТОРУС,7713492750,,,+7 (495) 660-35-80,phone,корпоративный маршрут,официальный сайт,https://monitoros.ru/,false,false,true,HIGH,2026-07-20,Просить передать Юрию Рожко
+C-063,GRM-019,МОНИТОРУС,7713492750,,,support@monitoros.ru,email,корпоративный маршрут,официальный сайт,https://monitoros.ru/,false,false,true,HIGH,2026-07-20,Рабочий email
+C-064,GRM-019,МОНИТОРУС,7713492750,,,https://monitoros.ru/,form,партнёрский маршрут,официальный сайт,https://monitoros.ru/,false,false,true,HIGH,2026-07-20,Форма для партнёров и интеграторов
+C-065,GRM-020,Школа практического инвестирования,7805819772,,,8 800 707-66-56,phone,корпоративный маршрут,официальный сайт,https://investorpractic.ru/fedor-sidorov/,false,false,true,HIGH,2026-07-20,Просить передать Фёдору Сидорову
+C-066,GRM-020,Школа практического инвестирования,7805819772,,,+7 981 772-07-78,mobile,корпоративный маршрут,официальный сайт,https://investorpractic.ru/fedor-sidorov/,false,false,true,HIGH,2026-07-20,Дополнительный контакт
+C-067,GRM-020,Школа практического инвестирования,7805819772,Сидоров Федор Александрович,Собственник и генеральный директор,Публичный Telegram с официального сайта,Telegram,публичный профиль собственника,официальный сайт,https://investorpractic.ru/fedor-sidorov/,true,true,false,HIGH,2026-07-20,Прямой публичный канал собственника
+C-068,GRM-020,Школа практического инвестирования,7805819772,,,Вакансии школы на HH и агрегаторах,HH,маршрут через вакансии компании,вакансии,https://nesiditsa.ru/vacancy/133354129,false,false,true,MEDIUM,2026-07-20,Просить передать собственнику; не откликаться как кандидат

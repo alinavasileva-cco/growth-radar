@@ -1,0 +1,8 @@
+Run ID,Lead ID,Evidence Type,Fact,Source,Verified At,Confidence
+GR-20260730-079,GRM-109,LEGAL_IDENTITY,"ООО «СТРОЙ-ИНСПЕКТ»; ИНН 7713478071; ОГРН 1207700382504; действует",https://companies.rbc.ru/id/1207700382504-obschestvo-s-ogranichennoj-otvetstvennostyu-stroj-inspekt/,2026-07-30,HIGH
+GR-20260730-079,GRM-109,BRAND_LEGAL_LINK,"Официальный сайт публикует те же наименование; ИНН; ОГРН и адрес",https://stroy-inspekt.ru/contacts.html,2026-07-30,HIGH
+GR-20260730-079,GRM-109,OWNER_LPR,"Валевич Денис Михайлович — генеральный директор и учредитель с долей 100%",https://companies.rbc.ru/id/1207700382504-obschestvo-s-ogranichennoj-otvetstvennostyu-stroj-inspekt/,2026-07-30,HIGH
+GR-20260730-079,GRM-109,FINANCIAL_SCALE,"Выручка за 2025 год 97 373 000 ₽; прибыль 17 800 000 ₽; выручка выросла с 49 428 000 ₽",https://companies.rbc.ru/id/1207700382504-obschestvo-s-ogranichennoj-otvetstvennostyu-stroj-inspekt/,2026-07-30,HIGH
+GR-20260730-079,GRM-109,OPERATING_SCALE,"Полный спектр инженерных изысканий; обследования; экспертизы и проектирования; работа по России; портфель объектов Лукойл; ТРЦ; бизнес-центры и объекты культурного наследия",https://stroy-inspekt.ru/about.html; https://stroy-inspekt.ru/,2026-07-30,HIGH
+GR-20260730-079,GRM-109,BUSINESS_SIGNAL,"Публичный найм РОП для построения и развития отдела продаж с нуля совместно с собственником; личных B2B/B2G продаж и системной воронки",https://hh.ru/vacancies/rukovoditel-napravleniya-otdela-prodazh/za_poslednie_tri_dnya,2026-07-30,MEDIUM
+GR-20260730-079,GRM-109,CONTACT_ROUTE,"Официально опубликованы +7 (495) 128-77-47; +7 (905) 714-66-63; форма обратной связи; доступен маршрут через HeadHunter",https://stroy-inspekt.ru/contacts.html; https://hh.ru/,2026-07-30,HIGH

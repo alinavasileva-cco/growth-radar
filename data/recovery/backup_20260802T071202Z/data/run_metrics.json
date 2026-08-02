@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-08-01T14:46:57+03:00",
+  "latest_run_id": "GR-20260801-100",
+  "canonical_pool_reported": 116,
+  "canonical_pool_verified_in_current_blob": 20,
+  "pending_integration": 1,
+  "confirmed_total_reported_with_increments": 117,
+  "contacts_reported": 191,
+  "evidence_records_reported": 589,
+  "contactable_reported": 101,
+  "need_recheck_reported": 6,
+  "reserve_reported": 9,
+  "blocked_reported": 0,
+  "excluded_reported": 1,
+  "total_target": 1000,
+  "outreach_sent": 0,
+  "integrity_status": "BLOCKED",
+  "notes": "RUN 100 — нулевой технический запуск. Фактический blob data/leads_master.csv содержит только GRM-001–GRM-020, тогда как предыдущая конфигурация заявляет 116 карточек в master. GRM-117 подтверждён в increment, но до восстановления полного master дедупликация ненадёжна. Новые компании не добавлялись."
+}

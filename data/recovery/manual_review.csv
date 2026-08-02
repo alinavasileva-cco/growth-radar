@@ -1,0 +1,78 @@
+type,source,lead_id,details,action
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-27_006.csv,GRM-033,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-27_014.csv,GRM-042,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-28_026.csv,GRM-057,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-28_027.csv,GRM-058,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-28_028.csv,GRM-059,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-29_031.csv,GRM-062,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-29_032.csv,GRM-063,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-29_033.csv,GRM-064,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-29_054.csv,GRM-085,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_CONTACT,current:data/increments/contact_routes_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_006.csv,GRM-033,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_006.csv,GRM-033,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_006.csv,GRM-033,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_006.csv,GRM-033,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_014.csv,GRM-042,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_014.csv,GRM-042,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_014.csv,GRM-042,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_014.csv,GRM-042,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-27_014.csv,GRM-042,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_026.csv,GRM-057,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_026.csv,GRM-057,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_026.csv,GRM-057,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_026.csv,GRM-057,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_026.csv,GRM-057,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_027.csv,GRM-058,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_027.csv,GRM-058,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_027.csv,GRM-058,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_027.csv,GRM-058,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_028.csv,GRM-059,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_028.csv,GRM-059,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_028.csv,GRM-059,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-28_028.csv,GRM-059,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_031.csv,GRM-062,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_031.csv,GRM-062,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_031.csv,GRM-062,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_031.csv,GRM-062,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_031.csv,GRM-062,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_032.csv,GRM-063,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_032.csv,GRM-063,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_032.csv,GRM-063,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_032.csv,GRM-063,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_032.csv,GRM-063,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_033.csv,GRM-064,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_033.csv,GRM-064,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_033.csv,GRM-064,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_033.csv,GRM-064,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_033.csv,GRM-064,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_033.csv,GRM-064,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+EVIDENCE_PARSE_ERROR,current:data/increments/evidence_2026-07-29_042.csv,,Column overflow in current:data/increments/evidence_2026-07-29_042.csv:5,Source excluded from canonical file
+EVIDENCE_PARSE_ERROR,current:data/increments/evidence_2026-07-29_043.csv,,Column overflow in current:data/increments/evidence_2026-07-29_043.csv:5,Source excluded from canonical file
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_054.csv,GRM-085,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_054.csv,GRM-085,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_054.csv,GRM-085,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_054.csv,GRM-085,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_054.csv,GRM-085,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-29_054.csv,GRM-085,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+ORPHAN_EVIDENCE,current:data/increments/evidence_2026-07-31_090.csv,GRM-116,Referenced Lead ID is absent from recovered master,Excluded from canonical file and retained in manual_review
+STATUS_FIELD_REPAIRED,candidate_inventory.csv,GRM-031,Invalid recovered status '2026-07-30T18:11:59+04:00'; restored latest valid status 'МОЖНО СВЯЗЫВАТЬСЯ' from current:data/increments/leads_2026-07-29_051.csv,Final Quick Status set to МОЖНО СВЯЗЫВАТЬСЯ
+STATUS_FIELD_REPAIRED,candidate_inventory.csv,GRM-047,Invalid recovered status '2026-07-30T11:10:11+04:00'; restored latest valid status 'МОЖНО СВЯЗЫВАТЬСЯ' from current:data/increments/leads_2026-07-29_053.csv,Final Quick Status set to МОЖНО СВЯЗЫВАТЬСЯ
+STATUS_FIELD_REPAIRED,candidate_inventory.csv,GRM-053,Invalid recovered status '2026-07-30T14:11:28+04:00'; restored latest valid status 'МОЖНО СВЯЗЫВАТЬСЯ' from current:data/increments/leads_2026-07-28_023.csv,Final Quick Status set to МОЖНО СВЯЗЫВАТЬСЯ
+STATUS_FIELD_REPAIRED,candidate_inventory.csv,GRM-054,Invalid recovered status '2026-07-30T17:08:06+04:00'; restored latest valid status 'МОЖНО СВЯЗЫВАТЬСЯ' from current:data/increments/leads_2026-07-28_023.csv,Final Quick Status set to МОЖНО СВЯЗЫВАТЬСЯ
+STATUS_FIELD_REPAIRED,candidate_inventory.csv,GRM-055,Invalid recovered status '2026-07-30T15:08:02+04:00'; restored latest valid status 'МОЖНО СВЯЗЫВАТЬСЯ' from current:data/increments/leads_2026-07-28_029.csv,Final Quick Status set to МОЖНО СВЯЗЫВАТЬСЯ
+STATUS_FIELD_REPAIRED,candidate_inventory.csv,GRM-071,Invalid recovered status '1'; restored latest valid status 'МОЖНО СВЯЗЫВАТЬСЯ' from current:data/increments/leads_2026-07-29_040.csv,Final Quick Status set to МОЖНО СВЯЗЫВАТЬСЯ
+STATUS_FIELD_REPAIRED,candidate_inventory.csv,GRM-106,"Invalid recovered status '2026-07-30T19:11:30+04:00'; no valid historical status found, moved to manual recheck",Final Quick Status set to НУЖНА ДОПРОВЕРКА
+STATUS_FIELD_REPAIRED,candidate_inventory.csv,GRM-108,"Invalid recovered status '2026-07-30T21:11:46+04:00'; no valid historical status found, moved to manual recheck",Final Quick Status set to НУЖНА ДОПРОВЕРКА
