@@ -1,6 +1,13 @@
 {
-  "run_id":"GR-20260802-102","status":"RUNNING","stage":"CONTACT_ROUTE_FOUND","started_at":"2026-08-02T17:55:00+03:00","updated_at":"2026-08-02T18:11:00+03:00","integrity_status":"READY",
+  "run_id":"GR-20260802-102",
+  "status":"PARTIAL_SYNC_REQUIRED",
+  "stage":"QUALIFICATION_COMPLETE",
+  "started_at":"2026-08-02T17:55:00+03:00",
+  "updated_at":"2026-08-02T18:15:00+03:00",
+  "integrity_status":"READY_CANONICAL_UNCHANGED",
   "counts":{"discovered":4,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"excluded":2,"duplicates":0},
-  "passed":{"discovered":["Альмак Авто","ТемпСтройСистема","LEONID GRIVKO","Beoma"],"size_check":["Альмак Авто","ТемпСтройСистема","LEONID GRIVKO"],"legal_match":["ТемпСтройСистема","LEONID GRIVKO"],"signal_confirmed":["ТемпСтройСистема","LEONID GRIVKO"],"lpr_identified":["ТемпСтройСистема","LEONID GRIVKO"],"contact_route_found":[{"brand":"ТемпСтройСистема","phone":"+7 (495) 727-06-20","email":"info@tempstroy.ru","route":"официальная приёмная; просить передать Вершининой Ирине Васильевне или президенту А. М. Клевцову"},{"brand":"LEONID GRIVKO","phone":"+7 (967) 027-32-73","email":"info@grivko.com","route":"официальный бутик/поддержка; просить передать собственнику и гендиректору Черкасовой Ирине Леонидовне"}]},
-  "rejected":[{"brand":"Beoma","stage":"SIZE_CHECK","reason":"масштаб выше целевого диапазона"},{"brand":"Альмак Авто","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с найденным юрлицом"}]
+  "qualified":[{"lead_id":"GRM-118","brand":"ТемпСтройСистема","inn":"7736195320"},{"lead_id":"GRM-119","brand":"LEONID GRIVKO","inn":"9718208989"}],
+  "rejected":[{"brand":"Beoma","stage":"SIZE_CHECK","reason":"масштаб выше целевого диапазона"},{"brand":"Альмак Авто","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с найденным юрлицом"}],
+  "artifacts":["data/increments/leads_GR-20260802-102.csv","data/increments/contact_routes_GR-20260802-102.csv","data/increments/evidence_GR-20260802-102.csv","reports/run_2026-08-02_102_visible_search.md"],
+  "blocker":"Квалификация завершена, но атомарная интеграция increment-файлов в master/contacts/evidence и повторный запуск валидатора не выполнены в этом запуске. Канонические файлы намеренно не изменены, чтобы не создать рассинхронизацию."
 }
