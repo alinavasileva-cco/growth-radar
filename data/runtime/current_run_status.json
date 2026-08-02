@@ -1,55 +1,22 @@
 {
   "run_id": "GR-20260802-104",
   "campaign_id": "GR-CAMPAIGN-PLUS100-20260802",
-  "status": "RUNNING",
+  "status": "QUALIFIED_INCREMENT_PENDING_CANONICAL_SYNC",
   "started_at": "2026-08-02T22:12:48+03:00",
-  "updated_at": "2026-08-02T23:21:00+03:00",
-  "stage": "LEGAL_MATCH",
+  "updated_at": "2026-08-02T23:33:00+03:00",
+  "stage": "QUALIFIED",
   "integrity_precheck": "READY_CANONICAL_COUNT_70",
-  "campaign": {
-    "baseline_count": 70,
-    "target_count": 170,
-    "current_canonical_count": 70,
-    "progress_added": 0,
-    "remaining": 100
-  },
-  "pending_canonical_integration": {
-    "source_run": "GR-20260802-102",
-    "qualified_count": 2,
-    "companies": [
-      {"lead_id":"GRM-118","brand":"ТемпСтройСистема","legal_name":"ООО «ТемпСтройСистема»","inn":"7736195320"},
-      {"lead_id":"GRM-119","brand":"LEONID GRIVKO","legal_name":"ООО «ДЕЛОВАЯ МОДА»","inn":"9718208989"}
-    ],
-    "blocker":"Large canonical CSV reads are truncated by the connector; pending records remain outside the canonical count until a lossless merge is possible."
-  },
-  "counts": {
-    "discovered": 4,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "excluded": 2,
-    "duplicates": 0
-  },
-  "passed": {
-    "size_check": [
-      {"brand":"Zerobit","reason":"выручка 161.347 млн руб. за 2024 год; 20+ специалистов и 100+ клиентов"},
-      {"brand":"Lofty","reason":"действующий российский IT-бизнес и публичная команда; масштаб требует дополнительного подтверждения"}
-    ],
-    "legal_match": [
-      {"brand":"Zerobit","legal_name":"ООО «Зеробит»","inn":"7724741091","ogrn":"1107746220075","status":"Действует"}
-    ]
-  },
+  "campaign": {"baseline_count":70,"target_count":170,"current_canonical_count":70,"progress_added":0,"remaining":100},
+  "counts": {"discovered":4,"size_check_passed":2,"legal_match_passed":1,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"excluded":2,"duplicates":0},
+  "qualified": [{"lead_id":"GRM-120","brand":"Zerobit","legal_name":"ООО «Зеробит»","inn":"7724741091","ogrn":"1107746220075","signal_level":"S1","lpr":"Евгений Остатнийгрош","contacts":3}],
+  "pending_canonical_count": 3,
+  "pending_lead_ids": ["GRM-118","GRM-119","GRM-120"],
+  "canonical_sync_note": "Qualified increments are preserved but are not counted until master synchronization and integrity PASS.",
   "rejections": [
-    {"brand":"ТаргетЛид","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с конкретным российским юрлицом"},
-    {"brand":"UREMONT / DOMO","stage":"LEGAL_MATCH","reason":"не подтверждена точная связка продукта DOMO с действующим юрлицом и ИНН"}
+    {"brand":"ТаргетЛид","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с российским юрлицом"},
+    {"brand":"UREMONT / DOMO","stage":"LEGAL_MATCH","reason":"не подтверждена точная связь продукта с действующим юрлицом и ИНН"}
   ],
-  "under_review": [
-    {"brand":"Lofty","next":"подтвердить российское юрлицо, ИНН и финансовый масштаб"},
-    {"brand":"Zerobit","next":"подтвердить бизнес-сигнал S1 и финальный маршрут к ЛПР"}
-  ],
-  "next_stage": "SIGNAL_LPR_CONTACT_VERIFICATION",
+  "under_review": [{"brand":"Lofty","next":"подтвердить российское юрлицо, ИНН и финансовый масштаб"}],
+  "files": {"leads_increment":"data/increments/leads_GR-20260802-104.csv","contacts_increment":"data/increments/contact_routes_GR-20260802-104.csv","evidence_increment":"data/increments/evidence_GR-20260802-104.csv","report":"reports/run_2026-08-02_104.md"},
   "outreach_sent": 0
 }
