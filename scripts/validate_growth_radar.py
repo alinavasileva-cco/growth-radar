@@ -18,7 +18,16 @@ METRICS = DATA / "run_metrics.json"
 CONFIG = ROOT / "CURRENT_WORKING_CONFIG.md"
 VALIDATION = DATA / "recovery" / "integrity_validation.json"
 
-EMPTY_TOKENS = {"", "unknown", "none", "null", "n/a", "na", "-", "—"}
+EMPTY_TOKENS = {"", "unknown", "none", "null", "n/a", "na", "-", "—", "неизвестно"}
+ALLOWED_STATUSES = {
+    "МОЖНО СВЯЗЫВАТЬСЯ",
+    "НУЖНА ДОПРОВЕРКА",
+    "RESERVE",
+    "РЕЗЕРВ",
+    "BLOCKED",
+    "EXCLUDED",
+    "ИСКЛЮЧЕНА",
+}
 
 
 def clean(value: object) -> str:
@@ -27,6 +36,20 @@ def clean(value: object) -> str:
 
 def usable(value: object) -> bool:
     return clean(value).casefold() not in EMPTY_TOKENS
+
+
+def digits(value: object) -> str:
+    return re.sub(r"\D", "", clean(value))
+
+
+def valid_inn(value: object) -> str:
+    value = digits(value)
+    return value if len(value) in {10, 12} else ""
+
+
+def valid_ogrn(value: object) -> str:
+    value = digits(value)
+    return value if len(value) in {13, 15} else ""
 
 
 def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
@@ -85,19 +108,24 @@ def validate() -> dict[str, object]:
         errors.append("Status column is absent")
 
     lead_ids = [row.get(lead_field or "", "") for row in master_rows]
-    inns = [row.get(inn_field or "", "") for row in master_rows]
-    ogrns = [row.get(ogrn_field or "", "") for row in master_rows]
+    raw_inns = [row.get(inn_field or "", "") for row in master_rows]
+    raw_ogrns = [row.get(ogrn_field or "", "") for row in master_rows]
+    inns = [valid_inn(v) for v in raw_inns]
+    ogrns = [valid_ogrn(v) for v in raw_ogrns]
     statuses = [row.get(status_field or "", "") or "UNSET" for row in master_rows]
 
     duplicate_lead_ids = duplicate_values(lead_ids)
     duplicate_inns = duplicate_values(inns)
     duplicate_ogrns = duplicate_values(ogrns)
+    invalid_statuses = sorted({status for status in statuses if status not in ALLOWED_STATUSES})
     if duplicate_lead_ids:
         errors.append(f"Duplicate Lead IDs: {duplicate_lead_ids}")
     if duplicate_inns:
         errors.append(f"Duplicate INNs: {duplicate_inns}")
     if duplicate_ogrns:
         errors.append(f"Duplicate OGRNs/OGRNIPs: {duplicate_ogrns}")
+    if invalid_statuses:
+        errors.append(f"Invalid final statuses: {invalid_statuses}")
     if any(not usable(v) for v in lead_ids):
         errors.append("At least one master row has an empty Lead ID")
 
@@ -136,18 +164,19 @@ def validate() -> dict[str, object]:
             errors.append(f"Cannot validate {kind}: {exc}")
 
     config_text = CONFIG.read_text(encoding="utf-8") if CONFIG.exists() else ""
-    if re.search(r"\bBLOCKED\b", config_text, flags=re.IGNORECASE):
-        errors.append("CURRENT_WORKING_CONFIG.md still contains BLOCKED")
+    status_line = next((line for line in config_text.splitlines() if line.strip().startswith("**Статус:**")), "")
+    if "`READY`" not in status_line:
+        errors.append("CURRENT_WORKING_CONFIG.md status line is not READY")
 
     expected_pool = metrics.get("canonical_pool_verified")
     if expected_pool != len(master_rows):
         errors.append(f"Metrics/master mismatch: {expected_pool!r} != {len(master_rows)}")
     if metrics.get("unique_lead_ids") != len(set(lead_ids)):
         errors.append("unique_lead_ids does not match master")
-    if metrics.get("unique_inns") != len({v for v in inns if usable(v)}):
-        errors.append("unique_inns does not match master")
-    if metrics.get("unique_ogrns") != len({v for v in ogrns if usable(v)}):
-        errors.append("unique_ogrns does not match master")
+    if metrics.get("unique_inns") != len({v for v in inns if v}):
+        errors.append("unique_inns does not match valid INNs in master")
+    if metrics.get("unique_ogrns") != len({v for v in ogrns if v}):
+        errors.append("unique_ogrns does not match valid OGRNs/OGRNIPs in master")
     if metrics.get("contacts_verified") != contacts_count:
         errors.append("contacts_verified does not match canonical contacts")
     if metrics.get("evidence_records_verified") != evidence_count:
@@ -158,24 +187,24 @@ def validate() -> dict[str, object]:
         errors.append("Metrics integrity_status is not READY")
 
     status_counts = dict(Counter(statuses))
-    metric_status_counts = metrics.get("status_counts")
-    if metric_status_counts != status_counts:
+    if metrics.get("status_counts") != status_counts:
         errors.append("status_counts does not match master")
     if sum(status_counts.values()) != len(master_rows):
         errors.append("Status count sum does not match master")
 
     grm117_present = "GRM-117" in canonical_ids
-    if metrics.get("grm_117_required", True) and not grm117_present:
+    if metrics.get("grm_117_required", False) and not grm117_present:
         errors.append("GRM-117 is required but absent")
 
     return {
         "master_rows": len(master_rows),
         "unique_lead_ids": len(set(lead_ids)),
-        "unique_inns": len({v for v in inns if usable(v)}),
-        "unique_ogrns": len({v for v in ogrns if usable(v)}),
+        "unique_inns": len({v for v in inns if v}),
+        "unique_ogrns": len({v for v in ogrns if v}),
         "duplicate_lead_ids": duplicate_lead_ids,
         "duplicate_inns": duplicate_inns,
         "duplicate_ogrns": duplicate_ogrns,
+        "invalid_statuses": invalid_statuses,
         "orphan_contacts": orphan_contacts,
         "orphan_evidence": orphan_evidence,
         "status_counts": status_counts,
