@@ -1,22 +1,67 @@
 {
-  "run_id": "GR-20260802-104",
+  "run_id": "GR-20260803-105",
   "campaign_id": "GR-CAMPAIGN-PLUS100-20260802",
   "status": "QUALIFIED_INCREMENT_PENDING_CANONICAL_SYNC",
-  "started_at": "2026-08-02T22:12:48+03:00",
-  "updated_at": "2026-08-02T23:33:00+03:00",
+  "started_at": "2026-08-03T00:15:48+03:00",
+  "updated_at": "2026-08-03T00:42:00+03:00",
   "stage": "QUALIFIED",
   "integrity_precheck": "READY_CANONICAL_COUNT_70",
-  "campaign": {"baseline_count":70,"target_count":170,"current_canonical_count":70,"progress_added":0,"remaining":100},
-  "counts": {"discovered":4,"size_check_passed":2,"legal_match_passed":1,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"excluded":2,"duplicates":0},
-  "qualified": [{"lead_id":"GRM-120","brand":"Zerobit","legal_name":"ООО «Зеробит»","inn":"7724741091","ogrn":"1107746220075","signal_level":"S1","lpr":"Евгений Остатнийгрош","contacts":3}],
-  "pending_canonical_count": 3,
-  "pending_lead_ids": ["GRM-118","GRM-119","GRM-120"],
+  "campaign": {
+    "baseline_count": 70,
+    "target_count": 170,
+    "current_canonical_count": 70,
+    "progress_added": 0,
+    "remaining": 100
+  },
+  "counts": {
+    "discovered": 4,
+    "size_check_passed": 3,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "excluded": 1,
+    "hold": 2,
+    "duplicates": 0
+  },
+  "qualified": [
+    {
+      "lead_id": "GRM-121",
+      "brand": "Экосмотр / Онлайн Страхование",
+      "legal_name": "ООО «ОНЛАЙН СТРАХОВАНИЕ»",
+      "inn": "5407973147",
+      "ogrn": "1195476004712",
+      "signal_level": "S1",
+      "lpr": "Борисенко Дмитрий Андреевич",
+      "contacts": 4
+    }
+  ],
+  "pending_canonical_count": 4,
+  "pending_lead_ids": ["GRM-118", "GRM-119", "GRM-120", "GRM-121"],
   "canonical_sync_note": "Qualified increments are preserved but are not counted until master synchronization and integrity PASS.",
   "rejections": [
-    {"brand":"ТаргетЛид","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с российским юрлицом"},
-    {"brand":"UREMONT / DOMO","stage":"LEGAL_MATCH","reason":"не подтверждена точная связь продукта с действующим юрлицом и ИНН"}
+    {
+      "brand": "Netto company",
+      "stage": "SIZE_CHECK",
+      "reason": "проект на стадии выбора ниши; отсутствует подтверждённый действующий бизнес нужного масштаба"
+    }
   ],
-  "under_review": [{"brand":"Lofty","next":"подтвердить российское юрлицо, ИНН и финансовый масштаб"}],
-  "files": {"leads_increment":"data/increments/leads_GR-20260802-104.csv","contacts_increment":"data/increments/contact_routes_GR-20260802-104.csv","evidence_increment":"data/increments/evidence_GR-20260802-104.csv","report":"reports/run_2026-08-02_104.md"},
+  "hold": [
+    {
+      "brand": "SellerGroup",
+      "next": "подтвердить ИНН/ОГРН ООО «СТР» и собственника"
+    },
+    {
+      "brand": "НЕФТЬ",
+      "next": "подтвердить точное российское юрлицо бренда"
+    }
+  ],
+  "files": {
+    "leads_increment": "data/increments/leads_GR-20260803-105.csv",
+    "contacts_increment": "data/increments/contact_routes_GR-20260803-105.csv",
+    "evidence_increment": "data/increments/evidence_GR-20260803-105.csv",
+    "report": "reports/run_2026-08-03_105.md"
+  },
   "outreach_sent": 0
 }
