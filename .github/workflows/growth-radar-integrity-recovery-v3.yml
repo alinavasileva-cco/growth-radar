@@ -1,0 +1,75 @@
+name: Growth Radar integrity recovery v3
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/growth-radar-integrity-recovery-v3.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: growth-radar-integrity-recovery
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name 'growth-radar-recovery-bot'
+          git config user.email 'actions@users.noreply.github.com'
+
+      - name: Rebuild canonical data from factual repository sources
+        run: python scripts/recover_growth_radar_v3.py
+
+      - name: Validate recovered state before commit
+        run: python scripts/validate_growth_radar.py --write
+
+      - name: Commit recovered canonical state
+        id: recovery_commit
+        run: |
+          git add -A
+          git commit -m 'fix: complete Growth Radar integrity recovery GR-20260802-101'
+          RECOVERY_SHA=$(git rev-parse HEAD)
+          echo "sha=$RECOVERY_SHA" >> "$GITHUB_OUTPUT"
+          git push origin main
+
+      - name: Seal recovery records with recovery commit SHA
+        env:
+          RECOVERY_SHA: ${{ steps.recovery_commit.outputs.sha }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+
+          sha = os.environ['RECOVERY_SHA']
+          paths = [
+              Path('CURRENT_WORKING_CONFIG.md'),
+              Path('data/run_metrics.json'),
+              Path('data/run_log.csv'),
+              Path('data/run_logs/GR-20260802-101.csv'),
+              Path('reports/run_2026-08-02_101_integrity_recovery.md'),
+          ]
+          for path in paths:
+              text = path.read_text(encoding='utf-8')
+              path.write_text(text.replace('__RECOVERY_DATA_COMMIT__', sha), encoding='utf-8')
+          PY
+          python scripts/validate_growth_radar.py --write
+          git add -A
+          git commit -m 'chore: seal verified Growth Radar recovery GR-20260802-101'
+          git push origin main
+
+      - name: Final validation from committed main state
+        run: |
+          git pull --ff-only origin main
+          python scripts/validate_growth_radar.py --write
+          git diff --exit-code
+          echo "FINAL_SHA=$(git rev-parse HEAD)"
