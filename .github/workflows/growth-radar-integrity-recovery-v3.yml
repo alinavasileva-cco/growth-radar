@@ -1,5 +1,6 @@
 name: Growth Radar integrity recovery v3
 
+# retrigger: 2026-08-02T10:08:00+03:00
 on:
   push:
     branches: [main]
