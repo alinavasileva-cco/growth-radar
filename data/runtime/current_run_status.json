@@ -1,13 +1,34 @@
 {
-  "run_id":"GR-20260802-102",
-  "status":"PARTIAL_SYNC_REQUIRED",
-  "stage":"QUALIFICATION_COMPLETE",
-  "started_at":"2026-08-02T17:55:00+03:00",
-  "updated_at":"2026-08-02T18:15:00+03:00",
-  "integrity_status":"READY_CANONICAL_UNCHANGED",
-  "counts":{"discovered":4,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"excluded":2,"duplicates":0},
-  "qualified":[{"lead_id":"GRM-118","brand":"ТемпСтройСистема","inn":"7736195320"},{"lead_id":"GRM-119","brand":"LEONID GRIVKO","inn":"9718208989"}],
-  "rejected":[{"brand":"Beoma","stage":"SIZE_CHECK","reason":"масштаб выше целевого диапазона"},{"brand":"Альмак Авто","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с найденным юрлицом"}],
-  "artifacts":["data/increments/leads_GR-20260802-102.csv","data/increments/contact_routes_GR-20260802-102.csv","data/increments/evidence_GR-20260802-102.csv","reports/run_2026-08-02_102_visible_search.md"],
-  "blocker":"Квалификация завершена, но атомарная интеграция increment-файлов в master/contacts/evidence и повторный запуск валидатора не выполнены в этом запуске. Канонические файлы намеренно не изменены, чтобы не создать рассинхронизацию."
+  "run_id": "GR-20260802-103",
+  "status": "REPAIR",
+  "started_at": "2026-08-02T15:13:39Z",
+  "updated_at": "2026-08-02T15:18:00Z",
+  "stage": "INTEGRATING_PREVIOUS_QUALIFIED_INCREMENT",
+  "integrity_precheck": "READY_CANONICAL_UNCHANGED",
+  "counts": {
+    "discovered": 4,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "excluded": 2,
+    "duplicates": 0
+  },
+  "passed": {
+    "qualified": [
+      {"lead_id":"GRM-118","brand":"ТемпСтройСистема","legal_name":"ООО «ТемпСтройСистема»","inn":"7736195320","source_run":"GR-20260802-102"},
+      {"lead_id":"GRM-119","brand":"LEONID GRIVKO","legal_name":"ООО «ДЕЛОВАЯ МОДА»","inn":"9718208989","source_run":"GR-20260802-102"}
+    ]
+  },
+  "rejections": [
+    {"brand":"Beoma","stage":"SIZE_CHECK","reason":"масштаб выше целевого диапазона"},
+    {"brand":"Альмак Авто","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с найденным юрлицом"}
+  ],
+  "notes": [
+    "Каноническая база целостна и остаётся на 70 компаниях.",
+    "Обнаружен незавершённый предыдущий запуск с двумя полностью квалифицированными increment-карточками.",
+    "Текущий цикл перешёл в REPAIR: интеграция increments в master/contacts/evidence с повторной дедупликацией и валидацией."
+  ]
 }
