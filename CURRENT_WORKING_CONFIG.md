@@ -49,4 +49,4 @@
 - новые компании не считаются подтверждёнными без фактической записи в GitHub и commit SHA;
 - исторические increment-файлы и отчёты не удаляются.
 
-Recovery data commit: `__RECOVERY_DATA_COMMIT__`.
+Recovery data commit: `82a9e1923e9b568f15eacb9236749779ab0be238`.

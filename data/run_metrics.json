@@ -37,6 +37,6 @@
   "total_target": 1000,
   "remaining_to_target": 930,
   "outreach_sent": 0,
-  "recovery_data_commit": "__RECOVERY_DATA_COMMIT__",
+  "recovery_data_commit": "82a9e1923e9b568f15eacb9236749779ab0be238",
   "status_fields_repaired": 8
 }
