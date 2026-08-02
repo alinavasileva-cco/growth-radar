@@ -1,43 +1,44 @@
 {
-  "run_id": "GR-20260802-103",
-  "status": "REPAIR_BLOCKED",
-  "started_at": "2026-08-02T15:13:39Z",
-  "updated_at": "2026-08-02T17:29:00Z",
-  "stage": "CANONICAL_INTEGRATION",
-  "integrity_precheck": "READY_CANONICAL_UNCHANGED",
+  "run_id": "GR-20260802-104",
+  "campaign_id": "GR-CAMPAIGN-PLUS100-20260802",
+  "status": "RUNNING",
+  "started_at": "2026-08-02T22:12:48+03:00",
+  "updated_at": "2026-08-02T22:18:30+03:00",
+  "stage": "DISCOVERED",
+  "integrity_precheck": "READY_CANONICAL_COUNT_70",
+  "campaign": {
+    "baseline_count": 70,
+    "target_count": 170,
+    "current_canonical_count": 70,
+    "progress_added": 0,
+    "remaining": 100
+  },
+  "pending_canonical_integration": {
+    "source_run": "GR-20260802-102",
+    "qualified_count": 2,
+    "companies": [
+      {"lead_id":"GRM-118","brand":"ТемпСтройСистема","legal_name":"ООО «ТемпСтройСистема»","inn":"7736195320"},
+      {"lead_id":"GRM-119","brand":"LEONID GRIVKO","legal_name":"ООО «ДЕЛОВАЯ МОДА»","inn":"9718208989"}
+    ],
+    "blocker":"Large canonical CSV reads are truncated by the connector; pending records remain outside the canonical count until a lossless merge is possible."
+  },
   "counts": {
     "discovered": 4,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "excluded": 2,
+    "size_check_passed": 0,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
+    "qualified": 0,
+    "excluded": 0,
     "duplicates": 0
   },
-  "passed": {
-    "qualified": [
-      {"lead_id":"GRM-118","brand":"ТемпСтройСистема","legal_name":"ООО «ТемпСтройСистема»","inn":"7736195320","ogrn":"1027700171531","source_run":"GR-20260802-102"},
-      {"lead_id":"GRM-119","brand":"LEONID GRIVKO","legal_name":"ООО «ДЕЛОВАЯ МОДА»","inn":"9718208989","ogrn":"1227700749210","source_run":"GR-20260802-102"}
-    ]
-  },
-  "rejections": [
-    {"brand":"Beoma","stage":"SIZE_CHECK","reason":"масштаб выше целевого диапазона"},
-    {"brand":"Альмак Авто","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с найденным юрлицом"}
+  "discovered_candidates": [
+    {"brand":"Zerobit","signal":"CCO для роста, масштабирования каналов, новых рынков и снижения зависимости от собственника","signal_source":"LinkedIn / Facancy","signal_date":"2026-06-02"},
+    {"brand":"ТаргетЛид","signal":"трансформация в Performance-платформу и подготовка к масштабированию x3–x5","signal_source":"Facancy","signal_date":"2026-07-06"},
+    {"brand":"UREMONT / DOMO","signal":"цифровая управляющая компания для малых отелей; задачи роста загрузки и вывода собственников из операционки","signal_source":"вакансия работодателя","signal_date":"2026-06-15"},
+    {"brand":"Lofty","signal":"строит AI R&D-лабораторию и масштабируемую операционную модель продуктовых направлений","signal_source":"Facancy","signal_date":"2026-06-22"}
   ],
-  "verified_increment_files": [
-    "data/increments/leads_GR-20260802-102.csv",
-    "data/increments/contact_routes_GR-20260802-102.csv",
-    "data/increments/evidence_GR-20260802-102.csv"
-  ],
-  "blocker": "Direct GitHub update_file is available, but the connector truncates reads of the large canonical CSV files data/leads_master.csv, data/contacts.csv and data/evidence.csv. GitHub Contents API requires the complete replacement text for each update. Lossless full-file reconstruction is therefore not possible in this execution without risking deletion of existing canonical rows.",
-  "canonical_state": {
-    "latest_confirmed_run":"GR-20260802-101",
-    "canonical_pool":70,
-    "pending_unique_companies":2,
-    "pending_contacts":4,
-    "pending_evidence":6
-  },
-  "next_required_action": "Perform the merge in an environment that can read the complete repository files (Git checkout, GitHub Codespace, or untruncated GitHub API download), then run scripts/validate_growth_radar.py and commit all canonical files atomically."
+  "next_stage": "SIZE_CHECK_AND_LEGAL_MATCH",
+  "outreach_sent": 0
 }
