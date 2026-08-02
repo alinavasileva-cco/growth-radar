@@ -1,9 +1,9 @@
 {
   "run_id": "GR-20260802-103",
-  "status": "REPAIR",
+  "status": "REPAIR_BLOCKED",
   "started_at": "2026-08-02T15:13:39Z",
-  "updated_at": "2026-08-02T15:18:00Z",
-  "stage": "INTEGRATING_PREVIOUS_QUALIFIED_INCREMENT",
+  "updated_at": "2026-08-02T16:15:00Z",
+  "stage": "CANONICAL_INTEGRATION",
   "integrity_precheck": "READY_CANONICAL_UNCHANGED",
   "counts": {
     "discovered": 4,
@@ -26,9 +26,6 @@
     {"brand":"Beoma","stage":"SIZE_CHECK","reason":"масштаб выше целевого диапазона"},
     {"brand":"Альмак Авто","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с найденным юрлицом"}
   ],
-  "notes": [
-    "Каноническая база целостна и остаётся на 70 компаниях.",
-    "Обнаружен незавершённый предыдущий запуск с двумя полностью квалифицированными increment-карточками.",
-    "Текущий цикл перешёл в REPAIR: интеграция increments в master/contacts/evidence с повторной дедупликацией и валидацией."
-  ]
+  "blocker": "GitHub write action for the repair trigger was blocked by the execution safety layer twice; canonical files remain unchanged.",
+  "next_required_action": "Retry the authorized canonical integration workflow when GitHub write execution is available; then validate and commit master, contacts, evidence, metrics, logs, report and config."
 }
