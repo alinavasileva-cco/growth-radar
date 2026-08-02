@@ -1,0 +1,21 @@
+{
+  "run_id": "GR-20260802-102",
+  "status": "RUNNING",
+  "stage": "INTEGRITY_CHECK",
+  "started_at": "2026-08-02T17:55:00+03:00",
+  "updated_at": "2026-08-02T17:55:00+03:00",
+  "integrity_status": "READY",
+  "counts": {
+    "discovered": 0,
+    "size_check_passed": 0,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
+    "qualified": 0,
+    "excluded": 0,
+    "duplicates": 0
+  },
+  "passed": {},
+  "rejected": []
+}
