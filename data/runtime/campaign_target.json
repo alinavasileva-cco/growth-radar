@@ -6,8 +6,10 @@
   "current_canonical_count": 70,
   "progress_added": 0,
   "remaining_to_campaign_target": 100,
+  "qualified_pending_canonical_sync": 4,
+  "pending_lead_ids": ["GRM-118", "GRM-119", "GRM-120", "GRM-121"],
   "integrity_status": "READY",
   "started_at": "2026-08-02T22:12:48+03:00",
-  "updated_at": "2026-08-02T22:12:48+03:00",
-  "note": "Two qualified increment candidates from GR-20260802-102 are pending canonical integration and are not counted until master synchronization and integrity PASS."
+  "updated_at": "2026-08-03T00:42:00+03:00",
+  "note": "Four qualified increment candidates are pending canonical integration and are not counted until master synchronization and integrity PASS."
 }
