@@ -1,0 +1,13 @@
+{
+  "campaign_id": "GR-CAMPAIGN-PLUS100-20260802",
+  "baseline_run_id": "GR-20260802-101",
+  "baseline_count": 70,
+  "target_count": 170,
+  "current_canonical_count": 70,
+  "progress_added": 0,
+  "remaining_to_campaign_target": 100,
+  "integrity_status": "READY",
+  "started_at": "2026-08-02T22:12:48+03:00",
+  "updated_at": "2026-08-02T22:12:48+03:00",
+  "note": "Two qualified increment candidates from GR-20260802-102 are pending canonical integration and are not counted until master synchronization and integrity PASS."
+}
