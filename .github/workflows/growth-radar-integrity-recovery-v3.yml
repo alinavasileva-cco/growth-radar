@@ -1,6 +1,6 @@
 name: Growth Radar integrity recovery v3
 
-# retrigger: 2026-08-02T10:08:00+03:00
+# retrigger: 2026-08-02T10:12:00+03:00
 on:
   push:
     branches: [main]
@@ -29,10 +29,32 @@ jobs:
           git config user.email 'actions@users.noreply.github.com'
 
       - name: Rebuild canonical data from factual repository sources
-        run: python scripts/recover_growth_radar_v3.py
+        run: |
+          mkdir -p data/recovery
+          set +e
+          python scripts/recover_growth_radar_v3.py > data/recovery/recovery_v3_execution.log 2>&1
+          CODE=$?
+          echo "exit_code=$CODE" >> data/recovery/recovery_v3_execution.log
+          cat data/recovery/recovery_v3_execution.log
+          if [ "$CODE" -ne 0 ]; then
+            git add data/recovery/recovery_v3_execution.log
+            git commit -m 'diagnostic: capture Growth Radar recovery v3 failure'
+            git push origin main
+            exit "$CODE"
+          fi
 
       - name: Validate recovered state before commit
-        run: python scripts/validate_growth_radar.py --write
+        run: |
+          set +e
+          python scripts/validate_growth_radar.py --write >> data/recovery/recovery_v3_execution.log 2>&1
+          CODE=$?
+          cat data/recovery/recovery_v3_execution.log
+          if [ "$CODE" -ne 0 ]; then
+            git add data/recovery/recovery_v3_execution.log data/recovery/integrity_validation.json
+            git commit -m 'diagnostic: capture Growth Radar validation failure'
+            git push origin main
+            exit "$CODE"
+          fi
 
       - name: Commit recovered canonical state
         id: recovery_commit
