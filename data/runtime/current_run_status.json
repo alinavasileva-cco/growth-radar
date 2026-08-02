@@ -1,18 +1,6 @@
 {
-  "run_id": "GR-20260802-102",
-  "status": "RUNNING",
-  "stage": "SIZE_CHECK",
-  "started_at": "2026-08-02T17:55:00+03:00",
-  "updated_at": "2026-08-02T18:02:00+03:00",
-  "integrity_status": "READY",
-  "counts": {"discovered":4,"size_check_passed":3,"legal_match_passed":0,"signal_confirmed":0,"lpr_identified":0,"contact_route_found":0,"qualified":0,"excluded":1,"duplicates":0},
-  "passed": {
-    "discovered":["Альмак Авто","ТемпСтройСистема","LEONID GRIVKO","Beoma"],
-    "size_check":[
-      {"brand":"Альмак Авто","revenue_rub":42313000,"employees":2},
-      {"brand":"ТемпСтройСистема","revenue_rub":19700000,"employees":5},
-      {"brand":"LEONID GRIVKO","revenue_rub":31812000,"employees":"not disclosed"}
-    ]
-  },
-  "rejected":[{"brand":"Beoma","stage":"SIZE_CHECK","reason":"заявленный текущий оборот около 80 млн руб. в месяц, что существенно выше целевого диапазона"}]
+  "run_id":"GR-20260802-102","status":"RUNNING","stage":"LEGAL_MATCH","started_at":"2026-08-02T17:55:00+03:00","updated_at":"2026-08-02T18:05:00+03:00","integrity_status":"READY",
+  "counts":{"discovered":4,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":0,"lpr_identified":0,"contact_route_found":0,"qualified":0,"excluded":2,"duplicates":0},
+  "passed":{"discovered":["Альмак Авто","ТемпСтройСистема","LEONID GRIVKO","Beoma"],"size_check":["Альмак Авто","ТемпСтройСистема","LEONID GRIVKO"],"legal_match":[{"brand":"ТемпСтройСистема","legal_name":"ООО «ТемпСтройСистема»","inn":"7736195320","ogrn":"1027700171531"},{"brand":"LEONID GRIVKO","legal_name":"ООО «ДЕЛОВАЯ МОДА»","inn":"9718208989","ogrn":"1227700749210"}]},
+  "rejected":[{"brand":"Beoma","stage":"SIZE_CHECK","reason":"масштаб выше целевого диапазона"},{"brand":"Альмак Авто","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь автосервиса с найденным ООО «Альмак»: ОКВЭД и адрес не совпадают с операционным бизнесом"}]
 }
