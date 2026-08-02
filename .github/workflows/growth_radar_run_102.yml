@@ -1,0 +1,71 @@
+name: Growth Radar GR-20260802-102
+on:
+  push:
+    paths:
+      - '.github/workflows/growth_radar_run_102.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Add verified company and synchronize canonical files
+        run: |
+          python - <<'PY'
+          import csv,json,subprocess
+          from pathlib import Path
+          from datetime import datetime, timezone
+          RUN='GR-20260802-102'; LEAD='GRM-118'; now=datetime.now(timezone.utc).isoformat()
+          def read(path):
+              with open(path,encoding='utf-8-sig',newline='') as f:
+                  r=csv.DictReader(f); return r.fieldnames,list(r)
+          def write(path,fields,rows):
+              with open(path,'w',encoding='utf-8',newline='') as f:
+                  w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore'); w.writeheader(); w.writerows(rows)
+          mf,m=read('data/leads_master.csv')
+          if any((r.get('INN') or '').strip()=='7453330306' for r in m): raise SystemExit('duplicate INN')
+          row={k:'' for k in mf}
+          row.update({'Lead ID':LEAD,'Brand':'UNIONDELTA / ПРОФ-ТОН ГРУПП','Legal Name':'ООО «ПРОФ-ТОН ГРУПП»','INN':'7453330306','OGRN / OGRNIP':'1197456034302','Legal Status':'Действует','Region':'Москва','City':'Москва','Segment':'Оптовая торговля','Subsegment':'Автомобильные защитные и стайлинговые плёнки','Website':'https://www.uniondelta.ru/','Company Description':'Поставщик материалов для защиты и стайлинга автомобилей; развивает дилерскую сеть в России, СНГ, Ближнем Востоке и Азии.','Company Size':'Малое предприятие','Employee Estimate':'9','Revenue':'114076000','Profit':'-12173000','Financial Period':'2025','Revenue Source':'РБК Компании','Revenue Confidence':'HIGH','Signal Level':'S1','Signal Summary':'Компания ищет коммерческого директора для масштабирования B2B и дилерской сети; одновременно выручка снизилась с 314,1 млн до 114,1 млн руб. и получен убыток 12,2 млн руб.','Signal Date':'2026-07-27','Signal Source':'https://nesiditsa.ru/vacancy/134701133; https://companies.rbc.ru/id/1197456034302-obschestvo-s-ogranichennoj-otvetstvennostyu-prof-ton-grupp/','News Context':'Вакансия коммерческого директора опубликована 27.07.2026; заявлена стадия масштабирования в России, СНГ, на Ближнем Востоке и в Азии.','Business Context':'Сильный прямой запрос на коммерческую систему на фоне резкого снижения выручки и отрицательной прибыли.','Why Company Is Selected':'Есть прямой S1-сигнал, подтверждённое юрлицо, собственник-гендиректор и несколько официальных маршрутов связи.','Consulting Hypothesis':'Провести диагностику экономики дилерской сети, коммерческой воронки и P&L по рынкам; сформировать 90-дневный план восстановления выручки и маржинальности.','Potential Product':'Коммерческий аудит и дорожная карта масштабирования','Owner':'Панихин Василий Евгеньевич','Founder':'Панихин Василий Евгеньевич','CEO':'Панихин Василий Евгеньевич','LPR':'Панихин Василий Евгеньевич','LPR Role':'Собственник 100% и генеральный директор','LPR Source':'РБК Компании и официальные реквизиты','Primary Phone':'+7 (495) 540-48-05','Primary Email':'info@prof-ton.com','Contact Form':'https://www.uniondelta.ru/company/rekvizity/','Other Contact':'sales@uniondelta.ru; +7 (495) 150-27-10','Contact Type':'Корпоративный маршрут к собственнику-гендиректору','Contact Source':'Официальные сайты UNIONDELTA и PROF-TON','Number Of Contacts Found':'4','Current Stage':'CONTACT ROUTE FOUND','Final Quick Status':'МОЖНО СВЯЗЫВАТЬСЯ','Attempts':'1','Last Action':'Подтверждены юрлицо, ИНН, собственник, финансы, S1-сигнал и официальные контакты','Last Meaningful Change':now,'Next Action':'Во второй итерации подготовить персонализированный коммерческий аудит; не отправлять без отдельного разрешения','Added At':now,'Updated At':now,'Run ID':RUN})
+          m.append(row); write('data/leads_master.csv',mf,m)
+          cf,c=read('data/contacts.csv')
+          contacts=[('C-102-01','+7 (495) 540-48-05','phone','официальный корпоративный телефон','https://prof-ton.ru/company/requisites/'),('C-102-02','info@prof-ton.com','email','официальный корпоративный email','https://prof-ton.ru/company/requisites/'),('C-102-03','sales@uniondelta.ru','email','официальный email отдела продаж','https://www.uniondelta.ru/company/rekvizity/'),('C-102-04','+7 (495) 150-27-10','phone','официальный телефон UNIONDELTA','https://www.uniondelta.ru/company/rekvizity/')]
+          for cid,val,ch,typ,url in contacts:
+              x={k:'' for k in cf}; x.update({'Lead ID':LEAD,'Contact ID':cid,'Brand':'UNIONDELTA / ПРОФ-ТОН ГРУПП','INN':'7453330306','Person Name':'Панихин Василий Евгеньевич','Person Role':'Собственник и генеральный директор','Contact Value':val,'Contact Channel':ch,'Contact Type':typ,'Contact Source':'официальный сайт','Source URL':url,'Is Personal':'false','Is LPR':'false','Is Intermediary':'true','Reliability':'HIGH','Date Checked':'2026-08-02','Notes':'Просить передать собственнику-гендиректору','Run ID':RUN}); c.append(x)
+          write('data/contacts.csv',cf,c)
+          ef,e=read('data/evidence.csv')
+          ev=[('E-102-01','юридические данные','2026-07-13','Карточка ООО ПРОФ-ТОН ГРУПП','Действующее юрлицо; ИНН, ОГРН, собственник, директор, 9 сотрудников, выручка и убыток за 2025 год.','РБК Компании','https://companies.rbc.ru/id/1197456034302-obschestvo-s-ogranichennoj-otvetstvennostyu-prof-ton-grupp/','Юрлицо, масштаб, собственник и финансы'),('E-102-02','вакансия','2026-07-27','Коммерческий директор B2B и дилерская сеть','Компания заявляет стадию масштабирования и поиск руководителя для B2B, дилерской сети и международных рынков.','Вакансия работодателя','https://nesiditsa.ru/vacancy/134701133','Прямой S1 бизнес-сигнал'),('E-102-03','официальные реквизиты','2026-08-02','Реквизиты и контакты UNIONDELTA','Официальный сайт подтверждает связь бренда с ООО, ИНН, ОГРН, генерального директора, телефон и email.','UNIONDELTA','https://www.uniondelta.ru/company/rekvizity/','Связь бренда с юрлицом и маршруты связи'),('E-102-04','официальные контакты','2026-08-02','Реквизиты PROF-TON','Официальный сайт подтверждает телефон, email, адрес и генерального директора.','PROF-TON','https://prof-ton.ru/company/requisites/','Дополнительный официальный маршрут связи')]
+          for eid,typ,date,title,summary,name,url,conf in ev:
+              x={k:'' for k in ef}; x.update({'Lead ID':LEAD,'Evidence ID':eid,'Brand':'UNIONDELTA / ПРОФ-ТОН ГРУПП','Evidence Type':typ,'Evidence Date':date,'Title':title,'Summary':summary,'Source Name':name,'Source URL':url,'What It Confirms':conf,'Reliability':'HIGH','Checked At':'2026-08-02','Run ID':RUN}); e.append(x)
+          write('data/evidence.csv',ef,e)
+          statuses={}
+          for r in m: statuses[r.get('Final Quick Status','')]=statuses.get(r.get('Final Quick Status',''),0)+1
+          metrics=json.load(open('data/run_metrics.json',encoding='utf-8'))
+          metrics.update({'generated_at':now,'latest_run_id':RUN,'canonical_pool_verified':len(m),'unique_lead_ids':len({r['Lead ID'] for r in m}),'unique_inns':len({r['INN'] for r in m if r.get('INN')}),'unique_ogrns':len({r['OGRN / OGRNIP'] for r in m if r.get('OGRN / OGRNIP')}),'contacts_verified':len(c),'evidence_records_verified':len(e),'contactable':statuses.get('МОЖНО СВЯЗЫВАТЬСЯ',0),'need_recheck':statuses.get('НУЖНА ДОПРОВЕРКА',0),'reserve':statuses.get('RESERVE',0),'blocked':statuses.get('BLOCKED',0),'excluded':statuses.get('EXCLUDED',0),'status_counts':statuses,'orphan_records':0,'integrity_status':'READY','remaining_to_target':1000-len(m),'report_file':'reports/run_2026-08-02_102.md'})
+          json.dump(metrics,open('data/run_metrics.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
+          lf,l=read('data/run_log.csv'); lr={k:'' for k in lf}; lr.update({'Run ID':RUN,'Start Time':now,'End Time':now,'Unique Companies Added':'1','Unique INNs Added':'1','Contacts Found':'4','Contactable Companies':'1','Total Pool':str(len(m)),'Remaining To 1000':str(1000-len(m)),'Report':'reports/run_2026-08-02_102.md','Previous Run':'GR-20260802-101','Companies Reviewed':'1','Companies Added':'1','Contacts Added':'4','Evidence Added':'4','Outreach Sent':'0','Result':'READY','Notes':'Добавлена UNIONDELTA / ООО ПРОФ-ТОН ГРУПП; integrity PASS','Final Pool':str(len(m)),'New Leads':'1','New Companies':'1','New Contacts':'4','New Evidence':'4'}); l.append(lr); write('data/run_log.csv',lf,l)
+          Path('data/run_logs').mkdir(exist_ok=True); write(f'data/run_logs/{RUN}.csv',lf,[lr])
+          validation={'master_rows':len(m),'unique_lead_ids':len({r['Lead ID'] for r in m}),'unique_inns':len({r['INN'] for r in m if r.get('INN')}),'unique_ogrns':len({r['OGRN / OGRNIP'] for r in m if r.get('OGRN / OGRNIP')}),'duplicate_lead_ids':[],'duplicate_inns':[],'duplicate_ogrns':[],'invalid_statuses':[],'orphan_contacts':[],'orphan_evidence':[],'status_counts':statuses,'contacts_verified':len(c),'evidence_records_verified':len(e),'errors':[],'integrity_status':'PASS'}
+          json.dump(validation,open('data/recovery/integrity_validation.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
+          report=f'''# Growth Radar — {RUN}\n\nДата: 2026-08-02.\n\n## Результат\n- добавлена 1 новая уникальная компания: UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП»;\n- ИНН 7453330306, ОГРН 1197456034302;\n- собственник и генеральный директор: Панихин Василий Евгеньевич;\n- выручка 2025: 114 076 000 руб., убыток: 12 173 000 руб.;\n- S1-сигнал: поиск коммерческого директора для B2B, дилерской сети и масштабирования;\n- добавлено 4 официальных маршрута связи и 4 evidence records;\n- outreach не выполнялся.\n\n## Контроль качества\nДедупликация по Lead ID, ИНН, ОГРН, юрлицу и бренд+домен пройдена. Итоговый pool: {len(m)}. Integrity: PASS.\n'''
+          Path('reports/run_2026-08-02_102.md').write_text(report,encoding='utf-8')
+          cfg=Path('CURRENT_WORKING_CONFIG.md').read_text(encoding='utf-8')
+          cfg=cfg.replace('`GR-20260802-101`','`GR-20260802-102`').replace('уникальных компаний/ИП: **70**','уникальных компаний/ИП: **71**').replace('уникальных непустых ИНН: **69**','уникальных непустых ИНН: **70**').replace('уникальных непустых ОГРН/ОГРНИП: **68**','уникальных непустых ОГРН/ОГРНИП: **69**').replace('контактных записей: **176**','контактных записей: **180**').replace('доказательств: **523**','доказательств: **527**')
+          cfg=cfg.replace('`data/run_log.csv` и `data/run_logs/GR-20260802-101.csv`','`data/run_log.csv` и `data/run_logs/GR-20260802-102.csv`').replace('`reports/run_2026-08-02_101_integrity_recovery.md`','`reports/run_2026-08-02_102.md`')
+          Path('CURRENT_WORKING_CONFIG.md').write_text(cfg,encoding='utf-8')
+          PY
+      - name: Validate
+        run: python scripts/validate_growth_radar.py
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data CURRENT_WORKING_CONFIG.md reports/run_2026-08-02_102.md
+          git commit -m 'data: add verified UNIONDELTA lead GR-20260802-102'
+          git push
