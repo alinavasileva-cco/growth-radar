@@ -1,12 +1,12 @@
 {
   "run_id": "GR-20260802-102",
   "status": "RUNNING",
-  "stage": "INTEGRITY_CHECK",
+  "stage": "DISCOVERED",
   "started_at": "2026-08-02T17:55:00+03:00",
-  "updated_at": "2026-08-02T17:55:00+03:00",
+  "updated_at": "2026-08-02T17:58:00+03:00",
   "integrity_status": "READY",
   "counts": {
-    "discovered": 0,
+    "discovered": 4,
     "size_check_passed": 0,
     "legal_match_passed": 0,
     "signal_confirmed": 0,
@@ -16,6 +16,13 @@
     "excluded": 0,
     "duplicates": 0
   },
-  "passed": {},
+  "passed": {
+    "discovered": [
+      {"brand":"Альмак Авто","source":"HH vacancy 129309064","signal":"масштабирование B2B и партнёрских СТО"},
+      {"brand":"ТемпСтройСистема","source":"HH vacancy 129535324","signal":"пересборка коммерческого контура и P&L"},
+      {"brand":"LEONID GRIVKO","source":"HH vacancy 129468122","signal":"единый коммерческий контур, запуск B2B и автоматизация"},
+      {"brand":"Beoma","source":"HH vacancy 129664280","signal":"рост с 80 до 150+ млн рублей в месяц"}
+    ]
+  },
   "rejected": []
 }
