@@ -3,8 +3,8 @@
   "campaign_id": "GR-CAMPAIGN-PLUS100-20260802",
   "status": "RUNNING",
   "started_at": "2026-08-02T22:12:48+03:00",
-  "updated_at": "2026-08-02T22:18:30+03:00",
-  "stage": "DISCOVERED",
+  "updated_at": "2026-08-02T23:21:00+03:00",
+  "stage": "LEGAL_MATCH",
   "integrity_precheck": "READY_CANONICAL_COUNT_70",
   "campaign": {
     "baseline_count": 70,
@@ -24,21 +24,32 @@
   },
   "counts": {
     "discovered": 4,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 0,
     "lpr_identified": 0,
     "contact_route_found": 0,
     "qualified": 0,
-    "excluded": 0,
+    "excluded": 2,
     "duplicates": 0
   },
-  "discovered_candidates": [
-    {"brand":"Zerobit","signal":"CCO для роста, масштабирования каналов, новых рынков и снижения зависимости от собственника","signal_source":"LinkedIn / Facancy","signal_date":"2026-06-02"},
-    {"brand":"ТаргетЛид","signal":"трансформация в Performance-платформу и подготовка к масштабированию x3–x5","signal_source":"Facancy","signal_date":"2026-07-06"},
-    {"brand":"UREMONT / DOMO","signal":"цифровая управляющая компания для малых отелей; задачи роста загрузки и вывода собственников из операционки","signal_source":"вакансия работодателя","signal_date":"2026-06-15"},
-    {"brand":"Lofty","signal":"строит AI R&D-лабораторию и масштабируемую операционную модель продуктовых направлений","signal_source":"Facancy","signal_date":"2026-06-22"}
+  "passed": {
+    "size_check": [
+      {"brand":"Zerobit","reason":"выручка 161.347 млн руб. за 2024 год; 20+ специалистов и 100+ клиентов"},
+      {"brand":"Lofty","reason":"действующий российский IT-бизнес и публичная команда; масштаб требует дополнительного подтверждения"}
+    ],
+    "legal_match": [
+      {"brand":"Zerobit","legal_name":"ООО «Зеробит»","inn":"7724741091","ogrn":"1107746220075","status":"Действует"}
+    ]
+  },
+  "rejections": [
+    {"brand":"ТаргетЛид","stage":"LEGAL_MATCH","reason":"не подтверждена однозначная связь бренда с конкретным российским юрлицом"},
+    {"brand":"UREMONT / DOMO","stage":"LEGAL_MATCH","reason":"не подтверждена точная связка продукта DOMO с действующим юрлицом и ИНН"}
   ],
-  "next_stage": "SIZE_CHECK_AND_LEGAL_MATCH",
+  "under_review": [
+    {"brand":"Lofty","next":"подтвердить российское юрлицо, ИНН и финансовый масштаб"},
+    {"brand":"Zerobit","next":"подтвердить бизнес-сигнал S1 и финальный маршрут к ЛПР"}
+  ],
+  "next_stage": "SIGNAL_LPR_CONTACT_VERIFICATION",
   "outreach_sent": 0
 }
