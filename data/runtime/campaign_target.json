@@ -1,21 +1,16 @@
 {
-  "campaign_id": "GR-CAMPAIGN-PLUS100-20260802",
-  "baseline_run_id": "GR-20260802-101",
-  "baseline_count": 70,
-  "target_count": 170,
-  "current_canonical_count": 70,
-  "progress_added": 0,
-  "remaining_to_campaign_target": 100,
-  "qualified_pending_canonical_sync": 2,
-  "pending_lead_ids": ["GRM-120", "GRM-121"],
-  "deduplicated_pending": {
-    "GRM-118": "GRM-032",
-    "GRM-119": "GRM-067"
-  },
+  "campaign_id": "new_5000",
+  "baseline_run_id": "N5K-20260803-001",
+  "baseline_count": 0,
+  "total_target": 5000,
+  "current_canonical_count": 1,
+  "current_contactable_count": 1,
+  "progress_added": 1,
+  "remaining_to_total_target": 4999,
   "integrity_status": "READY",
-  "campaign_status": "PAUSED_CANONICAL_WRITE_BLOCKER",
-  "started_at": "2026-08-02T22:12:48+03:00",
-  "updated_at": "2026-08-03T11:04:07+03:00",
-  "blocker_file": "data/runtime/current_run_status.json",
-  "note": "Two unique qualified candidates are preserved for canonical sync. Two other increment rows were confirmed as duplicates of existing canonical companies and must not increase the pool."
+  "campaign_status": "ACTIVE",
+  "started_at": "2026-08-03T14:00:00+03:00",
+  "updated_at": "2026-08-03T14:00:00+03:00",
+  "namespace": "data/campaigns/new_5000",
+  "note": "Новый цикл ведётся отдельно от сохранённых 70 компаний. Старые компании не учитываются в прогрессе, но используются для дедупликации."
 }
