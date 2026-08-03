@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
 **Версия:** 04.08.2026  
-**Последний подтверждённый запуск:** `N5K-20260803-011`  
+**Последний подтверждённый запуск:** `N5K-20260804-012`  
 **Статус:** `READY` — новый цикл `new_5000` прошёл проверку целостности  
 **Текущая цель:** 5000 уникальных компаний с baseline=0  
 **Автоматический outreach:** запрещён
@@ -11,29 +11,29 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - baseline_count: **0**;
-- текущий канонический итог: **9**;
-- текущий contactable итог: **9**;
-- осталось до цели: **4991**;
+- текущий канонический итог: **10**;
+- текущий contactable итог: **10**;
+- осталось до цели: **4990**;
 - старые 70 компаний сохранены без изменений и не входят в прогресс нового цикла.
 
 ## Канонические файлы нового цикла
 
 - компании: `data/campaigns/new_5000/leads_master.csv`;
-- контакты: `data/campaigns/new_5000/contacts.csv`;
-- доказательства: `data/campaigns/new_5000/evidence.csv`;
+- контакты: `data/campaigns/new_5000/contacts.csv` плюс RUN-shards в `increments/`;
+- доказательства: `data/campaigns/new_5000/evidence.csv` плюс RUN-shards в `increments/`;
 - единый contactable master: `data/campaigns/new_5000/contactable_master.csv`;
 - increments: `data/campaigns/new_5000/increments/`;
 - RUN-логи: `data/campaigns/new_5000/run_logs/`;
 - runtime: `data/runtime/current_run_status.json` и `data/runtime/campaign_target.json`;
-- последний отчёт: `reports/run_2026-08-03_011.md`.
+- последний отчёт: `reports/run_2026-08-04_012.md`.
 
 ## Последний RUN
 
-- найдено сырых кандидатов: **24**;
-- квалифицировано: **2**;
-- добавлены: **Руслитекс**, **Авто Сувенир**;
-- дубли: **11**;
-- исключено или оставлено на допроверку: **11**;
+- найдено сырых кандидатов: **30**;
+- квалифицировано: **1**;
+- добавлена: **КЛЮЧ / KLCH Agency**;
+- дубли: **13**;
+- исключено или оставлено на допроверку: **16**;
 - integrity: **PASS**;
 - orphan contacts: **0**;
 - orphan evidence: **0**.
