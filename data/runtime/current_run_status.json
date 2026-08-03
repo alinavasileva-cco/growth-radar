@@ -1,12 +1,12 @@
 {
-  "run_id": "N5K-20260803-009",
+  "run_id": "N5K-20260803-010",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-03T22:01:45+03:00",
-  "updated_at": "2026-08-03T22:24:00+03:00",
-  "stage": "REPAIR_AND_DISCOVERY_COMPLETED",
-  "integrity_precheck": "FAIL_CONTACTABLE_AND_LEADS_MASTER_COUNT_6_VS_RUNTIME_7",
-  "repair_result": "PASS_RESTORED_N5K_0007_TO_LEADS_AND_CONTACTABLE_WITH_CONTACT_AND_EVIDENCE_SHARDS",
+  "started_at": "2026-08-03T22:59:16+03:00",
+  "updated_at": "2026-08-03T23:00:00+03:00",
+  "stage": "DISCOVERY_COMPLETED",
+  "integrity_precheck": "PASS",
+  "repair_result": "NOT_REQUIRED",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
@@ -16,32 +16,35 @@
     "remaining": 4993
   },
   "funnel": {
-    "discovered": 18,
-    "size_check_passed": 6,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 1,
+    "discovered": 20,
+    "size_check_passed": 9,
+    "legal_match_passed": 4,
+    "signal_confirmed": 9,
+    "lpr_identified": 2,
     "contact_route_found": 0,
     "qualified": 0,
-    "duplicates": 10,
-    "excluded": 8
+    "duplicates": 11,
+    "excluded": 9
   },
   "qualified_companies": [],
-  "duplicate_examples": ["ЛПК Лесресурс","ACELED / Линии Света","Chacha's Club","Руслитекс","MARROB","Институт Smart","GOOD!ES / Гудийс","Слюсарев и Партнёры","СК Развитие","Оценка.рф"],
+  "duplicate_examples": ["Chacha's Club","Торг-Лайт / ACELED","MARROB","Институт Smart","РУСПАДЕЛ","ЛПК Лесресурс","GOOD!ES","Слюсарев и Партнёры","СК Развитие","Оценка.рф","Экотория"],
   "excluded_or_pending": [
-    {"brand":"MIRRA Architects / KSTALT","reason":"не подтверждена надёжная связка бренда из вакансии с конкретным действующим российским юрлицом"},
-    {"brand":"российский производитель протезных модулей","reason":"работодатель скрыт; legal match и маршрут к ЛПР невозможны"},
-    {"brand":"Экотория","reason":"не подтверждена точная связка бренда с действующим юрлицом"},
-    {"brand":"МЦСМ Евромед","reason":"сигнал подтверждён, но требуется отдельная проверка юрлица направления и собственника"},
-    {"brand":"ГородА","reason":"не подтверждены юрлицо ИНН и масштаб"},
-    {"brand":"Ангел ГК","reason":"требуется точный legal match работодателя"},
-    {"brand":"Икстеншн","reason":"не подтверждены юрлицо масштаб и собственник"},
-    {"brand":"Первый Бит","reason":"федеральная группа вне приоритетного профиля нового цикла; локальный юнит не выделен"}
+    {"brand":"Авто Сувенир","reason":"не завершена независимая проверка масштаба, собственника и полного маршрута связи"},
+    {"brand":"DIGITALI","reason":"не завершён legal match и проверка собственника"},
+    {"brand":"ООО Ом / агентство КЛЮЧ","reason":"требуется надёжная связка бренда и юрлица, масштаб и собственник"},
+    {"brand":"MIRRA Architects / KSTALT","reason":"не завершена проверка операционного юрлица, собственника и контакта ЛПР"},
+    {"brand":"Ангел, группа компаний","reason":"конкретное юрлицо работодателя и собственник не установлены с достаточной надёжностью"},
+    {"brand":"Maicube","reason":"не подтверждены юридическое лицо, ИНН, собственник и масштаб"},
+    {"brand":"Planta Rosa","reason":"не завершена полная квалификация"},
+    {"brand":"производитель кондитерских изделий","reason":"работодатель скрыт; legal match невозможен"},
+    {"brand":"компания строительной техники","reason":"работодатель скрыт; legal match невозможен"}
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "storage_mode": "canonical_base_plus_run_shards",
   "outreach_sent": 0,
-  "final_commit_sha": "PENDING_FINAL_REPORT_COMMIT"
+  "report_path": "reports/run_2026-08-03_010.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260803-010.csv",
+  "last_verified_commit_sha": "e87d60e80a6a35eb76f471a5afad652a5a97c50a"
 }
