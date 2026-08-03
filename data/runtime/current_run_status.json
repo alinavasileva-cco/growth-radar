@@ -1,62 +1,53 @@
 {
-  "run_id": "N5K-20260803-007",
+  "run_id": "N5K-20260803-008",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-03T20:02:27+03:00",
-  "updated_at": "2026-08-03T20:18:00+03:00",
-  "stage": "DISCOVERY_COMPLETED_NO_QUALIFIED",
+  "started_at": "2026-08-03T21:00:58+03:00",
+  "updated_at": "2026-08-03T21:18:00+03:00",
+  "stage": "QUALIFIED_AND_COMMITTED",
   "integrity_precheck": "PASS_NEW_CYCLE_COUNT_6",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 6,
-    "current_contactable_count": 6,
-    "progress_added": 6,
-    "remaining": 4994
+    "current_canonical_count": 7,
+    "current_contactable_count": 7,
+    "progress_added": 7,
+    "remaining": 4993
   },
   "funnel": {
-    "discovered": 24,
-    "size_check_passed": 9,
-    "legal_match_passed": 5,
+    "discovered": 18,
+    "size_check_passed": 7,
+    "legal_match_passed": 4,
     "signal_confirmed": 3,
     "lpr_identified": 2,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "duplicates": 12,
-    "excluded": 12
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 10,
+    "excluded": 7
   },
-  "qualified_companies": [],
-  "duplicate_examples": [
-    "ЛПК Лесресурс",
-    "GOOD!ES / Гудийс",
-    "Слюсарев и Партнёры",
-    "Институт Smart",
-    "РУСПАДЕЛ / First Padel Club",
-    "СК Развитие / Долговечные технологии",
-    "Руслитекс",
-    "RIEN / NE SHALI",
-    "Estore creating",
-    "ACELED / Линии Света",
-    "Chacha's Club / Chacha's Crew",
-    "Digniori Arts"
+  "qualified_companies": [
+    {
+      "lead_id": "N5K-0007",
+      "brand": "Оценка.рф / Технологии Оценки",
+      "legal_name": "ООО «ТЕХНОЛОГИИ ОЦЕНКИ»",
+      "inn": "1685009187",
+      "status": "МОЖНО СВЯЗЫВАТЬСЯ"
+    }
   ],
+  "duplicate_examples": ["Институт Smart","РУСПАДЕЛ / First Padel Club","ЛПК Лесресурс","GOOD!ES / Гудийс","Слюсарев и Партнёры","СК Развитие / Долговечные технологии","MARROB","АИ Авто","Chacha's Club","ACELED / Линии Света"],
   "excluded_or_pending": [
-    {"brand": "Экотория — швейное производство", "reason": "не подтверждена точная связка бренда с действующим юрлицом, ИНН, ОГРН и собственником"},
-    {"brand": "производитель премиального паркета из вакансии HR-Stalker", "reason": "работодатель скрыт; невозможно подтвердить бренд и юридическое лицо"},
-    {"brand": "ХАЙ ДИЛЛЕР ГРУП", "reason": "не подтверждены операционное юрлицо, масштаб и собственник"},
-    {"brand": "Экотория — экологическое сопровождение", "reason": "юрлицо подтверждено, но масштаб ниже целевого и вакансия относится к другому одноимённому бренду"},
-    {"brand": "Реноме / 3D-платформа для девелоперов", "reason": "не подтверждена юридическая автономия нового продукта и бюджет"},
-    {"brand": "Икстеншн", "reason": "не подтверждены точное юрлицо и финансовый масштаб"},
-    {"brand": "Химки-СМИ", "reason": "требуется подтверждение частного статуса, собственника и масштаба"},
-    {"brand": "HPBsolution", "reason": "не подтверждены юрлицо и собственник по открытым источникам"},
-    {"brand": "АДР", "reason": "масштаб группы и автономия московского направления требуют проверки"},
-    {"brand": "ВсеИнструменты.ру", "reason": "крупная компания вне текущего ICP"},
-    {"brand": "Дымов-Керамика", "reason": "вакансия архивная и группа выше целевого масштаба"},
-    {"brand": "проект продажи апартаментов в Грозном", "reason": "не установлено юридическое лицо проекта и собственник"}
+    {"brand":"ПАРадокс","reason":"табачная/кальянная категория исключена из целевого профиля"},
+    {"brand":"Экотория","reason":"по-прежнему не подтверждена точная связка бренда с действующим юрлицом"},
+    {"brand":"Фоскриниум","reason":"не подтверждены финансовый масштаб и собственник"},
+    {"brand":"В Кадре","reason":"кадровое агентство; требуется проверка покупательской способности для внешнего консалтинга"},
+    {"brand":"Прометекс","reason":"не подтверждены точная связка вакансии с юрлицом и контакты ЛПР"},
+    {"brand":"Раки Кусаки","reason":"не подтверждены юрлицо масштаб и собственник"},
+    {"brand":"скрытый проект ВЭД/логистики","reason":"работодатель не раскрыт; невозможно провести legal match"}
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
+  "storage_mode": "canonical_base_plus_run_shards",
   "outreach_sent": 0,
-  "final_commit_sha": "PENDING_FINAL_RUNTIME_COMMIT"
+  "final_commit_sha": "PENDING_FINAL_REPORT_COMMIT"
 }
