@@ -10,9 +10,9 @@
   "integrity_status": "READY",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-03T22:24:00+03:00",
+  "updated_at": "2026-08-03T23:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260803-009",
-  "last_commit_sha": "PENDING_FINAL_REPORT_COMMIT",
-  "note": "RUN 009 repaired an integrity mismatch: N5K-0007 was restored to leads_master and contactable_master with contact and evidence shards. Discovery reviewed 18 candidates; no new company met all qualification requirements. Old 70-company base remains excluded from progress."
+  "last_run_id": "N5K-20260803-010",
+  "last_commit_sha": "1ed666d2a6aaeb73c8c8b3eb16e34566cab69dce",
+  "note": "RUN 010 reviewed 20 raw candidates. No new company met all qualification requirements; 11 were duplicates and 9 were excluded or left pending. Canonical and contactable counts remain 7. Old 70-company base remains excluded from progress."
 }
