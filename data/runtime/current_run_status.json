@@ -1,43 +1,46 @@
 {
-  "run_id": "N5K-20260803-005",
+  "run_id": "N5K-20260803-006",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-03T17:58:00+03:00",
-  "updated_at": "2026-08-03T18:06:00+03:00",
+  "started_at": "2026-08-03T19:04:00+03:00",
+  "updated_at": "2026-08-03T19:12:00+03:00",
   "stage": "QUALIFIED_AND_COMMITTED",
-  "integrity_precheck": "PASS_NEW_CYCLE_COUNT_4",
+  "integrity_precheck": "PASS_NEW_CYCLE_COUNT_5",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 5,
-    "current_contactable_count": 5,
-    "progress_added": 5,
-    "remaining": 4995
+    "current_canonical_count": 6,
+    "current_contactable_count": 6,
+    "progress_added": 6,
+    "remaining": 4994
   },
   "funnel": {
-    "discovered": 17,
-    "size_check_passed": 6,
-    "legal_match_passed": 4,
-    "signal_confirmed": 2,
-    "lpr_identified": 1,
+    "discovered": 21,
+    "size_check_passed": 8,
+    "legal_match_passed": 5,
+    "signal_confirmed": 3,
+    "lpr_identified": 2,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 10,
-    "excluded": 6
+    "duplicates": 11,
+    "excluded": 9
   },
-  "qualified_companies": ["Слюсарев и Партнёры"],
-  "duplicate_examples": ["ЛПК Лесресурс", "GOOD!ES / Гудийс", "Институт Smart", "РУСПАДЕЛ", "Руслитекс", "Estore creating", "RIEN / NE SHALI", "ACELED / Линии Света", "MARROB", "Авто Сувенир"],
+  "qualified_companies": ["СК Развитие / Долговечные технологии"],
+  "duplicate_examples": ["Институт Smart", "РУСПАДЕЛ", "ЛПК Лесресурс", "GOOD!ES / Гудийс", "Слюсарев и Партнёры", "MARROB", "АИ Авто", "Hugency", "Нацтранс", "Digniori Arts", "Chacha's Club"],
   "excluded_or_pending": [
-    {"brand": "HR-Stalker / производитель премиального паркета", "reason": "работодатель скрыт; точное юрлицо не подтверждено"},
-    {"brand": "KSTALT / Мирра Архитектс", "reason": "не подтверждена точная связка бренда с действующим юрлицом"},
-    {"brand": "ХАЙ ДИЛЛЕР ГРУП", "reason": "не подтверждены операционное юрлицо и финансовый масштаб"},
-    {"brand": "АН Lake", "reason": "не подтверждены юрлицо и собственник"},
-    {"brand": "AdvoCall", "reason": "не подтверждены действующее юрлицо и финансовый масштаб"},
-    {"brand": "Экотория", "reason": "требуется дополнительная проверка масштаба и юридической связки бренда"}
+    {"brand": "AV INTERIORS", "reason": "не подтверждена точная связка бренда с действующим юрлицом"},
+    {"brand": "Мирра Архитектс / KSTALT", "reason": "юридическая связка бренда требует дополнительного подтверждения"},
+    {"brand": "Агротехнологии", "reason": "не подтверждены собственник и актуальный финансовый масштаб"},
+    {"brand": "Раки Кусаки", "reason": "не подтверждено операционное юрлицо и масштаб"},
+    {"brand": "ГК Ангел", "reason": "масштаб и конкретное юрлицо направления не подтверждены"},
+    {"brand": "Ультра-Дент / строительное направление", "reason": "не подтверждена юридическая автономия нового направления"},
+    {"brand": "Первый Бит", "reason": "крупная группа вне текущего ICP"},
+    {"brand": "ДЮКС / ЭКО НОМ", "reason": "дубликат старой базы и масштаб выше ядра ICP"},
+    {"brand": "ТрекМарк", "reason": "дубликат старой базы и масштаб выше ядра ICP"}
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "final_commit_sha": "f8705165b952ddc01fea3a354a441f8da177c22b"
+  "final_commit_sha": "9ac85d7a2719ba88740cab13d47eac43b874417a"
 }
