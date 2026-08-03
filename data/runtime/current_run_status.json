@@ -1,43 +1,42 @@
 {
-  "run_id": "N5K-20260803-002",
+  "run_id": "N5K-20260803-003",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-03T15:00:00+03:00",
-  "updated_at": "2026-08-03T15:04:00+03:00",
+  "started_at": "2026-08-03T16:04:00+03:00",
+  "updated_at": "2026-08-03T16:12:00+03:00",
   "stage": "QUALIFIED_AND_COMMITTED",
-  "integrity_precheck": "PASS_NEW_CYCLE_COUNT_1",
+  "integrity_precheck": "PASS_NEW_CYCLE_COUNT_2",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 2,
-    "current_contactable_count": 2,
-    "progress_added": 2,
-    "remaining": 4998
+    "current_canonical_count": 3,
+    "current_contactable_count": 3,
+    "progress_added": 3,
+    "remaining": 4997
   },
   "funnel": {
-    "discovered": 18,
-    "size_check_passed": 5,
-    "legal_match_passed": 3,
+    "discovered": 16,
+    "size_check_passed": 4,
+    "legal_match_passed": 2,
     "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 11,
-    "excluded": 6
+    "duplicates": 10,
+    "excluded": 5
   },
-  "qualified_companies": ["РУСПАДЕЛ / First Padel Club"],
-  "duplicate_examples": ["Строй-Инспект", "Estore creating", "RIEN / NE SHALI", "Chacha's Club", "MARROB", "Нацтранс", "Hugency", "Digniori Arts", "Зубы за один день", "Лапушкины Снеки", "Институт Smart"],
+  "qualified_companies": ["ЛПК Лесресурс"],
+  "duplicate_examples": ["RIEN / NE SHALI", "Estore creating", "Feliks Station Catering", "ACELED / Линии Света", "Digniori Arts", "Институт Smart", "РУСПАДЕЛ / First Padel Club", "Строй-Инспект", "MARROB", "Нацтранс"],
   "excluded_or_pending": [
-    {"brand": "ПАРадокс", "reason": "регулируемая товарная категория; исключён из целевого поиска"},
-    {"brand": "Технологии Оценки", "reason": "масштаб ниже целевого и связь вакансии с точным юрлицом недостаточно подтверждена"},
-    {"brand": "Прометекс", "reason": "несколько одноимённых юрлиц; не подтверждена связь вакансии с конкретным ИНН"},
-    {"brand": "Производитель кондитерских изделий", "reason": "работодатель скрыт; невозможно подтвердить юрлицо и ИНН"},
-    {"brand": "Мой офис", "reason": "не подтверждены точное юрлицо и собственник"},
-    {"brand": "Roomlink", "reason": "масштаб и собственник требуют дополнительной проверки"}
+    {"brand": "Премиальное паркетное производство", "reason": "работодатель скрыт; точное юрлицо не подтверждено"},
+    {"brand": "KSTALT / Мирра Архитектс", "reason": "масштаб и финансовая способность требуют подтверждения"},
+    {"brand": "ХАЙ ДИЛЛЕР ГРУП", "reason": "не подтверждена связка бренда с операционным ИП и финансовый масштаб"},
+    {"brand": "AdvoCall", "reason": "не подтверждены юрлицо, ИНН и собственник"},
+    {"brand": "АН Lake", "reason": "не подтверждены точное юрлицо и финансовый масштаб"}
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "final_commit_sha": "4ef9278d755f7507bb3272b34d580b5abfd59621"
+  "final_commit_sha": "23d19205fba7f6e7bdf525c1d565201bbc2f258e"
 }
