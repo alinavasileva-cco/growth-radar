@@ -1,43 +1,43 @@
 {
-  "run_id": "N5K-20260803-004",
+  "run_id": "N5K-20260803-005",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-03T16:58:00+03:00",
-  "updated_at": "2026-08-03T17:07:00+03:00",
+  "started_at": "2026-08-03T17:58:00+03:00",
+  "updated_at": "2026-08-03T18:06:00+03:00",
   "stage": "QUALIFIED_AND_COMMITTED",
-  "integrity_precheck": "PASS_NEW_CYCLE_COUNT_3",
+  "integrity_precheck": "PASS_NEW_CYCLE_COUNT_4",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 4,
-    "current_contactable_count": 4,
-    "progress_added": 4,
-    "remaining": 4996
+    "current_canonical_count": 5,
+    "current_contactable_count": 5,
+    "progress_added": 5,
+    "remaining": 4995
   },
   "funnel": {
-    "discovered": 18,
-    "size_check_passed": 5,
-    "legal_match_passed": 3,
+    "discovered": 17,
+    "size_check_passed": 6,
+    "legal_match_passed": 4,
     "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 11,
+    "duplicates": 10,
     "excluded": 6
   },
-  "qualified_companies": ["GOOD!ES / Гудийс"],
-  "duplicate_examples": ["Авто Сувенир", "Chacha's Club", "RIEN / NE SHALI", "Estore creating", "MARROB", "Digniori Arts", "ACELED / Линии Света", "РУСПАДЕЛ", "Институт Smart", "ЛПК Лесресурс", "Руслитекс"],
+  "qualified_companies": ["Слюсарев и Партнёры"],
+  "duplicate_examples": ["ЛПК Лесресурс", "GOOD!ES / Гудийс", "Институт Smart", "РУСПАДЕЛ", "Руслитекс", "Estore creating", "RIEN / NE SHALI", "ACELED / Линии Света", "MARROB", "Авто Сувенир"],
   "excluded_or_pending": [
-    {"brand": "Производитель кондитерских изделий", "reason": "работодатель скрыт; точное юрлицо не подтверждено"},
-    {"brand": "Kontakt InterSearch / производитель протезных модулей", "reason": "работодатель скрыт; юрлицо и собственник не подтверждены"},
-    {"brand": "Технологии Оценки / Оценка.рф", "reason": "масштаб и финансовая способность требуют подтверждения"},
-    {"brand": "Бункер 42", "reason": "не подтверждён owner-first сигнал и финансовый масштаб"},
-    {"brand": "Азароват Татьяна Георгиевна", "reason": "не установлена связка ИП с конкретным операционным брендом и масштабом"},
-    {"brand": "ВсеИнструменты.ру", "reason": "масштаб значительно выше целевого профиля"}
+    {"brand": "HR-Stalker / производитель премиального паркета", "reason": "работодатель скрыт; точное юрлицо не подтверждено"},
+    {"brand": "KSTALT / Мирра Архитектс", "reason": "не подтверждена точная связка бренда с действующим юрлицом"},
+    {"brand": "ХАЙ ДИЛЛЕР ГРУП", "reason": "не подтверждены операционное юрлицо и финансовый масштаб"},
+    {"brand": "АН Lake", "reason": "не подтверждены юрлицо и собственник"},
+    {"brand": "AdvoCall", "reason": "не подтверждены действующее юрлицо и финансовый масштаб"},
+    {"brand": "Экотория", "reason": "требуется дополнительная проверка масштаба и юридической связки бренда"}
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "final_commit_sha": "8f34664d7474494da04d98c7e6eabd583a6eb9eb"
+  "final_commit_sha": "f8705165b952ddc01fea3a354a441f8da177c22b"
 }
