@@ -1,0 +1,6 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0001,N5K-E-0001,legal,ООО «ОНЛАЙН ИНСТИТУТ СМАРТ»; ИНН 9701198958; ОГРН 1227700116654,https://smart-inc.ru/contacts/,Официальный сайт Института Smart,2026-08-03,HIGH,N5K-20260803-001,new_5000
+N5K-0001,N5K-E-0002,lpr,Генеральный директор — Козлов Владимир Викторович,https://smart-inc.ru/svedeniya-ob-obrazovatelnoy-organizacii/,Официальные сведения об образовательной организации,2026-08-03,HIGH,N5K-20260803-001,new_5000
+N5K-0001,N5K-E-0003,scale,Институт заявляет 30000+ студентов из 84 стран и действующую образовательную лицензию,https://smart-inc.ru/,Официальный сайт Института Smart,2026-08-03,HIGH,N5K-20260803-001,new_5000
+N5K-0001,N5K-E-0004,signal,Открыта вакансия руководителя отдела продаж с задачей построить отдел с нуля,https://hh.ru/vacancy/129320604,HeadHunter,2026-08-03,HIGH,N5K-20260803-001,new_5000
+N5K-0001,N5K-E-0005,contact,Подтверждены телефон отдела продаж; общий email; форма связи и маршрут HH,https://smart-inc.ru/contacts/,Официальный сайт Института Smart,2026-08-03,HIGH,N5K-20260803-001,new_5000
