@@ -9,7 +9,9 @@
   "qualified_pending_canonical_sync": 4,
   "pending_lead_ids": ["GRM-118", "GRM-119", "GRM-120", "GRM-121"],
   "integrity_status": "READY",
+  "campaign_status": "PAUSED_CANONICAL_WRITE_BLOCKER",
   "started_at": "2026-08-02T22:12:48+03:00",
-  "updated_at": "2026-08-03T00:42:00+03:00",
-  "note": "Four qualified increment candidates are pending canonical integration and are not counted until master synchronization and integrity PASS."
+  "updated_at": "2026-08-03T03:15:07+03:00",
+  "blocker_file": "data/runtime/current_run_status.json",
+  "note": "Four qualified increment candidates are preserved but cannot be counted until full canonical files can be safely read, merged, validated and written. New search is paused to prevent an unbounded pending queue."
 }
