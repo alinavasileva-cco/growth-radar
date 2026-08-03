@@ -1,10 +1,10 @@
 {
-  "run_id": "GR-20260803-105",
+  "run_id": "GR-20260803-106",
   "campaign_id": "GR-CAMPAIGN-PLUS100-20260802",
-  "status": "QUALIFIED_INCREMENT_PENDING_CANONICAL_SYNC",
-  "started_at": "2026-08-03T00:15:48+03:00",
-  "updated_at": "2026-08-03T00:42:00+03:00",
-  "stage": "QUALIFIED",
+  "status": "BLOCKED_CANONICAL_WRITE",
+  "started_at": "2026-08-03T03:15:07+03:00",
+  "updated_at": "2026-08-03T03:15:07+03:00",
+  "stage": "CANONICAL_INTEGRATION",
   "integrity_precheck": "READY_CANONICAL_COUNT_70",
   "campaign": {
     "baseline_count": 70,
@@ -13,55 +13,20 @@
     "progress_added": 0,
     "remaining": 100
   },
-  "counts": {
-    "discovered": 4,
-    "size_check_passed": 3,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "excluded": 1,
-    "hold": 2,
-    "duplicates": 0
-  },
-  "qualified": [
-    {
-      "lead_id": "GRM-121",
-      "brand": "Экосмотр / Онлайн Страхование",
-      "legal_name": "ООО «ОНЛАЙН СТРАХОВАНИЕ»",
-      "inn": "5407973147",
-      "ogrn": "1195476004712",
-      "signal_level": "S1",
-      "lpr": "Борисенко Дмитрий Андреевич",
-      "contacts": 4
-    }
-  ],
   "pending_canonical_count": 4,
   "pending_lead_ids": ["GRM-118", "GRM-119", "GRM-120", "GRM-121"],
-  "canonical_sync_note": "Qualified increments are preserved but are not counted until master synchronization and integrity PASS.",
-  "rejections": [
-    {
-      "brand": "Netto company",
-      "stage": "SIZE_CHECK",
-      "reason": "проект на стадии выбора ниши; отсутствует подтверждённый действующий бизнес нужного масштаба"
-    }
+  "confirmed_pending_companies": [
+    "ТемпСтройСистема",
+    "LEONID GRIVKO",
+    "Zerobit",
+    "Экосмотр / Онлайн Страхование"
   ],
-  "hold": [
-    {
-      "brand": "SellerGroup",
-      "next": "подтвердить ИНН/ОГРН ООО «СТР» и собственника"
-    },
-    {
-      "brand": "НЕФТЬ",
-      "next": "подтвердить точное российское юрлицо бренда"
-    }
-  ],
-  "files": {
-    "leads_increment": "data/increments/leads_GR-20260803-105.csv",
-    "contacts_increment": "data/increments/contact_routes_GR-20260803-105.csv",
-    "evidence_increment": "data/increments/evidence_GR-20260803-105.csv",
-    "report": "reports/run_2026-08-03_105.md"
+  "blocker": {
+    "operation": "atomic replacement of data/leads_master.csv, data/contacts.csv and data/evidence.csv",
+    "reason": "GitHub connector truncates large file bodies on read, so a safe complete replacement cannot be constructed; repeated push-triggered integration workflows created trigger commits but did not produce a canonical data commit.",
+    "last_retry_commit": "5c09c28a64e6fceca986dc6301653c5d979e8011",
+    "required_resolution": "Provide a GitHub Actions workflow_dispatch execution path or a connector operation that can download complete repository blobs/files without truncation, then merge pending increments and run scripts/validate_growth_radar.py."
   },
+  "new_search_performed": false,
   "outreach_sent": 0
 }
