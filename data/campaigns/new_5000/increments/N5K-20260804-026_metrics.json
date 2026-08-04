@@ -1,0 +1,14 @@
+{
+  "run_id": "N5K-20260804-026",
+  "campaign_id": "new_5000",
+  "discovered": 30,
+  "qualified": 1,
+  "duplicates": 17,
+  "excluded": 12,
+  "current_canonical_count": 24,
+  "current_contactable_count": 24,
+  "integrity_status": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "added_companies": ["ПСВ / Правовая служба взыскания"]
+}
