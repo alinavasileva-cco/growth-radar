@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Started At,Completed At,Raw Candidates,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity Status,Orphan Contacts,Orphan Evidence,Repair Result,Added Companies,Blocker
+N5K-20260804-030,new_5000,2026-08-04T20:01:30+03:00,2026-08-04T20:09:00+03:00,30,1,18,11,28,28,PASS,0,0,NOT_REQUIRED,Руспадел,none
