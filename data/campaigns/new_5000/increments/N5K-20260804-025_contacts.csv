@@ -1,0 +1,5 @@
+Lead ID,Contact Type,Contact Value,Contact Source,Is Primary,Verified At,Run ID,Campaign ID
+N5K-0023,Phone,+7 (800) 500-44-63,https://aceled.ru/contacts,true,2026-08-04T15:04:12+03:00,N5K-20260804-025,new_5000
+N5K-0023,Email,sales@aceled.ru,https://aceled.ru/contacts,true,2026-08-04T15:04:12+03:00,N5K-20260804-025,new_5000
+N5K-0023,Contact Form,https://aceled.ru/contacts,https://aceled.ru/contacts,false,2026-08-04T15:04:12+03:00,N5K-20260804-025,new_5000
+N5K-0023,HeadHunter,https://hh.ru/vacancy/129668251,https://hh.ru/vacancy/129668251,false,2026-08-04T15:04:12+03:00,N5K-20260804-025,new_5000
