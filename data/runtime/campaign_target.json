@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 22,
-  "current_contactable_count": 22,
-  "progress_added": 22,
-  "remaining_to_total_target": 4978,
+  "current_canonical_count": 23,
+  "current_contactable_count": 23,
+  "progress_added": 23,
+  "remaining_to_total_target": 4977,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-04T14:22:00+03:00",
+  "updated_at": "2026-08-04T15:23:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260804-024",
+  "last_run_id": "N5K-20260804-025",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 024 added DIGITALI / Диджитал Ай. Canonical campaign count is the verified union of base masters and verified RUN shards. Old 70-company base remains excluded."
+  "note": "RUN 025 added Торг-Лайт / Линии Света. Canonical campaign count is the verified union of base masters and verified RUN shards. Old 70-company base remains excluded."
 }
