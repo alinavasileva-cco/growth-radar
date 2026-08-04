@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence
+N5K-20260804-028,new_5000,30,13,5,4,2,1,1,17,12,26,26,PASS,0,0
