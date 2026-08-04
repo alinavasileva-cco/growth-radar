@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 28,
-  "current_contactable_count": 28,
-  "progress_added": 28,
-  "remaining_to_total_target": 4972,
+  "current_canonical_count": 29,
+  "current_contactable_count": 29,
+  "progress_added": 29,
+  "remaining_to_total_target": 4971,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-04T20:09:00+03:00",
+  "updated_at": "2026-08-04T21:09:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260804-030",
+  "last_run_id": "N5K-20260804-031",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 030 added Руспадел. Canonical campaign count is the verified union of base masters and verified RUN shards. Old 70-company base remains excluded."
+  "note": "RUN 031 added Chacha's Club / Chacha's Crew. Canonical campaign count is the verified union of base masters and verified RUN shards. Old 70-company base remains excluded."
 }
