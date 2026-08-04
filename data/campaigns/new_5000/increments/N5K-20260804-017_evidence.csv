@@ -1,0 +1,6 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0015,N5K-E-0015-01,legal,ООО «ЛОГОС-ЛТД» действует; ИНН 9701167325; ОГРН 1207700473034; частная собственность,https://www.tbank.ru/business/contractor/legal/1207700473034/,Т-Банк Бизнес: данные из официальных реестров,2026-08-04,HIGH,N5K-20260804-017,new_5000
+N5K-0015,N5K-E-0015-02,scale,Выручка 436 706 000 ₽ и прибыль 4 627 000 ₽ за 2024 год,https://companies.rbc.ru/id/1207700473034-obschestvo-s-ogranichennoj-otvetstvennostyu-logos-ltd/,РБК Компании,2026-08-04,HIGH,N5K-20260804-017,new_5000
+N5K-0015,N5K-E-0015-03,lpr,Генеральный директор Мухортова Евгения Викторовна; учредители Коротков Алексей Викторович и Бойко Ирина Николаевна по 50%,https://www.tbank.ru/business/contractor/legal/1207700473034/,Т-Банк Бизнес: данные из официальных реестров,2026-08-04,HIGH,N5K-20260804-017,new_5000
+N5K-0015,N5K-E-0015-04,signal,Вакансия требует запустить отдел продаж с нуля; лично открыть первые сделки; внедрить воронку CRM KPI и нанять команду,https://hh.ru/vacancy/129802582,HeadHunter,2026-08-04,HIGH,N5K-20260804-017,new_5000
+N5K-0015,N5K-E-0015-05,contact,Публичный email компании logosltd.ooo@yandex.ru и маршрут через вакансию работодателя,https://companium.ru/id/1207700473034-logos-ltd,Companium,2026-08-04,MEDIUM,N5K-20260804-017,new_5000
