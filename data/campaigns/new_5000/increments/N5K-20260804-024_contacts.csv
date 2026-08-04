@@ -1,0 +1,5 @@
+Lead ID,Contact Type,Contact Value,Contact Source,Is Primary,Verified At,Run ID,Campaign ID
+N5K-0022,Phone,+7 (499) 110-60-17,https://digitali.ru/contacts/,true,2026-08-04T14:02:40+03:00,N5K-20260804-024,new_5000
+N5K-0022,Email,welcome@digitali.ru,https://digitali.ru/contacts/,true,2026-08-04T14:02:40+03:00,N5K-20260804-024,new_5000
+N5K-0022,Contact Form,https://digitali.ru/contacts/,https://digitali.ru/contacts/,false,2026-08-04T14:02:40+03:00,N5K-20260804-024,new_5000
+N5K-0022,HeadHunter,https://hh.ru/vacancy/129955307,https://hh.ru/vacancy/129955307,false,2026-08-04T14:02:40+03:00,N5K-20260804-024,new_5000
