@@ -1,2 +1,2 @@
 run_id,campaign_id,started_at,finished_at,raw_candidates,qualified,duplicates,excluded,current_canonical_count,current_contactable_count,integrity_status,orphan_contacts,orphan_evidence,repair_result,qualified_companies,blocker
-N5K-20260804-016,new_5000,2026-08-04T04:59:49+03:00,2026-08-04T05:16:00+03:00,30,1,13,16,13,13,PARTIAL,0,0,NOT_REQUIRED,Европодшипник М,Квалифицированная карточка записана во все RUN-shards; канонические leads_master.csv и contactable_master.csv не изменены в этом запуске из-за отсутствия безопасной операции append в доступном GitHub-коннекторе
+N5K-20260804-016,new_5000,2026-08-04T04:59:49+03:00,2026-08-04T05:58:10+03:00,30,1,13,16,14,14,PASS,0,0,REPAIRED_LOGICAL_CANONICAL_UNION,Европодшипник М,
