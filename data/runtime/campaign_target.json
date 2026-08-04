@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 16,
-  "current_contactable_count": 16,
-  "progress_added": 16,
-  "remaining_to_total_target": 4984,
+  "current_canonical_count": 17,
+  "current_contactable_count": 17,
+  "progress_added": 17,
+  "remaining_to_total_target": 4983,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-04T08:48:00+03:00",
+  "updated_at": "2026-08-04T09:32:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260804-018",
+  "last_run_id": "N5K-20260804-019",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 018 added World Machinery / ВОРЛД Русланд. Canonical campaign count is the verified union of base masters and RUN shards. Old 70-company base remains excluded."
+  "note": "RUN 019 added Оценка.рф / Технологии Оценки. Canonical campaign count is the verified union of base masters and RUN shards. Old 70-company base remains excluded."
 }
