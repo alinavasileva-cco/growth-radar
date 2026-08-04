@@ -1,0 +1,7 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0018,N5K-E-0018-01,legal,"ИП Кожомин Кирилл Павлович; ИНН 772792124567; ОГРНИП 319774600704879; статус действует",https://companies.rbc.ru/persons/ogrnip/319774600704879-kozhomin-kirill-pavlovich/,РБК Компании,2026-08-04,HIGH,N5K-20260804-020,new_5000
+N5K-0018,N5K-E-0018-02,brand_legal_match,"Официальный сайт Chacha's Club указывает ИП Кожомин Кирилл Павлович и ИНН 772792124567",https://chachas.ru/presentation,Официальный сайт Chacha's Club,2026-08-04,HIGH,N5K-20260804-020,new_5000
+N5K-0018,N5K-E-0018-03,scale,"Сообщество заявляет более 10 000 участников; ИП включён в реестр МСП как микробизнес",https://chachas.ru/presentation,Официальный сайт Chacha's Club,2026-08-04,MEDIUM,N5K-20260804-020,new_5000
+N5K-0018,N5K-E-0018-04,signal,"Вакансия требует построить отдел продаж с нуля; цель — 10 новых мастеров-партнёров ежедневно и 300+ в месяц",https://hh.ru/vacancy/129530808,HeadHunter,2026-08-04,HIGH,N5K-20260804-020,new_5000
+N5K-0018,N5K-E-0018-05,lpr,"Кожомин Кирилл Павлович является ИП, владельцем проекта и работодателем по вакансии",https://chachas.ru/,Официальный сайт Chacha's Crew,2026-08-04,HIGH,N5K-20260804-020,new_5000
+N5K-0018,N5K-E-0018-06,contact,"Официальный сайт ведёт в публичный Telegram сообщества и партнёрскую форму; также доступен маршрут через HeadHunter",https://chachas.ru/,Официальный сайт Chacha's Crew,2026-08-04,HIGH,N5K-20260804-020,new_5000
