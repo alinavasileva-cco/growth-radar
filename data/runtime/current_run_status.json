@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260804-022",
+  "run_id": "N5K-20260804-023",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-04T12:00:00+03:00",
-  "updated_at": "2026-08-04T12:18:00+03:00",
+  "started_at": "2026-08-04T12:59:02+03:00",
+  "updated_at": "2026-08-04T13:18:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": "NOT_REQUIRED",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 20,
-    "current_contactable_count": 20,
-    "progress_added": 20,
-    "remaining": 4980
+    "current_canonical_count": 21,
+    "current_contactable_count": 21,
+    "progress_added": 21,
+    "remaining": 4979
   },
   "funnel": {
     "discovered": 30,
-    "size_check_passed": 15,
+    "size_check_passed": 14,
     "legal_match_passed": 4,
-    "signal_confirmed": 7,
+    "signal_confirmed": 6,
     "lpr_identified": 2,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 15,
-    "excluded": 14
+    "duplicates": 16,
+    "excluded": 13
   },
-  "qualified_companies": ["Авто Сувенир / Present Day"],
+  "qualified_companies": ["Агентство безопасности Ангел"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
-  "report_path": "reports/run_2026-08-04_022.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260804-022.csv",
+  "report_path": "reports/run_2026-08-04_023.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260804-023.csv",
   "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
 }
