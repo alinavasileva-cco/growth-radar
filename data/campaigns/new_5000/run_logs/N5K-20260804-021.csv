@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Started At,Completed At,Discovered,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Added Companies,Status
+N5K-20260804-021,new_5000,2026-08-04T11:00:00+03:00,2026-08-04T11:22:00+03:00,30,1,15,14,19,19,PASS,0,0,Flaconia Pro,COMPLETED
