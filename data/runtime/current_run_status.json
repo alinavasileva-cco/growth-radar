@@ -1,9 +1,9 @@
 {
-  "run_id": "N5K-20260805-035",
+  "run_id": "N5K-20260805-036",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-05T00:59:59+03:00",
-  "updated_at": "2026-08-05T01:09:00+03:00",
+  "started_at": "2026-08-05T02:02:41+03:00",
+  "updated_at": "2026-08-05T02:11:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": "NOT_REQUIRED",
@@ -17,14 +17,14 @@
   },
   "funnel": {
     "discovered": 30,
-    "size_check_passed": 9,
+    "size_check_passed": 8,
     "legal_match_passed": 3,
-    "signal_confirmed": 1,
+    "signal_confirmed": 2,
     "lpr_identified": 0,
     "contact_route_found": 0,
     "qualified": 0,
-    "duplicates": 19,
-    "excluded": 11
+    "duplicates": 18,
+    "excluded": 12
   },
   "qualified_companies": [],
   "integrity_status": "PASS",
@@ -32,7 +32,7 @@
   "orphan_evidence": 0,
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
-  "report_path": "reports/run_2026-08-05_035.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-035.csv",
+  "report_path": "reports/run_2026-08-05_036.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-036.csv",
   "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
 }
