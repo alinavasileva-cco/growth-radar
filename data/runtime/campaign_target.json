@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 21,
-  "current_contactable_count": 21,
-  "progress_added": 21,
-  "remaining_to_total_target": 4979,
+  "current_canonical_count": 22,
+  "current_contactable_count": 22,
+  "progress_added": 22,
+  "remaining_to_total_target": 4978,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-04T13:18:00+03:00",
+  "updated_at": "2026-08-04T14:22:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260804-023",
+  "last_run_id": "N5K-20260804-024",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 023 added Агентство безопасности Ангел. Canonical campaign count is the verified union of base masters and verified RUN shards. Old 70-company base remains excluded."
+  "note": "RUN 024 added DIGITALI / Диджитал Ай. Canonical campaign count is the verified union of base masters and verified RUN shards. Old 70-company base remains excluded."
 }
