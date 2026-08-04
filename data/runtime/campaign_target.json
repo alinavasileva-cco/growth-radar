@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 13,
-  "current_contactable_count": 13,
-  "progress_added": 13,
-  "remaining_to_total_target": 4987,
+  "current_canonical_count": 14,
+  "current_contactable_count": 14,
+  "progress_added": 14,
+  "remaining_to_total_target": 4986,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-04T03:58:51+03:00",
+  "updated_at": "2026-08-04T05:58:10+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260804-015",
+  "last_run_id": "N5K-20260804-016",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 015 reviewed 30 raw candidates and added YURSUS / Сибирская фабрика мебели. Old 70-company base remains excluded."
+  "note": "RUN 016 added Европодшипник М. Canonical campaign count is the verified union of base masters and RUN shards. Old 70-company base remains excluded."
 }
