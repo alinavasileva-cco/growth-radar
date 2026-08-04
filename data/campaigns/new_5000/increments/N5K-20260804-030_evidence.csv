@@ -1,0 +1,6 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0028,N5K-E-0028-01,legal,ООО «РУСПАДЕЛ»; ИНН 9705243672; ОГРН 1257700259838; компания действует и зарегистрирована 10.06.2025,https://www.rusprofile.ru/id/1257700259838,Rusprofile,2026-08-04,HIGH,N5K-20260804-030,new_5000
+N5K-0028,N5K-E-0028-02,owner_lpr,Генеральный директор Кривошеев Максим Александрович; компания принадлежит семи физическим лицам,https://www.rusprofile.ru/id/1257700259838,Rusprofile,2026-08-04,HIGH,N5K-20260804-030,new_5000
+N5K-0028,N5K-E-0028-03,scale,Статус микропредприятия; проект развивает клубную модель спортивных услуг и набирает полноценный отдел продаж,https://www.rusprofile.ru/id/1257700259838,Rusprofile,2026-08-04,MEDIUM,N5K-20260804-030,new_5000
+N5K-0028,N5K-E-0028-04,signal,S1: построение отдела продаж с нуля включая штат менеджеров и телемаркетинга адаптацию и обучение,https://hh.ru/vacancies/rukovoditel-proekta-po-razvitiyu-prodazh,HeadHunter,2026-08-04,HIGH,N5K-20260804-030,new_5000
+N5K-0028,N5K-E-0028-05,contact,Практический маршрут связи через вакансию руководителя отдела продаж и форму отклика работодателю,https://hh.ru/vacancies/rukovoditel-proekta-po-razvitiyu-prodazh,HeadHunter,2026-08-04,MEDIUM,N5K-20260804-030,new_5000
