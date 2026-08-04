@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Started At,Completed At,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Qualified Companies,Integrity Status,Orphan Contacts,Orphan Evidence,Repair Result,Outreach Sent
+N5K-20260804-032,new_5000,2026-08-04T21:58:03+03:00,2026-08-04T22:06:00+03:00,30,12,5,3,2,1,1,18,11,Flaconia Pro,PASS,0,0,NOT_REQUIRED,0
