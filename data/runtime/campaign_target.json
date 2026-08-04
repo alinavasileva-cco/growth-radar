@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 19,
-  "current_contactable_count": 19,
-  "progress_added": 19,
-  "remaining_to_total_target": 4981,
+  "current_canonical_count": 20,
+  "current_contactable_count": 20,
+  "progress_added": 20,
+  "remaining_to_total_target": 4980,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-04T11:22:00+03:00",
+  "updated_at": "2026-08-04T12:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260804-021",
+  "last_run_id": "N5K-20260804-022",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 021 added Flaconia Pro. Canonical campaign count is the verified union of base masters and RUN shards. Old 70-company base remains excluded."
+  "note": "RUN 022 added Авто Сувенир / Present Day. Canonical campaign count is the verified union of base masters and RUN shards. Old 70-company base remains excluded."
 }
