@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260804-016",
+  "run_id": "N5K-20260804-017",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-04T04:59:49+03:00",
-  "updated_at": "2026-08-04T05:58:10+03:00",
+  "started_at": "2026-08-04T06:59:31+03:00",
+  "updated_at": "2026-08-04T07:43:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
-  "repair_result": "REPAIRED_LOGICAL_CANONICAL_UNION",
+  "repair_result": "NOT_REQUIRED",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 14,
-    "current_contactable_count": 14,
-    "progress_added": 14,
-    "remaining": 4986
+    "current_canonical_count": 15,
+    "current_contactable_count": 15,
+    "progress_added": 15,
+    "remaining": 4985
   },
   "funnel": {
     "discovered": 30,
-    "size_check_passed": 17,
+    "size_check_passed": 16,
     "legal_match_passed": 5,
-    "signal_confirmed": 12,
+    "signal_confirmed": 11,
     "lpr_identified": 2,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 13,
-    "excluded": 16
+    "duplicates": 14,
+    "excluded": 15
   },
-  "qualified_companies": ["Европодшипник М"],
+  "qualified_companies": ["Логос-ЛТД"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
-  "report_path": "reports/run_2026-08-04_016.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260804-016.csv",
-  "last_verified_commit_sha": "ce7f22347f219877a17e046753b3ef5487da9b72"
+  "report_path": "reports/run_2026-08-04_017.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260804-017.csv",
+  "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
 }
