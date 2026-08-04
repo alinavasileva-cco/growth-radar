@@ -1,23 +1,23 @@
 {
-  "run_id": "N5K-20260804-032",
+  "run_id": "N5K-20260804-033",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-04T21:58:03+03:00",
-  "updated_at": "2026-08-04T22:06:00+03:00",
+  "started_at": "2026-08-04T22:58:43+03:00",
+  "updated_at": "2026-08-04T23:06:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": "NOT_REQUIRED",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 30,
-    "current_contactable_count": 30,
-    "progress_added": 30,
-    "remaining": 4970
+    "current_canonical_count": 31,
+    "current_contactable_count": 31,
+    "progress_added": 31,
+    "remaining": 4969
   },
   "funnel": {
     "discovered": 30,
-    "size_check_passed": 12,
+    "size_check_passed": 11,
     "legal_match_passed": 5,
     "signal_confirmed": 3,
     "lpr_identified": 2,
@@ -26,13 +26,13 @@
     "duplicates": 18,
     "excluded": 11
   },
-  "qualified_companies": ["Flaconia Pro"],
+  "qualified_companies": ["Авто Сувенир"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
-  "report_path": "reports/run_2026-08-04_032.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260804-032.csv",
+  "report_path": "reports/run_2026-08-04_033.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260804-033.csv",
   "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
 }
