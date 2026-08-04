@@ -1,0 +1,6 @@
+Lead ID,Contact Type,Contact Value,Contact Source,Is Primary,Verified At,Run ID,Campaign ID
+N5K-0019,Phone,+7 (495) 150-80-85,https://flaconia.pro/page/contacts,true,2026-08-04T11:00:00+03:00,N5K-20260804-021,new_5000
+N5K-0019,Email,hello@flaconia.pro,https://flaconia.pro/page/contacts,true,2026-08-04T11:00:00+03:00,N5K-20260804-021,new_5000
+N5K-0019,Email,sales@flaconia.pro,https://flaconia.pro/page/agreement,false,2026-08-04T11:00:00+03:00,N5K-20260804-021,new_5000
+N5K-0019,HH,https://hh.ru/vacancy/129535513,https://hh.ru/vacancy/129535513,false,2026-08-04T11:00:00+03:00,N5K-20260804-021,new_5000
+N5K-0019,Contact Form,https://flaconia.pro/page/pod-zakaz,https://flaconia.pro/page/pod-zakaz,false,2026-08-04T11:00:00+03:00,N5K-20260804-021,new_5000
