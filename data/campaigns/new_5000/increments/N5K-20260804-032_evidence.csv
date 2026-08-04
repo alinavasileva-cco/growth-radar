@@ -1,0 +1,7 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0030,N5K-E-0030-01,legal,ИП Филигаров Максим Игоревич; ИНН 772880332527; ОГРНИП 321774600002766; реквизиты опубликованы действующим официальным сайтом,https://flaconia.pro/page/about-us,Официальный сайт,2026-08-04,HIGH,N5K-20260804-032,new_5000
+N5K-0030,N5K-E-0030-02,brand_legal_match,Официальный сайт Flaconia Pro прямо указывает ИП Филигаров Максим Игоревич и его ИНН и ОГРНИП,https://flaconia.pro/page/agreement,Официальный сайт,2026-08-04,HIGH,N5K-20260804-032,new_5000
+N5K-0030,N5K-E-0030-03,scale,Официальный сайт заявляет производственную мощность более 300000 спреев и триггеров в сутки и более 250000 пипеток в сутки,https://flaconia.pro/page/production,Официальный сайт,2026-08-04,HIGH,N5K-20260804-032,new_5000
+N5K-0030,N5K-E-0030-04,signal,S1: компания в фазе системного роста ищет руководителя способного построить или масштабировать B2B-отдел продаж как бизнес-функцию,https://hh.ru/vacancy/129535513,HeadHunter,2026-08-04,HIGH,N5K-20260804-032,new_5000
+N5K-0030,N5K-E-0030-05,owner_lpr,Филигаров Максим Игоревич является ИП правообладателем торговой марки FLACONIA PRO и практическим ЛПР,https://companies.rbc.ru/trademark/1145369/flaconia-pro/,РБК Компании,2026-08-04,HIGH,N5K-20260804-032,new_5000
+N5K-0030,N5K-E-0030-06,contact,Официально опубликованы телефон +7 (495) 150-80-85 email hello@flaconia.pro форма сайта и маршрут через HeadHunter,https://flaconia.pro/page/contacts,Официальный сайт,2026-08-04,HIGH,N5K-20260804-032,new_5000
