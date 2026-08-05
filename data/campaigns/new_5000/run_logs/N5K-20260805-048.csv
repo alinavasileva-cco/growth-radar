@@ -1,0 +1,2 @@
+run_id,campaign_id,started_at,completed_at,raw_candidates,qualified,duplicates,excluded,current_canonical_count,current_contactable_count,integrity_status,orphan_contacts,orphan_evidence,blocker
+N5K-20260805-048,new_5000,2026-08-05T14:02:00+03:00,2026-08-05T14:24:00+03:00,30,1,18,11,35,35,PASS,0,0,"None"
