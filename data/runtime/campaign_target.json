@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-05T02:11:00+03:00",
+  "updated_at": "2026-08-05T03:12:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260805-036",
+  "last_run_id": "N5K-20260805-037",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 036 qualified no new companies; ambiguous legal/LPR/contact matches were deferred. Canonical campaign count remains the verified union of base masters and verified RUN shards. Old 70-company base remains excluded."
+  "note": "RUN 037 qualified no new companies; candidates lacking a fully verified legal/LPR/contact chain were deferred. Old 70-company base remains excluded."
 }
