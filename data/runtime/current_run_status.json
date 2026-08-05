@@ -1,12 +1,12 @@
 {
-  "run_id": "N5K-20260805-044",
+  "run_id": "N5K-20260805-045",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-05T10:00:45+03:00",
-  "updated_at": "2026-08-05T10:18:00+03:00",
+  "started_at": "2026-08-05T10:59:59+03:00",
+  "updated_at": "2026-08-05T11:18:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
-  "integrity_precheck": "PASS_WITH_REPAIR",
-  "repair_result": "RECONCILED_RUN_043_PENDING_SHA_TO_cefb58aea0ebbd32cf24aae1eabfc23ac6b09c4b",
+  "integrity_precheck": "PASS",
+  "repair_result": "NONE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
@@ -17,14 +17,14 @@
   },
   "funnel": {
     "discovered": 30,
-    "size_check_passed": 12,
-    "legal_match_passed": 6,
-    "signal_confirmed": 6,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
+    "size_check_passed": 11,
+    "legal_match_passed": 5,
+    "signal_confirmed": 5,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 0,
-    "duplicates": 20,
-    "excluded": 10
+    "duplicates": 19,
+    "excluded": 11
   },
   "qualified_companies": [],
   "integrity_status": "PASS",
@@ -32,8 +32,8 @@
   "orphan_evidence": 0,
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
-  "blocker": "No new non-duplicate candidate simultaneously passed exact brand-legal match, active private status, scale, owner/LPR, S1-S3 signal and practical contact-route verification.",
-  "report_path": "reports/run_2026-08-05_044.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-044.csv",
-  "last_verified_commit_sha": "9c4dd8d620791265b042459659f4211241ad3582"
+  "blocker": "No new non-duplicate candidate simultaneously passed exact brand-legal match, active private status, verified scale, owner/LPR, S1-S3 signal and practical contact-route verification.",
+  "report_path": "reports/run_2026-08-05_045.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-045.csv",
+  "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
 }
