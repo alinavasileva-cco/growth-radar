@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-06T01:12:00+03:00",
+  "updated_at": "2026-08-06T02:09:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260806-059",
-  "last_commit_sha": "edd045a344b76d46f21254465e98c4d242c79d31",
-  "note": "RUN 059 reviewed 30 raw candidates and added no companies because no non-duplicate candidate passed the full qualification chain. Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260806-060",
+  "last_commit_sha": "34f38828a6651d52332104bc37ca55d4b8941013",
+  "note": "RUN 060 reviewed 30 raw candidates and added no companies because no non-duplicate candidate passed the full qualification chain. Old 70-company base remains unchanged and excluded."
 }
