@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-05T07:12:00+03:00",
+  "updated_at": "2026-08-05T08:12:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260805-041",
+  "last_run_id": "N5K-20260805-042",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 041 discovered 30 candidates and added none after strict deduplication and qualification. Previous pending SHA was repaired against confirmed main commit f26a4d118184de89442ea6c8a889cfb492b62fd0. Old 70-company base remains unchanged and excluded."
+  "note": "RUN 042 reviewed 30 raw candidates and added none after strict deduplication and qualification. RUN 041 pending SHA was reconciled to confirmed main commit d63e99fe1fddabeb4a69dc32bfd8e1cb813e774e. Old 70-company base remains unchanged and excluded."
 }
