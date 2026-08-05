@@ -1,12 +1,12 @@
 {
-  "run_id": "N5K-20260805-040",
+  "run_id": "N5K-20260805-041",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-05T05:58:10+03:00",
-  "updated_at": "2026-08-05T06:07:00+03:00",
+  "started_at": "2026-08-05T07:02:15+03:00",
+  "updated_at": "2026-08-05T07:12:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
-  "integrity_precheck": "PASS",
-  "repair_result": "NOT_REQUIRED",
+  "integrity_precheck": "PASS_WITH_REPAIR",
+  "repair_result": "RECONCILED_PREVIOUS_PENDING_SHA_TO_f26a4d118184de89442ea6c8a889cfb492b62fd0",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
@@ -16,15 +16,15 @@
     "remaining": 4967
   },
   "funnel": {
-    "discovered": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
+    "discovered": 30,
+    "size_check_passed": 12,
+    "legal_match_passed": 5,
+    "signal_confirmed": 5,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 0,
-    "duplicates": 0,
-    "excluded": 0
+    "duplicates": 18,
+    "excluded": 12
   },
   "qualified_companies": [],
   "integrity_status": "PASS",
@@ -32,8 +32,8 @@
   "orphan_evidence": 0,
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
-  "blocker": "Transient public search service error HTTP 503 prevented source discovery; no unverified candidates were added.",
-  "report_path": "reports/run_2026-08-05_040.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-040.csv",
+  "blocker": "No non-duplicate candidate simultaneously passed exact legal-brand match, scale, owner/LPR and practical contact-route verification; criteria were not lowered.",
+  "report_path": "reports/run_2026-08-05_041.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-041.csv",
   "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
 }
