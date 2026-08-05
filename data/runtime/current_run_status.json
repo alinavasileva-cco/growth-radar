@@ -1,12 +1,12 @@
 {
-  "run_id": "N5K-20260805-053",
+  "run_id": "N5K-20260805-054",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-05T18:58:40+03:00",
-  "updated_at": "2026-08-05T19:18:00+03:00",
+  "started_at": "2026-08-05T19:58:27+03:00",
+  "updated_at": "2026-08-05T20:18:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
-  "repair_result": "COMPLETED_PREVIOUS_SHA_MARKERS",
+  "repair_result": "NOT_REQUIRED",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
@@ -33,7 +33,7 @@
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
   "blocker": "No non-duplicate candidate simultaneously passed legal identity, scale, owner/LPR, S1-S3 signal and practical contact-route verification",
-  "report_path": "reports/run_2026-08-05_053.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-053.csv",
-  "last_verified_commit_sha": "042a7fd63f39f10c25d63a810654f9a2933f7c12"
+  "report_path": "reports/run_2026-08-05_054.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-054.csv",
+  "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
 }
