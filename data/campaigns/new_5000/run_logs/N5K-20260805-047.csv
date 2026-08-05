@@ -1,0 +1,2 @@
+run_id,campaign_id,started_at,completed_at,raw_candidates,qualified,duplicates,excluded,current_canonical_count,current_contactable_count,integrity_status,orphan_contacts,orphan_evidence,blocker
+N5K-20260805-047,new_5000,2026-08-05T12:58:19+03:00,2026-08-05T13:17:00+03:00,30,0,20,10,34,34,PASS,0,0,"No non-duplicate candidate simultaneously passed exact brand-to-legal-entity match, scale, owner/LPR, S1-S3 signal and practical contact-route verification"
