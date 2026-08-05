@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 32,
-  "current_contactable_count": 32,
-  "progress_added": 32,
-  "remaining_to_total_target": 4968,
+  "current_canonical_count": 33,
+  "current_contactable_count": 33,
+  "progress_added": 33,
+  "remaining_to_total_target": 4967,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-05T03:12:00+03:00",
+  "updated_at": "2026-08-05T04:12:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260805-037",
+  "last_run_id": "N5K-20260805-038",
   "last_commit_sha": "PENDING_FINAL_VERIFICATION",
-  "note": "RUN 037 qualified no new companies; candidates lacking a fully verified legal/LPR/contact chain were deferred. Old 70-company base remains excluded."
+  "note": "RUN 038 added DIGITALI / Диджитал Ай. Old 70-company base remains unchanged and excluded."
 }
