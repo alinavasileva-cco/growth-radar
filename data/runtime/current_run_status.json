@@ -35,5 +35,5 @@
   "blocker": "No new non-duplicate candidate simultaneously passed exact brand-legal match, active private status, verified scale, owner/LPR, S1-S3 signal and practical contact-route verification.",
   "report_path": "reports/run_2026-08-05_045.md",
   "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-045.csv",
-  "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
+  "last_verified_commit_sha": "e648082a4f96a831d77033dd00d949ddd07d93db"
 }
