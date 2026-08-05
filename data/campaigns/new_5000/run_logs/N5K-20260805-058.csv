@@ -1,0 +1,2 @@
+run_id,campaign_id,started_at,completed_at,raw_candidates,qualified,duplicates,excluded,canonical_total,contactable_total,integrity_status,orphan_contacts,orphan_evidence,blocker
+N5K-20260805-058,new_5000,2026-08-05T23:59:19+03:00,2026-08-06T00:12:00+03:00,30,0,19,11,35,35,PASS,0,0,"No non-duplicate candidate passed exact legal identity, scale, owner/LPR, S1-S3 signal and practical contact route"
