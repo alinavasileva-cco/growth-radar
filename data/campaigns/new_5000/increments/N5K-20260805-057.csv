@@ -1,0 +1,2 @@
+run_id,campaign_id,lead_id,brand,legal_name,inn,ogrn_ogrnip,status,reason
+N5K-20260805-057,new_5000,,,,,,,NO_QUALIFIED_NEW_COMPANIES,"No non-duplicate candidate passed the complete qualification chain"
