@@ -13,6 +13,6 @@
   "updated_at": "2026-08-05T12:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_run_id": "N5K-20260805-046",
-  "last_commit_sha": "PENDING_FINAL_VERIFICATION",
+  "last_commit_sha": "ce6612450b65d0323e1c09b5863768465b395361",
   "note": "RUN 046 reviewed 30 raw candidates and added Auto Suvenir / Present Day after legal, scale, owner/LPR, S1 signal and HeadHunter contact-route verification. Old 70-company base remains unchanged and excluded."
 }
