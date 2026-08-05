@@ -6,26 +6,9 @@
   "updated_at": "2026-08-05T20:18:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
-  "repair_result": "NOT_REQUIRED",
-  "new_cycle": {
-    "baseline_count": 0,
-    "target_count": 5000,
-    "current_canonical_count": 35,
-    "current_contactable_count": 35,
-    "progress_added": 35,
-    "remaining": 4965
-  },
-  "funnel": {
-    "discovered": 30,
-    "size_check_passed": 10,
-    "legal_match_passed": 5,
-    "signal_confirmed": 4,
-    "lpr_identified": 2,
-    "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 20,
-    "excluded": 10
-  },
+  "repair_result": "COMPLETED_SHA_MARKERS",
+  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":35,"current_contactable_count":35,"progress_added":35,"remaining":4965},
+  "funnel": {"discovered":30,"size_check_passed":10,"legal_match_passed":5,"signal_confirmed":4,"lpr_identified":2,"contact_route_found":1,"qualified":0,"duplicates":20,"excluded":10},
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
@@ -35,5 +18,5 @@
   "blocker": "No non-duplicate candidate simultaneously passed legal identity, scale, owner/LPR, S1-S3 signal and practical contact-route verification",
   "report_path": "reports/run_2026-08-05_054.md",
   "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260805-054.csv",
-  "last_verified_commit_sha": "PENDING_FINAL_VERIFICATION"
+  "last_verified_commit_sha": "bf2b5516d8f953f462f7048d1e841cd0851c9fc7"
 }
