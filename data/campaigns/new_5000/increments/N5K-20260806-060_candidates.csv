@@ -1,0 +1,11 @@
+run_id,campaign_id,candidate,source_type,funnel_stage,outcome,reason
+N5K-20260806-060,new_5000,LEONID GRIVKO,HH vacancy,CONTACT ROUTE FOUND,EXCLUDED,"Strong S1 commercial rebuild signal and founder involvement; exact legal entity, INN/OGRN and verified owner-to-brand linkage not fully confirmed"
+N5K-20260806-060,new_5000,ООО В Кадре,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,"Sales build signal found; scale, owner/LPR and practical direct route not fully confirmed"
+N5K-20260806-060,new_5000,ООО Прометей,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,"Sales department build signal found; exact business identity, scale and LPR route incomplete"
+N5K-20260806-060,new_5000,ИгроРай,HH vacancy,SIZE CHECK,EXCLUDED,"Commercial integration signal found; legal match and owner/LPR route incomplete"
+N5K-20260806-060,new_5000,HomeLiga,HH vacancy,SIZE CHECK,EXCLUDED,"Growth hiring signal found; exact legal match and owner/LPR route incomplete"
+N5K-20260806-060,new_5000,AIVIBE,HH vacancy,DISCOVERED,EXCLUDED,"B2B growth signal found; legal identity and scale not confirmed"
+N5K-20260806-060,new_5000,ООО Импорт-Сервис,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,"Commercial leadership signal found; owner/LPR and practical contact route incomplete"
+N5K-20260806-060,new_5000,ООО МЭДОКС,HH vacancy,DISCOVERED,EXCLUDED,"Commercial director vacancy found; qualification evidence incomplete"
+N5K-20260806-060,new_5000,ООО Мустанг Технологии Кормления,HH vacancy,SIZE CHECK,DUPLICATE,"Candidate already present in campaign screening history or canonical dedupe set"
+N5K-20260806-060,new_5000,Lucky Group,HH vacancy,SIZE CHECK,DUPLICATE,"Candidate already present in campaign screening history or canonical dedupe set"
