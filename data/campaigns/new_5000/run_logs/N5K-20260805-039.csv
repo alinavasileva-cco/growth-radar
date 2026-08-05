@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Started At,Completed At,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Repair,Added Companies
+N5K-20260805-039,new_5000,2026-08-05T04:58:42+03:00,2026-08-05T05:07:00+03:00,30,9,4,4,2,0,0,18,12,33,33,PASS,0,0,FINAL_SHA_REPAIRED,NONE
