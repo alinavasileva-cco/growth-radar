@@ -1,0 +1,2 @@
+run_id,campaign_id,started_at,completed_at,discovered,size_check_passed,legal_match_passed,signal_confirmed,lpr_identified,contact_route_found,qualified,duplicates,excluded,current_canonical_count,current_contactable_count,integrity_status,orphan_contacts,orphan_evidence,blocker
+N5K-20260805-041,new_5000,2026-08-05T07:02:15+03:00,2026-08-05T07:12:00+03:00,30,12,5,5,2,2,0,18,12,33,33,PASS,0,0,"No non-duplicate candidate simultaneously passed legal-brand match, scale, LPR and practical contact-route verification; criteria were not lowered"
