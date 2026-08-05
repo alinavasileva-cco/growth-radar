@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-05T10:18:00+03:00",
+  "updated_at": "2026-08-05T11:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260805-044",
-  "last_commit_sha": "a5798a104fce74f72c2ef9a986e72fff89993833",
-  "note": "RUN 044 reviewed 30 raw candidates and added none after strict deduplication and qualification. Руслитекс and MARROB were duplicates; remaining candidates lacked a complete unambiguous verification chain. Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260805-045",
+  "last_commit_sha": "PENDING_FINAL_VERIFICATION",
+  "note": "RUN 045 reviewed 30 raw candidates and added none after strict deduplication and qualification. No candidate passed the full unambiguous legal, scale, LPR, signal and contact-route chain. Old 70-company base remains unchanged and excluded."
 }
