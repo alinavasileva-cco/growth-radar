@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
 **Версия:** 05.08.2026  
-**Последний подтверждённый запуск:** `N5K-20260805-052`  
+**Последний подтверждённый запуск:** `N5K-20260805-053`  
 **Статус:** `READY` — новый цикл `new_5000` прошёл проверку целостности  
 **Текущая цель:** 5000 уникальных компаний с baseline=0  
 **Автоматический outreach:** запрещён
@@ -25,7 +25,7 @@
 - increments: `data/campaigns/new_5000/increments/`;
 - RUN-логи: `data/campaigns/new_5000/run_logs/`;
 - runtime: `data/runtime/current_run_status.json` и `data/runtime/campaign_target.json`;
-- последний отчёт: `reports/run_2026-08-05_052.md`.
+- последний отчёт: `reports/run_2026-08-05_053.md`.
 
 ## Последний RUN
 
