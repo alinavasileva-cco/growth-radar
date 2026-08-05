@@ -1,0 +1,6 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0035,N5K-E-048-01,legal,ООО «АДВОКОЛЛ»; ИНН 7751201803; ОГРН 1217700341594; организация действует,https://companies.rbc.ru/id/1217700341594-obschestvo-s-ogranichennoj-otvetstvennostyu-advokoll/,РБК Компании,2026-08-05,HIGH,N5K-20260805-048,new_5000
+N5K-0035,N5K-E-048-02,lpr,Ахильгов Калой Салимович — учредитель 100%; Хурумова Диана Олеговна — генеральный директор,https://companies.rbc.ru/id/1217700341594-obschestvo-s-ogranichennoj-otvetstvennostyu-advokoll/,РБК Компании,2026-08-05,HIGH,N5K-20260805-048,new_5000
+N5K-0035,N5K-E-048-03,scale,Выручка 17 504 000 ₽ за 2025 год; официальный сайт сообщает 22 000 пользователей и 300+ адвокатов на платформе,https://advocall.me/stat-advokatom/,Официальный сайт и РБК Компании,2026-08-05,HIGH,N5K-20260805-048,new_5000
+N5K-0035,N5K-E-048-04,signal,Вакансия руководителя проекта предусматривает запуск маркетинговой стратегии и создание отдела продаж с нуля с KPI воронкой и личным закрытием крупных сделок,https://hh.ru/vacancy/130203792,HeadHunter,2026-08-05,HIGH,N5K-20260805-048,new_5000
+N5K-0035,N5K-E-048-05,contact,Подтверждены официальный телефон email форма связи и маршрут через HeadHunter,https://advocall.me/contacts/,Официальный сайт и HeadHunter,2026-08-05,HIGH,N5K-20260805-048,new_5000
