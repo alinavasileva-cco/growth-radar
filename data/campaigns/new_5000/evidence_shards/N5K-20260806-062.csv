@@ -1,0 +1,7 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0036,N5K-E-0036-01,legal,ООО «ЗАБОРОФФ» действует; ИНН 9709008831; ОГРН 1177746882840,https://companies.rbc.ru/id/1177746882840-ooo-zaboroff/,РБК Компании,2026-08-06,HIGH,N5K-20260806-062,new_5000
+N5K-0036,N5K-E-0036-02,owner_lpr,Каширин Олег Вячеславович — генеральный директор и учредитель 100%,https://companies.rbc.ru/id/1177746882840-ooo-zaboroff/,РБК Компании,2026-08-06,HIGH,N5K-20260806-062,new_5000
+N5K-0036,N5K-E-0036-03,scale,Выручка 46 172 000 ₽ и 18 сотрудников за 2025 год,https://companies.rbc.ru/amp/ogrn/1177746882840/,РБК Компании,2026-08-06,HIGH,N5K-20260806-062,new_5000
+N5K-0036,N5K-E-0036-04,signal,Вакансия требует запустить B2B-направление и построить отдел продаж с нуля; переменная часть привязана к валовой марже,https://hh.ru/vacancy/129646446,HeadHunter,2026-08-06,HIGH,N5K-20260806-062,new_5000
+N5K-0036,N5K-E-0036-05,contact,Официальные контакты: +7 (495) 256-22-22 и mail@zaboroff.ru; опубликованы реквизиты юрлица,https://www.zaboroff.ru/contact/,Официальный сайт Zaboroff,2026-08-06,HIGH,N5K-20260806-062,new_5000
+N5K-0036,N5K-E-0036-06,brand_domain,Официальный сайт связывает бренд Zaboroff с ООО «ЗАБОРОФФ» и реквизитами ИНН/ОГРН,https://www.zaboroff.ru/about/,Официальный сайт Zaboroff,2026-08-06,HIGH,N5K-20260806-062,new_5000
