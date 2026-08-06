@@ -1,0 +1,2 @@
+Run ID,Started At,Completed At,Campaign ID,Discovered,Qualified,Duplicates,Excluded,Current Canonical,Current Contactable,Integrity,Orphan Contacts,Orphan Evidence,Blocker,Commit SHA
+N5K-20260806-071,2026-08-06T13:00:06+03:00,2026-08-06T13:14:00+03:00,new_5000,30,0,14,16,42,42,PASS,0,0,"No new non-duplicate candidate passed exact active legal entity plus INN/OGRN plus independently confirmed scale plus owner/LPR plus S1-S3 plus practical contact route",PENDING_FINAL_HEAD_VERIFICATION
