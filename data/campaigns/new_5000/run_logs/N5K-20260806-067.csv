@@ -1,0 +1,5 @@
+Run ID,Campaign ID,Stage,Count,Status,Details,Timestamp
+N5K-20260806-067,new_5000,DISCOVERED,30,COMPLETED,30 raw candidates collected from vacancies official sites legal registries and public company materials,2026-08-06T09:08:00+03:00
+N5K-20260806-067,new_5000,DEDUPLICATION,12,COMPLETED,Duplicates rejected by Lead ID INN OGRN legal name and brand-domain linkage,2026-08-06T09:11:00+03:00
+N5K-20260806-067,new_5000,QUALIFIED,1,COMPLETED,Jungle Story / ООО «ИКСТЕНШН» integrated into master contacts evidence and contactable shards,2026-08-06T09:16:00+03:00
+N5K-20260806-067,new_5000,INTEGRITY,0,PASS,Orphan contacts=0; orphan evidence=0; campaign baseline remains 0,2026-08-06T09:18:00+03:00
