@@ -4,6 +4,13 @@ import { db } from "@/lib/db";
 
 type RadarRow = Record<string, string>;
 
+const terminalStatuses = new Set<CompanyStatus>([
+  CompanyStatus.SENT,
+  CompanyStatus.REPLIED,
+  CompanyStatus.DECLINED,
+  CompanyStatus.EXCLUDED
+]);
+
 function clean(value?: string): string | null {
   const result = value?.trim();
   return result ? result : null;
@@ -69,9 +76,7 @@ export async function syncGrowthRadar(userId: string) {
         where: { id: existing.id },
         data: {
           ...data,
-          status: [CompanyStatus.SENT, CompanyStatus.REPLIED, CompanyStatus.DECLINED, CompanyStatus.EXCLUDED].includes(existing.status)
-            ? existing.status
-            : data.status
+          status: terminalStatuses.has(existing.status) ? existing.status : data.status
         }
       });
       updated += 1;
