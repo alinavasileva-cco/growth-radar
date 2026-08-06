@@ -1,3 +1,4 @@
+import crypto from "node:crypto";
 import { cookies } from "next/headers";
 import { SignJWT, jwtVerify } from "jose";
 import { db } from "@/lib/db";
@@ -7,9 +8,16 @@ const COOKIE_NAME = "growth_radar_outreach_session";
 type SessionPayload = { userId: string; email: string };
 
 function sessionSecret(): Uint8Array {
-  const value = process.env.SESSION_SECRET;
-  if (!value || value.length < 32) throw new Error("SESSION_SECRET must be at least 32 characters");
-  return new TextEncoder().encode(value);
+  const explicit = process.env.SESSION_SECRET;
+  if (explicit && explicit.length >= 32) return new TextEncoder().encode(explicit);
+
+  const databaseUrl = process.env.DATABASE_URL;
+  if (!databaseUrl) throw new Error("SESSION_SECRET or DATABASE_URL must be configured");
+  const derived = crypto
+    .createHash("sha256")
+    .update(`growth-radar-outreach:session:v1:${databaseUrl}`)
+    .digest();
+  return new Uint8Array(derived);
 }
 
 export async function createSession(payload: SessionPayload): Promise<void> {
