@@ -1,12 +1,12 @@
 {
-  "run_id": "N5K-20260806-070",
+  "run_id": "N5K-20260806-071",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-06T12:02:16+03:00",
-  "updated_at": "2026-08-06T12:18:00+03:00",
+  "started_at": "2026-08-06T13:00:06+03:00",
+  "updated_at": "2026-08-06T13:14:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
-  "integrity_precheck": "PASS_WITH_PENDING_SHA_REPAIR",
-  "repair_result": "REPAIRED_PENDING_SHA_MARKERS_FROM_RUN_069_USING_bdc14843add1f3af288ba019df753cf3e943515c",
+  "integrity_precheck": "PASS",
+  "repair_result": "NOT_REQUIRED",
   "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":42,"current_contactable_count":42,"progress_added":42,"remaining":4958},
   "funnel": {"discovered":30,"size_check_passed":16,"legal_match_passed":10,"signal_confirmed":8,"lpr_identified":3,"contact_route_found":2,"qualified":0,"duplicates":14,"excluded":16},
   "qualified_companies": [],
@@ -17,7 +17,7 @@
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
   "blocker": "No new non-duplicate candidate passed exact active legal entity plus INN/OGRN plus independently confirmed scale plus owner/LPR plus S1-S3 plus practical contact route",
-  "report_path": "reports/run_2026-08-06_070.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260806-070.csv",
+  "report_path": "reports/run_2026-08-06_071.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260806-071.csv",
   "last_verified_commit_sha": "PENDING_FINAL_HEAD_VERIFICATION"
 }
