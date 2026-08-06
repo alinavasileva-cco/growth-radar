@@ -1,0 +1,2 @@
+Run ID,Started At,Completed At,Campaign ID,Discovered,Qualified,Duplicates,Excluded,Current Canonical,Current Contactable,Integrity,Orphan Contacts,Orphan Evidence,Repair,Qualified Companies,Report
+N5K-20260806-074,2026-08-06T15:07:33+03:00,2026-08-06T15:24:00+03:00,new_5000,30,1,13,16,44,44,PASS,0,0,REPAIRED_RUN_ID_COLLISION_073_TO_074,MARROB / ООО «МАРРОБ РУС»,reports/run_2026-08-06_074.md
