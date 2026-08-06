@@ -1,0 +1,4 @@
+Run ID,Candidate,Stage,Disposition,Reason,Campaign ID
+N5K-20260806-074,MARROB / ООО «МАРРОБ РУС»,QUALIFIED,ADDED,Full legal scale LPR signal and contact chain confirmed,new_5000
+N5K-20260806-074,13 previously known candidates,DEDUPLICATION,DUPLICATE,Matched existing Lead ID INN OGRN legal name or verified brand-domain,new_5000
+N5K-20260806-074,16 reviewed candidates,QUALIFICATION,EXCLUDED_OR_DEFERRED,One or more mandatory criteria remained unconfirmed,new_5000
