@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 
+// Readiness endpoint: reports configuration state without exposing secrets.
 export async function GET() {
   try {
     await db.$queryRaw`SELECT 1`;
