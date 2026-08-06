@@ -84,7 +84,7 @@ export async function sendTestToSelf(draftId: string, userId: string, ownEmail: 
   const draft = await db.emailDraft.findFirst({ where: { id: draftId, userId } });
   if (!draft) throw new Error("Черновик не найден");
   await checkLimits(userId, ownEmail, true);
-  const result = await sendRaw(userId, ownEmail, `[ТЕСТ] ${draft.subject}`, draft.body);
+  const result = await sendRaw(userId, ownEmail, `ТЕСТ — ${draft.subject}`, draft.body);
   await db.activityLog.create({ data: { userId, action: "TEST_EMAIL_SENT", entity: "EmailDraft", entityId: draftId } });
   return result;
 }
