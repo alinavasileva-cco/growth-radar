@@ -1,0 +1,2 @@
+Run ID,Started At,Completed At,Campaign ID,Discovered,Qualified,Duplicates,Excluded,Current Canonical,Current Contactable,Integrity,Orphan Contacts,Orphan Evidence,Active WIP,Repair,Blocker
+N5K-20260806-073,2026-08-06T15:01:57+03:00,2026-08-06T15:16:00+03:00,new_5000,30,0,14,16,43,43,PASS,0,0,10,REPAIRED_PREVIOUS_SHA_MARKERS,"No fully verified non-duplicate candidate"
