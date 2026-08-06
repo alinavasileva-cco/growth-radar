@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Discovered,Qualified,Duplicates,Excluded,Active WIP,Current Canonical,Current Contactable,Integrity,Orphan Contacts,Orphan Evidence,Blocker
+N5K-20260806-080,new_5000,30,0,14,16,10,48,48,PASS,0,0,"No new candidate completed the full legal-scale-LPR-signal-contact chain without ambiguity"
