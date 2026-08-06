@@ -1,0 +1,226 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum CompanyStatus {
+  NEW
+  RESEARCH_REQUIRED
+  NO_CONTACT
+  READY
+  DRAFT_CREATED
+  REVIEW
+  APPROVED
+  SCHEDULED
+  SENT
+  REPLIED
+  FOLLOW_UP
+  DECLINED
+  BOUNCED
+  EXCLUDED
+}
+
+enum DraftStatus {
+  REVIEW
+  APPROVED
+  SCHEDULED
+  SENT
+  CANCELLED
+  ERROR
+}
+
+enum ScheduleStatus {
+  PENDING
+  PROCESSING
+  SENT
+  CANCELLED
+  ERROR
+}
+
+model User {
+  id           String        @id @default(cuid())
+  email        String        @unique
+  name         String?
+  picture      String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  emailAccount EmailAccount?
+  companies    Company[]
+  drafts       EmailDraft[]
+  attachments  Attachment[]
+  sentEmails   SentEmail[]
+  activities   ActivityLog[]
+  settings     ApplicationSettings?
+}
+
+model EmailAccount {
+  id                    String   @id @default(cuid())
+  userId                String   @unique
+  providerEmail         String
+  encryptedAccessToken  String?
+  encryptedRefreshToken String?
+  tokenExpiresAt        DateTime?
+  scope                  String?
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+  user                   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Company {
+  id                 String        @id @default(cuid())
+  userId             String
+  leadId             String?
+  campaignId         String?
+  name               String
+  legalName          String?
+  inn                String?
+  ogrn               String?
+  website            String?
+  industry           String?
+  region             String?
+  city               String?
+  scale               String?
+  contactName        String?
+  contactPosition    String?
+  email              String?
+  phone              String?
+  telegram           String?
+  hhUrl              String?
+  contactForm        String?
+  contactType        String?
+  contactSource      String?
+  signalLevel        String?
+  signalSummary      String?
+  businessTasks      String?
+  growthPoints       String?
+  relevance          String?
+  relevantExperience String?
+  sourceUrl          String?
+  verifiedAt         DateTime?
+  status             CompanyStatus @default(NEW)
+  notes              String?
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+  user               User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  drafts             EmailDraft[]
+
+  @@unique([userId, leadId])
+  @@unique([userId, email])
+  @@index([userId, status])
+  @@index([userId, name])
+  @@index([userId, inn])
+}
+
+model EmailDraft {
+  id           String      @id @default(cuid())
+  userId       String
+  companyId    String
+  subject      String
+  body         String
+  status       DraftStatus @default(REVIEW)
+  gmailDraftId String?
+  approvedAt   DateTime?
+  lastError    String?
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  user         User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  company      Company     @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  schedules    ScheduledEmail[]
+  sentEmail    SentEmail?
+
+  @@index([userId, status])
+  @@index([companyId, createdAt])
+}
+
+model Attachment {
+  id          String   @id @default(cuid())
+  userId      String
+  fileName    String
+  contentType String
+  size        Int
+  data        Bytes
+  isDefault   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, isDefault])
+}
+
+model ScheduledEmail {
+  id          String         @id @default(cuid())
+  draftId     String
+  scheduledAt DateTime
+  status      ScheduleStatus @default(PENDING)
+  attempts    Int            @default(0)
+  lastError   String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  draft       EmailDraft     @relation(fields: [draftId], references: [id], onDelete: Cascade)
+
+  @@index([status, scheduledAt])
+}
+
+model SentEmail {
+  id             String   @id @default(cuid())
+  userId         String
+  draftId        String   @unique
+  gmailMessageId String
+  gmailThreadId  String?
+  recipient      String
+  subject        String
+  sentAt         DateTime @default(now())
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  draft          EmailDraft @relation(fields: [draftId], references: [id], onDelete: Cascade)
+
+  @@index([userId, sentAt])
+}
+
+model SuppressionList {
+  id        String   @id @default(cuid())
+  userId    String
+  email     String
+  reason    String?
+  createdAt DateTime @default(now())
+
+  @@unique([userId, email])
+}
+
+model ActivityLog {
+  id        String   @id @default(cuid())
+  userId    String
+  action    String
+  entity    String
+  entityId  String?
+  details   Json?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}
+
+model ApplicationSettings {
+  id                 String   @id @default(cuid())
+  userId             String   @unique
+  fullName           String   @default("Алина Васильева")
+  role               String   @default("Коммерческий директор / Business Development")
+  positioning        String?
+  phone              String?
+  telegram           String?
+  linkedin           String?
+  websiteUrl         String?
+  resumeUrl          String?
+  signature          String?
+  dailyLimit         Int      @default(15)
+  minimumIntervalMin Int      @default(10)
+  workdayStartHour   Int      @default(9)
+  workdayEndHour     Int      @default(18)
+  timezone           String   @default("Europe/Moscow")
+  queuePaused        Boolean  @default(true)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
