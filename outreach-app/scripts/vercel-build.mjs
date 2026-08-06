@@ -18,6 +18,7 @@ function run(args) {
   }
 }
 
+console.log(`Gmail SMTP configured: ${process.env.GMAIL_APP_PASSWORD ? "yes" : "no"}`);
 run(["prisma", "generate"]);
 
 if (process.env.DATABASE_URL) {
