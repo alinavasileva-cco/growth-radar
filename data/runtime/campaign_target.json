@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 44,
-  "current_contactable_count": 44,
-  "progress_added": 44,
-  "remaining_to_total_target": 4956,
+  "current_canonical_count": 45,
+  "current_contactable_count": 45,
+  "progress_added": 45,
+  "remaining_to_total_target": 4955,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-06T16:18:00+03:00",
+  "updated_at": "2026-08-06T17:19:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260806-075",
+  "last_run_id": "N5K-20260806-076",
   "last_commit_sha": "PENDING_FINAL_HEAD_VERIFICATION",
-  "note": "RUN 075 reviewed 30 raw candidates and added no company because no candidate completed the full verification chain without ambiguity. Old 70-company base remains unchanged and excluded."
+  "note": "RUN 076 reviewed 30 raw candidates and added ACELED / Линии Света / ООО «ТОРГ-ЛАЙТ». Old 70-company base remains unchanged and excluded."
 }
