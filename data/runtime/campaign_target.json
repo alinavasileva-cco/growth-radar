@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 48,
-  "current_contactable_count": 48,
-  "progress_added": 48,
-  "remaining_to_total_target": 4952,
+  "current_canonical_count": 49,
+  "current_contactable_count": 49,
+  "progress_added": 49,
+  "remaining_to_total_target": 4951,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-06T23:18:00+03:00",
+  "updated_at": "2026-08-07T00:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260806-082",
+  "last_run_id": "N5K-20260807-083",
   "last_commit_sha": "TO_BE_VERIFIED_AFTER_FINAL_WRITE",
-  "note": "RUN 082 reviewed 30 raw candidates and added no companies. Old 70-company base remains unchanged and excluded."
+  "note": "RUN 083 reviewed 30 raw candidates and added Chacha's Club / ИП Кожомин Кирилл Павлович. Old 70-company base remains unchanged and excluded."
 }
