@@ -1,0 +1,22 @@
+{
+  "run_id": "N5K-20260806-070",
+  "campaign_id": "new_5000",
+  "started_at": "2026-08-06T12:02:16+03:00",
+  "completed_at": "2026-08-06T12:18:00+03:00",
+  "discovered": 30,
+  "size_check_passed": 16,
+  "legal_match_passed": 10,
+  "signal_confirmed": 8,
+  "lpr_identified": 3,
+  "contact_route_found": 2,
+  "qualified": 0,
+  "duplicates": 14,
+  "excluded_or_recheck": 16,
+  "current_canonical_count": 42,
+  "current_contactable_count": 42,
+  "integrity_status": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "active_wip": 10,
+  "outreach_sent": 0
+}
