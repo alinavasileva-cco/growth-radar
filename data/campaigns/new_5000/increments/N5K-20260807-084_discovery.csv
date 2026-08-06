@@ -1,0 +1,31 @@
+Candidate,Source Type,Stage,Outcome,Reason
+Dолсо,HH vacancy,SIGNAL CONFIRMED,DUPLICATE_OR_UNRESOLVED,Previously surfaced or exact legal/contact chain incomplete
+Лесресурс,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Exact legal entity scale owner and contact route not all independently confirmed
+HR-Stalker client parquet manufacturer,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Employer intermediary hides exact legal entity
+Верзилина Анна premium real estate project,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Exact operating legal entity and canonical contact route ambiguous
+Мирра Архитектс / KSTALT,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Brand to legal entity scale and owner chain incomplete
+ГК Ангел,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Exact legal entity and independent scale confirmation incomplete
+Нацтранс,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Legal-scale-owner-contact chain not fully confirmed
+Институт Smart,HH vacancy,SIGNAL CONFIRMED,DUPLICATE_OR_UNRESOLVED,Previously surfaced or exact legal identity unresolved
+Первый Бит,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Not qualified as a new private target in this cycle without exact branch legal/LPR route
+Hugency,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Brand and employer identity do not establish exact operating legal entity
+АИ Авто,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Exact legal registration scale and contact route ambiguous
+Ультра-Мед new construction direction,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Signal tied to unnamed holding direction rather than qualified legal entity
+ГородА,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Exact company legal identity scale and owner not verified
+AdvoCall,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Exact active Russian legal entity and owner chain incomplete
+ЮК Слюсарев и партнёры,HH vacancy,SIGNAL CONFIRMED,EXCLUDED,Exact legal-scale-contact chain incomplete
+Self Soft Production,HH search result,SIZE CHECK,EXCLUDED,Insufficient current legal and LPR evidence in this run
+Корнев Александр Сергеевич,HH search result,DISCOVERED,EXCLUDED,Insufficient exact registration and signal evidence
+ALASKA CLIMATE COMPANY,HH search result,DISCOVERED,EXCLUDED,No qualifying S1-S3 evidence confirmed
+Flaconia Pro,prior WIP,LEGAL MATCH,DUPLICATE_OR_UNRESOLVED,Previously surfaced candidate still lacks complete qualification chain
+Савин-Пиар,prior WIP,LEGAL MATCH,DUPLICATE_OR_UNRESOLVED,Previously surfaced candidate still lacks complete qualification chain
+Европодшипник М,prior WIP,LEGAL MATCH,DUPLICATE_OR_UNRESOLVED,Previously surfaced candidate still lacks complete qualification chain
+19LAB,prior WIP,SIGNAL CONFIRMED,DUPLICATE_OR_UNRESOLVED,Previously surfaced candidate still lacks complete qualification chain
+BINAGroup,prior WIP,SIGNAL CONFIRMED,DUPLICATE_OR_UNRESOLVED,Previously surfaced candidate still lacks complete qualification chain
+ИП Алексеев Александр Андреевич,prior WIP,LEGAL MATCH,DUPLICATE_OR_UNRESOLVED,Previously surfaced candidate still lacks complete qualification chain
+HIGH DEALER GROUP,prior WIP,SIGNAL CONFIRMED,DUPLICATE_OR_UNRESOLVED,Name collision and legal ambiguity remain
+ООО Хэппи logistics,prior WIP,SIGNAL CONFIRMED,DUPLICATE_OR_UNRESOLVED,Multiple same-name entities and no canonical match
+YURSUS,prior WIP,LEGAL MATCH,DUPLICATE,Already present as N5K-0013
+Торг-Лайт,prior qualified,QUALIFIED,DUPLICATE,Already present in campaign
+Марроб Рус,prior qualified,QUALIFIED,DUPLICATE,Already present in campaign
+Chacha's Club,prior qualified,QUALIFIED,DUPLICATE,Already present in campaign
