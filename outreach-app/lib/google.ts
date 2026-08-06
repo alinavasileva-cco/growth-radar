@@ -2,11 +2,13 @@ import { google } from "googleapis";
 import { db } from "@/lib/db";
 import { decryptSecret, encryptSecret } from "@/lib/crypto";
 
+const DEFAULT_APP_URL = "https://growth-radar-outreach.vercel.app";
+
 export function googleOAuthClient() {
   const clientId = process.env.GOOGLE_CLIENT_ID;
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
-  const appUrl = process.env.APP_URL;
-  if (!clientId || !clientSecret || !appUrl) throw new Error("Google OAuth is not configured");
+  const appUrl = process.env.APP_URL || DEFAULT_APP_URL;
+  if (!clientId || !clientSecret) throw new Error("Google OAuth is not configured");
   return new google.auth.OAuth2(
     clientId,
     clientSecret,
