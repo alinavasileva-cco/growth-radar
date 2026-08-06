@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 43,
-  "current_contactable_count": 43,
-  "progress_added": 43,
-  "remaining_to_total_target": 4957,
+  "current_canonical_count": 44,
+  "current_contactable_count": 44,
+  "progress_added": 44,
+  "remaining_to_total_target": 4956,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-06T14:14:00+03:00",
+  "updated_at": "2026-08-06T15:24:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260806-072",
+  "last_run_id": "N5K-20260806-074",
   "last_commit_sha": "PENDING_FINAL_HEAD_VERIFICATION",
-  "note": "RUN 072 reviewed 30 raw candidates and added Prometex. Old 70-company base remains unchanged and excluded."
+  "note": "RUN 074 reviewed 30 raw candidates and added MARROB / ООО МАРРОБ РУС. RUN ID collision with existing 073 was repaired in-cycle. Old 70-company base remains unchanged and excluded."
 }
