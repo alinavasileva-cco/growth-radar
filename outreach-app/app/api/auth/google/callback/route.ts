@@ -6,6 +6,8 @@ import { encryptSecret } from "@/lib/crypto";
 import { googleOAuthClient } from "@/lib/google";
 import { createSession } from "@/lib/session";
 
+const DEFAULT_ALLOWED_EMAIL = "alinavasileva.jour@gmail.com";
+
 export async function GET(request: NextRequest) {
   const code = request.nextUrl.searchParams.get("code");
   const state = request.nextUrl.searchParams.get("state");
@@ -23,8 +25,8 @@ export async function GET(request: NextRequest) {
     const oauth2 = google.oauth2({ version: "v2", auth: client });
     const profile = await oauth2.userinfo.get();
     const email = profile.data.email?.toLowerCase();
-    const allowed = process.env.ALLOWED_EMAIL?.toLowerCase();
-    if (!email || !allowed || email !== allowed) {
+    const allowed = (process.env.ALLOWED_EMAIL || DEFAULT_ALLOWED_EMAIL).toLowerCase();
+    if (!email || email !== allowed) {
       return NextResponse.redirect(new URL("/login?error=not_allowed", request.url));
     }
 
