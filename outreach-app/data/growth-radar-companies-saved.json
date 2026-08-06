@@ -1,0 +1,632 @@
+[
+  {
+    "Lead ID": "GRM-001",
+    "Brand": "SAFDECOR",
+    "Legal Name": "ООО «САФДЕКОР»",
+    "INN": "1683002806",
+    "OGRN/OGRNIP": "1221600008035",
+    "Region": "Республика Татарстан",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-002",
+    "Brand": "STACK / e-commerce Ильи Батталова",
+    "Legal Name": "ИП Батталов Илья Маратович",
+    "INN": "380120315900",
+    "OGRN/OGRNIP": "321385000043966",
+    "Region": "Удмуртская Республика",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-003",
+    "Brand": "Авталон",
+    "Legal Name": "ООО «АВТАЛОН»",
+    "INN": "7743380595",
+    "OGRN/OGRNIP": "1227700260985",
+    "Region": "Москва",
+    "Final Quick Status": "НУЖНА ДОПРОВЕРКА"
+  },
+  {
+    "Lead ID": "GRM-004",
+    "Brand": "Альянс-Кабель",
+    "Legal Name": "ООО «АЛЬЯНС-КАБЕЛЬ»",
+    "INN": "7804608066",
+    "OGRN/OGRNIP": "1177847366931",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-005",
+    "Brand": "Арсенал",
+    "Legal Name": "ООО «АРСЕНАЛ»",
+    "INN": "6312195417",
+    "OGRN/OGRNIP": "1196313036872",
+    "Region": "Самарская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-006",
+    "Brand": "Биокард Логистика",
+    "Legal Name": "ООО «БИОКАРД ЛОГИСТИКА»",
+    "INN": "5047219310",
+    "OGRN/OGRNIP": "1185029018085",
+    "Region": "Московская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-007",
+    "Brand": "Брусника",
+    "Legal Name": "ООО «БРУСНИКА. СТРОИТЕЛЬСТВО И ДЕВЕЛОПМЕНТ»",
+    "INN": "6671018077",
+    "OGRN/OGRNIP": "1156658004352",
+    "Region": "Свердловская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-008",
+    "Brand": "Вектор",
+    "Legal Name": "ООО «ВЕКТОР»",
+    "INN": "1655292934",
+    "OGRN/OGRNIP": "1141690048350",
+    "Region": "Республика Татарстан",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-009",
+    "Brand": "Геометрия",
+    "Legal Name": "ООО «ГЕОМЕТРИЯ»",
+    "INN": "7811744832",
+    "OGRN/OGRNIP": "1207800054302",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-010",
+    "Brand": "ГК А101",
+    "Legal Name": "АО «А101 ДЕВЕЛОПМЕНТ»",
+    "INN": "5003053446",
+    "OGRN/OGRNIP": "1055011329984",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-011",
+    "Brand": "ГК ФСК",
+    "Legal Name": "АО «ФСК»",
+    "INN": "7719273064",
+    "OGRN/OGRNIP": "1027739822899",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-012",
+    "Brand": "ГК Эталон",
+    "Legal Name": "ПАО «ГК «ЭТАЛОН»",
+    "INN": "7811466102",
+    "OGRN/OGRNIP": "1107847289591",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-013",
+    "Brand": "Дикси",
+    "Legal Name": "АО «ДИКСИ ЮГ»",
+    "INN": "5036045205",
+    "OGRN/OGRNIP": "1035007202460",
+    "Region": "Московская область",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-014",
+    "Brand": "Евроцемент груп",
+    "Legal Name": "АО «ЕВРОЦЕМЕНТ ГРУП»",
+    "INN": "7721102850",
+    "OGRN/OGRNIP": "1027739001460",
+    "Region": "Москва",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-015",
+    "Brand": "Желдорэкспедиция",
+    "Legal Name": "ООО «ЖЕЛДОРЭКСПЕДИЦИЯ-М»",
+    "INN": "7725507254",
+    "OGRN/OGRNIP": "1047796328511",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-016",
+    "Brand": "Зетта Страхование",
+    "Legal Name": "ООО «ЗЕТТА СТРАХОВАНИЕ»",
+    "INN": "7710280644",
+    "OGRN/OGRNIP": "1027739205240",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-017",
+    "Brand": "Калашников",
+    "Legal Name": "АО «КОНЦЕРН «КАЛАШНИКОВ»",
+    "INN": "1832090230",
+    "OGRN/OGRNIP": "1111832003018",
+    "Region": "Удмуртская Республика",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-018",
+    "Brand": "Камаз",
+    "Legal Name": "ПАО «КАМАЗ»",
+    "INN": "1650032058",
+    "OGRN/OGRNIP": "1021602013971",
+    "Region": "Республика Татарстан",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-019",
+    "Brand": "Киевская площадь",
+    "Legal Name": "АО «КИЕВСКАЯ ПЛОЩАДЬ»",
+    "INN": "7704439130",
+    "OGRN/OGRNIP": "1177746338580",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-020",
+    "Brand": "КИТ Финанс",
+    "Legal Name": "АО «КИТ ФИНАНС»",
+    "INN": "7840383375",
+    "OGRN/OGRNIP": "1089847203424",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-021",
+    "Brand": "Ключавто",
+    "Legal Name": "ООО «СБСВ-КЛЮЧАВТО»",
+    "INN": "2311073058",
+    "OGRN/OGRNIP": "1032306435710",
+    "Region": "Краснодарский край",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-022",
+    "Brand": "Колди",
+    "Legal Name": "ООО «КОЛДИ»",
+    "INN": "7703381525",
+    "OGRN/OGRNIP": "1157746342415",
+    "Region": "Москва",
+    "Final Quick Status": "НУЖНА ДОПРОВЕРКА"
+  },
+  {
+    "Lead ID": "GRM-023",
+    "Brand": "Комус",
+    "Legal Name": "АО «КОМУС»",
+    "INN": "7723013876",
+    "OGRN/OGRNIP": "1027739264147",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-024",
+    "Brand": "Корпорация ТехноНИКОЛЬ",
+    "Legal Name": "ООО «ТЕХНОНИКОЛЬ-СТРОИТЕЛЬНЫЕ СИСТЕМЫ»",
+    "INN": "7705293916",
+    "OGRN/OGRNIP": "1027739335389",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-025",
+    "Brand": "Красное & Белое",
+    "Legal Name": "ООО «АЛЬФА-М»",
+    "INN": "7447036610",
+    "OGRN/OGRNIP": "1027402328549",
+    "Region": "Челябинская область",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-026",
+    "Brand": "Лемана ПРО",
+    "Legal Name": "ООО «ЛЕ МОНЛИД»",
+    "INN": "5029069967",
+    "OGRN/OGRNIP": "1035005516105",
+    "Region": "Московская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-027",
+    "Brand": "Лента",
+    "Legal Name": "ООО «ЛЕНТА»",
+    "INN": "7814148471",
+    "OGRN/OGRNIP": "1037832048605",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-028",
+    "Brand": "ЛСР",
+    "Legal Name": "ПАО «ГРУППА ЛСР»",
+    "INN": "7838360491",
+    "OGRN/OGRNIP": "5067847227300",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-029",
+    "Brand": "Магнит",
+    "Legal Name": "ПАО «МАГНИТ»",
+    "INN": "2309085638",
+    "OGRN/OGRNIP": "1032304945947",
+    "Region": "Краснодарский край",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-030",
+    "Brand": "Магнитогорский металлургический комбинат",
+    "Legal Name": "ПАО «ММК»",
+    "INN": "7414003633",
+    "OGRN/OGRNIP": "1027402166835",
+    "Region": "Челябинская область",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-031",
+    "Brand": "Май",
+    "Legal Name": "ООО «МАЙ»",
+    "INN": "7718096235",
+    "OGRN/OGRNIP": "1027739168863",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-032",
+    "Brand": "Максидом",
+    "Legal Name": "ООО «МАКСИДОМ»",
+    "INN": "7802165245",
+    "OGRN/OGRNIP": "1027801531072",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-033",
+    "Brand": "МегаФон",
+    "Legal Name": "ПАО «МЕГАФОН»",
+    "INN": "7812014560",
+    "OGRN/OGRNIP": "1027809169585",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-034",
+    "Brand": "Меркури",
+    "Legal Name": "ООО «МЕРКУРИ»",
+    "INN": "7703215404",
+    "OGRN/OGRNIP": "1027739157577",
+    "Region": "Москва",
+    "Final Quick Status": "НУЖНА ДОПРОВЕРКА"
+  },
+  {
+    "Lead ID": "GRM-035",
+    "Brand": "Мираторг",
+    "Legal Name": "ООО «БРЯНСКАЯ МЯСНАЯ КОМПАНИЯ»",
+    "INN": "3252007245",
+    "OGRN/OGRNIP": "1063252008024",
+    "Region": "Брянская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-036",
+    "Brand": "Московский кредитный банк",
+    "Legal Name": "ПАО «МОСКОВСКИЙ КРЕДИТНЫЙ БАНК»",
+    "INN": "7734202860",
+    "OGRN/OGRNIP": "1027739555282",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-037",
+    "Brand": "МТС",
+    "Legal Name": "ПАО «МОБИЛЬНЫЕ ТЕЛЕСИСТЕМЫ»",
+    "INN": "7740000076",
+    "OGRN/OGRNIP": "1027700149124",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-038",
+    "Brand": "М.Видео-Эльдорадо",
+    "Legal Name": "ПАО «М.ВИДЕО»",
+    "INN": "7707602010",
+    "OGRN/OGRNIP": "5067746789248",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-039",
+    "Brand": "НЛМК",
+    "Legal Name": "ПАО «НЛМК»",
+    "INN": "4823006703",
+    "OGRN/OGRNIP": "1024800823123",
+    "Region": "Липецкая область",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-040",
+    "Brand": "О'КЕЙ",
+    "Legal Name": "ООО «О'КЕЙ»",
+    "INN": "7826087713",
+    "OGRN/OGRNIP": "1027810304950",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-041",
+    "Brand": "Озон",
+    "Legal Name": "ООО «ИНТЕРНЕТ РЕШЕНИЯ»",
+    "INN": "7704217370",
+    "OGRN/OGRNIP": "1027739244741",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-042",
+    "Brand": "ПИК",
+    "Legal Name": "ПАО «ПИК СЗ»",
+    "INN": "7713011336",
+    "OGRN/OGRNIP": "1027739137084",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-043",
+    "Brand": "Петрович",
+    "Legal Name": "ООО «СТД «ПЕТРОВИЧ»",
+    "INN": "7802137899",
+    "OGRN/OGRNIP": "1027801578781",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-044",
+    "Brand": "Полюс",
+    "Legal Name": "ПАО «ПОЛЮС»",
+    "INN": "7703389295",
+    "OGRN/OGRNIP": "1067761908418",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-045",
+    "Brand": "Ренессанс Страхование",
+    "Legal Name": "ПАО «ГРУППА РЕНЕССАНС СТРАХОВАНИЕ»",
+    "INN": "7725497022",
+    "OGRN/OGRNIP": "1047796935944",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-046",
+    "Brand": "РЖД",
+    "Legal Name": "ОАО «РЖД»",
+    "INN": "7708503727",
+    "OGRN/OGRNIP": "1037739877295",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-047",
+    "Brand": "Росатом",
+    "Legal Name": "ГОСКОРПОРАЦИЯ «РОСАТОМ»",
+    "INN": "7706413348",
+    "OGRN/OGRNIP": "1077799032926",
+    "Region": "Москва",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-048",
+    "Brand": "Ростелеком",
+    "Legal Name": "ПАО «РОСТЕЛЕКОМ»",
+    "INN": "7707049388",
+    "OGRN/OGRNIP": "1027700198767",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-049",
+    "Brand": "Северсталь",
+    "Legal Name": "ПАО «СЕВЕРСТАЛЬ»",
+    "INN": "3528000597",
+    "OGRN/OGRNIP": "1023501236901",
+    "Region": "Вологодская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-050",
+    "Brand": "Сибур",
+    "Legal Name": "ПАО «СИБУР ХОЛДИНГ»",
+    "INN": "7727547261",
+    "OGRN/OGRNIP": "1057747421247",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-051",
+    "Brand": "Сима-ленд",
+    "Legal Name": "ООО «СИМА-ЛЕНД»",
+    "INN": "6674177920",
+    "OGRN/OGRNIP": "1069674028712",
+    "Region": "Свердловская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-052",
+    "Brand": "Ситилинк",
+    "Legal Name": "ООО «СИТИЛИНК»",
+    "INN": "7718979307",
+    "OGRN/OGRNIP": "1147746496255",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-053",
+    "Brand": "Совкомбанк",
+    "Legal Name": "ПАО «СОВКОМБАНК»",
+    "INN": "4401116480",
+    "OGRN/OGRNIP": "1144400000425",
+    "Region": "Костромская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-054",
+    "Brand": "Спортмастер",
+    "Legal Name": "ООО «СПОРТМАСТЕР»",
+    "INN": "7728551528",
+    "OGRN/OGRNIP": "1057747320278",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-055",
+    "Brand": "Т-Банк",
+    "Legal Name": "АО «ТБАНК»",
+    "INN": "7710140679",
+    "OGRN/OGRNIP": "1027739642281",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-056",
+    "Brand": "Теремок",
+    "Legal Name": "ООО «ТЕРЕМОК-РУССКИЕ БЛИНЫ»",
+    "INN": "7710300061",
+    "OGRN/OGRNIP": "1027739277260",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-057",
+    "Brand": "Транснефть",
+    "Legal Name": "ПАО «ТРАНСНЕФТЬ»",
+    "INN": "7706061801",
+    "OGRN/OGRNIP": "1027700049486",
+    "Region": "Москва",
+    "Final Quick Status": "RESERVE"
+  },
+  {
+    "Lead ID": "GRM-058",
+    "Brand": "Уралсиб",
+    "Legal Name": "ПАО «БАНК УРАЛСИБ»",
+    "INN": "0274062111",
+    "OGRN/OGRNIP": "1020280000190",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-059",
+    "Brand": "Фаберлик",
+    "Legal Name": "АО «ФАБЕРЛИК»",
+    "INN": "7725219136",
+    "OGRN/OGRNIP": "1037739132412",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-060",
+    "Brand": "ФосАгро",
+    "Legal Name": "ПАО «ФОСАГРО»",
+    "INN": "7736216869",
+    "OGRN/OGRNIP": "1027700190578",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-061",
+    "Brand": "Х5 Group",
+    "Legal Name": "ПАО «КОРПОРАТИВНЫЙ ЦЕНТР ИКС 5»",
+    "INN": "7728632689",
+    "OGRN/OGRNIP": "1077760829557",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-062",
+    "Brand": "Циан",
+    "Legal Name": "ООО «АЙРИЭЛТОР»",
+    "INN": "7706230900",
+    "OGRN/OGRNIP": "1027739217083",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-063",
+    "Brand": "Черкизово",
+    "Legal Name": "ПАО «ГРУППА ЧЕРКИЗОВО»",
+    "INN": "7718560636",
+    "OGRN/OGRNIP": "1057748318473",
+    "Region": "Москва",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-064",
+    "Brand": "Яндекс",
+    "Legal Name": "МКПАО «ЯНДЕКС»",
+    "INN": "3900019864",
+    "OGRN/OGRNIP": "1233900014699",
+    "Region": "Калининградская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-065",
+    "Brand": "Ярче!",
+    "Legal Name": "ООО «КАМЕЛОТ-А»",
+    "INN": "4205076382",
+    "OGRN/OGRNIP": "1044205060202",
+    "Region": "Кемеровская область",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  },
+  {
+    "Lead ID": "GRM-066",
+    "Brand": "Газпром нефть",
+    "Legal Name": "ПАО «ГАЗПРОМ НЕФТЬ»",
+    "INN": "5504036333",
+    "OGRN/OGRNIP": "1025501701686",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "НУЖНА ДОПРОВЕРКА"
+  },
+  {
+    "Lead ID": "GRM-067",
+    "Brand": "ДОМ.РФ",
+    "Legal Name": "АО «ДОМ.РФ»",
+    "INN": "7729355614",
+    "OGRN/OGRNIP": "1027700262270",
+    "Region": "Москва",
+    "Final Quick Status": "НУЖНА ДОПРОВЕРКА"
+  },
+  {
+    "Lead ID": "GRM-068",
+    "Brand": "Росбанк",
+    "Legal Name": "ПАО РОСБАНК",
+    "INN": "7730060164",
+    "OGRN/OGRNIP": "1027739460737",
+    "Region": "Москва",
+    "Final Quick Status": "НУЖНА ДОПРОВЕРКА"
+  },
+  {
+    "Lead ID": "GRM-069",
+    "Brand": "Сбер",
+    "Legal Name": "ПАО СБЕРБАНК",
+    "INN": "7707083893",
+    "OGRN/OGRNIP": "1027700132195",
+    "Region": "Москва",
+    "Final Quick Status": "НУЖНА ДОПРОВЕРКА"
+  },
+  {
+    "Lead ID": "GRM-070",
+    "Brand": "ВТБ",
+    "Legal Name": "БАНК ВТБ (ПАО)",
+    "INN": "7702070139",
+    "OGRN/OGRNIP": "1027739609391",
+    "Region": "Санкт-Петербург",
+    "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ"
+  }
+]
