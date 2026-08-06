@@ -4,6 +4,9 @@ import { db } from "@/lib/db";
 
 type RadarRow = Record<string, string>;
 
+const DEFAULT_GROWTH_RADAR_CSV_URL =
+  "https://raw.githubusercontent.com/alinavasileva-cco/growth-radar/main/data/campaigns/new_5000/contactable_master.csv";
+
 const terminalStatuses = new Set<CompanyStatus>([
   CompanyStatus.SENT,
   CompanyStatus.REPLIED,
@@ -23,8 +26,7 @@ function parseDate(value?: string): Date | null {
 }
 
 export async function syncGrowthRadar(userId: string) {
-  const url = process.env.GROWTH_RADAR_CSV_URL;
-  if (!url) throw new Error("GROWTH_RADAR_CSV_URL не настроен");
+  const url = process.env.GROWTH_RADAR_CSV_URL || DEFAULT_GROWTH_RADAR_CSV_URL;
   const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) throw new Error(`Не удалось прочитать Growth Radar: ${response.status}`);
   const csv = await response.text();
