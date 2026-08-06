@@ -1,9 +1,11 @@
+import { EmailLogin } from "./email-login";
+
 type Props = { searchParams: Promise<{ error?: string }> };
 
 const errors: Record<string, string> = {
-  oauth_state: "Сессия подключения устарела. Нажмите кнопку ещё раз.",
-  not_allowed: "Этот Google-аккаунт не разрешён для входа.",
-  oauth_failed: "Google не завершил подключение. Проверьте настройки OAuth."
+  oauth_state: "Сессия подключения устарела.",
+  not_allowed: "Этот аккаунт не разрешён для входа.",
+  oauth_failed: "Google не завершил подключение."
 };
 
 export default async function LoginPage({ searchParams }: Props) {
@@ -14,9 +16,9 @@ export default async function LoginPage({ searchParams }: Props) {
         <span className="eyebrow">GROWTH RADAR</span>
         <h1>Персональные письма без массовой рассылки</h1>
         <p>Компании синхронизируются из Growth Radar. Каждое письмо сначала проверяется и одобряется вручную.</p>
-        {params.error ? <div className="alert error">{errors[params.error] ?? "Ошибка подключения"}</div> : null}
-        <a className="button primary large" href="/api/auth/google">Войти и подключить Gmail</a>
-        <small>Пароль от почты приложение не получает и не хранит.</small>
+        {params.error ? <div className="alert error">{errors[params.error] ?? "Ошибка входа"}</div> : null}
+        <EmailLogin />
+        <small>Вход выполняется по одноразовому коду. Обычный пароль Gmail приложение не получает.</small>
       </section>
     </main>
   );
