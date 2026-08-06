@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Started At,Completed At,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Added Companies,Integrity Status,Orphan Contacts,Orphan Evidence,Repair Result,Blocker
+N5K-20260806-066,new_5000,2026-08-06T07:58:14+03:00,2026-08-06T08:14:00+03:00,30,15,9,8,5,4,1,12,17,Европодшипник М / ООО «ЕВРОПОДШИПНИК М»,PASS,0,0,REPAIRED_PENDING_SHA_MARKERS_FROM_RUN_065,
