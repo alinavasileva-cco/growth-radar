@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-06T15:24:00+03:00",
+  "updated_at": "2026-08-06T16:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260806-074",
+  "last_run_id": "N5K-20260806-075",
   "last_commit_sha": "PENDING_FINAL_HEAD_VERIFICATION",
-  "note": "RUN 074 reviewed 30 raw candidates and added MARROB / ООО МАРРОБ РУС. RUN ID collision with existing 073 was repaired in-cycle. Old 70-company base remains unchanged and excluded."
+  "note": "RUN 075 reviewed 30 raw candidates and added no company because no candidate completed the full verification chain without ambiguity. Old 70-company base remains unchanged and excluded."
 }
