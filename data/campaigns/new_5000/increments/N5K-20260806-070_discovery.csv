@@ -1,0 +1,31 @@
+Run ID,Candidate,Source,Stage,Decision,Reason,Campaign ID
+N5K-20260806-070,Chacha's Club / ИП Кожомин Кирилл Павлович,https://hh.ru/vacancy/129530808,LEGAL MATCH,RECHECK,"Strong S1; exact current legal status, INN/OGRNIP and independent scale evidence not closed",new_5000
+N5K-20260806-070,Нацтранс,https://hh.ru/vacancy/129971007,SIGNAL CONFIRMED,RECHECK,"New petroleum-sales direction confirmed; owner/LPR, exact legal identifiers and scale not fully closed",new_5000
+N5K-20260806-070,KSTALT / Мирра Архитектс,https://hh.ru/vacancy/129237585,LEGAL MATCH,RECHECK,"Brand-to-legal-entity link and S1 found; INN/OGRN, owner and contact route need independent confirmation",new_5000
+N5K-20260806-070,АИ Авто / Иванов Артем,https://hh.ru/vacancy/129763647,DISCOVERED,RECHECK,"S1 found; exact entity and identifiers unresolved",new_5000
+N5K-20260806-070,ГК Ангел,https://hh.ru/vacancy/126744453,SIGNAL CONFIRMED,RECHECK,"B2B sales build-from-zero signal; exact entity, scale and LPR chain unresolved",new_5000
+N5K-20260806-070,Hugency / ИП Валеева Луиза Альфиковна,https://hh.ru/vacancy/130040961,SIGNAL CONFIRMED,RECHECK,"International sales build signal; legal identifiers, Russian operating scale and practical route need closure",new_5000
+N5K-20260806-070,Агротехнологии,https://hh.ru/vacancy/129141015,LEGAL MATCH,RECHECK,"Signal found; ambiguous employer-to-legal-entity match remains",new_5000
+N5K-20260806-070,Первый Бит,https://hh.ru/vacancy/127500241,SIZE CHECK,DUPLICATE_OR_GROUP,"Large group / regional unit ambiguity; not admitted without exact private entity attribution",new_5000
+N5K-20260806-070,Ультра-Дент / строительное направление,https://tyumen.hh.ru/vacancy/129661833,SIGNAL CONFIRMED,RECHECK,"New construction direction confirmed; exact operating entity, owner and scale attribution unresolved",new_5000
+N5K-20260806-070,Деметра,https://hh.ru/vacancy/129437991,SIGNAL CONFIRMED,RECHECK,"S1 confirmed; exact legal entity, INN/OGRN and owner route not closed",new_5000
+N5K-20260806-070,Премиальное паркетное производство / HR-Stalker,https://hh.ru/vacancy/129397393,SIZE CHECK,RECHECK,"Scale signal exists but employer is anonymized; legal entity cannot be safely identified",new_5000
+N5K-20260806-070,HPBsolution,https://hh.ru/vacancy/128988564,SIGNAL CONFIRMED,RECHECK,"Complex B2B sales signal; exact legal identifiers, owner and verified scale unresolved",new_5000
+N5K-20260806-070,Экотория,https://hh.ru/vacancy/130101009,SIGNAL CONFIRMED,RECHECK,"B2B scale-up signal; exact entity and owner/LPR route not fully closed",new_5000
+N5K-20260806-070,Favourite Partners client,https://hh.ru/vacancy/129871573,DISCOVERED,EXCLUDED,"Recruiter listing does not disclose exact company",new_5000
+N5K-20260806-070,Синергия,https://hh.ru/vacancy/129291154,SIZE CHECK,EXCLUDED,"Not a suitable new private-company card for this cycle without exact target operating entity",new_5000
+N5K-20260806-070,Марроб Рус,https://hh.ru/vacancy/130209818,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,Лесресурс,https://hh.ru/vacancy/130260470,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,Институт Smart,https://hh.ru/vacancy/129320604,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,Торг-Лайт / ACELED,https://hh.ru/vacancy/129668251,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,Руслитекс,https://hh.ru/vacancy/129865789,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,РУСПАДЕЛ / First Padel Club,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,GOOD!ES,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,Слюсарев и Партнёры,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,СК Развитие,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,Оценка.рф,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,Авто Сувенир,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,КЛЮЧ / KLCH Agency,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,YURSUS,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000",new_5000
+N5K-20260806-070,Jungle Story,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000 shards",new_5000
+N5K-20260806-070,Agrida,https://hh.ru/,QUALIFIED CHECK,DUPLICATE,"Already present in campaign new_5000 shards",new_5000
