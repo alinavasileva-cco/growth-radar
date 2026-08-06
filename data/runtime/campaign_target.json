@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 39,
-  "current_contactable_count": 39,
-  "progress_added": 39,
-  "remaining_to_total_target": 4961,
+  "current_canonical_count": 40,
+  "current_contactable_count": 40,
+  "progress_added": 40,
+  "remaining_to_total_target": 4960,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-06T07:18:00+03:00",
+  "updated_at": "2026-08-06T08:16:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260806-065",
+  "last_run_id": "N5K-20260806-066",
   "last_commit_sha": "PENDING_FINAL_HEAD_VERIFICATION",
-  "note": "RUN 065 reviewed 30 raw candidates and added Горем-НН. Old 70-company base remains unchanged and excluded."
+  "note": "RUN 066 reviewed 30 raw candidates and added Evropodshipnik M. Old 70-company base remains unchanged and excluded."
 }
