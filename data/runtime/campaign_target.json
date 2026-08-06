@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-06T22:18:00+03:00",
+  "updated_at": "2026-08-06T23:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260806-081",
+  "last_run_id": "N5K-20260806-082",
   "last_commit_sha": "TO_BE_VERIFIED_AFTER_FINAL_WRITE",
-  "note": "RUN 081 reviewed 30 raw candidates and added no companies. REPAIR removed duplicate YURSUS records after full-master deduplication. Old 70-company base remains unchanged and excluded."
+  "note": "RUN 082 reviewed 30 raw candidates and added no companies. Old 70-company base remains unchanged and excluded."
 }
