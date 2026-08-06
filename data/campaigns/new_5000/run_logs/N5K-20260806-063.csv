@@ -1,0 +1,6 @@
+Run ID,Campaign ID,Stage,Status,Details,Recorded At
+N5K-20260806-063,new_5000,PRECHECK,PASS,"Runtime and campaign target read; baseline=0; prior canonical=36",2026-08-06T04:59:00+03:00
+N5K-20260806-063,new_5000,DISCOVERY,COMPLETED,"30 raw candidates reviewed across vacancies and public company sources",2026-08-06T05:03:00+03:00
+N5K-20260806-063,new_5000,QUALIFICATION,COMPLETED,"Flaconia Pro / ИП Филигаров Максим Игоревич qualified as N5K-0037",2026-08-06T05:06:00+03:00
+N5K-20260806-063,new_5000,INTEGRATION,COMPLETED,"Master contacts evidence and contactable shards written",2026-08-06T05:08:00+03:00
+N5K-20260806-063,new_5000,INTEGRITY,PASS,"Logical canonical count 37; contactable count 37; orphan contacts=0; orphan evidence=0",2026-08-06T05:08:00+03:00
