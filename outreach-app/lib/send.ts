@@ -2,6 +2,7 @@ import { CompanyStatus, DraftStatus } from "@prisma/client";
 import { db } from "@/lib/db";
 import { gmailForUser } from "@/lib/google";
 import { buildMimeMessage } from "@/lib/mime";
+import { sendSmtpRaw, smtpConfigured } from "@/lib/smtp";
 import { hasUnfilledVariables } from "@/lib/templates";
 
 async function checkLimits(userId: string, recipient: string, ignoreDuplicate = false) {
@@ -34,9 +35,15 @@ async function sendRaw(userId: string, to: string, subject: string, body: string
     db.emailAccount.findUnique({ where: { userId } }),
     db.attachment.findFirst({ where: { userId, isDefault: true }, orderBy: { createdAt: "desc" } })
   ]);
-  if (!account) throw new Error("Gmail не подключён");
-  const gmail = await gmailForUser(userId);
+  if (!account) throw new Error("Почта не подключена");
+
   const raw = buildMimeMessage({ from: account.providerEmail, to, subject, body, attachment });
+  if (smtpConfigured()) {
+    const sent = await sendSmtpRaw({ to, rawBase64Url: raw });
+    return { gmailDraftId: null, gmailMessageId: sent.messageId, gmailThreadId: null };
+  }
+
+  const gmail = await gmailForUser(userId);
   const draft = await gmail.users.drafts.create({ userId: "me", requestBody: { message: { raw } } });
   if (!draft.data.id) throw new Error("Gmail не создал черновик");
   const sent = await gmail.users.drafts.send({ userId: "me", requestBody: { id: draft.data.id } });
