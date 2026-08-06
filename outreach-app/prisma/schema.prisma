@@ -109,7 +109,7 @@ model Company {
   drafts             EmailDraft[]
 
   @@unique([userId, leadId])
-  @@unique([userId, email])
+  @@index([userId, email])
   @@index([userId, status])
   @@index([userId, name])
   @@index([userId, inn])
@@ -218,6 +218,7 @@ model ApplicationSettings {
   minimumIntervalMin Int      @default(10)
   workdayStartHour   Int      @default(9)
   workdayEndHour     Int      @default(18)
+  workdays           String   @default("1,2,3,4,5")
   timezone           String   @default("Europe/Moscow")
   queuePaused        Boolean  @default(true)
   createdAt          DateTime @default(now())
