@@ -1,0 +1,7 @@
+Timestamp,Run ID,Campaign ID,Stage,Status,Details
+2026-08-06T06:58:17+03:00,N5K-20260806-065,new_5000,STARTED,PASS,Read working config and runtime files
+2026-08-06T07:01:00+03:00,N5K-20260806-065,new_5000,INTEGRITY_PRECHECK,PASS,Baseline 0; canonical 38; contactable 38; prior orphan counts 0
+2026-08-06T07:08:00+03:00,N5K-20260806-065,new_5000,DISCOVERY,PASS,Reviewed 30 raw candidates from vacancies public registries company sites and directories
+2026-08-06T07:12:00+03:00,N5K-20260806-065,new_5000,QUALIFICATION,PASS,Qualified N5K-0039 after legal owner scale signal and contact-route checks
+2026-08-06T07:16:00+03:00,N5K-20260806-065,new_5000,INTEGRATION,PASS,Written master contacts evidence and contactable shards
+2026-08-06T07:18:00+03:00,N5K-20260806-065,new_5000,INTEGRITY_VERIFIED,PASS,Logical canonical count 39; contactable count 39; orphan contacts 0; orphan evidence 0
