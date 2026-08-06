@@ -65,6 +65,7 @@ export async function sendApprovedDraft(draftId: string, userId: string) {
     }),
     db.emailDraft.update({ where: { id: draftId }, data: { status: DraftStatus.SENT, gmailDraftId: result.gmailDraftId } }),
     db.company.update({ where: { id: draft.companyId }, data: { status: CompanyStatus.SENT } }),
+    db.scheduledEmail.updateMany({ where: { draftId, status: "PENDING" }, data: { status: "CANCELLED" } }),
     db.activityLog.create({ data: { userId, action: "EMAIL_SENT", entity: "EmailDraft", entityId: draftId } })
   ]);
   return result;
