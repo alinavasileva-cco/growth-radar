@@ -1,0 +1,16 @@
+{
+  "run_id": "N5K-20260806-064",
+  "campaign_id": "new_5000",
+  "discovered": 30,
+  "qualified": 1,
+  "duplicates": 12,
+  "excluded": 17,
+  "current_canonical_count": 38,
+  "current_contactable_count": 38,
+  "remaining_to_total_target": 4962,
+  "integrity_status": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "repair_result": "COMPLETED_PENDING_SHA_MARKERS",
+  "qualified_leads": ["N5K-0038"]
+}
