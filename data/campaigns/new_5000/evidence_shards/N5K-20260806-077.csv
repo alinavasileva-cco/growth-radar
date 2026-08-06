@@ -1,0 +1,7 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0046,N5K-E-0046-01,legal,ООО «ТИМОША» действует; ИНН 5027182999; ОГРН 1125027000537,https://companies.rbc.ru/id/1125027000537-ooo-timosha/,РБК Компании / ЕГРЮЛ,2026-08-06,HIGH,N5K-20260806-077,new_5000
+N5K-0046,N5K-E-0046-02,owner_lpr,Куртбединов Тимур Сейранович указан учредителем 100%,https://companies.rbc.ru/id/1125027000537-ooo-timosha/,РБК Компании / ЕГРЮЛ,2026-08-06,HIGH,N5K-20260806-077,new_5000
+N5K-0046,N5K-E-0046-03,brand_domain,Официальный сайт публикует реквизиты ООО «Тимоша» ИНН 5027182999 и ОГРН 1125027000537,https://timosha.ru/company/requisites/,Официальный сайт,2026-08-06,HIGH,N5K-20260806-077,new_5000
+N5K-0046,N5K-E-0046-04,scale,Выручка 5.092 млрд ₽ и прибыль 162.374 млн ₽ за 2024 год; 116 сотрудников; сеть филиалов и федеральная дистрибуция,https://companies.rbc.ru/id/1125027000537-ooo-timosha/; https://novosibirsk.hh.ru/employer/98216,РБК Компании и HeadHunter,2026-08-06,HIGH,N5K-20260806-077,new_5000
+N5K-0046,N5K-E-0046-05,signal,Вакансия подтверждает запуск нового направления рыбной снековой продукции и развитие продаж с нуля,https://hh.ru/vacancy/129588675,HeadHunter,2026-08-06,HIGH,N5K-20260806-077,new_5000
+N5K-0046,N5K-E-0046-06,contact,Официальный сайт публикует телефон +7 (495) 744-11-62 и email halva@timosha.ru; доступен маршрут работодателя HeadHunter,https://timosha.ru/company/; https://hh.ru/vacancy/129588675,Официальный сайт и HeadHunter,2026-08-06,HIGH,N5K-20260806-077,new_5000
