@@ -1,0 +1,19 @@
+{
+  "run_id": "N5K-20260806-065",
+  "campaign_id": "new_5000",
+  "discovered": 30,
+  "size_check_passed": 14,
+  "legal_match_passed": 8,
+  "signal_confirmed": 9,
+  "lpr_identified": 5,
+  "contact_route_found": 4,
+  "qualified": 1,
+  "duplicates": 12,
+  "excluded": 17,
+  "current_canonical_count": 39,
+  "current_contactable_count": 39,
+  "remaining_to_total_target": 4961,
+  "integrity_status": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0
+}
