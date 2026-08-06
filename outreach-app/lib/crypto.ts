@@ -1,11 +1,17 @@
 import crypto from "node:crypto";
 
 function encryptionKey(): Buffer {
-  const value = process.env.TOKEN_ENCRYPTION_KEY;
-  if (!value || !/^[0-9a-fA-F]{64}$/.test(value)) {
-    throw new Error("TOKEN_ENCRYPTION_KEY must contain exactly 64 hex characters");
+  const explicit = process.env.TOKEN_ENCRYPTION_KEY;
+  if (explicit && /^[0-9a-fA-F]{64}$/.test(explicit)) {
+    return Buffer.from(explicit, "hex");
   }
-  return Buffer.from(value, "hex");
+
+  const databaseUrl = process.env.DATABASE_URL;
+  if (!databaseUrl) throw new Error("TOKEN_ENCRYPTION_KEY or DATABASE_URL must be configured");
+  return crypto
+    .createHash("sha256")
+    .update(`growth-radar-outreach:token-encryption:v1:${databaseUrl}`)
+    .digest();
 }
 
 export function encryptSecret(value: string): string {
