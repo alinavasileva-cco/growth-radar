@@ -13,6 +13,6 @@
   "updated_at": "2026-08-07T05:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_run_id": "N5K-20260807-088",
-  "last_commit_sha": "PENDING_FINAL_HEAD_VERIFICATION",
+  "last_commit_sha": "9260462e1cd46d69411390f935766eb3abfe3917",
   "note": "RUN 088 reviewed 30 raw candidates and added PanelTEK after full qualification. Old 70-company base remains unchanged and excluded."
 }
