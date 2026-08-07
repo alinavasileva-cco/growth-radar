@@ -19,5 +19,5 @@
   "blocker": null,
   "report_path": "reports/run_2026-08-07_090.md",
   "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260807-090.csv",
-  "last_verified_commit_sha": "PENDING_FINAL_HEAD_VERIFICATION"
+  "last_verified_commit_sha": "8f1f12ce2fdc6fb1d8f612a39283f2d039bc74ad"
 }
