@@ -1,15 +1,15 @@
 {
-  "run_id": "N5K-20260807-094",
+  "run_id": "N5K-20260807-095",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-07T11:03:48+03:00",
-  "updated_at": "2026-08-07T11:03:48+03:00",
+  "started_at": "2026-08-07T12:05:22+03:00",
+  "updated_at": "2026-08-07T12:05:22+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": "NOT_REQUIRED",
-  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":58,"current_contactable_count":58,"progress_added":58,"remaining":4942},
-  "funnel": {"discovered":30,"size_check_passed":12,"legal_match_passed":7,"signal_confirmed":5,"lpr_identified":3,"contact_route_found":1,"qualified":1,"duplicates":0,"excluded":29},
-  "qualified_companies": ["AI-UP / ООО НЕЙРОЛИД"],
+  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":59,"current_contactable_count":59,"progress_added":59,"remaining":4941},
+  "funnel": {"discovered":30,"size_check_passed":13,"legal_match_passed":8,"signal_confirmed":5,"lpr_identified":3,"contact_route_found":1,"qualified":1,"duplicates":0,"excluded":29},
+  "qualified_companies": ["Авто Сувенир / ООО Авто Сувенир"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -17,7 +17,7 @@
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
   "blocker": null,
-  "report_path": "reports/run_2026-08-07_094.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260807-094.csv",
-  "last_verified_data_commit_sha": "bc5ac05fab8dc2c0a6e477ba7e08780ac029bf9d"
+  "report_path": "reports/run_2026-08-07_095.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260807-095.csv",
+  "last_verified_data_commit_sha": "c66b7524956bf3a5fb7c3afc18add45e59601f1a"
 }
