@@ -1,15 +1,15 @@
 {
-  "run_id": "N5K-20260808-107",
+  "run_id": "N5K-20260808-108",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-08T00:00:25+03:00",
-  "updated_at": "2026-08-08T00:00:25+03:00",
+  "started_at": "2026-08-08T01:02:20+03:00",
+  "updated_at": "2026-08-08T01:02:20+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": "NOT_REQUIRED",
-  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":72,"current_contactable_count":72,"progress_added":72,"remaining":4928},
+  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":73,"current_contactable_count":73,"progress_added":73,"remaining":4927},
   "funnel": {"discovered":30,"size_check_passed":10,"legal_match_passed":5,"signal_confirmed":2,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":0,"excluded":29},
-  "qualified_companies": ["VICTORY group / ООО ВИКТОРИ"],
+  "qualified_companies": ["Мотус Москва / ООО МОТУС МОСКВА"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -17,7 +17,7 @@
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
   "blocker": null,
-  "report_path": "reports/run_2026-08-08_107.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260808-107.csv",
-  "last_verified_data_commit_sha": "ae2bb64b1077452279b462a582e1ea0be02ec86c"
+  "report_path": "reports/run_2026-08-08_108.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260808-108.csv",
+  "last_verified_data_commit_sha": "6829ea9393c8ac3f3f238a4154b01b26655c02d4"
 }
