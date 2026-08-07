@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
 **Версия:** 07.08.2026  
-**Последний подтверждённый запуск:** `N5K-20260807-086`  
+**Последний подтверждённый запуск:** `N5K-20260807-087`  
 **Статус:** `READY` — новый цикл `new_5000` прошёл проверку целостности  
 **Текущая цель:** 5000 уникальных компаний с baseline=0  
 **Автоматический outreach:** запрещён
@@ -26,7 +26,7 @@
 - общий campaign run log: `data/campaigns/new_5000/run_log.csv`;
 - RUN-логи: `data/campaigns/new_5000/run_logs/`;
 - runtime: `data/runtime/current_run_status.json` и `data/runtime/campaign_target.json`;
-- последний отчёт: `reports/run_2026-08-07_086.md`.
+- последний отчёт: `reports/run_2026-08-07_087.md`.
 
 ## Последний RUN
 
@@ -39,4 +39,5 @@
 - integrity: **PASS**;
 - orphan contacts: **0**;
 - orphan evidence: **0**;
+- repair: исправлены оставшиеся SHA-placeholder предыдущего RUN;
 - blocker: ни один новый недублирующийся кандидат не прошёл без неоднозначности полную цепочку legal → scale → LPR → signal → contact.
