@@ -1,15 +1,15 @@
 {
-  "run_id": "N5K-20260808-114",
+  "run_id": "N5K-20260808-115",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-08T06:59:48+03:00",
-  "updated_at": "2026-08-08T06:59:48+03:00",
+  "started_at": "2026-08-08T08:01:46+03:00",
+  "updated_at": "2026-08-08T08:01:46+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": "NOT_REQUIRED",
-  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":81,"current_contactable_count":81,"progress_added":81,"remaining":4919},
-  "funnel": {"discovered":30,"size_check_passed":8,"legal_match_passed":5,"signal_confirmed":3,"lpr_identified":2,"contact_route_found":1,"qualified":1,"duplicates":0,"excluded":29},
-  "qualified_companies": ["NL Group / ООО ЭНЭЛ ГРУП"],
+  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":83,"current_contactable_count":83,"progress_added":83,"remaining":4917},
+  "funnel": {"discovered":30,"size_check_passed":9,"legal_match_passed":6,"signal_confirmed":4,"lpr_identified":3,"contact_route_found":2,"qualified":2,"duplicates":0,"excluded":28},
+  "qualified_companies": ["DIGITALI / ООО ДИДЖИТАЛ АЙ", "Торг-Лайт / ACELED / ООО ТОРГ-ЛАЙТ"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -17,7 +17,7 @@
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
   "blocker": null,
-  "report_path": "reports/run_2026-08-08_114.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260808-114.csv",
-  "last_verified_data_commit_sha": "9bbf17a71d589412b584433befd46fe5b508c7e6"
+  "report_path": "reports/run_2026-08-08_115.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260808-115.csv",
+  "last_verified_data_commit_sha": "69b194d696a05d234214c85ba608cdc571e6a489"
 }
