@@ -1,0 +1,2 @@
+Run ID,Started At,Completed At,Campaign ID,Discovered,Qualified,Duplicates,Excluded,Current Canonical,Current Contactable,Integrity,Orphan Contacts,Orphan Evidence,Report
+N5K-20260808-123,2026-08-08T16:59:03+03:00,2026-08-08T17:05:00+03:00,new_5000,30,0,7,23,92,92,PASS,0,0,reports/run_2026-08-08_123.md
