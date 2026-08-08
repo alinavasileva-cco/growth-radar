@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 102,
-  "current_contactable_count": 102,
-  "progress_added": 102,
-  "remaining_to_total_target": 4898,
+  "current_canonical_count": 103,
+  "current_contactable_count": 103,
+  "progress_added": 103,
+  "remaining_to_total_target": 4897,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-08T23:05:00+03:00",
+  "updated_at": "2026-08-09T00:05:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260808-129",
-  "note": "RUN 129 added 1 qualified unique company; old 70-company base remains unchanged and excluded. Criteria were not relaxed."
+  "last_run_id": "N5K-20260809-130",
+  "note": "RUN 130 added 1 qualified unique company; old 70-company base remains unchanged and excluded. Criteria were not relaxed."
 }
