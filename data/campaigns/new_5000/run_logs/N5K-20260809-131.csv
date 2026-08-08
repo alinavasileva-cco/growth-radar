@@ -1,0 +1,2 @@
+Run ID,Started At,Completed At,Campaign ID,Discovered,Qualified,Duplicates,Excluded,Current Canonical,Current Contactable,Integrity,Orphan Contacts,Orphan Evidence,Active WIP,Blocker
+N5K-20260809-131,2026-08-09T01:03:24+03:00,2026-08-09T01:10:00+03:00,new_5000,0,0,0,0,103,103,PASS,0,0,8,"TRANSIENT_EXTERNAL_DISCOVERY_UNAVAILABLE: web search returned HTTP 503 and direct HH API DNS resolution failed; no candidate counts were fabricated"
