@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 103,
-  "current_contactable_count": 103,
-  "progress_added": 103,
-  "remaining_to_total_target": 4897,
+  "current_canonical_count": 104,
+  "current_contactable_count": 104,
+  "progress_added": 104,
+  "remaining_to_total_target": 4896,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-09T01:10:00+03:00",
+  "updated_at": "2026-08-09T02:08:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260809-131",
-  "note": "RUN 131 added 0 companies because external discovery was transiently unavailable; counts were not fabricated. Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260809-132",
+  "note": "RUN 132 added N5K-0104 Нацтранс. Old 70-company base remains unchanged and excluded."
 }
