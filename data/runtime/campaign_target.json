@@ -10,8 +10,8 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-08T15:58:52+03:00",
+  "updated_at": "2026-08-08T17:05:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260808-122",
-  "note": "RUN 122 completed successfully; old 70-company base remains unchanged and excluded. Final main HEAD is verified separately after all writes."
+  "last_run_id": "N5K-20260808-123",
+  "note": "RUN 123 completed with zero new qualified companies; old 70-company base remains unchanged and excluded. Criteria were not relaxed."
 }
