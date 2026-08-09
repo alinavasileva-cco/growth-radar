@@ -1,15 +1,15 @@
 {
-  "run_id": "N5K-20260809-138",
+  "run_id": "N5K-20260809-139",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-09T08:01:57+03:00",
-  "updated_at": "2026-08-09T08:01:57+03:00",
+  "started_at": "2026-08-09T08:59:25+03:00",
+  "updated_at": "2026-08-09T08:59:25+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": "NOT_REQUIRED",
-  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":117,"current_contactable_count":117,"progress_added":117,"remaining":4883},
-  "funnel": {"discovered":30,"size_check_passed":13,"legal_match_passed":7,"signal_confirmed":4,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":12,"excluded":17},
-  "qualified_companies": ["N5K-0117 ГК Ангел / АО ГРУППА КОМПАНИЙ АНГЕЛ"],
+  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":118,"current_contactable_count":118,"progress_added":118,"remaining":4882},
+  "funnel": {"discovered":30,"size_check_passed":14,"legal_match_passed":8,"signal_confirmed":5,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":13,"excluded":16},
+  "qualified_companies": ["N5K-0118 19LAB / ООО СУРИН"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -17,6 +17,6 @@
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
   "blocker": null,
-  "report_path": "reports/run_2026-08-09_138.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260809-138.csv"
+  "report_path": "reports/run_2026-08-09_139.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260809-139.csv"
 }
