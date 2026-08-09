@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 113,
-  "current_contactable_count": 113,
-  "progress_added": 113,
-  "remaining_to_total_target": 4887,
+  "current_canonical_count": 114,
+  "current_contactable_count": 114,
+  "progress_added": 114,
+  "remaining_to_total_target": 4886,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-09T04:59:15+03:00",
+  "updated_at": "2026-08-09T06:02:53+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260809-135",
-  "note": "RUN 135 added N5K-0112 Logos LTD and N5K-0113 Chacha’s Club. Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260809-136",
+  "note": "RUN 136 added N5K-0114 Сто Кодов. Old 70-company base remains unchanged and excluded."
 }
