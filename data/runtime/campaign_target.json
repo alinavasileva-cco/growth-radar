@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 119,
-  "current_contactable_count": 119,
-  "progress_added": 119,
-  "remaining_to_total_target": 4881,
+  "current_canonical_count": 120,
+  "current_contactable_count": 120,
+  "progress_added": 120,
+  "remaining_to_total_target": 4880,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-09T10:00:06+03:00",
+  "updated_at": "2026-08-09T11:01:29+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260809-140",
-  "note": "RUN 140 added N5K-0119 Alpine Floor / ООО КОМПЛЕКТСТРОЙ. Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260809-141",
+  "note": "RUN 141 added N5K-0120 МЕГАТОНН / ООО МЕГАТОНН. Old 70-company base remains unchanged and excluded."
 }
