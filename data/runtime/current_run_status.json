@@ -1,15 +1,15 @@
 {
-  "run_id": "N5K-20260809-132",
+  "run_id": "N5K-20260809-133",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-09T01:59:34+03:00",
-  "updated_at": "2026-08-09T02:08:00+03:00",
+  "started_at": "2026-08-09T02:59:38+03:00",
+  "updated_at": "2026-08-09T03:12:00+03:00",
   "stage": "INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": "NOT_REQUIRED",
-  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":104,"current_contactable_count":104,"progress_added":104,"remaining":4896},
-  "funnel": {"discovered":30,"size_check_passed":9,"legal_match_passed":6,"signal_confirmed":4,"lpr_identified":2,"contact_route_found":1,"qualified":1,"duplicates":8,"excluded":21},
-  "qualified_companies": ["N5K-0104 Нацтранс / ООО НАЦТРАНС"],
+  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":107,"current_contactable_count":107,"progress_added":107,"remaining":4893},
+  "funnel": {"discovered":30,"size_check_passed":12,"legal_match_passed":8,"signal_confirmed":5,"lpr_identified":4,"contact_route_found":3,"qualified":3,"duplicates":8,"excluded":19},
+  "qualified_companies": ["N5K-0105 Клик Инвест / ООО КЛИК ИНВЕСТ","N5K-0106 MARROB / ООО МАРРОБ РУС","N5K-0107 ANGFA / Поинкэр / ООО ПОИНКЭР"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -17,6 +17,6 @@
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
   "blocker": null,
-  "report_path": "reports/run_2026-08-09_132.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260809-132.csv"
+  "report_path": "reports/run_2026-08-09_133.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260809-133.csv"
 }
