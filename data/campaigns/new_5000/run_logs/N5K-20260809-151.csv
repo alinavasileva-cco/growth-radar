@@ -1,0 +1,2 @@
+Run ID,Started At,Completed At,Campaign ID,Discovered,Qualified,Duplicates,Excluded,Current Canonical,Current Contactable,Integrity,Orphan Contacts,Orphan Evidence,Active WIP,Blocker
+N5K-20260809-151,2026-08-09T20:58:44+03:00,2026-08-09T21:03:00+03:00,new_5000,30,1,9,20,137,137,PASS,0,0,8,
