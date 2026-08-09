@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 123,
-  "current_contactable_count": 123,
-  "progress_added": 123,
-  "remaining_to_total_target": 4877,
+  "current_canonical_count": 128,
+  "current_contactable_count": 128,
+  "progress_added": 128,
+  "remaining_to_total_target": 4872,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-09T13:03:51+03:00",
+  "updated_at": "2026-08-09T14:03:15+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260809-143",
-  "note": "RUN 143 added N5K-0122 Авто Сувенир / ООО АВТО СУВЕНИР and N5K-0123 НАЦТРАНС / ООО НАЦТРАНС. Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260809-144",
+  "note": "RUN 144 added N5K-0124..N5K-0128. Old 70-company base remains unchanged and excluded."
 }
