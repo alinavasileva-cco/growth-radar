@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 117,
-  "current_contactable_count": 117,
-  "progress_added": 117,
-  "remaining_to_total_target": 4883,
+  "current_canonical_count": 118,
+  "current_contactable_count": 118,
+  "progress_added": 118,
+  "remaining_to_total_target": 4882,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-09T08:01:57+03:00",
+  "updated_at": "2026-08-09T08:59:25+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260809-138",
-  "note": "RUN 138 added N5K-0117 ГК Ангел. Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260809-139",
+  "note": "RUN 139 added N5K-0118 19LAB / ООО СУРИН. Old 70-company base remains unchanged and excluded."
 }
