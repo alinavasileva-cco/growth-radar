@@ -1,0 +1,15 @@
+{
+  "run_id": "N5K-20260809-143",
+  "campaign_id": "new_5000",
+  "discovered": 30,
+  "qualified": 2,
+  "duplicates": 12,
+  "excluded": 16,
+  "current_canonical": 123,
+  "current_contactable": 123,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "active_wip": 8,
+  "blocker": null
+}
