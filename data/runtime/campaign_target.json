@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 158,
-  "current_contactable_count": 158,
-  "progress_added": 158,
-  "remaining_to_total_target": 4842,
+  "current_canonical_count": 161,
+  "current_contactable_count": 161,
+  "progress_added": 161,
+  "remaining_to_total_target": 4839,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-10T15:04:59+03:00",
+  "updated_at": "2026-08-10T16:05:57+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260810-169",
-  "note": "RUN 169 added N5K-0158. Old 70-company base remains unchanged and excluded. Campaign-level run_log append remains pending; all qualified data shards and per-RUN artifacts are committed."
+  "last_run_id": "N5K-20260810-170",
+  "note": "RUN 170 added N5K-0159, N5K-0160 and N5K-0161. Old 70-company base remains unchanged and excluded. RUN 169 campaign run_log gap repaired before discovery."
 }
