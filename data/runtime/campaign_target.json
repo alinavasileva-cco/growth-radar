@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 156,
-  "current_contactable_count": 156,
-  "progress_added": 156,
-  "remaining_to_total_target": 4844,
+  "current_canonical_count": 157,
+  "current_contactable_count": 157,
+  "progress_added": 157,
+  "remaining_to_total_target": 4843,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-10T13:04:15+03:00",
+  "updated_at": "2026-08-10T14:03:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260810-167",
-  "note": "RUN 167 added N5K-0156. Old 70-company base remains unchanged and excluded. Main campaign run_log append is pending safe full-file update."
+  "last_run_id": "N5K-20260810-168",
+  "note": "RUN 168 added N5K-0157. Old 70-company base remains unchanged and excluded. RUN 167 main run_log blocker repaired before discovery."
 }
