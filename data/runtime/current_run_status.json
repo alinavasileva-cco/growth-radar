@@ -1,15 +1,15 @@
 {
-  "run_id": "N5K-20260810-171",
+  "run_id": "N5K-20260810-172",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-10T17:05:02+03:00",
-  "updated_at": "2026-08-10T17:05:02+03:00",
+  "started_at": "2026-08-10T18:01:46+03:00",
+  "updated_at": "2026-08-10T18:01:46+03:00",
   "stage": "COMPLETED_INTEGRITY_VERIFIED",
   "integrity_precheck": "PASS",
   "repair_result": null,
-  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":162,"current_contactable_count":162,"progress_added":162,"remaining":4838},
-  "funnel": {"discovered":30,"qualified":1,"duplicates":7,"excluded":22},
-  "qualified_companies": ["N5K-0162 ГК «Ангел» / АО ГРУППА КОМПАНИЙ «АНГЕЛ»"],
+  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":165,"current_contactable_count":165,"progress_added":165,"remaining":4835},
+  "funnel": {"discovered":30,"qualified":3,"duplicates":6,"excluded":21},
+  "qualified_companies": ["N5K-0163 Клуб Бизнес Авиация / ООО «КЛУБ «БИЗНЕС АВИАЦИЯ»","N5K-0164 Инновации / АО «ИННОВАЦИИ»","N5K-0165 Европодшипник М / ООО «ЕВРОПОДШИПНИК М»"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -17,6 +17,6 @@
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
   "blocker": null,
-  "report_path": "reports/run_2026-08-10_171.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260810-171.csv"
+  "report_path": "reports/run_2026-08-10_172.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260810-172.csv"
 }
