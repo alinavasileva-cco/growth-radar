@@ -1,0 +1,5 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0175,N5K-C-0175P,Т2,7104076984,Дзядевич Роман Игоревич,собственник и генеральный директор,+7 800-600-74-64,phone,корпоративный маршрут,официальный сайт,https://t2-tula.ru/,true,HIGH,2026-08-11,Официальный телефон компании,N5K-20260811-180,new_5000
+N5K-0175,N5K-C-0175E,Т2,7104076984,Дзядевич Роман Игоревич,собственник и генеральный директор,info@t2.energy,email,корпоративный маршрут,официальный сайт,https://t2-tula.ru/,true,HIGH,2026-08-11,Официальная почта компании,N5K-20260811-180,new_5000
+N5K-0175,N5K-C-0175H,Т2,7104076984,Дзядевич Роман Игоревич,собственник и генеральный директор,https://tula.hh.ru/vacancy/129948833,hh,коммерческий маршрут,HeadHunter,https://tula.hh.ru/vacancy/129948833,true,HIGH,2026-08-11,Вакансия на построение отдела продаж с нуля,N5K-20260811-180,new_5000
+N5K-0175,N5K-C-0175F,Т2,7104076984,,,https://t2-tula.ru/,webform,корпоративный маршрут,официальный сайт,https://t2-tula.ru/,false,HIGH,2026-08-11,Официальный сайт и маршрут связи,N5K-20260811-180,new_5000
