@@ -1,10 +1,10 @@
 {
   "run_id": "N5K-20260811-181",
   "campaign_id": "new_5000",
-  "status": "PENDING_MAIN_RUN_LOG_APPEND",
+  "status": "COMPLETED",
   "started_at": "2026-08-11T01:59:47+03:00",
   "updated_at": "2026-08-11T01:59:47+03:00",
-  "stage": "PENDING_MAIN_RUN_LOG_APPEND",
+  "stage": "COMPLETED",
   "integrity_precheck": "PASS",
   "repair_result": null,
   "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":177,"current_contactable_count":177,"progress_added":177,"remaining":4823},
@@ -16,7 +16,7 @@
   "active_wip": 8,
   "storage_mode": "logical_canonical_union_base_plus_verified_run_shards",
   "outreach_sent": 0,
-  "blocker": "Campaign-level data/campaigns/new_5000/run_log.csv still needs RUN 181 append before COMPLETED status.",
+  "blocker": null,
   "report_path": "reports/run_2026-08-11_181.md",
   "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260811-181.csv"
 }
