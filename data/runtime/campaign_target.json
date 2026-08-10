@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 171,
-  "current_contactable_count": 171,
-  "progress_added": 171,
-  "remaining_to_total_target": 4829,
+  "current_canonical_count": 172,
+  "current_contactable_count": 172,
+  "progress_added": 172,
+  "remaining_to_total_target": 4828,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-10T21:59:06+03:00",
+  "updated_at": "2026-08-10T22:06:51+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260810-176",
-  "note": "RUN 176 added N5K-0171 СТО КОДОВ / ООО «СТО КОДОВ». Old 70-company base remains unchanged and excluded. Campaign-level run_log append remains pending for RUN 175 and RUN 176."
+  "last_run_id": "N5K-20260810-177",
+  "note": "RUN 177 added N5K-0172 БОГАТЫЙ КУРЬЕР / ИП Орайло Наталия Петровна. Old 70-company base remains unchanged and excluded. Campaign-level run_log append remains pending for RUN 175, RUN 176 and RUN 177."
 }
