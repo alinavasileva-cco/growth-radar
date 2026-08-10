@@ -1,8 +1,8 @@
 # Growth Radar — актуальная рабочая конфигурация
 
 **Версия:** 10.08.2026  
-**Последний запуск:** `N5K-20260810-177`  
-**Статус:** `PENDING_MAIN_RUN_LOG_APPEND` — данные интегрированы, integrity PASS; общий campaign run_log требует безопасного append RUN 175, RUN 176 и RUN 177  
+**Последний запуск:** `N5K-20260810-178`  
+**Статус:** `PENDING_MAIN_RUN_LOG_APPEND` — данные интегрированы, integrity PASS; общий campaign run_log требует безопасного append RUN 175–178  
 **Текущая цель:** 5000 уникальных компаний с baseline=0  
 **Автоматический outreach:** запрещён
 
@@ -11,9 +11,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - baseline_count: **0**;
-- текущий канонический итог: **172**;
-- текущий contactable итог: **172**;
-- осталось до цели: **4828**;
+- текущий канонический итог: **173**;
+- текущий contactable итог: **173**;
+- осталось до цели: **4827**;
 - старые 70 компаний сохранены без изменений и не входят в прогресс нового цикла.
 
 ## Канонические файлы нового цикла
@@ -26,18 +26,18 @@
 - общий campaign run log: `data/campaigns/new_5000/run_log.csv`;
 - RUN-логи: `data/campaigns/new_5000/run_logs/`;
 - runtime: `data/runtime/current_run_status.json` и `data/runtime/campaign_target.json`;
-- последний отчёт: `reports/run_2026-08-10_177.md`.
+- последний отчёт: `reports/run_2026-08-10_178.md`.
 
 ## Последний RUN
 
 - найдено сырых кандидатов: **30**;
 - квалифицировано: **1**;
-- добавленная компания: `N5K-0172 БОГАТЫЙ КУРЬЕР / ИП Орайло Наталия Петровна`;
+- добавленная компания: `N5K-0173 Онлайн Институт Smart / ООО «ОНЛАЙН ИНСТИТУТ СМАРТ»`;
 - подтверждённые дубли: **8**;
 - исключено или не прошло полную квалификацию: **21**;
 - ACTIVE WIP: **8**;
 - integrity: **PASS**;
 - orphan contacts: **0**;
 - orphan evidence: **0**;
-- blocker: campaign-level `data/campaigns/new_5000/run_log.csv` заканчивается на RUN 174; безопасный full-file append требуется для RUN 175, RUN 176 и RUN 177. Частичная перезапись не выполнялась;
+- blocker: campaign-level `data/campaigns/new_5000/run_log.csv` заканчивается на RUN 174; безопасный full-file append требуется для RUN 175–178. Blob был прочитан и проверен; частичная перезапись не выполнялась;
 - критерии не снижались.
