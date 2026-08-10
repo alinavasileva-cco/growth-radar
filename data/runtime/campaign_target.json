@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 168,
-  "current_contactable_count": 168,
-  "progress_added": 168,
-  "remaining_to_total_target": 4832,
+  "current_canonical_count": 170,
+  "current_contactable_count": 170,
+  "progress_added": 170,
+  "remaining_to_total_target": 4830,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-10T19:58:12+03:00",
+  "updated_at": "2026-08-10T20:58:21+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260810-174",
-  "note": "RUN 174 added N5K-0167 19LAB / ООО СУРИН and N5K-0168 ANGFA Russia / ООО ПОИНКЭР. Old 70-company base remains unchanged and excluded. RUN 173 campaign run_log gap repaired."
+  "last_run_id": "N5K-20260810-175",
+  "note": "RUN 175 added N5K-0169 Hugency / ИП Валеева Луиза Альфиковна and N5K-0170 Kepo Ortho / ИП Подобед Иннокентий Владиславович. Old 70-company base remains unchanged and excluded. Campaign-level run_log append remains pending safe replacement."
 }
