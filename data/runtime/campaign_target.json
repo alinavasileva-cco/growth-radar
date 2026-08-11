@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 200,
-  "current_contactable_count": 200,
-  "progress_added": 200,
-  "remaining_to_total_target": 4800,
+  "current_canonical_count": 201,
+  "current_contactable_count": 201,
+  "progress_added": 201,
+  "remaining_to_total_target": 4799,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-11T19:59:27+03:00",
+  "updated_at": "2026-08-11T21:01:56+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260811-200",
-  "note": "RUN 200 added N5K-0200 World Machinery / ООО ВОРЛД РУСЛАНД. Old 70-company base remains unchanged and excluded. Aggregate run_log update pending safe full-file replacement for RUN 198-200."
+  "last_run_id": "N5K-20260811-201",
+  "note": "RUN 201 added N5K-0201 Институт психологии Smart / ООО ОНЛАЙН ИНСТИТУТ СМАРТ. Old 70-company base remains unchanged and excluded. Aggregate run_log update pending safe full-file replacement for RUN 198-201."
 }
