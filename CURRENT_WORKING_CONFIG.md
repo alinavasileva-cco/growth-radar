@@ -2,7 +2,7 @@
 
 **Версия:** 11.08.2026  
 **Последний запуск:** `N5K-20260811-197`  
-**Статус:** `CANONICAL_INTEGRATED_RUN_LOG_PENDING` — канонические данные интегрированы, integrity PASS; общий campaign run_log.csv требует безопасного полного append/replace  
+**Статус:** `COMPLETED` — канонические данные интегрированы, aggregate run_log.csv восстановлен через RUN 197, integrity PASS  
 **Текущая цель:** 5000 уникальных компаний с baseline=0  
 **Автоматический outreach:** запрещён
 
@@ -39,5 +39,6 @@
 - integrity: **PASS**;
 - orphan contacts: **0**;
 - orphan evidence: **0**;
-- blocker: общий `data/campaigns/new_5000/run_log.csv` ещё не дополнен RUN 193–197; blob SHA получен, полный blob и хвост проверены диапазонами, discovery и каноническая интеграция не останавливались;
+- aggregate `run_log.csv`: восстановлен и содержит RUN 193–197;
+- blocker: **нет**;
 - критерии не снижались.
