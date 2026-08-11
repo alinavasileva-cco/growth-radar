@@ -2,7 +2,7 @@
 
 **Версия:** 11.08.2026  
 **Последний запуск:** `N5K-20260811-192`  
-**Статус:** `PENDING_MAIN_RUN_LOG_APPEND` — канонические данные интегрированы, integrity PASS; требуется безопасно добавить RUN 189, RUN 190, RUN 191 и RUN 192 в общий campaign run_log.csv  
+**Статус:** `COMPLETED` — канонические данные интегрированы, общий campaign run_log.csv восстановлен и дополнен через RUN 192, integrity PASS  
 **Текущая цель:** 5000 уникальных компаний с baseline=0  
 **Автоматический outreach:** запрещён
 
@@ -39,5 +39,6 @@
 - integrity: **PASS**;
 - orphan contacts: **0**;
 - orphan evidence: **0**;
-- blocker: `PENDING_MAIN_RUN_LOG_APPEND_189_190_191_192`;
+- blocker: **нет**;
+- repair: общий `run_log.csv` безопасно восстановлен через RUN 192;
 - критерии не снижались.
