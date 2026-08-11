@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 190,
-  "current_contactable_count": 190,
-  "progress_added": 190,
-  "remaining_to_total_target": 4810,
+  "current_canonical_count": 191,
+  "current_contactable_count": 191,
+  "progress_added": 191,
+  "remaining_to_total_target": 4809,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-11T13:00:18+03:00",
+  "updated_at": "2026-08-11T14:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260811-192",
-  "note": "RUN 192 added N5K-0190 Экотория / ИП Сипягина Анастасия Анатольевна. Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260811-193",
+  "note": "RUN 193 added N5K-0191 Нацтранс / ООО «НАЦТРАНС». Old 70-company base remains unchanged and excluded. Main campaign run_log.csv pending safe full append after blob-read."
 }
