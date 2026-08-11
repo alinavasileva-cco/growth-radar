@@ -1,0 +1,6 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0203,N5K-E-0203-L,legal,ООО «СК РАЗВИТИЕ»; ИНН 9731128394; ОГРН 1247700022613; действующая российская частная компания; Москва,https://companies.rbc.ru/id/1247700022613-ooo-ooo-sk-razvitie/,РБК Компании,2026-08-11,HIGH,N5K-20260811-203,new_5000
+N5K-0203,N5K-E-0203-Z,scale,Выручка за 2024 год 11.948 млн ₽; HeadHunter описывает группу как объединяющую собственное производство антикоррозийных продуктов и R&D,https://hh.ru/employer/12537459,HeadHunter / РБК Компании,2026-08-11,MEDIUM,N5K-20260811-203,new_5000
+N5K-0203,N5K-E-0203-O,lpr,Единственный учредитель 100% и генеральный директор — Львова Наталья Тимофеевна,https://companies.rbc.ru/id/1247700022613-ooo-ooo-sk-razvitie/,РБК Компании,2026-08-11,HIGH,N5K-20260811-203,new_5000
+N5K-0203,N5K-E-0203-S,signal,Вакансия РОП B2B требует с нуля построить и возглавить отдел продаж для запуска нового инновационного антикоррозийного продукта на рынок,https://hh.ru/vacancy/129891268,HeadHunter,2026-08-11,HIGH,N5K-20260811-203,new_5000
+N5K-0203,N5K-E-0203-C,contact,Практический маршрут связи — прямая вакансия работодателя на HeadHunter,https://hh.ru/vacancy/129891268,HeadHunter,2026-08-11,HIGH,N5K-20260811-203,new_5000
