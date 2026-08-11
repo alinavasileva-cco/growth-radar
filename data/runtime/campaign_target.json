@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 192,
-  "current_contactable_count": 192,
-  "progress_added": 192,
-  "remaining_to_total_target": 4808,
+  "current_canonical_count": 194,
+  "current_contactable_count": 194,
+  "progress_added": 194,
+  "remaining_to_total_target": 4806,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-11T15:05:21+03:00",
+  "updated_at": "2026-08-11T16:05:09+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260811-194",
-  "note": "RUN 194 added N5K-0192 Торг-Лайт / ООО «ТОРГ-ЛАЙТ». Old 70-company base remains unchanged and excluded. Main campaign run_log.csv pending safe full append for RUN 193-194 after blob-read."
+  "last_run_id": "N5K-20260811-195",
+  "note": "RUN 195 added N5K-0193 YURSUS and N5K-0194 Руслитекс. Old 70-company base remains unchanged and excluded. Main campaign run_log.csv pending safe full append for RUN 193-195 after blob-read."
 }
