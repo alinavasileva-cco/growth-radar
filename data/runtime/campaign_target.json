@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 178,
-  "current_contactable_count": 178,
-  "progress_added": 178,
-  "remaining_to_total_target": 4822,
+  "current_canonical_count": 180,
+  "current_contactable_count": 180,
+  "progress_added": 180,
+  "remaining_to_total_target": 4820,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-11T02:59:42+03:00",
+  "updated_at": "2026-08-11T03:59:02+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260811-182",
-  "note": "RUN 182 added N5K-0178 Реман-Сервис / ООО «РЕМАН-СЕРВИС». Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260811-183",
+  "note": "RUN 183 added N5K-0179 Chacha’s Club and N5K-0180 Торг-Лайт. Old 70-company base remains unchanged and excluded."
 }
