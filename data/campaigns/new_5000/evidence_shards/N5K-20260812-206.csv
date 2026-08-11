@@ -1,0 +1,6 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0206,N5K-E-0206-L,legal,"ООО «ПРОМЕТЕКС»; ИНН 9725010958; ОГРН 1197746327954; действующая российская компания; Москва",https://prometex.pro/contacts/,Официальный сайт,2026-08-12,HIGH,N5K-20260812-206,new_5000
+N5K-0206,N5K-E-0206-Z,scale,"Выручка за 2025 год 594 972 000 ₽; более 2000 тонн металлопроката на складе",https://companies.rbc.ru/id/1197746327954-obschestvo-s-ogranichennoj-otvetstvennostyu-prometeks/,РБК Компании,2026-08-12,HIGH,N5K-20260812-206,new_5000
+N5K-0206,N5K-E-0206-O,lpr,"Жестков Артем Александрович — генеральный директор и единственный учредитель ООО «ПРОМЕТЕКС»",https://reputation.ru/ogrn/1197746327954,Reputation.ru,2026-08-12,MEDIUM,N5K-20260812-206,new_5000
+N5K-0206,N5K-E-0206-S,signal,"Вакансия РОП: компания создает с чистого листа мощный удаленный B2B-отдел продаж; требуется построить процессы, регламенты, мотивацию и команду",https://hh.ru/vacancy/130008552,HeadHunter,2026-08-12,HIGH,N5K-20260812-206,new_5000
+N5K-0206,N5K-E-0206-C,contact,"Практические маршруты: +7 (495) 323-53-30; zakaz@prometex.pro; контактная форма; прямая вакансия HeadHunter",https://prometex.pro/contacts/,Официальный сайт,2026-08-12,HIGH,N5K-20260812-206,new_5000
