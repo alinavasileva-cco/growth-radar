@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 188,
-  "current_contactable_count": 188,
-  "progress_added": 188,
-  "remaining_to_total_target": 4812,
+  "current_canonical_count": 189,
+  "current_contactable_count": 189,
+  "progress_added": 189,
+  "remaining_to_total_target": 4811,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-11T11:00:01+03:00",
+  "updated_at": "2026-08-11T12:02:13+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260811-190",
-  "note": "RUN 190 added N5K-0188 Европодшипник М / ООО «ЕВРОПОДШИПНИК М». Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260811-191",
+  "note": "RUN 191 added N5K-0189 Лесресурс / ООО «ЛЕСРЕСУРС». Old 70-company base remains unchanged and excluded."
 }
