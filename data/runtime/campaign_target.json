@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 177,
-  "current_contactable_count": 177,
-  "progress_added": 177,
-  "remaining_to_total_target": 4823,
+  "current_canonical_count": 178,
+  "current_contactable_count": 178,
+  "progress_added": 178,
+  "remaining_to_total_target": 4822,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-11T01:59:47+03:00",
+  "updated_at": "2026-08-11T02:59:42+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260811-181",
-  "note": "RUN 181 added N5K-0176 НАЦТРАНС / ООО «НАЦТРАНС» and N5K-0177 MARROB / ООО «МАРРОБ РУС». Old 70-company base remains unchanged and excluded."
+  "last_run_id": "N5K-20260811-182",
+  "note": "RUN 182 added N5K-0178 Реман-Сервис / ООО «РЕМАН-СЕРВИС». Old 70-company base remains unchanged and excluded."
 }
