@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 203,
-  "current_contactable_count": 203,
-  "progress_added": 203,
-  "remaining_to_total_target": 4797,
+  "current_canonical_count": 204,
+  "current_contactable_count": 204,
+  "progress_added": 204,
+  "remaining_to_total_target": 4796,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-11T22:58:56+03:00",
+  "updated_at": "2026-08-11T23:58:10+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260811-203",
-  "note": "RUN 203 added N5K-0203 СК Развитие / Долговечные технологии / ООО СК РАЗВИТИЕ. Old 70-company base remains unchanged and excluded. Aggregate run_log update pending safe full-file replacement for RUN 198-203."
+  "last_run_id": "N5K-20260811-204",
+  "note": "RUN 204 added N5K-0204 Flaconia.Pro / ИП Филигаров Максим Игоревич. Old 70-company base remains unchanged and excluded. Aggregate run_log update pending safe full-file replacement for RUN 198-204."
 }
