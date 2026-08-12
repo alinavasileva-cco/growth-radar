@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 210,
-  "current_contactable_count": 210,
-  "progress_added": 210,
-  "remaining_to_total_target": 4790,
+  "current_canonical_count": 211,
+  "current_contactable_count": 211,
+  "progress_added": 211,
+  "remaining_to_total_target": 4789,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-12T06:01:55+03:00",
+  "updated_at": "2026-08-12T06:59:47+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260812-210",
-  "note": "RUN 210 added N5K-0210 ГОРЕМ-НН / ООО «ГОЛОВНОЙ РЕМОНТНО-ВОССТАНОВИТЕЛЬНЫЙ ПОЕЗД-НН». Old 70-company base remains unchanged and excluded. Aggregate run_log full blob is readable and RUN 198-209 were reverified; full replacement still pending."
+  "last_run_id": "N5K-20260812-211",
+  "note": "RUN 211 added N5K-0211 Лесресурс / ООО «ЛЕСРЕСУРС». Old 70-company base remains unchanged and excluded. Aggregate run_log full replacement remains pending for RUN 198-211."
 }
