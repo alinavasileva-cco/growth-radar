@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 223,
-  "current_contactable_count": 223,
-  "progress_added": 223,
-  "remaining_to_total_target": 4777,
+  "current_canonical_count": 224,
+  "current_contactable_count": 224,
+  "progress_added": 224,
+  "remaining_to_total_target": 4776,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-12T15:00:55+03:00",
+  "updated_at": "2026-08-12T16:05:56+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260812-219",
+  "last_run_id": "N5K-20260812-220",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 219 added N5K-0223 Авто Сувенир / ООО «АВТО СУВЕНИР». Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 219."
+  "note": "RUN 220 added N5K-0224 СОФТ АЛЬЯНС / ООО «СОФТ АЛЬЯНС». Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 220."
 }
