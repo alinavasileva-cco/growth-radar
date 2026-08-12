@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-12T21:02:22+03:00",
+  "updated_at": "2026-08-12T22:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260812-225",
+  "last_run_id": "N5K-20260812-226",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 225 reviewed 30 candidates and added 1 qualified unique company. Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 225."
+  "note": "RUN 226 reviewed 30 candidates and added 0 qualified companies because no new candidate closed the full legal+scale+LPR+signal+contact chain without ambiguity. Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 226."
 }
