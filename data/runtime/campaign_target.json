@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 206,
-  "current_contactable_count": 206,
-  "progress_added": 206,
-  "remaining_to_total_target": 4794,
+  "current_canonical_count": 207,
+  "current_contactable_count": 207,
+  "progress_added": 207,
+  "remaining_to_total_target": 4793,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-12T02:01:25+03:00",
+  "updated_at": "2026-08-12T03:05:11+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260812-206",
-  "note": "RUN 206 added N5K-0206 Прометекс / ООО «ПРОМЕТЕКС». Old 70-company base remains unchanged and excluded. Aggregate run_log update pending safe full-file replacement for RUN 198-206."
+  "last_run_id": "N5K-20260812-207",
+  "note": "RUN 207 added N5K-0207 Оценка.рф / Ocenka.tech / ООО «ТЕХНОЛОГИИ ОЦЕНКИ». Old 70-company base remains unchanged and excluded. Aggregate run_log update pending safe full-file replacement for RUN 198-207."
 }
