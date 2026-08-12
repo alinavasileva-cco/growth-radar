@@ -1,8 +1,8 @@
 # Growth Radar — актуальная рабочая конфигурация
 
 **Версия:** 12.08.2026  
-**Последний запуск:** `N5K-20260812-211`  
-**Статус:** `CANONICAL_INTEGRATED_RUN_LOG_PENDING` — канонические данные интегрированы, integrity PASS, aggregate run_log.csv ожидает полной безопасной замены  
+**Последний запуск:** `N5K-20260812-212`  
+**Статус:** `COMPLETED` — канонические RUN-shards интегрированы, integrity PASS, run-log gap 198–212 восстановлен проверенным tail-файлом  
 **Текущая цель:** 5000 уникальных компаний с baseline=0  
 **Автоматический outreach:** запрещён
 
@@ -11,9 +11,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - baseline_count: **0**;
-- текущий канонический итог: **211**;
-- текущий contactable итог: **211**;
-- осталось до цели: **4789**;
+- текущий канонический итог: **214**;
+- текущий contactable итог: **214**;
+- осталось до цели: **4786**;
 - старые 70 компаний сохранены без изменений и не входят в прогресс нового цикла.
 
 ## Канонические файлы нового цикла
@@ -21,23 +21,29 @@
 - базовый master компаний: `data/campaigns/new_5000/leads_master.csv`;
 - базовый contactable master: `data/campaigns/new_5000/contactable_master.csv`;
 - контакты и доказательства: базовые CSV плюс проверенные RUN-shards;
-- логический канонический набор: объединение базовых master-файлов и всех проверенных RUN-shards кампании `new_5000`;
+- логический канонический набор компаний: объединение базовых master-файлов и всех проверенных RUN-shards кампании `new_5000`;
 - increments: `data/campaigns/new_5000/increments/`;
-- общий campaign run log: `data/campaigns/new_5000/run_log.csv`;
+- legacy campaign run log through RUN 197: `data/campaigns/new_5000/run_log.csv`;
+- verified aggregate tail RUN 198 onward: `data/campaigns/new_5000/run_log_tail_198_onward.csv`;
+- канонический run-log: логическое объединение legacy `run_log.csv` + verified tail без пересечения RUN ID;
 - RUN-логи: `data/campaigns/new_5000/run_logs/`;
 - runtime: `data/runtime/current_run_status.json` и `data/runtime/campaign_target.json`;
-- последний отчёт: `reports/run_2026-08-12_211.md`.
+- последний отчёт: `reports/run_2026-08-12_212.md`.
 
 ## Последний RUN
 
 - найдено сырых кандидатов: **30**;
-- квалифицировано: **1**;
-- добавлена: `N5K-0211 Лесресурс / ЛПК Лесресурс / ООО «ЛЕСРЕСУРС»`;
-- подтверждённые дубли: **7**;
+- квалифицировано: **3**;
+- добавлены: `N5K-0212 КД-ойл`, `N5K-0213 ПанельТЭК`, `N5K-0214 Завод НГК`;
+- подтверждённые дубли: **5**;
 - исключено или не прошло полную квалификацию: **22**;
 - ACTIVE WIP: **8**;
 - integrity: **PASS**;
 - orphan contacts: **0**;
 - orphan evidence: **0**;
-- aggregate `run_log.csv`: blob SHA получен и blob прочитан; файл по-прежнему заканчивается RUN 197, безопасная полная замена с RUN 198–211 остаётся pending;
+- aggregate repair: RUN 198–211 повторно сверены по отдельным PASS RUN-логам; tail-файл сформирован и дополнен RUN 212;
 - критерии не снижались.
+
+## Правило следующих RUN
+
+До безопасной консолидации физического монолитного `run_log.csv` новые строки campaign run-log добавлять в `run_log_tail_198_onward.csv` и отдельный `run_logs/<RUN>.csv`. Канонический run-log считать объединением legacy-файла (до RUN 197 включительно) и verified tail (с RUN 198). Не считать это blocker discovery или integrity, если оба диапазона присутствуют, не пересекаются и отдельные RUN-логи PASS.
