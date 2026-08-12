@@ -3,15 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 211,
-  "current_contactable_count": 211,
-  "progress_added": 211,
-  "remaining_to_total_target": 4789,
+  "current_canonical_count": 214,
+  "current_contactable_count": 214,
+  "progress_added": 214,
+  "remaining_to_total_target": 4786,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-12T06:59:47+03:00",
+  "updated_at": "2026-08-12T08:02:09+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260812-211",
-  "note": "RUN 211 added N5K-0211 Лесресурс / ООО «ЛЕСРЕСУРС». Old 70-company base remains unchanged and excluded. Aggregate run_log full replacement remains pending for RUN 198-211."
+  "last_run_id": "N5K-20260812-212",
+  "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
+  "note": "RUN 212 added N5K-0212 КД-ойл, N5K-0213 ПанельТЭК, N5K-0214 Завод НГК. Old 70-company base remains unchanged and excluded. Missing aggregate tail RUN 198-212 repaired as verified run_log_tail_198_onward.csv."
 }
