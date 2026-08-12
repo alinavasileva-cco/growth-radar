@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 233,
-  "current_contactable_count": 233,
-  "progress_added": 233,
-  "remaining_to_total_target": 4767,
+  "current_canonical_count": 234,
+  "current_contactable_count": 234,
+  "progress_added": 234,
+  "remaining_to_total_target": 4766,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-13T01:03:33+03:00",
+  "updated_at": "2026-08-13T02:01:26+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260813-229",
+  "last_run_id": "N5K-20260813-230",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 229 reviewed 30 candidates and added 0 qualified companies. Eight were confirmed duplicates and 22 failed one or more mandatory qualification gates. Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 229."
+  "note": "RUN 230 reviewed 30 candidates and added 1 qualified company: MORE METIZOV / ООО МОРЕ-МЕТИЗОВ. Eleven were confirmed duplicates and 18 failed one or more mandatory qualification gates. Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 230."
 }
