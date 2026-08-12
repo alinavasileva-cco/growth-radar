@@ -3,15 +3,15 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 208,
-  "current_contactable_count": 208,
-  "progress_added": 208,
-  "remaining_to_total_target": 4792,
+  "current_canonical_count": 209,
+  "current_contactable_count": 209,
+  "progress_added": 209,
+  "remaining_to_total_target": 4791,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-12T04:03:33+03:00",
+  "updated_at": "2026-08-12T05:00:20+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260812-208",
-  "note": "RUN 208 added N5K-0208 НАЦТРАНС / ООО «НАЦТРАНС». Old 70-company base remains unchanged and excluded. Aggregate run_log update pending safe full-file replacement for RUN 198-208."
+  "last_run_id": "N5K-20260812-209",
+  "note": "RUN 209 added N5K-0209 19LAB / 19LAB ON SKIN / ООО «СУРИН». Old 70-company base remains unchanged and excluded. Aggregate run_log update pending safe full-file replacement for RUN 198-209."
 }
