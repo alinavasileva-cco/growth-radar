@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-12T16:05:56+03:00",
+  "updated_at": "2026-08-12T16:58:42+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260812-220",
+  "last_run_id": "N5K-20260812-221",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 220 added N5K-0224 СОФТ АЛЬЯНС / ООО «СОФТ АЛЬЯНС». Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 220."
+  "note": "RUN 221 reviewed 30 candidates and added 0 companies because no new candidate completed all mandatory qualification gates without ambiguity. Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 221."
 }
