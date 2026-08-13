@@ -10,9 +10,9 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-13T02:01:26+03:00",
+  "updated_at": "2026-08-13T03:01:47+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260813-230",
+  "last_run_id": "N5K-20260813-231",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 230 reviewed 30 candidates and added 1 qualified company: MORE METIZOV / ООО МОРЕ-МЕТИЗОВ. Eleven were confirmed duplicates and 18 failed one or more mandatory qualification gates. Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 230."
+  "note": "RUN 231 reviewed 30 candidates and added 0 qualified companies. Ten were confirmed duplicates and 20 failed one or more mandatory qualification gates. Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 231."
 }
