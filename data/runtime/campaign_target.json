@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 234,
-  "current_contactable_count": 234,
-  "progress_added": 234,
-  "remaining_to_total_target": 4766,
+  "current_canonical_count": 235,
+  "current_contactable_count": 235,
+  "progress_added": 235,
+  "remaining_to_total_target": 4765,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-13T03:59:00+03:00",
+  "updated_at": "2026-08-13T05:02:02+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260813-232",
+  "last_run_id": "N5K-20260813-233",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 232 reviewed 30 candidates and added 0 qualified companies. Twelve were confirmed duplicates and 18 failed one or more mandatory qualification gates. Stale signals without fresh confirmation were excluded from decisions. Old 70-company base remains unchanged and excluded. Verified tail extended through RUN 232."
+  "note": "RUN 233 reviewed 30 candidates and added 1 qualified company: Колл-Тулз / Call-Tools. Eight confirmed duplicates and 21 failed one or more mandatory qualification gates. Stale signals without fresh confirmation were excluded from decisions. Old 70-company base remains unchanged and excluded."
 }
