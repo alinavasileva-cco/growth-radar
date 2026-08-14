@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 236,
-  "current_contactable_count": 236,
-  "progress_added": 236,
-  "remaining_to_total_target": 4764,
+  "current_canonical_count": 239,
+  "current_contactable_count": 239,
+  "progress_added": 239,
+  "remaining_to_total_target": 4761,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-13T06:00:08+03:00",
+  "updated_at": "2026-08-14T23:24:48+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260813-234",
+  "last_run_id": "N5K-20260814-235",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 234 reviewed 30 candidates and added 1 qualified company: ТДФ. Eight confirmed duplicates and 21 excluded. Runtime synced from confirmed RUN log; integrity PASS, orphan contacts/evidence=0."
+  "note": "RUN 235 started from confirmed RUN 234 after runtime repair. Reviewed 30 raw candidates; added 3 qualified companies (Zaboroff, Jungle Story / Икстеншн, Атмосферика), found 1 confirmed duplicate and excluded 26. Integrity PASS; orphan contacts/evidence=0."
 }
