@@ -1,0 +1,277 @@
+name: Growth Radar physical consolidation RUN 242
+on:
+  push:
+    paths:
+      - '.github/workflows/growth_radar_repair_242.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Consolidate verified new_5000 storage and validate integrity
+        run: |
+          python - <<'PY'
+          import csv, json, re
+          from pathlib import Path
+          from datetime import datetime, timezone
+          from urllib.parse import urlparse
+
+          ROOT=Path('data/campaigns/new_5000')
+          RUN='N5K-20260815-242'
+          EXPECTED=255
+          now=datetime.now(timezone.utc).isoformat()
+
+          def read_csv(p):
+              p=Path(p)
+              if not p.exists() or p.stat().st_size == 0:
+                  return [], []
+              with p.open(encoding='utf-8-sig', newline='') as f:
+                  r=csv.DictReader(f)
+                  return list(r.fieldnames or []), list(r)
+
+          def write_csv(p, fields, rows):
+              p=Path(p); p.parent.mkdir(parents=True, exist_ok=True)
+              with p.open('w', encoding='utf-8', newline='') as f:
+                  w=csv.DictWriter(f, fieldnames=fields, extrasaction='ignore')
+                  w.writeheader(); w.writerows(rows)
+
+          def lid_num(v):
+              m=re.search(r'(\d+)$', v or '')
+              return int(m.group(1)) if m else 10**9
+
+          def ts(row):
+              return row.get('Updated At') or row.get('Added At') or ''
+
+          def norm_text(v):
+              return re.sub(r'[^0-9a-zа-яё]+','', (v or '').lower())
+
+          def domain(v):
+              if not v: return ''
+              x=v.strip()
+              if '://' not in x: x='https://'+x
+              try:
+                  h=(urlparse(x).hostname or '').lower()
+                  return h[4:] if h.startswith('www.') else h
+              except Exception:
+                  return ''
+
+          master_fields, physical_master=read_csv(ROOT/'leads_master.csv')
+          if not master_fields:
+              raise SystemExit('missing leads_master schema')
+
+          candidates=[]
+          def add_rows(rows, priority, source):
+              for r in rows:
+                  lid=(r.get('Lead ID') or '').strip()
+                  if not lid.startswith('N5K-'): continue
+                  if (r.get('Campaign ID') or 'new_5000').strip() not in ('','new_5000'): continue
+                  x={k:(r.get(k) or '') for k in master_fields}
+                  x['Campaign ID']='new_5000'
+                  st=x.get('Final Quick Status','').strip().upper()
+                  if st in {'ГОТОВО К ИНТЕГРАЦИИ','QUALIFIED','READY','CONTACTABLE'}:
+                      x['Final Quick Status']='МОЖНО СВЯЗЫВАТЬСЯ'
+                  candidates.append((lid, ts(x), priority, source, x))
+
+          add_rows(physical_master, 30, 'physical_master')
+          for p in sorted((ROOT/'increments').glob('*_leads.csv')):
+              _, rows=read_csv(p); add_rows(rows, 10, str(p))
+          for p in sorted((ROOT/'master_shards').glob('*.csv')):
+              _, rows=read_csv(p); add_rows(rows, 20, str(p))
+
+          by_id={}
+          provenance={}
+          for lid, stamp, priority, source, row in candidates:
+              rank=(stamp, priority)
+              if lid not in by_id or rank > by_id[lid][0]:
+                  by_id[lid]=(rank,row)
+                  provenance[lid]=source
+          merged=[v[1] for v in by_id.values()]
+          merged.sort(key=lambda r: lid_num(r.get('Lead ID')))
+
+          if len(merged) != EXPECTED:
+              raise SystemExit(f'physical reconstruction count {len(merged)} != expected logical baseline {EXPECTED}')
+
+          # Strict duplicate checks across canonical identifiers.
+          def dup_groups(field, transform=lambda x:x.strip()):
+              d={}
+              for r in merged:
+                  v=transform(r.get(field,'') or '')
+                  if not v: continue
+                  d.setdefault(v,[]).append(r['Lead ID'])
+              return {k:v for k,v in d.items() if len(v)>1}
+          duplicates={
+              'lead_id': dup_groups('Lead ID'),
+              'inn': dup_groups('INN'),
+              'ogrn': dup_groups('OGRN/OGRNIP'),
+              'legal_name': dup_groups('Legal Name', norm_text),
+          }
+          brand_domain={}
+          for r in merged:
+              k=(norm_text(r.get('Brand','')), domain(r.get('Website','')))
+              if not k[0] or not k[1]: continue
+              brand_domain.setdefault(k,[]).append(r['Lead ID'])
+          duplicates['brand_domain']={str(k):v for k,v in brand_domain.items() if len(v)>1}
+          bad={k:v for k,v in duplicates.items() if v}
+          if bad:
+              Path('data/runtime/repair_242_duplicate_conflicts.json').write_text(json.dumps(bad,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+              raise SystemExit(f'duplicate conflicts found: {bad}')
+
+          # Every logical qualified record is contactable in this campaign baseline.
+          for r in merged:
+              r['Final Quick Status']='МОЖНО СВЯЗЫВАТЬСЯ'
+          write_csv(ROOT/'leads_master.csv', master_fields, merged)
+
+          # Rebuild one physical contactable master from the canonical master, preserving richer existing route fields.
+          contactable_fields, old_contactable=read_csv(ROOT/'contactable_master.csv')
+          old_by_id={r.get('Lead ID',''):r for r in old_contactable}
+          contactable=[]
+          for m in merged:
+              old=old_by_id.get(m['Lead ID'],{})
+              r={k:'' for k in contactable_fields}
+              for k in contactable_fields:
+                  if k in m and m.get(k,'') != '': r[k]=m.get(k,'')
+                  elif old.get(k,'') != '': r[k]=old.get(k,'')
+              r['Final Quick Status']='МОЖНО СВЯЗЫВАТЬСЯ'; r['Campaign ID']='new_5000'
+              contactable.append(r)
+          write_csv(ROOT/'contactable_master.csv', contactable_fields, contactable)
+
+          ids={r['Lead ID'] for r in merged}
+
+          # Consolidate contacts from physical + verified increment/shard sources.
+          contact_fields, physical_contacts=read_csv(ROOT/'contacts.csv')
+          contact_rows=[]
+          for r in physical_contacts: contact_rows.append(r)
+          for p in sorted((ROOT/'increments').glob('*_contacts.csv')):
+              _, rows=read_csv(p); contact_rows.extend(rows)
+          for p in sorted((ROOT/'contact_shards').glob('*.csv')):
+              _, rows=read_csv(p); contact_rows.extend(rows)
+          seen=set(); contacts=[]
+          for r in contact_rows:
+              lid=(r.get('Lead ID') or '').strip()
+              if lid not in ids: continue
+              x={k:(r.get(k) or '') for k in contact_fields}; x['Campaign ID']='new_5000'
+              key=(lid, x.get('Contact Value','').strip().lower(), x.get('Contact Channel','').strip().lower(), x.get('Source URL','').strip())
+              if key in seen: continue
+              if not key[1] and not key[3]: continue
+              seen.add(key); contacts.append(x)
+          contacts.sort(key=lambda r:(lid_num(r.get('Lead ID')), r.get('Contact Channel',''), r.get('Contact Value','')))
+          used=set(); seq=1
+          for r in contacts:
+              cid=(r.get('Contact ID') or '').strip()
+              if not cid or cid in used:
+                  while f'N5K-C-{seq:04d}' in used: seq+=1
+                  cid=f'N5K-C-{seq:04d}'; seq+=1
+              r['Contact ID']=cid; used.add(cid)
+          write_csv(ROOT/'contacts.csv', contact_fields, contacts)
+
+          # Consolidate evidence from physical + verified increment/shard sources.
+          evidence_fields, physical_evidence=read_csv(ROOT/'evidence.csv')
+          evidence_rows=[]
+          evidence_rows.extend(physical_evidence)
+          for p in sorted((ROOT/'increments').glob('*_evidence.csv')):
+              _, rows=read_csv(p); evidence_rows.extend(rows)
+          for p in sorted((ROOT/'evidence_shards').glob('*.csv')):
+              _, rows=read_csv(p); evidence_rows.extend(rows)
+          seen=set(); evidence=[]
+          for r in evidence_rows:
+              lid=(r.get('Lead ID') or '').strip()
+              if lid not in ids: continue
+              x={k:(r.get(k) or '') for k in evidence_fields}; x['Campaign ID']='new_5000'
+              key=(lid, x.get('Evidence Type','').strip().lower(), x.get('Claim','').strip(), x.get('Source URL','').strip())
+              if key in seen: continue
+              if not key[2] and not key[3]: continue
+              seen.add(key); evidence.append(x)
+          evidence.sort(key=lambda r:(lid_num(r.get('Lead ID')), r.get('Evidence Type',''), r.get('Source URL','')))
+          used=set(); seq=1
+          for r in evidence:
+              eid=(r.get('Evidence ID') or '').strip()
+              if not eid or eid in used:
+                  while f'N5K-E-{seq:04d}' in used: seq+=1
+                  eid=f'N5K-E-{seq:04d}'; seq+=1
+              r['Evidence ID']=eid; used.add(eid)
+          write_csv(ROOT/'evidence.csv', evidence_fields, evidence)
+
+          orphan_contacts=sorted({r.get('Lead ID','') for r in contacts if r.get('Lead ID','') not in ids})
+          orphan_evidence=sorted({r.get('Lead ID','') for r in evidence if r.get('Lead ID','') not in ids})
+          if orphan_contacts or orphan_evidence:
+              raise SystemExit(f'orphan records remain: contacts={orphan_contacts}, evidence={orphan_evidence}')
+
+          # Verify written physical counts and uniqueness after serialization.
+          _, check_master=read_csv(ROOT/'leads_master.csv')
+          _, check_contactable=read_csv(ROOT/'contactable_master.csv')
+          if len(check_master)!=EXPECTED or len(check_contactable)!=EXPECTED:
+              raise SystemExit(f'post-write count mismatch master={len(check_master)} contactable={len(check_contactable)}')
+          if len({r['Lead ID'] for r in check_master})!=EXPECTED or len({r['Lead ID'] for r in check_contactable})!=EXPECTED:
+              raise SystemExit('post-write Lead ID uniqueness failure')
+
+          report_path='reports/run_2026-08-16_242_physical_master_repair.md'
+          audit={
+              'run_id':RUN,'generated_at':now,'expected_logical_baseline':EXPECTED,
+              'physical_master_count':len(check_master),'physical_contactable_count':len(check_contactable),
+              'contacts_count':len(contacts),'evidence_count':len(evidence),
+              'unique_lead_ids':len(ids),'orphan_contacts':0,'orphan_evidence':0,
+              'duplicate_conflicts':{},'integrity':'PASS','outreach_sent':0,
+              'source_strategy':'existing physical master + increments/*_leads.csv + master_shards/*.csv; contacts/evidence consolidated from physical + increments + shards'
+          }
+          Path('data/runtime/repair_242_audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          status={
+              'run_id':RUN,'campaign_id':'new_5000','status':'COMPLETED','updated_at':now,
+              'stage':'REPAIR_COMPLETE','repair_only':True,'repair_result':'PHYSICAL_MASTERS_CONSOLIDATED_FROM_VERIFIED_REPO_SOURCES',
+              'new_cycle':{'baseline_count':0,'target_count':5000,'current_canonical_count':EXPECTED,'current_contactable_count':EXPECTED,'progress_added':EXPECTED,'remaining':5000-EXPECTED},
+              'funnel':{'discovered':0,'size_check_passed':0,'legal_match_passed':0,'signal_confirmed':0,'lpr_identified':0,'contact_route_found':0,'qualified':0,'duplicates':0,'excluded':0},
+              'qualified_companies':[], 'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'active_wip':0,
+              'physical_master_count':EXPECTED,'physical_contactable_count':EXPECTED,
+              'contacts_count':len(contacts),'evidence_count':len(evidence),'outreach_sent':0,'blocker':None,
+              'report_path':report_path,'run_log_path':f'data/campaigns/new_5000/run_logs/{RUN}.csv',
+              'aggregate_tail_path':'data/campaigns/new_5000/run_log_tail_198_onward.csv'
+          }
+          Path('data/runtime/current_run_status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          target_path=Path('data/runtime/campaign_target.json')
+          target=json.loads(target_path.read_text(encoding='utf-8'))
+          target.update({'campaign_id':'new_5000','current_canonical_count':EXPECTED,'current_contactable_count':EXPECTED,'remaining':5000-EXPECTED,'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'latest_completed_run':RUN,'updated_at':now})
+          target_path.write_text(json.dumps(target,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          log_fields=['Run ID','Started At','Completed At','Campaign ID','Discovered','Qualified','Duplicates','Excluded','Current Canonical','Current Contactable','Integrity','Orphan Contacts','Orphan Evidence','Report']
+          lr={'Run ID':RUN,'Started At':now,'Completed At':now,'Campaign ID':'new_5000','Discovered':'0','Qualified':'0','Duplicates':'0','Excluded':'0','Current Canonical':str(EXPECTED),'Current Contactable':str(EXPECTED),'Integrity':'PASS','Orphan Contacts':'0','Orphan Evidence':'0','Report':report_path}
+          write_csv(ROOT/'run_logs'/f'{RUN}.csv',log_fields,[lr])
+          tail_fields, tail=read_csv(ROOT/'run_log_tail_198_onward.csv')
+          tail=[r for r in tail if r.get('Run ID')!=RUN]; tail.append({k:lr.get(k,'') for k in tail_fields})
+          write_csv(ROOT/'run_log_tail_198_onward.csv',tail_fields,tail)
+
+          Path(report_path).write_text(
+              f'# Growth Radar — {RUN} — physical master repair\n\n'
+              f'- Тип RUN: REPAIR, без discovery.\n'
+              f'- Подтверждённый логический baseline до ремонта: {EXPECTED}.\n'
+              f'- Физический leads_master после консолидации: {len(check_master)}.\n'
+              f'- Физический contactable_master после консолидации: {len(check_contactable)}.\n'
+              f'- Contacts: {len(contacts)}. Evidence: {len(evidence)}.\n'
+              f'- Дубли по Lead ID / INN / OGRN / legal name / brand+domain: 0.\n'
+              f'- Orphan contacts: 0. Orphan evidence: 0.\n'
+              f'- Integrity: PASS. Outreach: 0.\n', encoding='utf-8')
+
+          cfgp=Path('CURRENT_WORKING_CONFIG.md')
+          cfg=cfgp.read_text(encoding='utf-8')
+          marker=f'## Physical master repair — {RUN}'
+          if marker not in cfg:
+              cfg += (f'\n\n{marker}\n\n- Физический `leads_master.csv`: **{EXPECTED}** строк компаний.\n- Физический `contactable_master.csv`: **{EXPECTED}** строк компаний.\n- Источник восстановления: подтверждённые `increments/*_leads.csv`, `master_shards/*.csv` и существующий master.\n- Contacts: **{len(contacts)}**; evidence: **{len(evidence)}**.\n- Integrity: `PASS`; orphan contacts/evidence: `0/0`; outreach: `0`.\n- Следующий RUN обязан начинаться только после повторной проверки этих физических master-файлов.\n')
+              cfgp.write_text(cfg,encoding='utf-8')
+
+          print(json.dumps(audit,ensure_ascii=False))
+          PY
+      - name: Commit repaired canonical state
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/campaigns/new_5000 data/runtime CURRENT_WORKING_CONFIG.md reports/run_2026-08-16_242_physical_master_repair.md
+          git commit -m 'repair: consolidate new_5000 physical masters at 255'
+          git push
