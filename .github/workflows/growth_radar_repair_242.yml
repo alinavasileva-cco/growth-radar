@@ -16,206 +16,185 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Reconstruct physical masters from all verified compatible sources
+      - name: Reconstruct and strictly deduplicate canonical pool
         run: |
           python - <<'PY'
-          import csv, json, re
+          import csv,json,re
           from pathlib import Path
-          from datetime import datetime, timezone
+          from datetime import datetime,timezone
           from urllib.parse import urlparse
-
-          ROOT=Path('data/campaigns/new_5000'); RUN='N5K-20260815-242'; EXPECTED=255
-          now=datetime.now(timezone.utc).isoformat()
-
-          def read_csv(p):
+          ROOT=Path('data/campaigns/new_5000'); RUN='N5K-20260815-242'; now=datetime.now(timezone.utc).isoformat()
+          def rc(p):
               p=Path(p)
-              if not p.exists() or not p.stat().st_size: return [],[]
+              if not p.exists() or not p.stat().st_size:return [],[]
               try:
-                  with p.open(encoding='utf-8-sig',newline='') as f:
-                      r=csv.DictReader(f); return list(r.fieldnames or []),list(r)
-              except Exception as e:
-                  print('SKIP_READ',p,e); return [],[]
-          def write_csv(p,fields,rows):
-              p=Path(p); p.parent.mkdir(parents=True,exist_ok=True)
-              with p.open('w',encoding='utf-8',newline='') as f:
-                  w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore'); w.writeheader(); w.writerows(rows)
-          def n(v):
-              m=re.search(r'(\d+)$',v or ''); return int(m.group(1)) if m else 10**9
-          def norm(v): return re.sub(r'[^0-9a-zа-яё]+','',(v or '').lower())
-          def dom(v):
+                  with p.open(encoding='utf-8-sig',newline='') as f:r=csv.DictReader(f);return list(r.fieldnames or []),list(r)
+              except:return [],[]
+          def wc(p,flds,rows):
+              p=Path(p);p.parent.mkdir(parents=True,exist_ok=True)
+              with p.open('w',encoding='utf-8',newline='') as f:w=csv.DictWriter(f,fieldnames=flds,extrasaction='ignore');w.writeheader();w.writerows(rows)
+          def num(v):
+              m=re.search(r'(\d+)$',v or '');return int(m.group(1)) if m else 10**9
+          def norm(v):return re.sub(r'[^0-9a-zа-яё]+','',(v or '').lower())
+          def domain(v):
               if not v:return ''
-              x=v.strip(); x=x if '://' in x else 'https://'+x
+              x=v.strip();x=x if '://' in x else 'https://'+x
               try:
-                  h=(urlparse(x).hostname or '').lower(); return h[4:] if h.startswith('www.') else h
+                  h=(urlparse(x).hostname or '').lower();return h[4:] if h.startswith('www.') else h
               except:return ''
-
-          mf,current=read_csv(ROOT/'leads_master.csv'); cf,old_contactable=read_csv(ROOT/'contactable_master.csv')
-          if not mf or not cf: raise SystemExit('missing physical master schemas')
-          aliases={'OGRN / OGRNIP':'OGRN/OGRNIP'}
-          # Only sources capable of representing a company card. Contacts/evidence/run logs are deliberately excluded.
-          paths=[ROOT/'leads_master.csv',ROOT/'contactable_master.csv']
-          paths += sorted((ROOT/'master_shards').glob('*.csv'))
-          paths += sorted((ROOT/'contactable_shards').glob('*.csv'))
-          paths += sorted((ROOT/'increments').glob('*.csv'))
-
+          mf,_=rc(ROOT/'leads_master.csv');cf,oldc=rc(ROOT/'contactable_master.csv')
+          if not mf or not cf:raise SystemExit('missing schemas')
+          paths=[ROOT/'leads_master.csv',ROOT/'contactable_master.csv']+sorted((ROOT/'master_shards').glob('*.csv'))+sorted((ROOT/'contactable_shards').glob('*.csv'))+sorted((ROOT/'increments').glob('*.csv'))
           def pri(p,fields):
               s=str(p)
-              if s.endswith('/leads_master.csv'): return 100
-              if '/master_shards/' in s: return 90
-              if '/increments/' in s and ('Revenue/Scale' in fields or '_leads.csv' in s): return 80
-              if s.endswith('/contactable_master.csv'): return 70
-              if '/contactable_shards/' in s: return 60
+              if s.endswith('/leads_master.csv'):return 100
+              if '/master_shards/' in s:return 90
+              if '/increments/' in s and ('Revenue/Scale' in fields or '_leads.csv' in s):return 80
+              if s.endswith('/contactable_master.csv'):return 70
+              if '/contactable_shards/' in s:return 60
               return 40
-
-          by={}; fp={}; sources={}; scanned=0
+          records={};fieldpri={};fresh={}
           for p in paths:
-              fields,rows=read_csv(p)
-              fs=set(fields)
-              if not {'Lead ID','Brand','Legal Name','INN'}.issubset(fs): continue
-              # reject non-card tables even if they accidentally share identifiers
-              if not ({'Revenue/Scale','Signal Summary','Final Quick Status'} & fs): continue
-              scanned+=1; q=pri(p,fields)
+              fields,rows=rc(p);fs=set(fields)
+              if not {'Lead ID','Brand','Legal Name','INN'}.issubset(fs):continue
+              if not ({'Revenue/Scale','Signal Summary','Final Quick Status'}&fs):continue
+              q=pri(p,fields)
               for raw in rows:
                   lid=(raw.get('Lead ID') or '').strip()
-                  if not re.fullmatch(r'N5K-\d{4}',lid): continue
-                  if n(lid)>EXPECTED: continue
-                  dst=by.setdefault(lid,{k:'' for k in mf}); pmap=fp.setdefault(lid,{k:-1 for k in mf})
+                  if not re.fullmatch(r'N5K-\d{4}',lid):continue
+                  dst=records.setdefault(lid,{k:'' for k in mf});pm=fieldpri.setdefault(lid,{k:-1 for k in mf})
+                  stamp=(raw.get('Updated At') or raw.get('Added At') or '')
+                  fresh[lid]=max(fresh.get(lid,''),stamp)
                   for k in mf:
-                      src=k
-                      if k=='OGRN/OGRNIP' and not raw.get(k): src='OGRN / OGRNIP'
+                      src='OGRN / OGRNIP' if k=='OGRN/OGRNIP' and not raw.get(k) else k
                       val=(raw.get(src) or '').strip()
-                      if val and q>=pmap[k]: dst[k]=val; pmap[k]=q
-                  dst['Lead ID']=lid; dst['Campaign ID']='new_5000'
-                  sources.setdefault(lid,set()).add(str(p))
-
-          expected_ids={f'N5K-{i:04d}' for i in range(1,EXPECTED+1)}
-          missing=sorted(expected_ids-set(by),key=n)
-          print('COMPATIBLE_SOURCES_SCANNED',scanned)
-          print('RECOVERED_IDS',len(by))
-          print('MISSING_IDS',missing)
-          # Diagnostic fallback: find missing IDs anywhere in repository campaign files and print exact paths.
-          locations={m:[] for m in missing}
-          for p in ROOT.rglob('*'):
-              if not p.is_file() or p.suffix.lower() not in {'.csv','.json','.md'}: continue
-              try: txt=p.read_text(encoding='utf-8-sig',errors='ignore')
-              except: continue
-              for m in missing:
-                  if m in txt: locations[m].append(str(p))
-          print('MISSING_LOCATIONS',json.dumps(locations,ensure_ascii=False,sort_keys=True))
-          if missing:
-              raise SystemExit(f'missing {len(missing)} canonical cards: {missing}')
-
-          merged=[by[k] for k in sorted(by,key=n)]
-          # normalize qualified legacy statuses, but never manufacture card facts
-          for r in merged:
-              if r.get('Final Quick Status','').strip().upper() in {'ГОТОВО К ИНТЕГРАЦИИ','QUALIFIED','READY','CONTACTABLE','МОЖНО СВЯЗЫВАТЬСЯ'}:
-                  r['Final Quick Status']='МОЖНО СВЯЗЫВАТЬСЯ'
-          critical=['Brand','Legal Name','INN','Revenue/Scale','Signal Level','Signal Summary','LPR']
-          incomplete={r['Lead ID']:[k for k in critical if not r.get(k,'').strip()] for r in merged}
-          incomplete={k:v for k,v in incomplete.items() if v}
-          # A missing LPR field can only pass if old/contactable card explicitly contains an LPR; merged source scan should have supplied it.
-          if incomplete:
-              print('INCOMPLETE_CARDS',json.dumps(incomplete,ensure_ascii=False,sort_keys=True))
-              raise SystemExit(f'incomplete recovered cards: {len(incomplete)}')
-
-          def dups(field,fn=lambda x:(x or '').strip()):
+                      if val and q>=pm[k]:dst[k]=val;pm[k]=q
+                  dst['Lead ID']=lid;dst['Campaign ID']='new_5000'
+          if len(records)!=255:raise SystemExit(f'reconstructed {len(records)} cards, expected historical 255 before dedup')
+          lids=sorted(records,key=num);parent={x:x for x in lids}
+          def find(x):
+              while parent[x]!=x:parent[x]=parent[parent[x]];x=parent[x]
+              return x
+          def union(a,b):
+              a,b=find(a),find(b)
+              if a!=b:parent[b]=a
+          keymaps={'inn':{},'ogrn':{},'legal':{},'brand_domain':{}}
+          for lid in lids:
+              r=records[lid]
+              keys={'inn':(r.get('INN') or '').strip(),'ogrn':(r.get('OGRN/OGRNIP') or '').strip(),'legal':norm(r.get('Legal Name')),'brand_domain':(norm(r.get('Brand')),domain(r.get('Website')))}
+              for typ,k in keys.items():
+                  if not k or k==('',''):continue
+                  if k in keymaps[typ]:union(lid,keymaps[typ][k])
+                  else:keymaps[typ][k]=lid
+          comps={}
+          for lid in lids:comps.setdefault(find(lid),[]).append(lid)
+          # Select freshest card in each duplicate component; tie -> highest Lead ID. Merge missing fields only from older cards.
+          repmap={};canon=[];dupmap=[]
+          for members in comps.values():
+              members=sorted(members,key=lambda x:(fresh.get(x,''),num(x)),reverse=True);rep=members[0]
+              out=dict(records[rep])
+              for old in members[1:]:
+                  for k in mf:
+                      if not out.get(k,'').strip() and records[old].get(k,'').strip():out[k]=records[old][k]
+              out['Lead ID']=rep;out['Final Quick Status']='МОЖНО СВЯЗЫВАТЬСЯ';out['Campaign ID']='new_5000';canon.append(out)
+              for x in members:repmap[x]=rep
+              if len(members)>1:dupmap.append({'representative':rep,'merged_ids':members,'inn':out.get('INN',''),'legal_name':out.get('Legal Name',''),'brand':out.get('Brand','')})
+          canon.sort(key=lambda r:num(r['Lead ID']));COUNT=len(canon)
+          # Verify no duplicates remain by mandatory identifiers.
+          def dup(field,fn=lambda x:(x or '').strip()):
               d={}
-              for r in merged:
-                  v=fn(r.get(field,''))
+              for r in canon:
+                  v=fn(r.get(field,''));
                   if v:d.setdefault(v,[]).append(r['Lead ID'])
               return {k:v for k,v in d.items() if len(v)>1}
-          bad={'inn':dups('INN'),'ogrn':dups('OGRN/OGRNIP'),'legal':dups('Legal Name',norm)}
+          bad={'inn':dup('INN'),'ogrn':dup('OGRN/OGRNIP'),'legal':dup('Legal Name',norm)}
           bd={}
-          for r in merged:
-              k=(norm(r.get('Brand','')),dom(r.get('Website','')))
+          for r in canon:
+              k=(norm(r.get('Brand')),domain(r.get('Website')))
               if all(k):bd.setdefault(k,[]).append(r['Lead ID'])
-          bad['brand_domain']={str(k):v for k,v in bd.items() if len(v)>1}
-          bad={k:v for k,v in bad.items() if v}
-          if bad:
-              print('DUPLICATE_CONFLICTS',json.dumps(bad,ensure_ascii=False,sort_keys=True)); raise SystemExit('duplicate conflicts')
-
-          write_csv(ROOT/'leads_master.csv',mf,merged)
-          oldc={r.get('Lead ID',''):r for r in old_contactable}
-          contactable=[]
-          for m in merged:
-              o=oldc.get(m['Lead ID'],{}); r={k:'' for k in cf}
+          bad['brand_domain']={str(k):v for k,v in bd.items() if len(v)>1};bad={k:v for k,v in bad.items() if v}
+          if bad:raise SystemExit('dedup failed '+json.dumps(bad,ensure_ascii=False))
+          crit=['Brand','Legal Name','INN','Revenue/Scale','Signal Level','Signal Summary','LPR']
+          incomplete={r['Lead ID']:[k for k in crit if not (r.get(k) or '').strip()] for r in canon};incomplete={k:v for k,v in incomplete.items() if v}
+          if incomplete:raise SystemExit('incomplete canonical cards '+json.dumps(incomplete,ensure_ascii=False))
+          wc(ROOT/'leads_master.csv',mf,canon)
+          old_by={r.get('Lead ID',''):r for r in oldc};contactable=[]
+          for m in canon:
+              o={}
+              # Prefer direct representative contactable record, then any merged historical alias.
+              aliases=[x for x,y in repmap.items() if y==m['Lead ID']]
+              for a in sorted(aliases,key=num,reverse=True):
+                  if a in old_by:
+                      for k,v in old_by[a].items():
+                          if v and not o.get(k):o[k]=v
+              r={k:'' for k in cf}
               for k in cf:
-                  if m.get(k,''):r[k]=m[k]
-                  elif o.get(k,''):r[k]=o[k]
-              r['Lead ID']=m['Lead ID']; r['Final Quick Status']='МОЖНО СВЯЗЫВАТЬСЯ'; r['Campaign ID']='new_5000'; contactable.append(r)
-          write_csv(ROOT/'contactable_master.csv',cf,contactable)
-          ids={r['Lead ID'] for r in merged}
-
-          # Existing contacts/evidence plus all dedicated shards/increments. Keep only canonical IDs and dedupe exact facts.
-          kf,base_contacts=read_csv(ROOT/'contacts.csv'); allc=list(base_contacts)
+                  if m.get(k):r[k]=m[k]
+                  elif o.get(k):r[k]=o[k]
+              r['Lead ID']=m['Lead ID'];r['Final Quick Status']='МОЖНО СВЯЗЫВАТЬСЯ';r['Campaign ID']='new_5000';contactable.append(r)
+          wc(ROOT/'contactable_master.csv',cf,contactable)
+          ids={r['Lead ID'] for r in canon}
+          # Remap and consolidate contacts from duplicate historical IDs onto representatives.
+          kf,base=rc(ROOT/'contacts.csv');allc=list(base)
           for p in list((ROOT/'contact_shards').glob('*.csv'))+list((ROOT/'increments').glob('*_contacts.csv')):
-              _,rows=read_csv(p); allc.extend(rows)
-          seen=set(); contacts=[]
+              _,rr=rc(p);allc.extend(rr)
+          seen=set();contacts=[]
           for raw in allc:
-              lid=(raw.get('Lead ID') or '').strip()
-              if lid not in ids: continue
-              x={k:(raw.get(k) or '') for k in kf}; x['Campaign ID']='new_5000'
+              old=(raw.get('Lead ID') or '').strip();lid=repmap.get(old)
+              if not lid or lid not in ids:continue
+              x={k:(raw.get(k) or '') for k in kf};x['Lead ID']=lid;x['Campaign ID']='new_5000'
               key=(lid,x.get('Contact Value','').strip().lower(),x.get('Contact Channel','').strip().lower(),x.get('Source URL','').strip())
-              if key in seen or (not key[1] and not key[3]): continue
-              seen.add(key); contacts.append(x)
-          contacts.sort(key=lambda r:(n(r.get('Lead ID')),r.get('Contact Channel',''),r.get('Contact Value','')))
-          used=set(); seq=1
+              if key in seen or (not key[1] and not key[3]):continue
+              seen.add(key);contacts.append(x)
+          contacts.sort(key=lambda r:(num(r.get('Lead ID')),r.get('Contact Channel',''),r.get('Contact Value','')));used=set();seq=1
           for r in contacts:
               cid=(r.get('Contact ID') or '').strip()
               if not cid or cid in used:
                   while f'N5K-C-{seq:04d}' in used:seq+=1
-                  cid=f'N5K-C-{seq:04d}'; seq+=1
+                  cid=f'N5K-C-{seq:04d}';seq+=1
               r['Contact ID']=cid;used.add(cid)
-          write_csv(ROOT/'contacts.csv',kf,contacts)
-
-          ef,base_evidence=read_csv(ROOT/'evidence.csv'); alle=list(base_evidence)
+          wc(ROOT/'contacts.csv',kf,contacts)
+          ef,basee=rc(ROOT/'evidence.csv');alle=list(basee)
           for p in list((ROOT/'evidence_shards').glob('*.csv'))+list((ROOT/'increments').glob('*_evidence.csv')):
-              _,rows=read_csv(p); alle.extend(rows)
-          seen=set(); evidence=[]
+              _,rr=rc(p);alle.extend(rr)
+          seen=set();evidence=[]
           for raw in alle:
-              lid=(raw.get('Lead ID') or '').strip()
-              if lid not in ids:continue
-              x={k:(raw.get(k) or '') for k in ef};x['Campaign ID']='new_5000'
+              old=(raw.get('Lead ID') or '').strip();lid=repmap.get(old)
+              if not lid or lid not in ids:continue
+              x={k:(raw.get(k) or '') for k in ef};x['Lead ID']=lid;x['Campaign ID']='new_5000'
               key=(lid,x.get('Evidence Type','').strip().lower(),x.get('Claim','').strip(),x.get('Source URL','').strip())
               if key in seen or (not key[2] and not key[3]):continue
               seen.add(key);evidence.append(x)
-          evidence.sort(key=lambda r:(n(r.get('Lead ID')),r.get('Evidence Type',''),r.get('Source URL','')))
-          used=set();seq=1
+          evidence.sort(key=lambda r:(num(r.get('Lead ID')),r.get('Evidence Type',''),r.get('Source URL','')));used=set();seq=1
           for r in evidence:
               eid=(r.get('Evidence ID') or '').strip()
               if not eid or eid in used:
                   while f'N5K-E-{seq:04d}' in used:seq+=1
                   eid=f'N5K-E-{seq:04d}';seq+=1
               r['Evidence ID']=eid;used.add(eid)
-          write_csv(ROOT/'evidence.csv',ef,evidence)
-
-          _,cm=read_csv(ROOT/'leads_master.csv');_,cc=read_csv(ROOT/'contactable_master.csv')
-          if len(cm)!=EXPECTED or len(cc)!=EXPECTED or len({r['Lead ID'] for r in cm})!=EXPECTED or len({r['Lead ID'] for r in cc})!=EXPECTED: raise SystemExit('post-write master count/uniqueness failure')
-          orphan_c=sorted({r.get('Lead ID','') for r in contacts if r.get('Lead ID','') not in ids}); orphan_e=sorted({r.get('Lead ID','') for r in evidence if r.get('Lead ID','') not in ids})
-          if orphan_c or orphan_e:raise SystemExit(f'orphan failure {orphan_c} {orphan_e}')
-          # Each canonical card needs a practical route and evidence; validate presence, not freshness of every historical source.
-          contact_ids={r.get('Lead ID','') for r in contacts}; evidence_ids={r.get('Lead ID','') for r in evidence}
-          no_route=sorted(ids-contact_ids,key=n); no_evidence=sorted(ids-evidence_ids,key=n)
-          if no_route or no_evidence:
-              print('NO_ROUTE',no_route);print('NO_EVIDENCE',no_evidence);raise SystemExit('coverage failure')
-
+          wc(ROOT/'evidence.csv',ef,evidence)
+          contact_ids={r.get('Lead ID') for r in contacts};evidence_ids={r.get('Lead ID') for r in evidence}
+          no_contact=sorted(ids-contact_ids,key=num);no_evidence=sorted(ids-evidence_ids,key=num)
+          if no_contact or no_evidence:raise SystemExit('coverage failure contacts='+str(no_contact)+' evidence='+str(no_evidence))
+          _,cm=rc(ROOT/'leads_master.csv');_,cc=rc(ROOT/'contactable_master.csv')
+          if len(cm)!=COUNT or len(cc)!=COUNT or len({r['Lead ID'] for r in cm})!=COUNT or len({r['Lead ID'] for r in cc})!=COUNT:raise SystemExit('postwrite count failure')
           report='reports/run_2026-08-16_242_physical_master_repair.md'
-          audit={'run_id':RUN,'generated_at':now,'expected_logical_baseline':EXPECTED,'physical_master_count':len(cm),'physical_contactable_count':len(cc),'contacts_count':len(contacts),'evidence_count':len(evidence),'unique_lead_ids':EXPECTED,'orphan_contacts':0,'orphan_evidence':0,'duplicate_conflicts':{},'missing_ids':[],'integrity':'PASS','outreach_sent':0}
+          audit={'run_id':RUN,'generated_at':now,'historical_logical_count_before_repair':255,'reconstructed_historical_cards':255,'duplicate_components_merged':len(dupmap),'duplicate_cards_removed':255-COUNT,'corrected_canonical_count':COUNT,'physical_master_count':len(cm),'physical_contactable_count':len(cc),'contacts_count':len(contacts),'evidence_count':len(evidence),'orphan_contacts':0,'orphan_evidence':0,'remaining':5000-COUNT,'integrity':'PASS','outreach_sent':0,'duplicate_map':dupmap}
           Path('data/runtime/repair_242_audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          status={'run_id':RUN,'campaign_id':'new_5000','status':'COMPLETED','updated_at':now,'stage':'REPAIR_COMPLETE','repair_only':True,'repair_result':'PHYSICAL_MASTERS_CONSOLIDATED_FROM_ALL_COMPATIBLE_VERIFIED_REPO_SOURCES','new_cycle':{'baseline_count':0,'target_count':5000,'current_canonical_count':EXPECTED,'current_contactable_count':EXPECTED,'progress_added':EXPECTED,'remaining':5000-EXPECTED},'funnel':{'discovered':0,'size_check_passed':0,'legal_match_passed':0,'signal_confirmed':0,'lpr_identified':0,'contact_route_found':0,'qualified':0,'duplicates':0,'excluded':0},'qualified_companies':[],'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'active_wip':0,'physical_master_count':EXPECTED,'physical_contactable_count':EXPECTED,'contacts_count':len(contacts),'evidence_count':len(evidence),'outreach_sent':0,'blocker':None,'report_path':report,'run_log_path':f'data/campaigns/new_5000/run_logs/{RUN}.csv','aggregate_tail_path':'data/campaigns/new_5000/run_log_tail_198_onward.csv'}
+          status={'run_id':RUN,'campaign_id':'new_5000','status':'COMPLETED','updated_at':now,'stage':'REPAIR_COMPLETE','repair_only':True,'repair_result':'RECONSTRUCTED_255_HISTORICAL_CARDS_AND_STRICTLY_DEDUPLICATED_BY_INN_OGRN_LEGAL_BRAND_DOMAIN','historical_count_before_repair':255,'new_cycle':{'baseline_count':0,'target_count':5000,'current_canonical_count':COUNT,'current_contactable_count':COUNT,'progress_added':COUNT,'remaining':5000-COUNT},'funnel':{'discovered':0,'size_check_passed':0,'legal_match_passed':0,'signal_confirmed':0,'lpr_identified':0,'contact_route_found':0,'qualified':0,'duplicates':255-COUNT,'excluded':0},'qualified_companies':[],'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'active_wip':0,'physical_master_count':COUNT,'physical_contactable_count':COUNT,'contacts_count':len(contacts),'evidence_count':len(evidence),'outreach_sent':0,'blocker':None,'report_path':report,'run_log_path':f'data/campaigns/new_5000/run_logs/{RUN}.csv','aggregate_tail_path':'data/campaigns/new_5000/run_log_tail_198_onward.csv'}
           Path('data/runtime/current_run_status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          tp=Path('data/runtime/campaign_target.json');target=json.loads(tp.read_text(encoding='utf-8'));target.update({'campaign_id':'new_5000','current_canonical_count':EXPECTED,'current_contactable_count':EXPECTED,'remaining':5000-EXPECTED,'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'latest_completed_run':RUN,'updated_at':now});tp.write_text(json.dumps(target,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          lf=['Run ID','Started At','Completed At','Campaign ID','Discovered','Qualified','Duplicates','Excluded','Current Canonical','Current Contactable','Integrity','Orphan Contacts','Orphan Evidence','Report'];lr={'Run ID':RUN,'Started At':now,'Completed At':now,'Campaign ID':'new_5000','Discovered':'0','Qualified':'0','Duplicates':'0','Excluded':'0','Current Canonical':str(EXPECTED),'Current Contactable':str(EXPECTED),'Integrity':'PASS','Orphan Contacts':'0','Orphan Evidence':'0','Report':report};write_csv(ROOT/'run_logs'/f'{RUN}.csv',lf,[lr])
-          tf,tail=read_csv(ROOT/'run_log_tail_198_onward.csv');tail=[r for r in tail if r.get('Run ID')!=RUN];tail.append({k:lr.get(k,'') for k in tf});write_csv(ROOT/'run_log_tail_198_onward.csv',tf,tail)
-          Path(report).write_text(f'# Growth Radar — {RUN} — physical master repair\n\n- Тип RUN: REPAIR, discovery не выполнялся.\n- Логический baseline: {EXPECTED}.\n- Физический leads_master: {len(cm)}.\n- Физический contactable_master: {len(cc)}.\n- Contacts: {len(contacts)}. Evidence: {len(evidence)}.\n- Missing IDs: 0. Duplicate conflicts: 0.\n- Orphan contacts/evidence: 0/0.\n- Integrity: PASS. Outreach: 0.\n',encoding='utf-8')
-          cfgp=Path('CURRENT_WORKING_CONFIG.md');cfg=cfgp.read_text(encoding='utf-8');marker=f'## Physical master repair — {RUN}'
-          if marker not in cfg: cfg += f'\n\n{marker}\n\n- Физический `leads_master.csv`: **{EXPECTED}** компаний.\n- Физический `contactable_master.csv`: **{EXPECTED}** компаний.\n- Восстановлено из всех совместимых подтверждённых campaign CSV (master/contactable/increments/shards), с дедупликацией.\n- Contacts: **{len(contacts)}**; evidence: **{len(evidence)}**.\n- Integrity: `PASS`; orphan: `0/0`; outreach: `0`.\n';cfgp.write_text(cfg,encoding='utf-8')
-          print(json.dumps(audit,ensure_ascii=False))
+          tp=Path('data/runtime/campaign_target.json');t=json.loads(tp.read_text(encoding='utf-8'));t.update({'campaign_id':'new_5000','current_canonical_count':COUNT,'current_contactable_count':COUNT,'remaining':5000-COUNT,'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'latest_completed_run':RUN,'updated_at':now});tp.write_text(json.dumps(t,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          lf=['Run ID','Started At','Completed At','Campaign ID','Discovered','Qualified','Duplicates','Excluded','Current Canonical','Current Contactable','Integrity','Orphan Contacts','Orphan Evidence','Report'];lr={'Run ID':RUN,'Started At':now,'Completed At':now,'Campaign ID':'new_5000','Discovered':'0','Qualified':'0','Duplicates':str(255-COUNT),'Excluded':'0','Current Canonical':str(COUNT),'Current Contactable':str(COUNT),'Integrity':'PASS','Orphan Contacts':'0','Orphan Evidence':'0','Report':report};wc(ROOT/'run_logs'/f'{RUN}.csv',lf,[lr])
+          tf,tail=rc(ROOT/'run_log_tail_198_onward.csv');tail=[r for r in tail if r.get('Run ID')!=RUN];tail.append({k:lr.get(k,'') for k in tf});wc(ROOT/'run_log_tail_198_onward.csv',tf,tail)
+          Path(report).write_text(f'# Growth Radar — {RUN} — canonical repair\n\n- Тип RUN: REPAIR, discovery не выполнялся.\n- Исторически заявленный логический пул: 255 карточек.\n- Восстановлено исторических карточек: 255.\n- После обязательной дедупликации по INN/OGRN/legal entity/brand+domain: **{COUNT} уникальных компаний**.\n- Удалено из канонического счётчика как повторные карточки: **{255-COUNT}**.\n- Физический leads_master/contactable_master: {COUNT}/{COUNT}.\n- Contacts: {len(contacts)}; evidence: {len(evidence)}.\n- Orphan: 0/0. Integrity: PASS. Outreach: 0.\n',encoding='utf-8')
+          cfgp=Path('CURRENT_WORKING_CONFIG.md');cfg=cfgp.read_text(encoding='utf-8');marker=f'## Canonical dedup repair — {RUN}'
+          if marker not in cfg:cfg+=f'\n\n{marker}\n\n- Исторические 255 карточек полностью восстановлены из подтверждённых campaign sources.\n- После строгой дедупликации по Lead/legal identifiers фактический уникальный canonical/contactable pool: **{COUNT}**.\n- Повторных карточек удалено из счётчика: **{255-COUNT}**.\n- Физические `leads_master.csv` / `contactable_master.csv`: **{COUNT}/{COUNT}**.\n- Contacts/evidence перенесены на свежие representative Lead ID; orphan `0/0`.\n- Integrity `PASS`; outreach `0`.\n';cfgp.write_text(cfg,encoding='utf-8')
+          print(json.dumps({k:v for k,v in audit.items() if k!='duplicate_map'},ensure_ascii=False))
           PY
-      - name: Commit repaired canonical state
+      - name: Commit corrected canonical state
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add data/campaigns/new_5000 data/runtime CURRENT_WORKING_CONFIG.md reports/run_2026-08-16_242_physical_master_repair.md
-          git commit -m 'repair: consolidate new_5000 physical masters at 255'
+          git commit -m 'repair: deduplicate reconstructed new_5000 canonical pool'
           git push
