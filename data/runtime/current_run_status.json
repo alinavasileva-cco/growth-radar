@@ -1,35 +1,34 @@
 {
-  "run_id": "N5K-20260815-239",
+  "run_id": "N5K-20260815-240",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-15T20:00:23+03:00",
-  "updated_at": "2026-08-15T20:00:23+03:00",
+  "started_at": "2026-08-15T21:01:59+03:00",
+  "updated_at": "2026-08-15T21:09:01+03:00",
   "stage": "COMPLETE",
   "integrity_precheck": "PASS",
   "repair_result": null,
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 252,
-    "current_contactable_count": 252,
-    "progress_added": 252,
-    "remaining": 4748
+    "current_canonical_count": 254,
+    "current_contactable_count": 254,
+    "progress_added": 254,
+    "remaining": 4746
   },
   "funnel": {
     "discovered": 50,
     "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "duplicates": 2,
-    "excluded": 45
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 48
   },
   "qualified_companies": [
-    "RubikMedia / Рубик-М",
-    "Турборэнд",
-    "НИЦ ОБСК"
+    "СмартСофт / СмартЛомбард",
+    "Group Pack"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
@@ -39,7 +38,7 @@
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
   "outreach_sent": 0,
   "blocker": null,
-  "report_path": "reports/run_2026-08-15_239.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260815-239.csv",
+  "report_path": "reports/run_2026-08-15_240.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260815-240.csv",
   "aggregate_tail_path": "data/campaigns/new_5000/run_log_tail_198_onward.csv"
 }
