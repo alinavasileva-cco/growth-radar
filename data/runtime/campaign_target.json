@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 246,
-  "current_contactable_count": 246,
-  "progress_added": 246,
-  "remaining_to_total_target": 4754,
+  "current_canonical_count": 249,
+  "current_contactable_count": 249,
+  "progress_added": 249,
+  "remaining_to_total_target": 4751,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-15T16:10:32+03:00",
+  "updated_at": "2026-08-15T19:03:54+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260815-237",
+  "last_run_id": "N5K-20260815-238",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 237 reviewed 30 raw candidates and added 4 qualified companies: Авто Сувенир, Медальянс Клиник, КОСИМА and REMONT.IO. 26 candidates failed mandatory gates; no duplicates were counted. Integrity PASS; orphan contacts/evidence=0; outreach sent=0."
+  "note": "RUN 238 reviewed 50 raw candidates and added 3 qualified companies: Единый центр TRADE-IN / ФРЕШ 69, Группа МЕТТАТРОН and РТК Автоматика. 47 candidates failed mandatory gates; no duplicates were counted. Integrity PASS; orphan contacts/evidence=0; outreach sent=0."
 }
