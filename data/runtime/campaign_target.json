@@ -3,16 +3,16 @@
   "baseline_run_id": "N5K-20260803-001",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 239,
-  "current_contactable_count": 239,
-  "progress_added": 239,
-  "remaining_to_total_target": 4761,
+  "current_canonical_count": 242,
+  "current_contactable_count": 242,
+  "progress_added": 242,
+  "remaining_to_total_target": 4758,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-14T23:24:48+03:00",
+  "updated_at": "2026-08-15T15:08:51+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_run_id": "N5K-20260814-235",
+  "last_run_id": "N5K-20260815-236",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 235 started from confirmed RUN 234 after runtime repair. Reviewed 30 raw candidates; added 3 qualified companies (Zaboroff, Jungle Story / Икстеншн, Атмосферика), found 1 confirmed duplicate and excluded 26. Integrity PASS; orphan contacts/evidence=0."
+  "note": "RUN 236 reviewed 30 raw candidates and added 3 qualified companies: Рус-Лайн Инжиниринг, РИТСО-Консалтинг and СИАРЕС / CRS Company. 27 candidates failed mandatory gates; no duplicates were counted. Integrity PASS; orphan contacts/evidence=0; outreach sent=0."
 }
