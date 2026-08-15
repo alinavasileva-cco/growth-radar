@@ -1,8 +1,9 @@
 # Growth Radar — актуальная рабочая конфигурация
 
 **Версия:** 15.08.2026  
-**Последний запуск:** `N5K-20260815-241`  
-**Статус:** `COMPLETED` — integrity PASS; добавлена 1 новая квалифицированная компания  
+**Последний завершённый запуск:** `N5K-20260815-241`  
+**Текущий цикл:** `N5K-20260815-242` — `REPAIR_PHYSICAL_MASTER`  
+**Статус:** последний подтверждённый логический итог 255/255 сохранён; физические master-файлы требуют восстановления до полного verified union  
 **Текущая цель:** 5000 уникальных компаний с baseline=0; общий долгосрочный ориентир проекта — 50000  
 **Автоматический outreach:** запрещён
 
@@ -11,27 +12,25 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - baseline_count: **0**;
-- текущий канонический итог: **255**;
-- текущий contactable итог: **255**;
+- последний подтверждённый логический канонический итог: **255**;
+- последний подтверждённый логический contactable итог: **255**;
 - осталось до текущей цели 5000: **4745**;
 - старые 70 компаний сохранены без изменений и не входят в прогресс нового цикла.
 
-## Канонические файлы нового цикла
+## REPAIR, обнаруженный перед RUN 242
 
-- базовый master компаний: `data/campaigns/new_5000/leads_master.csv`;
-- базовый contactable master: `data/campaigns/new_5000/contactable_master.csv`;
-- проверенные новые компании дополнительно фиксируются в `data/campaigns/new_5000/master_shards/` и `data/campaigns/new_5000/contactable_shards/`;
-- контакты и доказательства: базовые CSV плюс проверенные RUN-increments;
-- логический канонический набор компаний/contactable: объединение базовых master-файлов и всех проверенных RUN-shards кампании `new_5000` без повторов по Lead ID/ИНН/ОГРН;
-- increments: `data/campaigns/new_5000/increments/`;
-- legacy campaign run log through RUN 197: `data/campaigns/new_5000/run_log.csv`;
-- verified aggregate tail RUN 198 onward: `data/campaigns/new_5000/run_log_tail_198_onward.csv`;
-- канонический run-log: логическое объединение legacy `run_log.csv` + verified tail без пересечения RUN ID;
-- RUN-логи: `data/campaigns/new_5000/run_logs/`;
-- runtime: `data/runtime/current_run_status.json` и `data/runtime/campaign_target.json`;
-- последний отчёт: `reports/run_2026-08-15_241.md`.
+Повторная проверка физического `data/campaigns/new_5000/leads_master.csv` показала, что файл не содержит полный набор из 255 подтверждённых компаний: полный итог ранее считался как логическое объединение базового master и verified RUN-shards. Аналогично единый физический `contactable_master.csv` не может считаться подтверждённым полным master без восстановления из verified shards.
 
-## Последний RUN — N5K-20260815-241
+По последнему прямому требованию пользователя все компании со статусом `МОЖНО СВЯЗЫВАТЬСЯ` должны физически находиться в едином contactable master. Поэтому предыдущий `integrity=PASS` недостаточен для нового RUN: до завершения следующего RUN необходимо восстановить физические `leads_master.csv` и `contactable_master.csv` из подтверждённых shards, дедуплицировать по Lead ID/ИНН/ОГРН/юрлицу/brand+domain и повторно проверить contacts/evidence orphan=0.
+
+До завершения REPAIR:
+- не обнулять подтверждённый логический результат 255;
+- не засчитывать новые компании как добавленные;
+- не объявлять новый RUN COMPLETED;
+- outreach = 0;
+- после восстановления физического master продолжить discovery 50–60 raw за RUN без снижения критериев.
+
+## Последний COMPLETED RUN — N5K-20260815-241
 
 - найдено сырых кандидатов: **50**;
 - size check passed: **2**;
@@ -41,23 +40,21 @@
 - contact route found: **1**;
 - квалифицировано и добавлено: **1**;
 - подтверждённые дубли: **4**;
-- исключено / не прошло обязательные гейты: **45**;
+- исключено: **45**;
 - добавленная компания: **МУЦ ДПО «Образовательный стандарт»**;
-- новый итог: **255 canonical / 255 contactable**;
-- integrity: **PASS**;
+- логический итог: **255 canonical / 255 contactable**;
 - orphan contacts: **0**;
 - orphan evidence: **0**;
-- outreach sent: **0**;
-- критерии не снижались;
-- при конфликте сведений о руководителях использовались более свежие реестровые данные, устаревшие записи не использовались для LPR.
+- outreach sent: **0**.
 
 ## Правило следующих RUN
 
-1. Всегда сначала определять последний фактически подтверждённый RUN по run_logs/master_shards/commits, а не доверять устаревшему runtime автоматически.
-2. При рассинхронизации сразу выполнять REPAIR в том же цикле и затем продолжать discovery; не отключать поиск молча.
-3. Каждый RUN: 50–60 сырых кандидатов, ACTIVE WIP <=50, воронка DISCOVERED → SIZE CHECK → LEGAL MATCH → SIGNAL CONFIRMED → LPR IDENTIFIED → CONTACT ROUTE FOUND → QUALIFIED.
-4. Целевой выход: 8–15 новых квалифицированных компаний, когда источники позволяют; критерии ради количества не снижать.
+1. Всегда сначала определять последний фактически подтверждённый RUN по Git commits, run_logs, master/contactable shards и runtime.
+2. При рассинхронизации сначала REPAIR и только затем завершение discovery RUN.
+3. Каждый полноценный discovery RUN: 50–60 сырых кандидатов, ACTIVE WIP <=50, воронка DISCOVERED → SIZE CHECK → LEGAL MATCH → SIGNAL CONFIRMED → LPR IDENTIFIED → CONTACT ROUTE FOUND → QUALIFIED.
+4. Целевой выход: 8–15 новых квалифицированных компаний, если источники позволяют; критерии не снижать.
 5. Дедупликация: Lead ID, ИНН, ОГРН/ОГРНИП, точное юрлицо, подтверждённая связка бренд+домен.
-6. Новые contactable компании должны в том же RUN иметь master/contactable запись, контакты, evidence, отдельный RUN-log, отчёт и обновлённый runtime.
-7. RUN считается завершённым только при integrity PASS, orphan contacts/evidence=0 и фактической записи в main.
+6. Новые contactable компании должны в том же RUN физически попадать в единые master/contactable, а также contacts, evidence, increments/shards, run_log, отдельный RUN-log, report, runtime и campaign_target.
+7. RUN считается завершённым только после физической записи в main, integrity PASS, orphan contacts=0, orphan evidence=0 и повторной проверки commit SHA.
 8. Автоматический outreach запрещён.
+9. Устаревшие сведения о компаниях и ЛПР не использовать, если доступны более свежие подтверждённые данные.
