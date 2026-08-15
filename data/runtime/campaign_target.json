@@ -7,12 +7,13 @@
   "current_contactable_count": 255,
   "progress_added": 255,
   "remaining_to_total_target": 4745,
-  "integrity_status": "PASS",
-  "campaign_status": "ACTIVE",
+  "integrity_status": "NEEDS_REPAIR",
+  "campaign_status": "ACTIVE_REPAIR",
   "started_at": "2026-08-03T14:00:00+03:00",
-  "updated_at": "2026-08-15T22:01:32+03:00",
+  "updated_at": "2026-08-15T23:59:05+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_run_id": "N5K-20260815-241",
+  "current_repair_run_id": "N5K-20260815-242",
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
-  "note": "RUN 241 reviewed 50 raw candidates and added 1 qualified company: МУЦ ДПО Образовательный стандарт. 4 confirmed duplicates, 45 failed mandatory gates. Integrity PASS; orphan contacts/evidence=0; outreach sent=0."
+  "note": "Last completed verified RUN remains 241 with logical canonical/contactable count 255. Physical leads_master.csv/contactable_master.csv are incomplete relative to the verified shard union and must be rebuilt before a new RUN can be completed. Outreach remains 0."
 }
