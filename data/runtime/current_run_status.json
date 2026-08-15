@@ -1,34 +1,33 @@
 {
-  "run_id": "N5K-20260815-240",
+  "run_id": "N5K-20260815-241",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "started_at": "2026-08-15T21:01:59+03:00",
-  "updated_at": "2026-08-15T21:09:01+03:00",
+  "started_at": "2026-08-15T22:01:32+03:00",
+  "updated_at": "2026-08-15T22:01:32+03:00",
   "stage": "COMPLETE",
   "integrity_precheck": "PASS",
   "repair_result": null,
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 254,
-    "current_contactable_count": 254,
-    "progress_added": 254,
-    "remaining": 4746
+    "current_canonical_count": 255,
+    "current_contactable_count": 255,
+    "progress_added": 255,
+    "remaining": 4745
   },
   "funnel": {
     "discovered": 50,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 0,
-    "excluded": 48
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 4,
+    "excluded": 45
   },
   "qualified_companies": [
-    "СмартСофт / СмартЛомбард",
-    "Group Pack"
+    "МУЦ ДПО «Образовательный стандарт»"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
@@ -38,7 +37,7 @@
   "run_log_mode": "logical_union_legacy_run_log_plus_verified_tail_198_onward",
   "outreach_sent": 0,
   "blocker": null,
-  "report_path": "reports/run_2026-08-15_240.md",
-  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260815-240.csv",
+  "report_path": "reports/run_2026-08-15_241.md",
+  "run_log_path": "data/campaigns/new_5000/run_logs/N5K-20260815-241.csv",
   "aggregate_tail_path": "data/campaigns/new_5000/run_log_tail_198_onward.csv"
 }
