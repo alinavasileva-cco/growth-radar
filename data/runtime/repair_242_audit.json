@@ -1,0 +1,537 @@
+{
+  "run_id": "N5K-20260815-242",
+  "generated_at": "2026-08-15T22:09:41.517137+00:00",
+  "historical_logical_count_before_repair": 255,
+  "reconstructed_historical_cards": 255,
+  "unique_components_before_coverage_gate": 113,
+  "duplicate_components_merged": 41,
+  "duplicate_cards_removed": 142,
+  "removed_no_contact_or_evidence": [
+    "N5K-0021",
+    "N5K-0236"
+  ],
+  "removed_total_from_historical_count": 144,
+  "corrected_canonical_count": 111,
+  "physical_master_count": 111,
+  "physical_contactable_count": 111,
+  "contacts_count": 643,
+  "evidence_count": 1152,
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "remaining": 4889,
+  "integrity": "PASS",
+  "outreach_sent": 0,
+  "duplicate_map": [
+    {
+      "representative": "N5K-0201",
+      "merged_ids": [
+        "N5K-0201",
+        "N5K-0173",
+        "N5K-0001"
+      ],
+      "inn": "9701198958",
+      "legal_name": "ООО «ОНЛАЙН ИНСТИТУТ СМАРТ»",
+      "brand": "Институт психологии Smart"
+    },
+    {
+      "representative": "N5K-0028",
+      "merged_ids": [
+        "N5K-0028",
+        "N5K-0002"
+      ],
+      "inn": "9705243672",
+      "legal_name": "ООО «РУСПАДЕЛ»",
+      "brand": "Руспадел"
+    },
+    {
+      "representative": "N5K-0211",
+      "merged_ids": [
+        "N5K-0211",
+        "N5K-0189",
+        "N5K-0174",
+        "N5K-0149",
+        "N5K-0003"
+      ],
+      "inn": "7728351582",
+      "legal_name": "ООО «ЛЕСРЕСУРС»",
+      "brand": "Лесресурс / ЛПК Лесресурс"
+    },
+    {
+      "representative": "N5K-0203",
+      "merged_ids": [
+        "N5K-0203",
+        "N5K-0182",
+        "N5K-0151",
+        "N5K-0006"
+      ],
+      "inn": "9731128394",
+      "legal_name": "ООО «СК РАЗВИТИЕ»",
+      "brand": "СК Развитие / Долговечные технологии"
+    },
+    {
+      "representative": "N5K-0207",
+      "merged_ids": [
+        "N5K-0207",
+        "N5K-0017",
+        "N5K-0007"
+      ],
+      "inn": "1685009187",
+      "legal_name": "ООО «ТЕХНОЛОГИИ ОЦЕНКИ»",
+      "brand": "Оценка.рф / Ocenka.tech"
+    },
+    {
+      "representative": "N5K-0194",
+      "merged_ids": [
+        "N5K-0194",
+        "N5K-0156",
+        "N5K-0027",
+        "N5K-0008"
+      ],
+      "inn": "9723233973",
+      "legal_name": "ООО «РУСЛИТЕКС»",
+      "brand": "Руслитекс"
+    },
+    {
+      "representative": "N5K-0243",
+      "merged_ids": [
+        "N5K-0243",
+        "N5K-0223",
+        "N5K-0197",
+        "N5K-0150",
+        "N5K-0122",
+        "N5K-0092",
+        "N5K-0059",
+        "N5K-0048",
+        "N5K-0034",
+        "N5K-0031",
+        "N5K-0020",
+        "N5K-0009"
+      ],
+      "inn": "7743799795",
+      "legal_name": "ООО «Авто Сувенир»",
+      "brand": "Авто Сувенир"
+    },
+    {
+      "representative": "N5K-0232",
+      "merged_ids": [
+        "N5K-0232",
+        "N5K-0198",
+        "N5K-0032",
+        "N5K-0010",
+        "N5K-0131"
+      ],
+      "inn": "7722681880",
+      "legal_name": "ООО «ОМ»",
+      "brand": "КЛЮЧ / KLCH"
+    },
+    {
+      "representative": "N5K-0177",
+      "merged_ids": [
+        "N5K-0177",
+        "N5K-0154",
+        "N5K-0124",
+        "N5K-0106",
+        "N5K-0091",
+        "N5K-0050",
+        "N5K-0044",
+        "N5K-0025",
+        "N5K-0011"
+      ],
+      "inn": "5032331540",
+      "legal_name": "ООО «МАРРОБ РУС»",
+      "brand": "MARROB"
+    },
+    {
+      "representative": "N5K-0205",
+      "merged_ids": [
+        "N5K-0205",
+        "N5K-0192",
+        "N5K-0180",
+        "N5K-0159",
+        "N5K-0146",
+        "N5K-0125",
+        "N5K-0098",
+        "N5K-0083",
+        "N5K-0052",
+        "N5K-0045",
+        "N5K-0023",
+        "N5K-0012"
+      ],
+      "inn": "7723401350",
+      "legal_name": "ООО «ТОРГ-ЛАЙТ»",
+      "brand": "Торг-Лайт"
+    },
+    {
+      "representative": "N5K-0193",
+      "merged_ids": [
+        "N5K-0193",
+        "N5K-0136",
+        "N5K-0042",
+        "N5K-0013"
+      ],
+      "inn": "540446068887",
+      "legal_name": "ИП Гармаш Юрий Владимирович",
+      "brand": "YURSUS"
+    },
+    {
+      "representative": "N5K-0188",
+      "merged_ids": [
+        "N5K-0188",
+        "N5K-0165",
+        "N5K-0135",
+        "N5K-0116",
+        "N5K-0040",
+        "N5K-0026",
+        "N5K-0014"
+      ],
+      "inn": "9718077870",
+      "legal_name": "ООО «ЕВРОПОДШИПНИК М»",
+      "brand": "Европодшипник М"
+    },
+    {
+      "representative": "N5K-0161",
+      "merged_ids": [
+        "N5K-0161",
+        "N5K-0132",
+        "N5K-0112",
+        "N5K-0015"
+      ],
+      "inn": "9701167325",
+      "legal_name": "ООО «ЛОГОС-ЛТД»",
+      "brand": "Logos-LTD"
+    },
+    {
+      "representative": "N5K-0231",
+      "merged_ids": [
+        "N5K-0231",
+        "N5K-0200",
+        "N5K-0086",
+        "N5K-0016"
+      ],
+      "inn": "5262292952",
+      "legal_name": "ООО «ВОРЛД РУСЛАНД»",
+      "brand": "ВОРЛД Русланд / World Machinery"
+    },
+    {
+      "representative": "N5K-0226",
+      "merged_ids": [
+        "N5K-0226",
+        "N5K-0199",
+        "N5K-0179",
+        "N5K-0157",
+        "N5K-0144",
+        "N5K-0113",
+        "N5K-0094",
+        "N5K-0049",
+        "N5K-0029",
+        "N5K-0018",
+        "N5K-0130"
+      ],
+      "inn": "772792124567",
+      "legal_name": "ИП Кожомин Кирилл Павлович",
+      "brand": "Chacha's Club / Chacha's Crew"
+    },
+    {
+      "representative": "N5K-0204",
+      "merged_ids": [
+        "N5K-0204",
+        "N5K-0185",
+        "N5K-0155",
+        "N5K-0138",
+        "N5K-0103",
+        "N5K-0085",
+        "N5K-0037",
+        "N5K-0030",
+        "N5K-0019"
+      ],
+      "inn": "772880332527",
+      "legal_name": "ИП Филигаров Максим Игоревич",
+      "brand": "Flaconia.Pro"
+    },
+    {
+      "representative": "N5K-0082",
+      "merged_ids": [
+        "N5K-0082",
+        "N5K-0033",
+        "N5K-0022"
+      ],
+      "inn": "7736330064",
+      "legal_name": "ООО «ДИДЖИТАЛ АЙ»",
+      "brand": "DIGITALI / Диджитал Ай"
+    },
+    {
+      "representative": "N5K-0187",
+      "merged_ids": [
+        "N5K-0187",
+        "N5K-0035"
+      ],
+      "inn": "7751201803",
+      "legal_name": "ООО «АДВОКОЛЛ»",
+      "brand": "AdvoCall"
+    },
+    {
+      "representative": "N5K-0237",
+      "merged_ids": [
+        "N5K-0237",
+        "N5K-0088",
+        "N5K-0036"
+      ],
+      "inn": "9709008831",
+      "legal_name": "ООО «ЗАБОРОФФ»",
+      "brand": "Zaboroff / Заборофф"
+    },
+    {
+      "representative": "N5K-0210",
+      "merged_ids": [
+        "N5K-0210",
+        "N5K-0129",
+        "N5K-0047",
+        "N5K-0039"
+      ],
+      "inn": "5257056710",
+      "legal_name": "ООО «ГОЛОВНОЙ РЕМОНТНО-ВОССТАНОВИТЕЛЬНЫЙ ПОЕЗД-НН»",
+      "brand": "ГОРЕМ-НН / Головной ремонтно-восстановительный поезд-НН"
+    },
+    {
+      "representative": "N5K-0238",
+      "merged_ids": [
+        "N5K-0238",
+        "N5K-0041"
+      ],
+      "inn": "7726428342",
+      "legal_name": "ООО «ИКСТЕНШН»",
+      "brand": "Jungle Story"
+    },
+    {
+      "representative": "N5K-0206",
+      "merged_ids": [
+        "N5K-0206",
+        "N5K-0183",
+        "N5K-0152",
+        "N5K-0139",
+        "N5K-0100",
+        "N5K-0062",
+        "N5K-0043"
+      ],
+      "inn": "9725010958",
+      "legal_name": "ООО «ПРОМЕТЕКС»",
+      "brand": "Прометекс"
+    },
+    {
+      "representative": "N5K-0213",
+      "merged_ids": [
+        "N5K-0213",
+        "N5K-0147",
+        "N5K-0076",
+        "N5K-0064",
+        "N5K-0051"
+      ],
+      "inn": "5009130780",
+      "legal_name": "ООО «ПАНЕЛЬТЭК»",
+      "brand": "ПанельТЭК"
+    },
+    {
+      "representative": "N5K-0069",
+      "merged_ids": [
+        "N5K-0069",
+        "N5K-0055"
+      ],
+      "inn": "7726385307",
+      "legal_name": "ООО «СМАРТБРИК»",
+      "brand": "MiMiSmart / СмартБрик"
+    },
+    {
+      "representative": "N5K-0056",
+      "merged_ids": [
+        "N5K-0056",
+        "N5K-0109",
+        "N5K-0077"
+      ],
+      "inn": "7723909753",
+      "legal_name": "ООО «ТРЕТЬЕ ЧУВСТВО»",
+      "brand": "Третье Чувство"
+    },
+    {
+      "representative": "N5K-0219",
+      "merged_ids": [
+        "N5K-0219",
+        "N5K-0061"
+      ],
+      "inn": "3241008153",
+      "legal_name": "ООО «РВШ.РФ»",
+      "brand": "РВШ.РФ"
+    },
+    {
+      "representative": "N5K-0081",
+      "merged_ids": [
+        "N5K-0081",
+        "N5K-0067"
+      ],
+      "inn": "7813607820",
+      "legal_name": "ООО «ЭНЭЛ ГРУП»",
+      "brand": "NL Group"
+    },
+    {
+      "representative": "N5K-0208",
+      "merged_ids": [
+        "N5K-0208",
+        "N5K-0191",
+        "N5K-0176",
+        "N5K-0158",
+        "N5K-0141",
+        "N5K-0123",
+        "N5K-0104",
+        "N5K-0084"
+      ],
+      "inn": "5261125733",
+      "legal_name": "ООО «НАЦТРАНС»",
+      "brand": "НАЦТРАНС"
+    },
+    {
+      "representative": "N5K-0225",
+      "merged_ids": [
+        "N5K-0225",
+        "N5K-0195",
+        "N5K-0178",
+        "N5K-0133",
+        "N5K-0090"
+      ],
+      "inn": "6685017532",
+      "legal_name": "ООО «РЕМАН-СЕРВИС»",
+      "brand": "Реман-Сервис"
+    },
+    {
+      "representative": "N5K-0209",
+      "merged_ids": [
+        "N5K-0209",
+        "N5K-0186",
+        "N5K-0167",
+        "N5K-0142",
+        "N5K-0118",
+        "N5K-0093"
+      ],
+      "inn": "7842027648",
+      "legal_name": "ООО «СУРИН»",
+      "brand": "19LAB / 19LAB ON SKIN"
+    },
+    {
+      "representative": "N5K-0222",
+      "merged_ids": [
+        "N5K-0222",
+        "N5K-0196",
+        "N5K-0181",
+        "N5K-0162",
+        "N5K-0137",
+        "N5K-0117",
+        "N5K-0095"
+      ],
+      "inn": "7721242143",
+      "legal_name": "АО ГРУППА КОМПАНИЙ «АНГЕЛ»",
+      "brand": "ГК Ангел / Ангел-Безопасность"
+    },
+    {
+      "representative": "N5K-0128",
+      "merged_ids": [
+        "N5K-0128",
+        "N5K-0097"
+      ],
+      "inn": "7724740517",
+      "legal_name": "ООО «ЦЕЛЕВЫЕ ПРОЕКТЫ»",
+      "brand": "FatFox / Целевые Проекты"
+    },
+    {
+      "representative": "N5K-0239",
+      "merged_ids": [
+        "N5K-0239",
+        "N5K-0202",
+        "N5K-0134",
+        "N5K-0102"
+      ],
+      "inn": "7814551360",
+      "legal_name": "ООО «АТМОСФЕРИКА»",
+      "brand": "Атмосферика"
+    },
+    {
+      "representative": "N5K-0220",
+      "merged_ids": [
+        "N5K-0220",
+        "N5K-0105"
+      ],
+      "inn": "9727002857",
+      "legal_name": "ООО «КЛИК ИНВЕСТ»",
+      "brand": "Клик Инвест / Qliq Invest"
+    },
+    {
+      "representative": "N5K-0168",
+      "merged_ids": [
+        "N5K-0168",
+        "N5K-0107"
+      ],
+      "inn": "9729273309",
+      "legal_name": "ООО «ПОИНКЭР»",
+      "brand": "ANGFA Russia"
+    },
+    {
+      "representative": "N5K-0184",
+      "merged_ids": [
+        "N5K-0184",
+        "N5K-0171",
+        "N5K-0114"
+      ],
+      "inn": "5402085719",
+      "legal_name": "ООО «СТО КОДОВ»",
+      "brand": "Сто Кодов"
+    },
+    {
+      "representative": "N5K-0212",
+      "merged_ids": [
+        "N5K-0212",
+        "N5K-0115"
+      ],
+      "inn": "0274136317",
+      "legal_name": "ООО «КД-ойл»",
+      "brand": "КД-ойл"
+    },
+    {
+      "representative": "N5K-0234",
+      "merged_ids": [
+        "N5K-0234",
+        "N5K-0160",
+        "N5K-0140"
+      ],
+      "inn": "9721149405",
+      "legal_name": "ООО «МОРЕ-МЕТИЗОВ»",
+      "brand": "MORE METIZOV / Море-Метизов"
+    },
+    {
+      "representative": "N5K-0224",
+      "merged_ids": [
+        "N5K-0224",
+        "N5K-0148"
+      ],
+      "inn": "5405951204",
+      "legal_name": "ООО «СОФТ АЛЬЯНС»",
+      "brand": "СОФТ АЛЬЯНС"
+    },
+    {
+      "representative": "N5K-0233",
+      "merged_ids": [
+        "N5K-0233",
+        "N5K-0169"
+      ],
+      "inn": "732705295186",
+      "legal_name": "ИП Валеева Луиза Альфиковна",
+      "brand": "Hugency"
+    },
+    {
+      "representative": "N5K-0241",
+      "merged_ids": [
+        "N5K-0241",
+        "N5K-0230"
+      ],
+      "inn": "7708670020",
+      "legal_name": "ООО «РИТСО-КОНСАЛТИНГ»",
+      "brand": "РИТСО-Консалтинг"
+    }
+  ]
+}

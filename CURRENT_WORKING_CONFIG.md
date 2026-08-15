@@ -58,3 +58,11 @@
 7. RUN считается завершённым только после физической записи в main, integrity PASS, orphan contacts=0, orphan evidence=0 и повторной проверки commit SHA.
 8. Автоматический outreach запрещён.
 9. Устаревшие сведения о компаниях и ЛПР не использовать, если доступны более свежие подтверждённые данные.
+
+
+## Canonical dedup repair — N5K-20260815-242
+
+- Исторические 255 карточек восстановлены из campaign sources.
+- После строгой дедупликации и contact/evidence coverage gate фактический canonical/contactable pool: **111**.
+- Дубли: **142**; без подтверждённого маршрута/evidence исключено: **2**.
+- Физические master: **111/111**; orphan `0/0`; integrity `PASS`; outreach `0`.

@@ -1,0 +1,2 @@
+Run ID,Started At,Completed At,Campaign ID,Discovered,Qualified,Duplicates,Excluded,Current Canonical,Current Contactable,Integrity,Orphan Contacts,Orphan Evidence,Report
+N5K-20260815-242,2026-08-15T22:09:41.517137+00:00,2026-08-15T22:09:41.517137+00:00,new_5000,0,0,142,2,111,111,PASS,0,0,reports/run_2026-08-16_242_physical_master_repair.md
