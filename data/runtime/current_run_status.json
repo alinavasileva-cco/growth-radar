@@ -1,39 +1,37 @@
 {
-  "run_id": "N5K-20260816-251",
+  "run_id": "N5K-20260816-252",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T10:18:00+03:00",
+  "updated_at": "2026-08-16T10:58:51+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 126,
-    "current_contactable_count": 126,
-    "progress_added": 126,
-    "remaining": 4874
+    "current_canonical_count": 127,
+    "current_contactable_count": 127,
+    "progress_added": 127,
+    "remaining": 4873
   },
   "funnel": {
-    "discovered": 50,
-    "size_check_passed": 4,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
-    "qualified": 3,
-    "duplicates": 6,
-    "excluded": 41
+    "discovered": 64,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 63
   },
   "qualified_companies": [
-    "ALLIO",
-    "UNIOR / Униор Профешнл Тулз",
-    "Климатическая Компания ОЗОН"
+    "НПО ГЕОН"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "126_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "126_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "127_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "127_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
