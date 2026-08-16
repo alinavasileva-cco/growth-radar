@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260816-254",
-  "updated_at": "2026-08-16T13:17:00+03:00",
+  "run_id": "N5K-20260816-255",
+  "updated_at": "2026-08-16T14:05:00+03:00",
   "funnel": {
-    "discovered": 54,
+    "discovered": 32,
     "size_check_passed": 3,
     "legal_match_passed": 3,
     "signal_confirmed": 2,
@@ -10,195 +10,195 @@
     "contact_route_found": 2,
     "qualified": 2,
     "duplicates": 6,
-    "excluded": 46
+    "excluded": 24
   },
-  "notes": "Accelerated multi-source discovery individually reviewed 54 distinct candidates in this cycle; the requested 100-150 target is not claimed because that many distinct companies were not individually enumerated and fast-gated. Fast gate passed 8 candidates into closer review. Six already-known companies were removed before deep analysis (including Auto Suvenir, RITSO-Consulting, Soft Alliance, BINAGroup, Zaboroff and Atmosferika). Current data excluded MTK Fortuna and Lesresurs for scale, Ectem OK and Optomed for current employee count below the canonical floor, FM Service and Optenergosbyt for scale above the canonical range, and several candidates for ambiguous brand-to-legal match. Prosche.AI and S-COPY passed current legal, scale, signal, owner/LPR and official contact-route gates. No criteria were widened and no outreach was performed.",
+  "notes": "Accelerated multi-source discovery reviewed 32 distinct candidate companies. Six repeated known companies were removed at fast dedup. Logos-LTD passed legal/size but was excluded because current 2025 revenue is about 1.2bn RUB, above the canonical range without separate approval. PlanFact / Maximum Web and Niti Tvorchestva passed legal, scale, signal, owner/LPR and contact-route gates. The requested 100-150 raw target is not claimed because only 32 distinct candidates were individually enumerated and fast-gated. No criteria were widened and no outreach was performed.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0273",
-      "Brand": "Prosche.AI / Платформа Проще",
-      "Legal Name": "ООО «ПЛАТФОРМА «ПРОЩЕ»",
-      "INN": "9707030870",
-      "OGRN/OGRNIP": "1247700383534",
-      "Region": "Москва",
-      "City": "Москва / Сколково",
-      "Segment": "B2B SaaS / AI / Data-продукты",
-      "Website": "https://prosche.ai/",
-      "Revenue/Scale": "Действующая частная IT-компания; выручка 288,322 млн ₽ за 2025 год; 50 сотрудников по данным ФНС за 2025 год",
+      "Lead ID": "N5K-0275",
+      "Brand": "ПланФакт",
+      "Legal Name": "ООО «МАКСИМУМ ВЕБ»",
+      "INN": "3233502746",
+      "OGRN/OGRNIP": "1093254010717",
+      "Region": "Брянская область",
+      "City": "Брянск / Москва",
+      "Segment": "B2B SaaS / управленческий финансовый учет",
+      "Website": "https://planfact.io/",
+      "Revenue/Scale": "Действующая частная IT-компания; выручка 222,266 млн ₽ за 2025 год; профиль работодателя указывает команду около 100 человек и 3500+ компаний-клиентов",
       "Signal Level": "S1",
-      "Signal Summary": "В июле 2026 компания запускает новое бизнес-направление Hitly — партнерскую платформу для продажи B2B SaaS/AI-продуктов МСБ; ищет руководителя направления с ответственностью за P&L, масштабирование гипотез, финансовую модель и развитие партнерской экосистемы.",
-      "Signal Date": "2026-07-16",
-      "Signal Source": "https://jobrun.ru/%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0-%D0%BF%D1%80%D0%BE%D1%89%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
-      "Owner": "Голуб Сергей Александрович — 70%; Бочкарев Николай Александрович — 30%",
-      "CEO": "Голуб Сергей Александрович",
-      "LPR": "Голуб Сергей Александрович",
-      "LPR Role": "Генеральный директор / совладелец 70%",
-      "Primary Phone": "+7 (499) 130-10-64",
-      "Primary Email": "support@prosche.ai",
-      "HH Contact": "https://spb.hh.ru/vacancies/agent",
-      "Contact Form": "https://prosche.ai/",
-      "Contact Type": "Официальный корпоративный маршрут к owner-CEO через телефон/email/сайт плюс свежий employer signal",
-      "Contact Source": "Официальный сайт Prosche.AI + HeadHunter/JobRun + актуальные реестровые данные 2026",
-      "Consulting Hypothesis": "Систематизация запуска нового B2B-направления: GTM и ICP партнерской платформы, P&L и unit economics, партнерская воронка, KPI/forecasting, CRM, масштабирование каналов и синхронизация продукта с коммерческой функцией.",
+      "Signal Summary": "Компания масштабирует новые продажи и ищет руководителя направления новых продаж для системного управления двумя линиями продаж, воронкой, опережающими метриками и масштабированием B2B SaaS-продаж.",
+      "Signal Date": "2026-01-12",
+      "Signal Source": "https://hh.ru/vacancy/129308781",
+      "Owner": "Боев Игорь Александрович; Боев Алексей Александрович; Ермаков Николай Владимирович",
+      "CEO": "Боев Игорь Александрович",
+      "LPR": "Боев Игорь Александрович",
+      "LPR Role": "Генеральный директор / сооснователь",
+      "Primary Phone": "+7 (495) 268-02-88",
+      "Primary Email": "support@planfact.io",
+      "HH Contact": "https://hh.ru/employer/856661",
+      "Contact Form": "https://planfact.io/about",
+      "Contact Type": "Официальный корпоративный маршрут к CEO через телефон/email/сайт и HeadHunter",
+      "Contact Source": "Официальный сайт ПланФакт; HeadHunter; РБК Компании; Saby/ФНС",
+      "Consulting Hypothesis": "Масштабирование B2B SaaS-продаж: ICP, архитектура двух линий продаж, CRM-воронка и forecasting, unit economics, KPI и связка маркетинга с коммерческой функцией.",
       "contacts": [
         {
-          "value": "+7 (499) 130-10-64",
+          "value": "+7 (495) 268-02-88",
           "channel": "Phone",
           "type": "Official corporate route",
-          "source": "Official Prosche.AI website",
-          "url": "https://prosche.ai/",
+          "source": "PlanFact official site",
+          "url": "https://planfact.io/agreement",
           "is_lpr": false,
-          "notes": "Официальный телефон компании; просить передать сообщение генеральному директору и совладельцу Сергею Голубу"
+          "notes": "Официальный телефон; просить передать сообщение генеральному директору Игорю Боеву"
         },
         {
-          "value": "support@prosche.ai",
+          "value": "support@planfact.io",
           "channel": "Email",
           "type": "Official corporate route",
-          "source": "Official Prosche.AI website",
-          "url": "https://prosche.ai/",
+          "source": "PlanFact official site",
+          "url": "https://planfact.io/agreement",
           "is_lpr": false,
-          "notes": "Официальный email компании; корпоративный маршрут передачи сообщения CEO/совладельцу"
+          "notes": "Официальный корпоративный email ПланФакт"
         },
         {
-          "value": "https://spb.hh.ru/vacancies/agent",
-          "channel": "Employer vacancy",
+          "value": "https://hh.ru/employer/856661",
+          "channel": "Employer profile",
           "type": "Employer signal route",
           "source": "HeadHunter",
-          "url": "https://spb.hh.ru/vacancies/agent",
+          "url": "https://hh.ru/employer/856661",
           "is_lpr": false,
-          "notes": "Свежая индексируемая вакансия руководителя бизнес-направления Платформа Проще"
+          "notes": "Профиль работодателя ПланФакт"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ПЛАТФОРМА «ПРОЩЕ», ИНН 9707030870, ОГРН 1247700383534, действует; генеральный директор — Голуб Сергей Александрович.",
-          "url": "https://companies.rbc.ru/id/1247700383534-ooo-platforma-prosche/",
-          "source": "РБК Компании / ЕГРЮЛ"
+          "claim": "ООО «МАКСИМУМ ВЕБ», ИНН 3233502746, ОГРН 1093254010717, действует; генеральный директор — Боев Игорь Александрович.",
+          "url": "https://planfact.io/accreditation",
+          "source": "Официальный сайт ПланФакт"
         },
         {
           "type": "SCALE",
-          "claim": "Выручка за 2025 год — 288,322 млн ₽; среднесписочная численность за 2025 год — 50 человек.",
-          "url": "https://www.companium.ru/id/1247700383534-platforma-proshche",
-          "source": "Companium / ФНС"
+          "claim": "Выручка за 2025 год — 222,266 млн ₽; актуальный профиль работодателя указывает команду около 100 человек и 3500+ компаний-клиентов.",
+          "url": "https://hh.ru/employer/1662661",
+          "source": "Saby / ФНС + HeadHunter employer profile"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Голуб Сергей Александрович — генеральный директор и совладелец 70%; Бочкарев Николай Александрович — совладелец 30%.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1247700383534/",
-          "source": "Т-Банк / ЕГРЮЛ"
+          "claim": "Генеральный директор — Боев Игорь Александрович; учредители — Боев Игорь, Боев Алексей и Ермаков Николай.",
+          "url": "https://companies.rbc.ru/id/1093254010717-ooo-maksimum-veb/",
+          "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "Официальный сайт Prosche.AI указывает ООО Платформа «Проще», ИНН 9707030870, ОГРН 1247700383534 и генерального директора Сергея Голуба.",
-          "url": "https://prosche.ai/",
-          "source": "Официальный сайт Prosche.AI"
+          "claim": "ПланФакт прямо связывает продукт с ООО «Максимум Веб», ИНН 3233502746, ОГРН 1093254010717.",
+          "url": "https://planfact.io/agreement",
+          "source": "Официальный сайт ПланФакт"
         },
         {
           "type": "SIGNAL",
-          "claim": "В июле 2026 компания запускает Hitly — новое B2B SaaS/AI партнерское направление — и ищет руководителя бизнес-направления для P&L, масштабирования и развития партнерской экосистемы.",
-          "url": "https://jobrun.ru/%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0-%D0%BF%D1%80%D0%BE%D1%89%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
-          "source": "JobRun / HeadHunter vacancy index"
+          "claim": "В январе 2026 ПланФакт искал руководителя направления новых продаж для системного масштабирования двух линий продаж, воронки и метрик.",
+          "url": "https://hh.ru/vacancy/129308781",
+          "source": "HeadHunter"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует телефон +7 (499) 130-10-64 и email support@prosche.ai; CEO/совладелец установлен, поэтому есть практический корпоративный маршрут к ЛПР.",
-          "url": "https://prosche.ai/",
-          "source": "Официальный сайт Prosche.AI"
+          "claim": "Официальный сайт публикует телефон +7 (495) 268-02-88 и support@planfact.io; CEO установлен.",
+          "url": "https://planfact.io/agreement",
+          "source": "Официальный сайт ПланФакт"
         }
       ]
     },
     {
-      "Lead ID": "N5K-0274",
-      "Brand": "S-COPY / С-КОПИ",
-      "Legal Name": "ООО «С-КОПИ»",
-      "INN": "7840054244",
-      "OGRN/OGRNIP": "1167847293371",
-      "Region": "Санкт-Петербург",
-      "City": "Санкт-Петербург",
-      "Segment": "Полиграфия / инженерная печать / B2B",
-      "Website": "https://s-copy.spb.ru/",
-      "Revenue/Scale": "Действующая частная компания; выручка 459,2 млн ₽ за 2025 год; 35 сотрудников по данным ФНС за 2025 год",
+      "Lead ID": "N5K-0276",
+      "Brand": "Нити Творчества",
+      "Legal Name": "ИП Бабак Татьяна Владимировна",
+      "INN": "540605856741",
+      "OGRN/OGRNIP": "321547600141377",
+      "Region": "Удмуртская Республика / Новосибирск",
+      "City": "Новосибирск",
+      "Segment": "E-commerce / товары для творчества / маркетплейсы",
+      "Website": "https://nititv.ru/",
+      "Revenue/Scale": "Действующий ИП; бренд заявляет 40+ млн ₽ ежемесячной выручки в 2026 году; отдел продаж 6 человек; 1000+ SKU",
       "Signal Level": "S1",
-      "Signal Summary": "Компания активно расширяется по регионам и в 2026 году запускает новое B2B-направление печати самоклеящихся этикеток; одновременно формирует отдельную коммерческую команду направления, использует CRM и строит выход на ЛПР.",
-      "Signal Date": "2026-07-02",
-      "Signal Source": "https://remote-job.ru/search?search%5Bquery%5D=%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+B2B+%28%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%29&search%5BsearchType%5D=vacancy",
-      "Owner": "Чивирев Артур Юрьевич — 100%",
-      "CEO": "Чивирев Артур Юрьевич",
-      "LPR": "Чивирев Артур Юрьевич",
-      "LPR Role": "Генеральный директор / единственный учредитель",
-      "Primary Phone": "+7 (812) 635-23-33",
-      "Primary Email": "aaa@s-copy.ru",
-      "HH Contact": "https://spb.hh.ru/vacancy/129892002",
-      "Contact Form": "https://s-copy.spb.ru/kontakty/",
-      "Contact Type": "Официальный корпоративный маршрут к owner-CEO через телефон/email/форму плюс свежие вакансии нового направления",
-      "Contact Source": "Официальный сайт S-COPY + HeadHunter/Remote-job + актуальные данные ФНС/ЕГРЮЛ",
-      "Consulting Hypothesis": "Коммерческая архитектура нового B2B-направления этикеток: ICP и сегментация, outbound/leadgen, CRM-воронка, KPI, экономика канала, стандарты выхода на ЛПР и масштабирование направления по регионам без потери маржи.",
+      "Signal Summary": "Бренд масштабирует продажи на маркетплейсах и собственных каналах; в феврале 2026 ищет руководителя продаж для роста валовой прибыли, оптимизации товарной матрицы и системного вывода новых SKU.",
+      "Signal Date": "2026-02-24",
+      "Signal Source": "https://dreamjob.ru/employers/2762141/vakansii/130701009",
+      "Owner": "Бабак Татьяна Владимировна",
+      "CEO": "Бабак Татьяна Владимировна",
+      "LPR": "Бабак Татьяна Владимировна",
+      "LPR Role": "Индивидуальный предприниматель / владелец бренда",
+      "Primary Phone": "+7 (965) 828-69-00",
+      "Primary Email": "nititv@yandex.ru",
+      "HH Contact": "https://hh.ru/employer/9726825",
+      "Contact Form": "https://nititv.ru/kontaktyi",
+      "Contact Type": "Официальный маршрут к владельцу через телефон/email/сайт и профиль работодателя",
+      "Contact Source": "Официальный сайт Нити Творчества; HeadHunter; DreamJob; Т-Банк/ФНС",
+      "Consulting Hypothesis": "Рост e-commerce без потери валовой прибыли: SKU-экономика, P&L по каналам, KPI команды, forecasting, аналитика, развитие собственных каналов и снижение зависимости от маркетплейсов.",
       "contacts": [
         {
-          "value": "+7 (812) 635-23-33",
+          "value": "+7 (965) 828-69-00",
           "channel": "Phone",
           "type": "Official corporate route",
-          "source": "Official S-COPY website",
-          "url": "https://s-copy.spb.ru/kontakty/",
+          "source": "Official Niti Tvorchestva website",
+          "url": "https://nititv.ru/kontaktyi",
           "is_lpr": false,
-          "notes": "Официальный телефон компании; просить соединить с генеральным директором и единственным учредителем Артуром Чивиревым"
+          "notes": "Официальный телефон; просить передать сообщение владельцу Татьяне Бабак"
         },
         {
-          "value": "aaa@s-copy.ru",
+          "value": "nititv@yandex.ru",
           "channel": "Email",
           "type": "Official corporate route",
-          "source": "Official S-COPY website",
-          "url": "https://s-copy.spb.ru/kontakty/",
+          "source": "Official Niti Tvorchestva website",
+          "url": "https://nititv.ru/rekvizityi",
           "is_lpr": false,
-          "notes": "Официальный email компании; корпоративный маршрут передачи сообщения owner-CEO"
+          "notes": "Официальный email бренда"
         },
         {
-          "value": "https://spb.hh.ru/vacancy/129892002",
-          "channel": "Employer vacancy",
+          "value": "https://hh.ru/employer/9726825",
+          "channel": "Employer profile",
           "type": "Employer signal route",
           "source": "HeadHunter",
-          "url": "https://spb.hh.ru/vacancy/129892002",
+          "url": "https://hh.ru/employer/9726825",
           "is_lpr": false,
-          "notes": "Публичная вакансия отдельного отдела развития нового B2B-направления"
+          "notes": "Профиль работодателя Нити Творчества"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «С-КОПИ», ИНН 7840054244, ОГРН 1167847293371, действует; генеральный директор — Чивирев Артур Юрьевич.",
-          "url": "https://companium.ru/id/1167847293371-s-kopi",
-          "source": "Companium / ЕГРЮЛ"
+          "claim": "ИП Бабак Татьяна Владимировна, ИНН 540605856741, ОГРНИП 321547600141377, действует.",
+          "url": "https://www.tbank.ru/business/contractor/legal/321547600141377/",
+          "source": "Т-Банк / ФНС"
         },
         {
           "type": "SCALE",
-          "claim": "Выручка за 2025 год — 459,2 млн ₽; среднесписочная численность за 2025 год — 35 человек.",
-          "url": "https://companium.ru/id/1167847293371-s-kopi",
-          "source": "Companium / ФНС"
+          "claim": "В феврале 2026 бренд заявлял 40+ млн ₽ ежемесячной выручки, отдел продаж из 6 человек и ассортимент 1000+ SKU.",
+          "url": "https://dreamjob.ru/employers/2762141/vakansii/130701009",
+          "source": "DreamJob / вакансия работодателя"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Чивирев Артур Юрьевич — генеральный директор и единственный учредитель ООО «С-КОПИ».",
-          "url": "https://check.tochka.com/company/1167847293371/",
-          "source": "Точка / ЕГРЮЛ"
+          "claim": "ИП и владелец бренда — Бабак Татьяна Владимировна; товарный знак «Нити Творчества» зарегистрирован на неё.",
+          "url": "https://companies.rbc.ru/trademark/956056/niti-tvorchestva/",
+          "source": "РБК Компании / реестр товарных знаков"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "Официальный сайт S-COPY прямо указывает ООО «С-КОПИ», ИНН 7840054244, ОГРН 1167847293371 и адрес на Днепропетровской, 5, совпадающий с работодателем.",
-          "url": "https://s-copy.spb.ru/o-kompanii/",
-          "source": "Официальный сайт S-COPY"
+          "claim": "Официальная страница реквизитов Нити Творчества указывает ИП Бабак Т. В., ИНН 540605856741 и ОГРНИП 321547600141377.",
+          "url": "https://nititv.ru/rekvizityi",
+          "source": "Официальный сайт Нити Творчества"
         },
         {
           "type": "SIGNAL",
-          "claim": "Вакансии 2026 года фиксируют запуск нового направления самоклеящихся этикеток, отдельный отдел развития, B2B-продажи, CRM и выход на ЛПР; свежая индексируемая вакансия направления датирована июлем 2026.",
-          "url": "https://remote-job.ru/search?search%5Bquery%5D=%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+B2B+%28%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%29&search%5BsearchType%5D=vacancy",
-          "source": "Remote-job / HeadHunter"
+          "claim": "Компания масштабирует продажи на маркетплейсах и собственных каналах; руководитель продаж отвечает за рост валовой прибыли, товарную матрицу и системный вывод новых SKU.",
+          "url": "https://dreamjob.ru/employers/2762141/vakansii/130701009",
+          "source": "DreamJob / HeadHunter vacancy mirror"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует телефон +7 (812) 635-23-33 и email aaa@s-copy.ru; owner-CEO установлен, поэтому есть практический маршрут передачи сообщения ЛПР.",
-          "url": "https://s-copy.spb.ru/kontakty/",
-          "source": "Официальный сайт S-COPY"
+          "claim": "Официальный сайт публикует телефон +7 (965) 828-69-00 и email nititv@yandex.ru; владелец установлен.",
+          "url": "https://nititv.ru/rekvizityi",
+          "source": "Официальный сайт Нити Творчества"
         }
       ]
     }
