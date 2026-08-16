@@ -8,11 +8,11 @@
     "signal_confirmed": 4,
     "lpr_identified": 4,
     "contact_route_found": 4,
-    "qualified": 4,
-    "duplicates": 5,
+    "qualified": 3,
+    "duplicates": 6,
     "excluded": 41
   },
-  "notes": "Accelerated multi-source discovery enumerated 50 distinct candidate companies from current/fresh HH sales-leadership signals and company/registry sources. Search-result totals were not counted as screened candidates. Five surfaced candidates were confirmed historical duplicates before deep analysis (including Авто Сувенир, MARROB, PRAID, CARP and Икстеншн/Jungle Story). Fast/deep gate fully passed by four companies. Fresh 2025 scale data were used instead of older lower figures: Papatools was excluded after 2025 revenue reached about 829m RUB, and Logos-LTD was excluded after 2025 revenue exceeded 1bn RUB. No criteria were widened and no outreach was performed.",
+  "notes": "Accelerated multi-source discovery enumerated 50 distinct candidate companies from current/fresh HH sales-leadership signals and company/registry sources. Search-result totals were not counted as screened candidates. Six candidates were confirmed historical duplicates before/final integration, including MORE METIZOV already present as N5K-0234. Fast/deep gate fully passed by three unique companies after final physical dedup. Fresh 2025 scale data were used instead of older lower figures: Papatools was excluded after 2025 revenue reached about 829m RUB, and Logos-LTD was excluded after 2025 revenue exceeded 1bn RUB. No criteria were widened and no outreach was performed.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0268",
@@ -132,46 +132,6 @@
         {"type": "BRAND_MATCH", "claim": "Вакансия и официальный производственный сайт используют бренд «Климатическая Компания ОЗОН» и профиль собственного производства вентиляционного оборудования.", "url": "https://zavod.ozon-air.ru/", "source": "Официальный сайт; HeadHunter"},
         {"type": "SIGNAL", "claim": "Вакансия от 25.01.2026 требует создать B2B-отдел, выходить на новые рынки РФ и выстраивать длинные сделки 30–50+ млн ₽.", "url": "https://hh.ru/vacancy/129582718", "source": "HeadHunter"},
         {"type": "CONTACT_ROUTE", "claim": "Официальный сайт производителя публикует корпоративный телефон +7 (3466) 31-60-10; вместе с установленным owner-CEO это практический маршрут передачи предложения.", "url": "https://zavod.ozon-air.ru/", "source": "Официальный сайт ОЗОН"}
-      ]
-    },
-    {
-      "Lead ID": "N5K-0271",
-      "Brand": "MORE METIZOV / Море-Метизов",
-      "Legal Name": "ООО «МОРЕ-МЕТИЗОВ»",
-      "INN": "9721149405",
-      "OGRN/OGRNIP": "1217700550671",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Метизы и крепёж / B2B-дистрибуция",
-      "Website": "https://more-metizov.ru/",
-      "Revenue/Scale": "Выручка 83,28 млн ₽ за 2025 год; действующая компания; 7 сотрудников по последнему доступному показателю численности",
-      "Signal Level": "S1",
-      "Signal Summary": "Компания нанимает руководителя отдела продаж с возможностью построить собственную систему продаж с нуля, собрать команду и напрямую работать с собственником; предусмотрен рост до коммерческого директора.",
-      "Signal Date": "2026-01-13",
-      "Signal Source": "https://hh.ru/vacancy/129367161",
-      "Owner": "Сибирцева Ирина Юрьевна — 100%",
-      "CEO": "Сибирцева Ирина Юрьевна",
-      "LPR": "Сибирцева Ирина Юрьевна",
-      "LPR Role": "Генеральный директор / единственный учредитель",
-      "Primary Phone": "+7 (495) 109-33-15",
-      "Primary Email": "info@more-metizov.ru",
-      "HH Contact": "https://hh.ru/vacancy/129367161",
-      "Contact Form": "https://more-metizov.ru/",
-      "Contact Type": "Корпоративный маршрут к owner-CEO через официальный телефон/email/заказ звонка и прямой HH-сигнал",
-      "Contact Source": "Официальный сайт MORE METIZOV; HeadHunter; Т-Банк/ЕГРЮЛ",
-      "Consulting Hypothesis": "Построение повторяемой B2B-системы продаж крепежа: сегментация клиентов и отраслей, CRM-воронка, KPI менеджеров, стандарты активных продаж, ассортиментная/маржинальная аналитика и управляемое масштабирование команды.",
-      "contacts": [
-        {"value": "+7 (495) 109-33-15", "channel": "Phone", "type": "Corporate", "source": "Official MORE METIZOV website", "url": "https://more-metizov.ru/", "is_lpr": false, "notes": "Официальный корпоративный телефон"},
-        {"value": "info@more-metizov.ru", "channel": "Email", "type": "Corporate", "source": "Official MORE METIZOV website", "url": "https://more-metizov.ru/", "is_lpr": false, "notes": "Официальный email"},
-        {"value": "https://hh.ru/vacancy/129367161", "channel": "HeadHunter", "type": "Employer signal route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129367161", "is_lpr": false, "notes": "Вакансия РОП с построением системы продаж с нуля"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ООО «МОРЕ-МЕТИЗОВ», ИНН 9721149405, ОГРН 1217700550671, действующая организация; генеральный директор — Сибирцева Ирина Юрьевна.", "url": "https://www.tbank.ru/business/contractor/legal/1217700550671/", "source": "Т-Банк / ФНС"},
-        {"type": "SCALE", "claim": "Выручка ООО «МОРЕ-МЕТИЗОВ» за 2025 год — 83,28 млн ₽; свежая отчетность заменяет более старый показатель 2024 года.", "url": "https://www.tbank.ru/business/contractor/legal/1217700550671/", "source": "Т-Банк / ФНС"},
-        {"type": "OWNER_LPR", "claim": "Сибирцева Ирина Юрьевна — генеральный директор и учредитель 100%.", "url": "https://www.tbank.ru/business/contractor/legal/1217700550671/", "source": "Т-Банк / ЕГРЮЛ"},
-        {"type": "BRAND_MATCH", "claim": "РБК фиксирует действующую торговую марку MORE METIZOV за ООО «МОРЕ-МЕТИЗОВ»; официальный сайт использует этот бренд.", "url": "https://companies.rbc.ru/id/1217700550671-obschestvo-s-ogranichennoj-otvetstvennostyu-more-metizov/", "source": "РБК Компании; официальный сайт"},
-        {"type": "SIGNAL", "claim": "Вакансия РОП от 13.01.2026 предусматривает построение системы продаж с нуля, сбор команды, прямую работу с собственником и рост до коммерческого директора.", "url": "https://hh.ru/vacancy/129367161", "source": "HeadHunter"},
-        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт публикует телефон +7 (495) 109-33-15, email info@more-metizov.ru и форму заказа звонка.", "url": "https://more-metizov.ru/", "source": "Официальный сайт MORE METIZOV"}
       ]
     }
   ]
