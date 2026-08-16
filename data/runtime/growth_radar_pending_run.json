@@ -1,111 +1,111 @@
 {
-  "run_id": "N5K-20260816-256",
-  "updated_at": "2026-08-16T15:00:00+03:00",
+  "run_id": "N5K-20260816-257",
+  "updated_at": "2026-08-16T15:59:00+03:00",
   "funnel": {
-    "discovered": 38,
-    "fast_gate_passed": 5,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
+    "discovered": 26,
+    "fast_gate_passed": 6,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
     "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 9,
-    "excluded": 28
+    "duplicates": 5,
+    "excluded": 20
   },
-  "notes": "Accelerated multi-source discovery individually enumerated 38 distinct raw companies. Physical pre-write dedup correctly caught EPSILON GIFTS as an existing master record N5K-0101 despite repository code search returning no hit; it was removed from pending and counted as a duplicate. Vervex Energy was rechecked against the physical master and no INN 7816320230 match was found. Fresh 2025/2026 data excluded SVC POLIS812 and Aysedora on employee size; other candidates failed scale, legal-match, signal, LPR or contact-route gates. The requested 100-150 raw target is not claimed because only 38 distinct candidates were individually enumerated. No criteria were widened and no outreach was performed.",
+  "notes": "Accelerated multi-source cycle individually reviewed 26 distinct company candidates. The requested 100-150 raw target was not reached in this execution, so no larger discovery number is claimed. Fast gate removed recruiter proxies, microbusinesses below current size criteria, ambiguous brand-to-legal matches and existing physical-master duplicates before deep analysis. Physical pre-write dedup against leads_master confirmed no INN 5007087850 match for Avangard. Fresh 2025/2026 data were used for scale and decision-making; stale records were not used where newer data existed. No criteria were widened and no outreach was performed.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0277",
-      "Brand": "Vervex Energy / Вервекс Энерджи",
-      "Legal Name": "ООО «ВЕРВЕКС ЭНЕРДЖИ»",
-      "INN": "7816320230",
-      "OGRN/OGRNIP": "1167847105975",
-      "Region": "Санкт-Петербург",
-      "City": "Санкт-Петербург",
-      "Segment": "B2B химическая продукция / сервисы дезинфекции",
-      "Website": "https://vervex.ru/",
-      "Revenue/Scale": "Действующая частная компания; выручка 693,324 млн ₽ за 2025 год; 69 сотрудников по данным ФНС за 2025 год",
+      "Lead ID": "N5K-0278",
+      "Brand": "Авангард / Avangard Дмитров",
+      "Legal Name": "ООО «АВАНГАРД»",
+      "INN": "5007087850",
+      "OGRN/OGRNIP": "1135007003515",
+      "Region": "Московская область",
+      "City": "Дмитров",
+      "Segment": "Производство строительных материалов / чердачные лестницы / B2B",
+      "Website": "https://avangard-d.nethouse.ru/",
+      "Revenue/Scale": "Действующая частная производственная компания; выручка 430,1 млн ₽ за 2025 год; 149 сотрудников за 2025 год по свежим реестровым данным",
       "Signal Level": "S1",
-      "Signal Summary": "В январе 2026 собственник запускает B2B-направление услуг дезинфекции практически с нуля: 0 менеджеров, 0 маркетинга, требуется первый продавец-строитель с последующим формированием отдела и влиянием на стратегию направления.",
-      "Signal Date": "2026-01-20",
-      "Signal Source": "https://spb.hh.ru/vacancy/129648069",
-      "Owner": "Добони Артем Александрович — 100%",
-      "CEO": "Добони Артем Александрович",
-      "LPR": "Добони Артем Александрович",
-      "LPR Role": "Генеральный директор / единственный учредитель",
-      "Primary Phone": "+7 (812) 407-30-16",
-      "Primary Email": "info@vervex.ru",
-      "HH Contact": "https://spb.hh.ru/vacancy/129648069",
-      "Contact Form": "https://vervex.ru/",
-      "Contact Type": "Корпоративный маршрут к owner-CEO через опубликованный телефон/email/сайт и прямой HH-сигнал",
-      "Contact Source": "HeadHunter; Companium/ФНС; Xfirm/ЕГРЮЛ",
-      "Consulting Hypothesis": "Запуск нового B2B-сервисного направления: ICP и сегментация, холодная воронка, CRM, unit economics и маржинальность, первые repeatable sales motions, найм команды и переход от founder-led запуска к системному отделу.",
+      "Signal Summary": "В июне 2026 компания поставила стратегическую задачу масштабировать бизнес из сильного marketplace-канала в офлайн, с нуля выстроить B2B-каналы продаж в строительные рынки, розничные сети и к дизайнерам, а также оцифровать работу укомплектованной команды продаж.",
+      "Signal Date": "2026-06-13",
+      "Signal Source": "https://dmitrov.careerist.ru/vakansii/rukovoditel-otdela-prodazh-b2b-proizvodstvo-marketpleysy-omnikanalnye-prodazhi-87377188.html",
+      "Owner": "Снежко Дмитрий Борисович — 75%; Дядченко Николай Николаевич — 25%",
+      "CEO": "Лоханько Сергей Владимирович",
+      "LPR": "Лоханько Сергей Владимирович",
+      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Primary Phone": "+7 (495) 143-27-32",
+      "Primary Email": "avangard-dm@bk.ru",
+      "HH Contact": "https://dmitrov.hh.ru/vacancies/direktor_po_prodazham/polnaya_zanyatost",
+      "Contact Form": "https://avangard-d.nethouse.ru/",
+      "Contact Type": "Корпоративный маршрут к генеральному директору через опубликованный телефон/email/сайт и актуальную вакансию работодателя",
+      "Contact Source": "HeadHunter/Careerist; свежие реестровые источники; ProductCenter 2026",
+      "Consulting Hypothesis": "Масштабирование производственного бизнеса из marketplace-модели в омниканальные B2B-продажи: сегментация DIY/строительных рынков/дилеров/дизайнеров, CRM и воронка, KPI, pricing и маржинальность каналов, стандарты KAM и план выхода в офлайн без просадки действующего e-commerce.",
       "contacts": [
         {
-          "value": "+7 (812) 407-30-16",
+          "value": "+7 (495) 143-27-32",
           "channel": "Phone",
           "type": "Published corporate route",
-          "source": "Companium company profile",
-          "url": "https://companium.ru/id/1167847105975-verveks-ehnerdzhi",
+          "source": "ProductCenter company profile 2026",
+          "url": "https://productcenter.ru/producers/21653/avangard",
           "is_lpr": false,
-          "notes": "Опубликованный корпоративный телефон; просить передать сообщение собственнику и генеральному директору Артему Добони"
+          "notes": "Опубликованный корпоративный телефон ООО «АВАНГАРД»; просить соединить с генеральным директором Лоханько Сергеем Владимировичем"
         },
         {
-          "value": "info@vervex.ru",
+          "value": "avangard-dm@bk.ru",
           "channel": "Email",
           "type": "Published corporate route",
-          "source": "Companium company profile",
-          "url": "https://companium.ru/id/1167847105975-verveks-ehnerdzhi",
+          "source": "ProductCenter company profile 2026",
+          "url": "https://productcenter.ru/producers/21653/avangard",
           "is_lpr": false,
-          "notes": "Опубликованный корпоративный email"
+          "notes": "Опубликованный корпоративный email, связанный с ООО «АВАНГАРД», ИНН 5007087850"
         },
         {
-          "value": "https://spb.hh.ru/vacancy/129648069",
+          "value": "https://dmitrov.careerist.ru/vakansii/rukovoditel-otdela-prodazh-b2b-proizvodstvo-marketpleysy-omnikanalnye-prodazhi-87377188.html",
           "channel": "Employer vacancy",
           "type": "Employer signal route",
-          "source": "HeadHunter",
-          "url": "https://spb.hh.ru/vacancy/129648069",
+          "source": "Careerist / vacancy sourced from employer market",
+          "url": "https://dmitrov.careerist.ru/vakansii/rukovoditel-otdela-prodazh-b2b-proizvodstvo-marketpleysy-omnikanalnye-prodazhi-87377188.html",
           "is_lpr": false,
-          "notes": "Прямой сигнал собственника через вакансию работодателя"
+          "notes": "Актуальный коммерческий сигнал работодателя о масштабировании офлайн и построении B2B-каналов с нуля"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ВЕРВЕКС ЭНЕРДЖИ», ИНН 7816320230, ОГРН 1167847105975, действует; генеральный директор — Добони Артем Александрович.",
-          "url": "https://xfirm.ru/company/7816320230",
-          "source": "Xfirm / ЕГРЮЛ"
+          "claim": "ООО «АВАНГАРД», ИНН 5007087850, ОГРН 1135007003515, действующая частная компания; генеральный директор — Лоханько Сергей Владимирович.",
+          "url": "https://reputation.ru/ogrn/1135007003515",
+          "source": "Reputation / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Выручка за 2025 год — 693,324 млн ₽; 69 сотрудников по данным ФНС за 2025 год.",
-          "url": "https://companium.ru/id/1167847105975-verveks-ehnerdzhi",
-          "source": "Companium / ФНС"
+          "claim": "Свежие данные за 2025 год: выручка около 430,1 млн ₽, 149 сотрудников.",
+          "url": "https://reputation.ru/ogrn/1135007003515",
+          "source": "Reputation / ФНС"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Добони Артем Александрович — генеральный директор и единственный учредитель компании.",
-          "url": "https://xfirm.ru/company/7816320230",
-          "source": "Xfirm / ЕГРЮЛ"
+          "claim": "Снежко Дмитрий Борисович владеет 75%, Дядченко Николай Николаевич — 25%; генеральный директор Лоханько Сергей Владимирович.",
+          "url": "https://check.tochka.com/company/1135007003515/",
+          "source": "Точка / ЕГРЮЛ"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "Вакансия опубликована непосредственно ООО «Вервекс Энерджи»; юридические реквизиты соответствуют ООО «ВЕРВЕКС ЭНЕРДЖИ», ИНН 7816320230.",
-          "url": "https://spb.hh.ru/vacancy/129648069",
+          "claim": "Вакансия ООО «Авангард» находится по адресу Дмитров, ул. Бирлово Поле, 35; тот же адрес и производство подтверждены для ООО «АВАНГАРД», ИНН 5007087850.",
+          "url": "https://dmitrov.hh.ru/vacancies/direktor_po_prodazham/polnaya_zanyatost",
           "source": "HeadHunter + ЕГРЮЛ"
         },
         {
           "type": "SIGNAL",
-          "claim": "20 января 2026 компания заявила запуск B2B-направления дезинфекции с 0 менеджеров и 0 маркетинга и запрос собственника на построение продаж и последующую команду.",
-          "url": "https://spb.hh.ru/vacancy/129648069",
-          "source": "HeadHunter"
+          "claim": "13 июня 2026 компания заявила стратегическую задачу масштабировать офлайн-продажи, с нуля построить B2B-каналы и оцифровать работу команды.",
+          "url": "https://dmitrov.careerist.ru/vakansii/rukovoditel-otdela-prodazh-b2b-proizvodstvo-marketpleysy-omnikanalnye-prodazhi-87377188.html",
+          "source": "Careerist"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Опубликованы корпоративные телефон +7 (812) 407-30-16 и email info@vervex.ru; owner-CEO установлен.",
-          "url": "https://companium.ru/id/1167847105975-verveks-ehnerdzhi",
-          "source": "Companium"
+          "claim": "Публично подтверждены телефон +7 (495) 143-27-32, email avangard-dm@bk.ru и сайт, связанные с ООО «АВАНГАРД», ИНН 5007087850.",
+          "url": "https://productcenter.ru/producers/21653/avangard",
+          "source": "ProductCenter 2026"
         }
       ]
     }
