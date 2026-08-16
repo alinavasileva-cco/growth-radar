@@ -1,39 +1,38 @@
 {
-  "run_id": "N5K-20260816-246",
+  "run_id": "N5K-20260816-247",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T05:57:55+03:00",
+  "updated_at": "2026-08-16T07:01:14+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 118,
-    "current_contactable_count": 118,
-    "progress_added": 118,
-    "remaining": 4882
+    "current_canonical_count": 120,
+    "current_contactable_count": 120,
+    "progress_added": 120,
+    "remaining": 4880
   },
   "funnel": {
     "discovered": 50,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "duplicates": 1,
-    "excluded": 46
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 5,
+    "excluded": 43
   },
   "qualified_companies": [
-    "Промышленные редукторы",
-    "Кристон-Кадастр",
-    "Орион-Металл"
+    "CARP",
+    "ФранчБрокер"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "118_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "118_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "120_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "120_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
