@@ -1,37 +1,38 @@
 {
-  "run_id": "N5K-20260816-253",
+  "run_id": "N5K-20260816-254",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T12:18:00+03:00",
+  "updated_at": "2026-08-16T13:17:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 128,
-    "current_contactable_count": 128,
-    "progress_added": 128,
-    "remaining": 4872
+    "current_canonical_count": 130,
+    "current_contactable_count": 130,
+    "progress_added": 130,
+    "remaining": 4870
   },
   "funnel": {
-    "discovered": 42,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 11,
-    "excluded": 30
+    "discovered": 54,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 6,
+    "excluded": 46
   },
   "qualified_companies": [
-    "Золотая Усадьба"
+    "Prosche.AI / Платформа Проще",
+    "S-COPY / С-КОПИ"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "128_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "128_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "130_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "130_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
