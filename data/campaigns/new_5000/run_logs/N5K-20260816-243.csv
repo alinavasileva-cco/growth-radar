@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Status,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Outreach Sent,Notes
+N5K-20260816-243,new_5000,COMPLETED,50,2,2,2,2,2,0,1,47,111,111,PASS,0,0,0,"Direct physical line-range recheck confirmed 111-row leads/contactable masters; prior mismatch blocker cleared. PRAID duplicate not re-added. AKCEPTUM-ENGINEERING carried over but not counted until physical integration."
