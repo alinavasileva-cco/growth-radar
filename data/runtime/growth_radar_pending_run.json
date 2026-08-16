@@ -8,11 +8,11 @@
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 6,
+    "qualified": 1,
+    "duplicates": 7,
     "excluded": 42
   },
-  "notes": "50 vacancy/business signals screened through the current fast funnel. Six explicit repeats already present in the campaign were not counted as new; 42 candidates failed one or more scale/legal-match/signal/LPR/contact-route gates, were too large, too small, anonymous, recruiter-mediated, or had ambiguous employer-to-legal mapping. Two companies passed all gates using current 2025/2026 evidence. Stale conflicting records were not used where fresher sources existed. No outreach.",
+  "notes": "50 vacancy/business signals screened through the current fast funnel. Final physical-master dedup guard correctly caught SOFT ALLIANCE / INN 5405951204 as an existing company (N5K-0224), so it was removed from the pending additions and counted as a duplicate before retry. Seven total duplicates, 42 excluded for one or more scale/legal-match/signal/LPR/contact-route gates or ambiguous employer-to-legal mapping. One company remains fully qualified and unique by current physical master checks. Stale conflicting records were not used where fresher sources existed. No outreach.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0265",
@@ -51,45 +51,6 @@
         {"type": "OWNER_LPR", "claim": "Шабасон Владимир Евгеньевич владеет 60%, Иванов Кирилл Александрович — 40%; Иванов Кирилл Александрович является действующим генеральным директором.", "url": "https://www.tbank.ru/business/contractor/legal/5157746215215/", "source": "Т-Банк / ФНС"},
         {"type": "SIGNAL", "claim": "Вакансия от 16.01.2026: цель увеличить оборот в 3 раза за 3 года, масштабировать продажи на Россию, СНГ и MENA, расширить отдел и систематизировать метрики каналов продаж.", "url": "https://hh.ru/vacancy/129518801", "source": "HeadHunter"},
         {"type": "CONTACT_ROUTE", "claim": "Официальный сайт подтверждает ООО «СЭЛФ СОФТ ПРОДАКШН», московский офис, телефон +7 (495) 136-62-71, email weloveyou@self.team и форму связи.", "url": "https://self.team/ru/who-we-are", "source": "Self official website"}
-      ]
-    },
-    {
-      "Lead ID": "N5K-0266",
-      "Brand": "СОФТ АЛЬЯНС / SoftAlliance",
-      "Legal Name": "ООО «СОФТ АЛЬЯНС»",
-      "INN": "5405951204",
-      "OGRN/OGRNIP": "1155476002549",
-      "Region": "Новосибирская область",
-      "City": "Новосибирск",
-      "Segment": "IT-дистрибуция / лицензии / B2B и B2G",
-      "Website": "https://softaliance.ru/",
-      "Revenue/Scale": "Выручка 38,622 млн ₽ за 2025 год; действующая компания",
-      "Signal Level": "S1",
-      "Signal Summary": "Компания выходит в крупный корпоративный сегмент и запускает/развивает B2B-направление: формирование команды, крупные сделки, работа с ЛПР, контроль оборота, маржи и воронки; компания прямо указывает стадию роста и возможность выстроить направление с нуля.",
-      "Signal Date": "2026-01-23",
-      "Signal Source": "https://hh.ru/vacancy/129819059",
-      "Owner": "Салихов Рашид Зайнутинович — 100%",
-      "CEO": "Салихов Рашид Зайнутинович",
-      "LPR": "Салихов Рашид Зайнутинович",
-      "LPR Role": "Директор / собственник 100%",
-      "Primary Phone": "8 (800) 200-30-84",
-      "Primary Email": "sale@softaliance.ru",
-      "HH Contact": "https://hh.ru/vacancy/129819059",
-      "Contact Form": "https://softalyans.ru/",
-      "Contact Type": "Корпоративный маршрут к owner-CEO через официальный телефон/email/сайт и прямую вакансию работодателя",
-      "Contact Source": "Официальный сайт SoftAlliance; Saby/ФНС; HeadHunter",
-      "Consulting Hypothesis": "Запуск и масштабирование крупного B2B/Enterprise-направления IT-дистрибуции: сегментация, pipeline крупных сделок, CRM и KPI, контроль маржи, стандарты работы с ЛПР и построение коммерческой команды.",
-      "contacts": [
-        {"value": "8 (800) 200-30-84", "channel": "Phone", "type": "Corporate", "source": "SoftAlliance official website", "url": "https://softaliance.ru/about/", "is_lpr": false, "notes": "Официальный телефон компании"},
-        {"value": "sale@softaliance.ru", "channel": "Email", "type": "Corporate", "source": "SoftAlliance official website", "url": "https://softalyans.ru/", "is_lpr": false, "notes": "Официальный коммерческий email"},
-        {"value": "https://hh.ru/vacancy/129819059", "channel": "HeadHunter", "type": "Employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129819059", "is_lpr": false, "notes": "Маршрут через прямого работодателя к коммерческому блоку"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ООО «СОФТ АЛЬЯНС», ИНН 5405951204, ОГРН 1155476002549, действует; директор — Салихов Рашид Зайнутинович.", "url": "https://saby.ru/profile/5405951204-540501001", "source": "Saby / ФНС"},
-        {"type": "SCALE", "claim": "Выручка за 2025 год — 38,622 млн ₽; компания действует.", "url": "https://saby.ru/profile/5405951204-540501001", "source": "Saby / ФНС"},
-        {"type": "OWNER_LPR", "claim": "Салихов Рашид Зайнутинович — единственный учредитель и директор ООО «СОФТ АЛЬЯНС».", "url": "https://saby.ru/profile/5405951204-540501001", "source": "Saby / ЕГРЮЛ"},
-        {"type": "SIGNAL", "claim": "Вакансия от 23.01.2026: запуск и развитие B2B-направления, формирование команды, крупные сделки, контроль оборота/маржи и воронки; компания находится в стадии роста и предлагает выстроить направление с нуля.", "url": "https://hh.ru/vacancy/129819059", "source": "HeadHunter"},
-        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт подтверждает реквизиты ООО «СОФТ АЛЬЯНС», телефон 8 (800) 200-30-84 и email sale@softaliance.ru.", "url": "https://softaliance.ru/about/", "source": "SoftAlliance official website"}
       ]
     }
   ]
