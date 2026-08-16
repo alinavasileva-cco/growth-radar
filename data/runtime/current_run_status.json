@@ -1,16 +1,16 @@
 {
-  "run_id": "N5K-20260816-247",
+  "run_id": "N5K-20260816-248",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T07:01:14+03:00",
+  "updated_at": "2026-08-16T08:01:15+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 120,
-    "current_contactable_count": 120,
-    "progress_added": 120,
-    "remaining": 4880
+    "current_canonical_count": 121,
+    "current_contactable_count": 121,
+    "progress_added": 121,
+    "remaining": 4879
   },
   "funnel": {
     "discovered": 50,
@@ -19,20 +19,19 @@
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 5,
-    "excluded": 43
+    "qualified": 1,
+    "duplicates": 7,
+    "excluded": 42
   },
   "qualified_companies": [
-    "CARP",
-    "ФранчБрокер"
+    "Self / Сэлф_"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "120_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "120_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "121_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "121_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

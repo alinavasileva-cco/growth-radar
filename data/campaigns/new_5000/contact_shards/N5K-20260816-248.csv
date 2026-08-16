@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0265,N5K-0265-C01,Self / Сэлф_,7706432164,,Корпоративный маршрут,+7 (495) 136-62-71,Phone,Corporate,Self official website,https://self.team/ru/who-we-are,NO,HIGH,2026-08-16,Официальный московский телефон компании,N5K-20260816-248,new_5000
+N5K-0265,N5K-0265-C02,Self / Сэлф_,7706432164,,Корпоративный маршрут,weloveyou@self.team,Email,Corporate,Self official website,https://self.team/ru/who-we-are,NO,HIGH,2026-08-16,Официальный email компании,N5K-20260816-248,new_5000
+N5K-0265,N5K-0265-C03,Self / Сэлф_,7706432164,,Корпоративный маршрут,https://hh.ru/vacancy/129518801,HeadHunter,Employer route,HeadHunter,https://hh.ru/vacancy/129518801,NO,HIGH,2026-08-16,Маршрут через прямого работодателя к коммерческому блоку,N5K-20260816-248,new_5000
