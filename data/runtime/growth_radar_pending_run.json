@@ -1,111 +1,111 @@
 {
-  "run_id": "N5K-20260816-258",
-  "updated_at": "2026-08-16T16:58:00+03:00",
+  "run_id": "N5K-20260816-259",
+  "updated_at": "2026-08-16T18:18:00+03:00",
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 4,
-    "size_check_passed": 2,
+    "discovered": 31,
+    "fast_gate_passed": 8,
+    "size_check_passed": 4,
     "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 18
+    "duplicates": 8,
+    "excluded": 22
   },
-  "notes": "Accelerated multi-source cycle reviewed 24 distinct company candidates from current vacancy and company-source streams. The requested 100-150 raw target was not reached in this execution, so no larger discovery number is claimed. Fast gate removed known physical-master duplicates, recruiter proxies, companies above/below the current scale band and ambiguous brand-to-legal matches. AО ТД Добромаш passed current legal/scale/signal/LPR/contact checks with fresh 2025/2026 data; GitHub code search showed no existing INN 9702058632 match and the physical pre-write workflow dedup guard will recheck before integration. No outreach was performed.",
+  "notes": "Accelerated multi-source cycle reviewed 31 distinct company candidates from current 2026 vacancy, company-site, owner-publication and registry streams. The requested 100-150 raw target was not reached in this execution, so no larger number is claimed. Eight candidates were confirmed as existing physical-master duplicates (including MARROB, Chacha’s Club, ГК Ангел, Деметра, Hugency, BINAGroup, Нацтранс and Прайд Групп). Other candidates were removed for recruiter-proxy status, current scale outside the canonical band, ambiguous brand-to-legal match, insufficient current scale evidence, or missing reliable LPR/contact route. HOME passed current legal, operational-scale, signal, LPR and contact checks using current 2026 official sources; GitHub index search showed no existing INN 026201270000 and the physical pre-write workflow dedup guard will recheck INN/OGRN/Lead ID before integration. No outreach was performed.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0279",
-      "Brand": "ТД Добромаш / Dobromash",
-      "Legal Name": "АО «ТД ДОБРОМАШ»",
-      "INN": "9702058632",
-      "OGRN/OGRNIP": "1237700524005",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Промышленное оборудование / трубопроводная арматура / B2B",
-      "Website": "https://dobromash-stanki.ru/",
-      "Revenue/Scale": "Действующее непубличное АО; выручка 272,72 млн ₽ за 2025 год по данным из официальных источников ФНС/Росстата, профиль — поставки промышленного оборудования и инженерных решений",
+      "Lead ID": "N5K-0280",
+      "Brand": "HOME / Швейная фабрика HOME",
+      "Legal Name": "ИП Кожемякин Иван Сергеевич",
+      "INN": "026201270000",
+      "OGRN/OGRNIP": "322028000024479",
+      "Region": "Республика Башкортостан",
+      "City": "Уфа",
+      "Segment": "Одежда / собственное швейное производство / корпоративный мерч / B2B",
+      "Website": "https://homebrandofficial.ru/",
+      "Revenue/Scale": "Действующий ИП; собственное производство 1300 м² в Уфе; фабрика заявляет мощность 10 000 изделий в месяц, полный цикл и работу с малыми и крупными B2B-партиями; бренд работает с 2017 года и имеет офлайн-розницу",
       "Signal Level": "S1",
-      "Signal Summary": "В январе 2026 компания открыла директора по продажам труб и деталей трубопроводов с ответственностью за P&L, бюджет и плановые показатели, оптимизацию CRM Битрикс24 и воронки, развитие маркетинга и системное управление B2B-продажами.",
-      "Signal Date": "2026-01-30",
-      "Signal Source": "https://hh.ru/vacancy/130043847",
-      "Owner": "Не раскрыт в открытых источниках для непубличного АО; этого недостатка не использую как основание для выдумывания собственника",
-      "CEO": "Никольский Игорь Анатольевич",
-      "LPR": "Никольский Игорь Анатольевич",
-      "LPR Role": "Генеральный директор / практический ЛПР",
-      "Primary Phone": "+7 (499) 397-71-62",
-      "Primary Email": "info@dobromash-stanki.ru",
-      "HH Contact": "https://hh.ru/vacancy/130043847",
-      "Contact Form": "https://dobromash-stanki.ru/",
-      "Contact Type": "Корпоративный маршрут к генеральному директору через официальный телефон/email/сайт и актуальную вакансию работодателя",
-      "Contact Source": "HeadHunter; официальный сайт АО ТД Добромаш; Т-Банк/ФНС",
-      "Consulting Hypothesis": "Систематизация и масштабирование B2B-продаж промышленного оборудования: P&L и планирование, CRM-воронка, сегментация отраслей и KAM, KPI команды, связка маркетинга с продажами и управление маржинальностью проектных сделок.",
+      "Signal Summary": "В актуальной публикации 2026 года сооснователь HOME называет среди ближайших планов усиление B2B, масштабирование модели HOME + регион и запуск новых брендов; отдельно действующее производство предлагает корпоративный мерч и запуск брендов под ключ.",
+      "Signal Date": "2026-06-01",
+      "Signal Source": "https://element-media.pro/brend-home/",
+      "Owner": "Кожемякин Иван Сергеевич",
+      "CEO": "Кожемякин Иван Сергеевич",
+      "LPR": "Кожемякин Иван Сергеевич",
+      "LPR Role": "Индивидуальный предприниматель / сооснователь / владелец",
+      "Primary Phone": "+7 (347) 225-70-75",
+      "Primary Email": "home.official@yandex.ru",
+      "HH Contact": "https://ufa.hh.ru/employer/5131355",
+      "Contact Form": "https://homebrandofficial.ru/",
+      "Contact Type": "Прямой корпоративный маршрут к бизнесу владельца через официальный телефон/email/сайт и профиль работодателя",
+      "Contact Source": "Официальные сайты HOME и швейной фабрики HOME; HeadHunter; актуальная публикация Element Media; реестровые данные ИП",
+      "Consulting Hypothesis": "Масштабирование B2B-направления и региональной модели: сегментация корпоративных клиентов, repeatable sales process, CRM и KPI, экономика B2B-партий и загрузки производства, управление маржинальностью, партнерская модель HOME + регион и снижение зависимости от founder-led продаж.",
       "contacts": [
         {
-          "value": "+7 (499) 397-71-62",
+          "value": "+7 (347) 225-70-75",
           "channel": "Phone",
           "type": "Published corporate route",
-          "source": "Официальный сайт АО ТД Добромаш",
-          "url": "https://dobromash-stanki.ru/",
+          "source": "Официальный сайт HOME / швейной фабрики HOME",
+          "url": "https://home-merch.ru/kontakt",
           "is_lpr": false,
-          "notes": "Официальный корпоративный телефон; просить соединить с генеральным директором Никольским Игорем Анатольевичем"
+          "notes": "Официальный корпоративный телефон; просить соединить с владельцем Иваном Кожемякиным по вопросу развития B2B-направления"
         },
         {
-          "value": "info@dobromash-stanki.ru",
+          "value": "home.official@yandex.ru",
           "channel": "Email",
           "type": "Published corporate route",
-          "source": "Официальный сайт АО ТД Добромаш",
-          "url": "https://dobromash-stanki.ru/",
+          "source": "Официальный сайт HOME",
+          "url": "https://homebrandofficial.ru/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный email"
+          "notes": "Официальный email для сотрудничества по пошиву"
         },
         {
-          "value": "https://hh.ru/vacancy/130043847",
-          "channel": "Employer vacancy",
-          "type": "Employer signal route",
+          "value": "https://ufa.hh.ru/employer/5131355",
+          "channel": "Employer profile",
+          "type": "Employer route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/130043847",
+          "url": "https://ufa.hh.ru/employer/5131355",
           "is_lpr": false,
-          "notes": "Актуальный сигнал работодателя о систематизации коммерческой функции"
+          "notes": "Действующий профиль работодателя HOME со ссылкой на официальный домен"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "АО «ТД ДОБРОМАШ», ИНН 9702058632, ОГРН 1237700524005, действующая организация; руководитель — Никольский Игорь Анатольевич.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1237700524005/",
-          "source": "Т-Банк / ФНС"
+          "claim": "ИП Кожемякин Иван Сергеевич, ИНН 026201270000, ОГРНИП 322028000024479; реквизиты опубликованы на действующем официальном сайте HOME.",
+          "url": "https://homebrandofficial.ru/ayyola",
+          "source": "Официальный сайт HOME"
         },
         {
           "type": "SCALE",
-          "claim": "Выручка за 2025 год — 272,72 млн ₽; профиль компании соответствует B2B-поставкам промышленного оборудования.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1237700524005/",
-          "source": "Т-Банк / ФНС / Росстат"
+          "claim": "HOME имеет собственное производство площадью 1300 м²; отдельный официальный сайт фабрики заявляет мощность 10 000 изделий в месяц, полный цикл и B2B-пошив корпоративного мерча.",
+          "url": "https://home-merch.ru/about",
+          "source": "Официальный сайт швейной фабрики HOME"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Генеральный директор АО «ТД ДОБРОМАШ» — Никольский Игорь Анатольевич; собственники непубличного АО не раскрыты в использованных открытых источниках.",
-          "url": "https://tddm.info/",
-          "source": "Официальная страница реквизитов АО ТД Добромаш"
+          "claim": "Иван Кожемякин указан как сооснователь HOME в актуальной публикации 2026 года; юридический оператор официального сайта — его ИП, поэтому он является прямым владельцем/ЛПР для текущего бизнеса.",
+          "url": "https://element-media.pro/brend-home/",
+          "source": "Element Media + официальный сайт HOME"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "Официальный сайт dobromash-stanki.ru прямо указывает АО «ТД ДОБРОМАШ», ИНН 9702058632 и московский адрес компании.",
-          "url": "https://dobromash-stanki.ru/",
-          "source": "Официальный сайт"
+          "claim": "Официальные сайты homebrandofficial.ru и home-merch.ru публикуют реквизиты ИП Кожемякина и единый телефон HOME; профиль работодателя HH ведет на homebrandofficial.ru.",
+          "url": "https://ufa.hh.ru/employer/5131355",
+          "source": "HeadHunter + официальные сайты HOME"
         },
         {
           "type": "SIGNAL",
-          "claim": "30 января 2026 компания искала директора по продажам с P&L, бюджетированием, CRM Битрикс24, оптимизацией воронки и развитием системных B2B-продаж.",
-          "url": "https://hh.ru/vacancy/130043847",
-          "source": "HeadHunter"
+          "claim": "В публикации 2026 года HOME прямо называет планы усилить B2B, масштабировать модель HOME + регион и запускать новые бренды; производственный контур уже продает корпоративный мерч и запуск брендов под ключ.",
+          "url": "https://element-media.pro/brend-home/",
+          "source": "Element Media / HOME"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует телефон +7 (499) 397-71-62 и email info@dobromash-stanki.ru.",
-          "url": "https://dobromash-stanki.ru/",
-          "source": "Официальный сайт"
+          "claim": "Официальные сайты публикуют телефон +7 (347) 225-70-75 и email home.official@yandex.ru; HH подтверждает активный профиль работодателя HOME и официальный домен.",
+          "url": "https://homebrandofficial.ru/",
+          "source": "Официальный сайт HOME + HeadHunter"
         }
       ]
     }
