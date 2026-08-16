@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260817-265",
-  "updated_at": "2026-08-17T00:17:00+03:00",
+  "updated_at": "2026-08-17T00:21:00+03:00",
   "funnel": {
     "discovered": 20,
     "fast_gate_passed": 6,
@@ -9,11 +9,11 @@
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 4,
+    "qualified": 1,
+    "duplicates": 5,
     "excluded": 14
   },
-  "notes": "Accelerated multi-source discovery continued from verified physical 143/143 baseline. Twenty distinct employer/company signals were individually reviewed from the current HH vacancy stream and fresh 2026 registry/company-site sources in this execution; no larger raw count is claimed. Fast gate removed known physical-master duplicates, recruiting intermediaries, oversized/undersized entities and candidates without safe brand-to-legal or scale confirmation. AО ТРИЕМА and KLCH / ООО ОМ passed active legal, fresh 2025 scale, exact official-site brand-to-legal, current sales-system signal, owner/CEO/LPR and official contact-route gates. GitHub index dedup by INN found no match; physical master INN/OGRN guard is enforced again by the integration workflow before writing. No outreach.",
+  "notes": "Accelerated multi-source discovery continued from verified physical 143/143 baseline. Twenty distinct employer/company signals were individually reviewed; no larger raw count is claimed. Initial two-company integration was stopped by the mandatory physical DEDUP_GUARD. The pool was split to identify the specific physical duplicate. AО ТРИЕМА remains staged as the candidate under isolated physical guard; KLCH / ООО ОМ is withheld from this attempt until its physical-master status is resolved. No outreach.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0288",
@@ -53,46 +53,6 @@
         {"type": "SIGNAL", "claim": "Вакансия руководителя отдела продаж B2B фиксирует управление продажами, развитие ключевых клиентов, команду и работу с CRM Битрикс/1С.", "url": "https://hh.ru/vacancy/129420093", "source": "HeadHunter"},
         {"type": "OWNER_LPR", "claim": "Генеральный директор АО ТРИЕМА Денис Самохин подтвержден актуальными реестровыми источниками и является практическим ЛПР для коммерческой функции.", "url": "https://www.elec.ru/catalog/triema/requisites/", "source": "Элек.ру / актуальные реквизиты 2026"},
         {"type": "CONTACT_ROUTE", "claim": "Официальный сайт публикует телефон +7 473 300-33-73, email info@triema.com и форму связи.", "url": "https://www.triema.com/", "source": "Официальный сайт ТРИЕМА"}
-      ]
-    },
-    {
-      "Lead ID": "N5K-0289",
-      "Brand": "KLCH / Агентство КЛЮЧ",
-      "Legal Name": "ООО «ОМ»",
-      "INN": "7722681880",
-      "OGRN/OGRNIP": "1097746146596",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Digital marketing / performance / CRM & BI / B2B услуги",
-      "Website": "https://klch.pro/",
-      "Revenue/Scale": "Действующая частная компания; выручка около 262–275 млн ₽ за 2025 год по свежим реестровым источникам; 38 сотрудников за 2025 год",
-      "Signal Level": "S1",
-      "Signal Summary": "В январе 2026 агентство искало руководителя продаж, который должен построить процессы активных B2B-продаж с нуля, сформировать и управлять отделом и метриками продаж.",
-      "Signal Date": "2026-01-19",
-      "Signal Source": "HeadHunter",
-      "Owner": "Леонович Константин Леонидович — 100%",
-      "CEO": "Жариков Евгений Вячеславович",
-      "LPR": "Леонович Константин Леонидович",
-      "LPR Role": "Единственный учредитель / собственник",
-      "Primary Phone": "+7 (495) 646-03-44",
-      "Primary Email": "hello@klch.pro",
-      "HH Contact": "https://hh.ru/vacancy/129619655",
-      "Contact Form": "https://klch.pro/",
-      "Contact Type": "Официальный корпоративный маршрут к собственнику через агентство, телефон/email/форму и прямую вакансию работодателя",
-      "Contact Source": "Официальный сайт KLCH; HeadHunter; Firmoteka/ФНС; Рувард",
-      "Consulting Hypothesis": "Построение repeatable B2B-sales системы digital-агентства: ICP и сегментация, outbound и partner sales, CRM-воронка, KPI и forecast, связка marketing→sales и снижение зависимости продаж от собственника.",
-      "contacts": [
-        {"value": "+7 (495) 646-03-44", "channel": "Phone", "type": "Published corporate route", "source": "Официальный сайт KLCH", "url": "https://klch.pro/", "notes": "Официальный телефон агентства"},
-        {"value": "hello@klch.pro", "channel": "Email", "type": "Published corporate route", "source": "Официальный сайт KLCH", "url": "https://klch.pro/", "notes": "Официальный корпоративный email"},
-        {"value": "https://hh.ru/vacancy/129619655", "channel": "HH vacancy", "type": "Employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129619655", "notes": "Прямой канал работодателя по роли руководителя продаж"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ООО ОМ действует; ИНН 7722681880, ОГРН 1097746146596; единственный учредитель Константин Леонович; свежий реестровый источник от июля 2026 указывает генеральным директором Евгения Жарикова.", "url": "https://firmoteka.ru/7722681880", "source": "Firmoteka / ФНС, обновление 03.07.2026"},
-        {"type": "SCALE", "claim": "Свежие источники по отчетности 2025 показывают выручку ООО ОМ около 262–275 млн ₽ и 38 сотрудников.", "url": "https://firmoteka.ru/7722681880", "source": "Firmoteka / бухгалтерская отчетность 2025"},
-        {"type": "BRAND_LEGAL", "claim": "Официальный сайт KLCH прямо указывает ООО ОМ, ИНН 7722681880, адрес Большая Садовая 5 к.1; тот же адрес указан в вакансии и реестрах.", "url": "https://klch.pro/", "source": "Официальный сайт KLCH"},
-        {"type": "SIGNAL", "claim": "Вакансия руководителя продаж требует построить процессы активных продаж с нуля и управлять отделом, мотивацией и показателями; роль ориентирована на B2B.", "url": "https://hh.ru/vacancy/129619655", "source": "HeadHunter"},
-        {"type": "OWNER_LPR", "claim": "Константин Леонович подтвержден как единственный учредитель ООО ОМ; для стратегической коммерческой функции это owner-level ЛПР.", "url": "https://companies.rbc.ru/id/1097746146596-ooo-om/", "source": "РБК Компании / ЕГРЮЛ"},
-        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт KLCH публикует телефон +7 (495) 646-03-44, email hello@klch.pro и форму обращения.", "url": "https://klch.pro/", "source": "Официальный сайт KLCH"}
       ]
     }
   ]
