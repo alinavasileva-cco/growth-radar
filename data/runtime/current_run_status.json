@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260816-262",
+  "run_id": "N5K-20260816-263",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T21:08:00+03:00",
+  "updated_at": "2026-08-16T21:58:23+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 141,
-    "current_contactable_count": 141,
-    "progress_added": 141,
-    "remaining": 4859
+    "current_canonical_count": 142,
+    "current_contactable_count": 142,
+    "progress_added": 142,
+    "remaining": 4858
   },
   "funnel": {
-    "discovered": 15,
-    "fast_gate_passed": 7,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
+    "discovered": 16,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 9
+    "duplicates": 7,
+    "excluded": 8
   },
   "qualified_companies": [
-    "ТемпСтройСистема"
+    "Superstudio"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "141_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "141_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "142_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "142_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
