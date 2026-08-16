@@ -1,135 +1,23 @@
 {
-  "run_id": "N5K-20260816-245",
-  "updated_at": "2026-08-16T05:00:58+03:00",
-  "funnel": {
-    "discovered": 50,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "duplicates": 5,
-    "excluded": 42
-  },
-  "notes": "50 fresh vacancy/business signals screened from three search batches. Five matched existing canonical companies (including Jungle Story / Икстеншн, Атмосферика, Торг-Лайт, Марроб Рус and ПСВ) and were not counted. Forty-two failed one or more current legal/scale/signal/LPR/contact-route gates, including companies above target scale, microbusinesses below minimum team size, recruitment intermediaries and ambiguous employer-to-legal mappings. Three companies passed all gates using current legal/financial/contact evidence. Outdated ownership records were not used where newer registry-derived data was available. No outreach.",
+  "run_id": "N5K-20260816-246",
+  "updated_at": "2026-08-16T05:57:55+03:00",
+  "funnel": {"discovered":50,"size_check_passed":3,"legal_match_passed":3,"signal_confirmed":3,"lpr_identified":3,"contact_route_found":3,"qualified":3,"duplicates":1,"excluded":46},
+  "notes": "50 fresh vacancy/business signals screened. One explicit duplicate in the search pool matched an existing canonical company and was not counted. Forty-six candidates failed one or more current legal/scale/signal/LPR/contact-route gates or had ambiguous employer-to-legal mapping. Three companies passed all gates using current legal/financial/contact evidence. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0257",
-      "Brand": "Implant-Line",
-      "Legal Name": "ООО «ИМПЛАНТ-ЛАЙН»",
-      "INN": "7721732187",
-      "OGRN/OGRNIP": "1117746609694",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Стоматологические решения / имплантология / B2B",
-      "Website": "https://implant-line.ru/",
-      "Revenue/Scale": "Выручка 353 251 000 ₽ за 2025 год; 31 сотрудник по свежим данным ФНС-агрегатора за 2025 год; действующее малое предприятие",
-      "Signal Level": "S1",
-      "Signal Summary": "Компания ищет руководителя отдела продаж для развития и масштабирования продаж в РФ, роста выручки и доли рынка, развития региональной команды, работы с клиниками и дилерами и участия в ценообразовании.",
-      "Signal Date": "2026-02-09",
-      "Signal Source": "https://hh.ru/vacancy/130137665",
-      "Owner": "Закарян Аршак Вагинакович — действующий учредитель по свежим реестровым данным; прежние записи о других владельцах не использованы как актуальные",
-      "CEO": "Закарян Армен Вагинаки",
-      "LPR": "Закарян Армен Вагинаки",
-      "LPR Role": "Генеральный директор / практический ЛПР",
-      "Primary Phone": "+7 (495) 642-51-03",
-      "Primary Email": "info@implant-line.ru",
-      "HH Contact": "https://hh.ru/vacancy/130137665",
-      "Contact Form": "https://implant-line.ru/contacts/",
-      "Contact Type": "Корпоративный маршрут к CEO через официальный телефон/email/сайт и вакансию",
-      "Contact Source": "Официальный сайт Implant-Line; Xfirm/ФНС; HeadHunter",
-      "Consulting Hypothesis": "Масштабирование региональных B2B-продаж стоматологических решений: сегментация клиник и дилеров, региональная модель, pipeline/CRM, KPI команды, продуктовая и ценовая архитектура, прогнозирование и 90-дневный план роста.",
-      "contacts": [
-        {"value": "+7 (495) 642-51-03", "channel": "Phone", "type": "Corporate", "source": "Implant-Line official website", "url": "https://implant-line.ru/contacts/", "is_lpr": false, "notes": "Официальный телефон компании"},
-        {"value": "info@implant-line.ru", "channel": "Email", "type": "Corporate", "source": "Implant-Line official website", "url": "https://implant-line.ru/contacts/", "is_lpr": false, "notes": "Официальный корпоративный email"},
-        {"value": "https://hh.ru/vacancy/130137665", "channel": "HeadHunter", "type": "Employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/130137665", "is_lpr": false, "notes": "Маршрут через работодателя к коммерческому блоку"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ООО «ИМПЛАНТ-ЛАЙН», ИНН 7721732187, ОГРН 1117746609694, действует; генеральный директор Закарян Армен Вагинаки.", "url": "https://xfirm.ru/company/7721732187", "source": "Xfirm / данные ФНС"},
-        {"type": "SCALE", "claim": "Выручка за 2025 год 353,3 млн ₽; среднесписочная численность 31 сотрудник за 2025 год.", "url": "https://xfirm.ru/company/7721732187", "source": "Xfirm / ФНС и Росстат"},
-        {"type": "OWNER_LPR", "claim": "Свежие реестровые данные указывают Закаряна Аршака Вагинаковича как действующего учредителя; Закарян Армен Вагинаки остаётся генеральным директором и практическим ЛПР.", "url": "https://xfirm.ru/company/7721732187", "source": "Xfirm / ЕГРЮЛ"},
-        {"type": "SIGNAL", "claim": "Вакансия от 09.02.2026: развитие и масштабирование продаж в РФ, рост выручки и доли рынка, развитие региональной команды и каналов продаж.", "url": "https://hh.ru/vacancy/130137665", "source": "HeadHunter"},
-        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт подтверждает телефон +7 (495) 642-51-03, email info@implant-line.ru и реквизиты ООО «Имплант-Лайн».", "url": "https://implant-line.ru/contacts/", "source": "Implant-Line official website"}
-      ]
+      "Lead ID":"N5K-0260","Brand":"Промышленные редукторы","Legal Name":"ООО «ПРОМЫШЛЕННЫЕ РЕДУКТОРЫ»","INN":"7448207811","OGRN/OGRNIP":"1177456094870","Region":"Челябинская область","City":"Челябинск","Segment":"Промышленное оборудование / редукторы / B2B","Website":"https://promred.ru/","Revenue/Scale":"Выручка 200,98 млн ₽ за 2025 год по свежей бухгалтерской отчетности; действующая компания","Signal Level":"S1","Signal Summary":"Компания ищет РОПа для роста масштабов B2B-продаж: организация продающего отдела, KPI, выявление узких мест, рост конверсии, CRM, регламенты, найм и обучение менеджеров.","Signal Date":"2026-02-05","Signal Source":"https://hh.ru/vacancy/130207257","Owner":"Черепанов Антон Владимирович 100%","CEO":"Кузнецова Наталья Николаевна — управляющий ИП","LPR":"Черепанов Антон Владимирович","LPR Role":"Собственник 100% / стратегический ЛПР","Primary Phone":"+7 (351) 200-94-14","Primary Email":"zakaz1@promred.ru","HH Contact":"https://hh.ru/vacancy/130207257","Contact Form":"https://promred.ru/kontakty/","Contact Type":"Корпоративный маршрут к собственнику через официальный телефон/email/сайт и вакансию","Contact Source":"Официальный сайт Промышленные редукторы; Т-Банк/ФНС; HeadHunter","Consulting Hypothesis":"Систематизация и масштабирование B2B-продаж промышленного оборудования: сегментация клиентов, CRM-воронка, KPI, регламенты, менеджмент команды, кросс-функциональная связка маркетинг-продажи и 90-дневный план роста.",
+      "contacts":[{"value":"+7 (351) 200-94-14","channel":"Phone","type":"Corporate","source":"Промышленные редукторы official website","url":"https://promred.ru/kontakty/","is_lpr":false,"notes":"Официальный телефон отдела продаж"},{"value":"zakaz1@promred.ru","channel":"Email","type":"Corporate","source":"Промышленные редукторы official website","url":"https://promred.ru/kontakty/","is_lpr":false,"notes":"Официальный корпоративный email"},{"value":"https://hh.ru/vacancy/130207257","channel":"HeadHunter","type":"Employer route","source":"HeadHunter","url":"https://hh.ru/vacancy/130207257","is_lpr":false,"notes":"Маршрут через работодателя к коммерческому блоку"}],
+      "evidence":[{"type":"LEGAL","claim":"ООО «ПРОМЫШЛЕННЫЕ РЕДУКТОРЫ», ИНН 7448207811, ОГРН 1177456094870, действует; управляющий ИП Кузнецова Наталья Николаевна.","url":"https://companies.rbc.ru/id/1177456094870-ooo-promyishlennyie-reduktoryi/","source":"РБК Компании / ЕГРЮЛ"},{"type":"SCALE","claim":"Бухгалтерская отчетность за 2025 год показывает выручку 200,98 млн ₽.","url":"https://www.tbank.ru/business/contractor/legal/1177456094870/","source":"Т-Банк / ФНС"},{"type":"OWNER_LPR","claim":"Черепанов Антон Владимирович владеет 100% компании; Кузнецова Наталья Николаевна управляет компанией как ИП.","url":"https://check.tochka.com/company/1177456094870/","source":"Точка / реестровые данные"},{"type":"SIGNAL","claim":"Вакансия от 05.02.2026: рост масштабов продаж, организация отдела, KPI, CRM, конверсия, регламенты, найм и обучение менеджеров.","url":"https://hh.ru/vacancy/130207257","source":"HeadHunter"},{"type":"CONTACT_ROUTE","claim":"Официальный сайт подтверждает телефон +7 (351) 200-94-14, email zakaz1@promred.ru и реквизиты компании.","url":"https://promred.ru/kontakty/","source":"Промышленные редукторы official website"}]
     },
     {
-      "Lead ID": "N5K-0258",
-      "Brand": "Dircode / Диркод",
-      "Legal Name": "ООО «ДИРКОД»",
-      "INN": "7730293063",
-      "OGRN/OGRNIP": "1227700809995",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Умные замки / дверная электроника / B2B и retail",
-      "Website": "https://dircode.ru/",
-      "Revenue/Scale": "Выручка 211 994 000 ₽ за 2025 год; 14 сотрудников; действующая компания",
-      "Signal Level": "S1",
-      "Signal Summary": "Компания усиливает действующий отдел продаж: задача увеличить выручку через управление конверсией, KPI и новые каналы B2B-партнёрств с дизайнерами, ЖК, УК и установщиками, а также улучшать воронку и качество лидов.",
-      "Signal Date": "2026-01-31",
-      "Signal Source": "https://hh.ru/vacancy/129771762",
-      "Owner": "Полетаев Антон Александрович 100%",
-      "CEO": "Полетаев Антон Александрович",
-      "LPR": "Полетаев Антон Александрович",
-      "LPR Role": "Генеральный директор и собственник 100%",
-      "Primary Phone": "+7 (495) 414-49-00",
-      "Primary Email": "info@dircode.ru",
-      "HH Contact": "https://hh.ru/vacancy/129771762",
-      "Contact Form": "https://dircode.ru/contacts",
-      "Contact Type": "Корпоративный маршрут к owner-CEO через официальный телефон/email/сайт и вакансию",
-      "Contact Source": "Официальный сайт Dircode; РБК Компании; ЗаЧестныйБизнес/ФНС; HeadHunter",
-      "Consulting Hypothesis": "Рост продаж и конверсии: сегментация B2B/retail, развитие партнёрских каналов, CRM-воронка, KPI, lead quality, повторные продажи и 90-дневный план коммерческого роста.",
-      "contacts": [
-        {"value": "+7 (495) 414-49-00", "channel": "Phone", "type": "Corporate", "source": "Dircode official website", "url": "https://dircode.ru/contacts", "is_lpr": false, "notes": "Официальный телефон компании"},
-        {"value": "info@dircode.ru", "channel": "Email", "type": "Corporate", "source": "Dircode official website", "url": "https://dircode.ru/contacts", "is_lpr": false, "notes": "Официальный email"},
-        {"value": "https://hh.ru/vacancy/129771762", "channel": "HeadHunter", "type": "Employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129771762", "is_lpr": false, "notes": "Маршрут через работодателя к коммерческому блоку"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ООО «ДИРКОД», ИНН 7730293063, ОГРН 1227700809995, действует; генеральный директор Полетаев Антон Александрович.", "url": "https://companies.rbc.ru/id/1227700809995-obschestvo-s-ogranichennoj-otvetstvennostyu-dirkod/", "source": "РБК Компании"},
-        {"type": "SCALE", "claim": "Доход за 2025 год 211 994 000 ₽; 14 сотрудников.", "url": "https://zachestnyibiznes.ru/company/ul/1227700809995_7730293063", "source": "ЗаЧестныйБизнес / данные ФНС"},
-        {"type": "OWNER_LPR", "claim": "Полетаев Антон Александрович — генеральный директор и учредитель 100%.", "url": "https://companies.rbc.ru/id/1227700809995-obschestvo-s-ogranichennoj-otvetstvennostyu-dirkod/", "source": "РБК Компании"},
-        {"type": "SIGNAL", "claim": "Вакансия от 31.01.2026 ставит задачи роста выручки, конверсии, KPI, управления воронкой и запуска новых B2B-партнёрских каналов.", "url": "https://hh.ru/vacancy/129771762", "source": "HeadHunter"},
-        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт подтверждает +7 (495) 414-49-00, info@dircode.ru и контактную форму.", "url": "https://dircode.ru/contacts", "source": "Dircode official website"}
-      ]
+      "Lead ID":"N5K-0261","Brand":"Кристон-Кадастр","Legal Name":"ООО «КРИСТОН-КАДАСТР» / ООО «КРИСТОН-К»","INN":"7725316710","OGRN/OGRNIP":"1167746456404","Region":"Москва","City":"Москва","Segment":"Кадастровые и геодезические услуги / B2B","Website":"https://kriston-kadastr.ru/","Revenue/Scale":"Выручка 73,696 млн ₽ за 2025 год; 13 сотрудников; действующая компания","Signal Level":"S1","Signal Summary":"Компания ищет РОПа с возможностью строить отдел и влиять на стратегию; работа строится на CRM, автоматизации, B2B-продажах, планировании и развитии продаж.","Signal Date":"2026-02-08","Signal Source":"https://hh.ru/vacancy/129480935","Owner":"Человечков Антон Алексеевич 50%; Фурсова Кристина Юрьевна 50%","CEO":"Человечков Антон Алексеевич","LPR":"Человечков Антон Алексеевич","LPR Role":"Генеральный директор / совладелец 50% / практический ЛПР","Primary Phone":"+7 (499) 110-66-13","Primary Email":"info@kriston-k.ru","HH Contact":"https://hh.ru/vacancy/129480935","Contact Form":"https://kriston-kadastr.ru/contacts","Contact Type":"Корпоративный маршрут к owner-CEO через официальный телефон/email/сайт и вакансию","Contact Source":"Официальный сайт Кристон-Кадастр; РБК Компании; HeadHunter","Consulting Hypothesis":"Рост B2B-продаж профессиональных кадастровых услуг: сегментация клиентов, CRM-воронка, KPI, стандарты продаж, связка маркетинга и коммерции, развитие команды и управляемый pipeline.",
+      "contacts":[{"value":"+7 (499) 110-66-13","channel":"Phone","type":"Corporate","source":"Кристон-Кадастр official website","url":"https://kriston-kadastr.ru/contacts","is_lpr":false,"notes":"Официальный телефон компании"},{"value":"info@kriston-k.ru","channel":"Email","type":"Corporate","source":"Кристон-Кадастр official website","url":"https://kriston-kadastr.ru/contacts","is_lpr":false,"notes":"Официальный корпоративный email"},{"value":"https://hh.ru/vacancy/129480935","channel":"HeadHunter","type":"Employer route","source":"HeadHunter","url":"https://hh.ru/vacancy/129480935","is_lpr":false,"notes":"Маршрут через работодателя к коммерческому блоку"}],
+      "evidence":[{"type":"LEGAL","claim":"ООО «КРИСТОН-КАДАСТР» / ООО «КРИСТОН-К», ИНН 7725316710, ОГРН 1167746456404, действует; гендиректор Человечков Антон Алексеевич.","url":"https://kriston-kadastr.ru/contacts","source":"Кристон-Кадастр official website"},{"type":"SCALE","claim":"За 2025 год выручка 73,696 млн ₽; среднесписочная численность 13 сотрудников.","url":"https://companies.rbc.ru/id/1167746456404-ooo-kriston-kadastr/","source":"РБК Компании"},{"type":"OWNER_LPR","claim":"Человечков Антон Алексеевич — гендиректор и совладелец 50%; Фурсова Кристина Юрьевна — совладелец 50%.","url":"https://companies.rbc.ru/amp/ogrn/1167746456404/","source":"РБК Компании / ЕГРЮЛ"},{"type":"SIGNAL","claim":"Вакансия от 08.02.2026: B2B РОП, развитие продаж, возможность строить отдел, влияние на стратегию, CRM и автоматизация.","url":"https://hh.ru/vacancy/129480935","source":"HeadHunter"},{"type":"CONTACT_ROUTE","claim":"Официальный сайт подтверждает телефон +7 (499) 110-66-13, email info@kriston-k.ru, ИНН/ОГРН и гендиректора.","url":"https://kriston-kadastr.ru/contacts","source":"Кристон-Кадастр official website"}]
     },
     {
-      "Lead ID": "N5K-0259",
-      "Brand": "Международный Институт Профессиональной Психологии / МИПП",
-      "Legal Name": "ООО «МЕЖДУНАРОДНЫЙ ИНСТИТУТ ПРОФЕССИОНАЛЬНОЙ ПСИХОЛОГИИ»",
-      "INN": "7733407223",
-      "OGRN/OGRNIP": "1237700212012",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Дополнительное образование / EdTech / психология",
-      "Website": "https://instmipp.ru/",
-      "Revenue/Scale": "Выручка 13,4 млн ₽ за 2025 год; 5 сотрудников по данным за 2025 год; действующая компания; текущая команда продаж 2–3 менеджера по вакансии",
-      "Signal Level": "S1",
-      "Signal Summary": "Основатель передаёт продажи будущему РОПу: требуется превратить продажи, работающие на энтузиазме основателя, в системный отдел, провести аудит воронки, доработать CRM, внедрить отчётность и масштабировать команду.",
-      "Signal Date": "2026-01-12",
-      "Signal Source": "https://hh.ru/vacancy/129252794",
-      "Owner": "Володина Марина Федоровна 100%",
-      "CEO": "Володина Марина Федоровна",
-      "LPR": "Володина Марина Федоровна",
-      "LPR Role": "Основатель / собственник 100% / генеральный директор",
-      "Primary Phone": "+7 (499) 325-70-50",
-      "Primary Email": "admin@instmipp.ru",
-      "HH Contact": "https://hh.ru/vacancy/129252794",
-      "Contact Form": "https://instmipp.ru/info",
-      "Contact Type": "Корпоративный маршрут к owner-CEO через официальный телефон/email/сайт и вакансию",
-      "Contact Source": "Официальный сайт МИПП; Фирмотека/ЕГРЮЛ; HeadHunter",
-      "Consulting Hypothesis": "Построение системного отдела продаж EdTech: аудит воронки, CRM, конверсии, регулярный менеджмент, найм и обучение команды, связка маркетинг-продажи-продукт и unit-экономика запусков.",
-      "contacts": [
-        {"value": "+7 (499) 325-70-50", "channel": "Phone", "type": "Corporate", "source": "МИПП official website", "url": "https://instmipp.ru/info", "is_lpr": false, "notes": "Официальный телефон приёмной комиссии/института"},
-        {"value": "admin@instmipp.ru", "channel": "Email", "type": "Corporate", "source": "МИПП official website", "url": "https://instmipp.ru/info", "is_lpr": false, "notes": "Официальный email института"},
-        {"value": "https://hh.ru/vacancy/129252794", "channel": "HeadHunter", "type": "Employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129252794", "is_lpr": false, "notes": "Маршрут через работодателя; вакансия прямо описывает взаимодействие с основателем"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ООО «МИПП», ИНН 7733407223, ОГРН 1237700212012, действует; генеральный директор Володина Марина Федоровна.", "url": "https://firmoteka.ru/7733407223", "source": "Фирмотека / ЕГРЮЛ"},
-        {"type": "SCALE", "claim": "Выручка 13,4 млн ₽ за 2025 год; 5 сотрудников в 2025 году.", "url": "https://firmoteka.ru/7733407223", "source": "Фирмотека / реестровые и финансовые данные"},
-        {"type": "OWNER_LPR", "claim": "Володина Марина Федоровна — учредитель 100% и генеральный директор.", "url": "https://firmoteka.ru/7733407223", "source": "Фирмотека / ЕГРЮЛ"},
-        {"type": "SIGNAL", "claim": "Вакансия от 12.01.2026: продажи работают на энтузиазме основателя; нужно провести аудит, систематизировать CRM/воронку, внедрить управление и масштабировать отдел.", "url": "https://hh.ru/vacancy/129252794", "source": "HeadHunter"},
-        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт подтверждает ИНН/ОГРН, телефон +7 (499) 325-70-50 и email admin@instmipp.ru.", "url": "https://instmipp.ru/info", "source": "МИПП official website"}
-      ]
+      "Lead ID":"N5K-0262","Brand":"Орион-Металл","Legal Name":"ООО «ОРИОН МЕТАЛЛ»","INN":"7719697390","OGRN/OGRNIP":"5087746300362","Region":"Москва","City":"Москва","Segment":"Металлопрокат и продукция для ЖКХ / B2B","Website":"https://orionmetall.ru/","Revenue/Scale":"Выручка 28,726 млн ₽ за 2025 год; 6 сотрудников; действующая компания","Signal Level":"S1","Signal Summary":"Компания усиливает B2B-продажи: требуется разработка и внедрение KPI и отчетности, работа с CRM, переговоры с ЛПР и развитие продаж.","Signal Date":"2026-02-04","Signal Source":"https://hh.ru/vacancy/129985624","Owner":"Годунова Александра Вячеславовна 100%","CEO":"Ушакова Элла Петровна","LPR":"Ушакова Элла Петровна","LPR Role":"Генеральный директор / практический ЛПР","Primary Phone":"+7 (499) 707-20-60","Primary Email":"info@gk-orionmetall.ru","HH Contact":"https://hh.ru/vacancy/129985624","Contact Form":"https://orionmetall.ru/contact","Contact Type":"Корпоративный маршрут к CEO через официальный телефон/email/сайт и вакансию","Contact Source":"Официальный сайт Орион-Металл; РБК Компании; HeadHunter","Consulting Hypothesis":"Систематизация B2B-продаж металлопроката и продукции для ЖКХ: CRM, KPI, отчетность, работа с ЛПР, развитие клиентской базы и управляемый план роста выручки и маржи.",
+      "contacts":[{"value":"+7 (499) 707-20-60","channel":"Phone","type":"Corporate","source":"Орион-Металл official website","url":"https://orionmetall.ru/contact","is_lpr":false,"notes":"Официальный многоканальный телефон компании"},{"value":"info@gk-orionmetall.ru","channel":"Email","type":"Corporate","source":"Орион-Металл official website","url":"https://orionmetall.ru/contact","is_lpr":false,"notes":"Официальный резервный корпоративный email"},{"value":"https://hh.ru/vacancy/129985624","channel":"HeadHunter","type":"Employer route","source":"HeadHunter","url":"https://hh.ru/vacancy/129985624","is_lpr":false,"notes":"Маршрут через работодателя к коммерческому блоку"}],
+      "evidence":[{"type":"LEGAL","claim":"ООО «ОРИОН МЕТАЛЛ», ИНН 7719697390, ОГРН 5087746300362; гендиректор Ушакова Элла Петровна; действующая компания.","url":"https://companies.rbc.ru/id/5087746300362-ooo-orion-metall/","source":"РБК Компании"},{"type":"SCALE","claim":"За 2025 год выручка 28,726 млн ₽; среднесписочная численность 6 сотрудников.","url":"https://companies.rbc.ru/id/5087746300362-ooo-orion-metall/","source":"РБК Компании"},{"type":"OWNER_LPR","claim":"Годунова Александра Вячеславовна — учредитель; Ушакова Элла Петровна — генеральный директор.","url":"https://www.klerk.ru/tool/ocompany/5087746300362/","source":"Клерк / ЕГРЮЛ"},{"type":"SIGNAL","claim":"Вакансия от 04.02.2026: KPI, отчетность, CRM, переговоры с ЛПР, развитие продаж и управление командой.","url":"https://hh.ru/vacancy/129985624","source":"HeadHunter"},{"type":"CONTACT_ROUTE","claim":"Официальный сайт подтверждает ИНН/ОГРН, гендиректора, телефоны и email компании.","url":"https://orionmetall.ru/contact","source":"Орион-Металл official website"}]
     }
   ]
 }
