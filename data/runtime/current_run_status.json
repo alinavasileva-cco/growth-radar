@@ -1,16 +1,16 @@
 {
-  "run_id": "N5K-20260816-245",
+  "run_id": "N5K-20260816-246",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T05:00:58+03:00",
+  "updated_at": "2026-08-16T05:57:55+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 115,
-    "current_contactable_count": 115,
-    "progress_added": 115,
-    "remaining": 4885
+    "current_canonical_count": 118,
+    "current_contactable_count": 118,
+    "progress_added": 118,
+    "remaining": 4882
   },
   "funnel": {
     "discovered": 50,
@@ -20,20 +20,20 @@
     "lpr_identified": 3,
     "contact_route_found": 3,
     "qualified": 3,
-    "duplicates": 5,
-    "excluded": 42
+    "duplicates": 1,
+    "excluded": 46
   },
   "qualified_companies": [
-    "Implant-Line",
-    "Dircode / Диркод",
-    "Международный Институт Профессиональной Психологии / МИПП"
+    "Промышленные редукторы",
+    "Кристон-Кадастр",
+    "Орион-Металл"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "115_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "115_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "118_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "118_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
