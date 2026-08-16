@@ -1,37 +1,39 @@
 {
-  "run_id": "N5K-20260816-250",
+  "run_id": "N5K-20260816-251",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T09:24:00+03:00",
+  "updated_at": "2026-08-16T10:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 123,
-    "current_contactable_count": 123,
-    "progress_added": 123,
-    "remaining": 4877
+    "current_canonical_count": 126,
+    "current_contactable_count": 126,
+    "progress_added": 126,
+    "remaining": 4874
   },
   "funnel": {
-    "discovered": 12,
+    "discovered": 50,
     "size_check_passed": 4,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 11
+    "legal_match_passed": 4,
+    "signal_confirmed": 4,
+    "lpr_identified": 4,
+    "contact_route_found": 4,
+    "qualified": 3,
+    "duplicates": 6,
+    "excluded": 41
   },
   "qualified_companies": [
-    "Botamin"
+    "ALLIO",
+    "UNIOR / Униор Профешнл Тулз",
+    "Климатическая Компания ОЗОН"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "123_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "123_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "126_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "126_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
