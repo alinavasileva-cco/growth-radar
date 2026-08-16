@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260817-265",
+  "run_id": "N5K-20260817-266",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T00:21:00+03:00",
+  "updated_at": "2026-08-17T00:57:52+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 144,
-    "current_contactable_count": 144,
-    "progress_added": 144,
-    "remaining": 4856
+    "current_canonical_count": 145,
+    "current_contactable_count": 145,
+    "progress_added": 145,
+    "remaining": 4855
   },
   "funnel": {
-    "discovered": 20,
-    "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "discovered": 26,
+    "fast_gate_passed": 4,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 14
+    "duplicates": 8,
+    "excluded": 17
   },
   "qualified_companies": [
-    "ТРИЕМА"
+    "Форвард Экспресс"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "144_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "144_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "145_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "145_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
