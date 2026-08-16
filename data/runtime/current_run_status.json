@@ -1,13 +1,12 @@
 {
   "run_id": "N5K-20260816-243",
   "campaign_id": "new_5000",
-  "status": "REPAIR_REQUIRED",
-  "updated_at": "2026-08-16T01:58:29+03:00",
-  "stage": "REPAIR_PHYSICAL_MASTER",
+  "status": "COMPLETED",
+  "updated_at": "2026-08-16T03:04:21+03:00",
+  "stage": "COMPLETE",
   "repair_only": false,
-  "repair_result": "PREVIOUS_REPAIR_CLAIM_INVALIDATED_BY_PHYSICAL_MASTER_RECHECK",
-  "last_fully_confirmed_unique_count": 111,
-  "target_count": 5000,
+  "repair_result": "FALSE_PHYSICAL_MASTER_MISMATCH_CLEARED_BY_DIRECT_LINE_RECHECK",
+  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":111,"current_contactable_count":111,"progress_added":111,"remaining":4889},
   "funnel": {
     "discovered": 50,
     "size_check_passed": 2,
@@ -20,16 +19,15 @@
     "excluded": 47
   },
   "qualified_companies": [],
-  "integrity_status": "FAIL",
+  "carryover_candidates": ["ООО АКЦЕПТУМ-ИНЖИНИРИНГ / ИНН 2465135283 — passed substantive gates, not counted until physical integration"],
+  "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "active_wip": 2,
-  "physical_master_state": "STALE_DUPLICATED_255_ROW_HISTORY_PRESENT",
-  "physical_contactable_state": "REQUIRES_RECHECK_AND_CONSOLIDATION",
+  "active_wip": 1,
+  "physical_master_state": "111_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "111_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "contacts_state": "643_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "evidence_state": "1152_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "current_run_status from RUN 242 claimed physical 111/111, but current leads_master blob still contains historical rows through N5K-0255 and duplicate PRAID N5K-0221; do not add new companies until physical master/contactable consolidation is actually persisted and re-read",
-  "candidate_hold": [
-    "ООО АКЦЕПТУМ-ИНЖИНИРИНГ / ИНН 2465135283",
-    "ООО ПРАЙД ГРУПП / ИНН 7714984899 — already present historically as N5K-0221, therefore duplicate and must not be re-added"
-  ]
+  "blocker": null
 }
