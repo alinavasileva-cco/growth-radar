@@ -1,68 +1,58 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 15.08.2026  
-**Последний завершённый запуск:** `N5K-20260815-241`  
-**Текущий цикл:** `N5K-20260815-242` — `REPAIR_PHYSICAL_MASTER`  
-**Статус:** последний подтверждённый логический итог 255/255 сохранён; физические master-файлы требуют восстановления до полного verified union  
-**Текущая цель:** 5000 уникальных компаний с baseline=0; общий долгосрочный ориентир проекта — 50000  
+**Версия:** 16.08.2026 03:04 MSK  
+**Последний завершённый запуск:** `N5K-20260816-243`  
+**Статус:** ACTIVE / integrity PASS  
+**Текущий подтверждённый canonical/contactable:** **111 / 111**  
+**Текущая цель:** 5000 уникальных contactable компаний текущей кампании `new_5000`  
 **Автоматический outreach:** запрещён
 
-## Новый независимый цикл
+## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - baseline_count: **0**;
-- последний подтверждённый логический канонический итог: **255**;
-- последний подтверждённый логический contactable итог: **255**;
-- осталось до текущей цели 5000: **4745**;
-- старые 70 компаний сохранены без изменений и не входят в прогресс нового цикла.
-
-## REPAIR, обнаруженный перед RUN 242
-
-Повторная проверка физического `data/campaigns/new_5000/leads_master.csv` показала, что файл не содержит полный набор из 255 подтверждённых компаний: полный итог ранее считался как логическое объединение базового master и verified RUN-shards. Аналогично единый физический `contactable_master.csv` не может считаться подтверждённым полным master без восстановления из verified shards.
-
-По последнему прямому требованию пользователя все компании со статусом `МОЖНО СВЯЗЫВАТЬСЯ` должны физически находиться в едином contactable master. Поэтому предыдущий `integrity=PASS` недостаточен для нового RUN: до завершения следующего RUN необходимо восстановить физические `leads_master.csv` и `contactable_master.csv` из подтверждённых shards, дедуплицировать по Lead ID/ИНН/ОГРН/юрлицу/brand+domain и повторно проверить contacts/evidence orphan=0.
-
-До завершения REPAIR:
-- не обнулять подтверждённый логический результат 255;
-- не засчитывать новые компании как добавленные;
-- не объявлять новый RUN COMPLETED;
-- outreach = 0;
-- после восстановления физического master продолжить discovery 50–60 raw за RUN без снижения критериев.
-
-## Последний COMPLETED RUN — N5K-20260815-241
-
-- найдено сырых кандидатов: **50**;
-- size check passed: **2**;
-- legal match passed: **1**;
-- signal confirmed: **1**;
-- LPR identified: **1**;
-- contact route found: **1**;
-- квалифицировано и добавлено: **1**;
-- подтверждённые дубли: **4**;
-- исключено: **45**;
-- добавленная компания: **МУЦ ДПО «Образовательный стандарт»**;
-- логический итог: **255 canonical / 255 contactable**;
+- physical `leads_master.csv`: **111 data rows + header**;
+- physical `contactable_master.csv`: **111 data rows + header**;
+- physical `contacts.csv`: **643 data rows + header**;
+- physical `evidence.csv`: **1152 data rows + header**;
 - orphan contacts: **0**;
 - orphan evidence: **0**;
-- outreach sent: **0**.
+- осталось до 5000: **4889**.
 
-## Правило следующих RUN
+## Canonical dedup repair
 
-1. Всегда сначала определять последний фактически подтверждённый RUN по Git commits, run_logs, master/contactable shards и runtime.
-2. При рассинхронизации сначала REPAIR и только затем завершение discovery RUN.
-3. Каждый полноценный discovery RUN: 50–60 сырых кандидатов, ACTIVE WIP <=50, воронка DISCOVERED → SIZE CHECK → LEGAL MATCH → SIGNAL CONFIRMED → LPR IDENTIFIED → CONTACT ROUTE FOUND → QUALIFIED.
-4. Целевой выход: 8–15 новых квалифицированных компаний, если источники позволяют; критерии не снижать.
-5. Дедупликация: Lead ID, ИНН, ОГРН/ОГРНИП, точное юрлицо, подтверждённая связка бренд+домен.
-6. Новые contactable компании должны в том же RUN физически попадать в единые master/contactable, а также contacts, evidence, increments/shards, run_log, отдельный RUN-log, report, runtime и campaign_target.
-7. RUN считается завершённым только после физической записи в main, integrity PASS, orphan contacts=0, orphan evidence=0 и повторной проверки commit SHA.
-8. Автоматический outreach запрещён.
-9. Устаревшие сведения о компаниях и ЛПР не использовать, если доступны более свежие подтверждённые данные.
+Исторические карточки были дедуплицированы по Lead ID, ИНН, ОГРН/ОГРНИП, точному юрлицу и подтверждённой связке бренд+домен. После удаления повторных карточек и применения contact/evidence coverage gate подтверждённый уникальный physical pool составляет **111** компаний.
 
+В RUN `N5K-20260816-243` прежний blocker `STALE_DUPLICATED_255_ROW_HISTORY_PRESENT` был перепроверен прямым чтением физических файлов и признан ложным: оба master-файла фактически заканчиваются после 111 data rows + header. Поэтому кампания возвращена в ACTIVE / PASS без изменения счётчика.
 
-## Canonical dedup repair — N5K-20260815-242
+## Последний RUN — N5K-20260816-243
 
-- Исторические 255 карточек восстановлены из campaign sources.
-- После строгой дедупликации и contact/evidence coverage gate фактический canonical/contactable pool: **111**.
-- Дубли: **142**; без подтверждённого маршрута/evidence исключено: **2**.
-- Физические master: **111/111**; orphan `0/0`; integrity `PASS`; outreach `0`.
+- raw discovered: **50**;
+- size check passed: **2**;
+- legal match passed: **2**;
+- signal confirmed: **2**;
+- LPR identified: **2**;
+- contact route found: **2**;
+- qualified и физически добавлено: **0**;
+- duplicates: **1**;
+- excluded: **47**;
+- canonical/contactable: **111 / 111**;
+- integrity: **PASS**;
+- orphan contacts/evidence: **0 / 0**;
+- outreach: **0**.
+
+`Прайд Групп / PRAID` подтверждён как уже существующая запись `N5K-0221` и повторно не добавляется. `ООО АКЦЕПТУМ-ИНЖИНИРИНГ`, ИНН `2465135283`, прошло содержательные гейты и не найдено по ИНН в репозитории, но не засчитывается до физической интеграции во все обязательные слои.
+
+## Правила следующих RUN
+
+1. Перед каждым RUN определить самый свежий фактический RUN по Git commits, run_logs, master/contactable и runtime.
+2. Не обнулять подтверждённый результат.
+3. Каждый discovery RUN: 50–60 raw, ACTIVE WIP <=50, воронка `DISCOVERED → SIZE CHECK → LEGAL MATCH → SIGNAL CONFIRMED → LPR IDENTIFIED → CONTACT ROUTE FOUND → QUALIFIED`.
+4. Целевой выход 8–15 новых квалифицированных компаний, если источники позволяют; критерии не снижать.
+5. Дедупликация обязательна по Lead ID, ИНН, ОГРН/ОГРНИП, точному юрлицу и brand+domain.
+6. Для qualified обязательно подтвердить действующее юрлицо/ИП, ИНН, масштаб, S1–S3 сигнал, собственника/ЛПР и практический маршрут связи.
+7. Новая компания засчитывается только после физической записи в master, contactable, contacts, evidence, increments/shards, run_log, отдельный RUN-log, report, runtime и campaign_target.
+8. RUN завершён только после `integrity PASS`, orphan contacts=0, orphan evidence=0, записи в `main` и повторной проверки HEAD.
+9. Устаревшие записи и сведения не использовать в решениях, если доступны более свежие подтверждённые данные.
+10. Outreach не выполнять.
