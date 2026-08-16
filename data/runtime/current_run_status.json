@@ -1,33 +1,37 @@
 {
-  "run_id": "N5K-20260816-243",
+  "run_id": "N5K-20260816-244",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T03:04:21+03:00",
+  "updated_at": "2026-08-16T04:18:00+03:00",
   "stage": "COMPLETE",
-  "repair_only": false,
-  "repair_result": "FALSE_PHYSICAL_MASTER_MISMATCH_CLEARED_BY_DIRECT_LINE_RECHECK",
-  "new_cycle": {"baseline_count":0,"target_count":5000,"current_canonical_count":111,"current_contactable_count":111,"progress_added":111,"remaining":4889},
+  "new_cycle": {
+    "baseline_count": 0,
+    "target_count": 5000,
+    "current_canonical_count": 112,
+    "current_contactable_count": 112,
+    "progress_added": 112,
+    "remaining": 4888
+  },
   "funnel": {
     "discovered": 50,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 47
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 12,
+    "excluded": 37
   },
-  "qualified_companies": [],
-  "carryover_candidates": ["ООО АКЦЕПТУМ-ИНЖИНИРИНГ / ИНН 2465135283 — passed substantive gates, not counted until physical integration"],
+  "qualified_companies": [
+    "EVA PRO / Акцептум-Инжиниринг"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "active_wip": 1,
-  "physical_master_state": "111_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "111_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "contacts_state": "643_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "evidence_state": "1152_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "active_wip": 0,
+  "physical_master_state": "112_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "112_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

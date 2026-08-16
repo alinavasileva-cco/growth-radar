@@ -56,3 +56,7 @@
 8. RUN завершён только после `integrity PASS`, orphan contacts=0, orphan evidence=0, записи в `main` и повторной проверки HEAD.
 9. Устаревшие записи и сведения не использовать в решениях, если доступны более свежие подтверждённые данные.
 10. Outreach не выполнять.
+
+
+## Latest verified run N5K-20260816-244
+Canonical/contactable: 112/112. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
