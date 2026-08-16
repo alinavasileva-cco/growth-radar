@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0288,N5K-0288-C01,ТРИЕМА,3662103003,,Корпоративный маршрут,+7 (473) 300-33-73,Phone,Published corporate route,Официальный сайт ТРИЕМА,https://www.triema.com/,NO,HIGH,2026-08-17,Главный офис / оптовый отдел,N5K-20260817-265,new_5000
+N5K-0288,N5K-0288-C02,ТРИЕМА,3662103003,,Корпоративный маршрут,info@triema.com,Email,Published corporate route,Официальный сайт ТРИЕМА,https://www.triema.com/,NO,HIGH,2026-08-17,Официальный корпоративный email,N5K-20260817-265,new_5000
+N5K-0288,N5K-0288-C03,ТРИЕМА,3662103003,,Корпоративный маршрут,https://hh.ru/vacancy/129420093,HH vacancy,Employer route,HeadHunter,https://hh.ru/vacancy/129420093,NO,HIGH,2026-08-17,Прямой канал работодателя по руководящей B2B-sales роли,N5K-20260817-265,new_5000

@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260816-264",
+  "run_id": "N5K-20260817-265",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T22:59:50+03:00",
+  "updated_at": "2026-08-17T00:21:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 143,
-    "current_contactable_count": 143,
-    "progress_added": 143,
-    "remaining": 4857
+    "current_canonical_count": 144,
+    "current_contactable_count": 144,
+    "progress_added": 144,
+    "remaining": 4856
   },
   "funnel": {
-    "discovered": 15,
-    "fast_gate_passed": 4,
+    "discovered": 20,
+    "fast_gate_passed": 6,
     "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 1,
-    "duplicates": 0,
+    "duplicates": 5,
     "excluded": 14
   },
   "qualified_companies": [
-    "ФЦБ-РЕГИОН / Федеральный центр банкротства"
+    "ТРИЕМА"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "143_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "143_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "144_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "144_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
