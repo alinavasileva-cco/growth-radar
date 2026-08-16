@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260816-254",
+  "run_id": "N5K-20260816-255",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T13:17:00+03:00",
+  "updated_at": "2026-08-16T14:05:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 130,
-    "current_contactable_count": 130,
-    "progress_added": 130,
-    "remaining": 4870
+    "current_canonical_count": 132,
+    "current_contactable_count": 132,
+    "progress_added": 132,
+    "remaining": 4868
   },
   "funnel": {
-    "discovered": 54,
+    "discovered": 32,
     "size_check_passed": 3,
     "legal_match_passed": 3,
     "signal_confirmed": 2,
@@ -21,18 +21,18 @@
     "contact_route_found": 2,
     "qualified": 2,
     "duplicates": 6,
-    "excluded": 46
+    "excluded": 24
   },
   "qualified_companies": [
-    "Prosche.AI / Платформа Проще",
-    "S-COPY / С-КОПИ"
+    "ПланФакт",
+    "Нити Творчества"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "130_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "130_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "132_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "132_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
