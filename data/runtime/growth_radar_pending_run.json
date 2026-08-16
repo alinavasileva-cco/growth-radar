@@ -1,111 +1,205 @@
 {
-  "run_id": "N5K-20260816-259",
-  "updated_at": "2026-08-16T18:18:00+03:00",
+  "run_id": "N5K-20260816-260",
+  "updated_at": "2026-08-16T19:02:43+03:00",
   "funnel": {
-    "discovered": 31,
-    "fast_gate_passed": 8,
-    "size_check_passed": 4,
+    "discovered": 24,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
     "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 8,
-    "excluded": 22
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 2,
+    "excluded": 20
   },
-  "notes": "Accelerated multi-source cycle reviewed 31 distinct company candidates from current 2026 vacancy, company-site, owner-publication and registry streams. The requested 100-150 raw target was not reached in this execution, so no larger number is claimed. Eight candidates were confirmed as existing physical-master duplicates (including MARROB, Chacha’s Club, ГК Ангел, Деметра, Hugency, BINAGroup, Нацтранс and Прайд Групп). Other candidates were removed for recruiter-proxy status, current scale outside the canonical band, ambiguous brand-to-legal match, insufficient current scale evidence, or missing reliable LPR/contact route. HOME passed current legal, operational-scale, signal, LPR and contact checks using current 2026 official sources; GitHub index search showed no existing INN 026201270000 and the physical pre-write workflow dedup guard will recheck INN/OGRN/Lead ID before integration. No outreach was performed.",
+  "notes": "Accelerated multi-source cycle individually reviewed 24 distinct current candidates from 2026 vacancy, company-site, registry and public growth-signal streams. The requested 100-150 raw target was not reached in this execution, so no larger number is claimed. Two surfaced candidates were already-known physical-master duplicates. Fast gate retained five candidates; Terri Group failed the current size requirement on fresh registry headcount, Magnitof lacked sufficient confirmed scale for the newly registered legal entity, and Торговый дом Славич was not advanced because the HH employer/legal-entity linkage to the Moscow AO could not be confirmed without ambiguity. PAPATOOLS and Travel Create Feel passed legal, scale, signal, LPR and practical contact-route checks. GitHub index dedup found no existing PAPATOOLS INN/OGRN or Travel Create Feel INN/name; the physical pre-write workflow guard will recheck INN/OGRN/Lead ID before integration. No outreach was performed.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0280",
-      "Brand": "HOME / Швейная фабрика HOME",
-      "Legal Name": "ИП Кожемякин Иван Сергеевич",
-      "INN": "026201270000",
-      "OGRN/OGRNIP": "322028000024479",
-      "Region": "Республика Башкортостан",
-      "City": "Уфа",
-      "Segment": "Одежда / собственное швейное производство / корпоративный мерч / B2B",
-      "Website": "https://homebrandofficial.ru/",
-      "Revenue/Scale": "Действующий ИП; собственное производство 1300 м² в Уфе; фабрика заявляет мощность 10 000 изделий в месяц, полный цикл и работу с малыми и крупными B2B-партиями; бренд работает с 2017 года и имеет офлайн-розницу",
+      "Lead ID": "N5K-0281",
+      "Brand": "PAPATOOLS / ПАПАТУЛЗ",
+      "Legal Name": "ООО «ПАПАТУЛЗ ПРОМЫШЛЕННЫЕ СИСТЕМЫ»",
+      "INN": "7722396805",
+      "OGRN/OGRNIP": "1177746409477",
+      "Region": "Москва / Волгоград",
+      "City": "Москва",
+      "Segment": "Промышленное оборудование / инструмент / B2B",
+      "Website": "https://www.papatools.ru/",
+      "Revenue/Scale": "Действующая частная B2B-компания; выручка 829,352 млн ₽ за 2025 год; публичные реестровые данные указывают 9 сотрудников; головной офис в Москве и обособленное подразделение в Волгограде",
       "Signal Level": "S1",
-      "Signal Summary": "В актуальной публикации 2026 года сооснователь HOME называет среди ближайших планов усиление B2B, масштабирование модели HOME + регион и запуск новых брендов; отдельно действующее производство предлагает корпоративный мерч и запуск брендов под ключ.",
-      "Signal Date": "2026-06-01",
-      "Signal Source": "https://element-media.pro/brend-home/",
-      "Owner": "Кожемякин Иван Сергеевич",
-      "CEO": "Кожемякин Иван Сергеевич",
-      "LPR": "Кожемякин Иван Сергеевич",
-      "LPR Role": "Индивидуальный предприниматель / сооснователь / владелец",
-      "Primary Phone": "+7 (347) 225-70-75",
-      "Primary Email": "home.official@yandex.ru",
-      "HH Contact": "https://ufa.hh.ru/employer/5131355",
-      "Contact Form": "https://homebrandofficial.ru/",
-      "Contact Type": "Прямой корпоративный маршрут к бизнесу владельца через официальный телефон/email/сайт и профиль работодателя",
-      "Contact Source": "Официальные сайты HOME и швейной фабрики HOME; HeadHunter; актуальная публикация Element Media; реестровые данные ИП",
-      "Consulting Hypothesis": "Масштабирование B2B-направления и региональной модели: сегментация корпоративных клиентов, repeatable sales process, CRM и KPI, экономика B2B-партий и загрузки производства, управление маржинальностью, партнерская модель HOME + регион и снижение зависимости от founder-led продаж.",
+      "Signal Summary": "В январе 2026 компания ищет руководителя отдела продаж для управляемой цифровой и маржинальной B2B-системы продаж: прогноз, воронка, маржинальность, бюджетирование, Bitrix24, развитие команды и работа со стратегическими клиентами.",
+      "Signal Date": "2026-01-16",
+      "Signal Source": "https://hh.ru/vacancy/129497558",
+      "Owner": "Милокумов Павел Петрович — 100%",
+      "CEO": "Милокумов Павел Петрович",
+      "LPR": "Милокумов Павел Петрович",
+      "LPR Role": "Генеральный директор / единственный учредитель",
+      "Primary Phone": "+7 (495) 215-24-58",
+      "Primary Email": "",
+      "HH Contact": "https://hh.ru/vacancy/129497558",
+      "Contact Form": "https://www.papatools.ru/",
+      "Contact Type": "Корпоративный маршрут к owner-CEO через официальный телефон/форму и актуальный HH-сигнал",
+      "Contact Source": "Официальный сайт PAPATOOLS; HeadHunter; свежие реестровые источники ФНС/Росстат",
+      "Consulting Hypothesis": "Управляемое масштабирование B2B-продаж после резкого роста: сегментация клиентов и каналов, прогнозирование, CRM/воронка, KPI и маржинальность, стандарты KAM, бюджетирование и снижение зависимости от ручного управления собственника.",
       "contacts": [
         {
-          "value": "+7 (347) 225-70-75",
+          "value": "+7 (495) 215-24-58",
           "channel": "Phone",
           "type": "Published corporate route",
-          "source": "Официальный сайт HOME / швейной фабрики HOME",
-          "url": "https://home-merch.ru/kontakt",
+          "source": "Официальный сайт PAPATOOLS",
+          "url": "https://www.papatools.ru/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный телефон; просить соединить с владельцем Иваном Кожемякиным по вопросу развития B2B-направления"
+          "notes": "Официальный телефон головного офиса; просить соединить с генеральным директором Павлом Милокумовым по вопросу развития коммерческой системы"
         },
         {
-          "value": "home.official@yandex.ru",
-          "channel": "Email",
+          "value": "https://www.papatools.ru/",
+          "channel": "Contact form",
           "type": "Published corporate route",
-          "source": "Официальный сайт HOME",
-          "url": "https://homebrandofficial.ru/",
+          "source": "Официальный сайт PAPATOOLS",
+          "url": "https://www.papatools.ru/",
           "is_lpr": false,
-          "notes": "Официальный email для сотрудничества по пошиву"
+          "notes": "Официальная форма связи на сайте"
         },
         {
-          "value": "https://ufa.hh.ru/employer/5131355",
-          "channel": "Employer profile",
+          "value": "https://hh.ru/vacancy/129497558",
+          "channel": "HH vacancy",
           "type": "Employer route",
           "source": "HeadHunter",
-          "url": "https://ufa.hh.ru/employer/5131355",
+          "url": "https://hh.ru/vacancy/129497558",
           "is_lpr": false,
-          "notes": "Действующий профиль работодателя HOME со ссылкой на официальный домен"
+          "notes": "Актуальный бизнес-сигнал работодателя и дополнительный маршрут через профиль вакансии"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ИП Кожемякин Иван Сергеевич, ИНН 026201270000, ОГРНИП 322028000024479; реквизиты опубликованы на действующем официальном сайте HOME.",
-          "url": "https://homebrandofficial.ru/ayyola",
-          "source": "Официальный сайт HOME"
+          "claim": "ООО «ПАПАТУЛЗ ПРОМЫШЛЕННЫЕ СИСТЕМЫ», ИНН 7722396805, ОГРН 1177746409477; компания действует, генеральный директор и учредитель — Павел Милокумов.",
+          "url": "https://xfirm.ru/company/7722396805",
+          "source": "Xfirm / ФНС"
         },
         {
           "type": "SCALE",
-          "claim": "HOME имеет собственное производство площадью 1300 м²; отдельный официальный сайт фабрики заявляет мощность 10 000 изделий в месяц, полный цикл и B2B-пошив корпоративного мерча.",
-          "url": "https://home-merch.ru/about",
-          "source": "Официальный сайт швейной фабрики HOME"
+          "claim": "Выручка компании за 2025 год составила 829,352 млн ₽; официальный сайт подтверждает головной офис в Москве и подразделение в Волгограде.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1177746409477/",
+          "source": "Т-Банк / официальные данные ФНС и Росстата"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Иван Кожемякин указан как сооснователь HOME в актуальной публикации 2026 года; юридический оператор официального сайта — его ИП, поэтому он является прямым владельцем/ЛПР для текущего бизнеса.",
-          "url": "https://element-media.pro/brend-home/",
-          "source": "Element Media + официальный сайт HOME"
+          "claim": "Павел Петрович Милокумов — генеральный директор и единственный учредитель компании.",
+          "url": "https://companies.rbc.ru/id/1177746409477-ooo-papatulz/",
+          "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "Официальные сайты homebrandofficial.ru и home-merch.ru публикуют реквизиты ИП Кожемякина и единый телефон HOME; профиль работодателя HH ведет на homebrandofficial.ru.",
-          "url": "https://ufa.hh.ru/employer/5131355",
-          "source": "HeadHunter + официальные сайты HOME"
+          "claim": "Официальный сайт PAPATOOLS публикует ООО «ПАПАТУЛЗ», ИНН 7722396805 и ОГРН 1177746409477, что подтверждает прямую связку бренда и юрлица.",
+          "url": "https://www.papatools.ru/",
+          "source": "Официальный сайт PAPATOOLS"
         },
         {
           "type": "SIGNAL",
-          "claim": "В публикации 2026 года HOME прямо называет планы усилить B2B, масштабировать модель HOME + регион и запускать новые бренды; производственный контур уже продает корпоративный мерч и запуск брендов под ключ.",
-          "url": "https://element-media.pro/brend-home/",
-          "source": "Element Media / HOME"
+          "claim": "Вакансия РОПа от 16 января 2026 описывает управляемую цифровую и маржинальную B2B-систему продаж, управление воронкой, маржой, бюджетированием и Bitrix24, а также развитие команды.",
+          "url": "https://hh.ru/vacancy/129497558",
+          "source": "HeadHunter"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальные сайты публикуют телефон +7 (347) 225-70-75 и email home.official@yandex.ru; HH подтверждает активный профиль работодателя HOME и официальный домен.",
-          "url": "https://homebrandofficial.ru/",
-          "source": "Официальный сайт HOME + HeadHunter"
+          "claim": "Официальный сайт публикует телефон головного офиса +7 (495) 215-24-58 и форму связи; маршрут позволяет запросить передачу сообщения owner-CEO.",
+          "url": "https://www.papatools.ru/",
+          "source": "Официальный сайт PAPATOOLS"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0282",
+      "Brand": "Travel Create Feel / TCF",
+      "Legal Name": "ИП Егорова Екатерина Игоревна",
+      "INN": "332710259270",
+      "OGRN/OGRNIP": "321332800056809",
+      "Region": "Владимирская область / Москва",
+      "City": "Москва",
+      "Segment": "Travel / MICE / корпоративные путешествия / B2B",
+      "Website": "https://travel-create-feel.ru/",
+      "Revenue/Scale": "Действующий ИП; команда 10+ человек; 50+ туров и 400+ клиентов в год; рост за 2025 год 220%; официальный сайт указывает 300+ реализованных путешествий и 70–100 туров ежегодно",
+      "Signal Level": "S2",
+      "Signal Summary": "В 2026 TCF находится в фазе активного масштабирования: рост за 2025 год 220%, переход от ручной к системной модели, развитие корпоративных путешествий/MICE и отдельного B2B-направления; публичные вакансии требуют анализа воронки и систематизации роста.",
+      "Signal Date": "2026-02-26",
+      "Signal Source": "https://t.me/s/marketing_jobs/11133",
+      "Owner": "Егорова Екатерина Игоревна",
+      "CEO": "Егорова Екатерина Игоревна",
+      "LPR": "Егорова Екатерина Игоревна",
+      "LPR Role": "Индивидуальный предприниматель / основательница Travel Create Feel",
+      "Primary Phone": "",
+      "Primary Email": "info@travel.create.feel.ru",
+      "HH Contact": "https://hh.ru/vacancy/128713247",
+      "Contact Form": "https://travel-create-feel.ru/zakaz",
+      "Contact Type": "Прямой корпоративный маршрут к бизнесу основательницы через официальный email/форму и публичный профиль бренда",
+      "Contact Source": "Официальный сайт Travel Create Feel; HeadHunter; Telegram marketing jobs; свежие реестровые данные ИП",
+      "Consulting Hypothesis": "Систематизация быстрого роста и запуск repeatable B2B/MICE-направления: продуктовая сегментация корпоративных клиентов, CRM и воронка, unit economics туров, KPI, стандарты продаж, планирование мощности команды и снижение founder-led зависимости.",
+      "contacts": [
+        {
+          "value": "info@travel.create.feel.ru",
+          "channel": "Email",
+          "type": "Published corporate route",
+          "source": "Официальный сайт Travel Create Feel",
+          "url": "https://travel-create-feel.ru/",
+          "is_lpr": false,
+          "notes": "Официальный email бренда; просить передать сообщение основательнице Екатерине Егоровой"
+        },
+        {
+          "value": "https://travel-create-feel.ru/zakaz",
+          "channel": "Contact form",
+          "type": "Published corporate route",
+          "source": "Официальный сайт Travel Create Feel",
+          "url": "https://travel-create-feel.ru/zakaz",
+          "is_lpr": false,
+          "notes": "Официальная форма связи бренда"
+        },
+        {
+          "value": "https://hh.ru/vacancy/128713247",
+          "channel": "HH vacancy",
+          "type": "Employer route",
+          "source": "HeadHunter",
+          "url": "https://hh.ru/vacancy/128713247",
+          "is_lpr": false,
+          "notes": "Публичный сигнал запуска и масштабирования корпоративного B2B-направления"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ИП Егорова Екатерина Игоревна, ИНН 332710259270, ОГРНИП 321332800056809; действующий ИП, зарегистрирован 08.11.2021.",
+          "url": "https://check.tochka.com/company/321332800056809/",
+          "source": "Точка / ЕГРИП"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Публичные материалы 2026 указывают рост за 2025 год 220%, 50+ туров и 400+ клиентов ежегодно, аудиторию 45 тыс. и команду 10+ человек; официальный сайт указывает 300+ реализованных путешествий и 70–100 туров ежегодно.",
+          "url": "https://t.me/s/marketing_jobs/11133",
+          "source": "Публичная вакансия Travel Create Feel + официальный сайт"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Екатерина Егорова публично указана как основательница Travel Create Feel; официальный сайт работает от её ИП и публикует соответствующий ИНН.",
+          "url": "https://lpconsult.moscow/",
+          "source": "LP Consult + официальный сайт Travel Create Feel"
+        },
+        {
+          "type": "BRAND_MATCH",
+          "claim": "Официальный сайт Travel Create Feel прямо публикует ИП Егорова Екатерина Игоревна и ИНН 332710259270 в юридическом футере.",
+          "url": "https://travel-create-feel.ru/footer",
+          "source": "Официальный сайт Travel Create Feel"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "TCF сообщает о росте 220% за 2025 год и переходе от ручной к системной модели; параллельно компания развивает корпоративные туры/MICE и публиковала роль для создания B2B-направления с нуля.",
+          "url": "https://hh.ru/vacancy/128713247",
+          "source": "HeadHunter + публичные вакансии Travel Create Feel"
+        },
+        {
+          "type": "CONTACT_ROUTE",
+          "claim": "Официальный сайт публикует email info@travel.create.feel.ru и форму заявки; это подтверждённый корпоративный маршрут к бизнесу основательницы.",
+          "url": "https://travel-create-feel.ru/",
+          "source": "Официальный сайт Travel Create Feel"
         }
       ]
     }
