@@ -1,37 +1,39 @@
 {
-  "run_id": "N5K-20260816-244",
+  "run_id": "N5K-20260816-245",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T04:18:00+03:00",
+  "updated_at": "2026-08-16T05:00:58+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 112,
-    "current_contactable_count": 112,
-    "progress_added": 112,
-    "remaining": 4888
+    "current_canonical_count": 115,
+    "current_contactable_count": 115,
+    "progress_added": 115,
+    "remaining": 4885
   },
   "funnel": {
     "discovered": 50,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 12,
-    "excluded": 37
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 5,
+    "excluded": 42
   },
   "qualified_companies": [
-    "EVA PRO / Акцептум-Инжиниринг"
+    "Implant-Line",
+    "Dircode / Диркод",
+    "Международный Институт Профессиональной Психологии / МИПП"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "112_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "112_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "115_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "115_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
