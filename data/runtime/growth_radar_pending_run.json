@@ -1,0 +1,57 @@
+{
+  "run_id": "N5K-20260816-244",
+  "updated_at": "2026-08-16T04:18:00+03:00",
+  "funnel": {
+    "discovered": 50,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 12,
+    "excluded": 37
+  },
+  "notes": "50 raw vacancy/business signals screened in the cycle. 12 matched existing canonical companies by legal/brand identity; 37 failed current legal/scale/signal/LPR/contact-route gates or had ambiguous employer-to-legal mapping. Outdated/liquidating legal entities were excluded. One carryover candidate passed all gates and was reverified before physical integration. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0256",
+      "Brand": "EVA PRO / Акцептум-Инжиниринг",
+      "Legal Name": "ООО «АКЦЕПТУМ-ИНЖИНИРИНГ»",
+      "INN": "2465135283",
+      "OGRN/OGRNIP": "1152468053726",
+      "Region": "Москва",
+      "City": "Москва / Красноярск",
+      "Segment": "Автомобильная электроника / TPMS / производство и B2B",
+      "Website": "https://1eva.pro/",
+      "Revenue/Scale": "Выручка 136 085 000 ₽ за 2025 год; 28 сотрудников по данным ФНС за 2025 год; 2 действующие торговые марки EVA PRO",
+      "Signal Level": "S1",
+      "Signal Summary": "Компания нанимает Head of Sales с возможностью собрать и развить сильный отдел продаж, влиять на стратегию, растить людей и масштабировать команду; прямой сигнал усиления и систематизации коммерческой функции.",
+      "Signal Date": "2026-01-26",
+      "Signal Source": "https://krasnoyarsk.hh.ru/vacancy/129854231",
+      "Owner": "Завьялов Никита Сергеевич 75%; Соколов Алексей Валерьевич 25%",
+      "CEO": "Завьялов Никита Сергеевич",
+      "LPR": "Завьялов Никита Сергеевич",
+      "LPR Role": "Генеральный директор и контролирующий собственник 75%",
+      "Primary Phone": "+7 (965) 900-60-50",
+      "Primary Email": "sales@1eva.pro",
+      "HH Contact": "https://krasnoyarsk.hh.ru/vacancy/129854231",
+      "Contact Form": "https://1eva.pro/contacts",
+      "Contact Type": "Корпоративный маршрут к owner-CEO через официальный телефон/email/сайт и вакансию",
+      "Contact Source": "Официальный сайт EVA PRO; РБК Компании; Companium/ФНС; HeadHunter",
+      "Consulting Hypothesis": "Систематизация и масштабирование продаж технологического продукта: сегментация B2B/B2C и партнёрских каналов, CRM/pipeline, KPI, структура команды, коммерческая аналитика и 90-дневный план роста.",
+      "contacts": [
+        {"value": "+7 (965) 900-60-50", "channel": "Phone", "type": "Corporate", "source": "Official website EVA PRO", "url": "https://1eva.pro/contacts", "is_lpr": false, "notes": "Официальный телефон ООО «Акцептум-Инжиниринг»"},
+        {"value": "sales@1eva.pro", "channel": "Email", "type": "Corporate", "source": "Official website EVA PRO", "url": "https://1eva.pro/contacts", "is_lpr": false, "notes": "Официальный sales email"},
+        {"value": "https://krasnoyarsk.hh.ru/vacancy/129854231", "channel": "HeadHunter", "type": "Employer route", "source": "HeadHunter", "url": "https://krasnoyarsk.hh.ru/vacancy/129854231", "is_lpr": false, "notes": "Маршрут через работодателя к коммерческому блоку"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «АКЦЕПТУМ-ИНЖИНИРИНГ», ИНН 2465135283, ОГРН 1152468053726, действует; генеральный директор Завьялов Никита Сергеевич.", "url": "https://companies.rbc.ru/id/1152468053726-ooo-aktseptum-inzhiniring/", "source": "РБК Компании"},
+        {"type": "SCALE", "claim": "Выручка за 2025 год 136 085 000 ₽; ФНС-оценка среднесписочной численности за 2025 год — 28 сотрудников.", "url": "https://companium.ru/id/1152468053726-akceptum", "source": "Companium / ФНС"},
+        {"type": "OWNER_LPR", "claim": "Завьялов Никита Сергеевич — генеральный директор и контролирующий учредитель с долей 75%.", "url": "https://companies.rbc.ru/amp/ogrn/1152468053726/", "source": "РБК Компании"},
+        {"type": "SIGNAL", "claim": "Вакансия Head of Sales от 26.01.2026 предусматривает возможность собрать и развить сильный отдел продаж, влияние на стратегию и масштабирование команды.", "url": "https://krasnoyarsk.hh.ru/vacancy/129854231", "source": "HeadHunter"},
+        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт юрлица подтверждает телефон +7 965 900-60-50, email sales@1eva.pro, ИНН и ОГРН.", "url": "https://1eva.pro/contacts", "source": "EVA PRO official website"}
+      ]
+    }
+  ]
+}
