@@ -1,57 +1,94 @@
 {
-  "run_id": "N5K-20260817-266",
-  "updated_at": "2026-08-17T00:57:52+03:00",
+  "run_id": "N5K-20260817-267",
+  "updated_at": "2026-08-17T02:04:26+03:00",
   "funnel": {
-    "discovered": 26,
-    "fast_gate_passed": 4,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
+    "discovered": 24,
+    "fast_gate_passed": 6,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 8,
-    "excluded": 17
+    "excluded": 15
   },
-  "notes": "Accelerated multi-source discovery continued from verified physical 144/144 baseline. Twenty-six distinct company/employer signals were individually reviewed; no larger raw count is claimed. Eight were confirmed existing physical-master duplicates. Candidates relying only on stale financial/employee records or unresolved brand-to-legal matches were not qualified. Forward Express passed using current legal status, current operational scale signals (60+ truck fleet and 2026 terminal accreditation), a 2026 direct sales-build signal, identified owner/CEO and a practical direct-employer HH route. No outreach.",
+  "notes": "Accelerated multi-source discovery continued from verified physical 145/145 baseline. Twenty-four distinct company/employer signals were individually reviewed; no larger raw count is claimed. Eight were confirmed or strongly indicated existing-master duplicates. Stale scale records were not used for qualification. Candidates with recruiting-intermediary status, fresh staff count below the gate, scale above the canonical profile, or unresolved brand-to-legal links were excluded. Союз Девелоперов Москвы passed because current 2026 HeadHunter postings explicitly state that IP Lukyanov Nikita Vladimirovich operates under the brand, Domclick independently confirms the same brand, proprietor and INN, the agency has an active team/transactions footprint, Nikita Lukyanov is identified as head/owner, and the direct employer HH vacancy is a practical contact route. The current brand website has a different legal operator in its footer, therefore its phone/email were not used as the contact route or legal-match evidence. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0289",
-      "Brand": "Форвард Экспресс",
-      "Legal Name": "ООО «ФОРВАРД ЭКСПРЕСС»",
-      "INN": "7805758199",
-      "OGRN/OGRNIP": "1197847213772",
-      "Region": "Санкт-Петербург",
-      "City": "Санкт-Петербург",
-      "Segment": "Контейнерные и автомобильные грузоперевозки / B2B логистика",
-      "Website": "",
-      "Revenue/Scale": "Действующая частная логистическая компания; в актуальной вакансии 2026 года подтвержден собственный автопарк 60+ грузовых автомобилей; в августе 2026 компания присутствует в актуальных списках аккредитованных автопредприятий терминалов Санкт-Петербурга",
+      "Lead ID": "N5K-0290",
+      "Brand": "Союз Девелоперов Москвы",
+      "Legal Name": "ИП Лукьянов Никита Владимирович",
+      "INN": "341003103169",
+      "OGRN/OGRNIP": "317344300115539",
+      "Region": "Москва / Удмуртская Республика",
+      "City": "Москва",
+      "Segment": "Недвижимость / агентство новостроек бизнес- и премиум-класса",
+      "Website": "https://sdm-moscow.ru/",
+      "Revenue/Scale": "Действующий ИП; Domclick подтверждает агентство Союз Девелоперов Москвы под ИНН 341003103169, несколько публичных агентов и сделки за последние 12 месяцев; текущий сайт бренда показывает офис и команду в Москва-Сити. Финансовая выручка ИП не использовалась для решения.",
       "Signal Level": "S1",
-      "Signal Summary": "В феврале 2026 компания нанимала руководителя отдела продаж с прямой задачей создать команду с нуля и организовать рабочий процесс; параллельно развивается новое направление перевозок в тентовых полуприцепах.",
-      "Signal Date": "2026-02-05",
+      "Signal Summary": "В январе 2026 бренд нанимал руководителя группы/отдела продаж с прямой задачей построить эффективный отдел продаж с нуля, управлять воронкой и улучшать процессы; в вакансии прямо указано, что ИП Лукьянов Никита Владимирович работает под брендом Союз Девелоперов Москвы.",
+      "Signal Date": "2026-01-28",
       "Signal Source": "HeadHunter",
-      "Owner": "Жаров Дмитрий Юрьевич — 100%",
-      "CEO": "Жарков Алексей Юрьевич",
-      "LPR": "Жарков Алексей Юрьевич",
-      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Owner": "Лукьянов Никита Владимирович — индивидуальный предприниматель",
+      "CEO": "Лукьянов Никита Владимирович",
+      "LPR": "Лукьянов Никита Владимирович",
+      "LPR Role": "ИП / руководитель агентства / собственник",
       "Primary Phone": "",
       "Primary Email": "",
-      "HH Contact": "https://spb.hh.ru/vacancy/130221575",
+      "HH Contact": "https://hh.ru/vacancy/129952615",
       "Contact Form": "",
-      "Contact Type": "Прямой маршрут работодателя через HeadHunter к руководящей sales-роли с передачей сообщения генеральному директору",
-      "Contact Source": "HeadHunter; РБК Компании/ЕГРЮЛ; актуальные терминальные реестры RLI Systems",
-      "Consulting Hypothesis": "Построение масштабируемой B2B-sales системы в логистике: сегментация грузовладельцев и направлений, CRM-воронка, KPI и forecasting, экономика контейнерных и тентовых перевозок, стандарты работы команды и 90-дневный запуск отдела.",
+      "Contact Type": "Прямой маршрут работодателя через HeadHunter к собственнику/руководителю агентства",
+      "Contact Source": "HeadHunter; Domclick; РБК Компании/ЕГРИП",
+      "Consulting Hypothesis": "Систематизация продаж новостроек бизнес- и премиум-класса: структура отдела, CRM-воронка, KPI и конверсии, стандарты работы агентов, партнёрские каналы с девелоперами и 90-дневная программа масштабирования.",
       "contacts": [
-        {"value": "https://spb.hh.ru/vacancy/130221575", "channel": "HH vacancy", "type": "Direct employer route", "source": "HeadHunter", "url": "https://spb.hh.ru/vacancy/130221575", "notes": "Прямая вакансия ООО Форвард Экспресс на руководителя отдела продаж; практический маршрут к работодателю"}
+        {
+          "value": "https://hh.ru/vacancy/129952615",
+          "channel": "HH vacancy",
+          "type": "Direct employer route",
+          "source": "HeadHunter",
+          "url": "https://hh.ru/vacancy/129952615",
+          "is_lpr": false,
+          "notes": "Прямая вакансия бренда; в тексте явно указано, что ИП Лукьянов Никита Владимирович работает под брендом Союз Девелоперов Москвы. Используется как корпоративный маршрут передачи сообщения ЛПР."
+        }
       ],
       "evidence": [
-        {"type": "LEGAL", "claim": "ООО ФОРВАРД ЭКСПРЕСС действует; ИНН 7805758199, ОГРН 1197847213772; генеральный директор Алексей Жарков, единственный учредитель Дмитрий Жаров.", "url": "https://companies.rbc.ru/id/1197847213772-obschestvo-s-ogranichennoj-otvetstvennostyu-forvard-ekspress/", "source": "РБК Компании / ЕГРЮЛ"},
-        {"type": "SCALE", "claim": "В прямой вакансии работодателя 2026 года подтвержден собственный автопарк более 60 грузовых автомобилей; в актуальном на август 2026 терминальном реестре компания сохраняет аккредитацию.", "url": "https://spb.hh.ru/vacancy/130221575", "source": "HeadHunter + RLI Systems"},
-        {"type": "BRAND_LEGAL", "claim": "Прямая вакансия опубликована работодателем ООО Форвард Экспресс; наименование совпадает с действующим юрлицом ИНН 7805758199, а отрасль и Санкт-Петербург совпадают с реестровыми сведениями.", "url": "https://spb.hh.ru/vacancy/130221575", "source": "HeadHunter + РБК Компании"},
-        {"type": "SIGNAL", "claim": "Руководителю отдела продаж поставлена задача создать команду с нуля и организовать рабочий процесс; компания развивает новое направление тентовых перевозок.", "url": "https://spb.hh.ru/vacancy/130221575", "source": "HeadHunter"},
-        {"type": "OWNER_LPR", "claim": "Генеральный директор Алексей Жарков и единственный учредитель Дмитрий Жаров подтверждены актуальной записью действующего юрлица.", "url": "https://companies.rbc.ru/id/1197847213772-obschestvo-s-ogranichennoj-otvetstvennostyu-forvard-ekspress/", "source": "РБК Компании / ЕГРЮЛ"},
-        {"type": "CONTACT_ROUTE", "claim": "Прямая вакансия ООО Форвард Экспресс на HeadHunter является практическим корпоративным маршрутом связи с работодателем по руководящей sales-роли.", "url": "https://spb.hh.ru/vacancy/130221575", "source": "HeadHunter"},
-        {"type": "CURRENT_OPERATIONS", "claim": "ООО ФОРВАРД ЭКСПРЕСС ИНН 7805758199 присутствует в актуальном реестре аккредитованных автопредприятий терминала в августе 2026 года.", "url": "https://rlisystems.ru/info/operinfo/APList/APListFCT.php", "source": "RLI Systems / терминальный реестр"}
+        {
+          "type": "LEGAL",
+          "claim": "ИП Лукьянов Никита Владимирович действует; ИНН 341003103169, ОГРНИП 317344300115539.",
+          "url": "https://companies.rbc.ru/persons/ogrnip/317344300115539-lukyanov-nikita-vladimirovich/",
+          "source": "РБК Компании / ЕГРИП"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Domclick подтверждает действующее агентство Союз Девелоперов Москвы под ИНН 341003103169, публичную команду агентов и сделки за последние 12 месяцев; текущий сайт бренда показывает отдельную команду и офис в Москва-Сити. Устаревшая финансовая отчётность не использовалась.",
+          "url": "https://domclick.ru/agentstvo/341003103169",
+          "source": "Domclick"
+        },
+        {
+          "type": "BRAND_LEGAL",
+          "claim": "HeadHunter в вакансии 2026 года прямо указывает: ИП Лукьянов Никита Владимирович работает под брендом Союз Девелоперов Москвы; Domclick независимо связывает тот же бренд с ИНН 341003103169.",
+          "url": "https://hh.ru/vacancy/129952615",
+          "source": "HeadHunter + Domclick"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "В январе 2026 компании требовался руководитель продаж для построения эффективного отдела с нуля, управления воронкой и улучшения процессов продаж.",
+          "url": "https://hh.ru/vacancy/129952615",
+          "source": "HeadHunter"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Никита Лукьянов — индивидуальный предприниматель и руководитель агентства; Domclick указывает его как руководителя Союза Девелоперов Москвы.",
+          "url": "https://domclick.ru/agent/341003103169",
+          "source": "Domclick + ЕГРИП"
+        },
+        {
+          "type": "CONTACT_ROUTE",
+          "claim": "Прямая вакансия работодателя на HeadHunter является практическим корпоративным маршрутом связи. Контакты текущего сайта бренда не использованы из-за другого юрлица в футере.",
+          "url": "https://hh.ru/vacancy/129952615",
+          "source": "HeadHunter"
+        }
       ]
     }
   ]
