@@ -1,61 +1,70 @@
 {
-  "run_id": "N5K-20260816-252",
-  "updated_at": "2026-08-16T10:58:51+03:00",
+  "run_id": "N5K-20260816-253",
+  "updated_at": "2026-08-16T12:18:00+03:00",
   "funnel": {
-    "discovered": 64,
+    "discovered": 42,
     "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 0,
-    "excluded": 63
+    "duplicates": 11,
+    "excluded": 30
   },
-  "notes": "Accelerated multi-source discovery used fresh HH vacancy signals plus current company/registry sources. 64 distinct raw candidates were screened in this run; the requested 100-150 target was not claimed because that many distinct companies were not individually enumerated and fast-gated within the run. Fresh data were preferred over older records: GOODIES was excluded because 2025 FNS-linked sources show only 3 employees despite an older source showing 20; RUSPADEL was excluded because current 2025 reporting shows 1 employee; Logos-LTD and FM Service were excluded after current scale exceeded 1bn RUB. NPO GEON passed legal, scale, S1 signal, owner-LPR and practical contact-route gates. No criteria were widened and no outreach was performed.",
+  "notes": "Accelerated multi-source discovery screened 42 distinct candidates that were individually visible in this run; the requested 100-150 target is not claimed because that many distinct companies were not individually enumerated and fast-gated. Physical dedup against the current master removed 11 already-known companies, including Demetra, GK Angel, Chacha's Club, BINAGroup, Hugency, MARROB, PSV, Jungle Story, NATSTRANS, Torg-Light and SmartSoft. Fresh/current data were preferred: Royal Catch / Yuzhny Osyotr was excluded because current 2025 reporting shows 0 employees despite the expansion signal; StroyBerg was excluded because current 2025 revenue fell to 7.521m RUB; AI Auto was not qualified because exact current legal entity could not be confirmed. PSK Zolotaya Usadba passed current legal, operational scale, S1 signal, owner-LPR and official contact-route gates. No criteria were widened and no outreach was performed.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0271",
-      "Brand": "НПО ГЕОН",
-      "Legal Name": "ООО НПО «ГЕОН»",
-      "INN": "5259152137",
-      "OGRN/OGRNIP": "1215200032629",
-      "Region": "Нижегородская область",
-      "City": "Нижний Новгород",
-      "Segment": "Промышленное оборудование / очистка сточных вод / B2B-инжиниринг",
-      "Website": "",
-      "Revenue/Scale": "Действующая частная компания; 5 сотрудников; выручка 53,984 млн ₽ за 2024 год; публичный источник ФНС/Росстат также показывает доход 131,955 млн ₽ за 2025 год",
+      "Lead ID": "N5K-0272",
+      "Brand": "Золотая Усадьба",
+      "Legal Name": "ООО ПСК «ЗОЛОТАЯ УСАДЬБА»",
+      "INN": "0274948414",
+      "OGRN/OGRNIP": "1190280048034",
+      "Region": "Республика Башкортостан",
+      "City": "Уфа / с. Русский Юрмаш",
+      "Segment": "Загородное строительство / деревянные дома / собственное производство",
+      "Website": "https://золотаяусадьба.рф/",
+      "Revenue/Scale": "Действующая частная производственно-строительная компания; официальный бренд сообщает 15 лет опыта, 700+ построенных объектов, собственное производство и архитектурное бюро; текущая вакансия фиксирует план 500 млн ₽ на 2026 год и построение профессионального отдела продаж; реестровый источник показывает 5 сотрудников и 90,364 млн ₽ выручки за 2024 год как последний публично раскрытый числовой финансовый ориентир",
       "Signal Level": "S1",
-      "Signal Summary": "Компания активно растет и усиливает коммерческий блок: требуется выстроить системную B2B-функцию продаж, сформировать команду, работать с крупными проектами, валовой прибылью, маржой, прогнозированием и KPI; заявлен рост роли до коммерческого директора.",
-      "Signal Date": "",
-      "Signal Source": "https://dreamjob.ru/employers/5783776/vakansii/131049917",
-      "Owner": "Фёдоров Георгий Станиславович — 100%",
-      "CEO": "Фёдоров Георгий Станиславович",
-      "LPR": "Фёдоров Георгий Станиславович",
+      "Signal Summary": "Компания прямо заявляет план масштабирования до 500 млн ₽ в 2026 году, строит профессиональный отдел продаж с нуля, внедряет AI-инструменты и выходит на новые рынки. Это прямой запрос на систематизацию и масштабирование коммерческой функции.",
+      "Signal Date": "2026-02-01",
+      "Signal Source": "https://ufa.hh.ru/vacancy/130226633",
+      "Owner": "Букомбаев Рустам Закирович — 100%",
+      "CEO": "Букомбаев Рустам Закирович",
+      "LPR": "Букомбаев Рустам Закирович",
       "LPR Role": "Директор / единственный учредитель",
-      "Primary Phone": "",
-      "Primary Email": "gfedorov@geonplast.ru",
-      "HH Contact": "https://dreamjob.ru/employers/5783776/vakansii/131049917",
-      "Contact Form": "",
-      "Contact Type": "Именной email owner-CEO из открытого реестрового источника плюс маршрут через актуальную вакансию работодателя",
-      "Contact Source": "Открытые реестровые данные; Careerist/DreamJob/HeadHunter vacancy mirrors",
-      "Consulting Hypothesis": "Систематизация и масштабирование B2B-продаж промышленного оборудования: сегментация отраслей и ICP, pipeline крупных проектов, KPI/forecasting, валовая прибыль и маржинальность, стандарты key-account продаж и план роста коммерческой команды.",
+      "Primary Phone": "+7 (347) 299-00-14",
+      "Primary Email": "info@usadbaufa.ru",
+      "HH Contact": "https://ufa.hh.ru/vacancy/130226633",
+      "Contact Form": "https://золотаяусадьба.рф/contacts/",
+      "Contact Type": "Официальный корпоративный маршрут к owner-CEO через телефон/email/форму плюс актуальная вакансия работодателя",
+      "Contact Source": "Официальный сайт бренда + HeadHunter + актуальные реестровые данные",
+      "Consulting Hypothesis": "Построение масштабируемой коммерческой системы под цель 500 млн ₽: сегментация B2C/B2B, воронка и CRM, KPI, управление отделом продаж, повышение конверсии, синхронизация маркетинга и продаж, подготовка выхода на новые рынки.",
       "contacts": [
         {
-          "value": "gfedorov@geonplast.ru",
-          "channel": "Email",
-          "type": "Named owner-CEO route",
-          "source": "Public registry-linked company contact source",
-          "url": "https://e-ecolog.ru/email/gfedorov%40geonplast.ru",
-          "is_lpr": true,
-          "notes": "Публичный email связан одновременно с ООО НПО ГЕОН и директором/учредителем Георгием Фёдоровым"
+          "value": "+7 (347) 299-00-14",
+          "channel": "Phone",
+          "type": "Official corporate route",
+          "source": "Official brand website",
+          "url": "https://золотаяусадьба.рф/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный телефон компании; просить соединить с директором и единственным учредителем Рустамом Букомбаевым"
         },
         {
-          "value": "https://dreamjob.ru/employers/5783776/vakansii/131049917",
+          "value": "info@usadbaufa.ru",
+          "channel": "Email",
+          "type": "Official corporate route",
+          "source": "Official brand website",
+          "url": "https://золотаяусадьба.рф/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный email бренда; маршрут передачи сообщения директору/собственнику"
+        },
+        {
+          "value": "https://ufa.hh.ru/vacancy/130226633",
           "channel": "Employer vacancy",
           "type": "Employer signal route",
-          "source": "DreamJob vacancy mirror",
-          "url": "https://dreamjob.ru/employers/5783776/vakansii/131049917",
+          "source": "HeadHunter",
+          "url": "https://ufa.hh.ru/vacancy/130226633",
           "is_lpr": false,
           "notes": "Актуальный публичный маршрут через вакансию компании"
         }
@@ -63,39 +72,39 @@
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО НПО «ГЕОН», ИНН 5259152137, ОГРН 1215200032629, действует в 2026 году.",
-          "url": "https://companies.rbc.ru/id/1215200032629-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchno-proizvodstvennaya-organizatsiya-geon/",
+          "claim": "ООО ПСК «ЗОЛОТАЯ УСАДЬБА», ИНН 0274948414, ОГРН 1190280048034, действует; на 17.07.2026 директор — Букомбаев Рустам Закирович.",
+          "url": "https://companies.rbc.ru/id/1190280048034-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennaya-stroitelnaya-kompaniya-zolotaya-usadba/?from=amp_company_detail",
           "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Компания имеет 5 сотрудников; выручка за 2024 год 53,984 млн ₽; источник с данными ФНС/Росстат показывает доход 131,955 млн ₽ за 2025 год.",
-          "url": "https://otc.ru/organization/all/1215200032629/",
-          "source": "ОТС / ФНС / Росстат"
+          "claim": "Официальный профиль работодателя сообщает 15 лет опыта, 700+ построенных объектов, собственное производство и архитектурное бюро; план на 2026 год — 500 млн ₽. Реестровый источник указывает 5 сотрудников и выручку 90,364 млн ₽ за 2024 год как последний открытый числовой ориентир.",
+          "url": "https://ufa.hh.ru/vacancy/130226633",
+          "source": "HeadHunter + РБК Компании"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Фёдоров Георгий Станиславович — директор и единственный учредитель ООО НПО «ГЕОН».",
-          "url": "https://check.tochka.com/company/1215200032629/",
-          "source": "Точка / ЕГРЮЛ"
+          "claim": "Букомбаев Рустам Закирович — директор и единственный учредитель ООО ПСК «ЗОЛОТАЯ УСАДЬБА».",
+          "url": "https://companies.rbc.ru/amp/ogrn/1190280048034/",
+          "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "Публичная вакансия работодателя использует точное наименование «Научно-Производственная организация Геон», совпадающее с ООО НПО «ГЕОН».",
-          "url": "https://dreamjob.ru/employers/5783776/vakansii/131049917",
-          "source": "DreamJob / HH vacancy mirror"
+          "claim": "Официальная страница бренда указывает ООО ПСК «ЗОЛОТАЯ УСАДЬБА», ИНН 0274948414, ОГРН 1190280048034, тот же бренд, адрес и контакты.",
+          "url": "https://xn----7sbbaerr6a0ab9ajp3kqb.xn--p1ai/thanks3",
+          "source": "Официальный сайт бренда"
         },
         {
           "type": "SIGNAL",
-          "claim": "Компания сообщает об активном росте и усилении коммерческого блока; роль должна выстроить системную функцию B2B-продаж, команду, KPI и работу с валовой прибылью и маржой.",
-          "url": "https://dreamjob.ru/employers/5783776/vakansii/131049917",
-          "source": "DreamJob / Careerist vacancy mirror"
+          "claim": "Вакансия 2026 года прямо фиксирует цель 500 млн ₽, построение профессионального отдела продаж с нуля, внедрение AI-инструментов и выход на новые рынки.",
+          "url": "https://ufa.hh.ru/vacancy/130226633",
+          "source": "HeadHunter"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Публичный email gfedorov@geonplast.ru связан с ООО НПО «ГЕОН» и директором/учредителем Георгием Фёдоровым.",
-          "url": "https://e-ecolog.ru/email/gfedorov%40geonplast.ru",
-          "source": "Е-Досье / публичный реестровый контакт"
+          "claim": "Официальный сайт публикует телефон +7 (347) 299-00-14 и email info@usadbaufa.ru; директор/собственник установлен по ЕГРЮЛ, поэтому есть практический корпоративный маршрут передачи сообщения ЛПР.",
+          "url": "https://золотаяусадьба.рф/contacts/",
+          "source": "Официальный сайт бренда"
         }
       ]
     }
