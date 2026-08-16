@@ -1,110 +1,204 @@
 {
-  "run_id": "N5K-20260816-253",
-  "updated_at": "2026-08-16T12:18:00+03:00",
+  "run_id": "N5K-20260816-254",
+  "updated_at": "2026-08-16T13:17:00+03:00",
   "funnel": {
-    "discovered": 42,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 11,
-    "excluded": 30
+    "discovered": 54,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 6,
+    "excluded": 46
   },
-  "notes": "Accelerated multi-source discovery screened 42 distinct candidates that were individually visible in this run; the requested 100-150 target is not claimed because that many distinct companies were not individually enumerated and fast-gated. Physical dedup against the current master removed 11 already-known companies, including Demetra, GK Angel, Chacha's Club, BINAGroup, Hugency, MARROB, PSV, Jungle Story, NATSTRANS, Torg-Light and SmartSoft. Fresh/current data were preferred: Royal Catch / Yuzhny Osyotr was excluded because current 2025 reporting shows 0 employees despite the expansion signal; StroyBerg was excluded because current 2025 revenue fell to 7.521m RUB; AI Auto was not qualified because exact current legal entity could not be confirmed. PSK Zolotaya Usadba passed current legal, operational scale, S1 signal, owner-LPR and official contact-route gates. No criteria were widened and no outreach was performed.",
+  "notes": "Accelerated multi-source discovery individually reviewed 54 distinct candidates in this cycle; the requested 100-150 target is not claimed because that many distinct companies were not individually enumerated and fast-gated. Fast gate passed 8 candidates into closer review. Six already-known companies were removed before deep analysis (including Auto Suvenir, RITSO-Consulting, Soft Alliance, BINAGroup, Zaboroff and Atmosferika). Current data excluded MTK Fortuna and Lesresurs for scale, Ectem OK and Optomed for current employee count below the canonical floor, FM Service and Optenergosbyt for scale above the canonical range, and several candidates for ambiguous brand-to-legal match. Prosche.AI and S-COPY passed current legal, scale, signal, owner/LPR and official contact-route gates. No criteria were widened and no outreach was performed.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0272",
-      "Brand": "Золотая Усадьба",
-      "Legal Name": "ООО ПСК «ЗОЛОТАЯ УСАДЬБА»",
-      "INN": "0274948414",
-      "OGRN/OGRNIP": "1190280048034",
-      "Region": "Республика Башкортостан",
-      "City": "Уфа / с. Русский Юрмаш",
-      "Segment": "Загородное строительство / деревянные дома / собственное производство",
-      "Website": "https://золотаяусадьба.рф/",
-      "Revenue/Scale": "Действующая частная производственно-строительная компания; официальный бренд сообщает 15 лет опыта, 700+ построенных объектов, собственное производство и архитектурное бюро; текущая вакансия фиксирует план 500 млн ₽ на 2026 год и построение профессионального отдела продаж; реестровый источник показывает 5 сотрудников и 90,364 млн ₽ выручки за 2024 год как последний публично раскрытый числовой финансовый ориентир",
+      "Lead ID": "N5K-0273",
+      "Brand": "Prosche.AI / Платформа Проще",
+      "Legal Name": "ООО «ПЛАТФОРМА «ПРОЩЕ»",
+      "INN": "9707030870",
+      "OGRN/OGRNIP": "1247700383534",
+      "Region": "Москва",
+      "City": "Москва / Сколково",
+      "Segment": "B2B SaaS / AI / Data-продукты",
+      "Website": "https://prosche.ai/",
+      "Revenue/Scale": "Действующая частная IT-компания; выручка 288,322 млн ₽ за 2025 год; 50 сотрудников по данным ФНС за 2025 год",
       "Signal Level": "S1",
-      "Signal Summary": "Компания прямо заявляет план масштабирования до 500 млн ₽ в 2026 году, строит профессиональный отдел продаж с нуля, внедряет AI-инструменты и выходит на новые рынки. Это прямой запрос на систематизацию и масштабирование коммерческой функции.",
-      "Signal Date": "2026-02-01",
-      "Signal Source": "https://ufa.hh.ru/vacancy/130226633",
-      "Owner": "Букомбаев Рустам Закирович — 100%",
-      "CEO": "Букомбаев Рустам Закирович",
-      "LPR": "Букомбаев Рустам Закирович",
-      "LPR Role": "Директор / единственный учредитель",
-      "Primary Phone": "+7 (347) 299-00-14",
-      "Primary Email": "info@usadbaufa.ru",
-      "HH Contact": "https://ufa.hh.ru/vacancy/130226633",
-      "Contact Form": "https://золотаяусадьба.рф/contacts/",
-      "Contact Type": "Официальный корпоративный маршрут к owner-CEO через телефон/email/форму плюс актуальная вакансия работодателя",
-      "Contact Source": "Официальный сайт бренда + HeadHunter + актуальные реестровые данные",
-      "Consulting Hypothesis": "Построение масштабируемой коммерческой системы под цель 500 млн ₽: сегментация B2C/B2B, воронка и CRM, KPI, управление отделом продаж, повышение конверсии, синхронизация маркетинга и продаж, подготовка выхода на новые рынки.",
+      "Signal Summary": "В июле 2026 компания запускает новое бизнес-направление Hitly — партнерскую платформу для продажи B2B SaaS/AI-продуктов МСБ; ищет руководителя направления с ответственностью за P&L, масштабирование гипотез, финансовую модель и развитие партнерской экосистемы.",
+      "Signal Date": "2026-07-16",
+      "Signal Source": "https://jobrun.ru/%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0-%D0%BF%D1%80%D0%BE%D1%89%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+      "Owner": "Голуб Сергей Александрович — 70%; Бочкарев Николай Александрович — 30%",
+      "CEO": "Голуб Сергей Александрович",
+      "LPR": "Голуб Сергей Александрович",
+      "LPR Role": "Генеральный директор / совладелец 70%",
+      "Primary Phone": "+7 (499) 130-10-64",
+      "Primary Email": "support@prosche.ai",
+      "HH Contact": "https://spb.hh.ru/vacancies/agent",
+      "Contact Form": "https://prosche.ai/",
+      "Contact Type": "Официальный корпоративный маршрут к owner-CEO через телефон/email/сайт плюс свежий employer signal",
+      "Contact Source": "Официальный сайт Prosche.AI + HeadHunter/JobRun + актуальные реестровые данные 2026",
+      "Consulting Hypothesis": "Систематизация запуска нового B2B-направления: GTM и ICP партнерской платформы, P&L и unit economics, партнерская воронка, KPI/forecasting, CRM, масштабирование каналов и синхронизация продукта с коммерческой функцией.",
       "contacts": [
         {
-          "value": "+7 (347) 299-00-14",
+          "value": "+7 (499) 130-10-64",
           "channel": "Phone",
           "type": "Official corporate route",
-          "source": "Official brand website",
-          "url": "https://золотаяусадьба.рф/contacts/",
+          "source": "Official Prosche.AI website",
+          "url": "https://prosche.ai/",
           "is_lpr": false,
-          "notes": "Официальный телефон компании; просить соединить с директором и единственным учредителем Рустамом Букомбаевым"
+          "notes": "Официальный телефон компании; просить передать сообщение генеральному директору и совладельцу Сергею Голубу"
         },
         {
-          "value": "info@usadbaufa.ru",
+          "value": "support@prosche.ai",
           "channel": "Email",
           "type": "Official corporate route",
-          "source": "Official brand website",
-          "url": "https://золотаяусадьба.рф/contacts/",
+          "source": "Official Prosche.AI website",
+          "url": "https://prosche.ai/",
           "is_lpr": false,
-          "notes": "Официальный email бренда; маршрут передачи сообщения директору/собственнику"
+          "notes": "Официальный email компании; корпоративный маршрут передачи сообщения CEO/совладельцу"
         },
         {
-          "value": "https://ufa.hh.ru/vacancy/130226633",
+          "value": "https://spb.hh.ru/vacancies/agent",
           "channel": "Employer vacancy",
           "type": "Employer signal route",
           "source": "HeadHunter",
-          "url": "https://ufa.hh.ru/vacancy/130226633",
+          "url": "https://spb.hh.ru/vacancies/agent",
           "is_lpr": false,
-          "notes": "Актуальный публичный маршрут через вакансию компании"
+          "notes": "Свежая индексируемая вакансия руководителя бизнес-направления Платформа Проще"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО ПСК «ЗОЛОТАЯ УСАДЬБА», ИНН 0274948414, ОГРН 1190280048034, действует; на 17.07.2026 директор — Букомбаев Рустам Закирович.",
-          "url": "https://companies.rbc.ru/id/1190280048034-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennaya-stroitelnaya-kompaniya-zolotaya-usadba/?from=amp_company_detail",
+          "claim": "ООО «ПЛАТФОРМА «ПРОЩЕ», ИНН 9707030870, ОГРН 1247700383534, действует; генеральный директор — Голуб Сергей Александрович.",
+          "url": "https://companies.rbc.ru/id/1247700383534-ooo-platforma-prosche/",
           "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Официальный профиль работодателя сообщает 15 лет опыта, 700+ построенных объектов, собственное производство и архитектурное бюро; план на 2026 год — 500 млн ₽. Реестровый источник указывает 5 сотрудников и выручку 90,364 млн ₽ за 2024 год как последний открытый числовой ориентир.",
-          "url": "https://ufa.hh.ru/vacancy/130226633",
-          "source": "HeadHunter + РБК Компании"
+          "claim": "Выручка за 2025 год — 288,322 млн ₽; среднесписочная численность за 2025 год — 50 человек.",
+          "url": "https://www.companium.ru/id/1247700383534-platforma-proshche",
+          "source": "Companium / ФНС"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Букомбаев Рустам Закирович — директор и единственный учредитель ООО ПСК «ЗОЛОТАЯ УСАДЬБА».",
-          "url": "https://companies.rbc.ru/amp/ogrn/1190280048034/",
-          "source": "РБК Компании / ЕГРЮЛ"
+          "claim": "Голуб Сергей Александрович — генеральный директор и совладелец 70%; Бочкарев Николай Александрович — совладелец 30%.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1247700383534/",
+          "source": "Т-Банк / ЕГРЮЛ"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "Официальная страница бренда указывает ООО ПСК «ЗОЛОТАЯ УСАДЬБА», ИНН 0274948414, ОГРН 1190280048034, тот же бренд, адрес и контакты.",
-          "url": "https://xn----7sbbaerr6a0ab9ajp3kqb.xn--p1ai/thanks3",
-          "source": "Официальный сайт бренда"
+          "claim": "Официальный сайт Prosche.AI указывает ООО Платформа «Проще», ИНН 9707030870, ОГРН 1247700383534 и генерального директора Сергея Голуба.",
+          "url": "https://prosche.ai/",
+          "source": "Официальный сайт Prosche.AI"
         },
         {
           "type": "SIGNAL",
-          "claim": "Вакансия 2026 года прямо фиксирует цель 500 млн ₽, построение профессионального отдела продаж с нуля, внедрение AI-инструментов и выход на новые рынки.",
-          "url": "https://ufa.hh.ru/vacancy/130226633",
-          "source": "HeadHunter"
+          "claim": "В июле 2026 компания запускает Hitly — новое B2B SaaS/AI партнерское направление — и ищет руководителя бизнес-направления для P&L, масштабирования и развития партнерской экосистемы.",
+          "url": "https://jobrun.ru/%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0-%D0%BF%D1%80%D0%BE%D1%89%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+          "source": "JobRun / HeadHunter vacancy index"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует телефон +7 (347) 299-00-14 и email info@usadbaufa.ru; директор/собственник установлен по ЕГРЮЛ, поэтому есть практический корпоративный маршрут передачи сообщения ЛПР.",
-          "url": "https://золотаяусадьба.рф/contacts/",
-          "source": "Официальный сайт бренда"
+          "claim": "Официальный сайт публикует телефон +7 (499) 130-10-64 и email support@prosche.ai; CEO/совладелец установлен, поэтому есть практический корпоративный маршрут к ЛПР.",
+          "url": "https://prosche.ai/",
+          "source": "Официальный сайт Prosche.AI"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0274",
+      "Brand": "S-COPY / С-КОПИ",
+      "Legal Name": "ООО «С-КОПИ»",
+      "INN": "7840054244",
+      "OGRN/OGRNIP": "1167847293371",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "Полиграфия / инженерная печать / B2B",
+      "Website": "https://s-copy.spb.ru/",
+      "Revenue/Scale": "Действующая частная компания; выручка 459,2 млн ₽ за 2025 год; 35 сотрудников по данным ФНС за 2025 год",
+      "Signal Level": "S1",
+      "Signal Summary": "Компания активно расширяется по регионам и в 2026 году запускает новое B2B-направление печати самоклеящихся этикеток; одновременно формирует отдельную коммерческую команду направления, использует CRM и строит выход на ЛПР.",
+      "Signal Date": "2026-07-02",
+      "Signal Source": "https://remote-job.ru/search?search%5Bquery%5D=%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+B2B+%28%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%29&search%5BsearchType%5D=vacancy",
+      "Owner": "Чивирев Артур Юрьевич — 100%",
+      "CEO": "Чивирев Артур Юрьевич",
+      "LPR": "Чивирев Артур Юрьевич",
+      "LPR Role": "Генеральный директор / единственный учредитель",
+      "Primary Phone": "+7 (812) 635-23-33",
+      "Primary Email": "aaa@s-copy.ru",
+      "HH Contact": "https://spb.hh.ru/vacancy/129892002",
+      "Contact Form": "https://s-copy.spb.ru/kontakty/",
+      "Contact Type": "Официальный корпоративный маршрут к owner-CEO через телефон/email/форму плюс свежие вакансии нового направления",
+      "Contact Source": "Официальный сайт S-COPY + HeadHunter/Remote-job + актуальные данные ФНС/ЕГРЮЛ",
+      "Consulting Hypothesis": "Коммерческая архитектура нового B2B-направления этикеток: ICP и сегментация, outbound/leadgen, CRM-воронка, KPI, экономика канала, стандарты выхода на ЛПР и масштабирование направления по регионам без потери маржи.",
+      "contacts": [
+        {
+          "value": "+7 (812) 635-23-33",
+          "channel": "Phone",
+          "type": "Official corporate route",
+          "source": "Official S-COPY website",
+          "url": "https://s-copy.spb.ru/kontakty/",
+          "is_lpr": false,
+          "notes": "Официальный телефон компании; просить соединить с генеральным директором и единственным учредителем Артуром Чивиревым"
+        },
+        {
+          "value": "aaa@s-copy.ru",
+          "channel": "Email",
+          "type": "Official corporate route",
+          "source": "Official S-COPY website",
+          "url": "https://s-copy.spb.ru/kontakty/",
+          "is_lpr": false,
+          "notes": "Официальный email компании; корпоративный маршрут передачи сообщения owner-CEO"
+        },
+        {
+          "value": "https://spb.hh.ru/vacancy/129892002",
+          "channel": "Employer vacancy",
+          "type": "Employer signal route",
+          "source": "HeadHunter",
+          "url": "https://spb.hh.ru/vacancy/129892002",
+          "is_lpr": false,
+          "notes": "Публичная вакансия отдельного отдела развития нового B2B-направления"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «С-КОПИ», ИНН 7840054244, ОГРН 1167847293371, действует; генеральный директор — Чивирев Артур Юрьевич.",
+          "url": "https://companium.ru/id/1167847293371-s-kopi",
+          "source": "Companium / ЕГРЮЛ"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка за 2025 год — 459,2 млн ₽; среднесписочная численность за 2025 год — 35 человек.",
+          "url": "https://companium.ru/id/1167847293371-s-kopi",
+          "source": "Companium / ФНС"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Чивирев Артур Юрьевич — генеральный директор и единственный учредитель ООО «С-КОПИ».",
+          "url": "https://check.tochka.com/company/1167847293371/",
+          "source": "Точка / ЕГРЮЛ"
+        },
+        {
+          "type": "BRAND_MATCH",
+          "claim": "Официальный сайт S-COPY прямо указывает ООО «С-КОПИ», ИНН 7840054244, ОГРН 1167847293371 и адрес на Днепропетровской, 5, совпадающий с работодателем.",
+          "url": "https://s-copy.spb.ru/o-kompanii/",
+          "source": "Официальный сайт S-COPY"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "Вакансии 2026 года фиксируют запуск нового направления самоклеящихся этикеток, отдельный отдел развития, B2B-продажи, CRM и выход на ЛПР; свежая индексируемая вакансия направления датирована июлем 2026.",
+          "url": "https://remote-job.ru/search?search%5Bquery%5D=%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+B2B+%28%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%29&search%5BsearchType%5D=vacancy",
+          "source": "Remote-job / HeadHunter"
+        },
+        {
+          "type": "CONTACT_ROUTE",
+          "claim": "Официальный сайт публикует телефон +7 (812) 635-23-33 и email aaa@s-copy.ru; owner-CEO установлен, поэтому есть практический маршрут передачи сообщения ЛПР.",
+          "url": "https://s-copy.spb.ru/kontakty/",
+          "source": "Официальный сайт S-COPY"
         }
       ]
     }
