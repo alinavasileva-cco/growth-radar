@@ -1,23 +1,96 @@
 {
-  "run_id": "N5K-20260816-246",
-  "updated_at": "2026-08-16T05:57:55+03:00",
-  "funnel": {"discovered":50,"size_check_passed":3,"legal_match_passed":3,"signal_confirmed":3,"lpr_identified":3,"contact_route_found":3,"qualified":3,"duplicates":1,"excluded":46},
-  "notes": "50 fresh vacancy/business signals screened. One explicit duplicate in the search pool matched an existing canonical company and was not counted. Forty-six candidates failed one or more current legal/scale/signal/LPR/contact-route gates or had ambiguous employer-to-legal mapping. Three companies passed all gates using current legal/financial/contact evidence. No outreach.",
+  "run_id": "N5K-20260816-247",
+  "updated_at": "2026-08-16T07:01:14+03:00",
+  "funnel": {
+    "discovered": 50,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 5,
+    "excluded": 43
+  },
+  "notes": "50 fresh vacancy/business signals screened. Five explicit repeats already present in the campaign were not counted as new. Forty-three candidates failed one or more current scale/legal-match/signal/LPR/contact-route gates or had ambiguous employer-to-legal mapping. Two companies passed all gates using current evidence. Stale conflicting employee/management records were not used where fresher 2025/2026 data existed. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID":"N5K-0260","Brand":"Промышленные редукторы","Legal Name":"ООО «ПРОМЫШЛЕННЫЕ РЕДУКТОРЫ»","INN":"7448207811","OGRN/OGRNIP":"1177456094870","Region":"Челябинская область","City":"Челябинск","Segment":"Промышленное оборудование / редукторы / B2B","Website":"https://promred.ru/","Revenue/Scale":"Выручка 200,98 млн ₽ за 2025 год по свежей бухгалтерской отчетности; действующая компания","Signal Level":"S1","Signal Summary":"Компания ищет РОПа для роста масштабов B2B-продаж: организация продающего отдела, KPI, выявление узких мест, рост конверсии, CRM, регламенты, найм и обучение менеджеров.","Signal Date":"2026-02-05","Signal Source":"https://hh.ru/vacancy/130207257","Owner":"Черепанов Антон Владимирович 100%","CEO":"Кузнецова Наталья Николаевна — управляющий ИП","LPR":"Черепанов Антон Владимирович","LPR Role":"Собственник 100% / стратегический ЛПР","Primary Phone":"+7 (351) 200-94-14","Primary Email":"zakaz1@promred.ru","HH Contact":"https://hh.ru/vacancy/130207257","Contact Form":"https://promred.ru/kontakty/","Contact Type":"Корпоративный маршрут к собственнику через официальный телефон/email/сайт и вакансию","Contact Source":"Официальный сайт Промышленные редукторы; Т-Банк/ФНС; HeadHunter","Consulting Hypothesis":"Систематизация и масштабирование B2B-продаж промышленного оборудования: сегментация клиентов, CRM-воронка, KPI, регламенты, менеджмент команды, кросс-функциональная связка маркетинг-продажи и 90-дневный план роста.",
-      "contacts":[{"value":"+7 (351) 200-94-14","channel":"Phone","type":"Corporate","source":"Промышленные редукторы official website","url":"https://promred.ru/kontakty/","is_lpr":false,"notes":"Официальный телефон отдела продаж"},{"value":"zakaz1@promred.ru","channel":"Email","type":"Corporate","source":"Промышленные редукторы official website","url":"https://promred.ru/kontakty/","is_lpr":false,"notes":"Официальный корпоративный email"},{"value":"https://hh.ru/vacancy/130207257","channel":"HeadHunter","type":"Employer route","source":"HeadHunter","url":"https://hh.ru/vacancy/130207257","is_lpr":false,"notes":"Маршрут через работодателя к коммерческому блоку"}],
-      "evidence":[{"type":"LEGAL","claim":"ООО «ПРОМЫШЛЕННЫЕ РЕДУКТОРЫ», ИНН 7448207811, ОГРН 1177456094870, действует; управляющий ИП Кузнецова Наталья Николаевна.","url":"https://companies.rbc.ru/id/1177456094870-ooo-promyishlennyie-reduktoryi/","source":"РБК Компании / ЕГРЮЛ"},{"type":"SCALE","claim":"Бухгалтерская отчетность за 2025 год показывает выручку 200,98 млн ₽.","url":"https://www.tbank.ru/business/contractor/legal/1177456094870/","source":"Т-Банк / ФНС"},{"type":"OWNER_LPR","claim":"Черепанов Антон Владимирович владеет 100% компании; Кузнецова Наталья Николаевна управляет компанией как ИП.","url":"https://check.tochka.com/company/1177456094870/","source":"Точка / реестровые данные"},{"type":"SIGNAL","claim":"Вакансия от 05.02.2026: рост масштабов продаж, организация отдела, KPI, CRM, конверсия, регламенты, найм и обучение менеджеров.","url":"https://hh.ru/vacancy/130207257","source":"HeadHunter"},{"type":"CONTACT_ROUTE","claim":"Официальный сайт подтверждает телефон +7 (351) 200-94-14, email zakaz1@promred.ru и реквизиты компании.","url":"https://promred.ru/kontakty/","source":"Промышленные редукторы official website"}]
+      "Lead ID": "N5K-0263",
+      "Brand": "CARP",
+      "Legal Name": "ООО «КАРП»",
+      "INN": "7842224364",
+      "OGRN/OGRNIP": "1247800080076",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "Автоподбор и поставка автомобилей / услуги",
+      "Website": "https://carp-auto.ru/",
+      "Revenue/Scale": "Выручка 35,176 млн ₽ за 2025 год; опубликованная ССЧ 7 сотрудников за 2024 год; действующая компания",
+      "Signal Level": "S1",
+      "Signal Summary": "Компания ищет руководителя продаж для построения и управления отделом, роста конверсии и систематизации продаж в растущем бизнесе автоподбора и поставки автомобилей.",
+      "Signal Date": "2026-02-06",
+      "Signal Source": "https://hh.ru/vacancy/130251826",
+      "Owner": "Сунцов Дмитрий Сергеевич — 100%",
+      "CEO": "Сунцов Дмитрий Сергеевич",
+      "LPR": "Сунцов Дмитрий Сергеевич",
+      "LPR Role": "Генеральный директор / собственник 100%",
+      "Primary Phone": "+7 999 021-99-90",
+      "Primary Email": "9990219990@inbox.ru",
+      "HH Contact": "https://hh.ru/vacancy/130251826",
+      "Contact Form": "https://carp-auto.ru/",
+      "Contact Type": "Корпоративный маршрут к owner-CEO через официальный телефон/email/сайт и вакансию",
+      "Contact Source": "Официальный сайт CARP; РБК Компании/ЕГРЮЛ; HeadHunter",
+      "Consulting Hypothesis": "Систематизация продаж автоподбора и поставки автомобилей: CRM-воронка, KPI и конверсии, стандарты работы команды, сегментация спроса, управляемый pipeline и 90-дневный план роста.",
+      "contacts": [
+        {"value": "+7 999 021-99-90", "channel": "Phone", "type": "Corporate", "source": "CARP official website", "url": "https://carp-auto.ru/", "is_lpr": false, "notes": "Официальный телефон компании"},
+        {"value": "9990219990@inbox.ru", "channel": "Email", "type": "Corporate", "source": "CARP official website", "url": "https://carp-auto.ru/", "is_lpr": false, "notes": "Официальный email компании"},
+        {"value": "https://hh.ru/vacancy/130251826", "channel": "HeadHunter", "type": "Employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/130251826", "is_lpr": false, "notes": "Маршрут через работодателя к коммерческому блоку"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «КАРП», ИНН 7842224364, ОГРН 1247800080076, действует; директор и собственник 100% — Сунцов Дмитрий Сергеевич; юридический адрес совпадает с локацией вакансии на Смольном проспекте, 17.", "url": "https://companies.rbc.ru/id/1247800080076-ooo-karp/", "source": "РБК Компании / ЕГРЮЛ"},
+        {"type": "SCALE", "claim": "Выручка за 2025 год — 35,176 млн ₽; опубликованная среднесписочная численность — 7 сотрудников за 2024 год.", "url": "https://www.tbank.ru/business/contractor/legal/1247800080076/", "source": "Т-Банк / ФНС; Rusprofile"},
+        {"type": "OWNER_LPR", "claim": "Сунцов Дмитрий Сергеевич — генеральный директор и собственник 100%.", "url": "https://companies.rbc.ru/id/1247800080076-ooo-karp/", "source": "РБК Компании / ЕГРЮЛ"},
+        {"type": "SIGNAL", "claim": "Вакансия от 06.02.2026: руководитель продаж для построения и управления отделом в растущем бизнесе автоподбора и поставки автомобилей.", "url": "https://hh.ru/vacancy/130251826", "source": "HeadHunter"},
+        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт подтверждает офис на Смольном проспекте, 17, телефон +7 999 021-99-90 и email 9990219990@inbox.ru.", "url": "https://carp-auto.ru/", "source": "CARP official website"}
+      ]
     },
     {
-      "Lead ID":"N5K-0261","Brand":"Кристон-Кадастр","Legal Name":"ООО «КРИСТОН-КАДАСТР» / ООО «КРИСТОН-К»","INN":"7725316710","OGRN/OGRNIP":"1167746456404","Region":"Москва","City":"Москва","Segment":"Кадастровые и геодезические услуги / B2B","Website":"https://kriston-kadastr.ru/","Revenue/Scale":"Выручка 73,696 млн ₽ за 2025 год; 13 сотрудников; действующая компания","Signal Level":"S1","Signal Summary":"Компания ищет РОПа с возможностью строить отдел и влиять на стратегию; работа строится на CRM, автоматизации, B2B-продажах, планировании и развитии продаж.","Signal Date":"2026-02-08","Signal Source":"https://hh.ru/vacancy/129480935","Owner":"Человечков Антон Алексеевич 50%; Фурсова Кристина Юрьевна 50%","CEO":"Человечков Антон Алексеевич","LPR":"Человечков Антон Алексеевич","LPR Role":"Генеральный директор / совладелец 50% / практический ЛПР","Primary Phone":"+7 (499) 110-66-13","Primary Email":"info@kriston-k.ru","HH Contact":"https://hh.ru/vacancy/129480935","Contact Form":"https://kriston-kadastr.ru/contacts","Contact Type":"Корпоративный маршрут к owner-CEO через официальный телефон/email/сайт и вакансию","Contact Source":"Официальный сайт Кристон-Кадастр; РБК Компании; HeadHunter","Consulting Hypothesis":"Рост B2B-продаж профессиональных кадастровых услуг: сегментация клиентов, CRM-воронка, KPI, стандарты продаж, связка маркетинга и коммерции, развитие команды и управляемый pipeline.",
-      "contacts":[{"value":"+7 (499) 110-66-13","channel":"Phone","type":"Corporate","source":"Кристон-Кадастр official website","url":"https://kriston-kadastr.ru/contacts","is_lpr":false,"notes":"Официальный телефон компании"},{"value":"info@kriston-k.ru","channel":"Email","type":"Corporate","source":"Кристон-Кадастр official website","url":"https://kriston-kadastr.ru/contacts","is_lpr":false,"notes":"Официальный корпоративный email"},{"value":"https://hh.ru/vacancy/129480935","channel":"HeadHunter","type":"Employer route","source":"HeadHunter","url":"https://hh.ru/vacancy/129480935","is_lpr":false,"notes":"Маршрут через работодателя к коммерческому блоку"}],
-      "evidence":[{"type":"LEGAL","claim":"ООО «КРИСТОН-КАДАСТР» / ООО «КРИСТОН-К», ИНН 7725316710, ОГРН 1167746456404, действует; гендиректор Человечков Антон Алексеевич.","url":"https://kriston-kadastr.ru/contacts","source":"Кристон-Кадастр official website"},{"type":"SCALE","claim":"За 2025 год выручка 73,696 млн ₽; среднесписочная численность 13 сотрудников.","url":"https://companies.rbc.ru/id/1167746456404-ooo-kriston-kadastr/","source":"РБК Компании"},{"type":"OWNER_LPR","claim":"Человечков Антон Алексеевич — гендиректор и совладелец 50%; Фурсова Кристина Юрьевна — совладелец 50%.","url":"https://companies.rbc.ru/amp/ogrn/1167746456404/","source":"РБК Компании / ЕГРЮЛ"},{"type":"SIGNAL","claim":"Вакансия от 08.02.2026: B2B РОП, развитие продаж, возможность строить отдел, влияние на стратегию, CRM и автоматизация.","url":"https://hh.ru/vacancy/129480935","source":"HeadHunter"},{"type":"CONTACT_ROUTE","claim":"Официальный сайт подтверждает телефон +7 (499) 110-66-13, email info@kriston-k.ru, ИНН/ОГРН и гендиректора.","url":"https://kriston-kadastr.ru/contacts","source":"Кристон-Кадастр official website"}]
-    },
-    {
-      "Lead ID":"N5K-0262","Brand":"Орион-Металл","Legal Name":"ООО «ОРИОН МЕТАЛЛ»","INN":"7719697390","OGRN/OGRNIP":"5087746300362","Region":"Москва","City":"Москва","Segment":"Металлопрокат и продукция для ЖКХ / B2B","Website":"https://orionmetall.ru/","Revenue/Scale":"Выручка 28,726 млн ₽ за 2025 год; 6 сотрудников; действующая компания","Signal Level":"S1","Signal Summary":"Компания усиливает B2B-продажи: требуется разработка и внедрение KPI и отчетности, работа с CRM, переговоры с ЛПР и развитие продаж.","Signal Date":"2026-02-04","Signal Source":"https://hh.ru/vacancy/129985624","Owner":"Годунова Александра Вячеславовна 100%","CEO":"Ушакова Элла Петровна","LPR":"Ушакова Элла Петровна","LPR Role":"Генеральный директор / практический ЛПР","Primary Phone":"+7 (499) 707-20-60","Primary Email":"info@gk-orionmetall.ru","HH Contact":"https://hh.ru/vacancy/129985624","Contact Form":"https://orionmetall.ru/contact","Contact Type":"Корпоративный маршрут к CEO через официальный телефон/email/сайт и вакансию","Contact Source":"Официальный сайт Орион-Металл; РБК Компании; HeadHunter","Consulting Hypothesis":"Систематизация B2B-продаж металлопроката и продукции для ЖКХ: CRM, KPI, отчетность, работа с ЛПР, развитие клиентской базы и управляемый план роста выручки и маржи.",
-      "contacts":[{"value":"+7 (499) 707-20-60","channel":"Phone","type":"Corporate","source":"Орион-Металл official website","url":"https://orionmetall.ru/contact","is_lpr":false,"notes":"Официальный многоканальный телефон компании"},{"value":"info@gk-orionmetall.ru","channel":"Email","type":"Corporate","source":"Орион-Металл official website","url":"https://orionmetall.ru/contact","is_lpr":false,"notes":"Официальный резервный корпоративный email"},{"value":"https://hh.ru/vacancy/129985624","channel":"HeadHunter","type":"Employer route","source":"HeadHunter","url":"https://hh.ru/vacancy/129985624","is_lpr":false,"notes":"Маршрут через работодателя к коммерческому блоку"}],
-      "evidence":[{"type":"LEGAL","claim":"ООО «ОРИОН МЕТАЛЛ», ИНН 7719697390, ОГРН 5087746300362; гендиректор Ушакова Элла Петровна; действующая компания.","url":"https://companies.rbc.ru/id/5087746300362-ooo-orion-metall/","source":"РБК Компании"},{"type":"SCALE","claim":"За 2025 год выручка 28,726 млн ₽; среднесписочная численность 6 сотрудников.","url":"https://companies.rbc.ru/id/5087746300362-ooo-orion-metall/","source":"РБК Компании"},{"type":"OWNER_LPR","claim":"Годунова Александра Вячеславовна — учредитель; Ушакова Элла Петровна — генеральный директор.","url":"https://www.klerk.ru/tool/ocompany/5087746300362/","source":"Клерк / ЕГРЮЛ"},{"type":"SIGNAL","claim":"Вакансия от 04.02.2026: KPI, отчетность, CRM, переговоры с ЛПР, развитие продаж и управление командой.","url":"https://hh.ru/vacancy/129985624","source":"HeadHunter"},{"type":"CONTACT_ROUTE","claim":"Официальный сайт подтверждает ИНН/ОГРН, гендиректора, телефоны и email компании.","url":"https://orionmetall.ru/contact","source":"Орион-Металл official website"}]
+      "Lead ID": "N5K-0264",
+      "Brand": "ФранчБрокер",
+      "Legal Name": "ООО «ФРАНЧБРОКЕР»",
+      "INN": "1655497346",
+      "OGRN/OGRNIP": "1231600042277",
+      "Region": "Республика Татарстан",
+      "City": "Казань",
+      "Segment": "Франчайзинг / упаковка и продажа франшиз / B2B",
+      "Website": "https://franch-broker.ru/",
+      "Revenue/Scale": "Выручка 210,464 млн ₽ за 2025 год; 21 сотрудник за 2025 год; действующая компания",
+      "Signal Level": "S1",
+      "Signal Summary": "Компания быстро растёт и формирует/масштабирует отдел продаж: требуется системный РОП, отвечающий за воронку, CRM, команду, переговоры и стабильное выполнение плана.",
+      "Signal Date": "2026-02-02",
+      "Signal Source": "https://krasnodar.hh.ru/vacancy/130087936",
+      "Owner": "Гилязов Булат Шамилевич; Шарифуллин Артур Ранасович",
+      "CEO": "Гилязов Булат Шамилевич",
+      "LPR": "Гилязов Булат Шамилевич",
+      "LPR Role": "Генеральный директор / совладелец",
+      "Primary Phone": "8-800-444-29-28",
+      "Primary Email": "franchbroker.org@gmail.com",
+      "HH Contact": "https://krasnodar.hh.ru/vacancy/130087936",
+      "Contact Form": "https://franch-broker.ru/contacts.html",
+      "Contact Type": "Корпоративный маршрут к CEO через официальный телефон/email/форму и вакансию",
+      "Contact Source": "Официальный сайт ФранчБрокер; Xfirm/ФНС; HeadHunter",
+      "Consulting Hypothesis": "Масштабирование B2B-продаж франчайзинговых услуг: единая модель филиалов, CRM-воронка, KPI и конверсии, стандарты переговоров, управляемость команды и рост маржинальности при расширении сети.",
+      "contacts": [
+        {"value": "8-800-444-29-28", "channel": "Phone", "type": "Corporate", "source": "ФранчБрокер official website", "url": "https://franch-broker.ru/contacts.html", "is_lpr": false, "notes": "Официальный федеральный телефон"},
+        {"value": "franchbroker.org@gmail.com", "channel": "Email", "type": "Corporate", "source": "ФранчБрокер official website", "url": "https://franch-broker.ru/contacts.html", "is_lpr": false, "notes": "Официальный email, опубликованный на сайте"},
+        {"value": "https://krasnodar.hh.ru/vacancy/130087936", "channel": "HeadHunter", "type": "Employer route", "source": "HeadHunter", "url": "https://krasnodar.hh.ru/vacancy/130087936", "is_lpr": false, "notes": "Маршрут через работодателя к коммерческому блоку"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «ФРАНЧБРОКЕР», ИНН 1655497346, ОГРН 1231600042277, действует; генеральный директор — Гилязов Булат Шамилевич.", "url": "https://xfirm.ru/company/1655497346", "source": "Xfirm / ФНС"},
+        {"type": "SCALE", "claim": "Выручка за 2025 год — 210,464 млн ₽; среднесписочная численность за 2025 год — 21 сотрудник.", "url": "https://xfirm.ru/company/1655497346", "source": "Xfirm / ФНС"},
+        {"type": "OWNER_LPR", "claim": "Гилязов Булат Шамилевич — действующий генеральный директор и совладелец; второй учредитель — Шарифуллин Артур Ранасович.", "url": "https://saby.ru/profile/1655497346-168401001", "source": "Saby / ЕГРЮЛ"},
+        {"type": "SIGNAL", "claim": "Вакансия от 02.02.2026: быстро растущая компания формирует отдел продаж; задачи включают личные продажи, управление командой, CRM и масштабирование отдела.", "url": "https://krasnodar.hh.ru/vacancy/130087936", "source": "HeadHunter"},
+        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт подтверждает ИНН/ОГРН, федеральный телефон 8-800-444-29-28, email franchbroker.org@gmail.com и форму связи.", "url": "https://franch-broker.ru/contacts.html", "source": "ФранчБрокер official website"}
+      ]
     }
   ]
 }
