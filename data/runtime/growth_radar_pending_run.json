@@ -1,204 +1,205 @@
 {
-  "run_id": "N5K-20260816-255",
-  "updated_at": "2026-08-16T14:05:00+03:00",
+  "run_id": "N5K-20260816-256",
+  "updated_at": "2026-08-16T15:00:00+03:00",
   "funnel": {
-    "discovered": 32,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
+    "discovered": 38,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 6,
-    "excluded": 24
+    "duplicates": 8,
+    "excluded": 28
   },
-  "notes": "Accelerated multi-source discovery reviewed 32 distinct candidate companies. Six repeated known companies were removed at fast dedup. Logos-LTD passed legal/size but was excluded because current 2025 revenue is about 1.2bn RUB, above the canonical range without separate approval. PlanFact / Maximum Web and Niti Tvorchestva passed legal, scale, signal, owner/LPR and contact-route gates. The requested 100-150 raw target is not claimed because only 32 distinct candidates were individually enumerated and fast-gated. No criteria were widened and no outreach was performed.",
+  "notes": "Accelerated multi-source discovery individually enumerated 38 distinct raw companies from two broad HeadHunter search streams, then used legal/scale/official-site checks only on fast-gate survivors. Eight obvious previously known companies were removed before deep analysis. Fresh 2025/2026 data excluded SVC POLIS812 and Aysedora on employee size, and Lesresurs on scale. EPSILON GIFTS and Vervex Energy passed current legal, scale, direct S1 signal, owner/LPR and practical contact-route gates. The requested 100-150 raw target is not claimed because only 38 distinct raw candidates were individually enumerated in this run. No criteria were widened and no outreach was performed.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0275",
-      "Brand": "ПланФакт",
-      "Legal Name": "ООО «МАКСИМУМ ВЕБ»",
-      "INN": "3233502746",
-      "OGRN/OGRNIP": "1093254010717",
-      "Region": "Брянская область",
-      "City": "Брянск / Москва",
-      "Segment": "B2B SaaS / управленческий финансовый учет",
-      "Website": "https://planfact.io/",
-      "Revenue/Scale": "Действующая частная IT-компания; выручка 222,266 млн ₽ за 2025 год; профиль работодателя указывает команду около 100 человек и 3500+ компаний-клиентов",
+      "Lead ID": "N5K-0277",
+      "Brand": "EPSILON GIFTS / Эпсилон Гифтс",
+      "Legal Name": "ООО «ЭПСИЛОН ГИФТС»",
+      "INN": "7807224629",
+      "OGRN/OGRNIP": "1197847050092",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "B2B корпоративные подарки / рекламная и сувенирная продукция",
+      "Website": "https://epsilongifts.ru/",
+      "Revenue/Scale": "Действующая частная B2B-компания; выручка 67,511 млн ₽ за 2025 год; 5 сотрудников по актуальным реестровым данным",
       "Signal Level": "S1",
-      "Signal Summary": "Компания масштабирует новые продажи и ищет руководителя направления новых продаж для системного управления двумя линиями продаж, воронкой, опережающими метриками и масштабированием B2B SaaS-продаж.",
-      "Signal Date": "2026-01-12",
-      "Signal Source": "https://hh.ru/vacancy/129308781",
-      "Owner": "Боев Игорь Александрович; Боев Алексей Александрович; Ермаков Николай Владимирович",
-      "CEO": "Боев Игорь Александрович",
-      "LPR": "Боев Игорь Александрович",
-      "LPR Role": "Генеральный директор / сооснователь",
-      "Primary Phone": "+7 (495) 268-02-88",
-      "Primary Email": "support@planfact.io",
-      "HH Contact": "https://hh.ru/employer/856661",
-      "Contact Form": "https://planfact.io/about",
-      "Contact Type": "Официальный корпоративный маршрут к CEO через телефон/email/сайт и HeadHunter",
-      "Contact Source": "Официальный сайт ПланФакт; HeadHunter; РБК Компании; Saby/ФНС",
-      "Consulting Hypothesis": "Масштабирование B2B SaaS-продаж: ICP, архитектура двух линий продаж, CRM-воронка и forecasting, unit economics, KPI и связка маркетинга с коммерческой функцией.",
+      "Signal Summary": "В феврале 2026 компания искала руководителя B2B-продаж для формирования команды с нуля, найма, обучения, системного управления отделом и роста до коммерческого директора.",
+      "Signal Date": "2026-02-06",
+      "Signal Source": "https://spb.hh.ru/vacancy/130242499",
+      "Owner": "Вучастая Леся Николаевна — 50%; Орлов Вячеслав Валериевич — 50%",
+      "CEO": "Вучастая Леся Николаевна",
+      "LPR": "Вучастая Леся Николаевна",
+      "LPR Role": "Генеральный директор / совладелец 50%",
+      "Primary Phone": "+7 (812) 443-71-83",
+      "Primary Email": "zakaz@epsilongifts.ru",
+      "HH Contact": "https://spb.hh.ru/vacancy/130242499",
+      "Contact Form": "https://epsilongifts.ru/contacts/",
+      "Contact Type": "Официальный корпоративный маршрут к CEO через отдел продаж/email/сайт и прямой HH-сигнал",
+      "Contact Source": "Официальный сайт EPSILON GIFTS; HeadHunter; РБК Компании/ЕГРЮЛ",
+      "Consulting Hypothesis": "Систематизация и масштабирование B2B-продаж корпоративных подарков: сегментация клиентов, CRM-воронка, KPI и маржинальность, стандарты обучения, forecasting и переход от owner-driven продаж к управляемому отделу.",
       "contacts": [
         {
-          "value": "+7 (495) 268-02-88",
+          "value": "+7 (812) 443-71-83",
           "channel": "Phone",
           "type": "Official corporate route",
-          "source": "PlanFact official site",
-          "url": "https://planfact.io/agreement",
+          "source": "EPSILON GIFTS official site",
+          "url": "https://epsilongifts.ru/contacts/",
           "is_lpr": false,
-          "notes": "Официальный телефон; просить передать сообщение генеральному директору Игорю Боеву"
+          "notes": "Официальный телефон отдела продаж; просить передать сообщение генеральному директору Лесе Вучастой"
         },
         {
-          "value": "support@planfact.io",
+          "value": "zakaz@epsilongifts.ru",
           "channel": "Email",
           "type": "Official corporate route",
-          "source": "PlanFact official site",
-          "url": "https://planfact.io/agreement",
+          "source": "EPSILON GIFTS official site",
+          "url": "https://epsilongifts.ru/contacts/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный email ПланФакт"
+          "notes": "Официальный email отдела продаж"
         },
         {
-          "value": "https://hh.ru/employer/856661",
-          "channel": "Employer profile",
+          "value": "https://spb.hh.ru/vacancy/130242499",
+          "channel": "Employer vacancy",
           "type": "Employer signal route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/employer/856661",
+          "url": "https://spb.hh.ru/vacancy/130242499",
           "is_lpr": false,
-          "notes": "Профиль работодателя ПланФакт"
+          "notes": "Прямой свежий сигнал работодателя"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «МАКСИМУМ ВЕБ», ИНН 3233502746, ОГРН 1093254010717, действует; генеральный директор — Боев Игорь Александрович.",
-          "url": "https://planfact.io/accreditation",
-          "source": "Официальный сайт ПланФакт"
+          "claim": "ООО «ЭПСИЛОН ГИФТС», ИНН 7807224629, ОГРН 1197847050092, действует; генеральный директор — Вучастая Леся Николаевна.",
+          "url": "https://companies.rbc.ru/id/1197847050092-obschestvo-s-ogranichennoj-otvetstvennostyu-epsilon-gifts/",
+          "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Выручка за 2025 год — 222,266 млн ₽; актуальный профиль работодателя указывает команду около 100 человек и 3500+ компаний-клиентов.",
-          "url": "https://hh.ru/employer/1662661",
-          "source": "Saby / ФНС + HeadHunter employer profile"
+          "claim": "Выручка за 2025 год — 67,511 млн ₽; среднесписочная численность — 5 сотрудников.",
+          "url": "https://companies.rbc.ru/id/1197847050092-obschestvo-s-ogranichennoj-otvetstvennostyu-epsilon-gifts/",
+          "source": "РБК Компании / ФНС"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Генеральный директор — Боев Игорь Александрович; учредители — Боев Игорь, Боев Алексей и Ермаков Николай.",
-          "url": "https://companies.rbc.ru/id/1093254010717-ooo-maksimum-veb/",
+          "claim": "Генеральный директор Вучастая Леся Николаевна; учредители Вучастая Леся Николаевна и Орлов Вячеслав Валериевич по 50%.",
+          "url": "https://companies.rbc.ru/amp/ogrn/1197847050092/",
           "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "ПланФакт прямо связывает продукт с ООО «Максимум Веб», ИНН 3233502746, ОГРН 1093254010717.",
-          "url": "https://planfact.io/agreement",
-          "source": "Официальный сайт ПланФакт"
+          "claim": "Официальная страница EPSILON GIFTS публикует реквизиты ООО «ЭПСИЛОН ГИФТС», ИНН 7807224629, ОГРН 1197847050092.",
+          "url": "https://epsilongifts.ru/contacts/",
+          "source": "Официальный сайт EPSILON GIFTS"
         },
         {
           "type": "SIGNAL",
-          "claim": "В январе 2026 ПланФакт искал руководителя направления новых продаж для системного масштабирования двух линий продаж, воронки и метрик.",
-          "url": "https://hh.ru/vacancy/129308781",
+          "claim": "6 февраля 2026 компания искала руководителя B2B-продаж для формирования команды с нуля, найма, обучения и системного управления отделом.",
+          "url": "https://spb.hh.ru/vacancy/130242499",
           "source": "HeadHunter"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует телефон +7 (495) 268-02-88 и support@planfact.io; CEO установлен.",
-          "url": "https://planfact.io/agreement",
-          "source": "Официальный сайт ПланФакт"
+          "claim": "Официальный сайт публикует телефон отдела продаж +7 (812) 443-71-83 и email zakaz@epsilongifts.ru; CEO установлен.",
+          "url": "https://epsilongifts.ru/contacts/",
+          "source": "Официальный сайт EPSILON GIFTS"
         }
       ]
     },
     {
-      "Lead ID": "N5K-0276",
-      "Brand": "Нити Творчества",
-      "Legal Name": "ИП Бабак Татьяна Владимировна",
-      "INN": "540605856741",
-      "OGRN/OGRNIP": "321547600141377",
-      "Region": "Удмуртская Республика / Новосибирск",
-      "City": "Новосибирск",
-      "Segment": "E-commerce / товары для творчества / маркетплейсы",
-      "Website": "https://nititv.ru/",
-      "Revenue/Scale": "Действующий ИП; бренд заявляет 40+ млн ₽ ежемесячной выручки в 2026 году; отдел продаж 6 человек; 1000+ SKU",
+      "Lead ID": "N5K-0278",
+      "Brand": "Vervex Energy / Вервекс Энерджи",
+      "Legal Name": "ООО «ВЕРВЕКС ЭНЕРДЖИ»",
+      "INN": "7816320230",
+      "OGRN/OGRNIP": "1167847105975",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "B2B химическая продукция / сервисы дезинфекции",
+      "Website": "https://vervex.ru/",
+      "Revenue/Scale": "Действующая частная компания; выручка 693,324 млн ₽ за 2025 год; 69 сотрудников по данным ФНС за 2025 год",
       "Signal Level": "S1",
-      "Signal Summary": "Бренд масштабирует продажи на маркетплейсах и собственных каналах; в феврале 2026 ищет руководителя продаж для роста валовой прибыли, оптимизации товарной матрицы и системного вывода новых SKU.",
-      "Signal Date": "2026-02-24",
-      "Signal Source": "https://dreamjob.ru/employers/2762141/vakansii/130701009",
-      "Owner": "Бабак Татьяна Владимировна",
-      "CEO": "Бабак Татьяна Владимировна",
-      "LPR": "Бабак Татьяна Владимировна",
-      "LPR Role": "Индивидуальный предприниматель / владелец бренда",
-      "Primary Phone": "+7 (965) 828-69-00",
-      "Primary Email": "nititv@yandex.ru",
-      "HH Contact": "https://hh.ru/employer/9726825",
-      "Contact Form": "https://nititv.ru/kontaktyi",
-      "Contact Type": "Официальный маршрут к владельцу через телефон/email/сайт и профиль работодателя",
-      "Contact Source": "Официальный сайт Нити Творчества; HeadHunter; DreamJob; Т-Банк/ФНС",
-      "Consulting Hypothesis": "Рост e-commerce без потери валовой прибыли: SKU-экономика, P&L по каналам, KPI команды, forecasting, аналитика, развитие собственных каналов и снижение зависимости от маркетплейсов.",
+      "Signal Summary": "В январе 2026 собственник запускает B2B-направление услуг дезинфекции практически с нуля: 0 менеджеров, 0 маркетинга, требуется первый продавец-строитель с последующим формированием отдела и влиянием на стратегию направления.",
+      "Signal Date": "2026-01-20",
+      "Signal Source": "https://spb.hh.ru/vacancy/129648069",
+      "Owner": "Добони Артем Александрович — 100%",
+      "CEO": "Добони Артем Александрович",
+      "LPR": "Добони Артем Александрович",
+      "LPR Role": "Генеральный директор / единственный учредитель",
+      "Primary Phone": "+7 (812) 407-30-16",
+      "Primary Email": "info@vervex.ru",
+      "HH Contact": "https://spb.hh.ru/vacancy/129648069",
+      "Contact Form": "https://vervex.ru/",
+      "Contact Type": "Корпоративный маршрут к owner-CEO через опубликованный телефон/email/сайт и прямой HH-сигнал",
+      "Contact Source": "HeadHunter; Companium/ФНС; Xfirm/ЕГРЮЛ",
+      "Consulting Hypothesis": "Запуск нового B2B-сервисного направления: ICP и сегментация, холодная воронка, CRM, unit economics и маржинальность, первые repeatable sales motions, найм команды и переход от founder-led запуска к системному отделу.",
       "contacts": [
         {
-          "value": "+7 (965) 828-69-00",
+          "value": "+7 (812) 407-30-16",
           "channel": "Phone",
-          "type": "Official corporate route",
-          "source": "Official Niti Tvorchestva website",
-          "url": "https://nititv.ru/kontaktyi",
+          "type": "Published corporate route",
+          "source": "Companium company profile",
+          "url": "https://companium.ru/id/1167847105975-verveks-ehnerdzhi",
           "is_lpr": false,
-          "notes": "Официальный телефон; просить передать сообщение владельцу Татьяне Бабак"
+          "notes": "Опубликованный корпоративный телефон; просить передать сообщение собственнику и генеральному директору Артему Добони"
         },
         {
-          "value": "nititv@yandex.ru",
+          "value": "info@vervex.ru",
           "channel": "Email",
-          "type": "Official corporate route",
-          "source": "Official Niti Tvorchestva website",
-          "url": "https://nititv.ru/rekvizityi",
+          "type": "Published corporate route",
+          "source": "Companium company profile",
+          "url": "https://companium.ru/id/1167847105975-verveks-ehnerdzhi",
           "is_lpr": false,
-          "notes": "Официальный email бренда"
+          "notes": "Опубликованный корпоративный email"
         },
         {
-          "value": "https://hh.ru/employer/9726825",
-          "channel": "Employer profile",
+          "value": "https://spb.hh.ru/vacancy/129648069",
+          "channel": "Employer vacancy",
           "type": "Employer signal route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/employer/9726825",
+          "url": "https://spb.hh.ru/vacancy/129648069",
           "is_lpr": false,
-          "notes": "Профиль работодателя Нити Творчества"
+          "notes": "Прямой сигнал собственника через вакансию работодателя"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ИП Бабак Татьяна Владимировна, ИНН 540605856741, ОГРНИП 321547600141377, действует.",
-          "url": "https://www.tbank.ru/business/contractor/legal/321547600141377/",
-          "source": "Т-Банк / ФНС"
+          "claim": "ООО «ВЕРВЕКС ЭНЕРДЖИ», ИНН 7816320230, ОГРН 1167847105975, действует; генеральный директор — Добони Артем Александрович.",
+          "url": "https://xfirm.ru/company/7816320230",
+          "source": "Xfirm / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "В феврале 2026 бренд заявлял 40+ млн ₽ ежемесячной выручки, отдел продаж из 6 человек и ассортимент 1000+ SKU.",
-          "url": "https://dreamjob.ru/employers/2762141/vakansii/130701009",
-          "source": "DreamJob / вакансия работодателя"
+          "claim": "Выручка за 2025 год — 693,324 млн ₽; 69 сотрудников по данным ФНС за 2025 год.",
+          "url": "https://companium.ru/id/1167847105975-verveks-ehnerdzhi",
+          "source": "Companium / ФНС"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "ИП и владелец бренда — Бабак Татьяна Владимировна; товарный знак «Нити Творчества» зарегистрирован на неё.",
-          "url": "https://companies.rbc.ru/trademark/956056/niti-tvorchestva/",
-          "source": "РБК Компании / реестр товарных знаков"
+          "claim": "Добони Артем Александрович — генеральный директор и единственный учредитель компании.",
+          "url": "https://xfirm.ru/company/7816320230",
+          "source": "Xfirm / ЕГРЮЛ"
         },
         {
           "type": "BRAND_MATCH",
-          "claim": "Официальная страница реквизитов Нити Творчества указывает ИП Бабак Т. В., ИНН 540605856741 и ОГРНИП 321547600141377.",
-          "url": "https://nititv.ru/rekvizityi",
-          "source": "Официальный сайт Нити Творчества"
+          "claim": "Вакансия опубликована непосредственно ООО «Вервекс Энерджи»; юридические реквизиты соответствуют ООО «ВЕРВЕКС ЭНЕРДЖИ», ИНН 7816320230.",
+          "url": "https://spb.hh.ru/vacancy/129648069",
+          "source": "HeadHunter + ЕГРЮЛ"
         },
         {
           "type": "SIGNAL",
-          "claim": "Компания масштабирует продажи на маркетплейсах и собственных каналах; руководитель продаж отвечает за рост валовой прибыли, товарную матрицу и системный вывод новых SKU.",
-          "url": "https://dreamjob.ru/employers/2762141/vakansii/130701009",
-          "source": "DreamJob / HeadHunter vacancy mirror"
+          "claim": "20 января 2026 компания заявила запуск B2B-направления дезинфекции с 0 менеджеров и 0 маркетинга и запрос собственника на построение продаж и последующую команду.",
+          "url": "https://spb.hh.ru/vacancy/129648069",
+          "source": "HeadHunter"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует телефон +7 (965) 828-69-00 и email nititv@yandex.ru; владелец установлен.",
-          "url": "https://nititv.ru/rekvizityi",
-          "source": "Официальный сайт Нити Творчества"
+          "claim": "Опубликованы корпоративные телефон +7 (812) 407-30-16 и email info@vervex.ru; owner-CEO установлен.",
+          "url": "https://companium.ru/id/1167847105975-verveks-ehnerdzhi",
+          "source": "Companium"
         }
       ]
     }
