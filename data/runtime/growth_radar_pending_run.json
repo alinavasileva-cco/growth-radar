@@ -1,206 +1,96 @@
 {
-  "run_id": "N5K-20260816-260",
-  "updated_at": "2026-08-16T19:02:43+03:00",
+  "run_id": "N5K-20260816-261",
+  "updated_at": "2026-08-16T20:00:00+03:00",
   "funnel": {
     "discovered": 24,
-    "fast_gate_passed": 5,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "fast_gate_passed": 6,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 2,
-    "excluded": 20
+    "duplicates": 5,
+    "excluded": 17
   },
-  "notes": "Accelerated multi-source cycle individually reviewed 24 distinct current candidates from 2026 vacancy, company-site, registry and public growth-signal streams. The requested 100-150 raw target was not reached in this execution, so no larger number is claimed. Two surfaced candidates were already-known physical-master duplicates. Fast gate retained five candidates; Terri Group failed the current size requirement on fresh registry headcount, Magnitof lacked sufficient confirmed scale for the newly registered legal entity, and Торговый дом Славич was not advanced because the HH employer/legal-entity linkage to the Moscow AO could not be confirmed without ambiguity. PAPATOOLS and Travel Create Feel passed legal, scale, signal, LPR and practical contact-route checks. GitHub index dedup found no existing PAPATOOLS INN/OGRN or Travel Create Feel INN/name; the physical pre-write workflow guard will recheck INN/OGRN/Lead ID before integration. No outreach was performed.",
+  "notes": "Accelerated multi-source discovery. 24 individually reviewed raw candidates from fresh 2026 vacancy and company-source streams. Fast gate removed known campaign duplicates, staffing intermediaries, microbusiness/current scale failures and ambiguous brand-to-legal matches. Two companies fully verified with current legal/scale/LPR/contact evidence; no outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0281",
-      "Brand": "PAPATOOLS / ПАПАТУЛЗ",
-      "Legal Name": "ООО «ПАПАТУЛЗ ПРОМЫШЛЕННЫЕ СИСТЕМЫ»",
-      "INN": "7722396805",
-      "OGRN/OGRNIP": "1177746409477",
-      "Region": "Москва / Волгоград",
+      "Lead ID": "N5K-0283",
+      "Brand": "ERP Band / ЕЭРПИ БЭНД",
+      "Legal Name": "ООО «ЕЭРПИ БЭНД»",
+      "INN": "7743776572",
+      "OGRN/OGRNIP": "1107746281026",
+      "Region": "Москва",
       "City": "Москва",
-      "Segment": "Промышленное оборудование / инструмент / B2B",
-      "Website": "https://www.papatools.ru/",
-      "Revenue/Scale": "Действующая частная B2B-компания; выручка 829,352 млн ₽ за 2025 год; публичные реестровые данные указывают 9 сотрудников; головной офис в Москве и обособленное подразделение в Волгограде",
+      "Segment": "IT / 1С ERP / автоматизация B2B",
+      "Website": "https://erp.band/",
+      "Revenue/Scale": "Действующее малое предприятие; выручка 151,91 млн ₽ за 2025 год; официальный сайт подтверждает масштаб команды 70+ специалистов",
       "Signal Level": "S1",
-      "Signal Summary": "В январе 2026 компания ищет руководителя отдела продаж для управляемой цифровой и маржинальной B2B-системы продаж: прогноз, воронка, маржинальность, бюджетирование, Bitrix24, развитие команды и работа со стратегическими клиентами.",
-      "Signal Date": "2026-01-16",
-      "Signal Source": "https://hh.ru/vacancy/129497558",
-      "Owner": "Милокумов Павел Петрович — 100%",
-      "CEO": "Милокумов Павел Петрович",
-      "LPR": "Милокумов Павел Петрович",
-      "LPR Role": "Генеральный директор / единственный учредитель",
-      "Primary Phone": "+7 (495) 215-24-58",
-      "Primary Email": "",
-      "HH Contact": "https://hh.ru/vacancy/129497558",
-      "Contact Form": "https://www.papatools.ru/",
-      "Contact Type": "Корпоративный маршрут к owner-CEO через официальный телефон/форму и актуальный HH-сигнал",
-      "Contact Source": "Официальный сайт PAPATOOLS; HeadHunter; свежие реестровые источники ФНС/Росстат",
-      "Consulting Hypothesis": "Управляемое масштабирование B2B-продаж после резкого роста: сегментация клиентов и каналов, прогнозирование, CRM/воронка, KPI и маржинальность, стандарты KAM, бюджетирование и снижение зависимости от ручного управления собственника.",
+      "Signal Summary": "4 февраля 2026 компания открыла директора по продажам для построения и развития системных B2B-продаж: предсказуемый поток крупных сделок, оптимизация полного цикла продаж, бюджет и прогноз, управление воронкой, отделом продаж и маркетингом, переговоры с собственниками и топ-менеджерами клиентов.",
+      "Signal Date": "2026-02-04",
+      "Signal Source": "HeadHunter",
+      "Owner": "Соловьев Роман Евгеньевич — 75%; Мальцева Клавдия Юрьевна — 25%",
+      "CEO": "Соловьев Роман Евгеньевич",
+      "LPR": "Соловьев Роман Евгеньевич",
+      "LPR Role": "Генеральный директор / собственник 75%",
+      "Primary Phone": "+7 (495) 050-44-44",
+      "Primary Email": "sales@erp.band",
+      "HH Contact": "https://hh.ru/vacancy/130163863",
+      "Contact Form": "https://erp.band/contacts",
+      "Contact Type": "Корпоративный маршрут к owner-CEO",
+      "Contact Source": "Официальный сайт ERP Band + HeadHunter",
+      "Consulting Hypothesis": "Систематизация крупного B2B-sales контура: ICP и сегментация, управляемая воронка, прогнозирование, KPI, связка sales+marketing, стандарты enterprise-продаж и рост предсказуемости крупных сделок.",
       "contacts": [
-        {
-          "value": "+7 (495) 215-24-58",
-          "channel": "Phone",
-          "type": "Published corporate route",
-          "source": "Официальный сайт PAPATOOLS",
-          "url": "https://www.papatools.ru/",
-          "is_lpr": false,
-          "notes": "Официальный телефон головного офиса; просить соединить с генеральным директором Павлом Милокумовым по вопросу развития коммерческой системы"
-        },
-        {
-          "value": "https://www.papatools.ru/",
-          "channel": "Contact form",
-          "type": "Published corporate route",
-          "source": "Официальный сайт PAPATOOLS",
-          "url": "https://www.papatools.ru/",
-          "is_lpr": false,
-          "notes": "Официальная форма связи на сайте"
-        },
-        {
-          "value": "https://hh.ru/vacancy/129497558",
-          "channel": "HH vacancy",
-          "type": "Employer route",
-          "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/129497558",
-          "is_lpr": false,
-          "notes": "Актуальный бизнес-сигнал работодателя и дополнительный маршрут через профиль вакансии"
-        }
+        {"value": "+7 (495) 050-44-44", "channel": "Phone", "type": "Published corporate route", "source": "Официальный сайт ERP Band", "url": "https://erp.band/contacts", "notes": "Просить соединить с генеральным директором и собственником Романом Соловьевым"},
+        {"value": "sales@erp.band", "channel": "Email", "type": "Published corporate route", "source": "Официальный сайт ERP Band", "url": "https://erp.band/contacts", "notes": "Корпоративный sales email; адресовать Роману Соловьеву"},
+        {"value": "https://hh.ru/vacancy/130163863", "channel": "HH vacancy", "type": "Employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/130163863", "notes": "Свежий бизнес-сигнал и резервный маршрут работодателя"}
       ],
       "evidence": [
-        {
-          "type": "LEGAL",
-          "claim": "ООО «ПАПАТУЛЗ ПРОМЫШЛЕННЫЕ СИСТЕМЫ», ИНН 7722396805, ОГРН 1177746409477; компания действует, генеральный директор и учредитель — Павел Милокумов.",
-          "url": "https://xfirm.ru/company/7722396805",
-          "source": "Xfirm / ФНС"
-        },
-        {
-          "type": "SCALE",
-          "claim": "Выручка компании за 2025 год составила 829,352 млн ₽; официальный сайт подтверждает головной офис в Москве и подразделение в Волгограде.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1177746409477/",
-          "source": "Т-Банк / официальные данные ФНС и Росстата"
-        },
-        {
-          "type": "OWNER_LPR",
-          "claim": "Павел Петрович Милокумов — генеральный директор и единственный учредитель компании.",
-          "url": "https://companies.rbc.ru/id/1177746409477-ooo-papatulz/",
-          "source": "РБК Компании / ЕГРЮЛ"
-        },
-        {
-          "type": "BRAND_MATCH",
-          "claim": "Официальный сайт PAPATOOLS публикует ООО «ПАПАТУЛЗ», ИНН 7722396805 и ОГРН 1177746409477, что подтверждает прямую связку бренда и юрлица.",
-          "url": "https://www.papatools.ru/",
-          "source": "Официальный сайт PAPATOOLS"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "Вакансия РОПа от 16 января 2026 описывает управляемую цифровую и маржинальную B2B-систему продаж, управление воронкой, маржой, бюджетированием и Bitrix24, а также развитие команды.",
-          "url": "https://hh.ru/vacancy/129497558",
-          "source": "HeadHunter"
-        },
-        {
-          "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует телефон головного офиса +7 (495) 215-24-58 и форму связи; маршрут позволяет запросить передачу сообщения owner-CEO.",
-          "url": "https://www.papatools.ru/",
-          "source": "Официальный сайт PAPATOOLS"
-        }
+        {"type": "LEGAL", "claim": "ООО ЕЭРПИ БЭНД действует; ИНН 7743776572, ОГРН 1107746281026; генеральный директор Роман Соловьев.", "url": "https://www.tbank.ru/business/contractor/legal/1107746281026/", "source": "Т-Банк / реестровые данные"},
+        {"type": "SCALE", "claim": "Выручка за 2025 год 151,91 млн ₽; официальный сайт подтверждает масштаб команды.", "url": "https://www.tbank.ru/business/contractor/legal/1107746281026/", "source": "Т-Банк / бухгалтерская отчетность 2025"},
+        {"type": "SIGNAL", "claim": "Вакансия директора по продажам от 4 февраля 2026 требует построить системные B2B-продажи, поток крупных сделок, воронку, бюджет и команду.", "url": "https://hh.ru/vacancy/130163863", "source": "HeadHunter"},
+        {"type": "OWNER_LPR", "claim": "Роман Соловьев — генеральный директор и собственник 75%.", "url": "https://companies.rbc.ru/id/1107746281026-ooo-eerpi-bend/", "source": "РБК Компании / ЕГРЮЛ"},
+        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт публикует +7 (495) 050-44-44, sales@erp.band и форму связи; реквизиты совпадают с юрлицом.", "url": "https://erp.band/contacts", "source": "Официальный сайт ERP Band"}
       ]
     },
     {
-      "Lead ID": "N5K-0282",
-      "Brand": "Travel Create Feel / TCF",
-      "Legal Name": "ИП Егорова Екатерина Игоревна",
-      "INN": "332710259270",
-      "OGRN/OGRNIP": "321332800056809",
-      "Region": "Владимирская область / Москва",
+      "Lead ID": "N5K-0284",
+      "Brand": "Ubirator / Убиратор",
+      "Legal Name": "ООО «УБИРАТОР»",
+      "INN": "9715317764",
+      "OGRN/OGRNIP": "1187746557822",
+      "Region": "Москва",
       "City": "Москва",
-      "Segment": "Travel / MICE / корпоративные путешествия / B2B",
-      "Website": "https://travel-create-feel.ru/",
-      "Revenue/Scale": "Действующий ИП; команда 10+ человек; 50+ туров и 400+ клиентов в год; рост за 2025 год 220%; официальный сайт указывает 300+ реализованных путешествий и 70–100 туров ежегодно",
-      "Signal Level": "S2",
-      "Signal Summary": "В 2026 TCF находится в фазе активного масштабирования: рост за 2025 год 220%, переход от ручной к системной модели, развитие корпоративных путешествий/MICE и отдельного B2B-направления; публичные вакансии требуют анализа воронки и систематизации роста.",
-      "Signal Date": "2026-02-26",
-      "Signal Source": "https://t.me/s/marketing_jobs/11133",
-      "Owner": "Егорова Екатерина Игоревна",
-      "CEO": "Егорова Екатерина Игоревна",
-      "LPR": "Егорова Екатерина Игоревна",
-      "LPR Role": "Индивидуальный предприниматель / основательница Travel Create Feel",
-      "Primary Phone": "",
-      "Primary Email": "info@travel.create.feel.ru",
-      "HH Contact": "https://hh.ru/vacancy/128713247",
-      "Contact Form": "https://travel-create-feel.ru/zakaz",
-      "Contact Type": "Прямой корпоративный маршрут к бизнесу основательницы через официальный email/форму и публичный профиль бренда",
-      "Contact Source": "Официальный сайт Travel Create Feel; HeadHunter; Telegram marketing jobs; свежие реестровые данные ИП",
-      "Consulting Hypothesis": "Систематизация быстрого роста и запуск repeatable B2B/MICE-направления: продуктовая сегментация корпоративных клиентов, CRM и воронка, unit economics туров, KPI, стандарты продаж, планирование мощности команды и снижение founder-led зависимости.",
+      "Segment": "Экология / переработка / B2B-сервисы",
+      "Website": "https://ubirator.com/",
+      "Revenue/Scale": "Действующее малое предприятие; 47 сотрудников; выручка 210,207 млн ₽ за 2025 год",
+      "Signal Level": "S1",
+      "Signal Summary": "4 февраля 2026 компания открыла B2B-директора по продажам с ответственностью за выручку, маржу, конверсию и LTV, развитие команды, CRM и аналитику, переговоры с ЛПР крупных компаний, ключевые сделки и оптимизацию каналов продаж.",
+      "Signal Date": "2026-02-04",
+      "Signal Source": "HeadHunter",
+      "Owner": "Никишкин Никита Сергеевич — 18,30%; другие частные и инвестиционные участники",
+      "CEO": "Никишкин Никита Сергеевич",
+      "LPR": "Никишкин Никита Сергеевич",
+      "LPR Role": "Генеральный директор / совладелец",
+      "Primary Phone": "+7 (495) 181-00-97",
+      "Primary Email": "order@ubirator.com",
+      "HH Contact": "https://hh.ru/vacancy/130167283",
+      "Contact Form": "https://ubirator.com/o-kompanii",
+      "Contact Type": "Корпоративный маршрут к CEO",
+      "Contact Source": "Официальный сайт Ubirator + HeadHunter",
+      "Consulting Hypothesis": "Настройка коммерческой системы B2B-экосервиса: сегментация ключевых клиентов, unit-экономика каналов, CRM/воронка, KPI команды, KAM-процессы, маржинальность и масштабирование продаж.",
       "contacts": [
-        {
-          "value": "info@travel.create.feel.ru",
-          "channel": "Email",
-          "type": "Published corporate route",
-          "source": "Официальный сайт Travel Create Feel",
-          "url": "https://travel-create-feel.ru/",
-          "is_lpr": false,
-          "notes": "Официальный email бренда; просить передать сообщение основательнице Екатерине Егоровой"
-        },
-        {
-          "value": "https://travel-create-feel.ru/zakaz",
-          "channel": "Contact form",
-          "type": "Published corporate route",
-          "source": "Официальный сайт Travel Create Feel",
-          "url": "https://travel-create-feel.ru/zakaz",
-          "is_lpr": false,
-          "notes": "Официальная форма связи бренда"
-        },
-        {
-          "value": "https://hh.ru/vacancy/128713247",
-          "channel": "HH vacancy",
-          "type": "Employer route",
-          "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/128713247",
-          "is_lpr": false,
-          "notes": "Публичный сигнал запуска и масштабирования корпоративного B2B-направления"
-        }
+        {"value": "+7 (495) 181-00-97", "channel": "Phone", "type": "Published corporate route", "source": "Официальный сайт Ubirator", "url": "https://ubirator.com/o-kompanii", "notes": "Корпоративный телефон; просить передать сообщение генеральному директору Никите Никишкину"},
+        {"value": "order@ubirator.com", "channel": "Email", "type": "Published corporate route", "source": "Официальный сайт Ubirator", "url": "https://ubirator.com/o-kompanii", "notes": "Официальный корпоративный email; адресовать генеральному директору"},
+        {"value": "https://hh.ru/vacancy/130167283", "channel": "HH vacancy", "type": "Employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/130167283", "notes": "Свежий бизнес-сигнал и резервный маршрут работодателя"}
       ],
       "evidence": [
-        {
-          "type": "LEGAL",
-          "claim": "ИП Егорова Екатерина Игоревна, ИНН 332710259270, ОГРНИП 321332800056809; действующий ИП, зарегистрирован 08.11.2021.",
-          "url": "https://check.tochka.com/company/321332800056809/",
-          "source": "Точка / ЕГРИП"
-        },
-        {
-          "type": "SCALE",
-          "claim": "Публичные материалы 2026 указывают рост за 2025 год 220%, 50+ туров и 400+ клиентов ежегодно, аудиторию 45 тыс. и команду 10+ человек; официальный сайт указывает 300+ реализованных путешествий и 70–100 туров ежегодно.",
-          "url": "https://t.me/s/marketing_jobs/11133",
-          "source": "Публичная вакансия Travel Create Feel + официальный сайт"
-        },
-        {
-          "type": "OWNER_LPR",
-          "claim": "Екатерина Егорова публично указана как основательница Travel Create Feel; официальный сайт работает от её ИП и публикует соответствующий ИНН.",
-          "url": "https://lpconsult.moscow/",
-          "source": "LP Consult + официальный сайт Travel Create Feel"
-        },
-        {
-          "type": "BRAND_MATCH",
-          "claim": "Официальный сайт Travel Create Feel прямо публикует ИП Егорова Екатерина Игоревна и ИНН 332710259270 в юридическом футере.",
-          "url": "https://travel-create-feel.ru/footer",
-          "source": "Официальный сайт Travel Create Feel"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "TCF сообщает о росте 220% за 2025 год и переходе от ручной к системной модели; параллельно компания развивает корпоративные туры/MICE и публиковала роль для создания B2B-направления с нуля.",
-          "url": "https://hh.ru/vacancy/128713247",
-          "source": "HeadHunter + публичные вакансии Travel Create Feel"
-        },
-        {
-          "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует email info@travel.create.feel.ru и форму заявки; это подтверждённый корпоративный маршрут к бизнесу основательницы.",
-          "url": "https://travel-create-feel.ru/",
-          "source": "Официальный сайт Travel Create Feel"
-        }
+        {"type": "LEGAL", "claim": "ООО УБИРАТОР действует; ИНН 9715317764, ОГРН 1187746557822; генеральный директор Никита Никишкин.", "url": "https://companies.rbc.ru/id/1187746557822-ubirator/", "source": "РБК Компании / ЕГРЮЛ"},
+        {"type": "SCALE", "claim": "47 сотрудников и выручка 210,207 млн ₽ за 2025 год.", "url": "https://companies.rbc.ru/id/1187746557822-ubirator/", "source": "РБК Компании / бухгалтерская отчетность 2025"},
+        {"type": "SIGNAL", "claim": "Вакансия директора по продажам B2B от 4 февраля 2026 включает управление выручкой, маржой, LTV, CRM, командой, стратегическими договорами и каналами продаж.", "url": "https://hh.ru/vacancy/130167283", "source": "HeadHunter"},
+        {"type": "OWNER_LPR", "claim": "Никита Никишкин — генеральный директор и совладелец 18,30%.", "url": "https://companies.rbc.ru/id/1187746557822-ubirator/", "source": "РБК Компании / ЕГРЮЛ"},
+        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт группы публикует реквизиты ООО Убиратор, телефон +7 (495) 181-00-97 и order@ubirator.com.", "url": "https://ubirator.com/o-kompanii", "source": "Официальный сайт Ubirator"}
       ]
     }
   ]
