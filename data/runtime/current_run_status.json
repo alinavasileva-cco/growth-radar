@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260816-255",
+  "run_id": "N5K-20260816-256",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-16T14:05:00+03:00",
+  "updated_at": "2026-08-16T15:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 132,
-    "current_contactable_count": 132,
-    "progress_added": 132,
-    "remaining": 4868
+    "current_canonical_count": 133,
+    "current_contactable_count": 133,
+    "progress_added": 133,
+    "remaining": 4867
   },
   "funnel": {
-    "discovered": 32,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
+    "discovered": 38,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 6,
-    "excluded": 24
+    "qualified": 1,
+    "duplicates": 9,
+    "excluded": 28
   },
   "qualified_companies": [
-    "ПланФакт",
-    "Нити Творчества"
+    "Vervex Energy / Вервекс Энерджи"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "132_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "132_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "133_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "133_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
