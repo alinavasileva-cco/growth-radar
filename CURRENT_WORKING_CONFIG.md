@@ -48,3 +48,6 @@
 9. Outreach не выполнять.
 
 История предыдущих RUN хранится в `run_logs`, `reports`, shards и Git history; устаревшая сводка из прежней версии этого файла удалена из рабочего конфига.
+
+## Latest verified run N5K-20260817-277
+Canonical/contactable: 159/159. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

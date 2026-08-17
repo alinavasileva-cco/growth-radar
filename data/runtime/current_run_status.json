@@ -1,39 +1,40 @@
 {
   "run_id": "N5K-20260817-277",
   "campaign_id": "new_5000",
-  "status": "BLOCKED_CANONICAL_WRITE",
-  "updated_at": "2026-08-17T12:31:37+03:00",
-  "stage": "INTEGRATION",
+  "status": "COMPLETED",
+  "updated_at": "2026-08-17T13:05:00+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 156,
-    "current_contactable_count": 156,
-    "progress_added": 156,
-    "remaining": 4844,
-    "qualified_staged_not_counted": 3
+    "current_canonical_count": 159,
+    "current_contactable_count": 159,
+    "progress_added": 159,
+    "remaining": 4841
   },
   "funnel": {
     "discovered": 100,
-    "fast_gate_fully_evidenced": 3,
+    "fast_gate_passed": 3,
     "size_check_passed": 3,
     "legal_match_passed": 3,
     "signal_confirmed": 3,
     "lpr_identified": 3,
     "contact_route_found": 3,
-    "qualified_staged": 3,
-    "physically_integrated": 0,
-    "duplicates_confirmed": 0,
-    "deferred_raw": 97
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 97
   },
-  "qualified_companies_staged": [
+  "qualified_companies": [
     "Metacommerce",
     "ARTGK / Системные Бизнес Решения",
     "ДЮКС / DUX"
   ],
-  "integrity_status": "PASS_FOR_CURRENT_CANONICAL_156",
+  "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
+  "active_wip": 0,
+  "physical_master_state": "159_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "159_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "GitHub connector exposes full-file replacement for existing large master CSV but no append/patch operation; local gh is unavailable and container network access to GitHub is unavailable. Three fully qualified cards are staged but deliberately not counted until physical merge into leads_master.csv and contactable_master.csv."
+  "blocker": null
 }
