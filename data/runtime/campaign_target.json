@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-17T16:31:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-279",
-  "current_run_id": "N5K-20260817-279",
+  "last_completed_run_id": "N5K-20260817-280",
+  "current_run_id": "N5K-20260817-280",
   "last_run_id": "N5K-20260817-280",
   "latest_completed_run": "N5K-20260817-280",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 279 completed: 54 distinct raw discovered; 1 fully qualified company physically integrated; canonical/contactable 163/163; integrity PASS; orphan 0/0; outreach 0. Requested 100 distinct raw threshold was not reached in this run and was not overstated."
+  "note": "RUN 280 completed: 100 raw candidates processed; 2 fully qualified companies physically integrated; canonical/contactable 165/165; integrity PASS; orphan 0/0; outreach 0. Initial integration schema error was repaired before successful physical integration."
 }
