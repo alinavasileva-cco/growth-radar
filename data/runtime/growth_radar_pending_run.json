@@ -1,205 +1,111 @@
 {
-  "run_id": "N5K-20260817-269",
-  "updated_at": "2026-08-17T04:00:21+03:00",
+  "run_id": "N5K-20260817-270",
+  "updated_at": "2026-08-17T04:57:09+03:00",
   "funnel": {
-    "discovered": 44,
-    "fast_gate_passed": 8,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 5,
-    "excluded": 37
+    "discovered": 26,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 9,
+    "excluded": 16
   },
-  "notes": "Accelerated multi-source discovery continued from verified physical 147/147 baseline. Forty-four distinct company/employer signal records were individually reviewed across current HeadHunter listings, official company sites and current legal/business registry sources; no larger raw count is claimed. Five already-known brands/entities were rejected as physical-master duplicates before deep analysis. Recruiting intermediaries, companies below the scale gate, ambiguous brand-to-legal matches, and records relying only on stale scale data were excluded. NetGrowthLab and Gaztehnoservice passed the full current-data gate and physical pre-write dedup by INN/OGRN/name. No outreach.",
+  "notes": "Accelerated multi-source discovery continued from verified physical 149/149 baseline. Twenty-six distinct company/employer signal records were individually reviewed across current HeadHunter listings, official company sites and current legal/business registry sources; no larger raw count is claimed. Nine already-known entities were rejected as physical-master duplicates before deep analysis. Recruiting intermediaries, companies outside the current scale gate, ambiguous brand-to-legal matches, and records relying only on stale scale data were excluded. A-Group passed current legal, scale, signal, LPR, contact-route and pre-write INN search checks; final physical dedup remains enforced by the integration workflow. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0292",
-      "Brand": "NetGrowthLab / Нэтгроуслаб",
-      "Legal Name": "ООО «НЭТГРОУСЛАБ»",
-      "INN": "5050155369",
-      "OGRN/OGRNIP": "1225000056214",
+      "Lead ID": "N5K-0294",
+      "Brand": "A-Group / А-Груп",
+      "Legal Name": "ООО «А-ГРУП»",
+      "INN": "7726452698",
+      "OGRN/OGRNIP": "1197746313621",
       "Region": "Москва",
       "City": "Москва",
-      "Segment": "Маркетинговое агентство / performance / B2B lead generation",
-      "Website": "https://netgrowthlab.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 60,129 млн ₽ за 2025 год; актуальные источники на данных ФНС указывают 10 сотрудников; компания активно нанимает BDM/Sales в B2B и работает как агентство полного цикла.",
+      "Segment": "Аренда и продажа фасадных подъёмников / строительное оборудование / B2B",
+      "Website": "https://agrouprent.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 79,013 млн ₽ за 2025 год; 9 сотрудников по актуальным реестровым данным; официальный сайт A-Group указывает 900 подъёмников в наличии и 3 филиала в России.",
       "Signal Level": "S2",
-      "Signal Summary": "В актуальной выдаче HeadHunter 2026 одновременно присутствуют несколько вакансий Business Development Manager / Sales Manager с фокусом на развитие B2B-продаж, 70% привлечения новых клиентов, переговоры с собственниками и топ-менеджерами и прямое влияние на рост компании. Это подтверждает продолжающееся расширение коммерческого контура, а не старую разовую вакансию.",
-      "Signal Date": "Проверено 2026-08-17",
-      "Signal Source": "HeadHunter current listings",
-      "Owner": "Кольцов Кирилл Ильич — 100%",
-      "CEO": "Кольцов Кирилл Ильич",
-      "LPR": "Кольцов Кирилл Ильич",
-      "LPR Role": "Генеральный директор / собственник 100%",
-      "Primary Phone": "",
-      "Primary Email": "info@netgrowthlab.ru",
-      "HH Contact": "https://hh.ru/employer/9065245",
-      "Contact Form": "https://netgrowthlab.ru/",
-      "Contact Type": "Официальный корпоративный маршрут к собственнику/коммерческому контуру",
-      "Contact Source": "Официальный сайт NetGrowthLab + HeadHunter employer profile",
-      "Consulting Hypothesis": "Систематизация B2B-growth контура агентства: ICP и сегментация, экономика каналов привлечения, CRM-воронка и forecasting, KPI BDM-команды, стандарты переговоров с ЛПР и масштабирование продаж без потери маржинальности.",
+      "Signal Summary": "6 февраля 2026 компания открыла руководителя отдела продаж для разработки стратегии и тактики продаж, управления и обучения команды, поиска новых точек роста, работы с ключевыми клиентами и систематизации продаж с использованием 1С и Битрикс24; актуальная HH-выдача дополнительно описывает задачу организовать системную работу команды продаж и клиентского сервиса.",
+      "Signal Date": "2026-02-06",
+      "Signal Source": "HeadHunter",
+      "Owner": "Гугуев Василий Кондратьевич — 100%",
+      "CEO": "Гугуева Юлия Валерьевна",
+      "LPR": "Гугуева Юлия Валерьевна",
+      "LPR Role": "Директор / практический ЛПР",
+      "Primary Phone": "+7 (495) 968-98-48",
+      "Primary Email": "info@agrouprent.ru",
+      "HH Contact": "https://hh.ru/vacancy/130237091",
+      "Contact Form": "https://agrouprent.ru/",
+      "Contact Type": "Официальный корпоративный маршрут к директору/коммерческому контуру",
+      "Contact Source": "Официальный сайт A-Group + HeadHunter + актуальные реестровые данные",
+      "Consulting Hypothesis": "Систематизация B2B-продаж аренды строительного оборудования: сегментация клиентов и типов объектов, CRM-воронка и forecasting, KPI менеджеров, стандарты sales/client service, экономика загрузки парка и развитие филиальной модели.",
       "contacts": [
         {
-          "value": "info@netgrowthlab.ru",
-          "channel": "Email",
-          "type": "Corporate",
-          "source": "NetGrowthLab official site",
-          "url": "https://netgrowthlab.ru/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный email; использовать как маршрут передачи сообщения собственнику/коммерческому блоку."
-        },
-        {
-          "value": "https://hh.ru/employer/9065245",
-          "channel": "HH employer",
-          "type": "Direct employer route",
-          "source": "HeadHunter",
-          "url": "https://hh.ru/employer/9065245",
-          "is_lpr": false,
-          "notes": "Прямой профиль работодателя с актуальными коммерческими вакансиями."
-        },
-        {
-          "value": "https://netgrowthlab.ru/",
-          "channel": "Web form",
-          "type": "Corporate form",
-          "source": "NetGrowthLab official site",
-          "url": "https://netgrowthlab.ru/",
-          "is_lpr": false,
-          "notes": "Официальная форма обратной связи."
-        }
-      ],
-      "evidence": [
-        {
-          "type": "LEGAL",
-          "claim": "ООО «НЭТГРОУСЛАБ» действует; ИНН 5050155369, ОГРН 1225000056214; генеральный директор и собственник — Кольцов Кирилл Ильич.",
-          "url": "https://saby.ru/profile/5050155369-771001001",
-          "source": "Saby / ЕГРЮЛ"
-        },
-        {
-          "type": "SCALE",
-          "claim": "Выручка за 2025 год составляет 60,129 млн ₽; актуальный источник на данных ФНС указывает 10 сотрудников.",
-          "url": "https://www.testfirm.ru/result/5050155369_ooo-netgrouslab",
-          "source": "TestFirm / ФНС"
-        },
-        {
-          "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт NetGrowthLab в футере указывает правообладателем ООО «НЭТГРОУСЛАБ»; HH employer profile использует тот же бренд и сайт netgrowthlab.ru.",
-          "url": "https://netgrowthlab.ru/businessleads",
-          "source": "NetGrowthLab official site + HeadHunter"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "Актуальные HH-листинги 2026 показывают одновременный набор BDM/Sales для активного развития B2B-продаж, привлечения новых клиентов и роста компании.",
-          "url": "https://hh.ru/vacancies/menedzher-po-razvitiyu-biznesa-bdm/polniy_den",
-          "source": "HeadHunter current listings"
-        },
-        {
-          "type": "OWNER_LPR",
-          "claim": "Кольцов Кирилл Ильич — генеральный директор и единственный учредитель ООО «НЭТГРОУСЛАБ».",
-          "url": "https://saby.ru/profile/5050155369-771001001",
-          "source": "Saby / ЕГРЮЛ"
-        },
-        {
-          "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует info@netgrowthlab.ru и форму обратной связи; профиль работодателя HH является дополнительным прямым маршрутом к коммерческому контуру.",
-          "url": "https://netgrowthlab.ru/",
-          "source": "NetGrowthLab official site + HeadHunter"
-        }
-      ]
-    },
-    {
-      "Lead ID": "N5K-0293",
-      "Brand": "Газтехносервис",
-      "Legal Name": "ООО «ГАЗТЕХНОСЕРВИС»",
-      "INN": "9722051272",
-      "OGRN/OGRNIP": "1237700503677",
-      "Region": "Москва / Тюмень / Екатеринбург",
-      "City": "Москва",
-      "Segment": "Промышленное и газовое оборудование / сервис / B2B",
-      "Website": "https://gts72.ru/",
-      "Revenue/Scale": "Действующее частное ООО; официальный сайт в 2026 году указывает работу в нескольких городах и доверие более 100 крупных компаний; московское юрлицо связано с действующим B2B-сервисным контуром и официальными реквизитами.",
-      "Signal Level": "S2",
-      "Signal Summary": "В актуальной выдаче HeadHunter 2026 ООО «Газтехносервис» ищет руководителя отдела продаж с задачами развивать направление, повышать планы и эффективность, расширять активную клиентскую базу, выстраивать мотивацию и подбирать/обучать команду. Это текущий сигнал системного усиления B2B-продаж.",
-      "Signal Date": "Проверено 2026-08-17",
-      "Signal Source": "HeadHunter current listings",
-      "Owner": "Арешин Владимир Алексеевич 95%; Олизаревич Александра Владимировна 5%",
-      "CEO": "Арешин Владимир Алексеевич",
-      "LPR": "Арешин Владимир Алексеевич",
-      "LPR Role": "Генеральный директор / контролирующий собственник 95%",
-      "Primary Phone": "+7 (495) 999-77-05",
-      "Primary Email": "msk@gts72.ru",
-      "HH Contact": "https://hh.ru/vacancies/rukovoditel-otdela-prodazh-promyshlennoe-oborudovanie/polnaya_zanyatost",
-      "Contact Form": "https://gts72.ru/kontakty/",
-      "Contact Type": "Официальный корпоративный маршрут к CEO/отделу продаж",
-      "Contact Source": "Официальный сайт Газтехносервис + HeadHunter current listing",
-      "Consulting Hypothesis": "Пересборка B2B-sales системы сервисной компании: сегментация промышленных клиентов, планирование выручки, CRM-воронка, KPI и мотивация команды, рост активной клиентской базы и стандарты кросс-продаж по сервисным направлениям.",
-      "contacts": [
-        {
-          "value": "+7 (495) 999-77-05",
+          "value": "+7 (495) 968-98-48",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "Газтехносервис official site",
-          "url": "https://gts72.ru/kontakty/",
+          "source": "A-Group official site",
+          "url": "https://agrouprent.ru/",
           "is_lpr": false,
-          "notes": "Официальный московский корпоративный телефон."
+          "notes": "Официальный московский телефон A-Group."
         },
         {
-          "value": "msk@gts72.ru",
+          "value": "info@agrouprent.ru",
           "channel": "Email",
           "type": "Corporate",
-          "source": "Газтехносервис official site",
-          "url": "https://gts72.ru/kontakty/",
+          "source": "A-Group official site",
+          "url": "https://agrouprent.ru/",
           "is_lpr": false,
-          "notes": "Официальный московский корпоративный email."
+          "notes": "Официальный корпоративный email A-Group."
         },
         {
-          "value": "https://gts72.ru/kontakty/",
-          "channel": "Web form",
-          "type": "Corporate form",
-          "source": "Газтехносервис official site",
-          "url": "https://gts72.ru/kontakty/",
+          "value": "https://hh.ru/vacancy/130237091",
+          "channel": "HH vacancy",
+          "type": "Direct employer route",
+          "source": "HeadHunter",
+          "url": "https://hh.ru/vacancy/130237091",
           "is_lpr": false,
-          "notes": "Официальная форма заказа консультации."
+          "notes": "Прямая вакансия ООО А-Груп на руководителя отдела продаж."
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ГАЗТЕХНОСЕРВИС» действует; ИНН 9722051272, ОГРН 1237700503677; генеральный директор — Арешин Владимир Алексеевич.",
-          "url": "https://companies.rbc.ru/id/1237700503677-ooo-ooo-gaztehnoservis/",
-          "source": "РБК Компании / ЕГРЮЛ"
+          "claim": "ООО «А-ГРУП» действует; ИНН 7726452698, ОГРН 1197746313621; директор с 15.04.2025 — Гугуева Юлия Валерьевна; единственный учредитель — Гугуев Василий Кондратьевич.",
+          "url": "https://zachestnyibiznes.ru/company/ul/1197746313621_7726452698_OOO-A-GRUP",
+          "source": "ЗаЧестныйБизнес / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Официальный сайт в актуальной версии 2026 указывает работу компании в Москве, Тюмени и Екатеринбурге и доверие более 100 крупных компаний, что подтверждает операционный B2B-масштаб без опоры на устаревшую финансовую цифру.",
-          "url": "https://gts72.ru/o-kompanii/",
-          "source": "Газтехносервис official site"
+          "claim": "Выручка ООО «А-ГРУП» за 2025 год — 79,013 млн ₽; 9 сотрудников. Официальный сайт A-Group указывает 900 подъёмников в наличии и 3 филиала в России.",
+          "url": "https://agrouprent.ru/",
+          "source": "ЗаЧестныйБизнес / ФНС + A-Group official site"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт Газтехносервис публикует реквизиты московского ООО «Газтехносервис»: ИНН 9722051272, ОГРН 1237700503677, генеральный директор Арешин Владимир Алексеевич.",
-          "url": "https://gts72.ru/kontakty/",
-          "source": "Газтехносервис official site"
+          "claim": "Вакансия прямого работодателя ООО А-Груп размещена по адресу Дорожная ул. 3к2с1; реестровый адрес ООО «А-ГРУП» — Дорожная ул. 3/2 стр.1; официальный A-Group использует тот же московский объект и бренд A-Group, что подтверждает связку бренда с юрлицом.",
+          "url": "https://hh.ru/vacancy/130237091",
+          "source": "HeadHunter + A-Group official site + ЕГРЮЛ"
         },
         {
           "type": "SIGNAL",
-          "claim": "Актуальная HH-выдача 2026 показывает вакансию руководителя отдела продаж с задачами развивать направление, повышать планы и эффективность, расширять клиентскую базу и формировать команду.",
-          "url": "https://hh.ru/vacancies/rukovoditel-otdela-prodazh-promyshlennoe-oborudovanie/polnaya_zanyatost",
-          "source": "HeadHunter current listing"
+          "claim": "Вакансия руководителя отдела продаж от 06.02.2026 требует стратегии продаж, управления/обучения команды, поиска точек роста, работы с ключевыми клиентами и системной работы в 1С/Битрикс24.",
+          "url": "https://hh.ru/vacancy/130237091",
+          "source": "HeadHunter"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Арешин Владимир Алексеевич — генеральный директор и участник с долей 95%; является практическим ЛПР по коммерческой системе.",
-          "url": "https://companies.rbc.ru/amp/ogrn/1237700503677/",
-          "source": "РБК Компании / ЕГРЮЛ"
+          "claim": "Гугуев Василий Кондратьевич — единственный учредитель; Гугуева Юлия Валерьевна — действующий директор и практический ЛПР.",
+          "url": "https://zachestnyibiznes.ru/company/ul/1197746313621_7726452698_OOO-A-GRUP",
+          "source": "ЗаЧестныйБизнес / ЕГРЮЛ"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует московский телефон +7 (495) 999-77-05, email msk@gts72.ru и форму консультации.",
-          "url": "https://gts72.ru/kontakty/",
-          "source": "Газтехносервис official site"
+          "claim": "Официальный сайт A-Group публикует московский телефон +7 (495) 968-98-48, общий телефон 8 800 6000 141, email info@agrouprent.ru и форму обратного звонка; вакансия HH является дополнительным прямым маршрутом работодателя.",
+          "url": "https://agrouprent.ru/",
+          "source": "A-Group official site + HeadHunter"
         }
       ]
     }
