@@ -15,7 +15,7 @@
   "last_run_id": "N5K-20260817-273",
   "current_repair_run_id": null,
   "run_log_mode": "physical_canonical_master_plus_verified_run_history",
-  "note": "RUN N5K-20260817-272 physically verified: leads_master and contactable_master each contain 152 data rows plus header; integrity PASS; orphan contacts/evidence 0/0. Continue discovery from 152 without resetting.",
+  "note": "RUN N5K-20260817-273 physically verified: leads_master and contactable_master each contain 153 data rows plus header; integrity PASS; orphan contacts/evidence 0/0. Continue discovery from 153 without resetting.",
   "remaining": 4847,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
