@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0294,N5K-0294-C01,A-Group / А-Груп,7726452698,,Корпоративный маршрут,+7 (495) 968-98-48,Phone,Corporate,A-Group official site,https://agrouprent.ru/,NO,HIGH,2026-08-17,Официальный московский телефон A-Group.,N5K-20260817-270,new_5000
+N5K-0294,N5K-0294-C02,A-Group / А-Груп,7726452698,,Корпоративный маршрут,info@agrouprent.ru,Email,Corporate,A-Group official site,https://agrouprent.ru/,NO,HIGH,2026-08-17,Официальный корпоративный email A-Group.,N5K-20260817-270,new_5000
+N5K-0294,N5K-0294-C03,A-Group / А-Груп,7726452698,,Корпоративный маршрут,https://hh.ru/vacancy/130237091,HH vacancy,Direct employer route,HeadHunter,https://hh.ru/vacancy/130237091,NO,HIGH,2026-08-17,Прямая вакансия ООО А-Груп на руководителя отдела продаж.,N5K-20260817-270,new_5000
