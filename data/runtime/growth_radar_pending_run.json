@@ -1,111 +1,111 @@
 {
-  "run_id": "N5K-20260817-271",
-  "updated_at": "2026-08-17T06:16:00+03:00",
+  "run_id": "N5K-20260817-272",
+  "updated_at": "2026-08-17T06:57:15+03:00",
   "funnel": {
-    "discovered": 15,
+    "discovered": 32,
     "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 4,
-    "excluded": 10
+    "duplicates": 11,
+    "excluded": 20
   },
-  "notes": "Accelerated discovery continued from verified physical 150/150 baseline. Fifteen distinct company/employer signals were individually reviewed; no larger raw count is claimed. First integration candidate Flaconia Pro was rejected by the physical DEDUP_GUARD because INN 772880332527 is already present as N5K-0204; it is not counted again. Additional candidates with ambiguous brand-to-legal linkage or insufficient current scale were excluded. NetFlex Solution / ООО ТД РВД passed current legal status, scale, brand-to-legal, B2B growth signal, owner/LPR and official contact-route checks. Exact INN 7451300200 was not found in the currently fetched physical master; final physical dedup remains enforced by the integration workflow. No outreach.",
+  "notes": "Accelerated discovery continued from verified physical 151/151 baseline. Thirty-two distinct employer/company signals from multiple search queries were individually reviewed; no larger raw count is claimed. Eleven were known existing companies from the physical campaign history (including Марроб Рус, ГК Ангел, Chacha's Club, Hugency, Деметра, Flaconia Pro, BINAGroup, СОФТ АЛЬЯНС, ФЦБ-РЕГИОН, ФранчБрокер and СК Развитие) and were not re-added. Other candidates failed current legal/scale/brand-to-legal/signal gates; e.g. Клик Инвест has only 3 employees in current 2025 FNS-based data, Экотория has only 7.263m RUB 2025 revenue, Астрал-Софт exceeds the scale gate at 2.51bn RUB. ООО ОСМОКОД passed current legal status, 2025 revenue scale, direct new-product B2B/B2G sales-transformation signal, CEO/LPR and official contact-route checks. Exact INN 9729306650 and Lead ID N5K-0296 were not found by repo search; final physical dedup remains enforced by the integration workflow. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0295",
-      "Brand": "NetFlex Solution",
-      "Legal Name": "ООО ТД «РУКАВА ВЫСОКОГО ДАВЛЕНИЯ»",
-      "INN": "7451300200",
-      "OGRN/OGRNIP": "1107451006410",
-      "Region": "Челябинская область",
-      "City": "Челябинск",
-      "Segment": "Промышленное оборудование / гидравлика / РВД / B2B",
-      "Website": "https://tdrvd.ru/",
-      "Revenue/Scale": "Действующее частное ООО; 35 сотрудников по актуальным реестровым данным; официальный сайт подтверждает 4 офиса продаж и 4 склада (Челябинск, Миасс, Москва, Костанай), собственное производство и бренд NetFlex Solution; в 2025 предприятие привлекло 160 млн ₽ кредитных средств при господдержке.",
-      "Signal Level": "S2",
-      "Signal Summary": "Вакансии руководителя отдела продаж 2025–2026 по бренду NetFlex Solution требуют развития промышленного B2B-направления, стандартизации и контроля бизнес-процессов отдела продаж, управления командой, CRM/аналитики и роста продаж; бренд принадлежит ТД «Рукава высокого давления».",
-      "Signal Date": "2026-01-12",
-      "Signal Source": "HeadHunter / актуальные агрегаторы вакансий",
-      "Owner": "Мошкин Егор Геннадьевич; Фогель Надежда Сергеевна",
-      "CEO": "Мошкин Егор Геннадьевич — управляющий ИП",
-      "LPR": "Мошкин Егор Геннадьевич",
-      "LPR Role": "Управляющий / совладелец / практический ЛПР",
-      "Primary Phone": "8 (800) 550-66-17",
-      "Primary Email": "zakaz@tdrvd.ru",
-      "HH Contact": "https://hh.ru/search/vacancy?text=NetFlex%20Solution%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6",
-      "Contact Form": "https://tdrvd.ru/company/",
-      "Contact Type": "Официальный корпоративный маршрут к управляющему/коммерческому контуру",
-      "Contact Source": "Официальный сайт ТД РВД + актуальные реестровые данные + HeadHunter",
-      "Consulting Hypothesis": "Систематизация промышленного B2B-sales: сегментация отраслей и крупных клиентов, CRM-пайплайн и forecast, KPI удалённых/региональных команд, коммерческая аналитика по продуктам и филиалам, рост маржи и масштабирование бренда NetFlex Solution.",
+      "Lead ID": "N5K-0296",
+      "Brand": "Осмокод / OSMOCODE",
+      "Legal Name": "ООО «ОСМОКОД»",
+      "INN": "9729306650",
+      "OGRN/OGRNIP": "1217700146399",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "B2B/B2G IT / цифровизация строительства и ЖКХ",
+      "Website": "https://osmocode.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 415 844 000 ₽ за 2025 год. Актуальные открытые источники расходятся по ССЧ, поэтому size gate подтверждён выручкой, а не спорной численностью.",
+      "Signal Level": "S1",
+      "Signal Summary": "Компания запускает новое продуктовое направление и ищет руководителя продаж для Go-to-market, тестирования гипотез, доформирования команды, внедрения процессов продаж, пересборки текущей воронки, KPI/SLA, планов по лицензиям и выручке и масштабирования B2B/B2G-продаж до конца Q3 2026.",
+      "Signal Date": "2026-02-07",
+      "Signal Source": "HeadHunter",
+      "Owner": "Делюкин Сергей Николаевич; ООО «Полицифра»; Ананьина Анастасия Андреевна",
+      "CEO": "Михайлов Роман Викторович",
+      "LPR": "Михайлов Роман Викторович",
+      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Primary Phone": "+7 (812) 448-55-90",
+      "Primary Email": "ask@osmocode.ru",
+      "HH Contact": "https://spb.hh.ru/vacancy/129868812",
+      "Contact Form": "https://osmocode.ru/",
+      "Contact Type": "Официальный корпоративный маршрут к генеральному директору/коммерческому контуру",
+      "Contact Source": "Официальный сайт Осмокод + HeadHunter + актуальные реестровые данные",
+      "Consulting Hypothesis": "Диагностика и ускорение Go-to-market нового B2B/B2G-направления: сегментация рынка, пересборка pipeline и account-процессов, KPI/SLA и forecast, связка sales/product/GR, экономика лицензий и 90-дневный план масштабирования.",
       "contacts": [
         {
-          "value": "8 (800) 550-66-17",
+          "value": "+7 (812) 448-55-90",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "ООО ТД РВД official site",
-          "url": "https://tdrvd.ru/company/",
+          "source": "OSMOCODE official site",
+          "url": "https://osmocode.ru/",
           "is_lpr": false,
-          "notes": "Официальный телефон компании по России."
+          "notes": "Официальный телефон компании."
         },
         {
-          "value": "zakaz@tdrvd.ru",
+          "value": "ask@osmocode.ru",
           "channel": "Email",
           "type": "Corporate",
-          "source": "ООО ТД РВД official site",
-          "url": "https://tdrvd.ru/company/",
+          "source": "OSMOCODE official site",
+          "url": "https://osmocode.ru/",
           "is_lpr": false,
           "notes": "Официальный корпоративный email."
         },
         {
-          "value": "https://hh.ru/search/vacancy?text=NetFlex%20Solution%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6",
+          "value": "https://spb.hh.ru/vacancy/129868812",
           "channel": "HH employer/vacancy route",
           "type": "Direct employer route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/search/vacancy?text=NetFlex%20Solution%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6",
+          "url": "https://spb.hh.ru/vacancy/129868812",
           "is_lpr": false,
-          "notes": "Маршрут прямого работодателя по актуальным вакансиям NetFlex Solution."
+          "notes": "Прямой маршрут работодателя по вакансии руководителя отдела продаж."
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО ТД «Рукава высокого давления» действует; ИНН 7451300200, ОГРН 1107451006410; управляющий ИП — Мошкин Егор Геннадьевич; учредители — Мошкин Егор Геннадьевич и Фогель Надежда Сергеевна.",
-          "url": "https://companies.rbc.ru/amp/ogrn/1107451006410/",
+          "claim": "ООО «ОСМОКОД» действует; ИНН 9729306650, ОГРН 1217700146399; генеральный директор — Михайлов Роман Викторович.",
+          "url": "https://companies.rbc.ru/id/1217700146399-osmokod/",
           "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Актуальные реестровые данные показывают 35 сотрудников; официальный сайт подтверждает 4 офиса продаж и 4 склада, собственное производство и развитие с 2002 года; в декабре 2025 предприятие сообщало о 450+ инфраструктурных проектах и привлечении 160 млн ₽ кредитных средств при господдержке.",
-          "url": "https://tdrvd.ru/company/",
-          "source": "Официальный сайт + РБК Компании + МСП.РФ"
+          "claim": "Выручка ООО «ОСМОКОД» за 2025 год составила 415 844 000 ₽; size gate подтверждён актуальной финансовой отчётностью.",
+          "url": "https://companies.rbc.ru/id/1217700146399-osmokod/",
+          "source": "РБК Компании / бухгалтерская отчётность 2025"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт ООО ТД «РВД» прямо указывает NetFlex как собственный бренд и публикует реквизиты ИНН 7451300200, ОГРН 1107451006410; вакансии NetFlex Solution называют бренд компании ТД «Рукава высокого давления».",
-          "url": "https://tdrvd.ru/company/",
-          "source": "ООО ТД РВД official site + вакансии"
+          "claim": "Официальный сайт Осмокод прямо указывает ООО «ОСМОКОД», ИНН 9729306650 и официальный домен osmocode.ru.",
+          "url": "https://osmocode.ru/",
+          "source": "OSMOCODE official site"
         },
         {
           "type": "SIGNAL",
-          "claim": "Вакансии руководителя отдела продаж по NetFlex Solution в 2025–2026 требуют развития промышленного B2B, стандартизации и контроля бизнес-процессов отдела продаж, управления командой и CRM/аналитики.",
-          "url": "https://dreamjob.ru/employers/2982676/vakansii/128486824",
-          "source": "DreamJob / HeadHunter mirror"
+          "claim": "Вакансия руководителя отдела продаж от 07.02.2026 фиксирует запуск нового направления продуктов, Go-to-market, доформирование команды, внедрение процессов продаж, пересборку воронки, KPI/SLA и масштабирование процессов продаж до конца Q3 2026.",
+          "url": "https://spb.hh.ru/vacancy/129868812",
+          "source": "HeadHunter"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Мошкин Егор Геннадьевич является управляющим ИП и одним из учредителей ООО ТД «РВД», поэтому является практическим собственником/ЛПР для коммерческой трансформации.",
-          "url": "https://companies.rbc.ru/amp/ogrn/1107451006410/",
-          "source": "РБК Компании / ЕГРЮЛ"
+          "claim": "Генеральный директор Михайлов Роман Викторович является практическим ЛПР; вакансия предусматривает прямое взаимодействие руководителя продаж с генеральным директором и поддержку со стороны CEO и акционеров.",
+          "url": "https://spb.hh.ru/vacancy/129868812",
+          "source": "HeadHunter + РБК Компании"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт ООО ТД «РВД» публикует телефон 8 (800) 550-66-17 и email zakaz@tdrvd.ru; вакансии NetFlex Solution дают дополнительный маршрут прямого работодателя.",
-          "url": "https://tdrvd.ru/company/",
-          "source": "ООО ТД РВД official site + HeadHunter"
+          "claim": "Официальный сайт публикует телефон +7 (812) 448-55-90 и email ask@osmocode.ru; дополнительный прямой маршрут — вакансия работодателя HeadHunter.",
+          "url": "https://osmocode.ru/",
+          "source": "OSMOCODE official site + HeadHunter"
         }
       ]
     }
