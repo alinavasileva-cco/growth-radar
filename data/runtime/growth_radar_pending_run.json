@@ -1,71 +1,71 @@
 {
   "run_id": "N5K-20260817-284",
-  "updated_at": "2026-08-17T20:00:00+03:00",
+  "updated_at": "2026-08-17T20:05:00+03:00",
   "funnel": {
     "discovered": 100,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 1,
-    "duplicates": 0,
-    "excluded": 99
+    "duplicates": 1,
+    "excluded": 98
   },
-  "notes": "RUN 284: broad discovery screened 100 distinct raw employer/company signals from multiple independent search streams before deep-check. FAST GATE applied private-company/IP -> current scale -> pre-deep dedup -> probable S1-S3 signal. One candidate, Прометекс / ООО ПРОМЕТЕКС, passed all final gates using fresh 2025-2026 legal, scale, signal, LPR and official-contact evidence. Second pre-write repository search by INN 9725010958 / OGRN 1197746327954 / prometex.pro returned no existing match; the physical integration guard remains authoritative. Other raw signals were excluded at fast/size/legal stages, including candidates with current headcount below gate, scale materially above the active profile, ambiguous brand-to-legal linkage, or conflicting current identifiers. No outreach.",
+  "notes": "RUN 284: broad discovery screened 100 distinct raw employer/company signals across several search streams. FAST GATE preceded deep-check. Прометекс / ИНН 9725010958 initially passed content gates but the authoritative physical integration guard returned DEDUP_GUARD_FAILED, so it was removed and counted as a duplicate. ХОПЁР СТАЛЬ / ООО ХОПЁР СТАЛЬ then passed fresh legal/scale/signal/LPR/contact checks and a repository pre-write search; the physical integration guard remains authoritative. Current 2025-2026 evidence used only: 2025 revenue, current legal status/owner-director, January 2026 expansion hiring, and current official-site evidence of own production plus 400 enterprise customers / 700+ contracts. No outreach.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0315",
-      "Brand": "Прометекс / Prometex",
-      "Legal Name": "ООО «ПРОМЕТЕКС»",
-      "INN": "9725010958",
-      "OGRN/OGRNIP": "1197746327954",
+      "Brand": "ХОПЁР СТАЛЬ / Khoper Steel",
+      "Legal Name": "ООО «ХОПЁР СТАЛЬ»",
+      "INN": "9723221390",
+      "OGRN/OGRNIP": "1247700051026",
       "Region": "Москва",
       "City": "Москва",
-      "Segment": "B2B промышленное оборудование / компрессорное и пневматическое оборудование",
-      "Website": "https://prometex.pro/",
-      "Revenue/Scale": "Действующее частное ООО; выручка около 594 972 000 ₽ за 2025 год; 7 сотрудников по свежим данным 2025 года; официальный сайт подтверждает собственный B2B-контур поставок промышленного оборудования.",
-      "Signal Level": "S1",
-      "Signal Summary": "Актуальная вакансия руководителя отдела продаж ставит задачу построить эффективную удалённую sales-команду под ключ, запустить новое направление и выстроить процессы продаж с нуля; дополнительная вакансия января 2026 подтверждает активное усиление коммерческого блока.",
-      "Signal Date": "2026-01-23",
-      "Signal Source": "https://hh.ru/vacancy/129787764",
-      "Owner": "Жестков Артем Александрович — 100%",
-      "CEO": "Жестков Артем Александрович",
-      "LPR": "Жестков Артем Александрович",
-      "LPR Role": "Собственник 100% и генеральный директор",
-      "Primary Phone": "+7 (495) 323-53-30",
-      "Primary Email": "zakaz@prometex.pro",
-      "HH Contact": "https://hh.ru/vacancy/129787764",
-      "Contact Form": "https://prometex.pro/contacts/",
+      "Segment": "B2B металлопрокат / промышленное и строительное снабжение",
+      "Website": "https://khoper.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 434 759 000 ₽ за 2025 год; официальный контур 2026 сообщает о 10 000+ тонн поставленного металлопроката для 400 предприятий, 700+ коммерческих и государственных контрактах и запуске собственного производства деталей трубопровода.",
+      "Signal Level": "S2",
+      "Signal Summary": "Два согласованных сигнала роста: в январе 2026 компания расширяла B2B-sales команду на фоне роста рынка/импортозамещения, а актуальный официальный сайт фиксирует уже запущенное собственное производство и масштабирование поставок/контрактов. Это создаёт запрос на систематизацию коммерческого контура, повторные продажи, CRM и управление ростом.",
+      "Signal Date": "2026-01-26",
+      "Signal Source": "https://hh.ru/vacancy/129873624",
+      "Owner": "Гулакян Нарек Кароевич — 100%",
+      "CEO": "Гулакян Нарек Кароевич",
+      "LPR": "Гулакян Нарек Кароевич",
+      "LPR Role": "Собственник 100% и директор",
+      "Primary Phone": "+7 (499) 325-37-75",
+      "Primary Email": "zakaz@khoper.ru",
+      "HH Contact": "https://hh.ru/vacancy/129873624",
+      "Contact Form": "https://khoper.ru/kontakty/",
       "Contact Type": "Corporate Phone; Email; HH employer route; Website",
-      "Contact Source": "Официальный сайт Prometex; HeadHunter; свежие реестровые источники",
-      "Consulting Hypothesis": "Построение управляемой B2B-sales системы: сегментация промышленных клиентов, CRM-воронка, KPI и прогнозирование, экономика каналов и маржинальности, стандарты удалённой команды и 90-дневный запуск нового направления.",
+      "Contact Source": "Официальный сайт Хопёр Сталь; HeadHunter; актуальные реестровые/финансовые источники",
+      "Consulting Hypothesis": "Систематизация B2B-продаж на этапе расширения: сегментация строительных и промышленных клиентов, повторные/кросс-продажи, CRM-воронка и KPI, маржинальность по продуктам/каналам, интеграция нового производственного направления и 90-дневный план роста.",
       "contacts": [
         {
-          "value": "+7 (495) 323-53-30",
+          "value": "+7 (499) 325-37-75",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "Prometex official contacts",
-          "url": "https://prometex.pro/contacts/",
+          "source": "Хопёр Сталь official contacts",
+          "url": "https://khoper.ru/kontakty/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный телефон; маршрут с просьбой передать сообщение собственнику/генеральному директору."
+          "notes": "Официальный корпоративный телефон; маршрут с просьбой передать сообщение собственнику/директору."
         },
         {
-          "value": "zakaz@prometex.pro",
+          "value": "zakaz@khoper.ru",
           "channel": "Email",
           "type": "Corporate",
-          "source": "Prometex official contacts",
-          "url": "https://prometex.pro/contacts/",
+          "source": "Хопёр Сталь official contacts",
+          "url": "https://khoper.ru/kontakty/",
           "is_lpr": false,
           "notes": "Официальный корпоративный email."
         },
         {
-          "value": "https://hh.ru/vacancy/129787764",
+          "value": "https://hh.ru/vacancy/129873624",
           "channel": "HH",
           "type": "Employer Route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/129787764",
+          "url": "https://hh.ru/vacancy/129873624",
           "is_lpr": false,
           "notes": "Маршрут через вакансию работодателя; outreach не выполнялся."
         }
@@ -73,33 +73,33 @@
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ПРОМЕТЕКС», ИНН 9725010958, ОГРН 1197746327954, действует; генеральный директор и 100% собственник — Жестков Артем Александрович.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1197746327954/",
-          "source": "Т-Банк Бизнес / ЕГРЮЛ"
+          "claim": "ООО «ХОПЁР СТАЛЬ», ИНН 9723221390, ОГРН 1247700051026, действует; директор и единственный учредитель — Гулакян Нарек Кароевич.",
+          "url": "https://companies.rbc.ru/id/1247700051026-ooo-ooo-hopyor-stal/",
+          "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "По свежим данным за 2025 год выручка ООО «ПРОМЕТЕКС» составляет около 594 972 000 ₽; численность — 7 сотрудников.",
-          "url": "https://firmoteka.ru/company/9725010958",
-          "source": "Firmoteka / бухгалтерская и реестровая отчётность"
+          "claim": "За 2025 год выручка ООО «ХОПЁР СТАЛЬ» составляет 434 759 000 ₽; официальный сайт 2026 фиксирует 10 000+ тонн поставок, 400 предприятий и 700+ контрактов.",
+          "url": "https://saby.ru/profile/9723221390-772301001",
+          "source": "Saby / бухгалтерская отчётность + официальный сайт"
         },
         {
           "type": "SIGNAL",
-          "claim": "Вакансия руководителя отдела продаж требует построить удалённую sales-команду под ключ, запустить новое направление и выстроить процессы продаж с нуля.",
-          "url": "https://hh.ru/vacancy/129787764",
-          "source": "HeadHunter"
+          "claim": "В январе 2026 компания расширяла B2B sales-команду в связи с ростом, а текущий официальный сайт сообщает о запуске собственного производства деталей трубопровода и расширении коммерческого контура.",
+          "url": "https://hh.ru/vacancy/129873624",
+          "source": "HeadHunter + официальный сайт"
         },
         {
           "type": "LPR",
-          "claim": "Жестков Артем Александрович — генеральный директор и 100% учредитель ООО «ПРОМЕТЕКС».",
-          "url": "https://www.tbank.ru/business/contractor/legal/1197746327954/",
-          "source": "Т-Банк Бизнес / ЕГРЮЛ"
+          "claim": "Гулакян Нарек Кароевич — директор и 100% учредитель ООО «ХОПЁР СТАЛЬ».",
+          "url": "https://companies.rbc.ru/id/1247700051026-ooo-ooo-hopyor-stal/",
+          "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "BRAND_CONTACT",
-          "claim": "Официальный сайт Prometex публикует ООО «ПРОМЕТЕКС», ИНН 9725010958, ОГРН 1197746327954, телефон +7 (495) 323-53-30 и email zakaz@prometex.pro.",
-          "url": "https://prometex.pro/contacts/",
-          "source": "Официальный сайт Prometex"
+          "claim": "Официальный сайт Хопёр Сталь публикует ООО «ХОПЁР СТАЛЬ», ИНН 9723221390, ОГРН 1247700051026, телефон +7 (499) 325-37-75 и email zakaz@khoper.ru.",
+          "url": "https://khoper.ru/o-kompanii/rekvizity/",
+          "source": "Официальный сайт Хопёр Сталь"
         }
       ]
     }
