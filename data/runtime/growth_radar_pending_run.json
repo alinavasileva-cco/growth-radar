@@ -1,93 +1,111 @@
 {
-  "run_id": "N5K-20260817-267",
-  "updated_at": "2026-08-17T02:04:26+03:00",
+  "run_id": "N5K-20260817-268",
+  "updated_at": "2026-08-17T03:03:15+03:00",
   "funnel": {
-    "discovered": 24,
+    "discovered": 20,
     "fast_gate_passed": 6,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 8,
+    "duplicates": 4,
     "excluded": 15
   },
-  "notes": "Accelerated multi-source discovery continued from verified physical 145/145 baseline. Twenty-four distinct company/employer signals were individually reviewed; no larger raw count is claimed. Eight were confirmed or strongly indicated existing-master duplicates. Stale scale records were not used for qualification. Candidates with recruiting-intermediary status, fresh staff count below the gate, scale above the canonical profile, or unresolved brand-to-legal links were excluded. Союз Девелоперов Москвы passed because current 2026 HeadHunter postings explicitly state that IP Lukyanov Nikita Vladimirovich operates under the brand, Domclick independently confirms the same brand, proprietor and INN, the agency has an active team/transactions footprint, Nikita Lukyanov is identified as head/owner, and the direct employer HH vacancy is a practical contact route. The current brand website has a different legal operator in its footer, therefore its phone/email were not used as the contact route or legal-match evidence. No outreach.",
+  "notes": "Accelerated multi-source discovery continued from verified physical 146/146 baseline. Twenty distinct employer/company signal records were individually reviewed; no larger raw count is claimed. Four strong signals were already-known physical-master duplicates and were not re-added. Recruiting intermediaries, unresolved brand-to-legal identities, scale outside the canonical gate, and candidates with insufficient current scale evidence were excluded before deep analysis. UPMARKET / ООО Кастомер ОПТ passed all gates using current 2025-2026 data: active private legal entity, 2025 revenue 193.95m RUB, official operating site states 120+ employees and 1m+ units handled monthly, fresh 2026 HeadHunter vacancy explicitly requires rebuilding B2B sales strategy/funnel and creating a profitable sales direction, CEO Oleg Nevorotov is identified in current legal/business registry data, and the official site publishes a practical phone/email route. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0290",
-      "Brand": "Союз Девелоперов Москвы",
-      "Legal Name": "ИП Лукьянов Никита Владимирович",
-      "INN": "341003103169",
-      "OGRN/OGRNIP": "317344300115539",
-      "Region": "Москва / Удмуртская Республика",
-      "City": "Москва",
-      "Segment": "Недвижимость / агентство новостроек бизнес- и премиум-класса",
-      "Website": "https://sdm-moscow.ru/",
-      "Revenue/Scale": "Действующий ИП; Domclick подтверждает агентство Союз Девелоперов Москвы под ИНН 341003103169, несколько публичных агентов и сделки за последние 12 месяцев; текущий сайт бренда показывает офис и команду в Москва-Сити. Финансовая выручка ИП не использовалась для решения.",
+      "Lead ID": "N5K-0291",
+      "Brand": "UPMARKET",
+      "Legal Name": "ООО «КАСТОМЕР ОПТ»",
+      "INN": "7811646239",
+      "OGRN/OGRNIP": "1177847141845",
+      "Region": "Санкт-Петербург / Москва",
+      "City": "Санкт-Петербург / Подольск",
+      "Segment": "Фулфилмент / складская логистика / B2B e-commerce",
+      "Website": "https://www.upmarket.cc/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 193,95 млн ₽ за 2025 год; официальный сайт UPMARKET указывает 120+ сотрудников, более 1 млн обрабатываемых единиц в месяц и складской контур федерального масштаба.",
       "Signal Level": "S1",
-      "Signal Summary": "В январе 2026 бренд нанимал руководителя группы/отдела продаж с прямой задачей построить эффективный отдел продаж с нуля, управлять воронкой и улучшать процессы; в вакансии прямо указано, что ИП Лукьянов Никита Владимирович работает под брендом Союз Девелоперов Москвы.",
-      "Signal Date": "2026-01-28",
+      "Signal Summary": "6 февраля 2026 UPMARKET открыл вакансию руководителя B2B-продаж с миссией создать и возглавить прибыльное направление, пересобрать стратегию и воронку, собрать команду и стать драйвером роста компании.",
+      "Signal Date": "2026-02-06",
       "Signal Source": "HeadHunter",
-      "Owner": "Лукьянов Никита Владимирович — индивидуальный предприниматель",
-      "CEO": "Лукьянов Никита Владимирович",
-      "LPR": "Лукьянов Никита Владимирович",
-      "LPR Role": "ИП / руководитель агентства / собственник",
-      "Primary Phone": "",
-      "Primary Email": "",
-      "HH Contact": "https://hh.ru/vacancy/129952615",
-      "Contact Form": "",
-      "Contact Type": "Прямой маршрут работодателя через HeadHunter к собственнику/руководителю агентства",
-      "Contact Source": "HeadHunter; Domclick; РБК Компании/ЕГРИП",
-      "Consulting Hypothesis": "Систематизация продаж новостроек бизнес- и премиум-класса: структура отдела, CRM-воронка, KPI и конверсии, стандарты работы агентов, партнёрские каналы с девелоперами и 90-дневная программа масштабирования.",
+      "Owner": "Частные участники: Неворотов Олег Алексеевич, Хурцилава Владимир Владимирович, Вощинский Михаил Петрович, Родин Кирилл Константинович; также ООО «ОКС ГРУП»",
+      "CEO": "Неворотов Олег Алексеевич",
+      "LPR": "Неворотов Олег Алексеевич",
+      "LPR Role": "Генеральный директор / совладелец",
+      "Primary Phone": "8 (800) 200-70-95",
+      "Primary Email": "sales@upmarket.cc",
+      "HH Contact": "https://hh.ru/vacancy/130246761",
+      "Contact Form": "https://www.upmarket.cc/",
+      "Contact Type": "Официальный корпоративный маршрут к CEO/коммерческому контуру",
+      "Contact Source": "Официальный сайт UPMARKET + HeadHunter + актуальные реестровые данные 2026",
+      "Consulting Hypothesis": "Пересборка B2B-sales системы фулфилмент-оператора: сегментация ICP, unit-экономика и маржинальность каналов, CRM-воронка и forecasting, KPI команды, стандарты крупных сделок и управляемое масштабирование прибыльного направления.",
       "contacts": [
         {
-          "value": "https://hh.ru/vacancy/129952615",
+          "value": "8 (800) 200-70-95",
+          "channel": "Phone",
+          "type": "Corporate",
+          "source": "UPMARKET official site",
+          "url": "https://www.upmarket.cc/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный телефон; использовать как маршрут передачи сообщения генеральному директору/коммерческому блоку."
+        },
+        {
+          "value": "sales@upmarket.cc",
+          "channel": "Email",
+          "type": "Corporate sales",
+          "source": "UPMARKET official site",
+          "url": "https://www.upmarket.cc/",
+          "is_lpr": false,
+          "notes": "Официальный email продаж; корпоративный маршрут, не личный email ЛПР."
+        },
+        {
+          "value": "https://hh.ru/vacancy/130246761",
           "channel": "HH vacancy",
           "type": "Direct employer route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/129952615",
+          "url": "https://hh.ru/vacancy/130246761",
           "is_lpr": false,
-          "notes": "Прямая вакансия бренда; в тексте явно указано, что ИП Лукьянов Никита Владимирович работает под брендом Союз Девелоперов Москвы. Используется как корпоративный маршрут передачи сообщения ЛПР."
+          "notes": "Прямая вакансия работодателя UPMARKET; дополнительный практический маршрут к коммерческому контуру."
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ИП Лукьянов Никита Владимирович действует; ИНН 341003103169, ОГРНИП 317344300115539.",
-          "url": "https://companies.rbc.ru/persons/ogrnip/317344300115539-lukyanov-nikita-vladimirovich/",
-          "source": "РБК Компании / ЕГРИП"
+          "claim": "ООО «КАСТОМЕР ОПТ» действует; ИНН 7811646239, ОГРН 1177847141845.",
+          "url": "https://saby.ru/profile/7811646239-781101001",
+          "source": "Saby / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Domclick подтверждает действующее агентство Союз Девелоперов Москвы под ИНН 341003103169, публичную команду агентов и сделки за последние 12 месяцев; текущий сайт бренда показывает отдельную команду и офис в Москва-Сити. Устаревшая финансовая отчётность не использовалась.",
-          "url": "https://domclick.ru/agentstvo/341003103169",
-          "source": "Domclick"
+          "claim": "За 2025 год выручка ООО «КАСТОМЕР ОПТ» составляет 193,95 млн ₽; официальный сайт UPMARKET указывает 120+ сотрудников и более 1 млн обрабатываемых единиц в месяц.",
+          "url": "https://www.upmarket.cc/",
+          "source": "UPMARKET official site + Saby/T-Bank"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "HeadHunter в вакансии 2026 года прямо указывает: ИП Лукьянов Никита Владимирович работает под брендом Союз Девелоперов Москвы; Domclick независимо связывает тот же бренд с ИНН 341003103169.",
-          "url": "https://hh.ru/vacancy/129952615",
-          "source": "HeadHunter + Domclick"
+          "claim": "Официальный сайт upmarket.cc указывает оператором ООО «Кастомер ОПТ»; отраслевые публикации также маркируют рекламу UPMARKET ИНН 7811646239.",
+          "url": "https://www.upmarket.cc/",
+          "source": "UPMARKET official site + Oborot.ru"
         },
         {
           "type": "SIGNAL",
-          "claim": "В январе 2026 компании требовался руководитель продаж для построения эффективного отдела с нуля, управления воронкой и улучшения процессов продаж.",
-          "url": "https://hh.ru/vacancy/129952615",
+          "claim": "Вакансия от 6 февраля 2026 требует создать и возглавить прибыльное B2B-направление, пересобрать стратегию и воронку продаж, собрать команду и масштабировать бизнес.",
+          "url": "https://hh.ru/vacancy/130246761",
           "source": "HeadHunter"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Никита Лукьянов — индивидуальный предприниматель и руководитель агентства; Domclick указывает его как руководителя Союза Девелоперов Москвы.",
-          "url": "https://domclick.ru/agent/341003103169",
-          "source": "Domclick + ЕГРИП"
+          "claim": "Неворотов Олег Алексеевич — генеральный директор ООО «Кастомер ОПТ» и один из частных участников компании.",
+          "url": "https://saby.ru/profile/7811646239-781101001",
+          "source": "Saby / ЕГРЮЛ"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Прямая вакансия работодателя на HeadHunter является практическим корпоративным маршрутом связи. Контакты текущего сайта бренда не использованы из-за другого юрлица в футере.",
-          "url": "https://hh.ru/vacancy/129952615",
-          "source": "HeadHunter"
+          "claim": "Официальный сайт UPMARKET публикует телефон 8 (800) 200-70-95, email sales@upmarket.cc и форму заявки; прямая вакансия работодателя HH является дополнительным маршрутом.",
+          "url": "https://www.upmarket.cc/",
+          "source": "UPMARKET official site + HeadHunter"
         }
       ]
     }
