@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Status,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Outreach Sent,Notes
+N5K-20260817-287,new_5000,COMPLETED,54,1,1,1,1,1,1,0,53,175,175,PASS,0,0,0,"RUN 287: staged candidate Italsport+ passed current legal, scale, S1 signal, LPR, contact-route and pre-write dedup checks. Existing baseline before integration 174/174. No outreach."

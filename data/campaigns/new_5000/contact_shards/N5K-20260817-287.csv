@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0319,N5K-0319-C01,Италспорт+ / Italsport+,9718110180,,Корпоративный маршрут,+7 (495) 995-06-90,Phone,Corporate,Italsport official site,https://www.italsport.ru/actions/,NO,HIGH,2026-08-17,Официальный телефон компании,N5K-20260817-287,new_5000
+N5K-0319,N5K-0319-C02,Италспорт+ / Italsport+,9718110180,,Корпоративный маршрут,info@italsport.ru,Email,Corporate,Italsport official site,https://www.italsport.ru/actions/,NO,HIGH,2026-08-17,Официальный корпоративный email,N5K-20260817-287,new_5000
+N5K-0319,N5K-0319-C03,Италспорт+ / Italsport+,9718110180,,Корпоративный маршрут,https://hh.ru/vacancy/129478793,HH,Direct employer route,HeadHunter,https://hh.ru/vacancy/129478793,NO,HIGH,2026-08-17,Прямая вакансия коммерческого директора,N5K-20260817-287,new_5000
