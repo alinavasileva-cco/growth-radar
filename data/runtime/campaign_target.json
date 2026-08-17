@@ -6,17 +6,17 @@
   "current_contactable_count": 159,
   "progress_added": 159,
   "remaining_to_total_target": 4841,
-  "qualified_staged_not_counted": 3,
+  "remaining": 4841,
+  "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-17T13:05:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-276",
+  "last_completed_run_id": "N5K-20260817-277",
   "current_run_id": "N5K-20260817-277",
+  "last_run_id": "N5K-20260817-277",
+  "latest_completed_run": "N5K-20260817-277",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 277 has three fully qualified new cards staged, but they are not counted until physical merge into leads_master.csv and contactable_master.csv.",
-  "remaining": 4841,
-  "last_run_id": "N5K-20260817-277",
-  "latest_completed_run": "N5K-20260817-277"
+  "note": "RUN 277 completed: 100 raw discovered; 3 fully qualified companies physically integrated; canonical/contactable 159/159; integrity PASS; orphan 0/0; outreach 0."
 }
