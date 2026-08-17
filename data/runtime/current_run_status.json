@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260817-267",
+  "run_id": "N5K-20260817-268",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T02:04:26+03:00",
+  "updated_at": "2026-08-17T03:03:15+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 146,
-    "current_contactable_count": 146,
-    "progress_added": 146,
-    "remaining": 4854
+    "current_canonical_count": 147,
+    "current_contactable_count": 147,
+    "progress_added": 147,
+    "remaining": 4853
   },
   "funnel": {
-    "discovered": 24,
+    "discovered": 20,
     "fast_gate_passed": 6,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 8,
+    "duplicates": 4,
     "excluded": 15
   },
   "qualified_companies": [
-    "Союз Девелоперов Москвы"
+    "UPMARKET"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "146_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "146_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "147_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "147_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
