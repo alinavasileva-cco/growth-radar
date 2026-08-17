@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-17T22:01:30+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-285",
-  "current_run_id": "N5K-20260817-285",
+  "last_completed_run_id": "N5K-20260817-286",
+  "current_run_id": "N5K-20260817-286",
   "last_run_id": "N5K-20260817-286",
   "latest_completed_run": "N5K-20260817-286",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 285 completed: 100 distinct raw employer/company signals screened with FAST GATE before deep-check; 1 unique fully qualified company physically integrated — ReAspekt / ООО РЕАСПЕКТ, INN 1661018256; canonical/contactable 172/172; integrity PASS; orphan 0/0; outreach 0. Only current 2025-2026 evidence was used for qualification."
+  "note": "RUN 286 completed: 100 distinct raw employer/company signals screened with FAST GATE before deep-check; 2 unique fully qualified companies physically integrated — Blue Sleep / ООО БЛУ СЛИП, INN 9718075520; BrandMonitor / ООО БРЕНД МОНИТОР, INN 7701405022; canonical/contactable 174/174; integrity PASS; orphan 0/0; outreach 0. Only current 2025-2026 evidence was used for qualification."
 }
