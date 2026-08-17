@@ -1,112 +1,58 @@
 {
-  "run_id": "N5K-20260817-272",
-  "updated_at": "2026-08-17T06:57:15+03:00",
+  "run_id": "N5K-20260817-273",
+  "updated_at": "2026-08-17T08:01:19+03:00",
   "funnel": {
-    "discovered": 32,
-    "fast_gate_passed": 6,
-    "size_check_passed": 1,
+    "discovered": 34,
+    "fast_gate_passed": 8,
+    "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 11,
-    "excluded": 20
+    "duplicates": 18,
+    "excluded": 15
   },
-  "notes": "Accelerated discovery continued from verified physical 151/151 baseline. Thirty-two distinct employer/company signals from multiple search queries were individually reviewed; no larger raw count is claimed. Eleven were known existing companies from the physical campaign history (including Марроб Рус, ГК Ангел, Chacha's Club, Hugency, Деметра, Flaconia Pro, BINAGroup, СОФТ АЛЬЯНС, ФЦБ-РЕГИОН, ФранчБрокер and СК Развитие) and were not re-added. Other candidates failed current legal/scale/brand-to-legal/signal gates; e.g. Клик Инвест has only 3 employees in current 2025 FNS-based data, Экотория has only 7.263m RUB 2025 revenue, Астрал-Софт exceeds the scale gate at 2.51bn RUB. ООО ОСМОКОД passed current legal status, 2025 revenue scale, direct new-product B2B/B2G sales-transformation signal, CEO/LPR and official contact-route checks. Exact INN 9729306650 and Lead ID N5K-0296 were not found by repo search; final physical dedup remains enforced by the integration workflow. No outreach.",
+  "notes": "Accelerated discovery continued from verified physical 152/152 baseline. Thirty-four distinct employer/company signals were individually reviewed across multiple vacancy searches and supporting company/legal/official-site checks; no larger raw count is claimed. Eighteen were existing physical-master companies or resolved to an already stored employer/legal entity and were not re-added. Other candidates failed current fast/deep gates: recruitment intermediaries were excluded; AI Auto, SmartFurniture, АН Лейк and ПАРадокс had promising commercial signals but their exact current legal entity/INN was not reliably confirmed; MAKOMA IMPORTS / ООО ВЕГА had a strong sales-system signal and suitable revenue but fresh 2025 data showed only 3 employees, below the current size gate. ООО «ВЕНТАТЕХ-И» / AVITEK Engineering passed active-legal, 2025 scale, current B2B sales-system signal, owner/CEO/LPR and official contact-route checks. Exact INN 7716794452 was absent from the physically read master and repo search; final physical dedup is enforced again by the integration workflow. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0296",
-      "Brand": "Осмокод / OSMOCODE",
-      "Legal Name": "ООО «ОСМОКОД»",
-      "INN": "9729306650",
-      "OGRN/OGRNIP": "1217700146399",
+      "Lead ID": "N5K-0297",
+      "Brand": "Вентатех-И / AVITEK Engineering",
+      "Legal Name": "ООО «ВЕНТАТЕХ-И»",
+      "INN": "7716794452",
+      "OGRN/OGRNIP": "1157746443007",
       "Region": "Москва",
       "City": "Москва",
-      "Segment": "B2B/B2G IT / цифровизация строительства и ЖКХ",
-      "Website": "https://osmocode.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 415 844 000 ₽ за 2025 год. Актуальные открытые источники расходятся по ССЧ, поэтому size gate подтверждён выручкой, а не спорной численностью.",
-      "Signal Level": "S1",
-      "Signal Summary": "Компания запускает новое продуктовое направление и ищет руководителя продаж для Go-to-market, тестирования гипотез, доформирования команды, внедрения процессов продаж, пересборки текущей воронки, KPI/SLA, планов по лицензиям и выручке и масштабирования B2B/B2G-продаж до конца Q3 2026.",
-      "Signal Date": "2026-02-07",
-      "Signal Source": "HeadHunter",
-      "Owner": "Делюкин Сергей Николаевич; ООО «Полицифра»; Ананьина Анастасия Андреевна",
-      "CEO": "Михайлов Роман Викторович",
-      "LPR": "Михайлов Роман Викторович",
+      "Segment": "Инженерные системы / HVAC / B2B строительство",
+      "Website": "https://avitekengineering.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 402,28 млн ₽ за 2025 год; 113 сотрудников по актуальным данным ФНС/реестрового агрегатора за 2025 год.",
+      "Signal Level": "S2",
+      "Signal Summary": "27 января 2026 компания открыла руководителя отдела продаж инженерных систем; в задачи входят формирование и развитие отдела продаж, мотивация и развитие сотрудников и выполнение планов продаж. Это текущий сигнал систематизации и усиления B2B-коммерческой функции.",
+      "Signal Date": "2026-01-27",
+      "Signal Source": "https://hh.ru/vacancy/129311986",
+      "Owner": "Ганжуров Олег Анатольевич — 100%",
+      "CEO": "Ракитин Алексей Валериевич",
+      "LPR": "Ракитин Алексей Валериевич",
       "LPR Role": "Генеральный директор / практический ЛПР",
-      "Primary Phone": "+7 (812) 448-55-90",
-      "Primary Email": "ask@osmocode.ru",
-      "HH Contact": "https://spb.hh.ru/vacancy/129868812",
-      "Contact Form": "https://osmocode.ru/",
+      "Primary Phone": "+7 (495) 139-60-40",
+      "Primary Email": "info@avitekengineering.ru",
+      "HH Contact": "https://hh.ru/vacancy/129311986",
+      "Contact Form": "https://avitekengineering.ru/",
       "Contact Type": "Официальный корпоративный маршрут к генеральному директору/коммерческому контуру",
-      "Contact Source": "Официальный сайт Осмокод + HeadHunter + актуальные реестровые данные",
-      "Consulting Hypothesis": "Диагностика и ускорение Go-to-market нового B2B/B2G-направления: сегментация рынка, пересборка pipeline и account-процессов, KPI/SLA и forecast, связка sales/product/GR, экономика лицензий и 90-дневный план масштабирования.",
+      "Contact Source": "Официальный сайт AVITEK Engineering + HeadHunter + актуальные реестровые данные",
+      "Consulting Hypothesis": "Систематизация B2B-продаж инженерных систем: сегментация застройщиков, генподрядчиков и проектировщиков, CRM-воронка, KPI и мотивация, pipeline проектных продаж, forecasting и 90-дневный план роста.",
       "contacts": [
-        {
-          "value": "+7 (812) 448-55-90",
-          "channel": "Phone",
-          "type": "Corporate",
-          "source": "OSMOCODE official site",
-          "url": "https://osmocode.ru/",
-          "is_lpr": false,
-          "notes": "Официальный телефон компании."
-        },
-        {
-          "value": "ask@osmocode.ru",
-          "channel": "Email",
-          "type": "Corporate",
-          "source": "OSMOCODE official site",
-          "url": "https://osmocode.ru/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный email."
-        },
-        {
-          "value": "https://spb.hh.ru/vacancy/129868812",
-          "channel": "HH employer/vacancy route",
-          "type": "Direct employer route",
-          "source": "HeadHunter",
-          "url": "https://spb.hh.ru/vacancy/129868812",
-          "is_lpr": false,
-          "notes": "Прямой маршрут работодателя по вакансии руководителя отдела продаж."
-        }
+        {"value": "+7 (495) 139-60-40", "channel": "Phone", "type": "Corporate", "source": "AVITEK Engineering official site", "url": "https://avitekengineering.ru/about/requisites/", "is_lpr": false, "notes": "Официальный телефон ООО «ВЕНТАТЕХ-И»."},
+        {"value": "info@avitekengineering.ru", "channel": "Email", "type": "Corporate", "source": "AVITEK Engineering official site", "url": "https://avitekengineering.ru/about/requisites/", "is_lpr": false, "notes": "Официальный корпоративный email."},
+        {"value": "https://hh.ru/vacancy/129311986", "channel": "HH employer/vacancy route", "type": "Direct employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129311986", "is_lpr": false, "notes": "Прямой маршрут работодателя по вакансии руководителя отдела продаж."}
       ],
       "evidence": [
-        {
-          "type": "LEGAL",
-          "claim": "ООО «ОСМОКОД» действует; ИНН 9729306650, ОГРН 1217700146399; генеральный директор — Михайлов Роман Викторович.",
-          "url": "https://companies.rbc.ru/id/1217700146399-osmokod/",
-          "source": "РБК Компании / ЕГРЮЛ"
-        },
-        {
-          "type": "SCALE",
-          "claim": "Выручка ООО «ОСМОКОД» за 2025 год составила 415 844 000 ₽; size gate подтверждён актуальной финансовой отчётностью.",
-          "url": "https://companies.rbc.ru/id/1217700146399-osmokod/",
-          "source": "РБК Компании / бухгалтерская отчётность 2025"
-        },
-        {
-          "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт Осмокод прямо указывает ООО «ОСМОКОД», ИНН 9729306650 и официальный домен osmocode.ru.",
-          "url": "https://osmocode.ru/",
-          "source": "OSMOCODE official site"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "Вакансия руководителя отдела продаж от 07.02.2026 фиксирует запуск нового направления продуктов, Go-to-market, доформирование команды, внедрение процессов продаж, пересборку воронки, KPI/SLA и масштабирование процессов продаж до конца Q3 2026.",
-          "url": "https://spb.hh.ru/vacancy/129868812",
-          "source": "HeadHunter"
-        },
-        {
-          "type": "OWNER_LPR",
-          "claim": "Генеральный директор Михайлов Роман Викторович является практическим ЛПР; вакансия предусматривает прямое взаимодействие руководителя продаж с генеральным директором и поддержку со стороны CEO и акционеров.",
-          "url": "https://spb.hh.ru/vacancy/129868812",
-          "source": "HeadHunter + РБК Компании"
-        },
-        {
-          "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует телефон +7 (812) 448-55-90 и email ask@osmocode.ru; дополнительный прямой маршрут — вакансия работодателя HeadHunter.",
-          "url": "https://osmocode.ru/",
-          "source": "OSMOCODE official site + HeadHunter"
-        }
+        {"type": "LEGAL", "claim": "ООО «ВЕНТАТЕХ-И» действует; ИНН 7716794452, ОГРН 1157746443007; генеральный директор — Ракитин Алексей Валериевич.", "url": "https://avitekengineering.ru/about/requisites/", "source": "Официальные реквизиты AVITEK Engineering + актуальные реестровые данные"},
+        {"type": "SCALE", "claim": "Выручка ООО «ВЕНТАТЕХ-И» за 2025 год составляет около 402,28 млн ₽; актуальный источник на данных ФНС указывает 113 сотрудников за 2025 год.", "url": "https://companies.rbc.ru/id/1157746443007-ooo-ventateh-i/", "source": "Актуальные финансовые/реестровые данные 2025"},
+        {"type": "BRAND_LEGAL", "claim": "Официальный сайт AVITEK Engineering публикует реквизиты ООО «ВЕНТАТЕХ-И», ИНН 7716794452, ОГРН 1157746443007 и официальный домен avitekengineering.ru.", "url": "https://avitekengineering.ru/about/requisites/", "source": "AVITEK Engineering official site"},
+        {"type": "SIGNAL", "claim": "Вакансия руководителя отдела продаж от 27.01.2026 фиксирует формирование и развитие отдела продаж инженерных систем, развитие и мотивацию сотрудников и ответственность за планы продаж.", "url": "https://hh.ru/vacancy/129311986", "source": "HeadHunter"},
+        {"type": "OWNER_LPR", "claim": "Ганжуров Олег Анатольевич — единственный учредитель; Ракитин Алексей Валериевич — действующий генеральный директор и практический ЛПР.", "url": "https://companies.rbc.ru/id/1157746443007-ooo-ventateh-i/", "source": "Актуальные реестровые данные 2026"},
+        {"type": "CONTACT_ROUTE", "claim": "Официальные реквизиты компании публикуют телефон +7 (495) 139-60-40 и email info@avitekengineering.ru; дополнительный прямой маршрут — вакансия работодателя HeadHunter.", "url": "https://avitekengineering.ru/about/requisites/", "source": "AVITEK Engineering official site + HeadHunter"}
       ]
     }
   ]
