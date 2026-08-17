@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-17T20:05:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-283",
-  "current_run_id": "N5K-20260817-283",
+  "last_completed_run_id": "N5K-20260817-284",
+  "current_run_id": "N5K-20260817-284",
   "last_run_id": "N5K-20260817-284",
   "latest_completed_run": "N5K-20260817-284",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 283 completed: 100 distinct raw candidate signals processed across multiple discovery streams; 1 fully qualified company physically integrated (Ecoflight / ЦЭБ ГА); canonical/contactable 170/170; integrity PASS; orphan 0/0; outreach 0. Fresh 2025-2026 scale/legal data were used; stale or conflicting identifiers were not used for qualification."
+  "note": "RUN 284 completed: 100 distinct raw employer/company signals screened with FAST GATE before deep-check; Прометекс was rejected by the authoritative physical dedup guard; 1 unique fully qualified company physically integrated — ХОПЁР СТАЛЬ / ООО ХОПЁР СТАЛЬ, INN 9723221390; canonical/contactable 171/171; integrity PASS; orphan 0/0; outreach 0. Only current 2025-2026 evidence was used for qualification."
 }
