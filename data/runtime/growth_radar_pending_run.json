@@ -1,71 +1,150 @@
 {
-  "run_id": "N5K-20260817-285",
-  "updated_at": "2026-08-17T21:02:59+03:00",
+  "run_id": "N5K-20260817-286",
+  "updated_at": "2026-08-17T22:01:30+03:00",
   "funnel": {
     "discovered": 100,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 10,
-    "excluded": 89
+    "fast_gate_passed": 4,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 7,
+    "excluded": 91
   },
-  "notes": "RUN 285: broad discovery screened 100 distinct raw employer/company signals across multiple streams. FAST GATE was applied before deep-check. Ten candidates were identified as existing/duplicate signals against the campaign, 89 failed one or more fast/size/legal/signal gates, and ReAspekt passed current legal, scale, S1 signal, LPR, contact-route and second pre-write dedup checks. Only current 2025-2026 evidence was used. No outreach.",
+  "notes": "RUN 286: broad discovery screened 100 distinct employer/company signals across multiple vacancy search streams and current company-growth signals. FAST GATE was applied before deep-check. Seven signals were existing/duplicate companies from the physical campaign pool; 91 failed one or more private-company, current-scale, legal/brand-match, signal, LPR or contact-route gates. Blue Sleep and BrandMonitor passed current 2025-2026 legal, scale, S1 signal, LPR, practical contact-route and pre-write dedup checks. IT-Works reached LPR but was not qualified because a current official Russian corporate contact route was not sufficiently verified; no stale foreign IT Works contact was used. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0316",
-      "Brand": "ReAspekt / Реаспект",
-      "Legal Name": "ООО «РЕАСПЕКТ»",
-      "INN": "1661018256",
-      "OGRN/OGRNIP": "1071690028530",
-      "Region": "Республика Татарстан",
-      "City": "Казань",
-      "Segment": "Digital marketing / performance / B2B services",
-      "Website": "https://www.reaspekt.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 127 805 000 ₽ за 2025 год; вакансия руководителя отдела продаж 2026 года указывает действующую sales-команду из 5 человек.",
+      "Lead ID": "N5K-0317",
+      "Brand": "Blue Sleep / Блу Слип",
+      "Legal Name": "ООО «БЛУ СЛИП»",
+      "INN": "9718075520",
+      "OGRN/OGRNIP": "1177746930470",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "E-commerce / товары для сна / D2C+B2B",
+      "Website": "https://bluesleep.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 255,06 млн ₽ за 2025 год; бренд развивает сайт, маркетплейсы, офлайн-точки и B2B-канал.",
       "Signal Level": "S1",
-      "Signal Summary": "22 января 2026 компания открыла руководителя отдела продаж для систематизации и развития продаж: улучшение процессов и стандартов, автоматизация, планирование новых продаж, связка с маркетингом, CRM и аналитика воронки, прогнозов, выручки, конверсий, среднего чека и маржинальности.",
-      "Signal Date": "2026-01-22",
-      "Signal Source": "https://hh.ru/vacancy/129751157",
-      "Owner": "Анисимов Андрей Олегович — 76% контролирующий собственник; другие частные участники",
-      "CEO": "Анисимов Андрей Олегович",
-      "LPR": "Анисимов Андрей Олегович",
-      "LPR Role": "Директор / контролирующий собственник 76% / практический ЛПР",
-      "Primary Phone": "+7 (499) 281-60-32",
-      "Primary Email": "info@reaspekt.ru",
-      "HH Contact": "https://hh.ru/vacancy/129751157",
-      "Contact Form": "https://www.reaspekt.ru/",
-      "Contact Type": "Corporate Phone; Email; HH employer route; Website",
-      "Contact Source": "Официальный сайт ReAspekt; HeadHunter; РБК Компании / актуальные реестровые данные",
-      "Consulting Hypothesis": "Систематизация и масштабирование B2B-продаж агентства: сегментация ICP, CRM-воронка и forecasting, KPI и конверсии, связка sales+marketing, управление маржинальностью клиентского портфеля и снижение зависимости от ручного управления.",
+      "Signal Summary": "4 февраля 2026 Blue Sleep открыл руководителя отдела продаж с задачей построения и масштабирования системы продаж: структура отдела, CRM, воронка, KPI, мотивация, конверсия, B2B-крупные клиенты и связка с маркетингом.",
+      "Signal Date": "2026-02-04",
+      "Signal Source": "https://hh.ru/vacancy/130181434",
+      "Owner": "Частные участники и иностранное юридическое лицо; компания частная",
+      "CEO": "Семенов Егор Сергеевич",
+      "LPR": "Семенов Егор Сергеевич",
+      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Primary Phone": "+7 (495) 150-86-38",
+      "Primary Email": "",
+      "HH Contact": "https://hh.ru/vacancy/130181434",
+      "Contact Form": "https://bluesleep.ru/o-kompanii/kontakty/",
+      "Contact Type": "Corporate Phone; HH employer route; Website",
+      "Contact Source": "Официальный сайт Blue Sleep; HeadHunter; актуальные реестровые данные 2026",
+      "Consulting Hypothesis": "Систематизация мультиканальных продаж D2C+B2B: единая CRM-воронка, экономика каналов сайт/маркетплейсы/офлайн/B2B, KPI и мотивация команды, прогнозирование выручки и развитие корпоративных продаж без потери маржинальности.",
       "contacts": [
         {
-          "value": "+7 (499) 281-60-32",
+          "value": "+7 (495) 150-86-38",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "ReAspekt official site",
-          "url": "https://www.reaspekt.ru/",
+          "source": "Blue Sleep official site",
+          "url": "https://bluesleep.ru/o-kompanii/kontakty/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный телефон казанского офиса; маршрут с просьбой передать сообщение директору/собственнику."
+          "notes": "Официальный корпоративный телефон; маршрут с просьбой передать сообщение генеральному директору/коммерческому блоку."
         },
         {
-          "value": "info@reaspekt.ru",
-          "channel": "Email",
-          "type": "Corporate",
-          "source": "ReAspekt official site",
-          "url": "https://www.reaspekt.ru/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный email."
-        },
-        {
-          "value": "https://hh.ru/vacancy/129751157",
+          "value": "https://hh.ru/vacancy/130181434",
           "channel": "HH",
           "type": "Employer Route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/129751157",
+          "url": "https://hh.ru/vacancy/130181434",
+          "is_lpr": false,
+          "notes": "Прямой маршрут работодателя через актуальную вакансию; outreach не выполнялся."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «БЛУ СЛИП», ИНН 9718075520, ОГРН 1177746930470; действует; генеральный директор — Семенов Егор Сергеевич.",
+          "url": "https://bluesleep.ru/terms/",
+          "source": "Официальный сайт Blue Sleep / актуальная оферта 04.03.2026"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка ООО «БЛУ СЛИП» за 2025 год составляет около 255,06 млн ₽.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1177746930470/",
+          "source": "Т-Банк Бизнес / данные бухгалтерской отчётности 2025"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "4 февраля 2026 Blue Sleep искал руководителя отдела продаж для построения структуры, CRM, процессов, KPI и масштабирования мультиканальных и B2B-продаж.",
+          "url": "https://hh.ru/vacancy/130181434",
+          "source": "HeadHunter"
+        },
+        {
+          "type": "LPR",
+          "claim": "Семенов Егор Сергеевич — действующий генеральный директор ООО «БЛУ СЛИП»; официальная оферта 2026 подписана генеральным директором Семеновым Е.С.",
+          "url": "https://bluesleep.ru/terms/",
+          "source": "Официальный сайт Blue Sleep"
+        },
+        {
+          "type": "BRAND_CONTACT",
+          "claim": "Официальный сайт прямо указывает ООО «Блу Слип», ИНН 9718075520 и корпоративный телефон +7 (495) 150-86-38; доступен прямой HH-маршрут работодателя.",
+          "url": "https://bluesleep.ru/o-kompanii/rekvizity/",
+          "source": "Официальный сайт Blue Sleep"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0318",
+      "Brand": "BrandMonitor / Бренд Монитор",
+      "Legal Name": "ООО «БРЕНД МОНИТОР»",
+      "INN": "7701405022",
+      "OGRN/OGRNIP": "1147746945048",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "IT / SaaS / защита брендов и интеллектуальной собственности / B2B",
+      "Website": "https://brandmonitor.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 181,953 млн ₽ за 2025 год; 40 сотрудников по актуальным данным 2025; международный B2B-контур.",
+      "Signal Level": "S1",
+      "Signal Summary": "4 февраля 2026 BrandMonitor открыл руководителя отдела продаж B2B для усиления коммерческой функции: стратегия и упаковка продукта, управление командой, контроль воронки, сложные enterprise-сделки и прямое влияние на рост выручки.",
+      "Signal Date": "2026-02-04",
+      "Signal Source": "https://hh.ru/vacancy/130155080",
+      "Owner": "Вопилов Юрий Евгеньевич — 70%; Кириллов Кирилл Сергеевич — 30%",
+      "CEO": "Вопилов Юрий Евгеньевич",
+      "LPR": "Вопилов Юрий Евгеньевич",
+      "LPR Role": "Генеральный директор / собственник 70% / практический ЛПР",
+      "Primary Phone": "+7 (495) 540-52-87",
+      "Primary Email": "post@brandmonitor.ru",
+      "HH Contact": "https://hh.ru/vacancy/130155080",
+      "Contact Form": "https://brandmonitor.ru/contacts/",
+      "Contact Type": "Corporate Phone; Email; HH employer route; Website",
+      "Contact Source": "Официальный сайт BrandMonitor; HeadHunter; актуальные реестровые данные 2025-2026",
+      "Consulting Hypothesis": "Масштабирование B2B SaaS/enterprise sales на фоне международного развития: сегментация ICP, управляемый pipeline и forecast, unit economics крупных сделок, KPI sales-команды, связка sales+marketing/product и повышение предсказуемости роста выручки.",
+      "contacts": [
+        {
+          "value": "+7 (495) 540-52-87",
+          "channel": "Phone",
+          "type": "Corporate",
+          "source": "BrandMonitor official site",
+          "url": "https://brandmonitor.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный телефон российского ООО."
+        },
+        {
+          "value": "post@brandmonitor.ru",
+          "channel": "Email",
+          "type": "Corporate",
+          "source": "BrandMonitor official site",
+          "url": "https://brandmonitor.ru/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email российского BrandMonitor."
+        },
+        {
+          "value": "https://hh.ru/vacancy/130155080",
+          "channel": "HH",
+          "type": "Employer Route",
+          "source": "HeadHunter",
+          "url": "https://hh.ru/vacancy/130155080",
           "is_lpr": false,
           "notes": "Маршрут через вакансию прямого работодателя; outreach не выполнялся."
         }
@@ -73,33 +152,33 @@
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «РЕАСПЕКТ», ИНН 1661018256, ОГРН 1071690028530, действует; директор — Анисимов Андрей Олегович.",
-          "url": "https://companies.rbc.ru/id/1071690028530-reaspekt/",
+          "claim": "ООО «БРЕНД МОНИТОР», ИНН 7701405022, ОГРН 1147746945048, действует; генеральный директор — Вопилов Юрий Евгеньевич.",
+          "url": "https://companies.rbc.ru/id/1147746945048-ooo-brend-monitor/",
           "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Выручка ООО «РЕАСПЕКТ» за 2025 год составляет 127 805 000 ₽.",
-          "url": "https://companies.rbc.ru/id/1071690028530-reaspekt/",
-          "source": "РБК Компании / бухгалтерская отчётность"
+          "claim": "Выручка ООО «БРЕНД МОНИТОР» за 2025 год составляет 181 953 000 ₽; численность — 40 сотрудников.",
+          "url": "https://companies.rbc.ru/id/1147746945048-ooo-brend-monitor/",
+          "source": "РБК Компании / бухгалтерская отчётность; актуальный реестровый агрегатор"
         },
         {
           "type": "SIGNAL",
-          "claim": "22 января 2026 ReAspekt опубликовал вакансию руководителя отдела продаж с задачами систематизации процессов, автоматизации, CRM, аналитики воронки и коммерческих метрик и развития новых продаж.",
-          "url": "https://hh.ru/vacancy/129751157",
+          "claim": "4 февраля 2026 BrandMonitor опубликовал вакансию руководителя отдела продаж B2B для усиления коммерческой функции, управления воронкой, командой и сложными сделками с прямым влиянием на выручку.",
+          "url": "https://hh.ru/vacancy/130155080",
           "source": "HeadHunter"
         },
         {
           "type": "LPR",
-          "claim": "Анисимов Андрей Олегович — действующий директор и контролирующий собственник ООО «РЕАСПЕКТ» с долей 76%.",
-          "url": "https://companies.rbc.ru/id/1071690028530-reaspekt/",
+          "claim": "Вопилов Юрий Евгеньевич — генеральный директор и собственник 70% ООО «БРЕНД МОНИТОР»; Кириллов Кирилл Сергеевич — собственник 30%.",
+          "url": "https://companies.rbc.ru/amp/ogrn/1147746945048/",
           "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "BRAND_CONTACT",
-          "claim": "Официальный сайт ReAspekt публикует адрес в Казани, телефон +7 (499) 281-60-32 и email info@reaspekt.ru; адрес совпадает с юрлицом.",
-          "url": "https://www.reaspekt.ru/",
-          "source": "Официальный сайт ReAspekt"
+          "claim": "Официальный сайт BrandMonitor прямо указывает ООО «Бренд Монитор», ИНН 7701405022, ОГРН 1147746945048, телефон +7 (495) 540-52-87 и email post@brandmonitor.ru.",
+          "url": "https://brandmonitor.ru/contacts/",
+          "source": "Официальный сайт BrandMonitor"
         }
       ]
     }
