@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260817-275",
+  "run_id": "N5K-20260817-276",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T10:22:23+03:00",
+  "updated_at": "2026-08-17T12:12:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 155,
-    "current_contactable_count": 155,
-    "progress_added": 155,
-    "remaining": 4845
+    "current_canonical_count": 156,
+    "current_contactable_count": 156,
+    "progress_added": 156,
+    "remaining": 4844
   },
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 5,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
+    "discovered": 20,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 18
+    "duplicates": 6,
+    "excluded": 13
   },
   "qualified_companies": [
-    "УК Машинвесткапитал / МашИнвестКапитал"
+    "ТЕКОС-ИНДУСТРИЯ / TEKOS"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "155_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "155_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "156_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "156_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
