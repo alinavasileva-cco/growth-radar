@@ -1,29 +1,30 @@
 {
-  "generated_at": "2026-08-17T12:31:37+03:00",
+  "generated_at": "2026-08-17T13:05:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260817-276",
+  "latest_completed_run_id": "N5K-20260817-277",
   "current_run_id": "N5K-20260817-277",
-  "current_run_status": "BLOCKED_CANONICAL_WRITE",
-  "canonical_pool_verified": 156,
-  "contactable_verified": 156,
-  "qualified_staged_not_counted": 3,
+  "current_run_status": "COMPLETED",
+  "canonical_pool_verified": 159,
+  "contactable_verified": 159,
+  "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4844,
+  "remaining_to_target": 4841,
   "run_277": {
     "raw_discovered": 100,
-    "fast_gate_fully_evidenced": 3,
+    "fast_gate_passed": 3,
     "size_check_passed": 3,
     "legal_match_passed": 3,
     "signal_confirmed": 3,
     "lpr_identified": 3,
     "contact_route_found": 3,
-    "qualified_staged": 3,
-    "physically_integrated": 0,
-    "deferred_raw": 97
+    "qualified": 3,
+    "physically_integrated": 3,
+    "duplicates": 0,
+    "excluded": 97
   },
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "integrity_status": "PASS_FOR_CURRENT_CANONICAL_156",
+  "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": "Physical append/patch to existing large master CSV is unavailable through the current connector; staging completed without inflating canonical count."
+  "blocker": null
 }
