@@ -1,105 +1,105 @@
 {
-  "run_id": "N5K-20260817-284",
-  "updated_at": "2026-08-17T20:05:00+03:00",
+  "run_id": "N5K-20260817-285",
+  "updated_at": "2026-08-17T21:02:59+03:00",
   "funnel": {
     "discovered": 100,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 98
+    "duplicates": 10,
+    "excluded": 89
   },
-  "notes": "RUN 284: broad discovery screened 100 distinct raw employer/company signals across several search streams. FAST GATE preceded deep-check. Прометекс / ИНН 9725010958 initially passed content gates but the authoritative physical integration guard returned DEDUP_GUARD_FAILED, so it was removed and counted as a duplicate. ХОПЁР СТАЛЬ / ООО ХОПЁР СТАЛЬ then passed fresh legal/scale/signal/LPR/contact checks and a repository pre-write search; the physical integration guard remains authoritative. Current 2025-2026 evidence used only: 2025 revenue, current legal status/owner-director, January 2026 expansion hiring, and current official-site evidence of own production plus 400 enterprise customers / 700+ contracts. No outreach.",
+  "notes": "RUN 285: broad discovery screened 100 distinct raw employer/company signals across multiple streams. FAST GATE was applied before deep-check. Ten candidates were identified as existing/duplicate signals against the campaign, 89 failed one or more fast/size/legal/signal gates, and ReAspekt passed current legal, scale, S1 signal, LPR, contact-route and second pre-write dedup checks. Only current 2025-2026 evidence was used. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0315",
-      "Brand": "ХОПЁР СТАЛЬ / Khoper Steel",
-      "Legal Name": "ООО «ХОПЁР СТАЛЬ»",
-      "INN": "9723221390",
-      "OGRN/OGRNIP": "1247700051026",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "B2B металлопрокат / промышленное и строительное снабжение",
-      "Website": "https://khoper.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 434 759 000 ₽ за 2025 год; официальный контур 2026 сообщает о 10 000+ тонн поставленного металлопроката для 400 предприятий, 700+ коммерческих и государственных контрактах и запуске собственного производства деталей трубопровода.",
-      "Signal Level": "S2",
-      "Signal Summary": "Два согласованных сигнала роста: в январе 2026 компания расширяла B2B-sales команду на фоне роста рынка/импортозамещения, а актуальный официальный сайт фиксирует уже запущенное собственное производство и масштабирование поставок/контрактов. Это создаёт запрос на систематизацию коммерческого контура, повторные продажи, CRM и управление ростом.",
-      "Signal Date": "2026-01-26",
-      "Signal Source": "https://hh.ru/vacancy/129873624",
-      "Owner": "Гулакян Нарек Кароевич — 100%",
-      "CEO": "Гулакян Нарек Кароевич",
-      "LPR": "Гулакян Нарек Кароевич",
-      "LPR Role": "Собственник 100% и директор",
-      "Primary Phone": "+7 (499) 325-37-75",
-      "Primary Email": "zakaz@khoper.ru",
-      "HH Contact": "https://hh.ru/vacancy/129873624",
-      "Contact Form": "https://khoper.ru/kontakty/",
+      "Lead ID": "N5K-0316",
+      "Brand": "ReAspekt / Реаспект",
+      "Legal Name": "ООО «РЕАСПЕКТ»",
+      "INN": "1661018256",
+      "OGRN/OGRNIP": "1071690028530",
+      "Region": "Республика Татарстан",
+      "City": "Казань",
+      "Segment": "Digital marketing / performance / B2B services",
+      "Website": "https://www.reaspekt.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 127 805 000 ₽ за 2025 год; вакансия руководителя отдела продаж 2026 года указывает действующую sales-команду из 5 человек.",
+      "Signal Level": "S1",
+      "Signal Summary": "22 января 2026 компания открыла руководителя отдела продаж для систематизации и развития продаж: улучшение процессов и стандартов, автоматизация, планирование новых продаж, связка с маркетингом, CRM и аналитика воронки, прогнозов, выручки, конверсий, среднего чека и маржинальности.",
+      "Signal Date": "2026-01-22",
+      "Signal Source": "https://hh.ru/vacancy/129751157",
+      "Owner": "Анисимов Андрей Олегович — 76% контролирующий собственник; другие частные участники",
+      "CEO": "Анисимов Андрей Олегович",
+      "LPR": "Анисимов Андрей Олегович",
+      "LPR Role": "Директор / контролирующий собственник 76% / практический ЛПР",
+      "Primary Phone": "+7 (499) 281-60-32",
+      "Primary Email": "info@reaspekt.ru",
+      "HH Contact": "https://hh.ru/vacancy/129751157",
+      "Contact Form": "https://www.reaspekt.ru/",
       "Contact Type": "Corporate Phone; Email; HH employer route; Website",
-      "Contact Source": "Официальный сайт Хопёр Сталь; HeadHunter; актуальные реестровые/финансовые источники",
-      "Consulting Hypothesis": "Систематизация B2B-продаж на этапе расширения: сегментация строительных и промышленных клиентов, повторные/кросс-продажи, CRM-воронка и KPI, маржинальность по продуктам/каналам, интеграция нового производственного направления и 90-дневный план роста.",
+      "Contact Source": "Официальный сайт ReAspekt; HeadHunter; РБК Компании / актуальные реестровые данные",
+      "Consulting Hypothesis": "Систематизация и масштабирование B2B-продаж агентства: сегментация ICP, CRM-воронка и forecasting, KPI и конверсии, связка sales+marketing, управление маржинальностью клиентского портфеля и снижение зависимости от ручного управления.",
       "contacts": [
         {
-          "value": "+7 (499) 325-37-75",
+          "value": "+7 (499) 281-60-32",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "Хопёр Сталь official contacts",
-          "url": "https://khoper.ru/kontakty/",
+          "source": "ReAspekt official site",
+          "url": "https://www.reaspekt.ru/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный телефон; маршрут с просьбой передать сообщение собственнику/директору."
+          "notes": "Официальный корпоративный телефон казанского офиса; маршрут с просьбой передать сообщение директору/собственнику."
         },
         {
-          "value": "zakaz@khoper.ru",
+          "value": "info@reaspekt.ru",
           "channel": "Email",
           "type": "Corporate",
-          "source": "Хопёр Сталь official contacts",
-          "url": "https://khoper.ru/kontakty/",
+          "source": "ReAspekt official site",
+          "url": "https://www.reaspekt.ru/",
           "is_lpr": false,
           "notes": "Официальный корпоративный email."
         },
         {
-          "value": "https://hh.ru/vacancy/129873624",
+          "value": "https://hh.ru/vacancy/129751157",
           "channel": "HH",
           "type": "Employer Route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/129873624",
+          "url": "https://hh.ru/vacancy/129751157",
           "is_lpr": false,
-          "notes": "Маршрут через вакансию работодателя; outreach не выполнялся."
+          "notes": "Маршрут через вакансию прямого работодателя; outreach не выполнялся."
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ХОПЁР СТАЛЬ», ИНН 9723221390, ОГРН 1247700051026, действует; директор и единственный учредитель — Гулакян Нарек Кароевич.",
-          "url": "https://companies.rbc.ru/id/1247700051026-ooo-ooo-hopyor-stal/",
+          "claim": "ООО «РЕАСПЕКТ», ИНН 1661018256, ОГРН 1071690028530, действует; директор — Анисимов Андрей Олегович.",
+          "url": "https://companies.rbc.ru/id/1071690028530-reaspekt/",
           "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "За 2025 год выручка ООО «ХОПЁР СТАЛЬ» составляет 434 759 000 ₽; официальный сайт 2026 фиксирует 10 000+ тонн поставок, 400 предприятий и 700+ контрактов.",
-          "url": "https://saby.ru/profile/9723221390-772301001",
-          "source": "Saby / бухгалтерская отчётность + официальный сайт"
+          "claim": "Выручка ООО «РЕАСПЕКТ» за 2025 год составляет 127 805 000 ₽.",
+          "url": "https://companies.rbc.ru/id/1071690028530-reaspekt/",
+          "source": "РБК Компании / бухгалтерская отчётность"
         },
         {
           "type": "SIGNAL",
-          "claim": "В январе 2026 компания расширяла B2B sales-команду в связи с ростом, а текущий официальный сайт сообщает о запуске собственного производства деталей трубопровода и расширении коммерческого контура.",
-          "url": "https://hh.ru/vacancy/129873624",
-          "source": "HeadHunter + официальный сайт"
+          "claim": "22 января 2026 ReAspekt опубликовал вакансию руководителя отдела продаж с задачами систематизации процессов, автоматизации, CRM, аналитики воронки и коммерческих метрик и развития новых продаж.",
+          "url": "https://hh.ru/vacancy/129751157",
+          "source": "HeadHunter"
         },
         {
           "type": "LPR",
-          "claim": "Гулакян Нарек Кароевич — директор и 100% учредитель ООО «ХОПЁР СТАЛЬ».",
-          "url": "https://companies.rbc.ru/id/1247700051026-ooo-ooo-hopyor-stal/",
+          "claim": "Анисимов Андрей Олегович — действующий директор и контролирующий собственник ООО «РЕАСПЕКТ» с долей 76%.",
+          "url": "https://companies.rbc.ru/id/1071690028530-reaspekt/",
           "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "BRAND_CONTACT",
-          "claim": "Официальный сайт Хопёр Сталь публикует ООО «ХОПЁР СТАЛЬ», ИНН 9723221390, ОГРН 1247700051026, телефон +7 (499) 325-37-75 и email zakaz@khoper.ru.",
-          "url": "https://khoper.ru/o-kompanii/rekvizity/",
-          "source": "Официальный сайт Хопёр Сталь"
+          "claim": "Официальный сайт ReAspekt публикует адрес в Казани, телефон +7 (499) 281-60-32 и email info@reaspekt.ru; адрес совпадает с юрлицом.",
+          "url": "https://www.reaspekt.ru/",
+          "source": "Официальный сайт ReAspekt"
         }
       ]
     }
