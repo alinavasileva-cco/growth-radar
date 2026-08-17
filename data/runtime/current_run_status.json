@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260817-284",
+  "run_id": "N5K-20260817-285",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T20:05:00+03:00",
+  "updated_at": "2026-08-17T21:02:59+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 171,
-    "current_contactable_count": 171,
-    "progress_added": 171,
-    "remaining": 4829
+    "current_canonical_count": 172,
+    "current_contactable_count": 172,
+    "progress_added": 172,
+    "remaining": 4828
   },
   "funnel": {
     "discovered": 100,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 98
+    "duplicates": 10,
+    "excluded": 89
   },
   "qualified_companies": [
-    "ХОПЁР СТАЛЬ / Khoper Steel"
+    "ReAspekt / Реаспект"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "171_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "171_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "172_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "172_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
