@@ -1,28 +1,28 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 17.08.2026 20:05 MSK  
-**Последний полностью завершённый RUN:** `N5K-20260817-284`  
+**Версия:** 17.08.2026 21:02 MSK  
+**Последний полностью завершённый RUN:** `N5K-20260817-285`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **171 / 171**  
+**Физически подтверждённый canonical/contactable:** **172 / 172**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4829**  
+**Осталось:** **4828**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **171 / 171**;
+- physical canonical/contactable count: **172 / 172**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260817-284`.
+- последний завершённый RUN: `N5K-20260817-285`.
 
-## RUN 284
+## RUN 285
 
 Широкий discovery: **100 реальных разных raw-кандидатов** из нескольких независимых поисковых потоков. FAST GATE применён до deep-check. Физически интегрирована **1** новая уникальная компания:
 
-1. ХОПЁР СТАЛЬ / Khoper Steel — ООО «ХОПЁР СТАЛЬ», ИНН 9723221390.
+1. ReAspekt / Реаспект — ООО «РЕАСПЕКТ», ИНН 1661018256.
 
-Воронка: discovered 100 → fast gate 2 → size 2 → legal 2 → signal 2 → LPR 2 → contact 2 → qualified 1. Duplicates: 1; excluded: 98. Прометекс после содержательной квалификации был остановлен авторитетным физическим `DEDUP_GUARD_FAILED` и повторно не засчитан. Для ХОПЁР СТАЛЬ использованы только актуальные сведения 2025–2026: действующее юрлицо, выручка 2025, собственник/директор, январский hiring-сигнал роста и текущие официальные сведения о расширении производственного и B2B-контура. Physical master/contactable: 171/171, integrity PASS, orphan 0/0.
+Воронка: discovered 100 → fast gate 1 → size 1 → legal 1 → signal 1 → LPR 1 → contact 1 → qualified 1. Duplicates: 10; excluded: 89. Для ReAspekt использованы актуальные сведения 2025–2026: действующее юрлицо, выручка 2025, текущий директор/контролирующий собственник, вакансия руководителя отдела продаж от 22.01.2026 и текущие официальные контакты. Physical master/contactable: 172/172, integrity PASS, orphan 0/0.
 
 ## Правила продолжения
 
@@ -39,7 +39,3 @@
 11. Outreach не выполнять.
 
 История предыдущих RUN хранится в `run_logs`, `reports`, shards и Git history.
-
-
-## Latest verified run N5K-20260817-285
-Canonical/contactable: 172/172. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
