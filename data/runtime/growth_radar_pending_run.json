@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260817-276",
-  "updated_at": "2026-08-17T11:07:40+03:00",
+  "updated_at": "2026-08-17T12:12:00+03:00",
   "funnel": {
     "discovered": 20,
     "fast_gate_passed": 5,
@@ -10,101 +10,101 @@
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 14
+    "duplicates": 6,
+    "excluded": 13
   },
-  "notes": "Accelerated discovery continued from physically verified RUN N5K-20260817-275 baseline 155/155. Twenty distinct employer/company signals were individually reviewed; no larger raw count is claimed. The first deep-qualified candidate, ООО Лесресурс INN 7728351582, was rejected by the physical pre-write DEDUP_GUARD despite repository code search returning no hit, so it was reclassified as the fifth duplicate and removed from pending. Four other known duplicates were SOFT ALLIANCE, FCB-REGION, TempStroySistema and Flaconia Pro. Fourteen signals were excluded for recruitment-intermediary status, materially oversized profile, ambiguous employer-to-legal match, insufficient fresh scale confirmation, or failure to complete the legal/LPR/contact chain. ООО ЮК Слюсарев и партнёры then passed active legal entity, exact vacancy/official-site/legal-address match, operational scale evidenced by its published team and national client base, current S1 sales-system signal, owner/CEO/LPR and official phone/email plus direct HH route. Exact INN 9703196184 was absent from repository code search; final physical dedup is enforced again by the integration workflow before append. No outreach.",
+  "notes": "RUN 276 repair continued from physically verified baseline 155/155. The previously staged ООО ЮК Слюсарев и партнёры was confirmed by direct physical master inspection as an existing company N5K-0005 with the same INN 9703196184 and was removed. Together with Лесресурс and four other known existing companies, duplicate count is 6. Replacement candidate ТЕКОС-ИНДУСТРИЯ passed active legal entity, exact employer-to-legal and official-site match, current 2025 scale, fresh S1 new-direction signal, owner/CEO/LPR and official phone/email route. Exact INN 4705071791 had no match in the fetched physical master resource before staging. No outreach.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0300",
-      "Brand": "Слюсарев и партнёры",
-      "Legal Name": "ООО «ЮРИДИЧЕСКАЯ КОМПАНИЯ «СЛЮСАРЕВ И ПАРТНЁРЫ»",
-      "INN": "9703196184",
-      "OGRN/OGRNIP": "1247700747678",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Юридический и налоговый консалтинг / B2B",
-      "Website": "https://slyusarevpartners.ru/",
-      "Revenue/Scale": "Действующее частное ООО; официальный сайт публикует команду из 8 специалистов и заявляет 1 000+ спасённых бизнесов; компания работает по всей России. Использована текущая операционная шкала, без выдуманной финансовой оценки.",
+      "Brand": "ТЕКОС-ИНДУСТРИЯ / TEKOS",
+      "Legal Name": "ООО «ТЕКОС-ИНДУСТРИЯ»",
+      "INN": "4705071791",
+      "OGRN/OGRNIP": "1164704064821",
+      "Region": "Ленинградская область / Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "FMCG / производство товаров для дома / e-commerce",
+      "Website": "https://tekoc.com/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 716,45 млн ₽ за 2025 год; 100 сотрудников; 25+ лет производственной истории бренда; 120 млн+ губок произведено в 2025 году.",
       "Signal Level": "S1",
-      "Signal Summary": "30 января 2026 компания открыла руководителя отдела продаж юридических услуг B2B с прямой задачей с нуля создать отдел продаж и стать одним из лидеров растущей компании.",
-      "Signal Date": "2026-01-30",
-      "Signal Source": "https://hh.ru/vacancy/130054591",
-      "Owner": "Слюсарев Алексей Сергеевич — 100%",
-      "CEO": "Слюсарев Алексей Сергеевич",
-      "LPR": "Слюсарев Алексей Сергеевич",
-      "LPR Role": "Собственник 100% и генеральный директор / практический ЛПР",
-      "Primary Phone": "+7 903 77-22-555",
-      "Primary Email": "info@slyusarevpartners.ru",
-      "HH Contact": "https://hh.ru/vacancy/130054591",
-      "Contact Form": "https://slyusarevpartners.ru/",
+      "Signal Summary": "4 февраля 2026 компания открыла руководителя нового e-commerce направления: запуск отдела с нуля, стратегия выхода в e-commerce, бюджетирование, KPI, ассортимент, ценообразование, команда и масштабирование продаж.",
+      "Signal Date": "2026-02-04",
+      "Signal Source": "https://spb.hh.ru/vacancy/130168544",
+      "Owner": "Дворянкин Николай Валерьевич — 100%",
+      "CEO": "Дворянкин Николай Валерьевич",
+      "LPR": "Дворянкин Николай Валерьевич",
+      "LPR Role": "Собственник 100% и генеральный директор / стратегический ЛПР",
+      "Primary Phone": "+7 (812) 329-36-42",
+      "Primary Email": "info@tecos.spb.ru",
+      "HH Contact": "https://spb.hh.ru/vacancy/130168544",
+      "Contact Form": "https://tekoc.com/",
       "Contact Type": "Официальный корпоративный маршрут к собственнику/генеральному директору + прямой HH employer route",
-      "Contact Source": "Официальный сайт Слюсарев и партнёры + HeadHunter + актуальные реестровые данные",
-      "Consulting Hypothesis": "Построение системного B2B-отдела продаж юридического и налогового консалтинга: ICP и сегментация, CRM-воронка, квалификация лидов, KPI и мотивация, pipeline/forecast, связка экспертного маркетинга и продаж и 90-дневный план запуска.",
+      "Contact Source": "Официальный сайт ТЕКОС-ИНДУСТРИЯ + HeadHunter + актуальные данные ФНС/реестров",
+      "Consulting Hypothesis": "Запуск и масштабирование нового e-commerce направления: канал-стратегия, P&L и unit-экономика, ассортимент и pricing, KPI, CRM/аналитика, организационная модель команды, связка e-commerce с производством и маркетингом и 90-дневный план запуска.",
       "contacts": [
         {
-          "value": "+7 903 77-22-555",
+          "value": "+7 (812) 329-36-42",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "Слюсарев и партнёры official site",
-          "url": "https://slyusarevpartners.ru/",
+          "source": "ТЕКОС-ИНДУСТРИЯ official site",
+          "url": "https://tekoc.com/",
           "is_lpr": false,
-          "notes": "Официальный единый номер компании; использовать как маршрут передачи сообщения собственнику/генеральному директору."
+          "notes": "Официальный телефон головного офиса и отдела продаж; использовать как корпоративный маршрут передачи сообщения ЛПР."
         },
         {
-          "value": "info@slyusarevpartners.ru",
+          "value": "info@tecos.spb.ru",
           "channel": "Email",
           "type": "Corporate",
-          "source": "Слюсарев и партнёры official site",
-          "url": "https://slyusarevpartners.ru/",
+          "source": "ТЕКОС-ИНДУСТРИЯ official site",
+          "url": "https://tekoc.com/",
           "is_lpr": false,
           "notes": "Официальный корпоративный email компании."
         },
         {
-          "value": "https://hh.ru/vacancy/130054591",
+          "value": "https://spb.hh.ru/vacancy/130168544",
           "channel": "HH employer/vacancy route",
           "type": "Direct employer route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/130054591",
+          "url": "https://spb.hh.ru/vacancy/130168544",
           "is_lpr": false,
-          "notes": "Прямой маршрут работодателя по вакансии руководителя отдела продаж B2B."
+          "notes": "Прямой маршрут работодателя по вакансии руководителя нового e-commerce направления."
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ЮК «Слюсарев и партнёры» действует; ИНН 9703196184, ОГРН 1247700747678; генеральный директор Слюсарев Алексей Сергеевич.",
-          "url": "https://companies.rbc.ru/id/1247700747678-ooo-yukslyusarev-i-partnyoryi/",
-          "source": "РБК Компании / данные ЕГРЮЛ"
+          "claim": "ООО «ТЕКОС-ИНДУСТРИЯ» действует; ИНН 4705071791, ОГРН 1164704064821; генеральный директор Дворянкин Николай Валерьевич.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1164704064821/",
+          "source": "Т-Банк / данные ФНС и Росстата"
         },
         {
           "type": "SCALE",
-          "claim": "Официальный сайт публикует команду из 8 специалистов, работу по всей России и 1 000+ обслуженных/защищённых бизнесов; это подтверждает действующую команду и операционный масштаб выше микробизнеса без команды.",
-          "url": "https://slyusarevpartners.ru/",
-          "source": "Официальный сайт Слюсарев и партнёры"
+          "claim": "За 2025 год выручка ООО «ТЕКОС-ИНДУСТРИЯ» составила 716,45 млн ₽; актуальная численность около 100 сотрудников; работодатель сообщает о выпуске более 120 млн губок в 2025 году.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1164704064821/",
+          "source": "Т-Банк / ФНС; HeadHunter"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт компании указывает офис Москва, Дружинниковская 11/2, помещение 2/1; тот же адрес имеет ООО «ЮК «Слюсарев и партнёры» в актуальных реестровых данных и тот же адрес указан работодателем в вакансии.",
-          "url": "https://slyusarevpartners.ru/",
-          "source": "Официальный сайт + HeadHunter + РБК Компании"
+          "claim": "Официальный сайт прямо указывает ООО «ТЕКОС-ИНДУСТРИЯ», а вакансия HeadHunter опубликована тем же ООО; производственный адрес и реквизиты совпадают с реестровыми данными.",
+          "url": "https://tekoc.com/",
+          "source": "Официальный сайт + HeadHunter + реестровые данные"
         },
         {
           "type": "SIGNAL",
-          "claim": "Вакансия от 30.01.2026 требует с нуля создать B2B-отдел продаж юридических услуг и стать одним из лидеров растущей компании.",
-          "url": "https://hh.ru/vacancy/130054591",
+          "claim": "Вакансия от 04.02.2026 открыта в связи с запуском нового e-commerce направления и формированием команды с нуля; задачи включают стратегию, бюджетирование, KPI, ассортимент, pricing и управление командой.",
+          "url": "https://spb.hh.ru/vacancy/130168544",
           "source": "HeadHunter"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Слюсарев Алексей Сергеевич является генеральным директором и единственным учредителем ООО «ЮК «Слюсарев и партнёры»; официальный сайт также называет Алексея Слюсарева генеральным директором.",
-          "url": "https://companies.rbc.ru/id/1247700747678-ooo-yukslyusarev-i-partnyoryi/",
-          "source": "РБК Компании / данные ЕГРЮЛ + официальный сайт"
+          "claim": "Дворянкин Николай Валерьевич является генеральным директором и единственным учредителем ООО «ТЕКОС-ИНДУСТРИЯ».",
+          "url": "https://www.tbank.ru/business/contractor/legal/1164704064821/",
+          "source": "Т-Банк / данные ЕГРЮЛ"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует единый номер +7 903 77-22-555 и email info@slyusarevpartners.ru; дополнительный маршрут — прямой HH работодателя.",
-          "url": "https://slyusarevpartners.ru/",
+          "claim": "Официальный сайт публикует головной телефон +7 (812) 329-36-42 и email info@tecos.spb.ru; дополнительный маршрут — прямой HH работодателя.",
+          "url": "https://tekoc.com/",
           "source": "Официальный сайт + HeadHunter"
         }
       ]
