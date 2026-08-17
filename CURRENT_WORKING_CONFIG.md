@@ -1,32 +1,32 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 17.08.2026 13:05 MSK  
-**Последний полностью завершённый RUN:** `N5K-20260817-277`  
+**Версия:** 17.08.2026 14:00 MSK  
+**Последний полностью завершённый RUN:** `N5K-20260817-278`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **159 / 159**  
+**Физически подтверждённый canonical/contactable:** **162 / 162**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4841**  
+**Осталось:** **4838**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **159 / 159**;
+- physical canonical/contactable count: **162 / 162**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260817-277`.
+- последний завершённый RUN: `N5K-20260817-278`.
 
-## RUN 277
+## RUN 278
 
 Широкий discovery: **100 реально разных raw-кандидатов**. После дешёвого FAST GATE и deep-check физически интегрированы **3** новые уникальные компании:
 
-1. Metacommerce — ООО «МЕТАКОММЕРС», ИНН 7702402190.
-2. ARTGK / Системные Бизнес Решения — ООО «СИСТЕМНЫЕ БИЗНЕС РЕШЕНИЯ», ИНН 6670083405.
-3. ДЮКС / DUX — ООО «ДЮКС», ИНН 7710941397.
+1. ТД Микс-Трейд / Mix Trade — ООО «ТД МИКС-ТРЕЙД», ИНН 3443140563.
+2. FinFort — ООО «ФИНФОРТ РИСЕРЧ ЭНД ДЕВЕЛОПМЕНТ», ИНН 9715361386.
+3. КОРСУНЬ — ООО «КОРСУНЬ», ИНН 2308261947.
 
-Воронка: discovered 100 → fast gate 3 → size 3 → legal 3 → signal 3 → LPR 3 → contact 3 → qualified 3. Duplicates 0; excluded 97. Все три прошли повторный pre-write dedup и физически добавлены в master/contactable, contacts/evidence и RUN-shards.
+Воронка: discovered 100 → fast gate 3 → size 3 → legal 3 → signal 3 → LPR 3 → contact 3 → qualified 3. Second pre-write dedup among deep candidates: 0; excluded 97. Все три прошли физический integration guard и добавлены в master/contactable, contacts/evidence и RUN-shards.
 
-Для DUX при финальной проверке использованы актуальные данные за 2025 год: выручка 725,9 млн ₽ и 34 сотрудника; старое значение 2024 года не используется в текущем решении.
+Для решений использованы актуальные данные 2025–2026 годов; устаревшие значения не использовались при наличии более свежих подтверждений.
 
 ## Правила продолжения
 
@@ -43,7 +43,3 @@
 11. Outreach не выполнять.
 
 История предыдущих RUN хранится в `run_logs`, `reports`, shards и Git history.
-
-
-## Latest verified run N5K-20260817-278
-Canonical/contactable: 162/162. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

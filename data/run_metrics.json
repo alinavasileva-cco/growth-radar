@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-17T13:05:00+03:00",
+  "generated_at": "2026-08-17T14:00:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260817-277",
-  "current_run_id": "N5K-20260817-277",
+  "latest_completed_run_id": "N5K-20260817-278",
+  "current_run_id": "N5K-20260817-278",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 159,
-  "contactable_verified": 159,
+  "canonical_pool_verified": 162,
+  "contactable_verified": 162,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4841,
-  "run_277": {
+  "remaining_to_target": 4838,
+  "run_278": {
     "raw_discovered": 100,
     "fast_gate_passed": 3,
     "size_check_passed": 3,
