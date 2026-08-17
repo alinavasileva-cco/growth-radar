@@ -1,39 +1,39 @@
 {
-  "run_id": "N5K-20260817-280",
+  "run_id": "N5K-20260817-281",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T16:31:00+03:00",
+  "updated_at": "2026-08-17T17:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 165,
-    "current_contactable_count": 165,
-    "progress_added": 165,
-    "remaining": 4835
+    "current_canonical_count": 167,
+    "current_contactable_count": 167,
+    "progress_added": 167,
+    "remaining": 4833
   },
   "funnel": {
     "discovered": 100,
-    "fast_gate_passed": 7,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
+    "fast_gate_passed": 3,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 0,
-    "excluded": 98
+    "duplicates": 18,
+    "excluded": 80
   },
   "qualified_companies": [
-    "Термопрофи",
-    "Панова Тех / Panova Tech"
+    "НАРИТ / Национальная Академия Развития Информационных Технологий",
+    "ZASIDELIS"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "165_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "165_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "167_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "167_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
