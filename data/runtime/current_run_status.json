@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260817-271",
+  "run_id": "N5K-20260817-272",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T06:16:00+03:00",
+  "updated_at": "2026-08-17T06:57:15+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 151,
-    "current_contactable_count": 151,
-    "progress_added": 151,
-    "remaining": 4849
+    "current_canonical_count": 152,
+    "current_contactable_count": 152,
+    "progress_added": 152,
+    "remaining": 4848
   },
   "funnel": {
-    "discovered": 15,
+    "discovered": 32,
     "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 4,
-    "excluded": 10
+    "duplicates": 11,
+    "excluded": 20
   },
   "qualified_companies": [
-    "NetFlex Solution"
+    "Осмокод / OSMOCODE"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "151_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "151_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "152_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "152_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

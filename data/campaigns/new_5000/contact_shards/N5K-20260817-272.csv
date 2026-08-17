@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0296,N5K-0296-C01,Осмокод / OSMOCODE,9729306650,,Корпоративный маршрут,+7 (812) 448-55-90,Phone,Corporate,OSMOCODE official site,https://osmocode.ru/,NO,HIGH,2026-08-17,Официальный телефон компании.,N5K-20260817-272,new_5000
+N5K-0296,N5K-0296-C02,Осмокод / OSMOCODE,9729306650,,Корпоративный маршрут,ask@osmocode.ru,Email,Corporate,OSMOCODE official site,https://osmocode.ru/,NO,HIGH,2026-08-17,Официальный корпоративный email.,N5K-20260817-272,new_5000
+N5K-0296,N5K-0296-C03,Осмокод / OSMOCODE,9729306650,,Корпоративный маршрут,https://spb.hh.ru/vacancy/129868812,HH employer/vacancy route,Direct employer route,HeadHunter,https://spb.hh.ru/vacancy/129868812,NO,HIGH,2026-08-17,Прямой маршрут работодателя по вакансии руководителя отдела продаж.,N5K-20260817-272,new_5000
