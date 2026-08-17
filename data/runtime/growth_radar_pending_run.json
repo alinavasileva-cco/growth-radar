@@ -1,112 +1,130 @@
 {
-  "run_id": "N5K-20260817-276",
-  "updated_at": "2026-08-17T12:12:00+03:00",
+  "run_id": "N5K-20260817-277",
+  "updated_at": "2026-08-17T13:05:00+03:00",
   "funnel": {
-    "discovered": 20,
-    "fast_gate_passed": 5,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 6,
-    "excluded": 13
+    "discovered": 100,
+    "fast_gate_passed": 3,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 97
   },
-  "notes": "RUN 276 repair continued from physically verified baseline 155/155. The previously staged ООО ЮК Слюсарев и партнёры was confirmed by direct physical master inspection as an existing company N5K-0005 with the same INN 9703196184 and was removed. Together with Лесресурс and four other known existing companies, duplicate count is 6. Replacement candidate ТЕКОС-ИНДУСТРИЯ passed active legal entity, exact employer-to-legal and official-site match, current 2025 scale, fresh S1 new-direction signal, owner/CEO/LPR and official phone/email route. Exact INN 4705071791 had no match in the fetched physical master resource before staging. No outreach.",
+  "notes": "RUN 277 resumes from the staged 100-raw discovery batch. Three companies passed full deep-check and second dedup. Current 2025 scale data were rechecked before integration; DUX scale was refreshed to 2025 data. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0300",
-      "Brand": "ТЕКОС-ИНДУСТРИЯ / TEKOS",
-      "Legal Name": "ООО «ТЕКОС-ИНДУСТРИЯ»",
-      "INN": "4705071791",
-      "OGRN/OGRNIP": "1164704064821",
-      "Region": "Ленинградская область / Санкт-Петербург",
-      "City": "Санкт-Петербург",
-      "Segment": "FMCG / производство товаров для дома / e-commerce",
-      "Website": "https://tekoc.com/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 716,45 млн ₽ за 2025 год; 100 сотрудников; 25+ лет производственной истории бренда; 120 млн+ губок произведено в 2025 году.",
+      "Lead ID": "N5K-0301",
+      "Brand": "Metacommerce",
+      "Legal Name": "ООО «МЕТАКОММЕРС»",
+      "INN": "7702402190",
+      "OGRN/OGRNIP": "1167746546659",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "B2B SaaS / аналитика цен и ассортимента / IT",
+      "Website": "https://www.metacommerce.ru/",
+      "Revenue/Scale": "Действующее ООО; выручка 205 059 000 ₽ за 2025 год; ССЧ 21 по РБК Компании.",
       "Signal Level": "S1",
-      "Signal Summary": "4 февраля 2026 компания открыла руководителя нового e-commerce направления: запуск отдела с нуля, стратегия выхода в e-commerce, бюджетирование, KPI, ассортимент, ценообразование, команда и масштабирование продаж.",
-      "Signal Date": "2026-02-04",
-      "Signal Source": "https://spb.hh.ru/vacancy/130168544",
-      "Owner": "Дворянкин Николай Валерьевич — 100%",
-      "CEO": "Дворянкин Николай Валерьевич",
-      "LPR": "Дворянкин Николай Валерьевич",
-      "LPR Role": "Собственник 100% и генеральный директор / стратегический ЛПР",
-      "Primary Phone": "+7 (812) 329-36-42",
-      "Primary Email": "info@tecos.spb.ru",
-      "HH Contact": "https://spb.hh.ru/vacancy/130168544",
-      "Contact Form": "https://tekoc.com/",
-      "Contact Type": "Официальный корпоративный маршрут к собственнику/генеральному директору + прямой HH employer route",
-      "Contact Source": "Официальный сайт ТЕКОС-ИНДУСТРИЯ + HeadHunter + актуальные данные ФНС/реестров",
-      "Consulting Hypothesis": "Запуск и масштабирование нового e-commerce направления: канал-стратегия, P&L и unit-экономика, ассортимент и pricing, KPI, CRM/аналитика, организационная модель команды, связка e-commerce с производством и маркетингом и 90-дневный план запуска.",
+      "Signal Summary": "Компания находится в точке стратегической трансформации от кастомных B2B-сервисов к масштабируемым продуктам; требуется коммерческая и маркетинговая стратегия новой продуктовой линейки, перезапуск воронок, новые каналы и CRM-передача лидов.",
+      "Signal Date": "2026-01-17",
+      "Signal Source": "https://hh.ru/vacancy/129546872",
+      "Owner": "Минченков Павел Вячеславович; ООО «ФРИИ ИНВЕСТ»; Ашманов Игорь Станиславович",
+      "CEO": "Минченков Павел Вячеславович",
+      "LPR": "Минченков Павел Вячеславович",
+      "LPR Role": "Генеральный директор / соучредитель / практический ЛПР",
+      "Primary Phone": "+7 (495) 374-73-41",
+      "Primary Email": "hello@metacommerce.ru",
+      "HH Contact": "https://hh.ru/vacancy/129546872",
+      "Contact Form": "https://www.metacommerce.ru/contacts/",
+      "Contact Type": "Phone; Email; HH; Website",
+      "Contact Source": "Официальный сайт Metacommerce; HeadHunter; РБК Компании",
+      "Consulting Hypothesis": "GTM и коммерческая архитектура перехода к продуктовой модели: ICP, воронка sales+marketing, CRM, unit economics, product marketing, партнёрские каналы и forecasting.",
       "contacts": [
-        {
-          "value": "+7 (812) 329-36-42",
-          "channel": "Phone",
-          "type": "Corporate",
-          "source": "ТЕКОС-ИНДУСТРИЯ official site",
-          "url": "https://tekoc.com/",
-          "is_lpr": false,
-          "notes": "Официальный телефон головного офиса и отдела продаж; использовать как корпоративный маршрут передачи сообщения ЛПР."
-        },
-        {
-          "value": "info@tecos.spb.ru",
-          "channel": "Email",
-          "type": "Corporate",
-          "source": "ТЕКОС-ИНДУСТРИЯ official site",
-          "url": "https://tekoc.com/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный email компании."
-        },
-        {
-          "value": "https://spb.hh.ru/vacancy/130168544",
-          "channel": "HH employer/vacancy route",
-          "type": "Direct employer route",
-          "source": "HeadHunter",
-          "url": "https://spb.hh.ru/vacancy/130168544",
-          "is_lpr": false,
-          "notes": "Прямой маршрут работодателя по вакансии руководителя нового e-commerce направления."
-        }
+        {"value": "+7 (495) 374-73-41", "channel": "Phone", "type": "Corporate", "source": "Metacommerce official site", "url": "https://www.metacommerce.ru/resources/about", "is_lpr": false, "notes": "Официальный телефон компании для продаж и общих вопросов."},
+        {"value": "hello@metacommerce.ru", "channel": "Email", "type": "Corporate", "source": "Metacommerce official site", "url": "https://www.metacommerce.ru/resources/about", "is_lpr": false, "notes": "Официальный email для продаж и общих вопросов."},
+        {"value": "https://hh.ru/vacancy/129546872", "channel": "HH", "type": "Direct employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129546872", "is_lpr": false, "notes": "Актуальный сигнал стратегической трансформации и прямой маршрут работодателя."}
       ],
       "evidence": [
-        {
-          "type": "LEGAL",
-          "claim": "ООО «ТЕКОС-ИНДУСТРИЯ» действует; ИНН 4705071791, ОГРН 1164704064821; генеральный директор Дворянкин Николай Валерьевич.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1164704064821/",
-          "source": "Т-Банк / данные ФНС и Росстата"
-        },
-        {
-          "type": "SCALE",
-          "claim": "За 2025 год выручка ООО «ТЕКОС-ИНДУСТРИЯ» составила 716,45 млн ₽; актуальная численность около 100 сотрудников; работодатель сообщает о выпуске более 120 млн губок в 2025 году.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1164704064821/",
-          "source": "Т-Банк / ФНС; HeadHunter"
-        },
-        {
-          "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт прямо указывает ООО «ТЕКОС-ИНДУСТРИЯ», а вакансия HeadHunter опубликована тем же ООО; производственный адрес и реквизиты совпадают с реестровыми данными.",
-          "url": "https://tekoc.com/",
-          "source": "Официальный сайт + HeadHunter + реестровые данные"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "Вакансия от 04.02.2026 открыта в связи с запуском нового e-commerce направления и формированием команды с нуля; задачи включают стратегию, бюджетирование, KPI, ассортимент, pricing и управление командой.",
-          "url": "https://spb.hh.ru/vacancy/130168544",
-          "source": "HeadHunter"
-        },
-        {
-          "type": "OWNER_LPR",
-          "claim": "Дворянкин Николай Валерьевич является генеральным директором и единственным учредителем ООО «ТЕКОС-ИНДУСТРИЯ».",
-          "url": "https://www.tbank.ru/business/contractor/legal/1164704064821/",
-          "source": "Т-Банк / данные ЕГРЮЛ"
-        },
-        {
-          "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует головной телефон +7 (812) 329-36-42 и email info@tecos.spb.ru; дополнительный маршрут — прямой HH работодателя.",
-          "url": "https://tekoc.com/",
-          "source": "Официальный сайт + HeadHunter"
-        }
+        {"type": "LEGAL_SCALE", "claim": "ООО «МЕТАКОММЕРС», ИНН 7702402190, ОГРН 1167746546659; действует; выручка 205 059 000 ₽ за 2025 год; ССЧ 21.", "url": "https://companies.rbc.ru/id/1167746546659-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-metakommers/", "source": "РБК Компании"},
+        {"type": "SIGNAL", "claim": "Стратегическая трансформация от кастомных B2B-сервисов к масштабируемым продуктам; коммерческая стратегия, новые каналы, перезапуск воронки и CRM.", "url": "https://hh.ru/vacancy/129546872", "source": "HeadHunter"},
+        {"type": "CONTACT", "claim": "Официальные контакты: hello@metacommerce.ru; +7 495 374-73-41.", "url": "https://www.metacommerce.ru/resources/about", "source": "Metacommerce official site"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0302",
+      "Brand": "ARTGK / Системные Бизнес Решения",
+      "Legal Name": "ООО «СИСТЕМНЫЕ БИЗНЕС РЕШЕНИЯ»",
+      "INN": "6670083405",
+      "OGRN/OGRNIP": "1056603539541",
+      "Region": "Свердловская область / Республика Башкортостан",
+      "City": "Екатеринбург / Уфа",
+      "Segment": "IT / web / digital / Битрикс24 / B2B",
+      "Website": "https://artgk.ru/",
+      "Revenue/Scale": "Действующее ООО; выручка 45 226 000 ₽ за 2025 год; среднесписочная численность 13–14 сотрудников по актуальным реестровым агрегаторам.",
+      "Signal Level": "S1",
+      "Signal Summary": "Компания заявляет следующий этап роста и ищет РОП, который должен строить систему, масштабировать результат и управлять цифрами; прямой сигнал систематизации коммерческой функции.",
+      "Signal Date": "2026-01-23",
+      "Signal Source": "https://ufa.hh.ru/vacancy/129792938",
+      "Owner": "Ковтун Максим Александрович; Ковтун Оксана Александровна; Быков Геннадий Алексеевич",
+      "CEO": "Быков Геннадий Алексеевич",
+      "LPR": "Быков Геннадий Алексеевич",
+      "LPR Role": "Директор / практический ЛПР",
+      "Primary Phone": "+7 (347) 200-85-18",
+      "Primary Email": "sale@artgk.ru",
+      "HH Contact": "https://ufa.hh.ru/vacancy/129792938",
+      "Contact Form": "https://artgk.ru/contacts/",
+      "Contact Type": "Phone; Email; HH; Website",
+      "Contact Source": "Официальный сайт ARTGK; HeadHunter; РБК Компании",
+      "Consulting Hypothesis": "Систематизация B2B-продаж digital/IT: сегментация услуг, CRM-воронка, KPI и forecasting, развитие команды, связка маркетинга и продаж и управление маржинальностью портфеля.",
+      "contacts": [
+        {"value": "+7 (347) 200-85-18", "channel": "Phone", "type": "Corporate", "source": "ARTGK official site", "url": "https://artgk.ru/contacts/", "is_lpr": false, "notes": "Официальный телефон офиса Уфа."},
+        {"value": "sale@artgk.ru", "channel": "Email", "type": "Corporate", "source": "ARTGK official site", "url": "https://artgk.ru/contacts/", "is_lpr": false, "notes": "Официальный sales email."},
+        {"value": "https://ufa.hh.ru/vacancy/129792938", "channel": "HH", "type": "Direct employer route", "source": "HeadHunter", "url": "https://ufa.hh.ru/vacancy/129792938", "is_lpr": false, "notes": "Прямая вакансия РОП на следующем этапе роста."}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «СИСТЕМНЫЕ БИЗНЕС РЕШЕНИЯ», ИНН 6670083405, ОГРН 1056603539541; действует; директор Быков Геннадий Алексеевич.", "url": "https://artgk.ru/company/requisites/", "source": "ARTGK official site"},
+        {"type": "SCALE", "claim": "Выручка 45 226 000 ₽ за 2025 год; актуальная численность 13–14 сотрудников.", "url": "https://companies.rbc.ru/id/1056603539541-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-sistemnyie-biznes-resheniya/", "source": "РБК Компании / актуальные реестровые агрегаторы"},
+        {"type": "SIGNAL", "claim": "Следующий этап роста; нужен РОП, который строит систему, масштабирует результат и управляет цифрами.", "url": "https://ufa.hh.ru/vacancy/129792938", "source": "HeadHunter"},
+        {"type": "CONTACT", "claim": "Официальные контакты: +7 347 200-85-18; sale@artgk.ru.", "url": "https://artgk.ru/contacts/", "source": "ARTGK official site"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0303",
+      "Brand": "ДЮКС / DUX",
+      "Legal Name": "ООО «ДЮКС»",
+      "INN": "7710941397",
+      "OGRN/OGRNIP": "1137746493697",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Производство приборов учёта / ремонт и отделка / B2B+B2C",
+      "Website": "https://duxm.ru/",
+      "Revenue/Scale": "Действующее ООО; выручка 725,9 млн ₽ за 2025 год; 34 сотрудника за 2025 год; собственник и генеральный директор — Орлов Денис Владимирович.",
+      "Signal Level": "S1",
+      "Signal Summary": "Компания планирует активный рост: стратегия на 1–3 года, увеличение выручки и прибыли, запуск новых продуктов и сервисов, партнёрства с застройщиками/УК, оптимизация воронки, CRM, unit economics и формирование команды развития/продаж.",
+      "Signal Date": "2026-02-07",
+      "Signal Source": "https://hh.ru/vacancy/129626471",
+      "Owner": "Орлов Денис Владимирович 100%",
+      "CEO": "Орлов Денис Владимирович",
+      "LPR": "Орлов Денис Владимирович",
+      "LPR Role": "Собственник 100% и генеральный директор",
+      "Primary Phone": "+7 (495) 657-87-07",
+      "Primary Email": "info@duxm.ru",
+      "HH Contact": "https://hh.ru/vacancy/129626471",
+      "Contact Form": "https://duxm.ru/kontaktyi",
+      "Contact Type": "Phone; Email; HH; Website",
+      "Contact Source": "Официальный сайт DUX; HeadHunter; актуальные реестровые данные",
+      "Consulting Hypothesis": "Стратегия роста и продуктовая экспансия: B2B/B2C сегментация, партнёрская модель с девелоперами и УК, CRM-воронка, unit economics, KPI и 90-дневная программа развития.",
+      "contacts": [
+        {"value": "+7 (495) 657-87-07", "channel": "Phone", "type": "Corporate", "source": "DUX official site", "url": "https://duxm.ru/kontaktyi", "is_lpr": false, "notes": "Официальный телефон компании."},
+        {"value": "info@duxm.ru", "channel": "Email", "type": "Corporate", "source": "DUX official site", "url": "https://duxm.ru/kontaktyi", "is_lpr": false, "notes": "Официальный email компании."},
+        {"value": "https://hh.ru/vacancy/129626471", "channel": "HH", "type": "Direct employer route", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129626471", "is_lpr": false, "notes": "Прямая вакансия директора по развитию с подчинением собственнику."}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SCALE", "claim": "ООО «ДЮКС», ИНН 7710941397, ОГРН 1137746493697; действует; Орлов Денис Владимирович — генеральный директор и 100% учредитель; 34 сотрудника; выручка 725,9 млн ₽ за 2025 год.", "url": "https://reputation.ru/ogrn/1137746493697", "source": "Актуальные реестровые данные"},
+        {"type": "SIGNAL", "claim": "Планы активного роста: стратегия 1–3 года, рост выручки и прибыли, новые продукты, партнёрства, CRM, unit economics и команда развития/продаж.", "url": "https://hh.ru/vacancy/129626471", "source": "HeadHunter"},
+        {"type": "CONTACT", "claim": "Официальные контакты: +7 495 657-87-07; info@duxm.ru.", "url": "https://duxm.ru/kontaktyi", "source": "DUX official site"}
       ]
     }
   ]
