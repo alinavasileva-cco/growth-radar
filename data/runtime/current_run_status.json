@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260817-270",
+  "run_id": "N5K-20260817-271",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T04:57:09+03:00",
+  "updated_at": "2026-08-17T06:16:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 150,
-    "current_contactable_count": 150,
-    "progress_added": 150,
-    "remaining": 4850
+    "current_canonical_count": 151,
+    "current_contactable_count": 151,
+    "progress_added": 151,
+    "remaining": 4849
   },
   "funnel": {
-    "discovered": 26,
-    "fast_gate_passed": 5,
+    "discovered": 15,
+    "fast_gate_passed": 6,
     "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 1,
-    "duplicates": 9,
-    "excluded": 16
+    "duplicates": 4,
+    "excluded": 10
   },
   "qualified_companies": [
-    "A-Group / А-Груп"
+    "NetFlex Solution"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "150_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "150_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "151_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "151_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
