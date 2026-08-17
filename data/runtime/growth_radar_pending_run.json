@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260817-280",
-  "updated_at": "2026-08-17T16:28:00+03:00",
+  "updated_at": "2026-08-17T16:31:00+03:00",
   "funnel": {
     "discovered": 100,
     "fast_gate_passed": 7,
@@ -13,7 +13,7 @@
     "duplicates": 0,
     "excluded": 98
   },
-  "notes": "RUN 280: 100 distinct raw company/employer names were individually identified across independent HeadHunter vacancy streams plus fresh 2026 industrial expansion/news catalogues. FAST GATE was applied before deep-check. Two strongest candidates passed fresh 2025/2026 scale, legal, S1-S3 signal, LPR/contact and pre-write repository search by INN: TERMOPROFI and PANOVA TECH. Lalibela Coffee was excluded because fresh 2025 revenue exceeds the current scale gate. Large public/state-linked groups and recruiting intermediaries were excluded early. No outreach.",
+  "notes": "RUN 280: 100 distinct raw company/employer names were individually identified across independent HeadHunter vacancy streams plus fresh 2026 industrial expansion/news catalogues. FAST GATE was applied before deep-check. Two strongest candidates passed fresh 2025/2026 scale, legal, S1-S3 signal, LPR/contact and pre-write repository search by INN: TERMOPROFI and PANOVA TECH. Lalibela Coffee was excluded because fresh 2025 revenue exceeds the current scale gate. Large public/state-linked groups and recruiting intermediaries were excluded early. First integration attempt failed before writes because optional HH Contact fields were absent from the pending schema; repaired in the same RUN. No outreach.",
   "raw_candidates": [
     "АИ Авто","Марроб Рус","Chacha's Club","ГК Ангел","Grand Line","Деметра","ПСВ","Hugency","BINAGroup","Агротехнологии","ВеГа","Нацтранс","Heaad","Через не могу","АРТКАРС","ПАРадокс","СОФТ АЛЬЯНС","Flaconia Pro","DIALET","ТракМоторс","B.MATCH","Alpine floor","xHuman Sales","Автохомут","Terri Group","PAPATOOLS","Magnitof","Рубкофф","ReAspekt","AUTO PROTECT","ЮСМАЙЛ","Торговый дом Славич","Термопрофи","Панова Тех","Вэлд Эксперт","Лалибела кофе","Сота","ВладПолиПром","Ал-групп","Брокс","Союзтекстиль-СТ","ПК Центр упаковки","Некс-Т","Курсар","RuAutoTrailer","Енисейлесозавод","Инкаб Дальний Восток","Семаргл","АФС-Технологии","Салаватстекло Каспий","ПСК Фарма","ИнтехПро","Руском","Сиб-Агро ОЙЛ","Белая Долина","Октава ДМ","Инкаб","Световые инновационные системы","Русские газовые турбины","Лалибела Пэкиджинг","ИРЗ-Фотон","Завод КДМ","Упаковочные системы","СтройМинерал","Добрый картон","Совитал","ДиПОС","Муроммашзавод","Русский бойлер","Р-Опра","Гекса-Лотос","Аквариус","Птицефабрика Тульская","НПО Компас","ТД АДЛ","НАРТИС","Rubetek","Октава Дизайн и Маркетинг","ГК Феррум","Иннованта","Пожгидравлика","КАМА","Свеза","Агросила","Штамповые технологии","Инкаб ДВ","АФС-Технологии ХимРар","Таврический завод минеральной ваты","Златоустовский металлургический завод","Сиб-Агро ОЙЛ Тулун","ГК Гекса","Уралхимпласт","Кальдера","Форвард Экспресс","Систэм Электрик","ТД Микс-Трейд","FinFort","КОРСУНЬ","ЭКСПРУС","UPMARKET"
   ],
@@ -39,6 +39,7 @@
       "LPR Role": "Генеральный директор / совладелец 34% / практический ЛПР",
       "Primary Phone": "+7 (391) 286-97-12",
       "Primary Email": "sale@termoprofi.pro",
+      "HH Contact": "",
       "Contact Form": "https://termoprofi.pro/contact",
       "Contact Type": "Corporate Phone; Sales Email; Website",
       "Contact Source": "Официальный сайт Термопрофи; актуальные реестровые данные; свежая новость расширения производства",
@@ -76,6 +77,7 @@
       "LPR Role": "Генеральный директор / практический ЛПР",
       "Primary Phone": "+7-968-173-0438",
       "Primary Email": "ryakovlev@panovatech.ru",
+      "HH Contact": "",
       "Contact Form": "https://www.panovatech.ru/",
       "Contact Type": "Direct CEO Email; Corporate Phone; Website",
       "Contact Source": "Отраслевой выставочный каталог Мир Климата; официальный домен Panova Tech; актуальные реестровые данные",
