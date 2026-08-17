@@ -1,29 +1,33 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 17.08.2026 22:01 MSK  
-**Последний полностью завершённый RUN:** `N5K-20260817-286`  
-**Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **174 / 174**  
+**Версия:** 18.08.2026 01:08 MSK  
+**Последний полностью завершённый RUN:** `N5K-20260817-287`  
+**Текущий RUN:** `N5K-20260818-288` — integration pending, НЕ засчитан  
+**Статус канонической базы:** ACTIVE / baseline integrity PASS  
+**Физически подтверждённый canonical/contactable:** **175 / 175**  
+**Qualified staged not counted:** **1**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4826**  
+**Осталось по подтверждённой базе:** **4825**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **174 / 174**;
+- physical canonical/contactable count: **175 / 175**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260817-286`.
+- последний завершённый RUN: `N5K-20260817-287`;
+- RUN 288 не считается завершённым до физической интеграции и повторной проверки HEAD.
 
-## RUN 286
+## RUN 287 — последний завершённый
 
-Широкий discovery: **100 реальных разных raw-кандидатов** из нескольких независимых поисковых потоков. FAST GATE применён до deep-check. Физически интегрированы **2** новые уникальные компании:
+Италспорт+ / ООО «ИТАЛСПОРТ+» физически интегрирован. Canonical/contactable: 175/175. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-1. Blue Sleep / Блу Слип — ООО «БЛУ СЛИП», ИНН 9718075520.
-2. BrandMonitor / Бренд Монитор — ООО «БРЕНД МОНИТОР», ИНН 7701405022.
+## RUN 288 — текущий
 
-Воронка: discovered 100 → fast gate 4 → size 3 → legal 3 → signal 3 → LPR 3 → contact 2 → qualified 2. Duplicates: 7; excluded: 91. Для решений использованы актуальные сведения 2025–2026: действующие юрлица, свежая выручка, текущие руководители/собственники или практические ЛПР, вакансии 2026 года и текущие официальные контактные маршруты. IT-Works не квалифицирован: актуальный официальный российский контактный маршрут не был подтверждён на достаточном уровне; иностранные одноимённые сайты не использовались. Physical master/contactable: 174/174, integrity PASS, orphan 0/0.
+Широкий discovery: **100 реальных разных raw-сигналов** из нескольких поисковых потоков. После FAST GATE и deep-check квалифицирована **1** новая компания: Принт-Хаус / ООО «ПРИНТ-ХАУС», ИНН 5260325240. Физический pre-write dedup по master/contactable не выявил ИНН. Компания записана в `pending_batches`, но **не засчитана**: GitHub Actions integration workflow не создал run ни для batched commit, ни для последующего contents-commit. Подтверждённый счётчик поэтому остаётся 175/175.
+
+Текущая воронка RUN 288: discovered 100 → fast gate 1 → size 1 → legal 1 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 0. Final pre-write duplicates: 0; excluded: 99. Active WIP: 1. Outreach: 0.
 
 ## Правила продолжения
 
@@ -40,7 +44,3 @@
 11. Outreach не выполнять.
 
 История предыдущих RUN хранится в `run_logs`, `reports`, shards и Git history.
-
-
-## Latest verified run N5K-20260817-287
-Canonical/contactable: 175/175. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

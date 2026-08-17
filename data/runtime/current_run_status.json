@@ -1,9 +1,9 @@
 {
-  "run_id": "N5K-20260817-287",
+  "run_id": "N5K-20260818-288",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
-  "updated_at": "2026-08-17T22:57:51+03:00",
-  "stage": "COMPLETE",
+  "status": "BLOCKED_INTEGRATION",
+  "updated_at": "2026-08-18T01:08:00+03:00",
+  "stage": "INTEGRATION_PENDING",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
@@ -13,8 +13,8 @@
     "remaining": 4825
   },
   "funnel": {
-    "discovered": 54,
-    "fast_gate_passed": 2,
+    "discovered": 100,
+    "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -22,17 +22,15 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 53
+    "excluded": 99
   },
-  "qualified_companies": [
-    "Италспорт+ / Italsport+"
-  ],
-  "integrity_status": "PASS",
+  "qualified_staged_not_counted": ["Принт-Хаус / Print-House"],
+  "integrity_status": "BASELINE_PASS_RUN_NOT_FINAL",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "active_wip": 0,
-  "physical_master_state": "175_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "175_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "active_wip": 1,
+  "physical_master_state": "175_DATA_ROWS_PLUS_HEADER_CONFIRMED_BEFORE_RUN_288",
+  "physical_contactable_state": "175_DATA_ROWS_PLUS_HEADER_CONFIRMED_BEFORE_RUN_288",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "Pending batch for RUN 288 is committed, but GitHub Actions integration workflow did not start for either staged commit SHA; candidate is not counted until physical integration succeeds."
 }

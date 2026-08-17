@@ -7,16 +7,16 @@
   "progress_added": 175,
   "remaining_to_total_target": 4825,
   "remaining": 4825,
-  "qualified_staged_not_counted": 0,
-  "integrity_status": "PASS",
+  "qualified_staged_not_counted": 1,
+  "integrity_status": "PASS_BASELINE_RUN_288_NOT_FINAL",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-17T22:57:51+03:00",
+  "updated_at": "2026-08-18T01:08:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-286",
-  "current_run_id": "N5K-20260817-286",
-  "last_run_id": "N5K-20260817-287",
+  "last_completed_run_id": "N5K-20260817-287",
+  "current_run_id": "N5K-20260818-288",
+  "last_run_id": "N5K-20260818-288",
   "latest_completed_run": "N5K-20260817-287",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 286 completed: 100 distinct raw employer/company signals screened with FAST GATE before deep-check; 2 unique fully qualified companies physically integrated — Blue Sleep / ООО БЛУ СЛИП, INN 9718075520; BrandMonitor / ООО БРЕНД МОНИТОР, INN 7701405022; canonical/contactable 174/174; integrity PASS; orphan 0/0; outreach 0. Only current 2025-2026 evidence was used for qualification."
+  "note": "RUN 287 is the latest completed run: 175 canonical/contactable, integrity PASS, orphan 0/0. RUN 288 screened 100 distinct raw signals; Print-House (INN 5260325240) passed all qualification gates and is staged but NOT COUNTED because the integration workflow did not start. Outreach 0."
 }
