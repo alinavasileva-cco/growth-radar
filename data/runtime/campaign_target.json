@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-17T17:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-280",
-  "current_run_id": "N5K-20260817-280",
+  "last_completed_run_id": "N5K-20260817-281",
+  "current_run_id": "N5K-20260817-281",
   "last_run_id": "N5K-20260817-281",
   "latest_completed_run": "N5K-20260817-281",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 280 completed: 100 raw candidates processed; 2 fully qualified companies physically integrated; canonical/contactable 165/165; integrity PASS; orphan 0/0; outreach 0. Initial integration schema error was repaired before successful physical integration."
+  "note": "RUN 281 completed: 100 raw candidates processed; 2 fully qualified companies physically integrated; canonical/contactable 167/167; integrity PASS; orphan 0/0; outreach 0. UniversalStroy was excluded at LPR gate because fresh 2026 sources conflict on current leadership; stale data was not used."
 }
