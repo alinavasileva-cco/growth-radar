@@ -1,39 +1,38 @@
 {
-  "run_id": "N5K-20260817-282",
+  "run_id": "N5K-20260817-283",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T18:00:00+03:00",
+  "updated_at": "2026-08-17T19:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 169,
-    "current_contactable_count": 169,
-    "progress_added": 169,
-    "remaining": 4831
+    "current_canonical_count": 170,
+    "current_contactable_count": 170,
+    "progress_added": 170,
+    "remaining": 4830
   },
   "funnel": {
     "discovered": 100,
-    "fast_gate_passed": 10,
+    "fast_gate_passed": 3,
     "size_check_passed": 2,
     "legal_match_passed": 2,
     "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 7,
-    "excluded": 91
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 12,
+    "excluded": 87
   },
   "qualified_companies": [
-    "Инфомаксимум / Proceset",
-    "АгроПартнер"
+    "Ecoflight / ЦЭБ ГА"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "169_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "169_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "170_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "170_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
