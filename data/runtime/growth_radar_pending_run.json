@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260817-276",
-  "updated_at": "2026-08-17T11:03:37+03:00",
+  "updated_at": "2026-08-17T11:07:40+03:00",
   "funnel": {
     "discovered": 20,
     "fast_gate_passed": 5,
@@ -10,102 +10,102 @@
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 4,
-    "excluded": 15
+    "duplicates": 5,
+    "excluded": 14
   },
-  "notes": "Accelerated discovery continued from physically verified RUN N5K-20260817-275 baseline 155/155. Twenty distinct employer/company signals were individually reviewed from HeadHunter search streams and supporting fresh legal/official-site checks; no larger raw count is claimed. Four signals were known physical campaign duplicates from prior runs (SOFT ALLIANCE, FCB-REGION, TempStroySistema and Flaconia Pro). Fifteen were excluded at fast/deep gates for recruitment-intermediary status, materially oversized profile, ambiguous employer-to-legal match, insufficient fresh scale confirmation, or failure to complete the required legal/LPR/contact chain. ООО Лесресурс at Profsoyuznaya 93A passed current active legal entity, 2025 scale, exact vacancy-address-to-official-legal-address match, current S1 sales-system signal, owner/CEO/LPR and official phone/email plus direct HH route. Exact INN 7728351582 was absent from repository code search; final physical dedup is enforced again by the integration workflow before append. No outreach.",
+  "notes": "Accelerated discovery continued from physically verified RUN N5K-20260817-275 baseline 155/155. Twenty distinct employer/company signals were individually reviewed; no larger raw count is claimed. The first deep-qualified candidate, ООО Лесресурс INN 7728351582, was rejected by the physical pre-write DEDUP_GUARD despite repository code search returning no hit, so it was reclassified as the fifth duplicate and removed from pending. Four other known duplicates were SOFT ALLIANCE, FCB-REGION, TempStroySistema and Flaconia Pro. Fourteen signals were excluded for recruitment-intermediary status, materially oversized profile, ambiguous employer-to-legal match, insufficient fresh scale confirmation, or failure to complete the legal/LPR/contact chain. ООО ЮК Слюсарев и партнёры then passed active legal entity, exact vacancy/official-site/legal-address match, operational scale evidenced by its published team and national client base, current S1 sales-system signal, owner/CEO/LPR and official phone/email plus direct HH route. Exact INN 9703196184 was absent from repository code search; final physical dedup is enforced again by the integration workflow before append. No outreach.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0300",
-      "Brand": "Лесресурс / ЛПК Лесресурс",
-      "Legal Name": "ООО «ЛЕСРЕСУРС»",
-      "INN": "7728351582",
-      "OGRN/OGRNIP": "5167746233342",
+      "Brand": "Слюсарев и партнёры",
+      "Legal Name": "ООО «ЮРИДИЧЕСКАЯ КОМПАНИЯ «СЛЮСАРЕВ И ПАРТНЁРЫ»",
+      "INN": "9703196184",
+      "OGRN/OGRNIP": "1247700747678",
       "Region": "Москва",
       "City": "Москва",
-      "Segment": "Оптовая торговля лесоматериалами / стройматериалы / B2B",
-      "Website": "https://lesresurs1.com/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 183 704 000 ₽ за 2025 год; 12–14 сотрудников по свежим открытым реестровым источникам.",
+      "Segment": "Юридический и налоговый консалтинг / B2B",
+      "Website": "https://slyusarevpartners.ru/",
+      "Revenue/Scale": "Действующее частное ООО; официальный сайт публикует команду из 8 специалистов и заявляет 1 000+ спасённых бизнесов; компания работает по всей России. Использована текущая операционная шкала, без выдуманной финансовой оценки.",
       "Signal Level": "S1",
-      "Signal Summary": "8 февраля 2026 компания открыла вакансию руководителя отдела продаж с прямой задачей создать отдел продаж с нуля, формировать и контролировать план продаж, анализировать продажи, обучать сотрудников и работать в CRM amoCRM.",
-      "Signal Date": "2026-02-08",
-      "Signal Source": "https://hh.ru/vacancy/130260470",
-      "Owner": "Пилосян Исраел Арменакович — 100%",
-      "CEO": "Пилосян Исраел Арменакович",
-      "LPR": "Пилосян Исраел Арменакович",
+      "Signal Summary": "30 января 2026 компания открыла руководителя отдела продаж юридических услуг B2B с прямой задачей с нуля создать отдел продаж и стать одним из лидеров растущей компании.",
+      "Signal Date": "2026-01-30",
+      "Signal Source": "https://hh.ru/vacancy/130054591",
+      "Owner": "Слюсарев Алексей Сергеевич — 100%",
+      "CEO": "Слюсарев Алексей Сергеевич",
+      "LPR": "Слюсарев Алексей Сергеевич",
       "LPR Role": "Собственник 100% и генеральный директор / практический ЛПР",
-      "Primary Phone": "8 (800) 301-36-60",
-      "Primary Email": "info@lesresurs1.ru",
-      "HH Contact": "https://hh.ru/vacancy/130260470",
-      "Contact Form": "https://lesresurs1.com/контакты/",
-      "Contact Type": "Официальный корпоративный маршрут к собственнику/генеральному директору через отдел продаж + прямой HH employer route",
-      "Contact Source": "Официальный сайт ЛПК Лесресурс + HeadHunter + актуальные реестровые данные",
-      "Consulting Hypothesis": "Построение системного B2B-отдела продаж с нуля: сегментация клиентской базы, CRM-воронка и стандарты квалификации, KPI и мотивация, pipeline/forecast, связка продаж со складом и маржинальностью и 90-дневный план запуска.",
+      "Primary Phone": "+7 903 77-22-555",
+      "Primary Email": "info@slyusarevpartners.ru",
+      "HH Contact": "https://hh.ru/vacancy/130054591",
+      "Contact Form": "https://slyusarevpartners.ru/",
+      "Contact Type": "Официальный корпоративный маршрут к собственнику/генеральному директору + прямой HH employer route",
+      "Contact Source": "Официальный сайт Слюсарев и партнёры + HeadHunter + актуальные реестровые данные",
+      "Consulting Hypothesis": "Построение системного B2B-отдела продаж юридического и налогового консалтинга: ICP и сегментация, CRM-воронка, квалификация лидов, KPI и мотивация, pipeline/forecast, связка экспертного маркетинга и продаж и 90-дневный план запуска.",
       "contacts": [
         {
-          "value": "8 (800) 301-36-60",
+          "value": "+7 903 77-22-555",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "ЛПК Лесресурс official contacts page",
-          "url": "https://lesresurs1.com/контакты/",
+          "source": "Слюсарев и партнёры official site",
+          "url": "https://slyusarevpartners.ru/",
           "is_lpr": false,
-          "notes": "Официальный многоканальный телефон отдела продаж; использовать как маршрут передачи сообщения собственнику/генеральному директору."
+          "notes": "Официальный единый номер компании; использовать как маршрут передачи сообщения собственнику/генеральному директору."
         },
         {
-          "value": "info@lesresurs1.ru",
+          "value": "info@slyusarevpartners.ru",
           "channel": "Email",
           "type": "Corporate",
-          "source": "ЛПК Лесресурс official contacts page",
-          "url": "https://lesresurs1.com/контакты/",
+          "source": "Слюсарев и партнёры official site",
+          "url": "https://slyusarevpartners.ru/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный email отдела продаж."
+          "notes": "Официальный корпоративный email компании."
         },
         {
-          "value": "https://hh.ru/vacancy/130260470",
+          "value": "https://hh.ru/vacancy/130054591",
           "channel": "HH employer/vacancy route",
           "type": "Direct employer route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/130260470",
+          "url": "https://hh.ru/vacancy/130054591",
           "is_lpr": false,
-          "notes": "Прямой маршрут работодателя по вакансии руководителя отдела продаж."
+          "notes": "Прямой маршрут работодателя по вакансии руководителя отдела продаж B2B."
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «Лесресурс» действует; ИНН 7728351582, ОГРН 5167746233342; генеральный директор Пилосян Исраел Арменакович.",
-          "url": "https://companies.rbc.ru/id/5167746233342-ooo-lesresurs/",
+          "claim": "ООО «ЮК «Слюсарев и партнёры» действует; ИНН 9703196184, ОГРН 1247700747678; генеральный директор Слюсарев Алексей Сергеевич.",
+          "url": "https://companies.rbc.ru/id/1247700747678-ooo-yukslyusarev-i-partnyoryi/",
           "source": "РБК Компании / данные ЕГРЮЛ"
         },
         {
           "type": "SCALE",
-          "claim": "Выручка ООО «Лесресурс» за 2025 год составляет 183 704 000 ₽; свежие открытые реестровые источники показывают 12–14 сотрудников.",
-          "url": "https://companies.rbc.ru/amp/ogrn/5167746233342/",
-          "source": "РБК Компании + свежий реестровый источник"
+          "claim": "Официальный сайт публикует команду из 8 специалистов, работу по всей России и 1 000+ обслуженных/защищённых бизнесов; это подтверждает действующую команду и операционный масштаб выше микробизнеса без команды.",
+          "url": "https://slyusarevpartners.ru/",
+          "source": "Официальный сайт Слюсарев и партнёры"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Вакансия ООО Лесресурс указывает место работы Москва, Профсоюзная 93А; официальный сайт ЛПК Лесресурс публикует то же юридическое лицо, адрес, ИНН 7728351582 и ОГРН 5167746233342.",
-          "url": "https://lesresurs1.com/about/реквизиты-лпк-лесресурс/",
-          "source": "Официальный сайт ЛПК Лесресурс + HeadHunter"
+          "claim": "Официальный сайт компании указывает офис Москва, Дружинниковская 11/2, помещение 2/1; тот же адрес имеет ООО «ЮК «Слюсарев и партнёры» в актуальных реестровых данных и тот же адрес указан работодателем в вакансии.",
+          "url": "https://slyusarevpartners.ru/",
+          "source": "Официальный сайт + HeadHunter + РБК Компании"
         },
         {
           "type": "SIGNAL",
-          "claim": "Вакансия от 08.02.2026 требует создать отдел продаж с нуля, вести планирование и аналитику продаж, обучение сотрудников и CRM amoCRM.",
-          "url": "https://hh.ru/vacancy/130260470",
+          "claim": "Вакансия от 30.01.2026 требует с нуля создать B2B-отдел продаж юридических услуг и стать одним из лидеров растущей компании.",
+          "url": "https://hh.ru/vacancy/130054591",
           "source": "HeadHunter"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Пилосян Исраел Арменакович является генеральным директором и единственным учредителем ООО «Лесресурс» с долей 100%.",
-          "url": "https://companies.rbc.ru/amp/ogrn/5167746233342/",
-          "source": "РБК Компании / данные ЕГРЮЛ"
+          "claim": "Слюсарев Алексей Сергеевич является генеральным директором и единственным учредителем ООО «ЮК «Слюсарев и партнёры»; официальный сайт также называет Алексея Слюсарева генеральным директором.",
+          "url": "https://companies.rbc.ru/id/1247700747678-ooo-yukslyusarev-i-partnyoryi/",
+          "source": "РБК Компании / данные ЕГРЮЛ + официальный сайт"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт публикует многоканальный телефон 8 (800) 301-36-60, телефоны отдела продаж и email info@lesresurs1.ru; дополнительный прямой маршрут — вакансия работодателя HH.",
-          "url": "https://lesresurs1.com/контакты/",
-          "source": "Официальный сайт ЛПК Лесресурс + HeadHunter"
+          "claim": "Официальный сайт публикует единый номер +7 903 77-22-555 и email info@slyusarevpartners.ru; дополнительный маршрут — прямой HH работодателя.",
+          "url": "https://slyusarevpartners.ru/",
+          "source": "Официальный сайт + HeadHunter"
         }
       ]
     }
