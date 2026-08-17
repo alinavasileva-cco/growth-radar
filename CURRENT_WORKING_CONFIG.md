@@ -1,33 +1,27 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 18.08.2026 01:08 MSK  
-**Последний полностью завершённый RUN:** `N5K-20260817-287`  
-**Текущий RUN:** `N5K-20260818-288` — integration pending, НЕ засчитан  
-**Статус канонической базы:** ACTIVE / baseline integrity PASS  
-**Физически подтверждённый canonical/contactable:** **175 / 175**  
-**Qualified staged not counted:** **1**  
+**Версия:** 18.08.2026 02:04 MSK  
+**Последний полностью завершённый RUN:** `N5K-20260818-288`  
+**Статус канонической базы:** ACTIVE / integrity PASS  
+**Физически подтверждённый canonical/contactable:** **176 / 176**  
+**Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось по подтверждённой базе:** **4825**  
+**Осталось:** **4824**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **175 / 175**;
+- physical canonical/contactable count: **176 / 176**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260817-287`;
-- RUN 288 не считается завершённым до физической интеграции и повторной проверки HEAD.
+- последний завершённый RUN: `N5K-20260818-288`.
 
-## RUN 287 — последний завершённый
+## RUN 288 — завершён
 
-Италспорт+ / ООО «ИТАЛСПОРТ+» физически интегрирован. Canonical/contactable: 175/175. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Широкий discovery: **100 реальных разных raw-сигналов** из нескольких поисковых потоков. После FAST GATE и deep-check квалифицирована и физически интегрирована **1** новая компания: Принт-Хаус / ООО «ПРИНТ-ХАУС», ИНН 5260325240. Физический pre-write dedup по master/contactable не выявил дубля.
 
-## RUN 288 — текущий
-
-Широкий discovery: **100 реальных разных raw-сигналов** из нескольких поисковых потоков. После FAST GATE и deep-check квалифицирована **1** новая компания: Принт-Хаус / ООО «ПРИНТ-ХАУС», ИНН 5260325240. Физический pre-write dedup по master/contactable не выявил ИНН. Компания записана в `pending_batches`, но **не засчитана**: GitHub Actions integration workflow не создал run ни для batched commit, ни для последующего contents-commit. Подтверждённый счётчик поэтому остаётся 175/175.
-
-Текущая воронка RUN 288: discovered 100 → fast gate 1 → size 1 → legal 1 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 0. Final pre-write duplicates: 0; excluded: 99. Active WIP: 1. Outreach: 0.
+Воронка RUN 288: discovered 100 → fast gate 1 → size 1 → legal 1 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 1. Final pre-write duplicates: 0; excluded: 99. Active WIP: 0. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
 ## Правила продолжения
 
@@ -44,7 +38,3 @@
 11. Outreach не выполнять.
 
 История предыдущих RUN хранится в `run_logs`, `reports`, shards и Git history.
-
-
-## Latest verified run N5K-20260818-288
-Canonical/contactable: 176/176. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

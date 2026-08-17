@@ -1,28 +1,15 @@
 {
-  "generated_at": "2026-08-18T01:08:00+03:00",
+  "generated_at": "2026-08-18T02:04:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260817-287",
+  "latest_completed_run_id": "N5K-20260818-288",
   "current_run_id": "N5K-20260818-288",
-  "current_run_status": "BLOCKED_INTEGRATION",
-  "canonical_pool_verified": 175,
-  "contactable_verified": 175,
-  "qualified_staged_not_counted": 1,
+  "current_run_status": "COMPLETED",
+  "canonical_pool_verified": 176,
+  "contactable_verified": 176,
+  "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4825,
-  "run_287": {
-    "raw_discovered": 54,
-    "fast_gate_passed": 2,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 0,
-    "excluded": 53
-  },
-  "run_288_current": {
+  "remaining_to_target": 4824,
+  "run_288": {
     "raw_discovered": 100,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
@@ -31,13 +18,13 @@
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "physically_integrated": 0,
+    "physically_integrated": 1,
     "duplicates": 0,
     "excluded": 99
   },
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "integrity_status": "PASS_BASELINE_RUN_288_NOT_FINAL",
+  "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": "RUN 288 pending batch exists but no integration workflow run was created for the staged commits."
+  "blocker": null
 }

@@ -7,16 +7,16 @@
   "progress_added": 176,
   "remaining_to_total_target": 4824,
   "remaining": 4824,
-  "qualified_staged_not_counted": 1,
+  "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-18T00:59:33+03:00",
+  "updated_at": "2026-08-18T02:04:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-287",
+  "last_completed_run_id": "N5K-20260818-288",
   "current_run_id": "N5K-20260818-288",
   "last_run_id": "N5K-20260818-288",
   "latest_completed_run": "N5K-20260818-288",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 287 is the latest completed run: 175 canonical/contactable, integrity PASS, orphan 0/0. RUN 288 screened 100 distinct raw signals; Print-House (INN 5260325240) passed all qualification gates and is staged but NOT COUNTED because the integration workflow did not start. Outreach 0."
+  "note": "RUN 288 completed: 100 distinct raw signals screened; Print-House / ООО «ПРИНТ-ХАУС», INN 5260325240, physically integrated; canonical/contactable 176/176; integrity PASS; orphan 0/0; outreach 0."
 }
