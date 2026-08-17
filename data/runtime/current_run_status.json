@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260817-272",
+  "run_id": "N5K-20260817-273",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T06:57:15+03:00",
+  "updated_at": "2026-08-17T08:01:19+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 152,
-    "current_contactable_count": 152,
-    "progress_added": 152,
-    "remaining": 4848
+    "current_canonical_count": 153,
+    "current_contactable_count": 153,
+    "progress_added": 153,
+    "remaining": 4847
   },
   "funnel": {
-    "discovered": 32,
-    "fast_gate_passed": 6,
-    "size_check_passed": 1,
+    "discovered": 34,
+    "fast_gate_passed": 8,
+    "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 11,
-    "excluded": 20
+    "duplicates": 18,
+    "excluded": 15
   },
   "qualified_companies": [
-    "Осмокод / OSMOCODE"
+    "Вентатех-И / AVITEK Engineering"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "152_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "152_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "153_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "153_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
