@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260817-273",
+  "run_id": "N5K-20260817-274",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T08:01:19+03:00",
+  "updated_at": "2026-08-17T09:24:50+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 153,
-    "current_contactable_count": 153,
-    "progress_added": 153,
-    "remaining": 4847
+    "current_canonical_count": 154,
+    "current_contactable_count": 154,
+    "progress_added": 154,
+    "remaining": 4846
   },
   "funnel": {
-    "discovered": 34,
+    "discovered": 31,
     "fast_gate_passed": 8,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 18,
-    "excluded": 15
+    "duplicates": 10,
+    "excluded": 20
   },
   "qualified_companies": [
-    "Вентатех-И / AVITEK Engineering"
+    "ГИС / GIS Cloud / GIS Mining"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "153_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "153_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "154_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "154_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
