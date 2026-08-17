@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-17T18:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-281",
-  "current_run_id": "N5K-20260817-281",
+  "last_completed_run_id": "N5K-20260817-282",
+  "current_run_id": "N5K-20260817-282",
   "last_run_id": "N5K-20260817-282",
   "latest_completed_run": "N5K-20260817-282",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 281 completed: 100 raw candidates processed; 2 fully qualified companies physically integrated; canonical/contactable 167/167; integrity PASS; orphan 0/0; outreach 0. UniversalStroy was excluded at LPR gate because fresh 2026 sources conflict on current leadership; stale data was not used."
+  "note": "RUN 282 completed: 100 distinct raw candidate signals processed across multiple discovery streams; 2 fully qualified companies physically integrated (Инфомаксимум / Proceset, АгроПартнер); canonical/contactable 169/169; integrity PASS; orphan 0/0; outreach 0. Fresh scale/legal data were used; stale or conflicting identifiers were not used for qualification."
 }
