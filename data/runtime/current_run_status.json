@@ -1,38 +1,39 @@
 {
-  "run_id": "N5K-20260817-268",
+  "run_id": "N5K-20260817-269",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-17T03:03:15+03:00",
+  "updated_at": "2026-08-17T04:00:21+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 147,
-    "current_contactable_count": 147,
-    "progress_added": 147,
-    "remaining": 4853
+    "current_canonical_count": 149,
+    "current_contactable_count": 149,
+    "progress_added": 149,
+    "remaining": 4851
   },
   "funnel": {
-    "discovered": 20,
-    "fast_gate_passed": 6,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 4,
-    "excluded": 15
+    "discovered": 44,
+    "fast_gate_passed": 8,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 5,
+    "excluded": 37
   },
   "qualified_companies": [
-    "UPMARKET"
+    "NetGrowthLab / Нэтгроуслаб",
+    "Газтехносервис"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "147_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "147_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "149_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "149_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
