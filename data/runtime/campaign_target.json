@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-17T21:02:59+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260817-284",
-  "current_run_id": "N5K-20260817-284",
+  "last_completed_run_id": "N5K-20260817-285",
+  "current_run_id": "N5K-20260817-285",
   "last_run_id": "N5K-20260817-285",
   "latest_completed_run": "N5K-20260817-285",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 284 completed: 100 distinct raw employer/company signals screened with FAST GATE before deep-check; Прометекс was rejected by the authoritative physical dedup guard; 1 unique fully qualified company physically integrated — ХОПЁР СТАЛЬ / ООО ХОПЁР СТАЛЬ, INN 9723221390; canonical/contactable 171/171; integrity PASS; orphan 0/0; outreach 0. Only current 2025-2026 evidence was used for qualification."
+  "note": "RUN 285 completed: 100 distinct raw employer/company signals screened with FAST GATE before deep-check; 1 unique fully qualified company physically integrated — ReAspekt / ООО РЕАСПЕКТ, INN 1661018256; canonical/contactable 172/172; integrity PASS; orphan 0/0; outreach 0. Only current 2025-2026 evidence was used for qualification."
 }
