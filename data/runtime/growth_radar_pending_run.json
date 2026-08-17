@@ -1,111 +1,111 @@
 {
-  "run_id": "N5K-20260817-270",
-  "updated_at": "2026-08-17T04:57:09+03:00",
+  "run_id": "N5K-20260817-271",
+  "updated_at": "2026-08-17T06:06:00+03:00",
   "funnel": {
-    "discovered": 26,
-    "fast_gate_passed": 5,
-    "size_check_passed": 2,
+    "discovered": 12,
+    "fast_gate_passed": 3,
+    "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 9,
-    "excluded": 16
+    "duplicates": 3,
+    "excluded": 8
   },
-  "notes": "Accelerated multi-source discovery continued from verified physical 149/149 baseline. Twenty-six distinct company/employer signal records were individually reviewed across current HeadHunter listings, official company sites and current legal/business registry sources; no larger raw count is claimed. Nine already-known entities were rejected as physical-master duplicates before deep analysis. Recruiting intermediaries, companies outside the current scale gate, ambiguous brand-to-legal matches, and records relying only on stale scale data were excluded. A-Group passed current legal, scale, signal, LPR, contact-route and pre-write INN search checks; final physical dedup remains enforced by the integration workflow. No outreach.",
+  "notes": "Accelerated discovery continued from verified physical 150/150 baseline. Twelve distinct employer/company signals were individually reviewed from current HeadHunter results, official sites, trademark/legal registry pages and current business-registry sources; no larger raw count is claimed. Known physical-master duplicates visible in the pool were rejected before deep analysis. Recruiting intermediaries, ambiguous employer-to-legal matches and candidates outside/without sufficient current scale evidence were excluded. Flaconia Pro passed current legal/IP status, operational scale, brand-to-legal, growth signal, owner/LPR and official contact-route checks; exact INN search in the repository returned no indexed match, with final physical dedup delegated to the integration workflow guard. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0294",
-      "Brand": "A-Group / А-Груп",
-      "Legal Name": "ООО «А-ГРУП»",
-      "INN": "7726452698",
-      "OGRN/OGRNIP": "1197746313621",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Аренда и продажа фасадных подъёмников / строительное оборудование / B2B",
-      "Website": "https://agrouprent.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 79,013 млн ₽ за 2025 год; 9 сотрудников по актуальным реестровым данным; официальный сайт A-Group указывает 900 подъёмников в наличии и 3 филиала в России.",
-      "Signal Level": "S2",
-      "Signal Summary": "6 февраля 2026 компания открыла руководителя отдела продаж для разработки стратегии и тактики продаж, управления и обучения команды, поиска новых точек роста, работы с ключевыми клиентами и систематизации продаж с использованием 1С и Битрикс24; актуальная HH-выдача дополнительно описывает задачу организовать системную работу команды продаж и клиентского сервиса.",
-      "Signal Date": "2026-02-06",
+      "Lead ID": "N5K-0295",
+      "Brand": "Flaconia Pro",
+      "Legal Name": "ИП Филигаров Максим Игоревич",
+      "INN": "772880332527",
+      "OGRN/OGRNIP": "321774600002766",
+      "Region": "Москва / Московская область",
+      "City": "Москва / Подольск",
+      "Segment": "B2B упаковка для косметики, парфюмерии и медицинской продукции / производство и дистрибуция",
+      "Website": "https://flaconia.pro/",
+      "Revenue/Scale": "Действующий ИП с B2B-дистрибуцией и собственным/заявленным производственным контуром; официальный сайт в 2026 году указывает более 550 000 единиц производственной мощности в сутки и более 70 машин для работы с пластиком; поставки для крупных производств и регулярные поставки комплектующих из Китая.",
+      "Signal Level": "S1",
+      "Signal Summary": "Вакансия руководителя B2B-продаж от 16 января 2026 прямо описывает фазу системного роста и задачу выстроить и масштабировать отдел продаж как бизнес-функцию, с фокусом на процессы, цифры, ЛПР и кратный рост.",
+      "Signal Date": "2026-01-16",
       "Signal Source": "HeadHunter",
-      "Owner": "Гугуев Василий Кондратьевич — 100%",
-      "CEO": "Гугуева Юлия Валерьевна",
-      "LPR": "Гугуева Юлия Валерьевна",
-      "LPR Role": "Директор / практический ЛПР",
-      "Primary Phone": "+7 (495) 968-98-48",
-      "Primary Email": "info@agrouprent.ru",
-      "HH Contact": "https://hh.ru/vacancy/130237091",
-      "Contact Form": "https://agrouprent.ru/",
-      "Contact Type": "Официальный корпоративный маршрут к директору/коммерческому контуру",
-      "Contact Source": "Официальный сайт A-Group + HeadHunter + актуальные реестровые данные",
-      "Consulting Hypothesis": "Систематизация B2B-продаж аренды строительного оборудования: сегментация клиентов и типов объектов, CRM-воронка и forecasting, KPI менеджеров, стандарты sales/client service, экономика загрузки парка и развитие филиальной модели.",
+      "Owner": "Филигаров Максим Игоревич — индивидуальный предприниматель и правообладатель FLACONIA PRO",
+      "CEO": "Филигаров Максим Игоревич",
+      "LPR": "Филигаров Максим Игоревич",
+      "LPR Role": "Собственник / ИП / практический ЛПР",
+      "Primary Phone": "+7 (495) 150-80-85",
+      "Primary Email": "hello@flaconia.pro",
+      "HH Contact": "https://hh.ru/vacancy/129535513",
+      "Contact Form": "https://flaconia.pro/page/contacts",
+      "Contact Type": "Официальный корпоративный маршрут к собственнику/коммерческому контуру",
+      "Contact Source": "Официальный сайт Flaconia Pro + HeadHunter + актуальный реестр ИП/Роспатент",
+      "Consulting Hypothesis": "Систематизация и масштабирование B2B-продаж упаковки: сегментация производственных клиентов, CRM-воронка и forecasting, KPI и unit-экономика отдела, развитие крупных регулярных контрактов, связка продаж с производством/закупками и управляемое масштабирование команды.",
       "contacts": [
         {
-          "value": "+7 (495) 968-98-48",
+          "value": "+7 (495) 150-80-85",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "A-Group official site",
-          "url": "https://agrouprent.ru/",
+          "source": "Flaconia Pro official site",
+          "url": "https://flaconia.pro/page/contacts",
           "is_lpr": false,
-          "notes": "Официальный московский телефон A-Group."
+          "notes": "Официальный телефон Flaconia Pro."
         },
         {
-          "value": "info@agrouprent.ru",
+          "value": "hello@flaconia.pro",
           "channel": "Email",
           "type": "Corporate",
-          "source": "A-Group official site",
-          "url": "https://agrouprent.ru/",
+          "source": "Flaconia Pro official site",
+          "url": "https://flaconia.pro/page/contacts",
           "is_lpr": false,
-          "notes": "Официальный корпоративный email A-Group."
+          "notes": "Официальный корпоративный email."
         },
         {
-          "value": "https://hh.ru/vacancy/130237091",
+          "value": "https://hh.ru/vacancy/129535513",
           "channel": "HH vacancy",
           "type": "Direct employer route",
           "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/130237091",
+          "url": "https://hh.ru/vacancy/129535513",
           "is_lpr": false,
-          "notes": "Прямая вакансия ООО А-Груп на руководителя отдела продаж."
+          "notes": "Прямая вакансия Flaconia Pro на руководителя B2B-продаж."
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «А-ГРУП» действует; ИНН 7726452698, ОГРН 1197746313621; директор с 15.04.2025 — Гугуева Юлия Валерьевна; единственный учредитель — Гугуев Василий Кондратьевич.",
-          "url": "https://zachestnyibiznes.ru/company/ul/1197746313621_7726452698_OOO-A-GRUP",
-          "source": "ЗаЧестныйБизнес / ЕГРЮЛ"
+          "claim": "ИП Филигаров Максим Игоревич, ИНН 772880332527, ОГРНИП 321774600002766, зарегистрирован 13.01.2021 и по актуальным данным 2026 года действует, не находится в банкротстве или ликвидации.",
+          "url": "https://xfirm.ru/person/772880332527",
+          "source": "Xfirm / ЕГРИП"
         },
         {
           "type": "SCALE",
-          "claim": "Выручка ООО «А-ГРУП» за 2025 год — 79,013 млн ₽; 9 сотрудников. Официальный сайт A-Group указывает 900 подъёмников в наличии и 3 филиала в России.",
-          "url": "https://agrouprent.ru/",
-          "source": "ЗаЧестныйБизнес / ФНС + A-Group official site"
+          "claim": "Официальный сайт Flaconia Pro в 2026 году заявляет производственный контур полного цикла: более 550 000 единиц продукции в сутки и более 70 машин для пластика; компания работает с крупными производствами и регулярными B2B-поставками.",
+          "url": "https://flaconia.pro/page/production",
+          "source": "Flaconia Pro official site"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Вакансия прямого работодателя ООО А-Груп размещена по адресу Дорожная ул. 3к2с1; реестровый адрес ООО «А-ГРУП» — Дорожная ул. 3/2 стр.1; официальный A-Group использует тот же московский объект и бренд A-Group, что подтверждает связку бренда с юрлицом.",
-          "url": "https://hh.ru/vacancy/130237091",
-          "source": "HeadHunter + A-Group official site + ЕГРЮЛ"
+          "claim": "Официальный сайт Flaconia Pro указывает реквизиты ИП Филигаров Максим Игоревич, ИНН 772880332527, ОГРНИП 321774600002766; товарный знак FLACONIA PRO зарегистрирован на Филигарова Максима Игоревича 01.09.2025.",
+          "url": "https://flaconia.pro/page/about-us",
+          "source": "Flaconia Pro official site + Роспатент/RBC trademark registry"
         },
         {
           "type": "SIGNAL",
-          "claim": "Вакансия руководителя отдела продаж от 06.02.2026 требует стратегии продаж, управления/обучения команды, поиска точек роста, работы с ключевыми клиентами и системной работы в 1С/Битрикс24.",
-          "url": "https://hh.ru/vacancy/130237091",
+          "claim": "Вакансия руководителя B2B-продаж от 16.01.2026 фиксирует фазу системного роста и задачу выстроить и масштабировать отдел продаж как бизнес-функцию.",
+          "url": "https://hh.ru/vacancy/129535513",
           "source": "HeadHunter"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Гугуев Василий Кондратьевич — единственный учредитель; Гугуева Юлия Валерьевна — действующий директор и практический ЛПР.",
-          "url": "https://zachestnyibiznes.ru/company/ul/1197746313621_7726452698_OOO-A-GRUP",
-          "source": "ЗаЧестныйБизнес / ЕГРЮЛ"
+          "claim": "Филигаров Максим Игоревич является самим индивидуальным предпринимателем и правообладателем торговой марки FLACONIA PRO, поэтому является собственником и прямым ЛПР.",
+          "url": "https://companies.rbc.ru/trademark/1145369/flaconia-pro/",
+          "source": "РБК Компании / Роспатент + ЕГРИП"
         },
         {
           "type": "CONTACT_ROUTE",
-          "claim": "Официальный сайт A-Group публикует московский телефон +7 (495) 968-98-48, общий телефон 8 800 6000 141, email info@agrouprent.ru и форму обратного звонка; вакансия HH является дополнительным прямым маршрутом работодателя.",
-          "url": "https://agrouprent.ru/",
-          "source": "A-Group official site + HeadHunter"
+          "claim": "Официальный сайт публикует телефон +7 (495) 150-80-85, email hello@flaconia.pro и контактную страницу; прямая вакансия HH является дополнительным маршрутом работодателя.",
+          "url": "https://flaconia.pro/page/contacts",
+          "source": "Flaconia Pro official site + HeadHunter"
         }
       ]
     }
