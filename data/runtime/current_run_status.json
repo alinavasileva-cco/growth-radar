@@ -1,39 +1,39 @@
 {
-  "run_id": "N5K-20260818-290",
+  "run_id": "N5K-20260818-291",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-18T04:01:20+03:00",
+  "updated_at": "2026-08-18T06:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 180,
-    "current_contactable_count": 180,
-    "progress_added": 180,
-    "remaining": 4820
+    "current_canonical_count": 182,
+    "current_contactable_count": 182,
+    "progress_added": 182,
+    "remaining": 4818
   },
   "funnel": {
     "discovered": 100,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
+    "fast_gate_passed": 8,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 15,
-    "excluded": 83
+    "duplicates": 19,
+    "excluded": 79
   },
   "qualified_companies": [
-    "ENDORPHIN / Эндорфин",
-    "Ленинградские Кухни"
+    "ANNA GALE",
+    "Савицкая и партнёры"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "180_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "180_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "182_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "182_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
