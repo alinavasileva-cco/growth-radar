@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-18T08:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260818-292",
-  "current_run_id": "N5K-20260818-292",
+  "last_completed_run_id": "N5K-20260818-293",
+  "current_run_id": "N5K-20260818-293",
   "last_run_id": "N5K-20260818-293",
   "latest_completed_run": "N5K-20260818-293",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 292 completed: 100 distinct raw company candidates screened across multiple discovery streams; Котельный завод БТС / Группа БТС physically integrated; canonical/contactable 183/183; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 293 completed: 100 distinct raw company/employer signals screened across multiple discovery streams; BLIFT.RU, SECURITM and РАТИБОР physically integrated; canonical/contactable 186/186; integrity PASS; orphan 0/0; outreach 0."
 }
