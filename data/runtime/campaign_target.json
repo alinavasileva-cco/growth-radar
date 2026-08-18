@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-18T08:57:50+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260818-293",
-  "current_run_id": "N5K-20260818-293",
+  "last_completed_run_id": "N5K-20260818-294",
+  "current_run_id": "N5K-20260818-294",
   "last_run_id": "N5K-20260818-294",
   "latest_completed_run": "N5K-20260818-294",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 293 completed: 100 distinct raw company/employer signals screened across multiple discovery streams; BLIFT.RU, SECURITM and РАТИБОР physically integrated; canonical/contactable 186/186; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 294 completed: 35 distinct raw company/employer signals were individually screened; TRAFT / Трафт physically integrated; canonical/contactable 187/187; integrity PASS; orphan 0/0; outreach 0. Requested 100 distinct raw threshold was not reached and is not claimed."
 }
