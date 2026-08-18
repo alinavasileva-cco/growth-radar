@@ -1,27 +1,29 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 18.08.2026 02:04 MSK  
-**Последний полностью завершённый RUN:** `N5K-20260818-288`  
+**Версия:** 18.08.2026 03:02 MSK  
+**Последний полностью завершённый RUN:** `N5K-20260818-289`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **176 / 176**  
+**Физически подтверждённый canonical/contactable:** **178 / 178**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4824**  
+**Осталось:** **4822**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **176 / 176**;
+- physical canonical/contactable count: **178 / 178**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260818-288`.
+- последний завершённый RUN: `N5K-20260818-289`.
 
-## RUN 288 — завершён
+## RUN 289 — завершён
 
-Широкий discovery: **100 реальных разных raw-сигналов** из нескольких поисковых потоков. После FAST GATE и deep-check квалифицирована и физически интегрирована **1** новая компания: Принт-Хаус / ООО «ПРИНТ-ХАУС», ИНН 5260325240. Физический pre-write dedup по master/contactable не выявил дубля.
+Широкий discovery: **100 реальных разных raw-сигналов** из нескольких поисковых потоков. После FAST GATE и deep-check квалифицированы и физически интегрированы **2** новые компании: Zerobit / ООО «ЗЕРОБИТ», ИНН 7724741091; INVISILINE / ООО «НЕВИДИМЫЕ РЕШЕТКИ», ИНН 7727442780. Для обеих выполнен физический pre-write dedup по master/contactable.
 
-Воронка RUN 288: discovered 100 → fast gate 1 → size 1 → legal 1 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 1. Final pre-write duplicates: 0; excluded: 99. Active WIP: 0. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Воронка RUN 289: discovered 100 → fast gate 6 → size 4 → legal 3 → signal 2 → LPR 2 → contact 2 → qualified 2 → physically integrated 2. Duplicates: 14; excluded: 84. Active WIP: 0. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+Для решений использованы актуальные сведения 2025–2026. По INVISILINE устаревшая запись одного агрегатора о прежнем генеральном директоре не использовалась: актуальные ЕГРЮЛ-данные фиксируют генерального директора Майкла Мирошкина с 15.10.2025.
 
 ## Правила продолжения
 
@@ -38,7 +40,3 @@
 11. Outreach не выполнять.
 
 История предыдущих RUN хранится в `run_logs`, `reports`, shards и Git history.
-
-
-## Latest verified run N5K-20260818-289
-Canonical/contactable: 178/178. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

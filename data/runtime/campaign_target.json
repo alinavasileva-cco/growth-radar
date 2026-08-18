@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-18T03:02:06+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260818-288",
-  "current_run_id": "N5K-20260818-288",
+  "last_completed_run_id": "N5K-20260818-289",
+  "current_run_id": "N5K-20260818-289",
   "last_run_id": "N5K-20260818-289",
   "latest_completed_run": "N5K-20260818-289",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 288 completed: 100 distinct raw signals screened; Print-House / ООО «ПРИНТ-ХАУС», INN 5260325240, physically integrated; canonical/contactable 176/176; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 289 completed: 100 distinct raw company signals screened; Zerobit / ООО «ЗЕРОБИТ» and INVISILINE / ООО «НЕВИДИМЫЕ РЕШЕТКИ» physically integrated; canonical/contactable 178/178; integrity PASS; orphan 0/0; outreach 0."
 }
