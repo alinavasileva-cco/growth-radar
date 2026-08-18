@@ -1,29 +1,29 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 18.08.2026 03:02 MSK  
-**Последний полностью завершённый RUN:** `N5K-20260818-289`  
+**Версия:** 18.08.2026 04:01 MSK  
+**Последний полностью завершённый RUN:** `N5K-20260818-290`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **178 / 178**  
+**Физически подтверждённый canonical/contactable:** **180 / 180**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4822**  
+**Осталось:** **4820**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **178 / 178**;
+- physical canonical/contactable count: **180 / 180**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260818-289`.
+- последний завершённый RUN: `N5K-20260818-290`.
 
-## RUN 289 — завершён
+## RUN 290 — завершён
 
-Широкий discovery: **100 реальных разных raw-сигналов** из нескольких поисковых потоков. После FAST GATE и deep-check квалифицированы и физически интегрированы **2** новые компании: Zerobit / ООО «ЗЕРОБИТ», ИНН 7724741091; INVISILINE / ООО «НЕВИДИМЫЕ РЕШЕТКИ», ИНН 7727442780. Для обеих выполнен физический pre-write dedup по master/contactable.
+Широкий discovery: **100 реальных разных raw-сигналов** из нескольких потоков: вакансии/job boards, актуальные публикации компаний, официальные сайты и реестровые/отраслевые источники. После FAST GATE и deep-check квалифицированы и физически интегрированы **2** новые компании: ENDORPHIN / ООО «ЭНДОРФИН», ИНН 2312320835; Ленинградские Кухни / ООО «ЛЕНИНГРАДСКИЕ КУХНИ», ИНН 7811735591. Для обеих выполнен физический pre-write dedup по master/contactable.
 
-Воронка RUN 289: discovered 100 → fast gate 6 → size 4 → legal 3 → signal 2 → LPR 2 → contact 2 → qualified 2 → physically integrated 2. Duplicates: 14; excluded: 84. Active WIP: 0. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Воронка RUN 290: discovered 100 → fast gate 2 → size 2 → legal 2 → signal 2 → LPR 2 → contact 2 → qualified 2 → physically integrated 2. Duplicates: 15; excluded: 83. Active WIP: 0. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-Для решений использованы актуальные сведения 2025–2026. По INVISILINE устаревшая запись одного агрегатора о прежнем генеральном директоре не использовалась: актуальные ЕГРЮЛ-данные фиксируют генерального директора Майкла Мирошкина с 15.10.2025.
+Для решений использованы актуальные сведения 2025–2026. Устаревшие и конфликтующие записи не использовались. По ENDORPHIN подтверждены актуальные ЕГРЮЛ/финансы и официальный производственный контур; по Ленинградским Кухням использованы актуальные данные 2025–2026 по юрлицу, руководству и масштабу.
 
 ## Правила продолжения
 
@@ -40,7 +40,3 @@
 11. Outreach не выполнять.
 
 История предыдущих RUN хранится в `run_logs`, `reports`, shards и Git history.
-
-
-## Latest verified run N5K-20260818-290
-Canonical/contactable: 180/180. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

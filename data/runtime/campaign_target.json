@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-18T04:01:20+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260818-289",
-  "current_run_id": "N5K-20260818-289",
+  "last_completed_run_id": "N5K-20260818-290",
+  "current_run_id": "N5K-20260818-290",
   "last_run_id": "N5K-20260818-290",
   "latest_completed_run": "N5K-20260818-290",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 289 completed: 100 distinct raw company signals screened; Zerobit / ООО «ЗЕРОБИТ» and INVISILINE / ООО «НЕВИДИМЫЕ РЕШЕТКИ» physically integrated; canonical/contactable 178/178; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 290 completed: 100 distinct raw company signals screened; ENDORPHIN / ООО «ЭНДОРФИН» and Ленинградские Кухни / ООО «ЛЕНИНГРАДСКИЕ КУХНИ» physically integrated; canonical/contactable 180/180; integrity PASS; orphan 0/0; outreach 0."
 }
