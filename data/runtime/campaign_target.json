@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-18T06:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260818-290",
-  "current_run_id": "N5K-20260818-290",
+  "last_completed_run_id": "N5K-20260818-291",
+  "current_run_id": "N5K-20260818-291",
   "last_run_id": "N5K-20260818-291",
   "latest_completed_run": "N5K-20260818-291",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 290 completed: 100 distinct raw company signals screened; ENDORPHIN / ООО «ЭНДОРФИН» and Ленинградские Кухни / ООО «ЛЕНИНГРАДСКИЕ КУХНИ» physically integrated; canonical/contactable 180/180; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 291 completed: 100 distinct raw company signals screened across multiple discovery streams; ANNA GALE / ИП Галевко Анна Владимировна and Савицкая и партнёры / ООО «САВИЦКАЯ И ПАРТНЁРЫ» physically integrated; canonical/contactable 182/182; integrity PASS; orphan 0/0; outreach 0."
 }
