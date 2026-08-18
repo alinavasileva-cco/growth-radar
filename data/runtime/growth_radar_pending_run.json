@@ -1,94 +1,100 @@
 {
-  "run_id": "N5K-20260818-291",
-  "updated_at": "2026-08-18T06:00:00+03:00",
+  "run_id": "N5K-20260818-292",
+  "updated_at": "2026-08-18T07:02:00+03:00",
   "funnel": {
     "discovered": 100,
-    "fast_gate_passed": 8,
+    "fast_gate_passed": 9,
     "size_check_passed": 4,
     "legal_match_passed": 3,
     "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 19,
-    "excluded": 79
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 21,
+    "excluded": 78
   },
-  "notes": "RUN 291: 100 distinct raw company signals screened across HH/Careerist/Facancy, current company and vacancy publications, official sites and registry sources. FAST GATE applied before deep-check. Known physical-master duplicates were removed before deep-check; final pre-write INN search found no matches for 773417347854 or 7722852617. ANNA GALE and Savitskaya & Partners passed current legal, scale, signal, LPR and practical contact-route checks. Fresh 2025-2026 data used; stale/conflicting records were excluded from decisions. Baseline before integration 180/180. No outreach.",
+  "notes": "RUN 292: wide discovery screened 100 distinct company candidates across HH and other vacancy sources, fresh company growth/news signals, official company sites and current registry/industry sources. FAST GATE was applied before deep-check. Known duplicate employers and candidates outside current size/legal gates were removed early. One candidate passed all final gates: Котельный завод БТС. Pre-write repository search found no existing INN 2204077407 or brand match; final physical integration guard remains authoritative. Fresh 2025-2026 data used; stale/conflicting records excluded. Baseline before integration 182/182. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0325",
-      "Brand": "ANNA GALE",
-      "Legal Name": "ИП Галевко Анна Владимировна",
-      "INN": "773417347854",
-      "OGRN/OGRNIP": "317774600396934",
-      "Region": "Москва / Мурманская область",
-      "City": "Москва",
-      "Segment": "Косметика / beauty / D2C + B2B дистрибуция и партнерские продажи",
-      "Website": "https://annagale.ru/",
-      "Revenue/Scale": "Действующий ИП; вакансия 2026 указывает годовой оборот бренда 300+ млн ₽; бренд представлен в крупных beauty-сетях и маркетплейсах; ЕГРИП/реестр МСП подтверждают действующий ИП",
-      "Signal Level": "S1",
-      "Signal Summary": "В 2026 бренд систематизирует коммерческий контур и запускает/масштабирует партнерские программы, B2B и e-commerce; требуется выстроить управляемую систему продаж и новые каналы роста",
-      "Signal Date": "2026-07-01",
-      "Signal Source": "https://facancy.ru/",
-      "Owner": "Галевко Анна Владимировна",
-      "CEO": "Галевко Анна Владимировна",
-      "LPR": "Галевко Анна Владимировна",
-      "LPR Role": "Индивидуальный предприниматель / основатель бренда",
-      "Primary Phone": "+7 (499) 112-40-85",
-      "Primary Email": "info@annagale.ru",
-      "HH Contact": "",
-      "Contact Form": "https://annagale.ru/contact-us-ru/",
-      "Contact Type": "Corporate Phone; Email; Website form",
-      "Contact Source": "Официальный сайт ANNA GALE; актуальные ЕГРИП/РБК Компании; вакансия 2026",
-      "Consulting Hypothesis": "Систематизация коммерческой функции при росте B2B/партнерского канала: сегментация партнеров, channel P&L, CRM-воронка, KPI, unit-экономика и синхронизация D2C/marketplace/B2B без ручной зависимости от основателя",
-      "contacts": [
-        {"value": "+7 (499) 112-40-85", "channel": "Phone", "type": "Corporate", "source": "Официальный сайт ANNA GALE", "url": "https://annagale.ru/contact-us-ru/", "is_lpr": false, "notes": "Официальный телефон бренда"},
-        {"value": "info@annagale.ru", "channel": "Email", "type": "Corporate B2B", "source": "Официальный сайт ANNA GALE", "url": "https://annagale.ru/partner", "is_lpr": false, "notes": "Официальный email для партнерских/B2B запросов"},
-        {"value": "https://annagale.ru/contact-us-ru/", "channel": "Web form", "type": "Corporate", "source": "Официальный сайт ANNA GALE", "url": "https://annagale.ru/contact-us-ru/", "is_lpr": false, "notes": "Официальная форма связи"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ИП Галевко Анна Владимировна, ИНН 773417347854, ОГРНИП 317774600396934; действующий ИП", "url": "https://companies.rbc.ru/persons/ogrnip/317774600396934-galevko-anna-vladimirovna/", "source": "РБК Компании / ЕГРИП"},
-        {"type": "SCALE_SIGNAL", "claim": "Вакансия 2026 указывает оборот бренда 300+ млн ₽ и задачу систематизации продаж и запуска B2B/e-commerce партнерских программ", "url": "https://facancy.ru/", "source": "Facancy / вакансия ANNA GALE от 01.07.2026"},
-        {"type": "BRAND_LEGAL", "claim": "Официальный сайт ANNA GALE связывает бренд с ИП Галевко Анна Владимировна и ИНН 773417347854; корректный ОГРНИП подтвержден ЕГРИП", "url": "https://annagale.ru/", "source": "Официальный сайт ANNA GALE + ЕГРИП"},
-        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт публикует +7 (499) 112-40-85, info@annagale.ru и форму связи; партнерская страница отдельно приглашает дистрибьюторов, аптеки, салоны, фитнес и интернет-магазины", "url": "https://annagale.ru/partner", "source": "Официальный сайт ANNA GALE"}
-      ]
-    },
-    {
-      "Lead ID": "N5K-0326",
-      "Brand": "Савицкая и партнёры",
-      "Legal Name": "ООО «САВИЦКАЯ И ПАРТНЁРЫ»",
-      "INN": "7722852617",
-      "OGRN/OGRNIP": "1147746943838",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Юридический / налоговый / финансовый B2B-консалтинг",
-      "Website": "https://savitskaya.info/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 25,12 млн ₽ за 2025 год; 8 сотрудников по актуальным данным 2025; 3 офиса и 21+ год работы по официальному сайту",
+      "Lead ID": "N5K-0327",
+      "Brand": "Котельный завод БТС / Группа БТС",
+      "Legal Name": "ООО «КОТЕЛЬНЫЙ ЗАВОД БИЙСКТЕПЛОСТРОЙ»",
+      "INN": "2204077407",
+      "OGRN/OGRNIP": "1152204004985",
+      "Region": "Алтайский край",
+      "City": "Бийск",
+      "Segment": "Промышленное теплоэнергетическое оборудование / котельные / автоматизация / B2B",
+      "Website": "https://biysk-teplo.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 128,491 млн ₽ за 2025 год (+266,4% г/г); 10 сотрудников по данным 2025; в марте 2026 расширены виды деятельности на монтаж, автоматизацию, обслуживание котельных и проектирование инженерных систем",
       "Signal Level": "S2",
-      "Signal Summary": "В 2026 компания усиливает B2B-продажи и рассматривает формирование отдела продаж с нуля; официальный сайт одновременно развивает франшизу и заявляет готовую CRM/базу клиентов, что подтверждает фазу коммерческого масштабирования",
-      "Signal Date": "2026-06-19",
-      "Signal Source": "https://careerist.ru/vakansii/rukovoditel-otdela-prodazh-b2b-savitskaya-i-partnyory-87657744.html",
-      "Owner": "Савицкая Анжелика Сергеевна 100%",
-      "CEO": "Савицкая Анжелика Сергеевна",
-      "LPR": "Савицкая Анжелика Сергеевна",
-      "LPR Role": "Учредитель 100% / генеральный директор",
-      "Primary Phone": "+7 (495) 150-34-57",
-      "Primary Email": "Anzhelika@savitskaya.info",
-      "HH Contact": "https://hh.ru/employer/2733248",
-      "Contact Form": "https://savitskaya.info/",
-      "Contact Type": "Owner Email; Corporate Phone; Telegram; Website form; HH",
-      "Contact Source": "Официальный сайт Савицкая и партнёры; HeadHunter; актуальные реестровые/финансовые данные 2025-2026",
-      "Consulting Hypothesis": "Масштабирование B2B-консалтинга и франшизной модели: упаковка ICP, системный new business, CRM/воронка, KPI и экономика каналов, разгрузка собственника от ручного коммерческого контроля",
+      "Signal Summary": "Два сильных актуальных косвенных сигнала коммерческого роста: выручка в 2025 году выросла на 266,4%, а 3 марта 2026 компания расширила набор ОКВЭД на монтаж промышленных машин, электромонтаж, монтаж отопительных систем, обслуживание котельных и проектирование инженерных систем; это указывает на расширение продуктово-сервисного контура и необходимость системного B2B-развития",
+      "Signal Date": "2026-03-03",
+      "Signal Source": "https://b2b.house/company/OOO-KOTELNYJ-ZAVOD-BTS_57c45b34-7133-4abb-a26b-48c1d4b6da1a/",
+      "Owner": "Круглов Алексей Владимирович",
+      "CEO": "Круглов Алексей Владимирович",
+      "LPR": "Круглов Алексей Владимирович",
+      "LPR Role": "Директор / учредитель",
+      "Primary Phone": "8 (800) 600-40-70",
+      "Primary Email": "info@biyskteplo.ru",
+      "HH Contact": "",
+      "Contact Form": "https://biysk-teplo.ru/",
+      "Contact Type": "Corporate Phone; Email; Website form",
+      "Contact Source": "Официальный сайт Котельного завода БТС; актуальные реестровые/финансовые данные 2025-2026",
+      "Consulting Hypothesis": "Систематизация коммерческого масштабирования после резкого роста и расширения сервисного контура: сегментация B2B-клиентов, pipeline по оборудованию/монтажу/сервису, CRM и forecast, экономика направлений, cross-sell сервисов и разгрузка директора от ручного коммерческого управления",
       "contacts": [
-        {"value": "Anzhelika@savitskaya.info", "channel": "Email", "type": "Owner direct public", "source": "Официальный сайт Савицкая и партнёры", "url": "https://savitskaya.info/", "is_lpr": true, "notes": "Публичный email основателя и генерального директора"},
-        {"value": "+7 (495) 150-34-57", "channel": "Phone", "type": "Corporate", "source": "Официальный сайт Савицкая и партнёры", "url": "https://savitskaya.info/", "is_lpr": false, "notes": "Официальный московский телефон"},
-        {"value": "@SavitskayaAngelika", "channel": "Telegram", "type": "Owner public channel", "source": "Официальный сайт Савицкая и партнёры", "url": "https://savitskaya.info/", "is_lpr": true, "notes": "Публичный Telegram основателя указан официальным сайтом"}
+        {
+          "value": "8 (800) 600-40-70",
+          "channel": "Phone",
+          "type": "Corporate",
+          "source": "Официальный сайт Котельного завода БТС",
+          "url": "https://biysk-teplo.ru/o-kompanii/razreshitelnaya-dokumentatsiya",
+          "is_lpr": false,
+          "notes": "Официальный федеральный телефон компании"
+        },
+        {
+          "value": "+7 (3854) 47-03-16",
+          "channel": "Phone",
+          "type": "Corporate",
+          "source": "Официальный сайт Котельного завода БТС",
+          "url": "https://biysk-teplo.ru/o-kompanii/razreshitelnaya-dokumentatsiya",
+          "is_lpr": false,
+          "notes": "Официальный телефон компании в Бийске"
+        },
+        {
+          "value": "info@biyskteplo.ru",
+          "channel": "Email",
+          "type": "Corporate B2B",
+          "source": "Официальный сайт Котельного завода БТС",
+          "url": "https://biysk-teplo.ru/o-kompanii/razreshitelnaya-dokumentatsiya",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email"
+        }
       ],
       "evidence": [
-        {"type": "LEGAL_SCALE", "claim": "ООО «САВИЦКАЯ И ПАРТНЁРЫ», ИНН 7722852617, ОГРН 1147746943838; действует; выручка 25,12 млн ₽ за 2025 год; 8 сотрудников; собственник и гендиректор Савицкая Анжелика Сергеевна", "url": "https://www.tbank.ru/business/contractor/legal/1147746943838/", "source": "Т-Банк / ЕГРЮЛ и бухгалтерская отчетность"},
-        {"type": "SIGNAL", "claim": "Вакансия B2B РОПа 19.06.2026 указывает развитие продаж и опыт формирования отдела продаж с нуля; компания ориентирована на B2B юридический и консалтинговый продукт", "url": "https://careerist.ru/vakansii/rukovoditel-otdela-prodazh-b2b-savitskaya-i-partnyory-87657744.html", "source": "Careerist"},
-        {"type": "OWNER_LPR", "claim": "Официальный сайт называет Анжелику Савицкую учредителем и генеральным директором и публикует ее публичный email/Telegram", "url": "https://savitskaya.info/", "source": "Официальный сайт Савицкая и партнёры"},
-        {"type": "GROWTH", "claim": "Официальный сайт 2026 указывает 3 офиса, развиваемую франшизу, готовую CRM и клиентскую базу, что подтверждает коммерческое масштабирование", "url": "https://savitskaya.info/franchise", "source": "Официальный сайт Савицкая и партнёры"}
+        {
+          "type": "LEGAL_SCALE",
+          "claim": "ООО «КОТЕЛЬНЫЙ ЗАВОД БИЙСКТЕПЛОСТРОЙ», ИНН 2204077407, ОГРН 1152204004985; действует; выручка 128,491 млн ₽ за 2025 год; 10 сотрудников",
+          "url": "https://firmoteka.ru/2204077407",
+          "source": "Фирмотека / данные ФНС 2025-2026"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "В 2025 выручка выросла на 266,4%; 03.03.2026 добавлены ОКВЭД на монтаж промышленных машин, электромонтаж, отопительные системы, обслуживание котельных и проектирование инженерных систем",
+          "url": "https://b2b.house/company/OOO-KOTELNYJ-ZAVOD-BTS_57c45b34-7133-4abb-a26b-48c1d4b6da1a/",
+          "source": "B2B.house / ФНС"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Круглов Алексей Владимирович является директором и действующим учредителем ООО «Котельный завод БТС»",
+          "url": "https://zachestnyibiznes.ru/fl/220404518950",
+          "source": "ЗаЧестныйБизнес / ЕГРЮЛ"
+        },
+        {
+          "type": "BRAND_LEGAL_CONTACT",
+          "claim": "Официальный сайт прямо публикует реквизиты ООО «Котельный завод БТС», ИНН 2204077407, ОГРН 1152204004985 и контакты 8 (800) 600-40-70, +7 (3854) 47-03-16, info@biyskteplo.ru",
+          "url": "https://biysk-teplo.ru/o-kompanii/razreshitelnaya-dokumentatsiya",
+          "source": "Официальный сайт Котельного завода БТС"
+        }
       ]
     }
   ]
