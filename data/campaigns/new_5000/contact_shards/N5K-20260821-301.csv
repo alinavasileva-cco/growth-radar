@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0344,N5K-0344-C01,100UP / Интернет-студия 100АП,7725778560,,Корпоративный маршрут,+7 (499) 650-50-15,Phone,Corporate,Official 100UP website,https://www.100up.ru/contacts/,NO,HIGH,2026-08-21,Корпоративный телефон,N5K-20260821-301,new_5000
+N5K-0344,N5K-0344-C02,100UP / Интернет-студия 100АП,7725778560,,Корпоративный маршрут,hello@100up.ru,Email,Corporate,Official 100UP website,https://www.100up.ru/contacts/,NO,HIGH,2026-08-21,Корпоративный email,N5K-20260821-301,new_5000
+N5K-0344,N5K-0344-C03,100UP / Интернет-студия 100АП,7725778560,,Корпоративный маршрут,https://www.100up.ru/contacts/,Website,Contact form,Official 100UP website,https://www.100up.ru/contacts/,NO,HIGH,2026-08-21,Официальная форма связи,N5K-20260821-301,new_5000
