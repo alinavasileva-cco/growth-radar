@@ -1,38 +1,39 @@
 {
-  "run_id": "N5K-20260821-298",
+  "run_id": "N5K-20260821-299",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-21T18:28:00+05:00",
+  "updated_at": "2026-08-21T19:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 193,
-    "current_contactable_count": 193,
-    "progress_added": 193,
-    "remaining": 4807
+    "current_canonical_count": 195,
+    "current_contactable_count": 195,
+    "progress_added": 195,
+    "remaining": 4805
   },
   "funnel": {
-    "discovered": 28,
+    "discovered": 14,
     "fast_gate_passed": 5,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 3,
-    "excluded": 24
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 12
   },
   "qualified_companies": [
-    "КМ-Сити"
+    "СоюзХимТранс-Авто",
+    "Well Fitness"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "193_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "193_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "195_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "195_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
