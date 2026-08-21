@@ -59,5 +59,7 @@ Canonical/contactable: 190/190. Added: 1. Integrity PASS. Orphan contacts/eviden
 Canonical/contactable: 192/192. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
 
-## RUN 297 — 2026-08-21
-Physical canonical/contactable: 192/192. Added 0. Integrity PASS. Orphan 0/0. Outreach 0.
+
+
+## RUN 297 — verified final
+Physical canonical/contactable: 192/192. Added 2. Raw 40; fast 8; qualified 2. Integrity PASS. Orphan 0/0. Outreach 0.

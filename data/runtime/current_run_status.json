@@ -2,7 +2,7 @@
   "run_id": "N5K-20260821-297",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-21T17:05:00+05:00",
+  "updated_at": "2026-08-21T17:12:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 190,
@@ -20,14 +20,13 @@
     "signal_confirmed": 3,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 0,
-    "duplicates": 8,
+    "qualified": 2,
+    "duplicates": 6,
     "excluded": 32
   },
-  "qualified_companies": [],
-  "duplicate_rejected": [
-    "Домоведовъ — LEAD_ID,INN,OGRN,LEGAL,DOMAIN",
-    "Рапид Био / Rapid Bio — LEAD_ID,INN,OGRN,LEGAL,DOMAIN"
+  "qualified_companies": [
+    "Домоведовъ",
+    "Рапид Био / Rapid Bio"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
