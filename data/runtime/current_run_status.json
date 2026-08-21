@@ -1,38 +1,39 @@
 {
-  "run_id": "N5K-20260821-301",
+  "run_id": "N5K-20260821-302",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-21T21:00:00+05:00",
+  "updated_at": "2026-08-21T22:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 198,
-    "current_contactable_count": 198,
-    "progress_added": 198,
-    "remaining": 4802
+    "current_canonical_count": 200,
+    "current_contactable_count": 200,
+    "progress_added": 200,
+    "remaining": 4800
   },
   "funnel": {
-    "discovered": 24,
+    "discovered": 22,
     "fast_gate_passed": 5,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 3,
-    "excluded": 20
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 2,
+    "excluded": 18
   },
   "qualified_companies": [
-    "100UP / Интернет-студия 100АП"
+    "ZETTA / Фабрика кухни ZETTA",
+    "Dr. Zubareva / Бьюти Лайф"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "198_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "198_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "200_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "200_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
