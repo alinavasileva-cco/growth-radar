@@ -1,182 +1,93 @@
 {
-  "run_id": "N5K-20260821-296",
-  "updated_at": "2026-08-21T14:08:00+03:00",
+  "run_id": "N5K-20260821-297",
+  "updated_at": "2026-08-21T16:57:00+05:00",
   "funnel": {
-    "discovered": 34,
-    "fast_gate_passed": 7,
+    "discovered": 40,
+    "fast_gate_passed": 8,
     "size_check_passed": 5,
     "legal_match_passed": 4,
     "signal_confirmed": 3,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 0,
+    "duplicates": 6,
     "excluded": 32
   },
-  "notes": "RUN 296 started from verified physical baseline 189/189 after completed RUN 295. In this execution 34 distinct employer/company signals were individually screened across multiple current job-board, official-company and legal/company-data sources. The required 100 distinct raw threshold was not reached in this execution and is not overstated. FAST GATE was applied before deep-check. Current 2025-2026 data were preferred; stale/conflicting records were excluded from decisions. Two candidates passed legal, scale, signal, LPR and practical contact-route gates. Pre-write repository searches returned no INN/OGRN/legal/domain match for INN 7153001004 or 7704303861; final physical integration guard remains authoritative. No outreach.",
+  "notes": "RUN 297 starts from verified physical baseline 190/190 after RUN 296. Forty distinct company/employer signals were individually screened across current job-board, official-company and company/legal-data sources. The requested 150-200 raw target was not reached and is not overstated. FAST GATE preceded deep-check. Current 2025-2026 data were preferred; stale/conflicting records were excluded. Two candidates passed legal, scale, signal, LPR and practical contact-route gates. Repository code search found no INN match for 5040177814 or 0326576671; final physical integration guard is authoritative. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0335",
-      "Brand": "Макошь",
-      "Legal Name": "ООО «МАКОШЬ»",
-      "INN": "7153001004",
-      "OGRN/OGRNIP": "1207100014230",
-      "Region": "Тульская область",
-      "City": "Узловский район / ОЭЗ «Узловая»",
-      "Segment": "Пищевые ингредиенты / глубокая переработка растительного сырья / B2B производство",
-      "Website": "https://makosh.pro/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 55,57 млн ₽ за 2025 год; 20 сотрудников по данным ФНС за 2025 год; собственный производственный комплекс в ОЭЗ «Узловая»",
+      "Lead ID": "N5K-0337",
+      "Brand": "Домоведовъ",
+      "Legal Name": "ООО «ДОМОВЕДОВЪ»",
+      "INN": "5040177814",
+      "OGRN/OGRNIP": "1225000027449",
+      "Region": "Московская область",
+      "City": "Раменское",
+      "Segment": "Загородное строительство / ИЖС / B2C+B2B партнерские каналы",
+      "Website": "https://egorievka.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 171,52 млн ₽ за 2025 год; более 1900 построенных домов; собственное производство",
       "Signal Level": "S1",
-      "Signal Summary": "07.05.2026 компания искала руководителя B2B-продаж для построения и масштабирования коммерческой системы: структура продаж, CRM, воронка, KPI, каналы, рост выручки и маржинальности",
-      "Signal Date": "2026-05-07",
-      "Signal Source": "https://facancy.ru/vacancies/rukovoditel-b2b-prodazh-v-proizvodstvennuiu-kompaniiu-makosh",
-      "Owner": "Макаренкова Лариса Федоровна; Рябов Василий Владимирович; Беляшов Андрей Евгеньевич; Булатова Диана Музировна; Чумаков Николай Андреевич; Приходько Василий Васильевич",
-      "CEO": "Рябов Сергей Сергеевич",
-      "LPR": "Рябов Сергей Сергеевич",
-      "LPR Role": "Генеральный директор",
-      "Primary Phone": "+7 (495) 987-37-14",
-      "Primary Email": "info@makosh.pro",
-      "HH Contact": "",
-      "Contact Form": "https://makosh.pro/cooperation/",
-      "Contact Type": "Corporate Phone; Email; Website",
-      "Contact Source": "Официальный сайт Макошь; Facancy; Т-Банк; Companium/ФНС",
-      "Consulting Hypothesis": "Масштабирование B2B-коммерции нового производственного комплекса: сегментация отраслей и клиентов, CRM/pipeline/forecast, KPI и экономика каналов, развитие ключевых клиентов и синхронизация продаж с производственной загрузкой",
+      "Signal Summary": "В августе 2026 компания ищет коммерческого директора для системного роста бизнеса: коммерческая стратегия, полная воронка продаж, KPI, маржа, CAC/LTV, CRM, партнерские каналы и формирование коммерческой команды.",
+      "Signal Date": "2026-08-08",
+      "Signal Source": "https://vgorode.moscow/rabota/vakansiya-135611917/",
+      "Owner": "Коваленко Александр Борисович, 100%",
+      "CEO": "Коваленко Александр Борисович",
+      "LPR": "Коваленко Александр Борисович",
+      "LPR Role": "Генеральный директор / собственник 100%",
+      "Primary Phone": "+7 (495) 151-87-43",
+      "Primary Email": "info@egorievka.ru",
+      "HH Contact": "https://dreamjob.ru/employers/310057/vakansii/135611796",
+      "Contact Form": "https://egorievka.ru/contacts/",
+      "Contact Type": "Corporate Phone; Email; Employer vacancy; Website",
+      "Contact Source": "Официальный сайт Домоведовъ; DreamJob/HH; Т-Банк; РБК Компании",
+      "Consulting Hypothesis": "Систематизация коммерческого контура ИЖС: CRM/pipeline/forecast, экономика CAC/LTV/маржи, партнерские каналы, KPI отдела продаж и синхронизация sales+marketing+client service.",
       "contacts": [
-        {
-          "value": "+7 (495) 987-37-14",
-          "channel": "Phone",
-          "type": "Corporate",
-          "source": "Официальный сайт Макошь",
-          "url": "https://makosh.pro/cooperation/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный телефон"
-        },
-        {
-          "value": "info@makosh.pro",
-          "channel": "Email",
-          "type": "Corporate",
-          "source": "Официальный сайт Макошь",
-          "url": "https://makosh.pro/cooperation/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный email"
-        },
-        {
-          "value": "https://makosh.pro/cooperation/",
-          "channel": "Website",
-          "type": "Cooperation form",
-          "source": "Официальный сайт Макошь",
-          "url": "https://makosh.pro/cooperation/",
-          "is_lpr": false,
-          "notes": "Практический маршрут для B2B-запроса"
-        }
+        {"value":"+7 (495) 151-87-43","channel":"Phone","type":"Corporate","source":"Официальный сайт Домоведовъ","url":"https://egorievka.ru/contacts/","is_lpr":false,"notes":"Официальный корпоративный телефон"},
+        {"value":"info@egorievka.ru","channel":"Email","type":"Corporate","source":"Официальный сайт Домоведовъ","url":"https://egorievka.ru/contacts/","is_lpr":false,"notes":"Официальный корпоративный email"},
+        {"value":"https://dreamjob.ru/employers/310057/vakansii/135611796","channel":"Job board","type":"Employer vacancy","source":"DreamJob/HH","url":"https://dreamjob.ru/employers/310057/vakansii/135611796","is_lpr":false,"notes":"Прямой маршрут через профиль работодателя"}
       ],
       "evidence": [
-        {
-          "type": "LEGAL_SCALE",
-          "claim": "ООО «МАКОШЬ», ИНН 7153001004, ОГРН 1207100014230; действует; выручка 55,57 млн ₽ за 2025 год; генеральный директор Рябов Сергей Сергеевич",
-          "url": "https://www.tbank.ru/business/contractor/legal/1207100014230/",
-          "source": "Т-Банк / ЕГРЮЛ и отчетность 2025"
-        },
-        {
-          "type": "SCALE_EMPLOYEES",
-          "claim": "Среднесписочная численность ООО «МАКОШЬ» за 2025 год — 20 сотрудников",
-          "url": "https://companium.ru/id/1207100014230-makosh",
-          "source": "Companium / ФНС 2025"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "07.05.2026 компания искала руководителя B2B-продаж для построения и масштабирования коммерческой системы, CRM, воронки, KPI и каналов продаж",
-          "url": "https://facancy.ru/vacancies/rukovoditel-b2b-prodazh-v-proizvodstvennuiu-kompaniiu-makosh",
-          "source": "Facancy / вакансия 2026"
-        },
-        {
-          "type": "BRAND_LEGAL_CONTACT",
-          "claim": "Официальный сайт связывает бренд Макошь с ООО «МАКОШЬ», ИНН 7153001004, ОГРН 1207100014230 и публикует телефон/email и B2B-маршрут сотрудничества",
-          "url": "https://makosh.pro/cooperation/",
-          "source": "Официальный сайт Макошь"
-        }
+        {"type":"LEGAL_SCALE","claim":"ООО «ДОМОВЕДОВЪ», ИНН 5040177814, ОГРН 1225000027449; действует; выручка 171,52 млн ₽ за 2025 год; гендиректор и собственник 100% Коваленко Александр Борисович.","url":"https://www.tbank.ru/business/contractor/legal/1225000027449/","source":"Т-Банк / ФНС 2025-2026"},
+        {"type":"SIGNAL","claim":"В августе 2026 компания ищет коммерческого директора для системного роста: стратегия, воронка, KPI, маржа, CRM и партнерские каналы.","url":"https://vgorode.moscow/rabota/vakansiya-135611917/","source":"Вакансия Домоведовъ 2026"},
+        {"type":"BRAND_LEGAL_CONTACT","claim":"Официальный сайт связывает бренд Домоведовъ с ИНН 5040177814 и публикует телефон/email и адрес.","url":"https://egorievka.ru/contacts/","source":"Официальный сайт Домоведовъ"}
       ]
     },
     {
-      "Lead ID": "N5K-0336",
-      "Brand": "GN Axel",
-      "Legal Name": "ООО «ДЖИЭНАКСЕЛЬ»",
-      "INN": "7704303861",
-      "OGRN/OGRNIP": "1157746073880",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Микроэлектроника / керамические компоненты / промышленный B2B",
-      "Website": "https://gnaxel.ru/",
-      "Revenue/Scale": "Действующее частное ООО, субъект малого бизнеса; актуальный отраслевой каталог указывает 5 сотрудников; Saby отображает выручку 68,9 млн ₽; собственные разработки и поставки компонентов для микроэлектронной промышленности",
-      "Signal Level": "S2",
-      "Signal Summary": "25.06.2026 GN Axel в связи с активным развитием расширял отдел продаж и искал директора по развитию продаж для роста проектов, ключевых клиентов и доли в закупках заказчиков",
-      "Signal Date": "2026-06-25",
-      "Signal Source": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
-      "Owner": "Назаренко Александр Александрович 85%; Буданцев Павел Николаевич 15%",
-      "CEO": "Назаренко Александр Александрович",
-      "LPR": "Назаренко Александр Александрович",
-      "LPR Role": "Генеральный директор / собственник 85%",
-      "Primary Phone": "+7 (499) 755-68-94",
-      "Primary Email": "sales@gnaxel.ru",
-      "HH Contact": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
-      "Contact Form": "https://gnaxel.ru/",
+      "Lead ID": "N5K-0338",
+      "Brand": "Рапид Био / Rapid Bio",
+      "Legal Name": "ООО «РАПИД БИО»",
+      "INN": "0326576671",
+      "OGRN/OGRNIP": "1200300004706",
+      "Region": "Республика Бурятия / Москва",
+      "City": "Улан-Удэ / Москва",
+      "Segment": "Биотехнологии / диагностические тест-системы / MedTech B2B",
+      "Website": "https://rapidbio.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 612,032 млн ₽ за 2025 год; 60+ биотехнологов по официальному сайту; 180 млн тестов производственной мощности в год",
+      "Signal Level": "S1",
+      "Signal Summary": "17.08.2026 компания открыла вакансию коммерческого директора (CCO) на фоне развития диагностики in vitro, персонализированной медицины, нового NGS-направления и работы на российском и международных рынках.",
+      "Signal Date": "2026-08-17",
+      "Signal Source": "https://dreamjob.ru/employers/313139/vakansii/136320904",
+      "Owner": "ООО «РАПИД ГЛОБАЛ», 100% с 30.04.2026",
+      "CEO": "Жимбиев Анжей Цыденжапович",
+      "LPR": "Жимбиев Анжей Цыденжапович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 495 105 99 16",
+      "Primary Email": "sale@rapidbio.ru",
+      "HH Contact": "https://dreamjob.ru/employers/313139/vakansii/136320904",
+      "Contact Form": "https://rapidbio.ru/",
       "Contact Type": "Corporate Phone; Sales Email; Employer vacancy; Website",
-      "Contact Source": "Официальный сайт GN Axel; DreamJob; Точка; Saby; Производитель.рф",
-      "Consulting Hypothesis": "Систематизация роста промышленного B2B-sales: сегментация целевых отраслей и холдингов, account-планы, CRM и pipeline, KPI/forecast, развитие новых продуктовых направлений и рост доли в закупках ключевых заказчиков",
+      "Contact Source": "Официальный сайт Rapid Bio; DreamJob/HH; Т-Банк; РБК Компании",
+      "Consulting Hypothesis": "Масштабирование коммерческой функции MedTech: сегментация B2B/B2G и международных каналов, GTM новых NGS-продуктов, pipeline/forecast, партнерства и экономика продуктовых направлений.",
       "contacts": [
-        {
-          "value": "+7 (499) 755-68-94",
-          "channel": "Phone",
-          "type": "Corporate",
-          "source": "Официальный сайт GN Axel",
-          "url": "https://gnaxel.ru/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный телефон"
-        },
-        {
-          "value": "sales@gnaxel.ru",
-          "channel": "Email",
-          "type": "Sales",
-          "source": "Официальный сайт GN Axel / Saby",
-          "url": "https://gnaxel.ru/",
-          "is_lpr": false,
-          "notes": "Практический маршрут в коммерческий контур"
-        },
-        {
-          "value": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
-          "channel": "Job board",
-          "type": "Employer vacancy",
-          "source": "DreamJob",
-          "url": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
-          "is_lpr": false,
-          "notes": "Маршрут через профиль работодателя/вакансию"
-        }
+        {"value":"+7 495 105 99 16","channel":"Phone","type":"Corporate","source":"Официальный сайт Rapid Bio","url":"https://rapidbio.ru/","is_lpr":false,"notes":"Официальный корпоративный телефон"},
+        {"value":"sale@rapidbio.ru","channel":"Email","type":"Sales","source":"Официальный сайт Rapid Bio","url":"https://rapidbio.ru/","is_lpr":false,"notes":"Официальный sales email"},
+        {"value":"https://dreamjob.ru/employers/313139/vakansii/136320904","channel":"Job board","type":"Employer vacancy","source":"DreamJob/HH","url":"https://dreamjob.ru/employers/313139/vakansii/136320904","is_lpr":false,"notes":"Прямой маршрут через профиль работодателя"}
       ],
       "evidence": [
-        {
-          "type": "LEGAL_OWNER_LPR",
-          "claim": "ООО «ДЖИЭНАКСЕЛЬ», ИНН 7704303861, ОГРН 1157746073880; действует; генеральный директор и собственник 85% — Назаренко Александр Александрович",
-          "url": "https://check.tochka.com/company/1157746073880/",
-          "source": "Точка / ЕГРЮЛ, актуально 2026"
-        },
-        {
-          "type": "SCALE",
-          "claim": "Актуальный отраслевой каталог производителя указывает 5 сотрудников; Saby отображает выручку 68,9 млн ₽ и действующий статус на 23.07.2026",
-          "url": "https://xn--b1aedfedwrdfl5a6k.xn--p1ai/producer/dzhienaksel",
-          "source": "Производитель.рф; Saby"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "25.06.2026 GN Axel сообщала об активном развитии, расширении отдела продаж и поиске директора по развитию продаж",
-          "url": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
-          "source": "DreamJob / вакансия 2026"
-        },
-        {
-          "type": "BRAND_LEGAL_CONTACT",
-          "claim": "Официальный сайт GN Axel подтверждает профиль компании и публикует корпоративный телефон и sales@gnaxel.ru",
-          "url": "https://gnaxel.ru/",
-          "source": "Официальный сайт GN Axel"
-        }
+        {"type":"LEGAL_SCALE","claim":"ООО «РАПИД БИО», ИНН 0326576671, ОГРН 1200300004706; действует; выручка 612,032 млн ₽ за 2025 год; гендиректор Жимбиев Анжей Цыденжапович; учредитель ООО «РАПИД ГЛОБАЛ» 100% с 30.04.2026.","url":"https://www.tbank.ru/business/contractor/legal/1200300004706/","source":"Т-Банк / ФНС 2025-2026"},
+        {"type":"SCALE","claim":"Официальный сайт заявляет 60+ биотехнологов, 5 R&D лабораторий и производственную мощность 180 млн тестов в год.","url":"https://rapidbio.ru/","source":"Официальный сайт Rapid Bio"},
+        {"type":"SIGNAL","claim":"17.08.2026 компания открыла позицию CCO и одновременно развивает новое NGS-направление и международные рынки.","url":"https://dreamjob.ru/employers/313139/vakansii/136320904","source":"DreamJob/HH 2026"},
+        {"type":"BRAND_LEGAL_CONTACT","claim":"Официальный сайт и политика обработки данных подтверждают ООО «Рапид Био», ИНН 0326576671, и публикуют телефон/sales email.","url":"https://rapidbio.ru/approval","source":"Официальный сайт Rapid Bio"}
       ]
     }
   ]
