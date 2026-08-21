@@ -1,39 +1,38 @@
 {
-  "run_id": "N5K-20260821-297",
+  "run_id": "N5K-20260821-298",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-21T17:12:00+05:00",
+  "updated_at": "2026-08-21T18:28:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 190,
+    "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 192,
-    "current_contactable_count": 192,
-    "progress_added": 192,
-    "remaining": 4808
+    "current_canonical_count": 193,
+    "current_contactable_count": 193,
+    "progress_added": 193,
+    "remaining": 4807
   },
   "funnel": {
-    "discovered": 40,
-    "fast_gate_passed": 8,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 3,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 6,
-    "excluded": 32
+    "discovered": 28,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 3,
+    "excluded": 24
   },
   "qualified_companies": [
-    "Домоведовъ",
-    "Рапид Био / Rapid Bio"
+    "КМ-Сити"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "192_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "192_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "193_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "193_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

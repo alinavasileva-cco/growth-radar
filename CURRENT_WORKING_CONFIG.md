@@ -63,3 +63,7 @@ Canonical/contactable: 192/192. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 ## RUN 297 — verified final
 Physical canonical/contactable: 192/192. Added 2. Raw 40; fast 8; qualified 2. Integrity PASS. Orphan 0/0. Outreach 0.
+
+
+## Latest verified run N5K-20260821-298
+Canonical/contactable: 193/193. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
