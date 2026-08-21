@@ -1,29 +1,29 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-21T20:00:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260821-300`  
+**Версия:** 2026-08-21T21:00:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260821-301`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **197 / 197**  
+**Физически подтверждённый canonical/contactable:** **198 / 198**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4803**  
+**Осталось:** **4802**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **197 / 197**;
+- physical canonical/contactable count: **198 / 198**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260821-300`.
+- последний завершённый RUN: `N5K-20260821-301`.
 
-## RUN 300 — завершён
+## RUN 301 — завершён
 
-Фактически индивидуально проверено **23 разных raw-кандидата/работодателя** из актуальных job-board, официальных/публичных сайтов и company/legal источников. Требуемый диапазон 150–200 raw в этом выполнении честно не достигнут и не заявляется. FAST GATE применялся до deep-check. После финальных гейтов и повторного физического dedup квалифицированы и интегрированы **2** новые компании: УралНет / ООО «УРАЛНЕТ» (ИНН 6679021717) и Селлерпро / ООО «СЕЛЛЕРПРО» (ИНН 0800008993).
+Фактически индивидуально проверено **24 разных raw-кандидата/работодателя** из актуальных job-board, официальных сайтов и company/legal источников. Требуемый диапазон 150–200 raw в этом выполнении честно не достигнут и не заявляется. FAST GATE применялся до deep-check. После финальных гейтов и повторного физического dedup квалифицирована и интегрирована **1** новая компания: 100UP / ООО «100АП» (ИНН 7725778560).
 
-Воронка RUN 300: discovered 23 → fast gate 6 → size 3 → legal 3 → signal 2 → LPR 2 → contact 2 → qualified 2 → physically integrated 2. Duplicates: 1; excluded: 20. Physical canonical/contactable: 197/197. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Воронка RUN 301: discovered 24 → fast gate 5 → size 2 → legal 2 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 1. Duplicates: 3; excluded: 20. Physical canonical/contactable: 198/198. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-Для решения использованы актуальные сведения 2025–2026. Устаревшие и конфликтующие записи исключены. Финальный physical integration guard подтвердил фактическую запись обеих компаний.
+Для решения использованы актуальные сведения 2025–2026. Устаревшее указание официального сайта на Дмитрия Боровика как учредителя не использовано: актуальные ЕГРЮЛ-источники подтверждают Боровик Елену Александровну как генерального директора и собственника 100% с октября 2025 года. Финальный physical integration guard подтвердил отсутствие дубля и фактическую запись компании.
 
 ## Правила продолжения
 
@@ -59,6 +59,5 @@ Canonical/contactable: 195/195. Added: 2. Raw 14; fast 5; qualified 2. Integrity
 ## Latest verified run N5K-20260821-300
 Canonical/contactable: 197/197. Added: 2. Raw 23; fast 6; qualified 2. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260821-301
-Canonical/contactable: 198/198. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: 198/198. Added: 1. Raw 24; fast 5; qualified 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
