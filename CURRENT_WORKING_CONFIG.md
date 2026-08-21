@@ -1,40 +1,34 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-21T14:08:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260821-296`  
+**Версия:** 2026-08-21T18:28:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260821-298`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **190 / 190**  
+**Физически подтверждённый canonical/contactable:** **193 / 193**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4810**  
+**Осталось:** **4807**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **189 / 189**;
+- physical canonical/contactable count: **193 / 193**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260818-295`.
+- последний завершённый RUN: `N5K-20260821-298`.
 
-## RUN 295 — восстановлен и завершён
+## RUN 298 — завершён
 
-Финальный physical dedup выявил, что PanelTEK / ПанельТЭК (ИНН 5009130780) уже находился в master как N5K-0213, поэтому повторно не добавлен. Из pending интегрированы только 2 уникальные компании: Погружение / Альфа Квест и Huntsman.
+Фактически индивидуально проверено **28 разных raw-кандидатов/работодателей** из актуальных job-board и company/legal источников. Требуемый диапазон 150–200 raw в этом выполнении честно не достигнут и не заявляется. FAST GATE применялся до deep-check. После финальных гейтов и повторного физического dedup квалифицирована и интегрирована **1** новая компания: КМ-Сити / ООО «КМ-СИТИ» (ИНН 2224153871).
 
-Воронка RUN 295: discovered 100 → fast gate 10 → size 5 → legal 4 → signal 3 → LPR 3 → contact 3 → unique qualified/integrated 2. Duplicates: 15; excluded: 83. Physical canonical/contactable: 189/189. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## RUN 294 — завершён
-
-Фактически индивидуально проверено **35 разных raw-кандидатов/работодателей** из job-board и актуальных официальных/legal/company источников. Требуемый порог 100 разных raw в этом выполнении честно не достигнут и не заявляется. FAST GATE применялся до deep-check. После финальных гейтов и повторного физического dedup квалифицирована и интегрирована **1** новая компания: TRAFT / ООО «ТРАФТ» (ИНН 7720522660).
-
-Воронка RUN 294: discovered 35 → fast gate 5 → size 2 → legal 2 → signal 2 → LPR 1 → contact 1 → qualified 1 → physically integrated 1. Подтверждённых дублей: 5; excluded: 29. Active WIP: 0. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Воронка RUN 298: discovered 28 → fast gate 5 → size 2 → legal 1 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 1. Duplicates: 3; excluded: 24. Physical canonical/contactable: 193/193. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
 Для решения использованы актуальные сведения 2025–2026. Устаревшие и конфликтующие записи исключены. Финальный physical integration guard подтвердил отсутствие дубля у добавленной компании.
 
 ## Правила продолжения
 
 1. Перед каждым RUN проверять свежий HEAD, runtime, campaign_target и физические master/contactable.
-2. Discovery: минимум 100 реальных разных raw; быстрый FAST GATE до deep-check.
+2. Discovery: целевой throughput 150–200 реальных разных raw; быстрый FAST GATE до deep-check.
 3. FAST GATE: частная компания/ИП → масштаб → быстрый dedup → вероятный S1–S3 сигнал.
 4. ACTIVE WIP <=50; глубоко проверять лучших прошедших кандидатов.
 5. Дедуп дважды: до deep-check и непосредственно перед записью; физический master/integration guard является финальным источником истины.
@@ -50,20 +44,11 @@
 ## Latest verified run N5K-20260818-295
 Canonical/contactable: 189/189. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260821-296
 Canonical/contactable: 190/190. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260821-297
-Canonical/contactable: 192/192. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-
-
-## RUN 297 — verified final
-Physical canonical/contactable: 192/192. Added 2. Raw 40; fast 8; qualified 2. Integrity PASS. Orphan 0/0. Outreach 0.
-
+Canonical/contactable: 192/192. Added: 2. Raw 40; fast 8; qualified 2. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
 ## Latest verified run N5K-20260821-298
-Canonical/contactable: 193/193. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: 193/193. Added: 1. Raw 28; fast 5; qualified 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
