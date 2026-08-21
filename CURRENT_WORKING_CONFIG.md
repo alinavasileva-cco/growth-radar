@@ -1,21 +1,27 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 18.08.2026 08:57 MSK  
-**Последний полностью завершённый RUN:** `N5K-20260818-294`  
+**Версия:** 2026-08-21T13:41:20+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260818-295`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **187 / 187**  
+**Физически подтверждённый canonical/contactable:** **189 / 189**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4813**  
+**Осталось:** **4811**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **187 / 187**;
+- physical canonical/contactable count: **189 / 189**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260818-294`.
+- последний завершённый RUN: `N5K-20260818-295`.
+
+## RUN 295 — восстановлен и завершён
+
+Финальный physical dedup выявил, что PanelTEK / ПанельТЭК (ИНН 5009130780) уже находился в master как N5K-0213, поэтому повторно не добавлен. Из pending интегрированы только 2 уникальные компании: Погружение / Альфа Квест и Huntsman.
+
+Воронка RUN 295: discovered 100 → fast gate 10 → size 5 → legal 4 → signal 3 → LPR 3 → contact 3 → unique qualified/integrated 2. Duplicates: 15; excluded: 83. Physical canonical/contactable: 189/189. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
 ## RUN 294 — завершён
 
@@ -41,5 +47,5 @@
 
 История предыдущих RUN хранится в `run_logs`, `reports`, shards и Git history.
 
-## Latest verified run N5K-20260818-294
-Canonical/contactable: 187/187. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+## Latest verified run N5K-20260818-295
+Canonical/contactable: 189/189. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260818-295",
-  "updated_at": "2026-08-18T11:08:00+03:00",
+  "updated_at": "2026-08-21T13:41:20+03:00",
   "funnel": {
     "discovered": 100,
     "fast_gate_passed": 10,
@@ -42,14 +42,50 @@
       "Contact Source": "Официальный сайт ПанельТЭК; Careerist; актуальные реестровые/финансовые данные 2025-2026",
       "Consulting Hypothesis": "Масштабирование коммерческой системы под рост производственных мощностей: сегментация B2B, CRM/pipeline/forecast, KPI и unit-экономика каналов, найм и ramp-up sales-команды, синхронизация продаж с загрузкой двух производственных площадок",
       "contacts": [
-        {"value": "8 (800) 301-57-05", "channel": "Phone", "type": "Corporate", "source": "Официальный сайт ПанельТЭК", "url": "https://panel-tek.ru/o-kompanii/", "is_lpr": false, "notes": "Официальный корпоративный телефон"},
-        {"value": "info@panel-tek.ru", "channel": "Email", "type": "Corporate", "source": "Официальный сайт ПанельТЭК", "url": "https://panel-tek.ru/o-kompanii/", "is_lpr": false, "notes": "Официальный корпоративный email"}
+        {
+          "value": "8 (800) 301-57-05",
+          "channel": "Phone",
+          "type": "Corporate",
+          "source": "Официальный сайт ПанельТЭК",
+          "url": "https://panel-tek.ru/o-kompanii/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный телефон"
+        },
+        {
+          "value": "info@panel-tek.ru",
+          "channel": "Email",
+          "type": "Corporate",
+          "source": "Официальный сайт ПанельТЭК",
+          "url": "https://panel-tek.ru/o-kompanii/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email"
+        }
       ],
       "evidence": [
-        {"type": "LEGAL_SCALE", "claim": "ООО «ПАНЕЛЬТЭК», ИНН 5009130780, ОГРН 1225000017791; действует; выручка 159,8 млн ₽ за 2025 год", "url": "https://companium.ru/id/1225000017791-paneltehk", "source": "Companium / ФНС, отчетность 2025"},
-        {"type": "OWNER_LPR", "claim": "Шульженко Юрий Владимирович — генеральный директор и единственный учредитель", "url": "https://www.tbank.ru/business/contractor/legal/1225000017791/", "source": "Т-Банк / ЕГРЮЛ"},
-        {"type": "SIGNAL", "claim": "В 2026 компания открывает второй завод и запускает новый отдел продаж с нуля под рост мощностей", "url": "https://careerist.ru/vakansii/rukovoditel-otdela-prodazh-rop-paneltek-84817504.html", "source": "Careerist / вакансия 2026"},
-        {"type": "BRAND_LEGAL_CONTACT", "claim": "Официальный сайт ПанельТЭК публикует 8 (800) 301-57-05 и info@panel-tek.ru; сайт описывает два офиса, собственное производство и команду 42 специалиста", "url": "https://panel-tek.ru/o-kompanii/", "source": "Официальный сайт ПанельТЭК"}
+        {
+          "type": "LEGAL_SCALE",
+          "claim": "ООО «ПАНЕЛЬТЭК», ИНН 5009130780, ОГРН 1225000017791; действует; выручка 159,8 млн ₽ за 2025 год",
+          "url": "https://companium.ru/id/1225000017791-paneltehk",
+          "source": "Companium / ФНС, отчетность 2025"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Шульженко Юрий Владимирович — генеральный директор и единственный учредитель",
+          "url": "https://www.tbank.ru/business/contractor/legal/1225000017791/",
+          "source": "Т-Банк / ЕГРЮЛ"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "В 2026 компания открывает второй завод и запускает новый отдел продаж с нуля под рост мощностей",
+          "url": "https://careerist.ru/vakansii/rukovoditel-otdela-prodazh-rop-paneltek-84817504.html",
+          "source": "Careerist / вакансия 2026"
+        },
+        {
+          "type": "BRAND_LEGAL_CONTACT",
+          "claim": "Официальный сайт ПанельТЭК публикует 8 (800) 301-57-05 и info@panel-tek.ru; сайт описывает два офиса, собственное производство и команду 42 специалиста",
+          "url": "https://panel-tek.ru/o-kompanii/",
+          "source": "Официальный сайт ПанельТЭК"
+        }
       ]
     },
     {
@@ -79,16 +115,68 @@
       "Contact Source": "Официальный сайт Погружение; HeadHunter; актуальные ЕГРЮЛ/финансовые данные 2025-2026",
       "Consulting Hypothesis": "Систематизация масштабирования сети: единая коммерческая модель новых объектов, план-факт по локациям, CRM и воронки B2C/B2B, KPI sales-команды, экономика открытия филиалов и снижение зависимости роста от ручного управления",
       "contacts": [
-        {"value": "pogruzhenye@pogruzhenye.ru", "channel": "Email", "type": "CEO route", "source": "Официальный сайт Погружение", "url": "https://www.pogruzhenye.ru/contacts", "is_lpr": true, "notes": "На сайте прямо указан как email для связи с генеральным директором"},
-        {"value": "management@pogruzhenye.ru", "channel": "Email", "type": "Management", "source": "Официальный сайт Погружение", "url": "https://www.pogruzhenye.ru/contacts", "is_lpr": false, "notes": "Маршрут к руководству парка"},
-        {"value": "+7 (495) 150-16-45", "channel": "Phone", "type": "Corporate", "source": "Официальный сайт Погружение", "url": "https://www.pogruzhenye.ru/contacts", "is_lpr": false, "notes": "Официальный телефон"},
-        {"value": "https://hh.ru/vacancy/129484330", "channel": "HH", "type": "Employer vacancy", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129484330", "is_lpr": false, "notes": "Прямой маршрут через работодателя"}
+        {
+          "value": "pogruzhenye@pogruzhenye.ru",
+          "channel": "Email",
+          "type": "CEO route",
+          "source": "Официальный сайт Погружение",
+          "url": "https://www.pogruzhenye.ru/contacts",
+          "is_lpr": true,
+          "notes": "На сайте прямо указан как email для связи с генеральным директором"
+        },
+        {
+          "value": "management@pogruzhenye.ru",
+          "channel": "Email",
+          "type": "Management",
+          "source": "Официальный сайт Погружение",
+          "url": "https://www.pogruzhenye.ru/contacts",
+          "is_lpr": false,
+          "notes": "Маршрут к руководству парка"
+        },
+        {
+          "value": "+7 (495) 150-16-45",
+          "channel": "Phone",
+          "type": "Corporate",
+          "source": "Официальный сайт Погружение",
+          "url": "https://www.pogruzhenye.ru/contacts",
+          "is_lpr": false,
+          "notes": "Официальный телефон"
+        },
+        {
+          "value": "https://hh.ru/vacancy/129484330",
+          "channel": "HH",
+          "type": "Employer vacancy",
+          "source": "HeadHunter",
+          "url": "https://hh.ru/vacancy/129484330",
+          "is_lpr": false,
+          "notes": "Прямой маршрут через работодателя"
+        }
       ],
       "evidence": [
-        {"type": "LEGAL_SCALE", "claim": "ООО «АЛЬФА КВЕСТ», ИНН 9723134764, ОГРН 1227700008360; действует; выручка 50,376 млн ₽ за 2025 год; 14 сотрудников", "url": "https://xfirm.ru/company/9723134764", "source": "Xfirm / ФНС и Росстат, актуальные данные 2025-2026"},
-        {"type": "OWNER_LPR", "claim": "Филиппова Татьяна Сергеевна — генеральный директор с 01.10.2025; Тимофеев Алексей Игоревич — 70%, Карпов Ярослав Юрьевич — 30%", "url": "https://companies.rbc.ru/amp/ogrn/1227700008360/", "source": "РБК Компании / ЕГРЮЛ"},
-        {"type": "SIGNAL", "claim": "Вакансия 15.01.2026 сообщает о динамичном росте сети и плане открыть до 20 новых объектов к концу 2026 года", "url": "https://hh.ru/vacancy/129484330", "source": "HeadHunter / вакансия 2026"},
-        {"type": "BRAND_LEGAL_CONTACT", "claim": "Официальный сайт Погружение связывает бренд с ООО «АЛЬФА КВЕСТ», ИНН 9723134764, и публикует отдельные email для генерального директора и руководства", "url": "https://www.pogruzhenye.ru/contacts", "source": "Официальный сайт Погружение"}
+        {
+          "type": "LEGAL_SCALE",
+          "claim": "ООО «АЛЬФА КВЕСТ», ИНН 9723134764, ОГРН 1227700008360; действует; выручка 50,376 млн ₽ за 2025 год; 14 сотрудников",
+          "url": "https://xfirm.ru/company/9723134764",
+          "source": "Xfirm / ФНС и Росстат, актуальные данные 2025-2026"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Филиппова Татьяна Сергеевна — генеральный директор с 01.10.2025; Тимофеев Алексей Игоревич — 70%, Карпов Ярослав Юрьевич — 30%",
+          "url": "https://companies.rbc.ru/amp/ogrn/1227700008360/",
+          "source": "РБК Компании / ЕГРЮЛ"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "Вакансия 15.01.2026 сообщает о динамичном росте сети и плане открыть до 20 новых объектов к концу 2026 года",
+          "url": "https://hh.ru/vacancy/129484330",
+          "source": "HeadHunter / вакансия 2026"
+        },
+        {
+          "type": "BRAND_LEGAL_CONTACT",
+          "claim": "Официальный сайт Погружение связывает бренд с ООО «АЛЬФА КВЕСТ», ИНН 9723134764, и публикует отдельные email для генерального директора и руководства",
+          "url": "https://www.pogruzhenye.ru/contacts",
+          "source": "Официальный сайт Погружение"
+        }
       ]
     },
     {
@@ -118,16 +206,72 @@
       "Contact Source": "Официальный сайт Huntsman; HeadHunter; актуальные реестровые/финансовые данные 2025-2026",
       "Consulting Hypothesis": "Масштабирование региональной B2B-дистрибуции: сегментация 2000+ клиентов, CRM/pipeline/forecast, KPI и маржинальность каналов, стандартизация работы региональной команды и развитие дилерской модели без ручной зависимости от CEO",
       "contacts": [
-        {"value": "8 (495) 665-21-12", "channel": "Phone", "type": "Wholesale sales", "source": "Официальный сайт Huntsman", "url": "https://thehuntsman.ru/page/contacts", "is_lpr": false, "notes": "Телефон отдела оптовых продаж"},
-        {"value": "sales@thehuntsman.ru", "channel": "Email", "type": "Sales", "source": "Официальный сайт Huntsman", "url": "https://thehuntsman.ru/page/contacts", "is_lpr": false, "notes": "Официальный email отдела продаж"},
-        {"value": "https://hh.ru/vacancy/129615484", "channel": "HH", "type": "Employer vacancy", "source": "HeadHunter", "url": "https://hh.ru/vacancy/129615484", "is_lpr": false, "notes": "Практический маршрут через работодателя"}
+        {
+          "value": "8 (495) 665-21-12",
+          "channel": "Phone",
+          "type": "Wholesale sales",
+          "source": "Официальный сайт Huntsman",
+          "url": "https://thehuntsman.ru/page/contacts",
+          "is_lpr": false,
+          "notes": "Телефон отдела оптовых продаж"
+        },
+        {
+          "value": "sales@thehuntsman.ru",
+          "channel": "Email",
+          "type": "Sales",
+          "source": "Официальный сайт Huntsman",
+          "url": "https://thehuntsman.ru/page/contacts",
+          "is_lpr": false,
+          "notes": "Официальный email отдела продаж"
+        },
+        {
+          "value": "https://hh.ru/vacancy/129615484",
+          "channel": "HH",
+          "type": "Employer vacancy",
+          "source": "HeadHunter",
+          "url": "https://hh.ru/vacancy/129615484",
+          "is_lpr": false,
+          "notes": "Практический маршрут через работодателя"
+        }
       ],
       "evidence": [
-        {"type": "LEGAL_SCALE", "claim": "ООО «КОМПАНИЯ ВОСТОК», ИНН 7705719005, ОГРН 1067746353938; выручка 684,6 млн ₽ за 2025 год", "url": "https://companium.ru/id/1067746353938-kompaniya-vostok", "source": "Companium / ФНС, отчетность 2025"},
-        {"type": "OWNER_LPR", "claim": "Кашкин Сергей Романович — генеральный директор и совладелец; второй учредитель — Шаров Александр Анатольевич", "url": "https://companium.ru/id/1067746353938-kompaniya-vostok", "source": "Companium / ЕГРЮЛ"},
-        {"type": "SIGNAL", "claim": "19.01.2026 Huntsman искал руководителя B2B-продаж для регионального масштабирования, управления воронкой и командой; заявлены 2000+ B2B-клиентов и 60+ регионов", "url": "https://hh.ru/vacancy/129615484", "source": "HeadHunter / вакансия 2026"},
-        {"type": "BRAND_LEGAL_CONTACT", "claim": "Политика официального сайта thehuntsman.ru прямо указывает оператором ООО «КОМПАНИЯ ВОСТОК», ИНН 7705719005, ОГРН 1067746353938; контакты публикуют отдел оптовых продаж и sales@thehuntsman.ru", "url": "https://thehuntsman.ru/page/politika-konfidencialnosti", "source": "Официальный сайт Huntsman"}
+        {
+          "type": "LEGAL_SCALE",
+          "claim": "ООО «КОМПАНИЯ ВОСТОК», ИНН 7705719005, ОГРН 1067746353938; выручка 684,6 млн ₽ за 2025 год",
+          "url": "https://companium.ru/id/1067746353938-kompaniya-vostok",
+          "source": "Companium / ФНС, отчетность 2025"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Кашкин Сергей Романович — генеральный директор и совладелец; второй учредитель — Шаров Александр Анатольевич",
+          "url": "https://companium.ru/id/1067746353938-kompaniya-vostok",
+          "source": "Companium / ЕГРЮЛ"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "19.01.2026 Huntsman искал руководителя B2B-продаж для регионального масштабирования, управления воронкой и командой; заявлены 2000+ B2B-клиентов и 60+ регионов",
+          "url": "https://hh.ru/vacancy/129615484",
+          "source": "HeadHunter / вакансия 2026"
+        },
+        {
+          "type": "BRAND_LEGAL_CONTACT",
+          "claim": "Политика официального сайта thehuntsman.ru прямо указывает оператором ООО «КОМПАНИЯ ВОСТОК», ИНН 7705719005, ОГРН 1067746353938; контакты публикуют отдел оптовых продаж и sales@thehuntsman.ru",
+          "url": "https://thehuntsman.ru/page/politika-konfidencialnosti",
+          "source": "Официальный сайт Huntsman"
+        }
       ]
+    }
+  ],
+  "integration_status": "COMPLETED_WITH_FINAL_DEDUP",
+  "final_unique_integrated": [
+    "N5K-0333",
+    "N5K-0334"
+  ],
+  "final_duplicate_rejected": [
+    {
+      "Lead ID": "N5K-0332",
+      "INN": "5009130780",
+      "reason": "Already physically present as N5K-0213"
     }
   ]
 }
