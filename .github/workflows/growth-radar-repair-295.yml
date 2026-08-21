@@ -1,0 +1,178 @@
+name: Growth Radar repair RUN 295
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/growth-radar-repair-295.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Integrate pending RUN 295 with physical dedup
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, json, pathlib, re
+          from datetime import datetime, timezone, timedelta
+
+          ROOT = pathlib.Path('.')
+          campaign = ROOT / 'data/campaigns/new_5000'
+          pending_path = ROOT / 'data/runtime/growth_radar_pending_run.json'
+          current_path = ROOT / 'data/runtime/current_run_status.json'
+          target_path = ROOT / 'data/runtime/campaign_target.json'
+          config_path = ROOT / 'CURRENT_WORKING_CONFIG.md'
+          run_id = 'N5K-20260818-295'
+          now = datetime.now(timezone(timedelta(hours=3))).replace(microsecond=0).isoformat()
+
+          def read_csv(path):
+              with path.open('r', encoding='utf-8-sig', newline='') as f:
+                  return list(csv.DictReader(f))
+          def append_csv(path, rows, fieldnames=None):
+              exists = path.exists() and path.stat().st_size > 0
+              if fieldnames is None:
+                  with path.open('r', encoding='utf-8-sig', newline='') as f:
+                      fieldnames = next(csv.reader(f))
+              with path.open('a', encoding='utf-8', newline='') as f:
+                  w = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
+                  if not exists: w.writeheader()
+                  for r in rows: w.writerow({k: r.get(k, '') for k in fieldnames})
+          def write_csv(path, rows, fieldnames):
+              path.parent.mkdir(parents=True, exist_ok=True)
+              with path.open('w', encoding='utf-8', newline='') as f:
+                  w=csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore'); w.writeheader()
+                  for r in rows: w.writerow({k:r.get(k,'') for k in fieldnames})
+
+          pending = json.loads(pending_path.read_text(encoding='utf-8'))
+          assert pending.get('run_id') == run_id, pending.get('run_id')
+          candidates = pending.get('qualified_companies', [])
+          assert len(candidates) == 3, len(candidates)
+
+          leads_path = campaign/'leads_master.csv'
+          contactable_path = campaign/'contactable_master.csv'
+          contacts_path = campaign/'contacts.csv'
+          evidence_path = campaign/'evidence.csv'
+          leads = read_csv(leads_path)
+          contactable = read_csv(contactable_path)
+
+          def norm(s): return re.sub(r'\s+',' ',(s or '').strip().lower().replace('«','').replace('»',''))
+          existing_inn = {norm(r.get('INN')) for r in leads if r.get('INN')}
+          existing_ogrn = {norm(r.get('OGRN/OGRNIP')) for r in leads if r.get('OGRN/OGRNIP')}
+          existing_legal = {norm(r.get('Legal Name')) for r in leads if r.get('Legal Name')}
+          existing_domains = {norm(re.sub(r'^https?://(www\.)?','',r.get('Website','')).rstrip('/')) for r in leads if r.get('Website')}
+
+          unique=[]; duplicates=[]
+          for c in candidates:
+              domain=norm(re.sub(r'^https?://(www\.)?','',c.get('Website','')).rstrip('/'))
+              reasons=[]
+              if norm(c.get('INN')) in existing_inn: reasons.append('INN')
+              if norm(c.get('OGRN/OGRNIP')) in existing_ogrn: reasons.append('OGRN')
+              if norm(c.get('Legal Name')) in existing_legal: reasons.append('LEGAL')
+              if domain and domain in existing_domains: reasons.append('DOMAIN')
+              if reasons: duplicates.append((c, reasons))
+              else: unique.append(c)
+          # Expected correction: PanelTEK duplicate; Alfa Quest + Huntsman unique.
+          assert {c['INN'] for c,_ in duplicates} == {'5009130780'}, duplicates
+          assert {c['INN'] for c in unique} == {'9723134764','7705719005'}, unique
+
+          leads_fields = list(read_csv(leads_path)[0].keys()) if leads else []
+          contactable_fields = list(read_csv(contactable_path)[0].keys()) if contactable else []
+          contacts_existing = read_csv(contacts_path)
+          evidence_existing = read_csv(evidence_path)
+          contacts_fields = list(contacts_existing[0].keys()) if contacts_existing else ['Lead ID','Contact ID','Brand','INN','Person Name','Person Role','Contact Value','Contact Channel','Contact Type','Contact Source','Source URL','Is LPR','Reliability','Date Checked','Notes','Run ID','Campaign ID']
+          evidence_fields = list(evidence_existing[0].keys()) if evidence_existing else ['Lead ID','Evidence ID','Evidence Type','Claim','Source URL','Source Name','Checked At','Reliability','Run ID','Campaign ID']
+
+          lead_rows=[]; contactable_rows=[]; contact_rows=[]; evidence_rows=[]
+          for c in unique:
+              lead={
+                'Lead ID':c['Lead ID'],'Brand':c['Brand'],'Legal Name':c['Legal Name'],'INN':c['INN'],'OGRN/OGRNIP':c['OGRN/OGRNIP'],'Legal Status':'Действует','Region':c.get('Region',''),'City':c.get('City',''),'Segment':c.get('Segment',''),'Website':c.get('Website',''),'Revenue/Scale':c.get('Revenue/Scale',''),'Signal Level':c.get('Signal Level',''),'Signal Summary':c.get('Signal Summary',''),'Signal Date':c.get('Signal Date',''),'Signal Source':c.get('Signal Source',''),'Owner':c.get('Owner',''),'CEO':c.get('CEO',''),'LPR':c.get('LPR',''),'LPR Role':c.get('LPR Role',''),'Primary Phone':c.get('Primary Phone',''),'Primary Email':c.get('Primary Email',''),'HH Contact':c.get('HH Contact',''),'Contact Form':c.get('Contact Form',''),'Contact Type':c.get('Contact Type',''),'Contact Source':c.get('Contact Source',''),'Number Of Contacts Found':str(len(c.get('contacts',[]))),'Consulting Hypothesis':c.get('Consulting Hypothesis',''),'Final Quick Status':'МОЖНО СВЯЗЫВАТЬСЯ','Added At':now,'Updated At':now,'Run ID':run_id,'Campaign ID':'new_5000'}
+              lead_rows.append(lead)
+              cr={k:lead.get(k,'') for k in contactable_fields}
+              cr.update({'Telegram':'','VK':'','Other Contact':'','Final Quick Status':'МОЖНО СВЯЗЫВАТЬСЯ','Added At':now,'Updated At':now,'Run ID':run_id,'Campaign ID':'new_5000'})
+              contactable_rows.append(cr)
+              for i,ct in enumerate(c.get('contacts',[]),1):
+                  contact_rows.append({'Lead ID':c['Lead ID'],'Contact ID':f"{c['Lead ID']}-C{i:02d}",'Brand':c['Brand'],'INN':c['INN'],'Person Name':c.get('LPR','') if ct.get('is_lpr') else '','Person Role':c.get('LPR Role','') if ct.get('is_lpr') else '','Contact Value':ct.get('value',''),'Contact Channel':ct.get('channel',''),'Contact Type':ct.get('type',''),'Contact Source':ct.get('source',''),'Source URL':ct.get('url',''),'Is LPR':'true' if ct.get('is_lpr') else 'false','Reliability':'HIGH' if 'Официальный' in ct.get('source','') else 'MEDIUM','Date Checked':'2026-08-18','Notes':ct.get('notes',''),'Run ID':run_id,'Campaign ID':'new_5000'})
+              for i,ev in enumerate(c.get('evidence',[]),1):
+                  evidence_rows.append({'Lead ID':c['Lead ID'],'Evidence ID':f"{c['Lead ID']}-E{i:02d}",'Evidence Type':ev.get('type','').lower(),'Claim':ev.get('claim',''),'Source URL':ev.get('url',''),'Source Name':ev.get('source',''),'Checked At':'2026-08-18','Reliability':'HIGH','Run ID':run_id,'Campaign ID':'new_5000'})
+
+          append_csv(leads_path, lead_rows, leads_fields)
+          append_csv(contactable_path, contactable_rows, contactable_fields)
+          append_csv(contacts_path, contact_rows, contacts_fields)
+          append_csv(evidence_path, evidence_rows, evidence_fields)
+
+          # Required transaction layers: increments and shards.
+          write_csv(campaign/'increments'/f'leads_{run_id}.csv', lead_rows, leads_fields)
+          write_csv(campaign/'increments'/f'contacts_{run_id}.csv', contact_rows, contacts_fields)
+          write_csv(campaign/'increments'/f'evidence_{run_id}.csv', evidence_rows, evidence_fields)
+          write_csv(campaign/'master_shards'/f'leads_{run_id}.csv', lead_rows, leads_fields)
+          write_csv(campaign/'contactable_shards'/f'contactable_{run_id}.csv', contactable_rows, contactable_fields)
+          write_csv(campaign/'contact_shards'/f'contacts_{run_id}.csv', contact_rows, contacts_fields)
+          write_csv(campaign/'evidence_shards'/f'evidence_{run_id}.csv', evidence_rows, evidence_fields)
+
+          new_leads=read_csv(leads_path); new_contactable=read_csv(contactable_path); new_contacts=read_csv(contacts_path); new_evidence=read_csv(evidence_path)
+          assert len(new_leads)==189, len(new_leads)
+          assert len(new_contactable)==189, len(new_contactable)
+          # uniqueness guards
+          for key in ['INN','OGRN/OGRNIP']:
+              vals=[norm(r.get(key)) for r in new_leads if r.get(key)]
+              assert len(vals)==len(set(vals)), f'duplicate {key}'
+          lead_ids={r['Lead ID'] for r in new_leads}
+          orphan_contacts=[r for r in new_contacts if r.get('Lead ID') not in lead_ids]
+          orphan_evidence=[r for r in new_evidence if r.get('Lead ID') not in lead_ids]
+          assert not orphan_contacts, len(orphan_contacts)
+          assert not orphan_evidence, len(orphan_evidence)
+          assert {r['INN'] for r in new_leads if r['INN'] in {'9723134764','7705719005'}} == {'9723134764','7705719005'}
+          assert sum(1 for r in new_leads if r.get('INN')=='5009130780')==1
+
+          report_rel='reports/run_2026-08-18_295.md'
+          report=ROOT/report_rel; report.parent.mkdir(parents=True,exist_ok=True)
+          report.write_text(f'''# Growth Radar RUN 295 — repaired and completed\n\n- RUN: `{run_id}`\n- Baseline: 187 / 187\n- Physical result: **189 / 189**\n- Added unique: **2** — Погружение / Альфа Квест; Huntsman\n- Pending duplicate rejected: **PanelTEK / ПанельТЭК** (ИНН 5009130780 already present as N5K-0213)\n- Funnel: discovered 100 → fast gate 10 → size 5 → legal 4 → signal 3 → LPR 3 → contact 3 → unique qualified/integrated 2\n- Duplicates: 15 (14 original + PanelTEK detected by final physical dedup)\n- Excluded: 83\n- Integrity: PASS\n- Orphan contacts/evidence: 0 / 0\n- Outreach: 0\n\nУстаревшие/конфликтующие сведения не использовались для решения. Финальный источник истины — физический master.\n''',encoding='utf-8')
+
+          run_log=campaign/'run_log.csv'
+          append_csv(run_log,[{'Run ID':run_id,'Started At':'2026-08-18T10:04:30+03:00','Completed At':now,'Campaign ID':'new_5000','Discovered':'100','Qualified':'2','Duplicates':'15','Excluded':'83','Current Canonical':'189','Current Contactable':'189','Integrity':'PASS','Orphan Contacts':'0','Orphan Evidence':'0','Report':report_rel}])
+          runlogs=campaign/'run_logs'; runlogs.mkdir(parents=True,exist_ok=True)
+          write_csv(runlogs/f'{run_id}.csv',[{'Run ID':run_id,'Started At':'2026-08-18T10:04:30+03:00','Completed At':now,'Campaign ID':'new_5000','Discovered':'100','Qualified':'2','Duplicates':'15','Excluded':'83','Current Canonical':'189','Current Contactable':'189','Integrity':'PASS','Orphan Contacts':'0','Orphan Evidence':'0','Report':report_rel}],['Run ID','Started At','Completed At','Campaign ID','Discovered','Qualified','Duplicates','Excluded','Current Canonical','Current Contactable','Integrity','Orphan Contacts','Orphan Evidence','Report'])
+
+          status={'run_id':run_id,'campaign_id':'new_5000','status':'COMPLETED','updated_at':now,'stage':'COMPLETE','new_cycle':{'baseline_count':0,'target_count':5000,'current_canonical_count':189,'current_contactable_count':189,'progress_added':189,'remaining':4811},'funnel':{'discovered':100,'fast_gate_passed':10,'size_check_passed':5,'legal_match_passed':4,'signal_confirmed':3,'lpr_identified':3,'contact_route_found':3,'qualified':2,'duplicates':15,'excluded':83},'qualified_companies':['Погружение / Альфа Квест','Huntsman'],'duplicate_rejected':['ПанельТЭК / PanelTEK — already N5K-0213, INN 5009130780'],'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'active_wip':0,'physical_master_state':'189_DATA_ROWS_PLUS_HEADER_CONFIRMED','physical_contactable_state':'189_DATA_ROWS_PLUS_HEADER_CONFIRMED','outreach_sent':0,'blocker':None}
+          current_path.write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          target={'campaign_id':'new_5000','baseline_count':0,'total_target':5000,'current_canonical_count':189,'current_contactable_count':189,'progress_added':189,'remaining_to_total_target':4811,'remaining':4811,'qualified_staged_not_counted':0,'integrity_status':'PASS','campaign_status':'ACTIVE','updated_at':now,'namespace':'data/campaigns/new_5000','last_completed_run_id':run_id,'current_run_id':run_id,'last_run_id':run_id,'latest_completed_run':run_id,'orphan_contacts':0,'orphan_evidence':0,'note':'RUN 295 repaired: PanelTEK rejected as existing duplicate N5K-0213; Alfa Quest and Huntsman physically integrated; canonical/contactable 189/189; integrity PASS; orphan 0/0; outreach 0.'}
+          target_path.write_text(json.dumps(target,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          metrics=campaign/'metrics'/f'{run_id}.json'; metrics.parent.mkdir(parents=True,exist_ok=True); metrics.write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          cfg=config_path.read_text(encoding='utf-8')
+          cfg=re.sub(r'\*\*Версия:\*\*.*',f'**Версия:** {now}  ',cfg,1)
+          cfg=re.sub(r'\*\*Последний полностью завершённый RUN:\*\*.*',f'**Последний полностью завершённый RUN:** `{run_id}`  ',cfg,1)
+          cfg=re.sub(r'\*\*Физически подтверждённый canonical/contactable:\*\*.*','**Физически подтверждённый canonical/contactable:** **189 / 189**  ',cfg,1)
+          cfg=re.sub(r'\*\*Осталось:\*\*.*','**Осталось:** **4811**  ',cfg,1)
+          cfg=cfg.replace('physical canonical/contactable count: **187 / 187**','physical canonical/contactable count: **189 / 189**',1).replace('последний завершённый RUN: `N5K-20260818-294`','последний завершённый RUN: `N5K-20260818-295`',1)
+          latest='''\n## RUN 295 — восстановлен и завершён\n\nФинальный physical dedup выявил, что PanelTEK / ПанельТЭК (ИНН 5009130780) уже находился в master как N5K-0213, поэтому повторно не добавлен. Из pending интегрированы только 2 уникальные компании: Погружение / Альфа Квест и Huntsman.\n\nВоронка RUN 295: discovered 100 → fast gate 10 → size 5 → legal 4 → signal 3 → LPR 3 → contact 3 → unique qualified/integrated 2. Duplicates: 15; excluded: 83. Physical canonical/contactable: 189/189. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.\n'''
+          cfg=re.sub(r'\n## RUN 294 — завершён',latest+'\n## RUN 294 — завершён',cfg,1)
+          cfg=re.sub(r'## Latest verified run N5K-20260818-294\nCanonical/contactable: 187/187\. Integrity PASS\. Orphan contacts/evidence: 0/0\. Outreach: 0\.',f'## Latest verified run {run_id}\nCanonical/contactable: 189/189. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.',cfg)
+          config_path.write_text(cfg,encoding='utf-8')
+
+          # Pending becomes an audit record, not an active staged batch.
+          pending['integration_status']='COMPLETED_WITH_FINAL_DEDUP'
+          pending['final_unique_integrated']=['N5K-0333','N5K-0334']
+          pending['final_duplicate_rejected']=[{'Lead ID':'N5K-0332','INN':'5009130780','reason':'Already physically present as N5K-0213'}]
+          pending['updated_at']=now
+          pending_path.write_text(json.dumps(pending,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('INTEGRATION_OK canonical=189 contactable=189 added=2 duplicates=15 orphan=0/0')
+          PY
+      - name: Commit repaired RUN
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data CURRENT_WORKING_CONFIG.md reports
+          git commit -m "Growth Radar RUN 295: integrate 2 unique after physical dedup"
+          git push origin main
