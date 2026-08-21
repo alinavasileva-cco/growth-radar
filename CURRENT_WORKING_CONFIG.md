@@ -1,29 +1,29 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-21T19:00:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260821-299`  
+**Версия:** 2026-08-21T20:00:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260821-300`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **195 / 195**  
+**Физически подтверждённый canonical/contactable:** **197 / 197**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4805**  
+**Осталось:** **4803**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **195 / 195**;
+- physical canonical/contactable count: **197 / 197**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260821-299`.
+- последний завершённый RUN: `N5K-20260821-300`.
 
-## RUN 299 — завершён
+## RUN 300 — завершён
 
-Фактически индивидуально проверено **14 разных raw-кандидатов/работодателей** из актуальных job-board, официальных сайтов и company/legal источников. Требуемый диапазон 150–200 raw в этом выполнении честно не достигнут и не заявляется. FAST GATE применялся до deep-check. После финальных гейтов и повторного физического dedup квалифицированы и интегрированы **2** новые компании: СоюзХимТранс-Авто / ООО «СОЮЗХИМТРАНС-АВТО» (ИНН 7805564299) и Well Fitness / ООО «ОПТИМА ИМПОРТ» (ИНН 7734728519).
+Фактически индивидуально проверено **23 разных raw-кандидата/работодателя** из актуальных job-board, официальных/публичных сайтов и company/legal источников. Требуемый диапазон 150–200 raw в этом выполнении честно не достигнут и не заявляется. FAST GATE применялся до deep-check. После финальных гейтов и повторного физического dedup квалифицированы и интегрированы **2** новые компании: УралНет / ООО «УРАЛНЕТ» (ИНН 6679021717) и Селлерпро / ООО «СЕЛЛЕРПРО» (ИНН 0800008993).
 
-Воронка RUN 299: discovered 14 → fast gate 5 → size 3 → legal 3 → signal 2 → LPR 2 → contact 2 → qualified 2 → physically integrated 2. Duplicates: 0; excluded: 12. Physical canonical/contactable: 195/195. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Воронка RUN 300: discovered 23 → fast gate 6 → size 3 → legal 3 → signal 2 → LPR 2 → contact 2 → qualified 2 → physically integrated 2. Duplicates: 1; excluded: 20. Physical canonical/contactable: 197/197. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-Для решения использованы актуальные сведения 2025–2026. Устаревшие и конфликтующие записи исключены. Финальный physical integration guard подтвердил отсутствие дублей у двух добавленных компаний.
+Для решения использованы актуальные сведения 2025–2026. Устаревшие и конфликтующие записи исключены. Финальный physical integration guard подтвердил фактическую запись обеих компаний.
 
 ## Правила продолжения
 
@@ -56,6 +56,5 @@ Canonical/contactable: 193/193. Added: 1. Raw 28; fast 5; qualified 1. Integrity
 ## Latest verified run N5K-20260821-299
 Canonical/contactable: 195/195. Added: 2. Raw 14; fast 5; qualified 2. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260821-300
-Canonical/contactable: 197/197. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: 197/197. Added: 2. Raw 23; fast 6; qualified 2. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
