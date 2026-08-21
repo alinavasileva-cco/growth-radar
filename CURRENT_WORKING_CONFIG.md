@@ -1,12 +1,12 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-21T13:41:20+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260818-295`  
+**Версия:** 2026-08-21T14:08:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260821-296`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **189 / 189**  
+**Физически подтверждённый canonical/contactable:** **190 / 190**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4811**  
+**Осталось:** **4810**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -49,3 +49,7 @@
 
 ## Latest verified run N5K-20260818-295
 Canonical/contactable: 189/189. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260821-296
+Canonical/contactable: 190/190. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0336,N5K-0336-C01,GN Axel,7704303861,,Корпоративный маршрут,+7 (499) 755-68-94,Phone,Corporate,Официальный сайт GN Axel,https://gnaxel.ru/,NO,HIGH,2026-08-21,Официальный корпоративный телефон,N5K-20260821-296,new_5000
+N5K-0336,N5K-0336-C02,GN Axel,7704303861,,Корпоративный маршрут,sales@gnaxel.ru,Email,Sales,Официальный сайт GN Axel / Saby,https://gnaxel.ru/,NO,HIGH,2026-08-21,Практический маршрут в коммерческий контур,N5K-20260821-296,new_5000
+N5K-0336,N5K-0336-C03,GN Axel,7704303861,,Корпоративный маршрут,https://dreamjob.ru/employers/2747871/vakansii/133639720,Job board,Employer vacancy,DreamJob,https://dreamjob.ru/employers/2747871/vakansii/133639720,NO,HIGH,2026-08-21,Маршрут через профиль работодателя/вакансию,N5K-20260821-296,new_5000

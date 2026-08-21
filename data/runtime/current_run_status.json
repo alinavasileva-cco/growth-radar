@@ -1,42 +1,41 @@
 {
-  "run_id": "N5K-20260818-295",
+  "run_id": "N5K-20260821-296",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-21T13:41:20+03:00",
+  "updated_at": "2026-08-21T14:08:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 0,
+    "baseline_count": 189,
     "target_count": 5000,
-    "current_canonical_count": 189,
-    "current_contactable_count": 189,
-    "progress_added": 189,
-    "remaining": 4811
+    "current_canonical_count": 190,
+    "current_contactable_count": 190,
+    "progress_added": 190,
+    "remaining": 4810
   },
   "funnel": {
-    "discovered": 100,
-    "fast_gate_passed": 10,
+    "discovered": 34,
+    "fast_gate_passed": 7,
     "size_check_passed": 5,
     "legal_match_passed": 4,
     "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 2,
-    "duplicates": 15,
-    "excluded": 83
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 32
   },
   "qualified_companies": [
-    "Погружение / Альфа Квест",
-    "Huntsman"
+    "GN Axel"
   ],
   "duplicate_rejected": [
-    "ПанельТЭК / PanelTEK — already N5K-0213, INN 5009130780"
+    "Макошь — INN,OGRN,LEGAL,DOMAIN"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "189_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "189_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "190_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "190_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
