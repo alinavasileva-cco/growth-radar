@@ -1,277 +1,183 @@
 {
-  "run_id": "N5K-20260818-295",
-  "updated_at": "2026-08-21T13:41:20+03:00",
+  "run_id": "N5K-20260821-296",
+  "updated_at": "2026-08-21T14:08:00+03:00",
   "funnel": {
-    "discovered": 100,
-    "fast_gate_passed": 10,
+    "discovered": 34,
+    "fast_gate_passed": 7,
     "size_check_passed": 5,
     "legal_match_passed": 4,
     "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "duplicates": 14,
-    "excluded": 83
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 32
   },
-  "notes": "RUN 295: 100 distinct employer/company signals were screened across multiple independent job-board discovery queries plus current official/legal/company sources. FAST GATE was applied before deep-check. Current 2025-2026 data only; stale/conflicting records were not used for qualification. Three companies passed legal, scale, signal, LPR and practical contact-route gates. Pre-write repository search returned no INN match for 5009130780, 9723134764 or 7705719005; final physical integration guard remains authoritative. Baseline before integration 187/187. No outreach.",
+  "notes": "RUN 296 started from verified physical baseline 189/189 after completed RUN 295. In this execution 34 distinct employer/company signals were individually screened across multiple current job-board, official-company and legal/company-data sources. The required 100 distinct raw threshold was not reached in this execution and is not overstated. FAST GATE was applied before deep-check. Current 2025-2026 data were preferred; stale/conflicting records were excluded from decisions. Two candidates passed legal, scale, signal, LPR and practical contact-route gates. Pre-write repository searches returned no INN/OGRN/legal/domain match for INN 7153001004 or 7704303861; final physical integration guard remains authoritative. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0332",
-      "Brand": "ПанельТЭК / PanelTEK",
-      "Legal Name": "ООО «ПАНЕЛЬТЭК»",
-      "INN": "5009130780",
-      "OGRN/OGRNIP": "1225000017791",
-      "Region": "Московская область",
-      "City": "Домодедово / Москва",
-      "Segment": "Производство сэндвич-панелей / строительные материалы / B2B",
-      "Website": "https://panel-tek.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 159,8 млн ₽ за 2025 год; официальный сайт указывает 42 специалиста, два офиса и собственное производство",
+      "Lead ID": "N5K-0335",
+      "Brand": "Макошь",
+      "Legal Name": "ООО «МАКОШЬ»",
+      "INN": "7153001004",
+      "OGRN/OGRNIP": "1207100014230",
+      "Region": "Тульская область",
+      "City": "Узловский район / ОЭЗ «Узловая»",
+      "Segment": "Пищевые ингредиенты / глубокая переработка растительного сырья / B2B производство",
+      "Website": "https://makosh.pro/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 55,57 млн ₽ за 2025 год; 20 сотрудников по данным ФНС за 2025 год; собственный производственный комплекс в ОЭЗ «Узловая»",
       "Signal Level": "S1",
-      "Signal Summary": "В феврале 2026 компания сообщила об открытии второго завода и под рост мощностей запускала новый отдел продаж с нуля: структура, найм, обучение, CRM, воронка и отчетность",
-      "Signal Date": "2026-02-21",
-      "Signal Source": "https://careerist.ru/vakansii/rukovoditel-otdela-prodazh-rop-paneltek-84817504.html",
-      "Owner": "Шульженко Юрий Владимирович 100%",
-      "CEO": "Шульженко Юрий Владимирович",
-      "LPR": "Шульженко Юрий Владимирович",
-      "LPR Role": "Учредитель 100% / генеральный директор",
-      "Primary Phone": "8 (800) 301-57-05",
-      "Primary Email": "info@panel-tek.ru",
+      "Signal Summary": "07.05.2026 компания искала руководителя B2B-продаж для построения и масштабирования коммерческой системы: структура продаж, CRM, воронка, KPI, каналы, рост выручки и маржинальности",
+      "Signal Date": "2026-05-07",
+      "Signal Source": "https://facancy.ru/vacancies/rukovoditel-b2b-prodazh-v-proizvodstvennuiu-kompaniiu-makosh",
+      "Owner": "Макаренкова Лариса Федоровна; Рябов Василий Владимирович; Беляшов Андрей Евгеньевич; Булатова Диана Музировна; Чумаков Николай Андреевич; Приходько Василий Васильевич",
+      "CEO": "Рябов Сергей Сергеевич",
+      "LPR": "Рябов Сергей Сергеевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (495) 987-37-14",
+      "Primary Email": "info@makosh.pro",
       "HH Contact": "",
-      "Contact Form": "https://panel-tek.ru/o-kompanii/",
+      "Contact Form": "https://makosh.pro/cooperation/",
       "Contact Type": "Corporate Phone; Email; Website",
-      "Contact Source": "Официальный сайт ПанельТЭК; Careerist; актуальные реестровые/финансовые данные 2025-2026",
-      "Consulting Hypothesis": "Масштабирование коммерческой системы под рост производственных мощностей: сегментация B2B, CRM/pipeline/forecast, KPI и unit-экономика каналов, найм и ramp-up sales-команды, синхронизация продаж с загрузкой двух производственных площадок",
+      "Contact Source": "Официальный сайт Макошь; Facancy; Т-Банк; Companium/ФНС",
+      "Consulting Hypothesis": "Масштабирование B2B-коммерции нового производственного комплекса: сегментация отраслей и клиентов, CRM/pipeline/forecast, KPI и экономика каналов, развитие ключевых клиентов и синхронизация продаж с производственной загрузкой",
       "contacts": [
         {
-          "value": "8 (800) 301-57-05",
+          "value": "+7 (495) 987-37-14",
           "channel": "Phone",
           "type": "Corporate",
-          "source": "Официальный сайт ПанельТЭК",
-          "url": "https://panel-tek.ru/o-kompanii/",
+          "source": "Официальный сайт Макошь",
+          "url": "https://makosh.pro/cooperation/",
           "is_lpr": false,
           "notes": "Официальный корпоративный телефон"
         },
         {
-          "value": "info@panel-tek.ru",
+          "value": "info@makosh.pro",
           "channel": "Email",
           "type": "Corporate",
-          "source": "Официальный сайт ПанельТЭК",
-          "url": "https://panel-tek.ru/o-kompanii/",
+          "source": "Официальный сайт Макошь",
+          "url": "https://makosh.pro/cooperation/",
           "is_lpr": false,
           "notes": "Официальный корпоративный email"
+        },
+        {
+          "value": "https://makosh.pro/cooperation/",
+          "channel": "Website",
+          "type": "Cooperation form",
+          "source": "Официальный сайт Макошь",
+          "url": "https://makosh.pro/cooperation/",
+          "is_lpr": false,
+          "notes": "Практический маршрут для B2B-запроса"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL_SCALE",
-          "claim": "ООО «ПАНЕЛЬТЭК», ИНН 5009130780, ОГРН 1225000017791; действует; выручка 159,8 млн ₽ за 2025 год",
-          "url": "https://companium.ru/id/1225000017791-paneltehk",
-          "source": "Companium / ФНС, отчетность 2025"
+          "claim": "ООО «МАКОШЬ», ИНН 7153001004, ОГРН 1207100014230; действует; выручка 55,57 млн ₽ за 2025 год; генеральный директор Рябов Сергей Сергеевич",
+          "url": "https://www.tbank.ru/business/contractor/legal/1207100014230/",
+          "source": "Т-Банк / ЕГРЮЛ и отчетность 2025"
         },
         {
-          "type": "OWNER_LPR",
-          "claim": "Шульженко Юрий Владимирович — генеральный директор и единственный учредитель",
-          "url": "https://www.tbank.ru/business/contractor/legal/1225000017791/",
-          "source": "Т-Банк / ЕГРЮЛ"
+          "type": "SCALE_EMPLOYEES",
+          "claim": "Среднесписочная численность ООО «МАКОШЬ» за 2025 год — 20 сотрудников",
+          "url": "https://companium.ru/id/1207100014230-makosh",
+          "source": "Companium / ФНС 2025"
         },
         {
           "type": "SIGNAL",
-          "claim": "В 2026 компания открывает второй завод и запускает новый отдел продаж с нуля под рост мощностей",
-          "url": "https://careerist.ru/vakansii/rukovoditel-otdela-prodazh-rop-paneltek-84817504.html",
-          "source": "Careerist / вакансия 2026"
+          "claim": "07.05.2026 компания искала руководителя B2B-продаж для построения и масштабирования коммерческой системы, CRM, воронки, KPI и каналов продаж",
+          "url": "https://facancy.ru/vacancies/rukovoditel-b2b-prodazh-v-proizvodstvennuiu-kompaniiu-makosh",
+          "source": "Facancy / вакансия 2026"
         },
         {
           "type": "BRAND_LEGAL_CONTACT",
-          "claim": "Официальный сайт ПанельТЭК публикует 8 (800) 301-57-05 и info@panel-tek.ru; сайт описывает два офиса, собственное производство и команду 42 специалиста",
-          "url": "https://panel-tek.ru/o-kompanii/",
-          "source": "Официальный сайт ПанельТЭК"
+          "claim": "Официальный сайт связывает бренд Макошь с ООО «МАКОШЬ», ИНН 7153001004, ОГРН 1207100014230 и публикует телефон/email и B2B-маршрут сотрудничества",
+          "url": "https://makosh.pro/cooperation/",
+          "source": "Официальный сайт Макошь"
         }
       ]
     },
     {
-      "Lead ID": "N5K-0333",
-      "Brand": "Погружение / Альфа Квест",
-      "Legal Name": "ООО «АЛЬФА КВЕСТ»",
-      "INN": "9723134764",
-      "OGRN/OGRNIP": "1227700008360",
-      "Region": "Москва / Санкт-Петербург",
-      "City": "Москва",
-      "Segment": "Развлечения / квест-парки / B2C + корпоративные продажи",
-      "Website": "https://www.pogruzhenye.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 50,376 млн ₽ за 2025 год; 14 сотрудников по актуальным данным 2025; сеть парков в Москве и Санкт-Петербурге",
-      "Signal Level": "S1",
-      "Signal Summary": "В январе 2026 компания искала руководителя продаж и заявляла план открыть до 20 новых объектов к концу 2026 года; роль предполагает прямое влияние на рост компании и развитие sales-команды",
-      "Signal Date": "2026-01-15",
-      "Signal Source": "https://hh.ru/vacancy/129484330",
-      "Owner": "Тимофеев Алексей Игоревич 70%; Карпов Ярослав Юрьевич 30%",
-      "CEO": "Филиппова Татьяна Сергеевна",
-      "LPR": "Тимофеев Алексей Игоревич / Филиппова Татьяна Сергеевна",
-      "LPR Role": "Мажоритарный собственник / генеральный директор",
-      "Primary Phone": "+7 (495) 150-16-45",
-      "Primary Email": "pogruzhenye@pogruzhenye.ru",
-      "HH Contact": "https://hh.ru/vacancy/129484330",
-      "Contact Form": "https://www.pogruzhenye.ru/contacts",
-      "Contact Type": "CEO Email; Management Email; Corporate Phone; HH; Website",
-      "Contact Source": "Официальный сайт Погружение; HeadHunter; актуальные ЕГРЮЛ/финансовые данные 2025-2026",
-      "Consulting Hypothesis": "Систематизация масштабирования сети: единая коммерческая модель новых объектов, план-факт по локациям, CRM и воронки B2C/B2B, KPI sales-команды, экономика открытия филиалов и снижение зависимости роста от ручного управления",
-      "contacts": [
-        {
-          "value": "pogruzhenye@pogruzhenye.ru",
-          "channel": "Email",
-          "type": "CEO route",
-          "source": "Официальный сайт Погружение",
-          "url": "https://www.pogruzhenye.ru/contacts",
-          "is_lpr": true,
-          "notes": "На сайте прямо указан как email для связи с генеральным директором"
-        },
-        {
-          "value": "management@pogruzhenye.ru",
-          "channel": "Email",
-          "type": "Management",
-          "source": "Официальный сайт Погружение",
-          "url": "https://www.pogruzhenye.ru/contacts",
-          "is_lpr": false,
-          "notes": "Маршрут к руководству парка"
-        },
-        {
-          "value": "+7 (495) 150-16-45",
-          "channel": "Phone",
-          "type": "Corporate",
-          "source": "Официальный сайт Погружение",
-          "url": "https://www.pogruzhenye.ru/contacts",
-          "is_lpr": false,
-          "notes": "Официальный телефон"
-        },
-        {
-          "value": "https://hh.ru/vacancy/129484330",
-          "channel": "HH",
-          "type": "Employer vacancy",
-          "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/129484330",
-          "is_lpr": false,
-          "notes": "Прямой маршрут через работодателя"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "LEGAL_SCALE",
-          "claim": "ООО «АЛЬФА КВЕСТ», ИНН 9723134764, ОГРН 1227700008360; действует; выручка 50,376 млн ₽ за 2025 год; 14 сотрудников",
-          "url": "https://xfirm.ru/company/9723134764",
-          "source": "Xfirm / ФНС и Росстат, актуальные данные 2025-2026"
-        },
-        {
-          "type": "OWNER_LPR",
-          "claim": "Филиппова Татьяна Сергеевна — генеральный директор с 01.10.2025; Тимофеев Алексей Игоревич — 70%, Карпов Ярослав Юрьевич — 30%",
-          "url": "https://companies.rbc.ru/amp/ogrn/1227700008360/",
-          "source": "РБК Компании / ЕГРЮЛ"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "Вакансия 15.01.2026 сообщает о динамичном росте сети и плане открыть до 20 новых объектов к концу 2026 года",
-          "url": "https://hh.ru/vacancy/129484330",
-          "source": "HeadHunter / вакансия 2026"
-        },
-        {
-          "type": "BRAND_LEGAL_CONTACT",
-          "claim": "Официальный сайт Погружение связывает бренд с ООО «АЛЬФА КВЕСТ», ИНН 9723134764, и публикует отдельные email для генерального директора и руководства",
-          "url": "https://www.pogruzhenye.ru/contacts",
-          "source": "Официальный сайт Погружение"
-        }
-      ]
-    },
-    {
-      "Lead ID": "N5K-0334",
-      "Brand": "Huntsman",
-      "Legal Name": "ООО «КОМПАНИЯ ВОСТОК»",
-      "INN": "7705719005",
-      "OGRN/OGRNIP": "1067746353938",
+      "Lead ID": "N5K-0336",
+      "Brand": "GN Axel",
+      "Legal Name": "ООО «ДЖИЭНАКСЕЛЬ»",
+      "INN": "7704303861",
+      "OGRN/OGRNIP": "1157746073880",
       "Region": "Москва",
       "City": "Москва",
-      "Segment": "Производство одежды и экипировки / оптовая B2B-дистрибуция",
-      "Website": "https://thehuntsman.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 684,6 млн ₽ за 2025 год; официальный бренд-производитель с ассортиментом 500+ позиций и развитой оптовой сетью",
-      "Signal Level": "S1",
-      "Signal Summary": "19.01.2026 Huntsman искал руководителя B2B-продаж для управления региональными продажами, воронкой и командой; компания заявляет 2000+ B2B-клиентов, дистрибуцию в 60+ регионах и цель стать №1 в сегменте",
-      "Signal Date": "2026-01-19",
-      "Signal Source": "https://hh.ru/vacancy/129615484",
-      "Owner": "Шаров Александр Анатольевич; Кашкин Сергей Романович",
-      "CEO": "Кашкин Сергей Романович",
-      "LPR": "Кашкин Сергей Романович",
-      "LPR Role": "Генеральный директор / совладелец",
-      "Primary Phone": "8 (495) 665-21-12",
-      "Primary Email": "sales@thehuntsman.ru",
-      "HH Contact": "https://hh.ru/vacancy/129615484",
-      "Contact Form": "https://thehuntsman.ru/page/contacts",
-      "Contact Type": "Corporate Phone; Sales Email; HH; Website",
-      "Contact Source": "Официальный сайт Huntsman; HeadHunter; актуальные реестровые/финансовые данные 2025-2026",
-      "Consulting Hypothesis": "Масштабирование региональной B2B-дистрибуции: сегментация 2000+ клиентов, CRM/pipeline/forecast, KPI и маржинальность каналов, стандартизация работы региональной команды и развитие дилерской модели без ручной зависимости от CEO",
+      "Segment": "Микроэлектроника / керамические компоненты / промышленный B2B",
+      "Website": "https://gnaxel.ru/",
+      "Revenue/Scale": "Действующее частное ООО, субъект малого бизнеса; актуальный отраслевой каталог указывает 5 сотрудников; Saby отображает выручку 68,9 млн ₽; собственные разработки и поставки компонентов для микроэлектронной промышленности",
+      "Signal Level": "S2",
+      "Signal Summary": "25.06.2026 GN Axel в связи с активным развитием расширял отдел продаж и искал директора по развитию продаж для роста проектов, ключевых клиентов и доли в закупках заказчиков",
+      "Signal Date": "2026-06-25",
+      "Signal Source": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
+      "Owner": "Назаренко Александр Александрович 85%; Буданцев Павел Николаевич 15%",
+      "CEO": "Назаренко Александр Александрович",
+      "LPR": "Назаренко Александр Александрович",
+      "LPR Role": "Генеральный директор / собственник 85%",
+      "Primary Phone": "+7 (499) 755-68-94",
+      "Primary Email": "sales@gnaxel.ru",
+      "HH Contact": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
+      "Contact Form": "https://gnaxel.ru/",
+      "Contact Type": "Corporate Phone; Sales Email; Employer vacancy; Website",
+      "Contact Source": "Официальный сайт GN Axel; DreamJob; Точка; Saby; Производитель.рф",
+      "Consulting Hypothesis": "Систематизация роста промышленного B2B-sales: сегментация целевых отраслей и холдингов, account-планы, CRM и pipeline, KPI/forecast, развитие новых продуктовых направлений и рост доли в закупках ключевых заказчиков",
       "contacts": [
         {
-          "value": "8 (495) 665-21-12",
+          "value": "+7 (499) 755-68-94",
           "channel": "Phone",
-          "type": "Wholesale sales",
-          "source": "Официальный сайт Huntsman",
-          "url": "https://thehuntsman.ru/page/contacts",
+          "type": "Corporate",
+          "source": "Официальный сайт GN Axel",
+          "url": "https://gnaxel.ru/",
           "is_lpr": false,
-          "notes": "Телефон отдела оптовых продаж"
+          "notes": "Официальный корпоративный телефон"
         },
         {
-          "value": "sales@thehuntsman.ru",
+          "value": "sales@gnaxel.ru",
           "channel": "Email",
           "type": "Sales",
-          "source": "Официальный сайт Huntsman",
-          "url": "https://thehuntsman.ru/page/contacts",
+          "source": "Официальный сайт GN Axel / Saby",
+          "url": "https://gnaxel.ru/",
           "is_lpr": false,
-          "notes": "Официальный email отдела продаж"
+          "notes": "Практический маршрут в коммерческий контур"
         },
         {
-          "value": "https://hh.ru/vacancy/129615484",
-          "channel": "HH",
+          "value": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
+          "channel": "Job board",
           "type": "Employer vacancy",
-          "source": "HeadHunter",
-          "url": "https://hh.ru/vacancy/129615484",
+          "source": "DreamJob",
+          "url": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
           "is_lpr": false,
-          "notes": "Практический маршрут через работодателя"
+          "notes": "Маршрут через профиль работодателя/вакансию"
         }
       ],
       "evidence": [
         {
-          "type": "LEGAL_SCALE",
-          "claim": "ООО «КОМПАНИЯ ВОСТОК», ИНН 7705719005, ОГРН 1067746353938; выручка 684,6 млн ₽ за 2025 год",
-          "url": "https://companium.ru/id/1067746353938-kompaniya-vostok",
-          "source": "Companium / ФНС, отчетность 2025"
+          "type": "LEGAL_OWNER_LPR",
+          "claim": "ООО «ДЖИЭНАКСЕЛЬ», ИНН 7704303861, ОГРН 1157746073880; действует; генеральный директор и собственник 85% — Назаренко Александр Александрович",
+          "url": "https://check.tochka.com/company/1157746073880/",
+          "source": "Точка / ЕГРЮЛ, актуально 2026"
         },
         {
-          "type": "OWNER_LPR",
-          "claim": "Кашкин Сергей Романович — генеральный директор и совладелец; второй учредитель — Шаров Александр Анатольевич",
-          "url": "https://companium.ru/id/1067746353938-kompaniya-vostok",
-          "source": "Companium / ЕГРЮЛ"
+          "type": "SCALE",
+          "claim": "Актуальный отраслевой каталог производителя указывает 5 сотрудников; Saby отображает выручку 68,9 млн ₽ и действующий статус на 23.07.2026",
+          "url": "https://xn--b1aedfedwrdfl5a6k.xn--p1ai/producer/dzhienaksel",
+          "source": "Производитель.рф; Saby"
         },
         {
           "type": "SIGNAL",
-          "claim": "19.01.2026 Huntsman искал руководителя B2B-продаж для регионального масштабирования, управления воронкой и командой; заявлены 2000+ B2B-клиентов и 60+ регионов",
-          "url": "https://hh.ru/vacancy/129615484",
-          "source": "HeadHunter / вакансия 2026"
+          "claim": "25.06.2026 GN Axel сообщала об активном развитии, расширении отдела продаж и поиске директора по развитию продаж",
+          "url": "https://dreamjob.ru/employers/2747871/vakansii/133639720",
+          "source": "DreamJob / вакансия 2026"
         },
         {
           "type": "BRAND_LEGAL_CONTACT",
-          "claim": "Политика официального сайта thehuntsman.ru прямо указывает оператором ООО «КОМПАНИЯ ВОСТОК», ИНН 7705719005, ОГРН 1067746353938; контакты публикуют отдел оптовых продаж и sales@thehuntsman.ru",
-          "url": "https://thehuntsman.ru/page/politika-konfidencialnosti",
-          "source": "Официальный сайт Huntsman"
+          "claim": "Официальный сайт GN Axel подтверждает профиль компании и публикует корпоративный телефон и sales@gnaxel.ru",
+          "url": "https://gnaxel.ru/",
+          "source": "Официальный сайт GN Axel"
         }
       ]
-    }
-  ],
-  "integration_status": "COMPLETED_WITH_FINAL_DEDUP",
-  "final_unique_integrated": [
-    "N5K-0333",
-    "N5K-0334"
-  ],
-  "final_duplicate_rejected": [
-    {
-      "Lead ID": "N5K-0332",
-      "INN": "5009130780",
-      "reason": "Already physically present as N5K-0213"
     }
   ]
 }
