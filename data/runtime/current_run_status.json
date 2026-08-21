@@ -1,39 +1,39 @@
 {
-  "run_id": "N5K-20260821-302",
+  "run_id": "N5K-20260821-303",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-21T22:00:00+05:00",
+  "updated_at": "2026-08-21T23:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 200,
-    "current_contactable_count": 200,
-    "progress_added": 200,
-    "remaining": 4800
+    "current_canonical_count": 202,
+    "current_contactable_count": 202,
+    "progress_added": 202,
+    "remaining": 4798
   },
   "funnel": {
-    "discovered": 22,
-    "fast_gate_passed": 5,
+    "discovered": 28,
+    "fast_gate_passed": 6,
     "size_check_passed": 4,
     "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 2,
-    "excluded": 18
+    "duplicates": 3,
+    "excluded": 23
   },
   "qualified_companies": [
-    "ZETTA / Фабрика кухни ZETTA",
-    "Dr. Zubareva / Бьюти Лайф"
+    "Рэмос-Альфа",
+    "Селект / Селект Инжиниринг"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "200_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "200_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "202_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "202_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
