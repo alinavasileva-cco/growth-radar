@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260821-303",
+  "run_id": "N5K-20260822-304",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-21T23:18:00+05:00",
+  "updated_at": "2026-08-22T00:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 202,
-    "current_contactable_count": 202,
-    "progress_added": 202,
-    "remaining": 4798
+    "current_canonical_count": 204,
+    "current_contactable_count": 204,
+    "progress_added": 204,
+    "remaining": 4796
   },
   "funnel": {
-    "discovered": 28,
+    "discovered": 24,
     "fast_gate_passed": 6,
     "size_check_passed": 4,
     "legal_match_passed": 3,
@@ -21,19 +21,19 @@
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 3,
-    "excluded": 23
+    "duplicates": 4,
+    "excluded": 18
   },
   "qualified_companies": [
-    "Рэмос-Альфа",
-    "Селект / Селект Инжиниринг"
+    "Русгеосинт",
+    "Нордкомп / NordComp"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "202_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "202_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "204_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "204_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
