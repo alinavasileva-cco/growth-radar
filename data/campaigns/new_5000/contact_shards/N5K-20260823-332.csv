@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0398,N5K-0398-C01,ЦКРИА / 3DiY,9714038951,,Корпоративный маршрут,+7 (495) 662-59-62,Phone,Corporate sales,Official 3DiY website,https://www.3diy.ru/contacts,NO,HIGH,2026-08-23,Main sales office phone,N5K-20260823-332,new_5000
+N5K-0398,N5K-0398-C02,ЦКРИА / 3DiY,9714038951,,Корпоративный маршрут,info@3diy.ru,Email,Corporate sales,Official 3DiY website,https://www.3diy.ru/contacts,NO,HIGH,2026-08-23,Official sales email,N5K-20260823-332,new_5000
+N5K-0398,N5K-0398-C03,ЦКРИА / 3DiY,9714038951,,Корпоративный маршрут,https://dreamjob.ru/employers/6378628/vakansii/136467540,Job board,Current employer vacancy route,Dream Job,https://dreamjob.ru/employers/6378628/vakansii/136467540,NO,HIGH,2026-08-23,Current sales-leadership vacancy route,N5K-20260823-332,new_5000
