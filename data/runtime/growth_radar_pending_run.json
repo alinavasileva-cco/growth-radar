@@ -1,194 +1,58 @@
 {
-  "run_id": "N5K-20260822-322",
-  "updated_at": "2026-08-22T16:12:00+05:00",
+  "run_id": "N5K-20260822-323",
+  "updated_at": "2026-08-22T16:59:00+05:00",
   "funnel": {
-    "discovered": 32,
-    "fast_gate_passed": 7,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 4,
-    "excluded": 26
+    "discovered": 18,
+    "fast_gate_passed": 4,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 17
   },
-  "notes": "RUN 322 starts from verified physical baseline 237/237 after RUN 321 PASS. 32 distinct current candidates/employers were individually screened across fresh August 2026 job-board discovery and current company/legal profiles. FAST GATE was applied before deep-check. iSmart / ООО «АЙСМАРТ» and CharmCleo Cosmetic / ООО «НПК «ШАРМ КЛЕО КОСМЕТИК» passed current legal status, scale, brand-to-legal, current S1/S2 commercial signal, LPR and practical contact route. Preliminary repository dedup by INN/brand found no match; final physical integration guard remains authoritative. Outdated/conflicting records were excluded from decisions. Requested 150-200 raw target was not reached and is not overstated. No outreach.",
+  "notes": "RUN 323 starts from verified physical baseline 239/239 after RUN 322 PASS. 18 distinct current candidates/employers were individually screened across fresh August 2026 job-board, official-site and current legal/company sources. FAST GATE preceded deep-check. Magnetto.pro / ООО «МАГНЕТТО» passed current legal status, scale, brand-to-legal, fresh S1 commercial signal, LPR and practical contact route. Preliminary repository search by INN/brand returned no match; final physical integration guard remains authoritative. Requested 150-200 raw target was not reached and is not overstated. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0384",
-      "Brand": "iSmart / Айсмарт",
-      "Legal Name": "ООО «АЙСМАРТ»",
-      "INN": "9723047085",
-      "OGRN/OGRNIP": "1187746453850",
-      "Region": "Московская область",
-      "City": "Королёв",
-      "Segment": "EdTech / образовательная SaaS-платформа / B2B",
-      "Website": "https://www.ismart.org/",
-      "Revenue/Scale": "Действующее частное ООО; официальный сайт подтверждает продукт и юрлицо. Актуальный 2026 профиль подтверждает действующий статус; последняя публичная финансовая отчётность показывает 162,535 млн ₽ выручки за 2024 год, а текущий вакансионный сигнал 2026 указывает на команду 100+ человек и активный рост B2B-направления.",
+      "Lead ID": "N5K-0386",
+      "Brand": "Magnetto.pro",
+      "Legal Name": "ООО «МАГНЕТТО»",
+      "INN": "1655460755",
+      "OGRN/OGRNIP": "1211600053411",
+      "Region": "Республика Татарстан / Москва",
+      "City": "Казань / Москва",
+      "Segment": "MarTech / digital marketing / Telegram Ads / performance / B2B",
+      "Website": "https://magnetto.pro/",
+      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 1,898033 млрд ₽. Публичный отраслевой кейс 2026 указывает, что численность агентства превысила 230 человек и бизнес продолжает быстро расти.",
       "Signal Level": "S1",
-      "Signal Summary": "В августе 2026 iSmart ищет Head of Sales (B2B): компания выходит на новый B2B-этап, продолжает расти и усиливает коммерческое направление. Это прямой текущий сигнал на построение/масштабирование B2B-продаж.",
-      "Signal Date": "2026-08",
-      "Signal Source": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
-      "Owner": "ООО «ЗИМА» 80%; Скрибот Екатерина Борисовна 15%; Бондарцев Алексей Борисович 5%",
-      "CEO": "Калинчева Елена Валериевна",
-      "LPR": "Калинчева Елена Валериевна",
-      "LPR Role": "Генеральный директор ООО «АЙСМАРТ» по актуальному 2026 юридическому профилю",
-      "Primary Phone": "8 (800) 600-44-02",
-      "Primary Email": "support@ismart.org",
-      "HH Contact": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
-      "Contact Form": "https://www.ismart.org/about",
-      "Contact Type": "Official corporate phone; official corporate email; current employer/job route",
-      "Contact Source": "Official iSmart website and current August 2026 vacancy listing",
-      "Consulting Hypothesis": "Собрать масштабируемую B2B-модель для EdTech: сегментация корпоративных/образовательных клиентов, ICP, outbound и партнёрский контур, KPI/воронка, unit economics и связка sales-marketing на фоне текущего найма Head of Sales B2B.",
+      "Signal Summary": "17 августа 2026 Magnetto.pro открыло позицию коммерческого директора. Компания прямо описывает быстрый рост, международное развитие и необходимость управления коммерческой стратегией технологичного digital/MarTech-бизнеса.",
+      "Signal Date": "2026-08-17",
+      "Signal Source": "https://facancy.ru/vacancies/kommercheskii-direktor-v-reklamnoe-agentstvo-magnetto-pro",
+      "Owner": "Хуснутдинов Тимур Медхатович",
+      "CEO": "Литовка Анатолий Алексеевич",
+      "LPR": "Литовка Анатолий Алексеевич",
+      "LPR Role": "Генеральный директор ООО «МАГНЕТТО» по актуальному юридическому профилю",
+      "Primary Phone": "8 (800) 500-21-50",
+      "Primary Email": "info@magnetto.pro",
+      "HH Contact": "https://facancy.ru/vacancies/kommercheskii-direktor-v-reklamnoe-agentstvo-magnetto-pro",
+      "Contact Form": "https://magnetto.pro/contacts/",
+      "Contact Type": "Official corporate phone; corporate email; official contact form; current vacancy route",
+      "Contact Source": "Official Magnetto.pro website and current August 2026 vacancy",
+      "Consulting Hypothesis": "Систематизировать быстрорастущий коммерческий контур MarTech/digital-бизнеса: сегментация и ICP, enterprise/B2B pipeline, sales-marketing alignment, unit economics по продуктам/каналам, KPI и управляемое международное масштабирование.",
       "contacts": [
-        {
-          "value": "8 (800) 600-44-02",
-          "channel": "Phone",
-          "type": "Corporate",
-          "source": "Official iSmart website",
-          "url": "https://www.ismart.org/about",
-          "is_lpr": false,
-          "notes": "Official corporate phone"
-        },
-        {
-          "value": "support@ismart.org",
-          "channel": "Email",
-          "type": "Corporate",
-          "source": "Official iSmart website",
-          "url": "https://www.ismart.org/about",
-          "is_lpr": false,
-          "notes": "Official corporate email"
-        },
-        {
-          "value": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
-          "channel": "JobBoard",
-          "type": "Employer route",
-          "source": "Current August 2026 vacancy listing",
-          "url": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
-          "is_lpr": false,
-          "notes": "Current Head of Sales B2B employer route"
-        }
+        {"value":"8 (800) 500-21-50","channel":"Phone","type":"Corporate","source":"Official Magnetto.pro website","url":"https://magnetto.pro/contacts/","is_lpr":false,"notes":"Official corporate phone"},
+        {"value":"info@magnetto.pro","channel":"Email","type":"Corporate","source":"Official Magnetto.pro website","url":"https://magnetto.pro/contacts/","is_lpr":false,"notes":"Official corporate email"},
+        {"value":"https://facancy.ru/vacancies/kommercheskii-direktor-v-reklamnoe-agentstvo-magnetto-pro","channel":"JobBoard","type":"Employer route","source":"Current August 2026 vacancy","url":"https://facancy.ru/vacancies/kommercheskii-direktor-v-reklamnoe-agentstvo-magnetto-pro","is_lpr":false,"notes":"Current commercial director vacancy route"}
       ],
       "evidence": [
-        {
-          "type": "LEGAL_SCALE",
-          "claim": "ООО «АЙСМАРТ», ИНН 9723047085, ОГРН 1187746453850, действует; текущий 2026 профиль подтверждает CEO Калинчеву Е.В.; официальная платформа подтверждает юрлицо и продукт. Последняя публичная финансовая отчётность: 162,535 млн ₽ выручки за 2024 год.",
-          "url": "https://companies.rbc.ru/amp/ogrn/1187746453850/",
-          "source": "Current 2026 legal profile"
-        },
-        {
-          "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт iSmart публикует ООО «АЙСМАРТ», ИНН 9723047085, ОГРН 1187746453850, адрес, телефон и email.",
-          "url": "https://www.ismart.org/about",
-          "source": "Official company website"
-        },
-        {
-          "type": "OWNER_LPR",
-          "claim": "Актуальные 2026 реестровые сведения указывают Калинчеву Елену Валериевну генеральным директором; структура участников: ООО «Зима» 80%, Екатерина Скрибот 15%, Алексей Бондарцев 5%.",
-          "url": "https://companies.rbc.ru/id/1187746453850-ooo-ajsmart/",
-          "source": "Current legal profile"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "В августе 2026 iSmart ищет Head of Sales (B2B); в описании указаны рост команды и выход компании на новый B2B-этап.",
-          "url": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
-          "source": "Current August 2026 job-board listing"
-        },
-        {
-          "type": "CONTACT",
-          "claim": "Официальный сайт публикует 8 (800) 600-44-02 и support@ismart.org как практические корпоративные маршруты связи.",
-          "url": "https://www.ismart.org/about",
-          "source": "Official company website"
-        }
-      ]
-    },
-    {
-      "Lead ID": "N5K-0385",
-      "Brand": "CharmCleo Cosmetic",
-      "Legal Name": "ООО «НПК «ШАРМ КЛЕО КОСМЕТИК»",
-      "INN": "2312250641",
-      "OGRN/OGRNIP": "1162375038121",
-      "Region": "Краснодарский край",
-      "City": "Краснодар",
-      "Segment": "производство косметики / FMCG / e-commerce / ритейл / СТМ",
-      "Website": "https://charmcleo.biz/",
-      "Revenue/Scale": "Действующее частное производственное ООО; актуальный юридический профиль на июль 2026 подтверждает 15 сотрудников. Официальный сайт подтверждает собственное производство; текущая публикация 2026 указывает на команду около 50 человек, собственные площадки и рост 45-50%+ в год.",
-      "Signal Level": "S1",
-      "Signal Summary": "1 августа 2026 у CharmCleo доступна вакансия коммерческого директора e-com/ритейл/СТМ; задачи включают систематизацию продаж, ценообразования, логистики, продвижения и работы с федеральными сетями. Компания заявляет рост 50%+ в год.",
-      "Signal Date": "2026-08-01",
-      "Signal Source": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
-      "Owner": "Брыкина Ирина Викторовна 100%",
-      "CEO": "Брыкина Ирина Викторовна",
-      "LPR": "Брыкина Ирина Викторовна",
-      "LPR Role": "Генеральный директор и единственный учредитель ООО «НПК «ШАРМ КЛЕО КОСМЕТИК» по актуальному 2026 юридическому профилю",
-      "Primary Phone": "+7 (918) 211-49-84",
-      "Primary Email": "info@charmcleo.biz",
-      "HH Contact": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
-      "Contact Form": "https://charmcleo.biz/",
-      "Contact Type": "Official/company phone; corporate email; current employer/job route",
-      "Contact Source": "Current company profile/official website and August 2026 vacancy",
-      "Consulting Hypothesis": "Систематизировать многоканальный коммерческий контур производителя FMCG: P&L по каналам, e-com/retail/СТМ, pricing/promo, OOS и forecast, CRM/KPI, переговорный контур с федеральными сетями и масштабирование без потери маржи.",
-      "contacts": [
-        {
-          "value": "+7 (918) 211-49-84",
-          "channel": "Phone",
-          "type": "Corporate",
-          "source": "Current company profile linked to official brand",
-          "url": "https://krasnodar.cataloxy.ru/firms/charmcleo.biz.htm",
-          "is_lpr": false,
-          "notes": "Company contact route"
-        },
-        {
-          "value": "info@charmcleo.biz",
-          "channel": "Email",
-          "type": "Corporate",
-          "source": "Current public company directory linked to official website",
-          "url": "https://mir23.ru/firms/charmcleo_set_magazinov_kosmetiki/",
-          "is_lpr": false,
-          "notes": "Corporate email"
-        },
-        {
-          "value": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
-          "channel": "JobBoard",
-          "type": "Employer route",
-          "source": "Current August 2026 vacancy",
-          "url": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
-          "is_lpr": false,
-          "notes": "Current commercial director employer route"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "LEGAL_SCALE",
-          "claim": "ООО «НПК «ШАРМ КЛЕО КОСМЕТИК», ИНН 2312250641, ОГРН 1162375038121, действует на 24.07.2026; CEO/учредитель Брыкина И.В.; 15 сотрудников по актуальному профилю.",
-          "url": "https://companies.rbc.ru/id/1162375038121-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchnaya-proizvodstvennaya-kompaniya-sharm-kleo-kosmetik/",
-          "source": "Current 2026 legal profile"
-        },
-        {
-          "type": "BRAND_LEGAL",
-          "claim": "Профиль бренда CharmCleo связывает официальный домен charmcleo.biz с ООО «НПК «Шарм Клео Косметик», ИНН 2312250641, и собственным производством в Краснодаре.",
-          "url": "https://krasnodar.cataloxy.ru/firms/charmcleo.biz.htm",
-          "source": "Current company profile linked to official website"
-        },
-        {
-          "type": "OWNER_LPR",
-          "claim": "Актуальный 2026 профиль подтверждает Брыкину Ирину Викторовну как генерального директора и единственного учредителя ООО.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1162375038121/",
-          "source": "Current 2026 legal profile"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "1.08.2026 опубликована/актуализирована вакансия коммерческого директора CharmCleo e-com/ритейл/СТМ; компания заявляет рост 50%+ в год и необходимость систематизировать коммерческие процессы.",
-          "url": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
-          "source": "Current August 2026 vacancy"
-        },
-        {
-          "type": "CONTACT",
-          "claim": "Практический маршрут подтверждён через корпоративный телефон, info@charmcleo.biz и текущую вакансию работодателя.",
-          "url": "https://krasnodar.cataloxy.ru/firms/charmcleo.biz.htm",
-          "source": "Current company profile/official brand route"
-        }
+        {"type":"LEGAL_SCALE","claim":"ООО «МАГНЕТТО», ИНН 1655460755, ОГРН 1211600053411, действует на 15.08.2026; гендиректор Литовка А.А.; учредитель Хуснутдинов Т.М.; выручка за 2025 год 1,898033 млрд ₽.","url":"https://companies.rbc.ru/id/1211600053411-magnettopro/","source":"Current 2026 legal/company profile"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт Magnetto.pro публикует ООО «Магнетто», ИНН 1655460755, ОГРН 1211600053411, телефон и email.","url":"https://magnetto.pro/contacts/","source":"Official company website"},
+        {"type":"OWNER_LPR","claim":"Актуальный юридический профиль указывает Литовку Анатолия Алексеевича генеральным директором, Хуснутдинова Тимура Медхатовича учредителем ООО «МАГНЕТТО».","url":"https://companies.rbc.ru/id/1211600053411-magnettopro/","source":"Current 2026 legal profile"},
+        {"type":"SIGNAL","claim":"17.08.2026 Magnetto.pro ищет коммерческого директора; вакансия описывает быстрорастущий технологичный digital/MarTech-бизнес и задачу управления коммерческой стратегией.","url":"https://facancy.ru/vacancies/kommercheskii-direktor-v-reklamnoe-agentstvo-magnetto-pro","source":"Current August 2026 vacancy"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует 8 (800) 500-21-50, info@magnetto.pro и контактную форму как практические корпоративные маршруты связи.","url":"https://magnetto.pro/contacts/","source":"Official company website"},
+        {"type":"SCALE_CURRENT","claim":"Отраслевой кейс RUWARD 2026 сообщает рост выручки Magnetto.pro за 2025 год на 49,12%, рост чистой прибыли на 243% и численность свыше 230 сотрудников.","url":"https://ruward.ru/award/2026/411902/","source":"RUWARD Award 2026 company case"}
       ]
     }
   ]
