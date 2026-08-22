@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260823-331",
-  "updated_at": "2026-08-23T00:44:00+05:00",
+  "updated_at": "2026-08-23T00:50:00+05:00",
   "funnel": {
     "discovered": 8,
     "fast_gate_passed": 3,
@@ -9,52 +9,10 @@
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 2,
+    "qualified": 0,
+    "duplicates": 3,
     "excluded": 5
   },
-  "notes": "RUN 331 starts from verified physical baseline 250/250 after RUN 330 PASS. Eight distinct current August 2026 employer/company signals were screened across commercial-leadership vacancies and current legal/company/contact sources. Two signals were already represented in the canonical pool and treated as duplicates; large/public or insufficient-scale/legal-match candidates were excluded before deep work. One candidate passed current scale, legal, signal, LPR and contact gates. Repository code search by INN and brand returned no match; final physical integration guard remains authoritative. Requested 150-200 raw target was not reached and is not overstated. No outreach.",
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0397",
-      "Brand": "Дымов Керамика",
-      "Legal Name": "ООО «ТД «ДЫМОВ КЕРАМИКА»",
-      "INN": "7731377855",
-      "OGRN/OGRNIP": "1177746793432",
-      "Region": "Москва / Владимирская область",
-      "City": "Москва / Суздаль",
-      "Segment": "Производство и продажи авторской керамики / B2B HoReCa / розница / e-commerce",
-      "Website": "https://dymovceramic.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 196,3 млн руб. за 2025 год, около 20 сотрудников по актуальному профилю. Официальный сайт подтверждает собственную торговую инфраструктуру, оптовый отдел, магазины в Москве и Суздале и работу более чем с 300 ресторанами в России, Казахстане, Узбекистане и ОАЭ.",
-      "Signal Level": "S1",
-      "Signal Summary": "Актуальная августовская вакансия Коммерческого директора / Директора по продажам для бренда Дымов Керамика: требуется взять на себя коммерческий результат компании и вывести бизнес на следующий этап роста; контур включает фирменную розницу, e-commerce, маркетплейсы, оптовые продажи и событийные проекты.",
-      "Signal Date": "2026-08-22",
-      "Signal Source": "https://gdejob.com/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0",
-      "Owner": "Зеленская Евгения Александровна — единственный учредитель ООО «ТД «ДЫМОВ КЕРАМИКА»",
-      "CEO": "Зеленская Евгения Александровна — генеральный директор",
-      "LPR": "Зеленская Евгения Александровна",
-      "LPR Role": "Единственный учредитель и генеральный директор торгового юридического лица бренда",
-      "Primary Phone": "+7 (495) 500-01-71",
-      "Primary Email": "hello@dymovceramic.ru",
-      "HH Contact": "",
-      "Contact Form": "https://dymovceramic.ru/contacts/",
-      "Contact Type": "Corporate phone; corporate email; wholesale contact; official contact page; current vacancy route",
-      "Contact Source": "Official website and current August 2026 vacancy listing",
-      "Consulting Hypothesis": "Собрать единую коммерческую модель по каналам розница/e-commerce/marketplaces/HoReCa и опт: P&L и unit economics по каналам, pipeline и KPI, роли коммерческой команды, приоритеты роста и управляемое масштабирование без потери маржи.",
-      "contacts": [
-        {"value":"+7 (495) 500-01-71","channel":"Phone","type":"Corporate","source":"Official website","url":"https://dymovceramic.ru/contacts/","is_lpr":false,"notes":"Main corporate phone; can route to management"},
-        {"value":"hello@dymovceramic.ru","channel":"Email","type":"Corporate","source":"Official website","url":"https://dymovceramic.ru/contacts/","is_lpr":false,"notes":"Official marketing/general corporate email"},
-        {"value":"opt@dymovceramic.ru","channel":"Email","type":"Wholesale department","source":"Official website","url":"https://dymovceramic.ru/contacts/","is_lpr":false,"notes":"B2B wholesale department route"},
-        {"value":"+7 (916) 458-74-53","channel":"Phone","type":"Wholesale department","source":"Official website","url":"https://dymovceramic.ru/contacts/","is_lpr":false,"notes":"Direct wholesale department phone"}
-      ],
-      "evidence": [
-        {"type":"BRAND_LEGAL","claim":"Официальный сайт бренда прямо указывает ООО «ТД «Дымов Керамика», ИНН 7731377855, ОГРН 1177746793432, адрес и корпоративные контакты.","url":"https://dymovceramic.ru/contacts/","source":"Official website"},
-        {"type":"LEGAL_OWNER_LPR","claim":"ООО «ТД «ДЫМОВ КЕРАМИКА» действует; генеральный директор и единственный учредитель — Зеленская Евгения Александровна.","url":"https://companies.rbc.ru/id/1177746793432-ooo-torgovyij-dom-dyimov-keramika/","source":"RBC Companies / current legal profile"},
-        {"type":"SCALE_CURRENT","claim":"Финансовая отчетность за 2025 год показывает выручку около 196,3 млн руб.; актуальный профиль указывает около 20 сотрудников.","url":"https://www.tbank.ru/business/contractor/legal/1177746793432/","source":"T-Bank contractor profile / 2025 reporting"},
-        {"type":"BUSINESS_SCALE","claim":"Официальный сайт подтверждает более 20 лет работы бренда, магазины и производство, а также работу более чем с 300 ресторанами в России, Казахстане, Узбекистане и ОАЭ.","url":"https://dymovceramic.ru/","source":"Official website"},
-        {"type":"SIGNAL","claim":"Актуальная августовская вакансия Коммерческого директора / Директора по продажам описывает задачу взять коммерческий результат компании и вывести бизнес на следующий этап роста; перечислены розница, e-commerce, маркетплейсы и опт.","url":"https://gdejob.com/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0","source":"Current August 2026 vacancy listing"},
-        {"type":"CONTACT","claim":"Официальный сайт публикует основной телефон +7 (495) 500-01-71, hello@dymovceramic.ru, opt@dymovceramic.ru и телефон оптового отдела +7 (916) 458-74-53.","url":"https://dymovceramic.ru/contacts/","source":"Official website"}
-      ]
-    }
-  ]
+  "notes": "RUN 331 repair. Physical master guard found the staged candidate Дымов Керамика / ООО «ТД «ДЫМОВ КЕРАМИКА» (ИНН 7731377855, ОГРН 1177746793432) already present in canonical master as Lead ID N5K-0353 from RUN N5K-20260822-306. Repository code search had returned no match, so search-index/code-search output is not authoritative for dedup. Candidate removed from qualified before integration. Baseline remains verified 250/250 after RUN 330 PASS. Eight distinct signals screened; final result: 3 duplicates and 5 excluded, 0 qualified. No outreach.",
+  "qualified_companies": []
 }
