@@ -1,96 +1,106 @@
 {
-  "run_id": "N5K-20260822-318",
-  "updated_at": "2026-08-22T14:01:00+05:00",
+  "run_id": "N5K-20260822-319",
+  "updated_at": "2026-08-22T14:40:00+05:00",
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 2,
-    "excluded": 20
+    "discovered": 8,
+    "fast_gate_passed": 3,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 7
   },
-  "notes": "RUN 318 starts from verified physical baseline 232/232, RUN 317 PASS. 24 distinct named company signals were screened across fresh August-2026 job-board discovery and current legal/company sources. Two candidates passed legal/scale, current commercial-growth signal, LPR, practical contact route and preliminary repository dedup. Requested 150-200 raw target was not reached and is not overstated. No outreach.",
+  "notes": "RUN 319 starts from verified physical baseline 234/234 after RUN 318 PASS. Eight distinct named fresh commercial-growth candidates were screened from current 2026 job-board/company sources; FAST GATE was applied before deep-check. Vertex passed current legal status, scale, brand-to-legal match, S1 commercial-growth signal, current LPR and practical contact route, plus repository dedup by brand/INN. The requested 150-200 raw target was not reached in this execution and is not overstated. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0379",
-      "Brand": "СОФИС / 7DAYS / B.COLOUR PROFESSIONAL",
-      "Legal Name": "ООО «СОФИС»",
-      "INN": "7715991803",
-      "OGRN/OGRNIP": "1147746120367",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Косметика / FMCG / производство и дистрибуция / e-commerce",
-      "Website": "https://my7days.ru/",
-      "Revenue/Scale": "Действующее частное ООО. По актуальным данным за 2025 год выручка 3,00307 млрд ₽; среднесписочная численность 124 сотрудника. HH-профиль бренда сообщает о команде 200+ профессионалов и международной дистрибуции.",
+      "Lead ID": "N5K-0381",
+      "Brand": "VERTEX / MyKiddo / Reva Care / Florey / Lavandel",
+      "Legal Name": "ООО «ВЕРТЕКС»",
+      "INN": "5258150049",
+      "OGRN/OGRNIP": "1215200002456",
+      "Region": "Нижегородская область",
+      "City": "Нижний Новгород",
+      "Segment": "FMCG / бытовая химия / косметика / гигиена / контрактное производство",
+      "Website": "https://vertex-pro.ru/",
+      "Revenue/Scale": "Действующее частное ООО. Актуальный профиль на 20.08.2026 показывает выручку 4,35 млрд ₽ за 2025 год; официальный сайт заявляет 1000+ сотрудников, 20 000 м² производственных и складских мощностей, 1 млн единиц продукции в месяц и 1000+ SKU.",
       "Signal Level": "S1",
-      "Signal Summary": "В 2026 компания одновременно усиливала коммерческий контур: искала Head of Sales / Sales Director для роста продаж и отдельного руководителя экспортных продаж для международных рынков, команды и бизнес-процессов роста.",
-      "Signal Date": "2026-07-09",
-      "Signal Source": "https://facancy.ru/vacancies/rukovoditel-otdela-eksportnykh-prodazh-v-kompaniiu-proizvoditel-kosmetiki-sofis-7days-5",
-      "Owner": "Кузнецова Александра Георгиевна — единственный учредитель",
-      "CEO": "Кузнецова Александра Георгиевна",
-      "LPR": "Кузнецова Александра Георгиевна",
-      "LPR Role": "Генеральный директор и единственный учредитель",
-      "Primary Phone": "+7 (495) 150-24-34",
-      "Primary Email": "order@7daysmail.com",
-      "HH Contact": "https://hh.ru/employer/437161",
-      "Contact Form": "https://my7days.ru/",
-      "Contact Type": "Corporate phone; Corporate email; Official website; Current employer/job route",
-      "Contact Source": "Official 7DAYS/SOFIS website and current 2026 legal/job sources",
-      "Consulting Hypothesis": "Scale and systematize multi-channel FMCG sales across key retail, marketplaces and export: channel P&L, KAM/export team design, CRM/pipeline governance, assortment/channel economics and international growth operating model.",
+      "Signal Summary": "16.06.2026 Vertex искал директора по продажам в федеральные и локальные сети. Вакансия прямо фиксирует быстрый рост, выручку 5 млрд ₽ за 2025 год и цель 10+ млрд ₽ в 2026, а также необходимость масштабировать продажи; официальный сайт подтверждает курс на масштабирование собственных брендов по России и СНГ.",
+      "Signal Date": "2026-06-16",
+      "Signal Source": "https://dreamjob.ru/employers/527991/vakansii/129913396",
+      "Owner": "Блехерман Илья Владимирович 37,5%; Бородин Дмитрий Эдуардович 37,5%; Гуданов Георгий Валерьевич 25%",
+      "CEO": "Гуданов Георгий Валерьевич",
+      "LPR": "Гуданов Георгий Валерьевич",
+      "LPR Role": "Директор / соучредитель / основатель Vertex",
+      "Primary Phone": "8 (800) 707-42-14",
+      "Primary Email": "sales@vertex-pro.ru",
+      "HH Contact": "https://dreamjob.ru/employers/527991/vakansii/129913396",
+      "Contact Form": "https://vertex-pro.ru/",
+      "Contact Type": "Corporate phone; Sales email; Official website; Current employer/job route",
+      "Contact Source": "Official Vertex website and current 2026 legal/job sources",
+      "Consulting Hypothesis": "Систематизация быстрого FMCG-масштабирования: channel P&L и unit economics по федеральным/локальным сетям и маркетплейсам, KAM-модель, CRM/pipeline/forecast, ассортиментная экономика, KPI коммерческой команды и операционная модель роста к целевому масштабу без ручной зависимости от основателя.",
       "contacts": [
-        {"value": "+7 (495) 150-24-34", "channel": "Phone", "type": "Corporate", "source": "Official 7DAYS company materials", "url": "https://my7days.ru/legal_information/", "is_lpr": false, "notes": "Official corporate phone"},
-        {"value": "order@7daysmail.com", "channel": "Email", "type": "Corporate", "source": "Official 7DAYS website", "url": "https://my7days.ru/legal_information/", "is_lpr": false, "notes": "Official corporate email"},
-        {"value": "https://hh.ru/employer/437161", "channel": "Job board", "type": "Current employer route", "source": "HH employer profile", "url": "https://hh.ru/employer/437161", "is_lpr": false, "notes": "Current employer route"}
+        {
+          "value": "8 (800) 707-42-14",
+          "channel": "Phone",
+          "type": "Corporate",
+          "source": "Official Vertex website",
+          "url": "https://vertex-pro.ru/",
+          "is_lpr": false,
+          "notes": "Official corporate phone"
+        },
+        {
+          "value": "sales@vertex-pro.ru",
+          "channel": "Email",
+          "type": "Sales",
+          "source": "Official Vertex website",
+          "url": "https://vertex-pro.ru/",
+          "is_lpr": false,
+          "notes": "Official sales email"
+        },
+        {
+          "value": "https://dreamjob.ru/employers/527991/vakansii/129913396",
+          "channel": "Job board",
+          "type": "Current employer route",
+          "source": "DreamJob",
+          "url": "https://dreamjob.ru/employers/527991/vakansii/129913396",
+          "is_lpr": false,
+          "notes": "2026 sales-director vacancy route"
+        }
       ],
       "evidence": [
-        {"type": "LEGAL_SCALE", "claim": "ООО «СОФИС», ИНН 7715991803, ОГРН 1147746120367, действует; 2025 revenue 3,00307 млрд ₽ and 124 employees.", "url": "https://b2b.house/company/OOO-SOFIS_1ae9971a-0cd0-45e8-89b2-9d7e5a9582a5/", "source": "Current legal/financial profile, data current 02.08.2026"},
-        {"type": "OWNER_LPR", "claim": "Кузнецова Александра Георгиевна — генеральный директор и единственный учредитель ООО «СОФИС».", "url": "https://companies.rbc.ru/id/1147746120367-ooo-sofis/", "source": "Current legal profile"},
-        {"type": "SIGNAL", "claim": "В июле 2026 СОФИС искала руководителя экспортных продаж для международных рынков, управления командой и выстраивания бизнес-процессов роста; ранее в 2026 — Head of Sales / Sales Director.", "url": "https://facancy.ru/vacancies/rukovoditel-otdela-eksportnykh-prodazh-v-kompaniiu-proizvoditel-kosmetiki-sofis-7days-5", "source": "Current 2026 job posting"},
-        {"type": "BRAND_LEGAL", "claim": "Официальный сайт 7DAYS прямо указывает ООО «СОФИС», ИНН 7715991803, ОГРН 1147746120367.", "url": "https://my7days.ru/legal_information/", "source": "Official company website"},
-        {"type": "CONTACT", "claim": "Официальный сайт публикует +7 (495) 150-24-34 и order@7daysmail.com.", "url": "https://my7days.ru/legal_information/", "source": "Official company website"}
-      ]
-    },
-    {
-      "Lead ID": "N5K-0380",
-      "Brand": "ПО ЭЛЕКТРОТЕХНИК",
-      "Legal Name": "ЗАО «ПРОИЗВОДСТВЕННОЕ ОБЪЕДИНЕНИЕ ЭЛЕКТРОТЕХНИК»",
-      "INN": "7721249325",
-      "OGRN/OGRNIP": "1037721001196",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Электротехника / низковольтное оборудование / B2B производство и дистрибуция",
-      "Website": "https://www.elektrotehnik.ru/",
-      "Revenue/Scale": "Действующее непубличное акционерное общество. Актуальные открытые профили показывают около 370-385 млн ₽ выручки и 42 сотрудника; компания располагает собственными производственными, складскими и административными площадями.",
-      "Signal Level": "S1",
-      "Signal Summary": "В 2026 компания расширяет отдел B2B-продаж в связи с увеличением объема продаж; актуальная вакансия 8 августа 2026 прямо фиксирует расширение отдела и рост объема продаж.",
-      "Signal Date": "2026-08-08",
-      "Signal Source": "https://dreamjob.ru/employers/175396/vakansii/135740074",
-      "Owner": "Состав акционеров непубличного АО не раскрывается в ЕГРЮЛ; для квалификации используется подтвержденный текущий ЛПР",
-      "CEO": "Рогов Алексей Анатольевич",
-      "LPR": "Рогов Алексей Анатольевич",
-      "LPR Role": "Генеральный директор",
-      "Primary Phone": "+7 (495) 709-30-30",
-      "Primary Email": "info@elektrotehnik.ru",
-      "HH Contact": "https://dreamjob.ru/employers/175396/vakansii/135740074",
-      "Contact Form": "https://www.elektrotehnik.ru/company/",
-      "Contact Type": "Corporate phone; Corporate email; Official website; Current job route",
-      "Contact Source": "Official ПО Электротехник website and current 2026 legal/job sources",
-      "Consulting Hypothesis": "Scale B2B sales growth through distributor/dealer segmentation, direct-sales operating model, CRM/pipeline discipline, channel economics, regional coverage and sales-team productivity.",
-      "contacts": [
-        {"value": "+7 (495) 709-30-30", "channel": "Phone", "type": "Corporate", "source": "Official ПО Электротехник website", "url": "https://www.elektrotehnik.ru/company/", "is_lpr": false, "notes": "Official corporate phone"},
-        {"value": "info@elektrotehnik.ru", "channel": "Email", "type": "Corporate", "source": "Official ПО Электротехник website", "url": "https://www.elektrotehnik.ru/company/", "is_lpr": false, "notes": "Official corporate email"},
-        {"value": "https://dreamjob.ru/employers/175396/vakansii/135740074", "channel": "Job board", "type": "Current employer route", "source": "Current 2026 vacancy", "url": "https://dreamjob.ru/employers/175396/vakansii/135740074", "is_lpr": false, "notes": "Current sales-expansion vacancy"}
-      ],
-      "evidence": [
-        {"type": "LEGAL_SCALE", "claim": "ЗАО «ПО ЭЛЕКТРОТЕХНИК», ИНН 7721249325, ОГРН 1037721001196, действует; current open profile reports about 370-385 млн ₽ revenue and 42 employees.", "url": "https://zachestnyibiznes.ru/company/ul/1037721001196_7721249325_ZAO-PO-ELEKTROTEHNIK", "source": "Current legal/company profile"},
-        {"type": "OWNER_LPR", "claim": "Рогов Алексей Анатольевич — генеральный директор ЗАО «ПО ЭЛЕКТРОТЕХНИК»; для непубличного АО состав акционеров в ЕГРЮЛ не раскрывается.", "url": "https://saby.ru/profile/7721249325-772101001", "source": "Current legal profile"},
-        {"type": "SIGNAL", "claim": "8 августа 2026 компания открыла B2B sales vacancy в связи с увеличением объема продаж и расширением отдела.", "url": "https://dreamjob.ru/employers/175396/vakansii/135740074", "source": "Current 2026 job posting"},
-        {"type": "BRAND_LEGAL", "claim": "Официальные документы и сайт связывают бренд ПО ЭЛЕКТРОТЕХНИК с ЗАО «ПРОИЗВОДСТВЕННОЕ ОБЪЕДИНЕНИЕ ЭЛЕКТРОТЕХНИК», ИНН 7721249325, ОГРН 1037721001196.", "url": "https://www.elektrotehnik.ru/company/", "source": "Official company website and certification materials"},
-        {"type": "CONTACT", "claim": "Официальный сайт публикует +7 (495) 709-30-30 и info@elektrotehnik.ru.", "url": "https://www.elektrotehnik.ru/company/", "source": "Official company website"}
+        {
+          "type": "LEGAL_SCALE",
+          "claim": "ООО «ВЕРТЕКС», ИНН 5258150049, ОГРН 1215200002456, действует; актуальный профиль на 20.08.2026 показывает выручку 4,35 млрд ₽ за 2025 год.",
+          "url": "https://xfirm.ru/company/5258150049",
+          "source": "Current legal/financial profile"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Гуданов Георгий Валерьевич — директор ООО «ВЕРТЕКС» с 28.01.2021 и совладелец 25%; Бородин Дмитрий Эдуардович и Блехерман Илья Владимирович владеют по 37,5%.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1215200002456/",
+          "source": "Current legal profile"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "16.06.2026 Vertex искал директора по продажам в федеральные и локальные сети; вакансия описывает быстрый рост и цель масштабирования продаж в 2026 году.",
+          "url": "https://dreamjob.ru/employers/527991/vakansii/129913396",
+          "source": "Current 2026 job posting"
+        },
+        {
+          "type": "BRAND_LEGAL_SCALE",
+          "claim": "Официальный сайт Vertex называет Георгия Гуданова основателем, подтверждает 1000+ сотрудников, 20 000 м² мощностей, 1 млн единиц производства в месяц и курс на масштабирование собственных брендов.",
+          "url": "https://vertex-pro.ru/",
+          "source": "Official company website"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует 8 (800) 707-42-14 и sales@vertex-pro.ru как практический маршрут в коммерческий контур.",
+          "url": "https://vertex-pro.ru/",
+          "source": "Official company website"
+        }
       ]
     }
   ]
