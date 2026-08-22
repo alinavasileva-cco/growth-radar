@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-23T02:20:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260823-332`  
+**Версия:** 2026-08-23T02:44:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260823-333`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **252 / 252**  
+**Физически подтверждённый canonical/contactable:** **254 / 254**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4748**  
+**Осталось:** **4746**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **252 / 252**;
+- physical canonical/contactable count: **254 / 254**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260823-332`;
+- последний завершённый RUN: `N5K-20260823-333`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,18 +36,14 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний проверенный RUN — N5K-20260823-332
+## Последний проверенный RUN — N5K-20260823-333
 
-Baseline перед RUN: **251 / 251**.  
-Фактически обработано raw: **20**. Требуемые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **20** → fast gate **5** → size **2** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **3**. Excluded: **16**.  
-Добавлена: **ЦКРИА / 3DiY / ООО «ЦКРИА»**, ИНН `9714038951`, Lead ID `N5K-0398`.  
-Итог physical canonical/contactable: **252 / 252**.  
+Baseline перед RUN: **252 / 252**.  
+Фактически обработано raw: **7**. Требуемые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **7** → fast gate **4** → size **2** → legal **2** → signal **2** → LPR **2** → contact **2** → qualified **2** → physically integrated **2**.  
+Duplicates: **0**. Excluded: **5**.  
+Добавлены: **ЦентралГаз / ООО «ЦЕНТРАЛГАЗ»**, ИНН `7810995156`, Lead ID `N5K-0399`; **Кладовая Здоровья / ООО «КЛАДОВАЯ ЗДОРОВЬЯ»**, ИНН `7805180567`, Lead ID `N5K-0400`.  
+Итог physical canonical/contactable: **254 / 254**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; текущий файл содержит каноническое рабочее состояние и обязательные правила продолжения.
-
-
-## Latest verified run N5K-20260823-333
-Canonical/contactable: 254/254. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
