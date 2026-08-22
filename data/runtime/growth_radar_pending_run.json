@@ -1,111 +1,111 @@
 {
-  "run_id": "N5K-20260823-336",
-  "updated_at": "2026-08-23T04:18:00+05:00",
+  "run_id": "N5K-20260823-337",
+  "updated_at": "2026-08-23T04:40:00+05:00",
   "funnel": {
-    "discovered": 28,
-    "fast_gate_passed": 5,
-    "size_check_passed": 3,
+    "discovered": 17,
+    "fast_gate_passed": 4,
+    "size_check_passed": 2,
     "legal_match_passed": 2,
-    "signal_confirmed": 1,
+    "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 7,
-    "excluded": 20
+    "duplicates": 0,
+    "excluded": 16
   },
-  "notes": "RUN 336 continues from verified physical baseline 256/256 after completed RUN 335. 28 distinct company/employer signals were actually inspected across current August 2026 job-board and industry discovery results; seven were known recent physical-master duplicates (including Petro Building Systems, ЦКРИА, Окна Столицы, CharmCleo, iSmart, Ленинградские кухни and СОФИС) and were not deep-checked again. TÜLENEVA / ИП Тюленева Ирина Владимировна passed preliminary repository dedup by INN/brand, current legal status, current operating scale, fresh B2B sales-leadership signal, owner/LPR and practical company contact routes. No outreach.",
+  "notes": "RUN 337 continues from verified physical baseline 257/257 after completed RUN 336. 17 distinct current company/employer signals were actually inspected from August 2026 job-board discovery. Four candidates passed initial FAST GATE for deeper checking. Лескрафт was excluded on current scale (2025 revenue about 2.0 bn RUB, outside the active ICP); ГидроЭнергоСистемы was excluded because current brand-to-legal continuity/scale is ambiguous after migration between legal entities; Hookahtrade was not advanced because current financial capacity was not independently confirmed in this cycle. Миросад / ИП Рашитов Артур Ильдусович passed repository dedup by INN, current legal status, operational scale, direct owner-first B2B scaling signal, owner/LPR and practical company contact routes. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0403",
-      "Brand": "TÜLENEVA / Тюленева",
-      "Legal Name": "ИП Тюленева Ирина Владимировна",
-      "INN": "645293044535",
-      "OGRN/OGRNIP": "321645100060302",
-      "Region": "Саратовская область",
-      "City": "Саратов",
-      "Segment": "Швейное производство / корпоративный мерч / B2B",
-      "Website": "https://tuleneva.com/",
-      "Revenue/Scale": "Действующий ИП; актуальный отраслевой профиль 2026 указывает размер компании 50–100 сотрудников; производственная мощность бренда — свыше 50 000 изделий ежемесячно; компания работает с корпоративным мерчем, брендированной одеждой и текстильной упаковкой.",
+      "Lead ID": "N5K-0404",
+      "Brand": "Миросад / Mirosad",
+      "Legal Name": "ИП Рашитов Артур Ильдусович",
+      "INN": "020504423505",
+      "OGRN/OGRNIP": "321028000066131",
+      "Region": "Республика Башкортостан / операционная география РФ",
+      "City": "Казань / Москва и Московская область",
+      "Segment": "Питомник растений / ландшафтное благоустройство / B2B",
+      "Website": "https://mirosad.ru/",
+      "Revenue/Scale": "Действующий ИП с 2021 года; бренд выращивает растения более 10 лет, реализовал 130+ ландшафтных проектов, имеет штат архитекторов, собственный питомник и поставки/озеленение объектов по России; отдельное B2B-направление активно масштабируется.",
       "Signal Level": "S1",
-      "Signal Summary": "Свежая августовская вакансия 2026: TÜLENEVA ищет руководителя отдела продаж B2B / корпоративного мерча для управления и развития B2B-продаж собственного производства.",
-      "Signal Date": "2026-08-17",
-      "Signal Source": "https://2fru.jobvk.com/saratov/sberbank",
-      "Owner": "Тюленева Ирина Владимировна — индивидуальный предприниматель и владелец бизнеса",
-      "CEO": "Тюленева Ирина Владимировна — ИП / руководитель бизнеса",
-      "LPR": "Тюленева Ирина Владимировна",
+      "Signal Summary": "В июле 2026 Миросад прямо заявил, что активно развивает B2B-направление и строит систему, которая позволит масштабировать отдел продаж независимо от собственника; роль работает напрямую с собственником и должна создавать Академию продаж, регламенты и процессы адаптации.",
+      "Signal Date": "2026-07-16",
+      "Signal Source": "https://finder.work/vacancies/33019377",
+      "Owner": "Рашитов Артур Ильдусович — индивидуальный предприниматель и владелец бизнеса",
+      "CEO": "Рашитов Артур Ильдусович — ИП / собственник",
+      "LPR": "Рашитов Артур Ильдусович",
       "LPR Role": "Собственник / ИП",
-      "Primary Phone": "+7 (495) 266-68-47",
-      "Primary Email": "sales@tuleneva.com",
-      "HH Contact": "https://2fru.jobvk.com/saratov/sberbank",
-      "Contact Form": "",
-      "Contact Type": "Corporate phone/email + current employer vacancy route",
-      "Contact Source": "ProductCenter/Fabricators current company profiles and current August 2026 employer vacancy",
-      "Consulting Hypothesis": "Систематизация B2B-продаж корпоративного мерча: сегментация клиентов, pipeline и CRM, unit economics по типам заказов, KPI/мотивация отдела, ключевые аккаунты и 90-дневный план роста B2B-выручки.",
+      "Primary Phone": "+7 (962) 522-97-65",
+      "Primary Email": "info@miro-sad.ru",
+      "HH Contact": "https://dreamjob.ru/employers/3230725/vakansii/136080127",
+      "Contact Form": "https://mirosad.ru/",
+      "Contact Type": "Corporate phone/email/form + current employer vacancy route",
+      "Contact Source": "Official Mirosad site + current 2026 employer vacancies",
+      "Consulting Hypothesis": "Систематизация и масштабирование B2B-направления: сегментация корпоративных клиентов, CRM-воронка, Академия продаж и адаптация, KPI/мотивация, экономика проектов и 90-дневный план снижения зависимости продаж от собственника.",
       "contacts": [
         {
-          "value": "+7 (495) 266-68-47",
+          "value": "+7 (962) 522-97-65",
           "channel": "Phone",
-          "type": "Corporate sales phone",
-          "source": "ProductCenter current company profile",
-          "url": "https://productcenter.ru/producers/31714/shvieinaia-fabrika-irs-tm",
+          "type": "Corporate phone",
+          "source": "Official Mirosad site",
+          "url": "https://mirosad.ru/",
           "is_lpr": false,
-          "notes": "Corporate company route"
+          "notes": "Official company route"
         },
         {
-          "value": "sales@tuleneva.com",
+          "value": "info@miro-sad.ru",
           "channel": "Email",
-          "type": "Corporate sales email",
-          "source": "ProductCenter current company profile",
-          "url": "https://productcenter.ru/producers/31714/shvieinaia-fabrika-irs-tm",
+          "type": "Corporate email",
+          "source": "Official Mirosad site",
+          "url": "https://mirosad.ru/",
           "is_lpr": false,
-          "notes": "Corporate sales route"
+          "notes": "Official company route"
         },
         {
-          "value": "https://2fru.jobvk.com/saratov/sberbank",
+          "value": "https://dreamjob.ru/employers/3230725/vakansii/136080127",
           "channel": "Job board",
           "type": "Current employer vacancy route",
-          "source": "JobVK current August 2026 listing",
-          "url": "https://2fru.jobvk.com/saratov/sberbank",
+          "source": "DreamJob / HH-linked current vacancy",
+          "url": "https://dreamjob.ru/employers/3230725/vakansii/136080127",
           "is_lpr": false,
-          "notes": "Current B2B Head of Sales vacancy under employer Тюленева Ирина Владимировна"
+          "notes": "Current B2B sales vacancy under employer Миросад"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ИП Тюленева Ирина Владимировна, ИНН 645293044535, ОГРНИП 321645100060302, действует в августе 2026 года.",
-          "url": "https://saby.ru/profile/645293044535",
-          "source": "Saby current IP profile"
-        },
-        {
-          "type": "SCALE_CURRENT",
-          "claim": "Актуальный отраслевой профиль указывает 50–100 сотрудников; производственная мощность TÜLENEVA превышает 50 000 изделий в месяц.",
-          "url": "https://saratov.cataloxy.ru/firms/masters.top.htm",
-          "source": "Cataloxy current company profile; ProductCenter/Fabricators production profile"
+          "claim": "ИП Рашитов Артур Ильдусович, ИНН 020504423505, ОГРНИП 321028000066131, действует; зарегистрирован 19.04.2021.",
+          "url": "https://check.tochka.com/company/321028000066131/",
+          "source": "Tochka current contractor profile"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Текущие производственные каталоги прямо связывают бренд TÜLENEVA с ИП Тюленева Ирина Владимировна, ИНН 645293044535, ОГРНИП 321645100060302.",
-          "url": "https://fabricators.ru/proizvoditel/masters",
-          "source": "Fabricators current manufacturer profile updated 27 Apr 2026"
+          "claim": "Официальный сайт Mirosad прямо указывает ИП Рашитов Артур Ильдусович, ИНН 020504423505 и ОГРНИП 321028000066131.",
+          "url": "https://mirosad.ru/",
+          "source": "Official Mirosad site"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "Официальные страницы бренда указывают более 10 лет выращивания растений, 130+ реализованных проектов, штат архитекторов, собственный питомник и услуги озеленения/благоустройства; вакансия 2026 подтверждает работу по объектам по всей России.",
+          "url": "https://mirosad.ru/tui",
+          "source": "Official Mirosad site + current 2026 employer vacancy"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Тюленева Ирина Владимировна является зарегистрированным индивидуальным предпринимателем и непосредственным владельцем бизнеса.",
-          "url": "https://saby.ru/profile/645293044535",
-          "source": "Saby current IP profile"
+          "claim": "Рашитов Артур Ильдусович является действующим индивидуальным предпринимателем; официальный сайт использует его ИП как юридическую основу бренда.",
+          "url": "https://www.tbank.ru/business/contractor/legal/321028000066131/",
+          "source": "T-Bank current contractor profile + official site"
         },
         {
           "type": "SIGNAL",
-          "claim": "В августе 2026 TÜLENEVA ищет руководителя отдела продаж B2B / корпоративного мерча для развития продаж собственного производства.",
-          "url": "https://2fru.jobvk.com/saratov/sberbank",
-          "source": "Current August 2026 JobVK employer listing"
+          "claim": "Вакансия от 16 July 2026 прямо говорит, что Миросад активно развивает B2B-направление, строит систему масштабирования отдела продаж независимо от собственника и создаёт Академию продаж/регламенты; работа напрямую с собственником.",
+          "url": "https://finder.work/vacancies/33019377",
+          "source": "Finder current 2026 employer vacancy"
         },
         {
           "type": "CONTACT",
-          "claim": "Актуальный производственный профиль публикует корпоративные маршруты +7 (495) 266-68-47 и sales@tuleneva.com; текущая вакансия даёт дополнительный employer route.",
-          "url": "https://productcenter.ru/producers/31714/shvieinaia-fabrika-irs-tm",
-          "source": "ProductCenter current company profile"
+          "claim": "Официальный сайт публикует корпоративный телефон +7 (962) 522-97-65, email info@miro-sad.ru и форму связи; текущая B2B-вакансия даёт дополнительный employer route.",
+          "url": "https://mirosad.ru/",
+          "source": "Official Mirosad site"
         }
       ]
     }
