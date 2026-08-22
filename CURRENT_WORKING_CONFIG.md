@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-22T23:00:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260822-329`  
+**Версия:** 2026-08-22T23:57:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260822-330`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **249 / 249**  
+**Физически подтверждённый canonical/contactable:** **250 / 250**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4751**  
+**Осталось:** **4750**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **249 / 249**;
+- physical canonical/contactable count: **250 / 250**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260822-329`;
+- последний завершённый RUN: `N5K-20260822-330`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,18 +36,14 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний проверенный RUN — N5K-20260822-329
+## Последний проверенный RUN — N5K-20260822-330
 
-Baseline перед RUN: **248 / 248**.  
+Baseline перед RUN: **249 / 249**.  
 Фактически обработано raw: **18**. Требуемые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **18** → fast gate **4** → size **2** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **3**. Excluded: **14**.  
-Добавлена: **Харвест Тайм / Медведь Любимый / ООО «ХАРВЕСТ ТАЙМ»**, ИНН `2536283202`, Lead ID `N5K-0395`.  
-Итог physical canonical/contactable: **249 / 249**.  
+Воронка: discovered **18** → fast gate **5** → size **2** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **2**. Excluded: **15**.  
+Добавлена: **К.Центр / Комфорт Центр / ООО «К.ЦЕНТР»**, ИНН `5257164850`, Lead ID `N5K-0396`.  
+Итог physical canonical/contactable: **250 / 250**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; текущий файл содержит каноническое рабочее состояние и обязательные правила продолжения.
-
-
-## Latest verified run N5K-20260822-330
-Canonical/contactable: 250/250. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
