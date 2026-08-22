@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0394,N5K-0394-C01,НПФ ГКС / ГазКомплектСтрой,0278194447,,Корпоративный маршрут,+7 (347) 286-11-01,Phone,Corporate,Official company contacts,https://gksufa.ru/контакты/,NO,HIGH,2026-08-22,Corporate contact phone,N5K-20260822-328,new_5000
+N5K-0394,N5K-0394-C02,НПФ ГКС / ГазКомплектСтрой,0278194447,,Корпоративный маршрут,gksufa@mail.ru,Email,Corporate,Official company contacts,https://gksufa.ru/контакты/,NO,HIGH,2026-08-22,Corporate email,N5K-20260822-328,new_5000
+N5K-0394,N5K-0394-C03,НПФ ГКС / ГазКомплектСтрой,0278194447,,Корпоративный маршрут,https://ufa.hh.ru/employer/3667617,JobBoard,Employer route,HH employer profile / current commercial leadership vacancy,https://ufa.hh.ru/employer/3667617,NO,HIGH,2026-08-22,Current employer route,N5K-20260822-328,new_5000

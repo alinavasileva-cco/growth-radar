@@ -47,3 +47,7 @@ Duplicates: **4**. Excluded: **36**.
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; текущий файл содержит каноническое рабочее состояние и обязательные правила продолжения.
+
+
+## Latest verified run N5K-20260822-328
+Canonical/contactable: 248/248. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
