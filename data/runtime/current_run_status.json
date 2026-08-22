@@ -1,38 +1,39 @@
 {
-  "run_id": "N5K-20260823-332",
+  "run_id": "N5K-20260823-333",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T02:20:00+05:00",
+  "updated_at": "2026-08-23T02:44:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 252,
-    "current_contactable_count": 252,
-    "progress_added": 252,
-    "remaining": 4748
+    "current_canonical_count": 254,
+    "current_contactable_count": 254,
+    "progress_added": 254,
+    "remaining": 4746
   },
   "funnel": {
-    "discovered": 20,
-    "fast_gate_passed": 5,
+    "discovered": 7,
+    "fast_gate_passed": 4,
     "size_check_passed": 2,
     "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 3,
-    "excluded": 16
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 5
   },
   "qualified_companies": [
-    "ЦКРИА / 3DiY"
+    "ЦентралГаз",
+    "Кладовая Здоровья"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "252_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "252_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "254_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "254_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
