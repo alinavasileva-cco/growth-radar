@@ -1,20 +1,20 @@
 {
-  "run_id": "N5K-20260822-320",
+  "run_id": "N5K-20260822-321",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T15:18:00+05:00",
+  "updated_at": "2026-08-22T15:41:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 236,
-    "current_contactable_count": 236,
-    "progress_added": 236,
-    "remaining": 4764
+    "current_canonical_count": 237,
+    "current_contactable_count": 237,
+    "progress_added": 237,
+    "remaining": 4763
   },
   "funnel": {
-    "discovered": 12,
-    "fast_gate_passed": 4,
+    "discovered": 8,
+    "fast_gate_passed": 3,
     "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -22,17 +22,17 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 11
+    "excluded": 7
   },
   "qualified_companies": [
-    "Экспресс Мануфактура / Express Manufactura"
+    "БиоМикроГели / Биополимер"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "236_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "236_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "237_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "237_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
