@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-22T23:00:00+05:00",
+  "generated_at": "2026-08-22T23:57:00+05:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260822-329",
-  "current_run_id": "N5K-20260822-329",
+  "latest_completed_run_id": "N5K-20260822-330",
+  "current_run_id": "N5K-20260822-330",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 249,
-  "contactable_verified": 249,
+  "canonical_pool_verified": 250,
+  "contactable_verified": 250,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4751,
-  "run_329": {
+  "remaining_to_target": 4750,
+  "run_330": {
     "raw_discovered": 18,
-    "fast_gate_passed": 4,
+    "fast_gate_passed": 5,
     "size_check_passed": 2,
     "legal_match_passed": 2,
     "signal_confirmed": 1,
@@ -19,8 +19,8 @@
     "contact_route_found": 1,
     "qualified": 1,
     "physically_integrated": 1,
-    "duplicates": 3,
-    "excluded": 14
+    "duplicates": 2,
+    "excluded": 15
   },
   "orphan_contacts": 0,
   "orphan_evidence": 0,
