@@ -1,40 +1,38 @@
 {
-  "run_id": "N5K-20260822-325",
+  "run_id": "N5K-20260822-326",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T19:24:00+05:00",
+  "updated_at": "2026-08-22T20:02:43+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 244,
-    "current_contactable_count": 244,
-    "progress_added": 244,
-    "remaining": 4756
+    "current_canonical_count": 245,
+    "current_contactable_count": 245,
+    "progress_added": 245,
+    "remaining": 4755
   },
   "funnel": {
-    "discovered": 30,
+    "discovered": 20,
     "fast_gate_passed": 6,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "duplicates": 0,
-    "excluded": 27
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 4,
+    "excluded": 15
   },
   "qualified_companies": [
-    "ГК Меланжист",
-    "Фабрика Бетонов",
-    "Четвероногий Гурман"
+    "Окна Столицы"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "244_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "244_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "245_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "245_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0391,N5K-0391-C01,Окна Столицы,7702420143,,Корпоративный маршрут,+7 (495) 649-83-72,Phone,Corporate,Official company website,https://www.okna-stolicy.ru/,NO,HIGH,2026-08-22,Corporate sales/contact phone,N5K-20260822-326,new_5000
+N5K-0391,N5K-0391-C02,Окна Столицы,7702420143,,Корпоративный маршрут,zakaz@okna-stolicy.ru,Email,Corporate,Official company website,https://www.okna-stolicy.ru/,NO,HIGH,2026-08-22,Corporate email,N5K-20260822-326,new_5000
+N5K-0391,N5K-0391-C03,Окна Столицы,7702420143,,Корпоративный маршрут,https://hh.ru/vacancy/136094221,JobBoard,Employer route,Current August 2026 vacancy,https://hh.ru/vacancy/136094221,NO,HIGH,2026-08-22,Current employer route,N5K-20260822-326,new_5000
