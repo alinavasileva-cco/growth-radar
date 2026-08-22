@@ -1,20 +1,20 @@
 {
-  "run_id": "N5K-20260822-319",
+  "run_id": "N5K-20260822-320",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T14:40:00+05:00",
+  "updated_at": "2026-08-22T15:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 235,
-    "current_contactable_count": 235,
-    "progress_added": 235,
-    "remaining": 4765
+    "current_canonical_count": 236,
+    "current_contactable_count": 236,
+    "progress_added": 236,
+    "remaining": 4764
   },
   "funnel": {
-    "discovered": 8,
-    "fast_gate_passed": 3,
+    "discovered": 12,
+    "fast_gate_passed": 4,
     "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -22,17 +22,17 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 7
+    "excluded": 11
   },
   "qualified_companies": [
-    "VERTEX / MyKiddo / Reva Care / Florey / Lavandel"
+    "Экспресс Мануфактура / Express Manufactura"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "235_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "235_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "236_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "236_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
