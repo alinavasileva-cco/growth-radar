@@ -1,18 +1,59 @@
 {
   "run_id": "N5K-20260823-331",
-  "updated_at": "2026-08-23T00:50:00+05:00",
+  "updated_at": "2026-08-23T01:24:00+05:00",
   "funnel": {
-    "discovered": 8,
-    "fast_gate_passed": 3,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
+    "discovered": 24,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
     "duplicates": 3,
-    "excluded": 5
+    "excluded": 20
   },
-  "notes": "RUN 331 repair. Physical master guard found the staged candidate Дымов Керамика / ООО «ТД «ДЫМОВ КЕРАМИКА» (ИНН 7731377855, ОГРН 1177746793432) already present in canonical master as Lead ID N5K-0353 from RUN N5K-20260822-306. Repository code search had returned no match, so search-index/code-search output is not authoritative for dedup. Candidate removed from qualified before integration. Baseline remains verified 250/250 after RUN 330 PASS. Eight distinct signals screened; final result: 3 duplicates and 5 excluded, 0 qualified. No outreach.",
-  "qualified_companies": []
+  "notes": "RUN 331 continues from verified physical baseline 250/250 after repairing staged duplicate Дымов Керамика. Twenty-four distinct current signals screened in this cycle across August 2026 Head of Sales/CCO vacancies and current company/legal sources. Opticus Russia passed current scale, legal, S1 sales-expansion signal, LPR and contact-route gates. Search-index output is not authoritative; final physical integration guard must perform the decisive dedup. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0397",
+      "Brand": "Opticus Russia / Оптикус",
+      "Legal Name": "ООО «ОПТИКУС»",
+      "INN": "7751255710",
+      "OGRN/OGRNIP": "1237700360160",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "B2B оптика / медицинские оправы / солнцезащитные очки / дистрибуция",
+      "Website": "https://www.opticuss.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 690,18 млн руб. за 2025 год, 13 сотрудников по актуальным данным ФНС/Росстата; российское подразделение международной оптической компании, продажи оптом более чем в 40 странах.",
+      "Signal Level": "S1",
+      "Signal Summary": "Актуальная вакансия Руководителя отдела продаж / Head of Sales B2B: компания усиливает B2B-коммерческую функцию, требуется управление и развитие отдела продаж, рост коммерческой эффективности и развитие клиентской базы.",
+      "Signal Date": "2026-08-18",
+      "Signal Source": "https://bebee.com/ru/jobs/head-of-sales-b2b--techmap_ru_135621004",
+      "Owner": "Акын Эльнара — 100% участник ООО «ОПТИКУС»",
+      "CEO": "Бойко Севиль Латиф кызы — генеральный директор с 04.04.2024",
+      "LPR": "Бойко Севиль Латиф кызы",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (499) 350-59-46",
+      "Primary Email": "info.russia@opticuss.ru",
+      "HH Contact": "",
+      "Contact Form": "https://www.opticuss.ru/about_us/",
+      "Contact Type": "Corporate phone; corporate email; direct employer vacancy route",
+      "Contact Source": "Official website and current vacancy",
+      "Consulting Hypothesis": "Систематизация и масштабирование B2B-продаж: сегментация клиентских каналов, pipeline, KPI и конверсии, развитие региональной/дилерской модели и повышение управляемости коммерческого блока.",
+      "contacts": [
+        {"value":"+7 (499) 350-59-46","channel":"Phone","type":"Corporate","source":"Official website","url":"https://www.opticuss.ru/about_us/","is_lpr":false,"notes":"Main corporate phone"},
+        {"value":"info.russia@opticuss.ru","channel":"Email","type":"Corporate","source":"Official website","url":"https://www.opticuss.ru/about_us/","is_lpr":false,"notes":"Official Russia contact email"},
+        {"value":"COO@OPTICUSS.RU","channel":"Email","type":"Corporate management route","source":"Current legal/company profile","url":"https://xfirm.ru/company/7751255710","is_lpr":false,"notes":"Published management-level corporate email"}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «ОПТИКУС», ИНН 7751255710, ОГРН 1237700360160, действует; генеральный директор Бойко Севиль Латиф кызы, участник Акын Эльнара 100%.","url":"https://xfirm.ru/company/7751255710","source":"Current legal/company profile checked August 2026"},
+        {"type":"SCALE_CURRENT","claim":"Финансовая отчетность за 2025 год: выручка 690,18 млн руб.; среднесписочная численность 13 сотрудников.","url":"https://www.tbank.ru/business/contractor/legal/1237700360160/","source":"2025 financial reporting / current company profile"},
+        {"type":"BRAND_LEGAL","claim":"HH employer profile and official Opticus Russia site identify the Russian business as Opticus and publish the same Moscow operating location/domain; legal entity ООО «ОПТИКУС» is the current Russian operating company.","url":"https://hh.ru/employer/9983504","source":"Current employer profile plus official website"},
+        {"type":"OWNER_LPR","claim":"Бойко Севиль Латиф кызы — генеральный директор с 04.04.2024; Акын Эльнара — 100% участник.","url":"https://xfirm.ru/company/7751255710","source":"Current legal/company profile"},
+        {"type":"SIGNAL","claim":"Current Head of Sales B2B vacancy seeks a leader for B2B sales management and commercial growth at Opticus Russia.","url":"https://bebee.com/ru/jobs/head-of-sales-b2b--techmap_ru_135621004","source":"Current August 2026 vacancy listing"},
+        {"type":"CONTACT","claim":"Official website publishes +7 (499) 350-59-46 and info.russia@opticuss.ru; current company profile also publishes COO@OPTICUSS.RU.","url":"https://www.opticuss.ru/about_us/","source":"Official website"}
+      ]
+    }
+  ]
 }
