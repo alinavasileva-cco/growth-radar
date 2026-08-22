@@ -1,39 +1,39 @@
 {
-  "run_id": "N5K-20260822-316",
+  "run_id": "N5K-20260822-317",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T11:58:41+05:00",
+  "updated_at": "2026-08-22T13:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 230,
-    "current_contactable_count": 230,
-    "progress_added": 230,
-    "remaining": 4770
+    "current_canonical_count": 232,
+    "current_contactable_count": 232,
+    "progress_added": 232,
+    "remaining": 4768
   },
   "funnel": {
-    "discovered": 18,
-    "fast_gate_passed": 5,
-    "size_check_passed": 3,
+    "discovered": 22,
+    "fast_gate_passed": 6,
+    "size_check_passed": 4,
     "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 0,
-    "excluded": 16
+    "duplicates": 5,
+    "excluded": 15
   },
   "qualified_companies": [
-    "АРЕНА лейбл / Группа компаний АРЕНА",
-    "Агро-Веста"
+    "HIDEN / АДМ-ТЕХНО",
+    "LIXIE / ЛИКСИ"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "230_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "230_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "232_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "232_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

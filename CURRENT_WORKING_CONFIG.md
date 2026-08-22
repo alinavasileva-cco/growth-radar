@@ -106,3 +106,7 @@ Canonical/contactable: 228/228. Added: 1. Raw 34; fast 7; size 4; legal 3; signa
 
 ## Latest verified run N5K-20260822-316
 Canonical/contactable: 230/230. Added: 2. Raw 18; fast 5; size 3; legal 3; signal 2; LPR 2; contact 2; qualified 2. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260822-317
+Canonical/contactable: 232/232. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
