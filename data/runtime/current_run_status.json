@@ -1,20 +1,20 @@
 {
-  "run_id": "N5K-20260822-323",
+  "run_id": "N5K-20260822-324",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T16:59:00+05:00",
+  "updated_at": "2026-08-22T18:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 240,
-    "current_contactable_count": 240,
-    "progress_added": 240,
-    "remaining": 4760
+    "current_canonical_count": 241,
+    "current_contactable_count": 241,
+    "progress_added": 241,
+    "remaining": 4759
   },
   "funnel": {
-    "discovered": 18,
-    "fast_gate_passed": 4,
+    "discovered": 22,
+    "fast_gate_passed": 5,
     "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -22,17 +22,17 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 17
+    "excluded": 21
   },
   "qualified_companies": [
-    "Magnetto.pro"
+    "Семейные традиции"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "240_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "240_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "241_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "241_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
