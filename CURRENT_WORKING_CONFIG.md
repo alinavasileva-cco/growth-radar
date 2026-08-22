@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-23T03:18:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260823-334`  
+**Версия:** 2026-08-23T03:43:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260823-335`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **255 / 255**  
+**Физически подтверждённый canonical/contactable:** **256 / 256**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4745**  
+**Осталось:** **4744**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **255 / 255**;
+- physical canonical/contactable count: **256 / 256**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260823-334`;
+- последний завершённый RUN: `N5K-20260823-335`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,21 +36,16 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний проверенный RUN — N5K-20260823-334
+## Последний проверенный RUN — N5K-20260823-335
 
-Baseline перед RUN: **254 / 254**.  
-Фактически обработано raw: **24**. Требуемые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **24** → fast gate **5** → size **2** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **3**. Excluded: **20**.  
-Добавлена: **РС-Деталь / RS Detal / ООО «РС-ДЕТАЛЬ»**, ИНН `5256186890`, Lead ID `N5K-0401`.  
-Итог physical canonical/contactable: **255 / 255**.  
+Baseline перед RUN: **255 / 255**.  
+Фактически обработано raw: **2**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **2** → fast gate **1** → size **1** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **0**. Excluded: **1**.  
+Добавлена: **LS LIGHTING / ЛС-Лайтинг / ООО «ЛС-ЛАЙТИНГ»**, ИНН `9709023276`, Lead ID `N5K-0402`.  
+Итог physical canonical/contactable: **256 / 256**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
-История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; текущий файл содержит каноническое рабочее состояние и обязательные правила продолжения.
+Примечание по качеству: текущий публичный сайт бренда в футере также ссылается на ИП владельца, поэтому телефон/email витрины не использованы как решающий маршрут к ООО. Для ООО использован свежий работодательский маршрут, прямо называющий ООО «ЛС-ЛАЙТИНГ»; юридические реквизиты и ЛПР подтверждены актуальным профилем компании.
 
-## Latest verified run N5K-20260823-334
-Canonical/contactable: 255/255. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260823-335
-Canonical/contactable: 256/256. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; этот файл содержит только актуальное каноническое состояние и правила продолжения.
