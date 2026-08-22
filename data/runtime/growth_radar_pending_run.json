@@ -1,9 +1,9 @@
 {
-  "run_id": "N5K-20260822-319",
-  "updated_at": "2026-08-22T14:40:00+05:00",
+  "run_id": "N5K-20260822-320",
+  "updated_at": "2026-08-22T15:18:00+05:00",
   "funnel": {
-    "discovered": 8,
-    "fast_gate_passed": 3,
+    "discovered": 12,
+    "fast_gate_passed": 4,
     "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -11,95 +11,95 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 7
+    "excluded": 11
   },
-  "notes": "RUN 319 starts from verified physical baseline 234/234 after RUN 318 PASS. Eight distinct named fresh commercial-growth candidates were screened from current 2026 job-board/company sources; FAST GATE was applied before deep-check. Vertex passed current legal status, scale, brand-to-legal match, S1 commercial-growth signal, current LPR and practical contact route, plus repository dedup by brand/INN. The requested 150-200 raw target was not reached in this execution and is not overstated. No outreach.",
+  "notes": "RUN 320 starts from verified physical baseline 235/235 after RUN 319 PASS. Twelve distinct named fresh commercial-growth candidates were screened from current August 2026 job-board/company sources; FAST GATE was applied before deep-check. Express Manufactura passed current legal status, scale, brand-to-legal match, S1 commercial-growth signal, current legal LPR and practical official contact route, plus repository pre-write dedup by brand/INN. Conflicting role labels on the company portal were not used to override the fresher legal-registry CEO record: Igor Kireev is recorded as legal CEO; the portal independently provides his direct business-development contact. The requested 150-200 raw target was not reached in this execution and is not overstated. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0381",
-      "Brand": "VERTEX / MyKiddo / Reva Care / Florey / Lavandel",
-      "Legal Name": "ООО «ВЕРТЕКС»",
-      "INN": "5258150049",
-      "OGRN/OGRNIP": "1215200002456",
-      "Region": "Нижегородская область",
-      "City": "Нижний Новгород",
-      "Segment": "FMCG / бытовая химия / косметика / гигиена / контрактное производство",
-      "Website": "https://vertex-pro.ru/",
-      "Revenue/Scale": "Действующее частное ООО. Актуальный профиль на 20.08.2026 показывает выручку 4,35 млрд ₽ за 2025 год; официальный сайт заявляет 1000+ сотрудников, 20 000 м² производственных и складских мощностей, 1 млн единиц продукции в месяц и 1000+ SKU.",
+      "Lead ID": "N5K-0382",
+      "Brand": "Экспресс Мануфактура / Express Manufactura",
+      "Legal Name": "ООО «ЭКСПРЕСС МАНУФАКТУРА»",
+      "INN": "7726454494",
+      "OGRN/OGRNIP": "1197746400620",
+      "Region": "Московская область",
+      "City": "Наро-Фоминск / Москва",
+      "Segment": "медицинская диагностика / производство экспресс-тестов / лабораторное оборудование / B2B",
+      "Website": "https://expressm-test.ru/",
+      "Revenue/Scale": "Действующее частное ООО. Выручка за 2025 год 657,199 млн ₽; среднесписочная численность 15 сотрудников. Официальный сайт подтверждает собственное производство 1 500 м², 200+ дистрибьюторов по России и СНГ и 70+ наименований тест-систем.",
       "Signal Level": "S1",
-      "Signal Summary": "16.06.2026 Vertex искал директора по продажам в федеральные и локальные сети. Вакансия прямо фиксирует быстрый рост, выручку 5 млрд ₽ за 2025 год и цель 10+ млрд ₽ в 2026, а также необходимость масштабировать продажи; официальный сайт подтверждает курс на масштабирование собственных брендов по России и СНГ.",
-      "Signal Date": "2026-06-16",
-      "Signal Source": "https://dreamjob.ru/employers/527991/vakansii/129913396",
-      "Owner": "Блехерман Илья Владимирович 37,5%; Бородин Дмитрий Эдуардович 37,5%; Гуданов Георгий Валерьевич 25%",
-      "CEO": "Гуданов Георгий Валерьевич",
-      "LPR": "Гуданов Георгий Валерьевич",
-      "LPR Role": "Директор / соучредитель / основатель Vertex",
-      "Primary Phone": "8 (800) 707-42-14",
-      "Primary Email": "sales@vertex-pro.ru",
-      "HH Contact": "https://dreamjob.ru/employers/527991/vakansii/129913396",
-      "Contact Form": "https://vertex-pro.ru/",
-      "Contact Type": "Corporate phone; Sales email; Official website; Current employer/job route",
-      "Contact Source": "Official Vertex website and current 2026 legal/job sources",
-      "Consulting Hypothesis": "Систематизация быстрого FMCG-масштабирования: channel P&L и unit economics по федеральным/локальным сетям и маркетплейсам, KAM-модель, CRM/pipeline/forecast, ассортиментная экономика, KPI коммерческой команды и операционная модель роста к целевому масштабу без ручной зависимости от основателя.",
+      "Signal Summary": "13.08.2026 компания опубликовала вакансию Руководителя отдела продаж (производство мед. изделий), прямо указав активный рост, появление новых проектов и расширение команды. Роль относится к B2B-продажам диагностического оборудования и экспресс-тестов.",
+      "Signal Date": "2026-08-13",
+      "Signal Source": "https://nesiditsa.ru/vacancy/135511248",
+      "Owner": "Киреев Андрей Игоревич 50%; Киреев Игорь Витальевич 50%",
+      "CEO": "Киреев Игорь Витальевич",
+      "LPR": "Киреев Игорь Витальевич",
+      "LPR Role": "Генеральный директор по актуальным реестровым данным; на официальном партнёрском портале также указан как директор по развитию бизнеса",
+      "Primary Phone": "+7 (495) 190-00-05",
+      "Primary Email": "sales@expressm-test.ru",
+      "HH Contact": "https://nesiditsa.ru/vacancy/135511248",
+      "Contact Form": "https://portal.expressm-test.ru/page/kontakty",
+      "Contact Type": "Corporate sales phone; Sales email; Direct LPR/business-development email; Official contact form; Current employer/job route",
+      "Contact Source": "Official Express Manufactura website/partner portal and current 2026 job posting",
+      "Consulting Hypothesis": "Систематизация резкого роста B2B-продаж после скачка выручки: сегментация дистрибьюторов и клиник, channel P&L, CRM/pipeline/forecast, KPI и мотивация sales-команды, развитие продуктовой матрицы и управляемое масштабирование новых проектов без потери маржи и сервиса.",
       "contacts": [
         {
-          "value": "8 (800) 707-42-14",
+          "value": "+7 (495) 190-00-05",
           "channel": "Phone",
-          "type": "Corporate",
-          "source": "Official Vertex website",
-          "url": "https://vertex-pro.ru/",
+          "type": "Sales",
+          "source": "Official Express Manufactura website",
+          "url": "https://expressm-test.ru/",
           "is_lpr": false,
-          "notes": "Official corporate phone"
+          "notes": "Official sales phone"
         },
         {
-          "value": "sales@vertex-pro.ru",
+          "value": "sales@expressm-test.ru",
           "channel": "Email",
           "type": "Sales",
-          "source": "Official Vertex website",
-          "url": "https://vertex-pro.ru/",
+          "source": "Official Express Manufactura website",
+          "url": "https://expressm-test.ru/",
           "is_lpr": false,
           "notes": "Official sales email"
         },
         {
-          "value": "https://dreamjob.ru/employers/527991/vakansii/129913396",
-          "channel": "Job board",
-          "type": "Current employer route",
-          "source": "DreamJob",
-          "url": "https://dreamjob.ru/employers/527991/vakansii/129913396",
-          "is_lpr": false,
-          "notes": "2026 sales-director vacancy route"
+          "value": "kiv@expressm-test.ru",
+          "channel": "Email",
+          "type": "Direct business-development/LPR route",
+          "source": "Official partner portal team page",
+          "url": "https://portal.expressm-test.ru/page/komanda",
+          "is_lpr": true,
+          "notes": "Direct published email for Igor Kireev; current legal registry identifies him as CEO"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL_SCALE",
-          "claim": "ООО «ВЕРТЕКС», ИНН 5258150049, ОГРН 1215200002456, действует; актуальный профиль на 20.08.2026 показывает выручку 4,35 млрд ₽ за 2025 год.",
-          "url": "https://xfirm.ru/company/5258150049",
+          "claim": "ООО «ЭКСПРЕСС МАНУФАКТУРА», ИНН 7726454494, ОГРН 1197746400620, действует; выручка 657,199 млн ₽ за 2025 год, среднесписочная численность 15.",
+          "url": "https://companies.rbc.ru/id/1197746400620-obschestvo-s-ogranichennoj-otvetstvennostyu-ekspress-manufaktura/",
           "source": "Current legal/financial profile"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Гуданов Георгий Валерьевич — директор ООО «ВЕРТЕКС» с 28.01.2021 и совладелец 25%; Бородин Дмитрий Эдуардович и Блехерман Илья Владимирович владеют по 37,5%.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1215200002456/",
+          "claim": "Киреев Игорь Витальевич — генеральный директор по актуальному реестровому профилю; Киреев Андрей Игоревич и Киреев Игорь Витальевич владеют по 50%.",
+          "url": "https://companies.rbc.ru/id/1197746400620-obschestvo-s-ogranichennoj-otvetstvennostyu-ekspress-manufaktura/",
           "source": "Current legal profile"
         },
         {
           "type": "SIGNAL",
-          "claim": "16.06.2026 Vertex искал директора по продажам в федеральные и локальные сети; вакансия описывает быстрый рост и цель масштабирования продаж в 2026 году.",
-          "url": "https://dreamjob.ru/employers/527991/vakansii/129913396",
+          "claim": "13.08.2026 компания искала Руководителя отдела продаж по производству медицинских изделий и прямо указала активный рост, новые проекты и расширение команды.",
+          "url": "https://nesiditsa.ru/vacancy/135511248",
           "source": "Current 2026 job posting"
         },
         {
           "type": "BRAND_LEGAL_SCALE",
-          "claim": "Официальный сайт Vertex называет Георгия Гуданова основателем, подтверждает 1000+ сотрудников, 20 000 м² мощностей, 1 млн единиц производства в месяц и курс на масштабирование собственных брендов.",
-          "url": "https://vertex-pro.ru/",
+          "claim": "Официальный сайт прямо указывает ООО «ЭКСПРЕСС МАНУФАКТУРА», ИНН 7726454494, ОГРН 1197746400620, собственное производство 1 500 м², 200+ дистрибьюторов и 70+ наименований тест-систем.",
+          "url": "https://expressm-test.ru/",
           "source": "Official company website"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт публикует 8 (800) 707-42-14 и sales@vertex-pro.ru как практический маршрут в коммерческий контур.",
-          "url": "https://vertex-pro.ru/",
-          "source": "Official company website"
+          "claim": "Официальный сайт и партнёрский портал публикуют +7 (495) 190-00-05, sales@expressm-test.ru и прямой email Игоря Киреева kiv@expressm-test.ru.",
+          "url": "https://portal.expressm-test.ru/page/komanda",
+          "source": "Official company portal"
         }
       ]
     }
