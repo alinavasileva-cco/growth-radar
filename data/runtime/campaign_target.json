@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-22T08:02:59+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260822-311",
-  "current_run_id": "N5K-20260822-311",
+  "last_completed_run_id": "N5K-20260822-312",
+  "current_run_id": "N5K-20260822-312",
   "last_run_id": "N5K-20260822-312",
   "latest_completed_run": "N5K-20260822-312",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 311 completed; added 2; physical canonical/contactable 224/224; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 312 completed; added 1; physical canonical/contactable 225/225; integrity PASS; orphan 0/0; outreach 0."
 }
