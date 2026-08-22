@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260822-312",
+  "run_id": "N5K-20260822-313",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T08:02:59+05:00",
+  "updated_at": "2026-08-22T09:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 225,
-    "current_contactable_count": 225,
-    "progress_added": 225,
-    "remaining": 4775
+    "current_canonical_count": 226,
+    "current_contactable_count": 226,
+    "progress_added": 226,
+    "remaining": 4774
   },
   "funnel": {
-    "discovered": 20,
+    "discovered": 24,
     "fast_gate_passed": 5,
     "size_check_passed": 2,
     "legal_match_passed": 1,
@@ -22,17 +22,17 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 19
+    "excluded": 23
   },
   "qualified_companies": [
-    "Компания РЭЙ / Ray Aluminium Construction Co."
+    "Bercut"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "225_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "225_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "226_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "226_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
