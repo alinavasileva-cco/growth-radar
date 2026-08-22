@@ -1,51 +1,45 @@
 {
-  "run_id": "N5K-20260822-313",
-  "updated_at": "2026-08-22T09:18:00+05:00",
-  "funnel": {"discovered":24,"fast_gate_passed":5,"size_check_passed":2,"legal_match_passed":1,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":0,"excluded":23},
-  "notes": "RUN 313 starts from verified physical baseline 225/225 after RUN 312. Twenty-four distinct named current employer/company signals were individually screened from fresh August 2026 job-board/company discovery in this execution; requested 150-200 raw target was not reached and is not overstated. One candidate passed current legal/scale, fresh 2026 S1 commercial-growth signal, LPR, official contact-route and preliminary repository dedup. Fresh 2025 financial and current 2026 legal/contact data were used; stale records excluded. Physical integration guard remains authoritative. No outreach.",
-  "qualified_companies": [
-    {
-      "Lead ID":"N5K-0372",
-      "Brand":"Bercut",
-      "Legal Name":"ООО «НПФ БЕРКУТ»",
-      "INN":"7810132262",
-      "OGRN/OGRNIP":"1037821060738",
-      "Legal Status":"Действует",
-      "Region":"Санкт-Петербург",
-      "City":"Санкт-Петербург",
-      "Segment":"IT / enterprise integration / B2B software",
-      "Website":"https://bercut.com/",
-      "Revenue/Scale":"Выручка 2,869 млрд ₽ за 2025 год; около 384 сотрудников по актуальному профилю; разработчик B2B enterprise software.",
-      "Signal Level":"S1",
-      "Signal Summary":"22 июля 2026 Bercut искал коммерческого директора нового B2B-направления интеграции и автоматизации с задачей возглавить новое продуктовое направление и создать базу для коммерческого роста существующих и разрабатываемых продуктов, включая стратегию, план продаж и активное продвижение.",
-      "Signal Date":"2026-07-22",
-      "Signal Source":"https://dreamjob.ru/employers/53150/vakansii/135478197",
-      "Owner":"ООО «Т2 РТК Холдинг» — 100%",
-      "CEO":"Богданов Андрей Владимирович",
-      "LPR":"Богданов Андрей Владимирович / коммерческий блок Bercut",
-      "LPR Role":"Генеральный директор / коммерческий контур",
-      "Primary Phone":"+7 (812) 327-32-33",
-      "Primary Email":"sales@bercut.com",
-      "HH Contact":"https://dreamjob.ru/employers/53150/vakansii/135478197",
-      "Contact Form":"https://bercut.com/contacts/",
-      "Contact Type":"Corporate phone; Sales email; Official contact form; Current job-board route",
-      "Contact Source":"Official Bercut contacts checked August 2026; current 2026 vacancy; current legal/company profiles",
-      "Number Of Contacts Found":4,
-      "Consulting Hypothesis":"Commercial launch and scaling of a new enterprise B2B integration product line: GTM, pipeline architecture, account segmentation, sales process, product-to-market feedback loop and commercial governance.",
-      "Final Quick Status":"МОЖНО СВЯЗЫВАТЬСЯ",
-      "contacts":[
-        {"value":"+7 (812) 327-32-33","channel":"Phone","type":"Corporate","source":"Official Bercut website","url":"https://bercut.com/contacts/","is_lpr":false,"notes":"Официальный корпоративный телефон"},
-        {"value":"sales@bercut.com","channel":"Email","type":"Sales","source":"Official Bercut website","url":"https://bercut.com/contacts/","is_lpr":false,"notes":"Официальный email отдела продаж"},
-        {"value":"https://bercut.com/contacts/","channel":"Website","type":"Official route","source":"Official Bercut website","url":"https://bercut.com/contacts/","is_lpr":false,"notes":"Официальная форма связи"},
-        {"value":"https://dreamjob.ru/employers/53150/vakansii/135478197","channel":"Job board","type":"Employer route","source":"Current 2026 vacancy","url":"https://dreamjob.ru/employers/53150/vakansii/135478197","is_lpr":false,"notes":"Маршрут работодателя по свежей вакансии"}
-      ],
-      "evidence":[
-        {"type":"LEGAL_SCALE","claim":"ООО «НПФ БЕРКУТ», ИНН 7810132262, ОГРН 1037821060738; действует; выручка 2,869 млрд ₽ за 2025 год; актуальный профиль указывает около 384 сотрудников.","url":"https://bo.nalog.gov.ru/search?ogrn=1037821060738","source":"ФНС БФО и актуальные company profiles, 2026"},
-        {"type":"OWNER_LPR","claim":"Генеральный директор — Богданов Андрей Владимирович; 100% учредитель — ООО «Т2 РТК Холдинг».","url":"https://companies.rbc.ru/id/1037821060738-bercut/","source":"Current legal/company profile checked August 2026"},
-        {"type":"SIGNAL","claim":"22 июля 2026 Bercut открыл позицию коммерческого директора нового B2B-направления интеграции и автоматизации для создания базы коммерческого роста продуктов.","url":"https://dreamjob.ru/employers/53150/vakansii/135478197","source":"Current 2026 vacancy"},
-        {"type":"BRAND_LEGAL","claim":"Официальная страница контактов Bercut прямо указывает ООО «НПФ Беркут» и ИНН 7810132262.","url":"https://bercut.com/contacts/","source":"Official Bercut website checked August 2026"},
-        {"type":"CONTACT","claim":"Официальный сайт публикует +7 (812) 327-32-33, sales@bercut.com и форму связи.","url":"https://bercut.com/contacts/","source":"Official Bercut website checked August 2026"}
-      ]
-    }
-  ]
+  "run_id":"N5K-20260822-314",
+  "updated_at":"2026-08-22T10:09:00+05:00",
+  "funnel":{"discovered":28,"fast_gate_passed":6,"size_check_passed":4,"legal_match_passed":3,"signal_confirmed":2,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":2,"excluded":25},
+  "notes":"RUN 314 starts from verified physical baseline 226/226. 28 distinct named company signals were screened from current job-board/company discovery; requested 150-200 raw target was not reached and is not overstated. One candidate passed current legal/scale, 2026 S1 commercial-growth signal, LPR, official contact route and preliminary repository dedup. No outreach.",
+  "qualified_companies":[{
+    "Lead ID":"N5K-0373",
+    "Brand":"N1Sport",
+    "Legal Name":"ООО «ЛАБОРАТОРИЯ ИННОВАЦИОННОЙ ОДЕЖДЫ»",
+    "INN":"5800003698",
+    "OGRN/OGRNIP":"1245800001941",
+    "Region":"Пензенская область",
+    "City":"Пенза / Заречный",
+    "Segment":"Производство спортивной и корпоративной одежды / B2B",
+    "Website":"https://n1sport.ru/",
+    "Revenue/Scale":"Выручка 492,634 млн ₽ за 2025 год; официальный производственный контур 3000 м², 9 цехов, 120 швейных машин; отраслевой профиль указывает около 150 сотрудников.",
+    "Signal Level":"S1",
+    "Signal Summary":"В июле 2026 N1Sport искал коммерческого директора CCO: компания прямо указывает рост и задачу масштабировать бизнес, коммерческую политику, воронки и коммерческий департамент.",
+    "Signal Date":"2026-07-24",
+    "Signal Source":"https://penzenskaya-oblast.jobcareer.ru/companies/n1sport/",
+    "Owner":"Суркин Алексей Геннадьевич — 100%",
+    "CEO":"Суркин Алексей Геннадьевич",
+    "LPR":"Суркин Алексей Геннадьевич / коммерческий контур N1Sport",
+    "LPR Role":"Собственник и генеральный директор / коммерческий контур",
+    "Primary Phone":"+7 (800) 770-70-58",
+    "Primary Email":"zakaz@nbr1.ru",
+    "HH Contact":"https://penzenskaya-oblast.jobcareer.ru/companies/n1sport/",
+    "Contact Form":"https://n1sport.ru/contacts/",
+    "Contact Type":"Corporate phone; Corporate email; Official contact form; Current job-board route",
+    "Contact Source":"Official N1Sport website and current 2026 job-board/legal sources",
+    "Consulting Hypothesis":"Commercial scaling of a fast-growing B2B apparel manufacturer: sales architecture, channel economics, dealer/corporate segmentation, CRM pipeline and margin governance.",
+    "contacts":[
+      {"value":"+7 (800) 770-70-58","channel":"Phone","type":"Corporate","source":"Official N1Sport website","url":"https://n1sport.ru/contacts/","is_lpr":false,"notes":"Официальный корпоративный телефон"},
+      {"value":"zakaz@nbr1.ru","channel":"Email","type":"Corporate sales","source":"Official N1Sport website","url":"https://n1sport.ru/contacts/","is_lpr":false,"notes":"Официальный корпоративный email"},
+      {"value":"https://n1sport.ru/contacts/","channel":"Website","type":"Official route","source":"Official N1Sport website","url":"https://n1sport.ru/contacts/","is_lpr":false,"notes":"Официальная форма связи"}
+    ],
+    "evidence":[
+      {"type":"LEGAL_SCALE","claim":"ООО «Лаборатория инновационной одежды», ИНН 5800003698, ОГРН 1245800001941; действует; выручка 492,634 млн ₽ за 2025 год.","url":"https://companies.rbc.ru/id/1245800001941-obschestvo-s-ogranichennoj-otvetstvennostyu-laboratoriya-innovatsionnoj-odezhdyi/","source":"Current legal/company profile"},
+      {"type":"OWNER_LPR","claim":"Суркин Алексей Геннадьевич — единственный учредитель и генеральный директор.","url":"https://companies.rbc.ru/id/1245800001941-obschestvo-s-ogranichennoj-otvetstvennostyu-laboratoriya-innovatsionnoj-odezhdyi/","source":"Current legal/company profile"},
+      {"type":"SIGNAL","claim":"В 2026 N1Sport ищет коммерческого директора CCO для масштабирования бизнеса и коммерческой системы.","url":"https://penzenskaya-oblast.jobcareer.ru/companies/n1sport/","source":"Current 2026 job-board listing"},
+      {"type":"BRAND_LEGAL","claim":"Официальный сайт N1Sport прямо указывает ООО «Лаборатория инновационной одежды», ИНН 5800003698.","url":"https://n1sport.ru/contacts/","source":"Official N1Sport website"},
+      {"type":"CONTACT","claim":"Официальный сайт публикует +7 (800) 770-70-58, zakaz@nbr1.ru и форму связи.","url":"https://n1sport.ru/contacts/","source":"Official N1Sport website"}
+    ]
+  }]
 }
