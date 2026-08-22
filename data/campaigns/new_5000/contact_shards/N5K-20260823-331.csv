@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0397,N5K-0397-C01,Opticus Russia / Оптикус,7751255710,,Корпоративный маршрут,+7 (499) 350-59-46,Phone,Corporate,Official website,https://www.opticuss.ru/about_us/,NO,HIGH,2026-08-23,Main corporate phone,N5K-20260823-331,new_5000
+N5K-0397,N5K-0397-C02,Opticus Russia / Оптикус,7751255710,,Корпоративный маршрут,info.russia@opticuss.ru,Email,Corporate,Official website,https://www.opticuss.ru/about_us/,NO,HIGH,2026-08-23,Official Russia contact email,N5K-20260823-331,new_5000
+N5K-0397,N5K-0397-C03,Opticus Russia / Оптикус,7751255710,,Корпоративный маршрут,COO@OPTICUSS.RU,Email,Corporate management route,Current legal/company profile,https://xfirm.ru/company/7751255710,NO,HIGH,2026-08-23,Published management-level corporate email,N5K-20260823-331,new_5000
