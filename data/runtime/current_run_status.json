@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260822-328",
+  "run_id": "N5K-20260822-329",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T22:00:00+05:00",
+  "updated_at": "2026-08-22T23:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 248,
-    "current_contactable_count": 248,
-    "progress_added": 248,
-    "remaining": 4752
+    "current_canonical_count": 249,
+    "current_contactable_count": 249,
+    "progress_added": 249,
+    "remaining": 4751
   },
   "funnel": {
-    "discovered": 20,
-    "fast_gate_passed": 5,
+    "discovered": 18,
+    "fast_gate_passed": 4,
     "size_check_passed": 2,
     "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
+    "duplicates": 3,
     "excluded": 14
   },
   "qualified_companies": [
-    "НПФ ГКС / ГазКомплектСтрой"
+    "Харвест Тайм / Медведь Любимый"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "248_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "248_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "249_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "249_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
