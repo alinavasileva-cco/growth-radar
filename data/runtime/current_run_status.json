@@ -1,39 +1,38 @@
 {
-  "run_id": "N5K-20260822-318",
+  "run_id": "N5K-20260822-319",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T14:01:00+05:00",
+  "updated_at": "2026-08-22T14:40:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 234,
-    "current_contactable_count": 234,
-    "progress_added": 234,
-    "remaining": 4766
+    "current_canonical_count": 235,
+    "current_contactable_count": 235,
+    "progress_added": 235,
+    "remaining": 4765
   },
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 2,
-    "excluded": 20
+    "discovered": 8,
+    "fast_gate_passed": 3,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 7
   },
   "qualified_companies": [
-    "СОФИС / 7DAYS / B.COLOUR PROFESSIONAL",
-    "ПО ЭЛЕКТРОТЕХНИК"
+    "VERTEX / MyKiddo / Reva Care / Florey / Lavandel"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "234_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "234_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "235_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "235_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
