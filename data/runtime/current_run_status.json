@@ -1,39 +1,43 @@
 {
-  "run_id": "N5K-20260822-309",
+  "run_id": "N5K-20260822-310",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T05:18:00+05:00",
+  "updated_at": "2026-08-22T05:58:35+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 216,
-    "current_contactable_count": 216,
-    "progress_added": 216,
-    "remaining": 4784
+    "current_canonical_count": 222,
+    "current_contactable_count": 222,
+    "progress_added": 222,
+    "remaining": 4778
   },
   "funnel": {
-    "discovered": 25,
-    "fast_gate_passed": 5,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 3,
-    "excluded": 20
+    "discovered": 31,
+    "fast_gate_passed": 8,
+    "size_check_passed": 6,
+    "legal_match_passed": 6,
+    "signal_confirmed": 6,
+    "lpr_identified": 6,
+    "contact_route_found": 6,
+    "qualified": 6,
+    "duplicates": 0,
+    "excluded": 25
   },
   "qualified_companies": [
-    "Petro Building Systems / PBS",
-    "НПП Авиатрон / Aviatron"
+    "ИНТУРАЭРО / IntourAero",
+    "Торговый дом ТАВР Неруд / TAVR Nerud",
+    "XBIT / ИКСБИТ",
+    "ПЕТРОПАК / PETROPAK",
+    "Фабрика Подарков / GiftsFactory",
+    "ПромСтройКонструкции / ПСК"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "216_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "216_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "222_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "222_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
