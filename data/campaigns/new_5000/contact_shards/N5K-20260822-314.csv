@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0373,N5K-0373-C01,N1Sport,5800003698,,Корпоративный маршрут,+7 (800) 770-70-58,Phone,Corporate,Official N1Sport website,https://n1sport.ru/contacts/,NO,HIGH,2026-08-22,Официальный корпоративный телефон,N5K-20260822-314,new_5000
+N5K-0373,N5K-0373-C02,N1Sport,5800003698,,Корпоративный маршрут,zakaz@nbr1.ru,Email,Corporate sales,Official N1Sport website,https://n1sport.ru/contacts/,NO,HIGH,2026-08-22,Официальный корпоративный email,N5K-20260822-314,new_5000
+N5K-0373,N5K-0373-C03,N1Sport,5800003698,,Корпоративный маршрут,https://n1sport.ru/contacts/,Website,Official route,Official N1Sport website,https://n1sport.ru/contacts/,NO,HIGH,2026-08-22,Официальная форма связи,N5K-20260822-314,new_5000
