@@ -1,105 +1,193 @@
 {
-  "run_id": "N5K-20260822-321",
-  "updated_at": "2026-08-22T15:41:00+05:00",
+  "run_id": "N5K-20260822-322",
+  "updated_at": "2026-08-22T16:12:00+05:00",
   "funnel": {
-    "discovered": 8,
-    "fast_gate_passed": 3,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 7
+    "discovered": 32,
+    "fast_gate_passed": 7,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 4,
+    "excluded": 26
   },
-  "notes": "RUN 321 starts from verified physical baseline 236/236 after RUN 320 PASS. Eight named current August 2026 candidates from fresh job-board results were screened; FAST GATE was applied before deep-check. БиоМикроГели / ООО «БИОПОЛИМЕР» passed current legal status, scale, brand-to-legal match, S1 development signal, LPR and practical official contact route. Repository pre-write dedup found no match by INN 6679148488, brand/domain biopolymer.eco, or Lead ID N5K-0383. Older conflicting CEO data was excluded from the decision; the current 2026 legal profile identifying Андрей Елагин was used. The requested 150-200 raw target was not reached in this execution and is not overstated. No outreach.",
+  "notes": "RUN 322 starts from verified physical baseline 237/237 after RUN 321 PASS. 32 distinct current candidates/employers were individually screened across fresh August 2026 job-board discovery and current company/legal profiles. FAST GATE was applied before deep-check. iSmart / ООО «АЙСМАРТ» and CharmCleo Cosmetic / ООО «НПК «ШАРМ КЛЕО КОСМЕТИК» passed current legal status, scale, brand-to-legal, current S1/S2 commercial signal, LPR and practical contact route. Preliminary repository dedup by INN/brand found no match; final physical integration guard remains authoritative. Outdated/conflicting records were excluded from decisions. Requested 150-200 raw target was not reached and is not overstated. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0383",
-      "Brand": "БиоМикроГели / Биополимер",
-      "Legal Name": "ООО «БИОПОЛИМЕР»",
-      "INN": "6679148488",
-      "OGRN/OGRNIP": "1226600002705",
-      "Region": "Свердловская область",
-      "City": "Екатеринбург",
-      "Segment": "химическая промышленность / биополимеры / промышленная водоочистка / B2B",
-      "Website": "https://biopolymer.eco/",
-      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 282,402 млн ₽. ООО «Биополимер» принадлежит ООО «Группа Компаний Биомикрогели». Официальный сайт подтверждает производственную площадку и юридические реквизиты ООО «Биополимер».",
+      "Lead ID": "N5K-0384",
+      "Brand": "iSmart / Айсмарт",
+      "Legal Name": "ООО «АЙСМАРТ»",
+      "INN": "9723047085",
+      "OGRN/OGRNIP": "1187746453850",
+      "Region": "Московская область",
+      "City": "Королёв",
+      "Segment": "EdTech / образовательная SaaS-платформа / B2B",
+      "Website": "https://www.ismart.org/",
+      "Revenue/Scale": "Действующее частное ООО; официальный сайт подтверждает продукт и юрлицо. Актуальный 2026 профиль подтверждает действующий статус; последняя публичная финансовая отчётность показывает 162,535 млн ₽ выручки за 2024 год, а текущий вакансионный сигнал 2026 указывает на команду 100+ человек и активный рост B2B-направления.",
       "Signal Level": "S1",
-      "Signal Summary": "12.08.2026 БиоМикроГели опубликовали вакансию директора по развитию; в описании прямо указано, что вакансия открыта в ООО «Биополимер», входящем в ГК БМГ. Это прямой текущий сигнал на развитие и коммерческое масштабирование.",
-      "Signal Date": "2026-08-12",
-      "Signal Source": "https://remote-job.ru/search?search%5Bquery%5D=%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2F%D0%A0%D0%9E%D0%9F&search%5BsearchType%5D=vacancy",
-      "Owner": "ООО «ГРУППА КОМПАНИЙ БИОМИКРОГЕЛИ» (100%)",
-      "CEO": "Елагин Андрей Александрович",
-      "LPR": "Елагин Андрей Александрович",
-      "LPR Role": "Генеральный директор ООО «Биополимер» по актуальному 2026 юридическому профилю; генеральный директор группы по актуальному реестровому профилю",
-      "Primary Phone": "+7 (343) 237-27-28",
-      "Primary Email": "sales@biopolymer.eco",
-      "HH Contact": "https://remote-job.ru/search?search%5Bquery%5D=%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2F%D0%A0%D0%9E%D0%9F&search%5BsearchType%5D=vacancy",
-      "Contact Form": "https://biopolymer.eco/documents/",
-      "Contact Type": "Official sales phone; Official sales email; Current employer/job route",
-      "Contact Source": "Official ООО «Биополимер» website and current August 2026 vacancy",
-      "Consulting Hypothesis": "Собрать управляемую модель B2B-развития для промышленного продукта: сегментация рынков и клиентов, воронка крупных сделок, unit economics по решениям и каналам, KPI/forecast, партнёрская сеть и приоритизация отраслей на фоне текущего найма директора по развитию.",
+      "Signal Summary": "В августе 2026 iSmart ищет Head of Sales (B2B): компания выходит на новый B2B-этап, продолжает расти и усиливает коммерческое направление. Это прямой текущий сигнал на построение/масштабирование B2B-продаж.",
+      "Signal Date": "2026-08",
+      "Signal Source": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
+      "Owner": "ООО «ЗИМА» 80%; Скрибот Екатерина Борисовна 15%; Бондарцев Алексей Борисович 5%",
+      "CEO": "Калинчева Елена Валериевна",
+      "LPR": "Калинчева Елена Валериевна",
+      "LPR Role": "Генеральный директор ООО «АЙСМАРТ» по актуальному 2026 юридическому профилю",
+      "Primary Phone": "8 (800) 600-44-02",
+      "Primary Email": "support@ismart.org",
+      "HH Contact": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
+      "Contact Form": "https://www.ismart.org/about",
+      "Contact Type": "Official corporate phone; official corporate email; current employer/job route",
+      "Contact Source": "Official iSmart website and current August 2026 vacancy listing",
+      "Consulting Hypothesis": "Собрать масштабируемую B2B-модель для EdTech: сегментация корпоративных/образовательных клиентов, ICP, outbound и партнёрский контур, KPI/воронка, unit economics и связка sales-marketing на фоне текущего найма Head of Sales B2B.",
       "contacts": [
         {
-          "value": "+7 (343) 237-27-28",
+          "value": "8 (800) 600-44-02",
           "channel": "Phone",
-          "type": "Sales",
-          "source": "Official ООО «Биополимер» website",
-          "url": "https://biopolymer.eco/documents/",
+          "type": "Corporate",
+          "source": "Official iSmart website",
+          "url": "https://www.ismart.org/about",
           "is_lpr": false,
-          "notes": "Official sales department phone"
+          "notes": "Official corporate phone"
         },
         {
-          "value": "sales@biopolymer.eco",
-          "channel": "Email",
-          "type": "Sales",
-          "source": "Official ООО «Биополимер» website",
-          "url": "https://biopolymer.eco/documents/",
-          "is_lpr": false,
-          "notes": "Official sales email"
-        },
-        {
-          "value": "info@biopolymer.eco",
+          "value": "support@ismart.org",
           "channel": "Email",
           "type": "Corporate",
-          "source": "Official ООО «Биополимер» website",
-          "url": "https://biopolymer.eco/documents/",
+          "source": "Official iSmart website",
+          "url": "https://www.ismart.org/about",
           "is_lpr": false,
-          "notes": "Official general corporate email"
+          "notes": "Official corporate email"
+        },
+        {
+          "value": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
+          "channel": "JobBoard",
+          "type": "Employer route",
+          "source": "Current August 2026 vacancy listing",
+          "url": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
+          "is_lpr": false,
+          "notes": "Current Head of Sales B2B employer route"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL_SCALE",
-          "claim": "ООО «БИОПОЛИМЕР», ИНН 6679148488, ОГРН 1226600002705, действует; выручка за 2025 год 282,402 млн ₽; учредитель — ООО «Группа Компаний Биомикрогели».",
-          "url": "https://saby.ru/profile/6679148488-667001001",
-          "source": "Current 2026 legal/financial profile"
+          "claim": "ООО «АЙСМАРТ», ИНН 9723047085, ОГРН 1187746453850, действует; текущий 2026 профиль подтверждает CEO Калинчеву Е.В.; официальная платформа подтверждает юрлицо и продукт. Последняя публичная финансовая отчётность: 162,535 млн ₽ выручки за 2024 год.",
+          "url": "https://companies.rbc.ru/amp/ogrn/1187746453850/",
+          "source": "Current 2026 legal profile"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт ООО «Биополимер» подтверждает ИНН 6679148488, ОГРН 1226600002705, адрес в Екатеринбурге, официальный телефон и email отдела продаж.",
-          "url": "https://biopolymer.eco/documents/",
+          "claim": "Официальный сайт iSmart публикует ООО «АЙСМАРТ», ИНН 9723047085, ОГРН 1187746453850, адрес, телефон и email.",
+          "url": "https://www.ismart.org/about",
           "source": "Official company website"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "ООО «Группа Компаний Биомикрогели» является владельцем ООО «Биополимер»; актуальные 2026 профили указывают Андрея Елагина как генерального директора группы и ООО «Биополимер».",
-          "url": "https://companies.rbc.ru/id/1226600043394-obschestvo-s-ogranichennoj-otvetstvennostyu-gruppa-kompanij-biomikrogeli/",
+          "claim": "Актуальные 2026 реестровые сведения указывают Калинчеву Елену Валериевну генеральным директором; структура участников: ООО «Зима» 80%, Екатерина Скрибот 15%, Алексей Бондарцев 5%.",
+          "url": "https://companies.rbc.ru/id/1187746453850-ooo-ajsmart/",
           "source": "Current legal profile"
         },
         {
           "type": "SIGNAL",
-          "claim": "12.08.2026 БиоМикроГели опубликовали вакансию директора по развитию для ООО «Биополимер», входящего в ГК БМГ.",
-          "url": "https://remote-job.ru/search?search%5Bquery%5D=%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2F%D0%A0%D0%9E%D0%9F&search%5BsearchType%5D=vacancy",
-          "source": "Current 2026 job-board listing"
+          "claim": "В августе 2026 iSmart ищет Head of Sales (B2B); в описании указаны рост команды и выход компании на новый B2B-этап.",
+          "url": "https://www.vffzvru.jobvk.com/moskva/direktor-po-kommunikatsiyam",
+          "source": "Current August 2026 job-board listing"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт публикует +7 (343) 237-27-28, sales@biopolymer.eco и info@biopolymer.eco как практические корпоративные маршруты связи.",
-          "url": "https://biopolymer.eco/documents/",
+          "claim": "Официальный сайт публикует 8 (800) 600-44-02 и support@ismart.org как практические корпоративные маршруты связи.",
+          "url": "https://www.ismart.org/about",
           "source": "Official company website"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0385",
+      "Brand": "CharmCleo Cosmetic",
+      "Legal Name": "ООО «НПК «ШАРМ КЛЕО КОСМЕТИК»",
+      "INN": "2312250641",
+      "OGRN/OGRNIP": "1162375038121",
+      "Region": "Краснодарский край",
+      "City": "Краснодар",
+      "Segment": "производство косметики / FMCG / e-commerce / ритейл / СТМ",
+      "Website": "https://charmcleo.biz/",
+      "Revenue/Scale": "Действующее частное производственное ООО; актуальный юридический профиль на июль 2026 подтверждает 15 сотрудников. Официальный сайт подтверждает собственное производство; текущая публикация 2026 указывает на команду около 50 человек, собственные площадки и рост 45-50%+ в год.",
+      "Signal Level": "S1",
+      "Signal Summary": "1 августа 2026 у CharmCleo доступна вакансия коммерческого директора e-com/ритейл/СТМ; задачи включают систематизацию продаж, ценообразования, логистики, продвижения и работы с федеральными сетями. Компания заявляет рост 50%+ в год.",
+      "Signal Date": "2026-08-01",
+      "Signal Source": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
+      "Owner": "Брыкина Ирина Викторовна 100%",
+      "CEO": "Брыкина Ирина Викторовна",
+      "LPR": "Брыкина Ирина Викторовна",
+      "LPR Role": "Генеральный директор и единственный учредитель ООО «НПК «ШАРМ КЛЕО КОСМЕТИК» по актуальному 2026 юридическому профилю",
+      "Primary Phone": "+7 (918) 211-49-84",
+      "Primary Email": "info@charmcleo.biz",
+      "HH Contact": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
+      "Contact Form": "https://charmcleo.biz/",
+      "Contact Type": "Official/company phone; corporate email; current employer/job route",
+      "Contact Source": "Current company profile/official website and August 2026 vacancy",
+      "Consulting Hypothesis": "Систематизировать многоканальный коммерческий контур производителя FMCG: P&L по каналам, e-com/retail/СТМ, pricing/promo, OOS и forecast, CRM/KPI, переговорный контур с федеральными сетями и масштабирование без потери маржи.",
+      "contacts": [
+        {
+          "value": "+7 (918) 211-49-84",
+          "channel": "Phone",
+          "type": "Corporate",
+          "source": "Current company profile linked to official brand",
+          "url": "https://krasnodar.cataloxy.ru/firms/charmcleo.biz.htm",
+          "is_lpr": false,
+          "notes": "Company contact route"
+        },
+        {
+          "value": "info@charmcleo.biz",
+          "channel": "Email",
+          "type": "Corporate",
+          "source": "Current public company directory linked to official website",
+          "url": "https://mir23.ru/firms/charmcleo_set_magazinov_kosmetiki/",
+          "is_lpr": false,
+          "notes": "Corporate email"
+        },
+        {
+          "value": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
+          "channel": "JobBoard",
+          "type": "Employer route",
+          "source": "Current August 2026 vacancy",
+          "url": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
+          "is_lpr": false,
+          "notes": "Current commercial director employer route"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SCALE",
+          "claim": "ООО «НПК «ШАРМ КЛЕО КОСМЕТИК», ИНН 2312250641, ОГРН 1162375038121, действует на 24.07.2026; CEO/учредитель Брыкина И.В.; 15 сотрудников по актуальному профилю.",
+          "url": "https://companies.rbc.ru/id/1162375038121-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchnaya-proizvodstvennaya-kompaniya-sharm-kleo-kosmetik/",
+          "source": "Current 2026 legal profile"
+        },
+        {
+          "type": "BRAND_LEGAL",
+          "claim": "Профиль бренда CharmCleo связывает официальный домен charmcleo.biz с ООО «НПК «Шарм Клео Косметик», ИНН 2312250641, и собственным производством в Краснодаре.",
+          "url": "https://krasnodar.cataloxy.ru/firms/charmcleo.biz.htm",
+          "source": "Current company profile linked to official website"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Актуальный 2026 профиль подтверждает Брыкину Ирину Викторовну как генерального директора и единственного учредителя ООО.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1162375038121/",
+          "source": "Current 2026 legal profile"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "1.08.2026 опубликована/актуализирована вакансия коммерческого директора CharmCleo e-com/ритейл/СТМ; компания заявляет рост 50%+ в год и необходимость систематизировать коммерческие процессы.",
+          "url": "https://dreamjob.ru/employers/2525085/vakansii/132310235",
+          "source": "Current August 2026 vacancy"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Практический маршрут подтверждён через корпоративный телефон, info@charmcleo.biz и текущую вакансию работодателя.",
+          "url": "https://krasnodar.cataloxy.ru/firms/charmcleo.biz.htm",
+          "source": "Current company profile/official brand route"
         }
       ]
     }
