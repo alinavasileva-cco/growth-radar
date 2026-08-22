@@ -1,56 +1,94 @@
 {
-  "run_id": "N5K-20260823-334",
-  "updated_at": "2026-08-23T03:18:00+05:00",
+  "run_id": "N5K-20260823-335",
+  "updated_at": "2026-08-23T03:43:00+05:00",
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 5,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
+    "discovered": 2,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 3,
-    "excluded": 20
+    "duplicates": 0,
+    "excluded": 1
   },
-  "notes": "RUN 334 continues from verified physical baseline 254/254 after completed RUN 333. Twenty-four distinct fresh employer/company signals were individually screened from current August 2026 sales-leadership vacancy streams and company/legal sources. Three were already-known or repeated signals, and weak/ambiguous candidates were dropped before deep-check. RS-Detal passed current legal status, current size, direct S1 sales-leadership signal, owner/LPR and practical current-employer vacancy contact-route gates. The public rs-detal.ru storefront is operated by another legal entity, so its phone/email are deliberately not used for this lead; brand-to-legal is instead supported by the RS DETAL trademark registered to ООО РС-ДЕТАЛЬ and the current employer vacancy. Final physical integration guard must perform decisive dedup against canonical master by INN/OGRN/legal entity/brand+domain. No outreach.",
+  "notes": "RUN 335 continues from verified physical baseline 255/255 after completed RUN 334. Two distinct fresh candidates were actually screened in this recovery window; one ambiguous brand-to-legal candidate was dropped before deep-check. LS LIGHTING / ООО ЛС-ЛАЙТИНГ passed the physical-master dedup guard by INN/OGRN/legal name, current legal status, current size, direct S1 dealer-network growth signal, owner/CEO/LPR and a practical current-employer vacancy route. The current public website footer also references the owner's IP, so storefront phone/email are deliberately not used as the decisive contact route for the ООО lead; the fresh vacancy explicitly names ООО ЛС-ЛАЙТИНГ. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0401",
-      "Brand": "РС-Деталь / RS Detal",
-      "Legal Name": "ООО «РС-ДЕТАЛЬ»",
-      "INN": "5256186890",
-      "OGRN/OGRNIP": "1205200003062",
-      "Region": "Нижегородская область",
-      "City": "Нижний Новгород",
-      "Segment": "B2B автозапчасти / коммерческий и грузовой транспорт",
-      "Website": "",
-      "Revenue/Scale": "Действующее частное ООО; 7 сотрудников по актуальному профилю, выручка 176,321 млн руб. за 2024 год; собственный зарегистрированный товарный знак RS DETAL и развиваемый B2B-контур продаж автозапчастей для коммерческого транспорта.",
+      "Lead ID": "N5K-0402",
+      "Brand": "LS LIGHTING / ЛС-Лайтинг",
+      "Legal Name": "ООО «ЛС-ЛАЙТИНГ»",
+      "INN": "9709023276",
+      "OGRN/OGRNIP": "1187746105821",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Архитектурное и ландшафтное освещение / B2B дилерская сеть",
+      "Website": "https://ls-lighting.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 58,759 млн руб. за 2025 год против 44,580 млн руб. за 2024 год; бренд реализовал более 2000 проектов и развивает B2B/дилерский канал архитектурного и ландшафтного освещения.",
       "Signal Level": "S1",
-      "Signal Summary": "Свежая вакансия от 17 августа 2026: компания ищет первого Руководителя отдела продаж для увеличения прибыли, построения регулярной системы работы отдела, аналитики, планирования и развития B2B-продаж автозапчастей.",
-      "Signal Date": "2026-08-17",
-      "Signal Source": "https://dreamjob.ru/employers/209696/vakansii/136329533",
-      "Owner": "Гудкова Мария Дмитриевна — 100% участник ООО «РС-ДЕТАЛЬ»",
-      "CEO": "Гудкова Мария Дмитриевна — директор",
-      "LPR": "Гудкова Мария Дмитриевна",
-      "LPR Role": "Директор / собственник 100%",
+      "Signal Summary": "Свежая вакансия от 10 августа 2026: ООО «ЛС-Лайтинг» ищет директора по развитию дилерской сети для системного построения дилерского канала с нуля, привлечения партнёров, открытия новых точек и роста оборота, включая Беларусь.",
+      "Signal Date": "2026-08-10",
+      "Signal Source": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
+      "Owner": "Татаров Андрей Евгеньевич — владелец ООО «ЛС-ЛАЙТИНГ»",
+      "CEO": "Татаров Андрей Евгеньевич — генеральный директор",
+      "LPR": "Татаров Андрей Евгеньевич",
+      "LPR Role": "Владелец / Генеральный директор",
       "Primary Phone": "",
       "Primary Email": "",
-      "HH Contact": "https://dreamjob.ru/employers/209696/vakansii/136329533",
+      "HH Contact": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
       "Contact Form": "",
       "Contact Type": "Current employer vacancy / HH-linked application route",
-      "Contact Source": "Current employer vacancy listing with HH quick-apply route",
-      "Consulting Hypothesis": "Построение первого полноценного коммерческого контура: структура отдела, CRM-воронка, KPI и мотивация, сегментация B2B-клиентов, план-факт, маржинальность, региональные продажи и 90-дневный план роста.",
+      "Contact Source": "DreamJob current employer vacancy naming ООО «ЛС-ЛАЙТИНГ»",
+      "Consulting Hypothesis": "Построение управляемой дилерской модели: сегментация и экономика партнёров, pipeline привлечения дилеров, KPI и мотивация, территориальная модель, контроль активных точек и 90-дневный план роста дилерского оборота.",
       "contacts": [
-        {"value":"https://dreamjob.ru/employers/209696/vakansii/136329533","channel":"Job board","type":"Current employer vacancy / HH-linked route","source":"DreamJob / HeadHunter-linked employer vacancy","url":"https://dreamjob.ru/employers/209696/vakansii/136329533","is_lpr":false,"notes":"Fresh current employer route; no unrelated storefront contacts used"}
+        {
+          "value": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
+          "channel": "Job board",
+          "type": "Current employer vacancy / HH-linked route",
+          "source": "DreamJob current employer vacancy",
+          "url": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
+          "is_lpr": false,
+          "notes": "Fresh 10 Aug 2026 dealer-development vacancy explicitly naming ООО ЛС-ЛАЙТИНГ; storefront contacts not used because current footer references owner's IP"
+        }
       ],
       "evidence": [
-        {"type":"LEGAL","claim":"ООО «РС-ДЕТАЛЬ», ИНН 5256186890, ОГРН 1205200003062, действует; директор и 100% учредитель Гудкова Мария Дмитриевна.","url":"https://companies.rbc.ru/id/1205200003062-obschestvo-s-ogranichennoj-otvetstvennostyu-rs-detal/","source":"Current legal/company profile checked August 2026"},
-        {"type":"SCALE_CURRENT","claim":"Актуальный профиль указывает 7 сотрудников; финансовая отчетность показывает 176,321 млн руб. выручки за 2024 год.","url":"https://otc.ru/organization/all/1205200003062/","source":"Current company profile checked June-August 2026"},
-        {"type":"BRAND_LEGAL","claim":"За ООО «РС-ДЕТАЛЬ» зарегистрирован товарный знак RS DETAL; текущая работодательская вакансия использует бренд РС-Деталь для B2B-продаж автозапчастей.","url":"https://companies.rbc.ru/id/1205200003062-obschestvo-s-ogranichennoj-otvetstvennostyu-rs-detal/","source":"Trademark/legal profile plus current employer vacancy"},
-        {"type":"OWNER_LPR","claim":"Гудкова Мария Дмитриевна является директором и 100% учредителем ООО «РС-ДЕТАЛЬ».","url":"https://companies.rbc.ru/id/1205200003062-obschestvo-s-ogranichennoj-otvetstvennostyu-rs-detal/","source":"Current legal/company profile"},
-        {"type":"SIGNAL","claim":"17 August 2026 vacancy says RS-Detal is hiring its first Head of Sales to increase profit through a properly built sales department, regular management, analytics and B2B sales development.","url":"https://dreamjob.ru/employers/209696/vakansii/136329533","source":"Fresh current employer vacancy"},
-        {"type":"CONTACT","claim":"Current employer vacancy provides an active HH-linked application/contact route. Unrelated storefront contacts are intentionally excluded.","url":"https://dreamjob.ru/employers/209696/vakansii/136329533","source":"Current employer vacancy"}
+        {
+          "type": "LEGAL",
+          "claim": "ООО «ЛС-ЛАЙТИНГ», ИНН 9709023276, ОГРН 1187746105821, действует; генеральный директор Татаров Андрей Евгеньевич.",
+          "url": "https://saby.ru/profile/9709023276-770901001",
+          "source": "Saby current company profile, status checked 11 Aug 2026"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "Бухгалтерская отчетность за 2025 год показывает выручку 58,759 млн руб.; за 2024 год — 44,580 млн руб.",
+          "url": "https://saby.ru/profile/9709023276-770901001",
+          "source": "Saby current financial profile"
+        },
+        {
+          "type": "BRAND_LEGAL",
+          "claim": "Свежая работодательская вакансия прямо называет ООО «ЛС-Лайтинг»; технические материалы бренда также маркированы ООО «ЛС-ЛАЙТИНГ» с корпоративным доменом ls-lighting.ru.",
+          "url": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
+          "source": "Current employer vacancy plus brand technical materials"
+        },
+        {
+          "type": "OWNER_LPR",
+          "claim": "Татаров Андрей Евгеньевич указан владельцем и генеральным директором ООО «ЛС-ЛАЙТИНГ» в актуальном профиле компании.",
+          "url": "https://saby.ru/profile/9709023276-770901001",
+          "source": "Saby current company profile"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "10 August 2026 vacancy seeks a dealer-network development director to systematically build the dealer channel from scratch, add partners and points, develop Belarus and grow dealer turnover.",
+          "url": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
+          "source": "Fresh current employer vacancy"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Current employer vacancy provides an active HH-linked response/contact route for ООО «ЛС-ЛАЙТИНГ»; storefront phone/email are not used as decisive ООО contacts because the current website footer references the owner's IP.",
+          "url": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
+          "source": "Current employer vacancy"
+        }
       ]
     }
   ]
