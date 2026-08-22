@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0396,N5K-0396-C01,К.Центр / Комфорт Центр,5257164850,,Корпоративный маршрут,8 (800) 250-27-35,Phone,Corporate,Official website,https://comfort-center.com/kontakty/,NO,HIGH,2026-08-22,Federal corporate phone,N5K-20260822-330,new_5000
+N5K-0396,N5K-0396-C02,К.Центр / Комфорт Центр,5257164850,,Корпоративный маршрут,info@comfort-center.com,Email,Corporate,Official website,https://comfort-center.com/kontakty/,NO,HIGH,2026-08-22,Corporate email,N5K-20260822-330,new_5000
+N5K-0396,N5K-0396-C03,К.Центр / Комфорт Центр,5257164850,,Корпоративный маршрут,https://comfort-center.com/kontakty/,WebForm,Official contact route,Official website,https://comfort-center.com/kontakty/,NO,HIGH,2026-08-22,Official contact page and callback form,N5K-20260822-330,new_5000
