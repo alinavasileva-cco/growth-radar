@@ -1,38 +1,39 @@
 {
-  "run_id": "N5K-20260822-326",
+  "run_id": "N5K-20260822-327",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T20:02:43+05:00",
+  "updated_at": "2026-08-22T21:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 245,
-    "current_contactable_count": 245,
-    "progress_added": 245,
-    "remaining": 4755
+    "current_canonical_count": 247,
+    "current_contactable_count": 247,
+    "progress_added": 247,
+    "remaining": 4753
   },
   "funnel": {
-    "discovered": 20,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
+    "discovered": 42,
+    "fast_gate_passed": 8,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
     "duplicates": 4,
-    "excluded": 15
+    "excluded": 36
   },
   "qualified_companies": [
-    "Окна Столицы"
+    "IGM / ИГРОФЕСТ",
+    "FTL-cargo"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "245_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "245_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "247_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "247_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
