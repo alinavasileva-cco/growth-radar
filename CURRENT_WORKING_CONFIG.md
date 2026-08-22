@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-22T08:02:59+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260822-312`  
+**Версия:** 2026-08-22T09:18:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260822-313`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **225 / 225**  
+**Физически подтверждённый canonical/contactable:** **226 / 226**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4775**  
+**Осталось:** **4774**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **225 / 225**;
+- physical canonical/contactable count: **226 / 226**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260822-312`.
+- последний завершённый RUN: `N5K-20260822-313`.
 
 ## RUN 307 — завершён
 
@@ -95,6 +95,5 @@ Canonical/contactable: 224/224. Added: 2. Raw 22; fast 5; size 3; legal 2; signa
 ## Latest verified run N5K-20260822-312
 Canonical/contactable: 225/225. Added: 1. Raw 20; fast 5; size 2; legal 1; signal 1; LPR 1; contact 1; qualified 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260822-313
-Canonical/contactable: 226/226. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: 226/226. Added: 1. Raw 24; fast 5; size 2; legal 1; signal 1; LPR 1; contact 1; qualified 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
