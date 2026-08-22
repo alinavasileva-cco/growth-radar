@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0374,N5K-0374-C01,Доломит / Завод Доломит,2314022320,,Корпоративный маршрут,+7 (952) 812-36-55,Phone,Corporate wholesale,Official Dolomit website,https://dolomitzavod.ru/,NO,HIGH,2026-08-22,Официальный телефон оптового отдела,N5K-20260822-315,new_5000
+N5K-0374,N5K-0374-C02,Доломит / Завод Доломит,2314022320,,Корпоративный маршрут,pvxshifer@mail.ru,Email,Corporate,Official Dolomit website,https://dolomitzavod.ru/,NO,HIGH,2026-08-22,Официальный корпоративный email,N5K-20260822-315,new_5000
+N5K-0374,N5K-0374-C03,Доломит / Завод Доломит,2314022320,,Корпоративный маршрут,https://hh.ru/employer/3809230,Job board,Current employer route,HH employer profile,https://hh.ru/employer/3809230,NO,HIGH,2026-08-22,Актуальный маршрут работодателя,N5K-20260822-315,new_5000

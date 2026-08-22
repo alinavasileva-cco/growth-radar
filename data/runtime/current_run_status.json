@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260822-314",
+  "run_id": "N5K-20260822-315",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-22T10:09:00+05:00",
+  "updated_at": "2026-08-22T11:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 227,
-    "current_contactable_count": 227,
-    "progress_added": 227,
-    "remaining": 4773
+    "current_canonical_count": 228,
+    "current_contactable_count": 228,
+    "progress_added": 228,
+    "remaining": 4772
   },
   "funnel": {
-    "discovered": 28,
-    "fast_gate_passed": 6,
+    "discovered": 34,
+    "fast_gate_passed": 7,
     "size_check_passed": 4,
     "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 2,
-    "excluded": 25
+    "duplicates": 7,
+    "excluded": 26
   },
   "qualified_companies": [
-    "N1Sport"
+    "Доломит / Завод Доломит"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "227_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "227_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "228_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "228_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
