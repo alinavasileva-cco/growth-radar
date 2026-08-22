@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260823-336",
+  "run_id": "N5K-20260823-337",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T04:18:00+05:00",
+  "updated_at": "2026-08-23T04:40:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 257,
-    "current_contactable_count": 257,
-    "progress_added": 257,
-    "remaining": 4743
+    "current_canonical_count": 258,
+    "current_contactable_count": 258,
+    "progress_added": 258,
+    "remaining": 4742
   },
   "funnel": {
-    "discovered": 28,
-    "fast_gate_passed": 5,
-    "size_check_passed": 3,
+    "discovered": 17,
+    "fast_gate_passed": 4,
+    "size_check_passed": 2,
     "legal_match_passed": 2,
-    "signal_confirmed": 1,
+    "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 7,
-    "excluded": 20
+    "duplicates": 0,
+    "excluded": 16
   },
   "qualified_companies": [
-    "TÜLENEVA / Тюленева"
+    "Миросад / Mirosad"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "257_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "257_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "258_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "258_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
