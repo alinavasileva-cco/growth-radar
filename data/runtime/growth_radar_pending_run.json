@@ -1,93 +1,111 @@
 {
-  "run_id": "N5K-20260823-335",
-  "updated_at": "2026-08-23T03:43:00+05:00",
+  "run_id": "N5K-20260823-336",
+  "updated_at": "2026-08-23T04:18:00+05:00",
   "funnel": {
-    "discovered": 2,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
+    "discovered": 28,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 0,
-    "excluded": 1
+    "duplicates": 7,
+    "excluded": 20
   },
-  "notes": "RUN 335 continues from verified physical baseline 255/255 after completed RUN 334. Two distinct fresh candidates were actually screened in this recovery window; one ambiguous brand-to-legal candidate was dropped before deep-check. LS LIGHTING / ООО ЛС-ЛАЙТИНГ passed the physical-master dedup guard by INN/OGRN/legal name, current legal status, current size, direct S1 dealer-network growth signal, owner/CEO/LPR and a practical current-employer vacancy route. The current public website footer also references the owner's IP, so storefront phone/email are deliberately not used as the decisive contact route for the ООО lead; the fresh vacancy explicitly names ООО ЛС-ЛАЙТИНГ. No outreach.",
+  "notes": "RUN 336 continues from verified physical baseline 256/256 after completed RUN 335. 28 distinct company/employer signals were actually inspected across current August 2026 job-board and industry discovery results; seven were known recent physical-master duplicates (including Petro Building Systems, ЦКРИА, Окна Столицы, CharmCleo, iSmart, Ленинградские кухни and СОФИС) and were not deep-checked again. TÜLENEVA / ИП Тюленева Ирина Владимировна passed preliminary repository dedup by INN/brand, current legal status, current operating scale, fresh B2B sales-leadership signal, owner/LPR and practical company contact routes. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0402",
-      "Brand": "LS LIGHTING / ЛС-Лайтинг",
-      "Legal Name": "ООО «ЛС-ЛАЙТИНГ»",
-      "INN": "9709023276",
-      "OGRN/OGRNIP": "1187746105821",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Архитектурное и ландшафтное освещение / B2B дилерская сеть",
-      "Website": "https://ls-lighting.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 58,759 млн руб. за 2025 год против 44,580 млн руб. за 2024 год; бренд реализовал более 2000 проектов и развивает B2B/дилерский канал архитектурного и ландшафтного освещения.",
+      "Lead ID": "N5K-0403",
+      "Brand": "TÜLENEVA / Тюленева",
+      "Legal Name": "ИП Тюленева Ирина Владимировна",
+      "INN": "645293044535",
+      "OGRN/OGRNIP": "321645100060302",
+      "Region": "Саратовская область",
+      "City": "Саратов",
+      "Segment": "Швейное производство / корпоративный мерч / B2B",
+      "Website": "https://tuleneva.com/",
+      "Revenue/Scale": "Действующий ИП; актуальный отраслевой профиль 2026 указывает размер компании 50–100 сотрудников; производственная мощность бренда — свыше 50 000 изделий ежемесячно; компания работает с корпоративным мерчем, брендированной одеждой и текстильной упаковкой.",
       "Signal Level": "S1",
-      "Signal Summary": "Свежая вакансия от 10 августа 2026: ООО «ЛС-Лайтинг» ищет директора по развитию дилерской сети для системного построения дилерского канала с нуля, привлечения партнёров, открытия новых точек и роста оборота, включая Беларусь.",
-      "Signal Date": "2026-08-10",
-      "Signal Source": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
-      "Owner": "Татаров Андрей Евгеньевич — владелец ООО «ЛС-ЛАЙТИНГ»",
-      "CEO": "Татаров Андрей Евгеньевич — генеральный директор",
-      "LPR": "Татаров Андрей Евгеньевич",
-      "LPR Role": "Владелец / Генеральный директор",
-      "Primary Phone": "",
-      "Primary Email": "",
-      "HH Contact": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
+      "Signal Summary": "Свежая августовская вакансия 2026: TÜLENEVA ищет руководителя отдела продаж B2B / корпоративного мерча для управления и развития B2B-продаж собственного производства.",
+      "Signal Date": "2026-08-17",
+      "Signal Source": "https://2fru.jobvk.com/saratov/sberbank",
+      "Owner": "Тюленева Ирина Владимировна — индивидуальный предприниматель и владелец бизнеса",
+      "CEO": "Тюленева Ирина Владимировна — ИП / руководитель бизнеса",
+      "LPR": "Тюленева Ирина Владимировна",
+      "LPR Role": "Собственник / ИП",
+      "Primary Phone": "+7 (495) 266-68-47",
+      "Primary Email": "sales@tuleneva.com",
+      "HH Contact": "https://2fru.jobvk.com/saratov/sberbank",
       "Contact Form": "",
-      "Contact Type": "Current employer vacancy / HH-linked application route",
-      "Contact Source": "DreamJob current employer vacancy naming ООО «ЛС-ЛАЙТИНГ»",
-      "Consulting Hypothesis": "Построение управляемой дилерской модели: сегментация и экономика партнёров, pipeline привлечения дилеров, KPI и мотивация, территориальная модель, контроль активных точек и 90-дневный план роста дилерского оборота.",
+      "Contact Type": "Corporate phone/email + current employer vacancy route",
+      "Contact Source": "ProductCenter/Fabricators current company profiles and current August 2026 employer vacancy",
+      "Consulting Hypothesis": "Систематизация B2B-продаж корпоративного мерча: сегментация клиентов, pipeline и CRM, unit economics по типам заказов, KPI/мотивация отдела, ключевые аккаунты и 90-дневный план роста B2B-выручки.",
       "contacts": [
         {
-          "value": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
-          "channel": "Job board",
-          "type": "Current employer vacancy / HH-linked route",
-          "source": "DreamJob current employer vacancy",
-          "url": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
+          "value": "+7 (495) 266-68-47",
+          "channel": "Phone",
+          "type": "Corporate sales phone",
+          "source": "ProductCenter current company profile",
+          "url": "https://productcenter.ru/producers/31714/shvieinaia-fabrika-irs-tm",
           "is_lpr": false,
-          "notes": "Fresh 10 Aug 2026 dealer-development vacancy explicitly naming ООО ЛС-ЛАЙТИНГ; storefront contacts not used because current footer references owner's IP"
+          "notes": "Corporate company route"
+        },
+        {
+          "value": "sales@tuleneva.com",
+          "channel": "Email",
+          "type": "Corporate sales email",
+          "source": "ProductCenter current company profile",
+          "url": "https://productcenter.ru/producers/31714/shvieinaia-fabrika-irs-tm",
+          "is_lpr": false,
+          "notes": "Corporate sales route"
+        },
+        {
+          "value": "https://2fru.jobvk.com/saratov/sberbank",
+          "channel": "Job board",
+          "type": "Current employer vacancy route",
+          "source": "JobVK current August 2026 listing",
+          "url": "https://2fru.jobvk.com/saratov/sberbank",
+          "is_lpr": false,
+          "notes": "Current B2B Head of Sales vacancy under employer Тюленева Ирина Владимировна"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ЛС-ЛАЙТИНГ», ИНН 9709023276, ОГРН 1187746105821, действует; генеральный директор Татаров Андрей Евгеньевич.",
-          "url": "https://saby.ru/profile/9709023276-770901001",
-          "source": "Saby current company profile, status checked 11 Aug 2026"
+          "claim": "ИП Тюленева Ирина Владимировна, ИНН 645293044535, ОГРНИП 321645100060302, действует в августе 2026 года.",
+          "url": "https://saby.ru/profile/645293044535",
+          "source": "Saby current IP profile"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "Бухгалтерская отчетность за 2025 год показывает выручку 58,759 млн руб.; за 2024 год — 44,580 млн руб.",
-          "url": "https://saby.ru/profile/9709023276-770901001",
-          "source": "Saby current financial profile"
+          "claim": "Актуальный отраслевой профиль указывает 50–100 сотрудников; производственная мощность TÜLENEVA превышает 50 000 изделий в месяц.",
+          "url": "https://saratov.cataloxy.ru/firms/masters.top.htm",
+          "source": "Cataloxy current company profile; ProductCenter/Fabricators production profile"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Свежая работодательская вакансия прямо называет ООО «ЛС-Лайтинг»; технические материалы бренда также маркированы ООО «ЛС-ЛАЙТИНГ» с корпоративным доменом ls-lighting.ru.",
-          "url": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
-          "source": "Current employer vacancy plus brand technical materials"
+          "claim": "Текущие производственные каталоги прямо связывают бренд TÜLENEVA с ИП Тюленева Ирина Владимировна, ИНН 645293044535, ОГРНИП 321645100060302.",
+          "url": "https://fabricators.ru/proizvoditel/masters",
+          "source": "Fabricators current manufacturer profile updated 27 Apr 2026"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Татаров Андрей Евгеньевич указан владельцем и генеральным директором ООО «ЛС-ЛАЙТИНГ» в актуальном профиле компании.",
-          "url": "https://saby.ru/profile/9709023276-770901001",
-          "source": "Saby current company profile"
+          "claim": "Тюленева Ирина Владимировна является зарегистрированным индивидуальным предпринимателем и непосредственным владельцем бизнеса.",
+          "url": "https://saby.ru/profile/645293044535",
+          "source": "Saby current IP profile"
         },
         {
           "type": "SIGNAL",
-          "claim": "10 August 2026 vacancy seeks a dealer-network development director to systematically build the dealer channel from scratch, add partners and points, develop Belarus and grow dealer turnover.",
-          "url": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
-          "source": "Fresh current employer vacancy"
+          "claim": "В августе 2026 TÜLENEVA ищет руководителя отдела продаж B2B / корпоративного мерча для развития продаж собственного производства.",
+          "url": "https://2fru.jobvk.com/saratov/sberbank",
+          "source": "Current August 2026 JobVK employer listing"
         },
         {
           "type": "CONTACT",
-          "claim": "Current employer vacancy provides an active HH-linked response/contact route for ООО «ЛС-ЛАЙТИНГ»; storefront phone/email are not used as decisive ООО contacts because the current website footer references the owner's IP.",
-          "url": "https://dreamjob.ru/employers/5920089/vakansii/136098839",
-          "source": "Current employer vacancy"
+          "claim": "Актуальный производственный профиль публикует корпоративные маршруты +7 (495) 266-68-47 и sales@tuleneva.com; текущая вакансия даёт дополнительный employer route.",
+          "url": "https://productcenter.ru/producers/31714/shvieinaia-fabrika-irs-tm",
+          "source": "ProductCenter current company profile"
         }
       ]
     }
