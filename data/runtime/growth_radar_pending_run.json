@@ -1,10 +1,6 @@
 {
   "run_id": "N5K-20260823-348",
-  "campaign_id": "new_5000",
-  "status": "PENDING_INTEGRATION",
   "updated_at": "2026-08-23T11:40:39+05:00",
-  "baseline_canonical_count": 269,
-  "baseline_contactable_count": 269,
   "funnel": {
     "discovered": 4,
     "fast_gate_passed": 2,
@@ -17,51 +13,95 @@
     "duplicates": 0,
     "excluded": 3
   },
+  "notes": "RUN 348 started from verified physical baseline RUN 347: 269/269, integrity PASS, orphan contacts/evidence 0/0. Physical leads_master was read before staging; INN 4253004412 and OGRN 1114253005404 were absent. Four named candidates were individually reviewed in this run. 25 МИКРОН was not selected because current scale is above the preferred active range and the checked signal was weaker; Торговый дом Дача and ИНБРИГ did not yield a complete verified legal+scale+signal+LPR+contact package in this cycle. ООО «СОЛНЕЧНЫЕ ДАРЫ» passed current legal, 2025 scale, fresh S1 expansion signal, owner/CEO LPR and current contact-route checks. The 150–200 raw target was not reached and is not claimed. No outreach.",
   "qualified_companies": [
     {
-      "lead_id": "N5K-0416",
-      "brand": "Солнечные дары",
-      "legal_name": "ООО «СОЛНЕЧНЫЕ ДАРЫ»",
-      "inn": "4253004412",
-      "ogrn": "1114253005404",
-      "legal_status": "Действует",
-      "region": "Кемеровская область — Кузбасс",
-      "city": "Новокузнецк",
-      "segment": "FMCG / производство снеков / продукты питания / B2B и retail",
-      "website": "https://солнечные-дары.рф/",
-      "revenue_scale": "Выручка 118 279 000 ₽ за 2025 год; чистая прибыль 160 000 ₽; ССЧ 27; действующее производственное ООО с 5 зарегистрированными торговыми марками.",
-      "signal_level": "S1",
-      "signal_summary": "10.08.2026 компания открыла вакансию Директора по развитию бизнеса с прямой задачей обеспечить устойчивое масштабирование сети ресторанов быстрого питания, привлечь инвестиционный капитал и реализовать территориальную и операционную экспансию; задачи включают стратегию масштабирования, бизнес-план и инвестиционную стратегию.",
-      "signal_date": "2026-08-10",
-      "signal_source": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
-      "owner": "Шарыпов Олег Николаевич — учредитель 100%",
-      "ceo": "Шарыпов Олег Николаевич — генеральный директор",
-      "lpr": "Шарыпов Олег Николаевич",
-      "lpr_role": "Генеральный директор / собственник 100%",
-      "primary_phone": "+7 (3846) 68-20-14",
-      "primary_email": "yanina@tk-soldar.ru",
-      "hh_contact": "https://novokuznetsk.hh.ru/vacancies/strateg/polnaya_zanyatost",
-      "contact_form": "https://солнечные-дары.рф/",
-      "contact_type": "Corporate phone; corporate email; current employer vacancy route; official website",
-      "contact_source": "PRODEXPO-2026 exhibitor profile; ProductCenter company profile; current DreamJob/HH vacancy",
-      "number_of_contacts_found": 4,
-      "consulting_hypothesis": "Систематизация масштабирования FMCG/food-бизнеса и новой ресторанной сети: экономика территориальной экспансии, инвестиционная модель, P&L по форматам и каналам, CRM/KPI, коммерческий operating model и 90-дневный план управляемого роста.",
-      "final_quick_status": "МОЖНО СВЯЗЫВАТЬСЯ"
+      "Lead ID": "N5K-0416",
+      "Brand": "Солнечные дары",
+      "Legal Name": "ООО «СОЛНЕЧНЫЕ ДАРЫ»",
+      "INN": "4253004412",
+      "OGRN/OGRNIP": "1114253005404",
+      "Region": "Кемеровская область — Кузбасс",
+      "City": "Новокузнецк",
+      "Segment": "FMCG / производство снеков / продукты питания / B2B / retail",
+      "Website": "http://солнечные-дары.рф",
+      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 118,279 млн ₽, чистая прибыль 160 тыс. ₽, ССЧ 27. Компания владеет 5 торговыми марками; ПРОДЭКСПО-2026 подтверждает производство и оптовую торговлю снеками, а отраслевой источник 2026 года — поставки в 13 регионов России и на экспорт.",
+      "Signal Level": "S1",
+      "Signal Summary": "10.08.2026 компания открыла вакансию Директора по развитию бизнеса с прямой задачей обеспечить устойчивое масштабирование сети ресторанов быстрого питания через привлечение инвестиционного капитала и территориальную/операционную экспансию; среди задач — стратегия масштабирования, план развития бизнеса и инвестиционная стратегия.",
+      "Signal Date": "2026-08-10",
+      "Signal Source": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
+      "Owner": "Шарыпов Олег Николаевич — учредитель 100%",
+      "CEO": "Шарыпов Олег Николаевич — генеральный директор",
+      "LPR": "Шарыпов Олег Николаевич",
+      "LPR Role": "Генеральный директор / собственник 100%",
+      "Primary Phone": "+7 3846-68-20-14",
+      "Primary Email": "yanina@tk-soldar.ru",
+      "HH Contact": "https://novokuznetsk.hh.ru/vacancies/strateg/polnaya_zanyatost",
+      "Contact Form": "http://солнечные-дары.рф",
+      "Contact Type": "Официальный корпоративный телефон + email + сайт + текущая employer vacancy route",
+      "Contact Source": "ПРОДЭКСПО-2026 official exhibitor catalog + current DreamJob/HH vacancy",
+      "Consulting Hypothesis": "Систематизация масштабирования FMCG/food-бизнеса и новой ресторанной сети: экономика территориальной экспансии, инвестиционная модель, P&L по форматам и каналам, CRM/KPI, коммерческий operating model и 90-дневный план управляемого роста.",
+      "contacts": [
+        {
+          "value": "+7 3846-68-20-14",
+          "channel": "Phone",
+          "type": "Official corporate route",
+          "source": "ПРОДЭКСПО-2026 official exhibitor catalog",
+          "url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/exhibitors/379218?stand=6E070",
+          "is_lpr": false,
+          "notes": "Корпоративный телефон, опубликованный в официальном каталоге выставки 2026"
+        },
+        {
+          "value": "yanina@tk-soldar.ru",
+          "channel": "Email",
+          "type": "Official corporate route",
+          "source": "ПРОДЭКСПО-2026 official exhibitor catalog",
+          "url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/exhibitors/379218?stand=6E070",
+          "is_lpr": false,
+          "notes": "Корпоративный email из официального каталога выставки 2026"
+        },
+        {
+          "value": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
+          "channel": "Vacancy",
+          "type": "Current hiring route",
+          "source": "DreamJob / current vacancy",
+          "url": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
+          "is_lpr": false,
+          "notes": "Актуальная вакансия Директора по развитию бизнеса от 10.08.2026"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «СОЛНЕЧНЫЕ ДАРЫ», ИНН 4253004412, ОГРН 1114253005404, действует; генеральный директор и единственный учредитель — Шарыпов Олег Николаевич.",
+          "url": "https://companies.rbc.ru/id/1114253005404-ooo-solnechnyie-daryi/",
+          "source": "РБК Компании / актуальные данные ЕГРЮЛ и 2025 отчетность"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "За 2025 год выручка 118,279 млн ₽, чистая прибыль 160 тыс. ₽, ССЧ 27; компания действует. Официальный каталог ПРОДЭКСПО-2026 подтверждает производство и оптовую торговлю снеками.",
+          "url": "https://saby.ru/profile/4253004412-421701001",
+          "source": "Saby / 2025 financials + ПРОДЭКСПО-2026"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "10.08.2026 компания ищет Директора по развитию бизнеса для устойчивого масштабирования сети ресторанов быстрого питания, привлечения инвестиций и территориальной/операционной экспансии.",
+          "url": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
+          "source": "DreamJob / current vacancy, 10.08.2026"
+        },
+        {
+          "type": "LPR",
+          "claim": "Шарыпов Олег Николаевич — действующий генеральный директор и единственный учредитель (100%) ООО «СОЛНЕЧНЫЕ ДАРЫ».",
+          "url": "https://companies.rbc.ru/id/1114253005404-ooo-solnechnyie-daryi/",
+          "source": "РБК Компании / ЕГРЮЛ"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный каталог ПРОДЭКСПО-2026 публикует телефон +7 3846-68-20-14, email yanina@tk-soldar.ru и сайт солнечные-дары.рф; текущая вакансия даёт дополнительный employer route.",
+          "url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/exhibitors/379218?stand=6E070",
+          "source": "Экспоцентр / ПРОДЭКСПО-2026 official exhibitor catalog"
+        }
+      ]
     }
-  ],
-  "excluded_candidates": [
-    {
-      "name": "25 микрон / ООО «25 МИКРОН»",
-      "reason": "Не выбран в RUN 348: масштаб выше предпочтительного диапазона и в текущей проверке не подтверждён столь же прямой свежий коммерческий сигнал, как у qualified-кандидата."
-    },
-    {
-      "name": "Торговый дом Дача",
-      "reason": "Не прошёл deep-check в этом RUN: полного подтверждённого набора legal + scale + current signal + LPR + contact route не собрано."
-    },
-    {
-      "name": "ИНБРИГ",
-      "reason": "Не прошёл deep-check в этом RUN: полного подтверждённого набора legal + scale + current signal + LPR + contact route не собрано."
-    }
-  ],
-  "notes": "Baseline перед RUN: physical canonical/contactable 269/269 после RUN 347, integrity PASS, orphan contacts/evidence 0/0. Физический leads_master прочитан полностью; ИНН 4253004412 и ОГРН 1114253005404 в master отсутствуют до записи RUN 348. GitHub code search по ИНН также не выявил индексированной записи, но финальным dedup-gate остаётся physical master/integration guard. Для ООО «СОЛНЕЧНЫЕ ДАРЫ» подтверждены: действующее юрлицо, ИНН/ОГРН, выручка 2025 118,279 млн ₽, ССЧ 27, собственник/CEO Шарыпов Олег Николаевич, свежий S1-сигнал 10.08.2026, корпоративный телефон/email и действующий маршрут работодателя. Целевые 150–200 raw в этом RUN не достигнуты и не заявляются. Outreach 0."
+  ]
 }
