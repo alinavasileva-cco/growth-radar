@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260824-363",
+  "run_id": "N5K-20260824-364",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T01:18:00+05:00",
+  "updated_at": "2026-08-24T02:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 290,
-    "current_contactable_count": 290,
-    "progress_added": 290,
-    "remaining": 4710
+    "current_canonical_count": 291,
+    "current_contactable_count": 291,
+    "progress_added": 291,
+    "remaining": 4709
   },
   "funnel": {
-    "discovered": 36,
-    "fast_gate_passed": 7,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "discovered": 18,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 30
+    "duplicates": 2,
+    "excluded": 15
   },
   "qualified_companies": [
-    "Арт Сити / Экипировочный центр ФСБР и PWL"
+    "ПрофМаркетРус / ПрофМаркет"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "290_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "290_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "291_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "291_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
