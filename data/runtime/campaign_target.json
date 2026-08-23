@@ -18,5 +18,5 @@
   "latest_completed_run": "N5K-20260824-362",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 361 completed; physical canonical/contactable 288/288; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 362 completed after atomic REPAIR; added 1 unique company; physical canonical/contactable 289/289; integrity PASS; orphan 0/0; outreach 0."
 }
