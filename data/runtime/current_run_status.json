@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260823-347",
+  "run_id": "N5K-20260823-348",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T10:57:44+05:00",
+  "updated_at": "2026-08-23T11:40:39+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 269,
-    "current_contactable_count": 269,
-    "progress_added": 269,
-    "remaining": 4731
+    "current_canonical_count": 270,
+    "current_contactable_count": 270,
+    "progress_added": 270,
+    "remaining": 4730
   },
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "discovered": 4,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 18
+    "duplicates": 0,
+    "excluded": 3
   },
   "qualified_companies": [
-    "Milerd Electronics / Милерд Электроникс"
+    "Солнечные дары"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "269_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "269_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "270_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "270_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
