@@ -1,113 +1,67 @@
 {
-  "run_id": "N5K-20260823-347",
-  "updated_at": "2026-08-23T10:57:44+05:00",
+  "run_id": "N5K-20260823-348",
+  "campaign_id": "new_5000",
+  "status": "PENDING_INTEGRATION",
+  "updated_at": "2026-08-23T11:40:39+05:00",
+  "baseline_canonical_count": 269,
+  "baseline_contactable_count": 269,
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "discovered": 4,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 18
+    "duplicates": 0,
+    "excluded": 3
   },
-  "notes": "RUN 347 started from verified physical baseline RUN 346: 268/268, integrity PASS, orphan 0/0. Discovery reviewed current Head of Sales / B2B / international-sales signals across job aggregators and official company sources. Known companies already present in the campaign (including iSmart, Opticus, Sofis, IBMM, LIXIE and Sellerpro) were removed at fast dedup. Weak/ambiguous recruiter-only or brand-to-legal mappings were excluded. Milerd Electronics passed current legal, current 2025 scale, strong August 2026 international B2B expansion signal, current owner/CEO LPR and official contact-route checks. Repository pre-write search for INN 7716949917 returned no existing indexed record; physical integration guard remains final dedup. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0415",
-      "Brand": "Milerd Electronics / Милерд Электроникс",
-      "Legal Name": "ООО «МИЛЕРД ЭЛЕКТРОНИКС»",
-      "INN": "7716949917",
-      "OGRN/OGRNIP": "1207700357875",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Electronics / производство / B2B / international sales / distributors",
-      "Website": "https://milerd.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 28,517 млн ₽ по свежей бухгалтерской отчетности; среднесписочная численность 8 сотрудников за 2025 год. Компания самостоятельно разрабатывает и производит электронику, заявляет продажи более чем в 20 странах и 80 разработанных/серийных моделях.",
-      "Signal Level": "S1",
-      "Signal Summary": "В августе 2026 компания открыла позицию Руководителя международных продаж / Head of International Sales (B2B, электроника) с задачей построить международные B2B-продажи, глобальную сеть дилеров/реселлеров/дистрибьюторов и затем собственную команду международных продаж.",
-      "Signal Date": "2026-08-15",
-      "Signal Source": "https://remote-job.ru/search?search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F+%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D1%85+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6&search%5BsearchType%5D=vacancy",
-      "Owner": "Лихачёв Владислав Олегович — основной участник; также участники Вищаненко Антон Владимирович, Горшков Константин Олегович и ЗПИФ «К3» по актуальной реестровой истории 2026 года.",
-      "CEO": "Лихачёв Владислав Олегович — генеральный директор",
-      "LPR": "Лихачёв Владислав Олегович",
-      "LPR Role": "Генеральный директор / основной собственник",
-      "Primary Phone": "+7 (495) 108-07-82",
-      "Primary Email": "info@milerd.ru",
-      "HH Contact": "https://hh.ru/",
-      "Contact Form": "https://milerd.ru/",
-      "Contact Type": "Официальный корпоративный телефон + email + сайт + текущая vacancy route",
-      "Contact Source": "Official Milerd website + current job-board vacancy",
-      "Consulting Hypothesis": "Построение международной B2B-коммерческой системы: приоритизация рынков, дилерская/дистрибьюторская модель, unit economics экспортного канала, CRM и pipeline, KPI, channel governance и формирование международной sales-команды.",
-      "contacts": [
-        {
-          "value": "+7 (495) 108-07-82",
-          "channel": "Phone",
-          "type": "Official corporate route",
-          "source": "Official Milerd website",
-          "url": "https://milerd.ru/about/",
-          "is_lpr": false,
-          "notes": "Официальный телефон головного офиса"
-        },
-        {
-          "value": "info@milerd.ru",
-          "channel": "Email",
-          "type": "Official corporate route",
-          "source": "Official Milerd website",
-          "url": "https://milerd.ru/about/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный email"
-        },
-        {
-          "value": "https://get-works.ru/job-detail.php?vac=136225308",
-          "channel": "Vacancy",
-          "type": "Current hiring route",
-          "source": "Current international-sales vacancy",
-          "url": "https://get-works.ru/job-detail.php?vac=136225308",
-          "is_lpr": false,
-          "notes": "Актуальная вакансия международных B2B-продаж"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "LEGAL",
-          "claim": "ООО «МИЛЕРД ЭЛЕКТРОНИКС», ИНН 7716949917, ОГРН 1207700357875, действует; генеральный директор Лихачёв Владислав Олегович.",
-          "url": "https://saby.ru/profile/7716949917-771601001",
-          "source": "Saby / актуальные реестровые данные 2026"
-        },
-        {
-          "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт Milerd Electronics прямо указывает ООО «Милерд Электроникс», ИНН 7716949917, ОГРН 1207700357875.",
-          "url": "https://milerd.ru/about/",
-          "source": "Official Milerd website"
-        },
-        {
-          "type": "SCALE_CURRENT",
-          "claim": "Бухгалтерская отчетность за 2025 год показывает выручку 28,517 млн ₽; актуальный профиль показывает 8 сотрудников за 2025 год. Официальный сайт заявляет более 20 стран продаж и около 80 разработанных/серийных моделей.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1207700357875/",
-          "source": "T-Bank business profile / 2025 financials + official Milerd website"
-        },
-        {
-          "type": "LPR",
-          "claim": "Лихачёв Владислав Олегович — действующий генеральный директор и основной участник ООО «Милерд Электроникс» по актуальным реестровым данным 2026 года.",
-          "url": "https://saby.ru/profile/7716949917-771601001",
-          "source": "Saby / реестровые данные 2026"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "В августе 2026 компания ищет Руководителя международных продаж / Head of International Sales для построения международной B2B-функции, глобальной дилерской сети и будущей sales-команды.",
-          "url": "https://bebee.com/ru/jobs/head-of-international-sales-b2b--techmap_ru_136225308",
-          "source": "Current vacancy mirror, August 2026"
-        },
-        {
-          "type": "CONTACT",
-          "claim": "Официальный сайт публикует +7 (495) 108-07-82 и info@milerd.ru; текущая вакансия предоставляет актуальный employer/hiring route.",
-          "url": "https://milerd.ru/about/",
-          "source": "Official Milerd website"
-        }
-      ]
+      "lead_id": "N5K-0416",
+      "brand": "Солнечные дары",
+      "legal_name": "ООО «СОЛНЕЧНЫЕ ДАРЫ»",
+      "inn": "4253004412",
+      "ogrn": "1114253005404",
+      "legal_status": "Действует",
+      "region": "Кемеровская область — Кузбасс",
+      "city": "Новокузнецк",
+      "segment": "FMCG / производство снеков / продукты питания / B2B и retail",
+      "website": "https://солнечные-дары.рф/",
+      "revenue_scale": "Выручка 118 279 000 ₽ за 2025 год; чистая прибыль 160 000 ₽; ССЧ 27; действующее производственное ООО с 5 зарегистрированными торговыми марками.",
+      "signal_level": "S1",
+      "signal_summary": "10.08.2026 компания открыла вакансию Директора по развитию бизнеса с прямой задачей обеспечить устойчивое масштабирование сети ресторанов быстрого питания, привлечь инвестиционный капитал и реализовать территориальную и операционную экспансию; задачи включают стратегию масштабирования, бизнес-план и инвестиционную стратегию.",
+      "signal_date": "2026-08-10",
+      "signal_source": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
+      "owner": "Шарыпов Олег Николаевич — учредитель 100%",
+      "ceo": "Шарыпов Олег Николаевич — генеральный директор",
+      "lpr": "Шарыпов Олег Николаевич",
+      "lpr_role": "Генеральный директор / собственник 100%",
+      "primary_phone": "+7 (3846) 68-20-14",
+      "primary_email": "yanina@tk-soldar.ru",
+      "hh_contact": "https://novokuznetsk.hh.ru/vacancies/strateg/polnaya_zanyatost",
+      "contact_form": "https://солнечные-дары.рф/",
+      "contact_type": "Corporate phone; corporate email; current employer vacancy route; official website",
+      "contact_source": "PRODEXPO-2026 exhibitor profile; ProductCenter company profile; current DreamJob/HH vacancy",
+      "number_of_contacts_found": 4,
+      "consulting_hypothesis": "Систематизация масштабирования FMCG/food-бизнеса и новой ресторанной сети: экономика территориальной экспансии, инвестиционная модель, P&L по форматам и каналам, CRM/KPI, коммерческий operating model и 90-дневный план управляемого роста.",
+      "final_quick_status": "МОЖНО СВЯЗЫВАТЬСЯ"
     }
-  ]
+  ],
+  "excluded_candidates": [
+    {
+      "name": "25 микрон / ООО «25 МИКРОН»",
+      "reason": "Не выбран в RUN 348: масштаб выше предпочтительного диапазона и в текущей проверке не подтверждён столь же прямой свежий коммерческий сигнал, как у qualified-кандидата."
+    },
+    {
+      "name": "Торговый дом Дача",
+      "reason": "Не прошёл deep-check в этом RUN: полного подтверждённого набора legal + scale + current signal + LPR + contact route не собрано."
+    },
+    {
+      "name": "ИНБРИГ",
+      "reason": "Не прошёл deep-check в этом RUN: полного подтверждённого набора legal + scale + current signal + LPR + contact route не собрано."
+    }
+  ],
+  "notes": "Baseline перед RUN: physical canonical/contactable 269/269 после RUN 347, integrity PASS, orphan contacts/evidence 0/0. Физический leads_master прочитан полностью; ИНН 4253004412 и ОГРН 1114253005404 в master отсутствуют до записи RUN 348. GitHub code search по ИНН также не выявил индексированной записи, но финальным dedup-gate остаётся physical master/integration guard. Для ООО «СОЛНЕЧНЫЕ ДАРЫ» подтверждены: действующее юрлицо, ИНН/ОГРН, выручка 2025 118,279 млн ₽, ССЧ 27, собственник/CEO Шарыпов Олег Николаевич, свежий S1-сигнал 10.08.2026, корпоративный телефон/email и действующий маршрут работодателя. Целевые 150–200 raw в этом RUN не достигнуты и не заявляются. Outreach 0."
 }
