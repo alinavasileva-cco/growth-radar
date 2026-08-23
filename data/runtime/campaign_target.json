@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-23T10:57:44+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260823-346",
-  "current_run_id": "N5K-20260823-346",
+  "last_completed_run_id": "N5K-20260823-347",
+  "current_run_id": "N5K-20260823-347",
   "last_run_id": "N5K-20260823-347",
   "latest_completed_run": "N5K-20260823-347",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 346 completed; added 1 First Alive Collagen / COLLA GEN; physical canonical/contactable 268/268; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 347 completed; added 1 Milerd Electronics / Милерд Электроникс; physical canonical/contactable 269/269; integrity PASS; orphan 0/0; outreach 0."
 }
