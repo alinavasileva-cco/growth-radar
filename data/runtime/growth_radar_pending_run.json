@@ -1,9 +1,9 @@
 {
-  "run_id": "N5K-20260823-348",
-  "updated_at": "2026-08-23T11:40:39+05:00",
+  "run_id": "N5K-20260823-349",
+  "updated_at": "2026-08-23T12:05:00+05:00",
   "funnel": {
-    "discovered": 4,
-    "fast_gate_passed": 2,
+    "discovered": 8,
+    "fast_gate_passed": 3,
     "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -11,95 +11,95 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 3
+    "excluded": 7
   },
-  "notes": "RUN 348 started from verified physical baseline RUN 347: 269/269, integrity PASS, orphan contacts/evidence 0/0. Physical leads_master was read before staging; INN 4253004412 and OGRN 1114253005404 were absent. Four named candidates were individually reviewed in this run. 25 МИКРОН was not selected because current scale is above the preferred active range and the checked signal was weaker; Торговый дом Дача and ИНБРИГ did not yield a complete verified legal+scale+signal+LPR+contact package in this cycle. ООО «СОЛНЕЧНЫЕ ДАРЫ» passed current legal, 2025 scale, fresh S1 expansion signal, owner/CEO LPR and current contact-route checks. The 150–200 raw target was not reached and is not claimed. No outreach.",
+  "notes": "RUN 349 started from verified physical baseline RUN 348: 270/270, integrity PASS, orphan contacts/evidence 0/0. Eight named candidates/signals were individually reviewed across fresh vacancy/job-board and company/legal sources. СпецПоддон was not qualified because the accessible same-name legal entity was liquidated and the current brand-to-legal link could not be verified safely. Калининградская фабрика упаковки was excluded because current sources conflict on legal status (bankruptcy/liquidation versus active) and fresh scale is weak. Elite Stone did not yield a reliable Russian brand-to-legal match. Other weak/large/ambiguous signals were not deep-checked. ООО «ЭНЕРГО СИСТЕМЫ» passed current legal, 2025 scale, fresh S1/S2 commercial expansion signal, owner/CEO LPR and official contact-route checks. GitHub code search for INN 7721361920 and brand name returned no existing record; final physical integration guard remains mandatory. The 150–200 raw target was not reached and is not claimed. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0416",
-      "Brand": "Солнечные дары",
-      "Legal Name": "ООО «СОЛНЕЧНЫЕ ДАРЫ»",
-      "INN": "4253004412",
-      "OGRN/OGRNIP": "1114253005404",
-      "Region": "Кемеровская область — Кузбасс",
-      "City": "Новокузнецк",
-      "Segment": "FMCG / производство снеков / продукты питания / B2B / retail",
-      "Website": "http://солнечные-дары.рф",
-      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 118,279 млн ₽, чистая прибыль 160 тыс. ₽, ССЧ 27. Компания владеет 5 торговыми марками; ПРОДЭКСПО-2026 подтверждает производство и оптовую торговлю снеками, а отраслевой источник 2026 года — поставки в 13 регионов России и на экспорт.",
+      "Lead ID": "N5K-0417",
+      "Brand": "Энерго Системы",
+      "Legal Name": "ООО «ЭНЕРГО СИСТЕМЫ»",
+      "INN": "7721361920",
+      "OGRN/OGRNIP": "1157746912278",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Промышленное оборудование / инженерные решения / B2B",
+      "Website": "https://en-sim.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 674,187 млн ₽, чистая прибыль 39,138 млн ₽, ССЧ 31 сотрудник по свежим сведениям ФНС; малое предприятие. Компания поставляет промышленное оборудование и инженерные решения и показывает рост выручки более чем в 2 раза год к году.",
       "Signal Level": "S1",
-      "Signal Summary": "10.08.2026 компания открыла вакансию Директора по развитию бизнеса с прямой задачей обеспечить устойчивое масштабирование сети ресторанов быстрого питания через привлечение инвестиционного капитала и территориальную/операционную экспансию; среди задач — стратегия масштабирования, план развития бизнеса и инвестиционная стратегия.",
-      "Signal Date": "2026-08-10",
-      "Signal Source": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
-      "Owner": "Шарыпов Олег Николаевич — учредитель 100%",
-      "CEO": "Шарыпов Олег Николаевич — генеральный директор",
-      "LPR": "Шарыпов Олег Николаевич",
-      "LPR Role": "Генеральный директор / собственник 100%",
-      "Primary Phone": "+7 3846-68-20-14",
-      "Primary Email": "yanina@tk-soldar.ru",
-      "HH Contact": "https://novokuznetsk.hh.ru/vacancies/strateg/polnaya_zanyatost",
-      "Contact Form": "http://солнечные-дары.рф",
-      "Contact Type": "Официальный корпоративный телефон + email + сайт + текущая employer vacancy route",
-      "Contact Source": "ПРОДЭКСПО-2026 official exhibitor catalog + current DreamJob/HH vacancy",
-      "Consulting Hypothesis": "Систематизация масштабирования FMCG/food-бизнеса и новой ресторанной сети: экономика территориальной экспансии, инвестиционная модель, P&L по форматам и каналам, CRM/KPI, коммерческий operating model и 90-дневный план управляемого роста.",
+      "Signal Summary": "21.08.2026 опубликована новая вакансия Руководителя отдела продаж (промышленное оборудование); одновременно в августе компания ведет найм руководителей коммерческих направлений и B2B-проектных продаж. Это прямой сигнал усиления и масштабирования коммерческого блока на фоне быстрого роста выручки.",
+      "Signal Date": "2026-08-21",
+      "Signal Source": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
+      "Owner": "Смирнова Наталья Александровна — единственный учредитель",
+      "CEO": "Смирнова Наталья Александровна — генеральный директор",
+      "LPR": "Смирнова Наталья Александровна",
+      "LPR Role": "Генеральный директор / собственник",
+      "Primary Phone": "+7 (495) 211-03-26",
+      "Primary Email": "",
+      "HH Contact": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
+      "Contact Form": "https://en-sim.ru/shop/",
+      "Contact Type": "Официальный корпоративный телефон + форма сайта + текущий employer vacancy route",
+      "Contact Source": "Официальный сайт ООО «Энерго Системы» + актуальная вакансия 21.08.2026",
+      "Consulting Hypothesis": "Систематизация масштабирования B2B-продаж промышленного оборудования: структура коммерческого блока, роли руководителей направлений, CRM/воронка, маржинальность, проектные продажи, KPI и 90-дневный operating model для роста без потери управляемости.",
       "contacts": [
         {
-          "value": "+7 3846-68-20-14",
+          "value": "+7 (495) 211-03-26",
           "channel": "Phone",
           "type": "Official corporate route",
-          "source": "ПРОДЭКСПО-2026 official exhibitor catalog",
-          "url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/exhibitors/379218?stand=6E070",
+          "source": "Official website",
+          "url": "https://en-sim.ru/shop/",
           "is_lpr": false,
-          "notes": "Корпоративный телефон, опубликованный в официальном каталоге выставки 2026"
+          "notes": "Корпоративный телефон ООО «Энерго Системы» на официальном сайте"
         },
         {
-          "value": "yanina@tk-soldar.ru",
-          "channel": "Email",
+          "value": "https://en-sim.ru/shop/",
+          "channel": "Web form",
           "type": "Official corporate route",
-          "source": "ПРОДЭКСПО-2026 official exhibitor catalog",
-          "url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/exhibitors/379218?stand=6E070",
+          "source": "Official website",
+          "url": "https://en-sim.ru/shop/",
           "is_lpr": false,
-          "notes": "Корпоративный email из официального каталога выставки 2026"
+          "notes": "Официальная форма заявки/контакта"
         },
         {
-          "value": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
+          "value": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
           "channel": "Vacancy",
           "type": "Current hiring route",
-          "source": "DreamJob / current vacancy",
-          "url": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
+          "source": "NajtiRaboty / premium-job aggregation",
+          "url": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
           "is_lpr": false,
-          "notes": "Актуальная вакансия Директора по развитию бизнеса от 10.08.2026"
+          "notes": "Актуальная вакансия Руководителя отдела продаж от 21.08.2026"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «СОЛНЕЧНЫЕ ДАРЫ», ИНН 4253004412, ОГРН 1114253005404, действует; генеральный директор и единственный учредитель — Шарыпов Олег Николаевич.",
-          "url": "https://companies.rbc.ru/id/1114253005404-ooo-solnechnyie-daryi/",
-          "source": "РБК Компании / актуальные данные ЕГРЮЛ и 2025 отчетность"
+          "claim": "ООО «ЭНЕРГО СИСТЕМЫ», ИНН 7721361920, ОГРН 1157746912278, действует; генеральный директор и учредитель — Смирнова Наталья Александровна.",
+          "url": "https://saby.ru/profile/7721361920-770301001",
+          "source": "Saby / актуальные ЕГРЮЛ-сведения"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "За 2025 год выручка 118,279 млн ₽, чистая прибыль 160 тыс. ₽, ССЧ 27; компания действует. Официальный каталог ПРОДЭКСПО-2026 подтверждает производство и оптовую торговлю снеками.",
-          "url": "https://saby.ru/profile/4253004412-421701001",
-          "source": "Saby / 2025 financials + ПРОДЭКСПО-2026"
+          "claim": "За 2025 год выручка 674,187 млн ₽, чистая прибыль 39,138 млн ₽; свежие сведения ФНС указывают ССЧ 31 сотрудник и статус малого предприятия.",
+          "url": "https://companies.rbc.ru/id/1157746912278-ooo-energo-sistemyi/",
+          "source": "РБК Компании + сведения ФНС 2026"
         },
         {
           "type": "SIGNAL",
-          "claim": "10.08.2026 компания ищет Директора по развитию бизнеса для устойчивого масштабирования сети ресторанов быстрого питания, привлечения инвестиций и территориальной/операционной экспансии.",
-          "url": "https://dreamjob.ru/employers/1015103/vakansii/136056838",
-          "source": "DreamJob / current vacancy, 10.08.2026"
+          "claim": "21.08.2026 опубликована вакансия Руководителя отдела продаж промышленного оборудования; в августе компания параллельно усиливает коммерческие направления и B2B-проектные продажи.",
+          "url": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
+          "source": "NajtiRaboty / актуальные вакансии, 21.08.2026"
         },
         {
           "type": "LPR",
-          "claim": "Шарыпов Олег Николаевич — действующий генеральный директор и единственный учредитель (100%) ООО «СОЛНЕЧНЫЕ ДАРЫ».",
-          "url": "https://companies.rbc.ru/id/1114253005404-ooo-solnechnyie-daryi/",
-          "source": "РБК Компании / ЕГРЮЛ"
+          "claim": "Смирнова Наталья Александровна — действующий генеральный директор и единственный учредитель ООО «ЭНЕРГО СИСТЕМЫ».",
+          "url": "https://saby.ru/profile/7721361920-770301001",
+          "source": "Saby / ЕГРЮЛ"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный каталог ПРОДЭКСПО-2026 публикует телефон +7 3846-68-20-14, email yanina@tk-soldar.ru и сайт солнечные-дары.рф; текущая вакансия даёт дополнительный employer route.",
-          "url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/exhibitors/379218?stand=6E070",
-          "source": "Экспоцентр / ПРОДЭКСПО-2026 official exhibitor catalog"
+          "claim": "Официальный сайт ООО «Энерго Системы» публикует телефон +7 (495) 211-03-26, адрес в Москва-Сити и форму заявки; ИНН 7721361920 указан в футере сайта.",
+          "url": "https://en-sim.ru/shop/",
+          "source": "Официальный сайт ООО «Энерго Системы»"
         }
       ]
     }
