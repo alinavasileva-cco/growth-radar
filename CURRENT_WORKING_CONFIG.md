@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T01:24:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-363`  
+**Версия:** 2026-08-24T02:00:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-364`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **290 / 290**  
+**Физически подтверждённый canonical/contactable:** **291 / 291**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4710**  
+**Осталось:** **4709**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **290 / 290**;
+- physical canonical/contactable count: **291 / 291**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-363`;
+- последний завершённый RUN: `N5K-20260824-364`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,19 +36,19 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-363
+## Последний подробный RUN — N5K-20260824-364
 
-Baseline перед RUN: **289 / 289**.  
-Фактически индивидуально обработано raw-кандидатов: **36**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **36** → fast gate **7** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **5**. Excluded: **30**.  
+Baseline перед RUN: **290 / 290**.  
+Фактически индивидуально обработано raw-кандидатов: **18**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **18** → fast gate **5** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **2**. Excluded: **15**.  
 Добавлена:
-- **Арт Сити / Экипировочный центр ФСБР и PWL — ООО «АРТ СИТИ»**, ИНН `9729043104`, ОГРН `5167746410266`, Lead ID `N5K-0437`.
+- **ПрофМаркетРус / ПрофМаркет — ООО «ПРОФМАРКЕТРУС»**, ИНН `5410096418`, ОГРН `1225400033891`, Lead ID `N5K-0438`.
 
-Итог physical canonical/contactable: **290 / 290**.  
+Итог physical canonical/contactable: **291 / 291**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
-Арт Сити: действующее ООО; выручка 93,4 млн ₽ за 2025 год, 5 сотрудников по данным ФНС за 2025 год. Свежая вакансия августа 2026 указывает на продажи через несколько каналов при отсутствии единого системного коммерческого блока; официальный магазин ФСБР/PWL публикует корпоративный телефон и email и содержит реквизиты ООО.
+ПрофМаркетРус: действующее ООО; выручка 443,22 млн ₽ за 2025 год, 24 сотрудника. Свежая вакансия руководителя отдела продаж августа 2026 подтверждает развитие B2B-коммерческой функции; директор и совладелец — Долгов Аркадий Владимирович; подтверждены корпоративный телефон, email и employer route.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
@@ -88,6 +88,5 @@ Canonical/contactable: 289/289. Added: 1. Integrity PASS. Orphan contacts/eviden
 ## Latest verified run N5K-20260824-363
 Canonical/contactable: 290/290. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260824-364
-Canonical/contactable: 291/291. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: 291/291. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
