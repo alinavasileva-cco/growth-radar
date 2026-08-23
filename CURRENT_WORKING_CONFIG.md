@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T00:12:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-362`  
+**Версия:** 2026-08-24T01:24:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-363`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **289 / 289**  
+**Физически подтверждённый canonical/contactable:** **290 / 290**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4711**  
+**Осталось:** **4710**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **288 / 288**;
+- physical canonical/contactable count: **290 / 290**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260823-361`;
+- последний завершённый RUN: `N5K-20260824-363`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,22 +36,19 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260823-361
+## Последний подробный RUN — N5K-20260824-363
 
-Baseline перед RUN: **286 / 286**.  
-Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **24** → fast gate **6** → size **3** → legal **3** → signal **2** → LPR **2** → contact **2** → qualified **2** → physically integrated **2**.  
-Duplicates: **4**. Excluded: **18**.  
-Добавлены:
-- **Galala Brand — ИП Стародуб Галина Николаевна**, ИНН `237001939023`, ОГРНИП `320237500110018`, Lead ID `N5K-0433`.
-- **RadiantMove — ИП Алихел Даниил Ахтарович**, ИНН `470423659713`, ОГРНИП `321470400075685`, Lead ID `N5K-0434`.
+Baseline перед RUN: **289 / 289**.  
+Фактически индивидуально обработано raw-кандидатов: **36**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **36** → fast gate **7** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **5**. Excluded: **30**.  
+Добавлена:
+- **Арт Сити / Экипировочный центр ФСБР и PWL — ООО «АРТ СИТИ»**, ИНН `9729043104`, ОГРН `5167746410266`, Lead ID `N5K-0437`.
 
-Итог physical canonical/contactable: **288 / 288**.  
+Итог physical canonical/contactable: **290 / 290**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
-Galala Brand: действующий ИП; текущий employer profile указывает размер команды 20–100 человек, собственную разработку и производство одежды, топ-50 продавцов Wildberries по итогам 2025 года, 250 активных SKU и более 1,3 млн реализованных изделий. Свежий сигнал 17–18.08.2026 — вакансия Head of Sales/РОП marketplace-продаж с прямым подчинением собственнику.
-
-RadiantMove: действующий ИП; правообладатель товарного знака — Даниил Алихел. Свежая вакансия 16–18.08.2026 указывает сезонный оборот 50–70 млн ₽ в месяц на Ozon и поиск РОП по нескольким marketplace-каналам; ранее прямой employer profile фиксировал 106 млн ₽ продаж за 2024 год.
+Арт Сити: действующее ООО; выручка 93,4 млн ₽ за 2025 год, 5 сотрудников по данным ФНС за 2025 год. Свежая вакансия августа 2026 указывает на продажи через несколько каналов при отсутствии единого системного коммерческого блока; официальный магазин ФСБР/PWL публикует корпоративный телефон и email и содержит реквизиты ООО.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
@@ -85,10 +82,8 @@ Canonical/contactable: 286/286. Integrity PASS. Orphan contacts/evidence: 0/0. O
 ## Latest verified run N5K-20260823-361
 Canonical/contactable: 288/288. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260824-362
 Canonical/contactable: 289/289. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260824-363
-Canonical/contactable: 290/290. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: 290/290. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
