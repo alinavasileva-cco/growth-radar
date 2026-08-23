@@ -53,3 +53,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Out
 Отсев текущего RUN: Za-bota — недостаточное подтверждение размера команды; Dolomit — неоднозначность brand→legal из-за множества одноимённых юрлиц; SpecPoddon — не удалось надёжно установить актуальное операционное юрлицо; Myakishi — фрагментированная текущая brand→legal/financial связка; Formfactor Technologies — новое юрлицо 2026 года без достаточного подтверждения масштаба; JoceJoli — заявленный масштаб выше активного диапазона.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; этот файл содержит актуальное каноническое состояние и обязательные правила продолжения.
+
+
+## Latest verified run N5K-20260823-346
+Canonical/contactable: 268/268. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
