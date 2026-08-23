@@ -1,16 +1,16 @@
 {
-  "run_id": "N5K-20260823-350",
+  "run_id": "N5K-20260823-351",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T13:16:00+05:00",
+  "updated_at": "2026-08-23T14:20:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 272,
-    "current_contactable_count": 272,
-    "progress_added": 272,
-    "remaining": 4728
+    "current_canonical_count": 273,
+    "current_contactable_count": 273,
+    "progress_added": 273,
+    "remaining": 4727
   },
   "funnel": {
     "discovered": 12,
@@ -25,14 +25,14 @@
     "excluded": 10
   },
   "qualified_companies": [
-    "Смарт Снаб Групп / SmartSnab"
+    "Конкурентные Закупки"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "272_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "272_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "273_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "273_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
