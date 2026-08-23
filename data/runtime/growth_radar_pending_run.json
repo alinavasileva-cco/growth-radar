@@ -1,8 +1,8 @@
 {
   "run_id": "N5K-20260824-363",
-  "updated_at": "2026-08-24T01:18:00+05:00",
+  "updated_at": "2026-08-24T01:23:00+05:00",
   "funnel": {"discovered":36,"fast_gate_passed":7,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":5,"excluded":30},
-  "notes": "RUN 363 from verified RUN 362 baseline 289/289 PASS orphan 0/0. Multi-stream discovery across current August 2026 commercial/sales vacancies and current company/legal sources. Final physical dedup remains authoritative. No outreach.",
+  "notes": "RUN 363 from verified RUN 362 baseline 289/289 PASS orphan 0/0. Multi-stream discovery across current August 2026 commercial/sales vacancies and current company/legal sources. Repair retrigger after first pending push did not immediately produce an integration commit. Same verified candidate; final physical dedup remains authoritative. No outreach.",
   "qualified_companies": [
     {
       "Lead ID":"N5K-0437",
