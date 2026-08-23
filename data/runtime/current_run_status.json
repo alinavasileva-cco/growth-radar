@@ -1,39 +1,38 @@
 {
-  "run_id": "N5K-20260823-359",
+  "run_id": "N5K-20260823-360",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T20:58:00+05:00",
+  "updated_at": "2026-08-23T22:12:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 285,
-    "current_contactable_count": 285,
-    "progress_added": 285,
-    "remaining": 4715
+    "current_canonical_count": 286,
+    "current_contactable_count": 286,
+    "progress_added": 286,
+    "remaining": 4714
   },
   "funnel": {
     "discovered": 30,
-    "fast_gate_passed": 8,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 6,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 7,
     "excluded": 22
   },
   "qualified_companies": [
-    "Hair Sekta / SEKTA",
-    "Феникс-Презент"
+    "КЗ ПромКотлоСнаб / ПромКотлоСнаб"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "285_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "285_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "286_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "286_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
