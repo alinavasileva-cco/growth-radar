@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0428,N5K-0428-C01,Сталь-Инвест,6162016051,,Корпоративный маршрут,+7 (863) 296-11-14,Phone,Official company route,Official Stal-Invest website,https://stall-invest.ru/,NO,HIGH,2026-08-23,Ростов-на-Дону,N5K-20260823-357,new_5000
+N5K-0428,N5K-0428-C02,Сталь-Инвест,6162016051,,Корпоративный маршрут,info@stall-invest.ru,Email,Official company route,Official Stal-Invest website,https://stall-invest.ru/,NO,HIGH,2026-08-23,Корпоративный email,N5K-20260823-357,new_5000
+N5K-0428,N5K-0428-C03,Сталь-Инвест,6162016051,,Корпоративный маршрут,Current 2026 Head of B2B Sales vacancy route,Vacancy,Current employer route,Cataloxy/current vacancy,https://rostov-na-donu.cataloxy.ru/rabota/vacancy1127537589_rukovoditel-otdela-prodazh-b2b-segment.htm,NO,HIGH,2026-08-23,13.08.2026,N5K-20260823-357,new_5000
