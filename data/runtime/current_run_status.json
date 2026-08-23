@@ -1,38 +1,39 @@
 {
-  "run_id": "N5K-20260823-352",
+  "run_id": "N5K-20260823-353",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T15:25:00+05:00",
+  "updated_at": "2026-08-23T16:05:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 274,
-    "current_contactable_count": 274,
-    "progress_added": 274,
-    "remaining": 4726
+    "current_canonical_count": 276,
+    "current_contactable_count": 276,
+    "progress_added": 276,
+    "remaining": 4724
   },
   "funnel": {
-    "discovered": 24,
+    "discovered": 26,
     "fast_gate_passed": 6,
     "size_check_passed": 3,
     "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 4,
     "excluded": 20
   },
   "qualified_companies": [
-    "Свердловский завод металлоконструкций / СЗМК"
+    "Всекраски.ру / Мастерфарбе",
+    "НефтеХим"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "274_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "274_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "276_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "276_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
