@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-23T14:20:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260823-350",
-  "current_run_id": "N5K-20260823-350",
+  "last_completed_run_id": "N5K-20260823-351",
+  "current_run_id": "N5K-20260823-351",
   "last_run_id": "N5K-20260823-351",
   "latest_completed_run": "N5K-20260823-351",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 350 completed; added 1 Смарт Снаб Групп / ООО «СМАРТ СНАБ ГРУПП»; physical canonical/contactable 272/272; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 351 completed; added 1 Конкурентные Закупки / ООО «КОНКУРЕНТНЫЕ ЗАКУПКИ»; physical canonical/contactable 273/273; integrity PASS; orphan 0/0; outreach 0."
 }
