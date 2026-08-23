@@ -1,39 +1,39 @@
 {
-  "run_id": "N5K-20260823-353",
+  "run_id": "N5K-20260823-354",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T16:05:00+05:00",
+  "updated_at": "2026-08-23T17:03:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 276,
-    "current_contactable_count": 276,
-    "progress_added": 276,
-    "remaining": 4724
+    "current_canonical_count": 278,
+    "current_contactable_count": 278,
+    "progress_added": 278,
+    "remaining": 4722
   },
   "funnel": {
-    "discovered": 26,
+    "discovered": 30,
     "fast_gate_passed": 6,
-    "size_check_passed": 3,
+    "size_check_passed": 4,
     "legal_match_passed": 2,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 4,
-    "excluded": 20
+    "duplicates": 6,
+    "excluded": 22
   },
   "qualified_companies": [
-    "Всекраски.ру / Мастерфарбе",
-    "НефтеХим"
+    "Спектр-Пак Юг",
+    "Свисс абразивс / ABRAFORM"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "276_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "276_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "278_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "278_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
