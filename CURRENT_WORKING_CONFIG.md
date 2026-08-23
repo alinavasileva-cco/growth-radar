@@ -53,3 +53,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Out
 Отсев текущего RUN: Masterfarbe/Vsekras.ru — неоднозначная employer/brand→legal связка между ООО «ОПТ 365», «Всекраски.ру» и отдельным юрлицом Masterfarbe Trade; Профресурс/промышленная экология — не удалось независимо установить точное операционное юрлицо; Калининградская фабрика упаковки — актуальные признаки банкротства и только 3 сотрудника; AMMONIT — идентифицированное юрлицо не прошло активный scale profile; несколько сигналов оказались уже известными компаниями и были исключены быстрым dedup.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; этот файл содержит актуальное каноническое состояние и обязательные правила продолжения.
+
+
+## Latest verified run N5K-20260823-347
+Canonical/contactable: 269/269. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
