@@ -1,11 +1,88 @@
 {
-  "run_id": "N5K-20260823-338",
-  "updated_at": "2026-08-23T05:03:00+05:00",
-  "funnel": {"discovered":18,"fast_gate_passed":5,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":4,"excluded":13},
-  "notes": "RUN 338 continues from verified physical baseline 258/258 after completed RUN 337. 18 distinct current employer/company signals were individually screened from current August 2026 job-board discovery. Known previously qualified brands visible in the pool were treated as duplicates before deep-check. ООО Агро-Спутник passed current legal status, scale, direct current CCO signal, owner/LPR, practical official contact route and repository searches by INN and OGRN. Current CEO used is Сергей Александрович Гончаров; older conflicting CEO data was excluded. No outreach. Pending write retriggered after no immediate integration commit was visible.",
-  "qualified_companies": [{
-    "Lead ID":"N5K-0405","Brand":"Агро-Спутник / Богучарские","Legal Name":"ООО «АГРО - СПУТНИК»","INN":"3603006840","OGRN/OGRNIP":"1023601072351","Region":"Воронежская область","City":"с. Дьяченково / Воронеж","Segment":"Пищевое производство / снеки и кондитерские изделия / федеральная дистрибуция","Website":"https://agrosputnik.ru/","Revenue/Scale":"Действующее ООО; выручка за 2025 год 2 349 392 000 руб.; актуальные источники указывают 145-217 сотрудников; 2 завода, 60+ регионов РФ и СНГ, 65+ SKU, около 20 000 тонн продукции в год.","Signal Level":"S1","Signal Summary":"28 июля 2026 компания разместила вакансию коммерческого директора (CCO) с ответственностью за планы продаж, маржинальную прибыль и ключевые коммерческие KPI на фоне федерального масштаба бизнеса.","Signal Date":"2026-07-28","Signal Source":"https://dreamjob.ru/employers/164642/vakansii/135630531","Owner":"Пешиков Александр Александрович — учредитель 100% по актуальному профилю компании","CEO":"Гончаров Сергей Александрович — генеральный директор по актуальным данным ЕГРЮЛ; старые сведения о Коротунове исключены","LPR":"Гончаров Сергей Александрович","LPR Role":"Генеральный директор","Primary Phone":"+7 (47366) 2-85-31","Primary Email":"info@agrosputnik.ru","HH Contact":"https://dreamjob.ru/employers/164642/vakansii/135630531","Contact Form":"https://agrosputnik.ru/ru/clients/","Contact Type":"Official corporate phone/email/form + current employer vacancy route","Contact Source":"Official Agro-Sputnik site/privacy policy + current 2026 employer vacancy","Consulting Hypothesis":"Коммерческая трансформация федерального FMCG-производителя: декомпозиция выручки и маржи по каналам/регионам/SKU, управление дистрибуцией, KPI коммерческого блока, CRM/аналитика, портфель и 90-дневный план роста эффективности продаж.",
-    "contacts":[{"value":"+7 (47366) 2-85-31","channel":"Phone","type":"Corporate phone","source":"Official Agro-Sputnik privacy policy dated 2025-05-27","url":"https://www.agrosputnik.ru/media/policy.pdf","is_lpr":false,"notes":"Official operator contact; still published by company"},{"value":"info@agrosputnik.ru","channel":"Email","type":"Corporate email","source":"Official Agro-Sputnik privacy policy / site","url":"https://www.agrosputnik.ru/media/policy.pdf","is_lpr":false,"notes":"Official corporate route"},{"value":"https://dreamjob.ru/employers/164642/vakansii/135630531","channel":"Job board","type":"Current employer vacancy route","source":"DreamJob / HH-linked vacancy","url":"https://dreamjob.ru/employers/164642/vakansii/135630531","is_lpr":false,"notes":"Current CCO vacancy dated 2026-07-28"}],
-    "evidence":[{"type":"LEGAL","claim":"ООО Агро-Спутник, ИНН 3603006840, ОГРН 1023601072351, действует; актуальный генеральный директор — Гончаров Сергей Александрович.","url":"https://saby.ru/profile/3603006840-360301001","source":"Saby current profile crawled 2026-08"},{"type":"BRAND_LEGAL","claim":"Официальный сайт agrosputnik.ru прямо указывает ООО Агро-Спутник, ИНН 3603006840 и ОГРН 1023601072351.","url":"https://agrosputnik.ru/ru/clients/","source":"Official Agro-Sputnik site"},{"type":"SCALE_CURRENT","claim":"Выручка за 2025 год 2 349 392 000 руб.; компания имеет два завода, 60+ регионов присутствия, 65+ SKU и около 20 000 тонн продукции в год.","url":"https://companies.rbc.ru/id/1023601072351-ooo-agro-sputnik/","source":"RBC Companies current financial profile + official company site"},{"type":"OWNER_LPR","claim":"Учредитель 100% — Пешиков Александр Александрович; актуальный генеральный директор — Гончаров Сергей Александрович. Старые сведения о другом CEO не используются.","url":"https://xfirm.ru/company/3603006840","source":"Current legal profile based on EGRUL/FNS data"},{"type":"SIGNAL","claim":"Вакансия коммерческого директора (CCO) от 28 July 2026 включает выполнение коммерческих целей, планов продаж, маржинальной прибыли и ключевых KPI.","url":"https://dreamjob.ru/employers/164642/vakansii/135630531","source":"Current 2026 employer vacancy"},{"type":"CONTACT","claim":"Официальное положение по персональным данным компании публикует +7 (47366) 2-85-31, info@agrosputnik.ru и agrosputnik.ru; сайт также содержит форму обращения.","url":"https://www.agrosputnik.ru/media/policy.pdf","source":"Official Agro-Sputnik document/site"}]
-  }]
+  "run_id": "N5K-20260823-339",
+  "updated_at": "2026-08-23T05:41:00+05:00",
+  "funnel": {"discovered":16,"fast_gate_passed":4,"size_check_passed":2,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":0,"excluded":14},
+  "notes": "RUN 339 continues from verified physical baseline 259/259 after completed RUN 338. Sixteen distinct current August 2026 employer/company signals were screened from current job-board discovery. Norke / ООО «СИЯНИЕ» and UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП» passed current legal status, scale, direct current growth/commercial signals, owner/LPR, practical official contact routes and physical-master dedup checks by INN plus brand/domain. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0406",
+      "Brand": "Norke / Norke Group",
+      "Legal Name": "ООО «СИЯНИЕ»",
+      "INN": "7801689265",
+      "OGRN/OGRNIP": "1207800135597",
+      "Region": "Санкт-Петербург / Москва / сеть по РФ",
+      "City": "Москва / Санкт-Петербург",
+      "Segment": "Гостиничная управляющая компания / сеть отелей и глэмпингов",
+      "Website": "https://norke.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год около 36,2 млн руб.; Norke управляет сетью городских, загородных и курортных объектов, а официальная страница управляющей компании показывает несколько московских отелей и отдельный инвестиционный/управляющий контур.",
+      "Signal Level": "S1",
+      "Signal Summary": "14 августа 2026 опубликована вакансия директора по развитию гостиничной сети Norke: задача — подключать новые гостиничные объекты, сформировать системную воронку потенциальных объектов, регулярно встречаться с собственниками и заключать договоры управления.",
+      "Signal Date": "2026-08-14",
+      "Signal Source": "https://dreamjob.ru/employers/6338002/vakansii/135982178",
+      "Owner": "Маслов Александр Сергеевич — учредитель 100% ООО «СИЯНИЕ»",
+      "CEO": "Маслов Александр Сергеевич — генеральный директор ООО «СИЯНИЕ» и генеральный директор Norke Group",
+      "LPR": "Маслов Александр Сергеевич",
+      "LPR Role": "Собственник / генеральный директор",
+      "Primary Phone": "+7 921 408 81 23",
+      "Primary Email": "invest@vnorke.ru",
+      "HH Contact": "https://dreamjob.ru/employers/6338002/vakansii/135982178",
+      "Contact Form": "https://group.norke.ru/contacts/",
+      "Contact Type": "Direct public executive phone/WhatsApp + investment email + current employer vacancy route",
+      "Contact Source": "Official Norke Group contacts + current 2026 employer vacancy",
+      "Consulting Hypothesis": "Систематизация масштабирования гостиничной управляющей сети: воронка объектов и собственников, unit economics договора управления, pipeline и CRM, KPI развития, коммерческая модель по объектам и 90-дневный план роста номерного фонда под управлением.",
+      "contacts": [
+        {"value":"+7 921 408 81 23","channel":"Phone/WhatsApp","type":"Direct public executive contact","source":"Official Norke Group contacts","url":"https://group.norke.ru/contacts/","is_lpr":true,"notes":"Official page names Александр Маслов and publishes phone/WhatsApp"},
+        {"value":"invest@vnorke.ru","channel":"Email","type":"Investment/business development email","source":"Official Norke Group contacts","url":"https://group.norke.ru/contacts/","is_lpr":true,"notes":"Published next to Александр Маслов contact"},
+        {"value":"https://dreamjob.ru/employers/6338002/vakansii/135982178","channel":"Job board","type":"Current employer vacancy route","source":"DreamJob / HH-linked current vacancy","url":"https://dreamjob.ru/employers/6338002/vakansii/135982178","is_lpr":false,"notes":"Current director of development vacancy"}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «СИЯНИЕ», ИНН 7801689265, ОГРН 1207800135597, действует; генеральный директор и учредитель 100% — Маслов Александр Сергеевич.","url":"https://companies.rbc.ru/id/1207800135597-obschestvo-s-ogranichennoj-otvetstvennostyu-siyanie/","source":"RBC Companies current legal profile"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт Norke на общей странице контактов указывает ООО «Сияние», ИНН 7801689265; РБК Компании фиксирует зарегистрированную торговую марку NORKE у этого юрлица.","url":"https://norke.ru/contacts/","source":"Official Norke site + RBC Companies"},
+        {"type":"SCALE_CURRENT","claim":"ООО «СИЯНИЕ» показало выручку около 36,2 млн руб. за 2025 год; официальный Norke Group показывает сеть управляемых гостиничных объектов и отдельную управляющую команду.","url":"https://saby.ru/profile/7801689265-780101001","source":"Saby current financial profile + official Norke Group"},
+        {"type":"OWNER_LPR","claim":"Александр Маслов является генеральным директором и 100% учредителем ООО «СИЯНИЕ»; официальный Norke Group также называет его генеральным директором и публикует прямой рабочий контакт.","url":"https://group.norke.ru/","source":"Official Norke Group + current legal profile"},
+        {"type":"SIGNAL","claim":"Текущая вакансия директора по развитию требует подключать новые отели, формировать системную воронку объектов и заключать договоры управления с собственниками.","url":"https://dreamjob.ru/employers/6338002/vakansii/135982178","source":"Current 2026 employer vacancy"},
+        {"type":"CONTACT","claim":"Официальная страница Norke Group публикует Александр Маслов, +7 921 408 81 23 (телефон/WhatsApp) и invest@vnorke.ru.","url":"https://group.norke.ru/contacts/","source":"Official Norke Group contacts"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0407",
+      "Brand": "UNIONDELTA / ПРОФ-ТОН",
+      "Legal Name": "ООО «ПРОФ-ТОН ГРУПП»",
+      "INN": "7453330306",
+      "OGRN/OGRNIP": "1197456034302",
+      "Region": "Москва / федеральная дилерская сеть",
+      "City": "Москва",
+      "Segment": "Автомобильные плёнки / B2B / дилерская сеть",
+      "Website": "https://www.uniondelta.ru/",
+      "Revenue/Scale": "Действующее частное ООО, малый бизнес; выручка за 2025 год 114,076 млн руб. против 314,105 млн руб. годом ранее, чистый результат -12,173 млн руб.; бренд развивает B2B-дилерскую сеть автомобильных плёнок и работает в нескольких регионах.",
+      "Signal Level": "S1",
+      "Signal Summary": "14 августа 2026 опубликована вакансия коммерческого директора UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП» для B2B и дилерской сети автомобильных плёнок; роль отвечает за коммерческое развитие дилерского канала на фоне резкого снижения выручки в 2025 году.",
+      "Signal Date": "2026-08-14",
+      "Signal Source": "https://moskva.jobrun.ru/коммерческий-директор-управляющей-компании-гостиничной-сети-работа",
+      "Owner": "Панихин Василий Евгеньевич — учредитель 100%",
+      "CEO": "Панихин Василий Евгеньевич — генеральный директор",
+      "LPR": "Панихин Василий Евгеньевич",
+      "LPR Role": "Собственник / генеральный директор",
+      "Primary Phone": "+7 (495) 540-48-05",
+      "Primary Email": "info@prof-ton.com",
+      "HH Contact": "https://moskva.jobrun.ru/коммерческий-директор-управляющей-компании-гостиничной-сети-работа",
+      "Contact Form": "https://www.uniondelta.ru/company/rekvizity/",
+      "Contact Type": "Official corporate phone/email + current employer vacancy route",
+      "Contact Source": "Official UNIONDELTA/PROF-TON requisites + current 2026 job-board vacancy",
+      "Consulting Hypothesis": "Пересборка B2B-дилерской коммерческой системы после падения выручки: сегментация дилеров, экономика каналов и территорий, CRM/pipeline, KPI и мотивация, ассортиментная маржа, retention активных партнёров и 90-дневный план восстановления оборота.",
+      "contacts": [
+        {"value":"+7 (495) 540-48-05","channel":"Phone","type":"Corporate phone","source":"Official PROF-TON/UNIONDELTA requisites","url":"https://www.uniondelta.ru/company/rekvizity/","is_lpr":false,"notes":"Official company route"},
+        {"value":"info@prof-ton.com","channel":"Email","type":"Corporate email","source":"Official PROF-TON/UNIONDELTA requisites","url":"https://www.uniondelta.ru/company/rekvizity/","is_lpr":false,"notes":"Official corporate email"},
+        {"value":"sales@uniondelta.ru","channel":"Email","type":"Sales route","source":"Official UNIONDELTA site","url":"https://www.uniondelta.ru/company/rekvizity/","is_lpr":false,"notes":"Public B2B sales route"}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «ПРОФ-ТОН ГРУПП», ИНН 7453330306, ОГРН 1197456034302, действует; генеральный директор — Панихин Василий Евгеньевич.","url":"https://saby.ru/profile/7453330306-773001001","source":"Saby current profile"},
+        {"type":"BRAND_LEGAL","claim":"Официальный uniondelta.ru прямо указывает ООО «ПРОФ-ТОН ГРУПП», ИНН 7453330306 и ОГРН 1197456034302 как юрлицо сайта/бренда.","url":"https://www.uniondelta.ru/company/rekvizity/","source":"Official UNIONDELTA site"},
+        {"type":"SCALE_CURRENT","claim":"Выручка за 2025 год 114,076 млн руб., чистый результат -12,173 млн руб.; годом ранее выручка была около 314,105 млн руб.","url":"https://companies.rbc.ru/id/1197456034302-obschestvo-s-ogranichennoj-otvetstvennostyu-prof-ton-grupp/","source":"RBC Companies current financial profile"},
+        {"type":"OWNER_LPR","claim":"Панихин Василий Евгеньевич — генеральный директор и учредитель 100% ООО «ПРОФ-ТОН ГРУПП».","url":"https://www.tbank.ru/business/contractor/legal/1197456034302/","source":"T-Bank current contractor profile"},
+        {"type":"SIGNAL","claim":"В августе 2026 компания ищет коммерческого директора по B2B и дилерской сети автомобильных плёнок; вакансия прямо называет UNIONDELTA / ООО «Проф-Тон Групп».","url":"https://moskva.jobrun.ru/коммерческий-директор-управляющей-компании-гостиничной-сети-работа","source":"Current 2026 HH-derived job-board listing"},
+        {"type":"CONTACT","claim":"Официальные реквизиты публикуют +7 (495) 540-48-05, info@prof-ton.com, а UNIONDELTA публикует sales@uniondelta.ru и московский адрес.","url":"https://www.uniondelta.ru/company/rekvizity/","source":"Official UNIONDELTA/PROF-TON site"}
+      ]
+    }
+  ]
 }
