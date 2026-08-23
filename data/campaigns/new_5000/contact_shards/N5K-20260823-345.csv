@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0413,N5K-0413-C01,TELEOFIS / Телеофис,7726593280,,Корпоративный маршрут,+7 (495) 950-58-95,Phone,Corporate sales route,Official TELEOFIS website,https://teleofis.ru/,NO,HIGH,2026-08-23,Официальный телефон отдела продаж,N5K-20260823-345,new_5000
+N5K-0413,N5K-0413-C02,TELEOFIS / Телеофис,7726593280,,Корпоративный маршрут,post@teleofis.ru,Email,Corporate route,Official TELEOFIS website,https://teleofis.ru/,NO,HIGH,2026-08-23,Официальный корпоративный email,N5K-20260823-345,new_5000
+N5K-0413,N5K-0413-C03,TELEOFIS / Телеофис,7726593280,,Корпоративный маршрут,https://teleofis.ru/,Website,Director contact route,Official TELEOFIS website,https://teleofis.ru/,NO,HIGH,2026-08-23,На официальном сайте присутствует маршрут «Написать директору»,N5K-20260823-345,new_5000
