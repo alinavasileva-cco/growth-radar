@@ -1,6 +1,6 @@
 {
-  "run_id": "N5K-20260823-350",
-  "updated_at": "2026-08-23T13:16:00+05:00",
+  "run_id": "N5K-20260823-351",
+  "updated_at": "2026-08-23T14:20:00+05:00",
   "funnel": {
     "discovered": 12,
     "fast_gate_passed": 4,
@@ -13,93 +13,93 @@
     "duplicates": 1,
     "excluded": 10
   },
-  "notes": "RUN 350 started from verified physical baseline RUN 349: 271/271, integrity PASS, orphan contacts/evidence 0/0. Twelve named company signals were individually reviewed across fresh vacancy/job-board, official company and current legal/financial sources. One Marking was not qualified because fresh employee scale could not be confirmed above the working size threshold; a 2024 source showed only 3 employees. Previously integrated companies appearing in current vacancy feeds were treated as duplicates and not deep-checked again. ООО «СМАРТ СНАБ ГРУПП» passed current legal, 2025 scale, S2 growth/expansion signal, CEO/owner LPR and official contact-route checks. Revenue grew 66.7% in 2025 to 462.794m RUB; current FNS-derived data show 10 employees. The company operates a multi-city B2B industrial supply network and continues B2B sales hiring/activity in 2026. GitHub code search for INN 7810959398 and exact legal name returned no existing record; final physical integration guard remains mandatory. The 150–200 raw target was not reached and is not claimed. No outreach.",
+  "notes": "RUN 351 started from verified physical baseline RUN 350: 272/272, integrity PASS, orphan contacts/evidence 0/0. Twelve named company signals were individually reviewed across fresh vacancy/job-board, official company and current legal/financial sources. Existing companies from recent feeds were removed before deep-check where confirmed. Kaliningrad Packaging Factory was not qualified because current legal-status sources conflict (one current source marks the legal entity in bankruptcy while another marks it active), so stale/ambiguous status was not used. Residence Zhukovka was not qualified because the public reservation site identifies a tourism operator rather than unambiguously proving the operating hotel legal entity. ООО «КОНКУРЕНТНЫЕ ЗАКУПКИ» passed current legal, 2025 scale, fresh S2 new-product-direction signal, owner/CEO LPR and practical official contact-route checks. GitHub code search for INN 9705008037 and exact legal name returned no existing record; final physical integration guard remains mandatory. The 150–200 raw target was not reached and is not claimed. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0418",
-      "Brand": "Смарт Снаб Групп / SmartSnab",
-      "Legal Name": "ООО «СМАРТ СНАБ ГРУПП»",
-      "INN": "7810959398",
-      "OGRN/OGRNIP": "1227800155923",
-      "Region": "Санкт-Петербург",
-      "City": "Санкт-Петербург",
-      "Segment": "Промышленные поставки / металлопрокат / металлообработка / B2B",
-      "Website": "https://spb.sm-snab.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 462,794 млн ₽, прибыль 13,492 млн ₽; свежие ФНС-derived сведения указывают ССЧ 10 сотрудников. Группа ведёт B2B-поставки промышленным и производственным предприятиям и имеет филиальную сеть в нескольких городах России.",
+      "Lead ID": "N5K-0419",
+      "Brand": "Конкурентные Закупки",
+      "Legal Name": "ООО «КОНКУРЕНТНЫЕ ЗАКУПКИ»",
+      "INN": "9705008037",
+      "OGRN/OGRNIP": "5147746376014",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "B2B-консалтинг / тендерное сопровождение / AI-продукты для закупок",
+      "Website": "https://tender.k-zakupki.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 92,829 млн ₽; среднесписочная численность 71 сотрудник; малое предприятие. Компания оказывает B2B-услуги по тендерному сопровождению и закупкам.",
       "Signal Level": "S2",
-      "Signal Summary": "В 2025 году выручка выросла на 66,7% до 462,794 млн ₽. В 2026 компания сохраняет активный B2B-sales контур, публично описывает филиальную сеть в 6 городах и карьерный трек продаж до РОПа/директора филиала; это подтверждает продолжающееся масштабирование коммерческой сети и продаж.",
-      "Signal Date": "2026-07-16",
-      "Signal Source": "https://spb.hh.ru/employer/9418383",
-      "Owner": "Семенов Дмитрий Сергеевич и Прохоров Александр Александрович — участники общества по актуальным сведениям 2026",
-      "CEO": "Семенов Дмитрий Сергеевич — директор",
-      "LPR": "Семенов Дмитрий Сергеевич",
-      "LPR Role": "Директор / совладелец",
-      "Primary Phone": "+7 (812) 214-82-21",
-      "Primary Email": "spb@sm-snab.ru",
-      "HH Contact": "https://spb.hh.ru/employer/9418383",
-      "Contact Form": "https://spb.sm-snab.ru/contact-us",
-      "Contact Type": "Официальный корпоративный телефон + email + форма сайта + employer route",
-      "Contact Source": "Официальный сайт Смарт Снаб Групп + HH employer profile",
-      "Consulting Hypothesis": "Систематизация быстро растущей филиальной B2B-сети: единый commercial operating model, управление воронкой и маржинальностью по филиалам, стандарты KPI/CRM, развитие РОПов и масштабирование продаж без потери управляемости.",
+      "Signal Summary": "В августе 2026 компания запускает новое направление AI-продуктов для автоматизации подбора тендеров и подготовки к закупкам и нанимает сотрудников для внедрения и первичного сопровождения клиентов. Это подтверждает новый коммерческий продуктовый контур и необходимость построения масштабируемой клиентской функции.",
+      "Signal Date": "2026-08-13",
+      "Signal Source": "https://dreamjob.ru/employers/115640/vakansii/136004717",
+      "Owner": "Зайнулин Рустам Николаевич — 100% участник общества",
+      "CEO": "Зайнулин Рустам Николаевич — генеральный директор",
+      "LPR": "Зайнулин Рустам Николаевич",
+      "LPR Role": "Собственник 100% / генеральный директор",
+      "Primary Phone": "+7 (495) 987-36-13",
+      "Primary Email": "client@k-zakupki.ru",
+      "HH Contact": "https://dreamjob.ru/employers/115640/vakansii/136004717",
+      "Contact Form": "https://tender.k-zakupki.ru/",
+      "Contact Type": "Официальный корпоративный email + публичный корпоративный телефон + текущий employer route",
+      "Contact Source": "Официальный сайт Конкурентные Закупки + карточка организации с реквизитами + текущая вакансия",
+      "Consulting Hypothesis": "Запуск и масштабирование нового AI-направления: commercial operating model, сегментация и ICP, воронка внедрения, customer success/onboarding, связка sales-product-service, KPI и экономика нового продукта.",
       "contacts": [
         {
-          "value": "+7 (812) 214-82-21",
-          "channel": "Phone",
-          "type": "Official corporate route",
-          "source": "Official website",
-          "url": "https://spb.sm-snab.ru/contact-us",
-          "is_lpr": false,
-          "notes": "Официальный телефон Санкт-Петербургского офиса ООО «СМАРТ СНАБ ГРУПП»"
-        },
-        {
-          "value": "spb@sm-snab.ru",
+          "value": "client@k-zakupki.ru",
           "channel": "Email",
           "type": "Official corporate route",
           "source": "Official website",
-          "url": "https://spb.sm-snab.ru/contact-us",
+          "url": "https://tender.k-zakupki.ru/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный email Санкт-Петербургского офиса"
+          "notes": "Публичный корпоративный email ООО «КОНКУРЕНТНЫЕ ЗАКУПКИ»"
         },
         {
-          "value": "https://spb.hh.ru/employer/9418383",
+          "value": "+7 (495) 987-36-13",
+          "channel": "Phone",
+          "type": "Public corporate route",
+          "source": "Company card with legal requisites",
+          "url": "https://konkurentnye-zakupki.clients.site/",
+          "is_lpr": false,
+          "notes": "Публичный телефон карточки ООО «КОНКУРЕНТНЫЕ ЗАКУПКИ», ИНН 9705008037"
+        },
+        {
+          "value": "https://dreamjob.ru/employers/115640/vakansii/136004717",
           "channel": "Vacancy",
           "type": "Current employer route",
-          "source": "HeadHunter employer profile",
-          "url": "https://spb.hh.ru/employer/9418383",
+          "source": "DreamJob / HH-linked vacancy",
+          "url": "https://dreamjob.ru/employers/115640/vakansii/136004717",
           "is_lpr": false,
-          "notes": "Текущий профиль работодателя с B2B industrial-sales контуром"
+          "notes": "Свежая вакансия нового AI-направления, август 2026"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «СМАРТ СНАБ ГРУПП», ИНН 7810959398, ОГРН 1227800155923, действует; директор — Семенов Дмитрий Сергеевич. Актуальные сведения 2026 также указывают участников Семенова Дмитрия Сергеевича и Прохорова Александра Александровича.",
-          "url": "https://saby.ru/profile/7810959398-781001001",
-          "source": "Saby / актуальные ЕГРЮЛ-сведения"
+          "claim": "ООО «КОНКУРЕНТНЫЕ ЗАКУПКИ», ИНН 9705008037, ОГРН 5147746376014, действует; генеральный директор и 100% участник — Зайнулин Рустам Николаевич.",
+          "url": "https://companies.rbc.ru/id/5147746376014-ooo-konkurentnyie-zakupki/",
+          "source": "РБК Компании / актуальные ЕГРЮЛ-derived сведения"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "За 2025 год выручка 462,794 млн ₽, прибыль 13,492 млн ₽; свежие сведения ФНС показывают ССЧ 10 сотрудников.",
-          "url": "https://xn----7sbfbqq4deedd2d1bu.xn--p1ai/vipiska-egrul/1227800155923/",
-          "source": "ФНС-derived выписка / 2026"
+          "claim": "За 2025 год выручка 92,829 млн ₽; ССЧ 71 сотрудник; категория МСП — малое предприятие.",
+          "url": "https://companies.rbc.ru/id/5147746376014-ooo-konkurentnyie-zakupki/",
+          "source": "РБК Компании / бухгалтерская отчетность 2025 и реестр МСП"
         },
         {
           "type": "SIGNAL",
-          "claim": "Выручка 2025 выросла на 66,7%; компания поддерживает филиальную B2B-сеть в нескольких городах и в 2026 сохраняет активный коммерческий найм/карьерный контур продаж до РОПа и директора филиала.",
-          "url": "https://spb.hh.ru/employer/9418383",
-          "source": "HeadHunter employer profile + актуальные финансовые сведения 2025"
+          "claim": "13 августа 2026 компания публично сообщила о запуске нового направления AI-продуктов для автоматизации подбора тендеров и подготовки к закупкам и нанимает сотрудника для внедрения и сопровождения клиентов.",
+          "url": "https://dreamjob.ru/employers/115640/vakansii/136004717",
+          "source": "DreamJob / HH-linked current vacancy"
         },
         {
           "type": "LPR",
-          "claim": "Семенов Дмитрий Сергеевич — действующий директор и совладелец ООО «СМАРТ СНАБ ГРУПП».",
-          "url": "https://saby.ru/profile/7810959398-781001001",
-          "source": "Saby / ЕГРЮЛ"
+          "claim": "Зайнулин Рустам Николаевич — генеральный директор и единственный участник ООО «КОНКУРЕНТНЫЕ ЗАКУПКИ».",
+          "url": "https://saby.ru/profile/9705008037-770501001",
+          "source": "Saby / актуальные ЕГРЮЛ-derived сведения"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт ООО «СМАРТ СНАБ ГРУПП» публикует ИНН 7810959398, ОГРН 1227800155923, телефон +7 (812) 214-82-21, email spb@sm-snab.ru и форму обращения.",
-          "url": "https://spb.sm-snab.ru/contact-us",
-          "source": "Официальный сайт ООО «СМАРТ СНАБ ГРУПП»"
+          "claim": "Официальный сайт публикует корпоративный email client@k-zakupki.ru; публичная карточка организации с ИНН 9705008037 публикует телефон +7 (495) 987-36-13; свежая вакансия обеспечивает текущий employer route.",
+          "url": "https://tender.k-zakupki.ru/",
+          "source": "Официальный сайт + company card + current vacancy"
         }
       ]
     }
