@@ -1,111 +1,111 @@
 {
-  "run_id": "N5K-20260823-337",
-  "updated_at": "2026-08-23T04:40:00+05:00",
+  "run_id": "N5K-20260823-338",
+  "updated_at": "2026-08-23T05:00:00+05:00",
   "funnel": {
-    "discovered": 17,
-    "fast_gate_passed": 4,
-    "size_check_passed": 2,
+    "discovered": 18,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
     "legal_match_passed": 2,
-    "signal_confirmed": 2,
+    "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 0,
-    "excluded": 16
+    "duplicates": 4,
+    "excluded": 13
   },
-  "notes": "RUN 337 continues from verified physical baseline 257/257 after completed RUN 336. 17 distinct current company/employer signals were actually inspected from August 2026 job-board discovery. Four candidates passed initial FAST GATE for deeper checking. Лескрафт was excluded on current scale (2025 revenue about 2.0 bn RUB, outside the active ICP); ГидроЭнергоСистемы was excluded because current brand-to-legal continuity/scale is ambiguous after migration between legal entities; Hookahtrade was not advanced because current financial capacity was not independently confirmed in this cycle. Миросад / ИП Рашитов Артур Ильдусович passed repository dedup by INN, current legal status, operational scale, direct owner-first B2B scaling signal, owner/LPR and practical company contact routes. No outreach.",
+  "notes": "RUN 338 continues from verified physical baseline 258/258 after completed RUN 337. 18 distinct current employer/company signals were individually screened from current August 2026 job-board discovery. Known previously qualified brands visible in the pool were treated as duplicates before deep-check. ООО Агро-Спутник passed current legal status, scale, direct current CCO signal, owner/LPR, practical official contact route and repository searches by INN and OGRN. Current CEO used is Сергей Александрович Гончаров; older conflicting CEO data was excluded. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0404",
-      "Brand": "Миросад / Mirosad",
-      "Legal Name": "ИП Рашитов Артур Ильдусович",
-      "INN": "020504423505",
-      "OGRN/OGRNIP": "321028000066131",
-      "Region": "Республика Башкортостан / операционная география РФ",
-      "City": "Казань / Москва и Московская область",
-      "Segment": "Питомник растений / ландшафтное благоустройство / B2B",
-      "Website": "https://mirosad.ru/",
-      "Revenue/Scale": "Действующий ИП с 2021 года; бренд выращивает растения более 10 лет, реализовал 130+ ландшафтных проектов, имеет штат архитекторов, собственный питомник и поставки/озеленение объектов по России; отдельное B2B-направление активно масштабируется.",
+      "Lead ID": "N5K-0405",
+      "Brand": "Агро-Спутник / Богучарские",
+      "Legal Name": "ООО «АГРО - СПУТНИК»",
+      "INN": "3603006840",
+      "OGRN/OGRNIP": "1023601072351",
+      "Region": "Воронежская область",
+      "City": "с. Дьяченково / Воронеж",
+      "Segment": "Пищевое производство / снеки и кондитерские изделия / федеральная дистрибуция",
+      "Website": "https://agrosputnik.ru/",
+      "Revenue/Scale": "Действующее ООО; выручка за 2025 год 2 349 392 000 руб.; актуальные источники указывают 145-217 сотрудников; 2 завода, 60+ регионов РФ и СНГ, 65+ SKU, около 20 000 тонн продукции в год.",
       "Signal Level": "S1",
-      "Signal Summary": "В июле 2026 Миросад прямо заявил, что активно развивает B2B-направление и строит систему, которая позволит масштабировать отдел продаж независимо от собственника; роль работает напрямую с собственником и должна создавать Академию продаж, регламенты и процессы адаптации.",
-      "Signal Date": "2026-07-16",
-      "Signal Source": "https://finder.work/vacancies/33019377",
-      "Owner": "Рашитов Артур Ильдусович — индивидуальный предприниматель и владелец бизнеса",
-      "CEO": "Рашитов Артур Ильдусович — ИП / собственник",
-      "LPR": "Рашитов Артур Ильдусович",
-      "LPR Role": "Собственник / ИП",
-      "Primary Phone": "+7 (962) 522-97-65",
-      "Primary Email": "info@miro-sad.ru",
-      "HH Contact": "https://dreamjob.ru/employers/3230725/vakansii/136080127",
-      "Contact Form": "https://mirosad.ru/",
-      "Contact Type": "Corporate phone/email/form + current employer vacancy route",
-      "Contact Source": "Official Mirosad site + current 2026 employer vacancies",
-      "Consulting Hypothesis": "Систематизация и масштабирование B2B-направления: сегментация корпоративных клиентов, CRM-воронка, Академия продаж и адаптация, KPI/мотивация, экономика проектов и 90-дневный план снижения зависимости продаж от собственника.",
+      "Signal Summary": "28 июля 2026 компания разместила вакансию коммерческого директора (CCO) с ответственностью за планы продаж, маржинальную прибыль и ключевые коммерческие KPI на фоне федерального масштаба бизнеса.",
+      "Signal Date": "2026-07-28",
+      "Signal Source": "https://dreamjob.ru/employers/164642/vakansii/135630531",
+      "Owner": "Пешиков Александр Александрович — учредитель 100% по актуальному профилю компании",
+      "CEO": "Гончаров Сергей Александрович — генеральный директор по актуальным данным ЕГРЮЛ; старые сведения о Коротунове исключены",
+      "LPR": "Гончаров Сергей Александрович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (47366) 2-85-31",
+      "Primary Email": "info@agrosputnik.ru",
+      "HH Contact": "https://dreamjob.ru/employers/164642/vakansii/135630531",
+      "Contact Form": "https://agrosputnik.ru/ru/clients/",
+      "Contact Type": "Official corporate phone/email/form + current employer vacancy route",
+      "Contact Source": "Official Agro-Sputnik site/privacy policy + current 2026 employer vacancy",
+      "Consulting Hypothesis": "Коммерческая трансформация федерального FMCG-производителя: декомпозиция выручки и маржи по каналам/регионам/SKU, управление дистрибуцией, KPI коммерческого блока, CRM/аналитика, портфель и 90-дневный план роста эффективности продаж.",
       "contacts": [
         {
-          "value": "+7 (962) 522-97-65",
+          "value": "+7 (47366) 2-85-31",
           "channel": "Phone",
           "type": "Corporate phone",
-          "source": "Official Mirosad site",
-          "url": "https://mirosad.ru/",
+          "source": "Official Agro-Sputnik privacy policy dated 2025-05-27",
+          "url": "https://www.agrosputnik.ru/media/policy.pdf",
           "is_lpr": false,
-          "notes": "Official company route"
+          "notes": "Official operator contact; still published by company"
         },
         {
-          "value": "info@miro-sad.ru",
+          "value": "info@agrosputnik.ru",
           "channel": "Email",
           "type": "Corporate email",
-          "source": "Official Mirosad site",
-          "url": "https://mirosad.ru/",
+          "source": "Official Agro-Sputnik privacy policy / site",
+          "url": "https://www.agrosputnik.ru/media/policy.pdf",
           "is_lpr": false,
-          "notes": "Official company route"
+          "notes": "Official corporate route"
         },
         {
-          "value": "https://dreamjob.ru/employers/3230725/vakansii/136080127",
+          "value": "https://dreamjob.ru/employers/164642/vakansii/135630531",
           "channel": "Job board",
           "type": "Current employer vacancy route",
-          "source": "DreamJob / HH-linked current vacancy",
-          "url": "https://dreamjob.ru/employers/3230725/vakansii/136080127",
+          "source": "DreamJob / HH-linked vacancy",
+          "url": "https://dreamjob.ru/employers/164642/vakansii/135630531",
           "is_lpr": false,
-          "notes": "Current B2B sales vacancy under employer Миросад"
+          "notes": "Current CCO vacancy dated 2026-07-28"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ИП Рашитов Артур Ильдусович, ИНН 020504423505, ОГРНИП 321028000066131, действует; зарегистрирован 19.04.2021.",
-          "url": "https://check.tochka.com/company/321028000066131/",
-          "source": "Tochka current contractor profile"
+          "claim": "ООО Агро-Спутник, ИНН 3603006840, ОГРН 1023601072351, действует; актуальный генеральный директор — Гончаров Сергей Александрович.",
+          "url": "https://saby.ru/profile/3603006840-360301001",
+          "source": "Saby current profile crawled 2026-08"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт Mirosad прямо указывает ИП Рашитов Артур Ильдусович, ИНН 020504423505 и ОГРНИП 321028000066131.",
-          "url": "https://mirosad.ru/",
-          "source": "Official Mirosad site"
+          "claim": "Официальный сайт agrosputnik.ru прямо указывает ООО Агро-Спутник, ИНН 3603006840 и ОГРН 1023601072351.",
+          "url": "https://agrosputnik.ru/ru/clients/",
+          "source": "Official Agro-Sputnik site"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "Официальные страницы бренда указывают более 10 лет выращивания растений, 130+ реализованных проектов, штат архитекторов, собственный питомник и услуги озеленения/благоустройства; вакансия 2026 подтверждает работу по объектам по всей России.",
-          "url": "https://mirosad.ru/tui",
-          "source": "Official Mirosad site + current 2026 employer vacancy"
+          "claim": "Выручка за 2025 год 2 349 392 000 руб.; компания имеет два завода, 60+ регионов присутствия, 65+ SKU и около 20 000 тонн продукции в год.",
+          "url": "https://companies.rbc.ru/id/1023601072351-ooo-agro-sputnik/",
+          "source": "RBC Companies current financial profile + official company site"
         },
         {
           "type": "OWNER_LPR",
-          "claim": "Рашитов Артур Ильдусович является действующим индивидуальным предпринимателем; официальный сайт использует его ИП как юридическую основу бренда.",
-          "url": "https://www.tbank.ru/business/contractor/legal/321028000066131/",
-          "source": "T-Bank current contractor profile + official site"
+          "claim": "Учредитель 100% — Пешиков Александр Александрович; актуальный генеральный директор — Гончаров Сергей Александрович. Старые сведения о другом CEO не используются.",
+          "url": "https://xfirm.ru/company/3603006840",
+          "source": "Current legal profile based on EGRUL/FNS data"
         },
         {
           "type": "SIGNAL",
-          "claim": "Вакансия от 16 July 2026 прямо говорит, что Миросад активно развивает B2B-направление, строит систему масштабирования отдела продаж независимо от собственника и создаёт Академию продаж/регламенты; работа напрямую с собственником.",
-          "url": "https://finder.work/vacancies/33019377",
-          "source": "Finder current 2026 employer vacancy"
+          "claim": "Вакансия коммерческого директора (CCO) от 28 July 2026 включает выполнение коммерческих целей, планов продаж, маржинальной прибыли и ключевых KPI.",
+          "url": "https://dreamjob.ru/employers/164642/vakansii/135630531",
+          "source": "Current 2026 employer vacancy"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт публикует корпоративный телефон +7 (962) 522-97-65, email info@miro-sad.ru и форму связи; текущая B2B-вакансия даёт дополнительный employer route.",
-          "url": "https://mirosad.ru/",
-          "source": "Official Mirosad site"
+          "claim": "Официальное положение по персональным данным компании публикует +7 (47366) 2-85-31, info@agrosputnik.ru и agrosputnik.ru; сайт также содержит форму обращения.",
+          "url": "https://www.agrosputnik.ru/media/policy.pdf",
+          "source": "Official Agro-Sputnik document/site"
         }
       ]
     }
