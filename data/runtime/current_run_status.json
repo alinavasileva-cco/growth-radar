@@ -1,39 +1,38 @@
 {
-  "run_id": "N5K-20260824-365",
+  "run_id": "N5K-20260824-366",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T03:00:00+05:00",
+  "updated_at": "2026-08-24T04:04:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 293,
-    "current_contactable_count": 293,
-    "progress_added": 293,
-    "remaining": 4707
+    "current_canonical_count": 294,
+    "current_contactable_count": 294,
+    "progress_added": 294,
+    "remaining": 4706
   },
   "funnel": {
-    "discovered": 38,
-    "fast_gate_passed": 8,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 7,
-    "excluded": 29
+    "discovered": 24,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 4,
+    "excluded": 19
   },
   "qualified_companies": [
-    "Корос Груп / Bertazzoni distribution group",
-    "TERMINUS / Терминус"
+    "Хоупак / Houpack"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "293_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "293_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "294_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "294_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
