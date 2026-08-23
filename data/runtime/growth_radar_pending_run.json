@@ -1,95 +1,10 @@
 {
   "run_id": "N5K-20260823-361",
-  "updated_at": "2026-08-23T23:18:00+05:00",
-  "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 4,
-    "excluded": 18
-  },
-  "notes": "RUN 361 starts from verified physical baseline RUN 360: 286/286, integrity PASS, orphan 0/0, HEAD bbbc23fa2c232e82757d1b3aaa263534b473c12a. Discovery used current August 2026 Head of Sales/B2B/commercial vacancy streams plus current official sites and legal profiles. Known physical duplicates, recruiters, weak-scale and ambiguous legal matches were rejected before deep-check. Galala Brand and RadiantMove passed current legal identity, operational scale, fresh sales-leadership signal, owner/LPR and practical contact-route checks. Final physical integration guard remains authoritative. No outreach.",
+  "updated_at": "2026-08-23T23:21:00+05:00",
+  "funnel": {"discovered":24,"fast_gate_passed":6,"size_check_passed":3,"legal_match_passed":3,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":4,"excluded":18},
+  "notes": "RUN 361 verified batch; baseline RUN 360 = 286/286 PASS orphan 0/0. Galala Brand and RadiantMove remain staged for authoritative physical integration guard. Retrigger only; no outreach.",
   "qualified_companies": [
-    {
-      "Lead ID": "N5K-0433",
-      "Brand": "Galala Brand",
-      "Legal Name": "ИП Стародуб Галина Николаевна",
-      "INN": "237001939023",
-      "OGRN/OGRNIP": "320237500110018",
-      "Region": "Краснодарский край",
-      "City": "Краснодар",
-      "Segment": "D2C/B2C fashion production and marketplace commerce with wholesale capability",
-      "Website": "https://www.wildberries.ru/brands/galala",
-      "Revenue/Scale": "Действующий ИП; работодатель указывает размер компании 20–100 человек; собственная разработка и производство одежды; по итогам 2025 года бренд входил в топ-50 продавцов Wildberries и топ-100 селлеров, ассортимент 250 активных SKU; реализовано более 1,3 млн изделий на WB/Ozon по актуальному профилю компании.",
-      "Signal Level": "S1",
-      "Signal Summary": "17–18 августа 2026 Galala Brand опубликовал вакансию Руководителя отдела продаж / РОП / Head of Sales по маркетплейсам с непосредственным подчинением собственнику; компания расширяет ассортимент и каналы и требует руководителя для роста продаж и коммерческой эффективности.",
-      "Signal Date": "2026-08-18",
-      "Signal Source": "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh?per-page=50&tab=main",
-      "Owner": "Стародуб Галина Николаевна — ИП и владелец бизнеса",
-      "CEO": "Стародуб Галина Николаевна",
-      "LPR": "Стародуб Галина Николаевна",
-      "LPR Role": "Индивидуальный предприниматель / собственник",
-      "Primary Phone": "",
-      "Primary Email": "starodub0710@mail.ru",
-      "HH Contact": "Current August 2026 Galala Brand Head of Sales vacancy route",
-      "Contact Form": "https://hh.ru/employer/9670129",
-      "Contact Type": "Current employer vacancy route + public business email",
-      "Contact Source": "HH employer profile / current vacancy + current legal profile",
-      "Consulting Hypothesis": "Систематизация коммерческой функции fashion/e-commerce: SKU-экономика, marketplace portfolio, CRM/pipeline, KPI руководителя продаж, план-факт, развитие B2B/private-label каналов и рост маржинальности.",
-      "contacts": [
-        {"value": "starodub0710@mail.ru", "channel": "Email", "type": "Public business email", "source": "Current legal/business profile", "url": "https://reputation.ru/inn/237001939023/320237500110018", "is_lpr": true, "notes": "Public email associated with active IP owner"},
-        {"value": "Current August 2026 Galala Brand Head of Sales vacancy route", "channel": "Vacancy", "type": "Current employer route", "source": "HH / current vacancy mirror", "url": "https://www.domesticstaff.ru/companies/galala-brand/", "is_lpr": false, "notes": "17–18.08.2026 Head of Sales vacancy"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ИП Стародуб Галина Николаевна, ИНН 237001939023, ОГРНИП 320237500110018; действует; основной профиль — производство/продажа одежды.", "url": "https://www.tbank.ru/business/contractor/legal/320237500110018/", "source": "Current registry-based profile"},
-        {"type": "SCALE_CURRENT", "claim": "Galala Brand указывает размер компании 20–100; собственную разработку и производство, топ-50 продавцов WB по итогам 2025 года, 250 активных SKU и более 1,3 млн проданных изделий.", "url": "https://hh.ru/employer/9670129", "source": "Current employer profile"},
-        {"type": "SIGNAL", "claim": "17–18 августа 2026 опубликована вакансия Head of Sales/РОП по marketplace-продажам с прямым подчинением собственнику и задачей роста коммерческой эффективности.", "url": "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh?per-page=50&tab=main", "source": "Current August 2026 vacancy mirror"},
-        {"type": "LPR", "claim": "Галина Николаевна Стародуб — действующий ИП и собственник бизнеса Galala Brand.", "url": "https://companies.rbc.ru/persons/ogrnip/320237500110018-starodub-galina-nikolaevna/", "source": "Registry-based profile"},
-        {"type": "CONTACT", "claim": "Практический маршрут — текущая вакансия работодателя Galala Brand; публичный email ИП: starodub0710@mail.ru.", "url": "https://reputation.ru/inn/237001939023/320237500110018", "source": "Current business/legal profile + current vacancy route"}
-      ]
-    },
-    {
-      "Lead ID": "N5K-0434",
-      "Brand": "RadiantMove",
-      "Legal Name": "ИП Алихел Даниил Ахтарович",
-      "INN": "470423659713",
-      "OGRN/OGRNIP": "321470400075685",
-      "Region": "Республика Калмыкия",
-      "City": "Элиста / Москва operations",
-      "Segment": "Fashion production and marketplace commerce",
-      "Website": "https://www.wildberries.ru/brands/radiantmove",
-      "Revenue/Scale": "Действующий ИП; бренд RadiantMove принадлежит Даниилу Алихелу; текущая вакансия августа 2026 указывает сезонный оборот 50–70 млн ₽ в месяц на Ozon. Исторически вакансия прямого ИП фиксировала 106 млн ₽ продаж за 2024 год; бренд продолжает расширяться на маркетплейсах.",
-      "Signal Level": "S1",
-      "Signal Summary": "16–18 августа 2026 RadiantMove ищет Руководителя отдела продаж/РОП по Ozon, Lamoda, Ozon Select, Яндекс Маркет и UZUM; роль отвечает за прибыль и управление коммерческой системой растущего fashion-бизнеса.",
-      "Signal Date": "2026-08-18",
-      "Signal Source": "https://nesiditsa.ru/vacancy/136281639",
-      "Owner": "Алихел Даниил Ахтарович — ИП и правообладатель товарного знака RadiantMove",
-      "CEO": "Алихел Даниил Ахтарович",
-      "LPR": "Алихел Даниил Ахтарович",
-      "LPR Role": "Индивидуальный предприниматель / собственник бренда",
-      "Primary Phone": "",
-      "Primary Email": "",
-      "HH Contact": "Current August 2026 RadiantMove Head of Sales vacancy route",
-      "Contact Form": "https://dreamjob.ru/employers/5269055",
-      "Contact Type": "Current direct-employer vacancy route",
-      "Contact Source": "Current vacancy / employer profile",
-      "Consulting Hypothesis": "Систематизация marketplace-коммерции: прибыль по категориям, unit economics, ассортиментная стратегия, прогнозирование, KPI sales-команды, переход к мультиканальным продажам и снижение зависимости от одного marketplace.",
-      "contacts": [
-        {"value": "Current August 2026 RadiantMove Head of Sales vacancy route", "channel": "Vacancy", "type": "Current direct-employer route", "source": "Current vacancy mirror", "url": "https://nesiditsa.ru/vacancy/136281639", "is_lpr": false, "notes": "16–18.08.2026 active Head of Sales marketplace vacancy"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "ИП Алихел Даниил Ахтарович, ИНН 470423659713, ОГРНИП 321470400075685; действует.", "url": "https://check.tochka.com/company/321470400075685/", "source": "Current registry-based profile"},
-        {"type": "BRAND_MATCH", "claim": "Товарный знак RadiantMove зарегистрирован на Алихела Даниила Ахтаровича.", "url": "https://companies.rbc.ru/trademark/1138866/radiantmove/", "source": "Trademark registry profile"},
-        {"type": "SCALE_CURRENT", "claim": "В августе 2026 работодатель указывает сезонный оборот 50–70 млн ₽ в месяц на Ozon; ранее прямой профиль ИП фиксировал 106 млн ₽ продаж за 2024 год.", "url": "https://nesiditsa.ru/vacancy/136281639", "source": "Current August 2026 direct-employer vacancy"},
-        {"type": "SIGNAL", "claim": "16–18 августа 2026 опубликована вакансия Руководителя отдела продаж/РОП по нескольким marketplace-каналам; компания находится в стадии роста.", "url": "https://nesiditsa.ru/vacancy/136281639", "source": "Current August 2026 vacancy"},
-        {"type": "LPR", "claim": "Даниил Ахтарович Алихел — действующий ИП и правообладатель бренда RadiantMove.", "url": "https://companies.rbc.ru/trademark/1138866/radiantmove/", "source": "Trademark + registry profiles"},
-        {"type": "CONTACT", "claim": "Практический маршрут связи — текущая прямая вакансия работодателя RadiantMove и профиль работодателя.", "url": "https://dreamjob.ru/employers/5269055", "source": "Current employer vacancy route"}
-      ]
-    }
+    {"Lead ID":"N5K-0433","Brand":"Galala Brand","Legal Name":"ИП Стародуб Галина Николаевна","INN":"237001939023","OGRN/OGRNIP":"320237500110018","Region":"Краснодарский край","City":"Краснодар","Segment":"Fashion production and marketplace commerce","Website":"https://www.wildberries.ru/brands/galala","Revenue/Scale":"Действующий ИП; работодатель указывает размер компании 20–100 человек; собственная разработка и производство одежды; по итогам 2025 бренд входил в топ-50 продавцов Wildberries и топ-100 селлеров, ассортимент 250 активных SKU; реализовано более 1,3 млн изделий.","Signal Level":"S1","Signal Summary":"17–18 августа 2026 опубликована вакансия Руководителя отдела продаж / РОП / Head of Sales по маркетплейсам с непосредственным подчинением собственнику; компания расширяет ассортимент и каналы продаж.","Signal Date":"2026-08-18","Signal Source":"https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh?per-page=50&tab=main","Owner":"Стародуб Галина Николаевна — ИП и владелец бизнеса","CEO":"Стародуб Галина Николаевна","LPR":"Стародуб Галина Николаевна","LPR Role":"Индивидуальный предприниматель / собственник","Primary Phone":"","Primary Email":"starodub0710@mail.ru","HH Contact":"Current August 2026 Galala Brand Head of Sales vacancy route","Contact Form":"https://hh.ru/employer/9670129","Contact Type":"Current employer vacancy route + public business email","Contact Source":"HH employer profile/current vacancy + current legal profile","Consulting Hypothesis":"Систематизация marketplace-коммерции и B2B/private-label: SKU-экономика, CRM/pipeline, KPI, plan-fact, channel mix and margin growth.","contacts":[{"value":"starodub0710@mail.ru","channel":"Email","type":"Public business email","source":"Current legal/business profile","url":"https://reputation.ru/inn/237001939023/320237500110018","is_lpr":true,"notes":"Public email associated with active IP owner"},{"value":"Current August 2026 Galala Brand Head of Sales vacancy route","channel":"Vacancy","type":"Current employer route","source":"Current vacancy mirror","url":"https://www.domesticstaff.ru/companies/galala-brand/","is_lpr":false,"notes":"17–18.08.2026 Head of Sales vacancy"}],"evidence":[{"type":"LEGAL","claim":"ИП Стародуб Галина Николаевна, ИНН 237001939023, ОГРНИП 320237500110018; действует.","url":"https://www.tbank.ru/business/contractor/legal/320237500110018/","source":"Current registry-based profile"},{"type":"SCALE_CURRENT","claim":"Размер компании 20–100; собственное производство; топ-50 WB по итогам 2025; 250 активных SKU; более 1,3 млн проданных изделий.","url":"https://hh.ru/employer/9670129","source":"Current employer profile"},{"type":"SIGNAL","claim":"17–18 августа 2026 опубликована вакансия Head of Sales/РОП marketplace-продаж с прямым подчинением собственнику.","url":"https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh?per-page=50&tab=main","source":"Current August 2026 vacancy mirror"},{"type":"LPR","claim":"Галина Стародуб — действующий ИП и собственник Galala Brand.","url":"https://companies.rbc.ru/persons/ogrnip/320237500110018-starodub-galina-nikolaevna/","source":"Registry-based profile"},{"type":"CONTACT","claim":"Текущая вакансия работодателя + публичный email ИП starodub0710@mail.ru.","url":"https://reputation.ru/inn/237001939023/320237500110018","source":"Current business/legal profile + vacancy route"}]},
+    {"Lead ID":"N5K-0434","Brand":"RadiantMove","Legal Name":"ИП Алихел Даниил Ахтарович","INN":"470423659713","OGRN/OGRNIP":"321470400075685","Region":"Республика Калмыкия","City":"Элиста / Москва operations","Segment":"Fashion production and marketplace commerce","Website":"https://www.wildberries.ru/brands/radiantmove","Revenue/Scale":"Действующий ИП; бренд RadiantMove принадлежит Даниилу Алихелу; текущая вакансия августа 2026 указывает сезонный оборот 50–70 млн ₽ в месяц на Ozon; прямой профиль ИП ранее фиксировал 106 млн ₽ продаж за 2024 год.","Signal Level":"S1","Signal Summary":"16–18 августа 2026 RadiantMove ищет Руководителя отдела продаж/РОП по Ozon, Lamoda, Ozon Select, Яндекс Маркет и UZUM; роль отвечает за прибыль и коммерческую систему растущего fashion-бизнеса.","Signal Date":"2026-08-18","Signal Source":"https://nesiditsa.ru/vacancy/136281639","Owner":"Алихел Даниил Ахтарович — ИП и правообладатель RadiantMove","CEO":"Алихел Даниил Ахтарович","LPR":"Алихел Даниил Ахтарович","LPR Role":"Индивидуальный предприниматель / собственник бренда","Primary Phone":"","Primary Email":"","HH Contact":"Current August 2026 RadiantMove Head of Sales vacancy route","Contact Form":"https://dreamjob.ru/employers/5269055","Contact Type":"Current direct-employer vacancy route","Contact Source":"Current vacancy / employer profile","Consulting Hypothesis":"Систематизация marketplace-коммерции: прибыль по категориям, unit economics, ассортимент, прогнозирование, KPI sales-команды и мультиканальность.","contacts":[{"value":"Current August 2026 RadiantMove Head of Sales vacancy route","channel":"Vacancy","type":"Current direct-employer route","source":"Current vacancy mirror","url":"https://nesiditsa.ru/vacancy/136281639","is_lpr":false,"notes":"16–18.08.2026 Head of Sales marketplace vacancy"}],"evidence":[{"type":"LEGAL","claim":"ИП Алихел Даниил Ахтарович, ИНН 470423659713, ОГРНИП 321470400075685; действует.","url":"https://check.tochka.com/company/321470400075685/","source":"Current registry-based profile"},{"type":"BRAND_MATCH","claim":"Товарный знак RadiantMove зарегистрирован на Алихела Даниила Ахтаровича.","url":"https://companies.rbc.ru/trademark/1138866/radiantmove/","source":"Trademark registry profile"},{"type":"SCALE_CURRENT","claim":"В августе 2026 работодатель указывает сезонный оборот 50–70 млн ₽ в месяц на Ozon; ранее прямой профиль ИП фиксировал 106 млн ₽ продаж за 2024 год.","url":"https://nesiditsa.ru/vacancy/136281639","source":"Current August 2026 direct-employer vacancy"},{"type":"SIGNAL","claim":"16–18 августа 2026 опубликована вакансия Руководителя отдела продаж/РОП по нескольким marketplace-каналам.","url":"https://nesiditsa.ru/vacancy/136281639","source":"Current August 2026 vacancy"},{"type":"LPR","claim":"Даниил Алихел — действующий ИП и правообладатель RadiantMove.","url":"https://companies.rbc.ru/trademark/1138866/radiantmove/","source":"Trademark + registry profiles"},{"type":"CONTACT","claim":"Практический маршрут связи — текущая прямая вакансия работодателя RadiantMove и профиль работодателя.","url":"https://dreamjob.ru/employers/5269055","source":"Current employer vacancy route"}]}
   ]
 }
