@@ -1,105 +1,105 @@
 {
-  "run_id": "N5K-20260823-349",
-  "updated_at": "2026-08-23T12:05:00+05:00",
+  "run_id": "N5K-20260823-350",
+  "updated_at": "2026-08-23T13:16:00+05:00",
   "funnel": {
-    "discovered": 8,
-    "fast_gate_passed": 3,
+    "discovered": 12,
+    "fast_gate_passed": 4,
     "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 0,
-    "excluded": 7
+    "duplicates": 1,
+    "excluded": 10
   },
-  "notes": "RUN 349 started from verified physical baseline RUN 348: 270/270, integrity PASS, orphan contacts/evidence 0/0. Eight named candidates/signals were individually reviewed across fresh vacancy/job-board and company/legal sources. СпецПоддон was not qualified because the accessible same-name legal entity was liquidated and the current brand-to-legal link could not be verified safely. Калининградская фабрика упаковки was excluded because current sources conflict on legal status (bankruptcy/liquidation versus active) and fresh scale is weak. Elite Stone did not yield a reliable Russian brand-to-legal match. Other weak/large/ambiguous signals were not deep-checked. ООО «ЭНЕРГО СИСТЕМЫ» passed current legal, 2025 scale, fresh S1/S2 commercial expansion signal, owner/CEO LPR and official contact-route checks. GitHub code search for INN 7721361920 and brand name returned no existing record; final physical integration guard remains mandatory. The 150–200 raw target was not reached and is not claimed. No outreach.",
+  "notes": "RUN 350 started from verified physical baseline RUN 349: 271/271, integrity PASS, orphan contacts/evidence 0/0. Twelve named company signals were individually reviewed across fresh vacancy/job-board, official company and current legal/financial sources. One Marking was not qualified because fresh employee scale could not be confirmed above the working size threshold; a 2024 source showed only 3 employees. Previously integrated companies appearing in current vacancy feeds were treated as duplicates and not deep-checked again. ООО «СМАРТ СНАБ ГРУПП» passed current legal, 2025 scale, S2 growth/expansion signal, CEO/owner LPR and official contact-route checks. Revenue grew 66.7% in 2025 to 462.794m RUB; current FNS-derived data show 10 employees. The company operates a multi-city B2B industrial supply network and continues B2B sales hiring/activity in 2026. GitHub code search for INN 7810959398 and exact legal name returned no existing record; final physical integration guard remains mandatory. The 150–200 raw target was not reached and is not claimed. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0417",
-      "Brand": "Энерго Системы",
-      "Legal Name": "ООО «ЭНЕРГО СИСТЕМЫ»",
-      "INN": "7721361920",
-      "OGRN/OGRNIP": "1157746912278",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Промышленное оборудование / инженерные решения / B2B",
-      "Website": "https://en-sim.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 674,187 млн ₽, чистая прибыль 39,138 млн ₽, ССЧ 31 сотрудник по свежим сведениям ФНС; малое предприятие. Компания поставляет промышленное оборудование и инженерные решения и показывает рост выручки более чем в 2 раза год к году.",
-      "Signal Level": "S1",
-      "Signal Summary": "21.08.2026 опубликована новая вакансия Руководителя отдела продаж (промышленное оборудование); одновременно в августе компания ведет найм руководителей коммерческих направлений и B2B-проектных продаж. Это прямой сигнал усиления и масштабирования коммерческого блока на фоне быстрого роста выручки.",
-      "Signal Date": "2026-08-21",
-      "Signal Source": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
-      "Owner": "Смирнова Наталья Александровна — единственный учредитель",
-      "CEO": "Смирнова Наталья Александровна — генеральный директор",
-      "LPR": "Смирнова Наталья Александровна",
-      "LPR Role": "Генеральный директор / собственник",
-      "Primary Phone": "+7 (495) 211-03-26",
-      "Primary Email": "",
-      "HH Contact": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
-      "Contact Form": "https://en-sim.ru/shop/",
-      "Contact Type": "Официальный корпоративный телефон + форма сайта + текущий employer vacancy route",
-      "Contact Source": "Официальный сайт ООО «Энерго Системы» + актуальная вакансия 21.08.2026",
-      "Consulting Hypothesis": "Систематизация масштабирования B2B-продаж промышленного оборудования: структура коммерческого блока, роли руководителей направлений, CRM/воронка, маржинальность, проектные продажи, KPI и 90-дневный operating model для роста без потери управляемости.",
+      "Lead ID": "N5K-0418",
+      "Brand": "Смарт Снаб Групп / SmartSnab",
+      "Legal Name": "ООО «СМАРТ СНАБ ГРУПП»",
+      "INN": "7810959398",
+      "OGRN/OGRNIP": "1227800155923",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "Промышленные поставки / металлопрокат / металлообработка / B2B",
+      "Website": "https://spb.sm-snab.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 462,794 млн ₽, прибыль 13,492 млн ₽; свежие ФНС-derived сведения указывают ССЧ 10 сотрудников. Группа ведёт B2B-поставки промышленным и производственным предприятиям и имеет филиальную сеть в нескольких городах России.",
+      "Signal Level": "S2",
+      "Signal Summary": "В 2025 году выручка выросла на 66,7% до 462,794 млн ₽. В 2026 компания сохраняет активный B2B-sales контур, публично описывает филиальную сеть в 6 городах и карьерный трек продаж до РОПа/директора филиала; это подтверждает продолжающееся масштабирование коммерческой сети и продаж.",
+      "Signal Date": "2026-07-16",
+      "Signal Source": "https://spb.hh.ru/employer/9418383",
+      "Owner": "Семенов Дмитрий Сергеевич и Прохоров Александр Александрович — участники общества по актуальным сведениям 2026",
+      "CEO": "Семенов Дмитрий Сергеевич — директор",
+      "LPR": "Семенов Дмитрий Сергеевич",
+      "LPR Role": "Директор / совладелец",
+      "Primary Phone": "+7 (812) 214-82-21",
+      "Primary Email": "spb@sm-snab.ru",
+      "HH Contact": "https://spb.hh.ru/employer/9418383",
+      "Contact Form": "https://spb.sm-snab.ru/contact-us",
+      "Contact Type": "Официальный корпоративный телефон + email + форма сайта + employer route",
+      "Contact Source": "Официальный сайт Смарт Снаб Групп + HH employer profile",
+      "Consulting Hypothesis": "Систематизация быстро растущей филиальной B2B-сети: единый commercial operating model, управление воронкой и маржинальностью по филиалам, стандарты KPI/CRM, развитие РОПов и масштабирование продаж без потери управляемости.",
       "contacts": [
         {
-          "value": "+7 (495) 211-03-26",
+          "value": "+7 (812) 214-82-21",
           "channel": "Phone",
           "type": "Official corporate route",
           "source": "Official website",
-          "url": "https://en-sim.ru/shop/",
+          "url": "https://spb.sm-snab.ru/contact-us",
           "is_lpr": false,
-          "notes": "Корпоративный телефон ООО «Энерго Системы» на официальном сайте"
+          "notes": "Официальный телефон Санкт-Петербургского офиса ООО «СМАРТ СНАБ ГРУПП»"
         },
         {
-          "value": "https://en-sim.ru/shop/",
-          "channel": "Web form",
+          "value": "spb@sm-snab.ru",
+          "channel": "Email",
           "type": "Official corporate route",
           "source": "Official website",
-          "url": "https://en-sim.ru/shop/",
+          "url": "https://spb.sm-snab.ru/contact-us",
           "is_lpr": false,
-          "notes": "Официальная форма заявки/контакта"
+          "notes": "Официальный корпоративный email Санкт-Петербургского офиса"
         },
         {
-          "value": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
+          "value": "https://spb.hh.ru/employer/9418383",
           "channel": "Vacancy",
-          "type": "Current hiring route",
-          "source": "NajtiRaboty / premium-job aggregation",
-          "url": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
+          "type": "Current employer route",
+          "source": "HeadHunter employer profile",
+          "url": "https://spb.hh.ru/employer/9418383",
           "is_lpr": false,
-          "notes": "Актуальная вакансия Руководителя отдела продаж от 21.08.2026"
+          "notes": "Текущий профиль работодателя с B2B industrial-sales контуром"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ЭНЕРГО СИСТЕМЫ», ИНН 7721361920, ОГРН 1157746912278, действует; генеральный директор и учредитель — Смирнова Наталья Александровна.",
-          "url": "https://saby.ru/profile/7721361920-770301001",
+          "claim": "ООО «СМАРТ СНАБ ГРУПП», ИНН 7810959398, ОГРН 1227800155923, действует; директор — Семенов Дмитрий Сергеевич. Актуальные сведения 2026 также указывают участников Семенова Дмитрия Сергеевича и Прохорова Александра Александровича.",
+          "url": "https://saby.ru/profile/7810959398-781001001",
           "source": "Saby / актуальные ЕГРЮЛ-сведения"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "За 2025 год выручка 674,187 млн ₽, чистая прибыль 39,138 млн ₽; свежие сведения ФНС указывают ССЧ 31 сотрудник и статус малого предприятия.",
-          "url": "https://companies.rbc.ru/id/1157746912278-ooo-energo-sistemyi/",
-          "source": "РБК Компании + сведения ФНС 2026"
+          "claim": "За 2025 год выручка 462,794 млн ₽, прибыль 13,492 млн ₽; свежие сведения ФНС показывают ССЧ 10 сотрудников.",
+          "url": "https://xn----7sbfbqq4deedd2d1bu.xn--p1ai/vipiska-egrul/1227800155923/",
+          "source": "ФНС-derived выписка / 2026"
         },
         {
           "type": "SIGNAL",
-          "claim": "21.08.2026 опубликована вакансия Руководителя отдела продаж промышленного оборудования; в августе компания параллельно усиливает коммерческие направления и B2B-проектные продажи.",
-          "url": "https://moskva-i-oblast.najtiraboty.ru/companies/energo-sistemy/",
-          "source": "NajtiRaboty / актуальные вакансии, 21.08.2026"
+          "claim": "Выручка 2025 выросла на 66,7%; компания поддерживает филиальную B2B-сеть в нескольких городах и в 2026 сохраняет активный коммерческий найм/карьерный контур продаж до РОПа и директора филиала.",
+          "url": "https://spb.hh.ru/employer/9418383",
+          "source": "HeadHunter employer profile + актуальные финансовые сведения 2025"
         },
         {
           "type": "LPR",
-          "claim": "Смирнова Наталья Александровна — действующий генеральный директор и единственный учредитель ООО «ЭНЕРГО СИСТЕМЫ».",
-          "url": "https://saby.ru/profile/7721361920-770301001",
+          "claim": "Семенов Дмитрий Сергеевич — действующий директор и совладелец ООО «СМАРТ СНАБ ГРУПП».",
+          "url": "https://saby.ru/profile/7810959398-781001001",
           "source": "Saby / ЕГРЮЛ"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт ООО «Энерго Системы» публикует телефон +7 (495) 211-03-26, адрес в Москва-Сити и форму заявки; ИНН 7721361920 указан в футере сайта.",
-          "url": "https://en-sim.ru/shop/",
-          "source": "Официальный сайт ООО «Энерго Системы»"
+          "claim": "Официальный сайт ООО «СМАРТ СНАБ ГРУПП» публикует ИНН 7810959398, ОГРН 1227800155923, телефон +7 (812) 214-82-21, email spb@sm-snab.ru и форму обращения.",
+          "url": "https://spb.sm-snab.ru/contact-us",
+          "source": "Официальный сайт ООО «СМАРТ СНАБ ГРУПП»"
         }
       ]
     }
