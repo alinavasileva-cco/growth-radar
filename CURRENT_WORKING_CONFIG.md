@@ -53,3 +53,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Out
 Отсев RUN 342: AMMONIT не прошёл текущий scale-check; Авиатрон, Е8 и Парфюм Косметик Сервис находятся выше активного диапазона масштаба; TÜLENEVA не получила достаточно согласованного текущего подтверждения масштаба; Мебельснаб не получил достаточно свежий S1–S3 сигнал; Дизайн Сервис оставлен вне qualified из-за несоответствия масштаба группы и операционного юрлица; Царь Снек не прошёл current legal mapping.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; этот файл содержит актуальное каноническое состояние и правила продолжения.
+
+
+## Latest verified run N5K-20260823-343
+Canonical/contactable: 265/265. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
