@@ -1,39 +1,38 @@
 {
-  "run_id": "N5K-20260823-340",
+  "run_id": "N5K-20260823-341",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T06:41:00+05:00",
+  "updated_at": "2026-08-23T07:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 262,
-    "current_contactable_count": 262,
-    "progress_added": 262,
-    "remaining": 4738
+    "current_canonical_count": 263,
+    "current_contactable_count": 263,
+    "progress_added": 263,
+    "remaining": 4737
   },
   "funnel": {
-    "discovered": 5,
-    "fast_gate_passed": 3,
+    "discovered": 12,
+    "fast_gate_passed": 4,
     "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 0,
-    "excluded": 3
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 3,
+    "excluded": 8
   },
   "qualified_companies": [
-    "ANTEК PROJECT / Антек Проджект",
-    "MDC Planet / Медикал Планет"
+    "ТД Миона / Decor-Mosaic Владивосток"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "262_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "262_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "263_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "263_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

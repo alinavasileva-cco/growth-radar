@@ -57,3 +57,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Out
 Для ANTEK PROJECT использованы актуальные официальные реквизиты, owner-first профиль, текущий масштаб 30+ сотрудников/100+ проектов и финансовый рост. Для MDC Planet использованы актуальный реестровый профиль, официальный бренд→legal match, выручка 225,903 млн ₽ за 2024 год, действующие контакты и свежий сигнал на усиление маркетинговой функции в августе 2026.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history; этот файл содержит актуальное каноническое состояние и правила продолжения.
+
+
+## Latest verified run N5K-20260823-341
+Canonical/contactable: 263/263. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
