@@ -1,111 +1,111 @@
 {
-  "run_id": "N5K-20260823-346",
-  "updated_at": "2026-08-23T10:16:00+05:00",
+  "run_id": "N5K-20260823-347",
+  "updated_at": "2026-08-23T10:57:44+05:00",
   "funnel": {
-    "discovered": 16,
-    "fast_gate_passed": 5,
+    "discovered": 24,
+    "fast_gate_passed": 6,
     "size_check_passed": 3,
     "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 4,
-    "excluded": 11
+    "duplicates": 5,
+    "excluded": 18
   },
-  "notes": "RUN 346 started from verified physical baseline RUN 345: 267/267, integrity PASS, orphan 0/0. Current discovery reviewed distinct employer/company signals including First Alive Collagen, Masterfarbe/Vsekras.ru, Profresurs industrial ecology, AMMONIT, Kaliningrad Packaging Factory, Art City variants, Petro Building Systems and multiple already-known employers from current commercial-director/Head of Sales listings. Existing known companies and ambiguous employer/legal mappings were removed at fast/deep gates. Kaliningrad Packaging Factory was excluded because fresh sources show bankruptcy proceedings and only 3 employees. AMMONIT was excluded because the identified legal entity had insufficient current operating revenue for the active scale profile. Masterfarbe/Vsekras.ru was not promoted because the job-board employer/legal mapping mixes ООО ОПТ 365, Всекраски.ру and Masterfarbe Trade and therefore does not meet the exact brand-to-legal gate. Profresurs industrial-ecology signal was not promoted because the underlying operating legal entity could not be independently established. First Alive Collagen passed current legal, scale, current 2026 growth/channel signal, owner/CEO LPR and official contact-route checks. Repository pre-write search for INN 9731092194 returned no existing indexed record; physical integration guard remains final dedup. No outreach.",
+  "notes": "RUN 347 started from verified physical baseline RUN 346: 268/268, integrity PASS, orphan 0/0. Discovery reviewed current Head of Sales / B2B / international-sales signals across job aggregators and official company sources. Known companies already present in the campaign (including iSmart, Opticus, Sofis, IBMM, LIXIE and Sellerpro) were removed at fast dedup. Weak/ambiguous recruiter-only or brand-to-legal mappings were excluded. Milerd Electronics passed current legal, current 2025 scale, strong August 2026 international B2B expansion signal, current owner/CEO LPR and official contact-route checks. Repository pre-write search for INN 7716949917 returned no existing indexed record; physical integration guard remains final dedup. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0414",
-      "Brand": "Первый Живой Коллаген / COLLA GEN",
-      "Legal Name": "ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН»",
-      "INN": "9731092194",
-      "OGRN/OGRNIP": "1227700256585",
+      "Lead ID": "N5K-0415",
+      "Brand": "Milerd Electronics / Милерд Электроникс",
+      "Legal Name": "ООО «МИЛЕРД ЭЛЕКТРОНИКС»",
+      "INN": "7716949917",
+      "OGRN/OGRNIP": "1207700357875",
       "Region": "Москва",
       "City": "Москва",
-      "Segment": "FMCG / health & beauty / функциональное питание / косметика / производство / B2B и федеральные сети",
-      "Website": "https://firstalivecollagen.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 817 866 000 ₽, чистая прибыль 104 235 000 ₽. Собственное производство в Москве; в 2026 году компания продолжает запуск новых продуктов, развитие каналов продаж и сотрудничество с крупными федеральными сетями.",
-      "Signal Level": "S2",
-      "Signal Summary": "В 2026 году компания активно растёт, запускает новые продукты, развивает каналы продаж и сотрудничество с крупными федеральными сетями; одновременно ведёт набор в оптовые/фармацевтические продажи. В январе 2026 бренд вошёл в программу «Сделано в России» для развития экспортного направления.",
-      "Signal Date": "2026-06-16",
-      "Signal Source": "https://hh.ru/employer/4223831",
-      "Owner": "Соколов Андрей Сергеевич, Артемьева Ирина Александровна и Артемьев Сергей Александрович — действующие участники ООО по актуальным реестровым сведениям; доли в этой записи не заявляются без отдельного подтверждения.",
-      "CEO": "Артемьев Сергей Александрович — генеральный директор",
-      "LPR": "Артемьев Сергей Александрович",
-      "LPR Role": "Генеральный директор / совладелец",
-      "Primary Phone": "8 (800) 600-17-21",
-      "Primary Email": "info@collagen1.ru",
-      "HH Contact": "https://hh.ru/employer/4223831",
-      "Contact Form": "https://firstalivecollagen.ru/",
-      "Contact Type": "Официальный телефон производителя + официальный email + форма сайта + текущий employer route",
-      "Contact Source": "Официальные сайты производителя + HH employer profile",
-      "Consulting Hypothesis": "Систематизация многоканальной коммерческой модели: федеральные сети, фарма, e-commerce и экспорт; сегментация каналов, unit economics и маржинальность, CRM/воронка, KPI коммерческого блока и масштабирование продаж новых продуктов.",
+      "Segment": "Electronics / производство / B2B / international sales / distributors",
+      "Website": "https://milerd.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 28,517 млн ₽ по свежей бухгалтерской отчетности; среднесписочная численность 8 сотрудников за 2025 год. Компания самостоятельно разрабатывает и производит электронику, заявляет продажи более чем в 20 странах и 80 разработанных/серийных моделях.",
+      "Signal Level": "S1",
+      "Signal Summary": "В августе 2026 компания открыла позицию Руководителя международных продаж / Head of International Sales (B2B, электроника) с задачей построить международные B2B-продажи, глобальную сеть дилеров/реселлеров/дистрибьюторов и затем собственную команду международных продаж.",
+      "Signal Date": "2026-08-15",
+      "Signal Source": "https://remote-job.ru/search?search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F+%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D1%85+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6&search%5BsearchType%5D=vacancy",
+      "Owner": "Лихачёв Владислав Олегович — основной участник; также участники Вищаненко Антон Владимирович, Горшков Константин Олегович и ЗПИФ «К3» по актуальной реестровой истории 2026 года.",
+      "CEO": "Лихачёв Владислав Олегович — генеральный директор",
+      "LPR": "Лихачёв Владислав Олегович",
+      "LPR Role": "Генеральный директор / основной собственник",
+      "Primary Phone": "+7 (495) 108-07-82",
+      "Primary Email": "info@milerd.ru",
+      "HH Contact": "https://hh.ru/",
+      "Contact Form": "https://milerd.ru/",
+      "Contact Type": "Официальный корпоративный телефон + email + сайт + текущая vacancy route",
+      "Contact Source": "Official Milerd website + current job-board vacancy",
+      "Consulting Hypothesis": "Построение международной B2B-коммерческой системы: приоритизация рынков, дилерская/дистрибьюторская модель, unit economics экспортного канала, CRM и pipeline, KPI, channel governance и формирование международной sales-команды.",
       "contacts": [
         {
-          "value": "8 (800) 600-17-21",
+          "value": "+7 (495) 108-07-82",
           "channel": "Phone",
-          "type": "Official manufacturer route",
-          "source": "Official First Alive Collagen website",
-          "url": "https://firstalivecollagen.ru/",
+          "type": "Official corporate route",
+          "source": "Official Milerd website",
+          "url": "https://milerd.ru/about/",
           "is_lpr": false,
-          "notes": "Официальный телефон производителя"
+          "notes": "Официальный телефон головного офиса"
         },
         {
-          "value": "info@collagen1.ru",
+          "value": "info@milerd.ru",
           "channel": "Email",
           "type": "Official corporate route",
-          "source": "Official collagen1.ru website",
-          "url": "https://collagen1.ru/",
+          "source": "Official Milerd website",
+          "url": "https://milerd.ru/about/",
           "is_lpr": false,
-          "notes": "Официальный email производителя"
+          "notes": "Официальный корпоративный email"
         },
         {
-          "value": "https://hh.ru/employer/4223831",
-          "channel": "Employer profile",
+          "value": "https://get-works.ru/job-detail.php?vac=136225308",
+          "channel": "Vacancy",
           "type": "Current hiring route",
-          "source": "HH employer profile",
-          "url": "https://hh.ru/employer/4223831",
+          "source": "Current international-sales vacancy",
+          "url": "https://get-works.ru/job-detail.php?vac=136225308",
           "is_lpr": false,
-          "notes": "Актуальный маршрут работодателя"
+          "notes": "Актуальная вакансия международных B2B-продаж"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН», ИНН 9731092194, ОГРН 1227700256585, действует; генеральный директор Артемьев Сергей Александрович.",
-          "url": "https://companies.rbc.ru/id/1227700256585-ooo-pervyij-zhivoj-kollagen/",
-          "source": "РБК Компании / ЕГРЮЛ"
+          "claim": "ООО «МИЛЕРД ЭЛЕКТРОНИКС», ИНН 7716949917, ОГРН 1207700357875, действует; генеральный директор Лихачёв Владислав Олегович.",
+          "url": "https://saby.ru/profile/7716949917-771601001",
+          "source": "Saby / актуальные реестровые данные 2026"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальные сайты производителя прямо указывают ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН», ИНН 9731092194, ОГРН 1227700256585 как производителя бренда Первый Живой Коллаген / COLLA GEN.",
-          "url": "https://collagen1.ru/",
-          "source": "Official manufacturer website"
+          "claim": "Официальный сайт Milerd Electronics прямо указывает ООО «Милерд Электроникс», ИНН 7716949917, ОГРН 1207700357875.",
+          "url": "https://milerd.ru/about/",
+          "source": "Official Milerd website"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "За 2025 год выручка ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН» составила 817 866 000 ₽, чистая прибыль 104 235 000 ₽; производитель продолжает выпуск и регистрацию новых продуктов в 2026 году.",
-          "url": "https://companies.rbc.ru/id/1227700256585-ooo-pervyij-zhivoj-kollagen/",
-          "source": "РБК Компании / бухгалтерская отчетность 2025"
+          "claim": "Бухгалтерская отчетность за 2025 год показывает выручку 28,517 млн ₽; актуальный профиль показывает 8 сотрудников за 2025 год. Официальный сайт заявляет более 20 стран продаж и около 80 разработанных/серийных моделей.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1207700357875/",
+          "source": "T-Bank business profile / 2025 financials + official Milerd website"
         },
         {
           "type": "LPR",
-          "claim": "Артемьев Сергей Александрович указан генеральным директором ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН» в актуальных реестровых и сертификационных данных 2026 года.",
-          "url": "https://xn----7sbajahheyaepn1ca0aveqcb0fxl.xn--p1acf/document/eaes-n-ru-d-rura05v6330026/",
-          "source": "ЕАЭС declaration 22.07.2026"
+          "claim": "Лихачёв Владислав Олегович — действующий генеральный директор и основной участник ООО «Милерд Электроникс» по актуальным реестровым данным 2026 года.",
+          "url": "https://saby.ru/profile/7716949917-771601001",
+          "source": "Saby / реестровые данные 2026"
         },
         {
           "type": "SIGNAL",
-          "claim": "В 2026 году компания активно развивает новые продукты и каналы продаж, сотрудничество с крупными федеральными сетями и экспортное направление; HH-профиль и вакансии фиксируют продолжающийся коммерческий найм.",
-          "url": "https://hh.ru/employer/4223831",
-          "source": "HH employer profile / company updates 2026"
+          "claim": "В августе 2026 компания ищет Руководителя международных продаж / Head of International Sales для построения международной B2B-функции, глобальной дилерской сети и будущей sales-команды.",
+          "url": "https://bebee.com/ru/jobs/head-of-international-sales-b2b--techmap_ru_136225308",
+          "source": "Current vacancy mirror, August 2026"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальные сайты производителя публикуют телефон 8 (800) 600-17-21, email info@collagen1.ru и формы связи.",
-          "url": "https://firstalivecollagen.ru/",
-          "source": "Official manufacturer website"
+          "claim": "Официальный сайт публикует +7 (495) 108-07-82 и info@milerd.ru; текущая вакансия предоставляет актуальный employer/hiring route.",
+          "url": "https://milerd.ru/about/",
+          "source": "Official Milerd website"
         }
       ]
     }
