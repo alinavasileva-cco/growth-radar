@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-23T20:18:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260823-358`  
+**Версия:** 2026-08-23T20:58:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260823-359`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **283 / 283**  
+**Физически подтверждённый canonical/contactable:** **285 / 285**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4717**  
+**Осталось:** **4715**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **283 / 283**;
+- physical canonical/contactable count: **285 / 285**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260823-358`;
+- последний завершённый RUN: `N5K-20260823-359`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -75,7 +75,6 @@ Canonical/contactable: 282/282. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 ## Latest verified run N5K-20260823-358
 Canonical/contactable: 283/283. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
 
 ## Latest verified run N5K-20260823-359
 Canonical/contactable: 285/285. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
