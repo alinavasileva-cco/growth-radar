@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Status,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Outreach Sent,Notes
+N5K-20260824-363,new_5000,COMPLETED,36,3,2,1,1,1,1,5,30,290,290,PASS,0,0,0,RUN 363 from verified RUN 362 baseline 289/289 PASS orphan 0/0. Multi-stream discovery across current August 2026 commercial/sales vacancies and current company/legal sources. Final physical dedup remains authoritative. No outreach.
