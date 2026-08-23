@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260823-351",
+  "run_id": "N5K-20260823-352",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-23T14:20:00+05:00",
+  "updated_at": "2026-08-23T15:25:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 0,
     "target_count": 5000,
-    "current_canonical_count": 273,
-    "current_contactable_count": 273,
-    "progress_added": 273,
-    "remaining": 4727
+    "current_canonical_count": 274,
+    "current_contactable_count": 274,
+    "progress_added": 274,
+    "remaining": 4726
   },
   "funnel": {
-    "discovered": 12,
-    "fast_gate_passed": 4,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
+    "discovered": 24,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 10
+    "duplicates": 3,
+    "excluded": 20
   },
   "qualified_companies": [
-    "Конкурентные Закупки"
+    "Свердловский завод металлоконструкций / СЗМК"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "273_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "273_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "274_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "274_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
