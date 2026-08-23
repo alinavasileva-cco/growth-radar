@@ -1,11 +1,113 @@
 {
-  "run_id": "N5K-20260823-344",
-  "updated_at": "2026-08-23T09:18:00+05:00",
-  "funnel": {"discovered":28,"fast_gate_passed":7,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":5,"excluded":22},
-  "notes": "RUN 344 started from verified physical baseline RUN 343: 265/265, integrity PASS, orphan 0/0. Twenty-eight distinct current company/employer signals were individually reviewed. FAST GATE retained seven; five known/repeated companies were removed. ООО «СВИТ КЭТ ШОП» passed current legal, scale/network, fresh 2026 commercial-leadership signal, owner/CEO/LPR and official contact-route checks. Final pre-write repository search for INN 3702199939, OGRN 1183702010304, brand and domain returned no existing record. Integration trigger retried in the same RUN. No outreach.",
-  "qualified_companies": [{
-    "Lead ID":"N5K-0412","Brand":"Sweet Cat Shop / Свит Кэт Шоп","Legal Name":"ООО «СВИТ КЭТ ШОП»","INN":"3702199939","OGRN/OGRNIP":"1183702010304","Region":"Ивановская область","City":"Иваново","Segment":"омниканальная розничная сеть / собственные товары: канцелярия, подарки, lifestyle","Website":"https://sweetcatshop.ru/","Revenue/Scale":"Действующее частное ООО. По публичным финансовым данным выручка за 2025 год — 18,91 млн ₽; действующие торговые точки подтверждают мультигородскую сеть и собственную разработку/производство товаров. Более свежий профиль РБК указывает ССЧ 30 сотрудников.","Signal Level":"S1","Signal Summary":"21.08.2026 опубликована вакансия Коммерческого директора (CCO) Sweet Cat Shop; компания ищет руководителя коммерческой функции для развития бизнеса.","Signal Date":"2026-08-21","Signal Source":"https://remote-job.ru/search?search%5Bquery%5D=%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80&search%5BsearchType%5D=vacancy","Owner":"Брыков Вячеслав Викторович — 50%; Ромашова Александра Вячеславовна — 50%","CEO":"Брыков Вячеслав Викторович — генеральный директор","LPR":"Брыков Вячеслав Викторович","LPR Role":"Генеральный директор и совладелец 50%","Primary Phone":"+7 (920) 340-71-86","Primary Email":"sweetcatshop@bk.ru","HH Contact":"https://remote-job.ru/search?search%5Bquery%5D=%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80&search%5BsearchType%5D=vacancy","Contact Form":"https://sweetcatshop.ru/","Contact Type":"Официальный корпоративный телефон + email + сайт + текущий маршрут через вакансию; известен CEO/совладелец","Contact Source":"Официальная политика Sweet Cat Shop + текущая вакансия + актуальный профиль юрлица","Consulting Hypothesis":"Систематизация омниканального коммерческого контура: unit economics сети, ассортимент и маржинальность, развитие розницы/e-commerce/франчайзинга, KPI коммерческого блока, CRM и масштабирование регионального присутствия.",
-    "contacts":[{"value":"+7 (920) 340-71-86","channel":"Phone","type":"Corporate route","source":"Official Sweet Cat Shop privacy policy","url":"https://sweetcatshop.ru/assets/privacy.pdf","is_lpr":false,"notes":"Официальный телефон компании"},{"value":"sweetcatshop@bk.ru","channel":"Email","type":"Corporate route","source":"Official Sweet Cat Shop privacy policy","url":"https://sweetcatshop.ru/assets/privacy.pdf","is_lpr":false,"notes":"Официальный корпоративный email"},{"value":"https://remote-job.ru/search?search%5Bquery%5D=%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80&search%5BsearchType%5D=vacancy","channel":"Employer vacancy","type":"Direct employer route","source":"Current vacancy listing","url":"https://remote-job.ru/search?search%5Bquery%5D=%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B8%D0%B9+%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80&search%5BsearchType%5D=vacancy","is_lpr":false,"notes":"Коммерческий директор (CCO), опубликовано 21.08.2026"}],
-    "evidence":[{"type":"LEGAL","claim":"ООО «СВИТ КЭТ ШОП», ИНН 3702199939, ОГРН 1183702010304, действует; генеральный директор Брыков Вячеслав Викторович; учредители Брыков В.В. 50% и Ромашова А.В. 50%.","url":"https://companies.rbc.ru/id/1183702010304-ooo-svit-ket-shop/","source":"РБК Компании / ЕГРЮЛ"},{"type":"BRAND_LEGAL","claim":"Пользовательское соглашение sweetcatshop.ru указывает, что сайт принадлежит ООО «СВИТ КЭТ ШОП».","url":"https://sweetcatshop.ru/assets/oferta.pdf","source":"Official Sweet Cat Shop"},{"type":"SCALE_CURRENT","claim":"Выручка за 2025 год — 18,91 млн ₽; актуальные источники подтверждают действующую мультигородскую сеть и собственные товары; профиль РБК указывает ССЧ 30 сотрудников.","url":"https://www.tbank.ru/business/contractor/legal/1183702010304/","source":"Т-Банк / ФНС + current network sources"},{"type":"OWNER_LPR","claim":"Брыков Вячеслав Викторович — генеральный директор и совладелец 50% ООО «СВИТ КЭТ ШОП»; Ромашова Александра Вячеславовна — совладелец 50%.","url":"https://companies.rbc.ru/amp/ogrn/1183702010304/","source":"РБК Компании / ЕГРЮЛ"},{"type":"SIGNAL","claim":"21.08.2026 Sweet Cat Shop опубликовал вакансию Коммерческого директора (CCO).","url":"https://remote-job.ru/search?search%5Bquery%5D=%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80&search%5BsearchType%5D=vacancy","source":"Current vacancy listing"},{"type":"CONTACT","claim":"Официальная политика Sweet Cat Shop публикует телефон +7 (920) 340-71-86 и email sweetcatshop@bk.ru; сайт содержит форму обратной связи.","url":"https://sweetcatshop.ru/assets/privacy.pdf","source":"Official Sweet Cat Shop"}]
-  }]
+  "run_id": "N5K-20260823-345",
+  "updated_at": "2026-08-23T09:47:00+05:00",
+  "funnel": {
+    "discovered": 7,
+    "fast_gate_passed": 3,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 6
+  },
+  "notes": "RUN 345 started from verified physical baseline RUN 344: 266/266, integrity PASS, orphan 0/0. Seven distinct current candidates/signals were individually reviewed in this execution window: TELEOFIS, Za-bota, Dolomit, SpecPoddon, Myakishi, Formfactor Technologies and JoceJoli. FAST GATE retained TELEOFIS, SpecPoddon and Myakishi. TELEOFIS passed current scale and legal/brand match. Myakishi was not promoted because the current operating brand-to-legal/financial mapping is fragmented across legacy entities despite a strong operating footprint. SpecPoddon was not promoted because the current brand-to-legal entity could not be established with sufficient confidence. Za-bota failed current team-size evidence; Dolomit search results produced multiple conflicting legal entities; Formfactor Technologies is a newly registered 2026 entity without sufficient current scale evidence; JoceJoli is above the active revenue range based on its stated 80+ million RUB monthly revenue. TELEOFIS passed legal, scale, fresh 2026 commercial-leadership signal, owner/president LPR and official contact-route checks. Repository pre-write search for INN 7726593280 and TELEOFIS returned no existing record. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0413",
+      "Brand": "TELEOFIS / Телеофис",
+      "Legal Name": "АО «ТЕЛЕОФИС»",
+      "INN": "7726593280",
+      "OGRN/OGRNIP": "1087746486585",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "промышленная электроника / телекоммуникационное оборудование / M2M / IoT / B2B",
+      "Website": "https://teleofis.ru/",
+      "Revenue/Scale": "Действующее частное АО, малое предприятие; собственная разработка и серийное производство промышленного телекоммуникационного оборудования. Выручка за 2025 год 383 081 000 ₽, прибыль 63 991 000 ₽; 1 филиал; 20+ лет работы.",
+      "Signal Level": "S1",
+      "Signal Summary": "12.08.2026 TELEOFIS открыла вакансию Коммерческого директора с целью выстроить долгосрочную коммерческую стратегию и обеспечить управляемый рост выручки; задачи включают стратегию на 3–5 лет, коммерческое планирование и управление ростом.",
+      "Signal Date": "2026-08-12",
+      "Signal Source": "https://facancy.ru/vacancies/kommercheskii-direktor-v-kompaniiu-razrabotchik-besprovodnogo-oborudovaniia-teleofis",
+      "Owner": "Колесников Андрей Александрович — контролирующий собственник связанной структуры и президент АО «Телеофис» по официальным реквизитам; структура собственности АО непублична в открытом ЕГРЮЛ, поэтому доля не заявляется.",
+      "CEO": "Колесников Андрей Александрович — президент АО «Телеофис»",
+      "LPR": "Колесников Андрей Александрович",
+      "LPR Role": "Президент / руководитель АО «Телеофис»",
+      "Primary Phone": "+7 (495) 950-58-95",
+      "Primary Email": "post@teleofis.ru",
+      "HH Contact": "https://facancy.ru/vacancies/kommercheskii-direktor-v-kompaniiu-razrabotchik-besprovodnogo-oborudovaniia-teleofis",
+      "Contact Form": "https://teleofis.ru/",
+      "Contact Type": "Официальный корпоративный телефон + email + форма/ссылка «Написать директору» + текущая вакансия; известен президент/ЛПР",
+      "Contact Source": "Официальный сайт TELEOFIS + официальные реквизиты + текущая вакансия",
+      "Consulting Hypothesis": "Коммерческая стратегия на 3–5 лет, сегментация промышленных B2B-рынков, P&L и маржинальность по продуктовым линиям, канальная/партнерская модель, CRM и прогнозирование, KPI коммерческого блока и управляемая программа роста выручки.",
+      "contacts": [
+        {
+          "value": "+7 (495) 950-58-95",
+          "channel": "Phone",
+          "type": "Corporate sales route",
+          "source": "Official TELEOFIS website",
+          "url": "https://teleofis.ru/",
+          "is_lpr": false,
+          "notes": "Официальный телефон отдела продаж"
+        },
+        {
+          "value": "post@teleofis.ru",
+          "channel": "Email",
+          "type": "Corporate route",
+          "source": "Official TELEOFIS website",
+          "url": "https://teleofis.ru/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email"
+        },
+        {
+          "value": "https://teleofis.ru/",
+          "channel": "Website",
+          "type": "Director contact route",
+          "source": "Official TELEOFIS website",
+          "url": "https://teleofis.ru/",
+          "is_lpr": false,
+          "notes": "На официальном сайте присутствует маршрут «Написать директору»"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "АО «ТЕЛЕОФИС», ИНН 7726593280, ОГРН 1087746486585, действует; руководитель — президент Колесников Андрей Александрович.",
+          "url": "https://saby.ru/profile/7726593280-772601001",
+          "source": "Saby / ЕГРЮЛ"
+        },
+        {
+          "type": "BRAND_LEGAL",
+          "claim": "Официальная политика и реквизиты teleofis.ru прямо указывают владельцем/оператором сайта АО «Телеофис», ОГРН 1087746486585, ИНН 7726593280.",
+          "url": "https://teleofis.ru/privacy/",
+          "source": "Official TELEOFIS"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "За 2025 год выручка АО «Телеофис» составила 383 081 000 ₽, прибыль 63 991 000 ₽; компания имеет собственную разработку, серийное производство и 1 филиал.",
+          "url": "https://saby.ru/profile/7726593280-772601001",
+          "source": "Saby / бухгалтерская отчетность"
+        },
+        {
+          "type": "LPR",
+          "claim": "Колесников Андрей Александрович указан президентом АО «Телеофис» в официальной карточке организации и реестровых данных.",
+          "url": "https://shop.teleofis.ru/upload/docs/requisites/%D0%A0%D0%B5%D0%BA%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D1%8B_%D0%90%D0%9E_%D0%A2%D0%B5%D0%BB%D0%B5%D0%BE%D1%84%D0%B8%D1%81_%D0%BE%D1%82%2017.12.2025.pdf",
+          "source": "Official TELEOFIS requisites"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "12.08.2026 TELEOFIS опубликовала вакансию Коммерческого директора с задачей выстроить коммерческую стратегию и обеспечить управляемый рост выручки.",
+          "url": "https://facancy.ru/vacancies/kommercheskii-direktor-v-kompaniiu-razrabotchik-besprovodnogo-oborudovaniia-teleofis",
+          "source": "Current vacancy listing"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт TELEOFIS публикует телефон отдела продаж +7 (495) 950-58-95, email post@teleofis.ru и маршрут «Написать директору».",
+          "url": "https://teleofis.ru/",
+          "source": "Official TELEOFIS"
+        }
+      ]
+    }
+  ]
 }
