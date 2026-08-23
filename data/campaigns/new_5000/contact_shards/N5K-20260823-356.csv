@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0427,N5K-0427-C01,1MARKA,166113198314,,Корпоративный маршрут,official central office phone,Phone,Official B2B route,Official 1MARKA website,https://1marka.ru/contacts/kazan/,NO,HIGH,2026-08-23,Центральный офис,N5K-20260823-356,new_5000
+N5K-0427,N5K-0427-C02,1MARKA,166113198314,,Корпоративный маршрут,official wholesale email,Email,Official B2B route,Official 1MARKA website,https://1marka.ru/contacts/kazan/,NO,HIGH,2026-08-23,Оптовый отдел,N5K-20260823-356,new_5000
+N5K-0427,N5K-0427-C03,1MARKA,166113198314,,Корпоративный маршрут,Current 2026 Head of Sales vacancy route,Vacancy,Current employer route,Facancy,https://facancy.ru/vacancies/rukovoditel-otdela-prodazh-v-proizvodstvennuiu-kompaniiu-1marka-1,NO,HIGH,2026-08-23,17.08.2026,N5K-20260823-356,new_5000
