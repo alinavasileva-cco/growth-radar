@@ -1,0 +1,82 @@
+name: Growth Radar repair RUN 362
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/growth-radar-repair-362.yml'
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Integrate RUN 362 atomically
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv,json,pathlib,re
+          R=pathlib.Path('.'); C=R/'data/campaigns/new_5000'; P=R/'data/runtime/growth_radar_pending_run.json'
+          p=json.loads(P.read_text(encoding='utf-8')); run=p['run_id']; assert run=='N5K-20260824-362'; now=p['updated_at']
+          def rows(x):
+              with x.open('r',encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
+          def fields(x):
+              with x.open('r',encoding='utf-8-sig',newline='') as f:return next(csv.reader(f))
+          def append(x,rs):
+              if not rs:return
+              fs=fields(x)
+              with x.open('a',encoding='utf-8',newline='') as f:
+                  w=csv.DictWriter(f,fieldnames=fs,extrasaction='ignore',lineterminator='\n')
+                  for r in rs:w.writerow({k:r.get(k,'') for k in fs})
+          def write(x,rs,fs):
+              x.parent.mkdir(parents=True,exist_ok=True)
+              with x.open('w',encoding='utf-8',newline='') as f:
+                  w=csv.DictWriter(f,fieldnames=fs,extrasaction='ignore',lineterminator='\n');w.writeheader();w.writerows([{k:r.get(k,'') for k in fs} for r in rs])
+          def n(s):return re.sub(r'\s+',' ',(s or '').strip().lower().replace('«','').replace('»',''))
+          def dom(s):return n(re.sub(r'^https?://(www\.)?','',s or '').rstrip('/'))
+          lp=C/'leads_master.csv'; cp=C/'contactable_master.csv'; xp=C/'contacts.csv'; ep=C/'evidence.csv'
+          base=rows(lp); inns={n(r.get('INN')) for r in base}; ogrns={n(r.get('OGRN/OGRNIP')) for r in base}; legals={n(r.get('Legal Name')) for r in base}; ids={n(r.get('Lead ID')) for r in base}; domains={dom(r.get('Website')) for r in base if r.get('Website')}
+          unique=[]; dups=[]
+          for c in p.get('qualified_companies',[]):
+              why=[]; d=dom(c.get('Website'))
+              if n(c.get('Lead ID')) in ids:why.append('LEAD_ID')
+              if n(c.get('INN')) in inns:why.append('INN')
+              if n(c.get('OGRN/OGRNIP')) in ogrns:why.append('OGRN')
+              if n(c.get('Legal Name')) in legals:why.append('LEGAL')
+              if d and d in domains:why.append('DOMAIN')
+              (dups if why else unique).append((c,why) if why else c)
+          lf,cf,xf,ef=fields(lp),fields(cp),fields(xp),fields(ep)
+          lm=[]; cm=[]; xm=[]; em=[]
+          for c in unique:
+              m={'Lead ID':c['Lead ID'],'Brand':c['Brand'],'Legal Name':c['Legal Name'],'INN':c['INN'],'OGRN/OGRNIP':c['OGRN/OGRNIP'],'Legal Status':'Действует','Region':c.get('Region',''),'City':c.get('City',''),'Segment':c.get('Segment',''),'Website':c.get('Website',''),'Revenue/Scale':c.get('Revenue/Scale',''),'Signal Level':c.get('Signal Level',''),'Signal Summary':c.get('Signal Summary',''),'Signal Date':c.get('Signal Date',''),'Signal Source':c.get('Signal Source',''),'Owner':c.get('Owner',''),'CEO':c.get('CEO',''),'LPR':c.get('LPR',''),'LPR Role':c.get('LPR Role',''),'Primary Phone':c.get('Primary Phone',''),'Primary Email':c.get('Primary Email',''),'HH Contact':c.get('HH Contact',''),'Contact Form':c.get('Contact Form',''),'Contact Type':c.get('Contact Type',''),'Contact Source':c.get('Contact Source',''),'Number Of Contacts Found':str(len(c.get('contacts',[]))),'Consulting Hypothesis':c.get('Consulting Hypothesis',''),'Final Quick Status':'МОЖНО СВЯЗЫВАТЬСЯ','Added At':now,'Updated At':now,'Run ID':run,'Campaign ID':'new_5000'}
+              lm.append(m); q={k:m.get(k,'') for k in cf};q.update({'Final Quick Status':'МОЖНО СВЯЗЫВАТЬСЯ','Added At':now,'Updated At':now,'Run ID':run,'Campaign ID':'new_5000'});cm.append(q)
+              for i,x in enumerate(c.get('contacts',[]),1):xm.append({'Lead ID':c['Lead ID'],'Contact ID':f"{c['Lead ID']}-C{i:02d}",'Brand':c['Brand'],'INN':c['INN'],'Person Name':c.get('LPR','') if x.get('is_lpr') else '','Person Role':c.get('LPR Role','') if x.get('is_lpr') else 'Корпоративный маршрут','Contact Value':x.get('value',''),'Contact Channel':x.get('channel',''),'Contact Type':x.get('type',''),'Contact Source':x.get('source',''),'Source URL':x.get('url',''),'Is LPR':'YES' if x.get('is_lpr') else 'NO','Reliability':'HIGH','Date Checked':'2026-08-24','Notes':x.get('notes',''),'Run ID':run,'Campaign ID':'new_5000'})
+              for i,e in enumerate(c.get('evidence',[]),1):em.append({'Lead ID':c['Lead ID'],'Evidence ID':f"{c['Lead ID']}-E{i:02d}",'Evidence Type':e.get('type',''),'Claim':e.get('claim',''),'Source URL':e.get('url',''),'Source Name':e.get('source',''),'Checked At':now,'Reliability':'HIGH','Run ID':run,'Campaign ID':'new_5000'})
+          append(lp,lm);append(cp,cm);append(xp,xm);append(ep,em)
+          for folder,name,rs,fs in [('increments','leads',lm,lf),('increments','contacts',xm,xf),('increments','evidence',em,ef),('master_shards','leads',lm,lf),('contactable_shards','contactable',cm,cf),('contact_shards','contacts',xm,xf),('evidence_shards','evidence',em,ef)]:write(C/folder/f'{name}_{run}.csv',rs,fs)
+          a,b,x,e=rows(lp),rows(cp),rows(xp),rows(ep); mids={r['Lead ID'] for r in a}; cids={r['Lead ID'] for r in b}
+          assert len(a)==len({n(r['INN']) for r in a})==len({n(r['OGRN/OGRNIP']) for r in a});assert mids==cids;assert not ({r['Lead ID'] for r in x}-mids);assert not ({r['Lead ID'] for r in e}-mids)
+          count=len(a); f=p['funnel']; qual=len(unique); dup=f.get('duplicates',0)+len(dups)
+          rf=['Run ID','Campaign ID','Status','Discovered','Size Check Passed','Legal Match Passed','Signal Confirmed','LPR Identified','Contact Route Found','Qualified','Duplicates','Excluded','Canonical Count','Contactable Count','Integrity','Orphan Contacts','Orphan Evidence','Outreach Sent','Notes']
+          rr={'Run ID':run,'Campaign ID':'new_5000','Status':'COMPLETED','Discovered':f['discovered'],'Size Check Passed':f['size_check_passed'],'Legal Match Passed':f['legal_match_passed'],'Signal Confirmed':f['signal_confirmed'],'LPR Identified':f['lpr_identified'],'Contact Route Found':f['contact_route_found'],'Qualified':qual,'Duplicates':dup,'Excluded':f['excluded'],'Canonical Count':count,'Contactable Count':len(b),'Integrity':'PASS','Orphan Contacts':0,'Orphan Evidence':0,'Outreach Sent':0,'Notes':p['notes']}
+          write(C/'run_logs'/f'{run}.csv',[rr],rf);append(C/'run_log.csv',[rr]);append(C/'run_log_tail_198_onward.csv',[rr])
+          runtime={'run_id':run,'campaign_id':'new_5000','status':'COMPLETED','updated_at':now,'stage':'COMPLETE','new_cycle':{'baseline_count':0,'target_count':5000,'current_canonical_count':count,'current_contactable_count':len(b),'progress_added':count,'remaining':5000-count},'funnel':{**f,'qualified':qual,'duplicates':dup},'qualified_companies':[c['Brand'] for c in unique],'duplicate_rejected':[f"{c['Brand']} — {','.join(w)}" for c,w in dups],'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'active_wip':0,'physical_master_state':f'{count}_DATA_ROWS_PLUS_HEADER_CONFIRMED','physical_contactable_state':f'{len(b)}_DATA_ROWS_PLUS_HEADER_CONFIRMED','outreach_sent':0,'blocker':None}
+          (R/'data/runtime/current_run_status.json').write_text(json.dumps(runtime,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          tp=R/'data/runtime/campaign_target.json';t=json.loads(tp.read_text(encoding='utf-8'));t.update({'current_canonical_count':count,'current_contactable_count':len(b),'progress_added':count,'remaining_to_total_target':5000-count,'remaining':5000-count,'qualified_staged_not_counted':0,'integrity_status':'PASS','campaign_status':'ACTIVE','updated_at':now,'last_completed_run_id':run,'current_run_id':run,'last_run_id':run,'latest_completed_run':run,'orphan_contacts':0,'orphan_evidence':0});tp.write_text(json.dumps(t,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          mp=R/'data/run_metrics.json';m=json.loads(mp.read_text(encoding='utf-8'));m.update({'generated_at':now,'campaign_id':'new_5000','latest_completed_run_id':run,'current_run_id':run,'current_run_status':'COMPLETED','canonical_pool_verified':count,'contactable_verified':len(b),'qualified_staged_not_counted':0,'total_target':5000,'remaining_to_target':5000-count,'orphan_contacts':0,'orphan_evidence':0});m.pop('run_361',None);m['run_362']={'raw_discovered':f['discovered'],'fast_gate_passed':f['fast_gate_passed'],'size_check_passed':f['size_check_passed'],'legal_match_passed':f['legal_match_passed'],'signal_confirmed':f['signal_confirmed'],'lpr_identified':f['lpr_identified'],'contact_route_found':f['contact_route_found'],'qualified':qual,'physically_integrated':qual,'duplicates':dup,'excluded':f['excluded']};mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          rp=R/'reports'/'run_2026_08_24_362.md';rp.write_text(f'# Growth Radar RUN {run}\n\n- Status: COMPLETED\n- Added: {qual}\n- Canonical/contactable: {count}/{len(b)}\n- Discovered: {f["discovered"]}\n- Fast gate: {f["fast_gate_passed"]}\n- Qualified: {qual}\n- Duplicates: {dup}\n- Excluded: {f["excluded"]}\n- Integrity: PASS\n- Orphan contacts/evidence: 0/0\n- Outreach: 0\n\n## Added companies\n'+''.join(f'- {c["Brand"]} — INN {c["INN"]}\n' for c in unique),encoding='utf-8')
+          cfg=R/'CURRENT_WORKING_CONFIG.md';s=cfg.read_text(encoding='utf-8');s=re.sub(r'\*\*Версия:\*\*.*',f'**Версия:** {now}  ',s,1);s=re.sub(r'\*\*Последний полностью завершённый RUN:\*\*.*',f'**Последний полностью завершённый RUN:** `{run}`  ',s,1);s=re.sub(r'\*\*Физически подтверждённый canonical/contactable:\*\*.*',f'**Физически подтверждённый canonical/contactable:** **{count} / {len(b)}**  ',s,1);s=re.sub(r'\*\*Осталось:\*\*.*',f'**Осталось:** **{5000-count}**  ',s,1);cfg.write_text(s+f'\n\n## Latest verified run {run}\nCanonical/contactable: {count}/{len(b)}. Added: {qual}. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.\n',encoding='utf-8')
+          print(json.dumps({'added':[c['Brand'] for c in unique],'duplicates':[(c['Brand'],w) for c,w in dups],'count':count},ensure_ascii=False))
+          PY
+      - name: Commit repaired RUN 362
+        run: |
+          git config user.name "growth-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/campaigns/new_5000 data/runtime data/run_metrics.json CURRENT_WORKING_CONFIG.md reports
+          git commit -m "Growth Radar: integrate verified pending run 362" || exit 0
+          git push
