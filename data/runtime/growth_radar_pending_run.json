@@ -1,111 +1,111 @@
 {
-  "run_id": "N5K-20260823-345",
-  "updated_at": "2026-08-23T09:47:00+05:00",
+  "run_id": "N5K-20260823-346",
+  "updated_at": "2026-08-23T10:16:00+05:00",
   "funnel": {
-    "discovered": 7,
-    "fast_gate_passed": 3,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
+    "discovered": 16,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 0,
-    "excluded": 6
+    "duplicates": 4,
+    "excluded": 11
   },
-  "notes": "RUN 345 started from verified physical baseline RUN 344: 266/266, integrity PASS, orphan 0/0. Seven distinct current candidates/signals were individually reviewed in this execution window: TELEOFIS, Za-bota, Dolomit, SpecPoddon, Myakishi, Formfactor Technologies and JoceJoli. FAST GATE retained TELEOFIS, SpecPoddon and Myakishi. TELEOFIS passed current scale and legal/brand match. Myakishi was not promoted because the current operating brand-to-legal/financial mapping is fragmented across legacy entities despite a strong operating footprint. SpecPoddon was not promoted because the current brand-to-legal entity could not be established with sufficient confidence. Za-bota failed current team-size evidence; Dolomit search results produced multiple conflicting legal entities; Formfactor Technologies is a newly registered 2026 entity without sufficient current scale evidence; JoceJoli is above the active revenue range based on its stated 80+ million RUB monthly revenue. TELEOFIS passed legal, scale, fresh 2026 commercial-leadership signal, owner/president LPR and official contact-route checks. Repository pre-write search for INN 7726593280 and TELEOFIS returned no existing record. No outreach.",
+  "notes": "RUN 346 started from verified physical baseline RUN 345: 267/267, integrity PASS, orphan 0/0. Current discovery reviewed distinct employer/company signals including First Alive Collagen, Masterfarbe/Vsekras.ru, Profresurs industrial ecology, AMMONIT, Kaliningrad Packaging Factory, Art City variants, Petro Building Systems and multiple already-known employers from current commercial-director/Head of Sales listings. Existing known companies and ambiguous employer/legal mappings were removed at fast/deep gates. Kaliningrad Packaging Factory was excluded because fresh sources show bankruptcy proceedings and only 3 employees. AMMONIT was excluded because the identified legal entity had insufficient current operating revenue for the active scale profile. Masterfarbe/Vsekras.ru was not promoted because the job-board employer/legal mapping mixes ООО ОПТ 365, Всекраски.ру and Masterfarbe Trade and therefore does not meet the exact brand-to-legal gate. Profresurs industrial-ecology signal was not promoted because the underlying operating legal entity could not be independently established. First Alive Collagen passed current legal, scale, current 2026 growth/channel signal, owner/CEO LPR and official contact-route checks. Repository pre-write search for INN 9731092194 returned no existing indexed record; physical integration guard remains final dedup. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0413",
-      "Brand": "TELEOFIS / Телеофис",
-      "Legal Name": "АО «ТЕЛЕОФИС»",
-      "INN": "7726593280",
-      "OGRN/OGRNIP": "1087746486585",
+      "Lead ID": "N5K-0414",
+      "Brand": "Первый Живой Коллаген / COLLA GEN",
+      "Legal Name": "ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН»",
+      "INN": "9731092194",
+      "OGRN/OGRNIP": "1227700256585",
       "Region": "Москва",
       "City": "Москва",
-      "Segment": "промышленная электроника / телекоммуникационное оборудование / M2M / IoT / B2B",
-      "Website": "https://teleofis.ru/",
-      "Revenue/Scale": "Действующее частное АО, малое предприятие; собственная разработка и серийное производство промышленного телекоммуникационного оборудования. Выручка за 2025 год 383 081 000 ₽, прибыль 63 991 000 ₽; 1 филиал; 20+ лет работы.",
-      "Signal Level": "S1",
-      "Signal Summary": "12.08.2026 TELEOFIS открыла вакансию Коммерческого директора с целью выстроить долгосрочную коммерческую стратегию и обеспечить управляемый рост выручки; задачи включают стратегию на 3–5 лет, коммерческое планирование и управление ростом.",
-      "Signal Date": "2026-08-12",
-      "Signal Source": "https://facancy.ru/vacancies/kommercheskii-direktor-v-kompaniiu-razrabotchik-besprovodnogo-oborudovaniia-teleofis",
-      "Owner": "Колесников Андрей Александрович — контролирующий собственник связанной структуры и президент АО «Телеофис» по официальным реквизитам; структура собственности АО непублична в открытом ЕГРЮЛ, поэтому доля не заявляется.",
-      "CEO": "Колесников Андрей Александрович — президент АО «Телеофис»",
-      "LPR": "Колесников Андрей Александрович",
-      "LPR Role": "Президент / руководитель АО «Телеофис»",
-      "Primary Phone": "+7 (495) 950-58-95",
-      "Primary Email": "post@teleofis.ru",
-      "HH Contact": "https://facancy.ru/vacancies/kommercheskii-direktor-v-kompaniiu-razrabotchik-besprovodnogo-oborudovaniia-teleofis",
-      "Contact Form": "https://teleofis.ru/",
-      "Contact Type": "Официальный корпоративный телефон + email + форма/ссылка «Написать директору» + текущая вакансия; известен президент/ЛПР",
-      "Contact Source": "Официальный сайт TELEOFIS + официальные реквизиты + текущая вакансия",
-      "Consulting Hypothesis": "Коммерческая стратегия на 3–5 лет, сегментация промышленных B2B-рынков, P&L и маржинальность по продуктовым линиям, канальная/партнерская модель, CRM и прогнозирование, KPI коммерческого блока и управляемая программа роста выручки.",
+      "Segment": "FMCG / health & beauty / функциональное питание / косметика / производство / B2B и федеральные сети",
+      "Website": "https://firstalivecollagen.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка за 2025 год 817 866 000 ₽, чистая прибыль 104 235 000 ₽. Собственное производство в Москве; в 2026 году компания продолжает запуск новых продуктов, развитие каналов продаж и сотрудничество с крупными федеральными сетями.",
+      "Signal Level": "S2",
+      "Signal Summary": "В 2026 году компания активно растёт, запускает новые продукты, развивает каналы продаж и сотрудничество с крупными федеральными сетями; одновременно ведёт набор в оптовые/фармацевтические продажи. В январе 2026 бренд вошёл в программу «Сделано в России» для развития экспортного направления.",
+      "Signal Date": "2026-06-16",
+      "Signal Source": "https://hh.ru/employer/4223831",
+      "Owner": "Соколов Андрей Сергеевич, Артемьева Ирина Александровна и Артемьев Сергей Александрович — действующие участники ООО по актуальным реестровым сведениям; доли в этой записи не заявляются без отдельного подтверждения.",
+      "CEO": "Артемьев Сергей Александрович — генеральный директор",
+      "LPR": "Артемьев Сергей Александрович",
+      "LPR Role": "Генеральный директор / совладелец",
+      "Primary Phone": "8 (800) 600-17-21",
+      "Primary Email": "info@collagen1.ru",
+      "HH Contact": "https://hh.ru/employer/4223831",
+      "Contact Form": "https://firstalivecollagen.ru/",
+      "Contact Type": "Официальный телефон производителя + официальный email + форма сайта + текущий employer route",
+      "Contact Source": "Официальные сайты производителя + HH employer profile",
+      "Consulting Hypothesis": "Систематизация многоканальной коммерческой модели: федеральные сети, фарма, e-commerce и экспорт; сегментация каналов, unit economics и маржинальность, CRM/воронка, KPI коммерческого блока и масштабирование продаж новых продуктов.",
       "contacts": [
         {
-          "value": "+7 (495) 950-58-95",
+          "value": "8 (800) 600-17-21",
           "channel": "Phone",
-          "type": "Corporate sales route",
-          "source": "Official TELEOFIS website",
-          "url": "https://teleofis.ru/",
+          "type": "Official manufacturer route",
+          "source": "Official First Alive Collagen website",
+          "url": "https://firstalivecollagen.ru/",
           "is_lpr": false,
-          "notes": "Официальный телефон отдела продаж"
+          "notes": "Официальный телефон производителя"
         },
         {
-          "value": "post@teleofis.ru",
+          "value": "info@collagen1.ru",
           "channel": "Email",
-          "type": "Corporate route",
-          "source": "Official TELEOFIS website",
-          "url": "https://teleofis.ru/",
+          "type": "Official corporate route",
+          "source": "Official collagen1.ru website",
+          "url": "https://collagen1.ru/",
           "is_lpr": false,
-          "notes": "Официальный корпоративный email"
+          "notes": "Официальный email производителя"
         },
         {
-          "value": "https://teleofis.ru/",
-          "channel": "Website",
-          "type": "Director contact route",
-          "source": "Official TELEOFIS website",
-          "url": "https://teleofis.ru/",
+          "value": "https://hh.ru/employer/4223831",
+          "channel": "Employer profile",
+          "type": "Current hiring route",
+          "source": "HH employer profile",
+          "url": "https://hh.ru/employer/4223831",
           "is_lpr": false,
-          "notes": "На официальном сайте присутствует маршрут «Написать директору»"
+          "notes": "Актуальный маршрут работодателя"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "АО «ТЕЛЕОФИС», ИНН 7726593280, ОГРН 1087746486585, действует; руководитель — президент Колесников Андрей Александрович.",
-          "url": "https://saby.ru/profile/7726593280-772601001",
-          "source": "Saby / ЕГРЮЛ"
+          "claim": "ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН», ИНН 9731092194, ОГРН 1227700256585, действует; генеральный директор Артемьев Сергей Александрович.",
+          "url": "https://companies.rbc.ru/id/1227700256585-ooo-pervyij-zhivoj-kollagen/",
+          "source": "РБК Компании / ЕГРЮЛ"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальная политика и реквизиты teleofis.ru прямо указывают владельцем/оператором сайта АО «Телеофис», ОГРН 1087746486585, ИНН 7726593280.",
-          "url": "https://teleofis.ru/privacy/",
-          "source": "Official TELEOFIS"
+          "claim": "Официальные сайты производителя прямо указывают ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН», ИНН 9731092194, ОГРН 1227700256585 как производителя бренда Первый Живой Коллаген / COLLA GEN.",
+          "url": "https://collagen1.ru/",
+          "source": "Official manufacturer website"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "За 2025 год выручка АО «Телеофис» составила 383 081 000 ₽, прибыль 63 991 000 ₽; компания имеет собственную разработку, серийное производство и 1 филиал.",
-          "url": "https://saby.ru/profile/7726593280-772601001",
-          "source": "Saby / бухгалтерская отчетность"
+          "claim": "За 2025 год выручка ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН» составила 817 866 000 ₽, чистая прибыль 104 235 000 ₽; производитель продолжает выпуск и регистрацию новых продуктов в 2026 году.",
+          "url": "https://companies.rbc.ru/id/1227700256585-ooo-pervyij-zhivoj-kollagen/",
+          "source": "РБК Компании / бухгалтерская отчетность 2025"
         },
         {
           "type": "LPR",
-          "claim": "Колесников Андрей Александрович указан президентом АО «Телеофис» в официальной карточке организации и реестровых данных.",
-          "url": "https://shop.teleofis.ru/upload/docs/requisites/%D0%A0%D0%B5%D0%BA%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D1%8B_%D0%90%D0%9E_%D0%A2%D0%B5%D0%BB%D0%B5%D0%BE%D1%84%D0%B8%D1%81_%D0%BE%D1%82%2017.12.2025.pdf",
-          "source": "Official TELEOFIS requisites"
+          "claim": "Артемьев Сергей Александрович указан генеральным директором ООО «ПЕРВЫЙ ЖИВОЙ КОЛЛАГЕН» в актуальных реестровых и сертификационных данных 2026 года.",
+          "url": "https://xn----7sbajahheyaepn1ca0aveqcb0fxl.xn--p1acf/document/eaes-n-ru-d-rura05v6330026/",
+          "source": "ЕАЭС declaration 22.07.2026"
         },
         {
           "type": "SIGNAL",
-          "claim": "12.08.2026 TELEOFIS опубликовала вакансию Коммерческого директора с задачей выстроить коммерческую стратегию и обеспечить управляемый рост выручки.",
-          "url": "https://facancy.ru/vacancies/kommercheskii-direktor-v-kompaniiu-razrabotchik-besprovodnogo-oborudovaniia-teleofis",
-          "source": "Current vacancy listing"
+          "claim": "В 2026 году компания активно развивает новые продукты и каналы продаж, сотрудничество с крупными федеральными сетями и экспортное направление; HH-профиль и вакансии фиксируют продолжающийся коммерческий найм.",
+          "url": "https://hh.ru/employer/4223831",
+          "source": "HH employer profile / company updates 2026"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт TELEOFIS публикует телефон отдела продаж +7 (495) 950-58-95, email post@teleofis.ru и маршрут «Написать директору».",
-          "url": "https://teleofis.ru/",
-          "source": "Official TELEOFIS"
+          "claim": "Официальные сайты производителя публикуют телефон 8 (800) 600-17-21, email info@collagen1.ru и формы связи.",
+          "url": "https://firstalivecollagen.ru/",
+          "source": "Official manufacturer website"
         }
       ]
     }
