@@ -1,18 +1,59 @@
 {
-  "run_id":"N5K-20260823-339",
-  "updated_at":"2026-08-23T05:46:00+05:00",
-  "funnel":{"discovered":16,"fast_gate_passed":4,"size_check_passed":2,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":0,"excluded":14},
-  "notes":"RUN 339 continues from verified physical baseline 259/259. Sixteen distinct current August 2026 employer/company signals were screened. Norke / ООО «СИЯНИЕ» and UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП» passed legal, scale, S1 signal, owner/LPR, contact and physical-master dedup. Pending write retriggered because no integration commit was yet visible. No outreach.",
-  "qualified_companies":[
+  "run_id": "N5K-20260823-339",
+  "updated_at": "2026-08-23T05:58:00+05:00",
+  "funnel": {
+    "discovered": 16,
+    "fast_gate_passed": 4,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 14
+  },
+  "notes": "RUN 339 repaired against verified physical baseline 259/259. UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП» is already present in physical leads_master as N5K-0351 with INN 7453330306 and is removed from pending. Norke / ООО «СИЯНИЕ» remains the only qualified candidate after current legal/brand/signal/LPR/contact recheck. No outreach.",
+  "qualified_companies": [
     {
-      "Lead ID":"N5K-0406","Brand":"Norke / Norke Group","Legal Name":"ООО «СИЯНИЕ»","INN":"7801689265","OGRN/OGRNIP":"1207800135597","Region":"Санкт-Петербург / Москва / сеть по РФ","City":"Москва / Санкт-Петербург","Segment":"Гостиничная управляющая компания / сеть отелей и глэмпингов","Website":"https://norke.ru/","Revenue/Scale":"Действующее частное ООО; выручка за 2025 год около 36,2 млн руб.; Norke управляет сетью городских, загородных и курортных объектов.","Signal Level":"S1","Signal Summary":"14 августа 2026 опубликована вакансия директора по развитию гостиничной сети Norke: подключение новых гостиничных объектов, системная воронка объектов, встречи с собственниками и договоры управления.","Signal Date":"2026-08-14","Signal Source":"https://dreamjob.ru/employers/6338002/vakansii/135982178","Owner":"Маслов Александр Сергеевич — учредитель 100% ООО «СИЯНИЕ»","CEO":"Маслов Александр Сергеевич — генеральный директор ООО «СИЯНИЕ» и Norke Group","LPR":"Маслов Александр Сергеевич","LPR Role":"Собственник / генеральный директор","Primary Phone":"+7 921 408 81 23","Primary Email":"invest@vnorke.ru","HH Contact":"https://dreamjob.ru/employers/6338002/vakansii/135982178","Contact Form":"https://group.norke.ru/contacts/","Contact Type":"Direct public executive phone/WhatsApp + investment email + current employer vacancy route","Contact Source":"Official Norke Group contacts + current 2026 employer vacancy","Consulting Hypothesis":"Систематизация масштабирования гостиничной управляющей сети: воронка объектов и собственников, экономика договоров управления, CRM/pipeline, KPI развития и 90-дневный план роста номерного фонда под управлением.",
-      "contacts":[{"value":"+7 921 408 81 23","channel":"Phone/WhatsApp","type":"Direct public executive contact","source":"Official Norke Group contacts","url":"https://group.norke.ru/contacts/","is_lpr":true,"notes":"Published next to Александр Маслов"},{"value":"invest@vnorke.ru","channel":"Email","type":"Investment/business development email","source":"Official Norke Group contacts","url":"https://group.norke.ru/contacts/","is_lpr":true,"notes":"Published next to Александр Маслов"},{"value":"https://dreamjob.ru/employers/6338002/vakansii/135982178","channel":"Job board","type":"Current employer vacancy route","source":"DreamJob / HH-linked current vacancy","url":"https://dreamjob.ru/employers/6338002/vakansii/135982178","is_lpr":false,"notes":"Current development vacancy"}],
-      "evidence":[{"type":"LEGAL","claim":"ООО «СИЯНИЕ», ИНН 7801689265, ОГРН 1207800135597, действует; Маслов Александр Сергеевич — CEO и учредитель 100%.","url":"https://companies.rbc.ru/id/1207800135597-obschestvo-s-ogranichennoj-otvetstvennostyu-siyanie/","source":"RBC Companies"},{"type":"BRAND_LEGAL","claim":"Официальный сайт Norke указывает ООО «Сияние», ИНН 7801689265; NORKE зарегистрирована за этим юрлицом.","url":"https://norke.ru/contacts/","source":"Official Norke site + RBC Companies"},{"type":"SCALE_CURRENT","claim":"Выручка ООО «СИЯНИЕ» за 2025 год около 36,2 млн руб.; Norke Group показывает сеть управляемых объектов.","url":"https://saby.ru/profile/7801689265-780101001","source":"Saby + official Norke Group"},{"type":"OWNER_LPR","claim":"Александр Маслов — генеральный директор Norke Group и владелец/CEO ООО «СИЯНИЕ».","url":"https://group.norke.ru/","source":"Official Norke Group + current legal profile"},{"type":"SIGNAL","claim":"Вакансия директора по развитию требует подключать новые отели, строить воронку объектов и заключать договоры управления.","url":"https://dreamjob.ru/employers/6338002/vakansii/135982178","source":"Current 2026 employer vacancy"},{"type":"CONTACT","claim":"Официальная страница публикует Александр Маслов, +7 921 408 81 23 и invest@vnorke.ru.","url":"https://group.norke.ru/contacts/","source":"Official Norke Group contacts"}]
-    },
-    {
-      "Lead ID":"N5K-0407","Brand":"UNIONDELTA / ПРОФ-ТОН","Legal Name":"ООО «ПРОФ-ТОН ГРУПП»","INN":"7453330306","OGRN/OGRNIP":"1197456034302","Region":"Москва / федеральная дилерская сеть","City":"Москва","Segment":"Автомобильные плёнки / B2B / дилерская сеть","Website":"https://www.uniondelta.ru/","Revenue/Scale":"Действующее частное ООО; выручка за 2025 год 114,076 млн руб. против 314,105 млн руб. годом ранее, чистый результат -12,173 млн руб.; B2B-дилерская сеть автомобильных плёнок.","Signal Level":"S1","Signal Summary":"14 августа 2026 опубликована вакансия коммерческого директора UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП» для B2B и дилерской сети автомобильных плёнок на фоне резкого падения выручки.","Signal Date":"2026-08-14","Signal Source":"https://moskva.jobrun.ru/коммерческий-директор-управляющей-компании-гостиничной-сети-работа","Owner":"Панихин Василий Евгеньевич — учредитель 100%","CEO":"Панихин Василий Евгеньевич — генеральный директор","LPR":"Панихин Василий Евгеньевич","LPR Role":"Собственник / генеральный директор","Primary Phone":"+7 (495) 540-48-05","Primary Email":"info@prof-ton.com","HH Contact":"https://moskva.jobrun.ru/коммерческий-директор-управляющей-компании-гостиничной-сети-работа","Contact Form":"https://www.uniondelta.ru/company/rekvizity/","Contact Type":"Official corporate phone/email + current employer vacancy route","Contact Source":"Official UNIONDELTA/PROF-TON requisites + current 2026 job-board vacancy","Consulting Hypothesis":"Пересборка B2B-дилерской коммерческой системы после падения выручки: сегментация дилеров, экономика каналов, CRM/pipeline, KPI и мотивация, маржа и 90-дневный план восстановления оборота.",
-      "contacts":[{"value":"+7 (495) 540-48-05","channel":"Phone","type":"Corporate phone","source":"Official UNIONDELTA/PROF-TON requisites","url":"https://www.uniondelta.ru/company/rekvizity/","is_lpr":false,"notes":"Official company route"},{"value":"info@prof-ton.com","channel":"Email","type":"Corporate email","source":"Official UNIONDELTA/PROF-TON requisites","url":"https://www.uniondelta.ru/company/rekvizity/","is_lpr":false,"notes":"Official corporate email"},{"value":"sales@uniondelta.ru","channel":"Email","type":"Sales route","source":"Official UNIONDELTA site","url":"https://www.uniondelta.ru/company/rekvizity/","is_lpr":false,"notes":"Public B2B sales route"}],
-      "evidence":[{"type":"LEGAL","claim":"ООО «ПРОФ-ТОН ГРУПП», ИНН 7453330306, ОГРН 1197456034302, действует; CEO Панихин Василий Евгеньевич.","url":"https://saby.ru/profile/7453330306-773001001","source":"Saby current profile"},{"type":"BRAND_LEGAL","claim":"uniondelta.ru указывает ООО «ПРОФ-ТОН ГРУПП», ИНН 7453330306 и ОГРН 1197456034302.","url":"https://www.uniondelta.ru/company/rekvizity/","source":"Official UNIONDELTA site"},{"type":"SCALE_CURRENT","claim":"Выручка 2025 — 114,076 млн руб., чистый результат -12,173 млн руб.; 2024 выручка около 314,105 млн руб.","url":"https://companies.rbc.ru/id/1197456034302-obschestvo-s-ogranichennoj-otvetstvennostyu-prof-ton-grupp/","source":"RBC Companies"},{"type":"OWNER_LPR","claim":"Панихин Василий Евгеньевич — CEO и учредитель 100% ООО «ПРОФ-ТОН ГРУПП».","url":"https://www.tbank.ru/business/contractor/legal/1197456034302/","source":"T-Bank current contractor profile"},{"type":"SIGNAL","claim":"Август 2026: вакансия коммерческого директора по B2B и дилерской сети автомобильных плёнок, бренд UNIONDELTA / ООО «Проф-Тон Групп».","url":"https://moskva.jobrun.ru/коммерческий-директор-управляющей-компании-гостиничной-сети-работа","source":"Current 2026 HH-derived job listing"},{"type":"CONTACT","claim":"Официальные реквизиты публикуют +7 (495) 540-48-05, info@prof-ton.com и sales@uniondelta.ru.","url":"https://www.uniondelta.ru/company/rekvizity/","source":"Official UNIONDELTA/PROF-TON site"}]
+      "Lead ID": "N5K-0406",
+      "Brand": "Norke / Norke Group",
+      "Legal Name": "ООО «СИЯНИЕ»",
+      "INN": "7801689265",
+      "OGRN/OGRNIP": "1207800135597",
+      "Region": "Москва / Санкт-Петербург / сеть по РФ",
+      "City": "Москва / Санкт-Петербург",
+      "Segment": "Гостиничная управляющая компания / сеть отелей и глэмпингов",
+      "Website": "https://norke.ru/",
+      "Revenue/Scale": "Действующее частное ООО; актуальный реестровый профиль подтверждает коммерческую выручку; официальный Norke Group показывает действующую сеть городских, загородных и курортных объектов.",
+      "Signal Level": "S1",
+      "Signal Summary": "06.08.2026 опубликована вакансия директора по развитию гостиничной сети Norke: подключение новых гостиничных объектов, создание воронки объектов, встречи с собственниками и заключение договоров управления.",
+      "Signal Date": "2026-08-06",
+      "Signal Source": "https://dreamjob.ru/employers/6338002/vakansii/135982178",
+      "Owner": "Маслов Александр Сергеевич — учредитель 100% ООО «СИЯНИЕ»",
+      "CEO": "Маслов Александр Сергеевич — генеральный директор ООО «СИЯНИЕ» и Norke Group",
+      "LPR": "Маслов Александр Сергеевич",
+      "LPR Role": "Собственник / генеральный директор",
+      "Primary Phone": "+7 921 408 81 23",
+      "Primary Email": "invest@vnorke.ru",
+      "HH Contact": "https://dreamjob.ru/employers/6338002/vakansii/135982178",
+      "Contact Form": "https://group.norke.ru/contacts/",
+      "Contact Type": "Direct public executive phone/WhatsApp + investment email + current employer vacancy route",
+      "Contact Source": "Official Norke Group contacts + current 2026 employer vacancy",
+      "Consulting Hypothesis": "Систематизация масштабирования гостиничной управляющей сети: воронка объектов и собственников, экономика договоров управления, CRM/pipeline, KPI развития и 90-дневный план роста номерного фонда под управлением.",
+      "contacts": [
+        {"value": "+7 921 408 81 23", "channel": "Phone/WhatsApp", "type": "Direct public executive contact", "source": "Official Norke Group contacts", "url": "https://group.norke.ru/contacts/", "is_lpr": true, "notes": "Published next to Александр Маслов"},
+        {"value": "invest@vnorke.ru", "channel": "Email", "type": "Investment/business development email", "source": "Official Norke Group contacts", "url": "https://group.norke.ru/contacts/", "is_lpr": true, "notes": "Published next to Александр Маслов"},
+        {"value": "https://dreamjob.ru/employers/6338002/vakansii/135982178", "channel": "Job board", "type": "Current employer vacancy route", "source": "DreamJob / HH-linked current vacancy", "url": "https://dreamjob.ru/employers/6338002/vakansii/135982178", "is_lpr": false, "notes": "Current development vacancy"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «СИЯНИЕ», ИНН 7801689265, ОГРН 1207800135597, действует; Маслов Александр Сергеевич — CEO и учредитель 100%.", "url": "https://companies.rbc.ru/id/1207800135597-obschestvo-s-ogranichennoj-otvetstvennostyu-siyanie/", "source": "RBC Companies"},
+        {"type": "BRAND_LEGAL", "claim": "Официальный сайт Norke указывает ООО «Сияние» и ИНН 7801689265.", "url": "https://norke.ru/contacts/", "source": "Official Norke site"},
+        {"type": "SCALE_CURRENT", "claim": "Официальный Norke Group показывает действующую сеть управляемых объектов в Москве, Санкт-Петербурге и регионах; текущий реестровый профиль подтверждает коммерческую деятельность юрлица.", "url": "https://group.norke.ru/", "source": "Official Norke Group + current legal profile"},
+        {"type": "OWNER_LPR", "claim": "Александр Маслов — генеральный директор Norke Group и владелец/CEO ООО «СИЯНИЕ».", "url": "https://group.norke.ru/", "source": "Official Norke Group + current legal profile"},
+        {"type": "SIGNAL", "claim": "06.08.2026 вакансия директора по развитию требует подключать новые отели, строить воронку объектов и заключать договоры управления.", "url": "https://dreamjob.ru/employers/6338002/vakansii/135982178", "source": "Current 2026 employer vacancy"},
+        {"type": "CONTACT", "claim": "Официальная страница публикует Александр Маслов, +7 921 408 81 23 и invest@vnorke.ru.", "url": "https://group.norke.ru/contacts/", "source": "Official Norke Group contacts"}
+      ]
     }
   ]
 }
