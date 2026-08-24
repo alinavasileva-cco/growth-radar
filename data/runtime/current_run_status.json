@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260824-366",
+  "run_id": "N5K-20260824-367",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T04:04:00+05:00",
+  "updated_at": "2026-08-24T05:02:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 0,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 294,
-    "current_contactable_count": 294,
-    "progress_added": 294,
-    "remaining": 4706
+    "current_canonical_count": 295,
+    "current_contactable_count": 295,
+    "progress_added": 295,
+    "remaining": 4705
   },
   "funnel": {
     "discovered": 24,
     "fast_gate_passed": 6,
     "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 1,
-    "duplicates": 4,
-    "excluded": 19
+    "duplicates": 5,
+    "excluded": 18
   },
   "qualified_companies": [
-    "Хоупак / Houpack"
+    "FEDAST / Федаст Импорт"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "294_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "294_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "295_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "295_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
