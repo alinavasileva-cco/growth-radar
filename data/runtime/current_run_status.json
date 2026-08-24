@@ -2,7 +2,7 @@
   "run_id": "N5K-20260824-370",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T08:12:00+05:00",
+  "updated_at": "2026-08-24T08:16:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 294,
@@ -20,13 +20,11 @@
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 3,
+    "qualified": 0,
+    "duplicates": 4,
     "excluded": 10
   },
-  "qualified_companies": [
-    "СпецПоддон"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
