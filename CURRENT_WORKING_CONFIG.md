@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T23:06:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-386`  
+**Версия:** 2026-08-24T23:59:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-387`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **318 / 318**  
+**Физически подтверждённый canonical/contactable:** **319 / 319**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4682**  
+**Осталось:** **4681**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **318 / 318**;
+- physical canonical/contactable count: **319 / 319**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-386`;
+- последний завершённый RUN: `N5K-20260824-387`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,24 +36,23 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-386
+## Последний подробный RUN — N5K-20260824-387
 
-Baseline перед RUN: **317 / 317**.  
-Фактически индивидуально обработано raw-кандидатов: **22**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **22** → fast gate **5** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **6**. Excluded: **15**.  
+Baseline перед RUN: **318 / 318**.  
+Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **24** → fast gate **6** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **5**. Excluded: **18**.  
 Добавлена:
-- **BELKINA / Belkina / Belevtseva — ИП Белевцева Оксана Ивановна**, ИНН `773065080780`, ОГРНИП `309774627200513`, Lead ID `N5K-0467`.
+- **Стопэкспресс / StopExpress — ООО «СТОПЭКСПРЕСС»**, ИНН `7813548100`, ОГРН `1127847596546`, Lead ID `N5K-0468`.
 
-Итог physical canonical/contactable: **318 / 318**.  
+Итог physical canonical/contactable: **319 / 319**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.  
-Integration commit физически добавил компанию. Автоматический stale baseline `294` исправлен на фактический baseline `317`; campaign target и run metrics синхронизированы на RUN 386.
+Integration commit физически добавил компанию. Автоматический stale baseline `294` исправлен на фактический baseline `318`; campaign target и run metrics синхронизированы на RUN 387.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260824-379`: 310/310, +1, PASS, orphan 0/0.
 - `N5K-20260824-380`: 311/311, +1, PASS, orphan 0/0.
 - `N5K-20260824-381`: 312/312, +1, PASS, orphan 0/0.
 - `N5K-20260824-382`: 313/313, +1, PASS, orphan 0/0.
@@ -61,10 +60,7 @@ Integration commit физически добавил компанию. Авто�
 - `N5K-20260824-384`: 316/316, +2, PASS, orphan 0/0.
 - `N5K-20260824-385`: 317/317, +1, PASS, orphan 0/0.
 - `N5K-20260824-386`: 318/318, +1, PASS, orphan 0/0.
-
-## Latest verified run N5K-20260824-386
-Canonical/contactable: 318/318. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260824-387`: 319/319, +1, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260824-387
 Canonical/contactable: 319/319. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
