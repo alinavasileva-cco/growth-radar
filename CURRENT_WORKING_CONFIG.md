@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T12:30:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-374`  
+**Версия:** 2026-08-24T13:25:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-376`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **305 / 305**  
+**Физически подтверждённый canonical/contactable:** **306 / 306**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4695**  
+**Осталось:** **4694**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **305 / 305**;
+- physical canonical/contactable count: **306 / 306**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-374`;
+- последний завершённый RUN: `N5K-20260824-376`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,33 +36,26 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-374
+## Последний подробный RUN — N5K-20260824-376
 
-Baseline перед RUN: **304 / 304**.  
-Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **24** → fast gate **5** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **3**. Excluded: **20**.  
+Baseline перед RUN: **305 / 305**.  
+Фактически индивидуально обработано raw-кандидатов: **18**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **18** → fast gate **5** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **3**. Excluded: **14**.  
 Добавлена:
-- **СПЕЙСТЕЛ / Spacetel — ООО «СПЕЙСТЕЛ»**, ИНН `7735140543`, ОГРН `1157746073242`, Lead ID `N5K-0453`.
+- **ИСТОК / Group Istok — ООО «ИННОВАЦИОННЫЕ СОВРЕМЕННЫЕ ТЕПЛИЦЫ ОБОРУДОВАНИЕ КОМПЛЕКТУЮЩИЕ»**, ИНН `2312288395`, ОГРН `1192375082272`, Lead ID `N5K-0455`.
 
-Итог physical canonical/contactable: **305 / 305**.  
+Итог physical canonical/contactable: **306 / 306**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260824-369`: 297/297, +1, PASS, orphan 0/0.
 - `N5K-20260824-370`: 298/298, +1, PASS, orphan 0/0.
 - `N5K-20260824-371`: 300/300, +2, PASS, orphan 0/0.
 - `N5K-20260824-372`: 302/302, +2, PASS, orphan 0/0.
 - `N5K-20260824-373`: 304/304, +2, PASS, orphan 0/0.
 - `N5K-20260824-374`: 305/305, +1, PASS, orphan 0/0.
-
-
-## Latest verified run N5K-20260824-375
-Canonical/contactable: 305/305. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260824-376
-Canonical/contactable: 306/306. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+- `N5K-20260824-375`: 305/305, +0, PASS, orphan 0/0.
+- `N5K-20260824-376`: 306/306, +1, PASS, orphan 0/0.
