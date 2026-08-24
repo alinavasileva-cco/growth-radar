@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-24T10:18:00+05:00",
+  "updated_at": "2026-08-24T10:20:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260824-371",
-  "current_run_id": "N5K-20260824-371",
+  "last_completed_run_id": "N5K-20260824-372",
+  "current_run_id": "N5K-20260824-372",
   "last_run_id": "N5K-20260824-372",
   "latest_completed_run": "N5K-20260824-372",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 371 completed; added 2 unique companies (БлескСервис Регион / Блеск; СтандартПродМаш / ГК СтандартПродМаш); physical canonical/contactable 300/300; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 372 completed; added 2 unique companies (Силтрон / SILTRON; AQUADRENAG / Аквадренаж); physical canonical/contactable 302/302; integrity PASS; orphan 0/0; outreach 0."
 }
