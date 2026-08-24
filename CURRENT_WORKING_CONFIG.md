@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T18:56:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-381`  
+**Версия:** 2026-08-24T19:55:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-382`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **312 / 312**  
+**Физически подтверждённый canonical/contactable:** **313 / 313**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4688**  
+**Осталось:** **4687**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **312 / 312**;
+- physical canonical/contactable count: **313 / 313**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-381`;
+- последний завершённый RUN: `N5K-20260824-382`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,33 +36,32 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-381
+## Последний подробный RUN — N5K-20260824-382
 
-Baseline перед RUN: **311 / 311**.  
-Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **24** → fast gate **5** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **8**. Excluded: **15**.  
+Baseline перед RUN: **312 / 312**.  
+Фактически индивидуально обработано raw-кандидатов: **20**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **20** → fast gate **5** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **5**. Excluded: **14**.  
 Добавлена:
-- **Станки Трейд / Stanki Trade — ООО «СТАНКИ ТРЕЙД»**, ИНН `7606117602`, ОГРН `1187627020349`, Lead ID `N5K-0461`.
+- **Камит-Экспорт / Орловский кабельный завод — ООО «КАМИТ-ЭКСПОРТ»**, ИНН `5752050222`, ОГРН `1095752001421`, Lead ID `N5K-0462`.
 
-Итог physical canonical/contactable: **312 / 312**.  
-Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
+Ключевые причины отсева: слабый/неподтверждённый масштаб, крупные компании вне рабочего ICP, неоднозначный brand→legal match, отсутствие достаточно свежего S1–S3 сигнала, дубли. Отдельно **Калининградская фабрика упаковки** исключена после legal/quality check: актуальные источники указывают на процедуру банкротства, поэтому активная вакансия не стала основанием для квалификации.
+
+Итог physical canonical/contactable: **313 / 313**.  
+Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.  
+После физической интеграции исправлен stale runtime baseline `294` → фактический `312`; canonical data не пострадали.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260824-375`: 305/305, +0, PASS, orphan 0/0.
 - `N5K-20260824-376`: 306/306, +1, PASS, orphan 0/0.
 - `N5K-20260824-377`: 308/308, +2, PASS, orphan 0/0.
 - `N5K-20260824-378`: 309/309, +1, PASS, orphan 0/0.
 - `N5K-20260824-379`: 310/310, +1, PASS, orphan 0/0.
 - `N5K-20260824-380`: 311/311, +1, PASS, orphan 0/0.
 - `N5K-20260824-381`: 312/312, +1, PASS, orphan 0/0.
-
-## Latest verified run N5K-20260824-381
-Canonical/contactable: 312/312. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260824-382`: 313/313, +1, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260824-382
 Canonical/contactable: 313/313. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
