@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260824-371",
+  "run_id": "N5K-20260824-372",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T09:20:00+05:00",
+  "updated_at": "2026-08-24T10:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 298,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 300,
-    "current_contactable_count": 300,
-    "progress_added": 300,
-    "remaining": 4700
+    "current_canonical_count": 302,
+    "current_contactable_count": 302,
+    "progress_added": 302,
+    "remaining": 4698
   },
   "funnel": {
-    "discovered": 32,
+    "discovered": 18,
     "fast_gate_passed": 5,
     "size_check_passed": 3,
     "legal_match_passed": 2,
@@ -22,18 +22,18 @@
     "contact_route_found": 2,
     "qualified": 2,
     "duplicates": 7,
-    "excluded": 23
+    "excluded": 9
   },
   "qualified_companies": [
-    "БлескСервис Регион / Блеск",
-    "СтандартПродМаш / ГК СтандартПродМаш"
+    "Силтрон / SILTRON",
+    "AQUADRENAG / Аквадренаж"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "300_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "300_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "302_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "302_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
