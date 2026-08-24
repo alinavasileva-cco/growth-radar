@@ -1,19 +1,38 @@
 {
-  "run_id": "N5K-20260825-389",
+  "run_id": "N5K-20260825-390",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T01:18:00+05:00",
+  "updated_at": "2026-08-25T01:58:00+05:00",
   "stage": "COMPLETE",
-  "new_cycle": {"baseline_count":319,"target_count":5000,"current_canonical_count":320,"current_contactable_count":320,"progress_added":320,"remaining":4680},
-  "funnel": {"discovered":24,"fast_gate_passed":6,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":4,"excluded":19},
-  "qualified_companies": ["Лейбл Принт / Лейбл Групп"],
+  "new_cycle": {
+    "baseline_count": 294,
+    "target_count": 5000,
+    "current_canonical_count": 321,
+    "current_contactable_count": 321,
+    "progress_added": 321,
+    "remaining": 4679
+  },
+  "funnel": {
+    "discovered": 24,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 5,
+    "excluded": 18
+  },
+  "qualified_companies": [
+    "Мякиши / Фабрика игрушек Мякиши"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "320_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "320_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "321_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "321_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 389 factual result after physical integration: baseline 319/319 from completed RUN 388; Label Print / Label Group added as one new unique contactable company after physical dedup; final physical canonical/contactable 320/320; integrity PASS; orphan 0/0; staged 0; outreach 0. Automatic stale baseline 294 repaired to 319."
+  "blocker": null
 }

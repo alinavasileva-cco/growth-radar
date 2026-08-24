@@ -66,3 +66,7 @@ Integration commit физически добавил компанию. Авто�
 
 ## Latest verified run N5K-20260825-389
 Canonical/contactable: 320/320. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260825-390
+Canonical/contactable: 321/321. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
