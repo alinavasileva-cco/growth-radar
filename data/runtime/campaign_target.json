@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-24T15:20:00+05:00",
+  "updated_at": "2026-08-24T15:24:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260824-377",
-  "current_run_id": "N5K-20260824-377",
+  "last_completed_run_id": "N5K-20260824-378",
+  "current_run_id": "N5K-20260824-378",
   "last_run_id": "N5K-20260824-378",
   "latest_completed_run": "N5K-20260824-378",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 377 completed with +2 net new companies: ПО Агротех / Agroteh; Riverstart. Physical canonical/contactable 308/308; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 378 completed with +1 net new company: ГК Преград / PREGRAD. Physical canonical/contactable 309/309; integrity PASS; orphan 0/0; outreach 0."
 }
