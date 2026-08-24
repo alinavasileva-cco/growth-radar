@@ -1,37 +1,38 @@
 {
-  "run_id": "N5K-20260824-377",
+  "run_id": "N5K-20260824-378",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T14:20:00+05:00",
+  "updated_at": "2026-08-24T15:20:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 306,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 308,
-    "current_contactable_count": 308,
-    "progress_added": 308,
-    "remaining": 4692
+    "current_canonical_count": 309,
+    "current_contactable_count": 309,
+    "progress_added": 309,
+    "remaining": 4691
   },
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
+    "discovered": 18,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
     "duplicates": 4,
-    "excluded": 18
+    "excluded": 13
   },
-  "qualified_companies": ["ПО Агротех / Agroteh", "Riverstart"],
+  "qualified_companies": [
+    "ГК Преград / PREGRAD"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "308_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "308_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "309_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "309_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 377 completed with +2 net new companies from verified RUN 376 baseline 306/306. Physical canonical/contactable 308/308; integrity PASS; orphan 0/0; outreach 0."
+  "blocker": null
 }
