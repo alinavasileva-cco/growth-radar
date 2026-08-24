@@ -2,10 +2,10 @@
   "run_id": "N5K-20260824-383",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T20:31:00+05:00",
+  "updated_at": "2026-08-24T20:35:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 313,
     "target_count": 5000,
     "current_canonical_count": 314,
     "current_contactable_count": 314,
@@ -20,11 +20,11 @@
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 5,
+    "qualified": 1,
+    "duplicates": 4,
     "excluded": 7
   },
-  "qualified_companies": [],
+  "qualified_companies": ["Вертикаль / Vertical"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -32,5 +32,6 @@
   "physical_master_state": "314_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "314_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "note": "RUN 383 completed from verified RUN 382 baseline 313/313 with +1 net new company. First integration physically added Вертикаль; subsequent retrigger saw the now-existing record as duplicate and overwrote funnel metadata only. Runtime repaired to factual result. Physical canonical/contactable 314/314; integrity PASS; orphan 0/0; outreach 0."
 }
