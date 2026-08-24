@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-24T12:30:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260824-373",
-  "current_run_id": "N5K-20260824-373",
+  "last_completed_run_id": "N5K-20260824-374",
+  "current_run_id": "N5K-20260824-374",
   "last_run_id": "N5K-20260824-374",
   "latest_completed_run": "N5K-20260824-374",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 373 completed; added 2 unique companies (TrackAd / ТракАд; Ростовский завод котельного оборудования / РЗКО); physical canonical/contactable 304/304; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 374 completed; added 1 unique company (СПЕЙСТЕЛ / Spacetel); physical canonical/contactable 305/305; integrity PASS; orphan 0/0; outreach 0."
 }
