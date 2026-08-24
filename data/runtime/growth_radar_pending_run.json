@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260824-370",
-  "updated_at": "2026-08-24T08:12:00+05:00",
+  "updated_at": "2026-08-24T08:16:00+05:00",
   "funnel": {
     "discovered": 14,
     "fast_gate_passed": 4,
@@ -13,7 +13,7 @@
     "duplicates": 3,
     "excluded": 10
   },
-  "notes": "RUN 370 from verified RUN 369 baseline 297/297 PASS orphan 0/0. Fresh data only. Discovery volume target 150-200 was not reached in this execution; 14 distinct candidates were individually checked. Final physical dedup guard is authoritative. No outreach.",
+  "notes": "RUN 370 REPAIR retrigger from verified RUN 369 baseline 297/297 PASS orphan 0/0. Same qualified composition; no candidate change. Fresh data only. Discovery volume target 150-200 was not reached in this execution; 14 distinct candidates were individually checked. Final physical dedup guard is authoritative. No outreach.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0446",
