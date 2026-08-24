@@ -2,10 +2,10 @@
   "run_id": "N5K-20260824-379",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T16:00:00+05:00",
+  "updated_at": "2026-08-24T16:03:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 309,
     "target_count": 5000,
     "current_canonical_count": 310,
     "current_contactable_count": 310,
@@ -24,9 +24,7 @@
     "duplicates": 4,
     "excluded": 15
   },
-  "qualified_companies": [
-    "САТУРН КРАСНОЯРСК / Saturn"
-  ],
+  "qualified_companies": ["САТУРН КРАСНОЯРСК / Saturn"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -34,5 +32,6 @@
   "physical_master_state": "310_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "310_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "note": "RUN 379 completed from verified RUN 378 baseline 309/309 with +1 net new company. Physical canonical/contactable 310/310; integrity PASS; orphan 0/0; outreach 0. Automated stale baseline 294 repaired to factual 309."
 }
