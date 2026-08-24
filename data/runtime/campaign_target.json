@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-25T01:58:00+05:00",
+  "updated_at": "2026-08-25T02:00:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-389",
-  "current_run_id": "N5K-20260825-389",
+  "last_completed_run_id": "N5K-20260825-390",
+  "current_run_id": "N5K-20260825-390",
   "last_run_id": "N5K-20260825-390",
   "latest_completed_run": "N5K-20260825-390",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 389 completed with +1 net new after authoritative physical dedup/integration: Label Print / Label Group. Physical canonical/contactable 320/320; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 390 completed with +1 net new after authoritative physical dedup/integration: Myakishi / Toy Factory Myakishi. Physical canonical/contactable 321/321; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
