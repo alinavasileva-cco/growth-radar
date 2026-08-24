@@ -2,32 +2,11 @@
   "run_id": "N5K-20260825-392",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T04:34:00+05:00",
+  "updated_at": "2026-08-25T04:36:00+05:00",
   "stage": "COMPLETE",
-  "new_cycle": {
-    "baseline_count": 294,
-    "target_count": 5000,
-    "current_canonical_count": 325,
-    "current_contactable_count": 325,
-    "progress_added": 325,
-    "remaining": 4675
-  },
-  "funnel": {
-    "discovered": 32,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 8,
-    "excluded": 22
-  },
-  "qualified_companies": [
-    "One Marking / Одна Маркировка",
-    "Амадей Принт / Amadey Print"
-  ],
+  "new_cycle": {"baseline_count":323,"target_count":5000,"current_canonical_count":325,"current_contactable_count":325,"progress_added":325,"remaining":4675},
+  "funnel": {"discovered":32,"fast_gate_passed":6,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":8,"excluded":22},
+  "qualified_companies": ["One Marking / Одна Маркировка","Амадей Принт / Amadey Print"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -35,5 +14,6 @@
   "physical_master_state": "325_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "325_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "note": "RUN 392 factual result after physical integration: baseline 323/323 from completed RUN 391; One Marking and Amadey Print / Amadey Reklama added as two unique contactable companies after physical dedup; final physical canonical/contactable 325/325; integrity PASS; orphan 0/0; staged 0; outreach 0. Automatic stale baseline 294 repaired to factual 323."
 }
