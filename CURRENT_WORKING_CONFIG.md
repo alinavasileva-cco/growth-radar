@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T17:00:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-380`  
+**Версия:** 2026-08-24T18:56:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-381`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **311 / 311**  
+**Физически подтверждённый canonical/contactable:** **312 / 312**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4689**  
+**Осталось:** **4688**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **311 / 311**;
+- physical canonical/contactable count: **312 / 312**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-380`;
+- последний завершённый RUN: `N5K-20260824-381`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,30 +36,29 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-380
+## Последний подробный RUN — N5K-20260824-381
 
-Baseline перед RUN: **310 / 310**.  
-Фактически индивидуально обработано raw-кандидатов: **30**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **30** → fast gate **5** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **6**. Excluded: **23**.  
+Baseline перед RUN: **311 / 311**.  
+Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **24** → fast gate **5** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **8**. Excluded: **15**.  
 Добавлена:
-- **R&D / РнД Автозапчасти — ООО «РНД АВТОЗАПЧАСТИ»**, ИНН `3257085185`, ОГРН `1223200005170`, Lead ID `N5K-0460`.
+- **Станки Трейд / Stanki Trade — ООО «СТАНКИ ТРЕЙД»**, ИНН `7606117602`, ОГРН `1187627020349`, Lead ID `N5K-0461`.
 
-Итог physical canonical/contactable: **311 / 311**.  
+Итог physical canonical/contactable: **312 / 312**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260824-374`: 305/305, +1, PASS, orphan 0/0.
 - `N5K-20260824-375`: 305/305, +0, PASS, orphan 0/0.
 - `N5K-20260824-376`: 306/306, +1, PASS, orphan 0/0.
 - `N5K-20260824-377`: 308/308, +2, PASS, orphan 0/0.
 - `N5K-20260824-378`: 309/309, +1, PASS, orphan 0/0.
 - `N5K-20260824-379`: 310/310, +1, PASS, orphan 0/0.
 - `N5K-20260824-380`: 311/311, +1, PASS, orphan 0/0.
-
+- `N5K-20260824-381`: 312/312, +1, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260824-381
 Canonical/contactable: 312/312. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
