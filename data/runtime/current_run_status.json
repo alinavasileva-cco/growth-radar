@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260824-380",
+  "run_id": "N5K-20260824-381",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T17:00:00+05:00",
+  "updated_at": "2026-08-24T18:56:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 310,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 311,
-    "current_contactable_count": 311,
-    "progress_added": 311,
-    "remaining": 4689
+    "current_canonical_count": 312,
+    "current_contactable_count": 312,
+    "progress_added": 312,
+    "remaining": 4688
   },
   "funnel": {
-    "discovered": 30,
+    "discovered": 24,
     "fast_gate_passed": 5,
     "size_check_passed": 2,
     "legal_match_passed": 1,
@@ -21,17 +21,18 @@
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 6,
-    "excluded": 23
+    "duplicates": 8,
+    "excluded": 15
   },
-  "qualified_companies": ["R&D / РнД Автозапчасти"],
+  "qualified_companies": [
+    "Станки Трейд / Stanki Trade"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "311_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "311_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "312_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "312_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 380 completed from verified RUN 379 baseline 310/310 with +1 net new company. Automated stale baseline 294 repaired to factual 310. Physical canonical/contactable 311/311; integrity PASS; orphan 0/0; outreach 0."
+  "blocker": null
 }
