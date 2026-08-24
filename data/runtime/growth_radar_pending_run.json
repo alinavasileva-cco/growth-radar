@@ -1,47 +1,13 @@
 {
   "run_id": "N5K-20260824-368",
-  "updated_at": "2026-08-24T06:05:00+05:00",
+  "updated_at": "2026-08-24T06:09:00+05:00",
   "funnel": {"discovered":18,"fast_gate_passed":5,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":4,"excluded":13},
-  "notes": "RUN 368 continues from verified physical RUN 367 state 295/295 PASS orphan 0/0. Multi-stream fresh 2026 discovery; weak/ambiguous candidates rejected before deep-check. Fresh data only. Final physical dedup guard is authoritative. No outreach.",
+  "notes": "RUN 368 REPAIR retrigger from verified physical RUN 367 state 295/295 PASS orphan 0/0. Same qualified composition; no candidate change. Fresh data only. Final physical dedup guard is authoritative. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID":"N5K-0444",
-      "Brand":"Lossew / НПП Лосев",
-      "Legal Name":"ООО «НПП «ЛОСЕВ»",
-      "INN":"2225181247",
-      "OGRN/OGRNIP":"1172225016413",
-      "Region":"Алтайский край / Москва",
-      "City":"Барнаул",
-      "Segment":"B2B производство промышленного инструмента и светодиодных технологий",
-      "Website":"https://lossew.com/",
-      "Revenue/Scale":"Действующее частное ООО; 349,922 млн ₽ выручки и 107,981 млн ₽ чистой прибыли за 2025 год; собственное производство в Барнауле; поставщик АвтоВАЗа и резидент Сколково.",
-      "Signal Level":"S1",
-      "Signal Summary":"Актуальная вакансия Руководителя отдела продаж: разработка и реализация стратегии продаж, выполнение планов, развитие клиентов, организация и контроль отдела, формирование/обучение/мотивация команды. Компания одновременно заявляет этап масштабирования.",
-      "Signal Date":"2026-08-23",
-      "Signal Source":"https://jobrun.ru/%D0%BD%D0%BF%D0%BF-%D0%B1%D0%BB%D0%BE%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
-      "Owner":"Кострицин Владимир Николаевич / структура владения требует отдельной корпоративной выписки; для контакта используется подтверждённый CEO",
-      "CEO":"Кострицин Владимир Николаевич",
-      "LPR":"Кострицин Владимир Николаевич",
-      "LPR Role":"Генеральный директор, практический ЛПР",
-      "Primary Phone":"+7 (495) 432-20-72",
-      "Primary Email":"g.director@lossew.com",
-      "HH Contact":"Current НПП Лосев Head of Sales vacancy route",
-      "Contact Form":"https://lossew.com/contact/",
-      "Contact Type":"Official CEO email + corporate phone/site + current employer vacancy route",
-      "Contact Source":"Official Lossew site and current 2026 vacancy",
-      "Consulting Hypothesis":"Систематизация и масштабирование B2B-sales: стратегия, сегментация, CRM/KPI, управление воронкой и маржинальностью, развитие дилерских/корпоративных каналов и управленческой команды продаж.",
-      "contacts":[
-        {"value":"g.director@lossew.com","channel":"Email","type":"Official CEO email","source":"Official Lossew site","url":"https://lossew.com/contact/","is_lpr":true,"notes":"Прямой официальный маршрут к генеральному директору"},
-        {"value":"+7 (495) 432-20-72","channel":"Phone","type":"Official company phone","source":"Official Lossew site","url":"https://lossew.com/contact/","is_lpr":false,"notes":"Корпоративный маршрут"},
-        {"value":"Current НПП Лосев Head of Sales vacancy route","channel":"Vacancy","type":"Current employer route","source":"2026 vacancy","url":"https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-rop","is_lpr":false,"notes":"Текущая вакансия РОП"}
-      ],
-      "evidence":[
-        {"type":"LEGAL","claim":"ООО «НПП «ЛОСЕВ», ИНН 2225181247, ОГРН 1172225016413; действует; генеральный директор Кострицин Владимир Николаевич.","url":"https://q4tools.com/about/contacts/requisites.php","source":"Official company requisites + current registry profile"},
-        {"type":"SCALE_CURRENT","claim":"349,922 млн ₽ выручки и 107,981 млн ₽ чистой прибыли за 2025 год; собственное производство в Барнауле.","url":"https://companies.rbc.ru/id/1172225016413-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchno-proizvodstvennoe-predpriyatie-losev/","source":"Current 2025 financial profile"},
-        {"type":"SIGNAL","claim":"2026: актуальная вакансия Руководителя отдела продаж с ответственностью за стратегию, планы, клиентов и построение/управление командой продаж; компания находится на этапе масштабирования.","url":"https://jobrun.ru/%D0%BD%D0%BF%D0%BF-%D0%B1%D0%BB%D0%BE%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0","source":"Current 2026 vacancy"},
-        {"type":"LPR","claim":"Кострицин Владимир Николаевич — актуальный генеральный директор ООО «НПП «ЛОСЕВ».","url":"https://q4tools.com/about/contacts/requisites.php","source":"Official company requisites"},
-        {"type":"CONTACT","claim":"Официальные маршруты: g.director@lossew.com, +7 (495) 432-20-72, lossew.com/contact и текущая Head of Sales vacancy route.","url":"https://lossew.com/contact/","source":"Official Lossew site"}
-      ]
+      "Lead ID":"N5K-0444","Brand":"Lossew / НПП Лосев","Legal Name":"ООО «НПП «ЛОСЕВ»","INN":"2225181247","OGRN/OGRNIP":"1172225016413","Region":"Алтайский край / Москва","City":"Барнаул","Segment":"B2B производство промышленного инструмента и светодиодных технологий","Website":"https://lossew.com/","Revenue/Scale":"Действующее частное ООО; 349,922 млн ₽ выручки и 107,981 млн ₽ чистой прибыли за 2025 год; собственное производство в Барнауле; поставщик АвтоВАЗа и резидент Сколково.","Signal Level":"S1","Signal Summary":"Актуальная вакансия Руководителя отдела продаж: стратегия продаж, выполнение планов, развитие клиентов, организация и контроль отдела, формирование/обучение/мотивация команды; компания находится на этапе масштабирования.","Signal Date":"2026-08-23","Signal Source":"https://jobrun.ru/%D0%BD%D0%BF%D0%BF-%D0%B1%D0%BB%D0%BE%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0","Owner":"Структуру владения не использовал как обязательное поле: подтверждён практический ЛПР — действующий CEO.","CEO":"Кострицин Владимир Николаевич","LPR":"Кострицин Владимир Николаевич","LPR Role":"Генеральный директор, практический ЛПР","Primary Phone":"+7 (495) 432-20-72","Primary Email":"g.director@lossew.com","HH Contact":"Current НПП Лосев Head of Sales vacancy route","Contact Form":"https://lossew.com/contact/","Contact Type":"Official CEO email + corporate phone/site + current employer vacancy route","Contact Source":"Official Lossew site and current 2026 vacancy","Consulting Hypothesis":"Систематизация и масштабирование B2B-sales: стратегия, сегментация, CRM/KPI, управление воронкой и маржинальностью, развитие дилерских/корпоративных каналов и команды продаж.",
+      "contacts":[{"value":"g.director@lossew.com","channel":"Email","type":"Official CEO email","source":"Official Lossew site","url":"https://lossew.com/contact/","is_lpr":true,"notes":"Прямой официальный маршрут к CEO"},{"value":"+7 (495) 432-20-72","channel":"Phone","type":"Official company phone","source":"Official Lossew site","url":"https://lossew.com/contact/","is_lpr":false,"notes":"Корпоративный маршрут"},{"value":"Current НПП Лосев Head of Sales vacancy route","channel":"Vacancy","type":"Current employer route","source":"2026 vacancy","url":"https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-rop","is_lpr":false,"notes":"Текущая вакансия РОП"}],
+      "evidence":[{"type":"LEGAL","claim":"ООО «НПП «ЛОСЕВ», ИНН 2225181247, ОГРН 1172225016413; действует; генеральный директор Кострицин Владимир Николаевич.","url":"https://q4tools.com/about/contacts/requisites.php","source":"Official company requisites + current registry profile"},{"type":"SCALE_CURRENT","claim":"349,922 млн ₽ выручки и 107,981 млн ₽ чистой прибыли за 2025 год; собственное производство в Барнауле.","url":"https://companies.rbc.ru/id/1172225016413-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchno-proizvodstvennoe-predpriyatie-losev/","source":"Current 2025 financial profile"},{"type":"SIGNAL","claim":"2026: актуальная вакансия Руководителя отдела продаж с ответственностью за стратегию, планы, клиентов и построение/управление командой продаж; компания находится на этапе масштабирования.","url":"https://jobrun.ru/%D0%BD%D0%BF%D0%BF-%D0%B1%D0%BB%D0%BE%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0","source":"Current 2026 vacancy"},{"type":"LPR","claim":"Кострицин Владимир Николаевич — актуальный генеральный директор ООО «НПП «ЛОСЕВ».","url":"https://q4tools.com/about/contacts/requisites.php","source":"Official company requisites"},{"type":"CONTACT","claim":"Официальные маршруты: g.director@lossew.com, +7 (495) 432-20-72, lossew.com/contact и текущая Head of Sales vacancy route.","url":"https://lossew.com/contact/","source":"Official Lossew site"}]
     }
   ]
 }
