@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-25T00:50:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260824-387",
-  "current_run_id": "N5K-20260824-387",
+  "last_completed_run_id": "N5K-20260825-388",
+  "current_run_id": "N5K-20260825-388",
   "last_run_id": "N5K-20260825-388",
   "latest_completed_run": "N5K-20260825-388",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 387 completed with +1 net new company: Стопэкспресс / StopExpress. Physical canonical/contactable 319/319; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 388 completed with +0 net new: both staged candidates were rejected by authoritative physical dedup as existing by INN+OGRN+legal name. Physical canonical/contactable 319/319; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
