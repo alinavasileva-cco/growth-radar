@@ -5,7 +5,7 @@
   "updated_at": "2026-08-24T18:56:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 311,
     "target_count": 5000,
     "current_canonical_count": 312,
     "current_contactable_count": 312,
@@ -24,9 +24,7 @@
     "duplicates": 8,
     "excluded": 15
   },
-  "qualified_companies": [
-    "Станки Трейд / Stanki Trade"
-  ],
+  "qualified_companies": ["Станки Трейд / Stanki Trade"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -34,5 +32,6 @@
   "physical_master_state": "312_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "312_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "note": "RUN 381 completed from verified RUN 380 baseline 311/311 with +1 net new company. Automated stale baseline 294 repaired to factual 311. Physical canonical/contactable 312/312; integrity PASS; orphan 0/0; outreach 0."
 }
