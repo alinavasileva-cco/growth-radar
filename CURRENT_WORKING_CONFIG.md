@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T23:59:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-387`  
+**Версия:** 2026-08-25T01:18:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260825-389`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **319 / 319**  
+**Физически подтверждённый canonical/contactable:** **320 / 320**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4681**  
+**Осталось:** **4680**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **319 / 319**;
+- physical canonical/contactable count: **320 / 320**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-387`;
+- последний завершённый RUN: `N5K-20260825-389`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,18 +36,18 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-387
+## Последний подробный RUN — N5K-20260825-389
 
-Baseline перед RUN: **318 / 318**.  
+Baseline перед RUN: **319 / 319**.  
 Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
 Воронка: discovered **24** → fast gate **6** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **5**. Excluded: **18**.  
+Duplicates: **4**. Excluded: **19**.  
 Добавлена:
-- **Стопэкспресс / StopExpress — ООО «СТОПЭКСПРЕСС»**, ИНН `7813548100`, ОГРН `1127847596546`, Lead ID `N5K-0468`.
+- **Лейбл Принт / Лейбл Групп — ООО «ЛЕЙБЛ ПРИНТ»**, ИНН `2222825253`, ОГРН `1142223006540`, Lead ID `N5K-0471`.
 
-Итог physical canonical/contactable: **319 / 319**.  
+Итог physical canonical/contactable: **320 / 320**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.  
-Integration commit физически добавил компанию. Автоматический stale baseline `294` исправлен на фактический baseline `318`; campaign target и run metrics синхронизированы на RUN 387.
+Integration commit физически добавил компанию. Автоматический stale baseline `294` исправлен на фактический baseline `319`; campaign target и run metrics синхронизированы на RUN 389.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
@@ -61,14 +61,8 @@ Integration commit физически добавил компанию. Авто�
 - `N5K-20260824-385`: 317/317, +1, PASS, orphan 0/0.
 - `N5K-20260824-386`: 318/318, +1, PASS, orphan 0/0.
 - `N5K-20260824-387`: 319/319, +1, PASS, orphan 0/0.
-
-## Latest verified run N5K-20260824-387
-Canonical/contactable: 319/319. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260825-388
-Canonical/contactable: 319/319. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260825-388`: 319/319, +0, PASS, orphan 0/0.
+- `N5K-20260825-389`: 320/320, +1, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260825-389
 Canonical/contactable: 320/320. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
