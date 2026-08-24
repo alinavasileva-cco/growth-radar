@@ -2,10 +2,10 @@
   "run_id": "N5K-20260824-376",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T13:20:00+05:00",
+  "updated_at": "2026-08-24T13:25:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 305,
     "target_count": 5000,
     "current_canonical_count": 306,
     "current_contactable_count": 306,
@@ -24,9 +24,7 @@
     "duplicates": 3,
     "excluded": 14
   },
-  "qualified_companies": [
-    "ИСТОК / Group Istok"
-  ],
+  "qualified_companies": ["ИСТОК / Group Istok"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -34,5 +32,6 @@
   "physical_master_state": "306_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "306_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "note": "RUN 376 completed with +1 net new company from verified RUN 375 baseline 305/305. Physical canonical/contactable 306/306; integrity PASS; orphan 0/0; outreach 0."
 }
