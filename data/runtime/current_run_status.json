@@ -2,7 +2,7 @@
   "run_id": "N5K-20260824-385",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T21:58:00+05:00",
+  "updated_at": "2026-08-24T22:01:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 294,
@@ -20,13 +20,11 @@
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 2,
+    "qualified": 0,
+    "duplicates": 3,
     "excluded": 9
   },
-  "qualified_companies": [
-    "Глассен-АйТи / Glassen IT / Снипр"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
