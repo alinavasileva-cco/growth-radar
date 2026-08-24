@@ -2,10 +2,10 @@
   "run_id": "N5K-20260824-375",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T12:46:47+05:00",
+  "updated_at": "2026-08-24T12:50:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 305,
     "target_count": 5000,
     "current_canonical_count": 305,
     "current_contactable_count": 305,
@@ -32,5 +32,6 @@
   "physical_master_state": "305_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "305_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "note": "RUN 375 completed with no net addition: staged Русгеосинт was rejected by authoritative physical dedup as already present. Runtime baseline repaired from stale 294 to verified 305."
 }
