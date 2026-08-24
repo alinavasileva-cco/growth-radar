@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260824-379",
+  "run_id": "N5K-20260824-380",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T16:03:00+05:00",
+  "updated_at": "2026-08-24T17:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 309,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 310,
-    "current_contactable_count": 310,
-    "progress_added": 310,
-    "remaining": 4690
+    "current_canonical_count": 311,
+    "current_contactable_count": 311,
+    "progress_added": 311,
+    "remaining": 4689
   },
   "funnel": {
-    "discovered": 20,
+    "discovered": 30,
     "fast_gate_passed": 5,
     "size_check_passed": 2,
     "legal_match_passed": 1,
@@ -21,17 +21,18 @@
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 4,
-    "excluded": 15
+    "duplicates": 6,
+    "excluded": 23
   },
-  "qualified_companies": ["САТУРН КРАСНОЯРСК / Saturn"],
+  "qualified_companies": [
+    "R&D / РнД Автозапчасти"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "310_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "310_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "311_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "311_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 379 completed from verified RUN 378 baseline 309/309 with +1 net new company. Physical canonical/contactable 310/310; integrity PASS; orphan 0/0; outreach 0. Automated stale baseline 294 repaired to factual 309."
+  "blocker": null
 }

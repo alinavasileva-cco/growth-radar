@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0460,N5K-0460-C01,R&D / РнД Автозапчасти,3257085185,,Корпоративный маршрут,+7 (4832) 77-00-56,Phone,Official company reception phone,Official company site,https://rnd.parts/,NO,HIGH,2026-08-24,Официальная приёмная,N5K-20260824-380,new_5000
+N5K-0460,N5K-0460-C02,R&D / РнД Автозапчасти,3257085185,,Корпоративный маршрут,info@rnd.parts,Email,Official company email,Official company site,https://rnd.parts/,NO,HIGH,2026-08-24,Корпоративный email,N5K-20260824-380,new_5000
+N5K-0460,N5K-0460-C03,R&D / РнД Автозапчасти,3257085185,,Корпоративный маршрут,Current 2026 Head of Sales B2B employer route,Vacancy,Employer route,Current vacancy,https://get-works.ru/job-detail.php?vac=135566090,NO,HIGH,2026-08-24,Маршрут по текущей вакансии руководителя B2B-направления,N5K-20260824-380,new_5000
