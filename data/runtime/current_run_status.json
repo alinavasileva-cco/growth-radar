@@ -2,10 +2,10 @@
   "run_id": "N5K-20260824-371",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T09:16:00+05:00",
+  "updated_at": "2026-08-24T09:20:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 298,
     "target_count": 5000,
     "current_canonical_count": 300,
     "current_contactable_count": 300,
@@ -20,11 +20,14 @@
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 0,
-    "duplicates": 9,
+    "qualified": 2,
+    "duplicates": 7,
     "excluded": 23
   },
-  "qualified_companies": [],
+  "qualified_companies": [
+    "БлескСервис Регион / Блеск",
+    "СтандартПродМаш / ГК СтандартПродМаш"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,

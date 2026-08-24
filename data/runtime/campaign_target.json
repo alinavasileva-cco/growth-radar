@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-24T09:16:00+05:00",
+  "updated_at": "2026-08-24T09:20:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260824-370",
-  "current_run_id": "N5K-20260824-370",
+  "last_completed_run_id": "N5K-20260824-371",
+  "current_run_id": "N5K-20260824-371",
   "last_run_id": "N5K-20260824-371",
   "latest_completed_run": "N5K-20260824-371",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 370 completed; added 1 unique company (СпецПоддон / ООО «ВЕКТОР»); physical canonical/contactable 298/298; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 371 completed; added 2 unique companies (БлескСервис Регион / Блеск; СтандартПродМаш / ГК СтандартПродМаш); physical canonical/contactable 300/300; integrity PASS; orphan 0/0; outreach 0."
 }

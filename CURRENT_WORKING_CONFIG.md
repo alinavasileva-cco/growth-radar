@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T08:23:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-370`  
+**Версия:** 2026-08-24T09:20:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-371`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **298 / 298**  
+**Физически подтверждённый canonical/contactable:** **300 / 300**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4702**  
+**Осталось:** **4700**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **298 / 298**;
+- physical canonical/contactable count: **300 / 300**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-370`;
+- последний завершённый RUN: `N5K-20260824-371`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,83 +36,26 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-370
+## Последний подробный RUN — N5K-20260824-371
 
-Baseline перед RUN: **297 / 297**.  
-Фактически индивидуально обработано raw-кандидатов: **14**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **14** → fast gate **4** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **3**. Excluded: **10**.  
-Добавлена:
-- **СпецПоддон — ООО «ВЕКТОР»**, ИНН `3665818948`, ОГРН `1223600008609`, Lead ID `N5K-0446`.
+Baseline перед RUN: **298 / 298**.  
+Фактически индивидуально обработано raw-кандидатов: **32**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **32** → fast gate **5** → size **3** → legal **2** → signal **2** → LPR **2** → contact **2** → qualified **2** → physically integrated **2**.  
+Duplicates: **7**. Excluded: **23**.  
+Добавлены:
+- **БлескСервис Регион / Блеск — ООО «БЛЕСКСЕРВИС РЕГИОН»**, ИНН `1657096815`, ОГРН `1101690046105`, Lead ID `N5K-0447`.
+- **СтандартПродМаш / ГК СтандартПродМаш — ООО ГК «СТАНДАРТПРОДМАШ»**, ИНН `7716918242`, ОГРН `1187746722932`, Lead ID `N5K-0448`.
 
-Итог physical canonical/contactable: **298 / 298**.  
+Итог physical canonical/contactable: **300 / 300**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
-
-СпецПоддон: действующее ООО; 210,7 млн ₽ выручки за 2025 год; 14 сотрудников по данным ФНС за 2025 год. 14 августа 2026 года опубликована вакансия Руководителя отдела продаж с задачами найма и обучения менеджеров, организации и контроля отдела и роста коммерческих показателей. Директор и единственный собственник — Вадим Микеров; официальный сайт публикует корпоративный телефон и email.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
-## Latest verified run N5K-20260823-352
-Canonical/contactable: 274/274. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+## Последние подтверждённые RUN
 
-## Latest verified run N5K-20260823-353
-Canonical/contactable: 276/276. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260823-354
-Canonical/contactable: 278/278. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260823-355
-Canonical/contactable: 280/280. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260823-356
-Canonical/contactable: 281/281. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260823-357
-Canonical/contactable: 282/282. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260823-358
-Canonical/contactable: 283/283. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260823-359
-Canonical/contactable: 285/285. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260823-360
-Canonical/contactable: 286/286. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260823-361
-Canonical/contactable: 288/288. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-362
-Canonical/contactable: 289/289. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-363
-Canonical/contactable: 290/290. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-364
-Canonical/contactable: 291/291. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-365
-Canonical/contactable: 293/293. Added: 2. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-366
-Canonical/contactable: 294/294. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-367
-Canonical/contactable: 295/295. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-368
-Canonical/contactable: 296/296. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-369
-Canonical/contactable: 297/297. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260824-370
-Canonical/contactable: 298/298. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260824-371
-Canonical/contactable: 300/300. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260824-371
-Canonical/contactable: 300/300. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+- `N5K-20260824-366`: 294/294, +1, PASS, orphan 0/0.
+- `N5K-20260824-367`: 295/295, +1, PASS, orphan 0/0.
+- `N5K-20260824-368`: 296/296, +1, PASS, orphan 0/0.
+- `N5K-20260824-369`: 297/297, +1, PASS, orphan 0/0.
+- `N5K-20260824-370`: 298/298, +1, PASS, orphan 0/0.
+- `N5K-20260824-371`: 300/300, +2, PASS, orphan 0/0.
