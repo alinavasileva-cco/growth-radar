@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260824-369",
-  "updated_at": "2026-08-24T07:18:00+05:00",
+  "updated_at": "2026-08-24T07:23:00+05:00",
   "funnel": {
     "discovered": 21,
     "fast_gate_passed": 5,
@@ -13,7 +13,7 @@
     "duplicates": 8,
     "excluded": 12
   },
-  "notes": "RUN 369 from verified RUN 368 baseline 296/296 PASS orphan 0/0. Discovery used current job-board signals and official/company/legal sources. Fresh data only. Final physical dedup guard is authoritative. No outreach.",
+  "notes": "RUN 369 REPAIR retrigger from verified RUN 368 baseline 296/296 PASS orphan 0/0. Same qualified composition; no candidate change. Fresh data only. Final physical dedup guard is authoritative. No outreach.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0445",
@@ -42,65 +42,16 @@
       "Contact Source": "Official Verba Group site and current 2026 vacancy",
       "Consulting Hypothesis": "Построение системного B2B-sales для AI-продукта: ICP/сегментация, воронка и CRM, KPI, outbound/partner channels, управление командой и прогнозируемый revenue process.",
       "contacts": [
-        {
-          "value": "verbavoice.ai@gmail.com",
-          "channel": "Email",
-          "type": "Official company email",
-          "source": "Official Verba Group site",
-          "url": "https://verba-group.com/",
-          "is_lpr": false,
-          "notes": "Корпоративный маршрут"
-        },
-        {
-          "value": "+7 800 350 42 13",
-          "channel": "Phone",
-          "type": "Official company phone",
-          "source": "Official Verba Group site",
-          "url": "https://verba-group.com/",
-          "is_lpr": false,
-          "notes": "Корпоративный маршрут"
-        },
-        {
-          "value": "Current VERBA-group Head of Sales / ROP B2B AI vacancy route",
-          "channel": "Vacancy",
-          "type": "Current employer route",
-          "source": "Remote-job current vacancy index",
-          "url": "https://remote-job.ru/search?search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+B2B&search%5BsearchType%5D=vacancy",
-          "is_lpr": false,
-          "notes": "Свежий employer route, 22.08.2026"
-        }
+        {"value":"verbavoice.ai@gmail.com","channel":"Email","type":"Official company email","source":"Official Verba Group site","url":"https://verba-group.com/","is_lpr":false,"notes":"Корпоративный маршрут"},
+        {"value":"+7 800 350 42 13","channel":"Phone","type":"Official company phone","source":"Official Verba Group site","url":"https://verba-group.com/","is_lpr":false,"notes":"Корпоративный маршрут"},
+        {"value":"Current VERBA-group Head of Sales / ROP B2B AI vacancy route","channel":"Vacancy","type":"Current employer route","source":"Remote-job current vacancy index","url":"https://remote-job.ru/search?search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+B2B&search%5BsearchType%5D=vacancy","is_lpr":false,"notes":"Свежий employer route, 22.08.2026"}
       ],
       "evidence": [
-        {
-          "type": "LEGAL",
-          "claim": "ООО «ВЕРБА-ГРУПП», ИНН 4345515696, ОГРН 1224300000693; действует; директор и единственный собственник Пинаев Александр Михайлович.",
-          "url": "https://companies.rbc.ru/id/1224300000693-obschestvo-s-ogranichennoj-otvetstvennostyu-verba-grupp/",
-          "source": "Current legal/company profile + official site"
-        },
-        {
-          "type": "SCALE_CURRENT",
-          "claim": "15,816 млн ₽ выручки за 2025 год; около 10–11 сотрудников по актуальным публичным профилям.",
-          "url": "https://companies.rbc.ru/id/1224300000693-obschestvo-s-ogranichennoj-otvetstvennostyu-verba-grupp/",
-          "source": "2025 financial profile"
-        },
-        {
-          "type": "SIGNAL",
-          "claim": "22.08.2026: вакансия РОП (AI-продукт, B2B) с прямой задачей взять продажи и выстроить их в работающую систему.",
-          "url": "https://remote-job.ru/search?search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+B2B&search%5BsearchType%5D=vacancy",
-          "source": "Current 2026 job-board listing"
-        },
-        {
-          "type": "LPR",
-          "claim": "Пинаев Александр Михайлович — директор и 100% собственник ООО «ВЕРБА-ГРУПП».",
-          "url": "https://zachestnyibiznes.ru/fl/431500773000",
-          "source": "Current public registry profile"
-        },
-        {
-          "type": "CONTACT",
-          "claim": "Официальные маршруты: +7 800 350 42 13, verbavoice.ai@gmail.com, официальный сайт и текущая вакансия РОП.",
-          "url": "https://verba-group.com/",
-          "source": "Official Verba Group site"
-        }
+        {"type":"LEGAL","claim":"ООО «ВЕРБА-ГРУПП», ИНН 4345515696, ОГРН 1224300000693; действует; директор и единственный собственник Пинаев Александр Михайлович.","url":"https://companies.rbc.ru/id/1224300000693-obschestvo-s-ogranichennoj-otvetstvennostyu-verba-grupp/","source":"Current legal/company profile + official site"},
+        {"type":"SCALE_CURRENT","claim":"15,816 млн ₽ выручки за 2025 год; около 10–11 сотрудников по актуальным публичным профилям.","url":"https://companies.rbc.ru/id/1224300000693-obschestvo-s-ogranichennoj-otvetstvennostyu-verba-grupp/","source":"2025 financial profile"},
+        {"type":"SIGNAL","claim":"22.08.2026: вакансия РОП (AI-продукт, B2B) с прямой задачей взять продажи и выстроить их в работающую систему.","url":"https://remote-job.ru/search?search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+B2B&search%5BsearchType%5D=vacancy","source":"Current 2026 job-board listing"},
+        {"type":"LPR","claim":"Пинаев Александр Михайлович — директор и 100% собственник ООО «ВЕРБА-ГРУПП».","url":"https://zachestnyibiznes.ru/fl/431500773000","source":"Current public registry profile"},
+        {"type":"CONTACT","claim":"Официальные маршруты: +7 800 350 42 13, verbavoice.ai@gmail.com, официальный сайт и текущая вакансия РОП.","url":"https://verba-group.com/","source":"Official Verba Group site"}
       ]
     }
   ]
