@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260824-381",
+  "run_id": "N5K-20260824-382",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T18:56:00+05:00",
+  "updated_at": "2026-08-24T19:52:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 311,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 312,
-    "current_contactable_count": 312,
-    "progress_added": 312,
-    "remaining": 4688
+    "current_canonical_count": 313,
+    "current_contactable_count": 313,
+    "progress_added": 313,
+    "remaining": 4687
   },
   "funnel": {
-    "discovered": 24,
+    "discovered": 20,
     "fast_gate_passed": 5,
     "size_check_passed": 2,
     "legal_match_passed": 1,
@@ -21,17 +21,18 @@
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 8,
-    "excluded": 15
+    "duplicates": 5,
+    "excluded": 14
   },
-  "qualified_companies": ["Станки Трейд / Stanki Trade"],
+  "qualified_companies": [
+    "Камит-Экспорт / Орловский кабельный завод"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "312_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "312_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "313_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "313_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 381 completed from verified RUN 380 baseline 311/311 with +1 net new company. Automated stale baseline 294 repaired to factual 311. Physical canonical/contactable 312/312; integrity PASS; orphan 0/0; outreach 0."
+  "blocker": null
 }
