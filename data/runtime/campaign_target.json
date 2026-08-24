@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-25T01:16:00+05:00",
+  "updated_at": "2026-08-25T01:18:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-388",
-  "current_run_id": "N5K-20260825-388",
+  "last_completed_run_id": "N5K-20260825-389",
+  "current_run_id": "N5K-20260825-389",
   "last_run_id": "N5K-20260825-389",
   "latest_completed_run": "N5K-20260825-389",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 388 completed with +0 net new: both staged candidates were rejected by authoritative physical dedup as existing by INN+OGRN+legal name. Physical canonical/contactable 319/319; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 389 completed with +1 net new after authoritative physical dedup/integration: Label Print / Label Group. Physical canonical/contactable 320/320; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
