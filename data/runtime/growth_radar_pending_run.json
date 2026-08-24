@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260824-371",
-  "updated_at": "2026-08-24T09:16:00+05:00",
+  "run_id": "N5K-20260824-372",
+  "updated_at": "2026-08-24T10:18:00+05:00",
   "funnel": {
-    "discovered": 32,
+    "discovered": 18,
     "fast_gate_passed": 5,
     "size_check_passed": 3,
     "legal_match_passed": 2,
@@ -11,17 +11,89 @@
     "contact_route_found": 2,
     "qualified": 2,
     "duplicates": 7,
-    "excluded": 23
+    "excluded": 9
   },
-  "notes": "RUN 371 REPAIR retrigger from verified RUN 370 baseline 298/298 PASS orphan 0/0. Same two qualified candidates; no candidate change. 32 distinct candidates individually surfaced/fast-gated; target 150-200 not reached and not claimed. Fresh/current data only. Final physical dedup guard authoritative. No outreach.",
+  "notes": "RUN 372 from verified RUN 371 baseline 300/300 PASS orphan 0/0. 18 distinct candidates individually surfaced/fast-gated in this execution; target 150-200 not reached and not claimed. Seven known/recent physical duplicates were excluded before deep-check. Fresh/current data only. Final physical dedup guard authoritative. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID":"N5K-0447","Brand":"БлескСервис Регион / Блеск","Legal Name":"ООО «БЛЕСКСЕРВИС РЕГИОН»","INN":"1657096815","OGRN/OGRNIP":"1101690046105","Region":"Республика Татарстан","City":"Казань","Segment":"B2B facility management / клининг / комплексное обслуживание недвижимости","Website":"http://www.bleskservis.ru/","Revenue/Scale":"Действующее частное ООО; выручка 654,267 млн ₽ за 2025 год; 105 сотрудников за 2025 год; федеральный поставщик комплексного клинингового и facility-сервиса.","Signal Level":"S1","Signal Summary":"В 2026 году компания ищет Руководителя отдела продаж; задачи включают выполнение стратегии и плана продаж, аудит коммерческих KPI, развитие новых регионов, регламентирование и развитие команды. Текущие агрегаторы вакансий продолжают показывать активный найм руководителя продаж в августе 2026.","Signal Date":"2026-08-22","Signal Source":"https://kazan.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B2-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0","Owner":"Бадрутдинов Рустем Наилевич, 100%","CEO":"Бадрутдинов Рустем Наилевич","LPR":"Бадрутдинов Рустем Наилевич","LPR Role":"Генеральный директор и единственный собственник","Primary Phone":"+7 (843) 556-25-17","Primary Email":"i.serov@bleskservis.ru","HH Contact":"Current БлескСервис Регион Head of Sales vacancy route","Contact Form":"http://www.bleskservis.ru/","Contact Type":"Corporate email/phone/domain + current employer vacancy route","Contact Source":"Current legal/company profiles + corporate domain + current 2026 vacancy","Consulting Hypothesis":"Систематизация федеральной B2B-sales модели facility management: региональная экспансия, KPI и план-факт, сегментация клиентов, CRM/воронка, стандарты работы отделов и экономика каналов.",
-      "contacts":[{"value":"i.serov@bleskservis.ru","channel":"Email","type":"Corporate domain email","source":"Current company profile","url":"https://reputation.ru/ogrn/1101690046105","is_lpr":false,"notes":"Корпоративный маршрут на домене бренда"},{"value":"+7 (843) 556-25-17","channel":"Phone","type":"Corporate phone","source":"Industry/company directory for BleskServis","url":"https://www.cleannow.ru/company/272.htm","is_lpr":false,"notes":"Публичный корпоративный маршрут"},{"value":"Current БлескСервис Регион Head of Sales vacancy route","channel":"Vacancy","type":"Current employer route","source":"Current 2026 job-board listing","url":"https://kazan.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B2-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0","is_lpr":false,"notes":"Свежий employer route, август 2026"}],
-      "evidence":[{"type":"LEGAL","claim":"ООО «БЛЕСКСЕРВИС РЕГИОН», ИНН 1657096815, ОГРН 1101690046105; действует; генеральный директор и собственник 100% Бадрутдинов Рустем Наилевич.","url":"https://check.tochka.com/company/1101690046105/","source":"Current legal/company profile, 2026"},{"type":"SCALE_CURRENT","claim":"Выручка 654,267 млн ₽ за 2025 год; 105 сотрудников за 2025 год.","url":"https://vsem-podryad.ru/company/3c0a04bd-63ad-468d-9e6a-a0c4e4db4372/","source":"2025 financial/company profile"},{"type":"SIGNAL","claim":"2026: компания ищет Руководителя отдела продаж для выполнения стратегии и плана продаж, развития новых регионов, аудита коммерческих KPI и управления командой.","url":"https://nesiditsa.ru/vacancy/130961841","source":"2026 job-board vacancy"},{"type":"LPR","claim":"Бадрутдинов Рустем Наилевич — генеральный директор и 100% собственник ООО «БЛЕСКСЕРВИС РЕГИОН».","url":"https://check.tochka.com/company/1101690046105/","source":"Current legal/company profile"},{"type":"CONTACT","claim":"Практические корпоративные маршруты: email домена bleskservis.ru, телефон +7 (843) 556-25-17 и текущая вакансия работодателя.","url":"https://reputation.ru/ogrn/1101690046105","source":"Current company profile + corporate domain"},{"type":"BRAND_LEGAL","claim":"Бренд БлескСервис Регион совпадает с точным юридическим лицом ООО «БЛЕСКСЕРВИС РЕГИОН», ИНН 1657096815; домен bleskservis.ru используется в корпоративных email и публичных профилях компании.","url":"https://companies.rbc.ru/id/1101690046105-ooo-bleskservis-region/","source":"Current legal profile + corporate domain"}]},
+      "Lead ID": "N5K-0449",
+      "Brand": "Силтрон / SILTRON",
+      "Legal Name": "ООО «СИЛТРОН»",
+      "INN": "7708405173",
+      "OGRN/OGRNIP": "1227700275461",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "B2B промышленная химия / особо чистые и технические газы",
+      "Website": "https://siltron.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 211,613 млн ₽ за 2025 год; 8 сотрудников по данным ФНС за 2025 год; выручка выросла примерно на 96% год к году.",
+      "Signal Level": "S1",
+      "Signal Summary": "20.08.2026 в свежей выдаче вакансий компания ищет Руководителя отдела продаж химической продукции. Задачи включают управление и расширение B2B-sales команды, KPI, воронку и выполнение плана продаж; компания позиционируется как развивающийся производитель и поставщик высокотехнологичных химических продуктов и специальных технических газов.",
+      "Signal Date": "2026-08-20",
+      "Signal Source": "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh",
+      "Owner": "Жданов Александр Александрович, 100% по актуальному профилю",
+      "CEO": "Жданов Александр Александрович",
+      "LPR": "Жданов Александр Александрович",
+      "LPR Role": "Генеральный директор и единственный собственник по актуальному профилю",
+      "Primary Phone": "+7 (910) 423-14-26",
+      "Primary Email": "ooosiltron@gmail.com",
+      "HH Contact": "Current Силтрон Head of Sales vacancy route",
+      "Contact Form": "https://siltron.ru/",
+      "Contact Type": "Official company phone/email/site + current employer vacancy route",
+      "Contact Source": "Official requisites page + current 2026 vacancy",
+      "Consulting Hypothesis": "Систематизация быстрорастущей промышленной B2B-sales функции: сегментация отраслей, KPI/воронка, расширение команды, прогнозирование продаж и управление маржинальностью по продуктовым направлениям.",
+      "contacts": [
+        {"value": "+7 (910) 423-14-26", "channel": "Phone", "type": "Official company phone", "source": "Official requisites page", "url": "https://siltron.ru/%D1%80%D0%B5%D0%BA%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D1%8B/", "is_lpr": false, "notes": "Официальный корпоративный маршрут"},
+        {"value": "ooosiltron@gmail.com", "channel": "Email", "type": "Official company email", "source": "Official requisites page", "url": "https://siltron.ru/%D1%80%D0%B5%D0%BA%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D1%8B/", "is_lpr": false, "notes": "Официальный корпоративный email"},
+        {"value": "Current Силтрон Head of Sales vacancy route", "channel": "Vacancy", "type": "Current employer route", "source": "Current 2026 vacancy listing", "url": "https://dreamjob.ru/employers/3230150/vakansii/136247970", "is_lpr": false, "notes": "Свежий employer route, август 2026"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «СИЛТРОН», ИНН 7708405173, ОГРН 1227700275461; действует в августе 2026; генеральный директор Жданов Александр Александрович.", "url": "https://check.tochka.com/company/1227700275461/", "source": "Current legal/company profile"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка 211,613 млн ₽ за 2025 год; 8 сотрудников по данным ФНС за 2025 год; выручка выросла примерно на 96% год к году.", "url": "https://companium.ru/id/1227700275461-siltron", "source": "Current 2025 financial/company profile"},
+        {"type": "SIGNAL", "claim": "20.08.2026: свежая выдача вакансий показывает Руководителя отдела продаж у Силтрон; роль включает B2B-продажи химической продукции, управление командой, KPI и воронкой.", "url": "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh", "source": "Current 2026 job listing"},
+        {"type": "LPR", "claim": "Жданов Александр Александрович — генеральный директор и 100% собственник по актуальному профилю.", "url": "https://companium.ru/id/1227700275461-siltron", "source": "Current legal/company profile"},
+        {"type": "CONTACT", "claim": "Официальные маршруты: +7 (910) 423-14-26, ooosiltron@gmail.com и текущая вакансия работодателя.", "url": "https://siltron.ru/%D1%80%D0%B5%D0%BA%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D1%8B/", "source": "Official company site + current vacancy"},
+        {"type": "BRAND_LEGAL", "claim": "Официальная страница реквизитов связывает бренд Силтрон с ООО «СИЛТРОН», ИНН 7708405173, ОГРН 1227700275461.", "url": "https://siltron.ru/%D1%80%D0%B5%D0%BA%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D1%8B/", "source": "Official company site"}
+      ]
+    },
     {
-      "Lead ID":"N5K-0448","Brand":"СтандартПродМаш / ГК СтандартПродМаш","Legal Name":"ООО ГК «СТАНДАРТПРОДМАШ»","INN":"7716918242","OGRN/OGRNIP":"1187746722932","Region":"Республика Татарстан","City":"Казань","Segment":"B2B оборудование для пищевых производств / промышленное машиностроение","Website":"https://standartprodmash.clients.site/","Revenue/Scale":"Действующее частное ООО; выручка 130,813 млн ₽ за 2025 год; 6-7 сотрудников по актуальным профилям 2025; производство и поставка линий розлива, фасовки и упаковки для пищевых производств.","Signal Level":"S1","Signal Summary":"22.08.2026 в текущей выдаче вакансий компания ищет Руководителя отдела продаж B2B; компания заявляет 20+ лет работы на рынке оборудования для пищевых производств и развитие федеральных продаж.","Signal Date":"2026-08-22","Signal Source":"https://kazan.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B2-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0","Owner":"Кротова Марина Николаевна, 100%","CEO":"Кротова Марина Николаевна","LPR":"Кротова Марина Николаевна","LPR Role":"Генеральный директор и единственный собственник","Primary Phone":"+7 (977) 092-31-89","Primary Email":"sale@press-forms.ru","HH Contact":"Current СтандартПродМаш Head of Sales B2B vacancy route","Contact Form":"https://standartprodmash.clients.site/","Contact Type":"Official company phone/site + current employer vacancy route","Contact Source":"Current official company card + current 2026 job-board listing","Consulting Hypothesis":"Масштабирование B2B-продаж промышленного оборудования: сегментация пищевых производств, длинная проектная воронка, CRM/KPI, дилерские и региональные каналы, коммерческая аналитика и маржинальность проектов.",
-      "contacts":[{"value":"+7 (977) 092-31-89","channel":"Phone","type":"Official company phone","source":"Official current company card","url":"https://standartprodmash.clients.site/","is_lpr":false,"notes":"Публичный корпоративный маршрут"},{"value":"sale@press-forms.ru","channel":"Email","type":"Corporate sales email","source":"Current industry manufacturer profile","url":"https://manufacturers.ru/company/standartprodmash","is_lpr":false,"notes":"Корпоративный sales route"},{"value":"Current СтандартПродМаш Head of Sales B2B vacancy route","channel":"Vacancy","type":"Current employer route","source":"Current 2026 job-board listing","url":"https://kazan.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B2-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0","is_lpr":false,"notes":"Свежий employer route, 22.08.2026"}],
-      "evidence":[{"type":"LEGAL","claim":"ООО ГК «СТАНДАРТПРОДМАШ», ИНН 7716918242, ОГРН 1187746722932; действует на 24.08.2026; генеральный директор и собственник 100% Кротова Марина Николаевна.","url":"https://companies.rbc.ru/id/1187746722932-ooo-gruppa-kompanij-standartprodmash/","source":"Current legal/company profile, 24.08.2026"},{"type":"SCALE_CURRENT","claim":"Выручка 130,813 млн ₽ за 2025 год; 6-7 сотрудников по свежим профилям 2025/2026.","url":"https://companies.rbc.ru/id/1187746722932-ooo-gruppa-kompanij-standartprodmash/","source":"2025 financial/company profile"},{"type":"SIGNAL","claim":"22.08.2026: текущая выдача вакансий показывает Руководителя отдела продаж B2B у СтандартПродМаш; роль относится к развитию продаж оборудования для пищевых производств.","url":"https://kazan.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B2-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0","source":"Current job-board listing"},{"type":"LPR","claim":"Кротова Марина Николаевна — генеральный директор и единственный собственник ООО ГК «СТАНДАРТПРОДМАШ».","url":"https://www.tbank.ru/business/contractor/legal/1187746722932/","source":"Current legal profile based on official sources"},{"type":"CONTACT","claim":"Официальная карточка компании публикует телефон +7 (977) 092-31-89; отраслевой профиль — корпоративный sales email; текущая вакансия даёт employer route.","url":"https://standartprodmash.clients.site/","source":"Official company card + current industry profile"},{"type":"BRAND_LEGAL","claim":"Официальная карточка СтандартПродМаш прямо указывает ООО ГК «СТАНДАРТПРОДМАШ», ОГРН 1187746722932, ИНН 7716918242, адрес Дорожная 12А.","url":"https://standartprodmash.clients.site/","source":"Official current company card"}]}
+      "Lead ID": "N5K-0450",
+      "Brand": "AQUADRENAG / Аквадренаж",
+      "Legal Name": "ООО «АКВАДРЕНАЖ»",
+      "INN": "7722330459",
+      "OGRN/OGRNIP": "1157746523880",
+      "Region": "Московская область",
+      "City": "Одинцово",
+      "Segment": "B2B производство систем водоотведения / строительные материалы / e-commerce",
+      "Website": "https://aquadrenag.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 397,263 млн ₽ за 2025 год; 11 сотрудников за 2025 год; выручка выросла на 52,9% год к году.",
+      "Signal Level": "S1",
+      "Signal Summary": "В августе 2026 компания заявляет фазу агрессивного роста: развивает онлайн-продажи, расширяет складскую сеть в регионах и кратно усиливает присутствие на Ozon, WB, Яндекс.Маркет, ВсеИнструменты и ЛеманаПро. Ищет руководителя направления маркетплейсов для создания и управления экосистемой онлайн-продаж, команды и коммерческой аналитики.",
+      "Signal Date": "2026-08-15",
+      "Signal Source": "https://dreamjob.ru/employers/2783498/vakansii/136262702",
+      "Owner": "Кургина Татьяна Юрьевна, 100%",
+      "CEO": "Кургина Татьяна Юрьевна",
+      "LPR": "Кургина Татьяна Юрьевна",
+      "LPR Role": "Генеральный директор и единственный собственник",
+      "Primary Phone": "8 800 505-52-13",
+      "Primary Email": "info@aquadrenag.ru",
+      "HH Contact": "Current AQUADRENAG e-commerce leadership vacancy route",
+      "Contact Form": "https://kazan.aquadrenag.ru/dealers/",
+      "Contact Type": "Official company phone/email/form + current employer vacancy route",
+      "Contact Source": "Official company site + current 2026 vacancy",
+      "Consulting Hypothesis": "Масштабирование омниканальных продаж и региональной сети: e-commerce P&L, 1С-интеграции, складская модель, unit economics маркетплейсов, KPI команды и согласование B2B/dealer/e-commerce каналов.",
+      "contacts": [
+        {"value": "8 800 505-52-13", "channel": "Phone", "type": "Official company phone", "source": "Official company site", "url": "https://kazan.aquadrenag.ru/", "is_lpr": false, "notes": "Официальный федеральный маршрут"},
+        {"value": "info@aquadrenag.ru", "channel": "Email", "type": "Official company email", "source": "Official company site", "url": "https://kazan.aquadrenag.ru/", "is_lpr": false, "notes": "Официальный корпоративный email"},
+        {"value": "Current AQUADRENAG e-commerce leadership vacancy route", "channel": "Vacancy", "type": "Current employer route", "source": "Current 2026 vacancy", "url": "https://dreamjob.ru/employers/2783498/vakansii/136262702", "is_lpr": false, "notes": "Свежий employer route, август 2026"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «АКВАДРЕНАЖ», ИНН 7722330459, ОГРН 1157746523880; действует; генеральный директор и собственник 100% Кургина Татьяна Юрьевна.", "url": "https://companies.rbc.ru/amp/ogrn/1157746523880/", "source": "Current legal/company profile"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка 397,263 млн ₽ за 2025 год; 11 сотрудников за 2025 год; рост выручки 52,9% год к году.", "url": "https://b2b.house/company/OOO-AKVADRENAZH_620a0b53-3d08-4a29-80c8-af286e64033f/", "source": "Current 2025 financial/company profile"},
+        {"type": "SIGNAL", "claim": "Август 2026: компания входит в фазу агрессивного роста e-commerce, расширяет складскую сеть и ищет руководителя направления маркетплейсов для масштабирования продаж и команды.", "url": "https://dreamjob.ru/employers/2783498/vakansii/136262702", "source": "Current 2026 vacancy"},
+        {"type": "LPR", "claim": "Кургина Татьяна Юрьевна — генеральный директор и единственный собственник ООО «АКВАДРЕНАЖ».", "url": "https://companies.rbc.ru/amp/ogrn/1157746523880/", "source": "Current legal profile"},
+        {"type": "CONTACT", "claim": "Официальные маршруты: 8 800 505-52-13, info@aquadrenag.ru, dealer/contact form и текущая вакансия работодателя.", "url": "https://kazan.aquadrenag.ru/dealers/", "source": "Official company site + current vacancy"},
+        {"type": "BRAND_LEGAL", "claim": "Официальные региональные сайты AQUADRENAG публикуют ООО «АКВАДРЕНАЖ», ИНН 7722330459, ОГРН 1157746523880.", "url": "https://kazan.aquadrenag.ru/", "source": "Official company site"}
+      ]
+    }
   ]
 }
