@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-24T23:59:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260824-386",
-  "current_run_id": "N5K-20260824-386",
+  "last_completed_run_id": "N5K-20260824-387",
+  "current_run_id": "N5K-20260824-387",
   "last_run_id": "N5K-20260824-387",
   "latest_completed_run": "N5K-20260824-387",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 386 completed with +1 net new company: BELKINA / Belkina / Belevtseva. Physical canonical/contactable 318/318; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 387 completed with +1 net new company: Стопэкспресс / StopExpress. Physical canonical/contactable 319/319; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
