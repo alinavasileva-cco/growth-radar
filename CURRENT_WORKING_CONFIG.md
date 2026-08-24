@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T11:25:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-373`  
+**Версия:** 2026-08-24T12:30:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-374`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **304 / 304**  
+**Физически подтверждённый canonical/contactable:** **305 / 305**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4696**  
+**Осталось:** **4695**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **304 / 304**;
+- physical canonical/contactable count: **305 / 305**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-373`;
+- последний завершённый RUN: `N5K-20260824-374`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,30 +36,25 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-373
+## Последний подробный RUN — N5K-20260824-374
 
-Baseline перед RUN: **302 / 302**.  
-Фактически индивидуально обработано raw-кандидатов: **27**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **27** → fast gate **6** → size **4** → legal **3** → signal **2** → LPR **2** → contact **2** → qualified **2** → physically integrated **2**.  
-Duplicates: **8**. Excluded: **17**.  
-Добавлены:
-- **TrackAd / ТракАд — ООО «ТРАКАД»**, ИНН `9709111564`, ОГРН `1247700405325`, Lead ID `N5K-0451`.
-- **Ростовский завод котельного оборудования / РЗКО — ООО «РОСТОВСКИЙ ЗАВОД КОТЕЛЬНОГО ОБОРУДОВАНИЯ»**, ИНН `6102072414`, ОГРН `1196196028467`, Lead ID `N5K-0452`.
+Baseline перед RUN: **304 / 304**.  
+Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **24** → fast gate **5** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **3**. Excluded: **20**.  
+Добавлена:
+- **СПЕЙСТЕЛ / Spacetel — ООО «СПЕЙСТЕЛ»**, ИНН `7735140543`, ОГРН `1157746073242`, Lead ID `N5K-0453`.
 
-Итог physical canonical/contactable: **304 / 304**.  
+Итог physical canonical/contactable: **305 / 305**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260824-368`: 296/296, +1, PASS, orphan 0/0.
 - `N5K-20260824-369`: 297/297, +1, PASS, orphan 0/0.
 - `N5K-20260824-370`: 298/298, +1, PASS, orphan 0/0.
 - `N5K-20260824-371`: 300/300, +2, PASS, orphan 0/0.
 - `N5K-20260824-372`: 302/302, +2, PASS, orphan 0/0.
 - `N5K-20260824-373`: 304/304, +2, PASS, orphan 0/0.
-
-
-## Latest verified run N5K-20260824-374
-Canonical/contactable: 305/305. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+- `N5K-20260824-374`: 305/305, +1, PASS, orphan 0/0.
