@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T20:36:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-383`  
+**Версия:** 2026-08-24T21:22:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-384`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **314 / 314**  
+**Физически подтверждённый canonical/contactable:** **316 / 316**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4686**  
+**Осталось:** **4684**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **314 / 314**;
+- physical canonical/contactable count: **316 / 316**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-383`;
+- последний завершённый RUN: `N5K-20260824-384`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,36 +36,31 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-383
+## Последний подробный RUN — N5K-20260824-384
 
-Baseline перед RUN: **313 / 313**.  
-Фактически индивидуально обработано raw-кандидатов: **12**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **12** → fast gate **4** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **4**. Excluded: **7**.  
-Добавлена:
-- **Вертикаль / Vertical — ООО «ВЕРТИКАЛЬ»**, ИНН `4345178539`, ОГРН `1074345022498`, Lead ID `N5K-0463`.
+Baseline перед RUN: **314 / 314**.  
+Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **24** → fast gate **6** → size **3** → legal **2** → signal **2** → LPR **2** → contact **2** → qualified **2** → physically integrated **2**.  
+Duplicates: **5**. Excluded: **17**.  
+Добавлены:
+- **Brand Lovers — ИП Саркисян Иоланта Сергеевна**, ИНН `616507782077`, ОГРНИП `319619600041106`, Lead ID `N5K-0464`.
+- **Vzlet Agency / Сила Ума — ИП Мельников Виктор Юрьевич**, ИНН `330801191308`, ОГРНИП `32430000019156`, Lead ID `N5K-0465`.
 
-Ключевые подтверждения: действующее частное производственное ООО; выручка около 260,2 млн ₽ за 2025 год; 49 сотрудников по свежему отраслевому профилю; директор и совладелец 50% Мошонкин Сергей Владимирович; текущая вакансия коммерческого директора / директора по продажам и развитию на системное усиление коммерческого блока, новые рынки и экспорт; официальный телефон и email на домене vertical-c.ru.
-
-Итог physical canonical/contactable: **314 / 314**.  
+Итог physical canonical/contactable: **316 / 316**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.  
-После первой физической интеграции повторный REPAIR-trigger увидел уже добавленную компанию как дубль и временно перезаписал funnel metadata; canonical data не пострадали. Runtime восстановлен по фактическому physical master. Автоматический stale baseline `294` исправлен на фактический `313`.
+Автоматический integration runtime записал stale baseline `294`; в этом же RUN baseline восстановлен на фактический `314` по physical master. Campaign target и metrics синхронизированы на RUN 384.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260824-377`: 308/308, +2, PASS, orphan 0/0.
 - `N5K-20260824-378`: 309/309, +1, PASS, orphan 0/0.
 - `N5K-20260824-379`: 310/310, +1, PASS, orphan 0/0.
 - `N5K-20260824-380`: 311/311, +1, PASS, orphan 0/0.
 - `N5K-20260824-381`: 312/312, +1, PASS, orphan 0/0.
 - `N5K-20260824-382`: 313/313, +1, PASS, orphan 0/0.
 - `N5K-20260824-383`: 314/314, +1, PASS, orphan 0/0.
-
-## Latest verified run N5K-20260824-383
-Canonical/contactable: 314/314. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260824-384`: 316/316, +2, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260824-384
 Canonical/contactable: 316/316. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
