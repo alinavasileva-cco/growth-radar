@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260824-368",
+  "run_id": "N5K-20260824-369",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T06:41:00+05:00",
+  "updated_at": "2026-08-24T07:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 295,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 296,
-    "current_contactable_count": 296,
-    "progress_added": 296,
-    "remaining": 4704
+    "current_canonical_count": 297,
+    "current_contactable_count": 297,
+    "progress_added": 297,
+    "remaining": 4703
   },
   "funnel": {
-    "discovered": 18,
+    "discovered": 21,
     "fast_gate_passed": 5,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 4,
-    "excluded": 13
+    "duplicates": 8,
+    "excluded": 12
   },
   "qualified_companies": [
-    "Lossew / НПП Лосев"
+    "VERBA-group / Verba Group"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "296_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "296_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "297_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "297_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

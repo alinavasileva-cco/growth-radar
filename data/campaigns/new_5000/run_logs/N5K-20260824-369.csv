@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Status,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Outreach Sent,Notes
+N5K-20260824-369,new_5000,COMPLETED,21,2,1,1,1,1,1,8,12,297,297,PASS,0,0,0,RUN 369 from verified RUN 368 baseline 296/296 PASS orphan 0/0. Discovery used current job-board signals and official/company/legal sources. Fresh data only. Final physical dedup guard is authoritative. No outreach.; physical dedup skipped=[]
