@@ -2,10 +2,10 @@
   "run_id": "N5K-20260824-377",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T14:18:00+05:00",
+  "updated_at": "2026-08-24T14:20:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 306,
     "target_count": 5000,
     "current_canonical_count": 308,
     "current_contactable_count": 308,
@@ -24,10 +24,7 @@
     "duplicates": 4,
     "excluded": 18
   },
-  "qualified_companies": [
-    "ПО Агротех / Agroteh",
-    "Riverstart"
-  ],
+  "qualified_companies": ["ПО Агротех / Agroteh", "Riverstart"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -35,5 +32,6 @@
   "physical_master_state": "308_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "308_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "note": "RUN 377 completed with +2 net new companies from verified RUN 376 baseline 306/306. Physical canonical/contactable 308/308; integrity PASS; orphan 0/0; outreach 0."
 }
