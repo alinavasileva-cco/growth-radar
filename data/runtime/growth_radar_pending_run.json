@@ -1,10 +1,90 @@
 {
-  "run_id": "N5K-20260825-391",
-  "updated_at": "2026-08-25T03:14:00+05:00",
-  "funnel": {"discovered":24,"fast_gate_passed":6,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":5,"excluded":17},
-  "notes": "RUN 391 starts from verified RUN 390 baseline 321/321 PASS orphan 0/0. Multiple current August 2026 job-board and current company/registry sources screened. Known physical duplicates, recruiters, ambiguous brand-to-legal matches and candidates without reliable current scale/legal evidence excluded. PANELOK and BIKOM passed current legal status, scale, current B2B growth signal, LPR and practical official contact route. Repository pre-write search by INN returned no result for both; physical integration guard remains authoritative. Integration retriggered after first pending commit did not yet produce a physical integration commit. No outreach.",
+  "run_id": "N5K-20260825-392",
+  "updated_at": "2026-08-25T04:34:00+05:00",
+  "funnel": {"discovered":32,"fast_gate_passed":6,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":8,"excluded":22},
+  "notes": "RUN 392 starts from verified RUN 391 baseline 323/323 PASS orphan 0/0. Multiple fresh August 2026 vacancy/job-board streams and current official/company/registry sources screened. 32 distinct employer/company candidates were individually reviewed at fast-gate level; known physical duplicates, public/very large corporations, recruiters, ambiguous brand-to-legal matches, insufficient current scale and weak/non-current commercial signals were excluded early. One Marking and Amadey Print / Amadey Reklama passed current legal, scale, current S1 commercial signal, LPR and official contact-route gates. Repository code search and physical-master response search by INN found no match for either before staging; physical integration guard remains authoritative. No outreach.",
   "qualified_companies": [
-    {"Lead ID":"N5K-0473","Brand":"PANELOK / ПанелОК","Legal Name":"ООО ТЕРМОЛОГИСТИКА","INN":"6319233160","OGRN/OGRNIP":"1186313090270","Region":"Самарская область","City":"Самара","Segment":"Производство стеновых панелей и комплексных отделочных решений; B2B/дилерские продажи","Website":"https://panelok.ru","Revenue/Scale":"Действующее ООО; выручка 29,664 млн руб. за 2025 год; 7 сотрудников по актуальному профилю ФНС; собственное производство стеновых панелей и расширяющаяся региональная сеть.","Signal Level":"S1","Signal Summary":"В августе 2026 PANELOK ищет руководителя отдела региональных продаж; компания прямо сообщает об открытии филиалов и представительств в ПФО и ЮФО, развитии дилерской сети и масштабировании региональных продаж.","Signal Date":"2026-08-12","Signal Source":"https://rabota1000.ru/samara/rukovoditel-otdela-prodazh-avtomobilej","Owner":"Урмансов Роман Романович","CEO":"Урмансов Роман Романович","LPR":"Урмансов Роман Романович","LPR Role":"Генеральный директор и единственный учредитель","Primary Phone":"+7 937 078-88-86","Primary Email":"panelok-office@yandex.ru","HH Contact":"Current PANELOK / Термологистика employer vacancy route","Contact Form":"https://panelok.ru/contacts","Contact Type":"Official company phone + corporate email + current employer route","Contact Source":"Official PANELOK site + current August 2026 job listing","Consulting Hypothesis":"Масштабирование региональной B2B-sales системы: дилерская сеть, управление филиалами, CRM/KPI, маржинальность и воспроизводимая модель регионального роста.","contacts":[{"value":"+7 937 078-88-86","channel":"Phone","type":"Corporate phone","source":"Official PANELOK site","url":"https://panelok.ru/contacts","is_lpr":false,"notes":"Официальный телефон компании"},{"value":"panelok-office@yandex.ru","channel":"Email","type":"Corporate email","source":"Official PANELOK site","url":"https://panelok.ru/contacts","is_lpr":false,"notes":"Официальный корпоративный email"},{"value":"Current PANELOK / Термологистика employer vacancy route","channel":"Vacancy","type":"Employer route","source":"Current August 2026 sales-head vacancy","url":"https://rabota1000.ru/samara/rukovoditel-otdela-prodazh-avtomobilej","is_lpr":false,"notes":"Свежий маршрут прямого работодателя"}],"evidence":[{"type":"LEGAL","claim":"ООО ТЕРМОЛОГИСТИКА действует; ИНН 6319233160, ОГРН 1186313090270; генеральный директор и учредитель — Урмансов Роман Романович.","url":"https://xfirm.ru/company/6319233160","source":"Current registry profile, 2026"},{"type":"SCALE_CURRENT","claim":"Выручка за 2025 год 29,664 млн руб.; актуальный профиль указывает 7 сотрудников.","url":"https://xfirm.ru/company/6319233160","source":"Current FNS-based profile"},{"type":"SIGNAL","claim":"В августе 2026 PANELOK открывает филиалы и представительства в ПФО и ЮФО и нанимает руководителя региональных продаж.","url":"https://rabota1000.ru/samara/rukovoditel-otdela-prodazh-avtomobilej","source":"Current August 2026 vacancy aggregator citing hh.ru"},{"type":"LPR","claim":"Урмансов Роман Романович — действующий генеральный директор и единственный учредитель ООО ТЕРМОЛОГИСТИКА.","url":"https://xfirm.ru/company/6319233160","source":"Current registry profile"},{"type":"CONTACT","claim":"Официальный сайт PANELOK публикует телефон +7 937 078-88-86 и email panelok-office@yandex.ru.","url":"https://panelok.ru/contacts","source":"Official PANELOK site"},{"type":"BRAND_LEGAL","claim":"Официальный сайт PANELOK указывает ИНН 6319233160 и ОГРН 1186313090270; у ООО зарегистрирован товарный знак PANELOK.","url":"https://panelok.ru/company","source":"Official site + current company profile"}]},
-    {"Lead ID":"N5K-0474","Brand":"БИКОМ / BIKOM","Legal Name":"ООО БИКОМ","INN":"5262101750","OGRN/OGRNIP":"1025203734302","Region":"Нижегородская область","City":"Дзержинск / Нижний Новгород","Segment":"Производство и переработка промышленных самоклеящихся материалов; B2B продажи промышленным заказчикам","Website":"https://bicom.nnov.ru","Revenue/Scale":"Действующее ООО; выручка 814,16 млн руб. за 2025 год; 139 сотрудников по актуальному профилю; производитель промышленных самоклеящихся материалов с 2001 года.","Signal Level":"S1","Signal Summary":"В августе 2026 БИКОМ актуализирует вакансию проектного менеджера продаж / руководителя отдела развития: курирование отдела развития продаж, работа с ключевыми B2B-заказчиками, выявление потребностей и развитие новых продуктов/проектов.","Signal Date":"2026-08-17","Signal Source":"https://nizhniy-lomov.jobrun.ru/руководитель-проектов-по-цифровому-развитию-клиентов-csm-работа","Owner":"Собственники ООО БИКОМ по ЕГРЮЛ; публичный профиль подтверждает частную собственность","CEO":"Баженов Алексей Анатольевич","LPR":"Баженов Алексей Анатольевич","LPR Role":"Директор","Primary Phone":"+7 (831) 294-33-10","Primary Email":"info@bicom.nnov.ru","HH Contact":"Current BIKOM employer vacancy route","Contact Form":"https://bicom.nnov.ru","Contact Type":"Official company phone + corporate email + current employer route","Contact Source":"Current manufacturer profile + official site + current August 2026 vacancy","Consulting Hypothesis":"Систематизация B2B product-led sales: управление отделом развития продаж, key-account process, CRM/KPI, продуктовая воронка и масштабирование новых промышленных направлений.","contacts":[{"value":"+7 (831) 294-33-10","channel":"Phone","type":"Corporate phone","source":"Current manufacturer profile","url":"https://manufacturers.ru/company/bikom","is_lpr":false,"notes":"Корпоративный телефон производителя"},{"value":"info@bicom.nnov.ru","channel":"Email","type":"Corporate email","source":"Current manufacturer profile","url":"https://manufacturers.ru/company/bikom","is_lpr":false,"notes":"Корпоративный email"},{"value":"Current BIKOM employer vacancy route","channel":"Vacancy","type":"Employer route","source":"Current August 2026 B2B development vacancy","url":"https://nizhniy-lomov.jobrun.ru/руководитель-проектов-по-цифровому-развитию-клиентов-csm-работа","is_lpr":false,"notes":"Свежий маршрут прямого работодателя"}],"evidence":[{"type":"LEGAL","claim":"ООО БИКОМ действует; ИНН 5262101750, ОГРН 1025203734302; директор Баженов Алексей Анатольевич.","url":"https://saby.ru/profile/5262101750-524901001","source":"Current registry profile, status 11 Aug 2026"},{"type":"SCALE_CURRENT","claim":"Актуальный профиль показывает 814,16 млн руб. выручки за 2025 год и 139 сотрудников.","url":"https://basis.myseldon.com/ru/company/1025203734302","source":"Current 2025 financial/company profile"},{"type":"SIGNAL","claim":"В августе 2026 БИКОМ ищет проектного менеджера продаж / руководителя отдела развития для курирования отдела развития продаж и B2B product-development проектов.","url":"https://nizhniy-lomov.jobrun.ru/руководитель-проектов-по-цифровому-развитию-клиентов-csm-работа","source":"Current August 2026 job listing citing hh.ru"},{"type":"LPR","claim":"Баженов Алексей Анатольевич — действующий директор ООО БИКОМ.","url":"https://saby.ru/profile/5262101750-524901001","source":"Current registry profile"},{"type":"CONTACT","claim":"Актуальный профиль производителя публикует телефон +7 (831) 294-33-10 и email info@bicom.nnov.ru.","url":"https://manufacturers.ru/company/bikom","source":"Current manufacturer profile updated Feb 2026"},{"type":"BRAND_LEGAL","claim":"Актуальный профиль производителя прямо связывает Биком с ООО Биком, ИНН 5262101750, ОГРН 1025203734302 и сайтом bicom.nnov.ru.","url":"https://manufacturers.ru/company/bikom","source":"Current manufacturer profile"}]}
+    {
+      "Lead ID":"N5K-0475",
+      "Brand":"One Marking / Одна Маркировка",
+      "Legal Name":"ООО ОДНА МАРКИРОВКА",
+      "INN":"7806585100",
+      "OGRN/OGRNIP":"1217800056902",
+      "Region":"Санкт-Петербург",
+      "City":"Санкт-Петербург",
+      "Segment":"Промышленная маркировка кабеля и компонентов; B2B производство/продажи",
+      "Website":"https://onemarking.ru/",
+      "Revenue/Scale":"Действующее ООО; выручка 27,83 млн руб. за 2025 год по актуальной ФНС-отчетности; промышленный B2B-производитель решений маркировки; работодатель прямо указывает готовность к масштабированию по России и международному развитию.",
+      "Signal Level":"S1",
+      "Signal Summary":"В августе 2026 One Marking ищет коммерческого директора (CCO) и параллельно руководителя отдела B2B-продаж: задача — кратно увеличить компанию, построить эффективную систему холодных B2B-продаж и второй отдел продаж, масштабировать бизнес по России и развивать международный бренд.",
+      "Signal Date":"2026-08-14",
+      "Signal Source":"https://spb.hh.ru/vacancies/kommercheskij-direktor-b2b/ot_pryamih_rabotodateley",
+      "Owner":"Белова Алсу Наилевна",
+      "CEO":"Белова Алсу Наилевна",
+      "LPR":"Белова Алсу Наилевна",
+      "LPR Role":"Генеральный директор и единственный учредитель",
+      "Primary Phone":"+7 (812) 903-22-94",
+      "Primary Email":"office@onemarking.ru",
+      "HH Contact":"Current ООО Одна Маркировка employer route on hh.ru",
+      "Contact Form":"https://onemarking.ru/",
+      "Contact Type":"Official corporate phone + email + current direct-employer HH route",
+      "Contact Source":"Official One Marking site + current hh.ru vacancy + current registry/financial profile",
+      "Number Of Contacts Found":3,
+      "Consulting Hypothesis":"Масштабирование промышленного B2B-sales: архитектура второго отдела продаж, outbound-воронка, CRM/KPI, дилерская/региональная модель, маржинальность и 90-дневный коммерческий план роста.",
+      "contacts":[
+        {"value":"+7 (812) 903-22-94","channel":"Phone","type":"Corporate phone","source":"Official One Marking site","url":"https://onemarking.ru/","is_lpr":false,"notes":"Официальный телефон компании"},
+        {"value":"office@onemarking.ru","channel":"Email","type":"Corporate email","source":"Official One Marking site","url":"https://onemarking.ru/","is_lpr":false,"notes":"Официальный корпоративный email"},
+        {"value":"Current ООО Одна Маркировка employer route on hh.ru","channel":"Vacancy","type":"Employer route","source":"Current August 2026 CCO/B2B sales vacancies","url":"https://spb.hh.ru/vacancies/kommercheskij-direktor-b2b/ot_pryamih_rabotodateley","is_lpr":false,"notes":"Свежий маршрут прямого работодателя"}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"ООО ОДНА МАРКИРОВКА действует; ИНН 7806585100, ОГРН 1217800056902; генеральный директор и единственный учредитель — Белова Алсу Наилевна.","url":"https://www.tbank.ru/business/contractor/legal/1217800056902/","source":"Current FNS-based company profile"},
+        {"type":"SCALE_CURRENT","claim":"Бухгалтерская отчетность за 2025 год показывает выручку 27,83 млн руб.; компания ведет промышленный B2B-бизнес и масштабируется.","url":"https://www.tbank.ru/business/contractor/legal/1217800056902/","source":"Current 2025 financial profile"},
+        {"type":"SIGNAL","claim":"В августе 2026 One Marking ищет CCO и руководителя B2B-продаж для кратного роста, холодных B2B-продаж и масштабирования компании.","url":"https://spb.hh.ru/vacancies/kommercheskij-direktor-b2b/ot_pryamih_rabotodateley","source":"Current hh.ru direct-employer listing"},
+        {"type":"LPR","claim":"Белова Алсу Наилевна — действующий генеральный директор и единственный учредитель ООО ОДНА МАРКИРОВКА.","url":"https://www.tbank.ru/business/contractor/legal/1217800056902/","source":"Current company profile"},
+        {"type":"CONTACT","claim":"Официальный сайт One Marking публикует +7 (812) 903-22-94 и office@onemarking.ru.","url":"https://onemarking.ru/","source":"Official One Marking site"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт One Marking прямо указывает ООО Одна Маркировка, ИНН 7806585100 и адрес на шоссе Революции 84.","url":"https://onemarking.ru/","source":"Official One Marking site"}
+      ]
+    },
+    {
+      "Lead ID":"N5K-0476",
+      "Brand":"Амадей Принт / Amadey Print",
+      "Legal Name":"ООО АМАДЕЙ РЕКЛАМА",
+      "INN":"7722362796",
+      "OGRN/OGRNIP":"1167746425725",
+      "Region":"Москва",
+      "City":"Москва",
+      "Segment":"Производство мерча и текстиля; активные B2B/B2G-продажи",
+      "Website":"https://www.amadey-print.ru/",
+      "Revenue/Scale":"Действующее ООО; выручка 1,013 млрд руб. за 2025 год, 33 сотрудника по актуальному профилю; собственное текстильное производство и склад более 300 тыс. единиц стандартной продукции.",
+      "Signal Level":"S1",
+      "Signal Summary":"В августе 2026 Амадей Принт ищет руководителя отдела продаж мерча/текстильного производства: управление отделом новых продаж, выполнение и перевыполнение планов продаж и маржи, развитие активных B2B/B2G-продаж и работа напрямую с генеральным директором.",
+      "Signal Date":"2026-08-22",
+      "Signal Source":"https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh?tab=main",
+      "Owner":"Алексеев Илья Михайлович 51%; Шахова Анастасия Михайловна 49%",
+      "CEO":"Алексеев Илья Михайлович",
+      "LPR":"Алексеев Илья Михайлович",
+      "LPR Role":"Генеральный директор и совладелец 51%",
+      "Primary Phone":"+7 (495) 660-33-40",
+      "Primary Email":"info@amadey-print.ru",
+      "HH Contact":"Current Amadey Print direct-employer sales-head vacancy route",
+      "Contact Form":"https://www.amadey-print.ru/kontakty/",
+      "Contact Type":"Official corporate phone + email + current employer vacancy route",
+      "Contact Source":"Official Amadey Print site + current August 2026 sales vacancy + current company profile",
+      "Number Of Contacts Found":3,
+      "Consulting Hypothesis":"Ускорение B2B/B2G new-sales: сегментация корпоративных заказчиков, outbound и key-account process, управление маржой, CRM/KPI, capacity-to-sales planning и масштабирование коммерческой команды.",
+      "contacts":[
+        {"value":"+7 (495) 660-33-40","channel":"Phone","type":"Corporate phone","source":"Official Amadey Print site","url":"https://www.amadey-print.ru/kontakty/","is_lpr":false,"notes":"Официальный телефон компании"},
+        {"value":"info@amadey-print.ru","channel":"Email","type":"Corporate email","source":"Official Amadey Print site","url":"https://www.amadey-print.ru/kontakty/","is_lpr":false,"notes":"Официальный корпоративный email"},
+        {"value":"Current Amadey Print direct-employer sales-head vacancy route","channel":"Vacancy","type":"Employer route","source":"Current August 2026 Head of Sales vacancy","url":"https://dreamjob.ru/employers/27780/vakansii","is_lpr":false,"notes":"Свежий маршрут работодателя"}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"ООО АМАДЕЙ РЕКЛАМА действует; ИНН 7722362796, ОГРН 1167746425725; генеральный директор — Алексеев Илья Михайлович.","url":"https://saby.ru/profile/7722362796-772801001","source":"Current registry/company profile"},
+        {"type":"SCALE_CURRENT","claim":"За 2025 год выручка 1,013 млрд руб.; актуальный профиль показывает 33 сотрудника.","url":"https://b2b.house/company/OOO-AMADEJ-REKLAMA_2bd26279-e003-47c9-9f4d-e7ffc0b714cf/","source":"Current profile updated August 2026"},
+        {"type":"SIGNAL","claim":"В августе 2026 Амадей Принт нанимает руководителя отдела новых B2B/B2G-продаж с ответственностью за планы продаж и маржу.","url":"https://dreamjob.ru/employers/27780/vakansii","source":"Current employer vacancy profile"},
+        {"type":"LPR","claim":"Алексеев Илья Михайлович — действующий генеральный директор и совладелец 51% ООО АМАДЕЙ РЕКЛАМА.","url":"https://b2b.house/company/OOO-AMADEJ-REKLAMA_2bd26279-e003-47c9-9f4d-e7ffc0b714cf/","source":"Current company profile"},
+        {"type":"CONTACT","claim":"Официальный сайт Amadey Print публикует телефон +7 495 660-33-40 и email info@amadey-print.ru.","url":"https://www.amadey-print.ru/kontakty/","source":"Official Amadey Print site"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт Amadey Print прямо указывает ООО Амадей Реклама, ИНН 7722362796, ОГРН 1167746425725.","url":"https://www.amadey-print.ru/o-kompanii/requisites/","source":"Official Amadey Print requisites"}
+      ]
+    }
   ]
 }
