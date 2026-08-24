@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-24T17:00:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260824-379",
-  "current_run_id": "N5K-20260824-379",
+  "last_completed_run_id": "N5K-20260824-380",
+  "current_run_id": "N5K-20260824-380",
   "last_run_id": "N5K-20260824-380",
   "latest_completed_run": "N5K-20260824-380",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 379 completed with +1 net new company: САТУРН КРАСНОЯРСК / Saturn. Physical canonical/contactable 310/310; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 380 completed with +1 net new company: R&D / РнД Автозапчасти. Physical canonical/contactable 311/311; integrity PASS; orphan 0/0; outreach 0."
 }
