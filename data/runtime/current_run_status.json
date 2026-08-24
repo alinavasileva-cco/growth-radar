@@ -5,7 +5,7 @@
   "updated_at": "2026-08-24T12:30:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 304,
     "target_count": 5000,
     "current_canonical_count": 305,
     "current_contactable_count": 305,
@@ -24,9 +24,7 @@
     "duplicates": 3,
     "excluded": 20
   },
-  "qualified_companies": [
-    "СПЕЙСТЕЛ / Spacetel"
-  ],
+  "qualified_companies": ["СПЕЙСТЕЛ / Spacetel"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
