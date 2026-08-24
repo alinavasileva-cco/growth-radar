@@ -1,86 +1,18 @@
 {
   "run_id": "N5K-20260824-367",
-  "updated_at": "2026-08-24T04:57:42+05:00",
+  "updated_at": "2026-08-24T05:02:00+05:00",
   "funnel": {"discovered":24,"fast_gate_passed":6,"size_check_passed":3,"legal_match_passed":3,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":4,"excluded":18},
-  "notes": "RUN 367 from verified RUN 366 baseline 294/294 PASS orphan 0/0. Multi-stream discovery across fresh/current August 2026 B2B sales vacancies, current registry/company profiles and official sites. Fresh data only in decisions. Final physical dedup remains authoritative. No outreach.",
+  "notes": "RUN 367 REPAIR retrigger after verified RUN 366 baseline 294/294 PASS orphan 0/0. Same qualified batch; no composition change. Multi-stream discovery across fresh/current 2026 B2B sales vacancies, current legal/company profiles and official sites. Fresh data only in decisions. Final physical dedup remains authoritative. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID":"N5K-0442",
-      "Brand":"FEDAST / Федаст Импорт",
-      "Legal Name":"ООО «ФЕДАСТ ИМПОРТ»",
-      "INN":"7720478065",
-      "OGRN/OGRNIP":"1197746494461",
-      "Region":"Москва",
-      "City":"Москва",
-      "Segment":"B2B поставка профессионального строительного инструмента и оборудования прямого монтажа",
-      "Website":"https://fedast.ru/",
-      "Revenue/Scale":"Действующее частное ООО; 438,951 млн ₽ выручки за 2025 год; 12 сотрудников; более 2 000 клиентов по официальному сайту; поставки профессионального монтажного оборудования по РФ.",
-      "Signal Level":"S1",
-      "Signal Summary":"9 августа 2026 опубликована вакансия Руководителя отдела продаж B2B по строительному инструменту; компания усиливает и систематизирует B2B-sales контур для роста федеральных продаж.",
-      "Signal Date":"2026-08-09",
-      "Signal Source":"https://setka.ru/posts/019fe5f7-4532-74f3-86ef-29fecd21afb3",
-      "Owner":"Федоренко Владимир Андреевич — 50%; Астахов Алексей Станиславович — 50%",
-      "CEO":"Федоренко Владимир Андреевич",
-      "LPR":"Федоренко Владимир Андреевич",
-      "LPR Role":"Генеральный директор, совладелец 50%, практический ЛПР",
-      "Primary Phone":"+7 (499) 283-60-33",
-      "Primary Email":"order@fedast.ru",
-      "HH Contact":"Current FEDAST B2B sales vacancy route",
-      "Contact Form":"https://fedast.ru/page/contacts",
-      "Contact Type":"Official corporate phone/email/site + current employer vacancy route",
-      "Contact Source":"Official FEDAST site; current registry/company profile; August 2026 vacancy",
-      "Consulting Hypothesis":"Систематизация B2B-sales: сегментация строительных клиентов, CRM/KPI, управление воронкой и маржинальностью, дилерский/региональный рост и управление командой продаж.",
-      "contacts":[
-        {"value":"+7 (499) 283-60-33","channel":"Phone","type":"Official company phone","source":"Official FEDAST site","url":"https://fedast.ru/page/contacts","is_lpr":false,"notes":"Корпоративный маршрут"},
-        {"value":"order@fedast.ru","channel":"Email","type":"Official corporate email","source":"Official FEDAST site","url":"https://fedast.ru/page/rekvizity","is_lpr":false,"notes":"Корпоративный маршрут"},
-        {"value":"Current FEDAST B2B sales vacancy route","channel":"Vacancy","type":"Current employer route","source":"August 2026 vacancy","url":"https://setka.ru/posts/019fe5f7-4532-74f3-86ef-29fecd21afb3","is_lpr":false,"notes":"Свежая Head/ROP B2B vacancy route"}
-      ],
-      "evidence":[
-        {"type":"LEGAL","claim":"ООО «ФЕДАСТ ИМПОРТ», ИНН 7720478065, ОГРН 1197746494461; действует; генеральный директор Федоренко Владимир Андреевич; владельцы Федоренко 50% и Астахов 50%.","url":"https://companies.rbc.ru/id/1197746494461-obschestvo-s-ogranichennoj-otvetstvennostyu-fedast-import/","source":"Current registry-based profile"},
-        {"type":"SCALE_CURRENT","claim":"438,951 млн ₽ выручки за 2025 год; 12 сотрудников; официальный сайт указывает более 2 000 клиентов.","url":"https://companies.rbc.ru/id/1197746494461-obschestvo-s-ogranichennoj-otvetstvennostyu-fedast-import/","source":"Current registry/company data + official site"},
-        {"type":"SIGNAL","claim":"09.08.2026: вакансия Руководителя отдела продаж B2B (строительный инструмент).","url":"https://setka.ru/posts/019fe5f7-4532-74f3-86ef-29fecd21afb3","source":"Current August 2026 vacancy"},
-        {"type":"LPR","claim":"Федоренко Владимир Андреевич — актуальный генеральный директор и совладелец 50% ООО «ФЕДАСТ ИМПОРТ».","url":"https://companies.rbc.ru/id/1197746494461-obschestvo-s-ogranichennoj-otvetstvennostyu-fedast-import/","source":"Current registry-based profile"},
-        {"type":"CONTACT","claim":"Официальные маршруты: +7 (499) 283-60-33, order@fedast.ru, fedast.ru и текущая B2B vacancy route.","url":"https://fedast.ru/page/contacts","source":"Official FEDAST site"}
-      ]
+      "Lead ID":"N5K-0442","Brand":"FEDAST / Федаст Импорт","Legal Name":"ООО «ФЕДАСТ ИМПОРТ»","INN":"7720478065","OGRN/OGRNIP":"1197746494461","Region":"Москва","City":"Москва","Segment":"B2B поставка профессионального строительного инструмента и оборудования прямого монтажа","Website":"https://fedast.ru/","Revenue/Scale":"Действующее частное ООО; 438,951 млн ₽ выручки за 2025 год; 12 сотрудников; более 2 000 клиентов по официальному сайту; поставки профессионального монтажного оборудования по РФ.","Signal Level":"S1","Signal Summary":"9 августа 2026 опубликована вакансия Руководителя отдела продаж B2B по строительному инструменту; компания усиливает и систематизирует B2B-sales контур для роста федеральных продаж.","Signal Date":"2026-08-09","Signal Source":"https://setka.ru/posts/019fe5f7-4532-74f3-86ef-29fecd21afb3","Owner":"Федоренко Владимир Андреевич — 50%; Астахов Алексей Станиславович — 50%","CEO":"Федоренко Владимир Андреевич","LPR":"Федоренко Владимир Андреевич","LPR Role":"Генеральный директор, совладелец 50%, практический ЛПР","Primary Phone":"+7 (499) 283-60-33","Primary Email":"order@fedast.ru","HH Contact":"Current FEDAST B2B sales vacancy route","Contact Form":"https://fedast.ru/page/contacts","Contact Type":"Official corporate phone/email/site + current employer vacancy route","Contact Source":"Official FEDAST site; current registry/company profile; August 2026 vacancy","Consulting Hypothesis":"Систематизация B2B-sales: сегментация строительных клиентов, CRM/KPI, управление воронкой и маржинальностью, дилерский/региональный рост и управление командой продаж.",
+      "contacts":[{"value":"+7 (499) 283-60-33","channel":"Phone","type":"Official company phone","source":"Official FEDAST site","url":"https://fedast.ru/page/contacts","is_lpr":false,"notes":"Корпоративный маршрут"},{"value":"order@fedast.ru","channel":"Email","type":"Official corporate email","source":"Official FEDAST site","url":"https://fedast.ru/page/rekvizity","is_lpr":false,"notes":"Корпоративный маршрут"},{"value":"Current FEDAST B2B sales vacancy route","channel":"Vacancy","type":"Current employer route","source":"August 2026 vacancy","url":"https://setka.ru/posts/019fe5f7-4532-74f3-86ef-29fecd21afb3","is_lpr":false,"notes":"Свежая Head/ROP B2B vacancy route"}],
+      "evidence":[{"type":"LEGAL","claim":"ООО «ФЕДАСТ ИМПОРТ», ИНН 7720478065, ОГРН 1197746494461; действует; генеральный директор Федоренко Владимир Андреевич; владельцы Федоренко 50% и Астахов 50%.","url":"https://companies.rbc.ru/id/1197746494461-obschestvo-s-ogranichennoj-otvetstvennostyu-fedast-import/","source":"Current registry-based profile"},{"type":"SCALE_CURRENT","claim":"438,951 млн ₽ выручки за 2025 год; 12 сотрудников; официальный сайт указывает более 2 000 клиентов.","url":"https://companies.rbc.ru/id/1197746494461-obschestvo-s-ogranichennoj-otvetstvennostyu-fedast-import/","source":"Current registry/company data + official site"},{"type":"SIGNAL","claim":"09.08.2026: вакансия Руководителя отдела продаж B2B (строительный инструмент).","url":"https://setka.ru/posts/019fe5f7-4532-74f3-86ef-29fecd21afb3","source":"Current August 2026 vacancy"},{"type":"LPR","claim":"Федоренко Владимир Андреевич — актуальный генеральный директор и совладелец 50% ООО «ФЕДАСТ ИМПОРТ».","url":"https://companies.rbc.ru/id/1197746494461-obschestvo-s-ogranichennoj-otvetstvennostyu-fedast-import/","source":"Current registry-based profile"},{"type":"CONTACT","claim":"Официальные маршруты: +7 (499) 283-60-33, order@fedast.ru, fedast.ru и текущая B2B vacancy route.","url":"https://fedast.ru/page/contacts","source":"Official FEDAST site"}]
     },
     {
-      "Lead ID":"N5K-0443",
-      "Brand":"Серьёзная Мебельная Фабрика / СМФ",
-      "Legal Name":"ООО «ПРОИЗВОДСТВЕННЫЙ ХОЛДИНГ»",
-      "INN":"7816717420",
-      "OGRN/OGRNIP":"1217800071422",
-      "Region":"Санкт-Петербург",
-      "City":"Санкт-Петербург",
-      "Segment":"B2B производство мебели для бизнеса и общественных пространств",
-      "Website":"https://s-mf.ru/",
-      "Revenue/Scale":"Действующее частное ООО; 61,362 млн ₽ выручки за 2025 год; актуальная ССЧ 5 сотрудников по ЭКГ-рейтингу; собственное B2B-производство мебели, проекты для крупных корпоративных и государственных клиентов.",
-      "Signal Level":"S1",
-      "Signal Summary":"8 июля 2026 опубликована вакансия Руководителя отдела продаж B2B для мебельного производства: самостоятельно набрать команду менеджеров с нуля, организовать отдел, найти новые каналы сбыта и крупных постоянных клиентов.",
-      "Signal Date":"2026-07-08",
-      "Signal Source":"https://spb.careerist.ru/vakansii/rukovoditel-otdela-prodazh-mebelnoe-proizvodstvo-b2b-88600186.html",
-      "Owner":"Зотов Алексей Сергеевич — 100%",
-      "CEO":"Зотов Алексей Сергеевич",
-      "LPR":"Зотов Алексей Сергеевич",
-      "LPR Role":"Генеральный директор и собственник 100%",
-      "Primary Phone":"+7 (812) 213-20-20",
-      "Primary Email":"zakaz@s-mf.ru",
-      "HH Contact":"Current/recent СМФ B2B sales vacancy route",
-      "Contact Form":"https://s-mf.ru/",
-      "Contact Type":"Official corporate phone/email/site + employer vacancy route",
-      "Contact Source":"Official СМФ site; current registry/company profile; July 2026 vacancy",
-      "Consulting Hypothesis":"Построение B2B-отдела продаж с нуля: команда, сегментация, CRM/KPI, каналы застройщики/дизайнеры/архитекторы/сети, управление воронкой и маржинальностью.",
-      "contacts":[
-        {"value":"+7 (812) 213-20-20","channel":"Phone","type":"Official company phone","source":"Official СМФ site","url":"https://s-mf.ru/","is_lpr":false,"notes":"Корпоративный маршрут"},
-        {"value":"zakaz@s-mf.ru","channel":"Email","type":"Official corporate email","source":"Official СМФ site","url":"https://s-mf.ru/about/","is_lpr":false,"notes":"Корпоративный маршрут"},
-        {"value":"Current/recent СМФ B2B sales vacancy route","channel":"Vacancy","type":"Employer route","source":"July 2026 vacancy","url":"https://spb.careerist.ru/vakansii/rukovoditel-otdela-prodazh-mebelnoe-proizvodstvo-b2b-88600186.html","is_lpr":false,"notes":"B2B ROP vacancy route"}
-      ],
-      "evidence":[
-        {"type":"LEGAL","claim":"ООО «ПРОИЗВОДСТВЕННЫЙ ХОЛДИНГ», ИНН 7816717420, ОГРН 1217800071422; действует; Зотов Алексей Сергеевич — генеральный директор и собственник 100%.","url":"https://companies.rbc.ru/id/1217800071422-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennyij-holding/","source":"Current registry-based profile"},
-        {"type":"SCALE_CURRENT","claim":"61,362 млн ₽ выручки за 2025 год; актуальная ССЧ 5 сотрудников; официальный сайт подтверждает собственное B2B-производство и крупные корпоративные проекты.","url":"https://xn----etbbhpfd3axw8i.xn--p1ai/companies/7816717420","source":"Current company profile + official site"},
-        {"type":"SIGNAL","claim":"08.07.2026: вакансия РОП B2B мебельного производства; задача — набрать команду с нуля, организовать отдел и открыть новые каналы сбыта.","url":"https://spb.careerist.ru/vakansii/rukovoditel-otdela-prodazh-mebelnoe-proizvodstvo-b2b-88600186.html","source":"Current 2026 vacancy"},
-        {"type":"LPR","claim":"Зотов Алексей Сергеевич — генеральный директор и собственник 100% ООО «ПРОИЗВОДСТВЕННЫЙ ХОЛДИНГ».","url":"https://companies.rbc.ru/id/1217800071422-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennyij-holding/","source":"Current registry-based profile"},
-        {"type":"CONTACT","claim":"Официальные маршруты: +7 (812) 213-20-20, zakaz@s-mf.ru, s-mf.ru и B2B vacancy route.","url":"https://s-mf.ru/","source":"Official СМФ site"}
-      ]
+      "Lead ID":"N5K-0443","Brand":"Серьёзная Мебельная Фабрика / СМФ","Legal Name":"ООО «ПРОИЗВОДСТВЕННЫЙ ХОЛДИНГ»","INN":"7816717420","OGRN/OGRNIP":"1217800071422","Region":"Санкт-Петербург","City":"Санкт-Петербург","Segment":"B2B производство мебели для бизнеса и общественных пространств","Website":"https://s-mf.ru/","Revenue/Scale":"Действующее частное ООО; 61,362 млн ₽ выручки за 2025 год; актуальная ССЧ 5 сотрудников по ЭКГ-рейтингу; собственное B2B-производство мебели, проекты для крупных корпоративных и государственных клиентов.","Signal Level":"S1","Signal Summary":"8 июля 2026 опубликована вакансия Руководителя отдела продаж B2B для мебельного производства: самостоятельно набрать команду менеджеров с нуля, организовать отдел, найти новые каналы сбыта и крупных постоянных клиентов.","Signal Date":"2026-07-08","Signal Source":"https://spb.careerist.ru/vakansii/rukovoditel-otdela-prodazh-mebelnoe-proizvodstvo-b2b-88600186.html","Owner":"Зотов Алексей Сергеевич — 100%","CEO":"Зотов Алексей Сергеевич","LPR":"Зотов Алексей Сергеевич","LPR Role":"Генеральный директор и собственник 100%","Primary Phone":"+7 (812) 213-20-20","Primary Email":"zakaz@s-mf.ru","HH Contact":"Current/recent СМФ B2B sales vacancy route","Contact Form":"https://s-mf.ru/","Contact Type":"Official corporate phone/email/site + employer vacancy route","Contact Source":"Official СМФ site; current registry/company profile; July 2026 vacancy","Consulting Hypothesis":"Построение B2B-отдела продаж с нуля: команда, сегментация, CRM/KPI, каналы застройщики/дизайнеры/архитекторы/сети, управление воронкой и маржинальностью.",
+      "contacts":[{"value":"+7 (812) 213-20-20","channel":"Phone","type":"Official company phone","source":"Official СМФ site","url":"https://s-mf.ru/","is_lpr":false,"notes":"Корпоративный маршрут"},{"value":"zakaz@s-mf.ru","channel":"Email","type":"Official corporate email","source":"Official СМФ site","url":"https://s-mf.ru/about/","is_lpr":false,"notes":"Корпоративный маршрут"},{"value":"Current/recent СМФ B2B sales vacancy route","channel":"Vacancy","type":"Employer route","source":"July 2026 vacancy","url":"https://spb.careerist.ru/vakansii/rukovoditel-otdela-prodazh-mebelnoe-proizvodstvo-b2b-88600186.html","is_lpr":false,"notes":"B2B ROP vacancy route"}],
+      "evidence":[{"type":"LEGAL","claim":"ООО «ПРОИЗВОДСТВЕННЫЙ ХОЛДИНГ», ИНН 7816717420, ОГРН 1217800071422; действует; Зотов Алексей Сергеевич — генеральный директор и собственник 100%.","url":"https://companies.rbc.ru/id/1217800071422-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennyij-holding/","source":"Current registry-based profile"},{"type":"SCALE_CURRENT","claim":"61,362 млн ₽ выручки за 2025 год; актуальная ССЧ 5 сотрудников; официальный сайт подтверждает собственное B2B-производство и крупные корпоративные проекты.","url":"https://xn----etbbhpfd3axw8i.xn--p1ai/companies/7816717420","source":"Current company profile + official site"},{"type":"SIGNAL","claim":"08.07.2026: вакансия РОП B2B мебельного производства; задача — набрать команду с нуля, организовать отдел и открыть новые каналы сбыта.","url":"https://spb.careerist.ru/vakansii/rukovoditel-otdela-prodazh-mebelnoe-proizvodstvo-b2b-88600186.html","source":"Current 2026 vacancy"},{"type":"LPR","claim":"Зотов Алексей Сергеевич — генеральный директор и собственник 100% ООО «ПРОИЗВОДСТВЕННЫЙ ХОЛДИНГ».","url":"https://companies.rbc.ru/id/1217800071422-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennyij-holding/","source":"Current registry-based profile"},{"type":"CONTACT","claim":"Официальные маршруты: +7 (812) 213-20-20, zakaz@s-mf.ru, s-mf.ru и B2B vacancy route.","url":"https://s-mf.ru/","source":"Official СМФ site"}]
     }
   ]
 }
