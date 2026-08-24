@@ -59,3 +59,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Out
 - `N5K-20260824-370`: 298/298, +1, PASS, orphan 0/0.
 - `N5K-20260824-371`: 300/300, +2, PASS, orphan 0/0.
 - `N5K-20260824-372`: 302/302, +2, PASS, orphan 0/0.
+
+
+## Latest verified run N5K-20260824-373
+Canonical/contactable: 304/304. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
