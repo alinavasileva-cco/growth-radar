@@ -1,37 +1,38 @@
 {
-  "run_id": "N5K-20260824-384",
+  "run_id": "N5K-20260824-385",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T21:22:00+05:00",
+  "updated_at": "2026-08-24T21:58:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 314,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 316,
-    "current_contactable_count": 316,
-    "progress_added": 316,
-    "remaining": 4684
+    "current_canonical_count": 317,
+    "current_contactable_count": 317,
+    "progress_added": 317,
+    "remaining": 4683
   },
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 5,
-    "excluded": 17
+    "discovered": 12,
+    "fast_gate_passed": 4,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 2,
+    "excluded": 9
   },
-  "qualified_companies": ["Brand Lovers", "Vzlet Agency / Сила Ума"],
+  "qualified_companies": [
+    "Глассен-АйТи / Glassen IT / Снипр"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "316_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "316_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "317_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "317_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 384 completed from verified RUN 383 baseline 314/314 with +2 net new companies. Automatic integration wrote stale baseline 294; repaired to factual baseline 314 from physical master. Physical canonical/contactable 316/316; integrity PASS; orphan 0/0; outreach 0."
+  "blocker": null
 }

@@ -1,0 +1,7 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0466,N5K-0466-E01,LEGAL,"ООО ГЛАССЕН-АЙТИ действует; ИНН 7838317591, ОГРН 1057810097620.",https://firmoteka.ru/7838317591,Fresh legal profile,2026-08-24T21:58:00+05:00,HIGH,N5K-20260824-385,new_5000
+N5K-0466,N5K-0466-E02,SCALE_CURRENT,"Выручка за 2025 год около 44,1 млн руб.; официальный сайт указывает 30+ человек в штате.",https://glassen-it.ru/about/,Official site + fresh 2025 financial profile,2026-08-24T21:58:00+05:00,HIGH,N5K-20260824-385,new_5000
+N5K-0466,N5K-0466-E03,SIGNAL,"14.08.2026 опубликована вакансия CCO B2B: активный рост нового направления Снипр, переформирование коммерческой вертикали, первые 5–10 сделок и последующее масштабирование системы продаж.",https://nesiditsa.ru/vacancy/136267050,Current 2026 vacancy,2026-08-24T21:58:00+05:00,HIGH,N5K-20260824-385,new_5000
+N5K-0466,N5K-0466-E04,LPR,С 13.04.2026 генеральный директор ООО ГЛАССЕН-АЙТИ — Глахенгаузен Артем Борисович.,https://check.tochka.com/company/1057810097620/,Fresh legal source,2026-08-24T21:58:00+05:00,HIGH,N5K-20260824-385,new_5000
+N5K-0466,N5K-0466-E05,CONTACT,Официальный сайт публикует +7 (812) 411-55-90 и info@glassen-it.com.,https://glassen-it.ru/about/,Official company site,2026-08-24T21:58:00+05:00,HIGH,N5K-20260824-385,new_5000
+N5K-0466,N5K-0466-E06,BRAND_LEGAL,"Официальный сайт прямо указывает ООО ГЛАССЕН-АЙТИ, ИНН 7838317591, ОГРН 1057810097620.",https://glassen-it.ru/about/,Official company site,2026-08-24T21:58:00+05:00,HIGH,N5K-20260824-385,new_5000
