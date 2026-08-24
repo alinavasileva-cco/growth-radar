@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-24T21:18:00+05:00",
+  "updated_at": "2026-08-24T21:22:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260824-383",
-  "current_run_id": "N5K-20260824-383",
+  "last_completed_run_id": "N5K-20260824-384",
+  "current_run_id": "N5K-20260824-384",
   "last_run_id": "N5K-20260824-384",
   "latest_completed_run": "N5K-20260824-384",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 383 completed with +1 net new company: Вертикаль / Vertical. Physical canonical/contactable 314/314; integrity PASS; orphan 0/0; outreach 0."
+  "note": "RUN 384 completed with +2 net new companies: Brand Lovers and Vzlet Agency / Сила Ума. Physical canonical/contactable 316/316; integrity PASS; orphan 0/0; outreach 0."
 }
