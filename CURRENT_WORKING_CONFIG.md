@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-24T06:11:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260824-368`  
+**Версия:** 2026-08-24T07:30:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260824-369`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **296 / 296**  
+**Физически подтверждённый canonical/contactable:** **297 / 297**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4704**  
+**Осталось:** **4703**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **296 / 296**;
+- physical canonical/contactable count: **297 / 297**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260824-368`;
+- последний завершённый RUN: `N5K-20260824-369`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,19 +36,19 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260824-368
+## Последний подробный RUN — N5K-20260824-369
 
-Baseline перед RUN: **295 / 295**.  
-Фактически индивидуально обработано raw-кандидатов: **18**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка: discovered **18** → fast gate **5** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **4**. Excluded: **13**.  
+Baseline перед RUN: **296 / 296**.  
+Фактически индивидуально обработано raw-кандидатов: **21**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **21** → fast gate **5** → size **2** → legal **1** → signal **1** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
+Duplicates: **8**. Excluded: **12**.  
 Добавлена:
-- **Lossew / НПП Лосев — ООО «НПП «ЛОСЕВ»**, ИНН `2225181247`, ОГРН `1172225016413`, Lead ID `N5K-0444`.
+- **VERBA-group / Verba Group — ООО «ВЕРБА-ГРУПП»**, ИНН `4345515696`, ОГРН `1224300000693`, Lead ID `N5K-0445`.
 
-Итог physical canonical/contactable: **296 / 296**.  
+Итог physical canonical/contactable: **297 / 297**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.
 
-НПП Лосев: действующее ООО; 349,922 млн ₽ выручки и 107,981 млн ₽ чистой прибыли за 2025 год; собственное производство в Барнауле. Актуальная вакансия Руководителя отдела продаж подтверждает ответственность за стратегию, планы, развитие клиентов и построение/управление командой продаж. Генеральный директор и практический ЛПР — Владимир Кострицин; официальный сайт публикует прямой email генерального директора и корпоративный телефон.
+VERBA-group: действующее ООО; 15,816 млн ₽ выручки за 2025 год; около 10–11 сотрудников по актуальным публичным профилям. 22 августа 2026 года опубликована вакансия Руководителя отдела продаж / РОП для B2B AI-продукта с прямой задачей выстроить продажи в работающую систему. Директор и единственный собственник — Александр Пинаев; официальный сайт публикует телефон и email компании.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
@@ -103,10 +103,5 @@ Canonical/contactable: 295/295. Added: 1. Integrity PASS. Orphan contacts/eviden
 ## Latest verified run N5K-20260824-368
 Canonical/contactable: 296/296. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260824-369
-Canonical/contactable: 297/297. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260824-369
-Canonical/contactable: 297/297. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: 297/297. Added: 1. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
