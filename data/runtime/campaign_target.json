@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-25T04:34:00+05:00",
+  "updated_at": "2026-08-25T04:36:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-391",
-  "current_run_id": "N5K-20260825-391",
+  "last_completed_run_id": "N5K-20260825-392",
+  "current_run_id": "N5K-20260825-392",
   "last_run_id": "N5K-20260825-392",
   "latest_completed_run": "N5K-20260825-392",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 391 completed with +2 net new after authoritative physical dedup/integration: PANELOK / ПанелОК and БИКОМ / BIKOM. Physical canonical/contactable 323/323; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 392 completed with +2 net new after authoritative physical dedup/integration: One Marking / Одна Маркировка and Амадей Принт / Amadey Print (ООО АМАДЕЙ РЕКЛАМА). Physical canonical/contactable 325/325; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
