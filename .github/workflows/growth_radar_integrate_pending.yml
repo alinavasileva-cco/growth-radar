@@ -3,8 +3,12 @@ on:
   push:
     paths:
       - 'data/runtime/growth_radar_pending_run.json'
+      - '.github/workflows/growth_radar_integrate_pending.yml'
 permissions:
   contents: write
+concurrency:
+  group: growth-radar-integrate-pending
+  cancel-in-progress: false
 jobs:
   integrate:
     runs-on: ubuntu-latest
@@ -27,6 +31,7 @@ jobs:
           def read_csv(p):
               with p.open('r',encoding='utf-8-sig',newline='') as f: return list(csv.DictReader(f))
           def append_rows(p, rows):
+              if not rows: return
               existing=read_csv(p); fields=list(existing[0].keys()) if existing else list(rows[0].keys())
               with p.open('a',encoding='utf-8',newline='') as f:
                   w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore',lineterminator='\n')
@@ -34,12 +39,24 @@ jobs:
           def write_csv(p, rows, fields):
               p.parent.mkdir(parents=True,exist_ok=True)
               with p.open('w',encoding='utf-8',newline='') as f:
-                  w=csv.DictWriter(f,fieldnames=fields,lineterminator='\n'); w.writeheader(); w.writerows(rows)
-          master=read_csv(camp/'leads_master.csv'); existing_inn={r['INN'] for r in master}; existing_ogrn={r['OGRN/OGRNIP'] for r in master}; existing_ids={r['Lead ID'] for r in master}
-          added=[]
+                  w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore',lineterminator='\n'); w.writeheader(); w.writerows(rows)
+          master=read_csv(camp/'leads_master.csv')
+          existing_inn={r.get('INN','').strip() for r in master if r.get('INN','').strip()}
+          existing_ogrn={r.get('OGRN/OGRNIP','').strip() for r in master if r.get('OGRN/OGRNIP','').strip()}
+          existing_ids={r.get('Lead ID','').strip() for r in master}
+          existing_legal={r.get('Legal Name','').strip().casefold() for r in master if r.get('Legal Name','').strip()}
+          added=[]; skipped=[]
           for c in leads:
-              if c['INN'] in existing_inn or c['OGRN/OGRNIP'] in existing_ogrn or c['Lead ID'] in existing_ids: raise SystemExit('DEDUP_GUARD_FAILED')
+              reasons=[]
+              if c['Lead ID'].strip() in existing_ids: reasons.append('Lead ID')
+              if c['INN'].strip() and c['INN'].strip() in existing_inn: reasons.append('INN')
+              if c['OGRN/OGRNIP'].strip() and c['OGRN/OGRNIP'].strip() in existing_ogrn: reasons.append('OGRN')
+              if c['Legal Name'].strip().casefold() in existing_legal: reasons.append('LEGAL_NAME')
+              if reasons:
+                  skipped.append((c['Brand'], ','.join(reasons)))
+                  continue
               added.append(c)
+              existing_ids.add(c['Lead ID'].strip()); existing_inn.add(c['INN'].strip()); existing_ogrn.add(c['OGRN/OGRNIP'].strip()); existing_legal.add(c['Legal Name'].strip().casefold())
           master_rows=[]; contact_rows=[]; ev_rows=[]; contactable_rows=[]
           for c in added:
               m={'Lead ID':c['Lead ID'],'Brand':c['Brand'],'Legal Name':c['Legal Name'],'INN':c['INN'],'OGRN/OGRNIP':c['OGRN/OGRNIP'],'Legal Status':'Действует','Region':c['Region'],'City':c['City'],'Segment':c['Segment'],'Website':c['Website'],'Revenue/Scale':c['Revenue/Scale'],'Signal Level':c['Signal Level'],'Signal Summary':c['Signal Summary'],'Signal Date':c['Signal Date'],'Signal Source':c['Signal Source'],'Owner':c['Owner'],'CEO':c['CEO'],'LPR':c['LPR'],'LPR Role':c['LPR Role'],'Primary Phone':c['Primary Phone'],'Primary Email':c['Primary Email'],'HH Contact':c['HH Contact'],'Contact Form':c['Contact Form'],'Contact Type':c['Contact Type'],'Contact Source':c['Contact Source'],'Number Of Contacts Found':str(len(c['contacts'])),'Consulting Hypothesis':c['Consulting Hypothesis'],'Final Quick Status':'МОЖНО СВЯЗЫВАТЬСЯ','Added At':now,'Updated At':now,'Run ID':run_id,'Campaign ID':'new_5000'}
@@ -48,17 +65,18 @@ jobs:
               for i,x in enumerate(c['contacts'],1): contact_rows.append({'Lead ID':c['Lead ID'],'Contact ID':f"{c['Lead ID']}-C{i:02d}",'Brand':c['Brand'],'INN':c['INN'],'Person Name':c['LPR'] if x.get('is_lpr') else '','Person Role':c['LPR Role'] if x.get('is_lpr') else 'Корпоративный маршрут','Contact Value':x['value'],'Contact Channel':x['channel'],'Contact Type':x['type'],'Contact Source':x['source'],'Source URL':x['url'],'Is LPR':'YES' if x.get('is_lpr') else 'NO','Reliability':'HIGH','Date Checked':now[:10],'Notes':x.get('notes',''),'Run ID':run_id,'Campaign ID':'new_5000'})
               for i,e in enumerate(c['evidence'],1): ev_rows.append({'Lead ID':c['Lead ID'],'Evidence ID':f"{c['Lead ID']}-E{i:02d}",'Evidence Type':e['type'],'Claim':e['claim'],'Source URL':e['url'],'Source Name':e['source'],'Checked At':now,'Reliability':'HIGH','Run ID':run_id,'Campaign ID':'new_5000'})
           append_rows(camp/'leads_master.csv',master_rows); append_rows(camp/'contactable_master.csv',contactable_rows); append_rows(camp/'contacts.csv',contact_rows); append_rows(camp/'evidence.csv',ev_rows)
-          write_csv(camp/'master_shards'/f'{run_id}.csv',master_rows,list(master_rows[0].keys())); write_csv(camp/'contactable_shards'/f'{run_id}.csv',contactable_rows,list(contactable_rows[0].keys())); write_csv(camp/'contact_shards'/f'{run_id}.csv',contact_rows,list(contact_rows[0].keys())); write_csv(camp/'evidence_shards'/f'{run_id}.csv',ev_rows,list(ev_rows[0].keys()))
+          if master_rows:
+              write_csv(camp/'master_shards'/f'{run_id}.csv',master_rows,list(master_rows[0].keys())); write_csv(camp/'contactable_shards'/f'{run_id}.csv',contactable_rows,list(contactable_rows[0].keys())); write_csv(camp/'contact_shards'/f'{run_id}.csv',contact_rows,list(contact_rows[0].keys())); write_csv(camp/'evidence_shards'/f'{run_id}.csv',ev_rows,list(ev_rows[0].keys()))
           funnel=pending['funnel']; new_count=len(read_csv(camp/'leads_master.csv')); cont_count=len(read_csv(camp/'contactable_master.csv'))
           run_fields=['Run ID','Campaign ID','Status','Discovered','Size Check Passed','Legal Match Passed','Signal Confirmed','LPR Identified','Contact Route Found','Qualified','Duplicates','Excluded','Canonical Count','Contactable Count','Integrity','Orphan Contacts','Orphan Evidence','Outreach Sent','Notes']
-          rr={'Run ID':run_id,'Campaign ID':'new_5000','Status':'COMPLETED','Discovered':funnel['discovered'],'Size Check Passed':funnel['size_check_passed'],'Legal Match Passed':funnel['legal_match_passed'],'Signal Confirmed':funnel['signal_confirmed'],'LPR Identified':funnel['lpr_identified'],'Contact Route Found':funnel['contact_route_found'],'Qualified':len(added),'Duplicates':funnel['duplicates'],'Excluded':funnel['excluded'],'Canonical Count':new_count,'Contactable Count':cont_count,'Integrity':'PASS','Orphan Contacts':0,'Orphan Evidence':0,'Outreach Sent':0,'Notes':pending['notes']}
+          rr={'Run ID':run_id,'Campaign ID':'new_5000','Status':'COMPLETED','Discovered':funnel['discovered'],'Size Check Passed':funnel['size_check_passed'],'Legal Match Passed':funnel['legal_match_passed'],'Signal Confirmed':funnel['signal_confirmed'],'LPR Identified':funnel['lpr_identified'],'Contact Route Found':funnel['contact_route_found'],'Qualified':len(added),'Duplicates':funnel['duplicates']+len(skipped),'Excluded':funnel['excluded'],'Canonical Count':new_count,'Contactable Count':cont_count,'Integrity':'PASS','Orphan Contacts':0,'Orphan Evidence':0,'Outreach Sent':0,'Notes':pending['notes']+'; physical dedup skipped='+str(skipped)}
           write_csv(camp/'run_logs'/f'{run_id}.csv',[rr],run_fields); append_rows(camp/'run_log.csv',[rr]); append_rows(camp/'run_log_tail_198_onward.csv',[rr])
           master2=read_csv(camp/'leads_master.csv'); cont2=read_csv(camp/'contactable_master.csv'); contacts2=read_csv(camp/'contacts.csv'); ev2=read_csv(camp/'evidence.csv'); mids={r['Lead ID'] for r in master2}; cids={r['Lead ID'] for r in cont2}
-          assert len(master2)==len({r['INN'] for r in master2})==len({r['OGRN/OGRNIP'] for r in master2}); assert mids==cids; assert not ({r['Lead ID'] for r in contacts2}-mids); assert not ({r['Lead ID'] for r in ev2}-mids)
-          runtime={'run_id':run_id,'campaign_id':'new_5000','status':'COMPLETED','updated_at':now,'stage':'COMPLETE','new_cycle':{'baseline_count':0,'target_count':5000,'current_canonical_count':new_count,'current_contactable_count':cont_count,'progress_added':new_count,'remaining':5000-new_count},'funnel':{**funnel,'qualified':len(added)},'qualified_companies':[c['Brand'] for c in added],'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'active_wip':0,'physical_master_state':f'{new_count}_DATA_ROWS_PLUS_HEADER_CONFIRMED','physical_contactable_state':f'{cont_count}_DATA_ROWS_PLUS_HEADER_CONFIRMED','outreach_sent':0,'blocker':None}
+          assert len(master2)==len({r['INN'] for r in master2 if r['INN']})==len({r['OGRN/OGRNIP'] for r in master2 if r['OGRN/OGRNIP']}); assert mids==cids; assert not ({r['Lead ID'] for r in contacts2}-mids); assert not ({r['Lead ID'] for r in ev2}-mids)
+          runtime={'run_id':run_id,'campaign_id':'new_5000','status':'COMPLETED','updated_at':now,'stage':'COMPLETE','new_cycle':{'baseline_count':294,'target_count':5000,'current_canonical_count':new_count,'current_contactable_count':cont_count,'progress_added':new_count,'remaining':5000-new_count},'funnel':{**funnel,'qualified':len(added),'duplicates':funnel['duplicates']+len(skipped)},'qualified_companies':[c['Brand'] for c in added],'integrity_status':'PASS','orphan_contacts':0,'orphan_evidence':0,'active_wip':0,'physical_master_state':f'{new_count}_DATA_ROWS_PLUS_HEADER_CONFIRMED','physical_contactable_state':f'{cont_count}_DATA_ROWS_PLUS_HEADER_CONFIRMED','outreach_sent':0,'blocker':None}
           (root/'data/runtime/current_run_status.json').write_text(json.dumps(runtime,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           target=json.loads((root/'data/runtime/campaign_target.json').read_text(encoding='utf-8')); target.update({'current_canonical_count':new_count,'current_contactable_count':cont_count,'progress_added':new_count,'remaining_to_total_target':5000-new_count,'remaining':5000-new_count,'integrity_status':'PASS','campaign_status':'ACTIVE','updated_at':now,'last_run_id':run_id,'latest_completed_run':run_id,'orphan_contacts':0,'orphan_evidence':0}); (root/'data/runtime/campaign_target.json').write_text(json.dumps(target,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          report=f"# Growth Radar RUN {run_id}\n\n- Status: COMPLETED\n- Added: {len(added)}\n- Canonical/contactable: {new_count}/{cont_count}\n- Discovered: {funnel['discovered']}\n- Qualified: {len(added)}\n- Duplicates: {funnel['duplicates']}\n- Excluded: {funnel['excluded']}\n- Integrity: PASS\n- Orphan contacts/evidence: 0/0\n- Outreach: 0\n\n## Added companies\n" + ''.join(f"- {c['Brand']} — INN {c['INN']}\n" for c in added)
+          report=f"# Growth Radar RUN {run_id}\n\n- Status: COMPLETED\n- Added: {len(added)}\n- Canonical/contactable: {new_count}/{cont_count}\n- Discovered: {funnel['discovered']}\n- Qualified: {len(added)}\n- Duplicates: {funnel['duplicates']+len(skipped)}\n- Excluded: {funnel['excluded']}\n- Integrity: PASS\n- Orphan contacts/evidence: 0/0\n- Outreach: 0\n\n## Added companies\n" + ''.join(f"- {c['Brand']} — INN {c['INN']}\n" for c in added)
           (root/'reports'/f"run_{run_id.replace('N5K-','').replace('-','_')}.md").write_text(report,encoding='utf-8')
           cfg=root/'CURRENT_WORKING_CONFIG.md'; cfg.write_text(cfg.read_text(encoding='utf-8')+f"\n\n## Latest verified run {run_id}\nCanonical/contactable: {new_count}/{cont_count}. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.\n",encoding='utf-8')
           PY
@@ -68,4 +86,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/campaigns/new_5000 data/runtime CURRENT_WORKING_CONFIG.md reports
           git commit -m "Growth Radar: integrate verified pending run" || exit 0
+          git pull --rebase origin main
           git push
