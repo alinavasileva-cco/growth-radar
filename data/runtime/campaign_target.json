@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-25T03:14:00+05:00",
+  "updated_at": "2026-08-25T03:16:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-390",
-  "current_run_id": "N5K-20260825-390",
+  "last_completed_run_id": "N5K-20260825-391",
+  "current_run_id": "N5K-20260825-391",
   "last_run_id": "N5K-20260825-391",
   "latest_completed_run": "N5K-20260825-391",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 390 completed with +1 net new after authoritative physical dedup/integration: Myakishi / Toy Factory Myakishi. Physical canonical/contactable 321/321; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 391 completed with +2 net new after authoritative physical dedup/integration: PANELOK / ПанелОК and БИКОМ / BIKOM. Physical canonical/contactable 323/323; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
