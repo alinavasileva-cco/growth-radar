@@ -1,19 +1,38 @@
 {
-  "run_id": "N5K-20260824-386",
+  "run_id": "N5K-20260824-387",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T23:06:00+05:00",
+  "updated_at": "2026-08-24T23:59:00+05:00",
   "stage": "COMPLETE",
-  "new_cycle": {"baseline_count":317,"target_count":5000,"current_canonical_count":318,"current_contactable_count":318,"progress_added":318,"remaining":4682},
-  "funnel": {"discovered":22,"fast_gate_passed":5,"size_check_passed":2,"legal_match_passed":1,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":6,"excluded":15},
-  "qualified_companies": ["BELKINA / Belkina / Belevtseva"],
+  "new_cycle": {
+    "baseline_count": 294,
+    "target_count": 5000,
+    "current_canonical_count": 319,
+    "current_contactable_count": 319,
+    "progress_added": 319,
+    "remaining": 4681
+  },
+  "funnel": {
+    "discovered": 24,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 5,
+    "excluded": 18
+  },
+  "qualified_companies": [
+    "Стопэкспресс / StopExpress"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "318_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "318_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "319_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "319_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 386 factual result repaired after integration wrote stale automatic baseline 294. Verified baseline before RUN was 317/317 from RUN 385; BELKINA physically integrated as N5K-0467; final physical canonical/contactable 318/318; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "blocker": null
 }
