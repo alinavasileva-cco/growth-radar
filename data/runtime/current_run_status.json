@@ -1,19 +1,39 @@
 {
-  "run_id": "N5K-20260825-391",
+  "run_id": "N5K-20260825-392",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T03:16:00+05:00",
+  "updated_at": "2026-08-25T04:34:00+05:00",
   "stage": "COMPLETE",
-  "new_cycle": {"baseline_count":321,"target_count":5000,"current_canonical_count":323,"current_contactable_count":323,"progress_added":323,"remaining":4677},
-  "funnel": {"discovered":24,"fast_gate_passed":6,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":5,"excluded":17},
-  "qualified_companies": ["PANELOK / ПанелОК","БИКОМ / BIKOM"],
+  "new_cycle": {
+    "baseline_count": 294,
+    "target_count": 5000,
+    "current_canonical_count": 325,
+    "current_contactable_count": 325,
+    "progress_added": 325,
+    "remaining": 4675
+  },
+  "funnel": {
+    "discovered": 32,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 8,
+    "excluded": 22
+  },
+  "qualified_companies": [
+    "One Marking / Одна Маркировка",
+    "Амадей Принт / Amadey Print"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "323_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "323_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "325_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "325_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 391 factual result after physical integration: baseline 321/321 from completed RUN 390; PANELOK and BIKOM added as two unique contactable companies after physical dedup; final physical canonical/contactable 323/323; integrity PASS; orphan 0/0; staged 0; outreach 0. Retrigger occurred after first successful integration and temporarily rewrote funnel as qualified=0/duplicates=7; repaired to factual +2. Automatic stale baseline 294 repaired to 321."
+  "blocker": null
 }
