@@ -1,11 +1,11 @@
 {
-  "run_id": "N5K-20260824-374",
+  "run_id": "N5K-20260824-375",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-24T12:30:00+05:00",
+  "updated_at": "2026-08-24T12:46:47+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 304,
+    "baseline_count": 294,
     "target_count": 5000,
     "current_canonical_count": 305,
     "current_contactable_count": 305,
@@ -13,18 +13,18 @@
     "remaining": 4695
   },
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 5,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "discovered": 12,
+    "fast_gate_passed": 3,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
+    "qualified": 0,
     "duplicates": 3,
-    "excluded": 20
+    "excluded": 9
   },
-  "qualified_companies": ["СПЕЙСТЕЛ / Spacetel"],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
