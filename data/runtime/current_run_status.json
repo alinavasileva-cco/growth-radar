@@ -1,36 +1,39 @@
 {
-  "run_id": "N5K-20260825-400",
+  "run_id": "N5K-20260825-401",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T11:06:00+03:00",
+  "updated_at": "2026-08-25T12:48:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 334,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 336,
-    "current_contactable_count": 336,
-    "progress_added": 336,
-    "remaining": 4664
+    "current_canonical_count": 338,
+    "current_contactable_count": 338,
+    "progress_added": 338,
+    "remaining": 4662
   },
   "funnel": {
-    "discovered": 36,
-    "fast_gate_passed": 7,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
+    "discovered": 58,
+    "fast_gate_passed": 9,
+    "size_check_passed": 5,
+    "legal_match_passed": 4,
+    "signal_confirmed": 3,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 10,
-    "excluded": 24
+    "duplicates": 17,
+    "excluded": 39
   },
-  "qualified_companies": ["LUMIXON / Люмиксон", "Компания Чебо / New Farm"],
+  "qualified_companies": [
+    "SelSup / СелСап",
+    "Сибэлкон / Sibelkon — промышленная фильтрация"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "336_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "336_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "338_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "338_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
