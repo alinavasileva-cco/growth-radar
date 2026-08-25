@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-25T09:00:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-395",
-  "current_run_id": "N5K-20260825-395",
+  "last_completed_run_id": "N5K-20260825-396",
+  "current_run_id": "N5K-20260825-396",
   "last_run_id": "N5K-20260825-396",
   "latest_completed_run": "N5K-20260825-396",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 395 completed: +1 net new company, INSTART / Инстарт. Physical canonical/contactable 330/330; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 396 completed: +1 net new company, Новая Заря / Парфюм Косметик Сервис. Physical canonical/contactable 331/331; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
