@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-25T11:00:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-397",
-  "current_run_id": "N5K-20260825-397",
+  "last_completed_run_id": "N5K-20260825-398",
+  "current_run_id": "N5K-20260825-398",
   "last_run_id": "N5K-20260825-398",
   "latest_completed_run": "N5K-20260825-398",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 397 completed: +1 net new company, СПК Красноярск / Светопрозрачные конструкции Красноярск. Physical canonical/contactable 332/332; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 398 completed: +1 net new company, Новый Мир Брн. Physical canonical/contactable 333/333; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
