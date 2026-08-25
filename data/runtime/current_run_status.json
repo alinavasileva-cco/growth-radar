@@ -1,36 +1,38 @@
 {
-  "run_id": "N5K-20260825-409",
+  "run_id": "N5K-20260825-410",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T20:17:00+03:00",
+  "updated_at": "2026-08-25T20:58:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 352,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 353,
-    "current_contactable_count": 353,
-    "progress_added": 353,
-    "remaining": 4647
+    "current_canonical_count": 354,
+    "current_contactable_count": 354,
+    "progress_added": 354,
+    "remaining": 4646
   },
   "funnel": {
-    "discovered": 50,
-    "fast_gate_passed": 3,
-    "size_check_passed": 3,
+    "discovered": 8,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 48
+    "duplicates": 3,
+    "excluded": 4
   },
-  "qualified_companies": ["НПО ЗЕНИТ-СЕВЕР / ЭКОВАРД"],
+  "qualified_companies": [
+    "Леммо-Тойс / LEMMO-TOYS"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "353_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "353_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "354_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "354_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
