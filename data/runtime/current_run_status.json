@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260825-394",
+  "run_id": "N5K-20260825-395",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T07:18:00+05:00",
+  "updated_at": "2026-08-25T08:20:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 329,
-    "current_contactable_count": 329,
-    "progress_added": 329,
-    "remaining": 4671
+    "current_canonical_count": 330,
+    "current_contactable_count": 330,
+    "progress_added": 330,
+    "remaining": 4670
   },
   "funnel": {
-    "discovered": 30,
+    "discovered": 24,
     "fast_gate_passed": 6,
     "size_check_passed": 3,
     "legal_match_passed": 2,
@@ -21,18 +21,18 @@
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 6,
-    "excluded": 23
+    "duplicates": 5,
+    "excluded": 18
   },
   "qualified_companies": [
-    "ТК НИЖТЕКСТИЛЬ / Nizhtextil"
+    "INSTART / Инстарт"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "329_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "329_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "330_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "330_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
