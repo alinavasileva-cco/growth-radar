@@ -5,7 +5,7 @@
   "updated_at": "2026-08-26T01:15:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 359,
     "target_count": 5000,
     "current_canonical_count": 362,
     "current_contactable_count": 362,
