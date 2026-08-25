@@ -1,12 +1,12 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-25T13:21:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260825-402`  
+**Версия:** 2026-08-25T13:59:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260825-403`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **340 / 340**  
+**Физически подтверждённый canonical/contactable:** **341 / 341**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4660**  
+**Осталось:** **4659**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -14,9 +14,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **340 / 340**;
+- physical canonical/contactable count: **341 / 341**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260825-402`;
+- последний завершённый RUN: `N5K-20260825-403`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -42,33 +42,31 @@
 17. После RUN фиксировать общую воронку и фактическую статистику discovery-lanes. Если lane-level метрики не были сохранены, их не реконструировать и не придумывать; исправить инструментацию на следующем RUN.
 18. Не выполнять outreach, письма, отклики, подготовку рассылок или отправку сообщений.
 
-## Последний подробный RUN — N5K-20260825-402
+## Последний подробный RUN — N5K-20260825-403
 
-Baseline перед RUN: **338 / 338**.  
-Фактически индивидуально обработано raw-кандидатов: **31**. Целевые 300–500 в этом RUN не достигнуты и не заявляются.  
-Воронка после authoritative physical dedup и REPAIR: discovered **31** → fast gate **7** → size **4** → legal **4** → signal **4** → LPR **2** → contact **2** → qualified unique **2** → physically integrated **2**.  
-Duplicates: **8**. Excluded: **21**.  
-Добавлены:
-- **МИАР / M.I.A.R. / ООО «МИАР»**, ИНН `6230100057`, ОГРН `1166234074050`, Lead ID `N5K-0491`.
-- **ERA Group / ЭРА / ООО «ЭРА»**, ИНН `6230054957`, ОГРН `1066230045001`, Lead ID `N5K-0492`.
+Baseline перед RUN: **340 / 340**.  
+Фактически индивидуально обработано raw-кандидатов: **17**. Целевые 300–500 в этом RUN не достигнуты и не заявляются.  
+Воронка: discovered **17** → fast gate **6** → size **3** → legal **2** → signal **2** → LPR **1** → contact **1** → qualified unique **1** → physically integrated **1**.  
+Duplicates: **5**. Excluded: **11**.  
+Добавлена:
+- **Челябинский завод Теплоприбор / ООО ЧТП**, ИНН `7450031562`, ОГРН `1037402821257`, Lead ID `N5K-0493`.
 
-Итог physical canonical/contactable: **340 / 340**.  
+Итог physical canonical/contactable: **341 / 341**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Staged: **0**. Outreach: **0**.  
-Штатный integration workflow физически добавил обе компании. После интеграции обнаружен stale baseline `294` вместо фактического pre-run baseline `338`, а `campaign_target` и `run_metrics` частично оставались на RUN 401. Runtime, campaign target, metrics и эта конфигурация восстановлены по физическому master/contactable и RUN 402 integration commit без повторной интеграции.
+Штатный integration workflow успешно завершился. После интеграции stale baseline `294` исправлен на фактический pre-run baseline `340`; campaign target и metrics синхронизированы на RUN 403 без повторной интеграции.
 
-### Discovery-lanes RUN 402
+### Discovery-lanes RUN 403
 
-В RUN использовались несколько независимых потоков: текущие job-board выдачи, альтернативные job boards, региональный поиск, промышленный/B2B segment expansion, официальные сайты, актуальные registry/financial profiles и growth/expansion signals. **Точные raw/duplicate/qualified счётчики по каждому lane в RUN 402 отдельно не были персистентно сохранены, поэтому они не реконструируются задним числом.** Это обязательная инструментационная правка для следующего RUN.
+Фактически персистентно сохранены lane-level raw/reject/qualified метрики в pending RUN 403. Job-board lanes дали высокий overlap и были ограничены; приоритет смещён в альтернативные job boards, отраслевые/региональные каталоги, growth/expansion news, official-site и segment-expansion поиск. Telegram/VK и franchise/dealer lanes в этом коротком окне не дали индивидуально обработанных кандидатов и имеют raw=0 — нулевые значения не заменялись вымышленными.
 
-### Реальное узкое место RUN 402
+### Реальное узкое место RUN 403
 
-Фактически обработан только **31** разный raw-кандидат вместо целевых 300–500. Job-board потоки быстро дают высокий overlap с canonical base: например, INBRIG и АЗ АТОМ были выявлены как уже существующие записи до интеграции. Следующий RUN должен раньше переключать насыщенные job-board lanes и отдавать больше времени региональным каталогам, официальным growth/news потокам, отраслевым каталогам, рейтингам/премиям, дилерским/франшизным каталогам и segment expansion.
+Фактически обработано только **17** разных raw-кандидатов вместо целевых 300–500. Узкое место — доступный объём индивидуально верифицированных кандидатов в рамках текущего execution window и высокий overlap job-board выдач. Следующий RUN должен раньше отдавать время low-overlap региональным производственным каталогам, официальным growth/news потокам, отраслевым каталогам, рейтингам/премиям и дилерским каталогам.
 
 История предыдущих RUN сохранена в `run_logs`, reports, shards/increments и Git history.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260825-393`: 328/328, +3, PASS, orphan 0/0.
 - `N5K-20260825-394`: 329/329, +1, PASS, orphan 0/0.
 - `N5K-20260825-395`: 330/330, +1, PASS, orphan 0/0.
 - `N5K-20260825-396`: 331/331, +1, PASS, orphan 0/0.
@@ -78,7 +76,4 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260825-400`: 336/336, +2, PASS, orphan 0/0.
 - `N5K-20260825-401`: 338/338, +2, PASS, orphan 0/0.
 - `N5K-20260825-402`: 340/340, +2, PASS, orphan 0/0.
-
-
-## Latest verified run N5K-20260825-403
-Canonical/contactable: 341/341. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+- `N5K-20260825-403`: 341/341, +1, PASS, orphan 0/0.
