@@ -1,0 +1,108 @@
+{
+  "worker": "jobs",
+  "created_at_utc": "2026-08-25T22:00:00Z",
+  "source_head_sha": "c74a0e931682fe446c0c46bcbf94b605b88935ea",
+  "source_head_run": "N5K-20260825-413",
+  "canonical_state_at_start": {
+    "physical_canonical": 359,
+    "physical_contactable": 359,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "scope": "HH, SuperJob, Rabota.ru, Habr Career, GetMatch, career pages and other job-board signals",
+  "metrics": {
+    "raw_distinct_surfaced": 46,
+    "deep_checked": 3,
+    "qualified": 1,
+    "deep_rejected": 2,
+    "notes": "46 distinct identifiable employers were surfaced after employer-level dedup from the current multi-source Moscow Head-of-Sales result page plus the current Saint Petersburg PBS vacancy result. Duplicate vacancy mirrors and repeated AUTOWORLD roles were counted once at employer level. No aggregate funnel counts beyond surfaced/deep/qualified/rejected were reconstructed."
+  },
+  "raw_sources": [
+    "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh",
+    "https://metasputnik.ru/job/promo/8931/sankt-peterburg/vakansii-rukovoditel-otdela-prodazh?per-page=50"
+  ],
+  "raw_employers_distinct": [
+    "АГРОТЕХСНАБ", "СИНЕРГИЯ", "Kotov Group", "ANCOR", "МР-ПАРКЕТТ / Boss-Floors", "100балльный репетитор", "АП MARKETING", "Beauty Technology", "Кадровая компания Вераль", "Сатурн, Фермерское хозяйство", "Агентство недвижимости Полезные люди", "SÓSTAC", "Биорайз", "Happy Gifts Group", "Богомолов Константин Николаевич", "ИдаПроджект", "РБС ГРУПП", "В Кадре", "АКРОН ХОЛДИНГ", "АЙДИ-ИНЖИНИРИНГ", "Staffwell", "Оверон", "Союз", "ЦОТЭБ", "Ли Хуа Групп", "БИОВЕТ", "SENAT Consulting Services", "Ларин Виталий Сергеевич", "Холдинговая компания АлфиГрупп", "MERLION", "ГРУППА КОМПАНИЙ РУСМЕДИКАЛ", "ЭПЕКО", "Амадей Принт", "АВТОМИР, ГК", "Фитнес Лига", "Печатный Экспресс Флексография", "Калашников", "Барыкин Егор Александрович", "КГ ЕРМАК", "БЬЮТИ ТРЕНД РУС", "Дилерский центр", "Gepting Sales Group", "Л-Системс", "БорисХоф", "Jobers", "ПБС"
+  ],
+  "deep_rejected": [
+    {
+      "brand": "МР-ПАРКЕТТ / Boss-Floors",
+      "reason": "Fails SIZE gate. Current legal status is active, but the latest available disclosed revenue for ООО МР-ПАРКЕТТ is only 11.146m RUB and the profile shows 2025 taxes at zero plus material current tax/enforcement debt. The vacancy signal is strong, but scale does not meet the target profile.",
+      "evidence_urls": [
+        "https://www.rabota.ru/vacancy/53892116/",
+        "https://boss-floors.ru/",
+        "https://firmoteka.ru/7722478550"
+      ]
+    },
+    {
+      "brand": "АГРОТЕХСНАБ / Стеллажный мир",
+      "reason": "Fails reliable vacancy-to-legal match in this pass. The job text names ООО АГРОТЕХСНАБ for Moscow rack-equipment sales, while public sources expose several active ООО АГРОТЕХСНАБ entities. A likely Fryazino entity (INN 9731041256) has appropriate scale and owner/LPR, but the vacancy source did not expose a sufficiently authoritative legal identifier to bind the vacancy to that entity without inference.",
+      "evidence_urls": [
+        "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh",
+        "https://agrotexsnab.com/thank-you",
+        "https://saby.ru/profile/9731041256-505001001",
+        "https://check.tochka.com/company/1197746325314/"
+      ]
+    }
+  ],
+  "qualified_companies": [
+    {
+      "brand": "ПБС / Petro Building Systems / ПБС-МБО",
+      "legal_name": "ООО ПБС",
+      "inn": "7806266471",
+      "ogrn": "1177847133100",
+      "region": "Санкт-Петербург",
+      "city": "Санкт-Петербург",
+      "status": "QUALIFIED",
+      "dedup_keys": {
+        "inn": "7806266471",
+        "ogrn": "1177847133100",
+        "legal_name": "ООО ПБС",
+        "brand_domain": "ПБС|pbs-mbo.ru"
+      },
+      "legal": {
+        "active": true,
+        "evidence": "Current registry/company profiles identify ООО ПБС, INN 7806266471, OGRN 1177847133100, as an active private company."
+      },
+      "scale": {
+        "revenue_2025_rub": 256499000,
+        "employees_2025": 44,
+        "evidence": "2025 revenue 256.499m RUB and 44 employees reported by current company profiles; scale is within the target range."
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-25",
+        "summary": "Current Head of Sales vacancy states that the manufacturer is dynamically developing and needs a leader to organize the managers' work and build the sales system. The vacancy context describes 200+ completed projects and 49 cassette installations.",
+        "source_url": "https://metasputnik.ru/job/promo/8931/sankt-peterburg/vakansii-rukovoditel-otdela-prodazh?per-page=50"
+      },
+      "owners_lpr": {
+        "director_lpr": "Шевченко Дмитрий Николаевич",
+        "owner": "ООО ПЕТРО БИЛДИНГ СИСТЕМС, ИНН 7810788449 — 100%",
+        "evidence": "Current registry sources identify Дмитрий Шевченко as director since 21.03.2025 and ООО ПЕТРО БИЛДИНГ СИСТЕМС as the sole corporate owner."
+      },
+      "contact_route": {
+        "phone": "+7 (966) 750-00-50",
+        "email": "zakaz@pbs-mbo.ru",
+        "hr_email": "tv@pbsspb.com",
+        "form_or_site": "https://pbs-mbo.ru/contacts",
+        "type": "Official corporate phone/email/contact form plus published HR mailbox; request transfer to director/commercial decision-maker",
+        "source_url": "https://pbs-mbo.ru/contacts"
+      },
+      "evidence": [
+        {"type": "JOB_SIGNAL", "url": "https://metasputnik.ru/job/promo/8931/sankt-peterburg/vakansii-rukovoditel-otdela-prodazh?per-page=50", "claim": "Current Head of Sales vacancy for PBS; dynamic growth; task to organize sales managers and build the system."},
+        {"type": "OFFICIAL_LEGAL_CONTACT", "url": "https://pbs-mbo.ru/contacts", "claim": "Official site states ООО ПБС, INN 7806266471, OGRN 1177847133100 and publishes phone, email, HR mailbox and contact form."},
+        {"type": "OFFICIAL_COMPANY", "url": "https://pbs-mbo.ru/about", "claim": "PBS-MBO is part of Petro Building Systems and operates its own 2500 sqm production site in Saint Petersburg."},
+        {"type": "LEGAL_SCALE_LPR", "url": "https://reputation.ru/ogrn/1177847133100", "claim": "Active ООО ПБС; director Дмитрий Шевченко; sole corporate founder; 2025 staff count 44 and 2025 revenue 256.5m RUB."},
+        {"type": "FINANCIAL_SCALE", "url": "https://companies.rbc.ru/amp/ogrn/1177847133100/", "claim": "2025 revenue 256.499m RUB and current sole founder details."}
+      ],
+      "dedup_check": {
+        "repository_search_exact_inn": "NO_MATCH",
+        "checked_against_head": "c74a0e931682fe446c0c46bcbf94b605b88935ea"
+      }
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "integration_instruction": "Main canonical writer must perform authoritative physical dedup again immediately before any integration."
+}
