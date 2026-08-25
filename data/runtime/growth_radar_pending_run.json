@@ -1,112 +1,94 @@
 {
-  "run_id": "N5K-20260825-397",
-  "updated_at": "2026-08-25T10:00:00+05:00",
+  "run_id": "N5K-20260825-398",
+  "updated_at": "2026-08-25T11:00:00+05:00",
   "funnel": {
     "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 18
+    "duplicates": 8,
+    "excluded": 15
   },
-  "notes": "RUN 397 starts from verified RUN 396 baseline 331/331 PASS orphan 0/0. Fresh August 2026 job-board discovery plus current 2025 financial/company and official-site sources were screened. Known repeats and candidates with weak, ambiguous or stale legal/scale evidence were removed before deep-check. ООО СПК Красноярск passed current legal status, 2025 scale, current operational scale, fresh sales-system expansion signal, current director/LPR and official contact-route gates. GitHub code search by INN returned no indexed match before staging; authoritative physical integration guard remains final dedup source. No outreach.",
+  "notes": "RUN 398 starts from verified RUN 397 baseline 332/332 PASS orphan 0/0. Fresh August 2026 job-board discovery and current company/legal sources were screened. Known repeats (including Хоупак, IBMM, Сталь-Инвест, Корос Груп, Атлант Трейлерс and other already integrated companies), recruiters/anonymous employers and candidates with weak or ambiguous brand→legal/scale evidence were removed before deep-check. ООО Новый Мир Брн passed current legal status, 2025 revenue scale, fresh direct-employer B2B sales signal, current director/LPR and practical HH employer route. No owner fact is asserted because current public sources checked in this run did not reliably expose ownership; qualification relies on the confirmed director as LPR. GitHub indexed search by INN returned no match before staging; physical integration guard remains final dedup source. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0484",
-      "Brand": "СПК Красноярск / Светопрозрачные конструкции Красноярск",
-      "Legal Name": "ООО СВЕТОПРОЗРАЧНЫЕ КОНСТРУКЦИИ КРАСНОЯРСК",
-      "INN": "2464253301",
-      "OGRN/OGRNIP": "1132468031651",
-      "Region": "Красноярский край",
-      "City": "Красноярск",
-      "Segment": "Производство окон, фасадов, алюминиевых и ПВХ-конструкций; B2B/B2C/дилерские продажи",
-      "Website": "https://spk-kras.com/",
-      "Revenue/Scale": "Действующее ООО; выручка 515,732 млн руб. за 2025 год. Текущий официальный сайт подтверждает завод полного цикла, более 500 000 установленных окон, крупные B2B-проекты и действующую производственную инфраструктуру; актуальный профиль показывает 56 сотрудников.",
+      "Lead ID": "N5K-0485",
+      "Brand": "Новый Мир Брн",
+      "Legal Name": "ООО НОВЫЙ МИР БРН",
+      "INN": "2222898533",
+      "OGRN/OGRNIP": "1222200012858",
+      "Region": "Алтайский край",
+      "City": "Барнаул",
+      "Segment": "Оптовые B2B-продажи сырья для производства чая и чайных напитков; СТМ",
+      "Website": "",
+      "Revenue/Scale": "Действующее ООО; выручка 59,109 млн руб. по актуальной карточке компании. Свежая вакансия подтверждает действующее оптовое B2B-направление по РФ и услуги СТМ.",
       "Signal Level": "S1",
-      "Signal Summary": "В актуальной вакансии руководителя отдела продаж компания прямо связывает найм с масштабированием бизнеса и ставит задачу систематизировать коммерческий блок, разделить продажи на B2C, B2B и дилерское направления и усилить управление воронкой и командой.",
-      "Signal Date": "2026-07-31",
-      "Signal Source": "https://krasnoyarsk.rabotajob.ru/vakansii/rukovoditel-otdela-prodaz/",
-      "Owner": "Шесть действующих участников: Горбунов Артур Михайлович; Титов Вячеслав Анатольевич; Кузнецов Дмитрий Николаевич; Косьяненко Юрий Владимирович; Дорошенко Евгений Александрович; Потрикеева Марина Александровна",
-      "CEO": "Кузнецов Дмитрий Николаевич",
-      "LPR": "Кузнецов Дмитрий Николаевич",
-      "LPR Role": "Директор, совладелец",
-      "Primary Phone": "+7 (391) 275-99-68",
-      "Primary Email": "info@spk-kras.com",
-      "HH Contact": "Current direct-employer Head of Sales vacancy route",
-      "Contact Form": "https://spk-kras.com/",
-      "Contact Type": "Official corporate phone + email + current employer vacancy route",
-      "Contact Source": "Official СПК Красноярск website + current job-board listing + current registry/financial profiles",
-      "Number Of Contacts Found": 3,
-      "Consulting Hypothesis": "Систематизация и масштабирование многоканальной коммерческой системы B2C/B2B/дилеры: структура отдела, ответственность по каналам, CRM-воронка, KPI и управляемый рост продаж.",
+      "Signal Summary": "В актуальной вакансии руководителя отдела продаж компания ставит задачи развития и расширения оптовых продаж по РФ по сырью для производства чая и чайных напитков и услугам СТМ; требуется системное управление B2B-продажами.",
+      "Signal Date": "2026-08-13",
+      "Signal Source": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
+      "Owner": "Не подтвержден текущими публичными источниками; не используется в решении",
+      "CEO": "Пеньков Виталий Сергеевич",
+      "LPR": "Пеньков Виталий Сергеевич",
+      "LPR Role": "Директор",
+      "Primary Phone": "",
+      "Primary Email": "",
+      "HH Contact": "Current direct-employer ООО Новый Мир Брн vacancy route on hh.ru",
+      "Contact Form": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
+      "Contact Type": "Current direct-employer vacancy route",
+      "Contact Source": "hh.ru current employer vacancy + current registry/company profiles",
+      "Number Of Contacts Found": 1,
+      "Consulting Hypothesis": "Систематизация и масштабирование федеральных B2B-продаж сырья и СТМ: сегментация клиентской базы, управляемая воронка, KPI, прогнозирование и развитие региональных каналов.",
       "contacts": [
         {
-          "value": "+7 (391) 275-99-68",
-          "channel": "Phone",
-          "type": "Corporate phone",
-          "source": "Official СПК Красноярск website",
-          "url": "https://spk-kras.com/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный телефон"
-        },
-        {
-          "value": "info@spk-kras.com",
-          "channel": "Email",
-          "type": "Corporate email",
-          "source": "Official СПК Красноярск website",
-          "url": "https://spk-kras.com/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный email"
-        },
-        {
-          "value": "Current direct-employer Head of Sales vacancy route",
+          "value": "Current direct-employer ООО Новый Мир Брн vacancy route on hh.ru",
           "channel": "Vacancy",
           "type": "Employer route",
-          "source": "Current 2026 job-board listing",
-          "url": "https://krasnoyarsk.rabotajob.ru/vakansii/rukovoditel-otdela-prodaz/",
+          "source": "hh.ru current employer vacancy",
+          "url": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
           "is_lpr": false,
-          "notes": "Свежий маршрут прямого работодателя"
+          "notes": "Практический маршрут прямого работодателя; телефон/email не выдумывались"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО Светопрозрачные конструкции Красноярск действует; ИНН 2464253301, ОГРН 1132468031651; директор — Кузнецов Дмитрий Николаевич; шесть действующих участников.",
-          "url": "https://companies.rbc.ru/id/1132468031651-ooo-svetoprozrachnyie-konstruktsii-krasnoyarsk/",
-          "source": "Current registry/company profile"
+          "claim": "ООО Новый Мир Брн действует; ИНН 2222898533, ОГРН 1222200012858; директор Пеньков Виталий Сергеевич.",
+          "url": "https://companies.rbc.ru/okved/47.91/13/",
+          "source": "Current company/registry profile"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "Выручка за 2025 год 515,732 млн руб.; официальный сайт подтверждает завод полного цикла, более 500 000 установленных окон и крупные B2B-проекты; актуальный профиль показывает 56 сотрудников.",
-          "url": "https://b2b.house/company/OOO-SPK-KRASNOYARSK_640eb136-94bf-4f78-8a01-7eb834b97398/",
-          "source": "Current 2025 financial profile + official company site"
+          "claim": "Актуальная карточка компании показывает выручку 59,109 млн руб.; действующая вакансия подтверждает федеральное оптовое B2B-направление по сырью для чая и СТМ.",
+          "url": "https://companies.rbc.ru/okved/47.91/13/",
+          "source": "Current company profile + current employer vacancy"
         },
         {
           "type": "SIGNAL",
-          "claim": "Актуальный найм руководителя продаж связан с масштабированием бизнеса и систематизацией коммерческого блока; предполагается разделение продаж на B2C, B2B и дилерское направления и усиление управления воронкой.",
-          "url": "https://krasnoyarsk.rabotajob.ru/vakansii/rukovoditel-otdela-prodaz/",
-          "source": "Current 2026 job-board listing"
+          "claim": "13 августа 2026 года ООО Новый Мир Брн ищет руководителя отдела продаж для развития и расширения оптовых продаж по РФ сырья для производства чая/чайных напитков и услуг СТМ.",
+          "url": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
+          "source": "hh.ru current employer vacancy"
         },
         {
           "type": "LPR",
-          "claim": "Кузнецов Дмитрий Николаевич — действующий директор и один из участников ООО СПК Красноярск.",
-          "url": "https://companies.rbc.ru/id/1132468031651-ooo-svetoprozrachnyie-konstruktsii-krasnoyarsk/",
-          "source": "Current registry/company profile"
+          "claim": "Пеньков Виталий Сергеевич — действующий директор ООО Новый Мир Брн.",
+          "url": "https://companies.rbc.ru/okved/47.91/13/",
+          "source": "Current company/registry profile"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт СПК Красноярск публикует +7 (391) 275-99-68 и info@spk-kras.com.",
-          "url": "https://spk-kras.com/",
-          "source": "Official company site"
+          "claim": "hh.ru показывает актуальную вакансию непосредственно от ООО Новый Мир Брн и предоставляет практический employer contact/application route.",
+          "url": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
+          "source": "hh.ru current direct-employer vacancy"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт и политика обработки персональных данных прямо идентифицируют оператора как ООО СПК Красноярск; адрес производства ул. Айвазовского, 37а совпадает с юридическим профилем ООО Светопрозрачные конструкции Красноярск.",
-          "url": "https://spk-kras.com/soglasie",
-          "source": "Official company site"
+          "claim": "Текущая вакансия hh.ru опубликована непосредственно работодателем ООО Новый Мир Брн; название работодателя совпадает с действующим юридическим лицом ИНН 2222898533.",
+          "url": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
+          "source": "hh.ru + current company profile"
         }
       ]
     }
