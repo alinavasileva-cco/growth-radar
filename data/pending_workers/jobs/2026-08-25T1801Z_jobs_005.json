@@ -1,0 +1,121 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-25T18:01:45Z",
+  "source_head_before_worker": "2b783e54e4d72541d4fd016e06a9743a2ec36cbc",
+  "canonical_write": false,
+  "outreach": false,
+  "metrics": {
+    "raw_distinct_identifiable": 44,
+    "fast_gate_passed_for_deep_check": 4,
+    "deep_checked": 4,
+    "qualified": 2,
+    "excluded_after_deep": 2,
+    "notes": "44 distinct identifiable employers/companies were individually surfaced from current HH commercial/sales leadership listings. Obvious recruiters, anonymous employers, public/state/very large unsuitable companies, duplicate employer rows and non-signal roles were rejected at FAST GATE. Four strongest low-overlap candidates received deeper legal/scale/signal/LPR/contact checks. DokaGene was not staged because a sufficiently current direct job signal was not confirmed in this pass. Albes Met was not staged because current scale is 12.312bn RUB revenue and the candidate was not strong enough against the target profile to justify inclusion. No rows were counted merely from a search-result total."
+  },
+  "qualified_companies": [
+    {
+      "brand": "СНК-С / SNK-S",
+      "legal_name": "ООО «СНК-С»",
+      "inn": "7721483847",
+      "ogrn": "1167746381945",
+      "region": "Москва",
+      "segment": "B2B-дистрибуция профессионального AV, интерактивного и телекоммуникационного оборудования",
+      "website": "https://snk-s.ru/",
+      "legal_status": "Действующее частное ООО",
+      "scale": {
+        "revenue_2025_rub": 496018000,
+        "employees": 39,
+        "evidence": [
+          "https://b2b.house/company/OOO-SNK-S_74efc0f1-2a72-4ec5-976e-07cb02326e44/",
+          "https://companies.rbc.ru/id/1167746381945-ooo-snk-s/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-07-04",
+        "summary": "Компания ищет руководителя отдела продаж для ежедневного управления командой из 8 менеджеров, контроля воронки, конверсии, CRM-дисциплины, регламентов, скриптов и бизнес-процессов; в описании прямо указано, что роль должна снять операционную нагрузку с коммерческого директора и вывести отдел продаж на новый уровень эффективности.",
+        "sources": [
+          "https://careerist.ru/vakansii/rukovoditel-otdela-prodazh-snk-s-88464968.html",
+          "https://hh.ru/vacancies/kommercheskij-direktor-b2b/za_sutki"
+        ]
+      },
+      "lpr": {
+        "owner": "Кузько Алла Петровна — 100% учредитель",
+        "ceo": "Бобров Николай Александрович — генеральный директор",
+        "sources": [
+          "https://companies.rbc.ru/id/1167746381945-ooo-snk-s/",
+          "https://b2b.house/company/OOO-SNK-S_74efc0f1-2a72-4ec5-976e-07cb02326e44/"
+        ]
+      },
+      "contact_route": {
+        "phone": ["+7 495 797-97-78", "+7 965 203-29-55"],
+        "email": ["partners@snk-s.ru", "managers@snk-s.ru", "info@snk-s.ru"],
+        "route": "Официальные телефоны и коммерческие адреса компании; можно просить передать предложение генеральному директору/собственнику через коммерческий контур.",
+        "source": "https://snk-s.ru/ru/contacts"
+      },
+      "consulting_hypothesis": "Систематизация B2B-sales: операционная модель отдела, CRM/KPI, воронка и конверсии, регламенты, развитие менеджеров и снижение операционной нагрузки коммерческого директора.",
+      "dedup_keys": {
+        "inn": "7721483847",
+        "ogrn": "1167746381945",
+        "legal_name": "ООО «СНК-С»",
+        "brand_domain": "СНК-С|snk-s.ru"
+      },
+      "dedup_check": "Exact INN and brand search returned no repository matches before staging. Final canonical writer must repeat authoritative physical dedup before integration."
+    },
+    {
+      "brand": "Ариэль Инокс / Ariel Inox",
+      "legal_name": "ООО «АРИЭЛЬ ИНОКС»",
+      "inn": "9702069850",
+      "ogrn": "1247700583052",
+      "region": "Москва / федеральная филиальная сеть",
+      "segment": "Оптовая торговля изделиями из нержавеющей стали и металлопрокатом; B2B",
+      "website": "https://arielinox.ru/",
+      "legal_status": "Действующее частное ООО; категория среднего бизнеса",
+      "scale": {
+        "revenue_2025_rub": 2853260000,
+        "employees_2025": 145,
+        "evidence": [
+          "https://xfirm.ru/company/9702069850",
+          "https://b2b.house/company/OOO-ARIEL-INOKS_f732494e-5845-47b4-816e-28082e56a849/",
+          "https://firmoteka.ru/9702069850"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-24",
+        "summary": "Компания ищет операционного директора как одного из ключевых руководителей и партнёра генерального директора для реализации стратегии развития бизнеса.",
+        "sources": [
+          "https://facancy.ru/vacancies/operatsionnyi-direktor-v-kompaniiu-postavshchik-vysokokachestvennykh-izdelii-iz-nerzhaveiushchei-stali-i-metalloprokata-ariel-inoks",
+          "https://hh.ru/vacancies/kommercheskiy_direktor"
+        ]
+      },
+      "lpr": {
+        "owner_and_ceo": "Брайнис Вадим Владимирович — генеральный директор и учредитель с долей 79.3%",
+        "other_owners": ["Жуков Александр Анатольевич — 18.85%", "Данилова Евгения Юрьевна — 1.85%"],
+        "sources": [
+          "https://www.tbank.ru/business/contractor/legal/1247700583052/",
+          "https://xfirm.ru/company/9702069850",
+          "https://rspm.ru/ru/about/council"
+        ]
+      },
+      "contact_route": {
+        "phone": ["+7 (495) 147-22-00"],
+        "email": ["info@arielinox.ru"],
+        "form": "https://arielinox.ru/contacts/",
+        "route": "Официальный центральный телефон/email и форма компании; генеральный директор одновременно мажоритарный собственник.",
+        "sources": [
+          "https://arielinox.ru/company/rekvizityi.html",
+          "https://arielinox.ru/contacts/"
+        ]
+      },
+      "consulting_hypothesis": "Операционная система быстро выросшего федерального B2B-бизнеса: управленческий контур, процессы между филиалами, KPI/аналитика, коммерческая и операционная синхронизация при масштабировании.",
+      "dedup_keys": {
+        "inn": "9702069850",
+        "ogrn": "1247700583052",
+        "legal_name": "ООО «АРИЭЛЬ ИНОКС»",
+        "brand_domain": "Ариэль Инокс|arielinox.ru"
+      },
+      "dedup_check": "Exact INN and brand search returned no repository matches before staging. Final canonical writer must repeat authoritative physical dedup before integration."
+    }
+  ]
+}
