@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0505,N5K-0505-C01,НПО ЗЕНИТ-СЕВЕР / ЭКОВАРД,7710962693,,Корпоративный маршрут,+7 (499) 130-60-45,Phone,Official corporate,Official company site,https://zenit-sever.ru/,NO,HIGH,2026-08-25,Официальный телефон,N5K-20260825-409,new_5000
+N5K-0505,N5K-0505-C02,НПО ЗЕНИТ-СЕВЕР / ЭКОВАРД,7710962693,,Корпоративный маршрут,info@zenit-sever.ru,Email,Official corporate,Official company site,https://zenit-sever.ru/,NO,HIGH,2026-08-25,Официальный email,N5K-20260825-409,new_5000
+N5K-0505,N5K-0505-C03,НПО ЗЕНИТ-СЕВЕР / ЭКОВАРД,7710962693,,Корпоративный маршрут,https://dreamjob.ru/employers/115567/vakansii/135396647,Employer route,Current vacancy,Fresh job-board signal,https://dreamjob.ru/employers/115567/vakansii/135396647,NO,HIGH,2026-08-25,Актуальный маршрут работодателя,N5K-20260825-409,new_5000

@@ -1,40 +1,38 @@
 {
-  "run_id": "N5K-20260825-408",
+  "run_id": "N5K-20260825-409",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T19:01:00+03:00",
+  "updated_at": "2026-08-25T20:17:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 349,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 352,
-    "current_contactable_count": 352,
-    "progress_added": 352,
-    "remaining": 4648
+    "current_canonical_count": 353,
+    "current_contactable_count": 353,
+    "progress_added": 353,
+    "remaining": 4647
   },
   "funnel": {
-    "discovered": 28,
-    "fast_gate_passed": 8,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "duplicates": 9,
-    "excluded": 16
+    "discovered": 50,
+    "fast_gate_passed": 3,
+    "size_check_passed": 3,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 48
   },
   "qualified_companies": [
-    "ЭКОНИТРИД / Nitrida / Латунинг",
-    "МолоПак / MoloPak",
-    "ГК БЕШТАУ / БЕШТАУ ЭЛЕКТРОНИКС"
+    "НПО ЗЕНИТ-СЕВЕР / ЭКОВАРД"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "352_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "352_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "353_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "353_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
