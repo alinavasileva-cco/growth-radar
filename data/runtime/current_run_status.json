@@ -1,40 +1,38 @@
 {
-  "run_id": "N5K-20260825-402",
+  "run_id": "N5K-20260825-403",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T13:21:00+03:00",
+  "updated_at": "2026-08-25T13:57:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 338,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 340,
-    "current_contactable_count": 340,
-    "progress_added": 340,
-    "remaining": 4660
+    "current_canonical_count": 341,
+    "current_contactable_count": 341,
+    "progress_added": 341,
+    "remaining": 4659
   },
   "funnel": {
-    "discovered": 31,
-    "fast_gate_passed": 7,
-    "size_check_passed": 4,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 8,
-    "excluded": 21
+    "discovered": 17,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 5,
+    "excluded": 11
   },
   "qualified_companies": [
-    "МИАР / M.I.A.R.",
-    "ERA Group / ЭРА"
+    "Челябинский завод Теплоприбор / ООО ЧТП"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "340_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "340_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "341_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "341_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "repair_note": "Corrected stale integrator baseline 294 to physical pre-run baseline 338 after verifying RUN 401 source of truth and successful RUN 402 physical integration."
+  "blocker": null
 }
