@@ -1,40 +1,39 @@
 {
-  "run_id": "N5K-20260825-401",
+  "run_id": "N5K-20260825-402",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T12:58:00+03:00",
+  "updated_at": "2026-08-25T13:21:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 336,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 338,
-    "current_contactable_count": 338,
-    "progress_added": 338,
-    "remaining": 4662
+    "current_canonical_count": 340,
+    "current_contactable_count": 340,
+    "progress_added": 340,
+    "remaining": 4660
   },
   "funnel": {
-    "discovered": 58,
-    "fast_gate_passed": 9,
-    "size_check_passed": 5,
+    "discovered": 31,
+    "fast_gate_passed": 7,
+    "size_check_passed": 4,
     "legal_match_passed": 4,
-    "signal_confirmed": 3,
+    "signal_confirmed": 4,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 17,
-    "excluded": 39
+    "duplicates": 8,
+    "excluded": 21
   },
   "qualified_companies": [
-    "SelSup / СелСап",
-    "Сибэлкон / Sibelkon — промышленная фильтрация"
+    "МИАР / M.I.A.R.",
+    "ERA Group / ЭРА"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "338_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "338_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "340_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "340_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "repair_note": "Corrected stale integrator baseline 294 to physical pre-run baseline 336 after verifying physical leads_master/contactable_master and successful RUN 401 integration."
+  "blocker": null
 }
