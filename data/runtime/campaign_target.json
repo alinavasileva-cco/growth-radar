@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-25T07:18:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-393",
-  "current_run_id": "N5K-20260825-393",
+  "last_completed_run_id": "N5K-20260825-394",
+  "current_run_id": "N5K-20260825-394",
   "last_run_id": "N5K-20260825-394",
   "latest_completed_run": "N5K-20260825-394",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 393 recovery completed with +3 net new after authoritative physical dedup/integration: ИНБРИГ / INBRIG, АЗ АТОМ / AZ ATOM and ПолиАэрПак / PolyAirPack. TGM-Group was removed by the final physical dedup guard as an existing company. Physical canonical/contactable 328/328; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 394 completed: +1 net new company, ТК НИЖТЕКСТИЛЬ / Nizhtextil. Physical canonical/contactable 329/329; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
