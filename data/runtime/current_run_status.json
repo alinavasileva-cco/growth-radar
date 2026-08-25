@@ -1,36 +1,38 @@
 {
-  "run_id": "N5K-20260825-397",
+  "run_id": "N5K-20260825-398",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T10:00:00+05:00",
+  "updated_at": "2026-08-25T11:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 331,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 332,
-    "current_contactable_count": 332,
-    "progress_added": 332,
-    "remaining": 4668
+    "current_canonical_count": 333,
+    "current_contactable_count": 333,
+    "progress_added": 333,
+    "remaining": 4667
   },
   "funnel": {
     "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 18
+    "duplicates": 8,
+    "excluded": 15
   },
-  "qualified_companies": ["СПК Красноярск / Светопрозрачные конструкции Красноярск"],
+  "qualified_companies": [
+    "Новый Мир Брн"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "332_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "332_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "333_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "333_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
