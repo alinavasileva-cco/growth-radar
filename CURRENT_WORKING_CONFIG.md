@@ -1,12 +1,12 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-25T17:17:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260825-406`  
+**Версия:** 2026-08-25T20:17:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260825-409`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **346 / 346**  
+**Физически подтверждённый canonical/contactable:** **353 / 353**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4654**  
+**Осталось:** **4647**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -14,9 +14,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **346 / 346**;
+- physical canonical/contactable count: **353 / 353**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260825-406`;
+- последний завершённый RUN: `N5K-20260825-409`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -42,7 +42,7 @@
 17. После RUN фиксировать общую воронку и фактическую статистику discovery-lanes. Если lane-level метрики не были сохранены, их не реконструировать и не придумывать; исправить инструментацию на следующем RUN.
 18. Не выполнять outreach, письма, отклики, подготовку рассылок или отправку сообщений.
 
-## Последний подробный RUN — N5K-20260825-406
+## Подробный сохранённый RUN — N5K-20260825-406
 
 Baseline перед RUN: **343 / 343**.  
 Фактически индивидуально обработано raw-кандидатов: **25**. Целевые 300–500 в этом RUN не достигнуты и не заявляются.  
@@ -84,19 +84,9 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260825-404`: 342/342, +1, PASS, orphan 0/0.
 - `N5K-20260825-405`: 343/343, +1, PASS, orphan 0/0.
 - `N5K-20260825-406`: 346/346, +3, PASS, orphan 0/0.
-
-
-## Latest verified run N5K-20260825-407
-Canonical/contactable: 348/348. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260825-407
-Canonical/contactable: 349/349. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260825-408
-Canonical/contactable: 352/352. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260825-407`: 349/349, PASS, orphan 0/0.
+- `N5K-20260825-408`: 352/352, +3, PASS, orphan 0/0.
+- `N5K-20260825-409`: 353/353, +1, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260825-409
 Canonical/contactable: 353/353. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
