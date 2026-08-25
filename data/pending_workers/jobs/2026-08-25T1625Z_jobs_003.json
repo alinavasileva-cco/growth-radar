@@ -1,0 +1,53 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-25T16:25:00Z",
+  "source_head": "7348b5ce806dbed916e10073f924c6d7154be387",
+  "canonical_state_at_start": {"run_id":"N5K-20260825-407","canonical":349,"contactable":349,"integrity":"PASS","orphan_contacts":0,"orphan_evidence":0},
+  "metrics": {"raw_surfaced": 40, "qualified": 1, "note":"40 distinct job-board/company candidates were surfaced in the discovery pass; only candidates with fully verified LEGAL+SIZE+SIGNAL+LPR+CONTACT are staged. No canonical writes."},
+  "qualified_companies": [
+    {
+      "Brand": "Vertex / Вертекс",
+      "Legal Name": "ООО ВЕРТЕКС",
+      "INN": "5258150049",
+      "OGRN/OGRNIP": "1215200002456",
+      "Legal Status": "Действует",
+      "Region": "Нижегородская область",
+      "City": "Нижний Новгород",
+      "Segment": "FMCG; производство бытовой химии, косметики, средств гигиены и товаров для животных; контрактное производство",
+      "Website": "https://vertex-pro.ru/",
+      "Revenue/Scale": "Выручка 4,35 млрд руб. за 2025 год; официальный сайт описывает Vertex как крупную быстрорастущую российскую производственную компанию и сообщает об охвате брендов более 12 млн человек; отраслевой профиль указывает 365 сотрудников за 2025 год.",
+      "Signal Level": "S1",
+      "Signal Summary": "23 августа 2026 работодатель Вертекс разместил вакансию директора по продажам в федеральные и локальные сети. В вакансии указаны выручка 2025 года 5 млрд руб., цель 2026 года 10+ млрд руб. и амбиция войти в ТОП-3 FMCG-производителей non-food; роль отвечает за развитие продаж. Это прямой свежий коммерческий growth-сигнал.",
+      "Signal Date": "2026-08-23",
+      "Signal Source": "https://nesiditsa.ru/vacancy/135728887",
+      "Owner": "Блехерман Илья Владимирович 37.5%; Бородин Дмитрий Эдуардович 37.5%; Гуданов Георгий Валерьевич 25%",
+      "CEO": "Гуданов Георгий Валерьевич",
+      "LPR": "Гуданов Георгий Валерьевич",
+      "LPR Role": "Директор, совладелец 25% и основатель Vertex по официальному сайту",
+      "Primary Phone": "+7 (800) 707-42-14",
+      "Primary Email": "info@vertex-pro.ru",
+      "HH Contact": "Current direct-employer Director of Sales vacancy route (vacancy mirror ID 135728887)",
+      "Contact Form": "https://vertex-pro.ru/",
+      "Contact Type": "Official corporate phone + official general/sales email + website form + current employer vacancy route",
+      "Contact Source": "Official vertex-pro.ru contacts and current August 2026 vacancy",
+      "Number Of Contacts Found": 4,
+      "Consulting Hypothesis": "Коммерческая система роста FMCG x2: федеральные и локальные сети, каналовая стратегия, P&L/маржинальность, CRM/KPI, ассортиментная архитектура и масштабирование sales-команды.",
+      "dedup_keys": {"inn":"5258150049","ogrn":"1215200002456","legal_name":"ООО ВЕРТЕКС","brand_domain":"Vertex|vertex-pro.ru"},
+      "contacts": [
+        {"value":"+7 (800) 707-42-14","channel":"Phone","type":"Official corporate","source":"Official company website","url":"https://vertex-pro.ru/","is_lpr":false},
+        {"value":"info@vertex-pro.ru","channel":"Email","type":"Official general","source":"Official company website","url":"https://vertex-pro.ru/","is_lpr":false},
+        {"value":"sales@vertex-pro.ru","channel":"Email","type":"Official sales","source":"Official company website","url":"https://vertex-pro.ru/","is_lpr":false},
+        {"value":"https://vertex-pro.ru/","channel":"Form","type":"Official contact form","source":"Official company website","url":"https://vertex-pro.ru/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL_LPR","claim":"ООО ВЕРТЕКС действует; ИНН 5258150049, ОГРН 1215200002456; директор Гуданов Георгий Валерьевич; учредители Блехерман 37.5%, Бородин 37.5%, Гуданов 25%.","url":"https://checko.ru/company/verteks-1215200002456","source":"Current company/registry profile"},
+        {"type":"SCALE_CURRENT","claim":"Финансовая отчетность за 2025 год: выручка 4,35 млрд руб.; отраслевой профиль указывает 365 сотрудников за 2025 год.","url":"https://xfirm.ru/company/5258150049","source":"Current company financial profile"},
+        {"type":"SIGNAL","claim":"23.08.2026 Вертекс ищет директора по продажам в федеральные и локальные сети; вакансия заявляет рост компании, выручку 2025 5 млрд руб. и цель 2026 10+ млрд руб.","url":"https://nesiditsa.ru/vacancy/135728887","source":"Current job-board vacancy mirror"},
+        {"type":"BRAND_LPR","claim":"Официальный сайт называет Vertex российской производственной FMCG-компанией, основанной Георгием Гудановым в 2021 году.","url":"https://vertex-pro.ru/","source":"Official company website"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует телефон 8 (800) 707-42-14, info@vertex-pro.ru, sales@vertex-pro.ru и форму связи.","url":"https://vertex-pro.ru/","source":"Official company website"}
+      ]
+    }
+  ],
+  "canonical_writes": false,
+  "outreach": false
+}
