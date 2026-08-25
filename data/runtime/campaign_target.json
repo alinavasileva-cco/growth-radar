@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-26T01:15:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-413",
-  "current_run_id": "N5K-20260825-413",
+  "last_completed_run_id": "N5K-20260826-414",
+  "current_run_id": "N5K-20260826-414",
   "last_run_id": "N5K-20260826-414",
   "latest_completed_run": "N5K-20260826-414",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 413 completed after physical integration and metadata REPAIR: +1 net new company (РСТ Энерго). Physical canonical/contactable 359/359; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 414 completed after physical integration and metadata REPAIR: +3 net new companies. Physical canonical/contactable 362/362; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
