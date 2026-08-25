@@ -1,94 +1,112 @@
 {
-  "run_id": "N5K-20260825-398",
-  "updated_at": "2026-08-25T11:00:00+05:00",
+  "run_id": "N5K-20260825-399",
+  "updated_at": "2026-08-25T10:00:00+03:00",
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 5,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
+    "discovered": 64,
+    "fast_gate_passed": 9,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 8,
-    "excluded": 15
+    "duplicates": 18,
+    "excluded": 45
   },
-  "notes": "RUN 398 starts from verified RUN 397 baseline 332/332 PASS orphan 0/0. Fresh August 2026 job-board discovery and current company/legal sources were screened. Known repeats (including Хоупак, IBMM, Сталь-Инвест, Корос Груп, Атлант Трейлерс and other already integrated companies), recruiters/anonymous employers and candidates with weak or ambiguous brand→legal/scale evidence were removed before deep-check. ООО Новый Мир Брн passed current legal status, 2025 revenue scale, fresh direct-employer B2B sales signal, current director/LPR and practical HH employer route. No owner fact is asserted because current public sources checked in this run did not reliably expose ownership; qualification relies on the confirmed director as LPR. GitHub indexed search by INN returned no match before staging; physical integration guard remains final dedup source. No outreach.",
+  "notes": "RUN 399 starts from freshly verified physical RUN 398 state 333/333, integrity PASS, orphan 0/0, HEAD a4fa3f9fad3b7439d33fac07ae73c4d737d89d71. Discovery used multiple current August-2026 job-board, company-site, industry and growth-signal lanes. 64 distinct company/brand candidates were individually screened at FAST GATE; known Growth Radar repeats and weak/ambiguous brand-to-legal candidates were rejected before deep-check. Alpine Floor passed current legal status, current brand-to-legal evidence, current operational scale, fresh August 2026 sales expansion signal, current owner/CEO and official B2B contact route. GitHub indexed search by INN 9723041076 returned no match before staging; physical integration guard remains final dedup source. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0485",
-      "Brand": "Новый Мир Брн",
-      "Legal Name": "ООО НОВЫЙ МИР БРН",
-      "INN": "2222898533",
-      "OGRN/OGRNIP": "1222200012858",
-      "Region": "Алтайский край",
-      "City": "Барнаул",
-      "Segment": "Оптовые B2B-продажи сырья для производства чая и чайных напитков; СТМ",
-      "Website": "",
-      "Revenue/Scale": "Действующее ООО; выручка 59,109 млн руб. по актуальной карточке компании. Свежая вакансия подтверждает действующее оптовое B2B-направление по РФ и услуги СТМ.",
+      "Lead ID": "N5K-0486",
+      "Brand": "Alpine Floor / Alpine Group",
+      "Legal Name": "ООО КОМПЛЕКТСТРОЙ",
+      "INN": "9723041076",
+      "OGRN/OGRNIP": "1187746066331",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Напольные покрытия; B2B дилерская и партнерская сеть; торгово-производственная группа",
+      "Website": "https://alpinefloor.su/",
+      "Revenue/Scale": "Действующее частное ООО на 2026 год; официальный и текущий employer-профиль описывает Alpine Group как торгово-производственную компанию из топ-3 производителей напольных покрытий в РФ. ООО Комплектстрой владеет товарным знаком ALPINE FLOOR и рядом связанных марок; юридический профиль подтверждает крупный оптовый контур. Для решения не используется устаревшая численность как основной scale-факт.",
       "Signal Level": "S1",
-      "Signal Summary": "В актуальной вакансии руководителя отдела продаж компания ставит задачи развития и расширения оптовых продаж по РФ по сырью для производства чая и чайных напитков и услугам СТМ; требуется системное управление B2B-продажами.",
-      "Signal Date": "2026-08-13",
-      "Signal Source": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
-      "Owner": "Не подтвержден текущими публичными источниками; не используется в решении",
-      "CEO": "Пеньков Виталий Сергеевич",
-      "LPR": "Пеньков Виталий Сергеевич",
-      "LPR Role": "Директор",
-      "Primary Phone": "",
-      "Primary Email": "",
-      "HH Contact": "Current direct-employer ООО Новый Мир Брн vacancy route on hh.ru",
-      "Contact Form": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
-      "Contact Type": "Current direct-employer vacancy route",
-      "Contact Source": "hh.ru current employer vacancy + current registry/company profiles",
-      "Number Of Contacts Found": 1,
-      "Consulting Hypothesis": "Систематизация и масштабирование федеральных B2B-продаж сырья и СТМ: сегментация клиентской базы, управляемая воронка, KPI, прогнозирование и развитие региональных каналов.",
+      "Signal Summary": "13-14 августа 2026 года Alpine Floor ищет руководителя отдела продаж; параллельно в июле 2026 открыта роль руководителя развития партнерской монобрендовой сети. Сигнал указывает на системное усиление продаж, дилерской/франчайзинговой сети и коммерческой структуры.",
+      "Signal Date": "2026-08-14",
+      "Signal Source": "https://www.rabota-ipoisk.ru/работа-в-москва/компания-alpine-floor/м-павелецкая-павелецкая-серпуховская",
+      "Owner": "Баженов Никита Евгеньевич",
+      "CEO": "Баженов Никита Евгеньевич",
+      "LPR": "Баженов Никита Евгеньевич",
+      "LPR Role": "Генеральный директор и единственный учредитель",
+      "Primary Phone": "8 (800) 700-28-73",
+      "Primary Email": "Information@alpinefloor.ru",
+      "HH Contact": "Current Alpine Floor employer vacancy route",
+      "Contact Form": "https://alpinefloor.su/cooperation/",
+      "Contact Type": "Official B2B partnership route + employer vacancy route",
+      "Contact Source": "Official Alpine Floor website + current employer vacancy",
+      "Number Of Contacts Found": 3,
+      "Consulting Hypothesis": "Системное масштабирование B2B-дилерской и партнерской сети: сегментация каналов, управление P&L по направлениям, единая воронка, KPI и развитие региональной/монобрендовой сети.",
       "contacts": [
         {
-          "value": "Current direct-employer ООО Новый Мир Брн vacancy route on hh.ru",
-          "channel": "Vacancy",
-          "type": "Employer route",
-          "source": "hh.ru current employer vacancy",
-          "url": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
+          "value": "8 (800) 700-28-73",
+          "channel": "Phone",
+          "type": "Official corporate/B2B",
+          "source": "Official Alpine Floor website",
+          "url": "https://alpinefloor.su/cooperation/",
           "is_lpr": false,
-          "notes": "Практический маршрут прямого работодателя; телефон/email не выдумывались"
+          "notes": "Официальный корпоративный маршрут"
+        },
+        {
+          "value": "Information@alpinefloor.ru",
+          "channel": "Email",
+          "type": "Official corporate/B2B",
+          "source": "Official Alpine Floor website",
+          "url": "https://alpinefloor.su/cooperation/",
+          "is_lpr": false,
+          "notes": "Официальный email для сотрудничества"
+        },
+        {
+          "value": "https://alpinefloor.su/cooperation/",
+          "channel": "Web form",
+          "type": "Partnership form",
+          "source": "Official Alpine Floor website",
+          "url": "https://alpinefloor.su/cooperation/",
+          "is_lpr": false,
+          "notes": "Практический B2B маршрут"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО Новый Мир Брн действует; ИНН 2222898533, ОГРН 1222200012858; директор Пеньков Виталий Сергеевич.",
-          "url": "https://companies.rbc.ru/okved/47.91/13/",
-          "source": "Current company/registry profile"
+          "claim": "ООО Комплектстрой действует; ИНН 9723041076, ОГРН 1187746066331; генеральный директор и единственный учредитель Баженов Никита Евгеньевич.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1187746066331/",
+          "source": "Current company profile"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "Актуальная карточка компании показывает выручку 59,109 млн руб.; действующая вакансия подтверждает федеральное оптовое B2B-направление по сырью для чая и СТМ.",
-          "url": "https://companies.rbc.ru/okved/47.91/13/",
-          "source": "Current company profile + current employer vacancy"
+          "claim": "Текущий employer-профиль Alpine Floor описывает Alpine Group как российскую торгово-производственную компанию и топ-3 производителя напольных покрытий; официальный сайт показывает федеральную дилерскую/партнерскую инфраструктуру.",
+          "url": "https://www.rabota-ipoisk.ru/работа-в-москва/компания-alpine-floor/м-павелецкая-павелецкая-серпуховская",
+          "source": "Current employer listing + official company website"
         },
         {
           "type": "SIGNAL",
-          "claim": "13 августа 2026 года ООО Новый Мир Брн ищет руководителя отдела продаж для развития и расширения оптовых продаж по РФ сырья для производства чая/чайных напитков и услуг СТМ.",
-          "url": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
-          "source": "hh.ru current employer vacancy"
+          "claim": "13-14 августа 2026 года Alpine Floor публикует вакансию руководителя отдела продаж; 23 июля 2026 года опубликована роль руководителя развития партнерской монобрендовой сети.",
+          "url": "https://www.rabota-ipoisk.ru/работа-в-москва/компания-alpine-floor/м-павелецкая-павелецкая-серпуховская",
+          "source": "Current job-board listings"
         },
         {
           "type": "LPR",
-          "claim": "Пеньков Виталий Сергеевич — действующий директор ООО Новый Мир Брн.",
-          "url": "https://companies.rbc.ru/okved/47.91/13/",
-          "source": "Current company/registry profile"
+          "claim": "Баженов Никита Евгеньевич является действующим генеральным директором и единственным учредителем ООО Комплектстрой.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1187746066331/",
+          "source": "Current company profile"
         },
         {
           "type": "CONTACT",
-          "claim": "hh.ru показывает актуальную вакансию непосредственно от ООО Новый Мир Брн и предоставляет практический employer contact/application route.",
-          "url": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
-          "source": "hh.ru current direct-employer vacancy"
+          "claim": "Официальный Alpine Floor публикует корпоративный телефон 8 (800) 700-28-73, Information@alpinefloor.ru и форму заявки на сотрудничество.",
+          "url": "https://alpinefloor.su/cooperation/",
+          "source": "Official Alpine Floor website"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Текущая вакансия hh.ru опубликована непосредственно работодателем ООО Новый Мир Брн; название работодателя совпадает с действующим юридическим лицом ИНН 2222898533.",
-          "url": "https://barnaul.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/udalennaya_rabota",
-          "source": "hh.ru + current company profile"
+          "claim": "ООО Комплектстрой является правообладателем товарного знака ALPINE FLOOR; свежие сертификаты Alpine Floor также указывают ООО Комплектстрой, ИНН 9723041076, как заявителя.",
+          "url": "https://companies.rbc.ru/trademark/765199/alpine-floor/",
+          "source": "Trademark registry profile + current certificates"
         }
       ]
     }
