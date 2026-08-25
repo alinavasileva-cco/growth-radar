@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-25T11:05:00+03:00",
+  "updated_at": "2026-08-25T11:06:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-399",
-  "current_run_id": "N5K-20260825-399",
+  "last_completed_run_id": "N5K-20260825-400",
+  "current_run_id": "N5K-20260825-400",
   "last_run_id": "N5K-20260825-400",
   "latest_completed_run": "N5K-20260825-400",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 399 completed: +1 net new company, НЗВИ / Некрасовский Завод Вентиляционных Изделий. Alpine Floor was rejected by physical dedup as an existing company. Physical canonical/contactable 334/334; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 400 completed: +2 net new companies, LUMIXON / Люмиксон and Компания Чебо / New Farm. Physical canonical/contactable 336/336; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
