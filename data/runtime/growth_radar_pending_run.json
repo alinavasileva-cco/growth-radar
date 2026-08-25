@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260825-394",
-  "updated_at": "2026-08-25T07:18:00+05:00",
+  "run_id": "N5K-20260825-395",
+  "updated_at": "2026-08-25T08:20:00+05:00",
   "funnel": {
-    "discovered": 30,
+    "discovered": 24,
     "fast_gate_passed": 6,
     "size_check_passed": 3,
     "legal_match_passed": 2,
@@ -10,63 +10,63 @@
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 6,
-    "excluded": 23
+    "duplicates": 5,
+    "excluded": 18
   },
-  "notes": "RUN 394 starts from verified RUN 393 baseline 328/328 PASS orphan 0/0. Fresh August 2026 job-board and company/registry streams were screened. Known repeats, recruiters, insufficient current scale, ambiguous brand-to-legal matches and weak/non-current signals were removed at FAST GATE. TK NIZHTEKSTIL passed current legal status, current 2025 scale, fresh B2B sales-system scaling signal, owner/LPR and practical contact-route gates. GitHub code search by INN returned no indexed match before staging; authoritative physical integration guard remains final dedup source. No outreach.",
+  "notes": "RUN 395 starts from verified RUN 394 baseline 329/329 PASS orphan 0/0. Fresh August 2026 HH/job-board, registry and official-company streams were screened. Known repeats, recruiters, insufficient current scale, ambiguous brand-to-legal matches and weak/non-current signals were removed at FAST GATE. INSTART passed current legal status, current 2025 scale, current B2B sales-system signal, LPR and official contact-route gates. GitHub code search by INN and INSTART returned no indexed match before staging; authoritative physical integration guard remains final dedup source. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0481",
-      "Brand": "ТК НИЖТЕКСТИЛЬ / Nizhtextil",
-      "Legal Name": "ООО ТК НИЖТЕКСТИЛЬ",
-      "INN": "5257206972",
-      "OGRN/OGRNIP": "1225200006745",
-      "Region": "Нижегородская область",
-      "City": "Нижний Новгород",
-      "Segment": "Производство и оптовые B2B-продажи средств индивидуальной защиты рук / трикотажных перчаток",
-      "Website": "https://www.nizhtextilnn.ru/",
-      "Revenue/Scale": "Действующее ООО; выручка 180,340 млн руб. за 2025 год; 49 сотрудников по свежим данным ФНС; собственное производство, склад, доставка по РФ и выпуск нескольких миллионов пар перчаток в месяц.",
+      "Lead ID": "N5K-0482",
+      "Brand": "INSTART / Инстарт",
+      "Legal Name": "ООО ИНСТАРТ",
+      "INN": "7811609195",
+      "OGRN/OGRNIP": "1167847209200",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "Производство и B2B-продажи преобразователей частоты, устройств плавного пуска и приводной техники",
+      "Website": "https://instart-info.ru/",
+      "Revenue/Scale": "Действующее ООО; выручка 1 068,599 млн руб. за 2025 год; 53 сотрудника по свежему профилю; собственная разработка и производство приводной техники, 13+ лет на рынке.",
       "Signal Level": "S1",
-      "Signal Summary": "В августе 2026 ТК НИЖТЕКСТИЛЬ ищет руководителя активных B2B-продаж для построения, развития и масштабирования системы продаж производственной компании и расширения отдела продаж.",
+      "Signal Summary": "В августе 2026 INSTART ведёт поиск руководителя отдела продаж B2B: выполнение плана, прогнозирование продаж, декомпозиция целей и управление B2B-командой; вакансия размещена прямым работодателем. Компания продолжает обновлять продуктовую линейку и производственный контур.",
       "Signal Date": "2026-08-25",
-      "Signal Source": "https://www.notexistskhtjsru.jobvk.com/nighniy-novgorod/gostinitsa-volna-",
-      "Owner": "Хачатрян Нарек Зограбович",
-      "CEO": "Хачатрян Нарек Зограбович",
-      "LPR": "Хачатрян Нарек Зограбович",
-      "LPR Role": "Директор и единственный учредитель",
-      "Primary Phone": "8 (800) 550-78-54",
-      "Primary Email": "nizhtekstil@yandex.ru",
-      "HH Contact": "Current direct-employer Head of Active B2B Sales vacancy route",
-      "Contact Form": "https://www.nizhtextilnn.ru/rekvizity.php",
+      "Signal Source": "https://spb.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
+      "Owner": "Участники ООО ИНСТАРТ по актуальным данным ЕГРЮЛ; Павлова Вера Александровна входит в состав участников",
+      "CEO": "Павлова Вера Александровна",
+      "LPR": "Павлова Вера Александровна",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "8 800 222 00 21",
+      "Primary Email": "info@instart-info.ru",
+      "HH Contact": "Current direct-employer B2B Head of Sales vacancy route",
+      "Contact Form": "https://instart-info.ru/",
       "Contact Type": "Official corporate phone + email + current employer vacancy route",
-      "Contact Source": "Official Nizhtextil site + current August 2026 vacancy listing + current registry/financial profile",
+      "Contact Source": "Official INSTART site + current August 2026 HH listing + current registry/financial profiles",
       "Number Of Contacts Found": 3,
-      "Consulting Hypothesis": "Масштабирование производственного B2B-sales: структура отдела, KPI и CRM-воронка, активные продажи по РФ, развитие партнерской сети, планирование маржи и повышение предсказуемости продаж.",
+      "Consulting Hypothesis": "Масштабирование промышленного B2B-sales: управление планом и прогнозом, декомпозиция целей, CRM-воронка, развитие дилерской/партнёрской сети и повышение предсказуемости продаж.",
       "contacts": [
         {
-          "value": "8 (800) 550-78-54",
+          "value": "8 800 222 00 21",
           "channel": "Phone",
           "type": "Corporate phone",
-          "source": "Official Nizhtextil site",
-          "url": "https://www.nizhtextilnn.ru/rekvizity.php",
+          "source": "Official INSTART site",
+          "url": "https://instart-info.ru/",
           "is_lpr": false,
           "notes": "Официальный федеральный телефон"
         },
         {
-          "value": "nizhtekstil@yandex.ru",
+          "value": "info@instart-info.ru",
           "channel": "Email",
           "type": "Corporate email",
-          "source": "Official Nizhtextil site",
-          "url": "https://www.nizhtextilnn.ru/rekvizity.php",
+          "source": "Official INSTART site",
+          "url": "https://instart-info.ru/",
           "is_lpr": false,
           "notes": "Официальный корпоративный email"
         },
         {
-          "value": "Current direct-employer Head of Active B2B Sales vacancy route",
+          "value": "Current direct-employer B2B Head of Sales vacancy route",
           "channel": "Vacancy",
           "type": "Employer route",
-          "source": "Current August 2026 job-board listing",
-          "url": "https://www.notexistskhtjsru.jobvk.com/nighniy-novgorod/gostinitsa-volna-",
+          "source": "Current August 2026 HH listing",
+          "url": "https://spb.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
           "is_lpr": false,
           "notes": "Свежий маршрут прямого работодателя"
         }
@@ -74,39 +74,39 @@
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО ТК НИЖТЕКСТИЛЬ действует; ИНН 5257206972, ОГРН 1225200006745; директор и единственный учредитель — Хачатрян Нарек Зограбович.",
-          "url": "https://companies.rbc.ru/id/1225200006745-ooo-torgovaya-kompaniya-nizhtekstil/",
+          "claim": "ООО ИНСТАРТ действует; ИНН 7811609195, ОГРН 1167847209200; генеральный директор — Павлова Вера Александровна.",
+          "url": "https://companies.rbc.ru/id/1167847209200-ooo-instart/",
           "source": "Current registry/company profile"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "За 2025 год выручка 180,340 млн руб.; ССЧ 49. Официальный сайт подтверждает собственное производство, склад, доставку по РФ и выпуск нескольких миллионов пар перчаток в месяц.",
-          "url": "https://www.nizhtextilnn.ru/about/",
+          "claim": "За 2025 год выручка 1 068,599 млн руб.; свежий профиль указывает 53 сотрудника. Официальный сайт подтверждает собственную разработку и производство приводной техники.",
+          "url": "https://basis.myseldon.com/ru/company/1167847209200",
           "source": "Current 2025 financial profile + official site"
         },
         {
           "type": "SIGNAL",
-          "claim": "В августе 2026 ТК НИЖТЕКСТИЛЬ ищет руководителя активных B2B-продаж для построения, развития и масштабирования системы продаж производственной компании.",
-          "url": "https://www.notexistskhtjsru.jobvk.com/nighniy-novgorod/gostinitsa-volna-",
-          "source": "Current August 2026 vacancy listing"
+          "claim": "В августе 2026 INSTART размещает вакансию руководителя отдела продаж B2B с ответственностью за план продаж, прогнозирование, декомпозицию целей и управление B2B-продажами.",
+          "url": "https://spb.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
+          "source": "Current August 2026 HH listing"
         },
         {
           "type": "LPR",
-          "claim": "Хачатрян Нарек Зограбович — действующий директор и единственный учредитель ООО ТК НИЖТЕКСТИЛЬ.",
-          "url": "https://companium.ru/id/1225200006745-tk-nizhtekstil",
-          "source": "Current company profile"
+          "claim": "Павлова Вера Александровна — действующий генеральный директор ООО ИНСТАРТ.",
+          "url": "https://xfirm.ru/company/7811609195",
+          "source": "Current registry profile"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт публикует 8 (800) 550-78-54, +7 (831) 269-67-69 и nizhtekstil@yandex.ru.",
-          "url": "https://www.nizhtextilnn.ru/rekvizity.php",
-          "source": "Official Nizhtextil site"
+          "claim": "Официальный сайт публикует 8 800 222 00 21 и info@instart-info.ru.",
+          "url": "https://instart-info.ru/",
+          "source": "Official INSTART site"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальный сайт прямо указывает ООО ТК НИЖТЕКСТИЛЬ, ИНН 5257206972, ОГРН 1225200006745.",
-          "url": "https://www.nizhtextilnn.ru/rekvizity.php",
-          "source": "Official Nizhtextil site"
+          "claim": "Официальная страница реквизитов прямо указывает ООО Инстарт, ИНН 7811609195, ОГРН 1167847209200 и тот же адрес компании.",
+          "url": "https://instart-info.ru/o-kompanii/rekvizity/",
+          "source": "Official INSTART site"
         }
       ]
     }
