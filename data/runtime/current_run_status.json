@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260825-404",
+  "run_id": "N5K-20260825-405",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T14:58:00+03:00",
+  "updated_at": "2026-08-25T16:03:58+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 341,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 342,
-    "current_contactable_count": 342,
-    "progress_added": 342,
-    "remaining": 4658
+    "current_canonical_count": 343,
+    "current_contactable_count": 343,
+    "progress_added": 343,
+    "remaining": 4657
   },
   "funnel": {
-    "discovered": 22,
-    "fast_gate_passed": 5,
+    "discovered": 10,
+    "fast_gate_passed": 3,
     "size_check_passed": 2,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 6,
-    "excluded": 15
+    "duplicates": 2,
+    "excluded": 7
   },
   "qualified_companies": [
-    "Татпромстан / TATPROMSTAN"
+    "ФОРШ / FORSH"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "342_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "342_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "343_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "343_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

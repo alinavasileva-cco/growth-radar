@@ -1,0 +1,5 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0495,N5K-0495-C01,ФОРШ / FORSH,7328015755,,Корпоративный маршрут,+7 (8422) 54-44-44,Phone,Official reception,Official company site,https://forsh.ru/,NO,HIGH,2026-08-25,Официальная приемная,N5K-20260825-405,new_5000
+N5K-0495,N5K-0495-C02,ФОРШ / FORSH,7328015755,,Корпоративный маршрут,+7 (8422) 54-56-76,Phone,Marketing/Sales,Official company site,https://forsh.ru/,NO,HIGH,2026-08-25,Официальный телефон маркетинга/продаж,N5K-20260825-405,new_5000
+N5K-0495,N5K-0495-C03,ФОРШ / FORSH,7328015755,,Корпоративный маршрут,forsh@mv.ru,Email,Official corporate,Official company site,https://forsh.ru/,NO,HIGH,2026-08-25,Официальный корпоративный email,N5K-20260825-405,new_5000
+N5K-0495,N5K-0495-C04,ФОРШ / FORSH,7328015755,,Корпоративный маршрут,forsh@forsh.e4u.ru,Email,Marketing/Sales,Official company site,https://forsh.ru/,NO,HIGH,2026-08-25,Официальный email отдела продаж/маркетинга,N5K-20260825-405,new_5000
