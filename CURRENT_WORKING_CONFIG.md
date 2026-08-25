@@ -1,12 +1,12 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-25T21:59:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260825-411`  
+**Версия:** 2026-08-25T22:59:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260825-412`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **356 / 356**  
+**Физически подтверждённый canonical/contactable:** **358 / 358**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4644**  
+**Осталось:** **4642**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -14,9 +14,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **356 / 356**;
+- physical canonical/contactable count: **358 / 358**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260825-411`;
+- последний завершённый RUN: `N5K-20260825-412`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -84,15 +84,12 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260825-404`: 342/342, +1, PASS, orphan 0/0.
 - `N5K-20260825-405`: 343/343, +1, PASS, orphan 0/0.
 - `N5K-20260825-406`: 346/346, +3, PASS, orphan 0/0.
-- `N5K-20260825-407`: 349/349, PASS, orphan 0/0.
+- `N5K-20260825-407`: 349/349, +3, PASS, orphan 0/0.
 - `N5K-20260825-408`: 352/352, +3, PASS, orphan 0/0.
 - `N5K-20260825-409`: 353/353, +1, PASS, orphan 0/0.
 - `N5K-20260825-410`: 354/354, +1, PASS, orphan 0/0.
 - `N5K-20260825-411`: 356/356, +2, PASS, orphan 0/0.
-
-## Latest verified run N5K-20260825-411
-Canonical/contactable: 356/356. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260825-412`: 358/358, +2, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260825-412
 Canonical/contactable: 358/358. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
