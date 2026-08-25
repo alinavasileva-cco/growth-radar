@@ -5,7 +5,7 @@
   "updated_at": "2026-08-25T10:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 331,
     "target_count": 5000,
     "current_canonical_count": 332,
     "current_contactable_count": 332,
@@ -24,9 +24,7 @@
     "duplicates": 5,
     "excluded": 18
   },
-  "qualified_companies": [
-    "СПК Красноярск / Светопрозрачные конструкции Красноярск"
-  ],
+  "qualified_companies": ["СПК Красноярск / Светопрозрачные конструкции Красноярск"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
