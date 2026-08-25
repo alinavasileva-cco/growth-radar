@@ -5,7 +5,7 @@
   "updated_at": "2026-08-25T18:03:24+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 346,
     "target_count": 5000,
     "current_canonical_count": 349,
     "current_contactable_count": 349,
@@ -20,11 +20,13 @@
     "signal_confirmed": 3,
     "lpr_identified": 3,
     "contact_route_found": 3,
-    "qualified": 1,
-    "duplicates": 20,
+    "qualified": 3,
+    "duplicates": 18,
     "excluded": 34
   },
   "qualified_companies": [
+    "Фабрика Вентиляции ГалВент / GalVent",
+    "Hobby World / Мир Хобби-Производство",
     "GARDISTA / Гардиcта"
   ],
   "integrity_status": "PASS",
