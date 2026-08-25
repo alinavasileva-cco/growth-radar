@@ -1,34 +1,70 @@
 {
-  "run_id": "N5K-20260825-409",
-  "updated_at": "2026-08-25T20:17:00+03:00",
-  "funnel": {"discovered":50,"fast_gate_passed":3,"size_check_passed":3,"legal_match_passed":1,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":1,"duplicates":1,"excluded":48},
+  "run_id": "N5K-20260825-410",
+  "updated_at": "2026-08-25T20:58:00+03:00",
+  "funnel": {
+    "discovered": 8,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 3,
+    "excluded": 4
+  },
   "lane_metrics": [
-    {"lane":"HH/current job-board mirrors","raw":50,"duplicates_or_early_rejects":49,"qualified":1},
+    {"lane":"HH/current job-board mirrors","raw":5,"duplicates_or_early_rejects":5,"qualified":0},
     {"lane":"other job boards","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
     {"lane":"industry catalogs/exhibitor lists","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
-    {"lane":"regional business catalogs/news","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
-    {"lane":"growth/expansion/investment news","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
+    {"lane":"regional business catalogs/news","raw":1,"duplicates_or_early_rejects":0,"qualified":1},
+    {"lane":"growth/expansion/investment news","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"official company sites/news","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
     {"lane":"Telegram/VK/YouTube/owner publications","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
     {"lane":"ratings/awards/clubs","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
     {"lane":"franchise/dealer catalogs","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
-    {"lane":"segment expansion search","raw":0,"duplicates_or_early_rejects":0,"qualified":0}
+    {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
   ],
-  "notes":"Fresh source-of-truth before RUN 409: RUN 408, physical master/contactable 352/352, integrity PASS, orphan 0/0. A jobs worker then reviewed 50 distinct company candidates at HEAD 2b1f7354b78f37aed021dbf5f0fe4e6981919b23. Milerd Electronics was a confirmed canonical duplicate. NPO DIODIS and Techno-Service were deep-rejected because exact current brand-to-legal mapping could not be established without ambiguity. Only NPO Zenit-Sever passed all required gates. Nine additional discovery categories were probed in the same execution window, but no additional companies from those searches were counted as audited raw because they were not individually fast-gated. No outreach.",
-  "qualified_companies": [{
-    "Lead ID":"N5K-0505","Brand":"НПО ЗЕНИТ-СЕВЕР / ЭКОВАРД","Legal Name":"ООО НПО «ЗЕНИТ-СЕВЕР»","INN":"7710962693","OGRN/OGRNIP":"1147746570927","Region":"Москва","City":"Москва","Segment":"B2B инженерное оборудование / очистные сооружения / насосные станции / собственное производство","Website":"https://zenit-sever.ru/","Revenue/Scale":"Действующее ООО; выручка 384,39 млн руб. за 2025 год; официальный сайт указывает суммарные производственные мощности более 27 000 кв. м и инженерно-технологический штат 27 человек.","Signal Level":"S1","Signal Summary":"17 августа 2026 опубликована свежая вакансия руководителя отдела продаж инженерного оборудования B2B: задача самостоятельно организовать работу отдела для выполнения плана продаж; работодатель также заявляет быстрый рост и цель масштабирования бизнеса.","Signal Date":"2026-08-17","Signal Source":"https://dreamjob.ru/employers/115567/vakansii/135396647","Owner":"Михайлов Антон Игоревич — 33,37%; Фролов Александр Александрович — 33,33%; Слюньков Евгений Олегович — 33,30%","CEO":"Михайлов Антон Игоревич","LPR":"Михайлов Антон Игоревич","LPR Role":"Генеральный директор и совладелец","Primary Phone":"+7 (499) 130-60-45","Primary Email":"info@zenit-sever.ru","HH Contact":"https://dreamjob.ru/employers/115567/vakansii/135396647","Contact Form":"https://zenit-sever.ru/","Contact Type":"Official corporate phone + email + web form + current employer route","Contact Source":"Official zenit-sever.ru + current registry profile + fresh 2026 vacancy","Consulting Hypothesis":"Систематизация и масштабирование B2B-продаж инженерного оборудования: структура отдела продаж, сегментация заказчиков и проектных организаций, CRM/pipeline, KPI, длинный цикл сделки и синхронизация sales с проектированием, производством и монтажом.",
-    "contacts":[
-      {"value":"+7 (499) 130-60-45","channel":"Phone","type":"Official corporate","source":"Official company site","url":"https://zenit-sever.ru/","is_lpr":false,"notes":"Официальный телефон"},
-      {"value":"info@zenit-sever.ru","channel":"Email","type":"Official corporate","source":"Official company site","url":"https://zenit-sever.ru/","is_lpr":false,"notes":"Официальный email"},
-      {"value":"https://dreamjob.ru/employers/115567/vakansii/135396647","channel":"Employer route","type":"Current vacancy","source":"Fresh job-board signal","url":"https://dreamjob.ru/employers/115567/vakansii/135396647","is_lpr":false,"notes":"Актуальный маршрут работодателя"}
-    ],
-    "evidence":[
-      {"type":"LEGAL","claim":"ООО действует; ИНН 7710962693, ОГРН 1147746570927; CEO Михайлов Антон Игоревич.","url":"https://companies.rbc.ru/id/1147746570927-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchno-proizvodstvennoe-obedinenie-zenit-sever/","source":"Current registry profile"},
-      {"type":"SCALE_CURRENT","claim":"Выручка 384,39 млн руб. за 2025 год; официальный сайт указывает производственные мощности более 27 000 кв. м и инженерно-технологический штат 27 человек.","url":"https://zenit-sever.ru/about/","source":"Current 2025 financial profile + official site"},
-      {"type":"SIGNAL","claim":"17.08.2026 свежая вакансия руководителя отдела продаж инженерного оборудования B2B; задача организовать работу отдела и масштабировать продажи.","url":"https://dreamjob.ru/employers/115567/vakansii/135396647","source":"Fresh job-board signal"},
-      {"type":"LPR","claim":"Михайлов Антон Игоревич — генеральный директор и совладелец; доли участников подтверждены актуальным публичным профилем.","url":"https://companies.rbc.ru/id/1147746570927-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchno-proizvodstvennoe-obedinenie-zenit-sever/","source":"Current registry profile"},
-      {"type":"CONTACT","claim":"Официальные маршруты: +7 (499) 130-60-45, info@zenit-sever.ru, web form.","url":"https://zenit-sever.ru/","source":"Official company site"},
-      {"type":"BRAND_LEGAL","claim":"Официальный сайт НПО ЗЕНИТ-СЕВЕР подтверждает производственный бренд и корпоративные реквизиты/контакты компании.","url":"https://zenit-sever.ru/","source":"Official company site"}
-    ]
-  }]
+  "notes": "Fresh source-of-truth before RUN 410: RUN 409, physical master/contactable 353/353, integrity PASS, orphan 0/0, HEAD b3ae4a4f1bc8c0ae996c63ceb47345a9094c2d6d. Eight distinct companies were individually fast-gated from fresh job-board, regional-growth and segment-expansion discovery. Petro Building Systems, Rusgeosint and CharmCleo were known canonical duplicates. Gazprom Burenie was excluded as outside the private target profile; ROSSKO was excluded on scale; Alfranco Distribution and Market Group were rejected because exact current legal/scale evidence was not established in this execution window. LEMMO-TOYS passed all required gates. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID":"N5K-0506",
+      "Brand":"Леммо-Тойс / LEMMO-TOYS",
+      "Legal Name":"ООО «ЛЕММО-ТОЙС»",
+      "INN":"4345426728",
+      "OGRN/OGRNIP":"1154350009000",
+      "Region":"Кировская область",
+      "City":"Киров",
+      "Segment":"Производство деревянных развивающих конструкторов и корпоративной сувенирной продукции",
+      "Website":"https://lemmo-toys.ru/",
+      "Revenue/Scale":"Действующее ООО; выручка 58,953 млн руб. за 2025 год; ССЧ 32 сотрудника за 2025 год; официальный сайт указывает более 5000 кв. м производственных площадей, 100+ компаний-партнеров и 100000+ реализованных единиц продукции.",
+      "Signal Level":"S2",
+      "Signal Summary":"В апреле 2026 официальный региональный материал о компании зафиксировал фазу системного масштабирования через маркетплейсы и собственный отдел продаж; в 2026 году ООО продолжило продуктовую экспансию, зарегистрировав новые товарные знаки, включая «Ночной Беркут» и «Огненный Феникс». Сигнал трактуется как текущая продуктовая и коммерческая экспансия, а не как историческая вакансия.",
+      "Signal Date":"2026-05-12",
+      "Signal Source":"https://xn--90aifddrld7a.xn--p1ai/upload/iblock/f66/bdwixx2722up15owoobzpdkx6nsk3dwf/4%2817%29%D0%BC%D0%B0%D1%80%D1%822026_end_new1_WWW.pdf",
+      "Owner":"Половников Сергей Иванович — 50%; Зонов Константин Викторович — 50%",
+      "CEO":"Половников Сергей Иванович",
+      "LPR":"Половников Сергей Иванович",
+      "LPR Role":"Директор и совладелец 50%",
+      "Primary Phone":"8 (800) 222-80-83",
+      "Primary Email":"",
+      "HH Contact":"",
+      "Contact Form":"https://lemmo-toys.ru/",
+      "Contact Type":"Official corporate phone + official website route",
+      "Contact Source":"Official lemmo-toys.ru",
+      "Consulting Hypothesis":"Систематизация следующего этапа роста: управление каналами marketplace/розница/B2B-корпоративная продукция, продуктовая матрица, коммерческие KPI и синхронизация продаж с расширяющимся портфелем собственных товарных знаков.",
+      "contacts":[
+        {"value":"8 (800) 222-80-83","channel":"Phone","type":"Official corporate","source":"Official company site","url":"https://lemmo-toys.ru/о-компании/","is_lpr":false,"notes":"Актуальный официальный телефон на сайте"},
+        {"value":"https://lemmo-toys.ru/","channel":"Website","type":"Official company route","source":"Official company site","url":"https://lemmo-toys.ru/","is_lpr":false,"notes":"Официальный сайт и маршрут связи"}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"ООО «ЛЕММО-ТОЙС» действует; ИНН 4345426728, ОГРН 1154350009000; директор Половников Сергей Иванович.","url":"https://companies.rbc.ru/id/1154350009000-ooo-lemmo-tojs/","source":"Current registry profile"},
+        {"type":"SCALE_CURRENT","claim":"Выручка 58,953 млн руб. за 2025 год; ССЧ 32 сотрудника; официальный сайт указывает более 5000 кв. м производственных площадей.","url":"https://lemmo-toys.ru/о-компании/","source":"Current 2025 financial profile + official site"},
+        {"type":"SIGNAL","claim":"В 2026 компания находится в фазе системного коммерческого масштабирования и продолжает продуктовую экспансию новыми товарными знаками.","url":"https://xn--90aifddrld7a.xn--p1ai/upload/iblock/f66/bdwixx2722up15owoobzpdkx6nsk3dwf/4%2817%29%D0%BC%D0%B0%D1%80%D1%822026_end_new1_WWW.pdf","source":"Regional business publication April 2026 + 2026 trademark registrations"},
+        {"type":"LPR","claim":"Половников Сергей Иванович — директор и совладелец 50%; второй участник Зонов Константин Викторович — 50%.","url":"https://companies.rbc.ru/id/1154350009000-ooo-lemmo-tojs/","source":"Current registry profile"},
+        {"type":"CONTACT","claim":"Официальный телефон 8 (800) 222-80-83 и официальный сайт компании.","url":"https://lemmo-toys.ru/о-компании/","source":"Official company site"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт и публичная оферта напрямую идентифицируют продавца/производителя как ООО «Леммо-Тойс», ИНН 4345426728, ОГРН 1154350009000.","url":"https://lemmo-toys.ru/договор-купли-продажи-товара-дистанц/","source":"Official company site"}
+      ]
+    }
+  ]
 }
