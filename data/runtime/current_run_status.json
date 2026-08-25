@@ -2,10 +2,10 @@
   "run_id": "N5K-20260825-410",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T20:58:00+03:00",
+  "updated_at": "2026-08-25T21:01:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 353,
     "target_count": 5000,
     "current_canonical_count": 354,
     "current_contactable_count": 354,
@@ -24,9 +24,7 @@
     "duplicates": 3,
     "excluded": 4
   },
-  "qualified_companies": [
-    "Леммо-Тойс / LEMMO-TOYS"
-  ],
+  "qualified_companies": ["Леммо-Тойс / LEMMO-TOYS"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
