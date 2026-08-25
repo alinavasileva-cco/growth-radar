@@ -2,7 +2,7 @@
   "run_id": "N5K-20260825-400",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T11:00:00+03:00",
+  "updated_at": "2026-08-25T11:05:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 294,
@@ -20,14 +20,11 @@
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 10,
+    "qualified": 0,
+    "duplicates": 12,
     "excluded": 24
   },
-  "qualified_companies": [
-    "LUMIXON / Люмиксон",
-    "Компания Чебо / New Farm"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
