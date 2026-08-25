@@ -1,40 +1,38 @@
 {
-  "run_id": "N5K-20260825-393",
+  "run_id": "N5K-20260825-394",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T06:50:00+05:00",
+  "updated_at": "2026-08-25T07:18:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 325,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 328,
-    "current_contactable_count": 328,
-    "progress_added": 328,
-    "remaining": 4672
+    "current_canonical_count": 329,
+    "current_contactable_count": 329,
+    "progress_added": 329,
+    "remaining": 4671
   },
   "funnel": {
-    "discovered": 36,
-    "fast_gate_passed": 9,
-    "size_check_passed": 6,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
-    "qualified": 3,
-    "duplicates": 8,
-    "excluded": 25
+    "discovered": 30,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 6,
+    "excluded": 23
   },
   "qualified_companies": [
-    "ИНБРИГ / INBRIG",
-    "АЗ АТОМ / AZ ATOM",
-    "ПолиАэрПак / PolyAirPack"
+    "ТК НИЖТЕКСТИЛЬ / Nizhtextil"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "328_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "328_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "329_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "329_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

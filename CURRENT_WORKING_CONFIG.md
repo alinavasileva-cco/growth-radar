@@ -71,3 +71,7 @@ Integration commit: `4fb00accbcbb278f01b6774496923f4512c41083`. После ин�
 
 ## Latest verified run N5K-20260825-393
 Canonical/contactable: 328/328. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260825-394
+Canonical/contactable: 329/329. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
