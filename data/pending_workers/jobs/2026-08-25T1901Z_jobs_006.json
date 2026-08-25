@@ -1,0 +1,133 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-25T19:01:42Z",
+  "source_head_before_worker_write": "7d42c8ac09d641a3ce5f8ba4c318988267b9ff7a",
+  "canonical_write": false,
+  "outreach": false,
+  "metrics": {
+    "raw_distinct_identifiable": 50,
+    "fast_gate_passed_for_deep_check": 2,
+    "deep_checked": 2,
+    "qualified": 2,
+    "excluded_after_deep": 0,
+    "notes": "50 distinct identifiable employers/companies were individually surfaced across current HH/job-board listings in Moscow, Saint Petersburg, Yekaterinburg, Kazan, Samara and Novosibirsk. Recruiters, anonymous employers, public/state/very large unsuitable companies, duplicate employer rows and roles without a sufficiently strong business-change signal were rejected at FAST GATE. Two strongest low-overlap candidates received full SIZE -> LEGAL -> SIGNAL -> LPR -> CONTACT checks and both passed. Exact INN repository search immediately before write returned no matches for either candidate. No canonical files were modified and no outreach was performed.",
+    "raw_source_pages": [
+      "https://ekaterinburg.hh.ru/vacancies/direktor-po-prodazham-i-razvitiyu/polnaya_zanyatost",
+      "https://ekaterinburg.hh.ru/vacancies/direktor_po_prodazham",
+      "https://spb.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
+      "https://kazan.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "https://samara.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "https://novosibirsk.hh.ru/vacancies/rukovoditel_otdela_prodazh/polnaya_zanyatost"
+    ]
+  },
+  "qualified_companies": [
+    {
+      "brand": "АФ «Перспектива» ОМЗ",
+      "legal_name": "ООО Акционерная фирма «Перспектива» Опытно-механический завод",
+      "inn": "6318035951",
+      "ogrn": "1186313049823",
+      "region": "Самарская область, Самара",
+      "segment": "Производство промышленного и нестандартного оборудования; проектные B2B-продажи",
+      "website": "https://perspektivaomz.ru/",
+      "legal_status": "Действующее частное ООО; статус действующей организации подтверждён актуальным контрагентским профилем на 16.07.2026",
+      "scale": {
+        "revenue_2025_rub": 435721000,
+        "employees_reference": "72 сотрудника по профилю РБК за 2024; текущая вакансия Dream Job указывает менее 100 сотрудников",
+        "evidence": [
+          "https://saby.ru/profile/6318035951-631801001",
+          "https://companies.rbc.ru/id/1186313049823-ooo-aktsionernaya-firma-perspektiva-opyitno-mehanicheskij-zavod/",
+          "https://dreamjob.ru/employers/116103/vakansii"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-13",
+        "summary": "В связи с развитием завод ищет коммерческого директора / руководителя проектных продаж. В зоне ответственности прямо указаны планы по выручке и маржинальности, переговоры с первыми лицами, расширение клиентской базы, управление отделом продаж, разработка бизнес-процессов, KPI/мотивации и построение маркетингового контура.",
+        "sources": [
+          "https://dreamjob.ru/employers/116103/vakansii",
+          "https://h.careers/job/f2657f33-6c39-4cf3-a00d-aa1910139a91",
+          "https://samara.hh.ru/vacancies/direktor_zavoda"
+        ]
+      },
+      "lpr": {
+        "ceo": "Литвиненко Виталий Леонидович — генеральный директор с 16.07.2025",
+        "owners": "Литвиненко Леонид Михайлович, Литвиненко Виталий Леонидович и другие физические лица по актуальному ЕГРЮЛ-профилю",
+        "sources": [
+          "https://saby.ru/profile/6318035951-631801001",
+          "https://companies.rbc.ru/id/1186313049823-ooo-aktsionernaya-firma-perspektiva-opyitno-mehanicheskij-zavod/"
+        ]
+      },
+      "contact_route": {
+        "phone": ["+7 (846) 207-61-11", "+7 (846) 201-61-21"],
+        "email": ["info@perspektivaomz.ru", "office@perspektivaomz.ru"],
+        "named_intermediary": "Кощеева Елена Николаевна — начальник отдела кадров по порталу службы занятости Самарской области",
+        "route": "Официальный отдел продаж и общий корпоративный email; дополнительный подтверждённый HR-маршрут через начальника отдела кадров с просьбой передать предложение генеральному директору/собственникам.",
+        "sources": [
+          "https://perspektivaomz.ru/contact",
+          "https://samaratrud.ru/employer/detail/?companyId=560781b8-f997-11e8-adb0-000c2973da2c"
+        ]
+      },
+      "consulting_hypothesis": "Систематизация длинных проектных B2B-продаж: коммерческая воронка, KPI и маржинальность, управление отделом, CRM/регламенты, развитие key-account и маркетингового контура.",
+      "dedup_keys": {
+        "inn": "6318035951",
+        "ogrn": "1186313049823",
+        "legal_name": "ООО Акционерная фирма «Перспектива» Опытно-механический завод",
+        "brand_domain": "АФ Перспектива ОМЗ|perspektivaomz.ru"
+      },
+      "dedup_check": "Exact INN and brand search returned no repository matches immediately before staging against fresh main HEAD 7d42c8ac09d641a3ce5f8ba4c318988267b9ff7a. Final canonical writer must repeat authoritative physical dedup before integration."
+    },
+    {
+      "brand": "ИПС «Свердловская»",
+      "legal_name": "ООО «Инкубаторно-птицеводческая станция «Свердловская»",
+      "inn": "6679065016",
+      "ogrn": "1156679001599",
+      "region": "Свердловская область, Екатеринбург",
+      "segment": "Птицеводство, ветеринарные препараты и товары для сельхозживотных; B2B/опт",
+      "website": "https://ips66.ru/",
+      "legal_status": "Действующее частное ООО; актуальный статус подтверждён источниками на апрель-июль 2026",
+      "scale": {
+        "revenue_2025_rub": 622470000,
+        "employees_reference": "36 сотрудников по профилю РБК; 33 по данным за 2024 в Checkspot",
+        "evidence": [
+          "https://www.tbank.ru/business/contractor/legal/1156679001599/",
+          "https://saby.ru/profile/6679065016-667901001",
+          "https://companies.rbc.ru/id/1156679001599-ooo-inkubatorno-ptitsevodcheskaya-stantsiya-sverdlovskaya/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-14",
+        "summary": "Компания ищет руководителя отдела продаж. В описании вакансии прямо указаны стратегическое развитие отдела, построение процессов, внедрение современных методик управления продажами, работа с ключевыми клиентами и инструменты автоматизации продаж.",
+        "sources": [
+          "https://ekaterinburg.hh.ru/vacancies/direktor-po-prodazham-i-razvitiyu/polnaya_zanyatost",
+          "https://rabota1000.ru/ekaterinburg/%D1%81%D1%82%D0%B0%D0%B6%D0%B5%D1%80%2B%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0%2B%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6",
+          "https://ekaterinburg.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D1%81%D1%82%D0%B2%D0%BE-%D1%84%D0%B8%D0%B7%D0%BB%D0%B8%D1%86-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/%D0%BC-%D0%B1%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F"
+        ]
+      },
+      "lpr": {
+        "owner": "Свяжин Владимир Витальевич — 100% учредитель",
+        "ceo": "Гольденберг Ольга Михайловна — генеральный директор с 02.03.2022",
+        "sources": [
+          "https://companies.rbc.ru/amp/ogrn/1156679001599/",
+          "https://check.tochka.com/company/1156679001599/",
+          "https://saby.ru/profile/6679065016-667901001"
+        ]
+      },
+      "contact_route": {
+        "phone": ["+7 343 264-51-17", "+7 982 764-78-77"],
+        "email": ["ips66@bk.ru"],
+        "form": "https://ips66.ru/contacts",
+        "route": "Официальный оптовый/корпоративный телефон, email и форма обратного звонка; при обращении просить соединить или передать предложение генеральному директору либо собственнику.",
+        "source": "https://ips66.ru/contacts"
+      },
+      "consulting_hypothesis": "Перестройка и масштабирование отдела продаж: стратегия, процессы, CRM/автоматизация, KPI, key-account работа и управленческий контур роста продаж.",
+      "dedup_keys": {
+        "inn": "6679065016",
+        "ogrn": "1156679001599",
+        "legal_name": "ООО «Инкубаторно-птицеводческая станция «Свердловская»",
+        "brand_domain": "ИПС Свердловская|ips66.ru"
+      },
+      "dedup_check": "Exact INN repository search returned no matches immediately before staging against fresh main HEAD 7d42c8ac09d641a3ce5f8ba4c318988267b9ff7a. Final canonical writer must repeat authoritative physical dedup before integration."
+    }
+  ]
+}
