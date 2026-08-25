@@ -5,7 +5,7 @@
   "updated_at": "2026-08-25T09:00:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 330,
     "target_count": 5000,
     "current_canonical_count": 331,
     "current_contactable_count": 331,
@@ -24,9 +24,7 @@
     "duplicates": 3,
     "excluded": 16
   },
-  "qualified_companies": [
-    "Новая Заря / Парфюм Косметик Сервис"
-  ],
+  "qualified_companies": ["Новая Заря / Парфюм Косметик Сервис"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
