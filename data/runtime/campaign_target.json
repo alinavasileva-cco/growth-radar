@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-25T19:01:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-407",
-  "current_run_id": "N5K-20260825-407",
+  "last_completed_run_id": "N5K-20260825-408",
+  "current_run_id": "N5K-20260825-408",
   "last_run_id": "N5K-20260825-408",
   "latest_completed_run": "N5K-20260825-408",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 407 completed after metadata/shard REPAIR: +3 net new companies. Physical canonical/contactable 349/349; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 408 completed after metadata REPAIR: +3 net new companies. Physical canonical/contactable 352/352; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
