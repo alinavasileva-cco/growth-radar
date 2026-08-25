@@ -7,33 +7,32 @@
   "new_cycle": {
     "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 348,
-    "current_contactable_count": 348,
-    "progress_added": 348,
-    "remaining": 4652
+    "current_canonical_count": 349,
+    "current_contactable_count": 349,
+    "progress_added": 349,
+    "remaining": 4651
   },
   "funnel": {
-    "discovered": 36,
-    "fast_gate_passed": 7,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 13,
-    "excluded": 21
+    "discovered": 55,
+    "fast_gate_passed": 8,
+    "size_check_passed": 5,
+    "legal_match_passed": 4,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 1,
+    "duplicates": 20,
+    "excluded": 34
   },
   "qualified_companies": [
-    "Фабрика Вентиляции ГалВент / GalVent",
-    "Hobby World / Мир Хобби-Производство"
+    "GARDISTA / Гардиcта"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "348_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "348_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "349_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "349_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
