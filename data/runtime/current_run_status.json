@@ -5,7 +5,7 @@
   "updated_at": "2026-08-25T08:20:00+05:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 329,
     "target_count": 5000,
     "current_canonical_count": 330,
     "current_contactable_count": 330,
@@ -24,9 +24,7 @@
     "duplicates": 5,
     "excluded": 18
   },
-  "qualified_companies": [
-    "INSTART / Инстарт"
-  ],
+  "qualified_companies": ["INSTART / Инстарт"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
