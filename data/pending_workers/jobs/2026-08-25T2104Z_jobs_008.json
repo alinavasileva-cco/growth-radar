@@ -1,0 +1,153 @@
+{
+  "worker": "jobs",
+  "created_at_utc": "2026-08-25T21:04:31Z",
+  "source_head_sha": "466e28d35950f0f460da9f8102059f8698ece303",
+  "source_head_run": "N5K-20260825-413",
+  "canonical_state_at_start": {
+    "physical_canonical": 359,
+    "physical_contactable": 359,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "scope": "HH, SuperJob, Rabota.ru, Habr Career, GetMatch, career pages and other job-board signals",
+  "metrics": {
+    "raw_distinct_surfaced": 50,
+    "deep_checked": 4,
+    "qualified": 2,
+    "deep_rejected": 2,
+    "notes": "Raw pool was assembled from current regional job-board result pages and deduplicated by identifiable employer name before deep-check. Aggregate stage counts other than the values above were not persisted and are not reconstructed."
+  },
+  "deep_rejected": [
+    {
+      "brand": "РОДНО",
+      "reason": "Brand-to-legal match pointed to ООО СК КОНКОРД, ИНН 5908075828, which was liquidated on 2026-07-03; fails LEGAL gate despite a current commercial-director vacancy signal.",
+      "evidence_urls": [
+        "https://h.careers/jobs/company/rodno",
+        "https://check.tochka.com/company/1175958017476/",
+        "https://www.tbank.ru/business/contractor/legal/1175958017476/"
+      ]
+    },
+    {
+      "brand": "Гермес-Урал",
+      "reason": "Multiple current entities/brand usages and conflicting legal/management records prevented a sufficiently reliable vacancy-to-legal-entity match in this pass; no qualification by inference.",
+      "evidence_urls": [
+        "https://germesural.ru/",
+        "https://ecosystem-cosmos.ru/organization/OOO-Germes-Ural/contacts",
+        "https://industrials.ru/proizvoditel/21645-germes-ural"
+      ]
+    }
+  ],
+  "qualified_companies": [
+    {
+      "brand": "АНЭП / АНЭП-Металл",
+      "legal_name": "ООО АНЭП",
+      "inn": "6678022740",
+      "ogrn": "1126678018807",
+      "region": "Свердловская область",
+      "city": "Екатеринбург",
+      "status": "QUALIFIED",
+      "dedup_keys": {
+        "inn": "6678022740",
+        "ogrn": "1126678018807",
+        "legal_name": "ООО АНЭП",
+        "brand_domain": "АНЭП-Металл|anepmetall.ru"
+      },
+      "legal": {
+        "active": true,
+        "evidence": "Current company profiles identify ООО АНЭП, INN 6678022740, OGRN 1126678018807, as an active private company."
+      },
+      "scale": {
+        "revenue_2025_rub": 438000000,
+        "employees_2025": 13,
+        "evidence": "2025 revenue 438.0m RUB; small-enterprise registry status and 13 employees reported for 2025."
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-25",
+        "summary": "Current Head of Sales vacancy states expansion of the order portfolio and entry into new market segments; the role is expected to lead the sales team and deliver ambitious revenue plans.",
+        "source_url": "https://dreamjob.ru/employers/131340/vakansii/136151199"
+      },
+      "owners_lpr": {
+        "director_lpr": "Отев Никита Олегович",
+        "owners": ["Цирков Алексей Леонидович", "Купина Наталия Валерьевна"],
+        "evidence": "Current registry/company profiles identify Otев Nikita Olegovich as director and list the two founders."
+      },
+      "contact_route": {
+        "phone": "+7 (343) 288-06-23",
+        "email": "ekb@anepmetall.ru",
+        "form_or_site": "https://ekaterinburg.anepmetall.ru/contact-us/",
+        "type": "Official corporate route to the Екатеринбург office; request transfer to director/owner or commercial decision-maker",
+        "source_url": "https://ekaterinburg.anepmetall.ru/contact-us/"
+      },
+      "evidence": [
+        {"type": "JOB_SIGNAL", "url": "https://dreamjob.ru/employers/131340/vakansii/136151199", "claim": "Current Head of Sales vacancy; expansion and new market segments; responsibility for team and revenue plans."},
+        {"type": "LEGAL_SCALE_LPR", "url": "https://companium.ru/id/1126678018807-anehp", "claim": "Active ООО АНЭП; INN/OGRN; 2025 revenue 438m RUB; director and founders."},
+        {"type": "OFFICIAL_CONTACT", "url": "https://ekaterinburg.anepmetall.ru/contact-us/", "claim": "Official legal details, director, phone and email for Екатеринбург."},
+        {"type": "OFFICIAL_SCALE_CONTEXT", "url": "https://ekaterinburg.anepmetall.ru/about/", "claim": "Nine regional warehouses and national/CIS supply footprint."}
+      ],
+      "dedup_check": {
+        "repository_search_exact_inn": "NO_MATCH",
+        "repository_search_brand": "NO_MATCH",
+        "checked_against_head": "466e28d35950f0f460da9f8102059f8698ece303"
+      }
+    },
+    {
+      "brand": "КраснодарЭлектро",
+      "legal_name": "ООО КРАСНОДАРЭЛЕКТРО",
+      "inn": "2311160949",
+      "ogrn": "1132311009357",
+      "region": "Краснодарский край",
+      "city": "Краснодар",
+      "status": "QUALIFIED",
+      "dedup_keys": {
+        "inn": "2311160949",
+        "ogrn": "1132311009357",
+        "legal_name": "ООО КРАСНОДАРЭЛЕКТРО",
+        "brand_domain": "КраснодарЭлектро|krdelectro.ru"
+      },
+      "legal": {
+        "active": true,
+        "evidence": "Official company site and current registry profiles identify ООО КРАСНОДАРЭЛЕКТРО, INN 2311160949, OGRN 1132311009357, as active."
+      },
+      "scale": {
+        "revenue_2025_rub": 5379700000,
+        "employees": 221,
+        "evidence": "Current financial profile reports about 5.38bn RUB revenue for 2025; current company profile reports 221 employees."
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-25",
+        "summary": "Current vacancy for Head/Director of Sales in distribution; company describes nationwide electrical-equipment distribution with offices in Краснодар, Москва, Санкт-Петербург and Ростов-на-Дону.",
+        "source_url": "https://krasnodar.najtiraboty.ru/svezhie-vakansii/direktor-po-prodazham/"
+      },
+      "owners_lpr": {
+        "director_lpr": "Дюба Алексей Васильевич",
+        "owners": ["Дюба Алексей Васильевич — 51%", "Дюба Татьяна Владимировна — 49%"],
+        "evidence": "Current registry/company profiles identify Алексей Дюба as CEO and majority owner, with Татьяна Дюба as the second owner."
+      },
+      "contact_route": {
+        "phone": "8 (861) 203-53-00",
+        "alternate_phone": "8 (800) 555-53-20",
+        "email": "sales061@krdelectro.ru",
+        "form_or_site": "https://krdelectro.ru/contacts/",
+        "type": "Official corporate sales/contact route; request transfer to CEO/owner or commercial decision-maker",
+        "source_url": "https://krdelectro.ru/contacts/"
+      },
+      "evidence": [
+        {"type": "JOB_SIGNAL", "url": "https://krasnodar.najtiraboty.ru/svezhie-vakansii/direktor-po-prodazham/", "claim": "Current Head/Director of Sales vacancy for КраснодарЭлектро."},
+        {"type": "OFFICIAL_LEGAL_CONTACT", "url": "https://krdelectro.ru/contacts/", "claim": "Official legal name, INN, OGRN, addresses, phones and email."},
+        {"type": "OFFICIAL_COMPANY", "url": "https://krdelectro.ru/company/", "claim": "22+ years in electrical distribution; multiple offices; 100+ manufacturer brands."},
+        {"type": "LEGAL_OWNER_SCALE", "url": "https://companies.rbc.ru/id/1132311009357-ooo-krasnodarelektro/", "claim": "CEO Алексей Дюба; founders; employee count and legal identity."},
+        {"type": "FINANCIAL_SCALE", "url": "https://saby.ru/profile/2311160949-230901001", "claim": "Current financial profile with 2025 revenue around 5.38bn RUB and active status."}
+      ],
+      "dedup_check": {
+        "repository_search_exact_inn": "NO_MATCH",
+        "checked_against_head": "466e28d35950f0f460da9f8102059f8698ece303"
+      }
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "integration_instruction": "Main canonical writer must perform authoritative physical dedup again immediately before any integration."
+}
