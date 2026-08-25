@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-25T08:20:00+05:00  
-**Последний полностью завершённый RUN:** `N5K-20260825-395`  
+**Версия:** 2026-08-25T09:00:00+05:00  
+**Последний полностью завершённый RUN:** `N5K-20260825-396`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **330 / 330**  
+**Физически подтверждённый canonical/contactable:** **331 / 331**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4670**  
+**Осталось:** **4669**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **330 / 330**;
+- physical canonical/contactable count: **331 / 331**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260825-395`;
+- последний завершённый RUN: `N5K-20260825-396`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,18 +36,18 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260825-395
+## Последний подробный RUN — N5K-20260825-396
 
-Baseline перед RUN: **329 / 329**.  
-Фактически индивидуально обработано raw-кандидатов: **24**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
-Воронка после authoritative physical dedup: discovered **24** → fast gate **6** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified unique **1** → physically integrated **1**.  
-Duplicates: **5**. Excluded: **18**.  
+Baseline перед RUN: **330 / 330**.  
+Фактически индивидуально обработано raw-кандидатов: **20**. Целевые 150–200 в этом RUN не достигнуты и не заявляются.  
+Воронка после authoritative physical dedup: discovered **20** → fast gate **5** → size **3** → legal **2** → signal **1** → LPR **1** → contact **1** → qualified unique **1** → physically integrated **1**.  
+Duplicates: **3**. Excluded: **16**.  
 Добавлена:
-- **INSTART / Инстарт — ООО «ИНСТАРТ»**, ИНН `7811609195`, ОГРН `1167847209200`, Lead ID `N5K-0482`.
+- **Новая Заря / Парфюм Косметик Сервис — ООО «ПАРФЮМ КОСМЕТИК СЕРВИС»**, ИНН `7725623076`, ОГРН `1077763339939`, Lead ID `N5K-0483`.
 
-Итог physical canonical/contactable: **330 / 330**.  
+Итог physical canonical/contactable: **331 / 331**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.  
-Integration commit: `f83e3c7750841254c2a89b16dd29ba06729eab3e`. После интеграции stale runtime baseline `294` исправлен на фактический baseline `329`; campaign target и run metrics синхронизированы на RUN 395.
+В RUN 396 использованы свежие августовские вакансии по масштабированию каналов продаж/франчайзинга, актуальная отчётность за 2025 год и официальные контакты бренда. Автоматический stale runtime baseline `294` после интеграции исправлен на фактический baseline `330`; campaign target и run metrics синхронизированы на RUN 396.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
@@ -65,10 +65,7 @@ Integration commit: `f83e3c7750841254c2a89b16dd29ba06729eab3e`. После ин�
 - `N5K-20260825-393`: 328/328, +3, PASS, orphan 0/0.
 - `N5K-20260825-394`: 329/329, +1, PASS, orphan 0/0.
 - `N5K-20260825-395`: 330/330, +1, PASS, orphan 0/0.
-
-## Latest verified run N5K-20260825-395
-Canonical/contactable: 330/330. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260825-396`: 331/331, +1, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260825-396
 Canonical/contactable: 331/331. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
