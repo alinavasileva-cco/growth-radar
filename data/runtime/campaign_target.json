@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-25T06:48:00+05:00",
+  "updated_at": "2026-08-25T06:51:00+05:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-392",
-  "current_run_id": "N5K-20260825-392",
+  "last_completed_run_id": "N5K-20260825-393",
+  "current_run_id": "N5K-20260825-393",
   "last_run_id": "N5K-20260825-393",
   "latest_completed_run": "N5K-20260825-393",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 392 completed with +2 net new after authoritative physical dedup/integration: One Marking / Одна Маркировка and Амадей Принт / Amadey Print (ООО АМАДЕЙ РЕКЛАМА). Physical canonical/contactable 325/325; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 393 recovery completed with +3 net new after authoritative physical dedup/integration: ИНБРИГ / INBRIG, АЗ АТОМ / AZ ATOM and ПолиАэрПак / PolyAirPack. TGM-Group was removed by the final physical dedup guard as an existing company. Physical canonical/contactable 328/328; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
