@@ -2,10 +2,10 @@
   "run_id": "N5K-20260825-403",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T13:57:00+03:00",
+  "updated_at": "2026-08-25T13:59:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 340,
     "target_count": 5000,
     "current_canonical_count": 341,
     "current_contactable_count": 341,
@@ -24,9 +24,7 @@
     "duplicates": 5,
     "excluded": 11
   },
-  "qualified_companies": [
-    "Челябинский завод Теплоприбор / ООО ЧТП"
-  ],
+  "qualified_companies": ["Челябинский завод Теплоприбор / ООО ЧТП"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -34,5 +32,6 @@
   "physical_master_state": "341_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "341_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "repair_note": "Corrected stale integrator baseline 294 to physical pre-run baseline 340 after verifying RUN 402 source of truth and successful RUN 403 physical integration."
 }
