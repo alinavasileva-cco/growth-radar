@@ -1,0 +1,79 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-25T14:25:00Z",
+  "baseline_head": "d500e8c2f6c71cd0de9bc05c0f7e19c40547a06d",
+  "canonical_write": false,
+  "outreach": false,
+  "discovery": {
+    "target_raw": "40-80",
+    "raw_surfaced": 45,
+    "qualified": 1,
+    "note": "45 distinct job-board/employer candidates were surfaced in this worker pass. Only the candidate that completed SIZE -> LEGAL -> SIGNAL -> LPR -> CONTACT and passed a second dedup against the fresh canonical HEAD is staged below. No canonical state was modified."
+  },
+  "candidates": [
+    {
+      "brand": "GARDISTA / Гардиcта",
+      "legal_name": "ООО ЭЛКОР",
+      "inn": "7802803510",
+      "ogrn": "1127847530579",
+      "legal_status": "Действует",
+      "region": "Санкт-Петербург",
+      "city": "Санкт-Петербург",
+      "segment": "Производство и продажа функциональных композитных штор; B2B+B2C",
+      "website": "https://gardista.ru/",
+      "revenue_scale": "Выручка ООО ЭЛКОР за 2025 год — 216 385 000 руб.; среднесписочная численность — 8 сотрудников по актуальному профилю РБК Компании.",
+      "signal_level": "S1",
+      "signal_summary": "GARDISTA ищет директора по продажам и цифровой коммерции с прямой ответственностью за стратегию роста продаж, цифровой бизнес, прибыль и поиск/масштабирование новых точек роста.",
+      "signal_date": "2026-08-07",
+      "signal_source": "https://dreamjob.ru/employers/479534/vakansii/136036032",
+      "owner": "Мухтаров Руслан Викторович",
+      "ceo": "Мухтаров Руслан Викторович",
+      "lpr": "Мухтаров Руслан Викторович",
+      "lpr_role": "Генеральный директор и учредитель ООО ЭЛКОР; владелец/оператор бренда Gardista подтверждается связкой вакансии работодателя ООО ЭЛКОР и официального сайта бренда",
+      "primary_phone": "+7 (800) 200-57-09",
+      "primary_email": "store@gardista.ru",
+      "contact_route": "Официальный телефон и email бренда Gardista + текущая вакансия работодателя ООО ЭЛКОР. Официальный сайт оформляет продажи через ИП Мухтаров Руслан Викторович; поэтому контакт квалифицирован как практический маршрут к тому же ЛПР/бренду, а не как отдельный прямой email ООО ЭЛКОР.",
+      "dedup_keys": [
+        "INN:7802803510",
+        "OGRN:1127847530579",
+        "LEGAL:ООО ЭЛКОР",
+        "BRAND:GARDISTA",
+        "DOMAIN:gardista.ru"
+      ],
+      "dedup_check": {
+        "head": "d500e8c2f6c71cd0de9bc05c0f7e19c40547a06d",
+        "leads_master_inn_match": false,
+        "contactable_master_inn_match": false,
+        "note": "Exact INN 7802803510 was not found in the fresh leads_master/contactable_master checks performed immediately before staging. GitHub code search also returned zero matches but reported incomplete_results=true, so it was not used as the sole dedup basis."
+      },
+      "evidence": [
+        {
+          "type": "LEGAL_LPR_SCALE",
+          "url": "https://companies.rbc.ru/id/1127847530579-ooo-elkor/",
+          "claim": "ООО ЭЛКОР: ИНН 7802803510, ОГРН 1127847530579; организация действует; генеральный директор и учредитель — Мухтаров Руслан Викторович; выручка за 2025 год 216 385 000 руб.; ССЧ 8."
+        },
+        {
+          "type": "SIGNAL",
+          "url": "https://dreamjob.ru/employers/479534/vakansii/136036032",
+          "claim": "7 августа 2026 опубликована вакансия ООО ЭЛКОР для бренда GARDISTA: директор по продажам и цифровой коммерции; задачи включают стратегию роста продаж и цифрового бизнеса, рост прибыли и масштабирование новых точек роста."
+        },
+        {
+          "type": "SIGNAL_CORROBORATION",
+          "url": "https://spb.hh.ru/vacancies/rukovoditel-napravleniya-internet-prodazh",
+          "claim": "Свежая выдача HeadHunter содержит вакансию ООО ЭЛКОР 'Директор по продажам и цифровой коммерции' с задачами роста продаж и цифрового бизнеса Gardista."
+        },
+        {
+          "type": "CONTACT_BRAND",
+          "url": "https://gardista.ru/",
+          "claim": "Официальный сайт Gardista публикует телефон +7 (800) 200-57-09, email store@gardista.ru, форму связи и адрес в Санкт-Петербурге."
+        },
+        {
+          "type": "BRAND_LPR_LINK",
+          "url": "https://gardista.ru/public-offer/",
+          "claim": "Официальная оферта Gardista указывает ИП Мухтаров Руслан Викторович, телефон +7 (800) 200-57-09 и email store@gardista.ru; это подтверждает практический брендовый маршрут к тому же ЛПР, который является директором/учредителем ООО ЭЛКОР."
+        }
+      ],
+      "qualification": "QUALIFIED"
+    }
+  ]
+}
