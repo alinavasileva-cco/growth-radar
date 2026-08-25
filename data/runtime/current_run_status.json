@@ -5,7 +5,7 @@
   "updated_at": "2026-08-25T23:59:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 358,
     "target_count": 5000,
     "current_canonical_count": 359,
     "current_contactable_count": 359,
@@ -24,9 +24,7 @@
     "duplicates": 0,
     "excluded": 56
   },
-  "qualified_companies": [
-    "РСТ Энерго"
-  ],
+  "qualified_companies": ["РСТ Энерго"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
