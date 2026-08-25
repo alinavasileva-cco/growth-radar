@@ -2,10 +2,10 @@
   "run_id": "N5K-20260825-401",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T12:48:00+03:00",
+  "updated_at": "2026-08-25T12:58:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 336,
     "target_count": 5000,
     "current_canonical_count": 338,
     "current_contactable_count": 338,
@@ -35,5 +35,6 @@
   "physical_master_state": "338_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "338_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "repair_note": "Corrected stale integrator baseline 294 to physical pre-run baseline 336 after verifying physical leads_master/contactable_master and successful RUN 401 integration."
 }
