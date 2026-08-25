@@ -1,0 +1,80 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-25T16:15:00Z",
+  "baseline_head": "bfba2544de48530e97021cedfd5f661273d0d45c",
+  "canonical_write": false,
+  "outreach": false,
+  "discovery": {
+    "target_raw": "40-80",
+    "raw_surfaced": 25,
+    "qualified": 2,
+    "note": "Target 40-80 was not reached in this execution window and is not claimed. Only candidates completing the full funnel are staged below. Canonical state was not modified."
+  },
+  "candidates": [
+    {
+      "brand": "НПП Тепловодохран / Пульсар",
+      "legal_name": "ООО НПП ТЕПЛОВОДОХРАН",
+      "inn": "6230028315",
+      "ogrn": "1026201107800",
+      "legal_status": "Действует",
+      "region": "Рязанская область",
+      "city": "Рязань",
+      "segment": "Приборы учета энергоресурсов, инженерное оборудование и ПО; B2B",
+      "website": "https://pulsarm.ru/",
+      "revenue_scale": "Выручка 4.549 млрд руб. за 2025 год; 608 сотрудников по актуальным финансовым/реестровым профилям.",
+      "signal_level": "S1",
+      "signal_summary": "Компания ищет директора по продажам для управления департаментом из 7 групп, развития новых каналов и товарных групп, автоматизации бизнес-процессов, дистрибьюторской политики и ключевых переговоров.",
+      "signal_date": "2026-08-21",
+      "signal_source": "https://nesiditsa.ru/vacancy/135559639",
+      "owner": "Козлов Владимир Александрович — учредитель 100% по актуальному реестровому профилю",
+      "ceo": "Козлов Владимир Александрович",
+      "lpr": "Козлов Владимир Александрович",
+      "lpr_role": "Директор и собственник 100%",
+      "primary_phone": "+7 (491) 224-02-70",
+      "primary_email": "info@pulsarm.ru",
+      "contact_route": "Официальный корпоративный телефон и email + актуальная вакансия директора по продажам",
+      "dedup_keys": ["INN:6230028315", "OGRN:1026201107800", "LEGAL:ООО НПП ТЕПЛОВОДОХРАН", "DOMAIN:pulsarm.ru"],
+      "evidence": [
+        {"type":"LEGAL_LPR","url":"https://check.tochka.com/company/1026201107800/","claim":"Действующая компания; ИНН 6230028315, ОГРН 1026201107800; директор и учредитель 100% Козлов Владимир Александрович."},
+        {"type":"SCALE","url":"https://firmoteka.ru/6230028315","claim":"Выручка 4.55 млрд руб. за 2025 год; 608 сотрудников."},
+        {"type":"SIGNAL","url":"https://nesiditsa.ru/vacancy/135559639","claim":"21.08.2026 опубликована вакансия директора по продажам; 7 групп продаж, новые каналы, автоматизация процессов, дистрибьюторская политика."},
+        {"type":"CONTACT","url":"https://pulsarm.ru/services/servisnye-tsentry/","claim":"Официальный заводской маршрут: +7 (491) 224-02-70; сайт бренда Пульсар."},
+        {"type":"CONTACT_EMAIL","url":"https://pulsarm.ru/upload/iblock/13a/om561it81ovjkvb1yzvtk6wj6whjm9xj/Vypiska-po-DS-_-EAES-N-RU-D_CN.RA11.V.13528_23-ot-2025_03_06.pdf","claim":"Официальная декларация содержит info@pulsarm.ru и телефон +7 4912240270; руководитель Козлов Владимир Александрович."}
+      ],
+      "qualification": "QUALIFIED"
+    },
+    {
+      "brand": "EUROCLIMA RUS / Евроклима Рус",
+      "legal_name": "ООО ЕВРОКЛИМА РУС",
+      "inn": "7716871139",
+      "ogrn": "5177746023703",
+      "legal_status": "Действует",
+      "region": "Москва",
+      "city": "Москва",
+      "segment": "Промышленное климатическое оборудование, HVAC/ОВиК, проектные B2B-продажи",
+      "website": "https://euroclima.ru/",
+      "revenue_scale": "Выручка ООО ЕВРОКЛИМА РУС 1.56 млрд руб. за 2025 год; группа имеет собственное производство в Калужской области.",
+      "signal_level": "S1",
+      "signal_summary": "Группа приглашает директора по продажам и развитию бизнеса для построения эффективной системы проектных продаж и влияния на развитие производственно-инжинирингового бизнеса.",
+      "signal_date": "2026-08-21",
+      "signal_source": "https://facancy.ru/vacancies/direktor-po-prodazham-i-razvitiiu-biznesa-v-proizvodstvenno-inzhiniringovuiu-gruppu-kompanii-euroclima",
+      "owner": "Левин Игорь Евгеньевич 50%; Попов Сергей Валерьевич 49%; АО ПОТОК ГРУПП 1% по актуальному реестровому профилю",
+      "ceo": "Попов Сергей Валерьевич",
+      "lpr": "Попов Сергей Валерьевич",
+      "lpr_role": "Генеральный директор и совладелец 49%",
+      "primary_phone": "+7 495 640-23-41",
+      "primary_email": "info@euroclima.ru",
+      "contact_route": "Официальный корпоративный телефон/email + актуальная вакансия директора по продажам и развитию бизнеса",
+      "dedup_keys": ["INN:7716871139", "OGRN:5177746023703", "LEGAL:ООО ЕВРОКЛИМА РУС", "DOMAIN:euroclima.ru"],
+      "evidence": [
+        {"type":"LEGAL_LPR","url":"https://www.tbank.ru/business/contractor/legal/5177746023703/","claim":"Действующая компания; ИНН 7716871139, ОГРН 5177746023703; руководитель Попов Сергей Валерьевич; состав учредителей подтвержден."},
+        {"type":"SCALE","url":"https://xfirm.ru/company/7716871139","claim":"Выручка 1.56 млрд руб. за 2025 год; компания действует на 24.08.2026."},
+        {"type":"SIGNAL","url":"https://facancy.ru/vacancies/direktor-po-prodazham-i-razvitiiu-biznesa-v-proizvodstvenno-inzhiniringovuiu-gruppu-kompanii-euroclima","claim":"21.08.2026 опубликована вакансия директора по продажам и развитию бизнеса производственно-инжиниринговой группы."},
+        {"type":"SIGNAL_CORROBORATION","url":"https://dreamjob.ru/employers/211051/vakansii/136399036","claim":"Актуальная вакансия группы EUROCLIMA RUS подтверждает задачу построения эффективной системы проектных продаж."},
+        {"type":"CONTACT","url":"https://euroclima.ru/contact","claim":"Официальные контакты: +7 495 640-23-41, info@euroclima.ru."},
+        {"type":"BRAND_SCALE","url":"https://euroclima.ru/about","claim":"Официальный сайт подтверждает производственный комплекс в Калужской области и российскую структуру группы."}
+      ],
+      "qualification": "QUALIFIED"
+    }
+  ]
+}
