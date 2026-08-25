@@ -1,19 +1,40 @@
 {
-  "run_id": "N5K-20260825-392",
+  "run_id": "N5K-20260825-393",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T04:36:00+05:00",
+  "updated_at": "2026-08-25T06:48:00+05:00",
   "stage": "COMPLETE",
-  "new_cycle": {"baseline_count":323,"target_count":5000,"current_canonical_count":325,"current_contactable_count":325,"progress_added":325,"remaining":4675},
-  "funnel": {"discovered":32,"fast_gate_passed":6,"size_check_passed":3,"legal_match_passed":2,"signal_confirmed":2,"lpr_identified":2,"contact_route_found":2,"qualified":2,"duplicates":8,"excluded":22},
-  "qualified_companies": ["One Marking / Одна Маркировка","Амадей Принт / Amadey Print"],
+  "new_cycle": {
+    "baseline_count": 294,
+    "target_count": 5000,
+    "current_canonical_count": 328,
+    "current_contactable_count": 328,
+    "progress_added": 328,
+    "remaining": 4672
+  },
+  "funnel": {
+    "discovered": 36,
+    "fast_gate_passed": 9,
+    "size_check_passed": 6,
+    "legal_match_passed": 4,
+    "signal_confirmed": 4,
+    "lpr_identified": 4,
+    "contact_route_found": 4,
+    "qualified": 3,
+    "duplicates": 8,
+    "excluded": 25
+  },
+  "qualified_companies": [
+    "ИНБРИГ / INBRIG",
+    "АЗ АТОМ / AZ ATOM",
+    "ПолиАэрПак / PolyAirPack"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "325_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "325_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "328_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "328_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "note": "RUN 392 factual result after physical integration: baseline 323/323 from completed RUN 391; One Marking and Amadey Print / Amadey Reklama added as two unique contactable companies after physical dedup; final physical canonical/contactable 325/325; integrity PASS; orphan 0/0; staged 0; outreach 0. Automatic stale baseline 294 repaired to factual 323."
+  "blocker": null
 }

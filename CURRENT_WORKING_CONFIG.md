@@ -66,3 +66,7 @@ Integration физически добавила обе компании. Авт�
 
 ## Latest verified run N5K-20260825-392
 Canonical/contactable: 325/325. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260825-393
+Canonical/contactable: 328/328. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
