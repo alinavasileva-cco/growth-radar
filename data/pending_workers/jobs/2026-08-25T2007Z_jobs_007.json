@@ -1,0 +1,78 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-25T20:07:08Z",
+  "source_head_before_worker_write": "6f0733fd823cecef5292e2773304bcdb7002d9a9",
+  "canonical_write": false,
+  "outreach": false,
+  "metrics": {
+    "raw_distinct_identifiable": 57,
+    "fast_gate_passed_for_deep_check": 5,
+    "deep_checked": 5,
+    "qualified": 1,
+    "excluded_after_deep": 4,
+    "notes": "57 distinct identifiable employers/companies were surfaced across fresh HH/job-board result pages in Yekaterinburg, Novosibirsk, Samara, Kazan, Nizhny Novgorod and Rostov-on-Don. Recruiters, anonymous employers, public/state/very large unsuitable employers, duplicate employer rows and roles without a sufficiently strong business-change signal were rejected at FAST GATE. Five low-overlap candidates received deeper checks. RODNO was rejected because the matched legal entity ООО СК КОНКОРД / INN 5908075828 has a current liquidation signal; ETK KRONA was rejected because the sales-director vacancy found was archived/stale for this run; Germes-Ural was rejected because the employer-to-legal-entity mapping remained ambiguous; Future Vision was not staged because an exact publication date for the current vacancy could not be independently confirmed from fresh sources. RST Energo passed all required gates. Exact INN repository search immediately before write returned no matches for RST Energo. No canonical files were modified and no outreach was performed.",
+    "raw_source_pages": [
+      "https://ekaterinburg.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "https://ekaterinburg.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
+      "https://novosibirsk.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "https://samara.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "https://kazan.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "https://nn.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "https://rostov.hh.ru/vacancies/rukovoditel_otdela_prodazh"
+    ]
+  },
+  "qualified_companies": [
+    {
+      "brand": "РСТ Энерго",
+      "legal_name": "ООО «РСТ ЭНЕРГО»",
+      "inn": "6686155912",
+      "ogrn": "1236600063974",
+      "region": "Свердловская область, Екатеринбург",
+      "segment": "Высоковольтное электротехническое оборудование и трансформаторы; промышленный B2B",
+      "website": "https://rstenergo.ru/",
+      "legal_status": "Действующее частное ООО; актуальный статус и реквизиты подтверждены официальным сайтом и свежими контрагентскими профилями",
+      "scale": {
+        "revenue_2025_rub": 737243000,
+        "employees_reference": "8 сотрудников по свежему профилю за 2025 год",
+        "operational_scale": "Офисы/склады в Москве, Екатеринбурге, Новосибирске и Владивостоке; более 2000 единиц оборудования на складах",
+        "evidence": [
+          "https://www.moedelo.org/kontragenty/ogrn/1236600063974",
+          "https://damia.ru/catalog-orgs?active=1&id=2&okved=46.69.5&page=61&region=&sort=name",
+          "https://rstenergo.ru/o-nas"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-24",
+        "summary": "Свежая вакансия руководителя отдела продаж: управление действующим отделом и ответственность за командный план продаж, организация ежедневной работы менеджеров, управление через показатели и воронку, контроль KPI и перспективных тендерных закупок.",
+        "sources": [
+          "https://ekaterinburg.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B4%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82-id0820222-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+          "https://ekaterinburg.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+          "https://ekaterinburg.zarplata.ru/vacancies/spetsialist-otdela-kachestva"
+        ]
+      },
+      "lpr": {
+        "owner": "Русскаев Руслан Рахимович — единственный учредитель",
+        "ceo": "Русскаев Руслан Рахимович — генеральный директор",
+        "sources": [
+          "https://spark-interfax.ru/sverdlovskaya-oblast-ekaterinburg/ooo-rst-energo-inn-6686155912-ogrn-1236600063974-084612a51c167b72e063259aa8c0ddbc",
+          "https://reputation.ru/ogrn/1236600063974"
+        ]
+      },
+      "contact_route": {
+        "phone": ["+7 963 854-25-27", "+7 343 344-84-00"],
+        "email": ["info@rstenergo.ru"],
+        "route": "Официальные корпоративные телефоны и email со страницы контактов; при обращении просить соединить или передать предложение генеральному директору/собственнику Руслану Русскаеву.",
+        "source": "https://rstenergo.ru/contacts"
+      },
+      "consulting_hypothesis": "Систематизация промышленного B2B-sales: управление воронкой и KPI, тендерный контур, дисциплина отдела продаж и масштабирование региональной коммерческой модели.",
+      "dedup_keys": {
+        "inn": "6686155912",
+        "ogrn": "1236600063974",
+        "legal_name": "ООО «РСТ ЭНЕРГО»",
+        "brand_domain": "РСТ Энерго|rstenergo.ru"
+      },
+      "dedup_check": "Exact INN repository search returned no matches immediately before staging against fresh main HEAD 6f0733fd823cecef5292e2773304bcdb7002d9a9. Final canonical writer must repeat authoritative physical dedup before integration."
+    }
+  ]
+}
