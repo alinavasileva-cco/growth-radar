@@ -5,7 +5,7 @@
   "updated_at": "2026-08-25T10:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 333,
     "target_count": 5000,
     "current_canonical_count": 334,
     "current_contactable_count": 334,
@@ -24,9 +24,7 @@
     "duplicates": 19,
     "excluded": 44
   },
-  "qualified_companies": [
-    "НЗВИ / Некрасовский Завод Вентиляционных Изделий"
-  ],
+  "qualified_companies": ["НЗВИ / Некрасовский Завод Вентиляционных Изделий"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
