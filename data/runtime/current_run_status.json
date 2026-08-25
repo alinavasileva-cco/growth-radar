@@ -1,36 +1,39 @@
 {
-  "run_id": "N5K-20260825-399",
+  "run_id": "N5K-20260825-400",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T10:00:00+03:00",
+  "updated_at": "2026-08-25T11:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 333,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 334,
-    "current_contactable_count": 334,
-    "progress_added": 334,
-    "remaining": 4666
+    "current_canonical_count": 336,
+    "current_contactable_count": 336,
+    "progress_added": 336,
+    "remaining": 4664
   },
   "funnel": {
-    "discovered": 64,
-    "fast_gate_passed": 10,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 3,
+    "discovered": 36,
+    "fast_gate_passed": 7,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 1,
-    "duplicates": 19,
-    "excluded": 44
+    "qualified": 2,
+    "duplicates": 10,
+    "excluded": 24
   },
-  "qualified_companies": ["НЗВИ / Некрасовский Завод Вентиляционных Изделий"],
+  "qualified_companies": [
+    "LUMIXON / Люмиксон",
+    "Компания Чебо / New Farm"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "334_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "334_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "336_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "336_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
