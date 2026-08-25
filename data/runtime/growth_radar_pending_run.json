@@ -3,110 +3,101 @@
   "updated_at": "2026-08-25T10:00:00+03:00",
   "funnel": {
     "discovered": 64,
-    "fast_gate_passed": 9,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
+    "fast_gate_passed": 10,
+    "size_check_passed": 5,
+    "legal_match_passed": 4,
+    "signal_confirmed": 3,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 1,
-    "duplicates": 18,
-    "excluded": 45
+    "duplicates": 19,
+    "excluded": 44
   },
-  "notes": "RUN 399 starts from freshly verified physical RUN 398 state 333/333, integrity PASS, orphan 0/0, HEAD a4fa3f9fad3b7439d33fac07ae73c4d737d89d71. Discovery used multiple current August-2026 job-board, company-site, industry and growth-signal lanes. 64 distinct company/brand candidates were individually screened at FAST GATE; known Growth Radar repeats and weak/ambiguous brand-to-legal candidates were rejected before deep-check. Alpine Floor passed current legal status, current brand-to-legal evidence, current operational scale, fresh August 2026 sales expansion signal, current owner/CEO and official B2B contact route. GitHub indexed search by INN 9723041076 returned no match before staging; physical integration guard remains final dedup source. No outreach.",
+  "notes": "RUN 399 starts from freshly verified physical RUN 398 state 333/333, integrity PASS, orphan 0/0, HEAD a4fa3f9fad3b7439d33fac07ae73c4d737d89d71. Discovery used current August-2026 job-board, official company-site, industry and growth-signal lanes. 64 distinct company/brand candidates were individually screened. Alpine Floor initially passed content gates but physical integration guard identified it as an existing canonical company despite GitHub indexed search returning no INN match; it is counted as a duplicate and not added. Discovery continued in the same RUN. ООО НЗВИ passed current 2025 scale, current legal/owner/CEO, fresh August 2026 sales-system signal and official contact route. GitHub indexed search by INN 7627056823 returned no match before staging; physical integration guard remains final dedup source. No outreach.",
   "qualified_companies": [
     {
       "Lead ID": "N5K-0486",
-      "Brand": "Alpine Floor / Alpine Group",
-      "Legal Name": "ООО КОМПЛЕКТСТРОЙ",
-      "INN": "9723041076",
-      "OGRN/OGRNIP": "1187746066331",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Напольные покрытия; B2B дилерская и партнерская сеть; торгово-производственная группа",
-      "Website": "https://alpinefloor.su/",
-      "Revenue/Scale": "Действующее частное ООО на 2026 год; официальный и текущий employer-профиль описывает Alpine Group как торгово-производственную компанию из топ-3 производителей напольных покрытий в РФ. ООО Комплектстрой владеет товарным знаком ALPINE FLOOR и рядом связанных марок; юридический профиль подтверждает крупный оптовый контур. Для решения не используется устаревшая численность как основной scale-факт.",
+      "Brand": "НЗВИ / Некрасовский Завод Вентиляционных Изделий",
+      "Legal Name": "ООО НЗВИ",
+      "INN": "7627056823",
+      "OGRN/OGRNIP": "1227600012078",
+      "Region": "Ярославская область",
+      "City": "рп Некрасовское / подразделение Кострома",
+      "Segment": "Производство вентиляционных изделий и систем; промышленный B2B",
+      "Website": "https://nzvi.ru/",
+      "Revenue/Scale": "Действующее ООО; актуальные данные за 2025 год: 7 сотрудников, выручка около 20,6 млн руб. Официальный сайт подтверждает производственную базу более 1000 м² и действующее Костромское подразделение.",
       "Signal Level": "S1",
-      "Signal Summary": "13-14 августа 2026 года Alpine Floor ищет руководителя отдела продаж; параллельно в июле 2026 открыта роль руководителя развития партнерской монобрендовой сети. Сигнал указывает на системное усиление продаж, дилерской/франчайзинговой сети и коммерческой структуры.",
-      "Signal Date": "2026-08-14",
-      "Signal Source": "https://www.rabota-ipoisk.ru/работа-в-москва/компания-alpine-floor/м-павелецкая-павелецкая-серпуховская",
-      "Owner": "Баженов Никита Евгеньевич",
-      "CEO": "Баженов Никита Евгеньевич",
-      "LPR": "Баженов Никита Евгеньевич",
+      "Signal Summary": "В августе 2026 года ООО НЗВИ ищет руководителя отдела продаж, который должен вывести команду и бизнес на новый уровень; сигнал прямо относится к систематизации и развитию продаж производственной компании.",
+      "Signal Date": "2026-08-25",
+      "Signal Source": "https://www.notexistskhtjsru.jobvk.com/kostroma/pl-musoropererabativayushtiy-zavod",
+      "Owner": "Румянцева Анна Сергеевна",
+      "CEO": "Румянцева Анна Сергеевна",
+      "LPR": "Румянцева Анна Сергеевна",
       "LPR Role": "Генеральный директор и единственный учредитель",
-      "Primary Phone": "8 (800) 700-28-73",
-      "Primary Email": "Information@alpinefloor.ru",
-      "HH Contact": "Current Alpine Floor employer vacancy route",
-      "Contact Form": "https://alpinefloor.su/cooperation/",
-      "Contact Type": "Official B2B partnership route + employer vacancy route",
-      "Contact Source": "Official Alpine Floor website + current employer vacancy",
-      "Number Of Contacts Found": 3,
-      "Consulting Hypothesis": "Системное масштабирование B2B-дилерской и партнерской сети: сегментация каналов, управление P&L по направлениям, единая воронка, KPI и развитие региональной/монобрендовой сети.",
+      "Primary Phone": "",
+      "Primary Email": "mail@nzvi.ru",
+      "HH Contact": "Current direct-employer vacancy route",
+      "Contact Form": "https://nzvi.ru/",
+      "Contact Type": "Official corporate email + direct-employer vacancy route",
+      "Contact Source": "Official NZVI website + current August 2026 vacancy listing",
+      "Number Of Contacts Found": 2,
+      "Consulting Hypothesis": "Систематизация промышленного B2B-sales: сегментация клиентов и объектов, воронка, KPI, управление sales-командой, развитие регионального спроса и связки продажи-инжиниринг-снабжение.",
       "contacts": [
         {
-          "value": "8 (800) 700-28-73",
-          "channel": "Phone",
-          "type": "Official corporate/B2B",
-          "source": "Official Alpine Floor website",
-          "url": "https://alpinefloor.su/cooperation/",
-          "is_lpr": false,
-          "notes": "Официальный корпоративный маршрут"
-        },
-        {
-          "value": "Information@alpinefloor.ru",
+          "value": "mail@nzvi.ru",
           "channel": "Email",
-          "type": "Official corporate/B2B",
-          "source": "Official Alpine Floor website",
-          "url": "https://alpinefloor.su/cooperation/",
+          "type": "Official corporate",
+          "source": "Official NZVI website",
+          "url": "https://nzvi.ru/",
           "is_lpr": false,
-          "notes": "Официальный email для сотрудничества"
+          "notes": "Официальный email для заявок и контакта"
         },
         {
-          "value": "https://alpinefloor.su/cooperation/",
-          "channel": "Web form",
-          "type": "Partnership form",
-          "source": "Official Alpine Floor website",
-          "url": "https://alpinefloor.su/cooperation/",
+          "value": "Current direct-employer ООО НЗВИ vacancy route",
+          "channel": "Vacancy",
+          "type": "Employer route",
+          "source": "Current August 2026 job-board listing",
+          "url": "https://www.notexistskhtjsru.jobvk.com/kostroma/pl-musoropererabativayushtiy-zavod",
           "is_lpr": false,
-          "notes": "Практический B2B маршрут"
+          "notes": "Практический маршрут через актуальную вакансию прямого работодателя"
         }
       ],
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО Комплектстрой действует; ИНН 9723041076, ОГРН 1187746066331; генеральный директор и единственный учредитель Баженов Никита Евгеньевич.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1187746066331/",
-          "source": "Current company profile"
+          "claim": "ООО НЗВИ действует; ИНН 7627056823, ОГРН 1227600012078; Румянцева Анна Сергеевна — генеральный директор и единственный учредитель.",
+          "url": "https://reputation.ru/ogrn/1227600012078",
+          "source": "Current 2026 company profile"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "Текущий employer-профиль Alpine Floor описывает Alpine Group как российскую торгово-производственную компанию и топ-3 производителя напольных покрытий; официальный сайт показывает федеральную дилерскую/партнерскую инфраструктуру.",
-          "url": "https://www.rabota-ipoisk.ru/работа-в-москва/компания-alpine-floor/м-павелецкая-павелецкая-серпуховская",
-          "source": "Current employer listing + official company website"
+          "claim": "Актуальные данные за 2025 год показывают 7 сотрудников и рост выручки до примерно 20,6 млн руб.; официальный сайт подтверждает производственную базу более 1000 м² и действующее подразделение в Костроме.",
+          "url": "https://reputation.ru/ogrn/1227600012078",
+          "source": "Current 2026 company profile + official NZVI website"
         },
         {
           "type": "SIGNAL",
-          "claim": "13-14 августа 2026 года Alpine Floor публикует вакансию руководителя отдела продаж; 23 июля 2026 года опубликована роль руководителя развития партнерской монобрендовой сети.",
-          "url": "https://www.rabota-ipoisk.ru/работа-в-москва/компания-alpine-floor/м-павелецкая-павелецкая-серпуховская",
-          "source": "Current job-board listings"
+          "claim": "В августе 2026 года ООО НЗВИ ищет руководителя отдела продаж, который должен вывести команду и бизнес на новый уровень.",
+          "url": "https://www.notexistskhtjsru.jobvk.com/kostroma/pl-musoropererabativayushtiy-zavod",
+          "source": "Current August 2026 job-board listing"
         },
         {
           "type": "LPR",
-          "claim": "Баженов Никита Евгеньевич является действующим генеральным директором и единственным учредителем ООО Комплектстрой.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1187746066331/",
-          "source": "Current company profile"
+          "claim": "Румянцева Анна Сергеевна — действующий генеральный директор и единственный учредитель ООО НЗВИ.",
+          "url": "https://reputation.ru/ogrn/1227600012078",
+          "source": "Current 2026 company profile"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный Alpine Floor публикует корпоративный телефон 8 (800) 700-28-73, Information@alpinefloor.ru и форму заявки на сотрудничество.",
-          "url": "https://alpinefloor.su/cooperation/",
-          "source": "Official Alpine Floor website"
+          "claim": "Официальный сайт НЗВИ публикует корпоративный email mail@nzvi.ru и адреса производственной базы/Костромского подразделения.",
+          "url": "https://nzvi.ru/",
+          "source": "Official NZVI website"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "ООО Комплектстрой является правообладателем товарного знака ALPINE FLOOR; свежие сертификаты Alpine Floor также указывают ООО Комплектстрой, ИНН 9723041076, как заявителя.",
-          "url": "https://companies.rbc.ru/trademark/765199/alpine-floor/",
-          "source": "Trademark registry profile + current certificates"
+          "claim": "Официальный сайт прямо называет ООО НЗВИ как Некрасовский Завод Вентиляционных Изделий и указывает тот же юридический адрес в Некрасовском, который подтверждается реестровыми профилями.",
+          "url": "https://nzvi.ru/",
+          "source": "Official NZVI website + current legal profile"
         }
       ]
     }
