@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-25T20:58:00+03:00",
+  "updated_at": "2026-08-25T21:01:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-409",
-  "current_run_id": "N5K-20260825-409",
+  "last_completed_run_id": "N5K-20260825-410",
+  "current_run_id": "N5K-20260825-410",
   "last_run_id": "N5K-20260825-410",
   "latest_completed_run": "N5K-20260825-410",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 409 completed after physical integration and metadata REPAIR: +1 net new company. Physical canonical/contactable 353/353; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 410 completed after physical integration and metadata REPAIR: +1 net new company (Леммо-Тойс / LEMMO-TOYS). Physical canonical/contactable 354/354; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
