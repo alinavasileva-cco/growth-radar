@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-25T16:57:40+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-405",
-  "current_run_id": "N5K-20260825-405",
+  "last_completed_run_id": "N5K-20260825-406",
+  "current_run_id": "N5K-20260825-406",
   "last_run_id": "N5K-20260825-406",
   "latest_completed_run": "N5K-20260825-406",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 405 completed: +1 net new company, ФОРШ / FORSH. Physical canonical/contactable 343/343; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 406 completed: +3 net new companies. Physical canonical/contactable 346/346; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
