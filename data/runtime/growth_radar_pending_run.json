@@ -1,72 +1,72 @@
 {
-  "run_id": "N5K-20260825-396",
-  "updated_at": "2026-08-25T09:00:00+05:00",
+  "run_id": "N5K-20260825-397",
+  "updated_at": "2026-08-25T10:00:00+05:00",
   "funnel": {
-    "discovered": 20,
-    "fast_gate_passed": 5,
+    "discovered": 24,
+    "fast_gate_passed": 6,
     "size_check_passed": 3,
     "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 3,
-    "excluded": 16
+    "duplicates": 5,
+    "excluded": 18
   },
-  "notes": "RUN 396 starts from verified RUN 395 baseline 330/330 PASS orphan 0/0. Fresh August 2026 job-board, current registry/financial and official-company sources were screened. Known repeats, weak/non-current signals, recruiters and ambiguous brand-to-legal matches were removed before deep-check. ООО Парфюм Косметик Сервис / Новая Заря passed current legal status, 2025 scale, fresh August 2026 sales/franchise expansion signal, current CEO/owner and official contact-route gates. GitHub code search by INN returned no indexed match before staging; authoritative physical integration guard remains final dedup source. No outreach.",
+  "notes": "RUN 397 starts from verified RUN 396 baseline 331/331 PASS orphan 0/0. Fresh August 2026 job-board discovery plus current 2025 financial/company and official-site sources were screened. Known repeats and candidates with weak, ambiguous or stale legal/scale evidence were removed before deep-check. ООО СПК Красноярск passed current legal status, 2025 scale, current operational scale, fresh sales-system expansion signal, current director/LPR and official contact-route gates. GitHub code search by INN returned no indexed match before staging; authoritative physical integration guard remains final dedup source. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0483",
-      "Brand": "Новая Заря / Парфюм Косметик Сервис",
-      "Legal Name": "ООО ПАРФЮМ КОСМЕТИК СЕРВИС",
-      "INN": "7725623076",
-      "OGRN/OGRNIP": "1077763339939",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Производство и продажи парфюмерии и косметики; B2B, франчайзинг, розница",
-      "Website": "https://shop.novzar.ru/",
-      "Revenue/Scale": "Действующее ООО; выручка 1 275,412 млн руб. за 2025 год; ССЧ 39 сотрудников по свежему профилю; собственное производство парфюмерии и косметики, фирменная сеть и франчайзинговый канал.",
+      "Lead ID": "N5K-0484",
+      "Brand": "СПК Красноярск / Светопрозрачные конструкции Красноярск",
+      "Legal Name": "ООО СВЕТОПРОЗРАЧНЫЕ КОНСТРУКЦИИ КРАСНОЯРСК",
+      "INN": "2464253301",
+      "OGRN/OGRNIP": "1132468031651",
+      "Region": "Красноярский край",
+      "City": "Красноярск",
+      "Segment": "Производство окон, фасадов, алюминиевых и ПВХ-конструкций; B2B/B2C/дилерские продажи",
+      "Website": "https://spk-kras.com/",
+      "Revenue/Scale": "Действующее ООО; выручка 515,732 млн руб. за 2025 год. Текущий официальный сайт подтверждает завод полного цикла, более 500 000 установленных окон, крупные B2B-проекты и действующую производственную инфраструктуру; актуальный профиль показывает 56 сотрудников.",
       "Signal Level": "S1",
-      "Signal Summary": "14 августа 2026 компания опубликовала вакансию руководителя отдела продаж Москва и МО с прямой задачей масштабировать присутствие во всех ключевых каналах продаж; параллельно в августе 2026 развивает франчайзинговую сеть и ищет ведущего менеджера по франчайзингу для масштабирования сети по регионам России.",
-      "Signal Date": "2026-08-14",
-      "Signal Source": "https://dreamjob.ru/employers/40403/vakansii/135260438",
-      "Owner": "Мокрицкая Оксана Ярославовна, 100%",
-      "CEO": "Любимов Николай Александрович",
-      "LPR": "Любимов Николай Александрович",
-      "LPR Role": "Генеральный директор",
-      "Primary Phone": "+7 499 237-00-32",
-      "Primary Email": "inetshop@novzar.ru",
-      "HH Contact": "Current direct-employer sales/franchise vacancy route",
-      "Contact Form": "https://shop.novzar.ru/contacts/",
+      "Signal Summary": "В актуальной вакансии руководителя отдела продаж компания прямо связывает найм с масштабированием бизнеса и ставит задачу систематизировать коммерческий блок, разделить продажи на B2C, B2B и дилерское направления и усилить управление воронкой и командой.",
+      "Signal Date": "2026-07-31",
+      "Signal Source": "https://krasnoyarsk.rabotajob.ru/vakansii/rukovoditel-otdela-prodaz/",
+      "Owner": "Шесть действующих участников: Горбунов Артур Михайлович; Титов Вячеслав Анатольевич; Кузнецов Дмитрий Николаевич; Косьяненко Юрий Владимирович; Дорошенко Евгений Александрович; Потрикеева Марина Александровна",
+      "CEO": "Кузнецов Дмитрий Николаевич",
+      "LPR": "Кузнецов Дмитрий Николаевич",
+      "LPR Role": "Директор, совладелец",
+      "Primary Phone": "+7 (391) 275-99-68",
+      "Primary Email": "info@spk-kras.com",
+      "HH Contact": "Current direct-employer Head of Sales vacancy route",
+      "Contact Form": "https://spk-kras.com/",
       "Contact Type": "Official corporate phone + email + current employer vacancy route",
-      "Contact Source": "Official Новая Заря shop + current August 2026 job-board listings + current registry/financial profiles",
+      "Contact Source": "Official СПК Красноярск website + current job-board listing + current registry/financial profiles",
       "Number Of Contacts Found": 3,
-      "Consulting Hypothesis": "Масштабирование многоканальной коммерческой системы: Москва/МО, регионы, франчайзинг, B2B и фирменная розница; управление воронкой, каналами и KPI роста.",
+      "Consulting Hypothesis": "Систематизация и масштабирование многоканальной коммерческой системы B2C/B2B/дилеры: структура отдела, ответственность по каналам, CRM-воронка, KPI и управляемый рост продаж.",
       "contacts": [
         {
-          "value": "+7 499 237-00-32",
+          "value": "+7 (391) 275-99-68",
           "channel": "Phone",
           "type": "Corporate phone",
-          "source": "Official Новая Заря shop",
-          "url": "https://shop.novzar.ru/contacts/",
+          "source": "Official СПК Красноярск website",
+          "url": "https://spk-kras.com/",
           "is_lpr": false,
           "notes": "Официальный корпоративный телефон"
         },
         {
-          "value": "inetshop@novzar.ru",
+          "value": "info@spk-kras.com",
           "channel": "Email",
           "type": "Corporate email",
-          "source": "Official Новая Заря shop",
-          "url": "https://shop.novzar.ru/contacts/",
+          "source": "Official СПК Красноярск website",
+          "url": "https://spk-kras.com/",
           "is_lpr": false,
           "notes": "Официальный корпоративный email"
         },
         {
-          "value": "Current direct-employer sales/franchise vacancy route",
+          "value": "Current direct-employer Head of Sales vacancy route",
           "channel": "Vacancy",
           "type": "Employer route",
-          "source": "Current August 2026 job-board listings",
-          "url": "https://dreamjob.ru/employers/40403/vakansii/135260438",
+          "source": "Current 2026 job-board listing",
+          "url": "https://krasnoyarsk.rabotajob.ru/vakansii/rukovoditel-otdela-prodaz/",
           "is_lpr": false,
           "notes": "Свежий маршрут прямого работодателя"
         }
@@ -74,39 +74,39 @@
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО Парфюм Косметик Сервис действует; ИНН 7725623076, ОГРН 1077763339939; генеральный директор — Любимов Николай Александрович; собственник 100% — Мокрицкая Оксана Ярославовна.",
-          "url": "https://companies.rbc.ru/id/1077763339939-ooo-parfyum-kosmetik-servis/",
+          "claim": "ООО Светопрозрачные конструкции Красноярск действует; ИНН 2464253301, ОГРН 1132468031651; директор — Кузнецов Дмитрий Николаевич; шесть действующих участников.",
+          "url": "https://companies.rbc.ru/id/1132468031651-ooo-svetoprozrachnyie-konstruktsii-krasnoyarsk/",
           "source": "Current registry/company profile"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "За 2025 год выручка 1 275,412 млн руб.; свежий профиль указывает ССЧ 39 сотрудников. Компания производит парфюмерию и косметику и развивает фирменные и франчайзинговые каналы.",
-          "url": "https://companies.rbc.ru/id/1077763339939-ooo-parfyum-kosmetik-servis/",
-          "source": "Current 2025 financial/company profile"
+          "claim": "Выручка за 2025 год 515,732 млн руб.; официальный сайт подтверждает завод полного цикла, более 500 000 установленных окон и крупные B2B-проекты; актуальный профиль показывает 56 сотрудников.",
+          "url": "https://b2b.house/company/OOO-SPK-KRASNOYARSK_640eb136-94bf-4f78-8a01-7eb834b97398/",
+          "source": "Current 2025 financial profile + official company site"
         },
         {
           "type": "SIGNAL",
-          "claim": "14 августа 2026 компания ищет руководителя отдела продаж Москва и МО и прямо ставит задачу масштабировать присутствие во всех ключевых каналах продаж; в августе также масштабирует франчайзинговую сеть по регионам России.",
-          "url": "https://dreamjob.ru/employers/40403/vakansii/135260438",
-          "source": "Current August 2026 job-board listing"
+          "claim": "Актуальный найм руководителя продаж связан с масштабированием бизнеса и систематизацией коммерческого блока; предполагается разделение продаж на B2C, B2B и дилерское направления и усиление управления воронкой.",
+          "url": "https://krasnoyarsk.rabotajob.ru/vakansii/rukovoditel-otdela-prodaz/",
+          "source": "Current 2026 job-board listing"
         },
         {
           "type": "LPR",
-          "claim": "Любимов Николай Александрович — действующий генеральный директор ООО Парфюм Косметик Сервис; Мокрицкая Оксана Ярославовна — 100% собственник.",
-          "url": "https://www.tbank.ru/business/contractor/legal/1077763339939/",
-          "source": "Current registry profile"
+          "claim": "Кузнецов Дмитрий Николаевич — действующий директор и один из участников ООО СПК Красноярск.",
+          "url": "https://companies.rbc.ru/id/1132468031651-ooo-svetoprozrachnyie-konstruktsii-krasnoyarsk/",
+          "source": "Current registry/company profile"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный магазин Новая Заря публикует +7 499 237-00-32 и inetshop@novzar.ru.",
-          "url": "https://shop.novzar.ru/contacts/",
-          "source": "Official Новая Заря shop"
+          "claim": "Официальный сайт СПК Красноярск публикует +7 (391) 275-99-68 и info@spk-kras.com.",
+          "url": "https://spk-kras.com/",
+          "source": "Official company site"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальный интернет-магазин Новая Заря прямо указывает ООО Парфюм Косметик Сервис, адрес Саввинская набережная 25 и ОГРН 1077763339939.",
-          "url": "https://shop.novzar.ru/contacts/",
-          "source": "Official Новая Заря shop"
+          "claim": "Официальный сайт и политика обработки персональных данных прямо идентифицируют оператора как ООО СПК Красноярск; адрес производства ул. Айвазовского, 37а совпадает с юридическим профилем ООО Светопрозрачные конструкции Красноярск.",
+          "url": "https://spk-kras.com/soglasie",
+          "source": "Official company site"
         }
       ]
     }
