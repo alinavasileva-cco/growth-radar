@@ -1,36 +1,40 @@
 {
-  "run_id": "N5K-20260825-413",
+  "run_id": "N5K-20260826-414",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T23:59:00+03:00",
+  "updated_at": "2026-08-26T01:15:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 358,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 359,
-    "current_contactable_count": 359,
-    "progress_added": 359,
-    "remaining": 4641
+    "current_canonical_count": 362,
+    "current_contactable_count": 362,
+    "progress_added": 362,
+    "remaining": 4638
   },
   "funnel": {
-    "discovered": 57,
-    "fast_gate_passed": 5,
-    "size_check_passed": 5,
-    "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
+    "discovered": 96,
+    "fast_gate_passed": 7,
+    "size_check_passed": 6,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
     "duplicates": 0,
-    "excluded": 56
+    "excluded": 93
   },
-  "qualified_companies": ["РСТ Энерго"],
+  "qualified_companies": [
+    "АНЭП / АНЭП-Металл",
+    "КраснодарЭлектро",
+    "ПБС / Petro Building Systems / ПБС-МБО"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "359_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "359_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "362_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "362_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
