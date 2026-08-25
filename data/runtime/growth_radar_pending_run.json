@@ -1,72 +1,72 @@
 {
-  "run_id": "N5K-20260825-395",
-  "updated_at": "2026-08-25T08:20:00+05:00",
+  "run_id": "N5K-20260825-396",
+  "updated_at": "2026-08-25T09:00:00+05:00",
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
+    "discovered": 20,
+    "fast_gate_passed": 5,
     "size_check_passed": 3,
     "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 5,
-    "excluded": 18
+    "duplicates": 3,
+    "excluded": 16
   },
-  "notes": "RUN 395 starts from verified RUN 394 baseline 329/329 PASS orphan 0/0. Fresh August 2026 HH/job-board, registry and official-company streams were screened. Known repeats, recruiters, insufficient current scale, ambiguous brand-to-legal matches and weak/non-current signals were removed at FAST GATE. INSTART passed current legal status, current 2025 scale, current B2B sales-system signal, LPR and official contact-route gates. GitHub code search by INN and INSTART returned no indexed match before staging; authoritative physical integration guard remains final dedup source. No outreach.",
+  "notes": "RUN 396 starts from verified RUN 395 baseline 330/330 PASS orphan 0/0. Fresh August 2026 job-board, current registry/financial and official-company sources were screened. Known repeats, weak/non-current signals, recruiters and ambiguous brand-to-legal matches were removed before deep-check. ООО Парфюм Косметик Сервис / Новая Заря passed current legal status, 2025 scale, fresh August 2026 sales/franchise expansion signal, current CEO/owner and official contact-route gates. GitHub code search by INN returned no indexed match before staging; authoritative physical integration guard remains final dedup source. No outreach.",
   "qualified_companies": [
     {
-      "Lead ID": "N5K-0482",
-      "Brand": "INSTART / Инстарт",
-      "Legal Name": "ООО ИНСТАРТ",
-      "INN": "7811609195",
-      "OGRN/OGRNIP": "1167847209200",
-      "Region": "Санкт-Петербург",
-      "City": "Санкт-Петербург",
-      "Segment": "Производство и B2B-продажи преобразователей частоты, устройств плавного пуска и приводной техники",
-      "Website": "https://instart-info.ru/",
-      "Revenue/Scale": "Действующее ООО; выручка 1 068,599 млн руб. за 2025 год; 53 сотрудника по свежему профилю; собственная разработка и производство приводной техники, 13+ лет на рынке.",
+      "Lead ID": "N5K-0483",
+      "Brand": "Новая Заря / Парфюм Косметик Сервис",
+      "Legal Name": "ООО ПАРФЮМ КОСМЕТИК СЕРВИС",
+      "INN": "7725623076",
+      "OGRN/OGRNIP": "1077763339939",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Производство и продажи парфюмерии и косметики; B2B, франчайзинг, розница",
+      "Website": "https://shop.novzar.ru/",
+      "Revenue/Scale": "Действующее ООО; выручка 1 275,412 млн руб. за 2025 год; ССЧ 39 сотрудников по свежему профилю; собственное производство парфюмерии и косметики, фирменная сеть и франчайзинговый канал.",
       "Signal Level": "S1",
-      "Signal Summary": "В августе 2026 INSTART ведёт поиск руководителя отдела продаж B2B: выполнение плана, прогнозирование продаж, декомпозиция целей и управление B2B-командой; вакансия размещена прямым работодателем. Компания продолжает обновлять продуктовую линейку и производственный контур.",
-      "Signal Date": "2026-08-25",
-      "Signal Source": "https://spb.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
-      "Owner": "Участники ООО ИНСТАРТ по актуальным данным ЕГРЮЛ; Павлова Вера Александровна входит в состав участников",
-      "CEO": "Павлова Вера Александровна",
-      "LPR": "Павлова Вера Александровна",
+      "Signal Summary": "14 августа 2026 компания опубликовала вакансию руководителя отдела продаж Москва и МО с прямой задачей масштабировать присутствие во всех ключевых каналах продаж; параллельно в августе 2026 развивает франчайзинговую сеть и ищет ведущего менеджера по франчайзингу для масштабирования сети по регионам России.",
+      "Signal Date": "2026-08-14",
+      "Signal Source": "https://dreamjob.ru/employers/40403/vakansii/135260438",
+      "Owner": "Мокрицкая Оксана Ярославовна, 100%",
+      "CEO": "Любимов Николай Александрович",
+      "LPR": "Любимов Николай Александрович",
       "LPR Role": "Генеральный директор",
-      "Primary Phone": "8 800 222 00 21",
-      "Primary Email": "info@instart-info.ru",
-      "HH Contact": "Current direct-employer B2B Head of Sales vacancy route",
-      "Contact Form": "https://instart-info.ru/",
+      "Primary Phone": "+7 499 237-00-32",
+      "Primary Email": "inetshop@novzar.ru",
+      "HH Contact": "Current direct-employer sales/franchise vacancy route",
+      "Contact Form": "https://shop.novzar.ru/contacts/",
       "Contact Type": "Official corporate phone + email + current employer vacancy route",
-      "Contact Source": "Official INSTART site + current August 2026 HH listing + current registry/financial profiles",
+      "Contact Source": "Official Новая Заря shop + current August 2026 job-board listings + current registry/financial profiles",
       "Number Of Contacts Found": 3,
-      "Consulting Hypothesis": "Масштабирование промышленного B2B-sales: управление планом и прогнозом, декомпозиция целей, CRM-воронка, развитие дилерской/партнёрской сети и повышение предсказуемости продаж.",
+      "Consulting Hypothesis": "Масштабирование многоканальной коммерческой системы: Москва/МО, регионы, франчайзинг, B2B и фирменная розница; управление воронкой, каналами и KPI роста.",
       "contacts": [
         {
-          "value": "8 800 222 00 21",
+          "value": "+7 499 237-00-32",
           "channel": "Phone",
           "type": "Corporate phone",
-          "source": "Official INSTART site",
-          "url": "https://instart-info.ru/",
+          "source": "Official Новая Заря shop",
+          "url": "https://shop.novzar.ru/contacts/",
           "is_lpr": false,
-          "notes": "Официальный федеральный телефон"
+          "notes": "Официальный корпоративный телефон"
         },
         {
-          "value": "info@instart-info.ru",
+          "value": "inetshop@novzar.ru",
           "channel": "Email",
           "type": "Corporate email",
-          "source": "Official INSTART site",
-          "url": "https://instart-info.ru/",
+          "source": "Official Новая Заря shop",
+          "url": "https://shop.novzar.ru/contacts/",
           "is_lpr": false,
           "notes": "Официальный корпоративный email"
         },
         {
-          "value": "Current direct-employer B2B Head of Sales vacancy route",
+          "value": "Current direct-employer sales/franchise vacancy route",
           "channel": "Vacancy",
           "type": "Employer route",
-          "source": "Current August 2026 HH listing",
-          "url": "https://spb.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
+          "source": "Current August 2026 job-board listings",
+          "url": "https://dreamjob.ru/employers/40403/vakansii/135260438",
           "is_lpr": false,
           "notes": "Свежий маршрут прямого работодателя"
         }
@@ -74,39 +74,39 @@
       "evidence": [
         {
           "type": "LEGAL",
-          "claim": "ООО ИНСТАРТ действует; ИНН 7811609195, ОГРН 1167847209200; генеральный директор — Павлова Вера Александровна.",
-          "url": "https://companies.rbc.ru/id/1167847209200-ooo-instart/",
+          "claim": "ООО Парфюм Косметик Сервис действует; ИНН 7725623076, ОГРН 1077763339939; генеральный директор — Любимов Николай Александрович; собственник 100% — Мокрицкая Оксана Ярославовна.",
+          "url": "https://companies.rbc.ru/id/1077763339939-ooo-parfyum-kosmetik-servis/",
           "source": "Current registry/company profile"
         },
         {
           "type": "SCALE_CURRENT",
-          "claim": "За 2025 год выручка 1 068,599 млн руб.; свежий профиль указывает 53 сотрудника. Официальный сайт подтверждает собственную разработку и производство приводной техники.",
-          "url": "https://basis.myseldon.com/ru/company/1167847209200",
-          "source": "Current 2025 financial profile + official site"
+          "claim": "За 2025 год выручка 1 275,412 млн руб.; свежий профиль указывает ССЧ 39 сотрудников. Компания производит парфюмерию и косметику и развивает фирменные и франчайзинговые каналы.",
+          "url": "https://companies.rbc.ru/id/1077763339939-ooo-parfyum-kosmetik-servis/",
+          "source": "Current 2025 financial/company profile"
         },
         {
           "type": "SIGNAL",
-          "claim": "В августе 2026 INSTART размещает вакансию руководителя отдела продаж B2B с ответственностью за план продаж, прогнозирование, декомпозицию целей и управление B2B-продажами.",
-          "url": "https://spb.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
-          "source": "Current August 2026 HH listing"
+          "claim": "14 августа 2026 компания ищет руководителя отдела продаж Москва и МО и прямо ставит задачу масштабировать присутствие во всех ключевых каналах продаж; в августе также масштабирует франчайзинговую сеть по регионам России.",
+          "url": "https://dreamjob.ru/employers/40403/vakansii/135260438",
+          "source": "Current August 2026 job-board listing"
         },
         {
           "type": "LPR",
-          "claim": "Павлова Вера Александровна — действующий генеральный директор ООО ИНСТАРТ.",
-          "url": "https://xfirm.ru/company/7811609195",
+          "claim": "Любимов Николай Александрович — действующий генеральный директор ООО Парфюм Косметик Сервис; Мокрицкая Оксана Ярославовна — 100% собственник.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1077763339939/",
           "source": "Current registry profile"
         },
         {
           "type": "CONTACT",
-          "claim": "Официальный сайт публикует 8 800 222 00 21 и info@instart-info.ru.",
-          "url": "https://instart-info.ru/",
-          "source": "Official INSTART site"
+          "claim": "Официальный магазин Новая Заря публикует +7 499 237-00-32 и inetshop@novzar.ru.",
+          "url": "https://shop.novzar.ru/contacts/",
+          "source": "Official Новая Заря shop"
         },
         {
           "type": "BRAND_LEGAL",
-          "claim": "Официальная страница реквизитов прямо указывает ООО Инстарт, ИНН 7811609195, ОГРН 1167847209200 и тот же адрес компании.",
-          "url": "https://instart-info.ru/o-kompanii/rekvizity/",
-          "source": "Official INSTART site"
+          "claim": "Официальный интернет-магазин Новая Заря прямо указывает ООО Парфюм Косметик Сервис, адрес Саввинская набережная 25 и ОГРН 1077763339939.",
+          "url": "https://shop.novzar.ru/contacts/",
+          "source": "Official Новая Заря shop"
         }
       ]
     }
