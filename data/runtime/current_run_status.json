@@ -2,10 +2,10 @@
   "run_id": "N5K-20260825-405",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T16:03:58+03:00",
+  "updated_at": "2026-08-25T16:06:30+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 342,
     "target_count": 5000,
     "current_canonical_count": 343,
     "current_contactable_count": 343,
@@ -24,9 +24,7 @@
     "duplicates": 2,
     "excluded": 7
   },
-  "qualified_companies": [
-    "ФОРШ / FORSH"
-  ],
+  "qualified_companies": ["ФОРШ / FORSH"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
