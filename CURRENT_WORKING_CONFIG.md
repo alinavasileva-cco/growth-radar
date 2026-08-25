@@ -1,21 +1,21 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-25T10:00:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260825-399`  
+**Версия:** 2026-08-25T11:06:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260825-400`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **334 / 334**  
+**Физически подтверждённый canonical/contactable:** **336 / 336**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4666**  
+**Осталось:** **4664**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- physical canonical/contactable count: **334 / 334**;
+- physical canonical/contactable count: **336 / 336**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260825-399`;
+- последний завершённый RUN: `N5K-20260825-400`;
 - physical master/integration guard является финальным источником дедупликации;
 - устаревшие данные не использовать в решениях, если доступны более свежие подтверждённые сведения.
 
@@ -36,24 +36,24 @@
 13. Не выполнять outreach, не готовить письма и не тратить RUN на задачи вне поиска/квалификации/интеграции.
 14. Технические записи делать пакетно и не создавать отдельный commit на каждый stage/candidate, если это не требуется доступным GitHub-интерфейсом.
 
-## Последний подробный RUN — N5K-20260825-399
+## Последний подробный RUN — N5K-20260825-400
 
-Baseline перед RUN: **333 / 333**.  
-Фактически индивидуально обработано raw-кандидатов: **64**. Целевые 200–300 в этом RUN не достигнуты и не заявляются.  
-Воронка после authoritative physical dedup и REPAIR: discovered **64** → fast gate **10** → size **5** → legal **4** → signal **3** → LPR **2** → contact **2** → qualified unique **1** → physically integrated **1**.  
-Duplicates: **19**. Excluded: **44**.  
-Добавлена:
-- **НЗВИ / Некрасовский Завод Вентиляционных Изделий / ООО «НЗВИ»**, ИНН `7627056823`, ОГРН `1227600012078`, Lead ID `N5K-0486`.
+Baseline перед RUN: **334 / 334**.  
+Фактически индивидуально обработано raw-кандидатов: **36**. Целевые 200–300 в этом RUN не достигнуты и не заявляются.  
+Воронка после authoritative physical dedup и REPAIR: discovered **36** → fast gate **7** → size **4** → legal **3** → signal **2** → LPR **2** → contact **2** → qualified unique **2** → physically integrated **2**.  
+Duplicates: **10**. Excluded: **24**.  
+Добавлены:
+- **LUMIXON / Люмиксон / ООО «ЛЮМИКСОН»**, ИНН `9724128139`, ОГРН `1237700242174`, Lead ID `N5K-0487`.
+- **Компания Чебо / New Farm / ООО «КОМПАНИЯ ЧЕБО»**, ИНН `2116000035`, ОГРН `1142135010962`, Lead ID `N5K-0488`.
 
-Итог physical canonical/contactable: **334 / 334**.  
+Итог physical canonical/contactable: **336 / 336**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Outreach: **0**.  
-Alpine Floor первоначально прошёл содержательные гейты, но физический integration guard выявил существующий дубль, поэтому компания повторно не засчитана. Discovery продолжен в том же RUN. Для НЗВИ использованы актуальные данные 2025–2026: действующее юрлицо, 7 сотрудников, выручка около 20,6 млн ₽ за 2025 год, собственник/гендиректор Анна Румянцева, свежий августовский сигнал на усиление отдела продаж и официальный маршрут `mail@nzvi.ru`. Автоматический stale runtime baseline `294` после интеграции исправлен на фактический baseline `333`; campaign target, run metrics и рабочая конфигурация синхронизированы на RUN 399.
+Первый integration-trigger физически добавил обе компании. Повторный REPAIR-trigger сработал уже после этого, увидел их как существующие и временно перезаписал funnel как qualified=0/duplicates=12; одновременно интегратор снова использовал stale baseline `294`. Physical master/contactable не пострадали и оставались 336/336. Runtime, campaign target, run metrics, authoritative отдельный RUN-log, report и эта конфигурация восстановлены по физическому состоянию. Повторного прироста не было.
 
 История предыдущих RUN сохранена в `run_logs`, `reports`, shards/increments и Git history.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260825-390`: 321/321, +1, PASS, orphan 0/0.
 - `N5K-20260825-391`: 323/323, +2, PASS, orphan 0/0.
 - `N5K-20260825-392`: 325/325, +2, PASS, orphan 0/0.
 - `N5K-20260825-393`: 328/328, +3, PASS, orphan 0/0.
@@ -63,14 +63,7 @@ Alpine Floor первоначально прошёл содержательны�
 - `N5K-20260825-397`: 332/332, +1, PASS, orphan 0/0.
 - `N5K-20260825-398`: 333/333, +1, PASS, orphan 0/0.
 - `N5K-20260825-399`: 334/334, +1, PASS, orphan 0/0.
-
-## Latest verified run N5K-20260825-399
-Canonical/contactable: 334/334. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260825-400
-Canonical/contactable: 336/336. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260825-400`: 336/336, +2, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260825-400
 Canonical/contactable: 336/336. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
