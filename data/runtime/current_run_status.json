@@ -5,7 +5,7 @@
   "updated_at": "2026-08-25T20:17:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 352,
     "target_count": 5000,
     "current_canonical_count": 353,
     "current_contactable_count": 353,
@@ -24,9 +24,7 @@
     "duplicates": 1,
     "excluded": 48
   },
-  "qualified_companies": [
-    "НПО ЗЕНИТ-СЕВЕР / ЭКОВАРД"
-  ],
+  "qualified_companies": ["НПО ЗЕНИТ-СЕВЕР / ЭКОВАРД"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
