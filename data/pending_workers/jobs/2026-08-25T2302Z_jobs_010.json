@@ -1,0 +1,181 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-26T02:02:52+03:00",
+  "source_head_sha": "0e504cb13b8d1c4cf385592adbfdf5877fecf9bb",
+  "source_run": "N5K-20260826-414",
+  "canonical_snapshot": {
+    "physical_canonical": 362,
+    "physical_contactable": 362,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "scope": "job-board discovery only; no canonical writes; no outreach",
+  "metrics": {
+    "raw_unique_employers": 46,
+    "deep_checked": 4,
+    "qualified": 2
+  },
+  "raw_employers": [
+    "ООО Агрофирма Партнер",
+    "MERTECO",
+    "ООО ПНК-Регион",
+    "ООО Лавитек",
+    "ООО КОМЕК МАШИНЕРИ",
+    "ООО Сан Лоджистик",
+    "ООО Завод Механической Обработки Деталей и Сборки",
+    "ООО Т мотор",
+    "ИП Нефёдов Юрий Георгиевич",
+    "ООО ТК Автоматизация",
+    "ООО фирма Соло",
+    "ИП Хакимова Евгения Сергеевна",
+    "Ural Fashion Group",
+    "Уральский гольф-клуб",
+    "РОДНО",
+    "GARAND ex-EURODOM",
+    "IBC Human Resources",
+    "ООО ВМП-Инжиниринг",
+    "Степанов",
+    "ООО УК ФЦБ",
+    "ИП Кудрина Евгения Юрьевна",
+    "ООО КСУ Групп",
+    "ООО Центр микрохирургии глаза Прозрение-Север",
+    "ООО Ремонт Групп",
+    "ДиаМарка",
+    "ООО Мамясам",
+    "ООО Неокомпозит-Тюмень",
+    "Green House",
+    "ООО Управляющая Компания Луч",
+    "ООО 2ДИДЖИТАЛ",
+    "ООО АСС",
+    "ООО Техника Сибири",
+    "Химпром",
+    "ООО Аксиома-Про",
+    "Завод Сибмаш",
+    "ООО Интерсофт 24",
+    "АО Спутник",
+    "ООО АГРОИМПОРТ",
+    "Арман",
+    "ООО Единый Центр Инвестиций",
+    "Группа компаний ПроАгро",
+    "Дверянин",
+    "ООО Таливенда",
+    "ООО Реал",
+    "ООО ПромМаркет",
+    "PACKRUS (ООО Экопак)"
+  ],
+  "qualified_companies": [
+    {
+      "brand": "Таливенда / Talivenda",
+      "legal_name": "ООО ТАЛИВЕНДА",
+      "inn": "1215224210",
+      "ogrn": "1181215003364",
+      "region": "Республика Марий Эл",
+      "city": "Йошкар-Ола",
+      "status": "QUALIFIED",
+      "legal_status": "действующая частная компания",
+      "scale": {
+        "revenue_2025_rub": 223120000,
+        "employees": 97,
+        "evidence": [
+          "https://vaskov.pro/company/1215224210",
+          "https://basis.myseldon.com/ru/company/1181215003364/taxes"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-03",
+        "summary": "Компания масштабирует продажи в России и на экспортных рынках и ищет коммерческого директора для устойчивого роста выручки и маржинальной прибыли, построения коммерческой системы, KPI и CRM-дисциплины, развития новых и экспортных продаж и снижения зависимости коммерческого блока от собственника.",
+        "source": "https://dreamjob.ru/employers/107775/vakansii/135822503"
+      },
+      "owner_lpr": {
+        "majority_owner": "Зоткин Владимир Анатольевич",
+        "majority_share": "90%",
+        "other_owner": "Житаренко Ольга Петровна",
+        "other_share": "10%",
+        "executive": "Ефремов Алексей Иванович",
+        "executive_role": "управляющий",
+        "evidence": [
+          "https://companies.rbc.ru/id/1181215003364-ooo-talivenda/",
+          "https://www.tbank.ru/business/contractor/legal/1181215003364/"
+        ]
+      },
+      "contact_route": {
+        "phone": "8 800 6000 444",
+        "email": "sales@talivenda.com",
+        "form": "https://talivenda.ru/kontakty",
+        "type": "официальный корпоративный маршрут",
+        "evidence": "https://talivenda.ru/kontakty"
+      },
+      "brand_legal_evidence": "https://talivenda.ru/politica_confidentsialnosty",
+      "dedup": {
+        "checked_against_fresh_repository_before_write": true,
+        "exact_inn_matches_found": 0,
+        "keys": ["1215224210", "1181215003364", "ООО ТАЛИВЕНДА", "talivenda.ru"]
+      }
+    },
+    {
+      "brand": "НеоКомпозит / Неокомпозит-Тюмень",
+      "legal_name": "ООО НЕОКОМПОЗИТ-ТЮМЕНЬ",
+      "short_legal_name": "ООО НЕОКОМ-ТМН",
+      "inn": "7204177457",
+      "ogrn": "1127232004921",
+      "region": "Тюменская область",
+      "city": "Тюмень",
+      "status": "QUALIFIED",
+      "legal_status": "действующая частная компания",
+      "scale": {
+        "revenue_2025_rub": 105002000,
+        "evidence": [
+          "https://companies.rbc.ru/id/1127232004921-ooo-fratril/",
+          "https://www.100best.ru/sites/default/files/users/admin/catalog_2023/c2023.pdf"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-09",
+        "summary": "Компания ищет коммерческого директора для аудита текущих каналов, запуска новых ниш и каналов сбыта, формирования коммерческой команды, построения KPI, управления маржинальностью и unit-экономикой, синхронизации продаж с производством и развития федеральных сетей, маркетплейсов и дилерской сети.",
+        "source": "https://dreamjob.ru/employers/141513/vakansii/135842959"
+      },
+      "owner_lpr": {
+        "majority_owner": "Окаев Эльмуди Омранович",
+        "majority_share": "51%",
+        "other_owner": "АО Неокомпозит",
+        "other_share": "49%",
+        "executive": "Коротовских Максим Владимирович",
+        "executive_role": "генеральный директор",
+        "evidence": [
+          "https://companies.rbc.ru/id/1127232004921-ooo-fratril/",
+          "https://check.tochka.com/company/1127232004921/"
+        ]
+      },
+      "contact_route": {
+        "phone": "8 800 222 33 72",
+        "hr_phone": "+7 (922) 045-08-50",
+        "email": "info@neocomposite.ru",
+        "dealer_email": "zakaz@neocomposite.ru",
+        "form": "https://neocomposite.ru/kontakty/",
+        "type": "официальный корпоративный и HR-маршрут",
+        "evidence": "https://neocomposite.ru/kontakty/"
+      },
+      "brand_legal_evidence": "https://www.100best.ru/sites/default/files/users/admin/catalog_2023/c2023.pdf",
+      "dedup": {
+        "checked_against_fresh_repository_before_write": true,
+        "exact_inn_matches_found": 0,
+        "keys": ["7204177457", "1127232004921", "ООО НЕОКОМПОЗИТ-ТЮМЕНЬ", "neocomposite.ru"]
+      }
+    }
+  ],
+  "deep_rejects": [
+    {
+      "candidate": "ДиаМарка",
+      "reason": "Не staged: в актуальных официальных страницах бренда используются разные юридические поставщики/операторы по регионам; надёжная единичная brand-to-legal связка для текущей вакансии не подтверждена без допущений."
+    },
+    {
+      "candidate": "ООО Интерсофт 24",
+      "reason": "Не staged: выручка 2025 около 3,94 млн руб., что ниже целевого масштаба."
+    }
+  ],
+  "outreach": 0,
+  "canonical_modified": false
+}
