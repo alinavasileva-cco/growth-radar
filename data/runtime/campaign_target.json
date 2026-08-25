@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-25T22:58:00+03:00",
+  "updated_at": "2026-08-25T22:59:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260825-411",
-  "current_run_id": "N5K-20260825-411",
+  "last_completed_run_id": "N5K-20260825-412",
+  "current_run_id": "N5K-20260825-412",
   "last_run_id": "N5K-20260825-412",
   "latest_completed_run": "N5K-20260825-412",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 411 completed after physical integration and metadata REPAIR: +2 net new companies (СНК-С / SNK-S; Ариэль Инокс / Ariel Inox). Physical canonical/contactable 356/356; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 412 completed after physical integration and metadata REPAIR: +2 net new companies (АФ «Перспектива» ОМЗ; ИПС «Свердловская»). Physical canonical/contactable 358/358; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
