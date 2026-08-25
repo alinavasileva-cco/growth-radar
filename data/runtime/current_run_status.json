@@ -1,11 +1,11 @@
 {
-  "run_id": "N5K-20260825-398",
+  "run_id": "N5K-20260825-399",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-25T11:00:00+05:00",
+  "updated_at": "2026-08-25T10:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 332,
+    "baseline_count": 294,
     "target_count": 5000,
     "current_canonical_count": 333,
     "current_contactable_count": 333,
@@ -13,18 +13,18 @@
     "remaining": 4667
   },
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 5,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
+    "discovered": 64,
+    "fast_gate_passed": 9,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 8,
-    "excluded": 15
+    "qualified": 0,
+    "duplicates": 19,
+    "excluded": 45
   },
-  "qualified_companies": ["Новый Мир Брн"],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
