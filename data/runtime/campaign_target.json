@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-26T15:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260826-429",
-  "current_run_id": "N5K-20260826-429",
+  "last_completed_run_id": "N5K-20260826-430",
+  "current_run_id": "N5K-20260826-430",
   "last_run_id": "N5K-20260826-430",
   "latest_completed_run": "N5K-20260826-430",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 429 completed after physical integration and metadata REPAIR: +1 net new company (Три Точки Мануфактуринг / Three Points Manufacturing). Physical canonical/contactable 386/386; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 430 completed after physical integration and metadata REPAIR: +2 net new companies (Терика Восток / TERIKA; Пермский завод грузовой техники / ПЗГТ). Physical canonical/contactable 388/388; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

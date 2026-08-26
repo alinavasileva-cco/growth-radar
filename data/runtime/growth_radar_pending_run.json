@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260826-430",
   "updated_at": "2026-08-26T15:18:00+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "status": "CLEARED_AFTER_INTEGRATION",
   "funnel": {
     "discovered": 14,
     "fast_gate_passed": 4,
@@ -26,87 +26,6 @@
     {"lane":"franchise/dealer catalogs","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
     {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
   ],
-  "notes": "RUN 430 low-overlap multi-lane discovery. Fresh source-of-truth before write: RUN 429, physical canonical/contactable 386/386, integrity PASS, orphan 0/0, staged 0. Both candidates passed exact repository search by INN immediately before staging. No outreach.",
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0539",
-      "Brand": "Терика Восток / TERIKA",
-      "Legal Name": "ООО «ТЕРИКА ВОСТОК»",
-      "INN": "2807016612",
-      "OGRN/OGRNIP": "1252800004490",
-      "Region": "Амурская область",
-      "City": "Свободненский муниципальный округ",
-      "Segment": "Полимерная упаковка / FFS-пленка / промышленное производство",
-      "Website": "https://terika.ru/",
-      "Revenue/Scale": "Новый производственный проект: инвестиции 585 млн ₽, 43 рабочих места, 5 многослойных экструзионных линий, проектная мощность 14 000 тонн FFS-пленки в год; первая линия запланирована к запуску в августе 2026 года",
-      "Signal Level": "S2",
-      "Signal Summary": "В 2026 году ООО «Терика Восток» выводит на операционную стадию новый завод FFS-пленки рядом с Амурским ГХК; свежая вакансия 13.08.2026 подтверждает фактический набор производственной команды и старт завода в Свободном.",
-      "Signal Date": "2026-08-13",
-      "Signal Source": "КРДВ; актуальная вакансия TERIKA; распоряжение Правительства Амурской области от 02.06.2026",
-      "Owner": "ООО «СТЕЛОС» (100%)",
-      "CEO": "Слободянюк Дмитрий Игоревич",
-      "LPR": "Слободянюк Дмитрий Игоревич",
-      "LPR Role": "Генеральный директор",
-      "Primary Phone": "+7 4842 596926",
-      "Primary Email": "info@terika.ru",
-      "HH Contact": "Актуальная вакансия TERIKA / ООО «Терика Восток»",
-      "Contact Form": "https://terika.ru/",
-      "Contact Type": "Корпоративный маршрут группы TERIKA + прямой employer-route нового проекта",
-      "Contact Source": "Официальный сайт TERIKA; актуальная вакансия ООО «Терика Восток»",
-      "Consulting Hypothesis": "Коммерческая система для нового промышленного актива: запуск B2B-продаж FFS-пленки, клиентская диверсификация за пределами якорного АГХК, pricing/margin model, pipeline и загрузка новых линий по мере ввода мощностей.",
-      "contacts": [
-        {"value":"+7 4842 596926","channel":"phone","type":"corporate","source":"Официальный сайт TERIKA","url":"https://terika.ru/","is_lpr":false,"notes":"Корпоративный телефон группы TERIKA"},
-        {"value":"info@terika.ru","channel":"email","type":"corporate","source":"Официальный сайт TERIKA","url":"https://terika.ru/","is_lpr":false,"notes":"Корпоративный email группы TERIKA"},
-        {"value":"https://svobodnyy.cataloxy.ru/rabota/vacancy1127232846_operator-proizvodstvennoy-linii-ekstruziya-plenki.htm","channel":"web","type":"employer_route","source":"Актуальная вакансия TERIKA / HeadHunter mirror","url":"https://svobodnyy.cataloxy.ru/rabota/vacancy1127232846_operator-proizvodstvennoy-linii-ekstruziya-plenki.htm","is_lpr":false,"notes":"Прямой маршрут к работодателю нового завода"}
-      ],
-      "evidence": [
-        {"type":"LEGAL","claim":"ООО «ТЕРИКА ВОСТОК», ИНН 2807016612, ОГРН 1252800004490, действует; генеральный директор Слободянюк Дмитрий Игоревич; учредитель ООО «СТЕЛОС».","url":"https://companies.rbc.ru/id/1252800004490-ooo-terika-vostok/","source":"РБК Компании / ЕГРЮЛ-профиль"},
-        {"type":"SCALE","claim":"Инвестиции в новый завод 585 млн ₽, 43 рабочих места, 5 экструзионных линий, проектная мощность 14 000 тонн FFS-пленки в год.","url":"https://erdc.ru/news/novyy-rezident-tor-amurskaya-sozdast-proizvodstvo-sovremennoy-upakovki-dlya-produktsii-amurskogo-gkh/","source":"КРДВ"},
-        {"type":"SIGNAL","claim":"Запуск первой линии намечен на август 2026; 13.08.2026 опубликована производственная вакансия, где указано, что новый завод в Свободном начинает работать.","url":"https://svobodnyy.cataloxy.ru/rabota/vacancy1127232846_operator-proizvodstvennoy-linii-ekstruziya-plenki.htm","source":"Актуальная вакансия TERIKA / HeadHunter mirror"},
-        {"type":"LPR","claim":"Генеральный директор ООО «Терика Восток» — Слободянюк Дмитрий Игоревич.","url":"https://companies.rbc.ru/id/1252800004490-ooo-terika-vostok/","source":"РБК Компании"},
-        {"type":"CONTACT","claim":"Официальный корпоративный маршрут TERIKA: +7 4842 596926, info@terika.ru; актуальная вакансия связывает новый проект ООО «Терика Восток» с брендом TERIKA.","url":"https://terika.ru/","source":"Официальный сайт TERIKA"},
-        {"type":"BRAND_TO_LEGAL","claim":"Актуальная вакансия прямо называет ООО «Терика Восток» новым проектом компании TERIKA; КРДВ идентифицирует то же юрлицо как инвестора нового завода.","url":"https://svobodnyy.cataloxy.ru/rabota/vacancy1127232846_operator-proizvodstvennoy-linii-ekstruziya-plenki.htm","source":"Актуальная вакансия TERIKA; КРДВ"}
-      ]
-    },
-    {
-      "Lead ID": "N5K-0540",
-      "Brand": "Пермский завод грузовой техники / ПЗГТ",
-      "Legal Name": "АО «ПЕРМСКИЙ ЗАВОД ГРУЗОВОЙ ТЕХНИКИ»",
-      "INN": "5916031052",
-      "OGRN/OGRNIP": "1025901843880",
-      "Region": "Пермский край",
-      "City": "Краснокамск",
-      "Segment": "Промышленное машиностроение / нефтесервисная спецтехника",
-      "Website": "https://tdgt.ru/",
-      "Revenue/Scale": "Среднее предприятие; 131 сотрудник по отраслевому профилю, 14 500 м² производственных площадей; выручка за 2024 год 1,519 млрд ₽; в 2026 году инвестиционный проект расширения производства превысил 155 млн ₽",
-      "Signal Level": "S2",
-      "Signal Summary": "В августе 2026 года ПЗГТ завершает приоритетный инвестпроект: вводит новый цех компонентных изделий, испытательную зону и площадку хранения, обновляет оборудование и осваивает выпуск высокотехнологичной нефтесервисной спецтехники.",
-      "Signal Date": "2026-08-19",
-      "Signal Source": "Деловые новости Пермского края; официальный сайт ПЗГТ",
-      "Owner": "Миночкина Ольга Александровна",
-      "CEO": "Миночкин Денис Викторович",
-      "LPR": "Миночкин Денис Викторович",
-      "LPR Role": "Руководитель / управляющий АО «ПЗГТ»",
-      "Primary Phone": "+7 (34273) 2-29-11",
-      "Primary Email": "info@pzgt.ru",
-      "HH Contact": "",
-      "Contact Form": "https://tdgt.ru/",
-      "Contact Type": "Официальный корпоративный маршрут к промышленному предприятию",
-      "Contact Source": "Официальный сайт и реквизиты АО «ПЗГТ»",
-      "Consulting Hypothesis": "Коммерческое масштабирование новой линейки нефтесервисной спецтехники после расширения мощностей: сегментация B2B/B2G, key-account pipeline, загрузка нового цеха, маржинальность продуктовых направлений и система продаж сложного оборудования.",
-      "contacts": [
-        {"value":"+7 (34273) 2-29-11","channel":"phone","type":"corporate","source":"Официальные реквизиты ПЗГТ","url":"https://tdgt.ru/company/requisites/","is_lpr":false,"notes":"Официальный телефон предприятия"},
-        {"value":"info@pzgt.ru","channel":"email","type":"corporate","source":"Официальные реквизиты ПЗГТ","url":"https://tdgt.ru/company/requisites/","is_lpr":false,"notes":"Официальный email предприятия"},
-        {"value":"https://tdgt.ru/","channel":"web","type":"corporate","source":"Официальный сайт ПЗГТ","url":"https://tdgt.ru/","is_lpr":false,"notes":"Форма заявки / корпоративный сайт"}
-      ],
-      "evidence": [
-        {"type":"LEGAL","claim":"АО «Пермский завод грузовой техники», ИНН 5916031052, ОГРН 1025901843880; официальный сайт публикует реквизиты.","url":"https://tdgt.ru/company/requisites/","source":"Официальный сайт ПЗГТ"},
-        {"type":"SCALE","claim":"Отраслевой профиль 2026 указывает 131 сотрудника; официальный сайт — 14 500 м² производственных площадей и 7 957+ единиц техники в эксплуатации; инвестиции в расширение производства в 2026 году превысили 155 млн ₽.","url":"https://manufacturers.ru/company/permskiy-zavod-gruzovoy-tekhniki","source":"Manufacturers.ru; официальный сайт; региональные деловые новости"},
-        {"type":"SIGNAL","claim":"В августе 2026 предприятие вводит новый цех компонентных изделий, испытательную зону и осваивает выпуск высокотехнологичной нефтесервисной спецтехники; инвестиции превышают 155 млн ₽.","url":"https://telecom.perm.ru/2026/08/delovye-novosti-permskogo-kraya-17-19-avgusta-2026-goda/","source":"Деловые новости Пермского края, 19.08.2026"},
-        {"type":"LPR","claim":"Руководитель АО «ПЗГТ» — Миночкин Денис Викторович; официальный сайт также называет Д.В. Миночкина управляющим АО «ПЗГТ».","url":"https://www.tbank.ru/business/contractor/legal/1025901843880/","source":"Т-Банк Бизнес; официальный сайт ПЗГТ"},
-        {"type":"CONTACT","claim":"Официальные маршруты: +7 (34273) 2-29-11, info@pzgt.ru, tdgt.ru.","url":"https://tdgt.ru/company/requisites/","source":"Официальный сайт ПЗГТ"},
-        {"type":"BRAND_TO_LEGAL","claim":"Официальные реквизиты сайта ПЗГТ прямо связывают бренд с АО «Пермский завод грузовой техники», ИНН 5916031052.","url":"https://tdgt.ru/company/requisites/","source":"Официальный сайт ПЗГТ"}
-      ]
-    }
-  ]
+  "notes": "RUN 430 physically integrated in main. Physical canonical/contactable 388/388; integrity PASS; orphan contacts/evidence 0/0. Pending cleared after successful integration. No outreach.",
+  "qualified_companies": []
 }
