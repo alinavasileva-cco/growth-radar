@@ -5,7 +5,7 @@
   "updated_at": "2026-08-26T09:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 380,
     "target_count": 5000,
     "current_canonical_count": 381,
     "current_contactable_count": 381,
@@ -24,9 +24,7 @@
     "duplicates": 4,
     "excluded": 7
   },
-  "qualified_companies": [
-    "Варяжский композит / SHELON"
-  ],
+  "qualified_companies": ["Варяжский композит / SHELON"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
