@@ -1,6 +1,7 @@
 {
   "run_id": "N5K-20260826-424",
-  "updated_at": "2026-08-26T09:18:00+03:00",
+  "updated_at": "2026-08-26T09:50:00+03:00",
+  "status": "CLEARED_AFTER_INTEGRATION",
   "funnel": {
     "discovered": 12,
     "fast_gate_passed": 3,
@@ -25,48 +26,6 @@
     {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
   ],
-  "notes": "Source of truth before staging: RUN 423 physical canonical/contactable 380/380, integrity PASS, orphan contacts/evidence 0/0, staged 0. Exact INN search immediately before staging returned no repository matches for 7813613197. No outreach. Fresh expansion evidence prioritized; stale/conflicting Semargl identities and candidates already present in canonical base were excluded.",
-  "qualified_companies": [
-    {
-      "Lead ID":"N5K-0533",
-      "Brand":"Варяжский композит / SHELON",
-      "Legal Name":"ООО «МИР ДПК»",
-      "INN":"7813613197",
-      "OGRN/OGRNIP":"1187847154461",
-      "Region":"Ульяновская область",
-      "City":"Ульяновск",
-      "Segment":"Производство древесно-полимерного композита / строительные материалы B2B",
-      "Website":"https://varyag-composit.ru/",
-      "Revenue/Scale":"Действующее частное ООО; выручка 134,4 млн ₽ за 2025 год; 33 сотрудника; собственное производство 10 линий, 3 500 м², мощность после модернизации до 2 400 тонн готовой продукции в год.",
-      "Signal Level":"S2",
-      "Signal Summary":"26.03.2026 завершён инвестиционный проект модернизации и расширения производства на 200 млн ₽: число линий выросло с 7 до 10, мощности — с 1 000 до 2 400 тонн в год (+140%); в июне 2026 открыт новый шоурум в Санкт-Петербурге и продолжается развитие партнёрской B2B-сети.",
-      "Signal Date":"2026-03-26",
-      "Signal Source":"https://shelon.ru/news/shelon/lpk-shelon-investiroval-200-mln-rubley-v-varyazhskiy-kompozit/",
-      "Owner":"АО «Инвестиционно-Финансовая Компания «Нева» — 100%",
-      "CEO":"Герасин Сергей Иванович",
-      "LPR":"Герасин Сергей Иванович",
-      "LPR Role":"Генеральный директор",
-      "Primary Phone":"8 (800) 550-70-73",
-      "Primary Email":"info@varyag-composit.ru",
-      "HH Contact":"https://varyag-composit.ru/for-partners/",
-      "Contact Form":"https://varyag-composit.ru/for-partners/",
-      "Other Contact":"+7 (8422) 30-31-28",
-      "Contact Type":"Official sales phone + corporate email + partner form + CEO route",
-      "Contact Source":"Official company site / SHELON site",
-      "Consulting Hypothesis":"Коммерциализация резко выросших производственных мощностей: развитие дилерской/партнёрской сети, сегментация B2B-клиентов, управление воронкой и загрузкой производства, региональная экспансия.",
-      "contacts":[
-        {"value":"8 (800) 550-70-73","channel":"Phone","type":"Official sales phone","source":"Official company site","url":"https://varyag-composit.ru/for-partners/","is_lpr":false,"notes":"Отдел продаж / партнёрский маршрут"},
-        {"value":"info@varyag-composit.ru","channel":"Email","type":"Official corporate email","source":"Official company site","url":"https://varyag-composit.ru/for-partners/","is_lpr":false,"notes":"Публичный корпоративный email"},
-        {"value":"Герасин Сергей Иванович","channel":"Management route","type":"CEO","source":"Current legal profile + official requisites","url":"https://groentec.ru/contacts/","is_lpr":true,"notes":"Актуальный генеральный директор"}
-      ],
-      "evidence":[
-        {"type":"LEGAL","claim":"ООО МИР ДПК, ИНН 7813613197, ОГРН 1187847154461 — действующая организация в августе 2026 года.","url":"https://saby.ru/profile/7813613197-732801001","source":"Current legal profile"},
-        {"type":"SCALE_CURRENT","claim":"Выручка 134,4 млн ₽ за 2025 год; 33 сотрудника; 10 производственных линий на площади 3 500 м².","url":"https://alestech.ru/factory/1468-varazskij-kompozit","source":"Current industry profile + official company site"},
-        {"type":"SIGNAL","claim":"26.03.2026: инвестиции 200 млн ₽; число линий увеличено с 7 до 10, мощность готовой продукции — с 1 000 до 2 400 тонн в год (+140%).","url":"https://shelon.ru/news/shelon/lpk-shelon-investiroval-200-mln-rubley-v-varyazhskiy-kompozit/","source":"Official SHELON publication"},
-        {"type":"LPR","claim":"Герасин Сергей Иванович — генеральный директор ООО МИР ДПК; 100% участник — АО ИФК Нева.","url":"https://www.tbank.ru/business/contractor/legal/1187847154461/","source":"Current legal profile"},
-        {"type":"CONTACT","claim":"Официальный сайт публикует 8 (800) 550-70-73, +7 (8422) 30-31-28 и info@varyag-composit.ru, а также форму для партнёров.","url":"https://varyag-composit.ru/for-partners/","source":"Official company site"},
-        {"type":"BRAND_LEGAL","claim":"Официальные реквизиты сайта прямо указывают ООО МИР ДПК, ИНН 7813613197, ОГРН 1187847154461; бренд Варяжский композит связан с этим юрлицом.","url":"https://groentec.ru/contacts/","source":"Official company site"}
-      ]
-    }
-  ]
+  "notes": "RUN 424 already physically integrated in main at commit 4a866777825ad62989802788749afe5f2e7c79a2. Physical canonical/contactable 381/381; integrity PASS; orphan contacts/evidence 0/0; campaign/runtime synchronized. Pending payload cleared by recovery to prevent false staged state or duplicate retrigger.",
+  "qualified_companies": []
 }
