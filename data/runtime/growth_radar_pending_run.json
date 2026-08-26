@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260826-428",
-  "updated_at": "2026-08-26T13:18:00+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "updated_at": "2026-08-26T13:22:00+03:00",
+  "status": "CLEARED_AFTER_INTEGRATION",
   "funnel": {
     "discovered": 14,
     "fast_gate_passed": 3,
@@ -26,47 +26,6 @@
     {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
   ],
-  "notes": "RUN 428 low-overlap multi-lane discovery. Physical baseline before write: 384/384, RUN 427, integrity PASS, orphan 0/0, staged 0. Qualified only after current legal/scale/signal/LPR/contact verification and exact-INN pre-write dedup. Semargl signal: new high-tech logistics robot and automated storage factory opened 2026-08-25; 2025 revenue 106.34m RUB (+~25% YoY); active private Russian LLC; owner/CEO and official contact route confirmed. No outreach.",
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0537",
-      "Brand": "Семаргл / Semargl",
-      "Legal Name": "ООО «СЕМАРГЛ»",
-      "INN": "7814454694",
-      "OGRN/OGRNIP": "1099847019580",
-      "Region": "Санкт-Петербург",
-      "City": "Санкт-Петербург",
-      "Segment": "Промышленная автоматизация / роботизация / складские системы",
-      "Website": "https://semargl.pro/",
-      "Revenue/Scale": "Выручка 106,34 млн ₽ за 2025 год; рост примерно на 25% г/г; производственно-инжиниринговая компания, в 2026 открыт новый завод логистических роботов и автоматизированных систем хранения",
-      "Signal Level": "S1",
-      "Signal Summary": "25.08.2026 открыт новый высокотехнологичный завод по выпуску логистических роботов и автоматизированных систем хранения для промышленности и торговли; компания масштабирует собственное производство и роботизацию.",
-      "Signal Date": "2026-08-25",
-      "Signal Source": "Минпромторг/ЦРБП; Эксперт ЮГ; официальный контур Semargl",
-      "Owner": "Никита Горбунов; Сергей Терентьев; Алексей Ученов; Игорь Витковский; Янис Можелис; Александр Шарапов; Андрей Егоров (доли подтверждены свежим отраслевым материалом 2026)",
-      "CEO": "Андрей Егоров",
-      "LPR": "Андрей Егоров",
-      "LPR Role": "Генеральный директор / совладелец",
-      "Primary Phone": "+7 (812) 702-10-21",
-      "Primary Email": "info@semargl.pro",
-      "HH Contact": "",
-      "Contact Form": "https://semargl.pro/",
-      "Contact Type": "Корпоративный маршрут к компании/CEO",
-      "Contact Source": "Официальный сайт/каталог Semargl",
-      "Consulting Hypothesis": "Масштабирование нового производственного контура и коммерциализация роботизации: B2B go-to-market, партнёрская/дилерская модель, enterprise pipeline, коммерческая система и управляемая воронка для нового завода.",
-      "contacts": [
-        {"value":"+7 (812) 702-10-21","channel":"phone","type":"corporate","source":"Semargl official catalog","url":"https://www.semargl.pro/upload/medialibrary/f22/semargl-web.pdf","is_lpr":false,"notes":"Официальный корпоративный телефон"},
-        {"value":"info@semargl.pro","channel":"email","type":"corporate","source":"Semargl official catalog","url":"https://www.semargl.pro/upload/medialibrary/f22/semargl-web.pdf","is_lpr":false,"notes":"Официальный корпоративный email"},
-        {"value":"https://semargl.pro/","channel":"web","type":"corporate","source":"Semargl official website","url":"https://semargl.pro/","is_lpr":false,"notes":"Официальный сайт / маршрут обращения"}
-      ],
-      "evidence": [
-        {"type":"LEGAL","claim":"ООО «СЕМАРГЛ», ИНН 7814454694, ОГРН 1099847019580; юрлицо действует в 2026 году.","url":"https://xfirm.ru/company/7814454694","source":"Xfirm / актуальные данные ЕГРЮЛ"},
-        {"type":"SCALE","claim":"Выручка за 2025 год 106,34 млн ₽, рост примерно на четверть к 2024 году.","url":"https://www.expertsouth.ru/articles/100-tys-kv-m-budushchego-rostovskaya-oblast-ishchet-investora-dlya-robotizirovannogo-sklada-za-16-ml/","source":"Эксперт ЮГ, август 2026"},
-        {"type":"SIGNAL","claim":"25.08.2026 открыт новый завод логистических роботов и автоматизированных систем хранения для промышленности и торговли.","url":"https://crp.gov.ru/news/kontsern-kalashnikov-otkryl-zavod-po-proizvodstvu-robotov-v-podmoskove/","source":"Минпромторг России / ЦРБП, 25.08.2026"},
-        {"type":"LPR","claim":"Генеральный директор ООО «Семаргл» — Андрей Егоров; он также входит в состав совладельцев.","url":"https://www.expertsouth.ru/articles/100-tys-kv-m-budushchego-rostovskaya-oblast-ishchet-investora-dlya-robotizirovannogo-sklada-za-16-ml/","source":"Эксперт ЮГ, август 2026"},
-        {"type":"CONTACT","claim":"Официальные контакты компании: +7 (812) 702-10-21, info@semargl.pro, semargl.pro.","url":"https://www.semargl.pro/upload/medialibrary/f22/semargl-web.pdf","source":"Официальный каталог Semargl"},
-        {"type":"BRAND_TO_LEGAL","claim":"Официальный каталог связывает бренд Semargl с ООО «Семаргл»; реквизиты ИНН/ОГРН подтверждены актуальным реестровым источником.","url":"https://www.semargl.pro/upload/medialibrary/f22/semargl-web.pdf","source":"Официальный каталог Semargl + ЕГРЮЛ-агрегатор"}
-      ]
-    }
-  ]
+  "notes": "RUN 428 physically integrated in main at commit bb76a689c8e74df1775f0836bf71ed12a68f62c0. Physical canonical/contactable 385/385; integrity PASS; orphan contacts/evidence 0/0. Pending cleared after successful integration. No outreach.",
+  "qualified_companies": []
 }
