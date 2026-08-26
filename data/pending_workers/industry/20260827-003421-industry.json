@@ -1,0 +1,137 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T00:34:21+03:00",
+  "source_head": "0146ffe63584261252b3fc83e307ec913945b290",
+  "config_version": "2026-08-26T23:08:00+03:00",
+  "canonical_baseline": {
+    "physical_canonical": 412,
+    "physical_contactable": 412,
+    "last_completed_run": "N5K-20260827-438",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "raw_discovery": {
+    "auditable_distinct_raw": 120,
+    "note": "Conservative distinct pool after source-level name normalization. Primary current source was the official preliminary exhibitor list for ХИМИЯ-2026 updated 2026-07-29; after the first dense catalog slice produced a low deep-check yield, discovery was rotated to current АГРОПРОДМАШ-2026 and Testing&Control-2026 exhibitor lists. Cross-source rows were not summed where identity could not be proven. Only candidates promoted to deep-check were evaluated through the full funnel; unverified rows were not represented as deep-checked.",
+    "sources": [
+      {
+        "name": "ХИМИЯ-2026 official exhibitor list",
+        "url": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+        "freshness": "preliminary list updated 2026-07-29"
+      },
+      {
+        "name": "АГРОПРОДМАШ-2026 official exhibitor list",
+        "url": "https://www.agroprodmash-expo.ru/ru/exhibition/exhibitors/",
+        "freshness": "current 2026 preliminary list"
+      },
+      {
+        "name": "Testing&Control 2026 official exhibitor list",
+        "url": "https://www.testing-control.ru/ru-RU/about/exhibitor-list.aspx",
+        "freshness": "current 2026 list"
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw": 120,
+    "fast_gate": 3,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "duplicates_before_deep_check": 0,
+    "note": "Funnel is intentionally conservative: 3 candidates were promoted from raw catalog scanning to deep-check; only one satisfied every required gate with current evidence."
+  },
+  "deep_checked_rejects": [
+    {
+      "brand": "ГК Титан",
+      "legal_name": "АО «ГК «ТИТАН»",
+      "inn": "5501100816",
+      "decision": "REJECT_LEGAL_SCOPE",
+      "reason": "Current scale and 2026 industrial-development signals are strong, but this pass did not establish the exact current private-control/legal-entity boundary with the same evidentiary confidence as the qualified record. The group/subsidiary signal boundary was not resolved strictly enough for promotion."
+    },
+    {
+      "brand": "Синтез ОКА",
+      "decision": "REJECT_SCOPE_SIZE",
+      "reason": "Exact target legal entity, current scale and current S1-S3 signal could not all be tied together unambiguously in this pass. No promotion under fail-closed rules."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "Полипласт Новомосковск / Polyplast Novomoskovsk",
+      "legal_name": "ООО «ПОЛИПЛАСТ НОВОМОСКОВСК»",
+      "inn": "7116019123",
+      "ogrn": "1037101673333",
+      "country": "Россия",
+      "region": "Тульская область",
+      "city": "Новомосковск",
+      "domain": "polyplast-un.ru",
+      "size": {
+        "revenue_2025_rub": 113461666000,
+        "revenue_growth_2025_yoy_pct": 36.9,
+        "employees_current": 812,
+        "evidence_urls": [
+          "https://cbonds.ru/company/7522/",
+          "https://cbonds.ru/news/3859339/",
+          "https://companies.rbc.ru/amp/ogrn/1037101673333/"
+        ]
+      },
+      "legal": {
+        "status": "Действует",
+        "status_checked_date": "2026-08-25",
+        "private_gate": "PASS",
+        "founder": "АО «Полипласт»",
+        "control": "Ильсур Зинурович Шамсутдинов — контролирующее лицо АО «Полипласт» и через подконтрольных лиц контролирующее лицо ООО «Полипласт Новомосковск» по раскрытию от 2026-06-23",
+        "ceo": "Ковалёв Александр Федорович",
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1037101673333/",
+          "https://e-disclosure.azipi.ru/messages/4556273/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-04-21",
+        "summary": "На флагманском предприятии «Полипласт Новомосковск» запущен новый производственный комплекс по выпуску полимерного связующего для теплоизоляционных материалов и сырья для специализированных добавок.",
+        "evidence_urls": [
+          "https://polyplast-un.ru/company/news/gk_poliplast_zapustila_novyy_proizvodstvennyy_kompleks_v_novomoskovske/",
+          "https://www.interfax.ru/pressreleases/1085146"
+        ]
+      },
+      "lpr": {
+        "name": "Ковалёв Александр Федорович",
+        "role": "Генеральный директор ООО «Полипласт Новомосковск»; также член совета директоров и генеральный директор АО «Полипласт» по раскрытию от 2026-06-23",
+        "strategic_controller": "Шамсутдинов Ильсур Зинурович",
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1037101673333/",
+          "https://e-disclosure.azipi.ru/messages/4556273/"
+        ]
+      },
+      "contact": {
+        "route": "official plant secretariat/company route",
+        "phones": [
+          "+7 (487) 622-09-70",
+          "+7 (487) 622-09-50"
+        ],
+        "email": "sekretar@polyplast-nm.ru",
+        "contact_form": "https://novomoskovsk.polyplast-un.ru/contacts/",
+        "evidence_urls": [
+          "https://polyplast-un.ru/contacts/all/",
+          "https://novomoskovsk.polyplast-un.ru/contacts/"
+        ]
+      },
+      "consulting_hypothesis": "Коммерческая и операционная система масштабирования после запуска новой производственной мощности: вывод новых химических продуктовых линий на рынок, сегментация B2B-клиентов, экономика каналов, коммерческие процессы и управленческая аналитика. Это рабочая гипотеза, а не заявленная компанией проблема.",
+      "dedup_keys": {
+        "inn": "7116019123",
+        "ogrn": "1037101673333",
+        "legal_name": "ООО «ПОЛИПЛАСТ НОВОМОСКОВСК»",
+        "brand_domain": "Полипласт Новомосковск|polyplast-un.ru"
+      },
+      "prewrite_dedup": "PASS_NO_MATCH_IN_FRESH_MASTER_AT_SOURCE_HEAD",
+      "decision": "QUALIFIED"
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false
+}
