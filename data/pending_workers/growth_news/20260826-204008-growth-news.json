@@ -1,0 +1,105 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-26T20:40:08+03:00",
+  "head_checked": "b34e351a76ddf02e900b606e36d344298a278791",
+  "canonical_snapshot": {
+    "campaign_id": "new_5000",
+    "canonical_contactable": 401,
+    "integrity": "PASS",
+    "source": "CURRENT_WORKING_CONFIG.md; latest verified RUN N5K-20260826-434"
+  },
+  "worker_funnel": {
+    "raw_discovered_distinct": 22,
+    "fast_gate": 7,
+    "size": 5,
+    "legal": 4,
+    "signal": 4,
+    "lpr": 3,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates_confirmed_before_deep_check": 0,
+    "note": "Target 100-180 raw was not reached in this pass; criteria were not weakened. Only candidates with all required gates independently evidenced are staged."
+  },
+  "qualified": [
+    {
+      "brand": "CNP / CNP Russia",
+      "legal_name": "ООО «СИЭНПИ РУС»",
+      "inn": "7733256341",
+      "ogrn": "5157746005324",
+      "status": "active",
+      "domain": "cnprussia.ru",
+      "dedup_keys": ["7733256341", "5157746005324", "ООО СИЭНПИ РУС", "CNP|cnprussia.ru"],
+      "size_evidence": {
+        "fact": "Выручка за 2025 год 4 145 039 000 ₽; 157 работников по доступным актуальным карточкам контрагента.",
+        "urls": [
+          "https://saby.ru/profile/7733256341-771401001",
+          "https://synapsenet.ru/organizacii/5157746005324-ooo-sienpi-rus"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-08-19",
+        "fact": "12 августа 2026 компания открыла новую производственную площадку в индустриальном парке «Есипово»; новая площадка больше прежней и имеет около 4 000 м² производственных и складских помещений.",
+        "url": "https://www.cnprussia.ru/press-center/news/torzhestvenno-otkryli-novuyu-proizvodstvennuyu-ploshchadku-v-esipovo/"
+      },
+      "lpr": {
+        "name": "Прессель Евгений Вадимович",
+        "role": "Генеральный директор",
+        "url": "https://www.cnprussia.ru/about-company/contacts/"
+      },
+      "contact": {
+        "route": "официальный телефон компании +7 (499) 703-35-23 и форма/контактный раздел официального сайта",
+        "url": "https://www.cnprussia.ru/about-company/contacts/"
+      },
+      "dedup_check": {
+        "repo_search_brand": "no match at worker time",
+        "repo_search_inn": "no match at worker time"
+      },
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "Катюша",
+      "legal_name": "ООО «КАТЮША ПРИНТ»",
+      "inn": "9703037297",
+      "ogrn": "1217700276804",
+      "status": "active",
+      "domain": "katusha-it.ru",
+      "dedup_keys": ["9703037297", "1217700276804", "ООО КАТЮША ПРИНТ", "Катюша|katusha-it.ru"],
+      "size_evidence": {
+        "fact": "Инвестиционный проект второй площадки превышает 1 млрд ₽; на новой площадке около 70 сотрудников с заявленным ростом до 90 в течение года.",
+        "url": "https://lenoblinvest.ru/blog/category/novosti/kompaniya-katyusha-dosrochno-zapustila-vtoruyu-proizvodstvennuyu-ploshchadku-v-lenoblasti/"
+      },
+      "legal_evidence": {
+        "fact": "Действующее ООО; ИНН 9703037297, ОГРН 1217700276804; генеральный директор Максим Николаевич Виноградов.",
+        "urls": [
+          "https://saby.ru/profile/9703037297-770301001",
+          "https://companies.rbc.ru/id/1217700276804-katyusha/"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-08-19",
+        "fact": "Компания досрочно запустила вторую производственную площадку в Ленинградской области, расширив инвестиционный проект.",
+        "url": "https://lenoblinvest.ru/blog/category/novosti/kompaniya-katyusha-dosrochno-zapustila-vtoruyu-proizvodstvennuyu-ploshchadku-v-lenoblasti/"
+      },
+      "lpr": {
+        "name": "Виноградов Максим Николаевич",
+        "role": "Генеральный директор",
+        "urls": [
+          "https://companies.rbc.ru/id/1217700276804-katyusha/",
+          "https://saby.ru/profile/9703037297-770301001"
+        ]
+      },
+      "contact": {
+        "route": "официальный телефон +7 (495) 120-11-25 и email mail@katusha-it.ru",
+        "url": "https://katusha-it.ru/Media"
+      },
+      "dedup_check": {
+        "repo_search_brand": "no match at worker time",
+        "repo_search_inn": "no match at worker time"
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "outreach": 0
+}
