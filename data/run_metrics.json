@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-08-27T00:03:00+03:00",
+  "generated_at": "2026-08-27T01:03:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-438",
-  "current_run_id": "N5K-20260827-438",
+  "latest_completed_run_id": "N5K-20260827-439",
+  "current_run_id": "N5K-20260827-439",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 412,
-  "contactable_verified": 412,
+  "canonical_pool_verified": 416,
+  "contactable_verified": 416,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4588,
+  "remaining_to_target": 4584,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_438": {
+  "run_439": {
     "raw_discovered": 120,
-    "fast_gate_passed": 9,
+    "fast_gate_passed": 11,
     "size_check_passed": 8,
     "legal_match_passed": 7,
-    "signal_confirmed": 5,
-    "lpr_identified": 4,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "physically_integrated": 3,
-    "duplicates": 2,
-    "excluded": 115,
+    "signal_confirmed": 6,
+    "lpr_identified": 5,
+    "contact_route_found": 4,
+    "qualified": 4,
+    "physically_integrated": 4,
+    "duplicates": 0,
+    "excluded": 116,
     "lane_metrics": [
       {
         "lane": "jobs worker",
-        "raw": 88,
-        "duplicates_or_early_rejects": 88,
-        "qualified": 0,
-        "note": "Worker-qualified Riverstart rejected at canonical review as previously integrated/known duplicate; saturated lane stopped."
+        "raw": 80,
+        "duplicates_or_early_rejects": 79,
+        "qualified": 1,
+        "note": "Profood retained after fresh 2026 HH verification. Worker pools are not summed globally without a full cross-worker raw identity index."
       },
       {
         "lane": "industry worker",
         "raw": 120,
-        "duplicates_or_early_rejects": 118,
-        "qualified": 2,
-        "note": "Auditable distinct industry pool from current worker staging; Лемакс and ДЖИЛЕКС retained after fresh source check."
+        "duplicates_or_early_rejects": 119,
+        "qualified": 1,
+        "note": "Polyplast Novomoskovsk retained after fresh legal, 2025 scale, 2026 expansion and official contact verification."
       },
       {
         "lane": "growth/news worker",
-        "raw": 38,
-        "duplicates_or_early_rejects": 36,
-        "qualified": 1,
-        "note": "NexTouch retained. Новотерская/АО Кавминводы rejected by global brand+domain dedup because canonical master already contains Новотерская on novoterskaya.ru."
+        "raw": 62,
+        "duplicates_or_early_rejects": 60,
+        "qualified": 2,
+        "note": "Callisto Vision and Metallstroy64 retained after fresh 2026 expansion-signal and current official contact verification."
       }
     ]
   }
