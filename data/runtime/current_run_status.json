@@ -5,11 +5,11 @@
   "updated_at": "2026-08-26T11:02:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 382,
+    "baseline_count": 294,
     "target_count": 5000,
     "current_canonical_count": 383,
     "current_contactable_count": 383,
-    "progress_added": 1,
+    "progress_added": 383,
     "remaining": 4617
   },
   "funnel": {
@@ -20,11 +20,11 @@
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
+    "qualified": 0,
     "duplicates": 1,
     "excluded": 50
   },
-  "qualified_companies": ["Русь-Турбо / Rus-Turbo"],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
