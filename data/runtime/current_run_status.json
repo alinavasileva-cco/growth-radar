@@ -1,39 +1,40 @@
 {
-  "run_id": "N5K-20260826-422",
+  "run_id": "N5K-20260826-423",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T07:10:00+03:00",
+  "updated_at": "2026-08-26T08:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 375,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 377,
-    "current_contactable_count": 377,
-    "progress_added": 377,
-    "remaining": 4623
+    "current_canonical_count": 380,
+    "current_contactable_count": 380,
+    "progress_added": 380,
+    "remaining": 4620
   },
   "funnel": {
-    "discovered": 51,
-    "fast_gate_passed": 5,
+    "discovered": 30,
+    "fast_gate_passed": 6,
     "size_check_passed": 4,
     "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
     "duplicates": 0,
-    "excluded": 49
+    "excluded": 27
   },
   "qualified_companies": [
-    "Агрофирма Партнер",
-    "ГК Воздушные фильтры"
+    "Маламут Ленд",
+    "Аксис / ГК Инструмент",
+    "Негабарит-Транс"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "377_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "377_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "380_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "380_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
