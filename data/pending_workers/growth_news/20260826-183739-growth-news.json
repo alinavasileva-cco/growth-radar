@@ -1,0 +1,159 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-26T18:37:39+03:00",
+  "campaign_id": "new_5000",
+  "source_head_context": {
+    "current_working_config_version": "2026-08-26T17:24:00+03:00",
+    "canonical_count_seen": 392,
+    "contactable_count_seen": 392,
+    "last_completed_run_seen": "N5K-20260826-432",
+    "integrity_seen": "PASS"
+  },
+  "worker_funnel": {
+    "named_raw_entities_surfaced_minimum": 47,
+    "fast_gate_shortlist": 8,
+    "deep_checked": 6,
+    "size_passed": 5,
+    "legal_passed": 5,
+    "signal_passed": 5,
+    "lpr_passed": 4,
+    "contact_passed": 4,
+    "qualified_staged": 3,
+    "obvious_duplicate_rejected": 1,
+    "excluded_or_not_fully_verified": 43,
+    "target_raw_100_180_reached": false,
+    "note": "Web/source retrieval in this worker pass surfaced at least 47 distinct named entities. The 100-180 raw target was not reached in the available execution window; quality gates were not weakened. A canonical prewrite dedup against the full physical master remains mandatory. Recent master slices and explicit known duplicates were checked; FORSH was rejected as canonical duplicate N5K-0495."
+  },
+  "qualified": [
+    {
+      "brand": "Hobby World / Мир Хобби-Производство",
+      "legal_name": "ООО «МИР ХОББИ-ПРОИЗВОДСТВО»",
+      "inn": "6950236630",
+      "ogrn": "1206900000064",
+      "legal_status": "Действует",
+      "region": "Тверская область",
+      "city": "Тверь",
+      "segment": "производство настольных игр / FMCG-like consumer goods / B2B дистрибуция",
+      "website": "https://hobbyworld.ru/",
+      "scale": "Выручка 802.833 млн ₽ за 2025 год; новый производственный комплекс 9 тыс. м²; проектная мощность до 10 млн настольных игр в год; инвестиции в проект свыше 1 млрд ₽ по свежему инвестмониторингу.",
+      "signal_level": "S2",
+      "signal_summary": "18.08.2026 в Твери открыт новый завод полного цикла ООО «Мир Хобби-Производство» в ИП «Боровлево-3». Производственный комплекс объединяет выпуск, конвейерную сборку и склад готовой продукции; проект связан с масштабированием собственного производства холдинга Hobby World.",
+      "signal_date": "2026-08-18",
+      "signal_sources": [
+        "https://69rus.org/more/27200/",
+        "https://expertcc.ru/invest/",
+        "https://tverinvest.ru/projects/11267/"
+      ],
+      "owner": "АО «Мир Хобби» — учредитель ООО «Мир Хобби-Производство»",
+      "ceo": "Попов Иван Валерьевич",
+      "lpr": "Попов Иван Валерьевич",
+      "lpr_role": "Генеральный директор",
+      "primary_phone": "+7 (495) 984-53-83",
+      "primary_email": "info@hobbyworld.ru",
+      "direct_lpr_contact": "ivan.popov@hobbyworld.ru / +7 926 309-38-22",
+      "contact_form_or_route": "https://hobbyworld.ru/company/contacts",
+      "contact_sources": [
+        "https://hobbyworld.ru/company/contacts",
+        "https://tv.rspp.ru/registerofmembers/"
+      ],
+      "dedup_keys": {
+        "inn": "6950236630",
+        "ogrn": "1206900000064",
+        "legal_name": "ООО МИР ХОББИ-ПРОИЗВОДСТВО",
+        "brand_domain": "Мир Хобби-Производство|hobbyworld.ru"
+      },
+      "worker_dedup_status": "No match found in the explicitly inspected recent canonical tail; full canonical writer prewrite dedup required.",
+      "consulting_hypothesis": "Коммерческое масштабирование после ввода крупного собственного завода: загрузка мощности, синхронизация производства с дистрибуцией и ассортиментом, B2B/retail/key-account pipeline, прогнозирование спроса и маржинальность каналов.",
+      "status": "QUALIFIED_WORKER_STAGING"
+    },
+    {
+      "brand": "ТехноСонус / TechnoSonus",
+      "legal_name": "ООО «ТЕХНОСОНУС-ЦЕНТР»",
+      "inn": "3328490915",
+      "ogrn": "1133328003599",
+      "legal_status": "Действует",
+      "region": "Владимирская область",
+      "city": "Владимир / п. Бег, Судогодский округ",
+      "segment": "производство звуко- и виброизоляционных материалов / строительный B2B",
+      "website": "https://tn-ss.ru/",
+      "scale": "Выручка 1.949 млрд ₽ за 2025 год, +34% год к году; прибыль 222.25 млн ₽; 232 сотрудника по актуальным профилям; собственное производство и развитая сеть сбыта.",
+      "signal_level": "S2",
+      "signal_summary": "12.08.2026 компания открыла новый цех VibroLOCK во Владимирской области. Инвестиции превысили 120 млн ₽; проектная мощность до 250 тыс. м² виброизоляционных матов в год; технология локализована как импортозамещающая.",
+      "signal_date": "2026-08-12",
+      "signal_sources": [
+        "https://www.vladimir.kp.ru/online/news/7118744/",
+        "https://abn.agency/2026/08/12/vo-vladimirskoj-oblasti-otkryli-proizvodstvo-vibroizolyaczii-dlya-zameshheniya-importa/",
+        "https://expertcc.ru/invest/"
+      ],
+      "owner": "Шилов Дмитрий Владимирович 50%; Акулов Александр Александрович 50%",
+      "ceo": "Староверкин Александр Владимирович",
+      "lpr": "Староверкин Александр Владимирович",
+      "lpr_role": "Директор",
+      "primary_phone": "+7 (495) 128-11-33",
+      "primary_email": "mail@tn-ss.ru",
+      "direct_lpr_contact": "a.staroverkin@tn-ss.ru",
+      "contact_form_or_route": "https://tn-ss.ru/shops/",
+      "contact_sources": [
+        "https://tn-ss.ru/shops/",
+        "https://www.tbank.ru/business/contractor/legal/1133328003599/"
+      ],
+      "dedup_keys": {
+        "inn": "3328490915",
+        "ogrn": "1133328003599",
+        "legal_name": "ООО ТЕХНОСОНУС-ЦЕНТР",
+        "brand_domain": "ТехноСонус|tn-ss.ru"
+      },
+      "worker_dedup_status": "No match found in the explicitly inspected recent canonical tail; full canonical writer prewrite dedup required.",
+      "consulting_hypothesis": "Коммерческая загрузка новой импортозамещающей линии: сегментация строительных и инфраструктурных B2B-заказчиков, дилерская сеть, pipeline, pricing/margin, прогноз спроса и синхронизация продаж с новой мощностью.",
+      "status": "QUALIFIED_WORKER_STAGING"
+    },
+    {
+      "brand": "НАРТИС / NARTIS",
+      "legal_name": "ООО «ЗАВОД НАРТИС»",
+      "inn": "5019029500",
+      "ogrn": "1185022004661",
+      "legal_status": "Действует",
+      "region": "Вологодская область",
+      "city": "Череповец",
+      "segment": "интеллектуальные приборы учета / электроника / энергетическое оборудование B2B/B2G",
+      "website": "https://www.nartis.ru/",
+      "scale": "Выручка 27.634 млрд ₽ за 2025 год; 223 сотрудника по актуальному юрпрофилю до расширения; новый корпус создал 200 рабочих мест; крупный российский производитель интеллектуальных средств учета.",
+      "signal_level": "S2",
+      "signal_summary": "08.07.2026 НАРТИС открыл в Череповце новый производственный корпус площадью 4 000 м². Инвестиции 600 млн ₽, создано 200 рабочих мест; локализован выпуск ключевых компонентов для интеллектуальных счетчиков.",
+      "signal_date": "2026-07-08",
+      "signal_sources": [
+        "https://www.nartis.ru/news/nartis-lokalizoval-proizvodstvo-klyuchevykh-komponentov-dlya-intellektualnykh-schyetchikov/",
+        "https://spb.vedomosti.ru/technology/news/2026/07/08/1212266-cherepovtse-zapustili-zavod-po-vipusku-komponentov-dlya-elektromobilei-za-600-mln-rublei"
+      ],
+      "owner": "Костин Евгений Викторович — 100% по актуальному профилю юрлица",
+      "ceo": "Владимиров Олег Валерьевич",
+      "lpr": "Владимиров Олег Валерьевич",
+      "lpr_role": "Генеральный директор",
+      "primary_phone": "+7 (8202) 20-20-27",
+      "primary_email": "info@nartis.ru",
+      "contact_form_or_route": "https://www.nartis.ru/contacts/",
+      "contact_sources": [
+        "https://www.nartis.ru/contacts/",
+        "https://companies.rbc.ru/id/1185022004661-ooo-zavod-nartis/"
+      ],
+      "dedup_keys": {
+        "inn": "5019029500",
+        "ogrn": "1185022004661",
+        "legal_name": "ООО ЗАВОД НАРТИС",
+        "brand_domain": "НАРТИС|nartis.ru"
+      },
+      "worker_dedup_status": "No match found in the explicitly inspected recent canonical tail; full canonical writer prewrite dedup required.",
+      "consulting_hypothesis": "Коммерческое масштабирование после локализации компонентов и расширения мощностей: загрузка нового корпуса, key-account/B2G pipeline энергетики, продуктовая сегментация, forecast, коммерческие KPI и экономика расширения.",
+      "status": "QUALIFIED_WORKER_STAGING"
+    }
+  ],
+  "known_duplicate_rejected": [
+    {
+      "brand": "ФОРШ / FORSH",
+      "inn": "7328015755",
+      "ogrn": "1027301574288",
+      "reason": "Already present in canonical master as N5K-0495."
+    }
+  ],
+  "outreach_sent": 0
+}
