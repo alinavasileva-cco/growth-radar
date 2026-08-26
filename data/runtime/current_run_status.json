@@ -1,16 +1,16 @@
 {
-  "run_id": "N5K-20260826-432",
+  "run_id": "N5K-20260826-433",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T17:24:00+03:00",
+  "updated_at": "2026-08-26T18:58:55+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 390,
+    "baseline_count": 392,
     "target_count": 5000,
-    "current_canonical_count": 392,
-    "current_contactable_count": 392,
+    "current_canonical_count": 394,
+    "current_contactable_count": 394,
     "progress_added": 2,
-    "remaining": 4608
+    "remaining": 4606
   },
   "funnel": {
     "discovered": 14,
@@ -21,19 +21,81 @@
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 0,
-    "excluded": 12
+    "duplicates": 3,
+    "excluded": 9
   },
+  "lane_metrics": [
+    {
+      "lane": "HH/job-board",
+      "raw": 0,
+      "duplicates_or_early_rejects": 0,
+      "qualified": 0
+    },
+    {
+      "lane": "other job boards",
+      "raw": 1,
+      "duplicates_or_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "industry catalogs",
+      "raw": 2,
+      "duplicates_or_early_rejects": 1,
+      "qualified": 1
+    },
+    {
+      "lane": "regional business catalogs/news",
+      "raw": 2,
+      "duplicates_or_early_rejects": 2,
+      "qualified": 0
+    },
+    {
+      "lane": "growth/expansion/investment news",
+      "raw": 4,
+      "duplicates_or_early_rejects": 2,
+      "qualified": 2
+    },
+    {
+      "lane": "official company sites/news",
+      "raw": 2,
+      "duplicates_or_early_rejects": 0,
+      "qualified": 2
+    },
+    {
+      "lane": "Telegram/VK/YouTube/owner publications",
+      "raw": 0,
+      "duplicates_or_early_rejects": 0,
+      "qualified": 0
+    },
+    {
+      "lane": "ratings/awards/accelerators/clubs",
+      "raw": 1,
+      "duplicates_or_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "franchise/dealer catalogs",
+      "raw": 0,
+      "duplicates_or_early_rejects": 0,
+      "qualified": 0
+    },
+    {
+      "lane": "segment expansion search",
+      "raw": 2,
+      "duplicates_or_early_rejects": 2,
+      "qualified": 0
+    }
+  ],
   "qualified_companies": [
-    "НЗНК / Нижегородский завод несущих конструкций",
-    "ХРОМОС Инжиниринг / CHROMOS Engineering"
+    "Битроботикс / Bitrobotics",
+    "Palizh / Новый дом"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "392_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "392_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "394_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "394_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

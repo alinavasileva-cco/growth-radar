@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-26T16:24:00+03:00",
+  "generated_at": "2026-08-26T18:58:55+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260826-431",
-  "current_run_id": "N5K-20260826-431",
+  "latest_completed_run_id": "N5K-20260826-433",
+  "current_run_id": "N5K-20260826-433",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 390,
-  "contactable_verified": 390,
+  "canonical_pool_verified": 394,
+  "contactable_verified": 394,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4610,
+  "remaining_to_target": 4606,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_431": {
-    "raw_discovered": 18,
+  "run_433": {
+    "raw_discovered": 14,
     "fast_gate_passed": 4,
     "size_check_passed": 3,
     "legal_match_passed": 2,
@@ -24,19 +24,69 @@
     "contact_route_found": 2,
     "qualified": 2,
     "physically_integrated": 2,
-    "duplicates": 0,
-    "excluded": 16,
+    "duplicates": 3,
+    "excluded": 9,
     "lane_metrics": [
-      {"lane":"HH/job-board","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-      {"lane":"other job boards","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-      {"lane":"industry catalogs","raw":3,"duplicates_or_early_rejects":1,"qualified":2},
-      {"lane":"regional business catalogs/news","raw":2,"duplicates_or_early_rejects":0,"qualified":2},
-      {"lane":"growth/expansion/investment news","raw":4,"duplicates_or_early_rejects":2,"qualified":2},
-      {"lane":"official company sites/news","raw":2,"duplicates_or_early_rejects":0,"qualified":2},
-      {"lane":"Telegram/VK/YouTube/owner publications","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-      {"lane":"ratings/awards/accelerators/clubs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-      {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-      {"lane":"segment expansion search","raw":2,"duplicates_or_early_rejects":2,"qualified":0}
+      {
+        "lane": "HH/job-board",
+        "raw": 0,
+        "duplicates_or_early_rejects": 0,
+        "qualified": 0
+      },
+      {
+        "lane": "other job boards",
+        "raw": 1,
+        "duplicates_or_early_rejects": 1,
+        "qualified": 0
+      },
+      {
+        "lane": "industry catalogs",
+        "raw": 2,
+        "duplicates_or_early_rejects": 1,
+        "qualified": 1
+      },
+      {
+        "lane": "regional business catalogs/news",
+        "raw": 2,
+        "duplicates_or_early_rejects": 2,
+        "qualified": 0
+      },
+      {
+        "lane": "growth/expansion/investment news",
+        "raw": 4,
+        "duplicates_or_early_rejects": 2,
+        "qualified": 2
+      },
+      {
+        "lane": "official company sites/news",
+        "raw": 2,
+        "duplicates_or_early_rejects": 0,
+        "qualified": 2
+      },
+      {
+        "lane": "Telegram/VK/YouTube/owner publications",
+        "raw": 0,
+        "duplicates_or_early_rejects": 0,
+        "qualified": 0
+      },
+      {
+        "lane": "ratings/awards/accelerators/clubs",
+        "raw": 1,
+        "duplicates_or_early_rejects": 1,
+        "qualified": 0
+      },
+      {
+        "lane": "franchise/dealer catalogs",
+        "raw": 0,
+        "duplicates_or_early_rejects": 0,
+        "qualified": 0
+      },
+      {
+        "lane": "segment expansion search",
+        "raw": 2,
+        "duplicates_or_early_rejects": 2,
+        "qualified": 0
+      }
     ]
   }
 }
