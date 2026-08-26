@@ -1,0 +1,36 @@
+{
+  "updated_at": "2026-08-26T20:12:00+03:00",
+  "campaign_id": "new_5000",
+  "last_consumed_run_id": "N5K-20260826-434",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260826-192726-jobs.json",
+      "blob_sha": "08e2aa9b309fe2336e0966ced264385072c2de06",
+      "consumed_by_run": "N5K-20260826-434",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "note": "Worker-qualified iSmart was already canonical as N5K-0384; no duplicate integration."
+    },
+    {
+      "path": "data/pending_workers/industry/20260826-193705-industry.json",
+      "blob_sha": "b2999f4e90db0618f6fff1ddd8d7c1025a77efd7",
+      "consumed_by_run": "N5K-20260826-434",
+      "result": "CONSUMED",
+      "note": "RobotFactory and Laser Systems integrated after global canonical dedup."
+    },
+    {
+      "path": "data/pending_workers/growth_news/20260826-193847-growth-news.json",
+      "blob_sha": "a9eb5c9e8c4f537cd0b54d1b24f3436c38a1f358",
+      "consumed_by_run": "N5K-20260826-434",
+      "result": "CONSUMED_WITH_CROSS_WORKER_DEDUP",
+      "note": "Laser Systems overlapped industry worker and was counted once; RTP integrated."
+    },
+    {
+      "path": "data/pending_workers/official_owner/20260826-194739-official-owner.json",
+      "blob_sha": "d572616f1b901dfe1e88611a8261e0ecc9b8cb06",
+      "consumed_by_run": "N5K-20260826-434",
+      "result": "CONSUMED",
+      "note": "Endo Stars, UPTK-65, Terra-Tok and Korona integrated."
+    }
+  ],
+  "outreach_sent": 0
+}
