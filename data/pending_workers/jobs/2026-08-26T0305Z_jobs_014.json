@@ -1,0 +1,101 @@
+{
+  "worker_run_id": "jobs-20260826T0305Z-014",
+  "lane": "jobs",
+  "created_at": "2026-08-26T03:05:00Z",
+  "source_head_before_write": "3e926e00bdadea28a918f5017bd45a4216e7cbfb",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260826-421",
+    "physical_canonical": 375,
+    "physical_contactable": 375,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "scope": {
+    "raw_surfaced": 50,
+    "deep_checked": 2,
+    "qualified": 1,
+    "note": "50 distinct current job-board entries were surfaced from the fresh Moscow sales-management listing. One anonymous employer entry was retained as raw but rejected at identifiability gate. Aggregate early-reject reasons are not reconstructed beyond what was directly checked."
+  },
+  "raw_candidates": [
+    "ООО Агрофирма Партнер","ИП Гулый Николай Витальевич","ООО Наос Восток","АСД","КЛОВЕРМЕД","ООО ЛР ГРУП","Российская производственная компания (работодатель не раскрыт)","ООО РЕДСМС","Inventive Retail Group, Офис","Карекс-Центр, группа компаний","ООО Селлерпро","АО ФК ЛОКОМОТИВ","IN HOUSE","Вершинин Владимир Евгеньевич","ООО ЛИДЕР ПЛЮС","Coffee Station","ООО БАЛЕВ","ИП Похалуева Злата Минижановна","Кредиты.ру","EMS - оборудование будущего","SWITZBERG","ООО Кайрос","LifeStyleGroup","ООО ЛИДЕР ГРУП","ООО Ресурсинвест-Развитие","Eat&Enjoy","Кадышева Татьяна Владимировна","ИП Воробьева Екатерина Андреевна","ООО РАЙЗ","ООО Эмкар","JT marketing","Russian Miele Club","ООО Мир Красоты","ООО ТехноСтиль","IEK GROUP","ООО ТЕНЕТ","Burevestnik Group","Crazy Salsa & bachata","ООО Олл Ин Пром","NetFlex Solution","SHIKcosmetics","ООО Джойсити","GymTeam","QHARISMA","Первая Чайная Группа","ИП Исмагилов Вадим Камильевич","ИП Рыков Егор Алексеевич","ИП Гарчу Кристина Юрьевна","ООО Лунда","ООО Рикофлот"
+  ],
+  "deep_check_rejected": [
+    {
+      "brand": "Рикофлот",
+      "legal_name": "ООО РИКОФЛОТ",
+      "inn": "9729348931",
+      "reason": "NO_QUALIFY_IN_THIS_RUN",
+      "detail": "Legal entity and scale were identifiable, but the current job-board signal could not be fetched with enough vacancy-level detail in this run to confirm the required S1-S3 claim and publication date without inference. Not staged as qualified."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "Агрофирма Партнер",
+      "legal_name": "ООО АГРОФИРМА ПАРТНЕР",
+      "inn": "9715310423",
+      "ogrn": "5177746361953",
+      "legal_status": "Действующее",
+      "region": "Московская область",
+      "city": "Коломна / Москва (коммерческий офис)",
+      "segment": "Селекция, производство и оптовая продажа семян; агро B2B",
+      "website": "https://semena-partner.ru/",
+      "revenue_scale": "Выручка 354 187 000 руб. за 2025 год; рост 48,78%; официальный B2B-сайт также подтверждает собственный селекционно-семеноводческий комплекс 18 га и более 100 агрономов/тепличных сотрудников на комплексе.",
+      "signal_level": "S1",
+      "signal_summary": "Компания прямо сообщает, что растет и усиливает отдел продаж, и ищет руководителя B2B-продаж для построения эффективной системы продаж, управления командой, регламентов, KPI, аналитики в amoCRM и работы с базой более 2200 оптовых клиентов.",
+      "signal_date": "2026-08-25",
+      "signal_source": "https://dreamjob.ru/employers/109156/vakansii/136528516",
+      "owner": "Блокин-Мечталин Василий Иванович — 50%; Куликов Константин Константинович — 50%",
+      "ceo": "Блокин-Мечталин Василий Иванович",
+      "lpr": "Блокин-Мечталин Василий Иванович",
+      "lpr_role": "Генеральный директор и совладелец 50%",
+      "contact_route": {
+        "phone": "+7 495 120 95 95",
+        "email": "opt@semena-partner.ru",
+        "form": "https://semena-partner.ru/opt/",
+        "type": "Официальный B2B-корпоративный маршрут + текущая вакансия работодателя"
+      },
+      "consulting_hypothesis": "Систематизация и масштабирование B2B-продаж: структура отдела, KPI, регламенты, CRM-аналитика, развитие оптовой базы и управляемый рост коммерческого блока.",
+      "evidence": [
+        {
+          "type": "LEGAL_LPR",
+          "claim": "ООО АГРОФИРМА ПАРТНЕР действует; ИНН 9715310423, ОГРН 5177746361953; генеральный директор Блокин-Мечталин Василий Иванович; учредители Блокин-Мечталин Василий Иванович 50% и Куликов Константин Константинович 50%.",
+          "url": "https://www.tbank.ru/business/contractor/legal/5177746361953/"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "Выручка за 2025 год 354 187 000 руб., рост 48,78%.",
+          "url": "https://b2b.house/company/OOO-AGROFIRMA-PARTNER_5d3a2d5f-957e-4ae4-8cd9-3e5481efde69/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "Свежая вакансия руководителя отдела продаж B2B: рост компании, усиление отдела продаж, управление B2B-командой, KPI, регламенты, amoCRM и база более 2200 оптовых клиентов.",
+          "url": "https://dreamjob.ru/employers/109156/vakansii/136528516"
+        },
+        {
+          "type": "CONTACT_OFFICIAL",
+          "claim": "Официальный B2B-сайт публикует +7 495 120 95 95 и opt@semena-partner.ru; доступна форма оптового обращения.",
+          "url": "https://semena-partnervopt.ru/"
+        },
+        {
+          "type": "BRAND_SCALE_OFFICIAL",
+          "claim": "Официальный B2B-сайт подтверждает собственный комплекс 18 га, производство и более 100 агрономов/тепличных сотрудников.",
+          "url": "https://semena-partnervopt.ru/"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "9715310423",
+        "ogrn": "5177746361953",
+        "legal_name": "ООО АГРОФИРМА ПАРТНЕР",
+        "brand_domain": "Агрофирма Партнер|semena-partner.ru"
+      },
+      "prewrite_dedup": {
+        "checked_against_head": "3e926e00bdadea28a918f5017bd45a4216e7cbfb",
+        "exact_inn_match_in_current_leads_master": 0,
+        "result": "UNIQUE_AT_PREWRITE_CHECK"
+      }
+    }
+  ],
+  "canonical_write": false,
+  "outreach": 0
+}
