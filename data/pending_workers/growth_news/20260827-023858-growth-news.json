@@ -1,0 +1,139 @@
+{
+  "schema_version": "growth_news_worker_v1",
+  "lane": "growth_news",
+  "created_at": "2026-08-27T02:38:58+03:00",
+  "source_head_before_write": "fc954a1f7379be08d92c5956dba211b68b0900be",
+  "canonical_snapshot": {
+    "campaign_id": "new_5000",
+    "canonical_count": 420,
+    "contactable_count": 420,
+    "last_completed_run": "N5K-20260827-440",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_funnel": {
+    "raw_distinct_companies_confirmed": 24,
+    "fast_gate": 9,
+    "size": 5,
+    "legal": 4,
+    "signal": 4,
+    "lpr": 3,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates_or_early_rejects": 15,
+    "excluded_after_fast_gate": 7,
+    "notes": "Цель 100-180 разных raw в доступном execution window не достигнута. В raw засчитаны только реально идентифицированные именованные компании, а не строки поисковой выдачи и не агрегированные месячные счетчики производств. Критерии не ослаблялись."
+  },
+  "qualified": [
+    {
+      "brand": "МолоПак",
+      "legal_name": "ООО \"МОЛОПАК\"",
+      "inn": "7743513365",
+      "ogrn": "1037739986899",
+      "domain": "promupac.com",
+      "legal_status": "Действующая организация; актуальность подтверждена на август 2026",
+      "ownership": "Частная компания; учредители-физлица: Шарма Татьяна Осиповна 75%, Гущин Тимур Витальевич 25%",
+      "size_evidence": {
+        "metric": "Выручка 2025",
+        "value": "4.12 млрд руб.; рост примерно на 894.57 млн руб. год к году",
+        "url": "https://www.tbank.ru/business/contractor/legal/1037739986899/",
+        "additional": "Официальный сайт указывает мощность 1.2 млрд упаковок в год; отраслевой профиль сообщает о плановом росте мощностей до 4 млрд упаковок в год после расширения."
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-07-14",
+        "summary": "Компания начала оснащение третьей производственной площадки в Чехове; после запуска рассчитывает увеличить мощности еще на 2 млрд упаковок в год и локализовать форматы упаковки, ранее поставлявшиеся из-за рубежа.",
+        "urls": [
+          "https://www.vedomosti.ru/press_releases/2026/07/14/kompaniya-molopak-pristupila-k-osnascheniyu-sobstvennogo-zavoda-v-chehove",
+          "https://promupac.com/",
+          "https://promupac.com/o_predpriyatii"
+        ]
+      },
+      "lpr": {
+        "name": "Гущин Тимур Витальевич",
+        "role": "Управляющий директор; учредитель 25%",
+        "evidence_urls": [
+          "https://promupac.com/",
+          "https://companies.rbc.ru/amp/ogrn/1037739986899/"
+        ],
+        "legal_ceo": "Шарма Радж Анирудхович"
+      },
+      "contact": {
+        "route": "Официальный общий маршрут компании",
+        "phone": "+7 (499) 642-5-642",
+        "email": "info@promupac.com",
+        "contact_form": "https://promupac.com/",
+        "source_url": "https://promupac.com/"
+      },
+      "dedup_keys": {
+        "inn": "7743513365",
+        "ogrn": "1037739986899",
+        "legal_name": "ООО МОЛОПАК",
+        "brand_domain": "МолоПак|promupac.com"
+      },
+      "dedup_check": "Повторный поиск по репозиторию перед записью по названию и ИНН совпадений не выявил; финальный physical dedup остается за canonical writer.",
+      "gate_result": "QUALIFIED"
+    },
+    {
+      "brand": "Нью Лайн Инжиниринг",
+      "legal_name": "ООО \"НЬЮ ЛАЙН ИНЖИНИРИНГ\"",
+      "inn": "5053056623",
+      "ogrn": "1095053000932",
+      "domain": "nleng.ru",
+      "legal_status": "Действующая организация; статус подтвержден в 2026 году",
+      "ownership": "Частная компания; учредители-физлица, включая генерального директора Павла Лебедя",
+      "size_evidence": {
+        "metric": "Выручка 2025",
+        "value": "1.317 млрд руб.; рост около 61%; чистая прибыль 108 млн руб.",
+        "urls": [
+          "https://companies.rbc.ru/id/1095053000932-ooo-nyu-lajn-inzhiniring/",
+          "https://www.companium.ru/id/1095053000932-nyu-layn-inzhiniring"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-06-05",
+        "summary": "На ПМЭФ-2026 компания подписала соглашение о создании нового производственно-инжинирингового центра в Московской области. Запуск предприятия запланирован на 2027 год; инвестиции в оснащение производственных мощностей в 2026 году — более 100 млн руб. Проект расширяет собственное производство автоматизированных складских систем, AMR и специализированного оборудования.",
+        "urls": [
+          "https://nleng.ru/news/177/",
+          "https://nleng.ru/news/"
+        ]
+      },
+      "lpr": {
+        "name": "Лебедь Павел Александрович",
+        "role": "Генеральный директор; учредитель; подписант инвестиционного соглашения",
+        "evidence_urls": [
+          "https://nleng.ru/news/177/",
+          "https://www.companium.ru/id/1095053000932-nyu-layn-inzhiniring"
+        ]
+      },
+      "contact": {
+        "route": "Официальный общий и коммерческий маршрут компании",
+        "phone": "+7 (495) 374-95-76",
+        "sales_phone": "+7 (495) 374-64-86",
+        "email": "info@nleng.ru",
+        "contact_form": "https://nleng.ru/contacts/",
+        "source_url": "https://nleng.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "5053056623",
+        "ogrn": "1095053000932",
+        "legal_name": "ООО НЬЮ ЛАЙН ИНЖИНИРИНГ",
+        "brand_domain": "Нью Лайн Инжиниринг|nleng.ru"
+      },
+      "dedup_check": "Повторный поиск по репозиторию перед записью по названию и ИНН совпадений не выявил; финальный physical dedup остается за canonical writer.",
+      "gate_result": "QUALIFIED"
+    }
+  ],
+  "rejected_examples": [
+    {"name": "НАРТИС", "reason": "уже фигурировал в предыдущих staging/canonical циклах; не брать повторно"},
+    {"name": "Логика молока", "reason": "уже интегрирована в RUN 440"},
+    {"name": "Битроботикс", "reason": "ранее интегрированный/известный кандидат"},
+    {"name": "ФОРШ", "reason": "ранее известный canonical duplicate"},
+    {"name": "Hobby World / Мир Хобби", "reason": "ранее уже был квалифицирован worker-ом; не дублировать"},
+    {"name": "ТехноСонус-Центр", "reason": "ранее уже был квалифицирован worker-ом; не дублировать"}
+  ],
+  "outreach_performed": false,
+  "canonical_write_performed": false
+}
