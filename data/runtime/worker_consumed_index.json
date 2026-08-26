@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-26T20:12:00+03:00",
+  "updated_at": "2026-08-26T21:22:00+03:00",
   "campaign_id": "new_5000",
-  "last_consumed_run_id": "N5K-20260826-434",
+  "last_consumed_run_id": "N5K-20260826-435",
   "consumed": [
     {
       "path": "data/pending_workers/jobs/20260826-192726-jobs.json",
@@ -30,6 +30,27 @@
       "consumed_by_run": "N5K-20260826-434",
       "result": "CONSUMED",
       "note": "Endo Stars, UPTK-65, Terra-Tok and Korona integrated."
+    },
+    {
+      "path": "data/pending_workers/jobs/20260826-202809-jobs.json",
+      "blob_sha": "e327c00ae98cac1c4d788751dd19bae536609a59",
+      "consumed_by_run": "N5K-20260826-435",
+      "result": "CONSUMED",
+      "note": "KTB 1440 passed fresh canonical review and was integrated."
+    },
+    {
+      "path": "data/pending_workers/industry/20260826-203214-industry.json",
+      "blob_sha": "45260b28604cb322404baea00edd49f496cd2710",
+      "consumed_by_run": "N5K-20260826-435",
+      "result": "CONSUMED_WITH_CANONICAL_REVIEW_REJECT",
+      "note": "Worker-qualified LSP was rejected at SIGNAL: source surfaced as 2026 but page content describes a 2015 modernization event; stale evidence excluded."
+    },
+    {
+      "path": "data/pending_workers/growth_news/20260826-204008-growth-news.json",
+      "blob_sha": "bdcd55bb4aa5417213e4b0dfb267a998b0022d95",
+      "consumed_by_run": "N5K-20260826-435",
+      "result": "CONSUMED",
+      "note": "CNP Russia and Katusha Print passed fresh 2026 verification and were integrated."
     }
   ],
   "outreach_sent": 0
