@@ -2,10 +2,10 @@
   "run_id": "N5K-20260826-420",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T05:07:00+03:00",
+  "updated_at": "2026-08-26T05:08:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 371,
     "target_count": 5000,
     "current_canonical_count": 373,
     "current_contactable_count": 373,
@@ -24,10 +24,7 @@
     "duplicates": 0,
     "excluded": 42
   },
-  "qualified_companies": [
-    "Волжский крановый завод / ВКЗ",
-    "ОКАПОЛ / OKAPOL"
-  ],
+  "qualified_companies": ["Волжский крановый завод / ВКЗ", "ОКАПОЛ / OKAPOL"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
