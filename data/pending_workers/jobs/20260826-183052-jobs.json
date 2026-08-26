@@ -1,0 +1,169 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-26T18:30:52+03:00",
+    "source_head_before_discovery": "c48a10122bdab0483c1575d623ae45997c689f58",
+    "source_run": "N5K-20260826-432",
+    "source_canonical_contactable": "392/392",
+    "canonical_write": false,
+    "outreach": false
+  },
+  "worker_funnel": {
+    "raw_surfaced_unique_employers": 80,
+    "raw_target": "80-150",
+    "deep_checked": 5,
+    "qualified": 2,
+    "aggregate_fast_gate_reject_count_persisted": false,
+    "note": "80 distinct employer-level raw candidates were surfaced across current HH/JobVK/GdeJob/Jobrun/DreamJob job-board result sets in Ryazan, Ekaterinburg, Samara, Rostov-on-Don, Krasnodar, Voronezh, Nizhny Novgorod, Novosibirsk and Kazan. Only five strongest low-overlap candidates were taken to deep-check. Aggregate early-reject counts are intentionally not reconstructed after the fact."
+  },
+  "discovery_sources": [
+    "https://ryazan.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+    "https://gdejob.com/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D1%80%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C",
+    "https://forum.jobvk.com/samara/rukovoditely-otdela-prodazh",
+    "https://ru.jobvk.com/rostov-na-donu/rukovoditely-otdela-prodazh",
+    "https://www.notexistsforum.jobvk.com/krasnodar/kommercheskiy-direktor",
+    "https://forum.jobvk.com/nighniy-novgorod/rukovoditely-otdela-prodazh",
+    "https://www.notexistscomru.jobvk.com/novosibirsk/rukovoditely-otdela-prodazh",
+    "https://forum.jobvk.com/kazan/rukovoditely-otdela/sa-ot-100000",
+    "https://ekaterinburg.hh.ru/vacancies/rukovoditel_otdela_prodazh"
+  ],
+  "deep_check_rejects": [
+    {
+      "brand": "Екатеринбургский Завод Высоковольтного Оборудования / ЕЗВО",
+      "inn": "6679031070",
+      "reason": "SIZE gate not confirmed for target profile: 2025 revenue 56.399m RUB but current registry profile reports only 1 employee; not promoted without stronger current scale evidence.",
+      "sources": [
+        "https://companies.rbc.ru/id/1136679004681-ooo-proizvodstvennoe-obedinenie-stelz/",
+        "https://ezvo1.ru/contacts/",
+        "https://nesiditsa.ru/vacancy/135828379"
+      ]
+    },
+    {
+      "brand": "Русгеосинт",
+      "inn": "5261103779",
+      "reason": "Scale is materially above the compact target profile used by this worker: 2025 revenue about 1.76bn RUB and 121 employees. Strong job signal exists, but this worker did not promote it without a clearer current-config scale exception.",
+      "sources": [
+        "https://geo-sin.ru/",
+        "https://www.tbank.ru/business/contractor/legal/1165261050822/",
+        "https://forum.jobvk.com/nighniy-novgorod/rukovoditely-otdela-prodazh"
+      ]
+    },
+    {
+      "brand": "Чебоко",
+      "inn": "6161064197",
+      "reason": "Strong current growth and hiring signal, but 2025 revenue about 1.49bn RUB; not promoted by this worker without a clearer current-config scale exception.",
+      "sources": [
+        "https://cheboko.com/",
+        "https://firmoteka.ru/6161064197",
+        "https://ru.jobvk.com/rostov-na-donu/rukovoditely-otdela-prodazh"
+      ]
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "МИАР",
+      "legal_name": "ООО «МИАР»",
+      "inn": "6230100057",
+      "ogrn": "1166234074050",
+      "region": "Рязанская область",
+      "city": "Рязань",
+      "segment": "Промышленные комплектующие; подшипники, ремни, цепи; B2B",
+      "website": "https://miar62.ru/",
+      "legal_status": "Действующее частное ООО",
+      "scale": {
+        "revenue_2025_rub": 93521000,
+        "employees_2025": 10,
+        "source": "https://b2b.house/company/OOO-MIAR_76a67137-53cd-4fe9-8e69-34ffc6085f48/"
+      },
+      "signal_level": "S1",
+      "signal": "Компания ищет руководителя отдела продаж для промышленного B2B-направления; вакансия требует управления командой, B2B-продажами, CRM и результатом отдела.",
+      "signal_date": "2026-08-03",
+      "signal_source": "https://dreamjob.ru/employers/1194707/vakansii/135847979",
+      "signal_current_confirmation": "https://ryazan.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "owner": "Шестаков Михаил Владимирович",
+      "owner_source": "https://companium.ru/id/1166234074050-miar",
+      "lpr": "Шестаков Михаил Владимирович",
+      "lpr_role": "Директор и учредитель",
+      "contact_route": {
+        "phone": "+7 (4912) 41-90-83",
+        "email": "info@miar62.ru",
+        "named_sales_contact": "Николай Медведев, руководитель отдела продаж",
+        "named_sales_email": "nm@miar62.ru",
+        "source": "https://miar62.ru/kontaktyi"
+      },
+      "consulting_hypothesis": "Систематизация и масштабирование промышленного B2B-sales: управленческая модель РОП, CRM-дисциплина, KPI/воронка, сегментация производственных клиентов и рост повторных продаж.",
+      "evidence": [
+        {"type": "LEGAL_SCALE", "url": "https://b2b.house/company/OOO-MIAR_76a67137-53cd-4fe9-8e69-34ffc6085f48/"},
+        {"type": "BRAND_LEGAL_CONTACT", "url": "https://miar62.ru/"},
+        {"type": "SIGNAL", "url": "https://dreamjob.ru/employers/1194707/vakansii/135847979"},
+        {"type": "LPR", "url": "https://companium.ru/id/1166234074050-miar"},
+        {"type": "CONTACT", "url": "https://miar62.ru/kontaktyi"}
+      ],
+      "dedup_keys": {
+        "inn": "6230100057",
+        "ogrn": "1166234074050",
+        "legal_name": "ООО МИАР",
+        "brand_domain": "МИАР|miar62.ru"
+      },
+      "dedup_check": {
+        "github_exact_inn_search": "no matches before staging",
+        "github_exact_ogrn_search": "no matches before staging"
+      }
+    },
+    {
+      "brand": "ПК ТехноГрупп",
+      "legal_name": "ООО ПК «ТЕХНОГРУПП»",
+      "inn": "7726459767",
+      "ogrn": "1197746677688",
+      "region": "Москва / производственная площадка Рязань",
+      "city": "Москва / Рязань",
+      "segment": "Производство корпусной, офисной и транспортной мебели; B2B/B2G",
+      "website": "https://tehnogrupp.ru/",
+      "legal_status": "Действующее частное ООО",
+      "scale": {
+        "revenue_2025_rub": 645525000,
+        "brand_production_area_sqm": 21000,
+        "brand_team_claim": 400,
+        "sources": [
+          "https://companies.rbc.ru/id/1197746677688-obschestvo-s-ogranichennoj-otvetstvennostyu-pk-tehnogrupp/",
+          "https://tehnogrupp.ru/"
+        ]
+      },
+      "signal_level": "S1",
+      "signal": "Свежая вакансия коммерческого директора (CCO)/директора по сбыту: коммерческая стратегия, управление продажами, маркетингом и МТС, планы продаж и закупок, контроль выручки, маржи и себестоимости, оптимизация бизнес-процессов.",
+      "signal_date": "2026-08-24",
+      "signal_source": "https://jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE-%D0%B7%D0%B0%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+      "signal_current_confirmation": "https://ryazan.hh.ru/vacancies/kommercheskij-direktor-b2b",
+      "owner": "Кудашов Валентин Николаевич",
+      "owner_source": "https://www.tbank.ru/business/contractor/legal/1197746677688/",
+      "lpr": "Канайкин Петр Николаевич",
+      "lpr_role": "Генеральный директор",
+      "lpr_source": "https://www.tbank.ru/business/contractor/legal/1197746677688/",
+      "contact_route": {
+        "phone": "+7 (491) 243-42-87",
+        "employment_phone": "8 (4912) 43-42-85",
+        "email": "zakaz@tehnogrupp.ru",
+        "source": "https://tehnogrupp.ru/"
+      },
+      "consulting_hypothesis": "Коммерческая трансформация производственной компании: единая стратегия B2B/B2G, P&L и маржинальность, CRM/KPI, управление длинной воронкой и тендерным контуром, синхронизация продаж, маркетинга и снабжения.",
+      "evidence": [
+        {"type": "LEGAL_OWNER_LPR", "url": "https://www.tbank.ru/business/contractor/legal/1197746677688/"},
+        {"type": "LEGAL_SCALE", "url": "https://companies.rbc.ru/id/1197746677688-obschestvo-s-ogranichennoj-otvetstvennostyu-pk-tehnogrupp/"},
+        {"type": "BRAND_PRODUCTION_CONTACT", "url": "https://tehnogrupp.ru/"},
+        {"type": "SIGNAL_CURRENT", "url": "https://ryazan.hh.ru/vacancies/kommercheskij-direktor-b2b"},
+        {"type": "SIGNAL_DATED", "url": "https://jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE-%D0%B7%D0%B0%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"}
+      ],
+      "dedup_keys": {
+        "inn": "7726459767",
+        "ogrn": "1197746677688",
+        "legal_name": "ООО ПК ТЕХНОГРУПП",
+        "brand_domain": "ПК ТехноГрупп|tehnogrupp.ru"
+      },
+      "dedup_check": {
+        "github_exact_inn_search": "no matches before staging",
+        "github_exact_ogrn_search": "no matches before staging",
+        "github_exact_brand_search": "no matches before staging"
+      }
+    }
+  ]
+}
