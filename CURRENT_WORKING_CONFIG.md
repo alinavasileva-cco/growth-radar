@@ -86,3 +86,7 @@ Job-board worker 016 отдельно предложил `3D Torg / ЦКРИА`,
 - `N5K-20260826-421`: 375/375, +2, PASS, orphan 0/0.
 - `N5K-20260826-422`: 377/377, +2, PASS, orphan 0/0.
 - `N5K-20260826-423`: 380/380, +3, PASS, orphan 0/0.
+
+
+## Latest verified run N5K-20260826-424
+Canonical/contactable: 381/381. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

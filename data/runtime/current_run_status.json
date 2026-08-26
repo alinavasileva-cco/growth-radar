@@ -1,36 +1,38 @@
 {
-  "run_id": "N5K-20260826-423",
+  "run_id": "N5K-20260826-424",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T08:22:00+03:00",
+  "updated_at": "2026-08-26T09:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 377,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 380,
-    "current_contactable_count": 380,
-    "progress_added": 380,
-    "remaining": 4620
+    "current_canonical_count": 381,
+    "current_contactable_count": 381,
+    "progress_added": 381,
+    "remaining": 4619
   },
   "funnel": {
-    "discovered": 30,
-    "fast_gate_passed": 6,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "duplicates": 0,
-    "excluded": 27
+    "discovered": 12,
+    "fast_gate_passed": 3,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 4,
+    "excluded": 7
   },
-  "qualified_companies": ["Маламут Ленд", "Аксис / ГК Инструмент", "Негабарит-Транс"],
+  "qualified_companies": [
+    "Варяжский композит / SHELON"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "380_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "380_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "381_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "381_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
