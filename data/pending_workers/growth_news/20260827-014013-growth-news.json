@@ -1,0 +1,145 @@
+{
+  "schema_version": "growth_news_worker_v1",
+  "lane": "growth_news",
+  "created_at": "2026-08-27T01:40:13+03:00",
+  "canonical_snapshot": {
+    "run": "N5K-20260827-439",
+    "canonical": 416,
+    "contactable": 416,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "source": "CURRENT_WORKING_CONFIG.md",
+    "head_seen_before_worker": "00d066a9e2024478df6be85a0a13d2cf3c6e8eb3"
+  },
+  "worker_funnel": {
+    "raw_distinct": 104,
+    "fast_gate": 12,
+    "size": 7,
+    "legal": 6,
+    "signal": 5,
+    "lpr": 3,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates_or_early_rejects": 92,
+    "notes": "Conservative audited count from named companies/projects actually inspected across fresh August 2026 growth/investment searches plus adjacent June-July 2026 investment digests. Search-result rows were not counted as companies unless a named business/project entity was visible. Saturated/public/state/small/ambiguous-legal candidates were rejected before deep-check."
+  },
+  "qualified": [
+    {
+      "brand": "ПСМ / Промышленные силовые машины",
+      "legal_name": "ООО «Завод ПСМ»",
+      "inn": "7604223919",
+      "ogrn": "1127604005913",
+      "jurisdiction": "RU",
+      "private_company": true,
+      "size_gate": {
+        "status": "PASS",
+        "evidence": "Три производственные площадки в Ярославской области общей площадью 25 тыс. кв. м; по данным компании отгружено 1,7 тыс. насосных агрегатов, мощность реализованных электростанций 2,2 тыс. МВт. РБК также подтверждает действующее юрлицо; опубликованная отчетность показывает выручку 2,726 млрд руб. за 2021 год.",
+        "urls": [
+          "https://www.kommersant.ru/doc/8877322",
+          "https://companies.rbc.ru/id/1127604005913-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-zavod-psm/"
+        ]
+      },
+      "legal_gate": {
+        "status": "PASS",
+        "evidence": "Официальная карточка ООО «Завод ПСМ»: ИНН 7604223919, ОГРН 1127604005913, генеральный директор Андрей Медведев. РБК подтверждает, что организация действует на 24.08.2026.",
+        "urls": [
+          "https://www.powerunit.ru/about_company/rekviziti_PSM.pdf",
+          "https://companies.rbc.ru/id/1127604005913-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-zavod-psm/"
+        ]
+      },
+      "signal_gate": {
+        "status": "PASS",
+        "class": "S2",
+        "date": "2026-08-11",
+        "evidence": "ПСМ покупает завод по производству трансформаторных подстанций и распределительных устройств в Ленинградской области; одновременно зарегистрировано новое направление ПСМ Atlas для энергоаудита площадок и проектов ЦОД/газовой генерации.",
+        "url": "https://www.kommersant.ru/doc/8877473"
+      },
+      "lpr_gate": {
+        "status": "PASS",
+        "person": "Андрей Евгеньевич Медведев",
+        "role": "генеральный директор и владелец ООО «Завод ПСМ»",
+        "evidence_urls": [
+          "https://www.kommersant.ru/doc/8877322",
+          "https://www.powerunit.ru/about_company/rekviziti_PSM.pdf"
+        ]
+      },
+      "contact_gate": {
+        "status": "PASS",
+        "route": "официальный общий канал компании",
+        "phone": "8 800 500-08-12",
+        "email": "psm@powerunit.ru",
+        "url": "https://www.powerunit.ru/contacts/"
+      },
+      "dedup_precheck": {
+        "status": "PASS_PRELIMINARY",
+        "keys": ["7604223919", "1127604005913", "ООО Завод ПСМ", "ПСМ|powerunit.ru"],
+        "note": "Совпадений по имени/ключам в доступном GitHub code search и списке последних RUN из CURRENT_WORKING_CONFIG.md не обнаружено. Финальный physical master/integration guard обязателен у canonical writer непосредственно перед интеграцией."
+      },
+      "status": "QUALIFIED_STAGING"
+    },
+    {
+      "brand": "Логика молока",
+      "legal_name": "ООО «Группа Логика Молока»",
+      "inn": "1655498011",
+      "ogrn": "1231600049196",
+      "jurisdiction": "RU",
+      "private_company": true,
+      "size_gate": {
+        "status": "PASS",
+        "evidence": "Группа объединяет 12 заводов; выручка бизнеса за 2024 год превышала 140 млрд руб. В 2026 году заявлены CAPEX свыше 9,2 млрд руб., а инвестиционная программа до 2030 года увеличена до 100–120 млрд руб.",
+        "urls": [
+          "https://www.interfax.ru/russia/1051494",
+          "https://logikamoloka.ru/press-centr/news/yakub-zakriev-my-dolzhny-vstat-v-odin-ryad-s-nestle-i-unilever/"
+        ]
+      },
+      "legal_gate": {
+        "status": "PASS",
+        "evidence": "ООО «Группа Логика Молока» действует; ИНН 1655498011, ОГРН 1231600049196, основной ОКВЭД 64.20. Действующий директор по ЕГРЮЛ — Руслан Алисултанов.",
+        "urls": [
+          "https://check.tochka.com/company/1231600049196/",
+          "https://saby.ru/profile/1655498011-165501001"
+        ]
+      },
+      "signal_gate": {
+        "status": "PASS",
+        "class": "S2",
+        "date": "2026-08-17",
+        "evidence": "Компания объявила о строительстве нового флагманского молочного комбината в Московской области с инвестициями до 30 млрд руб.; ранее в 2026 году подтверждала масштабную программу расширения мощностей, M&A и новые продуктовые направления.",
+        "urls": [
+          "https://www.agroinvestor.ru/investments/news/46401-logika-moloka-vlozhit-do-30-mlrd-rubley-v-novyy-flagmanskiy-zavod/",
+          "https://logikamoloka.ru/press-centr/news/yakub-zakriev-my-dolzhny-vstat-v-odin-ryad-s-nestle-i-unilever/"
+        ]
+      },
+      "lpr_gate": {
+        "status": "PASS",
+        "person": "Руслан Лечиевич Алисултанов",
+        "role": "директор ООО «Группа Логика Молока»; председатель совета директоров группы",
+        "evidence_urls": [
+          "https://check.tochka.com/company/1231600049196/",
+          "https://logikamoloka.ru/press-centr/news/health-nutrition-prinyala-reshenie-o-smene-korporativnogo-nazvaniya-na-logiku-moloka/"
+        ]
+      },
+      "contact_gate": {
+        "status": "PASS",
+        "route": "официальный центральный офис группы",
+        "email": "correspondence@logmol.ru",
+        "url": "https://logikamoloka.ru/contacts/"
+      },
+      "dedup_precheck": {
+        "status": "PASS_PRELIMINARY",
+        "keys": ["1655498011", "1231600049196", "ООО Группа Логика Молока", "Логика молока|logikamoloka.ru"],
+        "note": "Совпадений по имени/ключам в доступном GitHub code search и списке последних RUN из CURRENT_WORKING_CONFIG.md не обнаружено. Финальный physical master/integration guard обязателен у canonical writer непосредственно перед интеграцией."
+      },
+      "status": "QUALIFIED_STAGING"
+    }
+  ],
+  "rejected_examples": [
+    {"name": "НЭВЗ", "reason": "корпоративная структура крупного холдинга; не проходил текущий private-fit fast gate"},
+    {"name": "Семаргл", "reason": "по доступным данным найдено юрлицо пищевых добавок с тем же названием; не удалось надежно привязать свежий робототехнический сигнал к нужному юрлицу без риска ошибки"},
+    {"name": "Профрегион", "reason": "обнаружены два одноименных связанных юрлица; свежий инвестпроект привязан к новому резиденту, но достаточный актуальный size для конкретного юрлица не подтвержден"},
+    {"name": "Кая Трейд", "reason": "сильный свежий инвестсигнал подтвержден, но текущий масштаб конкретного юрлица (выручка 42 млн руб. за 2025) недостаточен для size gate"},
+    {"name": "IEK Опора", "reason": "не проходил private-fit текущего worker после быстрой проверки структуры/масштаба и насыщенности"}
+  ],
+  "outreach": 0
+}
