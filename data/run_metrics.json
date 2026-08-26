@@ -1,59 +1,52 @@
 {
-  "generated_at": "2026-08-26T19:57:59+03:00",
+  "generated_at": "2026-08-26T21:18:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260826-434",
-  "current_run_id": "N5K-20260826-434",
+  "latest_completed_run_id": "N5K-20260826-435",
+  "current_run_id": "N5K-20260826-435",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 401,
-  "contactable_verified": 401,
+  "canonical_pool_verified": 404,
+  "contactable_verified": 404,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4599,
+  "remaining_to_target": 4596,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_434": {
-    "raw_discovered": 140,
-    "fast_gate_passed": 8,
-    "size_check_passed": 8,
-    "legal_match_passed": 8,
-    "signal_confirmed": 8,
-    "lpr_identified": 8,
-    "contact_route_found": 8,
-    "qualified": 7,
-    "physically_integrated": 7,
-    "duplicates": 1,
-    "excluded": 132,
+  "run_435": {
+    "raw_discovered": 129,
+    "fast_gate_passed": 4,
+    "size_check_passed": 4,
+    "legal_match_passed": 4,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "physically_integrated": 3,
+    "duplicates": 0,
+    "excluded": 126,
     "lane_metrics": [
       {
         "lane": "jobs worker",
         "raw": 80,
         "duplicates_or_early_rejects": 79,
-        "qualified": 0,
-        "note": "Worker-qualified iSmart is already canonical N5K-0384; lane raw is worker-reported and is not added to the global unique minimum because cross-worker raw overlap is not fully enumerable."
+        "qualified": 1,
+        "note": "80 distinct employers reported by worker; not summed into global discovered because full cross-worker raw overlap is not enumerable. KTB 1440 retained after fresh canonical verification."
       },
       {
         "lane": "industry worker",
-        "raw": 140,
-        "duplicates_or_early_rejects": 133,
-        "qualified": 2,
-        "note": "140 consecutive distinct Metalloobработка-2026 exhibitors; this is the auditable global unique-raw lower bound used for RUN discovered."
+        "raw": 129,
+        "duplicates_or_early_rejects": 129,
+        "qualified": 0,
+        "note": "129 distinct official-exhibitor candidates form the auditable global unique-raw lower bound. Worker-qualified LSP was rejected by canonical writer because the purported 2026 modernization source actually describes a 2015 event; stale signal excluded."
       },
       {
         "lane": "growth/news worker",
         "raw": 22,
-        "duplicates_or_early_rejects": 19,
-        "qualified": 1,
-        "note": "Laser Systems overlaps industry worker and is globally counted once; RTP remains net-new."
-      },
-      {
-        "lane": "official/owner worker",
-        "raw": 80,
-        "duplicates_or_early_rejects": 76,
-        "qualified": 4,
-        "note": "Worker-reported distinct entities; raw not summed into global discovered because cross-worker raw overlap cannot be proven from persisted staging."
+        "duplicates_or_early_rejects": 20,
+        "qualified": 2,
+        "note": "CNP Russia and Katusha Print retained after fresh 2026 verification; raw not summed into global discovered because cross-worker overlap cannot be fully proven."
       }
     ]
   }
