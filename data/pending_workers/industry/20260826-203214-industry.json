@@ -1,0 +1,109 @@
+{
+  "worker": "industry",
+  "generated_at": "2026-08-26T20:32:14+03:00",
+  "source_head": "1abc56bedb4546d66609b08a2bdef74a372d6537",
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "configuration": {
+    "campaign_id": "new_5000",
+    "required_funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"],
+    "quality_rule": "No guesses; stale records excluded when fresher confirmed data exists"
+  },
+  "raw_collection": {
+    "primary_source": "Expocentre METALLOOBRABOTKA-2026 official internet catalog, Russia filter",
+    "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F",
+    "catalog_russian_participants": 688,
+    "sample_pages": "5-17",
+    "listing_rows_reviewed": 130,
+    "distinct_raw_candidates": 129,
+    "known_listing_duplicate_removed": "GANGARD LLC appeared twice on page 17 under two stands",
+    "note": "129 distinct raw company names were collected from the official Russian exhibitor catalog pages. Deep verification was intentionally limited to candidates with a plausible current scale + S1-S3 signal; unverified rows are not represented as passed gates."
+  },
+  "worker_funnel": {
+    "raw_discovered_distinct": 129,
+    "deep_check_candidates": 6,
+    "size_pass": 3,
+    "legal_pass": 3,
+    "signal_pass": 2,
+    "lpr_pass": 2,
+    "contact_pass": 2,
+    "qualified": 1,
+    "qualified_counted_only_when_all_required_fields_confirmed": true,
+    "not_deep_checked": 123,
+    "rejects_or_not_qualified": [
+      {
+        "name": "АО Рязанское станкостроительное объединение",
+        "reason": "Strong scale/current operations and practical contact route confirmed, but worker did not independently confirm private-company ownership status to the required certainty; not promoted to QUALIFIED."
+      },
+      {
+        "name": "АО Сарапульский электрогенераторный завод",
+        "reason": "Current scale and 2026 development signal confirmed, but corporate/state-affiliation context makes the private-company fast-gate uncertain; not promoted."
+      },
+      {
+        "name": "ООО Валдай Роботы",
+        "reason": "Current legal status, LPR and contacts confirmed, but scale remains below the established target profile despite growth; rejected at SIZE."
+      },
+      {
+        "name": "ООО Завод АМО Сталь",
+        "reason": "Current legal status and contact route confirmed, but 2025 revenue 91.014m RUB is below target profile; rejected at SIZE."
+      },
+      {
+        "name": "АО Ирлен-Инжиниринг",
+        "reason": "Current legal status and CEO confirmed, but no sufficiently strong current S1-S3 signal was verified in this pass; rejected at SIGNAL."
+      }
+    ]
+  },
+  "qualified": [
+    {
+      "brand": "Липецкое станкостроительное предприятие / ЛСП",
+      "legal_name": "ООО «ЛИПЕЦКОЕ СТАНКОСТРОИТЕЛЬНОЕ ПРЕДПРИЯТИЕ»",
+      "inn": "4825072356",
+      "ogrn": "1114823000401",
+      "legal_status": "Действует",
+      "legal_status_checked": "2026-08-05",
+      "private_status": "Частная собственность; ООО",
+      "region": "Липецкая область",
+      "city": "Липецк",
+      "segment": "Станкостроение / металлообрабатывающее оборудование / промышленный B2B",
+      "website": "https://lssp.ru/",
+      "size": {
+        "revenue_2025_rub": 1816377000,
+        "employees": 97,
+        "scale_summary": "Выручка 1.816377 млрд ₽ за 2025 год; 97 сотрудников; действующее среднее промышленное предприятие."
+      },
+      "signal": {
+        "level": "S2",
+        "date": "2026-07-03",
+        "summary": "На предприятии завершён технологический аудит инвестиционного проекта модернизации производства шлифовального оборудования; проект предусматривает оснащение производства современным многофункциональным оборудованием.",
+        "source_url": "https://www.informdom.com/novosti/lipeckoe-stankostroitelnoe-predpriyatie-moderniziruet-proizvodstvo.html"
+      },
+      "owner": "Пахомов Дмитрий Александрович — единственный учредитель по актуальному профилю ООО",
+      "lpr": "Пахомов Дмитрий Александрович",
+      "lpr_role": "Исполнительный директор / единственный учредитель",
+      "contacts": {
+        "phone": "+7 (800) 101-07-62",
+        "email": "promo@lssp.ru",
+        "reception_email": "lssp@lssp.ru",
+        "contact_form": "https://lssp.ru/kontakty",
+        "source_url": "https://lssp.ru/kontakty"
+      },
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1114823000401-ooo-lipetskoe-stankostroitelnoe-predpriyatie/",
+        "https://saby.ru/profile/4825072356-482501001",
+        "https://lssp.ru/kontakty",
+        "https://www.informdom.com/novosti/lipeckoe-stankostroitelnoe-predpriyatie-moderniziruet-proizvodstvo.html",
+        "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f?hallid=34"
+      ],
+      "dedup": {
+        "canonical_repo_search_inn": "no indexed match found before staging",
+        "inn": "4825072356",
+        "ogrn": "1114823000401",
+        "exact_legal_name": "ООО «ЛИПЕЦКОЕ СТАНКОСТРОИТЕЛЬНОЕ ПРЕДПРИЯТИЕ»",
+        "brand_domain": "ЛСП|lssp.ru"
+      },
+      "consulting_hypothesis": "Коммерческое масштабирование на фоне модернизации станкостроительного производства: загрузка новых мощностей, сегментация промышленного B2B, key-account pipeline, продуктовая и проектная маржинальность, forecast и CRM/KPI.",
+      "final_status": "QUALIFIED"
+    }
+  ]
+}
