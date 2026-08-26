@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-26T13:22:00+03:00",
+  "updated_at": "2026-08-26T13:25:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260826-427",
-  "current_run_id": "N5K-20260826-427",
+  "last_completed_run_id": "N5K-20260826-428",
+  "current_run_id": "N5K-20260826-428",
   "last_run_id": "N5K-20260826-428",
   "latest_completed_run": "N5K-20260826-428",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 427 completed after physical integration and metadata REPAIR: +1 net new company (Анатомика). Physical canonical/contactable 384/384; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 428 completed after physical integration and metadata REPAIR: +1 net new company (Семаргл / Semargl). Physical canonical/contactable 385/385; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
