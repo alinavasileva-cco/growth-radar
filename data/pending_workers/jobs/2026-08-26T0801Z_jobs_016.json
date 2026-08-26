@@ -1,0 +1,143 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-26T08:01:00+03:00",
+  "source_head_sha": "607f4a0a1ec278c6ef14042c5a43bfb5eed02ff0",
+  "source_canonical_snapshot": {
+    "last_completed_run": "N5K-20260826-422",
+    "canonical_count": 377,
+    "contactable_count": 377,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "rules": {
+    "canonical_write": false,
+    "outreach": false,
+    "qualified_requires": ["active_russian_private_legal_entity_or_ip", "inn", "scale", "dated_S1_S3_signal", "owner_or_lpr", "practical_contact_route"]
+  },
+  "metrics": {
+    "raw_distinct_employers": 42,
+    "deep_check": 3,
+    "qualified": 1,
+    "canonical_integrated": 0
+  },
+  "raw_candidates": [
+    "ЦКРИА / 3D Torg",
+    "Бала / Земдиханова Лейсен Хасиятулловна",
+    "Galt Systems",
+    "Стальные Решения",
+    "Шлячков Артем Алексеевич",
+    "Парфюм Косметик Сервис",
+    "ДОН Спорт",
+    "VitHouse / VitGarden",
+    "Переводческая компания ТРАНСТЕХ",
+    "Группа компаний БПО",
+    "Сигма, группа компаний",
+    "Selecty",
+    "Нордкап",
+    "Alpine Floor / Alpine Group",
+    "GloraX",
+    "SearchBooster.io",
+    "ТК Летний Сад",
+    "Фабрика подарков",
+    "Лемана ПРО",
+    "ГЛОБАЛ ГРУПП / Global Group",
+    "Domina St. Petersburg",
+    "СНС, Группа компаний",
+    "Kravt hotels & homes",
+    "Ленинградские Кухни",
+    "Вамподряд",
+    "ДАЛИМО",
+    "YAMAGUCHI",
+    "Сеть премиальных центров стоматологии Mira",
+    "Контур",
+    "ПластКом",
+    "Калининградская фабрика упаковки",
+    "САТУРН СИБИРЬ",
+    "Статус-К",
+    "Онлайн-школа Кейко",
+    "ПО Трубное Решение Казань",
+    "КМ-Проект",
+    "TATNED",
+    "VICTORY group",
+    "ЕМК / Европейская Металлургическая Компания",
+    "Торговый дом ТАВР Неруд",
+    "MEDLIGA",
+    "Евро Акцент Саба"
+  ],
+  "deep_check_rejected": [
+    {
+      "candidate": "ПластКом",
+      "decision": "REJECT_NO_RELIABLE_BRAND_LEGAL_SCALE_MATCH",
+      "reason": "Актуальная вакансия и официальный сайт подтверждают бренд и сигнал, но официальный footer связывает сайт с ООО Евроколор, а доступные реестровые профили одноимённых/связанных юрлиц дают противоречивый brand-to-legal и масштаб. Без догадки конкретное юрлицо вакансии не закреплено.",
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/107703/vakansii/135987541",
+        "https://arhangelsk.plastkom.ru/contacts/",
+        "https://arhangelsk.plastkom.ru/o-nas/",
+        "https://reputation.ru/ogrn/1153525047092"
+      ]
+    },
+    {
+      "candidate": "Selecty",
+      "decision": "REJECT_NOT_DIRECT_EMPLOYER_IDENTIFIABLE",
+      "reason": "Вакансия опубликована кадровым провайдером от имени неназванного клиента; конкретное российское юрлицо клиента нельзя надёжно установить из вакансии, поэтому legal/LPR/contact gate не проходится.",
+      "evidence_urls": ["https://dreamjob.ru/employers/106551/vakansii/136459066"]
+    }
+  ],
+  "qualified_companies": [
+    {
+      "brand": "3D Torg / ЦКРИА",
+      "legal_name": "ООО ЦКРИА",
+      "inn": "9714038951",
+      "ogrn": "1247700137057",
+      "region": "Москва / Московская область",
+      "website": "https://3dtorg.ru/",
+      "legal_status": "Действующее частное ООО",
+      "scale": {
+        "revenue_2025_rub": 65811000,
+        "note": "РБК Компании указывает выручку 65,811 млн руб. за 2025 год; вакансия сообщает рост оборота направления в 2–3 раза ежегодно и рост численности примерно в 1,5 раза за последний год.",
+        "sources": [
+          "https://companies.rbc.ru/id/1247700137057-ooo-tskria/",
+          "https://dreamjob.ru/employers/6378628/vakansii/136467540"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-20",
+        "summary": "Ищут руководителя отдела продаж 3D-оборудования: рост направления, расширение команды, управление входящим потоком 200–300 лидов в месяц, CRM-дисциплина, план-факт, развитие менеджеров и ответственность за финансовый результат отдела.",
+        "source": "https://dreamjob.ru/employers/6378628/vakansii/136467540"
+      },
+      "owner_lpr": {
+        "name": "Денисов Георгий Дмитриевич",
+        "role": "Генеральный директор и 100% учредитель по доступному актуальному реестровому профилю",
+        "source": "https://companies.rbc.ru/id/1247700137057-ooo-tskria/",
+        "note": "На официальном сайте 3D Torg руководителем команды указан Никита Кандараков; для legal gate используется подтверждённый реестровый руководитель, а официальный командный контакт может служить операционным маршрутом. Противоречащие сторонние профили не используются как основание для квалификации."
+      },
+      "contact_route": {
+        "phone": "+7 (495) 149-02-66",
+        "email": "3d@3dtorg.ru",
+        "form": "https://3dtorg.ru/contacts/",
+        "named_operational_contact": "Никита Кандараков — руководитель команды 3D Torg, доб. 105",
+        "sources": [
+          "https://3dtorg.ru/contacts/",
+          "https://3dtorg.ru/about/",
+          "https://3dtorg.ru/policy/"
+        ]
+      },
+      "brand_legal_match": {
+        "status": "CONFIRMED",
+        "evidence": "Политика обработки персональных данных 3dtorg.ru прямо называет оператором ООО ЦКРИА; официальный сайт публикует контакты и команду.",
+        "source": "https://3dtorg.ru/policy/"
+      },
+      "dedup": {
+        "checked_against_repo_before_staging": true,
+        "exact_inn_search": "9714038951",
+        "repo_match_found": false,
+        "authoritative_recheck_required_before_canonical_write": true
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "source_queries_note": "Raw pool surfaced from fresh DreamJob/HH-mirrored job-board searches for руководитель отдела продаж, директор по продажам and коммерческий директор across Moscow, Saint Petersburg, Kazan, Ekaterinburg and Novosibirsk on 2026-08-26. Only the qualified company is intended for downstream canonical recheck; raw names are audit evidence of distinct employer-level discovery, not qualified leads.",
+  "outreach_performed": false
+}
