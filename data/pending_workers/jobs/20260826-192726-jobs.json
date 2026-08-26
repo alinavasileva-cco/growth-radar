@@ -1,0 +1,125 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-26T19:27:26+03:00",
+    "source_head": "77121e2edc3909d0ed49f99483cbb371bb7d3dd8",
+    "canonical_snapshot": {
+      "latest_verified_run_from_config": "N5K-20260826-433",
+      "canonical_contactable": "394/394",
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0,
+      "note": "CURRENT_WORKING_CONFIG main body still names RUN 432 / 392, while its latest verified footer and HEAD-integrated state report RUN 433 / 394. Worker used fresh HEAD and exact repository dedup searches before staging."
+    },
+    "funnel": {
+      "raw_distinct_employers": 80,
+      "deep_check": 5,
+      "qualified": 1,
+      "deep_check_rejected": 4
+    },
+    "source_pages": [
+      "https://hh.ru/vacancies/direktor-po-prodazham-b2b",
+      "https://hh.ru/vacancies/rukovoditel-otdela-prodazh-promyshlennoe-oborudovanie/ot_pryamih_rabotodateley",
+      "https://spb.hh.ru/vacancies/direktor-po-prodazham-b2b/polnaya_zanyatost",
+      "https://kazan.hh.ru/vacancies/direktor-po-prodazham-b2b",
+      "https://hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/polniy_den"
+    ],
+    "raw_employers": [
+      "Агрофирма Партнер","SMDLed","Газпромбанк Автолизинг","NetFlex Solution","АСД","Ариэль Инокс","Страна онлайн","Интеллектуальные машины","Кадровое бюро Елены Отто","MOBITRUCK by EdaNaKolesah","ВкусВилл. Офис","Зерокодер","САТУРН ЦЕНТР","ЛР ГРУП","MK Music","Рексофт","Импортно-Экспортная Автомобильная Компания Хуаюнь","ИП Дмитриева Ксения Владимировна","Рускомплектснаб","Сикрет Технолоджис","NORMIK","FIX","Национальный Центр Национальной Технологической Инициативы Индустрия 4.0","Албес Мет","Тренд Про Плюс","Брокс","SWiP","ЭНЕРГОПТО","Уфанет","Сендис","Brooklands","Юнион Гайд","Комьюнити","ИП Исмагилов Вадим Камильевич","Вамподряд","Цифровая ипотека","Тул Лэнд","Selsup","Davines Russia","КАМАСАНА РЕЛАКС","Маркетинговое агентство FRANK","Neiry","Теплоэксперт","Константа","ПромИнжХолод","LANTA Talent Solutions","Вартон","Протон-М","Компания ГРЕНКОВЪ","СИЛЕД","Агро Прогресс","Концентрация","Комфорт Групп","Старлайнер","INTERPRA","Циклон","Интерсофт 24","БФ","Племхоз им.Тельмана","ILLAN","Кволе","РТСтандарт","Объединённые стекольные заводы. Управляющая компания","Единый Центр Инвестиций","ОП Лизинг","РЭС ИНЖИНИРИНГ","БЕТАТЭК-ЭНЕРГО","NEXXT","Мэйл Курьер","Roistat","АКТО","ПромМаркет","Яндекс Крауд: Пешеходы","Русский Свет - Продажи","Цифровая Безопасность","ПК Пружинный проект","Флит Лизинг","BeBrand (ООО Бизбренд)","Этажи Поволжье","Light-Audit"
+    ]
+  },
+  "deep_check_rejected": [
+    {
+      "brand": "Профресурс",
+      "reason": "REJECT_LEGAL_AMBIGUITY",
+      "details": "Fresh vacancy describes an industrial-ecology/waste business, but current open sources expose several active ООО Профресурс with materially different activities and no sufficiently strong vacancy→legal binding. No guess used.",
+      "signal_url": "https://vgorode.moscow/rabota/vakansiya-135614581/"
+    },
+    {
+      "brand": "Интерсофт 24",
+      "reason": "REJECT_SIZE",
+      "details": "Exact legal entity ООО ИНТЕРСОФТ 24, INN 7810928671, is active but 2025 revenue is only 3.94m RUB, below the current target scale despite a strong sales signal.",
+      "legal_url": "https://companies.rbc.ru/id/1217800143880-obschestvo-s-ogranichennoj-otvetstvennostyu-intersoft-24/",
+      "signal_url": "https://dreamjob.ru/employers/6755734/vakansii/135660426"
+    },
+    {
+      "brand": "Циклон",
+      "reason": "REJECT_BRAND_LEGAL_AMBIGUITY",
+      "details": "Fresh ventilation-sales vacancy states ~200 employees and >1bn RUB 2025 turnover, but several active ООО Циклон exist and the accessible vacancy text does not bind that employer to one exact INN/OGRN strongly enough. No guess used.",
+      "signal_url": "https://dreamjob.ru/employers/379302/vakansii/136202880"
+    },
+    {
+      "brand": "ИнвестКом",
+      "reason": "REJECT_SIZE_OR_BINDING",
+      "details": "Fresh sandwich-panel commercial-director signal exists, but active same-name legal entities found in current registry sources are either too small / one-person or not securely bound to the vacancy. No guess used.",
+      "signal_search_url": "https://hh.ru/vacancies/direktor-po-prodazham-b2b"
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "iSmart / Айсмарт",
+      "legal_name": "ООО «АЙСМАРТ»",
+      "inn": "9723047085",
+      "ogrn": "1187746453850",
+      "region": "Московская область",
+      "city": "Королёв",
+      "segment": "EdTech / российское ПО / B2B educational platform",
+      "website": "https://www.ismart.org/",
+      "legal_status": "Действует",
+      "scale": {
+        "revenue_2025_rub": 184600000,
+        "revenue_source": "https://saby.ru/profile/9723047085-501801001",
+        "team_signal": "Fresh 2026 vacancy states team >100 people and continuing growth.",
+        "team_source": "https://h.careers/job/d8c12542-6a96-4ac0-b54a-fed218b11ed5"
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-13",
+        "title": "Head of Sales (B2B)",
+        "summary": "Company is entering a new stage, launching new products and opening a B2B market; role owns corporate sales, partnerships, B2B strategy, funnel/CRM, revenue forecast and building the sales team from zero.",
+        "urls": [
+          "https://h.careers/job/d8c12542-6a96-4ac0-b54a-fed218b11ed5",
+          "https://jobrun.ru/head-of-sales-b2b-hr-tech-saas-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+        ]
+      },
+      "lpr": {
+        "name": "Калинчева Елена Валериевна",
+        "role": "Генеральный директор",
+        "source": "https://saby.ru/profile/9723047085-501801001"
+      },
+      "owners": [
+        {"name":"ООО «Зима»","share":"80%"},
+        {"name":"Скрибот Екатерина Борисовна","share":"15%"},
+        {"name":"Бондарцев Алексей Борисович","share":"5%"}
+      ],
+      "owners_source": "https://www.upvacancy.ru/employer/aysmart-1187746453850",
+      "contact_route": {
+        "phone": "8 (800) 600-44-02",
+        "emails": ["support@ismart.org", "office@ismart.org"],
+        "route_note": "Official corporate route; ask to transfer a business-development/commercial proposal to the CEO/commercial B2B owner. This is not claimed as a personal CEO email.",
+        "urls": [
+          "https://www.ismart.org/about",
+          "https://school3.aramilgo.ru/about/documents/uchebnaya-deyatelnost/distancionnoe-obuchenie/1260"
+        ]
+      },
+      "brand_legal_evidence": [
+        "https://www.ismart.org/about",
+        "https://www.ismart.org/legal-agreements/polzovatelskoe-soglashenie",
+        "https://ismart-files.storage.yandexcloud.net/edu/Politika_obrabotki_PD_73f885924d.pdf"
+      ],
+      "dedup_keys": {
+        "inn": "9723047085",
+        "ogrn": "1187746453850",
+        "legal_name": "ООО АЙСМАРТ",
+        "brand_domain": "iSmart|ismart.org"
+      },
+      "dedup_check": {
+        "repository_exact_inn_search": "NO_MATCH",
+        "repository_exact_ogrn_search": "NO_MATCH",
+        "checked_against_head": "77121e2edc3909d0ed49f99483cbb371bb7d3dd8"
+      },
+      "qualification": "QUALIFIED"
+    }
+  ],
+  "outreach": 0
+}
