@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-27T01:10:00+03:00",
+  "updated_at": "2026-08-27T02:08:00+03:00",
   "campaign_id": "new_5000",
-  "last_consumed_run_id": "N5K-20260827-439",
+  "last_consumed_run_id": "N5K-20260827-440",
   "consumed": [
     {"path":"data/pending_workers/jobs/20260826-192726-jobs.json","blob_sha":"08e2aa9b309fe2336e0966ced264385072c2de06","consumed_by_run":"N5K-20260826-434","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Worker-qualified iSmart was already canonical as N5K-0384; no duplicate integration."},
     {"path":"data/pending_workers/industry/20260826-193705-industry.json","blob_sha":"b2999f4e90db0618f6fff1ddd8d7c1025a77efd7","consumed_by_run":"N5K-20260826-434","result":"CONSUMED","note":"RobotFactory and Laser Systems integrated after global canonical dedup."},
@@ -21,7 +21,10 @@
     {"path":"data/pending_workers/growth_news/20260826-234243-growth-news.json","blob_sha":"c9dbcd33b9631714569e07fd91f806e637932434","consumed_by_run":"N5K-20260827-438","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"NexTouch passed fresh verification and integrated as N5K-0564. Новотерская/АО Кавминводы was rejected by canonical brand+domain dedup against existing Новотерская entry."},
     {"path":"data/pending_workers/jobs/20260827-004500-jobs.json","blob_sha":"4cf9469ca38fe984c5dc37d8950c7f58c846f6aa","consumed_by_run":"N5K-20260827-439","result":"CONSUMED","note":"Profood passed fresh canonical review and physical pre-write dedup; integrated as N5K-0565."},
     {"path":"data/pending_workers/industry/20260827-003421-industry.json","blob_sha":"4aa16be487ac69070dcfd1f51280668fef8999f0","consumed_by_run":"N5K-20260827-439","result":"CONSUMED","note":"Polyplast Novomoskovsk passed fresh canonical review and physical pre-write dedup; integrated as N5K-0566."},
-    {"path":"data/pending_workers/growth_news/20260827-004300-growth-news.json","blob_sha":"604f7e286aff123d735714e3df56156e669e80bf","consumed_by_run":"N5K-20260827-439","result":"CONSUMED","note":"Callisto Vision and Metallstroy64 passed fresh canonical review and physical pre-write dedup; integrated as N5K-0567 and N5K-0568."}
+    {"path":"data/pending_workers/growth_news/20260827-004300-growth-news.json","blob_sha":"604f7e286aff123d735714e3df56156e669e80bf","consumed_by_run":"N5K-20260827-439","result":"CONSUMED","note":"Callisto Vision and Metallstroy64 passed fresh canonical review and physical pre-write dedup; integrated as N5K-0567 and N5K-0568."},
+    {"path":"data/pending_workers/jobs/20260827-012706-jobs.json","blob_sha":"a6bb582eb4711872d3e10dd7890186127aca07e3","consumed_by_run":"N5K-20260827-440","result":"CONSUMED","note":"Shtrih Ru passed fresh canonical review and physical pre-write dedup; integrated as N5K-0569."},
+    {"path":"data/pending_workers/industry/20260827-013425-industry.json","blob_sha":"53f45ecb56c59e29770e3f6fa44954fe91c1444c","consumed_by_run":"N5K-20260827-440","result":"CONSUMED","note":"LIDERMASH passed fresh 2025 scale and 2026 expansion verification; integrated as N5K-0570."},
+    {"path":"data/pending_workers/growth_news/20260827-014013-growth-news.json","blob_sha":"b3ed16482e67c99677ac49ca884541b1bcd7bbfa","consumed_by_run":"N5K-20260827-440","result":"CONSUMED","note":"PSM and Logika Moloka passed fresh August 2026 expansion, legal/LPR/contact review; integrated as N5K-0571 and N5K-0572."}
   ],
   "outreach_sent": 0
 }
