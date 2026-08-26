@@ -1,78 +1,21 @@
 {
-  "updated_at": "2026-08-26T22:01:30+03:00",
+  "updated_at": "2026-08-26T23:08:00+03:00",
   "campaign_id": "new_5000",
-  "last_consumed_run_id": "N5K-20260826-436",
+  "last_consumed_run_id": "N5K-20260826-437",
   "consumed": [
-    {
-      "path": "data/pending_workers/jobs/20260826-192726-jobs.json",
-      "blob_sha": "08e2aa9b309fe2336e0966ced264385072c2de06",
-      "consumed_by_run": "N5K-20260826-434",
-      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
-      "note": "Worker-qualified iSmart was already canonical as N5K-0384; no duplicate integration."
-    },
-    {
-      "path": "data/pending_workers/industry/20260826-193705-industry.json",
-      "blob_sha": "b2999f4e90db0618f6fff1ddd8d7c1025a77efd7",
-      "consumed_by_run": "N5K-20260826-434",
-      "result": "CONSUMED",
-      "note": "RobotFactory and Laser Systems integrated after global canonical dedup."
-    },
-    {
-      "path": "data/pending_workers/growth_news/20260826-193847-growth-news.json",
-      "blob_sha": "a9eb5c9e8c4f537cd0b54d1b24f3436c38a1f358",
-      "consumed_by_run": "N5K-20260826-434",
-      "result": "CONSUMED_WITH_CROSS_WORKER_DEDUP",
-      "note": "Laser Systems overlapped industry worker and was counted once; RTP integrated."
-    },
-    {
-      "path": "data/pending_workers/official_owner/20260826-194739-official-owner.json",
-      "blob_sha": "d572616f1b901dfe1e88611a8261e0ecc9b8cb06",
-      "consumed_by_run": "N5K-20260826-434",
-      "result": "CONSUMED",
-      "note": "Endo Stars, UPTK-65, Terra-Tok and Korona integrated."
-    },
-    {
-      "path": "data/pending_workers/jobs/20260826-202809-jobs.json",
-      "blob_sha": "e327c00ae98cac1c4d788751dd19bae536609a59",
-      "consumed_by_run": "N5K-20260826-435",
-      "result": "CONSUMED",
-      "note": "KTB 1440 passed fresh canonical review and was integrated."
-    },
-    {
-      "path": "data/pending_workers/industry/20260826-203214-industry.json",
-      "blob_sha": "45260b28604cb322404baea00edd49f496cd2710",
-      "consumed_by_run": "N5K-20260826-435",
-      "result": "CONSUMED_WITH_CANONICAL_REVIEW_REJECT",
-      "note": "Worker-qualified LSP was rejected at SIGNAL: source surfaced as 2026 but page content describes a 2015 modernization event; stale evidence excluded."
-    },
-    {
-      "path": "data/pending_workers/growth_news/20260826-204008-growth-news.json",
-      "blob_sha": "bdcd55bb4aa5417213e4b0dfb267a998b0022d95",
-      "consumed_by_run": "N5K-20260826-435",
-      "result": "CONSUMED",
-      "note": "CNP Russia and Katusha Print passed fresh 2026 verification and were integrated."
-    },
-    {
-      "path": "data/pending_workers/jobs/20260826-212927-jobs.json",
-      "blob_sha": "f949b931f0366bb821c7e9a70d2541602bc5dedf",
-      "consumed_by_run": "N5K-20260826-436",
-      "result": "CONSUMED",
-      "note": "OZON / ООО ФАРБЕН ГРУПП passed fresh canonical verification and was physically integrated."
-    },
-    {
-      "path": "data/pending_workers/industry/20260826-213503-industry-metrics.json",
-      "blob_sha": "2ddd37577615b0a620cf5ec4bccd72969712c863",
-      "consumed_by_run": "N5K-20260826-436",
-      "result": "CONSUMED_ZERO_QUALIFIED",
-      "note": "149 distinct Metalworking-2026 catalog names recorded; four candidates deep-evaluated and none passed SIGNAL. No weak candidate was promoted."
-    },
-    {
-      "path": "data/pending_workers/growth_news/20260826-214200-growth-news.json",
-      "blob_sha": "92eaaec757dffd7149ec3d111de9cf8719c1bbe5",
-      "consumed_by_run": "N5K-20260826-436",
-      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
-      "note": "Teploluxe passed fresh verification and was integrated. GalVent was already physical canonical as N5K-0499 and was not duplicated."
-    }
+    {"path":"data/pending_workers/jobs/20260826-192726-jobs.json","blob_sha":"08e2aa9b309fe2336e0966ced264385072c2de06","consumed_by_run":"N5K-20260826-434","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Worker-qualified iSmart was already canonical as N5K-0384; no duplicate integration."},
+    {"path":"data/pending_workers/industry/20260826-193705-industry.json","blob_sha":"b2999f4e90db0618f6fff1ddd8d7c1025a77efd7","consumed_by_run":"N5K-20260826-434","result":"CONSUMED","note":"RobotFactory and Laser Systems integrated after global canonical dedup."},
+    {"path":"data/pending_workers/growth_news/20260826-193847-growth-news.json","blob_sha":"a9eb5c9e8c4f537cd0b54d1b24f3436c38a1f358","consumed_by_run":"N5K-20260826-434","result":"CONSUMED_WITH_CROSS_WORKER_DEDUP","note":"Laser Systems overlapped industry worker and was counted once; RTP integrated."},
+    {"path":"data/pending_workers/official_owner/20260826-194739-official-owner.json","blob_sha":"d572616f1b901dfe1e88611a8261e0ecc9b8cb06","consumed_by_run":"N5K-20260826-434","result":"CONSUMED","note":"Endo Stars, UPTK-65, Terra-Tok and Korona integrated."},
+    {"path":"data/pending_workers/jobs/20260826-202809-jobs.json","blob_sha":"e327c00ae98cac1c4d788751dd19bae536609a59","consumed_by_run":"N5K-20260826-435","result":"CONSUMED","note":"KTB 1440 passed fresh canonical review and was integrated."},
+    {"path":"data/pending_workers/industry/20260826-203214-industry.json","blob_sha":"45260b28604cb322404baea00edd49f496cd2710","consumed_by_run":"N5K-20260826-435","result":"CONSUMED_WITH_CANONICAL_REVIEW_REJECT","note":"Worker-qualified LSP was rejected at SIGNAL: source surfaced as 2026 but page content describes a 2015 modernization event; stale evidence excluded."},
+    {"path":"data/pending_workers/growth_news/20260826-204008-growth-news.json","blob_sha":"bdcd55bb4aa5417213e4b0dfb267a998b0022d95","consumed_by_run":"N5K-20260826-435","result":"CONSUMED","note":"CNP Russia and Katusha Print passed fresh 2026 verification and were integrated."},
+    {"path":"data/pending_workers/jobs/20260826-212927-jobs.json","blob_sha":"f949b931f0366bb821c7e9a70d2541602bc5dedf","consumed_by_run":"N5K-20260826-436","result":"CONSUMED","note":"OZON / ООО ФАРБЕН ГРУПП passed fresh canonical verification and was physically integrated."},
+    {"path":"data/pending_workers/industry/20260826-213503-industry-metrics.json","blob_sha":"2ddd37577615b0a620cf5ec4bccd72969712c863","consumed_by_run":"N5K-20260826-436","result":"CONSUMED_ZERO_QUALIFIED","note":"149 distinct Metalworking-2026 catalog names recorded; four candidates deep-evaluated and none passed SIGNAL. No weak candidate was promoted."},
+    {"path":"data/pending_workers/growth_news/20260826-214200-growth-news.json","blob_sha":"92eaaec757dffd7149ec3d111de9cf8719c1bbe5","consumed_by_run":"N5K-20260826-436","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Teploluxe passed fresh verification and was integrated. GalVent was already physical canonical as N5K-0499 and was not duplicated."},
+    {"path":"data/pending_workers/jobs/20260826-222729-jobs.json","blob_sha":"e817576ce4edf0f8a7b34eabe06777282375a2a7","consumed_by_run":"N5K-20260826-437","result":"CONSUMED_ZERO_QUALIFIED","note":"50 distinct employers audited; no candidate passed the full canonical funnel. No weak candidate promoted."},
+    {"path":"data/pending_workers/industry/20260826-223805-industry.json","blob_sha":"cd90eb1a61b545a4b7022c54813ae9f9515cb121","consumed_by_run":"N5K-20260826-437","result":"CONSUMED","note":"A9 Systems passed fresh canonical review and physical pre-write dedup; integrated as N5K-0559."},
+    {"path":"data/pending_workers/growth_news/20260826-223849-growth-news.json","blob_sha":"c872c86d15d17eb0a41b988506cdcbbad4f3b02f","consumed_by_run":"N5K-20260826-437","result":"CONSUMED","note":"VICI and Aerofuels passed fresh canonical review and physical pre-write dedup; integrated as N5K-0560 and N5K-0561."}
   ],
   "outreach_sent": 0
 }
