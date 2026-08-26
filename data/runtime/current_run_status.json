@@ -2,10 +2,10 @@
   "run_id": "N5K-20260826-423",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T08:18:00+03:00",
+  "updated_at": "2026-08-26T08:22:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 377,
     "target_count": 5000,
     "current_canonical_count": 380,
     "current_contactable_count": 380,
@@ -24,11 +24,7 @@
     "duplicates": 0,
     "excluded": 27
   },
-  "qualified_companies": [
-    "Маламут Ленд",
-    "Аксис / ГК Инструмент",
-    "Негабарит-Транс"
-  ],
+  "qualified_companies": ["Маламут Ленд", "Аксис / ГК Инструмент", "Негабарит-Транс"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
