@@ -1,0 +1,73 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-26T22:27:29+03:00",
+  "source_head": "8115fdb3cd6d9ef76395b27b762f6368a050959c",
+  "source_run": "N5K-20260826-436",
+  "canonical_snapshot": {
+    "canonical": 406,
+    "contactable": 406,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "staged": 0
+  },
+  "lane": "jobs",
+  "funnel": {
+    "raw_distinct_employers_audited": 50,
+    "target_raw": "80-150",
+    "target_reached": false,
+    "deep_checked": 5,
+    "qualified": 0
+  },
+  "source_rotation": {
+    "saturated_lane": "generic Moscow job-board results",
+    "action": "rotated to Ufa, Novosibirsk, Samara, Krasnodar and sector-specific listings after prior jobs lane showed >70% duplicate+early reject",
+    "note": "Only employer-level records actually visible and individually audited were counted. Hidden listing totals were not counted as raw employers."
+  },
+  "deep_check_rejections": [
+    {
+      "brand": "Окна Столицы",
+      "legal_name": "ООО ПК Окна Столицы",
+      "inn": "7702420143",
+      "reason": "SIZE_REJECT",
+      "facts": "2025 revenue 2,861,995,000 RUB; current configuration requires appropriate target scale and this exceeds the established Growth Radar SME range.",
+      "evidence_urls": ["https://saby.ru/profile/7702420143-772601001", "https://okna-stolicy.ru/company/agreement/"]
+    },
+    {
+      "brand": "Рувер",
+      "legal_name": "ООО РУВЕР",
+      "inn": "2312310890",
+      "reason": "SIZE_REJECT",
+      "facts": "2025 revenue 27,810,000 RUB; 1 employee; micro-scale for this campaign.",
+      "evidence_urls": ["https://companies.rbc.ru/id/1222300032283-obschestvo-s-ogranichennoj-otvetstvennostyu-ruver/"]
+    },
+    {
+      "brand": "СМАРТВИН",
+      "legal_name": "ООО СМАРТВИН",
+      "inn": "0278924245",
+      "reason": "SIZE_REJECT",
+      "facts": "2025 revenue 4,592,000 RUB; current company is micro-scale.",
+      "evidence_urls": ["https://companies.rbc.ru/id/1160280126973-ooo-germetik-pro/", "https://smartvin.pro/contacts"]
+    },
+    {
+      "brand": "ЭкоТайм",
+      "legal_name": "ООО ЭКОТАЙМ",
+      "inn": "0278178974",
+      "ogrn": "1110280026108",
+      "reason": "SIZE_REJECT",
+      "facts": "Strong current sales-director signal dated 2026-07-28/31 and owner-CEO confirmed, but 2025 revenue is 838.7M RUB, outside the established target range used by Growth Radar.",
+      "evidence_urls": ["https://ufa.cataloxy.ru/rabota/vacancy1127350185_direktor-po-prodazham.htm", "https://dreamjob.ru/employers/144488/vakansii/135789033", "https://firmoteka.ru/0278178974", "https://ecotime-ufa.ru/"]
+    },
+    {
+      "brand": "ГК ЭНЕРГОПЕРСПЕКТИВА",
+      "legal_name": "ООО ГК ЭНЕРГОПЕРСПЕКТИВА",
+      "inn": "5405499468",
+      "ogrn": "1145476092079",
+      "reason": "SIGNAL_REJECT",
+      "facts": "2025 revenue 266.992M RUB, 59 employees, owner/CEO Alexey Golosov confirmed. Current visible vacancy is project-sales specialist rather than a sufficiently strong S1-S3 management/system signal; no inference used.",
+      "evidence_urls": ["https://www.tbank.ru/business/contractor/legal/1145476092079/", "https://b2b.house/company/OOO-GK-ENERGOPERSPEKTIVA_7f7e9371-1a55-4f48-ac5a-f65e843458e9/"]
+    }
+  ],
+  "qualified_candidates": [],
+  "notes": "No qualified company was staged. The 80-150 employer target was not claimed because only 50 distinct employer-level records were individually visible/audited in this execution window; listing headline counts and repeated vacancy rows were deliberately not converted into fake raw progress. Canonical/master/contactable/contacts/evidence/runtime/campaign were not modified. Outreach=0."
+}
