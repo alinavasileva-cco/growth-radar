@@ -1,0 +1,174 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-26T22:38:49+03:00",
+  "source_head_sha": "4836dfdf91f328bb38410a9867933a36eb4c3a94",
+  "source_config_version": "2026-08-26T22:01:30+03:00",
+  "canonical_snapshot": {
+    "run": "N5K-20260826-436",
+    "canonical": 406,
+    "contactable": 406,
+    "integrity": "PASS",
+    "staged": 0
+  },
+  "lane": "growth_news",
+  "funnel": {
+    "raw_discovered_auditable_minimum": 31,
+    "fast_gate": 7,
+    "size": 5,
+    "legal": 4,
+    "signal": 4,
+    "lpr": 3,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates_found_prewrite": 0,
+    "note": "Target 100-180 raw was not reached in this execution window; no inferred or search-result-row inflation was used. Weak/ambiguous candidates were rejected rather than relaxing gates."
+  },
+  "qualified": [
+    {
+      "brand": "VICI",
+      "legal_name": "ООО \"ВИЧИ-РУСЬ\"",
+      "inn": "3911008930",
+      "ogrn": "1023902001947",
+      "domain": "vici.ru",
+      "legal_status": "ACTIVE",
+      "private_status": "private Russian LLC; managing organization/owner is АО \"УК \"ГРУППА ОКЕАН\"",
+      "size": {
+        "status": "PASS",
+        "evidence": "2025 revenue about RUB 25.12bn; assets about RUB 26.58bn; company is an operating Russian food manufacturer.",
+        "source": "https://www.testfirm.ru/result/3911008930_ooo-vichi-rus",
+        "source_date": "2026-07-18"
+      },
+      "legal": {
+        "status": "PASS",
+        "evidence": "Company is active; INN 3911008930, OGRN 1023902001947. Official VICI contact page publishes the same legal identifiers.",
+        "sources": [
+          "https://companies.rbc.ru/amp/ogrn/1023902001947/",
+          "https://vici.ru/contacts"
+        ],
+        "verified_freshness": "2026-08-25/2026-08-26 crawl context"
+      },
+      "signal": {
+        "status": "PASS",
+        "type": "S2_growth_expansion",
+        "date": "2026-07-15",
+        "evidence": "VICI leased a 50,000 sq.m logistics park in New Moscow; the reported driver is business scaling amid growth of fish-product consumption. Estimated annual lease cost is close to RUB 1bn.",
+        "source": "https://www.kommersant.ru/doc/8815060"
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Мария Бухарова",
+        "role": "генеральный директор АО \"УК \"ГРУППА ОКЕАН\", управляющей организации и владельца ООО \"ВИЧИ-РУСЬ\"",
+        "evidence": "Current control/management chain is confirmed; May 2026 reporting identifies Maria Bukharova as CEO of the managing company controlling VICI.",
+        "sources": [
+          "https://abn.agency/2026/05/06/v-kompanii-vladelcze-proizvoditelya-surimi-vici-izmenilsya-sostav-uchreditelej/",
+          "https://checko.ru/company/vichi-rus-1023902001947"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route": "official company contact route",
+        "email": "info@vici.ru",
+        "phone": "+7 (495) 221-66-46",
+        "alternate_email": "vr.info@vici.ru",
+        "source": "https://vici.ru/contacts"
+      },
+      "dedup": {
+        "keys": [
+          "inn:3911008930",
+          "ogrn:1023902001947",
+          "legal:ООО ВИЧИ-РУСЬ",
+          "brand_domain:VICI|vici.ru"
+        ],
+        "repo_search_prewrite": "no match found for name/INN/OGRN at source HEAD",
+        "status": "PASS"
+      },
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "Аэрофьюэлз / Aerofuels",
+      "legal_name": "ООО \"АЭРОФЬЮЭЛЗ ГРУПП\"",
+      "inn": "7710380617",
+      "ogrn": "1027739283274",
+      "domain": "aerofuels.ru",
+      "legal_status": "ACTIVE",
+      "private_status": "private Russian LLC; owners are Vladimir Spiridonov 60% and Alexander Spiridonov 40%",
+      "size": {
+        "status": "PASS",
+        "evidence": "The legal entity is included in the SME register as a small enterprise; 2024 assets about RUB 2.12bn and the group operates a national aviation-fuel infrastructure network. The legal entity is the identified private investor in the Yaroslavl airport expansion.",
+        "sources": [
+          "https://companies.rbc.ru/id/1027739283274-ooo-aerofyuelz-grupp/",
+          "https://www.aerofuels.ru/about.php"
+        ],
+        "freshness": "SME registry updated 2026-07-10; company active 2026-08-26"
+      },
+      "legal": {
+        "status": "PASS",
+        "evidence": "Active Russian LLC, INN 7710380617, OGRN 1027739283274.",
+        "sources": [
+          "https://companies.rbc.ru/amp/ogrn/1027739283274/",
+          "https://check.tochka.com/company/1027739283274/"
+        ],
+        "verified_date": "2026-08-25"
+      },
+      "signal": {
+        "status": "PASS",
+        "type": "S2_investment_expansion",
+        "date": "2026-08-25",
+        "evidence": "A private investor identified as Aerofuels is starting construction of the domestic passenger terminal at Yaroslavl airport in September 2026 and is also preparing the cargo terminal; earlier reporting identifies the investor specifically as ООО \"Аэрофьюэлз Групп\".",
+        "sources": [
+          "https://www.kommersant.ru/doc/8907849",
+          "https://www.interfax-russia.ru/index.php/tourism/news/yaroslavskiy-aeroport-tunoshna-v-2023-godu-snizil-chistuyu-pribyl-na-56-5"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Владимир Александрович Спиридонов",
+        "role": "генеральный директор и владелец 60% ООО \"АЭРОФЬЮЭЛЗ ГРУПП\"",
+        "evidence": "Current EGRUL-derived company record lists Vladimir Spiridonov as CEO and 60% owner.",
+        "source": "https://companies.rbc.ru/amp/ogrn/1027739283274/"
+      },
+      "contact": {
+        "status": "PASS",
+        "route": "official group contact route",
+        "emails": ["int@aerofuels.ru", "office@aerofuels.ru"],
+        "phones": ["+7 (495) 787-26-28", "+7 (495) 787-25-42", "+7 (499) 702-43-65"],
+        "source": "https://aerofuels.ru/informationforinvestors.php"
+      },
+      "dedup": {
+        "keys": [
+          "inn:7710380617",
+          "ogrn:1027739283274",
+          "legal:ООО АЭРОФЬЮЭЛЗ ГРУПП",
+          "brand_domain:Аэрофьюэлз|aerofuels.ru"
+        ],
+        "repo_search_prewrite": "no match found for name/INN/OGRN at source HEAD",
+        "status": "PASS"
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "rejected_examples": [
+    {
+      "name": "Haval Motor Manufacturing Rus",
+      "reason": "foreign-controlled structure; rejected at fast gate"
+    },
+    {
+      "name": "Татнефть",
+      "reason": "public/large corporate structure; rejected at fast gate"
+    },
+    {
+      "name": "АвтоВАЗ",
+      "reason": "large/publicly controlled corporate structure; rejected at fast gate"
+    },
+    {
+      "name": "Полиметалл",
+      "reason": "large corporate mining group; rejected at fast gate"
+    },
+    {
+      "name": "ЦКБ Лазурит",
+      "reason": "signal found but ownership/private-fit was not closed confidently in this window"
+    }
+  ],
+  "outreach": 0,
+  "canonical_written": false
+}
