@@ -1,19 +1,19 @@
 {
-  "run_id": "N5K-20260826-431",
+  "run_id": "N5K-20260826-432",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T16:24:00+03:00",
+  "updated_at": "2026-08-26T17:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 388,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 390,
-    "current_contactable_count": 390,
-    "progress_added": 2,
-    "remaining": 4610
+    "current_canonical_count": 392,
+    "current_contactable_count": 392,
+    "progress_added": 392,
+    "remaining": 4608
   },
   "funnel": {
-    "discovered": 18,
+    "discovered": 14,
     "fast_gate_passed": 4,
     "size_check_passed": 3,
     "legal_match_passed": 2,
@@ -22,15 +22,18 @@
     "contact_route_found": 2,
     "qualified": 2,
     "duplicates": 0,
-    "excluded": 16
+    "excluded": 12
   },
-  "qualified_companies": ["Урюпинский крановый завод / УКЗ", "BROX / Брокс"],
+  "qualified_companies": [
+    "НЗНК / Нижегородский завод несущих конструкций",
+    "ХРОМОС Инжиниринг / CHROMOS Engineering"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "390_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "390_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "392_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "392_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
