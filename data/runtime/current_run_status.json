@@ -2,10 +2,10 @@
   "run_id": "N5K-20260826-417",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T03:09:00+03:00",
+  "updated_at": "2026-08-26T03:12:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 366,
     "target_count": 5000,
     "current_canonical_count": 368,
     "current_contactable_count": 368,
@@ -24,10 +24,7 @@
     "duplicates": 7,
     "excluded": 29
   },
-  "qualified_companies": [
-    "НПП Технофильтр / Technofilter",
-    "Fimako / ЛМР Пласт"
-  ],
+  "qualified_companies": ["НПП Технофильтр / Technofilter", "Fimako / ЛМР Пласт"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
