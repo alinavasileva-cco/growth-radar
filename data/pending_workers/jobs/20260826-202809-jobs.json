@@ -1,0 +1,124 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-26T20:28:09+03:00",
+    "source_head_before_worker": "1b8ef39dca4286cfc9eec533928ac3a2cf0434b5",
+    "canonical_snapshot": {
+      "latest_verified_run": "N5K-20260826-434",
+      "canonical_count": 401,
+      "contactable_count": 401,
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0,
+      "note": "CURRENT_WORKING_CONFIG header is stale at RUN 432 / 392, but its newest verified footer records RUN 434 / 401; newest verified state was used."
+    },
+    "funnel": {
+      "raw_surfaced_unique_employers": 80,
+      "deep_check": 5,
+      "qualified": 1,
+      "not_qualified_or_early_rejected": 79
+    },
+    "discovery": {
+      "sources": [
+        "HH direct-employer search: Moscow",
+        "HH search: Saint Petersburg",
+        "HH search: Ekaterinburg",
+        "job-board mirrors used only to verify vacancy date/content",
+        "official company sites and current registry/financial profiles used for deep-check"
+      ],
+      "source_rotation": "Broad HH results showed high irrelevant/duplicate density, so deep-check was restricted to low-overlap employers with explicit current sales-management signals.",
+      "counting_rule": "raw counted at employer level after obvious cross-page duplicate removal; vacancy rows were not counted as separate companies"
+    }
+  },
+  "qualified_candidates": [
+    {
+      "brand": "КТБ 1440",
+      "legal_name": "ООО «КОНСТРУКТОРСКО-ТЕХНОЛОГИЧЕСКОЕ БЮРО 1440»",
+      "inn": "9703194998",
+      "ogrn": "1247700716163",
+      "region": "Москва",
+      "website": "https://ktb1440.ru/",
+      "company_status": "Действующая компания",
+      "private_company": true,
+      "scale": {
+        "revenue_2025_rub": 54262000,
+        "revenue_source": "https://companies.rbc.ru/id/1247700716163-ooo-ktb-1440/",
+        "additional_financial_source": "https://www.tbank.ru/business/contractor/legal/1247700716163/",
+        "fit": "within target scale"
+      },
+      "signal": {
+        "level": "S1",
+        "type": "sales-system build / commercial scaling",
+        "vacancy": "Руководитель отдела продаж «КТБ 1440» / РОП",
+        "signal_date": "2026-07-07",
+        "summary": "The vacancy requires management of the sales department and funnel, CRM discipline, conversion management, scripts/regulations, training, forecasting and reporting; trial-period goals include doubling conversion, tripling sales volume and building a sales system.",
+        "source": "https://nesiditsa.ru/vacancy/134741677",
+        "hh_confirmation": "https://hh.ru/vacancies/rukovoditel-otdela-prodazh-rop/ot_pryamih_rabotodateley"
+      },
+      "lpr": {
+        "owner": "Челпаченко Станислав Анатольевич",
+        "owner_share": "100%",
+        "owner_source": "https://companies.rbc.ru/id/1247700716163-ooo-ktb-1440/",
+        "management_note": "Current public registry profiles differ on executive-management representation; owner identity/share is consistent and is used as the LPR without inventing a personal contact."
+      },
+      "contact_route": {
+        "phone": "+7 (499) 995-18-52",
+        "email": "zakaz@ktb1440.ru",
+        "contact_page": "https://ktb1440.ru/",
+        "type": "official corporate route to company / request transfer to owner-LPR",
+        "source": "https://ktb1440.ru/"
+      },
+      "consulting_hypothesis": "Систематизация B2B-продаж инженерных услуг: CRM-дисциплина, управление воронкой и конверсией, регламенты, KPI, прогнозирование и масштабирование отдела продаж.",
+      "dedup": {
+        "checked_before_staging": true,
+        "keys": {
+          "inn": "9703194998",
+          "ogrn": "1247700716163",
+          "legal_name": "ООО КТБ 1440",
+          "brand_domain": "КТБ 1440 + ktb1440.ru"
+        },
+        "repository_exact_inn_match": false,
+        "repository_brand_match": false
+      },
+      "evidence": [
+        {
+          "type": "LEGAL_SCALE_LPR",
+          "url": "https://companies.rbc.ru/id/1247700716163-ooo-ktb-1440/",
+          "claim": "ИНН 9703194998, ОГРН 1247700716163, действующее ООО; выручка 54.262 млн руб. за 2025; Челпаченко С.А. указан как 100% учредитель."
+        },
+        {
+          "type": "LEGAL_SCALE",
+          "url": "https://www.tbank.ru/business/contractor/legal/1247700716163/",
+          "claim": "Действующая организация; ИНН/ОГРН и выручка 54.26 млн руб. за 2025 подтверждаются независимым профилем."
+        },
+        {
+          "type": "SIGNAL",
+          "url": "https://nesiditsa.ru/vacancy/134741677",
+          "claim": "Вакансия РОП размещена 07.07.2026; требуется построение системы продаж, CRM/воронка, регламенты, аналитика, рост конверсии и объема продаж."
+        },
+        {
+          "type": "SIGNAL_HH",
+          "url": "https://hh.ru/vacancies/rukovoditel-otdela-prodazh-rop/ot_pryamih_rabotodateley",
+          "claim": "HH выдача подтверждает работодателя ООО КТБ 1440 и вакансию руководителя отдела продаж с управлением воронкой/CRM и B2B-продажами сложных услуг."
+        },
+        {
+          "type": "BRAND_LEGAL_CONTACT",
+          "url": "https://ktb1440.ru/",
+          "claim": "Официальный сайт связывает бренд с ООО КТБ 1440, публикует ИНН 9703194998, ОГРН 1247700716163, телефон +7 (499) 995-18-52 и email zakaz@ktb1440.ru."
+        }
+      ],
+      "status": "QUALIFIED_STAGED_ONLY"
+    }
+  ],
+  "write_scope": {
+    "canonical_written": false,
+    "master_written": false,
+    "contactable_written": false,
+    "contacts_written": false,
+    "evidence_written": false,
+    "runtime_written": false,
+    "campaign_written": false,
+    "outreach_performed": false
+  }
+}
