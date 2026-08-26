@@ -1,12 +1,12 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-26T22:01:30+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260826-436`  
+**Версия:** 2026-08-26T23:08:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260826-437`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **406 / 406**  
+**Физически подтверждённый canonical/contactable:** **409 / 409**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4594**  
+**Осталось:** **4591**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -14,9 +14,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **406 / 406**;
+- physical canonical/contactable count: **409 / 409**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260826-436`;
+- последний завершённый RUN: `N5K-20260826-437`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -42,31 +42,29 @@
 17. После RUN фиксировать общую воронку и фактическую статистику discovery-lanes. Если lane-level метрики не были сохранены, их не реконструировать и не придумывать; исправить инструментацию на следующем RUN.
 18. Не выполнять outreach, письма, отклики, подготовку рассылок или отправку сообщений.
 
-## Последний подтверждённый RUN — N5K-20260826-436
+## Последний подтверждённый RUN — N5K-20260826-437
 
-Baseline перед RUN: **404 / 404**.  
-Глобально зафиксирован консервативный аудируемый минимум **149** разных raw-кандидатов: worker-пулы не суммировались без полного cross-worker raw index.  
-Воронка RUN: discovered **149** → fast gate **9** → size **6** → legal **5** → signal **4** → LPR **3** → contact **2** → qualified **2** → physically integrated **2**.  
-Duplicates: **1**. Excluded: **146**.
+Baseline перед RUN: **406 / 406**.  
+Глобально зафиксирован консервативный аудируемый минимум **108** разных raw-кандидатов: worker-пулы не суммировались без полного cross-worker raw index.  
+Воронка RUN: discovered **108** → fast gate **7** → size **5** → legal **4** → signal **4** → LPR **3** → contact **3** → qualified **3** → physically integrated **3**.  
+Duplicates: **0**. Excluded: **105**.
 
 Добавлены:
-- **Группа Теплолюкс / Teploluxe**, ООО «ГРУППА ТЕПЛОЛЮКС», ИНН `5029052258`, ОГРН `1025003531420`, Lead ID `N5K-0557`;
-- **Лакокрасочный завод OZON**, ООО «ФАРБЕН ГРУПП», ИНН `6671458061`, ОГРН `1146671020671`, Lead ID `N5K-0558`.
+- **А9 Системс / A9 Systems**, ООО «А9 СИСТЕМС», ИНН `3808224840`, ОГРН `1123850027806`, Lead ID `N5K-0559`;
+- **VICI / ВИЧИ-РУСЬ**, ООО «ВИЧИ-РУСЬ», ИНН `3911008930`, ОГРН `1023902001947`, Lead ID `N5K-0560`;
+- **Аэрофьюэлз / Aerofuels**, ООО «АЭРОФЬЮЭЛЗ ГРУПП», ИНН `7710380617`, ОГРН `1027739283274`, Lead ID `N5K-0561`.
 
-Физический дубль:
-- **Фабрика Вентиляции ГалВент / GalVent**, ИНН `7720605108`, уже присутствует в canonical как `N5K-0499`; повторно не интегрирована.
-
-Итог physical canonical/contactable: **406 / 406**.  
+Итог physical canonical/contactable: **409 / 409**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Staged: **0**. Outreach: **0**.
 
-### Discovery-lanes RUN 436
+### Discovery-lanes RUN 437
 
-- jobs worker: raw **50**, duplicate/early reject **49**, qualified **1**;
-- industry worker: raw **149**, deep-evaluated **4**, qualified **0**; 145 собранных raw не выдаются за deep-checked;
-- growth/news worker: raw **30**, duplicate/early reject **28**, canonical qualified **1**, один worker-qualified отклонён как physical duplicate;
-- остальные lanes: отдельный новый аудируемый worker-пул в этом execution window не был получен, поэтому фиктивный raw не начислялся.
+- jobs worker: raw **50**, duplicate/early reject **50**, qualified **0**;
+- industry worker: raw **108**, duplicate/early reject **107**, qualified **1**;
+- growth/news worker: raw **31**, duplicate/early reject **29**, qualified **2**;
+- worker raw не суммировался между пакетами без полного cross-worker index; доказуемый глобальный минимум — **108**.
 
-Worker raw не суммировался между пакетами без полного cross-worker index. Узкое место RUN 436 — throughput аудируемого глобального raw-pool: цель 400–800 не достигнута, подтверждённый консервативный минимум 149. Следующий RUN должен продолжать ingestion свежих worker-файлов и low-overlap discovery без пересканирования насыщенных каналов.
+Узкое место RUN 437 — throughput аудируемого глобального raw-pool: цель 300–500 не достигнута. Следующий RUN должен продолжать ingestion свежих immutable workers и собственный low-overlap discovery, особенно industry/regional/growth/official/owner/rating/dealer/segment-expansion lanes, не пересканируя насыщенный jobs lane.
 
 ## Последние подтверждённые RUN
 
@@ -84,7 +82,4 @@ Worker raw не суммировался между пакетами без по
 - `N5K-20260826-434`: 401/401, +7, PASS, orphan 0/0.
 - `N5K-20260826-435`: 404/404, +3, PASS, orphan 0/0.
 - `N5K-20260826-436`: 406/406, +2, PASS, orphan 0/0.
-
-
-## Latest verified run N5K-20260826-437
-Canonical/contactable: 409/409. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+- `N5K-20260826-437`: 409/409, +3, PASS, orphan 0/0.
