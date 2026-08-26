@@ -1,0 +1,138 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-26T23:32:43+03:00",
+    "source_head_sha": "18dc7f7e4a112f46fd82d9e58720bfca4e980b61",
+    "source_run": "N5K-20260826-437",
+    "source_canonical_count": 409,
+    "source_contactable_count": 409,
+    "canonical_integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "outreach": 0,
+    "canonical_write": false
+  },
+  "worker_funnel": {
+    "raw_employer_level_surfaced": 88,
+    "fast_gate_passed": 1,
+    "deep_check": 1,
+    "size_passed": 1,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "duplicate_or_early_reject": 87,
+    "source_saturation_observed": true,
+    "notes": "Employer-level raw pool was deduplicated across the inspected Remote-job search result pages before deep-check. The lane showed >70% duplicate/early-reject saturation; no further deep-check was spent on the saturated pool. Regional HH pages were then used as a secondary fresh-signal check. Only Riverstart advanced through the full strict funnel. No unverified candidate is staged."
+  },
+  "source_pages": [
+    "https://remote-job.ru/search?search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+(it+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82,+b2b)&search%5BsearchType%5D=vacancy",
+    "https://remote-job.ru/search?page=2&search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+(it+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82,+b2b)&search%5BsearchType%5D=vacancy",
+    "https://remote-job.ru/search?page=3&search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+(it+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82,+b2b)&search%5BsearchType%5D=vacancy",
+    "https://remote-job.ru/search?page=4&search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+(it+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82,+b2b)&search%5BsearchType%5D=vacancy",
+    "https://remote-job.ru/search?page=5&search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6+(it+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82,+b2b)&search%5BsearchType%5D=vacancy",
+    "https://ekaterinburg.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+    "https://samara.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+    "https://novosibirsk.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+    "https://krasnodar.hh.ru/vacancies/rukovoditel_otdela_prodazh"
+  ],
+  "qualified": [
+    {
+      "Brand": "Riverstart / Риверстарт",
+      "Legal Name": "ООО РИВЕРСТАРТ",
+      "INN": "5260342196",
+      "OGRN/OGRNIP": "1125260015088",
+      "Legal Status": "Действует",
+      "Region": "Нижегородская область",
+      "City": "Нижний Новгород",
+      "Segment": "IT / digital product development / B2B",
+      "Website": "https://riverstart.ru/",
+      "Company Size": "SME; 80+ specialists stated in current vacancy; 35 average employees in 2024 registry-derived profile",
+      "Revenue": "211.87 млн руб. за 2025 год",
+      "Profit": "12.19 млн руб. за 2025 год",
+      "Financial Period": "2025",
+      "Revenue Source": "https://www.tbank.ru/business/contractor/legal/1125260015088/ ; https://companium.ru/id/1125260015088-riverstart",
+      "Revenue Confidence": "HIGH",
+      "Signal Level": "S1",
+      "Signal Summary": "11 августа 2026 Riverstart опубликована вакансия руководителя отдела продаж B2B (IT-решения, AI). В вакансии компания указывает 14 лет на рынке, 80+ специалистов и 200+ реализованных проектов; роль отвечает за B2B-продажи IT-решений и развитие коммерческой функции.",
+      "Signal Date": "2026-08-11",
+      "Signal Source": "https://remote-job.ru/search_alike?page=3&search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2%2F%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D1%8B%D1%85+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6&search%5BsearchType%5D=vacancy",
+      "Owner": "Никонов Андрей Сергеевич",
+      "Founder": "Никонов Андрей Сергеевич",
+      "CEO": "Никонов Андрей Сергеевич",
+      "LPR": "Никонов Андрей Сергеевич",
+      "LPR Role": "Генеральный директор и единственный учредитель",
+      "LPR Source": "https://companium.ru/id/1125260015088-riverstart ; https://saby.ru/profile/5260342196-526001001",
+      "Primary Phone": "+7 (499) 647-48-28",
+      "Primary Email": "hi@riverstart.ru",
+      "Telegram": "@hi_riverstart",
+      "Contact Form": "https://riverstart.ru/cases",
+      "Contact Type": "Official corporate phone + official email + named Telegram account-director route + official form",
+      "Contact Source": "https://riverstart.ru/cases",
+      "Number Of Contacts Found": 4,
+      "Consulting Hypothesis": "Систематизация B2B sales IT-проектов: воронка сложных сделок, сегментация, KPI/CRM, forecast, управление командой и масштабирование коммерческой функции на фоне роста выручки.",
+      "Current Stage": "QUALIFIED_WORKER_STAGING",
+      "Final Quick Status": "QUALIFIED",
+      "dedup_keys": {
+        "INN": "5260342196",
+        "OGRN": "1125260015088",
+        "Legal Name": "ООО РИВЕРСТАРТ",
+        "brand_domain": "Riverstart|riverstart.ru"
+      },
+      "dedup_check": {
+        "checked_against": "data/leads_master.csv at source HEAD 18dc7f7e4a112f46fd82d9e58720bfca4e980b61",
+        "exact_inn_match": false,
+        "method": "full master response resource search for exact INN 5260342196"
+      },
+      "contacts": [
+        {
+          "channel": "Phone",
+          "value": "+7 (499) 647-48-28",
+          "source": "Official Riverstart site",
+          "url": "https://riverstart.ru/cases"
+        },
+        {
+          "channel": "Email",
+          "value": "hi@riverstart.ru",
+          "source": "Official Riverstart site",
+          "url": "https://riverstart.ru/cases"
+        },
+        {
+          "channel": "Telegram",
+          "value": "@hi_riverstart",
+          "source": "Official Riverstart site; account-director route",
+          "url": "https://riverstart.ru/cases"
+        },
+        {
+          "channel": "Form",
+          "value": "Official project discussion form",
+          "source": "Official Riverstart site",
+          "url": "https://riverstart.ru/cases"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_FINANCE",
+          "claim": "ООО РИВЕРСТАРТ действует; ИНН 5260342196, ОГРН 1125260015088; выручка 211,87 млн руб. и прибыль 12,19 млн руб. за 2025 год.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1125260015088/"
+        },
+        {
+          "type": "LPR",
+          "claim": "Никонов Андрей Сергеевич — генеральный директор и учредитель ООО РИВЕРСТАРТ.",
+          "url": "https://companium.ru/id/1125260015088-riverstart"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "11 августа 2026 опубликована вакансия руководителя отдела продаж B2B (IT-решения, AI); Riverstart указывает 14 лет на рынке, 80+ специалистов и 200+ проектов.",
+          "url": "https://remote-job.ru/search_alike?page=3&search%5Bquery%5D=%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2%2F%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D1%8B%D1%85+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6&search%5BsearchType%5D=vacancy"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует +7 (499) 647-48-28, hi@riverstart.ru, @hi_riverstart и форму обсуждения проекта.",
+          "url": "https://riverstart.ru/cases"
+        }
+      ]
+    }
+  ]
+}
