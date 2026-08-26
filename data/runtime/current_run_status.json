@@ -1,36 +1,39 @@
 {
-  "run_id": "N5K-20260826-418",
+  "run_id": "N5K-20260826-419",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T04:21:00+03:00",
+  "updated_at": "2026-08-26T05:01:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 368,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 369,
-    "current_contactable_count": 369,
-    "progress_added": 369,
-    "remaining": 4631
+    "current_canonical_count": 371,
+    "current_contactable_count": 371,
+    "progress_added": 371,
+    "remaining": 4629
   },
   "funnel": {
-    "discovered": 46,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
+    "discovered": 12,
+    "fast_gate_passed": 4,
+    "size_check_passed": 3,
     "legal_match_passed": 2,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 1,
+    "qualified": 2,
     "duplicates": 1,
-    "excluded": 44
+    "excluded": 9
   },
-  "qualified_companies": ["Новый Технологический Арсенал / НТА"],
+  "qualified_companies": [
+    "ТЕХНОС / ООО Технос",
+    "GOOD FOOD / Гуд Фуд Компани"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "369_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "369_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "371_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "371_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
