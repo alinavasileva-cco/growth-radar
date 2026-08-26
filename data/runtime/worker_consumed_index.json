@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-26T23:08:00+03:00",
+  "updated_at": "2026-08-27T00:06:00+03:00",
   "campaign_id": "new_5000",
-  "last_consumed_run_id": "N5K-20260826-437",
+  "last_consumed_run_id": "N5K-20260827-438",
   "consumed": [
     {"path":"data/pending_workers/jobs/20260826-192726-jobs.json","blob_sha":"08e2aa9b309fe2336e0966ced264385072c2de06","consumed_by_run":"N5K-20260826-434","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Worker-qualified iSmart was already canonical as N5K-0384; no duplicate integration."},
     {"path":"data/pending_workers/industry/20260826-193705-industry.json","blob_sha":"b2999f4e90db0618f6fff1ddd8d7c1025a77efd7","consumed_by_run":"N5K-20260826-434","result":"CONSUMED","note":"RobotFactory and Laser Systems integrated after global canonical dedup."},
@@ -15,7 +15,10 @@
     {"path":"data/pending_workers/growth_news/20260826-214200-growth-news.json","blob_sha":"92eaaec757dffd7149ec3d111de9cf8719c1bbe5","consumed_by_run":"N5K-20260826-436","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Teploluxe passed fresh verification and was integrated. GalVent was already physical canonical as N5K-0499 and was not duplicated."},
     {"path":"data/pending_workers/jobs/20260826-222729-jobs.json","blob_sha":"e817576ce4edf0f8a7b34eabe06777282375a2a7","consumed_by_run":"N5K-20260826-437","result":"CONSUMED_ZERO_QUALIFIED","note":"50 distinct employers audited; no candidate passed the full canonical funnel. No weak candidate promoted."},
     {"path":"data/pending_workers/industry/20260826-223805-industry.json","blob_sha":"cd90eb1a61b545a4b7022c54813ae9f9515cb121","consumed_by_run":"N5K-20260826-437","result":"CONSUMED","note":"A9 Systems passed fresh canonical review and physical pre-write dedup; integrated as N5K-0559."},
-    {"path":"data/pending_workers/growth_news/20260826-223849-growth-news.json","blob_sha":"c872c86d15d17eb0a41b988506cdcbbad4f3b02f","consumed_by_run":"N5K-20260826-437","result":"CONSUMED","note":"VICI and Aerofuels passed fresh canonical review and physical pre-write dedup; integrated as N5K-0560 and N5K-0561."}
+    {"path":"data/pending_workers/growth_news/20260826-223849-growth-news.json","blob_sha":"c872c86d15d17eb0a41b988506cdcbbad4f3b02f","consumed_by_run":"N5K-20260826-437","result":"CONSUMED","note":"VICI and Aerofuels passed fresh canonical review and physical pre-write dedup; integrated as N5K-0560 and N5K-0561."},
+    {"path":"data/pending_workers/jobs/20260826-233243-jobs.json","blob_sha":"4795297215e03b04f441955b74b4f1fc01becf7a","consumed_by_run":"N5K-20260827-438","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Worker-qualified Riverstart rejected as already known/integrated canonical duplicate; saturated jobs lane produced no net-new integration."},
+    {"path":"data/pending_workers/industry/20260826-233644-industry.json","blob_sha":"275e316a641e4604b8768a542f540a43dda260dd","consumed_by_run":"N5K-20260827-438","result":"CONSUMED","note":"Лемакс and ДЖИЛЕКС passed fresh 2026 verification and physical pre-write dedup; integrated as N5K-0562 and N5K-0563."},
+    {"path":"data/pending_workers/growth_news/20260826-234243-growth-news.json","blob_sha":"c9dbcd33b9631714569e07fd91f806e637932434","consumed_by_run":"N5K-20260827-438","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"NexTouch passed fresh verification and integrated as N5K-0564. Новотерская/АО Кавминводы was rejected by canonical brand+domain dedup against existing Новотерская entry."}
   ],
   "outreach_sent": 0
 }
