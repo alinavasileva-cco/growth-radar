@@ -2,10 +2,10 @@
   "run_id": "N5K-20260826-422",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T07:08:00+03:00",
+  "updated_at": "2026-08-26T07:10:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 375,
     "target_count": 5000,
     "current_canonical_count": 377,
     "current_contactable_count": 377,

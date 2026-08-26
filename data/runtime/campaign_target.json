@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-26T07:08:00+03:00",
+  "updated_at": "2026-08-26T07:10:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260826-421",
-  "current_run_id": "N5K-20260826-421",
+  "last_completed_run_id": "N5K-20260826-422",
+  "current_run_id": "N5K-20260826-422",
   "last_run_id": "N5K-20260826-422",
   "latest_completed_run": "N5K-20260826-422",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 421 completed after physical integration and metadata REPAIR: +2 net new companies (Волгопромтранс, ГАММА-ПЛАСТ). Physical canonical/contactable 375/375; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 422 completed after physical integration and metadata REPAIR: +2 net new companies (Агрофирма Партнер, ГК Воздушные фильтры). Physical canonical/contactable 377/377; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
