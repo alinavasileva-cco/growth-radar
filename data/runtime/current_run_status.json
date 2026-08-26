@@ -1,38 +1,38 @@
 {
-  "run_id": "N5K-20260826-428",
+  "run_id": "N5K-20260826-429",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T13:25:00+03:00",
+  "updated_at": "2026-08-26T14:06:45+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 384,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 385,
-    "current_contactable_count": 385,
-    "progress_added": 1,
-    "remaining": 4615
+    "current_canonical_count": 386,
+    "current_contactable_count": 386,
+    "progress_added": 386,
+    "remaining": 4614
   },
   "funnel": {
-    "discovered": 14,
-    "fast_gate_passed": 3,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
+    "discovered": 18,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 12
+    "duplicates": 0,
+    "excluded": 17
   },
   "qualified_companies": [
-    "Семаргл / Semargl"
+    "Три Точки Мануфактуринг / Three Points Manufacturing"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "385_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "385_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "386_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "386_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
