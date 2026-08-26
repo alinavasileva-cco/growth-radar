@@ -1,0 +1,132 @@
+{
+  "worker_type": "READ+DISCOVERY",
+  "lane": "jobs",
+  "created_at": "2026-08-27T02:29:48+03:00",
+  "source_head": "23f6066a845887535296e148195d98f9e35a7e4b",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-440",
+    "canonical_count": 420,
+    "contactable_count": 420,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_funnel": {
+    "raw_unique_employer_level": 80,
+    "deep_checked": 8,
+    "qualified": 2,
+    "deep_check_rejected": 6,
+    "duplicate_early_reject_split": null,
+    "source_saturation_triggered": true,
+    "source_rotation_note": "The current config records jobs lane duplicate+early-reject above 70%. This pass did not continue an HH-only pool; discovery was rotated across fresh DreamJob/HH-mirrored postings, regional job-board surfaces and official employer/career sources. Exact duplicate vs early-reject split was not separately instrumented and is intentionally not reconstructed."
+  },
+  "qualified": [
+    {
+      "Brand": "TrackAd",
+      "Legal Name": "ООО «ТРАКАД»",
+      "INN": "9709111564",
+      "OGRN/OGRNIP": "1247700405325",
+      "Legal Status": "Действует; актуальность реестрового профиля подтверждена на 2026-08-15",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "B2B SaaS / MarTech / сквозная аналитика и атрибуция",
+      "Website": "https://trackad.ru/",
+      "Revenue/Scale": "Выручка за 2025 год 343 568 000 ₽; прибыль 4 187 000 ₽; действующая российская частная SaaS-компания.",
+      "Signal Level": "S1",
+      "Signal Summary": "22.08.2026 TrackAd опубликовал вакансию Руководителя отдела продаж / Head of Sales: операционное управление отделом, улучшение ключевых метрик, управление воронкой и прогнозом, построение рабочей системы продаж, CRM-дисциплина, повышение предсказуемости воронки и конверсии.",
+      "Signal Date": "2026-08-22",
+      "Signal Source": "https://dreamjob.ru/employers/125149/vakansii/136417952",
+      "Owner": "Ковалева Дарья Викторовна — 33,33%; Игнатенко Евгения Юрьевна — 33,33%; Фельдман Ольга Борисовна — 33,33%",
+      "CEO": "Ковалева Дарья Викторовна",
+      "LPR": "Ковалева Дарья Викторовна",
+      "LPR Role": "Генеральный директор и совладелец 33,33%",
+      "Primary Phone": "+7 (495) 730-50-17",
+      "Primary Email": "contact@trackad.ru",
+      "HH Contact": "Current employer Head of Sales vacancy route via DreamJob/HH application",
+      "Contact Form": "https://trackad.ru/",
+      "Contact Type": "Official corporate phone + email + website form + current vacancy route",
+      "Contact Source": "Official TrackAd website and current employer vacancy",
+      "Number Of Contacts Found": 4,
+      "Consulting Hypothesis": "Гипотеза: систематизация B2B SaaS sales — управление воронкой и forecast, enterprise deal process, CRM, KPI и управляемый рост конверсии.",
+      "Final Quick Status": "QUALIFIED_WORKER_PENDING_CANONICAL_WRITER",
+      "dedup_keys": {
+        "inn": "9709111564",
+        "ogrn": "1247700405325",
+        "legal_name": "ООО «ТРАКАД»",
+        "brand_domain": "TrackAd|trackad.ru"
+      },
+      "contacts": [
+        {"value": "+7 (495) 730-50-17", "channel": "Phone", "type": "Official corporate", "url": "https://trackad.ru/", "is_lpr": false},
+        {"value": "contact@trackad.ru", "channel": "Email", "type": "Official corporate", "url": "https://trackad.ru/", "is_lpr": false},
+        {"value": "https://trackad.ru/", "channel": "Form", "type": "Official website form", "url": "https://trackad.ru/", "is_lpr": false},
+        {"value": "Current Head of Sales vacancy route", "channel": "Vacancy", "type": "Employer route", "url": "https://dreamjob.ru/employers/125149/vakansii/136417952", "is_lpr": false}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «ТРАКАД», ИНН 9709111564, ОГРН 1247700405325; организация действует на 15.08.2026.", "url": "https://companies.rbc.ru/id/1247700405325-ooo-trakad/", "source": "РБК Компании"},
+        {"type": "BRAND_LEGAL", "claim": "Официальный TrackAd указывает ООО «ТракАд», ИНН 9709111564 и ОГРН 1247700405325.", "url": "https://trackad.ru/about", "source": "Official TrackAd"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка за 2025 год 343 568 000 ₽; прибыль 4 187 000 ₽.", "url": "https://companies.rbc.ru/id/1247700405325-ooo-trakad/", "source": "РБК Компании"},
+        {"type": "SIGNAL", "claim": "22.08.2026 опубликована вакансия Head of Sales с задачами операционного управления продажами, систематизации воронки, CRM, прогнозирования и роста ключевых метрик.", "url": "https://dreamjob.ru/employers/125149/vakansii/136417952", "source": "DreamJob current vacancy"},
+        {"type": "LPR", "claim": "Ковалева Дарья Викторовна — генеральный директор и один из трёх совладельцев; доли каждого совладельца 33,33%.", "url": "https://companium.ru/id/1247700405325-trakad", "source": "Companium current company profile"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует +7 (495) 730-50-17, contact@trackad.ru и форму связи.", "url": "https://trackad.ru/", "source": "Official TrackAd"}
+      ]
+    },
+    {
+      "Brand": "Интелком / ITCOM",
+      "Legal Name": "ООО «ИНТЕЛКОМ»",
+      "INN": "2465298337",
+      "OGRN/OGRNIP": "1132468047073",
+      "Legal Status": "Действует; актуальность реестрового профиля подтверждена на 2026-07-12",
+      "Region": "Красноярский край",
+      "City": "Красноярск",
+      "Segment": "B2B телекоммуникации / системная интеграция / IT",
+      "Website": "https://www.itcom.info/",
+      "Revenue/Scale": "Выручка за 2025 год 78 674 000 ₽; действующая российская частная компания; телекоммуникации и системная интеграция.",
+      "Signal Level": "S1",
+      "Signal Summary": "17.08.2026 ООО «Интелком» опубликовало вакансию Руководителя отдела продаж B2B: компания прямо сообщает о масштабировании бизнеса и ищет руководителя, который возглавит команду, выстроит системные B2B-продажи и поможет выйти на новые объёмы.",
+      "Signal Date": "2026-08-17",
+      "Signal Source": "https://dreamjob.ru/employers/314874/vakansii/136219808",
+      "Owner": "Ботов Евгений Михайлович — 50%; Болтенков Степан Анатольевич — 50%",
+      "CEO": "Ботов Евгений Михайлович",
+      "LPR": "Ботов Евгений Михайлович",
+      "LPR Role": "Директор и совладелец 50%",
+      "Primary Phone": "+7 (391) 290-09-70",
+      "Primary Email": "info@itcom.info",
+      "HH Contact": "Current employer Head of Sales vacancy route via DreamJob/HH application",
+      "Contact Form": "https://www.itcom.info/",
+      "Contact Type": "Official corporate phone + email + callback form + current vacancy route",
+      "Contact Source": "Official ITCOM website and current employer vacancy",
+      "Number Of Contacts Found": 4,
+      "Consulting Hypothesis": "Гипотеза: систематизация B2B sales телеком/системной интеграции — сегментация, CRM-воронка, планирование, лидогенерация, KPI и масштабирование команды.",
+      "Final Quick Status": "QUALIFIED_WORKER_PENDING_CANONICAL_WRITER",
+      "dedup_keys": {
+        "inn": "2465298337",
+        "ogrn": "1132468047073",
+        "legal_name": "ООО «ИНТЕЛКОМ»",
+        "brand_domain": "Интелком|itcom.info"
+      },
+      "contacts": [
+        {"value": "+7 (391) 290-09-70", "channel": "Phone", "type": "Official corporate", "url": "https://www.itcom.info/company_details/", "is_lpr": false},
+        {"value": "info@itcom.info", "channel": "Email", "type": "Official corporate", "url": "https://www.itcom.info/company_details/", "is_lpr": false},
+        {"value": "https://www.itcom.info/", "channel": "Form", "type": "Official callback form", "url": "https://www.itcom.info/", "is_lpr": false},
+        {"value": "Current B2B Head of Sales vacancy route", "channel": "Vacancy", "type": "Employer route", "url": "https://dreamjob.ru/employers/314874/vakansii/136219808", "is_lpr": false}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «ИНТЕЛКОМ», ИНН 2465298337, ОГРН 1132468047073; компания действует на 12.07.2026.", "url": "https://saby.ru/profile/2465298337-246501001", "source": "Saby current company profile"},
+        {"type": "BRAND_LEGAL", "claim": "Официальный сайт Интелком публикует полное юрлицо, ИНН 2465298337 и ОГРН 1132468047073.", "url": "https://www.itcom.info/company_details/", "source": "Official ITCOM"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка за 2025 год 78 674 000 ₽.", "url": "https://saby.ru/profile/2465298337-246501001", "source": "Saby current company profile"},
+        {"type": "SIGNAL", "claim": "17.08.2026 компания сообщила о масштабировании бизнеса и поиске РОПа для построения системных B2B-продаж и выхода на новые объёмы.", "url": "https://dreamjob.ru/employers/314874/vakansii/136219808", "source": "DreamJob current vacancy"},
+        {"type": "LPR", "claim": "Ботов Евгений Михайлович — директор и совладелец 50%; Болтенков Степан Анатольевич — совладелец 50%.", "url": "https://www.tbank.ru/business/contractor/legal/1132468047073/", "source": "T-Bank business profile"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует 8 (391) 2-900-970, info@itcom.info и форму заявки на звонок.", "url": "https://www.itcom.info/company_details/", "source": "Official ITCOM"}
+      ]
+    }
+  ],
+  "dedup_prewrite": {
+    "checked_against_head": "23f6066a845887535296e148195d98f9e35a7e4b",
+    "exact_inn_repo_search": {
+      "9709111564": "no match",
+      "2465298337": "no match"
+    },
+    "note": "Canonical writer must perform authoritative physical dedup again immediately before any integration."
+  },
+  "outreach": 0
+}
