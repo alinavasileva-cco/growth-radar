@@ -1,0 +1,190 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-27T00:43:00+03:00",
+  "source_head_sha": "d3dbfd05b15d051969d33c6aeab8dfba09da9add",
+  "campaign_id": "new_5000",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-438",
+    "canonical_count": 412,
+    "contactable_count": 412,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "rules": {
+    "funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "canonical_write": false,
+    "outreach": false,
+    "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"]
+  },
+  "worker_funnel": {
+    "raw_discovered": 62,
+    "fast_gate_passed": 9,
+    "size_passed": 6,
+    "legal_passed": 5,
+    "signal_passed": 4,
+    "lpr_passed": 3,
+    "contact_passed": 2,
+    "qualified": 2,
+    "duplicates_found": 0,
+    "early_rejects": 53,
+    "note": "Цель 100-180 raw в этом execution window не достигнута. В raw засчитаны только отдельно идентифицированные компании из текущих low-overlap growth/investment/production-expansion поисков; строки выдачи и повторные публикации одной компании не суммировались. Критерии QUALIFIED не ослаблялись."
+  },
+  "qualified": [
+    {
+      "brand": "CALLISTO VISION / ГК Каллисто",
+      "legal_name": "ООО «КАЛЛИСТО ВИЖН»",
+      "inn": "9725161234",
+      "ogrn": "1247700424322",
+      "legal_status": "Действует",
+      "private_status": "Частная компания; учредитель ООО «Каллисто Холдингс»",
+      "region": "Москва",
+      "segment": "B2B IT / промышленная маркировка, контроль качества, оборудование и ПО",
+      "website": "https://callistovision.ru/",
+      "size": {
+        "status": "PASS",
+        "evidence": "Средний бизнес; выручка 2025 около 1,60 млрд ₽, прибыль около 430,73 млн ₽; официальный сайт указывает 80+ инженеров и 200+ оснащённых линий в России.",
+        "sources": [
+          "https://www.tbank.ru/business/contractor/legal/1247700424322/",
+          "https://callistovision.ru/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "evidence": "Официальные реквизиты компании: ОГРН 1247700424322, ИНН 9725161234; статус действующей компании подтверждён актуальными бизнес-реестрами.",
+        "sources": [
+          "https://callistovision.ru/details",
+          "https://saby.ru/profile/9725161234-772501001"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S2",
+        "date": "2026-05-01",
+        "summary": "KAMA FLOW вложила 700 млн ₽ в ГК «Каллисто» для масштабирования бизнеса: расширения производственных мощностей, продуктовой линейки и экспортного направления. Официальный сайт подтверждает зарубежную географию и рост продуктовой платформы.",
+        "sources": [
+          "https://www.vedomosti.ru/press_releases/2026/04/30/gk-kallisto-privlekla-700-mln-rublei-v-razvitie-biznesa",
+          "https://callistovision.ru/news01052026"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Булгаков Павел Георгиевич",
+        "role": "Генеральный директор",
+        "owner": "ООО «Каллисто Холдингс» (100%)",
+        "sources": [
+          "https://callistovision.ru/company",
+          "https://saby.ru/profile/9725161234-772501001",
+          "https://firmoteka.ru/9725161234"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "phone": "+7 (499) 130-74-71",
+        "email": "info@callistovision.ru",
+        "contact_form": "https://callistovision.ru/contacts",
+        "route": "Официальный телефон, общий корпоративный email и форма сайта; маршрут к генеральному директору через корпоративный офис.",
+        "sources": ["https://callistovision.ru/contacts"]
+      },
+      "dedup": {
+        "status": "PASS",
+        "checked_against_current_master": true,
+        "keys": ["9725161234", "1247700424322", "ООО КАЛЛИСТО ВИЖН", "CALLISTO VISION|callistovision.ru"],
+        "match_found": false
+      },
+      "final_status": "QUALIFIED",
+      "consulting_hypothesis": "Коммерческая система масштабирования после привлечения капитала: приоритизация продуктовых и экспортных направлений, P&L по сегментам, sales pipeline, управление ростом производственных мощностей и операционная синхронизация."
+    },
+    {
+      "brand": "Металлстрой64",
+      "legal_name": "ООО «МЕТАЛЛСТРОЙ64»",
+      "inn": "6449095859",
+      "ogrn": "1196451027255",
+      "legal_status": "Действует",
+      "private_status": "Частная собственность; единственный учредитель — Козырев Кирилл Андреевич",
+      "region": "Саратовская область",
+      "city": "Энгельс",
+      "segment": "Машиностроение / кузова, прицепы и полуприцепы / B2B",
+      "website": "https://www.metallstroy64.com/",
+      "size": {
+        "status": "PASS",
+        "evidence": "Выручка 2025 — 286,9 млн ₽, чистая прибыль 24,5 млн ₽, 26 сотрудников; основные средства 148 млн ₽.",
+        "sources": ["https://companium.ru/id/1196451027255-metallstroy64"]
+      },
+      "legal": {
+        "status": "PASS",
+        "evidence": "ООО «МЕТАЛЛСТРОЙ64», ИНН 6449095859, ОГРН 1196451027255, действующая частная компания.",
+        "sources": [
+          "https://companium.ru/id/1196451027255-metallstroy64",
+          "https://www.kommersant.ru/doc/8782051"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S2",
+        "date": "2026-07-02",
+        "summary": "Компания ввела новый производственный цех; в 2024-2026 направила 310 млн ₽ на проект и перешла ко второй очереди строительства нового цеха для кузовов зерновозов в 2026-2027 годах.",
+        "sources": ["https://www.kommersant.ru/doc/8782051"]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Козырев Кирилл Андреевич",
+        "role": "Директор и единственный учредитель",
+        "sources": [
+          "https://companium.ru/id/1196451027255-metallstroy64",
+          "https://www.kommersant.ru/doc/8782051"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "phone": ["+7 988 888-81-64", "+7 999 888-00-64"],
+        "contact_form": "https://www.metallstroy64.com/",
+        "route": "Официальные телефоны завода и форма «Задать вопрос» на сайте; прямой корпоративный маршрут к компании собственника-директора.",
+        "sources": ["https://www.metallstroy64.com/"]
+      },
+      "dedup": {
+        "status": "PASS",
+        "checked_against_current_master": true,
+        "keys": ["6449095859", "1196451027255", "ООО МЕТАЛЛСТРОЙ64", "Металлстрой64|metallstroy64.com"],
+        "match_found": false
+      },
+      "final_status": "QUALIFIED",
+      "consulting_hypothesis": "Управление второй очередью роста: коммерческая модель по продуктовым направлениям, загрузка новых мощностей, B2B-воронка дилеров/корпоративных клиентов, P&L по типам техники и синхронизация продаж с производством."
+    }
+  ],
+  "sample_rejected": [
+    {"company": "CARCADE", "reason": "не прошла private/company-fit fast gate: входит в группу Газпромбанк Лизинг"},
+    {"company": "Красный котельщик", "reason": "не прошёл private/company-fit fast gate: ПАО/крупная корпоративная структура"},
+    {"company": "РУСАЛ / Русал Саянал-2", "reason": "не прошёл private/company-fit fast gate: крупная публичная группа"},
+    {"company": "СИБУР", "reason": "не прошёл private/company-fit fast gate: крупная группа"},
+    {"company": "Уралхим", "reason": "не прошёл target-fit fast gate: крупная группа"},
+    {"company": "КРЭТ / Электроприбор", "reason": "не прошёл private gate: Ростех"},
+    {"company": "Красное Сормово", "reason": "не прошёл private gate: ОСК"},
+    {"company": "ПФК Обновление / Renewal", "reason": "не доведён до QUALIFIED в этом проходе: LPR/contact chain не закрыта свежими источниками"},
+    {"company": "РАТЕЛ", "reason": "не доведён до QUALIFIED в этом проходе: масштаб/LPR/contact chain не закрыты"},
+    {"company": "Сота", "reason": "не доведён до QUALIFIED в этом проходе: legal/LPR linkage не закрыта свежими источниками"},
+    {"company": "Восход (Тюмень)", "reason": "не доведён до QUALIFIED в этом проходе: точная привязка юрлица и LPR не закрыта"},
+    {"company": "Таурас-Феникс", "reason": "не доведён до QUALIFIED в этом проходе: owner/LPR/contact verification не закрыта"},
+    {"company": "Регионтранснефть", "reason": "не доведён до QUALIFIED в этом проходе: private ownership/LPR/contact verification не закрыта"},
+    {"company": "Логика молока", "reason": "не прошла быстрый target-fit приоритет: крупный масштаб; глубокая проверка не расходовала слот"},
+    {"company": "DoorHan", "reason": "не доведён до QUALIFIED в этом проходе: необходимо закрыть точное юрлицо для сигнала"},
+    {"company": "ПК Печагин", "reason": "не доведён до QUALIFIED в этом проходе: owner/LPR/contact chain не закрыта"}
+  ],
+  "discovery_sources": [
+    "https://www.vedomosti.ru/press_releases/2026/07/17/novii-zavod-v-oez-stupino-kvadrat-gotov-na-50",
+    "https://www.kommersant.ru/doc/8879216",
+    "https://www.kommersant.ru/doc/8779769",
+    "https://www.kommersant.ru/doc/8797009",
+    "https://www.kommersant.ru/doc/8891405",
+    "https://www.kommersant.ru/doc/8479562",
+    "https://www.vedomosti.ru/press_releases/2026/02/13/podmoskovnaya-kompaniya-uvelichila-proizvodstvo-sportivnogo-ulichnogo-oborudovaniya",
+    "https://www.kommersant.ru/doc/8782051",
+    "https://www.vedomosti.ru/press_releases/2026/04/30/gk-kallisto-privlekla-700-mln-rublei-v-razvitie-biznesa",
+    "https://www.kommersant.ru/doc/8761797",
+    "https://www.kommersant.ru/doc/8780807",
+    "https://www.interfax-russia.ru/ural/news/proizvoditel-cistern-iz-miassa-s-gospodderzhkoy-zapustit-novyy-ceh-za-151-mln-rub-frp",
+    "https://amp.rbc.ru/regional/spb_sz/26/07/2026/6a61c03b9a7947d577d6f3cd",
+    "https://amp.rbc.ru/regional/spb_sz/16/06/2026/6a310d4a9a7947a886b5e684",
+    "https://stupino.pechagin.group/"
+  ]
+}
