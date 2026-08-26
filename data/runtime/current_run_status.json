@@ -1,63 +1,63 @@
 {
-  "run_id": "N5K-20260826-437",
+  "run_id": "N5K-20260827-438",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T23:05:00+03:00",
+  "updated_at": "2026-08-27T00:03:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 406,
+    "baseline_count": 409,
     "target_count": 5000,
-    "current_canonical_count": 409,
-    "current_contactable_count": 409,
+    "current_canonical_count": 412,
+    "current_contactable_count": 412,
     "progress_added": 3,
-    "remaining": 4591
+    "remaining": 4588
   },
   "funnel": {
-    "discovered": 108,
-    "fast_gate_passed": 7,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 3,
+    "discovered": 120,
+    "fast_gate_passed": 9,
+    "size_check_passed": 8,
+    "legal_match_passed": 7,
+    "signal_confirmed": 5,
+    "lpr_identified": 4,
     "contact_route_found": 3,
     "qualified": 3,
-    "duplicates": 0,
-    "excluded": 105
+    "duplicates": 2,
+    "excluded": 115
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
-      "raw": 50,
-      "duplicates_or_early_rejects": 50,
+      "raw": 88,
+      "duplicates_or_early_rejects": 88,
       "qualified": 0,
-      "note": "50 distinct employer-level records audited; 5 deep-checked; no qualified. Saturated generic job-board lane was rotated by worker."
+      "note": "Worker-qualified Riverstart rejected at canonical review as previously integrated/known duplicate; saturated lane stopped."
     },
     {
       "lane": "industry worker",
-      "raw": 108,
-      "duplicates_or_early_rejects": 107,
-      "qualified": 1,
-      "note": "108 cross-source distinct Russian companies; four strongest deep-checked; A9 Systems retained after fresh canonical review. This 108-company pool is the auditable global raw lower bound; worker pools are not summed without a complete cross-worker raw index."
+      "raw": 120,
+      "duplicates_or_early_rejects": 118,
+      "qualified": 2,
+      "note": "Auditable distinct industry pool from current worker staging; Лемакс and ДЖИЛЕКС retained after fresh source check."
     },
     {
       "lane": "growth/news worker",
-      "raw": 31,
-      "duplicates_or_early_rejects": 29,
-      "qualified": 2,
-      "note": "31 auditable raw; VICI and Aerofuels retained after fresh canonical review."
+      "raw": 38,
+      "duplicates_or_early_rejects": 36,
+      "qualified": 1,
+      "note": "NexTouch retained. Новотерская/АО Кавминводы rejected by global brand+domain dedup because canonical master already contains Новотерская on novoterskaya.ru."
     }
   ],
   "qualified_companies": [
-    "А9 Системс / A9 Systems",
-    "VICI / ВИЧИ-РУСЬ",
-    "Аэрофьюэлз / Aerofuels"
+    "Лемакс / Lemax",
+    "ДЖИЛЕКС / JEELEX",
+    "NexTouch / ГК Некс-Т"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "409_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "409_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "412_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "412_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

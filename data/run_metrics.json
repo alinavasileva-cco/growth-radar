@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-08-26T23:05:00+03:00",
+  "generated_at": "2026-08-27T00:03:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260826-437",
-  "current_run_id": "N5K-20260826-437",
+  "latest_completed_run_id": "N5K-20260827-438",
+  "current_run_id": "N5K-20260827-438",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 409,
-  "contactable_verified": 409,
+  "canonical_pool_verified": 412,
+  "contactable_verified": 412,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4591,
+  "remaining_to_target": 4588,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_437": {
-    "raw_discovered": 108,
-    "fast_gate_passed": 7,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 3,
+  "run_438": {
+    "raw_discovered": 120,
+    "fast_gate_passed": 9,
+    "size_check_passed": 8,
+    "legal_match_passed": 7,
+    "signal_confirmed": 5,
+    "lpr_identified": 4,
     "contact_route_found": 3,
     "qualified": 3,
     "physically_integrated": 3,
-    "duplicates": 0,
-    "excluded": 105,
+    "duplicates": 2,
+    "excluded": 115,
     "lane_metrics": [
       {
         "lane": "jobs worker",
-        "raw": 50,
-        "duplicates_or_early_rejects": 50,
+        "raw": 88,
+        "duplicates_or_early_rejects": 88,
         "qualified": 0,
-        "note": "50 distinct employer-level records audited; 5 deep-checked; no qualified. Saturated generic job-board lane was rotated by worker."
+        "note": "Worker-qualified Riverstart rejected at canonical review as previously integrated/known duplicate; saturated lane stopped."
       },
       {
         "lane": "industry worker",
-        "raw": 108,
-        "duplicates_or_early_rejects": 107,
-        "qualified": 1,
-        "note": "108 cross-source distinct Russian companies; four strongest deep-checked; A9 Systems retained after fresh canonical review. This 108-company pool is the auditable global raw lower bound; worker pools are not summed without a complete cross-worker raw index."
+        "raw": 120,
+        "duplicates_or_early_rejects": 118,
+        "qualified": 2,
+        "note": "Auditable distinct industry pool from current worker staging; Лемакс and ДЖИЛЕКС retained after fresh source check."
       },
       {
         "lane": "growth/news worker",
-        "raw": 31,
-        "duplicates_or_early_rejects": 29,
-        "qualified": 2,
-        "note": "31 auditable raw; VICI and Aerofuels retained after fresh canonical review."
+        "raw": 38,
+        "duplicates_or_early_rejects": 36,
+        "qualified": 1,
+        "note": "NexTouch retained. Новотерская/АО Кавминводы rejected by global brand+domain dedup because canonical master already contains Новотерская on novoterskaya.ru."
       }
     ]
   }
