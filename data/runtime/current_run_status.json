@@ -1,36 +1,39 @@
 {
-  "run_id": "N5K-20260826-416",
+  "run_id": "N5K-20260826-417",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T02:24:00+03:00",
+  "updated_at": "2026-08-26T03:09:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 365,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 366,
-    "current_contactable_count": 366,
-    "progress_added": 366,
-    "remaining": 4634
+    "current_canonical_count": 368,
+    "current_contactable_count": 368,
+    "progress_added": 368,
+    "remaining": 4632
   },
   "funnel": {
-    "discovered": 46,
-    "fast_gate_passed": 4,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "discovered": 38,
+    "fast_gate_passed": 6,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded": 44
+    "qualified": 2,
+    "duplicates": 7,
+    "excluded": 29
   },
-  "qualified_companies": ["НеоКомпозит / Неокомпозит-Тюмень"],
+  "qualified_companies": [
+    "НПП Технофильтр / Technofilter",
+    "Fimako / ЛМР Пласт"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "366_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "366_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "368_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "368_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
