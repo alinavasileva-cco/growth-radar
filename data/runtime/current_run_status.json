@@ -20,13 +20,11 @@
     "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
+    "qualified": 0,
     "duplicates": 0,
     "excluded": 17
   },
-  "qualified_companies": [
-    "Три Точки Мануфактуринг / Three Points Manufacturing"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
