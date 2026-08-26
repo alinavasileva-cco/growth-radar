@@ -1,0 +1,73 @@
+{
+  "worker": "industry",
+  "status": "COMPLETE_WITH_ZERO_QUALIFIED",
+  "source_head_sha": "19429d22bc8592684405a83847fe90f32efa3d44",
+  "config_source": "CURRENT_WORKING_CONFIG.md",
+  "discovery": {
+    "primary_source": "Экспоцентр — интернет-каталог МЕТАЛЛООБРАБОТКА-2026, Россия",
+    "catalog_total_russian_participants_observed": 688,
+    "pages_sampled": [18,19,20,21,22,23,24,25,46,50,33,68,7,42,53],
+    "raw_rows_seen": 150,
+    "known_same-company_duplicate_rows_removed": 1,
+    "raw_distinct_collected": 149,
+    "note": "Raw discovery count reflects distinct company names observed in sampled catalog pages after removing one same-company duplicate booth row. It is not represented as 149 fully processed companies."
+  },
+  "funnel": {
+    "raw_distinct_collected": 149,
+    "fast_gate_deep_evaluated": 4,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 0,
+    "lpr_pass": 0,
+    "contact_pass": 0,
+    "qualified": 0,
+    "not_deep_checked_in_this_worker_pass": 145
+  },
+  "deep_checks": [
+    {
+      "company": "ООО КАМИ-ГРУПП",
+      "inn": "7719429480",
+      "ogrn": "5157746020526",
+      "decision": "REJECT_AT_SIGNAL",
+      "reason": "LEGAL and SIZE confirmed; 2025 revenue about 8.96bn RUB and active status confirmed, but no sufficiently strong current S1-S3 signal was verified in this pass. Revenue contraction and leadership change were not treated as an automatic qualifying signal.",
+      "evidence_urls": [
+        "https://firmoteka.ru/7719429480",
+        "https://b2b.house/company/OOO-KAMI-GRUPP_fb6d4d4b-86d3-4f5e-802e-c39d78c38939/"
+      ]
+    },
+    {
+      "company": "ООО ПО ИНСИСТЕНС",
+      "inn": "6658486704",
+      "ogrn": "1169658055335",
+      "decision": "REJECT_AT_SIGNAL",
+      "reason": "LEGAL and SIZE confirmed; 2025 revenue about 969.2m RUB, but no sufficiently strong current S1-S3 signal was verified. Modest revenue growth alone was not treated as a qualifying signal.",
+      "evidence_urls": [
+        "https://companium.ru/id/1169658055335-po-insistens",
+        "https://companies.rbc.ru/id/1169658055335-ooo-proizvodstvennoe-obedinenie-insistens/"
+      ]
+    },
+    {
+      "company": "ООО ИННОДРАЙВ",
+      "inn": "7811697554",
+      "ogrn": "1187847162106",
+      "decision": "REJECT_AT_SIZE",
+      "reason": "Active private manufacturer and current product/news activity confirmed, but current scale gate was not sufficiently supported; only 10 employees were confirmed in the latest accessible legal profile, so the worker failed closed.",
+      "evidence_urls": [
+        "https://companies.rbc.ru/amp/ogrn/1187847162106/",
+        "https://innodrive.ru/"
+      ]
+    },
+    {
+      "company": "ООО Ишимбайский станкоремонтный завод",
+      "decision": "REJECT_AT_SIZE",
+      "reason": "Active industrial activity and current 2026 site/news were confirmed, but current quantitative scale was not sufficiently verified in this pass; failed closed before LEGAL/SIGNAL promotion.",
+      "evidence_urls": [
+        "https://www.isrz.ru/"
+      ]
+    }
+  ],
+  "qualified_companies": [],
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "quality_note": "No candidate was promoted without a verified active legal entity, scale, current S1-S3 signal, LPR and practical contact route. No guessed contacts were used."
+}
