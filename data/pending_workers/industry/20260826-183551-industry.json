@@ -1,0 +1,201 @@
+{
+  "worker": "industry",
+  "run_at": "2026-08-26T18:35:51+03:00",
+  "source_head_sha": "2c5a37c2e25967125cb7d440a516ab8e101bb051",
+  "config_version": "2026-08-26T17:24:00+03:00",
+  "canonical_baseline_seen": 392,
+  "write_scope": "staging_only",
+  "outreach": 0,
+  "raw_sources": [
+    {
+      "source": "Металлообработка-2026, павильон/зал hallid=34",
+      "url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f?hallid=34",
+      "raw": 42
+    },
+    {
+      "source": "Металлообработка-2026, павильон/зал hallid=33",
+      "url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f?hallid=33",
+      "raw": 25
+    },
+    {
+      "source": "Металлообработка-2026, павильон/зал hallid=37",
+      "url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f?hallid=37",
+      "raw": 59
+    }
+  ],
+  "funnel": {
+    "raw_discovered": 126,
+    "fast_gate_pass": 6,
+    "size_pass": 5,
+    "legal_pass": 4,
+    "signal_pass": 3,
+    "lpr_pass": 3,
+    "contact_pass": 3,
+    "qualified": 3,
+    "duplicates_confirmed": 0,
+    "early_reject_or_not_prioritized": 120
+  },
+  "deep_checked_nonqualified": [
+    {
+      "company": "АЛЕКОМАШ, ООО",
+      "reason": "LEGAL_REJECT: ООО АЛЕКОМАШ, ИНН 7733372281, ОГРН 1217700378026, ликвидировано 20.05.2026",
+      "evidence_url": "https://companies.rbc.ru/id/1217700378026-obschestvo-s-ogranichennoj-otvetstvennostyu-alekomash/"
+    },
+    {
+      "company": "Липецкое станкостроительное предприятие, ООО",
+      "reason": "NOT_QUALIFIED_IN_THIS_WORKER: подтвержден сильный сигнал модернизации, но в этом цикле не завершена проверка частной структуры владения до требуемого уровня",
+      "evidence_url": "https://www.informdom.com/novosti/lipeckoe-stankostroitelnoe-predpriyatie-moderniziruet-proizvodstvo.html"
+    },
+    {
+      "company": "АЖУРСТАЛЬ ПК, ООО",
+      "reason": "SIZE_REJECT: действующая частная компания, но подтвержденный масштаб 2025 (выручка 184.583 млн руб., 72 сотрудника) ниже приоритетного масштаба текущей выборки",
+      "evidence_url": "https://companies.rbc.ru/id/1167456124791-ooo-proizvodstvennaya-kompaniya-azhurstal/"
+    }
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "Униматик / UNIMATIC",
+      "legal_name": "ООО \"УНИМАТИК\"",
+      "inn": "6672197493",
+      "ogrn": "1056604520499",
+      "country": "Россия",
+      "city": "Екатеринбург",
+      "private_company": true,
+      "status": "ACTIVE",
+      "size": {
+        "revenue_2025_rub": 4118144000,
+        "employees_group_reported": "300+",
+        "sources": [
+          "https://companies.rbc.ru/id/1056604520499-ooo-unimatik/",
+          "https://ural.tpprf.ru/ru/news/582451/"
+        ]
+      },
+      "signal": {
+        "type": "S1/S2_EXPANSION",
+        "date": "2025-08-19",
+        "summary": "В 2025 году открыт новый производственный цех 1430 кв. м с полным циклом выпуска станков с ЧПУ; заявлен ввод второго этажа/двукратное увеличение производственных площадей.",
+        "urls": [
+          "https://www.gubnews.ru/news_minpromtorg.php?id=6136",
+          "https://oblgazeta.ru/industry-and-economy/production/2025/08/112090/",
+          "https://ural.tpprf.ru/ru/news/582451/"
+        ]
+      },
+      "lpr": {
+        "name": "Ващенко Петр Андреевич",
+        "role": "генеральный директор",
+        "owner": "Фишелев Олег Игоревич",
+        "source": "https://companies.rbc.ru/id/1056604520499-ooo-unimatik/"
+      },
+      "contact": {
+        "route": "sales@unimatic.ru / ural@unimatic.ru / +7 343 289-90-20",
+        "website": "https://unimatic.ru/",
+        "source": "https://rutube.ru/video/2991c103307588999d76948ee3de3c0a/"
+      },
+      "dedup_keys": {
+        "inn": "6672197493",
+        "ogrn": "1056604520499",
+        "legal_name": "ООО УНИМАТИК",
+        "brand_domain": "Униматик|unimatic.ru"
+      },
+      "dedup_repo_search": "NO_MATCH_FOUND_AT_SOURCE_HEAD",
+      "risk_notes": [
+        "Компания включена в санкционные списки ЕС в апреле 2026; текущая рабочая конфигурация worker не содержит санкционного exclusion, поэтому это отмечено как риск, а не самовольно добавленное правило отбора."
+      ],
+      "risk_source": "https://eur-lex.europa.eu/eli/reg_impl/2026/509/oj/bul",
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "СтанкоМашКомплекс",
+      "legal_name": "АО \"СТАНКОМАШКОМПЛЕКС\"",
+      "inn": "6901093347",
+      "ogrn": "1056900216350",
+      "country": "Россия",
+      "city": "Тверь",
+      "private_company": true,
+      "status": "ACTIVE",
+      "size": {
+        "revenue_2024_rub": 2244790000,
+        "employees": 162,
+        "source": "https://companies.rbc.ru/id/1056900216350-ao-stankomashkompleks/"
+      },
+      "signal": {
+        "type": "S1/S2_CAPEX_EXPANSION",
+        "date": "2025-03-05",
+        "summary": "Согласован инвестпроект расширения производства: два новых цеха тяжелых станков, около 1 млрд руб. инвестиций, порядка 120 новых рабочих мест, +50 единиц мощности в год; реализация 2026–2030.",
+        "urls": [
+          "https://www.interfax-russia.ru/center/news/tverskoy-mashzavod-vlozhit-1-mlrd-rub-v-rasshirenie-proizvodstva-metallostankov-vlasti",
+          "https://crp.gov.ru/news/tverskoy-stankozavod-zapustit-dva-novykh-tsekha/"
+        ]
+      },
+      "lpr": {
+        "name": "Егоров Сергей Алексеевич",
+        "role": "генеральный директор",
+        "source": "https://companies.rbc.ru/id/1056900216350-ao-stankomashkompleks/"
+      },
+      "contact": {
+        "route": "sales@stankomach.com / +7 (4822) 521-521",
+        "website": "https://stankomach.com/",
+        "source": "https://stankomach.com/contacts"
+      },
+      "dedup_keys": {
+        "inn": "6901093347",
+        "ogrn": "1056900216350",
+        "legal_name": "АО СТАНКОМАШКОМПЛЕКС",
+        "brand_domain": "СтанкоМашКомплекс|stankomach.com"
+      },
+      "dedup_repo_search": "NO_MATCH_FOUND_AT_SOURCE_HEAD",
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "Финвал / ФИНВАЛ-ТЕХНО",
+      "legal_name": "ООО \"ФИНВАЛ-ТЕХНО\"",
+      "inn": "7722409211",
+      "ogrn": "1177746904400",
+      "country": "Россия",
+      "city": "Москва",
+      "private_company": true,
+      "status": "ACTIVE",
+      "size": {
+        "revenue_2025_rub": 758641000,
+        "employees_2025": 37,
+        "sources": [
+          "https://companies.rbc.ru/id/1177746904400-ooo-finval-tehno/",
+          "https://vsem-podryad.ru/company/d00e3751-886d-430d-8114-7b2848cb2628/"
+        ]
+      },
+      "signal": {
+        "type": "S1_RAPID_GROWTH",
+        "date": "2026-07-07",
+        "summary": "По данным 2025 года выручка выросла на 125.7% год к году, среднесписочная численность увеличилась на 24 человека; компания одновременно развивает комплексные решения, инжиниринг и цифровизацию для промышленности.",
+        "urls": [
+          "https://vsem-podryad.ru/company/d00e3751-886d-430d-8114-7b2848cb2628/",
+          "https://www.metobr-expo.ru/ru/media/news/index.php?id4=20867"
+        ]
+      },
+      "lpr": {
+        "name": "Юриков Юрий Валентинович",
+        "role": "генеральный директор",
+        "owner": "Панкратов Геннадий Борисович",
+        "source": "https://saby.ru/profile/7722409211-772201001"
+      },
+      "contact": {
+        "route": "info@finval.ru / +7 (495) 647-8847",
+        "website": "http://www.finval.ru",
+        "source": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/exhibitors/382216?stand=3A020"
+      },
+      "dedup_keys": {
+        "inn": "7722409211",
+        "ogrn": "1177746904400",
+        "legal_name": "ООО ФИНВАЛ-ТЕХНО",
+        "brand_domain": "Финвал|finval.ru"
+      },
+      "dedup_repo_search": "NO_MATCH_FOUND_AT_SOURCE_HEAD",
+      "decision": "QUALIFIED"
+    }
+  ],
+  "notes": [
+    "Raw pool — 126 отдельных карточек/строк экспонентов из трех залов каталога Металлообработка-2026; повтор ФИНВАЛ-ТЕХНО на двух стендах не засчитан как qualified дважды.",
+    "Canonical файлы, contacts/evidence/runtime/campaign не изменялись.",
+    "Финальный canonical dedup перед интеграцией должен повторить единственный canonical writer, так как main может измениться после source_head_sha."
+  ]
+}
