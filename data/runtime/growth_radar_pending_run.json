@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260826-432",
-  "updated_at": "2026-08-26T17:18:00+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "updated_at": "2026-08-26T17:22:00+03:00",
+  "status": "CLEARED_AFTER_INTEGRATION",
   "funnel": {
     "discovered": 14,
     "fast_gate_passed": 4,
@@ -26,87 +26,6 @@
     {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
   ],
-  "notes": "RUN 432 low-overlap industrial/growth discovery. Fresh source-of-truth before write: RUN 431, physical canonical/contactable 390/390, integrity PASS, orphan 0/0, staged 0. Both candidates passed exact repository search by INN immediately before staging. No outreach.",
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0543",
-      "Brand": "НЗНК / Нижегородский завод несущих конструкций",
-      "Legal Name": "ООО «НЕСУЩИЕ КОНСТРУКЦИИ»",
-      "INN": "5263125168",
-      "OGRN/OGRNIP": "1165275028621",
-      "Region": "Нижегородская область",
-      "City": "Бор",
-      "Segment": "Металлоконструкции / кабельные лотки и монтажные системы / промышленный B2B",
-      "Website": "https://nznk.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 505,440 млн руб. за 2025 год; 75 сотрудников в 2025 году; собственное производство кабельных лотков, монтажных систем и нестандартных изделий.",
-      "Signal Level": "S2",
-      "Signal Summary": "26 августа 2026 года НЗНК запустил новую высокопроизводительную автоматизированную производственную линию для кабельных лотков и других формованных изделий; первая партия уже отгружена заказчику.",
-      "Signal Date": "2026-08-26",
-      "Signal Source": "Элек.ру / официальная публикация ООО «Несущие Конструкции»",
-      "Owner": "Кузнецов Александр Владимирович — 100%",
-      "CEO": "Кузнецов Александр Владимирович",
-      "LPR": "Кузнецов Александр Владимирович",
-      "LPR Role": "Генеральный директор / единственный собственник",
-      "Primary Phone": "8 (800) 500-94-68",
-      "Primary Email": "info@nznk.ru",
-      "HH Contact": "",
-      "Contact Form": "https://nznk.ru/kontakty",
-      "Contact Type": "Официальный корпоративный маршрут производителя",
-      "Contact Source": "Официальный сайт НЗНК",
-      "Consulting Hypothesis": "Коммерческое масштабирование после расширения производительности: сегментация промышленного B2B, загрузка новой линии, key-account pipeline, региональные продажи, CRM/KPI и управление маржинальностью заказов.",
-      "contacts": [
-        {"value":"8 (800) 500-94-68","channel":"phone","type":"corporate","source":"Официальный сайт НЗНК","url":"https://nznk.ru/kontakty","is_lpr":false,"notes":"Официальный телефон центрального офиса и производства"},
-        {"value":"info@nznk.ru","channel":"email","type":"corporate","source":"Официальный сайт НЗНК","url":"https://nznk.ru/kontakty","is_lpr":false,"notes":"Общий официальный email"},
-        {"value":"service@nznk.ru","channel":"email","type":"corporate","source":"Официальный сайт НЗНК","url":"https://nznk.ru/sotrudnichestvo","is_lpr":false,"notes":"Официальный маршрут для предложений о сотрудничестве"}
-      ],
-      "evidence": [
-        {"type":"LEGAL","claim":"ООО «Несущие Конструкции», ИНН 5263125168, ОГРН 1165275028621, действует; генеральный директор и единственный учредитель — Кузнецов Александр Владимирович.","url":"https://check.tochka.com/company/1165275028621/","source":"Точка / ЕГРЮЛ-профиль"},
-        {"type":"SCALE","claim":"За 2025 год выручка 505,440 млн ₽; среднесписочная численность 75 сотрудников.","url":"https://b2b.house/company/OOO-NK_a8a38381-ab37-4d6c-8bd9-672bca036584/financial-statements/","source":"B2B.house / бухгалтерская отчетность 2025"},
-        {"type":"SIGNAL","claim":"26.08.2026 НЗНК запустил новую высокопроизводительную автоматизированную линию для кабельных лотков; первая партия отправлена заказчику.","url":"https://www.elec.ru/news/2026/08/26/zapustili-novuju-liniju.html","source":"Элек.ру / НЗНК"},
-        {"type":"LPR","claim":"Кузнецов Александр Владимирович — генеральный директор и единственный учредитель ООО «Несущие Конструкции».","url":"https://check.tochka.com/company/1165275028621/","source":"Точка / ЕГРЮЛ-профиль"},
-        {"type":"CONTACT","claim":"Официальные маршруты: 8 (800) 500-94-68, info@nznk.ru; для сотрудничества service@nznk.ru.","url":"https://nznk.ru/kontakty","source":"Официальный сайт НЗНК"},
-        {"type":"BRAND_TO_LEGAL","claim":"Официальный сайт НЗНК прямо указывает ООО «Несущие Конструкции», ИНН 5263125168, ОГРН 1165275028621.","url":"https://nznk.ru/kontakty","source":"Официальный сайт НЗНК"}
-      ]
-    },
-    {
-      "Lead ID": "N5K-0544",
-      "Brand": "ХРОМОС Инжиниринг / CHROMOS Engineering",
-      "Legal Name": "ООО «ХРОМОС ИНЖИНИРИНГ»",
-      "INN": "5249111131",
-      "OGRN/OGRNIP": "1105249006235",
-      "Region": "Нижегородская область",
-      "City": "Дзержинск",
-      "Segment": "Аналитическое и измерительное оборудование / промышленные хроматографы / B2B",
-      "Website": "https://has.ru/",
-      "Revenue/Scale": "Действующее частное ООО; выручка 1,981 млрд руб. за 2025 год; промышленный производитель хроматографических комплексов и аналитического оборудования.",
-      "Signal Level": "S2",
-      "Signal Summary": "30 июля 2026 года компания сообщила о расширении производства: выпуск промышленных газовых хроматографов увеличен в 1,7 раза, инвестиции составили 250 млн ₽; после выхода нового оборудования на полную мощность выпуск хроматографических комплексов должен увеличиться еще на 50% ежегодно.",
-      "Signal Date": "2026-07-30",
-      "Signal Source": "Фонд развития промышленности",
-      "Owner": "Пахомов Андрей Львович — 100%",
-      "CEO": "Поляков Александр Павлович",
-      "LPR": "Поляков Александр Павлович",
-      "LPR Role": "Директор",
-      "Primary Phone": "+7 (8313) 249-200",
-      "Primary Email": "sales@has.ru",
-      "HH Contact": "",
-      "Contact Form": "https://has.ru/",
-      "Contact Type": "Официальный корпоративный и sales-маршрут производителя",
-      "Contact Source": "Официальные документы/сайт ХРОМОС Инжиниринг",
-      "Consulting Hypothesis": "Коммерческое масштабирование после роста мощностей: сегментация нефтегазовых и промышленных заказчиков, загрузка расширенного производства, key-account и проектная воронка, CRM/KPI и прогнозирование продаж сложного оборудования.",
-      "contacts": [
-        {"value":"+7 (8313) 249-200","channel":"phone","type":"corporate","source":"Официальные документы ООО «ХРОМОС Инжиниринг»","url":"https://all-pribors.ru/docs/2025-74463-19-3.pdf","is_lpr":false,"notes":"Официальный телефон производителя"},
-        {"value":"sales@has.ru","channel":"email","type":"sales","source":"Актуальный профиль компании","url":"https://checko.ru/company/hromos-inzhiniring-1105249006235","is_lpr":false,"notes":"Официальный sales email"},
-        {"value":"mail@has.ru","channel":"email","type":"corporate","source":"Официальные документы ООО «ХРОМОС Инжиниринг»","url":"https://all-pribors.ru/docs/2025-74463-19-3.pdf","is_lpr":false,"notes":"Общий официальный email"}
-      ],
-      "evidence": [
-        {"type":"LEGAL","claim":"ООО «ХРОМОС Инжиниринг», ИНН 5249111131, ОГРН 1105249006235, действует; директор Поляков Александр Павлович; единственный участник Пахомов Андрей Львович.","url":"https://e-disclosure.azipi.ru/messages/4518846/","source":"Раскрытие эмитента / ЕГРЮЛ-реквизиты"},
-        {"type":"SCALE","claim":"Выручка за 2025 год — 1,981 млрд ₽.","url":"https://cbonds.ru/company/573237/","source":"Cbonds / отчетность эмитента"},
-        {"type":"SIGNAL","claim":"30.07.2026 ФРП сообщил: выпуск промышленных газовых хроматографов увеличен в 1,7 раза; инвестиции 250 млн ₽; после выхода оборудования на мощность выпуск комплексов вырастет еще на 50% ежегодно.","url":"https://frprf.ru/press-tsentr/novosti/v-nizhegorodskoy-oblasti-pri-uchastii-frp-narastili-proizvodstvo-khromografov-dlya-analiza-prirodnog/","source":"Фонд развития промышленности"},
-        {"type":"LPR","claim":"Директор ООО «ХРОМОС Инжиниринг» — Поляков Александр Павлович; единственный участник — Пахомов Андрей Львович.","url":"https://e-disclosure.azipi.ru/messages/4518846/","source":"Официальное раскрытие эмитента"},
-        {"type":"CONTACT","claim":"Официальные маршруты: +7 (8313) 249-200, sales@has.ru, mail@has.ru.","url":"https://all-pribors.ru/docs/2025-74463-19-3.pdf","source":"Официальный документ изготовителя / актуальный профиль"},
-        {"type":"BRAND_TO_LEGAL","claim":"Торговые марки CHROMOS ENGINEERING / ХРОМОС зарегистрированы на ООО «ХРОМОС Инжиниринг»; официальный эмитент и производитель использует бренд ХРОМОС.","url":"https://companies.rbc.ru/id/1105249006235-ooo-hromos-inzhiniring/","source":"РБК Компании / ЕГРЮЛ и торговые марки"}
-      ]
-    }
-  ]
+  "notes": "RUN 432 physically integrated in main. Physical canonical/contactable 392/392; integrity PASS; orphan contacts/evidence 0/0. Pending cleared after successful integration. No outreach.",
+  "qualified_companies": []
 }
