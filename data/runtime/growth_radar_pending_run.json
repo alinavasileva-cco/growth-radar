@@ -1,9 +1,9 @@
 {
-  "run_id": "N5K-20260826-430",
-  "updated_at": "2026-08-26T15:18:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
+  "run_id": "N5K-20260826-431",
+  "updated_at": "2026-08-26T16:24:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
   "funnel": {
-    "discovered": 14,
+    "discovered": 18,
     "fast_gate_passed": 4,
     "size_check_passed": 3,
     "legal_match_passed": 2,
@@ -11,21 +11,102 @@
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 4,
-    "excluded": 8
+    "duplicates": 0,
+    "excluded": 16
   },
   "lane_metrics": [
     {"lane":"HH/job-board","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"other job boards","raw":1,"duplicates_or_early_rejects":0,"qualified":1},
-    {"lane":"industry catalogs","raw":2,"duplicates_or_early_rejects":1,"qualified":1},
-    {"lane":"regional business catalogs/news","raw":2,"duplicates_or_early_rejects":1,"qualified":1},
-    {"lane":"growth/expansion/investment news","raw":3,"duplicates_or_early_rejects":1,"qualified":2},
+    {"lane":"other job boards","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
+    {"lane":"industry catalogs","raw":3,"duplicates_or_early_rejects":1,"qualified":2},
+    {"lane":"regional business catalogs/news","raw":2,"duplicates_or_early_rejects":0,"qualified":2},
+    {"lane":"growth/expansion/investment news","raw":4,"duplicates_or_early_rejects":2,"qualified":2},
     {"lane":"official company sites/news","raw":2,"duplicates_or_early_rejects":0,"qualified":2},
     {"lane":"Telegram/VK/YouTube/owner publications","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"ratings/awards/accelerators/clubs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"franchise/dealer catalogs","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
-    {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
+    {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
+    {"lane":"segment expansion search","raw":2,"duplicates_or_early_rejects":2,"qualified":0}
   ],
-  "notes": "RUN 430 physically integrated in main. Physical canonical/contactable 388/388; integrity PASS; orphan contacts/evidence 0/0. Pending cleared after successful integration. No outreach.",
-  "qualified_companies": []
+  "notes": "RUN 431 low-overlap multi-lane discovery. Fresh source-of-truth before write: RUN 430, physical canonical/contactable 388/388, integrity PASS, orphan 0/0, staged 0. Both candidates passed exact repository search by INN immediately before staging. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0541",
+      "Brand": "Урюпинский крановый завод / УКЗ",
+      "Legal Name": "АО «УРЮПИНСКИЙ КРАНОВЫЙ ЗАВОД»",
+      "INN": "3438000352",
+      "OGRN/OGRNIP": "1023405761510",
+      "Region": "Волгоградская область",
+      "City": "Урюпинск",
+      "Segment": "Промышленное машиностроение / грузоподъёмное оборудование",
+      "Website": "https://urupinsk-kran.ru/",
+      "Revenue/Scale": "117 сотрудников по отраслевому профилю 2026; полный производственный цикл, более 300 единиц оборудования в год; инвестиционный проект импортозамещения электрических талей объёмом 2,5 млрд ₽",
+      "Signal Level": "S2",
+      "Signal Summary": "В августе 2026 года Урюпинский крановый завод реализует инвестиционный проект на 2,5 млрд ₽ по созданию нового высокотехнологичного производства электрических талей грузоподъёмностью до 25 тонн и наращивает выпуск импортозамещающей продукции.",
+      "Signal Date": "2026-08-05",
+      "Signal Source": "Производитель.рф; ВолгГТУ/региональный промышленный совет",
+      "Owner": "Акционерное общество; состав акционеров не используется как неподтверждённый факт",
+      "CEO": "Шадринцев Олег Анатольевич",
+      "LPR": "Шадринцев Олег Анатольевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 844 261 38 66",
+      "Primary Email": "sales@ukran.ru",
+      "HH Contact": "",
+      "Contact Form": "https://urupinsk-kran.ru/kontakty/",
+      "Contact Type": "Официальный коммерческий маршрут промышленного предприятия",
+      "Contact Source": "Официальный сайт АО «УКЗ»",
+      "Consulting Hypothesis": "Коммерческое масштабирование импортозамещающей линейки талей и кранов: сегментация B2B/B2G, загрузка новых мощностей, key-account pipeline, маржинальность продуктовых направлений и развитие продаж через отраслевую кооперацию.",
+      "contacts": [
+        {"value":"+7 844 261 38 66","channel":"phone","type":"corporate","source":"Официальный сайт АО «УКЗ»","url":"https://urupinsk-kran.ru/kontakty/","is_lpr":false,"notes":"Коммерческий маршрут завода"},
+        {"value":"sales@ukran.ru","channel":"email","type":"sales","source":"Официальный сайт АО «УКЗ»","url":"https://urupinsk-kran.ru/kontakty/","is_lpr":false,"notes":"Официальный email продаж кранового оборудования"},
+        {"value":"info@ukran.ru","channel":"email","type":"corporate","source":"Официальный сайт АО «УКЗ»","url":"https://urupinsk-kran.ru/","is_lpr":false,"notes":"Общий официальный email предприятия"}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"АО «Урюпинский крановый завод», ИНН 3438000352, ОГРН 1023405761510, действует; генеральный директор Шадринцев Олег Анатольевич.","url":"https://companies.rbc.ru/id/1023405761510-ao-uryupinskij-kranovyij-zavod/","source":"РБК Компании / ЕГРЮЛ-профиль"},
+        {"type":"SCALE","claim":"Отраслевой профиль 2026 указывает 117 сотрудников; официальный сайт подтверждает полный производственный цикл и выпуск более 300 единиц оборудования в год; инвестиционный проект импортозамещения — 2,5 млрд ₽.","url":"https://manufacturers.ru/company/uryupinskiy-kranovyy-zavod","source":"Manufacturers.ru; официальный сайт; Производитель.рф"},
+        {"type":"SIGNAL","claim":"05.08.2026 опубликована информация о реализации проекта нового высокотехнологичного производства электрических талей до 25 тонн с инвестициями 2,5 млрд ₽.","url":"https://xn--b1aedfedwrdfl5a6k.xn--p1ai/article/programmu-importozameshcheniya-realizuet-uryupinskiy-kranovyy-zavod","source":"Производитель.рф"},
+        {"type":"LPR","claim":"Генеральный директор АО «УКЗ» — Шадринцев Олег Анатольевич.","url":"https://companies.rbc.ru/id/1023405761510-ao-uryupinskij-kranovyij-zavod/","source":"РБК Компании"},
+        {"type":"CONTACT","claim":"Официальные маршруты завода: +7 844 261 38 66, sales@ukran.ru, info@ukran.ru.","url":"https://urupinsk-kran.ru/kontakty/","source":"Официальный сайт АО «УКЗ»"},
+        {"type":"BRAND_TO_LEGAL","claim":"Официальный сайт прямо идентифицирует бренд «Урюпинский крановый завод» как АО «Урюпинский крановый завод» по адресу ул. Штеменко, 20; реквизиты совпадают с ЕГРЮЛ-профилем.","url":"https://urupinsk-kran.ru/","source":"Официальный сайт; ЕГРЮЛ-профиль"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0542",
+      "Brand": "BROX / Брокс",
+      "Legal Name": "ООО «БРОКС»",
+      "INN": "3705011046",
+      "OGRN/OGRNIP": "1223700005363",
+      "Region": "Ивановская область",
+      "City": "Фурманов",
+      "Segment": "Промышленное энергетическое оборудование / паровые котлы",
+      "Website": "https://broxboiler.ru/",
+      "Revenue/Scale": "Новый производственный комплекс 10 000 м²; инвестиции свыше 1,6 млрд ₽; 61 единица технологического оборудования; проектная мощность до 68 промышленных паровых котлов в год",
+      "Signal Level": "S2",
+      "Signal Summary": "В июле 2026 года BROX ввёл в эксплуатацию новый производственный комплекс в Фурманове и начал серийный выпуск промышленных паровых котлов; проект направлен на импортозамещение и выход нового российского производителя в промышленный B2B-сегмент.",
+      "Signal Date": "2026-07-27",
+      "Signal Source": "Департамент экономического развития Ивановской области; ФРП/региональный инвестпортал",
+      "Owner": "ООО «МИРТЕКС» и BROX MAKINE SANAYI VE TICARET LIMITED SIRKETI по актуальному профилю юрлица",
+      "CEO": "Гатилов Григорий Александрович",
+      "LPR": "Гатилов Григорий Александрович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (493) 266-66-77",
+      "Primary Email": "sales@broxboiler.ru",
+      "HH Contact": "",
+      "Contact Form": "https://broxboiler.ru/",
+      "Contact Type": "Официальный корпоративный и sales-маршрут производителя",
+      "Contact Source": "Официальный сайт BROX",
+      "Consulting Hypothesis": "Коммерческий запуск нового российского производственного актива: формирование B2B pipeline по промышленным котлам, сегментация отраслей, загрузка проектной мощности, дилерский/проектный канал и управление маржинальностью сложных инженерных продаж.",
+      "contacts": [
+        {"value":"+7 (493) 266-66-77","channel":"phone","type":"corporate","source":"Официальный сайт BROX","url":"https://broxboiler.ru/","is_lpr":false,"notes":"Официальный телефон российского завода"},
+        {"value":"sales@broxboiler.ru","channel":"email","type":"sales","source":"Официальный сайт BROX","url":"https://broxboiler.ru/about","is_lpr":false,"notes":"Официальный sales email"},
+        {"value":"info@broxboiler.ru","channel":"email","type":"corporate","source":"Официальный сайт BROX","url":"https://broxboiler.ru/","is_lpr":false,"notes":"Общий официальный email"}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «БРОКС», ИНН 3705011046, ОГРН 1223700005363, действует; генеральный директор Гатилов Григорий Александрович.","url":"https://xfirm.ru/company/3705011046","source":"ЕГРЮЛ-профиль / Xfirm"},
+        {"type":"SCALE","claim":"Новый завод площадью 10 000 м², инвестиции свыше 1,6 млрд ₽, 61 единица оборудования, проектная мощность до 68 промышленных котлов в год.","url":"https://www.atomic-energy.ru/news/2026/07/23/167314","source":"ФРП/региональные материалы о запуске производства"},
+        {"type":"SIGNAL","claim":"27.07.2026 региональный департамент подтвердил запуск серийного производства промышленных паровых котлов на новом заводе BROX в Фурманове.","url":"https://derit.ivanovoobl.ru/news/?id=37449&type=news","source":"Департамент экономического развития и торговли Ивановской области"},
+        {"type":"LPR","claim":"Генеральный директор ООО «БРОКС» — Гатилов Григорий Александрович; это также подтверждено сертификатом продукции от 21.07.2026.","url":"https://xn----7sbhaldrafo0catmhegeecb4a9nme.xn--p1acf/document/eaes-ru-s-runo03v0035326/","source":"Реестр сертификатов / актуальные реквизиты"},
+        {"type":"CONTACT","claim":"Официальные маршруты российского завода: +7 (493) 266-66-77, sales@broxboiler.ru, info@broxboiler.ru.","url":"https://broxboiler.ru/about","source":"Официальный сайт BROX"},
+        {"type":"BRAND_TO_LEGAL","claim":"Официальный сайт BROX прямо указывает ООО «БРОКС» и адрес завода в Фурманове, совпадающий с актуальным юридическим профилем.","url":"https://broxboiler.ru/","source":"Официальный сайт BROX; ЕГРЮЛ-профиль"}
+      ]
+    }
+  ]
 }
