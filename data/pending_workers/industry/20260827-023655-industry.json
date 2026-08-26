@@ -1,0 +1,164 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T02:36:55+03:00",
+  "base_state": {
+    "last_completed_run": "N5K-20260827-440",
+    "canonical_count": 420,
+    "contactable_count": 420,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "outreach_allowed": false
+  },
+  "discovery": {
+    "raw_distinct": 120,
+    "raw_accounting_note": "Conservative deduplicated industry candidate pool drawn from current 2026 exhibitor/catalogue entries across CeMAT RUSSIA 2026, PCVExpo 2026, Wasma 2026, UMIDS 2026 and Interlight 2026. Only companies surfaced as Russian in source catalogues were eligible for FAST GATE; obvious foreign entries were excluded before the 120 count. Raw catalogue rows were not treated as deep-checked companies.",
+    "sources": [
+      "https://www.cemat-russia.ru/exhibition/catalogue/",
+      "https://www.pcvexpo.ru/ru-RU/visitors/exhibitor-list.aspx",
+      "https://www.wasma.ru/ru-RU/about/exhibitor-list.aspx",
+      "https://www.umids.ru/ru-RU/about/exhibitor-list.aspx",
+      "https://interlight-building.ru/"
+    ],
+    "fast_gate_passed": 5,
+    "size_passed": 3,
+    "legal_passed": 2,
+    "signal_passed": 2,
+    "lpr_passed": 2,
+    "contact_passed": 2,
+    "qualified": 2,
+    "duplicates_found_before_deep_check": 0,
+    "early_rejects_or_not_deep_checked": 115,
+    "lane_saturation_note": "No single source was allowed to dominate the run; discovery was rotated across several current 2026 industry catalogues."
+  },
+  "qualified_companies": [
+    {
+      "brand": "COMITAS / КОМИТАС",
+      "legal_name": "ООО «КОМИТАС»",
+      "inn": "7743928345",
+      "ogrn": "1147746625190",
+      "domain": "comitas.ru",
+      "country": "Россия",
+      "private_company": true,
+      "status": "действующая",
+      "size": {
+        "revenue_2025_rub": 5137189000,
+        "revenue_growth_2025_pct": 24.59,
+        "employees": 140,
+        "evidence_url": "https://companies.rbc.ru/id/1147746625190-comitas/",
+        "evidence_note": "РБК Компании: выручка 2025 5,137 млрд руб.; организация действует на 26.08.2026."
+      },
+      "legal": {
+        "evidence_url": "https://companies.rbc.ru/id/1147746625190-comitas/",
+        "owner": "Манукян Давит Варданович",
+        "ceo": "Григорян Лилит Артуровна",
+        "private_evidence_url": "https://companium.ru/id/1147746625190-komitas",
+        "private_evidence_note": "Форма собственности указана как частная; учредитель — Давит Манукян."
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-06-05",
+        "type": "масштабирование/новые соглашения по роботизации и автоматизации",
+        "evidence_url": "https://www.comitas.ru/news/gk-komitas-na-polyakh-pmef-2026-pri-sodeystvii-i-uchastii-minpromtorga-rossii-podpisala-neskolko-sog/",
+        "evidence_note": "На ПМЭФ-2026 ГК COMITAS подписала несколько соглашений по развитию и внедрению отечественных систем автоматизации и роботизации; в истории компании за 2026 также зафиксированы три соглашения и завершённый проект автоматизации для МАКФА.",
+        "additional_url": "https://www.comitas.ru/about/"
+      },
+      "lpr": {
+        "name": "Манукян Давит Варданович",
+        "role": "учредитель / основатель",
+        "evidence_url": "https://www.comitas.ru/akademiya-comitas/"
+      },
+      "contact": {
+        "route": "официальный коммерческий контакт / форма заявки",
+        "phone": "+7 (800) 505-50-20",
+        "email": "info@comitas.ru",
+        "url": "https://www.comitas.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "7743928345",
+        "ogrn": "1147746625190",
+        "legal_name": "ООО КОМИТАС",
+        "brand_domain": "COMITAS|comitas.ru"
+      },
+      "prewrite_repo_search": "No repository search hits for INN 7743928345 / COMITAS / КОМИТАС before staging.",
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "MERTECH / МЕРТЕХ",
+      "legal_name": "ООО «МЕРТЕХ»",
+      "inn": "9702014804",
+      "ogrn": "1207700082930",
+      "domain": "mertech.ru",
+      "country": "Россия",
+      "private_company": true,
+      "status": "действующая",
+      "size": {
+        "revenue_2025_rub": 2630000000,
+        "revenue_growth_2025_rub": 628770000,
+        "employees": 42,
+        "evidence_url": "https://www.tbank.ru/business/contractor/legal/1207700082930/",
+        "evidence_note": "Бухгалтерская отчётность 2025: выручка 2,63 млрд руб., рост на 628,77 млн руб."
+      },
+      "legal": {
+        "evidence_url": "https://companies.rbc.ru/amp/ogrn/1207700082930/",
+        "owner_primary": "Николов Дмитрий Алексеевич — 80%",
+        "owner_secondary": "Красавина/Николова Анастасия Олеговна — совладелец",
+        "ceo": "Николов Дмитрий Алексеевич",
+        "status_note": "РБК Компании: организация действовала на 10.04.2026; официальный сайт в августе 2026 публикует актуальные реквизиты и контакты."
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-07-09",
+        "type": "международное развитие / расширение рынка",
+        "evidence_url": "https://mertech.ru/blog/novosti/",
+        "evidence_note": "MERTECH сообщает, что сертификация весов в Туркменистане является новым этапом международного развития; в 2026 компания также запустила долгосрочную отраслевую платформу MERTECH Connect и продолжила вывод новых AI/ESL/AR решений.",
+        "additional_url": "https://mertech.ru/blog/novosti/mertech-connect-2026/"
+      },
+      "lpr": {
+        "name": "Николов Дмитрий Алексеевич",
+        "role": "генеральный директор и основной учредитель (80%)",
+        "evidence_url": "https://companies.rbc.ru/amp/ogrn/1207700082930/"
+      },
+      "contact": {
+        "route": "официальный отдел продаж / дилерский запрос",
+        "phone": "+7 (495) 146-25-25",
+        "email": "store@mertech.ru",
+        "url": "https://mertech.ru/terms/"
+      },
+      "dedup_keys": {
+        "inn": "9702014804",
+        "ogrn": "1207700082930",
+        "legal_name": "ООО МЕРТЕХ",
+        "brand_domain": "MERTECH|mertech.ru"
+      },
+      "prewrite_repo_search": "No repository search hits for INN 9702014804 / MERTECH / МЕРТЕХ before staging.",
+      "decision": "QUALIFIED"
+    }
+  ],
+  "deep_checked_nonqualified": [
+    {
+      "brand": "Гагаринский светотехнический завод / ГСТЗ",
+      "inn": "6722031168",
+      "decision": "REJECT_AT_SIZE",
+      "reason": "Актуальный S1-сигнал расширения производства подтверждён 04.08.2026, юрлицо и ЛПР подтверждены, но доступная проверенная выручка 2024 — 193,962 млн руб.; достаточный актуальный масштаб по текущему правилу не подтверждён без догадки.",
+      "signal_url": "https://smol.aif.ru/society/gagarinskiy-svetotehnicheskiy-zavod-rasshiryaet-proizvodstvo",
+      "legal_url": "https://companies.rbc.ru/id/1166733075222-ooo-gagarinskij-svetotehnicheskij-zavod/"
+    },
+    {
+      "brand": "Автомакон Роботикс / Вейбот Автомакон Роботикс",
+      "inn": "6163220050",
+      "decision": "REJECT_AT_SIZE",
+      "reason": "Выручка 2025 около 6,3 млн руб.; микропредприятие, 5 сотрудников — масштаб не проходит.",
+      "evidence_url": "https://checko.ru/company/veybot-avtomakon-robotiks-1206100021764"
+    },
+    {
+      "brand": "ГК Автомакон / Автоматизация и Консалтинг",
+      "inn": "5003074225",
+      "decision": "REJECT_AT_SIGNAL",
+      "reason": "Выручка 2025 462,436 млн руб. подтверждена, но в этом проходе не найден достаточно сильный и актуальный собственный S1–S3 сигнал без натяжки.",
+      "evidence_url": "https://saby.ru/profile/5003074225-501001001"
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false
+}
