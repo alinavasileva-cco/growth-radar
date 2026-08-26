@@ -1,6 +1,7 @@
 {
   "run_id": "N5K-20260826-426",
-  "updated_at": "2026-08-26T10:59:00+03:00",
+  "updated_at": "2026-08-26T11:02:00+03:00",
+  "status": "CLEARED_AFTER_INTEGRATION",
   "funnel": {
     "discovered": 52,
     "fast_gate_passed": 2,
@@ -14,61 +15,17 @@
     "excluded": 50
   },
   "lane_metrics": [
-    {"lane":"HH/job-board","raw":40,"duplicates_or_early_rejects":40,"qualified":0,"note":"Fresh worker 018. Deep-check candidate Dymov Ceramic is an exact physical duplicate already present as N5K-0353 / INN 7731377855. Lane stopped as saturated."},
+    {"lane":"HH/job-board","raw":40,"duplicates_or_early_rejects":40,"qualified":0,"note":"Dymov Ceramic exact physical duplicate N5K-0353; saturated lane stopped."},
     {"lane":"other job boards","raw":2,"duplicates_or_early_rejects":2,"qualified":0},
-    {"lane":"industry catalogs","raw":2,"duplicates_or_early_rejects":1,"qualified":1,"note":"Rus-Turbo qualified from fresh energy/industry profile plus current official sources."},
+    {"lane":"industry catalogs","raw":2,"duplicates_or_early_rejects":1,"qualified":1},
     {"lane":"regional business catalogs/news","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"growth/expansion/investment news","raw":2,"duplicates_or_early_rejects":1,"qualified":1,"note":"Rus-Turbo independently supported by 2026 growth/expansion publications; counted once in global funnel."},
-    {"lane":"official company sites/news","raw":1,"duplicates_or_early_rejects":0,"qualified":1,"note":"Official site used for legal-brand/contact verification; same company counted once globally."},
-    {"lane":"Telegram/VK/YouTube/owner publications","raw":1,"duplicates_or_early_rejects":0,"qualified":1,"note":"Fresh July 2026 owner interview/video supports production expansion; same company counted once globally."},
+    {"lane":"growth/expansion/investment news","raw":2,"duplicates_or_early_rejects":1,"qualified":1},
+    {"lane":"official company sites/news","raw":1,"duplicates_or_early_rejects":0,"qualified":1},
+    {"lane":"Telegram/VK/YouTube/owner publications","raw":1,"duplicates_or_early_rejects":0,"qualified":1},
     {"lane":"ratings/awards/accelerators/clubs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
   ],
-  "notes": "Fresh source of truth before staging: physical canonical/contactable 382/382, RUN 425, integrity PASS, orphan contacts/evidence 0/0, staged 0. Worker 018 Dymov Ceramic rejected by physical master exact match N5K-0353, INN 7731377855. Repository exact-INN search for 7802588950 returned no indexed match; final authoritative physical dedup remains mandatory in integration guard. No outreach.",
-  "qualified_companies": [
-    {
-      "Lead ID":"N5K-0535",
-      "Brand":"Русь-Турбо / Rus-Turbo",
-      "Legal Name":"ООО «РУСЬ-ТУРБО»",
-      "INN":"7802588950",
-      "OGRN/OGRNIP":"1167847314359",
-      "Region":"Ленинградская область",
-      "City":"Тельмана / Санкт-Петербург",
-      "Segment":"Сервис и производство компонентов энергетического оборудования / промышленный B2B",
-      "Website":"https://russturbo.ru/",
-      "Revenue/Scale":"Действующее частное ООО; выручка 365,805 млн ₽ за 2025 год по Energybase; актуальный профиль ЕГРЮЛ указывает 9 сотрудников. Компания обслуживает и ремонтирует газовые и паровые турбины и развивает собственные решения по реверс-инжинирингу.",
-      "Signal Level":"S2",
-      "Signal Summary":"Июль 2026: в свежем интервью генерального директора и публикациях компании подтверждено расширение производства и поиск новых специалистов; компания развивает собственное производство деталей для газовых и паровых турбин и ведёт новые проекты импортозамещения.",
-      "Signal Date":"2026-07-28",
-      "Signal Source":"https://rutube.ru/video/0851e81cab0f4b016864dbe543e7ed3a/",
-      "Owner":"Дмитриев Олег Викторович — 100%",
-      "CEO":"Дмитриев Олег Викторович",
-      "LPR":"Дмитриев Олег Викторович",
-      "LPR Role":"Генеральный директор и собственник 100%",
-      "Primary Phone":"8 (800) 201-90-46",
-      "Primary Email":"info@russturbo.ru",
-      "HH Contact":"",
-      "Contact Form":"https://russturbo.ru/contacts/",
-      "Other Contact":"+7 (921) 412-74-00",
-      "Contact Type":"Official corporate phone + corporate email + official website route",
-      "Contact Source":"Official Rus-Turbo website",
-      "Number Of Contacts Found":3,
-      "Consulting Hypothesis":"Коммерческая система следующего этапа роста промышленного B2B: сегментация заказчиков энергетики/нефтегаза/химии, pipeline крупных сервисных и импортозамещающих проектов, CRM/KPI, экономика проектов и синхронизация sales с расширяющимся производством.",
-      "Final Quick Status":"МОЖНО СВЯЗЫВАТЬСЯ",
-      "contacts":[
-        {"value":"8 (800) 201-90-46","channel":"Phone","type":"Official corporate phone","source":"Official Rus-Turbo site","url":"https://russturbo.ru/contacts/","is_lpr":false,"notes":"Корпоративный маршрут"},
-        {"value":"info@russturbo.ru","channel":"Email","type":"Official corporate email","source":"Official Rus-Turbo site","url":"https://russturbo.ru/contacts/","is_lpr":false,"notes":"Публичный корпоративный email"},
-        {"value":"Дмитриев Олег Викторович","channel":"Management route","type":"CEO / owner 100%","source":"Current legal profile + official team page","url":"https://russturbo.ru/nasha-komanda/dmitriyev/","is_lpr":true,"notes":"Генеральный директор и собственник"}
-      ],
-      "evidence":[
-        {"type":"LEGAL","claim":"ООО РУСЬ-ТУРБО, ИНН 7802588950, ОГРН 1167847314359 — действующая российская частная компания на август 2026.","url":"https://companies.rbc.ru/amp/ogrn/1167847314359/","source":"Current legal profile"},
-        {"type":"SCALE_CURRENT","claim":"Выручка 365,805 млн ₽ за 2025 год по свежему отраслевому профилю; актуальный ЕГРЮЛ-профиль указывает 9 сотрудников.","url":"https://energybase.ru/vendor/russturbo","source":"Energybase + current legal profile"},
-        {"type":"SIGNAL","claim":"Июль 2026: собственник/CEO в свежем интервью подтверждает расширение производства и потребность в новых специалистах; компания продолжает новые проекты импортозамещения и собственного производства деталей.","url":"https://rutube.ru/video/0851e81cab0f4b016864dbe543e7ed3a/","source":"Fresh owner interview"},
-        {"type":"LPR","claim":"Дмитриев Олег Викторович — генеральный директор и 100% учредитель ООО РУСЬ-ТУРБО.","url":"https://companies.rbc.ru/amp/ogrn/1167847314359/","source":"Current legal profile"},
-        {"type":"CONTACT","claim":"Официальный сайт публикует 8 (800) 201-90-46, +7 (921) 412-74-00 и info@russturbo.ru.","url":"https://russturbo.ru/contacts/","source":"Official Rus-Turbo site"},
-        {"type":"BRAND_LEGAL","claim":"Официальный сайт прямо идентифицирует ООО Русь-Турбо, ИНН 7802588950, и тот же производственный адрес.","url":"https://russturbo.ru/o-nas/","source":"Official Rus-Turbo site"}
-      ]
-    }
-  ]
+  "notes": "RUN 426 physically integrated in main at commit b5813a8608963879fb0efb6ac5628104b62c266c. Physical canonical/contactable 383/383; integrity PASS; orphan contacts/evidence 0/0; campaign/runtime synchronized. Pending payload cleared to prevent false staged state or duplicate retrigger. No outreach.",
+  "qualified_companies": []
 }

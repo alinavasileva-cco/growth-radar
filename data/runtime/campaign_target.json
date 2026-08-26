@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-26T10:59:00+03:00",
+  "updated_at": "2026-08-26T11:02:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260826-425",
-  "current_run_id": "N5K-20260826-425",
+  "last_completed_run_id": "N5K-20260826-426",
+  "current_run_id": "N5K-20260826-426",
   "last_run_id": "N5K-20260826-426",
   "latest_completed_run": "N5K-20260826-426",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 425 completed after physical integration and metadata REPAIR: +1 net new company (HD LED TECH / HDLT). Physical canonical/contactable 382/382; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 426 completed after physical integration and metadata REPAIR: +1 net new company (Русь-Турбо / Rus-Turbo). Physical canonical/contactable 383/383; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

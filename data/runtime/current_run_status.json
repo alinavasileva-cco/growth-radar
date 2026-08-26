@@ -2,14 +2,14 @@
   "run_id": "N5K-20260826-426",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T10:59:00+03:00",
+  "updated_at": "2026-08-26T11:02:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 382,
     "target_count": 5000,
     "current_canonical_count": 383,
     "current_contactable_count": 383,
-    "progress_added": 383,
+    "progress_added": 1,
     "remaining": 4617
   },
   "funnel": {
@@ -24,9 +24,7 @@
     "duplicates": 1,
     "excluded": 50
   },
-  "qualified_companies": [
-    "Русь-Турбо / Rus-Turbo"
-  ],
+  "qualified_companies": ["Русь-Турбо / Rus-Turbo"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
