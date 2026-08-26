@@ -1,0 +1,214 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-26T02:02:00Z",
+  "source_head_before_worker": "05a24e859e25f9e82c77257a2295964571911065",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260826-418",
+    "canonical_count": 369,
+    "contactable_count": 369,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "scope": "job-board discovery only; no canonical writes; no outreach",
+  "metrics": {
+    "raw_distinct_employers_surfaced": 44,
+    "deep_checked": 3,
+    "qualified": 2,
+    "note": "Raw pool is employer-deduplicated within this worker run. Obvious recruiters, foreign employers, large corporate groups and weak/non-identifiable legal mappings were fast-gate rejects. Only auditable counts are recorded; no reconstructed funnel counts are claimed."
+  },
+  "raw_pool": [
+    "ОКАПОЛ",
+    "НПК Палитра",
+    "Сибэлкон",
+    "Волжский крановый завод",
+    "Екатспецзакуп",
+    "Кондитерское производство Меренга",
+    "Закон-Консалт",
+    "ПластКом",
+    "Sarkor Telekom",
+    "Сотрудник",
+    "LeanCore",
+    "Cosmos Hotel Group",
+    "Чебоксарский Городской Молочный Завод",
+    "Окна Столицы",
+    "КАВАЯ ГРУПП",
+    "Simple",
+    "Химсталькон-Инжиниринг",
+    "Дымов Керамика",
+    "LIDER-3D",
+    "БелИнтерФлоу",
+    "АДМ-Техно",
+    "RayMARK",
+    "Группа компаний АЯК",
+    "ЕМК",
+    "ГК Терморос",
+    "РДЭ Инжиниринг",
+    "СПО",
+    "К-Плюс",
+    "Свердловский Завод Металлоконструкций",
+    "ЭРСТВАК",
+    "ЕСЦ",
+    "DiAR-Engineering / Медикал-Сервис",
+    "КАМИ",
+    "CharmCleo Cosmetic",
+    "КлинКосмик / SelfieLab",
+    "Энерго Системы",
+    "Легион-Техно",
+    "М-Пак",
+    "Сиарес",
+    "БЛМ Синержи",
+    "МеталлНефтеПроект",
+    "Абиус",
+    "Модуль",
+    "Горно-металлургический комплекс"
+  ],
+  "discovery_source_urls": [
+    "https://dreamjob.ru/employers/178706/vakansii/136231860",
+    "https://dreamjob.ru/employers/167613/vakansii/136076474",
+    "https://dreamjob.ru/employers/163834/vakansii/135745705",
+    "https://dreamjob.ru/employers/184701/vakansii/133973458",
+    "https://dreamjob.ru/employers/5398125/vakansii/135921942",
+    "https://dreamjob.ru/employers/170976/vakansii/136113034",
+    "https://dreamjob.ru/employers/121345/vakansii/134598585",
+    "https://dreamjob.ru/employers/107703/vakansii/135987541",
+    "https://dreamjob.ru/employers/146086/vakansii/136021389",
+    "https://dreamjob.ru/employers/41053/vakansii/135925440",
+    "https://dreamjob.ru/employers/50485/vakansii/135965368",
+    "https://www.minojru.jobvk.com/moskva/menedzher-po-prodazham-promishlennogo-oborudovaniya",
+    "https://www.notexistsforum.jobvk.com/ekaterinburg/menedzher-po-prodazham-metalloprokata",
+    "https://obnzgklfsbru.jobvk.com/ekaterinburg/promishlennosty",
+    "https://www.notexistscomru.jobvk.com/moskva/zavod-promishlennogo-oborudovaniya",
+    "https://www.notexistswwwkhtjsru.jobvk.com/ekaterinburg/rukovoditely-servisnogo-otdela-",
+    "https://2fru.jobvk.com/ekaterinburg/menedzher-po-prodazham-oborudovaniya/tp-ot-pryamih-rabotodateley",
+    "https://notexistsekxcmru.jobvk.com/sankt-peterburg/rukovoditely-otdela-prodazh",
+    "https://www.notexistswwwkhtjsru.jobvk.com/moskva/v-legkoy-promishlennosti",
+    "https://ru.jobvk.com/moskva/zamestitely-direktora-po-sbitu",
+    "https://notexistsekxcmru.jobvk.com/moskva/menedzher-po-prodazham-promishlennogo-oborudovaniya"
+  ],
+  "deep_check_rejections": [
+    {
+      "brand": "Сибэлкон",
+      "reason": "Scale evidence conflicts: current financial profile supports approximately 111.2m RUB revenue for 2025, but current registry/profile evidence exposes only 1 employee in the latest available headcount view. The fresh vacancy implies a functioning team, but the worker could not independently reconcile the current employee scale to the target threshold without inference, so the candidate was not qualified.",
+      "sources": [
+        "https://dreamjob.ru/employers/163834/vakansii/135745705",
+        "https://saby.ru/profile/2417004040-246601001",
+        "https://companies.rbc.ru/id/1132454001525-ooo-sibelkon/"
+      ]
+    }
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "Волжский крановый завод / ВКЗ",
+      "legal_name": "ООО ВОЛЖСКИЙ КРАНОВЫЙ ЗАВОД",
+      "inn": "2130161683",
+      "ogrn": "1152130013310",
+      "region": "Чувашская Республика — Чувашия",
+      "city": "Чебоксары",
+      "website": "https://волжский-крановый-завод.рф/",
+      "legal_status": "Действующая организация; профиль по данным ФНС/ЕГРЮЛ актуален на август 2026.",
+      "scale": {
+        "revenue_2025_rub": 90800000,
+        "employees_2025": 25,
+        "source": "https://firmoteka.ru/2130161683"
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-11",
+        "summary": "Свежая вакансия руководителя отдела продаж: компания прямо указывает активный рост и ищет лидера коммерческого блока для полного управления продажами от лидов до контрактов, роста доли рынка и прибыли за счёт построения эффективной системы.",
+        "sources": [
+          "https://dreamjob.ru/employers/184701/vakansii/133973458"
+        ]
+      },
+      "owner_lpr": {
+        "name": "Ялков Юрий Анатольевич",
+        "role": "Генеральный директор и единственный учредитель, 100%",
+        "source": "https://firmoteka.ru/2130161683"
+      },
+      "contact_route": {
+        "phone_primary": "8 (800) 770-71-77",
+        "phone_secondary": "+7 (8352) 22-62-01",
+        "email": "info@vkz21.ru",
+        "type": "official corporate phones + official corporate email",
+        "sources": [
+          "https://волжский-крановый-завод.рф/services/montazh-remont-obsluzhivanie/montazh/"
+        ]
+      },
+      "brand_legal_evidence": {
+        "claim": "Официальный сайт Волжского кранового завода публикует ООО 'Волжский крановый завод', ИНН 2130161683, ОГРН 1152130013310 и официальные контакты.",
+        "source": "https://волжский-крановый-завод.рф/services/montazh-remont-obsluzhivanie/montazh/"
+      },
+      "consulting_hypothesis": "Систематизация промышленного B2B-sales: управляемая воронка и KPI, CRM-дисциплина, сегментация проектных продаж, управление коммерческой командой и рост маржинальности.",
+      "dedup_before_staging": {
+        "exact_inn_repo_search": "no match",
+        "brand_repo_search": "no match",
+        "checked_against_head": "05a24e859e25f9e82c77257a2295964571911065"
+      }
+    },
+    {
+      "brand": "ОКАПОЛ / OKAPOL",
+      "legal_name": "ООО ОКАПОЛ",
+      "inn": "5249144955",
+      "ogrn": "1155249007462",
+      "region": "Нижегородская область",
+      "city": "Дзержинск",
+      "website": "https://okapol.ru/",
+      "legal_status": "Действующая частная организация; актуальные профили и официальный сайт подтверждают работающий производственный бизнес.",
+      "scale": {
+        "employees": 90,
+        "scale_note": "Отраслевой производственный каталог указывает 90 сотрудников; официальный сайт подтверждает собственный действующий завод и стратегию масштабирования производства.",
+        "sources": [
+          "https://производитель.рф/producer/okapol",
+          "https://okapol.ru/company/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-13",
+        "summary": "Свежая вакансия руководителя отдела продаж на производстве полимеров: требуется управление командой, выстраивание прозрачных процессов и автоматизации, CRM/1С, оцифровка воронки и точный прогноз реализации. Это прямой запрос на систематизацию коммерческого блока.",
+        "sources": [
+          "https://dreamjob.ru/employers/178706/vakansii/136231860"
+        ]
+      },
+      "owner_lpr": {
+        "name": "Огородцев Дмитрий Николаевич",
+        "role": "Генеральный директор и совладелец ООО ОКАПОЛ",
+        "source": "https://companies.rbc.ru/id/1155249007462-ooo-okapol/"
+      },
+      "contact_route": {
+        "phone_primary": "8 800 2222-188",
+        "phone_secondary": "+7 (8313) 39-85-85",
+        "email": "sales@okapol.ru",
+        "general_email": "info@okapol.ru",
+        "form": "https://okapol.ru/contacts/",
+        "type": "official corporate phones + sales email + general email + official form",
+        "sources": [
+          "https://okapol.ru/contacts/"
+        ]
+      },
+      "brand_legal_evidence": {
+        "claim": "Официальный производственный контур и актуальные реестровые профили связывают бренд ОКАПОЛ с ООО ОКАПОЛ, ИНН 5249144955, ОГРН 1155249007462, адресом в Дзержинске.",
+        "sources": [
+          "https://okapol.ru/contacts/",
+          "https://companies.rbc.ru/id/1155249007462-ooo-okapol/"
+        ]
+      },
+      "consulting_hypothesis": "Масштабирование промышленного B2B-sales: прозрачная CRM-воронка, KPI и прогнозирование, управление командой, автоматизация коммерческих процессов и синхронизация продаж с производством/R&D.",
+      "dedup_before_staging": {
+        "exact_inn_repo_search": "no match",
+        "brand_repo_search": "no match",
+        "checked_against_head": "05a24e859e25f9e82c77257a2295964571911065"
+      }
+    }
+  ],
+  "write_guard": {
+    "canonical_files_modified": false,
+    "master_modified": false,
+    "contactable_modified": false,
+    "contacts_modified": false,
+    "evidence_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false,
+    "outreach_performed": false
+  }
+}
