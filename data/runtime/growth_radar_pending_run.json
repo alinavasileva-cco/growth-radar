@@ -1,8 +1,192 @@
 {
-  "run_id": "N5K-20260827-438",
-  "updated_at": "2026-08-27T00:03:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260827-438 integrated physically; canonical/contactable 412/412; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260827-439",
+  "updated_at": "2026-08-27T01:03:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 4,
+  "funnel": {
+    "discovered": 120,
+    "fast_gate_passed": 11,
+    "size_check_passed": 8,
+    "legal_match_passed": 7,
+    "signal_confirmed": 6,
+    "lpr_identified": 5,
+    "contact_route_found": 4,
+    "qualified": 4,
+    "duplicates": 0,
+    "excluded": 116
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs worker",
+      "raw": 80,
+      "duplicates_or_early_rejects": 79,
+      "qualified": 1,
+      "note": "Profood retained after fresh 2026 HH verification. Worker pools are not summed globally without a full cross-worker raw identity index."
+    },
+    {
+      "lane": "industry worker",
+      "raw": 120,
+      "duplicates_or_early_rejects": 119,
+      "qualified": 1,
+      "note": "Polyplast Novomoskovsk retained after fresh legal, 2025 scale, 2026 expansion and official contact verification."
+    },
+    {
+      "lane": "growth/news worker",
+      "raw": 62,
+      "duplicates_or_early_rejects": 60,
+      "qualified": 2,
+      "note": "Callisto Vision and Metallstroy64 retained after fresh 2026 expansion-signal and current official contact verification."
+    }
+  ],
+  "notes": "Single canonical writer RUN 439. Conservative globally auditable raw lower bound is 120 because worker pools are not summed without a complete cross-worker raw identity index. Exact-INN repository search returned no canonical matches for all four candidates before staging. Fresh 2026 signals and current legal/contact evidence rechecked; no outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0565",
+      "Brand": "ПРОФУД / Profood",
+      "Legal Name": "ООО ПК «ПРОФУД»",
+      "INN": "6679127590",
+      "OGRN/OGRNIP": "1196658060686",
+      "Region": "Свердловская область",
+      "City": "посёлок Большой Исток",
+      "Segment": "Пищевое производство / контрактное производство БАД и спортивного питания / B2B",
+      "Website": "https://profood-trade.ru/",
+      "Revenue/Scale": "165,203 млн ₽ выручки за 2025 год; 13 сотрудников по данным ФНС; собственное контрактное производство",
+      "Signal Level": "S1",
+      "Signal Summary": "На 27.08.2026 в свежей выдаче HH опубликована вакансия Руководителя отдела продаж ООО Производственная компания Профуд; параллельно компания нанимает B2B-sales и развивает оптовый/СТМ контур.",
+      "Signal Date": "2026-08-27",
+      "Signal Source": "https://ekaterinburg.hh.ru/vacancies/rukovoditel_proektov_vnedreniya/ot_pryamih_rabotodateley",
+      "Owner": "Колмагоров Евгений Иванович — единственный учредитель",
+      "CEO": "Колмагоров Евгений Иванович",
+      "LPR": "Колмагоров Евгений Иванович",
+      "LPR Role": "Генеральный директор и единственный учредитель",
+      "Primary Phone": "+7 800 101-70-70",
+      "Primary Email": "b2b@profood-trade.ru",
+      "HH Contact": "https://ekaterinburg.hh.ru/vacancies/rukovoditel_proektov_vnedreniya/ot_pryamih_rabotodateley",
+      "Contact Form": "https://profood-trade.ru/",
+      "Contact Type": "Официальный B2B телефон + email + текущий employer route",
+      "Contact Source": "https://profood-trade.ru/",
+      "Consulting Hypothesis": "Систематизация и масштабирование B2B/СТМ-продаж контрактного производства: воронка, каналы, CRM, маржинальность и управление отделом продаж.",
+      "contacts": [
+        {"channel":"Phone","value":"+7 800 101-70-70","type":"Corporate","source":"Official Profood site","url":"https://profood-trade.ru/","is_lpr":false},
+        {"channel":"Email","value":"b2b@profood-trade.ru","type":"B2B Sales","source":"Official Profood site","url":"https://profood-trade.ru/","is_lpr":false},
+        {"channel":"HH","value":"Current employer vacancy route","type":"Employer","source":"HH current search","url":"https://ekaterinburg.hh.ru/vacancies/rukovoditel_proektov_vnedreniya/ot_pryamih_rabotodateley","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL_SCALE_LPR","claim":"ООО ПК ПРОФУД действует; ИНН 6679127590, ОГРН 1196658060686; выручка 165,203 млн ₽ за 2025 год; Колмагоров Евгений Иванович — гендиректор и единственный учредитель.","url":"https://companies.rbc.ru/id/1196658060686-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennaya-kompaniya-profud/","source":"РБК Компании / ЕГРЮЛ и отчетность"},
+        {"type":"SIGNAL","claim":"Свежая выдача HH на 27.08.2026 содержит вакансию Руководителя отдела продаж от ООО Производственная компания Профуд.","url":"https://ekaterinburg.hh.ru/vacancies/rukovoditel_proektov_vnedreniya/ot_pryamih_rabotodateley","source":"HH"},
+        {"type":"CONTACT_BRAND_LEGAL","claim":"Официальный сайт производственной компании ПРОФУД публикует адрес производства, 8 800 101 70 70 и b2b@profood-trade.ru.","url":"https://profood-trade.ru/","source":"Official Profood"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0566",
+      "Brand": "Полипласт Новомосковск / Polyplast Novomoskovsk",
+      "Legal Name": "ООО «ПОЛИПЛАСТ НОВОМОСКОВСК»",
+      "INN": "7116019123",
+      "OGRN/OGRNIP": "1037101673333",
+      "Region": "Тульская область",
+      "City": "Новомосковск",
+      "Segment": "Химическая промышленность / специализированная химия / B2B",
+      "Website": "https://novomoskovsk.polyplast-un.ru/",
+      "Revenue/Scale": "113,46 млрд ₽ выручки за 2025 год; 812 сотрудников по свежему worker-профилю; флагманская производственная площадка ГК Полипласт",
+      "Signal Level": "S1",
+      "Signal Summary": "21.04.2026 на площадке Полипласт Новомосковск запущен новый производственный комплекс полимерного связующего и сырья для специализированных добавок мощностью до 60 тыс. тонн продукции в год.",
+      "Signal Date": "2026-04-21",
+      "Signal Source": "https://polyplast-un.ru/company/news/gk_poliplast_zapustila_novyy_proizvodstvennyy_kompleks_v_novomoskovske/",
+      "Owner": "АО «Полипласт» — учредитель; контролирующее лицо группы Ильсур Шамсутдинов по раскрытию 2026 года",
+      "CEO": "Ковалёв Александр Федорович",
+      "LPR": "Ковалёв Александр Федорович",
+      "LPR Role": "Генеральный директор ООО «Полипласт Новомосковск»",
+      "Primary Phone": "+7 (487) 622-09-70",
+      "Primary Email": "sekretar@polyplast-nm.ru",
+      "HH Contact": "",
+      "Contact Form": "https://novomoskovsk.polyplast-un.ru/contacts/",
+      "Contact Type": "Официальный телефон предприятия + секретариат + форма",
+      "Contact Source": "https://polyplast-un.ru/contacts/all/",
+      "Consulting Hypothesis": "Коммерческая и операционная система загрузки новых мощностей: продуктовая сегментация, B2B-каналы, экспорт, P&L продуктовых линий и синхронизация продаж с производством.",
+      "contacts": [
+        {"channel":"Phone","value":"+7 (487) 622-09-70","type":"Corporate","source":"Official Polyplast contacts","url":"https://polyplast-un.ru/contacts/all/","is_lpr":false},
+        {"channel":"Email","value":"sekretar@polyplast-nm.ru","type":"Secretariat","source":"Official Polyplast contacts","url":"https://polyplast-un.ru/contacts/all/","is_lpr":false},
+        {"channel":"Form","value":"Official contact form","type":"Corporate","source":"Official Polyplast Novomoskovsk","url":"https://novomoskovsk.polyplast-un.ru/contacts/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL_SCALE","claim":"ООО Полипласт Новомосковск, ИНН 7116019123, ОГРН 1037101673333, действует; выручка 113,46 млрд ₽ за 2025 год; руководитель Ковалёв Александр Федорович.","url":"https://companium.ru/id/1037101673333-poliplast-novomoskovsk","source":"Companium / ФНС"},
+        {"type":"SIGNAL","claim":"21.04.2026 запущен новый производственный комплекс полимерного связующего; мощность до 60 тыс. тонн продукции в год.","url":"https://polyplast-un.ru/company/news/gk_poliplast_zapustila_novyy_proizvodstvennyy_kompleks_v_novomoskovske/","source":"Official Polyplast news"},
+        {"type":"LPR_CONTACT","claim":"Ковалёв Александр Федорович — гендиректор; официальный маршрут предприятия: +7 (487) 622-09-70 и sekretar@polyplast-nm.ru.","url":"https://polyplast-un.ru/contacts/all/","source":"Official Polyplast contacts"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0567",
+      "Brand": "CALLISTO VISION / ГК Каллисто",
+      "Legal Name": "ООО «КАЛЛИСТО ВИЖН»",
+      "INN": "9725161234",
+      "OGRN/OGRNIP": "1247700424322",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "B2B IT / промышленная маркировка и контроль качества / оборудование и ПО",
+      "Website": "https://callistovision.ru/",
+      "Revenue/Scale": "1,60 млрд ₽ выручки за 2025 год; 80+ инженеров; 200+ оснащённых линий в России",
+      "Signal Level": "S2",
+      "Signal Summary": "В апреле-мае 2026 KAMA FLOW вложила 700 млн ₽ в ГК Каллисто для масштабирования бизнеса в России и на международных рынках; средства направляются на производственные мощности, продуктовую линейку и экспорт.",
+      "Signal Date": "2026-05-01",
+      "Signal Source": "https://callistovision.ru/news01052026",
+      "Owner": "ООО «Каллисто Холдингс» — 100% участник",
+      "CEO": "Булгаков Павел Георгиевич",
+      "LPR": "Булгаков Павел Георгиевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (499) 130-74-71",
+      "Primary Email": "info@callistovision.ru",
+      "HH Contact": "",
+      "Contact Form": "https://callistovision.ru/contacts",
+      "Contact Type": "Официальный телефон + email + форма",
+      "Contact Source": "https://callistovision.ru/contacts",
+      "Consulting Hypothesis": "Коммерческая система масштабирования после привлечения капитала: приоритизация продуктовых и экспортных направлений, P&L по сегментам, sales pipeline и синхронизация роста с производством.",
+      "contacts": [
+        {"channel":"Phone","value":"+7 (499) 130-74-71","type":"Corporate","source":"Official Callisto contacts","url":"https://callistovision.ru/contacts","is_lpr":false},
+        {"channel":"Email","value":"info@callistovision.ru","type":"Corporate","source":"Official Callisto contacts","url":"https://callistovision.ru/contacts","is_lpr":false},
+        {"channel":"Form","value":"Official contact form","type":"Corporate","source":"Official Callisto feedback","url":"https://callistovision.ru/page114754316.html","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL_SCALE_LPR","claim":"ООО Каллисто Вижн, ИНН 9725161234, ОГРН 1247700424322, действует; выручка 1,60 млрд ₽ за 2025 год; гендиректор Павел Булгаков.","url":"https://callistovision.ru/details","source":"Official Callisto + current registry verification"},
+        {"type":"SIGNAL","claim":"KAMA FLOW инвестирует 700 млн ₽ в CALLISTO VISION для масштабирования бизнеса, производственных мощностей, продуктовой линейки и экспорта.","url":"https://callistovision.ru/news01052026","source":"Official Callisto news"},
+        {"type":"CONTACT","claim":"Официальные контакты CALLISTO VISION: +7 (499) 130-74-71, info@callistovision.ru и форма обратной связи.","url":"https://callistovision.ru/contacts","source":"Official Callisto contacts"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0568",
+      "Brand": "Металлстрой64 / Metallstroy64",
+      "Legal Name": "ООО «МЕТАЛЛСТРОЙ64»",
+      "INN": "6449095859",
+      "OGRN/OGRNIP": "1196451027255",
+      "Region": "Саратовская область",
+      "City": "Энгельс",
+      "Segment": "Машиностроение / кузова, прицепы и полуприцепы / B2B",
+      "Website": "https://www.metallstroy64.com/",
+      "Revenue/Scale": "286,9 млн ₽ выручки за 2025 год; 26 сотрудников; новый производственный цех 3 800 м²",
+      "Signal Level": "S2",
+      "Signal Summary": "02.07.2026 компания сообщила о вводе нового производственного цеха; в 2024-2026 в проект вложено 310 млн ₽, начата вторая очередь строительства цеха для кузовов зерновозов на 2026-2027 годы.",
+      "Signal Date": "2026-07-02",
+      "Signal Source": "https://www.kommersant.ru/doc/8782051",
+      "Owner": "Козырев Кирилл Андреевич — единственный учредитель",
+      "CEO": "Козырев Кирилл Андреевич",
+      "LPR": "Козырев Кирилл Андреевич",
+      "LPR Role": "Директор и единственный учредитель",
+      "Primary Phone": "+7 988 888-81-64",
+      "Primary Email": "",
+      "HH Contact": "",
+      "Contact Form": "https://www.metallstroy64.com/",
+      "Contact Type": "Официальные телефоны завода + форма сайта",
+      "Contact Source": "https://www.metallstroy64.com/",
+      "Consulting Hypothesis": "Управление второй очередью роста: коммерческая модель по продуктовым направлениям, загрузка новых мощностей, B2B-воронка и синхронизация продаж с производством.",
+      "contacts": [
+        {"channel":"Phone","value":"+7 988 888-81-64","type":"Corporate","source":"Official Metallstroy64 site","url":"https://www.metallstroy64.com/","is_lpr":false},
+        {"channel":"Phone","value":"+7 999 888-00-64","type":"Corporate","source":"Official Metallstroy64 site","url":"https://www.metallstroy64.com/","is_lpr":false},
+        {"channel":"Form","value":"Official question form","type":"Corporate","source":"Official Metallstroy64 site","url":"https://www.metallstroy64.com/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL_SCALE_LPR","claim":"ООО Металлстрой64, ИНН 6449095859, ОГРН 1196451027255; выручка 286,9 млн ₽ и 26 сотрудников за 2025 год; Козырев Кирилл Андреевич — директор и единственный учредитель.","url":"https://companium.ru/id/1196451027255-metallstroy64","source":"Companium / ФНС"},
+        {"type":"SIGNAL","claim":"02.07.2026 введён новый производственный цех; 310 млн ₽ инвестиций в 2024-2026 и начата вторая очередь расширения на 2026-2027 годы.","url":"https://www.kommersant.ru/doc/8782051","source":"Коммерсантъ"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует телефоны +7 988 888-81-64 и +7 999 888-00-64 и форму вопроса.","url":"https://www.metallstroy64.com/","source":"Official Metallstroy64"}
+      ]
+    }
+  ]
 }
