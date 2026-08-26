@@ -5,11 +5,11 @@
   "updated_at": "2026-08-26T14:06:45+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 385,
     "target_count": 5000,
     "current_canonical_count": 386,
     "current_contactable_count": 386,
-    "progress_added": 386,
+    "progress_added": 1,
     "remaining": 4614
   },
   "funnel": {
@@ -20,11 +20,11 @@
     "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
+    "qualified": 1,
     "duplicates": 0,
     "excluded": 17
   },
-  "qualified_companies": [],
+  "qualified_companies": ["Три Точки Мануфактуринг / Three Points Manufacturing"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
