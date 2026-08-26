@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-26T09:18:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260826-423",
-  "current_run_id": "N5K-20260826-423",
+  "last_completed_run_id": "N5K-20260826-424",
+  "current_run_id": "N5K-20260826-424",
   "last_run_id": "N5K-20260826-424",
   "latest_completed_run": "N5K-20260826-424",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 423 completed after physical integration and metadata REPAIR: +3 net new companies (Маламут Ленд, Аксис / ГК Инструмент, Негабарит-Транс). Physical canonical/contactable 380/380; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 424 completed after physical integration and metadata REPAIR: +1 net new company (Варяжский композит / SHELON). Physical canonical/contactable 381/381; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
