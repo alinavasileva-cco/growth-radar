@@ -1,0 +1,107 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-26T21:29:27+03:00",
+    "source_head_sha": "2eae507381e0d1339cdbc9a7127966e024768d5a",
+    "canonical_snapshot": {
+      "latest_verified_run": "N5K-20260826-435",
+      "canonical_count": 404,
+      "contactable_count": 404,
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0
+    },
+    "funnel": {
+      "raw_distinct_employers": 50,
+      "fast_gate_passed": 6,
+      "deep_check": 3,
+      "size_passed": 2,
+      "legal_passed": 2,
+      "signal_passed": 2,
+      "lpr_passed": 1,
+      "contact_passed": 1,
+      "qualified": 1,
+      "notes": "Requested 80-150 raw was not reached in this execution window; only 50 distinct employer-level candidates were individually surfaced and counted. Saturated generic HH/job-board result sets were rotated away from after high duplicate/early-reject behavior. No reconstructed or invented funnel counts."
+    }
+  },
+  "qualified": [
+    {
+      "brand": "Лакокрасочный завод OZON",
+      "legal_name": "ООО ФАРБЕН ГРУПП",
+      "inn": "6671458061",
+      "ogrn": "1146671020671",
+      "region": "Свердловская область",
+      "city": "Екатеринбург",
+      "website": "https://ozonfarbe.ru/",
+      "segment": "Производство лакокрасочных материалов и сухих строительных смесей; B2B/B2C",
+      "company_status": "Действующее частное ООО",
+      "scale": {
+        "revenue_2025_rub": 112013000,
+        "employees": 10,
+        "source_url": "https://companies.rbc.ru/id/1146671020671-ooo-farben-grupp/",
+        "source_note": "РБК Компании: выручка за 2025 год 112,013 млн руб.; ССЧ 10; основной ОКВЭД — производство красок и лаков."
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-13",
+        "title": "Руководитель отдела продаж",
+        "summary": "Компания ищет руководителя, который должен выстроить регулярный менеджмент продаж, оцифровать воронку, внедрить/контролировать регламенты и CRM, управлять KPI, маржинальностью, дилерским и прямым каналами. Вакансия прямо подчинена задаче систематизации коммерческой функции и стабильного роста.",
+        "source_urls": [
+          "https://dreamjob.ru/employers/161589/vakansii/136214897",
+          "https://rabota1000.ru/sverdlovskaya-oblast/mladshij-akkaunt-menedzher?exp=3"
+        ]
+      },
+      "brand_legal_match": {
+        "confirmed": true,
+        "evidence": [
+          {
+            "claim": "Официальный сайт бренда OZON указывает производство лакокрасочных материалов и контактный адрес/каналы компании.",
+            "url": "https://ozonfarbe.ru/"
+          },
+          {
+            "claim": "2ГИС связывает лакокрасочный завод OZON с ООО Фарбен групп.",
+            "url": "https://2gis.ru/ekaterinburg/firm/1267166676288286"
+          },
+          {
+            "claim": "1С-Битрикс описывает интернет-магазин лакокрасочного завода Озон как проект ООО ФАРБЕН ГРУПП на домене ozonfarbe.ru.",
+            "url": "https://www.1c-bitrix.ru/products/cms/projects/14554910/"
+          }
+        ]
+      },
+      "lpr": {
+        "name": "Соколов Александр Эдуардович",
+        "role": "Генеральный директор и единственный учредитель (100%)",
+        "source_urls": [
+          "https://companies.rbc.ru/id/1146671020671-ooo-farben-grupp/",
+          "https://xfirm.ru/company/6671458061",
+          "https://ozonfarbe.ru/company/news/prezentatsiya_kompanii_dlya_arkhitektorv_i_dizaynerov_v_sinara_tsentre/"
+        ]
+      },
+      "contact_route": {
+        "type": "Официальный корпоративный маршрут к компании/собственнику",
+        "phone": "+7 (343) 243-54-03",
+        "email": "sale@ozonfarbe.ru",
+        "form_or_site": "https://ozonfarbe.ru/",
+        "source_urls": [
+          "https://ozonfarbe.ru/",
+          "https://ozonfarbe.ru/blog/informatsiya/sovremennaya-vodoemulsionnaya-kraska-1/"
+        ],
+        "notes": "Вакансия указывает прямое подчинение собственнику; официальный сайт и публичные страницы подтверждают рабочий телефон/email компании. Личный контакт не выдумывался."
+      },
+      "consulting_hypothesis": "Систематизация B2B-продаж производителя: регулярный менеджмент, CRM/воронка, KPI, управление маржинальностью, дилерским и объектным каналами, разгрузка собственника через управляемую коммерческую систему.",
+      "dedup_keys": {
+        "inn": "6671458061",
+        "ogrn": "1146671020671",
+        "legal_name": "ООО ФАРБЕН ГРУПП",
+        "brand_domain": "Лакокрасочный завод OZON|ozonfarbe.ru"
+      },
+      "dedup_check": {
+        "repository_search_exact_inn": "NO_MATCH",
+        "repository_search_brand_domain": "NO_MATCH",
+        "checked_against_head": "2eae507381e0d1339cdbc9a7127966e024768d5a"
+      },
+      "status": "QUALIFIED_PENDING_CANONICAL_RECHECK"
+    }
+  ],
+  "outreach": 0
+}
