@@ -1,12 +1,12 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-26T14:06:45+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260826-429`  
+**Версия:** 2026-08-26T15:18:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260826-430`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **386 / 386**  
+**Физически подтверждённый canonical/contactable:** **388 / 388**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4614**  
+**Осталось:** **4612**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -14,9 +14,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **386 / 386**;
+- physical canonical/contactable count: **388 / 388**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260826-429`;
+- последний завершённый RUN: `N5K-20260826-430`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -42,37 +42,37 @@
 17. После RUN фиксировать общую воронку и фактическую статистику discovery-lanes. Если lane-level метрики не были сохранены, их не реконструировать и не придумывать; исправить инструментацию на следующем RUN.
 18. Не выполнять outreach, письма, отклики, подготовку рассылок или отправку сообщений.
 
-## Последний подтверждённый RUN — N5K-20260826-429
+## Последний подтверждённый RUN — N5K-20260826-430
 
-Baseline перед RUN: **385 / 385**.  
-Фактически обработано **18** разных raw-кандидатов; целевые 300–500 не достигнуты.  
-Воронка: discovered **18** → fast gate **5** → size **3** → legal **2** → signal **2** → LPR **1** → contact **1** → qualified **1** → physically integrated **1**.  
-Duplicates: **0**. Excluded: **17**.
+Baseline перед RUN: **386 / 386**.  
+Фактически обработано **14** разных raw-кандидатов; целевые 300–500 не достигнуты.  
+Воронка: discovered **14** → fast gate **4** → size **3** → legal **2** → signal **2** → LPR **2** → contact **2** → qualified **2** → physically integrated **2**.  
+Duplicates: **4**. Excluded: **8**.
 
-Добавлена:
-- **Три Точки Мануфактуринг / Three Points Manufacturing**, ООО «ТРИ ТОЧКИ МАНУФАКТУРИНГ», ИНН `5717007055`, ОГРН `1215700003639`, Lead ID `N5K-0538`.
+Добавлены:
+- **Терика Восток / TERIKA**, ООО «ТЕРИКА ВОСТОК», ИНН `2807016612`, ОГРН `1252800004490`, Lead ID `N5K-0539`;
+- **Пермский завод грузовой техники / ПЗГТ**, АО «ПЕРМСКИЙ ЗАВОД ГРУЗОВОЙ ТЕХНИКИ», ИНН `5916031052`, ОГРН `1025901843880`, Lead ID `N5K-0540`.
 
-Итог physical canonical/contactable: **386 / 386**.  
+Итог physical canonical/contactable: **388 / 388**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Staged: **0**. Outreach: **0**.
 
-### Discovery-lanes RUN 429
+### Discovery-lanes RUN 430
 
 - HH/job-board: raw **1**, duplicate/early reject **1**, qualified **0**;
-- other job boards: raw **1**, duplicate/early reject **1**, qualified **0**;
-- industry catalogs: raw **3**, duplicate/early reject **2**, qualified **1**;
-- regional business catalogs/news: raw **2**, duplicate/early reject **2**, qualified **0**;
-- growth/expansion/investment news: raw **4**, duplicate/early reject **3**, qualified **1**;
-- official company sites/news: raw **2**, duplicate/early reject **1**, qualified **1**;
+- other job boards: raw **1**, duplicate/early reject **0**, qualified **1**;
+- industry catalogs: raw **2**, duplicate/early reject **1**, qualified **1**;
+- regional business catalogs/news: raw **2**, duplicate/early reject **1**, qualified **1**;
+- growth/expansion/investment news: raw **3**, duplicate/early reject **1**, qualified **2**;
+- official company sites/news: raw **2**, duplicate/early reject **0**, qualified **2**;
 - Telegram/VK/YouTube/owner publications: raw **1**, duplicate/early reject **1**, qualified **0**;
 - ratings/awards/accelerators/clubs: raw **1**, duplicate/early reject **1**, qualified **0**;
-- franchise/dealer catalogs: raw **1**, duplicate/early reject **1**, qualified **0**;
-- segment expansion search: raw **2**, duplicate/early reject **2**, qualified **0**.
+- franchise/dealer catalogs: raw **0**, duplicate/early reject **0**, qualified **0**;
+- segment expansion search: raw **1**, duplicate/early reject **1**, qualified **0**.
 
-Один и тот же qualified, подтверждённый несколькими lanes, считается один раз глобально. Узкое место RUN 429 — объём аудируемого low-overlap discovery; лучший новый сигнал пришёл из свежего industrial growth/expansion потока.
+Один и тот же qualified, подтверждённый несколькими lanes, считается один раз глобально. Узкое место RUN 430 — объём аудируемого low-overlap discovery; лучший фактический выход дали growth/expansion, industry и regional источники.
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260826-420`: 373/373, +2, PASS, orphan 0/0.
 - `N5K-20260826-421`: 375/375, +2, PASS, orphan 0/0.
 - `N5K-20260826-422`: 377/377, +2, PASS, orphan 0/0.
 - `N5K-20260826-423`: 380/380, +3, PASS, orphan 0/0.
@@ -82,11 +82,4 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260826-427`: 384/384, +1, PASS, orphan 0/0.
 - `N5K-20260826-428`: 385/385, +1, PASS, orphan 0/0.
 - `N5K-20260826-429`: 386/386, +1, PASS, orphan 0/0.
-
-
-## Latest verified run N5K-20260826-430
-Canonical/contactable: 388/388. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260826-430
-Canonical/contactable: 388/388. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+- `N5K-20260826-430`: 388/388, +2, PASS, orphan 0/0.
