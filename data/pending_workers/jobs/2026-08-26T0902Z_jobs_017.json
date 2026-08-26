@@ -1,0 +1,121 @@
+{
+  "worker_lane": "jobs",
+  "created_at": "2026-08-26T09:02:00+03:00",
+  "source_head_sha": "1216e47d8ed8b77a7d8da8d5aeecdd1ef4785ade",
+  "source_canonical_run": "N5K-20260826-423",
+  "source_canonical_count": 380,
+  "source_contactable_count": 380,
+  "source_integrity": "PASS",
+  "source_orphan_contacts": 0,
+  "source_orphan_evidence": 0,
+  "canonical_state_modified": false,
+  "outreach_performed": false,
+  "raw_distinct_employers_count": 40,
+  "deep_check_count": 1,
+  "qualified_count": 1,
+  "raw_employers": [
+    "ООО Кристалл (Новосибирск)",
+    "AYS GROUP",
+    "ООО Амальгама",
+    "Семенова Виолета Владимировна / вакансия производственной компании",
+    "Яндекс Крауд: Пешеходы",
+    "Международный Центр Здоровья",
+    "Промышленная компания BRUMEX",
+    "ООО Перспектива (Самара)",
+    "ООО МЦ Открытие",
+    "Электроклуб",
+    "ООО А-Строй",
+    "ООО Адреса",
+    "ЭФКО",
+    "СНС, Группа компаний",
+    "ТСК, Группа компаний",
+    "ООО КонсалтикаПлюс",
+    "ООО Форс (Самара)",
+    "ООО Автоллион",
+    "ИП Фоминых Дмитрий Михайлович",
+    "ООО Регионстройсервис",
+    "Нужные люди",
+    "ООО Т мотор",
+    "НЭТЕР",
+    "TeamKadr",
+    "ООО Урман Билд",
+    "Nude Story",
+    "KDL",
+    "ООО Гермес-Урал",
+    "ООО УК ФЦБ",
+    "ООО Уральская палата судебной экспертизы",
+    "ООО Белоярский Трубный Завод",
+    "ООО Точка Роста",
+    "HR ENGINEERING",
+    "ООО Транспортные Технологии - Екатеринбург",
+    "ООО Муравейник",
+    "ООО Адванта-М Екатеринбург",
+    "Торговый дом ШКОЛЬНИК",
+    "HD LED TECH / ООО ЭЙЧДИ",
+    "ООО Профресурс (вакансия коммерческого директора)",
+    "ООО Саприм"
+  ],
+  "raw_sources": [
+    "https://novosibirsk.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+    "https://samara.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+    "https://ekaterinburg.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+    "https://ekaterinburg.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
+    "https://hh.ru/vacancies/kommercheskiy_direktor",
+    "https://hh.ru/vacancies/menedzher_po_proizvodstvu",
+    "https://moskva.jobrun.ru/руководитель-отдела-продаж-на-маркетплейсах-wildberries-ozon-работа/м-калужская"
+  ],
+  "fast_gate_notes": "Raw pool was employer-deduplicated at collection level. Known recent canonical/worker companies such as РСТ Энерго, АНЭП and Таливенда were not re-used. Most raw employers were not sent into deep-check because the search-card evidence was insufficient for a strong low-cost private-company + scale + S1-S3 hypothesis, or the employer was an intermediary/large corporation/otherwise outside the high-priority profile.",
+  "qualified": [
+    {
+      "brand": "HD LED TECH / HDLT",
+      "legal_name": "ООО ЭЙЧДИ",
+      "inn": "7724865932",
+      "ogrn": "1137746167173",
+      "region": "Москва",
+      "website": "https://hdlt.ru/",
+      "legal_status": "Действующее российское частное ООО",
+      "legal_evidence_url": "https://companies.rbc.ru/id/1137746167173-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-ejchdi/",
+      "scale": "Выручка 1,60 млрд руб. за 2025 год; 47 сотрудников по актуальному профилю; основной ОКВЭД — производство прочего электрического оборудования.",
+      "scale_evidence_urls": [
+        "https://www.tbank.ru/business/contractor/legal/1137746167173/",
+        "https://firmoteka.ru/7724865932"
+      ],
+      "signal_level": "S1",
+      "signal_date": "2026-07-10",
+      "signal": "HD LED TECH искал руководителя отдела продаж LED-экранов; в описании компания прямо указывает задачу настроить систему продаж и повысить результат коммерческого направления. Дополнительно актуальная региональная вакансия описывает развитие коммерческого направления B2B медиафасадов.",
+      "signal_evidence_urls": [
+        "https://moskva.jobrun.ru/руководитель-отдела-продаж-на-маркетплейсах-wildberries-ozon-работа/м-калужская",
+        "https://bebee.com/ru/jobs/b2b-hd-led-tech--techmap_ru_136253659"
+      ],
+      "lpr": "Гомбожапов Зорикто Георгиевич",
+      "lpr_role": "Генеральный директор и совладелец ООО ЭЙЧДИ (25%)",
+      "owners": [
+        "Аксенов Илья Сергеевич — 50%",
+        "Гомбожапов Зорикто Георгиевич — 25%",
+        "Крючков Михаил Александрович — совладелец"
+      ],
+      "lpr_evidence_url": "https://companies.rbc.ru/amp/ogrn/1137746167173/",
+      "contact_route": {
+        "phone": "8 (495) 215-28-75",
+        "email": "info@hdlt.ru",
+        "route": "Официальный отдел продаж HDLT; при обращении просить передать материал генеральному директору/коммерческому руководству.",
+        "source": "https://hdlt.ru/kontaktyi/"
+      },
+      "brand_legal_evidence_url": "https://hdlt.ru/assets/template/upload/documents/HDLT_rec.pdf",
+      "dedup": {
+        "keys": [
+          "INN:7724865932",
+          "OGRN:1137746167173",
+          "LEGAL:ООО ЭЙЧДИ",
+          "BRAND_DOMAIN:HD LED TECH|hdlt.ru"
+        ],
+        "repository_exact_inn_search_before_stage": "NO_MATCH",
+        "repository_search_head": "1216e47d8ed8b77a7d8da8d5aeecdd1ef4785ade"
+      },
+      "qualification": "QUALIFIED",
+      "consulting_hypothesis": "Систематизация и масштабирование B2B-продаж: единая управляемая воронка по региональной сети, KPI/CRM, стандарты работы руководителей продаж и повышение эффективности коммерческого блока."
+    }
+  ],
+  "rejected_deep_checks": [],
+  "notes": "Only fully verified candidates are staged as qualified. This file is worker-only staging and must be re-deduplicated by the canonical writer immediately before any integration. No outreach performed."
+}
