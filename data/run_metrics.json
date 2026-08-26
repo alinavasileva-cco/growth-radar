@@ -1,91 +1,59 @@
 {
-  "generated_at": "2026-08-26T18:58:55+03:00",
+  "generated_at": "2026-08-26T19:57:59+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260826-433",
-  "current_run_id": "N5K-20260826-433",
+  "latest_completed_run_id": "N5K-20260826-434",
+  "current_run_id": "N5K-20260826-434",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 394,
-  "contactable_verified": 394,
+  "canonical_pool_verified": 401,
+  "contactable_verified": 401,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4606,
+  "remaining_to_target": 4599,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_433": {
-    "raw_discovered": 14,
-    "fast_gate_passed": 4,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "physically_integrated": 2,
-    "duplicates": 3,
-    "excluded": 9,
+  "run_434": {
+    "raw_discovered": 140,
+    "fast_gate_passed": 8,
+    "size_check_passed": 8,
+    "legal_match_passed": 8,
+    "signal_confirmed": 8,
+    "lpr_identified": 8,
+    "contact_route_found": 8,
+    "qualified": 7,
+    "physically_integrated": 7,
+    "duplicates": 1,
+    "excluded": 132,
     "lane_metrics": [
       {
-        "lane": "HH/job-board",
-        "raw": 0,
-        "duplicates_or_early_rejects": 0,
-        "qualified": 0
+        "lane": "jobs worker",
+        "raw": 80,
+        "duplicates_or_early_rejects": 79,
+        "qualified": 0,
+        "note": "Worker-qualified iSmart is already canonical N5K-0384; lane raw is worker-reported and is not added to the global unique minimum because cross-worker raw overlap is not fully enumerable."
       },
       {
-        "lane": "other job boards",
-        "raw": 1,
-        "duplicates_or_early_rejects": 1,
-        "qualified": 0
+        "lane": "industry worker",
+        "raw": 140,
+        "duplicates_or_early_rejects": 133,
+        "qualified": 2,
+        "note": "140 consecutive distinct Metalloobработка-2026 exhibitors; this is the auditable global unique-raw lower bound used for RUN discovered."
       },
       {
-        "lane": "industry catalogs",
-        "raw": 2,
-        "duplicates_or_early_rejects": 1,
-        "qualified": 1
+        "lane": "growth/news worker",
+        "raw": 22,
+        "duplicates_or_early_rejects": 19,
+        "qualified": 1,
+        "note": "Laser Systems overlaps industry worker and is globally counted once; RTP remains net-new."
       },
       {
-        "lane": "regional business catalogs/news",
-        "raw": 2,
-        "duplicates_or_early_rejects": 2,
-        "qualified": 0
-      },
-      {
-        "lane": "growth/expansion/investment news",
-        "raw": 4,
-        "duplicates_or_early_rejects": 2,
-        "qualified": 2
-      },
-      {
-        "lane": "official company sites/news",
-        "raw": 2,
-        "duplicates_or_early_rejects": 0,
-        "qualified": 2
-      },
-      {
-        "lane": "Telegram/VK/YouTube/owner publications",
-        "raw": 0,
-        "duplicates_or_early_rejects": 0,
-        "qualified": 0
-      },
-      {
-        "lane": "ratings/awards/accelerators/clubs",
-        "raw": 1,
-        "duplicates_or_early_rejects": 1,
-        "qualified": 0
-      },
-      {
-        "lane": "franchise/dealer catalogs",
-        "raw": 0,
-        "duplicates_or_early_rejects": 0,
-        "qualified": 0
-      },
-      {
-        "lane": "segment expansion search",
-        "raw": 2,
-        "duplicates_or_early_rejects": 2,
-        "qualified": 0
+        "lane": "official/owner worker",
+        "raw": 80,
+        "duplicates_or_early_rejects": 76,
+        "qualified": 4,
+        "note": "Worker-reported distinct entities; raw not summed into global discovered because cross-worker raw overlap cannot be proven from persisted staging."
       }
     ]
   }

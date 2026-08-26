@@ -1,0 +1,43 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0547,N5K-0547-E01,LEGAL,"ООО «ЗАВОД РОБОТОВ», ИНН 7449141049, ОГРН 1207400007638, действует.",https://check.tochka.com/company/1207400007638/,Точка,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0547,N5K-0547-E02,SCALE,"Выручка 2,47 млрд ₽ и 286 сотрудников за 2025 год.",https://vaskov.pro/company/7449141049,ГИР БО / Госаналитика,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0547,N5K-0547-E03,SIGNAL,Масштабирование серийного производства и план второй площадки.,https://crp.gov.ru/news/promyshlennost-chelyabinskoy-oblasti-v-2026-godu-budet-razvivatsya-s-aktsentom-na-robotizatsiyu-i-ts/,ЦРП,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0547,N5K-0547-E04,LPR,Актуальный генеральный директор с 08.07.2026 — Николай Балашов.,https://check.tochka.com/company/1207400007638/,Точка,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0547,N5K-0547-E05,CONTACT,Официальные sales email и телефоны опубликованы компанией.,https://robotfactory.ru/kontakty/,RobotFactory,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0547,N5K-0547-E06,BRAND_LEGAL,RobotFactory / Завод роботов связан с ООО «ЗАВОД РОБОТОВ».,https://robotfactory.ru/,RobotFactory,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0548,N5K-0548-E01,LEGAL,"АО «ЛАЗЕРНЫЕ СИСТЕМЫ», ИНН 7819039902, ОГРН 1187847309913, действует.",https://companies.rbc.ru/id/1187847309913-ao-lazernyie-sistemyi/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0548,N5K-0548-E02,SCALE,"Выручка 1,483069 млрд ₽ за 2025 год.",https://www.lsystems.ru/investors/,Laser Systems — инвесторам,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0548,N5K-0548-E03,SIGNAL,Запущен проект расширения производства в ОЭЗ Санкт-Петербурга.,https://www.gov.spb.ru/gov/otrasl/c_industrial_and_trade/news/316728/,Правительство Санкт-Петербурга,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0548,N5K-0548-E04,LPR,Генеральный директор — Дмитрий Васильев.,https://www.lsystems.ru/management/,Laser Systems,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0548,N5K-0548-E05,CONTACT,Официальные телефон и sales/office email.,https://www.lsystems.ru/contacts/,Laser Systems,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0548,N5K-0548-E06,BRAND_LEGAL,Бренд Laser Systems связан с АО «ЛАЗЕРНЫЕ СИСТЕМЫ».,https://www.lsystems.ru/,Laser Systems,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0549,N5K-0549-E01,LEGAL,"ООО «РТП», ИНН 5011024884, ОГРН 1055002006190, действует.",https://companies.rbc.ru/id/1055002006190-ooo-rtp/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0549,N5K-0549-E02,SCALE,"Около 6,97 млрд ₽ выручки за 2025 год и около 730 сотрудников.",https://saby.ru/profile/5011024884-501101001,Saby,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0549,N5K-0549-E03,SIGNAL,Запуск нового производственно-складского комплекса и четвёртого завода.,https://rtp.ru/news/7923-rtp-otkryvaet-proizvodstvenno-skladskoy-kompleks-v-ekaterinburge/,RTP,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0549,N5K-0549-E04,LPR,Генеральный директор — Максим Юров.,https://companies.rbc.ru/id/1055002006190-ooo-rtp/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0549,N5K-0549-E05,CONTACT,"Официальные sales email, телефон и форма.",https://rtp.ru/contacts/,RTP,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0549,N5K-0549-E06,BRAND_LEGAL,Бренд RTP связан с ООО «РТП».,https://rtp.ru/,RTP,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0550,N5K-0550-E01,LEGAL,"ООО «ЭНДО СТАРС», ИНН 7804409519, ОГРН 1097847033888, действует.",https://firmoteka.ru/7804409519,Фирмотека,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0550,N5K-0550-E02,SCALE,"Выручка 1,86 млрд ₽ и 74 сотрудника за 2025 год.",https://firmoteka.ru/7804409519,Фирмотека / ГИР БО,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0550,N5K-0550-E03,SIGNAL,Проект первого российского эндоскопического завода расширен в 2026 году.,https://companies.rbc.ru/news/cfnquq7Pll/v-peterburge-postroyat-zavod-po-proizvodstvu-izdelij-dlya-gibkoj-endoskopii/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0550,N5K-0550-E04,LPR,Генеральный директор и учредитель 75% — Вадим Самарец.,https://companies.rbc.ru/id/1097847033888-endo-stars/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0550,N5K-0550-E05,CONTACT,"Официальные телефоны, email и форма сайта.",https://endo-stars.ru/contacts/,Endo Stars,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0550,N5K-0550-E06,BRAND_LEGAL,Бренд Endo Stars связан с ООО «ЭНДО СТАРС».,https://endo-stars.ru/about/,Endo Stars,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0551,N5K-0551-E01,LEGAL,"ООО «УПТК-65», ИНН 7801485085, ОГРН 1089848063931, действует.",https://companies.rbc.ru/id/1089848063931-uptk-65/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0551,N5K-0551-E02,SCALE,"Выручка 4,435142 млрд ₽ за 2025 год.",https://companies.rbc.ru/id/1089848063931-uptk-65/,РБК Компании / ГИР БО,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0551,N5K-0551-E03,SIGNAL,Строительство нового производственно-складского комплекса в Ленинградской области.,https://companies.rbc.ru/news/7qUe8tScwM/uptk-65-postroit-v-lenoblasti-novyij-metallopererabatyivayuschij-kompleks/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0551,N5K-0551-E04,LPR,Генеральный директор и учредитель — Александр Малышев.,https://companies.rbc.ru/id/1089848063931-uptk-65/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0551,N5K-0551-E05,CONTACT,Официальные телефон и email опубликованы компанией.,https://uptk65.ru/kontakty/,УПТК-65,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0551,N5K-0551-E06,BRAND_LEGAL,Бренд УПТК-65 связан с ООО «УПТК-65».,https://uptk65.ru/,УПТК-65,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0552,N5K-0552-E01,LEGAL,"ООО «ТЕРРА-ТОК», ИНН 6686036344, ОГРН 1136686032702, действует.",https://companies.rbc.ru/id/1136686032702-terra-tok/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0552,N5K-0552-E02,SCALE,"Выручка 784,67 млн ₽ за 2025 год.",https://companies.rbc.ru/id/1136686032702-terra-tok/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0552,N5K-0552-E03,SIGNAL,Ввод нового оборудования и расширение производственных мощностей в 2026 году.,https://companies.rbc.ru/news/Sarqbap4GC/terra-tok-zapuskaet-novoe-oborudovanie-dlya-rasshireniya-proizvodstva/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0552,N5K-0552-E04,LPR,Директор и единственный учредитель — Александр Мыкальников.,https://companies.rbc.ru/id/1136686032702-terra-tok/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0552,N5K-0552-E05,CONTACT,Официальные sales email и телефоны.,https://terra-tok.ru/,Terra-Tok,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0552,N5K-0552-E06,BRAND_LEGAL,Бренд Terra-Tok связан с ООО «ТЕРРА-ТОК».,https://terra-tok.ru/,Terra-Tok,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0553,N5K-0553-E01,LEGAL,"ООО «КОРОНА», ИНН 0269021279, ОГРН 1040203559065, действует.",https://companies.rbc.ru/id/1040203559065-mebelnaya-fabrika-korona/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0553,N5K-0553-E02,SCALE,"Около 2,3 млрд ₽ выручки за 2025 год; крупная партнёрская и складская сеть.",https://companies.rbc.ru/id/1040203559065-mebelnaya-fabrika-korona/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0553,N5K-0553-E03,SIGNAL,"Ввод 8,8 тыс. м² новых производственных и складских площадей в 2026 году.",https://companies.rbc.ru/news/Mtc2s0MqMm/mebelnaya-fabrika-korona-rasshiryaet-proizvodstvo/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0553,N5K-0553-E04,LPR,Директор и единственный учредитель — Рамиль Мамлеев.,https://companies.rbc.ru/id/1040203559065-mebelnaya-fabrika-korona/,РБК Компании,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0553,N5K-0553-E05,CONTACT,Официальные телефоны и email фабрики.,https://matras-korona.ru/,Корона,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
+N5K-0553,N5K-0553-E06,BRAND_LEGAL,Бренд мебельной фабрики Корона связан с ООО «КОРОНА».,https://matras-korona.ru/,Корона,2026-08-26T19:57:59+03:00,HIGH,N5K-20260826-434,new_5000
