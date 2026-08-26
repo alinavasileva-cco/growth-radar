@@ -1,0 +1,152 @@
+{
+  "worker": "industry",
+  "run_at": "2026-08-26T19:37:05+03:00",
+  "source_head_sha": "b1170aa7cffdbb82ac3b7a7287457b8bef784d51",
+  "config_version": "2026-08-26T17:24:00+03:00",
+  "canonical_baseline_seen": 394,
+  "write_scope": "staging_only",
+  "outreach": 0,
+  "raw_sources": [
+    {
+      "source": "Металлообработка-2026 — low-overlap alphabetic exhibitor window",
+      "url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/list",
+      "raw": 140,
+      "selection_note": "140 consecutive distinct exhibitor rows from the current catalog window; prior industry qualified keys were excluded before deep-check"
+    }
+  ],
+  "funnel": {
+    "raw_discovered": 140,
+    "fast_gate_pass": 7,
+    "size_pass": 4,
+    "legal_pass": 3,
+    "signal_pass": 2,
+    "lpr_pass": 2,
+    "contact_pass": 2,
+    "qualified": 2,
+    "duplicates_confirmed": 0,
+    "early_reject_or_not_prioritized": 133
+  },
+  "qualified_candidates": [
+    {
+      "brand": "Завод роботов / RobotFactory",
+      "legal_name": "ООО \"ЗАВОД РОБОТОВ\"",
+      "inn": "7449141049",
+      "ogrn": "1207400007638",
+      "country": "Россия",
+      "city": "Челябинск",
+      "private_company": true,
+      "status": "ACTIVE",
+      "status_checked_at": "2026-08-25",
+      "size": {
+        "revenue_2025_rub": 2470028000,
+        "revenue_growth_2025_pct": 202.13,
+        "employees_2025": 286,
+        "sources": [
+          "https://b2b.house/company/OOO-ZAVOD-ROBOTOV_f7255f80-1865-4968-bc59-82a731ae030d/",
+          "https://companium.ru/id/1207400007638-zavod-robotov"
+        ]
+      },
+      "signal": {
+        "type": "S1/S2_CAPACITY_EXPANSION_RAPID_GROWTH",
+        "date": "2026-03-24",
+        "summary": "Производитель масштабирует серийное производство промышленных роботов: выручка 2025 выросла более чем втрое до 2,47 млрд руб.; ранее заявлен план второй производственной площадки и рост мощности до 2000 роботов к 2027 году. В 2025 году завод планировал выпуск 850 роботов против 250 с момента запуска.",
+        "urls": [
+          "https://crp.gov.ru/news/promyshlennost-chelyabinskoy-oblasti-v-2026-godu-budet-razvivatsya-s-aktsentom-na-robotizatsiyu-i-ts/",
+          "https://robotunion.ru/media/news/tpost/t6z93n6yc1-zavod-robotov-zapustil-v-chelyabinske-pe",
+          "https://www.vesti.ru/article/4452250",
+          "https://www.kommersant.ru/doc/7754081"
+        ]
+      },
+      "lpr": {
+        "name": "Балашов Николай Викторович",
+        "role": "генеральный директор",
+        "since": "2026-07-08",
+        "owner": "Гартунг Марина Вениаминовна, 100%",
+        "sources": [
+          "https://saby.ru/profile/7449141049-744901001",
+          "https://check.tochka.com/company/1207400007638/"
+        ],
+        "freshness_note": "Использован актуальный директор с 08.07.2026; более старые источники с Александром Горькушей не используются для решения."
+      },
+      "contact": {
+        "route": "sales@robotfactory.ru / info@robotfactory.ru / +7 (351) 216-67-00 / отдел продаж +7 (982) 360-13-09, +7 (982) 360-13-15",
+        "website": "https://robotfactory.ru/",
+        "sources": [
+          "https://robotfactory.ru/kontakty/",
+          "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/exhibitors/382608?stand=1E050"
+        ]
+      },
+      "dedup_keys": {
+        "inn": "7449141049",
+        "ogrn": "1207400007638",
+        "legal_name": "ООО ЗАВОД РОБОТОВ",
+        "brand_domain": "Завод роботов|robotfactory.ru"
+      },
+      "dedup_repo_search": "NO_MATCH_FOUND_AT_SOURCE_HEAD",
+      "risk_notes": [
+        "Учредитель Марина Гартунг отмечается в доступном контрагентском профиле как лицо из санкционного списка; CURRENT_WORKING_CONFIG не содержит санкционного exclusion, поэтому это сохранено как risk note и не превращено worker-ом в новое правило."
+      ],
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "Лазерные системы / Laser Systems",
+      "legal_name": "АО \"ЛАЗЕРНЫЕ СИСТЕМЫ\"",
+      "inn": "7819039902",
+      "ogrn": "1187847309913",
+      "country": "Россия",
+      "city": "Санкт-Петербург",
+      "private_company": true,
+      "status": "ACTIVE",
+      "status_checked_at": "2026-08-03",
+      "size": {
+        "revenue_2025_rub": 1483069000,
+        "revenue_growth_2025_pct": 80.0,
+        "employees_current_reported": "101-250 / company site; 132 in industrial directory updated 2026-02-25",
+        "sources": [
+          "https://www.lsystems.ru/investors/",
+          "https://www.lsystems.ru/",
+          "https://industrials.ru/proizvoditel/20714-lazernye-sistemy"
+        ]
+      },
+      "signal": {
+        "type": "S1/S2_CAPEX_EXPANSION",
+        "date": "2026-06-03",
+        "summary": "В 2026 году компания запустила инвестиционный проект масштабного расширения производства в ОЭЗ Санкт-Петербург. Участок увеличивается с 1,4 до 2,4 га; планируется новый административно-производственный комплекс 6000 кв. м и около 1 млрд руб. инвестиций до 2030 года. Цель — вдвое увеличить выпуск основных изделий и на 50% выпуск систем промышленной безопасности; выручка 2025 выросла на 80% до 1,483 млрд руб.",
+        "urls": [
+          "https://www.gov.spb.ru/gov/otrasl/c_industrial_and_trade/news/316728/",
+          "https://spb.vedomosti.ru/business/articles/2026/05/08/1196014-lazernim-sistemam-odobrili",
+          "https://www.kommersant.ru/doc/8652339"
+        ]
+      },
+      "lpr": {
+        "name": "Дмитрий Васильев",
+        "role": "генеральный директор",
+        "board_chair": "Алексей Борейшо",
+        "sources": [
+          "https://www.lsystems.ru/management/",
+          "https://www.lsystems.ru/about/"
+        ]
+      },
+      "contact": {
+        "route": "sales@lsystems.ru / office@lsystems.ru / +7 (812) 612-02-88",
+        "website": "https://www.lsystems.ru/",
+        "source": "https://www.lsystems.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "7819039902",
+        "ogrn": "1187847309913",
+        "legal_name": "АО ЛАЗЕРНЫЕ СИСТЕМЫ",
+        "brand_domain": "Лазерные системы|lsystems.ru"
+      },
+      "dedup_repo_search": "NO_MATCH_FOUND_AT_SOURCE_HEAD",
+      "decision": "QUALIFIED"
+    }
+  ],
+  "notes": [
+    "Raw pool состоит из 140 разных карточек экспонентов текущего каталога Металлообработка-2026; строки выдачи не засчитывались повторно как отдельные компании.",
+    "Перед deep-check исключены ключи ранее staged industry-кандидатов Униматик, СтанкоМашКомплекс и Финвал-Техно.",
+    "Для Завода роботов устаревшие сведения о прежнем генеральном директоре не использованы: на август 2026 актуальный генеральный директор — Николай Балашов с 08.07.2026.",
+    "Canonical master/contactable, contacts/evidence, runtime и campaign этим worker не изменялись.",
+    "Финальный canonical dedup должен быть повторен единственным canonical writer непосредственно перед интеграцией, так как main может измениться после source_head_sha."
+  ]
+}
