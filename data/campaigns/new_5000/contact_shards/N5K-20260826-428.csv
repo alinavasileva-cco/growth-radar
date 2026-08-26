@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0537,N5K-0537-C01,Семаргл / Semargl,7814454694,,Корпоративный маршрут,+7 (812) 702-10-21,phone,corporate,Semargl official catalog,https://www.semargl.pro/upload/medialibrary/f22/semargl-web.pdf,NO,HIGH,2026-08-26,Официальный корпоративный телефон,N5K-20260826-428,new_5000
+N5K-0537,N5K-0537-C02,Семаргл / Semargl,7814454694,,Корпоративный маршрут,info@semargl.pro,email,corporate,Semargl official catalog,https://www.semargl.pro/upload/medialibrary/f22/semargl-web.pdf,NO,HIGH,2026-08-26,Официальный корпоративный email,N5K-20260826-428,new_5000
+N5K-0537,N5K-0537-C03,Семаргл / Semargl,7814454694,,Корпоративный маршрут,https://semargl.pro/,web,corporate,Semargl official website,https://semargl.pro/,NO,HIGH,2026-08-26,Официальный сайт / маршрут обращения,N5K-20260826-428,new_5000
