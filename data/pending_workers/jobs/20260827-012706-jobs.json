@@ -1,0 +1,112 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T01:27:06+03:00",
+    "source_head_sha": "1af4bff7ccb3d320117022844ae3e69d81a0eb86",
+    "source_run": "N5K-20260827-439",
+    "source_canonical_count": 416,
+    "source_contactable_count": 416,
+    "source_integrity": "PASS",
+    "source_orphan_contacts": 0,
+    "source_orphan_evidence": 0,
+    "canonical_state_modified": false,
+    "outreach_performed": false,
+    "funnel": {
+      "raw_unique_employers": 80,
+      "fast_gate_passed": 4,
+      "deep_checked": 4,
+      "size_passed": 3,
+      "legal_passed": 2,
+      "signal_passed": 1,
+      "lpr_passed": 1,
+      "contact_passed": 1,
+      "qualified": 1,
+      "duplicates_or_early_rejects": 76
+    },
+    "discovery_notes": "80 distinct employer-level identities were surfaced after collapsing obvious repeated vacancies/employer names across current job-board aggregation pages sourced from hh.ru, Zarplata.ru, SuperJob, Rabota.ru, Habr Career and TrudVsem. Broad jobs search showed >70% duplicate/early-reject saturation, so discovery was rotated away from repeated HH-heavy results toward current multi-source listings. Only candidates with a plausible target-scale fit and strong S1-S3 signal proceeded to deep check. Rejected candidates are not persisted in this qualified-only staging file.",
+    "raw_source_urls": [
+      "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh",
+      "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh/page/2?per-page=50"
+    ]
+  },
+  "qualified": [
+    {
+      "brand": "Штрих Ру / Shtrih.ru",
+      "legal_name": "ООО \"ШТРИХ РУ\"",
+      "inn": "6316174702",
+      "ogrn": "1126316003989",
+      "legal_status": "Действующая компания",
+      "region": "Самарская область",
+      "city": "Самара",
+      "operating_locations": ["Самара", "Москва", "Тольятти"],
+      "segment": "B2B-коммуникации, полиграфия, мерч и сувенирная продукция; собственное полиграфическое производство",
+      "website": "https://shtrih.ru/",
+      "current_scale": {
+        "revenue_2025_rub": 242800000,
+        "employees_reference": 56,
+        "employees_reference_year": 2024,
+        "scale_note": "2025 revenue is reported in a current 2025 industry/financial comparison sourced from FNS/Rosstat data; the latest independently retrievable headcount table shows 56 employees for 2024. The company is listed in the SME register as a small business."
+      },
+      "signal_level": "S1",
+      "signal_date": "2026-08-07",
+      "signal_title": "Руководитель отдела продаж в коммуникационное агентство (сувенирная продукция, полиграфия, мерч)",
+      "signal_summary": "Свежая вакансия руководителя отдела продаж для B2B-направления мерча/полиграфии. В актуальной job-board выдаче компания требует успешного руководства отделом продаж и управления командой; параллельная карточка той же роли описывает функциональное и оперативное руководство отделом продаж и контроль планов. Это прямой сигнал на усиление и систематизацию коммерческой функции.",
+      "signal_source_url": "https://zarplata.ru/vacancy/136005941",
+      "signal_verification_url": "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh/page/2?per-page=50",
+      "owner": "Штрих Станислав Наумович",
+      "owner_share": "100%",
+      "ceo": "Штрих Станислав Наумович",
+      "lpr": "Штрих Станислав Наумович",
+      "lpr_role": "Директор и единственный учредитель ООО \"ШТРИХ РУ\"",
+      "contact_route": {
+        "primary_phone": "8 (800) 600-33-02",
+        "moscow_phone": "8 (499) 490-50-90",
+        "samara_phone": "8 (846) 265-80-80",
+        "email": "sales@shtrih.ru",
+        "form_url": "https://shtrih.ru/contacts/",
+        "route_type": "Официальный корпоративный телефон + корпоративный email + форма сообщения на официальном сайте",
+        "practical_route": "Официальные коммерческие контакты компании позволяют обратиться в центральный офис и запросить передачу обращения директору/собственнику; личный контакт ЛПР не выдумывался."
+      },
+      "consulting_hypothesis": "Гипотеза worker: систематизация B2B-sales для A/A+ клиентов — управление воронкой, KPI/план-факт, развитие команды и масштабирование коммерческих процессов.",
+      "dedup_keys": {
+        "inn": "6316174702",
+        "ogrn": "1126316003989",
+        "legal_name": "ООО ШТРИХ РУ",
+        "brand_domain": "Штрих Ру|shtrih.ru"
+      },
+      "dedup_check": {
+        "checked_against_repository_at_head": "1af4bff7ccb3d320117022844ae3e69d81a0eb86",
+        "inn_match_found": false,
+        "ogrn_match_found": false,
+        "brand_domain_match_found": false
+      },
+      "evidence": [
+        {
+          "type": "BRAND_LEGAL_CONTACT",
+          "claim": "Официальный сайт связывает бренд Штрих с ООО Штрих Ру, ИНН 6316174702, и публикует официальные телефоны, email и форму связи.",
+          "url": "https://shtrih.ru/contacts/"
+        },
+        {
+          "type": "LEGAL_LPR",
+          "claim": "ООО ШТРИХ РУ действует; ИНН 6316174702, ОГРН 1126316003989; директор и 100% учредитель — Штрих Станислав Наумович.",
+          "url": "https://check.tochka.com/company/1126316003989/"
+        },
+        {
+          "type": "SCALE_2025",
+          "claim": "В текущей финансовой сравнительной выдаче по данным ФНС/Росстата ООО ШТРИХ РУ указано с выручкой 242,8 млн руб. за 2025 год.",
+          "url": "https://xfirm.ru/company/6316052937"
+        },
+        {
+          "type": "HEADCOUNT_REFERENCE",
+          "claim": "Последняя независимо извлекаемая таблица численности показывает 56 сотрудников за 2024 год; это используется как справочный, а не как более свежий 2025 факт.",
+          "url": "https://www.egrul-base.ru/company/1126316003989/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "7 августа 2026 опубликована вакансия руководителя отдела продаж коммуникационного агентства Штрих Ру в B2B-сегменте мерча/полиграфии.",
+          "url": "https://metasputnik.ru/job/promo/8898/moskva/vakansii-rukovoditel-otdela-prodazh/page/2?per-page=50"
+        }
+      ]
+    }
+  ]
+}
