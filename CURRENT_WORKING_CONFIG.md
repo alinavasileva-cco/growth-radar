@@ -92,3 +92,7 @@ Job-board lane насыщен (>70% duplicate+early reject), поэтому в �
 - `N5K-20260826-418`: 369/369, +1, PASS, orphan 0/0.
 - `N5K-20260826-419`: 371/371, +2, PASS, orphan 0/0.
 - `N5K-20260826-420`: 373/373, +2, PASS, orphan 0/0.
+
+
+## Latest verified run N5K-20260826-421
+Canonical/contactable: 375/375. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
