@@ -1,8 +1,171 @@
 {
-  "run_id": "N5K-20260826-434",
-  "updated_at": "2026-08-26T19:57:59+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260826-434 integrated physically; canonical/contactable 401/401; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260826-435",
+  "updated_at": "2026-08-26T21:18:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 129,
+    "fast_gate_passed": 4,
+    "size_check_passed": 4,
+    "legal_match_passed": 4,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 126
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs worker",
+      "raw": 80,
+      "duplicates_or_early_rejects": 79,
+      "qualified": 1,
+      "note": "80 distinct employers reported by worker; not summed into global discovered because full cross-worker raw overlap is not enumerable. KTB 1440 retained after fresh canonical verification."
+    },
+    {
+      "lane": "industry worker",
+      "raw": 129,
+      "duplicates_or_early_rejects": 129,
+      "qualified": 0,
+      "note": "129 distinct official-exhibitor candidates form the auditable global unique-raw lower bound. Worker-qualified LSP was rejected by canonical writer because the purported 2026 modernization source actually describes a 2015 event; stale signal excluded."
+    },
+    {
+      "lane": "growth/news worker",
+      "raw": 22,
+      "duplicates_or_early_rejects": 20,
+      "qualified": 2,
+      "note": "CNP Russia and Katusha Print retained after fresh 2026 verification; raw not summed into global discovered because cross-worker overlap cannot be fully proven."
+    }
+  ],
+  "qualified_staged_not_counted": 3,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0554",
+      "Brand": "КТБ 1440",
+      "Legal Name": "ООО «КОНСТРУКТОРСКО-ТЕХНОЛОГИЧЕСКОЕ БЮРО 1440»",
+      "INN": "9703194998",
+      "OGRN/OGRNIP": "1247700716163",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Инженерно-техническое проектирование / конструкторская и технологическая документация / промышленный B2B",
+      "Website": "https://ktb1440.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка 54,262 млн ₽ за 2025 год; собственник 100% Челпаченко Станислав Анатольевич; актуальная коммерческая вакансия предполагает кратный рост продаж.",
+      "Signal Level": "S1",
+      "Signal Summary": "Вакансия руководителя отдела продаж требует построить управляемую систему продаж: CRM-дисциплина, воронка, конверсия, регламенты, обучение, прогнозирование; цели испытательного периода включают удвоение конверсии и утроение объёма продаж.",
+      "Signal Date": "2026-07-07",
+      "Signal Source": "https://nesiditsa.ru/vacancy/134741677",
+      "Owner": "Челпаченко Станислав Анатольевич — 100%",
+      "CEO": "",
+      "LPR": "Челпаченко Станислав Анатольевич",
+      "LPR Role": "Собственник 100%; используется как ЛПР из-за расхождения свежих публичных профилей по исполнительному руководителю",
+      "Primary Phone": "+7 (499) 995-18-52",
+      "Primary Email": "zakaz@ktb1440.ru",
+      "HH Contact": "",
+      "Contact Form": "https://ktb1440.ru/",
+      "Contact Type": "Официальный корпоративный телефон + email + сайт; запрос перевода на собственника-ЛПР",
+      "Contact Source": "https://ktb1440.ru/",
+      "Consulting Hypothesis": "Систематизация B2B-продаж инженерных услуг: CRM-дисциплина, управление воронкой и конверсией, регламенты, KPI, прогнозирование и масштабирование отдела продаж.",
+      "contacts": [
+        {"channel":"phone","value":"+7 (499) 995-18-52","type":"CORPORATE_PHONE","source":"КТБ 1440","url":"https://ktb1440.ru/","is_lpr":false},
+        {"channel":"email","value":"zakaz@ktb1440.ru","type":"CORPORATE_EMAIL","source":"КТБ 1440","url":"https://ktb1440.ru/","is_lpr":false},
+        {"channel":"web","value":"https://ktb1440.ru/","type":"OFFICIAL_SITE_ROUTE","source":"КТБ 1440","url":"https://ktb1440.ru/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «КТБ 1440», ИНН 9703194998, ОГРН 1247700716163, действует.","url":"https://www.tbank.ru/business/contractor/legal/1247700716163/","source":"Т-Банк"},
+        {"type":"SCALE","claim":"Выручка 54,262 млн ₽ за 2025 год.","url":"https://www.tbank.ru/business/contractor/legal/1247700716163/","source":"Т-Банк"},
+        {"type":"SIGNAL","claim":"Актуальная вакансия РОП с задачей построения и кратного масштабирования sales-системы.","url":"https://nesiditsa.ru/vacancy/134741677","source":"Публичная вакансия"},
+        {"type":"LPR","claim":"Челпаченко Станислав Анатольевич — единственный собственник 100%.","url":"https://companies.rbc.ru/id/1247700716163-ooo-ktb-1440/","source":"РБК Компании"},
+        {"type":"CONTACT","claim":"Официальный телефон +7 (499) 995-18-52 и email zakaz@ktb1440.ru.","url":"https://ktb1440.ru/","source":"КТБ 1440"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт связывает бренд КТБ 1440 с ООО и публикует ИНН 9703194998 / ОГРН 1247700716163.","url":"https://ktb1440.ru/","source":"КТБ 1440"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0555",
+      "Brand": "CNP / CNP Russia",
+      "Legal Name": "ООО «СИЭНПИ РУС»",
+      "INN": "7733256341",
+      "OGRN/OGRNIP": "5157746005324",
+      "Region": "Москва / Московская область",
+      "City": "Москва / Солнечногорск",
+      "Segment": "Насосное оборудование / промышленный B2B / производство и дистрибуция",
+      "Website": "https://www.cnprussia.ru/",
+      "Revenue/Scale": "Действующее частное ООО; 157 сотрудников за 2025 год; новая производственно-складская площадка около 4 000 м² превосходит прежнюю по площади и производственным возможностям.",
+      "Signal Level": "S2",
+      "Signal Summary": "12 августа 2026 года СИЭНПИ РУС открыла новую производственную площадку в индустриальном парке «Есипово»; площадка около 4 000 м² и больше прежней по производственным возможностям.",
+      "Signal Date": "2026-08-19",
+      "Signal Source": "https://www.cnprussia.ru/press-center/news/torzhestvenno-otkryli-novuyu-proizvodstvennuyu-ploshchadku-v-esipovo/",
+      "Owner": "",
+      "CEO": "Прессель Евгений Вадимович",
+      "LPR": "Прессель Евгений Вадимович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (499) 703-35-23",
+      "Primary Email": "",
+      "HH Contact": "",
+      "Contact Form": "https://www.cnprussia.ru/about-company/contacts/",
+      "Contact Type": "Официальный корпоративный телефон + контактный раздел сайта",
+      "Contact Source": "https://www.cnprussia.ru/about-company/contacts/",
+      "Consulting Hypothesis": "Коммерческая загрузка новой производственной площадки: сегментация промышленного B2B, дилерский pipeline, key accounts, forecast и маржинальность продуктовых направлений.",
+      "contacts": [
+        {"channel":"phone","value":"+7 (499) 703-35-23","type":"CORPORATE_PHONE","source":"CNP Russia","url":"https://www.cnprussia.ru/about-company/contacts/","is_lpr":false},
+        {"channel":"web","value":"https://www.cnprussia.ru/about-company/contacts/","type":"CONTACT_FORM","source":"CNP Russia","url":"https://www.cnprussia.ru/about-company/contacts/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «СИЭНПИ РУС», ИНН 7733256341, ОГРН 5157746005324; действует; генеральный директор Прессель Евгений Вадимович.","url":"https://www.cnprussia.ru/about-company/contacts/","source":"CNP Russia"},
+        {"type":"SCALE","claim":"157 сотрудников за 2025 год; новая производственно-складская площадка около 4 000 м².","url":"https://b2b.house/company/OOO-SIENPI-RUS_c77dba70-7316-4bf7-899f-c7160c22d94b/","source":"B2B.house"},
+        {"type":"SIGNAL","claim":"В августе 2026 открыта новая производственная площадка в индустриальном парке «Есипово».","url":"https://www.cnprussia.ru/press-center/news/torzhestvenno-otkryli-novuyu-proizvodstvennuyu-ploshchadku-v-esipovo/","source":"CNP Russia"},
+        {"type":"LPR","claim":"Прессель Евгений Вадимович — генеральный директор.","url":"https://www.cnprussia.ru/about-company/contacts/","source":"CNP Russia"},
+        {"type":"CONTACT","claim":"Официальный телефон +7 (499) 703-35-23 и контактный раздел.","url":"https://www.cnprussia.ru/about-company/contacts/","source":"CNP Russia"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт CNP Russia публикует ООО «СИЭНПИ РУС», ИНН 7733256341, ОГРН 5157746005324.","url":"https://www.cnprussia.ru/about-company/contacts/","source":"CNP Russia"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0556",
+      "Brand": "Катюша / Katusha",
+      "Legal Name": "ООО «КАТЮША ПРИНТ»",
+      "INN": "9703037297",
+      "OGRN/OGRNIP": "1217700276804",
+      "Region": "Москва / Ленинградская область",
+      "City": "Москва / Всеволожский район",
+      "Segment": "Компьютеры и периферийное оборудование / принтеры и МФУ / B2B-B2G",
+      "Website": "https://katusha-it.ru/",
+      "Revenue/Scale": "Действующее ООО; выручка около 4,4 млрд ₽ по актуальному профилю; 165 сотрудников по проверке на 25.08.2026; инвестиционный проект второй площадки превышает 1 млрд ₽.",
+      "Signal Level": "S2",
+      "Signal Summary": "19 августа 2026 года подтверждён досрочный запуск второй производственной площадки в Ленинградской области; на площадке около 70 сотрудников с ростом до 90, проект расширяет производство принтеров и периферии.",
+      "Signal Date": "2026-08-19",
+      "Signal Source": "https://lenoblinvest.ru/blog/category/novosti/kompaniya-katyusha-dosrochno-zapustila-vtoruyu-proizvodstvennuyu-ploshchadku-v-lenoblasti/",
+      "Owner": "АО «ИТ ЭКОСИСТЕМА КАТЮША» — 100%",
+      "CEO": "Виноградов Максим Николаевич",
+      "LPR": "Виноградов Максим Николаевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (495) 120-11-25",
+      "Primary Email": "mail@katusha-it.ru",
+      "HH Contact": "",
+      "Contact Form": "https://katusha-it.ru/partagree",
+      "Contact Type": "Официальный корпоративный телефон + email + партнёрский маршрут",
+      "Contact Source": "https://katusha-it.ru/",
+      "Consulting Hypothesis": "Коммерческое масштабирование второй производственной площадки: партнёрская сеть, B2B/B2G pipeline, загрузка мощностей, forecast и экономика каналов.",
+      "contacts": [
+        {"channel":"phone","value":"+7 (495) 120-11-25","type":"CORPORATE_PHONE","source":"Катюша","url":"https://katusha-it.ru/","is_lpr":false},
+        {"channel":"email","value":"mail@katusha-it.ru","type":"CORPORATE_EMAIL","source":"Катюша","url":"https://katusha-it.ru/Media","is_lpr":false},
+        {"channel":"web","value":"https://katusha-it.ru/partagree","type":"PARTNER_ROUTE","source":"Катюша","url":"https://katusha-it.ru/partagree","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «КАТЮША ПРИНТ», ИНН 9703037297, ОГРН 1217700276804, действует; генеральный директор Максим Виноградов.","url":"https://saby.ru/profile/9703037297-770301001","source":"Saby"},
+        {"type":"SCALE","claim":"Актуальный профиль показывает выручку около 4,4 млрд ₽; проверка на 25.08.2026 — 165 сотрудников.","url":"https://saby.ru/profile/9703037297-770301001","source":"Saby"},
+        {"type":"SIGNAL","claim":"Досрочно запущена вторая производственная площадка в Ленинградской области; проект более 1 млрд ₽.","url":"https://lenoblinvest.ru/blog/category/novosti/kompaniya-katyusha-dosrochno-zapustila-vtoruyu-proizvodstvennuyu-ploshchadku-v-lenoblasti/","source":"Леноблинвест"},
+        {"type":"LPR","claim":"Максим Николаевич Виноградов — генеральный директор; АО «ИТ ЭКОСИСТЕМА КАТЮША» — участник 100%.","url":"https://companies.rbc.ru/id/1217700276804-katyusha/","source":"РБК Компании"},
+        {"type":"CONTACT","claim":"Официальный телефон +7 (495) 120-11-25 и email mail@katusha-it.ru.","url":"https://katusha-it.ru/Media","source":"Катюша"},
+        {"type":"BRAND_LEGAL","claim":"Официальные материалы Катюши связывают бренд с ООО «КАТЮША ПРИНТ», ИНН 9703037297, ОГРН 1217700276804.","url":"https://katusha-it.ru/storage/filemanager/partneram/%D0%9F%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%D1%82%2001.10.2025.pdf","source":"Катюша"}
+      ]
+    }
+  ],
+  "rejected_after_worker_review": [
+    {
+      "brand": "Липецкое станкостроительное предприятие / ЛСП",
+      "inn": "4825072356",
+      "stage": "SIGNAL",
+      "reason": "Worker source was surfaced as dated 03.07.2026, but the page content is a republished 2015 modernization event. Under the repository rule excluding stale records from decisions, this cannot close the current S1-S3 gate. Current 2026 legal/scale/contact data are valid, but no sufficiently strong fresh signal was independently confirmed in this canonical pass."
+    }
+  ],
+  "note": "Canonical RUN 435 worker merge. Global discovered is a conservative auditable lower bound equal to the largest persisted distinct worker pool (129); worker raw counts are not summed because full cross-worker overlap is not enumerable. Outreach 0."
 }
