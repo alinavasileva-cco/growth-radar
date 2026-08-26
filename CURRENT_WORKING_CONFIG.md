@@ -84,3 +84,7 @@ Worker raw не суммировался между пакетами без по
 - `N5K-20260826-434`: 401/401, +7, PASS, orphan 0/0.
 - `N5K-20260826-435`: 404/404, +3, PASS, orphan 0/0.
 - `N5K-20260826-436`: 406/406, +2, PASS, orphan 0/0.
+
+
+## Latest verified run N5K-20260826-437
+Canonical/contactable: 409/409. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

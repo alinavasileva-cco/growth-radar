@@ -1,62 +1,63 @@
 {
-  "run_id": "N5K-20260826-436",
+  "run_id": "N5K-20260826-437",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T21:57:55+03:00",
+  "updated_at": "2026-08-26T23:05:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 404,
+    "baseline_count": 406,
     "target_count": 5000,
-    "current_canonical_count": 406,
-    "current_contactable_count": 406,
-    "progress_added": 2,
-    "remaining": 4594
+    "current_canonical_count": 409,
+    "current_contactable_count": 409,
+    "progress_added": 3,
+    "remaining": 4591
   },
   "funnel": {
-    "discovered": 149,
-    "fast_gate_passed": 9,
-    "size_check_passed": 6,
-    "legal_match_passed": 5,
+    "discovered": 108,
+    "fast_gate_passed": 7,
+    "size_check_passed": 5,
+    "legal_match_passed": 4,
     "signal_confirmed": 4,
     "lpr_identified": 3,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 1,
-    "excluded": 146
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 105
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
       "raw": 50,
-      "duplicates_or_early_rejects": 49,
-      "qualified": 1,
-      "note": "50 distinct employers reported by worker. OZON/Farben Grupp retained after fresh canonical verification. Raw not summed with other workers because a complete cross-worker raw index is unavailable."
+      "duplicates_or_early_rejects": 50,
+      "qualified": 0,
+      "note": "50 distinct employer-level records audited; 5 deep-checked; no qualified. Saturated generic job-board lane was rotated by worker."
     },
     {
       "lane": "industry worker",
-      "raw": 149,
-      "duplicates_or_early_rejects": 149,
-      "qualified": 0,
-      "note": "149 distinct Metalworking-2026 catalog company names form the auditable global raw lower bound. Four candidates were deep-evaluated; none passed SIGNAL. The remaining 145 were not represented as deep-checked."
+      "raw": 108,
+      "duplicates_or_early_rejects": 107,
+      "qualified": 1,
+      "note": "108 cross-source distinct Russian companies; four strongest deep-checked; A9 Systems retained after fresh canonical review. This 108-company pool is the auditable global raw lower bound; worker pools are not summed without a complete cross-worker raw index."
     },
     {
       "lane": "growth/news worker",
-      "raw": 30,
-      "duplicates_or_early_rejects": 28,
-      "qualified": 1,
-      "note": "30 distinct growth/expansion candidates reported by worker. Teploluxe retained. GalVent was rejected by canonical writer as a physical duplicate already present as N5K-0499."
+      "raw": 31,
+      "duplicates_or_early_rejects": 29,
+      "qualified": 2,
+      "note": "31 auditable raw; VICI and Aerofuels retained after fresh canonical review."
     }
   ],
   "qualified_companies": [
-    "Группа Теплолюкс / Teploluxe",
-    "Лакокрасочный завод OZON"
+    "А9 Системс / A9 Systems",
+    "VICI / ВИЧИ-РУСЬ",
+    "Аэрофьюэлз / Aerofuels"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "406_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "406_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "409_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "409_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
