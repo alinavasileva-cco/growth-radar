@@ -1,0 +1,200 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-26T23:36:44+03:00",
+  "source_head": "3e2c7a6a58a36464d74aa9f9ed257bc02226d9ff",
+  "config_version": "2026-08-26T23:08:00+03:00",
+  "canonical_baseline": {
+    "physical_canonical": 409,
+    "physical_contactable": 409,
+    "last_completed_run": "N5K-20260826-437",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "raw_discovery": {
+    "auditable_distinct_raw": 120,
+    "note": "Conservative cross-source minimum only; rows were not summed where cross-source identity could not be proven.",
+    "sources": [
+      {
+        "name": "Aquaflame 2026 official participant announcement/catalog",
+        "url": "https://aquaflame-expo.ru/ru/about/news/2025/december/01/opublikovan-spisok-uchastnikov-aquaflame2026/"
+      },
+      {
+        "name": "RosUpack 2026 official exhibitor list",
+        "url": "https://rosupackexpo.com/exhibitor-list/"
+      },
+      {
+        "name": "MiningWorld Russia 2026 official participant list",
+        "url": "https://miningworld.ru/ru/media/news/2026/february/25/opublikovan-spisok-uchastnikov-miningworld-russia-2026/"
+      },
+      {
+        "name": "NDT Russia 2026 official exhibitor list",
+        "url": "https://www.ndt-russia.ru/ru-RU/visitors/exhibitor-list.aspx"
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw": 120,
+    "fast_gate": 5,
+    "size": 5,
+    "legal": 5,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates_before_deep_check": 0,
+    "duplicate_or_early_reject_rate": 0.0
+  },
+  "deep_checked_rejects": [
+    {
+      "brand": "ЭТРА",
+      "legal_name": "ООО НПО «ЭТРА»",
+      "inn": "5256114366",
+      "decision": "REJECT_SIGNAL",
+      "reason": "Current legal/size/LPR/contact are confirmed, but the strongest explicit expansion/product-line signal found is dated 2024; 2026 exhibition participation alone is insufficient for S1-S3 under fail-closed rules."
+    },
+    {
+      "brand": "ЭНТРОРОС",
+      "legal_name": "ООО «ЭНТРОРОС»",
+      "inn": "7811348779",
+      "decision": "REJECT_SIGNAL",
+      "reason": "Current company scale and contacts are confirmed, but the explicit expansion investment evidence located is historical; no sufficiently current S1-S3 signal was confirmed in this pass."
+    },
+    {
+      "brand": "НПП ПОЛИПЛАСТИК",
+      "legal_name": "ООО «НПП «ПОЛИПЛАСТИК»",
+      "inn": "7729729355",
+      "decision": "REJECT_SCOPE_PENDING_CANONICAL",
+      "reason": "2026 expansion/investment signal and current legal/LPR are confirmed, but group-level consolidated scale and entity/group boundary create ambiguity against the current target scale. Not promoted without canonical review."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "Лемакс",
+      "legal_name": "ООО «Лемакс»",
+      "inn": "6154001478",
+      "ogrn": "1026102578017",
+      "country": "Россия",
+      "region": "Ростовская область",
+      "city": "Таганрог",
+      "domain": "lemax-kotel.ru",
+      "size": {
+        "revenue_2025_rub": 6387447000,
+        "employees_current_site": 725,
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1026102578017-ooo-lemaks/",
+          "https://lemax-kotel.ru/"
+        ]
+      },
+      "legal": {
+        "status": "Действует",
+        "private_gate": "PASS",
+        "ownership_evidence": "АО ТПО «Лемакс» is the 100% founder of ООО «Лемакс»; current board page identifies individual shareholders of the parent structure, with no state-owner evidence found.",
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1026102578017/",
+          "https://www.lemax.ru/control/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-07-23",
+        "summary": "Technology launch of a new wall-mounted boiler plant in Taganrog; project capacity 200,000 boilers/year, explicitly described as a major capacity increase and product-range expansion.",
+        "evidence_urls": [
+          "https://lemax-kotel.ru/",
+          "https://rutube.ru/video/ee496ed32b142f6f968af974d48ac747/"
+        ]
+      },
+      "lpr": {
+        "name": "Жарков Евгений Валерьевич",
+        "role": "Директор по маркетингу, продажам и перспективным разработкам ООО «Лемакс»",
+        "basis": "Official company requisites, current authorization dated 06.12.2024",
+        "evidence_url": "https://online.lemax-kotel.ru/contacts/requisites/"
+      },
+      "contact": {
+        "route": "commercial/marketing",
+        "phone": "+7 (8634) 312-345",
+        "email": "info@lemax-kotel.ru",
+        "alternate_email": "online@lemax-kotel.ru",
+        "evidence_urls": [
+          "https://online.lemax-kotel.ru/contacts/requisites/",
+          "https://lemax-kotel.ru/cooperation/partneram/marketingovye-meropriyatiya.php"
+        ]
+      },
+      "dedup_keys": {
+        "inn": "6154001478",
+        "ogrn": "1026102578017",
+        "legal_name": "ООО «Лемакс»",
+        "brand_domain": "Лемакс|lemax-kotel.ru"
+      },
+      "prewrite_dedup": "PASS_NO_MATCH_IN_REPO_SEARCH",
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "ДЖИЛЕКС / JEELEX",
+      "legal_name": "ООО «ДЖИЛЕКС»",
+      "inn": "5021017621",
+      "ogrn": "1095074003804",
+      "country": "Россия",
+      "region": "Московская область",
+      "city": "Подольск",
+      "domain": "jeelex.ru",
+      "size": {
+        "revenue_2025_rub": 4340104000,
+        "employees_2026": 704,
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1095074003804-ooo-dzhileks/",
+          "https://site.birweb.1prime.ru/company-brief/7347794"
+        ]
+      },
+      "legal": {
+        "status": "Действует",
+        "private_gate": "PASS",
+        "owners": [
+          "Языков Андрей Юрьевич — 60%",
+          "Языков Юрий Аполлонович — 40%"
+        ],
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1095074003804/",
+          "https://www.tbank.ru/business/contractor/legal/1095074003804/"
+        ]
+      },
+      "signal": {
+        "class": "S3",
+        "date": "2026-02-18",
+        "summary": "Company publicly introduced multiple new flagship water-supply product lines at Aquaflame 2026, including PREMIUM submersible/surface pumps, intelligent control systems, expansion tanks and a new fittings line.",
+        "evidence_urls": [
+          "https://jeelex.ru/about/news/kompaniya_dzhileks_na_mezhdunarodnoy_vystavke_aquaflame_2026/",
+          "https://jeelex.ru/about/news/kompaniya_dzhileks_primet_uchastie_v_vystavke_aquaflame/"
+        ]
+      },
+      "lpr": {
+        "name": "Новикова Анастасия Михайловна",
+        "role": "Генеральный директор",
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1095074003804/",
+          "https://jeelex.ru/upload/iblock/031/j3nj2gxaus2v8dlo1p5x33t5pj2stgxy/Razreshitelnaya-dokumentatsiya-_-Korpusa-dlya-kartridzhnogo-filtra.pdf"
+        ]
+      },
+      "contact": {
+        "route": "sales/company",
+        "phone": "+7 (499) 400-55-55",
+        "email": "sales@jeelex.ru",
+        "alternate_email": "info@jeelex.ru",
+        "evidence_urls": [
+          "https://jeelex.ru/about/",
+          "https://jeelex.ru/about/general-information/"
+        ]
+      },
+      "dedup_keys": {
+        "inn": "5021017621",
+        "ogrn": "1095074003804",
+        "legal_name": "ООО «ДЖИЛЕКС»",
+        "brand_domain": "ДЖИЛЕКС|jeelex.ru"
+      },
+      "prewrite_dedup": "PASS_NO_MATCH_IN_REPO_SEARCH",
+      "decision": "QUALIFIED"
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false
+}
