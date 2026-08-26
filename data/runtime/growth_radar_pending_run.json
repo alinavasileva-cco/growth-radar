@@ -1,8 +1,124 @@
 {
-  "run_id": "N5K-20260826-435",
-  "updated_at": "2026-08-26T21:18:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260826-435 integrated physically; canonical/contactable 404/404; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260826-436",
+  "updated_at": "2026-08-26T21:57:55+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 149,
+    "fast_gate_passed": 9,
+    "size_check_passed": 6,
+    "legal_match_passed": 5,
+    "signal_confirmed": 4,
+    "lpr_identified": 3,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 1,
+    "excluded": 146
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs worker",
+      "raw": 50,
+      "duplicates_or_early_rejects": 49,
+      "qualified": 1,
+      "note": "50 distinct employers reported by worker. OZON/Farben Grupp retained after fresh canonical verification. Raw not summed with other workers because a complete cross-worker raw index is unavailable."
+    },
+    {
+      "lane": "industry worker",
+      "raw": 149,
+      "duplicates_or_early_rejects": 149,
+      "qualified": 0,
+      "note": "149 distinct Metalworking-2026 catalog company names form the auditable global raw lower bound. Four candidates were deep-evaluated; none passed SIGNAL. The remaining 145 were not represented as deep-checked."
+    },
+    {
+      "lane": "growth/news worker",
+      "raw": 30,
+      "duplicates_or_early_rejects": 28,
+      "qualified": 1,
+      "note": "30 distinct growth/expansion candidates reported by worker. Teploluxe retained. GalVent was rejected by canonical writer as a physical duplicate already present as N5K-0499."
+    }
+  ],
+  "qualified_staged_not_counted": 2,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0557",
+      "Brand": "Группа Теплолюкс / Teploluxe",
+      "Legal Name": "ООО «ГРУППА ТЕПЛОЛЮКС»",
+      "INN": "5029052258",
+      "OGRN/OGRNIP": "1025003531420",
+      "Region": "Московская область",
+      "City": "Мытищи",
+      "Segment": "Инженерные системы для дома / электрический обогрев / защита от протечек / B2B+B2C",
+      "Website": "https://www.teploluxe.ru/",
+      "Revenue/Scale": "Действующее ООО; 127 сотрудников по актуальному профилю; в 2026 году открыта новая площадка почти 10 000 м², инвестиции более 2 млрд ₽, около 250 рабочих мест; компания ожидает выручку около 5 млрд ₽ без НДС по итогам 2026 года.",
+      "Signal Level": "S2",
+      "Signal Summary": "3 августа 2026 года Группа Теплолюкс официально сообщила об открытии новой производственной площадки почти 10 000 м² в Мытищах. Инвестиции превысили 2 млрд ₽; запуск связан с устойчивым ростом спроса, дальнейшей автоматизацией и наращиванием объёмов производства.",
+      "Signal Date": "2026-08-03",
+      "Signal Source": "https://b2b.teploluxe.ru/news/Plant_Opening",
+      "Owner": "ООО «Фактор8»; ООО «Груп Атлантик Теплолюкс»",
+      "CEO": "Конышев Павел Русланович",
+      "LPR": "Конышев Павел Русланович",
+      "LPR Role": "Директор ООО «Группа Теплолюкс»",
+      "Primary Phone": "+7 (495) 728-80-80",
+      "Primary Email": "object@teploluxe.ru",
+      "HH Contact": "",
+      "Contact Form": "https://www.teploluxe.ru/about/contacts/",
+      "Contact Type": "Официальный корпоративный телефон + email отдела проектных продаж + официальный контактный раздел",
+      "Contact Source": "https://www.teploluxe.ru/about/contacts/",
+      "Consulting Hypothesis": "Коммерческая монетизация нового производственного масштаба: B2B-проектные продажи, дилерские и региональные каналы, pipeline загрузки мощностей, экспорт, forecast и управление маржинальностью.",
+      "contacts": [
+        {"channel":"phone","value":"+7 (495) 728-80-80","type":"CORPORATE_PHONE","source":"Teploluxe","url":"https://www.teploluxe.ru/about/contacts/","is_lpr":false},
+        {"channel":"email","value":"object@teploluxe.ru","type":"PROJECT_SALES_EMAIL","source":"Teploluxe","url":"https://www.teploluxe.ru/about/contacts/","is_lpr":false},
+        {"channel":"web","value":"https://www.teploluxe.ru/about/contacts/","type":"OFFICIAL_SITE_ROUTE","source":"Teploluxe","url":"https://www.teploluxe.ru/about/contacts/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «Группа Теплолюкс», ИНН 5029052258, ОГРН 1025003531420, действует; директор Конышев Павел Русланович.","url":"https://saby.ru/profile/5029052258-502901001","source":"Saby"},
+        {"type":"SCALE","claim":"127 сотрудников; новая производственная площадка почти 10 000 м², инвестиции более 2 млрд ₽ и около 250 рабочих мест; ожидаемая выручка 2026 около 5 млрд ₽ без НДС.","url":"https://b2b.teploluxe.ru/news/Plant_Opening","source":"Teploluxe"},
+        {"type":"SIGNAL","claim":"3 августа 2026 открыта новая производственная площадка; компания прямо связывает её с ростом спроса и наращиванием производства.","url":"https://b2b.teploluxe.ru/news/Plant_Opening","source":"Teploluxe"},
+        {"type":"LPR","claim":"Конышев Павел Русланович — директор ООО «Группа Теплолюкс».","url":"https://saby.ru/profile/5029052258-502901001","source":"Saby"},
+        {"type":"CONTACT","claim":"Официальный телефон +7 (495) 728-80-80 и email отдела проектных продаж object@teploluxe.ru.","url":"https://www.teploluxe.ru/about/contacts/","source":"Teploluxe"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт Teploluxe публикует ООО «Группа Теплолюкс», ИНН 5029052258, ОГРН 1025003531420.","url":"https://www.teploluxe.ru/about/contacts/","source":"Teploluxe"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0558",
+      "Brand": "Лакокрасочный завод OZON",
+      "Legal Name": "ООО «ФАРБЕН ГРУПП»",
+      "INN": "6671458061",
+      "OGRN/OGRNIP": "1146671020671",
+      "Region": "Свердловская область",
+      "City": "Екатеринбург",
+      "Segment": "Производство лакокрасочных материалов и сухих строительных смесей / B2B+B2C",
+      "Website": "https://ozonfarbe.ru/",
+      "Revenue/Scale": "Действующее частное ООО; выручка около 112 млн ₽ за 2025 год; 10 сотрудников по актуальному профилю; производитель ЛКМ и сухих строительных смесей с дилерскими и прямыми продажами на строительные объекты.",
+      "Signal Level": "S1",
+      "Signal Summary": "13 августа 2026 года завод OZON опубликовал вакансию руководителя отдела продаж с задачей выстроить регулярный менеджмент: оцифровать воронку, внедрить регламенты и CRM, управлять KPI, маржинальностью, дилерским и прямым каналами.",
+      "Signal Date": "2026-08-13",
+      "Signal Source": "https://dreamjob.ru/employers/161589/vakansii/136214897",
+      "Owner": "Соколов Александр Эдуардович — 100%",
+      "CEO": "Соколов Александр Эдуардович",
+      "LPR": "Соколов Александр Эдуардович",
+      "LPR Role": "Генеральный директор и единственный учредитель",
+      "Primary Phone": "+7 (343) 243-54-03",
+      "Primary Email": "sale@ozonfarbe.ru",
+      "HH Contact": "https://dreamjob.ru/employers/161589/vakansii/136214897",
+      "Contact Form": "https://ozonfarbe.ru/",
+      "Contact Type": "Официальный корпоративный телефон + sales email + текущий direct-employer vacancy route",
+      "Contact Source": "https://ozonfarbe.ru/",
+      "Consulting Hypothesis": "Систематизация B2B-продаж производителя: регулярный менеджмент, CRM/воронка, KPI, управление маржинальностью, дилерским и объектным каналами, масштабирование команды продаж.",
+      "contacts": [
+        {"channel":"phone","value":"+7 (343) 243-54-03","type":"CORPORATE_PHONE","source":"OZON Farbe","url":"https://ozonfarbe.ru/","is_lpr":false},
+        {"channel":"email","value":"sale@ozonfarbe.ru","type":"CORPORATE_EMAIL","source":"OZON Farbe","url":"https://ozonfarbe.ru/","is_lpr":false},
+        {"channel":"web","value":"https://dreamjob.ru/employers/161589/vakansii/136214897","type":"CURRENT_EMPLOYER_VACANCY_ROUTE","source":"DreamJob","url":"https://dreamjob.ru/employers/161589/vakansii/136214897","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «ФАРБЕН ГРУПП», ИНН 6671458061, ОГРН 1146671020671; действует; генеральный директор Соколов Александр Эдуардович.","url":"https://companies.rbc.ru/okved/20.30/2/","source":"РБК Компании"},
+        {"type":"SCALE","claim":"Выручка около 112 млн ₽ за 2025 год; производитель лакокрасочных материалов и сухих строительных смесей.","url":"https://firmoteka.ru/okved/20.30","source":"Фирмотека"},
+        {"type":"SIGNAL","claim":"13 августа 2026 актуальна вакансия руководителя отдела продаж с задачей систематизации и масштабирования sales-функции.","url":"https://dreamjob.ru/employers/161589/vakansii/136214897","source":"DreamJob"},
+        {"type":"LPR","claim":"Соколов Александр Эдуардович — генеральный директор; официальный сайт в марте 2026 также называет его генеральным директором компании.","url":"https://ozonfarbe.ru/company/news/prezentatsiya_kompanii_dlya_arkhitektorv_i_dizaynerov_v_sinara_tsentre/","source":"OZON Farbe"},
+        {"type":"CONTACT","claim":"Официальный sales email sale@ozonfarbe.ru и корпоративный сайт; рабочий телефон подтвержден worker-проверкой официального контура.","url":"https://ozonfarbe.ru/","source":"OZON Farbe"},
+        {"type":"BRAND_LEGAL","claim":"Официальные материалы связывают бренд OZON с ООО «Фарбен групп»; ИНН 6671458061 / ОГРН 1146671020671 подтверждены актуальными реестровыми источниками.","url":"https://ozonfarbe.ru/company/news/prezentatsiya_kompanii_dlya_arkhitektorv_i_dizaynerov_v_sinara_tsentre/","source":"OZON Farbe"}
+      ]
+    }
+  ],
+  "note": "Canonical writer RUN 436. Global raw discovered is recorded conservatively as 149, the largest auditable distinct worker pool; worker raw counts are not summed without a complete cross-worker raw index. GalVent (INN 7720605108) rejected as physical duplicate already present in leads_master as N5K-0499. Teploluxe and OZON/Farben Grupp passed fresh 2026 canonical review. Outreach 0."
 }
