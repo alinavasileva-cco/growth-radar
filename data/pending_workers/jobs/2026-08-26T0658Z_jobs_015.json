@@ -1,0 +1,123 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-26T06:58:00+03:00",
+  "source_head_sha": "5d57fc6be93ad723a7a5a62d35c2e961443ee8f1",
+  "canonical_snapshot": {
+    "last_completed_run": "N5K-20260826-421",
+    "canonical_count": 375,
+    "contactable_count": 375,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "metrics": {
+    "raw_distinct_employers_surfaced": 40,
+    "deep_checked": 3,
+    "qualified": 1,
+    "note": "Raw count is limited to distinct identifiable employers actually surfaced in fresh job-board search results during this pass. Only fully verified QUALIFIED candidates are persisted below; rejected/uncertain candidates are not persisted as leads."
+  },
+  "qualified_candidates": [
+    {
+      "brand": "ГК Воздушные фильтры",
+      "legal_name": "ООО ФИЛЬТРАЦИОННЫЕ ТЕХНОЛОГИИ",
+      "inn": "3321023140",
+      "ogrn": "1143316001333",
+      "region": "Московская область",
+      "city": "Щёлково",
+      "website": "https://filters.ru/",
+      "status": "QUALIFIED",
+      "dedup": {
+        "exact_inn_repository_search": "NO_MATCH",
+        "exact_brand_repository_search": "NO_MATCH",
+        "checked_immediately_before_staging": true
+      },
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 1841877000,
+        "employees_current_sources": "189-241 depending on current registry/industry source",
+        "evidence_urls": [
+          "https://energybase.ru/vendor/gk-filters",
+          "https://industrials.ru/proizvoditel/17362-filtracionnye-tehnologii",
+          "https://companies.rbc.ru/id/1143316001333-ooo-filtratsionnyie-tehnologii/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "company_status": "Действует",
+        "registered_at": "2014-08-05",
+        "okved": "28.25.14 Производство оборудования для фильтрования и очистки газов",
+        "brand_legal_match": "Energybase directly identifies Группа компаний «Воздушные фильтры» as ООО «Фильтрационные технологии»; official/industry profiles tie filters.ru to INN 3321023140.",
+        "evidence_urls": [
+          "https://saby.ru/profile/3321023140-505001001",
+          "https://energybase.ru/vendor/gk-filters",
+          "https://industrials.ru/proizvoditel/17362-filtracionnye-tehnologii"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S1",
+        "date": "2026-08-07",
+        "summary": "ГК Воздушные фильтры опубликовала вакансию руководителя отдела продаж. Компания описывает себя как отечественного производителя с более чем 12-летним производственным контуром; вакансия является прямым сигналом усиления коммерческого управления. Параллельно официальный сайт подтверждает развитие бренда Cleanera, а в 2026 году компания объявляла строительство нового производственно-складского комплекса.",
+        "vacancy_url": "https://dreamjob.ru/employers/157124/vakansii/135895208",
+        "supporting_urls": [
+          "https://filters.ru/company/",
+          "https://energybase.ru/vendor/gk-filters"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "owner": "Леонтьев Павел Владимирович",
+        "owner_share": "100%",
+        "ceo": "Борисов Алексей Андреевич",
+        "evidence_urls": [
+          "https://star-pro.ru/proverka-kontragenta/organization/1143316001333--ooo-filtracionnye-texnologii",
+          "https://saby.ru/profile/3321023140-505001001",
+          "https://companies.rbc.ru/id/1143316001333-ooo-filtratsionnyie-tehnologii/"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route": "Официальный корпоративный маршрут с просьбой передать обращение генеральному директору/собственнику; дополнительно актуальный employer vacancy route.",
+        "phone": "+7 (495) 909-12-18",
+        "email": "order.msk@filters.ru",
+        "form": "https://filters.ru/contact/",
+        "vacancy_route": "https://dreamjob.ru/employers/157124/vakansii/135895208",
+        "evidence_urls": [
+          "https://filters.ru/",
+          "https://filters.ru/contact/",
+          "https://industrials.ru/proizvoditel/17362-filtracionnye-tehnologii"
+        ]
+      },
+      "consulting_hypothesis": "Систематизация и масштабирование B2B-продаж на фоне расширения производственного контура: структура коммерческого блока, управляемая воронка, CRM/KPI, сегментация промышленных клиентов и развитие региональных каналов.",
+      "evidence": [
+        {
+          "type": "VACANCY_SIGNAL",
+          "date": "2026-08-07",
+          "url": "https://dreamjob.ru/employers/157124/vakansii/135895208"
+        },
+        {
+          "type": "LEGAL_CURRENT",
+          "date_checked": "2026-08-26",
+          "url": "https://saby.ru/profile/3321023140-505001001"
+        },
+        {
+          "type": "SCALE_2025",
+          "date_checked": "2026-08-26",
+          "url": "https://energybase.ru/vendor/gk-filters"
+        },
+        {
+          "type": "OWNER_LPR",
+          "date_checked": "2026-08-26",
+          "url": "https://star-pro.ru/proverka-kontragenta/organization/1143316001333--ooo-filtracionnye-texnologii"
+        },
+        {
+          "type": "OFFICIAL_CONTACT",
+          "date_checked": "2026-08-26",
+          "url": "https://filters.ru/contact/"
+        }
+      ]
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false
+}
