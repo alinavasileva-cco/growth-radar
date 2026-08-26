@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-26T05:01:00+03:00",
+  "updated_at": "2026-08-26T05:04:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260826-418",
-  "current_run_id": "N5K-20260826-418",
+  "last_completed_run_id": "N5K-20260826-419",
+  "current_run_id": "N5K-20260826-419",
   "last_run_id": "N5K-20260826-419",
   "latest_completed_run": "N5K-20260826-419",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 418 completed after physical integration and metadata REPAIR: +1 net new company. Physical canonical/contactable 369/369; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 419 completed after physical integration and metadata REPAIR: +2 net new companies. Physical canonical/contactable 371/371; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
