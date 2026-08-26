@@ -1,0 +1,7 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0557,N5K-0557-C01,Группа Теплолюкс / Teploluxe,5029052258,,Корпоративный маршрут,+7 (495) 728-80-80,phone,CORPORATE_PHONE,Teploluxe,https://www.teploluxe.ru/about/contacts/,NO,HIGH,2026-08-26,,N5K-20260826-436,new_5000
+N5K-0557,N5K-0557-C02,Группа Теплолюкс / Teploluxe,5029052258,,Корпоративный маршрут,object@teploluxe.ru,email,PROJECT_SALES_EMAIL,Teploluxe,https://www.teploluxe.ru/about/contacts/,NO,HIGH,2026-08-26,,N5K-20260826-436,new_5000
+N5K-0557,N5K-0557-C03,Группа Теплолюкс / Teploluxe,5029052258,,Корпоративный маршрут,https://www.teploluxe.ru/about/contacts/,web,OFFICIAL_SITE_ROUTE,Teploluxe,https://www.teploluxe.ru/about/contacts/,NO,HIGH,2026-08-26,,N5K-20260826-436,new_5000
+N5K-0558,N5K-0558-C01,Лакокрасочный завод OZON,6671458061,,Корпоративный маршрут,+7 (343) 243-54-03,phone,CORPORATE_PHONE,OZON Farbe,https://ozonfarbe.ru/,NO,HIGH,2026-08-26,,N5K-20260826-436,new_5000
+N5K-0558,N5K-0558-C02,Лакокрасочный завод OZON,6671458061,,Корпоративный маршрут,sale@ozonfarbe.ru,email,CORPORATE_EMAIL,OZON Farbe,https://ozonfarbe.ru/,NO,HIGH,2026-08-26,,N5K-20260826-436,new_5000
+N5K-0558,N5K-0558-C03,Лакокрасочный завод OZON,6671458061,,Корпоративный маршрут,https://dreamjob.ru/employers/161589/vakansii/136214897,web,CURRENT_EMPLOYER_VACANCY_ROUTE,DreamJob,https://dreamjob.ru/employers/161589/vakansii/136214897,NO,HIGH,2026-08-26,,N5K-20260826-436,new_5000

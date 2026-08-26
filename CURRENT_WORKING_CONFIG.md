@@ -95,3 +95,7 @@ Canonical/contactable: 401/401. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 ## Latest verified run N5K-20260826-435
 Canonical/contactable: 404/404. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260826-436
+Canonical/contactable: 406/406. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
