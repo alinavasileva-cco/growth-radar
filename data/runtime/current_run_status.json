@@ -1,39 +1,39 @@
 {
-  "run_id": "N5K-20260826-421",
+  "run_id": "N5K-20260826-422",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T06:24:00+03:00",
+  "updated_at": "2026-08-26T07:08:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 373,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 375,
-    "current_contactable_count": 375,
-    "progress_added": 375,
-    "remaining": 4625
+    "current_canonical_count": 377,
+    "current_contactable_count": 377,
+    "progress_added": 377,
+    "remaining": 4623
   },
   "funnel": {
-    "discovered": 20,
-    "fast_gate_passed": 4,
-    "size_check_passed": 3,
+    "discovered": 51,
+    "fast_gate_passed": 5,
+    "size_check_passed": 4,
     "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 2,
-    "duplicates": 2,
-    "excluded": 16
+    "duplicates": 0,
+    "excluded": 49
   },
   "qualified_companies": [
-    "Волгопромтранс",
-    "ГАММА-ПЛАСТ / GAMMA-PLAST"
+    "Агрофирма Партнер",
+    "ГК Воздушные фильтры"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "375_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "375_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "377_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "377_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
