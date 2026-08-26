@@ -1,31 +1,72 @@
 {
-  "run_id": "N5K-20260826-424",
-  "updated_at": "2026-08-26T09:50:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
+  "run_id": "N5K-20260826-425",
+  "updated_at": "2026-08-26T09:58:30+03:00",
   "funnel": {
-    "discovered": 12,
-    "fast_gate_passed": 3,
-    "size_check_passed": 2,
+    "discovered": 40,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 4,
-    "excluded": 7
+    "duplicates": 0,
+    "excluded": 39
   },
   "lane_metrics": [
-    {"lane":"HH/job-board","raw":0,"duplicates_or_early_rejects":0,"qualified":0,"note":"Saturated lane intentionally not rescanned as primary source."},
-    {"lane":"other job boards","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"industry catalogs","raw":2,"duplicates_or_early_rejects":1,"qualified":1},
-    {"lane":"regional business catalogs/news","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"growth/expansion/investment news","raw":4,"duplicates_or_early_rejects":3,"qualified":1,"note":"Qualified company originated from expansion signal; counted once globally."},
-    {"lane":"official company sites/news","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
+    {"lane":"HH/job-board","raw":40,"duplicates_or_early_rejects":39,"qualified":1,"note":"Fresh worker pool; 97.5% early reject/overlap, lane stopped for this RUN after processing available batch."},
+    {"lane":"other job boards","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
+    {"lane":"industry catalogs","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
+    {"lane":"regional business catalogs/news","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
+    {"lane":"growth/expansion/investment news","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
+    {"lane":"official company sites/news","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
     {"lane":"Telegram/VK/YouTube/owner publications","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
-    {"lane":"ratings/awards/accelerators/clubs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
+    {"lane":"ratings/awards/accelerators/clubs","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
+    {"lane":"franchise/dealer catalogs","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
+    {"lane":"segment expansion search","raw":0,"duplicates_or_early_rejects":0,"qualified":0}
   ],
-  "notes": "RUN 424 already physically integrated in main at commit 4a866777825ad62989802788749afe5f2e7c79a2. Physical canonical/contactable 381/381; integrity PASS; orphan contacts/evidence 0/0; campaign/runtime synchronized. Pending payload cleared by recovery to prevent false staged state or duplicate retrigger.",
-  "qualified_companies": []
+  "notes": "Fresh source of truth before staging: physical canonical/contactable 381/381, RUN 424, integrity PASS, orphan contacts/evidence 0/0, staged 0 after runtime REPAIR. Exact repository searches immediately before staging returned NO_MATCH for INN 7724865932 and OGRN 1137746167173. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID":"N5K-0534",
+      "Brand":"HD LED TECH / HDLT",
+      "Legal Name":"ООО «ЭЙЧДИ»",
+      "INN":"7724865932",
+      "OGRN/OGRNIP":"1137746167173",
+      "Region":"Москва",
+      "City":"Москва",
+      "Segment":"LED-экраны / медиафасады / промышленное электрооборудование B2B",
+      "Website":"https://hdlt.ru/",
+      "Revenue/Scale":"Действующее частное ООО; выручка 1,60 млрд ₽ за 2025 год; 47 сотрудников по актуальному профилю; основной ОКВЭД — производство прочего электрического оборудования.",
+      "Signal Level":"S1",
+      "Signal Summary":"10 июля 2026: HD LED TECH искал руководителя отдела продаж LED-экранов с прямой задачей настроить систему продаж и повысить результат коммерческого направления; актуальные вакансии также подтверждают развитие B2B-направления медиафасадов.",
+      "Signal Date":"2026-07-10",
+      "Signal Source":"https://moskva.jobrun.ru/руководитель-отдела-продаж-на-маркетплейсах-wildberries-ozon-работа/м-калужская",
+      "Owner":"Аксенов Илья Сергеевич — 50%; Гомбожапов Зорикто Георгиевич — 25%; Крючков Михаил Александрович — совладелец",
+      "CEO":"Гомбожапов Зорикто Георгиевич",
+      "LPR":"Гомбожапов Зорикто Георгиевич",
+      "LPR Role":"Генеральный директор и совладелец ООО ЭЙЧДИ",
+      "Primary Phone":"8 (495) 215-28-75",
+      "Primary Email":"info@hdlt.ru",
+      "HH Contact":"https://moskva.jobrun.ru/руководитель-отдела-продаж-на-маркетплейсах-wildberries-ozon-работа/м-калужская",
+      "Contact Form":"https://hdlt.ru/kontaktyi/",
+      "Other Contact":"",
+      "Contact Type":"Official sales phone + corporate email + current vacancy route",
+      "Contact Source":"Official HDLT site + current vacancy",
+      "Consulting Hypothesis":"Систематизация и масштабирование B2B-продаж: единая управляемая воронка по региональной сети, KPI/CRM, стандарты работы руководителей продаж и повышение эффективности коммерческого блока.",
+      "contacts":[
+        {"value":"8 (495) 215-28-75","channel":"Phone","type":"Official sales phone","source":"Official HDLT site","url":"https://hdlt.ru/kontaktyi/","is_lpr":false,"notes":"Корпоративный маршрут отдела продаж"},
+        {"value":"info@hdlt.ru","channel":"Email","type":"Official corporate email","source":"Official HDLT site","url":"https://hdlt.ru/kontaktyi/","is_lpr":false,"notes":"Публичный корпоративный email"},
+        {"value":"Гомбожапов Зорикто Георгиевич","channel":"Management route","type":"CEO / co-owner","source":"Current legal profile","url":"https://companies.rbc.ru/amp/ogrn/1137746167173/","is_lpr":true,"notes":"Генеральный директор и совладелец"}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"ООО ЭЙЧДИ, ИНН 7724865932, ОГРН 1137746167173 — действующая российская частная компания.","url":"https://companies.rbc.ru/id/1137746167173-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-ejchdi/","source":"Current legal profile"},
+        {"type":"SCALE_CURRENT","claim":"Выручка 1,60 млрд ₽ за 2025 год; 47 сотрудников по актуальному профилю.","url":"https://www.tbank.ru/business/contractor/legal/1137746167173/","source":"Current company profile"},
+        {"type":"SIGNAL","claim":"Июль 2026: поиск руководителя отдела продаж с задачей настроить систему продаж и повысить результат коммерческого направления.","url":"https://moskva.jobrun.ru/руководитель-отдела-продаж-на-маркетплейсах-wildberries-ozon-работа/м-калужская","source":"Current vacancy mirror"},
+        {"type":"LPR","claim":"Гомбожапов Зорикто Георгиевич — генеральный директор и совладелец ООО ЭЙЧДИ.","url":"https://companies.rbc.ru/amp/ogrn/1137746167173/","source":"Current legal profile"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует 8 (495) 215-28-75 и info@hdlt.ru.","url":"https://hdlt.ru/kontaktyi/","source":"Official HDLT site"},
+        {"type":"BRAND_LEGAL","claim":"Официальные реквизиты HDLT связывают бренд с ООО ЭЙЧДИ, ИНН 7724865932, ОГРН 1137746167173.","url":"https://hdlt.ru/assets/template/upload/documents/HDLT_rec.pdf","source":"Official HDLT document"}
+      ]
+    }
+  ]
 }
