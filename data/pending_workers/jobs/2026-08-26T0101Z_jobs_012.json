@@ -1,0 +1,173 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-26T01:01:00Z",
+  "source_head_before_worker": "cb7dd1914fc27fd39ac1320edbc362cc7a70d3ce",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260826-417",
+    "canonical_count": 368,
+    "contactable_count": 368,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "scope": "job-board discovery only; no canonical writes; no outreach",
+  "metrics": {
+    "raw_distinct_employers_surfaced": 44,
+    "deep_checked": 1,
+    "qualified": 1,
+    "note": "Raw pool is employer-deduplicated within this worker run and intentionally avoids the prior jobs_011 raw pool where identified. Only auditable counts are recorded; aggregate early-reject/duplicate counts were not reconstructed after the fact."
+  },
+  "raw_pool": [
+    "Вертро",
+    "Руспромконтроль",
+    "УралАктив, Системы вентиляции",
+    "Группа компаний БПО",
+    "Инстарт",
+    "Инфофлот-С",
+    "Складские Технологии",
+    "Нордкап",
+    "Ай Ти Ви групп",
+    "Happy Gifts - группа компаний",
+    "Траектория",
+    "Спорт Групп",
+    "ИДА ГРУПП",
+    "КупитьКоробок",
+    "АДОП Альянс",
+    "AG loft",
+    "LLC MedicalExpress",
+    "Этажи Юг",
+    "Селлердепо",
+    "Титул",
+    "Гэндальф, группа компаний",
+    "Энергосила",
+    "Группа компаний Девятый вал",
+    "ТРАКФОРУМ",
+    "Цифровой Диалог",
+    "Сервис-логистика",
+    "Копытный сервис",
+    "ТЕХНОЛОГИЯ",
+    "ЯрВет",
+    "2ГИС-Воронеж",
+    "Порядок",
+    "ГК Самсон",
+    "Группа МЕТТАТРОН",
+    "Elcon",
+    "Peleton",
+    "Сладком",
+    "Интелком",
+    "Стафф Компани",
+    "Selsup",
+    "БашСептик",
+    "Группа компаний Монарх",
+    "Imperium Motors",
+    "Федеральный Центр Защиты",
+    "Производственная компания ТНП"
+  ],
+  "discovery_source_urls": [
+    "https://ekaterinburg.cataloxy.ru/rabota/vacancy1127644647_rukovoditel-otdela-prodazh.htm",
+    "https://ekaterinburg.cataloxy.ru/rabota/vacancy1127325969_rukovoditel-otdela-prodazh.htm",
+    "https://ekaterinburg.cataloxy.ru/rabota/vacancy1127019603_rukovoditel-otdela-prodazh-v2v.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127621453_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127911192_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127911293_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127760041_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127545835_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127651620_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127361708_rukovoditel-otdela-prodazh-g-sankt-peterburg.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127154801_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127450305_rukovoditel-otdela-prodazh.htm",
+    "https://moscow.cataloxy.ru/rabota/vacancy1126825035_rukovoditel-otdela-prodazh-it-b2b.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127635617_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127635511_rukovoditel-otdela-prodazh.htm",
+    "https://st-petersburg.cataloxy.ru/rabota/vacancy1127008343_rukovoditel-otdela-prodazh.htm",
+    "https://rostov-na-donu.cataloxy.ru/rabota/vacancy1127662734_rukovoditel-otdela-prodazh.htm",
+    "https://rostov-na-donu.cataloxy.ru/rabota/vacancy1121327622_rukovoditel-otdela-prodazh.htm",
+    "https://krasnodar.cataloxy.ru/rabota/vacancy1127239083_rukovoditel-otdela-prodazh-fulfilment.htm",
+    "https://rostov-na-donu.cataloxy.ru/rabota/vacancy1127001881_rukovoditel-otdela-prodazh-nedvizhimosti.htm",
+    "https://rostov-na-donu.cataloxy.ru/rabota/vacancy1127232357_rukovoditel-otdela-prodazh-it.htm",
+    "https://rostov-na-donu.cataloxy.ru/rabota/firm40421.htm",
+    "https://krasnodar.cataloxy.ru/rabota/vacancy1127653388_rukovoditel-otdela-optovyh-prodazh.htm",
+    "https://rostov-na-donu.cataloxy.ru/rabota/vacancy1126738510_direktor-po-prodazham-avtozapchastey.htm",
+    "https://rostov-na-donu.cataloxy.ru/rabota/vacancy1127920849_rukovoditel-otdela-tehnologicheskoy-arendy.htm",
+    "https://yaroslavl.cataloxy.ru/rabota/vacancy1127830180_rukovoditel-otdela-prodazh-foodfmcg.htm",
+    "https://yaroslavl.cataloxy.ru/rabota/menedzher-po-prodazham-menedzher-po-rabote-s-klientami-roznichnaya-torgovlya-2169sp.htm",
+    "https://yaroslavl.cataloxy.ru/rabota/merchandayzer-roznichnaya-torgovlya-2268sp.htm?page=7",
+    "https://yaroslavl.cataloxy.ru/rabota/rukovoditel-sluzhby-ekspluatatsii-top-menedzhment-2698sp.htm",
+    "https://voronezh.cataloxy.ru/rabota/vacancy1127013903_rukovoditel-otdela-prodazh.htm",
+    "https://voronezh.cataloxy.ru/rabota/firm1585026.htm",
+    "https://sochi.cataloxy.ru/rabota/vacancy1126601839_rukovoditel-otdela-prodazh.htm",
+    "https://dreamjob.ru/employers/82827/vakansii/135848213",
+    "https://facancy.ru/vacancies/rukovoditel-otdela-prodazh-v-kompaniiu-proizvoditel-lakokrasochnykh-materialov-elcon",
+    "https://facancy.ru/vacancies/rukovoditel-otdela-prodazh-v-avtosalon-peleton",
+    "https://krasnoyarsk.rabotajob.ru/vakansii/rukovoditel-otdela-prodaz/",
+    "https://dreamjob.ru/employers/991398/vakansii/136445590",
+    "https://www.domesticstaff.ru/companies/selsup/",
+    "https://dreamjob.ru/employers/259774/vakansii/136339007",
+    "https://dreamjob.ru/employers/294029/vakansii/136421274",
+    "https://dreamjob.ru/employers/6354667/vakansii/136204179",
+    "https://saratov.jobcareer.ru/jobs/rukovoditel-otdela-prodaz/",
+    "https://hh.ru/vacancy/129914026"
+  ],
+  "deep_check_rejections": [],
+  "qualified_candidates": [
+    {
+      "brand": "Группа МЕТТАТРОН / METTATRON",
+      "legal_name": "ООО ГРУППА МЕТТАТРОН",
+      "inn": "7733651334",
+      "ogrn": "1087746480612",
+      "region": "Москва",
+      "city": "Москва",
+      "website": "https://www.mettatron.ru/",
+      "legal_status": "Действующая организация; актуальный профиль РБК Компании указывает статус действующей на 26.07.2026.",
+      "scale": {
+        "revenue_2025_rub": 352096000,
+        "employees": 43,
+        "source": "https://companies.rbc.ru/id/1087746480612-ooo-gruppa-mettatron/"
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-11",
+        "summary": "Свежая вакансия руководителя отдела продаж B2B: команда 5–7 менеджеров; задача — выстроить сильные процессы отдела и вывести коммерческий блок на новый уровень. Дополнительная актуальная карточка вакансии прямо указывает усиление коммерческой функции, построение системы продаж, управление командой и настройку бизнес-процессов под масштаб бизнеса.",
+        "sources": [
+          "https://fresh-job.ru/belgorodskaya_oblast_stroitel/%D0%A0-%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8-%D0%B5%D0%BB-%D0%BE-%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%922%D0%92-37059861.html",
+          "https://dreamjob.ru/employers/82827/vakansii/135848213"
+        ]
+      },
+      "owner_lpr": {
+        "name": "Нижник Михаил Дмитриевич",
+        "role": "Генеральный директор и единственный учредитель",
+        "source": "https://companies.rbc.ru/id/1087746480612-ooo-gruppa-mettatron/"
+      },
+      "contact_route": {
+        "phone": "+7 (495) 925-51-27",
+        "email": "mttn@mettatron.ru",
+        "form": "https://www.mettatron.ru/kontakty",
+        "type": "official corporate phone + corporate email + official feedback form",
+        "sources": [
+          "https://www.mettatron.ru/kontakty",
+          "https://icatalog.expocentr.ru/ru/exhibitions/aaf30fc4-3ffc-11ee-80ce-a0d3c1fab97f/exhibitors/369803?stand=23D28"
+        ]
+      },
+      "brand_legal_evidence": {
+        "claim": "Официальная страница контактов прямо публикует реквизиты ООО 'Группа МЕТТАТРОН': ИНН 7733651334, ОГРН 1087746480612 и адрес Фабричная, 6, совпадающий с вакансией.",
+        "source": "https://www.mettatron.ru/kontakty"
+      },
+      "consulting_hypothesis": "Систематизация промышленного B2B-sales: управляемая воронка и KPI, перестройка процессов отдела, CRM-дисциплина, развитие команды и рост коммерческого результата.",
+      "dedup_before_staging": {
+        "exact_inn_repo_search": "no match",
+        "brand_repo_search": "no match",
+        "checked_against_head": "cb7dd1914fc27fd39ac1320edbc362cc7a70d3ce"
+      }
+    }
+  ],
+  "write_guard": {
+    "canonical_files_modified": false,
+    "master_modified": false,
+    "contactable_modified": false,
+    "contacts_modified": false,
+    "evidence_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false,
+    "outreach_performed": false
+  }
+}
