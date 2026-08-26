@@ -1,0 +1,131 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-26T19:38:47+03:00",
+  "campaign_id": "new_5000",
+  "source_head_context": {
+    "git_head_seen": "b1170aa7cffdbb82ac3b7a7287457b8bef784d51",
+    "canonical_count_seen": 394,
+    "contactable_count_seen": 394,
+    "last_completed_run_seen": "N5K-20260826-433",
+    "integrity_seen": "PASS"
+  },
+  "worker_funnel": {
+    "named_raw_entities_surfaced_minimum": 22,
+    "fast_gate_shortlist": 6,
+    "deep_checked": 5,
+    "size_passed": 3,
+    "legal_passed": 3,
+    "signal_passed": 3,
+    "lpr_passed": 2,
+    "contact_passed": 2,
+    "qualified_staged": 2,
+    "obvious_duplicate_rejected": 1,
+    "excluded_or_not_fully_verified": 19,
+    "target_raw_100_180_reached": false,
+    "note": "Fresh growth/expansion searches and industrial-news indexes surfaced at least 22 distinct named entities in the available retrieval window. The 100-180 raw target was not reached; quality gates were not weakened. Bitrobotics was treated as an obvious recent canonical duplicate because RUN 433 already physically integrated it. Full canonical prewrite dedup remains mandatory."
+  },
+  "qualified": [
+    {
+      "brand": "RTP / РТП",
+      "legal_name": "ООО «РТП»",
+      "inn": "5011024884",
+      "ogrn": "1055002006190",
+      "legal_status": "Действует",
+      "region": "Московская область / новый комплекс в Свердловской области",
+      "city": "Егорьевск / Екатеринбург",
+      "segment": "полимерные трубы и фитинги / инженерная сантехника / B2B",
+      "website": "https://rtp.ru/",
+      "scale": "Около 6.97 млрд ₽ выручки за 2025 год; около 730 сотрудников; до расширения три завода и сеть офисов продаж по России.",
+      "signal_level": "S2",
+      "signal_summary": "24.07.2026 RTP объявила о запуске нового производственно-складского комплекса в Екатеринбурге; склад уже работает, производственные линии четвертого завода компании в России готовятся к запуску. Это прямое расширение производственной и логистической инфраструктуры.",
+      "signal_date": "2026-07-24",
+      "signal_sources": [
+        "https://rtp.ru/news/7923-rtp-otkryvaet-proizvodstvenno-skladskoy-kompleks-v-ekaterinburge/",
+        "https://rtp.ru/"
+      ],
+      "owner": "Юров Максим Александрович и Таракчы Волкан — учредители по актуальному юрпрофилю",
+      "ceo": "Юров Максим Александрович",
+      "lpr": "Юров Максим Александрович",
+      "lpr_role": "Генеральный директор",
+      "primary_phone": "+7 (495) 540-52-62",
+      "primary_email": "sale@rtp.ru",
+      "contact_form_or_route": "https://rtp.ru/contacts/",
+      "contact_sources": [
+        "https://rtp.ru/contacts/",
+        "https://companies.rbc.ru/id/1055002006190-ooo-rtp/",
+        "https://saby.ru/profile/5011024884-501101001"
+      ],
+      "dedup_keys": {
+        "inn": "5011024884",
+        "ogrn": "1055002006190",
+        "legal_name": "ООО РТП",
+        "brand_domain": "RTP|rtp.ru"
+      },
+      "worker_dedup_status": "No repository code-search match found for INN 5011024884 or brand RTP; full canonical writer physical-master dedup required.",
+      "consulting_hypothesis": "Коммерческая загрузка четвертого завода и новой логистической инфраструктуры: региональная модель продаж, дилерская сеть, pipeline, forecast, ассортиментная и маржинальная модель, синхронизация производства и спроса.",
+      "status": "QUALIFIED_WORKER_STAGING"
+    },
+    {
+      "brand": "Лазерные системы / Laser Systems",
+      "legal_name": "АО «ЛАЗЕРНЫЕ СИСТЕМЫ»",
+      "inn": "7819039902",
+      "ogrn": "1187847309913",
+      "legal_status": "Действует",
+      "region": "Санкт-Петербург",
+      "city": "Стрельна",
+      "segment": "высокотехнологичное оборудование / лазерные и аддитивные технологии / промышленный B2B",
+      "website": "https://www.lsystems.ru/",
+      "scale": "Собственный производственный комплекс 6000 м²; 135 сотрудников по актуальному юрпрофилю; компания отнесена к среднему бизнесу и имеет уставный капитал 300 млн ₽.",
+      "signal_level": "S2",
+      "signal_summary": "03.06.2026 на ПМЭФ-2026 дан старт инвестиционному проекту АО «Лазерные системы» по масштабному расширению производства в ОЭЗ Санкт-Петербурга и организации выпуска новых высокотехнологичных комплексных решений.",
+      "signal_date": "2026-06-03",
+      "signal_sources": [
+        "https://www.gov.spb.ru/gov/otrasl/c_industrial_and_trade/news/316728/",
+        "https://www.lsystems.ru/about/"
+      ],
+      "owner": "АО; председатель совета директоров — Алексей Борейшо",
+      "ceo": "Васильев Дмитрий Николаевич",
+      "lpr": "Васильев Дмитрий Николаевич",
+      "lpr_role": "Генеральный директор",
+      "primary_phone": "+7 812 612-02-88",
+      "primary_email": "office@lsystems.ru",
+      "sales_email": "sales@lsystems.ru",
+      "contact_form_or_route": "https://www.lsystems.ru/contacts/",
+      "contact_sources": [
+        "https://www.lsystems.ru/contacts/",
+        "https://www.lsystems.ru/management/",
+        "https://disclosure.1prime.ru/Portal/Default.aspx?emid=7819039902"
+      ],
+      "dedup_keys": {
+        "inn": "7819039902",
+        "ogrn": "1187847309913",
+        "legal_name": "АО ЛАЗЕРНЫЕ СИСТЕМЫ",
+        "brand_domain": "Лазерные системы|lsystems.ru"
+      },
+      "worker_dedup_status": "No repository code-search match found for INN 7819039902 or brand Лазерные системы; full canonical writer physical-master dedup required.",
+      "consulting_hypothesis": "Коммерческая модель масштабирования после расширения высокотехнологичного производства: сегментация рынков применения, key-account pipeline, продуктовый приоритет, план загрузки мощностей, forecast и экономика новых направлений.",
+      "status": "QUALIFIED_WORKER_STAGING"
+    }
+  ],
+  "known_duplicate_rejected": [
+    {
+      "brand": "Битроботикс / Bitrobotics",
+      "reason": "Already physically integrated by latest completed canonical RUN N5K-20260826-433 according to current_run_status.json."
+    }
+  ],
+  "deep_checked_not_staged": [
+    {
+      "brand": "ССИ Решения",
+      "reason": "Fresh expansion signal and legal/contact data found, but current legal-profile size evidence conflicts across sources and the legal entity is classified as microbusiness; not staged without resolving the size gate."
+    },
+    {
+      "brand": "РАТЕЛ",
+      "reason": "Fresh investment project found, but current SIZE/LPR/contact chain was not fully verified in this worker pass."
+    },
+    {
+      "brand": "Новые технологии печати",
+      "reason": "Fresh investment project and CEO name found, but current SIZE and practical contact route were not fully verified in this worker pass."
+    }
+  ],
+  "outreach_sent": 0
+}
