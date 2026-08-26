@@ -1,0 +1,166 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-26T22:38:05+03:00",
+  "base_config_version": "2026-08-26T22:01:30+03:00",
+  "base_canonical_count": 406,
+  "base_contactable_count": 406,
+  "last_completed_run": "N5K-20260826-436",
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "raw_pool": {
+    "distinct_russian_companies": 108,
+    "method": "cross-source company-name dedup before deep-check",
+    "sources": [
+      {
+        "source": "MiningWorld Russia 2026 official exhibitor directory, first visible page",
+        "raw_russian_distinct": 22,
+        "url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/miningworld-russia-2026/ru/Exhibitor"
+      },
+      {
+        "source": "Rosmould/Rosplast/3D-TECH 2026 exhibitor sample",
+        "raw_russian_distinct": 12,
+        "url": "https://go.raido.moscow/krokus-expo/rosmould-2026/"
+      },
+      {
+        "source": "NDT Russia 2026 exhibitor list",
+        "raw_russian_distinct": 21,
+        "url": "https://www.ndt-russia.ru/ru-RU/visitors/exhibitor-list.aspx"
+      },
+      {
+        "source": "Defectoscopy / NDT St. Petersburg 2026 exhibitor list",
+        "raw_russian_net_new_after_cross_source_dedup": 13,
+        "url": "https://www.ndt-defectoscopy.ru/ru-RU/about/exhibitor-list.aspx"
+      },
+      {
+        "source": "METALLOOBRABOTKA-2026 Russia catalog pages 18-21",
+        "raw_russian_distinct": 40,
+        "urls": [
+          "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=18",
+          "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=19",
+          "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=20",
+          "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=21"
+        ]
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw": 108,
+    "fast_gate_passed_for_deep_check": 4,
+    "size_passed": 3,
+    "legal_private_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "note": "Only four strongest candidates were deep-evaluated in this execution. The remaining raw candidates are not represented as deep-checked."
+  },
+  "deep_checked": [
+    {
+      "company": "ООО А9 Системс",
+      "result": "QUALIFIED",
+      "inn": "3808224840",
+      "ogrn": "1123850027806",
+      "legal_status": "active",
+      "private_company_confirmation": "RBC profile identifies founders as individuals Oleg Efremov and Dmitry Yakovlev",
+      "size": {
+        "revenue_2025_rub": 1502581000,
+        "revenue_growth_2025": "+56.28%",
+        "profit_2025_rub": 177901000,
+        "source_url": "https://b2b.house/company/OOO-A9-SISTEMS_1b319665-84e5-4655-914b-662215f071e9/"
+      },
+      "signal": {
+        "type": "S1/S2 growth and sector expansion",
+        "date": "2026-04-28",
+        "evidence": "Company reports MiningWorld Russia 2026 as an important stage for developing new business ties and strengthening its position in the industrial sector; 2025 revenue simultaneously grew 56.28% YoY.",
+        "urls": [
+          "https://a9systems.ru/2026/04/28/a9-sistems-na-miningworld-russia-itogi-vystavki/",
+          "https://b2b.house/company/OOO-A9-SISTEMS_1b319665-84e5-4655-914b-662215f071e9/"
+        ]
+      },
+      "lpr": {
+        "name": "Ефремов Олег Владимирович",
+        "role": "Генеральный директор",
+        "source_urls": [
+          "https://companies.rbc.ru/id/1123850027806-ooo-a9-sistems/",
+          "https://a9systems.ru/wp-content/uploads/2022/04/%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F-A9-Systems.pdf"
+        ]
+      },
+      "contact": {
+        "route": "general business contact",
+        "phone": "+7 (3952) 500-599",
+        "email": "info@a9systems.ru",
+        "url": "https://a9systems.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "3808224840",
+        "ogrn": "1123850027806",
+        "legal_name": "ООО А9 Системс",
+        "brand_domain": "А9 Системс|a9systems.ru"
+      },
+      "canonical_precheck": "Repository search for INN 3808224840 returned no matches before staging; canonical writer must repeat physical dedup immediately before integration."
+    },
+    {
+      "company": "АО Атомик Софт",
+      "result": "REJECT_AT_LEGAL_PRIVATE_GATE",
+      "inn": "7017373532",
+      "ogrn": "1157017005188",
+      "reason": "Current active legal entity, scale and S1/S2 expansion signal are strong, but this worker did not obtain sufficiently authoritative current evidence that the AO satisfies the required private-company gate. No inference was used.",
+      "evidence_urls": [
+        "https://saby.ru/profile/7017373532-701701001",
+        "https://miningworld.ru/ru/media/news/2026/april/09/proekty-avtomatizacii-v-dobyvayushchej-promyshlennosti/",
+        "https://events.automiq.ru/mining-26"
+      ]
+    },
+    {
+      "company": "ОАО Анжеромаш",
+      "result": "REJECT_AT_LEGAL_PRIVATE_GATE",
+      "inn": "4201000625",
+      "ogrn": "1024200507803",
+      "reason": "Scale and current industrial signal are confirmed, but the issuer/public-company form did not satisfy the strict private-company gate for this worker run.",
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1024200507803-oao-anzherskij-mashinostroitelnyij-zavod/",
+        "https://miningworld.ru/ru/media/news/2026/march/16/krupnogabaritnoe-oborudovanie-na-territorii-tyazheloj-texniki/"
+      ]
+    },
+    {
+      "company": "ООО Арктик Майнинг",
+      "result": "REJECT_AT_SIZE_GATE",
+      "inn": "9729406340",
+      "ogrn": "1257700365427",
+      "reason": "Active entity and industrial activity confirmed, but 2025 financial reporting shows no revenue; current scale is not sufficiently proven for the configured SIZE gate.",
+      "evidence_urls": [
+        "https://xfirm.ru/company/9729406340",
+        "https://arcticstroy.org/"
+      ]
+    }
+  ],
+  "qualified": [
+    {
+      "company": "ООО А9 Системс",
+      "inn": "3808224840",
+      "ogrn": "1123850027806",
+      "brand": "А9 Системс",
+      "domain": "a9systems.ru",
+      "lpr": "Ефремов Олег Владимирович",
+      "lpr_role": "Генеральный директор",
+      "phone": "+7 (3952) 500-599",
+      "email": "info@a9systems.ru",
+      "signal_date": "2026-04-28",
+      "signal_summary": "2025 revenue +56.28% YoY to 1.503bn RUB; MiningWorld Russia 2026 described by the company as an important stage for development of new business ties and strengthening industrial-sector positions.",
+      "evidence_urls": [
+        "https://a9systems.ru/2026/04/28/a9-sistems-na-miningworld-russia-itogi-vystavki/",
+        "https://b2b.house/company/OOO-A9-SISTEMS_1b319665-84e5-4655-914b-662215f071e9/",
+        "https://companies.rbc.ru/id/1123850027806-ooo-a9-sistems/"
+      ],
+      "contact_urls": [
+        "https://a9systems.ru/contacts/"
+      ],
+      "dedup_keys": [
+        "INN:3808224840",
+        "OGRN:1123850027806",
+        "LEGAL:ООО А9 Системс",
+        "BRAND_DOMAIN:А9 Системс|a9systems.ru"
+      ]
+    }
+  ]
+}
