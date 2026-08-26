@@ -1,0 +1,107 @@
+{
+  "worker": "growth_news",
+  "generated_at": "2026-08-26T23:42:43+03:00",
+  "source_head_context": {
+    "config_version": "2026-08-26T23:08:00+03:00",
+    "last_completed_run": "N5K-20260826-437",
+    "canonical_contactable": 409,
+    "integrity": "PASS"
+  },
+  "funnel": {
+    "raw_distinct_auditable_minimum": 38,
+    "fast_gate": 7,
+    "size": 4,
+    "legal": 3,
+    "signal": 3,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates_found_before_write": 0,
+    "excluded": 36
+  },
+  "note": "Target 100-180 distinct raw was not reached in this execution window; no thresholds were relaxed. Raw count is a conservative auditable minimum of distinct named companies observed, not search-result rows.",
+  "qualified_candidates": [
+    {
+      "brand": "NexTouch / ГК Некс-Т",
+      "legal_name": "ООО «НЕКС-Т»",
+      "inn": "7723740056",
+      "ogrn": "1097746776643",
+      "domain": "nextouch.ru",
+      "legal_status": "Действующая частная российская компания",
+      "size_evidence": {
+        "value": "Выручка около 3.013 млрд руб.; производственная площадка после расширения 3.3 тыс. м²; около 290 рабочих мест",
+        "urls": [
+          "https://companies.rbc.ru/okved/26.20/",
+          "https://crp.gov.ru/news/mer-moskvy-otkryl-pervuyu-v-rossii-robotizirovannuyu-liniyu-po-proizvodstvu-zhidkokristallicheskikh-/"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-07-10",
+        "summary": "Запущена первая в России роботизированная линия серийного производства ЖК-модулей; инвестиции 1.4 млрд руб., мощность около 500 тыс. изделий в год, переход к полному циклу производства.",
+        "url": "https://crp.gov.ru/news/mer-moskvy-otkryl-pervuyu-v-rossii-robotizirovannuyu-liniyu-po-proizvodstvu-zhidkokristallicheskikh-/"
+      },
+      "lpr": {
+        "name": "Владимир Владимирович Крикушенко",
+        "role": "основатель и генеральный директор NexTouch / ГК «Некс-Т»",
+        "url": "https://nextouch.ru/osnovatel-nextouch-vladimir-krikushenko-vklyuchyon-v-sostav-ekspertnogo-sovet-asi/"
+      },
+      "contact": {
+        "route": "partners@nextouch.ru; info@nextouch.ru; 8 800 700 2018; форма связи на официальном сайте",
+        "url": "https://nextouch.ru/kontakty/"
+      },
+      "dedup_keys": [
+        "7723740056",
+        "1097746776643",
+        "ООО НЕКС-Т",
+        "NexTouch|nextouch.ru"
+      ],
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "Новотерская / Кавминводы",
+      "legal_name": "АО «КАВМИНВОДЫ»",
+      "inn": "2630016660",
+      "ogrn": "1022601455425",
+      "domain": "novoterskaya.ru",
+      "legal_status": "Действующее непубличное АО, ОКФС 16 — частная собственность",
+      "size_evidence": {
+        "value": "Категория МСП: средний бизнес; около 201 сотрудника",
+        "urls": [
+          "https://check.tochka.com/company/1022601455425/",
+          "https://manufacturers.ru/company/kavminvody"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-03-24",
+        "summary": "Компания запустила новую производственную линию стоимостью 380 млн руб. и планирует увеличить производство на 18–19% в 2026 году на фоне роста спроса.",
+        "url": "https://www.kommersant.ru/doc/8533452"
+      },
+      "lpr": {
+        "name": "Максим Анатольевич Которов",
+        "role": "генеральный директор",
+        "url": "https://novoterskaya.ru/"
+      },
+      "contact": {
+        "route": "zavod@novoterskaya.ru; +7 (87922) 7-14-09; официальный сайт",
+        "url": "https://novoterskaya.ru/"
+      },
+      "dedup_keys": [
+        "2630016660",
+        "1022601455425",
+        "АО КАВМИНВОДЫ",
+        "Новотерская|novoterskaya.ru"
+      ],
+      "decision": "QUALIFIED"
+    }
+  ],
+  "prewrite_dedup": {
+    "repository_search": [
+      "7723740056 NexTouch НЕКС-Т",
+      "2630016660 Кавминводы Новотерская"
+    ],
+    "matches": 0
+  },
+  "outreach": 0
+}
