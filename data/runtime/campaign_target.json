@@ -12,11 +12,11 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-26T06:24:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260826-420",
-  "current_run_id": "N5K-20260826-420",
+  "last_completed_run_id": "N5K-20260826-421",
+  "current_run_id": "N5K-20260826-421",
   "last_run_id": "N5K-20260826-421",
   "latest_completed_run": "N5K-20260826-421",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 420 completed after physical integration and metadata REPAIR: +2 net new companies. Physical canonical/contactable 373/373; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 421 completed after physical integration and metadata REPAIR: +2 net new companies (Волгопромтранс, ГАММА-ПЛАСТ). Physical canonical/contactable 375/375; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
