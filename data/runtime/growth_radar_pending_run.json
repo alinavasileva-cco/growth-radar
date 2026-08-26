@@ -1,31 +1,72 @@
 {
-  "run_id": "N5K-20260826-428",
-  "updated_at": "2026-08-26T13:22:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
+  "run_id": "N5K-20260826-429",
+  "updated_at": "2026-08-26T14:06:45+03:00",
+  "status": "READY_FOR_INTEGRATION",
   "funnel": {
-    "discovered": 14,
-    "fast_gate_passed": 3,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
+    "discovered": 18,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 12
+    "duplicates": 0,
+    "excluded": 17
   },
   "lane_metrics": [
     {"lane":"HH/job-board","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"other job boards","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"industry catalogs","raw":2,"duplicates_or_early_rejects":2,"qualified":0},
-    {"lane":"regional business catalogs/news","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"growth/expansion/investment news","raw":3,"duplicates_or_early_rejects":2,"qualified":1},
+    {"lane":"industry catalogs","raw":3,"duplicates_or_early_rejects":2,"qualified":1},
+    {"lane":"regional business catalogs/news","raw":2,"duplicates_or_early_rejects":2,"qualified":0},
+    {"lane":"growth/expansion/investment news","raw":4,"duplicates_or_early_rejects":3,"qualified":1},
     {"lane":"official company sites/news","raw":2,"duplicates_or_early_rejects":1,"qualified":1},
-    {"lane":"Telegram/VK/YouTube/owner publications","raw":1,"duplicates_or_early_rejects":0,"qualified":1},
+    {"lane":"Telegram/VK/YouTube/owner publications","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"ratings/awards/accelerators/clubs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
+    {"lane":"segment expansion search","raw":2,"duplicates_or_early_rejects":2,"qualified":0}
   ],
-  "notes": "RUN 428 physically integrated in main at commit bb76a689c8e74df1775f0836bf71ed12a68f62c0. Physical canonical/contactable 385/385; integrity PASS; orphan contacts/evidence 0/0. Pending cleared after successful integration. No outreach.",
-  "qualified_companies": []
+  "notes": "RUN 429 low-overlap multi-lane discovery. Fresh source-of-truth before write: RUN 428, physical canonical/contactable 385/385, integrity PASS, orphan 0/0, staged 0. TTM passed exact physical master search by brand and INN before staging. Fresh 2026-08-26 signal: production of ERA-GLONASS control units increased 20% after equipment modernization; official site confirms 60-person team, 960,000-device annual capacity, legal entity and direct corporate route. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0538",
+      "Brand": "Три Точки Мануфактуринг / Three Points Manufacturing",
+      "Legal Name": "ООО «ТРИ ТОЧКИ МАНУФАКТУРИНГ»",
+      "INN": "5717007055",
+      "OGRN/OGRNIP": "1215700003639",
+      "Region": "Орловская область",
+      "City": "Воля / Мценский район",
+      "Segment": "Электроника / контрактное производство / телематика",
+      "Website": "https://factory.ttri.ru/",
+      "Revenue/Scale": "Выручка 1,591936 млрд ₽ за 2025 год; официальный производственный сайт указывает 60 человек в команде, 900 м² и мощность 960 000 устройств в год",
+      "Signal Level": "S2",
+      "Signal Summary": "26.08.2026 компания увеличила на 20% серийный выпуск блоков управления ЭРА-ГЛОНАСС для Tenet и Chery благодаря инвестициям в модернизацию оборудования; продолжается расширение производственного контура.",
+      "Signal Date": "2026-08-26",
+      "Signal Source": "Abireg; официальный завод Три Точки Мануфактуринг",
+      "Owner": "ООО «Три Точки»; ООО «Тес ЛАБ»",
+      "CEO": "Филатов Дмитрий Игоревич",
+      "LPR": "Филатов Дмитрий Игоревич",
+      "LPR Role": "Директор",
+      "Primary Phone": "8 (800) 555-15-72",
+      "Primary Email": "factory@ttri.ru",
+      "HH Contact": "",
+      "Contact Form": "https://factory.ttri.ru/",
+      "Contact Type": "Официальный корпоративный маршрут к производственной компании",
+      "Contact Source": "Официальный сайт и страница реквизитов ООО «Три Точки Мануфактуринг»",
+      "Consulting Hypothesis": "Управляемое масштабирование промышленного B2B после роста серийного выпуска: коммерческая модель контрактного производства, pipeline автопрома/промышленных заказчиков, приоритизация мощностей и система продаж под расширяющуюся загрузку завода.",
+      "contacts": [
+        {"value":"8 (800) 555-15-72","channel":"phone","type":"corporate","source":"Официальный сайт Три Точки Мануфактуринг","url":"https://factory.ttri.ru/","is_lpr":false,"notes":"Официальный корпоративный телефон"},
+        {"value":"factory@ttri.ru","channel":"email","type":"corporate","source":"Официальная страница реквизитов","url":"https://factory.ttri.ru/requisites/","is_lpr":false,"notes":"Официальный email производства"},
+        {"value":"https://factory.ttri.ru/","channel":"web","type":"corporate","source":"Официальный сайт","url":"https://factory.ttri.ru/","is_lpr":false,"notes":"Официальная форма обращения"}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «Три Точки Мануфактуринг», ИНН 5717007055, ОГРН 1215700003639; официальный сайт публикует эти реквизиты.","url":"https://factory.ttri.ru/requisites/","source":"Официальный сайт Три Точки Мануфактуринг"},
+        {"type":"SCALE","claim":"Выручка за 2025 год 1 591 936 000 ₽; официальный сайт указывает 60 человек в команде и мощность 960 000 устройств в год.","url":"https://b2b.house/company/OOO-TTM_5324b1dc-5167-4ba8-b7af-b2ea55e1382f/","source":"B2B.house, данные 2025; официальный сайт factory.ttri.ru"},
+        {"type":"SIGNAL","claim":"26.08.2026 выпуск блоков управления ЭРА-ГЛОНАСС для Tenet и Chery увеличен на 20% после модернизации оборудования.","url":"https://abireg.ru/newsitem/116792/","source":"Abireg, 26.08.2026"},
+        {"type":"LPR","claim":"Директор ООО «Три Точки Мануфактуринг» — Филатов Дмитрий Игоревич; учредители — ООО «Три Точки» и ООО «Тес ЛАБ».","url":"https://saby.ru/profile/5717007055-571701001","source":"Saby, актуальный профиль юрлица"},
+        {"type":"CONTACT","claim":"Официальные маршруты: 8 (800) 555-15-72, factory@ttri.ru, factory.ttri.ru.","url":"https://factory.ttri.ru/requisites/","source":"Официальный сайт Три Точки Мануфактуринг"},
+        {"type":"BRAND_TO_LEGAL","claim":"Официальный производственный сайт прямо связывает бренд «Три Точки Мануфактуринг» с ООО «Три Точки Мануфактуринг», ИНН 5717007055.","url":"https://factory.ttri.ru/requisites/","source":"Официальный сайт"}
+      ]
+    }
+  ]
 }
