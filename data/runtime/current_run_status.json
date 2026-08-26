@@ -5,11 +5,11 @@
   "updated_at": "2026-08-26T15:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 386,
     "target_count": 5000,
     "current_canonical_count": 388,
     "current_contactable_count": 388,
-    "progress_added": 388,
+    "progress_added": 2,
     "remaining": 4612
   },
   "funnel": {
@@ -20,11 +20,11 @@
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 0,
+    "qualified": 2,
     "duplicates": 4,
     "excluded": 8
   },
-  "qualified_companies": [],
+  "qualified_companies": ["Терика Восток / TERIKA", "Пермский завод грузовой техники / ПЗГТ"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
