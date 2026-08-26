@@ -1,31 +1,73 @@
 {
-  "run_id": "N5K-20260826-426",
-  "updated_at": "2026-08-26T11:02:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
+  "run_id": "N5K-20260826-427",
+  "updated_at": "2026-08-26T12:01:00+03:00",
   "funnel": {
-    "discovered": 52,
-    "fast_gate_passed": 2,
+    "discovered": 12,
+    "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 50
+    "duplicates": 0,
+    "excluded": 11
   },
   "lane_metrics": [
-    {"lane":"HH/job-board","raw":40,"duplicates_or_early_rejects":40,"qualified":0,"note":"Dymov Ceramic exact physical duplicate N5K-0353; saturated lane stopped."},
-    {"lane":"other job boards","raw":2,"duplicates_or_early_rejects":2,"qualified":0},
-    {"lane":"industry catalogs","raw":2,"duplicates_or_early_rejects":1,"qualified":1},
-    {"lane":"regional business catalogs/news","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
-    {"lane":"growth/expansion/investment news","raw":2,"duplicates_or_early_rejects":1,"qualified":1},
-    {"lane":"official company sites/news","raw":1,"duplicates_or_early_rejects":0,"qualified":1},
-    {"lane":"Telegram/VK/YouTube/owner publications","raw":1,"duplicates_or_early_rejects":0,"qualified":1},
+    {"lane":"HH/job-board","raw":0,"duplicates_or_early_rejects":0,"qualified":0,"note":"Saturated lane not rescanned as primary source in this RUN."},
+    {"lane":"other job boards","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
+    {"lane":"industry catalogs","raw":3,"duplicates_or_early_rejects":2,"qualified":1,"note":"Anatomika originated from fresh Russian manufacturing/new-factory coverage."},
+    {"lane":"regional business catalogs/news","raw":2,"duplicates_or_early_rejects":1,"qualified":1,"note":"Same qualified company independently supported by Татарстан investment/industrial sources; counted once globally."},
+    {"lane":"growth/expansion/investment news","raw":2,"duplicates_or_early_rejects":1,"qualified":1,"note":"Anatomika: 20 Aug 2026 launch of new full-cycle hip-endoprosthesis production; counted once globally."},
+    {"lane":"official company sites/news","raw":1,"duplicates_or_early_rejects":0,"qualified":1,"note":"Official site used for company, product, phone/email and production verification; same company counted once globally."},
+    {"lane":"Telegram/VK/YouTube/owner publications","raw":0,"duplicates_or_early_rejects":0,"qualified":0},
     {"lane":"ratings/awards/accelerators/clubs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"franchise/dealer catalogs","raw":1,"duplicates_or_early_rejects":1,"qualified":0},
     {"lane":"segment expansion search","raw":1,"duplicates_or_early_rejects":1,"qualified":0}
   ],
-  "notes": "RUN 426 physically integrated in main at commit b5813a8608963879fb0efb6ac5628104b62c266c. Physical canonical/contactable 383/383; integrity PASS; orphan contacts/evidence 0/0; campaign/runtime synchronized. Pending payload cleared to prevent false staged state or duplicate retrigger. No outreach.",
-  "qualified_companies": []
+  "notes": "Fresh source of truth before staging: physical canonical/contactable 383/383 at HEAD 0e800d4c8165ce2ea8080507027d0a1a51aaba38; physical master is authoritative. current_run_status was re-corrupted by a later integration event with baseline_count=294 and qualified=0, but physical counts remain 383/383 and CURRENT_WORKING_CONFIG/campaign repair commit documents RUN 426 as +1. Repository exact-INN search for 1657194650 returned no indexed match; final authoritative physical dedup remains mandatory in integration guard. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID":"N5K-0536",
+      "Brand":"Анатомика",
+      "Legal Name":"ООО «АНАТОМИКА»",
+      "INN":"1657194650",
+      "OGRN/OGRNIP":"1151690031790",
+      "Region":"Республика Татарстан",
+      "City":"Казань / Зеленодольск",
+      "Segment":"Производство медицинских имплантатов и эндопротезов / MedTech B2B-B2G",
+      "Website":"https://anatomica.ru/",
+      "Revenue/Scale":"Действующее частное ООО; выручка 756,6 млн ₽ за 2025 год (+42,2% год к году), среднесписочная численность 81 сотрудник по данным ФНС-агрегаторов. В августе 2026 запущено новое производство полного цикла в Зеленодольске с плановой мощностью около 20 тыс. комплектов эндопротезов в год; инвестиции 461 млн ₽.",
+      "Signal Level":"S2",
+      "Signal Summary":"20 августа 2026 компания запустила новое высокотехнологичное производство эндопротезов тазобедренного сустава полного цикла в промпарке Зеленодольск. Объём инвестиций 461 млн ₽, плановая мощность около 20 тыс. комплектов в год. Это подтверждённая производственная экспансия и расширение продуктового/коммерческого контура.",
+      "Signal Date":"2026-08-20",
+      "Signal Source":"https://www.ivfrt.ru/news/v-tatarstane-pri-uchastii-frp-sozdali-proizvodstvo-komponentov-dlya-endoprotezov-tazobedrennogo-sust/",
+      "Owner":"Михеев Альмир Александрович — 100%",
+      "CEO":"Замалиев Азат Наилевич",
+      "LPR":"Замалиев Азат Наилевич",
+      "LPR Role":"Директор",
+      "Primary Phone":"+7 (843) 570-05-05",
+      "Primary Email":"5700505@mail.ru",
+      "HH Contact":"",
+      "Contact Form":"https://anatomica.ru/",
+      "Other Contact":"",
+      "Contact Type":"Official corporate phone + corporate email + official website route",
+      "Contact Source":"Official Anatomika website",
+      "Number Of Contacts Found":2,
+      "Consulting Hypothesis":"Коммерческая система для следующего этапа масштабирования MedTech-производства: сегментация клиник/дистрибьюторов/госзаказчиков, pipeline и тендерный контур, коммерческая аналитика, синхронизация продаж с новой производственной мощностью и выводом расширенной линейки российских имплантатов.",
+      "Final Quick Status":"МОЖНО СВЯЗЫВАТЬСЯ",
+      "contacts":[
+        {"value":"+7 (843) 570-05-05","channel":"Phone","type":"Official corporate phone","source":"Official Anatomika site","url":"https://anatomica.ru/","is_lpr":false,"notes":"Корпоративный маршрут"},
+        {"value":"5700505@mail.ru","channel":"Email","type":"Official corporate email","source":"Official Anatomika site","url":"https://anatomica.ru/","is_lpr":false,"notes":"Публичный корпоративный email"}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"ООО АНАТОМИКА, ИНН 1657194650, ОГРН 1151690031790 — действующая российская частная компания; актуальный директор с марта 2026 — Замалиев Азат Наилевич, учредитель 100% — Михеев Альмир Александрович.","url":"https://companium.ru/id/1151690031790-anatomika","source":"Current legal profile"},
+        {"type":"SCALE_CURRENT","claim":"Выручка 756,6 млн ₽ за 2025 год (+42,2% YoY), ССЧ 81 сотрудник; сведения основаны на актуальной отчётности 2025/ФНС-данных.","url":"https://firmoteka.ru/1657194650","source":"Current 2025 financial profile"},
+        {"type":"SIGNAL","claim":"20.08.2026 запущено новое производство эндопротезов полного цикла в Зеленодольске: инвестиции 461 млн ₽, плановая мощность около 20 тыс. комплектов в год.","url":"https://www.ivfrt.ru/news/v-tatarstane-pri-uchastii-frp-sozdali-proizvodstvo-komponentov-dlya-endoprotezov-tazobedrennogo-sust/","source":"Investment and Venture Fund of the Republic of Tatarstan"},
+        {"type":"LPR","claim":"Замалиев Азат Наилевич — актуальный директор ООО АНАТОМИКА; Михеев Альмир Александрович — учредитель 100%.","url":"https://companium.ru/id/1151690031790-anatomika","source":"Current legal profile"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует +7 (843) 570-05-05 и 5700505@mail.ru.","url":"https://anatomica.ru/","source":"Official Anatomika site"},
+        {"type":"BRAND_LEGAL","claim":"Официальный сайт описывает собственное производство медицинских имплантатов под брендом Анатомика; независимые реестровые/судебные источники идентифицируют производителя как ООО АНАТОМИКА, ИНН 1657194650.","url":"https://anatomica.ru/","source":"Official site + current legal profile"}
+      ]
+    }
+  ]
 }
