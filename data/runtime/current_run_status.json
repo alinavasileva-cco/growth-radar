@@ -1,36 +1,38 @@
 {
-  "run_id": "N5K-20260826-417",
+  "run_id": "N5K-20260826-418",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T03:12:00+03:00",
+  "updated_at": "2026-08-26T04:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 366,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 368,
-    "current_contactable_count": 368,
-    "progress_added": 368,
-    "remaining": 4632
+    "current_canonical_count": 369,
+    "current_contactable_count": 369,
+    "progress_added": 369,
+    "remaining": 4631
   },
   "funnel": {
-    "discovered": 38,
-    "fast_gate_passed": 6,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
+    "discovered": 46,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 7,
-    "excluded": 29
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 44
   },
-  "qualified_companies": ["НПП Технофильтр / Technofilter", "Fimako / ЛМР Пласт"],
+  "qualified_companies": [
+    "Новый Технологический Арсенал / НТА"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "368_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "368_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "369_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "369_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
