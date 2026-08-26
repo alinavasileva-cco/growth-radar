@@ -1,0 +1,134 @@
+{
+  "worker_run_id": "jobs-20260827-004500",
+  "lane": "jobs",
+  "created_at": "2026-08-27T00:45:00+03:00",
+  "mode": "READ_DISCOVERY_ONLY",
+  "canonical_write_performed": false,
+  "outreach_sent": 0,
+  "source_baseline": {
+    "head_sha": "0e4ac997ca820ccd79d417410160cb36299c2767",
+    "latest_verified_run": "N5K-20260827-438",
+    "canonical_count": 412,
+    "contactable_count": 412,
+    "integrity_status": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_funnel": {
+    "raw_discovered_distinct_employers": 80,
+    "fast_gate_selected_for_deep_check": 5,
+    "deep_checked": 5,
+    "size_passed": 2,
+    "legal_passed": 2,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "exact_duplicate_vs_early_reject_split": null,
+    "instrumentation_note": "80 distinct employer-level raw candidates were audibly surfaced across fresh job-board result pages. Exact duplicate-versus-early-reject split was not reconstructed and is intentionally left null. Initial repetitive job-board results were abandoned in favor of alternate HH region/role pages; no unmeasured rate is claimed."
+  },
+  "qualified_candidates": [
+    {
+      "brand": "ПРОФУД / Profood",
+      "legal_name": "ООО ПК \"ПРОФУД\"",
+      "full_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ \"ПРОФУД\"",
+      "inn": "6679127590",
+      "ogrn": "1196658060686",
+      "region": "Свердловская область",
+      "city": "посёлок Большой Исток",
+      "website": "https://profood-trade.ru/",
+      "company_status": "Действующая частная компания",
+      "scale": {
+        "revenue_2025_rub": 165203000,
+        "employees_2025": 13,
+        "scale_source_url": "https://companium.ru/id/1196658060686-pk-profud",
+        "scale_note": "Финансовая отчётность за 2025 год: выручка 165,2 млн руб.; ССЧ 13 человек."
+      },
+      "signal": {
+        "level": "S1",
+        "type": "Руководитель отдела продаж / усиление коммерческого направления",
+        "date": "2026-08-27",
+        "summary": "В свежей job-board выдаче присутствует вакансия руководителя отдела продаж от ООО Производственная компания Профуд. Параллельные актуальные вакансии компании прямо указывают на расширение коммерческого направления, развитие системных продаж, оптовый и СТМ-каналы, работу с CRM и активное привлечение клиентов.",
+        "source_urls": [
+          "https://ekaterinburg.hh.ru/vacancies/rukovoditel-sobstvennogo-proizvodstva/za_sutki",
+          "https://www.notexistskhtjsru.jobvk.com/ekaterinburg/v-byudzhete",
+          "https://ekaterinburg.zarplata.ru/vacancies/sportivniy-menedzher"
+        ]
+      },
+      "lpr": {
+        "name": "Колмагоров Евгений Иванович",
+        "role": "Генеральный директор и единственный учредитель",
+        "ownership": "100%",
+        "source_urls": [
+          "https://companium.ru/id/1196658060686-pk-profud",
+          "https://check.tochka.com/company/1196658060686/"
+        ]
+      },
+      "contact_route": {
+        "primary_phone": "+7 800 101-70-70",
+        "primary_email": "b2b@profood-trade.ru",
+        "additional_emails": [
+          "boss@profood-trade.ru",
+          "finans@profood-trade.ru"
+        ],
+        "website": "https://profood-trade.ru/",
+        "route_type": "Official company B2B phone/email + website callback form",
+        "source_urls": [
+          "https://profood-trade.ru/",
+          "https://companium.ru/id/1196658060686-pk-profud"
+        ]
+      },
+      "brand_legal_match": {
+        "confirmed": true,
+        "evidence": "The official Profood website publishes the same production profile and B2B contacts; current registry/company profiles link profood-trade.ru to ООО ПК ПРОФУД, INN 6679127590, OGRN 1196658060686."
+      },
+      "dedup_keys": {
+        "inn": "6679127590",
+        "ogrn": "1196658060686",
+        "legal_name": "ООО ПК ПРОФУД",
+        "brand_domain": "ПРОФУД|profood-trade.ru"
+      },
+      "pre_stage_dedup": {
+        "inn_repo_match": false,
+        "ogrn_repo_match": false,
+        "brand_domain_repo_match": false,
+        "checked_against_head_sha": "0e4ac997ca820ccd79d417410160cb36299c2767"
+      },
+      "evidence": [
+        {
+          "type": "LEGAL_SCALE_LPR",
+          "url": "https://companium.ru/id/1196658060686-pk-profud",
+          "claim": "ООО ПК ПРОФУД действует; INN 6679127590, OGRN 1196658060686; выручка 165,2 млн руб. за 2025 год, 13 сотрудников; Колмагоров Евгений Иванович — гендиректор и единственный учредитель."
+        },
+        {
+          "type": "LEGAL_CURRENT",
+          "url": "https://companies.rbc.ru/id/1196658060686-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennaya-kompaniya-profud/",
+          "claim": "Текущее юрлицо и реквизиты ООО ПК ПРОФУД подтверждены; выручка за 2025 год 165,203 млн руб."
+        },
+        {
+          "type": "SIGNAL",
+          "url": "https://ekaterinburg.hh.ru/vacancies/rukovoditel-sobstvennogo-proizvodstva/za_sutki",
+          "claim": "Свежая выдача HH содержит вакансию Руководитель отдела продаж от ООО Производственная компания Профуд в Екатеринбурге/Большом Истоке."
+        },
+        {
+          "type": "SIGNAL_CONTEXT",
+          "url": "https://ekaterinburg.zarplata.ru/vacancies/sportivniy-menedzher",
+          "claim": "Актуальная вакансия компании описывает расширение коммерческого направления, системные продажи, оптовых клиентов и заказчиков СТМ, CRM."
+        },
+        {
+          "type": "CONTACT_OFFICIAL",
+          "url": "https://profood-trade.ru/",
+          "claim": "Официальный сайт публикует 8 800 101 70 70, b2b@profood-trade.ru и callback route."
+        }
+      ],
+      "qualification": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "final": "QUALIFIED"
+      }
+    }
+  ]
+}
