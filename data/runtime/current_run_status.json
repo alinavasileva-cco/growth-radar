@@ -2,7 +2,7 @@
   "run_id": "N5K-20260826-428",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T13:18:00+03:00",
+  "updated_at": "2026-08-26T13:22:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 294,
@@ -20,13 +20,11 @@
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
+    "qualified": 0,
     "duplicates": 1,
     "excluded": 12
   },
-  "qualified_companies": [
-    "Семаргл / Semargl"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
