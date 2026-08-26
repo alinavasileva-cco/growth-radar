@@ -1,36 +1,38 @@
 {
-  "run_id": "N5K-20260826-425",
+  "run_id": "N5K-20260826-426",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T10:00:20+03:00",
+  "updated_at": "2026-08-26T10:59:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 381,
+    "baseline_count": 294,
     "target_count": 5000,
-    "current_canonical_count": 382,
-    "current_contactable_count": 382,
-    "progress_added": 1,
-    "remaining": 4618
+    "current_canonical_count": 383,
+    "current_contactable_count": 383,
+    "progress_added": 383,
+    "remaining": 4617
   },
   "funnel": {
-    "discovered": 40,
-    "fast_gate_passed": 1,
+    "discovered": 52,
+    "fast_gate_passed": 2,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 0,
-    "excluded": 39
+    "duplicates": 1,
+    "excluded": 50
   },
-  "qualified_companies": ["HD LED TECH / HDLT"],
+  "qualified_companies": [
+    "Русь-Турбо / Rus-Turbo"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "382_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "382_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "383_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "383_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
