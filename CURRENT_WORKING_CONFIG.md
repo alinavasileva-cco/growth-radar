@@ -90,3 +90,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260826-437`: 409/409, +3, PASS, orphan 0/0.
 - `N5K-20260827-438`: 412/412, +3, PASS, orphan 0/0.
 - `N5K-20260827-439`: 416/416, +4, PASS, orphan 0/0.
+
+
+## Latest verified run N5K-20260827-440
+Canonical/contactable: 420/420. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

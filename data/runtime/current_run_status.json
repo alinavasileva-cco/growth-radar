@@ -1,64 +1,64 @@
 {
-  "run_id": "N5K-20260827-439",
+  "run_id": "N5K-20260827-440",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T01:03:00+03:00",
+  "updated_at": "2026-08-27T02:03:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 412,
+    "baseline_count": 416,
     "target_count": 5000,
-    "current_canonical_count": 416,
-    "current_contactable_count": 416,
+    "current_canonical_count": 420,
+    "current_contactable_count": 420,
     "progress_added": 4,
-    "remaining": 4584
+    "remaining": 4580
   },
   "funnel": {
-    "discovered": 120,
-    "fast_gate_passed": 11,
-    "size_check_passed": 8,
-    "legal_match_passed": 7,
-    "signal_confirmed": 6,
-    "lpr_identified": 5,
+    "discovered": 105,
+    "fast_gate_passed": 12,
+    "size_check_passed": 7,
+    "legal_match_passed": 6,
+    "signal_confirmed": 5,
+    "lpr_identified": 4,
     "contact_route_found": 4,
     "qualified": 4,
     "duplicates": 0,
-    "excluded": 116
+    "excluded": 101
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
       "raw": 80,
-      "duplicates_or_early_rejects": 79,
+      "duplicates_or_early_rejects": 76,
       "qualified": 1,
-      "note": "Profood retained after fresh 2026 HH verification. Worker pools are not summed globally without a full cross-worker raw identity index."
+      "note": "Fresh immutable worker 20260827-012706-jobs.json; >70% saturation, lane stopped after ingestion. Worker pools not summed globally without full cross-worker raw identity index."
     },
     {
       "lane": "industry worker",
-      "raw": 120,
-      "duplicates_or_early_rejects": 119,
+      "raw": 105,
+      "duplicates_or_early_rejects": 100,
       "qualified": 1,
-      "note": "Polyplast Novomoskovsk retained after fresh legal, 2025 scale, 2026 expansion and official contact verification."
+      "note": "Fresh immutable worker 20260827-013425-industry.json from METALLOOBRABOTKA-2026 catalog; 105 distinct within source."
     },
     {
       "lane": "growth/news worker",
-      "raw": 62,
-      "duplicates_or_early_rejects": 60,
+      "raw": 104,
+      "duplicates_or_early_rejects": 92,
       "qualified": 2,
-      "note": "Callisto Vision and Metallstroy64 retained after fresh 2026 expansion-signal and current official contact verification."
+      "note": "Fresh immutable worker 20260827-014013-growth-news.json; current August 2026 investment/expansion signals."
     }
   ],
   "qualified_companies": [
-    "ПРОФУД / Profood",
-    "Полипласт Новомосковск / Polyplast Novomoskovsk",
-    "CALLISTO VISION / ГК Каллисто",
-    "Металлстрой64 / Metallstroy64"
+    "Штрих Ру / Shtrih.ru",
+    "ЛИДЕРМАШ / LEMASH",
+    "ПСМ / Промышленные силовые машины",
+    "Логика молока"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "416_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "416_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "420_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "420_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

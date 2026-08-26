@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-08-27T01:03:00+03:00",
+  "generated_at": "2026-08-27T02:03:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-439",
-  "current_run_id": "N5K-20260827-439",
+  "latest_completed_run_id": "N5K-20260827-440",
+  "current_run_id": "N5K-20260827-440",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 416,
-  "contactable_verified": 416,
+  "canonical_pool_verified": 420,
+  "contactable_verified": 420,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4584,
+  "remaining_to_target": 4580,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_439": {
-    "raw_discovered": 120,
-    "fast_gate_passed": 11,
-    "size_check_passed": 8,
-    "legal_match_passed": 7,
-    "signal_confirmed": 6,
-    "lpr_identified": 5,
+  "run_440": {
+    "raw_discovered": 105,
+    "fast_gate_passed": 12,
+    "size_check_passed": 7,
+    "legal_match_passed": 6,
+    "signal_confirmed": 5,
+    "lpr_identified": 4,
     "contact_route_found": 4,
     "qualified": 4,
     "physically_integrated": 4,
     "duplicates": 0,
-    "excluded": 116,
+    "excluded": 101,
     "lane_metrics": [
       {
         "lane": "jobs worker",
         "raw": 80,
-        "duplicates_or_early_rejects": 79,
+        "duplicates_or_early_rejects": 76,
         "qualified": 1,
-        "note": "Profood retained after fresh 2026 HH verification. Worker pools are not summed globally without a full cross-worker raw identity index."
+        "note": "Fresh immutable worker 20260827-012706-jobs.json; >70% saturation, lane stopped after ingestion. Worker pools not summed globally without full cross-worker raw identity index."
       },
       {
         "lane": "industry worker",
-        "raw": 120,
-        "duplicates_or_early_rejects": 119,
+        "raw": 105,
+        "duplicates_or_early_rejects": 100,
         "qualified": 1,
-        "note": "Polyplast Novomoskovsk retained after fresh legal, 2025 scale, 2026 expansion and official contact verification."
+        "note": "Fresh immutable worker 20260827-013425-industry.json from METALLOOBRABOTKA-2026 catalog; 105 distinct within source."
       },
       {
         "lane": "growth/news worker",
-        "raw": 62,
-        "duplicates_or_early_rejects": 60,
+        "raw": 104,
+        "duplicates_or_early_rejects": 92,
         "qualified": 2,
-        "note": "Callisto Vision and Metallstroy64 retained after fresh 2026 expansion-signal and current official contact verification."
+        "note": "Fresh immutable worker 20260827-014013-growth-news.json; current August 2026 investment/expansion signals."
       }
     ]
   }
