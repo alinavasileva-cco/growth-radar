@@ -1,0 +1,116 @@
+{
+  "worker": "industry",
+  "generated_at": "2026-08-27T01:34:25+03:00",
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "baseline": {
+    "last_completed_run": "N5K-20260827-439",
+    "canonical": 416,
+    "contactable": 416,
+    "integrity": "PASS",
+    "staged_not_counted": 0,
+    "config_source": "CURRENT_WORKING_CONFIG.md"
+  },
+  "discovery": {
+    "lane": "industry",
+    "source": "МЕТАЛЛООБРАБОТКА-2026 / Экспоцентр, российские участники",
+    "source_pages": [23,24,25,26,27,28,29,30,31,32,33],
+    "raw_rows_seen": 110,
+    "intra_source_duplicate_rows_removed": 5,
+    "raw_distinct": 105,
+    "notes": "Считались только отдельные названия компаний из страниц каталога; повторные стенды одной и той же компании удалены до fast gate."
+  },
+  "funnel": {
+    "raw": 105,
+    "fast_gate": 5,
+    "size": 3,
+    "legal": 3,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "duplicates_or_early_rejects": 100
+  },
+  "qualified": [
+    {
+      "brand": "ЛИДЕРМАШ",
+      "legal_name": "ООО \"ЛИДЕРМАШ СТАНКИ\"",
+      "inn": "7707427544",
+      "ogrn": "1197746134948",
+      "country": "Россия",
+      "city": "Москва",
+      "status": "Действующая организация",
+      "private_company": true,
+      "size": {
+        "metric": "Выручка 2025",
+        "value_rub": 1145584000,
+        "employees_2025": 54,
+        "source": "https://vaskov.pro/company/7707427544"
+      },
+      "legal": {
+        "director": "Иванова Тамара Михайловна",
+        "owner_lpr": "Иванова Тамара Михайловна",
+        "owner_share": "100% (единственный учредитель по актуальным открытым данным)",
+        "sources": [
+          "https://companies.rbc.ru/id/1197746134948-obschestvo-s-ogranichennoj-otvetstvennostyu-lidermash-stanki/",
+          "https://kontragentpro.ru/company/7707427544-ooo-lidermash-stanki"
+        ]
+      },
+      "signal": {
+        "class": "S1/S3",
+        "date": "2026-02-15",
+        "summary": "Компания официально сообщает, что продолжает активно расширять географию поставок и укреплять партнёрские отношения с производственными предприятиями по всей стране; указывает десятки реализованных проектов. Дополнительно в феврале 2026 года компания фиксирует собственный бренд LEMASH и планы дальнейшего расширения горизонтов роста в 2026 году.",
+        "sources": [
+          "https://leadermash.ru/info/news/novye-proekty-stanki-vvedennye-v-ekspluatatsiyu/",
+          "https://leadermash.ru/info/news/lidermash-nam-7-let/"
+        ]
+      },
+      "contact": {
+        "route": "Официальный коммерческий контакт / форма обращения",
+        "phone": ["+7 (499) 113-18-21", "+7 (800) 551-75-91"],
+        "email": "info@leadermash.ru",
+        "contact_page": "https://leadermash.ru/contacts/",
+        "regional_routes": [
+          "Краснодар: +7 (861) 207-05-06",
+          "Челябинск: +7 (351) 711-13-86"
+        ]
+      },
+      "dedup_keys": {
+        "inn": "7707427544",
+        "ogrn": "1197746134948",
+        "exact_legal_name": "ООО \"ЛИДЕРМАШ СТАНКИ\"",
+        "brand_domain": "ЛИДЕРМАШ|leadermash.ru"
+      },
+      "prewrite_repo_dedup": {
+        "query": "7707427544",
+        "matches": 0
+      },
+      "evidence_urls": [
+        "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=31",
+        "https://vaskov.pro/company/7707427544",
+        "https://companies.rbc.ru/id/1197746134948-obschestvo-s-ogranichennoj-otvetstvennostyu-lidermash-stanki/",
+        "https://leadermash.ru/info/news/novye-proekty-stanki-vvedennye-v-ekspluatatsiyu/",
+        "https://leadermash.ru/info/news/lidermash-nam-7-let/",
+        "https://leadermash.ru/contacts/"
+      ]
+    }
+  ],
+  "deep_checked_not_qualified": [
+    {
+      "candidate": "МЕАТЭК / ООО \"МЕАТЭК ИНЖИНИРИНГ\"",
+      "reason": "Сильная операционная активность и актуальные производственные новости есть, но выручка 2025 около 916.9 млн руб. и резкое падение к 2024; без более точного подтверждения текущего порога SIZE не повышен до QUALIFIED."
+    },
+    {
+      "candidate": "Компания АМГ / ООО \"АЛЬФАМЕТАЛЛГРУПП\"",
+      "reason": "Масштаб и частный контроль подтверждаются, но в этом проходе не найден достаточно однозначный свежий S1-S3 сигнал с датой, чтобы повышать кандидата без натяжки."
+    },
+    {
+      "candidate": "ЛидТехнология",
+      "reason": "Выручка 2025 около 380.5 млн руб.; не повышен по SIZE."
+    },
+    {
+      "candidate": "Кибернетика",
+      "reason": "Подходящее юрлицо из каталога не подтверждает требуемый масштаб; найденные одноимённые компании существенно ниже."
+    }
+  ]
+}
