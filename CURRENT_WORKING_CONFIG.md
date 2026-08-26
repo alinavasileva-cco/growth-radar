@@ -1,12 +1,12 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-26T02:24:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260826-416`  
+**Версия:** 2026-08-26T03:12:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260826-417`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **366 / 366**  
+**Физически подтверждённый canonical/contactable:** **368 / 368**  
 **Qualified staged not counted:** **0**  
 **Цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось:** **4634**  
+**Осталось:** **4632**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -14,9 +14,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **366 / 366**;
+- physical canonical/contactable count: **368 / 368**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260826-416`;
+- последний завершённый RUN: `N5K-20260826-417`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -94,10 +94,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260826-414`: 362/362, +3, PASS, orphan 0/0.
 - `N5K-20260826-415`: 365/365, +3, PASS, orphan 0/0.
 - `N5K-20260826-416`: 366/366, +1, PASS, orphan 0/0.
-
-## Latest verified run N5K-20260826-416
-Canonical/contactable: 366/366. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260826-417`: 368/368, +2, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260826-417
 Canonical/contactable: 368/368. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
