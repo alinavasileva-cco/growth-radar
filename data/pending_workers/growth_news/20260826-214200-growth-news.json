@@ -1,0 +1,149 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-26T21:42:00+03:00",
+  "head_checked": "0ca7dcc2d1b67d295b5c9336d1b1f7d9d372a8d4",
+  "canonical_snapshot": {
+    "campaign_id": "new_5000",
+    "canonical_contactable": 404,
+    "integrity": "PASS",
+    "source": "data/runtime/current_run_status.json; completed N5K-20260826-435"
+  },
+  "worker_funnel": {
+    "raw_discovered_distinct": 30,
+    "fast_gate": 9,
+    "size": 6,
+    "legal": 5,
+    "signal": 4,
+    "lpr": 3,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates_confirmed_before_deep_check": 0,
+    "note": "Auditable minimum of 30 distinct named companies was reviewed from fresh growth/expansion sources in this pass. Target 100-180 raw was not reached; criteria were not weakened. Harmony failed scale on the matched legal entity; IEK was excluded because the current issuer/holding is public; Ferrum was not staged because the new-plant signal could not be tied with sufficient certainty to the exact operating legal entity; Gamma-Plast had an unresolved legal-entity/domain mismatch. Only candidates with all required gates independently evidenced are staged."
+  },
+  "qualified": [
+    {
+      "brand": "Группа Теплолюкс / Teploluxe",
+      "legal_name": "ООО «ГРУППА ТЕПЛОЛЮКС»",
+      "inn": "5029052258",
+      "ogrn": "1025003531420",
+      "status": "active",
+      "domain": "teploluxe.ru",
+      "dedup_keys": [
+        "5029052258",
+        "1025003531420",
+        "ООО ГРУППА ТЕПЛОЛЮКС",
+        "Теплолюкс|teploluxe.ru"
+      ],
+      "size_evidence": {
+        "fact": "Выручка за 2025 год около 3,8 млрд ₽; 127 сотрудников по актуальным открытым карточкам; официальный материал о новом заводе сообщает инвестиции более 2 млрд ₽ и целевую выручку около 5 млрд ₽ по итогам 2026 года.",
+        "urls": [
+          "https://companium.ru/id/1025003531420-gruppa-teplolyuks",
+          "https://companies.rbc.ru/id/1025003531420-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-gruppa-teplolyuks/",
+          "https://b2b.teploluxe.ru/news/Plant_Opening"
+        ]
+      },
+      "legal_evidence": {
+        "fact": "Действующее частное ООО; ИНН 5029052258, ОГРН 1025003531420; директор Конышев Павел Русланович.",
+        "urls": [
+          "https://saby.ru/profile/5029052258-502901001",
+          "https://companies.rbc.ru/id/1025003531420-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-gruppa-teplolyuks/",
+          "https://www.teploluxe.ru/about/contacts/"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-08-03",
+        "fact": "Группа «Теплолюкс» открыла в Мытищах новую производственную площадку площадью почти 10 000 м²; инвестиции в российское производство превысили 2 млрд ₽. Компания связывает запуск с устойчивым ростом спроса и планирует наращивать объёмы производства.",
+        "urls": [
+          "https://b2b.teploluxe.ru/news/Plant_Opening",
+          "https://www.groupe-atlantic.ru/events/2026/otkrytie-novogo-zavoda-teplolyuks/",
+          "https://rg.ru/amp/2026/07/29/gruppa-teploliuks-investirovala-bolee-2-mlrd-rublej-v-razvitie-rossijskogo-proizvodstva-inzhenernyh-sistem.html"
+        ]
+      },
+      "lpr": {
+        "name": "Конышев Павел Русланович",
+        "role": "Директор ООО «Группа Теплолюкс»",
+        "urls": [
+          "https://saby.ru/profile/5029052258-502901001",
+          "https://companies.rbc.ru/id/1025003531420-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-gruppa-teplolyuks/"
+        ]
+      },
+      "contact": {
+        "route": "официальный телефон +7 (495) 728-80-80 / +7 (800) 775-40-42, официальные email и контактный раздел компании",
+        "urls": [
+          "https://www.teploluxe.ru/about/contacts/",
+          "https://teploluxe.help/contacts"
+        ]
+      },
+      "dedup_check": {
+        "repo_search_inn": "no match at worker time",
+        "repo_search_brand": "no confirmed canonical match at worker time",
+        "canonical_snapshot_checked": 404
+      },
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "Фабрика Вентиляции ГалВент / GalVent",
+      "legal_name": "ООО «ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ»",
+      "inn": "7720605108",
+      "ogrn": "1087746091410",
+      "status": "active",
+      "domain": "galvent.ru",
+      "dedup_keys": [
+        "7720605108",
+        "1087746091410",
+        "ООО ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ",
+        "ГалВент|galvent.ru"
+      ],
+      "size_evidence": {
+        "fact": "Действующее частное ООО; открытые карточки указывают 525 сотрудников и выручку 4,74 млрд ₽ по последней доступной публичной финансовой отчётности; свежий проект нового комплекса превышает 1,3 млрд ₽ и рассчитан примерно на 600 рабочих мест.",
+        "urls": [
+          "https://companies.rbc.ru/id/1087746091410-ooo-fabrika-ventilyatsii-galvent/",
+          "https://saby.ru/profile/7720605108-500101001",
+          "https://fabricators.ru/news/novosti-proizvoditeley"
+        ]
+      },
+      "legal_evidence": {
+        "fact": "На 26 августа 2026 организация действует; ИНН 7720605108, ОГРН 1087746091410; генеральный директор и 100% учредитель Прахов Кирилл Валерьевич.",
+        "urls": [
+          "https://companies.rbc.ru/id/1087746091410-ooo-fabrika-ventilyatsii-galvent/",
+          "https://galvent.ru/kontakty/",
+          "https://check.tochka.com/company/1087746091410/"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-08-06",
+        "fact": "Компания запустила в Балашихе новый производственный комплекс полного цикла по выпуску вентиляционного оборудования; инвестиции превысили 1,3 млрд ₽, площадка уже работает, проект предусматривает около 600 рабочих мест.",
+        "urls": [
+          "https://fabricators.ru/news/novosti-proizvoditeley",
+          "https://overclockers.ru/blog/kosmos_news/amp/261140/V-Podmoskov-e-nachal-rabotat-novyj-zavod-po-vypusku-ventilyacionnogo-oborudovaniya",
+          "https://sdelanounas.ru/blogs/?id=106"
+        ]
+      },
+      "lpr": {
+        "name": "Прахов Кирилл Валерьевич",
+        "role": "Генеральный директор и 100% учредитель",
+        "urls": [
+          "https://galvent.ru/kontakty/",
+          "https://companies.rbc.ru/amp/ogrn/1087746091410/",
+          "https://check.tochka.com/company/1087746091410/"
+        ]
+      },
+      "contact": {
+        "route": "официальный многоканальный телефон +7 (495) 790-76-98, email galvent@galvent.su и официальная форма обратной связи",
+        "urls": [
+          "https://galvent.ru/kontakty/",
+          "https://galvent.ru/company/obratnaya-svyaz/"
+        ]
+      },
+      "dedup_check": {
+        "repo_search_inn": "no match at worker time",
+        "repo_search_brand": "no confirmed canonical match at worker time",
+        "canonical_snapshot_checked": 404
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "outreach": 0
+}
