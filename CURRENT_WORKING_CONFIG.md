@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-27T01:12:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260827-439`  
+**Версия:** 2026-08-27T02:08:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260827-440`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **416 / 416**  
+**Физически подтверждённый canonical/contactable:** **420 / 420**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **584**  
-**Осталось до 5000:** **4584**  
+**Осталось до 1000:** **580**  
+**Осталось до 5000:** **4580**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **416 / 416**;
+- physical canonical/contactable count: **420 / 420**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260827-439`;
+- последний завершённый RUN: `N5K-20260827-440`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -46,30 +46,30 @@
 19. После интеграции worker-staging помечать consumed по существующей безопасной схеме репозитория; доказательства истории не удалять.
 20. Не выполнять outreach, письма, отклики, подготовку рассылок или отправку сообщений.
 
-## Последний подтверждённый RUN — N5K-20260827-439
+## Последний подтверждённый RUN — N5K-20260827-440
 
-Baseline перед RUN: **412 / 412**.  
-Глобально зафиксирован консервативный аудируемый минимум **120** разных raw-кандидатов: worker-пулы не суммировались без полного cross-worker raw identity index.  
-Воронка RUN: discovered **120** → fast gate **11** → size **8** → legal **7** → signal **6** → LPR **5** → contact **4** → qualified **4** → physically integrated **4**.  
-Duplicates: **0**. Excluded: **116**.
+Baseline перед RUN: **416 / 416**.  
+Глобально зафиксирован консервативный аудируемый минимум **105** разных raw-кандидатов: worker-пулы не суммировались без полного cross-worker raw identity index.  
+Воронка RUN: discovered **105** → fast gate **12** → size **7** → legal **6** → signal **5** → LPR **4** → contact **4** → qualified **4** → physically integrated **4**.  
+Duplicates: **0**. Excluded: **101**.
 
 Добавлены:
-- **ПРОФУД / Profood**, ООО ПК «ПРОФУД», ИНН `6679127590`, ОГРН `1196658060686`, Lead ID `N5K-0565`;
-- **Полипласт Новомосковск / Polyplast Novomoskovsk**, ООО «ПОЛИПЛАСТ НОВОМОСКОВСК», ИНН `7116019123`, ОГРН `1037101673333`, Lead ID `N5K-0566`;
-- **CALLISTO VISION / ГК Каллисто**, ООО «КАЛЛИСТО ВИЖН», ИНН `9725161234`, ОГРН `1247700424322`, Lead ID `N5K-0567`;
-- **Металлстрой64 / Metallstroy64**, ООО «МЕТАЛЛСТРОЙ64», ИНН `6449095859`, ОГРН `1196451027255`, Lead ID `N5K-0568`.
+- **Штрих Ру / Shtrih.ru**, ООО «ШТРИХ РУ», ИНН `6316174702`, ОГРН `1126316003989`, Lead ID `N5K-0569`;
+- **ЛИДЕРМАШ / LEMASH**, ООО «ЛИДЕРМАШ СТАНКИ», ИНН `7707427544`, ОГРН `1197746134948`, Lead ID `N5K-0570`;
+- **ПСМ / Промышленные силовые машины**, ООО «Завод ПСМ», ИНН `7604223919`, ОГРН `1127604005913`, Lead ID `N5K-0571`;
+- **Логика молока**, ООО «Группа Логика Молока», ИНН `1655498011`, ОГРН `1231600049196`, Lead ID `N5K-0572`.
 
-Итог physical canonical/contactable: **416 / 416**.  
+Итог physical canonical/contactable: **420 / 420**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Staged: **0**. Outreach: **0**.
 
-### Discovery-lanes RUN 439
+### Discovery-lanes RUN 440
 
-- jobs worker: raw **80**, duplicate/early reject **79**, qualified **1**;
-- industry worker: raw **120**, duplicate/early reject **119**, qualified **1**;
-- growth/news worker: raw **62**, duplicate/early reject **60**, qualified **2**;
-- worker raw не суммировался между пакетами без полного cross-worker identity index; доказуемый глобальный минимум — **120**.
+- jobs worker: raw **80**, duplicate/early reject **76**, qualified **1**;
+- industry worker: raw **105**, duplicate/early reject **100**, qualified **1**;
+- growth/news worker: raw **104**, duplicate/early reject **92**, qualified **2**;
+- worker raw не суммировался между пакетами без полного cross-worker identity index; доказуемый глобальный минимум — **105**.
 
-Узкое место RUN 439 — throughput аудируемого глобального raw-pool: целевые 400–800 не достигнуты. Следующий RUN должен продолжать ingestion свежих immutable workers и собственный low-overlap discovery, особенно industry/regional/growth/official/owner/rating/dealer/segment-expansion lanes, не пересканируя насыщенный jobs lane.
+Узкое место RUN 440 — throughput аудируемого глобального raw-pool: целевые 400–800 не достигнуты. Jobs lane снова выше 70% duplicate/early reject и должен быть остановлен в следующем RUN после ingestion; приоритет low-overlap industry/regional/growth/official/owner/rating/dealer/segment-expansion lanes.
 
 ## Последние подтверждённые RUN
 
@@ -90,7 +90,4 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260826-437`: 409/409, +3, PASS, orphan 0/0.
 - `N5K-20260827-438`: 412/412, +3, PASS, orphan 0/0.
 - `N5K-20260827-439`: 416/416, +4, PASS, orphan 0/0.
-
-
-## Latest verified run N5K-20260827-440
-Canonical/contactable: 420/420. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+- `N5K-20260827-440`: 420/420, +4, PASS, orphan 0/0.
