@@ -2,14 +2,14 @@
   "run_id": "N5K-20260826-432",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-26T17:22:00+03:00",
+  "updated_at": "2026-08-26T17:24:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 294,
+    "baseline_count": 390,
     "target_count": 5000,
     "current_canonical_count": 392,
     "current_contactable_count": 392,
-    "progress_added": 392,
+    "progress_added": 2,
     "remaining": 4608
   },
   "funnel": {
@@ -20,11 +20,14 @@
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 0,
+    "qualified": 2,
     "duplicates": 0,
     "excluded": 12
   },
-  "qualified_companies": [],
+  "qualified_companies": [
+    "НЗНК / Нижегородский завод несущих конструкций",
+    "ХРОМОС Инжиниринг / CHROMOS Engineering"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,

@@ -10,13 +10,13 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-26T17:22:00+03:00",
+  "updated_at": "2026-08-26T17:24:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260826-431",
-  "current_run_id": "N5K-20260826-431",
+  "last_completed_run_id": "N5K-20260826-432",
+  "current_run_id": "N5K-20260826-432",
   "last_run_id": "N5K-20260826-432",
   "latest_completed_run": "N5K-20260826-432",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "RUN 431 completed after physical integration and metadata REPAIR: +2 net new companies (Урюпинский крановый завод / УКЗ; BROX / Брокс). Physical canonical/contactable 390/390; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "RUN 432 completed after physical integration and metadata REPAIR: +2 net new companies (НЗНК / Нижегородский завод несущих конструкций; ХРОМОС Инжиниринг / CHROMOS Engineering). Physical canonical/contactable 392/392; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
