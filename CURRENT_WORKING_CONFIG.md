@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-27T07:20:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260827-445`  
+**Версия:** 2026-08-27T09:06:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260827-447`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **442 / 442**  
+**Физически подтверждённый canonical/contactable:** **449 / 449**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **558**  
-**Осталось до 5000:** **4558**  
+**Осталось до 1000:** **551**  
+**Осталось до 5000:** **4551**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **442 / 442**;
+- physical canonical/contactable count: **449 / 449**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260827-445`;
+- последний завершённый RUN: `N5K-20260827-447`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -46,31 +46,32 @@
 19. После интеграции worker-staging помечать consumed по существующей безопасной схеме репозитория; доказательства истории не удалять.
 20. Не выполнять outreach, письма, отклики, подготовку рассылок или отправку сообщений.
 
-## Последний подтверждённый RUN — N5K-20260827-445
+## Последний подтверждённый RUN — N5K-20260827-447
 
-Baseline перед RUN: **437 / 437**.  
-Глобально зафиксирован консервативный аудируемый минимум **120** разных raw-кандидатов: worker-пулы не суммировались без полного cross-worker identity index.  
-Воронка RUN: discovered **120** → fast gate **8** → size **5** → legal **5** → signal **5** → LPR **5** → contact **5** → qualified **5** → physically integrated **5**.  
-Duplicates: **0**. Excluded: **115**.
+Baseline перед RUN: **445 / 445**.  
+Глобально зафиксирован консервативный аудируемый минимум **110** разных raw-кандидатов: worker-пулы не суммировались без полного cross-worker identity index.  
+Воронка RUN: discovered **110** → fast gate **11** → size **6** → legal **5** → signal **4** → LPR **4** → contact **4** → qualified **4** → physically integrated **4**.  
+Duplicates: **1**. Excluded: **105**.
 
 Добавлены:
-- **Адванта-М Ростов**, ООО «АДВАНТА-М РОСТОВ», ИНН `6165219934`, ОГРН `1196196021010`, Lead ID `N5K-0593`;
-- **Гермес-Сибирь**, ООО «ГЕРМЕС-СИБИРЬ», ИНН `5402040179`, ОГРН `1185476005000`, Lead ID `N5K-0594`;
-- **ЧЗСА / Чебоксарский завод силовых агрегатов**, ООО «Чебоксарский завод силовых агрегатов», ИНН `2127318285`, ОГРН `1022100967404`, Lead ID `N5K-0595`;
-- **Алкор Био / Alkor Bio**, ООО «КОМПАНИЯ АЛКОР БИО», ИНН `7838370980`, ОГРН `1069847549760`, Lead ID `N5K-0596`;
-- **Маловишерский стекольный завод / МВСЗ**, ООО «МАЛОВИШЕРСКИЙ СТЕКОЛЬНЫЙ ЗАВОД», ИНН `5307008947`, ОГРН `1195321004482`, Lead ID `N5K-0597`.
+- **ГенМастер / GenMaster**, ООО «ГЕНМАСТЕР», ИНН `5016019870`, ОГРН `1105038004444`, Lead ID `N5K-0601`;
+- **Микран / Micran**, АО «НАУЧНО-ПРОИЗВОДСТВЕННАЯ ФИРМА «МИКРАН»», ИНН `7017211757`, ОГРН `1087017011113`, Lead ID `N5K-0602`;
+- **ЭЛКА-Кабель / ELKACABLE**, ООО «ОПЫТНО-КОНСТРУКТОРСКОЕ ПРЕДПРИЯТИЕ ЭЛКА-КАБЕЛЬ», ИНН `5907054430`, ОГРН `1135907000646`, Lead ID `N5K-0603`;
+- **SafetyLab / Лаборатория безопасности**, ООО «ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ», ИНН `7841433407`, ОГРН `1107847328951`, Lead ID `N5K-0604`.
 
-Итог physical canonical/contactable: **442 / 442**.  
+`Экспресс Мануфактура / Express Manufactura`, ИНН `7726454494`, повторно не добавлена: physical canonical уже содержит её как `N5K-0382`.
+
+Итог physical canonical/contactable: **449 / 449**.  
 Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Staged: **0**. Outreach: **0**.
 
-### Discovery-lanes RUN 445
+### Discovery-lanes RUN 447
 
-- jobs worker: raw **80**, duplicate/early reject **72**, qualified **2**;
-- industry worker: raw **120**, duplicate/early reject **119**, qualified **1**;
-- growth/news worker: raw **62**, duplicate/early reject **60**, qualified **2**;
-- worker raw не суммировался между пакетами без полного cross-worker identity index; доказуемый глобальный минимум — **120**.
+- jobs worker: raw **80**, duplicate/early reject **79**, net qualified **0**; worker-qualified Express Manufactura остановлена canonical dedup;
+- industry worker: raw **110**, duplicate/early reject **108**, qualified **2**;
+- growth/news worker: raw **87**, duplicate/early reject **85**, qualified **2**;
+- worker raw не суммировался между пакетами без полного cross-worker identity index; доказуемый глобальный минимум — **110**.
 
-Узкое место RUN 445 — throughput аудируемого глобального raw-pool: целевые 400–800 не достигнуты. Jobs и industry lanes выше 70% duplicate/early reject; в следующем RUN после ingestion свежих workers приоритет low-overlap growth/regional/official/owner/rating/dealer/segment-expansion lanes.
+Узкое место RUN 447 — throughput аудируемого глобального raw-pool: целевые 400–800 не достигнуты. Jobs и industry lanes выше 70% duplicate/early reject; следующий RUN после ingestion свежих workers должен отдавать основной execution budget low-overlap growth/regional/official/owner/rating/dealer/segment-expansion lanes.
 
 ## Последние подтверждённые RUN
 
@@ -97,11 +98,8 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260827-443`: 433/433, +3, PASS, orphan 0/0.
 - `N5K-20260827-444`: 437/437, +4, PASS, orphan 0/0.
 - `N5K-20260827-445`: 442/442, +5, PASS, orphan 0/0.
-
-
-## Latest verified run N5K-20260827-446
-Canonical/contactable: 445/445. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+- `N5K-20260827-446`: 445/445, +3, PASS, orphan 0/0.
+- `N5K-20260827-447`: 449/449, +4, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260827-447
 Canonical/contactable: 449/449. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
