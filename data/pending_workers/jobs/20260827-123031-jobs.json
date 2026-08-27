@@ -1,0 +1,118 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T12:30:31+03:00",
+    "source_head": "9f2c3f29f4a74df3cde71e78a0f7ddaf4d079f8e",
+    "source_config": "CURRENT_WORKING_CONFIG.md",
+    "canonical_snapshot": {
+      "last_completed_run": "N5K-20260827-449",
+      "canonical": 455,
+      "contactable": 455,
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0
+    },
+    "funnel": {
+      "raw_unique_employers_reviewed": 80,
+      "fast_gate_passed": 6,
+      "deep_check_started": 3,
+      "size_passed": 1,
+      "legal_passed": 1,
+      "signal_passed": 1,
+      "lpr_passed": 1,
+      "contact_passed": 1,
+      "qualified": 1
+    },
+    "lane_control": {
+      "initial_jobs_pool_saturated": true,
+      "duplicate_plus_early_reject_rate_first_20": ">70%",
+      "action": "stopped saturated HH-heavy pool and switched to regional/direct-employer job-board mirrors",
+      "raw_count_note": "80 distinct employer-level candidates were reviewed across current Novosibirsk, Samara, Kazan, Ekaterinburg, Krasnodar and Moscow/direct-employer job-board pools. Rows were not counted as separate companies when the employer repeated."
+    },
+    "discovery_sources": [
+      "https://www.notexistscomru.jobvk.com/novosibirsk/rukovoditely-otdela-prodazh",
+      "https://trust.jobvk.com/samara/rukovoditely-otdela-prodazh",
+      "https://www.trust.jobvk.com/kazan/prodazhi",
+      "https://minojru.jobvk.com/ekaterinburg/kommercheskiy-direktor/sa-ot-5000",
+      "https://www.trust.jobvk.com/krasnodar/direktor-po-prodazham",
+      "https://gdejob.com/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0"
+    ],
+    "outreach": 0
+  },
+  "qualified": [
+    {
+      "brand": "Корос Груп / Bertazzoni Russia distributor",
+      "legal_name": "ООО \"КОРОС ГРУП\"",
+      "inn": "7714409803",
+      "ogrn": "1167746886801",
+      "region": "Москва",
+      "city": "Москва",
+      "segment": "дистрибуция премиальной бытовой техники; B2B/retail/design channels",
+      "legal_status": "Действующее российское частное ООО",
+      "scale": {
+        "revenue_2025_rub": 166426000,
+        "employees": 37,
+        "source": "https://companies.rbc.ru/id/1167746886801-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-koros-grup/"
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-14",
+        "summary": "Прямой работодатель Корос Груп ищет Руководителя отдела продаж B2B по премиальной бытовой технике Bertazzoni для стратегического развития направления, выстраивания эффективных процессов и управления командой; работодатель прямо указывает активное развитие бренда в России и СНГ.",
+        "url": "https://dreamjob.ru/employers/115374/vakansii/136251334",
+        "mirror_url": "https://vgorode.moscow/rabota/vakansiya-136251334/"
+      },
+      "lpr": {
+        "ceo": "Тишина Наталья Владимировна",
+        "owners": [
+          "Крейзеров Иосиф Яковлевич — 50%",
+          "Крейзеров Борис Иосифович — 50%"
+        ],
+        "source": "https://companies.rbc.ru/id/1167746886801-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-koros-grup/"
+      },
+      "contact_route": {
+        "type": "current direct-employer vacancy route",
+        "value": "Отклик через актуальную карточку прямого работодателя с автоматическим добавлением резюме hh.ru",
+        "url": "https://dreamjob.ru/employers/115374/vakansii/136251334",
+        "note": "Публичный корпоративный телефон/email ООО КОРОС ГРУП в проверенных актуальных источниках не подтверждён, поэтому шаблонный контакт не добавлялся. Практический подтверждённый маршрут — текущая direct-employer вакансия."
+      },
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО КОРОС ГРУП действует; ИНН 7714409803, ОГРН 1167746886801.",
+          "url": "https://companies.rbc.ru/id/1167746886801-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-koros-grup/"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка за 2025 год 166,426 млн руб.; среднесписочная численность 37 сотрудников.",
+          "url": "https://companies.rbc.ru/id/1167746886801-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-koros-grup/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "14.08.2026 опубликована вакансия Руководителя отдела продаж B2B для стратегического развития Bertazzoni в России и СНГ.",
+          "url": "https://vgorode.moscow/rabota/vakansiya-136251334/"
+        },
+        {
+          "type": "LPR",
+          "claim": "Генеральный директор — Тишина Наталья Владимировна; учредители Крейзеров Иосиф Яковлевич и Крейзеров Борис Иосифович по 50%.",
+          "url": "https://companies.rbc.ru/id/1167746886801-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-koros-grup/"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Актуальная direct-employer vacancy предоставляет практический маршрут отклика через hh-linked flow.",
+          "url": "https://dreamjob.ru/employers/115374/vakansii/136251334"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "7714409803",
+        "ogrn": "1167746886801",
+        "legal_name": "ООО КОРОС ГРУП",
+        "brand": "Корос Груп"
+      },
+      "dedup_check": {
+        "repository_exact_inn_search": "no matches before staging",
+        "repository_brand_search": "no matches before staging"
+      },
+      "decision": "QUALIFIED"
+    }
+  ]
+}
