@@ -2,7 +2,7 @@
   "run_id": "N5K-20260827-458",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T19:59:30+03:00",
+  "updated_at": "2026-08-27T20:06:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 476,
@@ -31,9 +31,11 @@
       "worker_deep_check": 4,
       "worker_qualified": 1,
       "canonical_rechecked": 1,
-      "canonical_qualified": 1,
+      "canonical_qualified": 0,
       "candidate": "VICTORY group",
-      "note": "All 81 employer-level raw identities are persisted in immutable staging. Canonical writer rechecked legal identity, 2025 scale, current sales-leadership signal, LPR and official contact route."
+      "note": "Worker qualified VICTORY group, but physical canonical guard found existing N5K-0072 by INN 7734451120, OGRN 1227700076780, exact legal name and brand+domain; net canonical qualified 0.",
+      "physical_dedup_duplicate": 1,
+      "existing_lead_id": "N5K-0072"
     },
     {
       "lane": "industry/20260827-192206",

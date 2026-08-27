@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-27T19:15:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260827-457`  
+**Версия:** 2026-08-27T20:06:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260827-458`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **476 / 476**  
 **Qualified staged not counted:** **0**  
@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence и pending;
 - physical canonical/contactable count: **476 / 476**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260827-457`;
+- последний завершённый RUN: `N5K-20260827-458`;
 - `N5K-20260827-454R1` — repair того же операционного цикла: первоначально canonical writer ошибочно трактовал ИП как запрещённую форму, хотя текущая конфигурация явно допускает `юрлицо/ИП`; S.Lavia была интегрирована без изменения критериев;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
@@ -111,6 +111,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260827-455`: 471/471, +2, PASS, orphan 0/0.
 - `N5K-20260827-456`: 473/473, +2, PASS, orphan 0/0.
 - `N5K-20260827-457`: 476/476, +3, PASS, orphan 0/0.
+- `N5K-20260827-458`: 476/476, +0, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260827-449
 Canonical/contactable: 455/455. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
@@ -145,3 +146,8 @@ Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 ## Latest verified run N5K-20260827-458
 Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## RUN 458 — physical dedup repair
+
+301 distinct persisted raw identities were processed across jobs (81), industry (120) and canonical low-overlap industry (100). VICTORY group passed worker deep-check but was rejected by the final physical canonical guard because it already exists as N5K-0072 with matching INN 7734451120, OGRN 1227700076780, exact legal name and brand+domain. Net physically integrated: 0. Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.

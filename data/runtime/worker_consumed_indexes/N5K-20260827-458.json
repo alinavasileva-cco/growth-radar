@@ -1,0 +1,32 @@
+{
+  "run_id": "N5K-20260827-458",
+  "updated_at": "2026-08-27T20:06:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-192008-jobs.json",
+      "blob_sha": "3796809be35c31df36938fa6ff737a39f2571110",
+      "result": "CONSUMED",
+      "note": "VICTORY group rejected by physical canonical dedup as existing N5K-0072; immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-192206-industry-metrics.json",
+      "blob_sha": "019cd61b2564ca79f7008b6eb7bfcf192f275577",
+      "result": "CONSUMED",
+      "note": "120 raw processed; zero qualified; immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-195900-canonical-low-overlap.json",
+      "blob_sha": "bbd99db9e9dd4e4c0d9031c4806c83ea48864513",
+      "result": "CONSUMED",
+      "note": "100 low-overlap raw identities persisted to exceed the <300 continuation threshold; zero deep-qualified; immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 476,
+  "physical_contactable_after_cycle": 476,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
