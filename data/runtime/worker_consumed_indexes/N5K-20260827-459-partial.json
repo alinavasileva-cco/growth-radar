@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260827-459",
-  "status": "PARTIAL_IN_PROGRESS",
+  "status": "COMPLETED",
   "campaign_id": "new_5000",
   "consumed": [
     {
@@ -8,7 +8,30 @@
       "blob_sha": "bde8440d2c0033ee914551aa1c3e669ba5b7b09c",
       "result": "CONSUMED_ZERO_QUALIFIED",
       "note": "100 raw selected by industry worker; Areatek / ООО 3Д К passed SIZE and LEGAL but was rejected at SIGNAL; no canonical write."
+    },
+    {
+      "path": "data/pending_workers/jobs/20260827-212043-jobs.json",
+      "blob_sha": "a7d648ec2558a4b56e82e2f9a3479bc2cfd9f0ee",
+      "result": "CONSUMED_PHYSICAL_DUPLICATE",
+      "note": "47 raw employers; FEDAST passed worker deep funnel but final physical master guard matched existing canonical by INN 7720478065, OGRN 1197746494461 and legal entity; 0 net new."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-212737-industry-metrics.json",
+      "blob_sha": "c2baa8e28c94a9f6adecd28d2db32523c367be57",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 raw; 0 fast-gate pass; all five 20-candidate source batches saturated at 100% duplicate+early-reject and were stopped/rotated; no canonical write."
     }
   ],
+  "canonical_result": {
+    "worker_qualified_before_physical_dedup": 1,
+    "physical_dedup_duplicates": 1,
+    "net_qualified": 0,
+    "physically_integrated": 0,
+    "canonical_count": 476,
+    "contactable_count": 476,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
   "outreach_performed": false
 }
