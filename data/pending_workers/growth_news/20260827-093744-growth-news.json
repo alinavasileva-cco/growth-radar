@@ -1,0 +1,173 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-27T09:37:44+03:00",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-447",
+    "canonical_count": 449,
+    "contactable_count": 449,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "head_before_write": "a081fe0e534c20620a72f24f562f71d986a81138"
+  },
+  "worker_funnel": {
+    "raw_distinct_auditable_minimum": 34,
+    "fast_gate_passed": 7,
+    "size_passed": 4,
+    "legal_passed": 4,
+    "signal_passed": 3,
+    "lpr_passed": 2,
+    "contact_passed": 2,
+    "qualified": 2,
+    "target_raw_100_180_met": false,
+    "note": "This pass used fresh August 2026 expansion/production/investment sources plus a small July 2026 low-overlap extension. The auditable minimum counts only distinct named Russian companies actually inspected; search-result rows, unnamed projects, foreign companies, obvious state-controlled groups, and duplicates were not counted to inflate raw throughput. The requested 100-180 raw target was not reached in this execution window; quality gates were not weakened."
+  },
+  "qualified": [
+    {
+      "brand": "Компания Виталан / Vitalan",
+      "legal_name": "ООО «КОМПАНИЯ ВИТАЛАН»",
+      "inn": "4027063069",
+      "ogrn": "1044004400439",
+      "legal_status": "active",
+      "private_company": true,
+      "size": {
+        "metric": "revenue_2025",
+        "value_rub": 1198389000,
+        "headcount_2025": 63,
+        "source": "https://companies.rbc.ru/id/1044004400439-ooo-kompaniya-vitalan/",
+        "note": "2025 revenue RUB 1.198389bn; 63 employees; four individual shareholders."
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-08-07",
+        "summary": "Company is implementing a new Kaluga House-Building Plant No. 1 project in Maloyaroslavets District. The project was agreed at SPIEF-2026 and creates a new production of hollow-core floor slabs; the company has operated in building materials for more than 20 years.",
+        "source": "https://rg.ru/amp/2026/08/07/reg-cfo/v-kaluzhskoj-oblasti-sozdadut-pervoe-proizvodstvo-pustotnyh-plit-perekrytiia.html"
+      },
+      "lpr": {
+        "name": "Линков Андрей Анатольевич",
+        "role": "Директор; shareholder 25%",
+        "source": "https://companies.rbc.ru/id/1044004400439-ooo-kompaniya-vitalan/"
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "email": "info@k-vitalan.ru",
+        "phone": "+7 (4842) 54-06-15",
+        "website": "https://k-vitalan.ru/",
+        "source": "https://k-vitalan.ru/"
+      },
+      "dedup_keys": {
+        "inn": "4027063069",
+        "ogrn": "1044004400439",
+        "legal_name": "ООО КОМПАНИЯ ВИТАЛАН",
+        "brand_domain": "Компания Виталан|k-vitalan.ru"
+      },
+      "dedup_check": {
+        "repository_search_brand": "no_match",
+        "repository_search_inn": "no_match",
+        "checked_immediately_before_write": true
+      },
+      "evidence_urls": [
+        "https://rg.ru/amp/2026/08/07/reg-cfo/v-kaluzhskoj-oblasti-sozdadut-pervoe-proizvodstvo-pustotnyh-plit-perekrytiia.html",
+        "https://companies.rbc.ru/id/1044004400439-ooo-kompaniya-vitalan/",
+        "https://k-vitalan.ru/",
+        "https://k-vitalan.ru/o-kompanii/"
+      ]
+    },
+    {
+      "brand": "Формула-К / Formula-K",
+      "legal_name": "ООО «ФОРМУЛА-К»",
+      "inn": "2411024820",
+      "ogrn": "1142411001468",
+      "legal_status": "active",
+      "private_company": true,
+      "size": {
+        "metric": "revenue_2025",
+        "value_rub": 547049000,
+        "headcount_2025": 42,
+        "source": "https://companies.rbc.ru/id/1142411001468-ooo-formula-k/",
+        "note": "2025 revenue RUB 547.049m; 42 employees; two individual shareholders 50%/50%."
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-07-28",
+        "summary": "Company completed modernization of its road-marking coatings production with support from the Krasnoyarsk regional Industrial Development Fund. The project used a RUB 56m concessional loan and raised output of road-marking paint and two-component cold plastic by 46% after reaching design capacity.",
+        "source": "https://www.frp-krsk.ru/watch-news?id=60"
+      },
+      "lpr": {
+        "name": "Грязнов Алексей Александрович",
+        "role": "Директор",
+        "source": "https://24fk.ru/upload/medialibrary/253/44imkzve54xf1eesijr0rw6pf36mzkll/Formula-2024-Rekvizity.pdf"
+      },
+      "contact": {
+        "route_type": "official_company_sales_contact",
+        "email": "zakaz@24fk.ru",
+        "general_email": "info@24fk.ru",
+        "phone": "+7 (391) 204-03-11",
+        "website": "https://24fk.ru/",
+        "source": "https://24fk.ru/"
+      },
+      "dedup_keys": {
+        "inn": "2411024820",
+        "ogrn": "1142411001468",
+        "legal_name": "ООО ФОРМУЛА-К",
+        "brand_domain": "Формула-К|24fk.ru"
+      },
+      "dedup_check": {
+        "repository_search_brand": "no_match",
+        "repository_search_inn": "no_match",
+        "checked_immediately_before_write": true
+      },
+      "evidence_urls": [
+        "https://www.frp-krsk.ru/watch-news?id=60",
+        "https://companies.rbc.ru/id/1142411001468-ooo-formula-k/",
+        "https://24fk.ru/",
+        "https://24fk.ru/about/",
+        "https://24fk.ru/upload/medialibrary/253/44imkzve54xf1eesijr0rw6pf36mzkll/Formula-2024-Rekvizity.pdf"
+      ]
+    }
+  ],
+  "excluded_examples": [
+    {
+      "company": "Анатомика",
+      "reason": "already present in canonical history; duplicate"
+    },
+    {
+      "company": "Три Точки Мануфактуринг",
+      "reason": "already present in canonical history; duplicate"
+    },
+    {
+      "company": "Фабрика Вентиляции ГалВент",
+      "reason": "already present in canonical history; duplicate"
+    },
+    {
+      "company": "Завод ПСМ",
+      "reason": "already present in canonical history; duplicate"
+    },
+    {
+      "company": "Гармония",
+      "reason": "fresh expansion signal exists, but current available evidence did not establish sufficient target-scale confidence; not promoted"
+    },
+    {
+      "company": "Кристал / Cristal (Минусинск)",
+      "reason": "fresh S2 production-line signal exists, but available company evidence shows only about 8-10 employees; fails current scale gate"
+    },
+    {
+      "company": "BROX / ООО БРОКС (Фурманов)",
+      "reason": "new production complex and strong signal, but available 2025 evidence shows only 5 employees and no sufficient revenue evidence; fails size-confidence gate"
+    },
+    {
+      "company": "НЭВЗ / Трансмашхолдинг",
+      "reason": "scale/group context outside target fit"
+    },
+    {
+      "company": "АвтоВАЗ",
+      "reason": "scale/public strategic group context outside target fit"
+    },
+    {
+      "company": "Cadila Pharmaceuticals Russia project",
+      "reason": "foreign investor/project; Russian operating legal entity and target-scale/LPR/contact chain not sufficiently established for this pass"
+    }
+  ],
+  "outreach_sent": 0,
+  "canonical_write_performed": false
+}
