@@ -1,0 +1,99 @@
+{
+  "schema_version": "growth-radar-worker-v1",
+  "lane": "jobs",
+  "worker_timestamp_local": "2026-08-27T14:28:46+03:00",
+  "source_head_sha": "99c0d33327b1719061b92650f8d90fd6da3dfd53",
+  "canonical_baseline": {
+    "run_id": "N5K-20260827-452",
+    "canonical_count": 461,
+    "contactable_count": 461,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "staged_not_counted": 0
+  },
+  "worker_funnel": {
+    "raw_employer_level": 80,
+    "fast_gate": 6,
+    "deep_check": 3,
+    "size": 2,
+    "legal": 2,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "duplicate_early_reject_split": null,
+    "notes": "Broad HH-heavy pools were treated as saturated after >70% duplicate+early-reject on the first 20 reviewed employer-level items; discovery budget was shifted to regional/direct-employer/job-board mirrors. Exact duplicate vs early-reject split was not separately instrumented and is not reconstructed."
+  },
+  "qualified": [
+    {
+      "brand": "ПНК-Регион",
+      "legal_name": "ООО \"ПНК-РЕГИОН\"",
+      "full_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ПЕРВАЯ НЕРУДНАЯ КОРПОРАЦИЯ-РЕГИОН\"",
+      "inn": "7708281619",
+      "ogrn": "1167746143234",
+      "status": "Действующая",
+      "private_russian_entity": true,
+      "size": {
+        "revenue_2025_rub": 1104889000,
+        "employees_2025": 14,
+        "msme_category": "Средний бизнес",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1167746143234-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-pervaya-nerudnaya-korporatsiya-region/",
+          "https://vsem-podryad.ru/company/c979d766-12fe-435e-ba33-52ac110427b7/",
+          "https://check.tochka.com/company/1167746143234/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-13",
+        "type": "Исполнительный директор / Операционный директор",
+        "summary": "Компания ищет исполнительного/операционного директора; вакансия прямо связывает найм с активным ростом компании и выходом на новый этап развития. Бизнес описан как производитель металлических опор освещения и дилер крупнейших российских заводов-поставщиков.",
+        "evidence_urls": [
+          "https://ekaterinburg.jobrun.ru/%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B9-%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D0%B9-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+        ]
+      },
+      "lpr": {
+        "name": "Черанев Роман Сергеевич",
+        "role": "Генеральный директор, учредитель 100%",
+        "evidence_urls": [
+          "https://check.tochka.com/company/1167746143234/",
+          "https://zachestnyibiznes.ru/company/ul/1167746143234_7708281619_OOO-PNK-REGION"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_phone_email_site",
+        "phones": [
+          "+7 (499) 397-87-24",
+          "+7 (343) 319-00-73"
+        ],
+        "emails": [
+          "lid@pnk-region.ru"
+        ],
+        "website": "https://pnk-region.ru/",
+        "evidence_urls": [
+          "https://pnk-region.ru/services/nashi-uslugi/dizayn-i-proektirovanie/",
+          "https://motodistrict.ru/",
+          "https://2gis.ru/ekaterinburg/firm/70000001091229991"
+        ]
+      },
+      "brand_legal_evidence_urls": [
+        "https://companies.rbc.ru/trademark/1098985/pnk-region/",
+        "https://promvest.info/ru/company/kompaniya-pnk-region/"
+      ],
+      "dedup_keys": {
+        "inn": "7708281619",
+        "ogrn": "1167746143234",
+        "exact_legal_name": "ООО \"ПНК-РЕГИОН\"",
+        "brand_domain": "ПНК-Регион|pnk-region.ru"
+      },
+      "pre_stage_dedup": {
+        "repository_exact_inn_match": false,
+        "checked_against_head_sha": "99c0d33327b1719061b92650f8d90fd6da3dfd53"
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "outreach": 0,
+  "canonical_write_performed": false
+}
