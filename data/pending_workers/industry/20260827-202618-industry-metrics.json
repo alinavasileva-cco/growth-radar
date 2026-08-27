@@ -1,0 +1,32 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "head_sha": "ca17d4d68a5382d7b7f6c2226e03eaa210923224",
+  "baseline": {"canonical": 476, "contactable": 476, "integrity": "PASS"},
+  "outreach_performed": false,
+  "canonical_written": false,
+  "source": {
+    "name": "МЕТАЛЛООБРАБОТКА-2026 internet catalog",
+    "url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/list",
+    "catalog_size_reported": 1210,
+    "raw_selected": 100,
+    "selection": "first 100 distinct exhibitor identities from catalog listing",
+    "first20_duplicate_plus_early_reject": 11,
+    "first20_rate": 0.55,
+    "rotation_triggered": false,
+    "first20": ["3DLAM","3Д ВИЖН ДИСТРИБЬЮШЕН, ООО","3Д КОНТРОЛЬ, ООО","3Д-ИНТЕГРАЦИЯ НПО, ООО","ABOVE MATERIAL TECHNOLOGY CO. LTD","ADVANCED NANO COATING TECHNOLOGY CO. LTD","AKKO MAKİNA SANAYİ VE TİCARET A.Ş.","ALUMICA","ANDREEV MACHINES","ANHUI ADVANCED MACHINERY CO. LTD","ANHUI HARTING MACHINERY TECHNOLOGY CO. LTD","ANHUI LIYUAN CNC BLADE MOLD MANUFACTURING CO. LTD","ANHUI RUNBANG HEAVY INDUSTRY MACHINERY CO. LTD","ANHUI TECHFLY ROBOTICS TECHNOLOGY CO. LTD","ANHUI TONGCHI CNC MACHINE TOOL CO. LTD","ANHUI UCUT PRECISION MACHINERY CO. LTD","ANYANG XINHENG MACHINE TOOL CO. LTD","ARCUS","AREATEK","ARKA"]
+  },
+  "funnel": {"raw": 100, "fast_gate": 1, "size": 1, "legal": 1, "signal": 0, "lpr": 0, "contact": 0, "qualified": 0},
+  "deep_checks": [{
+    "brand": "Areatek / 3D Control",
+    "legal_name": "ООО «3Д К»",
+    "inn": "4027132629",
+    "ogrn": "1174027005151",
+    "size": {"year": 2025, "revenue_rub": 968436000, "employees": 33, "source": "https://b2b.house/company/OOO-3D-K_c6bc559f-af11-4b7c-9565-5d17e0c92027/"},
+    "legal": {"status": "Действует", "owner": "Волков Роман Валерьевич 100%", "ceo": "Волков Роман Валерьевич", "source": "https://www.tbank.ru/business/contractor/legal/1174027005151/"},
+    "signal": {"status": "REJECT", "reason": "Не подтверждён сильный S1–S3: участие в промышленном кластере, ребрендинг и демонстрация собственных разработок не использованы как замена growth/expansion signal.", "sources": ["https://www.atomic-energy.ru/news/2026/01/30/163031", "https://3dcontrol.ru/news/razrabotki-areatek-predstavleny-na-innoprom-2026"]},
+    "contact_reference": {"phone": "8 (800) 201-55-75", "email": "info@3dcontrol.ru", "source": "https://3dcontrol.ru/contacts"},
+    "dedup_check": {"inn_current_canonical_match": false, "note": "candidate rejected at SIGNAL; no qualification staged"}
+  }],
+  "notes": ["Иностранные участники отсеивались на FAST GATE.", "Устаревшие показатели не использовались при наличии отчетности 2025 года.", "qualified=0; сохранён только metrics-файл."]
+}
