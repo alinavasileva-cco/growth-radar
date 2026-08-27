@@ -1,0 +1,6 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0629,N5K-0629-C01,Первый Снег,5473007379,,Корпоративный маршрут,+7 383 209-00-06,phone,official_company_phone,Official Первый Снег contacts,https://1sneg.ru/contact,NO,HIGH,2026-08-27,Corporate route,N5K-20260827-456,new_5000
+N5K-0629,N5K-0629-C02,Первый Снег,5473007379,,Корпоративный маршрут,+7 495 999-64-06,phone,official_company_phone,Official Первый Снег contacts,https://1sneg.ru/contact,NO,HIGH,2026-08-27,Moscow route,N5K-20260827-456,new_5000
+N5K-0629,N5K-0629-C03,Первый Снег,5473007379,,Корпоративный маршрут,mail@1sneg.ru,email,official_company_email,Official Первый Снег contacts,https://1sneg.ru/contact,NO,HIGH,2026-08-27,Corporate route,N5K-20260827-456,new_5000
+N5K-0630,N5K-0630-C01,ЭКРОСХИМ / ECROS,7810235934,,Корпоративный маршрут,+7 (812) 322-96-00,phone,official_company_phone,ECROS corporate contact,https://www.ecopribor.com/ru/contact,NO,HIGH,2026-08-27,Corporate route,N5K-20260827-456,new_5000
+N5K-0630,N5K-0630-C02,ЭКРОСХИМ / ECROS,7810235934,,Корпоративный маршрут,info@ecohim.ru,email,official_company_email,ECROS corporate contact,https://www.ecopribor.com/ru/contact,NO,HIGH,2026-08-27,Corporate route,N5K-20260827-456,new_5000
