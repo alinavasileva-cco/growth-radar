@@ -1,0 +1,207 @@
+{
+  "worker": {
+    "lane": "growth_news",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-27T07:45:00+03:00",
+    "source_head_sha": "104984f5a119bbe07854da651e306ee07e14a25e",
+    "source_config_version": "2026-08-27T07:20:00+03:00",
+    "source_canonical_run": "N5K-20260827-445",
+    "source_canonical_count": 442,
+    "source_contactable_count": 442,
+    "source_integrity": "PASS",
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "source_pool": {
+    "raw_distinct_candidates": 48,
+    "raw_definition": "Conservative count of distinct named Russian company/project identities actually surfaced across fresh 2026 production, expansion, investment and technology-growth news in this execution window. Search-result rows, duplicate syndications and unnamed projects were not counted as separate companies.",
+    "target_raw": "100-180",
+    "target_reached": false,
+    "note": "The execution window did not support a defensible 100 distinct low-overlap company identities after name-level dedup. The count is intentionally not inflated. Search rotated across fresh industrial expansion, regional investment, manufacturing and technology-growth sources.",
+    "source_urls": [
+      "https://abireg.ru/newsitem/116792/",
+      "https://www.kommersant.ru/doc/8908374",
+      "https://www.kommersant.ru/doc/8673635",
+      "https://factory.ttri.ru/",
+      "https://factory.ttri.ru/requisites/",
+      "https://www.chelzeo.ru/"
+    ]
+  },
+  "funnel": {
+    "raw": 48,
+    "fast_gate_deep_checked": 7,
+    "size_passed": 4,
+    "legal_passed": 4,
+    "signal_passed": 3,
+    "lpr_passed": 3,
+    "contact_passed": 2,
+    "qualified": 2
+  },
+  "qualified": [
+    {
+      "brand": "Три Точки Мануфактуринг / TTM",
+      "legal_name": "ООО «ТРИ ТОЧКИ МАНУФАКТУРИНГ»",
+      "inn": "5717007055",
+      "ogrn": "1215700003639",
+      "legal_status": "Действует",
+      "region": "Орловская область",
+      "city": "Мценский район, п. Воля",
+      "segment": "Радиоэлектроника / автомобильная электроника / контрактное производство / B2B",
+      "website": "https://factory.ttri.ru/",
+      "size": {
+        "status": "PASS",
+        "evidence": "Актуальная отчетность за 2025 год: выручка 1,591936 млрд ₽, прибыль 487,054 млн ₽; официальный сайт указывает 60 человек в производственной команде и мощность до 960 тыс. устройств в год.",
+        "sources": [
+          "https://saby.ru/profile/5717007055-571701001",
+          "https://factory.ttri.ru/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "ceo": "Филатов Дмитрий Игоревич",
+        "owners": "ООО «Три Точки» и ООО «Тес Лаб»",
+        "private_ownership": true,
+        "sources": [
+          "https://companies.rbc.ru/id/1215700003639-obschestvo-s-ogranichennoj-otvetstvennostyu-tri-tochki-manufakturing/",
+          "https://factory.ttri.ru/requisites/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S2",
+        "date": "2026-08-26",
+        "summary": "Компания увеличила серийное производство блоков управления ЭРА-ГЛОНАСС для автомобилей Tenet и Chery на 20%; инвестиции в расширение составили 125 млн ₽, производственная мощность участка выросла на 40 тыс. устройств в год до 240 тыс., планируемые отгрузки также +20%.",
+        "sources": [
+          "https://abireg.ru/newsitem/116792/",
+          "https://xn--b1agjasmlcka4m.xn--p1ai/event/v-orlovskoy-oblasti-narastili-vypusk-komponentov-dlya-avtomobiley"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Филатов Дмитрий Игоревич",
+        "role": "Директор ООО «Три Точки Мануфактуринг»",
+        "source": "https://companies.rbc.ru/id/1215700003639-obschestvo-s-ogranichennoj-otvetstvennostyu-tri-tochki-manufakturing/"
+      },
+      "contact": {
+        "status": "PASS",
+        "phone": "8 (800) 555-15-72",
+        "email": "factory@ttri.ru",
+        "contact_form": "https://factory.ttri.ru/",
+        "type": "Official corporate phone + email + website form",
+        "source": "https://factory.ttri.ru/"
+      },
+      "dedup_keys": {
+        "inn": "5717007055",
+        "ogrn": "1215700003639",
+        "legal_name": "ООО ТРИ ТОЧКИ МАНУФАКТУРИНГ",
+        "brand_domain": "ТРИ ТОЧКИ МАНУФАКТУРИНГ|factory.ttri.ru"
+      },
+      "dedup_check": {
+        "status": "PASS_NO_MATCH_FOUND",
+        "canonical_repo_exact_checks": ["5717007055", "Три Точки Мануфактуринг"],
+        "checked_before_write": true
+      },
+      "final_status": "QUALIFIED_FOR_CANONICAL_RECHECK"
+    },
+    {
+      "brand": "ЧЗЭО / Челябинский завод электрооборудования",
+      "legal_name": "ООО «ЧЕЛЯБИНСКИЙ ЗАВОД ЭЛЕКТРООБОРУДОВАНИЯ»",
+      "inn": "7452075526",
+      "ogrn": "1107452001250",
+      "legal_status": "Действует",
+      "region": "Челябинская область / Москва (юридический адрес)",
+      "city": "Челябинск",
+      "segment": "Электротехническое оборудование / промышленная робототехника / B2B",
+      "website": "https://www.chelzeo.ru/",
+      "size": {
+        "status": "PASS",
+        "evidence": "Актуальные показатели за 2025 год: выручка около 1,818 млрд ₽, рост по основному направлению 27%; в 2024 году 137 сотрудников, профиль действует в 2026 году.",
+        "sources": [
+          "https://energybase.ru/vendor/chelzeo",
+          "https://www.elec.ru/news/2026/03/26/chelyabinskomu-zavodu-elektrooborudovaniya-16-let.html",
+          "https://companies.rbc.ru/amp/ogrn/1107452001250/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "ceo": "Камынин Алексей Игоревич",
+        "owners": "Камынин Алексей Игоревич — 51%; Ялалетдинов Денис Альбертович — 49%",
+        "private_ownership": true,
+        "sources": [
+          "https://companies.rbc.ru/id/1107452001250-chzeo/",
+          "https://firmoteka.ru/7452075526"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S2",
+        "date": "2026-08-26",
+        "summary": "Проект локализации производства автономных сервисных роботов Robo на базе ЧЗЭО вошел в число крупнейших венчурных сделок 2026 года; на развитие технологии и локализацию привлечено 500 млн ₽. Дополнительно 24.08.2026 ЧЗЭО сообщил о запуске нового пилотного проекта «Энергофлот» в мобильном энергоснабжении.",
+        "sources": [
+          "https://www.kommersant.ru/doc/8908374",
+          "https://www.kommersant.ru/doc/8673635",
+          "https://www.elec.ru/news/2026/08/24/roboty-uzhe-rjadom-direktor-chzeo-posetil-vsemirnu.html"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Камынин Алексей Игоревич",
+        "role": "Директор и совладелец ООО «ЧЗЭО»; совладелец платформы Robo",
+        "sources": [
+          "https://companies.rbc.ru/id/1107452001250-chzeo/",
+          "https://www.kommersant.ru/doc/8673635"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "phone": "+7 (351) 239-90-31",
+        "additional_phone": "8 800 444-65-94",
+        "email": "info@chelzeo.ru",
+        "website": "https://www.chelzeo.ru/",
+        "type": "Official corporate phone + email + website route",
+        "source": "https://companies.rbc.ru/id/1107452001250-chzeo/"
+      },
+      "dedup_keys": {
+        "inn": "7452075526",
+        "ogrn": "1107452001250",
+        "legal_name": "ООО ЧЕЛЯБИНСКИЙ ЗАВОД ЭЛЕКТРООБОРУДОВАНИЯ",
+        "brand_domain": "ЧЗЭО|chelzeo.ru"
+      },
+      "dedup_check": {
+        "status": "PASS_NO_MATCH_FOUND",
+        "canonical_repo_exact_checks": ["7452075526", "Челябинский завод электрооборудования"],
+        "checked_before_write": true
+      },
+      "final_status": "QUALIFIED_FOR_CANONICAL_RECHECK"
+    }
+  ],
+  "deep_checked_rejects": [
+    {
+      "candidate": "Юпласт-Черноземье",
+      "reason": "Not staged: fresh 2026 expansion signal and contact route confirmed, but a current municipal catalog classifies the enterprise as large; without an explicit current SIZE rule proving it fits the campaign, the candidate is conservatively rejected rather than guessed into scope."
+    },
+    {
+      "candidate": "НЭВЗ",
+      "reason": "Not staged: very large enterprise / group structure; outside conservative target-scale interpretation for this worker."
+    },
+    {
+      "candidate": "Дамате",
+      "reason": "Not staged: large vertically integrated group; conservative SIZE reject."
+    },
+    {
+      "candidate": "Семаргл / Калашников robot factory",
+      "reason": "Not staged: fresh opening signal found, but specific private ownership/LPR and current scale chain were not fully closed in this pass."
+    },
+    {
+      "candidate": "ГК Велфарм",
+      "reason": "Not staged: fresh investment signal found, but legal-entity mapping and full LPR/contact chain for the specific project were not closed to required standard."
+    }
+  ],
+  "quality_notes": [
+    "No guessed or pattern-generated contacts were used.",
+    "Stale records were excluded where fresher 2025/2026 data were available.",
+    "Canonical master/contactable/contacts/evidence/runtime/campaign were not modified.",
+    "Final physical dedup remains with the single canonical writer.",
+    "Raw target was not reached and is reported as such rather than inflated."
+  ]
+}
