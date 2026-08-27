@@ -1,0 +1,193 @@
+{
+  "schema_version": "growth_news_worker_v1",
+  "lane": "growth_news",
+  "created_at": "2026-08-27T03:48:00+03:00",
+  "source_head_before_write": "00ae5903bca115a197d02808699c2797a858b4e2",
+  "canonical_snapshot": {
+    "campaign_id": "new_5000",
+    "canonical_count": 424,
+    "contactable_count": 424,
+    "last_completed_run": "N5K-20260827-441",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_funnel": {
+    "raw_distinct_companies_confirmed": 62,
+    "fast_gate": 11,
+    "size": 7,
+    "legal": 6,
+    "signal": 5,
+    "lpr": 4,
+    "contact": 3,
+    "qualified": 3,
+    "duplicates_or_early_rejects": 51,
+    "excluded_after_fast_gate": 8,
+    "notes": "За execution window подтверждены 62 реально именованных разных raw-компании из свежих growth/investment/expansion источников и региональных инвестпорталов. Цель 100-180 raw не достигнута; цифра не завышалась, строки выдачи и безымянные инвестпредложения не считались. Критерии не ослаблялись."
+  },
+  "qualified": [
+    {
+      "brand": "СибЕвроВэн",
+      "legal_name": "ООО \"СИБЕВРОВЭН\"",
+      "inn": "5433182430",
+      "ogrn": "1105476057554",
+      "domain": "sibeurovan.ru",
+      "legal_status": "Действующая организация; статус подтвержден на август 2026",
+      "ownership": "Частная компания; учредители-физлица; генеральный директор Евгений Кирик также является учредителем",
+      "size_evidence": {
+        "metric": "Выручка 2025",
+        "value": "2.94 млрд руб.; рост примерно 6.2% год к году",
+        "urls": [
+          "https://www.tbank.ru/business/contractor/legal/1105476057554/",
+          "https://b2b.house/company/OOO-SIBEVROVEN_52f12ff7-4046-4890-a494-7b58b4f2ba65/"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-06-03",
+        "summary": "На ПМЭФ-2026 компания подписала соглашение о строительстве производственно-складского комплекса площадью 9 тыс. кв. м в индустриальном парке Есипово. Инвестиции заявлены на уровне 700 млн руб., проектная мощность — 1500 прицепов и полуприцепов-рефрижераторов в год, создание 130 рабочих мест.",
+        "urls": [
+          "https://www.vedomosti.ru/press_releases/2026/06/03/pmef-2026-v-podmoskove-postroyat-proizvodstvo-pritsepov-i-polupritsepov-refrizheratorov",
+          "https://mii.mosreg.ru/sobytiya/novosti-ministerstva/pmef-2026-v-podmoskove-postroiat-proizvodstvo-pricepov-i-polupricepov-refrizeratorov"
+        ]
+      },
+      "lpr": {
+        "name": "Кирик Евгений Олегович",
+        "role": "Генеральный директор; учредитель; подписант инвестиционного соглашения",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1105476057554/",
+          "https://mii.mosreg.ru/sobytiya/novosti-ministerstva/pmef-2026-v-podmoskove-postroiat-proizvodstvo-pricepov-i-polupricepov-refrizeratorov"
+        ]
+      },
+      "contact": {
+        "route": "Официальный общий маршрут компании",
+        "phone": "+7 (383) 217-47-92",
+        "email": "info@sibeurovan.ru",
+        "website": "https://new.sibeurovan.ru",
+        "source_url": "https://industrials.ru/proizvoditel/18366-vibevroven"
+      },
+      "dedup_keys": {
+        "inn": "5433182430",
+        "ogrn": "1105476057554",
+        "legal_name": "ООО СИБЕВРОВЭН",
+        "brand_domain": "СибЕвроВэн|sibeurovan.ru"
+      },
+      "dedup_check": "Повторный поиск по репозиторию перед записью по названию и ИНН совпадений не выявил; финальный physical dedup остается за canonical writer.",
+      "gate_result": "QUALIFIED"
+    },
+    {
+      "brand": "Гофромир",
+      "legal_name": "ООО \"ГОФРОМИР\"",
+      "inn": "7743692795",
+      "ogrn": "1087746658174",
+      "domain": "gofromir.ru",
+      "legal_status": "Действующая организация; актуальность подтверждена на август 2026",
+      "ownership": "Частная компания; 100% учредитель Сергей Новиков; генеральный директор Александр Абрамов",
+      "size_evidence": {
+        "metric": "Выручка 2025",
+        "value": "3.055 млрд руб.; рост примерно 8.3% год к году; около 382 сотрудников",
+        "urls": [
+          "https://firmoteka.ru/7743692795",
+          "https://companies.rbc.ru/id/1087746658174-ooo-gofromir/"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-07-27",
+        "summary": "ГК Гофромир ввела в эксплуатацию на площадке в Солнечногорске две автоматические линии для серийного производства сложной гофроупаковки; ранее в июле также сообщалось о подготовке новой линии воздушно-пузырчатой пленки для удвоения выпуска до 30 млн кв. м в год.",
+        "urls": [
+          "https://mii.mosreg.ru/sobytiya/novosti-ministerstva/v-solnecnogorske-rassirili-proizvodstvo-sloznoi-gofroupakovki",
+          "https://gofromir.ru/blog/smi-o-nas/gofromir-razvivaet-proizvodstvennye-moshchnosti/",
+          "https://www.vedomosti.ru/press_releases/2026/07/03/podmoskovnii-proizvoditel-upakovki-udvoit-vipusk-vozdushno-puzirchatoi-plenki-do-30-mln-kv-metrov-v-god"
+        ]
+      },
+      "lpr": {
+        "name": "Новиков Сергей Сергеевич",
+        "role": "Учредитель 100%; публичный представитель развития производства",
+        "evidence_urls": [
+          "https://firmoteka.ru/7743692795",
+          "https://gofromir.ru/about/eksperty/",
+          "https://mii.mosreg.ru/sobytiya/novosti-ministerstva/v-solnecnogorske-rassirili-proizvodstvo-sloznoi-gofroupakovki"
+        ],
+        "legal_ceo": "Абрамов Александр Валентинович"
+      },
+      "contact": {
+        "route": "Официальный общий и коммерческий маршрут компании",
+        "phone": "+7 (495) 150-12-66",
+        "email": "order@gofromir.ru",
+        "general_email": "info@gofromir.ru",
+        "contact_page": "https://gofromir.ru/contacts/",
+        "source_url": "https://gofromir.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "7743692795",
+        "ogrn": "1087746658174",
+        "legal_name": "ООО ГОФРОМИР",
+        "brand_domain": "Гофромир|gofromir.ru"
+      },
+      "dedup_check": "Повторный поиск по репозиторию перед записью по названию и ИНН совпадений не выявил; финальный physical dedup остается за canonical writer.",
+      "gate_result": "QUALIFIED"
+    },
+    {
+      "brand": "Нео-Пак",
+      "legal_name": "ООО \"НЕО-ПАК\"",
+      "inn": "5404475633",
+      "ogrn": "1125476262988",
+      "domain": "n-pak.ru",
+      "legal_status": "Действующая организация; статус подтвержден на 24 августа 2026",
+      "ownership": "Частная компания; учредители-физлица; директор Александр Ладан",
+      "size_evidence": {
+        "metric": "Выручка 2025",
+        "value": "4.72 млрд руб.; рост около 12% год к году; 218 сотрудников по актуальному профилю",
+        "urls": [
+          "https://companies.rbc.ru/id/1125476262988-ooo-neo-pak/",
+          "https://saby.ru/profile/5404475633-541001001"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-08-10",
+        "summary": "Калужская площадка Нео-Пак продолжает наращивать производство; объем инвестиций уже превысил 600 млн руб., следующий ориентир — 1000 тонн продукции в месяц, а общий объем вложений по соглашению к 2030 году заявлен на уровне 1.5 млрд руб. с созданием 300 рабочих мест.",
+        "urls": [
+          "https://www.investkaluga.com/media/news/dva-goda-v-kaluzhskoy-oblasti-neo-pak-naraschivaet-proizvodstvo/",
+          "https://n-pak.ru/company"
+        ]
+      },
+      "lpr": {
+        "name": "Ладан Александр Юрьевич",
+        "role": "Директор ООО Нео-Пак",
+        "evidence_urls": [
+          "https://n-pak.ru/company",
+          "https://invest.n-pak.ru/"
+        ]
+      },
+      "contact": {
+        "route": "Официальный общий маршрут и прямой публичный email директора",
+        "phone": "+7 (383) 373-28-13",
+        "email": "of@n-pak.ru",
+        "lpr_email": "a.ladan@n-pak.ru",
+        "contact_page": "https://n-pak.ru/contact",
+        "source_url": "https://n-pak.ru/company"
+      },
+      "dedup_keys": {
+        "inn": "5404475633",
+        "ogrn": "1125476262988",
+        "legal_name": "ООО НЕО-ПАК",
+        "brand_domain": "Нео-Пак|n-pak.ru"
+      },
+      "dedup_check": "Повторный поиск по репозиторию перед записью по названию и ИНН совпадений не выявил; финальный physical dedup остается за canonical writer.",
+      "gate_result": "QUALIFIED"
+    }
+  ],
+  "rejected_examples": [
+    {"name": "Логика молока", "reason": "уже интегрирована в canonical RUN 440"},
+    {"name": "Нью Лайн Инжиниринг", "reason": "уже интегрирована в canonical RUN 441"},
+    {"name": "МолоПак", "reason": "ранее квалифицирован worker-ом; повторно не брать"},
+    {"name": "НЭВЗ", "reason": "крупный контур/корпоративная принадлежность; не прошел быстрый gate текущего сегмента"},
+    {"name": "Haval", "reason": "иностранная/крупная корпоративная структура; не целевой частный средний бизнес"},
+    {"name": "АЛИУМ", "reason": "входит в крупную фармацевтическую группу; ранний reject по целевому профилю"},
+    {"name": "Степ Пазл", "reason": "есть свежий modernization-сигнал, но динамика выручки 2025 отрицательная; не повышать до QUALIFIED без более сильного S1-S3 подтверждения"}
+  ],
+  "outreach_performed": false,
+  "canonical_write_performed": false
+}
