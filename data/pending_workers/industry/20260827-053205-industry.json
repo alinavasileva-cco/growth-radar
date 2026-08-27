@@ -1,0 +1,181 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T05:32:05+03:00",
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "source_head_context": {
+    "current_working_config_version": "2026-08-27T05:04:00+03:00",
+    "last_completed_run": "N5K-20260827-443",
+    "canonical_contactable": "433/433",
+    "integrity": "PASS",
+    "orphan_contacts_evidence": "0/0"
+  },
+  "raw_pool": {
+    "distinct_raw": 117,
+    "method": "120 catalog rows sampled from 12 separate Russia pages of PRODЕXPO-2026, then exact-name duplicate removal; 3 obvious duplicate stand rows removed (НИЛ КФХ, ПОЛАЙС, ИБИК МЕЖДУНАРОДНАЯ ТОРГОВЛЯ). Alphabetic page separation was used to minimize cross-page overlap.",
+    "catalog": "PRODЕXPO-2026 Russia exhibitor catalog",
+    "catalog_total_russia": 1437,
+    "sample_pages": [22,111,139,61,83,128,94,27,89,49,50,75],
+    "catalog_urls": [
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=22",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=111",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=139",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=61",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=83",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=128",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=94",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=27",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=89",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=49",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=50",
+      "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=75"
+    ]
+  },
+  "worker_funnel": {
+    "raw": 117,
+    "fast_gate_deep_checked": 6,
+    "size": 4,
+    "legal": 3,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2,
+    "note": "Only six strongest candidates were deep-checked in this worker pass. The remaining catalog names are raw-only and are not represented as having passed any funnel stage."
+  },
+  "qualified": [
+    {
+      "brand": "Белгородский хладокомбинат",
+      "legal_name": "АО \"БЕЛГОРОДСКИЙ ХЛАДОКОМБИНАТ\"",
+      "inn": "3125008530",
+      "ogrn": "1023101644390",
+      "domain": "hlado.ru",
+      "status": "active",
+      "private_gate": {
+        "pass": true,
+        "evidence": "Акции распределены между физическими лицами; 24.51% у генерального директора Георгия Бузиашвили, 24.86% у Ольги Кулешовой, остальные пакеты у физлиц не превышают 6.2%.",
+        "url": "https://www.kommersant.ru/doc/8635142",
+        "date": "2026-05-20"
+      },
+      "size": {
+        "pass": true,
+        "revenue_2025_rub": 1897652000,
+        "employees": 371,
+        "urls": [
+          "https://companies.rbc.ru/id/1023101644390-ao-belgorodskij-hladokombinat/",
+          "https://www.kommersant.ru/doc/8635142"
+        ]
+      },
+      "signal": {
+        "pass": true,
+        "type": "S1",
+        "date": "2026-06-30",
+        "summary": "Инвестировал 10 млн руб. в запуск производственной линии мороженого для Магнита; мощность до 150 т/месяц, первая партия 500 тыс. единиц с поставкой в 20 тыс. магазинов в июле 2026.",
+        "urls": [
+          "https://www.kommersant.ru/doc/8780272",
+          "https://openbelgorod.ru/news/economy/2026-07-02/svetyascheesya-morozhenoe-nachali-proizvodit-v-belgorode-516078"
+        ]
+      },
+      "lpr": {
+        "pass": true,
+        "name": "Бузиашвили Георгий Даниелович",
+        "role": "Генеральный директор; акционер 24.51%",
+        "freshness": "Генеральный директор подтверждён раскрытием эмитента 06.05.2026; доля подтверждена публикацией Коммерсанта 2026.",
+        "urls": [
+          "https://e-disclosure.azipi.ru/messages/4536459/",
+          "https://www.kommersant.ru/doc/8635142"
+        ]
+      },
+      "contact": {
+        "pass": true,
+        "route": "Приёмная генерального директора",
+        "phone": "+7 (4722) 21-78-81",
+        "email": "217881@belhlado.ru",
+        "url": "https://hlado.ru/kontakty/"
+      },
+      "dedup_keys": {
+        "inn": "3125008530",
+        "ogrn": "1023101644390",
+        "exact_legal_name": "АО БЕЛГОРОДСКИЙ ХЛАДОКОМБИНАТ",
+        "brand_domain": "Белгородский хладокомбинат|hlado.ru"
+      },
+      "repository_prewrite_dedup": "PASS — GitHub repository search for INN 3125008530 returned no matches before staging write."
+    },
+    {
+      "brand": "Павлово-Посадский Гофрокомбинат",
+      "legal_name": "ООО \"ПП ГОФРОКОМБИНАТ\"",
+      "inn": "5035040606",
+      "ogrn": "1115035000410",
+      "domain": "ppgk.ru",
+      "status": "active",
+      "private_gate": {
+        "pass": true,
+        "owners": [
+          {"name": "Кушнир Александр Николаевич", "share": "94%"},
+          {"name": "Кушнир Олег Александрович", "share": "1%"}
+        ],
+        "treasury_share": "5%",
+        "url": "https://companium.ru/id/1115035000410-pp-gofrokombinat",
+        "freshness": "Последние изменения ЕГРЮЛ до 10.04.2026; актуальный руководитель с 12.11.2025."
+      },
+      "size": {
+        "pass": true,
+        "revenue_2025_rub_approx": 9800000000,
+        "employees_approx": 921,
+        "url": "https://alestech.ru/factory/797-pavlovo-posadskij-gofrokombinat"
+      },
+      "signal": {
+        "pass": true,
+        "type": "S1",
+        "date": "2026-03",
+        "summary": "В 2026 году проведена/запланирована глубокая модернизация бумагоделательного оборудования; одновременно строится новый склад 5.9 тыс. м² с вводом к IV кварталу 2026 и ростом запасов гофрокартона с 12 до 19 тыс. т.",
+        "urls": [
+          "https://ppgk.ru/news/ppgk-strategicheskiy-apgreyd-kak-otvet-na-vyzovy-rynka/",
+          "https://alestech.ru/factory/797-pavlovo-posadskij-gofrokombinat",
+          "https://www.publish.ru/news/202603_20098841"
+        ]
+      },
+      "lpr": {
+        "pass": true,
+        "name": "Кушнир Александр Николаевич",
+        "role": "Генеральный директор; собственник 94%",
+        "freshness": "Актуальный руководитель с 12.11.2025; более старые записи с Сергеем Говоровым исключены как устаревшие.",
+        "urls": [
+          "https://companium.ru/id/1115035000410-pp-gofrokombinat",
+          "https://www.tbank.ru/business/contractor/legal/1115035000410/"
+        ]
+      },
+      "contact": {
+        "pass": true,
+        "route": "Официальный общий/коммерческий маршрут",
+        "phone": "+7 (495) 960-19-22",
+        "email": "info@ppgk.ru",
+        "url": "https://ppgk.ru/"
+      },
+      "dedup_keys": {
+        "inn": "5035040606",
+        "ogrn": "1115035000410",
+        "exact_legal_name": "ООО ПП ГОФРОКОМБИНАТ",
+        "brand_domain": "Павлово-Посадский Гофрокомбинат|ppgk.ru"
+      },
+      "repository_prewrite_dedup": "PASS — GitHub repository search for INN 5035040606 returned no matches before staging write."
+    }
+  ],
+  "deep_rejects": [
+    {
+      "name": "ООО КРАФТ ФУДС ГРУПП",
+      "reason": "SIZE fail: 2025 revenue reported at 37.8m RUB, far below current scale orientation."
+    },
+    {
+      "name": "ООО ЗАВОД ИМПЕРИЯ СОКОВ",
+      "reason": "SIZE/trajectory weak: 2025 revenue 331.644m RUB and declining from 405.173m RUB; no sufficiently strong fresh S1-S3 signal confirmed in this pass."
+    },
+    {
+      "name": "ОАО Брянский молочный комбинат",
+      "reason": "Fresh operational evidence exists, but this pass did not confirm the private-company ownership gate strongly enough to qualify without inference."
+    },
+    {
+      "name": "ОАО Челны Холод",
+      "reason": "Scale passes, but a sufficiently dated fresh S1-S3 company-specific signal was not confirmed in this pass."
+    }
+  ]
+}
