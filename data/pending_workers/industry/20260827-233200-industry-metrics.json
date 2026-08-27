@@ -1,0 +1,21 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T23:32:00+03:00",
+  "baseline_head": "8b27476b13dc823e8604cf87e71501c2fde7f94c",
+  "baseline_canonical_contactable": "477/477",
+  "config_version": "2026-08-27T23:20:00+03:00",
+  "outreach_performed": false,
+  "canonical_written": false,
+  "qualified": [],
+  "supersedes_worker_metrics": "data/pending_workers/industry/20260827-232900-industry-metrics.json",
+  "correction_reason": "The superseded metrics file contained one cross-lane duplicate (БМТ). This immutable correction replaces that duplicate with the next unique Wasma participant so the auditable raw pool is exactly 100 distinct companies.",
+  "funnel": {"raw_distinct":100,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0},
+  "decision_note": "Each lane exceeded >70% duplicate+early reject within its first 20 evaluated unique companies. Exhibition/catalog presence alone is not S1-S3. No stale data were used to force a pass.",
+  "lanes": [
+    {"source":"MITEX 2026 official exhibitor catalog","url":"https://catalog.mitexpo.ru/expositions/exposition/7054","raw_distinct":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"candidates":["A-iPower","ADA INSTRUMENTS","AEG Lubricants","AIRLINE","BIFACES / АКВАСАН","BLOCKER","CAIMAN","CONDTROL","Damos","DEEPS TOOLS PVT LTD","Eastman Hand Tools","Edon","ERMENRICH","FANGTOOLS","FELISATTI (ООО Фелисатти)","FENGBAO | NOKK","FINDER","FIXALL","GOLDMANIBUS","HANGZHOU GREAT STAR INDUSTRIAL"]},
+    {"source":"PRODEXPO 2026 official Expocentre catalog — Gastronomy rubric","url":"https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/rubricator/4","raw_distinct":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"candidates":["1МК, ООО","ACEITES ALBERT","ALKO ŞEKERLEME GIDA SAN. VE TIC. A.Ş.","ANDRIANO SOLINARI","CHEECORN","DAMAR CONFIT","INTEGRITA","MERKO GIDA SANAYİ VE TİCARET A.Ş.","OZON БАНК","PUCCI S.R.L.","TARTUFI SR","TUKAS GIDA SANAYI VE TICARET A.S.","АВАНГАРД, ООО","АГРОПРОДУКТ, ООО","АЛТЫН, OOO","АРГО, ООО","АСТОН, АО","БАРКАД, ОСОО","БЕЛПРОДУКТ, ООО","БЕТАГРАН ЛИПЕЦК, ООО"]},
+    {"source":"ExpoCoating Moscow 2026 official exhibitor list","url":"https://www.expocoating-moscow.ru/ru-RU/about/exhibitor-list.aspx","raw_distinct":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"candidates":["БМТ","ГАЛЬВАНИТ ЕВРО, ООО","ГАЛЬВАНИЧЕСКИЕ ТЕХНОЛОГИИ","ИНСТАПРОМ","МАНЭЛ","МАШХИМПРОМ","МеталлПластПриорити","МИНИСТЕРСТВО ОБРАЗОВАНИЯ РЕСПУБЛИКИ БЕЛАРУСЬ","Моечные машины Эколайн","НеваРеактив, ООО","ОБНИНСКИЙ ЦЕНТР ПОРОШКОВОГО НАПЫЛЕНИЯ","ПЛАЗМА К","ПОЛИПЛАСТ","ПРОЦЕСС НПО","РЕДУТ, ООО","СОНИС","СПЕКТР-ХИМ","ТАГАТ","ТЕХНОЛОГИИ","ТЕХРЕСУРС"]},
+    {"source":"Wasma 2026 official exhibitor list","url":"https://www.wasma.ru/ru-RU/about/exhibitor-list.aspx","raw_distinct":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"candidates":["Jiangsu Aidemans Technology Co., Ltd.","L-Labs","SSP Private Limited","А.ПРО","АКЦИОНЕРНОЕ ОБЩЕСТВО РЯЖСКИЙ АВТОРЕМОНТНЫЙ ЗАВОД","АО УВЗ-Транс","АЭРОФИЛЬТР, ООО","Воздухоочистка НПК, ООО","Геоскан, ООО","Естественные технологии","ИНЖЭКО","Клевер","ЛЕКСОР, ООО","Лемана ПРО","Лента","ЛЮБИСТОК, ООО","ОКС Групп, ООО","Олимп, НПО","Онлайн Экология, ООО","ООО Завод КДМ"]},
+    {"source":"Heat&Power 2026 official exhibitor list","url":"https://www.heatpower-expo.ru/ru-RU/about/exhibitor-list.aspx","raw_distinct":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"candidates":["АГВ, ООО","АГК, ООО","АГУНА ТЕПЛО, ООО","ВАЛДЕКС ЭНЕРГЕТИКА","Валдекс Энергетические Решения, ООО","ВОЛЖСКИЕ ИНДУСТРИАЛЬНЫЕ ДВИГАТЕЛИ, ООО","ДВС РЕСУРС","ИТЕРРА","КИРЭЙ КЕМИКАЛ, ООО","МОТОРВЕРК-СГУ, ООО","ООО Техарт","ООО РН-СМАЗОЧНЫЕ МАТЕРИАЛЫ","РОСКЛАПАН","РТС, ООО","ТЕПЛООБМЕН","ТЕХПРОМ","ЭнергоПромТех","Ярославский дизельный двигатель","Anhui EvoTec Power Generation Co., Ltd","Changsha U1 Technology Co.,LTD"]}
+  ]
+}
