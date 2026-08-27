@@ -1,0 +1,97 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T16:27:00+03:00",
+    "source_head_sha": "a2a32c41c63b42e10f5791684cbe5fce1874165b",
+    "source_run": "N5K-20260827-454R1",
+    "canonical_count_at_start": 469,
+    "contactable_count_at_start": 469,
+    "canonical_integrity_at_start": "PASS",
+    "outreach_performed": false
+  },
+  "funnel": {
+    "raw_surfaced": 80,
+    "raw_scope": "80 distinct employer-level candidates surfaced after obvious cross-page dedup from current HH/direct-employer and regional job-board pools; broad Екатеринбург/Kазань/Новосибирск listings were saturated, so the search was rotated to regional/direct-employer results including Тюмень, Ростов-на-Дону and other low-overlap pools.",
+    "fast_gate_pass": 6,
+    "deep_check": 5,
+    "size_pass": 3,
+    "legal_pass": 3,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_early_reject_split": null,
+    "note": "The exact duplicate-vs-early-reject split was not separately instrumented and is intentionally not reconstructed. Broad HH-heavy results showed high saturation with known employers, large chains, recruiters and weak/old signals; source mix was rotated rather than spending deep-check time on the saturated pool."
+  },
+  "qualified": [
+    {
+      "brand": "Future Vision",
+      "legal_name": "ООО \"КОМПЭЛС ИНТЕГРАЦИЯ\"",
+      "entity_type": "ООО",
+      "inn": "6658436206",
+      "ogrn": "1136658018683",
+      "legal_status": "Действующее",
+      "region": "Свердловская область",
+      "size": {
+        "basis": "2025 revenue",
+        "revenue_2025_rub": 1450000000,
+        "evidence": "Актуальная бухгалтерская отчетность за 2025 год показывает выручку около 1,45 млрд руб.; компания является российским производителем светодиодных экранов и мультимедийных решений.",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1136658018683/",
+          "https://companium.ru/id/1136658018683-kompehls-integraciya"
+        ]
+      },
+      "brand_legal_evidence": {
+        "description": "Официальная страница контактов Future Vision прямо указывает ООО «Компэлс Интеграция», ИНН 6658436206 и ОГРН 1136658018683; официальный сайт использует тот же бренд и реквизиты.",
+        "url": "https://future-vision.ru/contacts/"
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-20",
+        "title": "Руководитель отдела продаж",
+        "description": "Свежая job-board выдача от 20 августа 2026 фиксирует вакансию руководителя отдела продаж Future Vision в Екатеринбурге. Роль предназначена для B2B-продаж российского производителя светодиодных экранов; официальный раздел вакансий Future Vision также содержит эту позицию с задачами руководителя отдела продаж.",
+        "evidence_urls": [
+          "https://rabota1000.ru/ekaterinburg/rukovoditel-otdela-dizajna?metro=289",
+          "https://future-vision.ru/about/vacancies/",
+          "https://dreamjob.ru/employers/118496/vakansii/136461838"
+        ]
+      },
+      "lpr": {
+        "name": "Помозов Александр Игоревич",
+        "role": "Директор",
+        "evidence_urls": [
+          "https://companium.ru/id/1136658018683-kompehls-integraciya",
+          "https://future-vision.ru/news/zavod-future-vision-vnov-smotrit-v-buduschee-itogi-vystavki-light-audio-tec-2025/"
+        ]
+      },
+      "contact": {
+        "type": "official_company_route",
+        "phone": "8 800 333-69-68",
+        "sales_phone": "+7 (343) 237-26-56",
+        "email": "info@future-vision.ru",
+        "contact_form": "https://future-vision.ru/contacts/",
+        "evidence_url": "https://future-vision.ru/contacts/"
+      },
+      "dedup": {
+        "checked_against_head": "a2a32c41c63b42e10f5791684cbe5fce1874165b",
+        "keys": {
+          "inn": "6658436206",
+          "ogrn": "1136658018683",
+          "legal_name": "ООО \"КОМПЭЛС ИНТЕГРАЦИЯ\"",
+          "brand_domain": "Future Vision|future-vision.ru"
+        },
+        "repository_exact_inn_match": false
+      },
+      "decision": "QUALIFIED",
+      "decision_reason": "Подтверждены действующее российское частное ООО, точный brand→legal mapping и ИНН/ОГРН, соответствующий масштаб по отчетности 2025 года, свежий датированный S1 job-board сигнал, директор как LPR и официальный практический маршрут связи. Неподтвержденные или шаблонно восстановленные контакты не использовались.",
+      "evidence_urls": [
+        "https://future-vision.ru/contacts/",
+        "https://future-vision.ru/about/vacancies/",
+        "https://rabota1000.ru/ekaterinburg/rukovoditel-otdela-dizajna?metro=289",
+        "https://dreamjob.ru/employers/118496/vakansii/136461838",
+        "https://www.tbank.ru/business/contractor/legal/1136658018683/",
+        "https://companium.ru/id/1136658018683-kompehls-integraciya"
+      ]
+    }
+  ]
+}
