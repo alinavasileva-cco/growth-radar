@@ -1,0 +1,89 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T15:17:36+03:00",
+    "source_head_sha": "7429f2bfe04775b170e0f043230f520e85f5d433",
+    "source_run": "N5K-20260827-453",
+    "canonical_count_at_start": 464,
+    "contactable_count_at_start": 464,
+    "canonical_integrity_at_start": "PASS",
+    "outreach_performed": false
+  },
+  "funnel": {
+    "raw_surfaced": 80,
+    "fast_gate_pass": 6,
+    "deep_check": 3,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_early_reject_split": null,
+    "note": "Jobs discovery used low-overlap regional/direct-employer pools after broad HH-heavy results showed high saturation. Exact duplicate-vs-early-reject split was not separately instrumented and is intentionally not reconstructed."
+  },
+  "qualified": [
+    {
+      "brand": "S.Lavia",
+      "legal_name": "ИП Костина Ольга Валерьевна",
+      "entity_type": "ИП",
+      "inn": "434800578091",
+      "ogrnip": "306434531400087",
+      "legal_status": "Действующий ИП",
+      "region": "Кировская область",
+      "lpr": {
+        "name": "Костина Ольга Валерьевна",
+        "role": "индивидуальный предприниматель / владелец бизнеса",
+        "evidence_url": "https://companies.rbc.ru/persons/ogrnip/306434531400087-kostina-olga-valerevna/"
+      },
+      "size": {
+        "basis": "operating footprint",
+        "evidence": "Официальный интернет-магазин и внешние актуальные каталоги подтверждают федеральную розничную сеть S.Lavia, 28 представительств/магазинов в нескольких городах, собственное производство и оптовое направление; официальный B2B-сайт заявляет более 2 000 000 изделий в наличии и под заказ.",
+        "evidence_urls": [
+          "https://slaviabag.ru/",
+          "https://naitiko.ru/companies/s_lavia",
+          "https://sumki-optom.net/page/cooperation"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-25",
+        "title": "Руководитель отдела продаж в сегменте B2B",
+        "description": "Прямой работодатель S.Lavia ищет руководителя B2B-продаж; в вакансии прямо указана задача вывести команду на новый уровень. Компания описана как производитель и оптовый продавец сумок и аксессуаров, работающий с розничными сетями, маркетплейсами и шоурумами по всей России более 15 лет.",
+        "evidence_url": "https://dreamjob.ru/employers/129624/vakansii/136608264"
+      },
+      "contact": {
+        "type": "official_company_route",
+        "phone": "8 (800) 222-42-69",
+        "emails": ["info@slaviabag.ru", "zakaz@slaviabag.ru"],
+        "contact_form": "https://slaviabag.ru/page/kontakty",
+        "evidence_url": "https://slaviabag.ru/page/kontakty"
+      },
+      "brand_legal_evidence": {
+        "description": "Официальная страница реквизитов S.Lavia прямо указывает ИП Костина Ольга Валерьевна, ИНН 434800578091 и ОГРНИП 306434531400087.",
+        "url": "https://slaviabag.ru/page/rekvizity"
+      },
+      "dedup": {
+        "checked_against_head": "7429f2bfe04775b170e0f043230f520e85f5d433",
+        "keys": {
+          "inn": "434800578091",
+          "ogrnip": "306434531400087",
+          "legal_name": "ИП Костина Ольга Валерьевна",
+          "brand_domain": "S.Lavia|slaviabag.ru"
+        },
+        "repository_exact_inn_match": false
+      },
+      "decision": "QUALIFIED",
+      "decision_reason": "Подтверждены действующий российский ИП, официальный brand→legal mapping, соответствующий масштаб действующего бизнеса, свежий S1 job-board сигнал, собственник/LPR и практический официальный маршрут связи. Догадки и шаблонно восстановленные контакты не использовались.",
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/129624/vakansii/136608264",
+        "https://slaviabag.ru/page/rekvizity",
+        "https://slaviabag.ru/page/kontakty",
+        "https://companies.rbc.ru/persons/ogrnip/306434531400087-kostina-olga-valerevna/",
+        "https://www.tbank.ru/business/contractor/legal/306434531400087/",
+        "https://naitiko.ru/companies/s_lavia",
+        "https://sumki-optom.net/page/cooperation"
+      ]
+    }
+  ]
+}
