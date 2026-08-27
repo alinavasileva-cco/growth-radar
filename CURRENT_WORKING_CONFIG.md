@@ -160,3 +160,7 @@ Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. O
 ## RUN 459 — physical dedup repair
 
 307 source-level raw identities were evaluated across industry/20260827-202618 (100), jobs/20260827-212043 (47), industry/20260827-212737 (100) and canonical low-overlap PRODЭКСПО pages 1–6 (60). This number is not claimed as 307 globally proven distinct companies because complete canonical identity keys are unavailable for every early-rejected raw item. FEDAST passed the worker deep funnel but the final physical canonical guard matched the existing company by INN 7720478065, OGRN 1197746494461 and exact legal entity, so net canonical qualified and physically integrated are 0. Final funnel: raw 307 → fast gate 8 → size 3 → legal 3 → signal 1 → LPR 1 → contact 1 → net qualified 0; physical duplicates 1; excluded 306. Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
+
+
+## Latest verified run N5K-20260827-460
+Canonical/contactable: 477/477. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

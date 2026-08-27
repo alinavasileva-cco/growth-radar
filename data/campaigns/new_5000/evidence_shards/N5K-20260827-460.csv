@@ -1,0 +1,6 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0634,N5K-0634-E01,LEGAL,ООО ЕЗВО действует; ИНН 6679031070; ОГРН 1136679004681.,https://companies.rbc.ru/id/1136679004681-ooo-proizvodstvennoe-obedinenie-stelz/,РБК Компании,2026-08-27T23:18:00+03:00,HIGH,N5K-20260827-460,new_5000
+N5K-0634,N5K-0634-E02,SIZE,Выручка за 2025 год 56 399 000 ₽; официальный сайт подтверждает специализированное производство и поставки КТП и трансформаторов.,https://ezvo1.ru/,Official ЕЗВО site / РБК Компании,2026-08-27T23:18:00+03:00,HIGH,N5K-20260827-460,new_5000
+N5K-0634,N5K-0634-E03,SIGNAL,"Свежая вакансия руководителя отдела продаж от 12.08.2026 с задачами управления B2B-продажами, CRM и ростом продаж.",https://nesiditsa.ru/vacancy/135828379,Job vacancy source,2026-08-27T23:18:00+03:00,HIGH,N5K-20260827-460,new_5000
+N5K-0634,N5K-0634-E04,LPR,Лобов Евгений Аркадьевич — директор и единственный учредитель ООО ЕЗВО.,https://companies.rbc.ru/id/1136679004681-ooo-proizvodstvennoe-obedinenie-stelz/,РБК Компании,2026-08-27T23:18:00+03:00,HIGH,N5K-20260827-460,new_5000
+N5K-0634,N5K-0634-E05,CONTACT,"Официальные контакты: +7 (343) 343-32-36, zakaz@ezvo1.ru и форма на странице контактов.",https://ezvo1.ru/contacts,Official ЕЗВО site,2026-08-27T23:18:00+03:00,HIGH,N5K-20260827-460,new_5000

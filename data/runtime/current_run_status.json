@@ -1,56 +1,44 @@
 {
-  "run_id": "N5K-20260827-459",
+  "run_id": "N5K-20260827-460",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T22:07:00+03:00",
+  "updated_at": "2026-08-27T23:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 476,
     "target_count": 5000,
-    "current_canonical_count": 476,
-    "current_contactable_count": 476,
-    "progress_added": 0,
-    "remaining": 4524
+    "current_canonical_count": 477,
+    "current_contactable_count": 477,
+    "progress_added": 1,
+    "remaining": 4523
   },
   "funnel": {
-    "discovered": 307,
-    "fast_gate_passed": 8,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
+    "discovered": 180,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 306
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 179
   },
   "lane_metrics": [
     {
-      "lane": "industry/20260827-202618",
-      "raw": 100,
-      "fast_gate": 1,
-      "size": 1,
-      "legal": 1,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "result": "CONSUMED_ZERO_QUALIFIED"
-    },
-    {
-      "lane": "jobs/20260827-212043",
-      "raw": 47,
-      "fast_gate": 7,
+      "lane": "jobs/20260827-222430",
+      "raw": 80,
+      "fast_gate": 6,
       "size": 2,
       "legal": 2,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
-      "result": "FEDAST_QUALIFIED"
+      "result": "EZVO_QUALIFIED"
     },
     {
-      "lane": "industry/20260827-212737",
+      "lane": "industry/20260827-222525",
       "raw": 100,
       "fast_gate": 0,
       "size": 0,
@@ -60,27 +48,17 @@
       "contact": 0,
       "qualified": 0,
       "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
-    },
-    {
-      "lane": "canonical_low_overlap/prodexpo_2026_pages_1_6",
-      "raw": 60,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "result": "EARLY_REJECT_EXHIBITION_PRESENCE_NOT_GROWTH_SIGNAL"
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "ЕЗВО / Екатеринбургский Завод Высоковольтного Оборудования"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "476_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "476_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "477_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "477_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
