@@ -1,0 +1,89 @@
+{
+  "worker": "industry",
+  "status": "COMPLETE_WITH_ZERO_QUALIFIED",
+  "created_at": "2026-08-27T19:22:06+03:00",
+  "source_head_sha": "3970e1375fc87f5f428fe5123bec8b112ce9cc66",
+  "config_source": "CURRENT_WORKING_CONFIG.md",
+  "canonical_baseline": {
+    "run": "N5K-20260827-457",
+    "canonical": 476,
+    "contactable": 476,
+    "integrity": "PASS"
+  },
+  "dedup_keys_used": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "discovery": {
+    "raw_distinct_collected": 120,
+    "sources": [
+      {
+        "name": "АГРОПРОДМАШ-2026 — официальный предварительный список участников",
+        "url": "https://www.agroprodmash-expo.ru/ru/exhibition/exhibitors/",
+        "raw_distinct": 100,
+        "note": "Distinct exhibitor/company names were collected from the current 2026 exhibitor list. The source includes Russian and foreign exhibitors; non-Russian entities fail the cheap gate."
+      },
+      {
+        "name": "Aquaflame 2026 — официальный список подтвержденных участников",
+        "url": "https://aquaflame-expo.ru/ru/about/news/2025/december/01/opublikovan-spisok-uchastnikov-aquaflame2026/",
+        "raw_distinct": 20,
+        "note": "A second industry source was added to reduce overlap and source concentration."
+      }
+    ],
+    "raw_candidates": [
+      "APS Group","ASTROPIT","DiAR Engineering","ECOS WEAR","EuroConcept & Dingzheng Machinery LTD","FINNAH","GROBOTP","ISRobotics","KLÖCKNER PENTAPLAST","MONOPOL","SBG","SUSTERA TM (POLAIR GROUP)","WIBERG","ABS: SISTEMY UPRAVLENIYA PROIZVODSTVOM","ABSOLUTE-M","AVANGARD GROUP","AVIS COMPANY","AGROMASH NPO","AGROPAK","AGROS","AZIMUT GC","AIMOL LUBRICANTS","AQUATROL COMPANY","AKSOID","ACTIVE PACK","ALAMAK","ALS-POVOLZHIE LLC","ALFA CONTRACTING LTD","ALKOR UPACK","ALMI","ALPMA-SERVICE","ALUCHEM RUS","AMETIS JSC","AMYL LLC","ANGEL YEAST RUS","ANK-TEHNO","ANTAGRO","ANTES","APOLLO","ARDECS GROUP","ARCXO GROUP","ARMATURA & AVTOMATIZACIYA LLC","ARTA-CONSULT","ARTEKS","ASAP FOOD EQUIPMENT","ASPROM","ASTRAFORCE","ATLANTIS-PAK PCF","ATP TLP","AUDI EXTRACTS LLC","AF AUTOMATIC LLC","AFR","BEGARAT-M","BELKOM","BELCOMIX CIP","BELY ZUBR","BERTSCHGROUP RUS","BESTEQ-ENGINEERING","BESTROM CJSC","BETELGEYZE","BILTEH","BIO STANDART","BIOCOL LTD","BIOMIR LLC","BIOSTAR TRADE","BITROBOTICS","BIZERBA RUS","BMC FOOD INGREDIENTS","BOGATOV TRADING COMPANY","BOYTSOV ALEKSEY VYACHESLAVOVICH IE","BOOSTER RUS LLC","BHOOMI NATURAL PRODUCTS AND EXPORTS","VA SYSTEMS CO. LTD","VAKUMPAK-M PTK","VAKUUMKRAFT","WAM RUSSIA","VATEC","WEBER RUSSIA","VegaSystems","VEZAR TECHNOLOGY LLC","WELDSIDE LTD","VENDO-RUS TECHNOLOGIES LLC","VILLEKO","VOLGINSKIY PLASTICS MANUFACTURING CO.","VOPLOSCHENIE LTD","VORONEZHPRODMASH","VSELUG","VSO PROFIL","VED AGENT","GARANYAN ANDREY SERGEEVICH IE","GEA FARM TECHNOLOGIES RUS","GECONA PAK","GIGAMASH RESEARCH AND PRODUCTION ASSOCIATION","GIDEN ELECTRONICS","GLAVBIOTECH","GLOBUS","GRAN PRI","GREAT ENGINEERING","GRENT","DATAJET","Агрогазполимер","Аквант","Альтерпласт","АДЛ","Акваполис","АКВАФОР","АНИ пласт","АПЗ","Вилма","Гейзер","ДЖИЛЕКС","Завод ЛИТ","ИКАПЛАСТ","K-Флекс","Лемакс","МАРКОПУЛ","МАРКОПУЛ КЕМИКЛС","Московский завод FDplast","НМК","Ольмакс"
+    ],
+    "first20_threshold_note": "The first-20 duplicate+early-reject metric for the initial Agroprodmash batch was not reliably instrumented during this pass. Per current config, it is not reconstructed or invented after the fact. The worker rotated to a second low-overlap industry source; the next pass must capture the first-20 threshold contemporaneously.",
+    "global_additivity_note": "This worker raw count must not be added arithmetically to other worker pools unless the canonical writer performs cross-worker identity dedup."
+  },
+  "funnel": {
+    "raw_distinct_collected": 120,
+    "fast_gate_deep_evaluated": 3,
+    "fast_gate_pass": 2,
+    "size_pass": 2,
+    "legal_pass": 1,
+    "signal_pass": 0,
+    "lpr_pass": 0,
+    "contact_pass": 0,
+    "qualified": 0,
+    "not_deep_checked_in_this_worker_pass": 117
+  },
+  "deep_checks": [
+    {
+      "company": "Bitrobotics / ООО «БИТРОБОТИКС»",
+      "inn": "9723062975",
+      "ogrn": "1187746752995",
+      "decision": "REJECT_AT_DEDUP",
+      "reason": "Fresh canonical dedup found INN 9723062975 already present as Lead ID N5K-0545. No duplicate staging was created.",
+      "evidence_urls": [
+        "https://bitrobotics.com/",
+        "canonical:data/campaigns/new_5000/leads_master.csv@3970e1375fc87f5f428fe5123bec8b112ce9cc66"
+      ]
+    },
+    {
+      "company": "Атлантис-Пак / ООО ПКФ «АТЛАНТИС-ПАК»",
+      "inn": "6163026503",
+      "ogrn": "1026100660090",
+      "decision": "REJECT_AT_LEGAL",
+      "reason": "Current scale is strong (2025 revenue about 18.2bn RUB), but the current legal profile states that accession of other legal entities has been in progress since 10.06.2026. The worker fails closed at LEGAL rather than treating an entity in an active reorganization process as unambiguously qualifying. Fresh canonical dedup showed no INN match at the checked HEAD.",
+      "evidence_urls": [
+        "https://check.tochka.com/company/1026100660090/",
+        "https://b2b.house/company/OOO-PKF-ATLANTIS-PAK_8a441115-13e0-41b9-806d-1306b07302ce/financial-statements/",
+        "https://www.atlantis-pak.ru/news/atlantis-pak-posetil-glava-minpromtorga-rf-anton-alikhanov"
+      ]
+    },
+    {
+      "company": "BESTEQ-Engineering / ООО «БЕСТЕК-ИНЖИНИРИНГ»",
+      "inn": "6167103290",
+      "ogrn": "1116195004639",
+      "decision": "REJECT_AT_SIGNAL",
+      "reason": "SIZE and LEGAL are current and confirmed: active company, 2025 revenue 352.6m RUB, 43 employees, sole founder Tatiana Lemeshevskaya and CEO Maksim Lemeshevsky. Current 2026 product/editorial activity was found, but no sufficiently strong S1-S3 growth/expansion signal was verified in this pass. Ordinary product content and revenue growth alone were not promoted to SIGNAL. Fresh canonical dedup showed no INN match at the checked HEAD.",
+      "evidence_urls": [
+        "https://firmoteka.ru/6167103290",
+        "https://companies.rbc.ru/amp/ogrn/1116195004639/",
+        "https://en.besteq.ru/about"
+      ]
+    }
+  ],
+  "qualified_companies": [],
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "quality_note": "No candidate was promoted without a verified active legal entity/IE, current scale, current S1-S3 signal, LPR and practical contact route. Stale data was not used where fresher 2025/2026 evidence was available. No guessed contacts or ownership facts were used."
+}
