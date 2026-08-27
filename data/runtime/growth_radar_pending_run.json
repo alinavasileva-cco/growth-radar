@@ -1,8 +1,92 @@
 {
-  "run_id": "N5K-20260827-442",
-  "updated_at": "2026-08-27T04:08:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260827-442 integrated physically; canonical/contactable 430/430; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260827-443",
+  "updated_at": "2026-08-27T04:56:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 4,
+  "funnel": {
+    "discovered": 120,
+    "fast_gate_passed": 7,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 4,
+    "lpr_identified": 4,
+    "contact_route_found": 4,
+    "qualified": 4,
+    "duplicates": 1,
+    "excluded": 115
+  },
+  "lane_metrics": [
+    {"lane":"jobs worker","raw":40,"duplicates_or_early_rejects":34,"qualified":1,"note":"Fresh immutable 20260827-043040-jobs.json. Worker-qualified IBMM was rejected by physical canonical dedup because INN 5032334982 already exists as N5K-0355; COSYMA advanced."},
+    {"lane":"industry worker","raw":120,"duplicates_or_early_rejects":119,"qualified":1,"note":"Fresh immutable 20260827-043559-industry.json. STELKON advanced after canonical review."},
+    {"lane":"growth/news worker","raw":30,"duplicates_or_early_rejects":28,"qualified":2,"note":"Fresh immutable 20260827-044000-growth-news.json. NeoCor and GSTZ advanced after canonical review."}
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID":"N5K-0585","Brand":"КОСИМА / Cosyma","Legal Name":"ООО «КОСИМА»","INN":"7704746711","OGRN/OGRNIP":"1107746106247","Region":"Москва","City":"Москва","Segment":"Медицинские технологии и оборудование для нейрореабилитации / B2B-B2G","Website":"https://cosyma.pro/","Revenue/Scale":"Выручка 137,858 млн ₽ за 2025 год; действующий производитель зарегистрированных медицинских изделий; B2B/B2G поставки","Signal Level":"S1","Signal Summary":"11.08.2026 опубликована вакансия Руководителя отдела продаж / Head of Sales медицинского оборудования: управление командой, развитие ключевых клиентов и стратегии продаж.","Signal Date":"2026-08-11","Signal Source":"https://get-works.ru/job-detail.php?vac=136116413","Owner":"Черноуцан Сергей Игоревич — один из учредителей","CEO":"Черноуцан Сергей Игоревич","LPR":"Черноуцан Сергей Игоревич","LPR Role":"Генеральный директор / учредитель / практический ЛПР","Primary Phone":"+7 495 902-54-01","Primary Email":"sales@cosyma.pro","HH Contact":"","Contact Form":"https://cosyma.pro/home","Contact Type":"Official corporate and sales routes","Contact Source":"Official Cosyma site; current registry profiles; current 2026 vacancy","Consulting Hypothesis":"Систематизация B2B/B2G-продаж медицинского оборудования: key-account pipeline, CRM/KPI, коммерческая стратегия и масштабирование sales-команды.",
+      "contacts":[
+        {"channel":"phone","value":"+7 495 902-54-01","type":"official corporate","source":"Official Cosyma site","url":"https://cosyma.pro/home","is_lpr":false},
+        {"channel":"phone","value":"+7 977 089-10-02","type":"official sales","source":"Official Cosyma site","url":"https://cosyma.pro/home","is_lpr":false},
+        {"channel":"email","value":"sales@cosyma.pro","type":"official sales","source":"Official Cosyma site","url":"https://cosyma.pro/home","is_lpr":false},
+        {"channel":"email","value":"info@cosyma.pro","type":"official corporate","source":"Official Cosyma site","url":"https://cosyma.pro/home","is_lpr":false}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"ООО КОСИМА, ИНН 7704746711, ОГРН 1107746106247, действует; производитель медицинских изделий.","url":"https://elk.roszdravnadzor.gov.ru/public-gateway/med-product/api/v1/files/download-by-path-public?id=8128853&path=med_product%2Fmed_products_new_res_files%2F1557129602.87725-138583.pdf","source":"Росздравнадзор"},
+        {"type":"SCALE","claim":"Выручка за 2025 год 137,858 млн ₽.","url":"https://saby.ru/profile/7704746711-773101001","source":"Saby"},
+        {"type":"SIGNAL","claim":"11.08.2026 опубликована вакансия Head of Sales медицинского оборудования/нейрореабилитации.","url":"https://get-works.ru/job-detail.php?vac=136116413","source":"Get-Works"},
+        {"type":"LPR","claim":"Черноуцан Сергей Игоревич — генеральный директор и один из учредителей ООО КОСИМА.","url":"https://companies.rbc.ru/id/1107746106247-ooo-kosima/","source":"РБК Компании"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует корпоративные и sales-телефоны/email.","url":"https://cosyma.pro/home","source":"Cosyma official"},
+        {"type":"BRAND_LEGAL","claim":"Бренд Cosyma связан с ООО КОСИМА и действующим производителем медицинских изделий.","url":"https://cosyma.pro/home","source":"Cosyma official"}
+      ]
+    },
+    {
+      "Lead ID":"N5K-0586","Brand":"STELKON / Завод Стелкон","Legal Name":"ООО «ЗАВОД СТЕЛКОН»","INN":"5034060416","OGRN/OGRNIP":"1215000064234","Region":"Московская область","City":"Орехово-Зуево","Segment":"Автоматизированные складские системы / промышленное оборудование / B2B","Website":"https://www.stelkon.ru/","Revenue/Scale":"Выручка 4,435 млрд ₽ за 2025 год (+44% г/г); прибыль 510,4 млн ₽; 262 сотрудника","Signal Level":"S3","Signal Summary":"Актуальная отчётность 2025, опубликованная в 2026 году, подтверждает быстрый рост выручки и прибыли; компания продолжает масштабировать автоматизированные складские решения и промышленный контур.","Signal Date":"2026-04-01","Signal Source":"https://companium.ru/id/1215000064234-zavod-stelkon","Owner":"Кулагин Николай Александрович — 100%","CEO":"Кулагин Николай Александрович","LPR":"Кулагин Николай Александрович","LPR Role":"Генеральный директор / единственный учредитель","Primary Phone":"+7 (495) 925-51-83","Primary Email":"info@stelkon.ru","HH Contact":"","Contact Form":"https://www.stelkon.ru/contacts/","Contact Type":"Official corporate route","Contact Source":"Official STELKON site; current 2025 financials; registry profiles","Consulting Hypothesis":"Коммерческое масштабирование промышленного B2B: key-account pipeline, продуктовая архитектура автоматизации складов, CRM/KPI и управление маржинальностью роста.",
+      "contacts":[
+        {"channel":"phone","value":"+7 (495) 925-51-83","type":"official corporate","source":"STELKON official","url":"https://www.stelkon.ru/contacts/","is_lpr":false},
+        {"channel":"email","value":"info@stelkon.ru","type":"official corporate","source":"STELKON official","url":"https://www.stelkon.ru/contacts/","is_lpr":false},
+        {"channel":"form","value":"https://www.stelkon.ru/contacts/","type":"official contact form","source":"STELKON official","url":"https://www.stelkon.ru/contacts/","is_lpr":false}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"ООО ЗАВОД СТЕЛКОН действует; ИНН 5034060416, ОГРН 1215000064234.","url":"https://companies.rbc.ru/id/1215000064234-obschestvo-s-ogranichennoj-otvetstvennostyu-zavod-stelkon/","source":"РБК Компании"},
+        {"type":"SCALE","claim":"Выручка 2025 — 4,435 млрд ₽; прибыль 510,4 млн ₽; 262 сотрудника.","url":"https://companium.ru/id/1215000064234-zavod-stelkon","source":"Companium"},
+        {"type":"SIGNAL","claim":"В 2026 году подтверждён быстрый рост финансовых показателей и продолжающееся масштабирование складских автоматизированных решений.","url":"https://www.stelkon.ru/novosti/","source":"STELKON official"},
+        {"type":"LPR","claim":"Кулагин Николай Александрович — генеральный директор и 100% учредитель.","url":"https://companies.rbc.ru/amp/ogrn/1215000064234/","source":"РБК Компании"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует +7 (495) 925-51-83 и info@stelkon.ru.","url":"https://www.stelkon.ru/contacts/","source":"STELKON official"},
+        {"type":"BRAND_LEGAL","claim":"STELKON / Завод Стелкон связан с ООО ЗАВОД СТЕЛКОН.","url":"https://www.stelkon.ru/","source":"STELKON official"}
+      ]
+    },
+    {
+      "Lead ID":"N5K-0587","Brand":"НеоКор","Legal Name":"АО «НЕОКОР»","INN":"4205026550","OGRN/OGRNIP":"1024200695991","Region":"Кемеровская область","City":"Кемерово","Segment":"Медицинские изделия для сердечно-сосудистой хирургии / производство / B2B-B2G","Website":"https://neocor.ru/","Revenue/Scale":"Выручка около 371–374 млн ₽ за 2025 год; рост около 75,5% г/г; около 63 сотрудников","Signal Level":"S2","Signal Summary":"29.05.2026 компания открыла новую производственную площадку в Кемерове; новый комплекс позволяет увеличить выпуск биопротезов клапанов сердца примерно с 2 тыс. до 4,5 тыс. изделий в год.","Signal Date":"2026-05-29","Signal Source":"https://neocor.ru/novosti","Owner":"Непубличное АО; структура акционеров не раскрыта в использованных свежих источниках","CEO":"Пузь Александр Викторович","LPR":"Пузь Александр Викторович","LPR Role":"Генеральный директор / практический ЛПР","Primary Phone":"+7 (923) 600-01-70","Primary Email":"sales@neocor.ru","HH Contact":"","Contact Form":"https://neocor.ru/kontakty","Contact Type":"Official corporate and commercial routes","Contact Source":"Official NeoCor site; current registry and financial profiles","Consulting Hypothesis":"Масштабирование коммерческого контура после расширения производства: B2B/B2G pipeline, сегментация клиник и дистрибьюторов, CRM/KPI и план роста загрузки новых мощностей.",
+      "contacts":[
+        {"channel":"phone","value":"+7 (923) 600-01-70","type":"official corporate","source":"NeoCor official","url":"https://neocor.ru/kontakty","is_lpr":false},
+        {"channel":"phone","value":"+7 (923) 526-86-16","type":"official commercial","source":"NeoCor official","url":"https://neocor.ru/kontakty","is_lpr":false},
+        {"channel":"email","value":"sales@neocor.ru","type":"official commercial","source":"NeoCor official","url":"https://neocor.ru/kontakty","is_lpr":false},
+        {"channel":"email","value":"office_neocor@neocor.ru","type":"official corporate","source":"NeoCor official","url":"https://neocor.ru/kontakty","is_lpr":false}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"АО НЕОКОР, ИНН 4205026550, ОГРН 1024200695991, действует.","url":"https://companies.rbc.ru/id/1024200695991-zao-neokor/","source":"РБК Компании"},
+        {"type":"SCALE","claim":"Выручка 2025 около 371–374 млн ₽; рост около 75,5%; около 63 сотрудников.","url":"https://firmoteka.ru/4205026550","source":"Фирмотека"},
+        {"type":"SIGNAL","claim":"29.05.2026 открыта новая производственная площадка; мощность выпуска биопротезов существенно увеличивается.","url":"https://neocor.ru/novosti","source":"NeoCor official"},
+        {"type":"LPR","claim":"Пузь Александр Викторович — генеральный директор АО НеоКор.","url":"https://companies.rbc.ru/id/1024200695991-zao-neokor/","source":"РБК Компании"},
+        {"type":"CONTACT","claim":"Официальная страница контактов публикует общий и коммерческий телефоны и email.","url":"https://neocor.ru/kontakty","source":"NeoCor official"},
+        {"type":"BRAND_LEGAL","claim":"Бренд НеоКор связан с АО НЕОКОР, ИНН 4205026550.","url":"https://neocor.ru/","source":"NeoCor official"}
+      ]
+    },
+    {
+      "Lead ID":"N5K-0588","Brand":"Гагаринский светотехнический завод / ГСТЗ","Legal Name":"ООО «ГАГАРИНСКИЙ СВЕТОТЕХНИЧЕСКИЙ ЗАВОД»","INN":"6722031168","OGRN/OGRNIP":"1166733075222","Region":"Смоленская область","City":"Гагарин","Segment":"Светотехническое производство / промышленный B2B","Website":"https://gstz.ru/","Revenue/Scale":"Выручка около 210,9 млн ₽ за 2025 год; около 132 сотрудников","Signal Level":"S2","Signal Summary":"03.08.2026 правительство Смоленской области сообщило о продолжающемся наращивании мощностей ГСТЗ: масштабная модернизация, 150 новых рабочих мест, лаборатория, инженерный центр и новые производственные линии.","Signal Date":"2026-08-03","Signal Source":"https://www.admin-smolensk.ru/novosti/news/v-gagarinskij-svetotehnicheskij-zavod-naraschivaet-proizvodstvennye-moschnosti/","Owner":"ООО ТПК «Вартон» — 100%","CEO":"Мордавченков Сергей Анатольевич","LPR":"Мордавченков Сергей Анатольевич","LPR Role":"Генеральный директор / практический ЛПР","Primary Phone":"+7 (48135) 3-47-28","Primary Email":"info@gstz.ru","HH Contact":"","Contact Form":"https://gstz.ru/contacts/","Contact Type":"Official corporate route","Contact Source":"Official GSTZ site; Government of Smolensk Region; current registry profiles","Consulting Hypothesis":"Коммерческое масштабирование после расширения мощностей: промышленный B2B pipeline, региональная/дилерская модель, CRM/KPI, ассортимент и загрузка новых производственных линий.",
+      "contacts":[
+        {"channel":"phone","value":"+7 (48135) 3-47-28","type":"official corporate","source":"GSTZ official","url":"https://gstz.ru/contacts/","is_lpr":false},
+        {"channel":"email","value":"info@gstz.ru","type":"official corporate","source":"GSTZ official","url":"https://gstz.ru/contacts/","is_lpr":false},
+        {"channel":"form","value":"https://gstz.ru/contacts/","type":"official contact form","source":"GSTZ official","url":"https://gstz.ru/contacts/","is_lpr":false}
+      ],
+      "evidence":[
+        {"type":"LEGAL","claim":"ООО ГАГАРИНСКИЙ СВЕТОТЕХНИЧЕСКИЙ ЗАВОД, ИНН 6722031168, ОГРН 1166733075222, действует.","url":"https://companies.rbc.ru/id/1166733075222-ooo-gagarinskij-svetotehnicheskij-zavod/","source":"РБК Компании"},
+        {"type":"SCALE","claim":"Выручка 2025 около 210,9 млн ₽; около 132 сотрудников.","url":"https://www.tbank.ru/business/contractor/legal/1166733075222/","source":"Т-Банк Бизнес"},
+        {"type":"SIGNAL","claim":"03.08.2026 подтверждено дальнейшее наращивание мощностей, новые линии, лаборатория и инженерный центр.","url":"https://www.admin-smolensk.ru/novosti/news/v-gagarinskij-svetotehnicheskij-zavod-naraschivaet-proizvodstvennye-moschnosti/","source":"Правительство Смоленской области"},
+        {"type":"LPR","claim":"Мордавченков Сергей Анатольевич — генеральный директор ООО ГСТЗ.","url":"https://companies.rbc.ru/id/1166733075222-ooo-gagarinskij-svetotehnicheskij-zavod/","source":"РБК Компании"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует +7 (48135) 3-47-28 и info@gstz.ru.","url":"https://gstz.ru/contacts/","source":"GSTZ official"},
+        {"type":"BRAND_LEGAL","claim":"ГСТЗ связан с ООО ГАГАРИНСКИЙ СВЕТОТЕХНИЧЕСКИЙ ЗАВОД.","url":"https://gstz.ru/about/","source":"GSTZ official"}
+      ]
+    }
+  ],
+  "notes":"Fresh workers ingested globally. IBMM / INN 5032334982 rejected as physical canonical duplicate already present as N5K-0355. Worker pools are not summed without cross-worker identity index; global raw is conservative max=120. Outreach=0."
 }
