@@ -1,47 +1,57 @@
 {
-  "run_id": "N5K-20260827-451",
+  "run_id": "N5K-20260827-452",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T13:07:00+03:00",
+  "updated_at": "2026-08-27T14:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 456,
+    "baseline_count": 457,
     "target_count": 5000,
-    "current_canonical_count": 457,
-    "current_contactable_count": 457,
-    "progress_added": 1,
-    "remaining": 4543
+    "current_canonical_count": 461,
+    "current_contactable_count": 461,
+    "progress_added": 4,
+    "remaining": 4539
   },
   "funnel": {
-    "discovered": 42,
-    "fast_gate_passed": 6,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
+    "discovered": 128,
+    "fast_gate_passed": 8,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 4,
+    "lpr_identified": 4,
+    "contact_route_found": 4,
+    "qualified": 4,
     "duplicates": 0,
-    "excluded": 41
+    "excluded": 124
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
-      "raw": 42,
-      "duplicates_or_early_rejects": 41,
+      "raw": 80,
+      "duplicates_or_early_rejects": 79,
       "qualified": 1,
-      "note": "Fresh immutable 20260827-113145-jobs.json from the same operational cycle. RSC Group passed current SIZE/LEGAL/SIGNAL/LPR/CONTACT; current web re-check confirmed active legal entity, 2025 revenue 549.867m RUB and current head-of-sales vacancy."
+      "note": "Fresh immutable data/pending_workers/jobs/20260827-133241-jobs.json. Worker stopped broad HH after >70% duplicate+early-reject saturation on the first 20 and rotated. Canonical re-check confirmed YANS; no physical exact duplicate by INN/OGRN/legal name was found before staging."
+    },
+    {
+      "lane": "low-overlap growth/regional/official discovery",
+      "raw": 48,
+      "duplicates_or_early_rejects": 45,
+      "qualified": 3,
+      "note": "Conservative auditable count of distinct company identities actually reviewed after global candidate dedup. Repeated articles/search-result rows were not counted as raw companies. Qualified: TD Mirograd/ZAIGER, Alkor, Beshtau. Additional search-result repetitions and unnamed projects were excluded from the raw count rather than inflated."
     }
   ],
   "qualified_companies": [
-    "РСК Групп / RSC Group"
+    "YANS / ЯНС товары для HoReCa",
+    "Мироград / ZAIGER",
+    "Алькор / Тюменский медведь",
+    "ГК Бештау / Бештау"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "457_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "457_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "461_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "461_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
