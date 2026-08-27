@@ -1,0 +1,97 @@
+{
+  "schema": "growth-radar-pending-worker-v1",
+  "lane": "jobs",
+  "created_at": "2026-08-27T18:21:46+03:00",
+  "source_head": "4ef271c382a28510f57ee5ad661586cc86c8385a",
+  "source_run": "N5K-20260827-456",
+  "canonical_snapshot": {
+    "canonical_count": 473,
+    "contactable_count": 473,
+    "integrity_status": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_rules": {
+    "canonical_write": false,
+    "outreach": false,
+    "funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "dedup_keys": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "brand_domain"]
+  },
+  "metrics": {
+    "raw_unique_employers": 52,
+    "target_raw_min": 80,
+    "target_raw_reached": false,
+    "deep_check": 3,
+    "qualified": 1,
+    "note": "Фактический raw-пул остановлен на 52 уникальных employer-level кандидатах в пределах текущего execution window; число 80 не дорисовывалось. Deep-check выполнен для СОРСО-СТР, DS1 / Дизайн Студия №1 и Компания ОРУМ. DS1 отклонён по масштабу (27.7 млн руб. выручки 2025); Компания ОРУМ не staged из-за недостаточно надёжного актуального legal/status контекста для строгого QUALIFIED без дополнительной проверки."
+  },
+  "raw_candidates": [
+    "IBMM", "Фридом", "CloudPayments", "Интерьерный салон KRASSKY", "СИНЕРГИЯ", "Этажи", "Техно-Строй", "Группа компаний ПроАгро", "AG loft", "Меранс", "Спортивный центр НА РУКАХ", "НПО Перпектива", "Руспромконтроль", "ИДА ГРУПП", "Фармстандарт-Медтехника", "АГАТ-МЕДФАРМ", "НК-Строй", "Группа компаний Динамика", "Вертро", "Аквилон-Инвест", "СОРСО-СТР", "Брендинговое агентство DS1", "Группа компаний RIOKA / MGS MAGESTRO", "СлышуВижу", "Кадровое Агентство Уникальных Специалистов", "ГК АВТОграф", "Софис", "Умный Век", "Карекс-Центр", "ДокторНейро", "ВЕКТОР", "Складовка", "Агентство недвижимости Домнушка", "Метроз Запускинжиниринг", "OLZORI", "Компания ОРУМ", "Волжская Судоходная Компания", "1MARKA", "Прайд", "Glorax Development", "FIT SERVICE", "Атлант-С", "Бонэкс Групп", "StarShip.Pro", "Alanbase", "Flipper Devices", "ЭнергоСила", "CharmCleo Cosmetic", "Поколение", "Руки Вверх-бар", "Sunergy Consult", "АО Хоупак"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "СОРСО-СТР",
+      "legal_name": "ООО \"СОРСО-СТР\"",
+      "inn": "7733589460",
+      "ogrn": "1067761317007",
+      "legal_status": "Действующее российское частное ООО",
+      "legal_status_as_of": "2026-08-11",
+      "size": {
+        "revenue_2025_rub": 3870594000,
+        "employees_2025": 325,
+        "evidence_urls": [
+          "https://firmoteka.ru/7733589460",
+          "https://b2b.house/company/OOO-SORSO-STR_a9871f2a-f468-4363-a7ad-f99513a72917/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-25",
+        "title": "Руководитель отдела продаж \"Маркетплейсы\"",
+        "summary": "Роль отвечает за масштабирование текущих кабинетов и подключение новых площадок, стратегию продаж на маркетплейсах, P&L, бюджеты, unit economics, команду и автоматизацию интеграций/операций.",
+        "evidence_url": "https://nesiditsa.ru/vacancy/136037555"
+      },
+      "lpr": {
+        "name": "Сильвестров Алексей Сергеевич",
+        "role": "Генеральный директор и 100% учредитель",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-SORSO-STR_a9871f2a-f468-4363-a7ad-f99513a72917/",
+          "https://check.tochka.com/company/1067761317007/"
+        ]
+      },
+      "contact_route": {
+        "official_domain": "sorso-str.ru",
+        "phones": ["+7 (495) 796-93-06", "+7 (812) 346-56-45"],
+        "emails": ["info.msk@sorso-str.ru", "info.spb@sorso-str.ru"],
+        "form": "Официальная форма заявки на сотрудничество на сайте",
+        "evidence_url": "https://sorso-str.ru/"
+      },
+      "brand_legal_link": {
+        "status": "confirmed",
+        "evidence_urls": [
+          "https://sorso-str.ru/",
+          "https://firmoteka.ru/7733589460"
+        ]
+      },
+      "dedup": {
+        "checked_against_repo_at_source_head": true,
+        "exact_inn_search_result": "no_match",
+        "keys": {
+          "inn": "7733589460",
+          "ogrn": "1067761317007",
+          "legal_name": "ООО СОРСО-СТР",
+          "brand_domain": "СОРСО-СТР|sorso-str.ru"
+        }
+      },
+      "funnel": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ],
+  "outreach": 0
+}
