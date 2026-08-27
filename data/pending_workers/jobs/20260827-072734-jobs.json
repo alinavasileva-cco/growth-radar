@@ -1,0 +1,126 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T07:27:34+03:00",
+    "source_head": "ced1b54b0752bd9b7cfd5f52dca87a3832b89e3c",
+    "source_run": "N5K-20260827-445",
+    "canonical_snapshot": {
+      "canonical": 442,
+      "contactable": 442,
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0
+    },
+    "funnel": {
+      "raw_distinct_employers_reviewed": 80,
+      "fast_gate_passed": 5,
+      "deep_check": 5,
+      "qualified": 1,
+      "duplicate_or_early_reject_exact_split": null,
+      "note": "80 employer-level rows were reviewed from four job-board city result pools (20 each: Novosibirsk, Krasnodar, Moscow, Saint Petersburg) plus fresh role searches used to prioritize deep-check. Exact duplicate-vs-early-reject split was not separately instrumented and is intentionally not reconstructed. Saturated/repeated employers already present in canonical were not deep-checked again."
+    },
+    "sources": [
+      "https://novosibirsk.jobcareer.ru/jobs/rukovoditel-otdela-prodaz/",
+      "https://krasnodar.jobcareer.ru/jobs/rukovoditel-otdela-prodaz/",
+      "https://msk.jobcareer.ru/jobs/rukovoditel-otdela-prodaz/",
+      "https://spb.jobcareer.ru/jobs/rukovoditel-otdela-prodaz/"
+    ]
+  },
+  "qualified": [
+    {
+      "brand": "Skin Synergy / Factology",
+      "legal_name": "ООО СИНЕРГИЯ КОСМЕТИК",
+      "inn": "5404309509",
+      "ogrn": "1225400006413",
+      "region": "Новосибирская область",
+      "city": "Новосибирск",
+      "segment": "Разработка и производство профессиональной косметики; B2B-дистрибуция для косметологов и клиник",
+      "website": "https://skinsynergy.pro/",
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 293832000,
+        "profit_2025_rub": 81469000,
+        "employees_reference": 1,
+        "source": "https://companies.rbc.ru/id/1225400006413-obschestvo-s-ogranichennoj-otvetstvennostyu-sinergiya-kosmetik/",
+        "note": "Revenue/profit are 2025 accounting figures. Employee reference is the registry profile value and is not used alone to characterize operating scale; the company owns multiple registered brands and distributes in 100+ Russian cities and 12 countries according to the current vacancy."
+      },
+      "legal": {
+        "active": true,
+        "director": "Земцов Сергей Сергеевич",
+        "owners": [
+          {"name": "Трифонова Кристина Эдуардовна", "share": "31.50%"},
+          {"name": "Земцов Сергей Сергеевич", "share": "26.50%"}
+        ],
+        "source": "https://companies.rbc.ru/id/1225400006413-obschestvo-s-ogranichennoj-otvetstvennostyu-sinergiya-kosmetik/"
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-07",
+        "title": "Руководитель отдела продаж",
+        "summary": "Работодатель ищет руководителя отдела продаж. Вакансия подтверждает собственную разработку и производство профессиональных косметологических препаратов; бренды Skin Synergy и Factology представлены более чем в 100 городах России и 12 странах.",
+        "source": "https://nesiditsa.ru/vacancy/135169408"
+      },
+      "lpr": {
+        "name": "Земцов Сергей Сергеевич",
+        "role": "Директор ООО СИНЕРГИЯ КОСМЕТИК",
+        "source": "https://companies.rbc.ru/id/1225400006413-obschestvo-s-ogranichennoj-otvetstvennostyu-sinergiya-kosmetik/",
+        "owner_context": "Крупнейший раскрытый учредитель — Трифонова Кристина Эдуардовна, 31.50%; официальный сайт Skin Synergy называет её основателем бренда и главным разработчиком."
+      },
+      "contact": {
+        "phone": "8 800 101 55 15",
+        "email": "info@skinsynergy.pro",
+        "form": "https://skinsynergy.pro/about",
+        "source": "https://skinsynergy.pro/about",
+        "route_type": "Официальный корпоративный телефон + email + форма сотрудничества"
+      },
+      "brand_legal_evidence": [
+        {
+          "claim": "ООО СИНЕРГИЯ КОСМЕТИК владеет зарегистрированными торговыми марками SKIN SYNERGY и FACTOLOGY.",
+          "source": "https://companies.rbc.ru/id/1225400006413-obschestvo-s-ogranichennoj-otvetstvennostyu-sinergiya-kosmetik/"
+        },
+        {
+          "claim": "Официальный сайт Skin Synergy называет Кристину Трифонову основателем бренда и главным разработчиком; официальный сайт публикует корпоративные контакты в Новосибирске.",
+          "source": "https://skinsynergy.pro/"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО СИНЕРГИЯ КОСМЕТИК, ИНН 5404309509, ОГРН 1225400006413; организация действует; директор Земцов Сергей Сергеевич.",
+          "url": "https://companies.rbc.ru/id/1225400006413-obschestvo-s-ogranichennoj-otvetstvennostyu-sinergiya-kosmetik/"
+        },
+        {
+          "type": "SIZE_CURRENT",
+          "claim": "Выручка за 2025 год 293.832 млн руб., прибыль 81.469 млн руб.",
+          "url": "https://companies.rbc.ru/id/1225400006413-obschestvo-s-ogranichennoj-otvetstvennostyu-sinergiya-kosmetik/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "07.08.2026 опубликована вакансия руководителя отдела продаж; компания сообщает о собственном производстве и присутствии брендов более чем в 100 городах России и 12 странах.",
+          "url": "https://nesiditsa.ru/vacancy/135169408"
+        },
+        {
+          "type": "LPR",
+          "claim": "Земцов Сергей Сергеевич — директор; Трифонова Кристина Эдуардовна — крупнейший раскрытый учредитель 31.50% и основатель бренда Skin Synergy.",
+          "url": "https://companies.rbc.ru/id/1225400006413-obschestvo-s-ogranichennoj-otvetstvennostyu-sinergiya-kosmetik/"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт Skin Synergy публикует 8 800 101 55 15, info@skinsynergy.pro и форму связи по вопросам продукции, дилеров и сотрудничества.",
+          "url": "https://skinsynergy.pro/about"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "5404309509",
+        "ogrn": "1225400006413",
+        "legal_name": "ООО СИНЕРГИЯ КОСМЕТИК",
+        "brand_domain": ["Skin Synergy|skinsynergy.pro", "Factology|factology.pro"]
+      },
+      "dedup_check": {
+        "repository_exact_inn_search_before_stage": "NO_MATCH",
+        "checked_against_head": "ced1b54b0752bd9b7cfd5f52dca87a3832b89e3c"
+      }
+    }
+  ],
+  "outreach": 0
+}
