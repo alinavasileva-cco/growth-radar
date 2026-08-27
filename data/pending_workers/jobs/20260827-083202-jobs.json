@@ -1,0 +1,134 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T08:32:02+03:00",
+    "source_head": "4b5907b23ef5bc361b3dcaabdceeeee981e7506a",
+    "source_run": "N5K-20260827-446",
+    "canonical_snapshot": {
+      "canonical": 445,
+      "contactable": 445,
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0
+    },
+    "funnel": {
+      "raw_distinct_employers_reviewed": 80,
+      "fast_gate_passed": 3,
+      "deep_check": 3,
+      "qualified": 1,
+      "duplicate_or_early_reject_exact_split": null,
+      "note": "80 employer-level rows were reviewed across four low-overlap regional job-board pools (Moscow, Novosibirsk, Saint Petersburg, Kazan), with fresh direct role searches used to prioritize deep-check. Exact duplicate-vs-early-reject split was not separately instrumented and is intentionally not reconstructed. After the jobs lane showed high saturation in the previous canonical RUN, repeated employers were not deep-checked again. Deep-check examples included Express Manufactura, PANELOK/Termologistika and Dolomit; PANELOK and Dolomit failed SIZE on current 2025 financials."
+    },
+    "sources": [
+      "https://ru-o1t.jobvk.com/moskva/rukovoditely-otdela-prodazh",
+      "https://www.notexistscomru.jobvk.com/novosibirsk/rukovoditely-otdela-prodazh",
+      "https://notexistswwwkhtjsru.jobvk.com/sankt-peterburg/rukovoditely-otdela-prodazh",
+      "https://forum.jobvk.com/kazan/rukovoditely-otdela/sa-ot-100000",
+      "https://nesiditsa.ru/vacancy/135511248"
+    ]
+  },
+  "qualified": [
+    {
+      "brand": "Экспресс Мануфактура / Express Manufactura",
+      "legal_name": "ООО ЭКСПРЕСС МАНУФАКТУРА",
+      "inn": "7726454494",
+      "ogrn": "1197746400620",
+      "region": "Московская область",
+      "city": "Наро-Фоминск / Москва",
+      "segment": "Производство и оптовые поставки экспресс-тестов и лабораторно-диагностического оборудования; B2B/B2G healthcare",
+      "website": "https://expressm-test.ru/",
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 657199000,
+        "profit_2025_rub": 58466000,
+        "employees_reference": 15,
+        "source": "https://companies.rbc.ru/id/1197746400620-obschestvo-s-ogranichennoj-otvetstvennostyu-ekspress-manufaktura/",
+        "note": "2025 accounting figures; current official site confirms operating manufacturer/supplier profile."
+      },
+      "legal": {
+        "active": true,
+        "director": "Киреев Игорь Витальевич",
+        "owners": [
+          {"name": "Киреев Андрей Игоревич", "share": "50%"},
+          {"name": "Киреев Игорь Витальевич", "share": "50%"}
+        ],
+        "source": "https://companies.rbc.ru/id/1197746400620-obschestvo-s-ogranichennoj-otvetstvennostyu-ekspress-manufaktura/",
+        "status_checked": "2026-08-27",
+        "note": "Registry-oriented profile identifies Igor Kireev as general director and both Igor/Andrey Kireev as 50% owners. The official partner portal labels Andrey Kireev as CEO and Igor Kireev as business development director; legal authority is therefore taken from the registry source, while the portal is used only to confirm named direct contact routes."
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-13",
+        "title": "Руководитель отдела продаж (производство мед. изделий)",
+        "summary": "Работодатель сообщает об активном росте и новых проектах и ищет руководителя отдела продаж для производителя экспресс-тестов и лабораторно-диагностического оборудования.",
+        "source": "https://nesiditsa.ru/vacancy/135511248"
+      },
+      "lpr": {
+        "name": "Киреев Игорь Витальевич",
+        "role": "Генеральный директор и совладелец 50% по текущему registry-oriented профилю",
+        "source": "https://companies.rbc.ru/id/1197746400620-obschestvo-s-ogranichennoj-otvetstvennostyu-ekspress-manufaktura/",
+        "direct_contact_evidence": "https://portal.expressm-test.ru/page/komanda",
+        "note": "Official partner portal publishes a named direct route to Igor Kireev, although it labels his operating title as director of business development."
+      },
+      "contact": {
+        "phone": "+7 (495) 190-00-05",
+        "email": "sales@expressm-test.ru",
+        "form": "https://expressm-test.ru/",
+        "named_lpr_email": "kiv@expressm-test.ru",
+        "named_lpr_phone": "+7 (495) 190-00-05",
+        "source": "https://expressm-test.ru/",
+        "named_lpr_source": "https://portal.expressm-test.ru/page/komanda",
+        "route_type": "Official corporate phone + sales email + website form + named direct executive email"
+      },
+      "brand_legal_evidence": [
+        {
+          "claim": "Official site footer identifies ООО ЭКСПРЕСС МАНУФАКТУРА, INN 7726454494, OGRN 1197746400620.",
+          "source": "https://expressm-test.ru/"
+        },
+        {
+          "claim": "Registry-oriented company profile identifies the same legal entity as active and lists the EXPRESS MANUFACTURA trademark among its registered marks.",
+          "source": "https://companies.rbc.ru/id/1197746400620-obschestvo-s-ogranichennoj-otvetstvennostyu-ekspress-manufaktura/"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО ЭКСПРЕСС МАНУФАКТУРА, ИНН 7726454494, ОГРН 1197746400620; organization is active; registry-oriented profile identifies Igor Kireev as general director and Igor/Andrey Kireev as 50% owners each.",
+          "url": "https://companies.rbc.ru/id/1197746400620-obschestvo-s-ogranichennoj-otvetstvennostyu-ekspress-manufaktura/"
+        },
+        {
+          "type": "SIZE_CURRENT",
+          "claim": "2025 revenue 657.199 million RUB and net profit 58.466 million RUB; reference headcount 15.",
+          "url": "https://companies.rbc.ru/id/1197746400620-obschestvo-s-ogranichennoj-otvetstvennostyu-ekspress-manufaktura/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "13.08.2026 employer posted Head of Sales for medical-device production and states active company growth and new projects.",
+          "url": "https://nesiditsa.ru/vacancy/135511248"
+        },
+        {
+          "type": "LPR",
+          "claim": "Igor Kireev is identified as general director and 50% owner in the registry-oriented profile; official partner portal publishes named direct contact details for him.",
+          "url": "https://portal.expressm-test.ru/page/komanda"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Official site publishes +7 (495) 190-00-05, sales@expressm-test.ru and a callback/contact form; official partner portal publishes kiv@expressm-test.ru for Igor Kireev.",
+          "url": "https://expressm-test.ru/"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "7726454494",
+        "ogrn": "1197746400620",
+        "legal_name": "ООО ЭКСПРЕСС МАНУФАКТУРА",
+        "brand_domain": ["Экспресс Мануфактура|expressm-test.ru", "Express Manufactura|expressm-test.ru"]
+      },
+      "dedup_check": {
+        "repository_exact_inn_search_before_stage": "NO_MATCH",
+        "repository_brand_search_before_stage": "NO_MATCH",
+        "checked_against_head": "4b5907b23ef5bc361b3dcaabdceeeee981e7506a"
+      }
+    }
+  ],
+  "outreach": 0
+}
