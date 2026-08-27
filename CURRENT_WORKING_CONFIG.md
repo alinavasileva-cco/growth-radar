@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-27T20:06:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260827-458`  
+**Версия:** 2026-08-27T22:10:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260827-459`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **476 / 476**  
 **Qualified staged not counted:** **0**  
@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence и pending;
 - physical canonical/contactable count: **476 / 476**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260827-458`;
+- последний завершённый RUN: `N5K-20260827-459`;
 - `N5K-20260827-454R1` — repair того же операционного цикла: первоначально canonical writer ошибочно трактовал ИП как запрещённую форму, хотя текущая конфигурация явно допускает `юрлицо/ИП`; S.Lavia была интегрирована без изменения критериев;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
@@ -112,6 +112,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260827-456`: 473/473, +2, PASS, orphan 0/0.
 - `N5K-20260827-457`: 476/476, +3, PASS, orphan 0/0.
 - `N5K-20260827-458`: 476/476, +0, PASS, orphan 0/0.
+- `N5K-20260827-459`: 476/476, +0, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260827-449
 Canonical/contactable: 455/455. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
@@ -155,3 +156,7 @@ Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 ## Latest verified run N5K-20260827-459
 Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+## RUN 459 — physical dedup repair
+
+307 source-level raw identities were evaluated across industry/20260827-202618 (100), jobs/20260827-212043 (47), industry/20260827-212737 (100) and canonical low-overlap PRODЭКСПО pages 1–6 (60). This number is not claimed as 307 globally proven distinct companies because complete canonical identity keys are unavailable for every early-rejected raw item. FEDAST passed the worker deep funnel but the final physical canonical guard matched the existing company by INN 7720478065, OGRN 1197746494461 and exact legal entity, so net canonical qualified and physically integrated are 0. Final funnel: raw 307 → fast gate 8 → size 3 → legal 3 → signal 1 → LPR 1 → contact 1 → net qualified 0; physical duplicates 1; excluded 306. Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
