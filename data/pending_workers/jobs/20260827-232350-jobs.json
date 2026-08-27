@@ -1,0 +1,99 @@
+{
+  "schema_version": "pending_worker_v1",
+  "lane": "jobs",
+  "created_at": "2026-08-27T23:23:50+03:00",
+  "source_head_sha": "7887dd915c8daa58c146640ab0f49d83ffdd6331",
+  "source_canonical_run": "N5K-20260827-460",
+  "source_canonical_count": 477,
+  "source_contactable_count": 477,
+  "canonical_write": false,
+  "outreach": false,
+  "worker_funnel": {
+    "raw_employer_level_after_within_worker_name_dedup": 80,
+    "raw_scope_note": "80 employer-level source identities audited across fresh regional job-board result pools and direct vacancy pages. No claim of a globally proven 80-company identity set beyond the worker because complete legal keys are unavailable for early rejects.",
+    "fast_gate": 5,
+    "deep_check": 3,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicates_plus_early_rejects": 75,
+    "duplicate_early_reject_rate": 0.9375,
+    "source_switch_triggered": true,
+    "source_switch_note": "Broad role/city search pools were highly saturated; shifted to regional/direct-employer vacancy pages and stopped weak/duplicate candidates before deep-check."
+  },
+  "discovery_sources": [
+    "https://www.vffzvru.jobvk.com/omsk/rukovoditely-otdela-prodazh",
+    "https://wwwjtfhhhszdjru.jobvk.com/ufa/rukovoditely-otdela-prodazh",
+    "https://www.notexistscomru.jobvk.com/novosibirsk/rukovoditely-otdela-prodazh",
+    "https://dreamjob.ru/employers/116298/vakansii/132606246",
+    "https://dreamjob.ru/employers/1379879/vakansii/135916844",
+    "https://dreamjob.ru/employers/307973/vakansii/133157104",
+    "https://gderabota.ru/вакансии/тюмень/коммерческий-директор/187083"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "Сатурн / Сатурн Башкирия",
+      "legal_name": "ООО «САТУРН СТРОЙМАРКЕТ БАШКИРИЯ»",
+      "short_legal_name": "ООО «САТУРН БАШКИРИЯ»",
+      "inn": "0277918390",
+      "ogrn": "1170280005092",
+      "legal_status": "Действующее российское частное ООО",
+      "legal_status_as_of": "2026-08-19",
+      "region": "Республика Башкортостан, Уфа",
+      "size": {
+        "revenue_2025_rub": 937890000,
+        "employees_2025": 585,
+        "category": "среднее предприятие",
+        "evidence_urls": [
+          "https://www.moedelo.org/kontragenty/ogrn/1170280005092",
+          "https://xn----etbbhpfd3axw8i.xn--p1ai/companies/0277918390"
+        ]
+      },
+      "signal": {
+        "tier": "S1",
+        "type": "Руководитель отдела продаж",
+        "date": "2026-08-19",
+        "summary": "Работодатель открыл конкурс на руководителя отдела продаж в Уфе. Задачи включают формирование и управление отделом до 10 менеджеров и выполнение коммерческих показателей по объему продаж и доходности.",
+        "evidence_url": "https://dreamjob.ru/employers/116298/vakansii/132606246"
+      },
+      "lpr": {
+        "name": "Щепотьев Алексей Константинович",
+        "role": "директор и 100% учредитель",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1170280005092-ooo-saturn-strojmarket-bashkiriya/",
+          "https://companium.ru/id/1170280005092-saturn-bashkiriya"
+        ]
+      },
+      "contact_route": {
+        "type": "официальный телефон + сайт регионального подразделения",
+        "phone": "+7 (347) 279-83-88",
+        "url": "https://ufa.saturn.net/shops/",
+        "note": "Контакт опубликован на официальном региональном сайте Сатурн; шаблонно восстановленные email/личные контакты не использовались."
+      },
+      "dedup_keys": {
+        "inn": "0277918390",
+        "ogrn": "1170280005092",
+        "exact_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ САТУРН СТРОЙМАРКЕТ БАШКИРИЯ",
+        "brand_domain": "САТУРН БАШКИРИЯ|ufa.saturn.net"
+      },
+      "dedup_check": {
+        "repository_search_inn": "no_match",
+        "repository_search_brand": "no_match",
+        "checked_against_head": "7887dd915c8daa58c146640ab0f49d83ffdd6331",
+        "final_canonical_guard_required": true
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/116298/vakansii/132606246",
+        "https://www.moedelo.org/kontragenty/ogrn/1170280005092",
+        "https://companies.rbc.ru/id/1170280005092-ooo-saturn-strojmarket-bashkiriya/",
+        "https://companium.ru/id/1170280005092-saturn-bashkiriya",
+        "https://ufa.saturn.net/shops/"
+      ],
+      "qualification": "QUALIFIED",
+      "qualification_note": "SIZE, LEGAL, S1 SIGNAL, LPR and practical official contact route all independently evidenced. No guessed facts or reconstructed contacts."
+    }
+  ]
+}
