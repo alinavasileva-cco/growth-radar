@@ -1,0 +1,234 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T18:25:28+03:00",
+  "source_head_before_write": "2144c4455ece69a2ee842c9b4325f7fcb7ca38b1",
+  "canonical_baseline": {
+    "run": "N5K-20260827-456",
+    "canonical": 473,
+    "contactable": 473,
+    "integrity": "PASS",
+    "source": "CURRENT_WORKING_CONFIG.md at source_head_before_write"
+  },
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "raw_pool": {
+    "distinct_count": 101,
+    "method": "101 distinct raw company/brand candidates from current industry exhibition participant/visitor lists, manufacturing ecosystem lists and a B2B company directory. FAST GATE was applied before deep checks. Sources/segments were rotated when the first 20 screened candidates produced duplicate+early-reject above 70%; batches shorter than 20 were not assigned a first-20 threshold result. Missing facts were not inferred and stale figures were excluded where fresher 2025/2026 evidence was available.",
+    "sources": [
+      {
+        "name": "Modern Bakery Moscow | Confex — visitor selection 2026, bread manufacturers",
+        "urls": ["https://modern-bakery.ru/visit"],
+        "raw": 20,
+        "duplicates_plus_early_rejects": 19,
+        "duplicate_reject_rate": 0.95,
+        "fast_gate_survivors": 1,
+        "qualified": 1,
+        "stop_reason": "duplicate+early reject >70% on first 20; rotated"
+      },
+      {
+        "name": "DairyTech 2026 — official exhibitor catalog, first screened batch",
+        "urls": ["https://exhibitors-itegroup.exhibitoronlinemanual.com/dairy-tech-2026/ru/Exhibitor", "https://dairytech-expo.ru/ru/press-room/news/2025/october/30/spisok-uchastnikov-dairytech-2026/"],
+        "raw": 20,
+        "duplicates_plus_early_rejects": 20,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "duplicate+early reject >70% on first 20; rotated"
+      },
+      {
+        "name": "GOTOVO / Modern Bakery ecosystem — industrial food producers",
+        "urls": ["https://gotovo-expo.ru/audience"],
+        "raw": 15,
+        "duplicates_plus_early_rejects": 15,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "screened batch exhausted below 20; no first-20 threshold asserted; rotated industry"
+      },
+      {
+        "name": "GOTOVO / Modern Bakery ecosystem — agroholdings and regional retail selection",
+        "urls": ["https://gotovo-expo.ru/audience"],
+        "raw": 20,
+        "duplicates_plus_early_rejects": 20,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "duplicate+early reject >70% on first 20; rotated"
+      },
+      {
+        "name": "Woodex 2026 — confirmed participant ecosystem",
+        "urls": ["https://woodexpo.ru/ru/about/news/2026/february/17/woodex-2026-klyuchevye-kompanii-uzhe-sredi-uchastnikov/"],
+        "raw": 18,
+        "duplicates_plus_early_rejects": 18,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "screened batch exhausted below 20; no first-20 threshold asserted; rotated source"
+      },
+      {
+        "name": "DairyTech Award 2026 — official participant projects",
+        "urls": ["https://dairytech-expo.ru/ru/press-room/news/2025/december/23/uchastniki-premii-dairytech-award-2026/"],
+        "raw": 7,
+        "duplicates_plus_early_rejects": 7,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "screened batch exhausted below 20; no first-20 threshold asserted"
+      },
+      {
+        "name": "OTC B2B manufacturer directory — Татарстан",
+        "urls": ["https://otc.ru/organization/all/1021602013762/"],
+        "raw": 1,
+        "duplicates_plus_early_rejects": 0,
+        "duplicate_reject_rate": 0.0,
+        "fast_gate_survivors": 1,
+        "qualified": 1,
+        "stop_reason": null
+      }
+    ],
+    "raw_candidates": [
+      "Bimbo QSR","Zotman Horeca","7 печей","Абсолют хлебокомбинат","Аксайский хлебокомбинат","Альтернатива","Арзамасский хлеб","АТРУС","Багерстат Рус","Бежицкий хлебокомбинат","Беляевский хлеб","Бурятхлебпром","Богдановский хлеб","Болоховский хлебозавод","Вкус хлеба","Владимирский хлебокомбинат","Владхлеб","Вышневолоцкий хлебокомбинат","Галичский хлеб","Долинский Хлебокомбинат",
+      "Август Борг, ИАЦ","Аграрный МедиаХолдинг Светич","Агротех","Академия КриоФрост","АКВАТРОЛ","Алькор Упак","Альпма-Сервис","Альфа Л Сервис, ООО","Аналитическая компания EMEAT","АПС Групп, ООО","Ариэль Инокс, ООО","БД, ООО","БЕВЭРТ","Белфармаком, ООО","Бизнес пищевых ингредиентов, журнал","Биолакт, ООО","БУСТЕР РУС, ООО","Вентар, ООО","ВЗДУХОТОРГ, ООО","ВИЯ, ООО",
+      "ПОЛАР СИФУД РАША","ПРОДО","Продартель","Продукты Питания, ГК","Ремит, МПЗ","Ритейл Групп","Санта Бремор","Северная Волна, ПК","Фосфорель","Черкизово, ТД","Шифудо","Эколь","Экстра Маркет","Элефант 08","Элинар-Бройлер",
+      "Агрополис Сабурово","Ариант, агрофирма","Белая Дача","Дороничи, АПХ","Из Атлашево","Просторы, АПХ","Русагро, ГК","Русская аграрная группа","Стойленская Нива, АПК","Таврос, ГК","METRO Россия","Аникс, ТД","Бегемаг, универсамы","Гастроном Бим ТС","Гипербола","Гулливер, ТС","Европа, ТС","Караван, ТС","Командор, ТС","Лето, ТК",
+      "Автоматика-Вектор","Drylab","Elsi","EPV Group","КАМИ","Naska","Polimer MC","Stankotsentr Perun","ЛИГА","Тверская промышленная компания","Komkont","Kotloservice","Termowood","Bazis-Center","Ekovent K","Полиэстер","Sagedoktor","VS-Service",
+      "ООО ДМП","VEKAS","ООО Молмашстрой","ПАО Ламбумиз","ООО ПРОВЛАБ","Компания Лунави","HAUS Rus",
+      "АО ЧЕЛНЫ-ХЛЕБ"
+    ],
+    "global_additivity_note": "This worker raw count must not be added arithmetically to other worker pools unless the canonical writer performs cross-worker identity dedup."
+  },
+  "funnel": {
+    "raw": 101,
+    "duplicates_plus_early_rejects": 99,
+    "fast_gate": 2,
+    "size": 2,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2
+  },
+  "qualified": [
+    {
+      "brand": "Владимирский хлебокомбинат / DeLavant",
+      "legal_name": "АО «ВЛАДИМИРСКИЙ ХЛЕБОКОМБИНАТ»",
+      "inn": "3302000267",
+      "ogrn": "1023303352291",
+      "country": "Россия",
+      "region": "Владимирская область",
+      "city": "Владимир",
+      "status": "Действует",
+      "private_company": true,
+      "website": "https://vladhleb.com/",
+      "size": {
+        "status": "PASS",
+        "basis": "Актуальный масштаб подтвержден данными за 2025 год: выручка 3.047 млрд ₽ и среднесписочная численность 554 сотрудника. Более старые показатели 2024 года в SIZE-решении не использовались.",
+        "evidence_urls": ["https://b2b.house/company/AO-VLADIMIRSKIJ-XLEBOKOMBINAT_91f07aaa-f3c6-42de-a7d6-cca9f947ca86/"]
+      },
+      "legal": {
+        "status": "PASS",
+        "basis": "АО действует; ИНН 3302000267, ОГРН 1023303352291. ОКФС 16 подтверждает частную собственность. Актуальный публичный и регистрационный контур указывает Владимира Алексеевича Лялина как управляющего — индивидуального предпринимателя.",
+        "evidence_urls": ["https://companies.rbc.ru/id/1023303352291-ao-vladimirskij-hlebokombinat/", "https://zebra-tv.ru/novosti/spetsproekty/upravlyayushchiy-ao-vladimirskiy-khlebokombinat-vladimir-lyalin-na-nas-lezhit-bolshaya-otvetstvennos/"]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S1",
+        "date": "2026-08-26",
+        "summary": "Запущены новые линии по производству рустикальных хлебов и цех мучных изделий с двумя автоматизированными линиями; в модернизацию вложено около 1 млрд ₽, новые цеха находятся в пилотном режиме.",
+        "evidence_urls": ["https://zebra-tv.ru/novosti/biznes/khleb-na-milliard/"]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Лялин Владимир Алексеевич",
+        "role": "управляющий АО «Владимирский хлебокомбинат» / управляющий ГК DeLavant",
+        "evidence_urls": ["https://companies.rbc.ru/id/1023303352291-ao-vladimirskij-hlebokombinat/", "https://zebra-tv.ru/novosti/spetsproekty/upravlyayushchiy-ao-vladimirskiy-khlebokombinat-vladimir-lyalin-na-nas-lezhit-bolshaya-otvetstvennos/"]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official_company_contact",
+        "phone": "+7 (4922) 77-90-20",
+        "email": "kn@vladhleb.com",
+        "contact_url": "https://vladhleb.com/",
+        "website_url": "https://vladhleb.com/",
+        "evidence_urls": ["https://shop.vladhleb.com/upload/iblock/bec/becdf14906ca21dadf7141de87c4b800.jpg"]
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "3302000267",
+        "ogrn": "1023303352291",
+        "legal_name_normalized": "АО ВЛАДИМИРСКИЙ ХЛЕБОКОМБИНАТ",
+        "brand_domain": "ВЛАДИМИРСКИЙ ХЛЕБОКОМБИНАТ|vladhleb.com"
+      },
+      "dedup_prewrite": {
+        "status": "PASS_NO_MATCH",
+        "checked_against_head": "2144c4455ece69a2ee842c9b4325f7fcb7ca38b1",
+        "checks": ["GitHub repository search returned no match for INN 3302000267, OGRN 1023303352291, legal/brand/domain query immediately before write"]
+      },
+      "decision": "QUALIFIED"
+    },
+    {
+      "brand": "ЧЕЛНЫ-ХЛЕБ",
+      "legal_name": "АО «ЧЕЛНЫ-ХЛЕБ»",
+      "inn": "1650027925",
+      "ogrn": "1021602013762",
+      "country": "Россия",
+      "region": "Республика Татарстан",
+      "city": "Набережные Челны",
+      "status": "Действует",
+      "private_company": true,
+      "website": "https://www.chelny-hleb.ru/",
+      "size": {
+        "status": "PASS",
+        "basis": "Актуальная бухгалтерская отчетность за 2025 год: выручка 3.364 млрд ₽, чистая прибыль 223.169 млн ₽. Официальный сайт дополнительно указывает более 1200 сотрудников и выпуск 27 тыс. тонн продукции в год.",
+        "evidence_urls": ["https://e-ecolog.ru/buh/2025/1650027925", "https://www.chelny-hleb.ru/"]
+      },
+      "legal": {
+        "status": "PASS",
+        "basis": "АО действует; ИНН 1650027925, ОГРН 1021602013762; непубличное акционерное общество. Актуальный B2B/регистрационный профиль указывает Рафаэля Сулеймановича Юнусова как генерального директора.",
+        "evidence_urls": ["https://bo.nalog.gov.ru/organizations-card/7078146", "https://otc.ru/organization/all/1021602013762/", "https://companies.rbc.ru/id/1021602013762-ao-chelnyi-hleb/"]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S1",
+        "date": "2026-06-26",
+        "summary": "Компания открыла новый высокотехнологичный мельничный комплекс; независимый региональный источник сообщает почти 500 млн ₽ инвестиций и рост мощности производства муки с 80 до 150 тонн в сутки. 16 августа 2026 также публично сообщалось о намерении построить завод замороженного хлеба.",
+        "evidence_urls": ["https://www.chelny-hleb.ru/news/18.html", "https://chelny-izvest.ru/news/facts/celny-xleb-vlozil-polmilliarda-v-melnicu-moshhnostiu-150-tonn-v-sutki", "https://www.kazan.kp.ru/online/news/7124736/"]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Юнусов Рафаэль Сулейманович",
+        "role": "генеральный директор АО «ЧЕЛНЫ-ХЛЕБ»",
+        "evidence_urls": ["https://otc.ru/organization/all/1021602013762/", "https://companies.rbc.ru/id/1021602013762-ao-chelnyi-hleb/"]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official_company_contact",
+        "phone": "+7 (8552) 39-75-35",
+        "email": "sales@chelny-hleb.ru",
+        "contact_url": "https://www.chelny-hleb.ru/contacts/",
+        "website_url": "https://www.chelny-hleb.ru/",
+        "evidence_urls": ["https://www.chelny-hleb.ru/contacts/"]
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "1650027925",
+        "ogrn": "1021602013762",
+        "legal_name_normalized": "АО ЧЕЛНЫ-ХЛЕБ",
+        "brand_domain": "ЧЕЛНЫ-ХЛЕБ|chelny-hleb.ru"
+      },
+      "dedup_prewrite": {
+        "status": "PASS_NO_MATCH",
+        "checked_against_head": "2144c4455ece69a2ee842c9b4325f7fcb7ca38b1",
+        "checks": ["GitHub repository search returned no match for INN 1650027925, OGRN 1021602013762, legal/brand/domain query immediately before write"]
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "quality_notes": [
+    "Fresh HEAD and CURRENT_WORKING_CONFIG.md were re-read immediately before final dedup/write.",
+    "Canonical dedup keys used: Lead ID, INN, OGRN/OGRNIP, exact legal entity, confirmed brand+domain.",
+    "Current 2025 scale evidence and 2026 signal/LPR evidence were used; stale alternatives were excluded from decisions where fresher evidence existed.",
+    "Canonical master/contactable/contacts/evidence/runtime/campaign were not written by this worker.",
+    "No outreach was performed."
+  ]
+}
