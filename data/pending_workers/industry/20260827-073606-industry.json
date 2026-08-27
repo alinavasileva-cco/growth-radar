@@ -1,0 +1,126 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T07:36:06+03:00",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-445",
+    "canonical_count": 442,
+    "contactable_count": 442,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "head_before_worker": "537075477696eeea8f7a37da0d8789d3cda4186a"
+  },
+  "source_pool": {
+    "primary_source": "ХИМИЯ-2026 exhibitor catalogue",
+    "secondary_sources": [
+      "PCVExpo 2026 exhibitor catalogue / industry source",
+      "MiningWorld 2026 exhibitor participation confirmed by company source"
+    ],
+    "source_urls": [
+      "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+      "https://www.pcvexpo.ru/ru-RU/visitors/exhibitor-list.aspx",
+      "https://mzpotok.ru/company/news/mz-potok-na-vystavke-miningworld2026/"
+    ],
+    "raw_distinct_candidates_sampled": 120,
+    "raw_method": "119 unique Russian commercial exhibitor records sampled from the current ХИМИЯ-2026 list after excluding foreign/state/non-company rows and duplicate stand records, plus 1 low-overlap industrial manufacturer discovered through current pump/mining exhibition sources. Raw identities were treated only as discovery candidates; only explicitly deep-checked companies advance in the funnel.",
+    "source_freshness": "ХИМИЯ-2026 list updated 2026-07-29; company/legal/signal evidence checked against sources available through 2026-08-27."
+  },
+  "funnel": {
+    "raw": 120,
+    "fast_gate_deep_checked": 4,
+    "size_passed": 4,
+    "legal_passed": 2,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "duplicate_or_early_reject": 116
+  },
+  "qualified": [
+    {
+      "brand": "МЗ ПОТОК / Машиностроительный завод «ПОТОК»",
+      "legal_name": "ООО «Машиностроительный завод «ПОТОК»",
+      "inn": "7713772130",
+      "ogrn": "1137746585020",
+      "legal_status": "Действует",
+      "region": "Москва",
+      "city": "Москва",
+      "segment": "Промышленное машиностроение / насосное оборудование / автоматизация / оборудование для АПК и промышленности",
+      "website": "https://mzpotok.ru/",
+      "size": {
+        "status": "PASS",
+        "evidence": "Выручка за 2025 год — 1 633 357 000 ₽, прибыль — 123 833 000 ₽; компания относится к среднему бизнесу. Актуальный масштаб дополнительно подтверждён собственным новым производственным комплексом площадью 12 000 м², введение которого компания объявила в марте 2026 года.",
+        "sources": [
+          "https://companies.rbc.ru/id/1137746585020-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-mashinostroitelnyij-zavod-potok/",
+          "https://check.tochka.com/company/1137746585020/",
+          "https://mzpotok.ru/company/news/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "ceo": "Леонов Михаил Валерьевич",
+        "owners": "Леонов Михаил Валерьевич — 100% по актуальному контрагентскому агрегатору; признаков государственного контроля в проверенных сведениях не выявлено.",
+        "sources": [
+          "https://check.tochka.com/company/1137746585020/",
+          "https://companies.rbc.ru/id/1137746585020-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-mashinostroitelnyij-zavod-potok/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S1",
+        "date": "2026-03-26",
+        "summary": "Компания объявила ввод нового производственного комплекса площадью 12 000 м² в дополнение к существующим цехам свыше 3 000 м². Дополнительно 26 мая 2026 года МЗ «ПОТОК» сообщил о запуске в серийное производство новой линейки формирователей потока Zvezda RUS FSE, а с марта 2026 года оснащает производимые дизельные насосные станции системой удалённого мониторинга ZR-Control.",
+        "sources": [
+          "https://mzpotok.ru/company/news/",
+          "https://mzpotok.ru/company/news/formirovatel-potoka-fse-gotov-k-otgruzke/",
+          "https://profiminer.ru/company/mzpotok/"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Леонов Михаил Валерьевич",
+        "role": "Генеральный директор и собственник 100%",
+        "source": "https://check.tochka.com/company/1137746585020/"
+      },
+      "contact": {
+        "status": "PASS",
+        "phone": "+7 (495) 651-61-33",
+        "email": "info@mzpotok.ru",
+        "additional_routes": [
+          "Управление продаж — промышленное оборудование: +7 (916) 955-82-26",
+          "Управление продаж — сельскохозяйственное оборудование: +7 (985) 310-39-99",
+          "Сервис 24/7: +7 (985) 338-73-00"
+        ],
+        "source": "https://mzpotok.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "7713772130",
+        "ogrn": "1137746585020",
+        "legal_name": "ООО «Машиностроительный завод «ПОТОК»",
+        "brand_domain": "МЗ ПОТОК|mzpotok.ru"
+      },
+      "dedup_check": {
+        "status": "PASS_NO_MATCH_FOUND",
+        "method": "Repository code search by exact INN 7713772130, exact OGRN 1137746585020, and brand phrase «МЗ ПОТОК» against fresh main snapshot",
+        "checked_before_write": true
+      },
+      "final_status": "QUALIFIED"
+    }
+  ],
+  "deep_checked_rejects": [
+    {
+      "candidate": "ООО «ЗАВКОМ-ИНЖИНИРИНГ», ИНН 6829098165",
+      "reason": "Rejected at LEGAL/current-status gate: fresh registry aggregator shows the organization is in the process of reorganization as of 2026-08-25. It is not treated as a clean current legal PASS for this worker despite 2025 revenue around 5.41 млрд ₽."
+    },
+    {
+      "candidate": "ООО «НПП «МАКРОМЕР» им. В.С. Лебедева, ИНН 3302006558",
+      "reason": "SIZE and active legal entity are supported, but no sufficiently strong fresh 2026 S1–S3 business-change signal was confirmed in this pass. Current website mostly confirms ongoing production/R&D, not a qualifying expansion/change event."
+    },
+    {
+      "candidate": "ООО «ДИПОЛЬ-ПРОИЗВОДСТВО», ИНН 7843001956",
+      "reason": "SIZE/legal identity are plausible and current director is confirmed, but no sufficiently strong current S1–S3 signal tied unambiguously to this legal entity was confirmed in this pass; stopped rather than inferring from group activity."
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false
+}
