@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-27T03:03:30+03:00",
+  "updated_at": "2026-08-27T04:13:00+03:00",
   "campaign_id": "new_5000",
-  "last_consumed_run_id": "N5K-20260827-441",
+  "last_consumed_run_id": "N5K-20260827-442",
   "consumed": [
     {"path":"data/pending_workers/jobs/20260826-192726-jobs.json","blob_sha":"08e2aa9b309fe2336e0966ced264385072c2de06","consumed_by_run":"N5K-20260826-434","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Worker-qualified iSmart was already canonical as N5K-0384; no duplicate integration."},
     {"path":"data/pending_workers/industry/20260826-193705-industry.json","blob_sha":"b2999f4e90db0618f6fff1ddd8d7c1025a77efd7","consumed_by_run":"N5K-20260826-434","result":"CONSUMED","note":"RobotFactory and Laser Systems integrated after global canonical dedup."},
@@ -27,7 +27,10 @@
     {"path":"data/pending_workers/growth_news/20260827-014013-growth-news.json","blob_sha":"b3ed16482e67c99677ac49ca884541b1bcd7bbfa","consumed_by_run":"N5K-20260827-440","result":"CONSUMED","note":"PSM and Logika Moloka integrated as N5K-0571 and N5K-0572."},
     {"path":"data/pending_workers/jobs/20260827-022948-jobs.json","blob_sha":"09cf66d30c267792fcda7499bd240cf62e8a4e53","consumed_by_run":"N5K-20260827-441","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"ITCOM integrated; TrackAd skipped by physical canonical dedup."},
     {"path":"data/pending_workers/industry/20260827-023655-industry.json","blob_sha":"601d052d5ca82784e013e2c3f3206e4934e5c4a0","consumed_by_run":"N5K-20260827-441","result":"CONSUMED","note":"COMITAS and MERTECH passed physical canonical dedup and integrated."},
-    {"path":"data/pending_workers/growth_news/20260827-023858-growth-news.json","blob_sha":"0dcd28052a92fe50adfe15bba780c85986586f9f","consumed_by_run":"N5K-20260827-441","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"New Line Engineering integrated; MoloPak skipped by physical canonical dedup."}
+    {"path":"data/pending_workers/growth_news/20260827-023858-growth-news.json","blob_sha":"0dcd28052a92fe50adfe15bba780c85986586f9f","consumed_by_run":"N5K-20260827-441","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"New Line Engineering integrated; MoloPak skipped by physical canonical dedup."},
+    {"path":"data/pending_workers/jobs/20260827-032755-jobs.json","blob_sha":"89074675102ef7ff250065c5094f2c0453b7b577","consumed_by_run":"N5K-20260827-442","result":"CONSUMED","note":"ATRAX integrated as N5K-0579 after fresh canonical review."},
+    {"path":"data/pending_workers/industry/20260827-033719-industry.json","blob_sha":"cae3569e1603439156d590a1a9066c23cb1900d2","consumed_by_run":"N5K-20260827-442","result":"CONSUMED_WITH_CANONICAL_REVIEW_REJECT","note":"IMC and EAPACK integrated as N5K-0580 and N5K-0581; M.K. Aseptica rejected at SIGNAL because fresh evidence did not establish a sufficiently specific S1-S3 business-change signal."},
+    {"path":"data/pending_workers/growth_news/20260827-034800-growth-news.json","blob_sha":"62df90f8d4cec9012199204b448e7173260c9470","consumed_by_run":"N5K-20260827-442","result":"CONSUMED","note":"SibEuroVan, Gofromir and Neo-Pak integrated as N5K-0582 through N5K-0584 after physical canonical dedup."}
   ],
   "outreach_sent": 0
 }
