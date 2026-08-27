@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-08-27T02:03:00+03:00",
+  "generated_at": "2026-08-27T02:58:15+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-440",
-  "current_run_id": "N5K-20260827-440",
+  "latest_completed_run_id": "N5K-20260827-441",
+  "current_run_id": "N5K-20260827-441",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 420,
-  "contactable_verified": 420,
+  "canonical_pool_verified": 424,
+  "contactable_verified": 424,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4580,
+  "remaining_to_target": 4576,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_440": {
-    "raw_discovered": 105,
-    "fast_gate_passed": 12,
-    "size_check_passed": 7,
+  "run_441": {
+    "raw_discovered": 120,
+    "fast_gate_passed": 9,
+    "size_check_passed": 6,
     "legal_match_passed": 6,
-    "signal_confirmed": 5,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
+    "signal_confirmed": 6,
+    "lpr_identified": 6,
+    "contact_route_found": 6,
     "qualified": 4,
     "physically_integrated": 4,
-    "duplicates": 0,
-    "excluded": 101,
+    "duplicates": 2,
+    "excluded": 114,
     "lane_metrics": [
       {
         "lane": "jobs worker",
         "raw": 80,
-        "duplicates_or_early_rejects": 76,
-        "qualified": 1,
-        "note": "Fresh immutable worker 20260827-012706-jobs.json; >70% saturation, lane stopped after ingestion. Worker pools not summed globally without full cross-worker raw identity index."
+        "duplicates_or_early_rejects": 72,
+        "qualified": 2,
+        "note": "Fresh immutable 20260827-022948-jobs.json; source saturation triggered. Cross-worker pools are not summed globally without a full identity index."
       },
       {
         "lane": "industry worker",
-        "raw": 105,
-        "duplicates_or_early_rejects": 100,
-        "qualified": 1,
-        "note": "Fresh immutable worker 20260827-013425-industry.json from METALLOOBRABOTKA-2026 catalog; 105 distinct within source."
+        "raw": 120,
+        "duplicates_or_early_rejects": 115,
+        "qualified": 2,
+        "note": "Fresh immutable 20260827-023655-industry.json; rotated across current 2026 industry catalogues."
       },
       {
         "lane": "growth/news worker",
-        "raw": 104,
-        "duplicates_or_early_rejects": 92,
+        "raw": 24,
+        "duplicates_or_early_rejects": 15,
         "qualified": 2,
-        "note": "Fresh immutable worker 20260827-014013-growth-news.json; current August 2026 investment/expansion signals."
+        "note": "Fresh immutable 20260827-023858-growth-news.json; current 2026 expansion signals."
       }
     ]
   }

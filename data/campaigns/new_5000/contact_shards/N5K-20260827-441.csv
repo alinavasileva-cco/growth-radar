@@ -1,0 +1,14 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0574,N5K-0574-C01,Интелком / ITCOM,2465298337,,Корпоративный маршрут,+7 (391) 290-09-70,Phone,Official corporate,Official ITCOM,https://www.itcom.info/company_details/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0574,N5K-0574-C02,Интелком / ITCOM,2465298337,,Корпоративный маршрут,info@itcom.info,Email,Official corporate,Official ITCOM,https://www.itcom.info/company_details/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0574,N5K-0574-C03,Интелком / ITCOM,2465298337,,Корпоративный маршрут,https://www.itcom.info/,Form,Official callback form,Official ITCOM,https://www.itcom.info/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0575,N5K-0575-C01,COMITAS / КОМИТАС,7743928345,,Корпоративный маршрут,+7 (800) 505-50-20,Phone,Official corporate,Official COMITAS,https://www.comitas.ru/contacts/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0575,N5K-0575-C02,COMITAS / КОМИТАС,7743928345,,Корпоративный маршрут,info@comitas.ru,Email,Official corporate,Official COMITAS,https://www.comitas.ru/contacts/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0575,N5K-0575-C03,COMITAS / КОМИТАС,7743928345,,Корпоративный маршрут,https://www.comitas.ru/contacts/,Form,Official website form,Official COMITAS,https://www.comitas.ru/contacts/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0576,N5K-0576-C01,MERTECH / МЕРТЕХ,9702014804,,Корпоративный маршрут,+7 (495) 146-25-25,Phone,Official corporate,Official MERTECH,https://mertech.ru/terms/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0576,N5K-0576-C02,MERTECH / МЕРТЕХ,9702014804,,Корпоративный маршрут,store@mertech.ru,Email,Official corporate,Official MERTECH,https://mertech.ru/terms/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0576,N5K-0576-C03,MERTECH / МЕРТЕХ,9702014804,,Корпоративный маршрут,https://mertech.ru/terms/,Form,Official website / dealer route,Official MERTECH,https://mertech.ru/terms/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0578,N5K-0578-C01,Нью Лайн Инжиниринг,5053056623,,Корпоративный маршрут,+7 (495) 374-95-76,Phone,Official corporate,Official НЛИ,https://nleng.ru/contacts/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0578,N5K-0578-C02,Нью Лайн Инжиниринг,5053056623,,Корпоративный маршрут,+7 (495) 374-64-86,Phone,Official sales,Official НЛИ,https://nleng.ru/contacts/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0578,N5K-0578-C03,Нью Лайн Инжиниринг,5053056623,,Корпоративный маршрут,info@nleng.ru,Email,Official corporate,Official НЛИ,https://nleng.ru/contacts/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000
+N5K-0578,N5K-0578-C04,Нью Лайн Инжиниринг,5053056623,,Корпоративный маршрут,https://nleng.ru/contacts/,Form,Official website form,Official НЛИ,https://nleng.ru/contacts/,NO,HIGH,2026-08-27,,N5K-20260827-441,new_5000

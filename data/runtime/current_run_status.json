@@ -1,64 +1,64 @@
 {
-  "run_id": "N5K-20260827-440",
+  "run_id": "N5K-20260827-441",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T02:03:00+03:00",
+  "updated_at": "2026-08-27T02:58:15+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 416,
+    "baseline_count": 420,
     "target_count": 5000,
-    "current_canonical_count": 420,
-    "current_contactable_count": 420,
+    "current_canonical_count": 424,
+    "current_contactable_count": 424,
     "progress_added": 4,
-    "remaining": 4580
+    "remaining": 4576
   },
   "funnel": {
-    "discovered": 105,
-    "fast_gate_passed": 12,
-    "size_check_passed": 7,
+    "discovered": 120,
+    "fast_gate_passed": 9,
+    "size_check_passed": 6,
     "legal_match_passed": 6,
-    "signal_confirmed": 5,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
+    "signal_confirmed": 6,
+    "lpr_identified": 6,
+    "contact_route_found": 6,
     "qualified": 4,
-    "duplicates": 0,
-    "excluded": 101
+    "duplicates": 2,
+    "excluded": 114
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
       "raw": 80,
-      "duplicates_or_early_rejects": 76,
-      "qualified": 1,
-      "note": "Fresh immutable worker 20260827-012706-jobs.json; >70% saturation, lane stopped after ingestion. Worker pools not summed globally without full cross-worker raw identity index."
+      "duplicates_or_early_rejects": 72,
+      "qualified": 2,
+      "note": "Fresh immutable 20260827-022948-jobs.json; source saturation triggered. Cross-worker pools are not summed globally without a full identity index."
     },
     {
       "lane": "industry worker",
-      "raw": 105,
-      "duplicates_or_early_rejects": 100,
-      "qualified": 1,
-      "note": "Fresh immutable worker 20260827-013425-industry.json from METALLOOBRABOTKA-2026 catalog; 105 distinct within source."
+      "raw": 120,
+      "duplicates_or_early_rejects": 115,
+      "qualified": 2,
+      "note": "Fresh immutable 20260827-023655-industry.json; rotated across current 2026 industry catalogues."
     },
     {
       "lane": "growth/news worker",
-      "raw": 104,
-      "duplicates_or_early_rejects": 92,
+      "raw": 24,
+      "duplicates_or_early_rejects": 15,
       "qualified": 2,
-      "note": "Fresh immutable worker 20260827-014013-growth-news.json; current August 2026 investment/expansion signals."
+      "note": "Fresh immutable 20260827-023858-growth-news.json; current 2026 expansion signals."
     }
   ],
   "qualified_companies": [
-    "Штрих Ру / Shtrih.ru",
-    "ЛИДЕРМАШ / LEMASH",
-    "ПСМ / Промышленные силовые машины",
-    "Логика молока"
+    "Интелком / ITCOM",
+    "COMITAS / КОМИТАС",
+    "MERTECH / МЕРТЕХ",
+    "Нью Лайн Инжиниринг"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "420_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "420_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "424_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "424_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
