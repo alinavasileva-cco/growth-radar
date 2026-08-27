@@ -1,0 +1,97 @@
+{
+  "lane": "jobs",
+  "worker_run_at": "2026-08-27T17:18:21+03:00",
+  "source_head_sha": "8a69982cbe359f3a8afc879c5ec1b3445efe5e81",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-455",
+    "canonical_count": 471,
+    "contactable_count": 471,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_funnel": {
+    "raw_employer_level_reviewed": 80,
+    "fast_gate_pass": 4,
+    "deep_check": 3,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_early_reject_split": null,
+    "note": "Employer-level review used current regional/direct-employer job-board result pools. Exact duplicate-vs-early-reject split was not separately instrumented and is intentionally not reconstructed. Saturated broad job-board output was not used as a basis to relax qualification."
+  },
+  "qualified_candidates": [
+    {
+      "brand": "Первый Снег",
+      "legal_name": "ООО «ПЕРВЫЙ СНЕГ»",
+      "inn": "5473007379",
+      "ogrn": "1225400050754",
+      "legal_status": "Действующая организация",
+      "ownership_form": "Частная собственность / ООО",
+      "region": "Новосибирская область",
+      "city": "Бердск",
+      "segment": "Производство гофрированной бумаги, картона и подарочной упаковки / B2B",
+      "website": "https://1sneg.ru/",
+      "size": {
+        "revenue_2025_rub": 227812000,
+        "profit_2025_rub": 5115000,
+        "employee_reference": "23 сотрудника за 2024 год по открытому реестровому профилю",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1225400050754-obschestvo-s-ogranichennoj-otvetstvennostyu-pervyij-sneg/",
+          "https://companium.ru/id/1225400050754-pervy-sneg"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-07-10",
+        "type": "Руководитель отдела продаж / усиление B2B-продаж",
+        "summary": "Производитель подарочной упаковки сообщает о росте и усилении отдела продаж; ищет руководителя с опытом B2B-продаж для управления командным результатом. Работодатель также заявляет выпуск более 12 млн коробок в год и работу с крупными кондитерскими фабриками России, Беларуси и Казахстана.",
+        "source_url": "https://dreamjob.ru/employers/160864/vakansii/135051880"
+      },
+      "owner_lpr": {
+        "name": "Гордиенко Алексей Валерьевич",
+        "role": "Генеральный директор и единственный учредитель (100%)",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1225400050754-obschestvo-s-ogranichennoj-otvetstvennostyu-pervyij-sneg/",
+          "https://www.tbank.ru/business/contractor/legal/1225400050754/"
+        ]
+      },
+      "contact_route": {
+        "primary_phone": "+7 383 209-00-06",
+        "secondary_phone": "+7 495 999-64-06",
+        "email": "mail@1sneg.ru",
+        "contact_form": "https://1sneg.ru/contact",
+        "type": "Официальный корпоративный телефон, email и форма сайта",
+        "source_url": "https://1sneg.ru/contact"
+      },
+      "brand_legal_evidence": {
+        "summary": "Официальная страница контактов 1sneg.ru прямо указывает ООО «ПЕРВЫЙ СНЕГ», ИНН 5473007379 и ОГРН 1225400050754.",
+        "source_url": "https://1sneg.ru/contact"
+      },
+      "dedup_keys": {
+        "inn": "5473007379",
+        "ogrn": "1225400050754",
+        "legal_name_normalized": "ООО ПЕРВЫЙ СНЕГ",
+        "brand_domain": "Первый Снег|1sneg.ru"
+      },
+      "dedup_check": {
+        "checked_against_fresh_repository": true,
+        "exact_inn_match_found": false,
+        "exact_brand_match_found": false,
+        "checked_at": "2026-08-27T17:18:21+03:00"
+      },
+      "qualification": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "final": "QUALIFIED"
+      },
+      "outreach": "NOT_PERFORMED"
+    }
+  ]
+}
