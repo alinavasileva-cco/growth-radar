@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-08-27T06:01:00+03:00",
+  "generated_at": "2026-08-27T07:18:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-444",
-  "current_run_id": "N5K-20260827-444",
+  "latest_completed_run_id": "N5K-20260827-445",
+  "current_run_id": "N5K-20260827-445",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 437,
-  "contactable_verified": 437,
+  "canonical_pool_verified": 442,
+  "contactable_verified": 442,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4563,
+  "remaining_to_target": 4558,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_444": {
-    "raw_discovered": 117,
-    "fast_gate_passed": 23,
-    "size_check_passed": 13,
-    "legal_match_passed": 10,
-    "signal_confirmed": 8,
-    "lpr_identified": 7,
-    "contact_route_found": 6,
-    "qualified": 4,
-    "physically_integrated": 4,
-    "duplicates": 1,
-    "excluded": 112,
+  "run_445": {
+    "raw_discovered": 120,
+    "fast_gate_passed": 8,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 5,
+    "lpr_identified": 5,
+    "contact_route_found": 5,
+    "qualified": 5,
+    "physically_integrated": 5,
+    "duplicates": 0,
+    "excluded": 115,
     "lane_metrics": [
       {
         "lane": "jobs worker",
         "raw": 80,
-        "duplicates_or_early_rejects": 71,
-        "qualified": 1,
-        "note": "Fresh immutable 20260827-052706-jobs.json; Altapp/Selecta Service advanced after physical canonical dedup."
+        "duplicates_or_early_rejects": 72,
+        "qualified": 2,
+        "note": "Fresh immutable 20260827-064400-jobs.json; HH-heavy lane saturated and rotated to alternative job boards."
       },
       {
         "lane": "industry worker",
-        "raw": 117,
-        "duplicates_or_early_rejects": 111,
-        "qualified": 2,
-        "note": "Fresh immutable 20260827-053205-industry.json; Belgorod Cold Storage and PP Gofrokombinat advanced after canonical review."
+        "raw": 120,
+        "duplicates_or_early_rejects": 119,
+        "qualified": 1,
+        "note": "Fresh immutable 20260827-063616-industry.json; CeMAT/industry catalogue pool; CHZSA advanced."
       },
       {
         "lane": "growth/news worker",
-        "raw": 46,
-        "duplicates_or_early_rejects": 38,
-        "qualified": 1,
-        "note": "Fresh immutable 20260827-053855-growth-news.json; SEGZ advanced; Anatomika rejected as physical canonical duplicate N5K-0536."
+        "raw": 62,
+        "duplicates_or_early_rejects": 60,
+        "qualified": 2,
+        "note": "Fresh immutable 20260827-065200-growth-news.json; Alkor Bio and MVSZ advanced."
       }
     ]
   }
