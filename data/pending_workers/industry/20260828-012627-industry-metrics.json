@@ -1,0 +1,91 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-28T01:26:27+03:00",
+  "baseline_head": "bc3292175eadc1b5dfb2feb4ad77c99ab68312f3",
+  "config_version": "2026-08-28T01:09:55+03:00",
+  "canonical_count": 479,
+  "contactable_count": 479,
+  "integrity": "PASS",
+  "outreach": false,
+  "qualified": 0,
+  "funnel": {
+    "raw": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "dedup_keys_used": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"],
+  "decision_rules": {
+    "catalog_participation_is_not_signal": true,
+    "stale_records_excluded": true,
+    "no_guessing": true,
+    "rotation_threshold": ">70% duplicate+early reject on first 20"
+  },
+  "lanes": [
+    {
+      "source": "ИНТЕРЛАКОКРАСКА-2026 official exhibitor list",
+      "url": "https://www.interlak-expo.ru/ru/exhibition/exhibitors/",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_20": true,
+      "reason": "No candidate had a sufficiently evidenced probable S1-S3 at fast gate; exhibition participation alone was not treated as SIGNAL.",
+      "candidates": ["АВИАЦИОННЫЕ ЛАКОКРАСОЧНЫЕ ТЕХНОЛОГИИ","АВИВИР","АВК-ХИМ","АВТОГРАФ ПРОМЫШЛЕННЫЕ ТЕХНОЛОГИИ","АГЕТТ","АКРИТЕХ","АЛИСТЕРУС","АЛЛНЕКС БЕЛГОРОД","АНКАР","АРТ ИНДУСТРИЯ","АССОЦИАЦИЯ ЭКСПОРТЕРОВ И ИМПОРТЕРОВ","АСТРОЙСЕРВИС","АФАЯ","БЕЛ ПЕКА","БЕЛНЕФТЕХИМ-РОС","БЛЕСТЯЩАЯ ЛИНИЯ","БОЯСАН","БСК ТЕХНОЛОДЖИ","ВЕКТОР","ВЕКТОР ПОЛИМЕР"]
+    },
+    {
+      "source": "ЭЛЕКТРО-2026 official exhibitor list",
+      "url": "https://www.elektro-expo.ru/ru/exhibition/exhibitors/",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_20": true,
+      "reason": "Most of the first 20 were foreign entities and failed the Russian-private fast gate; remaining Russian entries lacked a sufficiently evidenced probable S1-S3 from the discovery evidence.",
+      "candidates": ["ABSOLITE","ACRELE-BUSINESS (SHANGHAI) CO. LTD","AGIS PROFILE","AKİŞ PLASTİK PROF ELEKTRİK SAN. VE TİC. LTD. ŞTİ.","ANDELI","AOKO GLOBAL LIMITED","ASIAON ELECTRIC CO. LTD","BAOYU HOLDING CO. LTD","BEISIT ELECTRIC TECH (HANGZHOU) CO. LTD","BEMIS TECHNICAL ELECTRIC INC.","ÇAĞDAŞ PANO ELEKTRİK A.Ş.","ÇETİNKAYA PANO SAC TABLO VE PLASTİK SAN. TİC. A.Ş.","CHANGYOU TECHNOLOGY (ZHEJIANG) CO. LTD","CHAORUI ELECTRIC CO. LTD","CHENGDU ALTAIR INTERNATIONAL TRADING CO. LTD","CHINA ZBB GROUP SHANGHAI TRANSFORMER CO. LTD","CIXI WANJIE ELECTRONIC CO. LTD","CNC ELECTRIC","CYLON ELECTRICAL INDUSTRY GROUP","DEKRON"]
+    },
+    {
+      "source": "Cabex-2026 official exhibitor list",
+      "url": "https://www.cabex.ru/ru-RU/about/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_20": true,
+      "reason": "The first page was overwhelmingly foreign; Russian entries did not have sufficient probable S1-S3 evidence at fast gate.",
+      "candidates": ["2M GROUP","ADVANCE TECHNOLOGY (SHANGHAI) CO., LTD","ANHUI JUXIN INTELLIGENT MANUFACTURING TECHNOLOGY CO., LTD.","BAICHENG FUJIA TECHNOLOGY CO., LTD","BEIJING HERTEN SCIENCE & TECHNOLOGY CO., LTD.","BEYDE TRADING CO., LTD","CHANGSHU DERWIN IMP&EXP CO., LTD.","CHANGZHOU CATHAY MACHINERY@TRUBACH","CHANGZHOU PUDONG AUTOMATION EQUIPMENT CO., LTD.","CHANGZHOU YI TENG ELECTRIC CO., LTD","CHINACABLE.RU","CHUANGZHAN INTELLIGENT TECHNOLOGY(GUANGDONG)CO., LTD","DELEND TAPES","DITO DK","DONGGUAN HUMEN INFORMATION TRANSMISSION CABLE ASSOCIATION","DONGYING XINBANG ELECTRONIC TECHNOLOGY CO., LTD.","G.Y.M.CO.,.LTD.","GOLDEN TECHNOLOGIES WIRE & CABLE EQUIPMENT CO., LTD","HEFEI SMARTER TECHNOLOGY GROUP CORP.","HONG KONG TECH SUN INDUSTRY LIMITED"]
+    },
+    {
+      "source": "ИНЛЕГМАШ-2026 official exhibitor list",
+      "url": "https://www.inlegmash-expo.ru/ru/exhibition/exhibitors/",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_20": true,
+      "reason": "The first 20 were predominantly foreign and therefore failed the Russian-private fast gate; isolated Russian entries lacked sufficient probable S1-S3 evidence.",
+      "candidates": ["AKBAS PLASTIK SANAYI VE TICARET","BENEKS TAAH. MUH. MUM. MAKINE","BIÇAKSAN MAKINA TAKIM SANAYI TICARET","CHANGSHU FEILONG NONWOVEN MACHINERY","CHANGSHU ZHENTAI NONWOVEN MACHINERY","CHANGZHOU LONGLONGSHENG WARP KNITTING MACHINERY","CHINA TEXMATECH","COSMOS GLOBAL","DALIAN HUAYANG NEW MATERIALS TECHNOLOGY","DEMSAN TEKSTIL MAKINA SANAYI TICARET","DONGYANG AOLONG NONWOVEN EQUIPMENT","DOPSING","ELTEKSMAK MAKİNE ANONİM ŞİRKETİ","ENHAS MAKINA SANAYI VE TICARET","FONGS EUROPE","FOSHAN NANHAI RONGJU MACHINERY","FUJIAN YONTHIN DIGITAL CONTROL TECHNOLOGY","GREAT TEX","GUANGZHOU YONG JIN MACHINERY","HANGZHOU XIONGYUE TECHNOLOGY"]
+    },
+    {
+      "source": "Securika Moscow 2026 official participant/news pages",
+      "urls": ["https://securika-moscow.ru/ru/about/news/2026/april/03/dve-nedeli-do-otkrytiya-securika-moscow-2026/","https://securika-moscow.ru/ru/about/news/2026/april/17/securika-moscow-2026-press-reliz/"],
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_20": true,
+      "reason": "Named participants were real industry companies, but the available discovery evidence was product/exhibition activity rather than a sufficiently strong S1-S3 growth/expansion signal; criteria were not relaxed.",
+      "candidates": ["ААМ-Системз","Сбер","Аргус-Спектр","АРМО-Системы","Болид","SIGUR","Пожтехника","РУБЕЖ","Диагностика-М","PERCo","Escort Group","Итриум","Московские системы безопасности","TRASSIR","ITV Group","Луис+","Плазма-Т","ЛИНИЯ / ДЕВЛАЙН","ИНФОКОМ","ЗАВОД ЭНЕРГОКАБЕЛЬ"]
+    }
+  ],
+  "notes": [
+    "Exactly 100 distinct raw names were retained across the five lane batches.",
+    "No candidate advanced beyond FAST GATE, so SIZE/LEGAL/SIGNAL/LPR/CONTACT deep checks were not fabricated.",
+    "Canonical master/contactable/contacts/evidence/runtime/campaign were not modified."
+  ]
+}
