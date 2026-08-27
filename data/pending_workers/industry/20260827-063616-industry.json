@@ -1,0 +1,114 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T06:36:16+03:00",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-444",
+    "canonical_count": 437,
+    "contactable_count": 437,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "source_pool": {
+    "primary_source": "CeMAT RUSSIA exhibitor catalogue / guide",
+    "source_urls": [
+      "https://www.cemat-russia.ru/exhibition/guide/",
+      "https://www.cemat-russia.ru/exhibition/catalogue/"
+    ],
+    "catalogue_reported_participants": 156,
+    "raw_distinct_candidates_sampled": 120,
+    "note": "Raw pool is a conservative sample of distinct exhibitor records; foreign/non-Russian and obvious small/irrelevant records were rejected at fast gate. No raw identity list is claimed beyond this worker file."
+  },
+  "funnel": {
+    "raw": 120,
+    "fast_gate_deep_checked": 3,
+    "size_passed": 2,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "ЧЗСА / Чебоксарский завод силовых агрегатов",
+      "legal_name": "ООО «Чебоксарский завод силовых агрегатов»",
+      "inn": "2127318285",
+      "ogrn": "1022100967404",
+      "legal_status": "Действует",
+      "region": "Чувашская Республика",
+      "city": "Чебоксары",
+      "segment": "Машиностроение / силовые агрегаты / спецтехника / металлообработка",
+      "website": "https://chzsa.ru/",
+      "size": {
+        "status": "PASS",
+        "evidence": "Крупное действующее промышленное предприятие: уставный капитал 282,39 млн ₽; 1 филиал и 7 дочерних компаний по актуальному реестровому агрегатору; собственные инвестиции в модернизацию по итогам 2025 года превысили 400 млн ₽; новый обрабатывающий центр заявлен как дающий рост выпуска более чем на 20%. Последняя доступная публичная выручка самого юрлица, найденная в открытых источниках, — 614,7 млн ₽ за 2021 год; более свежую выручку не подменяю и не придумываю.",
+        "sources": [
+          "https://star-pro.ru/proverka-kontragenta/organization/1022100967404--ooo-cheboksarskij-z-d-silovyx-agregatov",
+          "https://chzsa.ru/novostdetalno5_3_9457/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "ceo": "Дмитриев Александр Владимирович",
+        "owners": "ООО «Р.А. - 2000» — 82,44%; Болотин Григорий Михайлович — 15,44%; Тузова Анна Михайловна — оставшаяся доля по актуальной выписке-агрегатору. Контроль ООО «Р.А. - 2000» связан с физлицами; государственного собственника в проверенных актуальных сведениях не выявлено.",
+        "sources": [
+          "https://companies.rbc.ru/amp/ogrn/1022100967404/",
+          "https://companies.rbc.ru/id/1027739353234-ooo-ra-2000/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S1",
+        "date": "2026-04-07",
+        "summary": "ЧЗСА запустил новый обрабатывающий центр; компания заявляет рост выпуска более чем на 20%, сокращение сроков изготовления отдельных видов продукции вдвое, расширение номенклатуры и географии поставок. Инвестиции в модернизацию по итогам 2025 года превысили 400 млн ₽. Дополнительно в 2026 году предприятие развивает новое направление и готовит серийное производство новых ведущих мостов для техники.",
+        "sources": [
+          "https://chzsa.ru/novostdetalno5_3_9457/",
+          "https://chzsa.ru/novostdetalno5_3_8425/",
+          "https://chzsa.ru/novostdetalno5_3_9731/"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Дмитриев Александр Владимирович",
+        "role": "Генеральный директор",
+        "source": "https://companies.rbc.ru/amp/ogrn/1022100967404/"
+      },
+      "contact": {
+        "status": "PASS",
+        "phone": "+7 (835) 220-42-43",
+        "email": "mail@chzsa.ru",
+        "additional_routes": [
+          "Директор по продажам OEM-компонентов: +7 (835) 220-39-44",
+          "Директор по продажам новой техники: +7 (800) 700-52-65",
+          "Отдел по работе с дилерами: +7 (835) 220-39-44"
+        ],
+        "source": "https://chzsa.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "2127318285",
+        "ogrn": "1022100967404",
+        "legal_name": "ООО «Чебоксарский завод силовых агрегатов»",
+        "brand_domain": "ЧЗСА|chzsa.ru"
+      },
+      "dedup_check": {
+        "status": "PASS_NO_MATCH_FOUND",
+        "method": "Repository code search by exact INN 2127318285 against fresh main snapshot",
+        "checked_before_write": true
+      },
+      "final_status": "QUALIFIED"
+    }
+  ],
+  "deep_checked_rejects": [
+    {
+      "candidate": "Bristol Group / ООО «БРИСТОЛЬ ГРУПП-М»",
+      "reason": "SIZE/SIGNAL not strong enough for qualification in this pass: 2025 revenue found at 247.6 млн ₽ with 5 employees; no sufficiently strong current S1–S3 signal confirmed."
+    },
+    {
+      "candidate": "ДиКом",
+      "reason": "Stopped on LEGAL entity ambiguity: exhibitor brand maps to a St Petersburg manufacturing group, while search results also returned unrelated legal entities named «ДИКОМ». No qualification without an unambiguous brand→legal-entity chain."
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false
+}
