@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-27T20:06:00+03:00",
+  "generated_at": "2026-08-27T22:07:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-458",
-  "current_run_id": "N5K-20260827-458",
+  "latest_completed_run_id": "N5K-20260827-459",
+  "current_run_id": "N5K-20260827-459",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 476,
   "contactable_verified": 476,
@@ -14,49 +14,66 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_458": {
-    "raw_discovered": 301,
-    "fast_gate_passed": 3,
+  "run_459": {
+    "raw_discovered": 307,
+    "fast_gate_passed": 8,
     "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "legal_match_passed": 3,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 0,
     "physically_integrated": 0,
-    "duplicates": 2,
-    "excluded": 300,
+    "duplicates": 1,
+    "excluded": 306,
     "lane_metrics": [
       {
-        "lane": "jobs/20260827-192008",
-        "raw_distinct_persisted": 81,
-        "worker_deep_check": 4,
-        "worker_qualified": 1,
-        "canonical_rechecked": 1,
-        "canonical_qualified": 0,
-        "candidate": "VICTORY group",
-        "note": "Worker qualified VICTORY group, but physical canonical guard found existing N5K-0072 by INN 7734451120, OGRN 1227700076780, exact legal name and brand+domain; net canonical qualified 0.",
-        "physical_dedup_duplicate": 1,
-        "existing_lead_id": "N5K-0072"
-      },
-      {
-        "lane": "industry/20260827-192206",
-        "raw_distinct_persisted": 120,
-        "worker_fast_gate": 2,
-        "worker_size": 2,
-        "worker_legal": 1,
-        "worker_signal": 0,
-        "worker_qualified": 0,
-        "canonical_qualified": 0,
-        "note": "Bitrobotics rejected as canonical duplicate; Atlantis-Pak rejected at LEGAL due active reorganization; BESTEQ-Engineering rejected at SIGNAL. 117 other raw identities were not promoted without deep verification."
-      },
-      {
-        "lane": "canonical_low_overlap_industry/20260827-195900",
-        "raw_distinct_persisted": 100,
-        "source": "ИНТЕРЛАКОКРАСКА-2026 official exhibitor list",
-        "source_updated": "2026-01-28",
+        "lane": "industry/20260827-202618",
+        "raw": 100,
+        "fast_gate": 1,
+        "size": 1,
+        "legal": 1,
+        "signal": 0,
+        "lpr": 0,
+        "contact": 0,
         "qualified": 0,
-        "note": "Added because fresh worker pool was only 201 raw. Exactly 100 Russia-labelled raw organization/company identities were persisted. They remain raw only; no deep-funnel promotion was made without current company-level verification."
+        "result": "CONSUMED_ZERO_QUALIFIED"
+      },
+      {
+        "lane": "jobs/20260827-212043",
+        "raw": 47,
+        "fast_gate": 7,
+        "size": 2,
+        "legal": 2,
+        "signal": 1,
+        "lpr": 1,
+        "contact": 1,
+        "qualified": 1,
+        "result": "FEDAST_QUALIFIED"
+      },
+      {
+        "lane": "industry/20260827-212737",
+        "raw": 100,
+        "fast_gate": 0,
+        "size": 0,
+        "legal": 0,
+        "signal": 0,
+        "lpr": 0,
+        "contact": 0,
+        "qualified": 0,
+        "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
+      },
+      {
+        "lane": "canonical_low_overlap/prodexpo_2026_pages_1_6",
+        "raw": 60,
+        "fast_gate": 0,
+        "size": 0,
+        "legal": 0,
+        "signal": 0,
+        "lpr": 0,
+        "contact": 0,
+        "qualified": 0,
+        "result": "EARLY_REJECT_EXHIBITION_PRESENCE_NOT_GROWTH_SIGNAL"
       }
     ]
   }

@@ -151,3 +151,7 @@ Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. O
 ## RUN 458 — physical dedup repair
 
 301 distinct persisted raw identities were processed across jobs (81), industry (120) and canonical low-overlap industry (100). VICTORY group passed worker deep-check but was rejected by the final physical canonical guard because it already exists as N5K-0072 with matching INN 7734451120, OGRN 1227700076780, exact legal name and brand+domain. Net physically integrated: 0. Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
+
+
+## Latest verified run N5K-20260827-459
+Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
