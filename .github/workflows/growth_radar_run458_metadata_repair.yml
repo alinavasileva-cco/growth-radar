@@ -1,0 +1,91 @@
+name: Growth Radar RUN458 metadata repair
+on:
+  push:
+    paths:
+      - '.github/workflows/growth_radar_run458_metadata_repair.yml'
+permissions:
+  contents: write
+concurrency:
+  group: growth-radar-run458-repair
+  cancel-in-progress: false
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Repair RUN458 metadata and consume staging
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+          root=Path('.')
+          run='N5K-20260827-458'
+          now='2026-08-27T20:06:00+03:00'
+
+          # Repair current runtime lane metric: worker-qualified VICTORY was a physical canonical duplicate.
+          p=root/'data/runtime/current_run_status.json'
+          d=json.loads(p.read_text(encoding='utf-8'))
+          assert d['run_id']==run and d['new_cycle']['current_canonical_count']==476
+          for lane in d.get('lane_metrics',[]):
+              if lane.get('lane')=='jobs/20260827-192008':
+                  lane['canonical_qualified']=0
+                  lane['physical_dedup_duplicate']=1
+                  lane['existing_lead_id']='N5K-0072'
+                  lane['note']='Worker qualified VICTORY group, but physical canonical guard found existing N5K-0072 by INN 7734451120, OGRN 1227700076780, exact legal name and brand+domain; net canonical qualified 0.'
+          d['updated_at']=now
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          p=root/'data/run_metrics.json'
+          d=json.loads(p.read_text(encoding='utf-8'))
+          for lane in d['run_458'].get('lane_metrics',[]):
+              if lane.get('lane')=='jobs/20260827-192008':
+                  lane['canonical_qualified']=0
+                  lane['physical_dedup_duplicate']=1
+                  lane['existing_lead_id']='N5K-0072'
+                  lane['note']='Worker qualified VICTORY group, but physical canonical guard found existing N5K-0072 by INN 7734451120, OGRN 1227700076780, exact legal name and brand+domain; net canonical qualified 0.'
+          d['generated_at']=now
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          # Update top config summary while preserving all rules/history.
+          p=root/'CURRENT_WORKING_CONFIG.md'
+          s=p.read_text(encoding='utf-8')
+          s=re.sub(r'\*\*Версия:\*\* .*?  \n', '**Версия:** 2026-08-27T20:06:00+03:00  \n', s, count=1)
+          s=re.sub(r'\*\*Последний полностью завершённый RUN:\*\* `[^`]+`', '**Последний полностью завершённый RUN:** `N5K-20260827-458`', s, count=1)
+          s=s.replace('- последний завершённый RUN: `N5K-20260827-457`;', '- последний завершённый RUN: `N5K-20260827-458`;', 1)
+          if '- `N5K-20260827-458`: 476/476, +0, PASS, orphan 0/0.' not in s:
+              marker='- `N5K-20260827-457`: 476/476, +3, PASS, orphan 0/0.'
+              s=s.replace(marker, marker+'\n- `N5K-20260827-458`: 476/476, +0, PASS, orphan 0/0.',1)
+          note='\n\n## RUN 458 — physical dedup repair\n\n301 distinct persisted raw identities were processed across jobs (81), industry (120) and canonical low-overlap industry (100). VICTORY group passed worker deep-check but was rejected by the final physical canonical guard because it already exists as N5K-0072 with matching INN 7734451120, OGRN 1227700076780, exact legal name and brand+domain. Net physically integrated: 0. Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.\n'
+          if '## RUN 458 — physical dedup repair' not in s:
+              s += note
+          p.write_text(s,encoding='utf-8')
+
+          consumed={
+            'run_id':run,'updated_at':now,'campaign_id':'new_5000',
+            'workers':[
+              {'path':'data/pending_workers/jobs/20260827-192008-jobs.json','blob_sha':'3796809be35c31df36938fa6ff737a39f2571110','result':'CONSUMED','note':'VICTORY group rejected by physical canonical dedup as existing N5K-0072; immutable staging retained for audit.'},
+              {'path':'data/pending_workers/industry/20260827-192206-industry-metrics.json','blob_sha':'019cd61b2564ca79f7008b6eb7bfcf192f275577','result':'CONSUMED','note':'120 raw processed; zero qualified; immutable staging retained for audit.'},
+              {'path':'data/pending_workers/industry/20260827-195900-canonical-low-overlap.json','blob_sha':'bbd99db9e9dd4e4c0d9031c4806c83ea48864513','result':'CONSUMED','note':'100 low-overlap raw identities persisted to exceed the <300 continuation threshold; zero deep-qualified; immutable staging retained for audit.'}
+            ],
+            'physical_canonical_after_cycle':476,'physical_contactable_after_cycle':476,
+            'integrity':'PASS','orphan_contacts':0,'orphan_evidence':0,
+            'qualified_staged_not_counted':0,'outreach_sent':0
+          }
+          out=root/'data/runtime/worker_consumed_indexes'/f'{run}.json'
+          out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_text(json.dumps(consumed,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+          git rm .github/workflows/growth_radar_run458_metadata_repair.yml
+      - name: Commit repair
+        run: |
+          git config user.name "growth-radar-canonical-writer"
+          git config user.email "actions@users.noreply.github.com"
+          git add CURRENT_WORKING_CONFIG.md data/runtime/current_run_status.json data/run_metrics.json data/runtime/worker_consumed_indexes/N5K-20260827-458.json .github/workflows/growth_radar_run458_metadata_repair.yml
+          git diff --cached --quiet && exit 0
+          git commit -m "growth-radar: finalize RUN 458 physical dedup repair"
+          git push
