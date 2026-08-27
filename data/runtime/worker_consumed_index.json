@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-27T09:06:00+03:00",
+  "updated_at": "2026-08-27T10:03:00+03:00",
   "campaign_id": "new_5000",
-  "last_consumed_run_id": "N5K-20260827-447",
+  "last_consumed_run_id": "N5K-20260827-448",
   "consumed": [
     {"path":"data/pending_workers/jobs/20260826-192726-jobs.json","blob_sha":"08e2aa9b309fe2336e0966ced264385072c2de06","consumed_by_run":"N5K-20260826-434","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Worker-qualified iSmart was already canonical as N5K-0384; no duplicate integration."},
     {"path":"data/pending_workers/industry/20260826-193705-industry.json","blob_sha":"b2999f4e90db0618f6fff1ddd8d7c1025a77efd7","consumed_by_run":"N5K-20260826-434","result":"CONSUMED","note":"RobotFactory and Laser Systems integrated after global canonical dedup."},
@@ -42,7 +42,10 @@
     {"path":"data/pending_workers/growth_news/20260827-065200-growth-news.json","blob_sha":"8d68c8db415a6a69893ed2f590a2eecba30f689b","consumed_by_run":"N5K-20260827-445","result":"CONSUMED","note":"Alkor Bio and MVSZ integrated as N5K-0596 and N5K-0597 after fresh canonical review."},
     {"path":"data/pending_workers/jobs/20260827-083202-jobs.json","blob_sha":"586a0cee48ade84dd34c529e10663b6cb452631e","consumed_by_run":"N5K-20260827-447","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Worker-qualified Express Manufactura was already canonical as N5K-0382 / INN 7726454494; no duplicate integration."},
     {"path":"data/pending_workers/industry/20260827-083445-industry.json","blob_sha":"2449df4749999e514afa704d7b4f1bed64bf8467","consumed_by_run":"N5K-20260827-447","result":"CONSUMED","note":"GenMaster and Micran integrated as N5K-0601 and N5K-0602 after fresh canonical review."},
-    {"path":"data/pending_workers/growth_news/20260827-084049-growth-news.json","blob_sha":"cc709dc6eb1603705ddef38e9a54fa96e6eaeffd","consumed_by_run":"N5K-20260827-447","result":"CONSUMED","note":"ELKACABLE and SafetyLab integrated as N5K-0603 and N5K-0604 after fresh canonical review."}
+    {"path":"data/pending_workers/growth_news/20260827-084049-growth-news.json","blob_sha":"cc709dc6eb1603705ddef38e9a54fa96e6eaeffd","consumed_by_run":"N5K-20260827-447","result":"CONSUMED","note":"ELKACABLE and SafetyLab integrated as N5K-0603 and N5K-0604 after fresh canonical review."},
+    {"path":"data/pending_workers/jobs/20260827-093500-jobs.json","blob_sha":"1b5d057601518f2e5694f25f46bde095a2e2d032","consumed_by_run":"N5K-20260827-448","result":"CONSUMED","note":"SAMSAN integrated as N5K-0605 after fresh canonical review."},
+    {"path":"data/pending_workers/industry/20260827-093321-industry.json","blob_sha":"d0be6dcc033ee16d02802d292fa54dfb630d96c3","consumed_by_run":"N5K-20260827-448","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"CALLISTO VISION was already canonical as N5K-0567 / INN 9725161234 and was skipped by physical guard."},
+    {"path":"data/pending_workers/growth_news/20260827-093744-growth-news.json","blob_sha":"4b028b2d3d900bd56553f3ba1de068bb79ffafe3","consumed_by_run":"N5K-20260827-448","result":"CONSUMED","note":"Компания Виталан and Формула-К integrated as N5K-0607 and N5K-0608 after fresh 2026 verification."}
   ],
   "outreach_sent": 0
 }
