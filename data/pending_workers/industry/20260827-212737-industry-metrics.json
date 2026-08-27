@@ -1,0 +1,69 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T21:27:37+03:00",
+  "baseline_head": "4222754e39db2a0111186f42a440fe1b5525b5e7",
+  "campaign_id": "new_5000",
+  "canonical_baseline": {"leads_master": 476, "contactable_master": 476, "integrity": "PASS"},
+  "dedup_keys_read": ["Lead ID", "INN", "OGRN/OGRNIP", "exact Legal Name", "confirmed Brand+Domain"],
+  "outreach": false,
+  "qualified": 0,
+  "funnel": {
+    "raw_unique": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "decision_note": "All five source batches were stopped after the first 20 because no candidate had a sufficiently evidenced probable S1-S3 signal at fast-gate stage. Exhibition/catalogue presence alone was not treated as a growth signal. No stale data were used to promote a candidate. No deep-stage criterion was weakened.",
+  "lanes": [
+    {
+      "source": "NEFTEGAZ 2026 WebCatalogue — Russia filter",
+      "source_url": "https://icatalog.expocentr.ru/en/exhibitions/f33d0466-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=1",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate_first20": 1.0,
+      "action": "stopped_and_rotated",
+      "candidates": ["ABSOLITE","ARMTORG.RU (VESTNIK ARMATUROSTROITELYA JOURNAL)","BERG Compressors","DALGAKIRAN","DELTA PROJECT","EPC-KOMPLEKT","EX102","FOR PRO","GOODEL","INNERICA","PRIMOFLO RUSSIA","RealLab!","SAVECONS","SELECTRIC","A9 SYSTEMS","ABS ZEIM AUTOMATION","AVALONELECTROTECH","AVIATRON RPE LLC","HIGH TECHNOLOGY PARK OF UGRA","AGV JSC"]
+    },
+    {
+      "source": "Rosmould | Rosplast | 3D-TECH 2026 official exhibitor announcement",
+      "source_url": "https://en.rosmould.ru/tpost/hgtk49zhm1-rosmould-rosplast-3d-tech-2026-exhibitio",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate_first20": 1.0,
+      "action": "stopped_and_rotated",
+      "candidates": ["FORSH","Izh-Rest","Prof-NN","Novaya Forma","KB Press-Forma","Sistema","TechnoPlastYug","MGC Group","Gorplast","JMT Mold","Hongke Mould","Sahil Molds & Dies","YUDO","Borche Machinery","CRONPLEX","YIZUMI","Cybertech","WALMO","Moretto","ISTPLAST"]
+    },
+    {
+      "source": "Pharmtech & Ingredients 2026 exhibitor catalogue",
+      "source_url": "https://mosexpo.su/pharmtech-ingredients/",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate_first20": 1.0,
+      "action": "stopped_and_rotated",
+      "candidates": ["Absolut LLC","Academlab","Aero Pump GmbH","AiX Lab","Alfa Lab Company","Alicecom, TD","Alsi-PharmTech","Analytexpert","Analytics, magazine","Antares Vision Italy","AP Biosystems Ltd.","Aquachrom LTD","Artlife, LLC","Artlife-Techno","ASAHI KASEI BIOPROCESS EUROPE S.A./N.V.","ASEPTICA","AURORA PACK ENGINEERING LLC","Avexima JSC","AVISS LLC","AVRORA,LLC"]
+    },
+    {
+      "source": "INLEGMASH 2026 WebCatalogue",
+      "source_url": "https://icatalog.expocentr.ru/en/exhibitions/190a3ab4-1050-11f0-80ce-a0d3c1fab97f",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate_first20": 1.0,
+      "action": "stopped_and_rotated",
+      "candidates": ["AKBAS PLASTIK SANAYI VE TICARET A.S.","BENEKS TAAH. MUH. MUM. MAKINE SAN. VE TIC. LTD. STI.","BIÇAKSAN MAKINA TAKIM SANAYI TICARET LIMITED ŞIRKETI","CHANGSHU FEILONG NONWOVEN MACHINERY CO. LTD","CHANGSHU ZHENTAI NONWOVEN MACHINERY CO. LTD","CHANGZHOU LONGLONGSHENG WARP KNITTING MACHINERY CO. LTD","CHINA TEXMATECH CO. LTD","COSMOS GLOBAL","DALIAN HUAYANG NEW MATERIALS TECHNOLOGY CO. LTD","DEMSAN TEKSTIL MAKINA SANAYI TICARET LTD STI","DONGYANG AOLONG NONWOVEN EQUIPMENT CO. LTD","DOPSING","ELTEKSMAK MAKİNE ANONİM ŞİRKETİ","ENHAS MAKINA SANAYI VE TICARET LTD. STI.","FONGS EUROPE GMBH","FOSHAN NANHAI RONGJU MACHINERY CO. LTD","FUJIAN YONTHIN DIGITAL CONTROL TECHNOLOGY CO. LTD","GREAT TEX","GUANGZHOU YONG JIN MACHINERY CO. LTD","HANGZHOU XIONGYUE TECHNOLOGY CO. LTD"]
+    },
+    {
+      "source": "Heat&Power 2026 official exhibitor list",
+      "source_url": "https://www.heatpower-expo.ru/en-GB/about/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate_first20": 1.0,
+      "action": "stopped_and_rotated",
+      "candidates": ["AGV, JSC","AGK LLC","AGUNA TEPLO","VALDEX ENERGETICA","Valdex Energy Solutions, LLC","VOLGA INDUSTRIAL ENGINES","DVC RESOURCE","ITERRA","KIREI CHEMICAL, LTD","MOTORWERK-SGU, LLC","Techart, LLC","RN-LUBRICANTS, LLC","РК","RTS, LLC","TEPLO'OBMEN","TEKHPROM","EnergoPromTech","Yaroslavl diesel engine","Anhui EvoTec Power Generation Co., Ltd","Changsha U1 Technology Co.,LTD"]
+    }
+  ],
+  "write_scope": "new immutable metrics file only; canonical master/contactable/contacts/evidence/runtime/campaign untouched"
+}
