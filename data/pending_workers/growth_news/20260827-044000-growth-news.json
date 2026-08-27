@@ -1,0 +1,144 @@
+{
+  "schema_version": "growth_news_worker_v1",
+  "lane": "growth_news",
+  "created_at": "2026-08-27T04:40:00+03:00",
+  "source_head_before_write": "8aa95f614b3a072dbb8bad1e8dcca5bbd1201203",
+  "canonical_snapshot": {
+    "campaign_id": "new_5000",
+    "canonical_count": 430,
+    "contactable_count": 430,
+    "last_completed_run": "N5K-20260827-442",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_funnel": {
+    "raw_distinct_companies_confirmed": 30,
+    "fast_gate": 7,
+    "size": 4,
+    "legal": 4,
+    "signal": 3,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates_or_early_rejects": 23,
+    "excluded_after_fast_gate": 5,
+    "notes": "За доступный execution window подтверждены не менее 30 реально именованных разных raw-компаний из свежих growth/investment/expansion источников. Цель 100-180 raw не достигнута; цифра не завышалась, строки выдачи и безымянные инвестпроекты не считались. Критерии не ослаблялись."
+  },
+  "qualified": [
+    {
+      "brand": "НеоКор",
+      "legal_name": "АО \"НЕОКОР\"",
+      "inn": "4205026550",
+      "ogrn": "1024200695991",
+      "domain": "neocor.ru",
+      "legal_status": "Действующая организация; актуальный статус подтвержден на 2026 год",
+      "ownership": "Частная собственность (ОКФС 16); непубличное акционерное общество",
+      "size_evidence": {
+        "metric": "Выручка 2025",
+        "value": "около 371-374 млн руб.; рост примерно 75.5% год к году; численность около 63 сотрудников",
+        "urls": [
+          "https://b2b.house/company/AO-NEOKOR_96af71e5-0573-4488-a542-0e6c1494af7b/",
+          "https://zachestnyibiznes.ru/company/ul/1024200695991_4205026550_AO-NEOKOR",
+          "https://firmoteka.ru/4205026550"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-05-29",
+        "summary": "Компания открыла в Кемерове новую производственную площадку/завод по выпуску медицинских изделий для сердечно-сосудистой хирургии. Свежие отраслевые публикации указывают, что переезд в новый комплекс позволяет увеличить выпуск биопротезов клапанов сердца примерно с 2 тыс. до 4.5 тыс. изделий в год.",
+        "urls": [
+          "https://neocor.ru/",
+          "https://neocor.ru/novosti",
+          "https://xn--80adahnf5bdekrm.xn--p1ai/category/meditsina/"
+        ]
+      },
+      "lpr": {
+        "name": "Пузь Александр Викторович",
+        "role": "Генеральный директор АО НеоКор",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1024200695991-zao-neokor/",
+          "https://firmoteka.ru/4205026550"
+        ]
+      },
+      "contact": {
+        "route": "Официальный общий и коммерческий маршрут компании",
+        "phone": "+7 (923) 600-01-70",
+        "commercial_phone": "+7 (923) 526-86-16",
+        "email": "office_neocor@neocor.ru",
+        "commercial_email": "sales@neocor.ru",
+        "contact_page": "https://neocor.ru/kontakty",
+        "source_url": "https://neocor.ru/kontakty"
+      },
+      "dedup_keys": {
+        "inn": "4205026550",
+        "ogrn": "1024200695991",
+        "legal_name": "АО НЕОКОР",
+        "brand_domain": "НеоКор|neocor.ru"
+      },
+      "dedup_check": "Повторный поиск по репозиторию перед записью по бренду, ИНН и ОГРН совпадений не выявил; финальный physical dedup остается за canonical writer.",
+      "gate_result": "QUALIFIED"
+    },
+    {
+      "brand": "Гагаринский светотехнический завод / ГСТЗ",
+      "legal_name": "ООО \"ГАГАРИНСКИЙ СВЕТОТЕХНИЧЕСКИЙ ЗАВОД\"",
+      "inn": "6722031168",
+      "ogrn": "1166733075222",
+      "domain": "gstz.ru",
+      "legal_status": "Действующая организация; статус подтвержден в августе 2026",
+      "ownership": "Российская частная структура; 100% учредитель ООО ТПК \"Вартон\"",
+      "size_evidence": {
+        "metric": "Выручка 2025 / численность",
+        "value": "около 210.9 млн руб. выручки за 2025 год; 132 сотрудника по актуальному профилю",
+        "urls": [
+          "https://www.tbank.ru/business/contractor/legal/1166733075222/",
+          "https://companies.rbc.ru/id/1166733075222-ooo-gagarinskij-svetotehnicheskij-zavod/"
+        ]
+      },
+      "signal": {
+        "type": "S2_growth_expansion",
+        "date": "2026-08-03",
+        "summary": "Правительство Смоленской области сообщило о продолжающемся наращивании производственных мощностей Гагаринского светотехнического завода в рамках инвестиционного соглашения с Вартон. На заводе уже проведена масштабная модернизация, созданы 150 новых рабочих мест, лаборатория и инженерный центр, запущены новые производственные линии.",
+        "urls": [
+          "https://www.admin-smolensk.ru/novosti/news/v-gagarinskij-svetotehnicheskij-zavod-naraschivaet-proizvodstvennye-moschnosti/",
+          "https://gstz.ru/about/"
+        ]
+      },
+      "lpr": {
+        "name": "Мордавченков Сергей Анатольевич",
+        "role": "Генеральный директор ООО ГСТЗ",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1166733075222-ooo-gagarinskij-svetotehnicheskij-zavod/",
+          "https://saby.ru/profile/6722031168-672201001"
+        ]
+      },
+      "contact": {
+        "route": "Официальный общий маршрут и форма для коммерческих запросов",
+        "phone": "+7 (48135) 3-47-28",
+        "email": "info@gstz.ru",
+        "contact_page": "https://gstz.ru/contacts/",
+        "source_url": "https://gstz.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "6722031168",
+        "ogrn": "1166733075222",
+        "legal_name": "ООО ГАГАРИНСКИЙ СВЕТОТЕХНИЧЕСКИЙ ЗАВОД",
+        "brand_domain": "Гагаринский светотехнический завод|gstz.ru"
+      },
+      "dedup_check": "Повторный поиск по репозиторию перед записью по бренду, ИНН и ОГРН совпадений не выявил; финальный physical dedup остается за canonical writer.",
+      "gate_result": "QUALIFIED"
+    }
+  ],
+  "rejected_examples": [
+    {"name": "НЭВЗ", "reason": "крупная корпоративная структура в составе Трансмашхолдинга; ранний reject текущего сегмента"},
+    {"name": "Haval", "reason": "иностранная крупная корпоративная структура; не целевой российский частный средний бизнес"},
+    {"name": "ЭкоНива", "reason": "крупный холдинг; не проходит целевой размер/контур"},
+    {"name": "Дамате / Индюшкин двор", "reason": "крупный агрохолдинг; не повышен до QUALIFIED в этом worker-проходе"},
+    {"name": "Гармония", "reason": "ранее уже проверялась worker-ом и была исключена по масштабу; повторно не брать"},
+    {"name": "ФОРШ", "reason": "ранее обнаружен как canonical duplicate; повторно не брать"},
+    {"name": "Логика молока", "reason": "уже интегрирована в canonical RUN 440"},
+    {"name": "НАРТИС", "reason": "уже квалифицирован и интегрирован предыдущими циклами; повторно не брать"}
+  ],
+  "outreach_performed": false,
+  "canonical_write_performed": false
+}
