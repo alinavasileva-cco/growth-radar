@@ -4,15 +4,16 @@
   "status": "READY_FOR_INTEGRATION",
   "qualified_staged_not_counted": 1,
   "funnel": {
-    "worker_source_raw": 180,
+    "discovered": 180,
     "fast_gate_passed": 5,
     "size_check_passed": 2,
     "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified_before_physical_write": 1,
-    "physical_duplicates_found": 0
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 179
   },
   "lane_metrics": [
     {
@@ -25,7 +26,8 @@
       "lpr": 1,
       "contact": 1,
       "worker_qualified": 1,
-      "canonical_prewrite_qualified": 1
+      "canonical_prewrite_qualified": 1,
+      "result": "SATURN_BASHKIRIA_QUALIFIED"
     },
     {
       "lane": "industry/20260827-233200",
@@ -69,12 +71,6 @@
       "Number Of Contacts Found": 2,
       "Consulting Hypothesis": "Масштабирование отдела продаж и коммерческой эффективности: структура команды, KPI, воронка, доходность и управление региональными B2B-продажами.",
       "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ",
-      "dedup_guard": {
-        "checked_against_head": "3837faf09b5e5e3da008cdfbaa0f69c8fdd858b1",
-        "physical_master_inn_match": false,
-        "physical_master_ogrn_match": false,
-        "final_guard_required_immediately_before_write": true
-      },
       "contacts": [
         {"channel":"phone","value":"+7 (347) 279-83-88","type":"OFFICIAL_COMPANY","source":"Official Saturn regional site","url":"https://ufa.saturn.net/shops/","is_lpr":false},
         {"channel":"email","value":"cs@ufa.saturn.net","type":"OFFICIAL_COMPANY","source":"Official Saturn regional site","url":"https://ufa.saturn.net/shops/","is_lpr":false}
@@ -90,7 +86,7 @@
   ],
   "canonical_count_before_write": 477,
   "contactable_count_before_write": 477,
-  "qualified_staged_not_counted_note": "Candidate is verified but is not counted until physically integrated into canonical/contactable masters, contacts/evidence, shards and run artifacts and integrity is rechecked.",
+  "notes": "Fresh worker pool after RUN 460: jobs 80 employer-level raw with 1 worker-qualified candidate; corrected industry worker metrics 100 auditable distinct raw with 0 qualified. Aggregate 180 is source-level raw and is not claimed as 180 globally proven distinct companies across workers because complete legal identity keys are unavailable for all jobs early rejects. All five industry 20-candidate catalog lanes hit 100% duplicate+early-reject and were stopped/rotated. Target 300/400–800 raw was not reached after available source rotation in this execution window; quality gates were not weakened. Final pre-write physical master check at HEAD 3837faf09b5e5e3da008cdfbaa0f69c8fdd858b1 found no INN 0277918390 or OGRN 1170280005092. Outreach=0.",
   "worker_staging_consumed": false,
   "outreach_performed": false
 }
