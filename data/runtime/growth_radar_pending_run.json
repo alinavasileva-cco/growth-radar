@@ -1,64 +1,8 @@
 {
   "run_id": "N5K-20260827-454R1",
   "updated_at": "2026-08-27T16:03:53+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "campaign_id": "new_5000",
-  "qualified_staged_not_counted": 1,
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0626",
-      "Brand": "S.Lavia",
-      "Legal Name": "ИП Костина Ольга Валерьевна",
-      "INN": "434800578091",
-      "OGRN/OGRNIP": "306434531400087",
-      "Region": "Кировская область",
-      "City": "Киров",
-      "Segment": "Производство и оптовая/розничная торговля сумками и аксессуарами / B2B",
-      "Website": "https://slaviabag.ru/",
-      "Revenue/Scale": "Федеральная сеть с 28 представительствами/магазинами в нескольких городах, собственное производство и оптовое направление; официальный B2B-сайт заявляет более 2 млн изделий в наличии и под заказ.",
-      "Signal Level": "S1",
-      "Signal Summary": "25.08.2026 прямой работодатель S.Lavia ищет руководителя B2B-продаж с задачей вывести команду на новый уровень; компания работает с розничными сетями, маркетплейсами и шоурумами по России.",
-      "Signal Date": "2026-08-25",
-      "Signal Source": "https://dreamjob.ru/employers/129624/vakansii/136608264",
-      "Owner": "Костина Ольга Валерьевна",
-      "CEO": "Костина Ольга Валерьевна",
-      "LPR": "Костина Ольга Валерьевна",
-      "LPR Role": "Индивидуальный предприниматель / владелец бизнеса",
-      "Primary Phone": "8 (800) 222-42-69",
-      "Primary Email": "info@slaviabag.ru",
-      "HH Contact": "",
-      "Contact Form": "https://slaviabag.ru/page/kontakty",
-      "Contact Type": "official company phone + corporate email + contact page",
-      "Contact Source": "Official S.Lavia site",
-      "Consulting Hypothesis": "Масштабирование B2B-направления: сегментация, pipeline, CRM, key accounts, развитие опта и эффективность федеральной сети.",
-      "contacts": [
-        {"value": "8 (800) 222-42-69", "channel": "phone", "type": "official_company_phone", "source": "Official S.Lavia contacts", "url": "https://slaviabag.ru/page/kontakty", "is_lpr": false, "notes": "Corporate route"},
-        {"value": "info@slaviabag.ru", "channel": "email", "type": "official_company_email", "source": "Official S.Lavia contacts", "url": "https://slaviabag.ru/page/kontakty", "is_lpr": false, "notes": "Corporate route"},
-        {"value": "zakaz@slaviabag.ru", "channel": "email", "type": "official_sales_email", "source": "Official S.Lavia contacts", "url": "https://slaviabag.ru/page/kontakty", "is_lpr": false, "notes": "Official order/sales route"}
-      ],
-      "evidence": [
-        {"type": "LEGAL", "claim": "Официальная страница реквизитов S.Lavia указывает ИП Костина Ольга Валерьевна, ИНН 434800578091, ОГРНИП 306434531400087; действующий ИП подтвержден публичным реестровым профилем.", "url": "https://slaviabag.ru/page/rekvizity", "source": "Official S.Lavia site + jobs worker"},
-        {"type": "SIZE", "claim": "Подтвержден федеральный operating footprint, собственное производство и оптовое направление; 28 представительств/магазинов и более 2 млн изделий в B2B-ассортименте по worker-verified sources.", "url": "https://sumki-optom.net/page/cooperation", "source": "S.Lavia B2B / jobs worker"},
-        {"type": "SIGNAL", "claim": "25.08.2026 открыта вакансия руководителя B2B-продаж с задачей вывести команду на новый уровень.", "url": "https://dreamjob.ru/employers/129624/vakansii/136608264", "source": "DreamJob / jobs worker"},
-        {"type": "LPR", "claim": "Костина Ольга Валерьевна — ИП и владелец бизнеса.", "url": "https://companies.rbc.ru/persons/ogrnip/306434531400087-kostina-olga-valerevna/", "source": "РБК Компании / jobs worker"},
-        {"type": "CONTACT", "claim": "Официальные корпоративные email info@slaviabag.ru и zakaz@slaviabag.ru, телефон и страница контактов опубликованы компанией.", "url": "https://slaviabag.ru/page/kontakty", "source": "Official S.Lavia site"}
-      ]
-    }
-  ],
-  "funnel": {
-    "discovered": 0,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 0
-  },
-  "lane_metrics": [
-    {"lane": "repair_of_jobs/20260827-151736", "raw_surfaced": 0, "canonical_rechecked": 1, "canonical_qualified": 1, "candidate": "S.Lavia", "repair_reason": "Previous canonical writer decision incorrectly treated IP as excluded, while current configuration explicitly permits юрлицо/ИП."}
-  ],
-  "notes": "Same-cycle repair of RUN 454. No new raw discovery is claimed. S.Lavia was already part of the original persisted staged pool and is integrated now because current configuration explicitly permits IP at FAST GATE and QUALIFIED. Outreach 0."
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260827-454R1 integrated physically; canonical/contactable 469/469; integrity PASS; orphan 0/0; outreach 0."
 }

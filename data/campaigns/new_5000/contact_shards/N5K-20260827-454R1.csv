@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0626,N5K-0626-C01,S.Lavia,434800578091,,Корпоративный маршрут,8 (800) 222-42-69,phone,official_company_phone,Official S.Lavia contacts,https://slaviabag.ru/page/kontakty,NO,HIGH,2026-08-27,Corporate route,N5K-20260827-454R1,new_5000
+N5K-0626,N5K-0626-C02,S.Lavia,434800578091,,Корпоративный маршрут,info@slaviabag.ru,email,official_company_email,Official S.Lavia contacts,https://slaviabag.ru/page/kontakty,NO,HIGH,2026-08-27,Corporate route,N5K-20260827-454R1,new_5000
+N5K-0626,N5K-0626-C03,S.Lavia,434800578091,,Корпоративный маршрут,zakaz@slaviabag.ru,email,official_sales_email,Official S.Lavia contacts,https://slaviabag.ru/page/kontakty,NO,HIGH,2026-08-27,Official order/sales route,N5K-20260827-454R1,new_5000

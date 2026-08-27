@@ -1,78 +1,39 @@
 {
   "generated_at": "2026-08-27T16:03:53+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-454",
-  "current_run_id": "N5K-20260827-454",
+  "latest_completed_run_id": "N5K-20260827-454R1",
+  "current_run_id": "N5K-20260827-454R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 468,
-  "contactable_verified": 468,
+  "canonical_pool_verified": 469,
+  "contactable_verified": 469,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4532,
+  "remaining_to_target": 4531,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_454": {
-    "raw_discovered": 311,
-    "fast_gate_passed": 5,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
-    "qualified": 4,
-    "physically_integrated": 4,
+  "run_454R1": {
+    "raw_discovered": 0,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "physically_integrated": 1,
     "duplicates": 0,
-    "excluded": 307,
+    "excluded": 0,
     "lane_metrics": [
       {
-        "lane": "jobs/20260827-151736",
-        "raw_surfaced": 80,
-        "worker_fast_gate": 6,
-        "worker_qualified": 1,
-        "canonical_rechecked": 1,
-        "canonical_qualified": 0,
-        "canonical_result": "REJECT_LEGAL_IP",
-        "candidate": "S.Lavia"
-      },
-      {
-        "lane": "jobs/20260827-153100",
-        "raw_surfaced": 80,
-        "worker_fast_gate": 7,
-        "worker_qualified": 1,
+        "lane": "repair_of_jobs/20260827-151736",
+        "raw_surfaced": 0,
         "canonical_rechecked": 1,
         "canonical_qualified": 1,
-        "candidate": "Завод Металлоконструкций Ресталь"
-      },
-      {
-        "lane": "growth_news/20260827-153121",
-        "raw_surfaced": 34,
-        "worker_fast_gate": 8,
-        "worker_qualified": 2,
-        "canonical_rechecked": 2,
-        "canonical_qualified": 2,
-        "candidates": [
-          "Пластик Он Лайн",
-          "Биофармлаб"
-        ]
-      },
-      {
-        "lane": "industry/20260827-153633",
-        "raw_surfaced": 100,
-        "worker_fast_gate": 2,
-        "worker_qualified": 1,
-        "canonical_rechecked": 1,
-        "canonical_qualified": 1,
-        "candidate": "МЕРА / НПП МЕРА",
-        "lane_stop_rule": ">70% duplicate+early reject on each first-20 batch; sources rotated"
-      },
-      {
-        "lane": "canonical_own_low_overlap_regional_expansion",
-        "raw_surfaced": 17,
-        "canonical_qualified": 0,
-        "note": "Additional named regional/industrial expansion candidates inspected after worker raw total was 294; no candidate was promoted without full gates."
+        "candidate": "S.Lavia",
+        "repair_reason": "Previous canonical writer decision incorrectly treated IP as excluded, while current configuration explicitly permits юрлицо/ИП."
       }
     ]
   }
