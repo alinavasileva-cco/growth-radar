@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260827-455",
+  "updated_at": "2026-08-27T17:05:48+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-162700-jobs.json",
+      "blob_sha": "ced7c58672aa864d558181a74be49894a6cb3ef5",
+      "result": "CONSUMED",
+      "note": "Future Vision / ООО КОМПЭЛС ИНТЕГРАЦИЯ passed canonical re-check and was physically integrated as N5K-0627. Immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-162607-industry.json",
+      "blob_sha": "a7aa3d9b9757c8d14b421a99dd73497c0b6b2faa",
+      "result": "CONSUMED",
+      "note": "BREEZ / ООО КОМПАНИЯ БИС passed canonical re-check and was physically integrated as N5K-0628. Immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 471,
+  "physical_contactable_after_cycle": 471,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
