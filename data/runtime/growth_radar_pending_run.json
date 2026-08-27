@@ -1,8 +1,354 @@
 {
-  "run_id": "N5K-20260827-451",
-  "updated_at": "2026-08-27T13:07:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260827-451 integrated physically; canonical/contactable 457/457; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260827-452",
+  "updated_at": "2026-08-27T14:00:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 4,
+  "funnel": {
+    "discovered": 128,
+    "fast_gate_passed": 8,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 4,
+    "lpr_identified": 4,
+    "contact_route_found": 4,
+    "qualified": 4,
+    "duplicates": 0,
+    "excluded": 124
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs worker",
+      "raw": 80,
+      "duplicates_or_early_rejects": 79,
+      "qualified": 1,
+      "note": "Fresh immutable data/pending_workers/jobs/20260827-133241-jobs.json. Worker stopped broad HH after >70% duplicate+early-reject saturation on the first 20 and rotated. Canonical re-check confirmed YANS; no physical exact duplicate by INN/OGRN/legal name was found before staging."
+    },
+    {
+      "lane": "low-overlap growth/regional/official discovery",
+      "raw": 48,
+      "duplicates_or_early_rejects": 45,
+      "qualified": 3,
+      "note": "Conservative auditable count of distinct company identities actually reviewed after global candidate dedup. Repeated articles/search-result rows were not counted as raw companies. Qualified: TD Mirograd/ZAIGER, Alkor, Beshtau. Additional search-result repetitions and unnamed projects were excluded from the raw count rather than inflated."
+    }
+  ],
+  "notes": "Canonical RUN 452. Sources were rotated after jobs saturation into low-overlap growth/regional/official discovery. Auditable global raw is 128 distinct companies; the 300 raw target was not reached and is not fabricated. Repeated publication rows, unnamed projects and cross-source repeats were not counted as new companies. Strict SIZE->LEGAL->SIGNAL->LPR->CONTACT applied. No outreach performed.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0615",
+      "Brand": "YANS / ЯНС товары для HoReCa",
+      "Legal Name": "ООО «ЯНС»",
+      "INN": "5402056250",
+      "OGRN/OGRNIP": "1195476072527",
+      "Region": "Новосибирская область",
+      "City": "Новосибирск",
+      "Segment": "Оптовые товары для HoReCa / упаковка / собственные торговые марки / B2B",
+      "Website": "https://yan-s.ru/",
+      "Revenue/Scale": "Выручка 389,275 млн ₽ за 2025 год; 34 сотрудника по актуальному профилю; действующее торговое B2B-юрлицо.",
+      "Signal Level": "S1",
+      "Signal Summary": "На 27.08.2026 в выдаче HeadHunter за последние 3 дня присутствует прямая вакансия YANS «Руководитель отдела продаж» в Новосибирске; точный день публикации в доступной выдаче не раскрыт, поэтому дата не восстанавливается догадкой.",
+      "Signal Date": "2026-08-25/2026-08-27",
+      "Signal Source": "https://hh.ru/search/vacancy?text=YANS+%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6&period=3",
+      "Owner": "Ананян Гурген Ашотович; Филиппович Денис Петрович",
+      "CEO": "Филиппович Денис Петрович",
+      "LPR": "Филиппович Денис Петрович",
+      "LPR Role": "Директор / совладелец",
+      "Primary Phone": "+7 (383) 388-70-07",
+      "Primary Email": "sales@yan-s.ru",
+      "HH Contact": "https://hh.ru/search/vacancy?text=YANS+%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6&period=3",
+      "Contact Form": "https://yan-s.ru/requisites/",
+      "Contact Type": "official corporate phone + sales email + official website + HH route",
+      "Contact Source": "Official YANS requisites/site + HeadHunter",
+      "Consulting Hypothesis": "Систематизация B2B-продаж HoReCa: структура отдела, сегментация клиентов, pipeline, key accounts, собственные марки, KPI и прогнозируемая коммерческая воронка.",
+      "contacts": [
+        {
+          "value": "+7 (383) 388-70-07",
+          "channel": "phone",
+          "type": "corporate",
+          "source": "YANS official requisites",
+          "url": "https://yan-s.ru/requisites/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный телефон."
+        },
+        {
+          "value": "sales@yan-s.ru",
+          "channel": "email",
+          "type": "corporate",
+          "source": "YANS official requisites",
+          "url": "https://yan-s.ru/requisites/",
+          "is_lpr": false,
+          "notes": "Официальный email отдела продаж на корпоративном домене."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «ЯНС», ИНН 5402056250, ОГРН 1195476072527; организация действует в 2026 году.",
+          "url": "https://companies.rbc.ru/id/1195476072527-ooo-yans/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка за 2025 год — 389 275 000 ₽; актуальный профиль также фиксирует 34 сотрудника.",
+          "url": "https://companium.ru/id/1195476072527-yans",
+          "source": "Companium"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "На 27.08.2026 прямая вакансия YANS «Руководитель отдела продаж» присутствует в выдаче HH за последние 3 дня; точная дата публикации в доступной выдаче не раскрыта.",
+          "url": "https://hh.ru/search/vacancy?text=YANS+%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6&period=3",
+          "source": "HeadHunter"
+        },
+        {
+          "type": "LPR",
+          "claim": "Филиппович Денис Петрович — директор ООО «ЯНС»; учредители — Ананян Гурген Ашотович и Филиппович Денис Петрович.",
+          "url": "https://companium.ru/id/1195476072527-yans",
+          "source": "Companium"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальные реквизиты YANS публикуют корпоративный телефон +7 (383) 388-70-07 и email sales@yan-s.ru.",
+          "url": "https://yan-s.ru/requisites/",
+          "source": "YANS official site"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0616",
+      "Brand": "Мироград / ZAIGER",
+      "Legal Name": "ООО «ТД МИРОГРАД»",
+      "INN": "5407030907",
+      "OGRN/OGRNIP": "1075407012229",
+      "Region": "Новосибирская область",
+      "City": "Новосибирск",
+      "Segment": "Металлические двери / ворота / сэндвич-панели / промышленное производство B2B",
+      "Website": "https://zaiger.ru/",
+      "Revenue/Scale": "Выручка 1,62 млрд ₽ за 2025 год; 201 сотрудник; действующее частное производственное юрлицо.",
+      "Signal Level": "S2",
+      "Signal Summary": "14.04.2026 ООО «ТД Мироград» запустило третий производственный объект — производственно-складской комплекс ZAIGER для сэндвич-панелей; публично заявлено дальнейшее расширение производства.",
+      "Signal Date": "2026-04-14",
+      "Signal Source": "https://nsk.dk.ru/news/237240091",
+      "Owner": "Рязанов Владимир Васильевич — 96%; Рязанов Игорь Владимирович — 4%",
+      "CEO": "Рязанов Владимир Васильевич",
+      "LPR": "Рязанов Владимир Васильевич",
+      "LPR Role": "Генеральный директор / собственник 96%",
+      "Primary Phone": "+7 (383) 363-07-07",
+      "Primary Email": "corp@mirograd.ru",
+      "HH Contact": "",
+      "Contact Form": "https://zaiger.ru/",
+      "Contact Type": "public corporate phone + corporate email + brand website",
+      "Contact Source": "Public company profiles linked to ООО ТД МИРОГРАД / ZAIGER",
+      "Consulting Hypothesis": "Коммерческая загрузка третьей производственной площадки: B2B-сегментация, дилерская сеть, key accounts, региональная экспансия, pipeline и KPI продаж новых мощностей.",
+      "contacts": [
+        {
+          "value": "+7 (383) 363-07-07",
+          "channel": "phone",
+          "type": "corporate",
+          "source": "Mirograd public company listing",
+          "url": "https://blizko.pro/ru/novosibirsk/firm/mirograd-torgovo-proizvodstvennaya-kompaniya-avtomaticheskih-vorot-i-vhodnyh-dverey_3",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный телефон компании; связка с mirograd.ru/zaiger.ru подтверждена."
+        },
+        {
+          "value": "corp@mirograd.ru",
+          "channel": "email",
+          "type": "corporate",
+          "source": "Current legal/company profile",
+          "url": "https://companium.ru/id/1075407012229-td-mirograd",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный email на домене mirograd.ru, привязанный к ООО «ТД МИРОГРАД»."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «ТД МИРОГРАД», ИНН 5407030907, ОГРН 1075407012229; организация действует в августе 2026 года.",
+          "url": "https://companies.rbc.ru/id/1075407012229-ooo-td-mirograd/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Финансовая отчетность за 2025 год: выручка около 1,62 млрд ₽; среднесписочная численность 201 человек.",
+          "url": "https://xfirm.ru/company/5407030907",
+          "source": "Xfirm / current company profile"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "14.04.2026 ООО «ТД Мироград» запустило третий производственный объект — комплекс для продукции ZAIGER.",
+          "url": "https://nsk.dk.ru/news/237240091",
+          "source": "Деловой квартал"
+        },
+        {
+          "type": "LPR",
+          "claim": "Рязанов Владимир Васильевич — генеральный директор и собственник 96%; Рязанов Игорь Владимирович — 4%.",
+          "url": "https://companies.rbc.ru/id/1075407012229-ooo-td-mirograd/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Публично подтверждены корпоративный телефон +7 (383) 363-07-07, email corp@mirograd.ru и сайты mirograd.ru/zaiger.ru.",
+          "url": "https://blizko.pro/ru/novosibirsk/firm/mirograd-torgovo-proizvodstvennaya-kompaniya-avtomaticheskih-vorot-i-vhodnyh-dverey_3",
+          "source": "Public company listing"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0617",
+      "Brand": "Алькор / Тюменский медведь",
+      "Legal Name": "ЗАО МПКФ «АЛЬКОР»",
+      "INN": "7204015103",
+      "OGRN/OGRNIP": "1027200774040",
+      "Region": "Тюменская область",
+      "City": "Тюмень",
+      "Segment": "Производство автомобильных аккумуляторов / промышленный B2B",
+      "Website": "https://alkor-tmn.ru/",
+      "Revenue/Scale": "Выручка 2,263 млрд ₽ и 183 сотрудника за 2025 год; действующее частное промышленное АО.",
+      "Signal Level": "S2",
+      "Signal Summary": "В 2026 году завод реализует модернизацию на 500 млн ₽ и запускает новую линию AGM-аккумуляторов; монтаж новой производственной линии начат.",
+      "Signal Date": "2026-03-12",
+      "Signal Source": "https://tumen.dk.ru/news/237238388",
+      "Owner": "Акционеры не раскрыты в ЕГРЮЛ; не восстанавливаются догадкой",
+      "CEO": "Галанов Владимир Николаевич",
+      "LPR": "Галанов Владимир Николаевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (3452) 48-91-66",
+      "Primary Email": "alkor72@mail.ru",
+      "HH Contact": "",
+      "Contact Form": "https://alkor-tmn.ru/",
+      "Contact Type": "official wholesale-sales phone + reception email + website form",
+      "Contact Source": "Alkor official site",
+      "Consulting Hypothesis": "Коммерциализация новой AGM-линии: B2B/дилерская стратегия, ассортимент, дистрибуция, key accounts, загрузка мощностей и маржинальность каналов.",
+      "contacts": [
+        {
+          "value": "+7 (3452) 48-91-66",
+          "channel": "phone",
+          "type": "corporate",
+          "source": "Alkor official site",
+          "url": "https://alkor-tmn.ru/",
+          "is_lpr": false,
+          "notes": "Официальный телефон отдела оптовых продаж."
+        },
+        {
+          "value": "alkor72@mail.ru",
+          "channel": "email",
+          "type": "corporate",
+          "source": "Alkor official site",
+          "url": "https://alkor-tmn.ru/",
+          "is_lpr": false,
+          "notes": "Официальный email предприятия."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ЗАО МПКФ «АЛЬКОР», ИНН 7204015103, ОГРН 1027200774040; организация действует на 19.08.2026.",
+          "url": "https://companies.rbc.ru/id/1027200774040-zao-mnogoprofilnaya-proizvodstvennaya-kommercheskaya-firma-alkor/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка за 2025 год — 2 262 603 000 ₽; среднесписочная численность — 183 сотрудника.",
+          "url": "https://companies.rbc.ru/id/1027200774040-zao-mnogoprofilnaya-proizvodstvennaya-kommercheskaya-firma-alkor/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "12.03.2026 сообщено о модернизации завода на 500 млн ₽ и запуске новой производственной линии AGM-аккумуляторов.",
+          "url": "https://tumen.dk.ru/news/237238388",
+          "source": "Деловой квартал"
+        },
+        {
+          "type": "LPR",
+          "claim": "Галанов Владимир Николаевич — генеральный директор ЗАО МПКФ «АЛЬКОР»; акционеры в ЕГРЮЛ не раскрыты.",
+          "url": "https://companies.rbc.ru/id/1027200774040-zao-mnogoprofilnaya-proizvodstvennaya-kommercheskaya-firma-alkor/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт завода публикует телефон отдела оптовых продаж +7 (3452) 48-91-66 и email alkor72@mail.ru.",
+          "url": "https://alkor-tmn.ru/",
+          "source": "Alkor official site"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0618",
+      "Brand": "ГК Бештау / Бештау",
+      "Legal Name": "ООО «БЕШТАУ»",
+      "INN": "6168118691",
+      "OGRN/OGRNIP": "1226100029836",
+      "Region": "Ростовская область",
+      "City": "Ростов-на-Дону",
+      "Segment": "Радиоэлектроника / компьютерная техника / электронные платы / промышленный B2B",
+      "Website": "https://gkbeshtau.ru/",
+      "Revenue/Scale": "Выручка 406,677 млн ₽ за 2025 год; в первом полугодии 2026 выпущено около 150 тыс. электронных плат, на 25% больше год к году; группа инвестировала 5,5 млрд ₽ в радиоэлектронное производство к концу 2025 года.",
+      "Signal Level": "S2",
+      "Signal Summary": "30.06.2026 ООО «Бештау» сообщило о росте выпуска электронных плат на 25%; компания намерена дальше наращивать объемы, расширять номенклатуру и локализацию производства.",
+      "Signal Date": "2026-06-30",
+      "Signal Source": "https://www.kommersant.ru/doc/8780571",
+      "Owner": "Осипов Олег Владимирович — 33,34%; Кузнецов Владимир Анатольевич — 33,33%; Черенкова Екатерина Николаевна — 33,33%",
+      "CEO": "Сидельников Андрей Андреевич",
+      "LPR": "Сидельников Андрей Андреевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (800) 500-42-15",
+      "Primary Email": "info@beshtau-electronics.ru",
+      "HH Contact": "",
+      "Contact Form": "https://gkbeshtau.ru/contacts/",
+      "Contact Type": "official group phone + corporate email + contact form",
+      "Contact Source": "GK Beshtau official contacts",
+      "Consulting Hypothesis": "Коммерциализация растущей локализованной электроники: B2B-сегментация, key accounts, партнерские каналы, pipeline, продуктовый портфель и загрузка расширяемых мощностей.",
+      "contacts": [
+        {
+          "value": "+7 (800) 500-42-15",
+          "channel": "phone",
+          "type": "corporate",
+          "source": "GK Beshtau official contacts",
+          "url": "https://gkbeshtau.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный телефон группы, опубликованный для ростовской площадки."
+        },
+        {
+          "value": "info@beshtau-electronics.ru",
+          "channel": "email",
+          "type": "corporate",
+          "source": "GK Beshtau official contacts",
+          "url": "https://gkbeshtau.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email группы, опубликованный для ростовской площадки."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «БЕШТАУ», ИНН 6168118691, ОГРН 1226100029836; организация действует в августе 2026 года.",
+          "url": "https://companies.rbc.ru/id/1226100029836-ooo-beshtau/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка ООО «БЕШТАУ» за 2025 год — 406 677 000 ₽; в первом полугодии 2026 выпущено около 150 тыс. электронных плат.",
+          "url": "https://companies.rbc.ru/id/1226100029836-ooo-beshtau/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "30.06.2026 ООО «Бештау» увеличило выпуск электронных плат на 25% год к году и заявило дальнейшее наращивание объемов, номенклатуры и локализации.",
+          "url": "https://www.kommersant.ru/doc/8780571",
+          "source": "Коммерсантъ"
+        },
+        {
+          "type": "LPR",
+          "claim": "Сидельников Андрей Андреевич — генеральный директор; учредители: Осипов Олег Владимирович 33,34%, Кузнецов Владимир Анатольевич 33,33%, Черенкова Екатерина Николаевна 33,33%.",
+          "url": "https://companies.rbc.ru/id/1226100029836-ooo-beshtau/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальная страница ГК «Бештау» публикует для ростовской площадки телефон 8 (800) 500-42-15 и email info@beshtau-electronics.ru.",
+          "url": "https://gkbeshtau.ru/contacts/",
+          "source": "GK Beshtau official site"
+        }
+      ]
+    }
+  ],
+  "outreach_sent": 0
 }
