@@ -1,0 +1,104 @@
+{
+  "schema_version": "pending_worker_jobs_v1",
+  "lane": "jobs",
+  "created_at": "2026-08-27T21:20:43+03:00",
+  "source_head_sha": "d84cb8b1d45b3c6fecd7e408547b07a6065d1c11",
+  "canonical_write": false,
+  "outreach": false,
+  "worker_funnel": {
+    "raw_distinct_employers": 47,
+    "target_raw_range": "80-150",
+    "target_reached": false,
+    "fast_gate_pass": 7,
+    "deep_check": 3,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_early_reject_split": null,
+    "note": "Broad job-board выдачи показали высокую насыщенность уже известными/слабыми работодателями; источник переключён на direct-employer и более узкие B2B/production вакансии. За этот цикл удалось надёжно идентифицировать 47 разных работодателей, поэтому 80-150 не заявляется. Split duplicate vs early reject отдельно не инструментирован и не реконструирован."
+  },
+  "discovery_sources": [
+    "https://gdejob.com/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BF%D0%BE-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%D0%BC-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0",
+    "https://gdejob.com/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0",
+    "https://dreamjob.ru/employers/266986/vakansii/134964765",
+    "https://setka.ru/posts/019fe5f7-4532-74f3-86ef-29fecd21afb3"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "FEDAST",
+      "legal_name": "ООО «ФЕДАСТ ИМПОРТ»",
+      "inn": "7720478065",
+      "ogrn": "1197746494461",
+      "legal_form": "ООО",
+      "legal_status": "Действующее",
+      "private_russian_entity": true,
+      "location": "Москва",
+      "size": {
+        "revenue_2025_rub": 438950000,
+        "employees": 42,
+        "size_evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1197746494461/",
+          "https://zachestnyibiznes.ru/company/ul/1197746494461_7720478065_OOO-FEDAST-IMPORT"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "hiring_head_of_sales_b2b",
+        "title": "Руководитель отдела продаж B2B (строительный инструмент)",
+        "signal_date": "2026-08-11",
+        "description": "Прямой работодатель FEDAST ищет руководителя отдела B2B-продаж; компания поставляет профессиональное монтажное оборудование и работает с крупными корпоративными клиентами и дилерами.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/266986/vakansii/134964765",
+          "https://setka.ru/posts/019fe5f7-4532-74f3-86ef-29fecd21afb3"
+        ]
+      },
+      "lpr": {
+        "name": "Федоренко Владимир Андреевич",
+        "role": "Генеральный директор",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1197746494461/",
+          "https://zachestnyibiznes.ru/company/ul/1197746494461_7720478065_OOO-FEDAST-IMPORT"
+        ]
+      },
+      "contact_route": {
+        "phone": "+7 (499) 283-60-33",
+        "email": "order@fedast.ru",
+        "website": "https://fedast.ru/",
+        "form": "https://fedast.ru/page/contact-tula",
+        "evidence_urls": [
+          "https://fedast.ru/page/contact-tula",
+          "https://fedast.ru/page/payment"
+        ]
+      },
+      "brand_legal_evidence_urls": [
+        "https://fedast.ru/page/contact-tula",
+        "https://fedast.ru/page/oferta"
+      ],
+      "dedup_keys": {
+        "inn": "7720478065",
+        "ogrn": "1197746494461",
+        "legal_name_normalized": "ООО ФЕДАСТ ИМПОРТ",
+        "brand_domain": "FEDAST|fedast.ru"
+      },
+      "pre_stage_dedup": {
+        "repo_exact_inn_search": "no_match",
+        "checked_at": "2026-08-27T21:20:43+03:00",
+        "head_sha": "d84cb8b1d45b3c6fecd7e408547b07a6065d1c11"
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "deep_check_rejects": [
+    {
+      "candidate": "СитиАрбитр",
+      "reason": "Не присвоен QUALIFIED: найден сильный CCO-сигнал, действующее ООО, масштаб и официальный контактный маршрут, но в доступных источниках дата публикации конкретной вакансии отображается противоречиво/относительно; строгую дату сигнала без догадки не фиксировал."
+    },
+    {
+      "candidate": "ВЭЛМО РУС",
+      "reason": "Не присвоен QUALIFIED в этом worker-проходе: масштаб подтверждён, но полный набор LPR + конкретный свежий job-board сигнал + practical contact route не был проверен до требуемого уровня в пределах цикла."
+    }
+  ]
+}
