@@ -1,0 +1,35 @@
+{
+  "run_id": "N5K-20260827-459",
+  "status": "PARTIAL_IN_PROGRESS_NOT_A_COMPLETED_RUN",
+  "baseline_canonical": 476,
+  "baseline_contactable": 476,
+  "fresh_worker_ingestion": {
+    "lane": "industry/20260827-202618",
+    "raw": 100,
+    "fast_gate": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0,
+    "candidate_rejected_at_signal": "Areatek / 3D Control / ООО 3Д К",
+    "staging_blob_sha": "bde8440d2c0033ee914551aa1c3e669ba5b7b09c"
+  },
+  "canonical_low_overlap_discovery": {
+    "source": "ПРОДЭКСПО-2026 official Expocentre internet catalog, Russia filter",
+    "source_url_prefix": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/Россия",
+    "source_reported_russia_participants": 1437,
+    "pages_reviewed": "1-21",
+    "rows_surfaced": 210,
+    "obvious_same-name_multi-stand_rows_removed": 4,
+    "raw_identities_minimum_after_obvious_page-level_dedup": 206,
+    "funnel_state": "RAW_ONLY_NOT_YET_DEEP_CHECKED",
+    "note": "These raw identities are persisted as source-page slices only and are NOT counted as fast-gate/size/legal/signal/LPR/contact/qualified/excluded until company-level verification is completed."
+  },
+  "raw_surfaced_total": 306,
+  "global_distinct_total_status": "NOT_CLAIMED_YET",
+  "reason": "Cross-source identity dedup between the 100 worker raw and 206 Prodexpo raw has not yet been fully materialized company-by-company; false progress is prohibited.",
+  "canonical_changed": false,
+  "outreach_performed": false
+}
