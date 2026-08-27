@@ -1,0 +1,131 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "source_head_sha": "0bc8afe707f7df833c06a85b8adea694c704d13c",
+    "source_config_version": "2026-08-27T05:04:00+03:00",
+    "source_canonical_run": "N5K-20260827-443",
+    "source_canonical_count": 433,
+    "source_contactable_count": 433,
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "funnel": {
+    "raw_surfaced": 80,
+    "raw_definition": "distinct employer-level candidates surfaced across current job-board searches after obvious cross-query duplicate removal; no row-level vacancy inflation",
+    "fast_gate_deep_checks": 9,
+    "qualified": 1,
+    "duplicates_early_rejects_split": null,
+    "notes": "HH-heavy/job-board results were visibly saturated by previously seen employers and large/obvious rejects, so discovery was rotated across regional Cataloxy/DreamJob/Nesiditsa/JobRun/JobCareer/Get-Works/Facancy and other job-board mirrors. Exact duplicates-vs-early-reject counts were not separately instrumented and are intentionally not reconstructed. Deep checks included Selecta Service, RS-Detail, PnevmoKom, MayakMetall, DV Sept, Izodecor and other surfaced candidates; only the fully evidenced candidate below is staged."
+  },
+  "qualified_candidates": [
+    {
+      "brand": "Altapp / Альтап / Селекта Сервис",
+      "legal_name": "ООО «СЕЛЕКТА СЕРВИС»",
+      "inn": "5259109389",
+      "ogrn": "1135259005760",
+      "legal_status": "Действует",
+      "region": "Нижегородская область",
+      "city": "Нижний Новгород",
+      "segment": "B2B IT / облачный сервис 1С / SaaS",
+      "website": "https://altapp.ru/",
+      "revenue_scale": "Выручка 115 557 000 ₽ за 2025 год; 8 сотрудников по актуальному профилю РБК Компании; официальный сайт сообщает более 1300 компаний-пользователей системы Altapp.",
+      "signal_level": "S1",
+      "signal_summary": "20 августа 2026 ООО «Селекта Сервис» опубликовало вакансию руководителя отдела продаж B2B/IT. Компания прямо сообщает, что усиливает коммерческое направление с фокусом на рост прямых продаж; роль должна взять ответственность за коммерческий результат, выстроить управляемую систему продаж, усилить команду и постепенно взять операционное управление направлением.",
+      "signal_date": "2026-08-20",
+      "signal_source": "https://nesiditsa.ru/vacancy/136246939",
+      "owner": "Щиров Филипп Викторович — 75%; Воробьев Алексей Олегович — 25%",
+      "ceo": "Щиров Филипп Викторович",
+      "lpr": "Щиров Филипп Викторович",
+      "lpr_role": "Директор и мажоритарный собственник ООО «СЕЛЕКТА СЕРВИС»",
+      "primary_phone": "+7-800-555-63-49",
+      "primary_email": "info@altapp.ru",
+      "contact_form": "https://altapp.ru/",
+      "contact_type": "Official corporate phone + corporate email + website lead form",
+      "contact_source": "Official Altapp website and privacy policy",
+      "number_of_contacts_found": 5,
+      "contacts": [
+        {
+          "value": "+7-800-555-63-49",
+          "channel": "Phone",
+          "type": "Official corporate",
+          "url": "https://altapp.ru/privacy_policy"
+        },
+        {
+          "value": "+7-499-7000-112",
+          "channel": "Phone",
+          "type": "Official corporate",
+          "url": "https://altapp.ru/privacy_policy"
+        },
+        {
+          "value": "+7-831-282-99-01",
+          "channel": "Phone",
+          "type": "Official corporate",
+          "url": "https://altapp.ru/privacy_policy"
+        },
+        {
+          "value": "info@altapp.ru",
+          "channel": "Email",
+          "type": "Official corporate",
+          "url": "https://altapp.ru/"
+        },
+        {
+          "value": "help@altapp.ru",
+          "channel": "Email",
+          "type": "Official support/corporate",
+          "url": "https://altapp.ru/privacy_policy"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «СЕЛЕКТА СЕРВИС» действует; ИНН 5259109389, ОГРН 1135259005760; директор Щиров Филипп Викторович.",
+          "url": "https://companies.rbc.ru/id/1135259005760-ooo-selekta-servis/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "Выручка за 2025 год 115 557 000 ₽; ССЧ 8. Официальный сайт Altapp сообщает более 1300 компаний-пользователей системы.",
+          "url": "https://companies.rbc.ru/id/1135259005760-ooo-selekta-servis/",
+          "source": "РБК Компании + официальный Altapp"
+        },
+        {
+          "type": "BRAND_LEGAL",
+          "claim": "Официальный сайт прямо указывает ООО «СЕЛЕКТА СЕРВИС», ИНН 5259109389, как правообладателя и оператора Altapp.",
+          "url": "https://altapp.ru/",
+          "source": "Official Altapp website"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "20.08.2026 компания ищет руководителя отдела продаж B2B/IT для усиления коммерческого направления, роста прямых продаж и построения управляемой системы продаж.",
+          "url": "https://nesiditsa.ru/vacancy/136246939",
+          "source": "Current job-board vacancy"
+        },
+        {
+          "type": "LPR",
+          "claim": "Щиров Филипп Викторович — директор и собственник 75%; второй учредитель Воробьев Алексей Олегович — 25%.",
+          "url": "https://companies.rbc.ru/id/1135259005760-ooo-selekta-servis/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальные маршруты связи: +7-800-555-63-49, +7-499-7000-112, +7-831-282-99-01, info@altapp.ru, help@altapp.ru и формы сайта.",
+          "url": "https://altapp.ru/privacy_policy",
+          "source": "Official Altapp website"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "5259109389",
+        "ogrn": "1135259005760",
+        "legal_name": "ООО СЕЛЕКТА СЕРВИС",
+        "brand_domain": "ALTAPP|altapp.ru"
+      },
+      "dedup_check": {
+        "repository_exact_inn_search": "no match before staging",
+        "checked_against_source_head": "0bc8afe707f7df833c06a85b8adea694c704d13c"
+      },
+      "consulting_hypothesis": "Систематизация B2B SaaS-продаж: рост прямого канала, сегментация и приоритизация ICP, CRM/воронка/KPI, управленческий ритм отдела, партнерский канал и прогнозируемый коммерческий pipeline.",
+      "final_worker_status": "QUALIFIED_FOR_CANONICAL_RECHECK"
+    }
+  ]
+}
