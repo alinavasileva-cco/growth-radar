@@ -5,7 +5,7 @@
   "workers": [
     {
       "path": "data/pending_workers/jobs/20260827-142846-jobs.json",
-      "blob_sha": "d74adf3b83392f7482894c947fe40716ac48d94c",
+      "blob_sha": "4e463ca926f009dfc3432d6324593db376c318da",
       "result": "CONSUMED",
       "note": "ПНК-Регион / ООО «ПНК-РЕГИОН» passed canonical re-check and was integrated physically as N5K-0619 in RUN 453. Immutable worker evidence retained in place for audit."
     }
