@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-27T22:10:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260827-459`  
+**Версия:** 2026-08-27T23:20:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260827-460`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **476 / 476**  
+**Физически подтверждённый canonical/contactable:** **477 / 477**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **524**  
-**Осталось до 5000:** **4524**  
+**Осталось до 1000:** **523**  
+**Осталось до 5000:** **4523**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence и pending;
-- physical canonical/contactable count: **476 / 476**;
+- physical canonical/contactable count: **477 / 477**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260827-459`;
+- последний завершённый RUN: `N5K-20260827-460`;
 - `N5K-20260827-454R1` — repair того же операционного цикла: первоначально canonical writer ошибочно трактовал ИП как запрещённую форму, хотя текущая конфигурация явно допускает `юрлицо/ИП`; S.Lavia была интегрирована без изменения критериев;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
@@ -113,6 +113,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260827-457`: 476/476, +3, PASS, orphan 0/0.
 - `N5K-20260827-458`: 476/476, +0, PASS, orphan 0/0.
 - `N5K-20260827-459`: 476/476, +0, PASS, orphan 0/0.
+- `N5K-20260827-460`: 477/477, +1, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260827-449
 Canonical/contactable: 455/455. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
@@ -144,15 +145,12 @@ Canonical/contactable: 473/473. Integrity PASS. Orphan contacts/evidence: 0/0. O
 ## Latest verified run N5K-20260827-457
 Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260827-458
 Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
 
 ## RUN 458 — physical dedup repair
 
 301 distinct persisted raw identities were processed across jobs (81), industry (120) and canonical low-overlap industry (100). VICTORY group passed worker deep-check but was rejected by the final physical canonical guard because it already exists as N5K-0072 with matching INN 7734451120, OGRN 1227700076780, exact legal name and brand+domain. Net physically integrated: 0. Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
-
 
 ## Latest verified run N5K-20260827-459
 Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
@@ -161,6 +159,9 @@ Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 307 source-level raw identities were evaluated across industry/20260827-202618 (100), jobs/20260827-212043 (47), industry/20260827-212737 (100) and canonical low-overlap PRODЭКСПО pages 1–6 (60). This number is not claimed as 307 globally proven distinct companies because complete canonical identity keys are unavailable for every early-rejected raw item. FEDAST passed the worker deep funnel but the final physical canonical guard matched the existing company by INN 7720478065, OGRN 1197746494461 and exact legal entity, so net canonical qualified and physically integrated are 0. Final funnel: raw 307 → fast gate 8 → size 3 → legal 3 → signal 1 → LPR 1 → contact 1 → net qualified 0; physical duplicates 1; excluded 306. Canonical/contactable: 476/476. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260827-460
 Canonical/contactable: 477/477. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+## RUN 460 — canonical integration
+
+Fresh worker pool after RUN 459: jobs/20260827-222430 reported 80 raw employers and 1 worker-qualified candidate; industry/20260827-222525 reported 100 raw and 0 qualified. ЕЗВО / ООО «ЕКАТЕРИНБУРГСКИЙ ЗАВОД ВЫСОКОВОЛЬТНОГО ОБОРУДОВАНИЯ» passed canonical recheck and physical pre-write dedup and was integrated as N5K-0634, INN 6679031070, OGRN 1136679004681. Final funnel: source-level raw 180 → fast gate 6 → size 2 → legal 2 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 1; duplicates 0; excluded 179. The 180 raw figure is not claimed as 180 globally proven distinct companies across workers because a complete cross-worker identity index is unavailable. Target 300/400–800 globally auditable raw was not reached; quality gates were not weakened. Canonical/contactable: 477/477. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
