@@ -1,8 +1,102 @@
 {
-  "run_id": "N5K-20260827-455",
-  "updated_at": "2026-08-27T17:05:48+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260827-455 integrated physically; canonical/contactable 471/471; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260827-456",
+  "updated_at": "2026-08-27T18:00:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "campaign_id": "new_5000",
+  "qualified_staged_not_counted": 2,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0629",
+      "Brand": "Первый Снег",
+      "Legal Name": "ООО «ПЕРВЫЙ СНЕГ»",
+      "INN": "5473007379",
+      "OGRN/OGRNIP": "1225400050754",
+      "Region": "Новосибирская область",
+      "City": "Бердск",
+      "Segment": "Подарочная упаковка / картон / B2B-производство",
+      "Website": "https://1sneg.ru/",
+      "Revenue/Scale": "Выручка 227,812 млн ₽ за 2025 год по свежему worker-профилю; официальный сайт подтверждает массовое производство подарочной упаковки и ежегодное расширение команды на 14–16 человек.",
+      "Signal Level": "S1",
+      "Signal Summary": "Официальный раздел вакансий 2026 подтверждает плановую доукомплектацию и ежегодное увеличение команды примерно на 14–16 человек; worker дополнительно зафиксировал свежую вакансию руководителя отдела продаж с B2B-задачами.",
+      "Signal Date": "2026-07-10",
+      "Signal Source": "https://1sneg.ru/job",
+      "Owner": "Гордиенко Алексей Валерьевич — 100%",
+      "CEO": "Гордиенко Алексей Валерьевич",
+      "LPR": "Гордиенко Алексей Валерьевич",
+      "LPR Role": "Генеральный директор / единственный учредитель",
+      "Primary Phone": "+7 383 209-00-06",
+      "Primary Email": "mail@1sneg.ru",
+      "HH Contact": "",
+      "Contact Form": "https://1sneg.ru/contact",
+      "Contact Type": "official company phone + email + contact form",
+      "Contact Source": "Official Первый Снег contacts",
+      "Consulting Hypothesis": "Масштабирование B2B-продаж и коммерческого контура: pipeline, команда продаж, key accounts, региональные представители и KPI.",
+      "contacts": [
+        {"value": "+7 383 209-00-06", "channel": "phone", "type": "official_company_phone", "source": "Official Первый Снег contacts", "url": "https://1sneg.ru/contact", "is_lpr": false, "notes": "Corporate route"},
+        {"value": "+7 495 999-64-06", "channel": "phone", "type": "official_company_phone", "source": "Official Первый Снег contacts", "url": "https://1sneg.ru/contact", "is_lpr": false, "notes": "Moscow route"},
+        {"value": "mail@1sneg.ru", "channel": "email", "type": "official_company_email", "source": "Official Первый Снег contacts", "url": "https://1sneg.ru/contact", "is_lpr": false, "notes": "Corporate route"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SIZE", "claim": "Действующее ООО ПЕРВЫЙ СНЕГ; ИНН 5473007379, ОГРН 1225400050754; worker зафиксировал выручку 227,812 млн ₽ за 2025 год.", "url": "https://companies.rbc.ru/id/1225400050754-obschestvo-s-ogranichennoj-otvetstvennostyu-pervyij-sneg/", "source": "worker jobs / public registry profile"},
+        {"type": "BRAND_LEGAL", "claim": "Официальная страница 1sneg.ru прямо указывает ООО «ПЕРВЫЙ СНЕГ», ИНН 5473007379 и ОГРН 1225400050754.", "url": "https://1sneg.ru/contact", "source": "Official Первый Снег site"},
+        {"type": "SIGNAL", "claim": "Официальный сайт 2026 подтверждает ежегодное расширение команды примерно на 14–16 человек и плановую доукомплектацию; worker зафиксировал свежую вакансию руководителя отдела продаж.", "url": "https://1sneg.ru/job", "source": "Official Первый Снег jobs / jobs worker"},
+        {"type": "LPR", "claim": "Гордиенко Алексей Валерьевич подтвержден как генеральный директор и единственный учредитель.", "url": "https://reputation.ru/ogrn/1225400050754", "source": "Current registry profile"},
+        {"type": "CONTACT", "claim": "Официальные телефоны и корпоративный email mail@1sneg.ru опубликованы на странице контактов компании.", "url": "https://1sneg.ru/contact", "source": "Official Первый Снег contacts"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0630",
+      "Brand": "ЭКРОСХИМ / ECROS",
+      "Legal Name": "ООО «ЭКРОСХИМ»",
+      "INN": "7810235934",
+      "OGRN/OGRNIP": "1037821024394",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "Лабораторное и аналитическое оборудование / промышленный B2B",
+      "Website": "https://ecohim.ru/",
+      "Revenue/Scale": "Выручка около 1,51 млрд ₽ за 2025 год и 224 сотрудника по свежему worker-профилю; действующее частное производственное ООО.",
+      "Signal Level": "S1",
+      "Signal Summary": "В 2025–2026 подтверждены инвестпроект производства аналитического оборудования в ОЭЗ Санкт-Петербурга стоимостью более 1 млрд ₽, текущий рост продаж собственного оборудования и новые разработки рентгеновского аналитического оборудования.",
+      "Signal Date": "2026-03-12",
+      "Signal Source": "https://www.ndt-russia.ru/ru-RU/press/news/10472.aspx",
+      "Owner": "Арапов Виталий Олегович — 100%",
+      "CEO": "Арапов Виталий Олегович",
+      "LPR": "Арапов Виталий Олегович",
+      "LPR Role": "Генеральный директор / собственник 100%",
+      "Primary Phone": "+7 (812) 322-96-00",
+      "Primary Email": "info@ecohim.ru",
+      "HH Contact": "",
+      "Contact Form": "https://ecohim.ru/",
+      "Contact Type": "official company phone + corporate email",
+      "Contact Source": "ECROS corporate contact / Росхимреактив",
+      "Consulting Hypothesis": "Коммерциализация новых аналитических продуктов и новых мощностей: B2B-сегментация, key accounts, pipeline, продуктовый маркетинг и рост продаж.",
+      "contacts": [
+        {"value": "+7 (812) 322-96-00", "channel": "phone", "type": "official_company_phone", "source": "ECROS corporate contact", "url": "https://www.ecopribor.com/ru/contact", "is_lpr": false, "notes": "Corporate route"},
+        {"value": "info@ecohim.ru", "channel": "email", "type": "official_company_email", "source": "ECROS corporate contact", "url": "https://www.ecopribor.com/ru/contact", "is_lpr": false, "notes": "Corporate route"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SIZE", "claim": "Действующее ООО ЭКРОСХИМ; ИНН 7810235934, ОГРН 1037821024394; 224 сотрудника в 2025 году, свежая отчетность за 2025 год сдана 30.03.2026.", "url": "https://www.companium.ru/id/1037821024394-ehkroskhim", "source": "Current registry profile / industry worker"},
+        {"type": "SIGNAL", "claim": "В 2026 компания выводит новые разработки рентгеновского аналитического оборудования; worker дополнительно подтвердил текущий инвестиционный и hiring-контур роста.", "url": "https://www.ndt-russia.ru/ru-RU/press/news/10472.aspx", "source": "NDT Russia 2026 / industry worker"},
+        {"type": "LPR", "claim": "Арапов Виталий Олегович подтвержден как генеральный директор и единственный учредитель 100%.", "url": "https://www.companium.ru/id/1037821024394-ehkroskhim", "source": "Current registry profile"},
+        {"type": "CONTACT", "claim": "Корпоративный телефон +7 (812) 322-96-00 и email info@ecohim.ru опубликованы в корпоративном контуре группы ЭКРОС.", "url": "https://www.ecopribor.com/ru/contact", "source": "ECROS corporate contact"}
+      ]
+    }
+  ],
+  "funnel": {
+    "discovered": 181,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 179
+  },
+  "lane_metrics": [
+    {"lane": "jobs/20260827-171821", "raw_surfaced": 80, "worker_fast_gate": 4, "worker_deep_check": 3, "worker_size": 2, "worker_legal": 2, "worker_signal": 1, "worker_lpr": 1, "worker_contact": 1, "worker_qualified": 1, "canonical_rechecked": 1, "canonical_qualified": 1, "candidate": "Первый Снег", "duplicate_early_reject_split": null},
+    {"lane": "industry/20260827-172745", "raw_distinct_persisted": 101, "worker_fast_gate": 1, "worker_size": 1, "worker_legal": 1, "worker_signal": 1, "worker_lpr": 1, "worker_contact": 1, "worker_qualified": 1, "canonical_rechecked": 1, "canonical_qualified": 1, "candidate": "ЭКРОСХИМ / ECROS", "lane_stop_rule": ">70% duplicate+early reject on saturated source samples; rotated"}
+  ],
+  "notes": "Canonical writer re-read fresh main/config/runtime and physical masters, processed the two fresh immutable worker staging files after RUN 455, globally deduplicated the two qualified identities and repeated exact INN/OGRN/legal/brand-domain checks before staging: no canonical match found for 5473007379 / 1225400050754 / Первый Снег|1sneg.ru or 7810235934 / 1037821024394 / ЭКРОСХИМ|ecohim.ru. Worker-level raw surfaced is 181 (80 jobs + 101 industry), but global distinctness across the full jobs pool cannot be proven because the jobs worker did not persist all 80 raw identities; this is not claimed as 181 globally distinct. Canonical duplicates among qualified candidates: 0. No quality gate was weakened. Outreach 0."
 }
