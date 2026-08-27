@@ -1,72 +1,70 @@
 {
-  "run_id": "N5K-20260827-456",
+  "run_id": "N5K-20260827-457",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T18:00:00+03:00",
+  "updated_at": "2026-08-27T19:15:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 471,
+    "baseline_count": 473,
     "target_count": 5000,
-    "current_canonical_count": 473,
-    "current_contactable_count": 473,
-    "progress_added": 2,
-    "remaining": 4527
+    "current_canonical_count": 476,
+    "current_contactable_count": 476,
+    "progress_added": 3,
+    "remaining": 4524
   },
   "funnel": {
-    "discovered": 181,
+    "discovered": 153,
     "fast_gate_passed": 5,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
     "duplicates": 0,
-    "excluded": 179
+    "excluded": 150
   },
   "lane_metrics": [
     {
-      "lane": "jobs/20260827-171821",
-      "raw_surfaced": 80,
-      "worker_fast_gate": 4,
+      "lane": "jobs/20260827-182146",
+      "raw_surfaced": 52,
       "worker_deep_check": 3,
-      "worker_size": 2,
-      "worker_legal": 2,
-      "worker_signal": 1,
-      "worker_lpr": 1,
-      "worker_contact": 1,
       "worker_qualified": 1,
       "canonical_rechecked": 1,
       "canonical_qualified": 1,
-      "candidate": "Первый Снег",
-      "duplicate_early_reject_split": null
+      "candidate": "СОРСО-СТР",
+      "note": "Worker persisted all 52 employer-level raw identities; target 80 was not fabricated."
     },
     {
-      "lane": "industry/20260827-172745",
+      "lane": "industry/20260827-182528",
       "raw_distinct_persisted": 101,
-      "worker_fast_gate": 1,
-      "worker_size": 1,
-      "worker_legal": 1,
-      "worker_signal": 1,
-      "worker_lpr": 1,
-      "worker_contact": 1,
-      "worker_qualified": 1,
-      "canonical_rechecked": 1,
-      "canonical_qualified": 1,
-      "candidate": "ЭКРОСХИМ / ECROS",
-      "lane_stop_rule": ">70% duplicate+early reject on saturated source samples; rotated"
+      "worker_fast_gate": 2,
+      "worker_size": 2,
+      "worker_legal": 2,
+      "worker_signal": 2,
+      "worker_lpr": 2,
+      "worker_contact": 2,
+      "worker_qualified": 2,
+      "canonical_rechecked": 2,
+      "canonical_qualified": 2,
+      "candidates": [
+        "Владимирский хлебокомбинат / DeLavant",
+        "ЧЕЛНЫ-ХЛЕБ"
+      ],
+      "lane_stop_rule": ">70% duplicate+early reject on saturated first-20 source samples; sources rotated"
     }
   ],
   "qualified_companies": [
-    "Первый Снег",
-    "ЭКРОСХИМ / ECROS"
+    "СОРСО-СТР",
+    "Владимирский хлебокомбинат / DeLavant",
+    "ЧЕЛНЫ-ХЛЕБ"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "473_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "473_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "476_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "476_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
