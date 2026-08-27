@@ -1,8 +1,96 @@
 {
-  "run_id": "N5K-20260827-460",
-  "updated_at": "2026-08-27T23:18:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260827-460 integrated physically; canonical/contactable 477/477; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260827-461",
+  "updated_at": "2026-08-27T23:59:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "worker_source_raw": 180,
+    "fast_gate_passed": 5,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified_before_physical_write": 1,
+    "physical_duplicates_found": 0
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs/20260827-232350",
+      "raw": 80,
+      "fast_gate": 5,
+      "size": 2,
+      "legal": 2,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "worker_qualified": 1,
+      "canonical_prewrite_qualified": 1
+    },
+    {
+      "lane": "industry/20260827-233200",
+      "raw_distinct": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0635",
+      "Brand": "Сатурн / Сатурн Башкирия",
+      "Legal Name": "ООО «САТУРН СТРОЙМАРКЕТ БАШКИРИЯ»",
+      "INN": "0277918390",
+      "OGRN/OGRNIP": "1170280005092",
+      "Legal Status": "Действует",
+      "Region": "Республика Башкортостан",
+      "City": "Уфа",
+      "Segment": "Строительные и отделочные материалы / B2B и розница",
+      "Website": "https://ufa.saturn.net/",
+      "Revenue/Scale": "Выручка за 2025 год 937,9 млн ₽; 585 сотрудников по актуальному профилю контрагента.",
+      "Signal Level": "S1",
+      "Signal Summary": "19.08.2026 работодатель объявил конкурс на руководителя отдела продаж в Уфе; в задачи входят управление отделом до 10 менеджеров и выполнение коммерческих показателей по объёму продаж и доходности.",
+      "Signal Date": "2026-08-19",
+      "Signal Source": "https://dreamjob.ru/employers/116298/vakansii/132606246",
+      "Owner": "Щепотьев Алексей Константинович — 100%",
+      "CEO": "Щепотьев Алексей Константинович",
+      "LPR": "Щепотьев Алексей Константинович",
+      "LPR Role": "Директор / единственный учредитель",
+      "Primary Phone": "+7 (347) 279-83-88",
+      "Primary Email": "cs@ufa.saturn.net",
+      "Contact Form": "https://ufa.saturn.net/shops/",
+      "Contact Type": "official company phone + corporate email + official regional site",
+      "Contact Source": "Official Saturn regional site",
+      "Number Of Contacts Found": 2,
+      "Consulting Hypothesis": "Масштабирование отдела продаж и коммерческой эффективности: структура команды, KPI, воронка, доходность и управление региональными B2B-продажами.",
+      "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ",
+      "dedup_guard": {
+        "checked_against_head": "3837faf09b5e5e3da008cdfbaa0f69c8fdd858b1",
+        "physical_master_inn_match": false,
+        "physical_master_ogrn_match": false,
+        "final_guard_required_immediately_before_write": true
+      },
+      "contacts": [
+        {"channel":"phone","value":"+7 (347) 279-83-88","type":"OFFICIAL_COMPANY","source":"Official Saturn regional site","url":"https://ufa.saturn.net/shops/","is_lpr":false},
+        {"channel":"email","value":"cs@ufa.saturn.net","type":"OFFICIAL_COMPANY","source":"Official Saturn regional site","url":"https://ufa.saturn.net/shops/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО САТУРН СТРОЙМАРКЕТ БАШКИРИЯ действует; ИНН 0277918390; ОГРН 1170280005092.","url":"https://companies.rbc.ru/id/1170280005092-ooo-saturn-strojmarket-bashkiriya/","source":"РБК Компании"},
+        {"type":"SIZE","claim":"Выручка за 2025 год 937,9 млн ₽; штат 585 человек.","url":"https://www.moedelo.org/kontragenty/ogrn/1170280005092","source":"Моё дело"},
+        {"type":"SIGNAL","claim":"19.08.2026 открыта вакансия руководителя отдела продаж с управлением отделом до 10 менеджеров и ответственностью за объём продаж и доходность.","url":"https://dreamjob.ru/employers/116298/vakansii/132606246","source":"DreamJob"},
+        {"type":"LPR","claim":"Щепотьев Алексей Константинович подтверждён как директор и единственный учредитель.","url":"https://companies.rbc.ru/id/1170280005092-ooo-saturn-strojmarket-bashkiriya/","source":"РБК Компании"},
+        {"type":"CONTACT","claim":"Официальный региональный сайт публикует +7 (347) 279-83-88 и cs@ufa.saturn.net.","url":"https://ufa.saturn.net/shops/","source":"Official Saturn regional site"}
+      ]
+    }
+  ],
+  "canonical_count_before_write": 477,
+  "contactable_count_before_write": 477,
+  "qualified_staged_not_counted_note": "Candidate is verified but is not counted until physically integrated into canonical/contactable masters, contacts/evidence, shards and run artifacts and integrity is rechecked.",
+  "worker_staging_consumed": false,
+  "outreach_performed": false
 }
