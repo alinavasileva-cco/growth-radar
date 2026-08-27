@@ -1,0 +1,62 @@
+name: Growth Radar sync RUN 462 config
+on:
+  push:
+    paths:
+      - '.github/workflows/growth_radar_sync_run462.yml'
+permissions:
+  contents: write
+concurrency:
+  group: growth-radar-sync-run462
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Synchronize CURRENT_WORKING_CONFIG top summary
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import datetime, timezone, timedelta
+          p=Path('CURRENT_WORKING_CONFIG.md')
+          s=p.read_text(encoding='utf-8')
+          now=datetime.now(timezone(timedelta(hours=3))).isoformat(timespec='seconds')
+          lines=s.splitlines()
+          for i,line in enumerate(lines):
+              if line.startswith('**Версия:**'):
+                  lines[i]=f'**Версия:** {now}  '
+                  break
+          s='\n'.join(lines) + ('\n' if s.endswith('\n') else '')
+          replacements=[
+            ('**Последний полностью завершённый RUN:** `N5K-20260827-461`','**Последний полностью завершённый RUN:** `N5K-20260828-462`'),
+            ('**Физически подтверждённый canonical/contactable:** **478 / 478**','**Физически подтверждённый canonical/contactable:** **479 / 479**'),
+            ('**Осталось до 1000:** **522**','**Осталось до 1000:** **521**'),
+            ('**Осталось до 5000:** **4522**','**Осталось до 5000:** **4521**'),
+            ('- physical canonical/contactable count: **478 / 478**;','- physical canonical/contactable count: **479 / 479**;'),
+            ('- последний завершённый RUN: `N5K-20260827-461`;','- последний завершённый RUN: `N5K-20260828-462`;')
+          ]
+          for old,new in replacements:
+              if old not in s:
+                  raise SystemExit(f'Expected config marker not found: {old}')
+              s=s.replace(old,new,1)
+          marker='- `N5K-20260827-461`: 478/478, +1, PASS, orphan 0/0.'
+          newrow='- `N5K-20260828-462`: 479/479, +1, PASS, orphan 0/0.'
+          if newrow not in s:
+              if marker not in s:
+                  raise SystemExit('RUN461 list marker not found')
+              s=s.replace(marker, marker+'\n'+newrow, 1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit synchronized config
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add CURRENT_WORKING_CONFIG.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'growth-radar: sync config summary through RUN 462'
+          git push
