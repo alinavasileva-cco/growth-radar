@@ -170,3 +170,7 @@ Fresh worker pool after RUN 459: jobs/20260827-222430 reported 80 raw employers 
 
 ## Latest verified run N5K-20260827-461
 Canonical/contactable: 478/478. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260828-462
+Canonical/contactable: 479/479. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
