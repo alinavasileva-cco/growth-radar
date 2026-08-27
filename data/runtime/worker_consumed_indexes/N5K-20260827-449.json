@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260827-449",
+  "updated_at": "2026-08-27T11:03:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-103257-jobs.json",
+      "blob_sha": "f64c244111d1cb2eff6c3e374de0bacacc421df0",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "note": "Worker-qualified Бытовки в Дом / Комфорт Групп and ПРОФ-ТОН ГРУПП were already canonical from prior completed runs; neither was re-integrated."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-103647-industry.json",
+      "blob_sha": "3fcd3dca0760b87fa46ebd7fee591e4349f3b96a",
+      "result": "CONSUMED",
+      "note": "Рутектор / Rutector integrated as N5K-0609 after physical canonical dedup."
+    },
+    {
+      "path": "data/pending_workers/growth_news/20260827-103720-growth-news.json",
+      "blob_sha": "0d258792ecfabc76e9037ac5ff23ecf92fffbc93",
+      "result": "CONSUMED",
+      "note": "ULTRAFILAMENT / Союзтекстиль-СТ and Енисейлесозавод integrated as N5K-0610 and N5K-0611 after physical canonical dedup."
+    }
+  ],
+  "outreach_sent": 0
+}
