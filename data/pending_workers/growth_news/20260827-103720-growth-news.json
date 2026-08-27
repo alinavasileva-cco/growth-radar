@@ -1,0 +1,160 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-27T10:37:20+03:00",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-448",
+    "canonical_count": 452,
+    "contactable_count": 452,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "head_before_write": "3959ab76a04eeae9d5a78ef9a17ac3d035ab24f4"
+  },
+  "worker_funnel": {
+    "raw_distinct_auditable_minimum": 68,
+    "fast_gate_passed": 9,
+    "size_passed": 5,
+    "legal_passed": 4,
+    "signal_passed": 4,
+    "lpr_passed": 3,
+    "contact_passed": 2,
+    "qualified": 2,
+    "target_raw_100_180_met": false,
+    "note": "Fresh August-July-June 2026 production, expansion, modernization and investment sources were rotated across low-overlap manufacturing/regional signals. The auditable minimum counts only distinct named Russian companies actually inspected; search-result rows, unnamed projects, obvious public/state-controlled groups, and repeated companies were not counted. The requested 100-180 raw target was not reached in this execution window; quality gates were not weakened."
+  },
+  "qualified": [
+    {
+      "brand": "ULTRAFILAMENT / Союзтекстиль-СТ",
+      "legal_name": "ООО «СОЮЗТЕКСТИЛЬ-СТ»",
+      "inn": "5031094336",
+      "ogrn": "1105031004935",
+      "legal_status": "active",
+      "private_company": true,
+      "size": {
+        "metric": "current_headcount_and_production_scale",
+        "headcount_current": 250,
+        "production_tons_per_year": 4500,
+        "production_area_sqm": 50000,
+        "source": "https://ultrafilament.ru/",
+        "note": "Official site currently states 250 professionals, more than 4,500 tonnes of output per year and 50,000 m² production area. RBC company data also identifies the company as active as of 24 August 2026 and reports historical revenue of RUB 1.923615bn for 2023; current-scale decision relies on the fresher official operating metrics rather than stale revenue."
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-07-16",
+        "summary": "ULTRAFILAMENT launched production of Spunlace nonwoven material as another stage of a large investment program. The official company site also reports that the modernization program expanded technical fabrics and geotextile capacity from 3m to 7m m²/year with RUB 1.9bn total investment.",
+        "source": "https://ultrafilament.ru/"
+      },
+      "lpr": {
+        "name": "Анкудинов Юрий Валентинович",
+        "role": "Генеральный директор; учредитель 100%",
+        "source": "https://companies.rbc.ru/amp/ogrn/1105031004935/"
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "email": "info@ultrafilament.ru",
+        "phone": "+7 (800) 505-90-39",
+        "website": "https://ultrafilament.ru/",
+        "source": "https://ultrafilament.ru/contact/"
+      },
+      "dedup_keys": {
+        "inn": "5031094336",
+        "ogrn": "1105031004935",
+        "legal_name": "ООО СОЮЗТЕКСТИЛЬ-СТ",
+        "brand_domain": "ULTRAFILAMENT|ultrafilament.ru"
+      },
+      "dedup_check": {
+        "repository_search_brand_inn_ogrn": "no_match",
+        "checked_immediately_before_write": true
+      },
+      "evidence_urls": [
+        "https://ultrafilament.ru/",
+        "https://ultrafilament.ru/contact/",
+        "https://ultrafilament.ru/kompaniya-ultrafilament-uvelichila-proizvodstvennye-moshhnosti-po-vypusku-tehnicheskih-tkanej-i-geotekstilya-s-3-do-7-mln-kv-m-v-god/",
+        "https://frprf.ru/press-tsentr/novosti/v-kurskoy-oblasti-zaemshchik-frp-zapustil-proizvodstvo-netkanogo-polotna-dlya-meditsiny-i-gigieny/",
+        "https://companies.rbc.ru/amp/ogrn/1105031004935/"
+      ]
+    },
+    {
+      "brand": "Енисейлесозавод",
+      "legal_name": "ООО «ЕНИСЕЙЛЕСОЗАВОД»",
+      "inn": "2464056818",
+      "ogrn": "1042402516848",
+      "legal_status": "active",
+      "private_company": true,
+      "size": {
+        "metric": "revenue_2025",
+        "value_rub": 599416000,
+        "profit_2025_rub": 125582000,
+        "source": "https://companies.rbc.ru/id/1042402516848-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-enisejlesozavod/",
+        "note": "2025 revenue RUB 599.416m and profit RUB 125.582m; company is operating in industrial timber processing."
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-06-15",
+        "summary": "The company expanded from timber harvesting into deeper processing and launched production of pellets and wood briquetted charcoal in Lesosibirsk with support from the Krasnoyarsk regional Industrial Development Fund.",
+        "source": "https://frp-krsk.ru/watch-news?id=57"
+      },
+      "lpr": {
+        "name": "Барышев Алексей Петрович",
+        "role": "Директор; учредитель",
+        "source": "https://saby.ru/profile/2464056818-245401001"
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "email": "elz1992@bk.ru",
+        "phone": "+7 391 205-03-40",
+        "website": "https://eniseylesozavod.ru/",
+        "source": "https://eniseylesozavod.ru/"
+      },
+      "dedup_keys": {
+        "inn": "2464056818",
+        "ogrn": "1042402516848",
+        "legal_name": "ООО ЕНИСЕЙЛЕСОЗАВОД",
+        "brand_domain": "Енисейлесозавод|eniseylesozavod.ru"
+      },
+      "dedup_check": {
+        "repository_search_brand_inn_ogrn": "no_match",
+        "checked_immediately_before_write": true
+      },
+      "evidence_urls": [
+        "https://frp-krsk.ru/watch-news?id=57",
+        "https://expertsibdv.com/news/v-lesosibirske-zapustili-proizvodstvo-pellet-i-drevesnogo-uglya-iz-otkhodov-lesopererabotki/",
+        "https://companies.rbc.ru/id/1042402516848-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-enisejlesozavod/",
+        "https://saby.ru/profile/2464056818-245401001",
+        "https://eniseylesozavod.ru/"
+      ]
+    }
+  ],
+  "excluded_examples": [
+    {
+      "company": "СИБ-АГРО ОЙЛ",
+      "reason": "strong new-production signal exists, but 2025 operating revenue is only about RUB 30k; fails current size gate"
+    },
+    {
+      "company": "IEK Group",
+      "reason": "fresh expansion signal exists, but group scale/context is outside current target fit"
+    },
+    {
+      "company": "ЭкоНива",
+      "reason": "fresh expansion signal exists, but group scale is outside current target fit"
+    },
+    {
+      "company": "Роснефть",
+      "reason": "public/state strategic group context outside target fit"
+    },
+    {
+      "company": "Кировский завод / Завод буровых технологий",
+      "reason": "fresh production signal inspected, but current legal/target-scale/private-company chain was not closed sufficiently in this pass"
+    },
+    {
+      "company": "Упаковочные системы",
+      "reason": "fresh modernization signals exist, but target-fit/private ownership and current size/LPR chain was not fully closed in this pass"
+    },
+    {
+      "company": "Лодка44",
+      "reason": "fresh expansion signal exists, but current size/legal/LPR/contact chain was not fully closed in this pass"
+    }
+  ],
+  "outreach_sent": 0,
+  "canonical_write_performed": false
+}
