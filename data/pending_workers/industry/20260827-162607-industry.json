@@ -1,0 +1,159 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T16:26:07+03:00",
+  "source_head_before_write": "82c72b9f3c4658580343976d4e467db71bdd1b38",
+  "canonical_baseline": {
+    "run": "N5K-20260827-454R1",
+    "canonical": 469,
+    "contactable": 469,
+    "integrity": "PASS",
+    "source": "CURRENT_WORKING_CONFIG.md at source_head_before_write"
+  },
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "raw_pool": {
+    "distinct_count": 100,
+    "method": "100 distinct company/brand names were assembled from current 2026 industrial exhibitor and participant sources. Duplicate brand names across sources were removed before counting. Cheap FAST GATE was applied conservatively: only candidates with a sufficiently plausible Russian private-company identity, current scale and a probable current S1-S3 growth/operational signal were advanced; no missing facts were inferred.",
+    "sources": [
+      {
+        "name": "MiningWorld Russia 2026 participant announcements and press release",
+        "urls": [
+          "https://miningworld.ru/ru/media/news/2026/february/25/opublikovan-spisok-uchastnikov-miningworld-russia-2026/",
+          "https://miningworld.ru/ru/media/news/2026/april/14/press-reliz-vystavki/"
+        ],
+        "raw": 50,
+        "duplicates_plus_early_rejects": 50,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "duplicate+early reject >70% on the first screened batch; rotated away"
+      },
+      {
+        "name": "AIRVent 2026 participant list and new-participant digests",
+        "urls": [
+          "https://airventmoscow.ru/ru/about/news/2025/december/10/airvent-vystavka-2026/",
+          "https://airventmoscow.ru/ru/about/news/2026/january/21/novye-uchastniki-airvent-2026/",
+          "https://airventmoscow.ru/ru/about/news/2026/march/12/uchastniki-airvent-award-2026/"
+        ],
+        "raw": 44,
+        "duplicates_plus_early_rejects": 43,
+        "duplicate_reject_rate": 0.9773,
+        "fast_gate_survivors": 1,
+        "qualified": 1,
+        "stop_reason": "duplicate+early reject >70%; one candidate had complete current evidence and was advanced"
+      },
+      {
+        "name": "ExpoElectronica 2026 participant digests",
+        "urls": [
+          "https://expoelectronica.ru/ru/news/2026/march/13/uchastniki-expoelectronica-2026/",
+          "https://expoelectronica.ru/ru/news/2026/march/25/uchastniki-expoelectronica-2026/"
+        ],
+        "raw": 6,
+        "duplicates_plus_early_rejects": 6,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "small low-overlap tail used after source rotation; no candidate advanced without complete cheap-gate evidence"
+      }
+    ],
+    "raw_candidates": [
+      "Горное Обеспечение и Комплектация","Hailstone Innovations","Sever Minerals","TEM Partner","V2 GROUP","Алмазгеобур","Анжеромаш","БМХ РУС","ГК Цифра","Гормаш Глобал","Давтех","КВИНТМАДИ","МЗ ПОТОК","НПО Аконит","НПО Пассат","НТЦ Бакор","Тяжмаш","ЭВОБЛАСТ","ЭЛЕМЕТ","GoGlobal","Microtex Energy","SIDDHARTH ALLOYS","TAE SUNG","Анжерский машиностроительный завод","ВиброСпецТехника","ГеоСибирь","Горнодобывающее оборудование Экселенс","Омский завод мелющих шаров","Рустех","СИМЭКС","ТЕХНОЛИНК","Форус","Электронмаш","А9 Системс","АгроПромШина","АПЕКС","Геомаш","Группа компаний АСТ","Группа компаний ПИР","ДОРИНГ","ИСТК","КемИнС","КМЗКО","Кронштадт","М4Е","Металлист","ПОМБУР","РТ-Инжиниринг","Специальные решения","СТРОЙКОМПОЗИТ-Н","Buhler-AHS","Belluna","Blizzard Lufttechnik","Clivet","Centek Air","Dantex Group","Daichi","Era Group","Hiref Rus","Hogart","Hoocon","Minibox","Prime","Prostor","Termoflow","Tica Pro","Tion","ZIP24","Бриз – Климатические системы","Веза","Вентарт Групп","ГалВент","Завод Террафриго","ИЭМЗ Купол","К-Трейд","НордИндастри","СВОК","СТ Радиатор","Тепломаш","ГК Апикс","ГК Аяк","ГК Империя Климата","ГК Ровен","Ялка","ВАЙБОС","ПП ТЕХВЕНТ","Теплоагрегат","АСК","ROTADO","KOMFOVENT","Dalgakiran Pumps","Ангара","ПромВентХолод","Климат-Снаб","ГетЧипс","ПЛАНАР","Лазерный Центр","ИнноДрайв","СибЭлКом-Логистик","ПРОМИНТ"
+    ],
+    "global_additivity_note": "This worker raw count must not be added arithmetically to other worker pools unless the canonical writer performs cross-worker identity dedup."
+  },
+  "funnel": {
+    "raw": 100,
+    "duplicates_plus_early_rejects": 99,
+    "fast_gate": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "BREEZ / БРИЗ — Климатические системы",
+      "legal_name": "ООО «КОМПАНИЯ БИС»",
+      "inn": "7706739445",
+      "ogrn": "1107746518626",
+      "country": "Россия",
+      "region": "Москва",
+      "city": "Москва",
+      "status": "Действует",
+      "private_company": true,
+      "website": "https://breez.ru/",
+      "size": {
+        "status": "PASS",
+        "basis": "Актуальный масштаб подтвержден бухгалтерскими данными за 2025 год: выручка 22.531576 млрд ₽; компания действует на 27.08.2026. Дополнительные свежие источники указывают крупный штат; для решения использован прежде всего подтвержденный финансовый масштаб 2025 года.",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1107746518626-ooo-kompaniya-bis/",
+          "https://www.moedelo.org/kontragenty/ogrn/1107746518626",
+          "https://breez.ru/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "current_owner_lpr": "Устинов Вадим Евгеньевич",
+        "owner_share": "100%",
+        "basis": "ООО «Компания БИС» действует; ИНН 7706739445, ОГРН 1107746518626. По открытым данным ЕГРЮЛ на 07.04.2026 Устинов Вадим Евгеньевич владеет 100% уставного капитала. Частная форма собственности подтверждена открытыми данными.",
+        "evidence_urls": [
+          "https://egrul-base.ru/company/1107746518626/",
+          "https://companies.rbc.ru/id/1107746518626-ooo-kompaniya-bis/",
+          "https://companium.ru/id/1107746518626-kompaniya-bis"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S2",
+        "date": "2026-03-12",
+        "summary": "На AIRVent Award 2026 компания раскрыла текущую производственную трансформацию: полная локализация процессов от проектирования до сборки и контроля на ЧПУ, автоматизация Climate Master сокращает обработку заказов на 30%, повышает производительность на сотрудника на 25%, а объем выпуска, по данным публикации, удваивается ежегодно с 2023 года. Это текущий подтвержденный сигнал масштабирования и автоматизации производственного контура.",
+        "evidence_urls": [
+          "https://airventmoscow.ru/ru/about/news/2026/march/12/uchastniki-airvent-award-2026/",
+          "https://www.c-o-k.ru/articles/briz-klimaticheskie-sistemy-stavka-na-tehnologicheskuyu-nezavisimost"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Устинов Вадим Евгеньевич",
+        "role": "100% собственник",
+        "evidence_urls": [
+          "https://egrul-base.ru/company/1107746518626/",
+          "https://companies.rbc.ru/id/1107746518626-ooo-kompaniya-bis/"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official_company_contact",
+        "phone": "+7 (495) 150-50-05",
+        "email": "climate@breez.ru",
+        "contact_url": "https://breez.ru/",
+        "website_url": "https://breez.ru/"
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7706739445",
+        "ogrn": "1107746518626",
+        "legal_name_normalized": "ООО КОМПАНИЯ БИС",
+        "brand_domain": "BREEZ|breez.ru"
+      },
+      "dedup_prewrite": {
+        "status": "PASS_NO_MATCH",
+        "checked_against_head": "82c72b9f3c4658580343976d4e467db71bdd1b38",
+        "checks": [
+          "ИНН 7706739445 absent from repository code search",
+          "exact ООО КОМПАНИЯ БИС / BREEZ / breez.ru combination absent from repository code search"
+        ]
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "quality_notes": [
+    "CURRENT_WORKING_CONFIG.md and the current leads_master canonical source were read from fresh HEAD before discovery/write.",
+    "Canonical dedup keys used: Lead ID, INN, OGRN/OGRNIP, exact legal entity, confirmed brand+domain.",
+    "No stale financial value was used where current 2025 figures were available.",
+    "Canonical master/contactable/contacts/evidence/runtime/campaign were not modified.",
+    "No outreach was performed."
+  ]
+}
