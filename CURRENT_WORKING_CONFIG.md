@@ -95,3 +95,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 
 ## Latest verified run N5K-20260827-441
 Canonical/contactable: 424/424. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260827-442
+Canonical/contactable: 430/430. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

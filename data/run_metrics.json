@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-08-27T02:58:15+03:00",
+  "generated_at": "2026-08-27T04:08:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-441",
-  "current_run_id": "N5K-20260827-441",
+  "latest_completed_run_id": "N5K-20260827-442",
+  "current_run_id": "N5K-20260827-442",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 424,
-  "contactable_verified": 424,
+  "canonical_pool_verified": 430,
+  "contactable_verified": 430,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4576,
+  "remaining_to_target": 4570,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_441": {
+  "run_442": {
     "raw_discovered": 120,
-    "fast_gate_passed": 9,
-    "size_check_passed": 6,
-    "legal_match_passed": 6,
+    "fast_gate_passed": 11,
+    "size_check_passed": 8,
+    "legal_match_passed": 8,
     "signal_confirmed": 6,
     "lpr_identified": 6,
     "contact_route_found": 6,
-    "qualified": 4,
-    "physically_integrated": 4,
-    "duplicates": 2,
+    "qualified": 6,
+    "physically_integrated": 6,
+    "duplicates": 0,
     "excluded": 114,
     "lane_metrics": [
       {
         "lane": "jobs worker",
         "raw": 80,
-        "duplicates_or_early_rejects": 72,
-        "qualified": 2,
-        "note": "Fresh immutable 20260827-022948-jobs.json; source saturation triggered. Cross-worker pools are not summed globally without a full identity index."
+        "duplicates_or_early_rejects": 76,
+        "qualified": 1,
+        "note": "Fresh immutable 20260827-032755-jobs.json. Source saturation >70%; only ATRAX advanced."
       },
       {
         "lane": "industry worker",
         "raw": 120,
-        "duplicates_or_early_rejects": 115,
+        "duplicates_or_early_rejects": 117,
         "qualified": 2,
-        "note": "Fresh immutable 20260827-023655-industry.json; rotated across current 2026 industry catalogues."
+        "note": "Fresh immutable 20260827-033719-industry.json. Three worker-qualified were rechecked; M.K. Aseptica was rejected by canonical writer because the fresh evidence did not establish a sufficiently specific S1-S3 change signal."
       },
       {
         "lane": "growth/news worker",
-        "raw": 24,
-        "duplicates_or_early_rejects": 15,
-        "qualified": 2,
-        "note": "Fresh immutable 20260827-023858-growth-news.json; current 2026 expansion signals."
+        "raw": 62,
+        "duplicates_or_early_rejects": 51,
+        "qualified": 3,
+        "note": "Fresh immutable 20260827-034800-growth-news.json; current 2026 expansion signals."
       }
     ]
   }

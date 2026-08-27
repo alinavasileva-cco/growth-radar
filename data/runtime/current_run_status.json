@@ -1,64 +1,66 @@
 {
-  "run_id": "N5K-20260827-441",
+  "run_id": "N5K-20260827-442",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T02:58:15+03:00",
+  "updated_at": "2026-08-27T04:08:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 420,
+    "baseline_count": 424,
     "target_count": 5000,
-    "current_canonical_count": 424,
-    "current_contactable_count": 424,
-    "progress_added": 4,
-    "remaining": 4576
+    "current_canonical_count": 430,
+    "current_contactable_count": 430,
+    "progress_added": 6,
+    "remaining": 4570
   },
   "funnel": {
     "discovered": 120,
-    "fast_gate_passed": 9,
-    "size_check_passed": 6,
-    "legal_match_passed": 6,
+    "fast_gate_passed": 11,
+    "size_check_passed": 8,
+    "legal_match_passed": 8,
     "signal_confirmed": 6,
     "lpr_identified": 6,
     "contact_route_found": 6,
-    "qualified": 4,
-    "duplicates": 2,
+    "qualified": 6,
+    "duplicates": 0,
     "excluded": 114
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
       "raw": 80,
-      "duplicates_or_early_rejects": 72,
-      "qualified": 2,
-      "note": "Fresh immutable 20260827-022948-jobs.json; source saturation triggered. Cross-worker pools are not summed globally without a full identity index."
+      "duplicates_or_early_rejects": 76,
+      "qualified": 1,
+      "note": "Fresh immutable 20260827-032755-jobs.json. Source saturation >70%; only ATRAX advanced."
     },
     {
       "lane": "industry worker",
       "raw": 120,
-      "duplicates_or_early_rejects": 115,
+      "duplicates_or_early_rejects": 117,
       "qualified": 2,
-      "note": "Fresh immutable 20260827-023655-industry.json; rotated across current 2026 industry catalogues."
+      "note": "Fresh immutable 20260827-033719-industry.json. Three worker-qualified were rechecked; M.K. Aseptica was rejected by canonical writer because the fresh evidence did not establish a sufficiently specific S1-S3 change signal."
     },
     {
       "lane": "growth/news worker",
-      "raw": 24,
-      "duplicates_or_early_rejects": 15,
-      "qualified": 2,
-      "note": "Fresh immutable 20260827-023858-growth-news.json; current 2026 expansion signals."
+      "raw": 62,
+      "duplicates_or_early_rejects": 51,
+      "qualified": 3,
+      "note": "Fresh immutable 20260827-034800-growth-news.json; current 2026 expansion signals."
     }
   ],
   "qualified_companies": [
-    "Интелком / ITCOM",
-    "COMITAS / КОМИТАС",
-    "MERTECH / МЕРТЕХ",
-    "Нью Лайн Инжиниринг"
+    "Атракс / ATRUCKS",
+    "Группа Ай-Эм-Си / IMC",
+    "ИСТ-ПАК / EAPACK",
+    "СибЕвроВэн",
+    "Гофромир",
+    "Нео-Пак"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "424_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "424_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "430_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "430_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
