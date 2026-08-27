@@ -1,0 +1,224 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T03:37:19+03:00",
+  "base_head_sha": "80dbf3dfb8d3a372efa30033fe3b7b40692f0371",
+  "campaign_id": "new_5000",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-441",
+    "canonical_count": 424,
+    "contactable_count": 424,
+    "integrity_status": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "raw_identity_index_persisted": false,
+  "raw_pool_note": "Conservative 120 distinct exhibitor/company records sampled from the current Pharmtech & Ingredients 2026 catalogue (348 exhibitors total) with rotation into current company/industry publications after the first-source early-reject rate exceeded 70%. Raw identities were not persisted, so this count must not be cross-worker-summed without an identity index.",
+  "sources": [
+    "https://exhibitors-itegroup.exhibitoronlinemanual.com/pharmtech-and-ingredients-2026/ru/Exhibitor",
+    "https://pharmtech-expo.ru/ru/media/news/2026/june/23/pharmtech-ingredients-2026-uchastniki/"
+  ],
+  "worker_funnel": {
+    "raw": 120,
+    "fast_gate_passed": 10,
+    "size_passed": 8,
+    "legal_passed": 8,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "early_rejects_or_not_advanced": 117,
+    "source_saturation_triggered": true
+  },
+  "qualified": [
+    {
+      "brand": "Группа Ай-Эм-Си / IMC",
+      "legal_name": "ООО «ГРУППА АЙ-ЭМ-СИ»",
+      "inn": "7714953587",
+      "ogrn": "5147746438934",
+      "legal_status": "Действует",
+      "private_company": true,
+      "region": "Москва",
+      "segment": "B2B аналитическое и лабораторное оборудование / промышленный мониторинг",
+      "website": "https://imc-systems.ru/",
+      "size": {
+        "revenue_2025_rub": 949360000,
+        "employees_latest_public": 22,
+        "evidence_url": "https://b2b.house/company/OOO-GRUPPA-AJ-EM-SI_2fe2a3bc-70f4-4042-91fc-25f5d7312473/"
+      },
+      "signal": {
+        "level": "S3",
+        "date": "2026-05-12",
+        "summary": "Компания получила статус крупнейшего дистрибьютора оборудования FPI за пределами Китая; публикация указывает выручку 30 млн долларов США по отчетному периоду как фактор лидерства.",
+        "source_url": "https://imc-systems.ru/about/news/meropriyatiya/gruppa-ay-em-si-krupneyshiy-distribyutor-oborudovaniya-fpi/"
+      },
+      "owner": "Шафоростов Александр Андреевич 50%; Панков Евгений Алексеевич 50%",
+      "ceo": "Панков Евгений Алексеевич",
+      "lpr": "Панков Евгений Алексеевич",
+      "lpr_role": "Генеральный директор и совладелец 50%",
+      "contact": {
+        "phone": "+7 (495) 374-04-01",
+        "email": "sales@imc-systems.ru",
+        "route": "Официальный отдел продаж / генеральный директор-собственник",
+        "source_url": "https://imc-systems.ru/about/requisites/"
+      },
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/5147746438934-ooo-gruppa-aj-em-si/",
+        "https://b2b.house/company/OOO-GRUPPA-AJ-EM-SI_2fe2a3bc-70f4-4042-91fc-25f5d7312473/",
+        "https://imc-systems.ru/about/news/meropriyatiya/gruppa-ay-em-si-krupneyshiy-distribyutor-oborudovaniya-fpi/",
+        "https://imc-systems.ru/about/requisites/"
+      ],
+      "dedup_keys": {
+        "inn": "7714953587",
+        "ogrn": "5147746438934",
+        "legal_name": "ООО ГРУППА АЙ-ЭМ-СИ",
+        "brand_domain": "Группа Ай-Эм-Си|imc-systems.ru"
+      },
+      "dedup_check": {
+        "master_resource_match": false,
+        "repo_search_match": false,
+        "checked_against_head": "80dbf3dfb8d3a372efa30033fe3b7b40692f0371"
+      }
+    },
+    {
+      "brand": "ИСТ-ПАК / EAPACK",
+      "legal_name": "ООО «ИСТ-ПАК»",
+      "inn": "9709048753",
+      "ogrn": "1197746294239",
+      "legal_status": "Действует",
+      "private_company": true,
+      "region": "Москва",
+      "segment": "B2B фармацевтическое и упаковочное оборудование / инжиниринг",
+      "website": "https://eapack.ru/",
+      "size": {
+        "revenue_2025_rub": 649196000,
+        "revenue_growth_2025_pct": 61.0,
+        "evidence_url": "https://companies.rbc.ru/id/1197746294239-ist-pak/"
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-02-10",
+        "summary": "ИСТ-ПАК объявила о запуске новых направлений технологического инжиниринга и GMP-валидации, расширив портфель экспертных услуг для фармпроизводств.",
+        "source_url": "https://companies.rbc.ru/news/YwhcQ5Lwt1/ist-pak-usilivaet-podderzhku-inzhiniring-i-validatsiya-dlya-farmproizvodstv/"
+      },
+      "owner": "Гринченко Александр Михайлович 100%",
+      "ceo": "Гринченко Александр Михайлович",
+      "lpr": "Гринченко Александр Михайлович",
+      "lpr_role": "Генеральный директор и единственный учредитель",
+      "contact": {
+        "phone": "+7 (499) 390-62-58",
+        "email": "sales@eapack.ru",
+        "route": "Официальный коммерческий контакт компании",
+        "source_url": "https://companies.rbc.ru/amp/ogrn/1197746294239/"
+      },
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1197746294239-ist-pak/",
+        "https://companies.rbc.ru/amp/ogrn/1197746294239/",
+        "https://companies.rbc.ru/news/YwhcQ5Lwt1/ist-pak-usilivaet-podderzhku-inzhiniring-i-validatsiya-dlya-farmproizvodstv/",
+        "https://companies.rbc.ru/news/l6VmNSspRK/kompaniya-ist-pak-primet-uchastie-v-vyistavke-rosupack-2026/"
+      ],
+      "dedup_keys": {
+        "inn": "9709048753",
+        "ogrn": "1197746294239",
+        "legal_name": "ООО ИСТ-ПАК",
+        "brand_domain": "ИСТ-ПАК|eapack.ru"
+      },
+      "dedup_check": {
+        "master_resource_match": false,
+        "repo_search_match": false,
+        "checked_against_head": "80dbf3dfb8d3a372efa30033fe3b7b40692f0371"
+      }
+    },
+    {
+      "brand": "М.К. Асептика",
+      "legal_name": "ООО «М.К. АСЕПТИКА»",
+      "inn": "7705324328",
+      "ogrn": "1027700317941",
+      "legal_status": "Действует",
+      "private_company": true,
+      "region": "Московская область",
+      "segment": "Производство медицинских, гигиенических и косметических изделий / контрактное производство",
+      "website": "https://aseptica.ru/",
+      "size": {
+        "revenue_latest_public_rub": 726800000,
+        "employees_official_site": "200+",
+        "annual_capacity_official_site": "900+ млн изделий в год",
+        "evidence_urls": [
+          "https://saby.ru/profile/7705324328-502701001",
+          "https://aseptica.ru/ru/about"
+        ]
+      },
+      "signal": {
+        "level": "S3",
+        "date": "2026-02-11",
+        "summary": "В ЕГРЮЛ зафиксирована смена генерального директора: Пелехатый Николай Михайлович стал новым руководителем; одновременно компания публично подтверждает постоянную модернизацию 27 автоматизированных линий.",
+        "source_urls": [
+          "https://companium.ru/id/1027700317941-m-k-aseptika",
+          "https://aseptica.ru/ru/manufacture"
+        ]
+      },
+      "owner": "Родионова Ольга Анатольевна 67%; Пелехатый Михаил Михайлович 17%; Родионов Анатолий Геннадьевич 17%",
+      "ceo": "Пелехатый Николай Михайлович",
+      "lpr": "Пелехатый Николай Михайлович",
+      "lpr_role": "Генеральный директор с 11.02.2026",
+      "contact": {
+        "phone": "+7 (495) 660-18-00",
+        "email": "mk@aseptica.ru",
+        "contact_form": "https://aseptica.ru/ru/contacts",
+        "route": "Официальный телефон, email и форма компании",
+        "source_url": "https://aseptica.ru/ru/contacts"
+      },
+      "evidence_urls": [
+        "https://saby.ru/profile/7705324328-502701001",
+        "https://www.tbank.ru/business/contractor/legal/1027700317941/",
+        "https://companium.ru/id/1027700317941-m-k-aseptika",
+        "https://aseptica.ru/ru/about",
+        "https://aseptica.ru/ru/manufacture",
+        "https://aseptica.ru/ru/contacts"
+      ],
+      "dedup_keys": {
+        "inn": "7705324328",
+        "ogrn": "1027700317941",
+        "legal_name": "ООО М.К. АСЕПТИКА",
+        "brand_domain": "М.К. Асептика|aseptica.ru"
+      },
+      "dedup_check": {
+        "master_resource_match": false,
+        "repo_search_match": false,
+        "checked_against_head": "80dbf3dfb8d3a372efa30033fe3b7b40692f0371"
+      }
+    }
+  ],
+  "not_advanced_examples": [
+    {
+      "company": "Артлайф-Техно",
+      "reason": "Scale/legal confirmed, but no sufficiently strong fresh S1-S3 signal was confirmed in this pass."
+    },
+    {
+      "company": "Ист Индастриал Сэппорт",
+      "reason": "Legal/contact confirmed; current scale and signal were weaker than the qualified set, so not advanced."
+    },
+    {
+      "company": "КВТ ИНЖИНИРИНГ",
+      "reason": "Strong 2026 commercial signal and contacts, but the legal entity is new (2025) and current entity-level scale is not sufficiently confirmed; not advanced."
+    },
+    {
+      "company": "Аламед",
+      "reason": "Scale/legal confirmed for Moscow entity, but no sufficiently specific fresh S1-S3 change signal was confirmed in this pass."
+    },
+    {
+      "company": "Солид Фарма",
+      "reason": "Revenue declined materially in 2025 and no strong fresh S1-S3 signal was confirmed."
+    },
+    {
+      "company": "Диапазон Фарм",
+      "reason": "Current scale below stronger candidates; no strong fresh S1-S3 signal confirmed."
+    },
+    {
+      "company": "ВИЛАКС",
+      "reason": "Growth confirmed, but current scale and fresh change signal were insufficient for qualification in this pass."
+    }
+  ]
+}
