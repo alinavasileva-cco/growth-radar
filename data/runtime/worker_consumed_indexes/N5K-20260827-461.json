@@ -1,0 +1,31 @@
+{
+  "run_id": "N5K-20260827-461",
+  "status": "COMPLETED",
+  "campaign_id": "new_5000",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260827-232350-jobs.json",
+      "blob_sha": "67acfe08fa2ca32adfcc7ac5b463641f6ad10178",
+      "result": "CONSUMED_QUALIFIED_INTEGRATED",
+      "note": "80 employer-level source identities; Сатурн Башкирия passed canonical SIZE, LEGAL, SIGNAL, LPR and CONTACT and was physically integrated as N5K-0635."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-233200-industry-metrics.json",
+      "blob_sha": "4cce314e695563eaae4eb7251eeb1a75b69473ff",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 auditable distinct raw across five official 20-candidate industry/catalog lanes; each lane exceeded 70% duplicate+early reject and was stopped/rotated; 0 qualified."
+    }
+  ],
+  "canonical_result": {
+    "worker_qualified_before_physical_dedup": 1,
+    "physical_dedup_duplicates": 0,
+    "net_qualified": 1,
+    "physically_integrated": 1,
+    "canonical_count": 478,
+    "contactable_count": 478,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "outreach_performed": false
+}
