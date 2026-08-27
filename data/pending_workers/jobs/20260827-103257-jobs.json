@@ -1,0 +1,148 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T10:32:57+03:00",
+    "source_head_sha": "d1a30136a656f133d89fe4962e698f06d7424db0",
+    "source_run_id": "N5K-20260827-448",
+    "canonical_snapshot": {
+      "canonical_count": 452,
+      "contactable_count": 452,
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0,
+      "staged_not_counted": 0
+    },
+    "write_scope": "immutable worker staging only; canonical/master/contactable/contacts/evidence/runtime/campaign untouched",
+    "outreach": 0
+  },
+  "funnel": {
+    "raw_employer_level_surfaced": 80,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicate_plus_early_reject_exact_split": null,
+    "note": "80 distinct employer-level rows were surfaced across fresh job-board searches and regional result pools. The exact duplicate-vs-early-reject split was not separately instrumented and is therefore not reconstructed. Initial Moscow-heavy results showed substantial overlap with canonical/recent worker history, so discovery was rotated to regional job-board pools. Only candidates with a fully evidenced legal entity, scale, dated S1-S3 signal, LPR/owner and practical contact route are staged."
+  },
+  "qualified": [
+    {
+      "Brand": "Бытовки в Дом / Комфорт Групп",
+      "Legal Name": "ООО КОМФОРТ ГРУПП",
+      "INN": "5018202511",
+      "OGRN/OGRNIP": "1195081093679",
+      "Region": "Московская область",
+      "City": "Королёв / Москва production-commercial footprint",
+      "Segment": "Производство модульных зданий, блок-контейнеров и строительных городков; B2B",
+      "Website": "https://bvd-bk.ru/",
+      "Legal Status": "Действующее российское частное ООО",
+      "Revenue/Scale": "Выручка за 2025 год 115,147 млн руб.; официальный сайт подтверждает собственное производство 1500 м², 17 сборочных бригад, 20 производственных участков, выпуск более 3000 м² продукции в месяц и более 250 заказов в месяц.",
+      "Signal Level": "S1",
+      "Signal Summary": "13 августа 2026 компания опубликовала вакансию Руководителя отдела продаж B2B для производства модульных зданий и строительных городков; роль требует управления B2B-продажами и развития коммерческого направления.",
+      "Signal Date": "2026-08-13",
+      "Signal Source": "https://vgorode.moscow/rabota/vakansiya-136196179/",
+      "Owner": "Трошин Дмитрий Владимирович",
+      "CEO": "Трошин Дмитрий Владимирович",
+      "LPR": "Трошин Дмитрий Владимирович",
+      "LPR Role": "Генеральный директор и учредитель ООО КОМФОРТ ГРУПП",
+      "Primary Phone": "+7 (925) 538-80-90",
+      "Primary Email": "info@bvd-bk.ru",
+      "Contact Form": "https://bvd-bk.ru/",
+      "Contact Type": "Official sales phone + official email + callback form + current employer vacancy route",
+      "Contact Source": "Official bvd-bk.ru + current vacancy + registry/company profiles",
+      "Number Of Contacts Found": 4,
+      "Consulting Hypothesis": "Систематизация и масштабирование B2B-продаж производственной компании: управление воронкой, KPI/CRM, сегментация девелоперов и генподрядчиков, key-account модель и коммерческая операционная система.",
+      "dedup_keys": {
+        "inn": "5018202511",
+        "ogrn": "1195081093679",
+        "legal_name": "ООО КОМФОРТ ГРУПП",
+        "brand_domain": "Бытовки в Дом|bvd-bk.ru"
+      },
+      "dedup_check": {
+        "repository_exact_inn_search": "no matches before staging",
+        "checked_against_head": "d1a30136a656f133d89fe4962e698f06d7424db0"
+      },
+      "contacts": [
+        {"value": "+7 (925) 538-80-90", "channel": "Phone", "type": "Official sales", "url": "https://bvd-bk.ru/", "is_lpr": false},
+        {"value": "+7 (495) 162-94-97", "channel": "Phone", "type": "Official sales", "url": "https://bvd-bk.ru/", "is_lpr": false},
+        {"value": "info@bvd-bk.ru", "channel": "Email", "type": "Official corporate", "url": "https://bvd-bk.ru/", "is_lpr": false},
+        {"value": "https://bvd-bk.ru/", "channel": "Form", "type": "Official callback form", "url": "https://bvd-bk.ru/", "is_lpr": false}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО КОМФОРТ ГРУПП действует; ИНН 5018202511, ОГРН 1195081093679; генеральный директор Трошин Дмитрий Владимирович.", "url": "https://www.moedelo.org/kontragenty/ogrn/1195081093679"},
+        {"type": "OWNER_LPR", "claim": "Трошин Дмитрий Владимирович — учредитель и генеральный директор.", "url": "https://reputation.ru/ogrn/1195081093679"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка 2025 — 115,147 млн руб.; официальный сайт подтверждает собственное масштабируемое производство.", "url": "https://b2b.house/company/OOO-KOMFORT-GRUPP_bd7eaa9e-e934-47a0-91b4-80f239c641a5/"},
+        {"type": "BRAND_LEGAL", "claim": "Официальный сайт прямо связывает бренд Бытовки в Дом с ООО КОМФОРТ ГРУПП, ИНН 5018202511.", "url": "https://bvd-bk.ru/"},
+        {"type": "SIGNAL", "claim": "13.08.2026 опубликована вакансия Руководителя отдела продаж B2B для ООО Комфорт Групп / бренда Бытовки в Дом.", "url": "https://vgorode.moscow/rabota/vakansiya-136196179/"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует телефоны отдела продаж +7 (925) 538-80-90, +7 (495) 162-94-97 и email info@bvd-bk.ru.", "url": "https://bvd-bk.ru/"}
+      ]
+    },
+    {
+      "Brand": "ПРОФ-ТОН ГРУПП / PROF-TON",
+      "Legal Name": "ООО ПРОФ-ТОН ГРУПП",
+      "INN": "7453330306",
+      "OGRN/OGRNIP": "1197456034302",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Автомобильные и архитектурные защитные плёнки, покрытия и оборудование; B2B дистрибуция/производство",
+      "Website": "https://prof-ton.ru/",
+      "Legal Status": "Действующее российское частное ООО",
+      "Revenue/Scale": "Выручка за 2025 год 114,076 млн руб.; компания работает с 2007 года и развивает производство/дистрибуцию защитных материалов и оборудования.",
+      "Signal Level": "S1",
+      "Signal Summary": "14 августа 2026 опубликована вакансия Коммерческого директора (B2B, дилерская сеть, автомобильные плёнки): управление коммерческим блоком, KPI, командой, маркетингом и развитием продаж в России и СНГ.",
+      "Signal Date": "2026-08-14",
+      "Signal Source": "https://afkoffer.com/vacancies/marketing/134701133",
+      "Owner": "Панихин Василий Евгеньевич",
+      "CEO": "Панихин Василий Евгеньевич",
+      "LPR": "Панихин Василий Евгеньевич",
+      "LPR Role": "Генеральный директор и 100% учредитель ООО ПРОФ-ТОН ГРУПП",
+      "Primary Phone": "+7 (495) 540-48-05",
+      "Primary Email": "info@prof-ton.com",
+      "Contact Form": "https://prof-ton.ru/contacts/",
+      "Contact Type": "Official corporate phone + email + website callback + current employer vacancy route",
+      "Contact Source": "Official prof-ton.ru + current August 2026 vacancy + registry/company profiles",
+      "Number Of Contacts Found": 4,
+      "Consulting Hypothesis": "Систематизация B2B-дилерской коммерческой модели: KPI и управленческий ритм, канал-партнёры, сегментация, unit/margin control, CRM/воронка и масштабирование продаж по России/СНГ.",
+      "dedup_keys": {
+        "inn": "7453330306",
+        "ogrn": "1197456034302",
+        "legal_name": "ООО ПРОФ-ТОН ГРУПП",
+        "brand_domain": "ПРОФ-ТОН ГРУПП|prof-ton.ru"
+      },
+      "dedup_check": {
+        "repository_exact_inn_search": "no matches before staging",
+        "checked_against_head": "d1a30136a656f133d89fe4962e698f06d7424db0"
+      },
+      "contacts": [
+        {"value": "+7 (495) 540-48-05", "channel": "Phone", "type": "Official corporate", "url": "https://prof-ton.ru/contacts/", "is_lpr": false},
+        {"value": "info@prof-ton.com", "channel": "Email", "type": "Official corporate", "url": "https://prof-ton.ru/contacts/", "is_lpr": false},
+        {"value": "https://prof-ton.ru/contacts/", "channel": "Form", "type": "Official callback/contact route", "url": "https://prof-ton.ru/contacts/", "is_lpr": false},
+        {"value": "Current Commercial Director vacancy route", "channel": "Vacancy", "type": "Employer route", "url": "https://afkoffer.com/vacancies/marketing/134701133", "is_lpr": false}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО ПРОФ-ТОН ГРУПП действует; ИНН 7453330306, ОГРН 1197456034302.", "url": "https://companies.rbc.ru/id/1197456034302-obschestvo-s-ogranichennoj-otvetstvennostyu-prof-ton-grupp/"},
+        {"type": "OWNER_LPR", "claim": "Панихин Василий Евгеньевич — генеральный директор и 100% учредитель.", "url": "https://zachestnyibiznes.ru/company/ul/1197456034302_7453330306_OOO-PROF-TON-GRUPP"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка за 2025 год — 114,076 млн руб.", "url": "https://companies.rbc.ru/id/1197456034302-obschestvo-s-ogranichennoj-otvetstvennostyu-prof-ton-grupp/"},
+        {"type": "BRAND_SCALE", "claim": "Официальный сайт подтверждает бренд, длительную историю и производство/дистрибуцию автомобильных и архитектурных защитных материалов.", "url": "https://prof-ton.ru/company/"},
+        {"type": "SIGNAL", "claim": "14.08.2026 опубликована вакансия Коммерческого директора B2B для управления дилерской сетью, KPI, командой, маркетингом и коммерческим развитием.", "url": "https://afkoffer.com/vacancies/marketing/134701133"},
+        {"type": "CONTACT", "claim": "Официальная страница контактов публикует +7 (495) 540-48-05 и info@prof-ton.com.", "url": "https://prof-ton.ru/contacts/"}
+      ]
+    }
+  ],
+  "rejected_deep_check_examples": [
+    {
+      "brand": "CONTROL-IT",
+      "reason": "Legal route resolved to ИП Волков Дмитрий Михайлович, but current scale was not sufficiently evidenced against campaign SIZE gate in this run; not staged."
+    },
+    {
+      "brand": "S.Lavia",
+      "reason": "Current official legal route resolves to ИП Ошуев А.Л.; current scale could not be independently confirmed to campaign threshold without inference; not staged."
+    },
+    {
+      "brand": "ВАВИЛОН",
+      "reason": "Fresh vacancy employer name could not be bound unambiguously to one of several active Санкт-Петербург legal entities named ООО ВАВИЛОН; no vacancy→legal guess used."
+    }
+  ]
+}
