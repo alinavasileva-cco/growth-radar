@@ -1,45 +1,38 @@
 {
-  "generated_at": "2026-08-27T12:59:49+03:00",
+  "generated_at": "2026-08-27T13:07:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-450",
-  "current_run_id": "N5K-20260827-450",
+  "latest_completed_run_id": "N5K-20260827-451",
+  "current_run_id": "N5K-20260827-451",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 456,
-  "contactable_verified": 456,
+  "canonical_pool_verified": 457,
+  "contactable_verified": 457,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4544,
+  "remaining_to_target": 4543,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_450": {
-    "raw_discovered": 120,
+  "run_451": {
+    "raw_discovered": 42,
     "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
     "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 118,
+    "duplicates": 0,
+    "excluded": 41,
     "lane_metrics": [
       {
         "lane": "jobs worker",
-        "raw": 80,
-        "duplicates_or_early_rejects": 79,
+        "raw": 42,
+        "duplicates_or_early_rejects": 41,
         "qualified": 1,
-        "note": "Fresh immutable 20260827-123031-jobs.json. Saturated HH-heavy pool stopped after >70% duplicate+early reject on first 20; worker switched to regional/direct-employer mirrors. Koros Group passed SIZE/LEGAL/SIGNAL/LPR/CONTACT and repository pre-write dedup."
-      },
-      {
-        "lane": "industry worker",
-        "raw": 120,
-        "duplicates_or_early_rejects": 119,
-        "qualified": 1,
-        "note": "Fresh immutable 20260827-113447-industry.json. SovTest ATE passed SIZE/LEGAL/SIGNAL/LPR/CONTACT and repository pre-write dedup."
+        "note": "Fresh immutable 20260827-113145-jobs.json from the same operational cycle. RSC Group passed current SIZE/LEGAL/SIGNAL/LPR/CONTACT; current web re-check confirmed active legal entity, 2025 revenue 549.867m RUB and current head-of-sales vacancy."
       }
     ]
   }

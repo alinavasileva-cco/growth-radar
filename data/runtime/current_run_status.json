@@ -1,54 +1,47 @@
 {
-  "run_id": "N5K-20260827-450",
+  "run_id": "N5K-20260827-451",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T12:59:49+03:00",
+  "updated_at": "2026-08-27T13:07:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 455,
+    "baseline_count": 456,
     "target_count": 5000,
-    "current_canonical_count": 456,
-    "current_contactable_count": 456,
+    "current_canonical_count": 457,
+    "current_contactable_count": 457,
     "progress_added": 1,
-    "remaining": 4544
+    "remaining": 4543
   },
   "funnel": {
-    "discovered": 120,
+    "discovered": 42,
     "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 118
+    "duplicates": 0,
+    "excluded": 41
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
-      "raw": 80,
-      "duplicates_or_early_rejects": 79,
+      "raw": 42,
+      "duplicates_or_early_rejects": 41,
       "qualified": 1,
-      "note": "Fresh immutable 20260827-123031-jobs.json. Saturated HH-heavy pool stopped after >70% duplicate+early reject on first 20; worker switched to regional/direct-employer mirrors. Koros Group passed SIZE/LEGAL/SIGNAL/LPR/CONTACT and repository pre-write dedup."
-    },
-    {
-      "lane": "industry worker",
-      "raw": 120,
-      "duplicates_or_early_rejects": 119,
-      "qualified": 1,
-      "note": "Fresh immutable 20260827-113447-industry.json. SovTest ATE passed SIZE/LEGAL/SIGNAL/LPR/CONTACT and repository pre-write dedup."
+      "note": "Fresh immutable 20260827-113145-jobs.json from the same operational cycle. RSC Group passed current SIZE/LEGAL/SIGNAL/LPR/CONTACT; current web re-check confirmed active legal entity, 2025 revenue 549.867m RUB and current head-of-sales vacancy."
     }
   ],
   "qualified_companies": [
-    "Совтест АТЕ / SovTest ATE"
+    "РСК Групп / RSC Group"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "456_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "456_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "457_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "457_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
