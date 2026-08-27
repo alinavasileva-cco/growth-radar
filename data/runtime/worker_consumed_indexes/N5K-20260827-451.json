@@ -1,0 +1,31 @@
+{
+  "run_id": "N5K-20260827-451",
+  "updated_at": "2026-08-27T13:09:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-113145-jobs.json",
+      "blob_sha": "849bffd7bacb81ddb67fc8c65ee2a0a2ab6dcd7c",
+      "result": "CONSUMED",
+      "note": "РСК Групп / RSC Group integrated physically as N5K-0614 after canonical pre-write and physical dedup."
+    },
+    {
+      "path": "data/pending_workers/jobs/20260827-123031-jobs.json",
+      "blob_sha": "fe73e7048ca52950c47bac141b7c372c3fa9486e",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "note": "Корос Груп / Bertazzoni candidate was rejected by physical canonical guard as duplicate on INN, OGRN and exact legal name; no duplicate row was written."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-113447-industry.json",
+      "blob_sha": "6b5f02167a77f70f6b544f02269250f30ee46369",
+      "result": "CONSUMED",
+      "note": "Совтест АТЕ / SovTest ATE integrated physically as N5K-0613 after canonical pre-write and physical dedup."
+    }
+  ],
+  "physical_canonical_after_cycle": 457,
+  "physical_contactable_after_cycle": 457,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach_sent": 0
+}
