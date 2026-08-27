@@ -1,46 +1,46 @@
 {
-  "run_id": "N5K-20260828-462",
+  "run_id": "N5K-20260828-463",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T00:58:20+03:00",
+  "updated_at": "2026-08-28T01:58:52+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 478,
+    "baseline_count": 479,
     "target_count": 5000,
-    "current_canonical_count": 479,
-    "current_contactable_count": 479,
+    "current_canonical_count": 480,
+    "current_contactable_count": 480,
     "progress_added": 1,
-    "remaining": 4521
+    "remaining": 4520
   },
   "funnel": {
-    "discovered": 183,
-    "fast_gate_passed": 8,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "discovered": 180,
+    "fast_gate_passed": 5,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 181
+    "duplicates": 0,
+    "excluded": 179
   },
   "lane_metrics": [
     {
-      "lane": "jobs/20260828-0030",
+      "lane": "jobs/20260828-0121",
       "raw": 80,
-      "fast_gate": 6,
-      "size": 3,
-      "legal": 2,
+      "fast_gate": 5,
+      "size": 1,
+      "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
       "worker_qualified": 1,
       "canonical_prewrite_qualified": 1,
-      "duplicates_plus_early_rejects": 74,
-      "result": "TD_URAL_K_QUALIFIED"
+      "duplicates_plus_early_rejects": 75,
+      "result": "PROMIZOLYATSIYA_QUALIFIED"
     },
     {
-      "lane": "industry/20260828-004100",
+      "lane": "industry/20260828-012627",
       "raw_distinct": 100,
       "fast_gate": 0,
       "size": 0,
@@ -51,34 +51,17 @@
       "qualified": 0,
       "duplicates_plus_early_rejects": 100,
       "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
-    },
-    {
-      "lane": "canonical_low_overlap_growth_official",
-      "raw": 3,
-      "raw_companies": [
-        "ООО Семаргл / робототехнический проект",
-        "ВЕЗА",
-        "Логика молока / АО ЭЙЧ ЭНД ЭН"
-      ],
-      "fast_gate": 2,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 1,
-      "result": "LOGIKA_MOLOKA_QUALIFIED; SEMARGL_REJECT_IDENTITY_AMBIGUITY; VEZA_REJECT_NO_CURRENT_SIZE_EVIDENCE_IN_EXECUTION_WINDOW"
     }
   ],
   "qualified_companies": [
-    "ТД Урал-К / Торговый дом «Урал-К»"
+    "Промизоляция"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "479_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "479_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "480_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "480_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
