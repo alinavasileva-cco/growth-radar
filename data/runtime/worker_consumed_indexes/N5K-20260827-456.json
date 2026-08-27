@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260827-456",
+  "updated_at": "2026-08-27T18:00:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-171821-jobs.json",
+      "blob_sha": "3f0cc4aff3f5fc7a100a804d96a9a0558fbca79b",
+      "result": "CONSUMED",
+      "note": "Первый Снег / ООО ПЕРВЫЙ СНЕГ passed canonical re-check and was physically integrated as N5K-0629. Immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-172745-industry.json",
+      "blob_sha": "e75c586eb59729ab1ff772e13ee3c315e07a696d",
+      "result": "CONSUMED",
+      "note": "ЭКРОСХИМ / ООО ЭКРОСХИМ passed canonical re-check and was physically integrated as N5K-0630. Immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 473,
+  "physical_contactable_after_cycle": 473,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
