@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-08-27T14:00:00+03:00",
+  "generated_at": "2026-08-27T15:04:09+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-452",
-  "current_run_id": "N5K-20260827-452",
+  "latest_completed_run_id": "N5K-20260827-453",
+  "current_run_id": "N5K-20260827-453",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 461,
-  "contactable_verified": 461,
+  "canonical_pool_verified": 464,
+  "contactable_verified": 464,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4539,
+  "remaining_to_target": 4536,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_452": {
-    "raw_discovered": 128,
-    "fast_gate_passed": 8,
+  "run_453": {
+    "raw_discovered": 86,
+    "fast_gate_passed": 10,
     "size_check_passed": 5,
     "legal_match_passed": 5,
     "signal_confirmed": 4,
     "lpr_identified": 4,
-    "contact_route_found": 4,
-    "qualified": 4,
-    "physically_integrated": 4,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "physically_integrated": 3,
     "duplicates": 0,
-    "excluded": 124,
+    "excluded": 83,
     "lane_metrics": [
       {
         "lane": "jobs worker",
         "raw": 80,
         "duplicates_or_early_rejects": 79,
         "qualified": 1,
-        "note": "Fresh immutable data/pending_workers/jobs/20260827-133241-jobs.json. Worker stopped broad HH after >70% duplicate+early-reject saturation on the first 20 and rotated. Canonical re-check confirmed YANS; no physical exact duplicate by INN/OGRN/legal name was found before staging."
+        "note": "Fresh immutable data/pending_workers/jobs/20260827-142846-jobs.json; worker stopped saturated broad HH-heavy search after >70% duplicate+early-reject and rotated to regional/direct-employer/job-board mirrors. Exact duplicate vs early-reject split was not reconstructed."
       },
       {
-        "lane": "low-overlap growth/regional/official discovery",
-        "raw": 48,
-        "duplicates_or_early_rejects": 45,
-        "qualified": 3,
-        "note": "Conservative auditable count of distinct company identities actually reviewed after global candidate dedup. Repeated articles/search-result rows were not counted as raw companies. Qualified: TD Mirograd/ZAIGER, Alkor, Beshtau. Additional search-result repetitions and unnamed projects were excluded from the raw count rather than inflated."
+        "lane": "low-overlap official/growth/ratings/regional verification",
+        "raw": 6,
+        "duplicates_or_early_rejects": 4,
+        "qualified": 2,
+        "note": "Only six distinct company identities that were actually brought to identity-level review are counted as raw; search-result rows, unnamed projects and broad ranking membership were not inflated into raw. Qualified: NARTIS and Isource. Other reviewed identities failed strict gate/deep-check. Additional low-overlap source families were rotated because total raw stayed below 300, but identities not individually audited were not counted."
       }
     ]
   }
