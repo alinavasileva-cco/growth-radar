@@ -1,0 +1,187 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T08:34:45+03:00",
+  "source_head": "6aa3fb384627ee818b092c1c9574a47c31e27bf3",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-446",
+    "canonical_count": 445,
+    "contactable_count": 445,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "outreach_sent": 0
+  },
+  "source_batch": {
+    "primary_source": "Testing&Control 2026 official exhibitor universe",
+    "source_url": "https://www.testing-control.ru/ru-RU/",
+    "official_participant_count_claim": "110+",
+    "raw_candidates_collected": 110,
+    "raw_identity_note": "A capped 110-company source batch was used from the official 2026 exhibitor universe. The full 110-name identity list is not persisted in this staging artifact, therefore this raw count must not be cross-worker summed without an external identity index.",
+    "lane_switch_note": "Recent industry runs showed >70% duplicate/early-reject rates in previously saturated catalogs, so this run switched to the low-overlap Testing&Control/metrology-electronics-industrial-equipment universe."
+  },
+  "worker_funnel": {
+    "raw_discovered": 110,
+    "advanced_to_deep_check": 5,
+    "size_confirmed": 2,
+    "legal_confirmed": 2,
+    "signal_confirmed": 2,
+    "lpr_confirmed": 2,
+    "contact_confirmed": 2,
+    "qualified": 2,
+    "canonical_duplicates_found_in_final_repo_recheck": 0,
+    "not_advanced_from_raw_pool": 108,
+    "note": "Only candidates with fully evidenced gates are counted beyond raw. Unpersisted raw identities are not represented as individually deep-checked or individually rejected."
+  },
+  "qualified": [
+    {
+      "brand": "ГенМастер / GenMaster",
+      "legal_name": "ООО \"ГЕНМАСТЕР\"",
+      "inn": "5016019870",
+      "ogrn": "1105038004444",
+      "domain": "genmaster.ru",
+      "country": "Россия",
+      "region": "Московская область",
+      "legal_status": "Действующее",
+      "private_gate": {
+        "status": "PASS",
+        "basis": "ООО; актуальная структура участников после изменения 22.01.2026 включает ЗПИФ под управлением ООО УК \"ГАММА ГРУПП\" 50% и трёх физических лиц по 16.67%: Дроздов Алексей Викторович, Кирьяков Алексей Викторович, Шариков Юрий Александрович.",
+        "source_urls": [
+          "https://damia.ru/spk/card?req=1105038004444",
+          "https://www.tbank.ru/business/contractor/legal/1105038004444/"
+        ]
+      },
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 510334000,
+        "employees": 56,
+        "source_url": "https://companies.rbc.ru/id/1105038004444-ooo-genmaster/",
+        "source_as_of": "2026-08-11"
+      },
+      "signal": {
+        "status": "PASS",
+        "type": "S1/S3",
+        "date": "2026-05-05",
+        "description": "В мае 2026 года зарегистрированы декларации на блочно-модульные контейнерные автоматизированные электростанции БМКАЭС-ГМ марки «ГенМастер», где ООО «ГЕНМАСТЕР» указано изготовителем/заявителем; одновременно актуальный проектный контур компании показывает проекты энергоцентров 2026 года, включая 6 МВт в Саратовской области с запуском в августе 2026 года.",
+        "source_urls": [
+          "https://xn----7sbajahheyaepn1ca0aveqcb0fxl.xn--p1acf/kompaniya/ooo-genmaster-1105038004444/",
+          "https://www.comeriver.ru/company/"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Шариков Юрий Александрович",
+        "role": "Генеральный директор; участник 16.67% после изменения 22.01.2026",
+        "source_urls": [
+          "https://companies.rbc.ru/id/1105038004444-ooo-genmaster/",
+          "https://damia.ru/spk/card?req=1105038004444"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official_company",
+        "email": "info@genmaster.ru",
+        "phone": "+7 495 545-45-80",
+        "toll_free_phone": "8 800 500-40-99",
+        "source_url": "https://genmaster.ru/equipment/generatory-elektrostantsii/gazovye/elteco_petra_380_c_perkins/"
+      },
+      "dedup_keys": {
+        "inn": "5016019870",
+        "ogrn": "1105038004444",
+        "exact_legal_name": "ООО ГЕНМАСТЕР",
+        "brand_domain": "ГенМастер|genmaster.ru"
+      },
+      "dedup_recheck": {
+        "status": "PASS_NO_MATCH",
+        "repository_query": "5016019870 ГенМастер",
+        "checked_against_head": "6aa3fb384627ee818b092c1c9574a47c31e27bf3"
+      },
+      "qualification": "QUALIFIED"
+    },
+    {
+      "brand": "Микран / Micran",
+      "legal_name": "АО \"НАУЧНО-ПРОИЗВОДСТВЕННАЯ ФИРМА \"МИКРАН\"",
+      "inn": "7017211757",
+      "ogrn": "1087017011113",
+      "domain": "micran.ru",
+      "country": "Россия",
+      "region": "Томская область",
+      "legal_status": "Действующее",
+      "private_gate": {
+        "status": "PASS",
+        "basis": "Единственный акционер АО НПФ «Микран» по раскрытию от 04.06.2026 — АО «Панорама» (ИНН 9725048310); для АО «Панорама» подтверждена форма собственности «частная собственность». Это более свежая структура владения, чем старые записи.",
+        "source_urls": [
+          "https://e-disclosure.azipi.ru/messages/4549664/",
+          "https://www.companium.ru/id/1217700170632-panorama"
+        ]
+      },
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 7700000000,
+        "net_profit_2025_rub": 473400000,
+        "source_url": "https://cbonds.ru/news/3882907/",
+        "published_at": "2026-04-22"
+      },
+      "signal": {
+        "status": "PASS",
+        "type": "S3",
+        "date": "2026-05-25",
+        "description": "Компания вывела новые контрольно-измерительные решения: первый отечественный портативный анализатор спектра СК4М-14 и компактные векторные анализаторы цепей Х220/Х420; компания отдельно зафиксировала подтверждение востребованности и новые направления развития. Дополнительно в мае 2026 подтверждена смена генерального директора на Сергея Касаева, поэтому более старые записи с Верой Парамоновой исключены из решения.",
+        "source_urls": [
+          "https://www.micran.ru/about/news/ao-npf-mikran-na-forume-priborium-2026/",
+          "https://www.micran.ru/about/news/v-tusure-proshyel-den-kompanii-mikran-v-ramkakh-festivalya-radiobum-2026/"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Касаев Сергей Юрьевич",
+        "role": "Генеральный директор",
+        "freshness_note": "Свежие сведения мая-июля 2026 подтверждают Сергея Касаева. Устаревшие записи, где генеральным директором указана Вера Парамонова, не использованы.",
+        "source_urls": [
+          "https://saby.ru/profile/7017211757-701701001",
+          "https://www.micran.ru/about/news/v-tusure-proshyel-den-kompanii-mikran-v-ramkakh-festivalya-radiobum-2026/"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official_company",
+        "email": "mic@micran.ru",
+        "phone": "+7 3822 90-00-29",
+        "address": "634041, Россия, Томск, пр-т Кирова, 51д",
+        "source_url": "https://www.micran.ru/"
+      },
+      "dedup_keys": {
+        "inn": "7017211757",
+        "ogrn": "1087017011113",
+        "exact_legal_name": "АО НПФ МИКРАН",
+        "brand_domain": "Микран|micran.ru"
+      },
+      "dedup_recheck": {
+        "status": "PASS_NO_MATCH",
+        "repository_query": "7017211757 Микран micran.ru",
+        "checked_against_head": "6aa3fb384627ee818b092c1c9574a47c31e27bf3"
+      },
+      "qualification": "QUALIFIED"
+    }
+  ],
+  "deep_checked_not_qualified": [
+    {
+      "brand": "Вектор Эталон",
+      "inn": "7805764499",
+      "decision": "REJECT_SIZE_OR_SIGNAL",
+      "reason": "2025 revenue about 262.9m RUB and small headcount; current exhibition participation/product demonstration alone was not treated as a sufficient strong S1-S3 business-change signal."
+    },
+    {
+      "brand": "BERG Compressors",
+      "decision": "REJECT_LEGAL_MAPPING",
+      "reason": "Fresh 2026 production-expansion signal exists, but the exact brand-to-manufacturer legal-entity mapping was not verified tightly enough; no qualification by inference."
+    },
+    {
+      "brand": "ВАЛДЕКС Энергетические Решения",
+      "inn": "5037060630",
+      "decision": "REJECT_SIZE_AND_CONFLICT",
+      "reason": "Scale is below the stronger qualified set and fresh sources conflict on the current executive identity; stale leadership records were not used to force qualification."
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false
+}
