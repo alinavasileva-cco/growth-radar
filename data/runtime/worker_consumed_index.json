@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-27T06:05:00+03:00",
+  "updated_at": "2026-08-27T07:20:00+03:00",
   "campaign_id": "new_5000",
-  "last_consumed_run_id": "N5K-20260827-444",
+  "last_consumed_run_id": "N5K-20260827-445",
   "consumed": [
     {"path":"data/pending_workers/jobs/20260826-192726-jobs.json","blob_sha":"08e2aa9b309fe2336e0966ced264385072c2de06","consumed_by_run":"N5K-20260826-434","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"Worker-qualified iSmart was already canonical as N5K-0384; no duplicate integration."},
     {"path":"data/pending_workers/industry/20260826-193705-industry.json","blob_sha":"b2999f4e90db0618f6fff1ddd8d7c1025a77efd7","consumed_by_run":"N5K-20260826-434","result":"CONSUMED","note":"RobotFactory and Laser Systems integrated after global canonical dedup."},
@@ -36,7 +36,10 @@
     {"path":"data/pending_workers/growth_news/20260827-044000-growth-news.json","blob_sha":"74d849beb2e94c7bc19ccc142a2c6d210666f451","consumed_by_run":"N5K-20260827-443","result":"CONSUMED","note":"NeoCor and GSTZ integrated as N5K-0587 and N5K-0588 after physical canonical dedup."},
     {"path":"data/pending_workers/jobs/20260827-052706-jobs.json","blob_sha":"eede1f29629ddebd0e969ad83be06e4e958d81b8","consumed_by_run":"N5K-20260827-444","result":"CONSUMED","note":"Altapp / Selecta Service integrated as N5K-0589 after physical canonical dedup."},
     {"path":"data/pending_workers/industry/20260827-053205-industry.json","blob_sha":"a4cc9ed73d73dd88d6283c0b4262f706d5e3f6a2","consumed_by_run":"N5K-20260827-444","result":"CONSUMED","note":"Belgorod Cold Storage and PP Gofrokombinat integrated as N5K-0590 and N5K-0591 after fresh canonical review."},
-    {"path":"data/pending_workers/growth_news/20260827-053855-growth-news.json","blob_sha":"5f4bc51ffa038b901186ecf598704348c9a5ee92","consumed_by_run":"N5K-20260827-444","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"SEGZ integrated as N5K-0592; Anatomika rejected as existing canonical N5K-0536."}
+    {"path":"data/pending_workers/growth_news/20260827-053855-growth-news.json","blob_sha":"5f4bc51ffa038b901186ecf598704348c9a5ee92","consumed_by_run":"N5K-20260827-444","result":"CONSUMED_WITH_CANONICAL_DEDUP","note":"SEGZ integrated as N5K-0592; Anatomika rejected as existing canonical N5K-0536."},
+    {"path":"data/pending_workers/jobs/20260827-064400-jobs.json","blob_sha":"78d671840bf3e1b125a825b48ba92f4133b6d29c","consumed_by_run":"N5K-20260827-445","result":"CONSUMED","note":"Advanta-M Rostov and Germes-Sibir integrated as N5K-0593 and N5K-0594 after physical canonical dedup."},
+    {"path":"data/pending_workers/industry/20260827-063616-industry.json","blob_sha":"364b999293285954cf2996268c65f0056e3731e8","consumed_by_run":"N5K-20260827-445","result":"CONSUMED","note":"CHZSA integrated as N5K-0595 after canonical review; stale revenue was not used as current scale evidence."},
+    {"path":"data/pending_workers/growth_news/20260827-065200-growth-news.json","blob_sha":"8d68c8db415a6a69893ed2f590a2eecba30f689b","consumed_by_run":"N5K-20260827-445","result":"CONSUMED","note":"Alkor Bio and MVSZ integrated as N5K-0596 and N5K-0597 after fresh canonical review."}
   ],
   "outreach_sent": 0
 }
