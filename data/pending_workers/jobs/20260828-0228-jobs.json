@@ -1,0 +1,101 @@
+{
+  "schema_version": "pending_worker_v1",
+  "lane": "jobs",
+  "created_at": "2026-08-28T02:28:00+03:00",
+  "source_head_sha": "a865db69d8d132468f5afe6cb258fb32bc6bd52a",
+  "source_canonical_run": "N5K-20260828-463",
+  "source_canonical_count": 480,
+  "source_contactable_count": 480,
+  "canonical_write": false,
+  "outreach": false,
+  "worker_funnel": {
+    "raw_employer_level_after_within_worker_name_dedup": 80,
+    "raw_scope_note": "80 employer-level source identities were audited across current regional/direct-employer job-board pools. Early rejects were not assigned full legal keys, so this does not claim a globally identity-proven 80-company set beyond this worker pass.",
+    "fast_gate": 6,
+    "deep_check": 3,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicates_plus_early_rejects": 74,
+    "duplicate_early_reject_rate": 0.925,
+    "source_switch_triggered": true,
+    "source_switch_note": "Broad role/city pools were heavily saturated with irrelevant, weak-scale, stale or already-seen employers; discovery was rotated across Yekaterinburg, Krasnodar, Chelyabinsk and Novosibirsk/direct-employer pages. Exact duplicate-vs-early-reject split on the first 20 was not separately instrumented and is not reconstructed."
+  },
+  "discovery_sources": [
+    "https://trust.jobvk.com/ekaterinburg/rukovoditely-otdela-prodazh",
+    "https://www.trust.jobvk.com/krasnodar/direktor-po-prodazham",
+    "https://baijialederuhewan.jobvk.com/chelyabinsk/direktora",
+    "https://novosibirsk.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B2-%D1%81%D1%84%D0%B5%D1%80%D0%B5-%D0%B4%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+    "https://novosibirsk.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+    "https://novosibirsk.jobrun.ru/%D0%BB%D0%B8%D0%B4%D0%B5%D1%80-%D1%80%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BE%D1%84%D0%B8%D1%81%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "OVEN / Oven",
+      "legal_name": "ООО «ОВЕН»",
+      "inn": "5406832440",
+      "ogrn": "1235400024694",
+      "legal_status": "Действующее российское частное ООО",
+      "legal_status_as_of": "2026-08-28",
+      "region": "Новосибирская область, Новосибирск",
+      "size": {
+        "revenue_2025_rub": 237597000,
+        "revenue_2024_rub": 147517000,
+        "summary": "Выручка выросла с 147,517 млн ₽ в 2024 до 237,597 млн ₽ в 2025; действующее частное ООО.",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1235400024694-ooo-ooo-oven/",
+          "https://reputation.ru/ogrn/1235400024694"
+        ]
+      },
+      "signal": {
+        "tier": "S1",
+        "type": "Коммерческий директор",
+        "date": "2026-08-25",
+        "date_note": "Job-board page observed on 2026-08-28 labels the OVEN commercial-director vacancy as posted 3 days earlier and active through 2026-09-25.",
+        "summary": "OVEN ищет коммерческого директора для масштабирования премиального бизнеса встраиваемой техники; вакансия прямо говорит о лидерстве в Сибири и цели стать №1 в России.",
+        "evidence_url": "https://novosibirsk.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+      },
+      "lpr": {
+        "name": "Ёгин Сергей Сергеевич",
+        "role": "директор; соучредитель 50%",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1235400024694-ooo-ooo-oven/",
+          "https://reputation.ru/ogrn/1235400024694"
+        ]
+      },
+      "contact_route": {
+        "type": "официальный корпоративный телефон + email + форма сайта + named business contact",
+        "phone": "8 (800) 444-54-00",
+        "email": "sales@oven-shop.ru",
+        "url": "https://oven-shop.ru/contacts",
+        "named_contact": "Алёна Земченкова — директор по развитию, +7 953 777-78-98, zemchenkova@oven-shop.ru",
+        "note": "Официальный сайт публикует общие корпоративные контакты и прямой контакт директора по развитию; адрес сайта совпадает с юридическим адресом ООО ОВЕН (Красный проспект 167/4), а 2ГИС прямо связывает бренд OVEN с ООО ОВЕН, ОГРН 1235400024694."
+      },
+      "dedup_keys": {
+        "inn": "5406832440",
+        "ogrn": "1235400024694",
+        "exact_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ ОВЕН",
+        "brand_domain": "OVEN|oven-shop.ru"
+      },
+      "dedup_check": {
+        "repository_search_inn": "no_match",
+        "repository_search_brand_domain": "no_match",
+        "checked_against_head": "a865db69d8d132468f5afe6cb258fb32bc6bd52a",
+        "final_canonical_guard_required": true
+      },
+      "evidence_urls": [
+        "https://novosibirsk.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+        "https://companies.rbc.ru/id/1235400024694-ooo-ooo-oven/",
+        "https://reputation.ru/ogrn/1235400024694",
+        "https://oven-shop.ru/",
+        "https://oven-shop.ru/contacts",
+        "https://2gis.ru/novosibirsk/firm/70000001079002734/tab/info"
+      ],
+      "qualification": "QUALIFIED",
+      "qualification_note": "SIZE, LEGAL, fresh S1 SIGNAL, current LPR and practical official contact route are evidenced. No guessed facts or template-reconstructed contacts were used."
+    }
+  ]
+}
