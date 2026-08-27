@@ -1,63 +1,54 @@
 {
-  "run_id": "N5K-20260827-449",
+  "run_id": "N5K-20260827-450",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T10:58:10+03:00",
+  "updated_at": "2026-08-27T12:59:49+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 452,
+    "baseline_count": 455,
     "target_count": 5000,
-    "current_canonical_count": 455,
-    "current_contactable_count": 455,
-    "progress_added": 3,
-    "remaining": 4545
+    "current_canonical_count": 456,
+    "current_contactable_count": 456,
+    "progress_added": 1,
+    "remaining": 4544
   },
   "funnel": {
     "discovered": 120,
-    "fast_gate_passed": 9,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 3,
-    "duplicates": 2,
-    "excluded": 115
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 118
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
       "raw": 80,
-      "duplicates_or_early_rejects": 80,
-      "qualified": 0,
-      "note": "Fresh immutable jobs worker; both worker-qualified records were already known canonical companies from prior runs and were excluded before deep write."
+      "duplicates_or_early_rejects": 79,
+      "qualified": 1,
+      "note": "Fresh immutable 20260827-123031-jobs.json. Saturated HH-heavy pool stopped after >70% duplicate+early reject on first 20; worker switched to regional/direct-employer mirrors. Koros Group passed SIZE/LEGAL/SIGNAL/LPR/CONTACT and repository pre-write dedup."
     },
     {
       "lane": "industry worker",
       "raw": 120,
       "duplicates_or_early_rejects": 119,
       "qualified": 1,
-      "note": "Fresh immutable 20260827-103647-industry.json; Rutector passed current SIZE/LEGAL/SIGNAL/LPR/CONTACT and pre-write dedup."
-    },
-    {
-      "lane": "growth/news worker",
-      "raw": 68,
-      "duplicates_or_early_rejects": 66,
-      "qualified": 2,
-      "note": "Fresh immutable 20260827-103720-growth-news.json; ULTRAFILAMENT and Енисейлесозавод passed current deep funnel."
+      "note": "Fresh immutable 20260827-113447-industry.json. SovTest ATE passed SIZE/LEGAL/SIGNAL/LPR/CONTACT and repository pre-write dedup."
     }
   ],
   "qualified_companies": [
-    "Рутектор / Rutector",
-    "ULTRAFILAMENT / Союзтекстиль-СТ",
-    "Енисейлесозавод"
+    "Совтест АТЕ / SovTest ATE"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "455_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "455_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "456_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "456_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
