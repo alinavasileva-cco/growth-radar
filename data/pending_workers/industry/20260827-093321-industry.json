@@ -1,0 +1,138 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T09:33:21+03:00",
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "baseline": {
+    "current_config_version": "2026-08-27T09:06:00+03:00",
+    "last_completed_run": "N5K-20260827-447",
+    "canonical_count": 449,
+    "contactable_count": 449,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "discovery": {
+    "source": "AGROPRODMASH 2026 official exhibitor catalogue",
+    "source_url": "https://www.agroprodmash-expo.ru/en/exhibition/exhibitors/",
+    "selection_method": "First 120 distinct Russian exhibitor identities in the current official catalogue slice, collapsing repeated rows for the same exhibitor across multiple subjects. Foreign exhibitors were excluded from this raw pool.",
+    "raw_distinct": 120,
+    "note": "The official catalogue is preliminary and current as fetched on 2026-08-27. Raw count is not reconstructed from historical worker data."
+  },
+  "funnel": {
+    "raw": 120,
+    "fast_gate": 4,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "duplicates_confirmed_before_write": 0
+  },
+  "deep_checks": [
+    {
+      "candidate": "CALLISTO VISION / ООО «КАЛЛИСТО ВИЖН»",
+      "result": "QUALIFIED"
+    },
+    {
+      "candidate": "БЕСТРОМ / ЗАО «БЕСТРОМ»",
+      "result": "REJECT_BEFORE_LEGAL_COMPLETE",
+      "reason": "Current legal entity, size and 2026 product activity were found, but current ultimate shareholder/ownership evidence was not sufficiently strong for the strict private-company gate in this worker pass; not promoted."
+    },
+    {
+      "candidate": "НПО АГРОМАШ / ООО «НПО АГРОМАШ»",
+      "result": "REJECT_SIZE",
+      "reason": "Current legal entity and management found, but reported company revenue is far below the current scale floor used by prior accepted runs."
+    },
+    {
+      "candidate": "АГРЕГАТНЫЙ ЗАВОД / ООО «АГРЕГАТНЫЙ ЗАВОД»",
+      "result": "REJECT_SIGNAL",
+      "reason": "Current scale/legal data found, but 2025 revenue contracted materially and no sufficiently strong current S1-S3 growth/transformation signal was confirmed in this pass."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "Callisto Vision",
+      "legal_name": "ООО «КАЛЛИСТО ВИЖН»",
+      "inn": "9725161234",
+      "ogrn": "1247700424322",
+      "legal_status": "active",
+      "legal_status_checked": "2026-07-08 or later in current public registries",
+      "size": {
+        "revenue_2025_rub": 1600000000,
+        "revenue_growth_2025_pct": 82.6,
+        "employees_2025": 79,
+        "evidence_urls": [
+          "https://xfirm.ru/company/9725161234",
+          "https://www.tbank.ru/business/contractor/legal/1247700424322/"
+        ]
+      },
+      "private_control": {
+        "direct_owner": "ООО «КАЛЛИСТО ХОЛДИНГС»",
+        "direct_owner_share_pct": 100,
+        "ultimate_private_owners": [
+          "Булгаков Павел Георгиевич",
+          "Харитонов Антон Юрьевич"
+        ],
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1247700424322/",
+          "https://companies.rbc.ru/id/1207700410147-obschestvo-s-ogranichennoj-otvetstvennostyu-kallisto-holdings/"
+        ]
+      },
+      "signal": {
+        "class": "S1/S3",
+        "date": "2026-05-01",
+        "summary": "KAMA FLOW announced a 700 million RUB investment into CALLISTO VISION; the company also reported on 2026-03-23 that it had increased production of marking equipment almost threefold. These are current scale-up and transformation signals.",
+        "evidence_urls": [
+          "https://callistovision.ru/news1",
+          "https://callistovision.ru/"
+        ]
+      },
+      "lpr": {
+        "name": "Булгаков Павел Георгиевич",
+        "role": "Генеральный директор",
+        "additional_owner_role": "ultimate private owner via ООО «КАЛЛИСТО ХОЛДИНГС»",
+        "evidence_urls": [
+          "https://callistovision.ru/company",
+          "https://xfirm.ru/company/9725161234",
+          "https://companies.rbc.ru/id/1207700410147-obschestvo-s-ogranichennoj-otvetstvennostyu-kallisto-holdings/"
+        ]
+      },
+      "contact": {
+        "email": "info@callistovision.ru",
+        "phone": "+7 (499) 130-74-71",
+        "contact_page": "https://callistovision.ru/contacts",
+        "commercial_route": "official company contact route",
+        "optional_sales_contact": {
+          "name": "Николай Тушавин",
+          "role": "Директор по продажам",
+          "phone": "+7 926 240-81-57",
+          "email": "nikolay.tushavin@callistovision.ru",
+          "evidence_url": "https://agroprod.callistovision.ru/"
+        }
+      },
+      "dedup": {
+        "inn_repo_search": "no match before staging",
+        "keys": [
+          "INN:9725161234",
+          "OGRN:1247700424322",
+          "LEGAL:ООО КАЛЛИСТО ВИЖН",
+          "BRAND_DOMAIN:Callisto Vision|callistovision.ru"
+        ]
+      },
+      "evidence_urls": [
+        "https://www.agroprodmash-expo.ru/en/exhibition/exhibitors/",
+        "https://callistovision.ru/details",
+        "https://callistovision.ru/contacts",
+        "https://callistovision.ru/company",
+        "https://callistovision.ru/news1",
+        "https://callistovision.ru/",
+        "https://xfirm.ru/company/9725161234",
+        "https://www.tbank.ru/business/contractor/legal/1247700424322/",
+        "https://companies.rbc.ru/amp/ogrn/1247700424322/",
+        "https://companies.rbc.ru/id/1207700410147-obschestvo-s-ogranichennoj-otvetstvennostyu-kallisto-holdings/"
+      ]
+    }
+  ]
+}
