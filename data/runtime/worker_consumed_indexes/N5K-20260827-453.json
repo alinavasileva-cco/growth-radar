@@ -1,0 +1,19 @@
+{
+  "run_id": "N5K-20260827-453",
+  "updated_at": "2026-08-27T15:04:09+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-142846-jobs.json",
+      "blob_sha": "d74adf3b83392f7482894c947fe40716ac48d94c",
+      "result": "CONSUMED",
+      "note": "ПНК-Регион / ООО «ПНК-РЕГИОН» passed canonical re-check and was integrated physically as N5K-0619 in RUN 453. Immutable worker evidence retained in place for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 464,
+  "physical_contactable_after_cycle": 464,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach_sent": 0
+}
