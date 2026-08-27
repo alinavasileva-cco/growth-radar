@@ -1,0 +1,108 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T03:27:55+03:00",
+    "source_head": "87ca82529ca51f72c58394c84135781a68427500",
+    "canonical_snapshot": {
+      "latest_verified_run": "N5K-20260827-441",
+      "canonical_contactable": "424/424",
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0,
+      "outreach": 0
+    },
+    "rules_source": "CURRENT_WORKING_CONFIG.md at source_head",
+    "funnel": {
+      "raw_distinct_employers": 80,
+      "fast_gate_passed": 4,
+      "size_passed": 1,
+      "legal_passed": 1,
+      "signal_passed": 1,
+      "lpr_passed": 1,
+      "contact_passed": 1,
+      "qualified": 1,
+      "duplicates_plus_early_rejects": 76,
+      "notes": "Initial HH/aggregator-heavy stream was treated as saturated based on the prior verified jobs-lane >70% duplicate/early-reject rate in CURRENT_WORKING_CONFIG. Discovery was rotated across other job-board/aggregator pages and direct company sources. Exact duplicate-vs-early-reject split was not separately instrumented and is not reconstructed. Four candidates received deep attention in this pass: Myakishi, TruckMotors, RND Auto Parts and ATRAX TRADE; only ATRAX TRADE passed all strict gates."
+    }
+  },
+  "qualified": [
+    {
+      "brand": "Атракс / ATRUCKS",
+      "legal_name": "ООО «АТРАКС ТРЕЙД»",
+      "inn": "1650280220",
+      "ogrn": "1141650003593",
+      "region": "Республика Татарстан",
+      "city": "Набережные Челны",
+      "segment": "B2B SaaS / транспортная логистика / автоматизация взаимодействия грузовладельцев и перевозчиков",
+      "website": "https://www.atrucks.su/",
+      "legal_status": "Действующее российское частное ООО",
+      "revenue_2025_rub": 150097000,
+      "scale_summary": "Выручка 150,097 млн руб. за 2025 год; 17 сотрудников по доступному актуальному профилю; продукт используют 325+ заводов, в системе 12 900+ транспортных компаний и 220 000+ заказов в месяц по официальному сайту.",
+      "signal_level": "S1",
+      "signal_title": "Руководитель отдела продаж в ИТ-компанию (B2B-продажи)",
+      "signal_published_date": "2026-06-28",
+      "signal_observed_active_through": "2026-08-27",
+      "signal_summary": "Компания прямо называет себя быстрорастущей IT-компанией и ищет руководителя отдела B2B-продаж для управления действующей командой и масштабирования отдела; актуальная job-board выдача показывает вакансию активной до 27.08.2026.",
+      "signal_urls": [
+        "https://samara.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D1%80%D0%BE%D0%BF-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+        "https://nesiditsa.ru/vacancy/134556704"
+      ],
+      "director": "Мадлей Дмитрий Валерьевич",
+      "owners": [
+        "Вильде Святослав Вольдемарович — 54%",
+        "Личный Фонд «Далеко» — 46%"
+      ],
+      "lpr": "Мадлей Дмитрий Валерьевич",
+      "lpr_role": "Директор ООО «АТРАКС ТРЕЙД»",
+      "contact_routes": [
+        {
+          "channel": "Phone",
+          "value": "8-800-222-33-30",
+          "source": "official website",
+          "url": "https://www.atrucks.su/"
+        },
+        {
+          "channel": "Email",
+          "value": "support@atrucks.su",
+          "source": "official website",
+          "url": "https://www.atrucks.su/"
+        },
+        {
+          "channel": "Website",
+          "value": "https://www.atrucks.su/",
+          "source": "official company site",
+          "url": "https://www.atrucks.su/"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SCALE_LPR",
+          "claim": "ООО «АТРАКС ТРЕЙД», ИНН 1650280220, ОГРН 1141650003593, действует; директор Мадлей Дмитрий Валерьевич; выручка 150,097 млн руб. за 2025 год.",
+          "url": "https://companies.rbc.ru/id/1141650003593-ooo-atraks-trejd/"
+        },
+        {
+          "type": "BRAND_LEGAL_CONTACT_SCALE",
+          "claim": "Официальный сайт прямо указывает, что система Атракс разработана ООО «АТРАКС ТРЕЙД» (ИНН 1650280220), публикует support@atrucks.su и 8-800-222-33-30, а также продуктовые масштабы 325+ заводов, 12 900+ транспортных компаний и 220 000+ заказов в месяц.",
+          "url": "https://www.atrucks.su/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "Актуальная выдача показывает вакансию руководителя отдела B2B-продаж АТРАКС ТРЕЙД, опубликованную 28.06.2026 и активную до 27.08.2026; задачи включают управление действующей командой и масштабирование отдела.",
+          "url": "https://samara.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D1%80%D0%BE%D0%BF-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "1650280220",
+        "ogrn": "1141650003593",
+        "legal_name": "ООО АТРАКС ТРЕЙД",
+        "brand_domain": "Атракс|atrucks.su"
+      },
+      "dedup_check": {
+        "repository_search_exact_inn_before_write": "NO MATCH",
+        "checked_against_head": "87ca82529ca51f72c58394c84135781a68427500"
+      },
+      "status": "QUALIFIED_PENDING_CANONICAL_WRITER"
+    }
+  ],
+  "outreach": 0
+}
