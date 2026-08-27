@@ -1,63 +1,64 @@
 {
-  "run_id": "N5K-20260827-446",
+  "run_id": "N5K-20260827-447",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T07:58:50+03:00",
+  "updated_at": "2026-08-27T09:01:32+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 442,
+    "baseline_count": 445,
     "target_count": 5000,
-    "current_canonical_count": 445,
-    "current_contactable_count": 445,
-    "progress_added": 3,
-    "remaining": 4555
+    "current_canonical_count": 449,
+    "current_contactable_count": 449,
+    "progress_added": 4,
+    "remaining": 4551
   },
   "funnel": {
-    "discovered": 120,
-    "fast_gate_passed": 7,
-    "size_check_passed": 4,
-    "legal_match_passed": 4,
+    "discovered": 110,
+    "fast_gate_passed": 11,
+    "size_check_passed": 6,
+    "legal_match_passed": 5,
     "signal_confirmed": 4,
     "lpr_identified": 4,
     "contact_route_found": 4,
-    "qualified": 3,
+    "qualified": 4,
     "duplicates": 1,
-    "excluded": 116
+    "excluded": 105
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
       "raw": 80,
       "duplicates_or_early_rejects": 79,
-      "qualified": 1,
-      "note": "Fresh immutable 20260827-072734-jobs.json; one worker-qualified candidate advanced after canonical recheck."
+      "qualified": 0,
+      "note": "Fresh immutable 20260827-083202-jobs.json. Worker-qualified Express Manufactura is already canonical as N5K-0382 / INN 7726454494, so net qualified is zero."
     },
     {
       "lane": "industry worker",
-      "raw": 120,
-      "duplicates_or_early_rejects": 119,
-      "qualified": 1,
-      "note": "Fresh immutable 20260827-073606-industry.json; one qualified industrial candidate advanced."
+      "raw": 110,
+      "duplicates_or_early_rejects": 108,
+      "qualified": 2,
+      "note": "Fresh immutable 20260827-083445-industry.json. GenMaster and Micran advanced after fresh worker verification and final canonical dedup is delegated to the physical writer."
     },
     {
       "lane": "growth/news worker",
-      "raw": 48,
-      "duplicates_or_early_rejects": 46,
-      "qualified": 1,
-      "note": "Fresh immutable 20260827-074500-growth-news.json; CHZEO advanced; Three Points Manufacturing rejected as physical canonical duplicate N5K-0538."
+      "raw": 87,
+      "duplicates_or_early_rejects": 85,
+      "qualified": 2,
+      "note": "Fresh immutable 20260827-084049-growth-news.json. ELKACABLE and SafetyLab advanced; stale or ambiguous candidates were not promoted."
     }
   ],
   "qualified_companies": [
-    "Skin Synergy / Factology",
-    "МЗ ПОТОК / Машиностроительный завод «ПОТОК»",
-    "ЧЗЭО / Челябинский завод электрооборудования"
+    "ГенМастер / GenMaster",
+    "Микран / Micran",
+    "ЭЛКА-Кабель / ELKACABLE",
+    "SafetyLab / Лаборатория безопасности"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "445_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "445_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "449_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "449_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
