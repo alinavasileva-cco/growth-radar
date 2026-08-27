@@ -1,8 +1,149 @@
 {
-  "run_id": "N5K-20260827-452",
-  "updated_at": "2026-08-27T14:00:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260827-452 integrated physically; canonical/contactable 461/461; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260827-453",
+  "updated_at": "2026-08-27T15:04:09+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 3,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0619",
+      "Brand": "ПНК-Регион",
+      "Legal Name": "ООО «ПНК-РЕГИОН»",
+      "INN": "7708281619",
+      "OGRN/OGRNIP": "1167746143234",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Металлоконструкции / опоры освещения / дорожная инфраструктура / промышленный B2B",
+      "Website": "https://pnk-region.ru/",
+      "Revenue/Scale": "Выручка 1,104889 млрд ₽ за 2025 год; действующая компания; включена в реестр МСП как средний бизнес.",
+      "Signal Level": "S1",
+      "Signal Summary": "13.08.2026 компания искала исполнительного/операционного директора; в вакансии найм прямо связан с активным ростом компании и выходом на новый этап развития.",
+      "Signal Date": "2026-08-13",
+      "Signal Source": "https://ekaterinburg.jobrun.ru/%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B9-%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D0%B9-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+      "Owner": "Черанев Роман Сергеевич — 100%",
+      "CEO": "Черанев Роман Сергеевич",
+      "LPR": "Черанев Роман Сергеевич",
+      "LPR Role": "Генеральный директор / собственник 100%",
+      "Primary Phone": "+7 (499) 397-87-24",
+      "Primary Email": "lid@pnk-region.ru",
+      "HH Contact": "",
+      "Contact Form": "https://pnk-region.ru/services/nashi-uslugi/dizayn-i-proektirovanie/",
+      "Contact Type": "official company phone/email/site route",
+      "Contact Source": "Official PNK-Region site + immutable jobs worker staging",
+      "Consulting Hypothesis": "Систематизация коммерческого управления на этапе роста: B2B pipeline, key accounts, региональная экспансия, проектные продажи, KPI и управленческий контур.",
+      "contacts": [
+        {"value": "+7 (499) 397-87-24", "channel": "phone", "type": "official_company_phone", "source": "Official PNK-Region site", "url": "https://pnk-region.ru/services/nashi-uslugi/dizayn-i-proektirovanie/", "is_lpr": false, "notes": "Corporate route"},
+        {"value": "+7 (343) 319-00-73", "channel": "phone", "type": "official_company_phone", "source": "Official PNK-Region site", "url": "https://pnk-region.ru/services/nashi-uslugi/dizayn-i-proektirovanie/", "is_lpr": false, "notes": "Regional corporate route"},
+        {"value": "lid@pnk-region.ru", "channel": "email", "type": "official_company_email", "source": "Immutable jobs worker staging 20260827-142846", "url": "https://pnk-region.ru/", "is_lpr": false, "notes": "Worker-verified corporate route"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SIZE", "claim": "Действующее ООО; ИНН 7708281619, ОГРН 1167746143234; выручка 1,104889 млрд ₽ за 2025; собственник и гендиректор Черанев Р.С.", "url": "https://companies.rbc.ru/id/1167746143234-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-pervaya-nerudnaya-korporatsiya-region/", "source": "РБК Компании"},
+        {"type": "SIGNAL", "claim": "Вакансия исполнительного/операционного директора от 13.08.2026 связывает найм с активным ростом и новым этапом развития.", "url": "https://ekaterinburg.jobrun.ru/%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B9-%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D0%B9-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0", "source": "JobRun / jobs worker"},
+        {"type": "CONTACT", "claim": "Официальные телефоны и маршрут через сайт компании.", "url": "https://pnk-region.ru/services/nashi-uslugi/dizayn-i-proektirovanie/", "source": "Official PNK-Region site"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0620",
+      "Brand": "НАРТИС",
+      "Legal Name": "ООО «ЗАВОД НАРТИС»",
+      "INN": "5019029500",
+      "OGRN/OGRNIP": "1185022004661",
+      "Region": "Вологодская область",
+      "City": "Череповец",
+      "Segment": "Интеллектуальные приборы учёта / зарядная инфраструктура / промышленная электроника / B2B",
+      "Website": "https://www.nartis.ru/",
+      "Revenue/Scale": "Выручка 27,3 млрд ₽ за 2025 год; выпуск свыше 2,1 млн единиц продукции (+17%); численность 992 человека (+22%).",
+      "Signal Level": "S2",
+      "Signal Summary": "08.07.2026 открыт новый производственный корпус 4 000 м²; инвестиции 600 млн ₽; создано 200 рабочих мест; запуск направлен на локализацию ключевых компонентов интеллектуальных счётчиков.",
+      "Signal Date": "2026-07-08",
+      "Signal Source": "https://www.nartis.ru/news/nartis-lokalizoval-proizvodstvo-klyuchevykh-komponentov-dlya-intellektualnykh-schyetchikov/",
+      "Owner": "АО «НЭК» — акционер по официальному сообщению НАРТИС",
+      "CEO": "Владимиров Олег Валерьевич",
+      "LPR": "Владимиров Олег Валерьевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (8202) 20-20-27",
+      "Primary Email": "info@nartis.ru",
+      "HH Contact": "",
+      "Contact Form": "https://www.nartis.ru/contacts/",
+      "Contact Type": "official general director reception phone/email/site",
+      "Contact Source": "Official NARTIS contacts",
+      "Consulting Hypothesis": "Коммерциализация новых мощностей и локализованной продуктовой линейки: B2B-сегментация, key accounts, экспорт, зарядная инфраструктура, pipeline и загрузка производства.",
+      "contacts": [
+        {"value": "+7 (8202) 20-20-27", "channel": "phone", "type": "official_general_director_office", "source": "Official NARTIS contacts", "url": "https://www.nartis.ru/contacts/", "is_lpr": true, "notes": "Приёмная генерального директора"},
+        {"value": "info@nartis.ru", "channel": "email", "type": "official_general_director_office_email", "source": "Official NARTIS contacts", "url": "https://www.nartis.ru/contacts/", "is_lpr": true, "notes": "Приёмная генерального директора"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "Действующее ООО; ИНН 5019029500, ОГРН 1185022004661; генеральный директор Владимиров О.В.", "url": "https://companies.rbc.ru/id/1185022004661-ooo-zavod-nartis/", "source": "РБК Компании"},
+        {"type": "SIZE", "claim": "По итогам 2025 года выручка 27,3 млрд ₽, выпуск >2,1 млн единиц (+17%), персонал 992 (+22%).", "url": "https://www.nartis.ru/news/nartis-uvelichil-vypusk-produktsii-na-17-v-2025-godu/", "source": "Official NARTIS site"},
+        {"type": "SIGNAL", "claim": "08.07.2026 открыт корпус 4 000 м² с инвестициями 600 млн ₽ и 200 новыми рабочими местами для локализации компонентов.", "url": "https://www.nartis.ru/news/nartis-lokalizoval-proizvodstvo-klyuchevykh-komponentov-dlya-intellektualnykh-schyetchikov/", "source": "Official NARTIS site"},
+        {"type": "CONTACT", "claim": "Приёмная генерального директора: +7 (8202) 20-20-27, info@nartis.ru.", "url": "https://www.nartis.ru/contacts/", "source": "Official NARTIS contacts"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0621",
+      "Brand": "Айсорс / Isource",
+      "Legal Name": "АО «АЙСОРС»",
+      "INN": "9706009675",
+      "OGRN/OGRNIP": "1207700393977",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Инжиниринг / промышленная автоматизация / промышленные поставки / строительство / B2B",
+      "Website": "https://isource.com/",
+      "Revenue/Scale": "Выручка 158,5 млрд ₽ за 2025 год (+46,2% год к году); 210 сотрудников по актуальному публичному профилю; многопрофильная промышленно-инфраструктурная компания.",
+      "Signal Level": "S2",
+      "Signal Summary": "02–05.03.2026 компания представила флагманские продукты нового направления промышленной автоматизации на Нефтегаз-2026; официальный итог 2025 связывает рост выручки с выходом в новые сегменты — промышленную автоматизацию и строительство.",
+      "Signal Date": "2026-03-02",
+      "Signal Source": "https://isource.com/events/neftegaz-2026",
+      "Owner": "Акционеры не раскрыты в ЕГРЮЛ; держатель реестра АО «НРК-Р.О.С.Т.»",
+      "CEO": "Пономарева Светлана Анатольевна",
+      "LPR": "Пономарева Светлана Анатольевна",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 495 161-76-66",
+      "Primary Email": "support@isource.ru",
+      "HH Contact": "",
+      "Contact Form": "https://isource.com/contacts",
+      "Contact Type": "official company phone/email/contact form",
+      "Contact Source": "Official Isource contacts",
+      "Consulting Hypothesis": "Коммерческое масштабирование новых промышленных направлений: сегментация B2B, key accounts, cross-sell между бизнес-линиями, pipeline новых продуктов и управление коммерческой эффективностью.",
+      "contacts": [
+        {"value": "+7 495 161-76-66", "channel": "phone", "type": "official_company_phone", "source": "Official Isource contacts", "url": "https://isource.com/contacts", "is_lpr": false, "notes": "Corporate route"},
+        {"value": "support@isource.ru", "channel": "email", "type": "official_company_email", "source": "Official Isource contacts", "url": "https://isource.com/contacts", "is_lpr": false, "notes": "Corporate route"},
+        {"value": "https://isource.com/contacts", "channel": "web_form", "type": "official_contact_form", "source": "Official Isource contacts", "url": "https://isource.com/contacts", "is_lpr": false, "notes": "Feedback form"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SIZE", "claim": "Действующее АО; ИНН 9706009675, ОГРН 1207700393977; выручка 158,5 млрд ₽ за 2025 (+46%); генеральный директор Пономарева С.А.", "url": "https://companies.rbc.ru/id/1207700393977-isource/", "source": "РБК Компании"},
+        {"type": "SIZE", "claim": "Официальные итоги 2025: выручка 158,5 млрд ₽ (+46,2%); рост обеспечен выходом в новые сегменты промышленной автоматизации и строительства.", "url": "https://isource.com/news/isource-usilenie-pozicij-na-rynke", "source": "Official Isource site"},
+        {"type": "SIGNAL", "claim": "02–05.03.2026 представлены флагманские решения направления промышленной автоматизации: Виртуальный контроллер, ПАК Викинг и ПО для ПАК ТАУ.", "url": "https://isource.com/events/neftegaz-2026", "source": "Official Isource site"},
+        {"type": "CONTACT", "claim": "Официальный телефон +7 495 161-76-66, email support@isource.ru и форма обратной связи.", "url": "https://isource.com/contacts", "source": "Official Isource contacts"}
+      ]
+    }
+  ],
+  "funnel": {
+    "discovered": 86,
+    "fast_gate_passed": 10,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 4,
+    "lpr_identified": 4,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 83
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs worker",
+      "raw": 80,
+      "duplicates_or_early_rejects": 79,
+      "qualified": 1,
+      "note": "Fresh immutable data/pending_workers/jobs/20260827-142846-jobs.json; worker stopped saturated broad HH-heavy search after >70% duplicate+early-reject and rotated to regional/direct-employer/job-board mirrors. Exact duplicate vs early-reject split was not reconstructed."
+    },
+    {
+      "lane": "low-overlap official/growth/ratings/regional verification",
+      "raw": 6,
+      "duplicates_or_early_rejects": 4,
+      "qualified": 2,
+      "note": "Only six distinct company identities that were actually brought to identity-level review are counted as raw; search-result rows, unnamed projects and broad ranking membership were not inflated into raw. Qualified: NARTIS and Isource. Other reviewed identities failed strict gate/deep-check. Additional low-overlap source families were rotated because total raw stayed below 300, but identities not individually audited were not counted."
+    }
+  ],
+  "notes": "RUN 453 uses fresh HEAD 15f03c192a94a8eace8f800cd196a78dc5599b4d and baseline 461/461. Final pre-write exact-INN search against physical leads_master found no matches for 7708281619, 5019029500 or 9706009675. Throughput target was not met: only 86 distinct identity-level raw candidates are auditable in this cycle after rotating low-overlap jobs, official, growth, ratings and regional source families; broad search-result rows and unnamed projects were deliberately not counted. Quality criteria were not weakened. Outreach=0."
 }
