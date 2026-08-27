@@ -1,0 +1,123 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-27T05:38:55+03:00",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-443",
+    "canonical_count": 433,
+    "contactable_count": 433,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "funnel": {
+    "raw_distinct_auditable_minimum": 46,
+    "fast_gate_passed": 8,
+    "size_check_passed": 5,
+    "legal_match_passed": 4,
+    "signal_confirmed": 4,
+    "lpr_identified": 3,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates_or_early_rejects": 38,
+    "note": "Целевые 100–180 raw в доступном execution window не достигнуты. В raw засчитаны только отдельные именованные компании/юрлица, фактически просмотренные по свежим growth/investment/production источникам; строки выдачи, агрегированные показатели и неидентифицируемые проекты не считались. Устаревшие кейсы не использовались как актуальный сигнал. Критерии не ослаблялись."
+  },
+  "qualified": [
+    {
+      "brand": "Анатомика",
+      "legal_name": "ООО «АНАТОМИКА»",
+      "inn": "1657194650",
+      "ogrn": "1151690031790",
+      "domain": "anatomica.ru",
+      "legal_status": "действующее российское частное ООО; актуальная операционная деятельность подтверждается запуском производства в августе 2026",
+      "size": {
+        "revenue_2025_rub": 756600000,
+        "employees_2025": 81,
+        "source": "https://companium.ru/id/1151690031790-anatomika"
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-08-20",
+        "description": "Запущено новое высокотехнологичное производство эндопротезов тазобедренного сустава полного цикла в промпарке «Зеленодольск»; инвестиции 461 млн ₽; проектная мощность около 20 тыс. комплектов в год.",
+        "sources": [
+          "https://tatcenter.ru/news/v-zelenodolske-zapustili-proizvodstvo-endoprotezov-s-investicziyami-%E2%82%BD461-mln/",
+          "https://ivfrt.ru/news/v-tatarstane-pri-uchastii-frp-sozdali-proizvodstvo-komponentov-dlya-endoprotezov-tazobedrennogo-sust/"
+        ]
+      },
+      "lpr": {
+        "name": "Азат Наилевич Замалиев",
+        "role": "директор",
+        "current_since": "2026-03-16",
+        "source": "https://companium.ru/id/1151690031790-anatomika"
+      },
+      "contact": {
+        "type": "official_company_route",
+        "phone": "+7 (843) 570-05-05",
+        "email": "5700505@mail.ru",
+        "url": "https://anatomica.ru/",
+        "source": "https://anatomica.ru/"
+      },
+      "dedup_keys": [
+        "1657194650",
+        "1151690031790",
+        "ООО АНАТОМИКА",
+        "Анатомика|anatomica.ru"
+      ],
+      "dedup_check": "Repository search on fresh main returned no matches for brand/legal/INN before staging; final physical canonical dedup remains canonical-writer responsibility.",
+      "status": "QUALIFIED"
+    },
+    {
+      "brand": "СЭГЗ",
+      "legal_name": "АО «Сарапульский электрогенераторный завод»",
+      "inn": "1827001683",
+      "ogrn": "1021800992190",
+      "domain": "segz.ru",
+      "legal_status": "действующее российское АО; вид собственности — частная; эмитент раскрывает сведения в 2026 году",
+      "size": {
+        "net_profit_2025_rub": 987900000,
+        "size_evidence": "Крупное действующее промышленное предприятие; по итогам 2025 года чистая прибыль 987,9 млн ₽, 558 млн ₽ направлены на развитие.",
+        "source": "https://rg.ru/2026/04/22/akcionery-segz-napravili-565-procenta-pribyli-na-razvitie-predpriiatiia.html"
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-08-18",
+        "description": "Запущено серийное производство электромагнитных рельсовых тормозов для трамваев с полным технологическим циклом; инвестиции 167 млн ₽; мощность до 1,2 тыс. изделий в год.",
+        "sources": [
+          "https://www.kommersant.ru/doc/8891797",
+          "https://xn--b1aedfedwrdfl5a6k.xn--p1ai/article/v-sarapule-zapustili-proizvodstvo-analoga-cheshskikh-relsovykh-tormozov"
+        ]
+      },
+      "lpr": {
+        "name": "Алексей Беляев",
+        "role": "генеральный директор",
+        "source": "https://rg.ru/2026/06/03/profkom-segz-ocenka-horosho.html"
+      },
+      "contact": {
+        "type": "official_company_route",
+        "phone": "+7 (34147) 97-2-01",
+        "email": "info@segz.ru",
+        "url": "https://segz.ru/",
+        "source": "https://segz.ru/company/informatsiya-dlya-smi/19%20%28%D1%82%29%20-%20%D0%9E%D0%B1%D1%8A%D0%B5%D0%BC%20%D0%B8%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D1%8D%D1%8D%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B5%D0%BD%D1%81%D0%B0%D1%86%D0%B8%D0%B8%20%D0%BF%D0%BE%D1%82%D0%B5%D1%80%D1%8C%20%D0%B7%D0%B0%20%D0%BC%D0%B0%D1%80%D1%82%202024.pdf"
+      },
+      "ownership_evidence": {
+        "type": "private",
+        "source": "https://www.finmarket.ru/database/organization/?fid=92327"
+      },
+      "dedup_keys": [
+        "1827001683",
+        "1021800992190",
+        "АО САРАПУЛЬСКИЙ ЭЛЕКТРОГЕНЕРАТОРНЫЙ ЗАВОД",
+        "СЭГЗ|segz.ru"
+      ],
+      "dedup_check": "Repository search on fresh main returned no matches for brand/legal/INN before staging; final physical canonical dedup remains canonical-writer responsibility.",
+      "status": "QUALIFIED"
+    }
+  ],
+  "rejected_notes": [
+    "Кая Трейд: свежий инвестпроект подтверждён, но актуальный масштаб 42,0 млн ₽ выручки за 2025 год / микро — SIZE не пройден.",
+    "Профрегион: сильный инвестсигнал есть, но текущий масштаб 187,3 млн ₽ и конфликт между действующим торговым юрлицом и новым юрлицом проекта требуют дополнительной legal/size привязки; не QUALIFIED.",
+    "ГФК-Русь: свежая публикация описывает трансформационный кейс, но учредитель — иностранное юрлицо; не использовано как российская частная компания текущего профиля.",
+    "Курский аккумуляторный завод: growth signal и contact route подтверждены, но обнаружен конфликт актуального ЛПР между официально-отраслевым источником и реестровыми данными; не QUALIFIED до разрешения конфликта.",
+    "NexTouch, Bitrobotics, Логика молока, Hobby World, ТехноСонус-Центр, ГалВент и другие ранее прошедшие/известные кандидаты не засчитывались как новые qualified этого worker-прохода."
+  ],
+  "outreach_sent": 0
+}
