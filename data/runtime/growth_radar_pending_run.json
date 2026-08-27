@@ -1,8 +1,102 @@
 {
-  "run_id": "N5K-20260827-454R1",
-  "updated_at": "2026-08-27T16:03:53+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260827-454R1 integrated physically; canonical/contactable 469/469; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260827-455",
+  "updated_at": "2026-08-27T17:05:48+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "campaign_id": "new_5000",
+  "qualified_staged_not_counted": 2,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0627",
+      "Brand": "Future Vision",
+      "Legal Name": "ООО \"КОМПЭЛС ИНТЕГРАЦИЯ\"",
+      "INN": "6658436206",
+      "OGRN/OGRNIP": "1136658018683",
+      "Region": "Свердловская область",
+      "City": "Екатеринбург",
+      "Segment": "Светодиодные экраны / мультимедийные B2B-решения",
+      "Website": "https://future-vision.ru/",
+      "Revenue/Scale": "Выручка около 1,45 млрд ₽ за 2025 год; российский производитель светодиодных экранов и мультимедийных решений.",
+      "Signal Level": "S1",
+      "Signal Summary": "20.08.2026 подтверждена свежая вакансия руководителя отдела продаж Future Vision; официальный раздел вакансий содержит эту позицию с задачами руководителя B2B-продаж.",
+      "Signal Date": "2026-08-20",
+      "Signal Source": "https://future-vision.ru/about/vacancies/",
+      "Owner": "Не восстанавливается догадкой",
+      "CEO": "",
+      "LPR": "Помозов Александр Игоревич",
+      "LPR Role": "Директор",
+      "Primary Phone": "8 800 333-69-68",
+      "Primary Email": "info@future-vision.ru",
+      "HH Contact": "",
+      "Contact Form": "https://future-vision.ru/contacts/",
+      "Contact Type": "official company phone + email + contact form",
+      "Contact Source": "Official Future Vision contacts",
+      "Consulting Hypothesis": "Масштабирование B2B-продаж: управление отделом продаж, pipeline, CRM, KPI и развитие коммерческого контура.",
+      "contacts": [
+        {"value": "8 800 333-69-68", "channel": "phone", "type": "official_company_phone", "source": "Official Future Vision contacts", "url": "https://future-vision.ru/contacts/", "is_lpr": false, "notes": "Corporate route"},
+        {"value": "+7 (343) 237-26-56", "channel": "phone", "type": "official_sales_phone", "source": "Official Future Vision contacts", "url": "https://future-vision.ru/contacts/", "is_lpr": false, "notes": "Sales route"},
+        {"value": "info@future-vision.ru", "channel": "email", "type": "official_company_email", "source": "Official Future Vision contacts", "url": "https://future-vision.ru/contacts/", "is_lpr": false, "notes": "Corporate route"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SIZE", "claim": "Действующее ООО КОМПЭЛС ИНТЕГРАЦИЯ; ИНН 6658436206, ОГРН 1136658018683; выручка около 1,45 млрд ₽ за 2025 год.", "url": "https://companium.ru/id/1136658018683-kompehls-integraciya", "source": "Companium / jobs worker"},
+        {"type": "BRAND_LEGAL", "claim": "Официальная страница Future Vision указывает ООО Компэлс Интеграция, ИНН 6658436206 и ОГРН 1136658018683.", "url": "https://future-vision.ru/contacts/", "source": "Official Future Vision site"},
+        {"type": "SIGNAL", "claim": "Свежий S1 hiring signal: руководитель отдела продаж, датированная выдача 20.08.2026 и официальная вакансия компании.", "url": "https://future-vision.ru/about/vacancies/", "source": "Official Future Vision vacancies / jobs worker"},
+        {"type": "LPR", "claim": "Помозов Александр Игоревич подтвержден как директор.", "url": "https://companium.ru/id/1136658018683-kompehls-integraciya", "source": "Companium / jobs worker"},
+        {"type": "CONTACT", "claim": "Официальные телефоны и корпоративный email info@future-vision.ru опубликованы на странице контактов компании.", "url": "https://future-vision.ru/contacts/", "source": "Official Future Vision contacts"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0628",
+      "Brand": "BREEZ / БРИЗ — Климатические системы",
+      "Legal Name": "ООО «КОМПАНИЯ БИС»",
+      "INN": "7706739445",
+      "OGRN/OGRNIP": "1107746518626",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Климатическое оборудование / промышленное производство",
+      "Website": "https://breez.ru/",
+      "Revenue/Scale": "Выручка 22,531576 млрд ₽ за 2025 год; действующая российская производственная компания.",
+      "Signal Level": "S2",
+      "Signal Summary": "12.03.2026 подтверждена производственная трансформация: локализация процессов, автоматизация Climate Master, сокращение обработки заказов на 30%, рост производительности на сотрудника на 25%; публикация сообщает об удвоении объема выпуска ежегодно с 2023 года.",
+      "Signal Date": "2026-03-12",
+      "Signal Source": "https://airventmoscow.ru/ru/about/news/2026/march/12/uchastniki-airvent-award-2026/",
+      "Owner": "Устинов Вадим Евгеньевич — 100%",
+      "CEO": "",
+      "LPR": "Устинов Вадим Евгеньевич",
+      "LPR Role": "100% собственник",
+      "Primary Phone": "+7 (495) 150-50-05",
+      "Primary Email": "climate@breez.ru",
+      "HH Contact": "",
+      "Contact Form": "https://breez.ru/",
+      "Contact Type": "official company phone + email",
+      "Contact Source": "Official BREEZ site",
+      "Consulting Hypothesis": "Коммерческое сопровождение масштабирования производства: B2B pipeline, загрузка мощностей, CRM/KPI и развитие каналов продаж.",
+      "contacts": [
+        {"value": "+7 (495) 150-50-05", "channel": "phone", "type": "official_company_phone", "source": "Official BREEZ site", "url": "https://breez.ru/", "is_lpr": false, "notes": "Corporate route"},
+        {"value": "climate@breez.ru", "channel": "email", "type": "official_company_email", "source": "Official BREEZ site", "url": "https://breez.ru/", "is_lpr": false, "notes": "Corporate route"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SIZE", "claim": "Действующее ООО Компания БИС; ИНН 7706739445, ОГРН 1107746518626; выручка 22,531576 млрд ₽ за 2025 год.", "url": "https://companies.rbc.ru/id/1107746518626-ooo-kompaniya-bis/", "source": "РБК Компании / industry worker"},
+        {"type": "SIGNAL", "claim": "12.03.2026 подтверждена производственная трансформация и автоматизация с измеримыми эффектами по скорости обработки заказов и производительности.", "url": "https://airventmoscow.ru/ru/about/news/2026/march/12/uchastniki-airvent-award-2026/", "source": "AIRVent 2026 / industry worker"},
+        {"type": "LPR", "claim": "Устинов Вадим Евгеньевич подтвержден как 100% собственник ООО Компания БИС.", "url": "https://companies.rbc.ru/id/1107746518626-ooo-kompaniya-bis/", "source": "РБК Компании / industry worker"},
+        {"type": "CONTACT", "claim": "Официальный телефон и корпоративный email climate@breez.ru опубликованы компанией.", "url": "https://breez.ru/", "source": "Official BREEZ site"}
+      ]
+    }
+  ],
+  "funnel": {
+    "discovered": 180,
+    "fast_gate_passed": 7,
+    "size_check_passed": 4,
+    "legal_match_passed": 4,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 178
+  },
+  "lane_metrics": [
+    {"lane": "jobs/20260827-162700", "raw_surfaced": 80, "worker_fast_gate": 6, "worker_deep_check": 5, "worker_size": 3, "worker_legal": 3, "worker_signal": 1, "worker_lpr": 1, "worker_contact": 1, "worker_qualified": 1, "canonical_rechecked": 1, "canonical_qualified": 1, "candidate": "Future Vision"},
+    {"lane": "industry/20260827-162607", "raw_surfaced": 100, "worker_fast_gate": 1, "worker_size": 1, "worker_legal": 1, "worker_signal": 1, "worker_lpr": 1, "worker_contact": 1, "worker_qualified": 1, "canonical_rechecked": 1, "canonical_qualified": 1, "candidate": "BREEZ / БРИЗ — Климатические системы", "lane_stop_rule": ">70% duplicate+early reject; sources rotated"}
+  ],
+  "notes": "Canonical writer re-read fresh main and current configuration, processed the two fresh immutable worker staging files after RUN 454R1, globally deduplicated the staged identities and repeated exact INN pre-write searches against current main: no canonical match for 6658436206 or 7706739445. Worker raw surfaced total is 180; no arithmetic claim of globally proven distinctness across worker pools is made beyond persisted worker-level distinct pools. No additional fresh growth_news or official_owner worker staging appeared after RUN 454R1 in the checked pending_worker lanes. Quality gates were not weakened. Outreach 0."
 }
