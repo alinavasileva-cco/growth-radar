@@ -1,0 +1,156 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T09:35:00+03:00",
+    "source_head": "ea3691b15478bd99c1bd401d40cffc951c62a80c",
+    "source_run": "N5K-20260827-447",
+    "canonical_snapshot": {
+      "canonical": 449,
+      "contactable": 449,
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0
+    },
+    "rules_source": "CURRENT_WORKING_CONFIG.md version 2026-08-27T09:06:00+03:00",
+    "outreach": 0,
+    "canonical_write": false,
+    "raw_unique_employers_audited": 80,
+    "source_strategy": {
+      "saturated_lane_stopped": "remote IT/B2B job-board pool",
+      "reason": "duplicate+early-reject rate exceeded 70% in the initial 20-employer sample; execution switched to regional HH/job-board and direct-employer vacancy pools",
+      "fallback_sources": [
+        "remote-job.ru B2B/IT sales leadership pages 1-3",
+        "hh.ru regional vacancy pages: Ekaterinburg, Novosibirsk, Kirov",
+        "DreamJob direct-employer vacancy mirrors",
+        "Facancy current commercial-leadership vacancies"
+      ]
+    },
+    "funnel": {
+      "raw": 80,
+      "fast_gate_passed": 5,
+      "deep_check": 3,
+      "size_passed": 2,
+      "legal_passed": 2,
+      "signal_passed": 1,
+      "lpr_passed": 1,
+      "contact_passed": 1,
+      "qualified": 1,
+      "duplicates_plus_early_rejects": 79
+    },
+    "notes": "Raw count is employer-level, not vacancy-row count. Exact duplicate-vs-early-reject split was not separately instrumented and is not reconstructed. Candidates failing current scale or unambiguous vacancy-to-legal linkage were rejected rather than inferred."
+  },
+  "qualified": [
+    {
+      "brand": "SAMSAN / Самсан",
+      "legal_name": "ООО \"САМСАН\"",
+      "inn": "2543107582",
+      "ogrn": "1172536000240",
+      "region": "Приморский край",
+      "city": "Владивосток",
+      "segment": "дорожно-строительная техника, строительное оборудование, B2B",
+      "website": "https://ru.samsan.pro/",
+      "legal_status": "Действующее частное ООО",
+      "size": {
+        "revenue_2025_rub": 192444000,
+        "profit_2025_rub": 29189000,
+        "employees_reference": 12,
+        "source_urls": [
+          "https://checko.ru/company/samsan-1172536000240",
+          "https://companies.rbc.ru/id/1172536000240-ooo-samsan/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-24",
+        "summary": "Прямой работодатель SAMSAN ищет руководителя отдела продаж; компания занимается производством и продажей профессиональной дорожной и строительной техники. Вакансия открыта на управленческую функцию продаж в действующем B2B-направлении.",
+        "source_urls": [
+          "https://dreamjob.ru/employers/467582/vakansii/135587895",
+          "https://vladivostok.hh.ru/employer/2645299"
+        ]
+      },
+      "owner": {
+        "name": "Кругликов Виктор Анатольевич",
+        "role": "Директор и единственный учредитель (100%)",
+        "source_urls": [
+          "https://checko.ru/company/samsan-1172536000240",
+          "https://companies.rbc.ru/id/1172536000240-ooo-samsan/"
+        ]
+      },
+      "lpr": {
+        "name": "Кругликов Виктор Анатольевич",
+        "role": "Директор / собственник",
+        "source_urls": [
+          "https://checko.ru/company/samsan-1172536000240"
+        ]
+      },
+      "contact_route": {
+        "phones": [
+          "+7 (908) 975-99-31",
+          "+7 (903) 667-99-31"
+        ],
+        "emails": [
+          "sales@samsan.pro"
+        ],
+        "urls": [
+          "https://www.stanqi.ru/",
+          "https://ru.samsan.pro/",
+          "https://primexport.ru/ru/import/importer/1243"
+        ],
+        "notes": "Официальные корпоративные контакты и direct-employer vacancy route. Primexport profile dated 23.05.2026 additionally identifies Viktor Kruglikov as company head and gives the corporate sales route."
+      },
+      "brand_legal_evidence": [
+        {
+          "claim": "Официальный российский сайт публикует ИНН 2543107582 и корпоративный sales@samsan.pro для SAMSAN.",
+          "url": "https://www.stanqi.ru/"
+        },
+        {
+          "claim": "HH employer page identifies ООО САМСАН as the employer for the SAMSAN road/construction equipment business.",
+          "url": "https://vladivostok.hh.ru/employer/2645299"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО САМСАН, ИНН 2543107582, ОГРН 1172536000240, действует; частная собственность.",
+          "url": "https://checko.ru/company/samsan-1172536000240"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "Выручка за 2025 год 192,444 млн руб.; чистая прибыль 29,189 млн руб.",
+          "url": "https://checko.ru/company/samsan-1172536000240"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "24.08.2026 опубликована вакансия руководителя отдела продаж SAMSAN во Владивостоке.",
+          "url": "https://dreamjob.ru/employers/467582/vakansii/135587895"
+        },
+        {
+          "type": "LPR",
+          "claim": "Кругликов Виктор Анатольевич — директор и учредитель 100% ООО САМСАН.",
+          "url": "https://checko.ru/company/samsan-1172536000240"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует +7 (908) 975-99-31, +7 (903) 667-99-31 и sales@samsan.pro.",
+          "url": "https://www.stanqi.ru/"
+        },
+        {
+          "type": "CURRENT_COMPANY_PROFILE",
+          "claim": "Каталог Primexport от 23.05.2026 описывает ООО Самсан как торгово-производственную компанию полного цикла, указывает руководителя Виктора Кругликова и корпоративный контакт sales@samsan.pro.",
+          "url": "https://primexport.ru/ru/import/importer/1243"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "2543107582",
+        "ogrn": "1172536000240",
+        "legal_name": "ООО САМСАН",
+        "brand_domain": "SAMSAN|samsan.pro"
+      },
+      "dedup_check": {
+        "repository_exact_inn_search": "no match before staging",
+        "checked_at_source_head": "ea3691b15478bd99c1bd401d40cffc951c62a80c"
+      },
+      "decision": "QUALIFIED"
+    }
+  ]
+}
