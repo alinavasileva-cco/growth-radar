@@ -1,0 +1,134 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T13:32:41+03:00",
+    "source_head": "65d1f19bc82a3ffa55e8ddfa50ba9d298c67f9a4",
+    "source_config": "CURRENT_WORKING_CONFIG.md",
+    "canonical_snapshot": {
+      "last_completed_run": "N5K-20260827-451",
+      "canonical": 457,
+      "contactable": 457,
+      "integrity": "PASS",
+      "orphan_contacts": 0,
+      "orphan_evidence": 0
+    },
+    "funnel": {
+      "raw_unique_employers_reviewed": 80,
+      "fast_gate_passed": 5,
+      "deep_check_started": 4,
+      "size_passed": 2,
+      "legal_passed": 2,
+      "signal_passed": 1,
+      "lpr_passed": 1,
+      "contact_passed": 1,
+      "qualified": 1
+    },
+    "lane_control": {
+      "initial_jobs_pool_saturated": true,
+      "duplicate_plus_early_reject_rate_first_20": ">70%",
+      "action": "stopped saturated broad HH pool and switched to current regional/direct-employer pages for Kazan, Krasnoyarsk, Novosibirsk and Tyumen",
+      "raw_count_note": "80 distinct employer-level candidates were actually reviewed across current HH employer pages; repeated employers were counted once. The first 20 were dominated by non-target roles, repeated employers and obvious weak-fit listings, so the lane was rotated as required."
+    },
+    "discovery_sources": [
+      "https://kazan.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b/ot_pryamih_rabotodateley",
+      "https://krasnoyarsk.hh.ru/vacancies/rukovoditel-otdela-prodazh-b2b",
+      "https://novosibirsk.hh.ru/vacancies/rukovoditel-napravleniya-otdela-prodazh/za_poslednie_tri_dnya",
+      "https://tyumen.hh.ru/vacancies/rukovoditel-otdela-optovyh-prodazh"
+    ],
+    "deep_check_rejects": [
+      {
+        "candidate": "Комплектика / ООО КОМПЛЕКТИКА",
+        "reason": "SIZE reject: verified 2025 revenue 26.51m RUB and 9 employees; insufficient current scale for this funnel."
+      },
+      {
+        "candidate": "РВД-Завод",
+        "reason": "SIGNAL reject: legal entity and 2025 scale were verifiable, but the verifiable head-of-sales vacancy found in deep-check was dated 2025-12-05; no sufficiently fresh 2026 S1-S3 vacancy-level signal was confirmed without inference."
+      },
+      {
+        "candidate": "Сибэлкон",
+        "reason": "LEGAL/SIZE reject: current web results map the brand to multiple same-name legal entities and contradictory financial profiles; no reliable vacancy→legal→current-scale chain was established without guessing."
+      }
+    ],
+    "outreach": 0
+  },
+  "qualified": [
+    {
+      "brand": "YANS / ЯНС товары для HoReCa",
+      "legal_name": "ООО \"ЯНС\"",
+      "inn": "5402056250",
+      "ogrn": "1195476072527",
+      "region": "Новосибирская область",
+      "city": "Новосибирск",
+      "segment": "оптовая торговля товарами для HoReCa, упаковкой и сопутствующими товарами; собственные торговые марки",
+      "legal_status": "Действующее российское ООО; форма собственности по реестровому профилю — совместная частная и иностранная собственность",
+      "scale": {
+        "revenue_2025_rub": 389275000,
+        "employees_2025": 34,
+        "source": "https://companium.ru/id/1195476072527-yans"
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-25/2026-08-27",
+        "date_precision": "vacancy is present on the HH page explicitly limited to postings from the last 3 days, crawled on 2026-08-27; exact day inside this 3-day window was not exposed in the retrieved page and is therefore not invented",
+        "summary": "ООО ЯНС ищет Руководителя отдела продаж в Новосибирске; вакансия находится в актуальной выдаче HH за последние три дня and requires more than 6 years of experience, confirming an active senior sales-management need.",
+        "url": "https://novosibirsk.hh.ru/vacancies/rukovoditel-napravleniya-otdela-prodazh/za_poslednie_tri_dnya"
+      },
+      "lpr": {
+        "director": "Филиппович Денис Петрович",
+        "owners": [
+          "Ананян Гурген Ашотович",
+          "Филиппович Денис Петрович"
+        ],
+        "source": "https://companium.ru/id/1195476072527-yans"
+      },
+      "contact_route": {
+        "type": "official company requisites + current direct-employer vacancy",
+        "phone": "+7 (383) 388-70-07",
+        "email": "buh@yan-s.ru",
+        "official_requisites_url": "https://yan-s.ru/include/common/requisites/yans_rus_en.pdf",
+        "vacancy_url": "https://novosibirsk.hh.ru/vacancies/rukovoditel-napravleniya-otdela-prodazh/za_poslednie_tri_dnya",
+        "note": "The requisites PDF explicitly binds the phone/email/domain to ООО ЯНС, INN 5402056250, OGRN 1195476072527. The HH listing provides an additional practical direct-employer response route."
+      },
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО ЯНС is active; INN 5402056250, OGRN 1195476072527.",
+          "url": "https://companies.rbc.ru/id/1195476072527-obschestvo-s-ogranichennoj-otvetstvennostyu-yans/"
+        },
+        {
+          "type": "SCALE",
+          "claim": "2025 revenue 389.275m RUB; 34 employees according to the current company profile based on FNS/Rosstat data.",
+          "url": "https://companium.ru/id/1195476072527-yans"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "Current HH page for vacancies posted in the last three days lists ООО ЯНС as hiring a Руководитель отдела продаж in Novosibirsk.",
+          "url": "https://novosibirsk.hh.ru/vacancies/rukovoditel-napravleniya-otdela-prodazh/za_poslednie_tri_dnya"
+        },
+        {
+          "type": "LPR",
+          "claim": "Director: Филиппович Денис Петрович; current public profiles also identify founders Ананян Гурген Ашотович and Филиппович Денис Петрович.",
+          "url": "https://companium.ru/id/1195476072527-yans"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Official company card states +7(383)388-70-07 and buh@yan-s.ru for ООО ЯНС, INN 5402056250, OGRN 1195476072527.",
+          "url": "https://yan-s.ru/include/common/requisites/yans_rus_en.pdf"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "5402056250",
+        "ogrn": "1195476072527",
+        "legal_name": "ООО ЯНС",
+        "brand": "YANS / ЯНС",
+        "domain": "yan-s.ru"
+      },
+      "dedup_check": {
+        "repository_exact_inn_search": "no matches immediately before staging",
+        "repository_exact_ogrn_brand_search": "no matches immediately before staging",
+        "checked_against_head": "65d1f19bc82a3ffa55e8ddfa50ba9d298c67f9a4"
+      },
+      "decision": "QUALIFIED"
+    }
+  ]
+}
