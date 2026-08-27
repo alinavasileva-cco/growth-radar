@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-08-27T04:08:00+03:00",
+  "generated_at": "2026-08-27T04:56:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-442",
-  "current_run_id": "N5K-20260827-442",
+  "latest_completed_run_id": "N5K-20260827-443",
+  "current_run_id": "N5K-20260827-443",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 430,
-  "contactable_verified": 430,
+  "canonical_pool_verified": 433,
+  "contactable_verified": 433,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4570,
+  "remaining_to_target": 4567,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_442": {
+  "run_443": {
     "raw_discovered": 120,
-    "fast_gate_passed": 11,
-    "size_check_passed": 8,
-    "legal_match_passed": 8,
-    "signal_confirmed": 6,
-    "lpr_identified": 6,
-    "contact_route_found": 6,
-    "qualified": 6,
-    "physically_integrated": 6,
-    "duplicates": 0,
-    "excluded": 114,
+    "fast_gate_passed": 7,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 4,
+    "lpr_identified": 4,
+    "contact_route_found": 4,
+    "qualified": 3,
+    "physically_integrated": 3,
+    "duplicates": 2,
+    "excluded": 115,
     "lane_metrics": [
       {
         "lane": "jobs worker",
-        "raw": 80,
-        "duplicates_or_early_rejects": 76,
+        "raw": 40,
+        "duplicates_or_early_rejects": 34,
         "qualified": 1,
-        "note": "Fresh immutable 20260827-032755-jobs.json. Source saturation >70%; only ATRAX advanced."
+        "note": "Fresh immutable 20260827-043040-jobs.json. Worker-qualified IBMM was rejected by physical canonical dedup because INN 5032334982 already exists as N5K-0355; COSYMA advanced."
       },
       {
         "lane": "industry worker",
         "raw": 120,
-        "duplicates_or_early_rejects": 117,
-        "qualified": 2,
-        "note": "Fresh immutable 20260827-033719-industry.json. Three worker-qualified were rechecked; M.K. Aseptica was rejected by canonical writer because the fresh evidence did not establish a sufficiently specific S1-S3 change signal."
+        "duplicates_or_early_rejects": 119,
+        "qualified": 1,
+        "note": "Fresh immutable 20260827-043559-industry.json. STELKON advanced after canonical review."
       },
       {
         "lane": "growth/news worker",
-        "raw": 62,
-        "duplicates_or_early_rejects": 51,
-        "qualified": 3,
-        "note": "Fresh immutable 20260827-034800-growth-news.json; current 2026 expansion signals."
+        "raw": 30,
+        "duplicates_or_early_rejects": 28,
+        "qualified": 2,
+        "note": "Fresh immutable 20260827-044000-growth-news.json. NeoCor and GSTZ advanced after canonical review."
       }
     ]
   }
