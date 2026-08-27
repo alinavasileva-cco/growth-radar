@@ -1,63 +1,63 @@
 {
-  "run_id": "N5K-20260827-448",
+  "run_id": "N5K-20260827-449",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T09:57:27+03:00",
+  "updated_at": "2026-08-27T10:58:10+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 449,
+    "baseline_count": 452,
     "target_count": 5000,
-    "current_canonical_count": 452,
-    "current_contactable_count": 452,
+    "current_canonical_count": 455,
+    "current_contactable_count": 455,
     "progress_added": 3,
-    "remaining": 4548
+    "remaining": 4545
   },
   "funnel": {
     "discovered": 120,
-    "fast_gate_passed": 4,
-    "size_check_passed": 4,
+    "fast_gate_passed": 9,
+    "size_check_passed": 5,
     "legal_match_passed": 4,
     "signal_confirmed": 4,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
     "qualified": 3,
-    "duplicates": 1,
-    "excluded": 116
+    "duplicates": 2,
+    "excluded": 115
   },
   "lane_metrics": [
     {
       "lane": "jobs worker",
       "raw": 80,
-      "duplicates_or_early_rejects": 79,
-      "qualified": 1,
-      "note": "Fresh immutable 20260827-093500-jobs.json; saturated remote pool stopped after >70% reject/duplicate rate and worker rotated to regional/direct-employer sources."
+      "duplicates_or_early_rejects": 80,
+      "qualified": 0,
+      "note": "Fresh immutable jobs worker; both worker-qualified records were already known canonical companies from prior runs and were excluded before deep write."
     },
     {
       "lane": "industry worker",
       "raw": 120,
       "duplicates_or_early_rejects": 119,
       "qualified": 1,
-      "note": "Fresh immutable 20260827-093321-industry.json from current AGROPRODMASH 2026 exhibitor catalogue; Callisto Vision advanced."
+      "note": "Fresh immutable 20260827-103647-industry.json; Rutector passed current SIZE/LEGAL/SIGNAL/LPR/CONTACT and pre-write dedup."
     },
     {
       "lane": "growth/news worker",
-      "raw": 34,
-      "duplicates_or_early_rejects": 32,
+      "raw": 68,
+      "duplicates_or_early_rejects": 66,
       "qualified": 2,
-      "note": "Fresh immutable 20260827-093744-growth-news.json; Vitalan and Formula-K advanced on current 2026 expansion/modernization signals."
+      "note": "Fresh immutable 20260827-103720-growth-news.json; ULTRAFILAMENT and Енисейлесозавод passed current deep funnel."
     }
   ],
   "qualified_companies": [
-    "SAMSAN / Самсан",
-    "Компания Виталан / Vitalan",
-    "Формула-К / Formula-K"
+    "Рутектор / Rutector",
+    "ULTRAFILAMENT / Союзтекстиль-СТ",
+    "Енисейлесозавод"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "452_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "452_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "455_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "455_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

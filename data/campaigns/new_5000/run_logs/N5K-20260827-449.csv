@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Status,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Outreach Sent,Notes
+N5K-20260827-449,new_5000,COMPLETED,120,5,4,4,3,3,3,2,115,455,455,PASS,0,0,0,Conservative globally auditable raw minimum=120; worker pools are not summed without a complete cross-worker identity index. Three unique candidates advanced after canonical pre-write dedup. Outreach=0.; physical dedup skipped=[]

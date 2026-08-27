@@ -1,52 +1,52 @@
 {
-  "generated_at": "2026-08-27T09:57:27+03:00",
+  "generated_at": "2026-08-27T10:58:10+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260827-448",
-  "current_run_id": "N5K-20260827-448",
+  "latest_completed_run_id": "N5K-20260827-449",
+  "current_run_id": "N5K-20260827-449",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 452,
-  "contactable_verified": 452,
+  "canonical_pool_verified": 455,
+  "contactable_verified": 455,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4548,
+  "remaining_to_target": 4545,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_448": {
+  "run_449": {
     "raw_discovered": 120,
-    "fast_gate_passed": 4,
-    "size_check_passed": 4,
+    "fast_gate_passed": 9,
+    "size_check_passed": 5,
     "legal_match_passed": 4,
     "signal_confirmed": 4,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
     "qualified": 3,
     "physically_integrated": 3,
-    "duplicates": 1,
-    "excluded": 116,
+    "duplicates": 2,
+    "excluded": 115,
     "lane_metrics": [
       {
         "lane": "jobs worker",
         "raw": 80,
-        "duplicates_or_early_rejects": 79,
-        "qualified": 1,
-        "note": "Fresh immutable 20260827-093500-jobs.json; saturated remote pool stopped after >70% reject/duplicate rate and worker rotated to regional/direct-employer sources."
+        "duplicates_or_early_rejects": 80,
+        "qualified": 0,
+        "note": "Fresh immutable jobs worker; both worker-qualified records were already known canonical companies from prior runs and were excluded before deep write."
       },
       {
         "lane": "industry worker",
         "raw": 120,
         "duplicates_or_early_rejects": 119,
         "qualified": 1,
-        "note": "Fresh immutable 20260827-093321-industry.json from current AGROPRODMASH 2026 exhibitor catalogue; Callisto Vision advanced."
+        "note": "Fresh immutable 20260827-103647-industry.json; Rutector passed current SIZE/LEGAL/SIGNAL/LPR/CONTACT and pre-write dedup."
       },
       {
         "lane": "growth/news worker",
-        "raw": 34,
-        "duplicates_or_early_rejects": 32,
+        "raw": 68,
+        "duplicates_or_early_rejects": 66,
         "qualified": 2,
-        "note": "Fresh immutable 20260827-093744-growth-news.json; Vitalan and Formula-K advanced on current 2026 expansion/modernization signals."
+        "note": "Fresh immutable 20260827-103720-growth-news.json; ULTRAFILAMENT and Енисейлесозавод passed current deep funnel."
       }
     ]
   }
