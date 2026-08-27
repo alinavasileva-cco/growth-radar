@@ -1,0 +1,200 @@
+{
+  "worker": {
+    "lane": "growth_news",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-27T06:52:00+03:00",
+    "source_head_sha": "a044f136e58345ff343eb18fcbb3354d5da37966",
+    "source_config_version": "2026-08-27T06:05:00+03:00",
+    "source_canonical_run": "N5K-20260827-444",
+    "source_canonical_count": 437,
+    "source_contactable_count": 437,
+    "source_integrity": "PASS",
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "source_pool": {
+    "raw_distinct_candidates": 62,
+    "raw_definition": "Conservative count of distinct named company/project identities actually surfaced across fresh 2026 production/expansion news and sector news pages in this execution window; search-result rows and monthly aggregate counters are not counted as companies.",
+    "target_raw": "100-180",
+    "target_reached": false,
+    "note": "The execution window did not support a defensible 100 distinct identities after name-level dedup. The count is intentionally not inflated. Saturated/repeated industrial names were skipped and the search rotated toward diagnostics and technical-glass growth signals.",
+    "source_urls": [
+      "https://steklosouz.ru/",
+      "https://alkorbiogroup.ru/novosti_gruppy_kompanij_alkor_bio/gk_alkor_bio_otkryla_novoe_proizvodstvo_po_vypusku_citofluorimetra_protochnogo_fastray_ab",
+      "https://www.alkorbio.ru/",
+      "https://www.alkorbio.ru/about/requisites/"
+    ]
+  },
+  "funnel": {
+    "raw": 62,
+    "fast_gate_deep_checked": 6,
+    "size_passed": 4,
+    "legal_passed": 4,
+    "signal_passed": 3,
+    "lpr_passed": 3,
+    "contact_passed": 2,
+    "qualified": 2
+  },
+  "qualified": [
+    {
+      "brand": "Алкор Био / Alkor Bio",
+      "legal_name": "ООО «КОМПАНИЯ АЛКОР БИО»",
+      "inn": "7838370980",
+      "ogrn": "1069847549760",
+      "legal_status": "Действует",
+      "region": "Санкт-Петербург",
+      "city": "Санкт-Петербург",
+      "segment": "Лабораторная диагностика / медицинские изделия и реагенты / производство / B2B-B2G",
+      "website": "https://www.alkorbio.ru/",
+      "size": {
+        "status": "PASS",
+        "evidence": "Актуальная отчетность за 2025 год: выручка около 1,16 млрд ₽, 230 сотрудников; компания относится к среднему бизнесу. Более старые показатели 2024 года не использованы как основной масштаб.",
+        "sources": [
+          "https://firmoteka.ru/7838370980",
+          "https://companium.ru/id/1069847549760-kompaniya-alkor-bio"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "owner": "Полынцев Дмитрий Генрихович — 100%",
+        "management": "Полномочия ЕИО переданы ООО «АЛКОР БИО»; Дмитрий Полынцев публично подтвержден как президент ГК Алкор Био",
+        "sources": [
+          "https://companies.rbc.ru/amp/ogrn/1069847549760/",
+          "https://alkorbiogroup.ru/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S2",
+        "date": "2026-08-18",
+        "summary": "ГК Алкор Био сообщила об открытии нового производства собственного проточного цитофлуориметра FastRay AB; изделие зарегистрировано в Росздравнадзоре и получило номер ЕРУЛ. Это подтвержденный запуск нового собственного продуктово-производственного направления.",
+        "sources": [
+          "https://alkorbiogroup.ru/novosti_gruppy_kompanij_alkor_bio/gk_alkor_bio_otkryla_novoe_proizvodstvo_po_vypusku_citofluorimetra_protochnogo_fastray_ab",
+          "https://importfree.cnews.ru/news/line/2026-08-18_gk_alkor_bio_otkryla_novoe"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Полынцев Дмитрий Генрихович",
+        "role": "Президент ГК Алкор Био / единственный собственник ООО «КОМПАНИЯ АЛКОР БИО»",
+        "sources": [
+          "https://alkorbiogroup.ru/",
+          "https://companies.rbc.ru/amp/ogrn/1069847549760/"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "phone": "+7 (812) 677-87-79",
+        "additional_phones": ["+7 (812) 677-21-62", "+7 (812) 702-32-99", "8 800 222 55 70"],
+        "email": "info@alkorbio.ru",
+        "contact_form": "https://www.alkorbio.ru/about/requisites/",
+        "type": "Official corporate phone + email + callback/form route",
+        "source": "https://www.alkorbio.ru/about/requisites/"
+      },
+      "dedup_keys": {
+        "inn": "7838370980",
+        "ogrn": "1069847549760",
+        "legal_name": "ООО КОМПАНИЯ АЛКОР БИО",
+        "brand_domain": "АЛКОР БИО|alkorbio.ru"
+      },
+      "dedup_check": {
+        "status": "PASS_NO_MATCH_FOUND",
+        "canonical_master_exact_checks": ["Алкор Био", "7838370980"],
+        "fresh_pending_checks": ["industry staging a044f136e58345ff343eb18fcbb3354d5da37966", "jobs staging 7ea1eeceb312b7eee33f0c1a7dd9ed5ee4939a8f"],
+        "checked_before_write": true
+      },
+      "final_status": "QUALIFIED_FOR_CANONICAL_RECHECK"
+    },
+    {
+      "brand": "Маловишерский стекольный завод / МВСЗ",
+      "legal_name": "ООО «МАЛОВИШЕРСКИЙ СТЕКОЛЬНЫЙ ЗАВОД»",
+      "inn": "5307008947",
+      "ogrn": "1195321004482",
+      "legal_status": "Действует",
+      "region": "Новгородская область",
+      "city": "Малая Вишера",
+      "segment": "Техническое стекло / стеклянные изоляторы / промышленное производство / B2B",
+      "website": "https://mvsteklo.ru/",
+      "size": {
+        "status": "PASS",
+        "evidence": "Выручка 527,714 млн ₽ за 2025 год, рост 65,9% к 2024 году; актуальный профиль указывает 198 сотрудников. Использованы показатели 2025 года, а не более старые данные.",
+        "sources": [
+          "https://companies.rbc.ru/id/1195321004482-obschestvo-s-ogranichennoj-otvetstvennostyu-malovisherskij-stekolnyij-zavod/",
+          "https://b2b.house/company/OOO-MVSZ_81b7fd94-f3d4-4bcc-8bb3-aedd0dea7352/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "ceo": "Косачёв Анатолий Юрьевич",
+        "owners": "Шевцов Илья Владимирович; Мирянов Роман Вячеславович по актуальному профилю РБК Компании",
+        "private_ownership": true,
+        "sources": [
+          "https://companies.rbc.ru/id/1195321004482-obschestvo-s-ogranichennoj-otvetstvennostyu-malovisherskij-stekolnyij-zavod/",
+          "https://check.tochka.com/company/1195321004482/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S2",
+        "date": "2026-08-25",
+        "summary": "25.08.2026 отраслевой СтеклоСоюз России сообщил, что Маловишерский стекольный завод наращивает производство. Свежий сигнал продолжает подтвержденную в 2026 году модернизацию и расширение производственного контура технического стекла.",
+        "sources": [
+          "https://steklosouz.ru/",
+          "https://steklosouz.ru/news/malovisherskiy_stekolnyy_zavod_narashchivaet_proizvodstvo"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Косачёв Анатолий Юрьевич",
+        "role": "Генеральный директор / практический ЛПР",
+        "source": "https://companies.rbc.ru/id/1195321004482-obschestvo-s-ogranichennoj-otvetstvennostyu-malovisherskij-stekolnyij-zavod/"
+      },
+      "contact": {
+        "status": "PASS",
+        "phone": "+7 (902) 149-86-19",
+        "email": "andreeva.sm@mvsteklo.ru",
+        "additional_email": "8-81660-36-448@yandex.ru",
+        "website": "https://mvsteklo.ru",
+        "type": "Published company phone + email + official website route",
+        "source": "https://copp-pit-53.ru/work-with-organizations/informationAboutOrganisation/0196BD8CFD57FF4A857278B1ABB2E358"
+      },
+      "dedup_keys": {
+        "inn": "5307008947",
+        "ogrn": "1195321004482",
+        "legal_name": "ООО МАЛОВИШЕРСКИЙ СТЕКОЛЬНЫЙ ЗАВОД",
+        "brand_domain": "МАЛОВИШЕРСКИЙ СТЕКОЛЬНЫЙ ЗАВОД|mvsteklo.ru"
+      },
+      "dedup_check": {
+        "status": "PASS_NO_MATCH_FOUND",
+        "canonical_master_exact_checks": ["Маловишер", "5307008947"],
+        "fresh_pending_checks": ["industry staging a044f136e58345ff343eb18fcbb3354d5da37966", "jobs staging 7ea1eeceb312b7eee33f0c1a7dd9ed5ee4939a8f"],
+        "checked_before_write": true
+      },
+      "final_status": "QUALIFIED_FOR_CANONICAL_RECHECK"
+    }
+  ],
+  "deep_checked_rejects": [
+    {
+      "candidate": "НПП Технофильтр / Technofilter",
+      "reason": "DUPLICATE: already canonical as N5K-0519, INN 3329006121. Excluded before staging."
+    },
+    {
+      "candidate": "АО НПП ЭСТО",
+      "reason": "Not staged in this pass: fresh production signal and official contact route surfaced, but the full current SIZE/LEGAL/LPR chain was not closed to the required standard within the execution window."
+    },
+    {
+      "candidate": "DoorHan",
+      "reason": "Not staged: current expansion signal surfaced, but brand-to-specific-legal-entity mapping was not closed unambiguously for this pass."
+    },
+    {
+      "candidate": "Русская экструзионная компания / РЭК",
+      "reason": "Not staged: fresh expansion signal surfaced, but full legal/LPR/contact verification was not completed in this pass."
+    }
+  ],
+  "quality_notes": [
+    "No guessed or pattern-generated contacts were used.",
+    "Stale records were not used where fresher 2025/2026 data were available.",
+    "Canonical was not modified; final physical dedup remains with the single canonical writer.",
+    "Raw target was not reached and is reported as such rather than inflated."
+  ]
+}
