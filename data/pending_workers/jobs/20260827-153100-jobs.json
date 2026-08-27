@@ -1,0 +1,95 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T15:31:00+03:00",
+    "source_head_sha": "00320eaee17c7e13a8e3e2d578bd5e43f63ccee4",
+    "source_run": "N5K-20260827-453",
+    "canonical_count_at_start": 464,
+    "contactable_count_at_start": 464,
+    "canonical_integrity_at_start": "PASS",
+    "outreach_performed": false
+  },
+  "funnel": {
+    "raw_surfaced": 80,
+    "raw_scope": "80 distinct employer-level rows after obvious cross-page dedup from current regional/direct-employer job-board pools in Ufa, Perm, Omsk, Krasnodar and Chelyabinsk",
+    "fast_gate_pass": 7,
+    "deep_check": 2,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_early_reject_split": null,
+    "note": "Broad job-board aggregation was saturated with irrelevant/known large employers, retail chains, recruiters and weak signals; switched across regional pools. Exact duplicate-vs-early-reject split was not separately instrumented and is intentionally not reconstructed."
+  },
+  "qualified": [
+    {
+      "brand": "Завод Металлоконструкций Ресталь",
+      "legal_name": "ООО ЗМК \"РЕСТАЛЬ\"",
+      "entity_type": "ООО",
+      "inn": "0276933893",
+      "ogrn": "1180280036848",
+      "legal_status": "Действующее",
+      "region": "Республика Башкортостан",
+      "size": {
+        "basis": "2025 revenue",
+        "revenue_2025_rub": 584447000,
+        "evidence": "Бухгалтерская отчетность за 2025 год показывает выручку 584,447 млн руб.; предприятие является действующим производителем металлоконструкций.",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1180280036848-ooo-progress/",
+          "https://www.tbank.ru/business/contractor/legal/1180280036848/"
+        ]
+      },
+      "brand_legal_evidence": {
+        "description": "Официальная страница контактов и реквизитов Завода металлоконструкций Ресталь прямо указывает ООО ЗМК «РЕСТАЛЬ», ИНН 0276933893 и ОГРН 1180280036848.",
+        "url": "https://zmkrestal.ru/kontakty"
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-10",
+        "title": "Руководитель отдела продаж",
+        "description": "В актуальном job-board индексе HH присутствует вакансия руководителя отдела продаж Завода металлоконструкций Ресталь. Роль отвечает за выполнение планов продаж, оперативное руководство, развитие команды, KPI, воронку и CRM; индекс фиксирует актуальность вакансии до 10 августа 2026 года, а текущие агрегаторы продолжают показывать эту позицию в августовской выдаче.",
+        "evidence_urls": [
+          "https://jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D0%B0-%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D0%B9-%D0%B2-%D0%B3-%D0%B7%D0%B0%D1%80%D0%B5%D1%87%D0%BD%D1%8B%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+          "https://dreamjob.ru/employers/245481/vakansii/136135294"
+        ]
+      },
+      "lpr": {
+        "name": "Нагаев Айрат Наилевич",
+        "role": "директор и единственный учредитель (100%)",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1180280036848-ooo-progress/",
+          "https://b2b.house/company/OOO-ZMK-RESTAL_8400c683-00b1-4c43-af36-87435b05d308/"
+        ]
+      },
+      "contact": {
+        "type": "official_company_route",
+        "phone": "+7 960 800-64-16",
+        "secondary_phone": "+7 347 299-64-16",
+        "email": "info@zmkrestal.ru",
+        "contact_form": "https://zmkrestal.ru/kontakty",
+        "evidence_url": "https://zmkrestal.ru/kontakty"
+      },
+      "dedup": {
+        "checked_against_head": "00320eaee17c7e13a8e3e2d578bd5e43f63ccee4",
+        "keys": {
+          "inn": "0276933893",
+          "ogrn": "1180280036848",
+          "legal_name": "ООО ЗМК \"РЕСТАЛЬ\"",
+          "brand_domain": "Завод Металлоконструкций Ресталь|zmkrestal.ru"
+        },
+        "repository_exact_inn_match": false
+      },
+      "decision": "QUALIFIED",
+      "decision_reason": "Подтверждены действующее российское частное ООО, точный ИНН/ОГРН и brand→legal mapping, соответствующий масштаб по отчетности 2025 года, реальный S1 job-board сигнал с датированной августовской актуальностью, собственник/LPR и официальный практический маршрут связи. Неподтвержденные или шаблонно восстановленные контакты не использовались.",
+      "evidence_urls": [
+        "https://zmkrestal.ru/kontakty",
+        "https://companies.rbc.ru/id/1180280036848-ooo-progress/",
+        "https://www.tbank.ru/business/contractor/legal/1180280036848/",
+        "https://b2b.house/company/OOO-ZMK-RESTAL_8400c683-00b1-4c43-af36-87435b05d308/",
+        "https://dreamjob.ru/employers/245481/vakansii/136135294"
+      ]
+    }
+  ]
+}
