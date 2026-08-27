@@ -1,0 +1,108 @@
+{
+  "schema": "growth-radar-pending-worker-v1",
+  "lane": "jobs",
+  "created_at": "2026-08-27T19:20:08+03:00",
+  "source_head": "d5c20cff729bce2988a72a21235c2dcf732922ee",
+  "source_run": "N5K-20260827-457",
+  "canonical_snapshot": {
+    "canonical_count": 476,
+    "contactable_count": 476,
+    "integrity_status": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_rules": {
+    "canonical_write": false,
+    "outreach": false,
+    "funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "dedup_keys": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "brand_domain"]
+  },
+  "metrics": {
+    "raw_unique_employers": 81,
+    "target_raw_min": 80,
+    "target_raw_reached": true,
+    "deep_check": 4,
+    "qualified": 1,
+    "note": "Broad HH/job-board выдача показала высокий overlap и ранний отсев, поэтому поиск был переключён на региональные/direct-employer агрегаторы. Deep-check: VICTORY group, Nelsit, АС Безопасности, ИНКОР. АС Безопасности отклонена по масштабу (выручка 19.3 млн руб. за 2025); Nelsit не staged из-за недостаточно надёжной текущей legal+size связки без дополнительных предположений; ИНКОР не staged, потому что вакансия подходит по смыслу и масштабу, но в этом проходе не получена достаточно надёжная direct vacancy evidence-link для финального SIGNAL-аудита."
+  },
+  "raw_candidates": [
+    "VICTORY group", "Nelsit", "АС Безопасности", "Больница Профессорская Плюс", "СДЭК", "УралНет", "Паритет", "Белые ручки", "ИНКОР", "Первый Бит",
+    "УРАЛЬСКАЯ ПАЛАТА СУДЕБНОЙ ЭКСПЕРТИЗЫ", "Алтайбурмаш", "ТД Урал-К", "Метр квадратный", "Евроклима Рус", "500LUX", "МонАрх Москва Отель", "УК ФЦБ", "МАРЕМ", "Бизнес Технологии",
+    "World Class", "ЮMoney", "ЮгСтройИнвест", "ФЭЙС", "ЭНЕРГОКЛИМАТ", "РИА ИД Компаньон", "Самолет Плюс", "Компания Метта", "СБИС | Центр Внедрения", "Persona Sport",
+    "Рич Хотелс", "Академвак", "DSSL", "Автоэмали Кузбасса", "Вектор-Азия", "АЛФОРМ", "Куприянов Строй", "Астрея-Консалтинг", "ВЭЛМЕНТ", "НПО ПРОЦЕСС",
+    "МАРКЕТ ГРУПП", "ББР БАНК", "ИП Сокова Екатерина Анатольевна", "ДИАМАНТ", "ExpAs", "Первая Экспедиционная Компания", "ЗАО СММ", "АЙДИ-ИНЖИНИРИНГ", "АМЕТИСТ", "ТД Провент",
+    "SOLOPHARM", "Маркетинговое агентство FRANK", "ИКСБИТ", "Эктем Ок", "Ai-UP", "Кристалл / Балтийский центр лазерной резки", "Ньютех", "Серьёзная Мебельная Фабрика", "АГРОИМПОРТ", "АДОП Альянс",
+    "ИП Кохно Игорь Владимирович / PROCVETAEV", "Идеальный турник", "ЭЛКОД", "1С-АВТОМАТИЗАЦИЯ", "Иви", "СНС, Группа компаний", "ГЛОБАЛ ГРУПП", "Вамподряд", "Парфюм Косметик Сервис", "КАЛИНОВ РОДНИК",
+    "Крупная международная компания (химикаты для ЦБП)", "Завод-Элекон", "ПМК Профмет", "Компания Лаверна", "РРД ИНЖИНИРИНГ", "Сдэк-Служба Доставки Экспресс Курьер", "ТД Урал-К / ТехноГрес", "Hauzone", "Медиа-Холдинг / Усадьба у Альберта", "Первым Делом", "ГК САМСОН"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "VICTORY group",
+      "legal_name": "ООО \"ВИКТОРИ\"",
+      "inn": "7734451120",
+      "ogrn": "1227700076780",
+      "legal_status": "Действующее российское частное ООО",
+      "legal_status_as_of": "2026-08-25",
+      "size": {
+        "revenue_2025_rub": 2099410000,
+        "employees_2025": 334,
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-VIKTORI_0e266a7c-3c79-4aa6-b70b-237e560caa46/",
+          "https://firmoteka.ru/7734451120",
+          "https://www.tbank.ru/business/contractor/legal/1227700076780/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-15",
+        "title": "Руководитель отдела продаж (РОП) / Sales Director (со знанием английского языка)",
+        "summary": "VICTORY group ищет руководителя коммерческой команды; вакансия относится к продажам услуг рекламного агентства, работающего с крупными автохолдингами, застройщиками, медицинскими центрами и другими компаниями.",
+        "evidence_url": "https://ekaterinburg.najtiraboty.ru/svezhie-vakansii/so-znaniem-anglijskogo/"
+      },
+      "lpr": {
+        "name": "Гилимзянов Тимур Азатович",
+        "role": "Генеральный директор и 100% учредитель",
+        "evidence_urls": [
+          "https://reputation.ru/ogrn/1227700076780",
+          "https://zachestnyibiznes.ru/company/ul/1227700076780_7734451120",
+          "https://b2b.house/company/OOO-VIKTORI_0e266a7c-3c79-4aa6-b70b-237e560caa46/"
+        ]
+      },
+      "contact_route": {
+        "official_domain": "victoryagency.ru",
+        "phones": ["8 800 101-06-69", "+7 932 111-11-69"],
+        "emails": ["pr@victoryagency.ru"],
+        "telegram": "@agencyvictory",
+        "form": "Официальная форма заявки на сайте",
+        "evidence_url": "https://victoryagency.ru/contacts"
+      },
+      "brand_legal_link": {
+        "status": "confirmed",
+        "evidence_urls": [
+          "https://victoryagency.ru/contacts",
+          "https://victoryagency.ru/payment"
+        ]
+      },
+      "dedup": {
+        "checked_against_repo_at_source_head": true,
+        "exact_inn_search_result": "no_match",
+        "brand_domain_search_result": "no_match",
+        "keys": {
+          "inn": "7734451120",
+          "ogrn": "1227700076780",
+          "legal_name": "ООО ВИКТОРИ",
+          "brand_domain": "VICTORY group|victoryagency.ru"
+        }
+      },
+      "funnel": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ],
+  "outreach": 0
+}
