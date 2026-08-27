@@ -1,0 +1,34 @@
+{
+  "run_id": "N5K-20260827-446",
+  "created_at": "2026-08-27T08:03:00+03:00",
+  "campaign_id": "new_5000",
+  "consumed_workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-072734-jobs.json",
+      "blob_sha": "bc2817b9bffe5abc2158848cb568aae0b610b878",
+      "result": "CONSUMED",
+      "note": "Skin Synergy / Factology integrated as N5K-0598 after canonical review."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-073606-industry.json",
+      "blob_sha": "b5fc8c73bab4da3d56d33ac382af0f1a6c4cf29d",
+      "result": "CONSUMED",
+      "note": "MZ POTOK integrated as N5K-0599 after canonical review."
+    },
+    {
+      "path": "data/pending_workers/growth_news/20260827-074500-growth-news.json",
+      "blob_sha": "b1c870cdc92dabd541cb1d75c851f6952707cb61",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "note": "CHZEO integrated as N5K-0600; Three Points Manufacturing / TTM rejected as existing canonical N5K-0538."
+    }
+  ],
+  "physical_result": {
+    "canonical": 445,
+    "contactable": 445,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "staged": 0,
+    "outreach": 0
+  }
+}
