@@ -1,0 +1,113 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "source_head_sha": "210f7de1a8c89d535dd8d11db11d51e86a068828",
+    "source_config_version": "2026-08-27T06:05:00+03:00",
+    "source_canonical_run": "N5K-20260827-444",
+    "source_canonical_count": 437,
+    "source_contactable_count": 437,
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "funnel": {
+    "raw_surfaced": 80,
+    "raw_definition": "distinct employer-level candidates surfaced across current multi-query job-board searches after obvious cross-query duplicate removal; no vacancy-row inflation",
+    "fast_gate_deep_checks": 8,
+    "qualified": 2,
+    "duplicates_early_rejects_split": null,
+    "notes": "HH-heavy results were visibly saturated with previously seen employers and obvious rejects, so discovery was rotated to current Cataloxy, DreamJob, Nesiditsa, Facancy, JobVK/JobCareer and regional job-board mirrors. Exact duplicate-vs-early-reject counts were not separately instrumented and are intentionally not reconstructed. Deep checks included ARFA, GK Rosta, RS-Detal, UralAktiv, Germes-Sibir, Advanta-M Rostov, Ekaterinburgskiy Zavod Vysokovoltnogo Oborudovaniya and Vertro. Only the two fully evidenced candidates below are staged."
+  },
+  "qualified_candidates": [
+    {
+      "brand": "Адванта-М Ростов",
+      "legal_name": "ООО «АДВАНТА-М РОСТОВ»",
+      "inn": "6165219934",
+      "ogrn": "1196196021010",
+      "legal_status": "Действует",
+      "region": "Ростовская область",
+      "city": "Ростов-на-Дону",
+      "segment": "B2B поставки складской, строительной и грузоподъемной техники",
+      "website": "https://advanta-rostov.ru/",
+      "revenue_scale": "Выручка 368 351 000 ₽ за 2025 год; компания действует; профиль — оптовая торговля подъемно-транспортными машинами и оборудованием. Официальный сайт подтверждает поставки техники и оборудования по Южному федеральному округу и развитие региональной сети.",
+      "signal_level": "S1",
+      "signal_summary": "26 августа 2026 компания опубликовала вакансию руководителя отдела дилерских продаж. В вакансии прямо указано, что компания развивается, растет, завоевывает новых клиентов и расширяет горизонты; роль отвечает за дилерские продажи оборудования.",
+      "signal_date": "2026-08-26",
+      "signal_source": "https://nesiditsa.ru/vacancy/136636461",
+      "owner": "Тюшкевич Виталий Викторович; Реут Владимир Алексеевич",
+      "ceo": "Танаева Виктория Александровна",
+      "lpr": "Танаева Виктория Александровна",
+      "lpr_role": "Генеральный директор ООО «АДВАНТА-М РОСТОВ»; стратегические собственники — Тюшкевич Виталий Викторович и Реут Владимир Алексеевич",
+      "primary_phone": "+7 (863) 303-55-95",
+      "primary_email": "sklad@advanta-rostov.ru",
+      "contact_form": "https://advanta-rostov.ru/info/kontakty.html",
+      "contact_type": "Official corporate phones + functional corporate emails + website contact form",
+      "contact_source": "Official Advanta-M Rostov website",
+      "number_of_contacts_found": 7,
+      "contacts": [
+        {"value": "+7 (863) 303-55-95", "channel": "Phone", "type": "Official corporate", "url": "https://advanta-rostov.ru/info/kontakty.html"},
+        {"value": "+7 (863) 303-39-98", "channel": "Phone", "type": "Official corporate", "url": "https://advanta-rostov.ru/info/kontakty.html"},
+        {"value": "+7 (863) 308-49-12", "channel": "Phone", "type": "Official corporate", "url": "https://advanta-rostov.ru/info/kontakty.html"},
+        {"value": "sklad@advanta-rostov.ru", "channel": "Email", "type": "Official department", "url": "https://advanta-rostov.ru/info/kontakty.html"},
+        {"value": "koleso@advanta-rostov.ru", "channel": "Email", "type": "Official department", "url": "https://advanta-rostov.ru/info/kontakty.html"},
+        {"value": "tali@advanta-rostov.ru", "channel": "Email", "type": "Official department", "url": "https://advanta-rostov.ru/info/kontakty.html"},
+        {"value": "service@advanta-rostov.ru", "channel": "Email", "type": "Official department", "url": "https://advanta-rostov.ru/info/kontakty.html"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «АДВАНТА-М РОСТОВ» действует; ИНН 6165219934, ОГРН 1196196021010; генеральный директор Танаева Виктория Александровна; учредители Тюшкевич Виталий Викторович и Реут Владимир Алексеевич.", "url": "https://companies.rbc.ru/id/1196196021010-obschestvo-s-ogranichennoj-otvetstvennostyu-advanta-m-rostov/", "source": "РБК Компании"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка за 2025 год 368 351 000 ₽; официальный сайт подтверждает региональную поставку складской, строительной и грузоподъемной техники и развитие сети.", "url": "https://companies.rbc.ru/id/1196196021010-obschestvo-s-ogranichennoj-otvetstvennostyu-advanta-m-rostov/", "source": "РБК Компании + официальный сайт"},
+        {"type": "SIGNAL", "claim": "26.08.2026 компания ищет руководителя отдела дилерских продаж; работодатель прямо сообщает о росте, развитии, привлечении новых клиентов и расширении горизонтов.", "url": "https://nesiditsa.ru/vacancy/136636461", "source": "Current job-board vacancy"},
+        {"type": "LPR", "claim": "Танаева Виктория Александровна — генеральный директор; Тюшкевич Виталий Викторович и Реут Владимир Алексеевич — учредители.", "url": "https://companies.rbc.ru/id/1196196021010-obschestvo-s-ogranichennoj-otvetstvennostyu-advanta-m-rostov/", "source": "РБК Компании"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует корпоративные телефоны, функциональные email отделов и форму обращения.", "url": "https://advanta-rostov.ru/info/kontakty.html", "source": "Official company website"},
+        {"type": "BRAND_LEGAL", "claim": "Официальный сайт прямо указывает ООО «Адванта-М Ростов», ИНН 6165219934 и ОГРН 1196196021010.", "url": "https://advanta-rostov.ru/info/kontakty.html", "source": "Official company website"}
+      ],
+      "dedup_keys": {"inn": "6165219934", "ogrn": "1196196021010", "legal_name": "ООО АДВАНТА-М РОСТОВ", "brand_domain": "АДВАНТА-М РОСТОВ|advanta-rostov.ru"},
+      "dedup_check": {"repository_exact_inn_search": "no match before staging", "repository_brand_search": "no match before staging", "checked_against_source_head": "210f7de1a8c89d535dd8d11db11d51e86a068828"},
+      "consulting_hypothesis": "Систематизация дилерских B2B-продаж оборудования: сегментация дилеров и регионов, управляемая CRM-воронка, KPI, дилерская экономика, key-account контур и масштабирование региональной сети.",
+      "final_worker_status": "QUALIFIED_FOR_CANONICAL_RECHECK"
+    },
+    {
+      "brand": "Гермес-Сибирь",
+      "legal_name": "ООО «ГЕРМЕС-СИБИРЬ»",
+      "inn": "5402040179",
+      "ogrn": "1185476005000",
+      "legal_status": "Действует",
+      "region": "Новосибирская область",
+      "city": "Новосибирск",
+      "segment": "B2B оптовая торговля архитектурными, автомобильными и специализированными пленками",
+      "website": "https://germes-plenki.ru/",
+      "revenue_scale": "Выручка 278 259 000 ₽ за 2025 год; компания действует; 15 сотрудников по актуальному финансовому профилю. Официальный сайт подтверждает федеральную сеть отделов монтажа и поставки пленок.",
+      "signal_level": "S1",
+      "signal_summary": "17 августа 2026 ООО «Гермес-Сибирь» опубликовало вакансию руководителя отдела продаж. Работодатель указывает многолетнюю работу на рынке пленок, более 5 млн кв. м реализованной продукции и необходимость управления и развития отдела продаж.",
+      "signal_date": "2026-08-17",
+      "signal_source": "https://nesiditsa.ru/vacancy/136283054",
+      "owner": "Пугачев Алексей Сергеевич — 100%",
+      "ceo": "Пугачев Алексей Сергеевич",
+      "lpr": "Пугачев Алексей Сергеевич",
+      "lpr_role": "Управляющий — индивидуальный предприниматель и единственный собственник ООО «ГЕРМЕС-СИБИРЬ»",
+      "primary_phone": "+7 (383) 284-01-20",
+      "primary_email": "germes.zakaz@list.ru",
+      "contact_form": "https://germes-plenki.ru/page/contacts",
+      "contact_type": "Official corporate phone + official order email + website/contact channels",
+      "contact_source": "Official Germes-Sibir website",
+      "number_of_contacts_found": 3,
+      "contacts": [
+        {"value": "+7 (383) 284-01-20", "channel": "Phone", "type": "Official sales/corporate", "url": "https://germes-plenki.ru/page/contacts"},
+        {"value": "8-800-350-34-17", "channel": "Phone", "type": "Official federal", "url": "https://germes-plenki.ru/page/contacts"},
+        {"value": "germes.zakaz@list.ru", "channel": "Email", "type": "Official order email", "url": "https://germes-plenki.ru/page/contacts"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «ГЕРМЕС-СИБИРЬ» действует; ИНН 5402040179, ОГРН 1185476005000; Пугачев Алексей Сергеевич — управляющий ИП и единственный учредитель.", "url": "https://companies.rbc.ru/id/1185476005000-ooo-germes-sibir/", "source": "РБК Компании"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка за 2025 год 278 259 000 ₽; актуальный профиль указывает 15 сотрудников в 2025 году.", "url": "https://firmoteka.ru/5402040179", "source": "Фирмотека + Т-Банк Бизнес"},
+        {"type": "SIGNAL", "claim": "17.08.2026 компания ищет руководителя отдела продаж; работодатель описывает устойчивый B2B-бизнес пленок и задачу усиления управления продажами.", "url": "https://nesiditsa.ru/vacancy/136283054", "source": "Current job-board vacancy"},
+        {"type": "LPR", "claim": "Пугачев Алексей Сергеевич — управляющий ИП и единственный собственник 100% ООО «ГЕРМЕС-СИБИРЬ».", "url": "https://companies.rbc.ru/id/1185476005000-ooo-germes-sibir/", "source": "РБК Компании"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует +7 (383) 284-01-20, 8-800-350-34-17 и germes.zakaz@list.ru для Новосибирска и отдела продаж.", "url": "https://germes-plenki.ru/page/contacts", "source": "Official company website"},
+        {"type": "BRAND_LEGAL", "claim": "Официальная страница контактов прямо указывает ООО «Гермес-Сибирь» и адрес ул. Светлановская, 4, совпадающий с юридическим профилем.", "url": "https://germes-plenki.ru/page/contacts", "source": "Official company website"}
+      ],
+      "dedup_keys": {"inn": "5402040179", "ogrn": "1185476005000", "legal_name": "ООО ГЕРМЕС-СИБИРЬ", "brand_domain": "ГЕРМЕС-СИБИРЬ|germes-plenki.ru"},
+      "dedup_check": {"repository_exact_inn_search": "no match before staging", "repository_brand_search": "no match before staging", "checked_against_source_head": "210f7de1a8c89d535dd8d11db11d51e86a068828"},
+      "consulting_hypothesis": "Систематизация B2B-продаж пленок: сегментация дилеров и монтажных партнеров, CRM/воронка/KPI, развитие региональных каналов, ассортиментная экономика и управленческий ритм отдела продаж.",
+      "final_worker_status": "QUALIFIED_FOR_CANONICAL_RECHECK"
+    }
+  ]
+}
