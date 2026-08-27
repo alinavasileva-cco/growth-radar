@@ -1,0 +1,162 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-27T08:40:49+03:00",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260827-446",
+    "canonical_count": 445,
+    "contactable_count": 445,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "worker_funnel": {
+    "raw_distinct_auditable_minimum": 87,
+    "fast_gate_passed": 11,
+    "size_passed": 6,
+    "legal_passed": 5,
+    "signal_passed": 4,
+    "lpr_passed": 3,
+    "contact_passed": 2,
+    "qualified": 2,
+    "target_raw_100_180_met": false,
+    "note": "The execution window produced an auditable minimum of 87 distinct named raw companies across fresh production/expansion/news sources. The requested 100-180 raw target was not reached; no search-result rows, unnamed projects, foreign companies, obvious state-controlled entities, or duplicates were counted as raw merely to inflate throughput. Criteria were not weakened."
+  },
+  "qualified": [
+    {
+      "brand": "ЭЛКА-Кабель / ELKACABLE",
+      "legal_name": "ООО «ОПЫТНО-КОНСТРУКТОРСКОЕ ПРЕДПРИЯТИЕ ЭЛКА-КАБЕЛЬ»",
+      "inn": "5907054430",
+      "ogrn": "1135907000646",
+      "legal_status": "active",
+      "private_company": true,
+      "size": {
+        "metric": "revenue_2025",
+        "value_rub": 1217508000,
+        "source": "https://synapsenet.ru/organizacii/1135907000646-ooo-okp-elkakabel",
+        "note": "2025 revenue reported at RUB 1.217508bn; company remains within the working mid-market scale used by current Growth Radar configuration."
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-08-20",
+        "summary": "Company launched the third stage of its Perm production site. Over two years the plant expanded more than threefold to about 9,000 m²; seven new lines broadened the assortment, capacity is about 200 tonnes of metal per month, and the next stated stage is further output growth and geographic expansion of deliveries.",
+        "source": "https://www.elec.ru/news/2026/08/20/rbk-perm-okp-elka-kabel-zapustilo-tretju-ochered-p.html"
+      },
+      "lpr": {
+        "name": "Гаркунов Алексей Валентинович",
+        "role": "Директор",
+        "source": "https://www.elec.ru/catalog/okp-perm/requisites/"
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "email": "info@okp-perm.ru",
+        "sales_email": "zakaz@okp-perm.ru",
+        "phone": "+7 (342) 206-29-39",
+        "website": "https://elkacable.ru",
+        "source": "https://www.elec.ru/catalog/okp-perm/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "5907054430",
+        "ogrn": "1135907000646",
+        "legal_name": "ООО ОКП ЭЛКА-КАБЕЛЬ",
+        "brand_domain": "ЭЛКА-Кабель|elkacable.ru"
+      },
+      "dedup_check": {
+        "repository_search_brand": "no_match",
+        "repository_search_inn": "no_match",
+        "checked_immediately_before_write": true
+      },
+      "evidence_urls": [
+        "https://www.elec.ru/news/2026/08/20/rbk-perm-okp-elka-kabel-zapustilo-tretju-ochered-p.html",
+        "https://www.elec.ru/catalog/okp-perm/requisites/",
+        "https://www.elec.ru/catalog/okp-perm/contacts/",
+        "https://synapsenet.ru/organizacii/1135907000646-ooo-okp-elkakabel"
+      ]
+    },
+    {
+      "brand": "SafetyLab / Лаборатория безопасности",
+      "legal_name": "ООО «ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ»",
+      "inn": "7841433407",
+      "ogrn": "1107847328951",
+      "legal_status": "active",
+      "private_company": true,
+      "size": {
+        "metric": "revenue_2025",
+        "value_rub": 870494000,
+        "source": "https://companies.rbc.ru/amp/ogrn/1107847328951/",
+        "note": "2025 revenue RUB 870.494m; shareholders are two individuals, 51%/49%."
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-07-10",
+        "summary": "SafetyLab officially opened a new production site in the Fedorovskoye industrial park in Leningrad Region on 9 July 2026. The company describes the launch as a major step in its development strategy that raises production capacity to a new level.",
+        "source": "https://www.safetylab.ru/ru/news"
+      },
+      "lpr": {
+        "name": "Андреев Андрей Николаевич",
+        "role": "Генеральный директор; controlling shareholder 51%",
+        "source": "https://www.safetylab.ru/ru/main",
+        "ownership_source": "https://companies.rbc.ru/amp/ogrn/1107847328951/"
+      },
+      "contact": {
+        "route_type": "official_company_and_strategy_contact",
+        "email": "info@safetylab.ru",
+        "strategy_contact_name": "Анна Андреева",
+        "strategy_contact_role": "Директор по стратегическому развитию",
+        "strategy_contact_email": "anna.andreeva@safetylab.ru",
+        "phone": "+7 (812) 332-52-45",
+        "website": "https://safetylab.ru",
+        "source": "https://www.safetylab.ru/ru/info/19"
+      },
+      "dedup_keys": {
+        "inn": "7841433407",
+        "ogrn": "1107847328951",
+        "legal_name": "ООО ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ",
+        "brand_domain": "SafetyLab|safetylab.ru"
+      },
+      "dedup_check": {
+        "repository_search_brand": "no_match",
+        "repository_search_inn": "no_match",
+        "checked_immediately_before_write": true
+      },
+      "evidence_urls": [
+        "https://www.safetylab.ru/ru/news",
+        "https://www.safetylab.ru/ru/main",
+        "https://www.safetylab.ru/ru/info/19",
+        "https://companies.rbc.ru/id/1107847328951-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-laboratoriya-bezopasnosti/",
+        "https://companies.rbc.ru/amp/ogrn/1107847328951/"
+      ]
+    }
+  ],
+  "excluded_examples": [
+    {
+      "company": "Семаргл / Калашников",
+      "reason": "state-controlled group context; fails private-company gate"
+    },
+    {
+      "company": "НЭВЗ / Трансмашхолдинг",
+      "reason": "scale/group context outside target fit"
+    },
+    {
+      "company": "Аргументум Фарма",
+      "reason": "2025 revenue around RUB 258.3m and headcount evidence did not provide enough confidence on current scale gate for this pass"
+    },
+    {
+      "company": "ИнтерПолярис",
+      "reason": "legal/size/LPR/contact are strong, but the freshest August evidence is project shipment rather than a sufficiently clear new growth/expansion S1-S3 signal; not promoted in this pass"
+    },
+    {
+      "company": "Три Точки Мануфактуринг",
+      "reason": "already present in repository/canonical history; duplicate"
+    },
+    {
+      "company": "Анатомика",
+      "reason": "already present in canonical history; duplicate"
+    },
+    {
+      "company": "Мир Хобби",
+      "reason": "already present in canonical history; duplicate"
+    }
+  ],
+  "outreach_sent": 0,
+  "canonical_write_performed": false
+}
