@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260827-457",
+  "updated_at": "2026-08-27T19:15:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-182146-jobs.json",
+      "blob_sha": "a0c82edac4f695d7776d8609abda25bf8cfc1b72",
+      "result": "CONSUMED",
+      "note": "СОРСО-СТР passed canonical re-check and was physically integrated as N5K-0631. Immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-182528-industry.json",
+      "blob_sha": "a9798b22e70d7f12ceb82c70782aa7ee302ae9b4",
+      "result": "CONSUMED",
+      "note": "Владимирский хлебокомбинат / DeLavant and ЧЕЛНЫ-ХЛЕБ passed canonical re-check and were physically integrated as N5K-0632 and N5K-0633. Immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 476,
+  "physical_contactable_after_cycle": 476,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
