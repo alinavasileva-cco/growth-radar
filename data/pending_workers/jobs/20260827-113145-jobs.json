@@ -1,0 +1,115 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T11:31:45+03:00",
+    "source_head": "0f69dc82bef64b1ee9913c872133ff71dd737970",
+    "source_run": "N5K-20260827-449",
+    "source_canonical_count": 455,
+    "source_contactable_count": 455,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "canonical_written": false,
+    "outreach": 0
+  },
+  "funnel": {
+    "raw_surfaced": 42,
+    "target_raw": "80-150",
+    "target_reached": false,
+    "fast_gate_passed": 6,
+    "deep_checked": 3,
+    "qualified": 1,
+    "notes": "Fresh regional job-board discovery was rotated across HH/DreamJob/job-board mirrors. The requested 80-150 auditable distinct employer-level raw target was not reached in this execution window; no larger number is claimed. Saturated/ambiguous employers were rejected early. Only fully evidenced qualified candidates are persisted below."
+  },
+  "qualified": [
+    {
+      "brand": "РСК Групп / RSC Group",
+      "legal_name": "ООО РСК ГРУПП",
+      "inn": "1657223686",
+      "ogrn": "1161690093608",
+      "region": "Республика Татарстан",
+      "city": "Казань",
+      "segment": "Производство светодиодного и наружного освещения; проектные B2B-продажи",
+      "website": "https://рскгрупп.рф/",
+      "legal_status": "Действующая организация",
+      "scale": {
+        "revenue_2025_rub": 549867000,
+        "employees_2025": 91,
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1161690093608-ooo-rsk-grupp/",
+          "https://xn----7sbbagdr2anf9afggidws9k.xn--p1ai/contragent/1161690093608/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-14",
+        "title": "Руководитель отдела продаж светотехнического оборудования",
+        "summary": "Компания ищет руководителя B2B-продаж для управления отделом, развития команды, стратегии активных проектных продаж, ключевых переговоров, расширения клиентской базы, контроля планов и оптимизации процессов продаж. В вакансии указано собственное производство и федеральный профиль проектов.",
+        "source_url": "https://dreamjob.ru/employers/300034/vakansii/136234498"
+      },
+      "lpr": {
+        "name": "Фаткуллин Айдар Ильшатович",
+        "role": "Директор и учредитель 70%",
+        "evidence_url": "https://companies.rbc.ru/id/1161690093608-ooo-rsk-grupp/"
+      },
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "+7 (800) 600-04-28",
+          "type": "official corporate",
+          "source_url": "https://xn--c1anqabcet.xn--p1ai/wp-content/uploads/2025/02/RSC_Groupp_Katalog_2025_Web.pdf"
+        },
+        {
+          "channel": "email",
+          "value": "otdel@rsc-groupp.ru",
+          "type": "official corporate",
+          "source_url": "https://xn--c1anqabcet.xn--p1ai/wp-content/uploads/2025/02/RSC_Groupp_Katalog_2025_Web.pdf"
+        },
+        {
+          "channel": "email",
+          "value": "order@rsc-groupp.ru",
+          "type": "company-site sourced",
+          "source_url": "https://xn----7sbbagdr2anf9afggidws9k.xn--p1ai/contragent/1161690093608/"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО РСК ГРУПП, ИНН 1657223686, ОГРН 1161690093608; действующая организация по состоянию на август 2026.",
+          "url": "https://companies.rbc.ru/id/1161690093608-ooo-rsk-grupp/"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка за 2025 год 549 867 000 руб.; актуальный профиль указывает 91 сотрудника в 2025 году.",
+          "url": "https://xn----7sbbagdr2anf9afggidws9k.xn--p1ai/contragent/1161690093608/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "14 августа 2026 опубликована вакансия руководителя отдела продаж светотехнического оборудования с задачами управления B2B-продажами, стратегией, командой, крупными переговорами и оптимизацией процессов.",
+          "url": "https://dreamjob.ru/employers/300034/vakansii/136234498"
+        },
+        {
+          "type": "LPR",
+          "claim": "Фаткуллин Айдар Ильшатович — директор и учредитель 70% ООО РСК ГРУПП.",
+          "url": "https://companies.rbc.ru/id/1161690093608-ooo-rsk-grupp/"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальные материалы производителя публикуют телефон 8 800 600-04-28 и корпоративный email otdel@rsc-groupp.ru.",
+          "url": "https://xn--c1anqabcet.xn--p1ai/wp-content/uploads/2025/02/RSC_Groupp_Katalog_2025_Web.pdf"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "1657223686",
+        "ogrn": "1161690093608",
+        "legal_name": "ООО РСК ГРУПП",
+        "brand_domain": "РСК Групп|рскгрупп.рф"
+      },
+      "dedup_check": {
+        "repository_exact_inn_search": "NO MATCH",
+        "checked_against_head": "0f69dc82bef64b1ee9913c872133ff71dd737970"
+      },
+      "decision": "QUALIFIED"
+    }
+  ]
+}
