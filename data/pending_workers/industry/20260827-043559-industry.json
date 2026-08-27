@@ -1,0 +1,152 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T04:35:59+03:00",
+  "source_head_before_discovery": "0fd3f61973046a4b5189ae7dec3d88e710c1d3f0",
+  "canonical_snapshot": {
+    "campaign_id": "new_5000",
+    "canonical_count": 430,
+    "contactable_count": 430,
+    "last_completed_run": "N5K-20260827-442",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "qualified_staged_not_counted": 0,
+    "source": "CURRENT_WORKING_CONFIG.md"
+  },
+  "raw_pool": {
+    "distinct_raw": 120,
+    "source_name": "CeMAT RUSSIA 2026 exhibitor catalogue",
+    "source_url": "https://www.cemat-russia.ru/exhibition/catalogue/?letter=all",
+    "catalogue_total_entries_visible": 156,
+    "method": "screened 120 distinct exhibitor-company entries from the current 2026 catalogue; media/association/foreign/non-company rows were not promoted beyond fast screening; deep verification was limited to the strongest low-overlap candidates",
+    "cross_worker_identity_index": false,
+    "note": "raw count is local to this worker and must not be mechanically summed with other workers without global identity-level dedup"
+  },
+  "funnel": {
+    "raw": 120,
+    "fast_gate_deep_checked": 7,
+    "size_pass": 5,
+    "legal_private_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicates_prewrite": 0
+  },
+  "qualified": [
+    {
+      "brand": "STELKON / Завод Стелкон",
+      "legal_name": "ООО «ЗАВОД СТЕЛКОН»",
+      "inn": "5034060416",
+      "ogrn": "1215000064234",
+      "domain": "stelkon.ru",
+      "jurisdiction": "RU",
+      "legal_status": "active",
+      "private_company": true,
+      "size": {
+        "metric": "revenue_2025",
+        "value_rub": 4435374000,
+        "growth_yoy_pct": 44,
+        "profit_2025_rub": 510398000,
+        "employees_2025": 262,
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1215000064234-obschestvo-s-ogranichennoj-otvetstvennostyu-zavod-stelkon/",
+          "https://companium.ru/id/1215000064234-zavod-stelkon",
+          "https://xn----7sbfbqq4deedd2d1bu.xn--p1ai/vipiska-egrul/1215000064234/"
+        ]
+      },
+      "legal": {
+        "ceo": "Кулагин Николай Александрович",
+        "owner": "Кулагин Николай Александрович",
+        "owner_share_pct": 100,
+        "form": "ООО",
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1215000064234/",
+          "https://companium.ru/id/1215000064234-zavod-stelkon"
+        ]
+      },
+      "signal": {
+        "class": "S3",
+        "type": "rapid_growth_and_scaling",
+        "date": "2026-04-01",
+        "summary": "Актуальная отчетность за 2025 год, опубликованная/размещенная в 2026 году, подтверждает рост выручки до 4.435 млрд руб. (+44% г/г), прибыли до 510.4 млн руб. (+76%) и масштаб полного цикла. В 2026 году компания также продолжает выводить и продвигать автоматизированные складские решения и участвует в профильных промышленных мероприятиях.",
+        "evidence_urls": [
+          "https://companium.ru/id/1215000064234-zavod-stelkon",
+          "https://www.stelkon.ru/novosti/",
+          "https://rutube.ru/video/d9337079b564886d6c52513706ffa53c/"
+        ]
+      },
+      "lpr": {
+        "name": "Кулагин Николай Александрович",
+        "role": "генеральный директор; единственный учредитель",
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1215000064234/"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "email": "info@stelkon.ru",
+        "phone": "+7 (495) 925-51-83",
+        "form_url": "https://www.stelkon.ru/contacts/",
+        "evidence_urls": [
+          "https://www.stelkon.ru/contacts/"
+        ]
+      },
+      "discovery_evidence": {
+        "source": "CeMAT RUSSIA 2026 exhibitor catalogue",
+        "url": "https://www.cemat-russia.ru/exhibition/catalogue/?letter=all"
+      },
+      "dedup_keys": {
+        "inn": "5034060416",
+        "ogrn": "1215000064234",
+        "legal_name_normalized": "ООО ЗАВОД СТЕЛКОН",
+        "brand_domain": "STELKON|stelkon.ru"
+      },
+      "dedup_check": {
+        "repository_search_inn": "no match before write",
+        "repository_search_ogrn": "no match before write"
+      },
+      "qualification": "QUALIFIED"
+    }
+  ],
+  "deep_check_rejects": [
+    {
+      "candidate": "Advanced Energy / ООО «ЭДВАНСТ ЭНЕРДЖИ»",
+      "inn": "4821051161",
+      "result": "REJECT_AT_SIGNAL",
+      "reason": "SIZE and private legal status were confirmed, but no sufficiently strong current S1-S3 event was verified in this pass; current 2026 site content and exhibition participation alone were not used as a signal."
+    },
+    {
+      "candidate": "RackFork / ООО «РЭКФОРК»",
+      "inn": "7717702020",
+      "result": "REJECT_AT_LEGAL_PRIVATE_GATE",
+      "reason": "Large active company, but current registries indicate foreign legal-entity ownership; not promoted under the Russian private-company gate."
+    },
+    {
+      "candidate": "Ronavi Robotics / ООО «РОНАВИ РОБОТИКС»",
+      "inn": "7751527058",
+      "result": "REJECT_AT_SIZE",
+      "reason": "2025 revenue 27.9m RUB is below the scale demonstrated by current qualified cohort."
+    },
+    {
+      "candidate": "Ай-Пласт / ООО «АЙ-ПЛАСТ»",
+      "inn": "1651057721",
+      "result": "STOP_AFTER_SIZE",
+      "reason": "Scale confirmed (2025 revenue about 10.36bn RUB), but full current legal/private + S1-S3 chain was not completed in this pass; not promoted."
+    },
+    {
+      "candidate": "НПО Композит / ООО НПО «КОМПОЗИТ»",
+      "inn": "4632169626",
+      "result": "STOP_AFTER_SIZE",
+      "reason": "Scale was indicated by current business data, but conflicting/ambiguous registry search results required additional legal-entity disambiguation; not promoted."
+    },
+    {
+      "candidate": "АО «Тюменский аккумуляторный завод»",
+      "inn": "7204001630",
+      "result": "STOP_BEFORE_FULL_SIZE_LEGAL",
+      "reason": "Strong current 2026 production signal exists (new SiO2 production), but full current size/private-control chain was not completed in this pass; not promoted."
+    }
+  ],
+  "canonical_write_performed": false,
+  "outreach_performed": false
+}
