@@ -1,56 +1,90 @@
 {
-  "run_id": "N5K-20260827-453",
+  "run_id": "N5K-20260827-454",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T15:04:09+03:00",
+  "updated_at": "2026-08-27T16:03:53+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 461,
+    "baseline_count": 464,
     "target_count": 5000,
-    "current_canonical_count": 464,
-    "current_contactable_count": 464,
-    "progress_added": 3,
-    "remaining": 4536
+    "current_canonical_count": 468,
+    "current_contactable_count": 468,
+    "progress_added": 4,
+    "remaining": 4532
   },
   "funnel": {
-    "discovered": 86,
-    "fast_gate_passed": 10,
+    "discovered": 311,
+    "fast_gate_passed": 5,
     "size_check_passed": 5,
-    "legal_match_passed": 5,
+    "legal_match_passed": 4,
     "signal_confirmed": 4,
     "lpr_identified": 4,
-    "contact_route_found": 3,
-    "qualified": 3,
+    "contact_route_found": 4,
+    "qualified": 4,
     "duplicates": 0,
-    "excluded": 83
+    "excluded": 307
   },
   "lane_metrics": [
     {
-      "lane": "jobs worker",
-      "raw": 80,
-      "duplicates_or_early_rejects": 79,
-      "qualified": 1,
-      "note": "Fresh immutable data/pending_workers/jobs/20260827-142846-jobs.json; worker stopped saturated broad HH-heavy search after >70% duplicate+early-reject and rotated to regional/direct-employer/job-board mirrors. Exact duplicate vs early-reject split was not reconstructed."
+      "lane": "jobs/20260827-151736",
+      "raw_surfaced": 80,
+      "worker_fast_gate": 6,
+      "worker_qualified": 1,
+      "canonical_rechecked": 1,
+      "canonical_qualified": 0,
+      "canonical_result": "REJECT_LEGAL_IP",
+      "candidate": "S.Lavia"
     },
     {
-      "lane": "low-overlap official/growth/ratings/regional verification",
-      "raw": 6,
-      "duplicates_or_early_rejects": 4,
-      "qualified": 2,
-      "note": "Only six distinct company identities that were actually brought to identity-level review are counted as raw; search-result rows, unnamed projects and broad ranking membership were not inflated into raw. Qualified: NARTIS and Isource. Other reviewed identities failed strict gate/deep-check. Additional low-overlap source families were rotated because total raw stayed below 300, but identities not individually audited were not counted."
+      "lane": "jobs/20260827-153100",
+      "raw_surfaced": 80,
+      "worker_fast_gate": 7,
+      "worker_qualified": 1,
+      "canonical_rechecked": 1,
+      "canonical_qualified": 1,
+      "candidate": "Завод Металлоконструкций Ресталь"
+    },
+    {
+      "lane": "growth_news/20260827-153121",
+      "raw_surfaced": 34,
+      "worker_fast_gate": 8,
+      "worker_qualified": 2,
+      "canonical_rechecked": 2,
+      "canonical_qualified": 2,
+      "candidates": [
+        "Пластик Он Лайн",
+        "Биофармлаб"
+      ]
+    },
+    {
+      "lane": "industry/20260827-153633",
+      "raw_surfaced": 100,
+      "worker_fast_gate": 2,
+      "worker_qualified": 1,
+      "canonical_rechecked": 1,
+      "canonical_qualified": 1,
+      "candidate": "МЕРА / НПП МЕРА",
+      "lane_stop_rule": ">70% duplicate+early reject on each first-20 batch; sources rotated"
+    },
+    {
+      "lane": "canonical_own_low_overlap_regional_expansion",
+      "raw_surfaced": 17,
+      "canonical_qualified": 0,
+      "note": "Additional named regional/industrial expansion candidates inspected after worker raw total was 294; no candidate was promoted without full gates."
     }
   ],
   "qualified_companies": [
-    "ПНК-Регион",
-    "НАРТИС",
-    "Айсорс / Isource"
+    "Завод Металлоконструкций Ресталь",
+    "Пластик Он Лайн",
+    "Биофармлаб",
+    "МЕРА / НПП МЕРА"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "464_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "464_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "468_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "468_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
