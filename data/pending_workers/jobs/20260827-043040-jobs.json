@@ -1,0 +1,219 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-27T04:30:40+03:00",
+    "source_head_sha": "ef5052e0920c22ece6c478c385b4e74b782e0b97",
+    "source_run": "N5K-20260827-442",
+    "source_canonical_contactable": "430/430",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "canonical_write_performed": false,
+    "outreach_performed": false,
+    "notes": "Jobs-only READ+DISCOVERY worker. HH-heavy results were treated as saturated after >70% duplicate/early-reject behavior and discovery was rotated to DreamJob, Cataloxy, Rabota.ru, Habr Career, GetWorks and direct company/official pages. Only fully confirmed QUALIFIED candidates are persisted here. Raw throughput target 80-150 was not fully reached in this execution window; no larger number is claimed.",
+    "funnel": {
+      "raw_unique_employers_surfaced": 40,
+      "fast_gate_passed": 6,
+      "deep_check": 4,
+      "size_passed": 3,
+      "legal_passed": 3,
+      "signal_passed": 2,
+      "lpr_passed": 2,
+      "contact_passed": 2,
+      "qualified": 2,
+      "duplicates_plus_early_rejects": 34
+    }
+  },
+  "qualified": [
+    {
+      "brand": "IBMM | technology",
+      "legal_name": "ООО \"ИБММ ТЕХНОЛОГИИ\"",
+      "inn": "5032334982",
+      "ogrn": "1215000115230",
+      "region": "Московская область",
+      "city": "Одинцово / Москва",
+      "website": "https://ibmm.ru/",
+      "segment": "Промышленный майнинг; поставка ASIC и инфраструктурные решения B2B",
+      "legal_status": "Действующее российское частное ООО; статус подтверждён актуальными реестровыми/финансовыми профилями на август 2026.",
+      "scale": {
+        "revenue_2025_rub": 2900000000,
+        "summary": "Выручка за 2025 год около 2,90 млрд руб.; официальный сайт заявляет 1000+ поставок ASIC, 400+ размещённых клиентов и 5 собственных майнинг-отелей.",
+        "sources": [
+          "https://www.tbank.ru/business/contractor/legal/1215000115230/",
+          "https://companium.ru/id/1215000115230-ibmm-tekhnologii",
+          "https://ibmm.ru/about_us/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-07",
+        "title": "Руководитель отдела продаж B2B / Head of Sales",
+        "summary": "Прямой работодатель IBMM ищет руководителя B2B-продаж; вакансия опубликована 07.08.2026 и актуальна до 06.09.2026. Это прямой сигнал усиления и систематизации коммерческой функции.",
+        "sources": [
+          "https://moscow.cataloxy.ru/rabota/vacancy1127684701_rukovoditel-otdela-prodazh-b2b-head-of-sales.htm",
+          "https://ru.joblum.com/company/ibmm"
+        ]
+      },
+      "owner_lpr": {
+        "name": "Гузенко Дмитрий Владиславович",
+        "role": "Генеральный директор и 100% учредитель",
+        "sources": [
+          "https://companies.rbc.ru/amp/ogrn/1215000115230/",
+          "https://saby.ru/profile/5032334982-503201001"
+        ]
+      },
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "+7 (495) 136-28-92",
+          "type": "official corporate",
+          "url": "https://ibmm.ru/contact/"
+        },
+        {
+          "channel": "email",
+          "value": "sales@ibmm.ru",
+          "type": "official corporate sales",
+          "url": "https://ibmm.ru/contact/"
+        },
+        {
+          "channel": "form",
+          "value": "https://ibmm.ru/contact/",
+          "type": "official contact form",
+          "url": "https://ibmm.ru/contact/"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "BRAND_LEGAL",
+          "claim": "Официальный сайт IBMM публикует ИНН 5032334982 и ОГРН 1215000115230.",
+          "url": "https://ibmm.ru/"
+        },
+        {
+          "type": "LEGAL_LPR",
+          "claim": "ООО ИБММ ТЕХНОЛОГИИ действует; Гузенко Дмитрий Владиславович — генеральный директор и 100% учредитель.",
+          "url": "https://companies.rbc.ru/amp/ogrn/1215000115230/"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "Бухгалтерская отчётность за 2025 год показывает выручку около 2,90 млрд руб.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1215000115230/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "07.08.2026 прямой работодатель IBMM опубликовал вакансию Руководитель отдела продаж B2B / Head of Sales.",
+          "url": "https://moscow.cataloxy.ru/rabota/vacancy1127684701_rukovoditel-otdela-prodazh-b2b-head-of-sales.htm"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует +7 (495) 136-28-92, sales@ibmm.ru и форму связи.",
+          "url": "https://ibmm.ru/contact/"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "5032334982",
+        "ogrn": "1215000115230",
+        "legal_name": "ООО ИБММ ТЕХНОЛОГИИ",
+        "brand_domain": "IBMM|ibmm.ru"
+      },
+      "dedup_check": "Fresh repository search immediately before staging returned no match for exact INN 5032334982 and no match for brand IBMM. Canonical writer must repeat authoritative physical dedup before integration."
+    },
+    {
+      "brand": "КОСИМА / Cosyma",
+      "legal_name": "ООО \"КОСИМА\"",
+      "inn": "7704746711",
+      "ogrn": "1107746106247",
+      "region": "Москва",
+      "city": "Москва",
+      "website": "https://cosyma.pro/",
+      "segment": "Медицинские технологии и оборудование для нейрореабилитации; B2B/B2G",
+      "legal_status": "Действующее российское частное ООО; действующий производитель медицинских изделий, подтверждён актуальными реестровыми профилями и регистрационными документами Росздравнадзора.",
+      "scale": {
+        "revenue_2025_rub": 137858000,
+        "summary": "Выручка за 2025 год 137,858 млн руб.; компания участвует в госзакупках и поставляет зарегистрированное медицинское оборудование российским и зарубежным центрам.",
+        "sources": [
+          "https://saby.ru/profile/7704746711-773101001",
+          "https://b2b.house/company/OOO-KOSIMA_a6bd30f3-ffa6-4026-8a88-a7aeeb8698ee/",
+          "https://www.cosyma.pro/scientificfoundation"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-11",
+        "title": "Руководитель отдела продаж / Head of Sales (Медицинское оборудование / Нейрореабилитация)",
+        "summary": "Вакансия на усиление продаж медицинского оборудования КОСИМА опубликована 11.08.2026; роль включает управление командой, развитие ключевых клиентов и стратегию продаж.",
+        "sources": [
+          "https://get-works.ru/job-detail.php?vac=136116413",
+          "https://vgorode.moscow/rabota/vakansiya-136116413/"
+        ]
+      },
+      "owner_lpr": {
+        "name": "Черноуцан Сергей Игоревич",
+        "role": "Генеральный директор и один из учредителей",
+        "sources": [
+          "https://companies.rbc.ru/id/1107746106247-ooo-kosima/",
+          "https://saby.ru/profile/7704746711-773101001"
+        ]
+      },
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "+7 495 902-54-01",
+          "type": "official corporate",
+          "url": "https://cosyma.pro/home"
+        },
+        {
+          "channel": "phone",
+          "value": "+7 977 089-10-02",
+          "type": "official sales",
+          "url": "https://cosyma.pro/home"
+        },
+        {
+          "channel": "email",
+          "value": "sales@cosyma.pro",
+          "type": "official sales",
+          "url": "https://cosyma.pro/home"
+        },
+        {
+          "channel": "email",
+          "value": "info@cosyma.pro",
+          "type": "official corporate",
+          "url": "https://cosyma.pro/home"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО КОСИМА, ИНН 7704746711, ОГРН 1107746106247, действует; Росздравнадзор подтверждает ООО КОСИМА как производителя медицинских изделий.",
+          "url": "https://elk.roszdravnadzor.gov.ru/public-gateway/med-product/api/v1/files/download-by-path-public?id=8128853&path=med_product%2Fmed_products_new_res_files%2F1557129602.87725-138583.pdf"
+        },
+        {
+          "type": "SCALE_CURRENT",
+          "claim": "Выручка за 2025 год 137,858 млн руб.",
+          "url": "https://saby.ru/profile/7704746711-773101001"
+        },
+        {
+          "type": "LPR",
+          "claim": "Черноуцан Сергей Игоревич — генеральный директор ООО КОСИМА и один из учредителей.",
+          "url": "https://companies.rbc.ru/id/1107746106247-ooo-kosima/"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "11.08.2026 опубликована вакансия руководителя отдела продаж / Head of Sales для КОСИМА, медицинское оборудование/нейрореабилитация.",
+          "url": "https://get-works.ru/job-detail.php?vac=136116413"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует +7 495 902-54-01, +7 977 089-10-02, sales@cosyma.pro и info@cosyma.pro.",
+          "url": "https://cosyma.pro/home"
+        }
+      ],
+      "dedup_keys": {
+        "inn": "7704746711",
+        "ogrn": "1107746106247",
+        "legal_name": "ООО КОСИМА",
+        "brand_domain": "КОСИМА|cosyma.pro"
+      },
+      "dedup_check": "Fresh repository search immediately before staging returned no match for exact INN 7704746711 and no match for brand КОСИМА. Canonical writer must repeat authoritative physical dedup before integration."
+    }
+  ]
+}
