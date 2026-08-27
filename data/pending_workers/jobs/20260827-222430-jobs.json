@@ -1,0 +1,108 @@
+{
+  "schema_version": "pending_worker_jobs_v1",
+  "lane": "jobs",
+  "created_at": "2026-08-27T22:24:30+03:00",
+  "source_head_sha": "6a16d04295161899773a76c9115a729ce92fda71",
+  "canonical_write": false,
+  "outreach": false,
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "target_raw_range": "80-150",
+    "target_reached": true,
+    "fast_gate_pass": 6,
+    "deep_check": 3,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_early_reject_split": null,
+    "note": "Audited 80 distinct employer-level entries across current regional/direct-employer job-board pools (Ekaterinburg, Novosibirsk, Samara, Ufa, Krasnodar, Perm, Omsk and adjacent result sets). Saturated broad sources were rotated after high duplicate/early-reject density. Duplicate vs early-reject split was not separately instrumented and is not reconstructed."
+  },
+  "discovery_sources": [
+    "https://trust.jobvk.com/ekaterinburg/rukovoditely-otdela-prodazh",
+    "https://www.notexistscomru.jobvk.com/novosibirsk/rukovoditely-otdela-prodazh",
+    "https://trust.jobvk.com/samara/rukovoditely-otdela-prodazh",
+    "https://www.notexistscomru.jobvk.com/ufa/rukovoditely-otdela-prodazh",
+    "https://khtjsru.jobvk.com/krasnodar/pomoshtnik-rukovoditelya/tp-ot-pryamih-rabotodateley",
+    "https://ru.jobvk.com/perm/rukovoditely-otdela-prodazh/tp-ot-pryamih-rabotodateley",
+    "https://www.vffzvru.jobvk.com/omsk/rukovoditely-otdela-prodazh",
+    "https://nesiditsa.ru/vacancy/135828379"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "ЕЗВО / Екатеринбургский Завод Высоковольтного Оборудования",
+      "legal_name": "ООО «ЕКАТЕРИНБУРГСКИЙ ЗАВОД ВЫСОКОВОЛЬТНОГО ОБОРУДОВАНИЯ»",
+      "inn": "6679031070",
+      "ogrn": "1136679004681",
+      "legal_form": "ООО",
+      "legal_status": "Действующее",
+      "private_russian_entity": true,
+      "location": "Екатеринбург, Свердловская область",
+      "size": {
+        "revenue_2025_rub": 56399000,
+        "employees": 1,
+        "size_evidence_urls": [
+          "https://companies.rbc.ru/id/1136679004681-ooo-proizvodstvennoe-obedinenie-stelz/",
+          "https://b2b.house/company/OOO-EZVO_11e049b8-c31e-4166-91f1-ba2c5dc51e0c/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "hiring_head_of_sales_b2b_industrial",
+        "title": "Руководитель отдела продаж",
+        "signal_date": "2026-08-12",
+        "description": "Прямой работодатель ищет штатного руководителя отдела B2B-продаж для управления сложной промышленной воронкой, CRM-дисциплиной, движением сделок и разработки проектов роста продаж после погружения в текущую систему.",
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/135828379"
+        ]
+      },
+      "lpr": {
+        "name": "Лобов Евгений Аркадьевич",
+        "role": "Директор и единственный учредитель (100%)",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1136679004681-ooo-proizvodstvennoe-obedinenie-stelz/",
+          "https://b2b.house/company/OOO-EZVO_11e049b8-c31e-4166-91f1-ba2c5dc51e0c/"
+        ]
+      },
+      "contact_route": {
+        "phone": "+7 (343) 343-32-36",
+        "email": "zakaz@ezvo1.ru",
+        "website": "https://ezvo1.ru/",
+        "form": "https://ezvo1.ru/contacts/",
+        "evidence_urls": [
+          "https://ezvo1.ru/",
+          "https://ezvo1.ru/contacts/"
+        ]
+      },
+      "brand_legal_evidence_urls": [
+        "https://ezvo1.ru/contacts/",
+        "https://companies.rbc.ru/id/1136679004681-ooo-proizvodstvennoe-obedinenie-stelz/"
+      ],
+      "dedup_keys": {
+        "inn": "6679031070",
+        "ogrn": "1136679004681",
+        "legal_name_normalized": "ООО ЕКАТЕРИНБУРГСКИЙ ЗАВОД ВЫСОКОВОЛЬТНОГО ОБОРУДОВАНИЯ",
+        "brand_domain": "ЕЗВО|ezvo1.ru"
+      },
+      "pre_stage_dedup": {
+        "repo_exact_inn_search": "no_match",
+        "repo_brand_domain_search": "no_match",
+        "checked_at": "2026-08-27T22:24:30+03:00",
+        "head_sha": "6a16d04295161899773a76c9115a729ce92fda71"
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "deep_check_rejects": [
+    {
+      "candidate": "МАЯКМЕТАЛЛ",
+      "reason": "Не присвоен QUALIFIED: сильный CCO-сигнал и официальный маршрут связи подтверждены, но в пределах цикла не подтверждена однозначная vacancy→конкретное российское юрлицо связка без риска смешения нескольких компаний группы."
+    },
+    {
+      "candidate": "Овен, Новосибирск",
+      "reason": "Не присвоен QUALIFIED: действующее ООО и масштаб подтверждены, но конкретная свежая вакансия руководителя оптовых продаж не была надёжно связана с юрлицом ООО «ОВЕН» ИНН 5406832440 на уровне строгого evidence chain."
+    }
+  ]
+}
