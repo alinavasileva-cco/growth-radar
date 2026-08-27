@@ -1,0 +1,31 @@
+{
+  "run_id": "N5K-20260827-460",
+  "status": "COMPLETED",
+  "campaign_id": "new_5000",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260827-222430-jobs.json",
+      "blob_sha": "b4f31ad2961f48a84b8bad8370343cd9bfb22031",
+      "result": "CONSUMED_QUALIFIED_INTEGRATED",
+      "note": "80 raw employers; ЕЗВО passed SIZE, LEGAL, SIGNAL, LPR and CONTACT and was physically integrated as N5K-0634."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-222525-industry-metrics.json",
+      "blob_sha": "f87b08faf97f46f391bdefdf9c3d8189103b434d",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 raw across five 20-candidate industry/exhibition lanes; all lanes exceeded 70% duplicate+early-reject at fast gate and were stopped/rotated; 0 qualified."
+    }
+  ],
+  "canonical_result": {
+    "worker_qualified_before_physical_dedup": 1,
+    "physical_dedup_duplicates": 0,
+    "net_qualified": 1,
+    "physically_integrated": 1,
+    "canonical_count": 477,
+    "contactable_count": 477,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "outreach_performed": false
+}
