@@ -1,0 +1,33 @@
+{
+  "run_id": "N5K-20260828-462",
+  "status": "COMPLETED",
+  "campaign_id": "new_5000",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260828-0030-jobs.json",
+      "blob_sha": "cde37a1c59c95537b74e5098a7d0221105da7f53",
+      "result": "CONSUMED_QUALIFIED_INTEGRATED",
+      "note": "80 employer-level source identities; ТД Урал-К passed canonical SIZE, LEGAL, SIGNAL, LPR and CONTACT and was physically integrated as N5K-0636. Canonical SIGNAL uses independently corroborated 2026-07-13 dated vacancy plus current August availability rather than the worker's uncorroborated 2026-08-13 date."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-004100-industry-metrics.json",
+      "blob_sha": "d54863bf581b183d38d2b7337a97d8068afdc002",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 auditable distinct raw across five 20-candidate regional industrial directory lanes; each exceeded 70% duplicate+early reject and was stopped/rotated; 0 qualified."
+    }
+  ],
+  "canonical_result": {
+    "worker_qualified_before_physical_dedup": 1,
+    "additional_canonical_candidates_before_physical_dedup": 1,
+    "physical_dedup_duplicates": 1,
+    "physical_duplicate": "Логика молока / АО ЭЙЧ ЭНД ЭН — BRAND_DOMAIN",
+    "net_qualified": 1,
+    "physically_integrated": 1,
+    "canonical_count": 479,
+    "contactable_count": 479,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "outreach_performed": false
+}
