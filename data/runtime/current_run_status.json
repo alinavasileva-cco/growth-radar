@@ -1,48 +1,71 @@
 {
-  "run_id": "N5K-20260827-454R1",
+  "run_id": "N5K-20260827-455",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T16:03:53+03:00",
+  "updated_at": "2026-08-27T17:05:48+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 468,
+    "baseline_count": 469,
     "target_count": 5000,
-    "current_canonical_count": 469,
-    "current_contactable_count": 469,
-    "progress_added": 1,
-    "remaining": 4531
+    "current_canonical_count": 471,
+    "current_contactable_count": 471,
+    "progress_added": 2,
+    "remaining": 4529
   },
   "funnel": {
-    "discovered": 0,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
+    "discovered": 180,
+    "fast_gate_passed": 7,
+    "size_check_passed": 4,
+    "legal_match_passed": 4,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
     "duplicates": 0,
-    "excluded": 0
+    "excluded": 178
   },
   "lane_metrics": [
     {
-      "lane": "repair_of_jobs/20260827-151736",
-      "raw_surfaced": 0,
+      "lane": "jobs/20260827-162700",
+      "raw_surfaced": 80,
+      "worker_fast_gate": 6,
+      "worker_deep_check": 5,
+      "worker_size": 3,
+      "worker_legal": 3,
+      "worker_signal": 1,
+      "worker_lpr": 1,
+      "worker_contact": 1,
+      "worker_qualified": 1,
       "canonical_rechecked": 1,
       "canonical_qualified": 1,
-      "candidate": "S.Lavia",
-      "repair_reason": "Previous canonical writer decision incorrectly treated IP as excluded, while current configuration explicitly permits юрлицо/ИП."
+      "candidate": "Future Vision"
+    },
+    {
+      "lane": "industry/20260827-162607",
+      "raw_surfaced": 100,
+      "worker_fast_gate": 1,
+      "worker_size": 1,
+      "worker_legal": 1,
+      "worker_signal": 1,
+      "worker_lpr": 1,
+      "worker_contact": 1,
+      "worker_qualified": 1,
+      "canonical_rechecked": 1,
+      "canonical_qualified": 1,
+      "candidate": "BREEZ / БРИЗ — Климатические системы",
+      "lane_stop_rule": ">70% duplicate+early reject; sources rotated"
     }
   ],
   "qualified_companies": [
-    "S.Lavia"
+    "Future Vision",
+    "BREEZ / БРИЗ — Климатические системы"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "469_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "469_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "471_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "471_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
