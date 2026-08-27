@@ -1,24 +1,25 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-27T15:04:09+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260827-453`  
+**Версия:** 2026-08-27T16:03:53+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260827-454R1` (same-cycle repair of `N5K-20260827-454`)  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **464 / 464**  
+**Физически подтверждённый canonical/contactable:** **469 / 469**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **536**  
-**Осталось до 5000:** **4536**  
+**Осталось до 1000:** **531**  
+**Осталось до 5000:** **4531**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **464 / 464**;
+- перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence и pending;
+- physical canonical/contactable count: **469 / 469**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260827-453`;
+- последний завершённый RUN: `N5K-20260827-454R1`;
+- `N5K-20260827-454R1` — repair того же операционного цикла: первоначально canonical writer ошибочно трактовал ИП как запрещённую форму, хотя текущая конфигурация явно допускает `юрлицо/ИП`; S.Lavia была интегрирована без изменения критериев;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -105,30 +106,26 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260827-451`: 457/457, +1, PASS, orphan 0/0.
 - `N5K-20260827-452`: 461/461, +4, PASS, orphan 0/0.
 - `N5K-20260827-453`: 464/464, +3, PASS, orphan 0/0.
+- `N5K-20260827-454`: 468/468, +4, PASS, orphan 0/0.
+- `N5K-20260827-454R1`: 469/469, +1 repair, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260827-449
 Canonical/contactable: 455/455. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260827-450
 Canonical/contactable: 456/456. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
 
 ## Latest verified run N5K-20260827-451
 Canonical/contactable: 457/457. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260827-452
 Canonical/contactable: 461/461. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
 
 ## Latest verified run N5K-20260827-453
 Canonical/contactable: 464/464. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260827-454
 Canonical/contactable: 468/468. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
 
 ## Latest verified run N5K-20260827-454R1
 Canonical/contactable: 469/469. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
