@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-27T11:03:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260827-449`  
+**Версия:** 2026-08-27T14:00:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260827-452`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **455 / 455**  
+**Физически подтверждённый canonical/contactable:** **461 / 461**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **545**  
-**Осталось до 5000:** **4545**  
+**Осталось до 1000:** **539**  
+**Осталось до 5000:** **4539**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, contacts/evidence и pending;
-- physical canonical/contactable count: **455 / 455**;
+- physical canonical/contactable count: **461 / 461**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260827-449`;
+- последний завершённый RUN: `N5K-20260827-452`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -46,7 +46,7 @@
 19. После интеграции worker-staging помечать consumed по существующей безопасной схеме репозитория; доказательства истории не удалять.
 20. Не выполнять outreach, письма, отклики, подготовку рассылок или отправку сообщений.
 
-## Последний подтверждённый RUN — N5K-20260827-449
+## Подтверждённый RUN — N5K-20260827-449 (исторический)
 
 Baseline перед RUN: **452 / 452**.  
 Глобально зафиксирован консервативный аудируемый минимум **120** разных raw-кандидатов: worker-пулы не суммировались без полного cross-worker identity index.  
@@ -101,6 +101,9 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260827-447`: 449/449, +4, PASS, orphan 0/0.
 - `N5K-20260827-448`: 452/452, +3, PASS, orphan 0/0.
 - `N5K-20260827-449`: 455/455, +3, PASS, orphan 0/0.
+- `N5K-20260827-450`: 456/456, +1, PASS, orphan 0/0.
+- `N5K-20260827-451`: 457/457, +1, PASS, orphan 0/0.
+- `N5K-20260827-452`: 461/461, +4, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260827-449
 Canonical/contactable: 455/455. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

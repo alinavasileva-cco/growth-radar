@@ -1,0 +1,19 @@
+{
+  "run_id": "N5K-20260827-452",
+  "updated_at": "2026-08-27T14:00:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-133241-jobs.json",
+      "blob_sha": "beb3cf2916e58d571014a292fb7ddba0e384d576",
+      "result": "CONSUMED",
+      "note": "YANS / ООО «ЯНС» passed canonical re-check and was integrated physically as N5K-0615 in RUN 452. Immutable worker evidence retained in place for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 461,
+  "physical_contactable_after_cycle": 461,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach_sent": 0
+}
