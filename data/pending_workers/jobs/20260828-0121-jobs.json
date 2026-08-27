@@ -1,0 +1,103 @@
+{
+  "schema_version": "pending_worker_v1",
+  "lane": "jobs",
+  "created_at": "2026-08-28T01:21:52+03:00",
+  "source_head_sha": "1c5893a7cc545baf13cc95ec0b25fb45032e1642",
+  "source_canonical_run": "N5K-20260828-462",
+  "source_canonical_count": 479,
+  "source_contactable_count": 479,
+  "canonical_write": false,
+  "outreach": false,
+  "worker_funnel": {
+    "raw_employer_level_after_within_worker_name_dedup": 80,
+    "raw_scope_note": "80 employer-level source identities were audited across fresh regional job-board result pools/direct vacancy pages. Early rejects were not assigned full legal keys, so this does not claim a globally identity-proven 80-company set beyond this worker pass.",
+    "fast_gate": 5,
+    "deep_check": 2,
+    "size_pass": 1,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicates_plus_early_rejects": 75,
+    "duplicate_early_reject_rate": 0.9375,
+    "source_switch_triggered": true,
+    "source_switch_note": "Broad role/city pools were highly saturated with weak, irrelevant or already-seen employers; discovery was rotated across Ufa, Omsk, Krasnodar, Krasnoyarsk, Vladivostok, Khabarovsk, Barnaul, Yaroslavl and other regional/direct-employer pages before deep-check. Exact first-20 duplicate/reject split was not separately instrumented and is not reconstructed."
+  },
+  "discovery_sources": [
+    "https://www.vffzvru.jobvk.com/ufa/rukovoditely-otdela-prodazh",
+    "https://www.vffzvru.jobvk.com/omsk/rukovoditely-otdela-prodazh",
+    "https://wwwjtfhhhszdjru.jobvk.com/krasnodar/rukovoditely-otdela",
+    "https://gdejob.com/вакансии-коммерческого-директора-в-красноярске",
+    "https://trust.jobvk.com/vladivostok/pomoshtnik-rukovoditelya",
+    "https://www.notexistsforum.jobvk.com/habarovsk/direktor/sa-ot-100000",
+    "https://www.notexistskhtjsru.jobvk.com/barnaul/rukovoditely-otdela-prodazh",
+    "https://www.notexistscomru.jobvk.com/yar",
+    "https://dreamjob.ru/employers/1317692/vakansii/136601647"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "Промизоляция",
+      "legal_name": "АО «ПРОМИЗОЛЯЦИЯ»",
+      "inn": "5260093454",
+      "ogrn": "1025203035637",
+      "legal_status": "Действующее российское частное непубличное акционерное общество",
+      "legal_status_as_of": "2026-08-28",
+      "region": "Нижегородская область, Нижний Новгород",
+      "size": {
+        "revenue_2025_rub": 362558000,
+        "employees_2025": 50,
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1025203035637-zao-promizolyatsiya/",
+          "https://companium.ru/id/1025203035637-promizolyaciya",
+          "https://reputation.ru/ogrn/1025203035637"
+        ]
+      },
+      "signal": {
+        "tier": "S1",
+        "type": "Коммерческий директор",
+        "date": "2026-08-25",
+        "summary": "Работодатель открыл вакансию коммерческого директора в Нижнем Новгороде; обязанности включают организацию сбыта продукции, планирование материально-технического обеспечения и управление коммерческими процессами.",
+        "evidence_url": "https://dreamjob.ru/employers/1317692/vakansii/136601647"
+      },
+      "lpr": {
+        "name": "Бедай Эдуард Владимирович",
+        "role": "генеральный директор с 01.04.2026",
+        "evidence_urls": [
+          "https://reputation.ru/ogrn/1025203035637",
+          "https://companium.ru/id/1025203035637-promizolyaciya"
+        ]
+      },
+      "contact_route": {
+        "type": "корпоративный телефон + корпоративный email + домен",
+        "phone": "+7 (831) 258-39-58",
+        "email": "soa@ruiz.ru",
+        "url": "https://ruiz.ru",
+        "note": "Телефон и корпоративный email опубликованы в актуальных карточках юрлица; ruiz.ru подтверждён как корпоративный домен. На момент проверки главная страница ruiz.ru отвечала 502, поэтому шаблонно восстановленные контакты не использовались."
+      },
+      "dedup_keys": {
+        "inn": "5260093454",
+        "ogrn": "1025203035637",
+        "exact_legal_name": "АКЦИОНЕРНОЕ ОБЩЕСТВО ПРОМИЗОЛЯЦИЯ",
+        "brand_domain": "ПРОМИЗОЛЯЦИЯ|ruiz.ru"
+      },
+      "dedup_check": {
+        "repository_search_inn": "no_match",
+        "repository_search_ogrn": "no_match",
+        "repository_search_brand": "no_match",
+        "checked_against_head": "1c5893a7cc545baf13cc95ec0b25fb45032e1642",
+        "final_canonical_guard_required": true
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/1317692/vakansii/136601647",
+        "https://companies.rbc.ru/id/1025203035637-zao-promizolyatsiya/",
+        "https://reputation.ru/ogrn/1025203035637",
+        "https://companium.ru/id/1025203035637-promizolyaciya",
+        "https://zachestnyibiznes.ru/company/ul/1025203035637_5260093454_ZAOPROMIZOLYaCIYa",
+        "https://ruiz.ru"
+      ],
+      "qualification": "QUALIFIED",
+      "qualification_note": "SIZE, LEGAL, fresh S1 SIGNAL, current LPR and practical corporate contact route are evidenced. No guessed facts or template-reconstructed contacts were used."
+    }
+  ]
+}
