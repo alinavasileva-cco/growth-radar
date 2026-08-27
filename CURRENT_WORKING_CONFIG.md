@@ -165,3 +165,7 @@ Canonical/contactable: 477/477. Integrity PASS. Orphan contacts/evidence: 0/0. O
 ## RUN 460 — canonical integration
 
 Fresh worker pool after RUN 459: jobs/20260827-222430 reported 80 raw employers and 1 worker-qualified candidate; industry/20260827-222525 reported 100 raw and 0 qualified. ЕЗВО / ООО «ЕКАТЕРИНБУРГСКИЙ ЗАВОД ВЫСОКОВОЛЬТНОГО ОБОРУДОВАНИЯ» passed canonical recheck and physical pre-write dedup and was integrated as N5K-0634, INN 6679031070, OGRN 1136679004681. Final funnel: source-level raw 180 → fast gate 6 → size 2 → legal 2 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 1; duplicates 0; excluded 179. The 180 raw figure is not claimed as 180 globally proven distinct companies across workers because a complete cross-worker identity index is unavailable. Target 300/400–800 globally auditable raw was not reached; quality gates were not weakened. Canonical/contactable: 477/477. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
+
+
+## Latest verified run N5K-20260827-461
+Canonical/contactable: 478/478. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

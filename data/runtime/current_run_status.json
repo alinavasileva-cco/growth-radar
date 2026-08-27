@@ -1,20 +1,20 @@
 {
-  "run_id": "N5K-20260827-460",
+  "run_id": "N5K-20260827-461",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-27T23:18:00+03:00",
+  "updated_at": "2026-08-27T23:59:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 476,
+    "baseline_count": 477,
     "target_count": 5000,
-    "current_canonical_count": 477,
-    "current_contactable_count": 477,
+    "current_canonical_count": 478,
+    "current_contactable_count": 478,
     "progress_added": 1,
-    "remaining": 4523
+    "remaining": 4522
   },
   "funnel": {
     "discovered": 180,
-    "fast_gate_passed": 6,
+    "fast_gate_passed": 5,
     "size_check_passed": 2,
     "legal_match_passed": 2,
     "signal_confirmed": 1,
@@ -26,20 +26,21 @@
   },
   "lane_metrics": [
     {
-      "lane": "jobs/20260827-222430",
+      "lane": "jobs/20260827-232350",
       "raw": 80,
-      "fast_gate": 6,
+      "fast_gate": 5,
       "size": 2,
       "legal": 2,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "result": "EZVO_QUALIFIED"
+      "worker_qualified": 1,
+      "canonical_prewrite_qualified": 1,
+      "result": "SATURN_BASHKIRIA_QUALIFIED"
     },
     {
-      "lane": "industry/20260827-222525",
-      "raw": 100,
+      "lane": "industry/20260827-233200",
+      "raw_distinct": 100,
       "fast_gate": 0,
       "size": 0,
       "legal": 0,
@@ -51,14 +52,14 @@
     }
   ],
   "qualified_companies": [
-    "ЕЗВО / Екатеринбургский Завод Высоковольтного Оборудования"
+    "Сатурн / Сатурн Башкирия"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "477_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "477_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "478_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "478_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
