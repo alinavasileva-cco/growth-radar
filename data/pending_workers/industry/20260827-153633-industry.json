@@ -1,0 +1,178 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-27T15:36:33+03:00",
+  "source_head_before_write": "554322d28652a95370ae0c69942aa845974ddbce",
+  "canonical_baseline": {
+    "run": "N5K-20260827-453",
+    "canonical": 464,
+    "contactable": 464,
+    "integrity": "PASS",
+    "source": "CURRENT_WORKING_CONFIG.md at source_head_before_write"
+  },
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "raw_pool": {
+    "distinct_count": 100,
+    "method": "Five non-overlapping 20-company batches from industrial exhibitor/catalog sources; cross-source repeated brands were replaced before counting. Each source was stopped after its first 20 because duplicate+early-reject rate exceeded 70%, then discovery rotated to the next source as required.",
+    "sources": [
+      {
+        "name": "Testing&Control 2026 exhibitor list",
+        "url": "https://www.testing-control.ru/en-GB/about/exhibitor-list.aspx",
+        "raw": 20,
+        "duplicates_plus_early_rejects": 19,
+        "duplicate_reject_rate": 0.95,
+        "fast_gate_survivors": 1,
+        "qualified": 1,
+        "stop_reason": "duplicate+early reject >70% on first 20"
+      },
+      {
+        "name": "NDT Russia 2026 exhibitor list",
+        "url": "https://www.ndt-russia.ru/en-GB/about/exhibitor-list.aspx?promo=ndt24m16103",
+        "raw": 20,
+        "duplicates_plus_early_rejects": 20,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "duplicate+early reject >70% on first 20"
+      },
+      {
+        "name": "Heat&Power 2026 exhibitor list",
+        "url": "https://www.heatpower-expo.ru/en-GB/about/exhibitor-list.aspx",
+        "raw": 20,
+        "duplicates_plus_early_rejects": 20,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "duplicate+early reject >70% on first 20"
+      },
+      {
+        "name": "PCVExpo exhibitor catalog",
+        "url": "https://www.pcvexpo.ru/en-GB/about/exhibitor-list.aspx",
+        "raw": 20,
+        "duplicates_plus_early_rejects": 19,
+        "duplicate_reject_rate": 0.95,
+        "fast_gate_survivors": 1,
+        "qualified": 0,
+        "stop_reason": "duplicate+early reject >70% on first 20"
+      },
+      {
+        "name": "CTT Expo 2026 participant catalog / Expodat",
+        "url": "https://expodat.com/en/expositions/exposition/6818-ctt-expo-2026.html",
+        "raw": 20,
+        "duplicates_plus_early_rejects": 20,
+        "duplicate_reject_rate": 1.0,
+        "fast_gate_survivors": 0,
+        "qualified": 0,
+        "stop_reason": "duplicate+early reject >70% on first 20; first batch heavily foreign"
+      }
+    ],
+    "global_additivity_note": "This worker raw count is not intended to be added arithmetically to other workers unless the canonical writer performs cross-worker identity dedup."
+  },
+  "funnel": {
+    "raw": 100,
+    "duplicates_plus_early_rejects": 98,
+    "fast_gate": 2,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "МЕРА / НПП МЕРА",
+      "legal_name": "ООО «НАУЧНО-ПРОИЗВОДСТВЕННОЕ ПРЕДПРИЯТИЕ «МЕРА»",
+      "inn": "5029023560",
+      "ogrn": "1025003532091",
+      "country": "Россия",
+      "region": "Московская область",
+      "city": "Мытищи",
+      "status": "Действует",
+      "private_company": true,
+      "website": "https://nppmera.ru/",
+      "size": {
+        "status": "PASS",
+        "basis": "Актуальный масштаб подтвержден текущим статусом субъекта среднего предпринимательства и свежими открытыми данными о 142 сотрудниках; официальный сайт подтверждает действующее собственное высокотехнологичное производство. Устаревшая выручка 2023 года не используется как замена актуальному масштабу.",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-NPP-MERA_0720abb9-2c97-48a7-b635-c9ae90d29608/",
+          "https://companies.rbc.ru/id/1025003532091-ooo-nauchno-proizvodstvennoe-predpriyatie-mera/",
+          "https://nppmera.ru/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "current_owner_lpr": "Потапов Игорь Анатольевич",
+        "owner_share": "100%",
+        "basis": "ООО действует; ИНН 5029023560, ОГРН 1025003532091. Потапов Игорь Анатольевич указан как 100% учредитель и генеральный директор в свежих открытых данных.",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1025003532091-ooo-nauchno-proizvodstvennoe-predpriyatie-mera/",
+          "https://zachestnyibiznes.ru/company/ul/1025003532091_5029023560_OOO-NPP-MERA",
+          "https://injust.pro/proverka/5029023560",
+          "https://nppmera.ru/privacy/policy.php"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S2",
+        "date": "2026-07-21",
+        "summary": "Компания завершила пилот федерального проекта «Производительность труда» на производственно-техническом центре: время производственного процесса сокращено на 16%, выработка увеличена на 13%; компания планирует масштабировать внедренные практики на остальные участки предприятия. Это подтвержденная текущая операционная трансформация производственной системы.",
+        "evidence_url": "https://www.vedomosti.ru/press_releases/2026/07/21/predpriyatie-iz-mitisch-na-16-sokratilo-vremya-proizvodstva-v-ramkah-fedproekta"
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Потапов Игорь Анатольевич",
+        "role": "100% собственник / генеральный директор",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1025003532091-ooo-nauchno-proizvodstvennoe-predpriyatie-mera/",
+          "https://zachestnyibiznes.ru/company/ul/1025003532091_5029023560_OOO-NPP-MERA"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official_company_contact",
+        "phone": "+7 (495) 783-71-59",
+        "email": "info@nppmera.ru",
+        "contact_url": "https://nppmera.ru/privacy/policy.php",
+        "website_url": "https://nppmera.ru/"
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "5029023560",
+        "ogrn": "1025003532091",
+        "legal_name_normalized": "ООО НАУЧНО-ПРОИЗВОДСТВЕННОЕ ПРЕДПРИЯТИЕ МЕРА",
+        "brand_domain": "НПП МЕРА|nppmera.ru"
+      },
+      "dedup_prewrite": {
+        "status": "PASS_NO_MATCH",
+        "checked_against_head": "554322d28652a95370ae0c69942aa845974ddbce",
+        "checks": [
+          "ИНН 5029023560 absent from current leads_master snapshot",
+          "ОГРН 1025003532091 absent from current leads_master snapshot",
+          "exact legal-name match absent from current leads_master snapshot",
+          "nppmera.ru absent from repository search at prewrite check"
+        ]
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "deep_checked_rejected": [
+    {
+      "brand": "BERG Compressors",
+      "decision": "REJECT_SIZE_IDENTITY_LINK_NOT_VERIFIED",
+      "reason": "Fresh 2026 production signals were found, including launch of the ATOM compressor series and full-cycle modular compressor-station assembly in Moscow Region, but the cheap/deep pass did not establish a sufficiently unambiguous current legal-entity + size linkage for the BERG brand. The candidate was not advanced by inference.",
+      "evidence_urls": [
+        "https://www.pcvexpo.ru/ru-RU/press/news/18435.aspx",
+        "https://www.pcvexpo.ru/ru-RU/press/news/18514.aspx",
+        "https://berg.direct/"
+      ]
+    }
+  ],
+  "quality_notes": [
+    "The working configuration was re-read after HEAD changed during discovery; final baseline is 554322d28652a95370ae0c69942aa845974ddbce.",
+    "Canonical dedup keys used: Lead ID, INN, OGRN/OGRNIP, exact legal entity, confirmed brand+domain.",
+    "No stale financial value was used to substitute for current SIZE evidence.",
+    "Canonical master/contactable/contacts/evidence/runtime/campaign were not modified.",
+    "No outreach was performed."
+  ]
+}
