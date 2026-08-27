@@ -1,0 +1,129 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-27T15:31:21+03:00",
+  "source_head": "079adcb3649225aae48464ab0a3e4a83e3c5ee65",
+  "canonical_snapshot": {
+    "run": "N5K-20260827-453",
+    "canonical": 464,
+    "contactable": 464,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "funnel": {
+    "raw_distinct_inspected": 34,
+    "fast_gate": 8,
+    "size": 5,
+    "legal": 4,
+    "signal": 4,
+    "lpr": 3,
+    "contact": 2,
+    "qualified": 2,
+    "target_raw_100_180_reached": false,
+    "note": "Conservative count only: only individually inspected named companies were counted; search-result rows/aggregate project counts were not counted as raw. Criteria were not weakened to hit target volume."
+  },
+  "qualified": [
+    {
+      "brand": "Пластик Он Лайн",
+      "legal_name": "ООО \"ПЛАСТИК ОН ЛАЙН\"",
+      "inn": "5023008164",
+      "ogrn": "1035007567440",
+      "region": "Московская область",
+      "legal_status": "Действующая организация",
+      "ownership": "частная компания",
+      "size": {
+        "revenue_2025_rub": 639822000,
+        "revenue_growth_2025": "+33.9%",
+        "employees_reference": 95,
+        "sources": [
+          "https://firmoteka.ru/5023008164",
+          "https://saby.ru/profile/5023008164-503801001"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-05-06",
+        "summary": "Запуск нового производства зубной пасты в таблетках; компания продолжает расширять продуктовый портфель, который уже превышает 100 наименований. Ранее в январе 2026 также готовила серийный запуск новой линейки парфюмированных спреев для дома.",
+        "sources": [
+          "https://www.vedomosti.ru/press_releases/2026/05/06/podmoskovnaya-kompaniya-zapustila-proizvodstvo-zubnoi-pasti-v-tabletkah",
+          "https://www.vedomosti.ru/press_releases/2026/01/19/novuyu-lineiku-produktsii-nachnut-proizvodit-na-podmoskovnom-predpriyatii-gk-plastik-on-lain"
+        ]
+      },
+      "lpr": {
+        "name": "Кульков Дмитрий Евгеньевич",
+        "role": "генеральный директор",
+        "sources": [
+          "https://saby.ru/profile/5023008164-503801001",
+          "https://newsmosreg.ru/society/2026/02/11/149029.html"
+        ]
+      },
+      "contact": {
+        "route": "официальные общие контакты компании",
+        "phone": "8 800 333 54 31",
+        "email": "site@plastic-online.ru",
+        "url": "https://www.plastic-online.ru/contacts/"
+      },
+      "dedup_keys": {
+        "inn": "5023008164",
+        "ogrn": "1035007567440",
+        "exact_legal_name": "ООО \"ПЛАСТИК ОН ЛАЙН\"",
+        "brand_domain": "Пластик Он Лайн|plastic-online.ru"
+      },
+      "dedup_before_write": "PASS: repository search returned no match for INN 5023008164 and brand name at source HEAD"
+    },
+    {
+      "brand": "Биофармлаб",
+      "legal_name": "ООО \"БИОФАРМЛАБ\"",
+      "inn": "5010052053",
+      "ogrn": "1165010051040",
+      "region": "Московская область, Дубна",
+      "legal_status": "Действующая организация",
+      "ownership": "частная собственность",
+      "size": {
+        "revenue_2025_rub": 2320871000,
+        "employees_reference": 106,
+        "sources": [
+          "https://companies.rbc.ru/id/1165010051040-ooo-biofarmlab/",
+          "https://basis.myseldon.com/ru/company/1165010051040/facts"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-03-02",
+        "summary": "Запущена третья очередь завода косметической продукции в ОЭЗ Дубна; новая очередь площадью 5,600 м² должна вывести производство до 3 млн единиц в месяц, новые мощности позволяют выпускать до 100 тыс. единиц в сутки.",
+        "sources": [
+          "https://www.vedomosti.ru/press_releases/2026/03/02/zavod-biofarmlab-zapustil-tretyu-ochered-proizvodstva-kosmetiki-v-oez-dubna"
+        ]
+      },
+      "lpr": {
+        "name": "Дымчук Иван Сергеевич",
+        "role": "генеральный директор",
+        "sources": [
+          "https://companies.rbc.ru/id/1165010051040-ooo-biofarmlab/",
+          "https://www.tbank.ru/business/contractor/legal/1165010051040/"
+        ]
+      },
+      "contact": {
+        "route": "публичные телефоны предприятия",
+        "phones": ["+7 916 114-20-44", "+7 495 989-92-42"],
+        "source": "https://companium.ru/id/1165010051040-biofarmlab"
+      },
+      "dedup_keys": {
+        "inn": "5010052053",
+        "ogrn": "1165010051040",
+        "exact_legal_name": "ООО \"БИОФАРМЛАБ\"",
+        "brand_domain": "Биофармлаб|"
+      },
+      "dedup_before_write": "PASS: repository search returned no match for INN 5010052053 and brand name at source HEAD"
+    }
+  ],
+  "not_qualified_examples": [
+    {"name": "Три Точки Мануфактуринг", "reason": "already present in canonical from earlier run"},
+    {"name": "Форш", "reason": "already present in canonical from earlier run"},
+    {"name": "Татнефть / Биометионин", "reason": "public-company/state-adjacent ownership context; not taken through private-company gate in this worker"},
+    {"name": "Курский аккумуляторный завод", "reason": "not completed through current LPR/contact verification within this pass"},
+    {"name": "КЕНГУРУ.ПРО", "reason": "brand/legal-entity mapping requires additional verification before staging"},
+    {"name": "БИДЖЕТ", "reason": "size and contact gates not fully closed within this pass"}
+  ],
+  "outreach": 0
+}
