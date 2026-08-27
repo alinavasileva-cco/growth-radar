@@ -1,0 +1,39 @@
+{
+  "run_id": "N5K-20260827-454",
+  "repair_run_id": "N5K-20260827-454R1",
+  "updated_at": "2026-08-27T16:03:53+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260827-151736-jobs.json",
+      "blob_sha": "e66f02ae6c90013476679891b798fcd46190a01c",
+      "result": "CONSUMED",
+      "note": "S.Lavia passed canonical re-check and was physically integrated as N5K-0626 in same-cycle repair N5K-20260827-454R1. Immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/jobs/20260827-153100-jobs.json",
+      "blob_sha": "fe8428246a916bbd76a2cb8b5c6fb280618fec0f",
+      "result": "CONSUMED",
+      "note": "Завод Металлоконструкций Ресталь passed canonical re-check and was physically integrated as N5K-0622 in N5K-20260827-454."
+    },
+    {
+      "path": "data/pending_workers/growth_news/20260827-153121-growth-news.json",
+      "blob_sha": "2a0bcdb669019a01921a5f441744e7ab604ccfaa",
+      "result": "CONSUMED",
+      "note": "Пластик Он Лайн and Биофармлаб passed canonical re-check and were physically integrated as N5K-0623 and N5K-0624. Биофармлаб CONTACT was additionally closed on official biopharmlab.ru corporate email routes."
+    },
+    {
+      "path": "data/pending_workers/industry/20260827-153633-industry.json",
+      "blob_sha": "b3a33dfe5db2ca66251ebd393833e74200e93a73",
+      "result": "CONSUMED",
+      "note": "МЕРА / НПП МЕРА passed canonical re-check and was physically integrated as N5K-0625."
+    }
+  ],
+  "physical_canonical_after_cycle": 469,
+  "physical_contactable_after_cycle": 469,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
