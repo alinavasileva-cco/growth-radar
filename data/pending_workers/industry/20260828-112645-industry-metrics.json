@@ -1,0 +1,276 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "generated_at": "2026-08-28T11:26:45+03:00",
+  "baseline_head": "a885d504c110221236085a782b3d0514a3b020b2",
+  "config_version": "2026-08-28T11:05:00+03:00",
+  "canonical_status": {
+    "contactable": 487,
+    "master": 487,
+    "integrity": "PASS"
+  },
+  "canonical_dedup_keys": [
+    "lead_id",
+    "inn",
+    "ogrn_or_ogrnip",
+    "exact_legal_entity",
+    "confirmed_brand_plus_domain"
+  ],
+  "rules": {
+    "fast_gate": "Russian private company/IP -> current scale orientation -> canonical dedup -> probable S1-S3",
+    "deep_funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "exhibition_participation_is_signal": false,
+    "outreach": false,
+    "canonical_write": false
+  },
+  "source_observations": 120,
+  "distinct_raw_source_identities": 119,
+  "duplicate_source_identities_within_this_worker_pool": 1,
+  "globally_legal_key_proven_distinct": false,
+  "globally_legal_key_proven_distinct_note": "Early-rejected source identities were not all resolved to INN/OGRN/domain; therefore 119 is a distinct source-identity count, not a claim of 119 globally legal-key-proven companies.",
+  "sources": [
+    {
+      "name": "Weldex/Fastenex 2026 exhibitor catalog",
+      "url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/weldex-2026/ru/Exhibitor",
+      "first20_observed": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "rotated_after_first20": true,
+      "raw_names": [
+        "АВГ Технологии",
+        "Акрополь, ООО",
+        "АЛЬФА ГЛОБАЛ, ООО",
+        "БОДОР, ООО",
+        "Вариант-А, ООО",
+        "ВЕКТОР ГРУПП",
+        "ГЕТА, ООО",
+        "Главный сварщик (подразделение ТЕХНОСВАР КС)",
+        "ГРОВЕРС",
+        "Группа компаний RS",
+        "ДЕЛЬТАСВАР, ООО",
+        "ЕВЦ, ООО",
+        "Завод Технических Полимерных Изделий",
+        "ИНГА, АО",
+        "ИНСТРУМЕНТАЛЬНАЯ СИСТЕМА ПТК, ООО",
+        "КАТРАН, ООО",
+        "КБ АСТ, ЗАО",
+        "Yueqing Yiwan Hardware Products Co., Ltd.",
+        "Компания по сварке и резке Амонд, город Жэньцю",
+        "Крепительная группа (Anhui) Co., Ltd"
+      ]
+    },
+    {
+      "name": "Heat&Power 2026 exhibitor list",
+      "url": "https://www.heatpower-expo.ru/ru-RU/about/exhibitor-list.aspx",
+      "first20_observed": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "rotated_after_first20": true,
+      "raw_names": [
+        "АГВ, ООО",
+        "АГК, ООО",
+        "АГУНА ТЕПЛО, ООО",
+        "ВАЛДЕКС ЭНЕРГЕТИКА",
+        "Валдекс Энергетические Решения, ООО",
+        "ВОЛЖСКИЕ ИНДУСТРИАЛЬНЫЕ ДВИГАТЕЛИ, ООО",
+        "ДВС РЕСУРС",
+        "ИТЕРРА",
+        "КИРЭЙ КЕМИКАЛ, ООО",
+        "МОТОРВЕРК-СГУ, ООО",
+        "ООО Техарт",
+        "ООО РН-СМАЗОЧНЫЕ МАТЕРИАЛЫ",
+        "РОСКЛАПАН",
+        "РТС, ООО",
+        "ТЕПЛООБМЕН",
+        "ТЕХПРОМ",
+        "ЭнергоПромТех",
+        "Ярославский дизельный двигатель",
+        "Anhui EvoTec Power Generation Co., Ltd",
+        "Changsha U1 Technology Co.,LTD"
+      ]
+    },
+    {
+      "name": "Testing&Control 2026 exhibitor list",
+      "url": "https://www.testing-control.ru/ru-RU/about/exhibitor-list.aspx",
+      "first20_observed": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "rotated_after_first20": true,
+      "raw_names": [
+        "3DVISION",
+        "3Д К",
+        "3Д КОНТРОЛЬ",
+        "3Д РЕШЕНИЯ",
+        "DONGLING TECHNOLOGIES CO., LTD",
+        "LAIZHOU DEHUI AUTOMATION CO., LTD",
+        "MAGUS",
+        "ZETLAB",
+        "АЙ3Д, ООО",
+        "АКЛЕС",
+        "АКМЕТРОН, АО",
+        "АКТОР",
+        "АРСТЕК",
+        "АСЕПТИКА",
+        "БЕРДСКОЕ СПЕЦИАЛЬНОЕ КОНСТРУКТОРСКОЕ БЮРО ВЕГА, АО",
+        "БЛМ СИНЕРЖИ",
+        "ВЕКТОР ЭТАЛОН, ООО",
+        "ВИСОМ",
+        "ВНИИФТРИ, ФГУП",
+        "ГЛОБАЛТЕСТ"
+      ]
+    },
+    {
+      "name": "PCVExpo 2026 exhibitor list",
+      "url": "https://www.pcvexpo.ru/ru-RU/visitors/exhibitor-list.aspx",
+      "first20_observed": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "rotated_after_first20": true,
+      "raw_names": [
+        "ANHUI GT PUMP TECHNOLOGY CO.,LTD",
+        "Changzhou Best Control Equipment Co.,Ltd.",
+        "Hangzhou Risheng Decontamination Equipment Co., Ltd.",
+        "ERREESSE Valve GmbH",
+        "Suzhou Youwei Fluid Technology Co., Ltd.",
+        "ZHEJIANG WANJIADE CONTROL VALVE CO., LTD",
+        "AMC",
+        "ANHUI LVHUAN PUMPS CO.,LTD.",
+        "ANTICORPROF.RU",
+        "BERG Compressors",
+        "Fuxing Technology (ФУСИН ТЕХНОЛОДЖИ)",
+        "HEBEI DIDE TRADING CO.,LTD",
+        "Hebei Jiwei Valve Trading Co.,Ltd",
+        "HEBEI YUANFENG VALVE CO.,LTD",
+        "HMS",
+        "ITES",
+        "JIANGXI NANXIANG AIR COMPRESSOR CO., LTD.",
+        "JITAI VALVE GROUP CO.,LTD.",
+        "Lida (China) Machine Equipment Co., Ltd",
+        "LIXIN VALVE GROUP CO.,LTD"
+      ]
+    },
+    {
+      "name": "VacuumCryoTech 2026 exhibitor list",
+      "url": "https://www.vacuumtechexpo.com/ru-RU/about/exhibitor-list.aspx",
+      "first20_observed": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "rotated_after_first20": true,
+      "duplicate_in_worker_pool": "БЛМ СИНЕРЖИ",
+      "raw_names": [
+        "ACME (Beijing) Technology Co., Ltd",
+        "Beijing Super Q Technology Co.,Ltd.",
+        "China Office",
+        "SHANGHAI EVP VACUUM TECHNOLOGY CO., LTD",
+        "АкадемВак",
+        "АО ВАКУУМ.РУ",
+        "АО Криогенмаш",
+        "АО ОКБ АСТРОН",
+        "БелРосВак, ООО",
+        "БЛМ СИНЕРЖИ",
+        "Вакууммаш, АО",
+        "Вакуумные технологии",
+        "ВЛС-Инжиниринг, ООО",
+        "Геликон, НПО",
+        "ГрафитЭл-МЭЗ",
+        "Инжиниринг Групп",
+        "Интек Аналитика, АО",
+        "ИСТПАРТНЕР",
+        "Карбосил",
+        "Кварц, АО"
+      ]
+    },
+    {
+      "name": "Woodex Mebel Summit 2026 participant registry/news",
+      "url": "https://woodexpo.ru/ru/about/news/2026/june/04/do-woodex-mebel-summit-ostalos-5-dnej/",
+      "first20_observed": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "rotated_after_first20": true,
+      "raw_names": [
+        "Первая мебельная фабрика",
+        "divan.ru",
+        "Волховец",
+        "ГК Ангстрем",
+        "Mr.Doors",
+        "Фрамир",
+        "Шатура",
+        "Кухонный двор",
+        "Столплит",
+        "Зов",
+        "Уютная среда",
+        "Фабрика мебели СТИМ",
+        "Zeid_mebel",
+        "Андриа",
+        "Артем-Мебель",
+        "Иларт Мебель",
+        "КРАСДВОР ГРУПП",
+        "Мебелик",
+        "Мебельная фабрика Астра",
+        "Мелания"
+      ]
+    }
+  ],
+  "fast_gate_review": {
+    "method": "Conservative cheap gate: foreign/non-Russian and institutional identities rejected immediately; for Russian private identities, exhibition/catalog presence alone was not accepted as S1-S3 and candidates without quickly verifiable current-scale plus probable fresh S1-S3 evidence were not promoted.",
+    "spot_checks": [
+      {
+        "candidate": "ВОЛЖСКИЕ ИНДУСТРИАЛЬНЫЕ ДВИГАТЕЛИ, ООО",
+        "result": "EARLY_REJECT",
+        "reason": "Active Russian manufacturer and current production activity are visible, but fresh 2026 evidence found was visits/partnership/exhibition activity rather than a sufficiently explicit S1-S3 expansion/investment signal.",
+        "evidence_urls": ["https://volga-ind.ru/", "https://volga-ind.ru/news/"]
+      },
+      {
+        "candidate": "ДВС РЕСУРС",
+        "result": "EARLY_REJECT",
+        "reason": "Own manufacturing scale is visible, but quickly found project evidence was 2025 and no sufficiently fresh explicit 2026 S1-S3 company-growth signal was confirmed in this pass.",
+        "evidence_urls": ["https://www.dvsr.su/about/", "https://www.heatpower-expo.ru/ru-RU/press/news/17694.aspx"]
+      },
+      {
+        "candidate": "Вакууммаш, АО",
+        "result": "EARLY_REJECT",
+        "reason": "2026 strategic exhibition partnership and Russian-product registry updates were confirmed, but these do not by themselves establish S1-S3 expansion/investment.",
+        "evidence_urls": ["https://www.vacuumtechexpo.com/ru-RU/press/news/18549.aspx", "https://www.vacuumtechexpo.com/ru-RU/press/news/18485.aspx"]
+      },
+      {
+        "candidate": "БЛМ СИНЕРЖИ",
+        "result": "EARLY_REJECT",
+        "reason": "2026 exhibition/product activity was confirmed, not a sufficient S1-S3 growth signal; also duplicated across two source lanes in this worker pool.",
+        "evidence_urls": ["https://blms.ru/company/news/blm-sinerzhi-dron-ekspo/"]
+      },
+      {
+        "candidate": "Завод Технических Полимерных Изделий",
+        "result": "EARLY_REJECT",
+        "reason": "Current manufacturing capability and 2026 exhibition activity were confirmed, but exhibition participation is not SIGNAL and no explicit fresh S1-S3 was confirmed in the cheap pass.",
+        "evidence_urls": ["https://ztpi.ru/", "https://rus-elektronika.ru/ru-RU/press/news/10523.aspx"]
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw_source_observations": 120,
+    "raw_distinct_source_identities": 119,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "qualified": [],
+  "writes": {
+    "canonical_master": false,
+    "canonical_contactable": false,
+    "canonical_contacts": false,
+    "canonical_evidence": false,
+    "runtime": false,
+    "campaign": false,
+    "outreach": false
+  },
+  "notes": [
+    "All six lanes crossed the >70% duplicate+early-reject threshold on their first 20 observations and were stopped at that point.",
+    "One cross-lane duplicate (БЛМ СИНЕРЖИ) reduced 120 source observations to 119 distinct source identities.",
+    "No candidate was promoted into the deep funnel; therefore no legal/contact fields were inferred or reconstructed.",
+    "Because qualified=0, this metrics-only immutable worker file is the only intended write for this pass."
+  ]
+}
