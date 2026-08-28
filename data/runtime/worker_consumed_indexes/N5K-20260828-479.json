@@ -1,0 +1,22 @@
+{
+  "run_id": "N5K-20260828-479",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-28T17:58:48+03:00",
+  "source_head_before_integration": "d8d12ab1f791e085f5982d83f06f268f4f866aff",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260828-171806-jobs.json",
+      "blob_sha": "1109b82ddd75cf15ca4242cf60435a117ba35b91",
+      "result": "CONSUMED_INTEGRATED",
+      "note": "ЮгСпецМебель passed canonical recheck and physical pre-write dedup; integrated as N5K-0652."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-172745-industry-metrics.json",
+      "blob_sha": "4c07fa6e4bcdf66e1f2724981674081a77765c0a",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 distinct source-level identities; all five first-20 lanes stopped at 100% duplicate+early reject; no candidate promoted."
+    }
+  ],
+  "history_preserved": true,
+  "outreach_sent": 0
+}
