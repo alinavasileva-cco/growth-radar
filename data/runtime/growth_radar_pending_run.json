@@ -1,8 +1,187 @@
 {
-  "run_id": "N5K-20260828-477",
-  "updated_at": "2026-08-28T16:02:32+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260828-477 integrated physically; canonical/contactable 493/493; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260828-478",
+  "updated_at": "2026-08-28T17:01:58+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 300,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 298
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs",
+      "worker": "jobs",
+      "raw": 80,
+      "fast_gate": 6,
+      "size": 2,
+      "legal": 2,
+      "signal": 2,
+      "lpr": 2,
+      "contact": 2,
+      "worker_qualified": 2,
+      "canonical_qualified": 1,
+      "duplicates": 1,
+      "source": "JobVK / current job-board mirrors",
+      "note": "Worker-qualified ТС ГРУПП and АФ Перспектива ОМЗ. Canonical physical pre-write dedup confirmed АФ Перспектива ОМЗ already exists as N5K-0509 by INN 6318035951 and OGRN 1186313049823; only ТС ГРУПП proceeds to integration."
+    },
+    {
+      "lane": "industry",
+      "worker": "industry",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source": "Metaprom regional directories: Tatarstan / Bashkortostan / Novosibirsk / Rostov / Samara",
+      "note": "Five 20-company lanes each reached 100% duplicate+early-reject and were stopped; directory listing itself was not treated as SIGNAL."
+    },
+    {
+      "lane": "MIMS Automobility Saint Petersburg 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://mims.ru/",
+      "note": "First 20 source-level catalog observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Exhibition participation itself was not SIGNAL."
+    },
+    {
+      "lane": "InterFood Krasnodar 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://inter-food.su/ru-RU/about/exhibitor-list.aspx",
+      "note": "First 20 source-level catalog observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Listing itself was not SIGNAL."
+    },
+    {
+      "lane": "WorldFood Moscow 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://world-food.ru/ru/media/news/2026/august/12/uchastniki-worldfood-moscow-2026/",
+      "note": "First 20 source-level participant observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Participation itself was not SIGNAL."
+    },
+    {
+      "lane": "Textile Collection Moscow 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://textile-collection.com/",
+      "note": "First 20 source-level exhibitor observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Participation itself was not SIGNAL."
+    },
+    {
+      "lane": "APTEKA 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://aptekaexpo.ru/",
+      "note": "First 20 source-level online-catalog observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Forum/exhibition participation itself was not SIGNAL."
+    },
+    {
+      "lane": "Woodex 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://woodexpo.ru/ru/",
+      "note": "First 20 source-level current participant observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Participation itself was not SIGNAL."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0651",
+      "Brand": "ТС ГРУПП",
+      "Legal Name": "ООО «ТС ГРУПП»",
+      "INN": "5407266860",
+      "OGRN/OGRNIP": "1045403206200",
+      "Region": "Новосибирская область",
+      "City": "Новосибирск",
+      "Segment": "многопрофильный частный холдинг / недвижимость / строительство / hospitality / образование / B2B services",
+      "Website": "https://tsgroupnsk.ru/",
+      "Revenue/Scale": "Выручка ООО «ТС ГРУПП» за 2025 год 128,8 млн ₽; 61 сотрудник; официальный сайт подтверждает холдинг более чем из 30 компаний и несколько бизнес-направлений.",
+      "Signal Level": "S1",
+      "Signal Summary": "06.08.2026 холдинг открыл вакансию коммерческого директора — архитектора коммерческой стратегии всей группы, с задачей управлять портфелем разнородных бизнесов и превращать рыночные возможности в устойчивую прибыль.",
+      "Signal Date": "2026-08-06",
+      "Signal Source": "https://dreamjob.ru/employers/48779/vakansii/134958597",
+      "Owner": "Бойко Марьяна Александровна — 100% учредитель ООО «ТС ГРУПП»",
+      "CEO": "Вершинин Денис Владимирович",
+      "LPR": "Вершинин Денис Владимирович / Бойко Марьяна Александровна",
+      "LPR Role": "Генеральный директор / собственник 100%",
+      "Primary Phone": "+7 (383) 230-11-30",
+      "Primary Email": "secretar@transervis.ru",
+      "HH Contact": "",
+      "Contact Form": "https://tsgroupnsk.ru/",
+      "Contact Type": "official corporate secretary route to CEO/owner/commercial leadership",
+      "Contact Source": "Official TS GROUP site",
+      "Consulting Hypothesis": "Коммерческая архитектура многопрофильного холдинга: единая стратегия, портфель бизнес-направлений, P&L/маржинальность, CRM/KPI и управляемая система роста продаж между компаниями группы.",
+      "contacts": [
+        {
+          "value": "+7 (383) 230-11-30",
+          "channel": "phone",
+          "type": "corporate",
+          "source": "Official TS GROUP site",
+          "url": "https://tsgroupnsk.ru/",
+          "is_lpr": false,
+          "notes": "Official corporate phone route."
+        },
+        {
+          "value": "secretar@transervis.ru",
+          "channel": "email",
+          "type": "corporate secretary",
+          "source": "Official TS GROUP site",
+          "url": "https://tsgroupnsk.ru/",
+          "is_lpr": false,
+          "notes": "Official secretary email route to holding leadership."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО «ТС ГРУПП», ИНН 5407266860, ОГРН 1045403206200, действует; по данным ФНС на 27.08.2026. Выручка 2025 — 128,8 млн ₽, 61 сотрудник; Бойко Марьяна Александровна — учредитель 100%, Вершинин Денис Владимирович — генеральный директор.",
+          "url": "https://firmoteka.ru/5407266860",
+          "source": "Фирмотека / ФНС data"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "06.08.2026 ТС ГРУПП опубликовала вакансию коммерческого директора — архитектора коммерческой стратегии всей группы компаний.",
+          "url": "https://dreamjob.ru/employers/48779/vakansii/134958597",
+          "source": "DreamJob current vacancy mirror"
+        },
+        {
+          "type": "SCALE_OFFICIAL",
+          "claim": "Официальный сайт ТС ГРУПП подтверждает многопрофильный холдинг более чем из 30 компаний и действующее руководство холдинга.",
+          "url": "https://tsgroupnsk.ru/",
+          "source": "Official TS GROUP site"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт подтверждает корпоративный телефон +7 (383) 230-11-30 и email secretar@transervis.ru.",
+          "url": "https://tsgroupnsk.ru/",
+          "source": "Official TS GROUP site"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "notes": "Fresh workers: jobs 80 raw / 2 worker-qualified; industry 100 raw / 0 qualified. Canonical pre-write physical dedup removed АФ Перспектива ОМЗ as existing N5K-0509. ТС ГРУПП independently rechecked using fresh 2026 legal/financial data, fresh 06.08.2026 S1 vacancy, official holding site and official contact route. Additional low-overlap discovery contributed 120 source-level observations across six current catalogs; these are not claimed as 120 globally legal-key-proven distinct companies because cheap rejects were not resolved to full legal identity. No outreach."
 }
