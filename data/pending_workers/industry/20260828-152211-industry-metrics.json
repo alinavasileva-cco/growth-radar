@@ -1,0 +1,71 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-28T15:22:11+03:00",
+  "baseline_head": "2bf4daf37684840bdfdf9d0193379372e0500322",
+  "config_version": "2026-08-28T15:03:30+03:00",
+  "canonical_physical": {"leads_master": 493, "contactable_master": 493, "integrity": "PASS"},
+  "dedup_keys_read": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "constraints": {"canonical_writes": false, "outreach": false, "criteria_relaxed": false},
+  "raw_distinct_source_identities": 100,
+  "global_legal_key_uniqueness_claimed": false,
+  "funnel": {"raw": 100, "fast_gate": 0, "size": 0, "legal": 0, "signal": 0, "lpr": 0, "contact": 0, "qualified": 0},
+  "lanes": [
+    {
+      "source": "INLEGMASH-2026 official exhibitor list",
+      "source_url": "https://www.inlegmash-expo.ru/ru/exhibition/exhibitors/",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "reason": "Mostly non-Russian entities; remaining Russian identities had no independent probable S1-S3 trigger at cheap gate. Exhibition participation itself was not treated as SIGNAL.",
+      "raw_names": ["AKBAS PLASTIK SANAYI VE TICARET", "BENEKS TAAH. MUH. MUM. MAKINE", "BIÇAKSAN MAKINA TAKIM SANAYI TICARET", "CHANGSHU FEILONG NONWOVEN MACHINERY", "CHANGSHU ZHENTAI NONWOVEN MACHINERY", "CHANGZHOU LONGLONGSHENG WARP KNITTING MACHINERY", "CHINA TEXMATECH", "COSMOS GLOBAL", "DALIAN HUAYANG NEW MATERIALS TECHNOLOGY", "DEMSAN TEKSTIL MAKINA SANAYI TICARET", "DONGYANG AOLONG NONWOVEN EQUIPMENT", "DOPSING", "ELTEKSMAK MAKİNE ANONİM ŞİRKETİ", "ENHAS MAKINA SANAYI VE TICARET", "FONGS EUROPE", "FOSHAN NANHAI RONGJU MACHINERY", "FUJIAN YONTHIN DIGITAL CONTROL TECHNOLOGY", "GREAT TEX", "GUANGZHOU YONG JIN MACHINERY", "HANGZHOU XIONGYUE TECHNOLOGY"]
+    },
+    {
+      "source": "CeMAT RUSSIA 2026 interactive exhibitor guide",
+      "source_url": "https://www.cemat-russia.ru/exhibition/guide/",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "reason": "The first 20 were predominantly service, IT, distribution, media or association identities and/or lacked a separate probable S1-S3 trigger at cheap gate. Exhibition participation itself was not treated as SIGNAL.",
+      "raw_names": ["СИБА.КАФЕ", "ПАУЭР ЧАРДЖИНГ РУС", "Консорциум Робототехники и систем интеллектуального управления", "Юнит про", "Стратегии устойчивого развития, ООО", "Содружество производственников ЦЕХ", "АТЕУКО", "Азъ-группа, ООО", "РэкФорк", "ДжиТи Лоджистикс, ООО", "CeMAT RUSSIA DAILY / Объединенная промышленная редакция", "ККС, ООО", "Русток", "Совет профессионалов по цепям поставок", "Войсман", "Топлог", "Альфа-Сервис, ООО", "Аттико, ООО", "СпецСервис", "Сервис-Телеком, ООО"]
+    },
+    {
+      "source": "HouseHold Expo Spring 2026 participant list",
+      "source_url": "https://posudka.ru/node/44033",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "reason": "The first 20 were overwhelmingly foreign entities; the remaining identities had no verified Russian private-company fit plus probable S1-S3 signal at cheap gate.",
+      "raw_names": ["AIJIE LTD", "AISHIDA CO., LTD", "ANFIHOME", "ANHUI FUNAHAI INVESTMENT DEVELOPMENT CO., LTD", "Anhui Nature Imp. & Exp. Co., Ltd", "AOYAM KITCHEN (ZHONGSHAN) CO., LTD", "APLUS", "Baikal Express", "BAIZHENG", "Bazhou Linyu Household Products Co., Ltd", "BEJOY SHANGHAI IMP & EXP CO., LTD", "BENHENG TECHNOLOGY LTD.", "Bonafide Houseware Co., Ltd", "Cangzhou Zhenxi Glass Products Co., Ltd", "CAT AREA", "CEM", "CGS Express", "Changchun Yufeng Electrical Appliance Co., Ltd", "CHANGSHU POWER CLEAN CO., LTD", "Chaozhou Xiongmei Ceramics Industry Co., Ltd"]
+    },
+    {
+      "source": "MosBuild 2026 official press release exhibitor set",
+      "source_url": "https://mosbuild.com/articles/mosbuild-2026-press-release/",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "reason": "No independent probable S1-S3 trigger was established at cheap gate for the first 20 identities; several are large/federal or brand identities requiring legal resolution, which was not justified after fast-gate failure. Exhibition participation itself was not treated as SIGNAL.",
+      "raw_names": ["Alpine Floor", "Alta Step", "AM Group", "Atlas Concorde", "Cersanit", "Coswick", "CronaPlast", "Docke", "DoorHan", "Espocada", "IVC", "Joss Beaumont", "Kaleva", "Kerama Marazzi", "KERRANOVA", "LAPARET", "Manders", "Maytoni", "Quick Step", "Roxa"]
+    },
+    {
+      "source": "ExpoElectronica 2026 official participant materials",
+      "source_url": "https://expoelectronica.ru/ru/news/2026/march/13/uchastniki-expoelectronica-2026/",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "reason": "The names were established exhibitors, but no separate probable current S1-S3 expansion trigger was verified at cheap gate for this batch; participation, product display and award activity were not treated as SIGNAL.",
+      "raw_names": ["Элемент", "Росэлектроника", "АЕДОН", "Остек", "Золотой Шар", "Завод Элекон", "Микроволновые системы", "Резонит", "Промтех", "ТЕХНОТЕХ", "Радиант-ЭК", "Симметрон", "ГетЧипс", "Протон-Электротекс", "Инкотех", "РАНТЕХ", "Фанлайн", "КБС", "Совтест АТЕ", "Лазерный Центр"]
+    }
+  ],
+  "notes": [
+    "100 names are distinct within this worker payload as source identities.",
+    "They are not claimed to be 100 globally legal-key-proven companies because early rejects were intentionally not resolved through full INN/OGRN/domain legal mapping.",
+    "No candidate entered SIZE because all five source batches crossed the >70% duplicate+early-reject stop threshold within the first 20.",
+    "No canonical master/contactable/contacts/evidence/runtime/campaign file was modified and no outreach was performed."
+  ]
+}
