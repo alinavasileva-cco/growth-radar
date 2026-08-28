@@ -1,0 +1,132 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "started_from_head": "dee13fd23f24a8d5aa03de858107e58b23f17044",
+    "config_version": "2026-08-28T17:01:58+03:00",
+    "canonical_baseline": 494,
+    "canonical_contactable_baseline": 494,
+    "outreach_sent": 0,
+    "canonical_write": false
+  },
+  "worker_funnel": {
+    "raw_distinct_employer_level": 80,
+    "fast_gate_passed": 6,
+    "deep_check": 6,
+    "size_passed": 2,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "excluded_or_rejected": 79
+  },
+  "discovery_lanes": [
+    {
+      "source": "HH Краснодар — коммерческий директор",
+      "url": "https://krasnodar.hh.ru/vacancies/kommercheskiy_direktor/polniy_den",
+      "raw_employers_reviewed": 20,
+      "note": "cheap gate first; federal/too-large/weak-signal employers rejected before deep-check"
+    },
+    {
+      "source": "HH Москва — коммерческий директор",
+      "url": "https://hh.ru/vacancies/kommercheskiy_direktor",
+      "raw_employers_reviewed": 20,
+      "note": "cheap gate first; recruiters, federal groups and weak-signal employers rejected before deep-check"
+    },
+    {
+      "source": "HH Казань — руководитель отдела продаж",
+      "url": "https://kazan.hh.ru/vacancies/rukovoditel_otdela_prodazh",
+      "raw_employers_reviewed": 20,
+      "note": "cheap gate first; non-target and low-signal employers rejected before deep-check"
+    },
+    {
+      "source": "HH Екатеринбург — commercial/B2B leadership",
+      "url": "https://ekaterinburg.hh.ru/vacancies/kommercheskij-direktor-b2b",
+      "raw_employers_reviewed": 20,
+      "note": "cheap gate first; saturated/weak-signal employers rejected before deep-check"
+    }
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "ЮгСпецМебель",
+      "legal_name": "ООО \"ЮГСПЕЦМЕБЕЛЬ\"",
+      "inn": "2312199280",
+      "ogrn": "1132312000622",
+      "region": "Краснодарский край, Краснодар",
+      "segment": "производство мебели / комплексное оснащение объектов",
+      "legal_status": "действующая организация",
+      "company_size": {
+        "revenue_2025_rub": 242901000,
+        "employees_current_reference": 42,
+        "size_basis": "выручка 2025 + актуальная выписка ЕГРЮЛ/реестр МСП 2026",
+        "size_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1132312000622/",
+          "https://egrul.org/2312199280"
+        ]
+      },
+      "signal": {
+        "level": "S2",
+        "date": "2026-08-10",
+        "type": "job_board_operational_transformation",
+        "summary": "Компания нанимает операционного директора с прямыми задачами реализовывать стратегию развития на операционном уровне, оптимизировать процессы и издержки, управлять изменениями, бюджетированием, производством и supply chain. Вакансия также указывает на более 1300 выполненных проектов и собственные производственные линии.",
+        "url": "https://dreamjob.ru/employers/121628/vakansii/136085543"
+      },
+      "owner_lpr": {
+        "name": "Харин Георгий Олегович",
+        "role": "директор и 100% учредитель",
+        "source_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1132312000622/",
+          "https://www.rusprofile.ru/id/4086286"
+        ]
+      },
+      "contact_routes": [
+        {
+          "type": "current_job_route",
+          "value": "HH/DreamJob vacancy route",
+          "url": "https://dreamjob.ru/employers/121628/vakansii/136085543",
+          "status": "current"
+        },
+        {
+          "type": "corporate_phone",
+          "value": "+7 (861) 205-07-17",
+          "url": "https://zachestnyibiznes.ru/company/ul/1132312000622_2312199280_OOO-YuGSPECMEBELY",
+          "status": "published business contact"
+        },
+        {
+          "type": "corporate_email",
+          "value": "4665966@mail.ru",
+          "url": "https://reputation.ru/ogrn/1132312000622",
+          "status": "published business contact"
+        },
+        {
+          "type": "commercial_department_contact",
+          "value": "gkusm23@mail.ru",
+          "url": "https://www.leocdn.ru/uploadsForSiteId/201136/content/5893b291-64f2-4693-b01d-3e5fde7054e9.pdf",
+          "status": "published in regional industrial product list; supplementary route"
+        }
+      ],
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/121628/vakansii/136085543",
+        "https://www.tbank.ru/business/contractor/legal/1132312000622/",
+        "https://egrul.org/2312199280",
+        "https://companies.rbc.ru/id/1132312000622-ooo-yugspetsmebel/",
+        "https://reputation.ru/ogrn/1132312000622"
+      ],
+      "dedup_keys": {
+        "inn": "2312199280",
+        "ogrn": "1132312000622",
+        "legal_name": "ООО \"ЮГСПЕЦМЕБЕЛЬ\"",
+        "brand_domain": "ЮгСпецМебель|usm23.ru"
+      },
+      "dedup_check": {
+        "github_code_search_inn": "no match before staging",
+        "github_code_search_ogrn": "no match before staging",
+        "github_code_search_legal_brand": "no match before staging",
+        "checked_against_head": "dee13fd23f24a8d5aa03de858107e58b23f17044"
+      },
+      "consultation_hypothesis": "Сильный повод для разговора — система операционного управления ростом: связать стратегию, производство, продажи, supply chain, бюджетирование и KPI в единую управляемую модель без расширения операционного хаоса.",
+      "qualification": "QUALIFIED"
+    }
+  ]
+}
