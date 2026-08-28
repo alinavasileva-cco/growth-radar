@@ -1,0 +1,35 @@
+{
+  "run_id": "N5K-20260828-478",
+  "recorded_at": "2026-08-28T17:01:58+03:00",
+  "status": "CONSUMED_AFTER_VERIFIED_INTEGRATION",
+  "canonical_before": 493,
+  "canonical_after": 494,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach": 0,
+  "files": [
+    {
+      "worker": "jobs",
+      "path": "data/pending_workers/jobs/20260828-162248-jobs.json",
+      "blob_sha": "704f29554029cb7a2ab87a644e639f65bea6f45d",
+      "status": "CONSUMED_PARTIAL_INTEGRATED_WITH_DUPLICATE",
+      "raw": 80,
+      "worker_qualified": 2,
+      "net_integrated": 1,
+      "integrated_lead_ids": ["N5K-0651"],
+      "known_canonical_duplicates": ["N5K-0509"],
+      "duplicate_keys": ["INN 6318035951", "OGRN 1186313049823"]
+    },
+    {
+      "worker": "industry",
+      "path": "data/pending_workers/industry/20260828-163600-industry-metrics.json",
+      "blob_sha": "59f20d2362897897c05fd825c4f689c5a597de00",
+      "status": "CONSUMED_NO_QUALIFIED",
+      "raw": 100,
+      "worker_qualified": 0,
+      "net_integrated": 0
+    }
+  ],
+  "note": "Immutable staging retained for audit. Consumed index created only after physical integration confirmed N5K-0651 in canonical/contactable, rejected АФ Перспектива ОМЗ as existing N5K-0509 by INN/OGRN, and verified integrity PASS, orphan contacts/evidence 0/0 and outreach 0."
+}
