@@ -1,0 +1,87 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-28T08:22:51+03:00",
+    "source_head_sha": "b5587427a0d0c1faf7b4ca032aaccff4c5e79949",
+    "source_config_version": "2026-08-28T08:18:00+03:00",
+    "source_last_completed_run": "N5K-20260828-469",
+    "canonical_baseline": 484,
+    "contactable_baseline": 484,
+    "canonical_write": false,
+    "outreach": false,
+    "notes": "READ+DISCOVERY only. No canonical master/contactable/contacts/evidence/runtime/campaign writes and no canonical writer. Fresh regional job-board pools were sampled across Ufa, Ekaterinburg, Kazan, Novosibirsk, Rostov-on-Don, Krasnodar, Perm and Samara and rotated away from repeated employers. Exact per-lane first-20 duplicate/reject ratios were not independently instrumented in this worker and are not reconstructed. Stale/archived records were excluded from qualification decisions. Final dedup was repeated immediately before staging on the fresh HEAD by INN, OGRN, exact legal name and brand+domain."
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_pass": 7,
+    "deep_check": 7,
+    "size_pass": 5,
+    "legal_pass": 5,
+    "signal_pass": 5,
+    "lpr_pass": 4,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_or_early_reject": 73,
+    "source_rotation_note": "Discovery used current job-board and mirror pages rather than counting vacancy rows as companies. Deep-check focused on employer-level identities including Экосмотр, АкваБайт, КВАЗАР-ГРУПП, САН ЛОДЖИСТИК, ООО АДВАНТА-М РОСТОВ, ЭкоТайм and Феникс-Презент. Экосмотр/АкваБайт failed scale/legal linkage; several otherwise strong candidates were not promoted because the full current LPR/contact evidence chain was not completed without ambiguity. Only one candidate reached fully evidenced QUALIFIED."
+  },
+  "qualified": [
+    {
+      "brand": "Адванта-М Ростов",
+      "legal_name": "ООО «АДВАНТА-М РОСТОВ»",
+      "inn": "6165219934",
+      "ogrn": "1196196021010",
+      "legal_status": "Действует",
+      "region": "Ростовская область",
+      "city": "Ростов-на-Дону",
+      "segment": "Складская техника / строительное и грузоподъемное оборудование / B2B",
+      "website": "https://advanta-rostov.ru/",
+      "revenue_scale": "Выручка за 2025 год 368 351 000 ₽; чистая прибыль 29 518 000 ₽; 25 сотрудников по актуальному профилю. Компания ведет B2B-оптовую торговлю подъемно-транспортными машинами и оборудованием и развивает региональную сеть.",
+      "signal_level": "S1",
+      "signal_summary": "Свежая вакансия руководителя отдела дилерских продаж: компания прямо пишет, что развивается, растет, завоевывает новых клиентов и расширяет горизонты; требуется руководитель для развития дилерского канала. Дополнительный подтвержденный growth-сигнал — открытие офиса компании в Краснодаре 20.07.2026.",
+      "signal_date": "2026-08-26",
+      "signal_source": "https://nesiditsa.ru/vacancy/136636461",
+      "supporting_growth_source": "https://advanta-krasnodar.ru/",
+      "owner": "Тюшкевич Виталий Викторович — 50%; Реут Владимир Алексеевич — 50%",
+      "ceo": "Танаева Виктория Александровна — генеральный директор",
+      "lpr": "Танаева Виктория Александровна",
+      "lpr_role": "Генеральный директор / практический ЛПР",
+      "primary_phone": "+7 (863) 303-55-95",
+      "secondary_phone": "+7 (863) 303-39-98",
+      "primary_email": "sklad@advanta-rostov.ru",
+      "contact_form": "https://advanta-rostov.ru/info/kontakty.html",
+      "contact_type": "Официальные корпоративные телефоны + профильные email + форма/контактная страница собственного сайта",
+      "contact_source": "https://advanta-rostov.ru/info/kontakty.html",
+      "evidence_urls": [
+        "https://nesiditsa.ru/vacancy/136636461",
+        "https://advanta-rostov.ru/",
+        "https://advanta-rostov.ru/info/kontakty.html",
+        "https://advanta-krasnodar.ru/",
+        "https://companies.rbc.ru/id/1196196021010-obschestvo-s-ogranichennoj-otvetstvennostyu-advanta-m-rostov/",
+        "https://firmoteka.ru/6165219934"
+      ],
+      "dedup_keys": {
+        "inn": "6165219934",
+        "ogrn": "1196196021010",
+        "legal_name_normalized": "ООО АДВАНТА-М РОСТОВ",
+        "brand_domain": "Адванта-М Ростов|advanta-rostov.ru"
+      },
+      "dedup_precheck": {
+        "inn_repo_search": "no match",
+        "ogrn_repo_search": "no match",
+        "legal_name_repo_search": "no match",
+        "domain_repo_search": "no match",
+        "head_checked": "b5587427a0d0c1faf7b4ca032aaccff4c5e79949"
+      },
+      "gates": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      },
+      "consulting_hypothesis": "Коммерческая диагностика B2B-дистрибуции и дилерского канала на фоне регионального расширения: сегментация дилеров и корпоративных клиентов, управляемая воронка, KPI/CRM, маржинальность по направлениям, развитие филиальной сети и единая модель коммерческого управления.",
+      "worker_status": "QUALIFIED_STAGED_NOT_CANONICAL"
+    }
+  ]
+}
