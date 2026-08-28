@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-28T18:57:21+03:00",
+  "generated_at": "2026-08-28T20:39:02+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260828-480",
-  "current_run_id": "N5K-20260828-480",
+  "latest_completed_run_id": "N5K-20260828-481",
+  "current_run_id": "N5K-20260828-481",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 496,
   "contactable_verified": 496,
@@ -14,23 +14,26 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_480": {
-    "raw_discovered": 300,
+  "run_481": {
+    "mode": "RECOVERY_RESUME",
+    "raw_discovered": 180,
     "fast_gate_passed": 8,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 0,
-    "excluded": 299,
+    "qualified_before_final_dedup": 1,
+    "qualified": 0,
+    "physically_integrated": 0,
+    "duplicates": 1,
+    "excluded": 179,
+    "recovery_reason": "Expected hourly canonical cycle after RUN 480 had no confirmed canonical commit by 20:39 MSK.",
     "lane_metrics": [
       {
         "lane": "jobs_worker",
-        "worker_file": "data/pending_workers/jobs/20260828-182203-jobs.json",
-        "worker_blob_sha": "1d63b60deb7a9389c80ec4a494f4de5f83e31a04",
+        "worker_file": "data/pending_workers/jobs/20260828-201837-jobs.json",
+        "worker_blob_sha": "0d346ce984f8b3b6571e496ac3068ef756985efe",
         "raw": 80,
         "fast_gate": 8,
         "size": 1,
@@ -38,70 +41,18 @@
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "qualified": 1
+        "worker_qualified": 1,
+        "net_new": 0,
+        "final_dedup_note": "UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП», ИНН 7453330306, OGRN 1197456034302, already exists as canonical Lead ID N5K-0351."
       },
       {
         "lane": "industry_worker",
-        "worker_file": "data/pending_workers/industry/20260828-182552-industry-metrics.json",
-        "worker_blob_sha": "04a2f857b14e0431bb594a7ea6f746e9f44d906a",
+        "worker_file": "data/pending_workers/industry/20260828-202330-industry-metrics.json",
+        "worker_blob_sha": "5c97bc04c3337159139005d740a5ef87c1a01675",
         "raw": 100,
         "fast_gate": 0,
         "qualified": 0,
         "first_20_batches_stopped_over_70pct": 5
-      },
-      {
-        "lane": "Beauty Show Krasnodar 2026",
-        "source": "https://www.beautyshow.su/en-GB/about/exhibitor-list.aspx",
-        "raw": 20,
-        "duplicates_plus_early_rejects": 20,
-        "duplicate_plus_early_reject_rate": 1.0,
-        "qualified": 0,
-        "stopped_after_first_20": true
-      },
-      {
-        "lane": "InterStroyExpo 2026",
-        "source": "https://www.interstroyexpo.com/en-GB/about/exhibitor-list.aspx",
-        "raw": 20,
-        "duplicates_plus_early_rejects": 20,
-        "duplicate_plus_early_reject_rate": 1.0,
-        "qualified": 0,
-        "stopped_after_first_20": true
-      },
-      {
-        "lane": "Wasma 2026",
-        "source": "https://www.wasma.ru/en-GB/visitors/exhibitor-list.aspx",
-        "raw": 20,
-        "duplicates_plus_early_rejects": 20,
-        "duplicate_plus_early_reject_rate": 1.0,
-        "qualified": 0,
-        "stopped_after_first_20": true
-      },
-      {
-        "lane": "FoodTech Krasnodar 2026",
-        "source": "https://www.foodtech-krasnodar.ru/en-GB/about/exhibitor-list-new.aspx",
-        "raw": 20,
-        "duplicates_plus_early_rejects": 20,
-        "duplicate_plus_early_reject_rate": 1.0,
-        "qualified": 0,
-        "stopped_after_first_20": true
-      },
-      {
-        "lane": "Global Ingredients Show 2026",
-        "source": "https://new.ingred.ru/en-GB/visitors/exhibitor-list.aspx",
-        "raw": 20,
-        "duplicates_plus_early_rejects": 20,
-        "duplicate_plus_early_reject_rate": 1.0,
-        "qualified": 0,
-        "stopped_after_first_20": true
-      },
-      {
-        "lane": "Dentima Krasnodar 2026",
-        "source": "https://www.dentima.su/en-GB/about/exposition.aspx",
-        "raw": 20,
-        "duplicates_plus_early_rejects": 20,
-        "duplicate_plus_early_reject_rate": 1.0,
-        "qualified": 0,
-        "stopped_after_first_20": true
       }
     ]
   }
