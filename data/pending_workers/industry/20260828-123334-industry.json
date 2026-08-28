@@ -1,0 +1,261 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-28T12:33:34+03:00",
+  "baseline_head": "c4452613da75c1aa02c2f7b0c22a7b56a392d0f1",
+  "config_version": "2026-08-28T12:00:24+03:00",
+  "canonical_status": {
+    "contactable": 487,
+    "master": 487,
+    "integrity": "PASS"
+  },
+  "dedup_keys_loaded": [
+    "Lead ID",
+    "INN",
+    "OGRN/OGRNIP",
+    "exact legal entity",
+    "confirmed brand+domain"
+  ],
+  "outreach": false,
+  "canonical_write": false,
+  "funnel": {
+    "raw_distinct_source_identities": 100,
+    "fast_gate": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "globally_legal_key_proven_distinct": false,
+  "globally_legal_key_proven_distinct_note": "100 is the count of distinct source identities in this worker pass. Early rejects were not all resolved to INN/OGRN/domain, so no claim is made that all 100 are globally legal-key-proven unique. The qualified candidate was separately resolved and deduplicated by legal keys before write.",
+  "qualified": [
+    {
+      "brand": "Энерго-Арсенал / ITM",
+      "legal_name": "ООО \"ЭНЕРГО-АРСЕНАЛ\"",
+      "inn": "6674369395",
+      "ogrn": "1106674022729",
+      "legal_status": "Действующая компания",
+      "ownership_form": "Частная собственность",
+      "region": "Свердловская область",
+      "city": "Екатеринбург",
+      "segment": "Производство стальных опор освещения, уличных и промышленных светильников",
+      "website": "https://itm-pro.ru/",
+      "company_size": {
+        "summary": "Выручка за 2025 год — 1,5 млрд руб.; среднесписочная численность за 2025 год — 115 человек.",
+        "source_urls": [
+          "https://companium.ru/id/1106674022729-ehnergo-arsenal"
+        ]
+      },
+      "legal_evidence": {
+        "checked_at": "2026-08-28",
+        "summary": "Свежий профиль компании указывает действующий статус, ИНН 6674369395, ОГРН 1106674022729 и частную форму собственности. Официальная страница реквизитов itm-pro.ru публикует те же ИНН и ОГРН для ООО «Энерго-Арсенал».",
+        "source_urls": [
+          "https://companium.ru/id/1106674022729-ehnergo-arsenal",
+          "https://itm-pro.ru/company/rekvizity/",
+          "https://bo.nalog.gov.ru/organizations-card/2301519"
+        ]
+      },
+      "signal_level": "S1",
+      "signal_summary": "16 июля 2026 года сообщено о вложении 200 млн руб. в расширение производства «Энерго-Арсенала» на территории индустриального парка «ЕКАД-Южный». Проект предусматривает расширение производственных мощностей и создание 15 рабочих мест; завершение запланировано к 2028 году. Источник ссылается на пресс-службу Агентства по привлечению инвестиций Свердловской области и указывает подписание соглашения генеральным директором Дмитрием Вострецовым.",
+      "signal_date": "2026-07-16",
+      "signal_source_urls": [
+        "https://www.dk.ru/news/237244750"
+      ],
+      "owner": "Вострецов Дмитрий Сергеевич — 70%; Судаков Владимир Олегович — 30%",
+      "lpr": "Вострецов Дмитрий Сергеевич",
+      "lpr_role": "Генеральный директор и совладелец 70%",
+      "lpr_source_urls": [
+        "https://companium.ru/id/1106674022729-ehnergo-arsenal"
+      ],
+      "contacts": {
+        "phone": [
+          "+7 (343) 222-01-99",
+          "8 800 551 52 08"
+        ],
+        "email": [
+          "info@itm-pro.ru"
+        ],
+        "contact_type": "Официальный корпоративный маршрут",
+        "source_urls": [
+          "https://itm-pro.ru/company/rekvizity/",
+          "https://itm-pro.ru/"
+        ]
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "lead_id_note": "Canonical Lead ID is not assigned by this READ+DISCOVERY worker.",
+        "inn": "6674369395",
+        "ogrn": "1106674022729",
+        "exact_legal_name": "ООО \"ЭНЕРГО-АРСЕНАЛ\"",
+        "brand_domain": "Энерго-Арсенал|itm-pro.ru"
+      },
+      "dedup_result": "No match found before final write by INN 6674369395, OGRN 1106674022729, exact company-name search, or itm-pro.ru search in the freshly loaded repository/canonical master. HEAD was rechecked immediately before write and remained c4452613da75c1aa02c2f7b0c22a7b56a392d0f1.",
+      "qualification_note": "Passed FAST GATE and strict SIZE -> LEGAL -> SIGNAL -> LPR -> CONTACT -> QUALIFIED. Exhibition participation was used only for discovery and not as the growth signal. Fresher 2025 scale data was used instead of older employee/financial figures."
+    }
+  ],
+  "lanes": [
+    {
+      "source": "DairyTech 2026 exhibitor registry",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/dairy-tech-2026/ru/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": [
+        "Август Борг, ИАЦ",
+        "Аграрный МедиаХолдинг \"Светич\", ООО",
+        "Агротех",
+        "Академия КриоФрост",
+        "АКВАТРОЛ",
+        "Алькор Упак",
+        "Альпма-Сервис",
+        "Альфа Л Сервис, ООО",
+        "Аналитическая компания EMEAT",
+        "АПС Групп, ООО",
+        "Ариэль Инокс, ООО",
+        "БД, ООО",
+        "БЕВЭРТ",
+        "Белфармаком, ООО",
+        "Бизнес пищевых ингредиентов, журнал",
+        "Биолакт, ООО",
+        "БУСТЕР РУС, ООО",
+        "Вентар, ООО",
+        "ВЗДУХОТОРГ, ООО",
+        "ВИЯ, ООО"
+      ],
+      "note": "Foreign/media/non-company identities and Russian identities without a quickly verifiable combination of current scale plus probable fresh S1-S3 were rejected at cheap gate. Exhibition presence itself was not treated as SIGNAL."
+    },
+    {
+      "source": "INTERLIGHT | SMART CITY & HOME 2026 exhibitor catalog",
+      "source_url": "https://online.gefera.ru/eng/info/IL26/catalog/",
+      "raw": 20,
+      "duplicates_plus_early_reject": 19,
+      "rate": 0.95,
+      "stopped_after_first_20": true,
+      "qualified": 1,
+      "candidates": [
+        "AM GROUP",
+        "AMBRELLA GROUP",
+        "ATREL",
+        "Bojeni",
+        "CENTEC|CYRUS",
+        "Chronos",
+        "Citi-el",
+        "CITILUX – Decorative Lighting, SKYTEK – Technical Lighting",
+        "DARKOO OPTICS",
+        "DATTS",
+        "DENKIRS",
+        "DONEL",
+        "DURAY",
+        "Ellecsa",
+        "Eltech Service",
+        "Energo Arsenal",
+        "ENERGY SAVING",
+        "FEGA",
+        "iRidi",
+        "JetHome"
+      ],
+      "note": "Energo Arsenal was the only first-20 identity promoted beyond FAST GATE; the combined early-reject rate was therefore 95%, so the lane was stopped after candidate 20 as required."
+    },
+    {
+      "source": "RAAPA EXPO 2026 official participant registry",
+      "source_url": "https://raapa.ru/en/exhibitions/the-47th-international-exhibition-amusement-rides-and-entertainment-equipment-raapa-expo-2026/",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": [
+        "AAA/ TAAPE Guangdong Grandeur International Exhibition Group",
+        "ACE AMUSEMENT INT. CO., LTD.",
+        "Adler Amusement Equipment Co.,Ltd.",
+        "AirMir, PE",
+        "AirPalace",
+        "AKTA",
+        "ALM-FAZA",
+        "Altay Compozit",
+        "AmuseChina Magazine",
+        "Amusement Industry Exhibition",
+        "Antonio Zamperla SPA",
+        "Aqualine Waterparks & Technology",
+        "Arcade Game Machine",
+        "Art People Kids",
+        "ASEAN POOL & SPA EXPO",
+        "ATRAX",
+        "Attra MAKS",
+        "Attra-Test",
+        "Attraction-Expo",
+        "Attractions and Entertainments, Magazine"
+      ],
+      "note": "Foreign, media/event and other non-target identities were rejected immediately; Russian private identities were not promoted without current scale plus probable fresh S1-S3 evidence."
+    },
+    {
+      "source": "WorldFood Moscow 2026 exhibitor directory",
+      "source_url": "https://mosexpo.su/worldfood-moscow/",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": [
+        "1888 Teaflora Pvt Ltd",
+        "2Brother4Olives",
+        "A taste of the North",
+        "A&B VIETNAM INVESTMENT JSC",
+        "A.AKSULAR GIDA TİCARET VE SANAYİ A.Ş",
+        "AARAMBH FOOD EXPORT",
+        "ABADA Trade",
+        "Abdysh-Ata",
+        "Absolute Nature",
+        "ACTIVE CARBON LLC",
+        "Adal-azyk",
+        "ADALILAR KURUYEMİŞ A.Ş.",
+        "ADAOR PLUS, CJSC",
+        "ADELDAN",
+        "ADEPT IMPEX PRIVATE LIMITED",
+        "Aditya Trading Company",
+        "AFANASY",
+        "AFRIMEX TRADING",
+        "Agency for Regional Development",
+        "Agricultural and Processed Food Products Export Development Authority (APEDA)"
+      ],
+      "note": "The first 20 are heavily foreign/institutional. AFANASY was not promoted because the source identity was not safely resolved at cheap gate to a current legal entity/scale package; no brand-to-legal guess was made."
+    },
+    {
+      "source": "DENTAL SALON 2026 participant directory",
+      "source_url": "https://expodat.com/en/expositions/exposition/6659-dental-salon-2026.html",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": [
+        "GREEN DENT - GENERAL SPONSOR OF THE EXHIBITION",
+        "1C: DENTAL CLINIC",
+        "ACTEON",
+        "AERS-MED",
+        "AICERA ZIRCONIA",
+        "AIDITE",
+        "ALADENT",
+        "ALBATROS DENT",
+        "ALDI DENT",
+        "ALKON",
+        "ALKOR DENT",
+        "AMADENT",
+        "AMANN GIRRBACH GMBH",
+        "AMBILIFE SMC",
+        "AMFODENT",
+        "ANHEL TRADING",
+        "ARION MOSCOW LTD",
+        "ARNIKA",
+        "ART MEDENTA",
+        "AURUM"
+      ],
+      "note": "The April 2026 registry was used only as a discovery source. Current qualification decisions were not based on event participation or stale historical company data; none of the first 20 had a sufficiently verified cheap-gate package for promotion in this pass."
+    }
+  ],
+  "worker_decision": "100 distinct low-overlap source identities were processed from five industry/exhibition directories. Every source crossed duplicate+early-reject >70% within its first 20 and was stopped at 20. One candidate, ООО «ЭНЕРГО-АРСЕНАЛ», passed the full funnel on current evidence and survived final canonical dedup. No canonical master/contactable/contacts/evidence/runtime/campaign files were modified and outreach was not performed."
+}
