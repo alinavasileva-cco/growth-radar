@@ -1,8 +1,195 @@
 {
-  "run_id": "N5K-20260828-476",
-  "updated_at": "2026-08-28T15:03:30+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260828-476 integrated physically; canonical/contactable 493/493; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260828-477",
+  "updated_at": "2026-08-28T16:02:32+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 300,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 299
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs",
+      "worker": "jobs",
+      "raw": 80,
+      "fast_gate": 6,
+      "size": 2,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicates": 0,
+      "source": "JobVK / current job-board mirrors",
+      "note": "Four initial regional 20-employer lanes crossed the >70% duplicate+early-reject threshold and were stopped; low-overlap job-board top-up used to reach 80 distinct employer identities."
+    },
+    {
+      "lane": "industry",
+      "worker": "industry",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source": "INLEGMASH / CeMAT / HouseHold Expo / MosBuild / ExpoElectronica 2026",
+      "note": "Five 20-company batches each reached 100% duplicate+early reject and were stopped; exhibition participation was not treated as SIGNAL."
+    },
+    {
+      "lane": "KHIMIA 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+      "note": "First 20 distinct current 2026 source identities reviewed; stopped at >70% cheap reject. Foreign entities and companies without a separate probable current S1-S3 trigger were rejected; exhibition participation itself was not SIGNAL."
+    },
+    {
+      "lane": "Heat&Power 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://www.heatpower-expo.ru/ru-RU/about/exhibitor-list.aspx",
+      "note": "First 20 distinct current 2026 source identities reviewed; stopped at >70% cheap reject. Participation itself was not SIGNAL."
+    },
+    {
+      "lane": "Testing&Control 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://www.testing-control.ru/en-GB/press/news/18863.aspx",
+      "note": "First 20 named current 2026 participants reviewed from official material; no separate probable current S1-S3 trigger survived cheap gate. Participation itself was not SIGNAL."
+    },
+    {
+      "lane": "Hi-Tech Building 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://en.hitechbuilding.ru/",
+      "note": "First 20 named 2026 participant identities reviewed from official source; stopped at cheap gate. Participation/award activity itself was not SIGNAL."
+    },
+    {
+      "lane": "Interlight 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://online.gefera.ru/eng/info/IL26/catalog/",
+      "note": "First 20 distinct current 2026 catalog identities reviewed; stopped at >70% cheap reject. Exhibition participation and product descriptions were not treated as SIGNAL."
+    },
+    {
+      "lane": "AGROPRODMASH 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://www.agroprodmash-expo.ru/ru/exhibition/exhibitors/",
+      "note": "First 20 distinct current 2026 exhibitor identities reviewed; stopped at >70% cheap reject. Foreign entities and Russian companies without a separate probable current S1-S3 trigger were rejected; exhibition participation itself was not SIGNAL."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0651",
+      "Brand": "PANELOK",
+      "Legal Name": "ООО «ТЕРМОЛОГИСТИКА»",
+      "INN": "6319233160",
+      "OGRN/OGRNIP": "1186313090270",
+      "Region": "Самарская область",
+      "City": "Самара",
+      "Segment": "производство стеновых панелей и комплексных отделочных решений / B2B строительство",
+      "Website": "https://panelok.ru/",
+      "Revenue/Scale": "Выручка 29 664 000 ₽ за 2025 год; действующее микропредприятие; актуальные источники показывают малую численность персонала",
+      "Signal Level": "S1",
+      "Signal Summary": "28.08.2026 наблюдалась актуальная вакансия руководителя региональных продаж: открытие филиалов и представительств в ПФО и ЮФО, регламентация коммерческих процессов, настройка CRM, запуск нового филиала, формирование региональной команды продаж и участие в открытии демонстрационных залов и представительств. Официальный сайт также прямо указывает план открытия представительства в Пензе.",
+      "Signal Date": "2026-08-28",
+      "Signal Source": "https://trust.jobvk.com/go?filters=100%2C330672&id=3695113118 ; https://panelok.ru/contacts",
+      "Owner": "Урмансов Роман Романович (100%)",
+      "CEO": "Урмансов Роман Романович",
+      "LPR": "Урмансов Роман Романович",
+      "LPR Role": "Генеральный директор и единственный собственник",
+      "Primary Phone": "+7 (937) 078-88-86",
+      "Primary Email": "panelok-office@yandex.ru",
+      "HH Contact": "",
+      "Contact Form": "https://panelok.ru/contacts",
+      "Contact Type": "официальный корпоративный маршрут к генеральному директору",
+      "Contact Source": "Официальный сайт PANELOK",
+      "Consulting Hypothesis": "Диагностика коммерческой архитектуры регионального расширения: филиальная модель, CRM, KPI, запуск представительств и региональная воронка продаж.",
+      "contacts": [
+        {
+          "value": "+7 (937) 078-88-86",
+          "channel": "phone",
+          "type": "official corporate",
+          "source": "Официальный сайт PANELOK",
+          "url": "https://panelok.ru/contacts",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный телефон; использовать только как маршрут передачи сообщения генеральному директору. Outreach не выполнялся."
+        },
+        {
+          "value": "panelok-office@yandex.ru",
+          "channel": "email",
+          "type": "official corporate",
+          "source": "Официальный сайт PANELOK",
+          "url": "https://panelok.ru/contacts",
+          "is_lpr": false,
+          "notes": "Официальный email компании. Outreach не выполнялся."
+        },
+        {
+          "value": "https://panelok.ru/contacts",
+          "channel": "web_form",
+          "type": "official corporate",
+          "source": "Официальный сайт PANELOK",
+          "url": "https://panelok.ru/contacts",
+          "is_lpr": false,
+          "notes": "Официальная страница контактов/маршрут связи. Outreach не выполнялся."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE_LPR",
+          "claim": "ООО «ТЕРМОЛОГИСТИКА» действует; ИНН 6319233160, ОГРН 1186313090270; выручка за 2025 год 29 664 000 ₽; Урмансов Роман Романович — генеральный директор и единственный учредитель.",
+          "url": "https://companies.rbc.ru/id/1186313090270-obschestvo-s-ogranichennoj-otvetstvennostyu-termologistika/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "CONTACT_LEGAL_OFFICIAL",
+          "claim": "Официальный сайт подтверждает ИНН 6319233160, ОГРН 1186313090270, телефоны, email panelok-office@yandex.ru и корпоративный маршрут связи.",
+          "url": "https://panelok.ru/contacts",
+          "source": "Официальный сайт PANELOK"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "28.08.2026 jobs-worker зафиксировал текущую вакансию руководителя региональных продаж с прямыми задачами открытия филиалов/представительств, запуска нового филиала, настройки CRM и формирования региональной команды продаж.",
+          "url": "https://trust.jobvk.com/go?filters=100%2C330672&id=3695113118",
+          "source": "JobVK / текущий job-board mirror"
+        },
+        {
+          "type": "SIGNAL_OFFICIAL",
+          "claim": "Официальная страница контактов PANELOK в текущей версии прямо указывает план открытия представительства в Пензе.",
+          "url": "https://panelok.ru/contacts",
+          "source": "Официальный сайт PANELOK"
+        }
+      ]
+    }
+  ],
+  "notes": "Canonical run 477. Fresh immutable worker pool: jobs 80 + industry 100. Own low-overlap discovery added 120 source-level company identities from six current 2026 official catalogs/materials. Total 300 source-level raw identities; this is not claimed as 300 globally legal-key-proven distinct companies because early rejects were intentionally not all resolved to INN/OGRN/domain. PANELOK was independently rechecked using current legal/financial, official contact and current expansion evidence; stale/conflicting employee-count details were not used as a decisive size fact. Criteria unchanged. Outreach 0. Final physical dedup must be performed by integration guard before write; worker staging is consumed only after physical integration and integrity verification."
 }
