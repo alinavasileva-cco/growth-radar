@@ -1,8 +1,148 @@
 {
-  "run_id": "N5K-20260828-468",
-  "updated_at": "2026-08-28T07:18:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260828-468 integrated physically; canonical/contactable 482/482; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260828-469",
+  "updated_at": "2026-08-28T08:18:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 300,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 2,
+    "duplicates": 1,
+    "excluded": 297
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs/20260828-073200",
+      "raw": 80,
+      "fast_gate": 5,
+      "size": 2,
+      "legal": 2,
+      "signal": 2,
+      "lpr": 2,
+      "contact": 2,
+      "worker_qualified": 2,
+      "canonical_prewrite_qualified": 1,
+      "physical_dedup_duplicate": 1,
+      "existing_lead_id": "N5K-0509",
+      "duplicates_plus_early_rejects": 75,
+      "result": "MALTAT_QUALIFIED; PERSPEKTIVA_OMZ_CANONICAL_DUPLICATE_INN_OGRN"
+    },
+    {
+      "lane": "industry/20260828-072257",
+      "raw": 100,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "worker_qualified": 1,
+      "canonical_prewrite_qualified": 1,
+      "duplicates_plus_early_rejects": 99,
+      "result": "NPK_AVTOPRIBOR_QUALIFIED"
+    },
+    {
+      "lane": "canonical-low-overlap-metalloobrabotka-2026-official-catalog",
+      "raw": 120,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates_plus_early_rejects": 120,
+      "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
+      "sources": [
+        "МЕТАЛЛООБРАБОТКА-2026 official internet catalogue, Russian participants, pages 7, 9, 11, 24, 26, 33, 46, 47, 50, 51, 68 plus list page"
+      ],
+      "note": "120 named source identities were screened at cheap FAST GATE from official 2026 exhibitor catalogue pages. Exhibition participation itself was not treated as SIGNAL; without an independent probable S1-S3 trigger candidates were not promoted to deep-check. Counts are source-level identities and are not claimed globally legal-key-proven distinct against worker early rejects."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0640",
+      "Brand": "Малтат / Руслов",
+      "Legal Name": "ООО «МАЛТАТ»",
+      "INN": "2403007482",
+      "OGRN/OGRNIP": "1072439000149",
+      "Legal Status": "Действует",
+      "Region": "Красноярский край",
+      "City": "Красноярск",
+      "Segment": "Рыбоводство и рыбопереработка / FMCG / B2B",
+      "Website": "https://ruslov.ru/",
+      "Revenue/Scale": "Выручка за 2025 год 1 518 419 000 ₽ (+72,5% к 2024); 167 сотрудников по актуальному профилю.",
+      "Signal Level": "S1",
+      "Signal Summary": "30.07.2026 опубликована вакансия коммерческого директора ООО «Малтат» с ответственностью за стратегические планы, ценовую политику, цели предприятия и стимулирование продаж.",
+      "Signal Date": "2026-07-30",
+      "Signal Source": "https://rabota1000.ru/krasnoturansk/direktor-predstavitelstva",
+      "Owner": "Нусс Надежда Давыдовна — 100%",
+      "CEO": "Федосов Андрей Геннадьевич",
+      "LPR": "Федосов Андрей Геннадьевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (391) 271-45-92",
+      "Primary Email": "sales@ruslov.ru",
+      "HH Contact": "",
+      "Contact Form": "https://ruslov.ru/about",
+      "Contact Type": "Официальный корпоративный телефон + email + официальный сайт",
+      "Contact Source": "https://ruslov.ru/about",
+      "Consulting Hypothesis": "Коммерческая диагностика FMCG/B2B на фоне быстрого роста: каналовая стратегия, ценообразование, маржинальность, управление отделом продаж, CRM/KPI и масштабирование дистрибуции.",
+      "contacts": [
+        {"value": "+7 (391) 271-45-92", "channel": "Phone", "type": "Corporate", "source": "Official Руслов site", "url": "https://ruslov.ru/shops", "is_lpr": false, "notes": "Официальный корпоративный телефон"},
+        {"value": "sales@ruslov.ru", "channel": "Email", "type": "Corporate", "source": "Official Руслов site", "url": "https://ruslov.ru/shops", "is_lpr": false, "notes": "Официальный корпоративный email"},
+        {"value": "https://ruslov.ru/about", "channel": "Website", "type": "Contact route", "source": "Official Руслов site", "url": "https://ruslov.ru/about", "is_lpr": false, "notes": "Официальный маршрут связи и реквизиты ООО Малтат"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «МАЛТАТ» действует; ИНН 2403007482, ОГРН 1072439000149; генеральный директор — Федосов Андрей Геннадьевич.", "url": "https://ruslov.ru/about", "source": "Official Руслов site"},
+        {"type": "SCALE_CURRENT", "claim": "Выручка ООО «Малтат» за 2025 год 1 518 419 000 ₽; 167 сотрудников.", "url": "https://b2b.house/company/OOO-MALTAT_1560dc7b-9266-4df6-b105-126775e1f2dd/", "source": "Current registry-derived profile"},
+        {"type": "SIGNAL", "claim": "30.07.2026 опубликована вакансия коммерческого директора Малтат с задачами стратегического коммерческого управления и стимулирования продаж.", "url": "https://rabota1000.ru/krasnoturansk/direktor-predstavitelstva", "source": "Current job-board publication"},
+        {"type": "CONTACT", "claim": "Официальный сайт Руслов публикует +7 (391) 271-45-92 и sales@ruslov.ru.", "url": "https://ruslov.ru/shops", "source": "Official Руслов site"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0641",
+      "Brand": "НПК АВТОПРИБОР",
+      "Legal Name": "ООО «НАУЧНО-ПРОИЗВОДСТВЕННЫЙ КОМПЛЕКС «АВТОПРИБОР»",
+      "INN": "3329093967",
+      "OGRN/OGRNIP": "1183328008820",
+      "Legal Status": "Действует",
+      "Region": "Владимирская область",
+      "City": "Владимир",
+      "Segment": "Производство автокомпонентов / промышленный B2B",
+      "Website": "https://avtopribor.ru/",
+      "Revenue/Scale": "Действующее крупное производственное предприятие; актуальный профиль указывает масштаб выручки около 1,8 млрд ₽, отраслевой каталог — около 1100 сотрудников.",
+      "Signal Level": "S1",
+      "Signal Summary": "20.08.2026 НПК АВТОПРИБОР официально сообщил об инвестиции ФТИ в головную компанию для масштабирования производственной платформы, открытия новых продуктовых линеек и углубления локализации автокомпонентов.",
+      "Signal Date": "2026-08-20",
+      "Signal Source": "https://avtopribor.ru/media/fti-investiroval-v-gk-npk-avtopribor-dlya-razvitiya-proizvodstva-avtokomponentov/",
+      "Owner": "ООО «КРИГА» — 100% непосредственный учредитель",
+      "CEO": "Диесперова Татьяна Ивановна",
+      "LPR": "Диесперова Татьяна Ивановна",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (4922) 40-48-80",
+      "Primary Email": "info@avtopribor.ru",
+      "HH Contact": "",
+      "Contact Form": "https://avtopribor.ru/contacts//",
+      "Contact Type": "Официальный корпоративный телефон + email + официальный сайт",
+      "Contact Source": "https://avtopribor.ru/contacts//",
+      "Consulting Hypothesis": "Коммерциализация масштабируемой производственной платформы: новые продуктовые линейки, B2B-сегментация, каналы продаж, key accounts, CRM/KPI и синхронизация sales с локализацией и модернизацией производства.",
+      "contacts": [
+        {"value": "+7 (4922) 40-48-80", "channel": "Phone", "type": "Corporate", "source": "Official НПК Автоприбор contacts", "url": "https://avtopribor.ru/contacts//", "is_lpr": false, "notes": "Официальный корпоративный телефон"},
+        {"value": "info@avtopribor.ru", "channel": "Email", "type": "Corporate", "source": "Official НПК Автоприбор contacts", "url": "https://avtopribor.ru/contacts//", "is_lpr": false, "notes": "Официальный корпоративный email"},
+        {"value": "sales@avtopribor.ru", "channel": "Email", "type": "Sales", "source": "Official НПК Автоприбор contacts", "url": "https://avtopribor.ru/contacts//", "is_lpr": false, "notes": "Официальный sales email"}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «НПК «АВТОПРИБОР» действует; ИНН 3329093967, ОГРН 1183328008820; генеральный директор — Диесперова Татьяна Ивановна.", "url": "https://saby.ru/profile/3329093967-332901001", "source": "Current registry-derived profile"},
+        {"type": "BRAND_LEGAL", "claim": "Официальный сайт НПК АВТОПРИБОР публикует ИНН 3329093967 и ОГРН 1183328008820 на странице контактов.", "url": "https://avtopribor.ru/contacts//", "source": "Official company site"},
+        {"type": "SIGNAL", "claim": "20.08.2026 ФТИ инвестировал в головную компанию группы для масштабирования производственной платформы, новых продуктовых линеек и локализации.", "url": "https://avtopribor.ru/media/fti-investiroval-v-gk-npk-avtopribor-dlya-razvitiya-proizvodstva-avtokomponentov/", "source": "Official company news, 20.08.2026"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует +7 (4922) 40-48-80, info@avtopribor.ru и sales@avtopribor.ru.", "url": "https://avtopribor.ru/contacts//", "source": "Official НПК Автоприбор contacts"}
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 2,
+  "notes": "All fresh worker staging was ingested against physical campaign state at baseline 482/482. Physical master search found АФ Перспектива ОМЗ already canonical as N5K-0509 by INN 6318035951 and OGRN 1186313049823, so it was removed before write. Малтат and НПК Автоприбор had no INN match in the physical master and were rechecked against current public/official evidence. Own discovery added 120 named source identities from official МЕТАЛЛООБРАБОТКА-2026 catalogue pages to reach 300 source-level raw; participation itself was never treated as SIGNAL. 300 is not claimed as globally legal-key-proven distinct because worker early rejects do not all retain full legal keys. Criteria unchanged; outreach=0."
 }
