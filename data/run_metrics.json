@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T22:35:18+03:00",
+  "generated_at": "2026-08-28T23:01:35+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260828-483",
   "current_run_id": "N5K-20260828-483",
@@ -15,7 +15,7 @@
   "outreach_sent": 0,
   "blocker": null,
   "run_483": {
-    "raw_discovered": 260,
+    "raw_discovered": 360,
     "fast_gate_passed": 15,
     "size_check_passed": 3,
     "legal_match_passed": 3,
@@ -25,7 +25,7 @@
     "qualified": 1,
     "physically_integrated": 1,
     "duplicates": 0,
-    "excluded": 259,
+    "excluded": 359,
     "lane_metrics": [
       {
         "lane": "jobs_worker_20260828_212420",
@@ -38,6 +38,18 @@
         "contact": 1,
         "qualified": 1,
         "note": "Fresh immutable worker staging created after RUN 482; candidate forwarded to recovery canonical recheck."
+      },
+      {
+        "lane": "industry_worker_20260828_213900",
+        "raw": 100,
+        "fast_gate": 0,
+        "size": 0,
+        "legal": 0,
+        "signal": 0,
+        "lpr": 0,
+        "contact": 0,
+        "qualified": 0,
+        "note": "Fresh post-RUN-482 immutable staging omitted from original RUN 483 accounting; consumed in audit repair."
       },
       {
         "lane": "jobs_worker_20260828_222100",
@@ -63,6 +75,7 @@
         "qualified": 0,
         "note": "Fresh industry worker metrics; catalog/exhibition presence was not treated as S1-S3 signal."
       }
-    ]
+    ],
+    "repair_note": "Corrected raw from 260 to 360 after consuming omitted post-RUN-482 industry staging 20260828-213900; canonical/contactable unchanged at 498/498."
   }
 }
