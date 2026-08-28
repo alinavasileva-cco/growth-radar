@@ -1,0 +1,3 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0650,N5K-0650-C01,ЛИГРА,7826159936,,Корпоративный маршрут,+7 (812) 600-18-55,phone,official corporate,Официальный сайт ЛИГРА,https://www.ligra-spb.ru/,NO,HIGH,2026-08-28,Официальный телефон компании; запрос маршрутизации сообщения генеральному директору. Outreach не выполнялся.,N5K-20260828-476,new_5000
+N5K-0650,N5K-0650-C02,ЛИГРА,7826159936,,Корпоративный маршрут,ligra-spb@mail.ru,email,official corporate,Официальный сайт ЛИГРА,https://www.ligra-spb.ru/,NO,HIGH,2026-08-28,Официальный email компании. Outreach не выполнялся.,N5K-20260828-476,new_5000

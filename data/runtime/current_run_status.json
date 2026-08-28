@@ -1,125 +1,126 @@
 {
-  "run_id": "N5K-20260828-475",
+  "run_id": "N5K-20260828-476",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T14:02:04+03:00",
+  "updated_at": "2026-08-28T15:03:30+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 488,
+    "baseline_count": 492,
     "target_count": 5000,
-    "current_canonical_count": 492,
-    "current_contactable_count": 492,
-    "progress_added": 4,
-    "remaining": 4508
+    "current_canonical_count": 493,
+    "current_contactable_count": 493,
+    "progress_added": 1,
+    "remaining": 4507
   },
   "funnel": {
-    "discovered": 325,
-    "fast_gate_passed": 12,
-    "size_check_passed": 6,
-    "legal_match_passed": 6,
-    "signal_confirmed": 5,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
-    "qualified": 4,
-    "duplicates": 5,
-    "excluded": 316
+    "discovered": 307,
+    "fast_gate_passed": 9,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 305
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker",
+      "lane": "jobs",
+      "worker": "jobs",
       "raw": 80,
-      "fast_gate": 7,
+      "fast_gate": 9,
       "size": 2,
       "legal": 2,
-      "signal": 2,
-      "lpr": 2,
-      "contact": 2,
-      "qualified": 2,
-      "duplicates_early_reject": 78
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicates": 0,
+      "source": "HeadHunter / Работа.ру mirrors"
     },
     {
-      "lane": "industry_worker",
+      "lane": "industry",
+      "worker": "industry",
       "raw": 100,
       "fast_gate": 0,
       "qualified": 0,
-      "duplicates_early_reject": 100,
-      "note": "5 x 20-candidate lanes stopped at 100% duplicate+early reject"
+      "duplicates": 1,
+      "note": "Five 20-candidate lanes stopped at >70% duplicate+early reject; Palizh confirmed canonical duplicate."
     },
     {
-      "lane": "growth_news_worker",
-      "raw_counted": 5,
-      "search_result_records_reviewed": 104,
-      "fast_gate": 5,
-      "size": 4,
-      "legal": 4,
-      "signal": 3,
-      "lpr": 2,
-      "contact": 2,
-      "qualified": 2,
-      "note": "Only 5 instrumented deep-checked company identities counted as raw; 104 search-result records not counted as companies"
-    },
-    {
-      "lane": "DairyTech_2026_first20",
+      "lane": "PCVExpo 2026",
+      "worker": "canonical_discovery",
       "raw": 20,
-      "duplicates_early_reject": 20,
-      "rate": 1.0,
-      "qualified": 0
+      "fast_gate": 0,
+      "qualified": 0,
+      "source": "https://www.pcvexpo.ru/ru-RU/visitors/exhibitor-list.aspx",
+      "note": "First 20 current exhibitor identities reviewed; exhibition participation not treated as SIGNAL."
     },
     {
-      "lane": "YugAgro_2026_first20",
+      "lane": "Cabex 2026",
+      "worker": "canonical_discovery",
       "raw": 20,
-      "duplicates_early_reject": 20,
-      "rate": 1.0,
-      "qualified": 0
+      "fast_gate": 0,
+      "qualified": 0,
+      "source": "https://www.cabex.ru/ru-RU/visitors/exhibitor-list.aspx",
+      "note": "First 20 current exhibitor identities reviewed; stopped at cheap gate; participation not SIGNAL."
     },
     {
-      "lane": "Analitika_Expo_2026_first20",
+      "lane": "ExpoCoating Moscow 2026",
+      "worker": "canonical_discovery",
       "raw": 20,
-      "duplicates_early_reject": 20,
-      "rate": 1.0,
-      "qualified": 0
+      "fast_gate": 0,
+      "qualified": 0,
+      "source": "https://www.expocoating-moscow.ru/ru-RU/about/exhibitor-list.aspx",
+      "note": "First 20 current exhibitor identities reviewed; stopped at cheap gate; participation not SIGNAL."
     },
     {
-      "lane": "Pharmtech_2026_first20",
+      "lane": "Securika Moscow 2026",
+      "worker": "canonical_discovery",
       "raw": 20,
-      "duplicates_early_reject": 20,
-      "rate": 1.0,
-      "qualified": 0
+      "fast_gate": 0,
+      "qualified": 0,
+      "source": "https://securika-moscow.ru/ru/about/news/2026/april/17/securika-moscow-2026-press-reliz/",
+      "note": "20 named current exhibitors reviewed from 2026 official material; participation not SIGNAL."
     },
     {
-      "lane": "RosUpack_2026_first20",
+      "lane": "Metallurgy/Litmash 2026",
+      "worker": "canonical_discovery",
       "raw": 20,
-      "duplicates_early_reject": 20,
-      "rate": 1.0,
-      "qualified": 0
+      "fast_gate": 0,
+      "qualified": 0,
+      "source": "https://www.metallurgy-russia.ru/ru/exhibition/3/participants",
+      "note": "First 20 source identities reviewed; stopped at cheap gate; participation not SIGNAL."
     },
     {
-      "lane": "Printech_2026_first20",
-      "raw": 20,
-      "duplicates_early_reject": 20,
-      "rate": 1.0,
-      "qualified": 0
+      "lane": "Testing&Control 2026",
+      "worker": "canonical_discovery",
+      "raw": 19,
+      "fast_gate": 0,
+      "qualified": 0,
+      "source": "https://www.testing-control.ru/ru-RU/about/exhibitor-list.aspx",
+      "note": "19 identities visible in the current first-page source snapshot reviewed; no reconstructed 20th candidate; participation not SIGNAL."
     },
     {
-      "lane": "AIRVent_2026_first20",
-      "raw": 20,
-      "duplicates_early_reject": 20,
-      "rate": 1.0,
-      "qualified": 0
+      "lane": "NDT Russia 2026",
+      "worker": "canonical_discovery",
+      "raw": 8,
+      "fast_gate": 0,
+      "qualified": 0,
+      "source": "https://www.ndt-russia.ru/ru-RU/visitors/exhibitor-list.aspx",
+      "note": "8 identities visible in the current source snapshot reviewed; participation not SIGNAL."
     }
   ],
   "qualified_companies": [
-    "Тест",
-    "Лайфтранс",
-    "Борус / BORUS",
-    "Горный инструмент"
+    "ЛИГРА"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "492_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "492_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "493_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "493_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
