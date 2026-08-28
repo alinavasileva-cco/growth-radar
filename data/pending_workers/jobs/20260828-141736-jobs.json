@@ -1,0 +1,139 @@
+{
+  "schema_version": "jobs-worker-v1",
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-28T14:17:36+03:00",
+    "baseline_head": "d0dc6d2d8c51a873da9c134c29cb32dfc4d4e09f",
+    "config_version": "2026-08-28T14:02:04+03:00",
+    "baseline_canonical_count": 492,
+    "baseline_contactable_count": 492,
+    "canonical_write": false,
+    "outreach_sent": 0
+  },
+  "discovery": {
+    "raw_distinct_employers": 80,
+    "source_lanes": [
+      {
+        "source": "HeadHunter",
+        "region": "Moscow",
+        "query": "руководитель отдела продаж B2B",
+        "window": "last 3 days",
+        "note": "Employer identities were deduplicated at source-name level before FAST GATE."
+      },
+      {
+        "source": "HeadHunter",
+        "region": "Saint Petersburg",
+        "query": "руководитель отдела продаж B2B",
+        "window": "last 3 days",
+        "note": "Employer identities overlapping the Moscow lane were not counted twice."
+      },
+      {
+        "source": "Работа.ру and job mirrors",
+        "region": "Russia",
+        "query": "коммерческий директор / руководитель отдела продаж",
+        "note": "Used as low-overlap supplementary signal lane and for deep-check evidence."
+      }
+    ],
+    "source_saturation_rule": "No >70% duplicate+early-reject condition was asserted without exact first-20 instrumentation; no percentage was reconstructed after the fact."
+  },
+  "worker_funnel": {
+    "raw_distinct": 80,
+    "fast_gate_passed": 9,
+    "deep_checked": 9,
+    "size_passed": 2,
+    "legal_passed": 2,
+    "signal_passed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "canonical_duplicates_at_final_guard": 0
+  },
+  "deep_check_notes": [
+    "ТРАНСПРОМСТРОЙ rejected on current scale/legal ambiguity.",
+    "ИПК МеталлоЦентр rejected on SIZE: current employee count below configured minimum.",
+    "Фосса групп rejected on SIZE: insufficient confirmed current scale.",
+    "Агротехснаб rejected on LEGAL: legal-entity attribution not sufficiently unambiguous.",
+    "Электромех rejected on SIGNAL attribution: vacancy text attributes the described business to another group entity, so no assumption was made.",
+    "Балтикфлекс rejected on SIZE: current revenue above configured upper range.",
+    "Петропак rejected on LEGAL/SIZE ambiguity between entities.",
+    "А-Мега rejected on LEGAL: multiple entity attribution not resolved to the required standard.",
+    "ЛИГРА passed all gates."
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "ЛИГРА",
+      "legal_name": "ООО «ЛИГРА»",
+      "inn": "7826159936",
+      "ogrn": "1037851007523",
+      "legal_status": "Действует",
+      "legal_status_checked_at": "2026-07-09",
+      "ownership_type": "private",
+      "region": "Санкт-Петербург",
+      "city": "Санкт-Петербург",
+      "segment": "B2B производство алюминиевых охладителей, радиаторов и профилей",
+      "website": "https://www.ligra-spb.ru/",
+      "size": {
+        "current_employee_count": 18,
+        "size_basis": "current employee count within configured 5–200 range",
+        "note": "Older 2021 revenue figures were not used as the SIZE basis because fresher current employee data is available."
+      },
+      "signal": {
+        "level": "S1",
+        "summary": "Компания ищет руководителя отдела продаж для управления существующим коммерческим блоком, выстраивания эффективных процессов, KPI и роста плановых показателей; подробный текст вакансии также прямо сообщает о расширении собственного производства.",
+        "fresh_job_listing_url": "https://hh.ru/vacancy/136566762",
+        "fresh_listing_observed_at": "2026-08-28",
+        "detailed_job_description_url": "https://spb.careerist.ru/vakansii/rukovoditel-otdela-prodazh-proizvodstvennaya-kompaniya-84851960.html",
+        "detailed_description_date": "2026-02-21",
+        "freshness_note": "Qualification uses the current HH listing as the fresh hiring signal; the February mirror is used only to substantiate the role content and production-expansion wording."
+      },
+      "owner": [
+        {
+          "name": "Носань Алексей Леонидович",
+          "share": "75%"
+        },
+        {
+          "name": "Носань Анна Адольфовна",
+          "share": "25%"
+        }
+      ],
+      "ceo": "Носань Алексей Леонидович",
+      "lpr": "Носань Алексей Леонидович",
+      "lpr_role": "генеральный директор и основной собственник",
+      "contact_route": {
+        "type": "official corporate route to the company / CEO",
+        "phone": "+7 (812) 600-18-55",
+        "email": "ligra-spb@mail.ru",
+        "website": "https://www.ligra-spb.ru/",
+        "instructions": "Запросить передачу сообщения генеральному директору Носаню Алексею Леонидовичу. Outreach в этом worker не выполнялся."
+      },
+      "evidence_urls": {
+        "legal_current": "https://star-pro.ru/proverka-kontragenta/organization/1037851007523--ooo-ligra",
+        "legal_size_lpr": "https://companies.rbc.ru/id/1037851007523-ooo-ligra/",
+        "official_site_contact": "https://www.ligra-spb.ru/",
+        "job_detailed": "https://spb.careerist.ru/vakansii/rukovoditel-otdela-prodazh-proizvodstvennaya-kompaniya-84851960.html",
+        "job_fresh": "https://hh.ru/vacancy/136566762"
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7826159936",
+        "ogrn": "1037851007523",
+        "legal_name_normalized": "ООО ЛИГРА",
+        "brand_domain": "ЛИГРА|ligra-spb.ru"
+      },
+      "prewrite_dedup": {
+        "inn_repo_search_matches": 0,
+        "ogrn_repo_search_matches": 0,
+        "domain_repo_search_matches": 0,
+        "checked_against_head": "d0dc6d2d8c51a873da9c134c29cb32dfc4d4e09f"
+      },
+      "qualification": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "final": "QUALIFIED"
+      }
+    }
+  ]
+}
