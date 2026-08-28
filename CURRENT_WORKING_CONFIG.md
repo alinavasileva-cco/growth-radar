@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T04:57:52+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-465`  
+**Версия:** 2026-08-28T05:12:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-466`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **481 / 481**  
 **Qualified staged not counted:** **0**  
@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence и pending;
 - physical canonical/contactable count: **481 / 481**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-465`;
+- последний завершённый RUN: `N5K-20260828-466`;
 - `N5K-20260827-454R1` — repair того же операционного цикла: первоначально canonical writer ошибочно трактовал ИП как запрещённую форму, хотя текущая конфигурация явно допускает `юрлицо/ИП`; S.Lavia была интегрирована без изменения критериев;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
@@ -119,6 +119,7 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260828-463`: 480/480, +1, PASS, orphan 0/0.
 - `N5K-20260828-464`: 481/481, +1, PASS, orphan 0/0.
 - `N5K-20260828-465`: 481/481, +0, PASS, orphan 0/0.
+- `N5K-20260828-466`: 481/481, +0, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260827-449
 Canonical/contactable: 455/455. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
@@ -171,26 +172,24 @@ Canonical/contactable: 477/477. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 Fresh worker pool after RUN 459: jobs/20260827-222430 reported 80 raw employers and 1 worker-qualified candidate; industry/20260827-222525 reported 100 raw and 0 qualified. ЕЗВО / ООО «ЕКАТЕРИНБУРГСКИЙ ЗАВОД ВЫСОКОВОЛЬТНОГО ОБОРУДОВАНИЯ» passed canonical recheck and physical pre-write dedup and was integrated as N5K-0634, INN 6679031070, OGRN 1136679004681. Final funnel: source-level raw 180 → fast gate 6 → size 2 → legal 2 → signal 1 → LPR 1 → contact 1 → qualified 1 → physically integrated 1; duplicates 0; excluded 179. The 180 raw figure is not claimed as 180 globally proven distinct companies across workers because a complete cross-worker identity index is unavailable. Target 300/400–800 globally auditable raw was not reached; quality gates were not weakened. Canonical/contactable: 477/477. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260827-461
 Canonical/contactable: 478/478. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
 
 ## Latest verified run N5K-20260828-462
 Canonical/contactable: 479/479. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260828-463
 Canonical/contactable: 480/480. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
 
 ## Latest verified run N5K-20260828-464
 Canonical/contactable: 481/481. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260828-465
 Canonical/contactable: 481/481. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260828-466
 Canonical/contactable: 481/481. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+## RUN 466 — physical dedup repair
+
+Source-level funnel after worker ingestion and low-overlap source rotation: **323 raw → 8 fast gate → 2 SIZE → 2 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 0 net QUALIFIED**. Final physical duplicates: **2**; excluded non-duplicates: **321**; physically integrated: **0**. Worker-qualified **Татпромстан / ООО «ТАТПРОМСТАН»** was not written because the physical guard matched the existing canonical record `N5K-0494` by INN `1655216482` and OGRN `1111690040615`. The low-overlap catalog pool contained one additional canonical duplicate. The 323 figure is source-level audited raw and is not claimed as 323 globally legal-key-proven distinct companies because complete INN/OGRN/domain keys are unavailable for jobs early rejects. Criteria were not weakened. Canonical/contactable: **481/481**. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
