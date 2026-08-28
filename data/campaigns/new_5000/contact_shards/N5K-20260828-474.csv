@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0645,N5K-0645-C01,Энерго-Арсенал / ITM,6674369395,,Корпоративный маршрут,+7 (343) 222-01-99,PHONE,CORPORATE,Официальный сайт ITM / Энерго-Арсенал,https://itm-pro.ru/company/rekvizity/,NO,HIGH,2026-08-28,Официальный корпоративный телефон.,N5K-20260828-474,new_5000
+N5K-0645,N5K-0645-C02,Энерго-Арсенал / ITM,6674369395,,Корпоративный маршрут,8 800 551 52 08,PHONE,CORPORATE,Официальный сайт ITM / Энерго-Арсенал,https://itm-pro.ru/company/rekvizity/,NO,HIGH,2026-08-28,Дополнительный официальный телефон.,N5K-20260828-474,new_5000
+N5K-0645,N5K-0645-C03,Энерго-Арсенал / ITM,6674369395,,Корпоративный маршрут,info@itm-pro.ru,EMAIL,CORPORATE,Официальный сайт ITM / Энерго-Арсенал,https://itm-pro.ru/company/rekvizity/,NO,HIGH,2026-08-28,Официальный корпоративный email.,N5K-20260828-474,new_5000

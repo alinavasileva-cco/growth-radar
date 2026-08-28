@@ -1,72 +1,81 @@
 {
-  "run_id": "N5K-20260828-473",
+  "run_id": "N5K-20260828-474",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T12:00:24+03:00",
+  "updated_at": "2026-08-28T13:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 487,
     "target_count": 5000,
-    "current_canonical_count": 487,
-    "current_contactable_count": 487,
-    "progress_added": 0,
-    "remaining": 4513
+    "current_canonical_count": 488,
+    "current_contactable_count": 488,
+    "progress_added": 1,
+    "remaining": 4512
   },
   "funnel": {
     "discovered": 300,
-    "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
+    "fast_gate_passed": 5,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
+    "qualified": 1,
     "duplicates": 1,
-    "excluded": 299
+    "excluded": 298
   },
   "lane_metrics": [
     {
       "lane": "jobs_worker",
       "raw_source_identities": 80,
-      "fast_gate_passed": 6,
-      "size_check_passed": 2,
-      "legal_match_passed": 2,
-      "signal_confirmed": 1,
-      "lpr_identified": 1,
-      "contact_route_found": 1,
+      "fast_gate_passed": 4,
       "worker_qualified": 1,
       "canonical_qualified": 0,
       "canonical_duplicates": 1,
-      "source_path": "data/pending_workers/jobs/20260828-111930-jobs.json",
-      "source_blob_sha": "11fb6dc53819f6747f81cd1f219a5d5134829293"
+      "duplicate_lead_id": "N5K-0521",
+      "source_path": "data/pending_workers/jobs/20260828-122700-jobs.json",
+      "source_blob_sha": "d4b99562aea1b4600ada1bfcb0ff016a054aea20",
+      "result": "NTA rejected as physical canonical duplicate by INN 9718218994 and OGRN 1237700121075"
     },
     {
       "lane": "industry_worker",
-      "raw_source_observations": 120,
-      "raw_distinct_source_identities": 119,
-      "within_worker_source_duplicates": 1,
-      "fast_gate_passed": 0,
-      "qualified": 0,
-      "source_path": "data/pending_workers/industry/20260828-112645-industry-metrics.json",
-      "source_blob_sha": "8cdeb4cbc8617151fcd5e87530095e8e75051292",
-      "lane_stop": "All six first-20 source lanes reached 100% duplicate+early-reject."
+      "raw_source_identities": 100,
+      "fast_gate_passed": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "worker_qualified": 1,
+      "canonical_qualified": 1,
+      "source_path": "data/pending_workers/industry/20260828-123334-industry.json",
+      "source_blob_sha": "47c8d414f63af48e88973098f4dbc464fa1a8bd7"
     },
     {
-      "lane": "canonical_discovery_cemat_2026",
-      "raw_source_identities": 101,
+      "lane": "canonical_low_overlap_current_catalogues",
+      "raw_source_identities": 120,
       "fast_gate_passed": 0,
       "qualified": 0,
-      "source": "https://www.cemat-russia.ru/exhibition/catalogue/",
-      "note": "101 named source identities reviewed from the official 2026 catalogue to bring source-level raw to 300. Exhibition/catalogue presence was not treated as SIGNAL; no identity was promoted without independently confirmed SIZE plus fresh S1-S3. This is not a claim of globally legal-key-proven distinct identities."
+      "sources": [
+        "https://online.itemf.ru/info/MIMS26/catalog/",
+        "https://reg.optica-expo.ru/e-catalogue/2026/view",
+        "https://online.gefera.ru/eng/info/RM26/catalog/",
+        "https://online.gefera.ru/eng/info/RP26/catalog/",
+        "https://online.gefera.ru/eng/info/3D26/catalog/",
+        "https://2026.upakexpo-online.ru/expositions/exposition/137.html"
+      ],
+      "note": "Low-overlap current 2026 catalogue rotation was used only for discovery/FAST GATE. Each lane was capped at the first 20 source identities when duplicate+early-reject exceeded 70%; event participation itself was not treated as SIGNAL. No candidate was promoted without independently verifiable current SIZE plus probable fresh S1-S3. Source-level identities are not claimed as globally legal-key-proven distinct."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Энерго-Арсенал / ITM"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "487_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "487_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "488_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "488_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
