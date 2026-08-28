@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T15:03:30+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-476`  
+**Версия:** 2026-08-28T16:02:32+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-477`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **493 / 493**  
 **Qualified staged not counted:** **0**  
@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
 - physical canonical/contactable count: **493 / 493**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-476`;
+- последний завершённый RUN: `N5K-20260828-477`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -56,6 +56,7 @@
 - `N5K-20260828-474`: 488/488, +1, PASS, orphan 0/0.
 - `N5K-20260828-475`: 492/492, +4, PASS, orphan 0/0.
 - `N5K-20260828-476`: 493/493, +1, PASS, orphan 0/0.
+- `N5K-20260828-477`: 493/493, +0, PASS, orphan 0/0; physical duplicate `N5K-0473`.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging.
 
@@ -82,14 +83,11 @@ Canonical/contactable: **487/487**. Integrity PASS. Orphan contacts/evidence: **
 ## Latest verified run N5K-20260828-472
 Canonical/contactable: 487/487. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260828-473
 Canonical/contactable: 487/487. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
 
-
 ## Latest verified run N5K-20260828-474
 Canonical/contactable: 488/488. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
 
 ## Latest verified run N5K-20260828-475
 Canonical/contactable: 492/492. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
@@ -117,6 +115,15 @@ Fresh worker pool: jobs `80 raw / 1 qualified`; industry `100 raw / 0 qualified`
 
 Canonical/contactable: **493/493**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
 
-
 ## Latest verified run N5K-20260828-477
 Canonical/contactable: 493/493. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+## RUN 477 — canonical integration
+
+Fresh immutable worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Worker-qualified **PANELOK / ООО «ТЕРМОЛОГИСТИКА»** был заново проверен по свежим legal/financial данным, официальному сайту и актуальному expansion/job signal. Однако финальный physical integration guard обнаружил уже существующий canonical **`N5K-0473`** по ИНН `6319233160` и ОГРН `1186313090270`; повторная запись заблокирована. Worker-staging зафиксирован consumed только после этой проверки.
+
+Собственный low-overlap discovery добавил **120 source-level company identities**: первые 20 из актуальных материалов/каталогов 2026 года KHIMIA, Heat&Power, Testing&Control, Hi-Tech Building, Interlight и AGROPRODMASH. Каждый lane был остановлен после первых 20 на cheap gate при duplicate+early reject >70%. Участие в выставке, товарное описание, премия или сам факт экспонирования SIGNAL не считались.
+
+Финальная воронка: **300 source-level raw → 6 fast gate → 2 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 0 net QUALIFIED → 0 physically integrated**. Physical duplicates: **1**; excluded: **299**. 300 не заявляется как 300 globally legal-key-proven distinct компаний: early rejects не все разрешались до INN/OGRN/domain. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
+
+Canonical/contactable: **493/493**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
