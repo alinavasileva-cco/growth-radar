@@ -1,0 +1,66 @@
+name: Growth Radar sync canonical config header
+
+on:
+  push:
+    paths:
+      - 'data/runtime/current_run_status.json'
+      - '.github/workflows/growth_radar_sync_config.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: growth-radar-sync-config
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync authoritative config header from physical runtime
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+
+          root = Path('.')
+          runtime = json.loads((root / 'data/runtime/current_run_status.json').read_text(encoding='utf-8'))
+          target = json.loads((root / 'data/runtime/campaign_target.json').read_text(encoding='utf-8'))
+          cfg_path = root / 'CURRENT_WORKING_CONFIG.md'
+          text = cfg_path.read_text(encoding='utf-8')
+
+          run_id = runtime['run_id']
+          updated_at = runtime['updated_at']
+          canonical = int(runtime['new_cycle']['current_canonical_count'])
+          contactable = int(runtime['new_cycle']['current_contactable_count'])
+          remaining_5000 = int(target['remaining_to_total_target'])
+          remaining_1000 = max(0, 1000 - contactable)
+
+          replacements = [
+              (r'(?m)^\*\*Версия:\*\* .*$', f'**Версия:** {updated_at}  '),
+              (r'(?m)^\*\*Последний полностью завершённый RUN:\*\* .*$', f'**Последний полностью завершённый RUN:** `{run_id}`  '),
+              (r'(?m)^\*\*Физически подтверждённый canonical/contactable:\*\* .*$', f'**Физически подтверждённый canonical/contactable:** **{canonical} / {contactable}**  '),
+              (r'(?m)^\*\*Осталось до 1000:\*\* .*$', f'**Осталось до 1000:** **{remaining_1000}**  '),
+              (r'(?m)^\*\*Осталось до 5000:\*\* .*$', f'**Осталось до 5000:** **{remaining_5000}**  '),
+              (r'(?m)^- physical canonical/contactable count: .*$', f'- physical canonical/contactable count: **{canonical} / {contactable}**;'),
+              (r'(?m)^- последний завершённый RUN: .*$', f'- последний завершённый RUN: `{run_id}`;'),
+          ]
+          for pattern, replacement in replacements:
+              text, n = re.subn(pattern, replacement, text, count=1)
+              if n != 1:
+                  raise SystemExit(f'Expected exactly one match for {pattern!r}, got {n}')
+
+          cfg_path.write_text(text, encoding='utf-8')
+          PY
+      - name: Commit config sync
+        run: |
+          git config user.name "growth-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add CURRENT_WORKING_CONFIG.md
+          git diff --cached --quiet && exit 0
+          git commit -m "Growth Radar: sync canonical config header"
+          git pull --rebase origin main
+          git push
