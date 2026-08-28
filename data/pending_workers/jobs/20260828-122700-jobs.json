@@ -1,0 +1,124 @@
+{
+  "worker": "jobs",
+  "lane": "jobs",
+  "created_at": "2026-08-28T12:27:00+03:00",
+  "source_head": "e8dc3869122f51794ceb378f9a4b202dbb6bba35",
+  "canonical_write": false,
+  "outreach": false,
+  "canonical_baseline": {
+    "canonical_count": 487,
+    "contactable_count": 487,
+    "integrity": "PASS",
+    "last_completed_run": "N5K-20260828-473"
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_passed": 4,
+    "deep_check": 1,
+    "size_passed": 1,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "duplicates_before_deep": 0,
+    "qualified_staged": 1
+  },
+  "discovery_notes": {
+    "scope": "Fresh August 2026 job-board result pools and employer pages across Moscow, Saint Petersburg, Yekaterinburg, Novosibirsk, Kazan, Ufa, Chelyabinsk, Perm, Samara, Rostov-on-Don and Krasnodar; weak, stale, oversized, public/state and legally ambiguous candidates were rejected before deep-check.",
+    "lane_switch_rule": "Applied qualitatively while rotating saturated result pools; exact first-20 duplicate+early-reject percentages were not reconstructed after the fact.",
+    "quality_rule": "No criterion was weakened. Participation in a job index or presence of a vacancy alone was not treated as sufficient for QUALIFIED."
+  },
+  "qualified_candidates": [
+    {
+      "brand": "Новый Технологический Арсенал",
+      "legal_name": "ООО «НОВЫЙ ТЕХНОЛОГИЧЕСКИЙ АРСЕНАЛ»",
+      "short_legal_name": "ООО «НТА»",
+      "inn": "9718218994",
+      "ogrn": "1237700121075",
+      "legal_status": "Действует",
+      "region": "Москва",
+      "city": "Москва",
+      "segment": "IT / системная интеграция / информационная безопасность / промышленное оборудование",
+      "website": "https://ntarsenal.ru/",
+      "company_size": {
+        "employee_count": 3,
+        "employee_period": 2025,
+        "revenue_rub": 143165000,
+        "revenue_period": 2025,
+        "revenue_growth_yoy_pct": 92.6,
+        "profit_rub": 10906000,
+        "sources": [
+          "https://companies.rbc.ru/id/1237700121075-obschestvo-s-ogranichennoj-otvetstvennostyu-novyij-tehnologicheskij-arsenal/",
+          "https://xfirm.ru/company/9718218994",
+          "https://www.testfirm.ru/result/9718218994_ooo-nta"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "summary": "Компания открыла позицию директора по направлению продаж с задачами разработки стратегии продаж, расширения клиентской базы и развития нескольких B2B/B2G направлений; одновременно публично описывает себя как динамично растущего ИТ-интегратора и расширяет руководящий/инженерный штат.",
+        "signal_date": "2026-08-13",
+        "source_urls": [
+          "https://dreamjob.ru/employers/6216075/vakansii/136127217",
+          "https://h.careers/jobs/company/novyy-tehnologicheskiy-arsenal",
+          "https://moscow.cataloxy.ru/firms/NTArsenal.ru.htm"
+        ]
+      },
+      "owner_lpr": {
+        "owner": "Кудинов Михаил Сергеевич",
+        "owner_share_pct": 100,
+        "ceo": "Кудинов Михаил Сергеевич",
+        "lpr": "Кудинов Михаил Сергеевич",
+        "lpr_role": "Единственный учредитель и генеральный директор",
+        "source_urls": [
+          "https://companies.rbc.ru/id/1237700121075-obschestvo-s-ogranichennoj-otvetstvennostyu-novyij-tehnologicheskij-arsenal/",
+          "https://egrul.org/9718218994",
+          "https://xfirm.ru/company/9718218994"
+        ]
+      },
+      "contact": {
+        "email": "info@ntarsenal.ru",
+        "hh_job_route": "https://dreamjob.ru/employers/6216075/vakansii/136127217",
+        "company_page_route": "https://moscow.cataloxy.ru/firms/NTArsenal.ru.htm",
+        "contact_type": "Корпоративный маршрут + маршрут через актуальную вакансию",
+        "source_urls": [
+          "https://egrul.org/9718218994",
+          "https://xfirm.ru/company/9718218994",
+          "https://dreamjob.ru/employers/6216075/vakansii/136127217"
+        ]
+      },
+      "business_context": "Выручка почти удвоилась в 2025 году. Компания развивает системную интеграцию, ИБ, мультимедиа и промышленное оборудование и одновременно набирает директора продаж по нескольким направлениям.",
+      "consulting_hypothesis": "Диагностика коммерческой архитектуры по направлениям: сегментация коммерческих и государственных заказчиков, проектная воронка, экономика каналов и проектов, KPI продаж, синхронизация пресейла/инженеров/продаж и 90-дневный план масштабирования.",
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "9718218994",
+        "ogrn": "1237700121075",
+        "legal_name": "ООО «НОВЫЙ ТЕХНОЛОГИЧЕСКИЙ АРСЕНАЛ»",
+        "brand_domain": "Новый Технологический Арсенал|ntarsenal.ru"
+      },
+      "dedup_check": {
+        "checked_against_head": "e8dc3869122f51794ceb378f9a4b202dbb6bba35",
+        "inn_match_found": false,
+        "legal_name_match_found": false,
+        "result": "UNIQUE_BEFORE_STAGE"
+      },
+      "qualification": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "final": "QUALIFIED"
+      },
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1237700121075-obschestvo-s-ogranichennoj-otvetstvennostyu-novyij-tehnologicheskij-arsenal/",
+        "https://egrul.org/9718218994",
+        "https://xfirm.ru/company/9718218994",
+        "https://www.testfirm.ru/result/9718218994_ooo-nta",
+        "https://dreamjob.ru/employers/6216075/vakansii/136127217",
+        "https://h.careers/jobs/company/novyy-tehnologicheskiy-arsenal",
+        "https://moscow.cataloxy.ru/firms/NTArsenal.ru.htm"
+      ]
+    }
+  ]
+}
