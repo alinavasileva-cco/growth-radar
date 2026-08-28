@@ -1,0 +1,30 @@
+{
+  "run_id": "N5K-20260828-475",
+  "recorded_at": "2026-08-28T14:02:04+03:00",
+  "canonical_head_before_repair": "54d1f50f0a028601154292b8ad7368480c9a8568",
+  "workers": [
+    {
+      "worker": "jobs",
+      "path": "data/pending_workers/jobs/20260828-132100-jobs.json",
+      "blob_sha": "92b48cc836e5798e5e12e2adc2c79b2dde46d69a",
+      "status": "CONSUMED_INTEGRATED",
+      "result": "Two worker-qualified candidates were independently rechecked and physically integrated as N5K-0646 (Тест) and N5K-0647 (Лайфтранс)."
+    },
+    {
+      "worker": "industry",
+      "path": "data/pending_workers/industry/20260828-132456-industry-metrics.json",
+      "blob_sha": "0d014d3b199adeb396238af318ce1448d0cb11e2",
+      "status": "CONSUMED_ZERO_QUALIFIED",
+      "result": "100 source identities, five first-20 lanes stopped at 100% duplicate+early reject, zero qualified."
+    },
+    {
+      "worker": "growth_news",
+      "path": "data/pending_workers/growth_news/20260828-133000-growth-news.json",
+      "blob_sha": "50dd98f6caa7fb1acb13d6410c9a8a65b08a8780",
+      "status": "CONSUMED_INTEGRATED",
+      "result": "Two worker-qualified candidates were independently rechecked and physically integrated as N5K-0648 (Борус / BORUS) and N5K-0649 (Горный инструмент). Search-result count 104 was not treated as distinct raw companies."
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "outreach": false
+}
