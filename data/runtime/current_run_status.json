@@ -1,28 +1,28 @@
 {
-  "run_id": "N5K-20260828-477",
+  "run_id": "N5K-20260828-478",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T16:02:32+03:00",
+  "updated_at": "2026-08-28T17:01:58+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 493,
     "target_count": 5000,
-    "current_canonical_count": 493,
-    "current_contactable_count": 493,
-    "progress_added": 0,
-    "remaining": 4507
+    "current_canonical_count": 494,
+    "current_contactable_count": 494,
+    "progress_added": 1,
+    "remaining": 4506
   },
   "funnel": {
     "discovered": 300,
     "fast_gate_passed": 6,
     "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
     "duplicates": 1,
-    "excluded": 299
+    "excluded": 298
   },
   "lane_metrics": [
     {
@@ -31,14 +31,15 @@
       "raw": 80,
       "fast_gate": 6,
       "size": 2,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 1,
-      "duplicates": 0,
+      "legal": 2,
+      "signal": 2,
+      "lpr": 2,
+      "contact": 2,
+      "worker_qualified": 2,
+      "canonical_qualified": 1,
+      "duplicates": 1,
       "source": "JobVK / current job-board mirrors",
-      "note": "Four initial regional 20-employer lanes crossed the >70% duplicate+early-reject threshold and were stopped; low-overlap job-board top-up used to reach 80 distinct employer identities."
+      "note": "Worker-qualified ТС ГРУПП and АФ Перспектива ОМЗ. Canonical physical pre-write dedup confirmed АФ Перспектива ОМЗ already exists as N5K-0509 by INN 6318035951 and OGRN 1186313049823; only ТС ГРУПП proceeds to integration."
     },
     {
       "lane": "industry",
@@ -52,77 +53,79 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "source": "INLEGMASH / CeMAT / HouseHold Expo / MosBuild / ExpoElectronica 2026",
-      "note": "Five 20-company batches each reached 100% duplicate+early reject and were stopped; exhibition participation was not treated as SIGNAL."
+      "source": "Metaprom regional directories: Tatarstan / Bashkortostan / Novosibirsk / Rostov / Samara",
+      "note": "Five 20-company lanes each reached 100% duplicate+early-reject and were stopped; directory listing itself was not treated as SIGNAL."
     },
     {
-      "lane": "KHIMIA 2026",
+      "lane": "MIMS Automobility Saint Petersburg 2026",
       "worker": "canonical_discovery",
       "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 20,
-      "source": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
-      "note": "First 20 distinct current 2026 source identities reviewed; stopped at >70% cheap reject. Foreign entities and companies without a separate probable current S1-S3 trigger were rejected; exhibition participation itself was not SIGNAL."
+      "source": "https://mims.ru/",
+      "note": "First 20 source-level catalog observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Exhibition participation itself was not SIGNAL."
     },
     {
-      "lane": "Heat&Power 2026",
+      "lane": "InterFood Krasnodar 2026",
       "worker": "canonical_discovery",
       "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 20,
-      "source": "https://www.heatpower-expo.ru/ru-RU/about/exhibitor-list.aspx",
-      "note": "First 20 distinct current 2026 source identities reviewed; stopped at >70% cheap reject. Participation itself was not SIGNAL."
+      "source": "https://inter-food.su/ru-RU/about/exhibitor-list.aspx",
+      "note": "First 20 source-level catalog observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Listing itself was not SIGNAL."
     },
     {
-      "lane": "Testing&Control 2026",
+      "lane": "WorldFood Moscow 2026",
       "worker": "canonical_discovery",
       "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 20,
-      "source": "https://www.testing-control.ru/en-GB/press/news/18863.aspx",
-      "note": "First 20 named current 2026 participants reviewed from official material; no separate probable current S1-S3 trigger survived cheap gate. Participation itself was not SIGNAL."
+      "source": "https://world-food.ru/ru/media/news/2026/august/12/uchastniki-worldfood-moscow-2026/",
+      "note": "First 20 source-level participant observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Participation itself was not SIGNAL."
     },
     {
-      "lane": "Hi-Tech Building 2026",
+      "lane": "Textile Collection Moscow 2026",
       "worker": "canonical_discovery",
       "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 20,
-      "source": "https://en.hitechbuilding.ru/",
-      "note": "First 20 named 2026 participant identities reviewed from official source; stopped at cheap gate. Participation/award activity itself was not SIGNAL."
+      "source": "https://textile-collection.com/",
+      "note": "First 20 source-level exhibitor observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Participation itself was not SIGNAL."
     },
     {
-      "lane": "Interlight 2026",
+      "lane": "APTEKA 2026",
       "worker": "canonical_discovery",
       "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 20,
-      "source": "https://online.gefera.ru/eng/info/IL26/catalog/",
-      "note": "First 20 distinct current 2026 catalog identities reviewed; stopped at >70% cheap reject. Exhibition participation and product descriptions were not treated as SIGNAL."
+      "source": "https://aptekaexpo.ru/",
+      "note": "First 20 source-level online-catalog observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Forum/exhibition participation itself was not SIGNAL."
     },
     {
-      "lane": "AGROPRODMASH 2026",
+      "lane": "Woodex 2026",
       "worker": "canonical_discovery",
       "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 20,
-      "source": "https://www.agroprodmash-expo.ru/ru/exhibition/exhibitors/",
-      "note": "First 20 distinct current 2026 exhibitor identities reviewed; stopped at >70% cheap reject. Foreign entities and Russian companies without a separate probable current S1-S3 trigger were rejected; exhibition participation itself was not SIGNAL."
+      "source": "https://woodexpo.ru/ru/",
+      "note": "First 20 source-level current participant observations reviewed at cheap gate; stopped above 70% duplicate+early-reject. Participation itself was not SIGNAL."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "ТС ГРУПП"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "493_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "493_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "494_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "494_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
