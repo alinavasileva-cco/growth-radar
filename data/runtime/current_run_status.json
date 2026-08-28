@@ -1,45 +1,45 @@
 {
-  "run_id": "N5K-20260829-484",
+  "run_id": "N5K-20260829-485",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T00:02:18+03:00",
+  "updated_at": "2026-08-29T00:59:37+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 498,
+    "baseline_count": 499,
     "target_count": 5000,
     "current_canonical_count": 499,
     "current_contactable_count": 499,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4501
   },
   "funnel": {
-    "discovered": 301,
-    "fast_gate_passed": 1,
+    "discovered": 302,
+    "fast_gate_passed": 5,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 3,
-    "excluded": 297
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 301
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260828_231949",
-      "raw": 81,
-      "fast_gate": 1,
+      "lane": "jobs_worker_20260829_002228",
+      "raw": 82,
+      "fast_gate": 5,
       "size": 1,
       "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "duplicates": 3,
-      "note": "Fresh immutable jobs staging after RUN 483. Broad job-board batches stopped at >70% duplicate+early reject; Tangl alone passed worker deep funnel and was rechecked by canonical writer against fresh legal/financial/signal/contact evidence."
+      "qualified": 0,
+      "duplicates": 1,
+      "note": "Worker supplied one fully checked candidate, ООО ЛАЙФТРАНС (INN 6163214497 / OGRN 1196196018369), but fresh physical leads_master already contains the same legal entity as N5K-0647. Canonical duplicate rejected before write. Worker source-level funnel screened 82 distinct employer identities; saturated job-board lanes were stopped at >70% duplicate+early reject."
     },
     {
-      "lane": "industry_worker_20260828_232438",
+      "lane": "industry_worker_20260829_002635",
       "raw": 100,
       "fast_gate": 0,
       "size": 0,
@@ -49,10 +49,10 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Fresh immutable industry staging after RUN 483; five regional directory batches stopped after first 20 at 100% duplicate+early reject. Directory presence alone was not SIGNAL."
+      "note": "Five official industry-catalog lanes x20; every lane reached 100% duplicate+early reject in the first 20 and was stopped/rotated. Catalog presence itself was not treated as SIGNAL."
     },
     {
-      "lane": "own_khimia_2026_first20",
+      "lane": "own_interlight_2026_first20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -62,10 +62,10 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official KHIMIA 2026 preliminary exhibitor list, first 20 distinct source identities; stopped after first 20 because exhibition presence without a probable fresh S1-S3 trigger is an early reject under config."
+      "note": "20 distinct source identities from the current 2026 official Interlight exhibitor catalogue; stopped after first20 because exhibitor presence without a probable fresh S1-S3 trigger is an early reject."
     },
     {
-      "lane": "own_agroprodmash_2026_first20",
+      "lane": "own_worldfood_moscow_2026_first20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -75,10 +75,10 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official AGROPRODMASH 2026 exhibitor list, first 20 distinct source identities after collapsing repeated subject rows; listing presence alone was not SIGNAL."
+      "note": "20 distinct source identities from the current 2026 official WorldFood Moscow exhibitor catalogue; foreign/non-target identities and catalog-only identities were rejected at cheap gate; stopped after first20."
     },
     {
-      "lane": "own_aquaflame_2026_first20",
+      "lane": "own_cemat_russia_2026_first20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -88,10 +88,10 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official Aquaflame 2026 participant list, first 20 distinct identities; participant presence alone was not SIGNAL."
+      "note": "20 distinct source identities from the current CeMAT Russia 2026 catalogue; catalog participation alone was not SIGNAL and the lane was stopped after first20."
     },
     {
-      "lane": "own_mosbuild_2026_first20",
+      "lane": "own_securika_moscow_2026_first20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -101,20 +101,7 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official MosBuild 2026 participant article, 20 distinct identities without current-run lane overlap; exhibition presence alone was not SIGNAL."
-    },
-    {
-      "lane": "own_ndt_russia_2026_first20",
-      "raw": 20,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicates": 0,
-      "note": "Official NDT Russia 2026 participant list, first 20 distinct identities; exhibition presence alone was not SIGNAL."
+      "note": "20 distinct 2026 participant identities from current official Securika Moscow materials; participation/innovation mention alone was not promoted to S1-S3, so the lane was stopped after first20."
     },
     {
       "lane": "own_testing_control_2026_first20",
@@ -127,12 +114,23 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official Testing&Control 2026 participant list, first 20 distinct identities excluding current-run overlap; exhibition presence alone was not SIGNAL."
+      "note": "20 distinct companies from the official Testing&Control 2026 participant announcement; booking/exhibition presence alone was not SIGNAL, lane stopped after first20."
+    },
+    {
+      "lane": "own_ndt_russia_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "note": "20 distinct Russian participants from the official NDT Russia 2026 list/news; participation alone was not SIGNAL. The lane was stopped after first20 rather than weakening the funnel."
     }
   ],
-  "qualified_companies": [
-    "Тангл / Tangl"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -140,6 +138,5 @@
   "physical_master_state": "499_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "499_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "repair_note": "Post-integration authoritative config header sync explicitly retriggered in the same cycle; physical canonical state unchanged."
+  "blocker": null
 }
