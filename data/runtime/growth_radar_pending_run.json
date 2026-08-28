@@ -1,8 +1,114 @@
 {
-  "run_id": "N5K-20260828-481",
-  "updated_at": "2026-08-28T20:39:02+03:00",
-  "status": "CLEARED_AFTER_RECOVERY",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "Recovery RUN 481 consumed the freshest worker outputs. The sole worker-qualified candidate UNIONDELTA was rejected by final physical dedup because it already exists in canonical master as N5K-0351. No pending canonical write remains."
+  "run_id": "N5K-20260828-482",
+  "updated_at": "2026-08-28T21:09:18+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0654",
+      "Brand": "НТК Приборэнерго",
+      "Legal Name": "ООО «НАУЧНО-ТЕХНИЧЕСКАЯ КОМПАНИЯ ПРИБОРЭНЕРГО»",
+      "INN": "2130171441",
+      "OGRN/OGRNIP": "1162130057242",
+      "Region": "Чувашская Республика — Чувашия",
+      "City": "Чебоксары",
+      "Segment": "электротехническое оборудование / промышленная автоматика / B2B производство",
+      "Website": "https://chb.priborenergo.com/",
+      "Revenue/Scale": "Выручка 126,1 млн ₽ за 2025 год",
+      "Signal Level": "S1",
+      "Signal Summary": "10.08.2026 опубликована вакансия Коммерческого директора (CCO); компания разрабатывает и производит электротехническое оборудование, устройства промышленной автоматизации, системы управления и шкафные решения.",
+      "Signal Date": "2026-08-10",
+      "Signal Source": "https://dreamjob.ru/employers/215307/vakansii/136100447",
+      "Owner": "Гаранин Сергей Геннадьевич — 51%; Сорокин Игорь Сергеевич — 49%",
+      "CEO": "Иванов Алексей Валерианович",
+      "LPR": "Иванов Алексей Валерианович",
+      "LPR Role": "Директор / практический ЛПР",
+      "Primary Phone": "+7 (8352) 38-89-27",
+      "Primary Email": "zakaz2@ntkpribor.ru",
+      "HH Contact": "",
+      "Contact Form": "https://chb.priborenergo.com/",
+      "Contact Type": "официальный корпоративный B2B-маршрут",
+      "Contact Source": "официальный сайт НТК Приборэнерго",
+      "Consulting Hypothesis": "Гипотеза: систематизация B2B-коммерческого контура производителя электротехнического оборудования: сегментация, дилерская сеть, CRM/KPI и масштабирование продаж.",
+      "contacts": [
+        {
+          "value": "+7 (8352) 38-89-27",
+          "channel": "phone",
+          "type": "официальный корпоративный дилерский маршрут",
+          "source": "официальный сайт НТК Приборэнерго",
+          "url": "https://chb.priborenergo.com/",
+          "is_lpr": false,
+          "notes": "Официальный телефон для дилерства; персональный контакт ЛПР не предполагается."
+        },
+        {
+          "value": "zakaz2@ntkpribor.ru",
+          "channel": "email",
+          "type": "официальный корпоративный email",
+          "source": "официальный сайт НТК Приборэнерго",
+          "url": "https://chb.priborenergo.com/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email; персональный контакт ЛПР не предполагается."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_LPR_OWNER",
+          "claim": "Действующее ООО; ИНН 2130171441, ОГРН 1162130057242; директор Иванов Алексей Валерианович с 06.02.2026; учредители Гаранин Сергей Геннадьевич 51% и Сорокин Игорь Сергеевич 49%.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1162130057242/",
+          "source": "Т-Банк Бизнес"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Выручка ООО «НТК ПРИБОРЭНЕРГО» за 2025 год составила 126,1 млн ₽.",
+          "url": "https://zachestnyibiznes.ru/company/ul/1162130057242_2130171441_OOO-NTK-PRIBORENERGO",
+          "source": "ЗаЧестныйБизнес"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "10.08.2026 опубликована вакансия Коммерческого директора (CCO) НТК Приборэнерго; в описании компания подтверждает разработку и производство электротехнического оборудования и промышленной автоматики.",
+          "url": "https://dreamjob.ru/employers/215307/vakansii/136100447",
+          "source": "DreamJob"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт подтверждает корпоративный email zakaz2@ntkpribor.ru, дилерский телефон +7 (8352) 38-89-27 и маршрут заказа звонка.",
+          "url": "https://chb.priborenergo.com/",
+          "source": "Официальный сайт НТК Приборэнерго"
+        }
+      ]
+    }
+  ],
+  "funnel": {
+    "discovered": 300,
+    "fast_gate_passed": 2,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 298
+  },
+  "lane_metrics": [
+    {"lane":"fresh_worker_jobs","raw":0,"qualified":0,"note":"No staging newer than consumed 20260828-201837-jobs.json."},
+    {"lane":"fresh_worker_industry","raw":0,"qualified":0,"note":"No staging newer than consumed 20260828-202330-industry-metrics.json."},
+    {"lane":"fresh_worker_growth_news","raw":0,"qualified":0,"note":"No fresh staging after 20260828-133000-growth-news.json."},
+    {"lane":"fresh_worker_official_owner","raw":0,"qualified":0,"note":"No fresh staging after 20260826-194739-official-owner.json."},
+    {"lane":"current_jobs_direct","raw":20,"fast_gate":2,"duplicates":1,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified":1,"early_reject":18,"note":"Спектр-Пак Юг rejected at cheap physical dedup as existing N5K-0423; НТК Приборэнерго passed deep funnel."},
+    {"lane":"ndt_russia_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"beauty_show_krasnodar_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"heat_power_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"testing_control_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"global_ingredients_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"pcvexpo_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"cemat_russia_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"wasma_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"expocoating_moscow_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"interfood_krasnodar_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"aquaflame_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"securika_moscow_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"mosbuild_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true},
+    {"lane":"modern_bakery_2026","raw":20,"early_reject":20,"qualified":0,"stopped_over_70pct":true}
+  ],
+  "notes": "Canonical RUN after completed RUN 481. All fresh worker staging was checked first; there were no worker files newer than the already-consumed RUN 481 inputs, so they were not counted again. Own discovery reviewed 300 source-level raw candidates across 15 low-overlap lanes. Cheap global dedup was applied before deep-check and repeated by the integration guard. Participation in an exhibition/catalog was never treated as SIGNAL. Catalog lanes were stopped after the first 20 when duplicate+early-reject exceeded 70%. The 300 raw figure is source-level discovery and is not claimed as 300 globally legal-key-proven distinct entities because cheap rejects were intentionally not all resolved to INN/OGRN/domain. Criteria were not weakened. Outreach prohibited and not performed."
 }
