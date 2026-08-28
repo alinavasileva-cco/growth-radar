@@ -1,0 +1,106 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-28T13:30:00+03:00",
+  "canonical_snapshot": {
+    "head_at_start": "bfad47d75794357ef5d0620eb653a9fc50b45f5f",
+    "canonical_count": 488,
+    "contactable_count": 488,
+    "integrity": "PASS",
+    "source": "CURRENT_WORKING_CONFIG.md"
+  },
+  "worker_funnel": {
+    "search_result_records_reviewed": 104,
+    "distinct_raw_exact_count": null,
+    "distinct_raw_note": "The search backend returned 104 source-result records across multiple low-overlap growth-news queries. Some records describe the same company or non-company aggregate pages; exact globally distinct raw-company count was not instrumented, so no invented 100-180 distinct count is claimed.",
+    "deep_checked": 5,
+    "size_pass": 4,
+    "legal_pass": 4,
+    "signal_pass": 3,
+    "lpr_pass": 2,
+    "contact_pass": 2,
+    "qualified": 2,
+    "quality_note": "Criteria were not weakened. Previously known or clearly unsuitable large/state/foreign/no-specific-Russian-legal-entity cases were rejected early."
+  },
+  "qualified": [
+    {
+      "brand": "Борус / BORUS",
+      "legal_name": "ООО «БОРУС»",
+      "inn": "2464149893",
+      "ogrn": "1192468028070",
+      "legal_status": "Действует",
+      "region": "Красноярский край",
+      "city": "Красноярск",
+      "segment": "машиностроение / спецтехника / горное и карьерное оборудование",
+      "website": "https://borus124.ru/",
+      "scale": "Выручка за 2025 год 1 125 756 000 ₽; субъект малого предпринимательства",
+      "signal_level": "S2",
+      "signal_summary": "27.08.2026 завод сообщил о проекте производства подземных и карьерных самосвалов и погрузо-доставочных машин; инвестиции более 1 млрд ₽, планируется СПИК сроком на 10 лет.",
+      "signal_date": "2026-08-27",
+      "signal_source": "https://www.kommersant.ru/doc/8909600",
+      "owner": null,
+      "ceo": "Пестриков Павел Николаевич",
+      "lpr": "Пестриков Павел Николаевич",
+      "lpr_role": "Директор / практический ЛПР",
+      "primary_phone": "+7 (391) 290-26-96",
+      "primary_email": "promo@borus124.ru",
+      "contact_form": "https://borus124.ru/contacts/",
+      "contact_type": "Официальный телефон, email и форма сайта",
+      "contact_source": "https://borus124.ru/contacts/",
+      "evidence_urls": [
+        "https://www.kommersant.ru/doc/8909600",
+        "https://borus124.ru/contacts/",
+        "https://companies.rbc.ru/id/1192468028070-obschestvo-s-ogranichennoj-otvetstvennostyu-borus/",
+        "https://b2b.house/company/OOO-BORUS_c7dd4bb2-337d-4663-b2a8-f182cd133300/"
+      ],
+      "dedup_keys": {
+        "inn": "2464149893",
+        "ogrn": "1192468028070",
+        "legal_name": "ООО БОРУС",
+        "brand_domain": "Борус|borus124.ru"
+      },
+      "dedup_check": "Repository search by INN returned no match before staging.",
+      "status": "QUALIFIED"
+    },
+    {
+      "brand": "Горный инструмент",
+      "legal_name": "ООО «ГОРНЫЙ ИНСТРУМЕНТ»",
+      "inn": "4221001049",
+      "ogrn": "1024201823744",
+      "legal_status": "Действует",
+      "region": "Кемеровская область — Кузбасс",
+      "city": "Новокузнецк",
+      "segment": "машиностроение / горно-режущий и буровой инструмент",
+      "website": "http://www.grins.ru",
+      "scale": "Средний бизнес; 170 сотрудников; выручка за 2024 год 1 267 436 000 ₽",
+      "signal_level": "S2",
+      "signal_summary": "03.07.2026 компания сообщила о модернизации производственного комплекса на 510 млн ₽, включая высокотехнологичное токарное, фрезерное и шлифовальное оборудование; новая площадка позволила нарастить выпуск до 2 млн единиц инструмента в год и расширить экспорт до 12 стран.",
+      "signal_date": "2026-07-03",
+      "signal_source": "https://www.kommersant.ru/doc/8795906",
+      "owner": "Прокушенко Сергей Иванович; Прокушенко Антон Сергеевич",
+      "ceo": "Прокушенко Сергей Иванович",
+      "lpr": "Прокушенко Сергей Иванович",
+      "lpr_role": "Генеральный директор и совладелец",
+      "primary_phone": "+7 (3843) 37-44-93",
+      "primary_email": "info@grins.ru",
+      "contact_form": null,
+      "contact_type": "Публичный корпоративный телефон, email и сайт",
+      "contact_source": "https://www.orgpage.ru/novokuznetsk/novokuznetskiy-zavod-gorno-466087.html",
+      "evidence_urls": [
+        "https://www.kommersant.ru/doc/8795906",
+        "https://check.tochka.com/company/1024201823744/",
+        "https://companies.rbc.ru/id/1024201823744-ooo-gornyij-instrument/",
+        "https://www.orgpage.ru/novokuznetsk/novokuznetskiy-zavod-gorno-466087.html"
+      ],
+      "dedup_keys": {
+        "inn": "4221001049",
+        "ogrn": "1024201823744",
+        "legal_name": "ООО ГОРНЫЙ ИНСТРУМЕНТ",
+        "brand_domain": "Горный инструмент|grins.ru"
+      },
+      "dedup_check": "Repository searches by company name and INN returned no match before staging.",
+      "status": "QUALIFIED"
+    }
+  ],
+  "outreach": 0,
+  "canonical_write": false
+}
