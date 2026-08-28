@@ -1,0 +1,84 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-28T05:21:04+03:00",
+    "source_head_sha": "c08b9b47695ff3e1ecb6434c122fff599ccbe4ed",
+    "source_config_version": "2026-08-28T05:12:00+03:00",
+    "source_last_completed_run": "N5K-20260828-466",
+    "canonical_baseline": 481,
+    "contactable_baseline": 481,
+    "canonical_write": false,
+    "outreach": false,
+    "notes": "READ+DISCOVERY only. Canonical/master/contactable/contacts/evidence/runtime/campaign were not written. Fresh/dated job-board pages were preferred; stale regional pages were excluded from qualification decisions. Exact canonical dedup was rechecked before staging by INN, OGRN and brand+domain."
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_pass": 7,
+    "deep_check": 4,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_or_early_reject": 73,
+    "source_rotation_note": "Broad Moscow/SPb and regional job-board result pools were rotated; saturated/ambiguous/stale result pages were not used for final qualification. Raw count is employer-level after source-name de-dup, not vacancy-line count."
+  },
+  "qualified": [
+    {
+      "brand": "Первая Чайная Группа / Первая Чайная Компания (ПЧК)",
+      "legal_name": "ООО «ТОРГОВЫЙ ДОМ «ПЕРВАЯ ЧАЙНАЯ КОМПАНИЯ»",
+      "inn": "9725116023",
+      "ogrn": "1237700149060",
+      "legal_status": "Действует",
+      "region": "Москва",
+      "city": "Москва",
+      "segment": "FMCG / производство и оптовые B2B-продажи чая и кофе / СТМ",
+      "website": "https://teagroup.ru/",
+      "revenue_scale": "Выручка за 2025 год 61 667 000 ₽; собственное производство, B2B/HoReCa/опт/СТМ, 600+ SKU по официальному сайту",
+      "signal_level": "S1",
+      "signal_summary": "Свежий поиск руководителя отдела продаж B2B (чай и кофе): компания заявляет переход к следующему этапу развития B2B-продаж и усиление коммерческой команды; параллельно опубликованы вакансии B2B-продаж.",
+      "signal_date": "2026-08-26",
+      "signal_source": "https://gdejob.com/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%B2-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B5-%D0%BE%D1%82-300000-%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9",
+      "supporting_job_source": "https://nesiditsa.ru/vacancy/136518481",
+      "owner": "ООО «МАИК» (учредитель ООО «ТД «ПЧК» по актуальным данным источника после изменения 11.12.2025)",
+      "ceo": "Мануйлов Андрей Николаевич",
+      "lpr": "Мануйлов Андрей Николаевич",
+      "lpr_role": "Генеральный директор",
+      "primary_phone": "+7 (495) 221-83-28",
+      "primary_email": "info@teagroup.ru",
+      "contact_form": "https://teagroup.ru/",
+      "contact_type": "Официальный корпоративный телефон + email + формы B2B/СТМ на официальном сайте",
+      "contact_source": "https://teagroup.ru/about/faq/",
+      "evidence_urls": [
+        "https://gdejob.com/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%B2-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B5-%D0%BE%D1%82-300000-%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9",
+        "https://nesiditsa.ru/vacancy/136518481",
+        "https://teagroup.ru/",
+        "https://teagroup.ru/about/faq/",
+        "https://xfirm.ru/company/9725116023",
+        "https://b2b.house/company/OOO-TD-PCHK_434067bd-9094-4c6a-981f-792c2335aad9/"
+      ],
+      "dedup_keys": {
+        "inn": "9725116023",
+        "ogrn": "1237700149060",
+        "legal_name_normalized": "ООО ТОРГОВЫЙ ДОМ ПЕРВАЯ ЧАЙНАЯ КОМПАНИЯ",
+        "brand_domain": "Первая Чайная Компания|teagroup.ru"
+      },
+      "dedup_precheck": {
+        "inn_repo_search": "no match",
+        "ogrn_repo_search": "no match",
+        "domain_repo_search": "no match"
+      },
+      "gates": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      },
+      "consulting_hypothesis": "Диагностика B2B-воронки и коммерческой модели по каналам HoReCa/опт/дистрибуция/СТМ; сегментация клиентов; KPI и CRM; масштабирование продаж без ослабления маржинальности.",
+      "worker_status": "QUALIFIED_STAGED_NOT_CANONICAL"
+    }
+  ]
+}
