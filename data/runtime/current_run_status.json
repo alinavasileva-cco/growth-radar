@@ -1,46 +1,46 @@
 {
-  "run_id": "N5K-20260828-470",
+  "run_id": "N5K-20260828-471",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T09:20:00+03:00",
+  "updated_at": "2026-08-28T09:59:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 484,
     "target_count": 5000,
-    "current_canonical_count": 484,
-    "current_contactable_count": 484,
-    "progress_added": 0,
-    "remaining": 4516
+    "current_canonical_count": 485,
+    "current_contactable_count": 485,
+    "progress_added": 1,
+    "remaining": 4515
   },
   "funnel": {
-    "discovered": 305,
+    "discovered": 300,
     "fast_gate_passed": 7,
-    "size_check_passed": 5,
-    "legal_match_passed": 5,
-    "signal_confirmed": 5,
-    "lpr_identified": 4,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 304
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 299
   },
   "lane_metrics": [
     {
-      "lane": "jobs/20260828-082251",
+      "lane": "jobs/20260828-092511",
       "raw": 80,
       "fast_gate": 7,
-      "size": 5,
-      "legal": 5,
-      "signal": 5,
-      "lpr": 4,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
       "contact": 1,
       "worker_qualified": 1,
       "canonical_prewrite_qualified": 1,
       "duplicates_plus_early_rejects": 73,
-      "result": "ADVANTA_M_ROSTOV_QUALIFIED"
+      "result": "ARGUS_LKM_QUALIFIED_AFTER_CANONICAL_RECHECK"
     },
     {
-      "lane": "industry/20260828-083400",
+      "lane": "industry/20260828-092500",
       "raw": 100,
       "fast_gate": 0,
       "size": 0,
@@ -54,8 +54,8 @@
       "result": "FIVE_20_CANDIDATE_LANES_STOPPED_AFTER_GT70_PERCENT_EARLY_REJECT"
     },
     {
-      "lane": "canonical-low-overlap-prodexpo-2026-official-catalog",
-      "raw": 125,
+      "lane": "canonical-low-overlap-expodat-2026-mixed",
+      "raw": 120,
       "fast_gate": 0,
       "size": 0,
       "legal": 0,
@@ -63,21 +63,31 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "duplicates_plus_early_rejects": 125,
+      "duplicates_plus_early_rejects": 120,
       "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
       "sources": [
-        "ПРОДЭКСПО-2026 official internet catalogue, Russian participants, pages 3, 5, 11, 19, 25, 27, 35, 45, 59, 65, 83, 99, 105"
+        "CTT Expo 2026 participant registry",
+        "CTO Expo 2026 participant registry",
+        "Logistika Expo 2026 participant registry",
+        "MINING CTT 2026 participant registry",
+        "COMvex 2026 participant registry",
+        "SobMaExpo 2026 participant registry",
+        "NAIS 2026 participant registry",
+        "Wire Russia 2026 participant registry",
+        "AGRAVIA 2026 participant registry"
       ],
-      "note": "125 distinct named source identities after removing repeated stand entries were screened at cheap FAST GATE. Exhibition participation itself was not treated as SIGNAL; without an independent probable S1-S3 trigger candidates were not promoted to deep-check. Counts are source-level identities and are not claimed globally legal-key-proven distinct against worker early rejects."
+      "note": "120 named source identities were screened across multiple low-overlap 2026 participant registries. Foreign entities, very large/federal groups, irrelevant entities and candidates lacking an independent probable fresh S1-S3 trigger were rejected at cheap fast gate; exhibition participation itself was not treated as SIGNAL. Counts are source-level identities and are not claimed globally legal-key-proven distinct against all worker early rejects."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Аргус-ЛКМ"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "484_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "484_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "485_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "485_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

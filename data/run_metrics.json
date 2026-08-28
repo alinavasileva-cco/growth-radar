@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-08-28T09:20:00+03:00",
+  "generated_at": "2026-08-28T09:59:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260828-470",
-  "current_run_id": "N5K-20260828-470",
+  "latest_completed_run_id": "N5K-20260828-471",
+  "current_run_id": "N5K-20260828-471",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 484,
-  "contactable_verified": 484,
+  "canonical_pool_verified": 485,
+  "contactable_verified": 485,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4516,
+  "remaining_to_target": 4515,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_470": {
-    "raw_discovered": 305,
+  "run_471": {
+    "raw_discovered": 300,
     "fast_gate_passed": 7,
-    "size_check_passed": 5,
-    "legal_match_passed": 5,
-    "signal_confirmed": 5,
-    "lpr_identified": 4,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "physically_integrated": 0,
-    "duplicates": 1,
-    "excluded": 304,
+    "qualified": 1,
+    "physically_integrated": 1,
+    "duplicates": 0,
+    "excluded": 299,
     "lane_metrics": [
       {
-        "lane": "jobs/20260828-082251",
+        "lane": "jobs/20260828-092511",
         "raw": 80,
         "fast_gate": 7,
-        "size": 5,
-        "legal": 5,
-        "signal": 5,
-        "lpr": 4,
+        "size": 1,
+        "legal": 1,
+        "signal": 1,
+        "lpr": 1,
         "contact": 1,
         "worker_qualified": 1,
         "canonical_prewrite_qualified": 1,
         "duplicates_plus_early_rejects": 73,
-        "result": "ADVANTA_M_ROSTOV_QUALIFIED"
+        "result": "ARGUS_LKM_QUALIFIED_AFTER_CANONICAL_RECHECK"
       },
       {
-        "lane": "industry/20260828-083400",
+        "lane": "industry/20260828-092500",
         "raw": 100,
         "fast_gate": 0,
         "size": 0,
@@ -56,8 +56,8 @@
         "result": "FIVE_20_CANDIDATE_LANES_STOPPED_AFTER_GT70_PERCENT_EARLY_REJECT"
       },
       {
-        "lane": "canonical-low-overlap-prodexpo-2026-official-catalog",
-        "raw": 125,
+        "lane": "canonical-low-overlap-expodat-2026-mixed",
+        "raw": 120,
         "fast_gate": 0,
         "size": 0,
         "legal": 0,
@@ -65,12 +65,20 @@
         "lpr": 0,
         "contact": 0,
         "qualified": 0,
-        "duplicates_plus_early_rejects": 125,
+        "duplicates_plus_early_rejects": 120,
         "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
         "sources": [
-          "ПРОДЭКСПО-2026 official internet catalogue, Russian participants, pages 3, 5, 11, 19, 25, 27, 35, 45, 59, 65, 83, 99, 105"
+          "CTT Expo 2026 participant registry",
+          "CTO Expo 2026 participant registry",
+          "Logistika Expo 2026 participant registry",
+          "MINING CTT 2026 participant registry",
+          "COMvex 2026 participant registry",
+          "SobMaExpo 2026 participant registry",
+          "NAIS 2026 participant registry",
+          "Wire Russia 2026 participant registry",
+          "AGRAVIA 2026 participant registry"
         ],
-        "note": "125 distinct named source identities after removing repeated stand entries were screened at cheap FAST GATE. Exhibition participation itself was not treated as SIGNAL; without an independent probable S1-S3 trigger candidates were not promoted to deep-check. Counts are source-level identities and are not claimed globally legal-key-proven distinct against worker early rejects."
+        "note": "120 named source identities were screened across multiple low-overlap 2026 participant registries. Foreign entities, very large/federal groups, irrelevant entities and candidates lacking an independent probable fresh S1-S3 trigger were rejected at cheap fast gate; exhibition participation itself was not treated as SIGNAL. Counts are source-level identities and are not claimed globally legal-key-proven distinct against all worker early rejects."
       }
     ]
   }
