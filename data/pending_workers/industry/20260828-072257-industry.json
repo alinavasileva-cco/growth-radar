@@ -1,0 +1,128 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-28T07:22:57+03:00",
+  "baseline_head": "8c2ffa9db0e44b579ee2496982d5046e8ec3bbf6",
+  "config_version": "2026-08-28T06:08:00+03:00",
+  "canonical_contactable": 482,
+  "canonical_integrity": "PASS",
+  "dedup_keys_loaded": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"],
+  "outreach": false,
+  "funnel": {
+    "raw_distinct": 100,
+    "fast_gate": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "НПК АВТОПРИБОР",
+      "legal_name": "ООО «НАУЧНО-ПРОИЗВОДСТВЕННЫЙ КОМПЛЕКС «АВТОПРИБОР»",
+      "inn": "3329093967",
+      "ogrn": "1183328008820",
+      "legal_status": "Действует",
+      "region": "Владимирская область",
+      "city": "Владимир",
+      "segment": "Производство автокомпонентов",
+      "website": "https://avtopribor.ru/",
+      "company_size": {
+        "employee_or_scale_evidence": "Металлообработчики.ру указывает 1100 сотрудников; актуальный профиль Saby указывает масштаб выручки около 1.8 млрд ₽; официальный сайт и свежие публикации подтверждают действующую производственную группу.",
+        "employee_count_source_url": "https://vladimir.metalloobrabotchiki.ru/company/npk-avtopribor",
+        "revenue_source_url": "https://saby.ru/profile/3329093967-332901001"
+      },
+      "legal_evidence": {
+        "status_checked": "2026-08-28",
+        "source_urls": [
+          "https://kontragent.vbr.ru/company/ooo-npk-avtopribor-1183328008820/",
+          "https://avtopribor.ru/contacts//"
+        ],
+        "note": "Свежий профиль контрагента подтверждает действующее ООО, ИНН 3329093967, ОГРН 1183328008820; учредитель — ООО «КРИГА», 100%. Официальный сайт публикует те же ИНН/ОГРН."
+      },
+      "signal_level": "S1",
+      "signal_summary": "20 августа 2026 года НПК АВТОПРИБОР официально сообщил, что ФТИ вошёл в капитал головной компании ООО «КРИГА»; заявленная цель — масштабировать производственную платформу, открыть новые продуктовые линейки и углубить локализацию автокомпонентов. Дополнительно 6 июля 2026 года сообщалось о завершении первого этапа модернизации владимирской площадки на 2 млрд ₽ и втором этапе технического переоснащения стоимостью 3 млрд ₽.",
+      "signal_date": "2026-08-20",
+      "signal_source_urls": [
+        "https://avtopribor.ru/media/fti-investiroval-v-gk-npk-avtopribor-dlya-razvitiya-proizvodstva-avtokomponentov/",
+        "https://zebra-tv.ru/novosti/biznes/novye-vladeltsy-avtopribora-zayavlyayut-o-zavershenii-pervogo-etapa-modernizatsii-zavoda-za-2-millia/"
+      ],
+      "owner": "ООО «КРИГА» — 100% непосредственный учредитель ООО «НПК «АВТОПРИБОР»",
+      "lpr": "Диесперова Татьяна Ивановна",
+      "lpr_role": "Генеральный директор",
+      "lpr_source_urls": [
+        "https://kontragent.vbr.ru/company/ooo-npk-avtopribor-1183328008820/",
+        "https://companium.ru/id/1183328008820-npk-avtopribor"
+      ],
+      "contacts": {
+        "phone": ["+7 (4922) 40-48-80", "+7 (4922) 40-48-88"],
+        "email": ["info@avtopribor.ru", "sales@avtopribor.ru"],
+        "contact_type": "Официальный корпоративный маршрут",
+        "source_url": "https://avtopribor.ru/contacts//"
+      },
+      "dedup_keys": {
+        "inn": "3329093967",
+        "ogrn": "1183328008820",
+        "exact_legal_name": "ООО «НАУЧНО-ПРОИЗВОДСТВЕННЫЙ КОМПЛЕКС «АВТОПРИБОР»",
+        "brand_domain": "НПК АВТОПРИБОР|avtopribor.ru"
+      },
+      "dedup_result": "No match found in freshly loaded canonical master by INN/name search before final write.",
+      "qualification_note": "Прошёл FAST GATE и полный SIZE → LEGAL → SIGNAL → LPR → CONTACT. Выставочное/каталожное присутствие не использовалось как сигнал."
+    }
+  ],
+  "lanes": [
+    {
+      "source": "Металлообработчики.ру — Ярославская область",
+      "source_url": "https://yaroslavl.metalloobrabotchiki.ru/company",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["ООО ПТК «АгроТех»","ООО «ТМТ»","ООО «РИЗ»","ООО «Мастер Моторс»","ООО «Спец-Деталь»","ООО «Базис Бест»","ООО «Паллант инжиниринг»","ООО «Полиарт»","ООО «Электромаш»","ООО «ПКФ «Партия-Сервис»","ООО «РКМ Лазерпром»","ООО НПК «Эко-Бокс»","ООО «ЯрМашХолдинг»","ООО «Астрон Агро»","ООО ПО «ТехПромИнвест»","ООО «Фанзип»","ИП Васильев А. С.","ИП Юдин В. В.","ИП Власюк В. В.","ООО «Победитпромтех»"]
+    },
+    {
+      "source": "Металлообработчики.ру — Кировская область",
+      "source_url": "https://kirov.metalloobrabotchiki.ru/company",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["ООО «РСС»","ИП Опарин И. Е. / Zakalka43","ООО «Кировский завод металлообработки»","ИП Гребенев С. В. / Современная металлообрабатывающая компания","ООО «Аркуда»","ООО «КИРОВМАШХОЛДИНГ»","ООО «ВЭЛТЭКС»","ООО «Пром-Механика»","ИП Садаков Ю. В.","ИП Маркова И. А. / Стальвятсервис","ООО МОК «Тракер»","ООО «ПТДК»","ИП Кармаев В. А.","ООО ПКФ «МКЗ-С»","ООО «Феникс»","ООО «Мастер М»","ИП Булычев В. В. / ГрандСталь","ООО ТПК «Ханхи»","ООО «Вятский Механический Завод»","ИП Щепетков Е. В."]
+    },
+    {
+      "source": "Металлообработчики.ру — Рязанская область",
+      "source_url": "https://ryazan.metalloobrabotchiki.ru/company",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["ООО «Гальванический центр»","ООО «Эко Трейд»","ООО «Галс»","ООО «СТМ-групп»","ООО «МеталлоСтрой»","ООО «МОДУЛЬ-1»","ООО «РАСМА-МЕТ»","ООО «ПКФ «Станкоартель»","ООО «ЛазерВент»","ООО «ЭЛЕКТРОРЕГИОН»","ООО «Вакуумные компоненты»","ИП Чернов А. М. / Верта","ИП Москвитин Ю. А.","ООО «Смарт Инжиниринг»","ООО «Рязанский завод металлообработки»","ООО «Пресс-Сервис»","АО «РМЗ»","ООО «Агротехмаш»","ООО «ЭнергоСервисРегион»","ООО «Промэлементсервис»"]
+    },
+    {
+      "source": "Металлообработчики.ру — Владимирская область",
+      "source_url": "https://vladimir.metalloobrabotchiki.ru/company",
+      "raw": 20,
+      "duplicates_plus_early_reject": 19,
+      "rate": 0.95,
+      "stopped_after_first_20": true,
+      "qualified": 1,
+      "candidates": ["ООО «ПКФ Промтехкрепеж»","ООО «Владимирский центр механической обработки»","ООО «ТД Экосвет»","ООО «МУП Кобра»","ООО Производственное Объединение «ГЕФЕСД»","ООО «Рабат»","ООО «Владтулс»","ООО «ПКФ-ГазНефтеМаш»","ИП Мышкин А. В. / МТК33","ООО «ВладМетЦентр»","ООО «ПФ-Форум»","ООО «Энерго Ремонт»","ИП Митин Д. А.","ООО «Промактив»","ООО «Валф–Рус»","ООО «НПК «Автоприбор»","ООО «НПП Вектор»","ОАО «БМЗ»","ООО «МГ-ПРОМ»","ИП Максимов Д. Ю."]
+    },
+    {
+      "source": "Металлообработчики.ру — Калужская область",
+      "source_url": "https://kaluga.metalloobrabotchiki.ru/company",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["ООО «Звездочка»","ООО «Механический завод «Энергия»","ООО «ЛИСмет»","ООО «Калугапромтрейд»","ООО «Гранд»","ООО «Завод запасных частей»","ООО «ППК»","ООО «Калужский завод приводных механизмов»","ИП Зелинская Е. В. / Завод МЕТАЛЛИСТ","ООО КМП «Литформ»","ООО «Фабрика Алюминиевого Профиля»","ООО «Энергомаш-Калуга»","ООО «Агротек»","ООО «ПСК Аф-Групп»","ООО «Энстром»","ООО «Шердель Элмат Калуга»","ООО «Телекоммуникационная компания»","ООО «Крандеталь»","ООО «Гидро-Сервис»","ООО «Калугаэнергопром»"]
+    }
+  ],
+  "decision_note": "100 distinct source identities evaluated. Each regional lane crossed the >70% duplicate+early-reject threshold within its first 20 and was stopped/rotated. Only ООО «НПК «Автоприбор» passed the complete funnel on current evidence. No stale financial/legal data were used where fresher evidence was available; catalog presence alone was never treated as S1-S3."
+}
