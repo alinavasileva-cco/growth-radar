@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260828-465",
+  "updated_at": "2026-08-28T04:14:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260828-032900-jobs.json",
+      "blob_sha": "5f1a5f35c915a17a7d98da3e41adcdf73c48ae7a",
+      "result": "CONSUMED_DUPLICATE",
+      "note": "Worker-qualified RZKO passed deep review, but final physical canonical guard found an existing canonical record by INN + OGRN + exact legal name; immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-032336-industry-metrics.json",
+      "blob_sha": "00cc638d8fbc32d2311773efedb131b1e002035f",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 distinct raw identities audited across five catalog lanes; zero qualified; saturated lanes rotated; immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 481,
+  "physical_contactable_after_cycle": 481,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
