@@ -78,3 +78,7 @@ Fresh worker pool: jobs `80 raw / 2 worker-qualified`; industry `100 raw / 1 wor
 - **НПК АВТОПРИБОР**, ООО «НАУЧНО-ПРОИЗВОДСТВЕННЫЙ КОМПЛЕКС «АВТОПРИБОР»`, ИНН `3329093967`, ОГРН `1183328008820`, Lead ID `N5K-0641`.
 
 Canonical/contactable: **484/484**. Integrity PASS. Orphan contacts/evidence: **0/0**. Staged: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
+
+
+## Latest verified run N5K-20260828-470
+Canonical/contactable: 484/484. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
