@@ -1,0 +1,165 @@
+{
+  "schema_version": "jobs-worker-v1",
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-28T15:24:06+03:00",
+    "baseline_head": "2bf4daf37684840bdfdf9d0193379372e0500322",
+    "config_version": "2026-08-28T15:03:30+03:00",
+    "baseline_canonical_count": 493,
+    "baseline_contactable_count": 493,
+    "canonical_write": false,
+    "outreach_sent": 0
+  },
+  "discovery": {
+    "raw_distinct_employers": 80,
+    "source_lanes": [
+      {
+        "source": "JobVK / current job-board mirrors",
+        "region": "Самара",
+        "query": "руководитель отдела продаж",
+        "first_20_reviewed": 20,
+        "duplicate_plus_early_reject": 18,
+        "duplicate_plus_early_reject_rate": 0.90,
+        "action": "STOP_AND_SWITCH",
+        "source_url": "https://trust.jobvk.com/samara/rukovoditely-otdela-prodazh"
+      },
+      {
+        "source": "JobVK / current job-board mirrors",
+        "region": "Новосибирск",
+        "query": "руководитель отдела продаж",
+        "first_20_reviewed": 20,
+        "duplicate_plus_early_reject": 18,
+        "duplicate_plus_early_reject_rate": 0.90,
+        "action": "STOP_AND_SWITCH",
+        "source_url": "https://trust.jobvk.com/novosibirsk/rukovoditely-otdela-prodazh"
+      },
+      {
+        "source": "JobVK / current job-board mirrors",
+        "region": "Екатеринбург",
+        "query": "руководитель отдела продаж",
+        "first_20_reviewed": 20,
+        "duplicate_plus_early_reject": 19,
+        "duplicate_plus_early_reject_rate": 0.95,
+        "action": "STOP_AND_SWITCH",
+        "source_url": "https://trust.jobvk.com/ekaterinburg/rukovoditely-otdela-prodazh"
+      },
+      {
+        "source": "JobVK / current job-board mirrors",
+        "region": "Краснодар",
+        "query": "директор по продажам / коммерческие руководители",
+        "first_20_reviewed": 20,
+        "duplicate_plus_early_reject": 17,
+        "duplicate_plus_early_reject_rate": 0.85,
+        "action": "STOP_AND_SWITCH",
+        "source_url": "https://www.trust.jobvk.com/krasnodar/direktor-po-prodazham"
+      },
+      {
+        "source": "DreamJob / Careerist / Cataloxy / current vacancy mirrors",
+        "region": "Россия, low-overlap top-up",
+        "query": "коммерческий директор / директор по продажам / руководитель отдела продаж",
+        "note": "Used after saturated regional lanes were stopped. Employer identities were globally source-name-deduplicated; only the first 80 distinct employer identities were counted as raw."
+      }
+    ],
+    "instrumentation_note": "The 80 raw count is employer-level and source-name-deduplicated. Search-result rows and Telegram placeholder listings were not counted as employers. Saturated 20-employer regional lanes were stopped immediately after the measured early-reject threshold exceeded 70%."
+  },
+  "worker_funnel": {
+    "raw_distinct": 80,
+    "fast_gate_passed": 6,
+    "deep_checked": 6,
+    "size_passed": 2,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "canonical_duplicates_at_final_guard": 0
+  },
+  "deep_check_notes": [
+    "PANELOK / ООО «ТЕРМОЛОГИСТИКА» passed all gates.",
+    "РУБИКОН (Новосибирск) rejected at LEGAL: current job listing could not be tied unambiguously to one of several active legal entities named «РУБИКОН», so no legal match was assumed.",
+    "ODEVI rejected at SIZE: brand/IP attribution to ИП Балычев Алексей Валерьевич was found, but a current configured-scale fact sufficient for qualification was not confirmed.",
+    "Компания ОРУМ rejected at SIZE: ООО Компания «ОРУМ» has 2025 revenue about 1.84 billion RUB, above the configured target range without separate approval.",
+    "Экосмотр rejected at LEGAL: the vacancy describes a group/platform while the official site names multiple operating legal entities; exact vacancy-to-legal-entity attribution was not sufficiently unambiguous.",
+    "Фридом rejected at LEGAL: multiple active Moscow entities named «ФРИДОМ» exist and the vacancy did not provide enough identifiers to bind the confectionery employer to one exact legal entity."
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "PANELOK",
+      "legal_name": "ООО «ТЕРМОЛОГИСТИКА»",
+      "inn": "6319233160",
+      "ogrn": "1186313090270",
+      "legal_status": "Действует",
+      "legal_status_checked_at": "2026-06-13",
+      "ownership_type": "private",
+      "region": "Самарская область",
+      "city": "Самара",
+      "segment": "производство стеновых панелей и комплексных отделочных решений; B2B строительство",
+      "website": "https://panelok.ru/",
+      "size": {
+        "revenue_2025_rub": 29664000,
+        "current_employee_count": 7,
+        "revenue_source": "https://companies.rbc.ru/id/1186313090270-obschestvo-s-ogranichennoj-otvetstvennostyu-termologistika/",
+        "employee_source": "https://synapsenet.ru/organizacii/1186313090270-ooo-termologistika",
+        "size_basis": "2025 revenue and current employee count are within the configured target scale."
+      },
+      "signal": {
+        "level": "S1",
+        "summary": "Current vacancy for Head of Regional Sales states that PANELOK is opening branches and representative offices in the Volga and Southern federal districts, requires documenting existing commercial business processes, CRM tuning, supervising a new branch opening, building the regional sales team and participating directly in opening new demo rooms and representative offices.",
+        "job_url": "https://trust.jobvk.com/go?filters=100%2C330672&id=3695113118",
+        "fresh_listing_observed_at": "2026-08-28",
+        "supporting_job_index_url": "https://samara.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D0%BF%D1%82%D0%BE%D0%B2%D1%8B%D1%85-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+        "freshness_note": "Qualification uses the currently visible job-board listing observed on 2026-08-28; no stale vacancy was used as the sole signal."
+      },
+      "owner": [
+        {
+          "name": "Урмансов Роман Романович",
+          "share": "100%"
+        }
+      ],
+      "ceo": "Урмансов Роман Романович",
+      "lpr": "Урмансов Роман Романович",
+      "lpr_role": "генеральный директор и единственный учредитель",
+      "contact_route": {
+        "type": "official corporate route to owner/CEO",
+        "phones": [
+          "+7 (937) 078-88-86",
+          "+7 (846) 211-06-62",
+          "+7 (927) 025-11-25"
+        ],
+        "email": "panelok-office@yandex.ru",
+        "form": "https://panelok.ru/contacts",
+        "website": "https://panelok.ru/",
+        "instructions": "Запросить передачу сообщения генеральному директору Урмансову Роману Романовичу через официальный офисный телефон, email или форму. Outreach в этом worker не выполнялся."
+      },
+      "evidence_urls": {
+        "official_legal_and_contacts": "https://panelok.ru/contacts",
+        "legal_revenue_owner": "https://companies.rbc.ru/id/1186313090270-obschestvo-s-ogranichennoj-otvetstvennostyu-termologistika/",
+        "current_employee_and_ceo": "https://synapsenet.ru/organizacii/1186313090270-ooo-termologistika",
+        "fresh_job_signal": "https://trust.jobvk.com/go?filters=100%2C330672&id=3695113118",
+        "job_index_signal": "https://samara.jobrun.ru/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D0%BF%D1%82%D0%BE%D0%B2%D1%8B%D1%85-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6319233160",
+        "ogrn": "1186313090270",
+        "legal_name_normalized": "ООО ТЕРМОЛОГИСТИКА",
+        "brand_domain": "PANELOK|panelok.ru"
+      },
+      "prewrite_dedup": {
+        "inn_repo_search_matches": 0,
+        "ogrn_repo_search_matches": 0,
+        "domain_repo_search_matches": 0,
+        "legal_brand_repo_search_matches": 0,
+        "checked_against_head": "2bf4daf37684840bdfdf9d0193379372e0500322"
+      },
+      "qualification": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "final": "QUALIFIED"
+      }
+    }
+  ]
+}
