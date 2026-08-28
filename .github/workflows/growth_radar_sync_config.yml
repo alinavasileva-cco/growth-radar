@@ -1,6 +1,7 @@
 name: Growth Radar sync canonical config header
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'data/runtime/current_run_status.json'
