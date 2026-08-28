@@ -1,0 +1,178 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-28T23:19:49+03:00",
+  "source_head_sha": "1a505041ccdfe6633ad54a85e412b81d7df6b073",
+  "canonical_write": false,
+  "canonical_writer_invoked": false,
+  "outreach_sent": 0,
+  "baseline": {
+    "last_completed_run": "N5K-20260828-483",
+    "canonical_count": 498,
+    "contactable_count": 498,
+    "integrity_status": "PASS"
+  },
+  "worker_funnel": {
+    "raw_distinct_employer_identities": 81,
+    "fast_gate_passed": 1,
+    "deep_check": 1,
+    "size_passed": 1,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "duplicates_before_deep_check": 3,
+    "notes": "81 different employer-level identities were screened across four current broad job-board batches plus one low-overlap targeted business-development signal. Broad batches were stopped after the first 20 source observations once duplicate+early-reject exceeded 70%; candidates without a quick current-size orientation, a resolvable private Russian legal employer, or a probable fresh S1-S3 signal were rejected before deep-check. Archived vacancies were not used as current SIGNAL evidence. Only TANG L / ООО ТАНГЛ passed the complete strict funnel."
+  },
+  "lane_metrics": [
+    {
+      "lane": "HH Moscow / commercial-director broad current results",
+      "source_url": "https://hh.ru/vacancies/kommercheskiy_direktor",
+      "first20_source_observations": 20,
+      "duplicates": 0,
+      "early_rejects": 18,
+      "duplicate_plus_early_rejects": 18,
+      "duplicate_early_reject_rate": 0.90,
+      "action": "STOP_AND_SWITCH",
+      "qualified": 0
+    },
+    {
+      "lane": "Jobrun Saint Petersburg / operational-executive director batch",
+      "source_url": "https://sankt-peterburg.jobrun.ru/",
+      "first20_source_observations": 20,
+      "duplicates": 0,
+      "early_rejects": 16,
+      "duplicate_plus_early_rejects": 16,
+      "duplicate_early_reject_rate": 0.80,
+      "action": "STOP_AND_SWITCH",
+      "qualified": 0
+    },
+    {
+      "lane": "Jobrun Ekaterinburg / commercial-development batch",
+      "source_url": "https://ekaterinburg.jobrun.ru/",
+      "first20_source_observations": 20,
+      "duplicates": 2,
+      "early_rejects": 13,
+      "duplicate_plus_early_rejects": 15,
+      "duplicate_early_reject_rate": 0.75,
+      "action": "STOP_AND_SWITCH",
+      "qualified": 0
+    },
+    {
+      "lane": "HH Moscow / operations-director broad current results",
+      "source_url": "https://hh.ru/vacancies/operations-director",
+      "first20_source_observations": 20,
+      "duplicates": 1,
+      "early_rejects": 15,
+      "duplicate_plus_early_rejects": 16,
+      "duplicate_early_reject_rate": 0.80,
+      "action": "STOP_AND_SWITCH",
+      "qualified": 0
+    },
+    {
+      "lane": "Targeted low-overlap business-development signal / Ekaterinburg",
+      "source_url": "https://ekaterinburg.jobrun.ru/директор-по-развитию-продукта-работа",
+      "raw_distinct_employer_identities": 1,
+      "duplicate_plus_early_rejects": 0,
+      "qualified": 1,
+      "action": "DEEP_CHECK"
+    }
+  ],
+  "discovery_sources": [
+    "https://hh.ru/vacancies/kommercheskiy_direktor",
+    "https://sankt-peterburg.jobrun.ru/",
+    "https://ekaterinburg.jobrun.ru/",
+    "https://hh.ru/vacancies/operations-director",
+    "https://ekaterinburg.jobrun.ru/директор-по-развитию-продукта-работа",
+    "https://ekaterinburg.hh.ru/vacancies/nachalnik-otdela-razvitiya-biznesa/za_poslednie_tri_dnya"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "Тангл / Tangl",
+      "legal_name": "ООО \"ТАНГЛ\"",
+      "inn": "6671130577",
+      "ogrn": "1206600069609",
+      "region": "Свердловская область",
+      "city": "Екатеринбург",
+      "legal_status": "Действующее",
+      "legal_status_as_of": "2026-07-29",
+      "private_russian_company": true,
+      "company_size": {
+        "revenue_2025_rub": 150175000,
+        "profit_2025_rub": 2135000,
+        "current_registry_segment": "малый бизнес",
+        "size_decision": "PASS",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1206600069609-tangl/",
+          "https://www.tbank.ru/business/contractor/legal/1206600069609/",
+          "https://b2b.house/company/OOO-TANGL_ef669432-c3e4-43d9-a45b-fe68bef939ba/financial-statements/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-07-05",
+        "type": "business-development-leadership / multi-product expansion",
+        "summary": "Current job-board signal for Director of Development (CBDO). The vacancy states that Tangl is moving from one flagship product to a multi-product ecosystem and launching new products; the role is responsible for development during that transition.",
+        "active_window_end": "2026-09-03",
+        "evidence_urls": [
+          "https://ekaterinburg.jobrun.ru/директор-по-маркетингу-региональная-fmcg-компания-работа",
+          "https://ekaterinburg.jobrun.ru/директор-по-развитию-продукта-работа",
+          "https://sverdlovskaya-oblast.domesticstaff.ru/companies/tangl/"
+        ]
+      },
+      "lpr": {
+        "name": "Белькевич Андрей Владимирович",
+        "role": "генеральный директор; крупнейший физлицо-учредитель с долей 67% по актуальной карточке контрагента",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1206600069609/",
+          "https://companies.rbc.ru/id/1206600069609-tangl/"
+        ],
+        "freshness_note": "For ownership, the more recent contractor card showing 2026 capital/founder changes was used instead of older ownership snapshots."
+      },
+      "contact": {
+        "primary_route": "office@tangl.cloud",
+        "secondary_email": "info@tangl.cloud",
+        "phones": [
+          "+7 800 300-43-63"
+        ],
+        "official_sites": [
+          "https://tangl.cloud/"
+        ],
+        "contact_form": "https://tangl.cloud/",
+        "contact_type": "official corporate email/phone and official-site form",
+        "evidence_urls": [
+          "https://tangl.cloud/card_Tangl.pdf",
+          "https://tangl.cloud/",
+          "https://companium.ru/id/1206600069609-tangl"
+        ]
+      },
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1206600069609-tangl/",
+        "https://www.tbank.ru/business/contractor/legal/1206600069609/",
+        "https://b2b.house/company/OOO-TANGL_ef669432-c3e4-43d9-a45b-fe68bef939ba/financial-statements/",
+        "https://ekaterinburg.jobrun.ru/директор-по-развитию-продукта-работа",
+        "https://sverdlovskaya-oblast.domesticstaff.ru/companies/tangl/",
+        "https://tangl.cloud/",
+        "https://tangl.cloud/card_Tangl.pdf"
+      ],
+      "dedup_keys": {
+        "inn": "6671130577",
+        "ogrn": "1206600069609",
+        "exact_legal_name": "ООО \"ТАНГЛ\"",
+        "brand_domains": [
+          "tangl.cloud"
+        ]
+      },
+      "dedup_recheck": {
+        "inn_match_in_repo": false,
+        "ogrn_match_in_repo": false,
+        "exact_name_match_in_repo": false,
+        "brand_domain_match_in_repo": false,
+        "checked_against_head": "1a505041ccdfe6633ad54a85e412b81d7df6b073",
+        "method": "GitHub repository search for INN, OGRN, exact legal name and domain before write"
+      },
+      "status": "QUALIFIED",
+      "qualification_note": "PASS only on current 2025 financial scale, active Russian private legal entity, dated active S1 expansion/leadership vacancy, current CEO/owner evidence, and official practical contact routes. Older ownership snapshots were not used where fresher 2026 ownership data was available."
+    }
+  ]
+}
