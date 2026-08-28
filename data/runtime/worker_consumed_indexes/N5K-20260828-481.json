@@ -1,0 +1,43 @@
+{
+  "run_id": "N5K-20260828-481",
+  "campaign_id": "new_5000",
+  "mode": "RECOVERY_RESUME",
+  "recorded_at": "2026-08-28T20:39:02+03:00",
+  "source_head_before_recovery": "43c74df8c95fba7d21b5636f665acbbdd7d56d38",
+  "reason": "Expected hourly canonical cycle after RUN 480 had no confirmed canonical commit by 20:39 MSK; recovery ingested the freshest worker outputs without starting a competing writer.",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260828-201837-jobs.json",
+      "blob_sha": "0d346ce984f8b3b6571e496ac3068ef756985efe",
+      "raw": 80,
+      "worker_qualified": 1,
+      "result": "CONSUMED_DUPLICATE_AT_FINAL_PHYSICAL_DEDUP",
+      "note": "UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП», ИНН 7453330306, ОГРН 1197456034302 is already physically present in canonical master as Lead ID N5K-0351; no canonical write performed."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-202330-industry-metrics.json",
+      "blob_sha": "5c97bc04c3337159139005d740a5ef87c1a01675",
+      "raw": 100,
+      "worker_qualified": 0,
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "Five independent 20-candidate industry lanes; all stopped at the configured >70% duplicate+early-reject threshold; no candidate entered deep qualification."
+    }
+  ],
+  "recovery_funnel": {
+    "raw": 180,
+    "fast_gate": 8,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified_before_final_dedup": 1,
+    "final_physical_duplicates": 1,
+    "qualified_net_new": 0,
+    "physically_integrated": 0,
+    "excluded": 179
+  },
+  "quality_relaxed": false,
+  "history_preserved": true,
+  "outreach_sent": 0
+}
