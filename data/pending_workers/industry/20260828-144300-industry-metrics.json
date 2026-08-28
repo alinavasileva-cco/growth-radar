@@ -1,0 +1,95 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-28T14:43:00+03:00",
+  "baseline_head": "85c21ad4bb2c698fb30ab41b0b2b405f67ae04e9",
+  "config_version": "2026-08-28T14:02:04+03:00",
+  "canonical_contactable_baseline": 492,
+  "integrity": "PASS",
+  "outreach": false,
+  "canonical_writes": false,
+  "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal entity", "confirmed brand+domain"],
+  "notes": [
+    "Exhibition participation was not treated as S1-S3 signal.",
+    "Raw identities are distinct within this worker run at source-name level; early rejects were not promoted to full legal-key resolution.",
+    "Each lane was stopped after its first 20 because duplicate+early-reject exceeded 70%.",
+    "No criteria were weakened and no contacts or legal identities were inferred.",
+    "Stale records were excluded when fresher verified information was available."
+  ],
+  "funnel": {
+    "raw_distinct_source_identities": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "lanes": [
+    {
+      "source": "MashExpo Siberia 2026 participant registry",
+      "url": "https://mashexpo-siberia.ru/uchastniki",
+      "industry": "machine tools / welding / industrial equipment",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["АЦ Сварка", "BERG", "АльфаМаш", "Станком", "НПФ КАВИАНТ", "Техно-Тулз", "Интервесп", "Битван", "СРВ", "Камоцци Пневматика", "Сибинструмент", "Спектральная лаборатория", "Центр Пил НН", "СИБТОРГСЕРВИС", "WINNUM", "Липецктехнолит", "Челленджер", "Белорусские станки", "Промет", "Лаб-Терм"]
+    },
+    {
+      "source": "Baikal Building Week 2026 participant registry",
+      "url": "https://sibexpo.ru/events/baykalskaya-stroitelnaya-nedelya.html?tmpl=participants_list",
+      "industry": "construction materials / engineering systems / building B2B",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["Иркутское РО ОПОРА РОССИИ", "Кластер Дизайн Акселератор", "Идеалист-Маркетинг", "Уралтермосвар", "ТЕОХИМ СИБИРЬ", "Гейзер", "Профхим", "Первая свайная компания / ИП Ткаченко Руслан Артурович", "Турков Иркутск", "Альянс", "ИнПродакшн", "Эксклюзив", "Рувинил", "КРИСВИТ", "Роща", "Строй Арсенал", "Марис", "Ксил", "Деметра", "Центр деревянных конструкций"]
+    },
+    {
+      "source": "Sibprodovolstvie 2026 participant registry",
+      "url": "https://sibexpo.ru/events/sibprodovolstvie.html?tmpl=participants_list",
+      "industry": "food production / regional FMCG",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["ИП Бехтерев Алексей Николаевич", "Сибприбор", "ИП Трофимов Виталий Владимирович", "ДОМИНАНТ ТРЕНД", "ИП Максаров Аюр Цыренович", "Хлебокомбинат Наше дело", "Производственная компания Дали", "Сомов Сергей Александрович", "Лыткина Оксана Васильевна", "Рыбалева К.М.", "ГУФСИН по Иркутской области", "Россельхозбанк", "Проект", "Каравай", "ИП Губенков С.И.", "Птицефабрика Енисейский бройлер", "Матвеев Александр Васильевич", "Карабиевская А.В. Сладости со всего мира", "Комбинат питания г. Иркутск", "Бурятмяспром"]
+    },
+    {
+      "source": "InterFood Krasnodar 2026 exhibitor list",
+      "url": "https://inter-food.su/ru-RU/about/exposition.aspx",
+      "industry": "food / beverage / FMCG manufacturing",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["GEMMA COFFEE&TEA / ПРИМО", "АДЫГЕЙСКАЯ СОЛЬ", "АКВА ВАЙТ ЗАВОД", "АКВА РАЙ", "АСКА ТРЕЙД", "АССА", "БЕЛОРУССКИЕ РЕЦЕПТЫ / СПМК", "БОТАНИКА", "ИП Калугин И.И.", "ИП Кичемасова Г.А.", "КРЫМ БАТАТ", "КРЫМ-ФРОСТ", "МАРС", "МОЙ ЛЮБИМЫЙ ТОРТИК", "НУР", "ПРОЕКТ 3012", "СДЕЛАНО НА КУБАНИ", "ИП Толочко Мария Владимировна", "ТУИЛЬ", "ФЕРМЕРСКИЕ ДЕЛИКАТЕСЫ"]
+    },
+    {
+      "source": "YugBuild 2026 participant roster",
+      "url": "https://mvk.ru/ru-RU/news/28146.aspx",
+      "industry": "building materials / construction equipment / engineering systems",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["500lux", "Bestway", "Bogema Decore", "Corpsun", "Decolife", "Decorator", "Dircode", "Ecodeco", "Ermak", "Fora", "Franmer", "Greatstar", "Heatex", "Krovent", "Mars X2 Group", "Maxpol", "Mylock", "P.I.T.", "Palizh", "Propress Завод Тротуарной Плитки"]
+    }
+  ],
+  "spot_checks": [
+    {
+      "candidate": "BERG",
+      "result": "early reject at fast gate",
+      "reason": "The MashExpo source links the exhibitor to berg-air.ru. A fresh 2026 serial-production announcement was found for the BERG brand on berg.direct, but no verified current legal/domain bridge tying that signal to the exact source identity was established. The signal was therefore not attributed to the exhibitor and the candidate was not promoted.",
+      "evidence": ["https://mashexpo-siberia.ru/uchastniki", "https://berg.direct/"]
+    },
+    {
+      "candidate": "Palizh",
+      "result": "canonical duplicate at fast gate",
+      "reason": "Fresh canonical master already contains Palizh / ООО «НОВЫЙ ДОМ» as N5K-0546; duplicate was not deep-checked again.",
+      "dedup_evidence": ["canonical Lead ID N5K-0546", "INN 1831057110", "brand+domain Palizh + palizh.com"]
+    }
+  ]
+}
