@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260828-464",
+  "updated_at": "2026-08-28T03:12:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260828-0228-jobs.json",
+      "blob_sha": "40813faf3676090f0004cd2fd038341d82a2513d",
+      "result": "CONSUMED",
+      "note": "OVEN / ООО «ОВЕН» passed canonical review and physical dedup and was integrated as N5K-0638; immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-022330-industry-metrics.json",
+      "blob_sha": "7c336a8e3fd7bbf4814bec8276b1c35b2465e069",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 distinct raw identities audited across five 20-company catalog lanes; zero qualified; immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 481,
+  "physical_contactable_after_cycle": 481,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
