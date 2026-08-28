@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T08:18:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-469`  
+**Версия:** 2026-08-28T09:20:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-470`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **484 / 484**  
 **Qualified staged not counted:** **0**  
@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
 - physical canonical/contactable count: **484 / 484**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-469`;
+- последний завершённый RUN: `N5K-20260828-470`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -64,21 +64,19 @@
 - `N5K-20260828-467`: 482/482, +1, PASS, orphan 0/0.
 - `N5K-20260828-468`: 482/482, +0, PASS, orphan 0/0.
 - `N5K-20260828-469`: 484/484, +2, PASS, orphan 0/0.
+- `N5K-20260828-470`: 484/484, +0, PASS, orphan 0/0; physical duplicate `N5K-0593`.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging. Сокращение исторического текста в этом файле не удаляет audit-артефакты.
 
-## RUN 469 — canonical integration
+## RUN 470 — canonical integration
 
-Fresh worker pool: jobs `80 raw / 2 worker-qualified`; industry `100 raw / 1 worker-qualified`. Physical master guard обнаружил **АФ «Перспектива» ОМЗ** как существующий `N5K-0509` по ИНН `6318035951` и ОГРН `1186313049823`, поэтому повторная запись заблокирована. Собственный low-overlap discovery добавил 120 named source identities из официального каталога `МЕТАЛЛООБРАБОТКА-2026`; участие в выставке само по себе SIGNAL не считается.
+Fresh worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Worker-qualified **Адванта-М Ростов** физически оказался уже существующим canonical `N5K-0593`: совпали ИНН `6165219934`, ОГРН `1196196021010`, точное юрлицо и brand+domain, поэтому повторная запись заблокирована. Industry обработал пять 20-кандидатных lanes; все остановлены после >70% duplicate+early reject.
 
-Финальная воронка: **300 source-level raw → 6 fast gate → 3 SIZE → 3 LEGAL → 3 SIGNAL → 3 LPR → 3 CONTACT → 2 net QUALIFIED → 2 physically integrated**. Physical duplicates: **1**; excluded: **297**. 300 не заявляется как 300 глобально legal-key-proven distinct компаний, поскольку worker early rejects не все сохраняют полный набор INN/OGRN/domain keys. Целевые 400–800 глобально доказанных distinct raw не достигнуты; критерии не снижались.
+Собственный low-overlap discovery добавил **125 distinct named source identities внутри проверенного sample** официального интернет-каталога `ПРОДЭКСПО-2026`. Само участие в выставке SIGNAL не считается; без независимого вероятного S1-S3 кандидаты не поднимались в deep-check.
 
-Интегрированы:
-- **Малтат / Руслов**, ООО «МАЛТАТ», ИНН `2403007482`, ОГРН `1072439000149`, Lead ID `N5K-0640`;
-- **НПК АВТОПРИБОР**, ООО «НАУЧНО-ПРОИЗВОДСТВЕННЫЙ КОМПЛЕКС «АВТОПРИБОР»`, ИНН `3329093967`, ОГРН `1183328008820`, Lead ID `N5K-0641`.
+Финальная воронка: **305 source-level raw → 7 fast gate → 5 SIZE → 5 LEGAL → 5 SIGNAL → 4 LPR → 1 CONTACT → 0 net QUALIFIED → 0 physically integrated**. Physical duplicates: **1**; excluded: **304**. 305 не заявляется как 305 глобально legal-key-proven distinct компаний, поскольку worker early rejects не все сохраняют полный набор INN/OGRN/domain keys. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
 
-Canonical/contactable: **484/484**. Integrity PASS. Orphan contacts/evidence: **0/0**. Staged: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
-
+Canonical/contactable: **484/484**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
 
 ## Latest verified run N5K-20260828-470
 Canonical/contactable: 484/484. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
