@@ -1,120 +1,122 @@
 {
-  "run_id": "N5K-20260828-476",
+  "run_id": "N5K-20260828-477",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T15:03:30+03:00",
+  "updated_at": "2026-08-28T16:02:32+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 492,
+    "baseline_count": 493,
     "target_count": 5000,
     "current_canonical_count": 493,
     "current_contactable_count": 493,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4507
   },
   "funnel": {
-    "discovered": 307,
-    "fast_gate_passed": 9,
+    "discovered": 300,
+    "fast_gate_passed": 6,
     "size_check_passed": 2,
-    "legal_match_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
+    "qualified": 0,
     "duplicates": 1,
-    "excluded": 305
+    "excluded": 299
   },
   "lane_metrics": [
     {
       "lane": "jobs",
       "worker": "jobs",
       "raw": 80,
-      "fast_gate": 9,
+      "fast_gate": 6,
       "size": 2,
-      "legal": 2,
+      "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
       "duplicates": 0,
-      "source": "HeadHunter / Работа.ру mirrors"
+      "source": "JobVK / current job-board mirrors",
+      "note": "Four initial regional 20-employer lanes crossed the >70% duplicate+early-reject threshold and were stopped; low-overlap job-board top-up used to reach 80 distinct employer identities."
     },
     {
       "lane": "industry",
       "worker": "industry",
       "raw": 100,
       "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
       "qualified": 0,
-      "duplicates": 1,
-      "note": "Five 20-candidate lanes stopped at >70% duplicate+early reject; Palizh confirmed canonical duplicate."
+      "duplicates": 0,
+      "source": "INLEGMASH / CeMAT / HouseHold Expo / MosBuild / ExpoElectronica 2026",
+      "note": "Five 20-company batches each reached 100% duplicate+early reject and were stopped; exhibition participation was not treated as SIGNAL."
     },
     {
-      "lane": "PCVExpo 2026",
+      "lane": "KHIMIA 2026",
       "worker": "canonical_discovery",
       "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
-      "source": "https://www.pcvexpo.ru/ru-RU/visitors/exhibitor-list.aspx",
-      "note": "First 20 current exhibitor identities reviewed; exhibition participation not treated as SIGNAL."
+      "duplicate_plus_early_reject": 20,
+      "source": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+      "note": "First 20 distinct current 2026 source identities reviewed; stopped at >70% cheap reject. Foreign entities and companies without a separate probable current S1-S3 trigger were rejected; exhibition participation itself was not SIGNAL."
     },
     {
-      "lane": "Cabex 2026",
+      "lane": "Heat&Power 2026",
       "worker": "canonical_discovery",
       "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
-      "source": "https://www.cabex.ru/ru-RU/visitors/exhibitor-list.aspx",
-      "note": "First 20 current exhibitor identities reviewed; stopped at cheap gate; participation not SIGNAL."
-    },
-    {
-      "lane": "ExpoCoating Moscow 2026",
-      "worker": "canonical_discovery",
-      "raw": 20,
-      "fast_gate": 0,
-      "qualified": 0,
-      "source": "https://www.expocoating-moscow.ru/ru-RU/about/exhibitor-list.aspx",
-      "note": "First 20 current exhibitor identities reviewed; stopped at cheap gate; participation not SIGNAL."
-    },
-    {
-      "lane": "Securika Moscow 2026",
-      "worker": "canonical_discovery",
-      "raw": 20,
-      "fast_gate": 0,
-      "qualified": 0,
-      "source": "https://securika-moscow.ru/ru/about/news/2026/april/17/securika-moscow-2026-press-reliz/",
-      "note": "20 named current exhibitors reviewed from 2026 official material; participation not SIGNAL."
-    },
-    {
-      "lane": "Metallurgy/Litmash 2026",
-      "worker": "canonical_discovery",
-      "raw": 20,
-      "fast_gate": 0,
-      "qualified": 0,
-      "source": "https://www.metallurgy-russia.ru/ru/exhibition/3/participants",
-      "note": "First 20 source identities reviewed; stopped at cheap gate; participation not SIGNAL."
+      "duplicate_plus_early_reject": 20,
+      "source": "https://www.heatpower-expo.ru/ru-RU/about/exhibitor-list.aspx",
+      "note": "First 20 distinct current 2026 source identities reviewed; stopped at >70% cheap reject. Participation itself was not SIGNAL."
     },
     {
       "lane": "Testing&Control 2026",
       "worker": "canonical_discovery",
-      "raw": 19,
+      "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
-      "source": "https://www.testing-control.ru/ru-RU/about/exhibitor-list.aspx",
-      "note": "19 identities visible in the current first-page source snapshot reviewed; no reconstructed 20th candidate; participation not SIGNAL."
+      "duplicate_plus_early_reject": 20,
+      "source": "https://www.testing-control.ru/en-GB/press/news/18863.aspx",
+      "note": "First 20 named current 2026 participants reviewed from official material; no separate probable current S1-S3 trigger survived cheap gate. Participation itself was not SIGNAL."
     },
     {
-      "lane": "NDT Russia 2026",
+      "lane": "Hi-Tech Building 2026",
       "worker": "canonical_discovery",
-      "raw": 8,
+      "raw": 20,
       "fast_gate": 0,
       "qualified": 0,
-      "source": "https://www.ndt-russia.ru/ru-RU/visitors/exhibitor-list.aspx",
-      "note": "8 identities visible in the current source snapshot reviewed; participation not SIGNAL."
+      "duplicate_plus_early_reject": 20,
+      "source": "https://en.hitechbuilding.ru/",
+      "note": "First 20 named 2026 participant identities reviewed from official source; stopped at cheap gate. Participation/award activity itself was not SIGNAL."
+    },
+    {
+      "lane": "Interlight 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://online.gefera.ru/eng/info/IL26/catalog/",
+      "note": "First 20 distinct current 2026 catalog identities reviewed; stopped at >70% cheap reject. Exhibition participation and product descriptions were not treated as SIGNAL."
+    },
+    {
+      "lane": "AGROPRODMASH 2026",
+      "worker": "canonical_discovery",
+      "raw": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "source": "https://www.agroprodmash-expo.ru/ru/exhibition/exhibitors/",
+      "note": "First 20 distinct current 2026 exhibitor identities reviewed; stopped at >70% cheap reject. Foreign entities and Russian companies without a separate probable current S1-S3 trigger were rejected; exhibition participation itself was not SIGNAL."
     }
   ],
-  "qualified_companies": [
-    "ЛИГРА"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,

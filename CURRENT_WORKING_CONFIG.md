@@ -116,3 +116,7 @@ Fresh worker pool: jobs `80 raw / 1 qualified`; industry `100 raw / 0 qualified`
 Финальная воронка: **307 source-level raw → 9 fast gate → 2 SIZE → 2 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Known duplicates: **1**; excluded: **305**. 307 не заявляется как 307 globally legal-key-proven distinct компаний: early rejects не все разрешены до INN/OGRN/domain. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
 
 Canonical/contactable: **493/493**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
+
+
+## Latest verified run N5K-20260828-477
+Canonical/contactable: 493/493. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
