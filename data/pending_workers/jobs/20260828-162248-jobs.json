@@ -1,0 +1,184 @@
+{
+  "worker": "jobs",
+  "lane": "jobs",
+  "created_at": "2026-08-28T16:22:48+03:00",
+  "baseline_head": "cf1ef080c8f57c972688aa28bf1e0ba7968f33d6",
+  "baseline_config_version": "2026-08-28T16:02:32+03:00",
+  "baseline_canonical_count": 493,
+  "baseline_contactable_count": 493,
+  "canonical_write": false,
+  "outreach_sent": 0,
+  "raw_source_identities": 80,
+  "raw_identity_note": "80 different displayed employer identities were reviewed across low-overlap regional job-board result lanes; cross-lane repeated displayed employer names were not counted twice. Deep-check was limited to candidates surviving FAST GATE. Legal-key distinctness is asserted only for deep-checked candidates after INN/OGRN checks.",
+  "source_lanes": [
+    {
+      "lane": "jobvk_krasnodar_sales_management",
+      "source_url": "https://www.trust.jobvk.com/krasnodar/direktor-po-prodazham",
+      "raw_distinct_employers": 20,
+      "duplicates_plus_early_rejects_first20": 18,
+      "rate": 0.90,
+      "stopped_after_first20": true
+    },
+    {
+      "lane": "jobvk_cheboksary_directors",
+      "source_url": "https://minojru.jobvk.com/cheboksary/direktora",
+      "raw_distinct_employers": 20,
+      "duplicates_plus_early_rejects_first20": 18,
+      "rate": 0.90,
+      "stopped_after_first20": true
+    },
+    {
+      "lane": "jobvk_nizhny_management",
+      "source_url": "https://www.cncrpru.jobvk.com/nighniy-novgorod/generalyniy-direktor",
+      "raw_distinct_employers": 20,
+      "duplicates_plus_early_rejects_first20": 18,
+      "rate": 0.90,
+      "stopped_after_first20": true
+    },
+    {
+      "lane": "jobvk_samara_management",
+      "source_url": "https://www.notexistswwwkhtjsru.jobvk.com/samara/finansoviy-direktor",
+      "raw_distinct_employers": 20,
+      "duplicates_plus_early_rejects_first20": 18,
+      "rate": 0.90,
+      "stopped_after_first20": true
+    }
+  ],
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_passed": 6,
+    "deep_checked": 6,
+    "size": 2,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2
+  },
+  "qualified": [
+    {
+      "brand": "ТС ГРУПП",
+      "legal_name": "ООО \"ТС ГРУПП\"",
+      "inn": "5407266860",
+      "ogrn": "1045403206200",
+      "region": "Новосибирск",
+      "company_size": {
+        "revenue_2025_rub": 128900000,
+        "employees_current": 61,
+        "evidence_urls": [
+          "https://firmoteka.ru/5407266860",
+          "https://zachestnyibiznes.ru/company/ul/1045403206200_5407266860_OOO-TS-GRUPP"
+        ]
+      },
+      "legal": {
+        "status": "Действующая",
+        "checked_current_through": "2026-08-19",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1045403206200-ooo-ts-grupp/",
+          "https://www.tbank.ru/business/contractor/legal/1045403206200/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-06",
+        "summary": "Холдинг ищет коммерческого директора как архитектора коммерческой стратегии всей группы, с задачей управлять портфелем разнородных бизнесов и превращать рыночные возможности в устойчивую прибыль.",
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/134958597",
+          "https://dreamjob.ru/employers/48779/vakansii/134958597"
+        ]
+      },
+      "owner_lpr": {
+        "owner": "Бойко Марьяна Александровна",
+        "owner_share": "100%",
+        "ceo": "Вершинин Денис Владимирович",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1045403206200/",
+          "https://companies.rbc.ru/id/1045403206200-ooo-ts-grupp/"
+        ]
+      },
+      "contact": {
+        "route_type": "corporate secretary route to owner/CEO/commercial leadership",
+        "phone": "+7 (383) 230-11-30",
+        "email": "secretar@transervis.ru",
+        "form_url": "https://tsgroupnsk.ru/kontakty",
+        "evidence_urls": [
+          "https://tsgroupnsk.ru/kontakty"
+        ]
+      },
+      "dedup_keys": {
+        "inn": "5407266860",
+        "ogrn": "1045403206200",
+        "legal_name": "ООО ТС ГРУПП",
+        "brand_domain": "ТС ГРУПП|tsgroupnsk.ru"
+      },
+      "prewrite_dedup": {
+        "inn_search": "no match in repository code search",
+        "ogrn_search": "no match in repository code search"
+      },
+      "status": "QUALIFIED"
+    },
+    {
+      "brand": "АФ Перспектива ОМЗ",
+      "legal_name": "ООО АФ \"ПЕРСПЕКТИВА\" ОМЗ",
+      "full_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ АКЦИОНЕРНАЯ ФИРМА \"ПЕРСПЕКТИВА\" ОПЫТНО-МЕХАНИЧЕСКИЙ ЗАВОД",
+      "inn": "6318035951",
+      "ogrn": "1186313049823",
+      "region": "Самара",
+      "company_size": {
+        "revenue_2025_rub": 435721000,
+        "employees_current": 72,
+        "evidence_urls": [
+          "https://saby.ru/profile/6318035951-631801001",
+          "https://companies.rbc.ru/id/1186313049823-ooo-aktsionernaya-firma-perspektiva-opyitno-mehanicheskij-zavod/"
+        ]
+      },
+      "legal": {
+        "status": "Действующая",
+        "checked_current_through": "2026-07-16",
+        "evidence_urls": [
+          "https://saby.ru/profile/6318035951-631801001",
+          "https://zachestnyibiznes.ru/company/ul/1186313049823_6318035951_OOO-AF-PERSPEKTIVA-OMZ"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-23",
+        "summary": "В связи с развитием машиностроительный завод ищет коммерческого директора / руководителя проектных продаж; роль прямо связана с развитием коммерческой функции и продаж промышленного оборудования крупным предприятиям и холдингам.",
+        "evidence_urls": [
+          "https://khtjsru.jobvk.com/samara/na-mehanicheskom-zavode",
+          "https://www.notexistswwwkhtjsru.jobvk.com/samara/finansoviy-direktor"
+        ]
+      },
+      "owner_lpr": {
+        "majority_owner": "Литвиненко Леонид Михайлович",
+        "majority_owner_share": "84.6556%",
+        "ceo": "Литвиненко Виталий Леонидович",
+        "ceo_owner_share": "12.1024%",
+        "evidence_urls": [
+          "https://zachestnyibiznes.ru/company/ul/1186313049823_6318035951_OOO-AF-PERSPEKTIVA-OMZ",
+          "https://saby.ru/profile/6318035951-631801001"
+        ]
+      },
+      "contact": {
+        "route_type": "official corporate sales route to CEO/owner/commercial leadership",
+        "phone": "+7 (846) 207-61-11",
+        "email": "info@perspektivaomz.ru",
+        "contact_url": "https://perspektivaomz.ru/contact",
+        "evidence_urls": [
+          "https://perspektivaomz.ru/contact"
+        ]
+      },
+      "dedup_keys": {
+        "inn": "6318035951",
+        "ogrn": "1186313049823",
+        "legal_name": "ООО АФ ПЕРСПЕКТИВА ОМЗ",
+        "brand_domain": "АФ Перспектива ОМЗ|perspektivaomz.ru"
+      },
+      "prewrite_dedup": {
+        "inn_search": "no match in repository code search",
+        "ogrn_search": "no match in repository code search"
+      },
+      "status": "QUALIFIED"
+    }
+  ]
+}
