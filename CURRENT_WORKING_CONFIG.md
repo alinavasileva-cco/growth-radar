@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T01:09:55+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-462`  
+**Версия:** 2026-08-28T03:12:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-464`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **479 / 479**  
+**Физически подтверждённый canonical/contactable:** **481 / 481**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **521**  
-**Осталось до 5000:** **4521**  
+**Осталось до 1000:** **519**  
+**Осталось до 5000:** **4519**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence и pending;
-- physical canonical/contactable count: **479 / 479**;
+- physical canonical/contactable count: **481 / 481**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-462`;
+- последний завершённый RUN: `N5K-20260828-464`;
 - `N5K-20260827-454R1` — repair того же операционного цикла: первоначально canonical writer ошибочно трактовал ИП как запрещённую форму, хотя текущая конфигурация явно допускает `юрлицо/ИП`; S.Lavia была интегрирована без изменения критериев;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
@@ -116,6 +116,8 @@ Integrity: **PASS**. Orphan contacts/evidence: **0 / 0**. Active WIP: **0**. Sta
 - `N5K-20260827-460`: 477/477, +1, PASS, orphan 0/0.
 - `N5K-20260827-461`: 478/478, +1, PASS, orphan 0/0.
 - `N5K-20260828-462`: 479/479, +1, PASS, orphan 0/0.
+- `N5K-20260828-463`: 480/480, +1, PASS, orphan 0/0.
+- `N5K-20260828-464`: 481/481, +1, PASS, orphan 0/0.
 
 ## Latest verified run N5K-20260827-449
 Canonical/contactable: 455/455. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
