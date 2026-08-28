@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T16:02:32+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-477`  
+**Версия:** 2026-08-28T17:01:58+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-478`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **493 / 493**  
+**Физически подтверждённый canonical/contactable:** **494 / 494**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **507**  
-**Осталось до 5000:** **4507**  
+**Осталось до 1000:** **506**  
+**Осталось до 5000:** **4506**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **493 / 493**;
+- physical canonical/contactable count: **494 / 494**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-477`;
+- последний завершённый RUN: `N5K-20260828-478`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -57,77 +57,18 @@
 - `N5K-20260828-475`: 492/492, +4, PASS, orphan 0/0.
 - `N5K-20260828-476`: 493/493, +1, PASS, orphan 0/0.
 - `N5K-20260828-477`: 493/493, +0, PASS, orphan 0/0; physical duplicate `N5K-0473`.
+- `N5K-20260828-478`: 494/494, +1, PASS, orphan 0/0; physical duplicate `N5K-0509`.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging.
 
-## RUN 471 — canonical integration
+## RUN 478 — canonical integration
 
-Fresh worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Jobs-кандидат **Аргус-ЛКМ / ООО «АРГУС ЛКМ»** прошёл повторный canonical deep-check и physical pre-write dedup по Lead ID, ИНН `6164306239`, ОГРН `1126164000115`, точному юрлицу и brand+domain. Worker-provided показатель выручки за 2025 год не использован, поскольку указанный worker URL относился к другому ИНН; canonical qualification опирается на независимо подтверждённую выручку 250,185 млн ₽ за 2024 год, действующий статус в 2026 году и свежий S1 job-сигнал 06.07.2026.
+Fresh immutable worker pool: jobs `80 raw / 2 worker-qualified`; industry `100 raw / 0 qualified`. Jobs-worker передал **ТС ГРУПП / ООО «ТС ГРУПП»** и **АФ «Перспектива» ОМЗ**. Финальный physical dedup подтвердил, что **АФ «Перспектива» ОМЗ** уже существует как `N5K-0509` по ИНН `6318035951` и ОГРН `1186313049823`; повторная запись заблокирована. **ТС ГРУПП** прошла canonical recheck и интегрирована как `N5K-0651`, ИНН `5407266860`, ОГРН `1045403206200`.
 
-Собственный low-overlap discovery добавил **120 named source identities** из нескольких независимых реестров участников 2026 года: CTT Expo, CTO Expo, Logistika Expo, MINING CTT, COMvex, SobMaExpo, NAIS, Wire Russia и AGRAVIA. Иностранные компании, федеральные/слишком крупные группы, нерелевантные сущности и компании без независимого вероятного S1–S3 сигнала отсекались на FAST GATE; участие в выставке само по себе SIGNAL не считалось.
+Для ТС ГРУПП использованы свежие подтверждённые сведения: актуальные данные ФНС/Фирмотеки по состоянию на 27.08.2026, выручка 2025 года 128,8 млн ₽, 61 сотрудник, действующее юрлицо, свежий S1-сигнал 06.08.2026 — вакансия коммерческого директора как архитектора коммерческой стратегии всей группы, текущий собственник/руководство и официальный корпоративный маршрут связи. Более старые финансовые сведения не использовались в решении при наличии свежих данных 2025/2026.
 
-Финальная воронка: **300 source-level raw → 7 fast gate → 1 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Duplicates: **0**; excluded: **299**. 300 не заявляется как 300 глобально legal-key-proven distinct компаний, поскольку worker early rejects не все сохраняют полный набор INN/OGRN/domain keys. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
+Собственный low-overlap discovery добавил **120 source-level observations**: первые 20 из шести текущих каталогов/материалов 2026 года — MIMS Automobility Saint Petersburg, InterFood Krasnodar, WorldFood Moscow, Textile Collection Moscow, APTEKA и Woodex. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; участие в выставке/каталоге само по себе SIGNAL не считалось. Эти observations не заявляются как globally legal-key-proven distinct компании, поскольку cheap rejects не все разрешались до INN/OGRN/domain.
 
-Canonical/contactable: **485/485**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
+Финальная воронка: **300 source-level raw → 6 fast gate → 2 SIZE → 2 LEGAL → 2 SIGNAL → 2 LPR → 2 CONTACT → 1 net QUALIFIED → 1 physically integrated**. Physical duplicates: **1**; excluded: **298**. Целевые 400–800 globally legal-key-proven distinct raw не достигнуты; критерии не снижались.
 
-## RUN 472 — canonical integration
-
-Fresh worker pool: jobs `80 raw / 2 worker-qualified`; industry `100 raw / 0 qualified`. Оба jobs-кандидата — **БИЗОРЮК / ООО «СОЛНЦЕ»** и **НЗЭТК / ООО «НИЖЕГОРОДСКИЙ ЗАВОД ЭЛЕКТРОТЕХНИЧЕСКОГО КРЕПЕЖА»** — прошли свежий canonical recheck и финальный physical dedup guard. Для БИЗОРЮК worker-email `d.efimenko@ooo-sun.ru` не использован: свежий официальный сайт подтверждает `a.gorchakov@ooo-sun.ru` и `manager-14@ooo-sun.ru`. Выручка ООО «СОЛНЦЕ» за 2025 год независимо подтверждена на уровне 226,981 млн ₽; актуальный S2 job-сигнал датирован 07.08.2026. Для НЗЭТК подтверждены выручка 245,45 млн ₽ за 2025 год, директор/учредитель Давыдов Денис Александрович, официальные контакты и свежий S2 job-сигнал 25.08.2026.
-
-Собственный low-overlap discovery добавил **120 source-level identities**: по 20 из TransRussia/SkladTech, Aquaflame, RosUpack, AIRVent, WorldFood Moscow и MiningWorld Russia 2026. Каждый lane был остановлен после первых 20 на cheap gate при duplicate+early reject >70%; участие в выставке само по себе SIGNAL не считалось. Эти source-level identities не заявляются как globally legal-key-proven distinct.
-
-Финальная воронка: **300 source-level raw → 6 fast gate → 3 SIZE → 3 LEGAL → 2 SIGNAL → 2 LPR → 2 CONTACT → 2 QUALIFIED → 2 physically integrated**. Duplicates: **0**; excluded: **298**. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
-
-Canonical/contactable: **487/487**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
-
-## Latest verified run N5K-20260828-472
-Canonical/contactable: 487/487. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260828-473
-Canonical/contactable: 487/487. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260828-474
-Canonical/contactable: 488/488. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## Latest verified run N5K-20260828-475
-Canonical/contactable: 492/492. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## RUN 475 — canonical integration
-
-Fresh worker pool: jobs `80 raw / 2 qualified`; industry `100 raw / 0 qualified`; growth_news `104 search-result records reviewed / 5 instrumented company identities deep-checked / 2 qualified`. Search-result records growth_news не засчитывались как raw-компании без exact distinct instrumentation. Собственный low-overlap discovery дал 140 source-level observations: первые 20 из семи официальных каталогов 2026 года — DairyTech, YugAgro, Analitika Expo, Pharmtech, RosUpack, Printech и AIRVent. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; участие в выставке само по себе SIGNAL не считалось. Cheap source-name dedup выявил 5 повторов между lanes.
-
-Четыре кандидата — **Тест**, **Лайфтранс**, **Борус / BORUS**, **Горный инструмент** — прошли независимый canonical recheck и финальный physical dedup. Для решений использованы свежие подтверждённые сведения; устаревшие/conflicting worker-поля исключены. В частности, по ООО «ТЕСТ» использована актуальная доля Исакова Михаила Сергеевича 90%, а по ООО «ГОРНЫЙ ИНСТРУМЕНТ» — финансы 2025 года и свежий контактный маршрут из вакансии, обновлённой 12.08.2026.
-
-Финальная воронка: **325 source-level observations → 12 fast gate → 6 SIZE → 6 LEGAL → 5 SIGNAL → 4 LPR → 4 CONTACT → 4 QUALIFIED → 4 physically integrated**. Known cheap duplicates: **5**; excluded: **316**. После известных source-name дублей остаётся 320 source-level identities, но это не заявляется как 320 globally legal-key-proven distinct компаний, поскольку early rejects не все разрешены до INN/OGRN/domain. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
-
-Canonical/contactable: **492/492**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
-
-## Latest verified run N5K-20260828-476
-Canonical/contactable: 493/493. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## RUN 476 — canonical integration
-
-Fresh worker pool: jobs `80 raw / 1 qualified`; industry `100 raw / 0 qualified`. Собственный low-overlap discovery добавил **127 source-level identities** из семи актуальных каталогов/материалов 2026 года: PCVExpo, Cabex, ExpoCoating Moscow, Securika Moscow, Metallurgy/Litmash, Testing&Control и NDT Russia. Там, где snapshot показывал меньше 20 имен, отсутствующие записи не восстанавливались и не придумывались. Участие в выставке само по себе SIGNAL не считалось.
-
-**ЛИГРА / ООО «ЛИГРА»** прошла canonical recheck и финальный physical dedup по Lead ID, ИНН `7826159936`, ОГРН `1037851007523`, точному юрлицу и brand+domain. Использованы свежие сведения: действующий статус и численность 18 сотрудников подтверждены актуальным профилем РБК; официальный сайт содержит новости 2026 года об освоении нового продуктового направления и расширении линейки, а также подтверждает официальный телефон и email. Устаревшая финансовая отчётность 2021 года не использовалась как актуальный size-факт.
-
-Финальная воронка: **307 source-level raw → 9 fast gate → 2 SIZE → 2 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Known duplicates: **1**; excluded: **305**. 307 не заявляется как 307 globally legal-key-proven distinct компаний: early rejects не все разрешены до INN/OGRN/domain. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
-
-Canonical/contactable: **493/493**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
-
-## Latest verified run N5K-20260828-477
-Canonical/contactable: 493/493. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-## RUN 477 — canonical integration
-
-Fresh immutable worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Worker-qualified **PANELOK / ООО «ТЕРМОЛОГИСТИКА»** был заново проверен по свежим legal/financial данным, официальному сайту и актуальному expansion/job signal. Однако финальный physical integration guard обнаружил уже существующий canonical **`N5K-0473`** по ИНН `6319233160` и ОГРН `1186313090270`; повторная запись заблокирована. Worker-staging зафиксирован consumed только после этой проверки.
-
-Собственный low-overlap discovery добавил **120 source-level company identities**: первые 20 из актуальных материалов/каталогов 2026 года KHIMIA, Heat&Power, Testing&Control, Hi-Tech Building, Interlight и AGROPRODMASH. Каждый lane был остановлен после первых 20 на cheap gate при duplicate+early reject >70%. Участие в выставке, товарное описание, премия или сам факт экспонирования SIGNAL не считались.
-
-Финальная воронка: **300 source-level raw → 6 fast gate → 2 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 0 net QUALIFIED → 0 physically integrated**. Physical duplicates: **1**; excluded: **299**. 300 не заявляется как 300 globally legal-key-proven distinct компаний: early rejects не все разрешались до INN/OGRN/domain. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
-
-Canonical/contactable: **493/493**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
-
-
-## Latest verified run N5K-20260828-478
-Canonical/contactable: 494/494. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: **494/494**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
