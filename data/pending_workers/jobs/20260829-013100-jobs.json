@@ -1,0 +1,160 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "canonical_write": false,
+    "canonical_writer_started": false,
+    "outreach": false,
+    "source_head_sha": "062ab5d1aee06172310a1bd7b56f6fb364fd2e95",
+    "config_version": "2026-08-29T00:59:37+03:00",
+    "canonical_baseline": {
+      "contactable": 499,
+      "master": 499,
+      "integrity": "PASS",
+      "last_completed_run": "N5K-20260829-485"
+    }
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 84,
+    "fast_gate_pass": 9,
+    "deep_check": 5,
+    "size": 2,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 1,
+    "qualified": 1
+  },
+  "discovery_lanes": [
+    {
+      "lane": "hh_perm_commercial_management",
+      "raw_first_batch": 20,
+      "duplicates_plus_early_rejects_first_20": 15,
+      "rate": 0.75,
+      "stopped_after_first_20": true,
+      "source_url": "https://perm.hh.ru/vacancies/kommercheskiy_direktor"
+    },
+    {
+      "lane": "hh_ekaterinburg_commercial_management",
+      "raw_first_batch": 20,
+      "duplicates_plus_early_rejects_first_20": 16,
+      "rate": 0.80,
+      "stopped_after_first_20": true,
+      "source_url": "https://ekaterinburg.hh.ru/vacancies/kommercheskiy_direktor"
+    },
+    {
+      "lane": "hh_rostov_operations_management",
+      "raw_first_batch": 20,
+      "duplicates_plus_early_rejects_first_20": 17,
+      "rate": 0.85,
+      "stopped_after_first_20": true,
+      "source_url": "https://rostov.hh.ru/vacancies/operacionnyy_direktor"
+    },
+    {
+      "lane": "hh_novosibirsk_executive_management",
+      "raw_first_batch": 20,
+      "duplicates_plus_early_rejects_first_20": 15,
+      "rate": 0.75,
+      "stopped_after_first_20": true,
+      "source_url": "https://novosibirsk.hh.ru/vacancies/finansovyy_direktor"
+    },
+    {
+      "lane": "low_overlap_targeted_job_signals",
+      "raw": 4,
+      "sources": [
+        "https://h.careers/",
+        "https://nesiditsa.ru/",
+        "https://cityterms.ru/"
+      ],
+      "qualified": 1
+    }
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "Городские термы / УК Термы",
+      "legal_name": "ООО Управляющая Компания «Термы»",
+      "inn": "1828024877",
+      "ogrn": "1131828001634",
+      "region": "Удмуртская Республика",
+      "legal_status": "ACTIVE",
+      "size": {
+        "revenue_rub": 197922000,
+        "revenue_year": 2025,
+        "average_headcount": 17,
+        "evidence_urls": [
+          "https://saby.ru/profile/1828024877-182801001",
+          "https://companies.rbc.ru/news/rbmu2C3epz/itogi-rabotyi-uk-termyi-za-2025-god/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "primary": "Вакансия коммерческого директора; роль открыта для управления коммерческой функцией растущей сети термальных комплексов.",
+        "primary_date": "2026-07-11",
+        "primary_url": "https://nesiditsa.ru/vacancy/135098606",
+        "supporting": [
+          {
+            "date": "2025-12-30",
+            "fact": "Компания заявила цель на 2026 год — рост продаж не менее 30%.",
+            "url": "https://companies.rbc.ru/news/rbmu2C3epz/itogi-rabotyi-uk-termyi-za-2025-god/"
+          },
+          {
+            "date": "2026-06-09",
+            "fact": "Подписан договор на новый термальный комплекс в Крыму площадью 6 тыс. кв. м.",
+            "url": "https://companies.rbc.ru/news/lGiMb6K44s/gk-kvartal-i-uk-termyi-sozdadut-novyij-termalnyij-kompleks-v-kryimu/"
+          }
+        ]
+      },
+      "lpr": {
+        "owner": {
+          "name": "Бычкова Елена Васильевна",
+          "share": "100%",
+          "evidence_url": "https://saby.ru/profile/1828024877-182801001"
+        },
+        "legal_director": {
+          "name": "Андреева Нина Владимировна",
+          "evidence_url": "https://saby.ru/profile/1828024877-182801001"
+        },
+        "business_leader": {
+          "name": "Бычков Юрий Федорович",
+          "role": "создатель франшизы «Городские Термы»; публичный руководитель/лицо развития бренда",
+          "evidence_urls": [
+            "https://cityterms.ru/",
+            "https://companies.rbc.ru/news/rbmu2C3epz/itogi-rabotyi-uk-termyi-za-2025-god/"
+          ]
+        }
+      },
+      "contact": {
+        "type": "official_company_route",
+        "phone": "8 (800) 250-63-55",
+        "website_form": "https://cityterms.ru/",
+        "email": "Termaliki@ya.ru",
+        "evidence_urls": [
+          "https://cityterms.ru/",
+          "https://companies.rbc.ru/news/rbmu2C3epz/itogi-rabotyi-uk-termyi-za-2025-god/"
+        ]
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "1828024877",
+        "ogrn": "1131828001634",
+        "legal_name_normalized": "ооо управляющая компания термы",
+        "brand_domain": "городские термы|cityterms.ru"
+      },
+      "dedup_recheck": {
+        "checked_against_source_head": "062ab5d1aee06172310a1bd7b56f6fb364fd2e95",
+        "inn_match": false,
+        "ogrn_match": false,
+        "brand_domain_match": false,
+        "result": "NO_CANONICAL_MATCH_FOUND"
+      },
+      "evidence_urls": [
+        "https://saby.ru/profile/1828024877-182801001",
+        "https://companies.rbc.ru/news/rbmu2C3epz/itogi-rabotyi-uk-termyi-za-2025-god/",
+        "https://nesiditsa.ru/vacancy/135098606",
+        "https://companies.rbc.ru/news/lGiMb6K44s/gk-kvartal-i-uk-termyi-sozdadut-novyij-termalnyij-kompleks-v-kryimu/",
+        "https://cityterms.ru/"
+      ],
+      "qualification": "QUALIFIED"
+    }
+  ]
+}
