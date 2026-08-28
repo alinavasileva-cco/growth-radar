@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-08-28T01:58:52+03:00",
+  "generated_at": "2026-08-28T03:08:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260828-463",
-  "current_run_id": "N5K-20260828-463",
+  "latest_completed_run_id": "N5K-20260828-464",
+  "current_run_id": "N5K-20260828-464",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 480,
-  "contactable_verified": 480,
+  "canonical_pool_verified": 481,
+  "contactable_verified": 481,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4520,
+  "remaining_to_target": 4519,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_463": {
+  "run_464": {
     "raw_discovered": 180,
-    "fast_gate_passed": 5,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
@@ -28,21 +28,21 @@
     "excluded": 179,
     "lane_metrics": [
       {
-        "lane": "jobs/20260828-0121",
+        "lane": "jobs/20260828-0228",
         "raw": 80,
-        "fast_gate": 5,
-        "size": 1,
-        "legal": 1,
+        "fast_gate": 6,
+        "size": 2,
+        "legal": 2,
         "signal": 1,
         "lpr": 1,
         "contact": 1,
         "worker_qualified": 1,
         "canonical_prewrite_qualified": 1,
-        "duplicates_plus_early_rejects": 75,
-        "result": "PROMIZOLYATSIYA_QUALIFIED"
+        "duplicates_plus_early_rejects": 74,
+        "result": "OVEN_QUALIFIED"
       },
       {
-        "lane": "industry/20260828-012627",
+        "lane": "industry/20260828-022330",
         "raw_distinct": 100,
         "fast_gate": 0,
         "size": 0,
@@ -51,7 +51,7 @@
         "lpr": 0,
         "contact": 0,
         "qualified": 0,
-        "duplicates_plus_early_rejects": 100,
+        "duplicates_plus_early_rejects": null,
         "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
       }
     ]

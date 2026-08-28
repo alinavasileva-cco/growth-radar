@@ -1,22 +1,22 @@
 {
-  "run_id": "N5K-20260828-463",
+  "run_id": "N5K-20260828-464",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T01:58:52+03:00",
+  "updated_at": "2026-08-28T03:08:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 479,
+    "baseline_count": 480,
     "target_count": 5000,
-    "current_canonical_count": 480,
-    "current_contactable_count": 480,
+    "current_canonical_count": 481,
+    "current_contactable_count": 481,
     "progress_added": 1,
-    "remaining": 4520
+    "remaining": 4519
   },
   "funnel": {
     "discovered": 180,
-    "fast_gate_passed": 5,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
@@ -26,21 +26,21 @@
   },
   "lane_metrics": [
     {
-      "lane": "jobs/20260828-0121",
+      "lane": "jobs/20260828-0228",
       "raw": 80,
-      "fast_gate": 5,
-      "size": 1,
-      "legal": 1,
+      "fast_gate": 6,
+      "size": 2,
+      "legal": 2,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
       "worker_qualified": 1,
       "canonical_prewrite_qualified": 1,
-      "duplicates_plus_early_rejects": 75,
-      "result": "PROMIZOLYATSIYA_QUALIFIED"
+      "duplicates_plus_early_rejects": 74,
+      "result": "OVEN_QUALIFIED"
     },
     {
-      "lane": "industry/20260828-012627",
+      "lane": "industry/20260828-022330",
       "raw_distinct": 100,
       "fast_gate": 0,
       "size": 0,
@@ -49,19 +49,19 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "duplicates_plus_early_rejects": 100,
+      "duplicates_plus_early_rejects": null,
       "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
     }
   ],
   "qualified_companies": [
-    "Промизоляция"
+    "OVEN / Oven"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "480_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "480_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "481_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "481_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
