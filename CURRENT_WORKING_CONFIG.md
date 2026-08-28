@@ -193,3 +193,7 @@ Canonical/contactable: 481/481. Integrity PASS. Orphan contacts/evidence: 0/0. O
 ## RUN 466 — physical dedup repair
 
 Source-level funnel after worker ingestion and low-overlap source rotation: **323 raw → 8 fast gate → 2 SIZE → 2 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 0 net QUALIFIED**. Final physical duplicates: **2**; excluded non-duplicates: **321**; physically integrated: **0**. Worker-qualified **Татпромстан / ООО «ТАТПРОМСТАН»** was not written because the physical guard matched the existing canonical record `N5K-0494` by INN `1655216482` and OGRN `1111690040615`. The low-overlap catalog pool contained one additional canonical duplicate. The 323 figure is source-level audited raw and is not claimed as 323 globally legal-key-proven distinct companies because complete INN/OGRN/domain keys are unavailable for jobs early rejects. Criteria were not weakened. Canonical/contactable: **481/481**. Integrity PASS. Orphan contacts/evidence: 0/0. Staged: 0. Outreach: 0.
+
+
+## Latest verified run N5K-20260828-467
+Canonical/contactable: 482/482. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

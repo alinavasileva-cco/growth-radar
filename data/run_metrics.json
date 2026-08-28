@@ -1,36 +1,84 @@
 {
-  "generated_at": "2026-08-28T05:12:00+03:00",
+  "generated_at": "2026-08-28T06:06:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260828-466",
-  "current_run_id": "N5K-20260828-466",
+  "latest_completed_run_id": "N5K-20260828-467",
+  "current_run_id": "N5K-20260828-467",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 481,
-  "contactable_verified": 481,
+  "canonical_pool_verified": 482,
+  "contactable_verified": 482,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4519,
+  "remaining_to_target": 4518,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_466": {
-    "raw_discovered": 323,
-    "fast_gate_passed": 8,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
-    "physically_integrated": 0,
-    "duplicates": 2,
-    "excluded": 321,
+  "run_467": {
+    "raw_discovered": 312,
+    "fast_gate_passed": 9,
+    "size_check_passed": 4,
+    "legal_match_passed": 4,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "physically_integrated": 1,
+    "duplicates": 1,
+    "excluded": 310,
     "lane_metrics": [
-      {"lane":"jobs/20260828-042149","raw":80,"fast_gate":7,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"worker_qualified":1,"canonical_prewrite_qualified":1,"physical_dedup_duplicate":1,"existing_lead_id":"N5K-0494","result":"TATPROMSTAN_CANONICAL_DUPLICATE_INN_OGRN"},
-      {"lane":"industry/20260828-042605","raw":100,"fast_gate":1,"size":1,"legal":1,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicates_plus_early_rejects":99,"result":"ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"},
-      {"lane":"canonical-low-overlap-official-exhibitor-catalogs","raw":143,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicates":1,"duplicates_plus_early_rejects":143,"result":"ROTATED_AFTER_FAST_GATE_SATURATION","sources":["ExpoElectronica 2026 official exhibitor list","AIRVent 2026 official exhibitor list","Weldex exhibitor list used only for raw discovery; no stale evidence promoted","MosHome 2026 official exhibitor list","Analitika Expo 2026 official exhibitor list","Securika Moscow 2026 official participant publication"]}
-    ],
-    "repair_note":"Tatpromstan matched existing N5K-0494 at physical guard; excluded corrected from 322 to 321."
+      {
+        "lane": "jobs/20260828-052104",
+        "raw": 80,
+        "fast_gate": 7,
+        "size": 2,
+        "legal": 2,
+        "signal": 1,
+        "lpr": 1,
+        "contact": 1,
+        "worker_qualified": 1,
+        "canonical_prewrite_qualified": 1,
+        "duplicates_plus_early_rejects": 73,
+        "result": "FIRST_TEA_GROUP_QUALIFIED"
+      },
+      {
+        "lane": "industry/20260828-052359",
+        "raw": 118,
+        "fast_gate": 2,
+        "size": 2,
+        "legal": 2,
+        "signal": 1,
+        "lpr": 1,
+        "contact": 1,
+        "worker_qualified": 1,
+        "canonical_prewrite_qualified": 0,
+        "physical_dedup_duplicate": 1,
+        "existing_lead_id": "N5K-0591",
+        "duplicates_plus_early_rejects": 117,
+        "result": "PPGK_CANONICAL_DUPLICATE_INN_OGRN_LEGAL_BRAND_DOMAIN"
+      },
+      {
+        "lane": "canonical-low-overlap-official-2026-participant-publications",
+        "raw": 114,
+        "fast_gate": 0,
+        "size": 0,
+        "legal": 0,
+        "signal": 0,
+        "lpr": 0,
+        "contact": 0,
+        "qualified": 0,
+        "duplicates_plus_early_rejects": 114,
+        "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
+        "sources": [
+          "TransRussia | SkladTech 2026 official press release / participant publication",
+          "MiningWorld Russia 2026 official participant publications"
+        ],
+        "raw_source_counts": {
+          "transrussia_skladtech_named_identities": 55,
+          "miningworld_named_identities": 59
+        },
+        "note": "114 distinct named source identities after within-lane name dedup. Participation itself was never treated as SIGNAL. These publications were used only for cheap raw discovery; without an independent probable S1-S3 trigger at FAST GATE the candidates were not promoted to deep check. Source-level identities are auditable, but are not claimed globally legal-key-proven distinct against all worker early rejects."
+      }
+    ]
   }
 }
