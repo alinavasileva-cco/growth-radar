@@ -1,0 +1,38 @@
+{
+  "run_id": "N5K-20260828-473",
+  "recorded_at": "2026-08-28T12:00:24+03:00",
+  "status": "CONSUMED",
+  "canonical_result": {
+    "integrated": 0,
+    "canonical_count": 487,
+    "contactable_count": 487,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260828-111930-jobs.json",
+      "blob_sha": "11fb6dc53819f6747f81cd1f219a5d5134829293",
+      "status": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "raw": 80,
+      "worker_qualified": 1,
+      "net_integrated": 0,
+      "note": "Дымов Керамика already exists physically in canonical as N5K-0353; INN 7731377855 and OGRN 1177746793432 match."
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260828-112645-industry-metrics.json",
+      "blob_sha": "8cdeb4cbc8617151fcd5e87530095e8e75051292",
+      "status": "CONSUMED_ZERO_QUALIFIED",
+      "raw_source_observations": 120,
+      "raw_distinct_source_identities": 119,
+      "worker_qualified": 0,
+      "net_integrated": 0,
+      "note": "Six first-20 lanes hit 100% duplicate+early-reject and were stopped; one cross-lane source duplicate reduced 120 observations to 119 identities."
+    }
+  ],
+  "history_preserved": true,
+  "outreach": false
+}
