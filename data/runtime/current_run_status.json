@@ -1,60 +1,62 @@
 {
-  "run_id": "N5K-20260828-468",
+  "run_id": "N5K-20260828-469",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T07:18:00+03:00",
+  "updated_at": "2026-08-28T08:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 482,
     "target_count": 5000,
-    "current_canonical_count": 482,
-    "current_contactable_count": 482,
-    "progress_added": 0,
-    "remaining": 4518
+    "current_canonical_count": 484,
+    "current_contactable_count": 484,
+    "progress_added": 2,
+    "remaining": 4516
   },
   "funnel": {
     "discovered": 300,
-    "fast_gate_passed": 8,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 2,
     "duplicates": 1,
-    "excluded": 299
+    "excluded": 297
   },
   "lane_metrics": [
     {
-      "lane": "jobs/20260828-063300",
+      "lane": "jobs/20260828-073200",
       "raw": 80,
-      "fast_gate": 8,
+      "fast_gate": 5,
       "size": 2,
       "legal": 2,
       "signal": 2,
+      "lpr": 2,
+      "contact": 2,
+      "worker_qualified": 2,
+      "canonical_prewrite_qualified": 1,
+      "physical_dedup_duplicate": 1,
+      "existing_lead_id": "N5K-0509",
+      "duplicates_plus_early_rejects": 75,
+      "result": "MALTAT_QUALIFIED; PERSPEKTIVA_OMZ_CANONICAL_DUPLICATE_INN_OGRN"
+    },
+    {
+      "lane": "industry/20260828-072257",
+      "raw": 100,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
       "lpr": 1,
       "contact": 1,
       "worker_qualified": 1,
       "canonical_prewrite_qualified": 1,
-      "duplicates_plus_early_rejects": 72,
-      "result": "SPEKTR_PAK_YUG_QUALIFIED"
+      "duplicates_plus_early_rejects": 99,
+      "result": "NPK_AVTOPRIBOR_QUALIFIED"
     },
     {
-      "lane": "industry/20260828-063000",
-      "raw": 100,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "worker_qualified": 0,
-      "canonical_prewrite_qualified": 0,
-      "duplicates_plus_early_rejects": 100,
-      "result": "ZERO_QUALIFIED_SATURATED_LANES_STOPPED"
-    },
-    {
-      "lane": "canonical-low-overlap-official-2026-rotated-publications",
+      "lane": "canonical-low-overlap-metalloobrabotka-2026-official-catalog",
       "raw": 120,
       "fast_gate": 0,
       "size": 0,
@@ -66,35 +68,21 @@
       "duplicates_plus_early_rejects": 120,
       "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
       "sources": [
-        "PRODEXPO-2026 official catalogue: 20 named Russian identities, fresh pages not used by current industry worker",
-        "TransRussia | SkladTech 2026 official participant publication: 20 named identities",
-        "MiningWorld Russia 2026 official participant publication: 20 named identities",
-        "Aquaflame 2026 official participant publication: 20 named identities",
-        "Woodex 2026 official participant publication: 18 named identities",
-        "MosBuild 2026 official participant publication: 11 named identities",
-        "DairyTech 2026 official participant publication: 5 named identities",
-        "MITT 2026 official partner/participant publication: 6 named business identities"
+        "МЕТАЛЛООБРАБОТКА-2026 official internet catalogue, Russian participants, pages 7, 9, 11, 24, 26, 33, 46, 47, 50, 51, 68 plus list page"
       ],
-      "raw_source_counts": {
-        "prodexpo": 20,
-        "transrussia_skladtech": 20,
-        "miningworld": 20,
-        "aquaflame": 20,
-        "woodex": 18,
-        "mosbuild": 11,
-        "dairytech": 5,
-        "mitt": 6
-      },
-      "note": "120 named source identities were screened at cheap FAST GATE across eight rotated official 2026 source pools. No source was allowed to continue beyond 20 identities after >70% early-reject saturation. Exhibition/partner participation itself was never treated as SIGNAL; without an independent probable S1-S3 trigger candidates were not promoted to deep-check. Counts are source-level identities and are not claimed globally legal-key-proven distinct against worker early rejects."
+      "note": "120 named source identities were screened at cheap FAST GATE from official 2026 exhibitor catalogue pages. Exhibition participation itself was not treated as SIGNAL; without an independent probable S1-S3 trigger candidates were not promoted to deep-check. Counts are source-level identities and are not claimed globally legal-key-proven distinct against worker early rejects."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Малтат / Руслов",
+    "НПК АВТОПРИБОР"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "482_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "482_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "484_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "484_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
