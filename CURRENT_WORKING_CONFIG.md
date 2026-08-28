@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T17:01:58+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-478`  
+**Версия:** 2026-08-28T17:58:48+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-479`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **494 / 494**  
+**Физически подтверждённый canonical/contactable:** **495 / 495**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **506**  
-**Осталось до 5000:** **4506**  
+**Осталось до 1000:** **505**  
+**Осталось до 5000:** **4505**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **494 / 494**;
+- physical canonical/contactable count: **495 / 495**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-478`;
+- последний завершённый RUN: `N5K-20260828-479`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -58,6 +58,7 @@
 - `N5K-20260828-476`: 493/493, +1, PASS, orphan 0/0.
 - `N5K-20260828-477`: 493/493, +0, PASS, orphan 0/0; physical duplicate `N5K-0473`.
 - `N5K-20260828-478`: 494/494, +1, PASS, orphan 0/0; physical duplicate `N5K-0509`.
+- `N5K-20260828-479`: 495/495, +1, PASS, orphan 0/0.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging.
 
@@ -73,6 +74,12 @@ Fresh immutable worker pool: jobs `80 raw / 2 worker-qualified`; industry `100 r
 
 Canonical/contactable: **494/494**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
 
+## RUN 479 — canonical integration
 
-## Latest verified run N5K-20260828-479
-Canonical/contactable: 495/495. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Fresh immutable worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Jobs-worker передал **ЮгСпецМебель / ООО «ЮГСПЕЦМЕБЕЛЬ»**. Canonical recheck подтвердил действующее юрлицо, ИНН `2312199280`, ОГРН `1132312000622`, актуальный масштаб по выручке 2025 года, свежий S2-сигнал от 10.08.2026, собственника/ЛПР Харина Георгия Олеговича и официальный практический маршрут связи. Финальный physical integration guard не обнаружил совпадений по Lead ID, ИНН, ОГРН, точному юрлицу или brand+domain; компания интегрирована как `N5K-0652`.
+
+Собственный low-overlap discovery добавил **120 source-level observations**: по 20 из Testing&Control, MiningWorld Russia, Heat&Power, NDT Russia, KHIMIA и CeMAT RUSSIA 2026. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; участие в выставке/каталоге само по себе SIGNAL не считалось. Эти observations не заявляются как globally legal-key-proven distinct компании, поскольку cheap rejects не все разрешялись до полного набора ИНН/ОГРН/domain.
+
+Финальная воронка: **300 source-level raw → 6 fast gate → 2 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Physical duplicates: **0**; excluded: **299**. Целевые 400–800 globally legal-key-proven distinct raw не достигнуты; критерии не снижались.
+
+Canonical/contactable: **495/495**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
