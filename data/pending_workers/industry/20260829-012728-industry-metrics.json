@@ -1,0 +1,92 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-29T01:27:28+03:00",
+  "source_head": "6c0294ef2a38c9ee98a685a2f6890465d82cdc6b",
+  "config_version": "2026-08-29T00:59:37+03:00",
+  "canonical_status": {
+    "master_count": 499,
+    "contactable_count": 499,
+    "integrity": "PASS"
+  },
+  "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "policy": {
+    "canonical_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "deep_funnel_order": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "early_switch_threshold": ">70% duplicate+early reject on first 20"
+  },
+  "funnel": {
+    "raw_distinct_source_identities": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "lanes": [
+    {
+      "source": "CTT Expo 2026",
+      "source_url": "https://ctt-expo.ru/press-release-30102025",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "reject_rate_first20": 1.0,
+      "qualified": 0,
+      "switch_after_first20": true,
+      "fast_gate_reason": "Exhibitor participation alone does not establish a probable fresh S1-S3 signal; no inference made.",
+      "identities": ["Техстройконтракт", "LiuGong", "Русбизнесавто", "Лонмади", "Квинтмади", "Sany", "Ростсельмаш", "XCMG", "Zoomlion", "Lovol", "UMG", "ДСТ Десна", "Профессионал", "ГК Традиция К", "Reschke Rus", "Дормашина", "LGMG", "Dingli", "ZZBO", "ИСТК"]
+    },
+    {
+      "source": "VacuumCryoTech 2026",
+      "source_url": "https://helpinver.com/events/vystavka-vacuumcryotech-2026.php",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "reject_rate_first20": 1.0,
+      "qualified": 0,
+      "switch_after_first20": true,
+      "fast_gate_reason": "Participant listing confirms sector presence only; no probable fresh S1-S3 signal is established by the cheap source evidence.",
+      "identities": ["Термионика", "Академвак", "БелРосВак", "БЛМ Синерджи", "АО Вакуум.РУ", "Вакууммаш", "НПО Вакуумные Технологии", "ВЛС", "ВТТ", "НПО Геликон", "НПО ГКМП", "Инжиниринг Групп", "Интек Аналитика", "ИВ", "Истпартнер", "Оптикон", "Кварц", "НТК Криогенная Техника", "Современное Вакуумное Оборудование", "Криотрейд Инжиниринг"]
+    },
+    {
+      "source": "InterStroyExpo 2026",
+      "source_url": "https://www.interstroyexpo.com/ru-RU/about/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "reject_rate_first20": 1.0,
+      "qualified": 0,
+      "switch_after_first20": true,
+      "fast_gate_reason": "Catalog presence does not establish current scale plus a probable fresh S1-S3 trigger; no assumptions were used.",
+      "identities": ["DECONA МЕБЕЛЬНАЯ ФАБРИКА", "DIPOXSY SYSTEMS", "GIP GROUP (ЦУП, ООО)", "GREEN STROY COMPANY", "INMYROOM", "KARELIA GARDEN", "METLAH.STORE", "MVAVA Electrical Technology Co.,Ltd.", "RUSPAN", "Steingot", "TRI", "Xinjiang WMGrass Co., Ltd.", "АВИТО УСЛУГИ", "АВОК", "Гелиос", "Гомельстройматериалы, ОАО", "ДАБЛ-Ю", "ЕВРОЛИФТМАШ", "ЗОВ", "Интер-Меццо"]
+    },
+    {
+      "source": "МодаФест 2026",
+      "source_url": "https://moda-fest.ru/ru-RU/about/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "reject_rate_first20": 1.0,
+      "qualified": 0,
+      "switch_after_first20": true,
+      "fast_gate_reason": "Brand listing alone is insufficient to establish Russian legal entity, target scale and a probable fresh S1-S3 signal.",
+      "identities": ["A+FABRICS", "ARIMAR HOME", "BAIDALA", "BEATRIS", "BEZSONOVA BESPOKE", "BRAVOVA BRAND", "BY SOLOVYOVA X OUR HISTORY LANA", "CVETI&PAHNI", "DANILAND", "DODOKA JEWELRY", "ELIZABETH SHI", "ERCHINKA BRAND", "GAMAK HOUSE", "GOLUBEVAART", "GАРИБАЛЬДИS", "HELENSBROOK", "IMANRA", "INOUT BAGS", "IREN JEWELRY", "JULI ECO STYLE"]
+    },
+    {
+      "source": "КубаньПродЭкспо 2026",
+      "source_url": "https://inter-food.su/ru-RU/about/exhibitor-list-kubanprodexpo.aspx",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "reject_rate_first20": 1.0,
+      "qualified": 0,
+      "switch_after_first20": true,
+      "fast_gate_reason": "Exhibitor identity is confirmed, but cheap evidence does not establish probable fresh S1-S3; no deep-check was justified.",
+      "identities": ["FRUTA BONITA", "VEGA NATURA (ООО ТД ЦАРИЦА)", "АМЕТИСТ", "АМИЗЯН В.А. ИП", "БЕКАРЮК НИКОЛАЙ ВЛАДИМИРОВИЧ", "БУРЫЙ КЕДР ООО", "ВАЛРУС ЮГ ООО", "ВОСТОЧНЫЕ СЛАДОСТИ", "ГРАНД-СТАР", "ГРЕЧЕСКИЕ ПРОДУКТЫ ЕLLAVKA", "ГУД ФУД", "ГУЛЯЕВА ИП", "ДАРЫ ЛЕСА", "ДИСТФУД", "ДИЧЬ В ГОРОДЕ", "ДОМИК НА ГОРЕ", "ЖИРНОВ", "КОНЦЕНТРАТ ПРИРОДЫ", "КУЛЁК", "ЛАЗУКИН ИП"]
+    }
+  ],
+  "notes": [
+    "100 entries are distinct source-level identities within this worker pass; they are not claimed as 100 globally legal-key-proven entities because early rejects were intentionally not resolved through full legal/domain checks.",
+    "Foreign or non-target identities encountered in source lists remain early rejects and were not advanced.",
+    "No qualified candidate was produced, therefore only this immutable metrics file was written."
+  ]
+}
