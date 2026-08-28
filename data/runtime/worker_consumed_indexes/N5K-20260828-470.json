@@ -1,0 +1,35 @@
+{
+  "run_id": "N5K-20260828-470",
+  "consumed_at": "2026-08-28T09:20:00+03:00",
+  "worker_staging": [
+    {
+      "path": "data/pending_workers/jobs/20260828-082251-jobs.json",
+      "blob_sha": "14477997d0411005f51b1bc0ddb3eb76f6aa20e8",
+      "status": "CONSUMED_CANONICAL_DUPLICATE",
+      "result": "worker-qualified Адванта-М Ростов resolved to existing canonical N5K-0593 by INN, OGRN, exact legal name and brand+domain; no new write"
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-083400-industry-metrics.json",
+      "blob_sha": "0833d440a76af273717306df9f000ae8bb8c9a61",
+      "status": "CONSUMED_ZERO_QUALIFIED",
+      "result": "100 raw; five 20-candidate lanes stopped after >70% duplicate+early reject; no qualified"
+    }
+  ],
+  "additional_discovery": {
+    "lane": "canonical-low-overlap-prodexpo-2026-official-catalog",
+    "source_level_raw": 125,
+    "qualified": 0,
+    "note": "Exhibition participation was not treated as SIGNAL. 125 distinct named identities within the sampled catalogue pages were screened at FAST GATE; not claimed globally legal-key-proven distinct against all worker early rejects."
+  },
+  "physical_result": {
+    "baseline": 484,
+    "physically_integrated": 0,
+    "canonical": 484,
+    "contactable": 484,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "pending": "CLEARED_AFTER_INTEGRATION",
+    "outreach": 0
+  }
+}
