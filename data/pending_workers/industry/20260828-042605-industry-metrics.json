@@ -1,0 +1,124 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "run_started_at": "2026-08-28T04:26:05+03:00",
+  "baseline_head": "4566ed10e1be4e984af8b7e1f1f1d32fe4fc5afc",
+  "config_version": "2026-08-28T03:12:00+03:00",
+  "canonical_baseline": {
+    "leads_master": 481,
+    "contactable_master": 481,
+    "integrity": "PASS"
+  },
+  "rules": {
+    "canonical_write": false,
+    "outreach": false,
+    "fast_gate": ["russian_private_company_or_ip", "current_scale_proxy", "canonical_dedup", "probable_S1_S3"],
+    "deep_funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"]
+  },
+  "raw_distinct": 100,
+  "funnel": {
+    "raw": 100,
+    "fast_gate": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "lanes": [
+    {
+      "source": "MIMS Automobility Saint Petersburg 2026 online catalog",
+      "source_url": "https://online.itemf.ru/info/MIMS26/catalog/",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_early_reject_rate_first20": 1.0,
+      "qualified": 0,
+      "rotation": true,
+      "screening_note": "14/20 entries are explicitly non-Russian in the catalog; the remaining Russian entries had no probable S1-S3 trigger in cheap source evidence. Exhibition presence itself was not treated as a signal.",
+      "raw_candidates": ["1AK-GROUP", "1MIKRON", "4CLIPS", "ABCP", "ABCW", "ACT ПОСЛЕМАРКЕТ", "ADD Industry (ZheJiang) Corporation Limited", "AIN Global Foundation", "AIPSI (HUZHOU) AUTO PARTS CO., LTD", "Akkar İç Ve Dış Ticaret Sanayi Limited Şirketi", "AKKUŞSAN OTOMOTİV SANAYİ VE DIŞ TİCARET LTD.ŞTİ", "AKTEX", "ALLPOWER BATTERY", "AM POINT", "ANAND LINERS (INDIA)", "ANAND PISTON INTERNATIONAL", "ANHUI AODEHUA TECHNOLOGY CO., LTD", "Anhui Auzone Auto Parts Co.,Ltd", "Anhui Bonaike Friction Material Co.,Ltd", "Anhui Boxing Machinery Co.,Ltd"]
+    },
+    {
+      "source": "AGRAVIA 2026 exhibitor catalog",
+      "source_url": "https://agravia.org/participants_en",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_early_reject_rate_first20": 1.0,
+      "qualified": 0,
+      "rotation": true,
+      "screening_note": "First 20 were stopped at FAST GATE: foreign participants, media/service entries, or no probable S1-S3 trigger in cheap catalog evidence. Catalog participation itself was not treated as a signal.",
+      "raw_candidates": ["1C: DIGITAL LIVESTOCK FARMING", "32 ZERNOPRODUKT, ООО", "A.H.A INTERNATIONAL CO., LTD", "AFIMILK", "AGROBOOK", "AGRODAY.RU, AGROPORTAL", "AGROMAG", "AGROMILK SRL", "AGROTA-2L LTD", "AGROTREND.RU", "AK ZİRAAT ALETLERİ SAN VE TİC.LTD.STİ", "ALBERK PROSES MAKINELERI LTD STI", "ALLYNAV", "ALPRINTA", "ALTINBILEK", "AMAZONE", "ANCORE", "ANHUI CHANGJIN PRECISION ELECTRONICS CO., LTD.", "ANHUI SUNLONG TECH CO., LTD.", "ANIMAT"]
+    },
+    {
+      "source": "MosBuild 2026 star participant list",
+      "source_url": "https://mosbuildexpo.com/articles/star-compound-participants-mos-build-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 19,
+      "duplicate_early_reject_rate_first20": 0.95,
+      "qualified": 0,
+      "rotation": true,
+      "screening_note": "RIFAR alone advanced to deep-check because a fresh acquisition event was found; the other 19 had no probable S1-S3 trigger in cheap evidence. Exhibition presence itself was not treated as a signal.",
+      "raw_candidates": ["SANTOP", "AM GROUP", "WASSERKRAFT", "ROCA", "ЦЕНТР САНТЕХНИКИ", "IBERIS GROUP", "RIFAR", "CERSANIT", "МОСПЛИТКА", "KERAMA MARAZZI", "ATLAS CONCORDE", "GLOBAL TILE", "СТАРОПЕТРОВСКОЕ", "MAIMOON CERAMICA", "BASCONI HOME", "TERRA", "KEDA", "PANSON", "MONALISA", "LEOPARD"]
+    },
+    {
+      "source": "FoodTech Krasnodar 2026 exhibitor list",
+      "source_url": "https://www.foodtech-krasnodar.ru/en-GB/about/exhibitor-list-new.aspx",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_early_reject_rate_first20": 1.0,
+      "qualified": 0,
+      "rotation": true,
+      "screening_note": "First 20 did not expose a probable fresh S1-S3 trigger in cheap evidence; media, educational and service entries were also early-rejected. Exhibition presence itself was not treated as a signal.",
+      "raw_candidates": ["РАДИО КУБАНЬ", "ФОРМУЛА ХОЛОДА", "ТЕХНОЛОГИЯ ЮГ", "МЕРКАТОР", "ПЕРВОЕ РАДИО", "ФНЦ пищевых систем им.Горбатова", "МАСТ СЕРВИС", "СКОРПИО-АРОМАТ", "RECORD", "BFM.RU ПОРТАЛ", "КУБГТУ", "ПФ БЛИСТЕР-К", "ЛИГА-ПАК", "КУБАНСКАЯ КАРТОНАЖНАЯ ФАБРИКА", "РАДИАТЕХ", "ДИЛОДЖИК", "ТД УПАКОВКА ЮГА", "ТРЕТИЙ КРАН", "УНИКУМ", "КУБАНЬ24"]
+    },
+    {
+      "source": "Dentima Krasnodar 2026 exposition",
+      "source_url": "https://www.dentima.su/en-GB/about/exposition.aspx",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_early_reject_rate_first20": 1.0,
+      "qualified": 0,
+      "rotation": true,
+      "screening_note": "First 20 did not expose a probable fresh S1-S3 trigger in cheap evidence; exhibition presence itself was not treated as a signal.",
+      "raw_candidates": ["AB Med LLC", "AERS-MED", "Alpha-Bio Tec", "ARGO OOO", "ARKOM", "AXIOR DENT", "BONA-DENT", "CAMTECH", "Cardioplant", "Central Research Institute for Automation and Hydraulics", "CoralLtd", "CRYSTAL, LTD.", "D&G STOM", "DENCO", "DENPA", "DENRIKO INT", "Dental Standart", "DR.KIM", "Dutyfreestom", "eGigiena"]
+    }
+  ],
+  "deep_checks": [
+    {
+      "brand": "RIFAR",
+      "legal_name": "АО «РИФАР»",
+      "inn": "5604009196",
+      "ogrn": "1025600684240",
+      "canonical_dedup_initial": "no exact INN match in leads_master at baseline HEAD",
+      "canonical_dedup_final": "no exact INN match; HEAD unchanged before write",
+      "size": {
+        "result": "PASS",
+        "evidence": "2025 revenue 6.1bn RUB; 876 employees"
+      },
+      "legal": {
+        "result": "PASS",
+        "evidence": "active company; since 19.03.2026 100% founder/shareholder entry is AO AKRON INDUSTRIYA; current general director Andrey Kubits"
+      },
+      "signal": {
+        "result": "REJECT",
+        "reason": "The March 2026 acquisition is a real ownership event, but available post-deal evidence explicitly says the plant continues in normal operating mode. No sufficiently explicit fresh target-company operational expansion/investment S1-S3 was confirmed; 2025 revenue also fell versus 2024. M&A alone was not promoted to SIGNAL."
+      },
+      "evidence_urls": [
+        "https://www.kommersant.ru/doc/8497905",
+        "https://firmoteka.ru/5604009196",
+        "https://star-pro.ru/proverka-kontragenta/organization/1025600684240--ao-rifar",
+        "https://gts.tv/news/48371",
+        "https://rifar.ru/company/contacts/"
+      ]
+    }
+  ],
+  "qualified_candidates": [],
+  "notes": [
+    "All 100 raw names are distinct within this worker file.",
+    "No catalog/exhibition participation was treated as S1-S3 by itself.",
+    "No stale 2024 figure was used where a 2025 figure was available for RIFAR.",
+    "No canonical, contactable, contacts, evidence, runtime or campaign file was modified.",
+    "No outreach was performed."
+  ]
+}
