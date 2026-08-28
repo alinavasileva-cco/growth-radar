@@ -62,7 +62,7 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official KHIMIA 2026 preliminary exhibitor list, first 20 distinct source identities; stopped after first 20 because exhibition presence without a probable fresh S1-S3 trigger is an early reject under config. Source: https://www.chemistry-expo.ru/en/exhibition/exhibitors/"
+      "note": "Official KHIMIA 2026 preliminary exhibitor list, first 20 distinct source identities; stopped after first 20 because exhibition presence without a probable fresh S1-S3 trigger is an early reject under config."
     },
     {
       "lane": "own_agroprodmash_2026_first20",
@@ -75,7 +75,7 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official AGROPRODMASH 2026 exhibitor list, first 20 distinct Russian-source identities after collapsing repeated subject rows; stopped after first 20 because listing presence alone is not SIGNAL. Source: https://www.agroprodmash-expo.ru/en/exhibition/exhibitors/"
+      "note": "Official AGROPRODMASH 2026 exhibitor list, first 20 distinct source identities after collapsing repeated subject rows; listing presence alone was not SIGNAL."
     },
     {
       "lane": "own_aquaflame_2026_first20",
@@ -88,7 +88,7 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official Aquaflame 2026 participant press release, 20 distinct company identities; stopped because participant/product-showcase presence alone is not S1-S3 SIGNAL. Source: https://aquaflame-expo.ru/ru/about/news/2026/february/02/press-release-aquaflame/"
+      "note": "Official Aquaflame 2026 participant list, first 20 distinct identities; participant presence alone was not SIGNAL."
     },
     {
       "lane": "own_mosbuild_2026_first20",
@@ -101,7 +101,7 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official MosBuild 2026 participant article, 20 distinct company/brand identities selected without overlap with other current-run own lanes; stopped because exhibition presence alone is not SIGNAL. Source: https://mosbuild.com/articles/mosbuild-2026-uchastniki/"
+      "note": "Official MosBuild 2026 participant article, 20 distinct identities without current-run lane overlap; exhibition presence alone was not SIGNAL."
     },
     {
       "lane": "own_ndt_russia_2026_first20",
@@ -114,7 +114,7 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official NDT Russia 2026 participant news list, first 20 distinct company identities; stopped because exhibition presence alone is not SIGNAL. Source: https://www.ndt-russia.ru/ru-RU/press/news/10446.aspx"
+      "note": "Official NDT Russia 2026 participant list, first 20 distinct identities; exhibition presence alone was not SIGNAL."
     },
     {
       "lane": "own_testing_control_2026_first20",
@@ -127,7 +127,7 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "note": "Official Testing&Control 2026 participant news list, first 20 distinct company identities excluding any overlap with the other own lanes; stopped because exhibition presence alone is not SIGNAL. Source: https://www.testing-control.ru/ru-RU/press/news/18882.aspx"
+      "note": "Official Testing&Control 2026 participant list, first 20 distinct identities excluding current-run overlap; exhibition presence alone was not SIGNAL."
     }
   ],
   "qualified_companies": [
@@ -140,5 +140,6 @@
   "physical_master_state": "499_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "499_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "repair_note": "Post-integration authoritative config header sync explicitly retriggered in the same cycle; physical canonical state unchanged."
 }
