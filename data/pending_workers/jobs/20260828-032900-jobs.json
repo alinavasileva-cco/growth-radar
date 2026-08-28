@@ -1,0 +1,95 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-28T03:29:00+03:00",
+  "canonical_write": false,
+  "outreach": false,
+  "baseline": {
+    "head_sha": "de5997e79bff50118f31a7fedb7d113fd4877f89",
+    "last_completed_run": "N5K-20260828-464",
+    "canonical_count": 481,
+    "contactable_count": 481,
+    "integrity": "PASS"
+  },
+  "worker_funnel": {
+    "raw_employer_level_distinct": 80,
+    "fast_gate": 5,
+    "deep_check": 3,
+    "size": 2,
+    "legal": 2,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "note": "Raw pool assembled across multiple regional job-board result pools and direct vacancy pages. Broad sources were rotated when saturation was evident. Exact first-20 duplicate+early-reject split was not persistently instrumented in this worker pass and is not reconstructed."
+  },
+  "qualified": [
+    {
+      "brand": "РЗКО / Ростовский завод котельного оборудования",
+      "legal_name": "ООО \"РОСТОВСКИЙ ЗАВОД КОТЕЛЬНОГО ОБОРУДОВАНИЯ\"",
+      "short_legal_name": "ООО \"РЗКО\"",
+      "inn": "6102072414",
+      "ogrn": "1196196028467",
+      "legal_status": "Действующее",
+      "legal_form": "ООО",
+      "region": "Ростовская область, Аксай",
+      "website": "https://рзко.рф/",
+      "domain_key": "рзко.рф",
+      "brand_domain_key": "РЗКО|рзко.рф",
+      "size": {
+        "revenue_2025_rub": 338500000,
+        "employees_2025": 114,
+        "evidence_url": "https://zachestnyibiznes.ru/company/ul/1196196028467_6102072414_OOO-RZKO"
+      },
+      "signal": {
+        "type": "S1_JOB",
+        "title": "Руководитель Отдела Продаж (проектные продажи)",
+        "date": "2026-08-21",
+        "details": "Свежая вакансия руководителя отдела продаж для промышленного производства полного цикла; роль связана с проектными продажами и развитием продаж.",
+        "evidence_url": "https://dreamjob.ru/employers/225964/vakansii/136490589"
+      },
+      "lpr": {
+        "name": "Волков Владимир Владимирович",
+        "role": "Директор, совладелец 50%",
+        "evidence_urls": [
+          "https://companium.ru/id/1196196028467-rzko",
+          "https://companies.rbc.ru/amp/ogrn/1196196028467/"
+        ]
+      },
+      "owners": [
+        {"name": "Волков Владимир Владимирович", "share": "50%"},
+        {"name": "Рыбников Константин Михайлович", "share": "50%"}
+      ],
+      "contact": {
+        "phone": "+7-863-229-29-57",
+        "email": "sales@rzko.pro",
+        "route": "официальный сайт / отдел продаж / форма заявки",
+        "evidence_url": "https://рзко.рф/"
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/225964/vakansii/136490589",
+        "https://zachestnyibiznes.ru/company/ul/1196196028467_6102072414_OOO-RZKO",
+        "https://companium.ru/id/1196196028467-rzko",
+        "https://companies.rbc.ru/amp/ogrn/1196196028467/",
+        "https://рзко.рф/"
+      ],
+      "dedup_keys": {
+        "inn": "6102072414",
+        "ogrn": "1196196028467",
+        "exact_legal_name": "ООО \"РОСТОВСКИЙ ЗАВОД КОТЕЛЬНОГО ОБОРУДОВАНИЯ\"",
+        "brand_domain": "РЗКО|рзко.рф"
+      },
+      "dedup_prewrite": {
+        "inn_search": "no match in repository",
+        "brand_search": "no match in repository"
+      },
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ]
+}
