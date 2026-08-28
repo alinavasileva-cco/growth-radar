@@ -1,0 +1,164 @@
+{
+  "worker": "jobs",
+  "mode": "READ+DISCOVERY",
+  "created_at": "2026-08-28T22:21:00+03:00",
+  "source_head_sha": "4ac790bebe3d48173bc7e86ac2d7e0db609aca11",
+  "baseline": {
+    "canonical_count": 497,
+    "contactable_count": 497,
+    "last_completed_run": "N5K-20260828-482",
+    "integrity_status": "PASS"
+  },
+  "canonical_write": false,
+  "outreach_sent": 0,
+  "qualified": 0,
+  "funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_passed": 8,
+    "deep_checked": 8,
+    "size_passed": 2,
+    "legal_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 0
+  },
+  "lane_metrics": [
+    {
+      "lane": "hh_moscow_partner_sales_leadership",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 17,
+      "reject_rate": 0.85,
+      "qualified": 0,
+      "stopped_over_70pct": true,
+      "source": "https://hh.ru/vacancies/nachalnik-otdela-partnerskih-prodazh/ot_pryamih_rabotodateley"
+    },
+    {
+      "lane": "hh_spb_operations_leadership",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 18,
+      "reject_rate": 0.90,
+      "qualified": 0,
+      "stopped_over_70pct": true,
+      "source": "https://spb.hh.ru/vacancies/operacionnyy_direktor"
+    },
+    {
+      "lane": "hh_kazan_business_leadership",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 18,
+      "reject_rate": 0.90,
+      "qualified": 0,
+      "stopped_over_70pct": true,
+      "source": "https://kazan.hh.ru/vacancies/direktor_upravlyayushey_kompanii/ot_pryamih_rabotodateley"
+    },
+    {
+      "lane": "hh_ekaterinburg_commercial_leadership",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 16,
+      "reject_rate": 0.80,
+      "qualified": 0,
+      "stopped_over_70pct": true,
+      "source": "https://ekaterinburg.hh.ru/vacancies/kommercheskiy_direktor/ot_pryamih_rabotodateley"
+    }
+  ],
+  "deep_check_rejects": [
+    {
+      "candidate": "ООО ИПК МеталлоЦентр",
+      "inn": "9721203109",
+      "ogrn": "1237700239358",
+      "result": "REJECT_SIZE",
+      "reason": "Fresh 2026 profile shows 4 employees; below current target scale despite current general-director growth vacancy.",
+      "evidence_urls": [
+        "https://www.rusprofile.ru/id/1237700239358",
+        "https://jobrun.ru/vacancy/552547955"
+      ]
+    },
+    {
+      "candidate": "ООО Компания Рена",
+      "inn": "7802802900",
+      "ogrn": "1127847510010",
+      "result": "REJECT_SIZE",
+      "reason": "Fresh 2025 scale evidence shows 4 employees; current B2B sales leadership vacancy does not override SIZE gate.",
+      "evidence_urls": [
+        "https://www.rusprofile.ru/id/5562356",
+        "https://spb.rabota.ru/vacancy/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80/"
+      ]
+    },
+    {
+      "candidate": "ООО МСП",
+      "inn": "7817318146",
+      "ogrn": "1097847322880",
+      "result": "REJECT_SIZE",
+      "reason": "Fresh 2025 revenue is about 656.3m RUB, above current preferred/allowed scale for this worker candidate.",
+      "evidence_urls": [
+        "https://www.rusprofile.ru/id/3921203",
+        "https://spb.rabota.ru/vacancy/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80/"
+      ]
+    },
+    {
+      "candidate": "ООО Фабрика Ацтек",
+      "inn": "7811581503",
+      "ogrn": "1147847187322",
+      "result": "REJECT_SIZE",
+      "reason": "Fresh 2025 revenue is about 675.0m RUB; rejected at SIZE without weakening criteria.",
+      "evidence_urls": [
+        "https://www.rusprofile.ru/id/7525756",
+        "https://spb.rabota.ru/vacancy/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80/"
+      ]
+    },
+    {
+      "candidate": "Наша Игра / ООО ВАНТАЙМ",
+      "inn": "7734451730",
+      "ogrn": "1227700105544",
+      "result": "REJECT_SIZE",
+      "reason": "Fresh 2025 revenue is 1.083bn RUB; excluded using current data despite fresh commercial/marketing director signal.",
+      "evidence_urls": [
+        "https://www.nashaigra.ru/",
+        "https://saby.ru/profile/7734451730-774301001",
+        "https://dreamjob.ru/employers/106981/vakansii/136695052"
+      ]
+    },
+    {
+      "candidate": "ООО ТЕХБЕТОН / HODMAN",
+      "inn": "6685056852",
+      "ogrn": "1146685013122",
+      "result": "REJECT_SIZE",
+      "reason": "Fresh 2025 revenue is 1.590bn RUB; current own-brand development vacancy is a real signal but SIZE fails.",
+      "evidence_urls": [
+        "https://ekaterinburg.hh.ru/vacancies/kommercheskiy_direktor/ot_pryamih_rabotodateley",
+        "https://b2b.house/company/OOO-TEXBETON_f7253e8e-0784-4c62-bb16-2a19ce2ac69d/",
+        "https://tehbeton.com/"
+      ]
+    },
+    {
+      "candidate": "ООО НПП Спецавиа",
+      "inn": "6901025548",
+      "ogrn": "1036900021180",
+      "result": "REJECT_SIZE",
+      "reason": "Fresh 2025 revenue is 1.980bn RUB; rejected at SIZE even though current hiring and R&D/operations signals exist.",
+      "evidence_urls": [
+        "https://firmoteka.ru/6901025548",
+        "https://savia.ru/services/",
+        "https://dreamjob.ru/employers/306002/vakansii/134907271"
+      ]
+    },
+    {
+      "candidate": "ООО ЗММ И ПО",
+      "inn": "3525439940",
+      "ogrn": "1193525010678",
+      "result": "REJECT_SIGNAL",
+      "reason": "Current legal entity and suitable scale were confirmed, but no sufficiently fresh S1-S3 job-board signal was verified in this run; historical/general growth evidence was not substituted.",
+      "evidence_urls": [
+        "https://saby.ru/profile/3525439940-352501001",
+        "https://emkostvologda.ru/contacts/",
+        "https://emkostvologda.ru/about_company/"
+      ]
+    }
+  ],
+  "notes": [
+    "Only current/fresher evidence was used where available; stale financial records were not used to override newer 2025/2026 data.",
+    "No candidate was promoted merely because a vacancy title appeared relevant.",
+    "No canonical files were written and canonical writer was not invoked.",
+    "No outreach was performed."
+  ]
+}
