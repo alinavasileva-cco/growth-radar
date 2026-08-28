@@ -1,0 +1,192 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-29T00:22:28+03:00",
+  "source_head_sha": "a5b2841205b74f42f5d4915fc1b9e57b7c2e3cce",
+  "canonical_write": false,
+  "canonical_writer_invoked": false,
+  "outreach_sent": 0,
+  "baseline": {
+    "last_completed_run": "N5K-20260829-484",
+    "canonical_count": 499,
+    "contactable_count": 499,
+    "integrity_status": "PASS"
+  },
+  "worker_funnel": {
+    "raw_source_observations": 83,
+    "raw_distinct_employer_identities": 82,
+    "fast_gate_passed": 5,
+    "deep_check": 5,
+    "size_passed": 1,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "source_level_duplicates_before_deep_check": 1,
+    "notes": "82 distinct employer-level identities were screened. Four geographically separated HH job-board lanes were stopped after their first 20 source observations once duplicate+early-reject exceeded 70%; one duplicate in the Krasnodar first-20 was replaced by the next distinct employer for the distinct-raw count. Habr Career and GetMatch were used as supplemental low-overlap signals; the Habr item did not resolve the actual client employer and the GetMatch item was archived/non-target, so neither entered deep-check. Only ООО ЛАЙФТРАНС passed the complete strict funnel. No archived vacancy was used as current SIGNAL evidence."
+  },
+  "lane_metrics": [
+    {
+      "lane": "HH Rostov-on-Don / commercial director B2B",
+      "source_url": "https://rostov.hh.ru/vacancies/kommercheskij-direktor-b2b",
+      "first20_source_observations": 20,
+      "duplicates": 0,
+      "early_rejects": 15,
+      "duplicate_plus_early_rejects": 15,
+      "duplicate_early_reject_rate": 0.75,
+      "action": "STOP_AND_SWITCH",
+      "qualified": 1
+    },
+    {
+      "lane": "HH Krasnodar / commercial director B2B",
+      "source_url": "https://krasnodar.hh.ru/vacancies/kommercheskij-direktor-b2b",
+      "first20_source_observations": 20,
+      "duplicates": 1,
+      "early_rejects": 14,
+      "duplicate_plus_early_rejects": 15,
+      "duplicate_early_reject_rate": 0.75,
+      "action": "STOP_AND_SWITCH",
+      "qualified": 0
+    },
+    {
+      "lane": "HH Ekaterinburg / director sales and development",
+      "source_url": "https://ekaterinburg.hh.ru/vacancies/direktor-po-prodazham-i-razvitiyu/polnaya_zanyatost",
+      "first20_source_observations": 20,
+      "duplicates": 0,
+      "early_rejects": 16,
+      "duplicate_plus_early_rejects": 16,
+      "duplicate_early_reject_rate": 0.80,
+      "action": "STOP_AND_SWITCH",
+      "qualified": 0
+    },
+    {
+      "lane": "HH Samara / director sales B2B",
+      "source_url": "https://samara.hh.ru/vacancies/direktor-po-prodazham-b2b",
+      "first20_source_observations": 20,
+      "duplicates": 0,
+      "early_rejects": 15,
+      "duplicate_plus_early_rejects": 15,
+      "duplicate_early_reject_rate": 0.75,
+      "action": "STOP_AND_SWITCH",
+      "qualified": 0
+    },
+    {
+      "lane": "Habr Career / supplemental low-overlap executive signal",
+      "source_url": "https://career.habr.com/",
+      "raw_distinct_employer_identities": 1,
+      "early_rejects": 1,
+      "qualified": 0,
+      "action": "EARLY_REJECT_UNRESOLVED_CLIENT_EMPLOYER"
+    },
+    {
+      "lane": "GetMatch / supplemental low-overlap executive signal",
+      "source_url": "https://getmatch.ru/",
+      "raw_distinct_employer_identities": 1,
+      "early_rejects": 1,
+      "qualified": 0,
+      "action": "EARLY_REJECT_ARCHIVED_OR_NON_TARGET"
+    }
+  ],
+  "discovery_sources": [
+    "https://rostov.hh.ru/vacancies/kommercheskij-direktor-b2b",
+    "https://krasnodar.hh.ru/vacancies/kommercheskij-direktor-b2b",
+    "https://ekaterinburg.hh.ru/vacancies/direktor-po-prodazham-i-razvitiyu/polnaya_zanyatost",
+    "https://samara.hh.ru/vacancies/direktor-po-prodazham-b2b",
+    "https://career.habr.com/",
+    "https://getmatch.ru/",
+    "https://rostov.najtiraboty.ru/svezhie-vakansii/generalnyj-direktor/",
+    "https://rostov-na-donu.jobrun.ru/коммерческий-директор-ссо-работа"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "Лайфтранс",
+      "legal_name": "ООО \"ЛАЙФТРАНС\"",
+      "inn": "6163214497",
+      "ogrn": "1196196018369",
+      "region": "Волгоградская область",
+      "legal_city": "Михайловка",
+      "job_city": "Ростов-на-Дону",
+      "legal_status": "Действующее",
+      "legal_status_as_of": "2026-08-05",
+      "private_russian_company": true,
+      "company_size": {
+        "revenue_2025_rub": 702087000,
+        "profit_2025_rub": 73617000,
+        "employees_2025": 34,
+        "current_registry_segment": "субъект малого предпринимательства",
+        "size_decision": "PASS",
+        "freshness_note": "2025 financial and employee data were used. An older card showing 11 employees was not used for the current-size decision because a fresher 2025 snapshot was available.",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-LAJFTRANS_d1575889-c034-4c14-a044-93d311094eb5/",
+          "https://companies.rbc.ru/id/1196196018369-obschestvo-s-ogranichennoj-otvetstvennostyu-lajftrans/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-05",
+        "type": "commercial-leadership / sales-scaling",
+        "summary": "Current commercial-director / sales-director hiring signal. The vacancy says the company wants to take an already strong commercial team to a new level, make the hire one of the key company executives, increase sales, strengthen the commercial block and find new growth/scaling points.",
+        "evidence_urls": [
+          "https://rostov.hh.ru/vacancies/kommercheskij-direktor-b2b",
+          "https://rostov.hh.ru/vacancy/134555574",
+          "https://rostov.najtiraboty.ru/svezhie-vakansii/generalnyj-direktor/",
+          "https://h.careers/job/4c55f048-f516-48ff-96dd-016bed19bd6f"
+        ]
+      },
+      "lpr": {
+        "name": "Алборов Владимир Георгиевич",
+        "role": "директор; 100% учредитель",
+        "evidence_urls": [
+          "https://laiftrans.ru/",
+          "https://b2b.house/company/OOO-LAJFTRANS_d1575889-c034-4c14-a044-93d311094eb5/",
+          "https://companies.rbc.ru/id/1196196018369-obschestvo-s-ogranichennoj-otvetstvennostyu-lajftrans/"
+        ]
+      },
+      "contact": {
+        "primary_email": "info@laiftrans.ru",
+        "phones": [
+          "+7 (900) 137-37-17"
+        ],
+        "official_sites": [
+          "https://laiftrans.ru/"
+        ],
+        "contact_type": "official corporate email, phone and official-site request route",
+        "evidence_urls": [
+          "https://laiftrans.ru/",
+          "https://laiftrans.ru/terms-of-use/",
+          "https://laiftrans.ru/personal-data-consent/"
+        ]
+      },
+      "evidence_urls": [
+        "https://laiftrans.ru/",
+        "https://laiftrans.ru/terms-of-use/",
+        "https://laiftrans.ru/personal-data-consent/",
+        "https://b2b.house/company/OOO-LAJFTRANS_d1575889-c034-4c14-a044-93d311094eb5/",
+        "https://companies.rbc.ru/id/1196196018369-obschestvo-s-ogranichennoj-otvetstvennostyu-lajftrans/",
+        "https://rostov.hh.ru/vacancies/kommercheskij-direktor-b2b",
+        "https://rostov.hh.ru/vacancy/134555574",
+        "https://rostov.najtiraboty.ru/svezhie-vakansii/generalnyj-direktor/",
+        "https://h.careers/job/4c55f048-f516-48ff-96dd-016bed19bd6f"
+      ],
+      "dedup_keys": {
+        "inn": "6163214497",
+        "ogrn": "1196196018369",
+        "exact_legal_name": "ООО \"ЛАЙФТРАНС\"",
+        "brand_domains": [
+          "laiftrans.ru"
+        ]
+      },
+      "dedup_recheck": {
+        "inn_match_in_repo": false,
+        "ogrn_match_in_repo": false,
+        "exact_name_match_in_repo": false,
+        "brand_match_in_repo": false,
+        "brand_domain_match_in_repo": false,
+        "checked_against_head": "a5b2841205b74f42f5d4915fc1b9e57b7c2e3cce",
+        "method": "GitHub repository search for INN, OGRN, exact legal name, brand and domain immediately before immutable staging write"
+      },
+      "status": "QUALIFIED",
+      "qualification_note": "PASS only after current 2025 scale, active Russian private legal entity, dated current S1 commercial-scaling signal, current director/owner evidence, and official practical contact route were all confirmed. Stale employee data were excluded where fresher 2025 data were available."
+    }
+  ]
+}
