@@ -1,0 +1,107 @@
+{
+  "schema_version": "industry-worker-metrics-v1",
+  "lane": "industry",
+  "created_at": "2026-08-28T09:25:00+03:00",
+  "baseline_head": "4dae13f23f1ff46f0e1ed9e870da2eff4bc1eb80",
+  "config_version": "2026-08-28T09:20:00+03:00",
+  "canonical_baseline": {
+    "master": 484,
+    "contactable": 484,
+    "integrity": "PASS",
+    "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal entity", "confirmed brand+domain"]
+  },
+  "rules_applied": {
+    "outreach": false,
+    "canonical_writes": false,
+    "deep_funnel_order": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "early_rotation_threshold": ">70% duplicate+early reject on first 20",
+    "stale_records_excluded_from_decisions": true
+  },
+  "worker_funnel": {
+    "raw": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "lanes": [
+    {
+      "id": "agroprodmash-2026-a",
+      "source_type": "trade-show exhibitor registry",
+      "source_url": "https://www.agroprodmash-expo.ru/en/exhibition/exhibitors/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "reason": "No candidate had a sufficiently supported probable fresh S1-S3 signal at fast gate; exhibition participation itself was not counted as SIGNAL.",
+      "raw_candidates": ["ABS: SISTEMY UPRAVLENIYA PROIZVODSTVOM","ABSOLUTE-M","ACTIVE PACK","ADVANTA","AF AUTOMATIC LLC","AFR","AGGREGATE PLANT","AGRO-PROM-HOLOD","AGROMASH NPO","AGROPAK","AGROS","AGROVO HandelsgesmbH","AGSK","AIMOL LUBRICANTS","AKIR TEKHNOPROD","AKSOID","ALAMAK","ALFA CONTRACTING LTD","ALKOR UPACK","ALLWIN"]
+    },
+    {
+      "id": "metaprom-omsk",
+      "source_type": "regional industrial directory",
+      "source_url": "https://metaprom.ru/companies/omsk/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "reason": "First 20 were dominated by small suppliers, traders, logistics/services, or manufacturers without a sufficiently supported probable fresh S1-S3 signal and current scale orientation.",
+      "raw_candidates": ["Сибрезинотехника, НПП, ООО","Компания Альфа-Регион, ООО","Баггер-Сервис, ООО","GAZEL55 ИП Кошевая ЮВ","Омская фабрика нетканых материалов","Научно-техническая фирма Микроникс, ООО","СПК Золотая Целина, ООО","ОмПромСервис, ООО","Омский завод промышленной и бытовой химии","Завод специализированного оборудования Стандарт","ПЖТ, ООО","Ресурс Транзит, ООО","СССПК Мясное подворье","АвтоНавиКом","Компания Партнер, ООО","Сибпром-Омск, ПКФ, ООО","Компания Гера, ООО","Тюнинг внедорожников и пикапов","ПТП Эра-1, ООО","Майкубен-Вест"]
+    },
+    {
+      "id": "metaprom-belgorod",
+      "source_type": "regional industrial directory",
+      "source_url": "https://metaprom.ru/companies/belgorod/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "reason": "First 20 were predominantly construction-material sellers/small suppliers and did not support both current scale orientation and probable fresh S1-S3 at fast gate.",
+      "raw_candidates": ["Селюков Николай Иванович, ИП","RKS SLATE","Ник","ЖелДорСпецПодшипник, ООО","Старооскольский кирпич, ООО","Гермес, ООО","СПЕЦМАШИНЖИНИРИНГ, ООО","ГрадСтрой, ООО","Монтажник, ООО","Стройка-Ремонт, ООО","СтройИнжиниринг, ООО","Максима, ООО","Элитспецстрой, ООО","Содружество, ООО","Строй Мастер","Строй-Оснастка","Инженер Строй","Строй-Групп Титан","Алпан-строй","Каскад Строй"]
+    },
+    {
+      "id": "metaprom-ulyanovsk",
+      "source_type": "regional industrial directory",
+      "source_url": "https://metaprom.ru/companies/ulyanovsk/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "reason": "First 20 were mainly small equipment suppliers/traders or stale directory profiles; no sufficiently supported probable fresh S1-S3 plus current scale orientation was established.",
+      "raw_candidates": ["ПРОФИ, ООО","Электротехкомплект, ООО","СПЕЦНЕФТЕГАЗПРОДУКТ-СПБ, ООО","СБТ-Энергомонтаж, ООО","СБТ-Энергосервис, ООО","Ди-Пол, ООО","Инжиниринг-П","Предприниматель Люгаев А.Е.","КРОС-НИАТ, ЗАО","Энерго-холод, ООО","Мастера, ООО","УЛЗПО, ООО","Экспортлес","Бриг-Мет, ООО","Стройтех +, ООО","ТрубСтрой, ООО","КлинТехТрейд","Фрезы и граверы","Спецтехнология, ООО","Сакура, ООО"]
+    },
+    {
+      "id": "fabricators-alphabet-a",
+      "source_type": "manufacturing directory",
+      "source_url": "https://fabricators.ru/sitemap/spisok",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "reason": "Alphabetical source sample had no candidate with enough current evidence to pass the strict fast gate; ambiguous brands and unverified scale were rejected rather than inferred.",
+      "raw_candidates": ["А ГРУПП Стальные Конструкции","А и Радуга","А Сэвен","А-Групп","А-ДЕЗ","А-Мега Пак Холдинг","А-Профиль","А-Склад","А-Строн","А-Фабрик","А-Фортуна","А-Элит","А.Р.Т. Групп","А1","А1 Машинери","А1-Электро","А3 Инжиниринг","ААА Группа","ААА-Классика","ААП Премиум"]
+    }
+  ],
+  "discovery_checks": [
+    "Grouped fresh web checks were run for expansion/investment/production signals on the Agroprodmash sample and on representative higher-potential names from the regional/fabricator lanes.",
+    "Directory freshness or exhibition participation was never treated as S1-S3.",
+    "No candidate was promoted on guessed legal identity, guessed scale, reconstructed contact data, or stale evidence."
+  ],
+  "write_scope": {
+    "file_type": "metrics-only because qualified=0",
+    "canonical_master_modified": false,
+    "contactable_modified": false,
+    "contacts_modified": false,
+    "evidence_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false,
+    "outreach_performed": false
+  }
+}
