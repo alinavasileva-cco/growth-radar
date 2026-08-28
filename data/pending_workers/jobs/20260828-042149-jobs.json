@@ -1,0 +1,77 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-28T04:21:49+03:00",
+  "source_head_sha": "075ca413007e1368e8ffc06dac2f744a3f7f6b86",
+  "campaign_id": "new_5000",
+  "canonical_write": false,
+  "outreach_sent": 0,
+  "dedup_guard": {
+    "pre_deep_check": true,
+    "pre_stage": true,
+    "keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"],
+    "master_checked": "data/campaigns/new_5000/leads_master.csv",
+    "candidate_inn_match_before_stage": false,
+    "candidate_legal_name_match_before_stage": false,
+    "candidate_brand_domain_match_before_stage": false
+  },
+  "worker_funnel": {
+    "raw_distinct_employer_identities": 80,
+    "fast_gate_pass": 7,
+    "deep_check": 2,
+    "size_pass": 1,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "lane_note": "Broad regional job-board pools were rotated after saturation signals; exact duplicate+early-reject split for the first 20 was not separately instrumented and is not reconstructed. Raw count is employer-level after name dedup across the reviewed regional pools."
+  },
+  "qualified": [
+    {
+      "brand": "Татпромстан",
+      "legal_name": "ООО «ТАТПРОМСТАН»",
+      "inn": "1655216482",
+      "ogrn": "1111690040615",
+      "legal_status": "Действует",
+      "region": "Республика Татарстан",
+      "city": "Казань",
+      "segment": "Станкостроение / механообработка / промышленное B2B",
+      "website": "https://tatpromstan.ru/",
+      "revenue_scale": "Выручка 155,1 млн ₽ за 2025 год по данным бухгалтерской отчетности ГИР БО; 42 сотрудника по открытым бизнес-реестрам; собственное станкостроительное и сервисное направление.",
+      "signal_level": "S1",
+      "signal_summary": "Открыта вакансия руководителя отдела продаж B2B; компания прямо ищет руководителя для развития отдела продаж и формирования команды.",
+      "signal_date": "2026-08-14",
+      "signal_source": "https://dreamjob.ru/employers/5317542/vakansii/136267364",
+      "owner": "Нуриев Ильдар Мухаматнурович, 100%",
+      "ceo": "Нуриев Ильдар Мухаматнурович",
+      "lpr": "Нуриев Ильдар Мухаматнурович",
+      "lpr_role": "Директор и единственный учредитель",
+      "primary_phone": "+7 927 417-07-85",
+      "primary_email": "info@tatpromstan.ru",
+      "contact_form": "https://tatpromstan.ru/contacts/",
+      "contact_type": "Официальный корпоративный телефон, email и форма сайта",
+      "contact_source": "https://tatpromstan.ru/contacts/",
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/5317542/vakansii/136267364",
+        "https://tatpromstan.ru/",
+        "https://tatpromstan.ru/contacts/",
+        "https://companies.rbc.ru/id/1111690040615-ooo-inzhenerno-promyishlennyij-tsentr-pegas/",
+        "https://vaskov.pro/company/1655216482"
+      ],
+      "dedup_keys": {
+        "inn": "1655216482",
+        "ogrn": "1111690040615",
+        "exact_legal_name": "ООО «ТАТПРОМСТАН»",
+        "brand_domain": "Татпромстан|tatpromstan.ru"
+      },
+      "qualification": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "final": "QUALIFIED"
+      }
+    }
+  ]
+}
