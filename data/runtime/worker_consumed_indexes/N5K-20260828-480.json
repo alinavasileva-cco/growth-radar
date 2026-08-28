@@ -1,0 +1,22 @@
+{
+  "run_id": "N5K-20260828-480",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-28T18:57:21+03:00",
+  "source_head_before_integration": "25c5c99846f212222e43c1b1b00fb55717af4b97",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260828-182203-jobs.json",
+      "blob_sha": "1d63b60deb7a9389c80ec4a494f4de5f83e31a04",
+      "result": "CONSUMED_INTEGRATED",
+      "note": "Тулс passed fresh canonical review and physical pre-write dedup; integrated as N5K-0653."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-182552-industry-metrics.json",
+      "blob_sha": "04a2f857b14e0431bb594a7ea6f746e9f44d906a",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 source-level identities; all five first-20 lanes stopped at 100% duplicate+early reject; no candidate promoted."
+    }
+  ],
+  "history_preserved": true,
+  "outreach_sent": 0
+}
