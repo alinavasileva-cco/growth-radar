@@ -1,0 +1,115 @@
+{
+  "worker": "industry",
+  "mode": "READ+DISCOVERY",
+  "generated_at": "2026-08-28T08:34:00+03:00",
+  "head_read": "1011ab2f3efe58d59202bccb9b1388c08c545cea",
+  "config_version": "2026-08-28T08:18:00+03:00",
+  "canonical_baseline": {
+    "physical_master": 484,
+    "physical_contactable": 484,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0
+  },
+  "canonical_dedup_keys": [
+    "Lead ID",
+    "INN",
+    "OGRN/OGRNIP",
+    "exact legal name",
+    "confirmed brand+domain"
+  ],
+  "raw_count": 100,
+  "raw_distinct_count": 100,
+  "raw_distinct_scope": "distinct source-level identities within this worker pass; exact duplicate rows inside source pages were skipped and replaced with the next distinct source identity",
+  "lanes": [
+    {
+      "lane": "Пермский край / Metaprom industrial supplier/manufacturer directory",
+      "source_url": "https://metaprom.ru/companies/perm/",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "action": "STOP_AFTER_FIRST_20_AND_ROTATE",
+      "candidates": ["Деталь, РМЗ, ООО","Кайрос Инжиниринг, ООО","Никонов, ИП","НПП АДОНИС, АО","Анатолий","Синтез, ООО","ВИКТОРИЯ, ООО","ГРАН-Строй, ООО","АДОНИС, ТД, АО","ЖД Трейд, ООО","Вектор-ПМ, ООО","Желдоркомплектация, ООО","АО Торговый Дом АДОНИС","ВЕГА, ООО","Uralstanko","ВитаХим Пермь, ООО","ЛЕГМА-ГРУПП, ООО","Пермское нефтяное машиностроение, ПО, ООО","Регионэнерго, ООО","СтройРесурс, ООО"]
+    },
+    {
+      "lane": "Свердловская область / Metaprom industrial supplier/manufacturer directory",
+      "source_url": "https://metaprom.ru/companies/ekaterinburg/",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "action": "STOP_AFTER_FIRST_20_AND_ROTATE",
+      "candidates": ["СТАЛЬ-ЦЕНТР, ООО","МХ СТАЛИ УРАЛА, ООО","Уралпрокат, ТД, ООО","ЖЕЛДОРКОМПЛЕКТ-ЕКАТЕРИНБУРГ, АО","Ремонт-гидравлики, ООО","Научно-производственный холдинг ВМП","ЖД 1520, ООО","ТрейдГрупп, ООО","СтройТехЗапчасть, ООО","Арсенал-Деталь","УРАЛМЕТ, ООО","Уральская металлургия, ООО","Уральский завод промышленного литья и механики, ООО","Мехмаш, ООО","АСК, ООО","Акви ТЭК, ООО","Экспертный центр технологических решений, ООО","УЦТР, ООО","ППК Свердловский, ООО","Ферро Трейд, ООО"]
+    },
+    {
+      "lane": "Челябинская область / Metaprom industrial supplier/manufacturer directory",
+      "source_url": "https://metaprom.ru/companies/chelyabinsk/",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "action": "STOP_AFTER_FIRST_20_AND_ROTATE",
+      "candidates": ["СтальГорн, ООО","ЛИОНМеталс, ООО","МЕТАЛЛУРГПРОМСЕРВИС, НПП, ООО","Авто и Спецтехника, ООО","ПК Pride, ООО","Навигатор, ПК, ООО","ООО Альбатрос","УЗНО, ООО","Современная Механика, ООО","УралКабель, ООО","Запчасть Прицеп Торг, ООО","Лебедев А.А., ИП","Эверан Машинери, ООО","Агроснаб, ООО","Станмакс, ООО","ИП Петров Павел Николаевич","Блиц, ООО","Блиц ВСП, OOO","ОТК-Ресурс, ООО","Метиз Комплект, ООО"]
+    },
+    {
+      "lane": "Красноярский край / Metaprom industrial supplier/manufacturer directory",
+      "source_url": "https://metaprom.ru/companies/krasnoyarsk/",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "action": "STOP_AFTER_FIRST_20_AND_ROTATE",
+      "candidates": ["ГЦМ, ООО","ЖДС, ООО","КранМет","КранПутьРемонт","ГК Юнилайт, ООО","СибРемПуть","Твердосплав, ООО","Строительно-монтажные решения","Желдорстрой","ПРОТЕКС, ООО","СибКоммерц","ДТ","Горные машины, АО","Защита металла от коррозии, ООО","СУЭК, ОАО","ГКЛ","ГK Technical unit","Алмаз, ООО","Дивногорский завод рудничной автоматики, ООО","ДоК Ламель, ООО"]
+    },
+    {
+      "lane": "Волгоградская область / Metaprom industrial supplier/manufacturer directory",
+      "source_url": "https://metaprom.ru/companies/volgograd/",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "action": "STOP_AFTER_FIRST_20_AND_ROTATE",
+      "candidates": ["ЛОГИСТ, ООО","НПК Мономер","ПромКапиталЪ, ООО","Спецметснаб, ООО","ТЕХНО-ФЛОТ, ООО","Оборудование для резервуаров и нефтебаз, ООО","Олег","СпецБурТехнологии, ООО","Росстрой","МегаТрейд","Спецторг, ООО","ПТФ ТЕХПРОМ, ООО","Бетонторг","Энергия, ООО","Ворота Поволжья, ООО","МетТрубПром, ООО","РУСХИМ, ООО","Поволжский завод Нефтемаш, ООО","Лесстрой-Волгоград","Юг-Партнёр"]
+    }
+  ],
+  "spot_checks": [
+    {
+      "candidate": "ПК PRIDE / ООО ПК «ПРАЙД»",
+      "source_lane": "Челябинская область / Metaprom",
+      "decision": "EARLY_REJECT",
+      "reason": "Current official site confirms an operating manufacturing business, export geography and contacts, but the fresh 2026 items found are exhibition/business-mission/service activity rather than a sufficiently strong S1-S3 expansion/investment signal. Current size threshold was not independently closed, so the candidate was not advanced.",
+      "evidence_urls": ["https://dsc-pride.ru/","https://companies.rbc.ru/id/1157456024692-ooo-proizvodstvennaya-kompaniya-prajd/"]
+    },
+    {
+      "candidate": "НПХ ВМП",
+      "source_lane": "Свердловская область / Metaprom",
+      "decision": "EARLY_REJECT",
+      "reason": "Fresh 2026 official news found concerns exhibitions, regulation/technical content and project use of materials; no sufficiently strong new S1-S3 expansion/investment signal was confirmed. Older investment/launch history was not used.",
+      "evidence_urls": ["https://vmp-holding.ru/news/"]
+    },
+    {
+      "candidate": "НПК «МОНОМЕР»",
+      "source_lane": "Волгоградская область / Metaprom",
+      "decision": "EARLY_REJECT",
+      "reason": "The matching legal entity INN 3460072338 / OGRN 1183443002203 is reported in liquidation; legal-name ambiguity with another entity was not resolved by assumption.",
+      "evidence_urls": ["https://companies.rbc.ru/id/1183443002203-ooo-nauchno-proizvodstvennaya-kompaniya-monomer/"]
+    },
+    {
+      "candidate": "Поволжский завод «Нефтемаш»",
+      "source_lane": "Волгоградская область / Metaprom",
+      "decision": "EARLY_REJECT",
+      "reason": "Fresh registry-derived source states legal entity INN 3435308075 / OGRN 1133435006000 was liquidated on 2026-03-31. Older active-status records were excluded.",
+      "evidence_urls": ["https://check.tochka.com/company/1133435006000/"]
+    }
+  ],
+  "funnel": {"raw":100,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0},
+  "qualified": [],
+  "writes": {"canonical_master":false,"contactable":false,"contacts":false,"evidence":false,"runtime":false,"campaign":false},
+  "outreach_performed": false,
+  "notes": [
+    "All five lanes exceeded the duplicate+early-reject threshold on the first 20 screened source identities and were stopped after that batch.",
+    "Exhibition/catalog presence, current production, ordinary sales/export geography and product announcements were not substituted for S1-S3.",
+    "No candidate was advanced without all FAST GATE components; therefore no deep-funnel stage was counted.",
+    "Stale records were excluded where fresher legal or operating information was available."
+  ]
+}
