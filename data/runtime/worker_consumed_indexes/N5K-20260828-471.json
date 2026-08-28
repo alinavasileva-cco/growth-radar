@@ -1,0 +1,35 @@
+{
+  "run_id": "N5K-20260828-471",
+  "recorded_at": "2026-08-28T10:03:00+03:00",
+  "status": "CONSUMED",
+  "canonical_result": {
+    "integrated": 1,
+    "canonical_count": 485,
+    "contactable_count": 485,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260828-092511-jobs.json",
+      "blob_sha": "c8cbd9259be2a04c2612d9ba94f60b30135cdf22",
+      "status": "CONSUMED_IN_RUN",
+      "raw": 80,
+      "worker_qualified": 1,
+      "net_integrated": 1
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260828-092500-industry-metrics.json",
+      "blob_sha": "e266a6e5c393212d59ed1428f0856b4a7f23217b",
+      "status": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 100,
+      "worker_qualified": 0,
+      "net_integrated": 0
+    }
+  ],
+  "history_preserved": true,
+  "outreach": false
+}
