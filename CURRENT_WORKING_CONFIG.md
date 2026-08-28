@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T09:20:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-470`  
+**Версия:** 2026-08-28T10:03:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-471`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **484 / 484**  
+**Физически подтверждённый canonical/contactable:** **485 / 485**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **516**  
-**Осталось до 5000:** **4516**  
+**Осталось до 1000:** **515**  
+**Осталось до 5000:** **4515**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **484 / 484**;
+- physical canonical/contactable count: **485 / 485**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-470`;
+- последний завершённый RUN: `N5K-20260828-471`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -48,39 +48,23 @@
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260827-454R1`: 469/469, +1 repair, PASS, orphan 0/0.
-- `N5K-20260827-455`: 471/471, +2, PASS, orphan 0/0.
-- `N5K-20260827-456`: 473/473, +2, PASS, orphan 0/0.
-- `N5K-20260827-457`: 476/476, +3, PASS, orphan 0/0.
-- `N5K-20260827-458`: 476/476, +0, PASS, orphan 0/0.
-- `N5K-20260827-459`: 476/476, +0, PASS, orphan 0/0.
-- `N5K-20260827-460`: 477/477, +1, PASS, orphan 0/0.
-- `N5K-20260827-461`: 478/478, +1, PASS, orphan 0/0.
-- `N5K-20260828-462`: 479/479, +1, PASS, orphan 0/0.
-- `N5K-20260828-463`: 480/480, +1, PASS, orphan 0/0.
-- `N5K-20260828-464`: 481/481, +1, PASS, orphan 0/0.
-- `N5K-20260828-465`: 481/481, +0, PASS, orphan 0/0.
-- `N5K-20260828-466`: 481/481, +0, PASS, orphan 0/0.
 - `N5K-20260828-467`: 482/482, +1, PASS, orphan 0/0.
 - `N5K-20260828-468`: 482/482, +0, PASS, orphan 0/0.
 - `N5K-20260828-469`: 484/484, +2, PASS, orphan 0/0.
 - `N5K-20260828-470`: 484/484, +0, PASS, orphan 0/0; physical duplicate `N5K-0593`.
+- `N5K-20260828-471`: 485/485, +1, PASS, orphan 0/0.
 
-Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging. Сокращение исторического текста в этом файле не удаляет audit-артефакты.
+Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging.
 
-## RUN 470 — canonical integration
+## RUN 471 — canonical integration
 
-Fresh worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Worker-qualified **Адванта-М Ростов** физически оказался уже существующим canonical `N5K-0593`: совпали ИНН `6165219934`, ОГРН `1196196021010`, точное юрлицо и brand+domain, поэтому повторная запись заблокирована. Industry обработал пять 20-кандидатных lanes; все остановлены после >70% duplicate+early reject.
+Fresh worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Jobs-кандидат **Аргус-ЛКМ / ООО «АРГУС ЛКМ»** прошёл повторный canonical deep-check и physical pre-write dedup по Lead ID, ИНН `6164306239`, ОГРН `1126164000115`, точному юрлицу и brand+domain. Worker-provided показатель выручки за 2025 год не использован, поскольку указанный worker URL относился к другому ИНН; canonical qualification опирается на независимо подтверждённую выручку 250,185 млн ₽ за 2024 год, действующий статус в 2026 году и свежий S1 job-сигнал 06.07.2026.
 
-Собственный low-overlap discovery добавил **125 distinct named source identities внутри проверенного sample** официального интернет-каталога `ПРОДЭКСПО-2026`. Само участие в выставке SIGNAL не считается; без независимого вероятного S1-S3 кандидаты не поднимались в deep-check.
+Собственный low-overlap discovery добавил **120 named source identities** из нескольких независимых реестров участников 2026 года: CTT Expo, CTO Expo, Logistika Expo, MINING CTT, COMvex, SobMaExpo, NAIS, Wire Russia и AGRAVIA. Иностранные компании, федеральные/слишком крупные группы, нерелевантные сущности и компании без независимого вероятного S1–S3 сигнала отсекались на FAST GATE; участие в выставке само по себе SIGNAL не считалось.
 
-Финальная воронка: **305 source-level raw → 7 fast gate → 5 SIZE → 5 LEGAL → 5 SIGNAL → 4 LPR → 1 CONTACT → 0 net QUALIFIED → 0 physically integrated**. Physical duplicates: **1**; excluded: **304**. 305 не заявляется как 305 глобально legal-key-proven distinct компаний, поскольку worker early rejects не все сохраняют полный набор INN/OGRN/domain keys. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
+Финальная воронка: **300 source-level raw → 7 fast gate → 1 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Duplicates: **0**; excluded: **299**. 300 не заявляется как 300 глобально legal-key-proven distinct компаний, поскольку worker early rejects не все сохраняют полный набор INN/OGRN/domain keys. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
 
-Canonical/contactable: **484/484**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
-
-## Latest verified run N5K-20260828-470
-Canonical/contactable: 484/484. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
+Canonical/contactable: **485/485**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
 
 ## Latest verified run N5K-20260828-471
 Canonical/contactable: 485/485. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
