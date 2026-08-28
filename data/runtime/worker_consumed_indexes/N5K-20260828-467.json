@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260828-467",
+  "updated_at": "2026-08-28T06:08:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260828-052104-jobs.json",
+      "blob_sha": "0a9c9c554ff62a77b487ae27a756b9858710a115",
+      "result": "CONSUMED_QUALIFIED_INTEGRATED",
+      "note": "First Tea Company passed canonical recheck and was physically integrated as N5K-0639. Immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-052359-industry.json",
+      "blob_sha": "962cec02967e88406732df9a20ad3c12ce4c5e61",
+      "result": "CONSUMED_DUPLICATE",
+      "note": "Worker-qualified PPGK was rejected before write: physical campaign master already contains N5K-0591 with matching INN 5035040606, OGRN 1115035000410, legal entity and brand/domain. Immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 482,
+  "physical_contactable_after_cycle": 482,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
