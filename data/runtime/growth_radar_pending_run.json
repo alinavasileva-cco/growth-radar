@@ -1,8 +1,145 @@
 {
-  "run_id": "N5K-20260828-465",
-  "updated_at": "2026-08-28T04:12:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260828-465 integrated physically; canonical/contactable 481/481; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260828-466",
+  "updated_at": "2026-08-28T05:08:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 323,
+    "fast_gate_passed": 8,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 322
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs/20260828-042149",
+      "raw": 80,
+      "fast_gate": 7,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "worker_qualified": 1,
+      "canonical_prewrite_qualified": 1,
+      "result": "TATPROMSTAN_QUALIFIED"
+    },
+    {
+      "lane": "industry/20260828-042605",
+      "raw": 100,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates_plus_early_rejects": 99,
+      "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
+    },
+    {
+      "lane": "canonical-low-overlap-official-exhibitor-catalogs",
+      "raw": 143,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 1,
+      "duplicates_plus_early_rejects": 143,
+      "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
+      "sources": [
+        "ExpoElectronica 2026 official exhibitor list",
+        "AIRVent 2026 official exhibitor list",
+        "Weldex exhibitor list used only for raw discovery; no stale evidence promoted",
+        "MosHome 2026 official exhibitor list",
+        "Analitika Expo 2026 official exhibitor list",
+        "Securika Moscow 2026 official participant publication"
+      ],
+      "note": "143 distinct source identities after in-memory name dedup across the sampled catalog batches. One physical canonical duplicate (BREEZ) was removed before deep-check. Remaining catalog-only candidates did not expose a probable S1-S3 trigger at FAST GATE; exhibition participation itself was never treated as SIGNAL. Saturated batches were rotated."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0639",
+      "Brand": "Татпромстан",
+      "Legal Name": "ООО «ТАТПРОМСТАН»",
+      "INN": "1655216482",
+      "OGRN/OGRNIP": "1111690040615",
+      "Region": "Республика Татарстан",
+      "City": "Казань",
+      "Segment": "Станкостроение / механообработка / промышленное B2B",
+      "Website": "https://tatpromstan.ru/",
+      "Revenue/Scale": "Выручка 155,1 млн ₽ за 2025 год по данным бухгалтерской отчетности; собственное станкостроительное, механообрабатывающее и сервисное направление.",
+      "Signal Level": "S1",
+      "Signal Summary": "14.08.2026 опубликована вакансия руководителя отдела продаж B2B: компания ищет руководителя для развития отдела продаж и формирования команды.",
+      "Signal Date": "2026-08-14",
+      "Signal Source": "https://dreamjob.ru/employers/5317542/vakansii/136267364",
+      "Owner": "Нуриев Ильдар Мухаматнурович — 100%",
+      "CEO": "Нуриев Ильдар Мухаматнурович",
+      "LPR": "Нуриев Ильдар Мухаматнурович",
+      "LPR Role": "Директор / единственный учредитель 100%",
+      "Primary Phone": "+7 927 417-07-85",
+      "Primary Email": "info@tatpromstan.ru",
+      "HH Contact": "",
+      "Contact Form": "https://tatpromstan.ru/contacts/",
+      "Contact Type": "official company phone + corporate email + contact page",
+      "Contact Source": "Official Татпромстан site",
+      "Consulting Hypothesis": "Масштабирование промышленного B2B-сбыта: структура отдела продаж, pipeline, CRM/KPI, развитие команды и федеральных каналов продаж.",
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "+7 927 417-07-85",
+          "type": "official corporate phone",
+          "source": "Official Татпромстан contacts",
+          "url": "https://tatpromstan.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный телефон на сайте компании."
+        },
+        {
+          "channel": "email",
+          "value": "info@tatpromstan.ru",
+          "type": "official corporate email",
+          "source": "Official Татпромстан contacts",
+          "url": "https://tatpromstan.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «ТАТПРОМСТАН», ИНН 1655216482, ОГРН 1111690040615 — действующее российское ООО; Нуриев Ильдар Мухаматнурович — директор и единственный учредитель.",
+          "url": "https://companies.rbc.ru/id/1111690040615-ooo-inzhenerno-promyishlennyij-tsentr-pegas/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Выручка ООО «ТАТПРОМСТАН» за 2025 год — 155,1 млн ₽; компания ведет собственное станкостроительное и сервисное направление.",
+          "url": "https://vaskov.pro/company/1655216482",
+          "source": "Госаналитика / данные бухгалтерской отчетности"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "14.08.2026 опубликована вакансия руководителя отдела продаж B2B с задачами развития отдела и формирования команды.",
+          "url": "https://dreamjob.ru/employers/5317542/vakansii/136267364",
+          "source": "DreamJob"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт Татпромстан публикует телефон +7 927 417-07-85 и email info@tatpromstan.ru.",
+          "url": "https://tatpromstan.ru/contacts/",
+          "source": "Official Татпромстан site"
+        }
+      ]
+    }
+  ],
+  "notes": "Fresh worker pool processed after RUN 465. Jobs: 80 raw employer identities and 1 canonical-prewrite qualified. Industry: 100 distinct raw and 0 qualified; five 20-candidate catalog lanes saturated and were rotated. Canonical writer added 143 distinct source identities from low-overlap official/catalog batches after in-memory name dedup; one known canonical duplicate was removed before deep-check and catalog participation was not treated as a signal. Combined 323 is a source-level audited pool, not claimed as 323 globally legal-key-proven distinct companies because jobs early rejects lack complete INN/OGRN/domain identity keys. Target 400-800 globally proven distinct raw was not reached, but source-level raw exceeded 300 after source rotation; criteria were not weakened; outreach=0.",
+  "qualified_staged_not_counted": 1
 }
