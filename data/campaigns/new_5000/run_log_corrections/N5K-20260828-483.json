@@ -1,0 +1,44 @@
+{
+  "run_id": "N5K-20260828-483",
+  "recorded_at": "2026-08-28T23:01:35+03:00",
+  "reason": "Fresh post-RUN-482 immutable industry staging 20260828-213900-industry-metrics.json was omitted from the original aggregate RUN 483 raw accounting.",
+  "stale_aggregate_row": {
+    "discovered": 260,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 259
+  },
+  "corrected_values": {
+    "discovered": 360,
+    "fast_gate": 15,
+    "size": 3,
+    "legal": 3,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 359,
+    "physically_integrated": 1
+  },
+  "physical_state": {
+    "canonical": 498,
+    "contactable": 498,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "qualified_staged_not_counted": 0,
+    "outreach_sent": 0
+  },
+  "authoritative_corrected_files": [
+    "data/runtime/current_run_status.json",
+    "data/run_metrics.json",
+    "data/campaigns/new_5000/run_logs/N5K-20260828-483.csv",
+    "reports/run_20260828_483.md",
+    "data/runtime/worker_consumed_indexes/N5K-20260828-483.json",
+    "data/runtime/campaign_target.json",
+    "data/runtime/growth_radar_pending_run.json",
+    "CURRENT_WORKING_CONFIG.md"
+  ],
+  "note": "Legacy aggregate data/campaigns/new_5000/run_log.csv still contains the original 260/259 row. This correction ledger makes the discrepancy explicit and prevents treating that stale mirror row as authoritative until it is rewritten safely. No company count was changed by this repair."
+}
