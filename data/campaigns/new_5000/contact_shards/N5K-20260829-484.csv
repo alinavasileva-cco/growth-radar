@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0656,N5K-0656-C01,Тангл / Tangl,6671130577,,Корпоративный маршрут,office@tangl.cloud,email,official corporate,Tangl official corporate contact,https://tangl.cloud/,NO,HIGH,2026-08-29,Подтвержденный корпоративный маршрут; персональный email ЛПР не предполагается.,N5K-20260829-484,new_5000
+N5K-0656,N5K-0656-C02,Тангл / Tangl,6671130577,,Корпоративный маршрут,info@tangl.cloud,email,official corporate,Tangl official corporate contact,https://tangl.cloud/,NO,HIGH,2026-08-29,Подтвержденный корпоративный маршрут.,N5K-20260829-484,new_5000
+N5K-0656,N5K-0656-C03,Тангл / Tangl,6671130577,,Корпоративный маршрут,+7 800 300-43-63,phone,official corporate,Tangl official corporate contact,https://tangl.cloud/,NO,HIGH,2026-08-29,Подтвержденный корпоративный телефон.,N5K-20260829-484,new_5000

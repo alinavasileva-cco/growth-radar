@@ -1,44 +1,45 @@
 {
-  "run_id": "N5K-20260828-483",
+  "run_id": "N5K-20260829-484",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T23:01:35+03:00",
+  "updated_at": "2026-08-29T00:02:18+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 497,
+    "baseline_count": 498,
     "target_count": 5000,
-    "current_canonical_count": 498,
-    "current_contactable_count": 498,
+    "current_canonical_count": 499,
+    "current_contactable_count": 499,
     "progress_added": 1,
-    "remaining": 4502
+    "remaining": 4501
   },
   "funnel": {
-    "discovered": 360,
-    "fast_gate_passed": 15,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "discovered": 301,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 0,
-    "excluded": 359
+    "duplicates": 3,
+    "excluded": 297
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260828_212420",
-      "raw": 80,
-      "fast_gate": 7,
+      "lane": "jobs_worker_20260828_231949",
+      "raw": 81,
+      "fast_gate": 1,
       "size": 1,
       "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
-      "note": "Fresh immutable worker staging created after RUN 482; candidate forwarded to recovery canonical recheck."
+      "duplicates": 3,
+      "note": "Fresh immutable jobs staging after RUN 483. Broad job-board batches stopped at >70% duplicate+early reject; Tangl alone passed worker deep funnel and was rechecked by canonical writer against fresh legal/financial/signal/contact evidence."
     },
     {
-      "lane": "industry_worker_20260828_213900",
+      "lane": "industry_worker_20260828_232438",
       "raw": 100,
       "fast_gate": 0,
       "size": 0,
@@ -47,23 +48,12 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "note": "Fresh post-RUN-482 immutable staging omitted from the original RUN 483 accounting; consumed in same-cycle audit repair. All 100 were early rejects; no catalog/exhibition presence was treated as S1-S3 signal."
+      "duplicates": 0,
+      "note": "Fresh immutable industry staging after RUN 483; five regional directory batches stopped after first 20 at 100% duplicate+early reject. Directory presence alone was not SIGNAL."
     },
     {
-      "lane": "jobs_worker_20260828_222100",
-      "raw": 80,
-      "fast_gate": 8,
-      "size": 2,
-      "legal": 2,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 0,
-      "note": "Fresh worker metrics; criteria not relaxed."
-    },
-    {
-      "lane": "industry_worker_20260828_222305",
-      "raw": 100,
+      "lane": "own_khimia_2026_first20",
+      "raw": 20,
       "fast_gate": 0,
       "size": 0,
       "legal": 0,
@@ -71,19 +61,84 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "note": "Fresh industry worker metrics; catalog/exhibition presence was not treated as S1-S3 signal."
+      "duplicates": 0,
+      "note": "Official KHIMIA 2026 preliminary exhibitor list, first 20 distinct source identities; stopped after first 20 because exhibition presence without a probable fresh S1-S3 trigger is an early reject under config. Source: https://www.chemistry-expo.ru/en/exhibition/exhibitors/"
+    },
+    {
+      "lane": "own_agroprodmash_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "note": "Official AGROPRODMASH 2026 exhibitor list, first 20 distinct Russian-source identities after collapsing repeated subject rows; stopped after first 20 because listing presence alone is not SIGNAL. Source: https://www.agroprodmash-expo.ru/en/exhibition/exhibitors/"
+    },
+    {
+      "lane": "own_aquaflame_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "note": "Official Aquaflame 2026 participant press release, 20 distinct company identities; stopped because participant/product-showcase presence alone is not S1-S3 SIGNAL. Source: https://aquaflame-expo.ru/ru/about/news/2026/february/02/press-release-aquaflame/"
+    },
+    {
+      "lane": "own_mosbuild_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "note": "Official MosBuild 2026 participant article, 20 distinct company/brand identities selected without overlap with other current-run own lanes; stopped because exhibition presence alone is not SIGNAL. Source: https://mosbuild.com/articles/mosbuild-2026-uchastniki/"
+    },
+    {
+      "lane": "own_ndt_russia_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "note": "Official NDT Russia 2026 participant news list, first 20 distinct company identities; stopped because exhibition presence alone is not SIGNAL. Source: https://www.ndt-russia.ru/ru-RU/press/news/10446.aspx"
+    },
+    {
+      "lane": "own_testing_control_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "note": "Official Testing&Control 2026 participant news list, first 20 distinct company identities excluding any overlap with the other own lanes; stopped because exhibition presence alone is not SIGNAL. Source: https://www.testing-control.ru/ru-RU/press/news/18882.aspx"
     }
   ],
   "qualified_companies": [
-    "СИЛА-ЦЕНТР / Узел Сила"
+    "Тангл / Tangl"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "498_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "498_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "499_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "499_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "repair_note": "RUN 483 audit repaired fresh staging accounting: industry/20260828-213900-industry-metrics.json (100 raw, 0 qualified) was post-RUN-482 and had been omitted from the original 260 raw total. Corrected total is 360 raw; canonical/contactable remains 498/498."
+  "blocker": null
 }
