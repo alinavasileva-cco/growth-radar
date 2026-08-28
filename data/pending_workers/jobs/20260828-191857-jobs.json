@@ -1,0 +1,132 @@
+{
+  "worker": "jobs",
+  "lane": "jobs",
+  "created_at": "2026-08-28T19:18:57+03:00",
+  "immutable": true,
+  "canonical_write": false,
+  "outreach_sent": 0,
+  "baseline": {
+    "head_sha": "e5ba49b9e319d7a9b298ba6634ca8311cfe1b277",
+    "last_completed_run": "N5K-20260828-480",
+    "canonical_count": 496,
+    "contactable_count": 496,
+    "integrity_status": "PASS"
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_passed": 8,
+    "deep_check": 8,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "excluded_or_not_promoted": 79
+  },
+  "source_lanes": [
+    {
+      "source": "JobVK / Novosibirsk commercial-director current August 2026 results",
+      "raw_distinct_used": 20,
+      "url": "https://ru.jobvk.com/novosibirsk/kommercheskiy-direktor"
+    },
+    {
+      "source": "JobVK / Samara sales-leadership current August 2026 results",
+      "raw_distinct_used": 20,
+      "url": "https://trust.jobvk.com/samara/rukovoditely-otdela-prodazh"
+    },
+    {
+      "source": "JobVK / Krasnodar sales-director current August 2026 results",
+      "raw_distinct_used": 20,
+      "url": "https://www.trust.jobvk.com/krasnodar/direktor-po-prodazham"
+    },
+    {
+      "source": "HH / Kazan executive and commercial leadership current August 2026 results",
+      "raw_distinct_used": 20,
+      "url": "https://kazan.hh.ru/vacancies/kommercheskiy_direktor"
+    }
+  ],
+  "notes": [
+    "Raw pool was handled at employer level across four regionally separated job-board lanes and deduplicated before FAST GATE.",
+    "No source-level duplicate+early-reject percentage is reconstructed where an exact first-20 count was not separately persisted during browsing; no fabricated percentage is recorded.",
+    "Only the fully confirmed QUALIFIED candidate is persisted below."
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "Альтерико / Казанские антенны",
+      "legal_name": "ООО \"АЛЬТЕРИКО\"",
+      "inn": "1657134468",
+      "ogrn": "1131690070467",
+      "region": "Республика Татарстан / Казань",
+      "company_status": "Действующее",
+      "company_size": {
+        "revenue_2025_rub": 355200000,
+        "employees_2025": 14,
+        "size_basis": "2025 revenue and 2025 employee count from current company profiles",
+        "sources": [
+          "https://saby.ru/profile/1657134468-165701001",
+          "https://zachestnyibiznes.ru/company/ul/1131690070467_1657134468_OOO-ALYTERIKO"
+        ]
+      },
+      "signal": {
+        "level": "S2",
+        "date": "2026-07-29",
+        "type": "rapid growth + industrial-direction expansion + process systematization",
+        "summary": "Компания выросла по выручке примерно с 101,2 млн ₽ за 2024 год до 355,2 млн ₽ за 2025 год; в свежей вакансии прямо указано, что Альтерико активно развивает промышленное направление и ищет специалиста, который наведёт порядок в охране труда на всех объектах. Совокупность быстрого роста, нового промышленного направления и потребности в систематизации процессов квалифицирована как S2.",
+        "sources": [
+          "https://saby.ru/profile/1657134468-165701001",
+          "https://kazan.jobcareer.ru/jobs/inzhener-po-ohrane-truda/"
+        ]
+      },
+      "owner_lpr": {
+        "name": "Залялов Фанис Фарзутдинович",
+        "role": "Директор и единственный учредитель",
+        "ownership_share": "100%",
+        "sources": [
+          "https://companies.rbc.ru/id/1131690070467-ooo-alteriko/",
+          "https://zachestnyibiznes.ru/company/ul/1131690070467_1657134468_OOO-ALYTERIKO"
+        ]
+      },
+      "contact_route": {
+        "type": "direct owner/corporate route",
+        "contact_name": "Фанис Залялов",
+        "role": "Директор / собственник",
+        "phone": "+7 (843) 210-30-85",
+        "email": "fanis@kazanantenna.ru",
+        "fallback_email": "info@kazanantenna.ru",
+        "url": "https://kazanantenna.ru/contact",
+        "route_evidence": "Official contact page names Фанис Залялов as director and publishes his direct corporate email plus company phone.",
+        "personal_contact_claimed": true
+      },
+      "evidence_urls": [
+        "https://saby.ru/profile/1657134468-165701001",
+        "https://zachestnyibiznes.ru/company/ul/1131690070467_1657134468_OOO-ALYTERIKO",
+        "https://companies.rbc.ru/id/1131690070467-ooo-alteriko/",
+        "https://kazan.jobcareer.ru/jobs/inzhener-po-ohrane-truda/",
+        "https://kazanantenna.ru/contact"
+      ],
+      "dedup_keys": {
+        "inn": "1657134468",
+        "ogrn": "1131690070467",
+        "legal_name": "ООО АЛЬТЕРИКО",
+        "brand": "Альтерико",
+        "brand_domain": "kazanantenna.ru"
+      },
+      "dedup_precheck": {
+        "repository_search_inn": "NO_MATCH",
+        "repository_search_ogrn": "NO_MATCH",
+        "repository_search_legal_name": "NO_MATCH",
+        "repository_search_domain": "NO_MATCH",
+        "checked_against_head_sha": "e5ba49b9e319d7a9b298ba6634ca8311cfe1b277"
+      },
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": true
+      }
+    }
+  ]
+}
