@@ -1,72 +1,113 @@
 {
-  "generated_at": "2026-08-28T13:06:10+03:00",
+  "generated_at": "2026-08-28T14:02:04+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260828-474",
-  "current_run_id": "N5K-20260828-474",
+  "latest_completed_run_id": "N5K-20260828-475",
+  "current_run_id": "N5K-20260828-475",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 488,
-  "contactable_verified": 488,
+  "canonical_pool_verified": 492,
+  "contactable_verified": 492,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4512,
+  "remaining_to_target": 4508,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_474": {
-    "raw_discovered": 300,
-    "fast_gate_passed": 5,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 298,
+  "run_475": {
+    "raw_discovered": 325,
+    "fast_gate_passed": 12,
+    "size_check_passed": 6,
+    "legal_match_passed": 6,
+    "signal_confirmed": 5,
+    "lpr_identified": 4,
+    "contact_route_found": 4,
+    "qualified": 4,
+    "physically_integrated": 4,
+    "duplicates": 5,
+    "excluded": 316,
     "lane_metrics": [
       {
         "lane": "jobs_worker",
-        "raw_source_identities": 80,
-        "fast_gate_passed": 4,
-        "worker_qualified": 1,
-        "canonical_qualified": 0,
-        "canonical_duplicates": 1,
-        "duplicate_lead_id": "N5K-0521",
-        "source_path": "data/pending_workers/jobs/20260828-122700-jobs.json",
-        "source_blob_sha": "d4b99562aea1b4600ada1bfcb0ff016a054aea20",
-        "result": "NTA rejected as physical canonical duplicate by INN 9718218994 and OGRN 1237700121075"
+        "raw": 80,
+        "fast_gate": 7,
+        "size": 2,
+        "legal": 2,
+        "signal": 2,
+        "lpr": 2,
+        "contact": 2,
+        "qualified": 2,
+        "duplicates_early_reject": 78
       },
       {
         "lane": "industry_worker",
-        "raw_source_identities": 100,
-        "fast_gate_passed": 1,
-        "size": 1,
-        "legal": 1,
-        "signal": 1,
-        "lpr": 1,
-        "contact": 1,
-        "worker_qualified": 1,
-        "canonical_qualified": 1,
-        "source_path": "data/pending_workers/industry/20260828-123334-industry.json",
-        "source_blob_sha": "47c8d414f63af48e88973098f4dbc464fa1a8bd7"
+        "raw": 100,
+        "fast_gate": 0,
+        "qualified": 0,
+        "duplicates_early_reject": 100,
+        "note": "5 x 20-candidate lanes stopped at 100% duplicate+early reject"
       },
       {
-        "lane": "canonical_low_overlap_current_catalogues",
-        "raw_source_identities": 120,
-        "fast_gate_passed": 0,
-        "qualified": 0,
-        "sources": [
-          "https://online.itemf.ru/info/MIMS26/catalog/",
-          "https://reg.optica-expo.ru/e-catalogue/2026/view",
-          "https://online.gefera.ru/eng/info/RM26/catalog/",
-          "https://online.gefera.ru/eng/info/RP26/catalog/",
-          "https://online.gefera.ru/eng/info/3D26/catalog/",
-          "https://2026.upakexpo-online.ru/expositions/exposition/137.html"
-        ],
-        "note": "Low-overlap current 2026 catalogue rotation was used only for discovery/FAST GATE. Each lane was capped at the first 20 source identities when duplicate+early-reject exceeded 70%; event participation itself was not treated as SIGNAL. No candidate was promoted without independently verifiable current SIZE plus probable fresh S1-S3. Source-level identities are not claimed as globally legal-key-proven distinct."
+        "lane": "growth_news_worker",
+        "raw_counted": 5,
+        "search_result_records_reviewed": 104,
+        "fast_gate": 5,
+        "size": 4,
+        "legal": 4,
+        "signal": 3,
+        "lpr": 2,
+        "contact": 2,
+        "qualified": 2,
+        "note": "Only 5 instrumented deep-checked company identities counted as raw; 104 search-result records not counted as companies"
+      },
+      {
+        "lane": "DairyTech_2026_first20",
+        "raw": 20,
+        "duplicates_early_reject": 20,
+        "rate": 1.0,
+        "qualified": 0
+      },
+      {
+        "lane": "YugAgro_2026_first20",
+        "raw": 20,
+        "duplicates_early_reject": 20,
+        "rate": 1.0,
+        "qualified": 0
+      },
+      {
+        "lane": "Analitika_Expo_2026_first20",
+        "raw": 20,
+        "duplicates_early_reject": 20,
+        "rate": 1.0,
+        "qualified": 0
+      },
+      {
+        "lane": "Pharmtech_2026_first20",
+        "raw": 20,
+        "duplicates_early_reject": 20,
+        "rate": 1.0,
+        "qualified": 0
+      },
+      {
+        "lane": "RosUpack_2026_first20",
+        "raw": 20,
+        "duplicates_early_reject": 20,
+        "rate": 1.0,
+        "qualified": 0
+      },
+      {
+        "lane": "Printech_2026_first20",
+        "raw": 20,
+        "duplicates_early_reject": 20,
+        "rate": 1.0,
+        "qualified": 0
+      },
+      {
+        "lane": "AIRVent_2026_first20",
+        "raw": 20,
+        "duplicates_early_reject": 20,
+        "rate": 1.0,
+        "qualified": 0
       }
     ]
   }

@@ -1,0 +1,12 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0646,N5K-0646-C01,Тест,6163219914,,Корпоративный маршрут,8 (800) 600-04-01,PHONE,CORPORATE,official site,https://lab-test.pro/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0646,N5K-0646-C02,Тест,6163219914,,Корпоративный маршрут,+7 (961) 271-39-82,PHONE,CORPORATE,official site,https://lab-test.pro/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0646,N5K-0646-C03,Тест,6163219914,,Корпоративный маршрут,km@lab-test.pro,EMAIL,CORPORATE,official site,https://lab-test.pro/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0647,N5K-0647-C01,Лайфтранс,6163214497,,Корпоративный маршрут,+7 (900) 137-37-17,PHONE,CORPORATE,official site,https://laiftrans.ru/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0647,N5K-0647-C02,Лайфтранс,6163214497,,Корпоративный маршрут,info@laiftrans.ru,EMAIL,CORPORATE,official site,https://laiftrans.ru/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0647,N5K-0647-C03,Лайфтранс,6163214497,,Корпоративный маршрут,https://laiftrans.ru/,WEB_FORM,CORPORATE,official site,https://laiftrans.ru/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0648,N5K-0648-C01,Борус / BORUS,2464149893,,Корпоративный маршрут,+7 (391) 290-26-96,PHONE,CORPORATE,official site,https://borus124.ru/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0648,N5K-0648-C02,Борус / BORUS,2464149893,,Корпоративный маршрут,promo@borus124.ru,EMAIL,CORPORATE,official site,https://borus124.ru/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0648,N5K-0648-C03,Борус / BORUS,2464149893,,Корпоративный маршрут,https://borus124.ru/contacts/,WEB_FORM,CORPORATE,official site,https://borus124.ru/contacts/,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0649,N5K-0649-C01,Горный инструмент,4221001049,,Корпоративный маршрут,+7 (993) 198-75-15,PHONE,CORPORATE,"Работа России mirror, vacancy updated 2026-08-12",https://m-czn.ru/vacancy/g-novokuznetsk/inzhener-konstruktor-2653665,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
+N5K-0649,N5K-0649-C02,Горный инструмент,4221001049,,Корпоративный маршрут,info@grins.ru,EMAIL,CORPORATE,"Работа России mirror, vacancy updated 2026-08-12",https://m-czn.ru/vacancy/g-novokuznetsk/inzhener-konstruktor-2653665,NO,HIGH,2026-08-28,,N5K-20260828-475,new_5000
