@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T17:58:48+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-479`  
+**Версия:** 2026-08-28T18:57:21+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-480`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **495 / 495**  
+**Физически подтверждённый canonical/contactable:** **496 / 496**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **505**  
-**Осталось до 5000:** **4505**  
+**Осталось до 1000:** **504**  
+**Осталось до 5000:** **4504**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **495 / 495**;
+- physical canonical/contactable count: **496 / 496**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-479`;
+- последний завершённый RUN: `N5K-20260828-480`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -59,6 +59,7 @@
 - `N5K-20260828-477`: 493/493, +0, PASS, orphan 0/0; physical duplicate `N5K-0473`.
 - `N5K-20260828-478`: 494/494, +1, PASS, orphan 0/0; physical duplicate `N5K-0509`.
 - `N5K-20260828-479`: 495/495, +1, PASS, orphan 0/0.
+- `N5K-20260828-480`: 496/496, +1, PASS, orphan 0/0.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging.
 
@@ -84,6 +85,12 @@ Fresh immutable worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 r
 
 Canonical/contactable: **495/495**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
 
+## RUN 480 — canonical integration
 
-## Latest verified run N5K-20260828-480
-Canonical/contactable: 496/496. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Fresh immutable worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Jobs-worker передал **Тулс / ООО «ТУЛС»**. Canonical recheck подтвердил действующее юрлицо, ИНН `5249172462`, ОГРН `1205200031398`, актуальный масштаб — выручка **80 159 000 ₽ за 2025 год**, 14 сотрудников, собственника/ЛПР Суходеева Михаила Владимировича и свежий S1-сигнал от **13.08.2026** — вакансию директора по продукту и развитию с прямой ответственностью за продуктовую стратегию и рост компании, новые функции, партнёрства и коммерческие показатели. Практический CONTACT подтверждён активным публичным маршрутом «Откликнуться» на текущей вакансии; персональный контакт не заявляется. Финальный physical integration guard не обнаружил совпадений по Lead ID, ИНН, ОГРН, точному юрлицу или brand+domain; компания интегрирована как `N5K-0653`.
+
+Собственный low-overlap discovery добавил **120 source-level observations**: по первым 20 из Beauty Show Krasnodar, InterStroyExpo, Wasma, FoodTech Krasnodar, Global Ingredients Show и Dentima Krasnodar 2026. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; само участие в выставке/каталоге SIGNAL не считалось. Эти observations не заявляются как globally legal-key-proven distinct компании, поскольку cheap rejects не все разрешялись до полного набора ИНН/ОГРН/domain.
+
+Финальная воронка: **300 source-level raw → 8 fast gate → 1 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Physical duplicates: **0**; excluded: **299**. Целевые 400–800 globally legal-key-proven distinct raw не достигнуты; критерии не снижались.
+
+Canonical/contactable: **496/496**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
