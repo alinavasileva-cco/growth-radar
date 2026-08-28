@@ -10,7 +10,7 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-28T22:35:18+03:00",
+  "updated_at": "2026-08-28T23:01:35+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260828-483",
   "current_run_id": "N5K-20260828-483",
@@ -18,5 +18,5 @@
   "latest_completed_run": "N5K-20260828-483",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "note": "N5K-20260828-483 completed after physical integration: +1 net new; canonical/contactable 498/498; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260828-483 completed after physical integration: +1 net new; canonical/contactable 498/498; integrity PASS; orphan 0/0; staged 0; outreach 0. Audit repair corrected raw accounting from 260 to 360 after consuming omitted fresh industry staging with 100 raw and 0 qualified."
 }
