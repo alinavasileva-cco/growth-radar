@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T13:06:10+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-474`  
+**Версия:** 2026-08-28T14:02:04+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-475`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **488 / 488**  
+**Физически подтверждённый canonical/contactable:** **492 / 492**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **512**  
-**Осталось до 5000:** **4512**  
+**Осталось до 1000:** **508**  
+**Осталось до 5000:** **4508**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **488 / 488**;
+- physical canonical/contactable count: **492 / 492**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-474`;
+- последний завершённый RUN: `N5K-20260828-475`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -53,6 +53,8 @@
 - `N5K-20260828-471`: 485/485, +1, PASS, orphan 0/0.
 - `N5K-20260828-472`: 487/487, +2, PASS, orphan 0/0.
 - `N5K-20260828-473`: 487/487, +0, PASS, orphan 0/0; physical duplicate `N5K-0353`.
+- `N5K-20260828-474`: 488/488, +1, PASS, orphan 0/0.
+- `N5K-20260828-475`: 492/492, +4, PASS, orphan 0/0.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging.
 
@@ -90,3 +92,13 @@ Canonical/contactable: 488/488. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 ## Latest verified run N5K-20260828-475
 Canonical/contactable: 492/492. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+## RUN 475 — canonical integration
+
+Fresh worker pool: jobs `80 raw / 2 qualified`; industry `100 raw / 0 qualified`; growth_news `104 search-result records reviewed / 5 instrumented company identities deep-checked / 2 qualified`. Search-result records growth_news не засчитывались как raw-компании без exact distinct instrumentation. Собственный low-overlap discovery дал 140 source-level observations: первые 20 из семи официальных каталогов 2026 года — DairyTech, YugAgro, Analitika Expo, Pharmtech, RosUpack, Printech и AIRVent. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; участие в выставке само по себе SIGNAL не считалось. Cheap source-name dedup выявил 5 повторов между lanes.
+
+Четыре кандидата — **Тест**, **Лайфтранс**, **Борус / BORUS**, **Горный инструмент** — прошли независимый canonical recheck и финальный physical dedup. Для решений использованы свежие подтверждённые сведения; устаревшие/conflicting worker-поля исключены. В частности, по ООО «ТЕСТ» использована актуальная доля Исакова Михаила Сергеевича 90%, а по ООО «ГОРНЫЙ ИНСТРУМЕНТ» — финансы 2025 года и свежий контактный маршрут из вакансии, обновлённой 12.08.2026.
+
+Финальная воронка: **325 source-level observations → 12 fast gate → 6 SIZE → 6 LEGAL → 5 SIGNAL → 4 LPR → 4 CONTACT → 4 QUALIFIED → 4 physically integrated**. Known cheap duplicates: **5**; excluded: **316**. После известных source-name дублей остаётся 320 source-level identities, но это не заявляется как 320 globally legal-key-proven distinct компаний, поскольку early rejects не все разрешены до INN/OGRN/domain. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
+
+Canonical/contactable: **492/492**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
