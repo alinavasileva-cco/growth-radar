@@ -1,63 +1,61 @@
 {
-  "run_id": "N5K-20260828-467",
+  "run_id": "N5K-20260828-468",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T06:06:00+03:00",
+  "updated_at": "2026-08-28T07:18:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 481,
+    "baseline_count": 482,
     "target_count": 5000,
     "current_canonical_count": 482,
     "current_contactable_count": 482,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4518
   },
   "funnel": {
-    "discovered": 312,
-    "fast_gate_passed": 9,
-    "size_check_passed": 4,
-    "legal_match_passed": 4,
+    "discovered": 300,
+    "fast_gate_passed": 8,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 0,
     "duplicates": 1,
-    "excluded": 310
+    "excluded": 299
   },
   "lane_metrics": [
     {
-      "lane": "jobs/20260828-052104",
+      "lane": "jobs/20260828-063300",
       "raw": 80,
-      "fast_gate": 7,
+      "fast_gate": 8,
       "size": 2,
       "legal": 2,
-      "signal": 1,
+      "signal": 2,
       "lpr": 1,
       "contact": 1,
       "worker_qualified": 1,
       "canonical_prewrite_qualified": 1,
-      "duplicates_plus_early_rejects": 73,
-      "result": "FIRST_TEA_GROUP_QUALIFIED"
+      "duplicates_plus_early_rejects": 72,
+      "result": "SPEKTR_PAK_YUG_QUALIFIED"
     },
     {
-      "lane": "industry/20260828-052359",
-      "raw": 118,
-      "fast_gate": 2,
-      "size": 2,
-      "legal": 2,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "worker_qualified": 1,
+      "lane": "industry/20260828-063000",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "worker_qualified": 0,
       "canonical_prewrite_qualified": 0,
-      "physical_dedup_duplicate": 1,
-      "existing_lead_id": "N5K-0591",
-      "duplicates_plus_early_rejects": 117,
-      "result": "PPGK_CANONICAL_DUPLICATE_INN_OGRN_LEGAL_BRAND_DOMAIN"
+      "duplicates_plus_early_rejects": 100,
+      "result": "ZERO_QUALIFIED_SATURATED_LANES_STOPPED"
     },
     {
-      "lane": "canonical-low-overlap-official-2026-participant-publications",
-      "raw": 114,
+      "lane": "canonical-low-overlap-official-2026-rotated-publications",
+      "raw": 120,
       "fast_gate": 0,
       "size": 0,
       "legal": 0,
@@ -65,22 +63,32 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "duplicates_plus_early_rejects": 114,
+      "duplicates_plus_early_rejects": 120,
       "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
       "sources": [
-        "TransRussia | SkladTech 2026 official press release / participant publication",
-        "MiningWorld Russia 2026 official participant publications"
+        "PRODEXPO-2026 official catalogue: 20 named Russian identities, fresh pages not used by current industry worker",
+        "TransRussia | SkladTech 2026 official participant publication: 20 named identities",
+        "MiningWorld Russia 2026 official participant publication: 20 named identities",
+        "Aquaflame 2026 official participant publication: 20 named identities",
+        "Woodex 2026 official participant publication: 18 named identities",
+        "MosBuild 2026 official participant publication: 11 named identities",
+        "DairyTech 2026 official participant publication: 5 named identities",
+        "MITT 2026 official partner/participant publication: 6 named business identities"
       ],
       "raw_source_counts": {
-        "transrussia_skladtech_named_identities": 55,
-        "miningworld_named_identities": 59
+        "prodexpo": 20,
+        "transrussia_skladtech": 20,
+        "miningworld": 20,
+        "aquaflame": 20,
+        "woodex": 18,
+        "mosbuild": 11,
+        "dairytech": 5,
+        "mitt": 6
       },
-      "note": "114 distinct named source identities after within-lane name dedup. Participation itself was never treated as SIGNAL. These publications were used only for cheap raw discovery; without an independent probable S1-S3 trigger at FAST GATE the candidates were not promoted to deep check. Source-level identities are auditable, but are not claimed globally legal-key-proven distinct against all worker early rejects."
+      "note": "120 named source identities were screened at cheap FAST GATE across eight rotated official 2026 source pools. No source was allowed to continue beyond 20 identities after >70% early-reject saturation. Exhibition/partner participation itself was never treated as SIGNAL; without an independent probable S1-S3 trigger candidates were not promoted to deep-check. Counts are source-level identities and are not claimed globally legal-key-proven distinct against worker early rejects."
     }
   ],
-  "qualified_companies": [
-    "Первая Чайная Группа / Первая Чайная Компания (ПЧК)"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,

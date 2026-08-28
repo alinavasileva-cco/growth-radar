@@ -80,3 +80,7 @@ Fresh worker pool: jobs `80 raw / 1 worker-qualified`; industry `118 raw / 1 wor
 Интегрирована **Первая Чайная Группа / Первая Чайная Компания (ПЧК)**, ООО «ТОРГОВЫЙ ДОМ «ПЕРВАЯ ЧАЙНАЯ КОМПАНИЯ», ИНН `9725116023`, ОГРН `1237700149060`, Lead ID `N5K-0639`.
 
 Canonical/contactable: **482/482**. Integrity PASS. Orphan contacts/evidence: **0/0**. Staged: **0**. Pending: cleared. Outreach: **0**.
+
+
+## Latest verified run N5K-20260828-468
+Canonical/contactable: 482/482. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
