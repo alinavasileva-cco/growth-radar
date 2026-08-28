@@ -1,0 +1,34 @@
+{
+  "run_id": "N5K-20260828-476",
+  "recorded_at": "2026-08-28T15:03:30+03:00",
+  "status": "CONSUMED_AFTER_VERIFIED_INTEGRATION",
+  "canonical_before": 492,
+  "canonical_after": 493,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach": 0,
+  "files": [
+    {
+      "worker": "jobs",
+      "path": "data/pending_workers/jobs/20260828-141736-jobs.json",
+      "blob_sha": "66821319f41cd095c66687f5059f1bbdbcbbd85f",
+      "status": "CONSUMED_INTEGRATED",
+      "raw": 80,
+      "worker_qualified": 1,
+      "net_integrated": 1,
+      "lead_ids": ["N5K-0650"]
+    },
+    {
+      "worker": "industry",
+      "path": "data/pending_workers/industry/20260828-144300-industry-metrics.json",
+      "blob_sha": "8e706ce0f03bc321499e6c18938e844a25277c01",
+      "status": "CONSUMED_NO_QUALIFIED",
+      "raw": 100,
+      "worker_qualified": 0,
+      "net_integrated": 0,
+      "known_canonical_duplicates": ["N5K-0546"]
+    }
+  ],
+  "note": "Immutable staging retained for audit. Consumed index created only after physical master/contact/evidence shards and runtime integrity PASS were verified."
+}
