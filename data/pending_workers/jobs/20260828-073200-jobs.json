@@ -1,0 +1,138 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-28T07:32:00+03:00",
+    "source_head_sha": "d06a5cfa2caf5633b43b83e45f8f98d9b5decff5",
+    "source_config_version": "2026-08-28T06:08:00+03:00",
+    "source_last_completed_run": "N5K-20260828-468",
+    "canonical_baseline": 482,
+    "contactable_baseline": 482,
+    "canonical_write": false,
+    "outreach": false,
+    "notes": "READ+DISCOVERY only. No canonical master/contactable/contacts/evidence/runtime/campaign writes and no canonical writer. Fresh regional job-board pools were used. Tyumen first-20 did not cross the >70% duplicate+early-reject stop threshold; discovery was then rotated to Samara, Krasnoyarsk and Voronezh to reduce overlap. Stale records were excluded from qualification decisions. Final dedup was repeated immediately before staging on the fresh HEAD by INN, OGRN and brand+domain."
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_pass": 5,
+    "deep_check": 5,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 2,
+    "lpr_pass": 2,
+    "contact_pass": 2,
+    "qualified": 2,
+    "duplicate_or_early_reject": 75,
+    "source_rotation_note": "Raw employer-level pool was assembled from fresh HH regional listings and current job-board mirrors for Tyumen, Samara, Krasnoyarsk and Voronezh. Exact per-lane duplicate/reject counts were not reconstructed after the fact. Deep-check rejects included a too-small same-name 'Техника Сибири' entity and ambiguous same-name/legal-linkage cases that were not promoted without a full evidence chain."
+  },
+  "qualified": [
+    {
+      "brand": "АФ «Перспектива» ОМЗ / Завод Перспектива",
+      "legal_name": "ООО АФ «ПЕРСПЕКТИВА» ОМЗ",
+      "inn": "6318035951",
+      "ogrn": "1186313049823",
+      "legal_status": "Действует",
+      "region": "Самарская область",
+      "city": "Самара",
+      "segment": "Промышленное машиностроение / оборудование для внутрипроизводственной логистики / B2B",
+      "website": "https://perspektivaomz.ru/",
+      "revenue_scale": "Выручка за 2025 год 435 721 000 ₽; 72 сотрудника по актуальным профилям компании. Производитель специализированного промышленного оборудования.",
+      "signal_level": "S1",
+      "signal_summary": "Свежая вакансия коммерческого директора / руководителя проектных продаж: выполнение планов по договорам, выручке и маржинальности, развитие клиентской базы, переговоры с первыми лицами, работа с закупочными центрами холдингов и построение маркетингового контура.",
+      "signal_date": "2026-08-23",
+      "signal_source": "https://khtjsru.jobvk.com/samara/na-mehanicheskom-zavode",
+      "supporting_job_source": "https://h.careers/job/f2657f33-6c39-4cf3-a00d-aa1910139a91",
+      "owner": "Литвиненко Леонид Михайлович — 84,66%; Литвиненко Виталий Леонидович — 12,10%; прочие миноритарии",
+      "ceo": "Литвиненко Виталий Леонидович — генеральный директор с 16.07.2025",
+      "lpr": "Литвиненко Виталий Леонидович",
+      "lpr_role": "Генеральный директор и совладелец",
+      "primary_phone": "+7 (846) 207-61-11",
+      "primary_email": "info@perspektivaomz.ru",
+      "contact_form": "https://perspektivaomz.ru/contact",
+      "contact_type": "Официальный корпоративный телефон + email + сайт",
+      "contact_source": "https://perspektivaomz.ru/contact",
+      "evidence_urls": [
+        "https://h.careers/job/f2657f33-6c39-4cf3-a00d-aa1910139a91",
+        "https://khtjsru.jobvk.com/samara/na-mehanicheskom-zavode",
+        "https://perspektivaomz.ru/contact",
+        "https://saby.ru/profile/6318035951-631801001",
+        "https://companies.rbc.ru/id/1186313049823-ooo-aktsionernaya-firma-perspektiva-opyitno-mehanicheskij-zavod/"
+      ],
+      "dedup_keys": {
+        "inn": "6318035951",
+        "ogrn": "1186313049823",
+        "legal_name_normalized": "ООО АФ ПЕРСПЕКТИВА ОМЗ",
+        "brand_domain": "АФ Перспектива ОМЗ|perspektivaomz.ru"
+      },
+      "dedup_precheck": {
+        "inn_repo_search": "no match",
+        "ogrn_repo_search": "no match",
+        "domain_repo_search": "no match"
+      },
+      "gates": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      },
+      "consulting_hypothesis": "Диагностика B2B проектных продаж: сегментация промышленных заказчиков, управление длинной воронкой, маржинальность, тендерный контур, CRM/KPI и систематизация работы с закупочными центрами крупных холдингов.",
+      "worker_status": "QUALIFIED_STAGED_NOT_CANONICAL"
+    },
+    {
+      "brand": "Малтат / Руслов",
+      "legal_name": "ООО «МАЛТАТ»",
+      "inn": "2403007482",
+      "ogrn": "1072439000149",
+      "legal_status": "Действует",
+      "region": "Красноярский край",
+      "city": "Красноярск",
+      "segment": "Рыбоводство и рыбопереработка / FMCG / B2B",
+      "website": "https://www.ruslov.ru/",
+      "revenue_scale": "Выручка за 2025 год 1 518 419 000 ₽ (+72,5% к 2024); 167 сотрудников по актуальному профилю; средний бизнес.",
+      "signal_level": "S1",
+      "signal_summary": "Компания ищет коммерческого директора с ответственностью за стратегические планы, ценовую политику, цели предприятия и стимулирование продаж; актуальная HH/job-board выдача также показывает директорскую вакансию компании в конце августа 2026.",
+      "signal_date": "2026-07-30",
+      "signal_source": "https://rabota1000.ru/krasnoturansk/direktor-predstavitelstva",
+      "supporting_job_source": "https://krasnoyarsk.hh.ru/vacancies/kommercheskij-direktor-b2b",
+      "owner": "Нусс Надежда Давыдовна — 100% учредитель ООО «МАЛТАТ»",
+      "ceo": "Федосов Андрей Геннадьевич — генеральный директор с 30.03.2026",
+      "lpr": "Федосов Андрей Геннадьевич",
+      "lpr_role": "Генеральный директор / практический ЛПР",
+      "primary_phone": "+7 (391) 271-45-92",
+      "primary_email": "sales@ruslov.ru",
+      "contact_form": "https://www.ruslov.ru/about",
+      "contact_type": "Официальный корпоративный телефон + email + контакты юридического лица на собственном сайте",
+      "contact_source": "https://www.ruslov.ru/about",
+      "evidence_urls": [
+        "https://rabota1000.ru/krasnoturansk/direktor-predstavitelstva",
+        "https://krasnoyarsk.hh.ru/vacancies/kommercheskij-direktor-b2b",
+        "https://baijialederuhewan.jobvk.com/krasnoyarsk/maltat",
+        "https://www.ruslov.ru/about",
+        "https://firmoteka.ru/2403007482",
+        "https://b2b.house/company/OOO-MALTAT_1560dc7b-9266-4df6-b105-126775e1f2dd/"
+      ],
+      "dedup_keys": {
+        "inn": "2403007482",
+        "ogrn": "1072439000149",
+        "legal_name_normalized": "ООО МАЛТАТ",
+        "brand_domain": "Малтат / Руслов|ruslov.ru"
+      },
+      "dedup_precheck": {
+        "inn_repo_search": "no match",
+        "ogrn_repo_search": "no match",
+        "domain_repo_search": "no match"
+      },
+      "gates": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      },
+      "consulting_hypothesis": "Коммерческая диагностика FMCG/B2B на фоне быстрого роста: каналовая стратегия, ценообразование, маржинальность, управление отделом продаж, CRM/KPI и масштабирование дистрибуции.",
+      "worker_status": "QUALIFIED_STAGED_NOT_CANONICAL"
+    }
+  ]
+}
