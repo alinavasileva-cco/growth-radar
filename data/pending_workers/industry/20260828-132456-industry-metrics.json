@@ -1,0 +1,100 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-28T13:24:56+03:00",
+  "baseline_head": "d2decb3ce94d81118e1d83f40aa0a3ae29d4c503",
+  "config_version": "2026-08-28T13:06:10+03:00",
+  "canonical_contactable_baseline": 488,
+  "integrity": "PASS",
+  "outreach": false,
+  "canonical_writes": false,
+  "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal entity", "confirmed brand+domain"],
+  "notes": [
+    "Exhibition participation was not treated as S1-S3 signal.",
+    "Raw identities below are distinct within this worker run at source-name level; early rejects were not promoted to full legal-key resolution.",
+    "Each lane was stopped after the first 20 because duplicate+early-reject exceeded 70%.",
+    "No criteria were weakened and no contacts were inferred."
+  ],
+  "funnel": {
+    "raw_distinct_source_identities": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "lanes": [
+    {
+      "source": "RECYCLING SOLUTIONS 2026 participant registry",
+      "url": "https://md.expodat.com/expositions/exposition/146-recycling-solutions-2026.html",
+      "industry": "recycling / polymers / industrial equipment",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["DK TEAMWORK MACHINERY", "İnan Geri Dönüşüm Sistemleri A.Ş", "Kalika International", "MING JILEE ENTERPRISE CO.,LTD", "Polytekprom Teknik Makina Ith.Ihr. San. Ve Tic. Ltd. Şti.", "Üstüniş Makine San ve Tic A.S", "Vikotech Makine San Tic Ltd Sti", "Алеко, ГК", "ГРАНПЛАСТ", "ДПЛ Полимер", "ЗЕРМА РУС", "Полимер Клаб, ООО", "ПОЛИМЕХ, ООО", "РЕ-ПЛАСТ, ООО", "Смарт Рэй, ООО", "Столица Полимеров, ООО", "Стройпласт, ООО", "ТПК СТР, ООО", "ЦЗАНСУ ТУРУИ ТЕХНОЛОДЖИ", "Эксимпак-Оборудование, ООО"]
+    },
+    {
+      "source": "Cabex 2026 exhibitor roster",
+      "url": "https://www.cabex.ru/en-GB/press/news/18198.aspx",
+      "industry": "cable / electrical manufacturing",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["2M OPTIC", "BNG Compounds", "Gavary Compounds", "Genesis", "Habsans", "Xinming", "Akron Holding", "Alur", "Astron-Unit", "Bashplast", "BMP Technology", "Izolyator-Aks", "Kamkat", "MKZ", "NPTs Ekran", "OKB KP", "Promrukav", "Raitek", "Rybinskkabel", "Saranskkabel"]
+    },
+    {
+      "source": "INTERLAKOKRASKA-2026 exhibitor catalog",
+      "url": "https://www.interlak-expo.ru/ru/exhibition/exhibitors/",
+      "industry": "coatings / chemicals / industrial materials",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["АВИАЦИОННЫЕ ЛАКОКРАСОЧНЫЕ ТЕХНОЛОГИИ", "АВИВИР", "АВК-ХИМ", "АВТОГРАФ ПРОМЫШЛЕННЫЕ ТЕХНОЛОГИИ", "АГЕТТ", "АКРИТЕХ", "АЛИСТЕРУС", "АЛЛНЕКС БЕЛГОРОД", "АНКАР", "АРТ ИНДУСТРИЯ", "АССОЦИАЦИЯ ЭКСПОРТЕРОВ И ИМПОРТЕРОВ", "АСТРОЙСЕРВИС", "АФАЯ", "БЕЛ ПЕКА", "БЕЛНЕФТЕХИМ-РОС", "БЛЕСТЯЩАЯ ЛИНИЯ", "БОЯСАН", "СЛАНЦЫ-ХИМ", "СМАРТ ИНСТРУМЕНТС", "СОЮЗКРАСКА, АССОЦИАЦИЯ ПРОИЗВОДИТЕЛЕЙ ЛАКОКРАСОЧНЫХ МАТЕРИАЛОВ"]
+    },
+    {
+      "source": "ELEKTRO-2026 exhibitor catalog",
+      "url": "https://www.elektro-expo.ru/ru/exhibition/exhibitors/",
+      "industry": "electrical equipment / automation / power",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["ABSOLITE", "ACRELE-BUSINESS (SHANGHAI) CO. LTD", "AGIS PROFILE", "AKİŞ PLASTİK PROF ELEKTRİK SAN. VE TİC. LTD. ŞTİ.", "ANDELI", "AOKO GLOBAL LIMITED", "ASIAON ELECTRIC CO. LTD", "BAOYU HOLDING CO. LTD", "BEISIT ELECTRIC TECH (HANGZHOU) CO. LTD", "BEMIS TECHNICAL ELECTRIC INC.", "ÇAĞDAŞ PANO ELEKTRİK A.Ş.", "ÇETİNKAYA PANO SAC TABLO VE PLASTİK SAN. TİC. A.Ş.", "CHANGYOU TECHNOLOGY (ZHEJIANG) CO. LTD", "CHAORUI ELECTRIC CO. LTD", "CHENGDU ALTAIR INTERNATIONAL TRADING CO. LTD", "CHINA ZBB GROUP SHANGHAI TRANSFORMER CO. LTD", "CIXI WANJIE ELECTRONIC CO. LTD", "CNC ELECTRIC", "CYLON ELECTRICAL INDUSTRY GROUP", "DEKRON"]
+    },
+    {
+      "source": "NEFTEGAZ-2026 exhibitor catalog",
+      "url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d0466-98f8-11ef-80ce-a0d3c1fab97f/list",
+      "industry": "oil & gas equipment / industrial automation",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "candidates": ["АВАЛОНЭЛЕКТРОТЕХ НПО, ООО", "АВИАТРОН, НПП, ООО", "ТЕХНОПАРК ВЫСОКИХ ТЕХНОЛОГИЙ ЮГРЫ", "АГВ, АО", "АЛЬФАМЕТРИКС", "АЛЬЯНС-ЭНЕРГИЯ, ООО", "АНАЛИТПРИБОР, ФГУП, СПО", "ЗиО, Группа компаний", "ИНКОМСИСТЕМ, НАУЧНО-ИНЖЕНЕРНЫЙ ЦЕНТР, АО", "ИНКОНТРОЛ, ООО", "ИННОВАЦИОННАЯ ПРОМЫШЛЕННАЯ КОМПАНИЯ, ООО", "ИНСАТ, ООО", "КОМПРЕССОРТЕХ", "КОНРУС, НПП, АО", "КОНСЭРГО, ООО", "КСТ ЭНЕРГО ИНЖИНИРИНГ", "КУРГАНМАШЗАВОД, АО", "КУРСКИЙ ЭЛЕКТРОАППАРАТНЫЙ ЗАВОД (КЭАЗ), АО", "ЛЕПРОСТ, ООО", "ПОЖТЕХСПАС, ООО"]
+    }
+  ],
+  "deep_check_notes": [
+    {
+      "candidate": "ДПЛ Полимер",
+      "result": "early reject before deep funnel",
+      "reason": "Current legal/scale evidence exists, but the quick 2026 evidence found was exhibition/innovation activity rather than a sufficiently explicit fresh S1-S3 expansion signal for this run.",
+      "evidence": ["https://companies.rbc.ru/id/1084001000368-ooo-dpl-polimer/", "https://www.rusexporter.ru/news/kaluzhskiy-proizvoditel-polimerov-predstavil-innovatsionnye-resheniya-na-mezhdunarodnoy-vystavke-rec/"]
+    },
+    {
+      "candidate": "Промрукав",
+      "result": "early reject before deep funnel",
+      "reason": "Fresh 2026 product-line expansion was found, but no sufficiently explicit current S1-S3 company expansion/investment signal was confirmed without interpretation; criteria were not stretched.",
+      "evidence": ["https://www.elec.ru/news/2026/04/03/promrukav-rasshirjaet-linejku-reshenij-dlja-molnie.html", "https://b2b.promrukav.ru/news/instructions/"]
+    },
+    {
+      "candidate": "Уфагидромаш",
+      "result": "not counted in raw list; spot-check only",
+      "reason": "Current operating entity and official site were found, but 2026 public activity checked was exhibition-led and did not provide a strong standalone S1-S3 expansion trigger.",
+      "evidence": ["https://ufagidromash.ru/", "https://otc.ru/organization/all/1130280003160/"]
+    }
+  ]
+}
