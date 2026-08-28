@@ -1,0 +1,83 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-28T06:33:00+03:00",
+    "source_head_sha": "328a7ea1d1a84f7d92a28d06551591743d67ebb4",
+    "source_config_version": "2026-08-28T06:08:00+03:00",
+    "source_last_completed_run": "N5K-20260828-467",
+    "canonical_baseline": 482,
+    "contactable_baseline": 482,
+    "canonical_write": false,
+    "outreach": false,
+    "notes": "READ+DISCOVERY only. Canonical master/contactable/contacts/evidence/runtime/campaign were not written. Fresh regional job-board pools were rotated; stale/ambiguous results were excluded from qualification decisions. Exact canonical dedup was rechecked before staging by INN, OGRN and brand+domain."
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_pass": 8,
+    "deep_check": 3,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 2,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "duplicate_or_early_reject": 72,
+    "source_rotation_note": "Employer-level raw pool was assembled from fresh regional HH/job-board mirrors for Ufa, Perm, Kazan, Yekaterinburg, Novosibirsk and Rostov-on-Don. Broad/saturated names and employers lacking a probable S1-S3 signal or scale evidence were rejected before deep-check. Energosila was not promoted due ambiguous legal-entity linkage across same-name Perm entities; PNK-Region was not promoted without a sufficiently direct current LPR/contact proof chain in this pass."
+  },
+  "qualified": [
+    {
+      "brand": "Спектр-Пак Юг / Спектр-Пак",
+      "legal_name": "ООО «СПЕКТР-ПАК ЮГ»",
+      "inn": "6140013392",
+      "ogrn": "1216100031916",
+      "legal_status": "Действует",
+      "region": "Ростовская область",
+      "city": "Азов / Ростов-на-Дону",
+      "segment": "Производство упаковочных материалов / переработка полимеров / B2B",
+      "website": "https://spektr-pack.ru/",
+      "revenue_scale": "Выручка за 2025 год 317 660 000 ₽; малое предприятие. Официальный сайт: завод полного цикла, 10 000 м² производства и складов, 18 000 т продукции в год, 4000+ клиентов на Юге России.",
+      "signal_level": "S1",
+      "signal_summary": "Свежая вакансия коммерческого директора (CCO) у завода Спектр-Пак Юг; роль отвечает за коммерческий блок. Официальный сайт одновременно фиксирует расширение перерабатывающего завода и рост производственного холдинга.",
+      "signal_date": "2026-08-11",
+      "signal_source": "https://dreamjob.ru/employers/2707806/vakansii/136141802",
+      "supporting_job_source": "https://nesiditsa.ru/vacancy/136141802",
+      "owner": "Колоскова Татьяна Михайловна — 100% учредитель ООО «СПЕКТР-ПАК ЮГ»",
+      "ceo": "Колоскова Татьяна Михайловна — генеральный директор ООО «СПЕКТР-ПАК ЮГ» по актуальным данным юрлица",
+      "lpr": "Колоскова Татьяна Михайловна",
+      "lpr_role": "Генеральный директор и 100% собственник юридического лица",
+      "primary_phone": "+7 (800) 500-85-96",
+      "primary_email": "info@spektr-pack.ru",
+      "contact_form": "https://spektr-pack.ru/",
+      "contact_type": "Официальный корпоративный телефон + email + форма обратного звонка на сайте",
+      "contact_source": "https://spektr-pack.ru/",
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/2707806/vakansii/136141802",
+        "https://nesiditsa.ru/vacancy/136141802",
+        "https://spektr-pack.ru/",
+        "https://www.tbank.ru/business/contractor/legal/1216100031916/",
+        "https://companies.rbc.ru/id/1216100031916-obschestvo-s-ogranichennoj-otvetstvennostyu-spektr-pak-yug/"
+      ],
+      "dedup_keys": {
+        "inn": "6140013392",
+        "ogrn": "1216100031916",
+        "legal_name_normalized": "ООО СПЕКТР ПАК ЮГ",
+        "brand_domain": "Спектр-Пак Юг|spektr-pack.ru"
+      },
+      "dedup_precheck": {
+        "inn_repo_search": "no match",
+        "ogrn_repo_search": "no match",
+        "domain_repo_search": "no match"
+      },
+      "gates": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      },
+      "consulting_hypothesis": "Диагностика коммерческого блока B2B: сегментация промышленных клиентов, управление каналами продаж, CRM/KPI, маржинальность и масштабирование коммерческой системы на фоне роста производства.",
+      "worker_status": "QUALIFIED_STAGED_NOT_CANONICAL"
+    }
+  ]
+}
