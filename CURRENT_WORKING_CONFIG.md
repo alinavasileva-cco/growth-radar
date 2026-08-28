@@ -94,3 +94,7 @@ Fresh immutable worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 r
 Финальная воронка: **300 source-level raw → 8 fast gate → 1 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Physical duplicates: **0**; excluded: **299**. Целевые 400–800 globally legal-key-proven distinct raw не достигнуты; критерии не снижались.
 
 Canonical/contactable: **496/496**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
+
+
+## Latest verified run N5K-20260828-482
+Canonical/contactable: 497/497. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

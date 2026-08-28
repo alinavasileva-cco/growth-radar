@@ -1,66 +1,176 @@
 {
-  "run_id": "N5K-20260828-481",
+  "run_id": "N5K-20260828-482",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T20:39:02+03:00",
+  "updated_at": "2026-08-28T21:09:18+03:00",
   "stage": "COMPLETE",
-  "mode": "RECOVERY_RESUME",
-  "recovery_reason": "Expected hourly canonical cycle after RUN 480 had no confirmed canonical commit by 20:39 MSK. Fresh worker outputs were consumed and final physical dedup was repeated before any write.",
   "new_cycle": {
     "baseline_count": 496,
     "target_count": 5000,
-    "current_canonical_count": 496,
-    "current_contactable_count": 496,
-    "progress_added": 0,
-    "remaining": 4504
+    "current_canonical_count": 497,
+    "current_contactable_count": 497,
+    "progress_added": 1,
+    "remaining": 4503
   },
   "funnel": {
-    "discovered": 180,
-    "fast_gate_passed": 8,
+    "discovered": 300,
+    "fast_gate_passed": 2,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified_before_final_dedup": 1,
-    "qualified": 0,
+    "qualified": 1,
     "duplicates": 1,
-    "excluded": 179
+    "excluded": 298
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker",
-      "worker_file": "data/pending_workers/jobs/20260828-201837-jobs.json",
-      "worker_blob_sha": "0d346ce984f8b3b6571e496ac3068ef756985efe",
-      "raw": 80,
-      "fast_gate": 8,
+      "lane": "fresh_worker_jobs",
+      "raw": 0,
+      "qualified": 0,
+      "note": "No staging newer than consumed 20260828-201837-jobs.json."
+    },
+    {
+      "lane": "fresh_worker_industry",
+      "raw": 0,
+      "qualified": 0,
+      "note": "No staging newer than consumed 20260828-202330-industry-metrics.json."
+    },
+    {
+      "lane": "fresh_worker_growth_news",
+      "raw": 0,
+      "qualified": 0,
+      "note": "No fresh staging after 20260828-133000-growth-news.json."
+    },
+    {
+      "lane": "fresh_worker_official_owner",
+      "raw": 0,
+      "qualified": 0,
+      "note": "No fresh staging after 20260826-194739-official-owner.json."
+    },
+    {
+      "lane": "current_jobs_direct",
+      "raw": 20,
+      "fast_gate": 2,
+      "duplicates": 1,
       "size": 1,
       "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "worker_qualified": 1,
-      "net_new_after_final_physical_dedup": 0,
-      "note": "UNIONDELTA was already physically present in canonical master as N5K-0351; no duplicate write."
+      "qualified": 1,
+      "early_reject": 18,
+      "note": "Спектр-Пак Юг rejected at cheap physical dedup as existing N5K-0423; НТК Приборэнерго passed deep funnel."
     },
     {
-      "lane": "industry_worker",
-      "worker_file": "data/pending_workers/industry/20260828-202330-industry-metrics.json",
-      "worker_blob_sha": "5c97bc04c3337159139005d740a5ef87c1a01675",
-      "raw": 100,
-      "fast_gate": 0,
+      "lane": "ndt_russia_2026",
+      "raw": 20,
+      "early_reject": 20,
       "qualified": 0,
-      "first_20_batches_stopped_over_70pct": 5
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "beauty_show_krasnodar_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "heat_power_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "testing_control_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "global_ingredients_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "pcvexpo_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "cemat_russia_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "wasma_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "expocoating_moscow_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "interfood_krasnodar_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "aquaflame_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "securika_moscow_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "mosbuild_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
+    },
+    {
+      "lane": "modern_bakery_2026",
+      "raw": 20,
+      "early_reject": 20,
+      "qualified": 0,
+      "stopped_over_70pct": true
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "НТК Приборэнерго"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "496_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "496_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "qualified_staged_not_counted": 0,
+  "physical_master_state": "497_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "497_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

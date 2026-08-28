@@ -1,58 +1,167 @@
 {
-  "generated_at": "2026-08-28T20:39:02+03:00",
+  "generated_at": "2026-08-28T21:09:18+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260828-481",
-  "current_run_id": "N5K-20260828-481",
+  "latest_completed_run_id": "N5K-20260828-482",
+  "current_run_id": "N5K-20260828-482",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 496,
-  "contactable_verified": 496,
+  "canonical_pool_verified": 497,
+  "contactable_verified": 497,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4504,
+  "remaining_to_target": 4503,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_481": {
-    "mode": "RECOVERY_RESUME",
-    "raw_discovered": 180,
-    "fast_gate_passed": 8,
+  "run_482": {
+    "raw_discovered": 300,
+    "fast_gate_passed": 2,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified_before_final_dedup": 1,
-    "qualified": 0,
-    "physically_integrated": 0,
+    "qualified": 1,
+    "physically_integrated": 1,
     "duplicates": 1,
-    "excluded": 179,
-    "recovery_reason": "Expected hourly canonical cycle after RUN 480 had no confirmed canonical commit by 20:39 MSK.",
+    "excluded": 298,
     "lane_metrics": [
       {
-        "lane": "jobs_worker",
-        "worker_file": "data/pending_workers/jobs/20260828-201837-jobs.json",
-        "worker_blob_sha": "0d346ce984f8b3b6571e496ac3068ef756985efe",
-        "raw": 80,
-        "fast_gate": 8,
+        "lane": "fresh_worker_jobs",
+        "raw": 0,
+        "qualified": 0,
+        "note": "No staging newer than consumed 20260828-201837-jobs.json."
+      },
+      {
+        "lane": "fresh_worker_industry",
+        "raw": 0,
+        "qualified": 0,
+        "note": "No staging newer than consumed 20260828-202330-industry-metrics.json."
+      },
+      {
+        "lane": "fresh_worker_growth_news",
+        "raw": 0,
+        "qualified": 0,
+        "note": "No fresh staging after 20260828-133000-growth-news.json."
+      },
+      {
+        "lane": "fresh_worker_official_owner",
+        "raw": 0,
+        "qualified": 0,
+        "note": "No fresh staging after 20260826-194739-official-owner.json."
+      },
+      {
+        "lane": "current_jobs_direct",
+        "raw": 20,
+        "fast_gate": 2,
+        "duplicates": 1,
         "size": 1,
         "legal": 1,
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "worker_qualified": 1,
-        "net_new": 0,
-        "final_dedup_note": "UNIONDELTA / ООО «ПРОФ-ТОН ГРУПП», ИНН 7453330306, OGRN 1197456034302, already exists as canonical Lead ID N5K-0351."
+        "qualified": 1,
+        "early_reject": 18,
+        "note": "Спектр-Пак Юг rejected at cheap physical dedup as existing N5K-0423; НТК Приборэнерго passed deep funnel."
       },
       {
-        "lane": "industry_worker",
-        "worker_file": "data/pending_workers/industry/20260828-202330-industry-metrics.json",
-        "worker_blob_sha": "5c97bc04c3337159139005d740a5ef87c1a01675",
-        "raw": 100,
-        "fast_gate": 0,
+        "lane": "ndt_russia_2026",
+        "raw": 20,
+        "early_reject": 20,
         "qualified": 0,
-        "first_20_batches_stopped_over_70pct": 5
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "beauty_show_krasnodar_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "heat_power_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "testing_control_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "global_ingredients_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "pcvexpo_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "cemat_russia_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "wasma_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "expocoating_moscow_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "interfood_krasnodar_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "aquaflame_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "securika_moscow_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "mosbuild_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
+      },
+      {
+        "lane": "modern_bakery_2026",
+        "raw": 20,
+        "early_reject": 20,
+        "qualified": 0,
+        "stopped_over_70pct": true
       }
     ]
   }
