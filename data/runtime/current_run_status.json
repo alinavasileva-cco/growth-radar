@@ -1,34 +1,37 @@
 {
-  "run_id": "N5K-20260828-480",
+  "run_id": "N5K-20260828-481",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T18:57:21+03:00",
+  "updated_at": "2026-08-28T20:39:02+03:00",
   "stage": "COMPLETE",
+  "mode": "RECOVERY_RESUME",
+  "recovery_reason": "Expected hourly canonical cycle after RUN 480 had no confirmed canonical commit by 20:39 MSK. Fresh worker outputs were consumed and final physical dedup was repeated before any write.",
   "new_cycle": {
-    "baseline_count": 495,
+    "baseline_count": 496,
     "target_count": 5000,
     "current_canonical_count": 496,
     "current_contactable_count": 496,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4504
   },
   "funnel": {
-    "discovered": 300,
+    "discovered": 180,
     "fast_gate_passed": 8,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 299
+    "qualified_before_final_dedup": 1,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 179
   },
   "lane_metrics": [
     {
       "lane": "jobs_worker",
-      "worker_file": "data/pending_workers/jobs/20260828-182203-jobs.json",
-      "worker_blob_sha": "1d63b60deb7a9389c80ec4a494f4de5f83e31a04",
+      "worker_file": "data/pending_workers/jobs/20260828-201837-jobs.json",
+      "worker_blob_sha": "0d346ce984f8b3b6571e496ac3068ef756985efe",
       "raw": 80,
       "fast_gate": 8,
       "size": 1,
@@ -36,81 +39,28 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1
+      "worker_qualified": 1,
+      "net_new_after_final_physical_dedup": 0,
+      "note": "UNIONDELTA was already physically present in canonical master as N5K-0351; no duplicate write."
     },
     {
       "lane": "industry_worker",
-      "worker_file": "data/pending_workers/industry/20260828-182552-industry-metrics.json",
-      "worker_blob_sha": "04a2f857b14e0431bb594a7ea6f746e9f44d906a",
+      "worker_file": "data/pending_workers/industry/20260828-202330-industry-metrics.json",
+      "worker_blob_sha": "5c97bc04c3337159139005d740a5ef87c1a01675",
       "raw": 100,
       "fast_gate": 0,
       "qualified": 0,
       "first_20_batches_stopped_over_70pct": 5
-    },
-    {
-      "lane": "Beauty Show Krasnodar 2026",
-      "source": "https://www.beautyshow.su/en-GB/about/exhibitor-list.aspx",
-      "raw": 20,
-      "duplicates_plus_early_rejects": 20,
-      "duplicate_plus_early_reject_rate": 1.0,
-      "qualified": 0,
-      "stopped_after_first_20": true
-    },
-    {
-      "lane": "InterStroyExpo 2026",
-      "source": "https://www.interstroyexpo.com/en-GB/about/exhibitor-list.aspx",
-      "raw": 20,
-      "duplicates_plus_early_rejects": 20,
-      "duplicate_plus_early_reject_rate": 1.0,
-      "qualified": 0,
-      "stopped_after_first_20": true
-    },
-    {
-      "lane": "Wasma 2026",
-      "source": "https://www.wasma.ru/en-GB/visitors/exhibitor-list.aspx",
-      "raw": 20,
-      "duplicates_plus_early_rejects": 20,
-      "duplicate_plus_early_reject_rate": 1.0,
-      "qualified": 0,
-      "stopped_after_first_20": true
-    },
-    {
-      "lane": "FoodTech Krasnodar 2026",
-      "source": "https://www.foodtech-krasnodar.ru/en-GB/about/exhibitor-list-new.aspx",
-      "raw": 20,
-      "duplicates_plus_early_rejects": 20,
-      "duplicate_plus_early_reject_rate": 1.0,
-      "qualified": 0,
-      "stopped_after_first_20": true
-    },
-    {
-      "lane": "Global Ingredients Show 2026",
-      "source": "https://new.ingred.ru/en-GB/visitors/exhibitor-list.aspx",
-      "raw": 20,
-      "duplicates_plus_early_rejects": 20,
-      "duplicate_plus_early_reject_rate": 1.0,
-      "qualified": 0,
-      "stopped_after_first_20": true
-    },
-    {
-      "lane": "Dentima Krasnodar 2026",
-      "source": "https://www.dentima.su/en-GB/about/exposition.aspx",
-      "raw": 20,
-      "duplicates_plus_early_rejects": 20,
-      "duplicate_plus_early_reject_rate": 1.0,
-      "qualified": 0,
-      "stopped_after_first_20": true
     }
   ],
-  "qualified_companies": [
-    "Тулс"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
   "physical_master_state": "496_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "496_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "qualified_staged_not_counted": 0,
   "outreach_sent": 0,
   "blocker": null
 }
