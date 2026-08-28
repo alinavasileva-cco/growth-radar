@@ -55,9 +55,7 @@
       "qualified": 0,
       "duplicates_plus_early_rejects": 125,
       "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
-      "sources": [
-        "ПРОДЭКСПО-2026 official internet catalogue, Russian participants, pages 3, 5, 11, 19, 25, 27, 35, 45, 59, 65, 83, 99, 105"
-      ],
+      "sources": ["ПРОДЭКСПО-2026 official internet catalogue, Russian participants, pages 3, 5, 11, 19, 25, 27, 35, 45, 59, 65, 83, 99, 105"],
       "note": "125 distinct named source identities after removing repeated stand entries were screened at cheap FAST GATE. Exhibition participation itself was not treated as SIGNAL; without an independent probable S1-S3 trigger candidates were not promoted to deep-check. Counts are source-level identities and are not claimed globally legal-key-proven distinct against worker early rejects."
     }
   ],
@@ -114,11 +112,5 @@
     "repo_search_result": "no canonical match found before staging",
     "head_checked": "2de16c406080daff11a043f7714133e7de9e9090"
   },
-  "notes": [
-    "Worker pool ingested before canonical discovery.",
-    "Stale worker employee-count detail was not used; fresher registry-derived scale facts were used instead.",
-    "305 is source-level raw after removing repeated stand entries inside the additional official catalogue sample; it is not claimed as 305 globally legal-key-proven distinct companies because worker early rejects do not all retain full legal identity keys.",
-    "Target 400-800 globally proven distinct raw was not reached; criteria were not weakened.",
-    "Outreach prohibited and not performed."
-  ]
+  "notes": "Worker pool ingested before canonical discovery; stale worker employee-count detail was not used and fresher registry-derived scale facts were used instead; 305 is source-level raw after removing repeated stand entries inside the additional official catalogue sample and is not claimed as 305 globally legal-key-proven distinct companies because worker early rejects do not all retain full legal identity keys; target 400-800 globally proven distinct raw was not reached; criteria were not weakened; outreach prohibited and not performed."
 }
