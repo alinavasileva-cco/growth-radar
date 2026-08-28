@@ -1,0 +1,111 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-28T11:19:30+03:00",
+  "source_head_sha": "5f3a12216b87687f00f1a9c97de74227b1f7434e",
+  "source_config_version": "2026-08-28T11:05:00+03:00",
+  "source_last_completed_run": "N5K-20260828-472",
+  "canonical_baseline": {
+    "canonical_count": 487,
+    "contactable_count": 487,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "canonical_write": false,
+  "outreach": false,
+  "discovery": {
+    "raw_distinct_employers": 80,
+    "sources_used": [
+      "GdeJob multi-region commercial-director listings",
+      "DreamJob job-board mirrors",
+      "Rabota.ru",
+      "Habr Career",
+      "Energybase",
+      "Cataloxy",
+      "SvoeAgro",
+      "Facancy",
+      "JobVK / secondary job-board mirrors",
+      "official company sites"
+    ],
+    "notes": "Collected employer-level identities and removed repeated employer display names before FAST GATE. Saturated/repetitive pages were rotated to other regions/sources. Exact first-20 duplicate+early-reject percentages were not persisted during source review and are not reconstructed after the fact."
+  },
+  "worker_funnel": {
+    "raw": 80,
+    "fast_gate": 6,
+    "deep_check": 3,
+    "size": 2,
+    "legal": 2,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "Дымов Керамика",
+      "legal_name": "ООО «ТД «ДЫМОВ КЕРАМИКА»",
+      "inn": "7731377855",
+      "ogrn": "1177746793432",
+      "legal_status": "Действует",
+      "region": "Москва / производство бренда в Суздале",
+      "segment": "авторская керамика / собственное производство / retail + e-commerce + B2B/опт",
+      "website": "https://dymovceramic.ru/",
+      "revenue_scale": "Выручка за 2025 год 196,26 млн ₽; 15–20 сотрудников по открытым реестрам",
+      "revenue_evidence_urls": [
+        "https://www.tbank.ru/business/contractor/legal/1177746793432/",
+        "https://www.moedelo.org/kontragenty/ogrn/1177746793432"
+      ],
+      "signal_level": "S1",
+      "signal_date": "2026-08-18",
+      "signal_summary": "Открыта позиция коммерческого директора для компании-производителя посуды «Дымов Керамика»; ключевая задача — взять коммерческий результат компании и вывести бизнес на новый масштаб. Параллельно подтверждены фирменная розница, e-commerce, маркетплейсы, оптовые продажи и событийные проекты.",
+      "signal_evidence_urls": [
+        "https://facancy.ru/vacancies/kommercheskii-direktor-v-kompaniiu-proizvoditel-posudy-dymov-keramika-2",
+        "https://svoevagro.ru/vacancies/2134713176",
+        "https://gdejob.com/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0"
+      ],
+      "owner": "Зеленская Евгения Александровна — 100% учредитель ООО «ТД «ДЫМОВ КЕРАМИКА»",
+      "ceo": "Зеленская Евгения Александровна — генеральный директор",
+      "lpr": "Зеленская Евгения Александровна",
+      "lpr_role": "100% собственник и генеральный директор",
+      "legal_lpr_evidence_urls": [
+        "https://companies.rbc.ru/id/1177746793432-ooo-torgovyij-dom-dyimov-keramika/"
+      ],
+      "contact_route": {
+        "type": "официальный корпоративный маршрут",
+        "primary_phone": "+7 (495) 500-01-71",
+        "wholesale_phones": ["+7 (985) 774-87-58", "+7 (916) 458-74-53"],
+        "primary_email": "opt@dymovceramic.ru",
+        "other_email": "hello@dymovceramic.ru",
+        "contact_page": "https://dymovceramic.ru/contacts/",
+        "routing_note": "Официальный сайт публикует отдельный оптовый отдел и общий корпоративный маршрут; сообщение можно адресовать собственнику/гендиректору Зеленской Евгении Александровне через корпоративный контакт."
+      },
+      "contact_evidence_urls": [
+        "https://dymovceramic.ru/contacts/"
+      ],
+      "brand_legal_match_evidence_urls": [
+        "https://dymovceramic.ru/contacts/",
+        "https://companies.rbc.ru/id/1177746793432-ooo-torgovyij-dom-dyimov-keramika/"
+      ],
+      "consulting_hypothesis": "Коммерческая система для масштабирования многоканального бизнеса: P&L по каналам, баланс retail/e-commerce/marketplaces/B2B, оптовая модель, ассортимент и управленческая аналитика.",
+      "dedup_keys": {
+        "inn": "7731377855",
+        "ogrn": "1177746793432",
+        "legal_name": "ООО «ТД «ДЫМОВ КЕРАМИКА»",
+        "brand_domain": "Дымов Керамика|dymovceramic.ru"
+      },
+      "dedup_check": {
+        "repository_search_before_write": "no matches for INN/domain/legal brand bundle",
+        "checked_against_head": "5f3a12216b87687f00f1a9c97de74227b1f7434e"
+      },
+      "funnel": {
+        "fast_gate": "PASS",
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      }
+    }
+  ]
+}
