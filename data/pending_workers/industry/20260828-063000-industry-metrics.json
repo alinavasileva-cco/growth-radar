@@ -1,0 +1,83 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-28T06:30:00+03:00",
+  "baseline_head": "4e4a263527688dab21ffc4433bb693ea3f5be46d",
+  "config_version": "2026-08-28T06:08:00+03:00",
+  "canonical_contactable": 482,
+  "canonical_integrity": "PASS",
+  "dedup_keys_loaded": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"],
+  "outreach": false,
+  "qualified": [],
+  "funnel": {
+    "raw_distinct": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "decision_note": "All 100 source identities were evaluated at cheap FAST GATE. Exhibition/catalog participation alone was not treated as S1-S3. No candidate had enough fresh evidence at FAST GATE to justify deep-check without weakening the current configuration. A targeted sample of larger/less-obvious identities was additionally checked for fresh 2026 expansion/investment signals; none produced a sufficiently strong current S1-S3 plus scale basis for promotion.",
+  "sample_checks": [
+    {"name":"САРАТОВСКАЯ КОНДИТЕРСКАЯ ФАБРИКА","result":"early reject","reason":"current legal entity is very small on available financial evidence; no qualifying fresh S1-S3 found","evidence_urls":["https://companies.rbc.ru/id/1246400010944-ooo-saratovskaya-konditerskaya-fabrika/"]},
+    {"name":"АЛТАЙСКИЙ ГЕОФИЗИЧЕСКИЙ ЗАВОД","result":"early reject","reason":"search surfaced a liquidated historical entity; no safe current legal/scale basis used","evidence_urls":["https://companies.rbc.ru/id/1022200897322-otkryitoe-aktsionernoe-obschestvo--barnaulskij-geofizicheskij-zavod-/"]},
+    {"name":"АМО СТАЛЬ ЗАВОД, ООО","result":"early reject","reason":"2026 material confirms robotics activity, but not a sufficiently clear fresh expansion/investment event under S1-S3; 2025 product-development signal was not promoted as fresh 2026 expansion","evidence_urls":["https://indpages.ru/auto/amos-resheniya-prom-avtomatizaczii-ms26/","https://www.kommersant.ru/doc/7640044"]},
+    {"name":"АСКОН, АО","result":"early reject","reason":"current company profile confirmed, but no strong fresh S1-S3 expansion signal found in the fast pass","evidence_urls":["https://www.it-world.ru/company/ascon/"]},
+    {"name":"БАЗА № 1 ХИМРЕАКТИВОВ, АО","result":"early reject","reason":"official site confirms operating production and warehouse complex, but no discrete fresh 2026 S1-S3 event was confirmed","evidence_urls":["https://baza1r.ru/about/"]},
+    {"name":"БИОХИМ, ООО","result":"early reject","reason":"2026 vacancy text describes ongoing development of production base, but legal identity and qualifying scale/signal package were not sufficiently unambiguous for deep promotion","evidence_urls":["https://lobnya.careerist.ru/vakansii/operator-proizvodstvennoy-linii-biokhim-83979592.html"]}
+  ],
+  "lanes": [
+    {
+      "source": "PRODEXPO-2026 official internet catalogue, Russia, pages 108-110",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=108",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["САРАПУЛЬСКИЙ ЛВЗ, ОАО","САРАТОВ-ЛАВР, ООО","САРАТОВ-ХОЛОД ПЛЮС, ООО","САРАТОВСКАЯ КОНДИТЕРСКАЯ ФАБРИКА","САРМАТСКАЯ СИЛА, ТМ (УРАЛ-АГРО СППК)","САТУРН, ООО","СВЕТ, АО","СВЕТЛОЯР, ООО","СВЕТОТЕХНИКА СТК, ООО","СВИТ ЭКСПРЕСС ПЛЮС, ООО","СВИТО, ООО","СВИТТИ, ТМ","СДЛ ТОРГОВЫЙ ДОМ","СЕАЛ ТРЕЙД, ООО","СЕВЕРНАЯ ДОЛИНА, ТМ","СЕВЕРНАЯ ЛИГА, ООО","СЕВЕРНОЕ МОЛОКО","СЕВЕРНЫЙ ДАР, ООО","СЕДОЙ КАСПИЙ, ООО","СЕКТОР, ООО"]
+    },
+    {
+      "source": "METALLOOBRABOTKA-2026 official internet catalogue, Russia, pages 7-8",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=7",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["АКТ ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ, ООО","АЛЕКОМАШ, ООО","АЛЕКСМАШ, ООО","АЛТАЙСКИЙ ГЕОФИЗИЧЕСКИЙ ЗАВОД, ООО","АЛТЕРВИА","АЛЬКРОНА","АЛЬТЕЗА, ООО","АЛЬФАМЕТ ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ, ООО","АЛЬЯНС","АЛЬЯНСВИЖН, ООО","АМАДА, ООО","АМБИТ, ООО","АМЕКА, ООО","АМКЕР, ООО","АММЕТА, ООО","АМО СТАЛЬ ЗАВОД, ООО","АМС ТЕХНИКА","АПЕКС-ЭКВИП, ООО","АРИОН, ООО","АРКОН, ЦВМ, ООО"]
+    },
+    {
+      "source": "KHIMIA-2026 official preliminary exhibitor list",
+      "source_url": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["ATLAS PETRO","DHALOP CHEMICALS PVT. LTD.","FENIX PROCESS TECHNOLOGIES PVT. LTD.","FESCO","GRAPHITE TECHNOLOGY LTD","JINGGONG VALVES GROUP CO., LTD.","PARS BAKING SODA GROUP","LOMGXIN LLC","SHACHI ENGINEERING PVT. LTD","SHANDONG XINFA RUIJIE NEW MATERIAL TECHNOLOGY CO., LTD","А.М.Н., ООО","А-ВАГО","АКВА-А, ООО","АКВАХРОМ","АКТИТЕК","АКТО, ООО","АЛХИТЕХ, НПП","АЛЬЯНС-ЭНЕРГИЯ, ООО","АНКАР","АНОД, НАУЧНО-ПРОИЗВОДСТВЕННЫЙ ЦЕНТР"]
+    },
+    {
+      "source": "ExpoCoating Moscow 2026 official exhibitor list",
+      "source_url": "https://www.expocoating-moscow.ru/ru-RU/about/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["БМТ","ГАЛЬВАНИТ ЕВРО, ООО","ГАЛЬВАНИЧЕСКИЕ ТЕХНОЛОГИИ","ИНСТАПРОМ","МАНЭЛ","МАШХИМПРОМ","МеталлПластПриорити","МИНИСТЕРСТВО ОБРАЗОВАНИЯ РЕСПУБЛИКИ БЕЛАРУСЬ","Моечные машины Эколайн","НеваРеактив, ООО","ОБНИНСКИЙ ЦЕНТР ПОРОШКОВОГО НАПЫЛЕНИЯ","ПЛАЗМА К","ПОЛИПЛАСТ","ПРОЦЕСС НПО","РЕДУТ, ООО","СОНИС","СПЕКТР-ХИМ","ТАГАТ","ТЕХНОЛОГИИ","ТЕХРЕСУРС"]
+    },
+    {
+      "source": "Rosmould | Rosplast | 3D-TECH 2026 published preliminary participant catalogue digest",
+      "source_url": "https://www.elec.ru/news/2026/04/21/opublikovan-predvaritelnyj-katalog-uchastnikov-let.html",
+      "raw": 20,
+      "duplicates_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "qualified": 0,
+      "candidates": ["Иж-Рэст","КБ Пресс-форма","НОВАЯ ФОРМА","ОН РУС","Полипак","ПРЕССМАШ","Молд Сервис","Новатех","РОТОСНАБ","Система","Т-Молд","Технополаст Юг","ФОРШ","Gorplast","MGC Group","JMT Mould","Hongke Mould","R&D Mould","3D LAM","3DSLA.ru"]
+    }
+  ]
+}
