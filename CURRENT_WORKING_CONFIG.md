@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T14:02:04+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-475`  
+**Версия:** 2026-08-28T15:03:30+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-476`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **492 / 492**  
+**Физически подтверждённый canonical/contactable:** **493 / 493**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **508**  
-**Осталось до 5000:** **4508**  
+**Осталось до 1000:** **507**  
+**Осталось до 5000:** **4507**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **492 / 492**;
+- physical canonical/contactable count: **493 / 493**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-475`;
+- последний завершённый RUN: `N5K-20260828-476`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -55,6 +55,7 @@
 - `N5K-20260828-473`: 487/487, +0, PASS, orphan 0/0; physical duplicate `N5K-0353`.
 - `N5K-20260828-474`: 488/488, +1, PASS, orphan 0/0.
 - `N5K-20260828-475`: 492/492, +4, PASS, orphan 0/0.
+- `N5K-20260828-476`: 493/493, +1, PASS, orphan 0/0.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging.
 
@@ -103,6 +104,15 @@ Fresh worker pool: jobs `80 raw / 2 qualified`; industry `100 raw / 0 qualified`
 
 Canonical/contactable: **492/492**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
 
-
 ## Latest verified run N5K-20260828-476
 Canonical/contactable: 493/493. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+## RUN 476 — canonical integration
+
+Fresh worker pool: jobs `80 raw / 1 qualified`; industry `100 raw / 0 qualified`. Собственный low-overlap discovery добавил **127 source-level identities** из семи актуальных каталогов/материалов 2026 года: PCVExpo, Cabex, ExpoCoating Moscow, Securika Moscow, Metallurgy/Litmash, Testing&Control и NDT Russia. Там, где snapshot показывал меньше 20 имен, отсутствующие записи не восстанавливались и не придумывались. Участие в выставке само по себе SIGNAL не считалось.
+
+**ЛИГРА / ООО «ЛИГРА»** прошла canonical recheck и финальный physical dedup по Lead ID, ИНН `7826159936`, ОГРН `1037851007523`, точному юрлицу и brand+domain. Использованы свежие сведения: действующий статус и численность 18 сотрудников подтверждены актуальным профилем РБК; официальный сайт содержит новости 2026 года об освоении нового продуктового направления и расширении линейки, а также подтверждает официальный телефон и email. Устаревшая финансовая отчётность 2021 года не использовалась как актуальный size-факт.
+
+Финальная воронка: **307 source-level raw → 9 fast gate → 2 SIZE → 2 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Known duplicates: **1**; excluded: **305**. 307 не заявляется как 307 globally legal-key-proven distinct компаний: early rejects не все разрешены до INN/OGRN/domain. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
+
+Canonical/contactable: **493/493**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
