@@ -1,0 +1,46 @@
+{
+  "run_id": "N5K-20260828-483",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-28T23:01:35+03:00",
+  "status": "CONSUMED_INDEX_REPAIRED",
+  "entries": [
+    {
+      "path": "data/pending_workers/jobs/20260828-212420-jobs.json",
+      "blob_sha": "7a93ee248c34e3b6fa00769a4b9a9369bdbbc5f9",
+      "result": "CONSUMED_INTEGRATED",
+      "raw": 80,
+      "qualified": 1,
+      "note": "СИЛА-ЦЕНТР / Узел Сила integrated as N5K-0655 after canonical recheck and physical dedup."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-213900-industry-metrics.json",
+      "blob_sha": "faa2fe401617bc4953bef9992b08be5b2002ea33",
+      "result": "CONSUMED_ZERO_QUALIFIED_REPAIR",
+      "raw": 100,
+      "qualified": 0,
+      "note": "Fresh post-RUN-482 staging omitted from original RUN 483 accounting; consumed during same-cycle audit repair."
+    },
+    {
+      "path": "data/pending_workers/jobs/20260828-222100-jobs-metrics.json",
+      "blob_sha": "ad89fe343ed75f95b6bce7a27c93694107311f5f",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 80,
+      "qualified": 0
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-222305-industry-metrics.json",
+      "blob_sha": "971abf4921f781d069fa172069bab7fd37a03e36",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 100,
+      "qualified": 0
+    }
+  ],
+  "total_raw_accounted": 360,
+  "net_qualified": 1,
+  "physically_integrated": 1,
+  "canonical_contactable": "498/498",
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach_sent": 0
+}
