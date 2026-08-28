@@ -1,0 +1,209 @@
+{
+  "worker": "jobs",
+  "lane": "jobs",
+  "created_at": "2026-08-28T13:21:00+03:00",
+  "source_head": "ab7329e790fad28aa33a5872599b89381fc63ab8",
+  "canonical_write": false,
+  "outreach": false,
+  "canonical_baseline": {
+    "canonical_count": 488,
+    "contactable_count": 488,
+    "integrity": "PASS",
+    "last_completed_run": "N5K-20260828-474"
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_passed": 7,
+    "deep_check": 2,
+    "size_passed": 2,
+    "legal_passed": 2,
+    "signal_passed": 2,
+    "lpr_passed": 2,
+    "contact_passed": 2,
+    "qualified": 2,
+    "duplicates_before_deep": 0,
+    "qualified_staged": 2
+  },
+  "discovery_notes": {
+    "scope": "Fresh August 2026 employer-level job signals sampled across Rostov-on-Don, Krasnodar, Ufa, Perm, Samara, Yekaterinburg, Novosibirsk and adjacent regional pools using job-board/aggregator results plus official employer sites. Federal/oversized, stale/archived, public/state, legally ambiguous and weak-signal employers were rejected at fast gate.",
+    "lane_switch_rule": "Saturated broad result pools were not deep-checked further; discovery was rotated to other cities, roles and sources. Exact first-20 duplicate+early-reject percentages were not reconstructed because the source interfaces used in this pass did not expose a stable employer-level first-20 ledger.",
+    "quality_rule": "No criterion was weakened. Vacancy presence alone was not sufficient for qualification; each staged candidate has independently confirmed legal identity, current scale, fresh sales/growth signal, LPR and practical contact route."
+  },
+  "qualified_candidates": [
+    {
+      "brand": "Тест",
+      "legal_name": "ООО «ТЕСТ»",
+      "short_legal_name": "ООО «ТЕСТ»",
+      "inn": "6163219914",
+      "ogrn": "1206100019223",
+      "legal_status": "Действует",
+      "region": "Ростовская область",
+      "city": "Ростов-на-Дону",
+      "segment": "дистрибуция лабораторного медицинского оборудования и реагентов / B2B healthcare",
+      "website": "https://lab-test.pro/",
+      "company_size": {
+        "employee_count": 20,
+        "employee_period": 2025,
+        "revenue_rub": 324353000,
+        "revenue_period": 2025,
+        "revenue_growth_yoy_pct": 9.46,
+        "profit_rub": 12565000,
+        "sources": [
+          "https://b2b.house/company/OOO-TEST_8f4b18ec-5459-4acb-ad54-9dd70462b8e3/",
+          "https://companies.rbc.ru/id/1206100019223-obschestvo-s-ogranichennoj-otvetstvennostyu-test/",
+          "https://firmoteka.ru/6163219914"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "summary": "Свежая вакансия директора по продажам медицинского лабораторного оборудования опубликована 05.08.2026. В описании компания заявляет оборот около 360 млн руб. за 2025 год и амбицию X2; независимо подтвержденная бухгалтерская выручка за 2025 год — 324,353 млн руб. Для qualification использована подтвержденная бухгалтерская цифра, а не маркетинговая формулировка вакансии.",
+        "signal_date": "2026-08-05",
+        "source_urls": [
+          "https://dreamjob.ru/employers/5584810/vakansii/135919630",
+          "https://rostov-na-donu.cataloxy.ru/rabota/firm3866562.htm"
+        ]
+      },
+      "owner_lpr": {
+        "owner": "Исаков Михаил Сергеевич",
+        "owner_share_pct": 80,
+        "co_owner": "Мостовая Яна Александровна",
+        "co_owner_share_pct": 20,
+        "ceo": "Исаков Михаил Сергеевич",
+        "lpr": "Исаков Михаил Сергеевич",
+        "lpr_role": "Генеральный директор и мажоритарный собственник",
+        "source_urls": [
+          "https://firmoteka.ru/6163219914",
+          "https://companies.rbc.ru/id/1206100019223-obschestvo-s-ogranichennoj-otvetstvennostyu-test/"
+        ]
+      },
+      "contact": {
+        "phone": "8 (800) 600-04-01",
+        "phone_mobile": "+7 (961) 271-39-82",
+        "email": "km@lab-test.pro",
+        "job_route": "https://dreamjob.ru/employers/5584810/vakansii/135919630",
+        "contact_type": "Официальный корпоративный телефон/email + маршрут через актуальную вакансию",
+        "source_urls": [
+          "https://lab-test.pro/",
+          "https://dreamjob.ru/employers/5584810/vakansii/135919630"
+        ]
+      },
+      "business_context": "Компания последовательно росла по выручке и численности, работает как прямой дистрибьютор Mindray и сейчас ищет директора продаж на фоне заявленной цели удвоения бизнеса.",
+      "consulting_hypothesis": "Гипотеза worker: коммерческая диагностика структуры продаж и каналов, управление ключевыми сетями/региональными партнерами, воронка оборудования и реагентов, KPI и план масштабирования под заявленную цель роста.",
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6163219914",
+        "ogrn": "1206100019223",
+        "legal_name": "ООО «ТЕСТ»",
+        "brand_domain": "Тест|lab-test.pro"
+      },
+      "dedup_check": {
+        "checked_against_head": "ab7329e790fad28aa33a5872599b89381fc63ab8",
+        "inn_match_found": false,
+        "ogrn_match_found": false,
+        "brand_domain_match_found": false,
+        "result": "UNIQUE_BEFORE_STAGE"
+      },
+      "qualification": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "final": "QUALIFIED"
+      },
+      "evidence_urls": [
+        "https://lab-test.pro/",
+        "https://dreamjob.ru/employers/5584810/vakansii/135919630",
+        "https://rostov-na-donu.cataloxy.ru/rabota/firm3866562.htm",
+        "https://b2b.house/company/OOO-TEST_8f4b18ec-5459-4acb-ad54-9dd70462b8e3/",
+        "https://companies.rbc.ru/id/1206100019223-obschestvo-s-ogranichennoj-otvetstvennostyu-test/",
+        "https://firmoteka.ru/6163219914"
+      ]
+    },
+    {
+      "brand": "Лайфтранс",
+      "legal_name": "ООО «ЛАЙФТРАНС»",
+      "short_legal_name": "ООО «ЛАЙФТРАНС»",
+      "inn": "6163214497",
+      "ogrn": "1196196018369",
+      "legal_status": "Действует",
+      "region": "Волгоградская область",
+      "city": "Михайловка",
+      "segment": "транспортно-экспедиционная логистика / B2B грузоперевозки",
+      "website": "https://laiftrans.ru/",
+      "company_size": {
+        "revenue_rub": 702087000,
+        "revenue_period": 2025,
+        "revenue_growth_yoy_pct": 42.3,
+        "profit_rub": 73617000,
+        "sources": [
+          "https://b2b.house/company/OOO-LAJFTRANS_d1575889-c034-4c14-a044-93d311094eb5/",
+          "https://companies.rbc.ru/id/1196196018369-obschestvo-s-ogranichennoj-otvetstvennostyu-lajftrans/",
+          "https://check.tochka.com/company/1196196018369/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "summary": "В августе 2026 в свежей выдаче присутствует вакансия коммерческого директора / директора по продажам в транспортно-экспедиционной логистике с доходом от 550 тыс. руб.; описание прямо связывает роль с усилением системы продаж и достижением следующей цели роста. Финансовые данные показывают рост выручки на 42,3% в 2025 году.",
+        "signal_date": "2026-08-23",
+        "source_urls": [
+          "https://finder.work/vacancies/direktor_po_digital_marketingu/rostov-na-donu",
+          "https://laiftrans.ru/"
+        ]
+      },
+      "owner_lpr": {
+        "owner": "Алборов Владимир Георгиевич",
+        "owner_share_pct": 100,
+        "ceo": "Алборов Владимир Георгиевич",
+        "lpr": "Алборов Владимир Георгиевич",
+        "lpr_role": "Основатель, директор и единственный собственник",
+        "source_urls": [
+          "https://companies.rbc.ru/id/1196196018369-obschestvo-s-ogranichennoj-otvetstvennostyu-lajftrans/",
+          "https://laiftrans.ru/"
+        ]
+      },
+      "contact": {
+        "phone": "+7 (900) 137-37-17",
+        "email": "info@laiftrans.ru",
+        "website_route": "https://laiftrans.ru/",
+        "contact_type": "Официальный корпоративный телефон/email и формы связи на сайте",
+        "source_urls": [
+          "https://laiftrans.ru/",
+          "https://laiftrans.ru/personal-data-consent/"
+        ]
+      },
+      "business_context": "Выручка за 2025 год выросла до 702,087 млн руб., основатель публично выступает от имени компании, а свежая вакансия коммерческого директора ориентирована на усиление продаж и дальнейший рост.",
+      "consulting_hypothesis": "Гипотеза worker: коммерческая архитектура по сегментам и типам перевозок, экономика каналов и сделок, KPI и управленческий контур продаж, развитие ключевых B2B клиентов и 90-дневный план масштабирования.",
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6163214497",
+        "ogrn": "1196196018369",
+        "legal_name": "ООО «ЛАЙФТРАНС»",
+        "brand_domain": "Лайфтранс|laiftrans.ru"
+      },
+      "dedup_check": {
+        "checked_against_head": "ab7329e790fad28aa33a5872599b89381fc63ab8",
+        "inn_match_found": false,
+        "ogrn_match_found": false,
+        "brand_domain_match_found": false,
+        "result": "UNIQUE_BEFORE_STAGE"
+      },
+      "qualification": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "final": "QUALIFIED"
+      },
+      "evidence_urls": [
+        "https://laiftrans.ru/",
+        "https://laiftrans.ru/personal-data-consent/",
+        "https://finder.work/vacancies/direktor_po_digital_marketingu/rostov-na-donu",
+        "https://b2b.house/company/OOO-LAJFTRANS_d1575889-c034-4c14-a044-93d311094eb5/",
+        "https://companies.rbc.ru/id/1196196018369-obschestvo-s-ogranichennoj-otvetstvennostyu-lajftrans/",
+        "https://check.tochka.com/company/1196196018369/"
+      ]
+    }
+  ]
+}
