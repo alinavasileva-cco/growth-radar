@@ -1,8 +1,8 @@
 {
   "run_id": "N5K-20260828-483",
-  "updated_at": "2026-08-28T22:35:18+03:00",
+  "updated_at": "2026-08-28T23:01:35+03:00",
   "status": "CLEARED_AFTER_INTEGRATION",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "note": "N5K-20260828-483 integrated physically; canonical/contactable 498/498; integrity PASS; orphan 0/0; outreach 0."
+  "note": "N5K-20260828-483 integrated physically; canonical/contactable 498/498; integrity PASS; orphan 0/0; outreach 0. Audit repair consumed all four post-RUN-482 staging files and corrected raw accounting to 360; no qualified remains pending."
 }
