@@ -1,0 +1,97 @@
+{
+  "worker": "industry",
+  "mode": "READ+DISCOVERY",
+  "created_at": "2026-08-28T21:39:00+03:00",
+  "source_head": "f3468ed61986a3b1f0a79b2ad30c3c6ca53a6332",
+  "config_version": "2026-08-28T21:09:18+03:00",
+  "canonical_snapshot": {
+    "contactable": 497,
+    "leads_master": 497,
+    "integrity": "PASS",
+    "dedup_keys": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "confirmed_brand_domain"]
+  },
+  "rules": {
+    "outreach": false,
+    "canonical_writes": false,
+    "criteria_relaxed": false,
+    "exhibition_presence_is_signal": false,
+    "funnel_order": ["FAST_GATE", "SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"]
+  },
+  "summary": {
+    "raw_distinct_source_identities": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0,
+    "duplicates_confirmed": 0,
+    "early_rejects": 100
+  },
+  "qualification_note": "No candidate was promoted beyond FAST_GATE. Exhibition/catalog presence was not treated as S1-S3. Foreign/non-company entries were rejected immediately; Russian/ambiguous entries without a fresh attributable probable S1-S3 expansion/investment/branch signal were rejected cheaply rather than deep-checked. No inference or criteria relaxation was used.",
+  "lanes": [
+    {
+      "lane": "SobMaExpo 2026 / contract manufacturing & private label",
+      "source_url": "https://expodat.com/expositions/exposition/6932-sobmaexpo-2026.html",
+      "raw": 20,
+      "duplicates_confirmed": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject_rate_first20": 1.0,
+      "stopped_after_first20": true,
+      "qualified": 0,
+      "raw_identities": ["ТД ЭКОРЕГИОН", "AERO-PRO", "Banka Home", "BELOR DESIGN", "Biohaus", "BRAI GRAN", "CARELY", "ChaYin", "IQ Cosmetic", "Kem plante", "Mesopharm", "Mkapaint", "OKVision", "SI:LA", "Top Level", "Tunisia Embassy", "UNITED HYGIENE", "Абар", "АВ Тауэр", "АРТОН"]
+    },
+    {
+      "lane": "NAIS 2026 / aviation infrastructure",
+      "source_url": "https://expodat.com/en/expositions/exposition/6777-nais-2026.html",
+      "raw": 20,
+      "duplicates_confirmed": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject_rate_first20": 1.0,
+      "stopped_after_first20": true,
+      "qualified": 0,
+      "raw_identities": ["Acevision (Beijing) Exhibition Co., Ltd", "ACME", "Asel Labs (Нафталиев ИП)", "Aviacareer", "Best International Expo (Beijing) Co., LTD", "BTLscreen", "ENOUGH BATTERY (ООО ЭЙРУАН)", "ESI (ООО СОЛО)", "Flexpocket", "GetPwr (Ладыженский ИП)", "Guangdong Lanbanghai International Exhibition & Travel Business Service Co., Ltd.", "Guangdong Lide Exhibition Co.,Ltd", "keyguard", "Remove before flight", "АВИТЕКС ПЛЮС", "NEVIAN", "Алюмс", "Ангарстрой", "АНО НПЦ БАС ТУЛАДРОН", "АО Завод Чувашкабель"]
+    },
+    {
+      "lane": "NATMALL 2026 / commercial real estate & retail",
+      "source_url": "https://expodat.com/expositions/exposition/6895-natmall-2026.html",
+      "raw": 20,
+      "duplicates_confirmed": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject_rate_first20": 1.0,
+      "stopped_after_first20": true,
+      "qualified": 0,
+      "raw_identities": ["Artix Solutions", "CPM COLLECTION PREMIERE MOSCOW", "Hello Park", "INSMARKET", "Interactive Group", "Qubot", "STEIT/ЭКО Парк", "АВ-ПАРК", "Альфа АМ", "Альфа-Сервис Клининговая компания", "Арион Инвест", "Арома Профи", "АРОМАХХI", "Бизнес метры", "Видеоглаз Центр", "КРК Премьера (ex. КРЦ АкваТула)", "Паркли", "РПК Системы", "Северный Модерн", "сети ТРЦ Парк Хаус / Красная Площадь"]
+    },
+    {
+      "lane": "BEAUNITY by InterCHARM 2026 / professional beauty & aesthetic medicine",
+      "source_url": "https://expodat.com/expositions/exposition/6889-beaunity-by-intercharm-2026.html",
+      "raw": 20,
+      "duplicates_confirmed": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject_rate_first20": 1.0,
+      "stopped_after_first20": true,
+      "qualified": 0,
+      "raw_identities": ["19LAB / 19ЛАБ", "360 Коллаген", "A.S.M. / Lightdep", "ALLMIRIN", "Beauty Vision / Бьюти Вижн", "CORNEAL", "Crescina", "DMAE", "EGENY", "Exotokine", "FAITH BEAUTY / Файт", "LASMIK", "LCM", "Mare Estetic", "MESALTERA by Dr.Mikhaylova", "RBG", "ROZHKOVA LAB / РОЖКОВА ЛАБ", "SUN INT", "Termoland / ГК Основа", "TheLifeStory Petoile"]
+    },
+    {
+      "lane": "Wire Russia 2026 / wire, cable & fasteners equipment",
+      "source_url": "https://md.expodat.com/expositions/exposition/164-wire-russia-2026.html",
+      "raw": 20,
+      "duplicates_confirmed": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject_rate_first20": 1.0,
+      "stopped_after_first20": true,
+      "qualified": 0,
+      "raw_identities": ["Acar Teknolojik Sistemler San. Tic. Ltd. Sti", "Anping Shenkang Wire Mesh Products Co., Ltd", "Ashapura International Limited", "ASSOMAC MACHINES Ltd", "Baogang Steel Union (Tianjin) Steel Co., Ltd.", "BEIJING HOER INTERNATIONAL FAIRS CO., LTD", "Cangzhou DMAX Machinery Co., Ltd", "Cangzhou Junxi International Trading Co. Ltd", "Chinacable", "CMEC", "CSM Metalurji Imalat Sanayi Ve Muhendislik Ltd. Sti.", "Dongtai Zhonghai Super Alloy Co., Ltd", "Dongying Changrui Electromechanical Co., Ltd", "Dongying Dongsheng Mechanical Automation Co.,Ltd.", "Geili Machinery (Fujian) Group Co.,Ltd.", "Guangdong Dingliang Electronic Technology", "Guangdong HuaAo New Alloy Material Co. Ltd", "Guangdong Yizhong Precision Technology Co. Ltd", "GUANGXIN PIPETECH CO., LTD.", "Habsans"]
+    }
+  ],
+  "research_sources": [
+    "https://expodat.com/expositions/exposition/6932-sobmaexpo-2026.html",
+    "https://expodat.com/en/expositions/exposition/6777-nais-2026.html",
+    "https://expodat.com/expositions/exposition/6895-natmall-2026.html",
+    "https://expodat.com/expositions/exposition/6889-beaunity-by-intercharm-2026.html",
+    "https://md.expodat.com/expositions/exposition/164-wire-russia-2026.html"
+  ]
+}
