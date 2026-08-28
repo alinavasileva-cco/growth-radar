@@ -1,24 +1,24 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T06:08:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-467`  
+**Версия:** 2026-08-28T08:18:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-469`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **482 / 482**  
+**Физически подтверждённый canonical/contactable:** **484 / 484**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **518**  
-**Осталось до 5000:** **4518**  
+**Осталось до 1000:** **516**  
+**Осталось до 5000:** **4516**  
 **Outreach:** запрещён
 
 ## Источник истины
 
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
-- перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence и pending;
-- physical canonical/contactable count: **482 / 482**;
+- перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
+- physical canonical/contactable count: **484 / 484**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-467`;
+- последний завершённый RUN: `N5K-20260828-469`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -48,12 +48,6 @@
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260827-449`: 455/455, +3, PASS, orphan 0/0.
-- `N5K-20260827-450`: 456/456, +1, PASS, orphan 0/0.
-- `N5K-20260827-451`: 457/457, +1, PASS, orphan 0/0.
-- `N5K-20260827-452`: 461/461, +4, PASS, orphan 0/0.
-- `N5K-20260827-453`: 464/464, +3, PASS, orphan 0/0.
-- `N5K-20260827-454`: 468/468, +4, PASS, orphan 0/0.
 - `N5K-20260827-454R1`: 469/469, +1 repair, PASS, orphan 0/0.
 - `N5K-20260827-455`: 471/471, +2, PASS, orphan 0/0.
 - `N5K-20260827-456`: 473/473, +2, PASS, orphan 0/0.
@@ -68,23 +62,19 @@
 - `N5K-20260828-465`: 481/481, +0, PASS, orphan 0/0.
 - `N5K-20260828-466`: 481/481, +0, PASS, orphan 0/0.
 - `N5K-20260828-467`: 482/482, +1, PASS, orphan 0/0.
+- `N5K-20260828-468`: 482/482, +0, PASS, orphan 0/0.
+- `N5K-20260828-469`: 484/484, +2, PASS, orphan 0/0.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging. Сокращение исторического текста в этом файле не удаляет audit-артефакты.
 
-## RUN 467 — canonical integration
+## RUN 469 — canonical integration
 
-Fresh worker pool: jobs `80 raw / 1 worker-qualified`; industry `118 raw / 1 worker-qualified`, но ППГК был заблокирован physical guard как существующий `N5K-0591` по ИНН `5035040606`, ОГРН `1115035000410`, юрлицу и brand+domain. Собственный low-overlap discovery по официальным публикациям участников TransRussia/SkladTech 2026 и MiningWorld Russia 2026 добавил 114 source-level identities, которые не были повышены выше FAST GATE без независимого вероятного S1–S3 сигнала; само участие в выставке SIGNAL не считается.
+Fresh worker pool: jobs `80 raw / 2 worker-qualified`; industry `100 raw / 1 worker-qualified`. Physical master guard обнаружил **АФ «Перспектива» ОМЗ** как существующий `N5K-0509` по ИНН `6318035951` и ОГРН `1186313049823`, поэтому повторная запись заблокирована. Собственный low-overlap discovery добавил 120 named source identities из официального каталога `МЕТАЛЛООБРАБОТКА-2026`; участие в выставке само по себе SIGNAL не считается.
 
-Финальная воронка: **312 source-level raw → 9 fast gate → 4 SIZE → 4 LEGAL → 2 SIGNAL → 2 LPR → 2 CONTACT → 1 net QUALIFIED → 1 physically integrated**. Physical duplicates: **1**; excluded: **310**. 312 не заявляется как 312 глобально legal-key-proven distinct компаний, поскольку для jobs early rejects нет полного набора INN/OGRN/domain identity keys. Целевые 400–800 глобально доказанных distinct raw не достигнуты; критерии не снижались.
+Финальная воронка: **300 source-level raw → 6 fast gate → 3 SIZE → 3 LEGAL → 3 SIGNAL → 3 LPR → 3 CONTACT → 2 net QUALIFIED → 2 physically integrated**. Physical duplicates: **1**; excluded: **297**. 300 не заявляется как 300 глобально legal-key-proven distinct компаний, поскольку worker early rejects не все сохраняют полный набор INN/OGRN/domain keys. Целевые 400–800 глобально доказанных distinct raw не достигнуты; критерии не снижались.
 
-Интегрирована **Первая Чайная Группа / Первая Чайная Компания (ПЧК)**, ООО «ТОРГОВЫЙ ДОМ «ПЕРВАЯ ЧАЙНАЯ КОМПАНИЯ», ИНН `9725116023`, ОГРН `1237700149060`, Lead ID `N5K-0639`.
+Интегрированы:
+- **Малтат / Руслов**, ООО «МАЛТАТ», ИНН `2403007482`, ОГРН `1072439000149`, Lead ID `N5K-0640`;
+- **НПК АВТОПРИБОР**, ООО «НАУЧНО-ПРОИЗВОДСТВЕННЫЙ КОМПЛЕКС «АВТОПРИБОР»`, ИНН `3329093967`, ОГРН `1183328008820`, Lead ID `N5K-0641`.
 
-Canonical/contactable: **482/482**. Integrity PASS. Orphan contacts/evidence: **0/0**. Staged: **0**. Pending: cleared. Outreach: **0**.
-
-
-## Latest verified run N5K-20260828-468
-Canonical/contactable: 482/482. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest verified run N5K-20260828-469
-Canonical/contactable: 484/484. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: **484/484**. Integrity PASS. Orphan contacts/evidence: **0/0**. Staged: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
