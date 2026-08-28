@@ -1,0 +1,90 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-28T20:23:30+03:00",
+  "base_head": "fe38c1ab8393bf0a4b4856b1ed953a737a6a7c08",
+  "config_version": "2026-08-28T18:57:21+03:00",
+  "canonical_count_observed": 496,
+  "canonical_integrity_observed": "PASS",
+  "dedup_keys": ["lead_id", "inn", "ogrn_or_ogrnip", "exact_legal_name", "confirmed_brand_domain"],
+  "rules": {
+    "fast_gate_first": true,
+    "deep_funnel_order": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "expo_participation_is_not_signal": true,
+    "criteria_relaxed": false,
+    "canonical_writes": false,
+    "outreach": false,
+    "early_lane_stop_threshold": ">70% duplicate+early_reject on first 20"
+  },
+  "raw_distinct_source_identities": 100,
+  "global_legal_key_uniqueness_claimed": false,
+  "global_legal_key_uniqueness_note": "Early rejects were intentionally not resolved through full INN/OGRN/domain deep-check; distinctness here is source-identity distinctness within this worker pass.",
+  "funnel": {
+    "RAW": 100,
+    "FAST_GATE": 0,
+    "SIZE": 0,
+    "LEGAL": 0,
+    "SIGNAL": 0,
+    "LPR": 0,
+    "CONTACT": 0,
+    "QUALIFIED": 0
+  },
+  "lane_metrics": [
+    {
+      "source": "Analitika Expo 2026",
+      "source_url": "https://analitikaexpo.com/ru/about/news/2026/march/11/analitika-ehkspo-2026-uchastniki/",
+      "raw": 20,
+      "first20_duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first20": true,
+      "raw_identities": ["A1 PROLAB", "Biobase", "DLAB", "Elcon Drugs", "HUIDA", "Jet Bio Filtration", "Kemolabs", "NINGBO SCIENTZ", "RUNWANGDA", "Simple PRO", "Simson Pharma", "Stormoff", "Tarsons Products", "VIKING Lab (Диполь)", "WESTINGAREA", "WIGGENS", "Xilong", "Аврора", "Генные Технологии Здоровья «ГТЗ»", "ГК «Люмэкс»"]
+    },
+    {
+      "source": "MITEX 2026",
+      "source_url": "https://www.mitexpo.ru/press/novosti/14048/",
+      "raw": 20,
+      "first20_duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first20": true,
+      "raw_identities": ["ИНТЕРСКОЛ", "CHAMPION", "СТАВР", "KOLNER", "RAGE", "Уралоптинструмент", "КОРОНА", "CONDTROL", "ЗУБР", "ТСС ГК", "FUBAG", "Новая Высота", "STEVIMANN", "УралБензоТех", "Felisatti", "DIAM", "KRANZ", "REXANT / Трейд Групп (ТЕН)", "АЛЮКОМ ТУЛС", "АЛЮМТ"]
+    },
+    {
+      "source": "AIRVent 2026",
+      "source_url": "https://airventmoscow.ru/ru/about/news/2025/december/10/airvent-vystavka-2026/",
+      "raw": 20,
+      "first20_duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first20": true,
+      "raw_identities": ["Buhler-AHS", "Belluna", "Blizzard Lufttechnik", "Clivet", "Centek Air", "Dantex Group", "Daichi", "Era Group", "Hiref Rus", "Hogart", "Hoocon", "Minibox", "Prime", "Prostor", "Termoflow", "Tica Pro", "Tion", "ZIP24", "Бриз – Климатические системы", "Веза"]
+    },
+    {
+      "source": "Agroprodmash 2026",
+      "source_url": "https://www.agroprodmash-expo.ru/ru/exhibition/exhibitors/",
+      "raw": 20,
+      "first20_duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first20": true,
+      "raw_identities": ["АРКСО ГРУП", "АРМАТУРА И АВТОМАТИЗАЦИЯ", "АРТА-КОНСАЛТ", "АРТЕКС", "АСАП ФУД ЭКВИПМЕНТ", "АСПРОМ", "АСТРАФОРС", "АТЛАНТИС-ПАК, ПКФ", "АТП ТЛП", "АУДИ ЭКСТРАКТС", "АФ АВТОМАТИКА", "АФР", "БЕГАРАТ-М", "БЕЛКОМ", "БЕЛКОМИКС ЦЕНТР ИННОВАЦИОННЫХ ПРОДУКТОВ", "БЕЛЫЙ ЗУБР", "БЕРЧГРУП РУС", "БЕСТЕК-ИНЖИНИРИНГ", "БЕСТРОМ", "КРОПОТКИНСКИЙ ЗАВОД МИССП"]
+    },
+    {
+      "source": "Global Ingredients Show 2026",
+      "source_url": "https://new.ingred.ru/ru-RU/about/exhibitor-list.aspx",
+      "raw": 20,
+      "first20_duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first20": true,
+      "raw_identities": ["COFCO BIOTECHNOLOGY", "MILKNEWS", "RETAIL.RU (МОСКВА)", "VITAGLASS.RU", "АВАНГАРД ГРУППА КОМПАНИЙ", "АКАДЕМИЯ-Т, ООО", "АЛЬЯНС СЕРВИС, ООО", "АМЕТИС", "АМУРСКИЙ МАСЛОЭКСТРАКЦИОННЫЙ ЗАВОД, ООО", "БИЗНЕС ПИЩЕВЫХ ИНГРЕДИЕНТОВ, ЖУРНАЛ", "БИОЦЕВТИКА", "ВИДЬЯ РУС, ООО", "ВКУСАРОМА УК, ООО", "ДЕЙРИ, ООО", "ДЖИ СИ ДИ ГРУПП, ООО", "ДИНАМИК", "ДОН-АГРО, ООО", "ЕВРОПЕЙСКИЕ ТЕХНОЛОГИИ", "ЕТС, ГРУППА КОМПАНИЙ", "ИНВИТА"]
+    }
+  ],
+  "qualification_notes": [
+    "The catalog/exhibitor-list fact alone was not treated as S1-S3.",
+    "Grouped cheap signal searches did not produce a sufficiently attributable fresh S1-S3 trigger for any candidate to justify deep funnel entry in this pass.",
+    "Foreign companies and obvious media/publication entries were early rejects where evident from the source.",
+    "No duplicate/early-reject split was reconstructed after the fact; only the observed combined first-20 stop condition is stored."
+  ]
+}
