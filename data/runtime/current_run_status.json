@@ -2,7 +2,7 @@
   "run_id": "N5K-20260828-483",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T22:35:18+03:00",
+  "updated_at": "2026-08-28T23:01:35+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 497,
@@ -13,7 +13,7 @@
     "remaining": 4502
   },
   "funnel": {
-    "discovered": 260,
+    "discovered": 360,
     "fast_gate_passed": 15,
     "size_check_passed": 3,
     "legal_match_passed": 3,
@@ -22,7 +22,7 @@
     "contact_route_found": 2,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 259
+    "excluded": 359
   },
   "lane_metrics": [
     {
@@ -36,6 +36,18 @@
       "contact": 1,
       "qualified": 1,
       "note": "Fresh immutable worker staging created after RUN 482; candidate forwarded to recovery canonical recheck."
+    },
+    {
+      "lane": "industry_worker_20260828_213900",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "note": "Fresh post-RUN-482 immutable staging omitted from the original RUN 483 accounting; consumed in same-cycle audit repair. All 100 were early rejects; no catalog/exhibition presence was treated as S1-S3 signal."
     },
     {
       "lane": "jobs_worker_20260828_222100",
@@ -72,5 +84,6 @@
   "physical_master_state": "498_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "498_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "repair_note": "RUN 483 audit repaired fresh staging accounting: industry/20260828-213900-industry-metrics.json (100 raw, 0 qualified) was post-RUN-482 and had been omitted from the original 260 raw total. Corrected total is 360 raw; canonical/contactable remains 498/498."
 }
