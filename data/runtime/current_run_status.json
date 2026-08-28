@@ -1,34 +1,34 @@
 {
-  "run_id": "N5K-20260828-464",
+  "run_id": "N5K-20260828-465",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T03:08:00+03:00",
+  "updated_at": "2026-08-28T04:12:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 480,
+    "baseline_count": 481,
     "target_count": 5000,
     "current_canonical_count": 481,
     "current_contactable_count": 481,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4519
   },
   "funnel": {
-    "discovered": 180,
-    "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
+    "discovered": 186,
+    "fast_gate_passed": 7,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 179
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 185
   },
   "lane_metrics": [
     {
-      "lane": "jobs/20260828-0228",
+      "lane": "jobs/20260828-032900",
       "raw": 80,
-      "fast_gate": 6,
+      "fast_gate": 5,
       "size": 2,
       "legal": 2,
       "signal": 1,
@@ -36,26 +36,35 @@
       "contact": 1,
       "worker_qualified": 1,
       "canonical_prewrite_qualified": 1,
-      "duplicates_plus_early_rejects": 74,
-      "result": "OVEN_QUALIFIED"
+      "result": "RZKO_QUALIFIED"
     },
     {
-      "lane": "industry/20260828-022330",
-      "raw_distinct": 100,
-      "fast_gate": 0,
-      "size": 0,
+      "lane": "industry/20260828-032336",
+      "raw": 100,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates_plus_early_rejects": 99,
+      "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
+    },
+    {
+      "lane": "canonical-low-overlap-growth-regional-official",
+      "raw": 6,
+      "fast_gate": 1,
+      "size": 1,
       "legal": 0,
       "signal": 0,
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "duplicates_plus_early_rejects": null,
-      "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
+      "result": "KATYUSHA_REJECT_LEGAL_ENTITY_SIGNAL_ATTRIBUTION_AMBIGUOUS;_OTHER_RAW_EARLY_REJECT"
     }
   ],
-  "qualified_companies": [
-    "OVEN / Oven"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
