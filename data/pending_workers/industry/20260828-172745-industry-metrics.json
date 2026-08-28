@@ -1,0 +1,93 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "captured_at": "2026-08-28T17:27:45+03:00",
+  "source_head": "5593bae6b523b9b299c767ac1983392c5bfea419",
+  "config_version": "2026-08-28T17:01:58+03:00",
+  "canonical_snapshot": {
+    "physical_master": 494,
+    "physical_contactable": 494,
+    "integrity": "PASS",
+    "dedup_keys": ["Lead ID", "ИНН", "ОГРН/ОГРНИП", "точное юрлицо", "подтверждённая связка бренд+домен"]
+  },
+  "rules_applied": {
+    "fast_gate_before_deep_check": true,
+    "deep_funnel_order": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "exhibition_participation_is_not_signal": true,
+    "no_guessing": true,
+    "canonical_writes": false,
+    "outreach": false
+  },
+  "raw_count": 100,
+  "raw_distinct_source_identities": 100,
+  "global_legal_key_uniqueness_claimed": false,
+  "lanes": [
+    {
+      "source": "MiningWorld Russia 2026 official participant announcement",
+      "source_url": "https://miningworld.ru/ru/media/news/2026/february/25/opublikovan-spisok-uchastnikov-miningworld-russia-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "reject_rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early reject >70% on first 20",
+      "raw_identities": ["Горное Обеспечение и Комплектация", "Hailstone Innovations", "Sever Minerals", "TEM Partner", "V2 GROUP", "Алмазгеобур", "Анжеромаш", "БМХ РУС", "ГК Цифра", "Гормаш Глобал", "Давтех", "КВИНТМАДИ", "МЗ ПОТОК", "НПО Аконит", "НПО Пассат", "НТЦ Бакор", "Тяжмаш", "ЭВОБЛАСТ", "ЭЛЕМЕТ", "GoGlobal"]
+    },
+    {
+      "source": "Aquaflame 2026 official industry participant material",
+      "source_url": "https://aquaflame-expo.ru/ru/about/news/2025/may/14/zachem-uchastvovat-v-aquaflame-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "reject_rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early reject >70% on first 20",
+      "raw_identities": ["Акон", "Альтерпласт", "AML", "Акваполис", "Теплолюкс Группа", "BWT", "BWT Barrier", "Candan", "Chemoform", "CNP", "Craft", "Эван", "Faf Vana", "FD Plast Московский завод", "Ferroli", "ФЕД", "Флекси", "Fondital", "Форте Холдинг", "Haier"]
+    },
+    {
+      "source": "Securika Moscow 2026 official participant materials",
+      "source_url": "https://securika-moscow.ru/ru/about/news/2026/april/03/dve-nedeli-do-otkrytiya-securika-moscow-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "reject_rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early reject >70% on first 20",
+      "raw_identities": ["ААМ-Системз", "Сбер", "Аргус-Спектр", "АРМО-Системы", "Болид", "SIGUR", "Пожтехника", "РУБЕЖ", "Диагностика-М", "PERCo", "Escort Group", "Итриум", "Московские системы безопасности", "TRASSIR", "ITV Group", "Луис+", "Плазма-Т", "Parsec", "Devline", "Faceter"]
+    },
+    {
+      "source": "TransRussia | SkladTech 2026 official participant materials",
+      "source_url": "https://transrussia.ru/ru/media/news/2026/march/27/post-reliz-transrussia-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "reject_rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early reject >70% on first 20",
+      "raw_identities": ["Группа компаний Дело", "FESCO", "ГК ФинИнвест", "Кистоун Лоджистикс", "Модум-Транс", "Группа компаний НОВОТРАНС", "Рейлшип Сервис", "ARTWMS", "MADE", "NOVOLINIX", "STEIZA", "Weilandt Elektronik", "БЕЛИНТЕРТРАНС", "Ван Вэй Транспорт Сервисес", "Железные дороги Якутии", "Магнит Логистика", "МЕТЕК", "Росгосстрах", "Транзит-СВ", "Транспортные Технологии"]
+    },
+    {
+      "source": "Pharmtech & Ingredients 2026 official participant materials",
+      "source_url": "https://pharmtech-expo.ru/ru/media/news/2026/june/23/indijskie-kompanii-pharmtech-ingredients-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "reject_rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early reject >70% on first 20",
+      "raw_identities": ["Elcon Drugs and Formulations Limited", "Singhania Tableting", "Sabiha Research & Development LLP", "MSN Laboratories", "Dhara Lifesciences", "Tricon Enterprises", "Indian Cork Mills Private Ltd.", "Titan Laboratories", "Standard Group of Companies", "Jayco Chemicals", "Pharmaffiliates", "Ami Lifescience", "Synzeal", "ПОЛИМЕР МК", "Biomirix", "ПСК Фарма", "INTERBIOMAX", "ДЗМИ", "Проспектор", "Alamed"]
+    }
+  ],
+  "worker_funnel": {
+    "RAW": 100,
+    "FAST_GATE": 0,
+    "SIZE": 0,
+    "LEGAL": 0,
+    "SIGNAL": 0,
+    "LPR": 0,
+    "CONTACT": 0,
+    "QUALIFIED": 0
+  },
+  "notes": [
+    "All 100 entries are distinct source-level identities within this worker file.",
+    "Cheap rejects were not force-resolved to INN/OGRN/domain; therefore global legal-key uniqueness is not claimed for all raw identities.",
+    "Participation in an exhibition/catalogue, product presentation, or general market activity was not treated as an S1-S3 company signal.",
+    "No candidate was advanced into deep funnel without a probable S1-S3 signal at FAST GATE.",
+    "qualified=0, therefore only this unique metrics file was created."
+  ]
+}
