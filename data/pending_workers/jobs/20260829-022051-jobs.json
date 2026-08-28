@@ -1,0 +1,108 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "canonical_write": false,
+    "canonical_writer_started": false,
+    "outreach_performed": false,
+    "source_head_sha": "ae42fac74972594cf7e6455e279162936e4d04f9",
+    "config_version": "2026-08-29T02:02:18+03:00",
+    "canonical_baseline": {
+      "leads_master": 500,
+      "contactable_master": 500,
+      "integrity": "PASS",
+      "last_completed_run": "N5K-20260829-486"
+    },
+    "discovery": {
+      "raw_distinct_employers": 80,
+      "sources_used": [
+        "HH-derived listings via Jobrun",
+        "Rabota.ru",
+        "Habr Career",
+        "other indexed job-board mirrors"
+      ],
+      "rotation_note": "Source lanes were rotated after fast-gate review. Exact first-20 duplicate+early-reject percentages were not reconstructed after the fact; no fabricated saturation metric is stored.",
+      "worker_funnel": {
+        "RAW": 80,
+        "FAST_GATE": 7,
+        "DEEP_CHECK": 3,
+        "SIZE": 2,
+        "LEGAL": 2,
+        "SIGNAL": 2,
+        "LPR": 1,
+        "CONTACT": 1,
+        "QUALIFIED": 1
+      }
+    }
+  },
+  "qualified": [
+    {
+      "company_name": "Политакс",
+      "legal_name": "ООО \"ПОЛИТАКС\"",
+      "country": "Россия",
+      "city": "Москва",
+      "inn": "7724483059",
+      "ogrn": "1197746443322",
+      "legal_status": "действующая организация",
+      "legal_status_evidence_url": "https://firmoteka.ru/7724483059",
+      "size": {
+        "revenue_year": 2025,
+        "revenue_rub": 230000000,
+        "employees_year": 2025,
+        "employees": 6,
+        "evidence_url": "https://firmoteka.ru/7724483059"
+      },
+      "signal": {
+        "class": "S1",
+        "type": "commercial-leadership-hiring",
+        "date": "2026-08-27",
+        "title": "Коммерческий директор / CCO",
+        "description": "Свежая вакансия коммерческого директора производителя профессиональных лакокрасочных и полимерных материалов; роль отвечает за коммерческую функцию и развитие продаж.",
+        "evidence_urls": [
+          "https://moskva.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BF%D0%BE-%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D1%8E-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+          "https://msk.terdo.ru/item/6574957/"
+        ]
+      },
+      "lpr": {
+        "name": "Винник Родион Владимирович",
+        "role": "генеральный директор и 100% учредитель",
+        "evidence_urls": [
+          "https://firmoteka.ru/7724483059",
+          "https://check.tochka.com/company/1197746443322/"
+        ]
+      },
+      "contact": {
+        "route_type": "official-company-phone-and-site",
+        "phones": [
+          "+7 495 205-50-21",
+          "+7 495 255-43-43",
+          "+7 495 545-85-75"
+        ],
+        "domain": "politaks.ru",
+        "evidence_urls": [
+          "https://companium.ru/id/1197746443322-politaks",
+          "https://2gis.ru/moscow/firm/70000001036283186"
+        ]
+      },
+      "dedup_keys": {
+        "inn": "7724483059",
+        "ogrn": "1197746443322",
+        "exact_legal_name": "ООО \"ПОЛИТАКС\"",
+        "brand_domain": "Политакс|politaks.ru"
+      },
+      "dedup_check": {
+        "pre_deep_check": "no match found in repository search",
+        "pre_write_recheck": "no match found in repository search",
+        "head_sha_rechecked": "ae42fac74972594cf7e6455e279162936e4d04f9"
+      },
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ]
+}
