@@ -1,0 +1,113 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-28T21:24:20+03:00",
+  "source_head_sha": "8dca49dccda5c0a414acf88c8f92a331baa59500",
+  "canonical_write": false,
+  "outreach_sent": 0,
+  "baseline": {
+    "last_completed_run": "N5K-20260828-482",
+    "canonical_count": 497,
+    "contactable_count": 497,
+    "integrity_status": "PASS"
+  },
+  "worker_funnel": {
+    "raw_distinct_employer_identities": 80,
+    "fast_gate_passed": 7,
+    "deep_check": 1,
+    "size_passed": 1,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "duplicates_before_deep_check": 0,
+    "notes": "80 employer-level source identities were screened across several low-overlap job-board/search batches. Obvious repeated employers across search results were removed before the worker funnel count. Exact first-20 duplicate+early-reject percentages were not separately instrumented in this pass and therefore are not reconstructed or claimed. Weak/oversized/public/state-controlled/recruiter-only identities were rejected at FAST GATE."
+  },
+  "discovery_sources": [
+    "https://nesiditsa.ru/vacancy/135024576",
+    "https://dreamjob.ru/employers/2355428/vakansii/135024576",
+    "https://ru.joblum.com/",
+    "https://dreamjob.ru/",
+    "https://careerist.ru/",
+    "https://cataloxy.ru/",
+    "https://h.careers/",
+    "https://jobvk.com/",
+    "https://jobrun.ru/"
+  ],
+  "qualified_candidates": [
+    {
+      "brand": "СИЛА-ЦЕНТР / Узел Сила",
+      "legal_name": "ООО \"СИЛА-ЦЕНТР\"",
+      "inn": "6312113811",
+      "ogrn": "1126312000011",
+      "region": "Самарская область",
+      "city": "Самара",
+      "legal_status": "Действующее",
+      "legal_status_as_of": "2026-07-20",
+      "company_size": {
+        "revenue_2025_rub": 19912000,
+        "employees_2025": 7,
+        "size_decision": "PASS",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1126312000011-ooo-sila-tsentr/",
+          "https://zachestnyibiznes.ru/company/ul/1126312000011_6312113811_OOO-SILA-CENTR",
+          "https://reputation.ru/ogrn/1126312000011"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-07-09",
+        "type": "operational-system-build",
+        "summary": "Свежая вакансия операционного директора: компания прямо ищет руководителя, который отстроит структуру и операционную систему онлайн/офлайн для производственной компании с собственными продажами.",
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/135024576",
+          "https://dreamjob.ru/employers/2355428/vakansii/135024576"
+        ]
+      },
+      "lpr": {
+        "name": "Ненашев Сергей Владимирович",
+        "role": "директор и 100% учредитель",
+        "evidence_urls": [
+          "https://zachestnyibiznes.ru/company/ul/1126312000011_6312113811_OOO-SILA-CENTR",
+          "https://reputation.ru/ogrn/1126312000011"
+        ]
+      },
+      "contact": {
+        "primary_route": "info@uzel-sila.ru",
+        "phones": [
+          "+7 800 500-90-52",
+          "+7 846 977-77-61",
+          "+7 846 977-77-54",
+          "+7 846 207-21-01"
+        ],
+        "official_sites": [
+          "https://сила-центр.рф/",
+          "https://uzel-sila.ru/"
+        ],
+        "contact_type": "corporate route to company / owner-led SME",
+        "evidence_urls": [
+          "https://zachestnyibiznes.ru/company/ul/1126312000011_6312113811_OOO-SILA-CENTR",
+          "https://samara.spravka.city/company/sila-centr",
+          "https://www.ds63.ru/firms/2096205/"
+        ]
+      },
+      "dedup_keys": {
+        "inn": "6312113811",
+        "ogrn": "1126312000011",
+        "exact_legal_name": "ООО \"СИЛА-ЦЕНТР\"",
+        "brand_domains": [
+          "сила-центр.рф",
+          "uzel-sila.ru"
+        ]
+      },
+      "dedup_recheck": {
+        "inn_match_in_repo": false,
+        "ogrn_match_in_repo": false,
+        "exact_name_match_in_repo": false,
+        "checked_against_head": "8dca49dccda5c0a414acf88c8f92a331baa59500"
+      },
+      "status": "QUALIFIED",
+      "qualification_note": "PASS only on confirmed current legal entity, 2025 scale, fresh dated S1 operating-system signal, identified owner/director and practical corporate contact route. No inferred personal contact details were used."
+    }
+  ]
+}
