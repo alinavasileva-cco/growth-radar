@@ -1,0 +1,34 @@
+{
+  "run_id": "N5K-20260828-477",
+  "recorded_at": "2026-08-28T16:02:32+03:00",
+  "status": "CONSUMED_AFTER_VERIFIED_INTEGRATION",
+  "canonical_before": 493,
+  "canonical_after": 493,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach": 0,
+  "files": [
+    {
+      "worker": "jobs",
+      "path": "data/pending_workers/jobs/20260828-152406-jobs.json",
+      "blob_sha": "7c1ad4f1bbd2347909358abd0f9acdb46d36c9ea",
+      "status": "CONSUMED_DUPLICATE",
+      "raw": 80,
+      "worker_qualified": 1,
+      "net_integrated": 0,
+      "known_canonical_duplicates": ["N5K-0473"],
+      "duplicate_keys": ["INN 6319233160", "OGRN 1186313090270"]
+    },
+    {
+      "worker": "industry",
+      "path": "data/pending_workers/industry/20260828-152211-industry-metrics.json",
+      "blob_sha": "2db8b8cccd52d62709b25088054c47d12cf0ac20",
+      "status": "CONSUMED_NO_QUALIFIED",
+      "raw": 100,
+      "worker_qualified": 0,
+      "net_integrated": 0
+    }
+  ],
+  "note": "Immutable staging retained for audit. Consumed index created only after physical integration guard confirmed PANELOK as existing N5K-0473 by INN/OGRN and after canonical/contactable 493/493, integrity PASS, orphan contacts/evidence 0/0 and outreach 0 were verified."
+}
