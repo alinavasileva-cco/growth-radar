@@ -1,0 +1,120 @@
+{
+  "worker": "jobs",
+  "mode": "READ+DISCOVERY",
+  "canonical_write": false,
+  "outreach_sent": 0,
+  "source_head_sha": "88fcb9dbb1f95a087c5e10177a590b28576ab4c3",
+  "source_config_version": "2026-08-28T18:57:21+03:00",
+  "baseline": {
+    "campaign_id": "new_5000",
+    "canonical_count": 496,
+    "contactable_count": 496,
+    "last_completed_run": "N5K-20260828-480",
+    "integrity": "PASS"
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_passed": 8,
+    "deep_checked": 1,
+    "size_passed": 1,
+    "legal_passed": 1,
+    "signal_passed": 1,
+    "lpr_passed": 1,
+    "contact_passed": 1,
+    "qualified": 1,
+    "canonical_duplicates_found_before_write": 0,
+    "source_notes": [
+      {
+        "lane": "Moscow commercial-director listings",
+        "raw_sampled": 20,
+        "threshold_rule_applied": true,
+        "duplicate_early_reject_threshold_exceeded": true,
+        "note": "Lane stopped after first 20 because the cheap-gate majority was unsuitable, duplicate/known, anonymous/confidential, outside current size profile, or lacked a probable verifiable S1-S3 signal. Exact reject-rate percentage was not reconstructed after the fact."
+      },
+      {
+        "lane": "Saint Petersburg commercial/operations listings",
+        "raw_sampled": 20,
+        "threshold_rule_applied": true,
+        "duplicate_early_reject_threshold_exceeded": true,
+        "note": "Lane stopped after first 20 on >70% cheap-gate reject/duplicate condition; exact percentage not reconstructed."
+      },
+      {
+        "lane": "Yekaterinburg sales-leadership listings",
+        "raw_sampled": 20,
+        "threshold_rule_applied": true,
+        "duplicate_early_reject_threshold_exceeded": true,
+        "note": "Lane stopped after first 20 on >70% cheap-gate reject/duplicate condition; exact percentage not reconstructed."
+      },
+      {
+        "lane": "Krasnodar sales-leadership listings",
+        "raw_sampled": 20,
+        "threshold_rule_applied": true,
+        "duplicate_early_reject_threshold_exceeded": true,
+        "note": "Lane stopped after first 20 on >70% cheap-gate reject/duplicate condition; exact percentage not reconstructed."
+      }
+    ]
+  },
+  "qualified_candidates": [
+    {
+      "brand": "UNIONDELTA",
+      "legal_name": "ООО \"ПРОФ-ТОН ГРУПП\"",
+      "inn": "7453330306",
+      "ogrn": "1197456034302",
+      "region": "Москва",
+      "domain": "uniondelta.ru",
+      "legal_status": "Действует",
+      "legal_status_as_of": "2026-08-01",
+      "size": {
+        "revenue_2025_rub": 114100000,
+        "revenue_source": "https://saby.ru/profile/7453330306-773001001",
+        "note": "Использована бухгалтерская отчётность 2025; более старые значения не использовались для решения."
+      },
+      "signal_level": "S1",
+      "signal": "Компания прямо сообщает, что находится в стадии масштабирования; свежая вакансия коммерческого директора для B2B-дилерской сети предусматривает управление коммерческим блоком и маркетингом России/СНГ. Параллельно опубликована роль Head of Global Marketing для международного развития на рынках СНГ, Ближнего Востока и Азии.",
+      "signal_date": "2026-08-26",
+      "signal_urls": [
+        "https://nesiditsa.ru/vacancy/134701133",
+        "https://afkoffer.com/vacancies/marketing/134701133",
+        "https://nesiditsa.ru/vacancy/133882011"
+      ],
+      "lpr": {
+        "name": "Панихин Василий Евгеньевич",
+        "role": "Генеральный директор; владелец",
+        "source": "https://saby.ru/profile/7453330306-773001001"
+      },
+      "contact": {
+        "type": "официальный корпоративный маршрут",
+        "phone": "+7 (495) 150-27-10",
+        "email": "sales@uniondelta.ru",
+        "website": "https://www.uniondelta.ru/",
+        "source_urls": [
+          "https://www.uniondelta.ru/catalog/poliuretanovye_antigraviynye_plenki/",
+          "https://makhachkala.uniondelta.ru/"
+        ],
+        "route_note": "Использовать официальный корпоративный канал с просьбой передать обращение генеральному директору/ответственному за коммерческое развитие; личный контакт не заявляется."
+      },
+      "dedup_keys": {
+        "inn": "7453330306",
+        "ogrn": "1197456034302",
+        "exact_legal_name": "ООО \"ПРОФ-ТОН ГРУПП\"",
+        "brand_domain": "UNIONDELTA|uniondelta.ru"
+      },
+      "dedup_check": {
+        "checked_against_fresh_head": "88fcb9dbb1f95a087c5e10177a590b28576ab4c3",
+        "inn_matches": 0,
+        "ogrn_matches": 0,
+        "legal_name_matches": 0,
+        "domain_matches": 0
+      },
+      "evidence_urls": [
+        "https://saby.ru/profile/7453330306-773001001",
+        "https://nesiditsa.ru/vacancy/134701133",
+        "https://afkoffer.com/vacancies/marketing/134701133",
+        "https://nesiditsa.ru/vacancy/133882011",
+        "https://www.uniondelta.ru/catalog/poliuretanovye_antigraviynye_plenki/",
+        "https://makhachkala.uniondelta.ru/"
+      ],
+      "decision": "QUALIFIED"
+    }
+  ]
+}
