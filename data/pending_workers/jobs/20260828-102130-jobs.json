@@ -1,0 +1,147 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "created_at": "2026-08-28T10:21:30+03:00",
+    "source_head_sha": "d74fa9d1280d383e710af2aefbf7a9f791f127d6",
+    "source_config_version": "2026-08-28T10:03:00+03:00",
+    "source_last_completed_run": "N5K-20260828-471",
+    "canonical_baseline": 485,
+    "contactable_baseline": 485,
+    "canonical_write": false,
+    "outreach": false,
+    "notes": "READ+DISCOVERY only. No canonical master/contactable/contacts/evidence/runtime/campaign writes and no canonical writer. Reviewed 80 distinct employer-level source identities from fresh job-board/job-mirror pools, including current Moscow commercial-director and sales-director pools, regional commercial/sales leadership pools and fresh direct employer vacancy mirrors. Duplicate employer rows were not counted twice. Stale/archived vacancies were not used as qualification signals where current August-2026 evidence was available. Broad overlapping pools were rotated rather than mined deeply. Physical pre-write dedup was repeated immediately before staging against fresh HEAD by INN/OGRN and brand-domain searches."
+  },
+  "worker_funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate_pass": 6,
+    "deep_check": 6,
+    "size_pass": 3,
+    "legal_pass": 3,
+    "signal_pass": 2,
+    "lpr_pass": 2,
+    "contact_pass": 2,
+    "qualified": 2,
+    "duplicate_or_early_reject": 74,
+    "source_rotation_note": "The broad Moscow pools contained recruiter-posted, anonymous-employer, federal/oversize, duplicate and weak-signal entries, so discovery was rotated into regional/direct-employer mirrors. Dolomit reached SIZE+LEGAL but was not staged because its clearly attributable CCO vacancy was archived and no fresher independent August signal was confirmed. Fijital, Prof-Ton Group and San Logistic were not staged because the full legal/scale/contact evidence chain was not confirmed within this worker without ambiguity. Criteria were not weakened."
+  },
+  "qualified": [
+    {
+      "brand": "БИЗОРЮК / Солнце",
+      "legal_name": "ООО «СОЛНЦЕ»",
+      "inn": "2630803603",
+      "ogrn": "1132651027013",
+      "legal_status": "Действует",
+      "legal_status_as_of": "2026-08-20",
+      "region": "Краснодарский край",
+      "city": "Краснодар",
+      "segment": "Производство натуральной косметики, безалкогольных напитков и продуктов питания / B2B-дистрибуция",
+      "website": "https://ooo-sun.ru/",
+      "revenue_scale": "Выручка за 2025 год — 226,981 млн ₽; за 2024 год — 184,066 млн ₽. Среднесписочная численность за 2024 год — 47 человек; официальный инвестиционный профиль города также фиксирует проект расширения производства и 50 новых рабочих мест.",
+      "revenue_source": "https://e-ecolog.ru/buh/2025/2630803603",
+      "signal_level": "S2",
+      "signal_summary": "Свежий job-сигнал: 07.08.2026 опубликована вакансия руководителя отдела продаж с управлением командой из 10 человек, KPI, развитием B2B-клиентов и ростом LTV. Дополнительный независимый сигнал от 16.07.2026: компания прямо указывает активное расширение дистрибуции по РФ. Совокупность двух актуальных признаков подтверждает коммерческое масштабирование.",
+      "signal_date": "2026-08-07",
+      "signal_source": "https://dreamjob.ru/employers/298534/vakansii/136033037",
+      "supporting_signal_source": "https://dreamjob.ru/employers/298534/vakansii/135117703",
+      "owner": "Федоров Евгений Евгеньевич — 100%",
+      "ceo": "Федоров Евгений Евгеньевич — генеральный директор",
+      "lpr": "Федоров Евгений Евгеньевич",
+      "lpr_role": "Генеральный директор и единственный собственник; практический ЛПР",
+      "primary_phone": "+7 (929) 829-06-73",
+      "secondary_phone": "+7 (928) 231-25-65",
+      "primary_email": "d.efimenko@ooo-sun.ru",
+      "secondary_email": "manager-14@ooo-sun.ru",
+      "contact_form": "https://ooo-sun.ru/",
+      "contact_type": "Официальные телефоны и корпоративные email отдела продаж + форма заявки на собственном сайте",
+      "contact_source": "https://ooo-sun.ru/",
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/298534/vakansii/136033037",
+        "https://dreamjob.ru/employers/298534/vakansii/135117703",
+        "https://ooo-sun.ru/",
+        "https://e-ecolog.ru/buh/2025/2630803603",
+        "https://companies.rbc.ru/id/1132651027013-ooo-solntse/",
+        "https://invest.krd.ru/ru/profile/istorii-uspekha.php"
+      ],
+      "dedup_keys": {
+        "inn": "2630803603",
+        "ogrn": "1132651027013",
+        "legal_name_normalized": "ООО СОЛНЦЕ",
+        "brand_domain": "БИЗОРЮК|ooo-sun.ru"
+      },
+      "dedup_precheck": {
+        "inn_repo_search": "no match",
+        "ogrn_repo_search": "no match",
+        "domain_repo_search": "no match",
+        "head_checked": "d74fa9d1280d383e710af2aefbf7a9f791f127d6"
+      },
+      "gates": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      },
+      "consulting_hypothesis": "Коммерческая диагностика на фоне расширения B2B-дистрибуции: сегментация каналов и клиентов, управляемая воронка и KPI отдела продаж, unit-экономика по брендам/каналам, связка производства с планированием продаж и система удержания/роста LTV.",
+      "worker_status": "QUALIFIED_STAGED_NOT_CANONICAL"
+    },
+    {
+      "brand": "НЗЭТК",
+      "legal_name": "ООО «НИЖЕГОРОДСКИЙ ЗАВОД ЭЛЕКТРОТЕХНИЧЕСКОГО КРЕПЕЖА»",
+      "inn": "5257202030",
+      "ogrn": "1215200009826",
+      "legal_status": "Действует",
+      "legal_status_as_of": "2026-08-21",
+      "region": "Нижегородская область",
+      "city": "Нижний Новгород",
+      "segment": "Производство электротехнического крепежа / пластиковые хомуты, стяжки, монтажные скобы / B2B",
+      "website": "https://нзэтк.рф/",
+      "revenue_scale": "Выручка за 2025 год — 245,456 млн ₽ против 422,358 млн ₽ за 2024 год; актуальный профиль указывает 9 сотрудников, профиль 2024 года — 15 сотрудников.",
+      "revenue_source": "https://companies.rbc.ru/id/1215200009826-obschestvo-s-ogranichennoj-otvetstvennostyu-nizhegorodskij-zavod-elektrotehnicheskogo-krepezha/",
+      "signal_level": "S2",
+      "signal_summary": "Свежий job-сигнал: 25.08.2026 опубликована вакансия руководителя отдела продаж. Независимый финансовый сигнал — падение выручки с 422,358 млн ₽ в 2024 году до 245,456 млн ₽ в 2025 году. В сочетании это подтверждает актуальную потребность в усилении коммерческой функции, а не рыночную близость без сигнала.",
+      "signal_date": "2026-08-25",
+      "signal_source": "https://dreamjob.ru/employers/3293479/vakansii/136607853",
+      "supporting_signal_source": "https://companies.rbc.ru/id/1215200009826-obschestvo-s-ogranichennoj-otvetstvennostyu-nizhegorodskij-zavod-elektrotehnicheskogo-krepezha/",
+      "owner": "Давыдов Денис Александрович — единственный учредитель",
+      "ceo": "Давыдов Денис Александрович — директор",
+      "lpr": "Давыдов Денис Александрович",
+      "lpr_role": "Директор и единственный учредитель; практический ЛПР",
+      "primary_phone": "8 (800) 707-99-52",
+      "secondary_phone": "8 (831) 224-88-52",
+      "primary_email": "info@nzetk.ru",
+      "contact_form": "https://нзэтк.рф/contacts",
+      "contact_type": "Официальные телефоны + корпоративный email + форма обращения на собственном сайте",
+      "contact_source": "https://нзэтк.рф/contacts",
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/3293479/vakansii/136607853",
+        "https://companies.rbc.ru/id/1215200009826-obschestvo-s-ogranichennoj-otvetstvennostyu-nizhegorodskij-zavod-elektrotehnicheskogo-krepezha/",
+        "https://www.klerk.ru/tool/ocompany/1215200009826/",
+        "https://нзэтк.рф/contacts",
+        "https://nn.hh.ru/employer/10747711"
+      ],
+      "dedup_keys": {
+        "inn": "5257202030",
+        "ogrn": "1215200009826",
+        "legal_name_normalized": "ООО НИЖЕГОРОДСКИЙ ЗАВОД ЭЛЕКТРОТЕХНИЧЕСКОГО КРЕПЕЖА",
+        "brand_domain": "НЗЭТК|nzetk.ru"
+      },
+      "dedup_precheck": {
+        "inn_repo_search": "no match",
+        "ogrn_repo_search": "no match",
+        "domain_repo_search": "no match",
+        "head_checked": "d74fa9d1280d383e710af2aefbf7a9f791f127d6"
+      },
+      "gates": {
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      },
+      "consulting_hypothesis": "Диагностика коммерческой системы после существенного снижения выручки: декомпозиция причин по клиентским сегментам и каналам, пересборка B2B-воронки и KPI, возврат/удержание ключевых клиентов, маржинальность ассортимента и управленческий контур для нового руководителя продаж.",
+      "worker_status": "QUALIFIED_STAGED_NOT_CANONICAL"
+    }
+  ]
+}
