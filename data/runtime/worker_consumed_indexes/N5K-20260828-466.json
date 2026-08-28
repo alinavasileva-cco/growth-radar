@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260828-466",
+  "updated_at": "2026-08-28T05:12:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260828-042149-jobs.json",
+      "blob_sha": "7350e4a20306da68f9146f4b06cfc1ce1c2b1019",
+      "result": "CONSUMED_DUPLICATE",
+      "note": "Worker-qualified Tatpromstan was rejected by the final physical canonical guard: existing N5K-0494 matches INN 1655216482 and OGRN 1111690040615. Immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260828-042605-industry-metrics.json",
+      "blob_sha": "1dd4a0b760f12ca9cbbe14ead978117ffacd4023",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 distinct raw identities audited across five saturated catalog lanes; RIFAR rejected at SIGNAL; immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 481,
+  "physical_contactable_after_cycle": 481,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}

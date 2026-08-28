@@ -2,86 +2,16 @@
   "run_id": "N5K-20260828-466",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-28T05:08:00+03:00",
+  "updated_at": "2026-08-28T05:12:00+03:00",
   "stage": "COMPLETE",
-  "new_cycle": {
-    "baseline_count": 481,
-    "target_count": 5000,
-    "current_canonical_count": 481,
-    "current_contactable_count": 481,
-    "progress_added": 0,
-    "remaining": 4519
-  },
-  "funnel": {
-    "discovered": 323,
-    "fast_gate_passed": 8,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 2,
-    "excluded": 322
-  },
+  "new_cycle": {"baseline_count":481,"target_count":5000,"current_canonical_count":481,"current_contactable_count":481,"progress_added":0,"remaining":4519},
+  "funnel": {"discovered":323,"fast_gate_passed":8,"size_check_passed":2,"legal_match_passed":2,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":0,"duplicates":2,"excluded":321},
   "lane_metrics": [
-    {
-      "lane": "jobs/20260828-042149",
-      "raw": 80,
-      "fast_gate": 7,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "worker_qualified": 1,
-      "canonical_prewrite_qualified": 1,
-      "result": "TATPROMSTAN_QUALIFIED"
-    },
-    {
-      "lane": "industry/20260828-042605",
-      "raw": 100,
-      "fast_gate": 1,
-      "size": 1,
-      "legal": 1,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicates_plus_early_rejects": 99,
-      "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
-    },
-    {
-      "lane": "canonical-low-overlap-official-exhibitor-catalogs",
-      "raw": 143,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicates": 1,
-      "duplicates_plus_early_rejects": 143,
-      "result": "ROTATED_AFTER_FAST_GATE_SATURATION",
-      "sources": [
-        "ExpoElectronica 2026 official exhibitor list",
-        "AIRVent 2026 official exhibitor list",
-        "Weldex exhibitor list used only for raw discovery; no stale evidence promoted",
-        "MosHome 2026 official exhibitor list",
-        "Analitika Expo 2026 official exhibitor list",
-        "Securika Moscow 2026 official participant publication"
-      ],
-      "note": "143 distinct source identities after in-memory name dedup across the sampled catalog batches. One physical canonical duplicate (BREEZ) was removed before deep-check. Remaining catalog-only candidates did not expose a probable S1-S3 trigger at FAST GATE; exhibition participation itself was never treated as SIGNAL. Saturated batches were rotated."
-    }
+    {"lane":"jobs/20260828-042149","raw":80,"fast_gate":7,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"worker_qualified":1,"canonical_prewrite_qualified":1,"physical_dedup_duplicate":1,"existing_lead_id":"N5K-0494","result":"TATPROMSTAN_CANONICAL_DUPLICATE_INN_OGRN"},
+    {"lane":"industry/20260828-042605","raw":100,"fast_gate":1,"size":1,"legal":1,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicates_plus_early_rejects":99,"result":"ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"},
+    {"lane":"canonical-low-overlap-official-exhibitor-catalogs","raw":143,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicates":1,"duplicates_plus_early_rejects":143,"result":"ROTATED_AFTER_FAST_GATE_SATURATION","sources":["ExpoElectronica 2026 official exhibitor list","AIRVent 2026 official exhibitor list","Weldex exhibitor list used only for raw discovery; no stale evidence promoted","MosHome 2026 official exhibitor list","Analitika Expo 2026 official exhibitor list","Securika Moscow 2026 official participant publication"],"note":"143 distinct source identities after in-memory name dedup across sampled catalog batches. One known canonical duplicate (BREEZ) was removed before deep-check. Remaining catalog-only candidates did not expose a probable S1-S3 trigger at FAST GATE; exhibition participation itself was never treated as SIGNAL."}
   ],
   "qualified_companies": [],
-  "integrity_status": "PASS",
-  "orphan_contacts": 0,
-  "orphan_evidence": 0,
-  "active_wip": 0,
-  "physical_master_state": "481_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "481_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "outreach_sent": 0,
-  "blocker": null
+  "integrity_status":"PASS","orphan_contacts":0,"orphan_evidence":0,"active_wip":0,"physical_master_state":"481_DATA_ROWS_PLUS_HEADER_CONFIRMED","physical_contactable_state":"481_DATA_ROWS_PLUS_HEADER_CONFIRMED","outreach_sent":0,"blocker":null,
+  "repair_note":"Physical guard matched Tatpromstan to existing N5K-0494 by INN 1655216482 and OGRN 1111690040615. Excluded corrected to 321 so raw = qualified + duplicates + excluded."
 }
