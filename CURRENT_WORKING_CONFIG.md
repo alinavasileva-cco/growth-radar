@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-28T10:03:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260828-471`  
+**Версия:** 2026-08-28T11:05:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260828-472`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **485 / 485**  
+**Физически подтверждённый canonical/contactable:** **487 / 487**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **515**  
-**Осталось до 5000:** **4515**  
+**Осталось до 1000:** **513**  
+**Осталось до 5000:** **4513**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **485 / 485**;
+- physical canonical/contactable count: **487 / 487**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260828-471`;
+- последний завершённый RUN: `N5K-20260828-472`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -48,11 +48,11 @@
 
 ## Последние подтверждённые RUN
 
-- `N5K-20260828-467`: 482/482, +1, PASS, orphan 0/0.
 - `N5K-20260828-468`: 482/482, +0, PASS, orphan 0/0.
 - `N5K-20260828-469`: 484/484, +2, PASS, orphan 0/0.
 - `N5K-20260828-470`: 484/484, +0, PASS, orphan 0/0; physical duplicate `N5K-0593`.
 - `N5K-20260828-471`: 485/485, +1, PASS, orphan 0/0.
+- `N5K-20260828-472`: 487/487, +2, PASS, orphan 0/0.
 
 Полная история и доказательства предыдущих RUN сохранены в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, `data/runtime/worker_consumed_indexes/**` и immutable worker-staging.
 
@@ -66,9 +66,15 @@ Fresh worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qua
 
 Canonical/contactable: **485/485**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
 
-## Latest verified run N5K-20260828-471
-Canonical/contactable: 485/485. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+## RUN 472 — canonical integration
 
+Fresh worker pool: jobs `80 raw / 2 worker-qualified`; industry `100 raw / 0 qualified`. Оба jobs-кандидата — **БИЗОРЮК / ООО «СОЛНЦЕ»** и **НЗЭТК / ООО «НИЖЕГОРОДСКИЙ ЗАВОД ЭЛЕКТРОТЕХНИЧЕСКОГО КРЕПЕЖА»** — прошли свежий canonical recheck и финальный physical dedup guard. Для БИЗОРЮК worker-email `d.efimenko@ooo-sun.ru` не использован: свежий официальный сайт подтверждает `a.gorchakov@ooo-sun.ru` и `manager-14@ooo-sun.ru`. Выручка ООО «СОЛНЦЕ» за 2025 год независимо подтверждена на уровне 226,981 млн ₽; актуальный S2 job-сигнал датирован 07.08.2026. Для НЗЭТК подтверждены выручка 245,45 млн ₽ за 2025 год, директор/учредитель Давыдов Денис Александрович, официальные контакты и свежий S2 job-сигнал 25.08.2026.
+
+Собственный low-overlap discovery добавил **120 source-level identities**: по 20 из TransRussia/SkladTech, Aquaflame, RosUpack, AIRVent, WorldFood Moscow и MiningWorld Russia 2026. Каждый lane был остановлен после первых 20 на cheap gate при duplicate+early reject >70%; участие в выставке само по себе SIGNAL не считалось. Эти source-level identities не заявляются как globally legal-key-proven distinct.
+
+Финальная воронка: **300 source-level raw → 6 fast gate → 3 SIZE → 3 LEGAL → 2 SIGNAL → 2 LPR → 2 CONTACT → 2 QUALIFIED → 2 physically integrated**. Duplicates: **0**; excluded: **298**. Целевые 400–800 globally proven distinct raw не достигнуты; критерии не снижались.
+
+Canonical/contactable: **487/487**. Integrity PASS. Orphan contacts/evidence: **0/0**. Active WIP: **0**. Pending: cleared. Worker staging: consumed-index recorded. Outreach: **0**.
 
 ## Latest verified run N5K-20260828-472
 Canonical/contactable: 487/487. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
