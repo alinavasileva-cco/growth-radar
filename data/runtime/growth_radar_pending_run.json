@@ -1,8 +1,132 @@
 {
-  "run_id": "N5K-20260828-463",
-  "updated_at": "2026-08-28T01:58:52+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260828-463 integrated physically; canonical/contactable 480/480; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260828-464",
+  "updated_at": "2026-08-28T03:08:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 180,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 179
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs/20260828-0228",
+      "raw": 80,
+      "fast_gate": 6,
+      "size": 2,
+      "legal": 2,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "worker_qualified": 1,
+      "canonical_prewrite_qualified": 1,
+      "duplicates_plus_early_rejects": 74,
+      "result": "OVEN_QUALIFIED"
+    },
+    {
+      "lane": "industry/20260828-022330",
+      "raw_distinct": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates_plus_early_rejects": null,
+      "result": "ZERO_QUALIFIED_ROTATED_AFTER_SATURATION"
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0638",
+      "Brand": "OVEN / Oven",
+      "Legal Name": "ООО «ОВЕН»",
+      "INN": "5406832440",
+      "OGRN/OGRNIP": "1235400024694",
+      "Region": "Новосибирская область",
+      "City": "Новосибирск",
+      "Segment": "Премиальная встраиваемая техника / retail / проектные продажи",
+      "Website": "https://oven-shop.ru/",
+      "Revenue/Scale": "Выручка 237,597 млн ₽ за 2025 год; рост с 147,517 млн ₽ в 2024; официальный сайт заявляет продажи и доставку по России.",
+      "Signal Level": "S1",
+      "Signal Summary": "25.08.2026 опубликована вакансия коммерческого директора для масштабирования бизнеса OVEN; в описании заявлена цель стать №1 в России.",
+      "Signal Date": "2026-08-25",
+      "Signal Source": "https://novosibirsk.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+      "Owner": "Ёгин Сергей Сергеевич — соучредитель 50%",
+      "CEO": "Ёгин Сергей Сергеевич",
+      "LPR": "Ёгин Сергей Сергеевич",
+      "LPR Role": "Директор / соучредитель 50%",
+      "Primary Phone": "8 (800) 444-54-00",
+      "Primary Email": "sales@oven-shop.ru",
+      "HH Contact": "",
+      "Contact Form": "https://oven-shop.ru/contacts",
+      "Contact Type": "official company phone + corporate email + named director-of-development contact",
+      "Contact Source": "Official OVEN site",
+      "Consulting Hypothesis": "Масштабирование коммерческой функции и выхода из регионального лидерства в федеральный рост: коммерческая стратегия, воронка, каналы, KPI, команда и проектные продажи.",
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "8 (800) 444-54-00",
+          "type": "official corporate phone",
+          "source": "Official OVEN contacts",
+          "url": "https://oven-shop.ru/contacts",
+          "is_lpr": false,
+          "notes": "Официальный общий корпоративный телефон."
+        },
+        {
+          "channel": "email",
+          "value": "sales@oven-shop.ru",
+          "type": "official corporate email",
+          "source": "Official OVEN contacts",
+          "url": "https://oven-shop.ru/contacts",
+          "is_lpr": false,
+          "notes": "Официальный общий корпоративный email."
+        },
+        {
+          "channel": "email",
+          "value": "zemchenkova@oven-shop.ru",
+          "type": "named business contact",
+          "source": "Official OVEN contacts",
+          "url": "https://oven-shop.ru/contacts",
+          "is_lpr": false,
+          "notes": "Алёна Земченкова, директор по развитию; официальный сайт также публикует +7 953 777-78-98."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «ОВЕН», ИНН 5406832440, ОГРН 1235400024694 — действующее российское ООО; Ёгин Сергей Сергеевич — директор и соучредитель 50%.",
+          "url": "https://companies.rbc.ru/id/1235400024694-ooo-ooo-oven/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Выручка ООО «ОВЕН» выросла до 237,597 млн ₽ за 2025 год с 147,517 млн ₽ за 2024 год.",
+          "url": "https://companies.rbc.ru/id/1235400024694-ooo-ooo-oven/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "25.08.2026 OVEN ищет коммерческого директора для масштабирования бизнеса; заявлена федеральная цель роста.",
+          "url": "https://novosibirsk.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+          "source": "JobRun"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт OVEN публикует 8 (800) 444-54-00, sales@oven-shop.ru и прямой контакт директора по развитию Алёны Земченковой.",
+          "url": "https://oven-shop.ru/contacts",
+          "source": "Official OVEN site"
+        }
+      ]
+    }
+  ],
+  "notes": "Fresh worker pool processed after completed RUN 463. Jobs: 80 source-level employer identities, 1 canonical-prewrite qualified. Industry: 100 distinct raw identities, 0 qualified; all five 20-candidate source lanes crossed the configured >70% saturation stop threshold and were rotated. Total 180 source-level raw is not claimed as 180 globally identity-proven distinct across workers because jobs early rejects lack complete legal keys. Additional discovery sources were checked but unprocessed search-result rows were not counted. Criteria were not weakened; outreach=0.",
+  "qualified_staged_not_counted": 1
 }
