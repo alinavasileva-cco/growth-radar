@@ -1,0 +1,34 @@
+{
+  "run_id": "N5K-20260829-485",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-29T01:04:00+03:00",
+  "status": "CONSUMED_INDEX_RECORDED",
+  "entries": [
+    {
+      "path": "data/pending_workers/jobs/20260829-002228-jobs.json",
+      "blob_sha": "d71e3c1bb1d0d69c53346217ff31b6e9316d6381",
+      "result": "CONSUMED_DUPLICATE",
+      "raw": 82,
+      "qualified": 0,
+      "note": "Worker-qualified ООО ЛАЙФТРАНС was rejected by final canonical physical dedup: existing N5K-0647 has the same INN 6163214497 and OGRN 1196196018369."
+    },
+    {
+      "path": "data/pending_workers/industry/20260829-002635-industry-metrics.json",
+      "blob_sha": "99ca7d50d9f6efcb987254c3e1c2ffbc048b0de2",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 100,
+      "qualified": 0,
+      "note": "Five first-20 official industry catalogue batches produced zero candidates passing FAST GATE; each saturated lane was stopped and rotated."
+    }
+  ],
+  "worker_raw_accounted": 182,
+  "own_discovery_raw_accounted": 120,
+  "total_raw_accounted": 302,
+  "net_qualified": 0,
+  "physically_integrated": 0,
+  "canonical_contactable": "499/499",
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach_sent": 0
+}
