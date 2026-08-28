@@ -1,0 +1,115 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "captured_at": "2026-08-28T19:29:00+03:00",
+  "baseline_head": "bc57f80f260e22b2bc1c5db3f1c1d2f8502e8db1",
+  "config_version": "2026-08-28T18:57:21+03:00",
+  "canonical_count": 496,
+  "canonical_integrity": "PASS",
+  "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "policy": {
+    "canonical_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "exhibition_presence_is_signal": false,
+    "early_reject_rule": "No probable S1-S3 evidence at cheap fast gate; do not spend SIZE/LEGAL/LPR/CONTACT work on weak catalogue-only records."
+  },
+  "source_observations": 100,
+  "raw_distinct_source_identities": 100,
+  "funnel": {
+    "RAW": 100,
+    "FAST_GATE": 0,
+    "SIZE": 0,
+    "LEGAL": 0,
+    "SIGNAL": 0,
+    "LPR": 0,
+    "CONTACT": 0,
+    "QUALIFIED": 0
+  },
+  "lanes": [
+    {
+      "source": "МЕТАЛЛООБРАБОТКА-2026 / official Expocentre catalogue / Russia pages 1-2",
+      "source_urls": [
+        "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=1",
+        "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=2"
+      ],
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "raw_identities": [
+        "3DLAM", "3Д ВИЖН ДИСТРИБЬЮШЕН, ООО", "3Д КОНТРОЛЬ, ООО", "3Д-ИНТЕГРАЦИЯ НПО, ООО", "ALUMICA", "ANDREEV MACHINES", "ARCUS", "AREATEK", "ARKA", "ATAU, ООО",
+        "AVERTUM", "AVP ZIAS", "CEBORA-РОССИЯ", "COWBOY LASER", "DALGAKIRAN", "FAIRINO", "GTOOL, ООО", "INNOTECH", "INSIZE RUSSIA", "JWT"
+      ]
+    },
+    {
+      "source": "ШИНЫ, РТИ И КАУЧУКИ-2026 / official Expocentre catalogue / Russia pages 3-4",
+      "source_urls": [
+        "https://icatalog.expocentr.ru/ru/exhibitions/f33d0464-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=3",
+        "https://icatalog.expocentr.ru/ru/exhibitions/f33d0464-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=4"
+      ],
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "raw_identities": [
+        "ГРАНДТРЭК, ООО", "ГРУЗОВИК ПРЕСС, ЖУРНАЛ", "ДАВЫДОВО — КОМПАНИЯ ПО ПРОИЗВОДСТВУ ШИН", "ДАРВИН ПЛЮС", "ДОНТЕХРЕЗИНА И КО", "ЕНА-ВЕКТОР, АО", "ЗЕЛЕНАЯ РЕЗИНА, ООО", "ЗЕРМА ЛОММЕРС", "ИЗМА РУС, ООО", "ИНТЕРПОЛЕ, АО",
+        "ИНТЕРХИМ", "ИСТРА, СКБ, АО", "КАЗАНСКИЙ ЗАВОД СИНТЕТИЧЕСКОГО КАУЧУКА", "КАУЧУК И РЕЗИНА, ИЗДАТЕЛЬСТВО, ООО", "КВАРТ", "КЕРАМЕКС, ООО", "КОМЕД, ООО", "КОМЕТА, ООО", "КОМПОЗИТ-ТРЕЙД, ООО", "КОНКОРД-ХИМ"
+      ]
+    },
+    {
+      "source": "МИР СТЕКЛА-2026 / official Expocentre catalogue / Russia pages 2-3",
+      "source_urls": [
+        "https://icatalog.expocentr.ru/ru/exhibitions/190a3ab8-1050-11f0-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=2",
+        "https://icatalog.expocentr.ru/ru/exhibitions/190a3ab8-1050-11f0-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=3"
+      ],
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "raw_identities": [
+        "АЕ ГлассТек, ООО", "АИСТ", "АЛЬФА ГЛАСС, ООО", "БИ-СТАРС ТЕХНОЛОГИЯ, ООО", "БЛАСТ ИНЖИНИРИНГ, ООО", "БОРОВИЧСКИЙ КОМБИНАТ ОГНЕУПОРОВ, АО", "ВеАл, ОАО", "ВЕГА, ООО", "ВИПКОМПЛЕКТ, ООО", "ГАЛЬВАНО, ООО",
+        "ГЛАЗЕР, ООО", "ГЛАСС ТЕХНОЛОДЖИС", "ГЛАССПРО, ООО", "ГЛОБАЛ ГРУПП", "ДА ШУ ИНТЕРНЕШНЛ, ООО", "ДЖИФЛЕКС, ООО", "ДИАКРАФТ, ООО", "ДЛФ ФОРМАТ, ООО", "ДОМГЛАСС, ООО", "ЗАВОД МИКРОЭЛЕКТРОННЫХ ТЕХНОЛОГИЙ, ООО"
+      ]
+    },
+    {
+      "source": "ROSBUILD-2026 / official Expocentre catalogue",
+      "source_urls": ["https://icatalog.expocentr.ru/ru/exhibitions/190a3ab2-1050-11f0-80ce-a0d3c1fab97f"],
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "raw_identities": [
+        "ALFRESCO", "ALUMARK", "ASSEL", "AXYFORMA", "BOOM TOOLS", "ECOGARDEN", "FCSPRO", "GEOSM", "GIP GROUP", "KRAAB SYSTEMS",
+        "SELECTA", "АКРИТЕХ", "АЛЬЯНС СТИЛЬ, ООО", "АРБОГРАД", "БАЙДЖАКС СТЕНОВЫЕ ПАНЕЛИ, ООО", "БОЛИД, НВП, АО", "БРАЙТЭЛЕК, ООО", "ВЕРГЕР", "ВИЗИТ ИМ. В.Ф. СОТНИКОВА, НПО, ООО", "ГЛВ, ООО"
+      ]
+    },
+    {
+      "source": "ПРОДЭКСПО-2026 / official Expocentre catalogue / Russia pages 22 and 65",
+      "source_urls": [
+        "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=22",
+        "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=65"
+      ],
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stopped_after_first_20": true,
+      "raw_identities": [
+        "БАСКОЙ, ТОРГОВЫЙ ДОМ, ООО", "БАШСПИРТ, АО", "БВК", "БЕЖИЦКИЙ ПК, ОАО", "БЕЛАГРО, ООО", "БЕЛГОРОДСКИЙ КОНСЕРВНЫЙ КОМБИНАТ, ООО", "БЕЛГОРОДСКИЙ ХЛАДОКОМБИНАТ, АО", "БЕЛИКОВ В.А., ИП", "БЕЛМОЛПРОДУКТ, ООО", "БЕЛОГОРЬЕ, ТД, ООО",
+        "ЛВ ГРУПП, ООО", "ЛЕБЕДИ, ООО", "ЛЕБЕДЯНЬМОЛОКО, ООО", "ЛЕВ-ТОЛСТОВСКИЙ МОЛОЧНЫЙ ЗАВОД, ООО", "ЛЕВОКУМСКОЕ, АО", "ЛЕГЕНДА СИБИРИ, ООО", "ЛЕГЕНДА, ООО", "ЛЕД ЭКСПЕРТ, ТД, ООО", "ЛЕДНИК, ООО", "ЛЕЗГОР, ООО"
+      ]
+    }
+  ],
+  "qualified": [],
+  "notes": [
+    "All five first-20 batches exceeded the 70% duplicate+early-reject threshold and were stopped immediately.",
+    "No candidate was promoted beyond FAST GATE because the source evidence established catalogue participation only and did not establish a probable current S1-S3 trigger under the active configuration.",
+    "The 100 records are distinct source identities within this worker pool, not a claim of 100 globally legal-key-proven unique legal entities; early rejects were intentionally not resolved through INN/OGRN/domain deep work.",
+    "No canonical master/contactable/contacts/evidence/runtime/campaign file was written. Outreach was not performed."
+  ]
+}
