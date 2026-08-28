@@ -1,0 +1,224 @@
+{
+  "worker": "industry",
+  "mode": "READ+DISCOVERY",
+  "created_at": "2026-08-28T03:23:36+03:00",
+  "baseline_head_before_discovery": "de5997e79bff50118f31a7fedb7d113fd4877f89",
+  "baseline_head_before_write": "1509cb6bda52909dc6ef1d17aa8017435cb44459",
+  "config_version": "2026-08-28T03:12:00+03:00",
+  "canonical_contactable_baseline": "481/481; integrity PASS",
+  "canonical_write": false,
+  "outreach": false,
+  "dedup_keys": [
+    "Lead ID",
+    "INN",
+    "OGRN/OGRNIP",
+    "exact legal name",
+    "confirmed brand+domain"
+  ],
+  "funnel": {
+    "raw": 100,
+    "distinct_raw": 100,
+    "fast_gate": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0,
+    "early_rejects": 99
+  },
+  "lanes": [
+    {
+      "lane": "aboutpartner-industrial-equipment-2026",
+      "source_url": "https://aboutpartner.ru/index.php/producers/catalog-promyslennoe-oborudovanie",
+      "raw": 20,
+      "duplicate_plus_early_reject_first20": 20,
+      "rate": 1.0,
+      "stopped_and_rotated": true,
+      "candidates": [
+        "Завод Изоляционных Материалов (ЗИМ)",
+        "Производитель фастфуда «АВТОРФУД»",
+        "AxeTech",
+        "Карагай",
+        "ООО \"СК ЭКСПЕРТ\"",
+        "Алкими",
+        "Приморский Кондитер",
+        "ООО \"СТАРФОЛЛ\"",
+        "Научно-технический центр «ТЕКО»",
+        "Завод «Эксперт»",
+        "Завод «Челны Гальваника»",
+        "Производитель металлопроката «Металл-МК»",
+        "Производитель подъемников для инвалидов «ЭВЕРЕСТ»",
+        "АО \"ГИДРОТАКТ\"",
+        "Производитель гранитных изделий «Стонекс Групп»",
+        "Производитель косметики «SHIK»",
+        "СК ТАРА",
+        "Производственная компания «Здоровье»",
+        "Производитель газоанализаторов «АРТГАЗ»",
+        "Производитель туалетных кабин «Полимер Сервис»"
+      ]
+    },
+    {
+      "lane": "ndt-russia-2026",
+      "source_url": "https://www.ndt-russia.ru/ru-RU/visitors/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicate_plus_early_reject_first20": 20,
+      "rate": 1.0,
+      "stopped_and_rotated": true,
+      "candidates": [
+        "RAYCRAFT",
+        "АКА-СКАН",
+        "АКУСТИЧЕСКИЕ КОНТРОЛЬНЫЕ СИСТЕМЫ",
+        "ГЕДОКОРП, ООО",
+        "ДИАГНОСТИКА-М, ООО",
+        "ИЦ ФИЗПРИБОР",
+        "Компания Саула",
+        "Константа УЗК",
+        "МАШПРОЕКТ НПП, ООО",
+        "НПК ЛУЧ",
+        "НПО Логотех",
+        "Омега Тест Групп",
+        "ПЕРГАМ-ИНЖИНИРИНГ, АО",
+        "ПРОДИС.НДТ, ООО",
+        "ПРОМЕТЕЙ, ООО",
+        "Промтехнологии",
+        "СИНТЕЗ НДТ",
+        "СИНТЕЗ НПФ",
+        "Спектрофлэш ООО",
+        "СТРОЙПРИБОР СКБ, ООО"
+      ]
+    },
+    {
+      "lane": "interstroyexpo-2026",
+      "source_url": "https://www.interstroyexpo.com/ru-RU/about/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicate_plus_early_reject_first20": 19,
+      "rate": 0.95,
+      "stopped_and_rotated": true,
+      "candidates": [
+        "DECONA МЕБЕЛЬНАЯ ФАБРИКА",
+        "DIPOXSY SYSTEMS",
+        "GIP GROUP (ЦУП, ООО)",
+        "GREEN STROY COMPANY",
+        "INMYROOM",
+        "KARELIA GARDEN",
+        "METLAH.STORE",
+        "MVAVA Electrical Technology Co.,Ltd",
+        "RUSPAN",
+        "Steingot",
+        "TRI",
+        "Xinjiang WMGrass Co., Ltd.",
+        "АВИТО УСЛУГИ",
+        "АВОК",
+        "Гелиос",
+        "Гомельстройматериалы, ОАО",
+        "ДАБЛ-Ю",
+        "ЕВРОЛИФТМАШ",
+        "ЗОВ",
+        "Интер-Меццо"
+      ]
+    },
+    {
+      "lane": "interfood-krasnodar-2026",
+      "source_url": "https://inter-food.su/ru-RU/about/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicate_plus_early_reject_first20": 20,
+      "rate": 1.0,
+      "stopped_and_rotated": true,
+      "candidates": [
+        "BFM КУБАНЬ",
+        "BUSINESS FM КРАСНОДАР",
+        "GEMMA COFFEE&TEA/ООО ПРИМО",
+        "АДЫГЕЙСКАЯ СОЛЬ",
+        "АКВА ВАЙТ ЗАВОД",
+        "АКВА РАЙ ООО",
+        "АСКА ТРЕЙД ООО",
+        "АССА ООО",
+        "БЕЛОРУССКИЕ РЕЦЕПТЫ (СПМК)",
+        "БОТАНИКА",
+        "ВСЕ СВОИ",
+        "Калугин И.И. ИП",
+        "КИЧЕМАСОВА Г.А ИП",
+        "КРЫМ БАТАТ",
+        "КРЫМ-ФРОСТ",
+        "МАРС ООО",
+        "МОЙ ЛЮБИМЫЙ ТОРТИК",
+        "НУР",
+        "ПЕРВОЕ РАДИО",
+        "ПЕРВОЕ РАДИО КУБАНЬ 24"
+      ]
+    },
+    {
+      "lane": "cemat-russia-2026",
+      "source_url": "https://www.cemat-russia.ru/exhibition/guide/",
+      "raw": 20,
+      "duplicate_plus_early_reject_first20": 20,
+      "rate": 1.0,
+      "stopped_and_rotated": true,
+      "candidates": [
+        "СИБА.КАФЕ",
+        "ПАУЭР ЧАРДЖИНГ РУС",
+        "Консорциум Робототехники и систем интеллектуального управления",
+        "Юнит про",
+        "Стратегии устойчивого развития, ООО",
+        "Содружество производственников \"ЦЕХ\"",
+        "АТЕУКО",
+        "Азъ-группа, ООО",
+        "РэкФорк",
+        "ДжиТи Лоджистикс, ООО",
+        "CeMAT RUSSIA DAILY / Объединенная промышленная редакция",
+        "ККС, ООО",
+        "Русток",
+        "Совет профессионалов по цепям поставок",
+        "Войсман",
+        "Топлог",
+        "Альфа-Сервис, ООО",
+        "Аттико, OOO",
+        "СпецСервис",
+        "Сервис-Телеком, ООО"
+      ]
+    }
+  ],
+  "deep_checks": [
+    {
+      "brand": "ЕВРОЛИФТМАШ",
+      "legal_name": "ООО Производственное объединение «Евролифтмаш»",
+      "inn": "5026015392",
+      "ogrn": "1115027001660",
+      "dedup": "no exact canonical match surfaced immediately before deep check",
+      "size": {
+        "result": "PASS",
+        "revenue_2025_rub": 2290868000,
+        "profit_2025_rub": -74633000,
+        "url": "https://saby.ru/profile/5026015392-502701001"
+      },
+      "legal": {
+        "result": "PASS",
+        "status_date": "2026-06-11",
+        "owner_ceo": "Богданов Николай Васильевич",
+        "owner_share": "100%",
+        "urls": [
+          "https://saby.ru/profile/5026015392-502701001",
+          "https://zachestnyibiznes.ru/company/ul/1115027001660_5026015392_OOO-PO-EVROLIFTMASh"
+        ]
+      },
+      "signal": {
+        "result": "REJECT",
+        "reason": "2026 sources confirm ongoing production, 17,000th-lift milestone and top-5 market position, but no sufficiently explicit fresh S1–S3 expansion/restructuring/investment signal was confirmed without stretching criteria.",
+        "urls": [
+          "https://euroliftmash.ru/company/events/",
+          "https://123ru.net/lytkarino/428715533/"
+        ]
+      },
+      "lpr": "NOT_RUN_AFTER_SIGNAL_REJECT",
+      "contact": "NOT_RUN_AFTER_SIGNAL_REJECT",
+      "qualified": false
+    }
+  ],
+  "qualified_candidates": [],
+  "notes": [
+    "Catalog/exhibition participation alone was not treated as S1–S3.",
+    "Stale records excluded where fresher verified data existed.",
+    "qualified=0: metrics/raw audit only."
+  ]
+}
