@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260828-480",
-  "updated_at": "2026-08-28T18:57:21+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
+  "run_id": "N5K-20260828-481",
+  "updated_at": "2026-08-28T20:39:02+03:00",
+  "status": "CLEARED_AFTER_RECOVERY",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "note": "N5K-20260828-480 integrated physically; canonical/contactable 496/496; integrity PASS; orphan 0/0; outreach 0."
+  "note": "Recovery RUN 481 consumed the freshest worker outputs. The sole worker-qualified candidate UNIONDELTA was rejected by final physical dedup because it already exists in canonical master as N5K-0351. No pending canonical write remains."
 }
