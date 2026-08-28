@@ -1,0 +1,23 @@
+{
+  "run_id": "N5K-20260828-474",
+  "recorded_at": "2026-08-28T13:06:10+03:00",
+  "canonical_head_before_repair": "a882ce89d7b31e3fea1c2a555f9beb8d7e3496b0",
+  "workers": [
+    {
+      "worker": "jobs",
+      "path": "data/pending_workers/jobs/20260828-122700-jobs.json",
+      "blob_sha": "d4b99562aea1b4600ada1bfcb0ff016a054aea20",
+      "status": "CONSUMED_DUPLICATE",
+      "result": "Worker-qualified NTA rejected by physical canonical dedup as existing N5K-0521 (INN 9718218994, OGRN 1237700121075)."
+    },
+    {
+      "worker": "industry",
+      "path": "data/pending_workers/industry/20260828-123334-industry.json",
+      "blob_sha": "47c8d414f63af48e88973098f4dbc464fa1a8bd7",
+      "status": "CONSUMED_INTEGRATED",
+      "result": "Energo-Arsenal / ITM integrated as N5K-0645."
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "outreach": false
+}
