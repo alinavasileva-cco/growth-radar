@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0674,N5K-0674-C01,АФС-Технологии / ГК ХимРар,5047207465,,Корпоративный маршрут,+7 (495) 925-30-74,phone,corporate_group,официальный сайт ГК ХимРар,https://chemrar.ru/,NO,HIGH,2026-08-29,"Корпоративный маршрут группы, не персональный контакт ЛПР.",N5K-20260829-499,new_5000
+N5K-0674,N5K-0674-C02,АФС-Технологии / ГК ХимРар,5047207465,,Корпоративный маршрут,welcome@chemrar.ru,email,corporate_group,официальный сайт/корпоративный маршрут ГК ХимРар,https://chemrar.ru/,NO,HIGH,2026-08-29,"Корпоративный маршрут группы, не персональный контакт ЛПР.",N5K-20260829-499,new_5000
+N5K-0674,N5K-0674-C03,АФС-Технологии / ГК ХимРар,5047207465,,Корпоративный маршрут,https://chemrar.ru/,web,corporate_group,официальный сайт ГК ХимРар,https://chemrar.ru/,NO,HIGH,2026-08-29,,N5K-20260829-499,new_5000

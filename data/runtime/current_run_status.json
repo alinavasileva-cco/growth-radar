@@ -1,57 +1,99 @@
 {
-  "run_id": "N5K-20260829-498R1",
+  "run_id": "N5K-20260829-499",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T14:49:00+03:00",
+  "updated_at": "2026-08-29T15:02:51+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 514,
+    "baseline_count": 515,
     "target_count": 5000,
-    "current_canonical_count": 515,
-    "current_contactable_count": 515,
+    "current_canonical_count": 516,
+    "current_contactable_count": 516,
     "progress_added": 1,
-    "remaining": 4485,
-    "remaining_to_1000": 485
+    "remaining": 4484
   },
   "funnel": {
-    "discovered": 180,
-    "fast_gate_passed": 10,
-    "size_check_passed": 2,
+    "discovered": 20,
+    "fast_gate_passed": 6,
+    "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 179,
-    "physically_integrated": 1
+    "excluded": 19,
+    "physically_integrated": 0
   },
   "lane_metrics": [
     {
-      "lane": "jobs_job_boards_career",
-      "raw": 80,
-      "fast_gate": 10,
-      "size": 2,
+      "lane": "growth_expansion_investment_business_change_news",
+      "raw": 20,
+      "fast_gate": 6,
+      "size": 1,
       "signal": 1,
-      "qualified": 1
+      "qualified": 1,
+      "duplicate_plus_early_reject": 14,
+      "qualified_raw": 0.05,
+      "fast_gate_raw": 0.3
     },
     {
-      "lane": "industry_catalogs_exhibitions",
-      "raw": 100,
+      "lane": "jobs_job_boards_career",
+      "raw": 0,
       "fast_gate": 0,
       "size": 0,
       "signal": 0,
-      "qualified": 0
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw": null,
+      "fast_gate_raw": null,
+      "note": "No new own jobs discovery counted in this run; the 14:22 worker batch was already physically represented in completed RUN 498R1 and is not double-counted."
+    },
+    {
+      "lane": "industry_catalogs_exhibitions",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw": null,
+      "fast_gate_raw": null,
+      "note": "No new industry raw counted; the 14:26 worker batch of 100/0 was already represented in RUN 498R1 and is not double-counted. Lane remains probe-only after repeated zero yield."
+    },
+    {
+      "lane": "official_company_owner_ceo",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw": null,
+      "fast_gate_raw": null,
+      "note": "Official sources were used to verify the growth-news candidate, not double-counted as discovery raw."
+    },
+    {
+      "lane": "experimental_low_overlap",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw": null,
+      "fast_gate_raw": null
     }
   ],
-  "qualified_companies": ["СБВ Утилизация"],
+  "qualified_companies": [
+    "АФС-Технологии / ГК ХимРар"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
-  "physical_master_state": "515_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "515_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "516_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "516_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
