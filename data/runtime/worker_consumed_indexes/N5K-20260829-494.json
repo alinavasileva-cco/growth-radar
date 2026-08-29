@@ -1,0 +1,43 @@
+{
+  "run_id": "N5K-20260829-494",
+  "recorded_at": "2026-08-29T10:00:33+03:00",
+  "canonical_result": {
+    "canonical_count": 508,
+    "contactable_count": 508,
+    "physically_integrated": 1,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "qualified_staged_not_counted": 0,
+    "outreach": 0,
+    "same_cycle_repair_run": "N5K-20260829-494R1"
+  },
+  "consumed_workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-092115-jobs.json",
+      "blob_sha": "296c8a323d65f4bf913a0ad84138d305aa25b0ae",
+      "raw_distinct": 80,
+      "qualified": 1,
+      "canonical_status": "CONSUMED_DUPLICATE",
+      "duplicate_brand": "Ариэль Инокс",
+      "duplicate_keys": ["INN", "OGRN", "LEGAL_NAME"]
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-092753-industry-metrics.json",
+      "blob_sha": "9d7adff9962e9e8549ce9232cb7c4cd5e66f52f6",
+      "raw_distinct": 100,
+      "qualified": 0,
+      "canonical_status": "CONSUMED_ZERO_QUALIFIED"
+    }
+  ],
+  "repair_result": {
+    "brand": "Юркас",
+    "lead_id": "N5K-0665",
+    "inn": "5027271769",
+    "ogrn": "1185027032145",
+    "canonical_status": "INTEGRATED_IN_494R1"
+  },
+  "audit_note": "Immutable worker staging retained for audit history. Exact worker blobs are marked consumed so they are not processed again. Worker-staged Ариэль Инокс was rejected by final physical dedup and not counted; same-cycle repair integrated Юркас after independent current-evidence verification. No outreach."
+}
