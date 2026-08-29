@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-08-29T02:02:18+03:00",
+  "generated_at": "2026-08-29T03:02:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260829-486",
-  "current_run_id": "N5K-20260829-486",
+  "latest_completed_run_id": "N5K-20260829-487",
+  "current_run_id": "N5K-20260829-487",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 500,
-  "contactable_verified": 500,
+  "canonical_pool_verified": 501,
+  "contactable_verified": 501,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4500,
+  "remaining_to_target": 4499,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_486": {
-    "raw_discovered": 304,
-    "fast_gate_passed": 9,
+  "run_487": {
+    "raw_discovered": 300,
+    "fast_gate_passed": 7,
     "size_check_passed": 2,
     "legal_match_passed": 2,
     "signal_confirmed": 2,
-    "lpr_identified": 2,
+    "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
     "physically_integrated": 1,
     "duplicates": 0,
-    "excluded": 303,
+    "excluded": 299,
     "lane_metrics": [
       {
-        "lane": "jobs_worker_20260829_013100",
-        "raw": 84,
-        "fast_gate": 9,
+        "lane": "jobs_worker_20260829_022051",
+        "raw": 80,
+        "fast_gate": 7,
         "size": 2,
         "legal": 2,
         "signal": 2,
-        "lpr": 2,
+        "lpr": 1,
         "contact": 1,
         "qualified": 1,
         "duplicates": 0,
-        "source_path": "data/pending_workers/jobs/20260829-013100-jobs.json",
-        "blob_sha": "2646f31855453d484cf9c17380e4bd8e24be6f69",
-        "note": "Worker supplied one qualified candidate, ООО Управляющая Компания «Термы» (INN 1828024877 / OGRN 1131828001634). Canonical recheck found no existing INN/OGRN/legal-name match in the source HEAD; fresh legal/size/owner facts and 2026 expansion evidence were independently rechecked before staging."
+        "source_path": "data/pending_workers/jobs/20260829-022051-jobs.json",
+        "blob_sha": "pending_blob_from_worker_commit_a441afd04525e8ccce2857d67d63872a67b9b267",
+        "note": "Worker supplied one qualified candidate, ООО «ПОЛИТАКС» (INN 7724483059 / OGRN 1197746443322). Canonical repository search found no existing INN match. Canonical recheck independently confirmed current legal/owner state in 2026, 2025 revenue, fresh 27-28.08.2026 commercial-director signal, and official company contact route."
       },
       {
-        "lane": "industry_worker_20260829_012728",
+        "lane": "industry_worker_20260829_023600",
         "raw": 100,
         "fast_gate": 0,
         "size": 0,
@@ -53,9 +53,9 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_path": "data/pending_workers/industry/20260829-012728-industry-metrics.json",
-        "blob_sha": "aef3de444cfd9ee7b48f060a896684fd1bbbdbe3",
-        "note": "Five industry catalogue batches x20; every lane reached 100% duplicate+early-reject in the first 20 and was stopped. Catalogue/exhibitor presence alone was not treated as SIGNAL."
+        "source_path": "data/pending_workers/industry/20260829-023600-industry-metrics.json",
+        "blob_sha": "pending_blob_from_worker_commit_ddcb31ddafe202f8525060845eae2557c3de1a76",
+        "note": "Exactly 100 distinct source-level identities across five industry lanes; 100% duplicate+early-reject on first 20 in each lane; exhibition/catalog presence alone was not treated as SIGNAL."
       },
       {
         "lane": "own_metalloobrabotka_2026_first20",
@@ -68,8 +68,36 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f",
-        "note": "Official 2026 catalogue contains 1210 exhibitors; first 20 source identities were screened and lane stopped because catalogue participation alone does not establish a probable fresh S1-S3 trigger."
+        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/list",
+        "note": "Official METALLOOBRABOTKA 2026 catalogue reports 1210 participants; first 20 source identities screened. Catalogue presence alone is not SIGNAL; lane stopped at cheap gate."
+      },
+      {
+        "lane": "own_neftegaz_2026_first20",
+        "raw": 20,
+        "fast_gate": 0,
+        "size": 0,
+        "legal": 0,
+        "signal": 0,
+        "lpr": 0,
+        "contact": 0,
+        "qualified": 0,
+        "duplicates": 0,
+        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/f33d0466-98f8-11ef-80ce-a0d3c1fab97f/list",
+        "note": "Official NEFTEGAZ 2026 catalogue reports 765 participants; first 20 source identities screened; no cheap evidence justified deep funnel under S1-S3 rules."
+      },
+      {
+        "lane": "own_prodexpo_2026_first20",
+        "raw": 20,
+        "fast_gate": 0,
+        "size": 0,
+        "legal": 0,
+        "signal": 0,
+        "lpr": 0,
+        "contact": 0,
+        "qualified": 0,
+        "duplicates": 0,
+        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/list",
+        "note": "Official PRODEXPO 2026 catalogue reports 1992 participants; first 20 source identities screened; catalogue participation itself rejected as insufficient SIGNAL."
       },
       {
         "lane": "own_elektro_2026_first20",
@@ -83,10 +111,10 @@
         "qualified": 0,
         "duplicates": 0,
         "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d0468-98f8-11ef-80ce-a0d3c1fab97f",
-        "note": "Official 2026 catalogue contains 352 exhibitors; first 20 source identities were screened and lane stopped at cheap gate because participation alone is not SIGNAL."
+        "note": "First 20 source identities screened; source-only exhibitor identity did not establish a probable fresh S1-S3 trigger; lane stopped at cheap gate."
       },
       {
-        "lane": "own_neftegaz_2026_first20",
+        "lane": "own_agroprodmash_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -96,11 +124,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d0466-98f8-11ef-80ce-a0d3c1fab97f",
-        "note": "Official 2026 catalogue contains 765 exhibitors; first 20 source identities were screened and lane stopped because exhibitor identity alone did not establish fresh S1-S3."
+        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/a94ff0c2-5685-11f0-80d0-a0d3c1fab97f/list",
+        "note": "First 20 current source identities screened; catalog presence alone was not used as SIGNAL."
       },
       {
-        "lane": "own_inlegmash_2026_first20",
+        "lane": "own_sviaz_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -110,36 +138,8 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/190a3ab4-1050-11f0-80ce-a0d3c1fab97f",
-        "note": "Official 2026 catalogue contains 122 exhibitors; first 20 source identities were screened. Foreign/non-target and catalogue-only identities were rejected early; lane stopped without weakening SIGNAL rules."
-      },
-      {
-        "lane": "own_prodexpo_2026_first20",
-        "raw": 20,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F",
-        "note": "Official PRODЭКСПО-2026 Russia catalogue reports 1437 Russian participants; first 20 source identities were screened and catalogue presence alone was rejected as insufficient SIGNAL."
-      },
-      {
-        "lane": "own_svyaz_2026_first20",
-        "raw": 20,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/190a3aba-1050-11f0-80ce-a0d3c1fab97f",
-        "note": "Official СВЯЗЬ-2026 catalogue contains 356 exhibitors; first 20 source identities were screened and lane stopped because listing alone did not establish current scale plus a fresh S1-S3 trigger."
+        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/190a3aba-1050-11f0-80ce-a0d3c1fab97f/list",
+        "note": "Official SVIAZ 2026 catalogue reports 356 participants. Own pass used a separate first-20 source list for cheap screening; no candidate was advanced on catalogue presence alone."
       }
     ]
   }
