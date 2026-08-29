@@ -7,7 +7,7 @@
   "progress_added": 529,
   "remaining_to_total_target": 4471,
   "remaining": 4471,
-  "remaining_to_1000": 472,
+  "remaining_to_1000": 471,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,11 +17,11 @@
   "current_run_id": "N5K-20260830-510R1",
   "last_run_id": "N5K-20260830-510R1",
   "latest_completed_run": "N5K-20260830-510R1",
-  "canonical_integration_run_id": "N5K-20260830-509",
-  "hourly_parent_run_id": "N5K-20260830-508R1",
+  "canonical_integration_run_id": "N5K-20260830-510R1",
+  "hourly_parent_run_id": "N5K-20260830-509R1",
   "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "note": "N5K-20260830-510R1 completed after physical integration: +1 net new; canonical/contactable 529/529; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260830-510R1 completed after stale-cycle recovery, physical integration and metadata repair: +1 net new; canonical/contactable 529/529; 471 to 1000; 4471 to 5000; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
