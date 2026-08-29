@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260829-501",
+  "run_id": "N5K-20260829-501R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T17:02:31+03:00",
+  "updated_at": "2026-08-29T17:06:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 516,
@@ -10,7 +10,8 @@
     "current_canonical_count": 516,
     "current_contactable_count": 516,
     "progress_added": 0,
-    "remaining": 4484
+    "remaining": 4484,
+    "remaining_to_1000": 484
   },
   "funnel": {
     "discovered": 200,
@@ -20,6 +21,7 @@
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
+    "pre_write_qualified": 1,
     "qualified": 0,
     "duplicates": 1,
     "excluded": 199,
@@ -32,11 +34,13 @@
       "fast_gate": 11,
       "size": 1,
       "signal": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 69,
-      "qualified_raw": 0.0125,
+      "pre_write_qualified": 1,
+      "physical_duplicates": 1,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 70,
+      "qualified_raw": 0.0,
       "fast_gate_raw": 0.1375,
-      "note": "Fresh immutable jobs worker pool; one worker-qualified candidate independently reverified by canonical writer before staging."
+      "note": "ALLIO passed evidence funnel but physical canonical guard found existing INN, OGRN, exact legal name and brand+domain; net-new qualified is zero."
     },
     {
       "lane": "industry_catalogs_exhibitions",
@@ -48,7 +52,7 @@
       "duplicate_plus_early_reject": 100,
       "qualified_raw": 0.0,
       "fast_gate_raw": 0.0,
-      "note": "Five first-20 probes all crossed the >70% stop threshold; no exhibition presence treated as SIGNAL; no deep-check performed."
+      "note": "Five first-20 probes all crossed >70% duplicate+early-reject; no deep-check; exhibition presence never counted as SIGNAL."
     },
     {
       "lane": "growth_expansion_investment_business_change_news",
@@ -60,7 +64,7 @@
       "duplicate_plus_early_reject": 14,
       "qualified_raw": 0.0,
       "fast_gate_raw": 0.3,
-      "note": "Fresh 17-28 Aug 2026 low-overlap production/expansion news probe. Strong source-level signals were identified, but no candidate was pushed through deep funnel without current complete SIZE/LEGAL/LPR/CONTACT evidence."
+      "note": "Fresh 17-28 Aug 2026 production/expansion probe; promising source-level signals were not promoted without complete current SIZE/LEGAL/LPR/CONTACT evidence."
     },
     {
       "lane": "official_company_owner_ceo",
@@ -72,7 +76,7 @@
       "duplicate_plus_early_reject": 0,
       "qualified_raw": null,
       "fast_gate_raw": null,
-      "note": "Used for independent verification of ALLIO; not double-counted as raw."
+      "note": "Used for verification; not double-counted as raw."
     },
     {
       "lane": "experimental_low_overlap",
@@ -86,11 +90,61 @@
       "fast_gate_raw": null
     }
   ],
+  "efficiency_history": [
+    {"run_id":"N5K-20260829-498R1","raw":180,"fast_gate":10,"qualified":1,"qualified_raw":0.005556,"fast_gate_raw":0.055556},
+    {"run_id":"N5K-20260829-499","raw":20,"fast_gate":6,"qualified":1,"qualified_raw":0.05,"fast_gate_raw":0.30},
+    {"run_id":"N5K-20260829-500","raw":200,"fast_gate":9,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.045},
+    {"run_id":"N5K-20260829-501R1","raw":200,"fast_gate":17,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.085}
+  ],
+  "lane_history_last_3_plus_current": {
+    "jobs_job_boards_career": [
+      {"run_id":"N5K-20260829-498R1","raw":80,"fast_gate":10,"size":2,"signal":1,"qualified":1,"qualified_raw":0.0125,"fast_gate_raw":0.125},
+      {"run_id":"N5K-20260829-499","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
+      {"run_id":"N5K-20260829-500","raw":80,"fast_gate":3,"size":1,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0375},
+      {"run_id":"N5K-20260829-501R1","raw":80,"fast_gate":11,"size":1,"signal":1,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.1375}
+    ],
+    "industry_catalogs_exhibitions": [
+      {"run_id":"N5K-20260829-498R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0},
+      {"run_id":"N5K-20260829-499","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
+      {"run_id":"N5K-20260829-500","raw":100,"fast_gate":1,"size":1,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.01},
+      {"run_id":"N5K-20260829-501R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0}
+    ],
+    "growth_expansion_investment_business_change_news": [
+      {"run_id":"N5K-20260829-498R1","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
+      {"run_id":"N5K-20260829-499","raw":20,"fast_gate":6,"size":1,"signal":1,"qualified":1,"qualified_raw":0.05,"fast_gate_raw":0.30},
+      {"run_id":"N5K-20260829-500","raw":20,"fast_gate":5,"size":1,"signal":1,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.25},
+      {"run_id":"N5K-20260829-501R1","raw":20,"fast_gate":6,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.30}
+    ]
+  },
+  "efficiency_change_vs_previous_hour": {
+    "qualified_raw_percentage_points": 0.0,
+    "fast_gate_raw_percentage_points": 4.0,
+    "note": "Net qualified/raw remained 0% because ALLIO was a physical duplicate; fast_gate/raw improved from 4.5% to 8.5%."
+  },
+  "adaptive_decision": {
+    "cut_or_capped": [
+      "jobs_job_boards_career: own discovery max 5% for the next 3 RUN because duplicate+early-reject exceeded 70% in RUN 500 and RUN 501; worker staging is still ingested first",
+      "industry_catalogs_exhibitions: max 5%, probe-only/no deep-check after repeated fast_gate/raw below 2% and duplicate+early-reject above 70%"
+    ],
+    "increased": [
+      "growth_expansion_investment_business_change_news: 55% next RUN because fast_gate/raw is 30% and it remains the strongest scalable discovery lane despite zero net qualified this hour",
+      "official_company_owner_ceo: 30% next RUN to resolve legal/LPR/contact evidence on low-overlap candidates"
+    ],
+    "next_run_distribution": {
+      "jobs_job_boards_career": 0.05,
+      "growth_expansion_investment_business_change_news": 0.55,
+      "official_company_owner_ceo": 0.30,
+      "industry_catalogs_exhibitions": 0.05,
+      "experimental_low_overlap": 0.05
+    }
+  },
   "qualified_companies": [],
+  "physical_duplicates": ["ALLIO / ООО «АЛЛИО» — INN 7838106248, OGRN 1227800087668, exact legal name and brand+domain matched existing canonical record"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "516_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "516_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
