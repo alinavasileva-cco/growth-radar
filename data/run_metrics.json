@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-08-29T03:02:00+03:00",
+  "generated_at": "2026-08-29T04:08:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260829-487",
-  "current_run_id": "N5K-20260829-487",
+  "latest_completed_run_id": "N5K-20260829-488",
+  "current_run_id": "N5K-20260829-488",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 501,
-  "contactable_verified": 501,
+  "canonical_pool_verified": 502,
+  "contactable_verified": 502,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4499,
+  "remaining_to_target": 4498,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_487": {
+  "run_488": {
     "raw_discovered": 300,
-    "fast_gate_passed": 7,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
+    "fast_gate_passed": 6,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
@@ -28,22 +28,22 @@
     "excluded": 299,
     "lane_metrics": [
       {
-        "lane": "jobs_worker_20260829_022051",
+        "lane": "jobs_worker_20260829_032103",
         "raw": 80,
-        "fast_gate": 7,
-        "size": 2,
-        "legal": 2,
-        "signal": 2,
+        "fast_gate": 6,
+        "size": 1,
+        "legal": 1,
+        "signal": 1,
         "lpr": 1,
         "contact": 1,
         "qualified": 1,
         "duplicates": 0,
-        "source_path": "data/pending_workers/jobs/20260829-022051-jobs.json",
-        "blob_sha": "pending_blob_from_worker_commit_a441afd04525e8ccce2857d67d63872a67b9b267",
-        "note": "Worker supplied one qualified candidate, ООО «ПОЛИТАКС» (INN 7724483059 / OGRN 1197746443322). Canonical repository search found no existing INN match. Canonical recheck independently confirmed current legal/owner state in 2026, 2025 revenue, fresh 27-28.08.2026 commercial-director signal, and official company contact route."
+        "source_path": "data/pending_workers/jobs/20260829-032103-jobs.json",
+        "blob_sha": "e0de62cd66640ece279b1c78aa8d5ae091a60ed1",
+        "note": "Worker supplied ООО «ТЕГИВА». Canonical recheck used current 2025 financial reporting, current active legal/management state, a newer 22.08.2026 scaling vacancy and published corporate contact routes. No corporate domain was inferred."
       },
       {
-        "lane": "industry_worker_20260829_023600",
+        "lane": "industry_worker_20260829_032733",
         "raw": 100,
         "fast_gate": 0,
         "size": 0,
@@ -53,12 +53,12 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_path": "data/pending_workers/industry/20260829-023600-industry-metrics.json",
-        "blob_sha": "pending_blob_from_worker_commit_ddcb31ddafe202f8525060845eae2557c3de1a76",
-        "note": "Exactly 100 distinct source-level identities across five industry lanes; 100% duplicate+early-reject on first 20 in each lane; exhibition/catalog presence alone was not treated as SIGNAL."
+        "source_path": "data/pending_workers/industry/20260829-032733-industry-metrics.json",
+        "blob_sha": "f34c7b914ff2fef1b5f569df8d009fbd6047f7b1",
+        "note": "100 distinct source-level identities across five worker lanes; each first-20 batch stopped at 100% duplicate+early reject; catalog/exhibition presence alone was not SIGNAL."
       },
       {
-        "lane": "own_metalloobrabotka_2026_first20",
+        "lane": "own_expoelectronica_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -68,11 +68,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/list",
-        "note": "Official METALLOOBRABOTKA 2026 catalogue reports 1210 participants; first 20 source identities screened. Catalogue presence alone is not SIGNAL; lane stopped at cheap gate."
+        "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/expo-electronica-cifra-2026/ru/Exhibitor",
+        "note": "First 20 current source identities screened; catalog participation alone was not treated as S1-S3 and no cheap independent trigger justified deep funnel."
       },
       {
-        "lane": "own_neftegaz_2026_first20",
+        "lane": "own_worldfood_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -82,11 +82,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/f33d0466-98f8-11ef-80ce-a0d3c1fab97f/list",
-        "note": "Official NEFTEGAZ 2026 catalogue reports 765 participants; first 20 source identities screened; no cheap evidence justified deep funnel under S1-S3 rules."
+        "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/worldfood-moscow-2026/ru/Exhibitor",
+        "note": "First 20 current source identities screened; foreign/non-target entities were early-rejected where evident and exhibition presence itself was not SIGNAL."
       },
       {
-        "lane": "own_prodexpo_2026_first20",
+        "lane": "own_pharmtech_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -96,11 +96,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/list",
-        "note": "Official PRODEXPO 2026 catalogue reports 1992 participants; first 20 source identities screened; catalogue participation itself rejected as insufficient SIGNAL."
+        "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/pharmtech-and-ingredients-2026/ru/Exhibitor",
+        "note": "First 20 current source identities screened; catalog presence alone did not establish a fresh S1-S3 signal, so the batch was stopped at cheap gate."
       },
       {
-        "lane": "own_elektro_2026_first20",
+        "lane": "own_agravia_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -110,11 +110,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d0468-98f8-11ef-80ce-a0d3c1fab97f",
-        "note": "First 20 source identities screened; source-only exhibitor identity did not establish a probable fresh S1-S3 trigger; lane stopped at cheap gate."
+        "source_url": "https://agravia.org/participants",
+        "note": "First 20 source identities from the 2026 participant catalog screened; foreign/media/non-target entries early-rejected where evident; catalog presence alone was not SIGNAL."
       },
       {
-        "lane": "own_agroprodmash_2026_first20",
+        "lane": "own_interlakokraska_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -124,11 +124,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/a94ff0c2-5685-11f0-80d0-a0d3c1fab97f/list",
-        "note": "First 20 current source identities screened; catalog presence alone was not used as SIGNAL."
+        "source_url": "https://www.interlak-expo.ru/ru/exhibition/exhibitors/",
+        "note": "First 20 listed 2026 source identities screened; source participation itself was insufficient SIGNAL and no cheap independent trigger justified deep-check."
       },
       {
-        "lane": "own_sviaz_2026_first20",
+        "lane": "own_vacuumcryotech_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -138,8 +138,22 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://icatalog.expocentr.ru/en/exhibitions/190a3aba-1050-11f0-80ce-a0d3c1fab97f/list",
-        "note": "Official SVIAZ 2026 catalogue reports 356 participants. Own pass used a separate first-20 source list for cheap screening; no candidate was advanced on catalogue presence alone."
+        "source_url": "https://www.atomic-energy.ru/news/2026/04/17/165285",
+        "note": "First 20 explicitly listed 2026 exhibitors screened; event participation alone was not treated as growth SIGNAL and the batch stopped at cheap gate."
+      },
+      {
+        "lane": "own_khimia_2026_first20",
+        "raw": 20,
+        "fast_gate": 0,
+        "size": 0,
+        "legal": 0,
+        "signal": 0,
+        "lpr": 0,
+        "contact": 0,
+        "qualified": 0,
+        "duplicates": 0,
+        "source_url": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+        "note": "First 20 current 2026 catalogue identities screened; many foreign entries were early-rejected and catalogue presence alone was not used as SIGNAL."
       }
     ]
   }
