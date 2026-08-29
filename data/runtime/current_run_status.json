@@ -1,69 +1,67 @@
 {
-  "run_id": "N5K-20260829-504R1",
+  "run_id": "N5K-20260829-505R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T20:52:32+03:00",
+  "updated_at": "2026-08-29T21:46:51+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 519,
+    "baseline_count": 521,
     "target_count": 5000,
-    "current_canonical_count": 521,
-    "current_contactable_count": 521,
+    "current_canonical_count": 523,
+    "current_contactable_count": 523,
     "progress_added": 2,
-    "remaining": 4479,
-    "remaining_to_1000": 479
+    "remaining": 4477
   },
   "funnel": {
-    "discovered": 100,
-    "fast_gate_passed": 8,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
+    "discovered": 22,
+    "fast_gate_passed": 9,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "pre_write_qualified": 2,
     "qualified": 2,
     "duplicates": 0,
-    "excluded": 98,
-    "physically_integrated": 2
+    "excluded": 20,
+    "physically_integrated": 0
   },
   "lane_metrics": [
     {
       "lane": "jobs_job_boards_career",
-      "raw": 100,
-      "fast_gate": 8,
+      "raw": 22,
+      "fast_gate": 6,
       "size": 2,
       "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
-      "note": "Fresh post-503R1 jobs worker batch consumed. 100 employer-level observations were auditable; target shortfall was explicitly reported by worker and not padded."
+      "note": "Fresh post-504R1 jobs worker: 100 source-level observations reviewed, but only 22 distinct employers were resolved strongly enough to count as raw."
     },
     {
       "lane": "growth_expansion_investment_business_change_news",
       "raw": null,
-      "fast_gate": null,
+      "fast_gate": 3,
       "size": 2,
       "legal": 2,
-      "signal": 2,
+      "signal": 1,
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
-      "note": "Fresh post-503R1 growth-news worker screened five source batches but did not establish an auditable distinct company-level raw count; raw is intentionally not invented."
+      "note": "Fresh post-504R1 growth-news worker ran five independent source batches; distinct company-level raw count was not proven and is intentionally not invented."
     }
   ],
   "qualified_companies": [
-    "Тандал",
-    "Птицефабрика Тульская"
+    "Диалог Трейд",
+    "Турбокомплект"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
-  "physical_master_state": "521_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "521_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "523_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "523_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
