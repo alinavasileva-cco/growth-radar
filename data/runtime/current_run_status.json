@@ -1,16 +1,18 @@
 {
-  "run_id": "N5K-20260830-508",
+  "run_id": "N5K-20260830-508R1",
+  "canonical_integration_run_id": "N5K-20260830-508",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-08-30T00:41:10+03:00",
-  "stage": "COMPLETE",
+  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
   "new_cycle": {
     "baseline_count": 526,
     "target_count": 5000,
     "current_canonical_count": 527,
     "current_contactable_count": 527,
     "progress_added": 1,
-    "remaining": 4473
+    "remaining": 4473,
+    "remaining_to_1000": 473
   },
   "funnel": {
     "discovered": 280,
@@ -25,39 +27,19 @@
     "contact_route_found": 2,
     "prewrite_qualified": 2,
     "qualified": 1,
+    "physically_integrated": 1,
     "duplicates": 1,
     "excluded": 278,
     "excluded_measured": 278
   },
   "lane_metrics": [
-    {
-      "lane": "jobs_worker_20260829_234812",
-      "raw": 140,
-      "fast_gate": 5,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified_before_physical_dedup": 1,
-      "qualified_after_physical_dedup": 1
-    },
-    {
-      "lane": "jobs_worker_20260830_002256",
-      "raw": 140,
-      "fast_gate": 6,
-      "size": 2,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified_before_physical_dedup": 1,
-      "qualified_after_physical_dedup": 0,
-      "note": "Неокомпозит-Тюмень физически уже существует в leads_master как N5K-0518 по INN 7204177457 / OGRN 1127232004921; повторно не записывается."
-    }
+    {"lane":"jobs_worker_20260829_234812","raw":140,"fast_gate":5,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified_before_physical_dedup":1,"qualified_after_physical_dedup":1},
+    {"lane":"jobs_worker_20260830_002256","raw":140,"fast_gate":6,"size":2,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified_before_physical_dedup":1,"qualified_after_physical_dedup":0,"note":"Неокомпозит-Тюмень физически уже существует в leads_master как N5K-0518 по INN 7204177457 / OGRN 1127232004921; повторно не записывается."}
   ],
-  "qualified_companies": [
-    "TATRUM"
+  "qualified_companies": ["TATRUM"],
+  "worker_consumption": [
+    {"lane":"jobs","path":"data/pending_workers/jobs/20260829-234812-jobs.json","commit_sha":"737ba771d770d1160c64f6e73ad04088afe987ad","status":"CONSUMED_INTEGRATED"},
+    {"lane":"jobs","path":"data/pending_workers/jobs/20260830-002256-jobs.json","commit_sha":"cfd93fd30815f6a61520d8ab3e36730aa83b4393","status":"CONSUMED_DUPLICATE"}
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
@@ -66,5 +48,6 @@
   "physical_master_state": "527_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "527_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "notes": "Recovery required because expected canonical cycle after 507R1 was missing. First integration attempt failed on pending schema KeyError 'discovered'; schema repaired in the same recovery. TATRUM physically integrated as N5K-0685. Неокомпозит-Тюмень was rejected by final physical dedup because N5K-0518 already exists. Strict quality unchanged."
 }
