@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-08-29T10:58:06+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260829-495",
-  "current_run_id": "N5K-20260829-495",
+  "latest_completed_run_id": "N5K-20260829-495R1",
+  "current_run_id": "N5K-20260829-495R1",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 512,
   "contactable_verified": 512,
@@ -14,116 +14,29 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_495": {
-    "raw_discovered": 208,
-    "fast_gate_passed": 13,
-    "size_check_passed": 7,
-    "legal_match_passed": 5,
-    "signal_confirmed": 5,
-    "lpr_identified": 5,
-    "contact_route_found": 5,
-    "qualified": 4,
-    "physically_integrated": 4,
+  "run_495R1": {
+    "raw_discovered": 0,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 0,
+    "physically_integrated": 0,
     "duplicates": 1,
-    "excluded": 203,
+    "excluded": 0,
     "lane_metrics": [
       {
-        "lane": "jobs_worker_20260829_102130",
-        "category": "jobs_job_boards_career",
-        "raw": 80,
-        "fast_gate": 6,
-        "size": 2,
+        "lane": "growth_expansion_investment_business_change_news_repair",
+        "category": "growth_expansion_investment_business_change_news",
+        "raw": 0,
+        "fast_gate": 1,
+        "size": 1,
         "legal": 1,
         "signal": 1,
         "qualified": 1,
-        "duplicate_plus_early_reject": 74,
-        "qualified_raw_pct": 1.25,
-        "fast_gate_raw_pct": 7.5,
-        "prev_492": {
-          "raw": 80,
-          "fast_gate": 18,
-          "qualified": 1,
-          "qualified_raw_pct": 1.25,
-          "fast_gate_raw_pct": 22.5
-        },
-        "prev_493": {
-          "raw": 80,
-          "fast_gate": 7,
-          "qualified": 1,
-          "qualified_raw_pct": 1.25,
-          "fast_gate_raw_pct": 8.75
-        },
-        "prev_494": {
-          "raw": 80,
-          "fast_gate": 6,
-          "physical_new_qualified": 0,
-          "qualified_raw_pct": 0.0,
-          "fast_gate_raw_pct": 7.5
-        },
-        "adaptive_action": "KEEP_CAPPED_AT_5_PERCENT_NEXT_RUN; worker staging is ingested regardless"
-      },
-      {
-        "lane": "industry_worker_20260829_103503",
-        "category": "industry_catalogs_exhibitions",
-        "raw": 100,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 100,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 0.0,
-        "prev_492": {
-          "raw": 100,
-          "fast_gate": 0,
-          "qualified": 0
-        },
-        "prev_493": {
-          "raw": 100,
-          "fast_gate": 0,
-          "qualified": 0
-        },
-        "prev_494": {
-          "raw": 100,
-          "fast_gate": 0,
-          "qualified": 0
-        },
-        "adaptive_action": "NO_DEEP_CHECK; remain capped at 5%; catalog presence is never SIGNAL"
-      },
-      {
-        "lane": "growth_expansion_investment_business_change_news",
-        "category": "growth_expansion_investment_business_change_news",
-        "raw": 20,
-        "fast_gate": 5,
-        "size": 3,
-        "legal": 2,
-        "signal": 2,
-        "qualified": 2,
-        "duplicate_plus_early_reject": 15,
-        "qualified_raw_pct": 10.0,
-        "fast_gate_raw_pct": 25.0,
-        "prev_492": "not separately instrumented",
-        "prev_493": "not separately instrumented",
-        "prev_494": "mixed probe; attribution unavailable",
-        "adaptive_action": "INCREASE_TO_55_PERCENT_NEXT_RUN"
-      },
-      {
-        "lane": "official_company_owner_ceo_sources",
-        "category": "official_company_owner_ceo_sources",
-        "raw": 8,
-        "fast_gate": 2,
-        "size": 2,
-        "legal": 2,
-        "signal": 2,
-        "qualified": 2,
-        "duplicate_plus_early_reject": 6,
-        "qualified_raw_pct": 25.0,
-        "fast_gate_raw_pct": 25.0,
-        "prev_492": "not separately instrumented",
-        "prev_493": "not separately instrumented",
-        "prev_494": "mixed probe; attribution unavailable",
-        "adaptive_action": "SET_TO_30_PERCENT_NEXT_RUN; small sample, do not extrapolate 25% as stable"
+        "note": "No new raw is added: ГалВент was already one of the 20 distinct companies counted in the original RUN 495 growth-news batch and was promoted from the early-screen pool only after the final physical duplicate on Союзтекстиль-СТ reduced net new qualified to 4."
       }
     ]
   }
