@@ -1,0 +1,112 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-29T21:21:00+03:00",
+  "baseline_head": "36510ef05702de8651b5d29fa8bf5a7fd68f2c8a",
+  "config_version": "2026-08-29T20:52:32+03:00",
+  "canonical_count_at_start": 521,
+  "criteria_changed": false,
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "discovery": {
+    "target_distinct_employer_level_raw": "140-150 if sources support it",
+    "resolved_distinct_employer_level_raw": 22,
+    "source_level_observations_reviewed": 100,
+    "note": "The accessible search surfaces exposed substantially more vacancy rows, but only 22 employers were resolved strongly enough to count as distinct employer-level raw in this worker run. The worker does not inflate the raw count with unresolved or duplicated listing rows.",
+    "source_batches": [
+      {"batch": "regional_jobboards_ekaterinburg", "observations_reviewed": 20, "resolved_employers": 7, "duplicate_plus_early_reject_rate_first20": null, "note": "Exact canonical status for every cheap-reject row could not be reconstructed reliably; metric left null rather than invented."},
+      {"batch": "regional_jobboards_kazan", "observations_reviewed": 20, "resolved_employers": 5, "duplicate_plus_early_reject_rate_first20": null, "note": "Metric not fabricated."},
+      {"batch": "regional_jobboards_novosibirsk", "observations_reviewed": 20, "resolved_employers": 3, "duplicate_plus_early_reject_rate_first20": null, "note": "Metric not fabricated."},
+      {"batch": "regional_jobboards_samara_perm", "observations_reviewed": 20, "resolved_employers": 3, "duplicate_plus_early_reject_rate_first20": null, "note": "Metric not fabricated."},
+      {"batch": "cross_board_and_career_pages", "observations_reviewed": 20, "resolved_employers": 4, "duplicate_plus_early_reject_rate_first20": null, "note": "Metric not fabricated."}
+    ]
+  },
+  "worker_funnel": {
+    "raw_distinct_employer_level": 22,
+    "fast_gate": 6,
+    "deep_check": 4,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "Диалог Трейд",
+      "legal_name": "ООО \"ДИАЛОГ ТРЕЙД\"",
+      "region": "Республика Татарстан, Казань",
+      "inn": "1627006959",
+      "ogrn": "1091674001671",
+      "domain": "dialog-trade.ru",
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 251689000,
+        "employees_confirmed": 25,
+        "evidence_urls": [
+          "https://zachestnyibiznes.ru/company/ul/1091674001671_1627006959_OOO-DIALOG-TREYD",
+          "https://companies.rbc.ru/id/1091674001671-ooo-dialog-trejd/"
+        ]
+      },
+      "legal": {
+        "active": true,
+        "director": "Зайнутдинов Ильяс Фердинантович",
+        "owner": "Зайнутдинов Ильяс Фердинантович",
+        "owner_share": "100%",
+        "evidence_urls": [
+          "https://star-pro.ru/proverka-kontragenta/organization/1091674001671--ooo-dialog-trejd",
+          "https://www.tbank.ru/business/contractor/legal/1091674001671/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-13",
+        "type": "management_hiring",
+        "title": "Коммерческий директор",
+        "summary": "Компания ищет коммерческого директора, который возьмет на себя продажи и маркетинг и будет отвечать за конкретный финансовый результат; роль включает управление коммерческой эффективностью и командой.",
+        "evidence_url": "https://dreamjob.ru/employers/288/vakansii/136221469"
+      },
+      "lpr": {
+        "name": "Зайнутдинов Ильяс Фердинантович",
+        "role": "генеральный директор и 100% учредитель",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1091674001671/",
+          "https://companies.rbc.ru/id/1091674001671-ooo-dialog-trejd/"
+        ]
+      },
+      "contact": {
+        "route_type": "published_corporate_route",
+        "phone_primary": "+7 843 200-98-82",
+        "phone_secondary": "+7 843 211-25-67",
+        "email": "dialog-treid@mail.ru",
+        "website": "http://dialog-trade.ru",
+        "evidence_urls": [
+          "https://2gis.ru/kazan/firm/2956015537370928",
+          "https://zachestnyibiznes.ru/company/ul/1091674001671_1627006959_OOO-DIALOG-TREYD"
+        ],
+        "note": "Only published contacts were used; no template-derived address was created."
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "1627006959",
+        "ogrn": "1091674001671",
+        "exact_legal_name": "ООО \"ДИАЛОГ ТРЕЙД\"",
+        "brand_domain": "Диалог Трейд|dialog-trade.ru"
+      },
+      "dedup_check": {
+        "checked_before_deep_check": true,
+        "checked_immediately_before_staging": true,
+        "matches_found": 0,
+        "queries": ["1627006959", "1091674001671", "dialog-trade.ru"]
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/288/vakansii/136221469",
+        "https://star-pro.ru/proverka-kontragenta/organization/1091674001671--ooo-dialog-trejd",
+        "https://companies.rbc.ru/id/1091674001671-ooo-dialog-trejd/",
+        "https://www.tbank.ru/business/contractor/legal/1091674001671/",
+        "https://zachestnyibiznes.ru/company/ul/1091674001671_1627006959_OOO-DIALOG-TREYD",
+        "https://2gis.ru/kazan/firm/2956015537370928"
+      ]
+    }
+  ]
+}
