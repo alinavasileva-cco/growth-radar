@@ -2,7 +2,7 @@
   "run_id": "N5K-20260829-505R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T21:46:51+03:00",
+  "updated_at": "2026-08-29T21:49:30+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 521,
@@ -10,7 +10,8 @@
     "current_canonical_count": 523,
     "current_contactable_count": 523,
     "progress_added": 2,
-    "remaining": 4477
+    "remaining": 4477,
+    "remaining_to_1000": 477
   },
   "funnel": {
     "discovered": 22,
@@ -24,7 +25,7 @@
     "qualified": 2,
     "duplicates": 0,
     "excluded": 20,
-    "physically_integrated": 0
+    "physically_integrated": 2
   },
   "lane_metrics": [
     {
@@ -52,14 +53,12 @@
       "note": "Fresh post-504R1 growth-news worker ran five independent source batches; distinct company-level raw count was not proven and is intentionally not invented."
     }
   ],
-  "qualified_companies": [
-    "Диалог Трейд",
-    "Турбокомплект"
-  ],
+  "qualified_companies": ["Диалог Трейд", "Турбокомплект"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "523_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "523_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
