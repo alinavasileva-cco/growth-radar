@@ -2,7 +2,7 @@
   "run_id": "N5K-20260829-504R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T20:51:02+03:00",
+  "updated_at": "2026-08-29T20:52:32+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 519,
@@ -10,7 +10,8 @@
     "current_canonical_count": 521,
     "current_contactable_count": 521,
     "progress_added": 2,
-    "remaining": 4479
+    "remaining": 4479,
+    "remaining_to_1000": 479
   },
   "funnel": {
     "discovered": 100,
@@ -24,7 +25,7 @@
     "qualified": 2,
     "duplicates": 0,
     "excluded": 98,
-    "physically_integrated": 0
+    "physically_integrated": 2
   },
   "lane_metrics": [
     {
@@ -60,6 +61,7 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "521_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "521_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
