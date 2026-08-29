@@ -1,0 +1,94 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-29T06:26:06+03:00",
+  "base_head": "7bb2b32e64116f5a9a8f539b7d83ee635e2d77c6",
+  "config_version": "2026-08-29T06:01:00+03:00",
+  "canonical_status": {
+    "leads_master": 504,
+    "contactable_master": 504,
+    "integrity": "PASS"
+  },
+  "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "policy": {
+    "fast_gate_first": true,
+    "deep_funnel_order": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "criteria_relaxed": false,
+    "canonical_writes": false,
+    "outreach": false
+  },
+  "funnel": {
+    "raw": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "lanes": [
+    {
+      "source": "МЕТАЛЛООБРАБОТКА-2026 — Expocentr Russia exhibitor catalog",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=1",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "The exhibitor record proves 2026 exhibition presence but does not itself prove current target scale plus a probable fresh S1-S3 business signal. Exhibition presence is not counted as SIGNAL.",
+      "source_identities": ["3DLAM", "3Д ВИЖН ДИСТРИБЬЮШЕН, ООО", "3Д КОНТРОЛЬ, ООО", "3Д-ИНТЕГРАЦИЯ НПО, ООО", "ALUMICA", "ANDREEV MACHINES", "ARCUS", "AREATEK", "ARKA", "ATAU, ООО", "AVERTUM", "AVP ZIAS", "CEBORA-РОССИЯ", "COWBOY LASER", "DALGAKIRAN", "FAIRINO", "GTOOL, ООО", "INNOTECH", "INSIZE RUSSIA", "JWT"]
+    },
+    {
+      "source": "ЭЛЕКТРО-2026 — Expocentr Russia exhibitor catalog",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d0468-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=1",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "The exhibitor record proves 2026 exhibition presence but does not itself prove current target scale plus a probable fresh S1-S3 business signal. Exhibition presence is not counted as SIGNAL.",
+      "source_identities": ["ABSOLITE", "AGIS PROFILE", "ANDELI", "CNC ELECTRIC, ООО", "ELECTRIC STEEL BOX (ESB)", "EVOL GROUP", "HD ЭЛЕКТРИК РУС", "HIDEN", "KR-AUTOMATION", "MIROTEK", "MISTER VOLT™ (МАШПРИБОРИНТОРГ-ВОЛНА, ООО)", "ONTEK", "RealLab!, ООО", "SHTOK.", "SINVEL", "SPL", "TIMLOCK", "WIREN BOARD", "АЕТЕК, ООО", "АКЭЛ, ПТК, OOO"]
+    },
+    {
+      "source": "МИР СТЕКЛА-2026 — Expocentr Russia exhibitor catalog",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/190a3ab8-1050-11f0-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=1",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "The exhibitor record proves 2026 exhibition presence but does not itself prove current target scale plus a probable fresh S1-S3 business signal. Records with an unclear Russian legal entity are also rejected at the cheap gate rather than inferred.",
+      "source_identities": ["ADEM GLASS", "AGS", "eLase Systems", "GLASS RUSSIA", "HFD HOUSE", "NEDEX KIMYA SAN. VE TIC. A.S.", "PRAKTIK Ltd", "ZIBO INTCO IMPORT & EXPORT CO. LTD", "АВЕПС", "АВРИКОМ-НН", "АЕ ГлассТек, ООО", "АИСТ", "АЛЬФА ГЛАСС, ООО", "БИ-СТАРС ТЕХНОЛОГИЯ, ООО", "БЛАСТ ИНЖИНИРИНГ, ООО", "БОРОВИЧСКИЙ КОМБИНАТ ОГНЕУПОРОВ, АО", "ВеАл, ОАО", "ВЕГА, ООО", "ВИПКОМПЛЕКТ, ООО", "ГАЛЬВАНО, OOO"]
+    },
+    {
+      "source": "Кемпер Экспо 2026 — RV Land exhibitor directory",
+      "source_url": "https://rvland.ru/camperexpo/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "Directory profiles describe activity and often provide websites/phones, but do not by themselves prove current target scale plus a fresh S1-S3 signal. No positive SIGNAL is inferred from manufacturing or exhibition participation.",
+      "source_identities": ["Автовентури", "Автокемпер Пром", "Авторио", "АВТОС", "Автофевраль", "Адверс", "Балыки Старорусские", "Богдарня", "Брянские Автопалатки", "Викинг", "Ворсма", "ГАЛАНДЕЦ", "Дело Техники", "Доктор Кемп", "ДТрейлер", "Ижевский завод прицепов", "ИРИС НН", "Караваныч. Сервис-мастерская", "Кемпер Бак Полимер", "Кемпер Мечта"]
+    },
+    {
+      "source": "RECYCLING SOLUTIONS 2026 — ExpoDat exhibitor directory",
+      "source_url": "https://md.expodat.com/expositions/exposition/146-recycling-solutions-2026.html",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "The first 20 contain foreign exhibitors and Russian records without source-level proof of both current target scale and a probable fresh S1-S3 signal. Exhibition presence is not counted as SIGNAL.",
+      "source_identities": ["DK TEAMWORK MACHINERY", "İnan Geri Dönüşüm Sistemleri A.Ş", "Kalika International", "MING JILEE ENTERPRISE CO.,LTD", "Polytekprom Teknik Makina Ith.Ihr. San. Ve Tic. Ltd. Şti.", "Üstüniş Makine San ve Tic A.S", "Vikotech Makine San Tic Ltd Sti", "Алеко, ГК", "ГРАНПЛАСТ", "ДПЛ Полимер", "ЗЕРМА РУС", "Полимер Клаб, ООО", "ПОЛИМЕХ, ООО", "РЕ-ПЛАСТ, ООО", "Смарт Рэй, ООО", "Столица Полимеров, ООО", "Стройпласт, ООО", "ТПК СТР, ООО", "ЦЗАНСУ ТУРУИ ТЕХНОЛОДЖИ", "Эксимпак-Оборудование, ООО"]
+    }
+  ],
+  "notes": [
+    "100 source-level raw identities are distinct within this worker pass.",
+    "The five sources are low-overlap versus the immediately preceding industry worker pass sources RosUpack, Printech, YugAgro, Weldex and Metaprom Samara.",
+    "They are not claimed as 100 globally legal-key-resolved companies because every lane crossed the >70% duplicate+early-reject threshold at the cheap gate and was stopped before deep legal resolution.",
+    "No candidate was promoted on exhibition/catalog presence alone.",
+    "No stale catalog datum was used as positive qualification evidence.",
+    "No canonical file and no outreach artifact was written by this worker."
+  ]
+}
