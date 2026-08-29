@@ -1,73 +1,8 @@
 {
   "run_id": "N5K-20260830-508",
   "updated_at": "2026-08-30T00:41:10+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "baseline_count": 526,
-  "qualified_staged_not_counted": 1,
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0685",
-      "Brand": "TATRUM",
-      "Legal Name": "ООО «ТАТРУМ»",
-      "INN": "6163103081",
-      "OGRN/OGRNIP": "1106195005487",
-      "Region": "Ростовская область",
-      "City": "Ростов-на-Дону",
-      "Segment": "B2B проектирование / интерьерные и строительные решения",
-      "Website": "https://tatrum-project.ru/",
-      "Revenue/Scale": "Выручка 383,792 млн ₽ по актуальной карточке компании; действующее ООО; масштаб находится в рабочем диапазоне кампании.",
-      "Signal Level": "S1",
-      "Signal Summary": "26.08.2026 опубликована вакансия коммерческого директора (CCO): формирование и развитие системы продаж, стратегия привлечения новых клиентов, вывод новых продуктов, расширение каналов сбыта и управление коммерческой командой.",
-      "Signal Date": "2026-08-26",
-      "Signal Source": "https://nesiditsa.ru/vacancy/136657038",
-      "Owner": "Прокопенко Сергей Николаевич",
-      "CEO": "Прокопенко Сергей Николаевич",
-      "LPR": "Прокопенко Сергей Николаевич",
-      "LPR Role": "Учредитель и директор",
-      "Primary Phone": "+7 903 401-42-44",
-      "Primary Email": "project@tatrum.ru",
-      "HH Contact": "",
-      "Contact Form": "https://tatrum-project.ru/contacts",
-      "Contact Type": "официальные корпоративные маршруты к собственнику/директору",
-      "Contact Source": "официальный сайт TATRUM",
-      "Consulting Hypothesis": "Систематизация коммерческой функции: стратегия продаж, новые продукты и каналы, CRM/pipeline, KPI и управление коммерческой командой.",
-      "contacts": [
-        {"value":"+7 903 401-42-44","channel":"PHONE","type":"CORPORATE","source":"официальный сайт TATRUM","url":"https://tatrum-project.ru/contacts","is_lpr":false,"notes":"Опубликованный корпоративный маршрут; просить соединить с собственником/директором Сергеем Прокопенко."},
-        {"value":"project@tatrum.ru","channel":"EMAIL","type":"CORPORATE","source":"официальный сайт TATRUM","url":"https://tatrum-project.ru/contacts","is_lpr":false,"notes":"Официальный корпоративный email; не выдуманный персональный адрес."},
-        {"value":"https://tatrum-project.ru/contacts","channel":"WEB_FORM","type":"CORPORATE","source":"официальный сайт TATRUM","url":"https://tatrum-project.ru/contacts","is_lpr":false,"notes":"Официальная форма/страница контактов."}
-      ],
-      "evidence": [
-        {"type":"LEGAL_SIZE","claim":"ООО «ТАТРУМ» действует; ИНН 6163103081, ОГРН 1106195005487; актуальная карточка компании показывает выручку 383,792 млн ₽.","url":"https://companies.rbc.ru/alphabetical-catalog/companies/t-a-t/","source":"РБК Компании"},
-        {"type":"OWNER_LPR","claim":"Прокопенко Сергей Николаевич подтверждён как учредитель и директор действующего ООО «ТАТРУМ».","url":"https://check.tochka.com/date/07-07-2010/","source":"Точка / реестровая карточка"},
-        {"type":"SIGNAL","claim":"26.08.2026 опубликована вакансия CCO с задачами построения и развития системы продаж, привлечения клиентов, новых продуктов и каналов сбыта.","url":"https://nesiditsa.ru/vacancy/136657038","source":"Не сидится / вакансия TATRUM"},
-        {"type":"CONTACT","claim":"Официальный сайт TATRUM публикует +7 903 401-42-44, project@tatrum.ru и контактную форму.","url":"https://tatrum-project.ru/contacts","source":"официальный сайт TATRUM"}
-      ]
-    }
-  ],
-  "funnel": {
-    "discovered": 280,
-    "discovered_source_level": 280,
-    "raw_denominator_complete": false,
-    "raw_denominator_note": "Два свежих jobs-worker прохода дали по 140 employer-distinct raw внутри каждого прохода. Межпроходный глобальный employer-level dedup для дешёвых rejects не реконструировался, поэтому 280 не выдаётся за гарантированно глобально-уникальный denominator.",
-    "fast_gate_passed": 11,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "prewrite_qualified": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded": 278,
-    "excluded_measured": 278
-  },
-  "lane_metrics": [
-    {"lane":"jobs_worker_20260829_234812","raw":140,"fast_gate":5,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified_before_physical_dedup":1,"qualified_after_physical_dedup":1},
-    {"lane":"jobs_worker_20260830_002256","raw":140,"fast_gate":6,"size":2,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified_before_physical_dedup":1,"qualified_after_physical_dedup":0,"note":"Неокомпозит-Тюмень физически уже существует в leads_master как N5K-0518 по INN 7204177457 / OGRN 1127232004921; повторно не записывается."}
-  ],
-  "worker_consumption": [
-    {"lane":"jobs","path":"data/pending_workers/jobs/20260829-234812-jobs.json","commit_sha":"737ba771d770d1160c64f6e73ad04088afe987ad","status_after_integration":"CONSUME_IF_INTEGRATION_SUCCEEDS"},
-    {"lane":"jobs","path":"data/pending_workers/jobs/20260830-002256-jobs.json","commit_sha":"cfd93fd30815f6a61520d8ab3e36730aa83b4393","status_after_integration":"CONSUME_DUPLICATE_IF_RUN_SUCCEEDS"}
-  ],
-  "notes": "Recovery после пропущенного основного canonical-цикла. Strict quality unchanged. Финальный physical dedup выполнен по физическому leads_master: Неокомпозит-Тюмень уже N5K-0518 и исключён; TATRUM совпадений по INN 6163103081 не имеет. Outreach не выполнять."
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260830-508 integrated physically; canonical/contactable 527/527; integrity PASS; orphan 0/0; outreach 0."
 }
