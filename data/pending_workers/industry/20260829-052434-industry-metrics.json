@@ -1,0 +1,92 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-29T05:24:34+03:00",
+  "base_head": "ef8f04c896b7acb408cbc2e7796a41144bff7d77",
+  "config_version": "2026-08-29T05:02:00+03:00",
+  "canonical_status": {
+    "leads_master": 503,
+    "contactable_master": 503,
+    "integrity": "PASS"
+  },
+  "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "policy": {
+    "fast_gate_first": true,
+    "deep_funnel_order": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "criteria_relaxed": false,
+    "canonical_writes": false,
+    "outreach": false
+  },
+  "funnel": {
+    "raw": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "lanes": [
+    {
+      "source": "RosUpack 2026 exhibitor directory",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/rosupack-2026/ru/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "Exhibitor listing alone does not confirm both current target scale and a probable fresh S1-S3 signal; exhibition presence is not counted as SIGNAL.",
+      "source_identities": ["1EA", "АБВ Акцент", "Абсолют, ООО", "Август Борг, ИАЦ", "АВИКС ИНЖИНИРИНГ, ООО", "АВМ, ООО", "Автоматические Машины", "АГСК", "Аероколл ООО", "Ай-Пласт, ООО", "АЙГОФРО", "Акопринт", "АКРЕХИМ", "АКТИВА ГРУПП, ООО", "Активная упаковка ООО", "Александр Браун", "Алькор Упак", "Альфа риббон ООО", "Альянникс Мануфактура, ООО", "АЛЬЯНС УПАК, ТД"]
+    },
+    {
+      "source": "Printech 2026 exhibitor directory",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/printech-2026/ru/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "Exhibitor listing alone does not confirm both current target scale and a probable fresh S1-S3 signal; exhibition presence is not counted as SIGNAL.",
+      "source_identities": ["1С:Полиграфия", "АЙКЬЮТЕК АО", "ВИП-Системы", "Гротеск", "Индустрия печати, журнал", "КЕРН СНГ", "КЛЕЙЖЕЛАТИНПРОМ, ООО", "Коника Минолта", "КУРСИВ Издательство", "ЛАЗЕРМАРКЕР (ТЕХНО)", "ММ-Сервис", "МТП ПОЛИГРАФ", "Нисса Дистрибуция ООО", "НОВОКОД ГРУППА", "ОфПолиТрейд", "Передовые Системы Печати", "Печатный бизнес. Полиграфия & реклама", "ПРИЗМИКС", "Принт Элит, ООО", "Принтер-Плоттер.ру"]
+    },
+    {
+      "source": "YugAgro 2026 exhibitor directory",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/yugagro-2026/en/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "Exhibitor listing alone does not confirm both current target scale and a probable fresh S1-S3 signal; exhibition presence is not counted as SIGNAL.",
+      "source_identities": ["ABION", "ACRON", "ADAMANTIS", "Agro Technologies LLC", "AGRO-INDUSTRIAL SUPPORT", "AGROBUSINESS GK", "AGROCOMMASH LLC", "AGROKAPITAL", "AGROKRAFT RUS", "AGROLA", "AGROLIGA ROSSII GC", "AGROMAST", "AGROPROMSHINA", "AGRORUS & CO", "AGROSERVICE", "AGROSISTEMS OF DRIP IRRIGATION", "Agroteh-Garant", "AKMASH-HOLDING", "AMT-CHERNOZEMIE", "ART bearings"]
+    },
+    {
+      "source": "Weldex 2026 exhibitor directory",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/weldex-2026/en/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "The first 20 source records include foreign exhibitors and Russian records without source-level proof of both current target scale and a probable fresh S1-S3 signal; exhibition presence is not counted as SIGNAL.",
+      "source_identities": ["ГС-Главный сварщик", "Криосфера.рф (ИП Коваленко О.В.)", "Akropol", "ALFA GLOBAL", "AVIAL", "AWG Technologies", "BODOR, LLC", "BSC CORPORATION LTD", "CHANGZHOU CHINA WELDING EQUIPMENT CO., LTD.", "Changzhou Edaweld Trading Company Limited", "D&H SÉCHERON ELECTRODES PVT. LTD.", "DeltaSvar LCC", "DERIA", "DIG Automation Engineering", "ECHOPLUS", "ESVA", "EWC LLC", "FARINA (JINAN) WELDTEC & MACHINERY CO.,LTD", "Fastener Group (Anhui) Co., Ltd", "FIX TRADE LLC"]
+    },
+    {
+      "source": "Metaprom — Samara Oblast industrial suppliers directory",
+      "source_url": "https://metaprom.ru/companies/samara/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "duplicate_early_reject_rate": 1.0,
+      "qualified": 0,
+      "stop_after_first_20": true,
+      "reason": "Directory cards and listing-update dates are not sufficient evidence of current target scale plus a fresh S1-S3 business signal; stale entries are excluded from positive decisions.",
+      "source_identities": ["ВолгаЭнергоКомплект", "САМТЕК, ЗАО", "АвтоГазТранс, ООО", "АИРТИ, ООО", "РЕТЕКО, ТК", "МЕТПАРТСПЛАВ, ООО", "Партал, ООО", "Аэроплан, ООО", "ЭнергоПроект, ООО", "Логист, ООО", "ССУ", "Союз Успеха, ООО", "АгроВесСервис", "АМТ, ООО", "ПКФ Навигатор, ООО", "Глобал Металл, ООО", "Агростроймонтаж, ООО", "ТК-Нефтехим, ООО", "Панорама, ООО", "Протон-М, ООО"]
+    }
+  ],
+  "notes": [
+    "100 source-level raw identities are distinct within this worker pass.",
+    "They are not claimed as 100 globally legal-key-resolved companies because all five lanes crossed the >70% duplicate+early-reject threshold at the cheap gate and were stopped before deep legal resolution.",
+    "No candidate was promoted on exhibition/catalog presence alone.",
+    "No stale catalog datum was used as positive qualification evidence."
+  ]
+}
