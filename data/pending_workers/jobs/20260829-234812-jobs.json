@@ -1,0 +1,184 @@
+{
+  "worker": "jobs",
+  "lane": "jobs",
+  "created_at": "2026-08-29T23:48:12+03:00",
+  "baseline_head": "14d360e9437fe1a00cfdf215dc376c32de3a9db7",
+  "config_version": "2026-08-29T23:01:35+03:00",
+  "canonical_contactable_baseline": 526,
+  "criteria_unchanged": true,
+  "canonical_writer_run": false,
+  "outreach_performed": false,
+  "discovery": {
+    "raw_target_min": 140,
+    "raw_target_max": 150,
+    "raw_employer_distinct_brand_level": 140,
+    "target_met": true,
+    "counting_note": "Raw counted only after employer-name de-overlap within and across regional batches. Cheap rejects were not force-resolved to INN/OGRN solely to manufacture lane rates.",
+    "source_batches": [
+      {
+        "source": "HH",
+        "region": "Ростов-на-Дону",
+        "query": "операционный директор",
+        "raw_distinct": 20,
+        "url": "https://rostov.hh.ru/vacancies/operacionnyy_direktor",
+        "duplicate_early_reject_rate": null,
+        "rate_note": "Exact legal-key duplicate/reject rate was not reconstructed for cheap rejects; batch rotated after 20."
+      },
+      {
+        "source": "HH",
+        "region": "Казань",
+        "query": "коммерческий директор",
+        "raw_distinct": 20,
+        "url": "https://kazan.hh.ru/vacancies/kommercheskiy_direktor",
+        "duplicate_early_reject_rate": null,
+        "rate_note": "Exact legal-key duplicate/reject rate was not reconstructed for cheap rejects; batch rotated after 20."
+      },
+      {
+        "source": "HH",
+        "region": "Екатеринбург",
+        "query": "исполнительный директор",
+        "raw_distinct": 20,
+        "url": "https://ekaterinburg.hh.ru/vacancies/ispolnitelnyy_direktor/polnaya_zanyatost",
+        "duplicate_early_reject_rate": null,
+        "rate_note": "Exact legal-key duplicate/reject rate was not reconstructed for cheap rejects; recruiters and obvious large-business listings were early-rejected."
+      },
+      {
+        "source": "HH",
+        "region": "Самара",
+        "query": "коммерческий директор",
+        "raw_distinct": 20,
+        "url": "https://samara.hh.ru/vacancies/kommercheskiy_direktor",
+        "duplicate_early_reject_rate": null,
+        "rate_note": "Exact legal-key duplicate/reject rate was not reconstructed for cheap rejects; batch rotated after 20."
+      },
+      {
+        "source": "HH",
+        "region": "Новосибирск",
+        "query": "директор по развитию бизнеса",
+        "raw_distinct": 20,
+        "url": "https://novosibirsk.hh.ru/vacancies/direktor_po_razvitiyu_biznesa",
+        "duplicate_early_reject_rate": null,
+        "rate_note": "Exact legal-key duplicate/reject rate was not reconstructed for cheap rejects; batch rotated after 20."
+      },
+      {
+        "source": "HH",
+        "region": "Уфа",
+        "query": "операционный директор",
+        "raw_distinct": 20,
+        "url": "https://ufa.hh.ru/vacancies/operacionnyy_direktor",
+        "duplicate_early_reject_rate": null,
+        "rate_note": "Exact legal-key duplicate/reject rate was not reconstructed for cheap rejects; batch rotated after 20."
+      },
+      {
+        "source": "HH",
+        "region": "Краснодар",
+        "query": "коммерческий директор",
+        "raw_distinct": 20,
+        "url": "https://krasnodar.hh.ru/vacancies/kommercheskiy_direktor",
+        "duplicate_early_reject_rate": null,
+        "rate_note": "Exact legal-key duplicate/reject rate was not reconstructed for cheap rejects; batch rotated after 20."
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw": 140,
+    "fast_gate": 5,
+    "deep_check": 5,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "deep_check_rejects": [
+    {
+      "brand": "Ликнар 2020",
+      "stage": "SIZE",
+      "reason": "Current legal-entity evidence showed only 3 employees; not promoted further."
+    },
+    {
+      "brand": "Всеуборки",
+      "stage": "SIZE/LEGAL",
+      "reason": "Vacancy signal was strong, but the mapped current legal entity did not demonstrate the required operating scale; no speculative remapping to another entity."
+    },
+    {
+      "brand": "Баярд",
+      "stage": "SIZE",
+      "reason": "Current scale evidence was conflicting and revenue was around the upper exclusion boundary; not promoted on uncertain evidence."
+    },
+    {
+      "brand": "PNK-Region",
+      "stage": "LEGAL",
+      "reason": "Brand-to-legal-entity mapping was not sufficiently unambiguous for qualification."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "TATRUM",
+      "legal_name": "ООО \"ТАТРУМ\"",
+      "inn": "6163103081",
+      "ogrn": "1106195005487",
+      "region": "Ростовская область",
+      "legal_status": "Действующая",
+      "director": "Прокопенко Сергей Николаевич",
+      "owner_lpr": "Прокопенко Сергей Николаевич",
+      "owner_role": "учредитель и директор",
+      "size": {
+        "revenue_rub": 383792000,
+        "revenue_period": "latest current company-card value available in discovery sources",
+        "revenue_growth_pct": -28.48,
+        "size_decision": "PASS",
+        "note": "Revenue is within the strong-signal upper range used by the current campaign; no stale higher figure was used."
+      },
+      "signal": {
+        "level": "S1",
+        "title": "Коммерческий директор (CCO)",
+        "date": "2026-08-26",
+        "summary": "Компания ищет CCO для формирования и развития системы продаж, стратегии привлечения новых клиентов, вывода новых продуктов, расширения каналов сбыта и управления коммерческой командой.",
+        "vacancy_url": "https://nesiditsa.ru/vacancy/136657038",
+        "hh_search_url": "https://rostov.hh.ru/vacancies/kommercheskiy_direktor/polniy_den"
+      },
+      "contact": {
+        "type": "published corporate route to named owner/director",
+        "phone": "+7 903 401-42-44",
+        "email": "project@tatrum.ru",
+        "form": "official website contact form",
+        "route_instruction": "Просить передать сообщение собственнику/директору Сергею Николаевичу Прокопенко по теме коммерческой системы и масштабирования.",
+        "source_url": "https://tatrum-project.ru/contacts"
+      },
+      "brand_legal_mapping": {
+        "status": "CONFIRMED",
+        "note": "Current company sources identify active ООО ТАТРУМ with INN/OGRN below; official TATRUM site confirms operating brand and contact network. Historical/stale alternate naming was not used in the decision."
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6163103081",
+        "ogrn": "1106195005487",
+        "exact_legal_name": "ООО \"ТАТРУМ\"",
+        "brand_domain": "TATRUM|tatrum-project.ru"
+      },
+      "dedup_check": {
+        "repo_wide_before_deep_check": "NO_MATCH",
+        "repo_wide_before_staging": "NO_MATCH",
+        "keys_checked": [
+          "6163103081",
+          "1106195005487",
+          "ООО ТАТРУМ",
+          "tatrum-project.ru"
+        ]
+      },
+      "evidence_urls": [
+        "https://companies.rbc.ru/alphabetical-catalog/companies/t-a-t/",
+        "https://check.tochka.com/date/07-07-2010/",
+        "https://nesiditsa.ru/vacancy/136657038",
+        "https://tatrum-project.ru/",
+        "https://tatrum-project.ru/contacts"
+      ],
+      "contact_evidence_urls": [
+        "https://tatrum-project.ru/contacts"
+      ],
+      "status": "QUALIFIED"
+    }
+  ]
+}
