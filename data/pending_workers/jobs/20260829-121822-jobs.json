@@ -1,0 +1,151 @@
+{
+  "schema_version": "pending_worker.jobs.v1",
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-29T12:18:22+03:00",
+    "baseline_head": "09eefd1245e5597cd7e45b860002b8434f60943a",
+    "config_version": "2026-08-29T11:57:07+03:00",
+    "last_fully_completed_run": "N5K-20260829-496R1",
+    "canonical_count": 513,
+    "contactable_count": 513,
+    "outreach_performed": false,
+    "canonical_writer_run": false,
+    "canonical_files_modified": false
+  },
+  "dedup_policy": {
+    "keys": [
+      "lead_id",
+      "inn",
+      "ogrn_or_ogrnip",
+      "exact_legal_name",
+      "confirmed_brand_domain"
+    ],
+    "before_deep_check": true,
+    "before_write": true,
+    "baseline_head": "09eefd1245e5597cd7e45b860002b8434f60943a"
+  },
+  "source_instrumentation": [
+    {
+      "source": "HH Moscow / operations leadership",
+      "source_url": "https://hh.ru/vacancies/operacionnyy_direktor",
+      "rows_inspected": 50,
+      "selected_distinct_low_overlap": 45,
+      "first20_observed": 20,
+      "duplicate_plus_early_reject": 11,
+      "duplicate_plus_early_reject_rate": 0.55,
+      "stopped_for_saturation": false
+    },
+    {
+      "source": "Jobrun Russia / COO cross-board",
+      "source_url": "https://jobrun.ru/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-coo-saas-payroll-platform-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+      "rows_inspected": 25,
+      "selected_distinct_low_overlap": 23,
+      "first20_observed": 20,
+      "duplicate_plus_early_reject": 4,
+      "duplicate_plus_early_reject_rate": 0.2,
+      "stopped_for_saturation": false
+    },
+    {
+      "source": "HH Ekaterinburg / commercial leadership",
+      "source_url": "https://ekaterinburg.hh.ru/vacancies/kommercheskiy_direktor",
+      "rows_inspected": 18,
+      "selected_distinct_low_overlap": 12,
+      "first20_observed": 18,
+      "first20_threshold_evaluated": false,
+      "stopped_for_saturation": false
+    },
+    {
+      "source": "Rabota.ru and Habr Career probes",
+      "selected_distinct_low_overlap": 0,
+      "counted_in_raw": false,
+      "note": "Probed for source diversity; not counted in the 80 selected distinct raw employers because the current evidence was not stronger than the selected pool."
+    }
+  ],
+  "worker_funnel": {
+    "RAW_DISTINCT": 80,
+    "FAST_GATE": 3,
+    "DEEP_CHECK": 3,
+    "SIZE": 2,
+    "LEGAL": 2,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "deep_check_rejections": [
+    {
+      "brand": "Yogiket",
+      "stage": "SIZE",
+      "reason": "Fresh current scale meeting the configured threshold was not confirmed; only older 2024 revenue evidence was available, so it was excluded from the decision."
+    },
+    {
+      "brand": "Naturi Farm",
+      "stage": "SIGNAL",
+      "reason": "A current company jobs page did not corroborate the COO signal surfaced by an aggregator; the signal was treated as stale/inconsistent rather than inferred as active."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "ChatApp",
+      "legal_name": "ООО «ЧАТАПП»",
+      "inn": "2635251064",
+      "ogrn": "1212600012030",
+      "legal_status": "active",
+      "legal_address": "355042, Ставропольский край, г. Ставрополь, ул. Доваторцев, д. 61",
+      "size": {
+        "metric": "revenue_2025_rub",
+        "value": 155598000,
+        "as_of": "2025",
+        "employee_count": null,
+        "note": "Public employee-count figures conflict; headcount was not used for the SIZE decision.",
+        "source_url": "https://companies.rbc.ru/id/1212600012030-obschestvo-s-ogranichennoj-otvetstvennostyu-chatapp/"
+      },
+      "signal": {
+        "tier": "S1",
+        "role": "Операционный директор (COO)",
+        "publication_date": "2026-08-27",
+        "description": "Current COO hiring signal for ChatApp, described as a fast-growing B2B SaaS platform for corporate communications and CRM integrations.",
+        "source_url": "https://jobrun.ru/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-coo-saas-payroll-platform-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+      },
+      "lpr": {
+        "name": "Кирдяшев Владимир Александрович",
+        "role": "директор; 100% учредитель",
+        "ownership_percent": 100,
+        "source_url": "https://companies.rbc.ru/id/1212600012030-obschestvo-s-ogranichennoj-otvetstvennostyu-chatapp/"
+      },
+      "contact": {
+        "domain": "chatapp.online",
+        "email": "support@chatapp.online",
+        "route": "Official ChatApp support/contact route; the official site provides 24/7 support through messaging channels and email.",
+        "source_url": "https://chatapp.online/"
+      },
+      "evidence_urls": [
+        "https://jobrun.ru/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-coo-saas-payroll-platform-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+        "https://companies.rbc.ru/id/1212600012030-obschestvo-s-ogranichennoj-otvetstvennostyu-chatapp/",
+        "https://chatapp.online/",
+        "https://chatapp.online/about/",
+        "https://e-ecolog.ru/buh/2025/2635251064"
+      ],
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "2635251064",
+        "ogrn_or_ogrnip": "1212600012030",
+        "exact_legal_name": "ООО «ЧАТАПП»",
+        "confirmed_brand_domain": "ChatApp|chatapp.online"
+      },
+      "dedup_checks": [
+        {
+          "phase": "before_deep_check",
+          "head": "09eefd1245e5597cd7e45b860002b8434f60943a",
+          "result": "no canonical/repository match found by INN, OGRN, exact legal name, or confirmed brand+domain"
+        },
+        {
+          "phase": "immediately_before_write",
+          "head": "09eefd1245e5597cd7e45b860002b8434f60943a",
+          "result": "no canonical/repository match found by INN, OGRN, exact legal name, or confirmed brand+domain"
+        }
+      ]
+    }
+  ]
+}
