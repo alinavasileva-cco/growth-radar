@@ -1,0 +1,122 @@
+{
+  "worker": "jobs",
+  "baseline_head": "f6cca69805560580c93fe00ac256954db95759bf",
+  "config_version": "2026-08-30T01:06:46+03:00",
+  "canonical_count": 528,
+  "contactable_count": 528,
+  "integrity": "PASS",
+  "criteria_changed": false,
+  "canonical_writer_started": false,
+  "outreach_performed": false,
+  "target_employer_level_raw": "140-150",
+  "target_met": false,
+  "reason_target_not_met": "Available indexed job-board search surfaces exposed many vacancy rows, but this worker did not have enough evidence to resolve 140-150 rows into distinct employer-level legal identities without guessing. Source rows were therefore not inflated into employer-level raw counts.",
+  "source_batches_attempted": [
+    {"source": "HH/search-index", "region": "Perm", "focus": "operations/executive/commercial leadership"},
+    {"source": "HH/search-index", "region": "Kazan", "focus": "operations/commercial leadership"},
+    {"source": "HH/search-index", "region": "Omsk", "focus": "commercial leadership"},
+    {"source": "HH/search-index", "region": "Samara", "focus": "commercial/B2B leadership"},
+    {"source": "HH/search-index", "region": "Novosibirsk", "focus": "business development/production leadership"},
+    {"source": "JobRun/H-careers indexed job signals", "region": "Ekaterinburg", "focus": "commercial/operations leadership"},
+    {"source": "JobRun/H-careers indexed job signals", "region": "Krasnodar/Krasnoyarsk/Nizhny Novgorod/Rostov", "focus": "commercial/operations/development leadership"}
+  ],
+  "deep_checked": [
+    {
+      "brand": "БАРС-ШР",
+      "legal_name": "ООО «БАРС-ШР»",
+      "inn": "5903152885",
+      "ogrn": "1225900007354",
+      "result": "REJECT_SIZE",
+      "evidence": [
+        "https://perm.hh.ru/vacancies/ispolnitelnyy_direktor",
+        "https://companies.rbc.ru/id/1225900007354-ooo-bars-shr/"
+      ],
+      "reason": "2024 revenue 1.093m RUB; below current target scale"
+    },
+    {
+      "brand": "Компания Киль-Казань",
+      "legal_name": "ООО «КОМПАНИЯ КИЛЬ-КАЗАНЬ»",
+      "inn": "1655382345",
+      "result": "REJECT_SIZE",
+      "evidence": [
+        "https://kazan.hh.ru/vacancies/operacionnyy_direktor",
+        "https://firmoteka.ru/1655382345"
+      ],
+      "reason": "2025 revenue about 5.47bn RUB; above current target scale"
+    },
+    {
+      "brand": "Бумхиминвест",
+      "legal_name": "ООО «БУМХИМИНВЕСТ»",
+      "inn": "5903103750",
+      "ogrn": "1125903007075",
+      "result": "REJECT_SIZE",
+      "evidence": [
+        "https://perm.hh.ru/vacancies/finansovyy_direktor",
+        "https://www.kommersant.ru/doc/8589392"
+      ],
+      "reason": "2025 revenue about 7.96bn RUB; above current target scale"
+    },
+    {
+      "brand": "МедЛайн",
+      "legal_name": "ООО «МЕДЛАЙН»",
+      "inn": "5506226202",
+      "ogrn": "1135543019952",
+      "result": "REJECT_SIZE",
+      "evidence": [
+        "https://omsk.hh.ru/vacancies/kommercheskiy_direktor/polniy_den",
+        "https://firmoteka.ru/5506226202"
+      ],
+      "reason": "2025 revenue about 683.8m RUB; above current target scale"
+    },
+    {
+      "brand": "Трансмашприбор",
+      "legal_name": "ООО «ТРАНСМАШПРИБОР»",
+      "inn": "6685102594",
+      "ogrn": "1156658087453",
+      "result": "REJECT_SIZE",
+      "evidence": [
+        "https://h.careers/job/c031595b-0c58-4d24-ad9a-87c276d5bb7b",
+        "https://dreamjob.ru/employers/209824/vakansii/120187233",
+        "https://elektromashtm.ru/"
+      ],
+      "reason": "Employer stated annual turnover above 1bn RUB; above current target scale"
+    },
+    {
+      "brand": "РИР ГРУПП",
+      "legal_name": "ООО «РИР ГРУПП»",
+      "inn": "1686057507",
+      "ogrn": "1261600012992",
+      "result": "REJECT_SIZE_UNCONFIRMED",
+      "evidence": [
+        "https://kazan.hh.ru/vacancies/operacionnyy_direktor/za_poslednie_tri_dnya",
+        "https://companies.rbc.ru/id/1261600012992-ooo-rir-grupp/"
+      ],
+      "reason": "New 2026 legal entity; current target scale could not be confirmed without guessing"
+    },
+    {
+      "brand": "Парма ПромПоставка",
+      "legal_name": "ООО «ПАРМА ПРОМПОСТАВКА»",
+      "inn": "5903140760",
+      "ogrn": "1195958004440",
+      "result": "REJECT_SIGNAL",
+      "evidence": [
+        "https://companies.rbc.ru/id/1195958004440-obschestvo-s-ogranichennoj-otvetstvennostyu-parma-prompostavka/",
+        "https://parma-pp.ru/"
+      ],
+      "reason": "Scale and legal identity fit, but no sufficiently strong current S1-S3 management/business-change signal was confirmed in this pass"
+    }
+  ],
+  "worker_funnel": {
+    "employer_level_raw_confirmed": 7,
+    "fast_gate": 7,
+    "deep_check": 7,
+    "size": 2,
+    "legal": 2,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "qualified": [],
+  "note": "No candidate was staged as qualified. No canonical files were modified. No outreach was performed."
+}
