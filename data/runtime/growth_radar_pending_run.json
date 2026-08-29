@@ -1,80 +1,8 @@
 {
   "run_id": "N5K-20260829-507",
   "updated_at": "2026-08-29T23:01:35+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "baseline_count": 525,
-  "qualified_staged_not_counted": 1,
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0684",
-      "Brand": "ZVEZDA Спецтехники / ПромСпецАвто",
-      "Legal Name": "ООО «ПРОМСПЕЦАВТО»",
-      "INN": "0277125289",
-      "OGRN/OGRNIP": "1120280044521",
-      "Region": "Республика Башкортостан",
-      "City": "Уфа",
-      "Segment": "B2B спецтехника / импорт, продажи и сервис",
-      "Website": "https://goodwork.su/",
-      "Revenue/Scale": "Выручка 401,821 млн ₽ за 2025 год; прибыль 38,273 млн ₽; действующее ООО; бренд ZVEZDA СПЕЦТЕХНИКИ зарегистрирован за тем же юрлицом.",
-      "Signal Level": "S2",
-      "Signal Summary": "27.02.2026 компания сообщала в актуальной вакансии, что объёмы продаж выросли на 80% год к году, склад расширяется, поставки увеличиваются и отдел продаж усиливается.",
-      "Signal Date": "2026-02-27",
-      "Signal Source": "https://nesiditsa.ru/vacancy/130688780",
-      "Owner": "Макаров Юрий Витальевич — 100%",
-      "CEO": "Аскаров Вадим Фаритович",
-      "LPR": "Аскаров Вадим Фаритович",
-      "LPR Role": "Директор / практический ЛПР",
-      "Primary Phone": "8 800 511-68-85",
-      "Primary Email": "requests@goodwork.su",
-      "HH Contact": "",
-      "Contact Form": "https://goodwork.su/kontakty/",
-      "Contact Type": "официальные корпоративные маршруты",
-      "Contact Source": "официальный сайт ПромСпецАвто",
-      "Consulting Hypothesis": "Систематизация масштабирования B2B-продаж и операционного контура на фоне быстрого роста: pipeline/CRM, KPI, склад и поставки, sales-operations alignment.",
-      "contacts": [
-        {"value":"8 800 511-68-85","channel":"PHONE","type":"CORPORATE","source":"официальный сайт ПромСпецАвто","url":"https://goodwork.su/kontakty/","is_lpr":false,"notes":"Отдел продаж; не персональный контакт ЛПР."},
-        {"value":"requests@goodwork.su","channel":"EMAIL","type":"CORPORATE","source":"официальный сайт ПромСпецАвто","url":"https://goodwork.su/kontakty/","is_lpr":false,"notes":"Официальный корпоративный email; не персональный контакт ЛПР."},
-        {"value":"https://goodwork.su/kontakty/","channel":"WEB_FORM","type":"CORPORATE","source":"официальный сайт ПромСпецАвто","url":"https://goodwork.su/kontakty/","is_lpr":false,"notes":"Официальная форма заявки; не персональный контакт ЛПР."}
-      ],
-      "evidence": [
-        {"type":"LEGAL_SIZE","claim":"ООО «ПромСпецАвто» действует; ИНН 0277125289, ОГРН 1120280044521; выручка 2025 года 401 821 000 ₽, прибыль 38 273 000 ₽.","url":"https://companies.rbc.ru/id/1120280044521-ooo-promspetsavto/","source":"РБК Компании"},
-        {"type":"OWNER_LPR","claim":"Директор — Аскаров Вадим Фаритович; учредитель Макаров Юрий Витальевич владеет 100%; РБК также связывает с юрлицом торговую марку ZVEZDA СПЕЦТЕХНИКИ.","url":"https://companies.rbc.ru/id/1120280044521-ooo-promspetsavto/","source":"РБК Компании"},
-        {"type":"SIGNAL","claim":"27.02.2026: объёмы продаж +80% год к году, расширяется склад, увеличиваются поставки, усиливается отдел продаж.","url":"https://nesiditsa.ru/vacancy/130688780","source":"Не сидится / вакансия ПромСпецАвто"},
-        {"type":"CONTACT_LEGAL","claim":"Официальный сайт подтверждает ООО «ПромСпецАвто», ИНН/ОГРН, телефон 8 800 511-68-85, requests@goodwork.su и форму заявки.","url":"https://goodwork.su/kontakty/","source":"официальный сайт ПромСпецАвто"}
-      ]
-    }
-  ],
-  "funnel": {
-    "discovered": 8,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded": 7
-  },
-  "lane_metrics": [
-    {"lane":"jobs_worker","raw":null,"fast_gate":5,"size":2,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified":1,"duplicate_plus_early_reject":null,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Fresh immutable worker did not provide a defensible distinct employer-level raw denominator; denominator not reconstructed."},
-    {"lane":"growth_news_own","raw":8,"fast_gate":1,"size":1,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":6,"qualified_raw_pct":0.0,"fast_gate_raw_pct":12.5,"note":"One known physical duplicate and five early rejects; one additional candidate reached SIZE but was not advanced because current LEGAL state/ownership was not clean enough for strict qualification."},
-    {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Used as verification sources only; not double-counted as raw."},
-    {"lane":"industry_catalogs","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Cooldown/probe-only; no deep-check spent."},
-    {"lane":"experimental","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
-  ],
-  "efficiency_control": {
-    "comparison_note": "Current aggregate qualified/raw and fast/raw are intentionally not computed because jobs worker raw denominator is null; inventing a denominator is forbidden. Measured own growth/news lane: 0/8 qualified, 1/8 fast gate. Previous completed RUN 506 measured growth/news at 2/8 qualified and 2/8 fast gate; RUN 505R1 has an incomplete growth/news raw denominator, so exact all-lane comparison remains unavailable.",
-    "previous_completed_run": "N5K-20260829-506",
-    "previous_growth_news_qualified_raw_pct": 25.0,
-    "previous_growth_news_fast_raw_pct": 25.0,
-    "current_growth_news_qualified_raw_pct": 0.0,
-    "current_growth_news_fast_raw_pct": 12.5,
-    "change_growth_news_qualified_raw_pp": -25.0,
-    "change_growth_news_fast_raw_pp": -12.5,
-    "adaptive_action": "Do not repeat prior allocation automatically because net new qualified <5 and own growth/news efficiency fell in this measured batch. Keep jobs capped at 5%; reduce growth/news from 55% to 50%; increase official-company/owner/CEO to 35%; industry <=5% probe-only; experimental 5%.",
-    "next_distribution_pct": {"jobs":5,"growth_news":50,"official_owner_ceo":35,"industry_catalogs_max":5,"experimental":5}
-  },
-  "worker_consumption": {"lane":"jobs","path":"data/pending_workers/jobs/20260829-222500-jobs.json","blob_sha":"3ad5336082a888ac4a93efc1c4ec0563f7f08b67","status_after_integration":"CONSUMED_INTEGRATED"},
-  "notes": "Strict quality unchanged. Fresh worker staging ingested first; global dedup by INN/OGRN/legal name/brand-domain found no canonical collision for PromSpecAuto. Signal independently reverified on 27.02.2026 source; unverified 28.08 business-assistant claim from staging was not used. Own discovery reviewed 8 distinct companies and produced no additional safe QUALIFIED; raw was not padded. No outreach. Aggregate raw efficiency is not fabricated because jobs worker raw denominator is unavailable."
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260829-507 integrated physically; canonical/contactable 526/526; integrity PASS; orphan 0/0; outreach 0."
 }
