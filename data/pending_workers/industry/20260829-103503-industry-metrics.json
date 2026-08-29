@@ -1,0 +1,25 @@
+{
+  "worker": "industry",
+  "run_at": "2026-08-29T10:35:03+03:00",
+  "base_head": "3281333b0a7d6cf95f6fc58d027433aa722b566d",
+  "config_version": "2026-08-29T10:00:33+03:00",
+  "canonical_status": {"leads_master": 508, "contactable_master": 508, "integrity": "PASS"},
+  "dedup_keys_read": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "rules": {"outreach": false, "canonical_writes": false, "criteria_relaxed": false, "stale_records_excluded": true},
+  "funnel": {"RAW": 100, "FAST_GATE": 0, "SIZE": 0, "LEGAL": 0, "SIGNAL": 0, "LPR": 0, "CONTACT": 0, "QUALIFIED": 0},
+  "source_batches": [
+    {"source":"Российская неделя общественного транспорта / ElectroTrans 2026","source_url":"https://publictransportweek.ru/exponents/2026","raw":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"action":"STOP_AFTER_20_SWITCH_SOURCE","candidates":["1520 Сигнал","BTL-screen","CSVT","ITLINE / ООО Энерготрейд","АВТОБОСС","Автоинформатор / ООО ЭСКОМ","Акустик Групп","Ампертекс","АО Автоспецоборудование","АО Байкал Электроникс","АО Транс-Альфа","АО ТВЭЛ","АО НПО Изолятор","АО РКБ Глобус","Вейчай Рус","ВОЛХОН","Гедаэффект","Группа компаний 1МТ / ООО ПромТехИнформ","Ди.Медиа","ЕХТ"]},
+    {"source":"ХимТех Урал 2026","source_url":"https://www.chemtech-ural.ru/ru-RU/about/exhibitor-list.aspx","raw":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"action":"STOP_AFTER_20_SWITCH_SOURCE","candidates":["ХРОМПИК","Евразийский химико-фармацевтический лабораторный комплекс","Уралэластотехника","Завод Уралтехгаз","Уралхимпласт","МЕДИН-Н","A.M.H.","Астериас","Активатор","Evada Electronics","МИТО","Интелтест","ЭкоИнструмент-Урал","ТрансАналит","НПФ Полисервис","ChemExpress","Лабконцепт","ГТК Синтез","НЕОСТАТ","Огнеупоры"]},
+    {"source":"COMvex 2026","source_url":"https://trans.ru/news/novii-sezon-novie-vozmozhnosti-veduschie-igroki-rinka-gotovyatsya-predstavit-novinki-kommercheskogo-transporta-na-comvex-2026","raw":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"action":"STOP_AFTER_20_SWITCH_SOURCE","candidates":["КамАЗ","ГК СТТ","СИНОТРАК РУС","АЗ УРАЛ","Тракс Восток Рус","МБ РУС","НОВАТЭК","Смарт Тракс","Вейчай-Рус Трейдинвест","Центромаш","Силк Вэй","МАЗ","АЗ Чайка-Сервис","UzAuto TRAILER","завод Смол Маш","завод КДМ","завод Промтех","Nursan Trailer","Кистоун Авто","BONUM"]},
+    {"source":"Global Ingredients Show 2026","source_url":"https://xpo.su/moscow-global-ingredients-show/","raw":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"action":"STOP_AFTER_20_SWITCH_SOURCE","candidates":["GC ETS","City Impex","Carbon Ext","Don-Agro","GC Avangard","Bioceutica","Amethys","Eco Resource","Amursky MEZ","Ekos","Himbroker","Ochakovsky Food Ingredients Plant","EcoColor","Rusextract","Naturi Pharm","Yarprodsnabservice","Arsenal Athlete","GC Revada","Dynamik","Leko Style"]},
+    {"source":"Rosmould | Rosplast | 3Д-ТЕХ 2026","source_url":"https://www.elec.ru/news/2026/04/21/opublikovan-predvaritelnyj-katalog-uchastnikov-let.html","raw":20,"duplicates_plus_early_rejects":20,"rate":1.0,"qualified":0,"action":"STOP_AFTER_20_SWITCH_SOURCE","candidates":["Иж-Рэст","КБ Пресс-форма","НОВАЯ ФОРМА","ОН РУС","Полипак","ПРЕССМАШ","Молд Сервис","Новатех","РОТОСНАБ","Система","Т-Молд","Технополаст Юг","ФОРШ","Gorplast","MGC Group","Babyplast-Russia","Балитех","ГАММА ПЛАСТ","МОРЕТТО РУ","Формотроник"]}
+  ],
+  "notes": [
+    "100 source-level identities are distinct within this worker pass after normalization.",
+    "All five batches crossed the >70% duplicate+early-reject threshold on the first 20, so each source was stopped after 20 and rotated.",
+    "Exhibition/catalog presence itself was not treated as S1-S3.",
+    "Foreign entities and non-target organizational forms were rejected at the cheap gate; Russian companies without a sufficiently confirmed current SIZE plus probable fresh S1-S3 were not advanced.",
+    "No candidate reached deep SIZE stage; no guesses, reconstructed contacts, or weakened criteria were used.",
+    "No qualified staging file was created because QUALIFIED=0. Only this unique metrics file was written."
+  ]
+}
