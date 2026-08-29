@@ -1,0 +1,76 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-29T19:26:42+03:00",
+  "baseline_head": "9e4bea166f2c0788b33b191361f7f848c01a1550",
+  "config_version": "2026-08-29T18:03:00+03:00",
+  "canonical_contactable": 518,
+  "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "guards": {
+    "canonical_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "stale_records_excluded_from_positive_decisions": true,
+    "foreign_company_is_early_reject": true,
+    "exhibition_presence_is_not_signal": true
+  },
+  "worker_funnel": {
+    "raw": 100,
+    "normalized_distinct_within_worker": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "decision_note": "All five first-20 batches exceeded the 70% duplicate+early-reject threshold, so each source was stopped after 20 and rotated. No candidate was advanced solely on exhibition/catalog presence; no positive decision used stale evidence. Source-level identities below are distinct within this worker pass, but early rejects were not falsely represented as globally legal-key-resolved entities.",
+  "source_batches": [
+    {
+      "source": "YugAgro 2026 official exhibitor list",
+      "url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/yugagro-2026/en/Exhibitor",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["ABION","ACRON","ADAMANTIS","Agro Technologies LLC","AGRO-INDUSTRIAL SUPPORT","AGROBUSINESS GK","AGROCOMMASH LLC","AGROKAPITAL","AGROKRAFT RUS","AGROLA","AGROLIGA ROSSII GC","AGROMAST","AGROMASTER GC","AGROPROMSHINA","AGRORUS & CO","AGROSERVICE","AGROSISTEMS OF DRIP IRRIGATION","Agroteh-Garant","AKMASH-HOLDING","AMAZONE"]
+    },
+    {
+      "source": "YugBuild 2026 exhibitor list",
+      "url": "https://www.yugbuild.com/en-GB/about/exhibitor-list.aspx?promo=ygb2m2524",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["500LUX","Alum Glass Stroy","ASSEL","BESTLY","Bestway","BFM Кубань","Bonolit","BFM.RU ПОРТАЛ","CONDTROL","Corpsun","Dome Construction Plant","DAREL","DCK","DECOLIFE","DECOMASTER","DECORATOR","Dircode","GALEREYA ELECTRICI Y SVETA","EasyDecking","Ecodeco. Factory of modern facade solutions"]
+    },
+    {
+      "source": "Wasma 2026 official exhibitor list",
+      "url": "https://www.wasma.ru/ru-RU/about/exhibitor-list.aspx",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["Jiangsu Aidemans Technology Co., Ltd.","L-Labs","SSP Private Limited","А.ПРО","АКЦИОНЕРНОЕ ОБЩЕСТВО РЯЖСКИЙ АВТОРЕМОНТНЫЙ ЗАВОД","АО УВЗ-Транс","АЭРОФИЛЬТР, ООО","БМТ, ООО","Воздухоочистка НПК, ООО","Геоскан, ООО","Естественные технологии","ИНЖЭКО","Клевер","ЛЕКСОР, ООО","Лемана ПРО","Лента","ЛЮБИСТОК, ООО","ОКС Групп, ООО","Олимп, НПО","Онлайн Экология, ООО"]
+    },
+    {
+      "source": "COMTRANS 2026 official exhibitor list",
+      "url": "https://www.comtransexpo.ru/exhibitors/",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["АвтоКомплект ООО","5 КОЛЕСО","6Х6 СЕРВИС","ABCP","Atlant_trailers","Changzhou Sunlight Electrical Appliance Co,. Ltd","E1 CARD","ENIX","FIBROSAN C.T.P. SAN.VE TIC. A.S.","Leort Trailer","OMNICOMM","PCMK Нинбо Пейсмейкер Интернэшнл Трэйдниг Ко.,Лтд.","POLSER Kompozit Urunler Sanayi ve Ticaret A.S.","ST-KT.RU, журнал","StarMotor","Zhengzhou Jingyida Auto Parts Co., Ltd.","АВТОТЕХНИК","АВТОФУРГОН ООО","АЗ УРАЛ ТД","АЗП АВТОЗАПЧАСТИ. ПРО"]
+    },
+    {
+      "source": "Dentima Krasnodar 2026 interactive exhibitor plan",
+      "url": "https://www.dentima.su/ru-RU/about/exposition.aspx",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["1С: МЕДИЦИНА. СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА","32TOP.RU","ALPHA-BIO TEC","C.T.DENT","CAMTECH","CURAPROX","DAI ICHI","DELO DENT","DENPA","DENTAL MAGAZINE","DENTOPTICS","DOCTOR LINDEN","DUTYFREESTOM","EGIGIENA","EXPERT GROUP","FLEXILIGNER","GOFFSHTEIN","GREEN DENT","HELLODENT","IOS ORTHO"]
+    }
+  ]
+}
