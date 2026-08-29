@@ -1,0 +1,48 @@
+{
+  "run_id": "N5K-20260829-495",
+  "recorded_at": "2026-08-29T10:58:06+03:00",
+  "canonical_result": {
+    "canonical_count": 512,
+    "contactable_count": 512,
+    "physically_integrated": 4,
+    "physical_duplicate_rejected": 1,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "qualified_staged_not_counted": 0,
+    "outreach": 0
+  },
+  "consumed_workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-102130-jobs.json",
+      "blob_sha": "a5ec400116b328ec5bcb8abba59c49c2b918ab2d",
+      "raw_distinct": 80,
+      "worker_qualified": 1,
+      "canonical_status": "CONSUMED_INTEGRATED",
+      "integrated_brand": "БЭГРИФ",
+      "integrated_lead_id": "N5K-0666"
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-103503-industry-metrics.json",
+      "blob_sha": "b8d29d2779c2a75f4b437b02e295f6a957b17372",
+      "raw_distinct": 100,
+      "worker_qualified": 0,
+      "canonical_status": "CONSUMED_ZERO_QUALIFIED"
+    }
+  ],
+  "own_discovery_result": {
+    "prewrite_qualified": 4,
+    "physically_integrated": 3,
+    "physical_duplicate": {
+      "brand": "Союзтекстиль-СТ / ULTRAFILAMENT",
+      "inn": "5031094336",
+      "ogrn": "1105031004935",
+      "duplicate_keys": ["INN", "OGRN", "LEGAL_NAME"],
+      "canonical_status": "REJECTED_BY_FINAL_PHYSICAL_DEDUP"
+    },
+    "integrated_brands": ["НЕОС Ингредиентс", "Сибстекло", "Феррум / Shipsteel"]
+  },
+  "audit_note": "Immutable worker staging retained for audit history. Exact worker blob SHAs are marked consumed. Final physical dedup rejected Союзтекстиль-СТ as an existing canonical company; it is not counted as new. First integration attempt failed before commit due missing Primary Phone key on Сибстекло; same-cycle schema repair used an explicit empty phone field rather than inventing a contact and the second integration completed successfully. No outreach."
+}
