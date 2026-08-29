@@ -1,8 +1,171 @@
 {
-  "run_id": "N5K-20260829-500",
-  "updated_at": "2026-08-29T15:58:21+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260829-500 integrated physically; canonical/contactable 516/516; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260829-501",
+  "updated_at": "2026-08-29T17:02:31+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 200,
+    "fast_gate_passed": 17,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 199,
+    "physically_integrated": 0
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_job_boards_career",
+      "raw": 80,
+      "fast_gate": 11,
+      "size": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 69,
+      "qualified_raw": 0.0125,
+      "fast_gate_raw": 0.1375,
+      "note": "Fresh immutable jobs worker pool; one worker-qualified candidate independently reverified by canonical writer before staging."
+    },
+    {
+      "lane": "industry_catalogs_exhibitions",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 100,
+      "qualified_raw": 0.0,
+      "fast_gate_raw": 0.0,
+      "note": "Five first-20 probes all crossed the >70% stop threshold; no exhibition presence treated as SIGNAL; no deep-check performed."
+    },
+    {
+      "lane": "growth_expansion_investment_business_change_news",
+      "raw": 20,
+      "fast_gate": 6,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 14,
+      "qualified_raw": 0.0,
+      "fast_gate_raw": 0.3,
+      "note": "Fresh 17-28 Aug 2026 low-overlap production/expansion news probe. Strong source-level signals were identified, but no candidate was pushed through deep funnel without current complete SIZE/LEGAL/LPR/CONTACT evidence."
+    },
+    {
+      "lane": "official_company_owner_ceo",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw": null,
+      "fast_gate_raw": null,
+      "note": "Used for independent verification of ALLIO; not double-counted as raw."
+    },
+    {
+      "lane": "experimental_low_overlap",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw": null,
+      "fast_gate_raw": null
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0675",
+      "Brand": "ALLIO",
+      "Legal Name": "ООО «АЛЛИО»",
+      "INN": "7838106248",
+      "OGRN/OGRNIP": "1227800087668",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "B2B SaaS / PropTech / ERP",
+      "Website": "https://allio.ru/",
+      "Revenue/Scale": "Выручка 104 117 000 ₽ за 2025 год; рост 24,94% г/г; 18 сотрудников по данным за 2025 год",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежая вакансия операционного директора COO/Chief Operating Officer: управление результатом коммерческого блока, перевод стратегических целей в измеримые планы, процессы и кросс-функциональное исполнение; опубликована 09.08.2026, актуальна до 08.09.2026.",
+      "Signal Date": "2026-08-09",
+      "Signal Source": "https://st-petersburg.cataloxy.ru/rabota/vacancy1127173798_operatsionnyy-direktor-coochief-operating-officer.htm",
+      "Owner": "Суднишникова Валентина Андреевна",
+      "CEO": "Суднишникова Валентина Андреевна",
+      "LPR": "Суднишникова Валентина Андреевна",
+      "LPR Role": "Генеральный директор и учредитель",
+      "Primary Phone": "+7 (812) 642-71-37",
+      "Primary Email": "info@allio.ru",
+      "HH Contact": "",
+      "Contact Form": "https://allio.ru/contacts",
+      "Contact Type": "Подтвержденные корпоративные маршруты; не персональный контакт ЛПР",
+      "Contact Source": "https://allio.ru/contacts; https://companies.rbc.ru/id/1227800087668-allio/",
+      "Consulting Hypothesis": "Рост коммерческого блока и найм COO создают подтвержденный контекст для операционного масштабирования, настройки управленческого контура, KPI и межфункциональных процессов.",
+      "contacts": [
+        {
+          "channel": "phone",
+          "value": "+7 (812) 642-71-37",
+          "type": "corporate",
+          "source": "ALLIO / RBC company profile",
+          "url": "https://companies.rbc.ru/id/1227800087668-allio/",
+          "is_lpr": false,
+          "notes": "Корпоративный телефон; не заявлен как персональный контакт ЛПР."
+        },
+        {
+          "channel": "email",
+          "value": "info@allio.ru",
+          "type": "corporate",
+          "source": "ALLIO / RBC company profile",
+          "url": "https://companies.rbc.ru/id/1227800087668-allio/",
+          "is_lpr": false,
+          "notes": "Корпоративный email; не заявлен как персональный контакт ЛПР."
+        },
+        {
+          "channel": "web",
+          "value": "https://allio.ru/contacts",
+          "type": "corporate_web_route",
+          "source": "ALLIO official website",
+          "url": "https://allio.ru/contacts",
+          "is_lpr": false,
+          "notes": "Официальный web-маршрут компании."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО «АЛЛИО», ИНН 7838106248, ОГРН 1227800087668, действует; выручка 2025 года 104 117 000 ₽, рост 24,94% г/г, среднесписочная численность 18.",
+          "url": "https://b2b.house/company/OOO-ALLIO_5a679ce7-7695-4797-91a5-547e65951ead/",
+          "source": "B2B.House"
+        },
+        {
+          "type": "LPR_OWNER",
+          "claim": "Суднишникова Валентина Андреевна — генеральный директор и учредитель ООО «АЛЛИО»; организация действует на 27.08.2026.",
+          "url": "https://companies.rbc.ru/id/1227800087668-allio/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "Вакансия операционного директора COO/Chief Operating Officer у прямого работодателя ALLIO опубликована 09.08.2026 и актуальна до 08.09.2026.",
+          "url": "https://st-petersburg.cataloxy.ru/rabota/vacancy1127173798_operatsionnyy-direktor-coochief-operating-officer.htm",
+          "source": "Cataloxy / vacancy mirror"
+        },
+        {
+          "type": "SIGNAL_DETAIL",
+          "claim": "Описание COO-роли включает управление результатами коммерческого блока, KPI, процессы, перевод стратегических целей в измеримые планы и кросс-функциональные проекты.",
+          "url": "https://hirify.me/jobs/857756-chief-operating-officer-erp",
+          "source": "Hirify"
+        },
+        {
+          "type": "CONTACT_LEGAL",
+          "claim": "Официальная связка ALLIO/allio.ru и корпоративные маршруты: +7 (812) 642-71-37, info@allio.ru, официальный сайт.",
+          "url": "https://companies.rbc.ru/id/1227800087668-allio/",
+          "source": "РБК Компании / ALLIO"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "notes": "Canonical writer independently reverified ALLIO after worker staging. Physical integration workflow must re-run dedup against current master immediately before append. Worker raw: jobs 80, industry 100. Own fresh growth/news probe: 20 source-level candidates. Industry remains probe-only. No outreach."
 }
