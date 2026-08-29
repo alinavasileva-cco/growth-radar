@@ -1,0 +1,132 @@
+{
+  "worker": "jobs",
+  "lane": "jobs",
+  "source_head": "8aec581e2f5a9a0414fa1458a34bf6cd2c6ae3f3",
+  "config_version": "2026-08-29T17:06:00+03:00",
+  "canonical_baseline": {
+    "master": 516,
+    "contactable": 516,
+    "integrity": "PASS"
+  },
+  "outreach_performed": false,
+  "canonical_writer_run": false,
+  "canonical_writes": 0,
+  "discovery": {
+    "raw_distinct": 80,
+    "distinct_scope": "source-level employer-distinct observations after cross-query name de-overlap; only candidates surviving FAST GATE were legal-key resolved",
+    "sources_used": [
+      "HH-indexed vacancy surfaces",
+      "DreamJob/HH vacancy mirrors",
+      "Работа.ру",
+      "GetMatch",
+      "GdeRabota/cross-board vacancy mirrors",
+      "official career/contact pages"
+    ],
+    "lane_instrumentation": {
+      "note": "Source search streams did not expose a stable employer-level first-20 ordering after cross-query de-overlap. Exact duplicate+early-reject percentages therefore were not reconstructed or invented. Discovery was rotated in batches capped at 20 observations per surface/role family.",
+      "first20_rates": null
+    }
+  },
+  "worker_funnel": {
+    "RAW": 80,
+    "FAST_GATE": 7,
+    "DEEP_CHECK": 4,
+    "SIZE": 2,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "qualified": [
+    {
+      "brand": "DEALLOG",
+      "legal_name": "ООО \"ДИАЛОГ\"",
+      "inn": "7839118373",
+      "ogrn": "1197847132152",
+      "country": "Россия",
+      "city": "Санкт-Петербург",
+      "domain": "deallog.ru",
+      "legal_status": "Действующая организация",
+      "size": {
+        "revenue_2025_rub": 1594705000,
+        "employees_2025": 87,
+        "evidence_urls": [
+          "https://firmoteka.ru/7839118373",
+          "https://basis.myseldon.com/ru/company/1197847132152",
+          "https://saby.ru/profile/7839118373-781001001"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "evidence_date": "2026-07-27",
+        "notes": "Фирмотека указывает действующую организацию по данным ФНС на 27.07.2026; актуальные судебные источники показывают хозяйственные споры, но в проверенных свежих источниках не найдено подтверждения банкротства/ликвидации этого юрлица.",
+        "evidence_urls": [
+          "https://firmoteka.ru/7839118373",
+          "https://reputation.ru/ogrn/1197847132152",
+          "https://b2b.house/company/OOO-DIALOG_bc39490d-3922-472f-b296-8e48ed403d22/"
+        ]
+      },
+      "signal": {
+        "type": "S1",
+        "title": "Директор по развитию (международная логистика)",
+        "date": "2026-08-27",
+        "summary": "Свежий поиск директора по развитию: компания расширяет географию перевозок, развивает новые логистические направления и усиливает коммерческую команду.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/304179/vakansii/136703715"
+        ]
+      },
+      "lpr": {
+        "name": "Пахомов Антон Львович",
+        "role": "Генеральный директор",
+        "status": "confirmed",
+        "evidence_urls": [
+          "https://companium.ru/id/1197847132152-dialog",
+          "https://reputation.ru/ogrn/1197847132152"
+        ]
+      },
+      "contact": {
+        "type": "official_hr_route",
+        "email": "hr@deallog.ru",
+        "phone": "+7 (989) 350-08-80",
+        "general_email": "hello@deallog.ru",
+        "general_phone": "+7 (812) 500-09-75",
+        "status": "confirmed_on_official_site",
+        "evidence_urls": [
+          "https://deallog.ru/contacts",
+          "https://deallog.ru/about"
+        ]
+      },
+      "brand_legal_mapping": {
+        "status": "confirmed",
+        "notes": "Юрпрофиль ООО ДИАЛОГ по ИНН 7839118373 публикует тот же deallog.ru, телефон +7 812 500-09-75, email hello@deallog.ru и адрес на Заставской, 22, что связывает вакансионный бренд DEALLOG с юрлицом.",
+        "evidence_urls": [
+          "https://companium.ru/id/1197847132152-dialog",
+          "https://deallog.ru/contacts"
+        ]
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7839118373",
+        "ogrn": "1197847132152",
+        "exact_legal_name": "ООО \"ДИАЛОГ\"",
+        "brand_domain": "DEALLOG|deallog.ru"
+      },
+      "dedup_checks": [
+        {
+          "stage": "pre_deep_check",
+          "repository_search": ["7839118373", "1197847132152", "DEALLOG"],
+          "matches": 0
+        },
+        {
+          "stage": "pre_stage_write",
+          "head": "8aec581e2f5a9a0414fa1458a34bf6cd2c6ae3f3",
+          "repository_search": ["7839118373", "1197847132152", "deallog.ru", "ООО \\"ДИАЛОГ\\""],
+          "matches": 0
+        }
+      ],
+      "decision": "QUALIFIED",
+      "decision_basis": "SIZE PASS -> LEGAL PASS -> fresh S1 SIGNAL PASS -> current LPR confirmed -> official practical CONTACT confirmed -> second repository dedup found no match"
+    }
+  ]
+}
