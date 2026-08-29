@@ -1,0 +1,124 @@
+{
+  "worker": "read_discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-29T19:28:00+03:00",
+  "baseline_head": "9cffed23abed008ae2d0184862261b6b2cacdf3a",
+  "config_version": "2026-08-29T18:03:00+03:00",
+  "canonical_snapshot": {
+    "contactable_count": 518,
+    "integrity": "PASS",
+    "dedup_keys_read": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "confirmed_brand_domain"]
+  },
+  "outreach_performed": false,
+  "canonical_writer_started": false,
+  "canonical_writes": false,
+  "raw_collection": {
+    "raw_distinct": 80,
+    "definition": "source-level employer-distinct observations de-overlapped by normalized employer name; cheap rejects were not promoted to legal-key-proven distinctness",
+    "lanes": [
+      {"source": "HH", "query": "operational director", "region": "Novosibirsk", "raw": 20, "first20_duplicate_plus_early_reject_rate": null, "note": "stable canonical status for every cheap row was not available; no percentage reconstructed"},
+      {"source": "HH", "query": "operational director / CCO, last 3 days", "region": "Saint Petersburg", "raw": 20, "first20_duplicate_plus_early_reject_rate": null, "note": "source rotated after one batch of 20"},
+      {"source": "HH", "query": "business development director", "region": "Yekaterinburg", "raw": 20, "first20_duplicate_plus_early_reject_rate": null, "note": "source rotated after one batch of 20"},
+      {"source": "HH", "query": "business development director, direct employers", "region": "Krasnodar", "raw": 20, "first20_duplicate_plus_early_reject_rate": null, "note": "source rotated after one batch of 20"}
+    ],
+    "source_urls": [
+      "https://novosibirsk.hh.ru/vacancies/operacionnyy_direktor",
+      "https://spb.hh.ru/vacancies/operacionnyy_direktor/za_poslednie_tri_dnya",
+      "https://ekaterinburg.hh.ru/vacancies/business_development_director",
+      "https://krasnodar.hh.ru/vacancies/direktor_po_razvitiyu_biznesa/ot_pryamih_rabotodateley"
+    ]
+  },
+  "worker_funnel": {
+    "RAW": 80,
+    "FAST_GATE": 4,
+    "DEEP_CHECK": 4,
+    "SIZE": 2,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "deep_check_notes": [
+    {"candidate": "ИнтелМед", "result": "REJECT_SIZE", "reason": "АО ИнтелМед: 2025 revenue 7.534982bn RUB, outside current working size profile; not promoted"},
+    {"candidate": "AYS GROUP", "result": "REJECT_LEGAL_MAPPING", "reason": "strong current CCO signal and operating scale, but Russian vacancy brand could not be bound to one current Russian legal entity with required certainty"},
+    {"candidate": "Centec", "result": "REJECT_LEGAL_MAPPING", "reason": "current CCO signal found, but official Russian brand resources expose more than one legal entity/requisite set; no guessing"},
+    {"candidate": "БиоМикроГели / ООО Биополимер", "result": "QUALIFIED"}
+  ],
+  "qualified": [
+    {
+      "brand": "БиоМикроГели / Биополимер",
+      "legal_name": "ООО \"БИОПОЛИМЕР\"",
+      "region": "Екатеринбург, Свердловская область",
+      "inn": "6679148488",
+      "ogrn": "1226600002705",
+      "status": "active",
+      "size": {
+        "revenue_2025_rub": 282402000,
+        "employees_2025": 48,
+        "evidence_urls": [
+          "https://saby.ru/profile/6679148488-667001001",
+          "https://www.moedelo.org/kontragenty/ogrn/1226600002705"
+        ]
+      },
+      "legal": {
+        "registered_at": "2022-01-24",
+        "current_ceo": "Елагин Андрей Александрович",
+        "ceo_since": "2025-06-03",
+        "owner": "ООО \"ГРУППА КОМПАНИЙ БИОМИКРОГЕЛИ\"",
+        "owner_share_pct": 100,
+        "evidence_urls": [
+          "https://saby.ru/profile/6679148488-667001001",
+          "https://zachestnyibiznes.ru/company/ul/1226600002705_6679148488",
+          "https://biopolymer.eco/documents/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "job_opening",
+        "title": "Директор по развитию",
+        "published_date": "2026-07-23",
+        "description": "Vacancy explicitly opened in ООО Биополимер, part of ГК БМГ; strategic development role in a technology/chemical group with own R&D and production infrastructure.",
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/135513698",
+          "https://www.jobcareer.ru/companies/biomikrogeli/"
+        ]
+      },
+      "lpr": {
+        "name": "Елагин Андрей Александрович",
+        "role": "Генеральный директор ООО \"БИОПОЛИМЕР\"",
+        "evidence_urls": [
+          "https://saby.ru/profile/6679148488-667001001",
+          "https://kontragent.skrin.ru/issuers/1226600002705"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "email": "info@biopolymer.eco",
+        "sales_email": "sales@biopolymer.eco",
+        "phone": "+7 (343) 288-76-95",
+        "sales_phone": "+7 (343) 237-27-28",
+        "domain": "biopolymer.eco",
+        "evidence_urls": [
+          "https://biopolymer.eco/contacts/",
+          "https://biopolymer.eco/documents/"
+        ]
+      },
+      "dedup": {
+        "pre_deep_check": {"brand_search": "no repository match"},
+        "pre_write": {
+          "inn_6679148488": "no repository match",
+          "ogrn_1226600002705": "no repository match",
+          "brand_domain_biopolymer_ecо": "no repository match"
+        },
+        "keys": [
+          "inn:6679148488",
+          "ogrn:1226600002705",
+          "legal:ООО БИОПОЛИМЕР",
+          "brand_domain:Биополимер|biopolymer.eco"
+        ]
+      },
+      "qualified": true
+    }
+  ]
+}
