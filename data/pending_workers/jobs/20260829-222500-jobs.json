@@ -1,0 +1,108 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-29T22:25:00+03:00",
+  "baseline_head": "0eb9f1dab84b69d5005ebe206f47ac19865c200b",
+  "config_version": "2026-08-29T22:00:42+03:00",
+  "canonical_at_start": 525,
+  "criteria_changed": false,
+  "outreach_performed": false,
+  "discovery": {
+    "target_distinct_raw": "140-150",
+    "target_met": false,
+    "reason_target_not_met": "Search surfaces exposed a large current vacancy pool, but this worker could not resolve 140-150 rows to demonstrably different employer-level legal identities without guessing. Unresolved/cross-posted rows were not counted as distinct raw.",
+    "source_batches_checked": [
+      {"source":"HH","region":"Ekaterinburg","query":"operacionnyy direktor","visible_pool":160,"duplicate_early_reject_rate_first20":null},
+      {"source":"HH","region":"Ufa","query":"operacionnyy direktor","visible_pool":69,"duplicate_early_reject_rate_first20":null},
+      {"source":"HH","region":"Samara","query":"operacionnyy direktor","visible_pool":84,"duplicate_early_reject_rate_first20":null},
+      {"source":"HH","region":"Rostov-on-Don","query":"kommercheskiy direktor","visible_pool":72,"duplicate_early_reject_rate_first20":null},
+      {"source":"HH","region":"Nizhny Novgorod","query":"direktor po razvitiyu","visible_pool":36,"duplicate_early_reject_rate_first20":null},
+      {"source":"Rabota.ru","region":"Sakhalin Oblast","query":"rukovoditel/operacionnyy direktor","visible_pool":1,"duplicate_early_reject_rate_first20":null},
+      {"source":"cross-board mirrors","region":"multiple","query":"executive/operational/commercial development roles","visible_pool":null,"duplicate_early_reject_rate_first20":null}
+    ],
+    "note": "First-20 duplicate+early-reject percentages were not reconstructed because stable employer-level ordering plus canonical status for all first 20 rows was not available from the indexed surfaces. Null is intentional."
+  },
+  "worker_funnel": {
+    "raw_distinct_employer_level_confirmed": null,
+    "fast_gate_pass": 5,
+    "deep_check": 5,
+    "size_pass": 2,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "ZVEZDA Спецтехники",
+      "legal_name": "ООО ПРОМСПЕЦАВТО",
+      "inn": "0277125289",
+      "ogrn": "1120280044521",
+      "region": "Республика Башкортостан, Уфа",
+      "website": "https://goodwork.su/",
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "0277125289",
+        "ogrn": "1120280044521",
+        "exact_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ ПРОМСПЕЦАВТО",
+        "brand_domain": "zvezda спецтехники|goodwork.su"
+      },
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 401821000,
+        "employees": 8,
+        "evidence_url": "https://companies.rbc.ru/id/1120280044521-ooo-promspetsavto/",
+        "secondary_evidence_url": "https://companium.ru/id/1120280044521-promspecavto"
+      },
+      "legal": {
+        "status": "PASS",
+        "active": true,
+        "brand_legal_mapping": "Official site identifies ООО ПромСпецАвто and publishes matching INN/OGRN; RBC trademark/registry evidence ties ZVEZDA trademarks to ООО ПромСпецАвто.",
+        "evidence_urls": [
+          "https://goodwork.su/kontakty/",
+          "https://companies.rbc.ru/id/1120280044521-ooo-promspetsavto/",
+          "https://companies.rbc.ru/trademark/1094704/zvezda-spetstehniki/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S2",
+        "signal_date": "2026-08-28",
+        "signal": "Fresh business-assistant vacancy states that the company director personally participates in business management, purchasing/foreign trade, marketing and finance, and is hiring to systematize the task flow, control agreements and drive important issues to completion. Earlier 2026 hiring evidence separately states sales volume +80% year over year, warehouse expansion and increasing supply volumes.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/202454/vakansii/136612262",
+          "https://nesiditsa.ru/vacancy/130688780"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "owner": "Макаров Юрий Витальевич",
+        "director": "Аскаров Вадим Фаритович",
+        "practical_lpr": "Аскаров Вадим Фаритович",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1120280044521-ooo-promspetsavto/",
+          "https://companium.ru/id/1120280044521-promspecavto"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official corporate route",
+        "phone": "8 800 511-68-85",
+        "email": "requests@goodwork.su",
+        "form": "official callback/contact form on goodwork.su",
+        "source_url": "https://goodwork.su/kontakty/",
+        "template_reconstruction_used": false
+      },
+      "qualification": {
+        "status": "QUALIFIED",
+        "consultation_hypothesis": "Operational systematization during rapid growth: reduce direct director involvement across purchasing/foreign trade, marketing and finance; formalize responsibility, management cadence and execution control before further scaling.",
+        "confidence": "high"
+      },
+      "repo_wide_dedup_before_stage": {
+        "checked_at_head": "0eb9f1dab84b69d5005ebe206f47ac19865c200b",
+        "queries": ["0277125289","1120280044521","ПРОМСПЕЦАВТО","goodwork.su"],
+        "matches_found": 0
+      }
+    }
+  ]
+}
