@@ -1,78 +1,8 @@
 {
   "run_id": "N5K-20260829-498R1",
   "updated_at": "2026-08-29T14:46:35+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "qualified_staged_not_counted": 1,
-  "funnel": {
-    "discovered": 180,
-    "fast_gate_passed": 10,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 179,
-    "physically_integrated": 0
-  },
-  "lane_metrics": [
-    {
-      "lane": "jobs_job_boards_career",
-      "raw": 80,
-      "fast_gate": 10,
-      "size": 2,
-      "signal": 1,
-      "qualified": 1
-    },
-    {
-      "lane": "industry_catalogs_exhibitions",
-      "raw": 100,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0
-    }
-  ],
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0673",
-      "Brand": "СБВ Утилизация",
-      "Legal Name": "ООО «СБВ УТИЛИЗАЦИЯ»",
-      "INN": "6658377374",
-      "OGRN/OGRNIP": "1116658002328",
-      "Region": "Свердловская область",
-      "City": "Екатеринбург",
-      "Segment": "B2B экологические услуги / утилизация отходов",
-      "Website": "https://sbv-ekb.ru/",
-      "Revenue/Scale": "Выручка 111,12 млн ₽ за 2025 год; 31 сотрудник; чистая прибыль 18,33 млн ₽; действующее ООО.",
-      "Signal Level": "S1",
-      "Signal Summary": "12.06.2026 опубликована актуальная вакансия операционного директора: второй человек в компании, полное операционное управление, масштабирование и систематизация бизнеса, производство, бюджетирование и EBITDA.",
-      "Signal Date": "2026-06-12",
-      "Signal Source": "https://h.careers/job/a166e9f4-892e-45da-8852-e9e6c61500ee",
-      "Owner": "Борисихин Александр Владимирович — 100%",
-      "CEO": "Борисихин Александр Владимирович",
-      "LPR": "Борисихин Александр Владимирович",
-      "LPR Role": "Директор и 100% учредитель / практический ЛПР",
-      "Primary Phone": "+7 (343) 288-79-79",
-      "Primary Email": "av@sbv-ekb.ru",
-      "HH Contact": "https://ekaterinburg.hh.ru/vacancies/operacionnyy_direktor",
-      "Contact Form": "https://sbv-ekb.ru/about/contacts",
-      "Contact Type": "официальные корпоративные маршруты",
-      "Contact Source": "официальный сайт СБВ Утилизация",
-      "Consulting Hypothesis": "Операционная система масштабирования: процессы, KPI, бюджетирование, EBITDA, производственный контур и вывод собственника из ежедневной операционки.",
-      "contacts": [
-        {"value":"+7 (343) 288-79-79","channel":"phone","type":"corporate","source":"официальный сайт СБВ Утилизация","url":"https://sbv-ekb.ru/about/contacts","is_lpr":false},
-        {"value":"av@sbv-ekb.ru","channel":"email","type":"corporate","source":"официальный сайт СБВ Утилизация","url":"https://sbv-ekb.ru/about/contacts","is_lpr":false},
-        {"value":"https://sbv-ekb.ru/about/contacts","channel":"web","type":"corporate","source":"официальный сайт СБВ Утилизация","url":"https://sbv-ekb.ru/about/contacts","is_lpr":false}
-      ],
-      "evidence": [
-        {"type":"LEGAL_SIZE","claim":"ООО «СБВ УТИЛИЗАЦИЯ», ИНН 6658377374, ОГРН 1116658002328, действует; выручка 111,12 млн ₽ за 2025 год; 31 сотрудник; чистая прибыль 18,33 млн ₽.","url":"https://b2b.house/company/OOO-SBV-UTILIZACIYA_1c03bc0f-99b4-4882-bdc2-4618251a6191/","source":"B2B.House"},
-        {"type":"LPR_OWNER","claim":"Борисихин Александр Владимирович — директор и 100% учредитель ООО «СБВ УТИЛИЗАЦИЯ».","url":"https://zachestnyibiznes.ru/company/ul/1116658002328_6658377374_OOO-SBV-UTILIZACIYa","source":"ЗаЧестныйБизнес"},
-        {"type":"SIGNAL","claim":"12.06.2026 опубликована вакансия операционного директора: второй человек в компании, полное операционное управление, масштабирование и систематизация бизнеса, производство, бюджетирование и EBITDA.","url":"https://h.careers/job/a166e9f4-892e-45da-8852-e9e6c61500ee","source":"H.Careers"},
-        {"type":"CONTACT_LEGAL","claim":"Официальный сайт публикует корпоративные телефон +7 (343) 288-79-79 и email av@sbv-ekb.ru.","url":"https://sbv-ekb.ru/about/contacts","source":"официальный сайт СБВ Утилизация"}
-      ]
-    }
-  ],
-  "notes": "Recovery/resume for PARTIAL_BLOCKED_METADATA_SYNC RUN 498. Fresh immutable worker pool after RUN 498: jobs 80 raw / 1 qualified; industry 100 raw / 0 qualified. Candidate rechecked against current canonical keys by INN, OGRN, exact legal name and brand+domain with no match found. Final physical integration guard remains authoritative. No outreach."
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260829-498R1 integrated physically; canonical/contactable 515/515; integrity PASS; orphan 0/0; outreach 0."
 }

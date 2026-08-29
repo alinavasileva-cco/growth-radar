@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0673,N5K-0673-C01,СБВ Утилизация,6658377374,,Корпоративный маршрут,+7 (343) 288-79-79,phone,corporate,официальный сайт СБВ Утилизация,https://sbv-ekb.ru/about/contacts,NO,HIGH,2026-08-29,,N5K-20260829-498R1,new_5000
+N5K-0673,N5K-0673-C02,СБВ Утилизация,6658377374,,Корпоративный маршрут,av@sbv-ekb.ru,email,corporate,официальный сайт СБВ Утилизация,https://sbv-ekb.ru/about/contacts,NO,HIGH,2026-08-29,,N5K-20260829-498R1,new_5000
+N5K-0673,N5K-0673-C03,СБВ Утилизация,6658377374,,Корпоративный маршрут,https://sbv-ekb.ru/about/contacts,web,corporate,официальный сайт СБВ Утилизация,https://sbv-ekb.ru/about/contacts,NO,HIGH,2026-08-29,,N5K-20260829-498R1,new_5000
