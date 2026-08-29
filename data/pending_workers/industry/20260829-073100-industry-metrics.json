@@ -1,0 +1,70 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-29T07:31:00+03:00",
+  "baseline_head": "9cc64f73644cab4ea42d4d2e2253a7c8d205c15f",
+  "config_version": "2026-08-29T07:02:56+03:00",
+  "canonical_snapshot": {"leads": 505, "contactable": 505, "integrity": "PASS"},
+  "dedup_keys_read": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "confirmed_brand_domain"],
+  "guards": {"canonical_writes": false, "outreach": false, "criteria_relaxed": false, "qualified": 0},
+  "funnel": {"RAW": 100, "FAST_GATE": 0, "SIZE": 0, "LEGAL": 0, "SIGNAL": 0, "LPR": 0, "CONTACT": 0, "QUALIFIED": 0},
+  "early_reject_policy": "Presence in an exhibition/catalogue is not an S1-S3 signal. Candidates without a probable fresh S1-S3 trigger from the cheap source-level check are not pushed into deep funnel.",
+  "lanes": [
+    {
+      "source": "UPAKEXPO 2026 participant catalogue",
+      "source_url": "https://2026.upakexpo-online.ru/expositions/exposition/137-upakexpo-2027.html",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_first20": true,
+      "raw_identities": ["1C:Полиграфия", "Август Борг, ООО", "АВТОЛЮКС-ПКО", "Адванс Пластик Инжиниринг, ООО", "Алеко, ГК", "Ангара", "Апрель, ООО", "АРТОН, печатный дом", "АСАП ФУД ЭКВИПМЕНТ", "Ассоциация Popai Russia", "Ассоциация технических университетов", "Балитех", "Берг Молд, ООО", "Берзенни мелхеми, Хозяйственное общество", "Бумажный дом", "ВАЛЕНТИНА ПАК, ООО", "Вальмо", "Веллпласт", "Веллтех, ООО", "Вестхим, ГК"]
+    },
+    {
+      "source": "АГРОПРОДМАШ-2026 Russia catalogue",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/a94ff0c2-5685-11f0-80d0-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=27",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_first20": true,
+      "raw_identities": ["НОВЭЛХИМ, ООО", "НХЛ ГРУППА КОМПАНИЙ", "ОБНИНСКИЕ ФИЛЬТРЫ, ООО", "ОКАНТПРОМ, ООО", "ОКОМА, ООО", "ОКПИ, ООО", "ОЛВИН, ООО", "ОЛЕРТ МАРКЕТИНГ, ООО", "ОЛМАГ", "ОМЕГА ФУД ТЕХНОЛОДЖИС, ООО", "ОМИА АЛГОЛ РУС, АО", "ОПТИРЕЙ, ООО", "ОРЕНКЛИП, ООО", "ОС-ТЕХНОЛОДЖИ, ООО", "ОСТПАК, ООО", "ПАКТЕХ, ООО", "ПАЛЕРОМ, ООО", "ПАМПУШКИН, ООО", "ПАНИНИ, ООО", "ПАРМАТЕК, ООО"]
+    },
+    {
+      "source": "ПРОДЭКСПО-2026 Russia catalogue",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=27",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_first20": true,
+      "raw_identities": ["БРЯНСКИЙ МОЛОЧНЫЙ КОМБИНАТ, ОАО", "БУГУЛЬМИНСКИЙ КОМБИНАТ ХЛЕБОПРОДУКТОВ № 1, ЗАО", "БУДЕТ СДЕЛАНО, ООО", "БУЗДЯКСКИЙ, ТМ (ПИЩЕПРОМ, АО)", "БУКЕТ ЧУВАШИИ, ОАО", "БЫКОВ И.И., ИП", "БЭЛЛЬ, ООО", "В.А.Ш. ШОКОЛАТЬЕ+, ООО", "ВАЙН СТОРИ, ООО", "ВАЙНФОРВАЙН", "ВАМИН, ГРУППА КОМПАНИЙ", "ВАНВИН ГРУПП, ООО", "ВАНСЛАД, ООО", "ВАРИАНТ, ООО", "ВАТСОН ТОРГОВАЯ КОМПАНИЯ, ООО", "ВЕДИ ТРЕЙД, ООО", "ВЕЙН УНД ВАССЕР, ООО", "ВЕЛЕС-АГРО, ООО", "ВЕЛКОМ", "ВЕЛЬД-21, ООО"]
+    },
+    {
+      "source": "CJF-ДЕТСКАЯ МОДА-ВЕСНА-2026 Russia catalogue",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/190a3ab0-1050-11f0-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=1",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_first20": true,
+      "raw_identities": ["7одёжек", "AAS SUPRUNOV", "ADENIUM", "ARCHE", "BABY SKY", "BADULE", "BASTIMENTO", "BOKKA", "BRINCO", "CHARMY white TM (Nikitina Nataliya Vladimirovna IE)", "CHICOBELLE", "DELORAS", "DIMARK", "dop", "FASHION X&S", "FIFLAND", "FOX-CUB", "G'n'K", "GLAMOROUS", "I LOVE TO PLAY"]
+    },
+    {
+      "source": "ШИНЫ, РТИ И КАУЧУКИ-2026 Russia catalogue",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d0464-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=2",
+      "raw": 20,
+      "duplicates_plus_early_rejects_first20": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_first20": true,
+      "raw_identities": ["АССОЦИАЦИЯ «ЭЛАСТОМЕРЫ»", "БЕНЕФИТ-ХИМ", "БИГМАШИН", "БМП ТЕХНОЛОДЖИ, ООО", "ВОЛГАШИНСЕРВИС, ООО", "ВОЛЖСКИЙ НАУЧНО-ТЕХНИЧЕСКИЙ КОМПЛЕКС (ФИЛИАЛ) ВОЛГГТУ", "ВОЛОЧОК ДМИТРИЙ ЕГОРОВИЧ, ИП", "ВОСТОЧНЫЙ ЭКСПРЕСС, ООО", "ВЭД АГЕНТ, АО", "ГЛОСПЕКТ, ООО", "ГРАНДТРЭК, ООО", "ГРУЗОВИК ПРЕСС, ЖУРНАЛ", "ДАВЫДОВО — КОМПАНИЯ ПО ПРОИЗВОДСТВУ ШИН", "ДАРВИН ПЛЮС", "ДОНТЕХРЕЗИНА И КО", "ЕНА-ВЕКТОР, АО", "ЗЕЛЕНАЯ РЕЗИНА, ООО", "ЗЕРМА ЛОММЕРС", "ИЗМА РУС, ООО", "ИНТЕРПОЛЕ, АО"]
+    }
+  ],
+  "notes": [
+    "100 identities are distinct within this worker pass after source-level de-duplication.",
+    "They are not claimed as 100 globally legal-key-resolved companies because cheap rejects were not pushed through LEGAL resolution.",
+    "All five lanes crossed the >70% duplicate+early-reject threshold within the first 20 and were stopped immediately.",
+    "No canonical master/contactable/contacts/evidence/runtime/campaign file was written. No outreach was performed."
+  ]
+}
