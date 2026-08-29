@@ -1,0 +1,135 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "source_head": "c09dfc7a8b7a3af3274e0b1241a83dbeae955c79",
+    "config_version": "2026-08-29T10:00:33+03:00",
+    "canonical_baseline": {
+      "master": 508,
+      "contactable": 508,
+      "last_completed_run": "N5K-20260829-494R1",
+      "integrity": "PASS"
+    },
+    "outreach_performed": false,
+    "canonical_writer_started": false,
+    "canonical_files_written": false,
+    "discovery": {
+      "raw_distinct_employer_candidates": 80,
+      "source_mix": [
+        "HH current executive/commercial leadership vacancy surfaces",
+        "Rabota.ru commercial / operations / development director surfaces",
+        "SuperJob vacancy signals",
+        "Habr Career B2B leadership vacancy surfaces",
+        "GetMatch leadership vacancy surfaces",
+        "current independent vacancy mirrors and employer career signals"
+      ],
+      "note": "80 different employer-level raw candidates were screened from low-overlap current job-board and vacancy-mirror surfaces. Exact per-lane first-20 duplicate+early-reject percentages were not reconstructed where the source surface did not preserve reliable employer-level dedup instrumentation; no invented saturation metrics are claimed. Saturated/ambiguous surfaces were switched rather than deep-checked repeatedly."
+    },
+    "funnel": {
+      "RAW": 80,
+      "FAST_GATE": 6,
+      "DEEP_CHECK": 3,
+      "SIZE": 2,
+      "LEGAL": 1,
+      "SIGNAL": 1,
+      "LPR": 1,
+      "CONTACT": 1,
+      "QUALIFIED": 1
+    },
+    "deep_check_notes": [
+      {
+        "candidate": "ООО «ТРАНСПРОМСТРОЙ», Санкт-Петербург",
+        "result": "REJECT_LEGAL",
+        "reason": "current sources show bankruptcy observation/proceeding; excluded before SIGNAL despite sufficient size"
+      },
+      {
+        "candidate": "ООО «ГЕФЕСТ-СТРОЙ», Новосибирск",
+        "result": "REJECT_BEFORE_SIZE",
+        "reason": "vacancy/employer signal could not be resolved to one current legal entity with sufficiently reliable current size evidence; no guessing"
+      }
+    ]
+  },
+  "qualified": [
+    {
+      "brand": "БЭГРИФ",
+      "legal_name": "ООО «БЭГРИФ»",
+      "city": "Бердск",
+      "region": "Новосибирская область",
+      "country": "Россия",
+      "inn": "5407206621",
+      "ogrn": "1025403215265",
+      "legal_status": "действующая организация",
+      "sme_category": "малое предприятие",
+      "industry": "производство лекарственных препаратов и материалов, применяемых в медицинских целях и ветеринарии",
+      "size": {
+        "revenue_2025_rub": 417100000,
+        "net_profit_2025_rub": 58300000,
+        "employees_2025": 61,
+        "revenue_growth_2025_percent": 111,
+        "evidence_url": "https://companium.ru/id/1025403215265-behgrif",
+        "secondary_evidence_url": "https://kontragent.skrin.ru/issuers/1025403215265"
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring",
+        "title": "Коммерческий директор (CCO)",
+        "date": "2026-08-05",
+        "description": "Фармацевтический производитель ищет коммерческого директора (CCO); в вакансии прямо указана задача формирования коммерческой стратегии через анализ текущей коммерческой деятельности. Вакансия индексировалась как активная в августе 2026 года.",
+        "evidence_urls": [
+          "https://gdejob.com/%D0%B1%D1%8D%D0%B3%D1%80%D0%B8%D1%84-%D0%B1%D0%B5%D1%80%D0%B4%D1%81%D0%BA-%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8",
+          "https://berdsk.cataloxy.ru/rabota/ct-60_roznichnaya-torgovlya.htm",
+          "https://www.obnzgklfsbru.jobvk.com/nvs/berdsk/begrif"
+        ]
+      },
+      "lpr": {
+        "name": "Тимофеев Сергей Иванович",
+        "role": "директор; единственный учредитель",
+        "evidence_urls": [
+          "https://companium.ru/id/1025403215265-behgrif",
+          "https://companies.rbc.ru/id/1025403215265-ooo-begrif/"
+        ]
+      },
+      "contact": {
+        "website": "https://bagrif.ru/",
+        "email": "bagrif@mail.ru",
+        "phone": "+7 (383) 212-59-73",
+        "contact_page": "https://bagrif.ru/index.php/contacts",
+        "additional_routes": [
+          "manager@bagrif.ru",
+          "snab@bagrif.ru",
+          "+7 (383) 258-18-81"
+        ],
+        "route_type": "official corporate website/email/phone/contact form"
+      },
+      "evidence_urls": [
+        "https://companium.ru/id/1025403215265-behgrif",
+        "https://companies.rbc.ru/id/1025403215265-ooo-begrif/",
+        "https://kontragent.skrin.ru/issuers/1025403215265",
+        "https://gdejob.com/%D0%B1%D1%8D%D0%B3%D1%80%D0%B8%D1%84-%D0%B1%D0%B5%D1%80%D0%B4%D1%81%D0%BA-%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8",
+        "https://berdsk.cataloxy.ru/rabota/ct-60_roznichnaya-torgovlya.htm",
+        "https://www.obnzgklfsbru.jobvk.com/nvs/berdsk/begrif",
+        "https://bagrif.ru/index.php/contacts"
+      ],
+      "dedup_keys": {
+        "inn": "5407206621",
+        "ogrn": "1025403215265",
+        "legal_name_exact": "ООО «БЭГРИФ»",
+        "brand_domain": "БЭГРИФ|bagrif.ru"
+      },
+      "dedup_checks": {
+        "pre_deep_check": "no canonical/repository match found for brand",
+        "pre_write_inn": "no canonical/repository match found for 5407206621",
+        "pre_write_ogrn": "no canonical/repository match found for 1025403215265",
+        "checked_against_source_head": "c09dfc7a8b7a3af3274e0b1241a83dbeae955c79"
+      },
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ]
+}
