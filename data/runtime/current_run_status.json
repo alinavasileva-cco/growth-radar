@@ -26,85 +26,25 @@
     "excluded": 7
   },
   "lane_metrics": [
-    {
-      "lane": "growth_news",
-      "raw": 8,
-      "fast_gate": 2,
-      "size": 2,
-      "legal": 2,
-      "signal": 2,
-      "lpr": 2,
-      "contact": 2,
-      "qualified": 2,
-      "duplicate_plus_early_reject": 6,
-      "qualified_raw_pct": 25.0,
-      "fast_gate_raw_pct": 25.0,
-      "note": "Productive fresh-news batch; raw counts distinct companies actually inspected, not search-result rows. NARTIS and Turbokomplekt were stopped on cheap physical dedup; Element/NTM/SIBUR/Larta were rejected early for fit/state/public/scale/reorganization constraints."
-    },
-    {
-      "lane": "jobs",
-      "raw": 1,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 1,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 0.0,
-      "note": "Probe candidate Dymov Ceramic was already canonical N5K-0353 and was stopped before deep-check."
-    },
-    {
-      "lane": "official_owner_ceo",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Used only for verification of already discovered candidates; not double-counted as raw."
-    },
-    {
-      "lane": "industry_catalogs",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Cooldown/probe-only; no deep-check budget spent because recent measured runs were zero-yield."
-    },
-    {
-      "lane": "experimental_low_overlap",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    }
+    {"lane":"growth_news","raw":8,"fast_gate":2,"size":2,"legal":2,"signal":2,"lpr":2,"contact":2,"qualified":2,"duplicate_plus_early_reject":6,"qualified_raw_pct":25.0,"fast_gate_raw_pct":25.0,"note":"Fresh-news batch of distinct companies actually inspected; no search-result-row inflation."},
+    {"lane":"jobs","raw":1,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":1,"qualified_raw_pct":0.0,"fast_gate_raw_pct":0.0,"note":"Dymov Ceramic stopped on physical duplicate N5K-0353 before deep-check."},
+    {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Verification-only; not double-counted as raw."},
+    {"lane":"industry_catalogs","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Cooldown/probe-only; no deep-check budget spent."},
+    {"lane":"experimental_low_overlap","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
   ],
-  "qualified_companies": [
-    "SemiTEq / НТО",
-    "Элтекс"
-  ],
+  "efficiency_control": {
+    "current_measured_raw": 9,
+    "current_qualified_raw_pct": 22.2222,
+    "current_fast_gate_raw_pct": 22.2222,
+    "previous_hour_comparison": "Previous RUN 505R1 has jobs raw=22 but growth/news raw denominator was intentionally null; therefore an exact all-lane previous-hour qualified/raw and fast/raw cannot be reconstructed without inventing data.",
+    "previous_known_lane_metrics": {
+      "N5K-20260829-505R1": {"jobs":{"raw":22,"fast_gate":6,"size":2,"signal":1,"qualified":1,"qualified_raw_pct":4.5455,"fast_gate_raw_pct":27.2727},"growth_news":{"raw":null,"fast_gate":3,"size":2,"signal":1,"qualified":1,"qualified_raw_pct":null,"fast_gate_raw_pct":null}},
+      "older_run_note": "Where earlier lane denominators are absent from authoritative runtime/report, they are not reconstructed."
+    },
+    "decision": "Net-new qualified is 2 (<5), so prior allocation is not repeated automatically. Growth/news is boosted because current measured q/raw=25%; jobs remains a 5% probe due duplicate saturation; industry remains <=5% probe-only/no deep-check; official-owner-CEO gets 30% independent discovery budget next RUN; experimental remains 5%.",
+    "next_distribution_pct": {"jobs":5,"growth_news":55,"official_owner_ceo":30,"industry_catalogs_max":5,"experimental_low_overlap":5}
+  },
+  "qualified_companies": ["SemiTEq / НТО","Элтекс"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
