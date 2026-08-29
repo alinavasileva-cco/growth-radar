@@ -1,0 +1,5 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0677,N5K-0677-E01,LEGAL,"ООО «ПРОСТО», ИНН 1841039706, ОГРН 1141841001158, действует; директор Петухов Алексей Валерьевич.",https://saby.ru/profile/1841039706-183101001,Saby,2026-08-29T19:47:43+03:00,HIGH,N5K-20260829-503R1,new_5000
+N5K-0677,N5K-0677-E02,SIZE,"Выручка за 2025 год 680,754 млн ₽; 196 сотрудников.",https://www.tbank.ru/business/contractor/legal/1141841001158/,Т-Банк Бизнес,2026-08-29T19:47:43+03:00,HIGH,N5K-20260829-503R1,new_5000
+N5K-0677,N5K-0677-E03,SIGNAL,03.08.2026 вакансия Коммерческого директора (CCO) с задачами коммерческого управления и развития.,https://dreamjob.ru/employers/136859/vakansii/135837126,DreamJob,2026-08-29T19:47:43+03:00,HIGH,N5K-20260829-503R1,new_5000
+N5K-0677,N5K-0677-E04,CONTACT,"Официальные корпоративные телефон, email и contact route.",https://programstore.ru/contacts,Programming Store,2026-08-29T19:47:43+03:00,HIGH,N5K-20260829-503R1,new_5000

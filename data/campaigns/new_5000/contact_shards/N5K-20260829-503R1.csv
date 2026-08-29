@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0677,N5K-0677-C01,Programming Store,1841039706,,Корпоративный маршрут,8 800 600-25-01,phone,official_corporate,Programming Store official contacts,https://programstore.ru/contacts,NO,HIGH,2026-08-29,Официальный корпоративный телефон.,N5K-20260829-503R1,new_5000
+N5K-0677,N5K-0677-C02,Programming Store,1841039706,,Корпоративный маршрут,+7 (3412) 97-24-23,phone,official_corporate,Programming Store official contacts,https://programstore.ru/contacts,NO,HIGH,2026-08-29,Официальный офисный телефон.,N5K-20260829-503R1,new_5000
+N5K-0677,N5K-0677-C03,Programming Store,1841039706,,Корпоративный маршрут,site@programstore.ru,email,official_corporate,Programming Store official contacts,https://programstore.ru/contacts,NO,HIGH,2026-08-29,Официальный корпоративный email.,N5K-20260829-503R1,new_5000
