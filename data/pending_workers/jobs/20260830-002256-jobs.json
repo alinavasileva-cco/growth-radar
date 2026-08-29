@@ -1,0 +1,105 @@
+{
+  "worker": "jobs",
+  "lane": "jobs",
+  "created_at": "2026-08-30T00:22:56+03:00",
+  "baseline_head": "737ba771d770d1160c64f6e73ad04088afe987ad",
+  "config_version": "2026-08-29T23:01:35+03:00",
+  "canonical_contactable_baseline": 526,
+  "criteria_unchanged": true,
+  "canonical_writer_run": false,
+  "outreach_performed": false,
+  "discovery": {
+    "raw_target_min": 140,
+    "raw_target_max": 150,
+    "raw_employer_distinct_brand_level": 140,
+    "target_met": true,
+    "counting_note": "Seven new regional HH batches were capped at 20 employer names each and de-overlapped by employer name within this worker pass. Cheap rejects were not force-resolved to INN/OGRN solely to manufacture exact legal-key lane rates.",
+    "source_batches": [
+      {"source":"HH","region":"Омск","query":"коммерческий директор","raw_distinct":20,"url":"https://omsk.hh.ru/vacancies/kommercheskiy_direktor","duplicate_early_reject_rate":null,"rate_note":"Exact legal-key rate not reconstructed for cheap rejects; batch capped at 20 and rotated."},
+      {"source":"HH","region":"Пермь","query":"операционный директор","raw_distinct":20,"url":"https://perm.hh.ru/vacancies/operacionnyy_direktor","duplicate_early_reject_rate":null,"rate_note":"Exact legal-key rate not reconstructed for cheap rejects; batch capped at 20 and rotated."},
+      {"source":"HH","region":"Челябинск","query":"директор по развитию","raw_distinct":20,"url":"https://chelyabinsk.hh.ru/vacancies/direktor_po_razvitiyu","duplicate_early_reject_rate":null,"rate_note":"Exact legal-key rate not reconstructed for cheap rejects; obvious public/large/recruiter listings early-rejected."},
+      {"source":"HH","region":"Воронеж","query":"исполнительный директор","raw_distinct":20,"url":"https://voronezh.hh.ru/vacancies/ispolnitelnyy_direktor","duplicate_early_reject_rate":null,"rate_note":"Exact legal-key rate not reconstructed for cheap rejects; batch capped at 20 and rotated."},
+      {"source":"HH","region":"Тюмень","query":"коммерческий директор","raw_distinct":20,"url":"https://tyumen.hh.ru/vacancies/kommercheskiy_direktor","duplicate_early_reject_rate":null,"rate_note":"Exact legal-key rate not reconstructed for cheap rejects; batch capped at 20 and rotated."},
+      {"source":"HH","region":"Нижний Новгород","query":"директор по стратегическому развитию и маркетингу","raw_distinct":20,"url":"https://nn.hh.ru/vacancies/direktor-po-strategicheskomu-razvitiyu-i-marketingu","duplicate_early_reject_rate":null,"rate_note":"Exact legal-key rate not reconstructed for cheap rejects; batch capped at 20 and rotated."},
+      {"source":"HH","region":"Челябинск","query":"business development director","raw_distinct":20,"url":"https://chelyabinsk.hh.ru/vacancies/business_development_director/za_sutki","duplicate_early_reject_rate":null,"rate_note":"Small fresh-query surface supplemented with adjacent current development listings; only distinct employer names counted."}
+    ]
+  },
+  "worker_funnel": {
+    "raw": 140,
+    "fast_gate": 6,
+    "deep_check": 4,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "deep_check_rejects": [
+    {"brand":"Юридическая защита ПРО","stage":"SIZE","reason":"Current legal entity registered in 2025 has insufficient current financial/employee evidence for strict SIZE despite an operational-growth vacancy signal; not promoted."},
+    {"brand":"ЭКРИ","stage":"SIZE/LEGAL","reason":"Vacancy signal is strong, but current scale/legal mapping was not sufficiently verified in this pass; not promoted on incomplete evidence."},
+    {"brand":"ТД ЖБС","stage":"SIZE/LEGAL","reason":"Current vacancy signal exists, but strict current scale and exact legal mapping were not both confirmed in this pass."}
+  ],
+  "qualified": [
+    {
+      "brand": "Неокомпозит-Тюмень",
+      "legal_name": "ООО \"НЕОКОМПОЗИТ-ТЮМЕНЬ\"",
+      "legal_short_name": "ООО \"НЕОКОМ-ТМН\"",
+      "inn": "7204177457",
+      "ogrn": "1127232004921",
+      "region": "Тюменская область, Тюмень",
+      "legal_status": "Действующая",
+      "director": "Коротовских Максим Владимирович",
+      "owner_lpr": "Коротовских Максим Владимирович",
+      "owner_role": "генеральный директор; practical LPR for company-level commercial transformation",
+      "owners": ["Окаев Эльмуди Омранович", "АО \"Неокомпозит\""],
+      "size": {
+        "revenue_rub": 105002000,
+        "revenue_period": "2025",
+        "employees": 9,
+        "size_decision": "PASS",
+        "evidence_url": "https://companies.rbc.ru/id/1127232004921-ooo-fratril/"
+      },
+      "signal": {
+        "level": "S1",
+        "title": "Коммерческий директор (CCO)",
+        "date": "2026-08-09",
+        "summary": "Компания ищет CCO для аудита и развития федеральных сетей, маркетплейсов, дилерских и розничных каналов, запуска новых ниш и каналов сбыта, синхронизации продаж с производством и складом и формирования коммерческой команды.",
+        "vacancy_url": "https://dreamjob.ru/employers/141513/vakansii/135842959"
+      },
+      "contact": {
+        "contact_type": "official corporate route",
+        "phone_primary": "8 800 222 33 72",
+        "phone_hr": "+7 922 045-08-50",
+        "email_primary": "info@neocomposite.ru",
+        "email_sales": "retail@neocomposite.ru",
+        "website": "https://neocomposite.ru/",
+        "contact_url": "https://neocomposite.ru/kontakty/",
+        "route_note": "Use published corporate contact center/email and request transfer to генеральный директор Коротовских Максим Владимирович or responsible commercial transformation decision-maker; no guessed personal contact used."
+      },
+      "brand_legal_mapping": {
+        "decision": "PASS",
+        "basis": "Vacancy employer is explicitly Неокомпозит-Тюмень; current legal record is ООО НЕОКОМПОЗИТ-ТЮМЕНЬ / ООО НЕОКОМ-ТМН in Tyumen, and the operating brand uses neocomposite.ru with matching Tyumen production/contact footprint.",
+        "legal_evidence_url": "https://companies.rbc.ru/id/1127232004921-ooo-fratril/",
+        "secondary_legal_evidence_url": "https://check.tochka.com/company/1127232004921/"
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/141513/vakansii/135842959",
+        "https://companies.rbc.ru/id/1127232004921-ooo-fratril/",
+        "https://star-pro.ru/proverka-kontragenta/organization/1127232004921--ooo-neokompozit-tyumen",
+        "https://check.tochka.com/company/1127232004921/",
+        "https://neocomposite.ru/kontakty/"
+      ],
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7204177457",
+        "ogrn": "1127232004921",
+        "exact_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"НЕОКОМПОЗИТ-ТЮМЕНЬ\"",
+        "brand_domain": "Неокомпозит-Тюмень|neocomposite.ru"
+      },
+      "dedup_pre_deep_check": "PASS_NO_MATCH",
+      "dedup_pre_staging": "PASS_NO_MATCH",
+      "qualification_decision": "QUALIFIED"
+    }
+  ]
+}
