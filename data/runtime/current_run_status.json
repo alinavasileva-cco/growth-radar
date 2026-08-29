@@ -10,7 +10,8 @@
     "current_canonical_count": 516,
     "current_contactable_count": 516,
     "progress_added": 1,
-    "remaining": 4484
+    "remaining": 4484,
+    "remaining_to_1000": 484
   },
   "funnel": {
     "discovered": 20,
@@ -23,7 +24,7 @@
     "qualified": 1,
     "duplicates": 0,
     "excluded": 19,
-    "physically_integrated": 0
+    "physically_integrated": 1
   },
   "lane_metrics": [
     {
@@ -35,7 +36,7 @@
       "qualified": 1,
       "duplicate_plus_early_reject": 14,
       "qualified_raw": 0.05,
-      "fast_gate_raw": 0.3
+      "fast_gate_raw": 0.30
     },
     {
       "lane": "jobs_job_boards_career",
@@ -47,7 +48,7 @@
       "duplicate_plus_early_reject": 0,
       "qualified_raw": null,
       "fast_gate_raw": null,
-      "note": "No new own jobs discovery counted in this run; the 14:22 worker batch was already physically represented in completed RUN 498R1 and is not double-counted."
+      "note": "No new jobs raw counted: the 14:22 immutable worker batch was already represented in completed RUN 498R1."
     },
     {
       "lane": "industry_catalogs_exhibitions",
@@ -59,7 +60,7 @@
       "duplicate_plus_early_reject": 0,
       "qualified_raw": null,
       "fast_gate_raw": null,
-      "note": "No new industry raw counted; the 14:26 worker batch of 100/0 was already represented in RUN 498R1 and is not double-counted. Lane remains probe-only after repeated zero yield."
+      "note": "No new industry raw counted: the 14:26 immutable worker batch 100/0 was already represented in RUN 498R1. Lane remains probe-only/no deep-check."
     },
     {
       "lane": "official_company_owner_ceo",
@@ -71,7 +72,7 @@
       "duplicate_plus_early_reject": 0,
       "qualified_raw": null,
       "fast_gate_raw": null,
-      "note": "Official sources were used to verify the growth-news candidate, not double-counted as discovery raw."
+      "note": "Official sources were used for verification and were not double-counted as raw discovery."
     },
     {
       "lane": "experimental_low_overlap",
@@ -85,13 +86,87 @@
       "fast_gate_raw": null
     }
   ],
-  "qualified_companies": [
-    "АФС-Технологии / ГК ХимРар"
+  "efficiency_history": [
+    {
+      "run_id": "N5K-20260829-496R1",
+      "raw": 200,
+      "fast_gate": 9,
+      "qualified": 1,
+      "qualified_raw": 0.005,
+      "fast_gate_raw": 0.045
+    },
+    {
+      "run_id": "N5K-20260829-497R1",
+      "raw": 188,
+      "fast_gate": 7,
+      "qualified": 1,
+      "qualified_raw": 0.005319,
+      "fast_gate_raw": 0.037234
+    },
+    {
+      "run_id": "N5K-20260829-498R1",
+      "raw": 180,
+      "fast_gate": 10,
+      "qualified": 1,
+      "qualified_raw": 0.005556,
+      "fast_gate_raw": 0.055556
+    },
+    {
+      "run_id": "N5K-20260829-499",
+      "raw": 20,
+      "fast_gate": 6,
+      "qualified": 1,
+      "qualified_raw": 0.05,
+      "fast_gate_raw": 0.30
+    }
   ],
+  "lane_history_last_3_plus_current": {
+    "jobs_job_boards_career": [
+      {"run_id":"N5K-20260829-496R1","raw":80,"fast_gate":5,"size":2,"signal":1,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0625},
+      {"run_id":"N5K-20260829-497R1","raw":80,"fast_gate":3,"size":2,"signal":1,"qualified":1,"qualified_raw":0.0125,"fast_gate_raw":0.0375},
+      {"run_id":"N5K-20260829-498R1","raw":80,"fast_gate":10,"size":2,"signal":1,"qualified":1,"qualified_raw":0.0125,"fast_gate_raw":0.125},
+      {"run_id":"N5K-20260829-499","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null}
+    ],
+    "industry_catalogs_exhibitions": [
+      {"run_id":"N5K-20260829-496R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0},
+      {"run_id":"N5K-20260829-497R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0},
+      {"run_id":"N5K-20260829-498R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0},
+      {"run_id":"N5K-20260829-499","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null}
+    ],
+    "growth_expansion_investment_business_change_news": [
+      {"run_id":"N5K-20260829-496R1","raw":20,"fast_gate":4,"size":2,"signal":2,"qualified":1,"qualified_raw":0.05,"fast_gate_raw":0.20},
+      {"run_id":"N5K-20260829-497R1","raw":8,"fast_gate":4,"size":1,"signal":1,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.50},
+      {"run_id":"N5K-20260829-498R1","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
+      {"run_id":"N5K-20260829-499","raw":20,"fast_gate":6,"size":1,"signal":1,"qualified":1,"qualified_raw":0.05,"fast_gate_raw":0.30}
+    ]
+  },
+  "efficiency_change_vs_previous_hour": {
+    "qualified_raw_percentage_points": 4.4444,
+    "fast_gate_raw_percentage_points": 24.4444,
+    "note": "Current sample is only 20 raw and is not extrapolated as a stable long-run conversion."
+  },
+  "adaptive_decision": {
+    "cut_or_capped": [
+      "jobs_job_boards_career: own discovery remains capped at 5% because repeated duplicate+early-reject saturation exceeds 70%, despite recent qualified results",
+      "industry_catalogs_exhibitions: max 5%, probe-only/no deep-check after repeated 0 qualified and fast_gate/raw 0%"
+    ],
+    "increased": [
+      "growth_expansion_investment_business_change_news: increased to 60% after current 5.0% qualified/raw and 30.0% fast_gate/raw; cap of 60% respected"
+    ],
+    "next_run_distribution": {
+      "jobs_job_boards_career": 0.05,
+      "growth_expansion_investment_business_change_news": 0.60,
+      "official_company_owner_ceo": 0.25,
+      "industry_catalogs_exhibitions": 0.05,
+      "experimental_low_overlap": 0.05
+    }
+  },
+  "qualified_companies": ["АФС-Технологии / ГК ХимРар"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "516_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "516_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
