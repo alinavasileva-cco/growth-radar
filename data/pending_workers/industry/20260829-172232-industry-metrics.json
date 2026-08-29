@@ -1,0 +1,93 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-29T17:22:32+03:00",
+  "baseline_head": "5df7e3d8d697f0ef1ef67c4a12ffcbc7dbed57ca",
+  "config_version": "2026-08-29T17:06:00+03:00",
+  "canonical_snapshot": {
+    "physical_master": 516,
+    "physical_contactable": 516,
+    "integrity": "PASS",
+    "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"]
+  },
+  "guards": {
+    "canonical_writes": false,
+    "contacts_writes": false,
+    "evidence_writes": false,
+    "runtime_writes": false,
+    "campaign_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "exhibition_presence_is_signal": false,
+    "stale_records_excluded_from_positive_decisions": true
+  },
+  "worker_funnel": {
+    "raw": 100,
+    "normalized_distinct": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "notes": [
+    "All five discovery batches were stopped after the first 20 because duplicate+early-reject exceeded 70%.",
+    "Foreign entities were rejected at the cheap Russia/private-company gate when country was explicit.",
+    "For Russian source identities, exhibition/catalog presence alone was not treated as an S1-S3 signal; no candidate was promoted without a separate probable qualifying signal.",
+    "Early rejects were not forced through full legal-key resolution, so these are 100 distinct source identities for this worker pass, not a claim of 100 globally legal-key-resolved legal entities."
+  ],
+  "batches": [
+    {
+      "source": "ЭЛЕКТРО-2026",
+      "source_url": "https://www.elektro-expo.ru/ru/exhibition/exhibitors/",
+      "source_date": "2026-05-14",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "identities": ["ABSOLITE","ACRELE-BUSINESS (SHANGHAI) CO. LTD","AGIS PROFILE","AKİŞ PLASTİK PROF ELEKTRİK SAN. VE TİC. LTD. ŞTİ.","ANDELI","AOKO GLOBAL LIMITED","ASIAON ELECTRIC CO. LTD","BAOYU HOLDING CO. LTD","BEISIT ELECTRIC TECH (HANGZHOU) CO. LTD","BEMIS TECHNICAL ELECTRIC INC.","ÇAĞDAŞ PANO ELEKTRİK A.Ş.","ÇETİNKAYA PANO SAC TABLO VE PLASTİK SAN. TİC. A.Ş.","CHANGYOU TECHNOLOGY (ZHEJIANG) CO. LTD","CHAORUI ELECTRIC CO. LTD","CHENGDU ALTAIR INTERNATIONAL TRADING CO. LTD","CHINA ZBB GROUP SHANGHAI TRANSFORMER CO. LTD","CIXI WANJIE ELECTRONIC CO. LTD","CNC ELECTRIC","CYLON ELECTRICAL INDUSTRY GROUP","DEKRON"]
+    },
+    {
+      "source": "ИНЛЕГМАШ-2026",
+      "source_url": "https://www.inlegmash-expo.ru/ru/exhibition/exhibitors/",
+      "source_date": "2026-03-02",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "identities": ["AKBAS PLASTIK SANAYI VE TICARET","BENEKS TAAH. MUH. MUM. MAKINE","BIÇAKSAN MAKINA TAKIM SANAYI TICARET","CHANGSHU FEILONG NONWOVEN MACHINERY","CHANGSHU ZHENTAI NONWOVEN MACHINERY","CHANGZHOU LONGLONGSHENG WARP KNITTING MACHINERY","CHINA TEXMATECH","COSMOS GLOBAL","DALIAN HUAYANG NEW MATERIALS TECHNOLOGY","DEMSAN TEKSTIL MAKINA SANAYI TICARET","DONGYANG AOLONG NONWOVEN EQUIPMENT","DOPSING","ELTEKSMAK MAKİNE ANONİM ŞİRKETİ","ENHAS MAKINA SANAYI VE TICARET","FONGS EUROPE","FOSHAN NANHAI RONGJU MACHINERY","FUJIAN YONTHIN DIGITAL CONTROL TECHNOLOGY","GREAT TEX","GUANGZHOU YONG JIN MACHINERY","HANGZHOU XIONGYUE TECHNOLOGY"]
+    },
+    {
+      "source": "ИНТЕРЛАКОКРАСКА-2026",
+      "source_url": "https://www.interlak-expo.ru/ru/exhibition/exhibitors/",
+      "source_date": "2026-01-28",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "identities": ["АВИАЦИОННЫЕ ЛАКОКРАСОЧНЫЕ ТЕХНОЛОГИИ","АВИВИР","АВК-ХИМ","АВТОГРАФ ПРОМЫШЛЕННЫЕ ТЕХНОЛОГИИ","АГЕТТ","АКРИТЕХ","АЛИСТЕРУС","АЛЛНЕКС БЕЛГОРОД","АНКАР","АРТ ИНДУСТРИЯ","АССОЦИАЦИЯ ЭКСПОРТЕРОВ И ИМПОРТЕРОВ","АСТРОЙСЕРВИС","АФАЯ","БЕЛ ПЕКА","БЕЛНЕФТЕХИМ-РОС","БЛЕСТЯЩАЯ ЛИНИЯ","БОЯСАН","БСК ТЕХНОЛОДЖИ","ВЕКТОР","ВЕКТОР ПОЛИМЕР"]
+    },
+    {
+      "source": "СВЯЗЬ-2026",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/190a3aba-1050-11f0-80ce-a0d3c1fab97f",
+      "source_date": "2026",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "identities": ["2TEST, ООО","A3-COM","ANHUI TIANJI INFORMATION TECHNOLOGY CO. LTD","BEIJING GENGYUN ERA TECHNOLOGY CO. LTD","BEIJING GUANG RUN TONG TECHNOLOGY DEVELOPMENT CO. LTD","BEIJING GUANGTIAN RUNZE TECHNOLOGY CO. LTD","BEIJING HENGZHENGTC SCI-TECH CO. LTD","BEIJING RUICHUANG SHENGWEI TECHNOLOGY CO. LTD","BEIJING TONGRUIDA INFORMATION TECHNOLOGY CO. LTD","CHANGZHOU EVERNEICABLE ELECTRON CS CO. LTD","CHANGZHOU LINKET ELECTRONIC TECHNOLOGY CO. LTD","CHENGDU BEARING NEW MACHINERY EQUIPMENT CO. LTD","CHENGDU CORESAT TECHNOLOGY CO. LTD","CHENGDU HENG CHENG PHOTOELECTRIC TECHNOLOGY CO. LTD","CHENGDU XR TECHNOLOGY CO. LTD","COBTEL PRECISION ELECTRONICS CO. LTD","CYBERBOOK","D-FLY","DEEPBLUE TELECOM EQUIPMENT (NANJING) CO. LTD","DIVITEC"]
+    },
+    {
+      "source": "НЕФТЕГАЗ-2026",
+      "source_url": "https://www.elec.ru/news/2025/11/17/uspejte-podat-zayavku-na-uchastie-v-vystavke-nefte.html",
+      "source_date": "2025-11-17",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "identities": ["Атомик Софт","НПО АвалонЭлектроТех","ПК АНЕКО","Боровичский комбинат огнеупоров","DFHK","НПО Взор / Спецмаш","ВЭЛАН","НПП Герда","ЗАВОД ГОРЭЛТЕХ","ЕМК","Инновационная Промышленная Компания","ИРЗ-ТЭК","Краснодарский компрессорный завод","Коломенский завод","ДС Контролз","КЭАЗ","Нефть","Подольский машиностроительный завод","Росма","Рубеж"]
+    }
+  ]
+}
