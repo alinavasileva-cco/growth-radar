@@ -1,0 +1,114 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "source_head": "567951061dae5d3c977c256627673abbf7be7333",
+    "config_version": "2026-08-29T08:57:31+03:00",
+    "canonical_baseline": {
+      "master": 507,
+      "contactable": 507,
+      "last_completed_run": "N5K-20260829-493",
+      "integrity": "PASS"
+    },
+    "outreach_performed": false,
+    "canonical_writer_started": false,
+    "canonical_files_written": false,
+    "discovery": {
+      "raw_distinct_employer_candidates": 80,
+      "source_mix": [
+        "HH Moscow commercial/operations leadership search",
+        "HH Saint Petersburg commercial leadership search",
+        "HH Novosibirsk commercial leadership search",
+        "HH Ekaterinburg development leadership search",
+        "Rabota.ru commercial-director surfaces",
+        "Habr Career leadership vacancy surfaces",
+        "GetMatch leadership vacancy surfaces",
+        "independent vacancy mirrors / company career signals"
+      ],
+      "note": "80 different employer-level raw candidates were screened from current job-board result surfaces. Exact per-lane first-20 duplicate+early-reject percentages were not reconstructed where the source surface did not preserve reliable dedup instrumentation; no invented lane metrics are claimed."
+    },
+    "funnel": {
+      "RAW": 80,
+      "FAST_GATE": 6,
+      "DEEP_CHECK": 2,
+      "SIZE": 1,
+      "LEGAL": 1,
+      "SIGNAL": 1,
+      "LPR": 1,
+      "CONTACT": 1,
+      "QUALIFIED": 1
+    }
+  },
+  "qualified": [
+    {
+      "brand": "Ариэль Инокс",
+      "legal_name": "ООО «АРИЭЛЬ ИНОКС»",
+      "city": "Москва",
+      "country": "Россия",
+      "inn": "9702069850",
+      "ogrn": "1247700583052",
+      "legal_status": "действующая организация",
+      "sme_category": "средний бизнес",
+      "size": {
+        "revenue_2025_rub": 2853260000,
+        "net_profit_2025_rub": 39648000,
+        "revenue_2024_rub": 921610000,
+        "evidence_url": "https://b2b.house/company/OOO-ARIEL-INOKS_f732494e-5845-47b4-816e-28082e56a849/",
+        "secondary_evidence_url": "https://www.tbank.ru/business/contractor/legal/1247700583052/"
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring",
+        "title": "Операционный директор",
+        "date": "2026-08-24",
+        "description": "Компания ищет операционного директора как одного из ключевых руководителей и партнера генерального директора для реализации стратегии развития бизнеса; в текущей HH-индексации роль включает повышение эффективности коммерческих процессов, KPI и трансформацию бизнес-процессов.",
+        "evidence_urls": [
+          "https://facancy.ru/vacancies/operatsionnyi-direktor-v-kompaniiu-postavshchik-vysokokachestvennykh-izdelii-iz-nerzhaveiushchei-stali-i-metalloprokata-ariel-inoks",
+          "https://hh.ru/vacancies/rukovoditel_proektov_vnedreniya/ot_pryamih_rabotodateley"
+        ]
+      },
+      "lpr": {
+        "name": "Брайнис Вадим Владимирович",
+        "role": "генеральный директор; основной участник",
+        "ownership_share_percent": 79,
+        "effective_from": "2025-11-13",
+        "evidence_url": "https://www.tbank.ru/business/contractor/legal/1247700583052/"
+      },
+      "contact": {
+        "website": "https://arielinox.ru/",
+        "email": "info@arielinox.ru",
+        "phone": "+7 (495) 147-22-00",
+        "contact_page": "https://arielinox.ru/company/",
+        "official_requisites_page": "https://arielinox.ru/info/",
+        "route_type": "official corporate email/phone/site"
+      },
+      "evidence_urls": [
+        "https://b2b.house/company/OOO-ARIEL-INOKS_f732494e-5845-47b4-816e-28082e56a849/",
+        "https://www.tbank.ru/business/contractor/legal/1247700583052/",
+        "https://facancy.ru/vacancies/operatsionnyi-direktor-v-kompaniiu-postavshchik-vysokokachestvennykh-izdelii-iz-nerzhaveiushchei-stali-i-metalloprokata-ariel-inoks",
+        "https://hh.ru/vacancies/rukovoditel_proektov_vnedreniya/ot_pryamih_rabotodateley",
+        "https://arielinox.ru/company/",
+        "https://arielinox.ru/info/"
+      ],
+      "dedup_keys": {
+        "inn": "9702069850",
+        "ogrn": "1247700583052",
+        "legal_name_exact": "ООО «АРИЭЛЬ ИНОКС»",
+        "brand_domain": "Ариэль Инокс|arielinox.ru"
+      },
+      "dedup_checks": {
+        "pre_deep_check": "no canonical match found",
+        "pre_write": "no canonical match found",
+        "checked_against_source_head": "567951061dae5d3c977c256627673abbf7be7333"
+      },
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ]
+}
