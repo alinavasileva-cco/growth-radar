@@ -1,0 +1,202 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-29T06:34:00+03:00",
+    "baseline": {
+      "head": "7bb2b32e64116f5a9a8f539b7d83ee635e2d77c6",
+      "last_completed_run": "N5K-20260829-490",
+      "canonical_count": 504,
+      "contactable_count": 504,
+      "integrity": "PASS"
+    },
+    "canonical_write": false,
+    "canonical_writer_started": false,
+    "outreach": false
+  },
+  "source_policy": {
+    "raw_target": "80-150 distinct low-overlap employer-level candidates",
+    "raw_distinct": 80,
+    "sources_used": [
+      "HH current regional vacancy surfaces: Chelyabinsk, Kazan, Rostov-on-Don, Izhevsk",
+      "Rabota.ru current director/development vacancy surfaces",
+      "Habr Career current Head of Sales vacancy surface",
+      "current multi-board vacancy indexes used only for dated signal confirmation"
+    ],
+    "lane_metrics": [
+      {
+        "lane": "HH Chelyabinsk / commercial director",
+        "first_20_raw": 20,
+        "duplicates_plus_early_rejects": 17,
+        "rate": 0.85,
+        "action": "STOP_AND_SWITCH"
+      },
+      {
+        "lane": "HH Kazan / commercial director",
+        "first_20_raw": 20,
+        "distinct_employers_in_first_20": 19,
+        "duplicates_plus_early_rejects": 16,
+        "rate": 0.80,
+        "action": "STOP_AND_SWITCH"
+      },
+      {
+        "lane": "HH Rostov-on-Don / operating director",
+        "first_20_raw": 20,
+        "duplicates_plus_early_rejects": 17,
+        "rate": 0.85,
+        "action": "STOP_AND_SWITCH"
+      },
+      {
+        "lane": "HH Izhevsk / commercial director full day",
+        "first_20_raw": 20,
+        "distinct_employers_in_first_20": 17,
+        "duplicates_plus_early_rejects": 11,
+        "rate": 0.55,
+        "action": "CONTINUE_ELIGIBLE"
+      },
+      {
+        "lane": "Rabota.ru + Habr Career low-overlap switch",
+        "raw_distinct_used_to_complete_pool": 4,
+        "action": "FAST_GATE_ONLY"
+      }
+    ],
+    "source_urls": [
+      "https://chelyabinsk.hh.ru/vacancies/kommercheskiy_direktor",
+      "https://kazan.hh.ru/vacancies/kommercheskiy_direktor",
+      "https://rostov.hh.ru/vacancies/operacionnyy_direktor",
+      "https://izhevsk.hh.ru/vacancies/kommercheskiy_direktor/polniy_den",
+      "https://www.rabota.ru/vacancy/%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%20%D0%BF%D0%BE%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D1%8E/274000%20%D1%80%D1%83%D0%B1/",
+      "https://career.habr.com/vacancies/1000167656"
+    ]
+  },
+  "funnel": {
+    "RAW_DISTINCT": 80,
+    "FAST_GATE": 3,
+    "DEEP_CHECK": 3,
+    "SIZE": 1,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "deep_check_notes": [
+    {
+      "candidate": "ИжМСК / ООО \"ИЖМАШСТРОЙКОМПЛЕКТ\"",
+      "result": "QUALIFIED"
+    },
+    {
+      "candidate": "ООО \"МЕДИА ДМ\"",
+      "result": "REJECT_SIZE",
+      "note": "Current 2025 accounting snapshot shows revenue 982,000 RUB; not advanced."
+    },
+    {
+      "candidate": "ООО \"АЛЬМИКС ГЛОБАЛ ГРУПП\"",
+      "result": "REJECT_SIZE",
+      "note": "Current 2025 snapshot shows revenue 461,000 RUB; not advanced."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "ИжМСК",
+      "legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ИЖМАШСТРОЙКОМПЛЕКТ\"",
+      "short_legal_name": "ООО \"ИЖМСК\"",
+      "city": "Ижевск",
+      "inn": "1832043801",
+      "ogrn": "1051800792878",
+      "legal_status": "Действующее",
+      "private_company": true,
+      "size": {
+        "revenue_2025_rub": 58619000,
+        "revenue_growth_2025": "+84.99%",
+        "evidence_urls": [
+          "https://vsem-podryad.ru/company/985292aa-7636-4a3d-a4b4-18446e44a42d/",
+          "https://e-ecolog.ru/buh/2025/1832043801"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "commercial_leadership_hiring_for_growth",
+        "vacancy_title": "Коммерческий директор",
+        "publication_date": "2026-07-27",
+        "evidence_summary": "Current vacancy asks a commercial director to influence company development, launch new directions, build a strong team, develop commercial strategy, expand product directions and partnerships, and use analytics/automation for growth.",
+        "evidence_urls": [
+          "https://rabota1000.ru/ijevsk/analitik-kommercheskogo-otdela?cp=%D0%B7%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83",
+          "https://izhevsk.hh.ru/vacancies/kommercheskiy_direktor/polniy_den",
+          "https://2gis.ru/izhevsk/firm/70000001053514990/tab/vacancies"
+        ]
+      },
+      "lpr": {
+        "executive": "Миронов Андрей Петрович",
+        "executive_role": "Генеральный директор",
+        "owners": [
+          {
+            "name": "Миронов Андрей Петрович",
+            "share": "50%"
+          },
+          {
+            "name": "Миронов Сергей Петрович",
+            "share": "50%"
+          }
+        ],
+        "evidence_urls": [
+          "https://reputation.ru/ogrn/1051800792878",
+          "https://companies.rbc.ru/id/1051800792878-ooo-izhmashstrojkomplekt/"
+        ]
+      },
+      "contact": {
+        "route_type": "published_company_contact",
+        "phones": [
+          "+7 3412 64-37-13",
+          "+7 791 287-78-40"
+        ],
+        "emails": [
+          "info@izhmsk-prom.ru"
+        ],
+        "contact_urls": [
+          "https://productcenter.ru/producers/39441/ooo-izhmsk",
+          "https://xfirm.ru/company/1832043801"
+        ],
+        "confirmed_domain": "izhmsk-prom.ru"
+      },
+      "dedup_keys": {
+        "lead_id": "jobs:inn:1832043801",
+        "inn": "1832043801",
+        "ogrn": "1051800792878",
+        "exact_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ИЖМАШСТРОЙКОМПЛЕКТ\"",
+        "brand": "ИжМСК",
+        "confirmed_domain": "izhmsk-prom.ru"
+      },
+      "dedup_recheck": {
+        "pre_deep_check": {
+          "inn": "NO_MATCH"
+        },
+        "pre_write": {
+          "head": "7bb2b32e64116f5a9a8f539b7d83ee635e2d77c6",
+          "inn": "NO_MATCH",
+          "ogrn": "NO_MATCH",
+          "exact_legal_name": "NO_MATCH",
+          "confirmed_domain": "NO_MATCH"
+        }
+      },
+      "evidence_urls": [
+        "https://e-ecolog.ru/buh/2025/1832043801",
+        "https://vsem-podryad.ru/company/985292aa-7636-4a3d-a4b4-18446e44a42d/",
+        "https://reputation.ru/ogrn/1051800792878",
+        "https://rabota1000.ru/ijevsk/analitik-kommercheskogo-otdela?cp=%D0%B7%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83",
+        "https://izhevsk.hh.ru/vacancies/kommercheskiy_direktor/polniy_den",
+        "https://2gis.ru/izhevsk/firm/70000001053514990/tab/vacancies",
+        "https://productcenter.ru/producers/39441/ooo-izhmsk",
+        "https://xfirm.ru/company/1832043801"
+      ],
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ]
+}
