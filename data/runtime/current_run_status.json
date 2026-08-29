@@ -1,108 +1,63 @@
 {
-  "run_id": "N5K-20260829-507",
+  "run_id": "N5K-20260829-507R1",
+  "canonical_integration_run_id": "N5K-20260829-507",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-08-29T23:01:35+03:00",
-  "stage": "COMPLETE",
+  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
   "new_cycle": {
     "baseline_count": 525,
     "target_count": 5000,
     "current_canonical_count": 526,
     "current_contactable_count": 526,
     "progress_added": 1,
-    "remaining": 4474
+    "remaining": 4474,
+    "remaining_to_1000": 474
   },
   "funnel": {
-    "discovered": 8,
+    "discovered_measured_raw": 8,
+    "raw_denominator_complete": false,
+    "raw_denominator_note": "Fresh jobs worker did not provide a defensible distinct employer-level raw denominator; 8 is measured own-discovery raw only and is not used as an all-lane denominator.",
     "fast_gate_passed": 6,
     "size_check_passed": 3,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
+    "prewrite_qualified": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 7
+    "physically_integrated": 1,
+    "duplicates_measured": 1,
+    "excluded_measured_own_discovery": 7
   },
   "lane_metrics": [
-    {
-      "lane": "jobs_worker",
-      "raw": null,
-      "fast_gate": 5,
-      "size": 2,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": null,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Fresh immutable worker did not provide a defensible distinct employer-level raw denominator; denominator not reconstructed."
-    },
-    {
-      "lane": "growth_news_own",
-      "raw": 8,
-      "fast_gate": 1,
-      "size": 1,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 6,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 12.5,
-      "note": "One known physical duplicate and five early rejects; one additional candidate reached SIZE but was not advanced because current LEGAL state/ownership was not clean enough for strict qualification."
-    },
-    {
-      "lane": "official_owner_ceo",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Used as verification sources only; not double-counted as raw."
-    },
-    {
-      "lane": "industry_catalogs",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Cooldown/probe-only; no deep-check spent."
-    },
-    {
-      "lane": "experimental",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    }
+    {"lane":"jobs_worker","raw":null,"fast_gate":5,"size":2,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified":1,"duplicate_plus_early_reject":null,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Raw denominator unavailable in immutable worker output; not reconstructed."},
+    {"lane":"growth_news_own","raw":8,"fast_gate":1,"size":1,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":6,"qualified_raw_pct":0.0,"fast_gate_raw_pct":12.5,"note":"1 known physical duplicate + 5 early rejects; one candidate reached SIZE but was not advanced because current LEGAL/ownership state was not clean enough."},
+    {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Verification-only; not double-counted as raw."},
+    {"lane":"industry_catalogs","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Cooldown/probe-only; no deep-check."},
+    {"lane":"experimental","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
   ],
-  "qualified_companies": [
-    "ZVEZDA Спецтехники / ПромСпецАвто"
+  "efficiency_history_last_3_completed_runs": [
+    {"run_id":"N5K-20260829-504R1","reported_raw":100,"reported_fast_gate":8,"reported_qualified":2,"canonical_after":521,"lane_note":"Jobs lane had raw=100, fast=8, size=2, signal=1, qualified=1 (q/raw 1.0%, fast/raw 8.0%); growth/news produced the second qualified but its distinct raw denominator was not reliably preserved, so no fabricated lane rate."},
+    {"run_id":"N5K-20260829-505R1","reported_raw":22,"reported_fast_gate":9,"reported_qualified":2,"canonical_after":523,"lane_note":"Jobs: raw=22, fast=6, size=2, signal=1, qualified=1 (q/raw 4.5455%, fast/raw 27.2727%); growth/news produced the second qualified but its distinct raw denominator was not reliably preserved."},
+    {"run_id":"N5K-20260829-506","reported_raw":9,"reported_fast_gate":2,"reported_qualified":2,"canonical_after":525,"lane_note":"Growth/news: raw=8, fast=2, size=2, signal=2, qualified=2 (q/raw 25.0%, fast/raw 25.0%); jobs probe raw=1, fast=0, qualified=0; official verification-only; industry cooldown."}
   ],
+  "efficiency_control": {
+    "current_all_lane_qualified_raw_pct": null,
+    "current_all_lane_fast_raw_pct": null,
+    "why_aggregate_null": "Jobs worker raw denominator is null. Aggregate ratios would be fabricated if computed from measured own-discovery raw only.",
+    "current_growth_news_qualified_raw_pct": 0.0,
+    "current_growth_news_fast_raw_pct": 12.5,
+    "previous_run_growth_news_qualified_raw_pct": 25.0,
+    "previous_run_growth_news_fast_raw_pct": 25.0,
+    "growth_news_change_qualified_raw_pp": -25.0,
+    "growth_news_change_fast_raw_pp": -12.5,
+    "net_new_qualified": 1,
+    "adaptive_action": "Net new qualified <5 and measured own growth/news efficiency fell. Prior allocation is not repeated automatically: jobs remains capped at 5%; growth/news reduced to 50%; official-company/owner/CEO increased to 35%; industry remains <=5% probe-only; experimental 5%.",
+    "next_distribution_pct": {"jobs":5,"growth_news":50,"official_owner_ceo":35,"industry_catalogs_max":5,"experimental":5}
+  },
+  "qualified_companies": ["ZVEZDA Спецтехники / ПромСпецАвто"],
+  "worker_consumption": {"lane":"jobs","path":"data/pending_workers/jobs/20260829-222500-jobs.json","blob_sha":"3ad5336082a888ac4a93efc1c4ec0563f7f08b67","status":"CONSUMED_INTEGRATED"},
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -110,5 +65,6 @@
   "physical_master_state": "526_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "526_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "notes": "Strict quality unchanged. PromSpecAuto signal independently reverified on 27.02.2026; unverified 28.08 business-assistant staging claim was not used. Own discovery reviewed 8 distinct companies and produced no additional safe QUALIFIED; raw was not padded."
 }
