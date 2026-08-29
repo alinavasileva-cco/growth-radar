@@ -1,46 +1,43 @@
 {
-  "run_id": "N5K-20260829-501R1",
+  "run_id": "N5K-20260829-502",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T17:06:00+03:00",
+  "updated_at": "2026-08-29T17:57:38+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 516,
     "target_count": 5000,
-    "current_canonical_count": 516,
-    "current_contactable_count": 516,
-    "progress_added": 0,
-    "remaining": 4484,
-    "remaining_to_1000": 484
+    "current_canonical_count": 518,
+    "current_contactable_count": 518,
+    "progress_added": 2,
+    "remaining": 4482
   },
   "funnel": {
-    "discovered": 200,
-    "fast_gate_passed": 17,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "pre_write_qualified": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 199,
+    "discovered": 190,
+    "fast_gate_passed": 13,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "pre_write_qualified": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 188,
     "physically_integrated": 0
   },
   "lane_metrics": [
     {
       "lane": "jobs_job_boards_career",
       "raw": 80,
-      "fast_gate": 11,
-      "size": 1,
+      "fast_gate": 7,
+      "size": 2,
       "signal": 1,
-      "pre_write_qualified": 1,
-      "physical_duplicates": 1,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 70,
-      "qualified_raw": 0.0,
-      "fast_gate_raw": 0.1375,
-      "note": "ALLIO passed evidence funnel but physical canonical guard found existing INN, OGRN, exact legal name and brand+domain; net-new qualified is zero."
+      "qualified": 1,
+      "duplicate_plus_early_reject": 73,
+      "qualified_raw": 0.0125,
+      "fast_gate_raw": 0.0875,
+      "note": "Fresh immutable jobs worker. DEALLOG independently reverified before canonical staging; worker staging is input only."
     },
     {
       "lane": "industry_catalogs_exhibitions",
@@ -52,19 +49,19 @@
       "duplicate_plus_early_reject": 100,
       "qualified_raw": 0.0,
       "fast_gate_raw": 0.0,
-      "note": "Five first-20 probes all crossed >70% duplicate+early-reject; no deep-check; exhibition presence never counted as SIGNAL."
+      "note": "Five first-20 probes crossed >70% duplicate+early reject; no deep-check; exhibition/catalog presence never counted as SIGNAL."
     },
     {
       "lane": "growth_expansion_investment_business_change_news",
-      "raw": 20,
+      "raw": 10,
       "fast_gate": 6,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 14,
-      "qualified_raw": 0.0,
-      "fast_gate_raw": 0.3,
-      "note": "Fresh 17-28 Aug 2026 production/expansion probe; promising source-level signals were not promoted without complete current SIZE/LEGAL/LPR/CONTACT evidence."
+      "size": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 4,
+      "qualified_raw": 0.1,
+      "fast_gate_raw": 0.6,
+      "note": "Adaptive low-overlap fresh-news probe after weak prior net-new output; only Petrovax was promoted through the full evidence funnel. Other observations were not forced through deep-check."
     },
     {
       "lane": "official_company_owner_ceo",
@@ -76,7 +73,7 @@
       "duplicate_plus_early_reject": 0,
       "qualified_raw": null,
       "fast_gate_raw": null,
-      "note": "Used for verification; not double-counted as raw."
+      "note": "Used as verification layer for DEALLOG and Petrovax; not double-counted as raw."
     },
     {
       "lane": "experimental_low_overlap",
@@ -90,63 +87,16 @@
       "fast_gate_raw": null
     }
   ],
-  "efficiency_history": [
-    {"run_id":"N5K-20260829-498R1","raw":180,"fast_gate":10,"qualified":1,"qualified_raw":0.005556,"fast_gate_raw":0.055556},
-    {"run_id":"N5K-20260829-499","raw":20,"fast_gate":6,"qualified":1,"qualified_raw":0.05,"fast_gate_raw":0.30},
-    {"run_id":"N5K-20260829-500","raw":200,"fast_gate":9,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.045},
-    {"run_id":"N5K-20260829-501R1","raw":200,"fast_gate":17,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.085}
+  "qualified_companies": [
+    "DEALLOG",
+    "Петровакс Фарм"
   ],
-  "lane_history_last_3_plus_current": {
-    "jobs_job_boards_career": [
-      {"run_id":"N5K-20260829-498R1","raw":80,"fast_gate":10,"size":2,"signal":1,"qualified":1,"qualified_raw":0.0125,"fast_gate_raw":0.125},
-      {"run_id":"N5K-20260829-499","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
-      {"run_id":"N5K-20260829-500","raw":80,"fast_gate":3,"size":1,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0375},
-      {"run_id":"N5K-20260829-501R1","raw":80,"fast_gate":11,"size":1,"signal":1,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.1375}
-    ],
-    "industry_catalogs_exhibitions": [
-      {"run_id":"N5K-20260829-498R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0},
-      {"run_id":"N5K-20260829-499","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
-      {"run_id":"N5K-20260829-500","raw":100,"fast_gate":1,"size":1,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.01},
-      {"run_id":"N5K-20260829-501R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0}
-    ],
-    "growth_expansion_investment_business_change_news": [
-      {"run_id":"N5K-20260829-498R1","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
-      {"run_id":"N5K-20260829-499","raw":20,"fast_gate":6,"size":1,"signal":1,"qualified":1,"qualified_raw":0.05,"fast_gate_raw":0.30},
-      {"run_id":"N5K-20260829-500","raw":20,"fast_gate":5,"size":1,"signal":1,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.25},
-      {"run_id":"N5K-20260829-501R1","raw":20,"fast_gate":6,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.30}
-    ]
-  },
-  "efficiency_change_vs_previous_hour": {
-    "qualified_raw_percentage_points": 0.0,
-    "fast_gate_raw_percentage_points": 4.0,
-    "note": "Net qualified/raw remained 0% because ALLIO was a physical duplicate; fast_gate/raw improved from 4.5% to 8.5%."
-  },
-  "adaptive_decision": {
-    "cut_or_capped": [
-      "jobs_job_boards_career: own discovery max 5% for the next 3 RUN because duplicate+early-reject exceeded 70% in RUN 500 and RUN 501; worker staging is still ingested first",
-      "industry_catalogs_exhibitions: max 5%, probe-only/no deep-check after repeated fast_gate/raw below 2% and duplicate+early-reject above 70%"
-    ],
-    "increased": [
-      "growth_expansion_investment_business_change_news: 55% next RUN because fast_gate/raw is 30% and it remains the strongest scalable discovery lane despite zero net qualified this hour",
-      "official_company_owner_ceo: 30% next RUN to resolve legal/LPR/contact evidence on low-overlap candidates"
-    ],
-    "next_run_distribution": {
-      "jobs_job_boards_career": 0.05,
-      "growth_expansion_investment_business_change_news": 0.55,
-      "official_company_owner_ceo": 0.30,
-      "industry_catalogs_exhibitions": 0.05,
-      "experimental_low_overlap": 0.05
-    }
-  },
-  "qualified_companies": [],
-  "physical_duplicates": ["ALLIO / ООО «АЛЛИО» — INN 7838106248, OGRN 1227800087668, exact legal name and brand+domain matched existing canonical record"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
-  "physical_master_state": "516_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "516_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "518_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "518_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
