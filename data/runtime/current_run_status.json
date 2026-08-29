@@ -1,19 +1,23 @@
 {
-  "run_id": "N5K-20260830-509",
+  "run_id": "N5K-20260830-509R1",
+  "canonical_integration_run_id": "N5K-20260830-509",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-08-30T01:06:46+03:00",
-  "stage": "COMPLETE",
+  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
   "new_cycle": {
     "baseline_count": 527,
     "target_count": 5000,
     "current_canonical_count": 528,
     "current_contactable_count": 528,
     "progress_added": 1,
-    "remaining": 4472
+    "remaining": 4472,
+    "remaining_to_1000": 472
   },
   "funnel": {
     "discovered": 20,
+    "raw_denominator_complete": true,
+    "raw_denominator_note": "20 distinct named company candidates were counted once across the two measured own-discovery lanes. This denominator is company-name distinct at discovery level; cheap rejects were not all resolved to full legal keys.",
     "fast_gate_passed": 3,
     "size_check_passed": 3,
     "legal_match_passed": 3,
@@ -22,7 +26,7 @@
     "contact_route_found": 3,
     "prewrite_qualified": 3,
     "qualified": 1,
-    "physically_integrated": 0,
+    "physically_integrated": 1,
     "duplicates": 4,
     "excluded": 17
   },
@@ -39,7 +43,7 @@
       "qualified_before_physical_dedup": 1,
       "qualified_after_physical_dedup": 1,
       "duplicate_plus_early_reject": 11,
-      "qualified_raw_pct_prewrite": 8.3333,
+      "qualified_raw_pct": 8.3333,
       "fast_gate_raw_pct": 8.3333
     },
     {
@@ -52,29 +56,32 @@
       "lpr": 2,
       "contact": 2,
       "qualified_before_physical_dedup": 2,
-      "qualified_after_physical_dedup": 2,
-      "duplicate_plus_early_reject": 6,
-      "qualified_raw_pct_prewrite": 25.0,
-      "fast_gate_raw_pct": 25.0
+      "qualified_after_physical_dedup": 0,
+      "duplicate_plus_early_reject": 8,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 25.0,
+      "note": "Both pre-write PASS companies were blocked by final physical dedup: НАРТИС by INN+OGRN+LEGAL_NAME+BRAND_DOMAIN; МолоПак by INN+OGRN."
     },
     {
       "lane": "jobs_probe",
       "raw": 0,
       "fast_gate": 0,
       "size": 0,
-      "legal": 0,
       "signal": 0,
       "qualified_after_physical_dedup": 0,
-      "note": "No fresh unconsumed worker staging after 508R1; capped lane not padded with repeated candidates."
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "note": "No fresh unconsumed worker staging after 508R1; capped lane was not padded with repeated candidates."
     },
     {
       "lane": "industry_probe",
       "raw": 0,
       "fast_gate": 0,
       "size": 0,
-      "legal": 0,
       "signal": 0,
       "qualified_after_physical_dedup": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
       "note": "Cooldown/probe-only; no productive fresh batch used."
     },
     {
@@ -82,14 +89,53 @@
       "raw": 0,
       "fast_gate": 0,
       "size": 0,
-      "legal": 0,
       "signal": 0,
       "qualified_after_physical_dedup": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
       "note": "No sufficiently fresh low-overlap source justified padding this run."
     }
   ],
-  "qualified_companies": [
-    "Мосэлектрощит"
+  "efficiency_control": {
+    "current": {
+      "qualified_raw_pct": 5.0,
+      "fast_gate_raw_pct": 15.0,
+      "net_new_qualified": 1
+    },
+    "previous_runs": [
+      {
+        "run_id": "N5K-20260829-506",
+        "growth_news": {"raw": 8, "fast_gate": 2, "size": 2, "signal": 2, "qualified": 2, "duplicate_plus_early_reject": 6, "qualified_raw_pct": 25.0, "fast_gate_raw_pct": 25.0},
+        "jobs_probe": {"raw": 1, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 1, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0}
+      },
+      {
+        "run_id": "N5K-20260829-507R1",
+        "growth_news": {"raw": 8, "fast_gate": 1, "size": 1, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 6, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 12.5},
+        "jobs_worker": {"raw": null, "fast_gate": 5, "size": 2, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": null, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "Immutable staging did not preserve a defensible distinct employer-level raw denominator; not reconstructed."}
+      },
+      {
+        "run_id": "N5K-20260830-508R1",
+        "jobs_worker_source_level": {"raw": 280, "fast_gate": 11, "size": 3, "signal": 2, "qualified": 1, "duplicate_plus_early_reject": null, "qualified_raw_pct": 0.3571, "fast_gate_raw_pct": 3.9286, "note": "Two 140-employer-distinct passes; between-pass global employer dedup was not reconstructed, so these percentages are source-level and not strictly comparable to globally deduped denominators."}
+      }
+    ],
+    "change_vs_previous_hour": {
+      "qualified_raw_pct_pp": 4.6429,
+      "fast_gate_raw_pct_pp": 11.0714,
+      "comparison_note": "Current 20-candidate denominator is cross-lane company-name distinct. Previous 508R1 denominator was source-level across two worker passes and not guaranteed globally deduped, so the numeric change is directional rather than fully like-for-like."
+    },
+    "decision": "Net-new output is 1 (<5), so the previous allocation is not repeated automatically. Growth/news remains productive on net-new output. Official/owner produced two pre-write PASS but zero net-new because both were canonical duplicates, so it is not boosted despite strong fast-gate conversion. Jobs remains capped; industry remains probe-only/no-deep-check.",
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 55,
+      "official_owner_ceo": 30,
+      "industry_probe_only": 5,
+      "experimental": 5
+    }
+  },
+  "qualified_companies": ["Мосэлектрощит"],
+  "physical_dedup_skipped": [
+    {"brand": "НАРТИС", "reasons": ["INN", "OGRN", "LEGAL_NAME", "BRAND_DOMAIN"]},
+    {"brand": "МолоПак", "reasons": ["INN", "OGRN"]}
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
@@ -98,5 +144,6 @@
   "physical_master_state": "528_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "528_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "notes": "N5K-20260830-509 physically integrated Мосэлектрощит as N5K-0686. НАРТИС and МолоПак were rejected by final physical dedup and are not counted as new. Strict quality unchanged; raw was not padded with catalogs. Metadata repaired in 509R1 so lane efficiencies use net-new qualified after physical dedup."
 }
