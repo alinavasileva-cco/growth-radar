@@ -1,25 +1,92 @@
 {
-  "run_id": "N5K-20260829-495R1",
-  "hourly_parent_run_id": "N5K-20260829-495",
+  "run_id": "N5K-20260829-496",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T10:58:06+03:00",
+  "updated_at": "2026-08-29T11:57:07+03:00",
   "stage": "COMPLETE",
-  "new_cycle": {"baseline_count":508,"target_count":5000,"current_canonical_count":512,"current_contactable_count":512,"progress_added":4,"remaining":4488,"remaining_to_1000":488},
-  "funnel": {"discovered":208,"fast_gate_passed":14,"size_check_passed":8,"legal_match_passed":6,"signal_confirmed":6,"lpr_identified":6,"contact_route_found":6,"prewrite_qualified":6,"qualified":4,"duplicates":2,"excluded":202,"physically_integrated":4},
-  "lane_metrics": [
-    {"lane":"jobs_job_boards_career","raw":80,"fast_gate":6,"size":2,"signal":1,"qualified":1,"duplicate_plus_early_reject":74,"qualified_raw_pct":1.25,"fast_gate_raw_pct":7.5,"previous_hour_qualified_raw_pct":0.0,"action_next_run":"CAP_5_PERCENT_DURING_COOLDOWN; ingest fresh immutable worker staging regardless"},
-    {"lane":"industry_catalogs_exhibitions","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":100,"qualified_raw_pct":0.0,"fast_gate_raw_pct":0.0,"previous_hour_qualified_raw_pct":0.0,"action_next_run":"CAP_5_PERCENT; NO_DEEP_CHECK while cooldown persists; catalog/exhibition presence is never SIGNAL"},
-    {"lane":"growth_expansion_investment_business_change_news","raw":20,"fast_gate":6,"size":4,"signal":3,"prewrite_qualified":3,"qualified":1,"physical_duplicates":2,"duplicate_plus_early_reject":17,"qualified_raw_pct":5.0,"fast_gate_raw_pct":30.0,"previous_hour":"not separately attributable without guessing","action_next_run":"INCREASE_TO_55_PERCENT; physical duplicate rate must be watched closely"},
-    {"lane":"official_company_owner_ceo_sources","raw":8,"fast_gate":2,"size":2,"signal":2,"qualified":2,"duplicate_plus_early_reject":6,"qualified_raw_pct":25.0,"fast_gate_raw_pct":25.0,"previous_hour":"not separately attributable without guessing","action_next_run":"SET_30_PERCENT; strong small-sample result, do not extrapolate 25% as stable"}
-  ],
-  "efficiency_controller": {
-    "last_three_completed_hours":[{"run_id":"N5K-20260829-492","raw":300,"net_new_qualified":1,"qualified_raw_pct":0.3333},{"run_id":"N5K-20260829-493","raw":300,"net_new_qualified":1,"qualified_raw_pct":0.3333},{"run_id":"N5K-20260829-494R1","raw":200,"net_new_qualified":1,"qualified_raw_pct":0.5,"fast_gate_raw_pct":3.5}],
-    "current_hour":{"raw":208,"fast_gate":14,"net_new_qualified":4,"qualified_raw_pct":1.9231,"fast_gate_raw_pct":6.7308,"change_vs_previous_hour_qualified_raw_percentage_points":1.4231,"change_vs_previous_hour_fast_gate_raw_percentage_points":3.2308,"note":"Raw was not padded to 400-800 with zero-yield catalogs. Two deep candidates from the already-counted growth pool were rejected by final physical dedup, so no false progress is claimed."},
-    "next_run_distribution_pct":{"jobs_job_boards_career":5,"growth_expansion_investment_business_change_news":55,"official_company_owner_ceo_sources":30,"industry_catalogs_exhibitions":5,"experimental_low_overlap":5}
+  "new_cycle": {
+    "baseline_count": 512,
+    "target_count": 5000,
+    "current_canonical_count": 513,
+    "current_contactable_count": 513,
+    "progress_added": 1,
+    "remaining": 4487
   },
-  "qualified_companies":["БЭГРИФ","НЕОС Ингредиентс","Сибстекло","Феррум / Shipsteel"],
-  "physical_duplicates_rejected":["Союзтекстиль-СТ / ULTRAFILAMENT","ГалВент"],
-  "integrity_status":"PASS","orphan_contacts":0,"orphan_evidence":0,"active_wip":0,"qualified_staged_not_counted":0,
-  "physical_master_state":"512_DATA_ROWS_PLUS_HEADER_CONFIRMED","physical_contactable_state":"512_DATA_ROWS_PLUS_HEADER_CONFIRMED","outreach_sent":0,"blocker":null
+  "funnel": {
+    "discovered": 200,
+    "fast_gate_passed": 9,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 1,
+    "duplicates": 2,
+    "excluded": 197
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_job_boards_career",
+      "raw": 80,
+      "fast_gate": 5,
+      "size": 2,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 63,
+      "qualified_raw_pct": 1.25,
+      "fast_gate_raw_pct": 6.25,
+      "previous_hour_qualified_raw_pct": 1.25,
+      "action_next_run": "KEEP_CAPPED_5_PERCENT_OWN_DISCOVERY_DURING_COOLDOWN; ingest immutable staging regardless; worker sublane duplicate+early metrics sum to 63 and are retained exactly rather than reconstructed"
+    },
+    {
+      "lane": "industry_catalogs_exhibitions",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 100,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "previous_hour_qualified_raw_pct": 0.0,
+      "action_next_run": "CAP_5_PERCENT_OR_PROBE_ONLY; NO_DEEP_CHECK; exhibition/catalog presence never SIGNAL"
+    },
+    {
+      "lane": "growth_expansion_investment_business_change_news",
+      "raw": 20,
+      "fast_gate": 4,
+      "size": 2,
+      "signal": 2,
+      "qualified": 2,
+      "duplicate_plus_early_reject": 16,
+      "qualified_raw_pct": 10.0,
+      "fast_gate_raw_pct": 20.0,
+      "previous_hour_qualified_raw_pct": 5.0,
+      "action_next_run": "INCREASE; best scalable lane this run; prioritize fresh expansion/investment/production-change news and confirm with official/legal sources"
+    },
+    {
+      "lane": "official_company_owner_ceo_sources",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "previous_hour_qualified_raw_pct": 25.0,
+      "note": "Official company/CEO sources were used as evidence/recheck for discovered candidates, not counted again as separate raw companies; no double counting across lanes."
+    }
+  ],
+  "qualified_companies": [
+    "Агролекс"
+  ],
+  "integrity_status": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "active_wip": 0,
+  "physical_master_state": "513_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "513_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "outreach_sent": 0,
+  "blocker": null
 }
