@@ -1,0 +1,36 @@
+{
+  "run_id": "N5K-20260829-493",
+  "recorded_at": "2026-08-29T09:00:00+03:00",
+  "canonical_result": {
+    "canonical_count": 507,
+    "contactable_count": 507,
+    "physically_integrated": 1,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "qualified_staged_not_counted": 0,
+    "outreach": 0
+  },
+  "consumed_workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-081808-jobs.json",
+      "blob_sha": "51fe7bd676ac5add62e7f385ec872008cd12ec43",
+      "raw_distinct": 80,
+      "qualified": 1,
+      "canonical_status": "CONSUMED_INTEGRATED",
+      "integrated_lead_id": "N5K-0664",
+      "integrated_inn": "7842355783",
+      "integrated_ogrn": "1077847231780"
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-082552-industry-metrics.json",
+      "blob_sha": "8f4c5379a4e642acb1e89e0476ffc333c0224853",
+      "raw_distinct": 100,
+      "qualified": 0,
+      "canonical_status": "CONSUMED_ZERO_QUALIFIED"
+    }
+  ],
+  "audit_note": "Immutable worker staging retained for audit history. The consumed index records the exact blobs processed by RUN 493 so they cannot be treated as fresh in a later canonical run. No worker result is re-integrated by this record."
+}
