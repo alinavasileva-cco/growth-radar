@@ -10,7 +10,8 @@
     "current_canonical_count": 519,
     "current_contactable_count": 519,
     "progress_added": 1,
-    "remaining": 4481
+    "remaining": 4481,
+    "remaining_to_1000": 481
   },
   "funnel": {
     "discovered": 260,
@@ -24,7 +25,7 @@
     "qualified": 1,
     "duplicates": 1,
     "excluded": 258,
-    "physically_integrated": 0
+    "physically_integrated": 1
   },
   "lane_metrics": [
     {
@@ -37,7 +38,7 @@
       "lpr": 2,
       "contact": 2,
       "qualified": 2,
-      "note": "Two fresh immutable jobs worker batches consumed. Final physical dedup delegated to canonical integrator; worker repository search is not treated as authoritative dedup."
+      "note": "Two fresh immutable jobs worker batches consumed. Final physical dedup was performed by the canonical integrator; worker repository search was not used as authoritative dedup."
     },
     {
       "lane": "industry_catalogs_exhibitions",
@@ -52,13 +53,13 @@
       "note": "Five 20-candidate source batches exceeded 70% duplicate+early-reject; no exhibition/catalog presence counted as SIGNAL."
     }
   ],
-  "qualified_companies": [
-    "Programming Store"
-  ],
+  "qualified_companies": ["Programming Store"],
+  "physical_duplicates": ["БиоМикроГели / Биополимер — existing N5K-0383 by INN 6679148488 / OGRN 1226600002705 / legal entity"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "519_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "519_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
