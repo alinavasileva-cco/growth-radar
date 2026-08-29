@@ -1,44 +1,43 @@
 {
-  "generated_at": "2026-08-29T11:57:07+03:00",
+  "generated_at": "2026-08-29T12:58:28+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260829-496",
-  "current_run_id": "N5K-20260829-496",
+  "latest_completed_run_id": "N5K-20260829-497",
+  "current_run_id": "N5K-20260829-497",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 513,
-  "contactable_verified": 513,
+  "canonical_pool_verified": 514,
+  "contactable_verified": 514,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4487,
+  "remaining_to_target": 4486,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_496": {
-    "raw_discovered": 200,
-    "fast_gate_passed": 9,
-    "size_check_passed": 4,
+  "run_497": {
+    "raw_discovered": 188,
+    "fast_gate_passed": 7,
+    "size_check_passed": 3,
     "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 1,
     "physically_integrated": 1,
-    "duplicates": 2,
-    "excluded": 197,
+    "duplicates": 1,
+    "excluded": 186,
     "lane_metrics": [
       {
         "lane": "jobs_job_boards_career",
         "raw": 80,
-        "fast_gate": 5,
+        "fast_gate": 3,
         "size": 2,
         "signal": 1,
         "qualified": 1,
-        "duplicate_plus_early_reject": 63,
+        "duplicate_plus_early_reject": 15,
         "qualified_raw_pct": 1.25,
-        "fast_gate_raw_pct": 6.25,
-        "previous_hour_qualified_raw_pct": 1.25,
-        "action_next_run": "KEEP_CAPPED_5_PERCENT_OWN_DISCOVERY_DURING_COOLDOWN; ingest immutable staging regardless; worker sublane duplicate+early metrics sum to 63 and are retained exactly rather than reconstructed"
+        "fast_gate_raw_pct": 3.75,
+        "action_next_run": "KEEP_CAPPED_OWN_DISCOVERY; ingest immutable worker staging; result improved from 0 net in prior hour but physical dedup remains final guard"
       },
       {
         "lane": "industry_catalogs_exhibitions",
@@ -50,21 +49,19 @@
         "duplicate_plus_early_reject": 100,
         "qualified_raw_pct": 0.0,
         "fast_gate_raw_pct": 0.0,
-        "previous_hour_qualified_raw_pct": 0.0,
-        "action_next_run": "CAP_5_PERCENT_OR_PROBE_ONLY; NO_DEEP_CHECK; exhibition/catalog presence never SIGNAL"
+        "action_next_run": "PROBE_ONLY_MAX_5_PERCENT; NO_DEEP_CHECK; exhibition/catalog presence never SIGNAL"
       },
       {
         "lane": "growth_expansion_investment_business_change_news",
-        "raw": 20,
+        "raw": 8,
         "fast_gate": 4,
-        "size": 2,
-        "signal": 2,
-        "qualified": 2,
-        "duplicate_plus_early_reject": 16,
-        "qualified_raw_pct": 10.0,
-        "fast_gate_raw_pct": 20.0,
-        "previous_hour_qualified_raw_pct": 5.0,
-        "action_next_run": "INCREASE; best scalable lane this run; prioritize fresh expansion/investment/production-change news and confirm with official/legal sources"
+        "size": 1,
+        "signal": 1,
+        "qualified": 1,
+        "duplicate_plus_early_reject": 4,
+        "qualified_raw_pct": 12.5,
+        "fast_gate_raw_pct": 50.0,
+        "action_next_run": "INCREASE_ALLOCATION; small sample, so do not extrapolate conversion without another measured batch"
       },
       {
         "lane": "official_company_owner_ceo_sources",
@@ -74,10 +71,10 @@
         "signal": 0,
         "qualified": 0,
         "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 0.0,
-        "previous_hour_qualified_raw_pct": 25.0,
-        "note": "Official company/CEO sources were used as evidence/recheck for discovered candidates, not counted again as separate raw companies; no double counting across lanes."
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "Used for verification of already discovered candidates; not double-counted as raw.",
+        "action_next_run": "KEEP_HIGH_VERIFICATION_AND_DISCOVERY_SHARE"
       }
     ]
   }
