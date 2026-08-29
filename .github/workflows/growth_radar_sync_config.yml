@@ -65,3 +65,5 @@ jobs:
           git commit -m "Growth Radar: sync canonical config header"
           git pull --rebase origin main
           git push
+
+# sync trigger N5K-20260829-491
