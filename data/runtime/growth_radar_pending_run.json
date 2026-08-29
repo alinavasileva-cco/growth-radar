@@ -1,6 +1,6 @@
 {
   "run_id": "N5K-20260830-508",
-  "updated_at": "2026-08-30T00:37:20+03:00",
+  "updated_at": "2026-08-30T00:41:10+03:00",
   "status": "READY_FOR_INTEGRATION",
   "baseline_count": 526,
   "qualified_staged_not_counted": 1,
@@ -45,6 +45,7 @@
     }
   ],
   "funnel": {
+    "discovered": 280,
     "discovered_source_level": 280,
     "raw_denominator_complete": false,
     "raw_denominator_note": "Два свежих jobs-worker прохода дали по 140 employer-distinct raw внутри каждого прохода. Межпроходный глобальный employer-level dedup для дешёвых rejects не реконструировался, поэтому 280 не выдаётся за гарантированно глобально-уникальный denominator.",
@@ -57,6 +58,7 @@
     "prewrite_qualified": 2,
     "qualified": 1,
     "duplicates": 1,
+    "excluded": 278,
     "excluded_measured": 278
   },
   "lane_metrics": [
