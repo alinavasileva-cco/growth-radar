@@ -1,0 +1,121 @@
+{
+  "worker": "jobs",
+  "mode": "READ+DISCOVERY",
+  "baseline_head": "6e203c09e68796e247acd8cb901b1c6660085a1d",
+  "config_version": "2026-08-29T19:57:55+03:00",
+  "canonical_baseline": 519,
+  "criteria_changed": false,
+  "outreach_performed": false,
+  "canonical_writer_started": false,
+  "canonical_files_written": false,
+  "discovery": {
+    "raw_employer_distinct_confidently_counted": 100,
+    "target": "140-150",
+    "target_shortfall_reason": "Indexed job-board surfaces contained large mixed vacancy pools, but only 100 employer-level observations were confidently de-overlapped in this run without inventing employer identity or legal mapping.",
+    "source_batches": [
+      {"source":"JobVK / regional job-board mirrors","region":"Ekaterinburg","query":"commercial/director-level","counted_raw":20,"first20_duplicate_plus_early_reject_rate":null,"rate_note":"not reconstructed without stable canonical-key resolution for all cheap rejects"},
+      {"source":"JobVK / regional job-board mirrors","region":"Novosibirsk","query":"director/executive-level","counted_raw":20,"first20_duplicate_plus_early_reject_rate":null,"rate_note":"not reconstructed without stable canonical-key resolution for all cheap rejects"},
+      {"source":"JobVK / regional job-board mirrors","region":"Krasnodar","query":"commercial/operations director","counted_raw":20,"first20_duplicate_plus_early_reject_rate":null,"rate_note":"not reconstructed without stable canonical-key resolution for all cheap rejects"},
+      {"source":"JobVK / regional job-board mirrors","region":"Samara","query":"development/executive roles","counted_raw":20,"first20_duplicate_plus_early_reject_rate":null,"rate_note":"not reconstructed without stable canonical-key resolution for all cheap rejects"},
+      {"source":"JobVK / regional job-board mirrors","region":"Rostov-on-Don","query":"technical/commercial/executive roles","counted_raw":20,"first20_duplicate_plus_early_reject_rate":null,"rate_note":"not reconstructed without stable canonical-key resolution for all cheap rejects"}
+    ]
+  },
+  "worker_funnel": {
+    "RAW": 100,
+    "FAST_GATE": 8,
+    "DEEP_CHECK": 4,
+    "SIZE": 2,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "qualified": [
+    {
+      "brand": "Тандал",
+      "legal_name": "ООО \"ТАНДАЛ\"",
+      "inn": "6670248456",
+      "ogrn": "1096670007103",
+      "region": "Свердловская область / Екатеринбург",
+      "domain": "ural-tandal.ru",
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6670248456",
+        "ogrn": "1096670007103",
+        "exact_legal_name": "ООО \"ТАНДАЛ\"",
+        "brand_domain": "Тандал|ural-tandal.ru"
+      },
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 73404000,
+        "employees_2025": 44,
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-TANDAL_a591a551-5c54-4918-b0bc-6097c0351b33/",
+          "https://vaskov.pro/company/6670248456"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "entity_status": "Действующая",
+        "registered_since": "2009-03-11",
+        "director": "Долганов Илья Дмитриевич",
+        "owners": [
+          {"name":"Долганов Илья Дмитриевич","share":"50%"},
+          {"name":"Залялиев Айдар Тагирович","share":"50%"}
+        ],
+        "arbitration_note": "RBC profile: 3 arbitration cases totaling 917.82k RUB over the last 3 years; no bankruptcy result found in the current legal check.",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1096670007103-ooo-kompaniya-diplomat/",
+          "https://www.tbank.ru/business/contractor/legal/1096670007103/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "level": "S1",
+        "type": "job_board_management_change",
+        "date": "2026-08-17",
+        "title": "Операционный директор (COO)",
+        "summary": "Вакансия предусматривает разработку и реализацию коммерческой стратегии подразделения, внедрение KPI и отчетности, оптимизацию бизнес-процессов, организацию и контроль склада, производства, логистики и продаж.",
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/136105075"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Долганов Илья Дмитриевич",
+        "role": "директор и совладелец 50%",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1096670007103-ooo-kompaniya-diplomat/",
+          "https://b2b.house/company/OOO-TANDAL_a591a551-5c54-4918-b0bc-6097c0351b33/"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official corporate phone + official callback form",
+        "phone": "+7 912 67 000 80",
+        "form_url": "https://ural-tandal.ru/kontakty",
+        "email": null,
+        "note": "Official contacts page publishes the phone and a callback form. Email is protected/obfuscated on the page, so it is intentionally not reconstructed.",
+        "evidence_urls": [
+          "https://ural-tandal.ru/kontakty"
+        ]
+      },
+      "brand_legal_mapping": {
+        "status": "PASS",
+        "basis": "Official Tandal contacts use the same Ekaterinburg Malysheva 51 office and Aramil production address that third-party legal/industrial profiles connect to INN 6670248456 / OGRN 1096670007103.",
+        "evidence_urls": [
+          "https://ural-tandal.ru/kontakty",
+          "https://ekb.metalloobrabotchiki.ru/company/tandal",
+          "https://companies.rbc.ru/id/1096670007103-ooo-kompaniya-diplomat/"
+        ]
+      },
+      "final_dedup": {
+        "status": "NO_MATCH_FOUND",
+        "checked_against": "repository-wide GitHub code search at fresh HEAD before staging",
+        "queries": ["6670248456","Тандал","1096670007103 ural-tandal.ru"]
+      },
+      "status": "QUALIFIED"
+    }
+  ]
+}
