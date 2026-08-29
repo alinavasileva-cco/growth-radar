@@ -1,0 +1,29 @@
+{
+  "run_id": "N5K-20260829-502",
+  "consumed_at": "2026-08-29T18:04:00+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-173500-jobs.json",
+      "blob_sha": "2eb8fbc2825290e518138fa58f01d30ad57bf4d6",
+      "status": "CONSUMED_INTEGRATED",
+      "raw": 80,
+      "worker_qualified": 1,
+      "net_new_qualified": 1,
+      "note": "DEALLOG independently reverified, passed final physical dedup, and was integrated as N5K-0675."
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-172232-industry-metrics.json",
+      "blob_sha": "342b0fca9562aacaec9963e1630398eb9e3f8023",
+      "status": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 100,
+      "worker_qualified": 0,
+      "net_new_qualified": 0,
+      "note": "Five first-20 probes exceeded 70% duplicate+early reject; no deep-check; exhibition/catalog presence was never treated as SIGNAL."
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "outreach": 0
+}
