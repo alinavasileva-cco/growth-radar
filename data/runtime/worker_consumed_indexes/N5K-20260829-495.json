@@ -1,11 +1,12 @@
 {
   "run_id": "N5K-20260829-495",
+  "same_cycle_repair_run": "N5K-20260829-495R1",
   "recorded_at": "2026-08-29T10:58:06+03:00",
   "canonical_result": {
     "canonical_count": 512,
     "contactable_count": 512,
     "physically_integrated": 4,
-    "physical_duplicate_rejected": 1,
+    "physical_duplicates_rejected": 2,
     "integrity": "PASS",
     "orphan_contacts": 0,
     "orphan_evidence": 0,
@@ -33,16 +34,25 @@
     }
   ],
   "own_discovery_result": {
-    "prewrite_qualified": 4,
+    "prewrite_qualified": 5,
     "physically_integrated": 3,
-    "physical_duplicate": {
-      "brand": "Союзтекстиль-СТ / ULTRAFILAMENT",
-      "inn": "5031094336",
-      "ogrn": "1105031004935",
-      "duplicate_keys": ["INN", "OGRN", "LEGAL_NAME"],
-      "canonical_status": "REJECTED_BY_FINAL_PHYSICAL_DEDUP"
-    },
+    "physical_duplicates": [
+      {
+        "brand": "Союзтекстиль-СТ / ULTRAFILAMENT",
+        "inn": "5031094336",
+        "ogrn": "1105031004935",
+        "duplicate_keys": ["INN", "OGRN", "LEGAL_NAME"],
+        "canonical_status": "REJECTED_BY_FINAL_PHYSICAL_DEDUP"
+      },
+      {
+        "brand": "ГалВент",
+        "inn": "7720605108",
+        "ogrn": "1087746091410",
+        "duplicate_keys": ["INN", "OGRN"],
+        "canonical_status": "REJECTED_BY_FINAL_PHYSICAL_DEDUP_IN_495R1"
+      }
+    ],
     "integrated_brands": ["НЕОС Ингредиентс", "Сибстекло", "Феррум / Shipsteel"]
   },
-  "audit_note": "Immutable worker staging retained for audit history. Exact worker blob SHAs are marked consumed. Final physical dedup rejected Союзтекстиль-СТ as an existing canonical company; it is not counted as new. First integration attempt failed before commit due missing Primary Phone key on Сибстекло; same-cycle schema repair used an explicit empty phone field rather than inventing a contact and the second integration completed successfully. No outreach."
+  "audit_note": "Immutable worker staging retained for audit history and exact worker blob SHAs marked consumed. Jobs worker integrated БЭГРИФ; industry worker produced zero qualified. Final physical guard rejected Союзтекстиль-СТ and same-cycle ГалВент as existing canonical companies, so neither is counted as new. First integration attempt failed before commit because Сибстекло had no verified phone field; schema was repaired with an explicit empty phone rather than inventing a contact. No outreach."
 }
