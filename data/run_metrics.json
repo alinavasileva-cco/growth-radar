@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-08-29T05:57:28+03:00",
+  "generated_at": "2026-08-29T07:02:56+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260829-490",
-  "current_run_id": "N5K-20260829-490",
+  "latest_completed_run_id": "N5K-20260829-491",
+  "current_run_id": "N5K-20260829-491",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 504,
-  "contactable_verified": 504,
+  "canonical_pool_verified": 505,
+  "contactable_verified": 505,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4496,
+  "remaining_to_target": 4495,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_490": {
+  "run_491": {
     "raw_discovered": 300,
-    "fast_gate_passed": 6,
-    "size_check_passed": 2,
+    "fast_gate_passed": 3,
+    "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
@@ -28,21 +28,21 @@
     "excluded": 299,
     "lane_metrics": [
       {
-        "lane": "jobs_worker_20260829_052000",
+        "lane": "jobs_worker_20260829_063400",
         "raw": 80,
-        "fast_gate": 6,
-        "size": 2,
+        "fast_gate": 3,
+        "size": 1,
         "legal": 1,
         "signal": 1,
         "lpr": 1,
         "contact": 1,
         "qualified": 1,
         "duplicates": 0,
-        "source_path": "data/pending_workers/jobs/20260829-052000-jobs.json",
-        "note": "Canonical recheck retained Veterinarika / ООО ГВЛДЦ as the sole qualified candidate; two other deep-check candidates failed SIZE."
+        "source_path": "data/pending_workers/jobs/20260829-063400-jobs.json",
+        "note": "Canonical recheck retained ИжМСК as the sole qualified candidate. ООО МЕДИА ДМ and ООО АЛЬМИКС ГЛОБАЛ ГРУПП failed current 2025 SIZE and were not advanced. Three saturated regional sub-lanes were stopped after first 20 at >70% duplicate+early reject."
       },
       {
-        "lane": "industry_worker_20260829_052434",
+        "lane": "industry_worker_20260829_062606",
         "raw": 100,
         "fast_gate": 0,
         "size": 0,
@@ -52,11 +52,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_path": "data/pending_workers/industry/20260829-052434-industry-metrics.json",
-        "note": "Five 20-record lanes stopped at 100% duplicate+early reject; exhibition/catalog presence was not treated as SIGNAL."
+        "source_path": "data/pending_workers/industry/20260829-062606-industry-metrics.json",
+        "note": "Five 20-record lanes stopped at 100% duplicate+early reject. Exhibition/catalog presence was not treated as SIGNAL and stale catalogue data was not used positively."
       },
       {
-        "lane": "own_analitika_expo_2026_first20",
+        "lane": "own_buybrand_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -66,11 +66,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/analitika-expo-2026/ru/Exhibitor",
-        "note": "First 20 current catalogue identities screened; catalogue presence alone is not S1-S3, so the lane was stopped at cheap gate after >70% early rejects."
+        "source_url": "https://buybrandexpo.com/exhibitors/",
+        "note": "First 20 current 2026 exhibitor identities screened at cheap gate; exhibition/franchise listing alone was not S1-S3 and no independent current SIZE+SIGNAL combination was established. Lane stopped after >70% early rejects."
       },
       {
-        "lane": "own_transrussia_2026_first20",
+        "lane": "own_coffee_tea_cacao_horeca_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -80,11 +80,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/trans-russia-2026/ru/Exhibitor",
-        "note": "First 20 current catalogue identities screened; foreign/non-target records and records without independent fresh S1-S3 evidence were early rejected. Lane stopped after first 20."
+        "source_url": "https://exhibitors.pro/en/",
+        "note": "First 20 exhibitor identities screened at cheap gate; event presence alone was not SIGNAL. Lane stopped after >70% duplicate+early reject."
       },
       {
-        "lane": "own_expoelectronica_2026_first20",
+        "lane": "own_agravia_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -94,11 +94,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/expo-electronica-cifra-2026/en/Exhibitor",
-        "note": "First 20 current catalogue identities screened; event participation alone was not SIGNAL and the lane was stopped after >70% early rejects."
+        "source_url": "https://agravia.org/participants",
+        "note": "First 20 2026 participant identities screened; participation alone was not SIGNAL and no independent fresh S1-S3 trigger was established at cheap gate. Lane stopped after >70% early rejects."
       },
       {
-        "lane": "own_metaprom_novosibirsk_first20",
+        "lane": "own_rosmould_rosplast_3dtech_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -108,11 +108,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://metaprom.ru/companies/nsk/",
-        "note": "First 20 regional supplier identities screened. Listing/update activity is not S1-S3 by itself; no independent current target-scale plus fresh-signal combination was established at cheap gate."
+        "source_url": "https://rosmould.ru/",
+        "note": "First 20 current 2026 participant identities screened; catalogue/event presence was not promoted to business SIGNAL. Lane stopped after >70% duplicate+early reject."
       },
       {
-        "lane": "own_metaprom_ekaterinburg_first20",
+        "lane": "own_woodex_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -122,11 +122,11 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://metaprom.ru/companies/ekb/",
-        "note": "First 20 regional supplier identities screened. Catalogue freshness or ad update dates were not promoted to business SIGNAL; lane stopped after >70% early rejects."
+        "source_url": "https://woodexpo.ru/ru/about/news/2026/february/17/woodex-2026-klyuchevye-kompanii-uzhe-sredi-uchastnikov/",
+        "note": "First 20 named/current participant identities screened; participation alone was insufficient for S1-S3. Lane stopped after >70% duplicate+early reject."
       },
       {
-        "lane": "own_metaprom_perm_first20",
+        "lane": "own_worldfood_2026_first20",
         "raw": 20,
         "fast_gate": 0,
         "size": 0,
@@ -136,8 +136,8 @@
         "contact": 0,
         "qualified": 0,
         "duplicates": 0,
-        "source_url": "https://metaprom.ru/companies/perm/",
-        "note": "First 20 regional supplier identities screened. Stale or directory-only records were excluded from positive decisions; lane stopped after >70% early rejects."
+        "source_url": "https://world-food.ru/ru/",
+        "note": "First 20 current participant identities screened; exhibition presence alone was not SIGNAL. Lane stopped after >70% duplicate+early reject."
       }
     ]
   }
