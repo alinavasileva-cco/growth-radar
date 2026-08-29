@@ -1,20 +1,20 @@
 {
-  "run_id": "N5K-20260829-492",
+  "run_id": "N5K-20260829-493",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T07:58:15+03:00",
+  "updated_at": "2026-08-29T08:57:31+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 505,
+    "baseline_count": 506,
     "target_count": 5000,
-    "current_canonical_count": 506,
-    "current_contactable_count": 506,
+    "current_canonical_count": 507,
+    "current_contactable_count": 507,
     "progress_added": 1,
-    "remaining": 4494
+    "remaining": 4493
   },
   "funnel": {
     "discovered": 300,
-    "fast_gate_passed": 18,
+    "fast_gate_passed": 7,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -26,9 +26,9 @@
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260829_073400",
+      "lane": "jobs_worker_20260829_081808",
       "raw": 80,
-      "fast_gate": 18,
+      "fast_gate": 7,
       "size": 1,
       "legal": 1,
       "signal": 1,
@@ -36,11 +36,11 @@
       "contact": 1,
       "qualified": 1,
       "duplicates": 0,
-      "source_path": "data/pending_workers/jobs/20260829-073400-jobs.json",
-      "note": "Worker delivered RuDesktop as the sole qualified candidate. Canonical writer rechecked current LEGAL/SIZE, current vacancy signal, LPR and official contact routes independently before integration; no worker-stated fact was accepted solely on staging assertion."
+      "source_path": "data/pending_workers/jobs/20260829-081808-jobs.json",
+      "note": "Worker delivered CENTEC / ООО «ПРОМА». Canonical writer independently rechecked physical dedup, current 2025 size, active legal entity, current LPR/owner, official contact routes and a fresher current CCO vacancy dated 2026-08-23. Worker-stated 2026-08-13 signal date was superseded and not used as the canonical current date."
     },
     {
-      "lane": "industry_worker_20260829_073100",
+      "lane": "industry_worker_20260829_082552",
       "raw": 100,
       "fast_gate": 0,
       "size": 0,
@@ -50,11 +50,11 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "source_path": "data/pending_workers/industry/20260829-073100-industry-metrics.json",
-      "note": "Five 20-record industry lanes reached 100% duplicate+early-reject at the cheap gate and were stopped. Exhibition/catalogue presence was not treated as SIGNAL."
+      "source_path": "data/pending_workers/industry/20260829-082552-industry-metrics.json",
+      "note": "Five 20-record industrial lanes reached 100% duplicate+early-reject at cheap gate and were stopped. Directory presence or recent directory activity was not treated as SIGNAL."
     },
     {
-      "lane": "own_ruplastica_2026_nonoverlap20",
+      "lane": "own_upakexpo_2026_nonoverlap20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -64,11 +64,11 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "source_url": "https://md.expodat.com/expositions/exposition/131-ruplastica-2026.html",
-      "note": "20 source-level identities selected after cheap name de-dup against the worker pool; foreign entities and candidates without a probable fresh S1-S3 trigger were rejected early. Event presence alone was not SIGNAL."
+      "source_url": "https://md.expodat.com/expositions/exposition/137-upakexpo-2026.html",
+      "note": "20 source-level exhibitor identities screened after cheap name de-dup against both workers; exhibition presence alone was not SIGNAL and the lane was stopped after >70% early rejects."
     },
     {
-      "lane": "own_wire_russia_2026_nonoverlap20",
+      "lane": "own_metaprom_moscow_nonoverlap20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -78,11 +78,11 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "source_url": "https://md.expodat.com/expositions/exposition/164-wire-russia-2026.html",
-      "note": "20 non-overlapping source identities screened; the visible batch was dominated by non-Russian exhibitors and had no independent current SIZE+S1-S3 combination. Lane stopped at >70% early reject."
+      "source_url": "https://metaprom.ru/companies/msk/",
+      "note": "20 source-level identities screened after excluding names already present in worker pool and earlier own batch; catalogue activity alone was not accepted as S1-S3. Lane stopped at >70% early reject."
     },
     {
-      "lane": "own_cpm_autumn_2026_nonoverlap20",
+      "lane": "own_metaprom_spb_nonoverlap20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -92,11 +92,11 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "source_url": "https://md.expodat.com/expositions/exposition/183-cpm-2026-autumn.html",
-      "note": "20 non-overlapping exhibitor identities screened after cheap name de-dup. Brand/exhibition presence without independently confirmed Russian legal entity, current size and fresh S1-S3 signal was rejected early."
+      "source_url": "https://metaprom.ru/companies/spb/",
+      "note": "20 source-level identities screened after cheap cross-pool name de-dup; no independently established current SIZE plus S1-S3 combination justified deep funnel. Lane stopped at >70% early reject."
     },
     {
-      "lane": "own_integration_2026_nonoverlap20",
+      "lane": "own_metaprom_ekb_nonoverlap20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -106,11 +106,11 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "source_url": "https://md.expodat.com/expositions/exposition/158-integration-2026.html",
-      "note": "20 non-overlapping identities screened; public/NGO/foreign entities and companies lacking a probable fresh commercial S1-S3 trigger were rejected at cheap gate."
+      "source_url": "https://metaprom.ru/companies/ekb/",
+      "note": "20 source-level identities screened after cheap cross-pool name de-dup; catalogue update dates and product descriptions were not treated as growth signals. Lane stopped at >70% early reject."
     },
     {
-      "lane": "own_cpm_spring_2026_nonoverlap20",
+      "lane": "own_metaprom_packing_nonoverlap20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -120,11 +120,11 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "source_url": "https://md.expodat.com/expositions/exposition/155-cpm-2026-spring.html",
-      "note": "20 identities chosen only after excluding names already seen in the autumn CPM batch and worker pool. No independent current SIZE+SIGNAL combination was established at cheap gate."
+      "source_url": "https://metaprom.ru/companies/packing/",
+      "note": "20 source-level packaging identities screened after excluding obvious overlaps with regional batches; catalogue presence alone was not SIGNAL. Lane stopped at >70% early reject."
     },
     {
-      "lane": "own_recycling_solutions_2026_nonoverlap20",
+      "lane": "own_metaprom_metal_construction_nonoverlap20",
       "raw": 20,
       "fast_gate": 0,
       "size": 0,
@@ -134,19 +134,19 @@
       "contact": 0,
       "qualified": 0,
       "duplicates": 0,
-      "source_url": "https://md.expodat.com/expositions/exposition/146-recycling-solutions-2026.html",
-      "note": "20 identities screened after excluding obvious cross-catalogue repeats against RUPLASTICA and the worker pool; no candidate had enough cheap evidence to justify deep funnel without weakening SIGNAL criteria."
+      "source_url": "https://metaprom.ru/companies/metal-construction/",
+      "note": "20 source-level metal-construction identities screened after excluding obvious regional overlaps; no candidate had enough cheap current evidence to enter deep funnel without weakening SIGNAL criteria."
     }
   ],
   "qualified_companies": [
-    "RuDesktop"
+    "CENTEC / Centec Group"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "506_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "506_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "507_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "507_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
