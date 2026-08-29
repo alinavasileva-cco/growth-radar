@@ -1,0 +1,170 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "source_head": "e0462d117d53eb2e277d7099067f9e3a2c2f01f0",
+    "config_version": "2026-08-29T10:58:06+03:00",
+    "canonical_baseline": {
+      "master": 512,
+      "contactable": 512,
+      "last_completed_run": "N5K-20260829-495R1",
+      "integrity": "PASS"
+    },
+    "outreach_performed": false,
+    "canonical_writer_started": false,
+    "canonical_files_written": false,
+    "discovery": {
+      "raw_distinct_employer_candidates": 80,
+      "source_mix": [
+        "current GdeJob commercial-director vacancy surface",
+        "current GdeJob operations-director vacancy surface",
+        "current GdeJob development-director vacancy surface",
+        "Rabota.ru current director/executive vacancy surfaces",
+        "DreamJob current vacancy mirrors backed by hh.ru",
+        "Habr Career current B2B leadership vacancy surface",
+        "additional current vacancy mirrors used only for low-overlap switching"
+      ],
+      "lane_metrics": [
+        {
+          "lane": "GdeJob Moscow commercial leadership",
+          "first20_raw_distinct": 20,
+          "duplicate_plus_early_reject": 17,
+          "rate_percent": 85,
+          "stopped_after_first20": true
+        },
+        {
+          "lane": "GdeJob Moscow operations leadership",
+          "first20_raw_distinct": 20,
+          "duplicate_plus_early_reject": 16,
+          "rate_percent": 80,
+          "stopped_after_first20": true
+        },
+        {
+          "lane": "GdeJob Moscow development leadership",
+          "first20_raw_distinct": 20,
+          "duplicate_plus_early_reject": 16,
+          "rate_percent": 80,
+          "stopped_after_first20": true
+        },
+        {
+          "lane": "mixed low-overlap Rabota.ru / DreamJob / Habr Career / vacancy mirrors",
+          "first20_raw_distinct": 20,
+          "duplicate_plus_early_reject": 14,
+          "rate_percent": 70,
+          "stopped_after_first20": false
+        }
+      ],
+      "note": "All raw counts above are employer-level distinct within this worker pass after obvious cross-surface duplicates were removed. Saturated lanes above 70% duplicate+early-reject on the first 20 were stopped and the search switched to lower-overlap surfaces. No job-board row was counted twice as a separate company."
+    },
+    "funnel": {
+      "RAW": 80,
+      "FAST_GATE": 5,
+      "DEEP_CHECK": 2,
+      "SIZE": 2,
+      "LEGAL": 1,
+      "SIGNAL": 1,
+      "LPR": 1,
+      "CONTACT": 1,
+      "QUALIFIED": 1
+    },
+    "deep_check_notes": [
+      {
+        "candidate": "VentiAir / ВЕНТИЭЙР, Москва",
+        "result": "REJECT_LEGAL_IDENTITY",
+        "reason": "current sources expose conflicting Russian legal-entity identifiers for the brand (including INN 9717112628 in current corporate registries versus INN 7708318900 on the official contact page). The vacancy signal was not promoted because one unambiguous current legal entity could not be proven without guessing."
+      }
+    ]
+  },
+  "qualified": [
+    {
+      "brand": "НТК Приборэнерго",
+      "legal_name": "ООО «НАУЧНО-ТЕХНИЧЕСКАЯ КОМПАНИЯ ПРИБОРЭНЕРГО»",
+      "city": "Чебоксары",
+      "region": "Чувашская Республика — Чувашия",
+      "country": "Россия",
+      "inn": "2130171441",
+      "ogrn": "1162130057242",
+      "legal_status": "действующая организация",
+      "industry": "производство электрической распределительной и регулирующей аппаратуры; промышленная электроника и автоматизация",
+      "size": {
+        "revenue_2025_rub": 123450000,
+        "net_profit_2025_rub": 3870000,
+        "employees_current_registry": 5,
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1162130057242/",
+          "https://saby.ru/profile/2130171441-213001001"
+        ],
+        "note": "Used current 2025 financial reporting; older 2024 revenue figures were not used as the decision baseline."
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring",
+        "title": "Коммерческий директор (CCO)",
+        "date": "2026-08-10",
+        "description": "НТК Приборэнерго открыла вакансию коммерческого директора (CCO). Вакансия относится к действующему российскому производителю промышленной электроники и опубликована 10 августа 2026 года.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/215307/vakansii/136100447"
+        ]
+      },
+      "lpr": {
+        "name": "Иванов Алексей Валерианович",
+        "role": "директор с 06.02.2026",
+        "owners": [
+          {
+            "name": "Гаранин Сергей Геннадьевич",
+            "share_percent": 51
+          },
+          {
+            "name": "Сорокин Игорь Сергеевич",
+            "share_percent": 49
+          }
+        ],
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1162130057242/",
+          "https://saby.ru/profile/2130171441-213001001"
+        ]
+      },
+      "contact": {
+        "website": "https://priborenergo.com/",
+        "email": "zakaz2@ntkpribor.ru",
+        "phone": "+7 (495) 642-36-16",
+        "contact_page": "https://chb.priborenergo.com/contacts/",
+        "additional_routes": [
+          "+7 (8352) 38-89-27",
+          "diler@ntkpribor.ru",
+          "support@ntkpribor.ru"
+        ],
+        "route_type": "official corporate website/email/phone/contact page"
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/215307/vakansii/136100447",
+        "https://www.tbank.ru/business/contractor/legal/1162130057242/",
+        "https://saby.ru/profile/2130171441-213001001",
+        "https://priborenergo.com/",
+        "https://priborenergo.com/company/",
+        "https://chb.priborenergo.com/contacts/"
+      ],
+      "dedup_keys": {
+        "inn": "2130171441",
+        "ogrn": "1162130057242",
+        "legal_name_exact": "ООО «НАУЧНО-ТЕХНИЧЕСКАЯ КОМПАНИЯ ПРИБОРЭНЕРГО»",
+        "brand_domain": "НТК Приборэнерго|priborenergo.com"
+      },
+      "dedup_checks": {
+        "pre_deep_check_inn": "no canonical/repository match found for 2130171441",
+        "pre_write_ogrn": "no canonical/repository match found for 1162130057242",
+        "pre_write_legal_name": "no canonical/repository match found for НТК ПРИБОРЭНЕРГО",
+        "pre_write_domain": "no canonical/repository match found for priborenergo.com",
+        "checked_against_source_head": "e0462d117d53eb2e277d7099067f9e3a2c2f01f0"
+      },
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ]
+}
