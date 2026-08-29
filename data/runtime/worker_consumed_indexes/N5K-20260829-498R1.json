@@ -1,0 +1,20 @@
+{
+  "run_id": "N5K-20260829-498R1",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-29T15:02:51+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260829-142249-jobs.json",
+      "blob_sha": "f3654ebd2f02aab34c1b71803547386d69951f98",
+      "result": "CONSUMED_INTEGRATED",
+      "note": "Worker-qualified СБВ Утилизация was physically integrated in completed RUN 498R1 as N5K-0673. This index repairs the missing consumed marker; immutable staging is retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260829-142646-industry-metrics.json",
+      "blob_sha": "60dbddbcb50853034d9928d4c179d7e0e69370e2",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 raw / 0 FAST GATE / 0 qualified; already represented in completed RUN 498R1. Immutable staging is retained for audit."
+    }
+  ],
+  "outreach_performed": false
+}
