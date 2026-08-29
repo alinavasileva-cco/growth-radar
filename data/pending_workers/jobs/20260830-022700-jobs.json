@@ -1,0 +1,175 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-30T02:27:00+03:00",
+  "baseline_head": "4d026bd917f804b787410b7200a71ca783683fcd",
+  "config_version": "2026-08-30T01:06:46+03:00",
+  "canonical_snapshot": {
+    "canonical_count": 528,
+    "contactable_count": 528,
+    "integrity": "PASS",
+    "staged_not_counted": 0
+  },
+  "criteria_unchanged": true,
+  "outreach_performed": false,
+  "canonical_writer_run": false,
+  "canonical_files_written": false,
+  "discovery": {
+    "target_distinct_employers": "140-150",
+    "target_met": false,
+    "note": "Job-board surfaces contained substantially more listings, but this worker did not claim 140-150 employer-level distinct raw because every surface row was not resolved to a unique employer/legal identity. Only counts that could be supported from inspected source pages are recorded.",
+    "source_batches": [
+      {
+        "source": "HH",
+        "region": "Voronezh",
+        "query": "commercial director",
+        "surface_url": "https://voronezh.hh.ru/vacancies/kommercheskiy_direktor",
+        "surface_total": 54,
+        "inspected_first": 20,
+        "duplicate_plus_early_reject_rate": null,
+        "rate_note": "Not reconstructed because cheap rejects were not all resolved to canonical legal keys."
+      },
+      {
+        "source": "HH",
+        "region": "Kazan",
+        "query": "commercial director",
+        "surface_url": "https://kazan.hh.ru/vacancies/kommercheskiy_direktor",
+        "surface_total": 111,
+        "inspected_first": 20,
+        "duplicate_plus_early_reject_rate": null,
+        "rate_note": "Not reconstructed because cheap rejects were not all resolved to canonical legal keys."
+      },
+      {
+        "source": "HH",
+        "region": "Samara",
+        "query": "operations director",
+        "surface_url": "https://samara.hh.ru/vacancies/operacionnyy_direktor",
+        "surface_total": 84,
+        "inspected_first": 20,
+        "duplicate_plus_early_reject_rate": null
+      },
+      {
+        "source": "HH",
+        "region": "Omsk",
+        "query": "development director, last 24h",
+        "surface_url": "https://omsk.hh.ru/vacancies/direktor_po_razvitiyu/za_sutki",
+        "surface_total": 47,
+        "inspected_first": 20,
+        "duplicate_plus_early_reject_rate": null
+      },
+      {
+        "source": "HH",
+        "region": "Chelyabinsk",
+        "query": "operations manager/director signals",
+        "surface_url": "https://chelyabinsk.hh.ru/vacancies/operatsionnyj-menedzher",
+        "surface_total": 52,
+        "inspected_first": 20,
+        "duplicate_plus_early_reject_rate": null
+      }
+    ]
+  },
+  "worker_funnel": {
+    "source_level_observations_inspected": 100,
+    "raw_distinct_employer_level_legally_resolved": 38,
+    "fast_gate_pass": 5,
+    "deep_check": 3,
+    "size_pass": 1,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "note": "The 38 figure is limited to employer-level observations de-overlapped on the inspected Voronezh and Kazan batches; it is intentionally below the requested 140-150 target rather than inflating raw counts."
+  },
+  "qualified": [
+    {
+      "brand": "Альфатория",
+      "legal_name": "ООО «АЛЬФАТОРИЯ»",
+      "inn": "3663085935",
+      "ogrn": "1113668013942",
+      "region": "Воронежская область, Воронеж",
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 381482000,
+        "employees_2025": 22,
+        "size_gate": "PASS",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1113668013942-ooo-alfatoriya/",
+          "https://firmoteka.ru/3663085935"
+        ],
+        "evidence_note": "Действующее частное ООО; выручка 2025 = 381.482 млн руб.; среднесписочная численность 2025 = 22."
+      },
+      "legal": {
+        "status": "PASS",
+        "registered_at": "2011-03-29",
+        "legal_address": "394028, Воронежская область, г. Воронеж, ул. Димитрова, д. 124, литера И, офис 1",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1113668013942-ooo-alfatoriya/",
+          "https://firmoteka.ru/3663085935",
+          "https://alfatory.ru/company/"
+        ],
+        "brand_legal_mapping": "Official site identifies the operating business as ООО «Альфатория» at the same Voronezh address; ALFATORY/АЛЬФАТОРИЯ trademark is reported for this legal entity."
+      },
+      "signal": {
+        "level": "S1",
+        "status": "PASS",
+        "date": "2026-08-05",
+        "type": "executive_hiring",
+        "title": "Директор по маркетингу (Chief Marketing Officer, CMO)",
+        "description": "Fresh executive vacancy explicitly seeks a CMO to develop and implement the company marketing strategy at federal level and to raise company recognition and sales, which is a direct management/transformation and growth signal.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/176352/vakansii/135911654",
+          "https://voronezh.hh.ru/vacancies/kommercheskiy_direktor"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Иванов Иван Алексеевич",
+        "role": "Генеральный директор и 100% учредитель",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1113668013942-ooo-alfatoriya/",
+          "https://firmoteka.ru/3663085935"
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "route_type": "official_corporate_route_to_lpr",
+        "email": "sale@alfatory.ru",
+        "phones": [
+          "+7 804 333-24-23",
+          "+7 473 280-09-28",
+          "+7 499 649-29-26"
+        ],
+        "contact_form": "Official callback form on company site",
+        "contact_source_urls": [
+          "https://alfatory.ru/company/",
+          "https://alfatory.ru/contacts/stores/"
+        ],
+        "contact_note": "Only published official contacts used; no guessed or pattern-derived personal contact."
+      },
+      "dedup_keys": {
+        "inn": "3663085935",
+        "ogrn": "1113668013942",
+        "exact_legal_name": "ООО «АЛЬФАТОРИЯ»",
+        "brand_domain": "Альфатория|alfatory.ru"
+      },
+      "dedup": {
+        "pre_deep_check": "PASS",
+        "pre_staging": "PASS",
+        "repository_searches": [
+          "3663085935",
+          "1113668013942",
+          "Альфатория",
+          "alfatory.ru"
+        ],
+        "matches_found": 0
+      },
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1113668013942-ooo-alfatoriya/",
+        "https://firmoteka.ru/3663085935",
+        "https://dreamjob.ru/employers/176352/vakansii/135911654",
+        "https://alfatory.ru/company/",
+        "https://alfatory.ru/contacts/stores/"
+      ]
+    }
+  ]
+}
