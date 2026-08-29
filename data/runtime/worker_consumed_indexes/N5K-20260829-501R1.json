@@ -1,0 +1,29 @@
+{
+  "run_id": "N5K-20260829-501R1",
+  "consumed_at": "2026-08-29T17:06:30+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-162645-jobs.json",
+      "blob_sha": "0490e22faa086a628d77b1cc6f8abe679bb72489",
+      "status": "CONSUMED_DUPLICATE",
+      "raw": 80,
+      "worker_qualified": 1,
+      "net_new_qualified": 0,
+      "note": "ALLIO independently reverified but final physical dedup matched existing INN, OGRN, exact legal name and brand+domain."
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-162250-industry-metrics.json",
+      "blob_sha": "7b812f197a2fb3736a806abcbcad3aab70ad0a57",
+      "status": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 100,
+      "worker_qualified": 0,
+      "net_new_qualified": 0,
+      "note": "Five first-20 probes stopped at >70% duplicate+early reject; no deep-check."
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "outreach": 0
+}
