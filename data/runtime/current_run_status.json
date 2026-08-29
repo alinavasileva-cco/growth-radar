@@ -1,154 +1,141 @@
 {
-  "run_id": "N5K-20260829-494R1",
+  "run_id": "N5K-20260829-495",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T10:00:33+03:00",
+  "updated_at": "2026-08-29T10:58:06+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 507,
+    "baseline_count": 508,
     "target_count": 5000,
-    "current_canonical_count": 508,
-    "current_contactable_count": 508,
-    "progress_added": 1,
-    "remaining": 4492
+    "current_canonical_count": 512,
+    "current_contactable_count": 512,
+    "progress_added": 4,
+    "remaining": 4488
   },
   "funnel": {
-    "discovered": 1,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 0
+    "discovered": 208,
+    "fast_gate_passed": 13,
+    "size_check_passed": 7,
+    "legal_match_passed": 5,
+    "signal_confirmed": 5,
+    "lpr_identified": 5,
+    "contact_route_found": 5,
+    "qualified": 4,
+    "duplicates": 1,
+    "excluded": 203
   },
   "lane_metrics": [
     {
-      "lane": "same_cycle_repair_growth_jobs_crosscheck",
-      "category": "adaptive_repair",
-      "raw": 1,
-      "fast_gate": 1,
-      "size": 1,
+      "lane": "jobs_worker_20260829_102130",
+      "category": "jobs_job_boards_career",
+      "raw": 80,
+      "fast_gate": 6,
+      "size": 2,
+      "legal": 1,
       "signal": 1,
       "qualified": 1,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": 100.0,
-      "fast_gate_raw_pct": 100.0,
-      "note": "Repair candidate selected only after RUN 494 physical dedup rejected worker-staged Ариэль Инокс as already canonical. This repair metric is not used as a representative discovery-lane efficiency rate."
+      "duplicate_plus_early_reject": 74,
+      "qualified_raw_pct": 1.25,
+      "fast_gate_raw_pct": 7.5,
+      "prev_492": {
+        "raw": 80,
+        "fast_gate": 18,
+        "qualified": 1,
+        "qualified_raw_pct": 1.25,
+        "fast_gate_raw_pct": 22.5
+      },
+      "prev_493": {
+        "raw": 80,
+        "fast_gate": 7,
+        "qualified": 1,
+        "qualified_raw_pct": 1.25,
+        "fast_gate_raw_pct": 8.75
+      },
+      "prev_494": {
+        "raw": 80,
+        "fast_gate": 6,
+        "physical_new_qualified": 0,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 7.5
+      },
+      "adaptive_action": "KEEP_CAPPED_AT_5_PERCENT_NEXT_RUN; worker staging is ingested regardless"
+    },
+    {
+      "lane": "industry_worker_20260829_103503",
+      "category": "industry_catalogs_exhibitions",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 100,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "prev_492": {
+        "raw": 100,
+        "fast_gate": 0,
+        "qualified": 0
+      },
+      "prev_493": {
+        "raw": 100,
+        "fast_gate": 0,
+        "qualified": 0
+      },
+      "prev_494": {
+        "raw": 100,
+        "fast_gate": 0,
+        "qualified": 0
+      },
+      "adaptive_action": "NO_DEEP_CHECK; remain capped at 5%; catalog presence is never SIGNAL"
+    },
+    {
+      "lane": "growth_expansion_investment_business_change_news",
+      "category": "growth_expansion_investment_business_change_news",
+      "raw": 20,
+      "fast_gate": 5,
+      "size": 3,
+      "legal": 2,
+      "signal": 2,
+      "qualified": 2,
+      "duplicate_plus_early_reject": 15,
+      "qualified_raw_pct": 10.0,
+      "fast_gate_raw_pct": 25.0,
+      "prev_492": "not separately instrumented",
+      "prev_493": "not separately instrumented",
+      "prev_494": "mixed probe; attribution unavailable",
+      "adaptive_action": "INCREASE_TO_55_PERCENT_NEXT_RUN"
+    },
+    {
+      "lane": "official_company_owner_ceo_sources",
+      "category": "official_company_owner_ceo_sources",
+      "raw": 8,
+      "fast_gate": 2,
+      "size": 2,
+      "legal": 2,
+      "signal": 2,
+      "qualified": 2,
+      "duplicate_plus_early_reject": 6,
+      "qualified_raw_pct": 25.0,
+      "fast_gate_raw_pct": 25.0,
+      "prev_492": "not separately instrumented",
+      "prev_493": "not separately instrumented",
+      "prev_494": "mixed probe; attribution unavailable",
+      "adaptive_action": "SET_TO_30_PERCENT_NEXT_RUN; small sample, do not extrapolate 25% as stable"
     }
   ],
   "qualified_companies": [
-    "Юркас"
+    "БЭГРИФ",
+    "НЕОС Ингредиентс",
+    "Сибстекло",
+    "Феррум / Shipsteel"
   ],
-  "hourly_run_summary": {
-    "base_run_id": "N5K-20260829-494",
-    "repair_run_id": "N5K-20260829-494R1",
-    "raw_discovered": 200,
-    "fast_gate_passed": 7,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "prewrite_qualified": 2,
-    "physical_duplicates": 1,
-    "net_new_qualified": 1,
-    "physically_integrated": 1,
-    "excluded": 198,
-    "note": "Merged hourly result after same-cycle repair. Worker-staged Ариэль Инокс completed the semantic funnel but was rejected by final physical dedup as already canonical; Юркас came from the 20-company adaptive targeted probe and was then independently deep-checked and physically integrated. The repair candidate is not counted as an additional raw observation beyond the original 200."
-  },
-  "efficiency_controller": {
-    "last_three_runs": [
-      {"run_id": "N5K-20260829-491", "raw": 300, "net_new_qualified": 1, "qualified_raw_pct": 0.3333},
-      {"run_id": "N5K-20260829-492", "raw": 300, "net_new_qualified": 1, "qualified_raw_pct": 0.3333},
-      {"run_id": "N5K-20260829-493", "raw": 300, "net_new_qualified": 1, "qualified_raw_pct": 0.3333}
-    ],
-    "current_hour": {
-      "raw": 200,
-      "fast_gate": 7,
-      "net_new_qualified": 1,
-      "qualified_raw_pct": 0.5,
-      "fast_gate_raw_pct": 3.5,
-      "change_vs_previous_hour_qualified_raw_percentage_points": 0.1667,
-      "change_vs_previous_hour": "qualified/raw increased from 0.3333% to 0.50%; absolute net qualified remains below 5, so the previous allocation is not repeated."
-    },
-    "lanes": [
-      {
-        "lane": "jobs_worker_20260829_092115",
-        "category": "jobs_job_boards_career",
-        "raw": 80,
-        "fast_gate": 6,
-        "size": 1,
-        "signal": 1,
-        "prewrite_qualified": 1,
-        "physical_new_qualified": 0,
-        "physical_duplicates": 1,
-        "duplicate_plus_early_reject": 75,
-        "qualified_raw_pct": 0.0,
-        "worker_prewrite_qualified_raw_pct": 1.25,
-        "fast_gate_raw_pct": 7.5,
-        "prev_491": {"raw": 80, "fast_gate": 3, "physical_new_qualified": 1, "qualified_raw_pct": 1.25, "fast_gate_raw_pct": 3.75},
-        "prev_492": {"raw": 80, "fast_gate": 18, "physical_new_qualified": 1, "qualified_raw_pct": 1.25, "fast_gate_raw_pct": 22.5},
-        "prev_493": {"raw": 80, "fast_gate": 7, "physical_new_qualified": 1, "qualified_raw_pct": 1.25, "fast_gate_raw_pct": 8.75},
-        "adaptive_action": "CAP_TO_5_PERCENT_NEXT_3_RUNS under the explicit consecutive >70% duplicate+early-reject cooldown rule. Retain a 20-candidate probe because this source family historically produced qualified leads, but require physical dedup before counting conversion."
-      },
-      {
-        "lane": "industry_worker_20260829_092753",
-        "category": "industry_catalogs_exhibitions",
-        "raw": 100,
-        "fast_gate": 0,
-        "size": 0,
-        "signal": 0,
-        "physical_new_qualified": 0,
-        "physical_duplicates": 0,
-        "duplicate_plus_early_reject": 100,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 0.0,
-        "prev_491": {"raw": 100, "fast_gate": 0, "physical_new_qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
-        "prev_492": {"raw": 100, "fast_gate": 0, "physical_new_qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
-        "prev_493": {"raw": 100, "fast_gate": 0, "physical_new_qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
-        "adaptive_action": "CAP_TO_5_PERCENT_NEXT_3_RUNS; no deep-check while on cooldown; return only with a 20-candidate probe after cooldown. Exhibition/catalog presence is never SIGNAL."
-      },
-      {
-        "lane": "own_targeted_fresh_jobs_growth_change_probe",
-        "category": "adaptive_targeted_low_overlap",
-        "raw": 20,
-        "fast_gate": 1,
-        "size": 1,
-        "signal": 1,
-        "physical_new_qualified": 1,
-        "physical_duplicates": 0,
-        "duplicate_plus_early_reject": 19,
-        "qualified_raw_pct": 5.0,
-        "fast_gate_raw_pct": 5.0,
-        "adaptive_action": "KEEP_AS_SIGNAL-DRIVEN_PROBE but split next run into separately measurable growth-news and official-owner/company lanes; do not infer stable 5% conversion from one 20-company batch."
-      }
-    ],
-    "lanes_reduced": [
-      "jobs/job boards -> 5% probe for the next 3 runs because duplicate+early-reject remains above 70% in consecutive passes",
-      "industry/catalogs -> 5% maximum for the next 3 runs because fast_gate/raw=0% and qualified/raw=0% for at least four consecutive passes"
-    ],
-    "lanes_increased": [
-      "growth/expansion/investment/business-change news -> 50% next run",
-      "official company/owner/CEO sources and leadership/change signals -> 35% next run"
-    ],
-    "next_run_distribution_pct": {
-      "jobs_job_boards_career": 5,
-      "growth_expansion_investment_business_change_news": 50,
-      "official_company_owner_ceo_sources": 35,
-      "industry_catalogs_exhibitions": 5,
-      "experimental_low_overlap": 5
-    },
-    "reason": "The old 80 jobs + 100 industry + 120 catalog-heavy layout yielded only one new qualified in each of RUN 491-493 and industry remained zero-yield. RUN 494 therefore stopped padding raw with catalogs. The next run concentrates on under-measured high-signal growth/change and official-owner sources while keeping jobs and industry only as cooldown probes."
-  },
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "508_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "508_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "512_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "512_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

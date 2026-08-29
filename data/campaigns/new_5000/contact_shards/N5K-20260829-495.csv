@@ -1,0 +1,12 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0666,N5K-0666-C01,БЭГРИФ,5407206621,,Корпоративный маршрут,+7 (383) 212-59-73,phone,corporate,официальный сайт БЭГРИФ,https://bagrif.ru/index.php/contacts,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0666,N5K-0666-C02,БЭГРИФ,5407206621,,Корпоративный маршрут,bagrif@mail.ru,email,corporate,официальный сайт БЭГРИФ,https://bagrif.ru/index.php/contacts,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0666,N5K-0666-C03,БЭГРИФ,5407206621,,Корпоративный маршрут,https://bagrif.ru/index.php/contacts,web,corporate,официальный сайт БЭГРИФ,https://bagrif.ru/index.php/contacts,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0667,N5K-0667-C01,НЕОС Ингредиентс,7722530095,,Корпоративный маршрут,8 (800) 500-06-50,phone,corporate,официальный сайт НЕОС Ингредиентс,https://neos-ingredients.ru/contacts/,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0667,N5K-0667-C02,НЕОС Ингредиентс,7722530095,,Корпоративный маршрут,info@neos-ingredients.ru,email,corporate,официальный сайт НЕОС Ингредиентс,https://neos-ingredients.ru/contacts/,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0667,N5K-0667-C03,НЕОС Ингредиентс,7722530095,,Корпоративный маршрут,https://neos-ingredients.ru/contacts/,web,corporate,официальный сайт НЕОС Ингредиентс,https://neos-ingredients.ru/contacts/,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0668,N5K-0668-C01,Сибстекло,5406305355,,Корпоративный маршрут,info@sibstek.ru,email,corporate,официальный сайт Сибстекло,https://sibstek.ru/,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0668,N5K-0668-C02,Сибстекло,5406305355,,Корпоративный маршрут,https://sibstek.ru/,web,corporate,официальный сайт Сибстекло,https://sibstek.ru/,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0669,N5K-0669-C01,Феррум / Shipsteel,5263039350,,Корпоративный маршрут,+7 (831) 261-30-00,phone,corporate,официальный сайт Феррум,https://shipsteel.ru/contacts.html,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0669,N5K-0669-C02,Феррум / Shipsteel,5263039350,,Корпоративный маршрут,office@shipsteel.ru,email,corporate,официальный сайт Феррум,https://shipsteel.ru/contacts.html,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
+N5K-0669,N5K-0669-C03,Феррум / Shipsteel,5263039350,,Корпоративный маршрут,https://shipsteel.ru/contacts.html,web,corporate,официальный сайт Феррум,https://shipsteel.ru/contacts.html,NO,HIGH,2026-08-29,,N5K-20260829-495,new_5000
