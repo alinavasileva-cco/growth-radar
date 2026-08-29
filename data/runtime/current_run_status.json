@@ -2,7 +2,7 @@
   "run_id": "N5K-20260829-498R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T14:46:35+03:00",
+  "updated_at": "2026-08-29T14:49:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 514,
@@ -10,7 +10,8 @@
     "current_canonical_count": 515,
     "current_contactable_count": 515,
     "progress_added": 1,
-    "remaining": 4485
+    "remaining": 4485,
+    "remaining_to_1000": 485
   },
   "funnel": {
     "discovered": 180,
@@ -23,7 +24,7 @@
     "qualified": 1,
     "duplicates": 0,
     "excluded": 179,
-    "physically_integrated": 0
+    "physically_integrated": 1
   },
   "lane_metrics": [
     {
@@ -43,13 +44,12 @@
       "qualified": 0
     }
   ],
-  "qualified_companies": [
-    "СБВ Утилизация"
-  ],
+  "qualified_companies": ["СБВ Утилизация"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "515_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "515_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
