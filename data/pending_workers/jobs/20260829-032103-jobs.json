@@ -1,0 +1,134 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-29T03:21:03+03:00",
+    "baseline_head": "cb18dd93e2209610f3aefe1dd1275d64d10b8afe",
+    "baseline_run": "N5K-20260829-487",
+    "baseline_canonical": 501,
+    "baseline_contactable": 501,
+    "canonical_write": false,
+    "canonical_writer_started": false,
+    "outreach": false
+  },
+  "source_policy": {
+    "raw_target": "80-150 distinct low-overlap employer candidates",
+    "sources_used": [
+      "Rabota.ru",
+      "HH-derived vacancy mirrors",
+      "Careerist",
+      "DreamJob",
+      "Habr Career",
+      "GetMatch",
+      "other indexed job-board signals"
+    ],
+    "saturation_rule": "stop a source after first 20 when duplicate+early-reject >70%",
+    "lane_rate_note": "Exact first-20 per-source percentages were not persistently instrumented during this worker pass and are therefore not reconstructed. Saturated broad lanes were abandoned in favor of lower-overlap regional/title queries."
+  },
+  "funnel": {
+    "raw_distinct_employers": 80,
+    "fast_gate": 6,
+    "deep_check": 1,
+    "SIZE": 1,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "qualified": [
+    {
+      "brand": "Тегива",
+      "legal_name": "ООО \"ТЕГИВА\"",
+      "city": "Москва",
+      "inn": "7730668280",
+      "ogrn": "1127746543429",
+      "legal_status": "active",
+      "private_company": true,
+      "size": {
+        "revenue_year": 2025,
+        "revenue_rub": 201800000,
+        "employees_latest_confirmed": 13,
+        "evidence": [
+          "https://companium.ru/id/1127746543429-tegiva",
+          "https://companies.rbc.ru/id/1127746543429-ooo-tegiva/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "senior operating hire for scaling and new revenue streams",
+        "vacancy_title": "Операционный директор (COO)",
+        "signal_date": "2026-06-28",
+        "evidence_summary": "ГК «Тегива» ищет операционного директора, который поможет масштабировать вендинговый бизнес, усилить операционные процессы и запустить новые источники выручки; вакансия оставалась индексированной как актуальная до конца августа 2026.",
+        "evidence_urls": [
+          "https://moskva.jobrun.ru/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-coo-%D1%81%D1%84%D0%B5%D1%80%D1%8B-%D1%83%D1%81%D0%BB%D1%83%D0%B3-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/%D0%BC-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0-%D0%B8%D0%BC-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0-%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D1%8B%D0%B9-%D1%80%D1%8F%D0%B4-%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C-%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8-%D1%82%D0%B5%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F",
+          "https://careerist.ru/vakansii/operatsionnyy-direktor-coo-new-format-87473374.html",
+          "https://dreamjob.ru/employers/6435917/vakansii/135799147"
+        ]
+      },
+      "lpr": {
+        "owner": {
+          "name": "Гузеев Максим Викторович",
+          "role": "100% учредитель"
+        },
+        "executive": {
+          "name": "Дорохова Елена Валентиновна",
+          "role": "генеральный директор"
+        },
+        "evidence_urls": [
+          "https://reputation.ru/ogrn/1127746543429",
+          "https://companium.ru/id/1127746543429-tegiva",
+          "https://companies.rbc.ru/id/1127746543429-ooo-tegiva/"
+        ]
+      },
+      "contact": {
+        "route_type": "published corporate phone/email plus active job-board response route",
+        "phones": [
+          "+7 495 925-23-11",
+          "+7 495 766-50-56"
+        ],
+        "emails": [
+          "tegivallc@gmail.com",
+          "dorohova.e@gmail.com"
+        ],
+        "contact_urls": [
+          "https://companium.ru/id/1127746543429-tegiva",
+          "https://zachestnyibiznes.ru/company/ul/1127746543429_7730668280_OOO-TEGIVA",
+          "https://dreamjob.ru/employers/6435917/vakansii/135799147"
+        ]
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7730668280",
+        "ogrn": "1127746543429",
+        "exact_legal_name": "ООО \"ТЕГИВА\"",
+        "brand": "Тегива",
+        "confirmed_domain": null
+      },
+      "dedup_recheck": {
+        "checked_against_head": "cb18dd93e2209610f3aefe1dd1275d64d10b8afe",
+        "inn_match": false,
+        "ogrn_match": false,
+        "exact_legal_name_match": false,
+        "brand_domain_match": false,
+        "note": "No confirmed corporate domain was used as a dedup key; no domain was inferred."
+      },
+      "evidence_urls": [
+        "https://companium.ru/id/1127746543429-tegiva",
+        "https://companies.rbc.ru/id/1127746543429-ooo-tegiva/",
+        "https://reputation.ru/ogrn/1127746543429",
+        "https://synapsenet.ru/organizacii/1127746543429-ooo-tegiva",
+        "https://careerist.ru/vakansii/operatsionnyy-direktor-coo-new-format-87473374.html",
+        "https://dreamjob.ru/employers/6435917/vakansii/135799147"
+      ],
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": true
+      }
+    }
+  ]
+}
