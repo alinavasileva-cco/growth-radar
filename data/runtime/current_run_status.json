@@ -3,14 +3,15 @@
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-08-30T02:35:07+03:00",
-  "stage": "COMPLETE",
+  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
   "new_cycle": {
     "baseline_count": 528,
     "target_count": 5000,
     "current_canonical_count": 529,
     "current_contactable_count": 529,
     "progress_added": 1,
-    "remaining": 4471
+    "remaining": 4471,
+    "remaining_to_1000": 471
   },
   "funnel": {
     "discovered": 38,
@@ -24,7 +25,7 @@
     "contact_route_found": 1,
     "prewrite_qualified": 1,
     "qualified": 1,
-    "physically_integrated": 0,
+    "physically_integrated": 1,
     "duplicates": 0,
     "excluded": 37
   },
@@ -47,9 +48,7 @@
       "note": "Fresh worker data only; raw count is employer-level distinct where legally resolved. No padding from unresolved vacancy rows."
     }
   ],
-  "qualified_companies": [
-    "Альфатория"
-  ],
+  "qualified_companies": ["Альфатория"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -57,5 +56,6 @@
   "physical_master_state": "529_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "529_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "notes": "Recovery 510R1 physically integrated Альфатория as N5K-0689. Metadata repaired after integration so physically_integrated and remaining_to_1000 match physical canonical state."
 }
