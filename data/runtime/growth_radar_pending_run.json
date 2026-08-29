@@ -1,8 +1,103 @@
 {
-  "run_id": "N5K-20260829-502",
-  "updated_at": "2026-08-29T17:57:38+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260829-502 integrated physically; canonical/contactable 518/518; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260829-503R1",
+  "updated_at": "2026-08-29T19:47:43+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 260,
+    "fast_gate_passed": 10,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "pre_write_qualified": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 258,
+    "physically_integrated": 0
+  },
+  "lane_metrics": [
+    {"lane":"jobs_job_boards_career","raw":160,"fast_gate":10,"size":3,"legal":2,"signal":2,"lpr":2,"contact":2,"qualified":2,"note":"Two fresh immutable jobs worker batches consumed. Final physical dedup delegated to canonical integrator; worker repository search is not treated as authoritative dedup."},
+    {"lane":"industry_catalogs_exhibitions","raw":100,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"note":"Five 20-candidate source batches exceeded 70% duplicate+early-reject; no exhibition/catalog presence counted as SIGNAL."}
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0677",
+      "Brand": "Programming Store",
+      "Legal Name": "ООО «ПРОСТО»",
+      "INN": "1841039706",
+      "OGRN/OGRNIP": "1141841001158",
+      "Region": "Удмуртская Республика",
+      "City": "Ижевск",
+      "Segment": "B2B IT / системная интеграция / программное обеспечение",
+      "Website": "https://programstore.ru/",
+      "Revenue/Scale": "Выручка 680,754 млн ₽ за 2025 год; 196 сотрудников; вакансия указывает команду 250+ человек; действующее ООО.",
+      "Signal Level": "S1",
+      "Signal Summary": "03.08.2026 опубликована вакансия коммерческого директора (CCO) с ответственностью за коммерческое управление и развитие системообразующей IT-компании региона.",
+      "Signal Date": "2026-08-03",
+      "Signal Source": "https://dreamjob.ru/employers/136859/vakansii/135837126",
+      "Owner": "Не использован как основание квалификации; подтверждён текущий директор/ЛПР.",
+      "CEO": "Петухов Алексей Валерьевич",
+      "LPR": "Петухов Алексей Валерьевич",
+      "LPR Role": "Директор / практический ЛПР",
+      "Primary Phone": "8 800 600-25-01",
+      "Primary Email": "site@programstore.ru",
+      "HH Contact": "",
+      "Contact Form": "https://programstore.ru/contacts",
+      "Contact Type": "официальные корпоративные маршруты",
+      "Contact Source": "официальный сайт Programming Store",
+      "Consulting Hypothesis": "Систематизация коммерческого контура IT-компании: сегментация B2B-клиентов, pipeline/CRM, KPI, sales-marketing alignment и управляемое масштабирование коммерческой функции.",
+      "contacts": [
+        {"value":"8 800 600-25-01","channel":"phone","type":"official_corporate","source":"Programming Store official contacts","url":"https://programstore.ru/contacts","is_lpr":false,"notes":"Официальный корпоративный телефон."},
+        {"value":"+7 (3412) 97-24-23","channel":"phone","type":"official_corporate","source":"Programming Store official contacts","url":"https://programstore.ru/contacts","is_lpr":false,"notes":"Официальный офисный телефон."},
+        {"value":"site@programstore.ru","channel":"email","type":"official_corporate","source":"Programming Store official contacts","url":"https://programstore.ru/contacts","is_lpr":false,"notes":"Официальный корпоративный email."}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «ПРОСТО», ИНН 1841039706, ОГРН 1141841001158, действует; директор Петухов Алексей Валерьевич.","url":"https://saby.ru/profile/1841039706-183101001","source":"Saby"},
+        {"type":"SIZE","claim":"Выручка за 2025 год 680,754 млн ₽; 196 сотрудников.","url":"https://www.tbank.ru/business/contractor/legal/1141841001158/","source":"Т-Банк Бизнес"},
+        {"type":"SIGNAL","claim":"03.08.2026 вакансия Коммерческого директора (CCO) с задачами коммерческого управления и развития.","url":"https://dreamjob.ru/employers/136859/vakansii/135837126","source":"DreamJob"},
+        {"type":"CONTACT","claim":"Официальные корпоративные телефон, email и contact route.","url":"https://programstore.ru/contacts","source":"Programming Store"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0678",
+      "Brand": "БиоМикроГели / Биополимер",
+      "Legal Name": "ООО «БИОПОЛИМЕР»",
+      "INN": "6679148488",
+      "OGRN/OGRNIP": "1226600002705",
+      "Region": "Свердловская область",
+      "City": "Екатеринбург",
+      "Segment": "химическая промышленность / биополимеры / промышленная водоочистка / B2B",
+      "Website": "https://biopolymer.eco/",
+      "Revenue/Scale": "Выручка 282,402 млн ₽ за 2025 год; 48 сотрудников; действующее ООО.",
+      "Signal Level": "S1",
+      "Signal Summary": "23.07.2026 опубликована вакансия директора по развитию ООО «Биополимер», входящего в ГК БМГ.",
+      "Signal Date": "2026-07-23",
+      "Signal Source": "https://nesiditsa.ru/vacancy/135513698",
+      "Owner": "ООО «ГРУППА КОМПАНИЙ БИОМИКРОГЕЛИ» — 100%",
+      "CEO": "Елагин Андрей Александрович",
+      "LPR": "Елагин Андрей Александрович",
+      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Primary Phone": "+7 (343) 288-76-95",
+      "Primary Email": "info@biopolymer.eco",
+      "HH Contact": "",
+      "Contact Form": "https://biopolymer.eco/contacts/",
+      "Contact Type": "официальные корпоративные маршруты",
+      "Contact Source": "официальный сайт ООО «Биополимер»",
+      "Consulting Hypothesis": "Управляемая модель B2B-развития промышленного продукта: сегментация рынков, крупные сделки, KPI/forecast и партнёрская сеть.",
+      "contacts": [
+        {"value":"+7 (343) 288-76-95","channel":"phone","type":"official_corporate","source":"Biopolymer official contacts","url":"https://biopolymer.eco/contacts/","is_lpr":false,"notes":"Официальный корпоративный телефон."},
+        {"value":"info@biopolymer.eco","channel":"email","type":"official_corporate","source":"Biopolymer official contacts","url":"https://biopolymer.eco/contacts/","is_lpr":false,"notes":"Официальный корпоративный email."},
+        {"value":"sales@biopolymer.eco","channel":"email","type":"official_sales","source":"Biopolymer official contacts","url":"https://biopolymer.eco/contacts/","is_lpr":false,"notes":"Официальный sales email."}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «БИОПОЛИМЕР», ИНН 6679148488, ОГРН 1226600002705, действует.","url":"https://biopolymer.eco/documents/","source":"ООО «Биополимер»"},
+        {"type":"SIZE","claim":"Выручка за 2025 год 282,402 млн ₽; 48 сотрудников.","url":"https://saby.ru/profile/6679148488-667001001","source":"Saby"},
+        {"type":"SIGNAL","claim":"23.07.2026 вакансия директора по развитию ООО «Биополимер».","url":"https://nesiditsa.ru/vacancy/135513698","source":"НеСидится"},
+        {"type":"CONTACT","claim":"Официальные корпоративные маршруты связи.","url":"https://biopolymer.eco/contacts/","source":"ООО «Биополимер»"}
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 2,
+  "notes": "Recovery after expected canonical hourly cycle was not confirmed after RUN 502. Fresh post-502 workers provide 260 raw observations. Physical canonical dedup is authoritative; notably ООО «БИОПОЛИМЕР» is already physically present as N5K-0383 and must be skipped by integrator. Outreach prohibited."
 }
