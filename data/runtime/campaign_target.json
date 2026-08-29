@@ -11,16 +11,16 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-29T17:02:31+03:00",
+  "updated_at": "2026-08-29T17:06:30+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260829-501",
-  "current_run_id": "N5K-20260829-501",
-  "last_run_id": "N5K-20260829-501",
-  "latest_completed_run": "N5K-20260829-501",
-  "hourly_parent_run_id": "N5K-20260829-500",
+  "last_completed_run_id": "N5K-20260829-501R1",
+  "current_run_id": "N5K-20260829-501R1",
+  "last_run_id": "N5K-20260829-501R1",
+  "latest_completed_run": "N5K-20260829-501R1",
+  "hourly_parent_run_id": "N5K-20260829-501",
   "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "note": "N5K-20260829-501 completed after physical integration: +0 net new; canonical/contactable 516/516; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260829-501R1 completed after physical dedup and efficiency repair: +0 net new; ALLIO was an existing canonical duplicate on INN, OGRN, exact legal name and brand+domain; canonical/contactable 516/516; remaining to 1000 484; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
