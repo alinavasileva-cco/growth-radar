@@ -1,0 +1,16 @@
+{
+  "run_id": "N5K-20260829-507R1",
+  "campaign_id": "new_5000",
+  "updated_at": "2026-08-29T23:01:35+03:00",
+  "consumed": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-222500-jobs.json",
+      "blob_sha": "3ad5336082a888ac4a93efc1c4ec0563f7f08b67",
+      "result": "CONSUMED_INTEGRATED",
+      "integrated_lead_id": "N5K-0684",
+      "note": "ZVEZDA Спецтехники / ООО «ПРОМСПЕЦАВТО» independently reverified and integrated after physical canonical dedup. Immutable staging retained."
+    }
+  ],
+  "outreach_sent": 0
+}
