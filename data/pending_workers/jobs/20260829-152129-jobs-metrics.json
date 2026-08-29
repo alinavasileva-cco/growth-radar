@@ -1,0 +1,108 @@
+{
+  "worker": "read-discovery",
+  "lane": "jobs",
+  "run_started_at": "2026-08-29T15:21:29+03:00",
+  "baseline_head": "9d55493583d719ab85825bf88ce4376779563468",
+  "config_version": "2026-08-29T15:02:51+03:00",
+  "canonical_baseline": {
+    "last_completed_run": "N5K-20260829-499",
+    "master_count": 516,
+    "contactable_count": 516,
+    "integrity": "PASS",
+    "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"]
+  },
+  "constraints": {
+    "canonical_writer_run": false,
+    "canonical_files_written": false,
+    "outreach": false,
+    "stale_records_used_for_positive_decisions": false
+  },
+  "discovery": {
+    "raw_distinct": 80,
+    "raw_definition": "employer-level source observations de-overlapped by employer/brand name before counting",
+    "lanes": [
+      {
+        "source": "HH Moscow — B2B commercial director, last 3 days",
+        "source_url": "https://hh.ru/vacancies/kommercheskij-direktor-b2b/za_poslednie_tri_dnya",
+        "first20_source_rows": 20,
+        "distinct_raw_kept": 20,
+        "duplicate_plus_early_reject_first20": 15,
+        "rate": 0.75,
+        "stopped_after_first20": true
+      },
+      {
+        "source": "HH Ekaterinburg — commercial director",
+        "source_url": "https://ekaterinburg.hh.ru/vacancies/kommercheskiy_direktor",
+        "first20_source_rows": 20,
+        "distinct_raw_kept": 18,
+        "duplicate_plus_early_reject_first20": 15,
+        "rate": 0.75,
+        "stopped_after_first20": true,
+        "note": "two duplicate employer observations were not counted as distinct raw"
+      },
+      {
+        "source": "HH Kazan — operations director, last 3 days",
+        "source_url": "https://kazan.hh.ru/vacancies/operacionnyy_direktor/za_poslednie_tri_dnya",
+        "first20_source_rows": 20,
+        "distinct_raw_kept": 20,
+        "duplicate_plus_early_reject_first20": 18,
+        "rate": 0.90,
+        "stopped_after_first20": true
+      },
+      {
+        "source": "DreamJob low-overlap current management roles",
+        "distinct_raw_kept": 22,
+        "duplicate_plus_early_reject_first20": null,
+        "rate": null,
+        "stopped_after_first20": false,
+        "note": "first-20 source metric was not safely recoverable from fused search selection and was not reconstructed or invented"
+      }
+    ]
+  },
+  "worker_funnel": {
+    "RAW": 80,
+    "FAST_GATE": 3,
+    "DEEP_CHECK": 3,
+    "SIZE": 1,
+    "LEGAL": 0,
+    "SIGNAL": 0,
+    "LPR": 0,
+    "CONTACT": 0,
+    "QUALIFIED": 0
+  },
+  "deep_checks": [
+    {
+      "candidate": "Точка Роста — промышленное оборудование, Чебоксары",
+      "size": "brand-level official site claims >100 employees and >250m RUB annual turnover; legal entity financials found for same-name ООО differ materially",
+      "signal": "Commercial Director (CCO), 2026-08-11; current HH also shows executive-director hiring",
+      "signal_url": "https://dreamjob.ru/employers/301198/vakansii/136143337",
+      "legal_result": "REJECT_FAIL_CLOSED",
+      "reason": "current official industrial site footer identifies ООО ОСНОВА, INN 7736669964, OGRN 1147746031443, while job-board employer verification links ООО ТОЧКА РОСТА, INN 2130128742, OGRN 1132130015555. Brand-to-legal mapping is conflicting; no positive decision made.",
+      "evidence_urls": [
+        "https://osnova-rosta.ru/company",
+        "https://www.tbank.ru/business/contractor/legal/1132130015555/",
+        "https://schelkovo.rabota.ru/company/3393398/"
+      ]
+    },
+    {
+      "candidate": "ООО Компания Киль-Казань",
+      "size_result": "REJECT",
+      "reason": "2025 revenue 5.468bn RUB, materially outside the working small/mid-market size profile; criteria not relaxed",
+      "evidence_urls": [
+        "https://firmoteka.ru/1655382345",
+        "https://kazan.hh.ru/vacancies/operacionnyy_direktor/za_poslednie_tri_dnya"
+      ]
+    },
+    {
+      "candidate": "ООО РиР ГРУПП",
+      "size_result": "REJECT",
+      "reason": "legal entity registered 2026-04-16 and no current financial/operating scale sufficient for SIZE was confirmed; no proxy scale invented",
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1261600012992-ooo-rir-grupp/",
+        "https://kazan.hh.ru/vacancies/operacionnyy_direktor/za_poslednie_tri_dnya"
+      ]
+    }
+  ],
+  "qualified": [],
+  "result": "ZERO_QUALIFIED_METRICS_ONLY"
+}
