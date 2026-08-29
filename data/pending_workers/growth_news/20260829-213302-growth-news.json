@@ -1,0 +1,97 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-29T21:33:02+03:00",
+  "base_head_sha": "5079108129ce5b646323f48fd2b39a586fabf909",
+  "config_version": "2026-08-29T20:52:32+03:00",
+  "canonical_snapshot": {"canonical": 521, "contactable": 521, "qualified_staged_not_counted": 0, "integrity": "PASS"},
+  "criteria_unchanged": true,
+  "outreach": false,
+  "repo_wide_dedup": {
+    "before_deep_check": true,
+    "before_write": true,
+    "keys_checked": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "brand_domain"],
+    "pending_worker_dirs_seen": ["growth_news", "industry", "jobs", "official_owner"],
+    "candidate_key_search": {"inn": "5037044130", "ogrn": "1025004860638", "legal_name": "АО ТУРБОКОМПЛЕКТ", "brand_domain": "Турбокомплект|kamturbo.ru", "matches_found": 0},
+    "note": "GitHub code search returned no matching repository entries for candidate keys; immutable pending directories were enumerated immediately before write."
+  },
+  "discovery": {
+    "target_distinct_raw": "140-180",
+    "source_batches_required": 5,
+    "source_batches_run": 5,
+    "distinct_raw_verified": null,
+    "status": "PARTIAL_NOT_PROVEN",
+    "note": "Five independent fresh-growth search batches were executed. Search-result rows were not counted as distinct companies unless company identity was resolved; therefore the requested 140-180 distinct company-level raw count is not claimed for this run.",
+    "batches": [
+      {"batch": 1, "theme": "new production launches Aug-2026", "status": "searched"},
+      {"batch": 2, "theme": "production expansion/capacity Aug-2026", "status": "searched"},
+      {"batch": 3, "theme": "new plants/sites/regional investment", "status": "searched"},
+      {"batch": 4, "theme": "business growth/transformation/company news", "status": "searched"},
+      {"batch": 5, "theme": "PMEF-2026 investment projects follow-through", "status": "searched"}
+    ]
+  },
+  "worker_funnel": {
+    "raw_distinct_verified": null,
+    "fast_gate": 3,
+    "size": 2,
+    "legal": 2,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "Турбокомплект",
+      "legal_name": "АО «ТУРБОКОМПЛЕКТ»",
+      "inn": "5037044130",
+      "ogrn": "1025004860638",
+      "legal_status": "Действующая организация",
+      "location": "Протвино, Московская область",
+      "website": "https://kamturbo.ru/",
+      "domain": "kamturbo.ru",
+      "size": {
+        "status": "PASS",
+        "evidence": "Последняя публично доступная финансовая отчетность в найденных источниках: выручка 453,35 млн руб. за 2021 год; действующий производственный комплекс. Более свежий операционный масштаб подтверждается инвестициями 1,8 млрд руб. в новый корпус и ростом мощности до 90 тыс. изделий в год.",
+        "sources": [
+          "https://xfirm.ru/company/5037044130",
+          "https://companies.rbc.ru/id/1025004860638-ao-turbokomplekt/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S2",
+        "date": "2026-08-27",
+        "summary": "АО «Турбокомплект» открыло новый производственный корпус в Протвино. Инвестиции составили 1,8 млрд руб., из них 1,2 млрд руб. — заем ФРП. После выхода на проектную мощность выпуск турбокомпрессоров должен вырасти примерно на 45%, с 46 тыс. до 90 тыс. изделий в год; параллельно модернизирована действующая площадка.",
+        "sources": [
+          "https://news.drom.ru/103541.html",
+          "https://www1.ru/news/2026/08/27/turbokompressory-dlia-gruzovikov-i-spectexniki-iamz-tmx-i-mmz-budut-proizvodit-v-podmoskove.html",
+          "https://ww1.metalinfo.ru/ru/news/187260"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Барбалат Алексей Васильевич",
+        "role": "Генеральный директор",
+        "source": "https://xfirm.ru/company/5037044130"
+      },
+      "contact": {
+        "status": "PASS",
+        "route": "Официальный отдел продаж",
+        "phone": ["+7-4967-310-680", "+7-916-582-67-38"],
+        "email": "sale@kamturbo.ru",
+        "source": "https://kamturbo.ru/o-nas/"
+      },
+      "dedup_keys": {
+        "inn": "5037044130",
+        "ogrn": "1025004860638",
+        "exact_legal_name": "АО «ТУРБОКОМПЛЕКТ»",
+        "brand_domain": "Турбокомплект|kamturbo.ru"
+      },
+      "decision": "QUALIFIED"
+    }
+  ],
+  "excluded_deep_checked": [
+    {"name": "АО «ЛАБОРАТОРИЯ ППШ»", "reason": "SIZE fail: свежий источник относит компанию к крупному бизнесу; выручка 2025 около 4,36 млрд руб."},
+    {"name": "РАТЕЛ Ступино", "reason": "не доведен до QUALIFIED в этом run: growth signal подтвержден, но актуальный SIZE/LPR/contact пакет не был закрыт без допущений"}
+  ]
+}
