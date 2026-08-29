@@ -1,0 +1,29 @@
+{
+  "run_id": "N5K-20260829-491",
+  "recorded_at": "2026-08-29T07:02:56+03:00",
+  "canonical_integration_commit": "0212ab0def752a7830089897ba26454c70370e80",
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-063400-jobs.json",
+      "blob_sha": "f2b305ea24432f5d3cbeada688c861f1cb6284b4",
+      "status": "CONSUMED_INTEGRATED",
+      "raw": 80,
+      "qualified_worker": 1,
+      "physically_integrated": 1,
+      "note": "ИжМСК / ООО «ИЖМАШСТРОЙКОМПЛЕКТ» integrated as N5K-0662 after independent canonical recheck and final physical dedup. Worker publication date and owner shares were not used where independently unconfirmed."
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-062606-industry-metrics.json",
+      "blob_sha": "0df90e3e2a5c5e932ebc0804287ac1042ede0898",
+      "status": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 100,
+      "qualified_worker": 0,
+      "physically_integrated": 0,
+      "note": "All five 20-record lanes stopped at 100% duplicate+early-reject saturation; exhibition/catalog presence was not counted as SIGNAL."
+    }
+  ],
+  "history_preserved": true,
+  "outreach": 0
+}
