@@ -2,7 +2,7 @@
   "run_id": "N5K-20260829-502",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T17:57:38+03:00",
+  "updated_at": "2026-08-29T18:03:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 516,
@@ -10,7 +10,8 @@
     "current_canonical_count": 518,
     "current_contactable_count": 518,
     "progress_added": 2,
-    "remaining": 4482
+    "remaining": 4482,
+    "remaining_to_1000": 482
   },
   "funnel": {
     "discovered": 190,
@@ -24,7 +25,7 @@
     "qualified": 2,
     "duplicates": 0,
     "excluded": 188,
-    "physically_integrated": 0
+    "physically_integrated": 2
   },
   "lane_metrics": [
     {
@@ -37,7 +38,7 @@
       "duplicate_plus_early_reject": 73,
       "qualified_raw": 0.0125,
       "fast_gate_raw": 0.0875,
-      "note": "Fresh immutable jobs worker. DEALLOG independently reverified before canonical staging; worker staging is input only."
+      "note": "Fresh immutable jobs worker. DEALLOG independently reverified and physically integrated after final canonical dedup. Own jobs discovery remains capped because duplicate+early-reject is 91.25%."
     },
     {
       "lane": "industry_catalogs_exhibitions",
@@ -61,7 +62,7 @@
       "duplicate_plus_early_reject": 4,
       "qualified_raw": 0.1,
       "fast_gate_raw": 0.6,
-      "note": "Adaptive low-overlap fresh-news probe after weak prior net-new output; only Petrovax was promoted through the full evidence funnel. Other observations were not forced through deep-check."
+      "note": "Adaptive fresh-news probe produced Petrovax; small 10-raw sample, so the 10% conversion is not treated as a stable long-run rate."
     },
     {
       "lane": "official_company_owner_ceo",
@@ -87,14 +88,61 @@
       "fast_gate_raw": null
     }
   ],
-  "qualified_companies": [
-    "DEALLOG",
-    "Петровакс Фарм"
+  "efficiency_history": [
+    {"run_id":"N5K-20260829-499","raw":20,"fast_gate":6,"qualified":1,"qualified_raw":0.05,"fast_gate_raw":0.30},
+    {"run_id":"N5K-20260829-500","raw":200,"fast_gate":9,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.045},
+    {"run_id":"N5K-20260829-501R1","raw":200,"fast_gate":17,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.085},
+    {"run_id":"N5K-20260829-502","raw":190,"fast_gate":13,"qualified":2,"qualified_raw":0.010526,"fast_gate_raw":0.068421}
   ],
+  "lane_history_last_3_plus_current": {
+    "jobs_job_boards_career": [
+      {"run_id":"N5K-20260829-499","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
+      {"run_id":"N5K-20260829-500","raw":80,"fast_gate":3,"size":1,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0375},
+      {"run_id":"N5K-20260829-501R1","raw":80,"fast_gate":11,"size":1,"signal":1,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.1375},
+      {"run_id":"N5K-20260829-502","raw":80,"fast_gate":7,"size":2,"signal":1,"qualified":1,"qualified_raw":0.0125,"fast_gate_raw":0.0875}
+    ],
+    "industry_catalogs_exhibitions": [
+      {"run_id":"N5K-20260829-499","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":null,"fast_gate_raw":null},
+      {"run_id":"N5K-20260829-500","raw":100,"fast_gate":1,"size":1,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.01},
+      {"run_id":"N5K-20260829-501R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0},
+      {"run_id":"N5K-20260829-502","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.0}
+    ],
+    "growth_expansion_investment_business_change_news": [
+      {"run_id":"N5K-20260829-499","raw":20,"fast_gate":6,"size":1,"signal":1,"qualified":1,"qualified_raw":0.05,"fast_gate_raw":0.30},
+      {"run_id":"N5K-20260829-500","raw":20,"fast_gate":5,"size":1,"signal":1,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.25},
+      {"run_id":"N5K-20260829-501R1","raw":20,"fast_gate":6,"size":0,"signal":0,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.30},
+      {"run_id":"N5K-20260829-502","raw":10,"fast_gate":6,"size":1,"signal":1,"qualified":1,"qualified_raw":0.10,"fast_gate_raw":0.60}
+    ]
+  },
+  "efficiency_change_vs_previous_hour": {
+    "qualified_raw_percentage_points": 1.0526,
+    "fast_gate_raw_percentage_points": -1.6579,
+    "note": "Net qualified/raw improved from 0% to 1.0526%; fast_gate/raw decreased from 8.5% to 6.8421%. Absolute net-new output is 2, still below 5, so discovery allocation is adjusted rather than repeated unchanged."
+  },
+  "adaptive_decision": {
+    "cut_or_capped": [
+      "jobs_job_boards_career: own discovery max 5% because duplicate+early-reject remains above 70%; fresh immutable jobs worker staging is still ingested first",
+      "industry_catalogs_exhibitions: max 5%, probe-only/no deep-check after repeated fast_gate/raw below 2% and duplicate+early-reject above 70%"
+    ],
+    "increased": [
+      "growth_expansion_investment_business_change_news: increase to 60% next RUN because current qualified/raw is 10% on a small probe and it materially outperformed recent median",
+      "official_company_owner_ceo: retain 25% as evidence-resolution lane for current legal/LPR/contact verification"
+    ],
+    "next_run_distribution": {
+      "jobs_job_boards_career": 0.05,
+      "growth_expansion_investment_business_change_news": 0.60,
+      "official_company_owner_ceo": 0.25,
+      "industry_catalogs_exhibitions": 0.05,
+      "experimental_low_overlap": 0.05
+    }
+  },
+  "qualified_companies": ["DEALLOG", "Петровакс Фарм"],
+  "physical_duplicates": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "518_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "518_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
