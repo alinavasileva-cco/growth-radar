@@ -1,0 +1,94 @@
+{
+  "schema": "growth-radar-industry-worker-metrics-v1",
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-29T16:22:50+03:00",
+  "source_head_sha": "6ddde0cb3d242391c4e3c7f0b1eb8fb66e22010c",
+  "config_version": "2026-08-29T15:58:21+03:00",
+  "canonical_snapshot": {
+    "canonical_count": 516,
+    "contactable_count": 516,
+    "integrity": "PASS",
+    "dedup_keys": [
+      "Lead ID",
+      "INN",
+      "OGRN/OGRNIP",
+      "exact legal name",
+      "confirmed brand+domain"
+    ]
+  },
+  "guards": {
+    "canonical_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "stale_records_excluded_from_positive_decisions": true,
+    "exhibition_presence_is_signal": false
+  },
+  "funnel": {
+    "raw": 100,
+    "normalized_distinct": 100,
+    "fast_gate_pass": 0,
+    "size_pass": 0,
+    "legal_pass": 0,
+    "signal_pass": 0,
+    "lpr_pass": 0,
+    "contact_pass": 0,
+    "qualified": 0
+  },
+  "method_note": "Five new low-overlap 2026 exhibitor/catalog pools were sampled at 20 distinct source identities each. Every source crossed the >70% duplicate+early-reject stop threshold on its first 20 and was stopped immediately. Foreign exhibitors were rejected at the Russian-private-company gate. For Russian exhibitors, exhibition/catalog presence alone was not treated as S1-S3 and the source pages did not provide a probable qualifying growth signal, so weak candidates were stopped at FAST GATE rather than pushed into deep resolution. No stale record was used for a positive decision. Source identities are not claimed to be globally legal-key-resolved entities.",
+  "source_batches": [
+    {
+      "source": "RosUpack 2026",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/rosupack-2026/ru/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["1EA","АБВ Акцент","Абсолют, ООО","Август Борг, ИАЦ","АВИКС ИНЖИНИРИНГ, ООО","АВМ, ООО","Автоматические Машины","АГСК","Аероколл ООО","Ай-Пласт, ООО","АЙГОФРО","Акопринт","АКРЕХИМ","АКТИВА ГРУПП, ООО","Активная упаковка ООО","Александр Браун","Альбертин ОАО Слонимский картонно-бумажный завод","Альбус Групп","Алькор Упак","Альфа риббон ООО"]
+    },
+    {
+      "source": "Pharmtech & Ingredients 2026",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/pharmtech-and-ingredients-2026/ru/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["АВИСС, Печатный Дом","Адамс Кемикалс","АИКС ЛАБ","Академлаб","АКВАПАТИКЛ, ООО","Алианбио","АЛКОПАК","Артлайф-Техно","Артлайф, ООО","АСЕПТИКА","Берендсен, ООО","ВИЛАКС","Вита этерна, ООО","Владисарт, АО","Вэлидлайн","Группа Ай-Эм-Си, ООО","Группа компаний ФАРМТЕХ","Диапазон Фарм, ООО","ИМКоФарма, ООО","Индустриальные механизмы, ООО"]
+    },
+    {
+      "source": "Weldex 2026",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/weldex-2026/en/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["ГС-Главный сварщик","Akropol","ALFA GLOBAL","AVIAL","AWG Technologies","BODOR, LLC","BSC CORPORATION LTD","CHANGZHOU CHINA WELDING EQUIPMENT CO., LTD.","Changzhou Edaweld Trading Company Limited","D&H Secheron Electrodes Pvt. Ltd","DeltaSvar LCC","DERIA","DIG Automation Engineering","ECHOPLUS","ESVA","EWC LLC","FARINA (JINAN) WELDTEC & MACHINERY CO.,LTD","Fastener Group (Anhui) Co., Ltd","FIXTRADE","Gee Limited"]
+    },
+    {
+      "source": "Printech 2026",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/printech-2026/ru/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["1С:Полиграфия","АЙКЬЮТЕК АО","ВИП-Системы","Гротеск","ГУАНДУН ХОНГМИНГ ИНТЕЛЛИГЕНТАЛЬНЫЙ СОВЕДНЫЙ СТОК КО., ЛТД","Индустрия печати, журнал","КЕРН СНГ","КЛЕЙЖЕЛАТИНПРОМ, ООО","Коника Минолта","КУРСИВ Издательство","ЛАЗЕРМАРКЕР (ТЕХНО)","ММ-Сервис","МТП ПОЛИГРАФ","Нисса Дистрибуция ООО","НОВОКОД ГРУППА","ОфПолиТрейд","Передовые Системы Печати","Печатный бизнес. Полиграфия & реклама","ПРИЗМИКС","Принт Элит, ООО"]
+    },
+    {
+      "source": "MosHome 2026",
+      "source_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/moshome-2026/ru/Exhibitor",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["Арт Флорика мастерская Марины Лурье","ИНТЕРЬЕРНАЯ БОТАНИКА","Фабрика грунтов, ООО","Amazing Industries","AMBOHR Co.,LTD.","AMBOHR ELECTRIC CO.,LIMITED","AMERCOOK","Anhui Boxing Machinery Co.,Ltd","Anhui Hi-Charm Lighting Co.,Ltd.","Anhui Jinyuan Household Arts CO.,Ltd.","Baoji Toojie Fiber Energy Technology Co., Ltd.","Baoji Xueyun Culture Industry Development Co., Ltd.","BEIBANQIU NEW MATERIALS (JIANGSU) CO.,LTD.","Best Gifts Enterprises (YangJiang) Ltd.","Bouncy International Co.,Ltd.","BSM Enterprise Ltd","CGS Express","Comasia Limited","czs.ru","DALIAN HONGLI HANDICRAFTS CO.,LTD"]
+    }
+  ],
+  "deep_checks": [],
+  "qualified_candidates": [],
+  "outreach_performed": false
+}
