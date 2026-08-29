@@ -1,0 +1,36 @@
+{
+  "run_id": "N5K-20260829-489",
+  "recorded_at": "2026-08-29T05:08:00+03:00",
+  "canonical_result": {
+    "canonical_count": 503,
+    "contactable_count": 503,
+    "physically_integrated": 1,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "qualified_staged_not_counted": 0,
+    "outreach": 0
+  },
+  "consumed_workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-042027-jobs.json",
+      "blob_sha": "099660b10b0765a04d4b8c62f7bdbbe0b9574123",
+      "raw_distinct": 84,
+      "qualified": 1,
+      "canonical_status": "CONSUMED_INTEGRATED",
+      "integrated_lead_id": "N5K-0660",
+      "integrated_inn": "7802802900",
+      "integrated_ogrn": "1127847510010"
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-042346-industry-metrics.json",
+      "blob_sha": "7869f1c1dc8e48b7a98edda9b6c91fd34d8cc75e",
+      "raw_distinct": 100,
+      "qualified": 0,
+      "canonical_status": "CONSUMED_ZERO_QUALIFIED"
+    }
+  ],
+  "audit_note": "Immutable worker staging retained for history. This consumed index was added during same-cycle RUN 489 repair after canonical integration, because the integration commit had cleared pending but had not created the required consumed-index record. No worker result was re-integrated."
+}
