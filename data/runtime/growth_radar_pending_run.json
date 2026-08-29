@@ -1,8 +1,139 @@
 {
-  "run_id": "N5K-20260829-493",
-  "updated_at": "2026-08-29T08:57:31+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260829-493 integrated physically; canonical/contactable 507/507; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260829-494",
+  "updated_at": "2026-08-29T10:00:33+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 200,
+    "fast_gate_passed": 6,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 199
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260829_092115",
+      "category": "jobs_job_boards_career",
+      "raw": 80,
+      "fast_gate": 6,
+      "size": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 74,
+      "qualified_raw_pct": 1.25,
+      "fast_gate_raw_pct": 7.5,
+      "prev_491": {"raw": 80, "fast_gate": 3, "qualified": 1, "qualified_raw_pct": 1.25, "fast_gate_raw_pct": 3.75},
+      "prev_492": {"raw": 80, "fast_gate": 18, "qualified": 1, "qualified_raw_pct": 1.25, "fast_gate_raw_pct": 22.5},
+      "prev_493": {"raw": 80, "fast_gate": 7, "qualified": 1, "qualified_raw_pct": 1.25, "fast_gate_raw_pct": 8.75},
+      "change_vs_prev_hour": "qualified/raw unchanged at 1.25%; fast_gate/raw decreased from 8.75% to 7.50%",
+      "adaptive_action": "CAP_TO_5_PERCENT_NEXT_3_RUNS because aggregate early-reject share remains above 70% in consecutive recent passes despite positive qualified/raw; retain only a probe batch because this lane still produces verified qualified."
+    },
+    {
+      "lane": "industry_worker_20260829_092753",
+      "category": "industry_catalogs_exhibitions",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 100,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "prev_491": {"raw": 100, "fast_gate": 0, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
+      "prev_492": {"raw": 100, "fast_gate": 0, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
+      "prev_493": {"raw": 100, "fast_gate": 0, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
+      "change_vs_prev_hour": "no improvement; fourth consecutive zero-qualified/zero-fast-gate pass",
+      "adaptive_action": "CAP_TO_5_PERCENT_NEXT_3_RUNS; no deep-check; return only with 20-candidate probe after cooldown. Exhibition/catalog presence is never SIGNAL."
+    },
+    {
+      "lane": "own_targeted_fresh_jobs_growth_change_probe",
+      "category": "adaptive_redistribution_probe",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "sources": [
+        "fresh executive vacancies published in August 2026",
+        "fresh expansion/investment/business-change news published in August 2026"
+      ],
+      "note": "20 distinct named-company source-level results were screened. None was promoted without a safely resolved current SIZE + LEGAL + SIGNAL + LPR + CONTACT chain and physical canonical dedup. No raw padding with catalogs.",
+      "adaptive_action": "Do not repeat this exact mixed probe; next run separate growth-news and official-owner lanes so their conversion can be measured independently."
+    }
+  ],
+  "efficiency_controller": {
+    "last_three_runs": [
+      {"run_id": "N5K-20260829-491", "raw": 300, "qualified": 1, "qualified_raw_pct": 0.3333},
+      {"run_id": "N5K-20260829-492", "raw": 300, "qualified": 1, "qualified_raw_pct": 0.3333},
+      {"run_id": "N5K-20260829-493", "raw": 300, "qualified": 1, "qualified_raw_pct": 0.3333}
+    ],
+    "current_run": {"raw": 200, "qualified": 1, "qualified_raw_pct": 0.5, "fast_gate_raw_pct": 3.0},
+    "change_vs_previous_hour": "overall qualified/raw increased from 0.3333% to 0.50%, but absolute qualified remains below 5; prior 300-raw layout was not repeated.",
+    "lanes_reduced": [
+      "industry/catalogs -> <=5% for next 3 runs",
+      "jobs/job boards -> 5% probe for next 3 runs under the explicit >70% early-reject cooldown rule"
+    ],
+    "lanes_increased": [
+      "growth/expansion/investment/business-change news -> 50% next run",
+      "official company/owner/CEO sources and leadership/change signals -> 35% next run"
+    ],
+    "next_run_distribution_pct": {
+      "jobs_job_boards_career": 5,
+      "growth_expansion_investment_business_change_news": 50,
+      "official_company_owner_ceo_sources": 35,
+      "industry_catalogs_exhibitions": 5,
+      "experimental_low_overlap": 5
+    },
+    "reason": "Recent jobs passes are the only source of qualified leads but also exceed the explicit consecutive early-reject cooldown threshold; industry is persistently zero-yield. The next run therefore tests under-measured high-signal growth-news and official-owner lanes while keeping jobs as a probe rather than disabling it."
+  },
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0665",
+      "Brand": "Ариэль Инокс",
+      "Legal Name": "ООО «АРИЭЛЬ ИНОКС»",
+      "INN": "9702069850",
+      "OGRN/OGRNIP": "1247700583052",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "B2B металлопродукция / нержавеющая сталь и трубопроводная арматура",
+      "Website": "https://arielinox.ru/",
+      "Revenue/Scale": "Выручка 2 853 260 000 ₽ за 2025 год; чистая прибыль 39 648 000 ₽; 145 сотрудников по актуальной отчетности 2025 года; субъект среднего предпринимательства.",
+      "Signal Level": "S1",
+      "Signal Summary": "24.08.2026 опубликована вакансия операционного директора: ключевой руководитель и партнер генерального директора для реализации стратегии развития бизнеса, повышения эффективности коммерческих процессов, KPI и трансформации бизнес-процессов.",
+      "Signal Date": "2026-08-24",
+      "Signal Source": "https://facancy.ru/vacancies/operatsionnyi-direktor-v-kompaniiu-postavshchik-vysokokachestvennykh-izdelii-iz-nerzhaveiushchei-stali-i-metalloprokata-ariel-inoks",
+      "Owner": "Брайнис Вадим Владимирович — 79% участник; Жуков Александр Анатольевич — 19%; Данилова Евгения Юрьевна — 2%",
+      "CEO": "Брайнис Вадим Владимирович",
+      "LPR": "Брайнис Вадим Владимирович",
+      "LPR Role": "Генеральный директор и основной участник / практический ЛПР",
+      "Primary Phone": "+7 (495) 147-22-00",
+      "Primary Email": "info@arielinox.ru",
+      "HH Contact": "",
+      "Contact Form": "https://arielinox.ru/contacts/",
+      "Contact Type": "официальные корпоративные маршруты",
+      "Contact Source": "официальный сайт Ариэль Инокс",
+      "Consulting Hypothesis": "Операционная и коммерческая трансформация быстро растущего B2B-поставщика: масштабирование процессов, KPI, управленческий контур, эффективность коммерческой функции и поддержка дальнейшего роста.",
+      "contacts": [
+        {"value": "+7 (495) 147-22-00", "channel": "phone", "type": "corporate", "source": "официальный сайт Ариэль Инокс", "url": "https://arielinox.ru/contacts/", "is_lpr": false, "notes": "Москва; корпоративный телефон"},
+        {"value": "info@arielinox.ru", "channel": "email", "type": "corporate", "source": "официальный сайт Ариэль Инокс", "url": "https://arielinox.ru/contacts/", "is_lpr": false, "notes": "корпоративный email"},
+        {"value": "https://arielinox.ru/contacts/", "channel": "web", "type": "corporate", "source": "официальный сайт Ариэль Инокс", "url": "https://arielinox.ru/contacts/", "is_lpr": false, "notes": "официальная контактная страница"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SIZE", "claim": "ООО «АРИЭЛЬ ИНОКС», ИНН 9702069850, ОГРН 1247700583052, действует; выручка 2.85326 млрд ₽ за 2025 год, 145 сотрудников, средний бизнес.", "url": "https://b2b.house/company/OOO-ARIEL-INOKS_f732494e-5845-47b4-816e-28082e56a849/", "source": "B2B.house"},
+        {"type": "LEGAL_LPR", "claim": "Брайнис Вадим Владимирович — генеральный директор с 13.11.2025 и основной участник с долей 79%.", "url": "https://www.tbank.ru/business/contractor/legal/1247700583052/", "source": "Т-Банк Бизнес"},
+        {"type": "SIGNAL", "claim": "24.08.2026 опубликована вакансия операционного директора как ключевого руководителя и партнера генерального директора для реализации стратегии развития бизнеса.", "url": "https://facancy.ru/vacancies/operatsionnyi-direktor-v-kompaniiu-postavshchik-vysokokachestvennykh-izdelii-iz-nerzhaveiushchei-stali-i-metalloprokata-ariel-inoks", "source": "Facancy"},
+        {"type": "CONTACT_LEGAL", "claim": "Официальный сайт публикует ИНН 9702069850, ОГРН 1247700583052, телефон +7 (495) 147-22-00 и email info@arielinox.ru.", "url": "https://arielinox.ru/info/", "source": "официальный сайт Ариэль Инокс"},
+        {"type": "CONTACT", "claim": "Официальная страница контактов подтверждает корпоративный телефон и email московского офиса.", "url": "https://arielinox.ru/contacts/", "source": "официальный сайт Ариэль Инокс"}
+      ]
+    }
+  ],
+  "notes": "Fresh worker staging ingested first. Physical canonical baseline 507/507, integrity PASS. Jobs candidate Ариэль Инокс was independently rechecked with current 2025/2026 evidence before staging. Industry produced 0/100 and was not deep-checked further. The prior 300-raw layout was not repeated: discovery was redistributed toward fresh jobs and fresh growth/business-change signals, without padding raw with catalogs. Efficiency controller requires next run distribution 5% jobs, 50% growth/change news, 35% official owner/company sources, 5% industry probe, 5% experimental. No outreach."
 }
