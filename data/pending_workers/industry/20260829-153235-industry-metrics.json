@@ -1,0 +1,113 @@
+{
+  "schema": "growth-radar-industry-worker-metrics-v1",
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-29T15:32:35+03:00",
+  "source_head_sha": "92d952bed7dc48be7a7f5e571c66a84fe968c2ca",
+  "config_version": "2026-08-29T15:02:51+03:00",
+  "canonical_snapshot": {
+    "canonical_count": 516,
+    "contactable_count": 516,
+    "integrity": "PASS",
+    "dedup_keys": [
+      "Lead ID",
+      "INN",
+      "OGRN/OGRNIP",
+      "exact legal name",
+      "confirmed brand+domain"
+    ]
+  },
+  "guards": {
+    "canonical_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "stale_records_excluded_from_positive_decisions": true,
+    "exhibition_presence_is_signal": false
+  },
+  "funnel": {
+    "raw": 100,
+    "normalized_distinct": 100,
+    "fast_gate_pass": 1,
+    "size_pass": 1,
+    "legal_pass": 0,
+    "signal_pass": 0,
+    "lpr_pass": 0,
+    "contact_pass": 0,
+    "qualified": 0
+  },
+  "method_note": "Five low-overlap 2026 industry/exhibitor pools were sampled at 20 source identities each. Every pool crossed the >70% duplicate+early-reject stop threshold on its first 20 and was stopped immediately. Exhibition/catalog presence itself was not treated as S1-S3. One ExpoElectronica identity, 'Квантум', had a fresh explicit expansion clue ('развитие сразу двух новых направлений') and was advanced. A plausible current ООО «КВАНТУМ» (ИНН 7811780410, ОГРН 1227800126278) had current scale evidence, but the exhibitor-brand→legal-entity mapping could not be independently proven to the no-guess standard; it therefore failed at LEGAL and was not advanced to SIGNAL/LPR/CONTACT. Source identities are not claimed to be globally legal-key-resolved entities.",
+  "source_batches": [
+    {
+      "source": "DairyTech 2026",
+      "source_url": "https://dairytech-expo.ru/ru/press-room/news/2025/october/30/spisok-uchastnikov-dairytech-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["Август Борг","Аграрный МедиаХолдинг Светич","Агротех","Академия КриоФрост","АКВАТРОЛ","Алькор Упак","Альпма-Сервис","Альфа Л Сервис","Аналитическая компания EMEAT","АПС Групп","Ариэль Инокс","БД","БЕВЭРТ","Белфармаком","Бизнес пищевых ингредиентов","БУСТЕР РУС","Вентар","ВИЯ","Воронежпродмаш","ГАЛЬДИ"]
+    },
+    {
+      "source": "Securika Moscow 2026",
+      "source_url": "https://securika-moscow.ru/ru/about/news/2026/april/03/dve-nedeli-do-otkrytiya-securika-moscow-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["ААМ-Системз","Сбер","Аргус-Спектр","АРМО-Системы","Болид","SIGUR","Пожтехника","РУБЕЖ","Диагностика-М","PERCo","Escort Group","Итриум","Московские системы безопасности","TRASSIR","ITV Group","Луис+","Плазма-Т","ЛИНИЯ / ДЕВЛАЙН","ИНФОКОМ","Завод Энергокабель"]
+    },
+    {
+      "source": "TransRussia 2026",
+      "source_url": "https://transrussia.ru/ru/media/news/2026/march/27/post-reliz-transrussia-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["ARTWMS","MADE","NOVOLINIX","STEIZA","Weilandt Elektronik","БЕЛИНТЕРТРАНС","Ван Вэй Транспорт Сервисес","Железные дороги Якутии","Магнит Логистика","МЕТЕК","Росгосстрах","Транзит-СВ","Транспортные Технологии","Трансол","ЭвоКарго","Яндекс Роботикс","НОВОТРАНС","Рейлшип Сервис","Солво","КАМАЗ-ЛИЗИНГ"]
+    },
+    {
+      "source": "ExpoElectronica 2026",
+      "source_url": "https://expoelectronica.ru/ru/news/2026/april/06/uchastniki-expoelectronica-2026/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 19,
+      "rate": 0.95,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["Остек","ЭЛЕМЕНТ","Микроволновые системы","Глобал Инжиниринг","Протон-Электротекс","АЕДОН","ГетЧипс","ПЛАНАР","Совтест АТЕ","Лазерный Центр","ИнноДрайв","СибЭлКом-Логистик","ПРОМИНТ","PCBPI","Ресурс","Магнетон","Евроинтех","Квантум","CMP","Dongguan JRS Electronic Technology"]
+    },
+    {
+      "source": "Aquaflame 2026",
+      "source_url": "https://aquaflame-expo.ru/ru/about/news/2026/february/02/press-release-aquaflame/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["ACON","Aquastrong","BWT","BWT Barrier","CNP","Craft","ELSEN","Flamco Rus","FRAP","Haier","Kiturami","LEO","Midea","Mizudo","Navien","Ostendorf","PUMPMAN","ROLS ISOMARKET","RUTERM","SANHA"]
+    }
+  ],
+  "deep_checks": [
+    {
+      "raw_identity": "Квантум",
+      "source": "ExpoElectronica 2026",
+      "source_url": "https://expoelectronica.ru/ru/news/2026/april/06/uchastniki-expoelectronica-2026/",
+      "fast_gate": "PASS_PROVISIONAL",
+      "fast_gate_basis": "Official 2026 exhibitor digest explicitly says the company is developing two new directions—electrical equipment and IT equipment—and expanding its assortment.",
+      "size": "PASS_PROVISIONAL",
+      "size_basis": "A current exact-name/electronics-profile legal-entity candidate ООО «КВАНТУМ» shows 2025 revenue 142.4m RUB and 7 employees.",
+      "size_evidence_url": "https://companium.ru/id/1227800126278-kvantum",
+      "legal": "REJECT_UNRESOLVED_MAPPING",
+      "legal_reason": "The official exhibitor page does not expose INN/OGRN or another decisive identifier tying the exhibitor identity to ООО «КВАНТУМ» INN 7811780410. Several Russian entities use the name КВАНТУМ, so treating this legal entity as the exhibitor would require inference.",
+      "candidate_legal_entity_not_accepted": {"legal_name":"ООО «КВАНТУМ»","inn":"7811780410","ogrn":"1227800126278"},
+      "canonical_recheck": {"inn_search_match":false,"exact_name_search_match":false,"note":"No match found in fetched canonical leads_master resource for INN 7811780410 or token КВАНТУМ; this does not cure the unresolved exhibitor→legal mapping."},
+      "signal": "NOT_EVALUATED_AFTER_LEGAL_REJECT",
+      "lpr": "NOT_EVALUATED_AFTER_LEGAL_REJECT",
+      "contact": "NOT_EVALUATED_AFTER_LEGAL_REJECT",
+      "qualified": false
+    }
+  ],
+  "qualified_candidates": [],
+  "outreach_performed": false
+}
