@@ -1,0 +1,89 @@
+{
+  "schema": "growth-radar-industry-worker-metrics-v1",
+  "worker": "industry",
+  "lane": "industry",
+  "created_at": "2026-08-29T14:26:46+03:00",
+  "source_head_sha": "7febce6e285ab32cd49f31e7c0b30fd922d0a90d",
+  "config_version": "2026-08-29T14:01:46+03:00",
+  "canonical_snapshot": {
+    "contactable_count": 514,
+    "integrity": "PASS",
+    "dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"]
+  },
+  "guards": {
+    "canonical_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "stale_records_excluded_from_positive_decisions": true,
+    "exhibition_presence_is_signal": false
+  },
+  "funnel": {
+    "raw": 100,
+    "normalized_distinct": 100,
+    "fast_gate_pass": 0,
+    "size_pass": 0,
+    "legal_pass": 0,
+    "signal_pass": 0,
+    "lpr_pass": 0,
+    "contact_pass": 0,
+    "qualified": 0
+  },
+  "method_note": "Each source was stopped after its first 20 source identities because duplicate+early-reject exceeded 70%. Cheap source evidence did not establish a probable qualifying S1-S3 trigger; exhibition/catalog presence itself was not treated as a signal. Candidates were therefore not forced into deep SIZE->LEGAL->SIGNAL->LPR->CONTACT checks. Source identities are not claimed to be globally legal-key-resolved entities.",
+  "source_batches": [
+    {
+      "source": "ХИМИЯ-2026 official preliminary exhibitor list",
+      "source_url": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+      "source_updated": "2026-07-29",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["FESCO", "А.М.Н., ООО", "А-ВАГО", "АКВА-А, ООО", "АКВАХРОМ", "АКТИТЕК", "АКТО, ООО", "АЛХИТЕХ, НПП", "АЛЬЯНС-ЭНЕРГИЯ, ООО", "АНКАР", "АНОД, НАУЧНО-ПРОИЗВОДСТВЕННЫЙ ЦЕНТР", "АНСЕР, ООО", "АПРЕЛЬ СОФТ", "АРСИЛАЙТ, ООО", "АРСКА ТЕК", "АСОС РУС, ООО", "АФАЯ", "АФИВА, ООО", "БАЗА № 1 ХИМРЕАКТИВОВ, АО", "БАРРУС, ООО"]
+    },
+    {
+      "source": "AIRVent 2026 exhibitor announcement",
+      "source_url": "https://m.asninfo.ru/press-releases/1972-boleye-150-kompaniy-predstavyat-klimaticheskoye-i-kholodilnoye-oborudovaniye-na-airvent-2026",
+      "source_published": "2025-12-15",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["Buhler-AHS", "Belluna", "Blizzard Lufttechnik", "Clivet", "Centek Air", "Dantex Group", "Daichi", "Era Group", "Hiref Rus", "Hogart", "Hoocon", "Minibox", "Prime", "Prostor", "Termoflow", "Tica Pro", "Tion", "ZIP24", "Бриз – Климатические системы", "Веза"]
+    },
+    {
+      "source": "ИнтерАвтоМеханика 2026 confirmed participants release",
+      "source_url": "https://pressfeed.ru/releases/14748",
+      "source_published": "2026-07-09",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["ROSSKO", "АвтоРусь", "Амтел", "AM Point", "GNV Oil", "JIKIU", "LUBREX", "Sintec", "АвтоАльянс", "LAVR", "Shturman", "Suprotec", "Carville", "FEBEST", "AVLKRAFT", "LYNX", "ENIX", "Полюс+", "Rossvik", "MS-Marshal"]
+    },
+    {
+      "source": "MosBuild 2026 participant announcement",
+      "source_url": "https://m.asninfo.ru/press-releases/1972-boleye-150-kompaniy-predstavyat-klimaticheskoye-i-kholodilnoye-oborudovaniye-na-airvent-2026",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["Atlas Concorde", "Alpine Floor", "Bauservice", "Cersanit", "DoorHan", "Espocada", "Kaleva", "KERAMA MARAZZI", "Manders", "Maytoni", "ProfilDoors", "Roca", "Sonex", "SWISS KRONO", "Tikkivala", "Verona Mobili", "White Hills", "АЛЮТЕХ", "Керамика и Клинкер", "Мосплитка"]
+    },
+    {
+      "source": "Скрепка Экспо 2026 exhibitor announcements",
+      "source_url": "https://segment.ru/eventsnews/ural_toys_i_neva_market-eksponentyi_33y_vyistavki_skrepka_ekspo/",
+      "raw": 20,
+      "duplicates_plus_early_rejects": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_reason": "duplicate+early-reject >70% on first 20",
+      "candidates": ["Ural Toys", "Нева Маркет", "ТК Садовод", "Essaone", "Рельеф-Центр", "МиниТоп", "СВЕЧНОЙМАРКЕТ", "Контэнт", "Grizzly", "Санфорт Брендс", "Статус Сувенир", "Ремеко Клаб", "City Home Trade", "Глобус МИМЦ", "КОЛЕР", "ПЗБМ", "ЭЛИОН (ТД Меридиан)", "Аксиос", "Сарматия", "Самсон"]
+    }
+  ],
+  "qualified_candidates": [],
+  "outreach_performed": false
+}
