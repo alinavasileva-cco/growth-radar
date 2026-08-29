@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-29T12:58:28+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260829-497R1`  
+**Версия:** 2026-08-29T14:01:46+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260829-498`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **514 / 514**  
 **Qualified staged not counted:** **0**  
@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
 - physical canonical/contactable count: **514 / 514**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260829-497R1`;
+- последний завершённый RUN: `N5K-20260829-498`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
