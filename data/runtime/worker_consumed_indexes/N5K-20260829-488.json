@@ -1,0 +1,34 @@
+{
+  "run_id": "N5K-20260829-488",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-29T04:08:00+03:00",
+  "status": "CONSUMED_INDEX_RECORDED",
+  "entries": [
+    {
+      "path": "data/pending_workers/jobs/20260829-032103-jobs.json",
+      "blob_sha": "e0de62cd66640ece279b1c78aa8d5ae091a60ed1",
+      "result": "CONSUMED_INTEGRATED",
+      "raw": 80,
+      "qualified": 1,
+      "note": "Worker-qualified ООО «ТЕГИВА» passed fresh canonical recheck and final physical integration guard and was integrated as N5K-0659."
+    },
+    {
+      "path": "data/pending_workers/industry/20260829-032733-industry-metrics.json",
+      "blob_sha": "f34c7b914ff2fef1b5f569df8d009fbd6047f7b1",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 100,
+      "qualified": 0,
+      "note": "Five industry first-20 batches produced zero candidates passing FAST GATE; each saturated lane was stopped and rotated."
+    }
+  ],
+  "worker_raw_accounted": 180,
+  "own_discovery_raw_accounted": 120,
+  "total_raw_accounted": 300,
+  "net_qualified": 1,
+  "physically_integrated": 1,
+  "canonical_contactable": "502/502",
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach_sent": 0
+}
