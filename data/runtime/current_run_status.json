@@ -1,5 +1,5 @@
 {
-  "run_id": "N5K-20260829-494",
+  "run_id": "N5K-20260829-494R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-08-29T10:00:33+03:00",
@@ -7,120 +7,47 @@
   "new_cycle": {
     "baseline_count": 507,
     "target_count": 5000,
-    "current_canonical_count": 507,
-    "current_contactable_count": 507,
-    "progress_added": 0,
-    "remaining": 4493
+    "current_canonical_count": 508,
+    "current_contactable_count": 508,
+    "progress_added": 1,
+    "remaining": 4492
   },
   "funnel": {
-    "discovered": 200,
-    "fast_gate_passed": 6,
+    "discovered": 1,
+    "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 199
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 0
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260829_092115",
-      "category": "jobs_job_boards_career",
-      "raw": 80,
-      "fast_gate": 6,
+      "lane": "same_cycle_repair_growth_jobs_crosscheck",
+      "category": "adaptive_repair",
+      "raw": 1,
+      "fast_gate": 1,
       "size": 1,
       "signal": 1,
       "qualified": 1,
-      "duplicate_plus_early_reject": 74,
-      "qualified_raw_pct": 1.25,
-      "fast_gate_raw_pct": 7.5,
-      "prev_491": {
-        "raw": 80,
-        "fast_gate": 3,
-        "qualified": 1,
-        "qualified_raw_pct": 1.25,
-        "fast_gate_raw_pct": 3.75
-      },
-      "prev_492": {
-        "raw": 80,
-        "fast_gate": 18,
-        "qualified": 1,
-        "qualified_raw_pct": 1.25,
-        "fast_gate_raw_pct": 22.5
-      },
-      "prev_493": {
-        "raw": 80,
-        "fast_gate": 7,
-        "qualified": 1,
-        "qualified_raw_pct": 1.25,
-        "fast_gate_raw_pct": 8.75
-      },
-      "change_vs_prev_hour": "qualified/raw unchanged at 1.25%; fast_gate/raw decreased from 8.75% to 7.50%",
-      "adaptive_action": "CAP_TO_5_PERCENT_NEXT_3_RUNS because aggregate early-reject share remains above 70% in consecutive recent passes despite positive qualified/raw; retain only a probe batch because this lane still produces verified qualified."
-    },
-    {
-      "lane": "industry_worker_20260829_092753",
-      "category": "industry_catalogs_exhibitions",
-      "raw": 100,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 100,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 0.0,
-      "prev_491": {
-        "raw": 100,
-        "fast_gate": 0,
-        "qualified": 0,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 0.0
-      },
-      "prev_492": {
-        "raw": 100,
-        "fast_gate": 0,
-        "qualified": 0,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 0.0
-      },
-      "prev_493": {
-        "raw": 100,
-        "fast_gate": 0,
-        "qualified": 0,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 0.0
-      },
-      "change_vs_prev_hour": "no improvement; fourth consecutive zero-qualified/zero-fast-gate pass",
-      "adaptive_action": "CAP_TO_5_PERCENT_NEXT_3_RUNS; no deep-check; return only with 20-candidate probe after cooldown. Exhibition/catalog presence is never SIGNAL."
-    },
-    {
-      "lane": "own_targeted_fresh_jobs_growth_change_probe",
-      "category": "adaptive_redistribution_probe",
-      "raw": 20,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 20,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 0.0,
-      "sources": [
-        "fresh executive vacancies published in August 2026",
-        "fresh expansion/investment/business-change news published in August 2026"
-      ],
-      "note": "20 distinct named-company source-level results were screened. None was promoted without a safely resolved current SIZE + LEGAL + SIGNAL + LPR + CONTACT chain and physical canonical dedup. No raw padding with catalogs.",
-      "adaptive_action": "Do not repeat this exact mixed probe; next run separate growth-news and official-owner lanes so their conversion can be measured independently."
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 100.0,
+      "fast_gate_raw_pct": 100.0,
+      "note": "Repair candidate selected only after RUN 494 physical dedup rejected worker-staged Ариэль Инокс as already canonical. This repair metric is not used as a representative discovery-lane efficiency rate."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Юркас"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "507_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "507_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "508_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "508_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

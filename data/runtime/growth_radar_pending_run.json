@@ -1,75 +1,8 @@
 {
   "run_id": "N5K-20260829-494R1",
   "updated_at": "2026-08-29T10:00:33+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "qualified_staged_not_counted": 1,
-  "funnel": {
-    "discovered": 1,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 0
-  },
-  "lane_metrics": [
-    {
-      "lane": "same_cycle_repair_growth_jobs_crosscheck",
-      "category": "adaptive_repair",
-      "raw": 1,
-      "fast_gate": 1,
-      "size": 1,
-      "signal": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": 100.0,
-      "fast_gate_raw_pct": 100.0,
-      "note": "Repair candidate selected only after RUN 494 physical dedup rejected worker-staged Ариэль Инокс as already canonical. This repair metric is not used as a representative discovery-lane efficiency rate."
-    }
-  ],
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0665",
-      "Brand": "Юркас",
-      "Legal Name": "ООО «ЮРКАС»",
-      "INN": "5027271769",
-      "OGRN/OGRNIP": "1185027032145",
-      "Region": "Московская область",
-      "City": "Котельники",
-      "Segment": "B2B/B2C дистрибуция входных и межкомнатных дверей / федеральная рознично-дилерская сеть",
-      "Website": "https://yurkas.ru/",
-      "Revenue/Scale": "Выручка 300 755 000 ₽ за 2025 год; 24 сотрудника по актуальным данным 2025 года; субъект среднего предпринимательства; действующее ООО.",
-      "Signal Level": "S1",
-      "Signal Summary": "19.08.2026 опубликована вакансия операционного директора (COO) для оптимизации и управления бизнес-процессами компании, устранения потерь и узких мест, внедрения KPI и повышения операционной эффективности.",
-      "Signal Date": "2026-08-19",
-      "Signal Source": "https://jabka.work/jobs/operatsionnyy-direktor-optimizatsiya-biznes-protsessov-yurkas-20260818-m4z2",
-      "Owner": "Юркевич Дмитрий Валерьевич — 70%; Юркевич Зоя — 30%",
-      "CEO": "Юркевич Зоя",
-      "LPR": "Юркевич Зоя",
-      "LPR Role": "Генеральный директор и совладелец / практический ЛПР",
-      "Primary Phone": "+7 933 900-33-22",
-      "Primary Email": "info@yurkas.ru",
-      "HH Contact": "",
-      "Contact Form": "https://yurkas.ru/b2b/franshiza/",
-      "Contact Type": "официальные корпоративные маршруты",
-      "Contact Source": "официальный сайт Юркас",
-      "Consulting Hypothesis": "Операционная трансформация и масштабирование распределённой сети: регламенты, KPI, экономика и эффективность процессов, управляемость филиалов/каналов и подготовка к дальнейшему росту.",
-      "contacts": [
-        {"value": "+7 933 900-33-22", "channel": "phone", "type": "corporate", "source": "официальный сайт Юркас", "url": "https://yurkas.ru/b2b/franshiza/", "is_lpr": false, "notes": "корпоративный маршрут B2B/франшиза"},
-        {"value": "info@yurkas.ru", "channel": "email", "type": "corporate", "source": "официальный сайт Юркас", "url": "https://yurkas.ru/b2b/franshiza/", "is_lpr": false, "notes": "корпоративный email"},
-        {"value": "https://yurkas.ru/b2b/franshiza/", "channel": "web", "type": "corporate", "source": "официальный сайт Юркас", "url": "https://yurkas.ru/b2b/franshiza/", "is_lpr": false, "notes": "официальная форма заявки"}
-      ],
-      "evidence": [
-        {"type": "LEGAL_SIZE", "claim": "ООО «ЮРКАС», ИНН 5027271769, ОГРН 1185027032145, действует; выручка 300,755 млн ₽ за 2025 год, 24 сотрудника, средний бизнес.", "url": "https://b2b.house/company/OOO-YURKAS_049997ab-31e2-4b29-929a-3862ccf5844a/", "source": "B2B.house"},
-        {"type": "LEGAL_LPR", "claim": "Юркевич Зоя — генеральный директор; учредители: Юркевич Дмитрий Валерьевич 70%, Юркевич Зоя 30%.", "url": "https://www.tbank.ru/business/contractor/legal/1185027032145/", "source": "Т-Банк Бизнес"},
-        {"type": "SIGNAL", "claim": "19.08.2026 опубликована вакансия операционного директора (COO) с задачами оптимизации и управления бизнес-процессами и KPI.", "url": "https://jabka.work/jobs/operatsionnyy-direktor-optimizatsiya-biznes-protsessov-yurkas-20260818-m4z2", "source": "jabka"},
-        {"type": "CONTACT", "claim": "Официальный сайт Юркас публикует +7 933 900-33-22, info@yurkas.ru и форму заявки.", "url": "https://yurkas.ru/b2b/franshiza/", "source": "официальный сайт Юркас"},
-        {"type": "DOMAIN_LEGAL", "claim": "Домен yurkas.ru зарегистрирован за YURKAS, LLC; публичная карточка домена связывает его с ИНН 5027271769.", "url": "https://tapki.com/domain/6357269", "source": "публичная карточка домена"}
-      ]
-    }
-  ],
-  "notes": "Same-cycle repair after RUN 494 physical dedup rejected worker-staged Ариэль Инокс as an existing canonical company by INN/OGRN/legal name. Юркас was independently checked through current 2025/2026 legal/size, executive-hiring signal, LPR/ownership and official corporate contact evidence. Final physical dedup remains delegated to the integration guard. No outreach."
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260829-494R1 integrated physically; canonical/contactable 508/508; integrity PASS; orphan 0/0; outreach 0."
 }
