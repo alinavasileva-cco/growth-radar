@@ -1,8 +1,216 @@
 {
-  "run_id": "N5K-20260829-490",
-  "updated_at": "2026-08-29T05:57:28+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260829-490 integrated physically; canonical/contactable 504/504; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260829-491",
+  "updated_at": "2026-08-29T07:02:56+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 300,
+    "fast_gate_passed": 3,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 299
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260829_063400",
+      "raw": 80,
+      "fast_gate": 3,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicates": 0,
+      "source_path": "data/pending_workers/jobs/20260829-063400-jobs.json",
+      "note": "Canonical recheck retained ИжМСК as the sole qualified candidate. ООО МЕДИА ДМ and ООО АЛЬМИКС ГЛОБАЛ ГРУПП failed current 2025 SIZE and were not advanced. Three saturated regional sub-lanes were stopped after first 20 at >70% duplicate+early reject."
+    },
+    {
+      "lane": "industry_worker_20260829_062606",
+      "raw": 100,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source_path": "data/pending_workers/industry/20260829-062606-industry-metrics.json",
+      "note": "Five 20-record lanes stopped at 100% duplicate+early reject. Exhibition/catalog presence was not treated as SIGNAL and stale catalogue data was not used positively."
+    },
+    {
+      "lane": "own_buybrand_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source_url": "https://buybrandexpo.com/exhibitors/",
+      "note": "First 20 current 2026 exhibitor identities screened at cheap gate; exhibition/franchise listing alone was not S1-S3 and no independent current SIZE+SIGNAL combination was established. Lane stopped after >70% early rejects."
+    },
+    {
+      "lane": "own_coffee_tea_cacao_horeca_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source_url": "https://exhibitors.pro/en/",
+      "note": "First 20 exhibitor identities screened at cheap gate; event presence alone was not SIGNAL. Lane stopped after >70% duplicate+early reject."
+    },
+    {
+      "lane": "own_agravia_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source_url": "https://agravia.org/participants",
+      "note": "First 20 2026 participant identities screened; participation alone was not SIGNAL and no independent fresh S1-S3 trigger was established at cheap gate. Lane stopped after >70% early rejects."
+    },
+    {
+      "lane": "own_rosmould_rosplast_3dtech_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source_url": "https://rosmould.ru/",
+      "note": "First 20 current 2026 participant identities screened; catalogue/event presence was not promoted to business SIGNAL. Lane stopped after >70% duplicate+early reject."
+    },
+    {
+      "lane": "own_woodex_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source_url": "https://woodexpo.ru/ru/about/news/2026/february/17/woodex-2026-klyuchevye-kompanii-uzhe-sredi-uchastnikov/",
+      "note": "First 20 named/current participant identities screened; participation alone was insufficient for S1-S3. Lane stopped after >70% duplicate+early reject."
+    },
+    {
+      "lane": "own_worldfood_2026_first20",
+      "raw": 20,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "source_url": "https://world-food.ru/ru/",
+      "note": "First 20 current participant identities screened; exhibition presence alone was not SIGNAL. Lane stopped after >70% duplicate+early reject."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0662",
+      "Brand": "ИжМСК",
+      "Legal Name": "ООО «ИЖМАШСТРОЙКОМПЛЕКТ»",
+      "INN": "1832043801",
+      "OGRN/OGRNIP": "1051800792878",
+      "Region": "Удмуртская Республика",
+      "City": "Ижевск",
+      "Segment": "B2B промышленное оборудование / редукторы и приводная техника",
+      "Website": "https://izhmsk-prom.ru/",
+      "Revenue/Scale": "Выручка 58 619 000 ₽ за 2025 год против 31 687 000 ₽ за 2024 год; действующее ООО.",
+      "Signal Level": "S1",
+      "Signal Summary": "На актуальной выдаче HeadHunter по Ижевску присутствует вакансия «Коммерческий директор» прямого работодателя ООО ИжМСК. Точная дата публикации в независимо проверенной текущей выдаче не показана и не выдумывается; сигнал подтверждён как текущий на 29.08.2026.",
+      "Signal Date": "2026-08-29",
+      "Signal Source": "https://izhevsk.hh.ru/vacancies/kommercheskiy_direktor/ot_pryamih_rabotodateley",
+      "Owner": "Не используется как основание квалификации; подтверждён текущий практический ЛПР — генеральный директор Миронов Андрей Петрович.",
+      "CEO": "Миронов Андрей Петрович",
+      "LPR": "Миронов Андрей Петрович",
+      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Primary Phone": "+7 950 164-37-13",
+      "Primary Email": "zavod@izhmsk-prom.ru",
+      "HH Contact": "https://izhevsk.hh.ru/vacancies/kommercheskiy_direktor/ot_pryamih_rabotodateley",
+      "Contact Form": "https://izhmsk-prom.ru/",
+      "Contact Type": "официальные корпоративные маршруты",
+      "Contact Source": "официальный сайт ИжМСК / HeadHunter",
+      "Consulting Hypothesis": "Коммерческая система промышленного B2B-производителя: сегментация рынков, развитие каналов и партнёрств, коммерческие KPI, pipeline и масштабирование продаж.",
+      "contacts": [
+        {
+          "value": "+7 950 164-37-13",
+          "channel": "phone",
+          "type": "official_company_contact",
+          "source": "Официальный сайт ИжМСК",
+          "url": "https://izhmsk-prom.ru/",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный телефон на официальном сайте; персональным телефоном ЛПР не считается."
+        },
+        {
+          "value": "zavod@izhmsk-prom.ru",
+          "channel": "email",
+          "type": "official_company_contact",
+          "source": "Официальный сайт ИжМСК",
+          "url": "https://izhmsk-prom.ru/",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный email на официальном сайте; персональный email ЛПР не предполагается."
+        },
+        {
+          "value": "https://izhmsk-prom.ru/",
+          "channel": "web",
+          "type": "official_company_route",
+          "source": "Официальный сайт ИжМСК",
+          "url": "https://izhmsk-prom.ru/",
+          "is_lpr": false,
+          "notes": "На официальном сайте есть маршрут «Напишите нам»."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО «ИЖМАШСТРОЙКОМПЛЕКТ»; ИНН 1832043801; ОГРН 1051800792878; генеральный директор Миронов Андрей Петрович; выручка за 2025 год 58 619 тыс. ₽ против 31 687 тыс. ₽ за 2024 год.",
+          "url": "https://e-ecolog.ru/buh/2025/1832043801",
+          "source": "Е-Эколог / открытая бухгалтерская отчётность Росстата и ФНС"
+        },
+        {
+          "type": "LPR",
+          "claim": "Текущий генеральный директор ООО «ИЖМАШСТРОЙКОМПЛЕКТ» — Миронов Андрей Петрович; он используется как подтверждённый практический ЛПР.",
+          "url": "https://e-ecolog.ru/buh/2025/1832043801",
+          "source": "Е-Эколог / карточка организации"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "На актуальной выдаче HeadHunter по Ижевску вакансия «Коммерческий директор» указана у прямого работодателя ООО ИжМСК. Точная дата публикации в текущей независимо проверенной выдаче не показана; проверено 29.08.2026.",
+          "url": "https://izhevsk.hh.ru/vacancies/kommercheskiy_direktor/ot_pryamih_rabotodateley",
+          "source": "HeadHunter / текущая выдача вакансий"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт ИжМСК публикует корпоративные телефоны, email zavod@izhmsk-prom.ru и маршрут «Напишите нам» на домене izhmsk-prom.ru.",
+          "url": "https://izhmsk-prom.ru/",
+          "source": "Официальный сайт ИжМСК"
+        }
+      ]
+    }
+  ],
+  "notes": "Fresh immutable workers processed before canonical write: jobs 80 raw plus industry 100 raw. Own low-overlap discovery added 120 source-level observations across six 20-record lanes, for 300 total. These 300 are not claimed as 300 globally legal-key-resolved companies because cheap rejects were intentionally stopped before deep legal resolution. Criteria were not relaxed. Worker-stated vacancy publication date 27.07.2026 was not independently confirmed and therefore is not used as a canonical fact; the current HH surface was independently verified on 29.08.2026. Owner shares from worker staging were not used because they were not independently reconfirmed; qualification uses the independently confirmed current CEO as practical LPR. Outreach remains 0."
 }
