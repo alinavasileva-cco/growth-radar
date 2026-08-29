@@ -1,0 +1,157 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-29T08:18:08+03:00",
+  "source_head": "bf952a86a3603dc2b2efef2590bfdcf3855f8ec4",
+  "source_config_version": "2026-08-29T07:58:15+03:00",
+  "canonical_baseline": {
+    "master": 506,
+    "contactable": 506,
+    "integrity": "PASS",
+    "last_completed_run": "N5K-20260829-492"
+  },
+  "constraints": {
+    "canonical_writer_invoked": false,
+    "canonical_files_modified": false,
+    "outreach_performed": false,
+    "write_scope": "new immutable worker staging file only"
+  },
+  "dedup_policy": {
+    "keys": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "confirmed_brand_domain"],
+    "pre_deep_check": true,
+    "pre_write_recheck": true,
+    "qualified_candidate_matches_found": 0
+  },
+  "discovery": {
+    "raw_distinct_employer_observations": 80,
+    "note": "80 different employer-level raw observations after name-level overlap removal across four job-board lanes. Cheap rejects were not resolved to full legal keys and are not represented as globally legal-key-proven distinct companies.",
+    "lanes": [
+      {
+        "lane": "jobrun_spb_cco",
+        "source_url": "https://sankt-peterburg.jobrun.ru/%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B4%D0%B8%D0%B2%D0%B8%D0%B7%D0%B8%D0%BE%D0%BD%D0%B0-cco-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+        "raw": 20,
+        "duplicates_plus_early_rejects_first_20": 15,
+        "rate": 0.75,
+        "stopped_after_first_20": true,
+        "qualified": 1
+      },
+      {
+        "lane": "jobvk_novosibirsk_commercial",
+        "source_url": "https://ru.jobvk.com/novosibirsk/kommercheskiy-direktor",
+        "raw": 20,
+        "duplicates_plus_early_rejects_first_20": 17,
+        "rate": 0.85,
+        "stopped_after_first_20": true,
+        "qualified": 0
+      },
+      {
+        "lane": "jobrun_ekaterinburg_commercial_it",
+        "source_url": "https://ekaterinburg.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-it-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+        "raw": 20,
+        "duplicates_plus_early_rejects_first_20": 15,
+        "rate": 0.75,
+        "stopped_after_first_20": true,
+        "qualified": 0
+      },
+      {
+        "lane": "jobrun_operations_russia",
+        "source_url": "https://jobrun.ru/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-chief-operating-officer-coo-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0",
+        "raw": 20,
+        "duplicates_plus_early_rejects_first_20": 13,
+        "rate": 0.65,
+        "stopped_after_first_20": false,
+        "qualified": 0
+      }
+    ]
+  },
+  "worker_funnel": {
+    "RAW": 80,
+    "FAST_GATE": 7,
+    "DEEP_CHECK": 1,
+    "SIZE": 1,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "qualified": [
+    {
+      "brand": "CENTEC / Centec Group",
+      "legal_name": "ООО «ПРОМА»",
+      "inn": "7842355783",
+      "ogrn": "1077847231780",
+      "legal_status": "Действует",
+      "region": "Санкт-Петербург",
+      "city": "Санкт-Петербург",
+      "segment": "инженерная IT-компания / системная интеграция / автоматизация зданий и промышленности",
+      "website": "https://centec.ru/",
+      "size": {
+        "revenue_2025_rub": 567000000,
+        "employees_2025": 48,
+        "evidence_urls": [
+          "https://firmoteka.ru/7842355783",
+          "https://companium.ru/id/1077847231780-proma"
+        ],
+        "note": "Использованы свежие данные 2025 года; более старые показатели не применялись в решении."
+      },
+      "signal": {
+        "level": "S1",
+        "type": "job_board_growth_signal",
+        "title": "Коммерческий директор (CCO)",
+        "date": "2026-08-13",
+        "summary": "CENTEC сообщает, что растет, расширяет направления бизнеса и усиливает коммерческий блок; CCO должен формировать коммерческую стратегию по CENTEC и CYRUS, обеспечивать рост выручки и маржинальности, развивать существующие направления и запускать новые продукты и сервисы.",
+        "evidence_urls": [
+          "https://st-petersburg.cataloxy.ru/rabota/vacancy1127349871_kommercheskiy-direktor-cco.htm",
+          "https://spb.hh.ru/vacancies/kommercheskiy_direktor"
+        ]
+      },
+      "lpr": {
+        "name": "Цирюльников Алексей Валерьевич",
+        "role": "генеральный директор и единственный учредитель ООО «ПРОМА»",
+        "evidence_urls": [
+          "https://companium.ru/id/1077847231780-proma",
+          "https://whoiswho.dp.ru/cart/person/887302"
+        ]
+      },
+      "contact": {
+        "phone": "+7 (812) 777-06-87",
+        "email": "info@centec.ru",
+        "contact_form": "https://centec.ru/",
+        "source": "official_site",
+        "evidence_urls": [
+          "https://centec.ru/requisites/",
+          "https://centec.ru/"
+        ]
+      },
+      "legal_evidence_urls": [
+        "https://centec.ru/requisites/",
+        "https://firmoteka.ru/7842355783",
+        "https://companium.ru/id/1077847231780-proma"
+      ],
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7842355783",
+        "ogrn_ogrnip": "1077847231780",
+        "exact_legal_name": "ООО «ПРОМА»",
+        "confirmed_brand_domain": "CENTEC|centec.ru"
+      },
+      "canonical_dedup_checks": {
+        "inn_match": false,
+        "ogrn_match": false,
+        "exact_legal_name_match": false,
+        "brand_domain_match": false,
+        "checked_against_head": "bf952a86a3603dc2b2efef2590bfdcf3855f8ec4"
+      },
+      "funnel": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      },
+      "outreach": "NOT_PERFORMED"
+    }
+  ]
+}
