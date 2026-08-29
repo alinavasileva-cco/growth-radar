@@ -7,7 +7,7 @@
   "progress_added": 525,
   "remaining_to_total_target": 4475,
   "remaining": 4475,
-  "remaining_to_1000": 477,
+  "remaining_to_1000": 475,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -22,5 +22,5 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "note": "N5K-20260829-506 completed after physical integration: +2 net new; canonical/contactable 525/525; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260829-506 completed after physical integration: +2 net new; canonical/contactable 525/525; integrity PASS; orphan 0/0; staged 0; outreach 0. remaining_to_1000 repaired to 475 from physical contactable count."
 }
