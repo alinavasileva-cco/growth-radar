@@ -1,0 +1,29 @@
+{
+  "run_id": "N5K-20260829-492",
+  "recorded_at": "2026-08-29T07:58:15+03:00",
+  "canonical_integration_commit": "8037c193a74a5cce71fa8c2ed7fc5b5ff9f62c02",
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-073400-jobs.json",
+      "blob_sha": "631d92d7455c6c701835a02308e2ac19b2344ce4",
+      "status": "CONSUMED_INTEGRATED",
+      "raw": 80,
+      "qualified_worker": 1,
+      "physically_integrated": 1,
+      "note": "RuDesktop / ООО «ПЕРЕДОВЫЕ ТЕХНОЛОГИИ» integrated as N5K-0663 after independent canonical recheck and final physical dedup. Worker-stated vacancy publication date was not used because it was not independently confirmed."
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-073100-industry-metrics.json",
+      "blob_sha": "f22560eede95338e26cd737a8bb9cfffd3e26ec4",
+      "status": "CONSUMED_ZERO_QUALIFIED",
+      "raw": 100,
+      "qualified_worker": 0,
+      "physically_integrated": 0,
+      "note": "All five 20-record lanes stopped at 100% duplicate+early-reject saturation; exhibition/catalogue presence was not counted as SIGNAL."
+    }
+  ],
+  "history_preserved": true,
+  "outreach": 0
+}
