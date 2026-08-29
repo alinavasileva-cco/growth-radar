@@ -1,0 +1,103 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "mode": "READ+DISCOVERY",
+  "base_head": "ec8f0b22667a9cec5c6d580ff2c10f08f3868a49",
+  "config_version": "2026-08-29T12:58:28+03:00",
+  "canonical_snapshot": {
+    "leads_master": 514,
+    "contactable_master": 514,
+    "integrity": "PASS"
+  },
+  "dedup_keys": [
+    "Lead ID",
+    "INN",
+    "OGRN/OGRNIP",
+    "exact legal name",
+    "confirmed brand+domain"
+  ],
+  "started_at": "2026-08-29T13:27:16+03:00",
+  "qualified_count": 0,
+  "funnel": {
+    "RAW": 100,
+    "FAST_GATE": 0,
+    "SIZE": 0,
+    "LEGAL": 0,
+    "SIGNAL": 0,
+    "LPR": 0,
+    "CONTACT": 0,
+    "QUALIFIED": 0
+  },
+  "normalized_distinct_count": 100,
+  "within_worker_overlap_count": 0,
+  "source_batches": [
+    {
+      "source": "Polyurethanex 2026",
+      "url": "https://www.polyurethanex.ru/about/exhibitors-catalogue-2026.html",
+      "raw": 20,
+      "duplicates": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["Авис Кемикал","Адгезив НПФ","Айсорс","Алькор ТФ","АСГАРД","АЭРОЗОЛЕКС","БИАПУР Трейдинг","Вальтер Хеми","ВИТАРЕАКТИВ","Владипур НВП","Волга-Полимер НН","Дау Изолан","Депсол Полимерс","Диафор","Д-Формер","ДМЭ Аэрозоль","Европроект","Группа Компаний ЕТС","Заволжский пигмент","Каннон Евразия"]
+    },
+    {
+      "source": "Зооиндустрия 2026",
+      "url": "https://petindustry.expoforum.ru/wp-content/uploads/2026/03/katalog-zooindustrija-2026-final.pdf",
+      "raw": 20,
+      "duplicates": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["АБСОЛЮТ ПЕТФУД","АВГУРЪ-АКВА","АКВА МЕНЮ","АКВАРИУМ","АЛЕЙСКЗЕРНОПРОДУКТ","АЛЕКСАНН","АРХАНГЕЛЬСКИЙ А. В.","АФП ГРУМ","БАЛАЯН Г. Г.","БЕЛОЛАПКА","БЕСТ СЕРВИС КОМПАНИ","БИОСФЕРА","БИОТЕХ","ВЕЛЕС","ВЕТНОД","ВИК","ВУД ХАУС","ГАТЧИНСКИЙ ККЗ","ГОЛДЕН МЕДИКАЛ ГРУП","ГРАНД-АЛЬФА"]
+    },
+    {
+      "source": "Охота. Рыболовство 2026 — ДонЭкспоцентр",
+      "url": "https://donexpocentre.ru/ru/events/okhota-rybolovstvo/uchastniki-vystavki/",
+      "raw": 20,
+      "duplicates": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["Авторские приманки","Аналитический тир","АРИОН","Арком","БЛОКПОСТ","ГУФСИН России по Ростовской области","Клинок Онлайн","Клиника 4х4","Коваль","Кузница Данилова","Кузница Назарова","Мираж 2","Мираж / Ильичёв А.","Мустад Москва","Невская оптика","От Винта до Катера","Пинта Пивоваренная Компания","РБФ","Рыболов","Рыболовная академия / Ефимов И."]
+    },
+    {
+      "source": "ИНЛЕГМАШ-2026",
+      "url": "https://icatalog.expocentr.ru/ru/exhibitions/190a3ab4-1050-11f0-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F",
+      "raw": 20,
+      "duplicates": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["GREAT TEX","HARDWICK-TEX","iStock","LASERCUT","PROfashion","PUBLISH","VIVAT LTD","ZHONGXIN TM","АЗБУКА ВЯЗАНИЯ","БАГТЕКС","БЫКОВ ИВАН ИВАНОВИЧ, ИП","ВЕЛЛЕС","ВЕЛЛТЕКС","ГЕРАН ЛЮКС","ГЕРБЕР-Т","ГРАМОС","ДАП РУ","ЗИПКИТ ТЕХНОЛОДЖИ","ИМПОРТМАШ","ИННТЕРИ"]
+    },
+    {
+      "source": "ИНТЕРЛАКОКРАСКА-2026",
+      "url": "https://www.interlak-expo.ru/ru/exhibition/exhibitors/",
+      "raw": 20,
+      "duplicates": 0,
+      "early_rejects": 20,
+      "duplicate_plus_early_reject": 20,
+      "duplicate_plus_early_reject_rate": 1.0,
+      "stopped_after_first_20": true,
+      "candidates": ["АВИАЦИОННЫЕ ЛАКОКРАСОЧНЫЕ ТЕХНОЛОГИИ","АВИВИР","АВК-ХИМ","АВТОГРАФ ПРОМЫШЛЕННЫЕ ТЕХНОЛОГИИ","АГЕТТ","АКРИТЕХ","АЛИСТЕРУС","АЛЛНЕКС БЕЛГОРОД","АНКАР","АРТ ИНДУСТРИЯ","АСТРОЙСЕРВИС","АФАЯ","БЕЛНЕФТЕХИМ-РОС","БЛЕСТЯЩАЯ ЛИНИЯ","БОЯСАН","МОНОМЕР","НЕО КЕМИКАЛ","НЕОСТАТ","НЕОХИМ","НОРТЕКС"]
+    }
+  ],
+  "qualified": [],
+  "guards": {
+    "canonical_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "stale_records_excluded": true,
+    "exhibition_participation_not_signal": true
+  },
+  "notes": [
+    "All five batches crossed the >70% duplicate+early-reject threshold at the first 20 observations and were stopped/switched.",
+    "All 100 observations were early rejects at FAST GATE because the discovery source did not establish a probable current S1-S3 signal; exhibition/catalog presence alone was not treated as SIGNAL.",
+    "Early rejects were not represented as globally legal-key-resolved companies and were not pushed into SIZE/LEGAL/SIGNAL/LPR/CONTACT."
+  ]
+}
