@@ -1,0 +1,141 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "source_head": "272d7ec495320b6eac554b75a7159ec2891b4907",
+    "canonical_write": false,
+    "canonical_writer_started": false,
+    "outreach_performed": false,
+    "created_at_msk": "2026-08-29T07:34:00+03:00"
+  },
+  "baseline": {
+    "last_completed_run": "N5K-20260829-491",
+    "canonical_master_count": 505,
+    "contactable_count": 505,
+    "integrity": "PASS",
+    "config_version": "2026-08-29T07:02:56+03:00"
+  },
+  "dedup_policy": {
+    "keys": ["lead_id", "inn", "ogrn_or_ogrnip", "exact_legal_name", "brand_plus_domain"],
+    "checked_before_deep_check": true,
+    "checked_again_immediately_before_write": true
+  },
+  "discovery": {
+    "distinct_raw_employers": 80,
+    "sources": ["HH", "Jobrun aggregated HH signals", "Rabota.ru/zarplata mirrors and current job-board indexes"],
+    "lanes": [
+      {
+        "lane": "jobrun_russia_commercial_development",
+        "first_20_raw": 20,
+        "duplicates_plus_early_rejects": 12,
+        "rate": 0.60,
+        "stopped_for_saturation": false
+      },
+      {
+        "lane": "hh_kazan_operations",
+        "first_20_raw": 20,
+        "duplicates_plus_early_rejects": 16,
+        "rate": 0.80,
+        "stopped_for_saturation": true
+      },
+      {
+        "lane": "hh_krasnodar_commercial",
+        "first_20_raw": 20,
+        "duplicates_plus_early_rejects": 17,
+        "rate": 0.85,
+        "stopped_for_saturation": true
+      },
+      {
+        "lane": "hh_novosibirsk_commercial_recent",
+        "first_20_raw": 20,
+        "duplicates_plus_early_rejects": 17,
+        "rate": 0.85,
+        "stopped_for_saturation": true
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw": 80,
+    "fast_gate_pass": 18,
+    "deep_check": 3,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "RuDesktop",
+      "legal_name": "ООО \"ПЕРЕДОВЫЕ ТЕХНОЛОГИИ\"",
+      "city_signal": "Новосибирск / Академгородок",
+      "legal_registration_city": "Москва",
+      "inn": "9703094665",
+      "ogrn": "1227700375891",
+      "status": "действует",
+      "private_company": true,
+      "domain": "rudesktop.ru",
+      "size": {
+        "year": 2025,
+        "revenue_rub": 203900000,
+        "revenue_source_note": "T-Bank contractor profile / Saby profile; current 2025 figure around 203.9m RUB",
+        "company_size_public_signal": "20-100 employees on Rabota.ru employer profile",
+        "passed": true
+      },
+      "legal": {
+        "passed": true,
+        "director": "Молин Руслан Алексеевич",
+        "owners": [
+          {"name": "Ермак Антон Анатольевич", "share_percent": 42.5},
+          {"name": "Кандыбович Дмитрий Петрович", "share_percent": 42.5},
+          {"name": "Семенова Натела Отаровна", "share_percent": 10.0},
+          {"name": "Молин Руслан Алексеевич", "share_percent": 5.0}
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "job_vacancy",
+        "title": "Коммерческий директор (Академгородок)",
+        "publication_date": "2026-08-14",
+        "current_index_confirmation_date": "2026-08-29",
+        "description": "Компания ищет коммерческого директора; вакансия подтверждена в свежей выдаче HH и job-board индексах. Более старый индекс показывает дату 15.07.2026, но для решения использована более свежая индексация от 14.08.2026.",
+        "passed": true
+      },
+      "lpr": {
+        "passed": true,
+        "primary": "Молин Руслан Алексеевич",
+        "role": "генеральный директор и совладелец",
+        "owner_level_route_available": true
+      },
+      "contact": {
+        "passed": true,
+        "phones": ["8 (800) 500-68-57", "8 (499) 460-00-57"],
+        "emails": ["sales@rudesktop.ru", "support@rudesktop.ru"],
+        "route": "официальный корпоративный сайт / отдел продаж"
+      },
+      "dedup_keys": {
+        "inn": "9703094665",
+        "ogrn": "1227700375891",
+        "exact_legal_name": "ООО \"ПЕРЕДОВЫЕ ТЕХНОЛОГИИ\"",
+        "brand_plus_domain": "RuDesktop|rudesktop.ru",
+        "canonical_match_found": false
+      },
+      "evidence_urls": [
+        "https://novosibirsk.hh.ru/vacancies/kommercheskiy_direktor/za_poslednie_tri_dnya",
+        "https://novosibirsk.cataloxy.ru/rabota/kommercheskiy-direktor-cco-top-menedzhment-2330sp.htm?page=7",
+        "https://rudesktop.ru/kontakty/",
+        "https://rudesktop.ru/",
+        "https://www.tbank.ru/business/contractor/legal/1227700375891/",
+        "https://saby.ru/profile/9703094665-770301001",
+        "https://companies.rbc.ru/id/1227700375891-obschestvo-s-ogranichennoj-otvetstvennostyu-peredovyie-tehnologii/",
+        "https://koltsovo.rabota.ru/company/5084593/"
+      ],
+      "contact_urls": [
+        "https://rudesktop.ru/kontakty/",
+        "https://rudesktop.ru/"
+      ],
+      "qualified": true
+    }
+  ]
+}
