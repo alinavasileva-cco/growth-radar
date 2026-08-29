@@ -1,5 +1,6 @@
 {
-  "run_id": "N5K-20260829-496",
+  "run_id": "N5K-20260829-496R1",
+  "hourly_parent_run_id": "N5K-20260829-496",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-08-29T11:57:07+03:00",
@@ -10,7 +11,8 @@
     "current_canonical_count": 513,
     "current_contactable_count": 513,
     "progress_added": 1,
-    "remaining": 4487
+    "remaining": 4487,
+    "remaining_to_1000": 487
   },
   "funnel": {
     "discovered": 200,
@@ -20,9 +22,11 @@
     "signal_confirmed": 3,
     "lpr_identified": 3,
     "contact_route_found": 3,
+    "prewrite_qualified": 3,
     "qualified": 1,
     "duplicates": 2,
-    "excluded": 197
+    "excluded": 197,
+    "physically_integrated": 1
   },
   "lane_metrics": [
     {
@@ -31,12 +35,16 @@
       "fast_gate": 5,
       "size": 2,
       "signal": 1,
-      "qualified": 1,
+      "prewrite_qualified": 1,
+      "qualified": 0,
+      "physical_duplicates": 1,
       "duplicate_plus_early_reject": 63,
-      "qualified_raw_pct": 1.25,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 6.25,
       "previous_hour_qualified_raw_pct": 1.25,
-      "action_next_run": "KEEP_CAPPED_5_PERCENT_OWN_DISCOVERY_DURING_COOLDOWN; ingest immutable staging regardless; worker sublane duplicate+early metrics sum to 63 and are retained exactly rather than reconstructed"
+      "change_vs_previous_hour_qualified_raw_percentage_points": -1.25,
+      "note": "Worker supplied exact sublane duplicate+early counts totaling 63; the final physical duplicate is recorded separately rather than silently folded into an unreconstructable metric.",
+      "action_next_run": "CAP_5_PERCENT_OWN_DISCOVERY_DURING_COOLDOWN; ingest fresh immutable worker staging regardless"
     },
     {
       "lane": "industry_catalogs_exhibitions",
@@ -49,7 +57,8 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 0.0,
       "previous_hour_qualified_raw_pct": 0.0,
-      "action_next_run": "CAP_5_PERCENT_OR_PROBE_ONLY; NO_DEEP_CHECK; exhibition/catalog presence never SIGNAL"
+      "change_vs_previous_hour_qualified_raw_percentage_points": 0.0,
+      "action_next_run": "CAP_5_PERCENT_OR_PROBE_ONLY; NO_DEEP_CHECK while cooldown persists; catalog/exhibition presence is never SIGNAL"
     },
     {
       "lane": "growth_expansion_investment_business_change_news",
@@ -57,12 +66,15 @@
       "fast_gate": 4,
       "size": 2,
       "signal": 2,
-      "qualified": 2,
+      "prewrite_qualified": 2,
+      "qualified": 1,
+      "physical_duplicates": 1,
       "duplicate_plus_early_reject": 16,
-      "qualified_raw_pct": 10.0,
+      "qualified_raw_pct": 5.0,
       "fast_gate_raw_pct": 20.0,
       "previous_hour_qualified_raw_pct": 5.0,
-      "action_next_run": "INCREASE; best scalable lane this run; prioritize fresh expansion/investment/production-change news and confirm with official/legal sources"
+      "change_vs_previous_hour_qualified_raw_percentage_points": 0.0,
+      "action_next_run": "KEEP_STRONG_ALLOCATION; net 5% remains far above recent total median, but physical duplicate rate requires continued precheck"
     },
     {
       "lane": "official_company_owner_ceo_sources",
@@ -72,19 +84,47 @@
       "signal": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 0.0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
       "previous_hour_qualified_raw_pct": 25.0,
-      "note": "Official company/CEO sources were used as evidence/recheck for discovered candidates, not counted again as separate raw companies; no double counting across lanes."
+      "note": "Official sources were used only to verify discovered candidates and were not double-counted as separate raw companies.",
+      "action_next_run": "INCREASE_DISCOVERY_ALLOCATION based on prior measured 2/8 result, while treating it as a small sample"
     }
   ],
-  "qualified_companies": [
-    "Агролекс"
-  ],
+  "efficiency_controller": {
+    "last_three_completed_hours": [
+      {"run_id":"N5K-20260829-493","raw":300,"net_new_qualified":1,"qualified_raw_pct":0.3333},
+      {"run_id":"N5K-20260829-494R1","raw":200,"net_new_qualified":1,"qualified_raw_pct":0.5,"fast_gate_raw_pct":3.5},
+      {"run_id":"N5K-20260829-495R1","raw":208,"net_new_qualified":4,"qualified_raw_pct":1.9231,"fast_gate_raw_pct":6.7308}
+    ],
+    "current_hour": {
+      "raw": 200,
+      "fast_gate": 9,
+      "prewrite_qualified": 3,
+      "net_new_qualified": 1,
+      "physical_duplicates": 2,
+      "qualified_raw_pct": 0.5,
+      "fast_gate_raw_pct": 4.5,
+      "change_vs_previous_hour_qualified_raw_percentage_points": -1.4231,
+      "change_vs_previous_hour_fast_gate_raw_percentage_points": -2.2308,
+      "note": "Physical guard rejected НТК Приборэнерго and Борус as existing canonical companies by INN+OGRN+exact legal name. Only Агролекс is net new. Raw was not padded with zero-yield catalogs."
+    },
+    "next_run_distribution_pct": {
+      "jobs_job_boards_career": 5,
+      "growth_expansion_investment_business_change_news": 50,
+      "official_company_owner_ceo_sources": 35,
+      "industry_catalogs_exhibitions": 5,
+      "experimental_low_overlap": 5
+    },
+    "allocation_change_reason": "Overall net efficiency fell from 1.9231% to 0.5% and net qualified is below 5. Jobs produced zero net new after physical dedup and remains capped. Industry remains zero-yield. Growth/news retains high net conversion at 5%; official/CEO discovery is raised from the prior strong but small 2/8 sample."
+  },
+  "qualified_companies": ["Агролекс"],
+  "physical_duplicates_rejected": ["НТК Приборэнерго","Борус"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "513_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "513_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
