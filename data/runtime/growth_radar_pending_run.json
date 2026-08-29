@@ -1,8 +1,75 @@
 {
-  "run_id": "N5K-20260829-495",
+  "run_id": "N5K-20260829-495R1",
   "updated_at": "2026-08-29T10:58:06+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260829-495 integrated physically; canonical/contactable 512/512; integrity PASS; orphan 0/0; outreach 0."
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 0,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 0
+  },
+  "lane_metrics": [
+    {
+      "lane": "growth_expansion_investment_business_change_news_repair",
+      "category": "growth_expansion_investment_business_change_news",
+      "raw": 0,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "qualified": 1,
+      "note": "No new raw is added: ГалВент was already one of the 20 distinct companies counted in the original RUN 495 growth-news batch and was promoted from the early-screen pool only after the final physical duplicate on Союзтекстиль-СТ reduced net new qualified to 4."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0670",
+      "Brand": "ГалВент",
+      "Legal Name": "ООО «ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ»",
+      "INN": "7720605108",
+      "OGRN/OGRNIP": "1087746091410",
+      "Legal Status": "Действует",
+      "Region": "Московская область",
+      "City": "Балашиха",
+      "Segment": "B2B вентиляционное оборудование / промышленное производство",
+      "Website": "https://galvent.ru/",
+      "Revenue/Scale": "Действующее системообразующее промышленное предприятие; официальный сайт указывает производство более 200 000 изделий в день. В 2026 году запущен новый производственный комплекс стоимостью свыше 1,3 млрд ₽ с созданием около 600 рабочих мест.",
+      "Signal Level": "S2",
+      "Signal Summary": "В августе 2026 года запущен новый производственный комплекс в Балашихе; инвестиции превышают 1,3 млрд ₽, заявлено около 600 рабочих мест. Официальные материалы компании также фиксируют роботизацию и расширение производственных мощностей.",
+      "Signal Date": "2026-08-05",
+      "Signal Source": "https://galvent.ru/",
+      "Owner": "Не используется без отдельного свежего подтверждения; текущий практический ЛПР подтвержден по актуальным реестровым данным.",
+      "CEO": "Прахов Кирилл Валерьевич",
+      "LPR": "Прахов Кирилл Валерьевич",
+      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Primary Phone": "+7 495 790-76-98",
+      "Primary Email": "galvent@galvent.su",
+      "Contact Form": "https://galvent.ru/kontakty/",
+      "Contact Type": "официальные корпоративные маршруты",
+      "Contact Source": "официальный сайт ГалВент",
+      "Number Of Contacts Found": 3,
+      "Consulting Hypothesis": "Коммерческое и операционное масштабирование после запуска новой производственной площадки: загрузка мощностей, GTM, сегментация B2B-рынка, KPI, каналы продаж и управляемость роста.",
+      "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ",
+      "contacts": [
+        {"value": "+7 495 790-76-98", "channel": "phone", "type": "corporate", "source": "официальный сайт ГалВент", "url": "https://galvent.ru/", "is_lpr": false},
+        {"value": "galvent@galvent.su", "channel": "email", "type": "corporate", "source": "официальный сайт ГалВент", "url": "https://galvent.ru/", "is_lpr": false},
+        {"value": "https://galvent.ru/kontakty/", "channel": "web", "type": "corporate", "source": "официальный сайт ГалВент", "url": "https://galvent.ru/kontakty/", "is_lpr": false}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "ООО «ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ», ИНН 7720605108, ОГРН 1087746091410, действует по состоянию на август 2026 года.", "url": "https://saby.ru/profile/7720605108-500101001", "source": "Saby"},
+        {"type": "LPR", "claim": "Прахов Кирилл Валерьевич — генеральный директор; сведения об организации актуальны на 10.04.2026.", "url": "https://www.elec.ru/id145304", "source": "Elec.ru"},
+        {"type": "SIZE_SIGNAL", "claim": "Компания является системообразующим производителем, выпускающим более 200 000 изделий в день; в августе 2026 года запущен новый производственный комплекс стоимостью свыше 1,3 млрд ₽ примерно на 600 рабочих мест.", "url": "https://galvent.ru/", "source": "официальный сайт ГалВент / публикации о новом комплексе"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует +7 495 790-76-98, galvent@galvent.su и официальный web-маршрут.", "url": "https://galvent.ru/", "source": "официальный сайт ГалВент"},
+        {"type": "LEGAL_RISK_CHECK", "claim": "Упоминания ГалВент в банкротных делах относятся к участию в процессах о банкротстве других компаний; свежие источники продолжают показывать ООО как действующую организацию.", "url": "https://sudact.ru/arbitral/doc/BVpqGGFCZNJC/", "source": "СудАкт / Saby"}
+      ]
+    }
+  ],
+  "notes": "Same-cycle efficiency repair after final physical dedup in RUN 495 rejected Союзтекстиль-СТ as an existing canonical company. ГалВент was already present in the original 20-company growth-news raw pool, so no additional raw is claimed. Exact repository search for INN 7720605108 returned no match before staging. Current legal status, current CEO, fresh expansion signal and official corporate contacts were independently rechecked. No outreach."
 }
