@@ -1,0 +1,80 @@
+{
+  "worker": "industry",
+  "lane": "industry",
+  "run_started_at": "2026-08-29T18:25:02+03:00",
+  "baseline_head": "e6221bc13b6b73b6240c823540f5ce0569d8e8f5",
+  "config_version": "2026-08-29T18:03:00+03:00",
+  "canonical_counts": {"leads_master": 518, "contactable_master": 518, "integrity": "PASS"},
+  "canonical_dedup_keys": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "guards": {
+    "canonical_writes": false,
+    "outreach": false,
+    "criteria_relaxed": false,
+    "stale_records_excluded_from_positive_decisions": true,
+    "exhibition_participation_is_signal": false
+  },
+  "funnel": {
+    "raw": 100,
+    "normalized_distinct_within_worker": 100,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "decision_note": "All five source batches exceeded the 70% duplicate+early-reject threshold within the first 20 observations, so each source was stopped at 20 and the lane was switched. Discovery-list/exhibitor presence was treated only as an identity seed, never as S1-S3. No candidate was advanced without a cheap-gate basis for a probable qualifying signal; no inference was used to manufacture SIZE, LEGAL, SIGNAL, LPR, or CONTACT evidence.",
+  "batches": [
+    {
+      "source": "SteelStructures 2026 exhibitor list",
+      "source_url": "https://www.mc-expo.ru/en/exhibition/26/participants",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_20": true,
+      "candidates": ["ACME","Aladdin Materials","ARMADA GROUP","ARS-PROM GROUP LLC","Chemservice","DEPO","Donetsk High-Voltage Support Plant","ETALON LLC","Etalon Metal Structures Plant","EXERGIA-L","HANSA TG","ICMet","Kazan Steel Profiles","Krasnodar Plant of a Metalwork","LipetskProfil","Magnitogorsk Iron and Steel Works","Metallurgical Service","MMK-Project Solutions","Novostal-M","Orientir"]
+    },
+    {
+      "source": "METALLOOBRABOTKA-2026 Expocentre catalogue, Russia pages 11-12",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/f33d045e-98f8-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=11",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_20": true,
+      "candidates": ["БАРРАКУДА КЛАМПИН СИСТЕМС, ООО","БАРУС ИНСТРУМЕНТ, ООО","БЕЛГОРОДСКИЙ АБРАЗИВНЫЙ ЗАВОД ИМЕНИ А.И. САФОНОВА, АО","БЕЛГОРОДСКИЙ ЗАВОД ФРЕЗ И СПЕЦИНСТРУМЕНТА, ООО","БЕЛГОРОДСКИЙ ИНСТРУМЕНТАЛЬНЫЙ ЗАВОД, ООО","БЕЛОРУССКИЕ СТАНКИ, ТД, ООО","БЕЛСТАНКО, ООО","БЕЛФИН-РОБОТИКС","БЕРТЭК, ООО","БЕССЭРН, ООО","БЕТАР, ПКФ, ООО","БИВЕРТЕХ","БИГПРИНТЕР ЦИФРОВЫЕ ИННОВАЦИИ, ООО","БИЗНЕС СТОЛИЦЫ, РЕДАКЦИЯ, ООО","БИМАТИК ЛАЗЕР, ООО","БИТВАН, ООО","БЛЕСТЯЩАЯ ЛИНИЯ, АО","БОДОР, ООО","БОСЕН СВАРКА ТЕХНОЛОГИИ, ООО","БРАЙС, ООО"]
+    },
+    {
+      "source": "AGROPRODMASH-2026 Expocentre catalogue, Russia pages 37-38",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/a94ff0c2-5685-11f0-80d0-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=37",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_20": true,
+      "candidates": ["УПАКЪ","УРАЛЦЕНТРКОМПЛЕКТ, ООО","УРАЛЬСКАЯ ГУБЕРНИЯ АПК, ООО","УРБАНОВИЧ, ИП","Ф-ИМПОРТ","ФАККИНЕТТИ РУС, ООО","ФЕНИКС ИНГРЕДИЕНТС, ООО","ФЕРМЕРСКИЙ ЧЕСНОК, ООО","ФЛЕКСИАР, ООО","ФЛОРА ИНГРЕДИЕНТС, ООО","ФЛОРЭКС","ФНБ ИНЖИНИРИНГ, ООО","ФОРИНТЕК, НТЦ АТ, ЗАО","ФРУКТОНАД ГРУПП, ООО","ФС (ФУНКЦИОНАЛЬНЫЕ СМЕСИ), ООО","ФУД СЭЙФ ИНЖИНИРИНГ, ООО","ФУДАТЛАС","ФУЦЗЯНЬ ШУО ИН ТОРГОВАЯ КОМПАНИЯ, ООО","ХАУС РУС НАО","ХОЙФТ ЕВРАЗИЯ, ООО"]
+    },
+    {
+      "source": "PHOTONICS-2026 Expocentre catalogue",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/190a3abc-1050-11f0-80ce-a0d3c1fab97f/list",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_20": true,
+      "candidates": ["АВЕСТА, ООО","АЗИМУТ ФОТОНИКС, ООО","АЗМЕРИТ, ООО","АКМЕТРОН, АО","АКТИВНАЯ ОПТИКА НАЙТН, ООО","АЛЕКСАНДРА-ПЛЮС, ООО","АЛМАЗНЫЕ ТЕХНОЛОГИИ, ООО","АСЕПТИКА, ООО","АСФЕРИКА, НПО, ООО","БАСПИК, ВТЦ, ООО","БИ ПИТРОН, ООО","БИК-ИНФОРМ, ООО","БУЛАТ, ОКБ, ООО","ВИКОНТ, НПК, ООО","ВПГ ЛАЗЕРУАН, ООО","ГРУППА КОМПАНИЙ МАШИНОСТРОЕНИЯ И ПРИБОРОСТРОЕНИЯ, ООО","ДЖИЭНТЕХ, ООО","ДИАГНОСТИКА НПК","ДОКСАРД","ЕТМ ФОТОНИКА, ООО"]
+    },
+    {
+      "source": "PRODEXPO-2026 Expocentre catalogue, Russia pages 119 and 128",
+      "source_url": "https://icatalog.expocentr.ru/ru/exhibitions/870c9c18-e84b-11ef-80ce-a0d3c1fab97f/countries/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F?page=119",
+      "raw": 20,
+      "duplicate_plus_early_reject": 20,
+      "rate": 1.0,
+      "qualified": 0,
+      "stop_after_20": true,
+      "candidates": ["СОЧИНСКИЕ СЛАДОСТИ, ООО","СОЧИНСКИЙ МЯСОКОМБИНАТ, АО","СОЮЗ-22, ООО","СОЮЗ, ООО","СОЮЗОПТТОРГ, ООО","СОЮЗПИЩЕПРОМ, ОБЪЕДИНЕНИЕ, ООО","СП МИРНЫЙ, ООО","СПЕЦИАЛИСТ, ООО","СПИРКОВ ДМИТРИЙ НИКОЛАЕВИЧ, ИП","СПП-ЮГ","ТОРТЬЯНА","ТПП МОСКОВСКОЙ ОБЛАСТИ","ТРАВЫ АЗОВА, ООО","ТРАПЕЗА УПРАВЛЯЮЩАЯ КОМПАНИЯ, ООО","ТРАСТ, ООО","ТРГ, ООО","ТРЕЙДМАРКЕТ, ТД","ТРЕЙДПАКИНГ ГРУП, ООО","ТРИ-С ФУД, ООО","ТРИТОН, ООО"]
+    }
+  ]
+}
