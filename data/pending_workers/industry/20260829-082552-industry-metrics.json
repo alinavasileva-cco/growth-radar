@@ -1,0 +1,53 @@
+{
+  "worker": "industry",
+  "created_at": "2026-08-29T08:25:52+03:00",
+  "base_head": "b59c5231e72ba58c7557cb3e7e624f448f4df533",
+  "config_version": "2026-08-29T07:58:15+03:00",
+  "canonical_snapshot": {"master": 506, "contactable": 506, "integrity": "PASS"},
+  "dedup_keys_read": ["Lead ID", "INN", "OGRN/OGRNIP", "exact legal name", "confirmed brand+domain"],
+  "guards": {"canonical_writes": false, "outreach": false, "criteria_relaxed": false},
+  "funnel": {"raw": 100, "fast_gate": 0, "size": 0, "legal": 0, "signal": 0, "lpr": 0, "contact": 0, "qualified": 0},
+  "early_reject_policy": "Presence in an industrial directory, recent directory activity, or an equipment/product description was not treated as an S1-S3 growth signal. Foreign entities and entries without a probable current S1-S3 trigger were rejected at cheap gate. Deep funnel was not run after cheap reject.",
+  "lanes": [
+    {
+      "lane": "metaprom-petrochem-nizhny-novgorod",
+      "source_url": "https://metaprom.ru/companies/petrochemistry/nn/",
+      "raw": 20, "duplicate_plus_early_reject": 20, "rate": 1.0, "qualified": 0,
+      "action": "stopped_after_first_20_and_rotated",
+      "candidates": ["ТЕХ ЛЮБ, ООО","ДЗРхим, ООО","ПКФ Агрохимпроект, ООО","ООО ВитаХим","РусХимтрейд, ООО","ХимЭко Поволжье ООО","ХимАвангард, ПКФ, ООО","ХимераНН, ООО","ИОНХИМ, ООО","Химрегион, ООО","ОКА-Кемикал, ООО","Вектор-Плюс, ООО","МетСервис, ООО","Изомер","Тдк3000, ООО","Прогресс, ООО","Святогор-НН, ООО","НефтеХим-Инновации, ООО","ДПХИ-НН, ООО","ХИМПРОМПЭК, ООО"]
+    },
+    {
+      "lane": "metaprom-industrial-tools-russia",
+      "source_url": "https://metaprom.ru/companies/tools/",
+      "raw": 20, "duplicate_plus_early_reject": 20, "rate": 1.0, "qualified": 0,
+      "action": "stopped_after_first_20_and_rotated",
+      "candidates": ["Фаворит Мясной Промышленности, ООО","Мир - Пластикстанки, ООО","РЭС, АО","Томские технологии, ООО","Hebei Connect Trading Co., Ltd","Предприниматель Люгаев А.Е.","Агростройлидер","Luoyang Fengte Garden Machinery","Камский Калибр","НПЦ Лазеры и аппаратура ТМ, ООО","СПК Техника, OOO","Jinan Ekxia Power Equipment Co., Ltd","Триммеры IBEX EZY","Kexiang Automation","Автограф инструментальные решения","Оксайд, ООО","Henan Tianchi Cryogenic Machinery Equipment Manufacturing Co., Ltd","Группа ПРО","МеталлРент, ООО","Qingdao Win Win Machinery Co., Ltd"]
+    },
+    {
+      "lane": "metaprom-novosibirsk-all-industries",
+      "source_url": "https://metaprom.ru/companies/nsk/",
+      "raw": 20, "duplicate_plus_early_reject": 20, "rate": 1.0, "qualified": 0,
+      "action": "stopped_after_first_20_and_rotated",
+      "candidates": ["СК Запсибтрансмет","Уралмост, ПКФ, ООО","Ферус Новосибирск, ООО","Амет, ТД","ПКФ Энерго, ООО","Ананенко И.В., ИП","АЛЬПА, ООО","АлтайСпецИзделия","ЗВЕЗДА, ООО","Новосибирский Завод Конвейерного Оборудования, ООО","АРМАТУРНО-ПРОМЫШЛЕННАЯ КОМПАНИЯ ТРАСК, ООО","Снабжение","Торговая Компания ДИЛЛ, ООО","НПСП - коммерческая недвижимость","Аурум-полимер, ООО","Первый круг, ООО","Митал, ООО","ВРК-Гарант, ООО","Алмасис, ООО","МеталлСибирь, ООО"]
+    },
+    {
+      "lane": "metaprom-krasnodar-all-industries",
+      "source_url": "https://metaprom.ru/companies/krasnodar/",
+      "raw": 20, "duplicate_plus_early_reject": 20, "rate": 1.0, "qualified": 0,
+      "action": "stopped_after_first_20_and_rotated",
+      "candidates": ["ЭлТекс, ООО","ТЭК Автоматика, ООО","ПИККОМП-Компрессор","Кубань Агро, ООО","ВОСЕМЬ АКРОВ, ООО","Энергия","Электрохолдинг, ООО","Куб Инерт, ООО","НПП ЮГНЕФТЕМАШ, ООО","Рик-Маркет, ООО","Энергокомплект, ООО","ТД МАКСИ-КРАЙТ, ООО","ИП Кленкин В.А.","Железобетон, ЗАО","Кубаньжелдормаш, АО","ООО Гидроград","Промтехмаш","НГТО-Кубань, ООО","Эмпреса, ООО","СЕЛЬСКОХОЗЯЙСТВЕННАЯ ЭКСПОРТНАЯ КОРПОРАЦИЯ, АО"]
+    },
+    {
+      "lane": "metaprom-tatarstan-all-industries",
+      "source_url": "https://metaprom.ru/companies/tatarstan/",
+      "raw": 20, "duplicate_plus_early_reject": 20, "rate": 1.0, "qualified": 0,
+      "action": "stopped_after_first_20_and_rotated",
+      "candidates": ["Завод алюминиевых сплавов АВИАЛЬ, ООО","Plast-TEK","ПТК Инжиниринг, ООО","ВодоЭнергоучет, ООО","Уральский завод промышленного литья и механики, ООО","ООО РАБИКА - энергосбережение","КамПромДеталь, ООО","КамЭнергоРемонт, ООО","ЖелДорКомплект, ТРК, ООО","СтройТехСервисПлюс","Востокэнерготранс, ООО","ПРОМОРИОН, ООО","ПРОМКАБЕЛЬ","Тепловоз ЖД","Стелс, ООО","Грузоподъем, ООО","Элейн","Кабельсервис, ООО","Травертина","Сигнал, ООО"]
+    }
+  ],
+  "notes": [
+    "100 candidate names are distinct within this worker file after replacing obvious same-source duplicates/aliases.",
+    "Raw entries are source-level identities, not claims of 100 globally legal-key-resolved companies; cheap rejects were not promoted into LEGAL resolution.",
+    "No qualified candidate was produced, so only this unique metrics file was written."
+  ]
+}
