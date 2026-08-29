@@ -1,0 +1,187 @@
+{
+  "schema_version": "pending_worker.jobs.v1",
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-29T14:22:49+03:00",
+    "baseline_head": "26f93476e85f9179f2ede68c2ae0386b0d9b8f74",
+    "config_version": "2026-08-29T14:01:46+03:00",
+    "last_fully_completed_run": "N5K-20260829-498",
+    "canonical_count": 514,
+    "contactable_count": 514,
+    "outreach_performed": false,
+    "canonical_writer_run": false,
+    "canonical_files_modified": false
+  },
+  "dedup_policy": {
+    "keys": [
+      "lead_id",
+      "inn",
+      "ogrn_or_ogrnip",
+      "exact_legal_name",
+      "confirmed_brand_domain"
+    ],
+    "before_deep_check": true,
+    "before_write": true,
+    "baseline_head": "26f93476e85f9179f2ede68c2ae0386b0d9b8f74"
+  },
+  "source_instrumentation": [
+    {
+      "source": "HH Moscow / operations leadership / direct employers",
+      "source_url": "https://hh.ru/vacancies/operacionnyy_direktor",
+      "first20_rows_observed": 20,
+      "distinct_raw_count": 20,
+      "duplicates_plus_early_rejects_first_20": 19,
+      "duplicate_plus_early_reject_rate": 0.95,
+      "stopped_for_saturation": true,
+      "note": "Stopped after first 20 because duplicate+early-reject rate exceeded 70%."
+    },
+    {
+      "source": "HH Saint Petersburg / commercial leadership",
+      "source_url": "https://spb.hh.ru/vacancies/kommercheskiy_direktor",
+      "first20_rows_observed": 20,
+      "distinct_raw_count": 19,
+      "duplicates_plus_early_rejects_first_20": 17,
+      "duplicate_plus_early_reject_rate": 0.85,
+      "stopped_for_saturation": true,
+      "note": "One employer repeated inside the first 20; saturated lane stopped after the first 20 rows."
+    },
+    {
+      "source": "HH Novosibirsk / executive leadership",
+      "source_url": "https://novosibirsk.hh.ru/vacancies/ispolnitelnyy_direktor",
+      "first20_rows_observed": 20,
+      "distinct_raw_count": 19,
+      "duplicates_plus_early_rejects_first_20": 15,
+      "duplicate_plus_early_reject_rate": 0.75,
+      "stopped_for_saturation": true,
+      "note": "One employer repeated inside the first 20; lane stopped because duplicate+early-reject rate exceeded 70%."
+    },
+    {
+      "source": "HH Kazan / commercial leadership",
+      "source_url": "https://kazan.hh.ru/vacancies/kommercheskiy_direktor",
+      "first20_rows_observed": 20,
+      "distinct_raw_count": 19,
+      "duplicates_plus_early_rejects_first_20": 13,
+      "duplicate_plus_early_reject_rate": 0.65,
+      "stopped_for_saturation": false,
+      "note": "One employer repeated inside the first 20; saturation threshold was not exceeded."
+    },
+    {
+      "source": "HH Ekaterinburg + cross-board targeted operations probes",
+      "source_url": "https://ekaterinburg.hh.ru/vacancies/operacionnyy_direktor",
+      "first20_threshold_evaluated": false,
+      "distinct_raw_count": 3,
+      "stopped_for_saturation": false,
+      "note": "Three additional employer-distinct low-overlap observations were counted to reach 80 different raw employers: SBV Utilization, PNK-Region and one separate targeted operations employer. Fewer than 20 were instrumented in this probe, so no first-20 rate is claimed."
+    }
+  ],
+  "worker_funnel": {
+    "RAW_DISTINCT": 80,
+    "FAST_GATE": 10,
+    "DEEP_CHECK": 4,
+    "SIZE": 2,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "deep_check_rejections": [
+    {
+      "brand": "ПНК-Регион",
+      "legal_name": "ООО «ПЕРВАЯ НЕРУДНАЯ КОРПОРАЦИЯ-РЕГИОН»",
+      "inn": "7708281619",
+      "ogrn": "1167746143234",
+      "stage": "LEGAL",
+      "reason": "Current scale and the 2026-08-13 executive/operations hiring signal were strong, but a 2026 arbitration record contains a bankruptcy/insolvency proceeding. LEGAL therefore failed closed; no qualification was made."
+    },
+    {
+      "brand": "D1 Capital",
+      "legal_name": "ООО «Д1 КАПИТАЛ»",
+      "inn": "9703192550",
+      "ogrn": "1247700661768",
+      "stage": "SIZE",
+      "reason": "The legal entity, official domain and LPR were identifiable, but a sufficiently strong current scale under the configured SIZE gate was not confirmed without inference."
+    },
+    {
+      "brand": "Novobort",
+      "stage": "SIZE_ENTITY_MAPPING",
+      "reason": "A current operations-leadership vacancy signal was found, but exact current legal-entity mapping and corresponding scale could not be proven to the configured standard. No entity substitution was made."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "СБВ Утилизация",
+      "legal_name": "ООО «СБВ УТИЛИЗАЦИЯ»",
+      "inn": "6658377374",
+      "ogrn": "1116658002328",
+      "legal_status": "active",
+      "legal_address": "620131, Свердловская область, г. Екатеринбург, ул. Большой Конный П-Ов, стр. 5А, оф. 41",
+      "size": {
+        "metric": "revenue_2025_rub",
+        "value": 111120000,
+        "as_of": "2025",
+        "employee_count": 31,
+        "net_profit_2025_rub": 18330000,
+        "source_url": "https://b2b.house/company/OOO-SBV-UTILIZACIYA_1c03bc0f-99b4-4882-bdc2-4618251a6191/"
+      },
+      "signal": {
+        "tier": "S1",
+        "role": "Операционный директор",
+        "publication_date": "2026-06-12",
+        "current_as_of": "2026-08-29",
+        "description": "Current C-level operations hiring signal. The role is described as the second person in the company, taking full operational management, with explicit responsibility for scaling and systematizing the business, production management, budgeting and EBITDA.",
+        "source_url": "https://h.careers/job/a166e9f4-892e-45da-8852-e9e6c61500ee",
+        "current_listing_url": "https://ekaterinburg.hh.ru/vacancies/operacionnyy_direktor"
+      },
+      "lpr": {
+        "name": "Борисихин Александр Владимирович",
+        "role": "директор; 100% учредитель",
+        "ownership_percent": 100,
+        "source_url": "https://zachestnyibiznes.ru/company/ul/1116658002328_6658377374_OOO-SBV-UTILIZACIYa"
+      },
+      "contact": {
+        "domain": "sbv-ekb.ru",
+        "email": "av@sbv-ekb.ru",
+        "phone": "+7 (343) 288-79-79",
+        "route": "Official corporate contact route for legal entities/commercial proposals.",
+        "source_url": "https://sbv-ekb.ru/about/contacts"
+      },
+      "evidence_urls": [
+        "https://h.careers/job/a166e9f4-892e-45da-8852-e9e6c61500ee",
+        "https://ekaterinburg.hh.ru/vacancies/operacionnyy_direktor",
+        "https://b2b.house/company/OOO-SBV-UTILIZACIYA_1c03bc0f-99b4-4882-bdc2-4618251a6191/",
+        "https://companies.rbc.ru/id/1116658002328-ooo-sbv-utilizatsiya/",
+        "https://zachestnyibiznes.ru/company/ul/1116658002328_6658377374_OOO-SBV-UTILIZACIYa",
+        "https://sbv-ekb.ru/about/contacts",
+        "https://eco-sbv.ru/kontakty/"
+      ],
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6658377374",
+        "ogrn_or_ogrnip": "1116658002328",
+        "exact_legal_name": "ООО «СБВ УТИЛИЗАЦИЯ»",
+        "confirmed_brand_domain": "СБВ Утилизация|sbv-ekb.ru"
+      },
+      "dedup_checks": [
+        {
+          "phase": "before_deep_check",
+          "head": "26f93476e85f9179f2ede68c2ae0386b0d9b8f74",
+          "result": "no repository/canonical match found by INN, OGRN or confirmed brand+domain"
+        },
+        {
+          "phase": "immediately_before_write",
+          "head": "26f93476e85f9179f2ede68c2ae0386b0d9b8f74",
+          "result": "no repository/canonical match found by INN, OGRN, exact legal name or confirmed brand+domain"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Raw count is employer-distinct after within-lane name de-overlap; vacancy-row duplicates were not counted as different raw companies.",
+    "No stale record was used for a positive decision where fresher evidence was available.",
+    "No contact was reconstructed from a pattern.",
+    "No outreach was performed.",
+    "No canonical master/contactable/contacts/evidence/runtime/campaign file was modified and canonical writer was not started."
+  ]
+}
