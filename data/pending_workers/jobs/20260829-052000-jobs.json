@@ -1,0 +1,158 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-29T05:20:00+03:00",
+    "baseline": {
+      "head": "52ec77415e6d0f6092931d6fe9d10efeb0874d5d",
+      "last_completed_run": "N5K-20260829-489",
+      "canonical_count": 503,
+      "contactable_count": 503,
+      "integrity": "PASS"
+    },
+    "canonical_write": false,
+    "canonical_writer_started": false,
+    "outreach": false
+  },
+  "source_policy": {
+    "raw_target": "80-150 distinct low-overlap employer-level candidates",
+    "raw_distinct": 80,
+    "sources_used": [
+      "HH and HH-indexed vacancy surfaces across Moscow, Saint Petersburg, Novosibirsk, Ekaterinburg, Kazan, Samara, Krasnodar, Perm and Rostov-on-Don",
+      "Rabota.ru and Rabota.ru-indexed vacancy surfaces",
+      "Habr Career",
+      "GetMatch / adjacent tech-job indexes",
+      "SuperJob-indexed and multi-board vacancy mirrors",
+      "current company career/job pages and current vacancy aggregators"
+    ],
+    "source_metrics_note": "This run rotated source/query lanes aggressively and reached 80 distinct employer-level observations. Exact first-20 duplicate+early-reject percentages were not deterministically exposed by the fused web-search result surface, so no percentage was reconstructed or invented. Saturated query lanes were abandoned rather than repeatedly mined.",
+    "examples_of_current_job_signals": [
+      "https://nesiditsa.ru/vacancy/135645398",
+      "https://nesiditsa.ru/vacancy/134729144",
+      "https://dreamjob.ru/employers/92607/vakansii/136238554",
+      "https://nesiditsa.ru/vacancy/136621186",
+      "https://kazan.cataloxy.ru/rabota/vacancy1128025725_head-of-regional-business-development.htm"
+    ]
+  },
+  "funnel": {
+    "RAW_DISTINCT": 80,
+    "FAST_GATE": 6,
+    "DEEP_CHECK": 3,
+    "SIZE": 2,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "deep_check_notes": [
+    {
+      "candidate": "Ветеринарика / ООО ГВЛДЦ",
+      "result": "QUALIFIED"
+    },
+    {
+      "candidate": "ООО АкваБайт",
+      "result": "REJECT_SIZE",
+      "note": "Current 2025 accounting snapshot shows revenue about 1.08m RUB; not advanced."
+    },
+    {
+      "candidate": "Кондитерская фабрика СВЕТАЛИНА",
+      "result": "REJECT_SIZE",
+      "note": "Current legal snapshot for the matched legal entity shows 2024 revenue about 1.0m RUB; not advanced."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "Ветеринарика",
+      "legal_name": "ООО \"ГОРОДСКОЙ ВЕТЕРИНАРНЫЙ ЛЕЧЕБНО - ДИАГНОСТИЧЕСКИЙ ЦЕНТР\"",
+      "short_legal_name": "ООО \"ГВЛДЦ\"",
+      "city": "Санкт-Петербург",
+      "inn": "7816653230",
+      "ogrn": "1177847359700",
+      "legal_status": "Действующее",
+      "private_company": true,
+      "size": {
+        "revenue_2025_rub": 228100000,
+        "revenue_growth_2025": "+31%",
+        "employees_signal_latest": "120+",
+        "employees_signal_basis": "Current COO vacancy states more than 120 employees and continued headcount growth.",
+        "evidence_urls": [
+          "https://companium.ru/id/1177847359700-gvldc",
+          "https://nesiditsa.ru/vacancy/135645398"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "senior_operating_hiring_for_scaling",
+        "vacancy_title": "Операционный директор (COO/ветеринария)",
+        "publication_date": "2026-08-09",
+        "evidence_summary": "The current vacancy states that Veterinarika has 3 operating clinics, is actively scaling, is opening a fourth clinic, has 120+ employees with continued team growth, and is hiring a COO to systematize operations for further network scaling.",
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/135645398"
+        ]
+      },
+      "lpr": {
+        "executive": "Васильев Дмитрий Владимирович",
+        "executive_role": "Директор",
+        "owner": "Васильев Дмитрий Владимирович",
+        "owner_share": "66.67%",
+        "co_owner": "Фомченко Виктория Николаевна",
+        "evidence_urls": [
+          "https://companium.ru/id/1177847359700-gvldc",
+          "https://animal-doc.ru/online-konsultaciya-veterinara/dogovor--oferta-ooo-gvldc.pdf"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "phones": [
+          "+7 812 660-77-80"
+        ],
+        "emails": [
+          "animal-doc1@mail.ru"
+        ],
+        "contact_urls": [
+          "https://animal-doc.ru/kontakty/",
+          "https://animal-doc.ru/"
+        ],
+        "note": "Official contacts page also exposes a direct 'Написать директору' route."
+      },
+      "dedup_keys": {
+        "lead_id": "jobs:inn:7816653230",
+        "inn": "7816653230",
+        "ogrn": "1177847359700",
+        "exact_legal_name": "ООО \"ГОРОДСКОЙ ВЕТЕРИНАРНЫЙ ЛЕЧЕБНО - ДИАГНОСТИЧЕСКИЙ ЦЕНТР\"",
+        "brand": "Ветеринарика",
+        "confirmed_domain": "animal-doc.ru"
+      },
+      "dedup_recheck": {
+        "pre_deep_check": {
+          "inn": "NO_MATCH",
+          "ogrn": "NO_MATCH",
+          "confirmed_domain": "NO_MATCH"
+        },
+        "pre_write": {
+          "head": "52ec77415e6d0f6092931d6fe9d10efeb0874d5d",
+          "inn": "NO_MATCH",
+          "ogrn": "NO_MATCH",
+          "short_legal_name": "NO_MATCH",
+          "confirmed_domain": "NO_MATCH"
+        }
+      },
+      "evidence_urls": [
+        "https://nesiditsa.ru/vacancy/135645398",
+        "https://companium.ru/id/1177847359700-gvldc",
+        "https://animal-doc.ru/kontakty/",
+        "https://animal-doc.ru/policy/",
+        "https://animal-doc.ru/online-konsultaciya-veterinara/dogovor--oferta-ooo-gvldc.pdf"
+      ],
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ]
+}
