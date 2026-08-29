@@ -1,0 +1,129 @@
+{
+  "worker": "read-discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-29T18:17:24+03:00",
+  "source_head": "705c10afc4dd34604048191b068b155360dda4bb",
+  "config_version": "2026-08-29T18:03:00+03:00",
+  "canonical_baseline": {
+    "contactable": 518,
+    "integrity": "PASS",
+    "last_completed_run": "N5K-20260829-502"
+  },
+  "constraints": {
+    "canonical_write": false,
+    "canonical_writer_run": false,
+    "outreach": false,
+    "dedup_keys": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "confirmed_brand_domain"]
+  },
+  "discovery": {
+    "raw_source_level_employer_observations": 80,
+    "raw_distinct_claim_scope": "source-level employer observations after query-level de-overlap; cheap rejects were not all resolved to legal keys",
+    "sources": [
+      "HH-derived current vacancy mirrors and indexed results",
+      "Jobrun current COO/CCO/executive-director surfaces",
+      "DreamJob current vacancy pages",
+      "other current job-board indexed signals"
+    ],
+    "lane_instrumentation_note": "Stable employer-level first-20 ordering and canonical dedup status could not be reconstructed across all indexed surfaces. Exact duplicate+early-reject rates are therefore not asserted. Sources were rotated in batches of no more than 20 observations instead of inventing saturation percentages.",
+    "first20_duplicate_plus_early_reject_rate": null
+  },
+  "worker_funnel": {
+    "RAW": 80,
+    "FAST_GATE": 6,
+    "DEEP_CHECK": 1,
+    "SIZE": 1,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "qualified": [
+    {
+      "brand": "Programming Store",
+      "legal_name": "ООО «ПРОСТО»",
+      "city": "Ижевск",
+      "region": "Удмуртская Республика",
+      "country": "Россия",
+      "inn": "1841039706",
+      "ogrn": "1141841001158",
+      "domain": "programstore.ru",
+      "legal_status": "действует",
+      "size": {
+        "revenue_2025_rub": 680754000,
+        "employees_2025": 196,
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1141841001158/",
+          "https://b2b.house/company/OOO-PROSTO_7638582b-583c-4fed-99a1-04587533f5b7/",
+          "https://reputation.ru/ogrn/1141841001158"
+        ]
+      },
+      "legal": {
+        "status_as_of": "2026-08-23",
+        "director": "Петухов Алексей Валерьевич",
+        "evidence_urls": [
+          "https://saby.ru/profile/1841039706-183101001",
+          "https://firmoteka.ru/1841039706",
+          "https://companies.rbc.ru/id/1141841001158-programming-store/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "job_vacancy",
+        "title": "Коммерческий директор (CCO)",
+        "published_date": "2026-08-03",
+        "evidence": "Компания ищет CCO; вакансия описывает аккредитованную IT-компанию, входящую в перечень системообразующих организаций региона, с командой более 250 человек и задачей коммерческого управления/развития.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/136859/vakansii/135837126"
+        ]
+      },
+      "lpr": {
+        "name": "Петухов Алексей Валерьевич",
+        "role": "директор",
+        "evidence_urls": [
+          "https://saby.ru/profile/1841039706-183101001",
+          "https://companies.rbc.ru/id/1141841001158-programming-store/"
+        ]
+      },
+      "contact": {
+        "route_type": "official_corporate",
+        "email": "site@programstore.ru",
+        "phone": "8 800 600-25-01",
+        "office_phone": "+7 (3412) 97-24-23",
+        "contact_url": "https://programstore.ru/contacts",
+        "evidence_urls": [
+          "https://programstore.ru/contacts",
+          "https://programstore.ru/"
+        ]
+      },
+      "dedup": {
+        "pre_deep_check": {
+          "query": "Programming Store",
+          "canonical_match_found": false
+        },
+        "pre_write": {
+          "inn_query": "1841039706",
+          "ogrn_query": "1141841001158",
+          "canonical_match_found": false
+        },
+        "keys": {
+          "inn": "1841039706",
+          "ogrn": "1141841001158",
+          "exact_legal_name": "ООО «ПРОСТО»",
+          "brand_domain": "Programming Store|programstore.ru"
+        }
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/136859/vakansii/135837126",
+        "https://programstore.ru/about",
+        "https://programstore.ru/contacts",
+        "https://www.tbank.ru/business/contractor/legal/1141841001158/",
+        "https://saby.ru/profile/1841039706-183101001",
+        "https://b2b.house/company/OOO-PROSTO_7638582b-583c-4fed-99a1-04587533f5b7/",
+        "https://firmoteka.ru/1841039706",
+        "https://companies.rbc.ru/id/1141841001158-programming-store/"
+      ],
+      "qualification": "QUALIFIED"
+    }
+  ]
+}
