@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0689,N5K-0689-C01,Альфатория,3663085935,,Корпоративный маршрут,+7 473 280-09-28,phone,corporate,Альфатория,https://alfatory.ru/contacts/stores/,NO,HIGH,2026-08-30,Опубликованный официальный корпоративный телефон; не персональный номер ЛПР.,N5K-20260830-510R1,new_5000
+N5K-0689,N5K-0689-C02,Альфатория,3663085935,,Корпоративный маршрут,sale@alfatory.ru,email,corporate,Альфатория,https://alfatory.ru/company/,NO,HIGH,2026-08-30,Опубликованный официальный корпоративный e-mail; не персональный адрес ЛПР.,N5K-20260830-510R1,new_5000
+N5K-0689,N5K-0689-C03,Альфатория,3663085935,,Корпоративный маршрут,https://alfatory.ru/company/,web_form,corporate,Альфатория,https://alfatory.ru/company/,NO,HIGH,2026-08-30,Официальный маршрут обратной связи на сайте компании.,N5K-20260830-510R1,new_5000

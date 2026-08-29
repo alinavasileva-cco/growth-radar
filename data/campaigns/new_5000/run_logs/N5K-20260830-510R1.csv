@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Status,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Outreach Sent,Notes
+N5K-20260830-510R1,new_5000,COMPLETED,38,1,1,1,1,1,1,0,37,529,529,PASS,0,0,0,; physical dedup skipped=[]

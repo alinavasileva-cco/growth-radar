@@ -1,40 +1,42 @@
 {
-  "run_id": "N5K-20260830-509R1",
-  "canonical_integration_run_id": "N5K-20260830-509",
+  "run_id": "N5K-20260830-510R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T01:06:46+03:00",
-  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
+  "updated_at": "2026-08-30T02:35:07+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 527,
+    "baseline_count": 528,
     "target_count": 5000,
-    "current_canonical_count": 528,
-    "current_contactable_count": 528,
+    "current_canonical_count": 529,
+    "current_contactable_count": 529,
     "progress_added": 1,
-    "remaining": 4472,
-    "remaining_to_1000": 472
+    "remaining": 4471
   },
   "funnel": {
-    "discovered": 20,
+    "discovered": 38,
     "raw_denominator_complete": true,
-    "raw_denominator_note": "20 distinct named company candidates were counted once across the two measured own-discovery lanes. This denominator is company-name distinct at discovery level; cheap rejects were not all resolved to full legal keys.",
-    "fast_gate_passed": 3,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "prewrite_qualified": 3,
+    "raw_denominator_note": "Fresh jobs worker resolved 38 employer-level distinct candidates on inspected batches. The requested 200-300 distinct raw target was not claimed because additional source rows could not be resolved to unique employer/legal identities without guessing.",
+    "fast_gate_passed": 5,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "prewrite_qualified": 1,
     "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 4,
-    "excluded": 17
+    "physically_integrated": 0,
+    "duplicates": 0,
+    "excluded": 37
   },
   "lane_metrics": [
     {
-      "lane": "growth_news_own",
-      "raw": 12,
-      "fast_gate": 1,
+      "lane": "jobs_worker",
+      "worker_source": "data/pending_workers/jobs/20260830-022700-jobs.json",
+      "worker_commit": "82d9287acbc715652123f9c86d2d04632d74296f",
+      "source_level_observations_inspected": 100,
+      "raw": 38,
+      "fast_gate": 5,
+      "deep_check": 3,
       "size": 1,
       "legal": 1,
       "signal": 1,
@@ -42,108 +44,18 @@
       "contact": 1,
       "qualified_before_physical_dedup": 1,
       "qualified_after_physical_dedup": 1,
-      "duplicate_plus_early_reject": 11,
-      "qualified_raw_pct": 8.3333,
-      "fast_gate_raw_pct": 8.3333
-    },
-    {
-      "lane": "official_owner_own",
-      "raw": 8,
-      "fast_gate": 2,
-      "size": 2,
-      "legal": 2,
-      "signal": 2,
-      "lpr": 2,
-      "contact": 2,
-      "qualified_before_physical_dedup": 2,
-      "qualified_after_physical_dedup": 0,
-      "duplicate_plus_early_reject": 8,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 25.0,
-      "note": "Both pre-write PASS companies were blocked by final physical dedup: НАРТИС by INN+OGRN+LEGAL_NAME+BRAND_DOMAIN; МолоПак by INN+OGRN."
-    },
-    {
-      "lane": "jobs_probe",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified_after_physical_dedup": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "No fresh unconsumed worker staging after 508R1; capped lane was not padded with repeated candidates."
-    },
-    {
-      "lane": "industry_probe",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified_after_physical_dedup": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Cooldown/probe-only; no productive fresh batch used."
-    },
-    {
-      "lane": "experimental",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified_after_physical_dedup": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "No sufficiently fresh low-overlap source justified padding this run."
+      "note": "Fresh worker data only; raw count is employer-level distinct where legally resolved. No padding from unresolved vacancy rows."
     }
   ],
-  "efficiency_control": {
-    "current": {
-      "qualified_raw_pct": 5.0,
-      "fast_gate_raw_pct": 15.0,
-      "net_new_qualified": 1
-    },
-    "previous_runs": [
-      {
-        "run_id": "N5K-20260829-506",
-        "growth_news": {"raw": 8, "fast_gate": 2, "size": 2, "signal": 2, "qualified": 2, "duplicate_plus_early_reject": 6, "qualified_raw_pct": 25.0, "fast_gate_raw_pct": 25.0},
-        "jobs_probe": {"raw": 1, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 1, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0}
-      },
-      {
-        "run_id": "N5K-20260829-507R1",
-        "growth_news": {"raw": 8, "fast_gate": 1, "size": 1, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 6, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 12.5},
-        "jobs_worker": {"raw": null, "fast_gate": 5, "size": 2, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": null, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "Immutable staging did not preserve a defensible distinct employer-level raw denominator; not reconstructed."}
-      },
-      {
-        "run_id": "N5K-20260830-508R1",
-        "jobs_worker_source_level": {"raw": 280, "fast_gate": 11, "size": 3, "signal": 2, "qualified": 1, "duplicate_plus_early_reject": null, "qualified_raw_pct": 0.3571, "fast_gate_raw_pct": 3.9286, "note": "Two 140-employer-distinct passes; between-pass global employer dedup was not reconstructed, so these percentages are source-level and not strictly comparable to globally deduped denominators."}
-      }
-    ],
-    "change_vs_previous_hour": {
-      "qualified_raw_pct_pp": 4.6429,
-      "fast_gate_raw_pct_pp": 11.0714,
-      "comparison_note": "Current 20-candidate denominator is cross-lane company-name distinct. Previous 508R1 denominator was source-level across two worker passes and not guaranteed globally deduped, so the numeric change is directional rather than fully like-for-like."
-    },
-    "decision": "Net-new output is 1 (<5), so the previous allocation is not repeated automatically. Growth/news remains productive on net-new output. Official/owner produced two pre-write PASS but zero net-new because both were canonical duplicates, so it is not boosted despite strong fast-gate conversion. Jobs remains capped; industry remains probe-only/no-deep-check.",
-    "next_distribution_pct": {
-      "jobs": 5,
-      "growth_news": 55,
-      "official_owner_ceo": 30,
-      "industry_probe_only": 5,
-      "experimental": 5
-    }
-  },
-  "qualified_companies": ["Мосэлектрощит"],
-  "physical_dedup_skipped": [
-    {"brand": "НАРТИС", "reasons": ["INN", "OGRN", "LEGAL_NAME", "BRAND_DOMAIN"]},
-    {"brand": "МолоПак", "reasons": ["INN", "OGRN"]}
+  "qualified_companies": [
+    "Альфатория"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "528_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "528_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "529_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "529_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "notes": "N5K-20260830-509 physically integrated Мосэлектрощит as N5K-0686. НАРТИС and МолоПак were rejected by final physical dedup and are not counted as new. Strict quality unchanged; raw was not padded with catalogs. Metadata repaired in 509R1 so lane efficiencies use net-new qualified after physical dedup."
+  "blocker": null
 }
