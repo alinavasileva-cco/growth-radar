@@ -1,0 +1,200 @@
+{
+  "worker": {
+    "lane": "jobs",
+    "mode": "READ+DISCOVERY",
+    "created_at": "2026-08-29T04:20:27+03:00",
+    "baseline": {
+      "head": "613af337d51b001ad20f8a6c94a608b1a361ff66",
+      "last_completed_run": "N5K-20260829-488",
+      "canonical_count": 502,
+      "contactable_count": 502,
+      "integrity": "PASS"
+    },
+    "canonical_write": false,
+    "canonical_writer_started": false,
+    "outreach": false
+  },
+  "source_policy": {
+    "raw_target": "80-150 distinct low-overlap employer-level candidates",
+    "raw_distinct": 84,
+    "sources_used": [
+      "HH Moscow commercial-director lane",
+      "HH Saint Petersburg commercial-director lane",
+      "HH Novosibirsk B2B commercial-director lane",
+      "Rabota.ru Saint Petersburg leadership lane"
+    ],
+    "source_metrics": [
+      {
+        "lane": "hh_moscow_commercial",
+        "inspected": 20,
+        "distinct_employers": 20,
+        "first20_duplicates": 0,
+        "first20_early_rejects": 15,
+        "first20_duplicate_plus_early_reject": 15,
+        "first20_rate": 0.75,
+        "stopped_for_saturation": true,
+        "evidence_url": "https://hh.ru/vacancies/kommercheskiy_direktor"
+      },
+      {
+        "lane": "hh_spb_commercial",
+        "inspected": 40,
+        "distinct_employers": 38,
+        "first20_duplicates": 1,
+        "first20_early_rejects": 11,
+        "first20_duplicate_plus_early_reject": 12,
+        "first20_rate": 0.60,
+        "stopped_for_saturation": false,
+        "evidence_url": "https://spb.hh.ru/vacancies/kommercheskiy_direktor"
+      },
+      {
+        "lane": "hh_novosibirsk_b2b",
+        "inspected": 20,
+        "distinct_employers": 20,
+        "first20_duplicates": 0,
+        "first20_early_rejects": 15,
+        "first20_duplicate_plus_early_reject": 15,
+        "first20_rate": 0.75,
+        "stopped_for_saturation": true,
+        "evidence_url": "https://novosibirsk.hh.ru/vacancies/kommercheskij-direktor-b2b"
+      },
+      {
+        "lane": "rabota_spb_leadership",
+        "inspected": 8,
+        "distinct_employers": 7,
+        "first20_threshold_evaluated": false,
+        "reason": "lane contributed fewer than 20 records before the 80+ distinct target was reached",
+        "evidence_url": "https://spb.rabota.ru/vacancy/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C/"
+      }
+    ],
+    "cross_lane_distinct_note": "84 unique employer-level records after removing repeated employers within lanes and one repeated recruiting employer across HH Moscow/SPb."
+  },
+  "funnel": {
+    "RAW_DISTINCT": 84,
+    "FAST_GATE": 4,
+    "DEEP_CHECK": 4,
+    "SIZE": 2,
+    "LEGAL": 1,
+    "SIGNAL": 1,
+    "LPR": 1,
+    "CONTACT": 1,
+    "QUALIFIED": 1
+  },
+  "deep_check_notes": [
+    {
+      "candidate": "ООО Компания Рена / Rena Computer",
+      "result": "QUALIFIED"
+    },
+    {
+      "candidate": "ООО АкваБайт",
+      "result": "REJECT_SIZE",
+      "note": "2025 revenue 1.08m RUB in current financial snapshot; not advanced."
+    },
+    {
+      "candidate": "Глобал Автоматикс",
+      "result": "REJECT_LEGAL_IDENTITY",
+      "note": "Current search surfaced conflicting legal-entity identifiers for the brand/name; fail-closed."
+    },
+    {
+      "candidate": "Бизнес Сфера",
+      "result": "REJECT_LEGAL_IDENTITY",
+      "note": "Vacancy employer name could not be tied unambiguously to the searched legal entity; fail-closed."
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "Rena Computer / Рена Компьютер",
+      "legal_name": "ООО \"КОМПАНИЯ РЕНА\"",
+      "city": "Санкт-Петербург",
+      "inn": "7802802900",
+      "ogrn": "1127847510010",
+      "legal_status": "Действующее",
+      "private_company": true,
+      "size": {
+        "latest_scale_year": 2025,
+        "employees_latest_confirmed": 4,
+        "income_rub_latest_confirmed": 20913000,
+        "revenue_2024_rub": 17238000,
+        "evidence": [
+          "https://zachestnyibiznes.ru/company/ul/1127847510010_7802802900_OOO-KOMPANIYa-RENA",
+          "https://companies.rbc.ru/id/1127847510010-ooo-kompaniya-rena/"
+        ],
+        "note": "2025 source exposes income and employee count; 2024 source exposes accounting revenue. No newer verified revenue figure was substituted or invented."
+      },
+      "signal": {
+        "class": "S1",
+        "type": "senior_commercial_hiring",
+        "vacancy_title": "Коммерческий директор / Руководитель продаж (B2B, IT)",
+        "signal_observed_date": "2026-08-29",
+        "publication_date": null,
+        "date_basis": "Observed on the current Rabota.ru vacancy/search surface on 2026-08-29; the publication date was not exposed in the retrievable page, so it is not invented.",
+        "evidence_summary": "The employer is currently recruiting a commercial leader to develop B2B sales of IT equipment; the listing explicitly states commercial leadership and allows entering with a team.",
+        "evidence_urls": [
+          "https://spb.rabota.ru/vacancy/54224779/",
+          "https://spb.rabota.ru/vacancy/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C/",
+          "https://spb.rabota.ru/career/catalogue/finance-and-accounting/commercial-director/"
+        ]
+      },
+      "lpr": {
+        "owner": "Лебедев Андрей Николаевич",
+        "owner_share": "100%",
+        "executive": "Лебедев Андрей Николаевич",
+        "executive_role": "Генеральный директор",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1127847510010-ooo-kompaniya-rena/",
+          "https://comfex.ru/1127847510010/%D0%BE%D0%BE%D0%BE-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F-%D1%80%D0%B5%D0%BD%D0%B0"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "phones": [
+          "+7 812 295-94-63"
+        ],
+        "emails": [
+          "info@renacomp.ru"
+        ],
+        "contact_urls": [
+          "https://renacomp.ru/",
+          "https://renacomp.ru/support"
+        ]
+      },
+      "dedup_keys": {
+        "lead_id": "jobs:inn:7802802900",
+        "inn": "7802802900",
+        "ogrn": "1127847510010",
+        "exact_legal_name": "ООО \"КОМПАНИЯ РЕНА\"",
+        "brand": "Rena Computer / Рена Компьютер",
+        "confirmed_domain": "renacomp.ru"
+      },
+      "dedup_recheck": {
+        "pre_deep_check": {
+          "inn": "NO_MATCH",
+          "ogrn": "NO_MATCH",
+          "exact_legal_name": "NO_MATCH"
+        },
+        "pre_write": {
+          "head": "613af337d51b001ad20f8a6c94a608b1a361ff66",
+          "inn": "NO_MATCH",
+          "ogrn": "NO_MATCH",
+          "exact_legal_name": "NO_MATCH",
+          "confirmed_domain": "NO_MATCH"
+        }
+      },
+      "evidence_urls": [
+        "https://spb.rabota.ru/vacancy/54224779/",
+        "https://spb.rabota.ru/vacancy/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C/",
+        "https://zachestnyibiznes.ru/company/ul/1127847510010_7802802900_OOO-KOMPANIYa-RENA",
+        "https://companies.rbc.ru/id/1127847510010-ooo-kompaniya-rena/",
+        "https://renacomp.ru/",
+        "https://renacomp.ru/support"
+      ],
+      "qualification": {
+        "SIZE": "PASS",
+        "LEGAL": "PASS",
+        "SIGNAL": "PASS",
+        "LPR": "PASS",
+        "CONTACT": "PASS",
+        "QUALIFIED": "PASS"
+      }
+    }
+  ]
+}
