@@ -1,0 +1,48 @@
+{
+  "run_id": "N5K-20260829-497",
+  "same_cycle_repair_run": "N5K-20260829-497R1",
+  "recorded_at": "2026-08-29T12:58:28+03:00",
+  "canonical_result": {
+    "canonical_count": 514,
+    "contactable_count": 514,
+    "physically_integrated": 1,
+    "physical_duplicates_rejected": 1,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "qualified_staged_not_counted": 0,
+    "outreach": 0
+  },
+  "consumed_workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260829-121822-jobs.json",
+      "blob_sha": "7d59f20fa37cc826df2558f348ab1699b11ef4a1",
+      "raw_distinct": 80,
+      "worker_qualified": 1,
+      "canonical_status": "CONSUMED_INTEGRATED",
+      "integrated_brand": "ChatApp"
+    },
+    {
+      "lane": "industry",
+      "path": "data/pending_workers/industry/20260829-122436-industry-metrics.json",
+      "blob_sha": "85b5695f136be9c073417b21bc960855e38edf35",
+      "raw_distinct": 100,
+      "worker_qualified": 0,
+      "canonical_status": "CONSUMED_ZERO_QUALIFIED"
+    }
+  ],
+  "own_discovery_result": {
+    "growth_news_raw": 8,
+    "prewrite_qualified": 1,
+    "physically_integrated": 0,
+    "integrated_brands": [],
+    "physical_duplicates": [
+      {
+        "brand": "НАРТИС",
+        "canonical_status": "REJECTED_BY_FINAL_PHYSICAL_DEDUP"
+      }
+    ]
+  },
+  "audit_note": "Immutable worker staging retained for audit history. Jobs worker ChatApp passed final physical dedup and was integrated. Industry worker produced zero qualified and remains cooldown/probe-only. Own growth/news candidate НАРТИС passed deep funnel but was rejected by the final physical master guard as an existing canonical company. No outreach."
+}
