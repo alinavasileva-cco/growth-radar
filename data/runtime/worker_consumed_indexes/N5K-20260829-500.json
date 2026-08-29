@@ -1,0 +1,20 @@
+{
+  "run_id": "N5K-20260829-500",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-29T15:58:21+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260829-152129-jobs-metrics.json",
+      "blob_sha": "d1f0c69d55aaa65225f5ab518a95e021bee4b1c5",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "80 raw / 3 FAST GATE / 1 SIZE / 0 LEGAL / 0 qualified. Immutable staging retained for audit."
+    },
+    {
+      "path": "data/pending_workers/industry/20260829-153235-industry-metrics.json",
+      "blob_sha": "6c02eb64fa1989b09d5cb56a4dd55ac6b0a7e79b",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "100 raw / 1 FAST GATE / 1 SIZE / 0 LEGAL / 0 qualified; all five first-20 pools exceeded the 70% duplicate+early-reject threshold. Immutable staging retained for audit."
+    }
+  ],
+  "outreach_performed": false
+}
