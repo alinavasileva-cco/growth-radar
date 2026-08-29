@@ -1,169 +1,67 @@
 {
-  "run_id": "N5K-20260829-503R1",
+  "run_id": "N5K-20260829-504R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-29T19:57:55+03:00",
+  "updated_at": "2026-08-29T20:51:02+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 518,
+    "baseline_count": 519,
     "target_count": 5000,
-    "current_canonical_count": 519,
-    "current_contactable_count": 519,
-    "progress_added": 1,
-    "remaining": 4481,
-    "remaining_to_1000": 481
+    "current_canonical_count": 521,
+    "current_contactable_count": 521,
+    "progress_added": 2,
+    "remaining": 4479
   },
   "funnel": {
-    "discovered": 260,
-    "fast_gate_passed": 10,
-    "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "discovered": 100,
+    "fast_gate_passed": 8,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "pre_write_qualified": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded": 258,
-    "physically_integrated": 1
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 98,
+    "physically_integrated": 0
   },
   "lane_metrics": [
     {
       "lane": "jobs_job_boards_career",
-      "raw": 160,
-      "fast_gate": 10,
-      "size": 3,
-      "legal": 2,
-      "signal": 2,
-      "lpr": 2,
-      "contact": 2,
-      "pre_write_qualified": 2,
-      "qualified": 1,
-      "physical_duplicates": 1,
-      "duplicate_plus_early_reject": 151,
-      "qualified_raw": 0.00625,
-      "fast_gate_raw": 0.0625,
-      "note": "Two fresh immutable jobs worker batches were consumed. Programming Store was physically integrated. БиоМикроГели / Биополимер was stopped by final physical dedup as existing N5K-0383. Net-new qualified is used for efficiency."
-    },
-    {
-      "lane": "industry_catalogs_exhibitions",
       "raw": 100,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "pre_write_qualified": 0,
-      "qualified": 0,
-      "physical_duplicates": 0,
-      "duplicate_plus_early_reject": 100,
-      "qualified_raw": 0.0,
-      "fast_gate_raw": 0.0,
-      "note": "Five 20-candidate source batches exceeded 70% duplicate+early-reject; no deep-check; exhibition/catalog presence was not counted as SIGNAL."
+      "fast_gate": 8,
+      "size": 2,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "note": "Fresh post-503R1 jobs worker batch consumed. 100 employer-level observations were auditable; target shortfall was explicitly reported by worker and not padded."
     },
     {
       "lane": "growth_expansion_investment_business_change_news",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw": null,
-      "fast_gate_raw": null,
-      "note": "No separate raw discovery was counted in this recovery cycle; this lane must be restored as the primary own-discovery lane next RUN rather than padded with low-yield catalogs."
-    },
-    {
-      "lane": "official_company_owner_ceo",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw": null,
-      "fast_gate_raw": null,
-      "note": "Used only as verification support and not double-counted as raw."
-    },
-    {
-      "lane": "experimental_low_overlap",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw": null,
-      "fast_gate_raw": null
+      "raw": null,
+      "fast_gate": null,
+      "size": 2,
+      "legal": 2,
+      "signal": 2,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "note": "Fresh post-503R1 growth-news worker screened five source batches but did not establish an auditable distinct company-level raw count; raw is intentionally not invented."
     }
   ],
-  "efficiency_history": [
-    {"run_id":"N5K-20260829-500","raw":200,"fast_gate":9,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.045},
-    {"run_id":"N5K-20260829-501R1","raw":200,"fast_gate":17,"qualified":0,"qualified_raw":0.0,"fast_gate_raw":0.085},
-    {"run_id":"N5K-20260829-502","raw":190,"fast_gate":13,"qualified":2,"qualified_raw":0.010526,"fast_gate_raw":0.068421},
-    {"run_id":"N5K-20260829-503R1","raw":260,"fast_gate":10,"qualified":1,"qualified_raw":0.003846,"fast_gate_raw":0.038462}
+  "qualified_companies": [
+    "Тандал",
+    "Птицефабрика Тульская"
   ],
-  "lane_history_last_3_plus_current": {
-    "jobs_job_boards_career": [
-      {"run_id":"N5K-20260829-500","raw":80,"fast_gate":3,"size":1,"signal":0,"qualified":0,"duplicate_plus_early_reject":77,"qualified_raw":0.0,"fast_gate_raw":0.0375},
-      {"run_id":"N5K-20260829-501R1","raw":80,"fast_gate":11,"size":1,"signal":1,"qualified":0,"duplicate_plus_early_reject":70,"qualified_raw":0.0,"fast_gate_raw":0.1375},
-      {"run_id":"N5K-20260829-502","raw":80,"fast_gate":7,"size":2,"signal":1,"qualified":1,"duplicate_plus_early_reject":73,"qualified_raw":0.0125,"fast_gate_raw":0.0875},
-      {"run_id":"N5K-20260829-503R1","raw":160,"fast_gate":10,"size":3,"signal":2,"qualified":1,"duplicate_plus_early_reject":151,"qualified_raw":0.00625,"fast_gate_raw":0.0625}
-    ],
-    "industry_catalogs_exhibitions": [
-      {"run_id":"N5K-20260829-500","raw":100,"fast_gate":1,"size":1,"signal":0,"qualified":0,"duplicate_plus_early_reject":99,"qualified_raw":0.0,"fast_gate_raw":0.01},
-      {"run_id":"N5K-20260829-501R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":100,"qualified_raw":0.0,"fast_gate_raw":0.0},
-      {"run_id":"N5K-20260829-502","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":100,"qualified_raw":0.0,"fast_gate_raw":0.0},
-      {"run_id":"N5K-20260829-503R1","raw":100,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":100,"qualified_raw":0.0,"fast_gate_raw":0.0}
-    ],
-    "growth_expansion_investment_business_change_news": [
-      {"run_id":"N5K-20260829-500","raw":20,"fast_gate":5,"size":1,"signal":1,"qualified":0,"duplicate_plus_early_reject":15,"qualified_raw":0.0,"fast_gate_raw":0.25},
-      {"run_id":"N5K-20260829-501R1","raw":20,"fast_gate":6,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":14,"qualified_raw":0.0,"fast_gate_raw":0.30},
-      {"run_id":"N5K-20260829-502","raw":10,"fast_gate":6,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":4,"qualified_raw":0.10,"fast_gate_raw":0.60},
-      {"run_id":"N5K-20260829-503R1","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw":null,"fast_gate_raw":null}
-    ]
-  },
-  "efficiency_change_vs_previous_hour": {
-    "qualified_raw_percentage_points": -0.6680,
-    "fast_gate_raw_percentage_points": -2.9959,
-    "note": "Net qualified/raw fell from 1.0526% in RUN 502 to 0.3846% in RUN 503R1; fast_gate/raw fell from 6.8421% to 3.8462%. Absolute net-new output is 1, below 5. The next own-discovery allocation therefore changes and shifts away from saturated jobs/catalog sources."
-  },
-  "adaptive_decision": {
-    "cut_or_capped": [
-      "jobs_job_boards_career: own discovery max 5% for the next cycle because duplicate+early-reject remains above 70%; fresh immutable worker staging is still ingested first",
-      "industry_catalogs_exhibitions: max 5%, probe-only/no deep-check after repeated fast_gate/raw below 2%, zero qualified, and duplicate+early-reject above 70%"
-    ],
-    "increased": [
-      "growth_expansion_investment_business_change_news: 55% next RUN because it was the strongest measured scalable own-discovery lane in RUN 502 and was not separately exercised in the recovery cycle",
-      "official_company_owner_ceo: 30% next RUN to increase low-overlap discovery and resolve current legal/LPR/contact evidence without double-counting verification as raw"
-    ],
-    "next_run_distribution": {
-      "jobs_job_boards_career": 0.05,
-      "growth_expansion_investment_business_change_news": 0.55,
-      "official_company_owner_ceo": 0.30,
-      "industry_catalogs_exhibitions": 0.05,
-      "experimental_low_overlap": 0.05
-    }
-  },
-  "qualified_companies": ["Programming Store"],
-  "physical_duplicates": ["БиоМикроГели / Биополимер — existing N5K-0383 by INN 6679148488 / OGRN 1226600002705 / legal entity"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
-  "physical_master_state": "519_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "519_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "521_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "521_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
