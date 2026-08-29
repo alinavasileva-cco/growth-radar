@@ -1,0 +1,121 @@
+{
+  "worker": "growth_news",
+  "created_at_msk": "2026-08-29T20:28:56+03:00",
+  "source_head_sha": "d181fbdd20054b6225bc716554487dc061922aa8",
+  "canonical_snapshot": {
+    "canonical": 519,
+    "contactable": 519,
+    "last_completed_run": "N5K-20260829-503R1",
+    "integrity": "PASS",
+    "qualified_staged_not_counted_at_snapshot": 0
+  },
+  "policy": {
+    "config": "CURRENT_WORKING_CONFIG.md",
+    "funnel": ["FAST_GATE", "SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"],
+    "canonical_write": false,
+    "outreach": false,
+    "criteria_changed": false
+  },
+  "discovery_metrics": {
+    "target_distinct_raw": "140-180",
+    "target_source_batches_min": 5,
+    "execution_result": "PARTIAL",
+    "distinct_raw_count": null,
+    "distinct_raw_count_note": "This execution did not establish an auditable 140-180 company-level distinct raw count across all five batches. Search-result rows were not substituted for distinct companies and no unverified raw count is asserted.",
+    "source_batches": [
+      {"batch": "new_production_and_expansion", "status": "screened", "company_level_distinct_count": null},
+      {"batch": "regional_investment_projects", "status": "screened", "company_level_distinct_count": null},
+      {"batch": "agro_investment_and_capacity", "status": "screened", "company_level_distinct_count": null},
+      {"batch": "logistics_regions_franchise", "status": "screened", "company_level_distinct_count": null},
+      {"batch": "m_and_a_automation_transformation", "status": "screened", "company_level_distinct_count": null}
+    ],
+    "deep_checked": 4,
+    "size_pass": 2,
+    "legal_pass": 2,
+    "signal_pass": 2,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1,
+    "not_qualified_examples": [
+      {
+        "name": "ООО «Завод нефтегазового и энергетического оборудования «ГазЭнергоКомплект»",
+        "reason": "Fresh S2 expansion signal and current legal/contact data were found, but current financial data classify the company as large business (2025 revenue about RUB 15.38bn, 401 employees); worker did not assume that this satisfies CURRENT_WORKING_CONFIG SIZE without an explicit confirmed allowance."
+      },
+      {
+        "name": "ООО «Терика Восток»",
+        "reason": "Current legal entity and investment project found, but the company was registered in 2025 and current operating scale evidence sufficient for SIZE was not established."
+      },
+      {
+        "name": "ООО «Лазовское молоко»",
+        "reason": "Fresh farm investment signal and current legal/LPR data found, but the entity was registered in February 2026 and current operating scale evidence sufficient for SIZE was not established."
+      }
+    ]
+  },
+  "qualified": [
+    {
+      "brand": "Птицефабрика Тульская",
+      "legal_name": "АКЦИОНЕРНОЕ ОБЩЕСТВО ПТИЦЕФАБРИКА «ТУЛЬСКАЯ»",
+      "short_legal_name": "АО П/Ф «ТУЛЬСКАЯ»",
+      "inn": "7130001590",
+      "ogrn": "1027101728851",
+      "region": "Тульская область",
+      "legal_status": "Действующая",
+      "ownership": "Частная собственность",
+      "corporate_form": "Непубличное акционерное общество",
+      "size": {
+        "sme_registry": "Субъект среднего предпринимательства",
+        "revenue_2025_rub": 3049194000,
+        "employees_2025": 403,
+        "evidence_urls": [
+          "https://b2b.house/company/AO-PF-TULSKAYA_ec2d22b1-205c-40e6-94c1-a93999562bb3/",
+          "https://saby.ru/profile/7130001590-713001001"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-08-10",
+        "trigger": "АО «Птицефабрика «Тульская» реализует инвестиционный проект строительства собственного комбикормового завода мощностью 720 тонн в сутки; инвестиции до 1 млрд рублей, площадка определена, компания переходит к проектированию. Ранее в 2025 году модернизированы мощности, весной 2026 года открыт инкубаторий.",
+        "evidence_urls": [
+          "https://invest-tula.com/press-center/news/18581/",
+          "https://abn.agency/2026/08/10/pticzefabrika-tulskaya-vlozhit-do-1-mlrd-rublej-v-stroitelstvo-kombikormovogo-zavoda/",
+          "https://zzr.ru/news/pticefabrika-tulskaya-investiruet-v-stroitelstvo-kombikormovogo-zavoda-0"
+        ]
+      },
+      "lpr": {
+        "name": "Ткаченко Марина Владимировна",
+        "role": "Генеральный директор",
+        "evidence_urls": [
+          "https://b2b.house/company/AO-PF-TULSKAYA_ec2d22b1-205c-40e6-94c1-a93999562bb3/"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_email_and_phone",
+        "email": "info@tulpf.ru",
+        "phone": "+7 (4872) 46-73-13",
+        "contact_url": "https://tulpf-shop.ru/",
+        "note": "Official company web property lists the legal entity/INN and direct company email and phone."
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7130001590",
+        "ogrn": "1027101728851",
+        "exact_legal_name": "АКЦИОНЕРНОЕ ОБЩЕСТВО ПТИЦЕФАБРИКА «ТУЛЬСКАЯ»",
+        "brand_domain": "Птицефабрика Тульская|tulpf.ru"
+      },
+      "repo_wide_dedup_before_write": {
+        "brand_search": "no match",
+        "inn_search": "no match",
+        "ogrn_search": "no match"
+      },
+      "funnel": {
+        "fast_gate": "PASS",
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      }
+    }
+  ]
+}
