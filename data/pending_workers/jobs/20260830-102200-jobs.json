@@ -1,0 +1,147 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-30T10:22:00+03:00",
+  "baseline_head": "f80b669f0cd95028af21b6bb276477c5379ac44e",
+  "config_version": "2026-08-30T10:01:13+03:00",
+  "constraints": {
+    "criteria_changed": false,
+    "criteria_weakened": false,
+    "canonical_writer_run": false,
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "dedup_precheck": {
+    "fresh_head_read": true,
+    "current_working_config_read": true,
+    "pending_workers_root_manifest_read": true,
+    "jobs_staging_tree_manifest_read": true,
+    "candidate_keys_searched_repo_wide_before_deep_check": true,
+    "candidate_keys_searched_repo_wide_immediately_before_staging": true,
+    "keys": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "confirmed_brand_domain"],
+    "candidate_search_results": {
+      "inn_5406583955": "no repository match returned",
+      "ogrn_1155476049300": "no repository match returned",
+      "exact_legal_name_akb_atika": "no repository match returned",
+      "confirmed_brand_domain_atikapro_ru": "no repository match returned"
+    },
+    "note": "Fresh HEAD, CURRENT_WORKING_CONFIG, pending_workers root manifest and the complete jobs staging tree manifest were read. Candidate-specific repo-wide searches were repeated before staging. No historical pending file was rewritten."
+  },
+  "discovery": {
+    "target_employer_level_raw": "140-150 if sources support verified distinct employers",
+    "target_met": false,
+    "source_level_rows_inspected": 100,
+    "raw_employer_level_distinct_confirmed": null,
+    "note": "Five independent regional job-board surfaces were inspected to the first-20 level. Search-result/vacancy totals were not converted into distinct employer counts; repeated employers, recruiters, public/very large employers and ambiguous identities were not counted as new companies. No quota padding was used.",
+    "batches": [
+      {"source":"JobVK / HH-derived surface","region":"Yekaterinburg","query_family":"commercial director","source_rows_inspected":20,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":0,"rotated_after_first20":true,"source_url":"https://notexistsekxcmru.jobvk.com/ekaterinburg/kommercheskiy-direktor"},
+      {"source":"JobVK / HH-derived surface","region":"Krasnodar","query_family":"sales director","source_rows_inspected":20,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":0,"rotated_after_first20":true,"source_url":"https://www.trust.jobvk.com/krasnodar/direktor-po-prodazham"},
+      {"source":"JobVK / HH-derived surface","region":"Novosibirsk","query_family":"business development director","source_rows_inspected":20,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":1,"rotated_after_first20":true,"source_url":"https://www.yhhzvru.jobvk.com/novosibirsk/direktor-po-razvitiyu"},
+      {"source":"JobVK / HH-derived surface","region":"Novosibirsk","query_family":"director / executive management","source_rows_inspected":20,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":0,"rotated_after_first20":true,"source_url":"https://www.notexistsforum.jobvk.com/novosibirsk/direktor"},
+      {"source":"JobVK / HH-derived surface","region":"Krasnodar","query_family":"commercial director","source_rows_inspected":20,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":0,"rotated_after_first20":true,"source_url":"https://www.notexistscomru.jobvk.com/krasnodar/kommercheskiy-direktor"}
+    ]
+  },
+  "worker_funnel": {
+    "source_level_rows_inspected": 100,
+    "raw_employer_level_distinct_confirmed": null,
+    "fast_gate": 4,
+    "deep_check": 2,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "note": "Only directly tracked deep-funnel counts are asserted. Employer-level raw total is intentionally null rather than guessed."
+  },
+  "qualified": [
+    {
+      "brand": "АКБ Атика",
+      "legal_name": "ООО \"АТИКА. КОНСТРУКТОРСКОЕ БЮРО\"",
+      "city": "Новосибирск",
+      "region": "Новосибирская область",
+      "inn": "5406583955",
+      "ogrn": "1155476049300",
+      "lead_id": null,
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 50959000,
+        "employees_2025": 10,
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-AKB_a09269a4-f5d6-417d-9732-45214782eca3/",
+          "https://companies.rbc.ru/id/1155476049300-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-arhitekturno-konstruktorskoe-byuro-atika/"
+        ],
+        "note": "2025 financials are used; older 2024 revenue is not used for the SIZE decision where fresher 2025 reporting is available."
+      },
+      "legal": {
+        "active": true,
+        "director": "Скрипченко Антон Андреевич",
+        "owner": "Скрипченко Антон Андреевич",
+        "owner_share": "100%",
+        "registered_address": "630005, Новосибирская область, г. Новосибирск, ул. Гоголя, д. 40, офис 2",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-AKB_a09269a4-f5d6-417d-9732-45214782eca3/",
+          "https://injust.pro/proverka/5406583955"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring_business_development",
+        "title": "Директор по развитию бизнеса",
+        "date": "2026-07-16",
+        "facts": [
+          "company opened a director of business development role responsible for external business environment",
+          "the company describes a full-cycle industrial engineering/project bureau serving northern regions, permafrost zones and the Far East",
+          "a second fresh vacancy for a chief project engineer was published on 2026-07-30, confirming continuing senior hiring activity"
+        ],
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/135279307",
+          "https://dreamjob.ru/employers/314482/vakansii/135749113"
+        ]
+      },
+      "lpr": {
+        "owner": "Скрипченко Антон Андреевич",
+        "director": "Скрипченко Антон Андреевич",
+        "evidence_urls": [
+          "https://injust.pro/proverka/5406583955",
+          "https://b2b.house/company/OOO-AKB_a09269a4-f5d6-417d-9732-45214782eca3/"
+        ]
+      },
+      "contact": {
+        "type": "published_company_phone_and_active_job_application_route",
+        "phone": "+7 (383) 331-15-77",
+        "email": null,
+        "url": "https://atikapro.ru",
+        "application_url": "https://nesiditsa.ru/vacancy/135279307",
+        "evidence_urls": [
+          "https://novosibirsk.flamp.ru/firm/akb_atika_proektno_ehkspertnaya_kompaniya_ooo_akb_atika-70000001018766857",
+          "https://nesiditsa.ru/vacancy/135279307"
+        ],
+        "note": "Phone and domain are publicly listed for the same company/address. No email was reconstructed from a pattern."
+      },
+      "dedup_keys": {
+        "inn": "5406583955",
+        "ogrn": "1155476049300",
+        "exact_legal_name": "ООО \"АТИКА. КОНСТРУКТОРСКОЕ БЮРО\"",
+        "confirmed_brand_domain": "АКБ Атика|atikapro.ru"
+      },
+      "brand_domain_link": {
+        "confirmed": true,
+        "domain": "atikapro.ru",
+        "evidence_urls": [
+          "https://novosibirsk.flamp.ru/firm/akb_atika_proektno_ehkspertnaya_kompaniya_ooo_akb_atika-70000001018766857",
+          "https://www.ultracity.pro/index.php?filter=&from=&limit=500&offset=2180&title=%D0%A1%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%3A%D0%A1%D0%B0%D0%B9%D1%82&until="
+        ],
+        "note": "The public business listing ties АКБ Атика at the same current address and phone to atikapro.ru."
+      },
+      "evidence_urls": [
+        "https://b2b.house/company/OOO-AKB_a09269a4-f5d6-417d-9732-45214782eca3/",
+        "https://companies.rbc.ru/id/1155476049300-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-arhitekturno-konstruktorskoe-byuro-atika/",
+        "https://injust.pro/proverka/5406583955",
+        "https://nesiditsa.ru/vacancy/135279307",
+        "https://dreamjob.ru/employers/314482/vakansii/135749113",
+        "https://novosibirsk.flamp.ru/firm/akb_atika_proektno_ehkspertnaya_kompaniya_ooo_akb_atika-70000001018766857"
+      ]
+    }
+  ]
+}
