@@ -7,20 +7,20 @@
   "progress_added": 544,
   "remaining_to_total_target": 4456,
   "remaining": 4456,
-  "remaining_to_1000": 457,
+  "remaining_to_1000": 456,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-30T17:59:31+03:00",
+  "updated_at": "2026-08-30T18:44:25+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260830-525",
   "current_run_id": "N5K-20260830-525",
   "last_run_id": "N5K-20260830-525",
   "latest_completed_run": "N5K-20260830-525",
-  "canonical_integration_run_id": "N5K-20260830-524R1",
-  "hourly_parent_run_id": "N5K-20260830-523",
+  "canonical_integration_run_id": "N5K-20260830-525",
+  "hourly_parent_run_id": "N5K-20260830-525",
   "hourly_baseline_count": 543,
-  "hourly_net_new": 0,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
@@ -38,5 +38,5 @@
     "jobs_trigger": "RUN 523 and RUN 524R1 both net qualified/raw=0%; RUN 524R1 duplicate+early-reject=89.2857%.",
     "decision": "Do not repeat RUN 523 allocation automatically. Restore recently productive growth/news and preserve official/owner/CEO low-overlap discovery while jobs remains capped."
   },
-  "note": "N5K-20260830-525 completed after physical integration: +1 net new; canonical/contactable 544/544; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260830-525 completed after physical integration: +1 net new; canonical/contactable 544/544; integrity PASS; orphan 0/0; staged 0; outreach 0. Runtime campaign metadata repaired to match confirmed physical state; fresh FARFOR worker package remains pending for the next canonical integration guard and was not concurrently written."
 }
