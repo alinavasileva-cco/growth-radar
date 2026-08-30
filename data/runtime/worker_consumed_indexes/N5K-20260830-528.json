@@ -1,0 +1,22 @@
+{
+  "run_id": "N5K-20260830-528",
+  "campaign_id": "new_5000",
+  "updated_at": "2026-08-30T21:00:00+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260830-201715-jobs.json",
+      "blob_sha": "58fb8d7e8647a444afbcbd0e558d8eff0237aec0",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "note": "Worker-qualified ПолиАэрПак passed the strict funnel, but the final physical canonical guard found an existing match by INN and OGRN. Immutable staging is retained and no duplicate row was written."
+    }
+  ],
+  "physical_result": {
+    "canonical": 546,
+    "contactable": 546,
+    "net_new": 1,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "outreach": 0
+  }
+}
