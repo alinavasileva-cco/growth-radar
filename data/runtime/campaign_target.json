@@ -17,12 +17,20 @@
   "current_run_id": "N5K-20260830-523",
   "last_run_id": "N5K-20260830-523",
   "latest_completed_run": "N5K-20260830-523",
-  "canonical_integration_run_id": "N5K-20260830-522",
-  "hourly_parent_run_id": "N5K-20260830-521",
-  "hourly_baseline_count": 541,
-  "hourly_net_new": 2,
+  "canonical_integration_run_id": "N5K-20260830-523",
+  "hourly_parent_run_id": "N5K-20260830-522",
+  "hourly_baseline_count": 543,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "note": "N5K-20260830-523 completed after physical integration: +0 net new; canonical/contactable 543/543; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 25,
+    "official_owner_ceo": 25,
+    "industry_catalog": 5,
+    "regional_investment": 30,
+    "partner_business_change": 10
+  },
+  "note": "N5K-20260830-523 completed after physical integration: +0 net new; canonical/contactable 543/543; Dymov Ceramic and NARTIS were blocked by final physical dedup on INN, OGRN and brand+domain; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
