@@ -1,0 +1,99 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-30T21:29:00+03:00",
+  "baseline_head": "5555699e636ebe2d4b4c6935a9677f4e360cb6d3",
+  "criteria_version": "CURRENT_WORKING_CONFIG 2026-08-30T21:00:00+03:00",
+  "canonical_count_at_start": 546,
+  "contactable_count_at_start": 546,
+  "canonical_integrity": "PASS",
+  "staged_not_counted_at_start": 0,
+  "outreach": false,
+  "discovery": {
+    "target_raw": "140-150 distinct employer-level candidates if sources allow",
+    "actual_confirmed_employer_level_raw": 32,
+    "note": "Reviewed fresh regional job-board surfaces across Novosibirsk, Cheboksary, Ufa, Krasnodar, Samara and Kazan. Only employer-level entities explicitly visible and reviewed were counted. Repeated listings, recruiter-only rows, public-sector entities and entities not resolved enough for employer-level counting were not counted. The target was not inflated when the available indexed surfaces did not yield enough low-overlap verified employers within the run.",
+    "source_batches": [
+      {"batch":"Novosibirsk / sales leadership / JobVK","observed_distinct_employers":20,"rotation_reason":"first-page employer set reviewed; many rows were ordinary sales roles or large/public employers and were rejected at FAST GATE"},
+      {"batch":"Cheboksary / director roles / JobVK","observed_distinct_employers":7,"rotation_reason":"early rows were retail/public-sector/education-heavy, so the lane was rotated"},
+      {"batch":"Ufa / executive-commercial leadership / JobVK","observed_distinct_employers":2,"rotation_reason":"limited low-overlap employer-level candidates visible in the fresh indexed surface"},
+      {"batch":"Krasnodar / sales director / JobVK and mirrors","observed_distinct_employers":2,"rotation_reason":"fresh results were dominated by lower-level sales roles or already-large entities"},
+      {"batch":"Samara / sales leadership / JobVK","observed_distinct_employers":1,"rotation_reason":"fresh indexed surface had limited suitable private-company employer-level candidates"}
+    ]
+  },
+  "worker_funnel": {
+    "raw": 32,
+    "fast_gate": 4,
+    "deep_check": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "lead_id": "JOB-20260830-DIODIS-1658215127",
+      "brand": "НПО Диодис",
+      "legal_name": "ООО НПО «ДИОДИС»",
+      "inn": "1658215127",
+      "ogrn": "1191690007387",
+      "region": "Казань, Республика Татарстан",
+      "website": "https://диодис.рф/",
+      "brand_domain": "НПО Диодис|диодис.рф",
+      "legal_status": "Действующее",
+      "legal_status_as_of": "2026-08-22",
+      "size": {
+        "revenue_2025_rub": 471108000,
+        "employees_2025": 129,
+        "sme_category": "Малое предприятие",
+        "evidence_urls": [
+          "https://firmoteka.ru/1658215127",
+          "https://b2b.house/company/OOO-NPO-DIODIS_298719bc-71a2-4a53-9b35-c097d2f5879b/",
+          "https://companies.rbc.ru/id/1191690007387-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchno-proizvodstvennoe-obedinenie-diodis/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-30",
+        "type": "job_board_commercial_leadership",
+        "summary": "На свежей вакансии «Коммерческий директор (производство)» компания ищет руководителя для разработки и реализации коммерческой стратегии, роста продаж и доли рынка. Вакансия отображалась как опубликованная сегодня на 30.08.2026; HH-выдача также показывала её активной в текущем поиске коммерческого директора по Казани.",
+        "source_url": "https://dreamjob.ru/employers/190617/vakansii/136204161",
+        "secondary_source_url": "https://kazan.hh.ru/vacancies/kommercheskiy_direktor/polniy_den"
+      },
+      "lpr": [
+        {"name":"Валиев Динар Явдатович","role":"Директор / учредитель 100%"}
+      ],
+      "lpr_evidence_urls": [
+        "https://firmoteka.ru/1658215127",
+        "https://www.klerk.ru/tool/ocompany/165916505200/"
+      ],
+      "contact_routes": [
+        {"type":"published_phone","value":"8 (800) 350-61-81","source_url":"https://rutube.ru/video/f1a07e497c8d962d66f03af11e6d0795/"},
+        {"type":"published_email","value":"zakaz@diodis.com","source_url":"https://rutube.ru/video/f1a07e497c8d962d66f03af11e6d0795/"},
+        {"type":"published_phone","value":"+7 (843) 212-20-48","source_url":"https://bimlib.pro/manufacturer/diodis/9026c5b7-5177-4387-9fc0-015e17ed43e2"},
+        {"type":"official_site","value":"https://диодис.рф/","source_url":"https://rutube.ru/video/f1a07e497c8d962d66f03af11e6d0795/"}
+      ],
+      "contact_note": "Only published company routes were used. The separate Elec.ru profile of a commercial director was reviewed but its personal phone was not used as the practical contact route for qualification.",
+      "dedup": {
+        "pre_deep_check": "PASS_WITH_REPO_SEARCH_LIMITATION",
+        "pre_staging_repeat": "PASS_WITH_REPO_SEARCH_LIMITATION",
+        "checked_keys": ["JOB-20260830-DIODIS-1658215127","1658215127","1191690007387","ООО НПО «ДИОДИС»","НПО Диодис|диодис.рф","diodis.com"],
+        "repo_search_matches": 0,
+        "repo_search_incomplete_results": true,
+        "jobs_pending_tree_reviewed": true,
+        "head_rechecked_before_staging": "5555699e636ebe2d4b4c6935a9677f4e360cb6d3",
+        "note": "GitHub code search returned zero matches for INN and OGRN but marked results incomplete; final canonical physical dedup remains mandatory before any integration. No canonical file was written by this worker."
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/190617/vakansii/136204161",
+        "https://kazan.hh.ru/vacancies/kommercheskiy_direktor/polniy_den",
+        "https://firmoteka.ru/1658215127",
+        "https://b2b.house/company/OOO-NPO-DIODIS_298719bc-71a2-4a53-9b35-c097d2f5879b/",
+        "https://rutube.ru/video/f1a07e497c8d962d66f03af11e6d0795/",
+        "https://bimlib.pro/manufacturer/diodis/9026c5b7-5177-4387-9fc0-015e17ed43e2"
+      ],
+      "status": "QUALIFIED"
+    }
+  ]
+}
