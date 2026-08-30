@@ -1,0 +1,6 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0691,N5K-0691-E01,LEGAL,"Official site identifies ООО «Форс Монтаж», INN 7720732314, OGRN 1117746866456.",https://forcemontage.ru/kontakty,Forcemontage official website,2026-08-30T04:16:00+03:00,HIGH,N5K-20260830-512,new_5000
+N5K-0691,N5K-0691-E02,SIZE,2025 revenue 76.03 million RUB; organization active; CEO Nikolaev Alexey Andreevich.,https://www.tbank.ru/business/contractor/legal/1117746866456/,T-Bank business / official-source aggregation,2026-08-30T04:16:00+03:00,HIGH,N5K-20260830-512,new_5000
+N5K-0691,N5K-0691-E03,LPR,Nikolaev Alexey Andreevich is CEO and founder; private ownership code OKFS 16.,https://companies.rbc.ru/id/1117746866456-ooo-fors-montazh/,RBC Companies,2026-08-30T04:16:00+03:00,HIGH,N5K-20260830-512,new_5000
+N5K-0691,N5K-0691-E04,SIGNAL,"Current project-manager vacancy dated 2026-07-11 assigns budget, quality and schedule responsibility across premium fit-out projects.",https://dreamjob.ru/employers/224832/vakansii/135098562,Dream Job,2026-08-30T04:16:00+03:00,HIGH,N5K-20260830-512,new_5000
+N5K-0691,N5K-0691-E05,CONTACT,Official corporate phone and email published by company.,https://forcemontage.ru/kontakty,Forcemontage official website,2026-08-30T04:16:00+03:00,HIGH,N5K-20260830-512,new_5000

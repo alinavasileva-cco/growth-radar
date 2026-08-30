@@ -1,0 +1,3 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0691,N5K-0691-C01,Форс Монтаж,7720732314,,Корпоративный маршрут,+7 495 135-49-77,phone,official corporate,Forcemontage official website,https://forcemontage.ru/kontakty,NO,HIGH,2026-08-30,Corporate route; not represented as personal LPR contact.,N5K-20260830-512,new_5000
+N5K-0691,N5K-0691-C02,Форс Монтаж,7720732314,,Корпоративный маршрут,forcemontage@gmail.com,email,official corporate,Forcemontage official website,https://forcemontage.ru/kontakty,NO,HIGH,2026-08-30,Corporate route; not represented as personal LPR contact.,N5K-20260830-512,new_5000

@@ -1,59 +1,53 @@
 {
-  "run_id": "N5K-20260830-511R1",
+  "run_id": "N5K-20260830-512",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T03:02:20+03:00",
-  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
+  "updated_at": "2026-08-30T04:16:00+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 529,
+    "baseline_count": 530,
     "target_count": 5000,
-    "current_canonical_count": 530,
-    "current_contactable_count": 530,
+    "current_canonical_count": 531,
+    "current_contactable_count": 531,
     "progress_added": 1,
-    "remaining": 4470,
-    "remaining_to_1000": 470
+    "remaining": 4469
   },
   "funnel": {
-    "discovered": 8,
-    "raw_denominator_complete": true,
-    "raw_denominator_note": "Eight distinct named-company candidates were inspected in fresh growth/news discovery. No catalog padding and no unresolved search-result rows were counted as raw.",
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "prewrite_qualified": 1,
+    "discovered": 16,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 0,
-    "excluded": 7
+    "duplicates": 1,
+    "excluded": 14
   },
   "lane_metrics": [
+    {
+      "lane": "jobs",
+      "raw": 8,
+      "fast_gate": 4,
+      "size": 2,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 7,
+      "qualified_raw_pct": 12.5,
+      "fast_gate_raw_pct": 50.0,
+      "note": "Fresh immutable jobs worker ingested first; employer-level denominator only, no vacancy-row inflation."
+    },
     {
       "lane": "growth_news",
       "raw": 8,
       "fast_gate": 1,
-      "deep_check": 1,
       "size": 1,
-      "legal": 1,
       "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified_before_physical_dedup": 1,
-      "qualified_after_physical_dedup": 1,
+      "qualified": 1,
       "duplicate_plus_early_reject": 7,
       "qualified_raw_pct": 12.5,
-      "fast_gate_raw_pct": 12.5
-    },
-    {
-      "lane": "jobs",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified_after_physical_dedup": 0,
-      "note": "Own jobs discovery capped; no fresh unconsumed worker staging after completed 510R1 at pre-run HEAD."
+      "fast_gate_raw_pct": 12.5,
+      "note": "Fresh low-overlap production/investment discovery; no catalog padding."
     },
     {
       "lane": "official_owner_ceo",
@@ -61,8 +55,8 @@
       "fast_gate": 0,
       "size": 0,
       "signal": 0,
-      "qualified_after_physical_dedup": 0,
-      "note": "Used for verification of growth/news candidate; not double-counted as raw."
+      "qualified": 0,
+      "note": "Used for independent verification and contact confirmation; not double-counted as raw."
     },
     {
       "lane": "industry_catalog",
@@ -70,36 +64,19 @@
       "fast_gate": 0,
       "size": 0,
       "signal": 0,
-      "qualified_after_physical_dedup": 0,
+      "qualified": 0,
       "note": "Cooldown/probe-only; no deep-check allocation."
     }
   ],
-  "efficiency_history": [
-    {"run_id":"N5K-20260830-508R1","scope":"source-level jobs denominator retained by prior runtime","raw":280,"fast_gate":11,"qualified":1,"qualified_raw_pct":0.3571,"fast_gate_raw_pct":3.9286},
-    {"run_id":"N5K-20260830-509R1","scope":"measured growth/news + official/owner/CEO lanes","raw":20,"fast_gate":3,"qualified":1,"qualified_raw_pct":5.0,"fast_gate_raw_pct":15.0},
-    {"run_id":"N5K-20260830-510R1","scope":"fresh jobs worker employer-level distinct denominator","raw":38,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.6316,"fast_gate_raw_pct":13.1579},
-    {"run_id":"N5K-20260830-511R1","scope":"fresh measured growth/news own discovery","raw":8,"fast_gate":1,"qualified":1,"qualified_raw_pct":12.5,"fast_gate_raw_pct":12.5}
+  "qualified_companies": [
+    "Форс Монтаж"
   ],
-  "efficiency_change_vs_previous_hour": {
-    "qualified_raw_pp": 9.8684,
-    "fast_gate_raw_pp": -0.6579,
-    "note": "Qualified/raw improved, but absolute net-new remains below 5; next allocation changed rather than repeated automatically."
-  },
-  "next_run_distribution": {
-    "jobs": 5,
-    "growth_news": 60,
-    "official_owner_ceo": 25,
-    "industry_catalog_probe_only": 5,
-    "experimental_low_overlap": 5
-  },
-  "qualified_companies": ["НПК Автоприбор Искра / AVTOPRIBOR"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "530_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "530_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "531_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "531_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "notes": "Physical integration confirmed. Metadata repaired so physically_integrated and remaining_to_1000 match physical canonical state."
+  "blocker": null
 }
