@@ -1,0 +1,23 @@
+{
+  "run_id": "N5K-20260830-514",
+  "updated_at": "2026-08-30T06:01:57+03:00",
+  "status": "COMPLETE",
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260830-052056-jobs.json",
+      "blob_sha": "385ed158a2627d35fc08fcb8d0061b3932729928",
+      "result": "CONSUMED_INTEGRATED",
+      "worker_source_level_observations": 45,
+      "worker_legal_resolved_raw": 4,
+      "worker_fast_gate": 4,
+      "worker_qualified": 1,
+      "integrated_net_new": 1,
+      "integrated_brand": "УрПАСЭ",
+      "integrated_lead_id": "N5K-0693",
+      "note": "Immutable staging preserved. Worker PASS was independently rechecked by canonical writer and passed final physical dedup before integration."
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "outreach": false
+}
