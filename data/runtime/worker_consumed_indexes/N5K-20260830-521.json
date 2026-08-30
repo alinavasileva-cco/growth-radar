@@ -1,0 +1,17 @@
+{
+  "run_id": "N5K-20260830-521",
+  "campaign_id": "new_5000",
+  "updated_at": "2026-08-30T14:01:51+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260830-133205-jobs.json",
+      "blob_sha": "5c468dd297d93bf97601480a07c738e74ebcf0d9",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "raw_distinct_employers": 140,
+      "worker_prewrite_qualified": 1,
+      "net_new_qualified": 0,
+      "physical_duplicates": 1,
+      "note": "Worker staged ПОЛИТАКС as NO_MATCH/qualified. Final physical guard found existing canonical match by INN 7724483059, OGRN 1197746443322 and brand+domain; no duplicate canonical write occurred. Immutable staging preserved."
+    }
+  ]
+}
