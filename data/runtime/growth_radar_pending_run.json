@@ -1,8 +1,97 @@
 {
-  "run_id": "N5K-20260830-518",
-  "updated_at": "2026-08-30T10:01:13+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-518 integrated physically; canonical/contactable 538/538; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-519",
+  "updated_at": "2026-08-30T11:02:30+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 0
+  },
+  "lane_metrics": {
+    "jobs": {
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 100.0,
+      "fast_gate_raw_pct": 100.0,
+      "note": "Fresh jobs worker inspected 100 source-level rows and recorded 4 fast-gate and 2 deep-check events, but did not preserve a trustworthy globally distinct employer-level raw denominator. Only the one fully legal-resolved employer is counted in employer-level efficiency; source-level counts are not mixed into that denominator. Tiny denominator; not treated as stable lane efficiency."
+    },
+    "growth_news": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+    "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "Used for verification only; not double-counted as discovery raw."},
+    "industry": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "Probe-only; no catalogue padding."},
+    "experimental_regional_investment_projects": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "Fresh regional investment/business-change search was performed after worker ingest. Search surfaces included several named companies, but no additional candidate was resolved through current canonical-key pre-dedup and the strict funnel far enough to count as employer-level raw in this RUN. Search-result rows were not counted as companies."},
+    "experimental_partner_ecosystem_business_change": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+  },
+  "efficiency_control": {
+    "current_overall": {"raw": 1, "fast_gate": 1, "qualified": 1, "qualified_raw_pct": 100.0, "fast_gate_raw_pct": 100.0, "note": "Tiny employer-level denominator; not interpreted as stable throughput efficiency."},
+    "previous_hour_overall": {"run_id": "N5K-20260830-518", "raw": 1, "fast_gate": 1, "qualified": 1, "qualified_raw_pct": 100.0, "fast_gate_raw_pct": 100.0, "note": "RUN 518 also had a one-employer denominator; comparison is mechanically valid but not statistically meaningful."},
+    "change_vs_previous_hour_pp": {"qualified_raw": 0.0, "fast_gate_raw": 0.0, "note": "No measured improvement; both hours have tiny one-employer denominators."},
+    "last_3_runs": [
+      {"run_id":"N5K-20260830-516R1","overall":{"raw":15,"fast_gate":2,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":13.3333}},
+      {"run_id":"N5K-20260830-517R1","overall":{"raw":18,"fast_gate":5,"qualified":2,"qualified_raw_pct":11.1111,"fast_gate_raw_pct":27.7778},"lanes":{"experimental_regional_investment_projects":{"raw":10,"fast_gate":4,"size":3,"signal":2,"qualified":2,"duplicate_plus_early_reject":8,"qualified_raw_pct":20.0,"fast_gate_raw_pct":40.0},"experimental_partner_ecosystem_business_change":{"raw":8,"fast_gate":1,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":8,"qualified_raw_pct":0.0,"fast_gate_raw_pct":12.5}}},
+      {"run_id":"N5K-20260830-518","overall":{"raw":1,"fast_gate":1,"qualified":1,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"tiny denominator"},"lanes":{"jobs":{"raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"tiny denominator"}}}
+    ]
+  },
+  "adaptive_decision": {
+    "reason": "Net-new before physical write is 1 (<5), and measured efficiency did not improve versus RUN 518; the jobs ratios in both runs are based on one resolved employer and do not justify expansion. Regional investment projects remain the strongest non-tiny measured lane from RUN 517R1 at 20% qualified/raw and stay at the 60% ceiling. To avoid repeating the prior allocation automatically, official/owner/CEO discovery is increased from 10% to 15% and partner/business-change reduced from 15% to 10%; jobs and industry remain capped/probe-only.",
+    "next_discovery_mix_pct": {
+      "jobs": 5,
+      "growth_news": 5,
+      "official_owner_ceo": 15,
+      "industry_probe_only": 5,
+      "experimental_regional_investment_projects": 60,
+      "experimental_partner_ecosystem_business_change": 10
+    }
+  },
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0699",
+      "Brand": "АКБ Атика",
+      "Legal Name": "ООО \"АТИКА. КОНСТРУКТОРСКОЕ БЮРО\"",
+      "INN": "5406583955",
+      "OGRN/OGRNIP": "1155476049300",
+      "Region": "Новосибирская область",
+      "City": "Новосибирск",
+      "Segment": "Архитектурно-конструкторское проектирование / инжиниринг",
+      "Website": "https://atikapro.ru/",
+      "Revenue/Scale": "Выручка 2025: 50,959 млн ₽; 10 сотрудников; полный цикл проектирования и свежий найм директора по развитию бизнеса",
+      "Signal Level": "S1",
+      "Signal Summary": "16.07.2026 опубликована вакансия директора по развитию бизнеса; роль отвечает за внешнюю бизнес-среду и развитие проектно-инжинирингового бизнеса. 30.07.2026 опубликована ещё одна старшая инженерная вакансия, подтверждающая продолжающийся найм.",
+      "Signal Date": "2026-07-16",
+      "Signal Source": "https://nesiditsa.ru/vacancy/135279307",
+      "Owner": "Скрипченко Антон Андреевич",
+      "CEO": "Скрипченко Антон Андреевич",
+      "LPR": "Скрипченко Антон Андреевич",
+      "LPR Role": "Собственник 100% / директор",
+      "Primary Phone": "+7 (383) 331-15-77",
+      "Primary Email": "",
+      "HH Contact": "",
+      "Contact Form": "https://nesiditsa.ru/vacancy/135279307",
+      "Contact Type": "Корпоративный телефон + активный маршрут отклика на управленческую вакансию",
+      "Contact Source": "Публичная карточка компании + активная вакансия",
+      "Consulting Hypothesis": "Систематизация коммерческого развития проектно-инжинирингового бизнеса: стратегия роста, продуктово-рыночные приоритеты, продажи, партнёрства, управленческий контур и P&L.",
+      "contacts": [
+        {"value":"+7 (383) 331-15-77","channel":"phone","type":"corporate","source":"Flamp — карточка АКБ Атика","url":"https://novosibirsk.flamp.ru/firm/akb_atika_proektno_ehkspertnaya_kompaniya_ooo_akb_atika-70000001018766857","is_lpr":false,"notes":"Опубликованный многоканальный телефон компании; не персональный контакт ЛПР."},
+        {"value":"https://nesiditsa.ru/vacancy/135279307","channel":"web_form","type":"job_application_route","source":"Публичная вакансия директора по развитию бизнеса","url":"https://nesiditsa.ru/vacancy/135279307","is_lpr":false,"notes":"Практический маршрут отклика на свежую управленческую вакансию; не персональный контакт ЛПР."}
+      ],
+      "evidence": [
+        {"type":"SIZE","claim":"Выручка ООО АТИКА. КОНСТРУКТОРСКОЕ БЮРО за 2025 год — 50 959 000 ₽; среднесписочная численность — 10 человек.","url":"https://b2b.house/company/OOO-AKB_a09269a4-f5d6-417d-9732-45214782eca3/","source":"B2B.House / открытые данные отчетности"},
+        {"type":"LEGAL_LPR","claim":"ООО АТИКА. КОНСТРУКТОРСКОЕ БЮРО, ИНН 5406583955, ОГРН 1155476049300, действует; директор Скрипченко Антон Андреевич; форма собственности частная.","url":"https://b2b.house/company/OOO-AKB_a09269a4-f5d6-417d-9732-45214782eca3/","source":"B2B.House / открытые данные ЕГРЮЛ"},
+        {"type":"SIGNAL","claim":"16.07.2026 опубликована вакансия директора по развитию бизнеса; 30.07.2026 опубликована вакансия главного инженера проекта, что подтверждает свежий старший найм и развитие бизнеса.","url":"https://nesiditsa.ru/vacancy/135279307","source":"Публичная вакансия / HH-derived surface"},
+        {"type":"CONTACT","claim":"Карточка АКБ Атика по текущему адресу связывает компанию с доменом atikapro.ru и многоканальным телефоном +7 (383) 331-15-77; вакансия предоставляет отдельный активный маршрут отклика.","url":"https://novosibirsk.flamp.ru/firm/akb_atika_proektno_ehkspertnaya_kompaniya_ooo_akb_atika-70000001018766857","source":"Flamp — карточка компании"}
+      ]
+    }
+  ],
+  "notes": "Fresh HEAD a03a07d84aba9a4667b10b7e08352075f310a108, CURRENT_WORKING_CONFIG, runtime/target state and fresh immutable jobs staging were read first. Worker candidate АКБ Атика was independently rechecked against current legal/financial/company-contact sources; no stale 2024 financials were used where 2025 data are available. Repo-wide candidate-key search returned no canonical match before staging; final integration workflow must repeat physical dedup by Lead ID, INN, OGRN, exact legal name and brand+domain. Own fresh regional-investment discovery was attempted after worker ingestion; no additional candidate was resolved far enough through current canonical pre-dedup and the strict funnel to count as employer-level raw. No catalogue padding. No outreach."
 }
