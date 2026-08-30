@@ -1,8 +1,121 @@
 {
-  "run_id": "N5K-20260830-516R1",
-  "updated_at": "2026-08-30T08:36:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-516R1 integrated physically; canonical/contactable 535/535; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-517",
+  "updated_at": "2026-08-30T09:05:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "baseline_canonical": 535,
+  "baseline_contactable": 535,
+  "funnel": {
+    "discovered": 18,
+    "fast_gate": 5,
+    "size": 3,
+    "legal": 3,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 16
+  },
+  "lane_metrics": {
+    "experimental_regional_investment_projects": {
+      "raw": 10,
+      "fast_gate": 4,
+      "size": 3,
+      "signal": 2,
+      "qualified": 2,
+      "duplicate_plus_early_reject": 8,
+      "qualified_raw_pct": 20.0,
+      "fast_gate_raw_pct": 40.0
+    },
+    "experimental_partner_ecosystem_business_change": {
+      "raw": 8,
+      "fast_gate": 1,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 8,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 12.5
+    },
+    "jobs": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "note": "cooldown/capped; no fresh unconsumed worker staging after RUN 516R1"},
+    "growth_news": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "note": "cooldown from prior zero-qualified streak"},
+    "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "note": "used only as verification, not double-counted as raw"},
+    "industry": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "note": "probe-only; no catalogue raw padding"}
+  },
+  "companies": [
+    {
+      "Lead ID": "N5K-0696",
+      "Brand": "Молком",
+      "Legal Name": "АО «МОЛОЧНЫЙ КОМБИНАТ «ПЕНЗЕНСКИЙ»",
+      "INN": "5837006078",
+      "OGRN/OGRNIP": "1025801441709",
+      "Region": "Пензенская область",
+      "City": "Пенза",
+      "Segment": "FMCG / производство молочной продукции",
+      "Website": "https://molkom-penza.ru/",
+      "Revenue/Scale": "Выручка 6,458 млрд ₽ за 2024 год; 586 сотрудников; действующее частное АО (ОКФС 16).",
+      "Signal Level": "S2",
+      "Signal Summary": "29.08.2026 предприятие сообщило о запуске новых линий ультрапастеризованного молока и сливок, линии ПЭТ-розлива и нового складского комплекса в рамках инвестпрограммы 3,5 млрд ₽; новая технологическая база расширяет географию поставок и создает возможности для экспорта.",
+      "Signal Date": "2026-08-29",
+      "Signal Source": "https://penzanews.ru/economy/168613-2026",
+      "Owner": "Акционеры АО; состав публично не подтвержден в использованных источниках",
+      "CEO": "Коржов Роман Павлович",
+      "LPR": "Коржов Роман Павлович",
+      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Primary Phone": "+7 (8412) 23-14-00",
+      "Primary Email": "info@molkom-pnz.ru",
+      "Contact Form": "https://molkom-penza.ru/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "Цифровой реестр экспортеров / официальный сайт",
+      "Consulting Hypothesis": "Коммерческая система масштабирования после крупной модернизации: приоритизация регионов и каналов, GTM для UHT-линейки, экономика дистрибуции, KPI продаж и управляемое развитие экспортного направления.",
+      "contacts": [
+        {"value": "+7 (8412) 23-14-00", "channel": "phone", "type": "corporate", "source": "Цифровой реестр экспортеров", "url": "https://rusexporter.ru/exporter/ao-molkom-/", "is_lpr": false, "notes": "Официальный корпоративный маршрут; не персональный контакт ЛПР"},
+        {"value": "info@molkom-pnz.ru", "channel": "email", "type": "corporate", "source": "Цифровой реестр экспортеров", "url": "https://rusexporter.ru/exporter/ao-molkom-/", "is_lpr": false, "notes": "Официальный корпоративный маршрут; не персональный контакт ЛПР"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_LPR", "claim": "АО «МОЛКОМ» действует; ИНН 5837006078, ОГРН 1025801441709; генеральный директор Коржов Роман Павлович; ОКФС 16.", "url": "https://companies.rbc.ru/id/1025801441709-oao-molochnyij-kombinat-penzenskij/", "source": "РБК Компании"},
+        {"type": "SIZE", "claim": "586 сотрудников; выручка за 2024 год 6 458 291 000 ₽.", "url": "https://companies.rbc.ru/id/1025801441709-oao-molochnyij-kombinat-penzenskij/", "source": "РБК Компании"},
+        {"type": "SIGNAL", "claim": "29.08.2026 запущены новые линии и складской комплекс в рамках инвестпрограммы 3,5 млрд ₽; расширяется география поставок и потенциальный экспорт.", "url": "https://penzanews.ru/economy/168613-2026", "source": "PenzaNews"},
+        {"type": "CONTACT", "claim": "Официальные корпоративные контакты +7 (8412) 23-14-00 и info@molkom-pnz.ru.", "url": "https://rusexporter.ru/exporter/ao-molkom-/", "source": "Цифровой реестр экспортеров"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0697",
+      "Brand": "Лузалес",
+      "Legal Name": "ООО «ЛУЗАЛЕС»",
+      "INN": "1112003481",
+      "OGRN/OGRNIP": "1021101006630",
+      "Region": "Республика Коми",
+      "City": "Сыктывкар",
+      "Segment": "Лесопромышленность / деревообработка",
+      "Website": "https://luzales.ru/",
+      "Revenue/Scale": "Выручка 10,265 млрд ₽ за 2025 год; 1785 сотрудников по данным 2024 года; действующее частное ООО.",
+      "Signal Level": "S2",
+      "Signal Summary": "15.06.2026 компания завершила третий приоритетный инвестиционный проект «Модернизация и расширение производственных мощностей» объемом около 4 млрд ₽; построены новые производственные объекты, включая мини-ТЭЦ, цеха и фанерное производство.",
+      "Signal Date": "2026-06-15",
+      "Signal Source": "https://komiinform.ru/news/296709",
+      "Owner": "Семенюк Мария Николаевна — 100%",
+      "CEO": "Чигиринов Иван Николаевич",
+      "LPR": "Чигиринов Иван Николаевич",
+      "LPR Role": "Генеральный директор / практический ЛПР",
+      "Primary Phone": "+7 (8212) 28-73-86",
+      "Primary Email": "info@luzales.com",
+      "Contact Form": "https://luzales.ru/contacts",
+      "Contact Type": "official corporate route",
+      "Contact Source": "Официальный сайт Лузалес",
+      "Consulting Hypothesis": "Система управления ростом после многомиллиардной модернизации: portfolio/GTM новых мощностей, экспортная и внутренняя коммерческая модель, KPI, загрузка производственных линий и синхронизация продаж с производственным планированием.",
+      "contacts": [
+        {"value": "+7 (8212) 28-73-86", "channel": "phone", "type": "corporate", "source": "Официальный сайт Лузалес", "url": "https://luzales.ru/contacts", "is_lpr": false, "notes": "Приёмная; официальный корпоративный маршрут"},
+        {"value": "info@luzales.com", "channel": "email", "type": "corporate", "source": "Официальный сайт Лузалес", "url": "https://luzales.ru/contacts", "is_lpr": false, "notes": "Официальный сайт указывает этот email также в блоке генерального директора, но не утверждаю, что адрес персональный"}
+      ],
+      "evidence": [
+        {"type": "LEGAL_LPR", "claim": "ООО «ЛУЗАЛЕС» действует; ИНН 1112003481, ОГРН 1021101006630; генеральный директор Чигиринов Иван Николаевич; учредитель Семенюк Мария Николаевна 100%.", "url": "https://www.tbank.ru/business/contractor/legal/1021101006630/", "source": "Т-Банк / ЕГРЮЛ-данные"},
+        {"type": "SIZE", "claim": "Выручка за 2025 год 10,265 млрд ₽; 1785 сотрудников по данным 2024 года.", "url": "https://firmoteka.ru/1112003481", "source": "Фирмотека / бухгалтерская отчетность ФНС"},
+        {"type": "SIGNAL", "claim": "15.06.2026 завершен третий приоритетный инвестпроект модернизации и расширения производственных мощностей объемом около 4 млрд ₽.", "url": "https://komiinform.ru/news/296709", "source": "Комиинформ"},
+        {"type": "CONTACT", "claim": "Официальные корпоративные контакты +7 (8212) 28-73-86 и info@luzales.com.", "url": "https://luzales.ru/contacts", "source": "Официальный сайт Лузалес"}
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 2,
+  "note": "Fresh worker staging checked first; no new unconsumed worker result after RUN 516R1. Global cheap dedup against physical canonical returned no matches for both candidates by INN/OGRN/brand. Final physical dedup must run again inside canonical integration. No outreach."
 }
