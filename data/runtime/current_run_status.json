@@ -2,15 +2,16 @@
   "run_id": "N5K-20260830-512",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T04:16:00+03:00",
-  "stage": "COMPLETE",
+  "updated_at": "2026-08-30T04:18:00+03:00",
+  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
   "new_cycle": {
     "baseline_count": 530,
     "target_count": 5000,
     "current_canonical_count": 531,
     "current_contactable_count": 531,
     "progress_added": 1,
-    "remaining": 4469
+    "remaining": 4469,
+    "remaining_to_1000": 469
   },
   "funnel": {
     "discovered": 16,
@@ -20,7 +21,9 @@
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
+    "prewrite_qualified": 2,
     "qualified": 1,
+    "physically_integrated": 1,
     "duplicates": 1,
     "excluded": 14
   },
@@ -31,7 +34,8 @@
       "fast_gate": 4,
       "size": 2,
       "signal": 1,
-      "qualified": 1,
+      "qualified_before_physical_dedup": 1,
+      "qualified_after_physical_dedup": 1,
       "duplicate_plus_early_reject": 7,
       "qualified_raw_pct": 12.5,
       "fast_gate_raw_pct": 50.0,
@@ -43,11 +47,12 @@
       "fast_gate": 1,
       "size": 1,
       "signal": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 7,
-      "qualified_raw_pct": 12.5,
+      "qualified_before_physical_dedup": 1,
+      "qualified_after_physical_dedup": 0,
+      "duplicate_plus_early_reject": 8,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 12.5,
-      "note": "Fresh low-overlap production/investment discovery; no catalog padding."
+      "note": "Турбокомплект passed pre-write but physical dedup skipped it by INN, OGRN and exact legal name."
     },
     {
       "lane": "official_owner_ceo",
@@ -55,7 +60,7 @@
       "fast_gate": 0,
       "size": 0,
       "signal": 0,
-      "qualified": 0,
+      "qualified_after_physical_dedup": 0,
       "note": "Used for independent verification and contact confirmation; not double-counted as raw."
     },
     {
@@ -64,13 +69,36 @@
       "fast_gate": 0,
       "size": 0,
       "signal": 0,
-      "qualified": 0,
+      "qualified_after_physical_dedup": 0,
       "note": "Cooldown/probe-only; no deep-check allocation."
     }
   ],
-  "qualified_companies": [
-    "Форс Монтаж"
+  "efficiency_history": [
+    {"run_id":"N5K-20260830-509R1","scope":"measured growth/news + official/owner/CEO lanes","raw":20,"fast_gate":3,"qualified":1,"qualified_raw_pct":5.0,"fast_gate_raw_pct":15.0},
+    {"run_id":"N5K-20260830-510R1","scope":"fresh jobs worker employer-level distinct denominator","raw":38,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.6316,"fast_gate_raw_pct":13.1579},
+    {"run_id":"N5K-20260830-511R1","scope":"fresh measured growth/news own discovery","raw":8,"fast_gate":1,"qualified":1,"qualified_raw_pct":12.5,"fast_gate_raw_pct":12.5},
+    {"run_id":"N5K-20260830-512","scope":"fresh jobs worker + fresh measured growth/news discovery, post-physical-dedup","raw":16,"fast_gate":5,"qualified":1,"qualified_raw_pct":6.25,"fast_gate_raw_pct":31.25}
   ],
+  "efficiency_change_vs_previous_hour": {
+    "qualified_raw_pp": -6.25,
+    "fast_gate_raw_pp": 18.75,
+    "note": "Overall net-new efficiency fell because growth/news pre-write PASS was a physical duplicate. Net-new remains below 5, so allocation is changed rather than repeated."
+  },
+  "adaptive_actions": {
+    "jobs": "CAPPED_AT_5_PERCENT: despite current worker conversion, duplicate+early-reject is 87.5% and prior jobs run was also highly saturated.",
+    "growth_news": "REDUCED_FROM_60_TO_55_PERCENT: current net qualified 0/8 after physical dedup; retain as major lane because previous run produced net-new and fast gate remains above 2%.",
+    "official_owner_ceo": "INCREASED_TO_30_PERCENT for lower-overlap discovery and verification.",
+    "industry_catalog": "PROBE_ONLY_5_PERCENT; no deep-check until probe improves."
+  },
+  "next_run_distribution": {
+    "jobs": 5,
+    "growth_news": 55,
+    "official_owner_ceo": 30,
+    "industry_catalog_probe_only": 5,
+    "experimental_low_overlap": 5
+  },
+  "qualified_companies": ["Форс Монтаж"],
+  "physical_duplicate_companies": ["Турбокомплект / АО «ТУРБОКОМПЛЕКТ» — existing by INN 5037044130, OGRN 1025004860638 and exact legal name"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -78,5 +106,6 @@
   "physical_master_state": "531_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "531_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "notes": "Physical integration complete. Metadata repaired after integration so lane qualified metrics are net-new after physical dedup and remaining_to_1000 matches physical state."
 }
