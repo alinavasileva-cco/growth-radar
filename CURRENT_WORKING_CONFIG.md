@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-08-30T05:16:00+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260830-513`  
+**Версия:** 2026-08-30T06:01:57+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260830-514`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **532 / 532**  
+**Физически подтверждённый canonical/contactable:** **533 / 533**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **468**  
-**Осталось до 5000:** **4468**  
+**Осталось до 1000:** **467**  
+**Осталось до 5000:** **4467**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,9 +16,9 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **532 / 532**;
+- physical canonical/contactable count: **533 / 533**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260830-513`;
+- последний завершённый RUN: `N5K-20260830-514`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
