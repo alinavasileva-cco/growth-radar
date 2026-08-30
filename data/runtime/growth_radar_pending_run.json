@@ -1,8 +1,126 @@
 {
-  "run_id": "N5K-20260831-532",
-  "updated_at": "2026-08-31T01:00:23+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260831-532 integrated physically; canonical/contactable 550/550; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260831-533R1",
+  "updated_at": "2026-08-31T02:50:51+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 2,
+  "funnel": {
+    "discovered": 98,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 96
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260831_012600",
+      "raw": 74,
+      "fast_gate": 3,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "note": "Worker-declared employer-level denominator; distinct within this worker run. Cross-worker global uniqueness is not asserted."
+    },
+    {
+      "lane": "jobs_worker_20260831_022006",
+      "raw": 24,
+      "fast_gate": 3,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "note": "Worker-declared employer-level denominator; distinct within this worker run. Cross-worker global uniqueness is not asserted."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0712",
+      "Brand": "Тест",
+      "Legal Name": "ООО \"ТЕСТ\"",
+      "INN": "6163219914",
+      "OGRN/OGRNIP": "1206100019223",
+      "Region": "Ростовская область",
+      "City": "Ростов-на-Дону",
+      "Segment": "Медицинское лабораторное оборудование / дистрибуция",
+      "Website": "https://lab-test.pro/",
+      "Revenue/Scale": "2025 revenue 324,353,000 RUB; 20 employees",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежий найм директора по продажам медицинского лабораторного оборудования; вакансия описывает ответственность за рост продаж и коммерческое развитие.",
+      "Signal Date": "2026-08-05",
+      "Signal Source": "https://dreamjob.ru/employers/5584810/vakansii/135919630",
+      "Owner": "Исаков Михаил Сергеевич 80%; Мостовая Яна Александровна 20%",
+      "CEO": "Исаков Михаил Сергеевич",
+      "LPR": "Исаков Михаил Сергеевич",
+      "LPR Role": "генеральный директор; учредитель 80%",
+      "Primary Phone": "8 (800) 600-04-01",
+      "Primary Email": "km@lab-test.pro",
+      "HH Contact": "https://dreamjob.ru/employers/5584810/vakansii/135919630",
+      "Contact Form": "",
+      "Contact Type": "published corporate contacts + active vacancy route",
+      "Contact Source": "official company website / active vacancy",
+      "Consulting Hypothesis": "Коммерческая стратегия и система продаж: каналы, KPI, процессы и масштабирование коммерческой функции.",
+      "contacts": [
+        {"value": "8 (800) 600-04-01", "channel": "phone", "type": "published corporate", "source": "official website", "url": "https://lab-test.pro/", "is_lpr": false},
+        {"value": "+7 (961) 271-39-82", "channel": "phone", "type": "published corporate", "source": "official website", "url": "https://lab-test.pro/", "is_lpr": false},
+        {"value": "km@lab-test.pro", "channel": "email", "type": "published corporate", "source": "official website", "url": "https://lab-test.pro/", "is_lpr": false},
+        {"value": "https://dreamjob.ru/employers/5584810/vakansii/135919630", "channel": "vacancy", "type": "active vacancy route", "source": "DreamJob", "url": "https://dreamjob.ru/employers/5584810/vakansii/135919630", "is_lpr": false}
+      ],
+      "evidence": [
+        {"type": "SIZE", "claim": "2025 revenue 324,353,000 RUB; 20 employees", "url": "https://saby.ru/profile/6163219914-616301001", "source": "Saby"},
+        {"type": "LEGAL", "claim": "ООО ТЕСТ, INN 6163219914, OGRN 1206100019223, active legal entity", "url": "https://reputation.ru/ogrn/1206100019223", "source": "Reputation.ru"},
+        {"type": "SIGNAL", "claim": "Sales director hiring signal dated 2026-08-05", "url": "https://dreamjob.ru/employers/5584810/vakansii/135919630", "source": "DreamJob"},
+        {"type": "LPR", "claim": "Исаков Михаил Сергеевич — генеральный директор and 80% owner", "url": "https://reputation.ru/ogrn/1206100019223", "source": "Reputation.ru"},
+        {"type": "CONTACT", "claim": "Published corporate phone/email route", "url": "https://lab-test.pro/", "source": "official website"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0713",
+      "Brand": "Феникс-Презент",
+      "Legal Name": "ООО \"ФЕНИКС-ПРЕЗЕНТ\"",
+      "INN": "6164243028",
+      "OGRN/OGRNIP": "1056164298035",
+      "Region": "Ростовская область",
+      "City": "Ростов-на-Дону",
+      "Segment": "Сезонные и детские товары / поставщик",
+      "Website": "https://f-present.ru/",
+      "Revenue/Scale": "2025 revenue approximately 1,290,000,000 RUB; 78 employees",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежий найм коммерческого директора (CCO) с ответственностью за коммерческую стратегию, ассортимент, ценообразование, маржинальность и рост.",
+      "Signal Date": "2026-08-05",
+      "Signal Source": "https://dreamjob.ru/employers/455976/vakansii/135941564",
+      "Owner": "Вальдман Леонид Ефимович 99%; Вальдман Элина Леонидовна 1%",
+      "CEO": "Вальдман Элина Леонидовна",
+      "LPR": "Вальдман Элина Леонидовна",
+      "LPR Role": "директор; участник 1%",
+      "Primary Phone": "+7 (863) 261-89-65",
+      "Primary Email": "info@f-present.ru",
+      "HH Contact": "https://dreamjob.ru/employers/455976/vakansii/135941564",
+      "Contact Form": "",
+      "Contact Type": "published corporate contacts + active vacancy route",
+      "Contact Source": "official company website / active vacancy",
+      "Consulting Hypothesis": "Коммерческая стратегия и операционная модель: ассортимент, pricing, маржинальность, KPI и масштабирование коммерческой функции.",
+      "contacts": [
+        {"value": "+7 (863) 261-89-65", "channel": "phone", "type": "published corporate", "source": "official website", "url": "https://f-present.ru/", "is_lpr": false},
+        {"value": "info@f-present.ru", "channel": "email", "type": "published corporate", "source": "official website", "url": "https://f-present.ru/", "is_lpr": false},
+        {"value": "https://dreamjob.ru/employers/455976/vakansii/135941564", "channel": "vacancy", "type": "active vacancy route", "source": "DreamJob", "url": "https://dreamjob.ru/employers/455976/vakansii/135941564", "is_lpr": false}
+      ],
+      "evidence": [
+        {"type": "SIZE", "claim": "2025 revenue approximately 1.29bn RUB; 78 employees", "url": "https://firmoteka.ru/6164243028", "source": "Firmoteka"},
+        {"type": "LEGAL", "claim": "ООО ФЕНИКС-ПРЕЗЕНТ, INN 6164243028, OGRN 1056164298035, active legal entity", "url": "https://xfirm.ru/company/6164243028", "source": "Xfirm"},
+        {"type": "SIGNAL", "claim": "Commercial director (CCO) hiring signal dated 2026-08-05", "url": "https://dreamjob.ru/employers/455976/vakansii/135941564", "source": "DreamJob"},
+        {"type": "LPR", "claim": "Вальдман Элина Леонидовна — директор; current ownership structure also verified", "url": "https://reputation.ru/ogrn/1056164298035", "source": "Reputation.ru"},
+        {"type": "CONTACT", "claim": "Published corporate phone/email route", "url": "https://f-present.ru/", "source": "official website"}
+      ]
+    }
+  ],
+  "notes": "Recovery/resume after expected hourly canonical cycle was not confirmed. Consumes two fresh post-RUN-532 jobs worker packages. The workers declare 74 and 24 employer-level raw respectively; global cross-worker distinctness cannot be proven from stored aggregate metrics, so 98 must not be represented as 98 globally distinct companies. Final physical dedup is delegated to the canonical integrator immediately before write. Outreach prohibited."
 }
