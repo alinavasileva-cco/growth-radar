@@ -1,0 +1,125 @@
+{
+  "worker": "jobs",
+  "lane": "jobs",
+  "created_at": "2026-08-30T16:30:00+03:00",
+  "baseline_head": "0f5c1c570a4c68d2fda466053f038bd125c05dbd",
+  "campaign_id": "new_5000",
+  "canonical_baseline": {
+    "canonical": 543,
+    "contactable": 543,
+    "integrity": "PASS",
+    "staged_qualified_not_counted": 0,
+    "last_completed_run": "N5K-20260830-523"
+  },
+  "criteria_policy": "CURRENT_WORKING_CONFIG unchanged; strict SIZE -> LEGAL -> SIGNAL -> LPR -> CONTACT -> QUALIFIED",
+  "outreach": 0,
+  "worker_funnel": {
+    "employer_level_raw": 28,
+    "fast_gate": 4,
+    "deep_check": 4,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "source_batches": [
+    {
+      "batch": "hh_ekaterinburg_ural",
+      "observed_distinct_employers": 6,
+      "note": "Fresh HH management listings; saturated/repeated large employers rejected early; exact >70% rate not reconstructed because cheap rejects were not all legal-key-resolved."
+    },
+    {
+      "batch": "hh_kazan_tatarstan",
+      "observed_distinct_employers": 5,
+      "note": "Fresh HH sales/commercial leadership listings; INBRIG advanced to deep funnel."
+    },
+    {
+      "batch": "hh_rostov_south",
+      "observed_distinct_employers": 5,
+      "note": "Fresh HH management listings; large chains/agencies and weak-role signals rejected at FAST GATE."
+    },
+    {
+      "batch": "rabota_ru_ural_regional",
+      "observed_distinct_employers": 7,
+      "note": "Regional Rabota.ru surfaces; repeated recruiter/network listings and weak signals rejected early."
+    },
+    {
+      "batch": "getmatch_habr_crossboard",
+      "observed_distinct_employers": 5,
+      "note": "GetMatch/Habr/cross-board management signals; archived/non-Russian/agency/scale-mismatch candidates rejected early."
+    }
+  ],
+  "raw_target_note": "The requested 140-150 employer-level raw target was not claimed: only 28 distinct employers were actually surfaced and reviewed with enough identity to count honestly in this run.",
+  "qualified_candidates": [
+    {
+      "brand": "ИНБРИГ",
+      "legal_name": "ООО \"ИНБРИГ\"",
+      "inn": "1686018032",
+      "ogrn": "1221600081592",
+      "region": "Республика Татарстан, Казань",
+      "industry": "Строительство жилых и нежилых зданий / проектирование и строительство домов",
+      "legal_status": "Действующая организация",
+      "legal_status_as_of": "2026-08-06",
+      "revenue_2025_rub": 124379000,
+      "net_profit_2025_rub": 5721000,
+      "size_evidence": {
+        "type": "revenue_2025",
+        "value_rub": 124379000,
+        "url": "https://e-ecolog.ru/buh/2025/1686018032"
+      },
+      "owner": "Бригаднов Викентий Владимирович",
+      "owner_share": "100%",
+      "ceo": "Бригаднов Викентий Владимирович",
+      "lpr": "Бригаднов Викентий Владимирович",
+      "lpr_basis": "Директор и единственный учредитель ООО \"ИНБРИГ\"",
+      "signal_level": "S1",
+      "signal": "Свежая вакансия директора по продажам: компания описывает амбицию стать №1 в Республике Татарстан и ищет руководителя коммерческой функции; отдельные актуальные вакансии и описание компании подтверждают активный рост строительного бизнеса.",
+      "signal_observed_at": "2026-08-30",
+      "signal_url": "https://kazan.hh.ru/vacancies/direktor_po_prodazham?hhtmFrom=vacancy_search_list&page=1&search_session_id=ba2735c0-4e93-438e-b848-2372ef5c06ae",
+      "signal_supporting_url": "https://www.notexistskhtjsru.jobvk.com/kazan/pomoshtnik-direktora",
+      "contact_route": {
+        "type": "official_corporate_route",
+        "phone": "+7 (843) 202-34-23",
+        "email": "info@inbrig.ru",
+        "website": "https://inbrig.ru/",
+        "contact_url": "https://inbrig.ru/contact/",
+        "instruction": "Corporate route to ООО \"ИНБРИГ\"; request transfer of business proposal to director/owner Бригаднов Викентий Владимирович. No inferred personal contact used."
+      },
+      "evidence_urls": [
+        "https://inbrig.ru/contact/",
+        "https://e-ecolog.ru/buh/2025/1686018032",
+        "https://companies.rbc.ru/id/1221600081592-ooo-inbrig/",
+        "https://kazan.hh.ru/vacancies/direktor_po_prodazham?hhtmFrom=vacancy_search_list&page=1&search_session_id=ba2735c0-4e93-438e-b848-2372ef5c06ae",
+        "https://www.notexistskhtjsru.jobvk.com/kazan/pomoshtnik-direktora"
+      ],
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "1686018032",
+        "ogrn": "1221600081592",
+        "exact_legal_name": "ООО \"ИНБРИГ\"",
+        "brand_domain": "ИНБРИГ|inbrig.ru"
+      },
+      "dedup_check": {
+        "checked_against": [
+          "current repository/canonical indexed content",
+          "data/pending_workers/** indexed content",
+          "all prior jobs staging via repository-wide exact-key search"
+        ],
+        "queries": ["1686018032", "1221600081592", "ИНБРИГ inbrig.ru", "INBRIG"],
+        "matches_found": 0,
+        "checked_at_head": "0f5c1c570a4c68d2fda466053f038bd125c05dbd"
+      },
+      "funnel": {
+        "fast_gate": "PASS",
+        "size": "PASS",
+        "legal": "PASS",
+        "signal": "PASS",
+        "lpr": "PASS",
+        "contact": "PASS",
+        "qualified": "PASS"
+      }
+    }
+  ]
+}
