@@ -34,11 +34,11 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 19,
-      "qualified_raw_pct": 5.0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 20,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 15.0,
-      "note": "Fresh immutable worker staging. Dolomit passed full funnel. Duplicate+early-reject=19/20=95%, so jobs remains capped at 5% and the cap is renewed for the next 3 RUN under the adaptive rule."
+      "note": "Post-dedup: Dolomit passed full funnel pre-write but final physical guard found an existing canonical match by INN, OGRN and exact legal name. Jobs therefore has 0 net qualified and duplicate+early-reject=20/20=100%."
     },
     {
       "lane": "official_owner_ceo_low_overlap",
@@ -49,11 +49,11 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 4,
-      "qualified_raw_pct": 20.0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 5,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 40.0,
-      "note": "Five distinct companies were employer-level reviewed from fresh official/business-change surfaces. Bagrif passed the complete funnel. Gamma-Plast was rejected at SIGNAL after date validation showed the apparent August-2026 expansion item was recycled from 2025; stale records were excluded from the decision. Other raw companies failed the fast gate or could not be resolved without lowering quality."
+      "note": "Post-dedup: BAGRIF passed full funnel pre-write but final physical guard found an existing canonical match by INN, OGRN, exact legal name and brand+domain. Gamma-Plast was rejected at SIGNAL because the apparent 2026 item traced to a 2025 event; stale evidence was excluded."
     },
     {
       "lane": "growth_news",
@@ -113,7 +113,49 @@
       "fast_gate_raw_pct": null
     }
   ],
+  "overall_efficiency": {
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 20.0,
+    "delta_vs_previous_hour_qualified_raw_pp": -5.8824,
+    "delta_vs_previous_hour_fast_gate_raw_pp": -21.1765,
+    "net_qualified_delta": -1
+  },
+  "last_four_run_efficiency": [
+    {"run_id": "N5K-20260830-524R1", "raw": 28, "fast_gate": 4, "size": 2, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 25, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 14.2857},
+    {"run_id": "N5K-20260830-525", "raw": 21, "fast_gate": 6, "qualified": 1, "qualified_raw_pct": 4.7619, "fast_gate_raw_pct": 28.5714},
+    {"run_id": "N5K-20260830-526", "raw": 17, "fast_gate": 7, "size": 3, "signal": 2, "qualified": 1, "duplicates": 1, "qualified_raw_pct": 5.8824, "fast_gate_raw_pct": 41.1765},
+    {"run_id": "N5K-20260830-527", "raw": 25, "fast_gate": 5, "size": 3, "signal": 2, "qualified": 0, "duplicates": 2, "duplicate_plus_early_reject": 25, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 20.0}
+  ],
+  "historical_lane_metrics": {
+    "N5K-20260830-524R1": [
+      {"lane": "jobs_recovery_fresh_management", "raw": 28, "fast_gate": 4, "size": 2, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 25, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 14.2857}
+    ],
+    "N5K-20260830-525": {
+      "note": "The retained RUN report has reliable overall funnel but does not preserve complete per-lane SIZE/SIGNAL fields. Missing historical lane fields are not reconstructed."
+    },
+    "N5K-20260830-526": [
+      {"lane": "jobs_probe_fresh_management", "raw": 16, "fast_gate": 6, "size": 2, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": 15, "qualified_raw_pct": 6.25, "fast_gate_raw_pct": 37.5},
+      {"lane": "regional_investment_low_overlap", "raw": 1, "fast_gate": 1, "size": 1, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 1, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 100.0}
+    ]
+  },
+  "adaptive_decision": {
+    "reason": "Net-new qualified fell from 1 to 0; overall qualified/raw fell from 5.8824% to 0% and fast_gate/raw from 41.1765% to 20%. Both current full-funnel candidates were already canonical. Jobs has 100% duplicate+early-reject and is renewed at 5% probe-only for 3 RUNs. The RUN 526 distribution is not repeated.",
+    "lanes_cut_or_capped": ["jobs_probe_fresh_management", "official_owner_ceo_low_overlap reduced from 40% after 100% duplicate+early-reject in this RUN"],
+    "lanes_boosted": ["growth_news", "regional_investment", "partner_business_change"],
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 30,
+      "official_owner_ceo": 20,
+      "industry_catalog": 5,
+      "regional_investment": 25,
+      "partner_business_change": 15
+    }
+  },
   "qualified_companies": [],
+  "physical_duplicates": [
+    {"brand": "Доломит", "match_keys": ["INN", "OGRN", "LEGAL_NAME"]},
+    {"brand": "БЭГРИФ", "match_keys": ["INN", "OGRN", "LEGAL_NAME", "BRAND_DOMAIN"]}
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
