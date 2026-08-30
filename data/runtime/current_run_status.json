@@ -34,11 +34,11 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 18,
-      "qualified_raw_pct": 5.2632,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 19,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 21.0526,
-      "note": "Fresh immutable worker staging 20260830-201715-jobs.json. This is the allowed ~20-company probe batch while jobs remains capped. 19 employer-level raw were actually reviewed; raw was not padded."
+      "note": "Post-dedup: ПолиАэрПак passed full funnel pre-write, but final physical canonical guard found an existing match by INN and OGRN. Jobs therefore has 0 net qualified and duplicate+early-reject=19/19=100%."
     },
     {
       "lane": "growth_news_industrial_expansion",
@@ -53,69 +53,45 @@
       "duplicate_plus_early_reject": 5,
       "qualified_raw_pct": 16.6667,
       "fast_gate_raw_pct": 33.3333,
-      "note": "Own low-overlap review rotated fresh industrial expansion sources. AST Slon passed full funnel. LMR Plast failed SIGNAL because the apparent fresh expansion item traced to older 2024/2025 expansion material; stale evidence was excluded. Other reviewed entities did not justify deep-check under unchanged criteria."
+      "note": "АСТ «Слон» is the physical net-new qualified. LMR Plast failed SIGNAL because the apparent fresh expansion item traced to older 2024/2025 material; stale evidence was excluded."
     },
-    {
-      "lane": "official_owner_ceo",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    },
-    {
-      "lane": "industry_catalog",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "No catalogue presence was used as SIGNAL."
-    },
-    {
-      "lane": "regional_investment",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    },
-    {
-      "lane": "partner_business_change",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    }
+    {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+    {"lane":"industry_catalog","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Probe-only; catalogue/exhibition presence is never SIGNAL."},
+    {"lane":"regional_investment","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+    {"lane":"partner_business_change","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
   ],
-  "qualified_companies": [
-    "АСТ «Слон»"
+  "overall_efficiency": {
+    "qualified_raw_pct": 4.0,
+    "fast_gate_raw_pct": 24.0,
+    "delta_vs_previous_hour_qualified_raw_pp": 4.0,
+    "delta_vs_previous_hour_fast_gate_raw_pp": 4.0,
+    "net_qualified_delta": 1
+  },
+  "last_four_run_efficiency": [
+    {"run_id":"N5K-20260830-525","raw":21,"fast_gate":6,"size":3,"signal":3,"qualified":1,"qualified_raw_pct":4.7619,"fast_gate_raw_pct":28.5714},
+    {"run_id":"N5K-20260830-526","raw":17,"fast_gate":7,"size":3,"signal":2,"qualified":1,"duplicates":1,"qualified_raw_pct":5.8824,"fast_gate_raw_pct":41.1765},
+    {"run_id":"N5K-20260830-527","raw":25,"fast_gate":5,"size":3,"signal":2,"qualified":0,"duplicates":2,"duplicate_plus_early_reject":25,"qualified_raw_pct":0.0,"fast_gate_raw_pct":20.0},
+    {"run_id":"N5K-20260830-528","raw":25,"fast_gate":6,"size":3,"signal":2,"qualified":1,"duplicates":1,"qualified_raw_pct":4.0,"fast_gate_raw_pct":24.0}
   ],
+  "historical_lane_metrics": {
+    "N5K-20260830-525": {"note":"The retained RUN report does not preserve complete per-lane SIZE/SIGNAL fields. Missing historical lane fields are not reconstructed."},
+    "N5K-20260830-526": [
+      {"lane":"jobs_probe_fresh_management","raw":16,"fast_gate":6,"size":2,"signal":1,"qualified":1,"duplicate_plus_early_reject":15,"qualified_raw_pct":6.25,"fast_gate_raw_pct":37.5},
+      {"lane":"regional_investment_low_overlap","raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":0,"duplicate_plus_early_reject":1,"qualified_raw_pct":0.0,"fast_gate_raw_pct":100.0}
+    ],
+    "N5K-20260830-527": [
+      {"lane":"jobs_probe_fresh_management","raw":20,"fast_gate":3,"size":1,"signal":1,"qualified":0,"duplicate_plus_early_reject":20,"qualified_raw_pct":0.0,"fast_gate_raw_pct":15.0},
+      {"lane":"official_owner_ceo_low_overlap","raw":5,"fast_gate":2,"size":2,"signal":1,"qualified":0,"duplicate_plus_early_reject":5,"qualified_raw_pct":0.0,"fast_gate_raw_pct":40.0}
+    ]
+  },
+  "adaptive_decision": {
+    "reason": "Physical net-new improved from 0 to 1, but remains below 5. Jobs has two consecutive RUNs with 0 net qualified after physical dedup (527 and 528), and RUN 528 duplicate+early-reject=19/19=100%, so jobs stays capped at 5% probe-only for the next 3 RUNs. Growth/news produced the only net-new at 1/6 and is increased modestly.",
+    "lanes_cut_or_capped": ["jobs_probe_fresh_management capped at 5% probe-only for next 3 RUNs"],
+    "lanes_boosted": ["growth_news_industrial_expansion"],
+    "next_distribution_pct": {"jobs":5,"growth_news":35,"official_owner_ceo":20,"industry_catalog":5,"regional_investment":25,"partner_business_change":10}
+  },
+  "qualified_companies": ["АСТ «Слон»"],
+  "physical_duplicates": [{"brand":"ПолиАэрПак / PAP.pro","match_keys":["INN","OGRN"]}],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
