@@ -1,0 +1,151 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-08-30T12:30:00+03:00",
+  "repo_head_before_write": "ed9413c2a70d385599dc125224fa3354a91a12e3",
+  "config_version": "2026-08-30T11:02:30+03:00",
+  "canonical_snapshot": {
+    "last_completed_run": "N5K-20260830-519",
+    "canonical": 539,
+    "contactable": 539,
+    "integrity": "PASS",
+    "staged_not_counted_at_config_snapshot": 0,
+    "note": "After the config snapshot, independent jobs-worker commits exist. Final dedup was therefore repeated repo-wide by candidate INN, OGRN and exact names immediately before this write."
+  },
+  "status": "PARTIAL_RAW_TARGET_NOT_PROVEN",
+  "criteria_unchanged": true,
+  "canonical_write_performed": false,
+  "outreach_performed": false,
+  "discovery": {
+    "target_distinct_raw": "140-180",
+    "source_batches_required": 5,
+    "source_batches_attempted": 5,
+    "distinct_company_raw_proven": null,
+    "raw_target_met": false,
+    "reason": "Fresh-source discovery was executed across 5 independent themes/regions, but the available search output did not provide a defensible globally deduplicated company-level count of 140-180. Search-result rows were not relabeled as distinct companies. No quantity was fabricated.",
+    "batches": [
+      {"batch":"FRP/new-production launches","focus":"new plants, new lines, modernization, August 2026","status":"processed; high duplicate/early-reject saturation"},
+      {"batch":"Moscow-region industrial expansion","focus":"new sites, expansions, investment projects","status":"processed; NTM rejected from qualified because current legal/ownership/continuity evidence was not clean enough for this worker"},
+      {"batch":"regional manufacturing investments","focus":"new workshops, modernization, job creation","status":"processed; yielded NZSV"},
+      {"batch":"automotive localization","focus":"new component lines, localization, capacity growth","status":"processed; yielded Lighting Solutions"},
+      {"batch":"fresh owner/company/regional news","focus":"official/company/regional business media, August 2026","status":"processed; other candidates failed size/legal/duplicate/contact gates"}
+    ]
+  },
+  "worker_funnel": {
+    "raw_distinct_proven": null,
+    "fast_gate_deep_checked": 7,
+    "size": 5,
+    "legal": 4,
+    "signal": 4,
+    "lpr": 3,
+    "contact": 2,
+    "qualified": 2
+  },
+  "qualified": [
+    {
+      "brand": "Лайтинг Солюшнс / Lighting Solutions",
+      "legal_name": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"ЛАЙТИНГ СОЛЮШНС\"",
+      "legal_status": "действует",
+      "ownership": "частная собственность",
+      "inn": "7720906560",
+      "ogrn": "1237700586485",
+      "region": "Самарская область, Тольятти",
+      "size": {
+        "revenue_2025_rub": 2320000000,
+        "employees_2025": 256,
+        "current_public_staff_statement": ">300 employees",
+        "assessment": "PASS"
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-07-21",
+        "description": "Запущено производство полного цикла автомобильной светотехники для Lada Azimut; инвестиции 3,5 млрд ₽, новая линия до 80 тыс. комплектов в год, выход на проектную мощность до конца 2026 года.",
+        "sources": [
+          "https://tlt.tpprf.ru/ru/news/612184/",
+          "https://ww1.metalinfo.ru/ru/news/186275",
+          "https://fomag.ru/news-streem/frp-proinvestiroval-1-6-mlrd-rubley-dlya-zapuska-proizvodstva-far-lada-azimut-v-tolyatti/"
+        ]
+      },
+      "lpr": {
+        "name": "Вердучи Джорджио",
+        "role": "генеральный директор; в открытых источниках также указан как собственник проекта/компании",
+        "sources": [
+          "https://companies.rbc.ru/id/1237700586485-nao-ao-lajting-solyushns/",
+          "https://finance.rambler.ru/business/54035212-autokomponent-inzhiniring-mozhet-zanyatsya-vypuskom-far-dlya-avtovaza/"
+        ]
+      },
+      "contact": {
+        "route": "email",
+        "value": "corporatefinance-ls@yandex.ru",
+        "additional_verified_email": "giorgio.verduci@av-el.it",
+        "source": "https://companium.ru/id/1237700586485-layting-solyushns"
+      },
+      "evidence_urls": [
+        "https://companium.ru/id/1237700586485-layting-solyushns",
+        "https://zachestnyibiznes.ru/company/ul/1237700586485_7720906560",
+        "https://tlt.tpprf.ru/ru/news/612184/",
+        "https://companies.rbc.ru/id/1237700586485-nao-ao-lajting-solyushns/"
+      ],
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7720906560",
+        "ogrn": "1237700586485",
+        "exact_legal_name": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"ЛАЙТИНГ СОЛЮШНС\"",
+        "brand_domain": null
+      },
+      "repo_wide_dedup_before_write": "PASS: zero matches by INN, OGRN and exact/brand-name searches"
+    },
+    {
+      "brand": "Новгородский завод стекловолокна / НЗСВ",
+      "legal_name": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"НОВГОРОДСКИЙ ЗАВОД СТЕКЛОВОЛОКНА\"",
+      "legal_status": "действует",
+      "ownership": "частный производственный актив; новый собственник — НПК \"Компенз\"",
+      "inn": "5321030214",
+      "ogrn": "1025300785553",
+      "region": "Новгородская область, Великий Новгород",
+      "domain": "nzsv.ru",
+      "size": {
+        "employees_current_2026": 90,
+        "planned_new_jobs_2027": 110,
+        "revenue_2024_rub": 410555000,
+        "sme_registry": "small/medium business confirmed by open registries",
+        "assessment": "PASS"
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-08-12",
+        "description": "Новый собственник НПК \"Компенз\" запускает трехлетнюю модернизацию и расширение НЗСВ с инвестициями 950 млн ₽; 50 млн ₽ в 2026 году, еще 900 млн ₽ с 2027 года; планируется создать 110 новых рабочих мест.",
+        "sources": [
+          "https://spb.vedomosti.ru/business/news/2026/08/12/1220731-novgorodskoi-oblasti-moderniziruyut-zavod-steklovolokna-za-950-mln-rublei",
+          "https://abnews.ru/szfo/news/velikiy-novgorod/2026/8/12/dronov-rasskazal-o-krupnom-vlozhenii-v-novgorodskij-zavod-steklovolokna",
+          "https://compositeworld.ru/articles/news/id6a804cf585de00001abdd2d7"
+        ]
+      },
+      "lpr": {
+        "name": "Мхитарян Элеонора Тельмановна",
+        "role": "генеральный директор",
+        "source": "https://companies.rbc.ru/id/1025300785553-ao-novgorodskij-zavod-steklovolokna/"
+      },
+      "contact": {
+        "route": "официальный отдел продаж / приемная",
+        "phone_sales": "+7 (8162) 68-05-78",
+        "phone_reception": "+7 (8162) 68-05-90",
+        "email": "nzsv_mrk@mail.ru",
+        "source": "https://nzsv.ru/home/about/"
+      },
+      "evidence_urls": [
+        "https://nzsv.ru/home/about/",
+        "https://companies.rbc.ru/id/1025300785553-ao-novgorodskij-zavod-steklovolokna/",
+        "https://spb.vedomosti.ru/business/news/2026/08/12/1220731-novgorodskoi-oblasti-moderniziruyut-zavod-steklovolokna-za-950-mln-rublei",
+        "https://check.tochka.com/company/1025300785553/"
+      ],
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "5321030214",
+        "ogrn": "1025300785553",
+        "exact_legal_name": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"НОВГОРОДСКИЙ ЗАВОД СТЕКЛОВОЛОКНА\"",
+        "brand_domain": "Новгородский завод стекловолокна|nzsv.ru"
+      },
+      "repo_wide_dedup_before_write": "PASS: zero matches by INN, OGRN and exact/brand-name searches"
+    }
+  ]
+}
