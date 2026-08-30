@@ -39,7 +39,7 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 7.1429,
       "duplicate_plus_early_reject_pct": 100.0,
-      "note": "Fresh immutable jobs staging reports worker_funnel raw_employer_level=70 and fast_gate_pass=6, but the sole pre-write QUALIFIED КраснодарЭлектро is already canonical as N5K-0513 by INN 2311160949 and OGRN 1132311009357, so canonical cheap-dedup-adjusted fast gate is 5 and net qualified is 0. source_batch_metrics raw values sum to 74, conflicting with the explicit worker_funnel denominator 70; 70 is retained as the declared employer-level denominator and the batch-sum conflict is not reconstructed."
+      "note": "worker_funnel declares 70 employer-level raw. The source_batch_metrics raw sum is 74, so that inconsistent batch sum is not used. The sole pre-write QUALIFIED, КраснодарЭлектро, is already canonical as N5K-0513 by INN/OGRN; post-canonical fast gate is 5 and physical net qualified is 0."
     },
     {
       "lane": "regional_investment",
@@ -55,7 +55,7 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 20.0,
       "duplicate_plus_early_reject_pct": 100.0,
-      "note": "Fresh expansion probes: МолоПак and Нью Лайн Инжиниринг were blocked by physical canonical dedup; Турбокомплект lacked sufficiently fresh current SIZE evidence; Bitrobotics and Valdai Robots failed current SIZE."
+      "note": "МолоПак and Нью Лайн Инжиниринг were physical canonical duplicates; Турбокомплект lacked sufficiently fresh current SIZE evidence; Bitrobotics and Valdai Robots failed current SIZE."
     },
     {
       "lane": "growth_news",
@@ -71,9 +71,39 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 0.0,
       "duplicate_plus_early_reject_pct": 100.0,
-      "note": "Fresh antibiotic-production news candidate Восток was rejected because the operating legal entity could not be resolved safely enough for the strict funnel."
+      "note": "Восток rejected because the operating legal entity could not be resolved safely enough."
     }
   ],
+  "overall_efficiency": {
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 7.8947,
+    "delta_vs_previous_hour_qualified_raw_pp": -3.3333,
+    "delta_vs_previous_hour_fast_gate_raw_pp": -2.1053,
+    "net_qualified_current": 0,
+    "net_qualified_previous": 1,
+    "net_qualified_change": -1
+  },
+  "comparison_last_3_runs": [
+    {"run_id":"N5K-20260830-529R1","raw":56,"fast_gate":9,"qualified":2,"qualified_raw_pct":3.5714,"fast_gate_raw_pct":16.0714},
+    {"run_id":"N5K-20260830-530","raw":10,"fast_gate":2,"qualified":1,"qualified_raw_pct":10.0,"fast_gate_raw_pct":20.0},
+    {"run_id":"N5K-20260830-531","raw":30,"fast_gate":3,"qualified":1,"qualified_raw_pct":3.3333,"fast_gate_raw_pct":10.0},
+    {"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947}
+  ],
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 30,
+    "official_owner_ceo": 25,
+    "industry_catalog": 5,
+    "regional_investment": 20,
+    "partner_business_change": 15
+  },
+  "adaptive_controls": {
+    "jobs_cap_runs_remaining": 3,
+    "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
+    "jobs_trigger": "RUN 532 produced 0 physical net qualified; sole worker PASS was a canonical duplicate. Keep jobs at maximum 5% for the next 3 RUN.",
+    "regional_action": "Do not repeat the same regional source set after 0/5 qualified and 100% duplicate+early-reject.",
+    "decision": "Overall efficiency declined and qualified remains below 5. Keep jobs capped; reduce regional investment; increase distinct fresh growth-news and partner/business-change low-overlap sources; keep official owner/CEO separate for clean measurement."
+  },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
