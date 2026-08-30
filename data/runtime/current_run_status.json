@@ -2,7 +2,7 @@
   "run_id": "N5K-20260830-524R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T16:44:29+03:00",
+  "updated_at": "2026-08-30T16:57:41+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 543,
@@ -10,7 +10,8 @@
     "current_canonical_count": 543,
     "current_contactable_count": 543,
     "progress_added": 0,
-    "remaining": 4457
+    "remaining": 4457,
+    "remaining_to_1000": 457
   },
   "funnel": {
     "discovered": 28,
@@ -34,12 +35,197 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "qualified_raw_pct": 3.5714,
+      "qualified": 0,
+      "prewrite_qualified": 1,
+      "physical_duplicates": 1,
+      "early_reject": 24,
+      "duplicate_plus_early_reject": 25,
+      "duplicate_plus_early_reject_pct": 89.2857,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 14.2857,
-      "note": "Fresh worker batch after RUN 523. Only 28 distinct employer-level raw were defensibly persisted; the requested 200-300 was not claimed. Final physical dedup is delegated to the canonical integration workflow."
+      "note": "28 defensible distinct employer-level raw were persisted. INBRIG reached pre-write QUALIFIED but final physical canonical guard matched existing INN/OGRN, so net qualified=0. early_reject is raw-fast_gate=24; duplicate_plus_early_reject adds the one distinct post-fast physical duplicate."
+    },
+    {
+      "lane": "growth_news",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "note": "No measured employer-level discovery in RUN 524R1; not assigned invented denominator."
+    },
+    {
+      "lane": "official_owner_ceo",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "note": "No measured employer-level discovery in RUN 524R1."
+    },
+    {
+      "lane": "industry_catalog",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "note": "Probe-only; catalogue/exhibition presence is never SIGNAL."
+    },
+    {
+      "lane": "regional_investment",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "note": "No measured employer-level discovery in RUN 524R1."
+    },
+    {
+      "lane": "partner_business_change",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "note": "No measured employer-level discovery in RUN 524R1."
     }
   ],
+  "hourly_efficiency": {
+    "current": {
+      "run_id": "N5K-20260830-524R1",
+      "raw": 28,
+      "fast_gate": 4,
+      "size": 2,
+      "signal": 1,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 25,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 14.2857
+    },
+    "last_three_completed": [
+      {
+        "run_id": "N5K-20260830-521",
+        "raw": 140,
+        "fast_gate": 9,
+        "size": 3,
+        "signal": 1,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 132,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 6.4286
+      },
+      {
+        "run_id": "N5K-20260830-522",
+        "raw": 5,
+        "fast_gate": 4,
+        "size": 3,
+        "signal": 3,
+        "qualified": 2,
+        "duplicate_plus_early_reject": 1,
+        "qualified_raw_pct": 40.0,
+        "fast_gate_raw_pct": 80.0
+      },
+      {
+        "run_id": "N5K-20260830-523",
+        "raw": 18,
+        "fast_gate": 5,
+        "size": 2,
+        "signal": 2,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 18,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 27.7778
+      }
+    ],
+    "last_three_lane_history": [
+      {
+        "run_id": "N5K-20260830-521",
+        "lanes": {
+          "jobs": {"raw": 140, "fast_gate": 9, "size": 3, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 132, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 6.4286},
+          "regional_investment": {"raw": null, "fast_gate": 1, "size": 1, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": null, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+        }
+      },
+      {
+        "run_id": "N5K-20260830-522",
+        "lanes": {
+          "jobs": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+          "growth_news": {"raw": 5, "fast_gate": 4, "size": 3, "signal": 3, "qualified": 2, "duplicate_plus_early_reject": 1, "qualified_raw_pct": 40.0, "fast_gate_raw_pct": 80.0}
+        }
+      },
+      {
+        "run_id": "N5K-20260830-523",
+        "lanes": {
+          "jobs": {"raw": 12, "fast_gate": 2, "size": 1, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": null, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 16.6667},
+          "growth_regional_combined": {"raw": 6, "fast_gate": 3, "size": 1, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 6, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 50.0}
+        }
+      }
+    ],
+    "change_vs_previous_hour": {
+      "previous_run_id": "N5K-20260830-523",
+      "qualified_raw_delta_pp": 0.0,
+      "fast_gate_raw_delta_pp": -13.4921,
+      "absolute_qualified_change": 0
+    },
+    "interpretation": "Net qualified/raw did not improve versus RUN 523 and fast_gate/raw fell from 27.7778% to 14.2857%. The jobs lane again produced zero net-new after physical dedup."
+  },
+  "adaptive_decision": {
+    "jobs": "CAP_5_PROBE_ONLY_FOR_NEXT_3_RUNS",
+    "jobs_reason": "RUN 523 jobs qualified/raw=0% and RUN 524R1 jobs qualified/raw=0%; current duplicate+early-reject is 89.2857%. This independently triggers the <=5% cap for the next three RUNs. No ordinary deep-check allocation until the cap window is completed; return only as a probe batch after three RUNs.",
+    "jobs_cap_runs_remaining": 3,
+    "growth_news": "BOOST_TO_35",
+    "growth_news_reason": "RUN 522 produced 2/5 net qualified (40% qualified/raw); RUN 524R1 did not measure this lane, so the productive low-overlap source family is restored rather than repeating the failed jobs-heavy recovery pass.",
+    "official_owner_ceo": "KEEP_25",
+    "official_owner_ceo_reason": "Maintain a large low-overlap allocation for current official company/owner/CEO change sources; no current measured denominator justifies cutting it.",
+    "industry_catalog": "KEEP_5_PROBE_ONLY; catalogue/exhibition presence is never SIGNAL.",
+    "regional_investment": "REDUCE_TO_20",
+    "regional_investment_reason": "Preserve the historically productive family but fund the more recently measured growth/news lane; no RUN 524R1 employer-level sample exists for this lane.",
+    "partner_business_change": "KEEP_10_EXPERIMENTAL_LOW_OVERLAP",
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 35,
+      "official_owner_ceo": 25,
+      "industry_catalog": 5,
+      "regional_investment": 20,
+      "partner_business_change": 10
+    }
+  },
+  "worker_ingestion": {
+    "path": "data/pending_workers/jobs/20260830-163000-jobs.json",
+    "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+    "prewrite_candidate": "ИНБРИГ",
+    "physical_dedup_result": "MATCHED_EXISTING_CANONICAL_BY_INN_OGRN_NO_WRITE"
+  },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
@@ -47,6 +233,7 @@
   "active_wip": 0,
   "physical_master_state": "543_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "543_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "qualified_staged_not_counted": 0,
   "outreach_sent": 0,
   "blocker": null
 }
