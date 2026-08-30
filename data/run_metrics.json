@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-30T02:35:07+03:00",
+  "generated_at": "2026-08-30T03:02:20+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260830-510R1",
-  "current_run_id": "N5K-20260830-510R1",
+  "latest_completed_run_id": "N5K-20260830-511R1",
+  "current_run_id": "N5K-20260830-511R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 529,
-  "contactable_verified": 529,
+  "canonical_pool_verified": 530,
+  "contactable_verified": 530,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4471,
+  "remaining_to_target": 4470,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_510R1": {
-    "raw_discovered": 38,
-    "fast_gate_passed": 5,
+  "run_511R1": {
+    "raw_discovered": 8,
+    "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -25,16 +25,13 @@
     "qualified": 1,
     "physically_integrated": 1,
     "duplicates": 0,
-    "excluded": 37,
+    "excluded": 7,
     "lane_metrics": [
       {
-        "lane": "jobs_worker",
-        "worker_source": "data/pending_workers/jobs/20260830-022700-jobs.json",
-        "worker_commit": "82d9287acbc715652123f9c86d2d04632d74296f",
-        "source_level_observations_inspected": 100,
-        "raw": 38,
-        "fast_gate": 5,
-        "deep_check": 3,
+        "lane": "growth_news",
+        "raw": 8,
+        "fast_gate": 1,
+        "deep_check": 1,
         "size": 1,
         "legal": 1,
         "signal": 1,
@@ -42,7 +39,37 @@
         "contact": 1,
         "qualified_before_physical_dedup": 1,
         "qualified_after_physical_dedup": 1,
-        "note": "Fresh worker data only; raw count is employer-level distinct where legally resolved. No padding from unresolved vacancy rows."
+        "duplicate_plus_early_reject": 7,
+        "qualified_raw_pct": 12.5,
+        "fast_gate_raw_pct": 12.5,
+        "note": "Fresh low-overlap business-change discovery; official company sources used for verification, not double-counted as separate raw."
+      },
+      {
+        "lane": "jobs",
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified_after_physical_dedup": 0,
+        "note": "Own jobs discovery kept capped under adaptive rules; no fresh unconsumed worker staging after completed 510R1 at pre-run HEAD."
+      },
+      {
+        "lane": "official_owner_ceo",
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified_after_physical_dedup": 0,
+        "note": "Used as verification lane for the growth/news candidate and therefore not counted again as raw."
+      },
+      {
+        "lane": "industry_catalog",
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified_after_physical_dedup": 0,
+        "note": "Cooldown/probe-only lane; no deep-check allocation because prior runs repeatedly produced zero qualified / excessive early rejects."
       }
     ]
   }

@@ -1,23 +1,22 @@
 {
-  "run_id": "N5K-20260830-510R1",
+  "run_id": "N5K-20260830-511R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T02:35:07+03:00",
-  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
+  "updated_at": "2026-08-30T03:02:20+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 528,
+    "baseline_count": 529,
     "target_count": 5000,
-    "current_canonical_count": 529,
-    "current_contactable_count": 529,
+    "current_canonical_count": 530,
+    "current_contactable_count": 530,
     "progress_added": 1,
-    "remaining": 4471,
-    "remaining_to_1000": 471
+    "remaining": 4470
   },
   "funnel": {
-    "discovered": 38,
+    "discovered": 8,
     "raw_denominator_complete": true,
-    "raw_denominator_note": "Fresh jobs worker resolved 38 employer-level distinct candidates on inspected batches. The requested 200-300 distinct raw target was not claimed because additional source rows could not be resolved to unique employer/legal identities without guessing.",
-    "fast_gate_passed": 5,
+    "raw_denominator_note": "Eight distinct named-company candidates were inspected in fresh growth/news discovery. No catalog padding and no unresolved search-result rows were counted as raw.",
+    "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -25,19 +24,16 @@
     "contact_route_found": 1,
     "prewrite_qualified": 1,
     "qualified": 1,
-    "physically_integrated": 1,
+    "physically_integrated": 0,
     "duplicates": 0,
-    "excluded": 37
+    "excluded": 7
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker",
-      "worker_source": "data/pending_workers/jobs/20260830-022700-jobs.json",
-      "worker_commit": "82d9287acbc715652123f9c86d2d04632d74296f",
-      "source_level_observations_inspected": 100,
-      "raw": 38,
-      "fast_gate": 5,
-      "deep_check": 3,
+      "lane": "growth_news",
+      "raw": 8,
+      "fast_gate": 1,
+      "deep_check": 1,
       "size": 1,
       "legal": 1,
       "signal": 1,
@@ -45,17 +41,48 @@
       "contact": 1,
       "qualified_before_physical_dedup": 1,
       "qualified_after_physical_dedup": 1,
-      "note": "Fresh worker data only; raw count is employer-level distinct where legally resolved. No padding from unresolved vacancy rows."
+      "duplicate_plus_early_reject": 7,
+      "qualified_raw_pct": 12.5,
+      "fast_gate_raw_pct": 12.5,
+      "note": "Fresh low-overlap business-change discovery; official company sources used for verification, not double-counted as separate raw."
+    },
+    {
+      "lane": "jobs",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified_after_physical_dedup": 0,
+      "note": "Own jobs discovery kept capped under adaptive rules; no fresh unconsumed worker staging after completed 510R1 at pre-run HEAD."
+    },
+    {
+      "lane": "official_owner_ceo",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified_after_physical_dedup": 0,
+      "note": "Used as verification lane for the growth/news candidate and therefore not counted again as raw."
+    },
+    {
+      "lane": "industry_catalog",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified_after_physical_dedup": 0,
+      "note": "Cooldown/probe-only lane; no deep-check allocation because prior runs repeatedly produced zero qualified / excessive early rejects."
     }
   ],
-  "qualified_companies": ["Альфатория"],
+  "qualified_companies": [
+    "НПК Автоприбор Искра / AVTOPRIBOR"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "529_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "529_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "530_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "530_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "notes": "Recovery 510R1 physically integrated Альфатория as N5K-0689. Metadata repaired after integration so physically_integrated and remaining_to_1000 match physical canonical state."
+  "blocker": null
 }
