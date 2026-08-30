@@ -1,17 +1,17 @@
 {
-  "run_id": "N5K-20260830-517",
-  "updated_at": "2026-08-30T09:05:00+03:00",
+  "run_id": "N5K-20260830-517R1",
+  "updated_at": "2026-08-30T09:10:00+03:00",
   "status": "READY_FOR_INTEGRATION",
   "baseline_canonical": 535,
   "baseline_contactable": 535,
   "funnel": {
     "discovered": 18,
-    "fast_gate": 5,
-    "size": 3,
-    "legal": 3,
-    "signal": 2,
-    "lpr": 2,
-    "contact": 2,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
     "qualified": 2,
     "duplicates": 0,
     "excluded": 16
@@ -42,7 +42,7 @@
     "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "note": "used only as verification, not double-counted as raw"},
     "industry": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "note": "probe-only; no catalogue raw padding"}
   },
-  "companies": [
+  "qualified_companies": [
     {
       "Lead ID": "N5K-0696",
       "Brand": "Молком",
@@ -117,5 +117,6 @@
     }
   ],
   "qualified_staged_not_counted": 2,
-  "note": "Fresh worker staging checked first; no new unconsumed worker result after RUN 516R1. Global cheap dedup against physical canonical returned no matches for both candidates by INN/OGRN/brand. Final physical dedup must run again inside canonical integration. No outreach."
+  "notes": "Fresh worker staging checked first; no new unconsumed worker result after RUN 516R1. Global cheap dedup against physical canonical returned no matches for both candidates by INN/OGRN/brand. Final physical dedup must run again inside canonical integration. No outreach.",
+  "note": "REPAIR of RUN 517 staging schema after workflow failure before any canonical write; candidate content and quality unchanged."
 }
