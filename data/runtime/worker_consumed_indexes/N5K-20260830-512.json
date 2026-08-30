@@ -1,0 +1,20 @@
+{
+  "run_id": "N5K-20260830-512",
+  "updated_at": "2026-08-30T04:18:00+03:00",
+  "status": "COMPLETE",
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260830-032205-jobs.json",
+      "blob_sha": "36d66a13c8c902aa29ead8e68c2e8fee5c94b71e",
+      "result": "CONSUMED_INTEGRATED",
+      "worker_raw": 8,
+      "worker_fast_gate": 4,
+      "worker_qualified": 1,
+      "integrated_net_new": 1,
+      "integrated_brand": "Форс Монтаж"
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "note": "Canonical writer ingested this fresh worker before own discovery. Final physical dedup was repeated by the integration workflow."
+}
