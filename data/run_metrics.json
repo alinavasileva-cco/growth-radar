@@ -1,77 +1,104 @@
 {
-  "generated_at": "2026-08-30T14:01:51+03:00",
+  "generated_at": "2026-08-30T14:58:43+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260830-521",
-  "current_run_id": "N5K-20260830-521",
+  "latest_completed_run_id": "N5K-20260830-522",
+  "current_run_id": "N5K-20260830-522",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 541,
-  "contactable_verified": 541,
+  "canonical_pool_verified": 543,
+  "contactable_verified": 543,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4459,
-  "remaining_to_1000": 459,
+  "remaining_to_target": 4457,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_521": {
-    "raw_discovered": 140,
-    "fast_gate_passed": 9,
+  "run_522": {
+    "raw_discovered": 5,
+    "fast_gate_passed": 4,
     "size_check_passed": 3,
-    "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
-    "physically_integrated": 0,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "physically_integrated": 2,
     "duplicates": 1,
-    "excluded": 139,
-    "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 6.4286,
-    "lane_metrics": {
-      "jobs": {
-        "raw": 140,
-        "fast_gate": 9,
+    "excluded": 2,
+    "lane_metrics": [
+      {
+        "lane": "growth_news_technopolis_fresh",
+        "raw": 5,
+        "fast_gate": 4,
         "size": 3,
-        "legal": 2,
-        "signal": 1,
-        "qualified": 0,
-        "physical_duplicates": 1,
-        "duplicate_plus_early_reject": 132,
-        "duplicate_plus_early_reject_pct": 94.2857,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 6.4286
+        "signal": 3,
+        "qualified": 2,
+        "duplicate_plus_early_reject": 1,
+        "qualified_raw_pct": 40.0,
+        "fast_gate_raw_pct": 80.0,
+        "note": "Fresh 2026 Technopolis production launches; NexTouch stopped by physical canonical dedup; Entech stopped at SIZE; TZMOI stopped at CONTACT because a sufficiently reliable current practical route was not confirmed in this pass."
       },
-      "regional_investment_projects": {
-        "raw": null,
-        "source_level_distinct_names_reviewed": 15,
-        "fast_gate": 1,
-        "size": 1,
-        "legal": 0,
+      {
+        "lane": "jobs",
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
         "signal": 0,
         "qualified": 0,
-        "duplicate_plus_early_reject": null,
+        "duplicate_plus_early_reject": 0,
         "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
+        "fast_gate_raw_pct": null,
+        "note": "Capped/probe-only after two consecutive zero-net-qualified runs and 94.2857% duplicate+early-reject in RUN 521; no fresh unconsumed worker batch available at run start."
       },
-      "growth_news": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
-      "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
-      "industry_probe_only": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
-      "partner_business_change": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
-    },
-    "last_three_runs": [
-      {"run_id":"N5K-20260830-518","raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"n=1; unstable denominator"},
-      {"run_id":"N5K-20260830-519","raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"n=1; unstable denominator"},
-      {"run_id":"N5K-20260830-520R1","raw":null,"fast_gate":null,"size":null,"signal":null,"qualified":2,"duplicate_plus_early_reject":null,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"No trustworthy globally distinct employer-level denominator; jobs net0, growth/news net2."}
-    ],
-    "change_vs_previous_hour": {
-      "net_qualified_delta": -2,
-      "qualified_raw_delta_pp": null,
-      "fast_gate_raw_delta_pp": null,
-      "reason": "RUN 520R1 lacks a trustworthy distinct-employer raw denominator; no like-for-like conversion delta is claimed."
-    },
-    "next_distribution_pct": {"jobs":5,"growth_news":25,"official_owner_ceo":10,"industry_probe_only":5,"regional_investment_projects":50,"partner_business_change":5},
-    "adaptive_notes": "Jobs capped at 5% and no deep-check by default after two consecutive jobs RUNs with 0 net qualified; current jobs duplicate+early-reject 94.2857%. Growth/news boosted because it produced both net-new companies in 520R1. Regional investment remains primary based on the best non-tiny measured performance (RUN 517R1: 20% qualified/raw) but reduced from 55% to 50% after the current probe produced no legally resolvable net-new."
+      {
+        "lane": "official_owner_ceo",
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 0,
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "Used only for independent verification, not double-counted as discovery raw."
+      },
+      {
+        "lane": "industry_catalog",
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 0,
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "Probe-only; exhibition/catalog presence never treated as SIGNAL."
+      },
+      {
+        "lane": "regional_investment",
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 0,
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "No additional company-level candidate promoted in this measured batch."
+      },
+      {
+        "lane": "partner_business_change",
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 0,
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "No additional company-level candidate promoted in this measured batch."
+      }
+    ]
   }
 }
