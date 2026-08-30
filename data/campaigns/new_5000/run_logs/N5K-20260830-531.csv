@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Status,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Outreach Sent,Notes
+N5K-20260830-531,new_5000,COMPLETED,30,1,1,1,1,1,1,2,27,550,550,PASS,0,0,0,Worker staging ingested first. Fresh source verification updated the vacancy signal date to the page's current 30.08.2026 date. Physical canonical dedup in integration workflow is authoritative. No outreach.; physical dedup skipped=[]
