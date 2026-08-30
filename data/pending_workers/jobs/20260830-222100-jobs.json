@@ -1,0 +1,102 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-30T22:21:00+03:00",
+  "baseline_head": "cffdf63552c1dd7b90b492709303b051123e64d4",
+  "criteria_version": "CURRENT_WORKING_CONFIG 2026-08-30T21:00:00+03:00",
+  "canonical_count_at_start": 546,
+  "contactable_count_at_start": 546,
+  "canonical_integrity": "PASS",
+  "staged_not_counted_at_start": 0,
+  "outreach": false,
+  "discovery": {
+    "target_raw": "140-150 distinct employer-level candidates if sources allow",
+    "actual_confirmed_employer_level_raw": 24,
+    "note": "Count includes only distinct employer-level entities explicitly surfaced and reviewed in this run. Search-result rows without a resolvable employer, recruiter-only entries, repeats, clearly oversized/public entities and stale/archived weak signals were not counted. The 140-150 target was not inflated when the available fresh indexed surfaces did not yield enough low-overlap employer-level candidates within this run.",
+    "source_batches": [
+      {"batch":"Novosibirsk / commercial leadership / fresh job-board surfaces","observed_distinct_employers":5,"rotation_reason":"many results were weakly resolved, group-level or outside current size/legal fit; rotated after the usable low-overlap set"},
+      {"batch":"Kazan / commercial leadership / DreamJob+Cataloxy+mirrors","observed_distinct_employers":5,"rotation_reason":"usable set narrowed quickly after dedup and fast-gate; TD Salatov advanced to deep check"},
+      {"batch":"Ekaterinburg / sales leadership / fresh job-board surfaces","observed_distinct_employers":4,"rotation_reason":"several results were recruiter-only or ambiguous legal entities; rotated without forcing quota"},
+      {"batch":"Rostov-on-Don / CCO and sales leadership / regional boards","observed_distinct_employers":5,"rotation_reason":"mixed oversized, stale and ambiguous employers; low-overlap pool exhausted for this run"},
+      {"batch":"Krasnodar+Nizhny Novgorod+Perm / commercial leadership / mixed boards","observed_distinct_employers":5,"rotation_reason":"remaining results were archived, oversized, recruiter-mediated or weaker than current S1/S2 priority"}
+    ]
+  },
+  "worker_funnel": {
+    "raw": 24,
+    "fast_gate": 5,
+    "deep_check": 2,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "lead_id": "JOB-20260830-TDSALATOV-1658078449",
+      "brand": "Торговый дом Салатов",
+      "legal_name": "ООО «ТОРГОВЫЙ ДОМ САЛАТОВ»",
+      "inn": "1658078449",
+      "ogrn": "1061658050343",
+      "region": "Казань, Республика Татарстан",
+      "website": "https://tdsalatov.ru/",
+      "brand_domain": "Торговый дом Салатов|tdsalatov.ru",
+      "legal_status": "Действующее",
+      "legal_status_as_of": "2026-08-01",
+      "size": {
+        "revenue_2025_rub": 398533000,
+        "employees_latest": 72,
+        "sme_category": "Малое предприятие",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1061658050343-ooo-torgovyij-dom-salatov/",
+          "https://reputation.ru/ogrn/1061658050343",
+          "https://basis.myseldon.com/ru/company/1061658050343"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-06-01",
+        "type": "job_board_commercial_leadership",
+        "summary": "Компания разместила вакансию коммерческого директора в Казани. В описании роль отвечает за перспективы и устойчивый рост бизнеса; вакансия прямо относится к коммерческой функции компании.",
+        "source_url": "https://nesiditsa.ru/vacancy/133308226"
+      },
+      "lpr": [
+        {"name":"Вороженин Алексей Викторович","role":"Учредитель, 66.7%"},
+        {"name":"Павлов Вадим Васильевич","role":"Учредитель, 33.3%"},
+        {"name":"Дерябин Дмитрий Викторович","role":"Генеральный директор"}
+      ],
+      "lpr_evidence_urls": [
+        "https://reputation.ru/ogrn/1061658050343",
+        "https://companies.rbc.ru/id/1061658050343-ooo-torgovyij-dom-salatov/"
+      ],
+      "contact_routes": [
+        {"type":"published_phone","value":"8-800-700-58-85","source_url":"https://tdsalatov.ru/kontakty"},
+        {"type":"published_phone","value":"(843) 278-85-14","source_url":"https://tdsalatov.ru/kontakty"},
+        {"type":"published_phone","value":"(843) 278-85-24","source_url":"https://tdsalatov.ru/kontakty"},
+        {"type":"published_phone","value":"(843) 278-85-34","source_url":"https://tdsalatov.ru/kontakty"},
+        {"type":"published_email","value":"info@tdsalatov.ru","source_url":"https://tdsalatov.ru/kontakty"},
+        {"type":"official_site","value":"https://tdsalatov.ru/","source_url":"https://tdsalatov.ru/"}
+      ],
+      "contact_note": "Only published corporate routes were used. No personal email or phone was reconstructed or inferred.",
+      "dedup": {
+        "pre_deep_check": "PASS_WITH_REPO_SEARCH_LIMITATION",
+        "pre_staging_repeat": "PASS_WITH_REPO_SEARCH_LIMITATION",
+        "checked_keys": ["JOB-20260830-TDSALATOV-1658078449","1658078449","1061658050343","ООО «ТОРГОВЫЙ ДОМ САЛАТОВ»","Торговый дом Салатов|tdsalatov.ru","tdsalatov.ru"],
+        "repo_search_matches": 0,
+        "repo_search_incomplete_results": true,
+        "pending_workers_root_reviewed": true,
+        "jobs_pending_directory_reviewed": true,
+        "head_rechecked_before_staging": "cffdf63552c1dd7b90b492709303b051123e64d4",
+        "note": "GitHub code search returned zero matches for INN, OGRN and domain but marked results incomplete. The repository pending-workers root and jobs directory were reviewed; final canonical physical dedup remains mandatory before integration. No canonical file was written by this worker."
+      },
+      "evidence_urls": [
+        "https://nesiditsa.ru/vacancy/133308226",
+        "https://companies.rbc.ru/id/1061658050343-ooo-torgovyij-dom-salatov/",
+        "https://reputation.ru/ogrn/1061658050343",
+        "https://basis.myseldon.com/ru/company/1061658050343",
+        "https://tdsalatov.ru/",
+        "https://tdsalatov.ru/kontakty"
+      ]
+    }
+  ]
+}
