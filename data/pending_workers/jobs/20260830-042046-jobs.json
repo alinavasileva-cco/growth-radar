@@ -1,0 +1,113 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-30T04:20:46+03:00",
+  "baseline_head": "de91ddd5fa04993eaa2c0d6dd1483bae038625fd",
+  "criteria_source": "CURRENT_WORKING_CONFIG.md",
+  "criteria_changed": false,
+  "canonical_write": false,
+  "canonical_writer_started": false,
+  "outreach": false,
+  "canonical_baseline": {
+    "canonical": 531,
+    "contactable": 531,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0
+  },
+  "discovery_metrics": {
+    "target_employer_level_raw": "140-150 if verifiably available",
+    "target_met": false,
+    "source_level_observations_reviewed": 21,
+    "employer_level_legal_resolved_for_deep_check": 3,
+    "note": "Search surfaces exposed more vacancy rows, but they were not counted as distinct employer-level raw without reliable employer/legal resolution. No raw quota was fabricated.",
+    "source_batches": [
+      {"lane":"regional_jobs","region":"Kazan","query":"commercial director August 2026","observations_used_for_screening":4},
+      {"lane":"regional_jobs","region":"Yekaterinburg","query":"operations director August 2026","observations_used_for_screening":6},
+      {"lane":"regional_jobs","region":"Novosibirsk","query":"business development director August 2026","observations_used_for_screening":4},
+      {"lane":"regional_jobs","region":"Ufa","query":"commercial director August 2026","observations_used_for_screening":3},
+      {"lane":"regional_jobs","region":"Samara","query":"operations director August 2026","observations_used_for_screening":4}
+    ]
+  },
+  "worker_funnel": {
+    "source_level_observations": 21,
+    "employer_level_legal_resolved": 3,
+    "fast_gate": 3,
+    "deep_check": 3,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "deep_check_rejects": [
+    {
+      "brand": "АК Энергия",
+      "legal_name": "ООО «АК «Энергия»",
+      "inn": "6658461178",
+      "reason": "SIZE_REJECT",
+      "evidence": "2024 revenue 2.455743bn RUB; current configuration excludes this scale without separate approval.",
+      "source_url": "https://companies.rbc.ru/id/1146658014887-ooo-ak-energiya/"
+    },
+    {
+      "brand": "ПолиАэрПак",
+      "legal_name": "ООО «ТД «ПолиАэрПак»",
+      "inn": "7743641590",
+      "reason": "SIZE_REJECT",
+      "evidence": "2025 revenue 1.979146bn RUB; exceeds allowed target scale.",
+      "source_url": "https://synapsenet.ru/organizacii/5077746710828-ooo-td-poliaerpak"
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "СИЛА-ЦЕНТР",
+      "legal_name": "ООО «СИЛА-ЦЕНТР»",
+      "inn": "6312113811",
+      "ogrn": "1126312000011",
+      "region": "Самарская область, Самара",
+      "company_status": "Действующая",
+      "revenue_2025_rub": 19912000,
+      "employee_count_2025": 7,
+      "owner": "Ненашев Сергей Владимирович",
+      "lpr": "Ненашев Сергей Владимирович",
+      "lpr_role": "директор и 100% учредитель",
+      "signal_level": "S1",
+      "signal_date": "2026-07-09",
+      "signal": "Открыта позиция операционного директора (COO) для производственной компании; в описании прямо заявлена задача отстроить структуру компании и управление производством/продажами, что соответствует текущему operational/systematization trigger.",
+      "signal_source_url": "https://dreamjob.ru/employers/2355428/vakansii/135024576",
+      "legal_size_lpr_source_url": "https://companies.rbc.ru/id/1126312000011-ooo-sila-tsentr/",
+      "additional_legal_source_url": "https://reputation.ru/ogrn/1126312000011",
+      "contact_routes": [
+        {
+          "type": "corporate_phone",
+          "value": "+7 846 977-77-61",
+          "source_url": "https://samara.spravka.city/company/sila-centr"
+        },
+        {
+          "type": "corporate_phone",
+          "value": "8 800 500-90-52",
+          "source_url": "https://samara.spravka.city/company/sila-centr"
+        },
+        {
+          "type": "published_email",
+          "value": "info@uzel-sila.ru",
+          "source_url": "https://zachestnyibiznes.ru/company/ul/1126312000011_6312113811_OOO-SILA-CENTR"
+        }
+      ],
+      "domain": "сила-центр.рф",
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6312113811",
+        "ogrn": "1126312000011",
+        "exact_legal_name": "ООО «СИЛА-ЦЕНТР»",
+        "brand_domain": "СИЛА-ЦЕНТР|сила-центр.рф"
+      },
+      "repo_wide_dedup_before_staging": {
+        "inn_matches": 0,
+        "ogrn_matches": 0,
+        "exact_name_matches": 0,
+        "brand_domain_matches": 0,
+        "result": "UNIQUE_AT_STAGING_TIME"
+      }
+    }
+  ]
+}
