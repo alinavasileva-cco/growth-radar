@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-30T10:01:13+03:00",
+  "generated_at": "2026-08-30T11:02:30+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260830-518",
-  "current_run_id": "N5K-20260830-518",
+  "latest_completed_run_id": "N5K-20260830-519",
+  "current_run_id": "N5K-20260830-519",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 538,
-  "contactable_verified": 538,
+  "canonical_pool_verified": 539,
+  "contactable_verified": 539,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4462,
+  "remaining_to_target": 4461,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_518": {
+  "run_519": {
     "raw_discovered": 1,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
@@ -36,7 +36,7 @@
         "duplicate_plus_early_reject": 0,
         "qualified_raw_pct": 100.0,
         "fast_gate_raw_pct": 100.0,
-        "note": "Only the single legally resolved fresh worker-qualified employer is counted as employer-level raw. Worker inspected 120 source rows but did not preserve a trustworthy globally distinct employer denominator, so 120 is not used as raw. Tiny denominator; not treated as stable lane efficiency."
+        "note": "Fresh jobs worker inspected 100 source-level rows and recorded 4 fast-gate and 2 deep-check events, but did not preserve a trustworthy globally distinct employer-level raw denominator. Only the one fully legal-resolved employer is counted in employer-level efficiency; source-level counts are not mixed into that denominator. Tiny denominator; not treated as stable lane efficiency."
       },
       "growth_news": {
         "raw": 0,
@@ -46,8 +46,7 @@
         "qualified": 0,
         "duplicate_plus_early_reject": 0,
         "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null,
-        "note": "No employer-level raw confirmed in this cycle."
+        "fast_gate_raw_pct": null
       },
       "official_owner_ceo": {
         "raw": 0,
@@ -58,7 +57,7 @@
         "duplicate_plus_early_reject": 0,
         "qualified_raw_pct": null,
         "fast_gate_raw_pct": null,
-        "note": "Used only for verification; not double-counted as discovery raw."
+        "note": "Used for verification only; not double-counted as discovery raw."
       },
       "industry": {
         "raw": 0,
@@ -80,7 +79,7 @@
         "duplicate_plus_early_reject": 0,
         "qualified_raw_pct": null,
         "fast_gate_raw_pct": null,
-        "note": "Fresh source search was attempted after worker ingest, but returned no additional company-level candidate resolved far enough to count as raw; search-result rows were not counted as companies."
+        "note": "Fresh regional investment/business-change search was performed after worker ingest. Search surfaces included several named companies, but no additional candidate was resolved through current canonical-key pre-dedup and the strict funnel far enough to count as employer-level raw in this RUN. Search-result rows were not counted as companies."
       },
       "experimental_partner_ecosystem_business_change": {
         "raw": 0,
