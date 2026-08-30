@@ -1,0 +1,110 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-30T03:22:05+03:00",
+  "baseline_head": "31aa2a8961a8a030abcb784057f497a3f687828e",
+  "canonical_snapshot": {
+    "canonical": 530,
+    "contactable": 530,
+    "integrity": "PASS",
+    "staged_not_counted": 0
+  },
+  "criteria_policy": "CURRENT_WORKING_CONFIG unchanged; SIZE -> LEGAL -> SIGNAL -> LPR -> CONTACT -> QUALIFIED",
+  "outreach": false,
+  "discovery": {
+    "target_employer_level_raw": "140-150 if sources permit",
+    "target_met": false,
+    "independent_source_region_batches_attempted": 5,
+    "batch_notes": [
+      "Ekaterinburg: fresh commercial/top-management vacancies",
+      "Kazan: fresh operational/development vacancies",
+      "Samara: fresh development vacancies",
+      "Novosibirsk: fresh marketing/top-management vacancies",
+      "Krasnodar: fresh commercial/top-management vacancies"
+    ],
+    "employer_level_candidates_resolved_for_fast_gate": 8,
+    "raw_count_not_inflated": true,
+    "reason_target_not_met": "Search surfaces returned many vacancy rows, but this worker did not count rows as distinct employers without reliable employer/legal resolution."
+  },
+  "worker_funnel": {
+    "employer_level_resolved_raw": 8,
+    "fast_gate": 4,
+    "deep_check": 4,
+    "size": 2,
+    "legal": 2,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "Форс Монтаж",
+      "legal_name": "ООО «ФОРС МОНТАЖ»",
+      "inn": "7720732314",
+      "ogrn": "1117746866456",
+      "region": "Москва",
+      "domain": "forcemontage.ru",
+      "company_status": "Действующее",
+      "size": {
+        "revenue_2025_rub": 76030000,
+        "employees_latest_confirmed": 5,
+        "assessment": "PASS",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1117746866456/",
+          "https://companies.rbc.ru/id/1117746866456-ooo-fors-montazh/"
+        ]
+      },
+      "legal": {
+        "assessment": "PASS",
+        "brand_legal_link": "Official corporate website publishes ООО «Форс Монтаж», OGRN 1117746866456 and INN 7720732314 on its contact pages.",
+        "evidence_urls": [
+          "https://forcemontage.ru/kontakty",
+          "https://office.forcemontage.ru/"
+        ]
+      },
+      "signal": {
+        "level": "S3_STRONG",
+        "assessment": "PASS",
+        "date": "2026-07-11",
+        "description": "Fresh project-lead vacancy shows an active multi-project delivery load: the role owns project budget, quality and deadlines and manages multiple premium fit-out projects simultaneously. A second current technical vacancy seeks a cross-functional architect to prevent project stoppages caused by design/documentation inconsistencies. Together this is a strong operational-systematization signal; it is not treated as a direct S1 request.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/224832/vakansii/135098562",
+          "https://h.careers/job/db9f658f-ab0f-4e22-a8b1-00400cb5df71"
+        ]
+      },
+      "lpr": {
+        "assessment": "PASS",
+        "name": "Николаев Алексей Андреевич",
+        "role": "Генеральный директор / учредитель",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1117746866456-ooo-fors-montazh/"
+        ]
+      },
+      "contact": {
+        "assessment": "PASS",
+        "route_type": "official corporate route",
+        "phone": "+7 495 135-49-77",
+        "email": "forcemontage@gmail.com",
+        "contact_source": "official website",
+        "evidence_urls": [
+          "https://forcemontage.ru/kontakty",
+          "https://office.forcemontage.ru/"
+        ],
+        "template_reconstructed": false
+      },
+      "consultation_hypothesis": "Проектный портфель и несколько параллельных объектов создают нагрузку на управление сроками, бюджетами, качеством и межфункциональными стыками. Потенциальная тема консультации — система проектного управления и управленческого контроля без увеличения ручного контроля собственника/руководителя.",
+      "dedup": {
+        "pre_deep_check": "PASS",
+        "pre_stage": "PASS",
+        "keys_checked": [
+          "INN:7720732314",
+          "OGRN:1117746866456",
+          "LEGAL:ООО ФОРС МОНТАЖ",
+          "BRAND_DOMAIN:Форс Монтаж|forcemontage.ru"
+        ],
+        "repo_search_results": "No matches found for INN, OGRN, exact brand query, or domain in repository code search at baseline HEAD."
+      },
+      "final_status": "QUALIFIED"
+    }
+  ]
+}
