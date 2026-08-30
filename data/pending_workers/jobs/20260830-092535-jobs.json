@@ -1,0 +1,225 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-30T09:25:35+03:00",
+  "baseline_head": "702884cfcc8258e9238d95d3f75b03d8e8a86193",
+  "config_version": "2026-08-30T09:12:00+03:00",
+  "constraints": {
+    "criteria_changed": false,
+    "criteria_weakened": false,
+    "canonical_writer_run": false,
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "dedup_precheck": {
+    "fresh_head_read": true,
+    "current_working_config_read": true,
+    "pending_workers_lane_manifests_read": true,
+    "all_prior_jobs_staging_manifest_read": true,
+    "candidate_keys_searched_repo_wide_before_deep_check": true,
+    "candidate_keys_searched_repo_wide_immediately_before_staging": true,
+    "keys": [
+      "lead_id",
+      "inn",
+      "ogrn_ogrnip",
+      "exact_legal_name",
+      "confirmed_brand_domain"
+    ],
+    "candidate_search_results": {
+      "inn_3812019025": "no repository match returned",
+      "ogrn_1173850021256": "no repository match returned",
+      "exact_legal_name_with_irkutsk_identity": "no repository match returned",
+      "confirmed_brand_domain_liderstroy_liderstroy38_ru": "no repository match returned"
+    },
+    "note": "Fresh HEAD and all pending-worker lane manifests, including the complete jobs staging manifest, were read. Candidate-specific repo-wide searches were repeated immediately before staging. Large historical immutable file bodies were not reconstructed into a synthetic aggregate; no claim is made that connector-side code-search indexing is a substitute for the canonical writer's final physical integration guard. CURRENT_WORKING_CONFIG reports qualified staged not counted = 0 at this baseline."
+  },
+  "discovery": {
+    "target_employer_level_raw": "140-150 if sources support verified distinct employers",
+    "target_met": false,
+    "source_level_rows_inspected": 120,
+    "raw_employer_level_distinct_confirmed": null,
+    "note": "Six regional job-board batches were inspected to the first-20 level. Exact globally deduplicated employer-level raw count was not reconstructed from source rows because several surfaces contained repeated employers, large national companies, recruiters and ambiguous identities. Vacancy/search-result totals were not converted into employer counts and no quota padding was used.",
+    "batches": [
+      {
+        "source": "HH",
+        "region": "Irkutsk",
+        "query_family": "commercial / executive director",
+        "source_rows_inspected": 20,
+        "duplicates_plus_early_rejects": null,
+        "duplicate_plus_early_reject_rate": null,
+        "rotated_after_first20": true,
+        "qualified": 1,
+        "source_url": "https://irkutsk.hh.ru/vacancies/kommercheskij-direktor-b2b/ot_pryamih_rabotodateley",
+        "note": "Exact first-20 duplicate+early-reject metric was not instrumented and is not reconstructed."
+      },
+      {
+        "source": "HH",
+        "region": "Krasnoyarsk",
+        "query_family": "commercial director",
+        "source_rows_inspected": 20,
+        "duplicates_plus_early_rejects": null,
+        "duplicate_plus_early_reject_rate": null,
+        "rotated_after_first20": true,
+        "qualified": 0,
+        "note": "Rotated after first 20; exact lane reject rate not reconstructed."
+      },
+      {
+        "source": "HH",
+        "region": "Volgograd",
+        "query_family": "operating / executive director",
+        "source_rows_inspected": 20,
+        "duplicates_plus_early_rejects": null,
+        "duplicate_plus_early_reject_rate": null,
+        "rotated_after_first20": true,
+        "qualified": 0,
+        "note": "Rotated after first 20; exact lane reject rate not reconstructed."
+      },
+      {
+        "source": "HH",
+        "region": "Yaroslavl",
+        "query_family": "director / business leadership",
+        "source_rows_inspected": 20,
+        "duplicates_plus_early_rejects": null,
+        "duplicate_plus_early_reject_rate": null,
+        "rotated_after_first20": true,
+        "qualified": 0,
+        "note": "Broad surface contained many obvious national/public/irrelevant employers; rotated instead of pursuing saturated rows."
+      },
+      {
+        "source": "HH",
+        "region": "Izhevsk",
+        "query_family": "enterprise / commercial director",
+        "source_rows_inspected": 20,
+        "duplicates_plus_early_rejects": null,
+        "duplicate_plus_early_reject_rate": null,
+        "rotated_after_first20": true,
+        "qualified": 0,
+        "note": "Rotated after first 20; exact lane reject rate not reconstructed."
+      },
+      {
+        "source": "HH / regional aggregators",
+        "region": "Omsk",
+        "query_family": "commercial director",
+        "source_rows_inspected": 20,
+        "duplicates_plus_early_rejects": null,
+        "duplicate_plus_early_reject_rate": null,
+        "rotated_after_first20": true,
+        "qualified": 0,
+        "note": "Previously seen employers and recruiters were not treated as new; exact lane reject rate not reconstructed."
+      }
+    ]
+  },
+  "worker_funnel": {
+    "source_level_rows_inspected": 120,
+    "raw_employer_level_distinct_confirmed": null,
+    "fast_gate": 3,
+    "deep_check": 2,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "note": "Only exact counts that were directly tracked are asserted. Employer-level raw total is intentionally null rather than guessed."
+  },
+  "qualified": [
+    {
+      "brand": "Лидерстрой",
+      "legal_name": "ООО \"ЛИДЕРСТРОЙ\"",
+      "city": "Иркутск",
+      "region": "Иркутская область",
+      "inn": "3812019025",
+      "ogrn": "1173850021256",
+      "lead_id": null,
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 29530000,
+        "employees_current_confirmed": null,
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1173850021256/"
+        ],
+        "note": "2025 revenue is used; older 2024 revenue is not used for the size decision where fresher 2025 reporting is available."
+      },
+      "legal": {
+        "active": true,
+        "director": "Чуева Анастасия Александровна",
+        "director_since": "2025-04-04",
+        "owner": "Пыткин Роман Александрович",
+        "owner_share": "100%",
+        "registered_address": "664043, Иркутская область, г. Иркутск, ул. Сергеева, стр. 3/7г, офис 24",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1173850021256/",
+          "https://companies.rbc.ru/id/1173850021256-ooo-liderstroj/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring_and_scaling",
+        "title": "Исполнительный директор (CEO / COO)",
+        "date": "2026-07-08",
+        "facts": [
+          "vacancy explicitly says the company is scaling its business",
+          "the executive is expected to systematize all divisions, strengthen control and ensure profit growth",
+          "responsibility includes the full commercial block and separation/automation of B2B and retail processes"
+        ],
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/436633/vakansii/134979470",
+          "https://irkutsk.hh.ru/vacancies/kommercheskij-direktor-b2b/ot_pryamih_rabotodateley"
+        ],
+        "note": "DreamJob exposes an absolute publication date of 2026-07-08. The vacancy remains surfaced in the current HH regional search captured in late August 2026."
+      },
+      "lpr": {
+        "owner": "Пыткин Роман Александрович",
+        "director": "Чуева Анастасия Александровна",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1173850021256/",
+          "https://companies.rbc.ru/id/1173850021256-ooo-liderstroj/"
+        ]
+      },
+      "contact": {
+        "type": "published_official_company_contact",
+        "phone": "+7 (3952) 94-35-03",
+        "email": "maria-liderstroy38@liderstroy24.ru",
+        "url": "https://liderstroy38.ru/",
+        "note": "Phone and email are published on the corporate website; no template reconstruction was used."
+      },
+      "dedup_keys": {
+        "inn": "3812019025",
+        "ogrn": "1173850021256",
+        "exact_legal_name": "ООО \"ЛИДЕРСТРОЙ\"",
+        "confirmed_brand_domain": "Лидерстрой|liderstroy38.ru"
+      },
+      "brand_domain_link": {
+        "confirmed": true,
+        "domain": "liderstroy38.ru",
+        "evidence_urls": [
+          "https://2gis.ru/irkutsk/firm/70000001093542376",
+          "https://liderstroy38.ru/"
+        ],
+        "note": "2GIS links the Irkutsk LiderStroy listing to OGRN 1173850021256 and exposes liderstroy38.ru; the corporate site identifies itself as ООО Лидерстрой."
+      },
+      "dedup_checks": {
+        "pre_deep_check": {
+          "inn_3812019025": "no repository match returned",
+          "ogrn_1173850021256": "no repository match returned",
+          "domain_liderstroy38_ru": "no repository match returned"
+        },
+        "pre_staging": {
+          "head": "702884cfcc8258e9238d95d3f75b03d8e8a86193",
+          "inn_3812019025": "no repository match returned",
+          "ogrn_1173850021256": "no repository match returned",
+          "exact_legal_name_with_irkutsk_identity": "no repository match returned",
+          "confirmed_brand_domain": "no repository match returned"
+        }
+      },
+      "evidence_urls": [
+        "https://www.tbank.ru/business/contractor/legal/1173850021256/",
+        "https://companies.rbc.ru/id/1173850021256-ooo-liderstroj/",
+        "https://dreamjob.ru/employers/436633/vakansii/134979470",
+        "https://irkutsk.hh.ru/vacancies/kommercheskij-direktor-b2b/ot_pryamih_rabotodateley",
+        "https://2gis.ru/irkutsk/firm/70000001093542376",
+        "https://liderstroy38.ru/"
+      ]
+    }
+  ]
+}
