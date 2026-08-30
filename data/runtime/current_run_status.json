@@ -10,7 +10,8 @@
     "current_canonical_count": 541,
     "current_contactable_count": 541,
     "progress_added": 0,
-    "remaining": 4459
+    "remaining": 4459,
+    "remaining_to_1000": 459
   },
   "funnel": {
     "discovered": 140,
@@ -31,11 +32,13 @@
       "size": 3,
       "legal": 2,
       "signal": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 131,
-      "qualified_raw_pct": 0.7143,
+      "qualified": 0,
+      "physical_duplicates": 1,
+      "duplicate_plus_early_reject": 132,
+      "duplicate_plus_early_reject_pct": 94.2857,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 6.4286,
-      "note": "Seven 20-employer low-overlap job-board/region batches; employer de-overlap was performed by worker. Batch-level exact canonical duplicate shares were not reconstructed, so duplicate_plus_early_reject is raw minus fast_gate, not a claimed physical-duplicate count."
+      "note": "140 distinct employers were preserved by the worker across seven low-overlap batches. Worker staged ПОЛИТАКС as qualified/NO_MATCH, but the final physical canonical guard found it already present by INN 7724483059, OGRN 1197746443322 and brand+domain. Net-new qualified is therefore 0. duplicate_plus_early_reject combines 131 pre-fast-gate rejects with this 1 physical duplicate; deep-funnel rejects are reported separately by funnel stages."
     },
     "regional_investment_projects": {
       "raw": null,
@@ -48,54 +51,65 @@
       "duplicate_plus_early_reject": null,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "note": "Post-worker adaptive discovery reviewed fresh regional investment signals. The strongest new candidate, Элтекс, was stopped at LEGAL because current sources map the brand/news to conflicting legal entities; unresolved names are not promoted into canonical raw denominators."
+      "note": "Fresh regional-investment discovery was used after worker output remained below 5. The strongest candidate, Элтекс, was stopped at LEGAL because current sources map the brand/news to conflicting legal entities. Unresolved search-result names are not promoted into a canonical employer-level denominator."
     },
-    "growth_news": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
+    "growth_news": {"raw": 0, "fast_gate": 0, "size": 0, "legal": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+    "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "legal": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+    "industry_probe_only": {"raw": 0, "fast_gate": 0, "size": 0, "legal": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+    "partner_business_change": {"raw": 0, "fast_gate": 0, "size": 0, "legal": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+  },
+  "hourly_efficiency": {
+    "current": {
+      "run_id": "N5K-20260830-521",
+      "raw": 140,
+      "fast_gate": 9,
+      "size": 3,
+      "signal": 1,
       "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
+      "duplicate_plus_early_reject": 132,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 6.4286
     },
-    "official_owner_ceo": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    },
-    "industry_probe_only": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    },
-    "partner_business_change": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
+    "last_three": [
+      {"run_id": "N5K-20260830-518", "raw": 1, "fast_gate": 1, "size": 1, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": 0, "qualified_raw_pct": 100.0, "fast_gate_raw_pct": 100.0, "note": "Tiny denominator n=1; not stable efficiency."},
+      {"run_id": "N5K-20260830-519", "raw": 1, "fast_gate": 1, "size": 1, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": 0, "qualified_raw_pct": 100.0, "fast_gate_raw_pct": 100.0, "note": "Tiny denominator n=1; not stable efficiency."},
+      {"run_id": "N5K-20260830-520R1", "raw": null, "fast_gate": null, "size": null, "signal": null, "qualified": 2, "duplicate_plus_early_reject": null, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "No trustworthy globally distinct employer-level raw denominator was preserved. Jobs net qualified 0; growth/news net qualified 2."}
+    ],
+    "change_vs_previous_hour": {
+      "net_qualified_delta": -2,
+      "qualified_raw_delta_pp": null,
+      "fast_gate_raw_delta_pp": null,
+      "reason": "RUN 520R1 has no trustworthy globally distinct employer-level raw denominator, so a like-for-like conversion-rate delta is not claimed. Absolute net-new changed from 2 to 0."
     }
+  },
+  "adaptive_decision": {
+    "jobs": "CAPPED_AT_5_PERCENT_AND_NO_DEEP_CHECK_BY_DEFAULT_NEXT_RUN",
+    "jobs_reason": "RUN 520R1 jobs produced 0 net qualified and RUN 521 jobs again produced 0 net qualified; current duplicate+early-reject is 94.2857%. Two consecutive zero-qualified jobs RUNs trigger no-deep-check allocation except a small probe.",
+    "growth_news": "BOOST_TO_25_PERCENT",
+    "growth_news_reason": "Growth/news produced both net-new companies in RUN 520R1; increase cautiously despite missing denominator there.",
+    "regional_investment_projects": "KEEP_PRIMARY_AT_50_PERCENT",
+    "regional_reason": "Best non-tiny measured lane remains RUN 517R1 at 20% qualified/raw and 40% fast/raw, but current post-worker probe produced no legally resolvable net-new, so reduce from 55% to 50% rather than repeat the previous mix.",
+    "industry_probe_only": "KEEP_AT_5_PERCENT",
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 25,
+      "official_owner_ceo": 10,
+      "industry_probe_only": 5,
+      "regional_investment_projects": 50,
+      "partner_business_change": 5
+    }
+  },
+  "worker_ingestion": {
+    "path": "data/pending_workers/jobs/20260830-133205-jobs.json",
+    "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+    "dedup_defect": "Worker staging marked ПОЛИТАКС as NO_MATCH; physical pre-write guard found canonical match by INN, OGRN and brand+domain. No duplicate write occurred."
   },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "541_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "541_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
