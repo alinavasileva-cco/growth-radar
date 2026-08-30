@@ -7,7 +7,7 @@
   "progress_added": 546,
   "remaining_to_total_target": 4454,
   "remaining": 4454,
-  "remaining_to_1000": 455,
+  "remaining_to_1000": 454,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,34 +17,34 @@
   "current_run_id": "N5K-20260830-528",
   "last_run_id": "N5K-20260830-528",
   "latest_completed_run": "N5K-20260830-528",
-  "canonical_integration_run_id": "N5K-20260830-527",
-  "hourly_parent_run_id": "N5K-20260830-527",
+  "canonical_integration_run_id": "N5K-20260830-528",
+  "hourly_parent_run_id": "N5K-20260830-528",
   "hourly_baseline_count": 545,
-  "hourly_net_new": 0,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "overall_efficiency": {
-    "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 20.0,
-    "delta_vs_previous_hour_qualified_raw_pp": -5.8824,
-    "delta_vs_previous_hour_fast_gate_raw_pp": -21.1765,
-    "net_qualified_delta": -1
+    "qualified_raw_pct": 4.0,
+    "fast_gate_raw_pct": 24.0,
+    "delta_vs_previous_hour_qualified_raw_pp": 4.0,
+    "delta_vs_previous_hour_fast_gate_raw_pp": 4.0,
+    "net_qualified_delta": 1
   },
   "next_distribution_pct": {
     "jobs": 5,
-    "growth_news": 30,
+    "growth_news": 35,
     "official_owner_ceo": 20,
     "industry_catalog": 5,
     "regional_investment": 25,
-    "partner_business_change": 15
+    "partner_business_change": 10
   },
   "adaptive_controls": {
     "jobs_cap_runs_remaining": 3,
     "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
-    "jobs_trigger": "RUN 527 jobs duplicate+early-reject is 20/20=100% after physical dedup; cap is renewed to 5% for the next 3 RUNs.",
-    "official_owner_ceo_note": "RUN 527 official/owner/CEO produced a full-funnel candidate but it was already canonical; post-dedup qualified/raw=0% and duplicate+early-reject=5/5=100%. This is one measured RUN, so no automatic 3-RUN cap is asserted yet, but allocation is reduced from 40% to 20%.",
-    "decision": "Net-new fell to 0 and overall qualified/raw fell from 5.8824% to 0%. Do not repeat RUN 526 distribution. Keep jobs at 5% probe-only; rotate toward fresh growth/news, regional investment and experimental partner/business-change sources, while retaining 20% official/owner/CEO for lower-overlap probing."
+    "jobs_trigger": "RUN 527 and RUN 528 both produced 0 net qualified in jobs after physical dedup; RUN 528 duplicate+early-reject is 19/19=100%. Jobs remains capped at 5% for the next 3 RUNs.",
+    "growth_news_note": "RUN 528 growth/news industrial expansion produced 1 net qualified from 6 employer-level raw (16.6667% qualified/raw), but duplicate+early-reject was 5/6=83.3333% on a small sample. It is boosted modestly, not allowed to dominate.",
+    "decision": "Physical net-new improved from 0 to 1 but remains below 5. Do not repeat RUN 527 distribution automatically. Keep jobs at 5% probe-only; raise fresh growth/news to 35%; retain official owner/CEO and regional investment as low-overlap sources; reduce partner/business-change to 10% for the next RUN."
   },
-  "note": "N5K-20260830-528 completed after physical integration: +1 net new; canonical/contactable 546/546; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260830-528 completed after physical integration: +1 net new (АСТ «Слон»); ПолиАэрПак was blocked by final canonical dedup on INN and OGRN. Canonical/contactable 546/546; integrity PASS; orphan 0/0; staged 0; outreach 0. Stale LMR Plast expansion material was excluded from SIGNAL."
 }
