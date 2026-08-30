@@ -1,0 +1,29 @@
+{
+  "run_id": "N5K-20260831-532",
+  "campaign_id": "new_5000",
+  "updated_at": "2026-08-31T01:00:23+03:00",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260831-002337-jobs.json",
+      "blob_sha": "bccda6e3a0482883c8e3f6b96054f31a23e2c812",
+      "lane": "jobs",
+      "raw_employer_level": 70,
+      "worker_qualified": 1,
+      "physical_net_qualified": 0,
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "integrated_lead_ids": [],
+      "duplicate_matches": [
+        {
+          "brand": "КраснодарЭлектро",
+          "existing_lead_id": "N5K-0513",
+          "inn": "2311160949",
+          "ogrn": "1132311009357",
+          "matched_by": ["INN", "OGRN", "LEGAL_NAME", "BRAND_DOMAIN"]
+        }
+      ],
+      "instrumentation_note": "worker_funnel declares raw_employer_level=70; source_batch_metrics raw values sum to 74. The conflict is preserved rather than reconstructed."
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "outreach_sent": 0
+}
