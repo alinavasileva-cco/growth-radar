@@ -1,75 +1,8 @@
 {
   "run_id": "N5K-20260830-530",
   "updated_at": "2026-08-30T22:57:16+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "funnel": {
-    "discovered": 10,
-    "fast_gate_passed": 2,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 9
-  },
-  "lane_metrics": [
-    {
-      "lane": "growth_news_official_low_overlap",
-      "raw": 10,
-      "fast_gate": 2,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 9,
-      "note": "Auditable employer-level candidates surfaced in fresh growth/industrial-change and official-source discovery. Oversized/public, foreign, stale and legally unresolved entities were rejected early; raw was not inflated to quota."
-    }
-  ],
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0710",
-      "Brand": "НПО Стеклопластик",
-      "Legal Name": "АО «НПО СТЕКЛОПЛАСТИК ИМЕНИ Н.Н. ТРОФИМОВА»",
-      "INN": "5044000039",
-      "OGRN/OGRNIP": "1035008852097",
-      "Region": "Московская область",
-      "City": "пгт Андреевка, г.о. Солнечногорск",
-      "Segment": "Промышленное производство / композиты / B2B",
-      "Website": "https://npo-stekloplastic.ru/",
-      "Revenue/Scale": "Доходы около 2,8 млрд ₽; на официальном сайте указано около 1300 сотрудников; действующее непубличное АО",
-      "Signal Level": "S2",
-      "Signal Summary": "03.06.2026 подтверждено комплексное внедрение 1С:ERP: автоматизированы производство, закупки, запасы и продажи; обработка заказов ускорилась на 50%, производственная себестоимость снижена на 10%, рентабельность контрактов выросла на 5%.",
-      "Signal Date": "2026-06-03",
-      "Signal Source": "https://www.cnews.ru/news/line/2026-06-03_npo_stekloplastik_na_10",
-      "Owner": "Акционерный состав в открытых источниках этого RUN не подтвержден; для LPR используется действующий генеральный директор",
-      "CEO": "Трофимов Александр Николаевич",
-      "LPR": "Трофимов Александр Николаевич",
-      "LPR Role": "Генеральный директор",
-      "Primary Phone": "+7 (495) 536-06-94",
-      "Primary Email": "info@npostek.ru",
-      "HH Contact": "",
-      "Contact Form": "https://npo-stekloplastic.ru/contacts/",
-      "Contact Type": "Официальный корпоративный маршрут к руководству",
-      "Contact Source": "Официальный сайт АО «НПО Стеклопластик»",
-      "Consulting Hypothesis": "После ERP-трансформации — диагностика коммерческой модели, управленческой аналитики, связки продажи-производство-закупки и дальнейшего роста маржинальности B2B-контрактов.",
-      "contacts": [
-        {"channel":"phone","type":"corporate","value":"+7 (495) 536-06-94","source":"Официальный сайт АО «НПО Стеклопластик»","url":"https://npo-stekloplastic.ru/contacts/management/","is_lpr":false,"notes":"Приемная генерального директора; опубликованный корпоративный маршрут."},
-        {"channel":"email","type":"corporate","value":"info@npostek.ru","source":"Официальный сайт АО «НПО Стеклопластик»","url":"https://npo-stekloplastic.ru/contacts/management/","is_lpr":false,"notes":"Опубликованный email приемной/корпоративный маршрут."},
-        {"channel":"phone","type":"corporate","value":"+7 (495) 536-28-71","source":"Официальный сайт АО «НПО Стеклопластик»","url":"https://npo-stekloplastic.ru/contacts/management/","is_lpr":false,"notes":"Заместитель генерального директора по коммерческим вопросам / отдел реализации."},
-        {"channel":"email","type":"corporate","value":"sale@npostek.ru","source":"Официальный сайт АО «НПО Стеклопластик»","url":"https://npo-stekloplastic.ru/contacts/","is_lpr":false,"notes":"Опубликованный корпоративный email отдела реализации."}
-      ],
-      "evidence": [
-        {"type":"LEGAL_LPR","claim":"АО «НПО Стеклопластик имени Н.Н. Трофимова», ИНН 5044000039, ОГРН 1035008852097, действует; генеральный директор Трофимов Александр Николаевич.","url":"https://companies.rbc.ru/id/1035008852097-ao-aktsionernoe-obschestvo-npo-stekloplastik/","source":"РБК Компании / официальный сайт"},
-        {"type":"SIZE","claim":"Открытые данные показывают доходы около 2,8 млрд ₽; официальный сайт указывает около 1300 сотрудников.","url":"https://npo-stekloplastic.ru/","source":"Официальный сайт; ЗаЧестныйБизнес"},
-        {"type":"SIGNAL","claim":"03.06.2026 внедрена 1С:ERP для производства, закупок, запасов и продаж; обработка заказов +50%, себестоимость -10%, рентабельность контрактов +5%.","url":"https://www.cnews.ru/news/line/2026-06-03_npo_stekloplastik_na_10","source":"CNews / 1С"},
-        {"type":"CONTACT","claim":"Официальный сайт публикует приемную генерального директора и маршруты коммерческого блока; персональные контакты не реконструировались.","url":"https://npo-stekloplastic.ru/contacts/management/","source":"Официальный сайт АО «НПО Стеклопластик»"}
-      ]
-    }
-  ],
-  "qualified_staged_not_counted": 1,
-  "notes": "Baseline physical canonical/contactable 548/548 from completed RUN 529R1. No fresh unconsumed worker package was found after 529R1, so canonical writer continued own low-overlap discovery. Ten employer-level candidates were explicitly surfaced/reviewed; no attempt was made to inflate raw to 400-800 when current indexed fresh surfaces were not productive enough. Final physical dedup by integration workflow remains mandatory. Outreach disabled."
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260830-530 integrated physically; canonical/contactable 549/549; integrity PASS; orphan 0/0; outreach 0."
 }
