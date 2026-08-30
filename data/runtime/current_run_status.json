@@ -1,60 +1,63 @@
 {
-  "run_id": "N5K-20260830-519",
+  "run_id": "N5K-20260830-520R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T11:02:30+03:00",
+  "updated_at": "2026-08-30T12:47:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 538,
+    "baseline_count": 539,
     "target_count": 5000,
-    "current_canonical_count": 539,
-    "current_contactable_count": 539,
-    "progress_added": 1,
-    "remaining": 4461,
-    "remaining_to_1000": 461
+    "current_canonical_count": 541,
+    "current_contactable_count": 541,
+    "progress_added": 2,
+    "remaining": 4459
   },
   "funnel": {
-    "discovered": 1,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 0
+    "discovered": 2,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 1,
+    "excluded": 1
   },
   "lane_metrics": {
-    "jobs": {"raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"Fresh worker inspected 100 source-level rows and recorded 4 source-level fast-gate events, but did not preserve a trustworthy globally distinct employer denominator. Only the one fully legal-resolved employer is used for employer-level efficiency. Tiny denominator; not a stable conversion estimate."},
-    "growth_news": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
-    "official_owner_ceo": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"verification only; not double-counted as raw"},
-    "industry": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"probe-only; no catalogue padding"},
-    "experimental_regional_investment_projects": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Fresh regional investment/business-change search was performed after worker ingest. No additional candidate was resolved through current canonical-key pre-dedup and the strict funnel far enough to count as employer-level raw; search-result rows were not counted as companies."},
-    "experimental_partner_ecosystem_business_change": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
+    "jobs": {
+      "source_level_results_individually_reviewed": 27,
+      "raw_employer_level_distinct_confirmed": null,
+      "fast_gate": 5,
+      "size": 2,
+      "legal": 1,
+      "signal": 1,
+      "qualified_after_canonical_recheck": 0,
+      "note": "Fresh jobs worker did not preserve a trustworthy distinct-employer raw denominator. Its only worker-qualified candidate, ТАНДАЛ / ООО \"ТАНДАЛ\" (ИНН 6670248456), is already present in the physical canonical base from an earlier completed recovery and is therefore excluded as a duplicate. Current worker legal fields also supersede older contradictory Tandal details; no stale record is used for a new decision."
+    },
+    "growth_news": {
+      "source_batches_attempted": 5,
+      "raw_distinct_proven": null,
+      "fast_gate_deep_checked": 7,
+      "size": 5,
+      "legal": 4,
+      "signal": 4,
+      "lpr": 3,
+      "contact": 2,
+      "qualified": 2,
+      "note": "Worker did not prove a globally deduplicated distinct-company raw denominator; search-result rows are not relabeled as companies. Only the two fully resolved qualified companies are staged."
+    }
   },
-  "efficiency_control": {
-    "current_overall": {"raw":1,"fast_gate":1,"qualified":1,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"Tiny employer-level denominator; not interpreted as stable throughput efficiency."},
-    "previous_hour_overall": {"run_id":"N5K-20260830-518","raw":1,"fast_gate":1,"qualified":1,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"RUN 518 also used one resolved employer as denominator."},
-    "change_vs_previous_hour_pp": {"qualified_raw":0.0,"fast_gate_raw":0.0,"note":"No measured improvement; both current and previous denominators are tiny."},
-    "last_3_runs": [
-      {"run_id":"N5K-20260830-516R1","overall":{"raw":15,"fast_gate":2,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":13.3333}},
-      {"run_id":"N5K-20260830-517R1","overall":{"raw":18,"fast_gate":5,"qualified":2,"qualified_raw_pct":11.1111,"fast_gate_raw_pct":27.7778},"lanes":{"experimental_regional_investment_projects":{"raw":10,"fast_gate":4,"size":3,"signal":2,"qualified":2,"duplicate_plus_early_reject":8,"qualified_raw_pct":20.0,"fast_gate_raw_pct":40.0},"experimental_partner_ecosystem_business_change":{"raw":8,"fast_gate":1,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":8,"qualified_raw_pct":0.0,"fast_gate_raw_pct":12.5}}},
-      {"run_id":"N5K-20260830-518","overall":{"raw":1,"fast_gate":1,"qualified":1,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"tiny denominator"},"lanes":{"jobs":{"raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"tiny denominator"}}}
-    ]
-  },
-  "adaptive_decision": {
-    "reason": "Net-new is 1 (<5) and measured efficiency did not improve versus RUN 518. Jobs conversion is based on one resolved employer and does not justify expansion. Regional investment projects remain the strongest non-tiny measured lane from RUN 517R1 at 20% qualified/raw and stay at the 60% ceiling. To avoid repeating the prior allocation automatically, official/owner/CEO discovery rises from 10% to 15% and partner/business-change falls from 15% to 10%; jobs and industry stay capped/probe-only.",
-    "next_discovery_mix_pct": {"jobs":5,"growth_news":5,"official_owner_ceo":15,"industry_probe_only":5,"experimental_regional_investment_projects":60,"experimental_partner_ecosystem_business_change":10}
-  },
-  "qualified_companies": ["АКБ Атика"],
+  "qualified_companies": [
+    "Лайтинг Солюшнс / Lighting Solutions",
+    "Новгородский завод стекловолокна / НЗСВ"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "539_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "539_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "541_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "541_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "repair_note": "Integration workflow completed physical write, then same-cycle repair restored hourly efficiency/adaptive fields and corrected remaining_to_1000=461."
+  "blocker": null
 }
