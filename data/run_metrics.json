@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-30T15:24:38+03:00",
+  "generated_at": "2026-08-30T16:44:29+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260830-523",
-  "current_run_id": "N5K-20260830-523",
+  "latest_completed_run_id": "N5K-20260830-524R1",
+  "current_run_id": "N5K-20260830-524R1",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 543,
   "contactable_verified": 543,
@@ -14,68 +14,33 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_523": {
-    "raw_discovered": 18,
-    "fast_gate_passed": 5,
+  "run_524R1": {
+    "raw_discovered": 28,
+    "fast_gate_passed": 4,
     "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 0,
     "physically_integrated": 0,
-    "duplicates": 4,
-    "excluded": 14,
-    "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 27.7778,
+    "duplicates": 1,
+    "excluded": 27,
     "lane_metrics": [
       {
-        "lane": "jobs_worker_fresh_management",
-        "raw": 12,
-        "fast_gate": 2,
-        "size": 1,
+        "lane": "jobs_recovery_fresh_management",
+        "raw": 28,
+        "fast_gate": 4,
+        "size": 2,
         "legal": 1,
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "qualified": 0,
-        "physical_duplicates": 1,
-        "duplicate_plus_early_reject": null,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 16.6667,
-        "note": "Dymov Ceramic was pre-write PASS but final physical dedup matched INN, OGRN and brand+domain. Exact worker duplicate+early-reject decomposition was not persisted and is not reconstructed."
-      },
-      {
-        "lane": "growth_regional_fresh_expansion",
-        "raw": 6,
-        "fast_gate": 3,
-        "size": 1,
-        "legal": 1,
-        "signal": 1,
-        "lpr": 1,
-        "contact": 1,
-        "qualified": 0,
-        "duplicates": 3,
-        "early_reject": 3,
-        "duplicate_plus_early_reject": 6,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 50.0,
-        "note": "NARTIS was pre-write PASS but final physical dedup matched INN, OGRN and brand+domain. Two other known overlaps were stopped cheap; three candidates were early rejects."
+        "qualified": 1,
+        "qualified_raw_pct": 3.5714,
+        "fast_gate_raw_pct": 14.2857,
+        "note": "Fresh worker batch after RUN 523. Only 28 distinct employer-level raw were defensibly persisted; the requested 200-300 was not claimed. Final physical dedup is delegated to the canonical integration workflow."
       }
-    ],
-    "change_vs_previous_hour": {
-      "previous_run_id": "N5K-20260830-522",
-      "qualified_raw_delta_pp": -40.0,
-      "fast_gate_raw_delta_pp": -52.2222,
-      "absolute_qualified_change": -2
-    },
-    "next_distribution_pct": {
-      "jobs": 5,
-      "growth_news": 25,
-      "official_owner_ceo": 25,
-      "industry_catalog": 5,
-      "regional_investment": 30,
-      "partner_business_change": 10
-    }
+    ]
   }
 }

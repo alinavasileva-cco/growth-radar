@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260830-523",
+  "run_id": "N5K-20260830-524R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T15:24:38+03:00",
+  "updated_at": "2026-08-30T16:44:29+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 543,
@@ -13,124 +13,33 @@
     "remaining": 4457
   },
   "funnel": {
-    "discovered": 18,
-    "fast_gate_passed": 5,
+    "discovered": 28,
+    "fast_gate_passed": 4,
     "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 0,
-    "duplicates": 4,
-    "excluded": 14
+    "duplicates": 1,
+    "excluded": 27
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_fresh_management",
-      "raw": 12,
-      "fast_gate": 2,
-      "size": 1,
+      "lane": "jobs_recovery_fresh_management",
+      "raw": 28,
+      "fast_gate": 4,
+      "size": 2,
       "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 0,
-      "physical_duplicates": 1,
-      "duplicate_plus_early_reject": null,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 16.6667,
-      "note": "Worker persisted 12 defensible employer-level raw. Dymov Ceramic reached pre-write PASS but final physical guard found canonical match by INN, OGRN and brand+domain, so net qualified=0. Exact duplicate+early-reject decomposition was not persisted by the worker and is not reconstructed."
-    },
-    {
-      "lane": "growth_regional_fresh_expansion",
-      "raw": 6,
-      "fast_gate": 3,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 0,
-      "duplicates": 3,
-      "early_reject": 3,
-      "duplicate_plus_early_reject": 6,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 50.0,
-      "note": "NARTIS reached pre-write PASS but final physical guard found canonical match by INN, OGRN and brand+domain. Two additional known canonical overlaps were stopped cheap; three candidates were early rejects. Net qualified=0."
+      "qualified": 1,
+      "qualified_raw_pct": 3.5714,
+      "fast_gate_raw_pct": 14.2857,
+      "note": "Fresh worker batch after RUN 523. Only 28 distinct employer-level raw were defensibly persisted; the requested 200-300 was not claimed. Final physical dedup is delegated to the canonical integration workflow."
     }
   ],
-  "hourly_efficiency": {
-    "current": {
-      "run_id": "N5K-20260830-523",
-      "raw": 18,
-      "fast_gate": 5,
-      "size": 2,
-      "signal": 2,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 18,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 27.7778
-    },
-    "last_three_completed": [
-      {
-        "run_id": "N5K-20260830-520R1",
-        "raw": null,
-        "fast_gate": null,
-        "size": 2,
-        "signal": 2,
-        "qualified": 2,
-        "duplicate_plus_early_reject": null,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null,
-        "note": "Trustworthy globally distinct employer-level raw denominator unavailable; percentages intentionally not reconstructed."
-      },
-      {
-        "run_id": "N5K-20260830-521",
-        "raw": 140,
-        "fast_gate": 9,
-        "size": 3,
-        "signal": 1,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 132,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 6.4286
-      },
-      {
-        "run_id": "N5K-20260830-522",
-        "raw": 5,
-        "fast_gate": 4,
-        "size": 3,
-        "signal": 3,
-        "qualified": 2,
-        "duplicate_plus_early_reject": 1,
-        "qualified_raw_pct": 40.0,
-        "fast_gate_raw_pct": 80.0
-      }
-    ],
-    "change_vs_previous_hour": {
-      "previous_run_id": "N5K-20260830-522",
-      "qualified_raw_delta_pp": -40.0,
-      "fast_gate_raw_delta_pp": -52.2222,
-      "absolute_qualified_change": -2
-    },
-    "interpretation": "Net efficiency fell sharply versus RUN 522. Both pre-write PASS candidates were physical canonical duplicates, so no source lane is credited with net-new qualified in RUN 523."
-  },
-  "adaptive_decision": {
-    "jobs": "KEEP_5_PROBE_ONLY. Net qualified=0 and the sole pre-write PASS was already canonical; exact duplicate+early-reject denominator is unavailable, so no unsupported rate is invented.",
-    "growth_news": "REDUCE_TO_25 from 40. Current fresh growth/regional pass produced 0 net-new after physical dedup; do not repeat the prior allocation automatically.",
-    "official_owner_ceo": "BOOST_TO_25 to increase low-overlap discovery through current official company/owner/CEO change surfaces, not merely verification.",
-    "industry_catalog": "KEEP_5_PROBE_ONLY; catalogue/exhibition presence is never SIGNAL.",
-    "regional_investment": "SET_30. Preserve a material share because this family previously produced net-new, but reduce overlap after the current zero-net pass.",
-    "partner_business_change": "BOOST_TO_10 as experimental low-overlap discovery.",
-    "next_distribution_pct": {
-      "jobs": 5,
-      "growth_news": 25,
-      "official_owner_ceo": 25,
-      "industry_catalog": 5,
-      "regional_investment": 30,
-      "partner_business_change": 10
-    }
-  },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
@@ -138,7 +47,6 @@
   "active_wip": 0,
   "physical_master_state": "543_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "543_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "qualified_staged_not_counted": 0,
   "outreach_sent": 0,
   "blocker": null
 }
