@@ -7,7 +7,7 @@
   "progress_added": 550,
   "remaining_to_total_target": 4450,
   "remaining": 4450,
-  "remaining_to_1000": 451,
+  "remaining_to_1000": 450,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,70 +17,42 @@
   "current_run_id": "N5K-20260830-531",
   "last_run_id": "N5K-20260830-531",
   "latest_completed_run": "N5K-20260830-531",
-  "canonical_integration_run_id": "N5K-20260830-530",
-  "hourly_parent_run_id": "N5K-20260830-530",
-  "hourly_baseline_count": 548,
+  "canonical_integration_run_id": "N5K-20260830-531",
+  "hourly_parent_run_id": "N5K-20260830-531",
+  "hourly_baseline_count": 549,
   "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "overall_efficiency": {
-    "qualified_raw_pct": 10.0,
-    "fast_gate_raw_pct": 20.0,
-    "delta_vs_previous_hour_qualified_raw_pp": 6.4286,
-    "delta_vs_previous_hour_fast_gate_raw_pp": 3.9286,
+    "qualified_raw_pct": 3.3333,
+    "fast_gate_raw_pct": 10.0,
+    "delta_vs_previous_hour_qualified_raw_pp": -6.6667,
+    "delta_vs_previous_hour_fast_gate_raw_pp": -10.0,
     "net_qualified_delta": 1,
-    "net_qualified_change_vs_previous_hour": -1,
-    "denominator_note": "10 auditable employer-level candidates were explicitly surfaced and reviewed in RUN 530. Raw was not inflated to the 400-800 target because the fresh low-overlap indexed surfaces used in this cycle did not yield a larger productive set."
+    "net_qualified_change_vs_previous_hour": 0,
+    "denominator_note": "30 auditable employer-level raw candidates were counted in RUN 531: 26 from fresh immutable jobs staging and 4 fresh growth/official probes. Raw was not padded to 400-800 with unproductive catalog rows."
   },
   "comparison_last_3_runs": [
-    {
-      "run_id": "N5K-20260830-527",
-      "raw": 25,
-      "fast_gate": 5,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 20.0
-    },
-    {
-      "run_id": "N5K-20260830-528",
-      "raw": 25,
-      "fast_gate": 6,
-      "qualified": 1,
-      "qualified_raw_pct": 4.0,
-      "fast_gate_raw_pct": 24.0
-    },
-    {
-      "run_id": "N5K-20260830-529R1",
-      "raw": 56,
-      "fast_gate": 9,
-      "qualified": 2,
-      "qualified_raw_pct": 3.5714,
-      "fast_gate_raw_pct": 16.0714
-    },
-    {
-      "run_id": "N5K-20260830-530",
-      "raw": 10,
-      "fast_gate": 2,
-      "qualified": 1,
-      "qualified_raw_pct": 10.0,
-      "fast_gate_raw_pct": 20.0
-    }
+    {"run_id":"N5K-20260830-528","raw":25,"fast_gate":6,"qualified":1,"qualified_raw_pct":4.0,"fast_gate_raw_pct":24.0},
+    {"run_id":"N5K-20260830-529R1","raw":56,"fast_gate":9,"qualified":2,"qualified_raw_pct":3.5714,"fast_gate_raw_pct":16.0714},
+    {"run_id":"N5K-20260830-530","raw":10,"fast_gate":2,"qualified":1,"qualified_raw_pct":10.0,"fast_gate_raw_pct":20.0},
+    {"run_id":"N5K-20260830-531","raw":30,"fast_gate":3,"qualified":1,"qualified_raw_pct":3.3333,"fast_gate_raw_pct":10.0}
   ],
   "next_distribution_pct": {
     "jobs": 5,
-    "growth_news": 25,
-    "official_owner_ceo": 30,
+    "growth_news": 20,
+    "official_owner_ceo": 35,
     "industry_catalog": 5,
     "regional_investment": 25,
     "partner_business_change": 10
   },
   "adaptive_controls": {
-    "jobs_cap_runs_remaining": 1,
+    "jobs_cap_runs_remaining": 3,
     "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
-    "jobs_trigger": "Jobs remains capped at 5%: RUN 527 and RUN 528 produced 0 net qualified in jobs, RUN 528 duplicate+early-reject was 100%, and both recovery jobs batches in RUN 529R1 still had >95% duplicate+early-reject.",
-    "current_lane_note": "RUN 530 growth_news_official_low_overlap produced 1 net qualified from 10 raw (10% qualified/raw; 20% fast_gate/raw), but duplicate+early-reject was 9/10=90%. This mixed lane is not repeated unchanged next run; growth/news and official-owner discovery are split for cleaner measurement.",
-    "decision": "Overall conversion improved versus RUN 529R1, but absolute net-new fell from 2 to 1 and remains below 5. Reduce growth-news from 35% to 25%, increase low-overlap official owner/CEO sources from 20% to 30%, keep jobs at 5% probe-only, retain regional investment 25%, industry probe 5%, and partner/business-change 10%."
+    "jobs_trigger": "RUN 531 jobs produced 1 net qualified from 26 raw, but duplicate+early-reject was 25/26=96.1538%, above the 70% cutoff. Keep jobs at maximum 5% for the next 3 RUN and use only probe batches.",
+    "current_lane_note": "Fresh growth/official probe produced 0 qualified from 4 raw with 100% duplicate+early-reject. Do not repeat the same mixed probe; separate growth-news from official owner/CEO discovery for cleaner measurement.",
+    "decision": "Overall efficiency fell versus RUN 530 and net-new remains below 5. Do not repeat the previous allocation: keep jobs at 5%, reduce generic growth-news to 20%, increase low-overlap official owner/CEO sources to 35%, retain regional investment 25%, industry probe 5%, partner/business-change 10%."
   },
-  "note": "N5K-20260830-531 completed after physical integration: +1 net new; canonical/contactable 550/550; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260830-531 completed after physical integration: +1 net new; canonical/contactable 550/550; remaining_to_1000 450; remaining_to_5000 4450; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
