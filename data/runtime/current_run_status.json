@@ -3,14 +3,15 @@
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-08-30T03:02:20+03:00",
-  "stage": "COMPLETE",
+  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
   "new_cycle": {
     "baseline_count": 529,
     "target_count": 5000,
     "current_canonical_count": 530,
     "current_contactable_count": 530,
     "progress_added": 1,
-    "remaining": 4470
+    "remaining": 4470,
+    "remaining_to_1000": 470
   },
   "funnel": {
     "discovered": 8,
@@ -24,7 +25,7 @@
     "contact_route_found": 1,
     "prewrite_qualified": 1,
     "qualified": 1,
-    "physically_integrated": 0,
+    "physically_integrated": 1,
     "duplicates": 0,
     "excluded": 7
   },
@@ -43,8 +44,7 @@
       "qualified_after_physical_dedup": 1,
       "duplicate_plus_early_reject": 7,
       "qualified_raw_pct": 12.5,
-      "fast_gate_raw_pct": 12.5,
-      "note": "Fresh low-overlap business-change discovery; official company sources used for verification, not double-counted as separate raw."
+      "fast_gate_raw_pct": 12.5
     },
     {
       "lane": "jobs",
@@ -53,7 +53,7 @@
       "size": 0,
       "signal": 0,
       "qualified_after_physical_dedup": 0,
-      "note": "Own jobs discovery kept capped under adaptive rules; no fresh unconsumed worker staging after completed 510R1 at pre-run HEAD."
+      "note": "Own jobs discovery capped; no fresh unconsumed worker staging after completed 510R1 at pre-run HEAD."
     },
     {
       "lane": "official_owner_ceo",
@@ -62,7 +62,7 @@
       "size": 0,
       "signal": 0,
       "qualified_after_physical_dedup": 0,
-      "note": "Used as verification lane for the growth/news candidate and therefore not counted again as raw."
+      "note": "Used for verification of growth/news candidate; not double-counted as raw."
     },
     {
       "lane": "industry_catalog",
@@ -71,12 +71,28 @@
       "size": 0,
       "signal": 0,
       "qualified_after_physical_dedup": 0,
-      "note": "Cooldown/probe-only lane; no deep-check allocation because prior runs repeatedly produced zero qualified / excessive early rejects."
+      "note": "Cooldown/probe-only; no deep-check allocation."
     }
   ],
-  "qualified_companies": [
-    "НПК Автоприбор Искра / AVTOPRIBOR"
+  "efficiency_history": [
+    {"run_id":"N5K-20260830-508R1","scope":"source-level jobs denominator retained by prior runtime","raw":280,"fast_gate":11,"qualified":1,"qualified_raw_pct":0.3571,"fast_gate_raw_pct":3.9286},
+    {"run_id":"N5K-20260830-509R1","scope":"measured growth/news + official/owner/CEO lanes","raw":20,"fast_gate":3,"qualified":1,"qualified_raw_pct":5.0,"fast_gate_raw_pct":15.0},
+    {"run_id":"N5K-20260830-510R1","scope":"fresh jobs worker employer-level distinct denominator","raw":38,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.6316,"fast_gate_raw_pct":13.1579},
+    {"run_id":"N5K-20260830-511R1","scope":"fresh measured growth/news own discovery","raw":8,"fast_gate":1,"qualified":1,"qualified_raw_pct":12.5,"fast_gate_raw_pct":12.5}
   ],
+  "efficiency_change_vs_previous_hour": {
+    "qualified_raw_pp": 9.8684,
+    "fast_gate_raw_pp": -0.6579,
+    "note": "Qualified/raw improved, but absolute net-new remains below 5; next allocation changed rather than repeated automatically."
+  },
+  "next_run_distribution": {
+    "jobs": 5,
+    "growth_news": 60,
+    "official_owner_ceo": 25,
+    "industry_catalog_probe_only": 5,
+    "experimental_low_overlap": 5
+  },
+  "qualified_companies": ["НПК Автоприбор Искра / AVTOPRIBOR"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -84,5 +100,6 @@
   "physical_master_state": "530_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "530_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "notes": "Physical integration confirmed. Metadata repaired so physically_integrated and remaining_to_1000 match physical canonical state."
 }
