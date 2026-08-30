@@ -26,6 +26,8 @@
     "physically_integrated": 0,
     "duplicates": 4,
     "excluded": 14,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 27.7778,
     "lane_metrics": [
       {
         "lane": "jobs_worker_fresh_management",
@@ -36,11 +38,12 @@
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "qualified": 1,
+        "qualified": 0,
+        "physical_duplicates": 1,
         "duplicate_plus_early_reject": null,
-        "qualified_raw": 0.0833333333,
-        "fast_gate_raw": 0.1666666667,
-        "note": "Worker persisted 12 defensible employer-level raw; exact duplicate+early-reject decomposition was not persisted and is not reconstructed."
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 16.6667,
+        "note": "Dymov Ceramic was pre-write PASS but final physical dedup matched INN, OGRN and brand+domain. Exact worker duplicate+early-reject decomposition was not persisted and is not reconstructed."
       },
       {
         "lane": "growth_regional_fresh_expansion",
@@ -51,14 +54,28 @@
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "qualified": 1,
-        "duplicates": 2,
+        "qualified": 0,
+        "duplicates": 3,
         "early_reject": 3,
-        "duplicate_plus_early_reject": 5,
-        "qualified_raw": 0.1666666667,
-        "fast_gate_raw": 0.5,
-        "note": "Fresh regional/growth pass: NARTIS qualified; Zavod karbidov and NMPZ failed current SIZE; NTM state-linked early reject; two known canonical overlaps stopped before deep-check."
+        "duplicate_plus_early_reject": 6,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 50.0,
+        "note": "NARTIS was pre-write PASS but final physical dedup matched INN, OGRN and brand+domain. Two other known overlaps were stopped cheap; three candidates were early rejects."
       }
-    ]
+    ],
+    "change_vs_previous_hour": {
+      "previous_run_id": "N5K-20260830-522",
+      "qualified_raw_delta_pp": -40.0,
+      "fast_gate_raw_delta_pp": -52.2222,
+      "absolute_qualified_change": -2
+    },
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 25,
+      "official_owner_ceo": 25,
+      "industry_catalog": 5,
+      "regional_investment": 30,
+      "partner_business_change": 10
+    }
   }
 }
