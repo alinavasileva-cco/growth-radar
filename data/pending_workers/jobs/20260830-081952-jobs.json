@@ -1,0 +1,196 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-30T08:19:52+03:00",
+  "baseline_head": "eb1bcda19ad5ecdb58c4b07aab56b670f15210ce",
+  "config_version": "2026-08-30T07:32:00+03:00",
+  "constraints": {
+    "criteria_changed": false,
+    "criteria_weakened": false,
+    "canonical_writer_run": false,
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "dedup_precheck": {
+    "fresh_head_read": true,
+    "current_working_config_read": true,
+    "pending_workers_manifest_read": true,
+    "all_prior_jobs_staging_manifest_read": true,
+    "canonical_keys_checked_repo_wide": true,
+    "pending_workers_checked_repo_wide_for_candidate_keys": true,
+    "keys": [
+      "lead_id",
+      "inn",
+      "ogrn_ogrnip",
+      "exact_legal_name",
+      "confirmed_brand_domain"
+    ],
+    "note": "Exact repo-wide candidate-key searches returned no matches for INN 7724483059, OGRN 1197746443322, exact legal name POLITAKS, or politaks.ru. The domain key is not asserted as confirmed because current legal ownership of the domain was not independently established in this run."
+  },
+  "discovery": {
+    "target_employer_level_raw": "140-150 if sources support verified distinct employers",
+    "target_met": false,
+    "raw_employer_level_distinct_confirmed": 15,
+    "note": "Only employer identities individually visible and distinguishable in the inspected current job-board surfaces were counted. Vacancy totals and search-result counts were not converted into employer counts. The accessible surfaces in this run did not support resolving 140-150 different employers without guessing, so no quota padding was used.",
+    "batches": [
+      {
+        "source": "Rabota.ru",
+        "region": "Moscow",
+        "query_family": "commercial director / CCO / director",
+        "raw_distinct_employers_confirmed": 6,
+        "duplicates_plus_early_rejects": 5,
+        "duplicate_plus_early_reject_rate": 0.8333,
+        "stopped_for_saturation": false,
+        "qualified": 1,
+        "source_url": "https://www.rabota.ru/vacancy/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80/155000%20%D1%80%D1%83%D0%B1/",
+        "note": "Fewer than 20 independently resolvable employers were exposed in the inspected surface, so the >70%/first-20 stop rule was not mechanically asserted."
+      },
+      {
+        "source": "Rabota.ru",
+        "region": "Saint Petersburg",
+        "query_family": "commercial director / general director",
+        "raw_distinct_employers_confirmed": 2,
+        "duplicates_plus_early_rejects": 2,
+        "duplicate_plus_early_reject_rate": 1.0,
+        "stopped_for_saturation": false,
+        "qualified": 0,
+        "source_url": "https://spb.rabota.ru/vacancy/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80/%D0%BF%D0%BE%D0%BB%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C/77000%20%D1%80%D1%83%D0%B1/",
+        "note": "Surface exposed fewer than 20 independently resolvable employers; no vacancy total was treated as employer count."
+      },
+      {
+        "source": "Habr Career",
+        "region": "Moscow / Saint Petersburg / Kazan / Yekaterinburg",
+        "query_family": "director / marketing director / IT director / account director",
+        "raw_distinct_employers_confirmed": 4,
+        "duplicates_plus_early_rejects": 4,
+        "duplicate_plus_early_reject_rate": 1.0,
+        "stopped_for_saturation": false,
+        "qualified": 0,
+        "note": "Individually visible employers were large national companies or recruitment intermediaries/outside current fit; no inferred counts were added."
+      },
+      {
+        "source": "Rabota.ru",
+        "region": "Novosibirsk",
+        "query_family": "commercial director / CCO",
+        "raw_distinct_employers_confirmed": 1,
+        "duplicates_plus_early_rejects": 1,
+        "duplicate_plus_early_reject_rate": 1.0,
+        "stopped_for_saturation": false,
+        "qualified": 0,
+        "source_url": "https://nsk.rabota.ru/vacancy/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80/%D0%BF%D1%80%D1%8F%D0%BC%D0%BE%D0%B9%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BE%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C/200000%20%D1%80%D1%83%D0%B1/",
+        "note": "The surfaced GEFEST-STROY employer could not be resolved to one unambiguous current legal entity from the available evidence, so it was rejected before qualification."
+      },
+      {
+        "source": "Rabota.ru",
+        "region": "Moscow / Moscow region",
+        "query_family": "remote director / commercial director",
+        "raw_distinct_employers_confirmed": 2,
+        "duplicates_plus_early_rejects": 2,
+        "duplicate_plus_early_reject_rate": 1.0,
+        "stopped_for_saturation": false,
+        "qualified": 0,
+        "note": "Two additional independently identifiable employers were visible; neither advanced to deep qualification."
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw_employer_level_distinct_confirmed": 15,
+    "fast_gate": 2,
+    "deep_check": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "ПОЛИТАКС",
+      "legal_name": "ООО \"ПОЛИТАКС\"",
+      "city": "Москва",
+      "region": "Москва",
+      "inn": "7724483059",
+      "ogrn": "1197746443322",
+      "lead_id": null,
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 230000000,
+        "employees_2025": 6,
+        "evidence_urls": [
+          "https://firmoteka.ru/7724483059"
+        ]
+      },
+      "legal": {
+        "active": true,
+        "director": "Винник Родион Владимирович",
+        "owner": "Винник Родион Владимирович",
+        "owner_share": "100%",
+        "registered_address": "115404, г. Москва, ул. 6-я Радиальная, д. 15, стр. 6, помещ. 14",
+        "evidence_urls": [
+          "https://firmoteka.ru/7724483059",
+          "https://companies.rbc.ru/id/1197746443322-obschestvo-s-ogranichennoj-otvetstvennostyu-politaks/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring",
+        "title": "Коммерческий директор / CCO",
+        "date": "2026-08-27",
+        "facts": [
+          "компания переходит к системному управлению продажами на основе данных, расширяет присутствие на рынке и усиливает бренд",
+          "новый CCO должен отвечать за рост выручки и валовой прибыли, коммерческий план по продуктам, клиентам, каналам и регионам",
+          "в задачи входят CRM, коммерческая аналитика, ценообразование, развитие B2B/дилерских/партнерских/цифровых продаж и управление продажами и маркетингом"
+        ],
+        "evidence_urls": [
+          "https://gderabota.ru/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco/210983",
+          "https://www.rabota.ru/vacancy/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B8%D0%B9%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80/155000%20%D1%80%D1%83%D0%B1/"
+        ]
+      },
+      "lpr": {
+        "owner": "Винник Родион Владимирович",
+        "director": "Винник Родион Владимирович",
+        "evidence_urls": [
+          "https://firmoteka.ru/7724483059",
+          "https://companies.rbc.ru/id/1197746443322-obschestvo-s-ogranichennoj-otvetstvennostyu-politaks/"
+        ]
+      },
+      "contact": {
+        "type": "published_current_vacancy_apply_route",
+        "url": "https://gderabota.ru/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco/210983",
+        "note": "The current vacancy published 2026-08-27 exposes an active 'Откликнуться' route. No phone/email was inferred. The politaks.ru domain was not used as a confirmed legal-domain key because current domain-to-legal ownership was not independently established in this run."
+      },
+      "dedup_keys": {
+        "inn": "7724483059",
+        "ogrn": "1197746443322",
+        "exact_legal_name": "ООО \"ПОЛИТАКС\"",
+        "confirmed_brand_domain": null
+      },
+      "brand_domain_link": {
+        "confirmed": false,
+        "domain": "politaks.ru",
+        "note": "Brand/domain association is visible publicly, but this worker does not assert current legal ownership without independent legal-domain evidence; therefore it is not used as a dedup key."
+      },
+      "dedup_checks": {
+        "pre_deep_check": {
+          "inn_7724483059": "no repo match",
+          "ogrn_1197746443322": "no repo match",
+          "exact_legal_name": "no repo match",
+          "domain_politaks_ru": "no repo match"
+        },
+        "pre_staging": {
+          "head": "eb1bcda19ad5ecdb58c4b07aab56b670f15210ce",
+          "inn_7724483059": "no repo match",
+          "ogrn_1197746443322": "no repo match",
+          "exact_legal_name": "no repo match",
+          "domain_politaks_ru": "no repo match"
+        }
+      },
+      "evidence_urls": [
+        "https://firmoteka.ru/7724483059",
+        "https://companies.rbc.ru/id/1197746443322-obschestvo-s-ogranichennoj-otvetstvennostyu-politaks/",
+        "https://gderabota.ru/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D0%B0%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-cco/210983"
+      ]
+    }
+  ]
+}
