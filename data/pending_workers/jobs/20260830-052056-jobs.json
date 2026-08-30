@@ -1,0 +1,129 @@
+{
+  "worker": "jobs",
+  "created_at": "2026-08-30T05:20:56+03:00",
+  "baseline_head": "ccb1265434d7101b221b9180fdd2ced2a853ce05",
+  "criteria_source": "CURRENT_WORKING_CONFIG.md",
+  "criteria_changed": false,
+  "canonical_write": false,
+  "canonical_writer_started": false,
+  "outreach": false,
+  "canonical_baseline": {
+    "canonical": 532,
+    "contactable": 532,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0
+  },
+  "discovery_metrics": {
+    "target_employer_level_raw": "140-150 if verifiably available",
+    "target_met": false,
+    "source_level_observations_reviewed": 45,
+    "employer_level_legal_resolved_for_deep_check": 4,
+    "note": "Eleven regional/source queries were rotated across Yekaterinburg, Samara, Kazan, Novosibirsk, Krasnodar, Perm, Chelyabinsk, Omsk, Tyumen, Voronezh and Rostov-on-Don. Search surfaces exposed many more vacancy rows, but only observations actually reviewed and employers reliably resolved to legal identities were counted. No raw quota was fabricated.",
+    "source_batches": [
+      {"lane":"regional_jobs","region":"Yekaterinburg","query":"operations director August 2026"},
+      {"lane":"regional_jobs","region":"Samara","query":"commercial director August 2026"},
+      {"lane":"regional_jobs","region":"Kazan","query":"business development director August 2026"},
+      {"lane":"regional_jobs","region":"Novosibirsk","query":"operations director August 2026"},
+      {"lane":"regional_jobs","region":"Krasnodar","query":"commercial director August 2026"},
+      {"lane":"regional_jobs","region":"Perm","query":"operations director August 2026"},
+      {"lane":"regional_jobs","region":"Chelyabinsk","query":"commercial director August 2026"},
+      {"lane":"regional_jobs","region":"Omsk","query":"business development director August 2026"},
+      {"lane":"regional_jobs","region":"Tyumen","query":"operations/commercial director August 2026"},
+      {"lane":"regional_jobs","region":"Voronezh","query":"commercial director August 2026"},
+      {"lane":"regional_jobs","region":"Rostov-on-Don","query":"operations director August 2026"}
+    ]
+  },
+  "worker_funnel": {
+    "source_level_observations": 45,
+    "employer_level_legal_resolved": 4,
+    "fast_gate": 4,
+    "deep_check": 4,
+    "size": 3,
+    "legal": 2,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "deep_check_rejects": [
+    {
+      "brand": "ДиаМарка",
+      "legal_name": "ООО «ДИАМАРКА»",
+      "inn": "7203346783",
+      "ogrn": "1157232022090",
+      "reason": "SIZE_REJECT",
+      "evidence": "2025 revenue 531624000 RUB, above the current <=500m RUB upper allowance.",
+      "source_url": "https://companies.rbc.ru/id/1157232022090-ooo-diamarka/"
+    },
+    {
+      "brand": "Медремкомплект",
+      "legal_name": "ООО «МЕДРЕМКОМПЛЕКТ»",
+      "inn": "3662178270",
+      "ogrn": "1123668037536",
+      "reason": "SIGNAL_DATE_NOT_EXPLICIT",
+      "evidence": "Current job-board page shows a commercial director B2B/B2G role and says it was found five days ago, but no explicit absolute publication date is exposed. Candidate was not promoted to SIGNAL because the current configuration requires a confirmed source/date and relative-date conversion was not treated as sufficient proof.",
+      "source_url": "https://notexistsforum.jobvk.com/voronegh/medremkomplekt"
+    },
+    {
+      "brand": "NOVOBORT",
+      "legal_name": null,
+      "inn": null,
+      "ogrn": null,
+      "reason": "LEGAL_MAPPING_UNCERTAIN",
+      "evidence": "Fresh COO vacancy exists, but available public results did not establish a sufficiently reliable one-to-one employer-to-current-legal-entity mapping for staging without inference.",
+      "source_url": "https://dreamjob.ru/employers/334008/vakansii/136488843"
+    }
+  ],
+  "qualified": [
+    {
+      "brand": "УрПАСЭ",
+      "legal_name": "ООО «УРАЛЬСКАЯ ПАЛАТА СУДЕБНОЙ ЭКСПЕРТИЗЫ»",
+      "short_legal_name": "ООО «УРПАСЭ»",
+      "inn": "6671469916",
+      "ogrn": "1146671030021",
+      "region": "Свердловская область, Екатеринбург",
+      "company_status": "Действующая",
+      "revenue_2025_rub": 47374000,
+      "employee_count_latest_available": 11,
+      "owner": "Галимзянов Фанис Рафисович",
+      "lpr": "Матасова Анастасия Викторовна",
+      "lpr_role": "директор",
+      "signal_level": "S1",
+      "signal_date": "2026-08-05",
+      "signal": "Открыта позиция операционного директора (COO). В обязанности прямо входят совместная с учредителями разработка стратегии, оптимизация KPI и бюджета, управление P&L, оптимизация всех бизнес-процессов, развитие CRM/дашбордов, контроль воронки продаж и руководство продажами, маркетингом, HR и бухгалтерией. Это прямой запрос на систематизацию и масштабирование управления.",
+      "signal_source_url": "https://ekaterinburg.cataloxy.ru/rabota/vacancy1126830883_operatsionnyy-direktor-coo.htm",
+      "legal_size_source_url": "https://zachestnyibiznes.ru/company/ul/1146671030021_6671469916_OOO-URPASE",
+      "employee_source_url": "https://companies.rbc.ru/amp/ogrn/1146671030021/",
+      "owner_source_url": "https://reputation.ru/ogrn/1146671030021",
+      "official_site_url": "https://urpase.ru/",
+      "contact_routes": [
+        {
+          "type": "corporate_phone",
+          "value": "+7 343 317-95-01",
+          "source_url": "https://urpase.ru/otsenka/kadastrovaya-otsenka"
+        },
+        {
+          "type": "published_email",
+          "value": "info@urpase.ru",
+          "source_url": "https://urpase.ru/otsenka/kadastrovaya-otsenka"
+        }
+      ],
+      "domain": "urpase.ru",
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6671469916",
+        "ogrn": "1146671030021",
+        "exact_legal_name": "ООО «УРАЛЬСКАЯ ПАЛАТА СУДЕБНОЙ ЭКСПЕРТИЗЫ»",
+        "brand_domain": "УрПАСЭ|urpase.ru"
+      },
+      "repo_wide_dedup_before_staging": {
+        "inn_matches": 0,
+        "ogrn_matches": 0,
+        "exact_name_matches": 0,
+        "brand_matches": 0,
+        "domain_matches": 0,
+        "result": "UNIQUE_AT_STAGING_TIME"
+      }
+    }
+  ]
+}
