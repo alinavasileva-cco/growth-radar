@@ -38,7 +38,7 @@
       "duplicate_plus_early_reject": 15,
       "qualified_raw_pct": 6.25,
       "fast_gate_raw_pct": 37.5,
-      "note": "Immutable worker employer-level denominator preserved. Jobs remains capped because duplicate+early-reject is 93.75%; no ordinary jobs deep-check beyond the probe."
+      "note": "Post-dedup: FARFOR is the one net-new qualified from the jobs probe. Duplicate+early-reject=15/16=93.75%, so jobs remains capped at 5% probe-only for the next RUN."
     },
     {
       "lane": "regional_investment_low_overlap",
@@ -49,11 +49,11 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": 100.0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 1,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 100.0,
-      "note": "One employer-level candidate was counted only after exact legal entity, current 2025 size, fresh 2026 investment signal, LPR and corporate contact were resolved. Search-result rows were not counted as raw employers. Small n=1 denominator is not treated as a stable conversion rate."
+      "note": "Post-dedup: Eltex passed the semantic/full funnel but final canonical guard found an existing match by INN, OGRN and brand+domain; therefore net qualified=0 and duplicate+early-reject=1/1."
     },
     {
       "lane": "growth_news",
@@ -68,7 +68,7 @@
       "duplicate_plus_early_reject": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "note": "Fresh source surfaces were reviewed, but no additional employer was counted without a complete distinct employer-level denominator and full funnel resolution."
+      "note": "Fresh source surfaces were reviewed, but no additional company was counted without a complete distinct employer-level denominator and full funnel resolution."
     },
     {
       "lane": "official_owner_ceo",
@@ -114,9 +114,33 @@
       "fast_gate_raw_pct": null
     }
   ],
-  "qualified_companies": [
-    "FARFOR / Фарфор"
+  "overall_efficiency": {
+    "qualified_raw_pct": 5.8824,
+    "fast_gate_raw_pct": 41.1765,
+    "delta_vs_previous_hour_qualified_raw_pp": 1.1205,
+    "delta_vs_previous_hour_fast_gate_raw_pp": 12.6051,
+    "net_qualified_delta": 0
+  },
+  "last_four_run_efficiency": [
+    {"run_id": "N5K-20260830-523", "raw": 18, "fast_gate": 5, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 27.7778},
+    {"run_id": "N5K-20260830-524R1", "raw": 28, "fast_gate": 4, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 14.2857},
+    {"run_id": "N5K-20260830-525", "raw": 21, "fast_gate": 6, "qualified": 1, "qualified_raw_pct": 4.7619, "fast_gate_raw_pct": 28.5714},
+    {"run_id": "N5K-20260830-526", "raw": 17, "fast_gate": 7, "qualified": 1, "qualified_raw_pct": 5.8824, "fast_gate_raw_pct": 41.1765}
   ],
+  "adaptive_decision": {
+    "reason": "Overall conversion improved but net-new qualified remains 1 (<5). Jobs still has 93.75% duplicate+early-reject and therefore remains capped. The regional candidate was a physical duplicate, so that n=1 lane is not boosted. Shift discovery toward lower-overlap official company/owner/CEO sources while retaining fresh growth/news and regional investment coverage.",
+    "lanes_cut_or_capped": ["jobs_probe_fresh_management"],
+    "lanes_boosted": ["official_owner_ceo"],
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 20,
+      "official_owner_ceo": 40,
+      "industry_catalog": 5,
+      "regional_investment": 20,
+      "partner_business_change": 10
+    }
+  },
+  "qualified_companies": ["FARFOR / Фарфор"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
