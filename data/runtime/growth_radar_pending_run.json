@@ -1,8 +1,152 @@
 {
-  "run_id": "N5K-20260830-520R1",
-  "updated_at": "2026-08-30T12:47:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-520R1 integrated physically; canonical/contactable 541/541; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-521",
+  "updated_at": "2026-08-30T14:01:51+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0702",
+      "Brand": "ПОЛИТАКС",
+      "Legal Name": "ООО \"ПОЛИТАКС\"",
+      "INN": "7724483059",
+      "OGRN/OGRNIP": "1197746443322",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Производство лакокрасочных материалов",
+      "Website": "https://politaks.ru/",
+      "Revenue/Scale": "Выручка около 229–230 млн ₽; 6 сотрудников; актуальные данные 2025/2026",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежий найм коммерческого директора / CCO: переход к системному управлению продажами на основе данных, расширение присутствия на рынке и усиление бренда.",
+      "Signal Date": "2026-08-29",
+      "Signal Source": "https://moscow.cataloxy.ru/rabota/vacancy1128224202_kommercheskiy-direktor-cco.htm",
+      "Owner": "Винник Родион Владимирович",
+      "CEO": "Винник Родион Владимирович",
+      "LPR": "Винник Родион Владимирович",
+      "LPR Role": "Генеральный директор; учредитель 100%",
+      "Primary Phone": "+7 (499) 517-91-72",
+      "Primary Email": "zakaz@politaks.ru",
+      "HH Contact": "",
+      "Contact Form": "https://politaks.ru/",
+      "Contact Type": "Корпоративный маршрут; опубликованный маршрут вакансии не утверждается как персональный номер ЛПР",
+      "Contact Source": "https://politaks.ru/; https://moscow.cataloxy.ru/rabota/vacancy1128224202_kommercheskiy-direktor-cco.htm",
+      "Consulting Hypothesis": "Диагностика коммерческой системы и масштабирования: data-driven продажи, воронка, каналы присутствия и управление ростом.",
+      "contacts": [
+        {
+          "value": "+7 (499) 517-91-72",
+          "channel": "phone",
+          "type": "official_corporate",
+          "source": "Официальный сайт ПОЛИТАКС",
+          "url": "https://politaks.ru/gost/emal-xs-710/",
+          "is_lpr": false,
+          "notes": "Корпоративный телефон Москвы; не персональный контакт ЛПР."
+        },
+        {
+          "value": "8 800 505-69-03",
+          "channel": "phone",
+          "type": "official_corporate",
+          "source": "Официальный сайт ПОЛИТАКС",
+          "url": "https://politaks.ru/gost/emal-xs-710/",
+          "is_lpr": false,
+          "notes": "Общий корпоративный телефон по России."
+        },
+        {
+          "value": "zakaz@politaks.ru",
+          "channel": "email",
+          "type": "official_corporate",
+          "source": "Официальный сайт ПОЛИТАКС",
+          "url": "https://politaks.ru/gost/emal-xs-710/",
+          "is_lpr": false,
+          "notes": "Корпоративная почта заказов; маршрут с просьбой передать ЛПР."
+        },
+        {
+          "value": "+7 968 302-67-99",
+          "channel": "phone",
+          "type": "published_vacancy_route",
+          "source": "Публичная вакансия ПОЛИТАКС",
+          "url": "https://msk.terdo.ru/item/6574957/",
+          "is_lpr": false,
+          "notes": "Опубликованный компанией маршрут вакансии; не утверждается как персональный номер владельца без подтверждения фамилии."
+        },
+        {
+          "value": "+7 930 065-32-17",
+          "channel": "phone",
+          "type": "published_vacancy_route",
+          "source": "Публичная вакансия ПОЛИТАКС",
+          "url": "https://msk.terdo.ru/item/6574957/",
+          "is_lpr": false,
+          "notes": "Опубликованный компанией маршрут вакансии; не утверждается как персональный номер владельца без подтверждения фамилии."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "SIZE",
+          "claim": "Компания проходит SIZE: актуально около 229–230 млн ₽ выручки и 6 сотрудников.",
+          "url": "https://saby.ru/profile/7724483059-772401001",
+          "source": "Saby Profile"
+        },
+        {
+          "type": "LEGAL_LPR",
+          "claim": "ООО ПОЛИТАКС действует; ИНН 7724483059, ОГРН 1197746443322; генеральный директор и владелец — Винник Родион Владимирович.",
+          "url": "https://saby.ru/profile/7724483059-772401001",
+          "source": "Saby Profile"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "29.08.2026 опубликована вакансия Коммерческий директор / CCO; сигнал связан с системным управлением продажами, расширением рынка и усилением бренда.",
+          "url": "https://moscow.cataloxy.ru/rabota/vacancy1128224202_kommercheskiy-direktor-cco.htm",
+          "source": "Cataloxy / вакансия ПОЛИТАКС"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует корпоративные телефоны и email zakaz@politaks.ru.",
+          "url": "https://politaks.ru/gost/emal-xs-710/",
+          "source": "Официальный сайт ПОЛИТАКС"
+        }
+      ]
+    }
+  ],
+  "funnel": {
+    "discovered": 140,
+    "fast_gate_passed": 9,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 139
+  },
+  "lane_metrics": {
+    "jobs": {
+      "raw": 140,
+      "fast_gate": 9,
+      "size": 3,
+      "legal": 2,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 131,
+      "qualified_raw_pct": 0.7143,
+      "fast_gate_raw_pct": 6.4286,
+      "note": "Seven 20-employer low-overlap job-board/region batches; employer de-overlap was performed by worker. Batch-level exact canonical duplicate shares were not reconstructed, so duplicate_plus_early_reject is raw minus fast_gate, not a claimed physical-duplicate count."
+    },
+    "regional_investment_projects": {
+      "raw": null,
+      "source_level_distinct_names_reviewed": 15,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": null,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "note": "Post-worker adaptive discovery reviewed fresh regional investment signals. The strongest new candidate, Элтекс, was stopped at LEGAL because current sources map the brand/news to conflicting legal entities; unresolved names are not promoted into canonical raw denominators."
+    },
+    "growth_news": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+    "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+    "industry_probe_only": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+    "partner_business_change": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+  },
+  "notes": "Fresh worker staging 20260830-133205-jobs.json ingested first. Worker baseline 541/541 PASS and its baseline HEAD is the direct parent of the current staging-only HEAD, so no intervening canonical write occurred before recheck. Strict SIZE->LEGAL->SIGNAL->LPR->CONTACT->QUALIFIED retained. Post-worker discovery rotated to fresh regional-investment sources because net-new remained below 5; unresolved candidates were not forced through LEGAL. No outreach."
 }
