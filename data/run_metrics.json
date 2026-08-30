@@ -26,55 +26,24 @@
     "physically_integrated": 0,
     "duplicates": 3,
     "excluded": 73,
+    "overall_efficiency": {
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 7.8947,
+      "delta_vs_previous_hour_qualified_raw_pp": -3.3333,
+      "delta_vs_previous_hour_fast_gate_raw_pp": -2.1053,
+      "net_qualified_change_vs_previous_hour": -1
+    },
     "lane_metrics": [
-      {
-        "lane": "jobs",
-        "raw": 70,
-        "fast_gate": 5,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 70,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 7.1429,
-        "duplicate_plus_early_reject_pct": 100.0,
-        "note": "Fresh immutable jobs staging reports worker_funnel raw_employer_level=70 and fast_gate_pass=6, but the sole pre-write QUALIFIED КраснодарЭлектро is already canonical as N5K-0513 by INN 2311160949 and OGRN 1132311009357, so canonical cheap-dedup-adjusted fast gate is 5 and net qualified is 0. source_batch_metrics raw values sum to 74, conflicting with the explicit worker_funnel denominator 70; 70 is retained as the declared employer-level denominator and the batch-sum conflict is not reconstructed."
-      },
-      {
-        "lane": "regional_investment",
-        "raw": 5,
-        "fast_gate": 1,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 5,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 20.0,
-        "duplicate_plus_early_reject_pct": 100.0,
-        "note": "Fresh expansion probes: МолоПак and Нью Лайн Инжиниринг were blocked by physical canonical dedup; Турбокомплект lacked sufficiently fresh current SIZE evidence; Bitrobotics and Valdai Robots failed current SIZE."
-      },
-      {
-        "lane": "growth_news",
-        "raw": 1,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 1,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 0.0,
-        "duplicate_plus_early_reject_pct": 100.0,
-        "note": "Fresh antibiotic-production news candidate Восток was rejected because the operating legal entity could not be resolved safely enough for the strict funnel."
-      }
-    ]
+      {"lane":"jobs","raw":70,"fast_gate":5,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":70,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.1429,"duplicate_plus_early_reject_pct":100.0,"note":"worker_funnel raw=70; source-batch raw sum=74 conflict not reconstructed. КраснодарЭлектро is canonical N5K-0513, so worker pre-write PASS becomes net 0."},
+      {"lane":"regional_investment","raw":5,"fast_gate":1,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":5,"qualified_raw_pct":0.0,"fast_gate_raw_pct":20.0,"duplicate_plus_early_reject_pct":100.0},
+      {"lane":"growth_news","raw":1,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":1,"qualified_raw_pct":0.0,"fast_gate_raw_pct":0.0,"duplicate_plus_early_reject_pct":100.0}
+    ],
+    "comparison_last_3_runs": [
+      {"run_id":"N5K-20260830-529R1","raw":56,"fast_gate":9,"qualified":2,"qualified_raw_pct":3.5714,"fast_gate_raw_pct":16.0714},
+      {"run_id":"N5K-20260830-530","raw":10,"fast_gate":2,"qualified":1,"qualified_raw_pct":10.0,"fast_gate_raw_pct":20.0},
+      {"run_id":"N5K-20260830-531","raw":30,"fast_gate":3,"qualified":1,"qualified_raw_pct":3.3333,"fast_gate_raw_pct":10.0},
+      {"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947}
+    ],
+    "next_distribution_pct": {"jobs":5,"growth_news":30,"official_owner_ceo":25,"industry_catalog":5,"regional_investment":20,"partner_business_change":15}
   }
 }
