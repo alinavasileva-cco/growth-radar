@@ -1,8 +1,223 @@
 {
-  "run_id": "N5K-20260830-510R1",
-  "updated_at": "2026-08-30T02:35:07+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-510R1 integrated physically; canonical/contactable 529/529; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-511R1",
+  "updated_at": "2026-08-30T03:02:20+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 8,
+    "raw_denominator_complete": true,
+    "raw_denominator_note": "Eight distinct named-company candidates were inspected in fresh growth/news discovery. No catalog padding and no unresolved search-result rows were counted as raw.",
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "prewrite_qualified": 1,
+    "qualified": 1,
+    "physically_integrated": 0,
+    "duplicates": 0,
+    "excluded": 7
+  },
+  "lane_metrics": [
+    {
+      "lane": "growth_news",
+      "raw": 8,
+      "fast_gate": 1,
+      "deep_check": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified_before_physical_dedup": 1,
+      "qualified_after_physical_dedup": 1,
+      "duplicate_plus_early_reject": 7,
+      "qualified_raw_pct": 12.5,
+      "fast_gate_raw_pct": 12.5,
+      "note": "Fresh low-overlap business-change discovery; official company sources used for verification, not double-counted as separate raw."
+    },
+    {
+      "lane": "jobs",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified_after_physical_dedup": 0,
+      "note": "Own jobs discovery kept capped under adaptive rules; no fresh unconsumed worker staging after completed 510R1 at pre-run HEAD."
+    },
+    {
+      "lane": "official_owner_ceo",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified_after_physical_dedup": 0,
+      "note": "Used as verification lane for the growth/news candidate and therefore not counted again as raw."
+    },
+    {
+      "lane": "industry_catalog",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified_after_physical_dedup": 0,
+      "note": "Cooldown/probe-only lane; no deep-check allocation because prior runs repeatedly produced zero qualified / excessive early rejects."
+    }
+  ],
+  "efficiency_history": [
+    {
+      "run_id": "N5K-20260830-508R1",
+      "scope": "source-level jobs denominator retained by prior runtime",
+      "raw": 280,
+      "fast_gate": 11,
+      "qualified": 1,
+      "qualified_raw_pct": 0.3571,
+      "fast_gate_raw_pct": 3.9286
+    },
+    {
+      "run_id": "N5K-20260830-509R1",
+      "scope": "measured growth/news + official/owner/CEO lanes",
+      "raw": 20,
+      "fast_gate": 3,
+      "qualified": 1,
+      "qualified_raw_pct": 5.0,
+      "fast_gate_raw_pct": 15.0
+    },
+    {
+      "run_id": "N5K-20260830-510R1",
+      "scope": "fresh jobs worker employer-level distinct denominator",
+      "raw": 38,
+      "fast_gate": 5,
+      "qualified": 1,
+      "qualified_raw_pct": 2.6316,
+      "fast_gate_raw_pct": 13.1579
+    },
+    {
+      "run_id": "N5K-20260830-511R1",
+      "scope": "fresh measured growth/news own discovery",
+      "raw": 8,
+      "fast_gate": 1,
+      "qualified": 1,
+      "qualified_raw_pct": 12.5,
+      "fast_gate_raw_pct": 12.5
+    }
+  ],
+  "efficiency_change_vs_previous_hour": {
+    "qualified_raw_pp": 9.8684,
+    "fast_gate_raw_pp": -0.6579,
+    "note": "Qualified/raw improved materially versus 510R1, but absolute net-new is still below 5, so the next-run allocation is changed rather than repeated automatically."
+  },
+  "next_run_distribution": {
+    "jobs": 5,
+    "growth_news": 60,
+    "official_owner_ceo": 25,
+    "industry_catalog_probe_only": 5,
+    "experimental_low_overlap": 5,
+    "reason": "Growth/news produced the only current net-new and is increased to the 60% cap; jobs remains capped; industry remains probe-only; official sources retain verification/discovery capacity without double-counting."
+  },
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0690",
+      "Brand": "НПК Автоприбор Искра / AVTOPRIBOR",
+      "Legal Name": "ООО «НАУЧНО-ПРОИЗВОДСТВЕННЫЙ КОМПЛЕКС АВТОПРИБОР ИСКРА»",
+      "INN": "6382101425",
+      "OGRN/OGRNIP": "1246300012485",
+      "Region": "Самарская область",
+      "City": "Тольятти",
+      "Segment": "B2B производство / автокомпоненты",
+      "Website": "https://avtopribor.ru/",
+      "Revenue/Scale": "Выручка 666,64 млн ₽ за 2025 год; действующее частное ООО (ОКФС 16). Группа НПК Автоприбор объединяет 8 производственных площадок и более 2,5 тыс. сотрудников.",
+      "Signal Level": "S2",
+      "Signal Summary": "20.08.2026 официальный сайт группы сообщил об инвестиции ФТИ в головную компанию ГК НПК «Автоприбор»: планируется масштабирование производственной платформы, шесть новых направлений за пять лет, расширение автомобильной электроники и других локализованных компонентов. Завод «Автоприбор Искра» является действующей производственной площадкой группы; 21.05.2026 на нем запущено серийное производство генераторов с инвестициями 763 млн ₽.",
+      "Signal Date": "2026-08-20",
+      "Signal Source": "https://avtopribor.ru/media/fti-investiroval-v-gk-npk-avtopribor-dlya-razvitiya-proizvodstva-avtokomponentov/",
+      "Owner": "ООО «РАВИВ ГРУП РУС» — 99%; Аведян Елена Владимировна — 1% (по данным ЕГРЮЛ-агрегатора, актуализированным в 2026)",
+      "CEO": "Тынчерова Елена Эдуардовна",
+      "LPR": "Тынчерова Елена Эдуардовна",
+      "LPR Role": "Генеральный директор ООО «НПК Автоприбор Искра» / практический ЛПР операционной площадки",
+      "Primary Phone": "+7 (4922) 40-48-88",
+      "Primary Email": "tlt@avtopribor.ru",
+      "HH Contact": "",
+      "Contact Form": "https://avtopribor.ru/contacts/",
+      "Contact Type": "официальные корпоративные маршруты группы / площадки Тольятти",
+      "Contact Source": "официальный сайт НПК Автоприбор",
+      "Consulting Hypothesis": "Систематизация коммерческого контура масштабирования новых продуктовых направлений: portfolio/GTM, приоритизация рынков и клиентов, sales-marketing alignment, KPI и управляемая воронка B2B-продаж.",
+      "contacts": [
+        {
+          "value": "+7 (4922) 40-48-88",
+          "channel": "phone",
+          "type": "corporate",
+          "source": "НПК Автоприбор",
+          "url": "https://avtopribor.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный телефон; не персональный номер ЛПР."
+        },
+        {
+          "value": "tlt@avtopribor.ru",
+          "channel": "email",
+          "type": "corporate",
+          "source": "НПК Автоприбор",
+          "url": "https://avtopribor.ru/",
+          "is_lpr": false,
+          "notes": "Официальный e-mail площадок Тольятти; не персональный адрес ЛПР."
+        },
+        {
+          "value": "https://avtopribor.ru/contacts/",
+          "channel": "web_form",
+          "type": "corporate",
+          "source": "НПК Автоприбор",
+          "url": "https://avtopribor.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный маршрут обратной связи."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО «НПК Автоприбор Искра», ИНН 6382101425, ОГРН 1246300012485, действует; выручка 666,64 млн ₽ за 2025 год; генеральный директор Тынчерова Елена Эдуардовна.",
+          "url": "https://xfirm.ru/company/6382101425",
+          "source": "Xfirm / данные ФНС и бухгалтерской отчетности"
+        },
+        {
+          "type": "LEGAL_PRIVATE",
+          "claim": "Для ООО «НПК Автоприбор Искра» указан ОКФС 16 (частная собственность), ИНН 6382101425 и ОГРН 1246300012485.",
+          "url": "https://companies.rbc.ru/amp/ogrn/1246300012485/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "LPR_OWNER",
+          "claim": "Генеральный директор с 26.04.2024 — Тынчерова Елена Эдуардовна; структура владения включает ООО «РАВИВ ГРУП РУС» 99% и Аведян Елену Владимировну 1%.",
+          "url": "https://www.opensanctions.org/entities/ru-inn-6382101425/",
+          "source": "OpenSanctions, источник данных — ЕГРЮЛ ФНС РФ; запись обработана в июне 2026"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "20.08.2026 ФТИ инвестировал в головную компанию ГК НПК «Автоприбор»; группа планирует масштабировать производственную платформу, открыть шесть новых направлений за пять лет и расширять локализацию автокомпонентов.",
+          "url": "https://avtopribor.ru/media/fti-investiroval-v-gk-npk-avtopribor-dlya-razvitiya-proizvodstva-avtokomponentov/",
+          "source": "официальный сайт НПК Автоприбор"
+        },
+        {
+          "type": "SIGNAL_SITE_MATCH",
+          "claim": "Официальный сайт группы прямо указывает завод «Искра» в Тольятти как производственную площадку НПК Автоприбор; площадка выпускает генераторы, статоры и роторы.",
+          "url": "https://avtopribor.ru/",
+          "source": "официальный сайт НПК Автоприбор"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует корпоративный телефон, tlt@avtopribor.ru и форму контактов для площадок Тольятти.",
+          "url": "https://avtopribor.ru/contacts/",
+          "source": "официальный сайт НПК Автоприбор"
+        }
+      ]
+    }
+  ],
+  "prewrite_physical_dedup": {
+    "checked_against": "data/leads_master.csv at pre-run main HEAD a48768b0c5d5831a2e25f3a46c7a7fcf01430a56",
+    "keys": ["Lead ID", "INN", "OGRN/OGRNIP", "Legal Name", "Brand+Domain"],
+    "result": "PASS",
+    "note": "Physical master resource search found no INN 6382101425 and no OGRN 1246300012485 before staging. Final integration guard must repeat dedup."
+  },
+  "outreach_sent": 0,
+  "note": "Strict qualification unchanged. No exhibition/catalog presence used as signal. No guessed personal contacts. Raw was not padded to target."
 }
