@@ -2,7 +2,7 @@
   "run_id": "N5K-20260830-520R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T12:47:00+03:00",
+  "updated_at": "2026-08-30T12:59:09+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 539,
@@ -33,7 +33,11 @@
       "legal": 1,
       "signal": 1,
       "qualified_after_canonical_recheck": 0,
-      "note": "Fresh jobs worker did not preserve a trustworthy distinct-employer raw denominator. Its only worker-qualified candidate, ТАНДАЛ / ООО \"ТАНДАЛ\" (ИНН 6670248456), is already present in the physical canonical base from an earlier completed recovery and is therefore excluded as a duplicate. Current worker legal fields also supersede older contradictory Tandal details; no stale record is used for a new decision."
+      "duplicate_physical": 1,
+      "qualified_raw_ratio": null,
+      "fast_gate_raw_ratio": null,
+      "duplicate_early_reject_ratio": null,
+      "note": "Fresh jobs worker did not preserve a trustworthy distinct-employer raw denominator. Its only worker-qualified candidate, ТАНДАЛ / ООО \"ТАНДАЛ\" (ИНН 6670248456), is already present in the physical canonical base and is excluded as a duplicate. No stale contradictory Tandal details are used for a new decision."
     },
     "growth_news": {
       "source_batches_attempted": 5,
@@ -45,7 +49,83 @@
       "lpr": 3,
       "contact": 2,
       "qualified": 2,
-      "note": "Worker did not prove a globally deduplicated distinct-company raw denominator; search-result rows are not relabeled as companies. Only the two fully resolved qualified companies are staged."
+      "qualified_raw_ratio": null,
+      "fast_gate_raw_ratio": null,
+      "duplicate_early_reject_ratio": null,
+      "note": "Worker did not prove a globally deduplicated distinct-company raw denominator; search-result rows are not relabeled as companies. Only the two fully resolved qualified companies are integrated."
+    },
+    "official_owner_ceo": {
+      "raw_distinct_proven": null,
+      "qualified": 0,
+      "note": "Verification was used without double-counting it as discovery raw."
+    },
+    "industry": {
+      "raw_distinct_proven": null,
+      "qualified": 0,
+      "note": "No qualifying discovery batch counted; catalogue/exhibition presence alone is never SIGNAL."
+    },
+    "regional_investment": {
+      "raw_distinct_proven": null,
+      "qualified": 0,
+      "note": "No separately preserved employer-level denominator in this RUN."
+    },
+    "partner_business_change": {
+      "raw_distinct_proven": null,
+      "qualified": 0,
+      "note": "No separately preserved employer-level denominator in this RUN."
+    }
+  },
+  "hourly_efficiency": {
+    "run_517R1": {
+      "raw": 18,
+      "fast_gate": 5,
+      "size": 3,
+      "signal": 2,
+      "qualified": 2,
+      "duplicate_plus_early_reject": 16,
+      "qualified_raw_pct": 11.1111,
+      "fast_gate_raw_pct": 27.7778,
+      "note": "Regional-investment lane: 10 raw / 4 fast / 3 size / 2 signal / 2 qualified; q/raw 20%; fast/raw 40%."
+    },
+    "run_518": {
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 100.0,
+      "fast_gate_raw_pct": 100.0,
+      "note": "Tiny denominator n=1; not treated as stable efficiency."
+    },
+    "run_519": {
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 100.0,
+      "fast_gate_raw_pct": 100.0,
+      "note": "Tiny denominator n=1; not treated as stable efficiency."
+    },
+    "run_520R1": {
+      "raw_distinct_employer_level": null,
+      "fast_gate_raw_ratio": null,
+      "qualified_raw_ratio": null,
+      "net_new_qualified": 2,
+      "note": "Like-for-like q/raw and fast/raw delta cannot be calculated because the trustworthy distinct-employer raw denominator was not preserved. Absolute net-new improved from 1 to 2 versus RUN 519."
+    }
+  },
+  "adaptive_decision": {
+    "reason": "Net-new is 2 (<5), so the prior mix is not repeated. Jobs remains capped at 5% after its worker-qualified candidate was a physical duplicate. Growth/news produced both net-new companies and is increased cautiously despite the missing denominator. Regional-investment remains the strongest non-tiny measured lane from RUN 517R1 and remains dominant below the 60% ceiling.",
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 20,
+      "official_owner_ceo": 10,
+      "industry_probe_only": 5,
+      "regional_investment_projects": 55,
+      "partner_business_change": 5
     }
   },
   "qualified_companies": [
