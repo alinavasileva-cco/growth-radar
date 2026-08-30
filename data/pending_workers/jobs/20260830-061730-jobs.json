@@ -1,0 +1,159 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-30T06:17:30+03:00",
+  "baseline_head": "ce70a27315fde688bdaa25e36737412218f3f2f2",
+  "config_version": "2026-08-30T06:01:57+03:00",
+  "constraints": {
+    "criteria_changed": false,
+    "canonical_writer_run": false,
+    "outreach_performed": false,
+    "canonical_write_performed": false
+  },
+  "discovery": {
+    "target_employer_level_raw": "140-150 if sources support verified distinct employers",
+    "target_met": false,
+    "source_level_advertised_vacancies_seen": 155,
+    "employer_level_distinct_confirmed": 29,
+    "note": "155 is the sum of advertised vacancy counts on five opened regional job-board result pages, not a claim of 155 distinct employers. Only the first 30 Vladivostok results were individually resolved far enough to support 29 distinct employer-level raw candidates; one employer repeated. Other page totals are kept only as source observations and are not counted as distinct raw employers.",
+    "batches": [
+      {
+        "source": "HH",
+        "region": "Vladivostok",
+        "query": "commercial director / full day",
+        "advertised_vacancies": 34,
+        "positions_individually_inspected": 30,
+        "distinct_employers_confirmed": 29,
+        "duplicates_plus_early_reject_rate_first20": null,
+        "reason_rate_null": "legal-key resolution was not completed for every cheap reject; rate not reconstructed"
+      },
+      {
+        "source": "HH",
+        "region": "Voronezh",
+        "query": "commercial director",
+        "advertised_vacancies": 54,
+        "positions_individually_inspected": null,
+        "distinct_employers_confirmed": null,
+        "duplicates_plus_early_reject_rate_first20": null
+      },
+      {
+        "source": "HH",
+        "region": "Samara",
+        "query": "marketing director",
+        "advertised_vacancies": 7,
+        "positions_individually_inspected": null,
+        "distinct_employers_confirmed": null,
+        "duplicates_plus_early_reject_rate_first20": null
+      },
+      {
+        "source": "HH",
+        "region": "Perm",
+        "query": "operations director",
+        "advertised_vacancies": 42,
+        "positions_individually_inspected": null,
+        "distinct_employers_confirmed": null,
+        "duplicates_plus_early_reject_rate_first20": null
+      },
+      {
+        "source": "HH",
+        "region": "Saratov",
+        "query": "marketing",
+        "advertised_vacancies": 18,
+        "positions_individually_inspected": null,
+        "distinct_employers_confirmed": null,
+        "duplicates_plus_early_reject_rate_first20": null
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw_employer_level_distinct_confirmed": 29,
+    "fast_gate": 4,
+    "deep_check": 4,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "ПКФ ДВ-Пласт",
+      "legal_name": "ООО \"ПКФ \"ДВ-ПЛАСТ\"",
+      "city": "Владивосток",
+      "region": "Приморский край",
+      "inn": "2537079023",
+      "ogrn": "1062537055470",
+      "lead_id": null,
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 262691000,
+        "employees": 50,
+        "evidence_urls": [
+          "https://saby.ru/profile/2537079023-253701001",
+          "https://www.tbank.ru/business/contractor/legal/1062537055470/",
+          "https://companies.rbc.ru/id/1062537055470-ooo-pkf-dv-plast/"
+        ]
+      },
+      "legal": {
+        "active": true,
+        "director": "Алиев Султан Низам Оглы",
+        "owner": "Новрузов Мардан Нариман-Оглы",
+        "evidence_urls": [
+          "https://saby.ru/profile/2537079023-253701001",
+          "https://www.tbank.ru/business/contractor/legal/1062537055470/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring",
+        "title": "Коммерческий директор",
+        "date": "2026-08-05",
+        "facts": [
+          "руководство финансово-хозяйственной деятельностью в области МТО и сбыта",
+          "обеспечение развития бизнеса и оптимизация бизнес-процессов",
+          "организация и эффективное взаимодействие коммерческой службы",
+          "разработка перспективных и текущих планов снабжения и сбыта"
+        ],
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/42130/vakansii/135907594",
+          "https://h.careers/job/ad30187a-0bbb-49c3-a3cb-d71b2721eb70"
+        ]
+      },
+      "lpr": {
+        "owner": "Новрузов Мардан Нариман-Оглы",
+        "director": "Алиев Султан Низам Оглы",
+        "evidence_urls": [
+          "https://saby.ru/profile/2537079023-253701001",
+          "https://www.tbank.ru/business/contractor/legal/1062537055470/"
+        ]
+      },
+      "contact": {
+        "type": "published_job_application_route",
+        "route": "current public vacancy application route",
+        "url": "https://dreamjob.ru/employers/42130/vakansii/135907594",
+        "note": "No email/phone is attributed to this legal entity because dvplast.ru publishes requisites for a different legal entity (ООО \"ДВ-Пласт Групп\", ИНН 2537134563). No template reconstruction used."
+      },
+      "dedup_keys": {
+        "inn": "2537079023",
+        "ogrn": "1062537055470",
+        "exact_legal_name": "ООО \"ПКФ \"ДВ-ПЛАСТ\"",
+        "brand_domain": null,
+        "brand_domain_note": "dvplast.ru not used as confirmed brand+domain key for this legal entity because official requisites page maps it to ООО \"ДВ-Пласт Групп\", ИНН 2537134563"
+      },
+      "dedup_checks": {
+        "repo_search_inn": "no match before staging",
+        "repo_search_ogrn": "no match before staging",
+        "repo_search_domain": "no match for dvplast.ru, but domain intentionally excluded from this legal entity's dedup key",
+        "checked_against_current_repo": true
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/42130/vakansii/135907594",
+        "https://h.careers/job/ad30187a-0bbb-49c3-a3cb-d71b2721eb70",
+        "https://saby.ru/profile/2537079023-253701001",
+        "https://www.tbank.ru/business/contractor/legal/1062537055470/",
+        "https://companies.rbc.ru/id/1062537055470-ooo-pkf-dv-plast/"
+      ]
+    }
+  ]
+}
