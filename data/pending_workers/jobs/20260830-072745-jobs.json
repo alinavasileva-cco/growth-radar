@@ -1,0 +1,201 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-30T07:27:45+03:00",
+  "baseline_head": "ca3300557ac1d3109f61d8147c7ee37f031f49a1",
+  "config_version": "2026-08-30T06:01:57+03:00",
+  "constraints": {
+    "criteria_changed": false,
+    "criteria_weakened": false,
+    "canonical_writer_run": false,
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "dedup_precheck": {
+    "fresh_head_read": true,
+    "current_working_config_read": true,
+    "canonical_keys_checked_repo_wide": true,
+    "pending_workers_checked_repo_wide": true,
+    "all_prior_jobs_staging_included_in_repo_wide_search": true,
+    "keys": [
+      "lead_id",
+      "inn",
+      "ogrn_ogrnip",
+      "exact_legal_name",
+      "confirmed_brand_domain"
+    ]
+  },
+  "discovery": {
+    "target_employer_level_raw": "140-150 if sources support verified distinct employers",
+    "target_met": false,
+    "raw_employer_level_distinct_confirmed": 30,
+    "note": "Only employer identities individually visible in the inspected search/job-board results were counted. Search-result totals and vacancy counts were not treated as distinct companies. The accessible surfaces in this run did not support resolving 140-150 different employers without guessing, so no quota padding was used.",
+    "batches": [
+      {
+        "source": "Nesiditsa / HH-derived vacancy mirrors",
+        "region": "Khabarovsk / Far East",
+        "query_family": "commercial director / executive / regional director",
+        "raw_distinct_employers_confirmed": 12,
+        "duplicates_plus_early_rejects": 10,
+        "duplicate_plus_early_reject_rate": 0.8333,
+        "stopped_for_saturation": true,
+        "qualified": 1,
+        "note": "Batch stopped after high early-reject saturation; large federal employers and companies clearly outside current SIZE were not deep-checked."
+      },
+      {
+        "source": "AFK Offer",
+        "region": "Khabarovsk",
+        "query_family": "operations / commercial leadership",
+        "raw_distinct_employers_confirmed": 2,
+        "duplicates_plus_early_rejects": 1,
+        "duplicate_plus_early_reject_rate": 0.5,
+        "stopped_for_saturation": false,
+        "qualified": 0,
+        "note": "Surface exposed fewer than 20 independently resolvable employers for this query family; no counts were inferred from page totals."
+      },
+      {
+        "source": "CareerSpace",
+        "region": "Russia / regional executive roles",
+        "query_family": "operations / business unit / regional growth",
+        "raw_distinct_employers_confirmed": 10,
+        "duplicates_plus_early_rejects": 10,
+        "duplicate_plus_early_reject_rate": 1.0,
+        "stopped_for_saturation": true,
+        "qualified": 0,
+        "note": "Mostly large national employers or archived roles; batch terminated rather than saturated further."
+      },
+      {
+        "source": "Cataloxy",
+        "region": "Ulyanovsk",
+        "query_family": "director of development",
+        "raw_distinct_employers_confirmed": 1,
+        "duplicates_plus_early_rejects": 1,
+        "duplicate_plus_early_reject_rate": 1.0,
+        "stopped_for_saturation": true,
+        "qualified": 0,
+        "note": "Only one independently resolvable current employer surfaced for the narrow query; no synthetic batch expansion."
+      },
+      {
+        "source": "mixed fresh job-board search",
+        "region": "Krasnoyarsk / Krasnodar / other regions",
+        "query_family": "COO / CMO / business development",
+        "raw_distinct_employers_confirmed": 5,
+        "duplicates_plus_early_rejects": 4,
+        "duplicate_plus_early_reject_rate": 0.8,
+        "stopped_for_saturation": true,
+        "qualified": 0,
+        "note": "Batch rotated after high early-reject rate; examples included employers clearly outside current SIZE or with unresolved legal identity."
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw_employer_level_distinct_confirmed": 30,
+    "fast_gate": 5,
+    "deep_check": 3,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "qualified": [
+    {
+      "brand": "Железяка",
+      "legal_name": "ООО \"ЖЕЛЕЗЯКА\"",
+      "city": "Хабаровск",
+      "region": "Хабаровский край",
+      "inn": "2723186576",
+      "ogrn": "1162724061851",
+      "lead_id": null,
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 57810000,
+        "employees_2025": 11,
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1162724061851/",
+          "https://b2b.house/company/OOO-ZHELEZYAKA_55d96b95-e4b9-4e75-a5a3-331d549302e5/"
+        ]
+      },
+      "legal": {
+        "active": true,
+        "director": "Черепанов Максим Анатольевич",
+        "owner": "Черепанов Максим Анатольевич",
+        "owner_share": "100%",
+        "registered_address": "680007, Хабаровский край, г. Хабаровск, пер. Бассейный, д. 7",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-ZHELEZYAKA_55d96b95-e4b9-4e75-a5a3-331d549302e5/",
+          "https://check.tochka.com/company/1162724061851/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring",
+        "title": "Коммерческий директор (CCO)",
+        "date": "2026-08-13",
+        "facts": [
+          "работодатель ищет коммерческого директора",
+          "сеть включает пять магазинов, интернет-магазин, корпоративные продажи и автосервис",
+          "вакансия относится к работодателю по адресу Бассейный переулок, 7, совпадающему с адресом действующего ООО \"ЖЕЛЕЗЯКА\""
+        ],
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/135688459",
+          "https://afkoffer.com/vacancies"
+        ]
+      },
+      "lpr": {
+        "owner": "Черепанов Максим Анатольевич",
+        "director": "Черепанов Максим Анатольевич",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-ZHELEZYAKA_55d96b95-e4b9-4e75-a5a3-331d549302e5/"
+        ]
+      },
+      "contact": {
+        "type": "published_company_contact",
+        "phone": "+7 (4212) 72-55-55",
+        "toll_free_phone": "8 800 100-31-22",
+        "email": "support@jeleziaka27.ru",
+        "url": "https://xn--27-6kctaejyg6r.xn--p1ai/sotrudnichestvo",
+        "note": "Contacts are published on the company's public cooperation page; no template reconstruction was used."
+      },
+      "dedup_keys": {
+        "inn": "2723186576",
+        "ogrn": "1162724061851",
+        "exact_legal_name": "ООО \"ЖЕЛЕЗЯКА\"",
+        "confirmed_brand_domain": "Железяка|железяка27.рф"
+      },
+      "brand_domain_link": {
+        "confirmed": true,
+        "evidence": [
+          "https://firmalyze.ru/inn/2723186576",
+          "https://nesiditsa.ru/vacancy/135688459",
+          "https://xn--27-6kctaejyg6r.xn--p1ai/sotrudnichestvo"
+        ],
+        "note": "Firmalyze maps the domain to INN 2723186576; the current executive vacancy uses the same employer brand and Basseynyy pereulok 7 address as the legal entity."
+      },
+      "dedup_checks": {
+        "pre_deep_check": {
+          "brand_search": "no repo match",
+          "inn_search": "no repo match",
+          "ogrn_search": "no repo match",
+          "domain_search": "no repo match"
+        },
+        "pre_staging": {
+          "head": "ca3300557ac1d3109f61d8147c7ee37f031f49a1",
+          "inn_2723186576": "no repo match",
+          "ogrn_1162724061851": "no repo match",
+          "brand_zhelezyaka": "no repo match",
+          "domain_zhelezyaka27_rf": "no repo match"
+        }
+      },
+      "evidence_urls": [
+        "https://nesiditsa.ru/vacancy/135688459",
+        "https://www.tbank.ru/business/contractor/legal/1162724061851/",
+        "https://b2b.house/company/OOO-ZHELEZYAKA_55d96b95-e4b9-4e75-a5a3-331d549302e5/",
+        "https://check.tochka.com/company/1162724061851/",
+        "https://firmalyze.ru/inn/2723186576",
+        "https://xn--27-6kctaejyg6r.xn--p1ai/sotrudnichestvo"
+      ]
+    }
+  ]
+}
