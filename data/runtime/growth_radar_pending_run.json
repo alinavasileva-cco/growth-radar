@@ -1,8 +1,173 @@
 {
-  "run_id": "N5K-20260830-515",
-  "updated_at": "2026-08-30T07:02:31+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-515 integrated physically; canonical/contactable 534/534; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-515R1",
+  "updated_at": "2026-08-30T07:32:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 30,
+    "fast_gate_passed": 5,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 29
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_072745",
+      "raw": 30,
+      "fast_gate": 5,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 29,
+      "qualified_raw_pct": 3.3333,
+      "fast_gate_raw_pct": 16.6667,
+      "action": "CAP_5_PERCENT",
+      "reason": "96.67% of distinct raw did not reach qualified; jobs remains in saturation cooldown"
+    },
+    {
+      "lane": "hourly_cycle_aggregate_jobs",
+      "raw": 59,
+      "fast_gate": 9,
+      "size": 3,
+      "legal": 2,
+      "signal": 2,
+      "qualified": 2,
+      "duplicate_plus_early_reject": 57,
+      "qualified_raw_pct": 3.3898,
+      "fast_gate_raw_pct": 15.2542,
+      "action": "CAP_5_PERCENT",
+      "reason": "aggregate of both fresh jobs staging batches ingested in this hourly cycle; saturation remains >70%"
+    },
+    {
+      "lane": "growth_news_hourly_cycle",
+      "raw": 8,
+      "fast_gate": 2,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 8,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 25.0,
+      "action": "CAP_5_PERCENT_NEXT_3_RUNS",
+      "reason": "RUN514 and current hourly cycle both produced 0 qualified"
+    },
+    {
+      "lane": "official_owner_ceo_hourly_cycle",
+      "raw": 4,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 4,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "action": "CAP_5_PERCENT_NEXT_3_RUNS_NO_DEEP_CHECK",
+      "reason": "RUN514 and current hourly cycle both produced 0 qualified; current fast_gate/raw is below 2%"
+    }
+  ],
+  "hourly_cycle_efficiency": {
+    "raw": 71,
+    "fast_gate": 11,
+    "size": 3,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2,
+    "qualified_raw_pct": 2.8169,
+    "fast_gate_raw_pct": 15.4930,
+    "previous_run_514_qualified_raw_pct": 7.1429,
+    "previous_run_514_fast_gate_raw_pct": 35.7143,
+    "change_vs_run_514_pp": {"qualified_raw": -4.3260, "fast_gate_raw": -20.2213}
+  },
+  "adaptive_next_distribution": {
+    "jobs": 5,
+    "growth_news": 5,
+    "official_owner_ceo": 5,
+    "industry_catalog_probe_only": 5,
+    "experimental_regional_investment_projects_and_sez": 40,
+    "experimental_partner_ecosystem_and_business_change": 40
+  },
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0695",
+      "Brand": "Железяка",
+      "Legal Name": "ООО \"ЖЕЛЕЗЯКА\"",
+      "INN": "2723186576",
+      "OGRN/OGRNIP": "1162724061851",
+      "Region": "Хабаровский край",
+      "City": "Хабаровск",
+      "Segment": "Автозапчасти / розничная сеть и корпоративные продажи",
+      "Website": "",
+      "Revenue/Scale": "Выручка 57,81 млн ₽ за 2025 год; действующее частное ООО; актуальный работодатель описывает сеть из пяти магазинов, интернет-магазина, отдела корпоративных продаж и автосервиса.",
+      "Signal Level": "S1",
+      "Signal Summary": "13.08.2026 опубликована вакансия коммерческого директора (CCO): цель — рост выручки, маржинального дохода и доли рынка; зона ответственности включает коммерческую стратегию, ассортимент, закупки, ценообразование, запасы, маркетинг, KPI и управление коммерческим департаментом.",
+      "Signal Date": "2026-08-13",
+      "Signal Source": "https://nesiditsa.ru/vacancy/135688459",
+      "Owner": "Черепанов Максим Анатольевич — 100%",
+      "CEO": "Черепанов Максим Анатольевич",
+      "LPR": "Черепанов Максим Анатольевич",
+      "LPR Role": "Директор и 100% учредитель / практический ЛПР",
+      "Primary Phone": "",
+      "Primary Email": "",
+      "HH Contact": "https://nesiditsa.ru/vacancy/135688459",
+      "Contact Form": "https://nesiditsa.ru/vacancy/135688459",
+      "Contact Type": "published vacancy application route",
+      "Contact Source": "Nesiditsa / публичный маршрут актуальной вакансии",
+      "Consulting Hypothesis": "Коммерческая стратегия и управляемое масштабирование сети: P&L, ассортимент/закупки, pricing, оборачиваемость, маркетинг, KPI и синхронизация розничного и корпоративного каналов.",
+      "contacts": [
+        {
+          "value": "https://nesiditsa.ru/vacancy/135688459",
+          "channel": "web",
+          "type": "published vacancy application route",
+          "source": "Nesiditsa",
+          "url": "https://nesiditsa.ru/vacancy/135688459",
+          "is_lpr": false,
+          "notes": "Используется только подтвержденный vacancy-route. Телефон/email сайта Железяка не привязаны к ООО, поскольку страница сотрудничества публикует реквизиты ИП Черепанова М.А.; персональный контакт ЛПР не заявляется."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_LPR",
+          "claim": "ООО ЖЕЛЕЗЯКА действует; ИНН 2723186576, ОГРН 1162724061851; директор и учредитель Черепанов Максим Анатольевич.",
+          "url": "https://companies.rbc.ru/id/1162724061851-ooo-zhelezyaka/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Выручка за 2025 год 57,81 млн ₽.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1162724061851/",
+          "source": "Т-Банк Бизнес / официальные реестры"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "13.08.2026 опубликована вакансия CCO с прямой ответственностью за коммерческую стратегию, рост выручки и маржи, закупки, pricing, маркетинг, KPI и команду.",
+          "url": "https://nesiditsa.ru/vacancy/135688459",
+          "source": "Nesiditsa"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Доступен публичный маршрут отклика на актуальную вакансию; корпоративные контакты сайта не приписываются ООО из-за опубликованных там реквизитов ИП.",
+          "url": "https://nesiditsa.ru/vacancy/135688459",
+          "source": "Nesiditsa"
+        }
+      ]
+    }
+  ],
+  "worker_staging": [
+    {
+      "path": "data/pending_workers/jobs/20260830-072745-jobs.json",
+      "commit_sha": "105011e291d3e822eaa8c06a87e138b84086f70c",
+      "status": "INGESTED_PENDING_CANONICAL_WRITE"
+    }
+  ],
+  "notes": "Same-cycle continuation after a fresh immutable worker staging appeared before completion of the hourly cycle. Candidate independently rechecked; website contacts deliberately excluded from ООО contact evidence because the company cooperation page identifies ИП Черепанов М.А. No outreach."
 }
