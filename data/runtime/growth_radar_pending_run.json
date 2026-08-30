@@ -1,8 +1,182 @@
 {
-  "run_id": "N5K-20260830-519",
-  "updated_at": "2026-08-30T11:02:30+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-519 integrated physically; canonical/contactable 539/539; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-520R1",
+  "updated_at": "2026-08-30T12:47:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 2,
+  "funnel": {
+    "discovered": 2,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 1,
+    "excluded": 1
+  },
+  "lane_metrics": {
+    "jobs": {
+      "source_level_results_individually_reviewed": 27,
+      "raw_employer_level_distinct_confirmed": null,
+      "fast_gate": 5,
+      "size": 2,
+      "legal": 1,
+      "signal": 1,
+      "qualified_after_canonical_recheck": 0,
+      "note": "Fresh jobs worker did not preserve a trustworthy distinct-employer raw denominator. Its only worker-qualified candidate, ТАНДАЛ / ООО \"ТАНДАЛ\" (ИНН 6670248456), is already present in the physical canonical base from an earlier completed recovery and is therefore excluded as a duplicate. Current worker legal fields also supersede older contradictory Tandal details; no stale record is used for a new decision."
+    },
+    "growth_news": {
+      "source_batches_attempted": 5,
+      "raw_distinct_proven": null,
+      "fast_gate_deep_checked": 7,
+      "size": 5,
+      "legal": 4,
+      "signal": 4,
+      "lpr": 3,
+      "contact": 2,
+      "qualified": 2,
+      "note": "Worker did not prove a globally deduplicated distinct-company raw denominator; search-result rows are not relabeled as companies. Only the two fully resolved qualified companies are staged."
+    }
+  },
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0700",
+      "Brand": "Лайтинг Солюшнс / Lighting Solutions",
+      "Legal Name": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"ЛАЙТИНГ СОЛЮШНС\"",
+      "INN": "7720906560",
+      "OGRN/OGRNIP": "1237700586485",
+      "Region": "Самарская область",
+      "City": "Тольятти",
+      "Segment": "Автокомпоненты / автомобильная светотехника",
+      "Website": "",
+      "Revenue/Scale": "Выручка 2025: около 2,3 млрд ₽; 256 сотрудников по данным ФНС за 2025 год. Текущий публичный масштаб производства подтверждён запуском полного цикла автосветотехники в Тольятти.",
+      "Signal Level": "S2",
+      "Signal Summary": "21.07.2026 запущено производство полного цикла автомобильной светотехники для Lada Azimut; общий объём инвестиций 3,5 млрд ₽, локализован выпуск светотехники и для других моделей Lada.",
+      "Signal Date": "2026-07-21",
+      "Signal Source": "https://www.finmarket.ru/news/6670071",
+      "Owner": "Вердучи Джорджио",
+      "CEO": "Вердучи Джорджио",
+      "LPR": "Вердучи Джорджио",
+      "LPR Role": "Генеральный директор; текущие отраслевые источники также связывают его с контролем предприятия",
+      "Primary Phone": "",
+      "Primary Email": "corporatefinance-ls@yandex.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "Корпоративный email",
+      "Contact Source": "https://companium.ru/id/1237700586485-layting-solyushns",
+      "Consulting Hypothesis": "Коммерческое масштабирование нового промышленного производства: B2B/OEM-продажи, каналы сбыта, партнёрства, планирование роста и управленческий контур.",
+      "contacts": [
+        {
+          "value": "corporatefinance-ls@yandex.ru",
+          "channel": "email",
+          "type": "corporate",
+          "source": "Companium",
+          "url": "https://companium.ru/id/1237700586485-layting-solyushns",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный маршрут; не персональный контакт ЛПР."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "SIZE",
+          "claim": "Финансовая отчётность за 2025 год показывает выручку около 2,3 млрд ₽; среднесписочная численность — 256 человек.",
+          "url": "https://companium.ru/id/1237700586485-layting-solyushns",
+          "source": "Companium / данные ФНС и Росстата"
+        },
+        {
+          "type": "LEGAL_LPR",
+          "claim": "АО ЛАЙТИНГ СОЛЮШНС, ИНН 7720906560, ОГРН 1237700586485, действует; генеральный директор — Вердучи Джорджио.",
+          "url": "https://zachestnyibiznes.ru/company/ul/1237700586485_7720906560",
+          "source": "ЗаЧестныйБизнес / данные ФНС, актуально в августе 2026"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "21.07.2026 компания запустила в Тольятти производство полного цикла фар для Lada Azimut; инвестиции в проект составили 3,5 млрд ₽.",
+          "url": "https://www.finmarket.ru/news/6670071",
+          "source": "Финмаркет, 21.07.2026"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Публичный корпоративный email corporatefinance-ls@yandex.ru.",
+          "url": "https://companium.ru/id/1237700586485-layting-solyushns",
+          "source": "Companium"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0701",
+      "Brand": "Новгородский завод стекловолокна / НЗСВ",
+      "Legal Name": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"НОВГОРОДСКИЙ ЗАВОД СТЕКЛОВОЛОКНА\"",
+      "INN": "5321030214",
+      "OGRN/OGRNIP": "1025300785553",
+      "Region": "Новгородская область",
+      "City": "Великий Новгород",
+      "Segment": "Производство стекловолокна / композитные материалы",
+      "Website": "https://nzsv.ru/",
+      "Revenue/Scale": "Текущий операционный масштаб подтверждён действующим производством и инвестиционной программой 950 млн ₽ с созданием 110 новых рабочих мест. Устаревшая выручка 2024 не используется как основной scale-факт.",
+      "Signal Level": "S2",
+      "Signal Summary": "12.08.2026 объявлена трёхлетняя модернизация и расширение завода: более 950 млн ₽ инвестиций, 50 млн ₽ до конца 2026 года и ещё 900 млн ₽ с 2027 года; планируется создать 110 новых рабочих мест.",
+      "Signal Date": "2026-08-12",
+      "Signal Source": "https://abnews.ru/szfo/news/velikiy-novgorod/2026/8/12/dronov-rasskazal-o-krupnom-vlozhenii-v-novgorodskij-zavod-steklovolokna",
+      "Owner": "НПК \"Компенз\"",
+      "CEO": "Мхитарян Элеонора Тельмановна",
+      "LPR": "Мхитарян Элеонора Тельмановна",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (8162) 68-05-78",
+      "Primary Email": "nzsv_mrk@mail.ru",
+      "HH Contact": "",
+      "Contact Form": "https://nzsv.ru/home/about/",
+      "Contact Type": "Официальный отдел продаж / приемная",
+      "Contact Source": "https://nzsv.ru/home/about/",
+      "Consulting Hypothesis": "Систематизация коммерческого роста на фоне масштабной модернизации: промышленный B2B-сбыт, ключевые клиенты, планирование мощностей и коммерческий контур расширения.",
+      "contacts": [
+        {
+          "value": "+7 (8162) 68-05-78",
+          "channel": "phone",
+          "type": "corporate_sales",
+          "source": "Официальный сайт НЗСВ",
+          "url": "https://nzsv.ru/home/about/",
+          "is_lpr": false,
+          "notes": "Официальный отдел продаж."
+        },
+        {
+          "value": "nzsv_mrk@mail.ru",
+          "channel": "email",
+          "type": "corporate",
+          "source": "Официальный сайт НЗСВ",
+          "url": "https://nzsv.ru/home/about/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "SIZE",
+          "claim": "В 2026 году объявлена программа модернизации предприятия более чем на 950 млн ₽ с созданием 110 новых рабочих мест; этот свежий операционный масштаб используется вместо устаревшей выручки 2024 года.",
+          "url": "https://novvedomosti.ru/news/economy/115402/",
+          "source": "Новгородские ведомости, 12.08.2026"
+        },
+        {
+          "type": "LEGAL_LPR",
+          "claim": "АО НОВГОРОДСКИЙ ЗАВОД СТЕКЛОВОЛОКНА, ИНН 5321030214, ОГРН 1025300785553 — действующая организация; генеральный директор Мхитарян Элеонора Тельмановна подтверждена текущим worker recheck.",
+          "url": "https://synapsenet.ru/organizacii/1025300785553-ao-nzsv",
+          "source": "SYNAPSE / открытые реестровые данные"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "12.08.2026 новый собственник объявил инвестиции более 950 млн ₽ в переоснащение и модернизацию завода; проект рассчитан на три года и предусматривает новые рабочие места.",
+          "url": "https://abnews.ru/szfo/news/velikiy-novgorod/2026/8/12/dronov-rasskazal-o-krupnom-vlozhenii-v-novgorodskij-zavod-steklovolokna",
+          "source": "АБН24, 12.08.2026"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный отдел продаж: +7 (8162) 68-05-78; email nzsv_mrk@mail.ru.",
+          "url": "https://nzsv.ru/home/about/",
+          "source": "Официальный сайт НЗСВ"
+        }
+      ]
+    }
+  ],
+  "notes": "Recovery/resume triggered because last canonical completion was RUN 519 at 11:11 +03 while fresh jobs and growth-news worker artifacts existed at 12:18 and 12:30 with no new canonical integration. Fresh HEAD, runtime, target, pending and current config were read first. Jobs candidate ТАНДАЛ is excluded as an already integrated physical duplicate; no stale contradictory Tandal details are used. Growth-news worker did not preserve a defensible globally distinct-company raw denominator, so no 200-300 distinct-raw claim is made. Both staged companies were independently rechecked against fresh public legal/financial/signal sources. Final integration workflow must repeat physical dedup by Lead ID, INN, OGRN, exact legal name and brand+domain. No outreach."
 }
