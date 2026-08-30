@@ -17,12 +17,12 @@
   "current_run_id": "N5K-20260830-521",
   "last_run_id": "N5K-20260830-521",
   "latest_completed_run": "N5K-20260830-521",
-  "canonical_integration_run_id": "N5K-20260830-520R1",
-  "hourly_parent_run_id": "N5K-20260830-519",
-  "hourly_baseline_count": 539,
-  "hourly_net_new": 2,
+  "canonical_integration_run_id": "N5K-20260830-521",
+  "hourly_parent_run_id": "N5K-20260830-520R1",
+  "hourly_baseline_count": 541,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "note": "N5K-20260830-521 completed after physical integration: +0 net new; canonical/contactable 541/541; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260830-521 completed after physical canonical dedup: +0 net new; ПОЛИТАКС was blocked as an existing canonical company by INN/OGRN/brand+domain. Canonical/contactable 541/541; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
