@@ -14,6 +14,13 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
+  "overall_efficiency": {
+    "qualified_raw_pct": 4.0,
+    "fast_gate_raw_pct": 24.0,
+    "delta_vs_previous_hour_qualified_raw_pp": 4.0,
+    "delta_vs_previous_hour_fast_gate_raw_pp": 4.0,
+    "net_qualified_delta": 1
+  },
   "run_528": {
     "raw_discovered": 25,
     "fast_gate_passed": 6,
@@ -27,93 +34,19 @@
     "duplicates": 1,
     "excluded": 23,
     "lane_metrics": [
-      {
-        "lane": "jobs_probe_fresh_management",
-        "raw": 19,
-        "fast_gate": 4,
-        "size": 1,
-        "legal": 1,
-        "signal": 1,
-        "lpr": 1,
-        "contact": 1,
-        "qualified": 1,
-        "duplicate_plus_early_reject": 18,
-        "qualified_raw_pct": 5.2632,
-        "fast_gate_raw_pct": 21.0526,
-        "note": "Fresh immutable worker staging 20260830-201715-jobs.json. This is the allowed ~20-company probe batch while jobs remains capped. 19 employer-level raw were actually reviewed; raw was not padded."
-      },
-      {
-        "lane": "growth_news_industrial_expansion",
-        "raw": 6,
-        "fast_gate": 2,
-        "size": 2,
-        "legal": 2,
-        "signal": 1,
-        "lpr": 1,
-        "contact": 1,
-        "qualified": 1,
-        "duplicate_plus_early_reject": 5,
-        "qualified_raw_pct": 16.6667,
-        "fast_gate_raw_pct": 33.3333,
-        "note": "Own low-overlap review rotated fresh industrial expansion sources. AST Slon passed full funnel. LMR Plast failed SIGNAL because the apparent fresh expansion item traced to older 2024/2025 expansion material; stale evidence was excluded. Other reviewed entities did not justify deep-check under unchanged criteria."
-      },
-      {
-        "lane": "official_owner_ceo",
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      },
-      {
-        "lane": "industry_catalog",
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null,
-        "note": "No catalogue presence was used as SIGNAL."
-      },
-      {
-        "lane": "regional_investment",
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      },
-      {
-        "lane": "partner_business_change",
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      }
-    ]
+      {"lane":"jobs_probe_fresh_management","raw":19,"fast_gate":4,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified":0,"duplicate_plus_early_reject":19,"qualified_raw_pct":0.0,"fast_gate_raw_pct":21.0526,"note":"Post-dedup: ПолиАэрПак was rejected by final physical canonical guard on INN and OGRN."},
+      {"lane":"growth_news_industrial_expansion","raw":6,"fast_gate":2,"size":2,"legal":2,"signal":1,"lpr":1,"contact":1,"qualified":1,"duplicate_plus_early_reject":5,"qualified_raw_pct":16.6667,"fast_gate_raw_pct":33.3333,"note":"АСТ «Слон» is the only physical net-new; stale LMR Plast material was excluded from SIGNAL."},
+      {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+      {"lane":"industry_catalog","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+      {"lane":"regional_investment","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+      {"lane":"partner_business_change","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
+    ],
+    "last_four_run_efficiency": [
+      {"run_id":"N5K-20260830-525","raw":21,"fast_gate":6,"qualified":1,"qualified_raw_pct":4.7619,"fast_gate_raw_pct":28.5714},
+      {"run_id":"N5K-20260830-526","raw":17,"fast_gate":7,"qualified":1,"qualified_raw_pct":5.8824,"fast_gate_raw_pct":41.1765},
+      {"run_id":"N5K-20260830-527","raw":25,"fast_gate":5,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":20.0},
+      {"run_id":"N5K-20260830-528","raw":25,"fast_gate":6,"qualified":1,"qualified_raw_pct":4.0,"fast_gate_raw_pct":24.0}
+    ],
+    "next_distribution_pct": {"jobs":5,"growth_news":35,"official_owner_ceo":20,"industry_catalog":5,"regional_investment":25,"partner_business_change":10}
   }
 }
