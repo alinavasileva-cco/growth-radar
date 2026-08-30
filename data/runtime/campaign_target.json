@@ -17,32 +17,34 @@
   "current_run_id": "N5K-20260830-527",
   "last_run_id": "N5K-20260830-527",
   "latest_completed_run": "N5K-20260830-527",
-  "canonical_integration_run_id": "N5K-20260830-526",
-  "hourly_parent_run_id": "N5K-20260830-526",
-  "hourly_baseline_count": 544,
-  "hourly_net_new": 1,
+  "canonical_integration_run_id": "N5K-20260830-527",
+  "hourly_parent_run_id": "N5K-20260830-527",
+  "hourly_baseline_count": 545,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "overall_efficiency": {
-    "qualified_raw_pct": 5.8824,
-    "fast_gate_raw_pct": 41.1765,
-    "delta_vs_previous_hour_qualified_raw_pp": 1.1205,
-    "delta_vs_previous_hour_fast_gate_raw_pp": 12.6051
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 20.0,
+    "delta_vs_previous_hour_qualified_raw_pp": -5.8824,
+    "delta_vs_previous_hour_fast_gate_raw_pp": -21.1765,
+    "net_qualified_delta": -1
   },
   "next_distribution_pct": {
     "jobs": 5,
-    "growth_news": 20,
-    "official_owner_ceo": 40,
+    "growth_news": 30,
+    "official_owner_ceo": 20,
     "industry_catalog": 5,
-    "regional_investment": 20,
-    "partner_business_change": 10
+    "regional_investment": 25,
+    "partner_business_change": 15
   },
   "adaptive_controls": {
-    "jobs_cap_runs_remaining": 1,
+    "jobs_cap_runs_remaining": 3,
     "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
-    "jobs_trigger": "Jobs remains capped because RUN 526 duplicate+early-reject is 15/16=93.75%; the earlier 3-RUN cap is not relaxed by one net-new result.",
-    "decision": "Net-new remains 1 (<5). Boost official company/owner/CEO low-overlap discovery to 40%; keep jobs at 5%, growth/news at 20%, regional investment at 20%, industry probe-only at 5%, partner/business-change at 10%."
+    "jobs_trigger": "RUN 527 jobs duplicate+early-reject is 20/20=100% after physical dedup; cap is renewed to 5% for the next 3 RUNs.",
+    "official_owner_ceo_note": "RUN 527 official/owner/CEO produced a full-funnel candidate but it was already canonical; post-dedup qualified/raw=0% and duplicate+early-reject=5/5=100%. This is one measured RUN, so no automatic 3-RUN cap is asserted yet, but allocation is reduced from 40% to 20%.",
+    "decision": "Net-new fell to 0 and overall qualified/raw fell from 5.8824% to 0%. Do not repeat RUN 526 distribution. Keep jobs at 5% probe-only; rotate toward fresh growth/news, regional investment and experimental partner/business-change sources, while retaining 20% official/owner/CEO for lower-overlap probing."
   },
-  "note": "N5K-20260830-527 completed after physical integration: +0 net new; canonical/contactable 545/545; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260830-527 completed after physical integration with +0 net new. Final canonical guard rejected Dolomit by INN/OGRN/legal name and BAGRIF by INN/OGRN/legal name/brand+domain. Canonical/contactable 545/545; integrity PASS; orphan 0/0; staged 0; outreach 0. Stale Gamma-Plast evidence traced to 2025 was excluded from SIGNAL decisions."
 }
