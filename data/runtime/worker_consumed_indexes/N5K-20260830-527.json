@@ -1,0 +1,21 @@
+{
+  "run_id": "N5K-20260830-527",
+  "campaign_id": "new_5000",
+  "updated_at": "2026-08-30T20:00:00+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260830-192149-jobs.json",
+      "blob_sha": "32cb73d437da70da57d583c8356e92b87235f2af",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "note": "Worker-qualified Dolomit passed full funnel but final physical canonical guard found existing match by INN, OGRN and exact legal name. Immutable staging retained; no duplicate write."
+    }
+  ],
+  "physical_result": {
+    "canonical": 545,
+    "contactable": 545,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "outreach": 0
+  }
+}
