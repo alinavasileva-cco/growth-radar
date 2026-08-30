@@ -11,7 +11,7 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-30T16:44:29+03:00",
+  "updated_at": "2026-08-30T16:57:41+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260830-524R1",
   "current_run_id": "N5K-20260830-524R1",
@@ -26,11 +26,17 @@
   "outreach_sent": 0,
   "next_distribution_pct": {
     "jobs": 5,
-    "growth_news": 25,
+    "growth_news": 35,
     "official_owner_ceo": 25,
     "industry_catalog": 5,
-    "regional_investment": 30,
+    "regional_investment": 20,
     "partner_business_change": 10
   },
-  "note": "N5K-20260830-524R1 completed after physical integration: +0 net new; canonical/contactable 543/543; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "adaptive_controls": {
+    "jobs_cap_runs_remaining": 3,
+    "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
+    "jobs_trigger": "RUN 523 and RUN 524R1 both net qualified/raw=0%; RUN 524R1 duplicate+early-reject=89.2857%.",
+    "decision": "Do not repeat RUN 523 allocation automatically. Restore recently productive growth/news and preserve official/owner/CEO low-overlap discovery while jobs remains capped."
+  },
+  "note": "N5K-20260830-524R1 completed after physical integration: +0 net new; canonical/contactable 543/543; integrity PASS; orphan 0/0; staged 0; outreach 0. Hourly efficiency repaired to net post-dedup values."
 }
