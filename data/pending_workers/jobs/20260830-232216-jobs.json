@@ -1,0 +1,138 @@
+{
+  "schema_version": "jobs_worker_v1",
+  "lane": "jobs",
+  "worker_mode": "READ+DISCOVERY_ONLY",
+  "immutable": true,
+  "created_at": "2026-08-30T23:22:16+03:00",
+  "baseline_head": "f20ea1c9e7bf4d00da1430b846522b3415309a01",
+  "config_version": "2026-08-30T22:57:16+03:00",
+  "canonical_baseline": {
+    "master": 549,
+    "contactable": 549,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0,
+    "last_completed_run": "N5K-20260830-530"
+  },
+  "constraints": {
+    "criteria_changed": false,
+    "canonical_writer_started": false,
+    "canonical_written": false,
+    "outreach_performed": false,
+    "funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"]
+  },
+  "source_batch_metrics": [
+    {"batch": "hh_crossboard_kazan", "region": "Kazan", "raw_employers": 4, "duplicates_plus_early_rejects": 3, "fast_gate_pass": 1, "qualified": 0, "note": "Search surface returned fewer than 20 distinct employer-level candidates; no padding."},
+    {"batch": "hh_crossboard_novosibirsk", "region": "Novosibirsk", "raw_employers": 5, "duplicates_plus_early_rejects": 4, "fast_gate_pass": 1, "qualified": 1, "note": "Includes current director-level vacancy signal for qualified candidate."},
+    {"batch": "hh_crossboard_ekaterinburg", "region": "Ekaterinburg", "raw_employers": 7, "duplicates_plus_early_rejects": 7, "fast_gate_pass": 0, "qualified": 0, "note": "Public/state, stale, oversized or weak-fit candidates rejected at cheap gate where applicable."},
+    {"batch": "hh_crossboard_krasnodar", "region": "Krasnodar", "raw_employers": 3, "duplicates_plus_early_rejects": 3, "fast_gate_pass": 0, "qualified": 0, "note": "Search surface returned fewer than 20 distinct employer-level candidates; no padding."},
+    {"batch": "hh_crossboard_samara", "region": "Samara", "raw_employers": 5, "duplicates_plus_early_rejects": 5, "fast_gate_pass": 0, "qualified": 0, "note": "Includes previously staged/canonical-known employers and stale signals; rejected before deep check."},
+    {"batch": "regional_spillover", "region": "Cheboksary/Kaliningrad", "raw_employers": 2, "duplicates_plus_early_rejects": 2, "fast_gate_pass": 0, "qualified": 0, "note": "Low-overlap regional spillover; no candidate justified deep check."}
+  ],
+  "worker_funnel": {
+    "raw_employer_level": 26,
+    "fast_gate_pass": 2,
+    "deep_check": 1,
+    "size_pass": 1,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1
+  },
+  "candidates": [
+    {
+      "status": "QUALIFIED",
+      "brand": "Люди | Девелоперская компания",
+      "legal_name": "ООО ДЕВЕЛОПЕРСКАЯ КОМПАНИЯ \"ЛЮДИ\"",
+      "lead_id": null,
+      "inn": "7203567694",
+      "ogrn": "1237200022311",
+      "country": "RU",
+      "hq": "Тюмень",
+      "domain": "ludi-ludi.ru",
+      "brand_domain_link_confirmed": true,
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 202039000,
+        "employees_2025": 52,
+        "sme_category": "small enterprise",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-DEVELOPERSKAYA-KOMPANIYA-LYUDI_2311a276-c076-45ab-a19c-482a06a2323f/",
+          "https://saby.ru/profile/7203567694-720301001"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "active": true,
+        "evidence_date": "2026-08-02",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-DEVELOPERSKAYA-KOMPANIYA-LYUDI_2311a276-c076-45ab-a19c-482a06a2323f/",
+          "https://star-pro.ru/proverka-kontragenta/organization/1237200022311--ooo-paritet-development"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S1",
+        "type": "director_level_hiring",
+        "title": "Директор по продажам",
+        "published_date": "2026-08-12",
+        "description": "Свежая директорская вакансия в девелоперской компании; работодатель ищет директора по продажам с уровнем оплаты от 400 000 RUB.",
+        "evidence_urls": [
+          "https://nesiditsa.ru/vacancy/136104858",
+          "https://www.yova.uz/employers/3374750-104"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "primary": {
+          "name": "Жалнин Денис Викторович",
+          "role": "управляющий-индивидуальный предприниматель; участник 30%",
+          "evidence_urls": [
+            "https://star-pro.ru/proverka-kontragenta/organization/1237200022311--ooo-paritet-development",
+            "https://reputation.ru/ogrn/1237200022311"
+          ]
+        },
+        "owners": [
+          {"name": "Медведев Сергей Витальевич", "share": "70%"},
+          {"name": "Жалнин Денис Викторович", "share": "30%"}
+        ],
+        "owner_structure_evidence_url": "https://b2b.house/company/OOO-DEVELOPERSKAYA-KOMPANIYA-LYUDI_2311a276-c076-45ab-a19c-482a06a2323f/"
+      },
+      "contact": {
+        "status": "PASS",
+        "published_only": true,
+        "phone": "+7 (3452) 564-885",
+        "emails": ["info@dkludi.ru", "marketing@dkludi.ru"],
+        "route": "official corporate contacts and active vacancy application route",
+        "evidence_urls": [
+          "https://ludi-ludi.ru/contacts/",
+          "https://nesiditsa.ru/vacancy/136104858"
+        ],
+        "personal_contact_claimed": false
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7203567694",
+        "ogrn": "1237200022311",
+        "exact_legal_name": "ООО ДЕВЕЛОПЕРСКАЯ КОМПАНИЯ \"ЛЮДИ\"",
+        "brand_domain": "Люди | Девелоперская компания|ludi-ludi.ru"
+      },
+      "dedup_checks": {
+        "pre_deep_repo_wide": "NO_MATCH_FOUND",
+        "pre_stage_repo_wide": "NO_MATCH_FOUND",
+        "queries": ["7203567694", "1237200022311", "ДЕВЕЛОПЕРСКАЯ КОМПАНИЯ ЛЮДИ", "dkludi.ru"],
+        "scope": "repository-wide code search, including canonical and data/pending_workers/**",
+        "note": "No match returned for the legal identifiers/name/domain queries at the baseline HEAD. Canonical writer must still perform its physical integration guard before integration."
+      },
+      "evidence_urls": [
+        "https://nesiditsa.ru/vacancy/136104858",
+        "https://www.yova.uz/employers/3374750-104",
+        "https://ludi-ludi.ru/contacts/",
+        "https://b2b.house/company/OOO-DEVELOPERSKAYA-KOMPANIYA-LYUDI_2311a276-c076-45ab-a19c-482a06a2323f/",
+        "https://star-pro.ru/proverka-kontragenta/organization/1237200022311--ooo-paritet-development",
+        "https://reputation.ru/ogrn/1237200022311",
+        "https://saby.ru/profile/7203567694-720301001"
+      ]
+    }
+  ]
+}
