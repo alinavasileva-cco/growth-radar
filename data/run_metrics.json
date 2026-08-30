@@ -1,60 +1,42 @@
 {
-  "generated_at": "2026-08-30T09:10:00+03:00",
+  "generated_at": "2026-08-30T10:01:13+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260830-517R1",
-  "current_run_id": "N5K-20260830-517R1",
+  "latest_completed_run_id": "N5K-20260830-518",
+  "current_run_id": "N5K-20260830-518",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 537,
-  "contactable_verified": 537,
+  "canonical_pool_verified": 538,
+  "contactable_verified": 538,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4463,
+  "remaining_to_target": 4462,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_517R1": {
-    "raw_discovered": 18,
-    "fast_gate_passed": 5,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "physically_integrated": 2,
+  "run_518": {
+    "raw_discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "physically_integrated": 1,
     "duplicates": 0,
-    "excluded": 16,
+    "excluded": 0,
     "lane_metrics": {
-      "experimental_regional_investment_projects": {
-        "raw": 10,
-        "fast_gate": 4,
-        "size": 3,
-        "signal": 2,
-        "qualified": 2,
-        "duplicate_plus_early_reject": 8,
-        "qualified_raw_pct": 20.0,
-        "fast_gate_raw_pct": 40.0
-      },
-      "experimental_partner_ecosystem_business_change": {
-        "raw": 8,
-        "fast_gate": 1,
-        "size": 0,
-        "signal": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 8,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 12.5
-      },
       "jobs": {
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "signal": 0,
-        "qualified": 0,
+        "raw": 1,
+        "fast_gate": 1,
+        "size": 1,
+        "signal": 1,
+        "qualified": 1,
         "duplicate_plus_early_reject": 0,
-        "note": "cooldown/capped; no fresh unconsumed worker staging after RUN 516R1"
+        "qualified_raw_pct": 100.0,
+        "fast_gate_raw_pct": 100.0,
+        "note": "Only the single legally resolved fresh worker-qualified employer is counted as employer-level raw. Worker inspected 120 source rows but did not preserve a trustworthy globally distinct employer denominator, so 120 is not used as raw. Tiny denominator; not treated as stable lane efficiency."
       },
       "growth_news": {
         "raw": 0,
@@ -63,7 +45,9 @@
         "signal": 0,
         "qualified": 0,
         "duplicate_plus_early_reject": 0,
-        "note": "cooldown from prior zero-qualified streak"
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "No employer-level raw confirmed in this cycle."
       },
       "official_owner_ceo": {
         "raw": 0,
@@ -72,7 +56,9 @@
         "signal": 0,
         "qualified": 0,
         "duplicate_plus_early_reject": 0,
-        "note": "used only as verification, not double-counted as raw"
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "Used only for verification; not double-counted as discovery raw."
       },
       "industry": {
         "raw": 0,
@@ -81,7 +67,30 @@
         "signal": 0,
         "qualified": 0,
         "duplicate_plus_early_reject": 0,
-        "note": "probe-only; no catalogue raw padding"
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "Probe-only; no catalogue padding."
+      },
+      "experimental_regional_investment_projects": {
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 0,
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "Fresh source search was attempted after worker ingest, but returned no additional company-level candidate resolved far enough to count as raw; search-result rows were not counted as companies."
+      },
+      "experimental_partner_ecosystem_business_change": {
+        "raw": 0,
+        "fast_gate": 0,
+        "size": 0,
+        "signal": 0,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 0,
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null
       }
     }
   }
