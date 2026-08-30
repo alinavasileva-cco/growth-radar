@@ -14,6 +14,13 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
+  "overall_efficiency": {
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 20.0,
+    "delta_vs_previous_hour_qualified_raw_pp": -5.8824,
+    "delta_vs_previous_hour_fast_gate_raw_pp": -21.1765,
+    "net_qualified_delta": -1
+  },
   "run_527": {
     "raw_discovered": 25,
     "fast_gate_passed": 5,
@@ -27,93 +34,13 @@
     "duplicates": 2,
     "excluded": 23,
     "lane_metrics": [
-      {
-        "lane": "jobs_probe_fresh_management",
-        "raw": 20,
-        "fast_gate": 3,
-        "size": 1,
-        "legal": 1,
-        "signal": 1,
-        "lpr": 1,
-        "contact": 1,
-        "qualified": 1,
-        "duplicate_plus_early_reject": 19,
-        "qualified_raw_pct": 5.0,
-        "fast_gate_raw_pct": 15.0,
-        "note": "Fresh immutable worker staging. Dolomit passed full funnel. Duplicate+early-reject=19/20=95%, so jobs remains capped at 5% and the cap is renewed for the next 3 RUN under the adaptive rule."
-      },
-      {
-        "lane": "official_owner_ceo_low_overlap",
-        "raw": 5,
-        "fast_gate": 2,
-        "size": 2,
-        "legal": 2,
-        "signal": 1,
-        "lpr": 1,
-        "contact": 1,
-        "qualified": 1,
-        "duplicate_plus_early_reject": 4,
-        "qualified_raw_pct": 20.0,
-        "fast_gate_raw_pct": 40.0,
-        "note": "Five distinct companies were employer-level reviewed from fresh official/business-change surfaces. Bagrif passed the complete funnel. Gamma-Plast was rejected at SIGNAL after date validation showed the apparent August-2026 expansion item was recycled from 2025; stale records were excluded from the decision. Other raw companies failed the fast gate or could not be resolved without lowering quality."
-      },
-      {
-        "lane": "growth_news",
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      },
-      {
-        "lane": "regional_investment",
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      },
-      {
-        "lane": "industry_catalog",
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null,
-        "note": "Probe-only; exhibition/catalogue presence is never SIGNAL."
-      },
-      {
-        "lane": "partner_business_change",
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      }
-    ]
+      {"lane":"jobs_probe_fresh_management","raw":20,"fast_gate":3,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified":0,"duplicate_plus_early_reject":20,"qualified_raw_pct":0.0,"fast_gate_raw_pct":15.0},
+      {"lane":"official_owner_ceo_low_overlap","raw":5,"fast_gate":2,"size":2,"legal":2,"signal":1,"lpr":1,"contact":1,"qualified":0,"duplicate_plus_early_reject":5,"qualified_raw_pct":0.0,"fast_gate_raw_pct":40.0},
+      {"lane":"growth_news","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+      {"lane":"regional_investment","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+      {"lane":"industry_catalog","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+      {"lane":"partner_business_change","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
+    ],
+    "next_distribution_pct": {"jobs":5,"growth_news":30,"official_owner_ceo":20,"industry_catalog":5,"regional_investment":25,"partner_business_change":15}
   }
 }
