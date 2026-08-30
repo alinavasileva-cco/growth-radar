@@ -1,59 +1,59 @@
 {
-  "run_id": "N5K-20260830-526",
+  "run_id": "N5K-20260830-527",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T19:00:00+03:00",
+  "updated_at": "2026-08-30T20:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 544,
+    "baseline_count": 545,
     "target_count": 5000,
     "current_canonical_count": 545,
     "current_contactable_count": 545,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4455
   },
   "funnel": {
-    "discovered": 17,
-    "fast_gate_passed": 7,
+    "discovered": 25,
+    "fast_gate_passed": 5,
     "size_check_passed": 3,
-    "legal_match_passed": 2,
+    "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded": 15
+    "qualified": 0,
+    "duplicates": 2,
+    "excluded": 23
   },
   "lane_metrics": [
     {
       "lane": "jobs_probe_fresh_management",
-      "raw": 16,
-      "fast_gate": 6,
-      "size": 2,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 15,
-      "qualified_raw_pct": 6.25,
-      "fast_gate_raw_pct": 37.5,
-      "note": "Post-dedup: FARFOR is the one net-new qualified from the jobs probe. Duplicate+early-reject=15/16=93.75%, so jobs remains capped at 5% probe-only for the next RUN."
-    },
-    {
-      "lane": "regional_investment_low_overlap",
-      "raw": 1,
-      "fast_gate": 1,
+      "raw": 20,
+      "fast_gate": 3,
       "size": 1,
       "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 1,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 100.0,
-      "note": "Post-dedup: Eltex passed the semantic/full funnel but final canonical guard found an existing match by INN, OGRN and brand+domain; therefore net qualified=0 and duplicate+early-reject=1/1."
+      "qualified": 1,
+      "duplicate_plus_early_reject": 19,
+      "qualified_raw_pct": 5.0,
+      "fast_gate_raw_pct": 15.0,
+      "note": "Fresh immutable worker staging. Dolomit passed full funnel. Duplicate+early-reject=19/20=95%, so jobs remains capped at 5% and the cap is renewed for the next 3 RUN under the adaptive rule."
+    },
+    {
+      "lane": "official_owner_ceo_low_overlap",
+      "raw": 5,
+      "fast_gate": 2,
+      "size": 2,
+      "legal": 2,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 4,
+      "qualified_raw_pct": 20.0,
+      "fast_gate_raw_pct": 40.0,
+      "note": "Five distinct companies were employer-level reviewed from fresh official/business-change surfaces. Bagrif passed the complete funnel. Gamma-Plast was rejected at SIGNAL after date validation showed the apparent August-2026 expansion item was recycled from 2025; stale records were excluded from the decision. Other raw companies failed the fast gate or could not be resolved without lowering quality."
     },
     {
       "lane": "growth_news",
@@ -67,11 +67,10 @@
       "qualified": 0,
       "duplicate_plus_early_reject": 0,
       "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Fresh source surfaces were reviewed, but no additional company was counted without a complete distinct employer-level denominator and full funnel resolution."
+      "fast_gate_raw_pct": null
     },
     {
-      "lane": "official_owner_ceo",
+      "lane": "regional_investment",
       "raw": 0,
       "fast_gate": 0,
       "size": 0,
@@ -114,33 +113,7 @@
       "fast_gate_raw_pct": null
     }
   ],
-  "overall_efficiency": {
-    "qualified_raw_pct": 5.8824,
-    "fast_gate_raw_pct": 41.1765,
-    "delta_vs_previous_hour_qualified_raw_pp": 1.1205,
-    "delta_vs_previous_hour_fast_gate_raw_pp": 12.6051,
-    "net_qualified_delta": 0
-  },
-  "last_four_run_efficiency": [
-    {"run_id": "N5K-20260830-523", "raw": 18, "fast_gate": 5, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 27.7778},
-    {"run_id": "N5K-20260830-524R1", "raw": 28, "fast_gate": 4, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 14.2857},
-    {"run_id": "N5K-20260830-525", "raw": 21, "fast_gate": 6, "qualified": 1, "qualified_raw_pct": 4.7619, "fast_gate_raw_pct": 28.5714},
-    {"run_id": "N5K-20260830-526", "raw": 17, "fast_gate": 7, "qualified": 1, "qualified_raw_pct": 5.8824, "fast_gate_raw_pct": 41.1765}
-  ],
-  "adaptive_decision": {
-    "reason": "Overall conversion improved but net-new qualified remains 1 (<5). Jobs still has 93.75% duplicate+early-reject and therefore remains capped. The regional candidate was a physical duplicate, so that n=1 lane is not boosted. Shift discovery toward lower-overlap official company/owner/CEO sources while retaining fresh growth/news and regional investment coverage.",
-    "lanes_cut_or_capped": ["jobs_probe_fresh_management"],
-    "lanes_boosted": ["official_owner_ceo"],
-    "next_distribution_pct": {
-      "jobs": 5,
-      "growth_news": 20,
-      "official_owner_ceo": 40,
-      "industry_catalog": 5,
-      "regional_investment": 20,
-      "partner_business_change": 10
-    }
-  },
-  "qualified_companies": ["FARFOR / Фарфор"],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,

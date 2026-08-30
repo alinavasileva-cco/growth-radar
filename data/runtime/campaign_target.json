@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-30T19:00:00+03:00",
+  "updated_at": "2026-08-30T20:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260830-526",
-  "current_run_id": "N5K-20260830-526",
-  "last_run_id": "N5K-20260830-526",
-  "latest_completed_run": "N5K-20260830-526",
+  "last_completed_run_id": "N5K-20260830-527",
+  "current_run_id": "N5K-20260830-527",
+  "last_run_id": "N5K-20260830-527",
+  "latest_completed_run": "N5K-20260830-527",
   "canonical_integration_run_id": "N5K-20260830-526",
   "hourly_parent_run_id": "N5K-20260830-526",
   "hourly_baseline_count": 544,
@@ -44,5 +44,5 @@
     "jobs_trigger": "Jobs remains capped because RUN 526 duplicate+early-reject is 15/16=93.75%; the earlier 3-RUN cap is not relaxed by one net-new result.",
     "decision": "Net-new remains 1 (<5). Boost official company/owner/CEO low-overlap discovery to 40%; keep jobs at 5%, growth/news at 20%, regional investment at 20%, industry probe-only at 5%, partner/business-change at 10%."
   },
-  "note": "N5K-20260830-526 completed after physical integration: +1 net new FARFOR; Eltex skipped by final physical dedup on INN, OGRN and brand+domain; canonical/contactable 545/545; integrity PASS; orphan 0/0; staged 0; outreach 0. Post-dedup efficiency metadata repaired."
+  "note": "N5K-20260830-527 completed after physical integration: +0 net new; canonical/contactable 545/545; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
