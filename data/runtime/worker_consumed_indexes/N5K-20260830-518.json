@@ -1,0 +1,17 @@
+{
+  "run_id": "N5K-20260830-518",
+  "updated_at": "2026-08-30T10:01:13+03:00",
+  "status": "CONSUMED_INTEGRATED",
+  "staging_files": [
+    {
+      "path": "data/pending_workers/jobs/20260830-092535-jobs.json",
+      "blob_sha": "0e40866575a011a4ad0e3bfdf654685f25e29804",
+      "lane": "jobs",
+      "qualified_received": 1,
+      "net_new_integrated": 1,
+      "integrated_lead_ids": ["N5K-0698"]
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "outreach_sent": 0
+}
