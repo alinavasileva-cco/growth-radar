@@ -1,8 +1,141 @@
 {
-  "run_id": "N5K-20260830-511R1",
-  "updated_at": "2026-08-30T03:02:20+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-511R1 integrated physically; canonical/contactable 530/530; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-512",
+  "updated_at": "2026-08-30T04:16:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 2,
+  "funnel": {
+    "discovered": 16,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 14
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs",
+      "raw": 8,
+      "fast_gate": 4,
+      "size": 2,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 7,
+      "qualified_raw_pct": 12.5,
+      "fast_gate_raw_pct": 50.0,
+      "note": "Fresh immutable jobs worker ingested first; employer-level denominator only, no vacancy-row inflation."
+    },
+    {
+      "lane": "growth_news",
+      "raw": 8,
+      "fast_gate": 1,
+      "size": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 7,
+      "qualified_raw_pct": 12.5,
+      "fast_gate_raw_pct": 12.5,
+      "note": "Fresh low-overlap production/investment discovery; no catalog padding."
+    },
+    {
+      "lane": "official_owner_ceo",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "note": "Used for independent verification and contact confirmation; not double-counted as raw."
+    },
+    {
+      "lane": "industry_catalog",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "note": "Cooldown/probe-only; no deep-check allocation."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0691",
+      "Brand": "Форс Монтаж",
+      "Legal Name": "ООО «ФОРС МОНТАЖ»",
+      "INN": "7720732314",
+      "OGRN/OGRNIP": "1117746866456",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Строительство / премиальная отделка",
+      "Website": "https://forcemontage.ru",
+      "Revenue/Scale": "Выручка 76,03 млн ₽ за 2025 год; действующее юрлицо; текущая проектная вакансия предусматривает одновременное ведение 4–8 объектов премиальной отделки",
+      "Signal Level": "S3_STRONG",
+      "Signal Summary": "Свежая вакансия руководителя проектов показывает многопроектную операционную нагрузку: ответственность за бюджеты, сроки и качество нескольких параллельных премиальных объектов; это сильный сигнал потребности в систематизации проектного управления, не трактуемый как прямой S1-запрос.",
+      "Signal Date": "2026-07-11",
+      "Signal Source": "https://dreamjob.ru/employers/224832/vakansii/135098562",
+      "Owner": "Николаев Алексей Андреевич",
+      "CEO": "Николаев Алексей Андреевич",
+      "LPR": "Николаев Алексей Андреевич",
+      "LPR Role": "Генеральный директор / учредитель",
+      "Primary Phone": "+7 495 135-49-77",
+      "Primary Email": "forcemontage@gmail.com",
+      "HH Contact": "",
+      "Contact Form": "https://forcemontage.ru/kontakty",
+      "Contact Type": "official corporate route",
+      "Contact Source": "official website",
+      "Consulting Hypothesis": "Система проектного управления, планирование ресурсов и управленческий контроль по нескольким параллельным объектам без увеличения ручного контроля собственника.",
+      "contacts": [
+        {"value": "+7 495 135-49-77", "channel": "phone", "type": "official corporate", "source": "Forcemontage official website", "url": "https://forcemontage.ru/kontakty", "is_lpr": false, "notes": "Corporate route; not represented as personal LPR contact."},
+        {"value": "forcemontage@gmail.com", "channel": "email", "type": "official corporate", "source": "Forcemontage official website", "url": "https://forcemontage.ru/kontakty", "is_lpr": false, "notes": "Corporate route; not represented as personal LPR contact."}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "Official site identifies ООО «Форс Монтаж», INN 7720732314, OGRN 1117746866456.", "url": "https://forcemontage.ru/kontakty", "source": "Forcemontage official website"},
+        {"type": "SIZE", "claim": "2025 revenue 76.03 million RUB; organization active; CEO Nikolaev Alexey Andreevich.", "url": "https://www.tbank.ru/business/contractor/legal/1117746866456/", "source": "T-Bank business / official-source aggregation"},
+        {"type": "LPR", "claim": "Nikolaev Alexey Andreevich is CEO and founder; private ownership code OKFS 16.", "url": "https://companies.rbc.ru/id/1117746866456-ooo-fors-montazh/", "source": "RBC Companies"},
+        {"type": "SIGNAL", "claim": "Current project-manager vacancy dated 2026-07-11 assigns budget, quality and schedule responsibility across premium fit-out projects.", "url": "https://dreamjob.ru/employers/224832/vakansii/135098562", "source": "Dream Job"},
+        {"type": "CONTACT", "claim": "Official corporate phone and email published by company.", "url": "https://forcemontage.ru/kontakty", "source": "Forcemontage official website"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0692",
+      "Brand": "Турбокомплект",
+      "Legal Name": "АО «ТУРБОКОМПЛЕКТ»",
+      "INN": "5037044130",
+      "OGRN/OGRNIP": "1025004860638",
+      "Region": "Московская область",
+      "City": "Протвино",
+      "Segment": "Промышленное производство / автокомпоненты",
+      "Website": "https://kamturbo.ru",
+      "Revenue/Scale": "Действующее промышленное предприятие; текущий новый производственный комплекс — 1,8 млрд ₽ инвестиций, из них 1,2 млрд ₽ льготного займа ФРП; полный цикл производства турбокомпрессоров",
+      "Signal Level": "S2",
+      "Signal Summary": "В августе 2026 запущен новый производственный комплекс полного цикла по турбокомпрессорам; инвестиции 1,8 млрд ₽, расширение производственной мощности и продуктового контура.",
+      "Signal Date": "2026-08-27",
+      "Signal Source": "https://news.drom.ru/103541.html",
+      "Owner": "Акционеры не раскрыты в использованных открытых источниках",
+      "CEO": "Барбалат Алексей Васильевич",
+      "LPR": "Барбалат Алексей Васильевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (4967) 31-06-79",
+      "Primary Email": "turbo@kamturbo.ru",
+      "HH Contact": "",
+      "Contact Form": "https://kamturbo.ru/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "official website",
+      "Consulting Hypothesis": "Масштабирование нового производственного комплекса: операционная модель, управление мощностями, коммерциализация новых продуктов и управленческие контуры роста.",
+      "contacts": [
+        {"value": "+7 (4967) 31-06-79", "channel": "phone", "type": "official corporate reception", "source": "Kamturbo official website", "url": "https://kamturbo.ru/", "is_lpr": false, "notes": "Reception route; not represented as personal LPR contact."},
+        {"value": "turbo@kamturbo.ru", "channel": "email", "type": "official corporate", "source": "Kamturbo official website", "url": "https://kamturbo.ru/", "is_lpr": false, "notes": "Corporate route; not represented as personal LPR contact."}
+      ],
+      "evidence": [
+        {"type": "LEGAL", "claim": "АО «ТУРБОКОМПЛЕКТ» is active; INN 5037044130, OGRN 1025004860638; CEO Barbalat Alexey Vasilievich; OKFS 16 private ownership.", "url": "https://companies.rbc.ru/id/1025004860638-ao-turbokomplekt/", "source": "RBC Companies"},
+        {"type": "SIZE", "claim": "New production complex represents 1.8 billion RUB investment with 1.2 billion RUB FRP financing; full-cycle industrial production.", "url": "https://news.drom.ru/103541.html", "source": "Drom / production news"},
+        {"type": "SIGNAL", "claim": "On 2026-08-27 company launched a new full-cycle turbocharger production complex in Protvino.", "url": "https://news.drom.ru/103541.html", "source": "Drom"},
+        {"type": "LPR", "claim": "Current CEO is Barbalat Alexey Vasilievich.", "url": "https://www.tbank.ru/business/contractor/legal/1025004860638/", "source": "T-Bank business / official-source aggregation"},
+        {"type": "CONTACT", "claim": "Official website publishes reception phone +7 (4967) 31-06-79 and turbo@kamturbo.ru.", "url": "https://kamturbo.ru/", "source": "Kamturbo official website"}
+      ]
+    }
+  ],
+  "notes": "Fresh HEAD and physical runtime/target read first. Fresh jobs staging ingested before own discovery. Global cheap dedup checked by INN/OGRN/brand-domain repository searches before deep-check and integration workflow will repeat physical dedup. Own discovery shifted to fresh growth/investment sources after prior run remained below 5 net-new. No catalog padding. Next distribution after this measured run: jobs 5%, growth/news 55%, official-owner-CEO 30%, industry probe-only 5%, experimental 5%. Outreach prohibited."
 }
