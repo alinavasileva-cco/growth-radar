@@ -17,7 +17,7 @@
   "current_run_id": "N5K-20260831-533R1",
   "last_run_id": "N5K-20260831-533R1",
   "latest_completed_run": "N5K-20260831-533R1",
-  "canonical_integration_run_id": "N5K-20260831-532",
+  "canonical_integration_run_id": "N5K-20260831-533R1",
   "hourly_parent_run_id": "N5K-20260831-532",
   "hourly_baseline_count": 550,
   "hourly_net_new": 0,
@@ -26,30 +26,14 @@
   "outreach_sent": 0,
   "overall_efficiency": {
     "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 7.8947,
-    "delta_vs_previous_hour_qualified_raw_pp": -3.3333,
-    "delta_vs_previous_hour_fast_gate_raw_pp": -2.1053,
+    "fast_gate_raw_pct": 6.1224,
+    "delta_vs_previous_hour_qualified_raw_pp": 0.0,
+    "delta_vs_previous_hour_fast_gate_raw_pp": -1.7723,
     "net_qualified_delta": 0,
-    "net_qualified_change_vs_previous_hour": -1,
-    "denominator_note": "76 auditable employer-level raw candidates: 70 from the worker_funnel denominator and 6 own low-overlap probes. Worker source_batch_metrics sum to 74 rather than 70; that instrumentation conflict is recorded and not reconstructed. Raw was not padded with catalogs or search-result rows."
+    "net_qualified_change_vs_previous_hour": 0,
+    "denominator_note": "Recovery consumed two fresh post-RUN-532 jobs worker packages declaring 74 and 24 employer-level raw respectively. Their sum is 98 source-level employer observations, but global cross-worker uniqueness cannot be proven from the stored aggregate metrics; 98 must not be represented as 98 globally distinct companies. Physical final dedup skipped both qualified candidates as existing canonical records."
   },
   "comparison_last_3_runs": [
-    {
-      "run_id": "N5K-20260830-529R1",
-      "raw": 56,
-      "fast_gate": 9,
-      "qualified": 2,
-      "qualified_raw_pct": 3.5714,
-      "fast_gate_raw_pct": 16.0714
-    },
-    {
-      "run_id": "N5K-20260830-530",
-      "raw": 10,
-      "fast_gate": 2,
-      "qualified": 1,
-      "qualified_raw_pct": 10.0,
-      "fast_gate_raw_pct": 20.0
-    },
     {
       "run_id": "N5K-20260830-531",
       "raw": 30,
@@ -65,6 +49,15 @@
       "qualified": 0,
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 7.8947
+    },
+    {
+      "run_id": "N5K-20260831-533R1",
+      "raw": 98,
+      "raw_scope": "source-level sum; global cross-worker distinctness unproven",
+      "fast_gate": 6,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 6.1224
     }
   ],
   "next_distribution_pct": {
@@ -83,5 +76,5 @@
     "growth_action": "The one fresh growth-news candidate could not be legally resolved; increase growth-news only through different fresh low-overlap source sets, not the failed source.",
     "decision": "Overall q/raw fell from 3.3333% to 0 and fast/raw fell from 10% to 7.8947%; net-new fell 1 to 0. Do not repeat RUN 531 allocation: jobs 5%, growth-news 30%, official owner/CEO 25%, industry 5%, regional investment 20%, partner/business-change 15%."
   },
-  "note": "N5K-20260831-533R1 completed after physical integration: +0 net new; canonical/contactable 550/550; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260831-533R1 completed after physical integration: +0 net new; canonical/contactable 550/550; integrity PASS; orphan 0/0; staged 0; outreach 0. Both staged qualified candidates were skipped by physical dedup on INN, OGRN and brand+domain."
 }
