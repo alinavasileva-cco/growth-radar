@@ -1,76 +1,62 @@
 {
-  "run_id": "N5K-20260830-527",
+  "run_id": "N5K-20260830-528",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T20:00:00+03:00",
+  "updated_at": "2026-08-30T21:00:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 545,
     "target_count": 5000,
-    "current_canonical_count": 545,
-    "current_contactable_count": 545,
-    "progress_added": 0,
-    "remaining": 4455
+    "current_canonical_count": 546,
+    "current_contactable_count": 546,
+    "progress_added": 1,
+    "remaining": 4454
   },
   "funnel": {
     "discovered": 25,
-    "fast_gate_passed": 5,
+    "fast_gate_passed": 6,
     "size_check_passed": 3,
     "legal_match_passed": 3,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 0,
-    "duplicates": 2,
+    "qualified": 1,
+    "duplicates": 1,
     "excluded": 23
   },
   "lane_metrics": [
     {
       "lane": "jobs_probe_fresh_management",
-      "raw": 20,
-      "fast_gate": 3,
+      "raw": 19,
+      "fast_gate": 4,
       "size": 1,
       "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 20,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 15.0,
-      "note": "Post-dedup: Dolomit passed full funnel pre-write but final physical guard found an existing canonical match by INN, OGRN and exact legal name. Jobs therefore has 0 net qualified and duplicate+early-reject=20/20=100%."
+      "qualified": 1,
+      "duplicate_plus_early_reject": 18,
+      "qualified_raw_pct": 5.2632,
+      "fast_gate_raw_pct": 21.0526,
+      "note": "Fresh immutable worker staging 20260830-201715-jobs.json. This is the allowed ~20-company probe batch while jobs remains capped. 19 employer-level raw were actually reviewed; raw was not padded."
     },
     {
-      "lane": "official_owner_ceo_low_overlap",
-      "raw": 5,
+      "lane": "growth_news_industrial_expansion",
+      "raw": 6,
       "fast_gate": 2,
       "size": 2,
       "legal": 2,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 0,
+      "qualified": 1,
       "duplicate_plus_early_reject": 5,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 40.0,
-      "note": "Post-dedup: BAGRIF passed full funnel pre-write but final physical guard found an existing canonical match by INN, OGRN, exact legal name and brand+domain. Gamma-Plast was rejected at SIGNAL because the apparent 2026 item traced to a 2025 event; stale evidence was excluded."
+      "qualified_raw_pct": 16.6667,
+      "fast_gate_raw_pct": 33.3333,
+      "note": "Own low-overlap review rotated fresh industrial expansion sources. AST Slon passed full funnel. LMR Plast failed SIGNAL because the apparent fresh expansion item traced to older 2024/2025 expansion material; stale evidence was excluded. Other reviewed entities did not justify deep-check under unchanged criteria."
     },
     {
-      "lane": "growth_news",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    },
-    {
-      "lane": "regional_investment",
+      "lane": "official_owner_ceo",
       "raw": 0,
       "fast_gate": 0,
       "size": 0,
@@ -96,7 +82,21 @@
       "duplicate_plus_early_reject": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "note": "Probe-only; exhibition/catalogue presence is never SIGNAL."
+      "note": "No catalogue presence was used as SIGNAL."
+    },
+    {
+      "lane": "regional_investment",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null
     },
     {
       "lane": "partner_business_change",
@@ -113,55 +113,15 @@
       "fast_gate_raw_pct": null
     }
   ],
-  "overall_efficiency": {
-    "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 20.0,
-    "delta_vs_previous_hour_qualified_raw_pp": -5.8824,
-    "delta_vs_previous_hour_fast_gate_raw_pp": -21.1765,
-    "net_qualified_delta": -1
-  },
-  "last_four_run_efficiency": [
-    {"run_id": "N5K-20260830-524R1", "raw": 28, "fast_gate": 4, "size": 2, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 25, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 14.2857},
-    {"run_id": "N5K-20260830-525", "raw": 21, "fast_gate": 6, "qualified": 1, "qualified_raw_pct": 4.7619, "fast_gate_raw_pct": 28.5714},
-    {"run_id": "N5K-20260830-526", "raw": 17, "fast_gate": 7, "size": 3, "signal": 2, "qualified": 1, "duplicates": 1, "qualified_raw_pct": 5.8824, "fast_gate_raw_pct": 41.1765},
-    {"run_id": "N5K-20260830-527", "raw": 25, "fast_gate": 5, "size": 3, "signal": 2, "qualified": 0, "duplicates": 2, "duplicate_plus_early_reject": 25, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 20.0}
-  ],
-  "historical_lane_metrics": {
-    "N5K-20260830-524R1": [
-      {"lane": "jobs_recovery_fresh_management", "raw": 28, "fast_gate": 4, "size": 2, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 25, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 14.2857}
-    ],
-    "N5K-20260830-525": {
-      "note": "The retained RUN report has reliable overall funnel but does not preserve complete per-lane SIZE/SIGNAL fields. Missing historical lane fields are not reconstructed."
-    },
-    "N5K-20260830-526": [
-      {"lane": "jobs_probe_fresh_management", "raw": 16, "fast_gate": 6, "size": 2, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": 15, "qualified_raw_pct": 6.25, "fast_gate_raw_pct": 37.5},
-      {"lane": "regional_investment_low_overlap", "raw": 1, "fast_gate": 1, "size": 1, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 1, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 100.0}
-    ]
-  },
-  "adaptive_decision": {
-    "reason": "Net-new qualified fell from 1 to 0; overall qualified/raw fell from 5.8824% to 0% and fast_gate/raw from 41.1765% to 20%. Both current full-funnel candidates were already canonical. Jobs has 100% duplicate+early-reject and is renewed at 5% probe-only for 3 RUNs. The RUN 526 distribution is not repeated.",
-    "lanes_cut_or_capped": ["jobs_probe_fresh_management", "official_owner_ceo_low_overlap reduced from 40% after 100% duplicate+early-reject in this RUN"],
-    "lanes_boosted": ["growth_news", "regional_investment", "partner_business_change"],
-    "next_distribution_pct": {
-      "jobs": 5,
-      "growth_news": 30,
-      "official_owner_ceo": 20,
-      "industry_catalog": 5,
-      "regional_investment": 25,
-      "partner_business_change": 15
-    }
-  },
-  "qualified_companies": [],
-  "physical_duplicates": [
-    {"brand": "Доломит", "match_keys": ["INN", "OGRN", "LEGAL_NAME"]},
-    {"brand": "БЭГРИФ", "match_keys": ["INN", "OGRN", "LEGAL_NAME", "BRAND_DOMAIN"]}
+  "qualified_companies": [
+    "АСТ «Слон»"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "545_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "545_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "546_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "546_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0707,N5K-0707-C01,АСТ «Слон»,7415093767,,Корпоративный маршрут,8 (3513) 26-45-00,phone,corporate,АСТ «Слон»,https://astslon.ru/contacts,NO,HIGH,2026-08-30,Официальный корпоративный телефон; персональным контактом ЛПР не является.,N5K-20260830-528,new_5000
+N5K-0707,N5K-0707-C02,АСТ «Слон»,7415093767,,Корпоративный маршрут,mail@astslon.ru,email,corporate,АСТ «Слон»,https://astslon.ru/contacts,NO,HIGH,2026-08-30,Официальный корпоративный email.,N5K-20260830-528,new_5000
+N5K-0707,N5K-0707-C03,АСТ «Слон»,7415093767,,Корпоративный маршрут,https://astslon.ru/contacts,contact_form,corporate,АСТ «Слон»,https://astslon.ru/contacts,NO,HIGH,2026-08-30,Официальный практический маршрут связи.,N5K-20260830-528,new_5000
