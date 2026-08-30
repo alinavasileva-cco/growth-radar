@@ -10,7 +10,8 @@
     "current_canonical_count": 538,
     "current_contactable_count": 538,
     "progress_added": 1,
-    "remaining": 4462
+    "remaining": 4462,
+    "remaining_to_1000": 462
   },
   "funnel": {
     "discovered": 1,
@@ -25,75 +26,28 @@
     "excluded": 0
   },
   "lane_metrics": {
-    "jobs": {
-      "raw": 1,
-      "fast_gate": 1,
-      "size": 1,
-      "signal": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": 100.0,
-      "fast_gate_raw_pct": 100.0,
-      "note": "Only the single legally resolved fresh worker-qualified employer is counted as employer-level raw. Worker inspected 120 source rows but did not preserve a trustworthy globally distinct employer denominator, so 120 is not used as raw. Tiny denominator; not treated as stable lane efficiency."
-    },
-    "growth_news": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "No employer-level raw confirmed in this cycle."
-    },
-    "official_owner_ceo": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Used only for verification; not double-counted as discovery raw."
-    },
-    "industry": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Probe-only; no catalogue padding."
-    },
-    "experimental_regional_investment_projects": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Fresh source search was attempted after worker ingest, but returned no additional company-level candidate resolved far enough to count as raw; search-result rows were not counted as companies."
-    },
-    "experimental_partner_ecosystem_business_change": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    }
+    "jobs": {"raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"Only the single legally resolved fresh worker-qualified employer is counted as employer-level raw. Worker inspected 120 source rows but did not preserve a trustworthy globally distinct employer denominator; 120 is not used as raw. Tiny denominator; not treated as stable lane efficiency."},
+    "growth_news": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+    "official_owner_ceo": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"verification only; not double-counted as raw"},
+    "industry": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"probe-only; no catalogue padding"},
+    "experimental_regional_investment_projects": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Fresh search attempted; no additional company-level candidate resolved far enough to count as raw."},
+    "experimental_partner_ecosystem_business_change": {"raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
   },
-  "qualified_companies": [
-    "Лидерстрой"
-  ],
+  "efficiency_control": {
+    "current_overall": {"raw":1,"fast_gate":1,"qualified":1,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"Tiny denominator; not interpreted as stable throughput efficiency."},
+    "previous_hour_overall": {"run_id":"N5K-20260830-517R1","raw":18,"fast_gate":5,"qualified":2,"qualified_raw_pct":11.1111,"fast_gate_raw_pct":27.7778},
+    "change_vs_previous_hour_pp": {"qualified_raw":88.8889,"fast_gate_raw":72.2222,"note":"Mechanical change only; denominator fell from 18 to 1, so this is not evidence of durable efficiency growth."},
+    "last_3_runs": [
+      {"run_id":"N5K-20260830-515R1","overall":{"raw":71,"fast_gate":11,"qualified":2,"qualified_raw_pct":2.8169,"fast_gate_raw_pct":15.4930}},
+      {"run_id":"N5K-20260830-516R1","overall":{"raw":15,"fast_gate":2,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":13.3333}},
+      {"run_id":"N5K-20260830-517R1","overall":{"raw":18,"fast_gate":5,"qualified":2,"qualified_raw_pct":11.1111,"fast_gate_raw_pct":27.7778},"lanes":{"experimental_regional_investment_projects":{"raw":10,"fast_gate":4,"size":3,"signal":2,"qualified":2,"duplicate_plus_early_reject":8,"qualified_raw_pct":20.0,"fast_gate_raw_pct":40.0},"experimental_partner_ecosystem_business_change":{"raw":8,"fast_gate":1,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":8,"qualified_raw_pct":0.0,"fast_gate_raw_pct":12.5}}}
+    ]
+  },
+  "adaptive_decision": {
+    "reason": "Net-new is 1 (<5), so prior allocation is not repeated automatically. Current jobs conversion is based on one resolved employer and does not justify expansion after recent saturation. Regional investment projects remain the strongest measured lane from RUN 517R1 at 20% qualified/raw and stay at the 60% ceiling. Partner/business-change is reduced after 0/8; official discovery receives a modest increase; industry remains probe-only.",
+    "next_discovery_mix_pct": {"jobs":5,"growth_news":5,"official_owner_ceo":10,"industry_probe_only":5,"experimental_regional_investment_projects":60,"experimental_partner_ecosystem_business_change":15}
+  },
+  "qualified_companies": ["Лидерстрой"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -101,5 +55,6 @@
   "physical_master_state": "538_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "538_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "repair_note": "Post-integration workflow left campaign_target.remaining_to_1000 and config header stale. campaign_target repaired in same cycle; this runtime repair restores efficiency/adaptive fields and correct remaining_to_1000=462."
 }
