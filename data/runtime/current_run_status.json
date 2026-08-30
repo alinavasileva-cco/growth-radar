@@ -2,7 +2,7 @@
   "run_id": "N5K-20260830-517R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T09:10:00+03:00",
+  "updated_at": "2026-08-30T09:12:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 535,
@@ -10,7 +10,8 @@
     "current_canonical_count": 537,
     "current_contactable_count": 537,
     "progress_added": 2,
-    "remaining": 4463
+    "remaining": 4463,
+    "remaining_to_1000": 463
   },
   "funnel": {
     "discovered": 18,
@@ -45,47 +46,63 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 12.5
     },
-    "jobs": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "note": "cooldown/capped; no fresh unconsumed worker staging after RUN 516R1"
-    },
-    "growth_news": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "note": "cooldown from prior zero-qualified streak"
-    },
-    "official_owner_ceo": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "note": "used only as verification, not double-counted as raw"
-    },
-    "industry": {
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "note": "probe-only; no catalogue raw padding"
+    "jobs": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "cooldown/capped; no fresh unconsumed worker staging after RUN 516R1"},
+    "growth_news": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "cooldown from prior zero-qualified streak"},
+    "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "verification only; not double-counted as raw"},
+    "industry": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "probe-only; no catalogue raw padding"}
+  },
+  "efficiency_control": {
+    "current_overall": {"raw": 18, "fast_gate": 5, "qualified": 2, "qualified_raw_pct": 11.1111, "fast_gate_raw_pct": 27.7778},
+    "previous_hour_overall": {"run_id": "N5K-20260830-516R1", "raw": 15, "fast_gate": 2, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 13.3333},
+    "change_vs_previous_hour_pp": {"qualified_raw": 11.1111, "fast_gate_raw": 14.4445},
+    "last_3_runs": [
+      {
+        "run_id": "N5K-20260830-514",
+        "overall": {"raw": 14, "fast_gate": 5, "qualified": 1, "qualified_raw_pct": 7.1429, "fast_gate_raw_pct": 35.7143},
+        "lanes": {
+          "jobs": {"raw": 4, "fast_gate": 4, "size": 3, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": 3, "qualified_raw_pct": 25.0, "fast_gate_raw_pct": 100.0},
+          "growth_news": {"raw": 8, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 8, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
+          "official_owner_ceo": {"raw": 2, "fast_gate": 1, "size": 1, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 2, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 50.0},
+          "industry": {"raw": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+          "experimental": {"raw": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+        }
+      },
+      {
+        "run_id": "N5K-20260830-515R1",
+        "overall": {"raw": 71, "fast_gate": 11, "qualified": 2, "qualified_raw_pct": 2.8169, "fast_gate_raw_pct": 15.4930},
+        "lanes": {
+          "jobs": {"raw": 59, "fast_gate": 9, "size": 3, "signal": 2, "qualified": 2, "duplicate_plus_early_reject": 57, "qualified_raw_pct": 3.3898, "fast_gate_raw_pct": 15.2542},
+          "growth_news": {"raw": 8, "fast_gate": 2, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 8, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 25.0},
+          "official_owner_ceo": {"raw": 4, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 4, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
+          "industry": {"raw": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+          "experimental": {"raw": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+        }
+      },
+      {
+        "run_id": "N5K-20260830-516R1",
+        "overall": {"raw": 15, "fast_gate": 2, "qualified": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 13.3333},
+        "lanes": {
+          "jobs": {"raw": 15, "fast_gate": 2, "size": 1, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 15, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 13.3333, "note": "one pre-write PASS resolved as physical canonical duplicate"},
+          "growth_news": {"raw": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+          "official_owner_ceo": {"raw": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+          "industry": {"raw": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+          "experimental": {"raw": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+        }
+      }
+    ]
+  },
+  "adaptive_decision": {
+    "reason": "Current net-new is 2 (<5), so prior allocation is not repeated automatically. Regional investment-project lane produced 20.0% qualified/raw and is increased to the 60% single-lane ceiling. Partner/business-change lane produced 0/8 and is reduced, but not hard-capped yet because this is only one measured RUN. Jobs/growth_news/official remain capped/cooldown from prior saturation or zero-qualified streaks. Industry stays probe-only.",
+    "next_discovery_mix_pct": {
+      "jobs": 5,
+      "growth_news": 5,
+      "official_owner_ceo": 5,
+      "industry_probe_only": 5,
+      "experimental_regional_investment_projects": 60,
+      "experimental_partner_ecosystem_business_change": 20
     }
   },
-  "qualified_companies": [
-    "Молком",
-    "Лузалес"
-  ],
+  "qualified_companies": ["Молком", "Лузалес"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -93,5 +110,6 @@
   "physical_master_state": "537_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "537_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "repair_note": "Initial RUN 517 staging used obsolete pending schema and workflow failed before canonical write. RUN 517R1 corrected only staging schema; quality criteria and candidate evidence were unchanged. Integration then succeeded physically."
 }
