@@ -1,0 +1,155 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-30T11:23:01+03:00",
+  "baseline_head": "31f35d9297b9998eeb3f73c56892509df85a34a2",
+  "config_version": "2026-08-30T11:02:30+03:00",
+  "constraints": {
+    "criteria_changed": false,
+    "criteria_weakened": false,
+    "canonical_writer_run": false,
+    "canonical_write_performed": false,
+    "outreach_performed": false
+  },
+  "dedup_precheck": {
+    "fresh_head_read": true,
+    "current_working_config_read": true,
+    "pending_workers_root_manifest_read": true,
+    "jobs_staging_tree_manifest_read": true,
+    "candidate_keys_searched_repo_wide_before_deep_check": true,
+    "candidate_keys_searched_repo_wide_immediately_before_staging": true,
+    "keys": ["lead_id", "inn", "ogrn_ogrnip", "exact_legal_name", "confirmed_brand_domain"],
+    "candidate_search_results": {
+      "inn_5406352193": "no repository match returned",
+      "ogrn_1065406145199": "no repository match returned",
+      "exact_legal_name_rdm_import": "no repository match returned",
+      "confirmed_brand_domain_rdm_import_ru": "no repository match returned"
+    },
+    "note": "Fresh HEAD and CURRENT_WORKING_CONFIG were read. The pending_workers root and jobs directory manifests were read before deep-check. Candidate-specific repo-wide searches were repeated immediately before staging. No historical pending file was rewritten."
+  },
+  "discovery": {
+    "target_employer_level_raw": "140-150 distinct low-overlap employers if sources support it",
+    "target_met": false,
+    "source_level_results_individually_reviewed": 27,
+    "raw_employer_level_distinct_confirmed": null,
+    "note": "Five independent region/query batches were searched. This run did not establish 140-150 globally distinct employer identities; vacancy totals and search-result counts were not converted into employer-level raw. No quota padding was used. The requested 20-30 individually resolved employers per batch was not reached in the available evidence surface, so no false batch-volume claim is made.",
+    "batches": [
+      {"source":"mixed job-board surfaces (HH-derived, DreamJob, Careerist, JobVK)","region":"Yekaterinburg","query_family":"commercial director / executive management","individually_reviewed_results":10,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":0,"note":"Large/public employers and ambiguous or oversized employers were rejected early where evident."},
+      {"source":"mixed job-board surfaces","region":"Kazan","query_family":"operating director","individually_reviewed_results":1,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":0},
+      {"source":"mixed job-board surfaces (HH-derived, DreamJob, Careerist, JobVK)","region":"Novosibirsk","query_family":"business development / marketing and sales director","individually_reviewed_results":7,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":1},
+      {"source":"mixed job-board surfaces (Careerist, Cataloxy, JobVK)","region":"Krasnodar","query_family":"commercial director / sales director","individually_reviewed_results":7,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":0},
+      {"source":"mixed job-board surfaces (DreamJob, Raberu)","region":"Samara","query_family":"operating director","individually_reviewed_results":2,"duplicates_plus_early_rejects":null,"duplicate_plus_early_reject_rate":null,"qualified":0}
+    ]
+  },
+  "worker_funnel": {
+    "source_level_results_individually_reviewed": 27,
+    "raw_employer_level_distinct_confirmed": null,
+    "fast_gate": 4,
+    "deep_check": 4,
+    "size": 2,
+    "legal": 2,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "note": "Only directly tracked funnel counts are asserted. Employer-level raw remains null rather than guessed."
+  },
+  "qualified": [
+    {
+      "brand": "РДМ-Импорт",
+      "legal_name": "ООО \"РДМ-ИМПОРТ\"",
+      "city": "Новосибирск",
+      "region": "Новосибирская область",
+      "inn": "5406352193",
+      "ogrn": "1065406145199",
+      "lead_id": null,
+      "status": "QUALIFIED",
+      "size": {
+        "revenue_2025_rub": 117876000,
+        "employees_2025": 26,
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1065406145199-ooo-rdm-import/",
+          "https://b2b.house/company/OOO-RDM-IMPORT_994c5c84-3a9a-498e-a664-0d1df770e869/",
+          "https://firmoteka.ru/5406352193"
+        ],
+        "note": "2025 revenue and employee count are used; older 2024 figures are not used for the SIZE decision where fresher 2025 reporting is available."
+      },
+      "legal": {
+        "active": true,
+        "manager": "Мазур Алексей Михайлович",
+        "manager_role": "Управляющий — индивидуальный предприниматель",
+        "owners": [
+          {"name":"Облецова Елена Борисовна","share":"65%"},
+          {"name":"Мазур Алексей Михайлович","share":"30%"},
+          {"name":"Облецов Роман Алексеевич","share":"5%"}
+        ],
+        "registered_address": "630112, Новосибирская область, г. Новосибирск, ул. Фрунзе, зд. 61/2, офис 1а",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-RDM-IMPORT_994c5c84-3a9a-498e-a664-0d1df770e869/",
+          "https://www.tbank.ru/business/contractor/legal/1065406145199/",
+          "https://firmoteka.ru/5406352193"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "executive_hiring_marketing_sales_development",
+        "title": "Заместитель управляющего по развитию (Директор по маркетингу и продажам)",
+        "date": "2026-06-14",
+        "facts": [
+          "the employer opened a senior development role combining sales leadership and creation of the marketing function",
+          "the role includes sales-team effectiveness and motivation systems",
+          "the role includes formation of a marketing department and development of marketing campaigns"
+        ],
+        "evidence_urls": [
+          "https://afkoffer.com/vacancies/marketing/133899687",
+          "https://h.careers/companies/rdm-import"
+        ]
+      },
+      "lpr": {
+        "manager": "Мазур Алексей Михайлович",
+        "owners": ["Облецова Елена Борисовна", "Мазур Алексей Михайлович", "Облецов Роман Алексеевич"],
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1065406145199/",
+          "https://b2b.house/company/OOO-RDM-IMPORT_994c5c84-3a9a-498e-a664-0d1df770e869/"
+        ]
+      },
+      "contact": {
+        "type": "published_company_email_phone_and_active_job_application_route",
+        "phone": "8 (383) 359-61-59",
+        "email": "rdm@rdm-import.ru",
+        "url": "https://rdm-import.ru/contacts/",
+        "application_url": "https://afkoffer.com/vacancies/marketing/133899687",
+        "evidence_urls": [
+          "https://rdm-import.ru/contacts/",
+          "https://afkoffer.com/vacancies/marketing/133899687"
+        ],
+        "note": "Phone and email are published on the company contact page. No contact was reconstructed from a pattern."
+      },
+      "dedup_keys": {
+        "inn": "5406352193",
+        "ogrn": "1065406145199",
+        "exact_legal_name": "ООО \"РДМ-ИМПОРТ\"",
+        "confirmed_brand_domain": "РДМ-Импорт|rdm-import.ru"
+      },
+      "brand_domain_link": {
+        "confirmed": true,
+        "domain": "rdm-import.ru",
+        "evidence_urls": [
+          "https://rdm-import.ru/contacts/",
+          "https://www.waze.com/live-map/directions/rdm-import%2C-avtosalon-ulica-frunze-612-novosibirsk?to=place.w.54395430.543626624.14213950",
+          "https://urbanplaces.su/ru_novosibirskaya-oblast/novosibirsk-gorodskoj-okrug-novosibirsk/card-2426447-rdm-import"
+        ],
+        "note": "The official contact page uses the same current operating address at Frunze 61/2 and RDM-Import brand; external business listings identify the same address/domain for ООО РДМ-Импорт."
+      },
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1065406145199-ooo-rdm-import/",
+        "https://b2b.house/company/OOO-RDM-IMPORT_994c5c84-3a9a-498e-a664-0d1df770e869/",
+        "https://firmoteka.ru/5406352193",
+        "https://www.tbank.ru/business/contractor/legal/1065406145199/",
+        "https://afkoffer.com/vacancies/marketing/133899687",
+        "https://h.careers/companies/rdm-import",
+        "https://rdm-import.ru/contacts/"
+      ]
+    }
+  ]
+}
