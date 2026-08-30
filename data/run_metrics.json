@@ -26,6 +26,13 @@
     "physically_integrated": 1,
     "duplicates": 2,
     "excluded": 27,
+    "overall_efficiency": {
+      "qualified_raw_pct": 3.3333,
+      "fast_gate_raw_pct": 10.0,
+      "delta_vs_previous_hour_qualified_raw_pp": -6.6667,
+      "delta_vs_previous_hour_fast_gate_raw_pp": -10.0,
+      "net_qualified_change_vs_previous_hour": 0
+    },
     "lane_metrics": [
       {
         "lane": "jobs",
@@ -40,8 +47,7 @@
         "duplicate_plus_early_reject": 25,
         "qualified_raw_pct": 3.8462,
         "fast_gate_raw_pct": 7.6923,
-        "duplicate_plus_early_reject_pct": 96.1538,
-        "note": "Fresh immutable worker staging. Final physical canonical guard remains authoritative. Jobs remains high-overlap despite one pre-write qualified candidate."
+        "duplicate_plus_early_reject_pct": 96.1538
       },
       {
         "lane": "fresh_growth_official_probe",
@@ -56,9 +62,21 @@
         "duplicate_plus_early_reject": 4,
         "qualified_raw_pct": 0.0,
         "fast_gate_raw_pct": 25.0,
-        "duplicate_plus_early_reject_pct": 100.0,
-        "note": "Fresh 29-30 Aug 2026 growth/official probe: Element rejected as oversized/public-scale mismatch; NTM rejected due legal/reorganization continuity issue; NARTIS canonical-known duplicate; Turbokomplekt had fresh expansion signal but no sufficiently fresh current SIZE evidence for qualification. No catalog/exhibition presence counted as SIGNAL."
+        "duplicate_plus_early_reject_pct": 100.0
       }
-    ]
+    ],
+    "comparison_last_3_runs": [
+      {"run_id":"N5K-20260830-528","raw":25,"fast_gate":6,"qualified":1,"qualified_raw_pct":4.0,"fast_gate_raw_pct":24.0},
+      {"run_id":"N5K-20260830-529R1","raw":56,"fast_gate":9,"qualified":2,"qualified_raw_pct":3.5714,"fast_gate_raw_pct":16.0714},
+      {"run_id":"N5K-20260830-530","raw":10,"fast_gate":2,"qualified":1,"qualified_raw_pct":10.0,"fast_gate_raw_pct":20.0}
+    ],
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 20,
+      "official_owner_ceo": 35,
+      "industry_catalog": 5,
+      "regional_investment": 25,
+      "partner_business_change": 10
+    }
   }
 }
