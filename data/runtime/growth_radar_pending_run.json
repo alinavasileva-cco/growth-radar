@@ -1,8 +1,155 @@
 {
-  "run_id": "N5K-20260830-527",
-  "updated_at": "2026-08-30T20:00:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-527 integrated physically; canonical/contactable 545/545; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-528",
+  "updated_at": "2026-08-30T21:00:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 25,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 23
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_probe_fresh_management",
+      "raw": 19,
+      "fast_gate": 4,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 18,
+      "qualified_raw_pct": 5.2632,
+      "fast_gate_raw_pct": 21.0526,
+      "note": "Fresh immutable worker staging 20260830-201715-jobs.json. This is the allowed ~20-company probe batch while jobs remains capped. 19 employer-level raw were actually reviewed; raw was not padded."
+    },
+    {
+      "lane": "growth_news_industrial_expansion",
+      "raw": 6,
+      "fast_gate": 2,
+      "size": 2,
+      "legal": 2,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 5,
+      "qualified_raw_pct": 16.6667,
+      "fast_gate_raw_pct": 33.3333,
+      "note": "Own low-overlap review rotated fresh industrial expansion sources. AST Slon passed full funnel. LMR Plast failed SIGNAL because the apparent fresh expansion item traced to older 2024/2025 expansion material; stale evidence was excluded. Other reviewed entities did not justify deep-check under unchanged criteria."
+    },
+    {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+    {"lane":"industry_catalog","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"No catalogue presence was used as SIGNAL."},
+    {"lane":"regional_investment","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
+    {"lane":"partner_business_change","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0706",
+      "Brand": "ПолиАэрПак / PAP.pro",
+      "Legal Name": "ООО «ТОРГОВЫЙ ДОМ «ПОЛИАЭРПАК»",
+      "INN": "7743641590",
+      "OGRN/OGRNIP": "5077746710828",
+      "Region": "Москва / Республика Татарстан",
+      "City": "Москва; вакансия Казань",
+      "Segment": "Производство упаковочных материалов / B2B",
+      "Website": "https://pap.pro/",
+      "Revenue/Scale": "Выручка 1,97 млрд ₽ за 2025 год; среднее предприятие; 188 сотрудников по worker-проверке",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежая вакансия коммерческого директора в Казани: стратегия развития продаж, управление выручкой, прибылью и маржинальностью, поиск новых точек роста и повышение эффективности каналов продаж.",
+      "Signal Date": "2026-08-20",
+      "Signal Source": "https://dreamjob.ru/employers/1243527/vakansii/136447567",
+      "Owner": "Акашкин Владимир Николаевич 50%; Пастухова Лариса Юрьевна 40%; Румянцев Михаил Юрьевич 10%",
+      "CEO": "Румянцев Михаил Юрьевич",
+      "LPR": "Румянцев Михаил Юрьевич",
+      "LPR Role": "Генеральный директор / совладелец 10%",
+      "Primary Phone": "+7 (495) 644-44-70",
+      "Primary Email": "plenka@tdpap.ru",
+      "HH Contact": "https://dreamjob.ru/employers/1243527/vakansii/136447567",
+      "Contact Form": "https://pap.pro/about_company/",
+      "Contact Type": "Корпоративный маршрут; вакансия коммерческого директора",
+      "Contact Source": "PAP.pro; DreamJob/HH surface",
+      "Consulting Hypothesis": "Диагностика коммерческой системы B2B: прибыльность каналов, региональная экспансия, KPI продаж и 90-дневная программа роста без подмены роли коммерческого директора.",
+      "contacts": [
+        {"channel":"phone","type":"corporate","value":"+7 (495) 644-44-70","source":"PAP.pro","url":"https://pap.pro/about_company/","is_lpr":false,"notes":"Опубликованный корпоративный маршрут; персональным контактом ЛПР не является."},
+        {"channel":"email","type":"corporate","value":"plenka@tdpap.ru","source":"PAP.pro","url":"https://pap.pro/about_company/","is_lpr":false,"notes":"Опубликованный корпоративный email."},
+        {"channel":"job_board","type":"corporate","value":"https://dreamjob.ru/employers/1243527/vakansii/136447567","source":"DreamJob","url":"https://dreamjob.ru/employers/1243527/vakansii/136447567","is_lpr":false,"notes":"Свежий публичный маршрут через вакансию коммерческого директора."}
+      ],
+      "evidence": [
+        {"type":"LEGAL_LPR","claim":"ООО «ТД «ПОЛИАЭРПАК», ИНН 7743641590, ОГРН 5077746710828, действует; генеральный директор Румянцев Михаил Юрьевич; доли учредителей 50/40/10.","url":"https://zachestnyibiznes.ru/company/ul/5077746710828_7743641590_OOO-TD-POLIAERPAK","source":"ЗаЧестныйБизнес"},
+        {"type":"SIZE","claim":"Бухгалтерская выручка за 2025 год около 1,97 млрд ₽.","url":"https://www.tbank.ru/business/contractor/legal/5077746710828/","source":"Т-Банк Бизнес"},
+        {"type":"SIGNAL","claim":"20.08.2026 опубликована вакансия коммерческого директора с прямыми задачами по стратегии продаж, выручке, прибыли, маржинальности и новым точкам роста.","url":"https://dreamjob.ru/employers/1243527/vakansii/136447567","source":"DreamJob"},
+        {"type":"CONTACT","claim":"Официальный сайт подтверждает корпоративный email и форму связи; используются только публичные корпоративные маршруты.","url":"https://pap.pro/about_company/","source":"PAP.pro"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0707",
+      "Brand": "АСТ «Слон»",
+      "Legal Name": "ООО «АВТОСПЕЦТЕХНИКА «СЛОН»",
+      "INN": "7415093767",
+      "OGRN/OGRNIP": "1167456066865",
+      "Region": "Челябинская область",
+      "City": "Миасс",
+      "Segment": "Производство грузовых автомобилей и спецтехники / B2B",
+      "Website": "https://astslon.ru/",
+      "Revenue/Scale": "Выручка около 490,8 млн ₽ за 2025 год; 30 сотрудников; категория МСП — среднее предприятие",
+      "Signal Level": "S2",
+      "Signal Summary": "27.08.2026 компания запустила новую производственную площадку площадью более 4 тыс. м² после инвестиций свыше 88 млн ₽; заявленная мощность — до 50 автоцистерн в месяц, расширение линейки спецтехники и перенос производства в Миасс.",
+      "Signal Date": "2026-08-27",
+      "Signal Source": "https://chel.dk.ru/news/237246703",
+      "Owner": "Рогач Виталий Сергеевич 100%",
+      "CEO": "Призенцова Юлия Александровна",
+      "LPR": "Призенцова Юлия Александровна",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "8 (3513) 26-45-00",
+      "Primary Email": "mail@astslon.ru",
+      "HH Contact": "",
+      "Contact Form": "https://astslon.ru/contacts",
+      "Contact Type": "Корпоративный маршрут к генеральному директору",
+      "Contact Source": "Официальный сайт АСТ «Слон»",
+      "Consulting Hypothesis": "После ввода новой площадки — диагностика коммерческой загрузки мощностей, маржинальности продуктовой линейки, B2B-воронки, дилерских/региональных каналов и управленческой модели роста.",
+      "contacts": [
+        {"channel":"phone","type":"corporate","value":"8 (3513) 26-45-00","source":"АСТ «Слон»","url":"https://astslon.ru/contacts","is_lpr":false,"notes":"Официальный корпоративный телефон; персональным контактом ЛПР не является."},
+        {"channel":"email","type":"corporate","value":"mail@astslon.ru","source":"АСТ «Слон»","url":"https://astslon.ru/contacts","is_lpr":false,"notes":"Официальный корпоративный email."},
+        {"channel":"contact_form","type":"corporate","value":"https://astslon.ru/contacts","source":"АСТ «Слон»","url":"https://astslon.ru/contacts","is_lpr":false,"notes":"Официальный практический маршрут связи."}
+      ],
+      "evidence": [
+        {"type":"LEGAL_LPR","claim":"ООО «АСТ «СЛОН», ИНН 7415093767, ОГРН 1167456066865, действует; гендиректор Призенцова Юлия Александровна; учредитель Рогач Виталий Сергеевич 100%.","url":"https://check.tochka.com/company/1167456066865/","source":"Точка"},
+        {"type":"SIZE","claim":"За 2025 год выручка около 490,8 млн ₽, 30 сотрудников; категория МСП — среднее предприятие.","url":"https://b2b.house/company/OOO-AST-SLON_8f2d248f-9563-4630-8489-46919e604d02/","source":"B2B.House"},
+        {"type":"SIGNAL","claim":"27.08.2026 запущена новая площадка более 4 тыс. м² с инвестициями свыше 88 млн ₽ и мощностью до 50 автоцистерн в месяц.","url":"https://chel.dk.ru/news/237246703","source":"DK.RU Челябинск"},
+        {"type":"CONTACT","claim":"Официальный сайт подтверждает телефон, email, реквизиты компании и генерального директора Призенцову Юлию Александровну.","url":"https://astslon.ru/contacts","source":"АСТ «Слон»"}
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 2,
+  "notes": "RUN 528: read fresh HEAD/status/target/config and physical campaign master/contactable/contact/evidence surfaces; ingest fresh immutable jobs worker first, then own low-overlap industrial growth/news discovery. No raw padding. Jobs remained probe-only. Stale LMR Plast expansion article was excluded from SIGNAL because the apparent 2026 item traced to older 2024/2025 expansion material. Final physical integration guard must dedup again by Lead ID, INN, OGRN, exact legal name and brand+domain. No outreach. Post-integration hourly metrics must be repaired if physical dedup changes net qualified.",
+  "hourly_efficiency": {
+    "overall_qualified_raw_pct": 8.0,
+    "overall_fast_gate_raw_pct": 24.0,
+    "previous_run_qualified_raw_pct": 0.0,
+    "previous_run_fast_gate_raw_pct": 20.0,
+    "delta_qualified_raw_pp": 8.0,
+    "delta_fast_gate_raw_pp": 4.0,
+    "previous_net_qualified": 0,
+    "prewrite_net_qualified": 2,
+    "last_runs": [
+      {"run_id":"N5K-20260830-525","raw":21,"fast_gate":6,"size":3,"signal":3,"qualified":1,"qualified_raw_pct":4.7619,"fast_gate_raw_pct":28.5714},
+      {"run_id":"N5K-20260830-526","raw":17,"fast_gate":7,"size":3,"signal":2,"qualified":1,"qualified_raw_pct":5.8824,"fast_gate_raw_pct":41.1765},
+      {"run_id":"N5K-20260830-527","raw":25,"fast_gate":5,"size":3,"signal":2,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":20.0},
+      {"run_id":"N5K-20260830-528","raw":25,"fast_gate":6,"size":3,"signal":2,"qualified":2,"qualified_raw_pct":8.0,"fast_gate_raw_pct":24.0}
+    ]
+  },
+  "adaptive_decision": {
+    "reason": "Net-new prewrite improved from 0 to 2, but absolute output remains below 5. Jobs produced 1/19 but duplicate+early-reject remains 18/19=94.74%, so jobs stays at 5% probe-only. Fresh industrial growth/news produced 1/6 and is increased modestly; stale reprints are excluded.",
+    "lanes_cut_or_capped": ["jobs_probe_fresh_management remains 5% probe-only"],
+    "lanes_boosted": ["growth_news_industrial_expansion"],
+    "next_distribution_pct": {"jobs":5,"growth_news":35,"official_owner_ceo":20,"industry_catalog":5,"regional_investment":25,"partner_business_change":10}
+  }
 }
