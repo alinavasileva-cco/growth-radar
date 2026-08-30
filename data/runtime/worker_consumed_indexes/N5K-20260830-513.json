@@ -1,0 +1,24 @@
+{
+  "run_id": "N5K-20260830-513",
+  "updated_at": "2026-08-30T05:16:00+03:00",
+  "status": "COMPLETE",
+  "workers": [
+    {
+      "lane": "jobs",
+      "path": "data/pending_workers/jobs/20260830-042046-jobs.json",
+      "blob_sha": "cca061e078e331ff32064ef714af95519e07ed63",
+      "result": "CONSUMED_DUPLICATE",
+      "worker_source_level_observations": 21,
+      "worker_legal_resolved_raw": 3,
+      "worker_fast_gate": 3,
+      "worker_qualified": 1,
+      "integrated_net_new": 0,
+      "duplicate_brand": "СИЛА-ЦЕНТР",
+      "duplicate_existing_lead_id": "N5K-0655",
+      "duplicate_keys": ["INN 6312113811", "OGRN 1126312000011"],
+      "note": "Worker staging said UNIQUE_AT_STAGING_TIME, but canonical physical master is authoritative and already contains this company."
+    }
+  ],
+  "immutable_staging_preserved": true,
+  "note": "Canonical writer ingested fresh staging before own discovery and repeated global physical dedup."
+}
