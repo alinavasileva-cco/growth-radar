@@ -37,77 +37,39 @@
       "fast_gate_raw_pct": 80.0,
       "note": "Fresh 2026 Technopolis production launches; NexTouch stopped by physical canonical dedup; Entech stopped at SIZE; TZMOI stopped at CONTACT because a sufficiently reliable current practical route was not confirmed in this pass."
     },
-    {
-      "lane": "jobs",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Capped/probe-only after two consecutive zero-net-qualified runs and 94.2857% duplicate+early-reject in RUN 521; no fresh unconsumed worker batch available at run start."
-    },
-    {
-      "lane": "official_owner_ceo",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Used only for independent verification, not double-counted as discovery raw."
-    },
-    {
-      "lane": "industry_catalog",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "Probe-only; exhibition/catalog presence never treated as SIGNAL."
-    },
-    {
-      "lane": "regional_investment",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "No additional company-level candidate promoted in this measured batch."
-    },
-    {
-      "lane": "partner_business_change",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "note": "No additional company-level candidate promoted in this measured batch."
-    }
+    {"lane":"jobs","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Capped/probe-only. RUN 522 is first capped RUN after two consecutive zero-net-qualified jobs RUNs; no fresh unconsumed worker batch at run start."},
+    {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Verification only; not double-counted as discovery raw."},
+    {"lane":"industry_catalog","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Probe-only; exhibition/catalogue presence never treated as SIGNAL."},
+    {"lane":"regional_investment","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"No additional company-level candidate promoted in this measured batch."},
+    {"lane":"partner_business_change","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"No additional company-level candidate promoted in this measured batch."}
   ],
-  "qualified_companies": [
-    "ИнтехПро / REALINTECHPRO",
-    "Неорос / NEOROS"
-  ],
+  "hourly_efficiency": {
+    "current": {"run_id":"N5K-20260830-522","raw":5,"fast_gate":4,"size":3,"signal":3,"qualified":2,"duplicate_plus_early_reject":1,"qualified_raw_pct":40.0,"fast_gate_raw_pct":80.0},
+    "last_three_completed": [
+      {"run_id":"N5K-20260830-519","raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"n=1; not stable"},
+      {"run_id":"N5K-20260830-520R1","raw":null,"fast_gate":null,"size":2,"signal":2,"qualified":2,"duplicate_plus_early_reject":null,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Trustworthy globally distinct employer raw denominator unavailable; percentages intentionally not reconstructed."},
+      {"run_id":"N5K-20260830-521","raw":140,"fast_gate":9,"size":3,"signal":1,"qualified":0,"duplicate_plus_early_reject":132,"qualified_raw_pct":0.0,"fast_gate_raw_pct":6.4286}
+    ],
+    "change_vs_previous_measurable_hour": {"previous_run_id":"N5K-20260830-521","qualified_raw_delta_pp":40.0,"fast_gate_raw_delta_pp":73.5714,"absolute_qualified_change":2},
+    "interpretation": "Current measured batch improved materially versus RUN 521, but n=5 is small and is not treated as a stable long-run conversion rate."
+  },
+  "adaptive_decision": {
+    "jobs": "CAP_5_PROBE_ONLY; first capped RUN completed after two consecutive zero-qualified trigger; keep capped for next two RUNs before a normal return test.",
+    "growth_news": "BOOST_TO_40 because current fresh Technopolis batch produced 2/5 net qualified and materially beat RUN 521.",
+    "official_owner_ceo": "KEEP_10; verification remains high-value but not double-counted as discovery.",
+    "industry_catalog": "KEEP_5_PROBE_ONLY; catalogue/exhibition presence is never SIGNAL.",
+    "regional_investment": "REDUCE_TO_35 to fund the currently productive growth/news lane while preserving a large share because RUN 517R1 produced 20% qualified/raw on 10 raw.",
+    "partner_business_change": "KEEP_5.",
+    "next_distribution_pct": {"jobs":5,"growth_news":40,"official_owner_ceo":10,"industry_catalog":5,"regional_investment":35,"partner_business_change":5}
+  },
+  "qualified_companies": ["ИнтехПро / REALINTECHPRO","Неорос / NEOROS"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
   "physical_master_state": "543_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "543_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "qualified_staged_not_counted": 0,
   "outreach_sent": 0,
   "blocker": null
 }
