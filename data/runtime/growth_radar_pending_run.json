@@ -1,8 +1,97 @@
 {
-  "run_id": "N5K-20260830-517R1",
-  "updated_at": "2026-08-30T09:10:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260830-517R1 integrated physically; canonical/contactable 537/537; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260830-518",
+  "updated_at": "2026-08-30T10:01:13+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 0
+  },
+  "lane_metrics": {
+    "jobs": {
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 100.0,
+      "fast_gate_raw_pct": 100.0,
+      "note": "Only the single legally resolved fresh worker-qualified employer is counted as employer-level raw. Worker inspected 120 source rows but did not preserve a trustworthy globally distinct employer denominator, so 120 is not used as raw. Tiny denominator; not treated as stable lane efficiency."
+    },
+    "growth_news": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "No employer-level raw confirmed in this cycle."},
+    "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "Used only for verification; not double-counted as discovery raw."},
+    "industry": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "Probe-only; no catalogue padding."},
+    "experimental_regional_investment_projects": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null, "note": "Fresh source search was attempted after worker ingest, but returned no additional company-level candidate resolved far enough to count as raw; search-result rows were not counted as companies."},
+    "experimental_partner_ecosystem_business_change": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+  },
+  "efficiency_control": {
+    "current_overall": {"raw": 1, "fast_gate": 1, "qualified": 1, "qualified_raw_pct": 100.0, "fast_gate_raw_pct": 100.0, "note": "Tiny denominator; not comparable as stable throughput efficiency."},
+    "previous_hour_overall": {"run_id": "N5K-20260830-517R1", "raw": 18, "fast_gate": 5, "qualified": 2, "qualified_raw_pct": 11.1111, "fast_gate_raw_pct": 27.7778},
+    "change_vs_previous_hour_pp": {"qualified_raw": 88.8889, "fast_gate_raw": 72.2222, "note": "Mechanical change only; denominator collapsed from 18 to 1, so no claim of real efficiency improvement."},
+    "last_3_runs": [
+      {"run_id":"N5K-20260830-515R1","overall":{"raw":71,"fast_gate":11,"qualified":2,"qualified_raw_pct":2.8169,"fast_gate_raw_pct":15.4930}},
+      {"run_id":"N5K-20260830-516R1","overall":{"raw":15,"fast_gate":2,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":13.3333}},
+      {"run_id":"N5K-20260830-517R1","overall":{"raw":18,"fast_gate":5,"qualified":2,"qualified_raw_pct":11.1111,"fast_gate_raw_pct":27.7778},"lanes":{"experimental_regional_investment_projects":{"raw":10,"fast_gate":4,"size":3,"signal":2,"qualified":2,"duplicate_plus_early_reject":8,"qualified_raw_pct":20.0,"fast_gate_raw_pct":40.0},"experimental_partner_ecosystem_business_change":{"raw":8,"fast_gate":1,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":8,"qualified_raw_pct":0.0,"fast_gate_raw_pct":12.5}}}
+    ]
+  },
+  "adaptive_decision": {
+    "reason": "Net-new before physical write is 1 (<5). Current jobs ratio is based on only one resolved employer and does not justify increasing jobs after recent saturation. RUN 517 regional investment projects remains the strongest measured lane at 20% qualified/raw, so it stays at the 60% ceiling. Partner/business-change is reduced after 0/8; official verification/discovery gets a modest increase while industry remains probe-only.",
+    "next_discovery_mix_pct": {
+      "jobs": 5,
+      "growth_news": 5,
+      "official_owner_ceo": 10,
+      "industry_probe_only": 5,
+      "experimental_regional_investment_projects": 60,
+      "experimental_partner_ecosystem_business_change": 15
+    }
+  },
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0698",
+      "Brand": "Лидерстрой",
+      "Legal Name": "ООО \"ЛИДЕРСТРОЙ\"",
+      "INN": "3812019025",
+      "OGRN/OGRNIP": "1173850021256",
+      "Region": "Иркутская область",
+      "City": "Иркутск",
+      "Segment": "Строительные материалы / оптово-розничная торговля",
+      "Website": "https://liderstroy38.ru/",
+      "Revenue/Scale": "Выручка 2025: 29,53 млн ₽; компания масштабирует бизнес и ищет исполнительного директора/COO",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежая вакансия исполнительного директора (CEO/COO) прямо связана с масштабированием бизнеса, систематизацией подразделений, усилением контроля, ростом прибыли и автоматизацией B2B/retail процессов.",
+      "Signal Date": "2026-07-08",
+      "Signal Source": "https://dreamjob.ru/employers/436633/vakansii/134979470",
+      "Owner": "Пыткин Роман Александрович",
+      "CEO": "Чуева Анастасия Александровна",
+      "LPR": "Пыткин Роман Александрович",
+      "LPR Role": "Собственник, 100%",
+      "Primary Phone": "+7 (3952) 94-35-03",
+      "Primary Email": "maria-liderstroy38@liderstroy24.ru",
+      "HH Contact": "",
+      "Contact Form": "https://liderstroy38.ru/",
+      "Contact Type": "Корпоративный маршрут",
+      "Contact Source": "Официальный сайт компании",
+      "Consulting Hypothesis": "Систематизация масштабирования: коммерческий блок, управленческий контур, KPI/P&L, автоматизация и разделение B2B/retail процессов.",
+      "contacts": [
+        {"value":"+7 (3952) 94-35-03","channel":"phone","type":"corporate","source":"Официальный сайт Лидерстрой","url":"https://liderstroy38.ru/","is_lpr":false,"notes":"Опубликованный корпоративный телефон; не персональный контакт ЛПР."},
+        {"value":"maria-liderstroy38@liderstroy24.ru","channel":"email","type":"corporate","source":"Официальный сайт Лидерстрой","url":"https://liderstroy38.ru/","is_lpr":false,"notes":"Опубликованный корпоративный email; не персональный контакт ЛПР."}
+      ],
+      "evidence": [
+        {"type":"SIZE","claim":"Выручка ООО ЛИДЕРСТРОЙ за 2025 год — 29,53 млн ₽.","url":"https://www.tbank.ru/business/contractor/legal/1173850021256/","source":"Т-Банк Бизнес / данные контрагента"},
+        {"type":"LEGAL_LPR","claim":"ООО ЛИДЕРСТРОЙ, ИНН 3812019025, ОГРН 1173850021256, действует; директор Чуева Анастасия Александровна, собственник Пыткин Роман Александрович 100%.","url":"https://companies.rbc.ru/id/1173850021256-ooo-liderstroj/","source":"РБК Компании"},
+        {"type":"SIGNAL","claim":"08.07.2026 опубликована вакансия исполнительного директора CEO/COO: компания масштабируется; задачи включают систематизацию подразделений, рост прибыли, коммерческий блок и автоматизацию B2B/retail.","url":"https://dreamjob.ru/employers/436633/vakansii/134979470","source":"Dream Job"},
+        {"type":"CONTACT","claim":"Корпоративный телефон +7 (3952) 94-35-03 и email maria-liderstroy38@liderstroy24.ru опубликованы на сайте компании.","url":"https://liderstroy38.ru/","source":"Официальный сайт Лидерстрой"}
+      ]
+    }
+  ],
+  "notes": "Fresh immutable worker staging data/pending_workers/jobs/20260830-092535-jobs.json ingested first. Canonical writer independently rechecked the S1 vacancy on 2026-08-30; current search surfaces still show the Liderstroy executive-director vacancy. Physical integration workflow must perform the final dedup by Lead ID, INN, OGRN, exact legal name and brand+domain. No outreach."
 }
