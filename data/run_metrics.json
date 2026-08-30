@@ -9,6 +9,7 @@
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
   "remaining_to_target": 4459,
+  "remaining_to_1000": 459,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
@@ -26,6 +27,8 @@
     "physically_integrated": 0,
     "duplicates": 1,
     "excluded": 139,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 6.4286,
     "lane_metrics": {
       "jobs": {
         "raw": 140,
@@ -33,11 +36,12 @@
         "size": 3,
         "legal": 2,
         "signal": 1,
-        "qualified": 1,
-        "duplicate_plus_early_reject": 131,
-        "qualified_raw_pct": 0.7143,
-        "fast_gate_raw_pct": 6.4286,
-        "note": "Seven 20-employer low-overlap job-board/region batches; employer de-overlap was performed by worker. Batch-level exact canonical duplicate shares were not reconstructed, so duplicate_plus_early_reject is raw minus fast_gate, not a claimed physical-duplicate count."
+        "qualified": 0,
+        "physical_duplicates": 1,
+        "duplicate_plus_early_reject": 132,
+        "duplicate_plus_early_reject_pct": 94.2857,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 6.4286
       },
       "regional_investment_projects": {
         "raw": null,
@@ -49,49 +53,25 @@
         "qualified": 0,
         "duplicate_plus_early_reject": null,
         "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null,
-        "note": "Post-worker adaptive discovery reviewed fresh regional investment signals. The strongest new candidate, Элтекс, was stopped at LEGAL because current sources map the brand/news to conflicting legal entities; unresolved names are not promoted into canonical raw denominators."
-      },
-      "growth_news": {
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "signal": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
         "fast_gate_raw_pct": null
       },
-      "official_owner_ceo": {
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "signal": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      },
-      "industry_probe_only": {
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "signal": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      },
-      "partner_business_change": {
-        "raw": 0,
-        "fast_gate": 0,
-        "size": 0,
-        "signal": 0,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null
-      }
-    }
+      "growth_news": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+      "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+      "industry_probe_only": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
+      "partner_business_change": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+    },
+    "last_three_runs": [
+      {"run_id":"N5K-20260830-518","raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"n=1; unstable denominator"},
+      {"run_id":"N5K-20260830-519","raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"n=1; unstable denominator"},
+      {"run_id":"N5K-20260830-520R1","raw":null,"fast_gate":null,"size":null,"signal":null,"qualified":2,"duplicate_plus_early_reject":null,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"No trustworthy globally distinct employer-level denominator; jobs net0, growth/news net2."}
+    ],
+    "change_vs_previous_hour": {
+      "net_qualified_delta": -2,
+      "qualified_raw_delta_pp": null,
+      "fast_gate_raw_delta_pp": null,
+      "reason": "RUN 520R1 lacks a trustworthy distinct-employer raw denominator; no like-for-like conversion delta is claimed."
+    },
+    "next_distribution_pct": {"jobs":5,"growth_news":25,"official_owner_ceo":10,"industry_probe_only":5,"regional_investment_projects":50,"partner_business_change":5},
+    "adaptive_notes": "Jobs capped at 5% and no deep-check by default after two consecutive jobs RUNs with 0 net qualified; current jobs duplicate+early-reject 94.2857%. Growth/news boosted because it produced both net-new companies in 520R1. Regional investment remains primary based on the best non-tiny measured performance (RUN 517R1: 20% qualified/raw) but reduced from 55% to 50% after the current probe produced no legally resolvable net-new."
   }
 }
