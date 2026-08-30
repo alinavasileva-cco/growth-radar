@@ -1,0 +1,35 @@
+{
+  "run_id": "N5K-20260830-523",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-30T15:24:38+03:00",
+  "status": "CONSUMED_WITH_CANONICAL_DEDUP",
+  "immutable_worker_files": [
+    {
+      "path": "data/pending_workers/jobs/20260830-152302-jobs.json",
+      "blob_sha": "130ed1e88b3383f97dcc5ea21731626652444357",
+      "worker": "jobs",
+      "employer_level_raw": 12,
+      "prewrite_qualified": 1,
+      "net_qualified": 0,
+      "physical_duplicate": "Дымов Керамика",
+      "dedup_reasons": ["INN", "OGRN", "BRAND_DOMAIN"]
+    }
+  ],
+  "own_discovery": {
+    "lane": "growth_regional_fresh_expansion",
+    "employer_level_raw": 6,
+    "prewrite_qualified": 1,
+    "net_qualified": 0,
+    "physical_duplicate": "НАРТИС",
+    "dedup_reasons": ["INN", "OGRN", "BRAND_DOMAIN"]
+  },
+  "canonical_before": 543,
+  "canonical_after": 543,
+  "contactable_after": 543,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "staged_qualified_not_counted": 0,
+  "outreach": 0,
+  "note": "Immutable staging preserved. Final physical integration guard blocked both pre-write PASS candidates as existing canonical companies."
+}
