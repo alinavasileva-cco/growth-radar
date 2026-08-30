@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260830-515R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_AFTER_METADATA_REPAIR",
   "updated_at": "2026-08-30T07:32:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
@@ -10,7 +10,29 @@
     "current_canonical_count": 535,
     "current_contactable_count": 535,
     "progress_added": 1,
-    "remaining": 4465
+    "remaining": 4465,
+    "remaining_to_1000": 465
+  },
+  "hourly_cycle": {
+    "baseline_count": 533,
+    "current_canonical_count": 535,
+    "progress_added": 2,
+    "raw": 71,
+    "fast_gate": 11,
+    "size": 3,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 2,
+    "physical_known_duplicates": 2,
+    "excluded": 69,
+    "qualified_raw_pct": 2.8169,
+    "fast_gate_raw_pct": 15.4930,
+    "change_vs_previous_hour_pp": {
+      "qualified_raw": -4.3260,
+      "fast_gate_raw": -20.2213
+    }
   },
   "funnel": {
     "discovered": 30,
@@ -26,53 +48,36 @@
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_072745",
-      "raw": 30,
-      "fast_gate": 5,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 29,
-      "qualified_raw_pct": 3.3333,
-      "fast_gate_raw_pct": 16.6667,
-      "action": "CAP_5_PERCENT",
-      "reason": "96.67% of distinct raw did not reach qualified; jobs remains in saturation cooldown"
-    },
-    {
-      "lane": "hourly_cycle_aggregate_jobs",
+      "lane": "jobs",
       "raw": 59,
       "fast_gate": 9,
       "size": 3,
-      "legal": 2,
       "signal": 2,
       "qualified": 2,
       "duplicate_plus_early_reject": 57,
       "qualified_raw_pct": 3.3898,
       "fast_gate_raw_pct": 15.2542,
       "action": "CAP_5_PERCENT",
-      "reason": "aggregate of both fresh jobs staging batches ingested in this hourly cycle; saturation remains >70%"
+      "reason": "duplicate+early-reject remains above 70% across the current measured jobs pool; cooldown remains active"
     },
     {
-      "lane": "growth_news_hourly_cycle",
+      "lane": "growth_news",
       "raw": 8,
       "fast_gate": 2,
       "size": 0,
-      "legal": 0,
       "signal": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 8,
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 25.0,
-      "action": "CAP_5_PERCENT_NEXT_3_RUNS",
+      "action": "CAP_5_PERCENT_NEXT_3_RUNS_NO_DEEP_CHECK",
       "reason": "RUN514 and current hourly cycle both produced 0 qualified"
     },
     {
-      "lane": "official_owner_ceo_hourly_cycle",
+      "lane": "official_owner_ceo",
       "raw": 4,
       "fast_gate": 0,
       "size": 0,
-      "legal": 0,
       "signal": 0,
       "qualified": 0,
       "duplicate_plus_early_reject": 4,
@@ -80,17 +85,77 @@
       "fast_gate_raw_pct": 0.0,
       "action": "CAP_5_PERCENT_NEXT_3_RUNS_NO_DEEP_CHECK",
       "reason": "RUN514 and current hourly cycle both produced 0 qualified; current fast_gate/raw is below 2%"
+    },
+    {
+      "lane": "industry_catalog",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "action": "PROBE_ONLY_5_PERCENT"
+    },
+    {
+      "lane": "experimental_low_overlap",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "action": "EXPAND_NEXT_RUN"
     }
   ],
-  "qualified_companies": [
-    "Железяка"
-  ],
+  "lane_history": {
+    "N5K-20260830-512": {
+      "jobs": {"raw": 8, "fast_gate": 4, "size": 2, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": 7, "qualified_raw_pct": 12.5, "fast_gate_raw_pct": 50.0},
+      "growth_news": {"raw": 8, "fast_gate": 1, "size": 1, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 8, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 12.5},
+      "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+    },
+    "N5K-20260830-513": {
+      "jobs": {"raw": 3, "fast_gate": 3, "size": 1, "signal": 1, "qualified": 0, "duplicate_plus_early_reject": 3, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 100.0},
+      "growth_news": {"raw": 1, "fast_gate": 1, "size": 1, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": 0, "qualified_raw_pct": 100.0, "fast_gate_raw_pct": 100.0},
+      "official_owner_ceo": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null}
+    },
+    "N5K-20260830-514": {
+      "jobs": {"raw": 4, "fast_gate": 4, "size": 3, "signal": 1, "qualified": 1, "duplicate_plus_early_reject": 3, "qualified_raw_pct": 25.0, "fast_gate_raw_pct": 100.0},
+      "growth_news": {"raw": 8, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 8, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0},
+      "official_owner_ceo": {"raw": 2, "fast_gate": 1, "size": 1, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 2, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 50.0}
+    },
+    "N5K-20260830-515R1_HOURLY": {
+      "jobs": {"raw": 59, "fast_gate": 9, "size": 3, "signal": 2, "qualified": 2, "duplicate_plus_early_reject": 57, "qualified_raw_pct": 3.3898, "fast_gate_raw_pct": 15.2542},
+      "growth_news": {"raw": 8, "fast_gate": 2, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 8, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 25.0},
+      "official_owner_ceo": {"raw": 4, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicate_plus_early_reject": 4, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 0.0}
+    }
+  },
+  "overall_efficiency_history": {
+    "N5K-20260830-512": {"raw": 16, "fast_gate": 5, "qualified": 1, "qualified_raw_pct": 6.25, "fast_gate_raw_pct": 31.25},
+    "N5K-20260830-513": {"raw": 4, "fast_gate": 4, "qualified": 1, "qualified_raw_pct": 25.0, "fast_gate_raw_pct": 100.0},
+    "N5K-20260830-514": {"raw": 14, "fast_gate": 5, "qualified": 1, "qualified_raw_pct": 7.1429, "fast_gate_raw_pct": 35.7143},
+    "N5K-20260830-515R1_HOURLY": {"raw": 71, "fast_gate": 11, "qualified": 2, "qualified_raw_pct": 2.8169, "fast_gate_raw_pct": 15.4930}
+  },
+  "adaptive_next_distribution": {
+    "jobs": 5,
+    "growth_news": 5,
+    "official_owner_ceo": 5,
+    "industry_catalog_probe_only": 5,
+    "experimental_regional_investment_projects_and_sez": 40,
+    "experimental_partner_ecosystem_and_business_change": 40
+  },
+  "qualified_companies": ["ПКФ ДВ-Пласт", "Железяка"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
   "physical_master_state": "535_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "535_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "qualified_staged_not_counted": 0,
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "notes": "Hourly cycle ingested two immutable jobs staging batches. Canonical integrations: N5K-0694 ПКФ ДВ-Пласт and N5K-0695 Железяка. The second worker arrived concurrently before final closure and was handled as same-cycle continuation N5K-20260830-515R1. Raw was not padded with catalogs or unresolved search-result rows."
 }
