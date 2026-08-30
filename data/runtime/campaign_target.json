@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-31T01:00:23+03:00",
+  "updated_at": "2026-08-31T02:50:51+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260831-532",
-  "current_run_id": "N5K-20260831-532",
-  "last_run_id": "N5K-20260831-532",
-  "latest_completed_run": "N5K-20260831-532",
+  "last_completed_run_id": "N5K-20260831-533R1",
+  "current_run_id": "N5K-20260831-533R1",
+  "last_run_id": "N5K-20260831-533R1",
+  "latest_completed_run": "N5K-20260831-533R1",
   "canonical_integration_run_id": "N5K-20260831-532",
   "hourly_parent_run_id": "N5K-20260831-532",
   "hourly_baseline_count": 550,
@@ -34,10 +34,38 @@
     "denominator_note": "76 auditable employer-level raw candidates: 70 from the worker_funnel denominator and 6 own low-overlap probes. Worker source_batch_metrics sum to 74 rather than 70; that instrumentation conflict is recorded and not reconstructed. Raw was not padded with catalogs or search-result rows."
   },
   "comparison_last_3_runs": [
-    {"run_id":"N5K-20260830-529R1","raw":56,"fast_gate":9,"qualified":2,"qualified_raw_pct":3.5714,"fast_gate_raw_pct":16.0714},
-    {"run_id":"N5K-20260830-530","raw":10,"fast_gate":2,"qualified":1,"qualified_raw_pct":10.0,"fast_gate_raw_pct":20.0},
-    {"run_id":"N5K-20260830-531","raw":30,"fast_gate":3,"qualified":1,"qualified_raw_pct":3.3333,"fast_gate_raw_pct":10.0},
-    {"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947}
+    {
+      "run_id": "N5K-20260830-529R1",
+      "raw": 56,
+      "fast_gate": 9,
+      "qualified": 2,
+      "qualified_raw_pct": 3.5714,
+      "fast_gate_raw_pct": 16.0714
+    },
+    {
+      "run_id": "N5K-20260830-530",
+      "raw": 10,
+      "fast_gate": 2,
+      "qualified": 1,
+      "qualified_raw_pct": 10.0,
+      "fast_gate_raw_pct": 20.0
+    },
+    {
+      "run_id": "N5K-20260830-531",
+      "raw": 30,
+      "fast_gate": 3,
+      "qualified": 1,
+      "qualified_raw_pct": 3.3333,
+      "fast_gate_raw_pct": 10.0
+    },
+    {
+      "run_id": "N5K-20260831-532",
+      "raw": 76,
+      "fast_gate": 6,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 7.8947
+    }
   ],
   "next_distribution_pct": {
     "jobs": 5,
@@ -55,5 +83,5 @@
     "growth_action": "The one fresh growth-news candidate could not be legally resolved; increase growth-news only through different fresh low-overlap source sets, not the failed source.",
     "decision": "Overall q/raw fell from 3.3333% to 0 and fast/raw fell from 10% to 7.8947%; net-new fell 1 to 0. Do not repeat RUN 531 allocation: jobs 5%, growth-news 30%, official owner/CEO 25%, industry 5%, regional investment 20%, partner/business-change 15%."
   },
-  "note": "N5K-20260831-532 completed after physical integration: +0 net new; canonical/contactable 550/550; remaining_to_1000 450; remaining_to_5000 4450; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260831-533R1 completed after physical integration: +0 net new; canonical/contactable 550/550; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
