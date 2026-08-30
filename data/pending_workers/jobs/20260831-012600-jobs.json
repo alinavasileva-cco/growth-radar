@@ -1,0 +1,139 @@
+{
+  "schema_version": "jobs_worker_v1",
+  "lane": "jobs",
+  "worker_mode": "READ+DISCOVERY_ONLY",
+  "immutable": true,
+  "created_at": "2026-08-31T01:26:00+03:00",
+  "baseline_head": "f9d9d8bb90f967cce092318ed4a8af37f381957b",
+  "config_version": "2026-08-31T01:00:23+03:00",
+  "canonical_baseline": {
+    "master": 550,
+    "contactable": 550,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0,
+    "last_completed_run": "N5K-20260831-532"
+  },
+  "constraints": {
+    "criteria_changed": false,
+    "canonical_writer_started": false,
+    "canonical_written": false,
+    "outreach_performed": false,
+    "funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"]
+  },
+  "source_batch_metrics": [
+    {"batch": "jobvk_ekaterinburg_director", "region": "Ekaterinburg/Ural", "raw_employers": 20, "duplicates_plus_early_rejects": 19, "fast_gate_pass": 1, "qualified": 0, "note": "Twenty distinct employer names were reviewed from the current regional director/commercial-director surface; the batch was not padded beyond the visible employer-level set."},
+    {"batch": "jobvk_rostov_director", "region": "Rostov-on-Don/South", "raw_employers": 18, "duplicates_plus_early_rejects": 16, "fast_gate_pass": 2, "qualified": 1, "note": "Repeated employers on the source page were counted once. TEST advanced from the current regional job signal; other entries were rejected at cheap gate or evidence resolution."},
+    {"batch": "jobvk_novosibirsk_director", "region": "Novosibirsk/Siberia", "raw_employers": 17, "duplicates_plus_early_rejects": 17, "fast_gate_pass": 0, "qualified": 0, "note": "Repeated SPAR/Monetka and other repeated employers were counted once; no candidate advanced after fast gate."},
+    {"batch": "jobvk_krasnodar_director", "region": "Krasnodar/South", "raw_employers": 8, "duplicates_plus_early_rejects": 8, "fast_gate_pass": 0, "qualified": 0, "note": "Only the explicitly reviewed distinct employer-level entries are counted; no padding to the 20-company target."},
+    {"batch": "crossboard_multi_region_director_sales", "region": "Nizhny Novgorod/Samara/Ufa/Perm", "raw_employers": 11, "duplicates_plus_early_rejects": 11, "fast_gate_pass": 0, "qualified": 0, "note": "Cross-board search surfaces yielded a small clean employer-level set in this run; no fabricated candidates were added."}
+  ],
+  "worker_funnel": {
+    "raw_employer_level": 74,
+    "fast_gate_pass": 3,
+    "deep_check": 1,
+    "size_pass": 1,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1
+  },
+  "candidates": [
+    {
+      "status": "QUALIFIED",
+      "brand": "Тест",
+      "legal_name": "ООО \"ТЕСТ\"",
+      "lead_id": null,
+      "inn": "6163219914",
+      "ogrn": "1206100019223",
+      "country": "RU",
+      "hq": "Ростов-на-Дону",
+      "domain": "lab-test.pro",
+      "brand_domain_link_confirmed": true,
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 324353000,
+        "employees_2025": 20,
+        "note": "For qualification, current legal/financial sources with 2025 reporting were used. The vacancy text claims turnover of 360m RUB for 2025, but that marketing/job-post figure was not used as the size fact because the current financial sources report 324.353m RUB.",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-TEST_8f4b18ec-5459-4acb-ad54-9dd70462b8e3/",
+          "https://saby.ru/profile/6163219914-616301001",
+          "https://firmoteka.ru/6163219914"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "active": true,
+        "evidence_date": "2026-05-31",
+        "evidence_urls": [
+          "https://saby.ru/profile/6163219914-616301001",
+          "https://reputation.ru/ogrn/1206100019223"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S1",
+        "type": "sales_leadership_hiring",
+        "title": "Директор по продажам мед.лаб.оборудования",
+        "published_date": "2026-08-05",
+        "description": "Fresh employer-level hiring signal for a sales director responsible for the Mindray medical laboratory equipment distribution business. The vacancy states an ambition to double and become No.1 in the private segment; the existence/date of the vacancy is used as the signal, not its self-reported turnover figure.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/5584810/vakansii/135919630",
+          "https://rnd-job.ru/rostov-na-donu/direktor_po_prodazham-adv3467634.html"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "primary": {
+          "name": "Исаков Михаил Сергеевич",
+          "role": "генеральный директор; учредитель 80%",
+          "evidence_urls": [
+            "https://reputation.ru/ogrn/1206100019223",
+            "https://firmoteka.ru/6163219914",
+            "https://saby.ru/profile/6163219914-616301001"
+          ]
+        },
+        "owners": [
+          {"name": "Исаков Михаил Сергеевич", "share": "80%"},
+          {"name": "Мостовая Яна Александровна", "share": "20%"}
+        ]
+      },
+      "contact": {
+        "status": "PASS",
+        "published_only": true,
+        "phone": "8 (800) 600-04-01",
+        "additional_phones": ["+7 (961) 271-39-82"],
+        "emails": ["km@lab-test.pro"],
+        "route": "official corporate website contacts plus active vacancy route",
+        "evidence_urls": [
+          "https://lab-test.pro/",
+          "https://dreamjob.ru/employers/5584810/vakansii/135919630"
+        ],
+        "personal_contact_claimed": false
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6163219914",
+        "ogrn": "1206100019223",
+        "exact_legal_name": "ООО \"ТЕСТ\"",
+        "brand_domain": "Тест|lab-test.pro"
+      },
+      "dedup_checks": {
+        "pre_deep_repo_wide": "NO_MATCH_FOUND",
+        "pre_stage_repo_wide": "NO_MATCH_FOUND",
+        "queries": ["6163219914", "1206100019223", "ООО \"ТЕСТ\"", "lab-test.pro"],
+        "scope": "repository-wide GitHub code search against current repository plus current pending_workers tree enumeration at baseline HEAD",
+        "note": "No repository-wide code-search match was returned for INN, OGRN, exact legal-name token or confirmed domain immediately before staging. The pending_workers directory tree, including jobs, was enumerated at the fresh baseline HEAD. Connector response truncation prevents a truthful claim that every historical pending blob body was physically read in full in this run; canonical writer must still perform the repository physical integration guard before integration."
+      },
+      "evidence_urls": [
+        "https://lab-test.pro/",
+        "https://dreamjob.ru/employers/5584810/vakansii/135919630",
+        "https://rnd-job.ru/rostov-na-donu/direktor_po_prodazham-adv3467634.html",
+        "https://reputation.ru/ogrn/1206100019223",
+        "https://b2b.house/company/OOO-TEST_8f4b18ec-5459-4acb-ad54-9dd70462b8e3/",
+        "https://saby.ru/profile/6163219914-616301001",
+        "https://firmoteka.ru/6163219914"
+      ]
+    }
+  ]
+}
