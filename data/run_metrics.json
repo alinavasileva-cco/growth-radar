@@ -1,52 +1,58 @@
 {
-  "generated_at": "2026-08-30T21:00:00+03:00",
+  "generated_at": "2026-08-30T22:41:33+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260830-528",
-  "current_run_id": "N5K-20260830-528",
+  "latest_completed_run_id": "N5K-20260830-529R1",
+  "current_run_id": "N5K-20260830-529R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 546,
-  "contactable_verified": 546,
+  "canonical_pool_verified": 548,
+  "contactable_verified": 548,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4454,
+  "remaining_to_target": 4452,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "overall_efficiency": {
-    "qualified_raw_pct": 4.0,
-    "fast_gate_raw_pct": 24.0,
-    "delta_vs_previous_hour_qualified_raw_pp": 4.0,
-    "delta_vs_previous_hour_fast_gate_raw_pp": 4.0,
-    "net_qualified_delta": 1
-  },
-  "run_528": {
-    "raw_discovered": 25,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
+  "run_529R1": {
+    "raw_discovered": 56,
+    "fast_gate_passed": 9,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
     "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 23,
+    "qualified": 2,
+    "physically_integrated": 2,
+    "duplicates": 0,
+    "excluded": 54,
     "lane_metrics": [
-      {"lane":"jobs_probe_fresh_management","raw":19,"fast_gate":4,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified":0,"duplicate_plus_early_reject":19,"qualified_raw_pct":0.0,"fast_gate_raw_pct":21.0526,"note":"Post-dedup: ПолиАэрПак was rejected by final physical canonical guard on INN and OGRN."},
-      {"lane":"growth_news_industrial_expansion","raw":6,"fast_gate":2,"size":2,"legal":2,"signal":1,"lpr":1,"contact":1,"qualified":1,"duplicate_plus_early_reject":5,"qualified_raw_pct":16.6667,"fast_gate_raw_pct":33.3333,"note":"АСТ «Слон» is the only physical net-new; stale LMR Plast material was excluded from SIGNAL."},
-      {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
-      {"lane":"industry_catalog","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
-      {"lane":"regional_investment","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null},
-      {"lane":"partner_business_change","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null}
-    ],
-    "last_four_run_efficiency": [
-      {"run_id":"N5K-20260830-525","raw":21,"fast_gate":6,"qualified":1,"qualified_raw_pct":4.7619,"fast_gate_raw_pct":28.5714},
-      {"run_id":"N5K-20260830-526","raw":17,"fast_gate":7,"qualified":1,"qualified_raw_pct":5.8824,"fast_gate_raw_pct":41.1765},
-      {"run_id":"N5K-20260830-527","raw":25,"fast_gate":5,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":20.0},
-      {"run_id":"N5K-20260830-528","raw":25,"fast_gate":6,"qualified":1,"qualified_raw_pct":4.0,"fast_gate_raw_pct":24.0}
-    ],
-    "next_distribution_pct": {"jobs":5,"growth_news":35,"official_owner_ceo":20,"industry_catalog":5,"regional_investment":25,"partner_business_change":10}
+      {
+        "lane": "jobs_recovery_212900",
+        "raw": 32,
+        "fast_gate": 4,
+        "size": 1,
+        "legal": 1,
+        "signal": 1,
+        "lpr": 1,
+        "contact": 1,
+        "qualified": 1,
+        "duplicate_plus_early_reject": 31,
+        "note": "Immutable worker package 20260830-212900-jobs.json; only employer-level entities explicitly reviewed by the worker were counted."
+      },
+      {
+        "lane": "jobs_recovery_222100",
+        "raw": 24,
+        "fast_gate": 5,
+        "size": 1,
+        "legal": 1,
+        "signal": 1,
+        "lpr": 1,
+        "contact": 1,
+        "qualified": 1,
+        "duplicate_plus_early_reject": 23,
+        "note": "Immutable worker package 20260830-222100-jobs.json; only employer-level entities explicitly reviewed by the worker were counted. Cross-worker raw overlap was not reconstructed, so 56 is a source-worker total and is not represented as a guaranteed globally unique 200-300 denominator."
+      }
+    ]
   }
 }
