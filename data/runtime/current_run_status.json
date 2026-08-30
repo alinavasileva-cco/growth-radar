@@ -1,62 +1,106 @@
 {
-  "run_id": "N5K-20260830-513",
+  "run_id": "N5K-20260830-514",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T05:16:00+03:00",
-  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
+  "updated_at": "2026-08-30T06:01:57+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 531,
+    "baseline_count": 532,
     "target_count": 5000,
-    "current_canonical_count": 532,
-    "current_contactable_count": 532,
+    "current_canonical_count": 533,
+    "current_contactable_count": 533,
     "progress_added": 1,
-    "remaining": 4468,
-    "remaining_to_1000": 468
+    "remaining": 4467
   },
   "funnel": {
-    "discovered": 4,
-    "fast_gate_passed": 4,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "prewrite_qualified": 2,
+    "discovered": 14,
+    "fast_gate_passed": 5,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "prewrite_qualified": 1,
     "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 2
+    "duplicates": 4,
+    "excluded": 13
   },
   "lane_metrics": [
-    {"lane":"jobs","raw":3,"fast_gate":3,"size":1,"signal":1,"qualified_before_physical_dedup":1,"qualified_after_physical_dedup":0,"duplicate_plus_early_reject":3,"qualified_raw_pct":0.0,"fast_gate_raw_pct":100.0,"note":"Fresh immutable jobs staging ingested first. АК Энергия and ПолиАэрПак failed SIZE. СИЛА-ЦЕНТР was blocked by physical dedup as existing N5K-0655 by INN 6312113811 / OGRN 1126312000011."},
-    {"lane":"growth_news","raw":1,"fast_gate":1,"size":1,"signal":1,"qualified_before_physical_dedup":1,"qualified_after_physical_dedup":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0,"note":"LIGA Group independently passed SIZE, LEGAL, SIGNAL, LPR and CONTACT. Denominator is one legal-resolved distinct company, so this rate is not treated as stable long-run conversion."},
-    {"lane":"official_owner_ceo","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified_after_physical_dedup":0,"note":"Used for legal/LPR/contact verification; not double-counted as raw."},
-    {"lane":"industry_catalog","raw":0,"fast_gate":0,"size":0,"signal":0,"qualified_after_physical_dedup":0,"note":"Cooldown/probe-only; no deep-check and no catalog padding."}
+    {
+      "lane": "jobs",
+      "raw": 4,
+      "source_level_observations": 45,
+      "fast_gate": 4,
+      "size": 3,
+      "legal": 2,
+      "signal": 1,
+      "qualified_before_physical_dedup": 1,
+      "qualified_after_physical_dedup": 1,
+      "duplicate_plus_early_reject": 3,
+      "qualified_raw_pct": 25.0,
+      "fast_gate_raw_pct": 100.0,
+      "note": "Fresh immutable jobs staging 20260830-052056-jobs.json ingested first. Raw denominator is 4 employer-level legal-resolved distinct companies, not 45 source-level observations. ДиаМарка failed SIZE (>500m RUB), Медремкомплект failed explicit SIGNAL-date proof, NOVOBORT failed reliable LEGAL mapping; УрПАСЭ independently rechecked and passed. Jobs remains discovery-capped because duplicate+early-reject exceeded 70% in RUN 512 and RUN 513; worker ingestion is mandatory and is not treated as permission to expand jobs allocation."
+    },
+    {
+      "lane": "growth_news",
+      "raw": 8,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified_before_physical_dedup": 0,
+      "qualified_after_physical_dedup": 0,
+      "duplicate_plus_early_reject": 8,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "note": "Eight named-company observations were actually reviewed. SemiTEq/NTO, Элтекс, Мосэлектрощит and LIGA Group are already canonical; Элемент, Газпром and Силовые машины are outside current private/scale gate; Ларта Гласс was not promoted through FAST GATE. No catalog padding and no duplicate was deep-checked."
+    },
+    {
+      "lane": "official_owner_ceo",
+      "raw": 2,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 0,
+      "qualified_before_physical_dedup": 0,
+      "qualified_after_physical_dedup": 0,
+      "duplicate_plus_early_reject": 2,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 50.0,
+      "note": "Discovery was reallocated here inside the same RUN after growth/news underperformed. Реглаб was rejected on SIZE (2025 revenue ~6.23bn RUB). РОБОПРО passed scale/legal orientation (~120m RUB revenue, 26 employees) but the reviewed fresh material did not establish a sufficiently strong S1-S3 business-change SIGNAL, so it was rejected before LPR/contact deep-check."
+    },
+    {
+      "lane": "industry_catalog",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified_after_physical_dedup": 0,
+      "duplicate_plus_early_reject": 0,
+      "note": "Cooldown/probe-only. No exhibition/catalog presence was treated as SIGNAL and raw was not padded."
+    },
+    {
+      "lane": "experimental_low_overlap",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified_after_physical_dedup": 0,
+      "duplicate_plus_early_reject": 0,
+      "note": "No independently measurable company-level batch completed in this execution window; no denominator was invented."
+    }
   ],
-  "efficiency_history": [
-    {"run_id":"N5K-20260830-510R1","raw":38,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.6316,"fast_gate_raw_pct":13.1579},
-    {"run_id":"N5K-20260830-511R1","raw":8,"fast_gate":1,"qualified":1,"qualified_raw_pct":12.5,"fast_gate_raw_pct":12.5},
-    {"run_id":"N5K-20260830-512","raw":16,"fast_gate":5,"qualified":1,"qualified_raw_pct":6.25,"fast_gate_raw_pct":31.25},
-    {"run_id":"N5K-20260830-513","raw":4,"fast_gate":4,"qualified":1,"qualified_raw_pct":25.0,"fast_gate_raw_pct":100.0}
+  "qualified_companies": [
+    "УрПАСЭ"
   ],
-  "efficiency_change_vs_previous_hour": {"qualified_raw_pp":18.75,"fast_gate_raw_pp":68.75,"note":"Efficiency improved versus RUN 512, but denominator is only four legal-resolved distinct companies and net-new remains below 5, so allocation is changed rather than repeated mechanically."},
-  "adaptive_actions": {
-    "jobs":"CAPPED_AT_5_PERCENT_NEXT_3_RUNS: duplicate+early-reject is 100% now and 87.5% in RUN 512.",
-    "growth_news":"INCREASED_TO_60_PERCENT: only lane with net-new qualified in current RUN and q/raw >=1%; 60% is the allowed ceiling.",
-    "official_owner_ceo":"SET_TO_25_PERCENT: keep meaningful lower-overlap discovery and verification allocation.",
-    "industry_catalog":"PROBE_ONLY_5_PERCENT; no deep-check until probe improves.",
-    "experimental_low_overlap":"5_PERCENT."
-  },
-  "next_run_distribution": {"jobs":5,"growth_news":60,"official_owner_ceo":25,"industry_catalog_probe_only":5,"experimental_low_overlap":5},
-  "qualified_companies": ["LIGA Group"],
-  "physical_duplicate_companies": ["СИЛА-ЦЕНТР / ООО «СИЛА-ЦЕНТР» — existing N5K-0655 by INN 6312113811 and OGRN 1126312000011"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "532_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "532_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "533_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "533_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "notes": "Physical integration complete. Efficiency metadata repaired after integration; stale worker uniqueness result for СИЛА-ЦЕНТР is excluded from net-new."
+  "blocker": null
 }
