@@ -7,7 +7,7 @@
   "progress_added": 545,
   "remaining_to_total_target": 4455,
   "remaining": 4455,
-  "remaining_to_1000": 456,
+  "remaining_to_1000": 455,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,26 +17,32 @@
   "current_run_id": "N5K-20260830-526",
   "last_run_id": "N5K-20260830-526",
   "latest_completed_run": "N5K-20260830-526",
-  "canonical_integration_run_id": "N5K-20260830-525",
-  "hourly_parent_run_id": "N5K-20260830-525",
-  "hourly_baseline_count": 543,
+  "canonical_integration_run_id": "N5K-20260830-526",
+  "hourly_parent_run_id": "N5K-20260830-526",
+  "hourly_baseline_count": 544,
   "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
+  "overall_efficiency": {
+    "qualified_raw_pct": 5.8824,
+    "fast_gate_raw_pct": 41.1765,
+    "delta_vs_previous_hour_qualified_raw_pp": 1.1205,
+    "delta_vs_previous_hour_fast_gate_raw_pp": 12.6051
+  },
   "next_distribution_pct": {
     "jobs": 5,
-    "growth_news": 35,
-    "official_owner_ceo": 25,
+    "growth_news": 20,
+    "official_owner_ceo": 40,
     "industry_catalog": 5,
     "regional_investment": 20,
     "partner_business_change": 10
   },
   "adaptive_controls": {
-    "jobs_cap_runs_remaining": 3,
+    "jobs_cap_runs_remaining": 1,
     "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
-    "jobs_trigger": "RUN 523 and RUN 524R1 both net qualified/raw=0%; RUN 524R1 duplicate+early-reject=89.2857%.",
-    "decision": "Do not repeat RUN 523 allocation automatically. Restore recently productive growth/news and preserve official/owner/CEO low-overlap discovery while jobs remains capped."
+    "jobs_trigger": "Jobs remains capped because RUN 526 duplicate+early-reject is 15/16=93.75%; the earlier 3-RUN cap is not relaxed by one net-new result.",
+    "decision": "Net-new remains 1 (<5). Boost official company/owner/CEO low-overlap discovery to 40%; keep jobs at 5%, growth/news at 20%, regional investment at 20%, industry probe-only at 5%, partner/business-change at 10%."
   },
-  "note": "N5K-20260830-526 completed after physical integration: +1 net new; canonical/contactable 545/545; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260830-526 completed after physical integration: +1 net new FARFOR; Eltex skipped by final physical dedup on INN, OGRN and brand+domain; canonical/contactable 545/545; integrity PASS; orphan 0/0; staged 0; outreach 0. Post-dedup efficiency metadata repaired."
 }
