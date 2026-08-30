@@ -1,62 +1,110 @@
 {
-  "run_id": "N5K-20260830-514",
+  "run_id": "N5K-20260830-515",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-30T06:01:57+03:00",
-  "stage": "COMPLETE_AFTER_METADATA_REPAIR",
+  "updated_at": "2026-08-30T07:02:31+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 532,
+    "baseline_count": 533,
     "target_count": 5000,
-    "current_canonical_count": 533,
-    "current_contactable_count": 533,
+    "current_canonical_count": 534,
+    "current_contactable_count": 534,
     "progress_added": 1,
-    "remaining": 4467,
-    "remaining_to_1000": 467
+    "remaining": 4466
   },
   "funnel": {
-    "discovered": 14,
-    "fast_gate_passed": 5,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
+    "discovered": 41,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "prewrite_qualified": 1,
     "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 4,
-    "excluded": 13
+    "duplicates": 2,
+    "excluded": 40
   },
   "lane_metrics": [
-    {"lane":"jobs","raw":4,"source_level_observations":45,"fast_gate":4,"size":3,"legal":2,"signal":1,"qualified":1,"duplicate_plus_early_reject":3,"qualified_raw_pct":25.0,"fast_gate_raw_pct":100.0,"note":"Fresh immutable jobs staging ingested first. Raw denominator is 4 employer-level legal-resolved distinct companies; 45 source-level observations are retained separately. ДиаМарка failed SIZE, Медремкомплект failed explicit SIGNAL-date proof, NOVOBORT failed reliable LEGAL mapping; УрПАСЭ passed independent canonical recheck."},
-    {"lane":"growth_news","raw":8,"fast_gate":0,"size":0,"legal":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":8,"qualified_raw_pct":0.0,"fast_gate_raw_pct":0.0,"note":"SemiTEq/NTO, Элтекс, Мосэлектрощит and LIGA Group were canonical duplicates; Элемент, Газпром and Силовые машины failed private/scale orientation; Ларта Гласс was not promoted through FAST GATE. Discovery was interrupted and reallocated in the same RUN."},
-    {"lane":"official_owner_ceo","raw":2,"fast_gate":1,"size":1,"legal":1,"signal":0,"qualified":0,"duplicate_plus_early_reject":2,"qualified_raw_pct":0.0,"fast_gate_raw_pct":50.0,"note":"Реглаб failed SIZE at ~6.23bn RUB 2025 revenue. РОБОПРО passed scale/legal orientation but reviewed current evidence did not establish a sufficiently strong S1-S3 business-change SIGNAL."},
-    {"lane":"industry_catalog","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"Cooldown/probe-only; no exhibition/catalog presence used as SIGNAL and no raw padding."},
-    {"lane":"experimental_low_overlap","raw":0,"fast_gate":0,"size":0,"legal":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":0,"qualified_raw_pct":null,"fast_gate_raw_pct":null,"note":"No independently measurable company-level batch completed; no denominator invented."}
+    {
+      "lane": "jobs",
+      "raw": 29,
+      "fast_gate": 4,
+      "size": 2,
+      "legal": 1,
+      "signal": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 28,
+      "qualified_raw_pct": 3.4483,
+      "fast_gate_raw_pct": 13.7931,
+      "action": "CAP_5_PERCENT",
+      "reason": "worker batch remains highly saturated: 28/29 did not reach net qualified; jobs cooldown from prior >70% duplicate+early-reject remains active"
+    },
+    {
+      "lane": "growth_news",
+      "raw": 8,
+      "fast_gate": 2,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 8,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 25.0,
+      "action": "CAP_5_PERCENT_NEXT_3_RUNS",
+      "reason": "second consecutive measured RUN with 0 qualified (RUN514 and RUN515); deep-check suspended after current unproductive batch"
+    },
+    {
+      "lane": "official_owner_ceo",
+      "raw": 4,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 4,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "action": "CAP_5_PERCENT_NEXT_3_RUNS_NO_DEEP_CHECK",
+      "reason": "second consecutive measured RUN with 0 qualified and current fast_gate/raw below 2%"
+    },
+    {
+      "lane": "industry_catalog",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "action": "PROBE_ONLY_5_PERCENT",
+      "reason": "no catalog padding; exhibition/catalog presence never treated as SIGNAL"
+    },
+    {
+      "lane": "experimental_low_overlap",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "action": "EXPAND_NEXT_RUN",
+      "reason": "major established lanes are saturated/capped; next RUN must shift discovery to new low-overlap experimental source families"
+    }
   ],
-  "efficiency_history": [
-    {"run_id":"N5K-20260830-511R1","raw":8,"fast_gate":1,"qualified":1,"qualified_raw_pct":12.5,"fast_gate_raw_pct":12.5,"lanes":{"jobs":{"raw":0,"qualified":0},"growth_news":{"raw":8,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":7,"qualified_raw_pct":12.5,"fast_gate_raw_pct":12.5},"official_owner_ceo":{"raw":0,"qualified":0},"industry_catalog":{"raw":0,"qualified":0}}},
-    {"run_id":"N5K-20260830-512","raw":16,"fast_gate":5,"qualified":1,"qualified_raw_pct":6.25,"fast_gate_raw_pct":31.25,"lanes":{"jobs":{"raw":8,"fast_gate":4,"size":2,"signal":1,"qualified":1,"duplicate_plus_early_reject":7,"qualified_raw_pct":12.5,"fast_gate_raw_pct":50.0},"growth_news":{"raw":8,"fast_gate":1,"size":1,"signal":1,"qualified":0,"duplicate_plus_early_reject":8,"qualified_raw_pct":0.0,"fast_gate_raw_pct":12.5},"official_owner_ceo":{"raw":0,"qualified":0},"industry_catalog":{"raw":0,"qualified":0}}},
-    {"run_id":"N5K-20260830-513","raw":4,"fast_gate":4,"qualified":1,"qualified_raw_pct":25.0,"fast_gate_raw_pct":100.0,"lanes":{"jobs":{"raw":3,"fast_gate":3,"size":1,"signal":1,"qualified":0,"duplicate_plus_early_reject":3,"qualified_raw_pct":0.0,"fast_gate_raw_pct":100.0},"growth_news":{"raw":1,"fast_gate":1,"size":1,"signal":1,"qualified":1,"duplicate_plus_early_reject":0,"qualified_raw_pct":100.0,"fast_gate_raw_pct":100.0},"official_owner_ceo":{"raw":0,"qualified":0},"industry_catalog":{"raw":0,"qualified":0}}},
-    {"run_id":"N5K-20260830-514","raw":14,"fast_gate":5,"qualified":1,"qualified_raw_pct":7.1429,"fast_gate_raw_pct":35.7143,"lanes":{"jobs":{"raw":4,"fast_gate":4,"size":3,"signal":1,"qualified":1,"duplicate_plus_early_reject":3,"qualified_raw_pct":25.0,"fast_gate_raw_pct":100.0},"growth_news":{"raw":8,"fast_gate":0,"size":0,"signal":0,"qualified":0,"duplicate_plus_early_reject":8,"qualified_raw_pct":0.0,"fast_gate_raw_pct":0.0},"official_owner_ceo":{"raw":2,"fast_gate":1,"size":1,"signal":0,"qualified":0,"duplicate_plus_early_reject":2,"qualified_raw_pct":0.0,"fast_gate_raw_pct":50.0},"industry_catalog":{"raw":0,"qualified":0}}}
+  "qualified_companies": [
+    "ПКФ ДВ-Пласт"
   ],
-  "efficiency_change_vs_previous_hour": {"qualified_raw_pp":-17.8571,"fast_gate_raw_pp":-64.2857,"note":"Overall efficiency fell versus RUN 513 and net-new remains 1 (<5). Growth/news was interrupted after a 0/8 FAST result and discovery shifted to official/owner sources in the same RUN."},
-  "adaptive_actions": {
-    "jobs":"KEEP_CAPPED_AT_5_PERCENT: RUN 512 and RUN 513 breached the >70% duplicate+early-reject rule; current worker ingestion does not reset cooldown and current duplicate+early-reject remains 75%.",
-    "growth_news":"REDUCE_FROM_60_TO_50_PERCENT: current measured batch has 0 qualified, 0 fast_gate and 100% duplicate+early-reject; RUN 513 did produce one qualified, so this is reduction rather than a new three-RUN cooldown.",
-    "official_owner_ceo":"INCREASE_FROM_25_TO_35_PERCENT to seek lower-overlap discovery after growth/news saturation; do not infer efficiency beyond current n=2 sample.",
-    "industry_catalog":"KEEP_5_PERCENT_PROBE_ONLY; no deep-check until a probe improves.",
-    "experimental_low_overlap":"KEEP_5_PERCENT; no current measured batch, so no performance claim."
-  },
-  "next_run_distribution": {"jobs":5,"growth_news":50,"official_owner_ceo":35,"industry_catalog_probe_only":5,"experimental_low_overlap":5},
-  "qualified_companies": ["УрПАСЭ"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "533_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "533_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "534_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "534_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "notes": "Physical integration completed. N5K-0693 is present in canonical/contactable; contacts/evidence shards were written by the integration workflow; campaign metadata and hourly efficiency fields repaired in the same cycle."
+  "blocker": null
 }
