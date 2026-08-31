@@ -1,0 +1,16 @@
+{
+  "run_id": "N5K-20260831-536",
+  "campaign_id": "new_5000",
+  "updated_at": "2026-08-31T06:58:18+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260831-061709-jobs.json",
+      "blob_sha": "unknown-from-worker-commit-body-not-reconstructed",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "worker_prewrite_qualified": 1,
+      "physical_net_qualified": 0,
+      "note": "Политакс rejected by final physical master guard on INN 7724483059 + OGRN 1197746443322. Immutable staging retained."
+    }
+  ],
+  "outreach_sent": 0
+}
