@@ -11,7 +11,7 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-31T02:50:51+03:00",
+  "updated_at": "2026-08-31T03:02:36+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260831-533R1",
   "current_run_id": "N5K-20260831-533R1",
@@ -34,31 +34,9 @@
     "denominator_note": "Recovery consumed two fresh post-RUN-532 jobs worker packages declaring 74 and 24 employer-level raw respectively. Their sum is 98 source-level employer observations, but global cross-worker uniqueness cannot be proven from the stored aggregate metrics; 98 must not be represented as 98 globally distinct companies. Physical final dedup skipped both qualified candidates as existing canonical records."
   },
   "comparison_last_3_runs": [
-    {
-      "run_id": "N5K-20260830-531",
-      "raw": 30,
-      "fast_gate": 3,
-      "qualified": 1,
-      "qualified_raw_pct": 3.3333,
-      "fast_gate_raw_pct": 10.0
-    },
-    {
-      "run_id": "N5K-20260831-532",
-      "raw": 76,
-      "fast_gate": 6,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 7.8947
-    },
-    {
-      "run_id": "N5K-20260831-533R1",
-      "raw": 98,
-      "raw_scope": "source-level sum; global cross-worker distinctness unproven",
-      "fast_gate": 6,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 6.1224
-    }
+    {"run_id":"N5K-20260830-531","raw":30,"fast_gate":3,"qualified":1,"qualified_raw_pct":3.3333,"fast_gate_raw_pct":10.0},
+    {"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947},
+    {"run_id":"N5K-20260831-533R1","raw":98,"raw_scope":"source-level sum; global cross-worker distinctness unproven","fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":6.1224}
   ],
   "next_distribution_pct": {
     "jobs": 5,
@@ -71,10 +49,10 @@
   "adaptive_controls": {
     "jobs_cap_runs_remaining": 3,
     "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
-    "jobs_trigger": "RUN 532 produced 0 physical net qualified from the declared 70 employer-level jobs raw; the sole pre-write PASS was already canonical. Keep jobs at maximum 5% for the next 3 RUN.",
-    "regional_action": "RUN 532 regional-investment probe produced 0 qualified from 5 raw with 100% duplicate+early-reject; do not repeat this source set unchanged.",
-    "growth_action": "The one fresh growth-news candidate could not be legally resolved; increase growth-news only through different fresh low-overlap source sets, not the failed source.",
-    "decision": "Overall q/raw fell from 3.3333% to 0 and fast/raw fell from 10% to 7.8947%; net-new fell 1 to 0. Do not repeat RUN 531 allocation: jobs 5%, growth-news 30%, official owner/CEO 25%, industry 5%, regional investment 20%, partner/business-change 15%."
+    "jobs_trigger": "RUN 532 and RUN 533R1 both produced 0 physical net-qualified from jobs; RUN 533R1 post-dedup duplicate+early-reject is 100% in both jobs worker lanes. Keep jobs at maximum 5% for the next 3 RUN.",
+    "growth_action": "Use fresh low-overlap growth/expansion/business-change sources. Do not reuse the unresolved/duplicate-heavy source set unchanged.",
+    "official_action": "Increase emphasis on official company/owner/CEO sources and fresh transformation/leadership/new-direction evidence because absolute net-new remains below 5.",
+    "decision": "RUN 533R1 net qualified remains 0 and fast/raw declined from 7.8947% to 6.1224%. Do not expand jobs; next mix remains jobs 5%, growth-news 30%, official owner/CEO 25%, industry 5%, regional investment 20%, partner/business-change 15%, with source-set rotation inside the non-jobs lanes."
   },
-  "note": "N5K-20260831-533R1 completed after physical integration: +0 net new; canonical/contactable 550/550; integrity PASS; orphan 0/0; staged 0; outreach 0. Both staged qualified candidates were skipped by physical dedup on INN, OGRN and brand+domain."
+  "note": "N5K-20260831-533R1 completed after physical integration: +0 net new; canonical/contactable 550/550; integrity PASS; orphan 0/0; staged 0; outreach 0. Both staged qualified candidates were skipped by physical dedup on INN, OGRN and brand+domain. Post-dedup lane metrics repaired at 2026-08-31T03:02:36+03:00."
 }
