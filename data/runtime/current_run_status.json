@@ -66,5 +66,5 @@
   "physical_master_state": "561_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "561_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "CURRENT_WORKING_CONFIG metadata still names N5K-20260831-549R1 and requires safe full-file metadata sync without altering criteria."
+  "blocker": null
 }
