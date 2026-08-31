@@ -1,8 +1,126 @@
 {
-  "run_id": "N5K-20260831-545",
-  "updated_at": "2026-08-31T19:31:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260831-545 integrated physically; canonical/contactable 560/560; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260831-546",
+  "updated_at": "2026-08-31T20:02:51+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 43,
+    "fast_gate_passed": 4,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 42
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260831_192500",
+      "raw": 39,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicate_early_reject": 39,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0,
+      "decision": "CUT_5_PERCENT_PROBE_ONLY; no deep-check after zero fast-gate survivors"
+    },
+    {
+      "lane": "regional_investment_growth_fresh",
+      "raw": 4,
+      "fast_gate": 4,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_early_reject": 3,
+      "qualified_raw_pct": 25.0,
+      "fast_gate_raw_pct": 100.0,
+      "decision": "BOOST_NEXT_RUN_WITH_SMALL_SAMPLE_CAVEAT"
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0726",
+      "Brand": "Борус",
+      "Legal Name": "ООО «БОРУС»",
+      "INN": "2464149893",
+      "OGRN/OGRNIP": "1192468028070",
+      "Region": "Красноярский край",
+      "City": "Красноярск",
+      "Segment": "машиностроение / спецтехника / карьерная техника",
+      "Website": "https://borus124.ru/",
+      "Revenue/Scale": "Выручка за 2025 год — 1 125 756 000 ₽.",
+      "Signal Level": "S2",
+      "Signal Summary": "27.08.2026 завод получил поддержку проекта производства подземных и карьерных самосвалов и погрузо-доставочных машин; инвестиции более 1 млрд ₽, СПИК на 10 лет; заявлено расширение штата со 136 до 220 человек.",
+      "Signal Date": "2026-08-27",
+      "Signal Source": "https://www.kommersant.ru/doc/8909600",
+      "Owner": "Пестриков Павел Николаевич — 100%",
+      "CEO": "Пестриков Павел Николаевич",
+      "LPR": "Пестриков Павел Николаевич",
+      "LPR Role": "Директор / собственник 100%",
+      "Primary Phone": "+7 (391) 290-26-96",
+      "Primary Email": "promo@borus124.ru",
+      "HH Contact": "",
+      "Contact Form": "https://borus124.ru/contacts/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "https://borus124.ru/contacts/",
+      "Consulting Hypothesis": "Масштабирование нового направления карьерной техники: B2B go-to-market, pipeline, загрузка новых мощностей, unit economics, KPI и каналы продаж.",
+      "contacts": [
+        {
+          "value": "+7 (391) 290-26-96",
+          "channel": "phone",
+          "type": "corporate reception",
+          "source": "Официальный сайт Борус",
+          "url": "https://borus124.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Приемная"
+        },
+        {
+          "value": "promo@borus124.ru",
+          "channel": "email",
+          "type": "corporate email",
+          "source": "Официальный сайт Борус",
+          "url": "https://borus124.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный email"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО «БОРУС» действует; ИНН 2464149893, ОГРН 1192468028070; директор и собственник 100% — Пестриков Павел Николаевич; выручка за 2025 год 1 125 756 000 ₽.",
+          "url": "https://companies.rbc.ru/id/1192468028070-obschestvo-s-ogranichennoj-otvetstvennostyu-borus/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "27.08.2026 опубликован проект производства подземных и карьерных самосвалов и погрузо-доставочных машин с инвестициями более 1 млрд ₽ и СПИК сроком на 10 лет.",
+          "url": "https://www.kommersant.ru/doc/8909600",
+          "source": "Коммерсантъ"
+        },
+        {
+          "type": "LPR",
+          "claim": "Текущий директор и собственник 100% — Пестриков Павел Николаевич.",
+          "url": "https://companies.rbc.ru/id/1192468028070-obschestvo-s-ogranichennoj-otvetstvennostyu-borus/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует реквизиты ООО «БОРУС», телефон +7 (391) 290-26-96 и email promo@borus124.ru.",
+          "url": "https://borus124.ru/contacts/",
+          "source": "Официальный сайт Борус"
+        }
+      ]
+    }
+  ],
+  "notes": "Worker-first ingest: fresh immutable jobs file 20260831-192500-jobs.json = 39 raw / 0 fast_gate / 0 qualified, preflight incomplete and fail-closed. Own discovery then rotated away from jobs into low-overlap fresh investment/business-change sources. Four distinct company observations were deep-triaged; only Борус completed SIZE→LEGAL→SIGNAL→LPR→CONTACT. Other observations were not promoted without full proof. Final physical dedup must run in canonical integrator. No outreach. Aggregate previous RUNs: 543 q/raw 2.9412%, fast/raw 14.7059%; 544 0.0000% / 10.5263%; 545 16.6667% / 33.3333%. Current pre-integration 546: q/raw 2.3256%, fast/raw 9.3023%; change vs 545 = -14.3411 pp q/raw, -24.0310 pp fast/raw, net-new candidate 3→1. Next distribution after physical integration: 5% jobs / 40% growth-news / 25% official owner-CEO / 5% industry / 20% regional investment / 5% partner-business-change. Jobs remains cut; regional investment is boosted from probe because it produced the only fully qualified observation, with n=4 sample caveat."
 }
