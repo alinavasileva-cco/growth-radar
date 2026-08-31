@@ -1,0 +1,90 @@
+{
+  "lane": "jobs",
+  "mode": "READ+DISCOVERY",
+  "created_at": "2026-09-01T02:22:36+03:00",
+  "baseline_head": "e1edc02a6f299fd212550b87ac872719514323cf",
+  "working_config_version": "2026-09-01T00:58:02+03:00",
+  "criteria_changed": false,
+  "canonical_write_performed": false,
+  "canonical_writer_started": false,
+  "outreach_performed": false,
+  "preflight": {
+    "current_working_config_read": true,
+    "pending_root_read": true,
+    "jobs_tree_listing_complete": true,
+    "jobs_tree_truncated": false,
+    "all_pending_file_bodies_read": false,
+    "canonical_dedup_keyset_fully_materialized": false,
+    "reason": "GitHub connector exposes a complete jobs tree listing, but this run could not read the body of every historical data/pending_workers/** file. Direct read-only git clone from the execution environment also failed because github.com DNS resolution was unavailable. Per fail-closed worker rules, no employer was promoted to FAST GATE, deep-check or QUALIFIED without a complete body-level pending/canonical dedup preflight."
+  },
+  "discovery": {
+    "target_distinct_raw": "140-150 if sources genuinely allow",
+    "source_region_batches": [
+      {
+        "batch": "Ural",
+        "queries": ["HH commercial director / development director: Ekaterinburg, Chelyabinsk, Perm"],
+        "source_level_observations_min": 4
+      },
+      {
+        "batch": "Siberia",
+        "queries": ["HH commercial director / development director: Novosibirsk, Omsk, Krasnoyarsk"],
+        "source_level_observations_min": 4
+      },
+      {
+        "batch": "Volga",
+        "queries": ["HH commercial director / development director: Kazan, Ufa, Samara"],
+        "source_level_observations_min": 4
+      },
+      {
+        "batch": "South",
+        "queries": ["HH commercial director / development director: Krasnodar, Rostov-on-Don, Volgograd"],
+        "source_level_observations_min": 4
+      },
+      {
+        "batch": "Alternative job boards",
+        "queries": ["SuperJob", "Rabota.ru", "Habr Career", "GetMatch"],
+        "source_level_observations_min": 4
+      }
+    ],
+    "source_level_observations_min_total": 20,
+    "repo_dedup_confirmed_raw": 0,
+    "note": "The source-level count is conservative and is not represented as globally unique employers after repo-wide dedup. Search-result rows, anonymous employers and obvious irrelevant roles were not counted as confirmed new companies. The 140-150 target was not fabricated."
+  },
+  "fresh_signals_observed_not_promoted": [
+    {
+      "employer": "ООО МедЛайн",
+      "signal": "Commercial Director vacancy in Omsk",
+      "source": "https://omsk.hh.ru/vacancies/kommercheskiy_direktor/polniy_den"
+    },
+    {
+      "employer": "Группа компаний TATRUM",
+      "signal": "Commercial Director (CCO) vacancy near Rostov-on-Don",
+      "source": "https://rostov.hh.ru/vacancies/kommercheskiy_direktor/polnaya_zanyatost"
+    },
+    {
+      "employer": "ООО Про Комфорт - А",
+      "signal": "Territory Development Director vacancy in Rostov-on-Don",
+      "source": "https://rostov.hh.ru/vacancies/nachalnik-otdela-razvitiya-biznesa"
+    },
+    {
+      "employer": "VSALON24",
+      "signal": "Brand Development and Strategic Marketing Director vacancy in Omsk",
+      "source": "https://omsk.hh.ru/vacancies/direktor_po_razvitiyu/za_sutki"
+    }
+  ],
+  "worker_funnel": {
+    "source_level_observations_min": 20,
+    "repo_dedup_confirmed_raw": 0,
+    "fast_gate": 0,
+    "deep_check": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "qualified": [],
+  "staging_type": "metrics-only",
+  "false_progress": false
+}
