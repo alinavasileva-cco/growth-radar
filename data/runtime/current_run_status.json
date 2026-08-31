@@ -1,52 +1,64 @@
 {
-  "run_id": "N5K-20260831-540R1",
+  "run_id": "N5K-20260831-541R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T11:59:30+03:00",
+  "updated_at": "2026-08-31T13:41:36+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 555,
     "target_count": 5000,
-    "current_canonical_count": 555,
-    "current_contactable_count": 555,
-    "progress_added": 0,
-    "remaining": 4445
+    "current_canonical_count": 556,
+    "current_contactable_count": 556,
+    "progress_added": 1,
+    "remaining": 4444
   },
   "funnel": {
-    "discovered": 17,
-    "fast_gate_passed": 4,
+    "discovered": 47,
+    "fast_gate_passed": 11,
     "size_check_passed": 2,
     "legal_match_passed": 2,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
     "duplicates": 1,
-    "excluded": 16
+    "excluded": 45
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260831_112221",
-      "raw": 17,
-      "fast_gate": 4,
-      "size": 2,
-      "legal": 2,
+      "lane": "jobs_worker_20260831_121711",
+      "raw": 22,
+      "fast_gate": 6,
+      "size": 1,
+      "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 0,
-      "prewrite_qualified": 1,
-      "duplicate_plus_early_reject": 17,
-      "note": "Fresh post-RUN-539 immutable worker packet. Final physical canonical dedup removed the sole pre-write QUALIFIED as an existing company, so net qualified=0 and duplicate+early_reject=17/17. Only 17 employer-level raw candidates are physically evidenced; higher raw volume was not claimed without source evidence."
+      "qualified": 1,
+      "duplicate_plus_early_reject": 21
+    },
+    {
+      "lane": "jobs_worker_20260831_132000",
+      "raw": 25,
+      "fast_gate": 5,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 24
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "SULTAN"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "555_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "555_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "556_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "556_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

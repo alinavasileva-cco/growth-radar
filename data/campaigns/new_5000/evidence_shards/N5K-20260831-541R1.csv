@@ -1,0 +1,5 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0721,N5K-0721-E01,LEGAL_SIZE,"ООО СУЛТАН действует; ИНН 1609010310, ОГРН 1061685047643; выручка 2025 — 1 577 553 000 ₽; 230 сотрудников.",https://www.tbank.ru/business/contractor/legal/1061685047643/,T-Банк Бизнес / public legal profile,2026-08-31T13:41:36+03:00,HIGH,N5K-20260831-541R1,new_5000
+N5K-0721,N5K-0721-E02,SIGNAL,17.08.2026 опубликована вакансия коммерческого директора SULTAN в Казани.,https://dreamjob.ru/employers/596344/vakansii/136294394,DreamJob,2026-08-31T13:41:36+03:00,HIGH,N5K-20260831-541R1,new_5000
+N5K-0721,N5K-0721-E03,LPR,Генеральный директор — Хафизов Тимур Султанович; владелец 100% — Шайхелисламова Алсу Азатовна.,https://reputation.ru/ogrn/1061685047643,Reputation / public legal profile,2026-08-31T13:41:36+03:00,HIGH,N5K-20260831-541R1,new_5000
+N5K-0721,N5K-0721-E04,CONTACT,"Официальный сайт публикует телефон, корпоративные email и реквизиты с ОГРН 1061685047643, связывая домен с ООО СУЛТАН.",https://sultanfood.ru/,official company site,2026-08-31T13:41:36+03:00,HIGH,N5K-20260831-541R1,new_5000
