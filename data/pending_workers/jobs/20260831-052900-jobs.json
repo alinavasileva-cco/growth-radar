@@ -1,0 +1,177 @@
+{
+  "schema_version": "jobs_worker_v1",
+  "lane": "jobs",
+  "worker_mode": "READ+DISCOVERY_ONLY",
+  "immutable": true,
+  "created_at": "2026-08-31T05:29:00+03:00",
+  "baseline_head": "effa9a32e8f076f11753e631bb109790767a5378",
+  "config_version": "2026-08-31T04:57:54+03:00",
+  "canonical_baseline": {
+    "master": 550,
+    "contactable": 550,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0,
+    "last_completed_run": "N5K-20260831-534"
+  },
+  "constraints": {
+    "criteria_changed": false,
+    "canonical_writer_started": false,
+    "canonical_written": false,
+    "outreach_performed": false,
+    "funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"]
+  },
+  "source_batch_metrics": [
+    {
+      "batch": "ural_commercial_crossboard",
+      "region": "Ekaterinburg/Ural",
+      "raw_employers": 4,
+      "duplicates_plus_early_rejects": 3,
+      "fast_gate_pass": 1,
+      "qualified": 1,
+      "note": "Current commercial-leadership surfaces included Sun Logistic and adjacent Ural employers. Sun Logistic advanced through full verification. Batch remained below 20 because the accessible search surface did not expose a clean 20-employer low-overlap set without padding."
+    },
+    {
+      "batch": "volga_commercial_crossboard",
+      "region": "Kazan/Samara/Volga",
+      "raw_employers": 4,
+      "duplicates_plus_early_rejects": 4,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed current top-commercial hiring surfaces including already-known or insufficiently resolved employers; no candidate promoted without complete proof chain."
+    },
+    {
+      "batch": "siberia_commercial_crossboard",
+      "region": "Novosibirsk/Siberia",
+      "raw_employers": 4,
+      "duplicates_plus_early_rejects": 4,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed Ekosmotr, AkvaBait and adjacent current commercial-director surfaces. AkvaBait failed current SIZE on fresher 2025 legal-entity financial data; Ekosmotr employer/legal-entity mapping was not sufficiently clean for promotion."
+    },
+    {
+      "batch": "south_commercial_crossboard",
+      "region": "Krasnodar/Rostov/South",
+      "raw_employers": 3,
+      "duplicates_plus_early_rejects": 3,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed current South-region commercial-development hiring surfaces; anonymous/agency or insufficiently resolved employer records were rejected early."
+    },
+    {
+      "batch": "regional_career_pages_and_aggregators",
+      "region": "multi-region",
+      "raw_employers": 3,
+      "duplicates_plus_early_rejects": 3,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Additional regional job/career surfaces were checked to reduce HH Moscow/SPb overlap; no additional employer passed the complete evidence chain."
+    }
+  ],
+  "worker_funnel": {
+    "raw_employer_level": 18,
+    "fast_gate_pass": 1,
+    "deep_check": 1,
+    "size_pass": 1,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1
+  },
+  "candidates": [
+    {
+      "status": "QUALIFIED",
+      "brand": "Сан Лоджистик",
+      "legal_name": "ООО \"САН ЛОДЖИСТИК\"",
+      "lead_id": null,
+      "inn": "6670432550",
+      "ogrn": "1146670033509",
+      "country": "RU",
+      "hq": "Екатеринбург",
+      "domain": "sunlog.ru",
+      "brand_domain_link_confirmed": true,
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 933355000,
+        "employees_2025": 24,
+        "note": "Fresh 2025 financial data used: revenue 933.355m RUB and 24 employees. The company is listed as a medium enterprise. Older 2024 revenue was not used as the current scale decision where 2025 data was available.",
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-SAN-LODZHISTIK_193d5058-a6f3-4288-bc25-766de07490e2/",
+          "https://companium.ru/id/1146670033509-san-lodzhistik"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "active": true,
+        "evidence_date": "2026-07-05",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1146670033509-ooo-san-lodzhistik/",
+          "https://companium.ru/id/1146670033509-san-lodzhistik",
+          "https://otc.ru/organization/all/1146670033509/"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S1",
+        "type": "commercial_leadership_hiring",
+        "title": "Коммерческий директор",
+        "published_date": "2026-08-19",
+        "description": "Fresh direct-employer commercial-director vacancy in Ekaterinburg. The role requires management of B2B sales and supply, building and formalizing the sales system and commercial processes.",
+        "evidence_urls": [
+          "https://ekaterinburg.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B4%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "primary": {
+          "name": "Искабулов Сергей Рустамович",
+          "role": "директор; учредитель 20%",
+          "evidence_urls": [
+            "https://companium.ru/id/1146670033509-san-lodzhistik",
+            "https://b2b.house/company/OOO-SAN-LODZHISTIK_193d5058-a6f3-4288-bc25-766de07490e2/"
+          ]
+        },
+        "owners": [
+          {"name": "Искабулова Татьяна Алексеевна", "share": "80%"},
+          {"name": "Искабулов Сергей Рустамович", "share": "20%"}
+        ],
+        "note": "Current director and ownership are confirmed by fresh legal/business-registry sources. No personal contact details were inferred."
+      },
+      "contact": {
+        "status": "PASS",
+        "published_only": true,
+        "phone": "+7 (343) 228-72-73",
+        "additional_phones": ["+7 (343) 300-41-31"],
+        "emails": ["sl@sunlog.ru"],
+        "route": "published corporate phone/email tied to the official company domain sunlog.ru plus current vacancy response route",
+        "evidence_urls": [
+          "https://companium.ru/id/1146670033509-san-lodzhistik",
+          "https://1foodexpo.com/companies/konservanty/san-lodzistik/contacts",
+          "https://zachestnyibiznes.ru/company/ul/1146670033509_6670432550_OOO-SAN-LODGhISTIK"
+        ],
+        "personal_contact_claimed": false
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6670432550",
+        "ogrn": "1146670033509",
+        "exact_legal_name": "ООО \"САН ЛОДЖИСТИК\"",
+        "brand_domain": "Сан Лоджистик|sunlog.ru"
+      },
+      "dedup_checks": {
+        "pre_deep_repo_wide": "NO_MATCH_FOUND",
+        "pre_stage_repo_wide": "NO_MATCH_FOUND",
+        "queries": ["6670432550", "1146670033509", "САН ЛОДЖИСТИК", "sunlog.ru"],
+        "scope": "repository-wide GitHub code search plus pending_workers root/jobs-directory enumeration at fresh baseline HEAD",
+        "note": "Repository-wide exact-key searches returned no match for INN, OGRN, exact legal-name token or confirmed domain before staging. The pending_workers root and jobs directory were enumerated at baseline HEAD. Connector response truncation prevents a truthful claim that every historical pending_workers blob body was physically read in full; canonical writer must still perform the repository physical integration guard before canonical integration."
+      },
+      "evidence_urls": [
+        "https://companium.ru/id/1146670033509-san-lodzhistik",
+        "https://b2b.house/company/OOO-SAN-LODZHISTIK_193d5058-a6f3-4288-bc25-766de07490e2/",
+        "https://companies.rbc.ru/id/1146670033509-ooo-san-lodzhistik/",
+        "https://1foodexpo.com/companies/konservanty/san-lodzistik/contacts",
+        "https://ekaterinburg.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B4%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF%D0%BC%D0%B5%D0%BD%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+      ]
+    }
+  ]
+}
