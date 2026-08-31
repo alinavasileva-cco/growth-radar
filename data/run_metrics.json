@@ -3,12 +3,13 @@
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260831-547",
   "current_run_id": "N5K-20260831-547",
-  "current_run_status": "COMPLETED",
+  "current_run_status": "COMPLETED_POST_DEDUP_REPAIRED",
   "canonical_pool_verified": 561,
   "contactable_verified": 561,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
   "remaining_to_target": 4439,
+  "remaining_to_1000": 439,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
@@ -26,6 +27,10 @@
     "physically_integrated": 1,
     "duplicates": 2,
     "excluded": 11,
+    "qualified_raw_pct": 7.142857,
+    "fast_gate_raw_pct": 42.857143,
+    "qualified_raw_delta_pp_vs_previous_hour": 7.142857,
+    "fast_gate_raw_delta_pp_vs_previous_hour": 33.554817,
     "lane_metrics": [
       {
         "lane": "jobs_worker_20260831_202214",
@@ -41,7 +46,7 @@
         "duplicate_early_reject": 0,
         "qualified_raw_pct": null,
         "fast_gate_raw_pct": null,
-        "decision": "FAIL_CLOSED_CONSUME_NO_DEEP_CHECK; worker reported 25 surfaced cards but could not prove distinct employer raw after required repo dedup"
+        "decision": "FAIL_CLOSED_CONSUME_NO_DEEP_CHECK; 25 surfaced cards were not counted as distinct raw because repo-wide dedup materialization was not proven"
       },
       {
         "lane": "growth_news_fresh",
@@ -53,11 +58,11 @@
         "lpr": 3,
         "contact": 2,
         "prewrite_qualified": 2,
-        "qualified": 2,
-        "duplicate_early_reject": 8,
-        "qualified_raw_pct": 20.0,
+        "qualified": 1,
+        "duplicate_early_reject": 9,
+        "qualified_raw_pct": 10.0,
         "fast_gate_raw_pct": 40.0,
-        "decision": "BOOST; fresh expansion/investment sources produced two fully evidenced prewrite candidates; one known canonical duplicate was rejected early"
+        "decision": "BOOST; Eco Shipping physically integrated; Petrovax removed by final physical INN+OGRN+LEGAL_NAME+BRAND_DOMAIN dedup"
       },
       {
         "lane": "official_owner_ceo_fresh",
@@ -75,6 +80,12 @@
         "fast_gate_raw_pct": 50.0,
         "decision": "KEEP_TESTING_LOW_OVERLAP; no candidate promoted without complete deep funnel"
       }
-    ]
+    ],
+    "previous_three_efficiency": [
+      {"run_id":"N5K-20260831-544","qualified_raw_pct":0.0,"fast_gate_raw_pct":10.526316},
+      {"run_id":"N5K-20260831-545","qualified_raw_pct":16.666667,"fast_gate_raw_pct":33.333333},
+      {"run_id":"N5K-20260831-546","qualified_raw_pct":0.0,"fast_gate_raw_pct":9.302326}
+    ],
+    "next_distribution_pct": {"jobs":5,"growth_news":55,"official_owner_ceo":25,"industry_catalog":5,"regional_investment":5,"partner_business_change":5}
   }
 }
