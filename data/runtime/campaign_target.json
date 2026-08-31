@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-31T17:05:15+03:00",
+  "updated_at": "2026-08-31T18:22:20+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260831-543",
-  "current_run_id": "N5K-20260831-543",
-  "last_run_id": "N5K-20260831-543",
-  "latest_completed_run": "N5K-20260831-543",
+  "last_completed_run_id": "N5K-20260831-544",
+  "current_run_id": "N5K-20260831-544",
+  "last_run_id": "N5K-20260831-544",
+  "latest_completed_run": "N5K-20260831-544",
   "canonical_integration_run_id": "N5K-20260831-543",
   "hourly_baseline_count": 556,
   "hourly_net_new": 1,
@@ -49,5 +49,5 @@
   },
   "fresh_staging": "Fresh immutable jobs worker 20260831-163052 ingested first. Canonical writer independently reverified worker candidate ЭЛЕМЕНТ because worker preflight was incomplete; repository physical integration guard accepted it as net-new N5K-0722. qualified_staged_not_counted=0.",
   "repair_required": null,
-  "note": "N5K-20260831-543 completed after physical integration: +1 net new; canonical/contactable 557/557; integrity PASS; orphan 0/0; staged 0; outreach 0. Jobs remains 5% probe-only because duplicate+early-reject=96.15%; regional investment remains amplified at 35%."
+  "note": "N5K-20260831-544 completed after physical integration: +0 net new; canonical/contactable 557/557; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

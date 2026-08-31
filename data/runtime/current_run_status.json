@@ -1,49 +1,34 @@
 {
-  "run_id": "N5K-20260831-543",
+  "run_id": "N5K-20260831-544",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T17:05:15+03:00",
+  "updated_at": "2026-08-31T18:22:20+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 556,
+    "baseline_count": 557,
     "target_count": 5000,
     "current_canonical_count": 557,
     "current_contactable_count": 557,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4443
   },
   "funnel": {
-    "discovered": 34,
-    "fast_gate_passed": 5,
+    "discovered": 38,
+    "fast_gate_passed": 4,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 33
+    "qualified": 0,
+    "duplicates": 2,
+    "excluded": 36
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260831_163052",
+      "lane": "jobs_worker_20260831_172627",
       "raw": 26,
-      "fast_gate": 1,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "prewrite_qualified": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 25,
-      "qualified_raw_pct": 3.8462,
-      "fast_gate_raw_pct": 3.8462
-    },
-    {
-      "lane": "regional_investment_fresh_20260831",
-      "raw": 8,
-      "fast_gate": 4,
+      "fast_gate": 0,
       "size": 0,
       "legal": 0,
       "signal": 0,
@@ -51,40 +36,27 @@
       "contact": 0,
       "prewrite_qualified": 0,
       "qualified": 0,
-      "duplicate_plus_early_reject": 4,
+      "duplicate_plus_early_reject": 26,
       "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 50.0
+      "fast_gate_raw_pct": 0.0
+    },
+    {
+      "lane": "regional_investment_growth_official_20260831_1822",
+      "raw": 12,
+      "fast_gate": 4,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "prewrite_qualified": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 11,
+      "qualified_raw_pct": 8.3333,
+      "fast_gate_raw_pct": 33.3333
     }
   ],
-  "aggregate_efficiency": {
-    "qualified_raw_pct": 2.9412,
-    "fast_gate_raw_pct": 14.7059,
-    "previous_run_542R1_qualified_raw_pct": 0.0,
-    "previous_run_542R1_fast_gate_raw_pct": 25.0,
-    "qualified_raw_delta_pp": 2.9412,
-    "fast_gate_raw_delta_pp": -10.2941,
-    "net_new_delta": 1
-  },
-  "last_three_completed_run_aggregate_efficiency": [
-    {"run_id":"N5K-20260831-540R1","raw":17,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":23.5294},
-    {"run_id":"N5K-20260831-541R1","raw":47,"fast_gate":11,"qualified":1,"qualified_raw_pct":2.1277,"fast_gate_raw_pct":23.4043},
-    {"run_id":"N5K-20260831-542R1","raw":32,"fast_gate":8,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":25.0}
-  ],
-  "historical_lane_note": "Exact post-dedup per-lane qualified counts are not reconstructed for older runs where stored lane instrumentation was pre-write. Aggregate values above are physical post-dedup results.",
-  "adaptive_decision": {
-    "jobs": "KEEP_AT_5_PERCENT_PROBE_ONLY: current duplicate+early-reject 25/26=96.15%, above 70% threshold despite one net qualified.",
-    "regional_investment": "KEEP_AMPLIFIED: 4/8 passed fast gate in fresh source sample; no weak candidate promoted without full evidence.",
-    "reason": "Net-new improved 0->1 but remains below 5; broad jobs allocation is not repeated because saturation remains extreme."
-  },
-  "next_distribution_pct": {
-    "jobs": 5,
-    "growth_news": 25,
-    "official_owner_ceo": 20,
-    "industry_catalog": 5,
-    "regional_investment": 35,
-    "partner_business_change": 10
-  },
-  "qualified_companies": ["ЭЛЕМЕНТ"],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,

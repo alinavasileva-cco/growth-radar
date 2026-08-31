@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-31T17:05:15+03:00",
+  "generated_at": "2026-08-31T18:22:20+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260831-543",
-  "current_run_id": "N5K-20260831-543",
+  "latest_completed_run_id": "N5K-20260831-544",
+  "current_run_id": "N5K-20260831-544",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 557,
   "contactable_verified": 557,
@@ -14,38 +14,23 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_543": {
-    "raw_discovered": 34,
-    "fast_gate_passed": 5,
+  "run_544": {
+    "raw_discovered": 38,
+    "fast_gate_passed": 4,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 0,
-    "excluded": 33,
+    "qualified": 0,
+    "physically_integrated": 0,
+    "duplicates": 2,
+    "excluded": 36,
     "lane_metrics": [
       {
-        "lane": "jobs_worker_20260831_163052",
+        "lane": "jobs_worker_20260831_172627",
         "raw": 26,
-        "fast_gate": 1,
-        "size": 1,
-        "legal": 1,
-        "signal": 1,
-        "lpr": 1,
-        "contact": 1,
-        "prewrite_qualified": 1,
-        "qualified": 1,
-        "duplicate_plus_early_reject": 25,
-        "qualified_raw_pct": 3.8462,
-        "fast_gate_raw_pct": 3.8462
-      },
-      {
-        "lane": "regional_investment_fresh_20260831",
-        "raw": 8,
-        "fast_gate": 4,
+        "fast_gate": 0,
         "size": 0,
         "legal": 0,
         "signal": 0,
@@ -53,9 +38,24 @@
         "contact": 0,
         "prewrite_qualified": 0,
         "qualified": 0,
-        "duplicate_plus_early_reject": 4,
+        "duplicate_plus_early_reject": 26,
         "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 50.0
+        "fast_gate_raw_pct": 0.0
+      },
+      {
+        "lane": "regional_investment_growth_official_20260831_1822",
+        "raw": 12,
+        "fast_gate": 4,
+        "size": 1,
+        "legal": 1,
+        "signal": 1,
+        "lpr": 1,
+        "contact": 1,
+        "prewrite_qualified": 1,
+        "qualified": 1,
+        "duplicate_plus_early_reject": 11,
+        "qualified_raw_pct": 8.3333,
+        "fast_gate_raw_pct": 33.3333
       }
     ]
   }
