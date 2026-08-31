@@ -1,93 +1,54 @@
 {
-  "run_id": "N5K-20260831-537",
+  "run_id": "N5K-20260831-538",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T07:58:07+03:00",
+  "updated_at": "2026-08-31T08:58:08+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 552,
+    "baseline_count": 553,
     "target_count": 5000,
     "current_canonical_count": 553,
     "current_contactable_count": 553,
-    "progress_added": 1,
-    "remaining": 4447,
-    "remaining_to_1000": 447
+    "progress_added": 0,
+    "remaining": 4447
   },
   "funnel": {
-    "discovered": 15,
-    "fast_gate_passed": 3,
+    "discovered": 34,
+    "fast_gate_passed": 6,
     "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 0,
     "duplicates": 1,
-    "excluded": 13
+    "excluded": 33
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260831_072700",
-      "raw": 14,
-      "fast_gate": 2,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 0,
-      "duplicate_plus_early_reject": 14,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 14.2857,
-      "duplicate_plus_early_reject_pct": 100.0,
-      "physical_dedup": "ПолиАэрПак skipped: existing N5K-0480 by INN 7743641590 and OGRN 5077746710828",
-      "adaptive_action": "jobs capped at 5% probe-only for next 3 RUN"
-    },
-    {
-      "lane": "regional_investment_fresh_low_overlap",
-      "raw": 1,
-      "fast_gate": 1,
-      "size": 1,
+      "lane": "jobs_worker_20260831_082900",
+      "raw": 34,
+      "fast_gate": 6,
+      "size": 2,
       "legal": 1,
       "signal": 1,
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": 100.0,
-      "fast_gate_raw_pct": 100.0,
-      "duplicate_plus_early_reject_pct": 0.0,
-      "adaptive_action": "boost next RUN with sample-size caution"
+      "duplicate_plus_early_reject": 33,
+      "qualified_raw_pct": 2.9412,
+      "fast_gate_raw_pct": 17.6471,
+      "duplicate_plus_early_reject_pct": 97.0588,
+      "adaptive_action": "jobs remains capped at 5% probe-only; do not expand despite one qualified because duplicate+early-reject remains >70%"
     }
   ],
-  "efficiency_history": [
-    {"run_id":"N5K-20260831-534","qualified_raw_pct":0.0,"fast_gate_raw_pct":8.8235},
-    {"run_id":"N5K-20260831-535R1","qualified_raw_pct":5.5556,"fast_gate_raw_pct":5.5556},
-    {"run_id":"N5K-20260831-536","qualified_raw_pct":0.0,"fast_gate_raw_pct":8.6957},
-    {"run_id":"N5K-20260831-537","qualified_raw_pct":6.6667,"fast_gate_raw_pct":20.0}
-  ],
-  "historical_lane_metrics_note": "Full per-lane raw/fast_gate/size/signal/qualified fields were not preserved for every lane in all of RUN 534-536; they were not reconstructed. Overall run efficiencies are physically preserved and current RUN lane metrics are complete.",
-  "delta_vs_previous_run": {
-    "qualified_raw_pp": 6.6667,
-    "fast_gate_raw_pp": 11.3043,
-    "net_new": "0 -> 1"
-  },
-  "next_distribution_pct": {
-    "jobs": 5,
-    "growth_news": 25,
-    "official_owner_ceo": 20,
-    "industry_catalog": 5,
-    "regional_investment": 35,
-    "partner_business_change": 10
-  },
-  "qualified_companies": ["Сибу Индастриэл / Sibu Industrial"],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
   "physical_master_state": "553_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "553_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "qualified_staged_not_counted": 0,
   "outreach_sent": 0,
   "blocker": null
 }
