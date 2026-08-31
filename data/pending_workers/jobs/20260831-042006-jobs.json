@@ -1,0 +1,178 @@
+{
+  "schema_version": "jobs_worker_v1",
+  "lane": "jobs",
+  "worker_mode": "READ+DISCOVERY_ONLY",
+  "immutable": true,
+  "created_at": "2026-08-31T04:20:06+03:00",
+  "baseline_head": "60e5d4d0d808bef08d08b839fe2f09cc2ee7046a",
+  "config_version": "2026-08-31T03:58:19+03:00",
+  "canonical_baseline": {
+    "master": 550,
+    "contactable": 550,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0,
+    "last_completed_run": "N5K-20260831-534"
+  },
+  "constraints": {
+    "criteria_changed": false,
+    "canonical_writer_started": false,
+    "canonical_written": false,
+    "outreach_performed": false,
+    "funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"]
+  },
+  "source_batch_metrics": [
+    {
+      "batch": "ural_commercial_crossboard",
+      "region": "Ekaterinburg/Ural",
+      "raw_employers": 4,
+      "duplicates_plus_early_rejects": 4,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed Company ORUM, EKAD:Yuzhny, KARSO and other current commercial-leadership surfaces. Batch underfilled because the accessible search surface did not expose 20 distinct employer-level records without padding."
+    },
+    {
+      "batch": "volga_commercial_crossboard",
+      "region": "Samara/Kazan/Volga",
+      "raw_employers": 4,
+      "duplicates_plus_early_rejects": 4,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed Samarskaya Opticheskaya Kabelnaya Kompaniya, Akron Holding and current Kazan/Volga commercial-director surfaces. No candidate promoted without complete proof chain."
+    },
+    {
+      "batch": "south_commercial_crossboard",
+      "region": "Krasnodar/Rostov/Stavropol",
+      "raw_employers": 5,
+      "duplicates_plus_early_rejects": 5,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed Nika, Ormatek, Diorit, LUKMAN-mediated role and other South-region commercial-leadership signals. Agency/anonymous or insufficiently resolved employer records were rejected early."
+    },
+    {
+      "batch": "siberia_regional_crossboard",
+      "region": "Novosibirsk/Siberia",
+      "raw_employers": 2,
+      "duplicates_plus_early_rejects": 2,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed current Novosibirsk commercial-leadership surface including the already-known Lyudi developer signal; no previously staged employer was treated as new."
+    },
+    {
+      "batch": "moscow_manufacturing_commercial",
+      "region": "Moscow",
+      "raw_employers": 3,
+      "duplicates_plus_early_rejects": 2,
+      "fast_gate_pass": 1,
+      "qualified": 1,
+      "note": "Observed Rubezh-Inzhiniring and adjacent manufacturing/commercial-leadership hiring surfaces. Rubezh-Inzhiniring advanced through the full funnel."
+    }
+  ],
+  "worker_funnel": {
+    "raw_employer_level": 18,
+    "fast_gate_pass": 1,
+    "deep_check": 1,
+    "size_pass": 1,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1
+  },
+  "candidates": [
+    {
+      "status": "QUALIFIED",
+      "brand": "Рубеж-Инжиниринг",
+      "legal_name": "ООО \"РУБЕЖ-ИНЖИНИРИНГ\"",
+      "lead_id": null,
+      "inn": "7701775866",
+      "ogrn": "1087746355443",
+      "country": "RU",
+      "hq": "Москва",
+      "domain": "rub-in.ru",
+      "brand_domain_link_confirmed": true,
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 265206000,
+        "employees_2025": 39,
+        "note": "Fresh 2025 financial data used: revenue 265.206m RUB, up 63.7% YoY; 39 employees. Older financial records were not used where 2025 data was available.",
+        "evidence_urls": [
+          "https://firmoteka.ru/7701775866",
+          "https://companies.rbc.ru/id/1087746355443-ooo-rubezh-inzhiniring/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "active": true,
+        "evidence_date": "2026-08-29",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1087746355443-ooo-rubezh-inzhiniring/",
+          "https://reputation.ru/ogrn/1087746355443",
+          "https://firmoteka.ru/7701775866"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S1",
+        "type": "commercial_leadership_hiring",
+        "title": "Категорийный директор / Руководитель отдела продаж",
+        "published_date": "2026-08-20",
+        "description": "Fresh employer-level top-management commercial hiring signal: a Category Director vacancy published 20.08.2026 and categorized as Commercial Director (CCO), alongside a current Head of Sales vacancy covering sales strategy, sales plans, channel development, market analysis and commercial execution.",
+        "evidence_urls": [
+          "https://moscow.cataloxy.ru/rabota/vacancy1128125540_kategoriynyy-direktor.htm",
+          "https://bebee.com/ru/jobs/techmap_ru_134578000"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "primary": {
+          "name": "Науменко Петр Алексеевич",
+          "role": "учредитель 80%; генеральный директор по более свежему источнику Firmoteka",
+          "evidence_urls": [
+            "https://firmoteka.ru/7701775866",
+            "https://companies.rbc.ru/id/1087746355443-ooo-rubezh-inzhiniring/"
+          ]
+        },
+        "owners": [
+          {"name": "Науменко Петр Алексеевич", "share": "80%"},
+          {"name": "Демидюк Андрей Викторович", "share": "10%"},
+          {"name": "Лех Сергей Иванович", "share": "10%"}
+        ],
+        "note": "For the executive role, the fresher Firmoteka record is preferred over older/stale conflicting cards. Ownership itself is consistently sufficient to establish Naumenko as an LPR. No personal contact details were inferred."
+      },
+      "contact": {
+        "status": "PASS",
+        "published_only": true,
+        "phone": "+7 (499) 979-09-77",
+        "additional_phones": ["+7 (926) 929-48-24"],
+        "emails": ["info@rub-in.ru"],
+        "route": "official corporate website main office / sales department / email plus current vacancy response route",
+        "evidence_urls": [
+          "https://www.rub-in.ru/company/",
+          "https://moscow.cataloxy.ru/rabota/vacancy1128125540_kategoriynyy-direktor.htm"
+        ],
+        "personal_contact_claimed": false
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "7701775866",
+        "ogrn": "1087746355443",
+        "exact_legal_name": "ООО \"РУБЕЖ-ИНЖИНИРИНГ\"",
+        "brand_domain": "Рубеж-Инжиниринг|rub-in.ru"
+      },
+      "dedup_checks": {
+        "pre_deep_repo_wide": "NO_MATCH_FOUND",
+        "pre_stage_repo_wide": "NO_MATCH_FOUND",
+        "queries": ["7701775866", "1087746355443", "РУБЕЖ-ИНЖИНИРИНГ", "rub-in.ru"],
+        "scope": "repository-wide GitHub code search plus pending_workers root/jobs-directory enumeration at fresh baseline HEAD",
+        "note": "Repository-wide exact-key searches returned no match for INN, OGRN, exact legal-name token or confirmed domain before staging. The pending_workers root and jobs directory were enumerated at baseline HEAD. Connector response truncation prevents a truthful claim that every historical pending_workers blob body was physically read in full; canonical writer must still perform the repository physical integration guard before canonical integration."
+      },
+      "evidence_urls": [
+        "https://www.rub-in.ru/company/",
+        "https://firmoteka.ru/7701775866",
+        "https://companies.rbc.ru/id/1087746355443-ooo-rubezh-inzhiniring/",
+        "https://moscow.cataloxy.ru/rabota/vacancy1128125540_kategoriynyy-direktor.htm",
+        "https://bebee.com/ru/jobs/techmap_ru_134578000"
+      ]
+    }
+  ]
+}
