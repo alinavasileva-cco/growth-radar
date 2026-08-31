@@ -1,0 +1,137 @@
+{
+  "schema_version": "pending_worker_v1",
+  "worker_lane": "growth_news",
+  "created_at": "2026-08-31T09:27:00+03:00",
+  "baseline_head": "990a8e2358d82fa2b48e6d33070c9005adeb7d35",
+  "config_version": "2026-08-31T08:58:08+03:00",
+  "canonical_counts_at_start": {
+    "master": 553,
+    "contactable": 553,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0
+  },
+  "constraints": {
+    "criteria_changed": false,
+    "canonical_writer_run": false,
+    "outreach_performed": false,
+    "canonical_files_written": false
+  },
+  "dedup": {
+    "performed_before_deep_check": true,
+    "performed_immediately_before_staging": true,
+    "keys": ["lead_id", "inn", "ogrn_or_ogrnip", "exact_legal_name", "confirmed_brand_domain"],
+    "repo_wide_exact_key_search": {
+      "inn_7451010117": 0,
+      "ogrn_1217400010805": 0,
+      "exact_legal_name_PK_CUP": 0,
+      "confirmed_brand_domain_pk_cup_ru": 0
+    },
+    "note": "Repo-wide exact-key search returned no matches immediately before staging. Final physical canonical dedup remains mandatory before integration."
+  },
+  "source_batches": [
+    {
+      "batch": "regional-investment-chelyabinsk-packaging-recycling",
+      "source_mix": ["official company news", "Kommersant", "current legal/financial profiles", "industry association"],
+      "region": "Челябинская область",
+      "raw_unique_employers_observed": 1,
+      "deep_check": 1,
+      "qualified": 1,
+      "note": "Targeted low-overlap investment/growth discovery; raw count is actual and is not inflated with weak catalogue observations."
+    }
+  ],
+  "worker_funnel": {
+    "raw_unique_employer_level_observed": 1,
+    "fast_gate": 1,
+    "deep_check": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "candidates": [
+    {
+      "status": "QUALIFIED",
+      "brand": "Центр упаковки / ПК ЦУП",
+      "legal_name": "ООО \"ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ \"ЦЕНТР УПАКОВКИ\"",
+      "inn": "7451010117",
+      "ogrn": "1217400010805",
+      "region_signal": "Челябинск",
+      "registered_region": "Челябинская область, Челябинск",
+      "domain": "pk-cup.ru",
+      "lead_id": null,
+      "segment": "Промышленное производство / упаковка / переработка вторсырья / B2B",
+      "size": {
+        "revenue_2025_rub": 475352000,
+        "employees_2025": 103,
+        "fit_note": "Верхняя граница целевого диапазона до 500 млн ₽; допускается только из-за сильного свежего сигнала и доступного собственника/руководства.",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1217400010805-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennaya-kompaniya-tsentr-upakovki/",
+          "https://saby.ru/profile/7451010117-745101001",
+          "https://alestech.ru/factory/1493-centr-upakovki"
+        ]
+      },
+      "legal": {
+        "status": "ACTIVE",
+        "registered_since": "2021-03-25",
+        "evidence_urls": [
+          "https://saby.ru/profile/7451010117-745101001",
+          "https://companies.rbc.ru/id/1217400010805-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennaya-kompaniya-tsentr-upakovki/",
+          "https://check.tochka.com/company/1217400010805/"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "type": "new_plant_scaling_and_productivity_transformation",
+        "title": "Запуск нового завода по переработке многослойной упаковки",
+        "date": "2026-07-14",
+        "details": "Компания запустила в Челябинске новый завод по переработке многослойной комбинированной упаковки. Собственники вложили около 700 млн ₽; мощность около 900 тонн в месяц. Проект расширяет компанию из производителя упаковки в переработку вторсырья и создаёт новый B2B-контур реализации вторичной целлюлозы и полиала. Официальные новости компании в августе 2026 подтверждают запуск и текущую эксплуатацию проекта.",
+        "evidence_urls": [
+          "https://www.kommersant.ru/doc/8815023",
+          "https://pk-cup.ru/news/tetrapak-bolshe-ne-musor-v-chelyabinske-zapustili-pervoe-na-urale-i-v-sibiri-proizvodstvo-po-pererabotke-mnogoslojnoj-upakovki/",
+          "https://pk-cup.ru/news/centr-upakovki-predstavil-maket-zavoda-po-pererabotke-mnogoslojnoj-upakovki-na-stende-chelyabinskoj-oblasti-v-ramkah-innoproma-2026/"
+        ]
+      },
+      "lpr": {
+        "general_director": "Жаботинский Константин Анатольевич",
+        "owner": "Федоров Павел Александрович",
+        "owner_share_pct": 57.4,
+        "other_owners_note": "ООО \"Рост\" — 25.1%; Чудинова Наталья Сергеевна — 17.5%.",
+        "evidence_urls": [
+          "https://companies.rbc.ru/amp/ogrn/1217400010805/",
+          "https://saby.ru/profile/7451010117-745101001"
+        ]
+      },
+      "contact": {
+        "published_only": true,
+        "phones": ["+7 (351) 945-03-62", "+7 (912) 890-80-30", "+7 (919) 310-03-91"],
+        "emails": ["info@pk-cup.ru"],
+        "website": "https://pk-cup.ru/",
+        "contact_route_notes": "Официальный сайт публикует телефон, email и отдельный номер отдела продаж; отраслевой профиль Ассоциации Лестех подтверждает те же маршруты и адрес предприятия. Используется корпоративный маршрут передачи сообщения руководству, без выдуманных персональных контактов.",
+        "evidence_urls": [
+          "https://pk-cup.ru/",
+          "https://alestech.ru/factory/1493-centr-upakovki"
+        ],
+        "template_reconstruction_used": false
+      },
+      "consulting_hypothesis": "После инвестиций около 700 млн ₽ и запуска нового перерабатывающего производства — выстроить коммерческий контур нового направления: B2B go-to-market для вторичной целлюлозы и полиала, загрузку мощностей, pipeline продаж, pricing/маржинальность, KPI и связку нового производства с существующим бизнесом упаковки.",
+      "dedup_keys": {
+        "inn": "7451010117",
+        "ogrn": "1217400010805",
+        "exact_legal_name": "ООО \"ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ \"ЦЕНТР УПАКОВКИ\"",
+        "brand_domain": "Центр упаковки|pk-cup.ru"
+      },
+      "evidence_urls": [
+        "https://pk-cup.ru/",
+        "https://pk-cup.ru/news/tetrapak-bolshe-ne-musor-v-chelyabinske-zapustili-pervoe-na-urale-i-v-sibiri-proizvodstvo-po-pererabotke-mnogoslojnoj-upakovki/",
+        "https://www.kommersant.ru/doc/8815023",
+        "https://companies.rbc.ru/id/1217400010805-obschestvo-s-ogranichennoj-otvetstvennostyu-proizvodstvennaya-kompaniya-tsentr-upakovki/",
+        "https://companies.rbc.ru/amp/ogrn/1217400010805/",
+        "https://saby.ru/profile/7451010117-745101001",
+        "https://check.tochka.com/company/1217400010805/",
+        "https://alestech.ru/factory/1493-centr-upakovki"
+      ]
+    }
+  ]
+}
