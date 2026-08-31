@@ -1,34 +1,33 @@
 {
-  "run_id": "N5K-20260831-546",
+  "run_id": "N5K-20260831-547",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T20:02:51+03:00",
-  "stage": "COMPLETE_POST_DEDUP_REPAIRED",
+  "updated_at": "2026-08-31T20:58:34+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 560,
     "target_count": 5000,
-    "current_canonical_count": 560,
-    "current_contactable_count": 560,
-    "progress_added": 0,
-    "remaining": 4440,
-    "remaining_to_1000": 440
+    "current_canonical_count": 561,
+    "current_contactable_count": 561,
+    "progress_added": 1,
+    "remaining": 4439
   },
   "funnel": {
-    "discovered": 43,
-    "fast_gate_passed": 4,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 42
+    "discovered": 14,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 2,
+    "excluded": 11
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260831_192500",
-      "raw": 39,
+      "lane": "jobs_worker_20260831_202214",
+      "raw": 0,
       "fast_gate": 0,
       "size": 0,
       "legal": 0,
@@ -37,50 +36,53 @@
       "contact": 0,
       "prewrite_qualified": 0,
       "qualified": 0,
-      "duplicate_early_reject": 39,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 0.0,
-      "decision": "CUT_5_PERCENT_PROBE_ONLY"
+      "duplicate_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "decision": "FAIL_CLOSED_CONSUME_NO_DEEP_CHECK; worker reported 25 surfaced cards but could not prove distinct employer raw after required repo dedup"
     },
     {
-      "lane": "regional_investment_growth_fresh",
-      "raw": 4,
+      "lane": "growth_news_fresh",
+      "raw": 10,
       "fast_gate": 4,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "prewrite_qualified": 1,
+      "size": 3,
+      "legal": 3,
+      "signal": 3,
+      "lpr": 3,
+      "contact": 2,
+      "prewrite_qualified": 2,
+      "qualified": 2,
+      "duplicate_early_reject": 8,
+      "qualified_raw_pct": 20.0,
+      "fast_gate_raw_pct": 40.0,
+      "decision": "BOOST; fresh expansion/investment sources produced two fully evidenced prewrite candidates; one known canonical duplicate was rejected early"
+    },
+    {
+      "lane": "official_owner_ceo_fresh",
+      "raw": 4,
+      "fast_gate": 2,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "prewrite_qualified": 0,
       "qualified": 0,
       "duplicate_early_reject": 4,
       "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 100.0,
-      "decision": "KEEP_5_PERCENT_PROBE; sole prewrite candidate removed by physical INN+OGRN+LEGAL_NAME dedup"
+      "fast_gate_raw_pct": 50.0,
+      "decision": "KEEP_TESTING_LOW_OVERLAP; no candidate promoted without complete deep funnel"
     }
   ],
-  "efficiency": {
-    "current": {"run_id":"N5K-20260831-546","raw":43,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":9.302326},
-    "previous_three": [
-      {"run_id":"N5K-20260831-543","raw":34,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.941176,"fast_gate_raw_pct":14.705882},
-      {"run_id":"N5K-20260831-544","raw":38,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":10.526316},
-      {"run_id":"N5K-20260831-545","raw":18,"fast_gate":6,"qualified":3,"qualified_raw_pct":16.666667,"fast_gate_raw_pct":33.333333}
-    ],
-    "delta_vs_previous_hour": {"qualified_raw_pp":-16.666667,"fast_gate_raw_pp":-24.031008,"net_new_previous":3,"net_new_current":0}
-  },
-  "adaptive_action": {
-    "cut_or_probe": ["jobs: 5% probe-only; current fast/raw=0%, q/raw=0%, duplicate+early_reject=100%","regional_investment: 5% probe-only; current q/raw=0%, duplicate+early_reject=100% after final physical dedup"],
-    "boosted": ["growth_news: 50%; last physically proven net-new lane was RUN 545, but n=3 caveat retained","official_owner_ceo: 25%; fresh low-overlap change/expansion sources"],
-    "next_distribution_pct": {"jobs":5,"growth_news":50,"official_owner_ceo":25,"industry_catalog":5,"regional_investment":5,"partner_business_change":10}
-  },
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Эко Шиппинг"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "560_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "560_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "561_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "561_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "repair_note": "Physical integrator rejected Борус as an existing canonical company by INN 2464149893 + OGRN 1192468028070 + exact legal name. Prewrite qualified=1 is retained only as audit metadata and is not counted as lane or aggregate net qualified."
+  "blocker": null
 }
