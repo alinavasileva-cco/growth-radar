@@ -1,58 +1,8 @@
 {
-  "campaign_id": "new_5000",
-  "baseline_count": 0,
-  "total_target": 5000,
-  "current_canonical_count": 550,
-  "current_contactable_count": 550,
-  "progress_added": 550,
-  "remaining_to_total_target": 4450,
-  "remaining": 4450,
-  "remaining_to_1000": 450,
-  "qualified_staged_not_counted": 0,
-  "integrity_status": "PASS",
-  "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-31T03:02:36+03:00",
-  "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260831-533R1",
-  "current_run_id": "N5K-20260831-533R1",
-  "last_run_id": "N5K-20260831-533R1",
-  "latest_completed_run": "N5K-20260831-533R1",
-  "canonical_integration_run_id": "N5K-20260831-533R1",
-  "hourly_parent_run_id": "N5K-20260831-532",
-  "hourly_baseline_count": 550,
-  "hourly_net_new": 0,
-  "orphan_contacts": 0,
-  "orphan_evidence": 0,
-  "outreach_sent": 0,
-  "overall_efficiency": {
-    "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 6.1224,
-    "delta_vs_previous_hour_qualified_raw_pp": 0.0,
-    "delta_vs_previous_hour_fast_gate_raw_pp": -1.7723,
-    "net_qualified_delta": 0,
-    "net_qualified_change_vs_previous_hour": 0,
-    "denominator_note": "Recovery consumed two fresh post-RUN-532 jobs worker packages declaring 74 and 24 employer-level raw respectively. Their sum is 98 source-level employer observations, but global cross-worker uniqueness cannot be proven from the stored aggregate metrics; 98 must not be represented as 98 globally distinct companies. Physical final dedup skipped both qualified candidates as existing canonical records."
-  },
-  "comparison_last_3_runs": [
-    {"run_id":"N5K-20260830-531","raw":30,"fast_gate":3,"qualified":1,"qualified_raw_pct":3.3333,"fast_gate_raw_pct":10.0},
-    {"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947},
-    {"run_id":"N5K-20260831-533R1","raw":98,"raw_scope":"source-level sum; global cross-worker distinctness unproven","fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":6.1224}
-  ],
-  "next_distribution_pct": {
-    "jobs": 5,
-    "growth_news": 30,
-    "official_owner_ceo": 25,
-    "industry_catalog": 5,
-    "regional_investment": 20,
-    "partner_business_change": 15
-  },
-  "adaptive_controls": {
-    "jobs_cap_runs_remaining": 3,
-    "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
-    "jobs_trigger": "RUN 532 and RUN 533R1 both produced 0 physical net-qualified from jobs; RUN 533R1 post-dedup duplicate+early-reject is 100% in both jobs worker lanes. Keep jobs at maximum 5% for the next 3 RUN.",
-    "growth_action": "Use fresh low-overlap growth/expansion/business-change sources. Do not reuse the unresolved/duplicate-heavy source set unchanged.",
-    "official_action": "Increase emphasis on official company/owner/CEO sources and fresh transformation/leadership/new-direction evidence because absolute net-new remains below 5.",
-    "decision": "RUN 533R1 net qualified remains 0 and fast/raw declined from 7.8947% to 6.1224%. Do not expand jobs; next mix remains jobs 5%, growth-news 30%, official owner/CEO 25%, industry 5%, regional investment 20%, partner/business-change 15%, with source-set rotation inside the non-jobs lanes."
-  },
-  "note": "N5K-20260831-533R1 completed after physical integration: +0 net new; canonical/contactable 550/550; integrity PASS; orphan 0/0; staged 0; outreach 0. Both staged qualified candidates were skipped by physical dedup on INN, OGRN and brand+domain. Post-dedup lane metrics repaired at 2026-08-31T03:02:36+03:00."
+  "campaign_id":"new_5000","baseline_count":0,"total_target":5000,"current_canonical_count":550,"current_contactable_count":550,"progress_added":550,"remaining_to_total_target":4450,"remaining":4450,"remaining_to_1000":450,"qualified_staged_not_counted":0,"integrity_status":"PASS","campaign_status":"ACTIVE","updated_at":"2026-08-31T03:58:19+03:00","namespace":"data/campaigns/new_5000","last_completed_run_id":"N5K-20260831-534","current_run_id":"N5K-20260831-534","last_run_id":"N5K-20260831-534","latest_completed_run":"N5K-20260831-534","canonical_integration_run_id":"N5K-20260831-534","hourly_parent_run_id":"N5K-20260831-533R1","hourly_baseline_count":550,"hourly_net_new":0,"orphan_contacts":0,"orphan_evidence":0,"outreach_sent":0,
+  "overall_efficiency":{"qualified_raw_pct":0.0,"fast_gate_raw_pct":8.8235,"delta_vs_previous_hour_qualified_raw_pp":0.0,"delta_vs_previous_hour_fast_gate_raw_pp":2.7011,"net_qualified_delta":0,"net_qualified_change_vs_previous_hour":0,"denominator_note":"34 source-level observations: 30 worker-declared employer-level plus 4 fresh non-jobs probes; cross-lane global distinctness not asserted. Physical final dedup rejected the only worker pre-write PASS as existing N5K-0387."},
+  "comparison_last_3_runs":[{"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947},{"run_id":"N5K-20260831-533R1","raw":98,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":6.1224},{"run_id":"N5K-20260831-534","raw":34,"fast_gate":3,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":8.8235}],
+  "next_distribution_pct":{"jobs":5,"growth_news":25,"official_owner_ceo":35,"industry_catalog":5,"regional_investment":20,"partner_business_change":10},
+  "adaptive_controls":{"jobs_cap_runs_remaining":3,"jobs_mode":"PROBE_ONLY_NO_ORDINARY_DEEP_CHECK","jobs_trigger":"RUN 533R1 and RUN 534 both produce 0 physical net-qualified from jobs; RUN 534 duplicate+early-reject is 100% post-dedup.","decision":"Qualified remains <5. Previous mix is not repeated: growth-news 30->25, official owner/CEO 25->35, jobs stays 5%."},
+  "note":"RUN 534: +0; canonical/contactable 550/550; PASS; orphan 0/0; staged 0; outreach 0. Worker candidate Семейные традиции already exists as N5K-0387 by INN/OGRN/legal/domain."
 }
