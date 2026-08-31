@@ -1,95 +1,57 @@
 {
-  "run_id": "N5K-20260831-547",
+  "run_id": "N5K-20260831-548R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T20:58:34+03:00",
-  "stage": "COMPLETE_POST_DEDUP_REPAIRED",
+  "updated_at": "2026-08-31T22:37:05+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 560,
+    "baseline_count": 561,
     "target_count": 5000,
     "current_canonical_count": 561,
     "current_contactable_count": 561,
-    "progress_added": 1,
-    "remaining": 4439,
-    "remaining_to_1000": 439
+    "progress_added": 0,
+    "remaining": 4439
   },
   "funnel": {
-    "discovered": 14,
-    "fast_gate_passed": 6,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 2,
-    "qualified": 1,
-    "duplicates": 2,
-    "excluded": 11
+    "discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 0
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260831_202214",
+      "lane": "jobs_worker_20260831_222100",
       "raw": 0,
+      "source_level_observations": 19,
       "fast_gate": 0,
       "size": 0,
       "legal": 0,
       "signal": 0,
       "lpr": 0,
       "contact": 0,
-      "prewrite_qualified": 0,
       "qualified": 0,
-      "duplicate_early_reject": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "decision": "FAIL_CLOSED_CONSUME_NO_DEEP_CHECK; 25 surfaced cards were not counted as distinct raw because repo-wide dedup materialization was not proven by the worker"
+      "decision": "FAIL_CLOSED_METRICS_ONLY; 19 named source observations were not counted as repo-dedup-confirmed raw because worker preflight was blocked."
     },
     {
-      "lane": "growth_news_fresh",
-      "raw": 10,
-      "fast_gate": 4,
-      "size": 3,
-      "legal": 3,
-      "signal": 3,
-      "lpr": 3,
-      "contact": 2,
-      "prewrite_qualified": 2,
+      "lane": "recovery_current_source_deep_check",
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
       "qualified": 1,
-      "duplicate_early_reject": 9,
-      "qualified_raw_pct": 10.0,
-      "fast_gate_raw_pct": 40.0,
-      "decision": "BOOST; Eco Shipping physically integrated; Petrovax removed by final physical INN+OGRN+LEGAL_NAME+BRAND_DOMAIN dedup"
-    },
-    {
-      "lane": "official_owner_ceo_fresh",
-      "raw": 4,
-      "fast_gate": 2,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "prewrite_qualified": 0,
-      "qualified": 0,
-      "duplicate_early_reject": 4,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 50.0,
-      "decision": "KEEP_TESTING_LOW_OVERLAP; no candidate promoted without complete deep funnel"
+      "decision": "QUALIFIED_PREWRITE; ПолиАэрПак has fresh S1 commercial-growth signal and current legal/owner/contact evidence; final physical dedup delegated to canonical integration guard."
     }
   ],
-  "efficiency": {
-    "current": {"run_id":"N5K-20260831-547","raw":14,"fast_gate":6,"qualified":1,"qualified_raw_pct":7.142857,"fast_gate_raw_pct":42.857143},
-    "previous_three": [
-      {"run_id":"N5K-20260831-544","raw":38,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":10.526316},
-      {"run_id":"N5K-20260831-545","raw":18,"fast_gate":6,"qualified":3,"qualified_raw_pct":16.666667,"fast_gate_raw_pct":33.333333},
-      {"run_id":"N5K-20260831-546","raw":43,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":9.302326}
-    ],
-    "delta_vs_previous_hour": {"qualified_raw_pp":7.142857,"fast_gate_raw_pp":33.554817,"net_new_previous":0,"net_new_current":1}
-  },
-  "adaptive_action": {
-    "cut_or_probe": ["jobs: 5% probe-only; fresh worker could not materialize dedup-safe raw and produced 0 qualified","regional_investment: 5% probe-only after prior saturation"],
-    "boosted": ["growth_news: 55%; current physical net-new q/raw=10% in lane, above recent median, while quality gates stayed unchanged","official_owner_ceo: 25%; retained as low-overlap discovery lane"],
-    "next_distribution_pct": {"jobs":5,"growth_news":55,"official_owner_ceo":25,"industry_catalog":5,"regional_investment":5,"partner_business_change":5}
-  },
-  "qualified_companies": ["Эко Шиппинг"],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -97,6 +59,5 @@
   "physical_master_state": "561_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "561_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "repair_note": "Final physical guard skipped Petrovax Farm as canonical duplicate by INN 7702302492 + OGRN 1037700012745 + exact legal name + brand/domain. Lane qualified repaired from prewrite 2 to physical net 1."
+  "blocker": null
 }
