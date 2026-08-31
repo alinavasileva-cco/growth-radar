@@ -1,0 +1,180 @@
+{
+  "schema_version": "pending_worker_v1",
+  "worker_lane": "jobs",
+  "created_at": "2026-08-31T08:29:00+03:00",
+  "baseline_head": "49861aaee38780b640a4dc1c751b79cc5417dffd",
+  "config_version": "2026-08-31T07:58:07+03:00",
+  "canonical_counts_at_start": {
+    "master": 553,
+    "contactable": 553,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0
+  },
+  "constraints": {
+    "criteria_changed": false,
+    "canonical_writer_run": false,
+    "outreach_performed": false,
+    "canonical_files_written": false
+  },
+  "dedup": {
+    "performed_before_deep_check": true,
+    "performed_immediately_before_staging": true,
+    "keys": [
+      "lead_id",
+      "inn",
+      "ogrn_or_ogrnip",
+      "exact_legal_name",
+      "confirmed_brand_domain"
+    ],
+    "repo_wide_exact_key_search": {
+      "inn_1658215127": 0,
+      "ogrn_1191690007387": 0,
+      "exact_legal_name_OOO_NPO_DIODIS": 0,
+      "confirmed_brand_domain": null
+    },
+    "pending_workers_root_listed_at_baseline": true,
+    "jobs_pending_tree_listed_at_baseline": true,
+    "historical_pending_full_blob_scan": false,
+    "note": "Fresh pending_workers root and jobs tree were read at baseline. GitHub connector responses for the historical jobs tree are truncated by response size, and direct git clone is unavailable in this runtime due DNS/network restrictions. Repo-wide exact-key search was therefore used both before deep-check and immediately before staging. No confirmed brand+domain pair was used for this candidate because the public DIODIS site footer currently identifies a different legal entity; the candidate contact is instead tied directly to INN 1658215127 by published third-party company/industry records."
+  },
+  "source_batches": [
+    {
+      "batch": "jobs-kazan",
+      "source_mix": ["HH", "DreamJob", "JobVK", "regional job mirrors"],
+      "region": "Казань",
+      "raw_unique_employers_observed": 8,
+      "deep_check": 1,
+      "qualified": 1,
+      "note": "Observed employers included NPO DIODIS, AK BARS DOM, Yogiket, TenzoTechService, Ufanet, NETER, RIG and UDB Bars. Fewer than 20 distinct employers were exposed in the inspected result surfaces, so the >70% first-20 stop trigger was not evaluated and no quota padding was used."
+    },
+    {
+      "batch": "jobs-ekaterinburg",
+      "source_mix": ["regional job boards", "DreamJob", "Careerist", "job mirrors"],
+      "region": "Екатеринбург",
+      "raw_unique_employers_observed": 6,
+      "deep_check": 1,
+      "qualified": 0,
+      "note": "ORUM reached deep-check but was not staged because current legal-status sources conflict (active versus reorganization-in-progress). Other observed employers were rejected or not advanced on cheap evidence."
+    },
+    {
+      "batch": "jobs-krasnodar-krai",
+      "source_mix": ["regional job boards", "Careerist", "Cataloxy", "job mirrors"],
+      "region": "Краснодарский край",
+      "raw_unique_employers_observed": 7,
+      "deep_check": 3,
+      "qualified": 0,
+      "note": "Astrum Group and Bike Center failed SIZE on the mapped legal entities; RegionGazService had an ambiguous employer/legal-entity mapping and was not advanced."
+    },
+    {
+      "batch": "jobs-rostov",
+      "source_mix": ["JobVK", "regional job boards", "job mirrors"],
+      "region": "Ростов-на-Дону",
+      "raw_unique_employers_observed": 5,
+      "deep_check": 1,
+      "qualified": 0,
+      "note": "Akron Holding signal was visible, but the directly mapped holding-management legal entity did not satisfy SIZE by current revenue/employment evidence; no group-level entity substitution was made."
+    },
+    {
+      "batch": "jobs-novosibirsk-samara",
+      "source_mix": ["regional job boards", "JobVK", "Cataloxy", "job mirrors"],
+      "region": "Новосибирск / Самара",
+      "raw_unique_employers_observed": 8,
+      "deep_check": 0,
+      "qualified": 0,
+      "note": "Previously staged/canonical employers visible in the surfaces (including Люди and АФ Перспектива ОМЗ) were treated as duplicates and not counted as new qualified. No first-20 batch reached a clean set of 20 distinct new employers."
+    }
+  ],
+  "worker_funnel": {
+    "raw_unique_employer_level_observed": 34,
+    "fast_gate": 6,
+    "deep_check": 6,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1
+  },
+  "candidates": [
+    {
+      "status": "QUALIFIED",
+      "brand": "НПО Диодис",
+      "legal_name": "ООО НПО \"ДИОДИС\"",
+      "inn": "1658215127",
+      "ogrn": "1191690007387",
+      "region_signal": "Казань",
+      "registered_region": "Республика Татарстан, Казань",
+      "domain": null,
+      "lead_id": null,
+      "size": {
+        "revenue_2025_rub": 471108000,
+        "employees_2025": 129,
+        "evidence_urls": [
+          "https://firmoteka.ru/1658215127",
+          "https://b2b.house/company/OOO-NPO-DIODIS_298719bc-71a2-4a53-9b35-c097d2f5879b/"
+        ]
+      },
+      "legal": {
+        "status": "ACTIVE",
+        "registered_since": "2019-01-24",
+        "evidence_urls": [
+          "https://firmoteka.ru/1658215127",
+          "https://companies.rbc.ru/id/1191690007387-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchno-proizvodstvennoe-obedinenie-diodis/",
+          "https://www.tbank.ru/business/contractor/legal/1191690007387/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "type": "commercial_director_hiring",
+        "title": "Коммерческий директор (производство)",
+        "date": "2026-08-31",
+        "date_basis": "DreamJob displayed the vacancy as published 'сегодня' on 2026-08-31; HH Kazan search was crawled on 2026-08-31 and showed the same live employer/title.",
+        "details": "Вакансия требует разработки и реализации коммерческой стратегии, увеличения продаж и доли рынка для производственной компании.",
+        "evidence_urls": [
+          "https://dreamjob.ru/employers/190617/vakansii/136204161",
+          "https://kazan.hh.ru/vacancies/kommercheskiy_direktor/polniy_den?hhtmFrom=vacancy_search_list&page=1"
+        ]
+      },
+      "lpr": {
+        "general_director": "Валиев Динар Явдатович",
+        "owners": [
+          {"name": "Валиев Динар Явдатович", "share_pct": 100}
+        ],
+        "evidence_urls": [
+          "https://firmoteka.ru/1658215127",
+          "https://www.tbank.ru/business/contractor/legal/1191690007387/"
+        ]
+      },
+      "contact": {
+        "published_only": true,
+        "phones": [
+          "+7 843 528-25-88",
+          "+7 987 276-98-88"
+        ],
+        "emails": [],
+        "website": null,
+        "contact_route_notes": "+7 843 528-25-88 is published against exact legal entity ООО НПО ДИОДИС / INN 1658215127. +7 987 276-98-88 is publicly listed for Rustem Zaripov, Commercial Director of the same legal entity on Elec.ru. No template-derived email or guessed domain was used.",
+        "evidence_urls": [
+          "https://zachestnyibiznes.ru/company/ul/1191690007387_1658215127_OOO-NPO-DIODIS",
+          "https://www.elec.ru/id148530"
+        ],
+        "template_reconstruction_used": false
+      },
+      "dedup_keys": {
+        "inn": "1658215127",
+        "ogrn": "1191690007387",
+        "exact_legal_name": "ООО НПО \"ДИОДИС\"",
+        "brand_domain": null
+      },
+      "evidence_urls": [
+        "https://dreamjob.ru/employers/190617/vakansii/136204161",
+        "https://kazan.hh.ru/vacancies/kommercheskiy_direktor/polniy_den?hhtmFrom=vacancy_search_list&page=1",
+        "https://firmoteka.ru/1658215127",
+        "https://companies.rbc.ru/id/1191690007387-obschestvo-s-ogranichennoj-otvetstvennostyu-nauchno-proizvodstvennoe-obedinenie-diodis/",
+        "https://www.tbank.ru/business/contractor/legal/1191690007387/",
+        "https://zachestnyibiznes.ru/company/ul/1191690007387_1658215127_OOO-NPO-DIODIS",
+        "https://www.elec.ru/id148530"
+      ]
+    }
+  ]
+}
