@@ -2,6 +2,14 @@
   "run_id": "N5K-20260831-537",
   "campaign_id": "new_5000",
   "updated_at": "2026-08-31T07:58:07+03:00",
+  "consumed_at": "2026-08-31T04:58:07Z",
+  "reason": "in_order_canonical_ingest_with_physical_dedup",
+  "consumed_files": [
+    "data/pending_workers/jobs/20260831-072700-jobs.json"
+  ],
+  "raw_declared": 14,
+  "physical_new": 0,
+  "physical_duplicates": 1,
   "consumed": [
     {
       "path": "data/pending_workers/jobs/20260831-072700-jobs.json",
