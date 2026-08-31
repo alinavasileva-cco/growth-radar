@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260901-550R1",
+  "run_id": "N5K-20260901-551R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_POST_REPORT_REPAIR",
-  "updated_at": "2026-09-01T00:58:02+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-01T01:47:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 561,
@@ -26,8 +26,8 @@
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260901_002030",
-      "source_level_observations": 37,
+      "lane": "jobs_worker_20260901_012123",
+      "source_level_observations": 20,
       "repo_dedup_confirmed_raw": 0,
       "fast_gate": 0,
       "size": 0,
@@ -36,28 +36,9 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "duplicate_plus_early_reject": null,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; observations were not promoted because complete active pending/canonical preflight could not be materialized. Ratios and duplicate+early_reject on repo-dedup raw are undefined because raw=0."
+      "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; source observations retained as metrics only because complete canonical+active-pending dedup keyset could not be materialized."
     }
   ],
-  "hourly_efficiency": {
-    "N5K-20260831-547": {"raw": 14, "fast_gate": 6, "size": 3, "signal": 3, "qualified": 1, "duplicates": 2, "excluded": 11, "qualified_raw_pct": 7.142857, "fast_gate_raw_pct": 42.857143},
-    "N5K-20260831-548R1": {"raw": 1, "fast_gate": 1, "size": 1, "signal": 1, "qualified": 0, "duplicates": 1, "excluded": 0, "qualified_raw_pct": 0.0, "fast_gate_raw_pct": 100.0},
-    "N5K-20260831-549R1": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicates": 0, "excluded": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
-    "N5K-20260901-550R1": {"raw": 0, "fast_gate": 0, "size": 0, "signal": 0, "qualified": 0, "duplicates": 0, "excluded": 0, "qualified_raw_pct": null, "fast_gate_raw_pct": null},
-    "delta_vs_previous": {"qualified_raw_pp": null, "fast_gate_raw_pp": null, "net_new_previous": 0, "net_new_current": 0, "note": "Ratio deltas undefined because previous and current raw are both zero."}
-  },
-  "adaptive_action": {
-    "jobs": "5% probe-only; two consecutive zero-qualified/fail-closed cycles, no deep-check until a probe materializes repo-dedup-safe raw.",
-    "growth_news": "55%; retained as most recent lane with physical net-new under unchanged gates.",
-    "official_owner_ceo": "25%; retained as low-overlap supporting lane.",
-    "industry_catalog": "5% cap; exhibition/catalog presence alone never SIGNAL.",
-    "regional_investment": "5% probe-only after prior saturation.",
-    "partner_business_change": "5%.",
-    "next_distribution_pct": {"jobs": 5, "growth_news": 55, "official_owner_ceo": 25, "industry_catalog": 5, "regional_investment": 5, "partner_business_change": 5}
-  },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
