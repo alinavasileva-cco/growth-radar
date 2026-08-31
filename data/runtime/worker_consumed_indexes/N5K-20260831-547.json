@@ -1,0 +1,28 @@
+{
+  "run_id": "N5K-20260831-547",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-31T20:58:34+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260831-202214-jobs.json",
+      "blob_sha": "4d0bc0c10de5638bbb4bc079668fb8d1a0a5f815",
+      "result": "CONSUMED_METRICS_ONLY_FAIL_CLOSED",
+      "raw": 0,
+      "surfaced_cards_not_counted_as_distinct_raw": 25,
+      "fast_gate": 0,
+      "qualified": 0,
+      "note": "Fresh immutable worker staging ingested first. Worker could not prove complete repo-wide dedup materialization, so it remained fail-closed and no candidate proceeded to deep-check."
+    }
+  ],
+  "canonical_result": {
+    "prewrite_candidates": ["Петровакс Фарм / ООО «НПО ПЕТРОВАКС ФАРМ»", "Эко Шиппинг / ООО «ЭКО ШИППИНГ»"],
+    "integrated": ["Эко Шиппинг / N5K-0727"],
+    "physical_duplicates": [
+      {
+        "candidate": "Петровакс Фарм / ООО «НПО ПЕТРОВАКС ФАРМ»",
+        "dedup_keys": ["INN 7702302492", "OGRN 1037700012745", "exact legal name", "brand+domain"]
+      }
+    ],
+    "net_new": 1
+  }
+}
