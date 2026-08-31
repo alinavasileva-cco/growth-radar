@@ -1,0 +1,189 @@
+{
+  "schema_version": "jobs_worker_v1",
+  "lane": "jobs",
+  "worker_mode": "READ+DISCOVERY_ONLY",
+  "immutable": true,
+  "created_at": "2026-08-31T03:19:33+03:00",
+  "baseline_head": "e913d66e08242325ba0cddbcc860a08da9d18031",
+  "config_version": "2026-08-31T03:02:36+03:00",
+  "canonical_baseline": {
+    "master": 550,
+    "contactable": 550,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0,
+    "last_completed_run": "N5K-20260831-533R1"
+  },
+  "constraints": {
+    "criteria_changed": false,
+    "canonical_writer_started": false,
+    "canonical_written": false,
+    "outreach_performed": false,
+    "funnel": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT", "QUALIFIED"]
+  },
+  "source_batch_metrics": [
+    {
+      "batch": "ekaterinburg_ural_crossboard_commercial",
+      "region": "Ekaterinburg/Ural",
+      "raw_employers": 10,
+      "duplicates_plus_early_rejects": 9,
+      "fast_gate_pass": 1,
+      "qualified": 1,
+      "note": "Distinct employers explicitly observed across fresh HH-derived crossboards/DreamJob/H-careers surfaces: Company ORUM, Sima-land, EKAD:Yuzhny, UBRD, Ural Electromechanical Plant, San Logistic, Paritet, Semeynye Traditsii, Sverdlovsk Metal Structures Plant, Sinara Group. Batch did not reach 20, so the >70% first-20 stop rule was not mechanically triggered; no padding was added."
+    },
+    {
+      "batch": "tyumen_crossboard_commercial",
+      "region": "Tyumen",
+      "raw_employers": 6,
+      "duplicates_plus_early_rejects": 5,
+      "fast_gate_pass": 1,
+      "qualified": 0,
+      "note": "Observed Neokompozit-Tyumen, Etna, TPO, Center Tyazhesti, Avtokran-Tyumen and an agency-mediated trading/production-company role. No candidate was promoted without full legal/LPR/contact resolution."
+    },
+    {
+      "batch": "ufa_crossboard_commercial",
+      "region": "Ufa/Bashkortostan",
+      "raw_employers": 3,
+      "duplicates_plus_early_rejects": 3,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed Unibell, retail chain Yarmarka and Trest Krupnopanelnoe Domostroenie; no candidate advanced in this cycle."
+    },
+    {
+      "batch": "perm_crossboard_commercial",
+      "region": "Perm",
+      "raw_employers": 2,
+      "duplicates_plus_early_rejects": 1,
+      "fast_gate_pass": 1,
+      "qualified": 0,
+      "note": "Observed TEK Permskiy Kray and Planeta Zdorovya. TEK Permskiy Kray had a fresh August commercial-director signal but was not deep-qualified in this cycle."
+    },
+    {
+      "batch": "chelyabinsk_crossboard_commercial",
+      "region": "Chelyabinsk",
+      "raw_employers": 1,
+      "duplicates_plus_early_rejects": 1,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "PKP Polimer-Ural surfaced, but the visible commercial-director signal was materially older than the strongest current August signals and was not advanced."
+    },
+    {
+      "batch": "cross_region_low_overlap_jobs",
+      "region": "South/Volga/Moscow/St Petersburg",
+      "raw_employers": 8,
+      "duplicates_plus_early_rejects": 8,
+      "fast_gate_pass": 0,
+      "qualified": 0,
+      "note": "Observed CharmCleo, NEKAR Avtomatika, Motorika, GK AGAT, Shuvalovo-Kad, Stopexpress, Lemniskata and Prof-Ton Group on current job-board surfaces. No candidate advanced without a complete low-overlap legal/contact proof chain."
+    }
+  ],
+  "worker_funnel": {
+    "raw_employer_level": 30,
+    "fast_gate_pass": 3,
+    "deep_check": 1,
+    "size_pass": 1,
+    "legal_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 1
+  },
+  "candidates": [
+    {
+      "status": "QUALIFIED",
+      "brand": "Семейные традиции",
+      "legal_name": "ООО \"СЕМЕЙНЫЕ ТРАДИЦИИ\"",
+      "lead_id": null,
+      "inn": "6663033058",
+      "ogrn": "1026605619083",
+      "country": "RU",
+      "hq": "Екатеринбург",
+      "domain": "stfood.ru",
+      "brand_domain_link_confirmed": true,
+      "size": {
+        "status": "PASS",
+        "revenue_2025_rub": 232620000,
+        "employees_2025": 75,
+        "note": "Fresh 2025 financial/employee data used for SIZE. Revenue 232.62m RUB and 75 employees; older employee figures were excluded from the decision where fresher 2025 data was available.",
+        "evidence_urls": [
+          "https://firmoteka.ru/6663033058",
+          "https://b2b.house/company/OOO-SEMEJNYE-TRADICII_d539af45-798a-4f54-8faf-c0e8b0c4daf7/",
+          "https://www.tbank.ru/business/contractor/legal/1026605619083/"
+        ]
+      },
+      "legal": {
+        "status": "PASS",
+        "active": true,
+        "evidence_date": "2026-08-31",
+        "evidence_urls": [
+          "https://firmoteka.ru/6663033058",
+          "https://reputation.ru/ogrn/1026605619083",
+          "https://companium.ru/id/1026605619083-semeynye-tradicii"
+        ]
+      },
+      "signal": {
+        "status": "PASS",
+        "class": "S1",
+        "type": "commercial_leadership_hiring",
+        "title": "Коммерческий директор",
+        "published_date": "2026-08-13",
+        "description": "Fresh employer-level commercial-director hiring signal for the food-production brand. The role reports to the owner and covers the commercial side of the business, including assortment, pricing model and commercial management.",
+        "evidence_urls": [
+          "https://ekaterinburg.cataloxy.ru/rabota/firm4036584.htm",
+          "https://h.careers/jobs/company/semeynye-traditsii",
+          "https://ekaterinburg.jobrun.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D1%81-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%D0%BC%D0%B8-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0"
+        ]
+      },
+      "lpr": {
+        "status": "PASS",
+        "primary": {
+          "name": "Дубонос Павел Андреевич",
+          "role": "директор; учредитель 100%",
+          "evidence_urls": [
+            "https://reputation.ru/ogrn/1026605619083",
+            "https://check.tochka.com/company/1026605619083/",
+            "https://companies.rbc.ru/amp/ogrn/1026605619083/"
+          ]
+        },
+        "owners": [
+          {"name": "Дубонос Павел Андреевич", "share": "100%"}
+        ],
+        "note": "Current owner/director identity is consistently confirmed across legal-data sources; no inferred personal contact details were used."
+      },
+      "contact": {
+        "status": "PASS",
+        "published_only": true,
+        "phone": "+7 966 710-08-01",
+        "additional_phones": [],
+        "emails": ["s.tradicy@yandex.ru"],
+        "route": "official corporate website contact channels plus current vacancy response route",
+        "evidence_urls": [
+          "https://stfood.ru/",
+          "https://ekaterinburg.cataloxy.ru/rabota/firm4036584.htm"
+        ],
+        "personal_contact_claimed": false
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "6663033058",
+        "ogrn": "1026605619083",
+        "exact_legal_name": "ООО \"СЕМЕЙНЫЕ ТРАДИЦИИ\"",
+        "brand_domain": "Семейные традиции|stfood.ru"
+      },
+      "dedup_checks": {
+        "pre_deep_repo_wide": "NO_MATCH_FOUND",
+        "pre_stage_repo_wide": "NO_MATCH_FOUND",
+        "queries": ["6663033058", "1026605619083", "СЕМЕЙНЫЕ ТРАДИЦИИ", "stfood.ru"],
+        "scope": "repository-wide GitHub code search plus pending_workers root/jobs-directory enumeration at fresh baseline HEAD",
+        "note": "Repository-wide exact-key searches returned no match for INN, OGRN, legal-name token or confirmed domain before staging. The pending_workers root and jobs directory were enumerated at baseline HEAD. Connector response truncation prevents a truthful claim that every historical pending_workers blob body was physically read in full; canonical writer must still perform the repository physical integration guard before canonical integration."
+      },
+      "evidence_urls": [
+        "https://stfood.ru/",
+        "https://ekaterinburg.cataloxy.ru/rabota/firm4036584.htm",
+        "https://h.careers/jobs/company/semeynye-traditsii",
+        "https://firmoteka.ru/6663033058",
+        "https://reputation.ru/ogrn/1026605619083",
+        "https://check.tochka.com/company/1026605619083/"
+      ]
+    }
+  ]
+}
