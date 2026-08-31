@@ -2,7 +2,7 @@
   "run_id": "N5K-20260831-540R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T11:53:16+03:00",
+  "updated_at": "2026-08-31T11:59:30+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 555,
@@ -34,9 +34,10 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 16,
-      "note": "Fresh post-RUN-539 immutable worker packet. Only 17 employer-level raw candidates are physically evidenced; 200-300 was not claimed because the available fresh source packet does not prove that volume."
+      "qualified": 0,
+      "prewrite_qualified": 1,
+      "duplicate_plus_early_reject": 17,
+      "note": "Fresh post-RUN-539 immutable worker packet. Final physical canonical dedup removed the sole pre-write QUALIFIED as an existing company, so net qualified=0 and duplicate+early_reject=17/17. Only 17 employer-level raw candidates are physically evidenced; higher raw volume was not claimed without source evidence."
     }
   ],
   "qualified_companies": [],
