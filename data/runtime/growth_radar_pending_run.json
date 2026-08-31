@@ -1,8 +1,125 @@
 {
-  "run_id": "N5K-20260831-543",
-  "updated_at": "2026-08-31T17:05:15+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260831-543 integrated physically; canonical/contactable 557/557; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260831-544",
+  "updated_at": "2026-08-31T18:22:20+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 38,
+    "fast_gate_passed": 4,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 36
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260831_172627",
+      "raw": 26,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "prewrite_qualified": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 26,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.0
+    },
+    {
+      "lane": "regional_investment_growth_official_20260831_1822",
+      "raw": 12,
+      "fast_gate": 4,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "prewrite_qualified": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 11,
+      "qualified_raw_pct": 8.3333,
+      "fast_gate_raw_pct": 33.3333
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0723",
+      "Brand": "МолоПак",
+      "Legal Name": "ООО \"МОЛОПАК\"",
+      "INN": "7743513365",
+      "OGRN/OGRNIP": "1037739986899",
+      "Region": "Московская область",
+      "City": "Чехов",
+      "Segment": "Производство асептической картонной упаковки",
+      "Website": "https://promupac.com/",
+      "Revenue/Scale": "191 сотрудник по данным ФНС за 2025 год; инвестиционный проект третьего производственного комплекса около 2,1 млрд ₽; заявлен рост мощности до 4 млрд упаковок в год",
+      "Signal Level": "S2",
+      "Signal Summary": "Компания расширяет производство в Чехове: заявлен третий производственный комплекс площадью 15 тыс. м² с инвестициями около 2,1 млрд ₽ и удвоением мощности до 4 млрд упаковок в год.",
+      "Signal Date": "2025-12-24",
+      "Signal Source": "https://www.vedomosti.ru/press_releases/2025/12/24/okolo-21-mlrd-rublei-vlozhit-molopak-v-rasshirenie-proizvodstva-upakovki-dlya-napitkov",
+      "Owner": "Шарма Татьяна Осиповна — 75%; Гущин Тимур Витальевич — 25%",
+      "CEO": "Шарма Радж Анирудхович",
+      "LPR": "Гущин Тимур Витальевич",
+      "LPR Role": "Учредитель / управляющий директор",
+      "Primary Phone": "+7 (499) 642-5-642",
+      "Primary Email": "razvitie@molopak.ru",
+      "HH Contact": "",
+      "Contact Form": "https://promupac.com/kontaktyi",
+      "Contact Type": "Опубликованный корпоративный маршрут",
+      "Contact Source": "Официальный сайт компании / актуальные legal-profile источники / региональный инвестиционный пресс-релиз",
+      "Consulting Hypothesis": "Расширение производственных мощностей и команды: коммерческая модель роста, приоритизация сегментов и ключевых клиентов, связка продаж с новой мощностью, управленческие KPI и go-to-market для расширенного продуктового портфеля.",
+      "contacts": [
+        {
+          "value": "+7 (499) 642-5-642",
+          "channel": "phone",
+          "type": "corporate_published",
+          "source": "Официальный сайт МолоПак",
+          "url": "https://promupac.com/kontaktyi",
+          "is_lpr": false,
+          "notes": "Официальный телефон главного офиса в Чехове."
+        },
+        {
+          "value": "razvitie@molopak.ru",
+          "channel": "email",
+          "type": "corporate_published",
+          "source": "Официальный сайт МолоПак",
+          "url": "https://promupac.com/kontaktyi",
+          "is_lpr": false,
+          "notes": "Опубликованный компанией адрес отдела развития; не реконструирован."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО МОЛОПАК, ИНН 7743513365, ОГРН 1037739986899, действующая частная компания; гендиректор Шарма Радж Анирудхович; 191 сотрудник по данным ФНС за 2025 год.",
+          "url": "https://companium.ru/id/1037739986899-molopak",
+          "source": "Companium / данные ФНС"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "Компания реализует расширение производства: третий комплекс в Чехове, инвестиции около 2,1 млрд ₽, заявлен рост мощности до 4 млрд упаковок в год.",
+          "url": "https://www.vedomosti.ru/press_releases/2025/12/24/okolo-21-mlrd-rublei-vlozhit-molopak-v-rasshirenie-proizvodstva-upakovki-dlya-napitkov",
+          "source": "Мининвест Московской области / Ведомости пресс-релиз"
+        },
+        {
+          "type": "LPR",
+          "claim": "В инвестиционном сообщении Тимур Гущин указан как учредитель и управляющий директор МолоПак; актуальный legal-profile также фиксирует его долю 25%.",
+          "url": "https://companies.rbc.ru/id/1037739986899-ooo-molopak/",
+          "source": "РБК Компании / инвестиционный пресс-релиз"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует телефон +7 (499) 642-5-642 и email отдела развития razvitie@molopak.ru.",
+          "url": "https://promupac.com/kontaktyi",
+          "source": "Официальный сайт МолоПак"
+        }
+      ]
+    }
+  ],
+  "notes": "Fresh immutable worker staging 20260831-172627 ingested first: 26 raw, 0 fast_gate, 0 qualified; its own preflight remained incomplete, so no worker observation was promoted. Canonical discovery was immediately reallocated away from jobs into fresh regional-investment/growth/official sources. Twelve distinct company-level observations were reviewed; four passed fast gate; only МолоПак completed SIZE->LEGAL->SIGNAL->LPR->CONTACT with current evidence and was staged for the repository physical dedup/integration guard. One jobs observation was explicitly identified by the worker as previously staged and is counted as duplicate; the remaining non-qualified observations are excluded, not padded. Jobs is cut to 5% probe-only for the next three RUNs because current qualified/raw=0%, fast_gate/raw=0%, duplicate+early-reject=100%. Next distribution: jobs 5%, growth-news 25%, official-owner-CEO 20%, industry/catalog 5% max, regional-investment 35%, partner-business-change 10%. No exhibition/catalog presence treated as SIGNAL. No outreach."
 }
