@@ -56,9 +56,35 @@
       "fast_gate_raw_pct": 50.0
     }
   ],
-  "qualified_companies": [
-    "ЭЛЕМЕНТ"
+  "aggregate_efficiency": {
+    "qualified_raw_pct": 2.9412,
+    "fast_gate_raw_pct": 14.7059,
+    "previous_run_542R1_qualified_raw_pct": 0.0,
+    "previous_run_542R1_fast_gate_raw_pct": 25.0,
+    "qualified_raw_delta_pp": 2.9412,
+    "fast_gate_raw_delta_pp": -10.2941,
+    "net_new_delta": 1
+  },
+  "last_three_completed_run_aggregate_efficiency": [
+    {"run_id":"N5K-20260831-540R1","raw":17,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":23.5294},
+    {"run_id":"N5K-20260831-541R1","raw":47,"fast_gate":11,"qualified":1,"qualified_raw_pct":2.1277,"fast_gate_raw_pct":23.4043},
+    {"run_id":"N5K-20260831-542R1","raw":32,"fast_gate":8,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":25.0}
   ],
+  "historical_lane_note": "Exact post-dedup per-lane qualified counts are not reconstructed for older runs where stored lane instrumentation was pre-write. Aggregate values above are physical post-dedup results.",
+  "adaptive_decision": {
+    "jobs": "KEEP_AT_5_PERCENT_PROBE_ONLY: current duplicate+early-reject 25/26=96.15%, above 70% threshold despite one net qualified.",
+    "regional_investment": "KEEP_AMPLIFIED: 4/8 passed fast gate in fresh source sample; no weak candidate promoted without full evidence.",
+    "reason": "Net-new improved 0->1 but remains below 5; broad jobs allocation is not repeated because saturation remains extreme."
+  },
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 25,
+    "official_owner_ceo": 20,
+    "industry_catalog": 5,
+    "regional_investment": 35,
+    "partner_business_change": 10
+  },
+  "qualified_companies": ["ЭЛЕМЕНТ"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
