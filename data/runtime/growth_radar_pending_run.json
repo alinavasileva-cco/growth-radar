@@ -1,8 +1,159 @@
 {
-  "run_id": "N5K-20260831-541R1",
-  "updated_at": "2026-08-31T13:41:36+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260831-541R1 integrated physically; canonical/contactable 556/556; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260831-542R1",
+  "updated_at": "2026-08-31T15:54:25+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 3,
+  "funnel": {
+    "discovered": 32,
+    "fast_gate_passed": 8,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 29
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260831_152540",
+      "raw": 31,
+      "fast_gate": 7,
+      "size": 2,
+      "legal": 2,
+      "signal": 2,
+      "lpr": 2,
+      "contact": 2,
+      "qualified": 2,
+      "duplicate_plus_early_reject": 29
+    },
+    {
+      "lane": "jobs_worker_20260831_143058_recovered_observation",
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 0
+    }
+  ],
+  "notes": "Recovery/resume because canonical RUN 541R1 remained the latest completed integration at 14:02:56+03:00 while subsequent jobs workers committed at 14:31 and 15:28 without a later canonical integration. Worker preflight was incomplete because the connector truncated the historical pending tree; recovery independently re-read current runtime/campaign state, latest worker bodies, fresh public legal/signal/contact evidence, and exact canonical identifiers. Criteria unchanged. Final physical dedup in integration workflow remains mandatory on Lead ID, INN, OGRN/OGRNIP, legal name and brand+domain. 32 is the physically evidenced distinct employer-level volume available from the fresh 15:25 packet (31 named distinct observations) plus the separately recovered MALTAT observation; no claim of 200-300 because current available source packets do not prove that volume. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0722",
+      "Brand": "Неокомпозит-Тюмень",
+      "Legal Name": "ООО \"НЕОКОМПОЗИТ-ТЮМЕНЬ\"",
+      "INN": "7204177457",
+      "OGRN/OGRNIP": "1127232004921",
+      "Region": "Тюменская область",
+      "City": "Тюмень",
+      "Segment": "Промышленное производство / полимерно-композитные материалы / B2B-B2C",
+      "Website": "https://neocomposite.ru/",
+      "Revenue/Scale": "Действующее юрлицо; выручка за 2025 год около 105–107 млн ₽; производственные мощности более 5 000 тонн готовой продукции в год",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежий найм коммерческого директора (CCO) с задачами по стратегии каналов, продажам, ассортименту и синхронизации с производством.",
+      "Signal Date": "2026-08-09",
+      "Signal Source": "https://dreamjob.ru/employers/141513/vakansii/135842959",
+      "Owner": "Окаев Эльмуди Омранович — 51%; АО \"НЕОКОМПОЗИТ\" — 49%",
+      "CEO": "Коротовских Максим Владимирович",
+      "LPR": "Коротовских Максим Владимирович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "8 800 222 33 72",
+      "Primary Email": "info@neocomposite.ru",
+      "HH Contact": "https://dreamjob.ru/employers/141513/vakansii/135842959",
+      "Contact Form": "https://neocomposite.ru/kontakty/",
+      "Contact Type": "Опубликованный корпоративный маршрут",
+      "Contact Source": "официальный сайт / DreamJob / актуальные public legal-profile источники",
+      "Consulting Hypothesis": "Коммерческий контур на этапе расширения каналов: аудит и развитие продаж, управление каналами, ассортиментом, pipeline, маржинальностью и связкой спроса с производственным планированием.",
+      "contacts": [
+        {"value":"8 800 222 33 72","channel":"PHONE","type":"CORPORATE","source":"official company site","url":"https://neocomposite.ru/kontakty/","is_lpr":false,"notes":"Опубликованный единый контактный центр"},
+        {"value":"info@neocomposite.ru","channel":"EMAIL","type":"CORPORATE","source":"official company site","url":"https://neocomposite.ru/kontakty/","is_lpr":false,"notes":"Опубликованный корпоративный email"},
+        {"value":"retail@neocomposite.ru","channel":"EMAIL","type":"CORPORATE","source":"official company site","url":"https://neocomposite.ru/kontakty/","is_lpr":false,"notes":"Опубликованный email отдела продаж"}
+      ],
+      "evidence": [
+        {"type":"LEGAL_SIZE","claim":"ООО НЕОКОМПОЗИТ-ТЮМЕНЬ действует; ИНН 7204177457, ОГРН 1127232004921; выручка 2025 около 105–107 млн ₽.","url":"https://companies.rbc.ru/id/1127232004921-ooo-fratril/","source":"РБК Компании"},
+        {"type":"SIGNAL","claim":"09.08.2026 опубликована вакансия Коммерческий директор (CCO) в Неокомпозит-Тюмень.","url":"https://dreamjob.ru/employers/141513/vakansii/135842959","source":"DreamJob"},
+        {"type":"LPR","claim":"Генеральный директор — Коротовских Максим Владимирович; учредители: Окаев Эльмуди Омранович 51% и АО НЕОКОМПОЗИТ 49%.","url":"https://companium.ru/id/1127232004921-neokom-tmn","source":"Companium / public legal profile"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует единый телефон и корпоративные email компании.","url":"https://neocomposite.ru/kontakty/","source":"official company site"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0723",
+      "Brand": "Спектр-Пак Юг",
+      "Legal Name": "ООО \"СПЕКТР-ПАК ЮГ\"",
+      "INN": "6140013392",
+      "OGRN/OGRNIP": "1216100031916",
+      "Region": "Ростовская область",
+      "City": "Азов / Ростов-на-Дону",
+      "Segment": "Промышленное производство / упаковочные материалы / переработка полимеров / B2B",
+      "Website": "https://spektr-pack.ru/",
+      "Revenue/Scale": "Действующее юрлицо; выручка 317,66 млн ₽ за 2025 год; официальный сайт указывает 10 000 м² производства и складов, 18 000 тонн продукции в год и 4 000+ клиентов",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежий найм коммерческого директора (CCO); одновременно компания масштабирует производство и экспортные/контрактные направления.",
+      "Signal Date": "2026-08-11",
+      "Signal Source": "https://dreamjob.ru/employers/2707806/vakansii/136141802",
+      "Owner": "Колоскова Татьяна Михайловна — 100%",
+      "CEO": "Колоскова Татьяна Михайловна",
+      "LPR": "Колоскова Татьяна Михайловна",
+      "LPR Role": "Генеральный директор / собственник",
+      "Primary Phone": "+7 (800) 500-85-96",
+      "Primary Email": "info@spektr-pack.ru",
+      "HH Contact": "https://dreamjob.ru/employers/2707806/vakansii/136141802",
+      "Contact Form": "https://spektr-pack.ru/kontakty/",
+      "Contact Type": "Опубликованный корпоративный маршрут",
+      "Contact Source": "официальный сайт / DreamJob / актуальные public legal-profile источники",
+      "Consulting Hypothesis": "Новый коммерческий контур для растущего производственного холдинга: структура продаж, CRM/pipeline, экспорт и контрактное производство, pricing, маржинальность и KPI коммерческой функции.",
+      "contacts": [
+        {"value":"+7 (800) 500-85-96","channel":"PHONE","type":"CORPORATE","source":"official company site","url":"https://spektr-pack.ru/kontakty/","is_lpr":false,"notes":"Опубликованный корпоративный телефон"},
+        {"value":"info@spektr-pack.ru","channel":"EMAIL","type":"CORPORATE","source":"official company site","url":"https://spektr-pack.ru/kontakty/","is_lpr":false,"notes":"Опубликованный корпоративный email"}
+      ],
+      "evidence": [
+        {"type":"LEGAL_SIZE","claim":"ООО СПЕКТР-ПАК ЮГ действует; ИНН 6140013392, ОГРН 1216100031916; выручка 2025 — 317,66 млн ₽.","url":"https://www.tbank.ru/business/contractor/legal/1216100031916/","source":"Т-Банк Бизнес / public legal profile"},
+        {"type":"SIGNAL","claim":"11.08.2026 опубликована вакансия Коммерческий директор (CCO) в Спектр-Пак Юг.","url":"https://dreamjob.ru/employers/2707806/vakansii/136141802","source":"DreamJob"},
+        {"type":"LPR","claim":"Генеральный директор и учредитель 100% — Колоскова Татьяна Михайловна.","url":"https://www.tbank.ru/business/contractor/legal/1216100031916/","source":"Т-Банк Бизнес / public legal profile"},
+        {"type":"CONTACT","claim":"Официальный сайт публикует телефон +7 (800) 500-85-96 и email info@spektr-pack.ru.","url":"https://spektr-pack.ru/kontakty/","source":"official company site"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0724",
+      "Brand": "Малтат / Руслов",
+      "Legal Name": "ООО \"МАЛТАТ\"",
+      "INN": "2403007482",
+      "OGRN/OGRNIP": "1072439000149",
+      "Region": "Красноярский край",
+      "City": "Красноярск",
+      "Segment": "Рыбоводство / рыбопереработка / FMCG / B2B-B2C",
+      "Website": "https://ruslov.ru/",
+      "Revenue/Scale": "Действующее юрлицо; выручка 1 518 419 000 ₽ за 2025 год; субъект среднего предпринимательства",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежий найм директора по развитию с ответственностью за стратегические планы, ценовую политику, стимулирование продаж и сбытовую политику.",
+      "Signal Date": "2026-08-03",
+      "Signal Source": "https://dreamjob.ru/employers/111639/vakansii/135812739",
+      "Owner": "Нусс Надежда Давыдовна — 100%",
+      "CEO": "Федосов Андрей Геннадьевич",
+      "LPR": "Федосов Андрей Геннадьевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (391) 271-45-92",
+      "Primary Email": "sales@ruslov.ru",
+      "HH Contact": "https://dreamjob.ru/employers/111639/vakansii/135812739",
+      "Contact Form": "https://www.ruslov.ru/about",
+      "Contact Type": "Опубликованный корпоративный маршрут",
+      "Contact Source": "официальный сайт / DreamJob / актуальные public legal-profile источники",
+      "Consulting Hypothesis": "Развитие коммерческой модели бренда Руслов: стратегия роста, B2B-сбыт, ценовая политика, каналы, pipeline, маржинальность и KPI функции развития.",
+      "contacts": [
+        {"value":"+7 (391) 271-45-92","channel":"PHONE","type":"CORPORATE","source":"official company site","url":"https://www.ruslov.ru/about","is_lpr":false,"notes":"Опубликованный корпоративный телефон"},
+        {"value":"sales@ruslov.ru","channel":"EMAIL","type":"CORPORATE","source":"official company site","url":"https://www.ruslov.ru/about","is_lpr":false,"notes":"Опубликованный корпоративный email"}
+      ],
+      "evidence": [
+        {"type":"LEGAL_SIZE","claim":"ООО МАЛТАТ действует; ИНН 2403007482, ОГРН 1072439000149; выручка 2025 — 1 518 419 000 ₽.","url":"https://www.tbank.ru/business/contractor/legal/1072439000149/","source":"Т-Банк Бизнес / public legal profile"},
+        {"type":"SIGNAL","claim":"03.08.2026 опубликована вакансия Директор по развитию в Малтат с задачами стратегии, ценовой политики и управления сбытом.","url":"https://dreamjob.ru/employers/111639/vakansii/135812739","source":"DreamJob"},
+        {"type":"LPR","claim":"Генеральный директор — Федосов Андрей Геннадьевич; учредитель 100% — Нусс Надежда Давыдовна.","url":"https://www.tbank.ru/business/contractor/legal/1072439000149/","source":"Т-Банк Бизнес / public legal profile"},
+        {"type":"CONTACT","claim":"Официальный сайт ООО Малтат / Руслов публикует реквизиты, телефон и sales@ruslov.ru.","url":"https://www.ruslov.ru/about","source":"official company site"}
+      ]
+    }
+  ]
 }
