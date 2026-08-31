@@ -1,9 +1,9 @@
 {
   "run_id": "N5K-20260831-541R1",
   "campaign_id": "new_5000",
-  "status": "REPAIR_REQUIRED",
+  "status": "COMPLETED",
   "updated_at": "2026-08-31T14:02:56+03:00",
-  "stage": "CONFIG_SYNC_PENDING",
+  "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 555,
     "target_count": 5000,
@@ -67,5 +67,5 @@
   "physical_master_state": "556_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "556_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "CURRENT_WORKING_CONFIG header is stale at RUN 540R1 / 555 while physical runtime and campaign are RUN 541R1 / 556. Canonical criteria are unchanged; config metadata sync is pending."
+  "blocker": null
 }
