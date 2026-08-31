@@ -1,17 +1,65 @@
 {
-  "run_id":"N5K-20260831-534",
-  "campaign_id":"new_5000",
-  "status":"REPAIR_REQUIRED",
-  "updated_at":"2026-08-31T04:57:54+03:00",
-  "stage":"AGGREGATE_RUN_LOG_SYNC_PENDING",
-  "new_cycle":{"baseline_count":550,"target_count":5000,"current_canonical_count":550,"current_contactable_count":550,"progress_added":0,"remaining":4450},
-  "funnel":{"discovered":34,"fast_gate_passed":3,"size_check_passed":1,"legal_match_passed":1,"signal_confirmed":1,"lpr_identified":1,"contact_route_found":1,"qualified":0,"duplicates":1,"excluded":33},
-  "lane_metrics":[{"lane":"jobs_worker_20260831_031933","raw":30,"fast_gate":3,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"qualified":0,"duplicate_plus_early_reject":30,"qualified_raw_pct":0.0,"fast_gate_raw_pct":10.0,"duplicate_plus_early_reject_pct":100.0},{"lane":"growth_news_probe","raw":3,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":3,"qualified_raw_pct":0.0,"fast_gate_raw_pct":0.0,"duplicate_plus_early_reject_pct":100.0},{"lane":"regional_investment_probe","raw":1,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"qualified":0,"duplicate_plus_early_reject":1,"qualified_raw_pct":0.0,"fast_gate_raw_pct":0.0,"duplicate_plus_early_reject_pct":100.0}],
-  "overall_efficiency":{"qualified_raw_pct":0.0,"fast_gate_raw_pct":8.8235,"delta_vs_previous_hour_qualified_raw_pp":0.0,"delta_vs_previous_hour_fast_gate_raw_pp":2.7011,"net_qualified_change_vs_previous_hour":0},
-  "comparison_last_3_runs":[{"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947},{"run_id":"N5K-20260831-533R1","raw":98,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":6.1224},{"run_id":"N5K-20260831-534","raw":34,"fast_gate":3,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":8.8235}],
-  "next_distribution_pct":{"jobs":5,"growth_news":25,"official_owner_ceo":35,"industry_catalog":5,"regional_investment":20,"partner_business_change":10},
-  "qualified_companies":[],
-  "fresh_staging":{"qualified_staged_not_counted":1,"candidate":"Рубеж-Инжиниринг","inn":"7701775866","ogrn":"1087746355443","canonical_dedup":"NO_MATCH_CONFIRMED_IN_PHYSICAL_NEW_5000_MASTER_AND_CONTACTABLE","canonical_written":false},
-  "integrity_status":"PASS","orphan_contacts":0,"orphan_evidence":0,"active_wip":1,"physical_master_state":"550_DATA_ROWS_PLUS_HEADER_CONFIRMED","physical_contactable_state":"550_DATA_ROWS_PLUS_HEADER_CONFIRMED","outreach_sent":0,
-  "blocker":"CURRENT_WORKING_CONFIG is already restored and its latest-run header is synchronized to N5K-20260831-534. The remaining strict-completion blocker is aggregate data/campaigns/new_5000/run_log.csv, which still ends at N5K-20260831-533R1; the separate RUN 534 correction log already exists. No canonical lead/contact/evidence data are desynchronized."
+  "run_id": "N5K-20260831-535R1",
+  "campaign_id": "new_5000",
+  "status": "COMPLETED",
+  "updated_at": "2026-08-31T05:37:21+03:00",
+  "stage": "COMPLETE",
+  "new_cycle": {
+    "baseline_count": 550,
+    "target_count": 5000,
+    "current_canonical_count": 552,
+    "current_contactable_count": 552,
+    "progress_added": 2,
+    "remaining": 4448
+  },
+  "funnel": {
+    "discovered": 36,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 34
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260831_042006",
+      "raw": 18,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "note": "Worker-declared employer-level denominator; distinct within this worker run. Cross-worker global uniqueness is not asserted."
+    },
+    {
+      "lane": "jobs_worker_20260831_052900",
+      "raw": 18,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "note": "Worker-declared employer-level denominator; distinct within this worker run. Cross-worker global uniqueness is not asserted."
+    }
+  ],
+  "qualified_companies": [
+    "Рубеж-Инжиниринг",
+    "Сан Лоджистик"
+  ],
+  "integrity_status": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "active_wip": 0,
+  "physical_master_state": "552_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "552_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "outreach_sent": 0,
+  "blocker": null
 }
