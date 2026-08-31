@@ -10,7 +10,8 @@
     "current_canonical_count": 553,
     "current_contactable_count": 553,
     "progress_added": 1,
-    "remaining": 4447
+    "remaining": 4447,
+    "remaining_to_1000": 447
   },
   "funnel": {
     "discovered": 15,
@@ -39,8 +40,8 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 14.2857,
       "duplicate_plus_early_reject_pct": 100.0,
-      "physical_dedup": "ПолиАэрПак skipped: existing N5K-0480 by INN 7743641590 + OGRN 5077746710828 + canonical legal/brand evidence",
-      "adaptive_action": "jobs remains capped at 5% probe-only; no broad jobs deep-check"
+      "physical_dedup": "ПолиАэрПак skipped: existing N5K-0480 by INN 7743641590 and OGRN 5077746710828",
+      "adaptive_action": "jobs capped at 5% probe-only for next 3 RUN"
     },
     {
       "lane": "regional_investment_fresh_low_overlap",
@@ -56,18 +57,37 @@
       "qualified_raw_pct": 100.0,
       "fast_gate_raw_pct": 100.0,
       "duplicate_plus_early_reject_pct": 0.0,
-      "adaptive_action": "increase regional-investment share next RUN; keep sample-size caution"
+      "adaptive_action": "boost next RUN with sample-size caution"
     }
   ],
-  "qualified_companies": [
-    "Сибу Индастриэл / Sibu Industrial"
+  "efficiency_history": [
+    {"run_id":"N5K-20260831-534","qualified_raw_pct":0.0,"fast_gate_raw_pct":8.8235},
+    {"run_id":"N5K-20260831-535R1","qualified_raw_pct":5.5556,"fast_gate_raw_pct":5.5556},
+    {"run_id":"N5K-20260831-536","qualified_raw_pct":0.0,"fast_gate_raw_pct":8.6957},
+    {"run_id":"N5K-20260831-537","qualified_raw_pct":6.6667,"fast_gate_raw_pct":20.0}
   ],
+  "historical_lane_metrics_note": "Full per-lane raw/fast_gate/size/signal/qualified fields were not preserved for every lane in all of RUN 534-536; they were not reconstructed. Overall run efficiencies are physically preserved and current RUN lane metrics are complete.",
+  "delta_vs_previous_run": {
+    "qualified_raw_pp": 6.6667,
+    "fast_gate_raw_pp": 11.3043,
+    "net_new": "0 -> 1"
+  },
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 25,
+    "official_owner_ceo": 20,
+    "industry_catalog": 5,
+    "regional_investment": 35,
+    "partner_business_change": 10
+  },
+  "qualified_companies": ["Сибу Индастриэл / Sibu Industrial"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
   "physical_master_state": "553_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "553_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "qualified_staged_not_counted": 0,
   "outreach_sent": 0,
   "blocker": null
 }
