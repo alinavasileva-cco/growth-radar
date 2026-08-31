@@ -1,0 +1,109 @@
+{
+  "worker": "independent-read-discovery",
+  "lane": "jobs",
+  "created_at": "2026-08-31T17:26:27+03:00",
+  "baseline_head": "c36f2a4c23bde018c159a4738140f305f66cd4fa",
+  "config_version": "2026-08-31T17:05:15+03:00",
+  "canonical_contactable": {
+    "canonical": 557,
+    "contactable": 557,
+    "integrity": "PASS",
+    "staged_not_counted": 0
+  },
+  "outreach_performed": false,
+  "canonical_writer_run": false,
+  "canonical_writes": false,
+  "preflight": {
+    "head_read": true,
+    "config_read": true,
+    "pending_root_read": true,
+    "jobs_tree_requested": true,
+    "jobs_tree_response_truncated": true,
+    "all_pending_file_bodies_read": false,
+    "direct_git_clone_attempted": true,
+    "direct_git_clone_succeeded": false,
+    "complete": false,
+    "block_reason": "The GitHub connector returned a truncated historical data/pending_workers/jobs tree. A direct shallow git clone was attempted from the execution environment but failed because github.com DNS resolution was unavailable. Therefore body-by-body verification of every historical pending worker file cannot be truthfully confirmed. Per worker rules, no candidate is staged as QUALIFIED while this mandatory preflight is incomplete."
+  },
+  "discovery": {
+    "target_raw": "140-150 distinct low-overlap employer-level raw candidates if sources genuinely allow",
+    "target_met": false,
+    "quota_padding": false,
+    "search_mode": "fresh regional job-board discovery",
+    "distinct_employer_level_observations": 26,
+    "source_results_observed": 27,
+    "notes": "Only employer names actually surfaced in fresh search results were counted. The web search backend merged multiple regional queries into one result stream and did not preserve reliable per-query attribution, so per-batch raw and duplicate+early-reject rates are left null instead of being reconstructed or invented.",
+    "source_batches": [
+      {
+        "batch": "kazan",
+        "sources": ["regional job boards", "HH-derived mirrors"],
+        "raw": null,
+        "duplicate_plus_early_reject_rate": null,
+        "qualified": 0
+      },
+      {
+        "batch": "ekaterinburg",
+        "sources": ["DreamJob", "Cataloxy", "JobVK", "regional job boards"],
+        "raw": null,
+        "duplicate_plus_early_reject_rate": null,
+        "qualified": 0
+      },
+      {
+        "batch": "novosibirsk",
+        "sources": ["Cataloxy", "DreamJob", "regional job boards"],
+        "raw": null,
+        "duplicate_plus_early_reject_rate": null,
+        "qualified": 0
+      },
+      {
+        "batch": "krasnodar",
+        "sources": ["Cataloxy", "DreamJob", "regional job boards"],
+        "raw": null,
+        "duplicate_plus_early_reject_rate": null,
+        "qualified": 0
+      },
+      {
+        "batch": "nizhny-novgorod-and-other-regions",
+        "sources": ["DreamJob", "JobVK", "Finder", "regional job boards"],
+        "raw": null,
+        "duplicate_plus_early_reject_rate": null,
+        "qualified": 0
+      }
+    ],
+    "fresh_signal_examples_not_deep_checked": [
+      {
+        "employer": "Уральский электромеханический завод",
+        "role": "Коммерческий директор",
+        "date": "2026-08-27",
+        "url": "https://dreamjob.ru/employers/117942/vakansii/136689235",
+        "note": "Observed as a fresh job signal only; not promoted because mandatory pending preflight is incomplete and the employer describes itself as part of Rosatom, so private-company LEGAL eligibility would require rejection/verification before any deep funnel."
+      },
+      {
+        "employer": "AYS GROUP",
+        "role": "Коммерческий директор (CCO)",
+        "date": "2026-08-17",
+        "url": "https://novosibirsk.cataloxy.ru/rabota/vacancy1128034806_kommercheskiy-direktor-cco.htm",
+        "note": "Fresh signal observed; legal entity, size, ownership/LPR, contacts and full dedup were not deep-checked because mandatory pending preflight is incomplete."
+      },
+      {
+        "employer": "Промизоляция",
+        "role": "Коммерческий директор",
+        "date": "2026-08-25",
+        "url": "https://dreamjob.ru/employers/1317692/vakansii/136601647",
+        "note": "Fresh signal observed but this employer was already staged in an earlier jobs worker cycle and therefore is not new."
+      }
+    ]
+  },
+  "worker_funnel": {
+    "raw_distinct": 26,
+    "fast_gate": 0,
+    "deep_check": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "qualified_candidates": []
+}
