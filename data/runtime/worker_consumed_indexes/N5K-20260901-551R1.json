@@ -1,0 +1,26 @@
+{
+  "run_id": "N5K-20260901-551R1",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-09-01T01:47:00+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260901-012123-jobs.json",
+      "blob_sha": "2fd35de66799aa3b69fbf6645872920cb4adb89b",
+      "result": "CONSUMED_METRICS_ONLY_PREFLIGHT_BLOCKED",
+      "repo_dedup_confirmed_raw": 0,
+      "source_level_named_observations_min": 20,
+      "fast_gate": 0,
+      "qualified": 0,
+      "note": "Worker preflight was technically blocked by historical pending/canonical materialization limits; source-level observations were not promoted or counted as dedup-confirmed raw. Recovery 551R1 integrated a coherent zero-new cycle without fabricating candidates."
+    }
+  ],
+  "recovery_result": {
+    "integrated": [],
+    "net_new": 0,
+    "canonical_contactable_after": "561/561",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "outreach": 0
+  }
+}
