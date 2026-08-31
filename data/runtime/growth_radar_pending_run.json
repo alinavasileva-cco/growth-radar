@@ -1,35 +1,8 @@
 {
   "run_id": "N5K-20260831-549R1",
   "updated_at": "2026-08-31T23:53:00+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "status": "CLEARED_AFTER_INTEGRATION",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "funnel": {
-    "discovered": 0,
-    "fast_gate_passed": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "duplicates": 0,
-    "excluded": 0
-  },
-  "lane_metrics": [
-    {
-      "lane": "jobs_worker_20260831_231736",
-      "source_level_observations": 19,
-      "repo_dedup_confirmed_raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; worker observations were not promoted because complete active pending/canonical preflight was not confirmed."
-    }
-  ],
-  "notes": "Recovery/resume for stale hourly canonical cycle. No competing canonical writer was active. The fresh jobs worker at 2026-08-31T23:17:36+03:00 recorded 19 named source observations but failed closed before repo-dedup-confirmed RAW because its preflight attempted to materialize historical pending and was truncated. No candidate is treated as qualified and no contact is inferred. This recovery commits a zero-new coherent cycle rather than fabricating 200-300 raw candidates. Outreach remains 0."
+  "note": "N5K-20260831-549R1 integrated physically; canonical/contactable 561/561; integrity PASS; orphan 0/0; outreach 0."
 }
