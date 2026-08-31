@@ -1,8 +1,151 @@
 {
-  "run_id": "N5K-20260831-536",
-  "updated_at": "2026-08-31T06:58:18+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260831-536 integrated physically; canonical/contactable 552/552; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260831-537",
+  "updated_at": "2026-08-31T07:58:07+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 15,
+    "fast_gate_passed": 3,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 13
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260831_072700",
+      "raw": 14,
+      "fast_gate": 2,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 14,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 14.2857,
+      "duplicate_plus_early_reject_pct": 100.0,
+      "physical_dedup": "ПолиАэрПак skipped: existing N5K-0480 by INN 7743641590 + OGRN 5077746710828 + canonical legal/brand evidence",
+      "adaptive_action": "jobs remains capped at 5% probe-only; no broad jobs deep-check"
+    },
+    {
+      "lane": "regional_investment_fresh_low_overlap",
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 100.0,
+      "fast_gate_raw_pct": 100.0,
+      "duplicate_plus_early_reject_pct": 0.0,
+      "adaptive_action": "increase regional-investment share next RUN; keep sample-size caution"
+    }
+  ],
+  "efficiency_history": [
+    {"run_id":"N5K-20260831-534","qualified_raw_pct":0.0,"fast_gate_raw_pct":8.8235},
+    {"run_id":"N5K-20260831-535R1","qualified_raw_pct":5.5556,"fast_gate_raw_pct":5.5556},
+    {"run_id":"N5K-20260831-536","qualified_raw_pct":0.0,"fast_gate_raw_pct":8.6957},
+    {"run_id":"N5K-20260831-537","qualified_raw_pct":6.6667,"fast_gate_raw_pct":20.0}
+  ],
+  "delta_vs_previous_run": {
+    "qualified_raw_pp": 6.6667,
+    "fast_gate_raw_pp": 11.3043,
+    "net_new": "0 -> 1"
+  },
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 25,
+    "official_owner_ceo": 20,
+    "industry_catalog": 5,
+    "regional_investment": 35,
+    "partner_business_change": 10
+  },
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0716",
+      "Brand": "Сибу Индастриэл / Sibu Industrial",
+      "Legal Name": "ООО «СИБУ ИНДАСТРИЭЛ»",
+      "INN": "4802014260",
+      "OGRN/OGRNIP": "1214800017453",
+      "Region": "Липецкая область",
+      "City": "Грязи",
+      "Segment": "Промышленное производство / огнеупорные смеси / B2B",
+      "Website": "http://www.xibaogroup.com",
+      "Revenue/Scale": "Выручка 162 276 000 ₽ за 2025 год; 27.08.2026 запущен первый этап завода с инвестициями 1,7 млрд ₽ и 70 рабочими местами; заявлен второй цех, исследовательская лаборатория и расширение штата",
+      "Signal Level": "S2",
+      "Signal Summary": "27.08.2026 запущено новое производство огнеупорных смесей в ОЭЗ «Липецк»; первый этап 1,7 млрд ₽, мощность до 25 тыс. тонн в год, далее запланированы второй цех, R&D-лаборатория и расширение штата.",
+      "Signal Date": "2026-08-27",
+      "Signal Source": "https://www.kommersant.ru/doc/8909956",
+      "Owner": "ООО «Хэнаньская группа компаний металлургических материалов Сибао» / Henan Xibao Metallurgy Materials Group Co., Ltd., 100%",
+      "CEO": "Синь Гуанлян",
+      "LPR": "Синь Гуанлян",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (961) 035-77-70",
+      "Primary Email": "pashenceva@xibaogroup.com",
+      "HH Contact": "",
+      "Contact Form": "http://www.xibaogroup.com",
+      "Contact Type": "Опубликованный текущий маршрут компании через ОЭЗ + корпоративный домен группы",
+      "Contact Source": "https://www.sezlipetsk.ru/work/20867/",
+      "Consulting Hypothesis": "Систематизация коммерческой модели нового российского производства: B2B go-to-market для металлургических клиентов, sales pipeline, планирование загрузки мощностей, маржинальность, KPI и подготовка коммерческого контура ко второму этапу расширения.",
+      "contacts": [
+        {
+          "value": "pashenceva@xibaogroup.com",
+          "channel": "email",
+          "type": "published company route",
+          "source": "ОЭЗ Липецк",
+          "url": "https://www.sezlipetsk.ru/work/20867/",
+          "is_lpr": false,
+          "notes": "Актуальный опубликованный в 2026 маршрут ООО «СИБУ ИНДАСТРИЭЛ» на корпоративном домене группы; контактное лицо Марина Пашенцева."
+        },
+        {
+          "value": "+7 (961) 035-77-70",
+          "channel": "phone",
+          "type": "published company route",
+          "source": "ОЭЗ Липецк",
+          "url": "https://www.sezlipetsk.ru/work/20867/",
+          "is_lpr": false,
+          "notes": "Опубликованный текущий контакт компании."
+        },
+        {
+          "value": "xibaogroup@xibaogroup.com",
+          "channel": "email",
+          "type": "corporate email",
+          "source": "Портал ОЭЗ РФ",
+          "url": "https://xn--g1an9b.xn--p1ai/residents/sibu-indastriel/",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный адрес группы; используется как дополнительный маршрут, не как персональный контакт ЛПР."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО «СИБУ ИНДАСТРИЭЛ» действует; ИНН 4802014260, ОГРН 1214800017453; гендиректор Синь Гуанлян; выручка за 2025 год 162,276 млн ₽.",
+          "url": "https://companies.rbc.ru/id/1214800017453-obschestvo-s-ogranichennoj-otvetstvennostyu-sibu-indastriel/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "27.08.2026 компания запустила завод в ОЭЗ «Липецк»; инвестиции первого этапа 1,7 млрд ₽, 70 рабочих мест; запланированы второй цех, лаборатория и расширение штата.",
+          "url": "https://www.kommersant.ru/doc/8909956",
+          "source": "Коммерсантъ"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "ОЭЗ «Липецк» публикует текущий контакт ООО «СИБУ ИНДАСТРИЭЛ» на домене xibaogroup.com и телефон компании.",
+          "url": "https://www.sezlipetsk.ru/work/20867/",
+          "source": "ОЭЗ Липецк"
+        }
+      ]
+    }
+  ],
+  "notes": "Fresh worker staging ingested first. PolyAirPack worker PASS rejected by physical canonical dedup as existing N5K-0480. Own discovery rotated into fresh regional investment after jobs saturation. Raw was not padded with catalog/exhibition observations. evidence.csv header repaired before integration because the physical file was empty. No outreach."
 }
