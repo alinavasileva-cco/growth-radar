@@ -5,7 +5,7 @@
   "consumed": [
     {
       "path": "data/pending_workers/jobs/20260901-022236-jobs.json",
-      "blob_sha": "b1ae773b64a97a0c5a1b61e40bef0a1b889703b6",
+      "blob_sha": "bfcdac82f25d01a44dc1bf9f81c625063a762bd2",
       "result": "CONSUMED_METRICS_ONLY_PREFLIGHT_BLOCKED",
       "repo_dedup_confirmed_raw": 0,
       "source_level_named_observations_min": 20,
