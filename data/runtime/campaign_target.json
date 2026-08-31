@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-31T05:37:21+03:00",
+  "updated_at": "2026-08-31T06:58:18+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260831-535R1",
-  "current_run_id": "N5K-20260831-535R1",
-  "last_run_id": "N5K-20260831-535R1",
-  "latest_completed_run": "N5K-20260831-535R1",
+  "last_completed_run_id": "N5K-20260831-536",
+  "current_run_id": "N5K-20260831-536",
+  "last_run_id": "N5K-20260831-536",
+  "latest_completed_run": "N5K-20260831-536",
   "canonical_integration_run_id": "N5K-20260831-535R1",
   "hourly_parent_run_id": "N5K-20260831-534",
   "hourly_baseline_count": 550,
@@ -40,9 +40,16 @@
     "fast_gate_raw_pct": 8.8235,
     "delta_vs_533R1_fast_gate_raw_pp": 2.7011,
     "worker_duplicate": "N5K-0387",
-    "next_distribution_pct": {"jobs":5,"growth_news":25,"official_owner_ceo":35,"industry_catalog":5,"regional_investment":20,"partner_business_change":10}
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 25,
+      "official_owner_ceo": 35,
+      "industry_catalog": 5,
+      "regional_investment": 20,
+      "partner_business_change": 10
+    }
   },
   "fresh_staging": null,
   "repair_required": null,
-  "note": "N5K-20260831-535R1 completed after physical integration: +2 net new; canonical/contactable 552/552; integrity PASS; orphan 0/0; staged 0; outreach 0. Campaign metadata synchronized to physical state."
+  "note": "N5K-20260831-536 completed after physical integration: +0 net new; canonical/contactable 552/552; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

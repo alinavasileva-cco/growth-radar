@@ -1,78 +1,8 @@
 {
   "run_id": "N5K-20260831-536",
   "updated_at": "2026-08-31T06:58:18+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "notes": "Fresh immutable jobs staging 20260831-061709 ingested. Politaks independently rechecked against fresh 2026 vacancy/legal/2025-scale sources; pre-write repo search returned no INN/OGRN match. No outreach. Jobs remains probe-only because duplicate+early-reject exceeds 70%.",
-  "funnel": {
-    "discovered": 23,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 22
-  },
-  "lane_metrics": [
-    {
-      "lane": "jobs_worker_20260831_061709",
-      "raw": 23,
-      "fast_gate": 2,
-      "size": 2,
-      "legal": 2,
-      "signal": 2,
-      "lpr": 2,
-      "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 22,
-      "qualified_raw_pct": 4.3478,
-      "fast_gate_raw_pct": 8.6957,
-      "duplicate_plus_early_reject_pct": 95.6522,
-      "adaptive_action": "jobs capped at 5% probe-only for next 3 runs"
-    }
-  ],
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0716",
-      "Brand": "Политакс",
-      "Legal Name": "ООО \"ПОЛИТАКС\"",
-      "INN": "7724483059",
-      "OGRN/OGRNIP": "1197746443322",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Промышленное производство / лакокрасочные и полимерные материалы / B2B",
-      "Website": "https://politaks.ru",
-      "Revenue/Scale": "Выручка 229,7–230 млн ₽ за 2025 год; действующая производственная компания",
-      "Signal Level": "S1",
-      "Signal Summary": "27.08.2026 опубликована свежая вакансия Коммерческий директор / CCO с ответственностью за коммерческую стратегию производителя профессиональных лакокрасочных и полимерных материалов.",
-      "Signal Date": "2026-08-27",
-      "Signal Source": "https://gderabota.ru/вакансии/москва/коммерческий-директор-cco/210983",
-      "Owner": "Винник Родион Владимирович — 100%",
-      "CEO": "Винник Родион Владимирович",
-      "LPR": "Винник Родион Владимирович",
-      "LPR Role": "генеральный директор; собственник 100%",
-      "Primary Phone": "+7 (495) 205-50-21",
-      "Primary Email": "zakaz@politaks.ru",
-      "Contact Form": "https://politaks.ru",
-      "Contact Type": "published corporate contacts + active vacancy route",
-      "Contact Source": "published company/business sources + fresh vacancy",
-      "Consulting Hypothesis": "Коммерческая стратегия и система B2B-продаж: каналы, KPI, процессы, управление продуктовым портфелем и масштабирование коммерческой функции.",
-      "contacts": [
-        {"value":"+7 (495) 205-50-21","channel":"phone","type":"published corporate","source":"Companium","url":"https://companium.ru/id/1197746443322-politaks","is_lpr":false},
-        {"value":"zakaz@politaks.ru","channel":"email","type":"published corporate","source":"published Politaks regional site","url":"https://rostov-politaks.ru/products/metal/","is_lpr":false},
-        {"value":"https://politaks.ru","channel":"website","type":"published corporate","source":"Companium","url":"https://companium.ru/id/1197746443322-politaks","is_lpr":false},
-        {"value":"https://gderabota.ru/вакансии/москва/коммерческий-директор-cco/210983","channel":"vacancy","type":"active vacancy route","source":"ГдеРабота","url":"https://gderabota.ru/вакансии/москва/коммерческий-директор-cco/210983","is_lpr":false}
-      ],
-      "evidence": [
-        {"type":"SIGNAL","claim":"27.08.2026 опубликована вакансия Коммерческий директор / CCO для ООО ПОЛИТАКС.","url":"https://gderabota.ru/вакансии/москва/коммерческий-директор-cco/210983","source":"ГдеРабота"},
-        {"type":"SIZE","claim":"Выручка ООО ПОЛИТАКС за 2025 год около 230 млн ₽.","url":"https://firmoteka.ru/7724483059","source":"Фирмотека"},
-        {"type":"LEGAL_LPR","claim":"ООО ПОЛИТАКС действует; ИНН 7724483059, ОГРН 1197746443322; генеральный директор Винник Родион Владимирович.","url":"https://casebook.ru/public/company/1197746443322","source":"Casebook"},
-        {"type":"CONTACT","claim":"Опубликован корпоративный телефон Политакс.","url":"https://companium.ru/id/1197746443322-politaks","source":"Companium"},
-        {"type":"CONTACT","claim":"Опубликован корпоративный email zakaz@politaks.ru.","url":"https://rostov-politaks.ru/products/metal/","source":"Политакс"}
-      ]
-    }
-  ],
-  "qualified_staged_not_counted": 1
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260831-536 integrated physically; canonical/contactable 552/552; integrity PASS; orphan 0/0; outreach 0."
 }
