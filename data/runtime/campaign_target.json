@@ -17,25 +17,25 @@
   "current_run_id": "N5K-20260831-542R1",
   "last_run_id": "N5K-20260831-542R1",
   "latest_completed_run": "N5K-20260831-542R1",
-  "canonical_integration_run_id": "N5K-20260831-541R1",
-  "hourly_baseline_count": 555,
-  "hourly_net_new": 1,
+  "canonical_integration_run_id": "N5K-20260831-542R1",
+  "hourly_baseline_count": 556,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "raw": 47,
-    "fast_gate": 11,
-    "size": 2,
-    "legal": 2,
-    "signal": 2,
-    "lpr": 2,
-    "contact": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded": 45,
-    "qualified_raw_pct": 2.1277,
-    "fast_gate_raw_pct": 23.4043
+    "raw": 32,
+    "fast_gate": 8,
+    "size": 3,
+    "legal": 3,
+    "signal": 3,
+    "lpr": 3,
+    "contact": 3,
+    "qualified": 0,
+    "duplicates": 3,
+    "excluded": 29,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 25.0
   },
   "next_distribution_pct": {
     "jobs": 5,
@@ -45,7 +45,7 @@
     "regional_investment": 35,
     "partner_business_change": 10
   },
-  "fresh_staging": "RUN N5K-20260831-541R1 integrated physically; pending cleared; qualified_staged_not_counted=0; no newer worker commit found after 2026-08-31T13:21+03:00",
+  "fresh_staging": "RUN N5K-20260831-542R1 integrated physically; final physical dedup rejected all 3 prewrite-qualified candidates as existing canonical records; pending cleared; qualified_staged_not_counted=0",
   "repair_required": null,
-  "note": "N5K-20260831-542R1 completed after physical integration: +0 net new; canonical/contactable 556/556; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260831-542R1 recovery completed after physical integration: +0 net new; Неокомпозит-Тюмень duplicate by INN+OGRN; Спектр-Пак Юг and Малтат/Руслов duplicates by INN+OGRN+brand/domain; canonical/contactable 556/556; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
