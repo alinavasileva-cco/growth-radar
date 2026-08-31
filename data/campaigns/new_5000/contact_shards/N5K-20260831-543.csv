@@ -1,0 +1,3 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0722,N5K-0722-C01,ЭЛЕМЕНТ,9709045791,,Корпоративный маршрут,+7 499 643-53-46,phone,corporate_published,Официальный сайт ООО ЭЛЕМЕНТ,https://subelement.ru/kontakty/,NO,HIGH,2026-08-31,Официальный офис продаж; опубликован компанией.,N5K-20260831-543,new_5000
+N5K-0722,N5K-0722-C02,ЭЛЕМЕНТ,9709045791,,Корпоративный маршрут,sale@subelement.ru,email,corporate_published,Официальный сайт ООО ЭЛЕМЕНТ,https://subelement.ru/kontakty/,NO,HIGH,2026-08-31,Официальный корпоративный email; не реконструирован по шаблону.,N5K-20260831-543,new_5000

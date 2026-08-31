@@ -1,0 +1,4 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0722,N5K-0722-E01,LEGAL_SIZE,"ООО ЭЛЕМЕНТ, ИНН 9709045791, ОГРН 1197746154077, действует; гендиректор Харитонов Дмитрий Анатольевич с 11.02.2026; выручка 2025 — 894 773 000 ₽, 83 сотрудника.",https://companium.ru/id/1197746154077-ehlement,Companium / данные ФНС и бухгалтерской отчетности,2026-08-31T17:05:15+03:00,HIGH,N5K-20260831-543,new_5000
+N5K-0722,N5K-0722-E02,SIGNAL,29.08.2026 опубликована вакансия коммерческого директора завода ЭЛЕМЕНТ.,https://dreamjob.ru/employers/301902/vakansii/136463373,DreamJob,2026-08-31T17:05:15+03:00,HIGH,N5K-20260831-543,new_5000
+N5K-0722,N5K-0722-E03,CONTACT,Официальный сайт публикует телефон +7 499 643-53-46 и email sale@subelement.ru.,https://subelement.ru/kontakty/,Официальный сайт ООО ЭЛЕМЕНТ,2026-08-31T17:05:15+03:00,HIGH,N5K-20260831-543,new_5000
