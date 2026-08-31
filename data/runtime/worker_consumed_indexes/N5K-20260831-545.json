@@ -1,0 +1,24 @@
+{
+  "run_id": "N5K-20260831-545",
+  "campaign_id": "new_5000",
+  "updated_at": "2026-08-31T19:31:00+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260831-182457-jobs.json",
+      "consumed_by_run": "N5K-20260831-545",
+      "result": "CONSUMED_ZERO_QUALIFIED",
+      "note": "10 raw, 3 fast_gate, 0 SIZE, 0 net qualified; jobs remains 5% probe-only."
+    },
+    {
+      "path": "data/pending_workers/growth_news/20260831-1832-growth-news-prequalified.json",
+      "consumed_by_run": "N5K-20260831-545",
+      "result": "CONSUMED_AFTER_CANONICAL_REVERIFY",
+      "note": "Three materialized prequalified candidates independently reverified; all three survived final physical canonical dedup and were integrated as N5K-0723..N5K-0725."
+    }
+  ],
+  "canonical_contactable_after": "560/560",
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach": 0
+}
