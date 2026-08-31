@@ -34,14 +34,34 @@
       "signal": 2,
       "lpr": 2,
       "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 22,
-      "qualified_raw_pct": 4.3478,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 23,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 8.6957,
-      "duplicate_plus_early_reject_pct": 95.6522,
+      "duplicate_plus_early_reject_pct": 100.0,
+      "physical_dedup": "Политакс skipped by INN+OGRN",
       "adaptive_action": "jobs capped at 5% probe-only for next 3 runs"
     }
   ],
+  "efficiency_history": [
+    {"run_id":"N5K-20260831-533R1","qualified_raw_pct":0.0,"fast_gate_raw_pct":6.1224},
+    {"run_id":"N5K-20260831-534","qualified_raw_pct":0.0,"fast_gate_raw_pct":8.8235},
+    {"run_id":"N5K-20260831-535R1","qualified_raw_pct":5.5556,"fast_gate_raw_pct":5.5556},
+    {"run_id":"N5K-20260831-536","qualified_raw_pct":0.0,"fast_gate_raw_pct":8.6957}
+  ],
+  "delta_vs_previous_run": {
+    "qualified_raw_pp": -5.5556,
+    "fast_gate_raw_pp": 3.1401,
+    "net_new": "2 -> 0"
+  },
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 30,
+    "official_owner_ceo": 30,
+    "industry_catalog": 5,
+    "regional_investment": 20,
+    "partner_business_change": 10
+  },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
