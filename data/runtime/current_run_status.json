@@ -1,103 +1,77 @@
 {
-  "run_id": "N5K-20260831-544",
+  "run_id": "N5K-20260831-545",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T18:22:20+03:00",
+  "updated_at": "2026-08-31T19:31:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 557,
     "target_count": 5000,
-    "current_canonical_count": 557,
-    "current_contactable_count": 557,
-    "progress_added": 0,
-    "remaining": 4443
+    "current_canonical_count": 560,
+    "current_contactable_count": 560,
+    "progress_added": 3,
+    "remaining": 4440
   },
   "funnel": {
-    "discovered": 38,
-    "fast_gate_passed": 4,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 2,
-    "excluded": 36
+    "discovered": 18,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 15
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260831_172627",
-      "raw": 26,
-      "fast_gate": 0,
+      "lane": "jobs_probe_worker_20260831_182457",
+      "raw": 10,
+      "fast_gate": 3,
       "size": 0,
-      "legal": 0,
       "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "prewrite_qualified": 0,
       "qualified": 0,
-      "duplicate_plus_early_reject": 26,
+      "duplicate_plus_early_reject": 10,
       "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 0.0
+      "fast_gate_raw_pct": 30.0
     },
     {
-      "lane": "regional_investment_growth_official_20260831_1822",
-      "raw": 12,
-      "fast_gate": 4,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "prewrite_qualified": 1,
+      "lane": "growth_news_worker_prequalified",
+      "raw": 3,
+      "fast_gate": 3,
+      "size": 3,
+      "signal": 3,
+      "qualified": 3,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 100.0,
+      "fast_gate_raw_pct": 100.0,
+      "note": "Only the 3 materialized deep-checked candidates are counted; upstream raw not stored in this staging file and was not reconstructed."
+    },
+    {
+      "lane": "canonical_writer_fresh_growth_scan",
+      "raw": 5,
+      "fast_gate": 0,
+      "size": 0,
+      "signal": 0,
       "qualified": 0,
-      "duplicate_plus_early_reject": 12,
+      "duplicate_plus_early_reject": 5,
       "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 33.3333,
-      "post_dedup_note": "МолоПак failed the physical integration guard as an existing canonical company by INN 7743513365 and OGRN 1037739986899; pre-write qualified is not counted as net QUALIFIED."
+      "fast_gate_raw_pct": 0.0,
+      "note": "Fresh 2026 growth/expansion scan; none promoted without complete deep-funnel proof."
     }
   ],
-  "aggregate_efficiency": {
-    "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 10.5263,
-    "previous_run_543_qualified_raw_pct": 2.9412,
-    "previous_run_543_fast_gate_raw_pct": 14.7059,
-    "qualified_raw_delta_pp": -2.9412,
-    "fast_gate_raw_delta_pp": -4.1796,
-    "net_new_delta": -1
-  },
-  "last_three_completed_run_aggregate_efficiency": [
-    {"run_id":"N5K-20260831-541R1","raw":47,"fast_gate":11,"qualified":1,"qualified_raw_pct":2.1277,"fast_gate_raw_pct":23.4043},
-    {"run_id":"N5K-20260831-542R1","raw":32,"fast_gate":8,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":25.0},
-    {"run_id":"N5K-20260831-543","raw":34,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.9412,"fast_gate_raw_pct":14.7059}
+  "qualified_companies": [
+    "Ивановская текстильная компания",
+    "ЭФЭР",
+    "Завод карбидов и ферросплавов"
   ],
-  "historical_lane_note": "Exact post-dedup per-lane qualified counts are not reconstructed for older runs where stored lane instrumentation was pre-write. Aggregate values above are physical post-dedup results.",
-  "adaptive_decision": {
-    "jobs": "CUT_TO_5_PERCENT_PROBE_ONLY_FOR_NEXT_3_RUNS: current qualified/raw=0%, fast_gate/raw=0%, duplicate+early-reject=100%; broad jobs allocation is prohibited by the adaptive thresholds.",
-    "regional_investment": "CUT_DEEP_CHECK_TO_5_PERCENT: regional-investment produced 0 net QUALIFIED in RUN 543 and again no net QUALIFIED in RUN 544 after physical dedup; shift deep-check time to fresher low-overlap growth/business-change sources.",
-    "growth_news": "AMPLIFY_FOR_NEXT_RUN: a fresh worker arriving after RUN 544 start surfaced three evidence-rich prequalified expansion candidates, none counted yet because full global pending dedup was fail-closed. They must be ingested first next RUN and independently reverified before any canonical write.",
-    "reason": "Overall qualified/raw and fast_gate/raw both fell versus RUN 543 and net-new is 0, so the previous distribution is not repeated automatically."
-  },
-  "next_distribution_pct": {
-    "jobs": 5,
-    "growth_news": 40,
-    "official_owner_ceo": 25,
-    "industry_catalog": 5,
-    "regional_investment": 5,
-    "partner_business_change": 20
-  },
-  "late_arriving_worker_staging": [
-    "data/pending_workers/jobs/20260831-182457-jobs.json",
-    "data/pending_workers/growth_news/20260831-1832-growth-news-prequalified.json"
-  ],
-  "late_arriving_worker_note": "These files were committed after RUN 544 had already started. They are not retroactively mixed into RUN 544 metrics and are mandatory first input for the next RUN.",
-  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "557_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "557_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "560_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "560_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
