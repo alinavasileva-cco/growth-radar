@@ -2,7 +2,7 @@
   "run_id": "N5K-20260831-533R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T02:50:51+03:00",
+  "updated_at": "2026-08-31T03:02:36+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 550,
@@ -34,8 +34,12 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "note": "Worker-declared employer-level denominator; distinct within this worker run. Cross-worker global uniqueness is not asserted."
+      "qualified": 0,
+      "duplicate_plus_early_reject": 74,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 4.0541,
+      "duplicate_plus_early_reject_pct": 100.0,
+      "note": "Post-dedup net result. Worker pre-write PASS was already canonical; denominator is worker-declared and cross-worker global uniqueness is not asserted."
     },
     {
       "lane": "jobs_worker_20260831_022006",
@@ -46,10 +50,41 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "note": "Worker-declared employer-level denominator; distinct within this worker run. Cross-worker global uniqueness is not asserted."
+      "qualified": 0,
+      "duplicate_plus_early_reject": 24,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 12.5,
+      "duplicate_plus_early_reject_pct": 100.0,
+      "note": "Post-dedup net result. Worker pre-write PASS was already canonical; denominator is worker-declared and cross-worker global uniqueness is not asserted."
     }
   ],
+  "overall_efficiency": {
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 6.1224,
+    "delta_vs_previous_hour_qualified_raw_pp": 0.0,
+    "delta_vs_previous_hour_fast_gate_raw_pp": -1.7723,
+    "net_qualified_change_vs_previous_hour": 0,
+    "raw_scope": "98 source-level employer observations; global cross-worker distinctness unproven"
+  },
+  "comparison_last_3_runs": [
+    {"run_id":"N5K-20260830-531","raw":30,"fast_gate":3,"qualified":1,"qualified_raw_pct":3.3333,"fast_gate_raw_pct":10.0},
+    {"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947},
+    {"run_id":"N5K-20260831-533R1","raw":98,"raw_scope":"source-level sum; global cross-worker distinctness unproven","fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":6.1224}
+  ],
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 30,
+    "official_owner_ceo": 25,
+    "industry_catalog": 5,
+    "regional_investment": 20,
+    "partner_business_change": 15
+  },
+  "adaptive_controls": {
+    "jobs_cap_runs_remaining": 3,
+    "jobs_mode": "PROBE_ONLY_NO_ORDINARY_DEEP_CHECK",
+    "jobs_trigger": "RUN 532 and RUN 533R1 both produced 0 physical net-qualified from jobs, and RUN 533R1 post-dedup duplicate+early-reject is 100%; jobs remains capped at 5% for the next 3 RUN.",
+    "decision": "Overall q/raw remains 0%; fast/raw declined from 7.8947% to 6.1224%; net-new remains 0. Do not expand jobs. Shift discovery to fresh low-overlap growth, official owner/CEO, regional investment and partner/business-change sources."
+  },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
