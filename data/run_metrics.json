@@ -1,9 +1,9 @@
 {
   "generated_at": "2026-08-31T14:02:56+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260831-540R1",
+  "latest_completed_run_id": "N5K-20260831-541R1",
   "current_run_id": "N5K-20260831-541R1",
-  "current_run_status": "REPAIR_REQUIRED",
+  "current_run_status": "COMPLETED",
   "canonical_pool_verified": 556,
   "contactable_verified": 556,
   "qualified_staged_not_counted": 0,
@@ -13,7 +13,7 @@
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": "CURRENT_WORKING_CONFIG metadata sync pending",
+  "blocker": null,
   "run_541R1": {
     "raw_discovered": 47,
     "fast_gate_passed": 11,
