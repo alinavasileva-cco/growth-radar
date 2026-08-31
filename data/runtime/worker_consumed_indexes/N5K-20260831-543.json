@@ -1,0 +1,20 @@
+{
+  "run_id": "N5K-20260831-543",
+  "updated_at": "2026-08-31T17:05:15+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260831-163052-jobs.json",
+      "blob_sha": "e4ad5306887e89b5043bc54991f11ec51b5abe1b",
+      "result": "CONSUMED_AFTER_CANONICAL_REVERIFY",
+      "note": "Worker preflight was incomplete and therefore staged zero qualified. Canonical writer independently reverified its only deep-check candidate ООО ЭЛЕМЕНТ with fresh legal/size/signal/contact sources; repository physical integration guard accepted it as net-new N5K-0722. Immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 557,
+  "physical_contactable_after_cycle": 557,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "outreach_sent": 0
+}
