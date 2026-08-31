@@ -1,0 +1,75 @@
+{
+  "run_id": "N5K-20260831-533R1",
+  "correction_at": "2026-08-31T03:02:36+03:00",
+  "reason": "Lane metrics retained worker pre-write qualified=1 after final physical canonical dedup had already reduced net-qualified to 0.",
+  "physical_result": {
+    "canonical": 550,
+    "contactable": 550,
+    "net_new": 0,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "outreach_sent": 0
+  },
+  "funnel": {
+    "raw_source_level_sum": 98,
+    "raw_scope": "global cross-worker distinctness unproven",
+    "fast_gate": 6,
+    "size": 2,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 0,
+    "duplicates": 2,
+    "excluded": 96
+  },
+  "lanes": [
+    {
+      "lane": "jobs_worker_20260831_012600",
+      "raw": 74,
+      "fast_gate": 3,
+      "size": 1,
+      "signal": 1,
+      "qualified_prewrite": 1,
+      "qualified_net": 0,
+      "duplicate_plus_early_reject": 74,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 4.0541
+    },
+    {
+      "lane": "jobs_worker_20260831_022006",
+      "raw": 24,
+      "fast_gate": 3,
+      "size": 1,
+      "signal": 1,
+      "qualified_prewrite": 1,
+      "qualified_net": 0,
+      "duplicate_plus_early_reject": 24,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 12.5
+    }
+  ],
+  "overall_efficiency": {
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 6.1224,
+    "previous_run": "N5K-20260831-532",
+    "previous_qualified_raw_pct": 0.0,
+    "previous_fast_gate_raw_pct": 7.8947,
+    "delta_qualified_raw_pp": 0.0,
+    "delta_fast_gate_raw_pp": -1.7723,
+    "net_new_change": 0
+  },
+  "adaptive_action": {
+    "jobs": "cap 5% probe-only for next 3 RUN",
+    "reason": "RUN 532 and RUN 533R1 both have 0 physical net-qualified from jobs; both RUN 533R1 jobs lanes are 100% duplicate+early-reject post-dedup.",
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 30,
+      "official_owner_ceo": 25,
+      "industry_catalog": 5,
+      "regional_investment": 20,
+      "partner_business_change": 15
+    }
+  }
+}
