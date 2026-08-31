@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T01:47:00+03:00",
+  "generated_at": "2026-09-01T02:46:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-551R1",
-  "current_run_id": "N5K-20260901-551R1",
+  "latest_completed_run_id": "N5K-20260901-552R1",
+  "current_run_id": "N5K-20260901-552R1",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 561,
   "contactable_verified": 561,
@@ -14,7 +14,7 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_551R1": {
+  "run_552R1": {
     "raw_discovered": 0,
     "fast_gate_passed": 0,
     "size_check_passed": 0,
@@ -28,7 +28,7 @@
     "excluded": 0,
     "lane_metrics": [
       {
-        "lane": "jobs_worker_20260901_012123",
+        "lane": "jobs_worker_20260901_022236",
         "source_level_observations": 20,
         "repo_dedup_confirmed_raw": 0,
         "fast_gate": 0,
@@ -38,7 +38,7 @@
         "lpr": 0,
         "contact": 0,
         "qualified": 0,
-        "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; source observations retained as metrics only because complete canonical+active-pending dedup keyset could not be materialized."
+        "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; source observations retained as metrics only because the worker could not materialize the complete canonical+active-pending dedup keyset."
       }
     ]
   }

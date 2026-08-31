@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260901-551R1",
+  "run_id": "N5K-20260901-552R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T01:47:00+03:00",
+  "updated_at": "2026-09-01T02:46:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 561,
@@ -26,7 +26,7 @@
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260901_012123",
+      "lane": "jobs_worker_20260901_022236",
       "source_level_observations": 20,
       "repo_dedup_confirmed_raw": 0,
       "fast_gate": 0,
@@ -36,7 +36,7 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; source observations retained as metrics only because complete canonical+active-pending dedup keyset could not be materialized."
+      "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; source observations retained as metrics only because the worker could not materialize the complete canonical+active-pending dedup keyset."
     }
   ],
   "qualified_companies": [],

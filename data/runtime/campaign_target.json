@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T01:47:00+03:00",
+  "updated_at": "2026-09-01T02:46:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-551R1",
-  "current_run_id": "N5K-20260901-551R1",
-  "last_run_id": "N5K-20260901-551R1",
-  "latest_completed_run": "N5K-20260901-551R1",
+  "last_completed_run_id": "N5K-20260901-552R1",
+  "current_run_id": "N5K-20260901-552R1",
+  "last_run_id": "N5K-20260901-552R1",
+  "latest_completed_run": "N5K-20260901-552R1",
   "canonical_integration_run_id": "N5K-20260901-551R1",
   "hourly_baseline_count": 561,
   "hourly_net_new": 0,
@@ -47,5 +47,5 @@
   },
   "fresh_staging": "Recovery N5K-20260901-551R1 resumed the fresh technically blocked hourly jobs worker from 2026-09-01T01:21:23+03:00. The worker recorded at least 20 named source-level employer observations across independent jobs sources but failed closed before repo-dedup-confirmed RAW because complete active pending/canonical preflight could not be materialized. No candidate was promoted or inferred.",
   "repair_required": null,
-  "note": "N5K-20260901-551R1 completed after physical integration: +0 net new; canonical/contactable 561/561; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-552R1 completed after physical integration: +0 net new; canonical/contactable 561/561; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
