@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-31T19:31:00+03:00",
+  "updated_at": "2026-08-31T20:02:51+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260831-545",
-  "current_run_id": "N5K-20260831-545",
-  "last_run_id": "N5K-20260831-545",
-  "latest_completed_run": "N5K-20260831-545",
+  "last_completed_run_id": "N5K-20260831-546",
+  "current_run_id": "N5K-20260831-546",
+  "last_run_id": "N5K-20260831-546",
+  "latest_completed_run": "N5K-20260831-546",
   "canonical_integration_run_id": "N5K-20260831-545",
   "hourly_baseline_count": 557,
   "hourly_net_new": 3,
@@ -49,5 +49,5 @@
   },
   "fresh_staging": "RUN 545 ingested mandatory late files first: jobs/20260831-182457-jobs.json and growth_news/20260831-1832-growth-news-prequalified.json. Jobs produced 0 net qualified. The three materialized growth candidates were independently reverified and all three survived the final physical master dedup and canonical integration.",
   "repair_required": null,
-  "note": "N5K-20260831-545 completed after physical integration: +3 net new; canonical/contactable 560/560; integrity PASS; orphan 0/0; staged 0; outreach 0. Growth-news is boosted next run; jobs remains 5% probe-only."
+  "note": "N5K-20260831-546 completed after physical integration: +0 net new; canonical/contactable 560/560; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
