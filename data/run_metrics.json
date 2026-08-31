@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-31T16:04:18+03:00",
+  "generated_at": "2026-08-31T16:12:12+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260831-542R1",
   "current_run_id": "N5K-20260831-542R1",
-  "current_run_status": "REPAIR_REQUIRED",
+  "current_run_status": "COMPLETED",
   "canonical_pool_verified": 556,
   "contactable_verified": 556,
   "qualified_staged_not_counted": 0,
@@ -13,7 +13,7 @@
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": "CURRENT_WORKING_CONFIG authoritative header still identifies 541R1; metadata-only sync remains required.",
+  "blocker": null,
   "run_542R1": {
     "raw_discovered": 32,
     "fast_gate_passed": 8,
