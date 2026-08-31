@@ -3,14 +3,15 @@
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-08-31T20:58:34+03:00",
-  "stage": "COMPLETE",
+  "stage": "COMPLETE_POST_DEDUP_REPAIRED",
   "new_cycle": {
     "baseline_count": 560,
     "target_count": 5000,
     "current_canonical_count": 561,
     "current_contactable_count": 561,
     "progress_added": 1,
-    "remaining": 4439
+    "remaining": 4439,
+    "remaining_to_1000": 439
   },
   "funnel": {
     "discovered": 14,
@@ -39,7 +40,7 @@
       "duplicate_early_reject": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "decision": "FAIL_CLOSED_CONSUME_NO_DEEP_CHECK; worker reported 25 surfaced cards but could not prove distinct employer raw after required repo dedup"
+      "decision": "FAIL_CLOSED_CONSUME_NO_DEEP_CHECK; 25 surfaced cards were not counted as distinct raw because repo-wide dedup materialization was not proven by the worker"
     },
     {
       "lane": "growth_news_fresh",
@@ -51,11 +52,11 @@
       "lpr": 3,
       "contact": 2,
       "prewrite_qualified": 2,
-      "qualified": 2,
-      "duplicate_early_reject": 8,
-      "qualified_raw_pct": 20.0,
+      "qualified": 1,
+      "duplicate_early_reject": 9,
+      "qualified_raw_pct": 10.0,
       "fast_gate_raw_pct": 40.0,
-      "decision": "BOOST; fresh expansion/investment sources produced two fully evidenced prewrite candidates; one known canonical duplicate was rejected early"
+      "decision": "BOOST; Eco Shipping physically integrated; Petrovax removed by final physical INN+OGRN+LEGAL_NAME+BRAND_DOMAIN dedup"
     },
     {
       "lane": "official_owner_ceo_fresh",
@@ -74,9 +75,21 @@
       "decision": "KEEP_TESTING_LOW_OVERLAP; no candidate promoted without complete deep funnel"
     }
   ],
-  "qualified_companies": [
-    "Эко Шиппинг"
-  ],
+  "efficiency": {
+    "current": {"run_id":"N5K-20260831-547","raw":14,"fast_gate":6,"qualified":1,"qualified_raw_pct":7.142857,"fast_gate_raw_pct":42.857143},
+    "previous_three": [
+      {"run_id":"N5K-20260831-544","raw":38,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":10.526316},
+      {"run_id":"N5K-20260831-545","raw":18,"fast_gate":6,"qualified":3,"qualified_raw_pct":16.666667,"fast_gate_raw_pct":33.333333},
+      {"run_id":"N5K-20260831-546","raw":43,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":9.302326}
+    ],
+    "delta_vs_previous_hour": {"qualified_raw_pp":7.142857,"fast_gate_raw_pp":33.554817,"net_new_previous":0,"net_new_current":1}
+  },
+  "adaptive_action": {
+    "cut_or_probe": ["jobs: 5% probe-only; fresh worker could not materialize dedup-safe raw and produced 0 qualified","regional_investment: 5% probe-only after prior saturation"],
+    "boosted": ["growth_news: 55%; current physical net-new q/raw=10% in lane, above recent median, while quality gates stayed unchanged","official_owner_ceo: 25%; retained as low-overlap discovery lane"],
+    "next_distribution_pct": {"jobs":5,"growth_news":55,"official_owner_ceo":25,"industry_catalog":5,"regional_investment":5,"partner_business_change":5}
+  },
+  "qualified_companies": ["Эко Шиппинг"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -84,5 +97,6 @@
   "physical_master_state": "561_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "561_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "repair_note": "Final physical guard skipped Petrovax Farm as canonical duplicate by INN 7702302492 + OGRN 1037700012745 + exact legal name + brand/domain. Lane qualified repaired from prewrite 2 to physical net 1."
 }
