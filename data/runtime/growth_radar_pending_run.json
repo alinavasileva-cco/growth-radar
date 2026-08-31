@@ -1,8 +1,115 @@
 {
-  "run_id": "N5K-20260831-539",
-  "updated_at": "2026-08-31T10:27:35+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260831-539 integrated physically; canonical/contactable 555/555; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260831-540R1",
+  "updated_at": "2026-08-31T11:53:16+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 17,
+    "fast_gate_passed": 4,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 16
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260831_112221",
+      "raw": 17,
+      "fast_gate": 4,
+      "size": 2,
+      "legal": 2,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 16,
+      "note": "Fresh post-RUN-539 immutable worker packet. Only 17 employer-level raw candidates are physically evidenced; 200-300 was not claimed because the available fresh source packet does not prove that volume."
+    }
+  ],
+  "notes": "Recovery/resume after the expected post-539 canonical cycle had not committed by 11:44+03:00. No concurrent in-progress canonical Action was found before staging. Fresh post-539 jobs worker packet was ingested. Criteria unchanged. Final physical dedup in integration workflow is mandatory. No outreach.",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0720",
+      "Brand": "Агро-Спутник",
+      "Legal Name": "ООО \"АГРО - СПУТНИК\"",
+      "INN": "3603006840",
+      "OGRN/OGRNIP": "1023601072351",
+      "Region": "Воронежская область",
+      "City": "с. Дьяченково / Воронеж",
+      "Segment": "Сельхозпроизводство / растениеводство / B2B",
+      "Website": "https://agrosputnik.ru/",
+      "Revenue/Scale": "Выручка 2 349 392 000 ₽ за 2025 год; 145 сотрудников по актуальным business-profile источникам",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежий найм коммерческого директора (CCO) в Воронеже с ответственностью за планы продаж, маржинальную прибыль и коммерческие KPI.",
+      "Signal Date": "2026-07-28",
+      "Signal Source": "https://dreamjob.ru/employers/164642/vakansii/135630531",
+      "Owner": "Пешиков Александр Александрович — 100%",
+      "CEO": "Гончаров Сергей Александрович",
+      "LPR": "Пешиков Александр Александрович",
+      "LPR Role": "Собственник, 100%",
+      "Primary Phone": "8 800 350-77-35",
+      "Primary Email": "info@agrosputnik.ru",
+      "HH Contact": "",
+      "Contact Form": "https://agrosputnik.ru/ru/clients/contacts/",
+      "Contact Type": "Опубликованный корпоративный маршрут",
+      "Contact Source": "официальный сайт / актуальные legal-profile источники / DreamJob",
+      "Consulting Hypothesis": "На фоне найма CCO — настройка коммерческой системы: цели и KPI, pipeline продаж, маржинальность, роли и управленческий контур коммерческой функции.",
+      "contacts": [
+        {
+          "value": "8 800 350-77-35",
+          "channel": "phone",
+          "type": "Опубликованный корпоративный телефон",
+          "source": "Официальный сайт Агро-Спутник",
+          "url": "https://agrosputnik.ru/ru/clients/contacts/",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный маршрут; контакт не восстановлен по шаблону."
+        },
+        {
+          "value": "info@agrosputnik.ru",
+          "channel": "email",
+          "type": "Опубликованный корпоративный email",
+          "source": "Официальный сайт Агро-Спутник",
+          "url": "https://agrosputnik.ru/ru/clients/contacts/",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный маршрут; контакт не восстановлен по шаблону."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "SIZE",
+          "claim": "Выручка 2 349 392 000 ₽ за 2025 год; 145 сотрудников.",
+          "url": "https://companies.rbc.ru/id/1023601072351-ooo-agro-sputnik/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "LEGAL",
+          "claim": "ООО «АГРО - СПУТНИК», ИНН 3603006840, ОГРН 1023601072351, действующее юридическое лицо.",
+          "url": "https://firmoteka.ru/3603006840",
+          "source": "Firmoteka"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "Вакансия коммерческого директора (CCO) опубликована 2026-07-28; зона ответственности включает продажи, маржинальную прибыль и коммерческие KPI.",
+          "url": "https://dreamjob.ru/employers/164642/vakansii/135630531",
+          "source": "DreamJob"
+        },
+        {
+          "type": "LPR",
+          "claim": "Пешиков Александр Александрович — собственник 100%; Гончаров Сергей Александрович — генеральный директор.",
+          "url": "https://saby.ru/profile/3603006840-360301001",
+          "source": "Saby"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальная страница контактов публикует телефон 8 800 350-77-35 и email info@agrosputnik.ru и идентифицирует ООО «Агро-Спутник» по ИНН/ОГРН.",
+          "url": "https://agrosputnik.ru/ru/clients/contacts/",
+          "source": "Официальный сайт Агро-Спутник"
+        }
+      ]
+    }
+  ]
 }
