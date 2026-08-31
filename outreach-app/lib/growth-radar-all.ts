@@ -6,13 +6,14 @@ import { discoverGrowthRadarSources } from "@/lib/growth-radar-sources";
 
 type Row = Record<string, string>;
 
-const SEND_LEDGER_URL = "https://raw.githubusercontent.com/alinavasileva-cco/growth-radar/feature/outreach-app/outreach-app/data/send_ledger.csv";
+// Historical migration source only. Once a company has delivery fields in Postgres,
+// this CSV is ignored for that company and can never override database state.
+const LEGACY_SEND_LEDGER_URL = "https://raw.githubusercontent.com/alinavasileva-cco/growth-radar/feature/outreach-app/outreach-app/data/send_ledger.csv";
 
 const terminalStatuses = new Set<CompanyStatus>([
   CompanyStatus.SENT,
   CompanyStatus.REPLIED,
   CompanyStatus.DECLINED,
-  CompanyStatus.BOUNCED,
   CompanyStatus.EXCLUDED
 ]);
 
@@ -25,7 +26,7 @@ function normalizedName(value: string): string {
   return value.toLowerCase().replace(/[«»"'`]/g, "").replace(/\s+/g, " ").trim();
 }
 
-function parseDate(value?: string): Date | null {
+function parseDate(value?: string | null): Date | null {
   if (!value) return null;
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? null : date;
@@ -41,9 +42,11 @@ function statusFromRow(row: Row, email: string | null): CompanyStatus {
 async function fetchCsv(url: string): Promise<Row[]> {
   const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) throw new Error(`Не удалось прочитать Growth Radar (${response.status}): ${url}`);
-  const parsed = Papa.parse<Row>(await response.text(), { header: true, skipEmptyLines: true });
-  if (parsed.errors.length) throw new Error(`Ошибка CSV ${url}: ${parsed.errors[0]?.message}`);
-  return parsed.data;
+  const text = (await response.text()).replace(/\r\n?/g, "\n");
+  const parsed = Papa.parse<Row>(text, { header: true, skipEmptyLines: true });
+  const fatal = parsed.errors.find((error) => error.type === "Quotes" || error.type === "Delimiter");
+  if (fatal) throw new Error(`Ошибка CSV ${url}: ${fatal.message}`);
+  return parsed.data.filter((row) => Object.keys(row).length > 1);
 }
 
 function mergeDefined(base: Row | undefined, incoming: Row): Row {
@@ -62,7 +65,7 @@ function contactIndex(rows: Row[]) {
   return index;
 }
 
-function deliveryIndexes(rows: Row[]) {
+function legacyDeliveryIndexes(rows: Row[]) {
   const byLead = new Map<string, Row>();
   const byEmail = new Map<string, Row>();
   for (const row of rows) {
@@ -113,16 +116,27 @@ function addToMaps(company: Company, maps: {
   maps.name.set(normalizedName(company.name), company);
 }
 
+function hasDatabaseDelivery(company?: Company): boolean {
+  return Boolean(
+    company?.lastGmailMessageId ||
+    company?.lastSentAt ||
+    company?.bouncedAt ||
+    company?.status === CompanyStatus.SENT ||
+    company?.status === CompanyStatus.REPLIED ||
+    company?.status === CompanyStatus.DECLINED
+  );
+}
+
 export async function syncAllGrowthRadar(userId: string) {
   const sources = await discoverGrowthRadarSources();
-  const [leadGroups, contactGroups, ledgerRows] = await Promise.all([
+  const [leadGroups, contactGroups, legacyLedgerRows] = await Promise.all([
     Promise.all(sources.leadUrls.map(fetchCsv)),
     Promise.all(sources.contactUrls.map(fetchCsv)),
-    fetchCsv(SEND_LEDGER_URL).catch(() => [] as Row[])
+    fetchCsv(LEGACY_SEND_LEDGER_URL).catch(() => [] as Row[])
   ]);
   const repositoryRows = leadGroups.flat();
   const contacts = contactIndex(contactGroups.flat());
-  const deliveries = deliveryIndexes(ledgerRows);
+  const legacyDeliveries = legacyDeliveryIndexes(legacyLedgerRows);
   const rowsByLead = new Map<string, Row>();
   const archiveRows = savedCompanies as Row[];
 
@@ -144,6 +158,7 @@ export async function syncAllGrowthRadar(userId: string) {
   let updated = 0;
   let skipped = 0;
   let deduplicated = 0;
+  let legacyDeliveriesImported = 0;
 
   for (const row of rows) {
     const leadId = clean(row["Lead ID"]);
@@ -155,26 +170,42 @@ export async function syncAllGrowthRadar(userId: string) {
 
     const inn = clean(row.INN);
     const sourceEmail = clean(row["Primary Email"])?.toLowerCase() ?? null;
-    const delivery = deliveries.byLead.get(leadId) ?? (sourceEmail ? deliveries.byEmail.get(sourceEmail) : undefined);
-    const ledgerEmail = clean(delivery?.email)?.toLowerCase() ?? null;
-    const email = ledgerEmail ?? sourceEmail;
-    const deliveryStatus = clean(delivery?.status)?.toUpperCase();
-    const nextStatus = deliveryStatus === "SENT"
-      ? CompanyStatus.SENT
-      : deliveryStatus === "BOUNCED"
-        ? CompanyStatus.BOUNCED
-        : statusFromRow(row, email);
-
     const existing = maps.lead.get(leadId)
       ?? (inn ? maps.inn.get(inn) : undefined)
-      ?? (email ? maps.email.get(email) : undefined)
+      ?? (sourceEmail ? maps.email.get(sourceEmail) : undefined)
       ?? maps.name.get(normalizedName(name));
 
+    const legacyDelivery = hasDatabaseDelivery(existing)
+      ? undefined
+      : legacyDeliveries.byLead.get(leadId) ?? (sourceEmail ? legacyDeliveries.byEmail.get(sourceEmail) : undefined);
+    const legacyStatus = clean(legacyDelivery?.status)?.toUpperCase();
+    const legacyEmail = clean(legacyDelivery?.email)?.toLowerCase() ?? null;
+    const email = existing?.lastSentEmail ?? legacyEmail ?? sourceEmail;
+
+    const sourceStatus = statusFromRow(row, email);
+    const importedStatus = legacyStatus === "SENT"
+      ? CompanyStatus.SENT
+      : legacyStatus === "BOUNCED"
+        ? CompanyStatus.BOUNCED
+        : null;
+
+    const sourceEmailChangedAfterBounce = existing?.status === CompanyStatus.BOUNCED
+      && Boolean(sourceEmail)
+      && sourceEmail !== existing.lastSentEmail;
+
+    const nextStatus = importedStatus
+      ?? (sourceEmailChangedAfterBounce ? CompanyStatus.READY : sourceStatus);
+
     const growthRadarNote = clean(row["Final Quick Status"]) ? `Статус Growth Radar: ${clean(row["Final Quick Status"])}` : null;
-    const deliveryNote = delivery
-      ? `Доставка: ${deliveryStatus}; ${clean(delivery.email) ?? "email не указан"}; ${clean(delivery.sent_at) ?? "дата не указана"}; ${clean(delivery.subject) ?? "тема не указана"}`
+    const legacyDeliveryNote = legacyDelivery
+      ? `Историческая доставка импортирована в БД: ${legacyStatus}; ${clean(legacyDelivery.email) ?? "email не указан"}; ${clean(legacyDelivery.sent_at) ?? "дата не указана"}; ${clean(legacyDelivery.subject) ?? "тема не указана"}`
       : null;
-    const notes = [growthRadarNote, deliveryNote].filter(Boolean).join(" | ") || null;
+    const notes = [growthRadarNote, legacyDeliveryNote].filter(Boolean).join(" | ") || null;
+
+    const legacySentAt = legacyDelivery ? parseDate(legacyDelivery.sent_at) : null;
+    const legacyMessageId = clean(legacyDelivery?.gmail_message_id);
+    const legacySubject = clean(legacyDelivery?.subject);
+    const legacyError = legacyStatus === "BOUNCED" ? clean(legacyDelivery?.note) ?? "Delivery failed" : null;
 
     const data = {
       campaignId: clean(row["Campaign ID"]) || clean(row["Run ID"]) || (leadId.startsWith("GRM-") ? "saved_archive" : null),
@@ -206,19 +237,33 @@ export async function syncAllGrowthRadar(userId: string) {
     };
 
     if (!existing) {
-      const company = await db.company.create({ data: { userId, leadId, ...data, status: nextStatus } });
+      const company = await db.company.create({
+        data: {
+          userId,
+          leadId,
+          ...data,
+          status: nextStatus,
+          lastSentAt: legacyStatus === "SENT" ? legacySentAt : null,
+          lastSentEmail: legacyDelivery ? legacyEmail : null,
+          lastSentSubject: legacySubject,
+          lastGmailMessageId: legacyMessageId,
+          bouncedAt: legacyStatus === "BOUNCED" ? legacySentAt : null,
+          lastDeliveryError: legacyError
+        }
+      });
       addToMaps(company, maps);
       created += 1;
+      if (legacyDelivery) legacyDeliveriesImported += 1;
       continue;
     }
 
     const matchedByLead = existing.leadId === leadId;
     const archiveRow = leadId.startsWith("GRM-");
-    const status = delivery
-      ? nextStatus
-      : terminalStatuses.has(existing.status)
-        ? existing.status
-        : existing.email && !email && nextStatus === CompanyStatus.NO_CONTACT ? existing.status : nextStatus;
+    let status = nextStatus;
+    if (terminalStatuses.has(existing.status)) status = existing.status;
+    else if (existing.status === CompanyStatus.BOUNCED && !sourceEmailChangedAfterBounce) status = CompanyStatus.BOUNCED;
+    else if (existing.email && !email && nextStatus === CompanyStatus.NO_CONTACT) status = existing.status;
+
     const company = await db.company.update({
       where: { id: existing.id },
       data: {
@@ -249,12 +294,19 @@ export async function syncAllGrowthRadar(userId: string) {
         sourceUrl: data.sourceUrl ?? existing.sourceUrl,
         verifiedAt: data.verifiedAt ?? existing.verifiedAt,
         status,
-        notes: data.notes ?? existing.notes
+        notes: data.notes ?? existing.notes,
+        lastSentAt: existing.lastSentAt ?? (legacyStatus === "SENT" ? legacySentAt : null),
+        lastSentEmail: existing.lastSentEmail ?? (legacyDelivery ? legacyEmail : null),
+        lastSentSubject: existing.lastSentSubject ?? legacySubject,
+        lastGmailMessageId: existing.lastGmailMessageId ?? legacyMessageId,
+        bouncedAt: existing.bouncedAt ?? (legacyStatus === "BOUNCED" ? legacySentAt : null),
+        lastDeliveryError: existing.lastDeliveryError ?? legacyError
       }
     });
     addToMaps(company, maps);
     updated += 1;
     if (!matchedByLead) deduplicated += 1;
+    if (legacyDelivery) legacyDeliveriesImported += 1;
   }
 
   const details = {
@@ -269,7 +321,9 @@ export async function syncAllGrowthRadar(userId: string) {
     campaigns: sources.campaignCount,
     leadSources: sources.leadUrls.length,
     contactSources: sources.contactUrls.length,
-    deliveryLedgerRows: ledgerRows.length
+    legacyLedgerRows: legacyLedgerRows.length,
+    legacyDeliveriesImported,
+    deliverySourceOfTruth: "postgres"
   };
   await db.activityLog.create({ data: { userId, action: "GROWTH_RADAR_SYNC", entity: "Company", details } });
   return details;
