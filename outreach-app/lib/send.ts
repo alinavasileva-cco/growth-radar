@@ -57,6 +57,7 @@ export async function sendApprovedDraft(draftId: string, userId: string) {
   if (draft.status !== DraftStatus.APPROVED && draft.status !== DraftStatus.SCHEDULED) {
     throw new Error("Письмо не одобрено");
   }
+  if (draft.company.status === CompanyStatus.SENT) throw new Error("Этой компании уже отправлялось письмо");
   if (!draft.company.email) throw new Error("У компании нет email");
   await checkLimits(userId, draft.company.email);
   const result = await sendRaw(userId, draft.company.email, draft.subject, draft.body);
