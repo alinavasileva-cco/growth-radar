@@ -1,0 +1,17 @@
+{
+  "run_id": "N5K-20260831-537",
+  "campaign_id": "new_5000",
+  "updated_at": "2026-08-31T07:58:07+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260831-072700-jobs.json",
+      "blob_sha": "d341b56daa43698cf7f2bab5450cf16ad353484e",
+      "result": "CONSUMED_WITH_CANONICAL_DEDUP",
+      "worker_prewrite_qualified": 1,
+      "physical_net_qualified": 0,
+      "note": "ПолиАэрПак rejected by final physical canonical guard: existing N5K-0480, INN 7743641590, OGRN 5077746710828. Immutable staging retained."
+    }
+  ],
+  "own_discovery_physical_net_qualified": 1,
+  "outreach_sent": 0
+}
