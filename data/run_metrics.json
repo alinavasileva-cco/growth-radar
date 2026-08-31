@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-31T15:54:25+03:00",
+  "generated_at": "2026-08-31T16:04:18+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260831-542R1",
   "current_run_id": "N5K-20260831-542R1",
-  "current_run_status": "COMPLETED",
+  "current_run_status": "REPAIR_REQUIRED",
   "canonical_pool_verified": 556,
   "contactable_verified": 556,
   "qualified_staged_not_counted": 0,
@@ -13,7 +13,7 @@
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": null,
+  "blocker": "CURRENT_WORKING_CONFIG authoritative header still identifies 541R1; metadata-only sync remains required.",
   "run_542R1": {
     "raw_discovered": 32,
     "fast_gate_passed": 8,
@@ -26,6 +26,12 @@
     "physically_integrated": 0,
     "duplicates": 3,
     "excluded": 29,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 25.0,
+    "previous_run_541R1_qualified_raw_pct": 2.1277,
+    "previous_run_541R1_fast_gate_raw_pct": 23.4043,
+    "qualified_raw_delta_pp": -2.1277,
+    "fast_gate_raw_delta_pp": 1.5957,
     "lane_metrics": [
       {
         "lane": "jobs_worker_20260831_152540",
@@ -36,8 +42,11 @@
         "signal": 2,
         "lpr": 2,
         "contact": 2,
-        "qualified": 2,
-        "duplicate_plus_early_reject": 29
+        "prewrite_qualified": 2,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 31,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 22.5806
       },
       {
         "lane": "jobs_worker_20260831_143058_recovered_observation",
@@ -48,9 +57,19 @@
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "qualified": 1,
-        "duplicate_plus_early_reject": 0
+        "prewrite_qualified": 1,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 1,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 100.0
       }
-    ]
+    ],
+    "last_three_completed_run_aggregate_efficiency": [
+      {"run_id":"N5K-20260831-539","raw":127,"fast_gate":14,"qualified":2,"qualified_raw_pct":1.5748,"fast_gate_raw_pct":11.0236},
+      {"run_id":"N5K-20260831-540R1","raw":17,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":23.5294},
+      {"run_id":"N5K-20260831-541R1","raw":47,"fast_gate":11,"qualified":1,"qualified_raw_pct":2.1277,"fast_gate_raw_pct":23.4043}
+    ],
+    "historical_lane_note": "Exact post-dedup per-lane qualified counts are not reconstructed for older runs where stored lane instrumentation was pre-write; aggregate values are physical post-dedup run results.",
+    "next_distribution_pct": {"jobs":5,"growth_news":25,"official_owner_ceo":20,"industry_catalog":5,"regional_investment":35,"partner_business_change":10}
   }
 }
