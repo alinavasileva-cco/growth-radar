@@ -1,0 +1,24 @@
+{
+  "run_id": "N5K-20260831-544",
+  "updated_at": "2026-08-31T18:22:20+03:00",
+  "campaign_id": "new_5000",
+  "workers": [
+    {
+      "path": "data/pending_workers/jobs/20260831-172627-jobs.json",
+      "blob_sha": "b280be317c8daa642c16985c1f642d221dc9256d",
+      "result": "CONSUMED_METRICS_ONLY_FAIL_CLOSED",
+      "note": "Worker supplied 26 distinct raw observations, 0 fast_gate and 0 qualified. Preflight was incomplete and no worker candidate was promoted. Immutable staging retained for audit."
+    }
+  ],
+  "physical_canonical_after_cycle": 557,
+  "physical_contactable_after_cycle": 557,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
+  "late_arriving_not_consumed_this_run": [
+    "data/pending_workers/jobs/20260831-182457-jobs.json",
+    "data/pending_workers/growth_news/20260831-1832-growth-news-prequalified.json"
+  ],
+  "outreach_sent": 0
+}
