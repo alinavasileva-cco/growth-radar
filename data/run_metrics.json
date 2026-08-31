@@ -3,7 +3,7 @@
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260831-546",
   "current_run_id": "N5K-20260831-546",
-  "current_run_status": "COMPLETED",
+  "current_run_status": "COMPLETED_POST_DEDUP_REPAIRED",
   "canonical_pool_verified": 560,
   "contactable_verified": 560,
   "qualified_staged_not_counted": 0,
@@ -26,37 +26,17 @@
     "physically_integrated": 0,
     "duplicates": 1,
     "excluded": 42,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 9.302326,
     "lane_metrics": [
-      {
-        "lane": "jobs_worker_20260831_192500",
-        "raw": 39,
-        "fast_gate": 0,
-        "size": 0,
-        "legal": 0,
-        "signal": 0,
-        "lpr": 0,
-        "contact": 0,
-        "qualified": 0,
-        "duplicate_early_reject": 39,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 0.0,
-        "decision": "CUT_5_PERCENT_PROBE_ONLY; no deep-check after zero fast-gate survivors"
-      },
-      {
-        "lane": "regional_investment_growth_fresh",
-        "raw": 4,
-        "fast_gate": 4,
-        "size": 1,
-        "legal": 1,
-        "signal": 1,
-        "lpr": 1,
-        "contact": 1,
-        "qualified": 1,
-        "duplicate_early_reject": 3,
-        "qualified_raw_pct": 25.0,
-        "fast_gate_raw_pct": 100.0,
-        "decision": "BOOST_NEXT_RUN_WITH_SMALL_SAMPLE_CAVEAT"
-      }
-    ]
+      {"lane":"jobs_worker_20260831_192500","raw":39,"fast_gate":0,"size":0,"legal":0,"signal":0,"lpr":0,"contact":0,"prewrite_qualified":0,"qualified":0,"duplicate_early_reject":39,"qualified_raw_pct":0.0,"fast_gate_raw_pct":0.0},
+      {"lane":"regional_investment_growth_fresh","raw":4,"fast_gate":4,"size":1,"legal":1,"signal":1,"lpr":1,"contact":1,"prewrite_qualified":1,"qualified":0,"duplicate_early_reject":4,"qualified_raw_pct":0.0,"fast_gate_raw_pct":100.0}
+    ],
+    "previous_three_aggregate": [
+      {"run_id":"N5K-20260831-543","raw":34,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.941176,"fast_gate_raw_pct":14.705882},
+      {"run_id":"N5K-20260831-544","raw":38,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":10.526316},
+      {"run_id":"N5K-20260831-545","raw":18,"fast_gate":6,"qualified":3,"qualified_raw_pct":16.666667,"fast_gate_raw_pct":33.333333}
+    ],
+    "delta_vs_previous_hour": {"qualified_raw_pp":-16.666667,"fast_gate_raw_pp":-24.031008,"net_new_previous":3,"net_new_current":0}
   }
 }

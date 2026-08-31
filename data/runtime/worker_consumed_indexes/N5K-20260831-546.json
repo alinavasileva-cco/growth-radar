@@ -1,0 +1,22 @@
+{
+  "run_id": "N5K-20260831-546",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-31T20:02:51+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260831-192500-jobs.json",
+      "blob_sha": "0c415ab697e851c8d93e6c9626c10e15fb0d8de4",
+      "result": "CONSUMED_METRICS_ONLY_FAIL_CLOSED",
+      "raw": 39,
+      "fast_gate": 0,
+      "qualified": 0,
+      "note": "Fresh immutable worker staging ingested first. Worker preflight incomplete; fail-closed; no lead record promoted."
+    }
+  ],
+  "canonical_result": {
+    "prewrite_candidate": "Борус / ООО «БОРУС»",
+    "result": "CANONICAL_DUPLICATE",
+    "dedup_keys": ["INN 2464149893","OGRN 1192468028070","exact legal name"],
+    "net_new": 0
+  }
+}
