@@ -17,39 +17,37 @@
   "current_run_id": "N5K-20260831-536",
   "last_run_id": "N5K-20260831-536",
   "latest_completed_run": "N5K-20260831-536",
-  "canonical_integration_run_id": "N5K-20260831-535R1",
-  "hourly_parent_run_id": "N5K-20260831-534",
-  "hourly_baseline_count": 550,
-  "hourly_net_new": 2,
+  "canonical_integration_run_id": "N5K-20260831-536",
+  "hourly_baseline_count": 552,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
-  "pending_run_534": {
-    "physical_net_new": 0,
-    "raw": 34,
-    "fast_gate": 3,
-    "size": 1,
-    "legal": 1,
-    "signal": 1,
-    "lpr": 1,
+  "latest_run_efficiency": {
+    "raw": 23,
+    "fast_gate": 2,
+    "size": 2,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 2,
     "contact": 1,
     "qualified": 0,
     "duplicates": 1,
-    "excluded": 33,
+    "excluded": 22,
     "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 8.8235,
-    "delta_vs_533R1_fast_gate_raw_pp": 2.7011,
-    "worker_duplicate": "N5K-0387",
-    "next_distribution_pct": {
-      "jobs": 5,
-      "growth_news": 25,
-      "official_owner_ceo": 35,
-      "industry_catalog": 5,
-      "regional_investment": 20,
-      "partner_business_change": 10
-    }
+    "fast_gate_raw_pct": 8.6957,
+    "delta_vs_previous_qualified_raw_pp": -5.5556,
+    "delta_vs_previous_fast_gate_raw_pp": 3.1401
+  },
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 30,
+    "official_owner_ceo": 30,
+    "industry_catalog": 5,
+    "regional_investment": 20,
+    "partner_business_change": 10
   },
   "fresh_staging": null,
   "repair_required": null,
-  "note": "N5K-20260831-536 completed after physical integration: +0 net new; canonical/contactable 552/552; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260831-536 completed after physical integration guard: +0 net new; Politaks skipped by physical INN+OGRN dedup; canonical/contactable 552/552; integrity PASS; orphan 0/0; staged 0; outreach 0. Jobs remains 5% probe-only for next 3 runs."
 }
