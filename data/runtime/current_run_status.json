@@ -14,12 +14,19 @@
   },
   "funnel": {
     "discovered": 18,
+    "raw": 18,
     "fast_gate_passed": 6,
+    "fast_gate": 6,
     "size_check_passed": 3,
+    "size": 3,
     "legal_match_passed": 3,
+    "legal": 3,
     "signal_confirmed": 3,
+    "signal": 3,
     "lpr_identified": 3,
+    "lpr": 3,
     "contact_route_found": 3,
+    "contact": 3,
     "qualified": 3,
     "duplicates": 0,
     "excluded": 15
@@ -34,7 +41,8 @@
       "qualified": 0,
       "duplicate_plus_early_reject": 10,
       "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 30.0
+      "fast_gate_raw_pct": 30.0,
+      "action": "CUT: remain 5% probe-only because duplicate+early-reject is 100% and net qualified is 0."
     },
     {
       "lane": "growth_news_worker_prequalified",
@@ -46,7 +54,8 @@
       "duplicate_plus_early_reject": 0,
       "qualified_raw_pct": 100.0,
       "fast_gate_raw_pct": 100.0,
-      "note": "Only the 3 materialized deep-checked candidates are counted; upstream raw not stored in this staging file and was not reconstructed."
+      "action": "BOOST next run; strongest net-new lane. Sample is only n=3, so do not treat 100% as stable long-run conversion.",
+      "note": "Only the 3 materialized deep-checked candidates are counted; upstream raw was not stored in this staging file and was not reconstructed."
     },
     {
       "lane": "canonical_writer_fresh_growth_scan",
@@ -58,14 +67,49 @@
       "duplicate_plus_early_reject": 5,
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 0.0,
+      "action": "Do not repeat this exact source set; rotate to low-overlap growth/official sources next run.",
       "note": "Fresh 2026 growth/expansion scan; none promoted without complete deep-funnel proof."
     }
   ],
+  "efficiency": {
+    "overall": {
+      "qualified_raw_pct": 16.666667,
+      "fast_gate_raw_pct": 33.333333
+    },
+    "previous_runs": [
+      {"run_id":"N5K-20260831-542R1","raw":32,"fast_gate":8,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":25.0},
+      {"run_id":"N5K-20260831-543","raw":34,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.941176,"fast_gate_raw_pct":14.705882},
+      {"run_id":"N5K-20260831-544","raw":38,"fast_gate":4,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":10.526316}
+    ],
+    "previous_hour_delta": {
+      "qualified_raw_pp": 16.666667,
+      "fast_gate_raw_pp": 22.807017,
+      "qualified_delta": 3
+    },
+    "historical_lane_note": "Exact post-dedup per-lane metrics for all of the previous 3 runs are not consistently stored; they were not reconstructed or invented. Aggregate previous-run metrics are preserved above.",
+    "lane_actions": {
+      "jobs": "CUT: 5% probe-only; current duplicate+early-reject=100% and 0 qualified.",
+      "growth_news": "BOOST to 45%; produced all 3 physical net-new qualified in current run.",
+      "official_owner_ceo": "Keep 25%; prioritize fresh owner/CEO/company transformation sources and use as corroboration lane.",
+      "industry_catalog": "Keep <=5%; exhibition/catalog presence alone never SIGNAL.",
+      "regional_investment": "Keep cut at 5% for remaining probe period after prior consecutive zero-qualified runs.",
+      "partner_business_change": "15%; rotate to fresh low-overlap change signals."
+    }
+  },
+  "next_run_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 45,
+    "official_owner_ceo": 25,
+    "industry_catalog": 5,
+    "regional_investment": 5,
+    "partner_business_change": 15
+  },
   "qualified_companies": [
     "Ивановская текстильная компания",
     "ЭФЭР",
     "Завод карбидов и ферросплавов"
   ],
+  "staged_qualified": 0,
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
