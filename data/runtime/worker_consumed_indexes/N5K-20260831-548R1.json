@@ -1,0 +1,44 @@
+{
+  "run_id": "N5K-20260831-548R1",
+  "campaign_id": "new_5000",
+  "recorded_at": "2026-08-31T22:37:05+03:00",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260831-211840-jobs.json",
+      "blob_sha": "6ca3c00f63ef85f1f489fc68e67a8f599d3e252d",
+      "result": "CONSUMED_METRICS_ONLY_PREFLIGHT_BLOCKED",
+      "repo_dedup_confirmed_raw": 0,
+      "source_level_named_observations_min": 40,
+      "fast_gate": 0,
+      "qualified": 0,
+      "note": "Historical pending directory truncation blocked worker preflight; source-level observations were not promoted or counted as dedup-confirmed raw."
+    },
+    {
+      "path": "data/pending_workers/jobs/20260831-222100-jobs.json",
+      "blob_sha": "5ba418f6e8f95bca6f840ad47705694dcf46d122",
+      "result": "CONSUMED_METRICS_ONLY_PREFLIGHT_BLOCKED",
+      "repo_dedup_confirmed_raw": 0,
+      "source_level_observations": 19,
+      "fast_gate": 0,
+      "qualified": 0,
+      "note": "Historical pending directory truncation blocked worker preflight; 19 named source observations were not promoted or counted as dedup-confirmed raw."
+    }
+  ],
+  "recovery_result": {
+    "independent_current_source_deep_check": ["ПолиАэрПак / ООО «ТОРГОВЫЙ ДОМ «ПОЛИАЭРПАК»"],
+    "prewrite_qualified": 1,
+    "integrated": [],
+    "physical_duplicates": [
+      {
+        "candidate": "ПолиАэрПак / ООО «ТОРГОВЫЙ ДОМ «ПОЛИАЭРПАК»",
+        "dedup_keys": ["INN 7743641590", "OGRN 5077746710828"]
+      }
+    ],
+    "net_new": 0,
+    "canonical_contactable_after": "561/561",
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "outreach": 0
+  }
+}
