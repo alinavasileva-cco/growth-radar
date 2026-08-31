@@ -9,7 +9,7 @@ async function checkLimits(userId: string, recipient: string, ignoreDuplicate = 
   const settings = await db.applicationSettings.findUnique({ where: { userId } });
   const start = new Date();
   start.setHours(0, 0, 0, 0);
-  const sentToday = await db.sentEmail.count({ where: { userId, sentAt: { gte: start } } });
+  const sentToday = await db.company.count({ where: { userId, lastSentAt: { gte: start } } });
   if (sentToday >= (settings?.dailyLimit ?? 15)) throw new Error("Достигнут дневной лимит");
 
   const suppressed = await db.suppressionList.findUnique({ where: { userId_email: { userId, email: recipient } } });
@@ -20,9 +20,13 @@ async function checkLimits(userId: string, recipient: string, ignoreDuplicate = 
     if (duplicate) throw new Error("На этот адрес уже отправлялось письмо");
   }
 
-  const last = await db.sentEmail.findFirst({ where: { userId }, orderBy: { sentAt: "desc" } });
+  const lastCompany = await db.company.findFirst({
+    where: { userId, lastSentAt: { not: null } },
+    orderBy: { lastSentAt: "desc" },
+    select: { lastSentAt: true }
+  });
   const interval = (settings?.minimumIntervalMin ?? 10) * 60_000;
-  if (last && Date.now() - last.sentAt.getTime() < interval) {
+  if (lastCompany?.lastSentAt && Date.now() - lastCompany.lastSentAt.getTime() < interval) {
     throw new Error("Минимальный интервал между письмами ещё не прошёл");
   }
 }
@@ -57,10 +61,18 @@ export async function sendApprovedDraft(draftId: string, userId: string) {
   if (draft.status !== DraftStatus.APPROVED && draft.status !== DraftStatus.SCHEDULED) {
     throw new Error("Письмо не одобрено");
   }
-  if (draft.company.status === CompanyStatus.SENT) throw new Error("Этой компании уже отправлялось письмо");
+  if (draft.company.status === CompanyStatus.SENT || draft.company.lastSentAt) {
+    throw new Error("Этой компании уже отправлялось письмо");
+  }
+  const companyDuplicate = await db.sentEmail.findFirst({
+    where: { userId, draft: { companyId: draft.companyId } }
+  });
+  if (companyDuplicate) throw new Error("Этой компании уже отправлялось письмо");
   if (!draft.company.email) throw new Error("У компании нет email");
+
   await checkLimits(userId, draft.company.email);
   const result = await sendRaw(userId, draft.company.email, draft.subject, draft.body);
+  const sentAt = new Date();
 
   await db.$transaction([
     db.sentEmail.create({
@@ -70,13 +82,41 @@ export async function sendApprovedDraft(draftId: string, userId: string) {
         gmailMessageId: result.gmailMessageId,
         gmailThreadId: result.gmailThreadId,
         recipient: draft.company.email,
-        subject: draft.subject
+        subject: draft.subject,
+        sentAt
       }
     }),
     db.emailDraft.update({ where: { id: draftId }, data: { status: DraftStatus.SENT, gmailDraftId: result.gmailDraftId } }),
-    db.company.update({ where: { id: draft.companyId }, data: { status: CompanyStatus.SENT } }),
+    db.company.update({
+      where: { id: draft.companyId },
+      data: {
+        status: CompanyStatus.SENT,
+        lastSentAt: sentAt,
+        lastSentEmail: draft.company.email,
+        lastSentSubject: draft.subject,
+        lastGmailMessageId: result.gmailMessageId,
+        lastGmailThreadId: result.gmailThreadId,
+        bouncedAt: null,
+        lastDeliveryError: null
+      }
+    }),
     db.scheduledEmail.updateMany({ where: { draftId, status: "PENDING" }, data: { status: "CANCELLED" } }),
-    db.activityLog.create({ data: { userId, action: "EMAIL_SENT", entity: "EmailDraft", entityId: draftId } })
+    db.activityLog.create({
+      data: {
+        userId,
+        action: "EMAIL_SENT",
+        entity: "Company",
+        entityId: draft.companyId,
+        details: {
+          draftId,
+          recipient: draft.company.email,
+          subject: draft.subject,
+          gmailMessageId: result.gmailMessageId,
+          gmailThreadId: result.gmailThreadId,
+          sentAt: sentAt.toISOString()
+        }
+      }
+    })
   ]);
   return result;
 }
