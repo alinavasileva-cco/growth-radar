@@ -1,0 +1,5 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0718,N5K-0718-C01,Центр упаковки / ПК ЦУП,7451010117,,Корпоративный маршрут,+7 (351) 945-03-62,PHONE,CORPORATE,official company site,https://pk-cup.ru/,NO,HIGH,2026-08-31,Опубликованный корпоративный телефон,N5K-20260831-539,new_5000
+N5K-0718,N5K-0718-C02,Центр упаковки / ПК ЦУП,7451010117,,Корпоративный маршрут,info@pk-cup.ru,EMAIL,CORPORATE,official company site,https://pk-cup.ru/,NO,HIGH,2026-08-31,Опубликованный корпоративный email,N5K-20260831-539,new_5000
+N5K-0719,N5K-0719-C01,НПО БИТ / Biomedical Innovative Technologies,6950002832,,Корпоративный маршрут,8 800 550-76-83,PHONE,CORPORATE,official company site,https://npobit.com/,NO,HIGH,2026-08-31,Опубликованный корпоративный телефон,N5K-20260831-539,new_5000
+N5K-0719,N5K-0719-C02,НПО БИТ / Biomedical Innovative Technologies,6950002832,,Корпоративный маршрут,contract@npobit.com,EMAIL,CORPORATE_B2B,official company site,https://npobit.com/,NO,HIGH,2026-08-31,Опубликованный B2B/contract email,N5K-20260831-539,new_5000
