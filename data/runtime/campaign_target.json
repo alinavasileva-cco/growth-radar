@@ -13,10 +13,10 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-08-31T14:02:56+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260831-540R1",
+  "last_completed_run_id": "N5K-20260831-541R1",
   "current_run_id": "N5K-20260831-541R1",
   "last_run_id": "N5K-20260831-541R1",
-  "latest_completed_run": "N5K-20260831-540R1",
+  "latest_completed_run": "N5K-20260831-541R1",
   "canonical_integration_run_id": "N5K-20260831-541R1",
   "hourly_baseline_count": 555,
   "hourly_net_new": 1,
@@ -45,7 +45,7 @@
     "regional_investment": 35,
     "partner_business_change": 10
   },
-  "fresh_staging": "RUN N5K-20260831-541R1 physically integrated; pending cleared; qualified_staged_not_counted=0; no newer worker commit found after 2026-08-31T13:21+03:00",
-  "repair_required": "CURRENT_WORKING_CONFIG metadata header sync pending; physical canonical data remains 556/556 with integrity PASS",
-  "note": "RUN 541R1 physical integration produced +1 net new (SULTAN). TATRUM was blocked by final physical dedup. Post-dedup lane metrics repaired; CURRENT_WORKING_CONFIG still reports RUN 540R1 / 555 and must be synced without altering criteria/history."
+  "fresh_staging": "RUN N5K-20260831-541R1 integrated physically; pending cleared; qualified_staged_not_counted=0; no newer worker commit found after 2026-08-31T13:21+03:00",
+  "repair_required": null,
+  "note": "RUN 541R1 completed after post-dedup lane repair and physical CURRENT_WORKING_CONFIG sync: +1 net new SULTAN; TATRUM blocked by final physical dedup; canonical/contactable 556/556; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
