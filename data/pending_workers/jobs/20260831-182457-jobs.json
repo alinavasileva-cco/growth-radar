@@ -1,0 +1,137 @@
+{
+  "worker": "READ+DISCOVERY",
+  "lane": "jobs",
+  "created_at": "2026-08-31T18:24:57+03:00",
+  "baseline_head": "80f250cfb920dabbb7eb4021b3e12bc92389bdb7",
+  "config_version": "2026-08-31T17:05:15+03:00",
+  "canonical_contactable": "557/557",
+  "integrity": "PASS",
+  "outreach": 0,
+  "canonical_writer_run": false,
+  "canonical_write": false,
+  "preflight": {
+    "current_working_config_read": true,
+    "pending_root_listed": true,
+    "jobs_tree_listed": true,
+    "all_pending_bodies_read": false,
+    "complete_canonical_dedup_key_materialization": false,
+    "reason": "GitHub connector returned a truncated historical jobs tree/body corpus, so body-by-body verification of every data/pending_workers/** file could not be proven. Fail-closed: no candidate promoted to QUALIFIED."
+  },
+  "source_batches": [
+    {
+      "batch": "Kazan/jobs",
+      "source_types": ["job boards"],
+      "raw_observations": null,
+      "duplicate_early_reject_rate": null,
+      "qualified": 0,
+      "note": "Search backend did not preserve reliable per-result batch attribution; metrics not reconstructed."
+    },
+    {
+      "batch": "Yekaterinburg/jobs",
+      "source_types": ["job boards"],
+      "raw_observations": null,
+      "duplicate_early_reject_rate": null,
+      "qualified": 0,
+      "note": "Fresh ORUM CCO signal deep-checked; legal status/process and incomplete pending guard prevented qualification."
+    },
+    {
+      "batch": "Novosibirsk/jobs",
+      "source_types": ["job boards", "official career/company pages"],
+      "raw_observations": null,
+      "duplicate_early_reject_rate": null,
+      "qualified": 0,
+      "note": "Fresh Ekosmotr and AYS GROUP signals reviewed. Ekosmotr legal entity failed SIZE; AYS legal mapping was not sufficiently resolved for qualification."
+    },
+    {
+      "batch": "Nizhny Novgorod/jobs",
+      "source_types": ["job boards"],
+      "raw_observations": null,
+      "duplicate_early_reject_rate": null,
+      "qualified": 0,
+      "note": "Previously staged Promizolyatsiya appeared again and was not treated as new."
+    },
+    {
+      "batch": "Rostov-on-Don/jobs",
+      "source_types": ["job boards"],
+      "raw_observations": null,
+      "duplicate_early_reject_rate": null,
+      "qualified": 0,
+      "note": "No candidate passed the full fail-closed chain in this run."
+    }
+  ],
+  "worker_funnel": {
+    "raw_distinct_employer_observations": 10,
+    "fast_gate": 3,
+    "deep_check": 3,
+    "size": 1,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "deep_checks": [
+    {
+      "brand": "Экосмотр",
+      "legal_name": "ООО \"ТЕХОСМОТР ЭКОСМОТР\"",
+      "inn": "5406821110",
+      "ogrn": "1225400014344",
+      "decision": "REJECT_SIZE",
+      "facts": {
+        "employees_2025": 6,
+        "revenue_2024_rub": 1739000,
+        "current_director": "Борисенко Андрей Николаевич",
+        "fresh_signal": "Коммерческий директор (CCO), 2026-08-07, Новосибирск"
+      },
+      "evidence_urls": [
+        "https://nesiditsa.ru/vacancy/136008554",
+        "https://ekosmotr.ru/about/",
+        "https://umax.ru/operator/16080",
+        "https://reputation.ru/ogrn/1225400014344"
+      ]
+    },
+    {
+      "brand": "Компания ОРУМ",
+      "legal_name": "ООО КОМПАНИЯ \"ОРУМ\"",
+      "inn": "6670284408",
+      "ogrn": "1106670005310",
+      "decision": "REJECT_LEGAL",
+      "facts": {
+        "revenue_2025_rub": 1840889000,
+        "employees": 85,
+        "current_director": "Прягаев Сергей Валерьевич",
+        "legal_status": "в процессе реорганизации",
+        "fresh_signal": "Коммерческий директор, 2026-08-05, Екатеринбург"
+      },
+      "evidence_urls": [
+        "https://ekaterinburg.cataloxy.ru/rabota/vacancy1126996688_kommercheskiy-direktor.htm",
+        "https://saby.ru/profile/6670284408-667901001",
+        "https://companies.rbc.ru/id/1106670005310-ooo-kompaniya-orum/"
+      ]
+    },
+    {
+      "brand": "AYS GROUP",
+      "legal_name": null,
+      "inn": null,
+      "ogrn": null,
+      "decision": "REJECT_LEGAL_MAPPING_UNRESOLVED",
+      "facts": {
+        "fresh_signal": "Коммерческий директор (CCO), 2026-08-17, Новосибирск",
+        "group_description": "управляющая компания в гостиничном бизнесе, сеть около 20 отелей / около 1300 номеров"
+      },
+      "evidence_urls": [
+        "https://novosibirsk.cataloxy.ru/rabota/vacancy1128034806_kommercheskiy-direktor-cco.htm",
+        "https://novosibirsk.cataloxy.ru/firms/www.ayshotel.ru.htm"
+      ]
+    }
+  ],
+  "qualified_candidates": [],
+  "staging_mode": "metrics_only",
+  "notes": [
+    "CURRENT_WORKING_CONFIG criteria were not changed or weakened.",
+    "No canonical master/contactable/contacts/evidence/runtime/campaign files were written.",
+    "No canonical writer was run.",
+    "No outreach was performed.",
+    "140-150 raw target was not fabricated; only observations actually surfaced and checked were counted."
+  ]
+}
