@@ -50,12 +50,47 @@
       "lpr": 1,
       "contact": 1,
       "prewrite_qualified": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 11,
-      "qualified_raw_pct": 8.3333,
-      "fast_gate_raw_pct": 33.3333
+      "qualified": 0,
+      "duplicate_plus_early_reject": 12,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 33.3333,
+      "post_dedup_note": "МолоПак failed the physical integration guard as an existing canonical company by INN 7743513365 and OGRN 1037739986899; pre-write qualified is not counted as net QUALIFIED."
     }
   ],
+  "aggregate_efficiency": {
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 10.5263,
+    "previous_run_543_qualified_raw_pct": 2.9412,
+    "previous_run_543_fast_gate_raw_pct": 14.7059,
+    "qualified_raw_delta_pp": -2.9412,
+    "fast_gate_raw_delta_pp": -4.1796,
+    "net_new_delta": -1
+  },
+  "last_three_completed_run_aggregate_efficiency": [
+    {"run_id":"N5K-20260831-541R1","raw":47,"fast_gate":11,"qualified":1,"qualified_raw_pct":2.1277,"fast_gate_raw_pct":23.4043},
+    {"run_id":"N5K-20260831-542R1","raw":32,"fast_gate":8,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":25.0},
+    {"run_id":"N5K-20260831-543","raw":34,"fast_gate":5,"qualified":1,"qualified_raw_pct":2.9412,"fast_gate_raw_pct":14.7059}
+  ],
+  "historical_lane_note": "Exact post-dedup per-lane qualified counts are not reconstructed for older runs where stored lane instrumentation was pre-write. Aggregate values above are physical post-dedup results.",
+  "adaptive_decision": {
+    "jobs": "CUT_TO_5_PERCENT_PROBE_ONLY_FOR_NEXT_3_RUNS: current qualified/raw=0%, fast_gate/raw=0%, duplicate+early-reject=100%; broad jobs allocation is prohibited by the adaptive thresholds.",
+    "regional_investment": "CUT_DEEP_CHECK_TO_5_PERCENT: regional-investment produced 0 net QUALIFIED in RUN 543 and again no net QUALIFIED in RUN 544 after physical dedup; shift deep-check time to fresher low-overlap growth/business-change sources.",
+    "growth_news": "AMPLIFY_FOR_NEXT_RUN: a fresh worker arriving after RUN 544 start surfaced three evidence-rich prequalified expansion candidates, none counted yet because full global pending dedup was fail-closed. They must be ingested first next RUN and independently reverified before any canonical write.",
+    "reason": "Overall qualified/raw and fast_gate/raw both fell versus RUN 543 and net-new is 0, so the previous distribution is not repeated automatically."
+  },
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 40,
+    "official_owner_ceo": 25,
+    "industry_catalog": 5,
+    "regional_investment": 5,
+    "partner_business_change": 20
+  },
+  "late_arriving_worker_staging": [
+    "data/pending_workers/jobs/20260831-182457-jobs.json",
+    "data/pending_workers/growth_news/20260831-1832-growth-news-prequalified.json"
+  ],
+  "late_arriving_worker_note": "These files were committed after RUN 544 had already started. They are not retroactively mixed into RUN 544 metrics and are mandatory first input for the next RUN.",
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
