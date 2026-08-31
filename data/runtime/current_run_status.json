@@ -1,9 +1,9 @@
 {
   "run_id": "N5K-20260831-541R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
-  "updated_at": "2026-08-31T13:41:36+03:00",
-  "stage": "COMPLETE",
+  "status": "REPAIR_REQUIRED",
+  "updated_at": "2026-08-31T14:02:56+03:00",
+  "stage": "CONFIG_SYNC_PENDING",
   "new_cycle": {
     "baseline_count": 555,
     "target_count": 5000,
@@ -35,7 +35,10 @@
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
-      "duplicate_plus_early_reject": 21
+      "prewrite_qualified": 1,
+      "duplicate_plus_early_reject": 21,
+      "qualified_raw_pct": 4.5455,
+      "fast_gate_raw_pct": 27.2727
     },
     {
       "lane": "jobs_worker_20260831_132000",
@@ -46,8 +49,12 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "duplicate_plus_early_reject": 24
+      "qualified": 0,
+      "prewrite_qualified": 1,
+      "duplicate_plus_early_reject": 25,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 20.0,
+      "postwrite_note": "TATRUM blocked by final physical dedup on INN+OGRN+brand/domain"
     }
   ],
   "qualified_companies": [
@@ -60,5 +67,5 @@
   "physical_master_state": "556_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "556_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "CURRENT_WORKING_CONFIG header is stale at RUN 540R1 / 555 while physical runtime and campaign are RUN 541R1 / 556. Canonical criteria are unchanged; config metadata sync is pending."
 }
