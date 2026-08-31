@@ -6,10 +6,13 @@ import { discoverGrowthRadarSources } from "@/lib/growth-radar-sources";
 
 type Row = Record<string, string>;
 
+const SEND_LEDGER_URL = "https://raw.githubusercontent.com/alinavasileva-cco/growth-radar/feature/outreach-app/outreach-app/data/send_ledger.csv";
+
 const terminalStatuses = new Set<CompanyStatus>([
   CompanyStatus.SENT,
   CompanyStatus.REPLIED,
   CompanyStatus.DECLINED,
+  CompanyStatus.BOUNCED,
   CompanyStatus.EXCLUDED
 ]);
 
@@ -59,6 +62,18 @@ function contactIndex(rows: Row[]) {
   return index;
 }
 
+function deliveryIndexes(rows: Row[]) {
+  const byLead = new Map<string, Row>();
+  const byEmail = new Map<string, Row>();
+  for (const row of rows) {
+    const leadId = clean(row.lead_id);
+    const email = clean(row.email)?.toLowerCase();
+    if (leadId) byLead.set(leadId, row);
+    if (email) byEmail.set(email, row);
+  }
+  return { byLead, byEmail };
+}
+
 function bestContact(rows: Row[] | undefined, channel: string): Row | undefined {
   const rank = (value?: string | null) => value === "HIGH" ? 3 : value === "MEDIUM" ? 2 : value === "LOW" ? 1 : 0;
   return rows
@@ -100,12 +115,14 @@ function addToMaps(company: Company, maps: {
 
 export async function syncAllGrowthRadar(userId: string) {
   const sources = await discoverGrowthRadarSources();
-  const [leadGroups, contactGroups] = await Promise.all([
+  const [leadGroups, contactGroups, ledgerRows] = await Promise.all([
     Promise.all(sources.leadUrls.map(fetchCsv)),
-    Promise.all(sources.contactUrls.map(fetchCsv))
+    Promise.all(sources.contactUrls.map(fetchCsv)),
+    fetchCsv(SEND_LEDGER_URL).catch(() => [] as Row[])
   ]);
   const repositoryRows = leadGroups.flat();
   const contacts = contactIndex(contactGroups.flat());
+  const deliveries = deliveryIndexes(ledgerRows);
   const rowsByLead = new Map<string, Row>();
   const archiveRows = savedCompanies as Row[];
 
@@ -137,12 +154,28 @@ export async function syncAllGrowthRadar(userId: string) {
     }
 
     const inn = clean(row.INN);
-    const email = clean(row["Primary Email"])?.toLowerCase() ?? null;
+    const sourceEmail = clean(row["Primary Email"])?.toLowerCase() ?? null;
+    const delivery = deliveries.byLead.get(leadId) ?? (sourceEmail ? deliveries.byEmail.get(sourceEmail) : undefined);
+    const ledgerEmail = clean(delivery?.email)?.toLowerCase() ?? null;
+    const email = ledgerEmail ?? sourceEmail;
+    const deliveryStatus = clean(delivery?.status)?.toUpperCase();
+    const nextStatus = deliveryStatus === "SENT"
+      ? CompanyStatus.SENT
+      : deliveryStatus === "BOUNCED"
+        ? CompanyStatus.BOUNCED
+        : statusFromRow(row, email);
+
     const existing = maps.lead.get(leadId)
       ?? (inn ? maps.inn.get(inn) : undefined)
       ?? (email ? maps.email.get(email) : undefined)
       ?? maps.name.get(normalizedName(name));
-    const nextStatus = statusFromRow(row, email);
+
+    const growthRadarNote = clean(row["Final Quick Status"]) ? `Статус Growth Radar: ${clean(row["Final Quick Status"])}` : null;
+    const deliveryNote = delivery
+      ? `Доставка: ${deliveryStatus}; ${clean(delivery.email) ?? "email не указан"}; ${clean(delivery.sent_at) ?? "дата не указана"}; ${clean(delivery.subject) ?? "тема не указана"}`
+      : null;
+    const notes = [growthRadarNote, deliveryNote].filter(Boolean).join(" | ") || null;
+
     const data = {
       campaignId: clean(row["Campaign ID"]) || clean(row["Run ID"]) || (leadId.startsWith("GRM-") ? "saved_archive" : null),
       name,
@@ -169,7 +202,7 @@ export async function syncAllGrowthRadar(userId: string) {
       growthPoints: clean(row["Consulting Hypothesis"]),
       sourceUrl: clean(row["Signal Source"]) || clean(row["HH Contact"]) || clean(row["Contact Form"]) || clean(row.Website),
       verifiedAt: parseDate(row["Updated At"]) || parseDate(row["Signal Date"]),
-      notes: clean(row["Final Quick Status"]) ? `Статус Growth Radar: ${clean(row["Final Quick Status"])}` : null
+      notes
     };
 
     if (!existing) {
@@ -181,9 +214,11 @@ export async function syncAllGrowthRadar(userId: string) {
 
     const matchedByLead = existing.leadId === leadId;
     const archiveRow = leadId.startsWith("GRM-");
-    const status = terminalStatuses.has(existing.status)
-      ? existing.status
-      : existing.email && !email && nextStatus === CompanyStatus.NO_CONTACT ? existing.status : nextStatus;
+    const status = delivery
+      ? nextStatus
+      : terminalStatuses.has(existing.status)
+        ? existing.status
+        : existing.email && !email && nextStatus === CompanyStatus.NO_CONTACT ? existing.status : nextStatus;
     const company = await db.company.update({
       where: { id: existing.id },
       data: {
@@ -233,7 +268,8 @@ export async function syncAllGrowthRadar(userId: string) {
     contacts: contactGroups.flat().length,
     campaigns: sources.campaignCount,
     leadSources: sources.leadUrls.length,
-    contactSources: sources.contactUrls.length
+    contactSources: sources.contactUrls.length,
+    deliveryLedgerRows: ledgerRows.length
   };
   await db.activityLog.create({ data: { userId, action: "GROWTH_RADAR_SYNC", entity: "Company", details } });
   return details;
