@@ -1,8 +1,119 @@
 {
-  "run_id": "N5K-20260831-542R1",
-  "updated_at": "2026-08-31T15:54:25+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260831-542R1 integrated physically; canonical/contactable 556/556; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260831-543",
+  "updated_at": "2026-08-31T17:05:15+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 34,
+    "fast_gate_passed": 5,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 33
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260831_163052",
+      "raw": 26,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "prewrite_qualified": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 25,
+      "qualified_raw_pct": 3.8462,
+      "fast_gate_raw_pct": 3.8462
+    },
+    {
+      "lane": "regional_investment_fresh_20260831",
+      "raw": 8,
+      "fast_gate": 4,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "prewrite_qualified": 0,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 4,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 50.0
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0722",
+      "Brand": "ЭЛЕМЕНТ",
+      "Legal Name": "ООО \"ЭЛЕМЕНТ\"",
+      "INN": "9709045791",
+      "OGRN/OGRNIP": "1197746154077",
+      "Region": "Москва / Московская область",
+      "City": "Москва / Клин",
+      "Segment": "Производство строительных металлоконструкций",
+      "Website": "https://subelement.ru/",
+      "Revenue/Scale": "Выручка 894 773 000 ₽ за 2025 год; 83 сотрудника; собственное производство металлоконструкций",
+      "Signal Level": "S1",
+      "Signal Summary": "Свежий найм коммерческого директора для завода металлоконструкций; вакансия опубликована 29.08.2026.",
+      "Signal Date": "2026-08-29",
+      "Signal Source": "https://dreamjob.ru/employers/301902/vakansii/136463373",
+      "Owner": "Харитонова Людмила Александровна — 100%",
+      "CEO": "Харитонов Дмитрий Анатольевич",
+      "LPR": "Харитонов Дмитрий Анатольевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 499 643-53-46",
+      "Primary Email": "sale@subelement.ru",
+      "HH Contact": "https://dreamjob.ru/employers/301902/vakansii/136463373",
+      "Contact Form": "https://subelement.ru/kontakty/",
+      "Contact Type": "Опубликованный корпоративный маршрут",
+      "Contact Source": "Официальный сайт компании / DreamJob / актуальные legal-profile источники",
+      "Consulting Hypothesis": "Коммерческая функция на этапе роста: коммерческая стратегия, сегментация и развитие B2B-продаж, KPI, маржинальность и управленческий контур нового коммерческого директора.",
+      "contacts": [
+        {
+          "value": "+7 499 643-53-46",
+          "channel": "phone",
+          "type": "corporate_published",
+          "source": "Официальный сайт ООО ЭЛЕМЕНТ",
+          "url": "https://subelement.ru/kontakty/",
+          "is_lpr": false,
+          "notes": "Официальный офис продаж; опубликован компанией."
+        },
+        {
+          "value": "sale@subelement.ru",
+          "channel": "email",
+          "type": "corporate_published",
+          "source": "Официальный сайт ООО ЭЛЕМЕНТ",
+          "url": "https://subelement.ru/kontakty/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email; не реконструирован по шаблону."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО ЭЛЕМЕНТ, ИНН 9709045791, ОГРН 1197746154077, действует; гендиректор Харитонов Дмитрий Анатольевич с 11.02.2026; выручка 2025 — 894 773 000 ₽, 83 сотрудника.",
+          "url": "https://companium.ru/id/1197746154077-ehlement",
+          "source": "Companium / данные ФНС и бухгалтерской отчетности"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "29.08.2026 опубликована вакансия коммерческого директора завода ЭЛЕМЕНТ.",
+          "url": "https://dreamjob.ru/employers/301902/vakansii/136463373",
+          "source": "DreamJob"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует телефон +7 499 643-53-46 и email sale@subelement.ru.",
+          "url": "https://subelement.ru/kontakty/",
+          "source": "Официальный сайт ООО ЭЛЕМЕНТ"
+        }
+      ]
+    }
+  ],
+  "notes": "Fresh immutable worker staging ingested first. Worker preflight was incomplete, so canonical writer independently reverified the only deep-check candidate using fresh sources and sent it to the repository's physical integration guard. Fresh non-jobs discovery then sampled 8 distinct regional-investment/business-change observations; four passed fast gate but were not promoted without complete SIZE->LEGAL->SIGNAL->LPR->CONTACT evidence. Jobs remains probe-only because duplicate+early-reject is 25/26=96.15%. No exhibition/catalog presence was treated as SIGNAL. No outreach. Target 400-800 raw was not padded with weak catalogs or duplicate-heavy sources. Next distribution: jobs 5%, growth-news 25%, official-owner-CEO 20%, industry 5%, regional-investment 35%, partner-business-change 10%."
 }
