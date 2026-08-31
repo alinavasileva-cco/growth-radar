@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-31T13:41:36+03:00",
+  "generated_at": "2026-08-31T14:02:56+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260831-541R1",
+  "latest_completed_run_id": "N5K-20260831-540R1",
   "current_run_id": "N5K-20260831-541R1",
-  "current_run_status": "COMPLETED",
+  "current_run_status": "REPAIR_REQUIRED",
   "canonical_pool_verified": 556,
   "contactable_verified": 556,
   "qualified_staged_not_counted": 0,
@@ -13,7 +13,7 @@
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": null,
+  "blocker": "CURRENT_WORKING_CONFIG metadata sync pending",
   "run_541R1": {
     "raw_discovered": 47,
     "fast_gate_passed": 11,
@@ -26,6 +26,8 @@
     "physically_integrated": 1,
     "duplicates": 1,
     "excluded": 45,
+    "qualified_raw_pct": 2.1277,
+    "fast_gate_raw_pct": 23.4043,
     "lane_metrics": [
       {
         "lane": "jobs_worker_20260831_121711",
@@ -37,7 +39,10 @@
         "lpr": 1,
         "contact": 1,
         "qualified": 1,
-        "duplicate_plus_early_reject": 21
+        "prewrite_qualified": 1,
+        "duplicate_plus_early_reject": 21,
+        "qualified_raw_pct": 4.5455,
+        "fast_gate_raw_pct": 27.2727
       },
       {
         "lane": "jobs_worker_20260831_132000",
@@ -48,8 +53,12 @@
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "qualified": 1,
-        "duplicate_plus_early_reject": 24
+        "qualified": 0,
+        "prewrite_qualified": 1,
+        "duplicate_plus_early_reject": 25,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 20.0,
+        "postwrite_note": "TATRUM blocked by final physical dedup on INN+OGRN+brand/domain"
       }
     ]
   }
