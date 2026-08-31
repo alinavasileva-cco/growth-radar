@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260831-549R1",
+  "run_id": "N5K-20260901-550R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-08-31T23:53:00+03:00",
+  "updated_at": "2026-09-01T00:40:58+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 561,
@@ -26,8 +26,8 @@
   },
   "lane_metrics": [
     {
-      "lane": "jobs_worker_20260831_231736",
-      "source_level_observations": 19,
+      "lane": "jobs_worker_20260901_002030",
+      "source_level_observations": 37,
       "repo_dedup_confirmed_raw": 0,
       "fast_gate": 0,
       "size": 0,
@@ -36,7 +36,7 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
-      "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; worker observations were not promoted because complete active pending/canonical preflight was not confirmed."
+      "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; worker observations were not promoted because complete active pending/canonical preflight could not be materialized by the worker."
     }
   ],
   "qualified_companies": [],

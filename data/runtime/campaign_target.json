@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-08-31T23:53:00+03:00",
+  "updated_at": "2026-09-01T00:40:58+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260831-549R1",
-  "current_run_id": "N5K-20260831-549R1",
-  "last_run_id": "N5K-20260831-549R1",
-  "latest_completed_run": "N5K-20260831-549R1",
+  "last_completed_run_id": "N5K-20260901-550R1",
+  "current_run_id": "N5K-20260901-550R1",
+  "last_run_id": "N5K-20260901-550R1",
+  "latest_completed_run": "N5K-20260901-550R1",
   "canonical_integration_run_id": "N5K-20260831-549R1",
   "hourly_baseline_count": 561,
   "hourly_net_new": 0,
@@ -47,5 +47,5 @@
   },
   "fresh_staging": "Recovery N5K-20260831-549R1 resumed the stale hourly cycle. The fresh jobs worker at 2026-08-31T23:17:36+03:00 recorded 19 named source observations but failed closed before repo-dedup-confirmed RAW because complete active pending/canonical preflight was not confirmed. No candidate was promoted or inferred.",
   "repair_required": null,
-  "note": "N5K-20260831-549R1 completed after physical integration: +0 net new; canonical/contactable 561/561; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-550R1 completed after physical integration: +0 net new; canonical/contactable 561/561; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
