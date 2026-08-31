@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T02:50:51+03:00",
+  "generated_at": "2026-08-31T03:02:36+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260831-533R1",
   "current_run_id": "N5K-20260831-533R1",
@@ -16,6 +16,7 @@
   "blocker": null,
   "run_533R1": {
     "raw_discovered": 98,
+    "raw_scope": "source-level sum; global cross-worker distinctness unproven",
     "fast_gate_passed": 6,
     "size_check_passed": 2,
     "legal_match_passed": 2,
@@ -26,6 +27,13 @@
     "physically_integrated": 0,
     "duplicates": 2,
     "excluded": 96,
+    "overall_efficiency": {
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 6.1224,
+      "delta_vs_previous_hour_qualified_raw_pp": 0.0,
+      "delta_vs_previous_hour_fast_gate_raw_pp": -1.7723,
+      "net_qualified_change_vs_previous_hour": 0
+    },
     "lane_metrics": [
       {
         "lane": "jobs_worker_20260831_012600",
@@ -36,8 +44,12 @@
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "qualified": 1,
-        "note": "Worker-declared employer-level denominator; distinct within this worker run. Cross-worker global uniqueness is not asserted."
+        "qualified": 0,
+        "duplicate_plus_early_reject": 74,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 4.0541,
+        "duplicate_plus_early_reject_pct": 100.0,
+        "note": "Post-dedup net result; worker pre-write PASS was already canonical."
       },
       {
         "lane": "jobs_worker_20260831_022006",
@@ -48,9 +60,19 @@
         "signal": 1,
         "lpr": 1,
         "contact": 1,
-        "qualified": 1,
-        "note": "Worker-declared employer-level denominator; distinct within this worker run. Cross-worker global uniqueness is not asserted."
+        "qualified": 0,
+        "duplicate_plus_early_reject": 24,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 12.5,
+        "duplicate_plus_early_reject_pct": 100.0,
+        "note": "Post-dedup net result; worker pre-write PASS was already canonical."
       }
-    ]
+    ],
+    "comparison_last_3_runs": [
+      {"run_id":"N5K-20260830-531","raw":30,"fast_gate":3,"qualified":1,"qualified_raw_pct":3.3333,"fast_gate_raw_pct":10.0},
+      {"run_id":"N5K-20260831-532","raw":76,"fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":7.8947},
+      {"run_id":"N5K-20260831-533R1","raw":98,"raw_scope":"source-level sum; global cross-worker distinctness unproven","fast_gate":6,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":6.1224}
+    ],
+    "next_distribution_pct": {"jobs":5,"growth_news":30,"official_owner_ceo":25,"industry_catalog":5,"regional_investment":20,"partner_business_change":15}
   }
 }
