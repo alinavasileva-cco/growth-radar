@@ -1,8 +1,35 @@
 {
-  "run_id": "N5K-20260831-549R1",
-  "updated_at": "2026-08-31T23:53:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
+  "run_id": "N5K-20260901-550R1",
+  "updated_at": "2026-09-01T00:40:58+03:00",
+  "status": "READY_FOR_INTEGRATION",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "note": "N5K-20260831-549R1 integrated physically; canonical/contactable 561/561; integrity PASS; orphan 0/0; outreach 0."
+  "funnel": {
+    "discovered": 0,
+    "fast_gate_passed": 0,
+    "size_check_passed": 0,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
+    "qualified": 0,
+    "duplicates": 0,
+    "excluded": 0
+  },
+  "lane_metrics": [
+    {
+      "lane": "jobs_worker_20260901_002030",
+      "source_level_observations": 37,
+      "repo_dedup_confirmed_raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "decision": "FAIL_CLOSED_TECHNICAL_PREFLIGHT; worker observations were not promoted because complete active pending/canonical preflight could not be materialized by the worker."
+    }
+  ],
+  "notes": "Recovery/resume for the fresh technically blocked hourly worker. No competing canonical writer or queued/in-progress workflow was active at recovery start. The worker at 2026-09-01T00:20:30+03:00 recorded at least 37 named source-level employer observations across independent jobs sources, but failed closed before repo-dedup-confirmed RAW because its historical pending/canonical preflight was truncated. No candidate is treated as qualified and no contact is inferred. Recovery preserves the physical 561/561 baseline, criteria unchanged, outreach 0, and hands the coherent zero-new cycle to the existing single integration guard rather than fabricating 200-300 distinct raw candidates."
 }
