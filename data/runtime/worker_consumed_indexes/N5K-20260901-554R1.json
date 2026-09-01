@@ -1,0 +1,25 @@
+{
+  "run_id": "N5K-20260901-554R1",
+  "updated_at": "2026-09-01T05:34:43+03:00",
+  "campaign_id": "new_5000",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260901-041847-jobs.json",
+      "blob_sha": "09af58925fac268ac781a0a38e3bee0a104d90f1",
+      "result": "CONSUMED_FAIL_CLOSED_METRICS_ONLY",
+      "note": "30 source-level named employer observations retained as metrics only; 0 repo-dedup-confirmed RAW; no candidate promoted."
+    },
+    {
+      "path": "data/pending_workers/jobs/20260901-051740-jobs.json",
+      "blob_sha": "cc57830632339409ef5bbb28c234e402e9d851b9",
+      "result": "CONSUMED_FAIL_CLOSED_METRICS_ONLY",
+      "note": "7 source-level named employer observations retained as metrics only; 0 repo-dedup-confirmed RAW; no candidate promoted."
+    }
+  ],
+  "canonical_count": 561,
+  "contactable_count": 561,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "outreach": 0
+}
