@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T13:40:00+03:00",
+  "updated_at": "2026-09-01T14:42:53+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-563",
-  "current_run_id": "N5K-20260901-563",
-  "last_run_id": "N5K-20260901-563",
-  "latest_completed_run": "N5K-20260901-563",
+  "last_completed_run_id": "N5K-20260901-564",
+  "current_run_id": "N5K-20260901-564",
+  "last_run_id": "N5K-20260901-564",
+  "latest_completed_run": "N5K-20260901-564",
   "canonical_integration_run_id": "N5K-20260901-562R1",
   "hourly_baseline_count": 569,
   "hourly_net_new": 0,
@@ -90,5 +90,5 @@
   },
   "fresh_staging": "Official-owner staging 20260901-132800 consumed in N5K-20260901-563. Both PREQUALIFIED candidates were physical canonical duplicates: Мосэлектрощит N5K-0686 and НАРТИС N5K-0620. Supplemental discovery rotated through 10 low-overlap batches; no candidate passed the full funnel. Historical pending-tree truncation was not used as a blocker.",
   "repair_required": null,
-  "note": "N5K-20260901-563 completed as explicit zero-net below-raw-target RUN with supplemental discovery. Canonical/contactable unchanged 569/569; integrity PASS; orphan 0/0; staged qualified 0 by consumed-index semantics; active WIP 0; outreach 0."
+  "note": "N5K-20260901-564 completed after physical integration: +0 net new; canonical/contactable 569/569; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
