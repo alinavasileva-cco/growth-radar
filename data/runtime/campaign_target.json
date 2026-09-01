@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T18:28:17+03:00",
+  "updated_at": "2026-09-01T19:00:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-569",
-  "current_run_id": "N5K-20260901-569",
-  "last_run_id": "N5K-20260901-569",
-  "latest_completed_run": "N5K-20260901-569",
+  "last_completed_run_id": "N5K-20260901-569R1",
+  "current_run_id": "N5K-20260901-569R1",
+  "last_run_id": "N5K-20260901-569R1",
+  "latest_completed_run": "N5K-20260901-569R1",
   "canonical_integration_run_id": "N5K-20260901-569",
   "hourly_baseline_count": 574,
   "hourly_net_new": 1,
@@ -112,5 +112,5 @@
   },
   "fresh_staging": "N5K-20260901-569 consumed fresh official_owner 20260901-182439 and growth_news 20260901-182637 staging. Four candidates passed canonical-writer recheck and were sent to the physical guard; Энхим was net-new, while Мосэлектрощит, НАРТИС and ГалВент were physical duplicates. Hobby World and Анатомика were rejected before integration because the published contact routes did not resolve cleanly to the target legal entities.",
   "repair_required": null,
-  "note": "N5K-20260901-569 physically integrated: +1 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Conservative raw 28 is below target; supplemental discovery was performed and next cycle must continue low-overlap expansion."
+  "note": "N5K-20260901-569R1 completed after physical integration: +0 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

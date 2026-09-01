@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T18:28:17+03:00",
+  "generated_at": "2026-09-01T19:00:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-569",
-  "current_run_id": "N5K-20260901-569",
+  "latest_completed_run_id": "N5K-20260901-569R1",
+  "current_run_id": "N5K-20260901-569R1",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 575,
   "contactable_verified": 575,
@@ -14,39 +14,25 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_569": {
-    "raw_discovered": 28,
-    "fast_gate_passed": 16,
-    "size_check_passed": 13,
-    "legal_match_passed": 9,
-    "signal_confirmed": 9,
-    "lpr_identified": 6,
-    "contact_route_found": 4,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 3,
-    "excluded": 24,
+  "run_569R1": {
+    "raw_discovered": 2,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 1,
+    "qualified": 0,
+    "physically_integrated": 0,
+    "duplicates": 1,
+    "excluded": 1,
     "lane_metrics": [
       {
-        "lane": "official_owner_fresh",
-        "raw": 14,
-        "source_level_observations": 68,
-        "prequalified_rechecked": 3,
-        "submitted_to_physical_guard": 3,
-        "source": "data/pending_workers/official_owner/20260901-182439-official-owner.json"
-      },
-      {
-        "lane": "growth_news_fresh",
-        "raw": 14,
-        "prequalified_rechecked": 3,
-        "submitted_to_physical_guard": 1,
-        "rejected_after_recheck": 2,
-        "source": "data/pending_workers/growth_news/20260901-182637-growth-news.json"
-      },
-      {
-        "lane": "independent_low_overlap_supplemental",
-        "raw": null,
-        "note": "Fresh regional production, management/change, investment and expansion discovery executed independently. Safe globally distinct employer count was not added to discovered because cross-lane legal-key materialization was incomplete; no search-result-row padding used."
+        "lane": "supplemental_low_overlap_new_production",
+        "raw": 2,
+        "qualified": 1,
+        "excluded": 1,
+        "note": "Fresh production-expansion recovery after underworked RUN 569. Lalibela Coffee passed full legal/signal/LPR/contact verification; Aravia was not staged because the official brand contact route was not sufficiently resolved to the target legal entity for canonical insertion."
       }
     ]
   }
