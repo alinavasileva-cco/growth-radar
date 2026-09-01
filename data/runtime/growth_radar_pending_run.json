@@ -1,8 +1,195 @@
 {
-  "run_id": "N5K-20260901-573R1",
-  "updated_at": "2026-09-01T22:48:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260901-573R1 integrated physically; canonical/contactable 580/580; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260901-573R2",
+  "updated_at": "2026-09-01T22:59:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 2,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0756",
+      "Brand": "Мосэлектрощит",
+      "Legal Name": "ООО «МОСЭЛЕКТРОЩИТ»",
+      "INN": "7731286291",
+      "OGRN/OGRNIP": "1157746583136",
+      "Region": "Москва / Владимирская область",
+      "City": "Москва / Ковров",
+      "Segment": "электротехническое оборудование / B2B производство",
+      "Website": "https://www.moselectroshield.ru/",
+      "Revenue/Scale": "Выручка 2024 года 10,416 млрд ₽; 462 сотрудника по данным 2025 года; более 4000 реализованных проектов.",
+      "Signal Level": "S1",
+      "Signal Summary": "28.08.2026 открыта третья очередь завода в Коврове площадью 15,5 тыс. м²; инвестиции 2,8 млрд ₽; новый корпус рассчитан на выпуск до 3000 комплектных распределительных устройств в год.",
+      "Signal Date": "2026-08-28",
+      "Signal Source": "https://www.moselectroshield.ru/press-center/news/moselektroshchit-otkryl-tretyu-ochered-zavoda-vo-vladimirskoy-oblasti/",
+      "Owner": "",
+      "CEO": "Шемякин Николай Александрович",
+      "LPR": "Шемякин Николай Александрович",
+      "LPR Role": "генеральный директор",
+      "Primary Phone": "+7 (495) 787-43-59",
+      "Primary Email": "info@moselectroshield.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "official corporate email + official corporate phone",
+      "Contact Source": "https://www.moselectroshield.ru/about/",
+      "Consulting Hypothesis": "Масштабирование коммерческой и операционной модели после запуска новой производственной очереди: загрузка новых мощностей, сегментация B2B-рынков, pipeline, KPI и управленческая экономика роста.",
+      "contacts": [
+        {
+          "value": "info@moselectroshield.ru",
+          "channel": "email",
+          "type": "official corporate email",
+          "source": "ООО «Мосэлектрощит»",
+          "url": "https://www.moselectroshield.ru/about/",
+          "is_lpr": false,
+          "notes": "Published on official company website."
+        },
+        {
+          "value": "+7 (495) 787-43-59",
+          "channel": "phone",
+          "type": "official corporate phone",
+          "source": "ООО «Мосэлектрощит»",
+          "url": "https://www.moselectroshield.ru/about/",
+          "is_lpr": false,
+          "notes": "Published on official company website."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «МОСЭЛЕКТРОЩИТ» действует; ИНН 7731286291, ОГРН 1157746583136; генеральный директор Шемякин Николай Александрович.",
+          "url": "https://companies.rbc.ru/id/1157746583136-ooo-moselektroschit/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Выручка 2024 года 10,41598 млрд ₽; актуальная численность 462 сотрудника указана в источнике с данными 2025 года.",
+          "url": "https://companies.rbc.ru/id/1157746583136-ooo-moselektroschit/",
+          "source": "РБК Компании / актуальные регистрационные агрегаты"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "28 августа 2026 года компания открыла третью очередь завода в Коврове; инвестиции 2,8 млрд ₽, мощность до 3000 КРУ в год.",
+          "url": "https://www.moselectroshield.ru/press-center/news/moselektroshchit-otkryl-tretyu-ochered-zavoda-vo-vladimirskoy-oblasti/",
+          "source": "ООО «Мосэлектрощит»"
+        },
+        {
+          "type": "LPR",
+          "claim": "Генеральный директор — Шемякин Николай Александрович.",
+          "url": "https://casebook.ru/public/company/1157746583136",
+          "source": "Casebook"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует телефон +7 (495) 787-43-59 и email info@moselectroshield.ru.",
+          "url": "https://www.moselectroshield.ru/about/",
+          "source": "ООО «Мосэлектрощит»"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0757",
+      "Brand": "Фабрика Вентиляции ГалВент",
+      "Legal Name": "ООО «ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ»",
+      "INN": "7720605108",
+      "OGRN/OGRNIP": "1087746091410",
+      "Region": "Московская область",
+      "City": "Балашиха",
+      "Segment": "вентиляционное оборудование / B2B производство",
+      "Website": "https://galvent.ru/",
+      "Revenue/Scale": "Доходы около 4,9 млрд ₽; системообразующее предприятие; 45 000 м² производства, около 1000 станков, более 200 000 изделий в день по официальным материалам компании.",
+      "Signal Level": "S1",
+      "Signal Summary": "05.08.2026 компания открыла новый завод вентиляционного оборудования в Балашихе; инвестиции 1,3 млрд ₽, создано около 600 рабочих мест.",
+      "Signal Date": "2026-08-05",
+      "Signal Source": "https://moskovskaya.media-talk.ru/news/business/v-podmoskove-zapustili-zavod-ventilyatsionnogo-oborudovaniya-za-1-3-milliarda-rubley/",
+      "Owner": "Прахов Кирилл Валерьевич",
+      "CEO": "Прахов Кирилл Валерьевич",
+      "LPR": "Прахов Кирилл Валерьевич",
+      "LPR Role": "учредитель и генеральный директор",
+      "Primary Phone": "+7 495 790-76-98",
+      "Primary Email": "galvent@galvent.su",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "official corporate email + official corporate phone",
+      "Contact Source": "https://galvent.ru/",
+      "Consulting Hypothesis": "Управление масштабированием после запуска нового завода: коммерческая загрузка мощностей, региональная экспансия, KPI продаж и производства, P&L и приоритизация каналов роста.",
+      "contacts": [
+        {
+          "value": "galvent@galvent.su",
+          "channel": "email",
+          "type": "official corporate email",
+          "source": "Фабрика Вентиляции ГалВент",
+          "url": "https://galvent.ru/",
+          "is_lpr": false,
+          "notes": "Published on official company website."
+        },
+        {
+          "value": "+7 495 790-76-98",
+          "channel": "phone",
+          "type": "official corporate phone",
+          "source": "Фабрика Вентиляции ГалВент",
+          "url": "https://galvent.ru/",
+          "is_lpr": false,
+          "notes": "Published on official company website."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ»; ИНН 7720605108, ОГРН 1087746091410; руководитель и учредитель Прахов Кирилл Валерьевич.",
+          "url": "https://www.upfox.ru/company/fabrika-ventilyacii-galvent-1087746091410",
+          "source": "Upfox / ЕГРЮЛ-данные"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Финансовый агрегатор показывает доходы около 4,9 млрд ₽; официальный канал компании указывает 45 000 м² производства, около 1000 станков и более 200 000 изделий в день.",
+          "url": "https://zachestnyibiznes.ru/company/ul/1087746091410_7720605108_OOO-FABRIKA-VENTILYaCII-GALVENT",
+          "source": "ЗаЧестныйБизнес / официальный ГалВент"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "5 августа 2026 года открыт новый завод вентиляционного оборудования в Балашихе; инвестиции 1,3 млрд ₽, около 600 рабочих мест.",
+          "url": "https://moskovskaya.media-talk.ru/news/business/v-podmoskove-zapustili-zavod-ventilyatsionnogo-oborudovaniya-za-1-3-milliarda-rubley/",
+          "source": "Media Talk"
+        },
+        {
+          "type": "LPR",
+          "claim": "Учредитель и генеральный директор — Прахов Кирилл Валерьевич.",
+          "url": "https://www.upfox.ru/company/fabrika-ventilyacii-galvent-1087746091410",
+          "source": "Upfox / ЕГРЮЛ-данные"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует телефон +7 495 790-76-98 и email galvent@galvent.su.",
+          "url": "https://galvent.ru/",
+          "source": "Фабрика Вентиляции ГалВент"
+        }
+      ]
+    }
+  ],
+  "funnel": {
+    "discovered": 63,
+    "fast_gate_passed": 18,
+    "size_check_passed": 12,
+    "legal_match_passed": 10,
+    "signal_confirmed": 9,
+    "lpr_identified": 6,
+    "contact_route_found": 4,
+    "qualified": 2,
+    "duplicates": 1,
+    "excluded": 61
+  },
+  "lane_metrics": [
+    {
+      "lane": "prior_573R1_conservative_distinct",
+      "distinct_raw": 38,
+      "prequalified": 2,
+      "qualified": 0,
+      "notes": "Inherited factual 573R1 distinct raw; no double-counting of its source overlaps."
+    },
+    {
+      "lane": "fresh_regional_production_and_investment_recovery",
+      "distinct_raw": 25,
+      "prequalified": 4,
+      "qualified": 2,
+      "notes": "Fresh low-overlap August/September production, plant expansion, regional investment and management-change observations manually screened at employer level. State-linked, foreign-only, weak-signal and unresolved legal candidates were rejected early; jobs not used."
+    }
+  ],
+  "notes": "SAME-HOUR SUPPLEMENTAL RECOVERY after 573R1 remained below the required raw threshold. Conservative current-hour raw raised from 38 to 63 employer-level observations; still below 120 and therefore not presented as normal throughput completion. Two fresh S1 production-expansion candidates independently passed FAST->SIZE->LEGAL->SIGNAL->LPR->CONTACT and are submitted only to the existing physical canonical integration guard. Canonical-key search found no preliminary match for INN 7731286291 or 7720605108; final authority remains physical writer dedup by Lead ID/INN/OGRN/legal/brand+domain. Criteria unchanged; no outreach performed."
 }
