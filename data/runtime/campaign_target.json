@@ -2,21 +2,21 @@
   "campaign_id": "new_5000",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 583,
-  "current_contactable_count": 583,
-  "progress_added": 583,
-  "remaining_to_total_target": 4417,
-  "remaining": 4417,
+  "current_canonical_count": 585,
+  "current_contactable_count": 585,
+  "progress_added": 585,
+  "remaining_to_total_target": 4415,
+  "remaining": 4415,
   "remaining_to_1000": 417,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T00:59:00+03:00",
+  "updated_at": "2026-09-02T01:47:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260902-575R2",
-  "current_run_id": "N5K-20260902-575R2",
-  "last_run_id": "N5K-20260902-575R2",
-  "latest_completed_run": "N5K-20260902-575R2",
+  "last_completed_run_id": "N5K-20260902-576",
+  "current_run_id": "N5K-20260902-576",
+  "last_run_id": "N5K-20260902-576",
+  "latest_completed_run": "N5K-20260902-576",
   "latest_attempted_run": "N5K-20260902-575R2",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260902-575R2",
@@ -74,9 +74,30 @@
     }
   ],
   "last_3_run_efficiency": [
-    {"run_id":"N5K-20260901-573R2","raw":63,"fast_gate":18,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":28.5714},
-    {"run_id":"N5K-20260901-574R2","raw":56,"fast_gate":21,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":37.5},
-    {"run_id":"N5K-20260902-575R2","raw":36,"fast_gate":16,"qualified":3,"qualified_raw_pct":8.3333,"fast_gate_raw_pct":44.4444}
+    {
+      "run_id": "N5K-20260901-573R2",
+      "raw": 63,
+      "fast_gate": 18,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 28.5714
+    },
+    {
+      "run_id": "N5K-20260901-574R2",
+      "raw": 56,
+      "fast_gate": 21,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 37.5
+    },
+    {
+      "run_id": "N5K-20260902-575R2",
+      "raw": 36,
+      "fast_gate": 16,
+      "qualified": 3,
+      "qualified_raw_pct": 8.3333,
+      "fast_gate_raw_pct": 44.4444
+    }
   ],
   "efficiency_change_vs_previous_run": {
     "qualified_raw_pct_points": 8.3333,
@@ -96,5 +117,5 @@
   },
   "fresh_staging": "575R1 consumed both fresh worker stagings and physically added Ай-Пласт and ГлазЦентр Краснодар while rejecting Аксис as a physical duplicate. 575R2 supplemental management-change recovery physically added ГК Цифра. Pending/staged are zero.",
   "repair_required": "LOW_RAW_36_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "note": "N5K-20260902-575R2 synchronized after same-hour recovery: hourly baseline 580; net-new +3; canonical/contactable 583/583; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0. Raw 36 remains below minimum 120."
+  "note": "N5K-20260902-576 completed after physical integration: +2 net new; canonical/contactable 585/585; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
