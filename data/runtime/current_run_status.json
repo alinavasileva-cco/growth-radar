@@ -1,60 +1,53 @@
 {
-  "run_id": "N5K-20260901-574R2",
+  "run_id": "N5K-20260902-575R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "updated_at": "2026-09-01T23:58:00+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T00:51:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 580,
     "target_count": 5000,
-    "current_canonical_count": 580,
-    "current_contactable_count": 580,
-    "progress_added": 0,
-    "remaining": 4420
+    "current_canonical_count": 582,
+    "current_contactable_count": 582,
+    "progress_added": 2,
+    "remaining": 4418
   },
   "funnel": {
-    "discovered": 56,
-    "fast_gate_passed": 21,
-    "size_check_passed": 14,
+    "discovered": 35,
+    "fast_gate_passed": 15,
+    "size_check_passed": 11,
     "legal_match_passed": 9,
     "signal_confirmed": 8,
     "lpr_identified": 5,
     "contact_route_found": 3,
-    "qualified": 0,
-    "duplicates": 3,
-    "excluded": 56
+    "qualified": 2,
+    "duplicates": 1,
+    "excluded": 32
   },
   "lane_metrics": [
     {
-      "lane": "fresh_growth_news_2327",
+      "lane": "fresh_official_owner_0024",
+      "distinct_raw": 18,
+      "prequalified": 2,
+      "notes": "Fresh worker staging; no criteria weakening."
+    },
+    {
+      "lane": "fresh_growth_news_0027",
       "distinct_raw": 18,
       "prequalified": 1,
-      "physical_guard_result": "DUPLICATE",
-      "notes": "Теплолюкс reached final physical guard and was already canonical."
-    },
-    {
-      "lane": "fresh_official_owner_2336",
-      "distinct_raw": 15,
-      "prequalified": 2,
-      "physical_guard_result": "2_DUPLICATES",
-      "notes": "Биофармлаб and Три Точки Мануфактуринг reached final physical guard and were already canonical."
-    },
-    {
-      "lane": "supplemental_fresh_business_change_production_partner_management",
-      "distinct_raw": 23,
-      "prequalified": 0,
-      "notes": "Fresh low-overlap recovery screened distinct employer observations across management change, partnerships, regional investment/new production and franchise/export expansion. Candidates were rejected before CONTACT/QUALIFIED where ownership fit, scale, legal-employer resolution, recency or complete LPR/contact evidence did not satisfy existing gates. No jobs padding and no criteria weakening."
+      "notes": "Fresh worker staging; one cross-lane overlap conservatively removed from raw total."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Ай-Пласт / iPlast",
+    "ГлазЦентр Краснодар"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "580_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "580_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "qualified_staged_not_counted": 0,
+  "physical_master_state": "582_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "582_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "LOW_RAW_56_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "notes": "Same-hour recovery consumed both fresh worker stagings, ran the authoritative physical dedup writer once, and then performed additional low-overlap discovery without creating a redundant canonical writer because supplemental screening produced no new fully qualified candidate. Conservative distinct raw increased from 33 to 56 but remains below 120."
+  "blocker": null
 }
