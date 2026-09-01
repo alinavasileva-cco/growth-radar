@@ -17,47 +17,30 @@
   "current_run_id": "N5K-20260901-556R1",
   "last_run_id": "N5K-20260901-556R1",
   "latest_completed_run": "N5K-20260901-556R1",
-  "canonical_integration_run_id": "N5K-20260901-555R2",
+  "canonical_integration_run_id": "N5K-20260901-556R1",
   "hourly_baseline_count": 561,
   "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "raw": 7,
-    "fast_gate": 3,
+    "raw": 4,
+    "fast_gate": 4,
     "size": 3,
     "legal": 3,
     "signal": 3,
     "lpr": 3,
-    "contact": 3,
+    "contact": 1,
     "qualified": 0,
-    "duplicates": 5,
-    "early_reject": 2,
-    "duplicate_plus_early_reject": 7,
-    "excluded": 2,
+    "duplicates": 1,
+    "early_reject": 3,
+    "duplicate_plus_early_reject": 4,
+    "excluded": 3,
     "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 42.8571,
+    "fast_gate_raw_pct": 100.0,
     "duplicate_early_reject_pct": 100.0
   },
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-554R1",
-      "raw": 0,
-      "fast_gate": 0,
-      "qualified": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null
-    },
-    {
-      "run_id": "N5K-20260901-555",
-      "raw": 6,
-      "fast_gate": 2,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 33.3333,
-      "duplicate_early_reject_pct": 83.3333
-    },
     {
       "run_id": "N5K-20260901-555R1",
       "raw": 6,
@@ -66,11 +49,29 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 33.3333,
       "duplicate_early_reject_pct": 100.0
+    },
+    {
+      "run_id": "N5K-20260901-555R2",
+      "raw": 7,
+      "fast_gate": 3,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 42.8571,
+      "duplicate_early_reject_pct": 100.0
+    },
+    {
+      "run_id": "N5K-20260901-556R1",
+      "raw": 4,
+      "fast_gate": 4,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 100.0,
+      "duplicate_early_reject_pct": 100.0
     }
   ],
   "efficiency_change_vs_previous_run": {
     "qualified_raw_pct_points": 0.0,
-    "fast_gate_raw_pct_points": 9.5238,
+    "fast_gate_raw_pct_points": 57.1429,
     "net_new_change": 0
   },
   "next_distribution_pct": {
@@ -81,7 +82,7 @@
     "regional_investment": 0,
     "experimental_low_overlap_business_change": 50
   },
-  "fresh_staging": "All worker staging consumed through N5K-20260901-554R1. In the 555 same-cycle discovery, three fully evidenced prewrite candidates were tested by the physical master guard and all were existing canonical companies: Турбокомплект (INN+OGRN+brand/domain), Анатомика (INN+OGRN+brand/domain), Три Точки Мануфактуринг (INN+OGRN). No duplicate was written.",
+  "fresh_staging": "Worker data/pending_workers/jobs/20260901-072530-jobs.json was fail-closed with zero repo-dedup-confirmed raw and is consumed by recovery N5K-20260901-556R1. Recovery deep-checked low-overlap fresh production/expansion candidates. BROX reached prewrite QUALIFIED but physical canonical guard rejected it by INN+OGRN+LEGAL_NAME. No duplicate was written; pending integration is cleared.",
   "repair_required": null,
-  "note": "N5K-20260901-556R1 completed after physical integration: +0 net new; canonical/contactable 561/561; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-556R1 final physical state: +0 net new; canonical/contactable 561/561; raw 4, fast_gate 4, size/legal/signal/LPR 3/3/3/3, contact 1, qualified 0 after physical dedup, duplicate 1, excluded 3; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
