@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-09-01T06:03:04+03:00  
-**Последний полностью завершённый RUN:** `N5K-20260901-555R2`  
+**Версия:** 2026-09-01T07:52:00+03:00  
+**Последний полностью завершённый RUN:** `N5K-20260901-556R1`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **561 / 561**  
 **Qualified staged not counted:** **0**  
@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим `leads_master/contactable_master`, campaign-local contacts/evidence, pending и свежим worker-staging;
 - physical canonical/contactable count: **561 / 561**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260901-555R2`;
+- последний завершённый RUN: `N5K-20260901-556R1`;
 - physical master/integration guard является финальным источником дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений, если доступны более свежие подтверждённые сведения.
@@ -79,7 +79,7 @@ Canonical/contactable: **494/494**. Integrity PASS. Orphan contacts/evidence: **
 
 Fresh immutable worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Jobs-worker передал **ЮгСпецМебель / ООО «ЮГСПЕЦМЕБЕЛЬ»**. Canonical recheck подтвердил действующее юрлицо, ИНН `2312199280`, ОГРН `1132312000622`, актуальный масштаб по выручке 2025 года, свежий S2-сигнал от 10.08.2026, собственника/ЛПР Харина Георгия Олеговича и официальный практический маршрут связи. Финальный physical integration guard не обнаружил совпадений по Lead ID, ИНН, ОГРН, точному юрлицу или brand+domain; компания интегрирована как `N5K-0652`.
 
-Собственный low-overlap discovery добавил **120 source-level observations**: по 20 из Testing&Control, MiningWorld Russia, Heat&Power, NDT Russia, KHIMIA и CeMAT RUSSIA 2026. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; участие в выставке/каталоге само по себе SIGNAL не считалось. Эти observations не заявляются как globally legal-key-proven distinct компании, поскольку cheap rejects не все разрешялись до полного набора ИНН/ОГРН/domain.
+Собственный low-overlap discovery добавил **120 source-level observations**: по 20 из Testing&Control, MiningWorld Russia, Heat&Power, NDT Russia, KHIMIA и CeMAT RUSSIA 2026. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; участие в выставке/каталоге само по себе SIGNAL не считалось. Эти observations не заявляются как globally legal-key-proven distinct компании, поскольку cheap rejects не все разрешались до полного набора ИНН/ОГРН/domain.
 
 Финальная воронка: **300 source-level raw → 6 fast gate → 2 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Physical duplicates: **0**; excluded: **299**. Целевые 400–800 globally legal-key-proven distinct raw не достигнуты; критерии не снижались.
 
@@ -89,7 +89,7 @@ Canonical/contactable: **495/495**. Integrity PASS. Orphan contacts/evidence: **
 
 Fresh immutable worker pool: jobs `80 raw / 1 worker-qualified`; industry `100 raw / 0 qualified`. Jobs-worker передал **Тулс / ООО «ТУЛС»**. Canonical recheck подтвердил действующее юрлицо, ИНН `5249172462`, ОГРН `1205200031398`, актуальный масштаб — выручка **80 159 000 ₽ за 2025 год**, 14 сотрудников, собственника/ЛПР Суходеева Михаила Владимировича и свежий S1-сигнал от **13.08.2026** — вакансию директора по продукту и развитию с прямой ответственностью за продуктовую стратегию и рост компании, новые функции, партнёрства и коммерческие показатели. Практический CONTACT подтверждён активным публичным маршрутом «Откликнуться» на текущей вакансии; персональный контакт не заявляется. Финальный physical integration guard не обнаружил совпадений по Lead ID, ИНН, ОГРН, точному юрлицу или brand+domain; компания интегрирована как `N5K-0653`.
 
-Собственный low-overlap discovery добавил **120 source-level observations**: по первым 20 из Beauty Show Krasnodar, InterStroyExpo, Wasma, FoodTech Krasnodar, Global Ingredients Show и Dentima Krasnodar 2026. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; само участие в выставке/каталоге SIGNAL не считалось. Эти observations не заявляются как globally legal-key-proven distinct компании, поскольку cheap rejects не все разрешялись до полного набора ИНН/ОГРН/domain.
+Собственный low-overlap discovery добавил **120 source-level observations**: по первым 20 из Beauty Show Krasnodar, InterStroyExpo, Wasma, FoodTech Krasnodar, Global Ingredients Show и Dentima Krasnodar 2026. Каждый lane остановлен после первых 20 при duplicate+early reject >70%; само участие в выставке/каталоге SIGNAL не считалось. Эти observations не заявляются как globally legal-key-proven distinct компании, поскольку cheap rejects не все разрешались до полного набора ИНН/ОГРН/domain.
 
 Финальная воронка: **300 source-level raw → 8 fast gate → 1 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED → 1 physically integrated**. Physical duplicates: **0**; excluded: **299**. Целевые 400–800 globally legal-key-proven distinct raw не достигнуты; критерии не снижались.
 
