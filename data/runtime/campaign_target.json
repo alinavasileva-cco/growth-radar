@@ -17,51 +17,42 @@
   "current_run_id": "N5K-20260901-569R2",
   "last_run_id": "N5K-20260901-569R2",
   "latest_completed_run": "N5K-20260901-569R2",
-  "canonical_integration_run_id": "N5K-20260901-569R1",
+  "canonical_integration_run_id": "N5K-20260901-569R2",
   "hourly_baseline_count": 575,
   "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260901-569R1",
-    "raw": 2,
-    "fast_gate": 2,
-    "size": 2,
-    "legal": 2,
-    "signal": 2,
-    "lpr": 2,
+    "run_id": "N5K-20260901-569R2",
+    "raw": 1,
+    "fast_gate": 1,
+    "size": 1,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
     "contact": 1,
     "qualified": 0,
     "duplicates": 1,
-    "excluded_early_reject": 1,
+    "excluded_early_reject": 0,
     "qualified_raw_pct": 0.0,
     "fast_gate_raw_pct": 100.0,
     "raw_target_met": false,
     "supplemental_discovery_performed": true,
-    "raw_count_note": "Two additional employer/legal-entity-resolved candidates were deep-checked in the supplemental recovery. Lalibela Coffee reached the physical guard but was already present in canonical and was rejected as a duplicate; Aravia was rejected before staging because the official brand contact route did not resolve cleanly to the target legal entity. No result-row padding."
+    "raw_count_note": "One additional current employer/legal-entity-resolved candidate from the fresh regional-investment/new-production lane reached the physical guard. Borus was rejected there as an existing canonical duplicate. No result-row padding."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "supplemental_low_overlap_new_production",
-      "raw": 2,
-      "prequalified_rechecked": 2,
+      "lane": "regional_investment_new_production_fresh",
+      "raw": 1,
+      "prequalified_rechecked": 1,
       "submitted_to_physical_guard": 1,
       "net_qualified": 0,
       "physical_duplicates": 1,
-      "rejected_before_integration": 1,
       "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-568R1",
-      "raw": 66,
-      "fast_gate": 18,
-      "qualified": 2,
-      "qualified_raw_pct": 3.0303,
-      "fast_gate_raw_pct": 27.2727
-    },
     {
       "run_id": "N5K-20260901-569",
       "raw": 28,
@@ -77,13 +68,21 @@
       "qualified": 0,
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 100.0
+    },
+    {
+      "run_id": "N5K-20260901-569R2",
+      "raw": 1,
+      "fast_gate": 1,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 100.0
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -3.5714,
-    "net_new_change": -1,
-    "fast_gate_raw_pct_points": 42.8571,
-    "assessment": "Supplemental recovery did not add a physical net-new company: the only candidate reaching the canonical writer was a physical duplicate. Raw remains materially below target, so discovery must continue in fresh low-overlap sources without weakening qualification criteria."
+    "qualified_raw_pct_points": 0.0,
+    "net_new_change": 0,
+    "fast_gate_raw_pct_points": 0.0,
+    "assessment": "Second same-cycle recovery also yielded no physical net-new because the verified candidate was already canonical. Source saturation remains high; continue fresh low-overlap discovery without weakening qualification criteria."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -95,7 +94,7 @@
     "management_change_commercial_transformation_fresh": 25,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "N5K-20260901-569R1 supplemental recovery resolved two fresh new-production candidates. Lalibela Coffee passed deep verification but was rejected by the authoritative physical canonical guard as a duplicate. Aravia was rejected before integration because the published official brand route could not be cleanly tied to the target legal entity.",
+  "fresh_staging": "N5K-20260901-569R2 checked a fresh 27-30 Aug regional new-production signal. Borus passed current legal/scale/signal/LPR/direct-contact verification but the authoritative physical canonical guard found it already present and blocked duplicate insertion.",
   "repair_required": null,
-  "note": "N5K-20260901-569R2 completed after physical integration: +0 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-569R2 completed after physical dedup: +0 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Metadata synchronized to the physical result. Raw target remains unmet."
 }
