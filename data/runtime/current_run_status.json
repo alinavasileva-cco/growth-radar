@@ -1,9 +1,9 @@
 {
   "run_id": "N5K-20260901-573R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
-  "updated_at": "2026-09-01T22:48:00+03:00",
-  "stage": "COMPLETE",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
+  "updated_at": "2026-09-01T22:52:00+03:00",
+  "stage": "COMPLETE_LOW_RAW",
   "new_cycle": {
     "baseline_count": 580,
     "target_count": 5000,
@@ -29,21 +29,23 @@
       "lane": "fresh_growth_news_staging",
       "distinct_raw": 16,
       "prequalified": 1,
-      "canonical_recheck_result": "REJECT_FAST",
-      "notes": "Semargl independently rejected because current authoritative sources identify it as part of / consolidated by Concern Kalashnikov; private-company gate unchanged."
+      "qualified": 0,
+      "notes": "Semargl independently rejected at FAST after current sources confirmed Kalashnikov-group affiliation; private-company gate unchanged."
     },
     {
       "lane": "fresh_official_owner_staging",
       "distinct_raw": 32,
       "prequalified": 1,
-      "canonical_recheck_result": "RUSBUTIRAL_READY_FOR_PHYSICAL_DEDUP",
-      "notes": "Fresh 22:30 staging consumed. Worker candidate independently reverified for legal status, scale, dated S1 signal, director/LPR and published official contact route."
+      "qualified": 0,
+      "physical_duplicates": 1,
+      "notes": "Rusbutyral independently passed the evidence funnel but physical master guard found an existing canonical match by INN, OGRN, exact legal name and brand+domain."
     },
     {
       "lane": "canonical_low_overlap_supplemental",
       "distinct_raw": 14,
       "prequalified": 0,
-      "notes": "Supplemental canonical discovery rotated across fresh production/investment, regional expansion, management change, export/dealer/branch and commercial-change sources. Due cross-lane overlap, total RUN discovered is conservatively reported as 38, not the arithmetic sum of lane raws. No jobs/catalog padding or search-result-line inflation."
+      "qualified": 0,
+      "notes": "Fresh production/investment, regional expansion, management change, export/dealer/branch and commercial-change discovery. Total RUN raw reported conservatively as 38 after cross-lane overlap; no result-line inflation or jobs/catalog padding."
     }
   ],
   "qualified_companies": [],
@@ -51,8 +53,10 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "580_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "580_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "LOW_RAW_38_BELOW_MINIMUM_120_AFTER_STAGING_AND_SUPPLEMENTAL_DISCOVERY",
+  "normal_throughput_completion": false
 }
