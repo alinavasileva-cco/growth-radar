@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-09-02T02:37:39+03:00",
+  "generated_at": "2026-09-02T02:45:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-577",
-  "current_run_id": "N5K-20260902-577",
+  "latest_completed_run_id": "N5K-20260902-577R1",
+  "current_run_id": "N5K-20260902-577R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 585,
-  "contactable_verified": 585,
+  "canonical_pool_verified": 586,
+  "contactable_verified": 586,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4415,
+  "remaining_to_target": 4414,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_577": {
-    "raw_discovered": 49,
-    "fast_gate_passed": 11,
-    "size_check_passed": 11,
-    "legal_match_passed": 8,
-    "signal_confirmed": 6,
-    "lpr_identified": 5,
-    "contact_route_found": 3,
-    "qualified": 0,
-    "physically_integrated": 0,
-    "duplicates": 3,
-    "excluded": 46,
+  "run_577R1": {
+    "raw_discovered": 82,
+    "fast_gate_passed": 20,
+    "size_check_passed": 13,
+    "legal_match_passed": 10,
+    "signal_confirmed": 8,
+    "lpr_identified": 7,
+    "contact_route_found": 5,
+    "qualified": 1,
+    "physically_integrated": 1,
+    "duplicates": 1,
+    "excluded": 80,
     "lane_metrics": [
       {
-        "lane": "fresh_growth_news_0224",
-        "distinct_raw": 31,
-        "prequalified": 2,
-        "net_qualified_before_physical_guard": 2,
-        "notes": "Fresh immutable worker staging from 2026-09-02 02:24 MSK; final global physical dedup delegated to canonical writer."
+        "lane": "base_577_fresh_workers",
+        "distinct_raw": 49,
+        "prequalified": 3,
+        "net_qualified_before_physical_guard": 3,
+        "notes": "All three were rejected by authoritative physical dedup in canonical writer."
       },
       {
-        "lane": "fresh_official_owner_0227",
-        "distinct_raw": 18,
-        "prequalified": 1,
-        "net_qualified_before_physical_guard": 1,
-        "notes": "Fresh immutable worker staging from 2026-09-02 02:27 MSK; final global physical dedup delegated to canonical writer."
+        "lane": "supplemental_regional_production_business_change",
+        "distinct_raw": 33,
+        "prequalified": 2,
+        "net_qualified_before_physical_guard": 2,
+        "notes": "Fresh low-overlap employer-level observations from regional investment/new production, expansion and business-change sources. Repeated saturated samples excluded; jobs not used."
       }
     ]
   }

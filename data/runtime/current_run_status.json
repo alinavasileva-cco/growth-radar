@@ -1,52 +1,54 @@
 {
-  "run_id": "N5K-20260902-577",
+  "run_id": "N5K-20260902-577R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-02T02:37:39+03:00",
+  "updated_at": "2026-09-02T02:45:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 585,
     "target_count": 5000,
-    "current_canonical_count": 585,
-    "current_contactable_count": 585,
-    "progress_added": 0,
-    "remaining": 4415
+    "current_canonical_count": 586,
+    "current_contactable_count": 586,
+    "progress_added": 1,
+    "remaining": 4414
   },
   "funnel": {
-    "discovered": 49,
-    "fast_gate_passed": 11,
-    "size_check_passed": 11,
-    "legal_match_passed": 8,
-    "signal_confirmed": 6,
-    "lpr_identified": 5,
-    "contact_route_found": 3,
-    "qualified": 0,
-    "duplicates": 3,
-    "excluded": 46
+    "discovered": 82,
+    "fast_gate_passed": 20,
+    "size_check_passed": 13,
+    "legal_match_passed": 10,
+    "signal_confirmed": 8,
+    "lpr_identified": 7,
+    "contact_route_found": 5,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 80
   },
   "lane_metrics": [
     {
-      "lane": "fresh_growth_news_0224",
-      "distinct_raw": 31,
-      "prequalified": 2,
-      "net_qualified_before_physical_guard": 2,
-      "notes": "Fresh immutable worker staging from 2026-09-02 02:24 MSK; final global physical dedup delegated to canonical writer."
+      "lane": "base_577_fresh_workers",
+      "distinct_raw": 49,
+      "prequalified": 3,
+      "net_qualified_before_physical_guard": 3,
+      "notes": "All three were rejected by authoritative physical dedup in canonical writer."
     },
     {
-      "lane": "fresh_official_owner_0227",
-      "distinct_raw": 18,
-      "prequalified": 1,
-      "net_qualified_before_physical_guard": 1,
-      "notes": "Fresh immutable worker staging from 2026-09-02 02:27 MSK; final global physical dedup delegated to canonical writer."
+      "lane": "supplemental_regional_production_business_change",
+      "distinct_raw": 33,
+      "prequalified": 2,
+      "net_qualified_before_physical_guard": 2,
+      "notes": "Fresh low-overlap employer-level observations from regional investment/new production, expansion and business-change sources. Repeated saturated samples excluded; jobs not used."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Бытпласт"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "585_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "585_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "586_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "586_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

@@ -1,0 +1,3 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0767,N5K-0767-E01,signal,"Запуск новой производственной линии в Егорьевске, инвестиции 108 млн ₽",https://www.retail.ru/rbc/pressreleases/kompaniya-bytplast-zapustila-proizvodstvo-mnogorazovykh-butylok-dlya-vody-v-egorevske/,Retail.ru,2026-09-02T02:45:00+03:00,HIGH,N5K-20260902-577R1,new_5000
+N5K-0767,N5K-0767-E02,legal,"Действующее ООО, ИНН 5011018520, ОГРН 1035002350195; генеральный директор и совладелец Владимир Бобров",https://sledi.ru/bytplast-5011018520/,Sledi,2026-09-02T02:45:00+03:00,HIGH,N5K-20260902-577R1,new_5000
