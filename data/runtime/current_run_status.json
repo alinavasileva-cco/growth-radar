@@ -1,15 +1,15 @@
 {
   "run_id": "N5K-20260902-576R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "updated_at": "2026-09-02T01:34:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 585,
+    "baseline_count": 583,
     "target_count": 5000,
     "current_canonical_count": 585,
     "current_contactable_count": 585,
-    "progress_added": 0,
+    "progress_added": 2,
     "remaining": 4415
   },
   "funnel": {
@@ -20,8 +20,8 @@
     "signal_confirmed": 8,
     "lpr_identified": 5,
     "contact_route_found": 5,
-    "qualified": 0,
-    "duplicates": 1,
+    "qualified": 2,
+    "duplicates": 3,
     "excluded": 43
   },
   "lane_metrics": [
@@ -30,23 +30,33 @@
       "distinct_raw": 43,
       "prequalified": 4,
       "net_qualified_before_physical_guard": 4,
-      "notes": "Authoritative prior current-hour run; raw below minimum 120."
+      "physical_net_new": 2,
+      "notes": "Current-hour canonical run physically added Motorica and GazEnergoKomplekt; two candidates were physical duplicates."
     },
     {
       "lane": "supplemental_fresh_production_576R1",
       "distinct_raw": 1,
       "prequalified": 1,
       "net_qualified_before_physical_guard": 1,
-      "notes": "Fresh low-overlap production expansion candidate independently resolved to legal entity, current CEO and official contact route. Jobs not used."
+      "physical_net_new": 0,
+      "notes": "NARTIS was independently resolved but authoritative physical guard rejected it by INN, OGRN, legal name and brand/domain. Jobs not used."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Группа Моторика / Motorica",
+    "ГазЭнергоКомплект"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "585_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "585_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "raw_target_met": false,
+  "supplemental_discovery_performed": true,
+  "repair_required": "LOW_RAW_44_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
+  "blocker": "LOW_RAW_44_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
+  "notes": "Current hour baseline 583; physical net-new +2 from run 576; supplemental 576R1 checked a fresh low-overlap production candidate but physical dedup rejected it. Canonical/contactable 585/585; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Conservative employer-level raw 44 remains below minimum 120."
 }
