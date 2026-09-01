@@ -1,8 +1,224 @@
 {
-  "run_id": "N5K-20260901-569R2",
-  "updated_at": "2026-09-01T19:08:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260901-569R2 integrated physically; canonical/contactable 575/575; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260901-570R1",
+  "updated_at": "2026-09-01T20:00:49+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 69,
+    "fast_gate_passed": 23,
+    "size_check_passed": 21,
+    "legal_match_passed": 15,
+    "signal_confirmed": 11,
+    "lpr_identified": 7,
+    "contact_route_found": 5,
+    "qualified": 5,
+    "duplicates": 0,
+    "excluded": 64
+  },
+  "lane_metrics": [
+    {
+      "lane": "official_owner",
+      "raw": 52,
+      "qualified": 4,
+      "excluded": 48,
+      "note": "Fresh worker staging 20260901-192655; four employer/legal-entity candidates reached size+legal+signal+LPR+published-contact prequalification and require canonical writer global dedup."
+    },
+    {
+      "lane": "growth_news",
+      "raw": 17,
+      "qualified": 1,
+      "excluded": 16,
+      "note": "Fresh worker staging 20260901-192732; one employer/legal-entity candidate reached full prequalification and requires canonical writer global dedup."
+    },
+    {
+      "lane": "supplemental_low_overlap_production_review",
+      "raw": 30,
+      "qualified": 0,
+      "excluded": 0,
+      "note": "Same-cycle supplemental review covered July and June 2026 production-launch roundups (15+15 employer-level launch observations). These observations are NOT added to funnel.discovered because cross-lane/global overlap with the existing 69 worker observations was not fully proven; no quota padding."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0748",
+      "Brand": "Сайбер Электро",
+      "Legal Name": "ООО «СТАБТЕХ»",
+      "INN": "5009123398",
+      "OGRN/OGRNIP": "1205000038957",
+      "Region": "Московская область",
+      "City": "Голицыно",
+      "Segment": "электротехническое оборудование / источники бесперебойного питания / B2B",
+      "Website": "https://cyber-electro.ru/",
+      "Revenue/Scale": "Выручка за 2025 год 283,064 млн руб.; действующее производственное предприятие.",
+      "Signal Level": "S1",
+      "Signal Summary": "01.09.2026 открыт второй производственный объект в Голицыно; новая площадка вдвое больше первой и предназначена для масштабирования российской линейки ИБП.",
+      "Signal Date": "2026-09-01",
+      "Signal Source": "https://www.cnews.ru/news/line/2026-09-01_dlya_sajber_elektrootkryta",
+      "Owner": "",
+      "CEO": "Невзоров Вадим Борисович",
+      "LPR": "Невзоров Вадим Борисович",
+      "LPR Role": "генеральный директор",
+      "Primary Phone": "+7 495 258-76-76",
+      "Primary Email": "info@cyber-electro.ru",
+      "HH Contact": "",
+      "Contact Form": "https://stab-tech.ru/contacts/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "публичный корпоративный маршрут Сайбер Электро / СТАБТЕХ",
+      "Consulting Hypothesis": "Коммерческая и операционная настройка масштабирования после запуска второй производственной площадки: загрузка мощностей, B2B-сегментация, pipeline, KPI и экономика направлений.",
+      "contacts": [
+        {"value": "+7 495 258-76-76", "channel": "phone", "type": "official corporate", "source": "Сайбер Электро", "url": "https://cyberpromo.ru/", "is_lpr": false, "notes": "Публичный корпоративный телефон."},
+        {"value": "info@cyber-electro.ru", "channel": "email", "type": "official corporate", "source": "Сайбер Электро", "url": "https://cyberpromo.ru/", "is_lpr": false, "notes": "Публичный корпоративный email."}
+      ],
+      "evidence": [
+        {"type": "LEGAL_LPR", "claim": "ООО «СТАБТЕХ», ИНН 5009123398, ОГРН 1205000038957; генеральный директор Невзоров Вадим Борисович.", "url": "https://companies.rbc.ru/id/1205000038957-obschestvo-s-ogranichennoj-otvetstvennostyu-stabteh/", "source": "РБК Компании"},
+        {"type": "SIGNAL", "claim": "01.09.2026 для Сайбер Электро открыта вторая производственная площадка в Голицыно для масштабирования производства ИБП.", "url": "https://www.cnews.ru/news/line/2026-09-01_dlya_sajber_elektrootkryta", "source": "CNews"},
+        {"type": "CONTACT", "claim": "Опубликованы корпоративные телефон и email Сайбер Электро.", "url": "https://cyberpromo.ru/", "source": "Сайбер Электро"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0749",
+      "Brand": "SafetyLab",
+      "Legal Name": "ООО «ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ»",
+      "INN": "7841433407",
+      "OGRN/OGRNIP": "1107847328951",
+      "Region": "Ленинградская область",
+      "City": "Фёдоровское",
+      "Segment": "производство средств и оборудования безопасности / B2B",
+      "Website": "https://www.safetylab.ru/",
+      "Revenue/Scale": "Выручка за 2025 год 870,494 млн руб., рост 40,9% год к году; действующее предприятие.",
+      "Signal Level": "S1",
+      "Signal Summary": "09.07.2026 открыт новый производственный комплекс в индустриальном парке «Федоровское» в рамках программы расширения мощностей.",
+      "Signal Date": "2026-07-09",
+      "Signal Source": "https://companies.rbc.ru/amp/news/ab2252b4-30bf-44d9-92ef-0423aaa3394c/",
+      "Owner": "Андреев Андрей Николаевич",
+      "CEO": "Андреев Андрей Николаевич",
+      "LPR": "Анна Андреева",
+      "LPR Role": "директор по стратегическому развитию",
+      "Primary Phone": "+7 (812) 332-52-45",
+      "Primary Email": "anna.andreeva@safetylab.ru",
+      "HH Contact": "",
+      "Contact Form": "https://www.safetylab.ru/ru/info/19",
+      "Contact Type": "official LPR/corporate route",
+      "Contact Source": "официальный сайт SafetyLab",
+      "Consulting Hypothesis": "Стратегическая и коммерческая настройка роста после расширения производства: загрузка мощностей, B2B-продажи, KPI, P&L и управление масштабированием.",
+      "contacts": [
+        {"value": "+7 (812) 332-52-45", "channel": "phone", "type": "official corporate", "source": "SafetyLab", "url": "https://www.safetylab.ru/ru/info/19", "is_lpr": false, "notes": "Официальный телефон."},
+        {"value": "anna.andreeva@safetylab.ru", "channel": "email", "type": "official LPR", "source": "SafetyLab", "url": "https://www.safetylab.ru/ru/info/19", "is_lpr": true, "notes": "Опубликованный email директора по стратегическому развитию."}
+      ],
+      "evidence": [
+        {"type": "LEGAL_LPR", "claim": "ООО «ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ», ИНН 7841433407, ОГРН 1107847328951; Андрей Андреев указан генеральным директором/учредителем.", "url": "https://www.safetylab.ru/ru/info/16", "source": "SafetyLab"},
+        {"type": "SIGNAL", "claim": "09.07.2026 компания открыла новый производственный комплекс в индустриальном парке «Федоровское».", "url": "https://companies.rbc.ru/amp/news/ab2252b4-30bf-44d9-92ef-0423aaa3394c/", "source": "РБК Компании"},
+        {"type": "CONTACT", "claim": "Официально опубликованы контакт Анны Андреевой, телефон и email.", "url": "https://www.safetylab.ru/ru/info/19", "source": "SafetyLab"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0750",
+      "Brand": "VROBOTICS",
+      "Legal Name": "ООО «ВР РОБОТИКС»",
+      "INN": "5257218488",
+      "OGRN/OGRNIP": "1245200015851",
+      "Region": "Нижегородская область",
+      "City": "Нижний Новгород",
+      "Segment": "промышленная робототехника / автоматизация / B2B",
+      "Website": "https://vrobotics.pro/",
+      "Revenue/Scale": "Выручка за 2025 год 103,669 млн руб., рост 464,2% год к году; действующая производственная компания.",
+      "Signal Level": "S1",
+      "Signal Summary": "21.05.2026 открыт завод промышленной робототехники в Нижнем Новгороде; инвестиции превысили 100 млн руб.",
+      "Signal Date": "2026-05-21",
+      "Signal Source": "https://fedpress.ru/news/52/economy/3437851",
+      "Owner": "",
+      "CEO": "Водопьянов Евгений Александрович",
+      "LPR": "Водопьянов Евгений Александрович",
+      "LPR Role": "генеральный директор",
+      "Primary Phone": "+7 (831) 411-12-65",
+      "Primary Email": "info@vrobotics.pro",
+      "HH Contact": "",
+      "Contact Form": "https://www.velam-rus.ru/kontakty/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "публичный корпоративный маршрут производственной группы",
+      "Consulting Hypothesis": "Коммерческая настройка быстрого роста промышленной робототехники после запуска завода: B2B-сегментация, pipeline, план продаж, KPI, unit economics и загрузка мощностей.",
+      "contacts": [
+        {"value": "+7 (831) 411-12-65", "channel": "phone", "type": "official corporate", "source": "производственная группа", "url": "https://www.velam-rus.ru/kontakty/", "is_lpr": false, "notes": "Публичный корпоративный телефон."},
+        {"value": "info@vrobotics.pro", "channel": "email", "type": "official corporate", "source": "VROBOTICS", "url": "https://vrobotics.pro/", "is_lpr": false, "notes": "Публичный корпоративный email."}
+      ],
+      "evidence": [
+        {"type": "LEGAL_LPR", "claim": "ООО «ВР РОБОТИКС», ИНН 5257218488, ОГРН 1245200015851; генеральный директор Водопьянов Евгений Александрович.", "url": "https://companies.rbc.ru/id/1245200015851-ooo-vr-robotiks/", "source": "РБК Компании"},
+        {"type": "SIGNAL", "claim": "21.05.2026 в Нижнем Новгороде открыт завод промышленной робототехники; инвестиции превысили 100 млн руб.", "url": "https://fedpress.ru/news/52/economy/3437851", "source": "ФедералПресс"},
+        {"type": "CONTACT", "claim": "Опубликован корпоративный маршрут производственной группы и email VROBOTICS.", "url": "https://www.velam-rus.ru/kontakty/", "source": "VELAM / VROBOTICS"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0751",
+      "Brand": "ГалВент",
+      "Legal Name": "ООО «ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ»",
+      "INN": "7720605108",
+      "OGRN/OGRNIP": "1087746091410",
+      "Region": "Московская область",
+      "City": "Балашиха",
+      "Segment": "вентиляционное оборудование / промышленное производство / B2B",
+      "Website": "https://www.galvent.ru/",
+      "Revenue/Scale": "Системообразующий производитель; публичный канал компании указывает 45 000 м² площадей, 1 000 станков и выпуск более 200 000 изделий в день.",
+      "Signal Level": "S1",
+      "Signal Summary": "05.08.2026 открыт новый завод вентиляционного оборудования в Балашихе; заявленные инвестиции 1,3 млрд руб., около 600 рабочих мест.",
+      "Signal Date": "2026-08-05",
+      "Signal Source": "https://moskovskaya.media-talk.ru/news/business/v-podmoskove-zapustili-zavod-ventilyatsionnogo-oborudovaniya-za-1-3-milliarda-rubley/",
+      "Owner": "Прахов Кирилл Валерьевич",
+      "CEO": "Прахов Кирилл Валерьевич",
+      "LPR": "Прахов Кирилл Валерьевич",
+      "LPR Role": "генеральный директор / учредитель",
+      "Primary Phone": "+7 495 790-76-98",
+      "Primary Email": "galvent@galvent.su",
+      "HH Contact": "",
+      "Contact Form": "https://www.galvent.ru/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "официальный сайт ГалВент",
+      "Consulting Hypothesis": "Управленческая и коммерческая настройка масштабирования после запуска нового завода: загрузка мощностей, каналы B2B-продаж, KPI, P&L и операционная эффективность.",
+      "contacts": [
+        {"value": "+7 495 790-76-98", "channel": "phone", "type": "official corporate", "source": "ГалВент", "url": "https://www.galvent.ru/", "is_lpr": false, "notes": "Официальный телефон."},
+        {"value": "galvent@galvent.su", "channel": "email", "type": "official corporate", "source": "ГалВент", "url": "https://www.galvent.ru/", "is_lpr": false, "notes": "Официально опубликованный email."}
+      ],
+      "evidence": [
+        {"type": "LEGAL_LPR", "claim": "ООО «ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ», ИНН 7720605108, ОГРН 1087746091410; Прахов Кирилл Валерьевич указан генеральным директором и учредителем.", "url": "https://www.tbank.ru/business/contractor/legal/1087746091410/", "source": "Т-Банк Бизнес"},
+        {"type": "SIGNAL", "claim": "05.08.2026 в Балашихе открыт новый завод вентиляционного оборудования с инвестициями 1,3 млрд руб.", "url": "https://moskovskaya.media-talk.ru/news/business/v-podmoskove-zapustili-zavod-ventilyatsionnogo-oborudovaniya-za-1-3-milliarda-rubley/", "source": "Media-Talk"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует телефон и email компании.", "url": "https://www.galvent.ru/", "source": "ГалВент"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0752",
+      "Brand": "Ивановская Текстильная Компания",
+      "Legal Name": "ООО «ИВАНОВСКАЯ ТЕКСТИЛЬНАЯ КОМПАНИЯ»",
+      "INN": "3702588935",
+      "OGRN/OGRNIP": "1093702014350",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "текстиль / спецодежда / СИЗ / B2B",
+      "Website": "https://ivcompany.ru/",
+      "Revenue/Scale": "Действующее среднее предприятие; публичные данные указывают доходы порядка 1 млрд руб.; официальный сайт указывает несколько производственных площадок и более 400 ежегодных контрактов.",
+      "Signal Level": "S1",
+      "Signal Summary": "31.08.2026 Корпорация МСП сообщила об открытии в Москве нового швейного производства полного цикла; общий объём инвестиций около 255 млн руб.",
+      "Signal Date": "2026-08-31",
+      "Signal Source": "https://www.corpmsp.ru/about/press/news/novosti-korporatsii/v-moskve-pri-podderzhke-korporatsii-msp-otkryto-novoe-innovatsionnoe-tekstilnoe-proizvodstvo/",
+      "Owner": "Шилов Юрий Михайлович",
+      "CEO": "Шилов Юрий Михайлович",
+      "LPR": "Шилов Юрий Михайлович",
+      "LPR Role": "генеральный директор / учредитель",
+      "Primary Phone": "8 (800) 222-12-53",
+      "Primary Email": "mail@ivcompany.ru",
+      "HH Contact": "",
+      "Contact Form": "https://ivcompany.ru/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "официальный сайт Ивановской Текстильной Компании",
+      "Consulting Hypothesis": "Коммерческая и операционная настройка роста после открытия новой площадки полного цикла: загрузка производства, B2B-контракты, KPI, P&L, продажи и масштабирование.",
+      "contacts": [
+        {"value": "8 (800) 222-12-53", "channel": "phone", "type": "official corporate", "source": "Ивановская Текстильная Компания", "url": "https://ivcompany.ru/", "is_lpr": false, "notes": "Официальный телефон."},
+        {"value": "mail@ivcompany.ru", "channel": "email", "type": "official corporate", "source": "Ивановская Текстильная Компания", "url": "https://ivcompany.ru/", "is_lpr": false, "notes": "Официальный email."}
+      ],
+      "evidence": [
+        {"type": "LEGAL_LPR", "claim": "ООО «ИВАНОВСКАЯ ТЕКСТИЛЬНАЯ КОМПАНИЯ», ИНН 3702588935, ОГРН 1093702014350; Шилов Юрий Михайлович указан генеральным директором и учредителем.", "url": "https://check.tochka.com/company/1093702014350/", "source": "Точка"},
+        {"type": "SIGNAL", "claim": "31.08.2026 сообщено об открытии нового швейного производства полного цикла в Москве; инвестиции около 255 млн руб.", "url": "https://www.corpmsp.ru/about/press/news/novosti-korporatsii/v-moskve-pri-podderzhke-korporatsii-msp-otkryto-novoe-innovatsionnoe-tekstilnoe-proizvodstvo/", "source": "Корпорация МСП"},
+        {"type": "CONTACT", "claim": "Официальный сайт публикует телефон 8 (800) 222-12-53 и email mail@ivcompany.ru.", "url": "https://ivcompany.ru/", "source": "Ивановская Текстильная Компания"}
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 5,
+  "notes": "Same-cycle repair/resume after fresh 19:26-19:27 worker staging existed while current_run_status remained on N5K-20260901-569R2. Criteria unchanged; outreach 0. Canonical writer must perform authoritative physical dedup by Lead ID/INN/OGRN/legal/brand+domain. Worker lane raw is 52+17; global distinct is not asserted because cross-lane overlap is possible. Supplemental review covered 30 additional June/July production-launch observations but those are not added to discovered without proven global distinctness. Raw>=120 is therefore NOT claimed."
 }
