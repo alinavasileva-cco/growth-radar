@@ -1,8 +1,96 @@
 {
-  "run_id": "N5K-20260901-569R1",
-  "updated_at": "2026-09-01T19:00:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260901-569R1 integrated physically; canonical/contactable 575/575; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260901-569R2",
+  "updated_at": "2026-09-01T19:08:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 0
+  },
+  "lane_metrics": [
+    {
+      "lane": "regional_investment_new_production_fresh",
+      "raw": 1,
+      "qualified": 1,
+      "note": "Fresh 27-30 Aug 2026 machinery-production expansion signal. Candidate resolved to current legal entity, current owner/director and direct official legal-entity contact route before staging."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0749",
+      "Brand": "Борус",
+      "Legal Name": "ООО «БОРУС»",
+      "INN": "2464149893",
+      "OGRN/OGRNIP": "1192468028070",
+      "Region": "Красноярский край",
+      "City": "Красноярск",
+      "Segment": "машиностроение / карьерная и специальная техника / B2B",
+      "Website": "https://borus124.ru/",
+      "Revenue/Scale": "Выручка за 2025 год 1,125756 млрд руб.; действующая частная производственная компания; проект расширения предусматривает рост штата завода с 136 до 220 сотрудников к 2037 году.",
+      "Signal Level": "S1",
+      "Signal Summary": "27.08.2026 подтвержден проект расширения производства подземных и карьерных самосвалов и погрузочно-доставочных машин с инвестициями более 1 млрд руб. по механизму СПИК; целевые рынки — горнодобывающие предприятия Сибири, Арктики и Дальнего Востока.",
+      "Signal Date": "2026-08-27",
+      "Signal Source": "https://www.kommersant.ru/doc/8909600",
+      "Owner": "Пестриков Павел Николаевич",
+      "CEO": "Пестриков Павел Николаевич",
+      "LPR": "Пестриков Павел Николаевич",
+      "LPR Role": "директор / учредитель",
+      "Primary Phone": "+7 (391) 290-26-96",
+      "Primary Email": "promo@borus124.ru",
+      "HH Contact": "",
+      "Contact Form": "https://borus124.ru/chita/contacts/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "официальная страница реквизитов и контактов машиностроительного завода Борус",
+      "Consulting Hypothesis": "Коммерческая и операционная настройка масштабирования нового направления горной техники: сегментация B2B-заказчиков, pipeline и план продаж, загрузка мощностей, KPI, P&L и управление ростом производственного контура.",
+      "contacts": [
+        {
+          "value": "+7 (391) 290-26-96",
+          "channel": "phone",
+          "type": "official corporate",
+          "source": "Borus official requisites and contacts",
+          "url": "https://borus124.ru/chita/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный телефон ООО «Борус», совпадает с реквизитами юридического лица."
+        },
+        {
+          "value": "promo@borus124.ru",
+          "channel": "email",
+          "type": "official corporate",
+          "source": "Borus official requisites and contacts",
+          "url": "https://borus124.ru/chita/contacts/",
+          "is_lpr": false,
+          "notes": "Официальная электронная почта ООО «Борус»."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_LPR",
+          "claim": "Действующее ООО «БОРУС», ИНН 2464149893, ОГРН 1192468028070; директор и учредитель Павел Николаевич Пестриков; выручка 2025 года 1 125 756 000 руб.",
+          "url": "https://companies.rbc.ru/id/1192468028070-obschestvo-s-ogranichennoj-otvetstvennostyu-borus/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "27.08.2026 завод «Борус» получил поддержку проекта производства карьерных и подземных самосвалов; инвестиции более 1 млрд руб., СПИК на 10 лет.",
+          "url": "https://www.kommersant.ru/doc/8909600",
+          "source": "Коммерсантъ"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт ООО «Борус» публикует ИНН 2464149893, ОГРН 1192468028070, телефон +7 (391) 290-26-96 и email promo@borus124.ru.",
+          "url": "https://borus124.ru/chita/contacts/",
+          "source": "Борус"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "notes": "Second same-cycle supplemental recovery after low raw and physical duplicate in 569R1. Criteria unchanged; outreach 0. Physical canonical writer must perform final dedup by INN/OGRN/legal/domain before insertion."
 }
