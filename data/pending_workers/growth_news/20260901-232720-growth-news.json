@@ -1,0 +1,94 @@
+{
+  "lane": "growth_news",
+  "created_at": "2026-09-01T23:27:20+03:00",
+  "immutable": true,
+  "canonical_write": false,
+  "contactable_write": false,
+  "runtime_write": false,
+  "campaign_write": false,
+  "outreach": false,
+  "config_version_seen": "2026-09-01T22:52:00+03:00",
+  "physical_snapshot": {
+    "canonical": 580,
+    "contactable": 580,
+    "integrity": "PASS",
+    "source": "data/runtime/current_run_status.json updated 2026-09-01T22:59:00+03:00"
+  },
+  "dedup_policy": {
+    "historical_pending_full_read_required": false,
+    "physical_canonical_checked_first": true,
+    "candidate_level_repo_search_keys": ["INN", "OGRN/OGRNIP", "exact_legal_name", "brand+domain"],
+    "final_global_dedup_owner": "canonical_writer",
+    "staged_counted_as_added": false
+  },
+  "metrics": {
+    "source_batches": 8,
+    "distinct_employer_raw": 18,
+    "fast": 9,
+    "size": 5,
+    "legal": 3,
+    "signal": 3,
+    "lpr": 2,
+    "contact": 1,
+    "prequalified_needs_final_global_dedup": 1,
+    "reject": 17,
+    "target_raw_80_150_reached": false,
+    "quota_padding_used": false
+  },
+  "source_batches": [
+    {"batch":"MO_AUG_PRODUCTION","source_type":"regional investment / business press","raw":4,"examples":["Группа Теплолюкс","АО НТМ","Ларта Гласс Раменское","РАТЕЛ Ступино"]},
+    {"batch":"MO_JUL_INVEST_PROJECTS","source_type":"regional investment / business press","raw":3,"examples":["СтанкоМашСтрой","МолоПак","Новые технологии печати"]},
+    {"batch":"SPB_JUN_JUL_INDUSTRY","source_type":"regional business media / investment portal","raw":2,"examples":["Лаборатория ППШ","АО Ритверц"]},
+    {"batch":"PHARMA_BIOTECH","source_type":"regional investment / sector media","raw":2,"examples":["ПСК Фарма","СОФОС БИО"]},
+    {"batch":"CENTRAL_RUSSIA_PRODUCTION","source_type":"business media","raw":2,"examples":["Кавминводы","Неокор"]},
+    {"batch":"AUTO_INDUSTRIAL","source_type":"regional business media","raw":2,"examples":["АГР / Jeland","Промышленные инвестиции / АМО"]},
+    {"batch":"LOGISTICS_AGRO_EXPANSION","source_type":"regional business media","raw":2,"examples":["ГК Август / Бугульма Зернопродукт","TREST Group"]},
+    {"batch":"MOSCOW_INDUSTRIAL_REAL_ESTATE","source_type":"company press release / business media","raw":1,"examples":["КОЛДИ"]}
+  ],
+  "candidates": [
+    {
+      "brand": "Теплолюкс",
+      "legal_name": "ООО \"ГРУППА ТЕПЛОЛЮКС\"",
+      "inn": "5029052258",
+      "ogrn": "1025003531420",
+      "domain": "teploluxe.ru",
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "funnel": {"fast":true,"size":true,"legal":true,"signal":true,"lpr":true,"contact":true},
+      "size_evidence": {"value":"выручка 2025 около 3.8 млрд руб.; средний бизнес","url":"https://www.tbank.ru/business/contractor/legal/1025003531420/"},
+      "legal_evidence": {"value":"действующее ООО, ИНН 5029052258, ОГРН 1025003531420","url":"https://www.tbank.ru/business/contractor/legal/1025003531420/"},
+      "signal_evidence": {"date":"2026-08-10","value":"в Мытищах запущена новая производственная площадка Группы Теплолюкс; инвестиции более 2 млрд руб.","url":"https://www.vedomosti.ru/press_releases/2026/08/10/v-mitischah-zapustili-proizvodstvo-sistem-obogreva"},
+      "lpr_evidence": {"name":"Скитович Дмитрий Игоревич","role":"руководитель ООО ГРУППА ТЕПЛОЛЮКС с 12.08.2026","url":"https://www.tbank.ru/business/contractor/legal/1025003531420/"},
+      "contact_evidence": {"route":"официальные опубликованные телефоны/email и форма контакта; отдел проектных продаж object@groupe-atlantic.ru","url":"https://www.teploluxe.ru/about/contacts/"},
+      "dedup_checks": {
+        "inn_repo_search":"NO_MATCH",
+        "ogrn_repo_search":"NO_MATCH",
+        "exact_legal_name_repo_search":"NO_MATCH",
+        "brand_domain_repo_search":"NO_MATCH",
+        "full_historical_pending_materialization":"NOT_REQUIRED_FOR_DISCOVERY",
+        "final_global_dedup":"REQUIRED"
+      }
+    },
+    {"brand":"Ларта Гласс Раменское","legal_name":"ООО \"ЛАРТА ГЛАСС РАМЕНСКОЕ\"","inn":"5040054932","ogrn":"1025005116014","status":"REJECT","funnel":{"fast":true,"size":true,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"LEGAL uncertainty: fresh sources conflict between active status and process of reorganization as of 28.08.2026; strict lane does not resolve ambiguity by assumption.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/08/28/bolee-6-mlrd-rublei-vlozhili-v-modernizatsiyu-stekolnogo-zavoda-v-ramenskom","https://companies.rbc.ru/id/1025005116014-ooo-pilkington-glass/","https://saby.ru/profile/5040054932-504001001"]},
+    {"brand":"НТМ","legal_name":"АО \"НОВЫЕ ТЕХНОЛОГИИ И МАТЕРИАЛЫ\"","inn":"5042168452","ogrn":"1265000010769","status":"REJECT","funnel":{"fast":false,"size":false,"legal":true,"signal":true,"lpr":true,"contact":true},"reason":"FAST reject: company is described as part of Obukhov Plant / Almaz-Antey structure; private-company criterion not safely satisfied.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/08/26/v-sergievom-posade-zapuskayut-liteinoe-proizvodstvo","https://check.tochka.com/company/1265000010769/","https://ntmsp.ru/contacts/"]},
+    {"brand":"РАТЕЛ Ступино","legal_name":"ООО \"РАТЕЛ СТУПИНО\"","inn":"5045072325","ogrn":"1245000069412","status":"REJECT","funnel":{"fast":true,"size":false,"legal":true,"signal":true,"lpr":true,"contact":false},"reason":"SIZE not proven at employer-level legal entity; new entity/project creates about 50 jobs, insufficient evidence of CURRENT_WORKING_CONFIG scale.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/07/17/novii-zavod-v-oez-stupino-kvadrat-gotov-na-50","https://check.tochka.com/company/1245000069412/"]},
+    {"brand":"МолоПак","status":"REJECT","funnel":{"fast":false,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Recent growth_news overlap; not low-overlap new for this lane cycle.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/07/14/kompaniya-molopak-pristupila-k-osnascheniyu-sobstvennogo-zavoda-v-chehove"]},
+    {"brand":"Петровакс Фарм","status":"REJECT","funnel":{"fast":false,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Recent growth_news overlap; excluded before deep-check.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/08/17/novii-biotehnologicheskii-korpus-petrovaks-farm-vvedut-v-ekspluatatsiyu-osenyu-2026-goda"]},
+    {"brand":"Семаргл","status":"REJECT","funnel":{"fast":false,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Recent growth_news overlap; excluded before deep-check.","evidence_urls":["https://spb.vedomosti.ru/economics/news/2026/06/04/1202907-zavod-po-proizvodstvu-promishlennih-robotov-otkrili"]},
+    {"brand":"СтанкоМашСтрой","status":"REJECT","funnel":{"fast":true,"size":true,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Legal employer/entity resolution not completed with enough confidence in this cycle.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/07/13/v-podmoskove-nachali-stroitelstvo-stankostroitelnogo-kompleksa-v-novom-gip"]},
+    {"brand":"Новые технологии печати","status":"REJECT","funnel":{"fast":true,"size":false,"legal":false,"signal":true,"lpr":true,"contact":false},"reason":"SIZE not proven; project starts construction in 2027 and plans 34 jobs, no current employer-scale proof obtained.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/06/03/v-podmoskove-investiruyut-430-mln-rublei-v-proizvodstvo-promishlennih-pechatayuschih-sostavov"]},
+    {"brand":"Лаборатория ППШ","status":"REJECT","funnel":{"fast":true,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"SIZE not proven at current employer level in this cycle.","evidence_urls":["https://spb.vedomosti.ru/economics/news/2026/06/03/1202469-v-novoe-proizvodstvo-optiki-v-peterburge-planiruyut-vlozhit"]},
+    {"brand":"Ритверц","status":"REJECT","funnel":{"fast":true,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"SIZE/current employer scale not proven; project remains planned.","evidence_urls":["https://spb.vedomosti.ru/economics/news/2026/07/08/1212128-zavod-po-vipusku-radioizotopnoi-produktsii-za-35-mlrd-planiruyut-postroit"]},
+    {"brand":"ПСК Фарма","status":"REJECT","funnel":{"fast":true,"size":true,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Not enough legal/LPR/contact evidence resolved within strict cycle after source-level signal.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/06/25/v-oez-dubna-otkrivaetsya-vtoraya-ochered-farmatsevticheskogo-proizvodstvennogo-kompleksa-psk-farma"]},
+    {"brand":"СОФОС БИО","status":"REJECT","funnel":{"fast":true,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"SIZE not proven; project commissioning planned for 2028.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/06/03/v-podmoskove-poyavitsya-zavod-funktsionalnogo-pitaniya--soglashenie-podpisano-na-pmef-2026"]},
+    {"brand":"Кавминводы","status":"REJECT","funnel":{"fast":true,"size":true,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Signal is within 180-day edge but legal/LPR/contact chain not resolved in this cycle; no assumptions made.","evidence_urls":["https://www.kommersant.ru/doc/8533452"]},
+    {"brand":"Неокор","status":"REJECT","funnel":{"fast":true,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Current employer scale not sufficiently proven in this cycle.","evidence_urls":["https://www.kommersant.ru/doc/8534180"]},
+    {"brand":"АГР / Jeland","status":"REJECT","funnel":{"fast":false,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Large-group/brand-to-employer legal resolution and ownership fit not established; early reject.","evidence_urls":["https://www.dp.ru/a/2026/05/21/v-shusharah-zapustili-proizvodstvo","https://rg.ru/2026/06/24/krossovery-jeland-poluchat-lokalizovannye-v-rossii-dvigateli.html"]},
+    {"brand":"ГК Август / Бугульма Зернопродукт","status":"REJECT","funnel":{"fast":false,"size":false,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Group/project mapping to a single employer-level private legal entity not resolved in this cycle.","evidence_urls":["https://abireg.ru/newsitem/114159/"]},
+    {"brand":"КОЛДИ","status":"REJECT","funnel":{"fast":true,"size":true,"legal":false,"signal":true,"lpr":false,"contact":false},"reason":"Industrial real-estate development signal, but target employer/legal entity and direct commercial transformation fit not resolved.","evidence_urls":["https://www.vedomosti.ru/press_releases/2026/08/06/v-moskve-v-ramkah-krt-poyavitsya-promishlennii-park-na-153-tis-kv-m"]}
+  ],
+  "notes": [
+    "Discovery continued without reading bodies of the full historical pending_workers tree.",
+    "No staged/prequalified candidate is counted as added or QUALIFIED.",
+    "80-150 raw target was not padded with weak catalogs after strong-source yield was exhausted within this cycle."
+  ]
+}
