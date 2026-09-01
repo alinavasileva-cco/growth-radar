@@ -1,62 +1,52 @@
 {
-  "run_id": "N5K-20260902-576R1",
+  "run_id": "N5K-20260902-577",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "updated_at": "2026-09-02T01:34:00+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T02:37:39+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 583,
+    "baseline_count": 585,
     "target_count": 5000,
     "current_canonical_count": 585,
     "current_contactable_count": 585,
-    "progress_added": 2,
+    "progress_added": 0,
     "remaining": 4415
   },
   "funnel": {
-    "discovered": 44,
-    "fast_gate_passed": 14,
-    "size_check_passed": 10,
+    "discovered": 49,
+    "fast_gate_passed": 11,
+    "size_check_passed": 11,
     "legal_match_passed": 8,
-    "signal_confirmed": 8,
+    "signal_confirmed": 6,
     "lpr_identified": 5,
-    "contact_route_found": 5,
-    "qualified": 2,
+    "contact_route_found": 3,
+    "qualified": 0,
     "duplicates": 3,
-    "excluded": 43
+    "excluded": 46
   },
   "lane_metrics": [
     {
-      "lane": "base_run_576",
-      "distinct_raw": 43,
-      "prequalified": 4,
-      "net_qualified_before_physical_guard": 4,
-      "physical_net_new": 2,
-      "notes": "Current-hour canonical run physically added Motorica and GazEnergoKomplekt; two candidates were physical duplicates."
+      "lane": "fresh_growth_news_0224",
+      "distinct_raw": 31,
+      "prequalified": 2,
+      "net_qualified_before_physical_guard": 2,
+      "notes": "Fresh immutable worker staging from 2026-09-02 02:24 MSK; final global physical dedup delegated to canonical writer."
     },
     {
-      "lane": "supplemental_fresh_production_576R1",
-      "distinct_raw": 1,
+      "lane": "fresh_official_owner_0227",
+      "distinct_raw": 18,
       "prequalified": 1,
       "net_qualified_before_physical_guard": 1,
-      "physical_net_new": 0,
-      "notes": "NARTIS was independently resolved but authoritative physical guard rejected it by INN, OGRN, legal name and brand/domain. Jobs not used."
+      "notes": "Fresh immutable worker staging from 2026-09-02 02:27 MSK; final global physical dedup delegated to canonical writer."
     }
   ],
-  "qualified_companies": [
-    "Группа Моторика / Motorica",
-    "ГазЭнергоКомплект"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
   "physical_master_state": "585_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "585_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "raw_target_met": false,
-  "supplemental_discovery_performed": true,
-  "repair_required": "LOW_RAW_44_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "blocker": "LOW_RAW_44_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "notes": "Current hour baseline 583; physical net-new +2 from run 576; supplemental 576R1 checked a fresh low-overlap production candidate but physical dedup rejected it. Canonical/contactable 585/585; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Conservative employer-level raw 44 remains below minimum 120."
+  "blocker": null
 }

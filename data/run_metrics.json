@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T01:34:00+03:00",
+  "generated_at": "2026-09-02T02:37:39+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-576R1",
-  "current_run_id": "N5K-20260902-576R1",
+  "latest_completed_run_id": "N5K-20260902-577",
+  "current_run_id": "N5K-20260902-577",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 585,
   "contactable_verified": 585,
@@ -14,32 +14,32 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_576R1": {
-    "raw_discovered": 44,
-    "fast_gate_passed": 14,
-    "size_check_passed": 10,
+  "run_577": {
+    "raw_discovered": 49,
+    "fast_gate_passed": 11,
+    "size_check_passed": 11,
     "legal_match_passed": 8,
-    "signal_confirmed": 8,
+    "signal_confirmed": 6,
     "lpr_identified": 5,
-    "contact_route_found": 5,
+    "contact_route_found": 3,
     "qualified": 0,
     "physically_integrated": 0,
-    "duplicates": 1,
-    "excluded": 43,
+    "duplicates": 3,
+    "excluded": 46,
     "lane_metrics": [
       {
-        "lane": "base_run_576",
-        "distinct_raw": 43,
-        "prequalified": 4,
-        "net_qualified_before_physical_guard": 4,
-        "notes": "Authoritative prior current-hour run; raw below minimum 120."
+        "lane": "fresh_growth_news_0224",
+        "distinct_raw": 31,
+        "prequalified": 2,
+        "net_qualified_before_physical_guard": 2,
+        "notes": "Fresh immutable worker staging from 2026-09-02 02:24 MSK; final global physical dedup delegated to canonical writer."
       },
       {
-        "lane": "supplemental_fresh_production_576R1",
-        "distinct_raw": 1,
+        "lane": "fresh_official_owner_0227",
+        "distinct_raw": 18,
         "prequalified": 1,
         "net_qualified_before_physical_guard": 1,
-        "notes": "Fresh low-overlap production expansion candidate independently resolved to legal entity, current CEO and official contact route. Jobs not used."
+        "notes": "Fresh immutable worker staging from 2026-09-02 02:27 MSK; final global physical dedup delegated to canonical writer."
       }
     ]
   }
