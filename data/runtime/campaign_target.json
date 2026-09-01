@@ -7,7 +7,7 @@
   "progress_added": 579,
   "remaining_to_total_target": 4421,
   "remaining": 4421,
-  "remaining_to_1000": 422,
+  "remaining_to_1000": 421,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,68 +17,51 @@
   "current_run_id": "N5K-20260901-571R1",
   "last_run_id": "N5K-20260901-571R1",
   "latest_completed_run": "N5K-20260901-571R1",
-  "canonical_integration_run_id": "N5K-20260901-571",
+  "canonical_integration_run_id": "N5K-20260901-571R1",
   "hourly_baseline_count": 577,
-  "hourly_net_new": 1,
+  "hourly_net_new": 2,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260901-571",
-    "raw": 37,
-    "fast_gate": 17,
-    "size": 11,
-    "legal": 8,
-    "signal": 5,
-    "lpr": 2,
-    "contact": 2,
+    "run_id": "N5K-20260901-571R1",
+    "raw": 67,
+    "fast_gate": 29,
+    "size": 16,
+    "legal": 9,
+    "signal": 6,
+    "lpr": 3,
+    "contact": 3,
     "qualified": 1,
     "duplicates": 1,
-    "excluded_early_reject": 35,
-    "qualified_raw_pct": 2.7027,
-    "fast_gate_raw_pct": 45.9459,
+    "excluded_early_reject": 65,
+    "qualified_raw_pct": 1.4925,
+    "fast_gate_raw_pct": 43.2836,
     "raw_target_met": false,
     "supplemental_discovery_performed": true,
-    "raw_count_note": "Conservative globally distinct employer-level raw=37: fresh official_owner staging 13 + fresh growth_news staging 16 + 8 non-overlapping canonical-writer supplemental observations. Raw<120; run is disclosed as low-raw, weak catalogs/jobs were not used to inflate volume."
+    "raw_count_note": "Same-hour conservative employer-level distinct raw increased from 37 to 67: original RUN 571 verified distinct 37 plus 30 fresh low-overlap management/dealer/export/partner/regional-investment observations. Raw<120 remains explicitly disclosed; jobs and weak catalogs were not used to inflate volume."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "official_owner",
-      "raw": 13,
+      "lane": "carried_from_571_verified_distinct",
+      "raw": 37,
+      "prequalified_rechecked": 2,
+      "submitted_to_physical_guard": 2,
+      "net_qualified": 1,
+      "physical_duplicates": 1,
+      "next_state": "DO_NOT_REPEAT_SATURATED_SAMPLES"
+    },
+    {
+      "lane": "fresh_management_dealer_export_partner_and_regional_investment",
+      "raw": 30,
       "prequalified_rechecked": 1,
       "submitted_to_physical_guard": 1,
       "net_qualified": 1,
       "physical_duplicates": 0,
       "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
-    },
-    {
-      "lane": "growth_news",
-      "raw": 16,
-      "prequalified_rechecked": 1,
-      "submitted_to_physical_guard": 1,
-      "net_qualified": 0,
-      "physical_duplicates": 1,
-      "next_state": "SWITCH_AWAY_FROM_SATURATED_PRODUCTION_INVESTMENT_SAMPLES"
-    },
-    {
-      "lane": "canonical_writer_low_overlap_supplemental",
-      "raw": 8,
-      "prequalified_rechecked": 0,
-      "submitted_to_physical_guard": 0,
-      "net_qualified": 0,
-      "physical_duplicates": 0,
-      "next_state": "EXPAND_FRESH_MANAGEMENT_DEALER_EXPORT_PARTNER_CHANGE"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-569R2",
-      "raw": 1,
-      "fast_gate": 1,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 100.0
-    },
     {
       "run_id": "N5K-20260901-570R1",
       "raw": 69,
@@ -94,13 +77,21 @@
       "qualified": 1,
       "qualified_raw_pct": 2.7027,
       "fast_gate_raw_pct": 45.9459
+    },
+    {
+      "run_id": "N5K-20260901-571R1",
+      "raw": 67,
+      "fast_gate": 29,
+      "qualified": 1,
+      "qualified_raw_pct": 1.4925,
+      "fast_gate_raw_pct": 43.2836
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -0.1959,
-    "net_new_change": -1,
-    "fast_gate_raw_pct_points": 12.6126,
-    "assessment": "Run produced +1 physical net-new but conservative raw remained below 120. Next cycle must broaden fresh low-overlap management/dealer/export/partner-change sources without weakening qualification criteria."
+    "qualified_raw_pct_points": -1.2102,
+    "net_new_change": 0,
+    "fast_gate_raw_pct_points": -2.6623,
+    "assessment": "Same-hour recovery increased conservative distinct raw from 37 to 67 and added one further physical net-new. Raw remains below 120; continue fresh low-overlap discovery next cycle without weakening criteria."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -112,7 +103,7 @@
     "management_change_commercial_transformation_fresh": 25,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "N5K-20260901-571 consumed fresh official_owner staging 20260901-202900 and growth_news staging 20260901-202409. Two PREQUALIFIED candidates were independently reverified and submitted to the authoritative physical guard; ЭНТЕЛС was integrated, Петровакс Фарм was rejected as an existing canonical duplicate. Pending cleared after integration.",
+  "fresh_staging": "N5K-20260901-571R1 performed same-hour supplemental recovery after low-raw RUN 571. Fresh low-overlap management/dealer/export/partner/regional-investment discovery added 30 conservative distinct employer observations. ООО «Современные стекольные технологии» passed legal/signal/LPR/contact checks and authoritative physical dedup, then was integrated. Pending cleared after integration.",
   "repair_required": null,
-  "note": "N5K-20260901-571R1 completed after physical integration: +1 net new; canonical/contactable 579/579; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-571R1 completed after physical integration: same-hour baseline 577, total hourly net-new +2; canonical/contactable 579/579; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0; conservative raw 67 remains below 120."
 }
