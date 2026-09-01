@@ -1,60 +1,45 @@
 {
-  "run_id": "N5K-20260901-565",
+  "run_id": "N5K-20260901-566",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T15:40:59+03:00",
+  "updated_at": "2026-09-01T15:57:48+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 569,
+    "baseline_count": 571,
     "target_count": 5000,
     "current_canonical_count": 571,
     "current_contactable_count": 571,
-    "progress_added": 2,
+    "progress_added": 0,
     "remaining": 4429
   },
   "funnel": {
-    "discovered": 66,
-    "fast_gate_passed": 17,
-    "size_check_passed": 10,
-    "legal_match_passed": 8,
-    "signal_confirmed": 7,
-    "lpr_identified": 6,
-    "contact_route_found": 5,
-    "qualified": 2,
+    "discovered": 41,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 0,
     "duplicates": 1,
-    "excluded": 63
+    "excluded": 40
   },
   "lane_metrics": [
     {
-      "lane": "official_owner_worker",
-      "raw": 46,
-      "fast_gate": 14,
-      "size": 7,
-      "legal": 5,
-      "signal": 4,
-      "lpr": 3,
-      "contact": 2,
-      "prequalified": 2,
-      "source_batches": 7
-    },
-    {
       "lane": "supplemental_low_overlap_discovery",
-      "raw": 20,
-      "fast_gate": 3,
-      "size": 3,
-      "legal": 3,
-      "signal": 3,
-      "lpr": 3,
-      "contact": 3,
+      "raw": 41,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
       "prequalified": 1,
-      "source_batches": 8,
-      "note": "Fresh batches: management change, regional/new production, export/dealer, automation/robotization, food/FMCG capacity, industrial components, logistics expansion, partner/business-change. Weak or state-heavy observations were not padded into raw."
+      "source_batches": 16,
+      "note": "Sixteen fresh low-overlap batches across regional/new production, export/dealer, management/business-change, automation, industrial capacity and partner/business-change. Raw remained below 120 because only concrete employer-level observations were counted; weak, state-heavy, repeated and non-resolved results were not padded."
     }
   ],
-  "qualified_companies": [
-    "Лалибела Кофе",
-    "Русбутираль"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
