@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T22:52:00+03:00",
+  "updated_at": "2026-09-01T22:59:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-572R1",
-  "current_run_id": "N5K-20260901-573R1",
-  "last_run_id": "N5K-20260901-573R1",
-  "latest_completed_run": "N5K-20260901-572R1",
+  "last_completed_run_id": "N5K-20260901-573R2",
+  "current_run_id": "N5K-20260901-573R2",
+  "last_run_id": "N5K-20260901-573R2",
+  "latest_completed_run": "N5K-20260901-573R2",
   "latest_attempted_run": "N5K-20260901-573R1",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260901-573R1",
@@ -117,5 +117,5 @@
   },
   "fresh_staging": "573R1 consumed the fresh 22:26 growth_news staging and the fresh 22:30 official_owner staging that arrived during the same cycle. Semargl was rejected by canonical recheck; Rusbutyral was submitted to the physical writer and rejected as an existing four-key canonical duplicate. Staged qualified is 0.",
   "repair_required": null,
-  "note": "N5K-20260901-573R1 physically guarded with +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0. LOW RAW 38 explicitly disclosed; latest normal fully completed run remains N5K-20260901-572R1."
+  "note": "N5K-20260901-573R2 completed after physical integration: +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T22:48:00+03:00",
+  "generated_at": "2026-09-01T22:59:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-573R1",
-  "current_run_id": "N5K-20260901-573R1",
+  "latest_completed_run_id": "N5K-20260901-573R2",
+  "current_run_id": "N5K-20260901-573R2",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 580,
   "contactable_verified": 580,
@@ -14,38 +14,32 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_573R1": {
-    "raw_discovered": 38,
-    "fast_gate_passed": 12,
-    "size_check_passed": 8,
-    "legal_match_passed": 7,
-    "signal_confirmed": 7,
-    "lpr_identified": 4,
-    "contact_route_found": 2,
+  "run_573R2": {
+    "raw_discovered": 63,
+    "fast_gate_passed": 18,
+    "size_check_passed": 12,
+    "legal_match_passed": 10,
+    "signal_confirmed": 9,
+    "lpr_identified": 6,
+    "contact_route_found": 4,
     "qualified": 0,
     "physically_integrated": 0,
-    "duplicates": 1,
-    "excluded": 37,
+    "duplicates": 3,
+    "excluded": 61,
     "lane_metrics": [
       {
-        "lane": "fresh_growth_news_staging",
-        "distinct_raw": 16,
-        "prequalified": 1,
-        "canonical_recheck_result": "REJECT_FAST",
-        "notes": "Semargl independently rejected because current authoritative sources identify it as part of / consolidated by Concern Kalashnikov; private-company gate unchanged."
+        "lane": "prior_573R1_conservative_distinct",
+        "distinct_raw": 38,
+        "prequalified": 2,
+        "qualified": 0,
+        "notes": "Inherited factual 573R1 distinct raw; no double-counting of its source overlaps."
       },
       {
-        "lane": "fresh_official_owner_staging",
-        "distinct_raw": 32,
-        "prequalified": 1,
-        "canonical_recheck_result": "RUSBUTIRAL_READY_FOR_PHYSICAL_DEDUP",
-        "notes": "Fresh 22:30 staging consumed. Worker candidate independently reverified for legal status, scale, dated S1 signal, director/LPR and published official contact route."
-      },
-      {
-        "lane": "canonical_low_overlap_supplemental",
-        "distinct_raw": 14,
-        "prequalified": 0,
-        "notes": "Supplemental canonical discovery rotated across fresh production/investment, regional expansion, management change, export/dealer/branch and commercial-change sources. Due cross-lane overlap, total RUN discovered is conservatively reported as 38, not the arithmetic sum of lane raws. No jobs/catalog padding or search-result-line inflation."
+        "lane": "fresh_regional_production_and_investment_recovery",
+        "distinct_raw": 25,
+        "prequalified": 4,
+        "qualified": 2,
+        "notes": "Fresh low-overlap August/September production, plant expansion, regional investment and management-change observations manually screened at employer level. State-linked, foreign-only, weak-signal and unresolved legal candidates were rejected early; jobs not used."
       }
     ]
   }
