@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T22:00:25+03:00",
+  "generated_at": "2026-09-01T22:43:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-572R1",
-  "current_run_id": "N5K-20260901-572R1",
+  "latest_completed_run_id": "N5K-20260901-573",
+  "current_run_id": "N5K-20260901-573",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 580,
   "contactable_verified": 580,
@@ -14,30 +14,32 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_572R1": {
-    "raw_discovered": 41,
-    "fast_gate_passed": 18,
-    "size_check_passed": 14,
-    "legal_match_passed": 12,
-    "signal_confirmed": 11,
-    "lpr_identified": 8,
-    "contact_route_found": 6,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 4,
-    "excluded": 36,
+  "run_573": {
+    "raw_discovered": 30,
+    "fast_gate_passed": 8,
+    "size_check_passed": 5,
+    "legal_match_passed": 4,
+    "signal_confirmed": 4,
+    "lpr_identified": 2,
+    "contact_route_found": 1,
+    "qualified": 0,
+    "physically_integrated": 0,
+    "duplicates": 0,
+    "excluded": 30,
     "lane_metrics": [
       {
-        "lane": "growth_news",
-        "distinct_raw": 24,
-        "prequalified": 3,
-        "notes": "Fresh growth/new-production discovery; no criteria weakened."
+        "lane": "fresh_growth_news_staging",
+        "distinct_raw": 16,
+        "prequalified": 1,
+        "qualified_after_canonical_recheck": 0,
+        "notes": "Fresh immutable staging 20260901-222644-growth-news.json consumed first. Semargl independently rechecked and rejected at FAST GATE because current authoritative sources identify it as part of / consolidated by Concern Kalashnikov; CURRENT_WORKING_CONFIG private-company gate was not weakened."
       },
       {
-        "lane": "official_owner",
-        "distinct_raw": 18,
-        "prequalified": 3,
-        "notes": "Fresh official-owner/production-change discovery. One employer overlap with growth_news removed conservatively."
+        "lane": "canonical_low_overlap_supplemental",
+        "distinct_raw": 14,
+        "prequalified": 0,
+        "qualified_after_canonical_recheck": 0,
+        "notes": "Supplemental discovery rotated across fresh production/investment, regional expansion, management change, export/dealer/branch and commercial-change signals. Resolved employer-level examples included Tsifra, Eltex, NEK/Luch, Petrovax Pharm, SIMAZ, TechnoNICOL, Polimer Golden, LOMO, Selectel, Garmoniya doors, NZNK, Technoplast/MGC Group, Otradaagroinvest/Rusagro and INK. Search-result lines and unresolved entities were not counted as raw. No jobs/catalog padding."
       }
     ]
   }

@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T22:00:25+03:00",
+  "updated_at": "2026-09-01T22:43:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-572R1",
-  "current_run_id": "N5K-20260901-572R1",
-  "last_run_id": "N5K-20260901-572R1",
-  "latest_completed_run": "N5K-20260901-572R1",
+  "last_completed_run_id": "N5K-20260901-573",
+  "current_run_id": "N5K-20260901-573",
+  "last_run_id": "N5K-20260901-573",
+  "latest_completed_run": "N5K-20260901-573",
   "canonical_integration_run_id": "N5K-20260901-572R1",
   "hourly_baseline_count": 579,
   "hourly_net_new": 1,
@@ -42,13 +42,50 @@
     "raw_count_note": "Two fresh workers produced 24 and 18 employer-level raw; one explicit cross-worker employer overlap was removed conservatively, yielding 41 verified distinct raw. Same-cycle supplemental web discovery was also performed across fresh production/investment, management-change and partner/business-change sources, but those observations are not added to authoritative raw without complete cross-source employer resolution. Raw<120 remains explicitly disclosed; criteria were not weakened and jobs were not used to inflate volume."
   },
   "latest_run_lane_efficiency": [
-    {"lane":"growth_news","raw":24,"prequalified_rechecked":3,"submitted_to_physical_guard":2,"net_qualified":1,"physical_duplicates":1,"next_state":"CONTINUE_FRESH_LOW_OVERLAP"},
-    {"lane":"official_owner","raw":18,"prequalified_rechecked":3,"submitted_to_physical_guard":1,"net_qualified":0,"physical_duplicates":1,"next_state":"DO_NOT_REPEAT_SATURATED_SAMPLES"}
+    {
+      "lane": "growth_news",
+      "raw": 24,
+      "prequalified_rechecked": 3,
+      "submitted_to_physical_guard": 2,
+      "net_qualified": 1,
+      "physical_duplicates": 1,
+      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
+    },
+    {
+      "lane": "official_owner",
+      "raw": 18,
+      "prequalified_rechecked": 3,
+      "submitted_to_physical_guard": 1,
+      "net_qualified": 0,
+      "physical_duplicates": 1,
+      "next_state": "DO_NOT_REPEAT_SATURATED_SAMPLES"
+    }
   ],
   "last_3_run_efficiency": [
-    {"run_id":"N5K-20260901-571","raw":37,"fast_gate":17,"qualified":1,"qualified_raw_pct":2.7027,"fast_gate_raw_pct":45.9459},
-    {"run_id":"N5K-20260901-571R1","raw":67,"fast_gate":29,"qualified":1,"qualified_raw_pct":1.4925,"fast_gate_raw_pct":43.2836},
-    {"run_id":"N5K-20260901-572R1","raw":41,"fast_gate":18,"qualified":1,"qualified_raw_pct":2.439,"fast_gate_raw_pct":43.9024}
+    {
+      "run_id": "N5K-20260901-571",
+      "raw": 37,
+      "fast_gate": 17,
+      "qualified": 1,
+      "qualified_raw_pct": 2.7027,
+      "fast_gate_raw_pct": 45.9459
+    },
+    {
+      "run_id": "N5K-20260901-571R1",
+      "raw": 67,
+      "fast_gate": 29,
+      "qualified": 1,
+      "qualified_raw_pct": 1.4925,
+      "fast_gate_raw_pct": 43.2836
+    },
+    {
+      "run_id": "N5K-20260901-572R1",
+      "raw": 41,
+      "fast_gate": 18,
+      "qualified": 1,
+      "qualified_raw_pct": 2.439,
+      "fast_gate_raw_pct": 43.9024
+    }
   ],
   "efficiency_change_vs_previous_run": {
     "qualified_raw_pct_points": 0.9465,
@@ -68,5 +105,5 @@
   },
   "fresh_staging": "N5K-20260901-572R1 repaired a missing canonical write after two fresh worker staging commits. Three prequalified candidates were submitted to the existing authoritative physical dedup writer; KCG / ООО «КАРТАС» was physically integrated and two candidates were skipped by physical dedup. Pending cleared after integration.",
   "repair_required": null,
-  "note": "N5K-20260901-572R1 completed after physical integration: +1 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Raw target 120 not met."
+  "note": "N5K-20260901-573 completed after physical integration: +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
