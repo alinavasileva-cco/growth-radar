@@ -1,8 +1,141 @@
 {
-  "run_id": "N5K-20260901-574R2",
-  "updated_at": "2026-09-01T23:58:00+03:00",
-  "status": "CLEARED_NO_QUALIFIED_AFTER_SUPPLEMENTAL",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "574R1 canonical writer physically processed all fresh prequalified staging and found 3/3 existing canonical duplicates. 574R2 supplemental low-overlap discovery produced no additional fully qualified candidate; no redundant canonical writer created. canonical/contactable 580/580; integrity PASS; orphan 0/0; WIP 0; outreach 0."
+  "run_id": "N5K-20260902-575R1",
+  "updated_at": "2026-09-02T00:51:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 3,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0759",
+      "Brand": "Аксис",
+      "Legal Name": "ООО «АКСИС»",
+      "INN": "5257164240",
+      "OGRN/OGRNIP": "1165275041876",
+      "Region": "Нижегородская область",
+      "City": "Дзержинск",
+      "Segment": "промышленное производство / металлорежущий инструмент",
+      "Website": "https://b2b.instrumentgroup.ru/",
+      "Revenue/Scale": "Новый промышленный завод: инвестиции более 3,5 млрд ₽; заявлено более 400 рабочих мест.",
+      "Signal Level": "S1",
+      "Signal Summary": "24.08.2026 в ОЭЗ «Кулибин» запущен первый корпус производства твердосплавного металлорежущего инструмента полного цикла и технологической оснастки завода «Аксис».",
+      "Signal Date": "2026-08-24",
+      "Signal Source": "https://www.bfm.ru/news/616052",
+      "Owner": "",
+      "CEO": "Малов Артем Евгеньевич",
+      "LPR": "Малов Артем Евгеньевич",
+      "LPR Role": "директор",
+      "Primary Phone": "8 800 550-45-83",
+      "Primary Email": "b2b@instrumentgroup.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "официальный B2B-маршрут группы с прямой привязкой производства Аксис",
+      "Contact Source": "https://b2b.instrumentgroup.ru/contacts/",
+      "Consulting Hypothesis": "Коммерческое и операционное масштабирование после запуска нового производственного корпуса: загрузка мощности, B2B pipeline, KPI и экономика роста.",
+      "contacts": [
+        {"value":"b2b@instrumentgroup.ru","channel":"email","type":"official group B2B email","source":"ГК Инструмент","url":"https://b2b.instrumentgroup.ru/contacts/","is_lpr":false,"notes":"Официальный B2B-маршрут; страница контактов группы перечисляет производство Аксис."},
+        {"value":"8 800 550-45-83","channel":"phone","type":"official group B2B phone","source":"ГК Инструмент","url":"https://b2b.instrumentgroup.ru/contacts/","is_lpr":false,"notes":"Официальный B2B-маршрут; страница контактов группы перечисляет производство Аксис."}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «АКСИС», ИНН 5257164240, ОГРН 1165275041876; директор Малов Артем Евгеньевич.","url":"https://www.klerk.ru/tool/ocompany/1165275041876/","source":"Клерк"},
+        {"type":"SIZE","claim":"Новый промышленный завод: инвестиции более 3,5 млрд ₽; более 400 заявленных рабочих мест.","url":"https://www.bfm.ru/news/616052","source":"BFM"},
+        {"type":"SIGNAL","claim":"24.08.2026 запущен первый корпус производства Аксис в ОЭЗ Кулибин.","url":"https://www.bfm.ru/news/616052","source":"BFM"},
+        {"type":"LPR","claim":"Директор — Малов Артем Евгеньевич.","url":"https://www.klerk.ru/tool/ocompany/1165275041876/","source":"Клерк"},
+        {"type":"CONTACT","claim":"Официальная страница ГК Инструмент публикует B2B email/телефон и перечисляет производство Аксис.","url":"https://b2b.instrumentgroup.ru/contacts/","source":"ГК Инструмент"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0760",
+      "Brand": "Ай-Пласт / iPlast",
+      "Legal Name": "ООО «Ай-Пласт»",
+      "INN": "1651057721",
+      "OGRN/OGRNIP": "1091651001749",
+      "Region": "Республика Татарстан",
+      "City": "Нижнекамск",
+      "Segment": "промышленное производство пластиковой тары и логистических решений",
+      "Website": "https://iplast.com/",
+      "Revenue/Scale": "Публичный профиль за 2025 год указывает выручку около 10,4 млрд ₽; действующее многоплощадочное производство.",
+      "Signal Level": "S1",
+      "Signal Summary": "23.06.2026 подписано соглашение о создании нового производственно-логистического комплекса площадью 40 000 м² во Владимирской области; инвестиции 3,6 млрд ₽.",
+      "Signal Date": "2026-06-23",
+      "Signal Source": "https://iplast.com/press-center/news/events/i-plast-investiruet-v-novyy-proizvodstvennyy-kompleks-vo-vladimirskoy-oblasti/",
+      "Owner": "",
+      "CEO": "Игорь Анатольевич Удотов",
+      "LPR": "Игорь Анатольевич Удотов",
+      "LPR Role": "генеральный директор",
+      "Primary Phone": "+7 (8555) 32-04-06",
+      "Primary Email": "office@iplast.com",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "официальные опубликованные корпоративные контакты",
+      "Contact Source": "https://iplast.com/contacts/factories/",
+      "Consulting Hypothesis": "Масштабирование коммерческой и операционной модели на фоне создания нового производственно-логистического комплекса: загрузка мощностей, B2B продажи, KPI и управленческая экономика.",
+      "contacts": [
+        {"value":"office@iplast.com","channel":"email","type":"official company email","source":"iPlast","url":"https://iplast.com/contacts/factories/","is_lpr":false,"notes":"Опубликованный официальный корпоративный маршрут."},
+        {"value":"info@iplast.com","channel":"email","type":"official company email","source":"iPlast","url":"https://iplast.com/contacts/factories/","is_lpr":false,"notes":"Опубликованный официальный корпоративный маршрут."},
+        {"value":"+7 (8555) 32-04-06","channel":"phone","type":"official company phone","source":"iPlast","url":"https://iplast.com/contacts/factories/","is_lpr":false,"notes":"Опубликованный официальный маршрут."}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «Ай-Пласт» действует; официальные реквизиты подтверждают юридическое лицо.","url":"https://iplast.com/legality/requisites/","source":"iPlast"},
+        {"type":"SIZE","claim":"Публичный профиль за 2025 год указывает выручку около 10,4 млрд ₽; компания имеет многоплощадочное производство.","url":"https://sledi.ru/ay-plast-1651057721/","source":"Sledi.ru"},
+        {"type":"SIGNAL","claim":"23.06.2026 подписано соглашение о новом комплексе 40 000 м² с инвестициями 3,6 млрд ₽.","url":"https://iplast.com/press-center/news/events/i-plast-investiruet-v-novyy-proizvodstvennyy-kompleks-vo-vladimirskoy-oblasti/","source":"iPlast"},
+        {"type":"LPR","claim":"Генеральный директор — Игорь Анатольевич Удотов.","url":"https://iplast.com/legality/requisites/","source":"iPlast"},
+        {"type":"CONTACT","claim":"Официально опубликованы корпоративные email и телефон.","url":"https://iplast.com/contacts/factories/","source":"iPlast"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0761",
+      "Brand": "ГлазЦентр Краснодар",
+      "Legal Name": "ООО «ГлазЦентр-Краснодар»",
+      "INN": "2308267794",
+      "OGRN/OGRNIP": "1192375058260",
+      "Region": "Краснодарский край",
+      "City": "Краснодар",
+      "Segment": "частная медицина / офтальмология",
+      "Website": "https://krasnodar.glazcentre.ru/",
+      "Revenue/Scale": "Публичный финансовый профиль за 2025 год указывает доход 300,795 млн ₽; в Краснодаре действует сеть из двух филиалов.",
+      "Signal Level": "S1",
+      "Signal Summary": "11.06.2026 открыт второй филиал клиники в Краснодаре; компания заявляет дальнейшее развитие.",
+      "Signal Date": "2026-06-11",
+      "Signal Source": "https://south.vedomosti.ru/press_releases/2026/06/11/glaztsentr-otkril-vtoroi-filial-v-krasnodare",
+      "Owner": "Светлана Юрьевна Слюсаренко",
+      "CEO": "Светлана Юрьевна Слюсаренко",
+      "LPR": "Светлана Юрьевна Слюсаренко",
+      "LPR Role": "генеральный директор / собственник",
+      "Primary Phone": "8 800 70 70 616",
+      "Primary Email": "doc@glazcentre.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "официальные опубликованные контакты клиники",
+      "Contact Source": "https://krasnodar.glazcentre.ru/kontakty/",
+      "Consulting Hypothesis": "Управление ростом после открытия второго филиала: экономика филиальной сети, коммерческие KPI, загрузка врачей и маркетингово-продажная воронка.",
+      "contacts": [
+        {"value":"doc@glazcentre.ru","channel":"email","type":"official clinic email","source":"ГлазЦентр Краснодар","url":"https://krasnodar.glazcentre.ru/kontakty/","is_lpr":false,"notes":"Опубликованный официальный маршрут."},
+        {"value":"krd@glazcentre.ru","channel":"email","type":"official clinic email","source":"ГлазЦентр Краснодар","url":"https://krasnodar.glazcentre.ru/kontakty/","is_lpr":false,"notes":"Опубликованный официальный маршрут."},
+        {"value":"8 800 70 70 616","channel":"phone","type":"official clinic phone","source":"ГлазЦентр Краснодар","url":"https://krasnodar.glazcentre.ru/kontakty/","is_lpr":false,"notes":"Опубликованный официальный маршрут."}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО «ГлазЦентр-Краснодар» действует; юридическое лицо подтверждено актуальным публичным профилем и официальными реквизитами.","url":"https://companies.rbc.ru/id/1192375058260-obschestvo-s-ogranichennoj-otvetstvennostyu-glaztsentr-krasnodar/","source":"РБК Компании"},
+        {"type":"SIZE","claim":"Публичный финансовый профиль за 2025 год указывает доход 300,795 млн ₽; сеть имеет два филиала в Краснодаре.","url":"https://www.prima-inform.ru/cat/cc/glazcentr-krasnodar-1192375058260-2308267794","source":"Prima-Inform"},
+        {"type":"SIGNAL","claim":"11.06.2026 открыт второй филиал в Краснодаре; заявлено дальнейшее развитие.","url":"https://south.vedomosti.ru/press_releases/2026/06/11/glaztsentr-otkril-vtoroi-filial-v-krasnodare","source":"Ведомости Юг"},
+        {"type":"LPR","claim":"Генеральный директор / собственник — Светлана Юрьевна Слюсаренко.","url":"https://krasnodar.glazcentre.ru/rekvizity/","source":"ГлазЦентр Краснодар"},
+        {"type":"CONTACT","claim":"Официально опубликованы email и телефон клиники.","url":"https://krasnodar.glazcentre.ru/kontakty/","source":"ГлазЦентр Краснодар"}
+      ]
+    }
+  ],
+  "funnel": {
+    "discovered": 35,
+    "fast_gate_passed": 15,
+    "size_check_passed": 11,
+    "legal_match_passed": 9,
+    "signal_confirmed": 8,
+    "lpr_identified": 5,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 32
+  },
+  "lane_metrics": [
+    {"lane":"fresh_official_owner_0024","distinct_raw":18,"prequalified":2,"notes":"Fresh worker staging; no criteria weakening."},
+    {"lane":"fresh_growth_news_0027","distinct_raw":18,"prequalified":1,"notes":"Fresh worker staging; one cross-lane overlap conservatively removed from raw total."}
+  ],
+  "notes": "Same-hour recovery from fresh worker staging. Final authoritative physical dedup must run in canonical writer. Historical pending tree truncation does not block discovery. Outreach forbidden."
 }
