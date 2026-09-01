@@ -1,0 +1,141 @@
+{
+  "lane": "growth_news",
+  "created_at": "2026-09-01T22:26:44+03:00",
+  "immutable": true,
+  "canonical_write": false,
+  "outreach": false,
+  "config_source": "CURRENT_WORKING_CONFIG.md",
+  "canonical_snapshot": {
+    "physical_canonical": 580,
+    "physical_contactable": 580,
+    "integrity_status": "PASS",
+    "source": "data/runtime/current_run_status.json",
+    "updated_at": "2026-09-01T22:00:25+03:00"
+  },
+  "metrics": {
+    "raw_distinct_employers": 16,
+    "fast_gate_passed": 8,
+    "size_passed": 5,
+    "legal_passed": 4,
+    "signal_passed": 4,
+    "lpr_passed": 2,
+    "contact_passed": 1,
+    "prequalified_needs_final_global_dedup": 1,
+    "rejected": 15,
+    "source_batches": 8,
+    "quota_80_150_reached": false,
+    "quota_fill_policy": "No weak directory padding; criteria unchanged."
+  },
+  "source_batches": [
+    {"batch":"RU-fresh-production-launch","query":"открыли новое производство август 2026 компания Россия инвестиции","notes":"Fresh launches; duplicates/large public groups rejected early."},
+    {"batch":"RU-production-start","query":"запустил производство август 2026 предприятие инвестиции Россия","notes":"Fresh production starts."},
+    {"batch":"RU-new-sites","query":"новая производственная площадка август 2026 компания","notes":"New sites and capacity expansion."},
+    {"batch":"RU-expansion","query":"расширение производства август 2026 компания Россия","notes":"Capacity expansion."},
+    {"batch":"RU-invest-projects","query":"инвестиционный проект август 2026 завод компания","notes":"Investment projects."},
+    {"batch":"RU-branches-regions","query":"открыла новый филиал август 2026 компания Россия","notes":"Regional/branch expansion; no weak retail-only candidates promoted."},
+    {"batch":"RU-export-growth","query":"экспорт август 2026 компания производство расширение","notes":"Export/growth signals; non-Russian and state-owned entities rejected."},
+    {"batch":"SPB-robotics-semarql","query":"ООО Семаргл ИНН ОГРН директор официальный сайт контакты роботы","notes":"Candidate-level deep verification for fresh robotics plant signal."}
+  ],
+  "dedup_policy": {
+    "historical_pending_full_read_required": false,
+    "pre_deep_check": "physical canonical/contactable + current compact runtime/index where available",
+    "candidate_level_repo_search_keys": ["INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"],
+    "final_global_dedup_owner": "canonical writer"
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Семаргл",
+      "legal_name": "ООО \"СЕМАРГЛ\"",
+      "inn": "7814454694",
+      "ogrn": "1099847019580",
+      "domain": "semargl.pro",
+      "size": {
+        "result": "PASS",
+        "evidence": "Audit-It dossier dated 2026-08-10 marks scale as large; new plant 7.6k sq.m, 5.9k sq.m production, about RUB 1bn declared investment and 150 planned high-productivity jobs.",
+        "urls": ["https://www.audit-it.ru/contragent/1099847019580_ooo-semargl", "https://www.spbsez.ru/media/news/kontsern-kalashnikov-otkryl-robotizirovannoe-proizvodstvo-v-oez-sankt-peterburg/"]
+      },
+      "legal": {
+        "result": "PASS",
+        "evidence": "Active commercial LLC; INN 7814454694, OGRN 1099847019580, St Petersburg; production of lifting/transport equipment.",
+        "url": "https://www.audit-it.ru/contragent/1099847019580_ooo-semargl"
+      },
+      "signal": {
+        "result": "PASS",
+        "type": "new_production_site_robotics",
+        "date": "2026-06-03",
+        "evidence": "Official SEZ St Petersburg news: Semargl opened a plant for automated storage/transport systems and industrial robots; declared investment about RUB 1bn, 686m already invested.",
+        "url": "https://www.spbsez.ru/media/news/kontsern-kalashnikov-otkryl-robotizirovannoe-proizvodstvo-v-oez-sankt-peterburg/"
+      },
+      "lpr": {
+        "result": "PASS",
+        "name": "Андрей Александрович Егоров",
+        "role": "генеральный директор",
+        "evidence_urls": ["https://www.spbsez.ru/media/news/kontsern-kalashnikov-otkryl-robotizirovannoe-proizvodstvo-v-oez-sankt-peterburg/", "https://semargl.pro/upload/medialibrary/a93/perechen-meroproiyatiy-po-rezultatam-sout-2023g.pdf"]
+      },
+      "contact": {
+        "result": "PASS",
+        "route": "official company general contact",
+        "phone": "+7 (812) 702 10 21",
+        "email": "info@semargl.pro",
+        "url": "https://semargl.pro/info/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "exact_legal_name_repo_search": "NO_MATCH",
+        "brand_domain_repo_search": "NO_MATCH",
+        "final_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "REJECT",
+      "brand": "Сайбер Электро",
+      "reason_stage": "LEGAL",
+      "reason": "Fresh 2026-09-01 second-site signal confirmed, but search did not unambiguously resolve the Russian operating legal entity behind the brand; no guessing allowed.",
+      "signal_url": "https://www.cnews.ru/news/line/2026-09-01_dlya_sajber_elektrootkryta"
+    },
+    {
+      "status": "REJECT",
+      "brand": "Тракс",
+      "legal_name": "ООО \"ТРАКС\"",
+      "inn": "5029230133",
+      "ogrn": "1185029008130",
+      "reason_stage": "LPR",
+      "reason": "Fresh 2026-06-19 new production site and legal/contact route found, but current specific owner/CEO was not verified in this cycle.",
+      "signal_url": "https://abnews.ru/center/news/mosreg/2026/6/19/ksk-vlozhit-2-mlrd-v-vypusk-kompressorov-i-ventilyatorov-dlya-transporta-v-podmoskove",
+      "contact_evidence": "https://anosudprom.ru/traks/"
+    },
+    {
+      "status": "REJECT",
+      "brand": "Сибирская академия молочных продуктов",
+      "reason_stage": "LEGAL",
+      "reason": "Strong 2026-08-11 RUB 34.5bn plant launch signal, but full legal keys and official practical contact route were not verified in this cycle.",
+      "signal_url": "https://www.kommersant.ru/doc/8877291"
+    },
+    {
+      "status": "REJECT",
+      "brand": "Кондитерская фабрика Победа",
+      "legal_name": "ООО \"КОНДИТЕРСКАЯ ФАБРИКА \"ПОБЕДА\"",
+      "inn": "7729390753",
+      "ogrn": "1027739437758",
+      "reason_stage": "SIGNAL",
+      "reason": "Expansion signal dated 2026-01-27 is outside the preferred last-180-days freshness window for this cycle; not promoted despite legal/LPR/contact verification.",
+      "signal_url": "https://www.vedomosti.ru/press_releases/2026/01/27/konditerskaya-fabrika-pobeda-vlozhit-2-mlrd-rublei-v-rasshirenie-proizvodstva",
+      "contact_url": "https://www.pobedavkusa.ru/contacts/"
+    },
+    {
+      "status": "REJECT",
+      "brand": "KPI / Kazakhstan Petrochemical Industries",
+      "reason_stage": "FAST",
+      "reason": "Non-Russian company; excluded before deep check.",
+      "signal_url": "https://www.interfax.kz/ru/financial-and-economic-news/141082"
+    }
+  ],
+  "notes": [
+    "No historical pending tree full-materialization was required before discovery.",
+    "No staged/prequalified candidate is counted as added or QUALIFIED.",
+    "Canonical/contactable/runtime/campaign files were not modified.",
+    "Outreach was not performed."
+  ]
+}
