@@ -25,22 +25,10 @@
     "excluded": 36
   },
   "lane_metrics": [
-    {
-      "lane": "growth_news",
-      "distinct_raw": 24,
-      "prequalified": 3,
-      "notes": "Fresh growth/new-production discovery; no criteria weakened."
-    },
-    {
-      "lane": "official_owner",
-      "distinct_raw": 18,
-      "prequalified": 3,
-      "notes": "Fresh official-owner/production-change discovery. One employer overlap with growth_news removed conservatively."
-    }
+    {"lane":"growth_news","distinct_raw":24,"prequalified":3,"notes":"Fresh growth/new-production discovery; no criteria weakened."},
+    {"lane":"official_owner","distinct_raw":18,"prequalified":3,"notes":"Fresh official-owner/production-change discovery. One employer overlap with growth_news removed conservatively."}
   ],
-  "qualified_companies": [
-    "KCG / Kartastech Computers Group"
-  ],
+  "qualified_companies": ["KCG / Kartastech Computers Group"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
