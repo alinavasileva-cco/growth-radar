@@ -1,16 +1,16 @@
 {
-  "run_id": "N5K-20260901-560",
+  "run_id": "N5K-20260901-560R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T11:06:00+03:00",
+  "updated_at": "2026-09-01T11:10:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 565,
     "target_count": 5000,
-    "current_canonical_count": 565,
-    "current_contactable_count": 565,
-    "progress_added": 0,
-    "remaining": 4435
+    "current_canonical_count": 566,
+    "current_contactable_count": 566,
+    "progress_added": 1,
+    "remaining": 4434
   },
   "funnel": {
     "discovered": 38,
@@ -20,8 +20,8 @@
     "signal_confirmed": 2,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 2,
+    "qualified": 1,
+    "duplicates": 1,
     "excluded": 37
   },
   "lane_metrics": [
@@ -41,7 +41,7 @@
       "qualified_raw_pct": 4.0,
       "fast_gate_raw_pct": 20.0,
       "duplicate_early_reject_pct": 96.0,
-      "notes": "Fresh regional/new-production searches were rotated across Moscow region, Bashkortostan, Tver, Kaluga, Rostov, Ulyanovsk, Sverdlovsk, Novosibirsk, Krasnodar, Samara and Nizhny Novgorod. Pollex Beauty was rejected as a physical canonical duplicate because its INN/OGRN match an existing legal identity already represented in canonical."
+      "notes": "Repair of 560: candidate was not a canonical company duplicate; physical guard skipped it only because the initially assigned Lead ID N5K-0566 already existed. Candidate keys INN 5040054932, OGRN 1025005116014 and exact legal name remained absent. Corrected to next checked ID N5K-0734. Exact regional source sample is now probe-only due >70% duplicate+early reject."
     },
     {
       "lane": "export_dealer_management_partner_change",
@@ -59,16 +59,18 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 7.6923,
       "duplicate_early_reject_pct": 100.0,
-      "notes": "Second-wave discovery rotated into export/dealer/franchise expansion, management change, commercial transformation and partner/business-change. Exact search sample saturated early and will not be repeated unchanged."
+      "notes": "Second-wave sample saturated and will be rotated rather than repeated."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Larta Glass / Ларта Гласс Раменское"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "565_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "565_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "566_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "566_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
