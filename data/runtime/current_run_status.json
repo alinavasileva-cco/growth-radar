@@ -34,11 +34,14 @@
       "signal": 7,
       "lpr": 4,
       "contact": 3,
-      "qualified": 3,
-      "duplicate_plus_early_reject": 78,
-      "qualified_raw_pct": 3.7037,
+      "qualified": 1,
+      "duplicates": 2,
+      "early_reject": 78,
+      "duplicate_plus_early_reject": 80,
+      "qualified_raw_pct": 1.2346,
       "fast_gate_raw_pct": 35.8025,
-      "notes": "Fresh official/company/owner/business-change staging across seven source batches. Final canonical-writer dedup repeated by INN, OGRN, exact legal name and brand/domain. 3 net-new candidates survived final prewrite guard."
+      "duplicate_early_reject_pct": 98.7654,
+      "notes": "Postwrite NET metrics after physical canonical dedup. ARAVIA integrated; Группа Теплолюкс and Борус were removed as historical duplicates by INN+OGRN."
     },
     {
       "lane": "growth_news",
@@ -50,10 +53,13 @@
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
+      "duplicates": 0,
+      "early_reject": 26,
       "duplicate_plus_early_reject": 26,
       "qualified_raw_pct": 3.7037,
       "fast_gate_raw_pct": 44.4444,
-      "notes": "Fresh growth-news staging across six source batches. Historical pending-tree truncation was ignored as a blocker. KAZ survived candidate-level canonical dedup."
+      "duplicate_early_reject_pct": 96.2963,
+      "notes": "Postwrite NET metrics. Курский аккумуляторный завод / КАЗ integrated after physical canonical dedup. Historical pending-tree truncation was not a blocker."
     },
     {
       "lane": "supplemental_low_overlap",
@@ -65,12 +71,71 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
+      "duplicates": 0,
+      "early_reject": 19,
       "duplicate_plus_early_reject": 19,
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 0.0,
-      "notes": "Additional low-overlap export/dealer/franchise/new-production observations were used only to move global distinct raw above the early-saturation threshold; none was deep-promoted without full evidence."
+      "duplicate_early_reject_pct": 100.0,
+      "notes": "This exact supplemental sample saturated at FAST GATE and must not be repeated; rotate to fresh low-overlap sources."
     }
   ],
+  "global_efficiency": {
+    "raw": 121,
+    "fast_gate": 41,
+    "qualified": 2,
+    "duplicates": 2,
+    "early_reject": 117,
+    "duplicate_plus_early_reject": 119,
+    "qualified_raw_pct": 1.6529,
+    "fast_gate_raw_pct": 33.8843,
+    "duplicate_early_reject_pct": 98.3471
+  },
+  "last_3_run_efficiency": [
+    {
+      "run_id": "N5K-20260901-557R1",
+      "raw": 8,
+      "fast_gate": 4,
+      "qualified": 1,
+      "qualified_raw_pct": 12.5,
+      "fast_gate_raw_pct": 50.0,
+      "duplicate_early_reject_pct": 87.5
+    },
+    {
+      "run_id": "N5K-20260901-558",
+      "raw": 18,
+      "fast_gate": 10,
+      "qualified": 1,
+      "qualified_raw_pct": 5.5556,
+      "fast_gate_raw_pct": 55.5556,
+      "duplicate_early_reject_pct": 94.4444
+    },
+    {
+      "run_id": "N5K-20260901-559",
+      "raw": 121,
+      "fast_gate": 41,
+      "qualified": 2,
+      "qualified_raw_pct": 1.6529,
+      "fast_gate_raw_pct": 33.8843,
+      "duplicate_early_reject_pct": 98.3471
+    }
+  ],
+  "efficiency_change_vs_previous_run": {
+    "qualified_raw_pct_points": -3.9027,
+    "fast_gate_raw_pct_points": -21.6713,
+    "net_new_change": 1,
+    "interpretation": "NET NEW improved from 1 to 2, while yield percentage fell because discovery expanded to 121 distinct raw across low-overlap batches. Physical duplicate/early-reject saturation remains very high."
+  },
+  "next_distribution_pct": {
+    "jobs_probe": 5,
+    "growth_news_probe": 5,
+    "official_owner_ceo_probe": 5,
+    "industry_catalog": 0,
+    "regional_investment_new_production": 35,
+    "export_dealer_franchise_expansion": 20,
+    "management_change_commercial_transformation": 15,
+    "partner_business_change": 15
+  },
   "qualified_companies": [
     "ARAVIA",
     "Курский аккумуляторный завод / КАЗ"
