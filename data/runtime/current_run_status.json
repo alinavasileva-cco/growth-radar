@@ -1,52 +1,52 @@
 {
-  "run_id": "N5K-20260901-571R1",
+  "run_id": "N5K-20260901-572R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T20:46:25+03:00",
+  "updated_at": "2026-09-01T22:00:25+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 578,
+    "baseline_count": 579,
     "target_count": 5000,
-    "current_canonical_count": 579,
-    "current_contactable_count": 579,
+    "current_canonical_count": 580,
+    "current_contactable_count": 580,
     "progress_added": 1,
-    "remaining": 4421
+    "remaining": 4420
   },
   "funnel": {
-    "discovered": 67,
-    "fast_gate_passed": 29,
-    "size_check_passed": 16,
-    "legal_match_passed": 9,
-    "signal_confirmed": 6,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
+    "discovered": 41,
+    "fast_gate_passed": 18,
+    "size_check_passed": 14,
+    "legal_match_passed": 12,
+    "signal_confirmed": 11,
+    "lpr_identified": 8,
+    "contact_route_found": 6,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 65
+    "duplicates": 4,
+    "excluded": 36
   },
   "lane_metrics": [
     {
-      "lane": "carried_from_571_verified_distinct",
-      "distinct_raw": 37,
-      "prequalified": 2,
-      "notes": "Authoritative RUN 571 employer-level distinct raw retained as baseline for same-hour recovery."
+      "lane": "growth_news",
+      "distinct_raw": 24,
+      "prequalified": 3,
+      "notes": "Fresh growth/new-production discovery; no criteria weakened."
     },
     {
-      "lane": "fresh_management_dealer_export_partner_and_regional_investment",
-      "distinct_raw": 30,
-      "prequalified": 1,
-      "notes": "Fresh low-overlap searches across management change, dealer expansion, export/new-market, strategic partnership and regional investment/new-production signals; saturated large-group and weak candidates stopped early. Jobs not used."
+      "lane": "official_owner",
+      "distinct_raw": 18,
+      "prequalified": 3,
+      "notes": "Fresh official-owner/production-change discovery. One employer overlap with growth_news removed conservatively."
     }
   ],
   "qualified_companies": [
-    "Современные стекольные технологии / Югрос"
+    "KCG / Kartastech Computers Group"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "579_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "579_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "580_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "580_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

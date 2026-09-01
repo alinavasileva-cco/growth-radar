@@ -1,0 +1,5 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0754,N5K-0754-E01,LEGAL,"Действующее ООО «КАРТАС», ИНН 7722424330, ОГРН 5177746313950.",https://kcg.market/,официальный сайт KCG,2026-09-01T22:00:25+03:00,HIGH,N5K-20260901-572R1,new_5000
+N5K-0754,N5K-0754-E02,SIZE,"Выручка 2025 года 610,371 млн руб.; прибыль 49,058 млн руб.",https://companies.rbc.ru/id/5177746313950-ooo-kartas/,РБК Компании,2026-09-01T22:00:25+03:00,HIGH,N5K-20260901-572R1,new_5000
+N5K-0754,N5K-0754-E03,SIGNAL,В июле 2026 объявлено расширение производства в Истре с инвестициями почти 200 млн руб. и новым производственным направлением.,https://www.vedomosti.ru/press_releases/2026/07/16/visokotehnologichnoe-proizvodstvo-kompyuternih-komplektuyuschih-rasshiryaetsya-pri-podderzhke-podmoskovya,Ведомости / пресс-релиз,2026-09-01T22:00:25+03:00,HIGH,N5K-20260901-572R1,new_5000
+N5K-0754,N5K-0754-E04,CONTACT,Официально опубликованы корпоративный телефон и email.,https://kcg.market/,официальный сайт KCG,2026-09-01T22:00:25+03:00,HIGH,N5K-20260901-572R1,new_5000

@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-09-01T20:46:25+03:00",
+  "generated_at": "2026-09-01T22:00:25+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-571R1",
-  "current_run_id": "N5K-20260901-571R1",
+  "latest_completed_run_id": "N5K-20260901-572R1",
+  "current_run_id": "N5K-20260901-572R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 579,
-  "contactable_verified": 579,
+  "canonical_pool_verified": 580,
+  "contactable_verified": 580,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4421,
+  "remaining_to_target": 4420,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_571R1": {
-    "raw_discovered": 67,
-    "fast_gate_passed": 29,
-    "size_check_passed": 16,
-    "legal_match_passed": 9,
-    "signal_confirmed": 6,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
+  "run_572R1": {
+    "raw_discovered": 41,
+    "fast_gate_passed": 18,
+    "size_check_passed": 14,
+    "legal_match_passed": 12,
+    "signal_confirmed": 11,
+    "lpr_identified": 8,
+    "contact_route_found": 6,
     "qualified": 1,
     "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 65,
+    "duplicates": 4,
+    "excluded": 36,
     "lane_metrics": [
       {
-        "lane": "carried_from_571_verified_distinct",
-        "distinct_raw": 37,
-        "prequalified": 2,
-        "notes": "Authoritative RUN 571 employer-level distinct raw retained as baseline for same-hour recovery."
+        "lane": "growth_news",
+        "distinct_raw": 24,
+        "prequalified": 3,
+        "notes": "Fresh growth/new-production discovery; no criteria weakened."
       },
       {
-        "lane": "fresh_management_dealer_export_partner_and_regional_investment",
-        "distinct_raw": 30,
-        "prequalified": 1,
-        "notes": "Fresh low-overlap searches across management change, dealer expansion, export/new-market, strategic partnership and regional investment/new-production signals; saturated large-group and weak candidates stopped early. Jobs not used."
+        "lane": "official_owner",
+        "distinct_raw": 18,
+        "prequalified": 3,
+        "notes": "Fresh official-owner/production-change discovery. One employer overlap with growth_news removed conservatively."
       }
     ]
   }

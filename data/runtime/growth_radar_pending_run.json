@@ -1,40 +1,8 @@
 {
   "run_id": "N5K-20260901-572R1",
   "updated_at": "2026-09-01T22:00:25+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "qualified_staged_not_counted": 3,
-  "funnel": {
-    "discovered": 41,
-    "fast_gate_passed": 18,
-    "size_check_passed": 14,
-    "legal_match_passed": 12,
-    "signal_confirmed": 11,
-    "lpr_identified": 8,
-    "contact_route_found": 6,
-    "qualified": 3,
-    "duplicates": 2,
-    "excluded": 36
-  },
-  "lane_metrics": [
-    {"lane":"growth_news","distinct_raw":24,"prequalified":3,"notes":"Fresh growth/new-production discovery; no criteria weakened."},
-    {"lane":"official_owner","distinct_raw":18,"prequalified":3,"notes":"Fresh official-owner/production-change discovery. One employer overlap with growth_news removed conservatively."}
-  ],
-  "qualified_companies": [
-    {
-      "Lead ID":"N5K-0754","Brand":"KCG / Kartastech Computers Group","Legal Name":"ООО «КАРТАС»","INN":"7722424330","OGRN/OGRNIP":"5177746313950","Region":"Московская область","City":"Истра","Segment":"компьютерные комплектующие / производственное оборудование / B2B","Website":"https://kcg.market/","Revenue/Scale":"Выручка 2025 года 610,371 млн руб.; прибыль 49,058 млн руб.","Signal Level":"S1","Signal Summary":"Инвестиции почти 200 млн руб. в расширение производства в Истре и запуск нового высокотехнологичного производственного направления.","Signal Date":"2026-07-16","Signal Source":"https://www.vedomosti.ru/press_releases/2026/07/16/visokotehnologichnoe-proizvodstvo-kompyuternih-komplektuyuschih-rasshiryaetsya-pri-podderzhke-podmoskovya","Owner":"","CEO":"Самус Владимир Владимирович","LPR":"Самус Владимир Владимирович","LPR Role":"генеральный директор","Primary Phone":"8 (800) 550-88-00","Primary Email":"info@kartas.msk.ru","HH Contact":"","Contact Form":"https://kcg.market/","Contact Type":"official corporate route","Contact Source":"https://kcg.market/","Consulting Hypothesis":"Коммерческая и операционная настройка масштабирования после расширения производства и запуска нового направления: сегментация B2B, загрузка мощностей, pipeline, KPI и экономика направлений.",
-      "contacts":[{"value":"8 (800) 550-88-00","channel":"phone","type":"official company phone","source":"KCG / КАРТАС","url":"https://kcg.market/","is_lpr":false},{"value":"info@kartas.msk.ru","channel":"email","type":"official company email","source":"KCG / КАРТАС","url":"https://kcg.market/","is_lpr":false}],
-      "evidence":[{"type":"LEGAL","claim":"Действующее ООО «КАРТАС», ИНН 7722424330, ОГРН 5177746313950.","url":"https://kcg.market/","source":"официальный сайт KCG"},{"type":"SIZE","claim":"Выручка 2025 года 610,371 млн руб.; прибыль 49,058 млн руб.","url":"https://companies.rbc.ru/id/5177746313950-ooo-kartas/","source":"РБК Компании"},{"type":"SIGNAL","claim":"В июле 2026 объявлено расширение производства в Истре с инвестициями почти 200 млн руб. и новым производственным направлением.","url":"https://www.vedomosti.ru/press_releases/2026/07/16/visokotehnologichnoe-proizvodstvo-kompyuternih-komplektuyuschih-rasshiryaetsya-pri-podderzhke-podmoskovya","source":"Ведомости / пресс-релиз"},{"type":"CONTACT","claim":"Официально опубликованы корпоративный телефон и email.","url":"https://kcg.market/","source":"официальный сайт KCG"}]
-    },
-    {
-      "Lead ID":"N5K-0755","Brand":"АСТ Слон","Legal Name":"ООО «АвтоСпецТехника «Слон»","INN":"7415093767","OGRN/OGRNIP":"1167456066865","Region":"Челябинская область","City":"Миасс","Segment":"спецтехника / машиностроение / B2B","Website":"https://astslon.ru/","Revenue/Scale":"Средний бизнес; выручка 2025 года 490,771 млн руб.","Signal Level":"S1","Signal Summary":"В августе 2026 запущена новая производственная площадка полного цикла площадью более 4 тыс. кв. м; инвестиции 88 млн руб.","Signal Date":"2026-08-27","Signal Source":"https://www.kommersant.ru/doc/8909262","Owner":"","CEO":"Призенцова Юлия Александровна","LPR":"Призенцова Юлия Александровна","LPR Role":"генеральный директор","Primary Phone":"8 (3513) 26-45-00","Primary Email":"mail@astslon.ru","HH Contact":"","Contact Form":"https://astslon.ru/contacts","Contact Type":"official corporate route","Contact Source":"https://astslon.ru/contacts","Consulting Hypothesis":"Коммерческая и операционная настройка масштабирования после запуска новой площадки: загрузка мощностей, B2B-сегментация, pipeline, KPI и экономика направлений.",
-      "contacts":[{"value":"8 (3513) 26-45-00","channel":"phone","type":"official company phone","source":"АСТ Слон","url":"https://astslon.ru/contacts","is_lpr":false},{"value":"mail@astslon.ru","channel":"email","type":"official company email","source":"АСТ Слон","url":"https://astslon.ru/contacts","is_lpr":false}],
-      "evidence":[{"type":"LEGAL","claim":"Действующее ООО, ИНН 7415093767, ОГРН 1167456066865.","url":"https://check.tochka.com/company/1167456066865/","source":"Точка"},{"type":"SIZE","claim":"Выручка 2025 года 490,771 млн руб.; средний бизнес.","url":"https://b2b.house/company/OOO-AST-SLON_8f2d248f-9563-4630-8489-46919e604d02/","source":"B2B.House"},{"type":"SIGNAL","claim":"Запущена новая производственная площадка полного цикла площадью более 4 тыс. кв. м; инвестиции 88 млн руб.","url":"https://www.kommersant.ru/doc/8909262","source":"Коммерсантъ"},{"type":"CONTACT","claim":"Официально опубликованы корпоративный телефон и email.","url":"https://astslon.ru/contacts","source":"официальный сайт АСТ Слон"}]
-    },
-    {
-      "Lead ID":"N5K-0756","Brand":"НЗНК","Legal Name":"ООО «Несущие Конструкции»","INN":"5263125168","OGRN/OGRNIP":"1165275028621","Region":"Нижегородская область","City":"Нижний Новгород","Segment":"кабельные конструкции / металлообработка / B2B","Website":"https://nznk.ru/","Revenue/Scale":"Выручка 2025 года 505,44 млн руб.; рост 36,87% к 2024 году.","Signal Level":"S1","Signal Summary":"В августе 2026 запущена новая высокопроизводительная автоматизированная линия для кабельных лотков; компания связывает запуск с ростом производительности и сокращением сроков крупных заказов.","Signal Date":"2026-08-26","Signal Source":"https://www.elec.ru/news/2026/08/26/zapustili-novuju-liniju.html","Owner":"","CEO":"Кузнецов Александр Владимирович","LPR":"Кузнецов Александр Владимирович","LPR Role":"генеральный директор","Primary Phone":"8 (800) 500-94-68","Primary Email":"info@nznk.ru","HH Contact":"","Contact Form":"https://nznk.ru/kontakty/nizhniy-novgorod","Contact Type":"official corporate route","Contact Source":"https://nznk.ru/kontakty/nizhniy-novgorod","Consulting Hypothesis":"Коммерческая и операционная настройка роста после автоматизации производства: загрузка линии, B2B-сегментация, pipeline, KPI и экономика направлений.",
-      "contacts":[{"value":"8 (800) 500-94-68","channel":"phone","type":"official company phone","source":"НЗНК","url":"https://nznk.ru/kontakty/nizhniy-novgorod","is_lpr":false},{"value":"info@nznk.ru","channel":"email","type":"official company email","source":"НЗНК","url":"https://nznk.ru/kontakty/nizhniy-novgorod","is_lpr":false}],
-      "evidence":[{"type":"LEGAL","claim":"Действующее ООО «Несущие Конструкции», ИНН 5263125168, ОГРН 1165275028621.","url":"https://www.elec.ru/id149531","source":"Elec.ru"},{"type":"SIZE","claim":"Выручка 2025 года 505,44 млн руб.; рост 36,87% к 2024 году.","url":"https://b2b.house/company/OOO-NK_a8a38381-ab37-4d6c-8bd9-672bca036584/","source":"B2B.House"},{"type":"SIGNAL","claim":"Запущена новая автоматизированная производственная линия для кабельных лотков.","url":"https://www.elec.ru/news/2026/08/26/zapustili-novuju-liniju.html","source":"Elec.ru"},{"type":"CONTACT","claim":"Официально опубликованы корпоративный телефон и email.","url":"https://nznk.ru/kontakty/nizhniy-novgorod","source":"официальный сайт НЗНК"}]
-    }
-  ],
-  "notes":"Current-hour repair/resume. Conservative distinct employer-level raw across the two fresh workers is 41 after removing one explicit cross-worker employer overlap. Raw target 120 is not met; this is not represented as normal-volume completion. Borus and PlastFactor were not restaged because they are known recent physical duplicates. Criteria unchanged. Jobs not used. Outreach=0. Existing authoritative physical dedup/integration guard is the only canonical writer."
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260901-572R1 integrated physically; canonical/contactable 580/580; integrity PASS; orphan 0/0; outreach 0."
 }
