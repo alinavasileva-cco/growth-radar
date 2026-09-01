@@ -1,0 +1,21 @@
+{
+  "run_id": "N5K-20260901-563",
+  "campaign_id": "new_5000",
+  "consumed_at": "2026-09-01T13:40:00+03:00",
+  "worker_files": [
+    {
+      "path": "data/pending_workers/official_owner/20260901-132800-official-owner.json",
+      "sha": "c0a247bc3ee34c7bddddfd157320e8c7d54bd0ab",
+      "lane": "official_owner",
+      "worker_distinct_raw": 26,
+      "prequalified_before_final_dedup": 2,
+      "net_qualified_after_physical_dedup": 0,
+      "physical_duplicates": [
+        {"brand": "Мосэлектрощит", "inn": "7731286291", "ogrn": "1157746583136", "existing_lead_id": "N5K-0686"},
+        {"brand": "НАРТИС", "inn": "5019029500", "ogrn": "1185022004661", "existing_lead_id": "N5K-0620"}
+      ]
+    }
+  ],
+  "historical_pending_truncation_blocker": false,
+  "outreach": 0
+}
