@@ -1,0 +1,104 @@
+{
+  "worker": "growth_news",
+  "lane": "growth_news",
+  "created_at": "2026-09-01T17:23:05+03:00",
+  "mode": "READ_DISCOVERY_ONLY",
+  "canonical_write": false,
+  "outreach": false,
+  "config_source": "CURRENT_WORKING_CONFIG.md",
+  "config_version": "2026-09-01T15:57:48+03:00",
+  "canonical_snapshot": {"master":571,"contactable":571,"integrity":"PASS","qualified_staged_counted":0},
+  "dedup_policy": "candidate-level physical canonical/contactable + compact/index + repo search; historical pending tree not required for discovery; final global dedup reserved for canonical writer",
+  "metrics": {
+    "source_batches": 8,
+    "raw_distinct_employer_level": 29,
+    "fast": 12,
+    "size": 7,
+    "legal": 5,
+    "signal": 4,
+    "lpr": 3,
+    "contact": 3,
+    "prequalified_needs_final_global_dedup": 3,
+    "reject": 26,
+    "target_80_150_reached": false,
+    "quota_not_backfilled_with_weak_catalogs": true
+  },
+  "source_batches": [
+    {"batch":"fresh_manufacturing_expansion_ru","raw":7,"note":"new plants / production expansion, <=180d"},
+    {"batch":"regional_investment_projects","raw":4,"note":"regional investment and industrial projects"},
+    {"batch":"moscow_region_expansion","raw":4,"note":"Moscow region manufacturing expansion"},
+    {"batch":"siberia_industrial_growth","raw":3,"note":"Novosibirsk and Siberia industrial signals"},
+    {"batch":"volga_tatarstan_projects","raw":3,"note":"Tatarstan / Volga production investments"},
+    {"batch":"urals_industry","raw":3,"note":"Chelyabinsk / Urals production projects"},
+    {"batch":"regional_branch_expansion","raw":3,"note":"new branches / regional presence"},
+    {"batch":"management_and_transformation","raw":2,"note":"management changes / business transformation"}
+  ],
+  "dedup_checks": {
+    "physical_snapshot_checked": true,
+    "historical_pending_full_materialization_required": false,
+    "candidate_repo_searches": [
+      {"candidate":"ООО «Предприятие «ЭЛТЕКС»","keys":["5410108110","1025403911818","ООО Предприятие ЭЛТЕКС","ЭЛТЕКС+eltex.ru"],"matches":0},
+      {"candidate":"ООО «МОЛОПАК»","keys":["7743513365","1037739986899","ООО МОЛОПАК","МолоПак+brand/domain"],"matches":0},
+      {"candidate":"ООО «Чистая линия»","keys":["5008060096","1125047018205","ООО Чистая линия","Чистая Линия+brand/domain"],"matches":0}
+    ],
+    "final_global_dedup_required": true
+  },
+  "candidates": [
+    {
+      "status":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand":"Eltex",
+      "legal_name":"ООО «Предприятие «ЭЛТЕКС»",
+      "inn":"5410108110",
+      "ogrn":"1025403911818",
+      "domain":"eltex.ru",
+      "size":{"pass":true,"evidence":"large established telecom equipment manufacturer; historical revenue scale in billions; official site describes largest full-cycle production in CIS"},
+      "legal":{"pass":true,"evidence_url":"https://eltex.ru/downloadable/about/Реквизиты_ООО_Предприятие_ЭЛТЕКС_ГПБ.pdf","evidence_date":"2026-04","active_confirmed":true},
+      "signal":{"pass":true,"type":"investment_project_capacity_growth","date":"2026-08-28","evidence_url":"https://abireg.ru/newsitem/116878/","fact":"plans 8 bln RUB investment in a high-tech radio-electronics production complex"},
+      "lpr":{"pass":true,"name":"Черников Алексей Николаевич","role":"директор","evidence_url":"https://eltex.ru/downloadable/about/Реквизиты_ООО_Предприятие_ЭЛТЕКС_ГПБ.pdf"},
+      "contact":{"pass":true,"route":"official company contact form / +7 (383) 274-10-01 / eltex@eltex.ru","evidence_url":"https://eltex.ru/contacts/"},
+      "dedup_keys":{"inn":"5410108110","ogrn":"1025403911818","exact_legal_name":"ООО «Предприятие «ЭЛТЕКС»","brand_domain":"Eltex|eltex.ru"}
+    },
+    {
+      "status":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand":"МолоПак",
+      "legal_name":"ООО «МОЛОПАК»",
+      "inn":"7743513365",
+      "ogrn":"1037739986899",
+      "domain":null,
+      "size":{"pass":true,"evidence":"third production site; investment 2.1 bln RUB; staffing expected to grow from 228 to 330"},
+      "legal":{"pass":true,"evidence_url":"https://www.tbank.ru/business/contractor/legal/1037739986899/","active_confirmed":true,"current_head":"Шарма Радж Анирудхович"},
+      "signal":{"pass":true,"type":"new_production_site_capacity_growth","date":"2026-07-14","evidence_url":"https://www.vedomosti.ru/press_releases/2026/07/14/kompaniya-molopak-pristupila-k-osnascheniyu-sobstvennogo-zavoda-v-chehove","fact":"equipment installation started at third production site; +2 bln packs/year planned"},
+      "lpr":{"pass":true,"name":"Шарма Радж Анирудхович","role":"руководитель","evidence_url":"https://www.tbank.ru/business/contractor/legal/1037739986899/"},
+      "contact":{"pass":true,"route":"published corporate route requires canonical writer recheck before outreach use; worker performs no outreach","evidence_url":"https://dairytech-expo.ru/ru/press-room/news/2026/january/22/molopak-stroit-tretyu-ploshchadku/"},
+      "dedup_keys":{"inn":"7743513365","ogrn":"1037739986899","exact_legal_name":"ООО «МОЛОПАК»","brand_domain":"МолоПак|UNKNOWN_DOMAIN"}
+    },
+    {
+      "status":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand":"Чистая Линия",
+      "legal_name":"ООО «Чистая линия»",
+      "inn":"5008060096",
+      "ogrn":"1125047018205",
+      "domain":null,
+      "size":{"pass":true,"evidence":"2025 revenue 10.907808 bln RUB"},
+      "legal":{"pass":true,"active_confirmed":true,"evidence_url":"https://companies.rbc.ru/id/1125047018205-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-chistaya-liniya/"},
+      "signal":{"pass":true,"type":"production_and_logistics_expansion","date":"2026-04-02","evidence_url":"https://www.akm.ru/press/kompaniya_chistaya_liniya_rasshiryaet_proizvodstvo_v_podmoskove/","fact":"large investment project to build production and logistics complexes in Dolgoprudny"},
+      "lpr":{"pass":true,"name":"Зограбян Тигран Геворгович","role":"генеральный директор","evidence_url":"https://saby.ru/profile/5008060096-500801001"},
+      "contact":{"pass":true,"route":"published corporate/public factory contact route; final route validation required by canonical writer","evidence_url":"https://rting.ru/dolgoprudnyj/co/chistaya_liniya/4779727"},
+      "dedup_keys":{"inn":"5008060096","ogrn":"1125047018205","exact_legal_name":"ООО «Чистая линия»","brand_domain":"Чистая Линия|UNKNOWN_DOMAIN"}
+    }
+  ],
+  "reject_examples": [
+    {"brand":"Сайбер Электро","status":"REJECT","stage":"LEGAL","reason":"brand/manufacturer legal entity linkage not verified strongly enough; distributor/partner records are not sufficient","signal_url":"https://www.cnews.ru/news/line/2026-09-01_dlya_sajber_elektrootkryta"},
+    {"brand":"Сота","status":"REJECT","stage":"LEGAL","reason":"multiple same-name Chelyabinsk legal entities; exact operating manufacturer legal linkage unresolved","signal_url":"https://www.kommersant.ru/doc/8761797"},
+    {"brand":"Larta Glass","status":"REJECT","stage":"SIGNAL","reason":"signal dated 2026-02-24 fell outside strict preferred 180-day window at run date","signal_url":"https://larta.com/ru/news/larta-glass-zapustit-liniyu-po-proizvodstvu-mnogoslojnogo-stekla"},
+    {"brand":"МАКС","status":"REJECT","stage":"FAST","reason":"branch reopening signal is real but low-overlap/consulting fit not strong enough versus production/investment candidates in this cycle","signal_url":"https://www.asn-news.ru/press_release/47494"},
+    {"brand":"ROSSBLOK","status":"REJECT","stage":"LEGAL","reason":"investment landing page did not provide enough verified operating legal/LPR/contact evidence for current filter","signal_url":"https://rossblok.com/"},
+    {"brand":"Биометионин","status":"REJECT","stage":"LPR","reason":"strong project signal but specific current LPR/contact route not verified in-cycle","signal_url":"https://t.me/s/investtorf"}
+  ],
+  "notes": [
+    "No candidate is counted as net QUALIFIED or added company.",
+    "Only canonical writer may perform final physical global dedup and integration.",
+    "Historical pending tree was not required as a discovery blocker.",
+    "Raw target 80-150 was not reached; source quality was not diluted with weak catalogs."
+  ]
+}
