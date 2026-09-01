@@ -34,8 +34,11 @@
       "signal": 3,
       "lpr": 3,
       "contact": 1,
-      "qualified": 1,
-      "notes": "BROX qualified prewrite; Полиэфирная нить and ЗЖБИ НОВИН stopped before qualification because a sufficiently verified practical contact route was not established in this recovery pass."
+      "qualified": 0,
+      "duplicate_early_reject": 3,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 100.0,
+      "notes": "BROX reached prewrite qualification but was rejected by the final physical canonical guard on INN+OGRN+exact legal name; therefore net qualified for efficiency is 0. Полиэфирная нить and ЗЖБИ НОВИН stopped before qualification because a sufficiently verified practical contact route was not established."
     },
     {
       "lane": "retail_expansion",
@@ -47,9 +50,87 @@
       "lpr": 0,
       "contact": 0,
       "qualified": 0,
+      "duplicate_early_reject": 1,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 100.0,
       "notes": "EMKA excluded on verified 2025 legal-entity scale above target range."
+    },
+    {
+      "lane": "jobs_worker",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicate_early_reject": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "notes": "20260901-072530-jobs.json was fail-closed with zero repo-dedup-confirmed raw and consumed in this recovery run."
     }
   ],
+  "hourly_efficiency": {
+    "current": {
+      "raw": 4,
+      "fast_gate": 4,
+      "size": 3,
+      "legal": 3,
+      "signal": 3,
+      "lpr": 3,
+      "contact": 1,
+      "qualified": 0,
+      "duplicate_plus_early_reject": 4,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 100.0
+    },
+    "previous_runs": [
+      {
+        "run_id": "N5K-20260901-555",
+        "raw": 6,
+        "fast_gate": 2,
+        "qualified": 0,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 33.3333,
+        "duplicate_early_reject_pct": 83.3333,
+        "lane_detail_status": "not_physically_saved_do_not_reconstruct"
+      },
+      {
+        "run_id": "N5K-20260901-555R1",
+        "raw": 6,
+        "fast_gate": 2,
+        "qualified": 0,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 33.3333,
+        "duplicate_early_reject_pct": 100.0,
+        "lane_detail_status": "not_physically_saved_do_not_reconstruct"
+      },
+      {
+        "run_id": "N5K-20260901-555R2",
+        "raw": 7,
+        "fast_gate": 3,
+        "qualified": 0,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 42.8571,
+        "duplicate_early_reject_pct": 100.0,
+        "lane_detail_status": "physically_saved_in_report"
+      }
+    ],
+    "change_vs_previous_run": {
+      "qualified_raw_pct_points": 0.0,
+      "fast_gate_raw_pct_points": 57.1429,
+      "net_new_change": 0
+    }
+  },
+  "next_distribution_pct": {
+    "jobs": 5,
+    "growth_news": 5,
+    "official_owner_ceo": 35,
+    "industry_catalog": 5,
+    "regional_investment": 0,
+    "experimental_low_overlap_business_change": 50
+  },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
