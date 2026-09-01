@@ -1,0 +1,4 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0743,N5K-0743-E01,legal,"ООО БИОЛИТ: ИНН 7021003608, ОГРН 1027000885691; директор Сергун Валерий Петрович.",https://biolit.ru/contacts/,Биолит,2026-09-01T17:04:00+03:00,HIGH,N5K-20260901-567R1,new_5000
+N5K-0743,N5K-0743-E02,signal,Новый производственный комплекс в ОЭЗ Томск готовился к вводу в сентябре 2026; инвестиции 440 млн руб.; проект увеличивает производственные мощности.,https://www.riatomsk.ru/article/20260520/biolit-planiruet-sdat-novii-korpus-v-oez-tomsk-v-sentyabre-2026g,РИА Томск,2026-09-01T17:04:00+03:00,HIGH,N5K-20260901-567R1,new_5000
+N5K-0743,N5K-0743-E03,scale,"Выручка 2024 года 630,265 млн руб.; компания относится к среднему бизнесу.",https://check.tochka.com/company/1027000885691/,Точка,2026-09-01T17:04:00+03:00,HIGH,N5K-20260901-567R1,new_5000

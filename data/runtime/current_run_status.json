@@ -1,62 +1,52 @@
 {
-  "run_id": "N5K-20260901-567",
+  "run_id": "N5K-20260901-567R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T16:44:00+03:00",
+  "updated_at": "2026-09-01T17:04:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 571,
     "target_count": 5000,
-    "current_canonical_count": 571,
-    "current_contactable_count": 571,
-    "progress_added": 0,
-    "remaining": 4429
+    "current_canonical_count": 572,
+    "current_contactable_count": 572,
+    "progress_added": 1,
+    "remaining": 4428
   },
   "funnel": {
-    "discovered": 120,
-    "fast_gate_passed": 7,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
-    "qualified": 0,
-    "duplicates": 4,
-    "excluded": 116
+    "discovered": 24,
+    "fast_gate_passed": 6,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 22
   },
   "lane_metrics": [
     {
-      "lane": "fresh_worker_staging_recheck",
-      "raw": 19,
-      "fast_gate": 3,
+      "lane": "supplemental_fresh_regional_investment_new_production",
+      "raw": 24,
+      "fast_gate": 6,
       "size": 2,
       "legal": 2,
       "signal": 2,
       "lpr": 2,
       "contact": 2,
       "prequalified": 2,
-      "note": "Fresh worker staging consumed first. МолоПак was stopped as a physical duplicate; Лалибела Кофе and Битроботикс were independently rechecked against current public evidence and exact canonical keys."
-    },
-    {
-      "lane": "regional_investment_new_production_low_overlap",
-      "raw": 101,
-      "fast_gate": 4,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "prequalified": 1,
-      "note": "Supplemental discovery rotated across Moscow region, St Petersburg/Leningrad, Tatarstan, Bashkortostan, Urals, Perm, Samara, Nizhny Novgorod, Novosibirsk, Rostov, Krasnodar, Voronezh, Kaluga, Tula, Vladimir, Yaroslavl, Smolensk, Ivanovo, Udmurtia, Chuvashia and Mordovia. 101 employer-level source observations retained after obvious repeated-result suppression; only ГалВент reached the full funnel in this execution window."
+      "note": "Fresh low-overlap recovery after two consecutive low-yield runs. Priority sources: regional new production/investment and fresh business-change; jobs not used. No quality criteria changed."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Биолит"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "571_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "571_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "572_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "572_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
