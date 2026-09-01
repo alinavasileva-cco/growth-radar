@@ -1,62 +1,61 @@
 {
-  "run_id": "N5K-20260901-568R1",
+  "run_id": "N5K-20260901-569",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T17:48:06+03:00",
+  "updated_at": "2026-09-01T18:28:17+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 572,
+    "baseline_count": 574,
     "target_count": 5000,
-    "current_canonical_count": 574,
-    "current_contactable_count": 574,
-    "progress_added": 2,
-    "remaining": 4426
+    "current_canonical_count": 575,
+    "current_contactable_count": 575,
+    "progress_added": 1,
+    "remaining": 4425
   },
   "funnel": {
-    "discovered": 66,
-    "fast_gate_passed": 18,
-    "size_check_passed": 9,
-    "legal_match_passed": 7,
-    "signal_confirmed": 7,
-    "lpr_identified": 4,
-    "contact_route_found": 3,
-    "qualified": 2,
-    "duplicates": 4,
-    "excluded": 60
+    "discovered": 28,
+    "fast_gate_passed": 16,
+    "size_check_passed": 13,
+    "legal_match_passed": 9,
+    "signal_confirmed": 9,
+    "lpr_identified": 6,
+    "contact_route_found": 4,
+    "qualified": 1,
+    "duplicates": 3,
+    "excluded": 24
   },
   "lane_metrics": [
     {
-      "lane": "growth_news",
-      "raw": 29,
-      "note": "fresh immutable staging 20260901-172305-growth-news.json"
+      "lane": "official_owner_fresh",
+      "raw": 14,
+      "source_level_observations": 68,
+      "prequalified_rechecked": 3,
+      "submitted_to_physical_guard": 3,
+      "source": "data/pending_workers/official_owner/20260901-182439-official-owner.json"
     },
     {
-      "lane": "official_owner_prior",
-      "raw": 19,
-      "note": "fresh official-owner staging 20260901-162505-official-owner.json"
+      "lane": "growth_news_fresh",
+      "raw": 14,
+      "prequalified_rechecked": 3,
+      "submitted_to_physical_guard": 1,
+      "rejected_after_recheck": 2,
+      "source": "data/pending_workers/growth_news/20260901-182637-growth-news.json"
     },
     {
-      "lane": "official_owner_late",
-      "raw": 18,
-      "source_observations_reviewed": 60,
-      "note": "fresh immutable staging committed at c4178603103f07733d6deae27e6167ef99302923"
-    },
-    {
-      "lane": "independent_low_overlap",
+      "lane": "independent_low_overlap_supplemental",
       "raw": null,
-      "note": "supplemental discovery executed; not added to discovered because safe global distinct count was not materialized"
+      "note": "Fresh regional production, management/change, investment and expansion discovery executed independently. Safe globally distinct employer count was not added to discovered because cross-lane legal-key materialization was incomplete; no search-result-row padding used."
     }
   ],
   "qualified_companies": [
-    "GSS Cosmetics",
-    "Renewal"
+    "Энхим"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "574_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "574_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "575_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "575_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
