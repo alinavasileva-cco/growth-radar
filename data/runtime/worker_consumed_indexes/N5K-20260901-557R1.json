@@ -1,0 +1,13 @@
+{
+  "updated_at": "2026-09-01T08:33:11+03:00",
+  "campaign_id": "new_5000",
+  "consumed_by_run": "N5K-20260901-557R1",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260901-082200-jobs.json",
+      "blob_sha": "9536b19675cfe70de5b7ff1d783f77791c632846",
+      "result": "CONSUMED_FAIL_CLOSED_RECOVERED",
+      "note": "Worker stopped before discovery because its connector could not materialize the full historical canonical+pending dedup keyset. Recovery continued discovery independently without lowering criteria; one verified company was physically integrated by the single canonical integration workflow."
+    }
+  ]
+}
