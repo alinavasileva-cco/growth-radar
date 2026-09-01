@@ -1,8 +1,126 @@
 {
-  "run_id": "N5K-20260901-557R1",
-  "updated_at": "2026-09-01T08:33:11+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260901-557R1 integrated physically; canonical/contactable 562/562; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260901-558",
+  "updated_at": "2026-09-01T09:38:10+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 18,
+    "fast_gate_passed": 10,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 17
+  },
+  "lane_metrics": [
+    {
+      "lane": "official_owner",
+      "raw": 18,
+      "fast_gate": 10,
+      "size": 4,
+      "legal": 3,
+      "signal": 3,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicate_plus_early_reject": 17,
+      "qualified_raw_pct": 5.5556,
+      "fast_gate_raw_pct": 55.5556,
+      "notes": "Fresh official/company/owner/business-change staging across six independent source batches. Historical pending tree truncation was not used as a blocker. Candidate-level physical dedup repeated on INN, OGRN, exact legal name and brand/domain before staging."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0729",
+      "Brand": "Завод металлоконструкций Аполло / Apollo",
+      "Legal Name": "ООО \"ЗАВОД МЕТАЛЛОКОНСТРУКЦИЙ АПОЛЛО\"",
+      "INN": "6312118070",
+      "OGRN/OGRNIP": "1126312004598",
+      "Region": "Самарская область / Московская область / Новосибирская область",
+      "City": "Самара",
+      "Segment": "Производство строительных металлоконструкций / промышленный B2B",
+      "Website": "https://apollo-zmk.ru/",
+      "Revenue/Scale": "Выручка 2025 около 3,46 млрд ₽ по worker evidence; актуальная карточка B2B.House подтверждает 163 сотрудника за 2025; официальный сайт публикует пять производственных площадок",
+      "Signal Level": "S1",
+      "Signal Summary": "08.04.2026 опубликовано расширение производства завода Аполло в индустриальном парке Есипово: план роста численности площадки с 61 до 140 сотрудников; компания одновременно развивает сеть производственных площадок.",
+      "Signal Date": "2026-04-08",
+      "Signal Source": "https://riamo.ru/news/ekonomika/zavod-metallokonstruktsij-apollo-v-solnechnogorske-uvelichivaet-proizvodstvo/",
+      "Owner": "",
+      "CEO": "Ращупкин Андрей Алексеевич",
+      "LPR": "Ращупкин Андрей Алексеевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (917) 811-22-11",
+      "Primary Email": "ar@apollo-zmk.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "Прямой публичный контакт генерального директора и корпоративный маршрут",
+      "Contact Source": "https://apollo-zmk.ru/contacts/",
+      "Consulting Hypothesis": "Диагностика коммерческой системы при расширении производственных площадок: загрузка мощностей, региональная B2B-модель продаж, KPI масштабирования и управленческий контур роста.",
+      "contacts": [
+        {
+          "value": "+7 (917) 811-22-11",
+          "channel": "Phone",
+          "type": "Прямой мобильный генерального директора",
+          "source": "Официальная страница контактов Apollo",
+          "url": "https://apollo-zmk.ru/contacts/",
+          "is_lpr": true,
+          "notes": "Опубликован рядом с ФИО и должностью генерального директора."
+        },
+        {
+          "value": "ar@apollo-zmk.ru",
+          "channel": "Email",
+          "type": "Прямой e-mail генерального директора",
+          "source": "Официальная страница контактов Apollo",
+          "url": "https://apollo-zmk.ru/contacts/",
+          "is_lpr": true,
+          "notes": "Опубликован рядом с ФИО и должностью генерального директора."
+        },
+        {
+          "value": "office@apollo-zmk.ru",
+          "channel": "Email",
+          "type": "Корпоративный e-mail",
+          "source": "Официальные/отраслевые реквизиты Apollo",
+          "url": "https://apollo-zmk.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Дополнительный корпоративный маршрут; основной LPR-маршрут — прямые телефон и e-mail гендиректора."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО \"ЗАВОД МЕТАЛЛОКОНСТРУКЦИЙ АПОЛЛО\" — действующая организация; ИНН 6312118070, ОГРН 1126312004598; генеральный директор Ращупкин Андрей Алексеевич.",
+          "url": "https://b2b.house/company/OOO-ZAVOD-METALLOKONSTRUKCIJ-APOLLO_7f8ec959-e0d7-4e9d-b709-819bd3143e61/",
+          "source": "B2B.House"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Карточка компании подтверждает 163 сотрудника за 2025; официальный сайт показывает несколько производственных площадок.",
+          "url": "https://b2b.house/company/OOO-ZAVOD-METALLOKONSTRUKCIJ-APOLLO_7f8ec959-e0d7-4e9d-b709-819bd3143e61/",
+          "source": "B2B.House"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "08.04.2026 РИАМО сообщило о расширении производства Apollo в Есипово и планируемом увеличении числа сотрудников площадки с 61 до 140.",
+          "url": "https://riamo.ru/news/ekonomika/zavod-metallokonstruktsij-apollo-v-solnechnogorske-uvelichivaet-proizvodstvo/",
+          "source": "РИАМО"
+        },
+        {
+          "type": "LPR",
+          "claim": "Официальная страница Apollo указывает Ращупкина Андрея Алексеевича генеральным директором.",
+          "url": "https://apollo-zmk.ru/contacts/",
+          "source": "Apollo — официальный сайт"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальная страница Apollo публикует прямой мобильный +7 (917) 811-22-11 и e-mail ar@apollo-zmk.ru генерального директора.",
+          "url": "https://apollo-zmk.ru/contacts/",
+          "source": "Apollo — официальный сайт"
+        }
+      ]
+    }
+  ],
+  "notes": "Fresh official_owner worker 20260901-093034 supplied 18 audited distinct employer-level raw across six source batches. One candidate reached PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP. Canonical writer independently repeated exact candidate-level repo checks on INN 6312118070, OGRN 1126312004598, exact legal name and brand/domain with no match, and reverified legal/scale/signal/LPR/contact evidence. Historical pending materialization was not required and did not block the run. Raw target was not padded beyond physically audited observations. Outreach 0. Final integration workflow must repeat physical master dedup before accepting the candidate."
 }
