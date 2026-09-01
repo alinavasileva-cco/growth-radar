@@ -7,7 +7,7 @@
   "progress_added": 574,
   "remaining_to_total_target": 4426,
   "remaining": 4426,
-  "remaining_to_1000": 428,
+  "remaining_to_1000": 426,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,56 +17,62 @@
   "current_run_id": "N5K-20260901-568R1",
   "last_run_id": "N5K-20260901-568R1",
   "latest_completed_run": "N5K-20260901-568R1",
-  "canonical_integration_run_id": "N5K-20260901-567R1",
-  "hourly_baseline_count": 571,
-  "hourly_net_new": 1,
+  "canonical_integration_run_id": "N5K-20260901-568R1",
+  "hourly_baseline_count": 572,
+  "hourly_net_new": 2,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260901-567R1",
-    "raw": 24,
-    "fast_gate": 6,
-    "size": 2,
-    "legal": 2,
-    "signal": 2,
-    "lpr": 2,
-    "contact": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded_early_reject": 22,
-    "qualified_raw_pct": 4.1667,
-    "fast_gate_raw_pct": 25.0,
+    "run_id": "N5K-20260901-568R1",
+    "raw": 66,
+    "fast_gate": 18,
+    "size": 9,
+    "legal": 7,
+    "signal": 7,
+    "lpr": 4,
+    "contact": 3,
+    "qualified": 2,
+    "duplicates": 4,
+    "excluded_early_reject": 60,
+    "qualified_raw_pct": 3.0303,
+    "fast_gate_raw_pct": 27.2727,
     "raw_target_met": false,
-    "supplemental_discovery_performed": true
+    "supplemental_discovery_performed": true,
+    "raw_count_note": "66 is the conservative lane-level employer raw count from three fresh staging batches (29+19+18). The independent low-overlap supplemental wave was executed but is not added because safe global cross-lane distinctness was not materialized."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "supplemental_fresh_regional_investment_new_production",
-      "raw": 24,
-      "fast_gate": 6,
-      "size": 2,
-      "legal": 2,
-      "signal": 2,
-      "lpr": 2,
-      "contact": 2,
-      "prequalified": 2,
-      "net_qualified": 1,
-      "physical_duplicates": 1,
-      "qualified_raw_pct": 4.1667,
-      "fast_gate_raw_pct": 25.0,
+      "lane": "growth_news",
+      "raw": 29,
       "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
+    },
+    {
+      "lane": "official_owner_prior",
+      "raw": 19,
+      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
+    },
+    {
+      "lane": "official_owner_late",
+      "raw": 18,
+      "source_observations_reviewed": 60,
+      "size": 9,
+      "legal": 7,
+      "signal": 7,
+      "lpr": 4,
+      "contact": 3,
+      "prequalified": 3,
+      "net_qualified": 2,
+      "physical_duplicates": 1,
+      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
+    },
+    {
+      "lane": "independent_low_overlap",
+      "raw": null,
+      "next_state": "NOT_COUNTED_DUE_GLOBAL_DISTINCTNESS_UNCERTAINTY"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-566",
-      "raw": 41,
-      "fast_gate": 1,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 2.439
-    },
     {
       "run_id": "N5K-20260901-567",
       "raw": 120,
@@ -82,13 +88,21 @@
       "qualified": 1,
       "qualified_raw_pct": 4.1667,
       "fast_gate_raw_pct": 25.0
+    },
+    {
+      "run_id": "N5K-20260901-568R1",
+      "raw": 66,
+      "fast_gate": 18,
+      "qualified": 2,
+      "qualified_raw_pct": 3.0303,
+      "fast_gate_raw_pct": 27.2727
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 4.1667,
+    "qualified_raw_pct_points": -1.1364,
     "net_new_change": 1,
-    "fast_gate_raw_pct_points": 19.1667,
-    "assessment": "Supplemental recovery improved yield versus RUN 567 without changing quality criteria; one candidate integrated and one was rejected by authoritative physical dedup."
+    "fast_gate_raw_pct_points": 2.2727,
+    "assessment": "Same-cycle recovery removed the internal physical-dedup blocker and integrated two verified candidates without changing quality criteria. Conservative raw remains below 120 because independent supplemental hits were not double-counted without a safe global distinct materialization."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -100,7 +114,7 @@
     "management_change_commercial_transformation_fresh": 25,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "RUN 567R1 supplemental recovery used fresh low-overlap regional investment/new-production and business-change sources after consecutive low-yield runs. 24 concrete employer/source observations were reviewed; two reached full prequalification. Authoritative physical dedup integrated Биолит and rejected the second candidate as already present. Historical pending-tree truncation was not used as a blocker.",
+  "fresh_staging": "RUN 568R1 resumed the blocked 568 cycle using fresh growth-news and official-owner staging plus an independent low-overlap supplemental wave. Physical authoritative dedup was performed directly against canonical/contactable. GSS Cosmetics and Renewal were integrated; Eltex, Laser Systems and the INN 5008060096 candidate were rejected as already present. Historical pending-tree truncation was not used as a blocker.",
   "repair_required": null,
-  "note": "N5K-20260901-568R1 completed after physical integration: +2 net new; canonical/contactable 574/574; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-568R1 completed after physical integration: +2 net new; canonical/contactable 574/574; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0."
 }
