@@ -1,43 +1,52 @@
 {
-  "generated_at": "2026-09-01T17:04:00+03:00",
+  "generated_at": "2026-09-01T17:48:06+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-567R1",
-  "current_run_id": "N5K-20260901-567R1",
+  "latest_completed_run_id": "N5K-20260901-568R1",
+  "current_run_id": "N5K-20260901-568R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 572,
-  "contactable_verified": 572,
+  "canonical_pool_verified": 574,
+  "contactable_verified": 574,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4428,
+  "remaining_to_target": 4426,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_567R1": {
-    "raw_discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 22,
+  "run_568R1": {
+    "raw_discovered": 66,
+    "fast_gate_passed": 18,
+    "size_check_passed": 9,
+    "legal_match_passed": 7,
+    "signal_confirmed": 7,
+    "lpr_identified": 4,
+    "contact_route_found": 3,
+    "qualified": 2,
+    "physically_integrated": 2,
+    "duplicates": 4,
+    "excluded": 60,
     "lane_metrics": [
       {
-        "lane": "supplemental_fresh_regional_investment_new_production",
-        "raw": 24,
-        "fast_gate": 6,
-        "size": 2,
-        "legal": 2,
-        "signal": 2,
-        "lpr": 2,
-        "contact": 2,
-        "prequalified": 2,
-        "note": "Fresh low-overlap recovery after two consecutive low-yield runs. Priority sources: regional new production/investment and fresh business-change; jobs not used. No quality criteria changed."
+        "lane": "growth_news",
+        "raw": 29,
+        "note": "fresh immutable staging 20260901-172305-growth-news.json"
+      },
+      {
+        "lane": "official_owner_prior",
+        "raw": 19,
+        "note": "fresh official-owner staging 20260901-162505-official-owner.json"
+      },
+      {
+        "lane": "official_owner_late",
+        "raw": 18,
+        "source_observations_reviewed": 60,
+        "note": "fresh immutable staging committed at c4178603103f07733d6deae27e6167ef99302923"
+      },
+      {
+        "lane": "independent_low_overlap",
+        "raw": null,
+        "note": "supplemental discovery executed; not added to discovered because safe global distinct count was not materialized"
       }
     ]
   }

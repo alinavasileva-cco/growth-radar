@@ -1,66 +1,62 @@
 {
-  "run_id": "N5K-20260901-568",
+  "run_id": "N5K-20260901-568R1",
   "campaign_id": "new_5000",
-  "status": "PARTIAL_TECHNICAL_BLOCK",
-  "updated_at": "2026-09-01T17:28:08+03:00",
-  "stage": "FINAL_PHYSICAL_DEDUP_BLOCKED",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-01T17:48:06+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 572,
     "target_count": 5000,
-    "current_canonical_count": 572,
-    "current_contactable_count": 572,
-    "progress_added": 0,
-    "remaining": 4428
+    "current_canonical_count": 574,
+    "current_contactable_count": 574,
+    "progress_added": 2,
+    "remaining": 4426
   },
   "funnel": {
-    "fresh_growth_staging_distinct_raw": 29,
-    "fresh_growth_staging_prequalified": 3,
-    "fresh_official_owner_distinct_raw": 19,
-    "fresh_official_owner_prequalified": 3,
-    "supplemental_discovery_distinct_employer_hits_resolved": 18,
-    "raw_120_threshold_reached": false,
-    "net_qualified_integrated": 0
+    "discovered": 66,
+    "fast_gate_passed": 18,
+    "size_check_passed": 9,
+    "legal_match_passed": 7,
+    "signal_confirmed": 7,
+    "lpr_identified": 4,
+    "contact_route_found": 3,
+    "qualified": 2,
+    "duplicates": 4,
+    "excluded": 60
   },
-  "candidate_status": [
+  "lane_metrics": [
     {
-      "company": "Eltex / ООО «Предприятие «ЭЛТЕКС»",
-      "inn": "5410108110",
-      "ogrn": "1025403911818",
-      "status": "HOLD_FINAL_PHYSICAL_DEDUP_REQUIRED"
+      "lane": "growth_news",
+      "raw": 29,
+      "note": "fresh immutable staging 20260901-172305-growth-news.json"
     },
     {
-      "company": "Чистая Линия / ООО «Чистая линия»",
-      "inn": "5008060096",
-      "ogrn": "1125047018205",
-      "status": "HOLD_FINAL_PHYSICAL_DEDUP_AND_CONTACT_RECHECK_REQUIRED"
+      "lane": "official_owner_prior",
+      "raw": 19,
+      "note": "fresh official-owner staging 20260901-162505-official-owner.json"
     },
     {
-      "company": "МолоПак / ООО «МОЛОПАК»",
-      "inn": "7743513365",
-      "ogrn": "1037739986899",
-      "status": "KNOWN_PHYSICAL_DUPLICATE_FROM_PREVIOUS_CANONICAL_GUARD"
+      "lane": "official_owner_late",
+      "raw": 18,
+      "source_observations_reviewed": 60,
+      "note": "fresh immutable staging committed at c4178603103f07733d6deae27e6167ef99302923"
+    },
+    {
+      "lane": "independent_low_overlap",
+      "raw": null,
+      "note": "supplemental discovery executed; not added to discovered because safe global distinct count was not materialized"
     }
   ],
-  "supplemental_discovery": {
-    "lanes": [
-      "fresh_growth_business_change",
-      "regional_investment_new_production",
-      "production_expansion",
-      "management_change",
-      "regional_expansion"
-    ],
-    "jobs_used": false,
-    "weak_catalog_backfill_used": false,
-    "criteria_relaxed": false,
-    "note": "Supplemental discovery was executed after fresh staging. The mandatory raw floor was not honestly reached; irrelevant, state-linked, foreign and duplicate source hits were not counted as distinct employer raw."
-  },
-  "integrity_status": "PASS_PREEXISTING_572_STATE_NOT_MUTATED",
+  "qualified_companies": [
+    "GSS Cosmetics",
+    "Renewal"
+  ],
+  "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "572_DATA_ROWS_PLUS_HEADER_LAST_CONFIRMED; CURRENT_FULL_READ_BLOCKED_BY_CONNECTOR_SIZE_LIMIT",
-  "physical_contactable_state": "572_DATA_ROWS_PLUS_HEADER_LAST_CONFIRMED; NOT_MUTATED_THIS_CYCLE",
+  "physical_master_state": "574_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "574_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "GitHub connector refuses full physical leads_master read due file size; code search is not accepted as final dedup because previous physical guard proved false-negative code-search results. Final exact dedup for held candidates therefore remains unproven and no canonical integration was attempted.",
-  "report": "reports/N5K-20260901-568_partial.md"
+  "blocker": null
 }
