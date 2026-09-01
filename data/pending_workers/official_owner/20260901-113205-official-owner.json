@@ -1,0 +1,153 @@
+{
+  "worker": "official_owner",
+  "created_at": "2026-09-01T11:32:05+03:00",
+  "campaign_id": "new_5000",
+  "mode": "READ_DISCOVERY_ONLY",
+  "canonical_write": false,
+  "outreach": false,
+  "source_of_truth_at_start": {
+    "config_version": "2026-09-01T11:10:00+03:00",
+    "canonical_count": 566,
+    "contactable_count": 566,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "dedup_policy": {
+    "historical_pending_full_materialization_required": false,
+    "authoritative_final_dedup_owner": "canonical_writer",
+    "worker_checks": [
+      "physical canonical/contactable available state",
+      "candidate-level repo search by INN",
+      "candidate-level repo search by OGRN",
+      "candidate-level repo search by exact legal name/brand+domain"
+    ],
+    "note": "Worker does not assign net QUALIFIED and does not count staged candidates as added."
+  },
+  "funnel": {
+    "raw_distinct_employer_names": 24,
+    "fast_gate_passed": 9,
+    "size_passed": 5,
+    "legal_passed": 4,
+    "signal_passed": 4,
+    "lpr_passed": 2,
+    "contact_passed": 1,
+    "prequalified_needs_final_global_dedup": 1,
+    "qualified_by_worker": 0
+  },
+  "source_batches": [
+    {
+      "batch": "moscow_electronics_production",
+      "raw": 4,
+      "examples": ["Новые платформы", "Кулон", "Новые технологии печати", "Семаргл"],
+      "sources": [
+        "https://www.cnews.ru/news/line/2026-02-10_kompaniya_novye_platformy",
+        "https://amp.rbc.ru/regional/spb_sz/04/06/2026/6a2129369a794733db258fc2",
+        "https://www.vedomosti.ru/press_releases/2026/06/03/v-podmoskove-investiruyut-430-mln-rublei-v-proizvodstvo-promishlennih-pechatayuschih-sostavov",
+        "https://www.cnews.ru/news/top/2026-03-16_v_sankt-peterburge_gotovyat"
+      ]
+    },
+    {
+      "batch": "tula_industrial_expansion",
+      "raw": 4,
+      "examples": ["Энергомаш", "Эвоком", "Птицефабрика Тульская", "Тульская инструментально-станкостроительная компания"],
+      "sources": [
+        "https://invest-tula.com/press-center/news/18491/",
+        "https://invest-tula.com/press-center/news/",
+        "https://invest-tula.com/press-center/news/18482/"
+      ]
+    },
+    {
+      "batch": "smolensk_packaging_expansion",
+      "raw": 3,
+      "examples": ["Руднянский тарный комбинат", "Калининградский тарный комбинат", "РТК"],
+      "sources": [
+        "https://www.interfax-russia.ru/index.php/center/news/rudnyanskiy-tarnyy-kombinat-zapustil-novuyu-proizvodstvennuyu-liniyu-v-smolenskoy-oblasti-vlasti",
+        "https://www.interfax-russia.ru/index.php/center/news/rudnyanskiy-tarnyy-kombinat-do-konca-goda-zapustit-v-smolenskoy-oblasti-proizvodstvo-za-1-mlrd-rub-vlasti"
+      ]
+    },
+    {
+      "batch": "nizhny_novgorod_materials",
+      "raw": 3,
+      "examples": ["РУСБУТИРАЛЬ", "Союз Стекольных Предприятий", "Клинский стекольный завод"],
+      "sources": [
+        "https://glassunion.ru/novosti/news_post/ooo-rusbutiral-zapustilo-unikalnoe-proizvodstvo-pvb-plenki-v-rossii",
+        "https://www.vedomosti.ru/press_releases/2025/06/18/v-razvitie-stekolnogo-proizvodstva-v-podmoskove-investiruyut-13-mlrd-rublei"
+      ]
+    },
+    {
+      "batch": "moscow_region_pmef_projects",
+      "raw": 6,
+      "examples": ["СОФОС БИО", "МЕТИЗ ПРОИЗВОДСТВО", "ГК Бетон-Бетон", "Промышленная группа Гермес", "КППП РУСКОН", "ПК ПЕЧАГИН"],
+      "sources": [
+        "https://www.vedomosti.ru/press_releases/2026/06/03/v-podmoskove-poyavitsya-zavod-funktsionalnogo-pitaniya--soglashenie-podpisano-na-pmef-2026",
+        "https://www.vedomosti.ru/press_releases/2026/06/03/v-podmoskove-postroyat-proizvodstvo-komplektuyuschih-dlya-protezov-nizhnih-konechnostei--soglashenie-podpisano-na-pmef-2026",
+        "https://www.vedomosti.ru/press_releases/2026/06/04/v-podmoskove-postroyat-promishlennii-park-s-investitsiyami-75-mlrd-rublei",
+        "https://www.vedomosti.ru/press_releases/2026/06/03/v-podmoskove-planiruetsya-otkritie-proizvodstva-bitovih-gazovih-kotlov-po-nemetskoi-tehnologii",
+        "https://www.vedomosti.ru/press_releases/2026/03/24/v-podmoskove-planiruyut-realizovat-esche-90-proektov-tehsuvereniteta"
+      ]
+    },
+    {
+      "batch": "management_and_operating_transformation",
+      "raw": 4,
+      "examples": ["СДЭК", "Билайн", "Газпром энергохолдинг", "НАРТИС"],
+      "sources": [
+        "https://www.retail.ru/news/novym-generalnym-direktorom-sdek-stal-pavel-kuznetsov-1-iyulya-2026-279450/",
+        "https://rutube.ru/video/59a6befc9f8524af0310d9c160c9adcd/",
+        "https://www.gehia.ru/press/news/i/item/4609/",
+        "https://www.nec.pro/press/news/nartis-lokalizoval-proizvodstvo-klyuchevykh-komponentov-dlya-intellektualnykh-schyetchikov/"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Новые платформы",
+      "legal_name": "ООО \"НОВЫЕ ПЛАТФОРМЫ\"",
+      "inn": "9724010391",
+      "ogrn": "1207700139680",
+      "domain": "newplatforms.ru",
+      "size": {
+        "revenue_2025_rub": 2193443000,
+        "evidence_url": "https://companies.rbc.ru/id/1207700139680-obschestvo-s-ogranichennoj-otvetstvennostyu-novyie-platformyi/"
+      },
+      "legal": {
+        "status": "ACTIVE",
+        "checked_date": "2026-08-27",
+        "evidence_url": "https://companies.rbc.ru/id/1207700139680-obschestvo-s-ogranichennoj-otvetstvennostyu-novyie-platformyi/"
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-02-10",
+        "summary": "Company launched its own automated surface-mount production line; stated expected production throughput increase of 5-10x. A 26 Mar 2026 company-results publication confirmed the new line as a key 2025 achievement and capacity-growth driver.",
+        "url": "https://www.cnews.ru/news/line/2026-02-10_kompaniya_novye_platformy",
+        "corroboration_url": "https://biz.cnews.ru/news/line/2026-03-26_kompaniya_novye_platformy"
+      },
+      "lpr": {
+        "name": "Минаков Олег Александрович",
+        "role": "Генеральный директор",
+        "evidence_url": "https://zachestnyibiznes.ru/company/ul/1207700139680_9724010391_OOO-NOVYE-PLATFORMY"
+      },
+      "contact": {
+        "type": "official_company_route",
+        "phone": "+7 (499) 444-34-39",
+        "email": "info@newplatforms.ru",
+        "sales_email": "sales@newplatforms.ru",
+        "url": "https://www.newplatforms.ru/contacts/"
+      },
+      "dedup_checks": {
+        "repo_search_inn_9724010391": "NO_MATCH",
+        "repo_search_ogrn_1207700139680": "NO_MATCH",
+        "repo_search_brand_domain": "NO_MATCH",
+        "physical_canonical_count_at_start": 566,
+        "final_global_dedup_required": true
+      }
+    }
+  ],
+  "notes": [
+    "Discovery continued without requiring full historical pending tree materialization.",
+    "This cycle produced 24 distinct employer-name-level raw observations across six independent source/region/type batches; the requested 70-130 raw target was not reached in this bounded run and was not padded with weak catalog entries.",
+    "Only one candidate closed the full SIZE -> LEGAL -> SIGNAL -> LPR -> CONTACT chain with verified published contact route and no worker-level repo match.",
+    "Canonical master/contactable/runtime/campaign were not modified."
+  ]
+}
