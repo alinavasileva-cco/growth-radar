@@ -1,0 +1,117 @@
+{
+  "lane": "growth_news",
+  "created_at": "2026-09-02T01:27:44+03:00",
+  "immutable": true,
+  "campaign_id": "new_5000",
+  "guards": {
+    "canonical_write": false,
+    "contactable_write": false,
+    "runtime_write": false,
+    "campaign_write": false,
+    "outreach": false
+  },
+  "config_snapshot": {
+    "source": "CURRENT_WORKING_CONFIG.md",
+    "version": "2026-09-02T00:59:00+03:00",
+    "physical_canonical": 583,
+    "physical_contactable": 583,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0
+  },
+  "metrics": {
+    "raw_distinct_employers": 12,
+    "fast_gate": 5,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
+    "prequalified_needs_final_global_dedup": 1,
+    "reject": 11,
+    "source_batches": 8,
+    "target_raw_80_150_reached": false,
+    "quota_backfilled_with_weak_catalog": false
+  },
+  "source_batches": [
+    {"batch":"fresh_manufacturing_launches","source_type":"business_media","region":"multi-region","raw":2},
+    {"batch":"leningrad_growth","source_type":"official_company/regional","region":"Leningrad Oblast","raw":2},
+    {"batch":"moscow_oblast_expansion","source_type":"regional_investment/business_media","region":"Moscow Oblast","raw":2},
+    {"batch":"novosibirsk_investment","source_type":"regional_investment/business_media","region":"Novosibirsk Oblast","raw":1},
+    {"batch":"pskov_investment","source_type":"regional_investment/business_media","region":"Pskov Oblast","raw":1},
+    {"batch":"chelyabinsk_expansion","source_type":"business_media/regional","region":"Chelyabinsk Oblast","raw":1},
+    {"batch":"udmurtia_electronics","source_type":"industry_media","region":"Udmurt Republic","raw":1},
+    {"batch":"management_and_regional_expansion","source_type":"company_press/business_media","region":"multi-region","raw":2}
+  ],
+  "dedup_policy": {
+    "historical_pending_tree_required_before_discovery": false,
+    "physical_canonical_runtime_checked": true,
+    "candidate_level_repo_search_required_for_staged": true,
+    "final_global_dedup_owner": "canonical_writer"
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "SafetyLab",
+      "legal_name": "ООО \"ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ\"",
+      "inn": "7841433407",
+      "ogrn": "1107847328951",
+      "domain": "safetylab.ru",
+      "size": {
+        "evidence": "2025 revenue 870.49 million RUB; active small-business entity",
+        "url": "https://xfirm.ru/company/7841433407"
+      },
+      "legal": {
+        "active": true,
+        "registered_since": "2010-10-07",
+        "url": "https://companies.rbc.ru/id/1107847328951-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-laboratoriya-bezopasnosti/"
+      },
+      "signal": {
+        "date": "2026-07-09",
+        "type": "new_production_site",
+        "summary": "Opened a new production site in the Fedorovskoye industrial park in Leningrad Oblast as part of an investment program to expand production capacity.",
+        "url": "https://www.safetylab.ru/ru/news"
+      },
+      "lpr": {
+        "name": "Андреев Андрей Николаевич",
+        "role": "генеральный директор",
+        "url": "https://safetylab.ru/ru/main"
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "phone": "+7 (812) 332-52-45",
+        "email": "info@safetylab.ru",
+        "cooperation_contact": "Анна Андреева, директор по стратегическому развитию, anna.andreeva@safetylab.ru",
+        "url": "https://www.safetylab.ru/ru/info/19"
+      },
+      "dedup_keys": {
+        "inn": "7841433407",
+        "ogrn": "1107847328951",
+        "exact_legal_name": "ООО \"ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ\"",
+        "brand_domain": "SafetyLab|safetylab.ru"
+      },
+      "dedup_checks": [
+        {"key":"7841433407","repo_search_matches":0},
+        {"key":"1107847328951","repo_search_matches":0},
+        {"key":"ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ","repo_search_matches":0},
+        {"key":"safetylab.ru","repo_search_matches":0}
+      ],
+      "note": "Worker does not assign net QUALIFIED; canonical writer must perform final physical global dedup."
+    },
+    {"status":"REJECT","brand":"Сайбер Электро","evidence_url":"https://www.cnews.ru/news/line/2026-09-01_dlya_sajber_elektrootkryta","reason":"Strong fresh expansion signal, but Russian legal entity/INN/OGRN and LPR were not resolved to required confidence in this cycle."},
+    {"status":"REJECT","brand":"Лейо","legal_name":"ООО \"ЛЕЙО\"","inn":"6000015946","ogrn":"1266000001057","evidence_url":"https://informpskov.ru/news/515168.html","reason":"Legal entity and investment signal confirmed, but current operating scale/contact route did not clear the full SIZE->CONTACT funnel."},
+    {"status":"REJECT","brand":"ТЕХНОНИКОЛЬ / Завод ТЕХНО Серпухов","evidence_url":"https://www.vedomosti.ru/press_releases/2026/04/02/bolee-2-mlrd-rublei-investiruyut-v-rekonstruktsiyu-zavoda-steklovolokna-v-serpuhove-v-etom-godu","reason":"Fresh modernization signal, but employer-level legal/contact resolution was not completed without group-level ambiguity."},
+    {"status":"REJECT","brand":"Черкизово / тюменский комплекс","evidence_url":"https://tumen.dk.ru/news/237238103","reason":"Expansion signal identified; not advanced because employer-level legal/contact resolution remained group-level in this cycle."},
+    {"status":"REJECT","brand":"ИРЗ-Фотон","evidence_url":"https://pcnews.ru/news/v_izevske_zapustila_proizvodstvo_modulej_dla_bazovyh_stancij_sotovoj_svazi_2g_i_4g-1790518.html","reason":"Production launch found; full SIZE->LEGAL->LPR->CONTACT verification not completed in this cycle."},
+    {"status":"REJECT","brand":"Гагаринский светотехнический завод / Вартон","evidence_url":"https://smol.aif.ru/society/gagarinskiy-svetotehnicheskiy-zavod-rasshiryaet-proizvodstvo","reason":"Expansion signal found; employer-level legal and contact resolution not completed to staging standard."},
+    {"status":"REJECT","brand":"ПРЕФАБРИКА АГ","evidence_url":"https://www.vedomosti.ru/press_releases/2026/02/26/v-podmoskove-zapustyat-zavod-krupnopanelnogo-domostroeniya-za-43-mlrd-rublei","reason":"Signal within 180-day window, but full gated verification was not completed in this cycle."},
+    {"status":"REJECT","brand":"Брянский машиностроительный завод","evidence_url":"https://bryansktoday.ru/article/269670","reason":"Investment project signal found; not advanced due to unresolved employer-level suitability/contact verification within this cycle."},
+    {"status":"REJECT","brand":"Сота","evidence_url":"https://www.kommersant.ru/doc/8761797","reason":"Expansion signal found; full SIZE and CONTACT requirements were not proven to staging standard."},
+    {"status":"REJECT","brand":"Группа АГР / Esteo","evidence_url":"https://www.fontanka.ru/2026/05/21/76432393/","reason":"Production launch found; group-level employer resolution and contactable LPR path not completed in this cycle."},
+    {"status":"REJECT","brand":"МАКС","evidence_url":"https://www.asn-news.ru/press_release/47494","reason":"Regional expansion signal found; not advanced through full gated verification in this cycle."}
+  ],
+  "notes": [
+    "Discovery was not blocked by incomplete historical pending-tree materialization.",
+    "No staged/prequalified candidate is counted as added or net QUALIFIED.",
+    "Raw target was not filled with weak catalog entries."
+  ]
+}
