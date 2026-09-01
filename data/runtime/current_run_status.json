@@ -10,7 +10,8 @@
     "current_canonical_count": 566,
     "current_contactable_count": 566,
     "progress_added": 1,
-    "remaining": 4434
+    "remaining": 4434,
+    "remaining_to_1000": 434
   },
   "funnel": {
     "discovered": 38,
@@ -41,7 +42,7 @@
       "qualified_raw_pct": 4.0,
       "fast_gate_raw_pct": 20.0,
       "duplicate_early_reject_pct": 96.0,
-      "notes": "Repair of 560: candidate was not a canonical company duplicate; physical guard skipped it only because the initially assigned Lead ID N5K-0566 already existed. Candidate keys INN 5040054932, OGRN 1025005116014 and exact legal name remained absent. Corrected to next checked ID N5K-0734. Exact regional source sample is now probe-only due >70% duplicate+early reject."
+      "notes": "Larta Glass integrated net-new after same-cycle Lead-ID collision repair. Exact regional sample is probe-only next run because duplicate+early reject exceeded 70%."
     },
     {
       "lane": "export_dealer_management_partner_change",
@@ -59,9 +60,70 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 7.6923,
       "duplicate_early_reject_pct": 100.0,
-      "notes": "Second-wave sample saturated and will be rotated rather than repeated."
+      "notes": "This exact 13-observation second-wave sample saturated; rotate to fresh source batches rather than repeat it unchanged."
     }
   ],
+  "global_efficiency": {
+    "raw": 38,
+    "fast_gate": 6,
+    "size": 3,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "duplicates": 1,
+    "early_reject": 36,
+    "duplicate_plus_early_reject": 37,
+    "qualified_raw_pct": 2.6316,
+    "fast_gate_raw_pct": 15.7895,
+    "duplicate_early_reject_pct": 97.3684
+  },
+  "last_3_run_efficiency": [
+    {
+      "run_id": "N5K-20260901-558",
+      "raw": 18,
+      "fast_gate": 10,
+      "qualified": 1,
+      "qualified_raw_pct": 5.5556,
+      "fast_gate_raw_pct": 55.5556,
+      "duplicate_early_reject_pct": 94.4444
+    },
+    {
+      "run_id": "N5K-20260901-559",
+      "raw": 121,
+      "fast_gate": 41,
+      "qualified": 2,
+      "qualified_raw_pct": 1.6529,
+      "fast_gate_raw_pct": 33.8843,
+      "duplicate_early_reject_pct": 98.3471
+    },
+    {
+      "run_id": "N5K-20260901-560R1",
+      "raw": 38,
+      "fast_gate": 6,
+      "qualified": 1,
+      "qualified_raw_pct": 2.6316,
+      "fast_gate_raw_pct": 15.7895,
+      "duplicate_early_reject_pct": 97.3684
+    }
+  ],
+  "efficiency_change_vs_previous_run": {
+    "qualified_raw_pct_points": 0.9787,
+    "fast_gate_raw_pct_points": -18.0948,
+    "net_new_change": -1,
+    "interpretation": "NET yield improved from 1.6529% to 2.6316%, while absolute net-new decreased from 2 to 1. Saturation remains high, so the exact source samples will not be repeated unchanged."
+  },
+  "next_distribution_pct": {
+    "jobs_probe": 5,
+    "growth_news_probe": 5,
+    "official_owner_ceo_probe": 5,
+    "industry_catalog": 0,
+    "regional_investment_new_production_probe": 5,
+    "export_dealer_franchise_expansion_fresh": 30,
+    "management_change_commercial_transformation_fresh": 30,
+    "partner_business_change_fresh": 20
+  },
   "qualified_companies": [
     "Larta Glass / Ларта Гласс Раменское"
   ],
@@ -69,6 +131,7 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "566_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "566_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
