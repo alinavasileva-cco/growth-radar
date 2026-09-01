@@ -17,66 +17,43 @@
   "current_run_id": "N5K-20260901-569R1",
   "last_run_id": "N5K-20260901-569R1",
   "latest_completed_run": "N5K-20260901-569R1",
-  "canonical_integration_run_id": "N5K-20260901-569",
-  "hourly_baseline_count": 574,
-  "hourly_net_new": 1,
+  "canonical_integration_run_id": "N5K-20260901-569R1",
+  "hourly_baseline_count": 575,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260901-569",
-    "raw": 28,
-    "fast_gate": 16,
-    "size": 13,
-    "legal": 9,
-    "signal": 9,
-    "lpr": 6,
-    "contact": 4,
-    "qualified": 1,
-    "duplicates": 3,
-    "excluded_early_reject": 24,
-    "qualified_raw_pct": 3.5714,
-    "fast_gate_raw_pct": 57.1429,
+    "run_id": "N5K-20260901-569R1",
+    "raw": 2,
+    "fast_gate": 2,
+    "size": 2,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 1,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded_early_reject": 1,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 100.0,
     "raw_target_met": false,
     "supplemental_discovery_performed": true,
-    "raw_count_note": "28 is the conservative resolved employer-level raw count from the two fresh immutable staging batches. Independent low-overlap supplemental discovery was executed but not added because safe global cross-lane legal-key distinctness was not materialized; no search-result-row padding used."
+    "raw_count_note": "Two additional employer/legal-entity-resolved candidates were deep-checked in the supplemental recovery. Lalibela Coffee reached the physical guard but was already present in canonical and was rejected as a duplicate; Aravia was rejected before staging because the official brand contact route did not resolve cleanly to the target legal entity. No result-row padding."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "official_owner_fresh",
-      "raw": 14,
-      "source_level_observations": 68,
-      "prequalified_rechecked": 3,
-      "submitted_to_physical_guard": 3,
-      "net_qualified": 1,
-      "physical_duplicates": 2,
-      "next_state": "ROTATE_TO_FRESH_LOW_OVERLAP"
-    },
-    {
-      "lane": "growth_news_fresh",
-      "raw": 14,
-      "prequalified_rechecked": 3,
+      "lane": "supplemental_low_overlap_new_production",
+      "raw": 2,
+      "prequalified_rechecked": 2,
       "submitted_to_physical_guard": 1,
-      "rejected_after_recheck": 2,
       "net_qualified": 0,
       "physical_duplicates": 1,
-      "next_state": "ROTATE_TO_FRESH_LOW_OVERLAP"
-    },
-    {
-      "lane": "independent_low_overlap_supplemental",
-      "raw": null,
-      "next_state": "CONTINUE_AND_MATERIALIZE_GLOBAL_DISTINCT_KEYS"
+      "rejected_before_integration": 1,
+      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-567R1",
-      "raw": 24,
-      "fast_gate": 6,
-      "qualified": 1,
-      "qualified_raw_pct": 4.1667,
-      "fast_gate_raw_pct": 25.0
-    },
     {
       "run_id": "N5K-20260901-568R1",
       "raw": 66,
@@ -92,13 +69,21 @@
       "qualified": 1,
       "qualified_raw_pct": 3.5714,
       "fast_gate_raw_pct": 57.1429
+    },
+    {
+      "run_id": "N5K-20260901-569R1",
+      "raw": 2,
+      "fast_gate": 2,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 100.0
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 0.5411,
+    "qualified_raw_pct_points": -3.5714,
     "net_new_change": -1,
-    "fast_gate_raw_pct_points": 29.8702,
-    "assessment": "One net-new company was physically integrated. Three submitted candidates were rejected by the full canonical physical guard as duplicates. Conservative resolved raw remains below target, so next cycle must continue fresh low-overlap discovery rather than reuse saturated samples."
+    "fast_gate_raw_pct_points": 42.8571,
+    "assessment": "Supplemental recovery did not add a physical net-new company: the only candidate reaching the canonical writer was a physical duplicate. Raw remains materially below target, so discovery must continue in fresh low-overlap sources without weakening qualification criteria."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -110,7 +95,7 @@
     "management_change_commercial_transformation_fresh": 25,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "N5K-20260901-569 consumed fresh official_owner 20260901-182439 and growth_news 20260901-182637 staging. Four candidates passed canonical-writer recheck and were sent to the physical guard; Энхим was net-new, while Мосэлектрощит, НАРТИС and ГалВент were physical duplicates. Hobby World and Анатомика were rejected before integration because the published contact routes did not resolve cleanly to the target legal entities.",
+  "fresh_staging": "N5K-20260901-569R1 supplemental recovery resolved two fresh new-production candidates. Lalibela Coffee passed deep verification but was rejected by the authoritative physical canonical guard as a duplicate. Aravia was rejected before integration because the published official brand route could not be cleanly tied to the target legal entity.",
   "repair_required": null,
-  "note": "N5K-20260901-569R1 completed after physical integration: +0 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-569R1 completed after physical dedup: +0 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Metadata synchronized to the physical result. Raw target remains unmet."
 }
