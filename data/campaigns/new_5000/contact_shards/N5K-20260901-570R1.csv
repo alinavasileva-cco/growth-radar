@@ -1,0 +1,5 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0748,N5K-0748-C01,Сайбер Электро,5009123398,,Корпоративный маршрут,+7 495 258-76-76,phone,official corporate,Сайбер Электро,https://cyberpromo.ru/,NO,HIGH,2026-09-01,Публичный корпоративный телефон.,N5K-20260901-570R1,new_5000
+N5K-0748,N5K-0748-C02,Сайбер Электро,5009123398,,Корпоративный маршрут,info@cyber-electro.ru,email,official corporate,Сайбер Электро,https://cyberpromo.ru/,NO,HIGH,2026-09-01,Публичный корпоративный email.,N5K-20260901-570R1,new_5000
+N5K-0750,N5K-0750-C01,VROBOTICS,5257218488,,Корпоративный маршрут,+7 (831) 411-12-65,phone,official corporate,производственная группа,https://www.velam-rus.ru/kontakty/,NO,HIGH,2026-09-01,Публичный корпоративный телефон.,N5K-20260901-570R1,new_5000
+N5K-0750,N5K-0750-C02,VROBOTICS,5257218488,,Корпоративный маршрут,info@vrobotics.pro,email,official corporate,VROBOTICS,https://vrobotics.pro/,NO,HIGH,2026-09-01,Публичный корпоративный email.,N5K-20260901-570R1,new_5000

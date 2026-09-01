@@ -1,37 +1,52 @@
 {
-  "generated_at": "2026-09-01T19:08:00+03:00",
+  "generated_at": "2026-09-01T20:00:49+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-569R2",
-  "current_run_id": "N5K-20260901-569R2",
+  "latest_completed_run_id": "N5K-20260901-570R1",
+  "current_run_id": "N5K-20260901-570R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 575,
-  "contactable_verified": 575,
+  "canonical_pool_verified": 577,
+  "contactable_verified": 577,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4425,
+  "remaining_to_target": 4423,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_569R2": {
-    "raw_discovered": 1,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
-    "physically_integrated": 0,
-    "duplicates": 1,
-    "excluded": 0,
+  "run_570R1": {
+    "raw_discovered": 69,
+    "fast_gate_passed": 23,
+    "size_check_passed": 21,
+    "legal_match_passed": 15,
+    "signal_confirmed": 11,
+    "lpr_identified": 7,
+    "contact_route_found": 5,
+    "qualified": 2,
+    "physically_integrated": 2,
+    "duplicates": 3,
+    "excluded": 64,
     "lane_metrics": [
       {
-        "lane": "regional_investment_new_production_fresh",
-        "raw": 1,
+        "lane": "official_owner",
+        "raw": 52,
+        "qualified": 4,
+        "excluded": 48,
+        "note": "Fresh worker staging 20260901-192655; four employer/legal-entity candidates reached size+legal+signal+LPR+published-contact prequalification and require canonical writer global dedup."
+      },
+      {
+        "lane": "growth_news",
+        "raw": 17,
         "qualified": 1,
-        "note": "Fresh 27-30 Aug 2026 machinery-production expansion signal. Candidate resolved to current legal entity, current owner/director and direct official legal-entity contact route before staging."
+        "excluded": 16,
+        "note": "Fresh worker staging 20260901-192732; one employer/legal-entity candidate reached full prequalification and requires canonical writer global dedup."
+      },
+      {
+        "lane": "supplemental_low_overlap_production_review",
+        "raw": 30,
+        "qualified": 0,
+        "excluded": 0,
+        "note": "Same-cycle supplemental review covered July and June 2026 production-launch roundups (15+15 employer-level launch observations). These observations are NOT added to funnel.discovered because cross-lane/global overlap with the existing 69 worker observations was not fully proven; no quota padding."
       }
     ]
   }
