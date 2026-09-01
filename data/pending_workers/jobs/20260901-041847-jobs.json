@@ -1,0 +1,74 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "run_timestamp_msk": "2026-09-01T04:18:47+03:00",
+  "baseline_head": "d0d4400b570db0e5599315ff2c578307b3ab58da",
+  "config_version": "2026-09-01T02:46:00+03:00",
+  "canonical_snapshot": {
+    "master_count": 561,
+    "contactable_count": 561,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0
+  },
+  "mode": "metrics_only",
+  "qualified": [],
+  "qualified_count": 0,
+  "outreach": 0,
+  "canonical_writer_run": false,
+  "canonical_writes": false,
+  "preflight": {
+    "fresh_head_read": true,
+    "current_working_config_read": true,
+    "jobs_tree_complete": true,
+    "jobs_tree_truncated": false,
+    "all_pending_file_bodies_read": false,
+    "canonical_dedup_keyset_fully_materialized": false,
+    "repo_wide_dedup_complete": false,
+    "fail_closed": true,
+    "blocker": "GitHub connector exposed a complete immutable pending/jobs tree, but this run could not read and materialize the body of every historical data/pending_workers/** file plus the full current canonical keyset. Therefore no source observation was allowed to become repo-dedup-confirmed RAW, enter FAST GATE/deep-check, or be staged as QUALIFIED."
+  },
+  "discovery": {
+    "target_distinct_raw": "140-150 if sources support it",
+    "target_reached": false,
+    "source_level_named_employer_observations_min": 30,
+    "repo_dedup_confirmed_raw": 0,
+    "note": "The 30+ figure is a conservative count of visibly named employer-level source observations across fresh job-search results after excluding obvious people-only results and stale/archived records. It is not claimed as 30 globally unique companies after repository dedup.",
+    "batches": [
+      {"batch": "urals", "sources": ["HH-indexed vacancy pages", "regional job aggregators"], "regions": ["Yekaterinburg", "Chelyabinsk", "Tyumen"], "qualified": 0},
+      {"batch": "siberia", "sources": ["HH-indexed vacancy pages", "regional job aggregators"], "regions": ["Novosibirsk", "Omsk", "Krasnoyarsk"], "qualified": 0},
+      {"batch": "volga", "sources": ["HH-indexed vacancy pages", "regional job aggregators"], "regions": ["Kazan", "Samara", "Ufa", "Perm", "Nizhny Novgorod"], "qualified": 0},
+      {"batch": "south", "sources": ["HH-indexed vacancy pages", "regional job aggregators"], "regions": ["Rostov-on-Don", "Krasnodar", "Volgograd", "Voronezh"], "qualified": 0},
+      {"batch": "far_east_east_siberia", "sources": ["HH-indexed vacancy pages", "DreamJob", "Cataloxy"], "regions": ["Vladivostok", "Khabarovsk", "Irkutsk"], "qualified": 0},
+      {"batch": "central_secondary_regions", "sources": ["regional job aggregators", "Cataloxy"], "regions": ["Saratov", "Izhevsk", "Kirov", "Yaroslavl", "Tula", "Kaliningrad"], "qualified": 0},
+      {"batch": "alternative_job_boards", "sources": ["Rabota.ru", "Habr Career", "GetMatch", "DreamJob"], "regions": ["Russia"], "qualified": 0},
+      {"batch": "fresh_cross_region_signals", "sources": ["Joblum", "jabka.work", "sobes.tech", "Nesiditsa"], "regions": ["Russia"], "qualified": 0}
+    ],
+    "fresh_examples_not_promoted": [
+      {"employer": "Экосмотр", "role": "Коммерческий директор (CCO)", "signal_date": "2026-08-07"},
+      {"employer": "АкваБайт", "role": "Коммерческий директор", "signal_date": "2026-08-05"},
+      {"employer": "Спутниковая Связь", "role": "Коммерческий директор (CCO)", "signal_date": "2026-08-07"},
+      {"employer": "Многофункциональный Комплекс Бурный", "role": "Коммерческий директор", "signal_date": "2026-08-10"},
+      {"employer": "СЗ Ресурс Девелопмент-Острогорная", "role": "Коммерческий директор", "signal_date": "2026-08-06"},
+      {"employer": "MAXCAPITAL", "role": "Директор по развитию бизнеса", "signal_date": "2026-08-30"}
+    ]
+  },
+  "worker_funnel": {
+    "source_level_named_employer_observations_min": 30,
+    "repo_dedup_confirmed_raw": 0,
+    "fast_gate": 0,
+    "deep_check": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "policy": {
+    "criteria_changed": false,
+    "criteria_weakened": false,
+    "stale_records_used_for_decisions": false,
+    "contacts_inferred": false,
+    "outreach_performed": false
+  }
+}
