@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T22:59:00+03:00",
+  "generated_at": "2026-09-01T23:52:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-573R2",
-  "current_run_id": "N5K-20260901-573R2",
+  "latest_completed_run_id": "N5K-20260901-574R1",
+  "current_run_id": "N5K-20260901-574R1",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 580,
   "contactable_verified": 580,
@@ -14,32 +14,30 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_573R2": {
-    "raw_discovered": 63,
-    "fast_gate_passed": 18,
+  "run_574R1": {
+    "raw_discovered": 33,
+    "fast_gate_passed": 16,
     "size_check_passed": 12,
-    "legal_match_passed": 10,
-    "signal_confirmed": 9,
-    "lpr_identified": 6,
-    "contact_route_found": 4,
+    "legal_match_passed": 9,
+    "signal_confirmed": 8,
+    "lpr_identified": 5,
+    "contact_route_found": 3,
     "qualified": 0,
     "physically_integrated": 0,
     "duplicates": 3,
-    "excluded": 61,
+    "excluded": 30,
     "lane_metrics": [
       {
-        "lane": "prior_573R1_conservative_distinct",
-        "distinct_raw": 38,
-        "prequalified": 2,
-        "qualified": 0,
-        "notes": "Inherited factual 573R1 distinct raw; no double-counting of its source overlaps."
+        "lane": "fresh_growth_news_2327",
+        "distinct_raw": 18,
+        "prequalified": 1,
+        "notes": "Fresh worker staging; quota padding not used."
       },
       {
-        "lane": "fresh_regional_production_and_investment_recovery",
-        "distinct_raw": 25,
-        "prequalified": 4,
-        "qualified": 2,
-        "notes": "Fresh low-overlap August/September production, plant expansion, regional investment and management-change observations manually screened at employer level. State-linked, foreign-only, weak-signal and unresolved legal candidates were rejected early; jobs not used."
+        "lane": "fresh_official_owner_2336",
+        "distinct_raw": 15,
+        "prequalified": 2,
+        "notes": "Fresh worker staging; final global dedup delegated to canonical writer."
       }
     ]
   }

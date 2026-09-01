@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T23:03:00+03:00",
+  "updated_at": "2026-09-01T23:52:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-572R1",
-  "current_run_id": "N5K-20260901-573R2",
-  "last_run_id": "N5K-20260901-573R2",
-  "latest_completed_run": "N5K-20260901-572R1",
+  "last_completed_run_id": "N5K-20260901-574R1",
+  "current_run_id": "N5K-20260901-574R1",
+  "last_run_id": "N5K-20260901-574R1",
+  "latest_completed_run": "N5K-20260901-574R1",
   "latest_attempted_run": "N5K-20260901-573R2",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260901-573R2",
@@ -108,5 +108,5 @@
   },
   "fresh_staging": "573R2 completed same-hour supplemental recovery. Two fresh S1 production-expansion candidates were submitted to the existing physical writer and both were skipped as existing canonical duplicates. Pending cleared after integration; staged qualified 0.",
   "repair_required": "LOW_RAW_63_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "note": "N5K-20260901-573R2 physically guarded with +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0. LOW RAW 63 explicitly disclosed; latest normal throughput completion remains N5K-20260901-572R1."
+  "note": "N5K-20260901-574R1 completed after physical integration: +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
