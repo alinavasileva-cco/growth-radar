@@ -1,53 +1,46 @@
 {
-  "run_id": "N5K-20260902-575R1",
+  "run_id": "N5K-20260902-575R2",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-02T00:51:00+03:00",
+  "updated_at": "2026-09-02T00:57:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 580,
+    "baseline_count": 582,
     "target_count": 5000,
-    "current_canonical_count": 582,
-    "current_contactable_count": 582,
-    "progress_added": 2,
-    "remaining": 4418
+    "current_canonical_count": 583,
+    "current_contactable_count": 583,
+    "progress_added": 1,
+    "remaining": 4417
   },
   "funnel": {
-    "discovered": 35,
-    "fast_gate_passed": 15,
-    "size_check_passed": 11,
-    "legal_match_passed": 9,
-    "signal_confirmed": 8,
-    "lpr_identified": 5,
-    "contact_route_found": 3,
-    "qualified": 2,
-    "duplicates": 1,
-    "excluded": 32
+    "discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 0
   },
   "lane_metrics": [
     {
-      "lane": "fresh_official_owner_0024",
-      "distinct_raw": 18,
-      "prequalified": 2,
-      "notes": "Fresh worker staging; no criteria weakening."
-    },
-    {
-      "lane": "fresh_growth_news_0027",
-      "distinct_raw": 18,
+      "lane": "supplemental_management_change",
+      "distinct_raw": 1,
       "prequalified": 1,
-      "notes": "Fresh worker staging; one cross-lane overlap conservatively removed from raw total."
+      "notes": "Fresh 2026 management-change signal; official legal/contact chain resolved; no jobs used."
     }
   ],
   "qualified_companies": [
-    "Ай-Пласт / iPlast",
-    "ГлазЦентр Краснодар"
+    "ГК Цифра"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "582_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "582_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "583_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "583_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

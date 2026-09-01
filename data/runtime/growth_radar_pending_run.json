@@ -1,62 +1,8 @@
 {
   "run_id": "N5K-20260902-575R2",
   "updated_at": "2026-09-02T00:57:00+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "qualified_staged_not_counted": 1,
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-0762",
-      "Brand": "ГК Цифра",
-      "Legal Name": "ООО «ЦИФРА»",
-      "INN": "7704245507",
-      "OGRN/OGRNIP": "1027704005780",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "промышленное ПО / цифровизация производства / B2B",
-      "Website": "https://www.zyfra.com/ru/",
-      "Revenue/Scale": "Действующая коммерческая компания; публичная отчетность показывает выручку 2,055 млрд ₽ за 2023 год, официальный профиль позиционирует ГК как крупного разработчика решений для цифровизации промышленности.",
-      "Signal Level": "S3",
-      "Signal Summary": "06.08.2026 объявлено о назначении Ильи Якимова генеральным директором с 09.08.2026; заявленные приоритеты — операционная эффективность, развитие продуктового бизнеса и продвижение решений в России и странах-партнерах.",
-      "Signal Date": "2026-08-06",
-      "Signal Source": "https://www.cnews.ru/news/line/2026-08-06_v_tsifre_naznachen_novyj",
-      "Owner": "",
-      "CEO": "Илья Якимов",
-      "LPR": "Илья Якимов",
-      "LPR Role": "генеральный директор",
-      "Primary Phone": "+7 (495) 128-54-80",
-      "Primary Email": "info@zyfra.com",
-      "HH Contact": "",
-      "Contact Form": "",
-      "Contact Type": "официальный опубликованный маршрут для новых клиентов",
-      "Contact Source": "https://www.zyfra.com/ru/contacts/",
-      "Consulting Hypothesis": "Коммерческая и операционная трансформация на фоне смены генерального директора: продуктовая стратегия, B2B pipeline, KPI, эффективность и масштабирование на новые рынки.",
-      "contacts": [
-        {"value":"info@zyfra.com","channel":"email","type":"official new-client email","source":"ГК Цифра","url":"https://www.zyfra.com/ru/contacts/","is_lpr":false,"notes":"Официально опубликованный маршрут для клиентов."},
-        {"value":"+7 (495) 128-54-80","channel":"phone","type":"official new-client phone","source":"ГК Цифра","url":"https://www.zyfra.com/ru/contacts/","is_lpr":false,"notes":"Официально опубликованный маршрут для новых клиентов."}
-      ],
-      "evidence": [
-        {"type":"LEGAL","claim":"ООО «ЦИФРА», ИНН 7704245507, ОГРН 1027704005780; действующая коммерческая организация.","url":"https://www.audit-it.ru/contragent/1027704005780_ooo-tsifra","source":"Audit-it"},
-        {"type":"SIZE","claim":"Публичная отчетность показывает выручку 2,055 млрд ₽ за 2023 год; официальный профиль описывает крупный промышленный технологический бизнес.","url":"https://check.tochka.com/company/1027704005780/","source":"Точка"},
-        {"type":"SIGNAL","claim":"06.08.2026 объявлен новый генеральный директор; приоритеты включают операционную эффективность, продуктовый бизнес и продвижение решений в России и странах-партнерах.","url":"https://www.cnews.ru/news/line/2026-08-06_v_tsifre_naznachen_novyj","source":"CNews"},
-        {"type":"LPR","claim":"Илья Якимов утвержден генеральным директором ГК Цифра с 09.08.2026.","url":"https://www.cnews.ru/news/line/2026-08-06_v_tsifre_naznachen_novyj","source":"CNews"},
-        {"type":"CONTACT","claim":"Официальная страница публикует телефон и email для новых клиентов, а также реквизиты ООО ЦИФРА.","url":"https://www.zyfra.com/ru/contacts/","source":"ГК Цифра"}
-      ]
-    }
-  ],
-  "funnel": {
-    "discovered": 1,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 0
-  },
-  "lane_metrics": [
-    {"lane":"supplemental_management_change","distinct_raw":1,"prequalified":1,"notes":"Fresh 2026 management-change signal; official legal/contact chain resolved; no jobs used."}
-  ],
-  "notes": "Supplemental same-hour recovery after low raw 35. Candidate-level physical dedup must run in canonical writer. Broader fresh production/investment scans were used for discovery, but unresolved source-level observations are not inflated into employer-level raw. Outreach forbidden."
+  "status": "CLEARED_AFTER_INTEGRATION",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "note": "N5K-20260902-575R2 integrated physically; canonical/contactable 583/583; integrity PASS; orphan 0/0; outreach 0."
 }

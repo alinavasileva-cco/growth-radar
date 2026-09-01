@@ -1,43 +1,37 @@
 {
-  "generated_at": "2026-09-02T00:51:00+03:00",
+  "generated_at": "2026-09-02T00:57:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-575R1",
-  "current_run_id": "N5K-20260902-575R1",
+  "latest_completed_run_id": "N5K-20260902-575R2",
+  "current_run_id": "N5K-20260902-575R2",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 582,
-  "contactable_verified": 582,
+  "canonical_pool_verified": 583,
+  "contactable_verified": 583,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4418,
+  "remaining_to_target": 4417,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_575R1": {
-    "raw_discovered": 35,
-    "fast_gate_passed": 15,
-    "size_check_passed": 11,
-    "legal_match_passed": 9,
-    "signal_confirmed": 8,
-    "lpr_identified": 5,
-    "contact_route_found": 3,
-    "qualified": 2,
-    "physically_integrated": 2,
-    "duplicates": 1,
-    "excluded": 32,
+  "run_575R2": {
+    "raw_discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "physically_integrated": 1,
+    "duplicates": 0,
+    "excluded": 0,
     "lane_metrics": [
       {
-        "lane": "fresh_official_owner_0024",
-        "distinct_raw": 18,
-        "prequalified": 2,
-        "notes": "Fresh worker staging; no criteria weakening."
-      },
-      {
-        "lane": "fresh_growth_news_0027",
-        "distinct_raw": 18,
+        "lane": "supplemental_management_change",
+        "distinct_raw": 1,
         "prequalified": 1,
-        "notes": "Fresh worker staging; one cross-lane overlap conservatively removed from raw total."
+        "notes": "Fresh 2026 management-change signal; official legal/contact chain resolved; no jobs used."
       }
     ]
   }
