@@ -29,7 +29,7 @@
       "lane": "regional_investment_new_production_fresh",
       "raw": 1,
       "qualified": 1,
-      "note": "Fresh 27-30 Aug 2026 machinery-production expansion signal. Candidate resolved to current legal entity, current owner/director and direct official legal-entity contact route before staging."
+      "note": "Fresh 27-30 Aug 2026 machinery-production expansion signal. Candidate resolved to current legal entity, current owner/director and direct official legal-entity contact route before staging; final physical guard rejected it as an existing canonical duplicate."
     }
   ],
   "qualified_companies": [],
@@ -37,8 +37,11 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "575_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "575_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
+  "metadata_sync": "CAMPAIGN_TARGET_SYNCHRONIZED_AFTER_PHYSICAL_DEDUP",
+  "raw_target_met": false,
   "blocker": null
 }
