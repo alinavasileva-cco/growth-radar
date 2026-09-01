@@ -1,64 +1,55 @@
 {
-  "run_id": "N5K-20260901-557R1",
+  "run_id": "N5K-20260901-558",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T08:33:11+03:00",
+  "updated_at": "2026-09-01T09:38:10+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 561,
+    "baseline_count": 562,
     "target_count": 5000,
-    "current_canonical_count": 562,
-    "current_contactable_count": 562,
+    "current_canonical_count": 563,
+    "current_contactable_count": 563,
     "progress_added": 1,
-    "remaining": 4438
+    "remaining": 4437
   },
   "funnel": {
-    "discovered": 8,
-    "fast_gate_passed": 4,
-    "size_check_passed": 2,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
+    "discovered": 18,
+    "fast_gate_passed": 10,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
     "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 7
+    "excluded": 17
   },
   "lane_metrics": [
     {
-      "lane": "regional_investment_and_new_production",
-      "raw": 6,
-      "fast_gate": 3,
-      "size": 2,
-      "legal": 1,
-      "signal": 1,
+      "lane": "official_owner",
+      "raw": 18,
+      "fast_gate": 10,
+      "size": 4,
+      "legal": 3,
+      "signal": 3,
       "lpr": 1,
       "contact": 1,
       "qualified": 1,
-      "notes": "Recovery lane after jobs-worker fail-closed. Candidate-level canonical checks used instead of relying on truncated historical pending materialization."
-    },
-    {
-      "lane": "recent_expansion_and_launches",
-      "raw": 2,
-      "fast_gate": 1,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "notes": "Large/weak-fit candidates stopped at FAST GATE/SIZE; quality thresholds unchanged."
+      "duplicate_plus_early_reject": 17,
+      "qualified_raw_pct": 5.5556,
+      "fast_gate_raw_pct": 55.5556,
+      "notes": "Fresh official/company/owner/business-change staging across six independent source batches. Historical pending tree truncation was not used as a blocker. Candidate-level physical dedup repeated on INN, OGRN, exact legal name and brand/domain before staging."
     }
   ],
   "qualified_companies": [
-    "ЭкоПромСтрой-Алга"
+    "Завод металлоконструкций Аполло / Apollo"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "562_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "562_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "563_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "563_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
