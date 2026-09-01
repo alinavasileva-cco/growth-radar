@@ -1,5 +1,5 @@
 {
-  "run_id": "N5K-20260901-555R1",
+  "run_id": "N5K-20260901-555R2",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-09-01T06:03:04+03:00",
@@ -13,15 +13,15 @@
     "remaining": 4439
   },
   "funnel": {
-    "discovered": 6,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "discovered": 7,
+    "fast_gate_passed": 3,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
     "qualified": 0,
-    "duplicates": 4,
+    "duplicates": 5,
     "excluded": 2
   },
   "lane_metrics": [
@@ -34,39 +34,43 @@
       "signal": 2,
       "lpr": 2,
       "contact": 2,
-      "qualified": 1,
-      "duplicates": 3,
+      "qualified": 0,
+      "duplicates": 4,
       "early_reject": 2,
-      "duplicate_plus_early_reject": 5,
-      "qualified_raw_pct": 16.6667,
+      "duplicate_plus_early_reject": 6,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 33.3333,
-      "duplicate_early_reject_pct": 83.3333,
-      "decision": "DO_NOT_AUTO_BOOST_DESPITE_PREWRITE_QUALIFIED; physical duplicate rate is high. Keep evidence-quality high and rotate next discovery toward official/owner and experimental low-overlap sources."
+      "duplicate_early_reject_pct": 100.0,
+      "decision": "STOP_CURRENT_BATCH_AND_REDUCE; post-physical-dedup saturation reached 100% duplicate+early-reject and 0 net qualified."
+    },
+    {
+      "lane": "official_company_expansion",
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 1,
+      "legal": 1,
+      "signal": 1,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicates": 0,
+      "early_reject": 0,
+      "duplicate_plus_early_reject": 0,
+      "qualified_raw_pct": 100.0,
+      "fast_gate_raw_pct": 100.0,
+      "duplicate_early_reject_pct": 0.0,
+      "decision": "BOOST_NEXT_RUN; one-company probe only, so conversion is not treated as stable until physical integration and larger sample."
     },
     {
       "lane": "jobs",
       "raw": 0,
       "fast_gate": 0,
       "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "decision": "CUT_TO_5_PCT_PROBE_ONLY; runs 552R1/553R1/554R1 had 0 repo-dedup-confirmed raw and 0 qualified because worker preflight failed closed."
-    },
-    {
-      "lane": "official_owner_ceo",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
       "signal": 0,
       "qualified": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "decision": "USED_FOR_EVIDENCE_ENRICHMENT; increase discovery share next cycle because growth-news duplicate saturation is high."
+      "decision": "CUT_TO_5_PCT_PROBE_ONLY after repeated fail-closed zero-qualified workers."
     },
     {
       "lane": "industry_catalog",
@@ -77,18 +81,7 @@
       "qualified": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "decision": "NOT_USED; capped at 5 pct and catalog presence is never SIGNAL."
-    },
-    {
-      "lane": "experimental_low_overlap",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "signal": 0,
-      "qualified": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "decision": "INCREASE NEXT CYCLE TO ESCAPE GROWTH-NEWS DUPLICATE SATURATION."
+      "decision": "NOT_USED; catalog presence is never SIGNAL and lane remains capped at 5 pct."
     }
   ],
   "qualified_companies": [],
