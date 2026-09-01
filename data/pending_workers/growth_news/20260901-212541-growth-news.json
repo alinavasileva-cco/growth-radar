@@ -1,0 +1,188 @@
+{
+  "worker": "growth_news",
+  "lane": "growth_news",
+  "created_at": "2026-09-01T21:25:41+03:00",
+  "immutable": true,
+  "canonical_write": false,
+  "outreach": false,
+  "canonical_snapshot": {
+    "canonical": 579,
+    "contactable": 579,
+    "integrity": "PASS",
+    "source": "data/runtime/current_run_status.json",
+    "updated_at": "2026-09-01T20:46:25+03:00"
+  },
+  "metrics": {
+    "distinct_employer_raw": 24,
+    "fast_gate": 10,
+    "size": 6,
+    "legal": 5,
+    "signal": 5,
+    "lpr": 3,
+    "contact": 3,
+    "prequalified_needs_final_global_dedup": 3,
+    "reject": 21,
+    "notes": "Target 80-150 distinct employer-level raw was not reached without moving into weak catalog filler. Discovery continued across 8 source/region/signal batches; no criteria were weakened."
+  },
+  "source_batches": [
+    {"batch":"Moscow_region_manufacturing_expansion","source":"Mininvest MO/Vedomosti press releases","raw_examples":["КАРТАС","ПСК Фарма","Гофромир","РТК-ЭЛЕКРО-М","Найснатс","МолоПак","Петровакс Фарм"],"notes":"Fresh production/expansion signals; duplicates and unresolved legal/LPR candidates rejected early."},
+    {"batch":"Central_Russia_industrial_growth","source":"Kommersant / regional industry releases","raw_examples":["Три Точки Мануфактуринг","АвтоСпецТехника Слон"],"notes":"Tri Tochki rejected at SIZE as microenterprise; Slon passed deep-check."},
+    {"batch":"Siberia_mining_machinery","source":"Kommersant / ATI / official company site","raw_examples":["Борус"],"notes":"Fresh SPIC-backed production expansion; passed deep-check."},
+    {"batch":"Northwest_new_production","source":"CNews / Delovoy Peterburg / company releases","raw_examples":["Семаргл","АГР"],"notes":"Strong signals but no new fully resolved contactable candidate in this batch."},
+    {"batch":"Foreign_investment_localization","source":"Kommersant / Interfax / regional releases","raw_examples":["Cadila Pharmaceuticals","CHINT","Hangzhou Nobel Group"],"notes":"Rejected where Russian operating legal entity/LPR/contact chain was not fully resolved under current strict gate."},
+    {"batch":"Large_scale_expansion","source":"Interfax / business media","raw_examples":["РВБ/Wildberries-Russ","Логика молока","Озон Фармацевтика","Биннофарм Групп"],"notes":"Strong signals but not staged where overlap/scale/legal-chain or candidate-level completion was insufficient."},
+    {"batch":"Industrial_equipment_and_components","source":"official/industry press releases","raw_examples":["ЗАП №1","Веза","Группа компаний ТСС"],"notes":"No new fully resolved low-overlap candidate staged."},
+    {"batch":"Prior_recent_overlap_guard","source":"fresh search plus repo/pending awareness","raw_examples":["НАРТИС","МолоПак","Петровакс Фарм"],"notes":"Known recent worker overlap; not restaged."}
+  ],
+  "dedup_policy": {
+    "historical_pending_full_read_required": false,
+    "checked_against_current_runtime_snapshot": true,
+    "candidate_level_repo_search_keys": ["INN","OGRN/OGRNIP","exact legal name","brand+domain"],
+    "final_global_dedup_owner": "canonical_writer",
+    "staged_not_counted_as_added": true
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "АСТ Слон",
+      "legal_name": "ООО «АвтоСпецТехника «Слон»",
+      "inn": "7415093767",
+      "ogrn": "1167456066865",
+      "domain": "astslon.ru",
+      "size": {
+        "status": "PASS",
+        "evidence": "Средний бизнес; выручка 2025 490.771 млн руб.",
+        "url": "https://b2b.house/company/OOO-AST-SLON_8f2d248f-9563-4630-8489-46919e604d02/"
+      },
+      "legal": {
+        "status": "PASS",
+        "evidence": "Действующее ООО, ИНН 7415093767, ОГРН 1167456066865.",
+        "url": "https://check.tochka.com/company/1167456066865/"
+      },
+      "signal": {
+        "status": "PASS",
+        "date": "2026-08-27",
+        "type": "new_production_site",
+        "evidence": "В Миассе запущена новая производственная площадка полного цикла площадью более 4 тыс. кв. м; инвестиции 88 млн руб.",
+        "url": "https://www.kommersant.ru/doc/8909262"
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Призенцова Юлия Александровна",
+        "role": "генеральный директор",
+        "url": "https://astslon.ru/contacts"
+      },
+      "contact": {
+        "status": "PASS",
+        "route": "официальная приемная/общий корпоративный контакт",
+        "phone": "8 (3513) 26-45-00",
+        "email": "mail@astslon.ru",
+        "url": "https://astslon.ru/contacts"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "exact_name_brand_domain_repo_search": "NO_MATCH",
+        "final_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Борус",
+      "legal_name": "ООО «Борус»",
+      "inn": "2464149893",
+      "ogrn": "1192468028070",
+      "domain": "borus124.ru",
+      "size": {
+        "status": "PASS",
+        "evidence": "Выручка 2025 1.125756 млрд руб.",
+        "url": "https://companies.rbc.ru/id/1192468028070-obschestvo-s-ogranichennoj-otvetstvennostyu-borus/"
+      },
+      "legal": {
+        "status": "PASS",
+        "evidence": "Действующее ООО на 31.08.2026, ИНН 2464149893, ОГРН 1192468028070.",
+        "url": "https://companies.rbc.ru/id/1192468028070-obschestvo-s-ogranichennoj-otvetstvennostyu-borus/"
+      },
+      "signal": {
+        "status": "PASS",
+        "date": "2026-08-27",
+        "type": "investment_production_expansion",
+        "evidence": "Проект производства подземных и карьерных самосвалов и погрузочно-доставочных машин; СПИК на 10 лет, инвестиции более 1 млрд руб.",
+        "url": "https://www.kommersant.ru/doc/8909600"
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Пестриков Павел Николаевич",
+        "role": "директор",
+        "url": "https://b2b.house/company/OOO-BORUS_c7dd4bb2-337d-4663-b2a8-f182cd133300/"
+      },
+      "contact": {
+        "status": "PASS",
+        "route": "официальная приемная завода",
+        "phone": "+7 (391) 290-26-96",
+        "email": "promo@borus124.ru",
+        "url": "https://borus124.ru/contacts/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "exact_name_brand_domain_repo_search": "NO_MATCH",
+        "final_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "KCG / Kartastech Computers Group",
+      "legal_name": "ООО «КАРТАС»",
+      "inn": "7722424330",
+      "ogrn": "5177746313950",
+      "domain": "kcg.market",
+      "size": {
+        "status": "PASS",
+        "evidence": "Выручка 2025 610.371 млн руб.; прибыль 49.058 млн руб.",
+        "url": "https://companies.rbc.ru/id/5177746313950-ooo-kartas/"
+      },
+      "legal": {
+        "status": "PASS",
+        "evidence": "Действующее ООО; официальный сайт публикует ИНН 7722424330 и ОГРН 5177746313950.",
+        "url": "https://kcg.market/"
+      },
+      "signal": {
+        "status": "PASS",
+        "date": "2026-07-16",
+        "type": "production_expansion_new_business_line",
+        "evidence": "Инвестиции почти 200 млн руб. в расширение производства в Истре; запуск высокотехнологичной гофроупаковки как нового производственного направления.",
+        "url": "https://www.vedomosti.ru/press_releases/2026/07/16/visokotehnologichnoe-proizvodstvo-kompyuternih-komplektuyuschih-rasshiryaetsya-pri-podderzhke-podmoskovya"
+      },
+      "lpr": {
+        "status": "PASS",
+        "name": "Самус Владимир Владимирович",
+        "role": "генеральный директор",
+        "url": "https://kcg.market/"
+      },
+      "contact": {
+        "status": "PASS",
+        "route": "официальный корпоративный контакт",
+        "phone": "8 (800) 550-88-00",
+        "email": "info@kartas.msk.ru",
+        "url": "https://kcg.market/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "exact_name_brand_domain_repo_search": "NO_MATCH",
+        "final_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "REJECT",
+      "brand": "Три Точки Мануфактуринг",
+      "legal_name": "ООО «Три Точки Мануфактуринг»",
+      "inn": "5717007055",
+      "ogrn": "1215700003639",
+      "reject_stage": "SIZE",
+      "reason": "Публичные данные относят юрлицо к микропредприятию; строгий SIZE gate не пройден.",
+      "signal_url": "https://www.kommersant.ru/doc/8908835"
+    }
+  ]
+}
