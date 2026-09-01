@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T06:03:04+03:00",
+  "updated_at": "2026-09-01T07:52:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-555R2",
-  "current_run_id": "N5K-20260901-555R2",
-  "last_run_id": "N5K-20260901-555R2",
-  "latest_completed_run": "N5K-20260901-555R2",
+  "last_completed_run_id": "N5K-20260901-556R1",
+  "current_run_id": "N5K-20260901-556R1",
+  "last_run_id": "N5K-20260901-556R1",
+  "latest_completed_run": "N5K-20260901-556R1",
   "canonical_integration_run_id": "N5K-20260901-555R2",
   "hourly_baseline_count": 561,
   "hourly_net_new": 0,
@@ -83,5 +83,5 @@
   },
   "fresh_staging": "All worker staging consumed through N5K-20260901-554R1. In the 555 same-cycle discovery, three fully evidenced prewrite candidates were tested by the physical master guard and all were existing canonical companies: Турбокомплект (INN+OGRN+brand/domain), Анатомика (INN+OGRN+brand/domain), Три Точки Мануфактуринг (INN+OGRN). No duplicate was written.",
   "repair_required": null,
-  "note": "N5K-20260901-555R2 final post-dedup state: +0 net new; canonical/contactable 561/561; raw 7, fast_gate 3, size/legal/signal/LPR/contact 3/3/3/3/3, qualified 0, physical duplicates 5, excluded 2; integrity PASS; orphan 0/0; staged 0; outreach 0. Growth-news cut to 5% after two consecutive repair RUNs above 70% duplicate+early-reject; next discovery shifts to experimental low-overlap and broader official/owner sources."
+  "note": "N5K-20260901-556R1 completed after physical integration: +0 net new; canonical/contactable 561/561; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

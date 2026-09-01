@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260901-555R2",
+  "run_id": "N5K-20260901-556R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T06:03:04+03:00",
+  "updated_at": "2026-09-01T07:52:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 561,
@@ -13,161 +13,43 @@
     "remaining": 4439
   },
   "funnel": {
-    "discovered": 7,
-    "fast_gate_passed": 3,
+    "discovered": 4,
+    "fast_gate_passed": 4,
     "size_check_passed": 3,
     "legal_match_passed": 3,
     "signal_confirmed": 3,
     "lpr_identified": 3,
-    "contact_route_found": 3,
+    "contact_route_found": 1,
     "qualified": 0,
-    "duplicates": 5,
-    "excluded": 2
+    "duplicates": 1,
+    "excluded": 3
   },
   "lane_metrics": [
     {
-      "lane": "growth_news_fresh_20260901",
-      "raw": 6,
-      "fast_gate": 2,
-      "size": 2,
-      "legal": 2,
-      "signal": 2,
-      "lpr": 2,
-      "contact": 2,
-      "qualified": 0,
-      "duplicates": 4,
-      "early_reject": 2,
-      "duplicate_plus_early_reject": 6,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 33.3333,
-      "duplicate_early_reject_pct": 100.0,
-      "decision": "CUT_TO_5_PCT_FOR_NEXT_3_RUNS: 555R1 and 555R2 both have post-physical-dedup duplicate+early-reject above 70% and 0 net qualified."
-    },
-    {
-      "lane": "official_company_expansion",
-      "raw": 1,
-      "fast_gate": 1,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
-      "qualified": 0,
-      "duplicates": 1,
-      "early_reject": 0,
-      "duplicate_plus_early_reject": 1,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 100.0,
-      "duplicate_early_reject_pct": 100.0,
-      "decision": "KEEP_AS_SECONDARY_LANE, NOT BOOSTED: first one-company probe was a physical duplicate; broaden official/owner sources before judging lane conversion."
-    },
-    {
-      "lane": "jobs",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "decision": "CUT_TO_5_PCT_PROBE_ONLY after repeated fail-closed zero-qualified worker runs."
-    },
-    {
-      "lane": "industry_catalog",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "decision": "MAX_5_PCT; not used as SIGNAL."
-    },
-    {
-      "lane": "experimental_low_overlap",
-      "raw": 0,
-      "fast_gate": 0,
-      "size": 0,
-      "legal": 0,
-      "signal": 0,
-      "lpr": 0,
-      "contact": 0,
-      "qualified": 0,
-      "qualified_raw_pct": null,
-      "fast_gate_raw_pct": null,
-      "decision": "INCREASE_NEXT_RUN to escape duplicate saturation in jobs and current growth-news sources."
-    }
-  ],
-  "efficiency_control": {
-    "current_run_post_dedup": {
-      "raw": 7,
+      "lane": "fresh_production_launches_low_overlap",
+      "raw": 3,
       "fast_gate": 3,
       "size": 3,
       "legal": 3,
       "signal": 3,
       "lpr": 3,
-      "contact": 3,
+      "contact": 1,
+      "qualified": 1,
+      "notes": "BROX qualified prewrite; Полиэфирная нить and ЗЖБИ НОВИН stopped before qualification because a sufficiently verified practical contact route was not established in this recovery pass."
+    },
+    {
+      "lane": "retail_expansion",
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
       "qualified": 0,
-      "duplicates": 5,
-      "early_reject": 2,
-      "duplicate_plus_early_reject": 7,
-      "excluded": 2,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 42.8571,
-      "duplicate_early_reject_pct": 100.0
-    },
-    "last_3_run_ids": [
-      {
-        "run_id": "N5K-20260901-554R1",
-        "raw": 0,
-        "fast_gate": 0,
-        "qualified": 0,
-        "qualified_raw_pct": null,
-        "fast_gate_raw_pct": null,
-        "note": "No repo-dedup-confirmed raw; ratios undefined."
-      },
-      {
-        "run_id": "N5K-20260901-555",
-        "raw": 6,
-        "fast_gate": 2,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 5,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 33.3333,
-        "duplicate_early_reject_pct": 83.3333
-      },
-      {
-        "run_id": "N5K-20260901-555R1",
-        "raw": 6,
-        "fast_gate": 2,
-        "qualified": 0,
-        "duplicate_plus_early_reject": 6,
-        "qualified_raw_pct": 0.0,
-        "fast_gate_raw_pct": 33.3333,
-        "duplicate_early_reject_pct": 100.0
-      }
-    ],
-    "change_vs_previous_run": {
-      "qualified_raw_pct_points": 0.0,
-      "fast_gate_raw_pct_points": 9.5238,
-      "net_new_change": 0
-    },
-    "interpretation": "Fast-gate rate rose only because of a one-company official-source probe; net-new stayed at 0 and every deep candidate was already canonical. Overall effectiveness did not improve on the primary metric, so the saturated growth-news lane is cut and discovery shifts to low-overlap experimental plus broader official/owner sources.",
-    "next_distribution_pct": {
-      "jobs": 5,
-      "growth_news": 5,
-      "official_owner_ceo": 35,
-      "industry_catalog": 5,
-      "regional_investment": 0,
-      "experimental_low_overlap_business_change": 50
+      "notes": "EMKA excluded on verified 2025 legal-entity scale above target range."
     }
-  },
+  ],
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
