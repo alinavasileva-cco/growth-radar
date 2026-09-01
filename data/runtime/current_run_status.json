@@ -41,7 +41,7 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 33.3333,
       "duplicate_early_reject_pct": 100.0,
-      "decision": "STOP_CURRENT_BATCH_AND_REDUCE; post-physical-dedup saturation reached 100% duplicate+early-reject and 0 net qualified."
+      "decision": "CUT_TO_5_PCT_FOR_NEXT_3_RUNS: 555R1 and 555R2 both have post-physical-dedup duplicate+early-reject above 70% and 0 net qualified."
     },
     {
       "lane": "official_company_expansion",
@@ -52,38 +52,122 @@
       "signal": 1,
       "lpr": 1,
       "contact": 1,
-      "qualified": 1,
-      "duplicates": 0,
+      "qualified": 0,
+      "duplicates": 1,
       "early_reject": 0,
-      "duplicate_plus_early_reject": 0,
-      "qualified_raw_pct": 100.0,
+      "duplicate_plus_early_reject": 1,
+      "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 100.0,
-      "duplicate_early_reject_pct": 0.0,
-      "decision": "BOOST_NEXT_RUN; one-company probe only, so conversion is not treated as stable until physical integration and larger sample."
+      "duplicate_early_reject_pct": 100.0,
+      "decision": "KEEP_AS_SECONDARY_LANE, NOT BOOSTED: first one-company probe was a physical duplicate; broaden official/owner sources before judging lane conversion."
     },
     {
       "lane": "jobs",
       "raw": 0,
       "fast_gate": 0,
       "size": 0,
+      "legal": 0,
       "signal": 0,
+      "lpr": 0,
+      "contact": 0,
       "qualified": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "decision": "CUT_TO_5_PCT_PROBE_ONLY after repeated fail-closed zero-qualified workers."
+      "decision": "CUT_TO_5_PCT_PROBE_ONLY after repeated fail-closed zero-qualified worker runs."
     },
     {
       "lane": "industry_catalog",
       "raw": 0,
       "fast_gate": 0,
       "size": 0,
+      "legal": 0,
       "signal": 0,
+      "lpr": 0,
+      "contact": 0,
       "qualified": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "decision": "NOT_USED; catalog presence is never SIGNAL and lane remains capped at 5 pct."
+      "decision": "MAX_5_PCT; not used as SIGNAL."
+    },
+    {
+      "lane": "experimental_low_overlap",
+      "raw": 0,
+      "fast_gate": 0,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "qualified_raw_pct": null,
+      "fast_gate_raw_pct": null,
+      "decision": "INCREASE_NEXT_RUN to escape duplicate saturation in jobs and current growth-news sources."
     }
   ],
+  "efficiency_control": {
+    "current_run_post_dedup": {
+      "raw": 7,
+      "fast_gate": 3,
+      "size": 3,
+      "legal": 3,
+      "signal": 3,
+      "lpr": 3,
+      "contact": 3,
+      "qualified": 0,
+      "duplicates": 5,
+      "early_reject": 2,
+      "duplicate_plus_early_reject": 7,
+      "excluded": 2,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 42.8571,
+      "duplicate_early_reject_pct": 100.0
+    },
+    "last_3_run_ids": [
+      {
+        "run_id": "N5K-20260901-554R1",
+        "raw": 0,
+        "fast_gate": 0,
+        "qualified": 0,
+        "qualified_raw_pct": null,
+        "fast_gate_raw_pct": null,
+        "note": "No repo-dedup-confirmed raw; ratios undefined."
+      },
+      {
+        "run_id": "N5K-20260901-555",
+        "raw": 6,
+        "fast_gate": 2,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 5,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 33.3333,
+        "duplicate_early_reject_pct": 83.3333
+      },
+      {
+        "run_id": "N5K-20260901-555R1",
+        "raw": 6,
+        "fast_gate": 2,
+        "qualified": 0,
+        "duplicate_plus_early_reject": 6,
+        "qualified_raw_pct": 0.0,
+        "fast_gate_raw_pct": 33.3333,
+        "duplicate_early_reject_pct": 100.0
+      }
+    ],
+    "change_vs_previous_run": {
+      "qualified_raw_pct_points": 0.0,
+      "fast_gate_raw_pct_points": 9.5238,
+      "net_new_change": 0
+    },
+    "interpretation": "Fast-gate rate rose only because of a one-company official-source probe; net-new stayed at 0 and every deep candidate was already canonical. Overall effectiveness did not improve on the primary metric, so the saturated growth-news lane is cut and discovery shifts to low-overlap experimental plus broader official/owner sources.",
+    "next_distribution_pct": {
+      "jobs": 5,
+      "growth_news": 5,
+      "official_owner_ceo": 35,
+      "industry_catalog": 5,
+      "regional_investment": 0,
+      "experimental_low_overlap_business_change": 50
+    }
+  },
   "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
