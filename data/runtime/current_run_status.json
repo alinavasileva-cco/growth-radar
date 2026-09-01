@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260901-569R1",
+  "run_id": "N5K-20260901-569R2",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T19:00:00+03:00",
+  "updated_at": "2026-09-01T19:08:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 575,
@@ -13,24 +13,23 @@
     "remaining": 4425
   },
   "funnel": {
-    "discovered": 2,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
+    "discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
     "contact_route_found": 1,
     "qualified": 0,
     "duplicates": 1,
-    "excluded": 1
+    "excluded": 0
   },
   "lane_metrics": [
     {
-      "lane": "supplemental_low_overlap_new_production",
-      "raw": 2,
+      "lane": "regional_investment_new_production_fresh",
+      "raw": 1,
       "qualified": 1,
-      "excluded": 1,
-      "note": "Fresh production-expansion recovery after underworked RUN 569. Lalibela Coffee passed full legal/signal/LPR/contact verification; Aravia was not staged because the official brand contact route was not sufficiently resolved to the target legal entity for canonical insertion."
+      "note": "Fresh 27-30 Aug 2026 machinery-production expansion signal. Candidate resolved to current legal entity, current owner/director and direct official legal-entity contact route before staging."
     }
   ],
   "qualified_companies": [],

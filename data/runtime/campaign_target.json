@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T19:00:00+03:00",
+  "updated_at": "2026-09-01T19:08:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-569R1",
-  "current_run_id": "N5K-20260901-569R1",
-  "last_run_id": "N5K-20260901-569R1",
-  "latest_completed_run": "N5K-20260901-569R1",
+  "last_completed_run_id": "N5K-20260901-569R2",
+  "current_run_id": "N5K-20260901-569R2",
+  "last_run_id": "N5K-20260901-569R2",
+  "latest_completed_run": "N5K-20260901-569R2",
   "canonical_integration_run_id": "N5K-20260901-569R1",
   "hourly_baseline_count": 575,
   "hourly_net_new": 0,
@@ -97,5 +97,5 @@
   },
   "fresh_staging": "N5K-20260901-569R1 supplemental recovery resolved two fresh new-production candidates. Lalibela Coffee passed deep verification but was rejected by the authoritative physical canonical guard as a duplicate. Aravia was rejected before integration because the published official brand route could not be cleanly tied to the target legal entity.",
   "repair_required": null,
-  "note": "N5K-20260901-569R1 completed after physical dedup: +0 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Metadata synchronized to the physical result. Raw target remains unmet."
+  "note": "N5K-20260901-569R2 completed after physical integration: +0 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
