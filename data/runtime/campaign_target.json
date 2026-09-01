@@ -7,7 +7,7 @@
   "progress_added": 575,
   "remaining_to_total_target": 4425,
   "remaining": 4425,
-  "remaining_to_1000": 426,
+  "remaining_to_1000": 425,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,70 +17,58 @@
   "current_run_id": "N5K-20260901-569",
   "last_run_id": "N5K-20260901-569",
   "latest_completed_run": "N5K-20260901-569",
-  "canonical_integration_run_id": "N5K-20260901-568R1",
-  "hourly_baseline_count": 572,
-  "hourly_net_new": 2,
+  "canonical_integration_run_id": "N5K-20260901-569",
+  "hourly_baseline_count": 574,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260901-568R1",
-    "raw": 66,
-    "fast_gate": 18,
-    "size": 9,
-    "legal": 7,
-    "signal": 7,
-    "lpr": 4,
-    "contact": 3,
-    "qualified": 2,
-    "duplicates": 4,
-    "excluded_early_reject": 60,
-    "qualified_raw_pct": 3.0303,
-    "fast_gate_raw_pct": 27.2727,
+    "run_id": "N5K-20260901-569",
+    "raw": 28,
+    "fast_gate": 16,
+    "size": 13,
+    "legal": 9,
+    "signal": 9,
+    "lpr": 6,
+    "contact": 4,
+    "qualified": 1,
+    "duplicates": 3,
+    "excluded_early_reject": 24,
+    "qualified_raw_pct": 3.5714,
+    "fast_gate_raw_pct": 57.1429,
     "raw_target_met": false,
     "supplemental_discovery_performed": true,
-    "raw_count_note": "66 is the conservative lane-level employer raw count from three fresh staging batches (29+19+18). The independent low-overlap supplemental wave was executed but is not added because safe global cross-lane distinctness was not materialized."
+    "raw_count_note": "28 is the conservative resolved employer-level raw count from the two fresh immutable staging batches. Independent low-overlap supplemental discovery was executed but not added because safe global cross-lane legal-key distinctness was not materialized; no search-result-row padding used."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "growth_news",
-      "raw": 29,
-      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
+      "lane": "official_owner_fresh",
+      "raw": 14,
+      "source_level_observations": 68,
+      "prequalified_rechecked": 3,
+      "submitted_to_physical_guard": 3,
+      "net_qualified": 1,
+      "physical_duplicates": 2,
+      "next_state": "ROTATE_TO_FRESH_LOW_OVERLAP"
     },
     {
-      "lane": "official_owner_prior",
-      "raw": 19,
-      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
-    },
-    {
-      "lane": "official_owner_late",
-      "raw": 18,
-      "source_observations_reviewed": 60,
-      "size": 9,
-      "legal": 7,
-      "signal": 7,
-      "lpr": 4,
-      "contact": 3,
-      "prequalified": 3,
-      "net_qualified": 2,
+      "lane": "growth_news_fresh",
+      "raw": 14,
+      "prequalified_rechecked": 3,
+      "submitted_to_physical_guard": 1,
+      "rejected_after_recheck": 2,
+      "net_qualified": 0,
       "physical_duplicates": 1,
-      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
+      "next_state": "ROTATE_TO_FRESH_LOW_OVERLAP"
     },
     {
-      "lane": "independent_low_overlap",
+      "lane": "independent_low_overlap_supplemental",
       "raw": null,
-      "next_state": "NOT_COUNTED_DUE_GLOBAL_DISTINCTNESS_UNCERTAINTY"
+      "next_state": "CONTINUE_AND_MATERIALIZE_GLOBAL_DISTINCT_KEYS"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-567",
-      "raw": 120,
-      "fast_gate": 7,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 5.8333
-    },
     {
       "run_id": "N5K-20260901-567R1",
       "raw": 24,
@@ -96,13 +84,21 @@
       "qualified": 2,
       "qualified_raw_pct": 3.0303,
       "fast_gate_raw_pct": 27.2727
+    },
+    {
+      "run_id": "N5K-20260901-569",
+      "raw": 28,
+      "fast_gate": 16,
+      "qualified": 1,
+      "qualified_raw_pct": 3.5714,
+      "fast_gate_raw_pct": 57.1429
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -1.1364,
-    "net_new_change": 1,
-    "fast_gate_raw_pct_points": 2.2727,
-    "assessment": "Same-cycle recovery removed the internal physical-dedup blocker and integrated two verified candidates without changing quality criteria. Conservative raw remains below 120 because independent supplemental hits were not double-counted without a safe global distinct materialization."
+    "qualified_raw_pct_points": 0.5411,
+    "net_new_change": -1,
+    "fast_gate_raw_pct_points": 29.8702,
+    "assessment": "One net-new company was physically integrated. Three submitted candidates were rejected by the full canonical physical guard as duplicates. Conservative resolved raw remains below target, so next cycle must continue fresh low-overlap discovery rather than reuse saturated samples."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -114,7 +110,7 @@
     "management_change_commercial_transformation_fresh": 25,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "RUN 568R1 resumed the blocked 568 cycle using fresh growth-news and official-owner staging plus an independent low-overlap supplemental wave. Physical authoritative dedup was performed directly against canonical/contactable. GSS Cosmetics and Renewal were integrated; Eltex, Laser Systems and the INN 5008060096 candidate were rejected as already present. Historical pending-tree truncation was not used as a blocker.",
+  "fresh_staging": "N5K-20260901-569 consumed fresh official_owner 20260901-182439 and growth_news 20260901-182637 staging. Four candidates passed canonical-writer recheck and were sent to the physical guard; Энхим was net-new, while Мосэлектрощит, НАРТИС and ГалВент were physical duplicates. Hobby World and Анатомика were rejected before integration because the published contact routes did not resolve cleanly to the target legal entities.",
   "repair_required": null,
-  "note": "N5K-20260901-569 completed after physical integration: +1 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-569 physically integrated: +1 net new; canonical/contactable 575/575; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Conservative raw 28 is below target; supplemental discovery was performed and next cycle must continue low-overlap expansion."
 }
