@@ -1,5 +1,5 @@
 {
-  "run_id": "N5K-20260901-555",
+  "run_id": "N5K-20260901-555R1",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-09-01T06:03:04+03:00",
@@ -19,10 +19,10 @@
     "legal_match_passed": 2,
     "signal_confirmed": 2,
     "lpr_identified": 2,
-    "contact_route_found": 1,
+    "contact_route_found": 2,
     "qualified": 0,
-    "duplicates": 3,
-    "excluded": 3
+    "duplicates": 4,
+    "excluded": 2
   },
   "lane_metrics": [
     {
@@ -33,15 +33,15 @@
       "legal": 2,
       "signal": 2,
       "lpr": 2,
-      "contact": 1,
+      "contact": 2,
       "qualified": 1,
-      "duplicates": 2,
+      "duplicates": 3,
       "early_reject": 2,
-      "duplicate_plus_early_reject": 4,
+      "duplicate_plus_early_reject": 5,
       "qualified_raw_pct": 16.6667,
       "fast_gate_raw_pct": 33.3333,
-      "duplicate_early_reject_pct": 66.6667,
-      "decision": "BOOST_NEXT_RUN_TO_60_PCT_MAX; only current lane with a fully evidenced candidate before final physical dedup; small n=6, do not extrapolate conversion."
+      "duplicate_early_reject_pct": 83.3333,
+      "decision": "DO_NOT_AUTO_BOOST_DESPITE_PREWRITE_QUALIFIED; physical duplicate rate is high. Keep evidence-quality high and rotate next discovery toward official/owner and experimental low-overlap sources."
     },
     {
       "lane": "jobs",
@@ -66,7 +66,7 @@
       "qualified": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "decision": "USED_FOR_EVIDENCE_ENRICHMENT_ONLY; no duplicate discovery raw counted."
+      "decision": "USED_FOR_EVIDENCE_ENRICHMENT; increase discovery share next cycle because growth-news duplicate saturation is high."
     },
     {
       "lane": "industry_catalog",
@@ -88,7 +88,7 @@
       "qualified": 0,
       "qualified_raw_pct": null,
       "fast_gate_raw_pct": null,
-      "decision": "NOT_USED_IN_THIS_SMALL_PRODUCTIVE_BATCH."
+      "decision": "INCREASE NEXT CYCLE TO ESCAPE GROWTH-NEWS DUPLICATE SATURATION."
     }
   ],
   "qualified_companies": [],

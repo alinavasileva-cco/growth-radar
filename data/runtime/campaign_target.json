@@ -13,10 +13,10 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-09-01T06:03:04+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-555",
-  "current_run_id": "N5K-20260901-555",
-  "last_run_id": "N5K-20260901-555",
-  "latest_completed_run": "N5K-20260901-555",
+  "last_completed_run_id": "N5K-20260901-555R1",
+  "current_run_id": "N5K-20260901-555R1",
+  "last_run_id": "N5K-20260901-555R1",
+  "latest_completed_run": "N5K-20260901-555R1",
   "canonical_integration_run_id": "N5K-20260901-554R1",
   "hourly_baseline_count": 561,
   "hourly_net_new": 0,
@@ -47,5 +47,5 @@
   },
   "fresh_staging": "Recovery N5K-20260901-554R1 resumed two consecutive technically blocked jobs workers from 2026-09-01T04:18:47+03:00 and 2026-09-01T05:17:40+03:00. They recorded at least 30 and 7 source-level named employer observations, respectively, but neither established repo-wide dedup-confirmed RAW because the complete canonical+active-pending keyset could not be materialized. No candidate was inferred or promoted.",
   "repair_required": null,
-  "note": "N5K-20260901-555 completed after physical integration: +0 net new; canonical/contactable 561/561; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-555R1 completed after physical integration: +0 net new; canonical/contactable 561/561; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
