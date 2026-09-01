@@ -1,38 +1,56 @@
 {
   "run_id": "N5K-20260902-575R2",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
-  "updated_at": "2026-09-02T00:57:00+03:00",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
+  "updated_at": "2026-09-02T00:59:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 582,
+    "baseline_count": 580,
     "target_count": 5000,
     "current_canonical_count": 583,
     "current_contactable_count": 583,
-    "progress_added": 1,
+    "progress_added": 3,
     "remaining": 4417
   },
   "funnel": {
-    "discovered": 1,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 0
+    "discovered": 36,
+    "fast_gate_passed": 16,
+    "size_check_passed": 12,
+    "legal_match_passed": 10,
+    "signal_confirmed": 9,
+    "lpr_identified": 6,
+    "contact_route_found": 4,
+    "qualified": 3,
+    "duplicates": 1,
+    "excluded": 32
   },
   "lane_metrics": [
+    {
+      "lane": "fresh_official_owner_0024",
+      "distinct_raw": 18,
+      "prequalified": 2,
+      "net_qualified": 2,
+      "notes": "Fresh worker staging; unchanged gates. Ай-Пласт and ГлазЦентр Краснодар passed final physical guard."
+    },
+    {
+      "lane": "fresh_growth_news_0027",
+      "distinct_raw": 18,
+      "prequalified": 1,
+      "net_qualified": 0,
+      "physical_duplicates": 1,
+      "notes": "One cross-lane overlap conservatively removed from initial combined raw total; Аксис reached physical guard and was already canonical."
+    },
     {
       "lane": "supplemental_management_change",
       "distinct_raw": 1,
       "prequalified": 1,
-      "notes": "Fresh 2026 management-change signal; official legal/contact chain resolved; no jobs used."
+      "net_qualified": 1,
+      "notes": "Fresh 2026 management-change signal; ГК Цифра passed final physical guard. Current 2026 company profile additionally confirms 500+ projects and active industrial-market scale; no jobs used."
     }
   ],
   "qualified_companies": [
+    "Ай-Пласт / iPlast",
+    "ГлазЦентр Краснодар",
     "ГК Цифра"
   ],
   "integrity_status": "PASS",
@@ -41,6 +59,8 @@
   "active_wip": 0,
   "physical_master_state": "583_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "583_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "qualified_staged_not_counted": 0,
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "LOW_RAW_36_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
+  "notes": "Current-hour recovery consumed both fresh immutable worker stagings through the existing authoritative canonical writer, then performed a supplemental management-change recovery. Physical result from hourly baseline 580 is +3 net new, canonical/contactable 583/583, integrity PASS, orphan 0/0, staged 0, WIP 0, outreach 0. Conservative employer-level raw is 36 and remains below 120; broader fresh production/investment source observations were not inflated into employer-level raw without full resolution."
 }
