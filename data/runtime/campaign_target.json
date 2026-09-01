@@ -7,7 +7,7 @@
   "progress_added": 566,
   "remaining_to_total_target": 4434,
   "remaining": 4434,
-  "remaining_to_1000": 435,
+  "remaining_to_1000": 434,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,39 +17,30 @@
   "current_run_id": "N5K-20260901-560R1",
   "last_run_id": "N5K-20260901-560R1",
   "latest_completed_run": "N5K-20260901-560R1",
-  "canonical_integration_run_id": "N5K-20260901-559",
-  "hourly_baseline_count": 563,
-  "hourly_net_new": 2,
+  "canonical_integration_run_id": "N5K-20260901-560R1",
+  "hourly_baseline_count": 565,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "raw": 121,
-    "fast_gate": 41,
-    "size": 17,
-    "legal": 12,
-    "signal": 11,
-    "lpr": 5,
-    "contact": 4,
-    "qualified": 2,
-    "duplicates": 2,
-    "early_reject": 117,
-    "duplicate_plus_early_reject": 119,
-    "excluded": 117,
-    "qualified_raw_pct": 1.6529,
-    "fast_gate_raw_pct": 33.8843,
-    "duplicate_early_reject_pct": 98.3471
+    "raw": 38,
+    "fast_gate": 6,
+    "size": 3,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
+    "duplicates": 1,
+    "early_reject": 36,
+    "duplicate_plus_early_reject": 37,
+    "excluded": 37,
+    "qualified_raw_pct": 2.6316,
+    "fast_gate_raw_pct": 15.7895,
+    "duplicate_early_reject_pct": 97.3684
   },
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-557R1",
-      "raw": 8,
-      "fast_gate": 4,
-      "qualified": 1,
-      "qualified_raw_pct": 12.5,
-      "fast_gate_raw_pct": 50.0,
-      "duplicate_early_reject_pct": 87.5
-    },
     {
       "run_id": "N5K-20260901-558",
       "raw": 18,
@@ -67,24 +58,33 @@
       "qualified_raw_pct": 1.6529,
       "fast_gate_raw_pct": 33.8843,
       "duplicate_early_reject_pct": 98.3471
+    },
+    {
+      "run_id": "N5K-20260901-560R1",
+      "raw": 38,
+      "fast_gate": 6,
+      "qualified": 1,
+      "qualified_raw_pct": 2.6316,
+      "fast_gate_raw_pct": 15.7895,
+      "duplicate_early_reject_pct": 97.3684
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -3.9027,
-    "fast_gate_raw_pct_points": -21.6713,
-    "net_new_change": 1
+    "qualified_raw_pct_points": 0.9787,
+    "fast_gate_raw_pct_points": -18.0948,
+    "net_new_change": -1
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
     "growth_news_probe": 5,
     "official_owner_ceo_probe": 5,
     "industry_catalog": 0,
-    "regional_investment_new_production": 35,
-    "export_dealer_franchise_expansion": 20,
-    "management_change_commercial_transformation": 15,
-    "partner_business_change": 15
+    "regional_investment_new_production_probe": 5,
+    "export_dealer_franchise_expansion_fresh": 30,
+    "management_change_commercial_transformation_fresh": 30,
+    "partner_business_change_fresh": 20
   },
-  "fresh_staging": "N5K-20260901-559 consumed the fresh official_owner 10:31 and growth_news 10:29 staging first, then expanded to additional low-overlap source/region batches because the initially normalized distinct raw volume was below 120. Historical pending-tree truncation was not treated as a blocker. Four prewrite candidates were independently checked by canonical keys; physical integration guard then removed two historical duplicates (Группа Теплолюкс and Борус by INN+OGRN) and integrated two net-new companies (ARAVIA and Курский аккумуляторный завод / КАЗ). Pending integration is cleared.",
+  "fresh_staging": "N5K-20260901-560R1 consumed available fresh staging first, then rotated through more than eight regional/source discovery batches and a second wave of export/dealer/franchise, management/commercial-transformation and partner/business-change searches. Historical pending-tree truncation was not treated as a blocker. Larta Glass passed physical canonical dedup by INN/OGRN/exact legal identity; the first integration attempt was skipped only because the initially assigned Lead ID was already occupied, and the same-cycle repair integrated the company as N5K-0734. Exact saturated samples will not be repeated unchanged.",
   "repair_required": null,
-  "note": "N5K-20260901-560R1 completed after physical integration: +1 net new; canonical/contactable 566/566; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-560R1 completed after same-cycle Lead-ID repair: +1 net new; canonical/contactable 566/566; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0."
 }
