@@ -7,7 +7,7 @@
   "progress_added": 586,
   "remaining_to_total_target": 4414,
   "remaining": 4414,
-  "remaining_to_1000": 415,
+  "remaining_to_1000": 414,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,70 +17,54 @@
   "current_run_id": "N5K-20260902-577R1",
   "last_run_id": "N5K-20260902-577R1",
   "latest_completed_run": "N5K-20260902-577R1",
-  "latest_attempted_run": "N5K-20260902-576R1",
+  "latest_attempted_run": "N5K-20260902-577R1",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260902-576R1",
-  "hourly_baseline_count": 583,
-  "hourly_net_new": 2,
+  "canonical_integration_run_id": "N5K-20260902-577R1",
+  "hourly_baseline_count": 585,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-576R1",
-    "raw": 44,
-    "fast_gate": 14,
-    "size": 10,
-    "legal": 8,
+    "run_id": "N5K-20260902-577R1",
+    "raw": 82,
+    "fast_gate": 20,
+    "size": 13,
+    "legal": 10,
     "signal": 8,
-    "lpr": 5,
+    "lpr": 7,
     "contact": 5,
-    "qualified": 2,
-    "duplicates": 3,
-    "excluded_early_reject": 43,
-    "qualified_raw_pct": 4.5455,
-    "fast_gate_raw_pct": 31.8182,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded_early_reject": 80,
+    "qualified_raw_pct": 1.2195,
+    "fast_gate_raw_pct": 24.3902,
     "raw_target_met": false,
     "supplemental_discovery_performed": true,
     "normal_throughput_completion": false,
-    "raw_count_note": "Base run 576 had conservative distinct employer-level raw=43 and physically added 2 companies. Same-hour supplemental recovery 576R1 independently resolved one fresh low-overlap production candidate, NARTIS, but authoritative physical dedup rejected it by INN/OGRN/legal/brand-domain. Conservative combined raw=44 remains below minimum 120. No jobs padding and no criteria weakening."
+    "raw_count_note": "Current-hour base 577 consumed 49 conservative distinct employer-level raw and all 3 prequalified candidates were physical duplicates. Same-cycle supplemental recovery added 33 fresh low-overlap employer observations, bringing conservative raw to 82; one company was physically integrated. Raw remains below minimum 120. Jobs were not used and criteria were not weakened."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "base_run_576",
-      "raw": 43,
-      "prequalified_rechecked": 4,
-      "submitted_to_physical_guard": 4,
-      "net_qualified": 2,
-      "physical_duplicates": 2,
-      "next_state": "CONTINUE_FRESH_LOW_OVERLAP_REGIONAL_PRODUCTION_EXPORT_DEALER_AND_MANAGEMENT_CHANGE"
+      "lane": "base_577_fresh_workers",
+      "raw": 49,
+      "prequalified_rechecked": 3,
+      "submitted_to_physical_guard": 3,
+      "net_qualified": 0,
+      "physical_duplicates": 3,
+      "next_state": "DO_NOT_REPEAT_SATURATED_SAMPLES"
     },
     {
-      "lane": "supplemental_fresh_production_576R1",
-      "raw": 1,
-      "prequalified_rechecked": 1,
-      "submitted_to_physical_guard": 1,
-      "net_qualified": 0,
+      "lane": "supplemental_regional_production_business_change",
+      "raw": 33,
+      "prequalified_rechecked": 2,
+      "submitted_to_physical_guard": 2,
+      "net_qualified": 1,
       "physical_duplicates": 1,
-      "next_state": "DO_NOT_REPEAT_NARTIS_SAMPLE"
+      "next_state": "CONTINUE_FRESH_LOW_OVERLAP_REGIONAL_PRODUCTION_EXPORT_DEALER_MANAGEMENT_AND_PARTNER_CHANGE"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-574R2",
-      "raw": 56,
-      "fast_gate": 21,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 37.5
-    },
-    {
-      "run_id": "N5K-20260902-575R2",
-      "raw": 36,
-      "fast_gate": 16,
-      "qualified": 3,
-      "qualified_raw_pct": 8.3333,
-      "fast_gate_raw_pct": 44.4444
-    },
     {
       "run_id": "N5K-20260902-576R1",
       "raw": 44,
@@ -88,13 +72,29 @@
       "qualified": 2,
       "qualified_raw_pct": 4.5455,
       "fast_gate_raw_pct": 31.8182
+    },
+    {
+      "run_id": "N5K-20260902-577",
+      "raw": 49,
+      "fast_gate": 11,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 22.449
+    },
+    {
+      "run_id": "N5K-20260902-577R1",
+      "raw": 82,
+      "fast_gate": 20,
+      "qualified": 1,
+      "qualified_raw_pct": 1.2195,
+      "fast_gate_raw_pct": 24.3902
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -3.7878,
-    "net_new_change": -1,
-    "fast_gate_raw_pct_points": -12.6262,
-    "assessment": "Current hour produced +2 physical net-new but remains underworked by the minimum raw rule; same-hour supplemental discovery was executed and the resolved NARTIS candidate was a physical duplicate."
+    "qualified_raw_pct_points": 1.2195,
+    "net_new_change": 1,
+    "fast_gate_raw_pct_points": 1.9412,
+    "assessment": "Same-cycle recovery improved current-hour output from 0 to +1 physical net-new, but the hour remains underworked by the minimum raw rule because conservative raw is 82 below 120."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -106,7 +106,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "Run 576 consumed fresh worker staging and physically added Motorica and GazEnergoKomplekt. Same-hour 576R1 supplemental recovery resolved NARTIS but physical dedup rejected it. Pending/staged are zero.",
-  "repair_required": "LOW_RAW_44_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "note": "N5K-20260902-577R1 completed after physical integration: +1 net new; canonical/contactable 586/586; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "fresh_staging": "N5K-20260902-577 consumed both fresh 02:24/02:27 worker stagings; all three submitted candidates were physical duplicates. N5K-20260902-577R1 supplemental recovery physically added one company. Pending is cleared; staged not counted is zero.",
+  "repair_required": "LOW_RAW_82_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
+  "note": "N5K-20260902-577R1 synchronized: hourly baseline 585; physical net-new +1; canonical/contactable 586/586; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0. Conservative raw 82 remains below minimum 120."
 }
