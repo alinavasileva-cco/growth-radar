@@ -1,8 +1,137 @@
 {
-  "run_id": "N5K-20260901-559",
-  "updated_at": "2026-09-01T10:39:03+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260901-559 integrated physically; canonical/contactable 565/565; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260901-560",
+  "updated_at": "2026-09-01T11:06:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 38,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 37
+  },
+  "lane_metrics": [
+    {
+      "lane": "regional_investment_new_production",
+      "raw": 25,
+      "fast_gate": 5,
+      "size": 3,
+      "legal": 2,
+      "signal": 2,
+      "lpr": 1,
+      "contact": 1,
+      "qualified": 1,
+      "duplicates": 1,
+      "early_reject": 23,
+      "duplicate_plus_early_reject": 24,
+      "qualified_raw_pct": 4.0,
+      "fast_gate_raw_pct": 20.0,
+      "duplicate_early_reject_pct": 96.0,
+      "notes": "Fresh regional/new-production searches were rotated across Moscow region, Bashkortostan, Tver, Kaluga, Rostov, Ulyanovsk, Sverdlovsk, Novosibirsk, Krasnodar, Samara and Nizhny Novgorod. Pollex Beauty was rejected as a physical canonical duplicate because its INN/OGRN match an existing legal identity already represented in canonical."
+    },
+    {
+      "lane": "export_dealer_management_partner_change",
+      "raw": 13,
+      "fast_gate": 1,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "duplicates": 0,
+      "early_reject": 13,
+      "duplicate_plus_early_reject": 13,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 7.6923,
+      "duplicate_early_reject_pct": 100.0,
+      "notes": "Second-wave discovery rotated into export/dealer/franchise expansion, management change, commercial transformation and partner/business-change. Exact search sample saturated early and will not be repeated unchanged."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0566",
+      "Brand": "Larta Glass / Ларта Гласс Раменское",
+      "Legal Name": "ООО «ЛАРТА ГЛАСС РАМЕНСКОЕ»",
+      "INN": "5040054932",
+      "OGRN/OGRNIP": "1025005116014",
+      "Region": "Московская область",
+      "City": "Раменское",
+      "Segment": "Производство листового и архитектурного стекла",
+      "Website": "https://larta.com/",
+      "Revenue/Scale": "2025: около 6,3 млрд руб. выручки и 235 сотрудников; действующий крупный стекольный завод в Раменском.",
+      "Signal Level": "S2",
+      "Signal Summary": "В 2026 году завод в Раменском проходит масштабную модернизацию; после обновления предприятие сможет выпускать сверхгабаритное стекло до 18 м. Официальный сайт Larta Glass также подтверждает холодный ремонт печи с апреля 2026 года и развитие продуктовой линейки.",
+      "Signal Date": "2026-08-28",
+      "Signal Source": "https://radio1.ru/news/podmoskove/masshtabnuyu-modernizatsiyu-stekolnogo-zavoda-v-ramenskom-zavershat-do-kontsa-goda/",
+      "Owner": "ООО «ЛАРТА ГЛАСС»",
+      "CEO": "Атюбрин Андрей Павлович",
+      "LPR": "Атюбрин Андрей Павлович",
+      "LPR Role": "генеральный директор ООО «ЛАРТА ГЛАСС РАМЕНСКОЕ»",
+      "Primary Phone": "+7 495 369-95-00",
+      "Primary Email": "",
+      "HH Contact": "",
+      "Contact Form": "https://larta.com/ru/contact-us",
+      "Contact Type": "официальный корпоративный маршрут",
+      "Contact Source": "https://larta.com/ru/contact-us",
+      "Consulting Hypothesis": "Коммерческая и операционная трансформация вокруг модернизации производства, вывода новых форматов стекла и роста архитектурного сегмента.",
+      "contacts": [
+        {
+          "value": "+7 495 369-95-00",
+          "channel": "phone",
+          "type": "official corporate",
+          "source": "Larta Glass official contact page",
+          "url": "https://larta.com/ru/contact-us",
+          "is_lpr": false,
+          "notes": "Official Ramenskoe headquarters / glass plant phone published by Larta Glass."
+        },
+        {
+          "value": "https://larta.com/ru/contact-us",
+          "channel": "web_form",
+          "type": "official corporate",
+          "source": "Larta Glass official contact page",
+          "url": "https://larta.com/ru/contact-us",
+          "is_lpr": false,
+          "notes": "Official contact form allows routing to administrative, sales, procurement, HR, marketing and other departments."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «ЛАРТА ГЛАСС РАМЕНСКОЕ», ИНН 5040054932, ОГРН 1025005116014, действующая организация; генеральный директор Атюбрин Андрей Павлович.",
+          "url": "https://reputation.ru/ogrn/1025005116014",
+          "source": "Reputation.ru / registry data"
+        },
+        {
+          "type": "SIZE",
+          "claim": "За 2025 год у предприятия около 6,3 млрд руб. выручки и 235 сотрудников.",
+          "url": "https://reputation.ru/ogrn/1025005116014",
+          "source": "Reputation.ru / financial and staffing data"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "28.08.2026 сообщено о завершении в 2026 году масштабной модернизации завода в Раменском и возможности выпуска сверхгабаритного стекла до 18 м.",
+          "url": "https://radio1.ru/news/podmoskove/masshtabnuyu-modernizatsiyu-stekolnogo-zavoda-v-ramenskom-zavershat-do-kontsa-goda/",
+          "source": "Радио 1 со ссылкой на пресс-службу Мининвеста Московской области"
+        },
+        {
+          "type": "SIGNAL_OFFICIAL",
+          "claim": "Официальный сайт Larta Glass 31.03.2026 подтвердил старт холодного ремонта стекловаренной печи на заводе в Раменском и развитие продуктовой линейки после ремонта.",
+          "url": "https://larta.com/ru/news/izmeneniya-v-linejke-produktov-v-svyazi-s-holodnym-remontom",
+          "source": "Larta Glass official website"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальная страница контактов Larta Glass публикует для головного офиса/завода в Раменском телефон +7 495 369-95-00 и форму связи.",
+          "url": "https://larta.com/ru/contact-us",
+          "source": "Larta Glass official website"
+        }
+      ]
+    }
+  ],
+  "notes": "Historical pending-tree truncation was not treated as a blocker. Candidate-level authoritative dedup was performed against repo/canonical keys by INN 5040054932, OGRN 1025005116014, exact legal name and Larta Glass brand; no match was found before staging. Discovery remained below 120 distinct raw after immediate rotation through more than eight regional/source batches and then a second-wave export/dealer/management/partner mix; no raw count was padded with catalog noise and criteria were not weakened. Next mix should cut this exact regional sample to probe-only because duplicate+early reject exceeded 70%, and rotate toward fresh export/dealer/franchise, management/commercial transformation and partner/business-change sources. Outreach=0."
 }
