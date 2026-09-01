@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260901-571",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "updated_at": "2026-09-01T20:28:52+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
@@ -44,15 +44,18 @@
       "notes": "management change, dealer/network expansion, export/business-change and sector-change searches; saturated/large-group/nonfit items stopped early"
     }
   ],
-  "qualified_companies": [
-    "ЭНТЕЛС"
-  ],
+  "qualified_companies": ["ЭНТЕЛС"],
+  "physical_duplicates": ["Петровакс Фарм"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
+  "qualified_staged_not_counted": 0,
   "active_wip": 0,
   "physical_master_state": "578_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "578_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "raw_target_met": false,
+  "supplemental_discovery_performed": true,
+  "blocker": null,
+  "note": "Physical integration complete and integrity verified. Conservative distinct employer-level raw=37 <120, so this run is explicitly not a normal raw-volume completion; weak catalogs/jobs were not used to inflate raw."
 }
