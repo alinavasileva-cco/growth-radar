@@ -1,52 +1,49 @@
 {
-  "generated_at": "2026-09-01T20:00:49+03:00",
+  "generated_at": "2026-09-01T20:28:52+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-570R1",
-  "current_run_id": "N5K-20260901-570R1",
+  "latest_completed_run_id": "N5K-20260901-571",
+  "current_run_id": "N5K-20260901-571",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 577,
-  "contactable_verified": 577,
+  "canonical_pool_verified": 578,
+  "contactable_verified": 578,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4423,
+  "remaining_to_target": 4422,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_570R1": {
-    "raw_discovered": 69,
-    "fast_gate_passed": 23,
-    "size_check_passed": 21,
-    "legal_match_passed": 15,
-    "signal_confirmed": 11,
-    "lpr_identified": 7,
-    "contact_route_found": 5,
-    "qualified": 2,
-    "physically_integrated": 2,
-    "duplicates": 3,
-    "excluded": 64,
+  "run_571": {
+    "raw_discovered": 37,
+    "fast_gate_passed": 17,
+    "size_check_passed": 11,
+    "legal_match_passed": 8,
+    "signal_confirmed": 5,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "physically_integrated": 1,
+    "duplicates": 1,
+    "excluded": 35,
     "lane_metrics": [
       {
-        "lane": "official_owner",
-        "raw": 52,
-        "qualified": 4,
-        "excluded": 48,
-        "note": "Fresh worker staging 20260901-192655; four employer/legal-entity candidates reached size+legal+signal+LPR+published-contact prequalification and require canonical writer global dedup."
+        "lane": "fresh_worker_staging_official_owner",
+        "distinct_raw": 13,
+        "prequalified": 1,
+        "source": "data/pending_workers/official_owner/20260901-202900-official-owner.json"
       },
       {
-        "lane": "growth_news",
-        "raw": 17,
-        "qualified": 1,
-        "excluded": 16,
-        "note": "Fresh worker staging 20260901-192732; one employer/legal-entity candidate reached full prequalification and requires canonical writer global dedup."
+        "lane": "fresh_worker_staging_growth_news",
+        "distinct_raw": 16,
+        "prequalified": 1,
+        "source": "data/pending_workers/growth_news/20260901-202409-growth-news.json"
       },
       {
-        "lane": "supplemental_low_overlap_production_review",
-        "raw": 30,
-        "qualified": 0,
-        "excluded": 0,
-        "note": "Same-cycle supplemental review covered July and June 2026 production-launch roundups (15+15 employer-level launch observations). These observations are NOT added to funnel.discovered because cross-lane/global overlap with the existing 69 worker observations was not fully proven; no quota padding."
+        "lane": "canonical_writer_low_overlap_supplemental",
+        "distinct_raw": 8,
+        "prequalified": 0,
+        "notes": "management change, dealer/network expansion, export/business-change and sector-change searches; saturated/large-group/nonfit items stopped early"
       }
     ]
   }

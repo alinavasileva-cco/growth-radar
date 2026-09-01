@@ -1,62 +1,58 @@
 {
-  "run_id": "N5K-20260901-570R1",
+  "run_id": "N5K-20260901-571",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T20:00:49+03:00",
+  "updated_at": "2026-09-01T20:28:52+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 575,
+    "baseline_count": 577,
     "target_count": 5000,
-    "current_canonical_count": 577,
-    "current_contactable_count": 577,
-    "progress_added": 2,
-    "remaining": 4423
+    "current_canonical_count": 578,
+    "current_contactable_count": 578,
+    "progress_added": 1,
+    "remaining": 4422
   },
   "funnel": {
-    "discovered": 69,
-    "fast_gate_passed": 23,
-    "size_check_passed": 21,
-    "legal_match_passed": 15,
-    "signal_confirmed": 11,
-    "lpr_identified": 7,
-    "contact_route_found": 5,
-    "qualified": 2,
-    "duplicates": 3,
-    "excluded": 64
+    "discovered": 37,
+    "fast_gate_passed": 17,
+    "size_check_passed": 11,
+    "legal_match_passed": 8,
+    "signal_confirmed": 5,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded": 35
   },
   "lane_metrics": [
     {
-      "lane": "official_owner",
-      "raw": 52,
-      "qualified": 4,
-      "excluded": 48,
-      "note": "Fresh worker staging 20260901-192655; four employer/legal-entity candidates reached size+legal+signal+LPR+published-contact prequalification and require canonical writer global dedup."
+      "lane": "fresh_worker_staging_official_owner",
+      "distinct_raw": 13,
+      "prequalified": 1,
+      "source": "data/pending_workers/official_owner/20260901-202900-official-owner.json"
     },
     {
-      "lane": "growth_news",
-      "raw": 17,
-      "qualified": 1,
-      "excluded": 16,
-      "note": "Fresh worker staging 20260901-192732; one employer/legal-entity candidate reached full prequalification and requires canonical writer global dedup."
+      "lane": "fresh_worker_staging_growth_news",
+      "distinct_raw": 16,
+      "prequalified": 1,
+      "source": "data/pending_workers/growth_news/20260901-202409-growth-news.json"
     },
     {
-      "lane": "supplemental_low_overlap_production_review",
-      "raw": 30,
-      "qualified": 0,
-      "excluded": 0,
-      "note": "Same-cycle supplemental review covered July and June 2026 production-launch roundups (15+15 employer-level launch observations). These observations are NOT added to funnel.discovered because cross-lane/global overlap with the existing 69 worker observations was not fully proven; no quota padding."
+      "lane": "canonical_writer_low_overlap_supplemental",
+      "distinct_raw": 8,
+      "prequalified": 0,
+      "notes": "management change, dealer/network expansion, export/business-change and sector-change searches; saturated/large-group/nonfit items stopped early"
     }
   ],
   "qualified_companies": [
-    "Сайбер Электро",
-    "VROBOTICS"
+    "ЭНТЕЛС"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "577_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "577_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "578_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "578_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
