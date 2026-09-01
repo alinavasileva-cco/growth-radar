@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T01:47:00+03:00",
+  "updated_at": "2026-09-02T01:34:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260902-576",
-  "current_run_id": "N5K-20260902-576",
-  "last_run_id": "N5K-20260902-576",
-  "latest_completed_run": "N5K-20260902-576",
+  "last_completed_run_id": "N5K-20260902-576R1",
+  "current_run_id": "N5K-20260902-576R1",
+  "last_run_id": "N5K-20260902-576R1",
+  "latest_completed_run": "N5K-20260902-576R1",
   "latest_attempted_run": "N5K-20260902-575R2",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260902-575R2",
@@ -117,5 +117,5 @@
   },
   "fresh_staging": "575R1 consumed both fresh worker stagings and physically added Ай-Пласт and ГлазЦентр Краснодар while rejecting Аксис as a physical duplicate. 575R2 supplemental management-change recovery physically added ГК Цифра. Pending/staged are zero.",
   "repair_required": "LOW_RAW_36_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "note": "N5K-20260902-576 completed after physical integration: +2 net new; canonical/contactable 585/585; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260902-576R1 completed after physical integration: +0 net new; canonical/contactable 585/585; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
