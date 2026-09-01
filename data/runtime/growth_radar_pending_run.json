@@ -1,8 +1,128 @@
 {
-  "run_id": "N5K-20260901-555R2",
-  "updated_at": "2026-09-01T06:03:04+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260901-555R2 integrated physically; canonical/contactable 561/561; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260901-556R1",
+  "updated_at": "2026-09-01T07:52:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-20260901-BROX-3705011046",
+      "Brand": "BROX / БРОКС",
+      "Legal Name": "ООО «БРОКС»",
+      "INN": "3705011046",
+      "OGRN/OGRNIP": "1223700005363",
+      "Region": "Ивановская область",
+      "City": "Фурманов",
+      "Segment": "Промышленное производство / B2B",
+      "Website": "https://brox.com.tr",
+      "Revenue/Scale": "Новый производственный комплекс в Фурманове; инвестиции >1,6 млрд ₽; производственная мощность до 68 промышленных паровых котлов в год; основные средства около 1,5 млрд ₽ по отчетности 2025",
+      "Signal Level": "S2",
+      "Signal Summary": "23.07.2026 компания запустила новый производственный комплекс промышленных паровых котлов; инвестиции превысили 1,6 млрд ₽, из них 718 млн ₽ — льготный заем ФРП.",
+      "Signal Date": "2026-07-23",
+      "Signal Source": "https://ww1.metalinfo.ru/ru/news/186358",
+      "Owner": "ООО «МИРТЕКС» 50%; BROX MAKINE SANAYI VE TICARET LIMITED SIRKETI 50%",
+      "CEO": "Гатилов Григорий Александрович",
+      "LPR": "Гатилов Григорий Александрович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (915) 829-99-95",
+      "Primary Email": "gg@mirtex.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "Корпоративный телефон и email, опубликованные в отраслевом каталоге",
+      "Contact Source": "Официальный каталог Петербургского международного газового форума 2025",
+      "Consulting Hypothesis": "Диагностика коммерческого контура нового промышленного производства: сегментация B2B-клиентов и отраслей, проектная воронка, маржинальность, загрузка мощностей, KPI и 90-дневный план продаж.",
+      "contacts": [
+        {
+          "value": "+7 (915) 829-99-95",
+          "channel": "PHONE",
+          "type": "CORPORATE",
+          "source": "Официальный каталог Петербургского международного газового форума 2025",
+          "url": "https://gas-forum.ru/wp-content/uploads/2025/10/oficialnyi-katalog-pmgf_spigf-official-catalogue.pdf",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный контакт ООО БРОКС. Outreach не выполнялся."
+        },
+        {
+          "value": "gg@mirtex.ru",
+          "channel": "EMAIL",
+          "type": "CORPORATE",
+          "source": "Официальный каталог Петербургского международного газового форума 2025",
+          "url": "https://gas-forum.ru/wp-content/uploads/2025/10/oficialnyi-katalog-pmgf_spigf-official-catalogue.pdf",
+          "is_lpr": false,
+          "notes": "Публичный email ООО БРОКС; совпадает с инициалами генерального директора, но персональным контактом не классифицируется без дополнительного подтверждения. Outreach не выполнялся."
+        },
+        {
+          "value": "brox@mirtex.ru",
+          "channel": "EMAIL",
+          "type": "CORPORATE",
+          "source": "Портал Работа России — свежая вакансия работодателя",
+          "url": "https://m-czn.ru/vacancy/g-furmanov/tekhnik-2336879",
+          "is_lpr": false,
+          "notes": "Корпоративный email работодателя; вакансия обновлена 05.08.2026. Outreach не выполнялся."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «БРОКС» действует; ИНН 3705011046, ОГРН 1223700005363; генеральный директор Гатилов Григорий Александрович; участники — ООО «МИРТЕКС» 50% и BROX MAKINE SANAYI VE TICARET LIMITED SIRKETI 50%.",
+          "url": "https://companium.ru/id/1223700005363-broks",
+          "source": "Companium / данные ЕГРЮЛ"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "23.07.2026 в Фурманове запущен новый производственный комплекс промышленных паровых котлов; инвестиции превысили 1,6 млрд ₽, заем ФРП — 718 млн ₽.",
+          "url": "https://ww1.metalinfo.ru/ru/news/186358",
+          "source": "Металлоснабжение и сбыт / пресс-служба ФРП"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Новый завод рассчитан на выпуск до 68 промышленных паровых котлов в год; основные средства ООО «БРОКС» за 2025 год около 1,5 млрд ₽.",
+          "url": "https://companium.ru/id/1223700005363-broks",
+          "source": "Companium / финансовая отчетность"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "ООО БРОКС публиковало корпоративные контакты +7 (915) 829-99-95 и gg@mirtex.ru в официальном каталоге Петербургского международного газового форума 2025; свежая вакансия работодателя от 05.08.2026 подтверждает brox@mirtex.ru.",
+          "url": "https://gas-forum.ru/wp-content/uploads/2025/10/oficialnyi-katalog-pmgf_spigf-official-catalogue.pdf",
+          "source": "ПМГФ 2025; Портал Работа России"
+        }
+      ]
+    }
+  ],
+  "funnel": {
+    "discovered": 4,
+    "fast_gate_passed": 4,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 3
+  },
+  "lane_metrics": [
+    {
+      "lane": "fresh_production_launches_low_overlap",
+      "raw": 3,
+      "fast_gate": 3,
+      "size": 3,
+      "legal": 3,
+      "signal": 3,
+      "lpr": 3,
+      "contact": 1,
+      "qualified": 1,
+      "notes": "BROX qualified prewrite; Полиэфирная нить and ЗЖБИ НОВИН stopped before qualification because a sufficiently verified practical contact route was not established in this recovery pass."
+    },
+    {
+      "lane": "retail_expansion",
+      "raw": 1,
+      "fast_gate": 1,
+      "size": 0,
+      "legal": 0,
+      "signal": 0,
+      "lpr": 0,
+      "contact": 0,
+      "qualified": 0,
+      "notes": "EMKA excluded on verified 2025 legal-entity scale above target range."
+    }
+  ],
+  "notes": "Recovery/resume after unconsumed 20260901-072530 jobs worker fail-closed preflight. No competing canonical writer was active or queued. Discovery shifted to fresh low-overlap production-launch and retail-expansion lanes; 200-300 distinct repo-dedup-confirmed raw were not genuinely available/verified in this pass, so no quota was fabricated. Prewrite GitHub default-branch searches found no match for BROX INN 3705011046, OGRN 1223700005363, or brand name. Final physical dedup must be repeated by the canonical integration workflow. No outreach performed."
 }
