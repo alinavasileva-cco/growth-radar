@@ -7,49 +7,40 @@
   "progress_added": 567,
   "remaining_to_total_target": 4433,
   "remaining": 4433,
-  "remaining_to_1000": 434,
+  "remaining_to_1000": 433,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T11:39:00+03:00",
+  "updated_at": "2026-09-01T11:51:00+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260901-561",
   "current_run_id": "N5K-20260901-561",
   "last_run_id": "N5K-20260901-561",
   "latest_completed_run": "N5K-20260901-561",
-  "canonical_integration_run_id": "N5K-20260901-560R1",
-  "hourly_baseline_count": 565,
+  "canonical_integration_run_id": "N5K-20260901-561",
+  "hourly_baseline_count": 566,
   "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "raw": 38,
-    "fast_gate": 6,
-    "size": 3,
-    "legal": 2,
-    "signal": 2,
-    "lpr": 1,
-    "contact": 1,
+    "raw": 53,
+    "fast_gate": 17,
+    "size": 8,
+    "legal": 6,
+    "signal": 6,
+    "lpr": 3,
+    "contact": 2,
     "qualified": 1,
     "duplicates": 1,
-    "early_reject": 36,
-    "duplicate_plus_early_reject": 37,
-    "excluded": 37,
-    "qualified_raw_pct": 2.6316,
-    "fast_gate_raw_pct": 15.7895,
-    "duplicate_early_reject_pct": 97.3684
+    "early_reject": 51,
+    "duplicate_plus_early_reject": 52,
+    "excluded": 51,
+    "qualified_raw_pct": 1.8868,
+    "fast_gate_raw_pct": 32.0755,
+    "duplicate_early_reject_pct": 98.1132
   },
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-558",
-      "raw": 18,
-      "fast_gate": 10,
-      "qualified": 1,
-      "qualified_raw_pct": 5.5556,
-      "fast_gate_raw_pct": 55.5556,
-      "duplicate_early_reject_pct": 94.4444
-    },
     {
       "run_id": "N5K-20260901-559",
       "raw": 121,
@@ -67,12 +58,21 @@
       "qualified_raw_pct": 2.6316,
       "fast_gate_raw_pct": 15.7895,
       "duplicate_early_reject_pct": 97.3684
+    },
+    {
+      "run_id": "N5K-20260901-561",
+      "raw": 53,
+      "fast_gate": 17,
+      "qualified": 1,
+      "qualified_raw_pct": 1.8868,
+      "fast_gate_raw_pct": 32.0755,
+      "duplicate_early_reject_pct": 98.1132
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 0.9787,
-    "fast_gate_raw_pct_points": -18.0948,
-    "net_new_change": -1
+    "qualified_raw_pct_points": -0.7448,
+    "fast_gate_raw_pct_points": 16.286,
+    "net_new_change": 0
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -84,7 +84,7 @@
     "management_change_commercial_transformation_fresh": 30,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "N5K-20260901-560R1 consumed available fresh staging first, then rotated through more than eight regional/source discovery batches and a second wave of export/dealer/franchise, management/commercial-transformation and partner/business-change searches. Historical pending-tree truncation was not treated as a blocker. Larta Glass passed physical canonical dedup by INN/OGRN/exact legal identity; the first integration attempt was skipped only because the initially assigned Lead ID was already occupied, and the same-cycle repair integrated the company as N5K-0734. Exact saturated samples will not be repeated unchanged.",
+  "fresh_staging": "N5K-20260901-561 physically completed at 567/567 with +1 net new and integrity PASS. Same-hour supplemental low-overlap research was triggered because raw=53 is below the 120 threshold and no external technical limitation was documented. No additional candidate was written without fully confirmed eligibility and authoritative dedup; historical pending-tree truncation was not used as a blocker.",
   "repair_required": null,
-  "note": "N5K-20260901-561 completed after physical integration: +1 net new; canonical/contactable 567/567; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "Metadata repaired to match physical N5K-20260901-561 state: canonical/contactable 567/567; baseline 566; +1 net new; remaining to 1000 433; remaining to 5000 4433; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0."
 }
