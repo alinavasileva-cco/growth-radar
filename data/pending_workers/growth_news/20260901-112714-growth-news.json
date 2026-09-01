@@ -1,0 +1,108 @@
+{
+  "lane": "growth_news",
+  "created_at": "2026-09-01T11:27:14+03:00",
+  "config_snapshot": {
+    "version": "2026-09-01T11:10:00+03:00",
+    "canonical_contactable": 566,
+    "integrity": "PASS",
+    "outreach": 0
+  },
+  "worker_scope": "READ+DISCOVERY_ONLY",
+  "canonical_writes": false,
+  "raw_distinct_employer_level_minimum_confirmed": 24,
+  "raw_target": "80-150 if sources allow",
+  "raw_target_status": "NOT_REACHED_WITHOUT_WEAKENING_SOURCES",
+  "source_batches": [
+    {"batch":"regional_investment_and_industrial_news","raw_named_employers_min":5,"notes":"fresh Aug 2026 plant/expansion signals; hot duplicates rejected early"},
+    {"batch":"moscow_region_industrial_launches","raw_named_employers_min":4,"notes":"official/press-release manufacturing launches; prior staged/canonical-like names rejected early"},
+    {"batch":"volga_ural_production_expansion","raw_named_employers_min":4,"notes":"new lines, industrial parks, capacity expansion"},
+    {"batch":"northwest_and_komi_investment_projects","raw_named_employers_min":4,"notes":"regional investment portals and business media"},
+    {"batch":"automation_robotics_and_equipment","raw_named_employers_min":4,"notes":"robotics/automation launches; state/public and duplicates rejected"},
+    {"batch":"food_agri_and_processing_expansion","raw_named_employers_min":3,"notes":"fresh production expansion; weak/catalog-only items not counted as SIGNAL"}
+  ],
+  "worker_funnel": {
+    "raw": 24,
+    "fast": 8,
+    "size": 3,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 1,
+    "contact": 1,
+    "prequalified_needs_final_global_dedup": 1
+  },
+  "dedup_policy": {
+    "historical_pending_full_materialization_required": false,
+    "candidate_level_repo_search": ["INN","OGRN/OGRNIP","exact legal name","brand+domain"],
+    "final_global_dedup_owner": "canonical_writer"
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Завод карбидов и ферросплавов",
+      "legal_name": "ООО \"ЗАВОД КАРБИДОВ И ФЕРРОСПЛАВОВ\"",
+      "inn": "5017111075",
+      "ogrn": "1165017051924",
+      "domain": "zavodkf.ru",
+      "region": "Республика Коми, Инта",
+      "size_evidence": {
+        "employees_2025": 49,
+        "sme_status": "малый бизнес",
+        "investment_project_rub": 600000000,
+        "new_jobs_project": 71,
+        "urls": [
+          "https://zachestnyibiznes.ru/company/ul/1165017051924_5017111075_OOO-ZAVOD-KARBIDOV-I-FERROSPLAVOV",
+          "https://check.tochka.com/company/1165017051924/",
+          "https://www.bnkomi.ru/data/news/202680/"
+        ]
+      },
+      "legal_evidence": {
+        "status": "Действующая",
+        "private_ownership_evidence": "participants are individuals; 2026 registry-derived source shows 70%/20%/10% individual ownership",
+        "lpr": "Вашина Ксения Сергеевна",
+        "lpr_role": "генеральный директор",
+        "urls": [
+          "https://reputation.ru/ogrn/1165017051924",
+          "https://check.tochka.com/company/1165017051924/"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-08-29",
+        "description": "новый завод в Инте находится на финальной стадии; пробный выпуск карбида кальция запланирован на сентябрь 2026, серийный выпуск — на IV квартал 2026; инвестиции 0.6 млрд ₽, создано 71 рабочее место",
+        "urls": [
+          "https://www.bnkomi.ru/data/news/202680/",
+          "https://rss.komiinform.ru/news/299789"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_contact",
+        "phone": "+7 (495) 799-30-90",
+        "email": "info@zavodkf.ru",
+        "url": "https://zavodkf.ru/contact/"
+      },
+      "dedup_keys": {
+        "lead_id": null,
+        "inn": "5017111075",
+        "ogrn": "1165017051924",
+        "exact_legal_name": "ООО \"ЗАВОД КАРБИДОВ И ФЕРРОСПЛАВОВ\"",
+        "brand_domain": "Завод карбидов и ферросплавов|zavodkf.ru"
+      },
+      "dedup_checks": {
+        "repo_search_inn": "NO_MATCH",
+        "repo_search_ogrn": "NO_MATCH",
+        "repo_search_exact_legal_name": "NO_MATCH",
+        "repo_search_domain": "NO_MATCH",
+        "final_global_dedup": "REQUIRED_BY_CANONICAL_WRITER"
+      }
+    }
+  ],
+  "rejected_examples": [
+    {"name":"АО НТМ / Новые технологии и материалы","reason":"LEGAL: transformed entity tied to Almaz-Antey/state-linked ownership; not accepted as private-company pass"},
+    {"name":"НАРТИС","reason":"repo/pending overlap risk from prior worker history; not deep-checked again"},
+    {"name":"ОКП ЭЛКА-Кабель","reason":"repo/pending overlap risk from prior worker history; not deep-checked again"},
+    {"name":"Фабрика Вентиляции ГалВент","reason":"repo/pending overlap risk from prior worker history; not deep-checked again"},
+    {"name":"Курский аккумуляторный завод","reason":"already staged/integrated in recent worker history; rejected before deep-check"},
+    {"name":"Акрон ПТ","reason":"LEGAL: state-linked JV exposure via Rostec; not accepted"}
+  ],
+  "outreach": 0
+}
