@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260901-574R1",
-  "updated_at": "2026-09-01T23:52:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
+  "run_id": "N5K-20260901-574R2",
+  "updated_at": "2026-09-01T23:58:00+03:00",
+  "status": "CLEARED_NO_QUALIFIED_AFTER_SUPPLEMENTAL",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "note": "N5K-20260901-574R1 integrated physically; canonical/contactable 580/580; integrity PASS; orphan 0/0; outreach 0."
+  "note": "574R1 canonical writer physically processed all fresh prequalified staging and found 3/3 existing canonical duplicates. 574R2 supplemental low-overlap discovery produced no additional fully qualified candidate; no redundant canonical writer created. canonical/contactable 580/580; integrity PASS; orphan 0/0; WIP 0; outreach 0."
 }
