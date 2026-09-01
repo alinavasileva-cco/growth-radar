@@ -1,0 +1,124 @@
+{
+  "worker": "growth_news",
+  "created_at": "2026-09-01T10:29:00+03:00",
+  "source_head_sha": "f569911d1f4ff500abd0fe0c23cefc1342d32167",
+  "mode": "READ_DISCOVERY_ONLY",
+  "canonical_write": false,
+  "outreach": 0,
+  "criteria_version_observed": "CURRENT_WORKING_CONFIG.md as read at run start; criteria unchanged",
+  "canonical_snapshot": {
+    "run_id": "N5K-20260901-558",
+    "canonical_count": 563,
+    "contactable_count": 563,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  },
+  "discovery": {
+    "distinct_employer_raw_proven": 27,
+    "raw_target": "80-150 if sources allow",
+    "raw_target_status": "NOT_REACHED_WITHOUT_WEAK_OR_DUPLICATE_FILL",
+    "fast_gate": 12,
+    "size": 5,
+    "legal": 4,
+    "signal": 4,
+    "lpr": 1,
+    "contact": 1,
+    "prequalified_needs_final_global_dedup": 1,
+    "rejected_or_deferred": 26,
+    "notes": "Only employer-level entities directly evidenced in fresh search results were counted. Search-result rows, unnamed projects and catalogue entries were not inflated into company counts. Historical pending-tree materialization was not required and did not block discovery."
+  },
+  "source_batches": [
+    {
+      "batch": "fresh_august_factory_launches",
+      "raw_proven": 8,
+      "examples": ["Мосэлектрощит", "ТехноСонус-Центр", "Фабрика Вентиляции ГалВент", "Курский аккумуляторный завод", "Петровакс Фарм", "Гармония", "Лайтинг Солюшнс", "Турбокомплект"],
+      "action": "rotated after high duplicate/early-reject density"
+    },
+    {
+      "batch": "new_plants_and_regional_investment",
+      "raw_proven": 8,
+      "examples": ["Регионтранснефть", "Элемент", "НЭК", "DoorHan", "ТД Мистерия", "Хевел", "Семаргл", "Пигмент"],
+      "action": "rotated after fast-gate/size exclusions"
+    },
+    {
+      "batch": "expansion_and_export",
+      "raw_proven": 4,
+      "examples": ["Август", "Логика молока", "МолоПак", "БиДжет"],
+      "action": "rotated due prior-known/size/duplicate risk"
+    },
+    {
+      "batch": "management_and_business_change",
+      "raw_proven": 2,
+      "examples": ["Компания Металл Профиль Восток", "Space 1"],
+      "action": "rotated because signal/fit did not justify deep-check"
+    },
+    {
+      "batch": "regional_manufacturing_expansion",
+      "raw_proven": 3,
+      "examples": ["Сота", "ТД Мистерия", "Курский аккумуляторный завод"],
+      "action": "KAZ advanced; others failed scale/fit"
+    },
+    {
+      "batch": "official_company_press_and_current_news",
+      "raw_proven": 2,
+      "examples": ["Курский аккумуляторный завод", "Август"],
+      "action": "used for source confirmation, not double-counted in distinct total"
+    }
+  ],
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Курский аккумуляторный завод / КАЗ",
+      "legal_name": "ООО \"Курский аккумуляторный завод\"",
+      "inn": "4632167682",
+      "ogrn": "1124632011217",
+      "domain": "gk-kaz.ru",
+      "legal_status": "Действующее российское частное ООО",
+      "size_evidence": {
+        "classification": "среднее предприятие",
+        "source_url": "https://xn----7sbbagdr2anf9afggidws9k.xn--p1ai/contragent/1124632011217/",
+        "source_checked": "2026-09-01"
+      },
+      "signal": {
+        "type": "S2 production expansion / capacity growth",
+        "date": "2026-08-10",
+        "summary": "КАЗ расширил производство стартерных аккумуляторов после инвестиций свыше 380 млн руб.; после выхода на полную мощность выпуск должен вырасти на 20%, с 1.5 до 1.8 млн батарей в год, плюс до 300 тыс. премиальных батарей ежегодно.",
+        "source_url": "https://gk-kaz.ru/2026/08/10/v-kurske-blagodarya-zajmu-frp-rasshirili-proizvodstvo-starternyh-akkumulyatorov/"
+      },
+      "lpr": {
+        "name": "Ольга Валерьевна Галедина",
+        "role": "генеральный директор",
+        "evidence_url": "https://gk-kaz.ru/2026/08/31/kurskij-akkumulyatornyj-zavod-podderzhal-sportivno-patrioticheskij-festival-dorogami-pobedy/",
+        "evidence_date": "2026-08-31"
+      },
+      "contact": {
+        "route": "приемная генерального директора / общий корпоративный маршрут",
+        "phone": "+7 (4712) 22-77-88, добавочный 1-5601",
+        "email": "info@accumkursk.ru",
+        "contact_url": "https://gk-kaz.ru/contacts/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "exact_legal_name_repo_search": "NO_MATCH",
+        "brand_repo_search": "NO_MATCH_FOUND_IN_AVAILABLE_REPO_SEARCH",
+        "domain_repo_search": "candidate-level final search required by canonical writer before integration",
+        "historical_pending_tree": "not fully materialized by worker; not a blocker under repair logic"
+      },
+      "evidence_urls": [
+        "https://gk-kaz.ru/2026/08/10/v-kurske-blagodarya-zajmu-frp-rasshirili-proizvodstvo-starternyh-akkumulyatorov/",
+        "https://gk-kaz.ru/2026/08/31/kurskij-akkumulyatornyj-zavod-podderzhal-sportivno-patrioticheskij-festival-dorogami-pobedy/",
+        "https://gk-kaz.ru/contacts/",
+        "https://reputation.ru/ogrn/1124632011217",
+        "https://xn----7sbbagdr2anf9afggidws9k.xn--p1ai/contragent/1124632011217/"
+      ]
+    }
+  ],
+  "rejection_notes": [
+    "Мосэлектрощит: 2025 revenue reported at 15.5bn RUB; excluded at SIZE for this worker rather than stretching current scale criteria.",
+    "Сота (ИНН 7453359087): 2025 revenue about 15m RUB; excluded at SIZE.",
+    "ТД Мистерия: 2025 revenue reported as 0; excluded at SIZE despite strong investment signal.",
+    "Пигмент: current sources classify the enterprise as very large; excluded at SIZE.",
+    "Previously observed candidates such as ТехноСонус-Центр, ГалВент, Лайтинг Солюшнс, МолоПак and Турбокомплект were not re-staged where prior canonical/staging overlap was known or strongly indicated."
+  ]
+}
