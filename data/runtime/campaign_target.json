@@ -7,7 +7,7 @@
   "progress_added": 563,
   "remaining_to_total_target": 4437,
   "remaining": 4437,
-  "remaining_to_1000": 438,
+  "remaining_to_1000": 437,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,39 +17,30 @@
   "current_run_id": "N5K-20260901-558",
   "last_run_id": "N5K-20260901-558",
   "latest_completed_run": "N5K-20260901-558",
-  "canonical_integration_run_id": "N5K-20260901-557R1",
-  "hourly_baseline_count": 561,
+  "canonical_integration_run_id": "N5K-20260901-558",
+  "hourly_baseline_count": 562,
   "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "raw": 8,
-    "fast_gate": 4,
-    "size": 2,
-    "legal": 1,
-    "signal": 1,
+    "raw": 18,
+    "fast_gate": 10,
+    "size": 4,
+    "legal": 3,
+    "signal": 3,
     "lpr": 1,
     "contact": 1,
     "qualified": 1,
     "duplicates": 0,
-    "early_reject": 7,
-    "duplicate_plus_early_reject": 7,
-    "excluded": 7,
-    "qualified_raw_pct": 12.5,
-    "fast_gate_raw_pct": 50.0,
-    "duplicate_early_reject_pct": 87.5
+    "early_reject": 17,
+    "duplicate_plus_early_reject": 17,
+    "excluded": 17,
+    "qualified_raw_pct": 5.5556,
+    "fast_gate_raw_pct": 55.5556,
+    "duplicate_early_reject_pct": 94.4444
   },
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-555R2",
-      "raw": 7,
-      "fast_gate": 3,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 42.8571,
-      "duplicate_early_reject_pct": 100.0
-    },
     {
       "run_id": "N5K-20260901-556R1",
       "raw": 4,
@@ -67,12 +58,21 @@
       "qualified_raw_pct": 12.5,
       "fast_gate_raw_pct": 50.0,
       "duplicate_early_reject_pct": 87.5
+    },
+    {
+      "run_id": "N5K-20260901-558",
+      "raw": 18,
+      "fast_gate": 10,
+      "qualified": 1,
+      "qualified_raw_pct": 5.5556,
+      "fast_gate_raw_pct": 55.5556,
+      "duplicate_early_reject_pct": 94.4444
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 12.5,
-    "fast_gate_raw_pct_points": -50.0,
-    "net_new_change": 1
+    "qualified_raw_pct_points": -6.9444,
+    "fast_gate_raw_pct_points": 5.5556,
+    "net_new_change": 0
   },
   "next_distribution_pct": {
     "jobs": 5,
@@ -82,7 +82,7 @@
     "regional_investment": 0,
     "experimental_low_overlap_business_change": 50
   },
-  "fresh_staging": "Fresh jobs worker data/pending_workers/jobs/20260901-082200-jobs.json failed closed before discovery because it could not materialize the full historical canonical+pending dedup keyset. Recovery N5K-20260901-557R1 continued discovery via fresh regional-investment and expansion lanes, screened 8 distinct employer-level candidates, qualified ЭкоПромСтрой-Алга, and canonical integration physically added it as N5K-0728. Worker is consumed by the recovery run; pending integration is cleared.",
+  "fresh_staging": "N5K-20260901-558 completed a fresh official-owner/business-change discovery cycle. Historical pending tree truncation was not used as a blocker. Candidate-level dedup was repeated on INN, OGRN, exact legal name and brand/domain before staging; one candidate reached QUALIFIED and was physically integrated. Pending integration is cleared.",
   "repair_required": null,
   "note": "N5K-20260901-558 completed after physical integration: +1 net new; canonical/contactable 563/563; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
