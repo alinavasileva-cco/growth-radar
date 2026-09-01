@@ -1,0 +1,353 @@
+{
+  "worker": "official_owner",
+  "created_at": "2026-09-01T17:31:01+03:00",
+  "campaign_id": "new_5000",
+  "config_version": "2026-09-01T15:57:48+03:00",
+  "canonical_snapshot": {
+    "physical_leads_master": 572,
+    "physical_contactable_master": 572,
+    "source": "data/runtime/current_run_status.json @ 2026-09-01T17:04:00+03:00",
+    "outreach_performed": false,
+    "canonical_modified": false,
+    "contactable_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false
+  },
+  "dedup_policy": {
+    "historical_pending_full_materialization_required": false,
+    "keys": ["inn", "ogrn_ogrnip", "exact_legal_name", "brand_plus_domain"],
+    "final_global_dedup_owner": "canonical_writer",
+    "worker_net_qualified_count": 0,
+    "note": "Discovery continued without requiring full historical pending_workers materialization. Candidate-level repository search was performed for staged candidates; only canonical writer may assign net QUALIFIED after physical final dedup."
+  },
+  "funnel": {
+    "source_level_observations_reviewed": 60,
+    "distinct_employer_level_raw_resolved": 18,
+    "size_pass": 9,
+    "legal_pass": 7,
+    "signal_pass": 7,
+    "lpr_pass": 4,
+    "contact_pass": 3,
+    "prequalified_needs_final_global_dedup": 3,
+    "reject": 15
+  },
+  "source_batches": [
+    {
+      "batch": "fresh_new_production_multi_region",
+      "source_type": "business/industry news",
+      "region": "multi-region",
+      "raw_observations_reviewed": 10,
+      "distinct_employers_resolved": 4,
+      "duplicates_plus_early_rejects": 7,
+      "note": "Fresh 2026 production launches and new factories; state-linked/very high-overlap names screened early."
+    },
+    {
+      "batch": "moscow_oblast_expansion",
+      "source_type": "regional investment press/company sites",
+      "region": "Moscow Oblast",
+      "raw_observations_reviewed": 10,
+      "distinct_employers_resolved": 3,
+      "duplicates_plus_early_rejects": 8,
+      "note": "New production lines, OЭЗ projects and capacity expansion."
+    },
+    {
+      "batch": "northwest_industrial_scaleup",
+      "source_type": "official regional/industry/company news",
+      "region": "Saint Petersburg/Leningrad Oblast",
+      "raw_observations_reviewed": 10,
+      "distinct_employers_resolved": 3,
+      "duplicates_plus_early_rejects": 7,
+      "note": "Production scale-up, new workshops and industrial automation."
+    },
+    {
+      "batch": "siberia_new_capacity",
+      "source_type": "business/regional press/company sites",
+      "region": "Novosibirsk/Siberia",
+      "raw_observations_reviewed": 10,
+      "distinct_employers_resolved": 3,
+      "duplicates_plus_early_rejects": 8,
+      "note": "New manufacturing capacity and automation signals."
+    },
+    {
+      "batch": "volga_food_robotics_expansion",
+      "source_type": "retail/industry/regional press",
+      "region": "Samara/Tatarstan/Volga",
+      "raw_observations_reviewed": 10,
+      "distinct_employers_resolved": 3,
+      "duplicates_plus_early_rejects": 8,
+      "note": "Food production scale-up, robotics and regional expansion."
+    },
+    {
+      "batch": "central_south_investment_projects",
+      "source_type": "regional investment/business press",
+      "region": "Central/South Russia",
+      "raw_observations_reviewed": 10,
+      "distinct_employers_resolved": 2,
+      "duplicates_plus_early_rejects": 9,
+      "note": "Investment-backed production projects; weak catalog-only observations were not used to pad raw."
+    }
+  ],
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "GSS Cosmetics",
+      "legal_name": "ООО \"ДЖИЭСЭС КОСМЕТИКС\"",
+      "inn": "7709490887",
+      "ogrn": "1167746411161",
+      "domain": "gsscosmetics.com",
+      "size": {
+        "employees": ">250 employees (official site)",
+        "production_scale": "20,000,000 units per year; own production facility 10,000 m2",
+        "evidence_urls": [
+          "https://gsscosmetics.com/",
+          "https://gsscosmetics.com/about"
+        ]
+      },
+      "legal": {
+        "active_entity": true,
+        "evidence_url": "https://gsscosmetics.com/contacts",
+        "note": "Official contacts page publishes legal entity, INN and OGRN."
+      },
+      "signal": {
+        "class": "S1/S2",
+        "date": "2026-04-10",
+        "description": "Company launched its own PET packaging production line at the Pushkino production complex, adding a new in-house manufacturing direction and increasing vertical integration.",
+        "evidence_urls": [
+          "https://www.retail.ru/rbc/pressreleases/gss-cosmetics-zapustila-sobstvennoe-proizvodstvo-pet-tary/"
+        ]
+      },
+      "lpr": {
+        "name": "Евгения Симакова",
+        "role": "генеральный директор GSS Cosmetics",
+        "evidence_urls": [
+          "https://companies.rbc.ru/news/fwmZWMmo7g/gss-cosmetics-prinyala-uchastie-v-delovoj-programme-chemicos-2026/",
+          "https://chemicos.ru/ru/press/news/gss-cosmetics"
+        ],
+        "note": "Operational CEO role is publicly confirmed in 2026 company-linked material."
+      },
+      "contact_route": {
+        "type": "official_company_email_phone_form",
+        "email": "info@gsscosmetics.com",
+        "phone": "+7 800 707 3106",
+        "url": "https://gsscosmetics.com/contacts",
+        "note": "Official published company route; no email pattern reconstruction."
+      },
+      "dedup_checks": {
+        "queries": [
+          "7709490887",
+          "GSS Cosmetics gsscosmetics.com ДЖИЭСЭС КОСМЕТИКС"
+        ],
+        "repo_search_matches": 0,
+        "final_global_dedup_required": true
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Лазерные системы",
+      "legal_name": "АО \"ЛАЗЕРНЫЕ СИСТЕМЫ\"",
+      "inn": "7819039902",
+      "ogrn": "1187847309913",
+      "domain": "lsystems.ru",
+      "size": {
+        "category": "средний бизнес (public business registry snapshot)",
+        "production_scale": "own 6,000 m2 high-tech production complex",
+        "evidence_urls": [
+          "https://check.tochka.com/company/1187847309913/",
+          "https://www.lsystems.ru/"
+        ]
+      },
+      "legal": {
+        "active_entity": true,
+        "evidence_url": "https://check.tochka.com/company/1187847309913/"
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-06-03",
+        "description": "At PMEF-2026 the company launched an investment project for large-scale expansion of additive-technology production in the Saint Petersburg SEZ.",
+        "evidence_urls": [
+          "https://www.gov.spb.ru/gov/otrasl/c_industrial_and_trade/news/316728/"
+        ]
+      },
+      "lpr": {
+        "name": "Васильев Дмитрий Николаевич",
+        "role": "генеральный директор",
+        "evidence_urls": [
+          "https://check.tochka.com/company/1187847309913/",
+          "https://reputation.ru/ogrn/1187847309913"
+        ]
+      },
+      "contact_route": {
+        "type": "official_company_sales_email_phone_form",
+        "email": "sales@lsystems.ru",
+        "phone": "+7 812 612-02-88",
+        "url": "https://www.lsystems.ru/",
+        "note": "Official site also publishes office@lsystems.ru and a contact form."
+      },
+      "dedup_checks": {
+        "queries": ["7819039902", "АО ЛАЗЕРНЫЕ СИСТЕМЫ lsystems.ru"],
+        "repo_search_matches": 0,
+        "final_global_dedup_required": true
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Renewal",
+      "legal_name": "АО \"ПФК ОБНОВЛЕНИЕ\"",
+      "inn": "5408151534",
+      "ogrn": "1025405426826",
+      "domain": "renewal.ru",
+      "size": {
+        "revenue_2024_company_reported": "17.3 млрд ₽",
+        "market_scale": "top-3 in Russia by retail pharmaceutical unit volume cited in industry coverage",
+        "evidence_urls": [
+          "https://gxpnews.net/2025/10/v-sibirskoj-farmkompanii-renewal-smenilsya-gendiretor/",
+          "https://www.renewal.ru/about/"
+        ]
+      },
+      "legal": {
+        "active_entity": true,
+        "evidence_urls": [
+          "https://check.tochka.com/company/1025405426826/",
+          "https://companies.rbc.ru/id/1025405426826-ao-proizvodstvennaya-farmatsevticheskaya-kompaniya-obnovlenie/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-27",
+        "description": "Renewal commissioned a new production workshop for essential medicines in Novosibirsk; facility area exceeds 18,100 m2 and project capacity is 100 million packages annually.",
+        "evidence_urls": [
+          "https://www.kommersant.ru/doc/8909620"
+        ]
+      },
+      "lpr": {
+        "name": "Гречкин Владимир Викторович",
+        "role": "генеральный директор",
+        "evidence_urls": [
+          "https://check.tochka.com/company/1025405426826/",
+          "https://companies.rbc.ru/id/1025405426826-ao-proizvodstvennaya-farmatsevticheskaya-kompaniya-obnovlenie/"
+        ]
+      },
+      "contact_route": {
+        "type": "official_company_reception_email_phone",
+        "email": "info@pfk-obnovlenie.ru",
+        "phone": "+7 (383) 340-55-01",
+        "url": "https://www.renewal.ru/contacts/",
+        "note": "Official published reception route; no reconstructed personal email."
+      },
+      "dedup_checks": {
+        "queries": ["5408151534", "ПФК ОБНОВЛЕНИЕ Renewal renewal.ru"],
+        "repo_search_matches": 0,
+        "final_global_dedup_required": true
+      }
+    },
+    {
+      "status": "REJECT",
+      "brand": "Карвиль",
+      "reason": "Strong expansion signal found (new logistics-production complex and Kazakhstan warehouse), but an official company contact route was not independently verified in this cycle.",
+      "evidence_urls": [
+        "https://www.tks.ru/autonews/2026/07/15/0003/v-leningradskoj-oblasti-zapustili-logisticheskij-kompleks-dlya-proizvodstva-avtokomponentov/print/",
+        "https://www.dp.ru/a/2026/02/24/peterburgskij-distribjutor"
+      ]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Семаргл",
+      "reason": "Multiple active legal entities with the same name surfaced; the exact plant entity/LPR/contact chain was not safe enough to resolve in-cycle.",
+      "evidence_urls": [
+        "https://crp.gov.ru/news/zavod-semargl-v-oez-sankt-peterburg-planiruyut-otkryt-v-iyune-etogo-goda/",
+        "https://companium.ru/id/1099847019580-semargl"
+      ]
+    },
+    {
+      "status": "REJECT",
+      "brand": "РАТЕЛ Ступино",
+      "reason": "Strong new-factory signal and legal continuity are visible, but current LPR and official direct company contact route were not fully resolved in-cycle.",
+      "evidence_urls": [
+        "https://www.vedomosti.ru/press_releases/2026/07/17/novii-zavod-v-oez-stupino-kvadrat-gotov-na-50",
+        "https://www.vedomosti.ru/press_releases/2025/06/06/novii-rezident-oez-stupino-kvadrat-investiruet-v-svoi-proekt-bolee-290-mln-rublei"
+      ]
+    },
+    {
+      "status": "REJECT",
+      "brand": "LAB вкуса",
+      "reason": "Strong fourth-factory/automation/regional-expansion signal, but exact employer-level legal entity, INN/OGRN and LPR were not safely resolved from public sources in-cycle.",
+      "evidence_urls": [
+        "https://www.retail.ru/rbc/pressreleases/4-5-mln-portsiy-v-mesyats-kak-lab-vkusa-masshtabiruet-proizvodstvo-aziatskikh-perekusov-v-povolzhe/",
+        "https://lab-vkus.ru/"
+      ]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Сайбер Электро",
+      "reason": "Fresh 2026 production-site expansion signal is strong, but exact Russian operating legal entity/LPR chain remained unresolved; prior worker also flagged this ambiguity.",
+      "evidence_urls": ["https://www.cnews.ru/news/line/2026-09-01_dlya_sajber_elektrootkryta"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Моторскай",
+      "reason": "Strong new robotic-production signal, but exact employer-level legal/LPR/contact chain was not completed in-cycle.",
+      "evidence_urls": ["https://www.elec.ru/news/2026/02/12/rezident-skolkovo-zapustil-robotizirovannoe-proizv.html"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "ГК НЭК",
+      "reason": "Very large group/holding structure; candidate was screened early as high-overlap and not taken through employer-level legal/LPR/contact resolution in this worker cycle.",
+      "evidence_urls": ["https://www.elec.ru/news/2026/07/09/gruppa-nek-sozdast-odin-iz-krupnejshikh-v-rossii-z.html"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Полипласт",
+      "reason": "Large multi-entity industrial group; not taken through employer-level deep funnel in this low-overlap worker cycle.",
+      "evidence_urls": ["https://www.interfax.ru/pressreleases/1085146"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Логика молока",
+      "reason": "Large national producer with major investment program; screened as high-overlap/large-group candidate and not deep-resolved in this lane.",
+      "evidence_urls": ["https://www.interfax.ru/business/1109688"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "reason": "Large established group; expansion signal confirmed but low-overlap criterion not met for this worker cycle.",
+      "evidence_urls": ["https://riamo.ru/news/ekonomika/v-serpuhove-podmoskovja-vlozhat-23-mlrd-rub-v-modernizatsiju-zavoda/"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Систэм Электрик",
+      "reason": "Strong new-workshop signal but large established group/high-overlap profile; not taken through full low-overlap deep funnel.",
+      "evidence_urls": ["https://www.kommersant.ru/doc/8816595"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Дамате",
+      "reason": "Large established agro-industrial group; strong expansion signal but high-overlap profile, so no deep employer-level contact qualification in this worker cycle.",
+      "evidence_urls": ["https://ng72.ru/society/5445951-damate-rasshiryaet-proizvodstvo-do-60-rynka-inkubacionnyh-yaic-indeyki"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "ГК Август",
+      "reason": "Large established group with strong scale signals; screened as high-overlap and not deep-qualified in this worker cycle.",
+      "evidence_urls": ["https://www.avgust.com/press/news/industry/tseny-na-szr-mogut-vyrasti-po-otdelnym-pozitsiyam-avgust-k-36-letiyu-otsenil-perspektivy-rynka/"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Т-Технологии",
+      "reason": "Very large public-facing group; regional office growth signal is real but outside this low-overlap employer discovery lane.",
+      "evidence_urls": ["https://biz.cnews.ru/news/line/2026-03-24_t-tehnologii_otkryla_novyj"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "YADRO",
+      "reason": "Large technology group/high-overlap profile; regional office expansion signal confirmed but not taken through deep qualification.",
+      "evidence_urls": ["https://yadro.com/ru/press/yadro-otkryla-novoe-rabochee-prostranstvo-v-kazani/"]
+    }
+  ],
+  "notes": [
+    "CURRENT_WORKING_CONFIG criteria were not changed or weakened.",
+    "Historical pending_workers tree was not required to be fully materialized before discovery.",
+    "Canonical/contactable/runtime/campaign were not modified; outreach was not performed.",
+    "The 70-130 distinct-employer raw target was not reached with employer-level resolution in this cycle. Source observations were plentiful, but many were large/high-overlap groups, ambiguous legal mappings, or failed CONTACT/LPR; weak catalog rows were not used to pad raw.",
+    "All three staged candidates remain PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP; worker net QUALIFIED remains zero until canonical writer completes physical final dedup."
+  ]
+}
