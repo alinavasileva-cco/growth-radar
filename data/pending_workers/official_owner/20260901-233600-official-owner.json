@@ -1,0 +1,298 @@
+{
+  "worker": "official_owner",
+  "lane": "official_owner",
+  "created_at": "2026-09-01T23:36:00+03:00",
+  "mode": "READ_DISCOVERY_ONLY",
+  "config": {
+    "source": "CURRENT_WORKING_CONFIG.md",
+    "version_seen": "2026-09-01T22:52:00+03:00",
+    "canonical_contactable_snapshot": "580/580",
+    "integrity_seen": "PASS",
+    "criteria_changed": false,
+    "canonical_modified": false,
+    "contactable_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false,
+    "outreach_performed": false,
+    "worker_net_qualified": 0
+  },
+  "dedup_strategy": {
+    "historical_pending_full_materialization_required": false,
+    "physical_canonical_contactable_checked_via_current_config_and_repo": true,
+    "candidate_level_repo_search_keys": ["inn", "ogrn_ogrnip", "exact_legal_name", "brand+domain"],
+    "final_global_dedup_owner": "canonical_writer",
+    "staged_is_not_counted_as_added": true
+  },
+  "funnel": {
+    "source_level_observations": 47,
+    "distinct_employer_level_raw": 15,
+    "size_pass": 7,
+    "legal_pass": 6,
+    "signal_pass": 5,
+    "lpr_pass": 3,
+    "contact_pass": 2,
+    "prequalified_needs_final_global_dedup": 2,
+    "reject": 13
+  },
+  "target_assessment": {
+    "requested_distinct_raw_range": "70-130",
+    "achieved_distinct_raw": 15,
+    "target_reached": false,
+    "reason": "Fresh high-quality results concentrated quickly in repeated Moscow-region manufacturing stories, large/high-overlap groups, state-controlled entities, or candidates where legal/LPR/contact could not be closed without lowering evidence quality. Weak catalog rows were not used to inflate raw volume."
+  },
+  "source_batches": [
+    {
+      "batch": "moscow_region_new_production",
+      "source_types": ["regional investment news", "business press", "official company sites"],
+      "region": "Moscow Oblast",
+      "source_level_observations": 12,
+      "distinct_employers_resolved": 5,
+      "staged": 1,
+      "notes": "Included Biofarmlab, NTM, Polex Beauty, Aravia, New Technologies of Printing."
+    },
+    {
+      "batch": "central_russia_factory_expansion",
+      "source_types": ["Kommersant", "regional industrial news", "official requisites pages"],
+      "region": "Oryol/Voronezh/Central Russia",
+      "source_level_observations": 8,
+      "distinct_employers_resolved": 3,
+      "staged": 1,
+      "notes": "Included Three Points Manufacturing, Alba, Citron."
+    },
+    {
+      "batch": "siberia_electronics_pharma",
+      "source_types": ["Kommersant", "company profiles", "official sites"],
+      "region": "Novosibirsk/Siberia",
+      "source_level_observations": 7,
+      "distinct_employers_resolved": 2,
+      "staged": 0,
+      "notes": "Included Eltex and Renewal; Renewal was recent/high-overlap from prior worker output."
+    },
+    {
+      "batch": "south_russia_investment",
+      "source_types": ["Kommersant", "regional investment news"],
+      "region": "Krasnodar/South Russia",
+      "source_level_observations": 5,
+      "distinct_employers_resolved": 1,
+      "staged": 0,
+      "notes": "Cadila project rejected from this lane because Russian private employer-level legal entity/contact chain was not closed."
+    },
+    {
+      "batch": "large_industrial_projects",
+      "source_types": ["Vedomosti company releases", "regional industrial press"],
+      "region": "Multiple",
+      "source_level_observations": 9,
+      "distinct_employers_resolved": 2,
+      "staged": 0,
+      "notes": "Larta Glass and Amikan/Polymetal screened out as large/high-overlap group profiles for this low-overlap lane."
+    },
+    {
+      "batch": "consumer_fmcg_expansion",
+      "source_types": ["regional investment releases", "business press"],
+      "region": "Moscow region / multiple",
+      "source_level_observations": 6,
+      "distinct_employers_resolved": 2,
+      "staged": 0,
+      "notes": "Aravia/Polex/Logika Moloka style expansion signals screened for overlap and complete LPR/contact chain."
+    }
+  ],
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Биофармлаб",
+      "legal_name": "ООО «БИОФАРМЛАБ»",
+      "inn": "5010052053",
+      "ogrn": "1165010051040",
+      "domain": "biopharmlab.ru",
+      "size": {
+        "evidence": "2025 revenue 2,320,871,000 RUB; 150 employees reported in current company data; official site states 10,000 m² production space and up to 3,000,000 units/month.",
+        "urls": [
+          "https://companies.rbc.ru/id/1165010051040-ooo-biofarmlab/",
+          "https://basis.myseldon.com/ru/company/1165010051040/facts",
+          "https://biopharmlab.ru/"
+        ]
+      },
+      "legal": {
+        "active": true,
+        "evidence": "Current company data shows active legal entity; INN/OGRN match ООО БИОФАРМЛАБ in Dubna.",
+        "urls": [
+          "https://companies.rbc.ru/id/1165010051040-ooo-biofarmlab/",
+          "https://check.tochka.com/company/1165010051040/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-03-02",
+        "evidence": "Third production phase launched in OЭЗ Dubna; new 5,600 m² production area; capacity up to 100,000 units/day / 3 million units per month.",
+        "url": "https://www.vedomosti.ru/press_releases/2026/03/02/zavod-biofarmlab-zapustil-tretyu-ochered-proizvodstva-kosmetiki-v-oez-dubna"
+      },
+      "lpr": {
+        "name": "Иван Сергеевич Дымчук",
+        "role": "генеральный директор",
+        "urls": [
+          "https://check.tochka.com/company/1165010051040/",
+          "https://www.vedomosti.ru/press_releases/2026/03/02/zavod-biofarmlab-zapustil-tretyu-ochered-proizvodstva-kosmetiki-v-oez-dubna"
+        ]
+      },
+      "contact": {
+        "route": "AKO@biopharmlab.ru; plabel@biopharmlab.ru",
+        "route_type": "published official company email routes",
+        "url": "https://biopharmlab.ru/"
+      },
+      "dedup_checks": {
+        "repo_search_inn": "no match",
+        "repo_search_ogrn": "no match",
+        "repo_search_brand_domain": "no match",
+        "final_physical_global_dedup": "NOT_PERFORMED_BY_WORKER"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Три Точки Мануфактуринг",
+      "legal_name": "ООО «ТРИ ТОЧКИ МАНУФАКТУРИНГ»",
+      "inn": "5717007055",
+      "ogrn": "1215700003639",
+      "domain": "factory.ttri.ru",
+      "size": {
+        "evidence": "2025 revenue 1,591,936,000 RUB; manufacturing site in OЭЗ Oryol; current expansion increased emergency-call unit output by 20% with 125m RUB project investment.",
+        "urls": [
+          "https://b2b.house/company/OOO-TTM_5324b1dc-5167-4ba8-b7af-b2ea55e1382f/",
+          "https://www.kommersant.ru/doc/8908835",
+          "https://ttri.ru/about"
+        ]
+      },
+      "legal": {
+        "active": true,
+        "evidence": "Official requisites page publishes legal name, INN 5717007055 and OGRN 1215700003639.",
+        "urls": ["https://factory.ttri.ru/requisites/"]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-26",
+        "evidence": "Production of ERA-GLONASS emergency-call control units increased by 20%; 125m RUB invested in the expansion project.",
+        "url": "https://www.kommersant.ru/doc/8908835"
+      },
+      "lpr": {
+        "name": "Дмитрий Игоревич Филатов",
+        "role": "директор",
+        "urls": ["https://b2b.house/company/OOO-TTM_5324b1dc-5167-4ba8-b7af-b2ea55e1382f/"]
+      },
+      "contact": {
+        "route": "8 (800) 555-15-72; factory@ttri.ru",
+        "route_type": "published official factory phone and email",
+        "url": "https://factory.ttri.ru/requisites/"
+      },
+      "dedup_checks": {
+        "repo_search_inn": "no match",
+        "repo_search_ogrn": "no match",
+        "repo_search_brand_domain": "no match",
+        "final_physical_global_dedup": "NOT_PERFORMED_BY_WORKER"
+      }
+    },
+    {
+      "status": "REJECT",
+      "brand": "НТМ / Новые технологии и материалы",
+      "reason_stage": "LEGAL",
+      "reason": "Current entity is AO NTM after 2026 reorganization, but the company is a subsidiary of Obukhov Plant / Almaz-Antey structure; this does not satisfy the private-company fast gate for this lane.",
+      "evidence_urls": [
+        "https://ntmsp.ru/contacts/",
+        "https://companies.rbc.ru/id/1265000010769-ao-ntm/",
+        "https://www.vedomosti.ru/press_releases/2026/08/26/v-sergievom-posade-zapuskayut-liteinoe-proizvodstvo"
+      ]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Renewal / ПФК Обновление",
+      "reason_stage": "DEDUP_EARLY",
+      "reason": "Already surfaced in a recent official_owner cycle; low-overlap requirement means it is not re-staged in this cycle.",
+      "evidence_urls": ["https://www.kommersant.ru/doc/8909620"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Элтекс",
+      "reason_stage": "LEGAL",
+      "reason": "Search results resolved multiple similarly named legal entities; the employer-level entity tied to the 8bn RUB Novosibirsk plant project was not closed to an unambiguous current legal/contact chain in this cycle.",
+      "evidence_urls": [
+        "https://www.kommersant.ru/doc/8911583",
+        "https://basis.myseldon.com/ru/company/1025403911818/taxes"
+      ]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Полекс Бьюти",
+      "reason_stage": "LPR",
+      "reason": "Strong scale/growth signal found, but current owner/CEO/LPR plus practical published route were not both closed in this cycle without lowering evidence quality.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/06/15/poleks-byuti-iz-oez-dubna-ezhemesyachno-vipuskaet-okolo-2-mln-edinits-produktsii"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Aravia",
+      "reason_stage": "LPR",
+      "reason": "Expansion signal was strong, but the complete current legal entity + named LPR + published practical contact route was not closed in this cycle.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/04/23/podmoskovnii-proizvoditel-kosmetiki-uvelichit-moschnost-proizvodstva-na-40"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Новые технологии печати",
+      "reason_stage": "SIZE",
+      "reason": "Project signal is strong, but current scale evidence sufficient for the working SIZE gate was not confirmed in this cycle.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/06/03/v-podmoskove-investiruyut-430-mln-rublei-v-proizvodstvo-promishlennih-pechatayuschih-sostavov"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Ларта Гласс Раменское",
+      "reason_stage": "SIZE",
+      "reason": "Large industrial group profile and high-overlap characteristics; not pursued in this low-overlap lane.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/08/28/bolee-6-mlrd-rublei-vlozhili-v-modernizatsiyu-stekolnogo-zavoda-v-ramenskom"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Амикан / Полиметалл",
+      "reason_stage": "SIZE",
+      "reason": "Part of a very large/high-overlap mining group; excluded from low-overlap lane.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/03/20/na-mestorozhdenii-veduga-nakopili-rudu-dlya-zapuska-novoi-fabriki"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "АЛИУМ / Биннофарм Групп",
+      "reason_stage": "SIZE",
+      "reason": "Large/high-overlap pharmaceutical group profile; not pursued in this lane.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/06/16/zavod-alium-v-podmoskove-vipustil-bolee-22-mln-upakovok-lekarstv-v-etom-godu"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Альба",
+      "reason_stage": "LPR",
+      "reason": "Large 11bn RUB greenfield project identified, but current employer legal entity, named LPR and published contact chain were not all closed in this cycle.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/04/21/rosseti-obespechili-elektroenergiei-novii-zavod-alyuminievoi-upakovki-v-voronezhskoi-oblasti"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Цитрон",
+      "reason_stage": "LPR",
+      "reason": "Factory construction signal identified, but employer-level LPR/contact chain was not closed in this cycle.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/04/07/rosseti-obespechili-moschnostyu-unikalnii-zavod-v-voronezhskoi-oblasti"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Cadila Pharmaceuticals Russia project",
+      "reason_stage": "LEGAL",
+      "reason": "Foreign parent investment announcement found; active Russian private employer-level legal entity with INN/OGRN and complete LPR/contact chain was not resolved in this cycle.",
+      "evidence_urls": ["https://www.kommersant.ru/doc/8894098"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Логика молока",
+      "reason_stage": "SIZE",
+      "reason": "Very large 30bn RUB project / high-overlap profile; excluded from low-overlap lane.",
+      "evidence_urls": ["https://www.kommersant.ru/doc/8891405"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Аравия duplicate observation",
+      "reason_stage": "DEDUP_EARLY",
+      "reason": "Repeated observation of the same employer within this cycle; not counted as a distinct employer-level raw candidate twice.",
+      "evidence_urls": ["https://www.vedomosti.ru/press_releases/2026/04/23/podmoskovnii-proizvoditel-kosmetiki-uvelichit-moschnost-proizvodstva-na-40"]
+    }
+  ]
+}
