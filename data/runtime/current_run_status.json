@@ -47,5 +47,6 @@
   "physical_master_state": "571_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "571_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "config_sync_requested_at": "2026-09-01T16:02:00+03:00"
 }
