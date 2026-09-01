@@ -44,18 +44,20 @@
     {
       "lane": "independent_low_overlap_supplemental",
       "raw": null,
-      "note": "Fresh regional production, management/change, investment and expansion discovery executed independently. Safe globally distinct employer count was not added to discovered because cross-lane legal-key materialization was incomplete; no search-result-row padding used."
+      "note": "Fresh regional production, management/business-change, investment and expansion discovery executed independently. Safe globally distinct employer count was not added because cross-lane legal-key materialization was incomplete; no result-row padding."
     }
   ],
-  "qualified_companies": [
-    "Энхим"
-  ],
+  "qualified_companies": ["Энхим"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "575_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "575_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
+  "raw_target_met": false,
+  "supplemental_discovery_performed": true,
+  "metadata_sync": "REPAIRED_AFTER_PHYSICAL_INTEGRATION",
   "blocker": null
 }
