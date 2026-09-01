@@ -11,65 +11,69 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T22:48:00+03:00",
+  "updated_at": "2026-09-01T22:52:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-573R1",
+  "last_completed_run_id": "N5K-20260901-572R1",
   "current_run_id": "N5K-20260901-573R1",
   "last_run_id": "N5K-20260901-573R1",
-  "latest_completed_run": "N5K-20260901-573R1",
-  "canonical_integration_run_id": "N5K-20260901-572R1",
-  "hourly_baseline_count": 579,
-  "hourly_net_new": 1,
+  "latest_completed_run": "N5K-20260901-572R1",
+  "latest_attempted_run": "N5K-20260901-573R1",
+  "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
+  "canonical_integration_run_id": "N5K-20260901-573R1",
+  "hourly_baseline_count": 580,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260901-572R1",
-    "raw": 41,
-    "fast_gate": 18,
-    "size": 14,
-    "legal": 12,
-    "signal": 11,
-    "lpr": 8,
-    "contact": 6,
-    "qualified": 1,
-    "duplicates": 4,
-    "excluded_early_reject": 36,
-    "qualified_raw_pct": 2.439,
-    "fast_gate_raw_pct": 43.9024,
+    "run_id": "N5K-20260901-573R1",
+    "raw": 38,
+    "fast_gate": 12,
+    "size": 8,
+    "legal": 7,
+    "signal": 7,
+    "lpr": 4,
+    "contact": 2,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded_early_reject": 37,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 31.5789,
     "raw_target_met": false,
     "supplemental_discovery_performed": true,
-    "raw_count_note": "Two fresh workers produced 24 and 18 employer-level raw; one explicit cross-worker employer overlap was removed conservatively, yielding 41 verified distinct raw. Same-cycle supplemental web discovery was also performed across fresh production/investment, management-change and partner/business-change sources, but those observations are not added to authoritative raw without complete cross-source employer resolution. Raw<120 remains explicitly disclosed; criteria were not weakened and jobs were not used to inflate volume."
+    "normal_throughput_completion": false,
+    "raw_count_note": "Conservative distinct RUN raw=38 after cross-lane overlap. Fresh growth_news staging (16 raw) and fresh official_owner staging (32 raw) were both consumed; same-cycle canonical supplemental discovery added 14 resolved observations but total raw was not calculated as an arithmetic lane sum because of overlap. Semargl failed the unchanged private-company FAST gate after independent Kalashnikov affiliation verification. Rusbutyral passed the evidence funnel but physical dedup found it already canonical by INN, OGRN, exact legal name and brand+domain. No jobs/catalog padding or result-line inflation."
   },
   "latest_run_lane_efficiency": [
     {
       "lane": "growth_news",
-      "raw": 24,
-      "prequalified_rechecked": 3,
-      "submitted_to_physical_guard": 2,
-      "net_qualified": 1,
-      "physical_duplicates": 1,
-      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
+      "raw": 16,
+      "prequalified_rechecked": 1,
+      "submitted_to_physical_guard": 0,
+      "net_qualified": 0,
+      "physical_duplicates": 0,
+      "next_state": "ROTATE_AWAY_FROM_STATE_LINKED_HIGH_OVERLAP"
     },
     {
       "lane": "official_owner",
-      "raw": 18,
-      "prequalified_rechecked": 3,
+      "raw": 32,
+      "prequalified_rechecked": 1,
       "submitted_to_physical_guard": 1,
       "net_qualified": 0,
       "physical_duplicates": 1,
-      "next_state": "DO_NOT_REPEAT_SATURATED_SAMPLES"
+      "next_state": "DO_NOT_REPEAT_SATURATED_SAMPLE"
+    },
+    {
+      "lane": "canonical_low_overlap_supplemental",
+      "raw": 14,
+      "prequalified_rechecked": 0,
+      "submitted_to_physical_guard": 0,
+      "net_qualified": 0,
+      "physical_duplicates": 0,
+      "next_state": "EXPAND_FRESH_REGIONS_SEGMENTS_NEXT_RUN"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-571",
-      "raw": 37,
-      "fast_gate": 17,
-      "qualified": 1,
-      "qualified_raw_pct": 2.7027,
-      "fast_gate_raw_pct": 45.9459
-    },
     {
       "run_id": "N5K-20260901-571R1",
       "raw": 67,
@@ -85,13 +89,21 @@
       "qualified": 1,
       "qualified_raw_pct": 2.439,
       "fast_gate_raw_pct": 43.9024
+    },
+    {
+      "run_id": "N5K-20260901-573R1",
+      "raw": 38,
+      "fast_gate": 12,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 31.5789
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 0.9465,
-    "net_new_change": 0,
-    "fast_gate_raw_pct_points": 0.6188,
-    "assessment": "Current-hour canonical recovery physically added one net-new, but verified distinct raw remains 41 and therefore below the required 120. Supplemental discovery was performed without weakening criteria; unresolved search observations were not inflated into authoritative raw."
+    "qualified_raw_pct_points": -2.439,
+    "net_new_change": -1,
+    "fast_gate_raw_pct_points": -12.3235,
+    "assessment": "573R1 produced no net-new company. One independently verified candidate was a four-key physical duplicate; another staging candidate failed the unchanged private-company gate. Raw remained 38 despite supplemental lane rotation, so the run is retained only as a low-raw disclosed attempt and not as the latest normal throughput completion."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -103,7 +115,7 @@
     "management_change_commercial_transformation_fresh": 25,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "N5K-20260901-572R1 repaired a missing canonical write after two fresh worker staging commits. Three prequalified candidates were submitted to the existing authoritative physical dedup writer; KCG / ООО «КАРТАС» was physically integrated and two candidates were skipped by physical dedup. Pending cleared after integration.",
+  "fresh_staging": "573R1 consumed the fresh 22:26 growth_news staging and the fresh 22:30 official_owner staging that arrived during the same cycle. Semargl was rejected by canonical recheck; Rusbutyral was submitted to the physical writer and rejected as an existing four-key canonical duplicate. Staged qualified is 0.",
   "repair_required": null,
-  "note": "N5K-20260901-573R1 completed after physical integration: +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-573R1 physically guarded with +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0. LOW RAW 38 explicitly disclosed; latest normal fully completed run remains N5K-20260901-572R1."
 }
