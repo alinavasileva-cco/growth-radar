@@ -7,7 +7,7 @@
   "progress_added": 580,
   "remaining_to_total_target": 4420,
   "remaining": 4420,
-  "remaining_to_1000": 421,
+  "remaining_to_1000": 420,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,81 +17,44 @@
   "current_run_id": "N5K-20260901-572R1",
   "last_run_id": "N5K-20260901-572R1",
   "latest_completed_run": "N5K-20260901-572R1",
-  "canonical_integration_run_id": "N5K-20260901-571R1",
-  "hourly_baseline_count": 577,
-  "hourly_net_new": 2,
+  "canonical_integration_run_id": "N5K-20260901-572R1",
+  "hourly_baseline_count": 579,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260901-571R1",
-    "raw": 67,
-    "fast_gate": 29,
-    "size": 16,
-    "legal": 9,
-    "signal": 6,
-    "lpr": 3,
-    "contact": 3,
+    "run_id": "N5K-20260901-572R1",
+    "raw": 41,
+    "fast_gate": 18,
+    "size": 14,
+    "legal": 12,
+    "signal": 11,
+    "lpr": 8,
+    "contact": 6,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded_early_reject": 65,
-    "qualified_raw_pct": 1.4925,
-    "fast_gate_raw_pct": 43.2836,
+    "duplicates": 4,
+    "excluded_early_reject": 36,
+    "qualified_raw_pct": 2.439,
+    "fast_gate_raw_pct": 43.9024,
     "raw_target_met": false,
     "supplemental_discovery_performed": true,
-    "raw_count_note": "Same-hour conservative employer-level distinct raw increased from 37 to 67: original RUN 571 verified distinct 37 plus 30 fresh low-overlap management/dealer/export/partner/regional-investment observations. Raw<120 remains explicitly disclosed; jobs and weak catalogs were not used to inflate volume."
+    "raw_count_note": "Two fresh workers produced 24 and 18 employer-level raw; one explicit cross-worker employer overlap was removed conservatively, yielding 41 verified distinct raw. Same-cycle supplemental web discovery was also performed across fresh production/investment, management-change and partner/business-change sources, but those observations are not added to authoritative raw without complete cross-source employer resolution. Raw<120 remains explicitly disclosed; criteria were not weakened and jobs were not used to inflate volume."
   },
   "latest_run_lane_efficiency": [
-    {
-      "lane": "carried_from_571_verified_distinct",
-      "raw": 37,
-      "prequalified_rechecked": 2,
-      "submitted_to_physical_guard": 2,
-      "net_qualified": 1,
-      "physical_duplicates": 1,
-      "next_state": "DO_NOT_REPEAT_SATURATED_SAMPLES"
-    },
-    {
-      "lane": "fresh_management_dealer_export_partner_and_regional_investment",
-      "raw": 30,
-      "prequalified_rechecked": 1,
-      "submitted_to_physical_guard": 1,
-      "net_qualified": 1,
-      "physical_duplicates": 0,
-      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
-    }
+    {"lane":"growth_news","raw":24,"prequalified_rechecked":3,"submitted_to_physical_guard":2,"net_qualified":1,"physical_duplicates":1,"next_state":"CONTINUE_FRESH_LOW_OVERLAP"},
+    {"lane":"official_owner","raw":18,"prequalified_rechecked":3,"submitted_to_physical_guard":1,"net_qualified":0,"physical_duplicates":1,"next_state":"DO_NOT_REPEAT_SATURATED_SAMPLES"}
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-570R1",
-      "raw": 69,
-      "fast_gate": 23,
-      "qualified": 2,
-      "qualified_raw_pct": 2.8986,
-      "fast_gate_raw_pct": 33.3333
-    },
-    {
-      "run_id": "N5K-20260901-571",
-      "raw": 37,
-      "fast_gate": 17,
-      "qualified": 1,
-      "qualified_raw_pct": 2.7027,
-      "fast_gate_raw_pct": 45.9459
-    },
-    {
-      "run_id": "N5K-20260901-571R1",
-      "raw": 67,
-      "fast_gate": 29,
-      "qualified": 1,
-      "qualified_raw_pct": 1.4925,
-      "fast_gate_raw_pct": 43.2836
-    }
+    {"run_id":"N5K-20260901-571","raw":37,"fast_gate":17,"qualified":1,"qualified_raw_pct":2.7027,"fast_gate_raw_pct":45.9459},
+    {"run_id":"N5K-20260901-571R1","raw":67,"fast_gate":29,"qualified":1,"qualified_raw_pct":1.4925,"fast_gate_raw_pct":43.2836},
+    {"run_id":"N5K-20260901-572R1","raw":41,"fast_gate":18,"qualified":1,"qualified_raw_pct":2.439,"fast_gate_raw_pct":43.9024}
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -1.2102,
+    "qualified_raw_pct_points": 0.9465,
     "net_new_change": 0,
-    "fast_gate_raw_pct_points": -2.6623,
-    "assessment": "Same-hour recovery increased conservative distinct raw from 37 to 67 and added one further physical net-new. Raw remains below 120; continue fresh low-overlap discovery next cycle without weakening criteria."
+    "fast_gate_raw_pct_points": 0.6188,
+    "assessment": "Current-hour canonical recovery physically added one net-new, but verified distinct raw remains 41 and therefore below the required 120. Supplemental discovery was performed without weakening criteria; unresolved search observations were not inflated into authoritative raw."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -103,7 +66,7 @@
     "management_change_commercial_transformation_fresh": 25,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "N5K-20260901-571R1 performed same-hour supplemental recovery after low-raw RUN 571. Fresh low-overlap management/dealer/export/partner/regional-investment discovery added 30 conservative distinct employer observations. ООО «Современные стекольные технологии» passed legal/signal/LPR/contact checks and authoritative physical dedup, then was integrated. Pending cleared after integration.",
+  "fresh_staging": "N5K-20260901-572R1 repaired a missing canonical write after two fresh worker staging commits. Three prequalified candidates were submitted to the existing authoritative physical dedup writer; KCG / ООО «КАРТАС» was physically integrated and two candidates were skipped by physical dedup. Pending cleared after integration.",
   "repair_required": null,
-  "note": "N5K-20260901-572R1 completed after physical integration: +1 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-572R1 completed after physical integration: +1 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Raw target 120 not met."
 }
