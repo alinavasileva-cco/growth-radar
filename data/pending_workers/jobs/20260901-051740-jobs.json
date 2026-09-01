@@ -1,0 +1,123 @@
+{
+  "worker": "independent_read_discovery",
+  "lane": "jobs",
+  "run_timestamp_msk": "2026-09-01T05:17:40+03:00",
+  "baseline_head": "8c90b04f064cccf5df331ee6a1057ab41509a892",
+  "config_version": "2026-09-01T02:46:00+03:00",
+  "canonical_snapshot": {
+    "master_count": 561,
+    "contactable_count": 561,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0
+  },
+  "mode": "metrics_only",
+  "qualified": [],
+  "qualified_count": 0,
+  "outreach": 0,
+  "canonical_writer_run": false,
+  "canonical_writes": false,
+  "preflight": {
+    "fresh_head_read": true,
+    "current_working_config_read": true,
+    "jobs_tree_requested": true,
+    "all_pending_file_bodies_read": false,
+    "canonical_dedup_keyset_fully_materialized": false,
+    "repo_wide_dedup_complete": false,
+    "pre_stage_head_rechecked": true,
+    "fail_closed": true,
+    "blocker": "The GitHub connector exposed the pending-worker directory and a large immutable jobs tree, but this run could not materialize the body of every historical data/pending_workers/** file together with the full current canonical keyset. A read-only local git clone also failed because github.com DNS resolution was unavailable. Therefore no source observation was allowed to become repo-dedup-confirmed RAW, enter FAST GATE/deep-check, or be staged as QUALIFIED."
+  },
+  "discovery": {
+    "target_distinct_raw": "140-150 if sources support it",
+    "target_reached": false,
+    "repo_dedup_confirmed_raw": 0,
+    "source_level_named_employer_observations_min": 7,
+    "note": "Only explicitly named, fresh-visible employer observations from this run were counted. Search-result rows with no employer identity, stale/archived material, resumes, and obviously irrelevant roles were excluded. The count is not claimed as globally unique after repository dedup.",
+    "batches": [
+      {
+        "batch": "regional_hh_urals_siberia",
+        "sources": ["HH indexed employer/vacancy pages"],
+        "regions": ["Yekaterinburg", "Novosibirsk"],
+        "named_observations": 1,
+        "qualified": 0
+      },
+      {
+        "batch": "regional_hh_volga",
+        "sources": ["HH indexed employer/vacancy pages"],
+        "regions": ["Kazan", "Samara"],
+        "named_observations": 0,
+        "qualified": 0
+      },
+      {
+        "batch": "regional_hh_south",
+        "sources": ["HH indexed employer/vacancy pages"],
+        "regions": ["Krasnodar", "Rostov-on-Don"],
+        "named_observations": 3,
+        "qualified": 0
+      },
+      {
+        "batch": "rabota_ru_fresh_management",
+        "sources": ["Rabota.ru"],
+        "regions": ["Russia", "Moscow"],
+        "named_observations": 3,
+        "qualified": 0
+      },
+      {
+        "batch": "alternative_job_boards",
+        "sources": ["SuperJob", "Habr Career", "GetMatch"],
+        "regions": ["Russia"],
+        "named_observations": 3,
+        "qualified": 0
+      }
+    ],
+    "fresh_examples_not_promoted": [
+      {
+        "employer": "ООО ПОЛИТАКС",
+        "role": "Коммерческий директор / CCO",
+        "source": "Rabota.ru",
+        "freshness_observed": "search page crawled 2026-08-29 to 2026-08-30",
+        "promoted": false
+      },
+      {
+        "employer": "ООО Таун Траст",
+        "role": "Директор по развитию",
+        "source": "Rabota.ru",
+        "freshness_observed": "search page crawled 2026-08-25 to 2026-08-29",
+        "promoted": false
+      },
+      {
+        "employer": "Cloud.ru",
+        "role": "Руководитель направления стратегического и бизнес-консалтинга",
+        "source": "Habr Career",
+        "signal_date": "2026-08-14",
+        "promoted": false
+      },
+      {
+        "employer": "ИТ-компания Лоция",
+        "role": "Руководитель проектов",
+        "source": "Habr Career",
+        "signal_date": "2026-08-16",
+        "promoted": false
+      }
+    ]
+  },
+  "worker_funnel": {
+    "source_level_named_employer_observations_min": 7,
+    "repo_dedup_confirmed_raw": 0,
+    "fast_gate": 0,
+    "deep_check": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "policy": {
+    "criteria_changed": false,
+    "criteria_weakened": false,
+    "stale_records_used_for_decisions": false,
+    "contacts_inferred": false,
+    "outreach_performed": false
+  }
+}
