@@ -7,7 +7,7 @@
   "progress_added": 565,
   "remaining_to_total_target": 4435,
   "remaining": 4435,
-  "remaining_to_1000": 437,
+  "remaining_to_1000": 435,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,39 +17,30 @@
   "current_run_id": "N5K-20260901-559",
   "last_run_id": "N5K-20260901-559",
   "latest_completed_run": "N5K-20260901-559",
-  "canonical_integration_run_id": "N5K-20260901-558",
-  "hourly_baseline_count": 562,
-  "hourly_net_new": 1,
+  "canonical_integration_run_id": "N5K-20260901-559",
+  "hourly_baseline_count": 563,
+  "hourly_net_new": 2,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "raw": 18,
-    "fast_gate": 10,
-    "size": 4,
-    "legal": 3,
-    "signal": 3,
-    "lpr": 1,
-    "contact": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "early_reject": 17,
-    "duplicate_plus_early_reject": 17,
-    "excluded": 17,
-    "qualified_raw_pct": 5.5556,
-    "fast_gate_raw_pct": 55.5556,
-    "duplicate_early_reject_pct": 94.4444
+    "raw": 121,
+    "fast_gate": 41,
+    "size": 17,
+    "legal": 12,
+    "signal": 11,
+    "lpr": 5,
+    "contact": 4,
+    "qualified": 2,
+    "duplicates": 2,
+    "early_reject": 117,
+    "duplicate_plus_early_reject": 119,
+    "excluded": 117,
+    "qualified_raw_pct": 1.6529,
+    "fast_gate_raw_pct": 33.8843,
+    "duplicate_early_reject_pct": 98.3471
   },
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-556R1",
-      "raw": 4,
-      "fast_gate": 4,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 100.0,
-      "duplicate_early_reject_pct": 100.0
-    },
     {
       "run_id": "N5K-20260901-557R1",
       "raw": 8,
@@ -67,22 +58,33 @@
       "qualified_raw_pct": 5.5556,
       "fast_gate_raw_pct": 55.5556,
       "duplicate_early_reject_pct": 94.4444
+    },
+    {
+      "run_id": "N5K-20260901-559",
+      "raw": 121,
+      "fast_gate": 41,
+      "qualified": 2,
+      "qualified_raw_pct": 1.6529,
+      "fast_gate_raw_pct": 33.8843,
+      "duplicate_early_reject_pct": 98.3471
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -6.9444,
-    "fast_gate_raw_pct_points": 5.5556,
-    "net_new_change": 0
+    "qualified_raw_pct_points": -3.9027,
+    "fast_gate_raw_pct_points": -21.6713,
+    "net_new_change": 1
   },
   "next_distribution_pct": {
-    "jobs": 5,
-    "growth_news": 5,
-    "official_owner_ceo": 35,
-    "industry_catalog": 5,
-    "regional_investment": 0,
-    "experimental_low_overlap_business_change": 50
+    "jobs_probe": 5,
+    "growth_news_probe": 5,
+    "official_owner_ceo_probe": 5,
+    "industry_catalog": 0,
+    "regional_investment_new_production": 35,
+    "export_dealer_franchise_expansion": 20,
+    "management_change_commercial_transformation": 15,
+    "partner_business_change": 15
   },
-  "fresh_staging": "N5K-20260901-558 completed a fresh official-owner/business-change discovery cycle. Historical pending tree truncation was not used as a blocker. Candidate-level dedup was repeated on INN, OGRN, exact legal name and brand/domain before staging; one candidate reached QUALIFIED and was physically integrated. Pending integration is cleared.",
+  "fresh_staging": "N5K-20260901-559 consumed the fresh official_owner 10:31 and growth_news 10:29 staging first, then expanded to additional low-overlap source/region batches because the initially normalized distinct raw volume was below 120. Historical pending-tree truncation was not treated as a blocker. Four prewrite candidates were independently checked by canonical keys; physical integration guard then removed two historical duplicates (Группа Теплолюкс and Борус by INN+OGRN) and integrated two net-new companies (ARAVIA and Курский аккумуляторный завод / КАЗ). Pending integration is cleared.",
   "repair_required": null,
-  "note": "N5K-20260901-559 completed after physical integration: +2 net new; canonical/contactable 565/565; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-559 completed after physical integration and postwrite efficiency repair: +2 net new; canonical/contactable 565/565; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
