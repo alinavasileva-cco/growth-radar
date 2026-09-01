@@ -1,0 +1,133 @@
+{
+  "lane": "growth_news",
+  "created_at": "2026-09-01T19:27:32+03:00",
+  "immutable": true,
+  "worker_mode": "READ+DISCOVERY",
+  "canonical_write": false,
+  "outreach": false,
+  "config_source": "CURRENT_WORKING_CONFIG.md",
+  "config_version_seen": "2026-09-01T19:08:00+03:00",
+  "canonical_snapshot": {
+    "physical_master": 575,
+    "physical_contactable": 575,
+    "integrity": "PASS",
+    "source": "data/runtime/current_run_status.json"
+  },
+  "metrics": {
+    "raw_distinct_employer_level": 17,
+    "fast": 7,
+    "size": 5,
+    "legal": 3,
+    "signal": 2,
+    "lpr": 1,
+    "contact": 1,
+    "prequalified_needs_final_global_dedup": 1,
+    "reject": 16,
+    "target_raw_met": false,
+    "quota_padding_used": false
+  },
+  "source_batches": [
+    {"batch":"moscow_region_new_production","raw":4,"notes":"fresh company/region production launches; weak/catalog-only not counted"},
+    {"batch":"volga_new_plants","raw":3,"notes":"fresh launch/expansion signals"},
+    {"batch":"ural_capacity_expansion","raw":3,"notes":"fresh production-capacity signals"},
+    {"batch":"siberia_expansion","raw":2,"notes":"fresh expansion/new capacity signals"},
+    {"batch":"export_business_direction","raw":2,"notes":"company-level export/new-direction signals only"},
+    {"batch":"fresh_official_corporate_news","raw":3,"notes":"official/corporate and high-authority trade/business press"}
+  ],
+  "dedup_policy": {
+    "historical_pending_tree_required": false,
+    "canonical_contactable_checked": true,
+    "compact_runtime_checked": true,
+    "candidate_level_repo_search": ["INN","OGRN/OGRNIP","exact legal name","brand+domain"],
+    "final_global_dedup_owner": "canonical_writer"
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Ивановская Текстильная Компания",
+      "legal_name": "ООО \"ИВАНОВСКАЯ ТЕКСТИЛЬНАЯ КОМПАНИЯ\"",
+      "inn": "3702588935",
+      "ogrn": "1093702014350",
+      "domain": "ivcompany.ru",
+      "size": {
+        "passed": true,
+        "evidence": "Действующее коммерческое юрлицо; публичные данные указывают существенный масштаб, субъект среднего предпринимательства; доходы порядка 1 млрд руб.; официальный сайт указывает производственные активы в нескольких городах России и Самарканде, TOP-30 производителей спецодежды и СИЗ и 400+ ежегодных контрактов.",
+        "urls": [
+          "https://www.audit-it.ru/contragent/1093702014350_ooo-ivanovskaya-tekstilnaya-kompaniya",
+          "https://check.tochka.com/company/1093702014350/",
+          "https://ivcompany.ru/"
+        ]
+      },
+      "legal": {
+        "passed": true,
+        "active": true,
+        "evidence_date": "2026-08-28",
+        "urls": [
+          "https://www.audit-it.ru/contragent/1093702014350_ooo-ivanovskaya-tekstilnaya-kompaniya",
+          "https://check.tochka.com/company/1093702014350/"
+        ]
+      },
+      "signal": {
+        "passed": true,
+        "date": "2026-08-31",
+        "type": "new_production_site",
+        "evidence": "Корпорация МСП сообщила об открытии в Москве современного швейного производства полного цикла Ивановской Текстильной Компании; инвестиции около 255 млн руб., проект профинансирован с участием гарантийной поддержки Корпорации МСП и займа ФРП.",
+        "url": "https://www.corpmsp.ru/about/press/news/novosti-korporatsii/v-moskve-pri-podderzhke-korporatsii-msp-otkryto-novoe-innovatsionnoe-tekstilnoe-proizvodstvo/"
+      },
+      "lpr": {
+        "passed": true,
+        "name": "Шилов Юрий Михайлович",
+        "role": "генеральный директор; учредитель",
+        "urls": [
+          "https://check.tochka.com/company/1093702014350/",
+          "https://reputation.ru/ogrn/1093702014350"
+        ]
+      },
+      "contact": {
+        "passed": true,
+        "route_type": "official_company_contact",
+        "phone": "8 (800) 222-12-53",
+        "email": "mail@ivcompany.ru",
+        "url": "https://ivcompany.ru/"
+      },
+      "dedup_keys": {
+        "inn": "3702588935",
+        "ogrn": "1093702014350",
+        "exact_legal_name": "ООО \"ИВАНОВСКАЯ ТЕКСТИЛЬНАЯ КОМПАНИЯ\"",
+        "brand_domain": "Ивановская Текстильная Компания|ivcompany.ru"
+      },
+      "dedup_checks": {
+        "repo_search_inn": "NO_MATCH",
+        "repo_search_ogrn": "NO_MATCH",
+        "repo_search_exact_legal_name": "NO_MATCH",
+        "repo_search_brand_domain": "NO_MATCH",
+        "final_global_dedup": "PENDING_CANONICAL_WRITER"
+      }
+    },
+    {
+      "status":"REJECT","brand":"Сайбер Электро","reason":"fresh 2026-09-01 production-site signal found, but legal-entity/LPR resolution to the Russian manufacturing entity was not sufficiently verified in this cycle without ambiguity; no downgrade allowed","signal_url":"https://www.cnews.ru/news/line/2026-09-01_dlya_sajber_elektrootkryta"
+    },
+    {
+      "status":"REJECT","brand":"ООО Семаргл / Калашников robotics","reason":"brand/legal-name collision across multiple unrelated ООО Семаргл; exact employer-level legal entity behind the 2026-08-25 robotics plant was not safely resolved in this cycle","signal_url":"https://crp.gov.ru/news/kontsern-kalashnikov-otkryl-zavod-po-proizvodstvu-robotov-v-podmoskove/"
+    },
+    {"status":"REJECT","brand":"ТЕХНОНИКОЛЬ","reason":"strong signal but high-overlap/large well-known group; candidate not advanced in low-overlap worker lane","signal_url":"https://www.tn.ru/about/press/news/tekhnonikol-investiruet-do-50-mlrd-rubley-v-rasshirenie-proizvodstva-i-tsifrovizatsiyu-v-2026-godu/"},
+    {"status":"REJECT","brand":"Победа","reason":"signal older and likely high-overlap; not advanced without fresh low-overlap advantage","signal_url":"https://www.vedomosti.ru/press_releases/2026/01/27/konditerskaya-fabrika-pobeda-vlozhit-2-mlrd-rublei-v-rasshirenie-proizvodstva"},
+    {"status":"REJECT","brand":"ПРЕФАБРИКА АГ","reason":"signal outside preferred freshness edge and no full LPR/contact deep-check performed after higher-priority fresh candidates","signal_url":"https://www.vedomosti.ru/press_releases/2026/02/26/v-podmoskove-zapustyat-zavod-krupnopanelnogo-domostroeniya-za-43-mlrd-rublei"},
+    {"status":"REJECT","brand":"ИРЗ-Фотон","reason":"signal older than higher-priority fresh candidates; not deep-checked to CONTACT in this cycle","signal_url":"https://pcnews.ru/news/v_izevske_zapustila_proizvodstvo_modulej_dla_bazovyh_stancij_sotovoj_svazi_2g_i_4g-1790518.html"},
+    {"status":"REJECT","brand":"SFT Group / Алексинская БКФ","reason":"group-level signal; not resolved to low-overlap employer-level candidate with complete LPR/contact package in this cycle","signal_url":"https://www.interfax-russia.ru/center/news/sft-group-vlozhit-eshche-4-mlrd-rub-v-rasshirenie-proizvodstva-v-tulskoy-oblasti-gubernator"},
+    {"status":"REJECT","brand":"MGC Group / МС Автомотив","reason":"older signal; not advanced after fresh-batch prioritization","signal_url":"https://www.interfax-russia.ru/volga/news/mgc-group-zapustila-proizvodstvo-press-form-dlya-avtomobilestroeniya-v-nizhegorodskoy-oblasti"},
+    {"status":"REJECT","brand":"Регионтранснефть","reason":"project signal found but legal/LPR/contact package not completed in this cycle","signal_url":"https://www.kommersant.ru/doc/8797009"},
+    {"status":"REJECT","brand":"Петровакс Фарм","reason":"strong fresh expansion signal but large/high-overlap company; not advanced in low-overlap lane","signal_url":"https://www.vedomosti.ru/press_releases/2026/08/17/novii-biotehnologicheskii-korpus-petrovaks-farm-vvedut-v-ekspluatatsiyu-osenyu-2026-goda"},
+    {"status":"REJECT","brand":"НЭК / Луч","reason":"project signal strong, but no complete employer-level LPR/contact package completed in this cycle","signal_url":"https://energybase.ru/news/companies/gruppa-nek-sozdast-odin-iz-krupnejsih-v-rossii-zavodov-pecatnyh-plat-2026-07-09"},
+    {"status":"REJECT","brand":"Черкизово","reason":"large/high-overlap group; not advanced in low-overlap worker lane","signal_url":"https://tumen.dk.ru/news/237238103"},
+    {"status":"REJECT","brand":"Сота","reason":"investment size 34 mln rub and scale not proven sufficient before deeper legal/LPR/contact work","signal_url":"https://www.kommersant.ru/doc/8761797"},
+    {"status":"REJECT","brand":"Логика молока","reason":"large/high-overlap group and export agreement signal weaker than production-expansion signals for this lane","signal_url":"https://logikamoloka.ru/press-centr/news/logika-moloka-i-agroeksport-budut-sovmestno-razvivat-eksport-molochnoy-produkcii/"},
+    {"status":"REJECT","brand":"Дамате","reason":"large/high-overlap group; not advanced in low-overlap worker lane","signal_url":"https://ng72.ru/society/5445951-damate-rasshiryaet-proizvodstvo-do-60-rynka-inkubacionnyh-yaic-indeyki"},
+    {"status":"REJECT","brand":"Совитал","reason":"older signal and no full LPR/contact deep-check after freshness prioritization","signal_url":"https://www.tatar-inform.ru/news/minnixanov-v-niznekamske-otkryl-novyi-zavod-po-vypusku-xolodilnogo-oborudovaniya-6017426"}
+  ],
+  "notes": [
+    "Historical pending materialization was not required and did not block discovery.",
+    "No staged/prequalified candidate is counted as added or QUALIFIED.",
+    "Raw target 80-150 was not reached because only distinct employer-level observations with credible fresh business signals were counted; quota was not padded with weak catalogs."
+  ]
+}
