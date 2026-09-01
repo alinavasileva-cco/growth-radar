@@ -1,8 +1,99 @@
 {
-  "run_id": "N5K-20260901-567R1",
-  "updated_at": "2026-09-01T17:04:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260901-567R1 integrated physically; canonical/contactable 572/572; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260901-568R1",
+  "updated_at": "2026-09-01T17:48:06+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 2,
+  "notes": "Same-cycle recovery of N5K-20260901-568 after internal large-file read blocker. Physical canonical/contactable dedup completed through GitHub blob/content reads. GSS Cosmetics and Renewal are absent by INN/OGRN/exact legal/domain. Eltex, Laser Systems and INN 5008060096 are physical duplicates and are not submitted. Conservative discovered=66 counts lane-level employer raw from the three fresh staging batches (29+19+18); independent supplemental wave is not added because global cross-lane distinctness was not safely materialized. Quality criteria unchanged; outreach 0.",
+  "funnel": {
+    "discovered": 66,
+    "fast_gate_passed": 18,
+    "size_check_passed": 9,
+    "legal_match_passed": 7,
+    "signal_confirmed": 7,
+    "lpr_identified": 4,
+    "contact_route_found": 3,
+    "qualified": 2,
+    "duplicates": 4,
+    "excluded": 60
+  },
+  "lane_metrics": [
+    {"lane":"growth_news","raw":29,"note":"fresh immutable staging 20260901-172305-growth-news.json"},
+    {"lane":"official_owner_prior","raw":19,"note":"fresh official-owner staging 20260901-162505-official-owner.json"},
+    {"lane":"official_owner_late","raw":18,"source_observations_reviewed":60,"note":"fresh immutable staging committed at c4178603103f07733d6deae27e6167ef99302923"},
+    {"lane":"independent_low_overlap","raw":null,"note":"supplemental discovery executed; not added to discovered because safe global distinct count was not materialized"}
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0744",
+      "Brand": "GSS Cosmetics",
+      "Legal Name": "ООО «ДЖИЭСЭС КОСМЕТИКС»",
+      "INN": "7709490887",
+      "OGRN/OGRNIP": "1167746411161",
+      "Region": "Москва / Московская область",
+      "City": "Пушкино",
+      "Segment": "контрактное производство косметики / FMCG / упаковка",
+      "Website": "https://gsscosmetics.com/",
+      "Revenue/Scale": ">250 сотрудников по официальному сайту; собственное производство 10 000 м²; мощность до 20 млн единиц продукции в год.",
+      "Signal Level": "S1/S2",
+      "Signal Summary": "10.04.2026 компания запустила собственную линию производства PET-тары на производственном комплексе в Пушкино, расширив вертикальную интеграцию и производственный контур.",
+      "Signal Date": "2026-04-10",
+      "Signal Source": "https://www.retail.ru/rbc/pressreleases/gss-cosmetics-zapustila-sobstvennoe-proizvodstvo-pet-tary/",
+      "Owner": "",
+      "CEO": "Евгения Симакова",
+      "LPR": "Евгения Симакова",
+      "LPR Role": "генеральный директор",
+      "Primary Phone": "+7 800 707-31-06",
+      "Primary Email": "info@gsscosmetics.com",
+      "HH Contact": "",
+      "Contact Form": "https://gsscosmetics.com/contacts",
+      "Contact Type": "official corporate route",
+      "Contact Source": "официальный сайт GSS Cosmetics",
+      "Consulting Hypothesis": "Коммерческая и операционная настройка роста после расширения собственного производственного контура: загрузка мощностей, сегментация B2B-клиентов, pipeline, KPI и экономика продуктовых направлений.",
+      "contacts": [
+        {"value":"+7 800 707-31-06","channel":"phone","type":"official corporate","source":"GSS Cosmetics","url":"https://gsscosmetics.com/contacts","is_lpr":false,"notes":"Официальный телефон компании."},
+        {"value":"info@gsscosmetics.com","channel":"email","type":"official corporate","source":"GSS Cosmetics","url":"https://gsscosmetics.com/contacts","is_lpr":false,"notes":"Официальный email компании."}
+      ],
+      "evidence": [
+        {"type":"LEGAL_SIZE","claim":"ООО «ДЖИЭСЭС КОСМЕТИКС», ИНН 7709490887, ОГРН 1167746411161; официальный сайт указывает производственный комплекс 10 000 м² и более 250 сотрудников.","url":"https://gsscosmetics.com/contacts","source":"GSS Cosmetics"},
+        {"type":"SIGNAL","claim":"10.04.2026 компания сообщила о запуске собственной линии PET-тары на производственном комплексе в Пушкино.","url":"https://www.retail.ru/rbc/pressreleases/gss-cosmetics-zapustila-sobstvennoe-proizvodstvo-pet-tary/","source":"Retail.ru / company press release"},
+        {"type":"LPR_CONTACT","claim":"Евгения Симакова публично подтверждена как генеральный директор; официальный корпоративный телефон и email опубликованы компанией.","url":"https://gsscosmetics.com/contacts","source":"GSS Cosmetics"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-0745",
+      "Brand": "Renewal",
+      "Legal Name": "АО «ПФК ОБНОВЛЕНИЕ»",
+      "INN": "5408151534",
+      "OGRN/OGRNIP": "1025405426826",
+      "Region": "Новосибирская область",
+      "City": "Новосибирск",
+      "Segment": "фармацевтическое производство / FMCG healthcare / B2B+B2C",
+      "Website": "https://www.renewal.ru/",
+      "Revenue/Scale": "Компания сообщала выручку 17,3 млрд ₽ за 2024 год; крупный российский производитель лекарственных средств.",
+      "Signal Level": "S1",
+      "Signal Summary": "27.08.2026 введен новый производственный цех жизненно необходимых лекарственных средств площадью более 18 100 м² и проектной мощностью 100 млн упаковок в год.",
+      "Signal Date": "2026-08-27",
+      "Signal Source": "https://www.kommersant.ru/doc/8909620",
+      "Owner": "",
+      "CEO": "Гречкин Владимир Викторович",
+      "LPR": "Гречкин Владимир Викторович",
+      "LPR Role": "генеральный директор",
+      "Primary Phone": "+7 (383) 340-55-01",
+      "Primary Email": "info@pfk-obnovlenie.ru",
+      "HH Contact": "",
+      "Contact Form": "https://www.renewal.ru/contacts/",
+      "Contact Type": "official corporate route",
+      "Contact Source": "официальный сайт Renewal",
+      "Consulting Hypothesis": "Управленческая и коммерческая настройка масштабирования после ввода крупного нового цеха: загрузка мощностей, P&L, KPI, прогнозирование, каналы продаж и операционные процессы.",
+      "contacts": [
+        {"value":"+7 (383) 340-55-01","channel":"phone","type":"official corporate","source":"Renewal","url":"https://www.renewal.ru/contacts/","is_lpr":false,"notes":"Официальный телефон компании."},
+        {"value":"info@pfk-obnovlenie.ru","channel":"email","type":"official corporate","source":"Renewal","url":"https://www.renewal.ru/contacts/","is_lpr":false,"notes":"Официальный email компании."}
+      ],
+      "evidence": [
+        {"type":"LEGAL_LPR","claim":"АО «ПФК ОБНОВЛЕНИЕ», ИНН 5408151534, ОГРН 1025405426826; генеральный директор Владимир Викторович Гречкин.","url":"https://companies.rbc.ru/id/1025405426826-ao-proizvodstvennaya-farmatsevticheskaya-kompaniya-obnovlenie/","source":"РБК Компании"},
+        {"type":"SIGNAL","claim":"27.08.2026 введен новый производственный цех площадью более 18 100 м² с проектной мощностью 100 млн упаковок лекарств ежегодно.","url":"https://www.kommersant.ru/doc/8909620","source":"Коммерсантъ"},
+        {"type":"CONTACT","claim":"Компания публикует официальный телефон и email приемной.","url":"https://www.renewal.ru/contacts/","source":"Renewal"}
+      ]
+    }
+  ]
 }
