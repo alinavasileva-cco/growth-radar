@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T15:57:48+03:00",
+  "updated_at": "2026-09-01T16:44:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-566",
-  "current_run_id": "N5K-20260901-566",
-  "last_run_id": "N5K-20260901-566",
-  "latest_completed_run": "N5K-20260901-566",
+  "last_completed_run_id": "N5K-20260901-567",
+  "current_run_id": "N5K-20260901-567",
+  "last_run_id": "N5K-20260901-567",
+  "latest_completed_run": "N5K-20260901-567",
   "canonical_integration_run_id": "N5K-20260901-566",
   "hourly_baseline_count": 571,
   "hourly_net_new": 0,
@@ -111,5 +111,5 @@
   },
   "fresh_staging": "At RUN 566 start, the newest official-owner staging had already been consumed by completed RUN 565; no newer worker file existed. Mandatory own discovery rotated across 16 fresh low-overlap source/region batches and produced 41 concrete employer-level observations. The only PREQUALIFIED candidate, МолоПак, was rejected by the final physical dedup on INN 7743513365 and OGRN 1037739986899. Historical pending-tree truncation was not used as a blocker. Exact saturated samples must not be repeated next RUN.",
   "repair_required": null,
-  "note": "N5K-20260901-566 completed after physical integration: +0 net new; canonical/contactable 571/571; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0; raw 41 below target after 16 supplemental low-overlap batches."
+  "note": "N5K-20260901-567 completed after physical integration: +0 net new; canonical/contactable 571/571; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

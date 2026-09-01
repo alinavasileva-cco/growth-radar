@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T15:57:48+03:00",
+  "generated_at": "2026-09-01T16:44:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260901-566",
-  "current_run_id": "N5K-20260901-566",
+  "latest_completed_run_id": "N5K-20260901-567",
+  "current_run_id": "N5K-20260901-567",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 571,
   "contactable_verified": 571,
@@ -14,31 +14,42 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_566": {
-    "raw_discovered": 41,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
+  "run_567": {
+    "raw_discovered": 120,
+    "fast_gate_passed": 7,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
     "qualified": 0,
     "physically_integrated": 0,
-    "duplicates": 1,
-    "excluded": 40,
+    "duplicates": 4,
+    "excluded": 116,
     "lane_metrics": [
       {
-        "lane": "supplemental_low_overlap_discovery",
-        "raw": 41,
-        "fast_gate": 1,
+        "lane": "fresh_worker_staging_recheck",
+        "raw": 19,
+        "fast_gate": 3,
+        "size": 2,
+        "legal": 2,
+        "signal": 2,
+        "lpr": 2,
+        "contact": 2,
+        "prequalified": 2,
+        "note": "Fresh worker staging consumed first. МолоПак was stopped as a physical duplicate; Лалибела Кофе and Битроботикс were independently rechecked against current public evidence and exact canonical keys."
+      },
+      {
+        "lane": "regional_investment_new_production_low_overlap",
+        "raw": 101,
+        "fast_gate": 4,
         "size": 1,
         "legal": 1,
         "signal": 1,
         "lpr": 1,
         "contact": 1,
         "prequalified": 1,
-        "source_batches": 16,
-        "note": "Sixteen fresh low-overlap batches across regional/new production, export/dealer, management/business-change, automation, industrial capacity and partner/business-change. Raw remained below 120 because only concrete employer-level observations were counted; weak, state-heavy, repeated and non-resolved results were not padded."
+        "note": "Supplemental discovery rotated across Moscow region, St Petersburg/Leningrad, Tatarstan, Bashkortostan, Urals, Perm, Samara, Nizhny Novgorod, Novosibirsk, Rostov, Krasnodar, Voronezh, Kaluga, Tula, Vladimir, Yaroslavl, Smolensk, Ivanovo, Udmurtia, Chuvashia and Mordovia. 101 employer-level source observations retained after obvious repeated-result suppression; only ГалВент reached the full funnel in this execution window."
       }
     ]
   }
