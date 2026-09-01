@@ -17,39 +17,30 @@
   "current_run_id": "N5K-20260901-562",
   "last_run_id": "N5K-20260901-562",
   "latest_completed_run": "N5K-20260901-562",
-  "canonical_integration_run_id": "N5K-20260901-561",
-  "hourly_baseline_count": 566,
-  "hourly_net_new": 1,
+  "canonical_integration_run_id": "N5K-20260901-562",
+  "hourly_baseline_count": 567,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "raw": 53,
-    "fast_gate": 17,
-    "size": 8,
-    "legal": 6,
+    "raw": 64,
+    "fast_gate": 21,
+    "size": 10,
+    "legal": 7,
     "signal": 6,
-    "lpr": 3,
-    "contact": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "early_reject": 51,
-    "duplicate_plus_early_reject": 52,
-    "excluded": 51,
-    "qualified_raw_pct": 1.8868,
-    "fast_gate_raw_pct": 32.0755,
-    "duplicate_early_reject_pct": 98.1132
+    "lpr": 4,
+    "contact": 3,
+    "qualified": 0,
+    "duplicates": 3,
+    "early_reject": 61,
+    "duplicate_plus_early_reject": 64,
+    "excluded": 61,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 32.8125,
+    "duplicate_early_reject_pct": 100.0
   },
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-559",
-      "raw": 121,
-      "fast_gate": 41,
-      "qualified": 2,
-      "qualified_raw_pct": 1.6529,
-      "fast_gate_raw_pct": 33.8843,
-      "duplicate_early_reject_pct": 98.3471
-    },
     {
       "run_id": "N5K-20260901-560R1",
       "raw": 38,
@@ -67,12 +58,21 @@
       "qualified_raw_pct": 1.8868,
       "fast_gate_raw_pct": 32.0755,
       "duplicate_early_reject_pct": 98.1132
+    },
+    {
+      "run_id": "N5K-20260901-562",
+      "raw": 64,
+      "fast_gate": 21,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 32.8125,
+      "duplicate_early_reject_pct": 100.0
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -0.7448,
-    "fast_gate_raw_pct_points": 16.286,
-    "net_new_change": 0
+    "qualified_raw_pct_points": -1.8868,
+    "fast_gate_raw_pct_points": 0.737,
+    "net_new_change": -1
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -84,7 +84,7 @@
     "management_change_commercial_transformation_fresh": 30,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "N5K-20260901-561 physically completed at 567/567 with +1 net new and integrity PASS. Same-hour supplemental low-overlap research was triggered because raw=53 is below the 120 threshold and no external technical limitation was documented. No additional candidate was written without fully confirmed eligibility and authoritative dedup; historical pending-tree truncation was not used as a blocker.",
+  "fresh_staging": "N5K-20260901-562 physically completed at 567/567 with +0 net new. Growth-news and official-owner staging produced prequalified candidates, but authoritative physical master dedup rejected NEOROS by INN/OGRN/legal name, GalVent by INN/OGRN, and Tri Tochki Manufacturing was already known canonical. Supplemental discovery rotated across at least eight fresh low-overlap source/region/signal batches; 10 employer-level raw passed identity counting but none passed FAST GATE. Historical pending-tree truncation was not used as a blocker.",
   "repair_required": null,
-  "note": "N5K-20260901-562 completed after physical integration: +0 net new; canonical/contactable 567/567; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-562 physically completed: +0 net new; canonical/contactable 567/567; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0. Post-integration efficiency metadata repaired to NET NEW after physical dedup."
 }
