@@ -1,52 +1,66 @@
 {
-  "run_id": "N5K-20260901-567R1",
+  "run_id": "N5K-20260901-568",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
-  "updated_at": "2026-09-01T17:04:00+03:00",
-  "stage": "COMPLETE",
+  "status": "PARTIAL_TECHNICAL_BLOCK",
+  "updated_at": "2026-09-01T17:28:08+03:00",
+  "stage": "FINAL_PHYSICAL_DEDUP_BLOCKED",
   "new_cycle": {
-    "baseline_count": 571,
+    "baseline_count": 572,
     "target_count": 5000,
     "current_canonical_count": 572,
     "current_contactable_count": 572,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4428
   },
   "funnel": {
-    "discovered": 24,
-    "fast_gate_passed": 6,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded": 22
+    "fresh_growth_staging_distinct_raw": 29,
+    "fresh_growth_staging_prequalified": 3,
+    "fresh_official_owner_distinct_raw": 19,
+    "fresh_official_owner_prequalified": 3,
+    "supplemental_discovery_distinct_employer_hits_resolved": 18,
+    "raw_120_threshold_reached": false,
+    "net_qualified_integrated": 0
   },
-  "lane_metrics": [
+  "candidate_status": [
     {
-      "lane": "supplemental_fresh_regional_investment_new_production",
-      "raw": 24,
-      "fast_gate": 6,
-      "size": 2,
-      "legal": 2,
-      "signal": 2,
-      "lpr": 2,
-      "contact": 2,
-      "prequalified": 2,
-      "note": "Fresh low-overlap recovery after two consecutive low-yield runs. Priority sources: regional new production/investment and fresh business-change; jobs not used. No quality criteria changed."
+      "company": "Eltex / ООО «Предприятие «ЭЛТЕКС»",
+      "inn": "5410108110",
+      "ogrn": "1025403911818",
+      "status": "HOLD_FINAL_PHYSICAL_DEDUP_REQUIRED"
+    },
+    {
+      "company": "Чистая Линия / ООО «Чистая линия»",
+      "inn": "5008060096",
+      "ogrn": "1125047018205",
+      "status": "HOLD_FINAL_PHYSICAL_DEDUP_AND_CONTACT_RECHECK_REQUIRED"
+    },
+    {
+      "company": "МолоПак / ООО «МОЛОПАК»",
+      "inn": "7743513365",
+      "ogrn": "1037739986899",
+      "status": "KNOWN_PHYSICAL_DUPLICATE_FROM_PREVIOUS_CANONICAL_GUARD"
     }
   ],
-  "qualified_companies": [
-    "Биолит"
-  ],
-  "integrity_status": "PASS",
+  "supplemental_discovery": {
+    "lanes": [
+      "fresh_growth_business_change",
+      "regional_investment_new_production",
+      "production_expansion",
+      "management_change",
+      "regional_expansion"
+    ],
+    "jobs_used": false,
+    "weak_catalog_backfill_used": false,
+    "criteria_relaxed": false,
+    "note": "Supplemental discovery was executed after fresh staging. The mandatory raw floor was not honestly reached; irrelevant, state-linked, foreign and duplicate source hits were not counted as distinct employer raw."
+  },
+  "integrity_status": "PASS_PREEXISTING_572_STATE_NOT_MUTATED",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "572_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "572_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "572_DATA_ROWS_PLUS_HEADER_LAST_CONFIRMED; CURRENT_FULL_READ_BLOCKED_BY_CONNECTOR_SIZE_LIMIT",
+  "physical_contactable_state": "572_DATA_ROWS_PLUS_HEADER_LAST_CONFIRMED; NOT_MUTATED_THIS_CYCLE",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "GitHub connector refuses full physical leads_master read due file size; code search is not accepted as final dedup because previous physical guard proved false-negative code-search results. Final exact dedup for held candidates therefore remains unproven and no canonical integration was attempted.",
+  "report": "reports/N5K-20260901-568_partial.md"
 }
