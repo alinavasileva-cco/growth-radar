@@ -1,0 +1,125 @@
+{
+  "lane": "official_owner",
+  "created_at": "2026-09-02T02:27:37+03:00",
+  "mode": "READ+DISCOVERY",
+  "config_snapshot": {
+    "source": "CURRENT_WORKING_CONFIG.md",
+    "version": "2026-09-02T01:34:00+03:00",
+    "physical_canonical": 585,
+    "physical_contactable": 585,
+    "integrity": "PASS",
+    "outreach": 0
+  },
+  "immutability": {
+    "canonical_master_modified": false,
+    "contactable_master_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false,
+    "outreach_performed": false
+  },
+  "funnel": {
+    "source_level_observations": 44,
+    "distinct_employer_level_raw": 18,
+    "size_pass": 7,
+    "legal_pass": 5,
+    "signal_pass": 4,
+    "lpr_pass": 3,
+    "contact_pass": 1,
+    "prequalified_needs_final_global_dedup": 1,
+    "worker_net_qualified": 0
+  },
+  "source_batch_metrics": [
+    {"batch":"Moscow-region fresh production launches","source_level_observations":8,"distinct_employers":4,"duplicate_plus_early_reject":4,"qualified":1},
+    {"batch":"Northwest manufacturing expansion","source_level_observations":8,"distinct_employers":3,"duplicate_plus_early_reject":5,"qualified":0},
+    {"batch":"Central Russia automation/new lines","source_level_observations":7,"distinct_employers":3,"duplicate_plus_early_reject":4,"qualified":0},
+    {"batch":"Volga-region production growth","source_level_observations":7,"distinct_employers":3,"duplicate_plus_early_reject":4,"qualified":0},
+    {"batch":"Regional branch/retail expansion","source_level_observations":7,"distinct_employers":3,"duplicate_plus_early_reject":4,"qualified":0},
+    {"batch":"Export/localization/new capacity signals","source_level_observations":7,"distinct_employers":2,"duplicate_plus_early_reject":5,"qualified":0}
+  ],
+  "dedup_policy": {
+    "historical_pending_full_tree_required": false,
+    "physical_canonical_snapshot_checked": true,
+    "candidate_level_repo_search_required": true,
+    "final_global_dedup_owner": "canonical_writer"
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Турбокомплект",
+      "legal_name": "АО \"ТУРБОКОМПЛЕКТ\"",
+      "inn": "5037044130",
+      "ogrn": "1025004860638",
+      "domain": "kamturbo.ru",
+      "region": "Московская область, Протвино",
+      "size": {
+        "evidence": "действующее промышленное предприятие; открытый источник показывает доход около 504,1 млн руб.; официальный сайт описывает специализированный научно-производственный комплекс",
+        "urls": [
+          "https://kamturbo.ru/",
+          "https://zachestnyibiznes.ru/company/ul/1025004860638_5037044130_AO-TURBOKOMPLEKT"
+        ]
+      },
+      "legal": {
+        "active": true,
+        "private_property_code": "OKFS 16",
+        "lpr": "Барбалат Алексей Васильевич",
+        "lpr_role": "Генеральный директор",
+        "urls": [
+          "https://companies.rbc.ru/id/1025004860638-ao-turbokomplekt/",
+          "https://www.tbank.ru/business/contractor/legal/1025004860638/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-27",
+        "description": "Открыт новый производственный корпус; инвестиции 1,8 млрд руб.; выпуск турбокомпрессоров должен вырасти с 46 тыс. до 90 тыс. в год, создан полный технологический цикл и снижена импортозависимость.",
+        "urls": [
+          "https://news.drom.ru/103541.html",
+          "https://monocle.ru/2026/08/27/v-podmoskove-za-schet-zayma-frp-organizovali-polniy-tsikl-proizvodstva-turbokompressorov-dlya-spetstekhniki/"
+        ]
+      },
+      "contact": {
+        "route": "приемная / корпоративный email",
+        "phone": "8 (4967) 31-06-79",
+        "email": "turbo@kamturbo.ru",
+        "published_on_official_site": true,
+        "url": "https://kamturbo.ru/"
+      },
+      "dedup_checks": [
+        {"key":"INN 5037044130","repo_search_match":false},
+        {"key":"OGRN 1025004860638","repo_search_match":false},
+        {"key":"ТУРБОКОМПЛЕКТ + kamturbo.ru","repo_search_match":false}
+      ],
+      "worker_note": "Не считается добавленной компанией. Требуется физический финальный global dedup canonical writer по canonical/contactable и доступным pending/index данным."
+    },
+    {
+      "status": "REJECT",
+      "brand": "LAB Industries",
+      "legal_name": "ООО \"ЛАБ ИНДАСТРИЗ\"",
+      "inn": "7702691545",
+      "ogrn": "5087746653760",
+      "reject_stage": "LEGAL",
+      "reason": "Открытые реестровые данные указывают иностранное юридическое лицо среди учредителей; не подтверждено соответствие требованию российской частной компании без неоднозначности собственности.",
+      "evidence_urls": ["https://companies.rbc.ru/id/5087746653760-ooo-henkel-rus/"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "СОНУМ / Авенсон",
+      "legal_name": "ООО \"АВЕНСОН\"",
+      "inn": "3702690456",
+      "ogrn": "1133702001894",
+      "reject_stage": "CONTACT",
+      "reason": "SIZE/LEGAL/SIGNAL/LPR подтверждаются, но официальный сайт SONUM в футере и опубликованном маршруте связи указывает другое юрлицо (ООО \"Интрейд\"); без дополнительного доказательства нельзя приписывать этот контактный маршрут ООО \"Авенсон\".",
+      "evidence_urls": [
+        "https://firmoteka.ru/3702690456",
+        "https://i3vestno.ru/news/2026/05/20/ivanovskaya_kompaniya_avenson_narastit_vypusk_matrasov_i_krovatey_do_100_000_v_god",
+        "https://ivanovo.sonum.ru/about/o-proizvodstve/"
+      ]
+    }
+  ],
+  "notes": [
+    "Критерии CURRENT_WORKING_CONFIG не менялись и не ослаблялись.",
+    "Исторический data/pending_workers/** не материализовывался целиком и не блокировал discovery.",
+    "Цель 70-130 distinct employer-level raw в этом цикле не достигнута: доступная свежая выдача быстро концентрировалась на крупных/high-overlap группах и повторных публикациях; слабым каталогом raw не добивался.",
+    "Статус QUALIFIED worker не присваивает."
+  ]
+}
