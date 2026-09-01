@@ -1,0 +1,98 @@
+{
+  "lane": "jobs",
+  "mode": "READ+DISCOVERY",
+  "created_at": "2026-09-01T03:22:18+03:00",
+  "baseline_head": "b4b2fd3141a86002abd2600e5d4ef35cf368be02",
+  "working_config_version": "2026-09-01T02:46:00+03:00",
+  "criteria_changed": false,
+  "canonical_write_performed": false,
+  "canonical_writer_started": false,
+  "outreach_performed": false,
+  "preflight": {
+    "current_working_config_read": true,
+    "canonical_count_confirmed_from_working_config": "561/561",
+    "pending_root_read": true,
+    "jobs_tree_listing_requested": true,
+    "all_pending_file_bodies_read": false,
+    "canonical_dedup_keyset_fully_materialized": false,
+    "pre_staging_head_rechecked": true,
+    "pre_staging_head": "b4b2fd3141a86002abd2600e5d4ef35cf368be02",
+    "reason": "The GitHub connector exposed the pending root and a large jobs tree, but this run could not verify body-level reading of every historical data/pending_workers/** file or fully materialize the canonical+pending dedup keyset across Lead ID, INN, OGRN/OGRNIP, exact legal name and confirmed brand+domain. Per fail-closed worker rules, no source observation was promoted to FAST GATE, deep-check or QUALIFIED."
+  },
+  "discovery": {
+    "target_distinct_raw": "140-150 if sources genuinely allow",
+    "source_region_batches": [
+      {
+        "batch": "Ural / HH",
+        "queries": ["commercial director", "development director", "sales director"],
+        "regions": ["Ekaterinburg"],
+        "source_level_observations_min": 5
+      },
+      {
+        "batch": "Siberia / HH",
+        "queries": ["commercial director", "development director", "sales director"],
+        "regions": ["Novosibirsk"],
+        "source_level_observations_min": 3
+      },
+      {
+        "batch": "Volga / HH",
+        "queries": ["commercial director", "development director", "sales director", "business development director"],
+        "regions": ["Kazan"],
+        "source_level_observations_min": 4
+      },
+      {
+        "batch": "South / job-board search",
+        "queries": ["commercial director", "development director", "sales director"],
+        "regions": ["Krasnodar", "Rostov-on-Don"],
+        "source_level_observations_min": 4
+      },
+      {
+        "batch": "Alternative job boards",
+        "queries": ["SuperJob", "Rabota.ru", "Habr Career", "GetMatch"],
+        "regions": ["multi-region"],
+        "source_level_observations_min": 4
+      }
+    ],
+    "source_level_observations_min_total": 20,
+    "repo_dedup_confirmed_raw": 0,
+    "duplicate_plus_early_reject_rate": null,
+    "note": "Counts are conservative source-level observations only. They are not represented as repo-wide unique employers because the mandatory complete pending/canonical dedup preflight could not be confirmed. The 140-150 target was not fabricated."
+  },
+  "fresh_signals_observed_not_promoted": [
+    {
+      "employer": "Уральский электромеханический завод",
+      "signal": "Commercial Director vacancy visible in HH Ekaterinburg results crawled 2026-08-31/2026-09-01",
+      "source": "https://ekaterinburg.hh.ru/vacancies/kommercheskiy_direktor/za_poslednie_tri_dnya"
+    },
+    {
+      "employer": "ООО ТЕХБЕТОН",
+      "signal": "Head of own-brand development vacancy visible in HH Ekaterinburg results",
+      "source": "https://ekaterinburg.hh.ru/vacancies/kommercheskiy_direktor/za_poslednie_tri_dnya"
+    },
+    {
+      "employer": "ООО РСТ Энерго",
+      "signal": "Head of Sales vacancy visible in HH Ekaterinburg development/sales results",
+      "source": "https://ekaterinburg.hh.ru/vacancies/direktor-po-prodazham-i-razvitiyu"
+    },
+    {
+      "employer": "ООО Айона Эстейт",
+      "signal": "Director of Infrastructure Development vacancy visible in fresh HH results",
+      "source": "https://hh.ru/vacancies/direktor_po_razvitiyu_biznesa/ot_pryamih_rabotodateley"
+    }
+  ],
+  "worker_funnel": {
+    "source_level_observations_min": 20,
+    "repo_dedup_confirmed_raw": 0,
+    "fast_gate": 0,
+    "deep_check": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
+    "qualified": 0
+  },
+  "qualified": [],
+  "staging_type": "metrics-only",
+  "false_progress": false
+}
