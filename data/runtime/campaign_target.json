@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T22:43:00+03:00",
+  "updated_at": "2026-09-01T22:48:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-573",
-  "current_run_id": "N5K-20260901-573",
-  "last_run_id": "N5K-20260901-573",
-  "latest_completed_run": "N5K-20260901-573",
+  "last_completed_run_id": "N5K-20260901-573R1",
+  "current_run_id": "N5K-20260901-573R1",
+  "last_run_id": "N5K-20260901-573R1",
+  "latest_completed_run": "N5K-20260901-573R1",
   "canonical_integration_run_id": "N5K-20260901-572R1",
   "hourly_baseline_count": 579,
   "hourly_net_new": 1,
@@ -105,5 +105,5 @@
   },
   "fresh_staging": "N5K-20260901-572R1 repaired a missing canonical write after two fresh worker staging commits. Three prequalified candidates were submitted to the existing authoritative physical dedup writer; KCG / ООО «КАРТАС» was physically integrated and two candidates were skipped by physical dedup. Pending cleared after integration.",
   "repair_required": null,
-  "note": "N5K-20260901-573 completed after physical integration: +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-573R1 completed after physical integration: +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
