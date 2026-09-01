@@ -1,63 +1,66 @@
 {
-  "run_id": "N5K-20260901-564",
+  "run_id": "N5K-20260901-565",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-01T14:42:53+03:00",
+  "updated_at": "2026-09-01T15:40:59+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 569,
     "target_count": 5000,
-    "current_canonical_count": 569,
-    "current_contactable_count": 569,
-    "progress_added": 0,
-    "remaining": 4431
+    "current_canonical_count": 571,
+    "current_contactable_count": 571,
+    "progress_added": 2,
+    "remaining": 4429
   },
   "funnel": {
-    "discovered": 32,
-    "fast_gate_passed": 7,
-    "size_check_passed": 7,
-    "legal_match_passed": 6,
-    "signal_confirmed": 5,
-    "lpr_identified": 4,
-    "contact_route_found": 3,
-    "qualified": 0,
-    "duplicates": 3,
-    "excluded": 29
+    "discovered": 66,
+    "fast_gate_passed": 17,
+    "size_check_passed": 10,
+    "legal_match_passed": 8,
+    "signal_confirmed": 7,
+    "lpr_identified": 6,
+    "contact_route_found": 5,
+    "qualified": 2,
+    "duplicates": 1,
+    "excluded": 63
   },
   "lane_metrics": [
     {
       "lane": "official_owner_worker",
-      "raw": 12,
-      "fast_gate": null,
-      "size": 6,
+      "raw": 46,
+      "fast_gate": 14,
+      "size": 7,
       "legal": 5,
       "signal": 4,
       "lpr": 3,
       "contact": 2,
       "prequalified": 2,
-      "note": "Worker did not persist exact FAST count; it is not reconstructed."
+      "source_batches": 7
     },
     {
       "lane": "supplemental_low_overlap_discovery",
       "raw": 20,
-      "fast_gate": 1,
-      "size": 1,
-      "legal": 1,
-      "signal": 1,
-      "lpr": 1,
-      "contact": 1,
+      "fast_gate": 3,
+      "size": 3,
+      "legal": 3,
+      "signal": 3,
+      "lpr": 3,
+      "contact": 3,
       "prequalified": 1,
       "source_batches": 8,
-      "note": "Eight fresh low-overlap search batches across production launch/expansion, export/dealer, management change and commercial transformation. Only concrete employer-level observations were counted."
+      "note": "Fresh batches: management change, regional/new production, export/dealer, automation/robotization, food/FMCG capacity, industrial components, logistics expansion, partner/business-change. Weak or state-heavy observations were not padded into raw."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Лалибела Кофе",
+    "Русбутираль"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "569_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "569_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "571_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "571_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
