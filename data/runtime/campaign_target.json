@@ -11,90 +11,78 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-01T23:52:00+03:00",
+  "updated_at": "2026-09-01T23:58:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260901-574R1",
-  "current_run_id": "N5K-20260901-574R1",
-  "last_run_id": "N5K-20260901-574R1",
-  "latest_completed_run": "N5K-20260901-574R1",
-  "latest_attempted_run": "N5K-20260901-573R2",
+  "last_completed_run_id": "N5K-20260901-574R2",
+  "current_run_id": "N5K-20260901-574R2",
+  "last_run_id": "N5K-20260901-574R2",
+  "latest_completed_run": "N5K-20260901-574R2",
+  "latest_attempted_run": "N5K-20260901-574R2",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260901-573R2",
+  "canonical_integration_run_id": "N5K-20260901-574R1",
   "hourly_baseline_count": 580,
   "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260901-573R2",
-    "raw": 63,
-    "fast_gate": 18,
-    "size": 12,
-    "legal": 10,
-    "signal": 9,
-    "lpr": 6,
-    "contact": 4,
+    "run_id": "N5K-20260901-574R2",
+    "raw": 56,
+    "fast_gate": 21,
+    "size": 14,
+    "legal": 9,
+    "signal": 8,
+    "lpr": 5,
+    "contact": 3,
     "qualified": 0,
     "duplicates": 3,
-    "excluded_early_reject": 61,
+    "excluded_early_reject": 56,
     "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 28.5714,
+    "fast_gate_raw_pct": 37.5,
     "raw_target_met": false,
     "supplemental_discovery_performed": true,
     "normal_throughput_completion": false,
-    "raw_count_note": "Same-hour recovery increased conservative employer-level raw from 38 to 63. Two fresh S1 production-expansion candidates passed the evidence funnel but the authoritative physical writer found both already canonical: Мосэлектрощит by INN, OGRN, legal name and brand+domain; Фабрика Вентиляции ГалВент by INN and OGRN. Raw remains below 120; criteria were not weakened and jobs were not used to inflate volume."
+    "raw_count_note": "Current-hour fresh worker staging contributed 33 conservative distinct employers. Supplemental low-overlap recovery added 23 additional distinct employer observations across management/business change, regional investment/new production, partner change and franchise/export themes. Total conservative raw=56. Three worker candidates reached physical guard and all were existing canonical duplicates. No jobs padding or weakened gates."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "prior_573R1_conservative_distinct",
-      "raw": 38,
-      "prequalified_rechecked": 2,
-      "submitted_to_physical_guard": 0,
+      "lane": "fresh_growth_news_2327",
+      "raw": 18,
+      "prequalified_rechecked": 1,
+      "submitted_to_physical_guard": 1,
       "net_qualified": 0,
       "physical_duplicates": 1,
-      "next_state": "DO_NOT_REPEAT_SATURATED_SAMPLES"
+      "next_state": "DO_NOT_REPEAT_SATURATED_SAMPLE"
     },
     {
-      "lane": "fresh_regional_production_and_investment_recovery",
-      "raw": 25,
-      "prequalified_rechecked": 4,
+      "lane": "fresh_official_owner_2336",
+      "raw": 15,
+      "prequalified_rechecked": 2,
       "submitted_to_physical_guard": 2,
       "net_qualified": 0,
       "physical_duplicates": 2,
-      "next_state": "ROTATE_TO_FRESH_EXPORT_DEALER_FRANCHISE_AND_MANAGEMENT_CHANGE"
+      "next_state": "ROTATE_AWAY_FROM_RECENT_MOSCOW_PRODUCTION_SAMPLE"
+    },
+    {
+      "lane": "supplemental_fresh_business_change_production_partner_management",
+      "raw": 23,
+      "prequalified_rechecked": 0,
+      "submitted_to_physical_guard": 0,
+      "net_qualified": 0,
+      "physical_duplicates": 0,
+      "next_state": "CONTINUE_FRESH_LOW_OVERLAP_EXPORT_DEALER_FRANCHISE_AND_REGIONAL_SOURCES"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-571R1",
-      "raw": 67,
-      "fast_gate": 29,
-      "qualified": 1,
-      "qualified_raw_pct": 1.4925,
-      "fast_gate_raw_pct": 43.2836
-    },
-    {
-      "run_id": "N5K-20260901-572R1",
-      "raw": 41,
-      "fast_gate": 18,
-      "qualified": 1,
-      "qualified_raw_pct": 2.439,
-      "fast_gate_raw_pct": 43.9024
-    },
-    {
-      "run_id": "N5K-20260901-573R2",
-      "raw": 63,
-      "fast_gate": 18,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 28.5714
-    }
+    {"run_id":"N5K-20260901-572R1","raw":41,"fast_gate":18,"qualified":1,"qualified_raw_pct":2.439,"fast_gate_raw_pct":43.9024},
+    {"run_id":"N5K-20260901-573R2","raw":63,"fast_gate":18,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":28.5714},
+    {"run_id":"N5K-20260901-574R2","raw":56,"fast_gate":21,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":37.5}
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -2.439,
-    "net_new_change": -1,
-    "fast_gate_raw_pct_points": -15.331,
-    "assessment": "573R2 materially expanded same-hour low-overlap discovery but still remained below raw 120. Both newly deep-qualified S1 candidates were rejected only by the authoritative physical dedup writer as existing canonical entities; no new physical rows were added."
+    "qualified_raw_pct_points": 0.0,
+    "net_new_change": 0,
+    "fast_gate_raw_pct_points": 8.9286,
+    "assessment": "574R2 remained below raw 120 despite same-hour supplemental recovery. All three fully prequalified worker candidates were existing physical canonical entities; supplemental discovery produced no further candidate that satisfied all unchanged gates through CONTACT."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -102,11 +90,11 @@
     "official_owner_ceo_probe": 5,
     "industry_catalog": 0,
     "regional_investment_new_production_fresh": 20,
-    "export_dealer_franchise_expansion_fresh": 25,
-    "management_change_commercial_transformation_fresh": 25,
+    "export_dealer_franchise_expansion_fresh": 30,
+    "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 20
   },
-  "fresh_staging": "573R2 completed same-hour supplemental recovery. Two fresh S1 production-expansion candidates were submitted to the existing physical writer and both were skipped as existing canonical duplicates. Pending cleared after integration; staged qualified 0.",
-  "repair_required": "LOW_RAW_63_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "note": "N5K-20260901-574R1 completed after physical integration: +0 net new; canonical/contactable 580/580; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "fresh_staging": "574R1 canonical writer consumed the two fresh worker stagings and found all three candidates already canonical. 574R2 then performed supplemental low-overlap discovery; no additional fully qualified candidate remained to justify another canonical writer. Pending/staged remain zero.",
+  "repair_required": "LOW_RAW_56_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
+  "note": "N5K-20260901-574R2 synchronized: canonical/contactable 580/580; hourly net-new 0; integrity PASS; orphan 0/0; staged 0; active WIP 0; outreach 0. Canonical integration owner for this hour remains 574R1 because 574R2 produced no qualified rows and therefore did not create a redundant writer."
 }
