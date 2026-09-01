@@ -7,7 +7,7 @@
   "progress_added": 562,
   "remaining_to_total_target": 4438,
   "remaining": 4438,
-  "remaining_to_1000": 439,
+  "remaining_to_1000": 438,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,39 +17,30 @@
   "current_run_id": "N5K-20260901-557R1",
   "last_run_id": "N5K-20260901-557R1",
   "latest_completed_run": "N5K-20260901-557R1",
-  "canonical_integration_run_id": "N5K-20260901-556R1",
+  "canonical_integration_run_id": "N5K-20260901-557R1",
   "hourly_baseline_count": 561,
-  "hourly_net_new": 0,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "raw": 4,
+    "raw": 8,
     "fast_gate": 4,
-    "size": 3,
-    "legal": 3,
-    "signal": 3,
-    "lpr": 3,
+    "size": 2,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
     "contact": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "early_reject": 3,
-    "duplicate_plus_early_reject": 4,
-    "excluded": 3,
-    "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 100.0,
-    "duplicate_early_reject_pct": 100.0
+    "qualified": 1,
+    "duplicates": 0,
+    "early_reject": 7,
+    "duplicate_plus_early_reject": 7,
+    "excluded": 7,
+    "qualified_raw_pct": 12.5,
+    "fast_gate_raw_pct": 50.0,
+    "duplicate_early_reject_pct": 87.5
   },
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260901-555R1",
-      "raw": 6,
-      "fast_gate": 2,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 33.3333,
-      "duplicate_early_reject_pct": 100.0
-    },
     {
       "run_id": "N5K-20260901-555R2",
       "raw": 7,
@@ -67,12 +58,21 @@
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 100.0,
       "duplicate_early_reject_pct": 100.0
+    },
+    {
+      "run_id": "N5K-20260901-557R1",
+      "raw": 8,
+      "fast_gate": 4,
+      "qualified": 1,
+      "qualified_raw_pct": 12.5,
+      "fast_gate_raw_pct": 50.0,
+      "duplicate_early_reject_pct": 87.5
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 0.0,
-    "fast_gate_raw_pct_points": 57.1429,
-    "net_new_change": 0
+    "qualified_raw_pct_points": 12.5,
+    "fast_gate_raw_pct_points": -50.0,
+    "net_new_change": 1
   },
   "next_distribution_pct": {
     "jobs": 5,
@@ -82,7 +82,7 @@
     "regional_investment": 0,
     "experimental_low_overlap_business_change": 50
   },
-  "fresh_staging": "Worker data/pending_workers/jobs/20260901-072530-jobs.json was fail-closed with zero repo-dedup-confirmed raw and is consumed by recovery N5K-20260901-556R1. Recovery deep-checked low-overlap fresh production/expansion candidates. BROX reached prewrite QUALIFIED but physical canonical guard rejected it by INN+OGRN+LEGAL_NAME. No duplicate was written; pending integration is cleared.",
+  "fresh_staging": "Fresh jobs worker data/pending_workers/jobs/20260901-082200-jobs.json failed closed before discovery because it could not materialize the full historical canonical+pending dedup keyset. Recovery N5K-20260901-557R1 continued discovery via fresh regional-investment and expansion lanes, screened 8 distinct employer-level candidates, qualified ЭкоПромСтрой-Алга, and canonical integration physically added it as N5K-0728. Worker is consumed by the recovery run; pending integration is cleared.",
   "repair_required": null,
-  "note": "N5K-20260901-557R1 completed after physical integration: +1 net new; canonical/contactable 562/562; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260901-557R1 final physical state: +1 net new; canonical/contactable 562/562; raw 8, fast_gate 4, size 2, legal 1, signal 1, LPR 1, contact 1, qualified 1; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
