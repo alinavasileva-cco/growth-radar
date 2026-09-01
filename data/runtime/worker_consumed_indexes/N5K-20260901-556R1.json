@@ -1,0 +1,14 @@
+{
+  "run_id": "N5K-20260901-556R1",
+  "updated_at": "2026-09-01T07:52:00+03:00",
+  "campaign_id": "new_5000",
+  "consumed": [
+    {
+      "path": "data/pending_workers/jobs/20260901-072530-jobs.json",
+      "blob_sha": "d74628a42f0a5a3e66141576721c50c6c36add87",
+      "consumed_by_run": "N5K-20260901-556R1",
+      "result": "CONSUMED_FAIL_CLOSED_ZERO_RAW",
+      "note": "Worker preflight could not fully materialize canonical+all-pending dedup and intentionally produced 0 repo-dedup-confirmed raw and 0 qualified. Recovery resumed via fresh low-overlap discovery and canonical physical integration guard; BROX prewrite candidate was rejected as an existing canonical by INN+OGRN+LEGAL_NAME. No outreach."
+    }
+  ]
+}
