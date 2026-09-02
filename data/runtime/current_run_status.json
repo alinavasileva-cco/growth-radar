@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260902-581",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "updated_at": "2026-09-02T06:24:25+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
@@ -31,7 +31,9 @@
       "duplicates_plus_early_rejects": 24,
       "prequalified_rechecked": 2,
       "submitted_to_physical_guard": 2,
-      "notes": "Fresh immutable worker batch. Eltex and Raketa independently rechecked by canonical writer; no worker candidate is treated as net QUALIFIED before physical guard."
+      "net_qualified": 1,
+      "physical_duplicates": 1,
+      "notes": "Fresh immutable worker batch; Eltex and Raketa independently rechecked by canonical writer."
     },
     {
       "lane": "canonical_low_overlap_supplemental_discovery",
@@ -39,16 +41,24 @@
       "duplicates_plus_early_rejects": 22,
       "prequalified_rechecked": 0,
       "submitted_to_physical_guard": 0,
-      "notes": "Fresh regional production/investment, dealer/franchise/export expansion and management/business-change discovery. Only resolved distinct named employers counted; search-result rows were not padded into raw."
+      "net_qualified": 0,
+      "physical_duplicates": 0,
+      "notes": "Fresh regional production/investment, dealer/franchise/export expansion and management/business-change discovery. Only resolved distinct named employers counted; no search-row padding."
     }
   ],
-  "qualified_companies": [
-    "Ракета"
-  ],
+  "qualified_companies": ["Ракета"],
+  "physical_duplicate_companies": ["Элтекс"],
+  "raw_target_met": false,
+  "minimum_raw_floor_met": false,
+  "preferred_config_raw_target_met": false,
+  "supplemental_discovery_performed": true,
+  "normal_throughput_completion": false,
+  "raw_count_note": "48 conservatively resolved distinct employer-level raw. Fresh staging was consumed first, then mandatory low-overlap supplemental discovery was performed. The normal 120 raw floor and CURRENT_WORKING_CONFIG preferred continuation target >=300 were not reached without padding search-result rows or weakening criteria.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "594_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "594_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
