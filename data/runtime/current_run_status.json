@@ -1,38 +1,38 @@
 {
   "run_id": "N5K-20260902-588R1",
   "campaign_id": "new_5000",
-  "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-02T18:51:00+03:00",
-  "stage": "RECOVERY_REQUIRED",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T18:55:00+03:00",
+  "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 601,
+    "baseline_count": 602,
     "target_count": 5000,
-    "current_canonical_count": 602,
-    "current_contactable_count": 602,
-    "progress_added": 1,
-    "remaining": 4398
+    "current_canonical_count": 604,
+    "current_contactable_count": 604,
+    "progress_added": 2,
+    "remaining": 4396
   },
   "funnel": {
-    "raw_distinct": 33,
-    "discovered": 33,
-    "fast_gate_passed": 5,
-    "size_check_passed": 5,
-    "legal_match_passed": 5,
-    "signal_confirmed": 5,
-    "lpr_identified": 5,
-    "contact_route_found": 5,
-    "qualified": 1,
-    "duplicates": 5,
-    "excluded": 28
+    "raw_distinct": 305,
+    "discovered": 305,
+    "fast_gate_passed": 9,
+    "size_check_passed": 9,
+    "legal_match_passed": 9,
+    "signal_confirmed": 9,
+    "lpr_identified": 9,
+    "contact_route_found": 9,
+    "qualified": 2,
+    "duplicates": 7,
+    "excluded": 296
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 33,
+    "raw_distinct": 305,
     "external_technical_limitation_proven": false,
-    "passed": false,
+    "passed": true,
     "preferred_continue_until_raw": 300,
-    "hard_floor_passed": false,
-    "preferred_throughput_passed": false
+    "hard_floor_passed": true,
+    "preferred_throughput_passed": true
   },
   "lane_metrics": [
     {
@@ -106,17 +106,32 @@
       "raw": 1,
       "duplicates_early_rejects": 0,
       "qualified": 1
+    },
+    {
+      "lane": "management_productivity_current_participants",
+      "raw": 229,
+      "duplicates_early_rejects": 229,
+      "qualified": 0,
+      "note": "Broad S3 probe stopped because company-level freshness/contact evidence was insufficient for qualification in this pass."
+    },
+    {
+      "lane": "fresh_industrial_export_logistics_supplemental",
+      "raw": 43,
+      "duplicates_early_rejects": 39,
+      "qualified": 4,
+      "note": "Fresh 2026 capacity, production, export and logistics signals; four passed full legal/size/signal/LPR/contact verification."
     }
   ],
   "qualified_companies": [
-    "Фабрика дверей Гармония"
+    "Титан-Полимер",
+    "РУСТАРК"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "602_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "602_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "604_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "604_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
+  "blocker": null
 }
