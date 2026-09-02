@@ -1,7 +1,7 @@
 {
-  "run_id": "N5K-20260902-579R1",
+  "run_id": "N5K-20260902-579R2",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
   "updated_at": "2026-09-02T04:35:21+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
@@ -17,10 +17,10 @@
     "current_canonical_count": 591,
     "current_contactable_count": 591,
     "net_new": 2,
-    "raw": 120
+    "raw": 168
   },
   "funnel": {
-    "discovered": 120,
+    "discovered": 168,
     "fast_gate_passed": 21,
     "size_check_passed": 13,
     "legal_match_passed": 10,
@@ -29,7 +29,7 @@
     "contact_route_found": 3,
     "qualified": 0,
     "duplicates": 1,
-    "excluded": 119
+    "excluded": 167
   },
   "lane_metrics": [
     {
@@ -40,18 +40,25 @@
       "notes": "Authoritative completed 579 baseline retained; no historical pending-tree dependency."
     },
     {
-      "lane": "fresh_low_overlap_industrial_business_change_recovery",
+      "lane": "fresh_low_overlap_industrial_business_change_recovery_24_26_aug",
       "distinct_raw": 33,
       "prequalified": 1,
       "submitted_to_physical_guard": 1,
-      "notes": "Fresh employer-level discovery from 24-26 Aug 2026 industrial/business-change sources; cross-source name dedup applied conservatively. Jobs not used. One candidate promoted only after legal, scale, signal, LPR and public contact-route verification; canonical writer rejected it as an existing physical duplicate by INN+OGRN."
+      "notes": "Fresh employer-level industrial/business-change discovery from 24-26 Aug 2026. One candidate reached the writer and was rejected as an existing INN+OGRN physical duplicate. Jobs not used."
+    },
+    {
+      "lane": "fresh_industrial_and_modernization_recovery_27_31_aug",
+      "distinct_raw": 48,
+      "prequalified": 0,
+      "submitted_to_physical_guard": 0,
+      "notes": "Conservative cross-source name-deduped employer pool from 27, 28 and 31 Aug industrial news plus named companies participating in current refinery modernization/technical-retooling activity. Repeated employers from prior 24-26 Aug samples and known saturated samples were not counted. No weak candidate was promoted merely to increase net-new."
     }
   ],
   "qualified_companies": [],
   "raw_target_met": true,
-  "normal_throughput_completion": true,
+  "normal_throughput_completion": false,
   "supplemental_discovery_performed": true,
-  "raw_count_note": "120 distinct employer-level raw resolved for the hourly cycle: 87 in N5K-20260902-579 plus 33 fresh low-overlap industrial/business-change employers in 579R1. No search-result padding and no criteria weakening; jobs were not used.",
+  "raw_count_note": "168 distinct employer-level raw resolved for the hourly cycle: 87 in N5K-20260902-579, 33 in 579R1 from 24-26 Aug fresh low-overlap industrial/business-change sources, and 48 further distinct employers from 27-31 Aug industrial and refinery-modernization sources. User minimum raw 120 is met. Current config's preferred >=300 continuation target is not met; no search-result padding, jobs, or criteria weakening were used.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
