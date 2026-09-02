@@ -1,0 +1,3 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0789,N5K-0789-C01,ПП ВОСХОД,7203497101,,Корпоративный маршрут,+7 (3452) 21-52-39,phone,official corporate,официальный сайт ПП ВОСХОД,https://voskhod-pp.ru/,NO,HIGH,2026-09-02,Опубликованный официальный телефон предприятия.,N5K-20260902-587,new_5000
+N5K-0789,N5K-0789-C02,ПП ВОСХОД,7203497101,,Корпоративный маршрут,info@voskhod-pp.ru,email,official corporate,официальный сайт ПП ВОСХОД,https://voskhod-pp.ru/,NO,HIGH,2026-09-02,Опубликованный официальный email предприятия; не сгенерирован.,N5K-20260902-587,new_5000
