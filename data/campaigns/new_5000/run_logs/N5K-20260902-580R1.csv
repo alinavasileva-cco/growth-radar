@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Status,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Canonical Count,Contactable Count,Integrity,Orphan Contacts,Orphan Evidence,Outreach Sent,Notes
+N5K-20260902-580R1,new_5000,COMPLETED,120,7,6,6,5,4,1,2,117,593,593,PASS,0,0,0,"; physical dedup skipped=[('Ларта Гласс Раменское', 'INN,OGRN,LEGAL_NAME')]"

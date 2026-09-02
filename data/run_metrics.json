@@ -1,52 +1,43 @@
 {
-  "generated_at": "2026-09-02T05:26:59+03:00",
+  "generated_at": "2026-09-02T05:33:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-580",
-  "current_run_id": "N5K-20260902-580",
+  "latest_completed_run_id": "N5K-20260902-580R1",
+  "current_run_id": "N5K-20260902-580R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 592,
-  "contactable_verified": 592,
+  "canonical_pool_verified": 593,
+  "contactable_verified": 593,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4408,
+  "remaining_to_target": 4407,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_580": {
+  "run_580R1": {
     "raw_discovered": 120,
-    "fast_gate_passed": 10,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 3,
-    "contact_route_found": 2,
+    "fast_gate_passed": 12,
+    "size_check_passed": 7,
+    "legal_match_passed": 6,
+    "signal_confirmed": 6,
+    "lpr_identified": 5,
+    "contact_route_found": 4,
     "qualified": 1,
     "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 118,
+    "duplicates": 2,
+    "excluded": 117,
     "lane_metrics": [
       {
-        "lane": "fresh_growth_news_worker_staging_20260902_052303",
-        "distinct_raw": 40,
-        "prequalified_rechecked": 2,
+        "lane": "hourly_580_existing_verified",
+        "distinct_raw": 120,
         "submitted_to_physical_guard": 1,
-        "notes": "SSI Solutions passed canonical recheck. OSQ International failed closed at CONTACT because the published OSQ Group route could not be proven to belong to the exact legal entity ООО ОЭСКЬЮ ИНТЕРНЕШНЛ."
+        "notes": "Authoritative completed 580 retained; raw floor already met without padding."
       },
       {
-        "lane": "fresh_private_industrial_company_change_archive_20_28_aug",
-        "distinct_raw": 62,
-        "prequalified_rechecked": 0,
-        "submitted_to_physical_guard": 0,
-        "notes": "Cross-day, employer-name-deduped Russian private industrial/company-change observations from current sector news. Search-result rows were not counted; repeated employers across dates and staging were removed. Most failed FAST GATE/SIZE or lacked an independent S1-S3 business-change signal suitable for deep qualification."
-      },
-      {
-        "lane": "fresh_low_overlap_production_investment_26_31_aug",
-        "distinct_raw": 18,
-        "prequalified_rechecked": 1,
-        "submitted_to_physical_guard": 1,
-        "notes": "Fresh regional production/investment and business-expansion observations. Ивановская Текстильная Компания passed full recheck. Other candidates were not promoted without same-entity LEGAL/LPR/CONTACT evidence."
+        "lane": "supplemental_fresh_regional_investment_business_change",
+        "distinct_raw": 0,
+        "submitted_to_physical_guard": 2,
+        "notes": "Supplemental search was used only to find additional fully resolvable candidates after two consecutive low-net-new hourly cycles. Search-result rows were not added to authoritative raw because cross-lane global distinctness was not proven."
       }
     ]
   }

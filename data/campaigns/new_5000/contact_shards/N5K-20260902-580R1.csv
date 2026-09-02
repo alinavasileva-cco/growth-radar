@@ -1,0 +1,3 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0779,N5K-0779-C01,Фарм Эйд,9709002011,,Корпоративный маршрут,+7 (495) 477-44-24,phone,official corporate,PharmAid official website,https://pharmaid.com/contact/,NO,HIGH,2026-09-02,Официальный телефон головного офиса exact company.,N5K-20260902-580R1,new_5000
+N5K-0779,N5K-0779-C02,Фарм Эйд,9709002011,,Корпоративный маршрут,info@pharmaid.com,email,official corporate,PharmAid official website,https://pharmaid.com/contact/,NO,HIGH,2026-09-02,Официальный корпоративный email exact company/domain; не восстановлен по шаблону.,N5K-20260902-580R1,new_5000

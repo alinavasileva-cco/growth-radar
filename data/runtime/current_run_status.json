@@ -1,81 +1,52 @@
 {
-  "run_id": "N5K-20260902-580",
+  "run_id": "N5K-20260902-580R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
-  "updated_at": "2026-09-02T05:26:59+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T05:33:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 591,
+    "baseline_count": 592,
     "target_count": 5000,
-    "current_canonical_count": 592,
-    "current_contactable_count": 592,
+    "current_canonical_count": 593,
+    "current_contactable_count": 593,
     "progress_added": 1,
-    "remaining": 4408
-  },
-  "hourly_cycle": {
-    "baseline_count": 591,
-    "current_canonical_count": 592,
-    "current_contactable_count": 592,
-    "net_new": 1,
-    "raw": 120
+    "remaining": 4407
   },
   "funnel": {
     "discovered": 120,
-    "fast_gate_passed": 10,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 3,
-    "contact_route_found": 2,
+    "fast_gate_passed": 12,
+    "size_check_passed": 7,
+    "legal_match_passed": 6,
+    "signal_confirmed": 6,
+    "lpr_identified": 5,
+    "contact_route_found": 4,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 118
+    "duplicates": 2,
+    "excluded": 117
   },
   "lane_metrics": [
     {
-      "lane": "fresh_growth_news_worker_staging_20260902_052303",
-      "distinct_raw": 40,
-      "prequalified_rechecked": 2,
+      "lane": "hourly_580_existing_verified",
+      "distinct_raw": 120,
       "submitted_to_physical_guard": 1,
-      "net_qualified": 1,
-      "physical_duplicates": 0,
-      "notes": "SSI Solutions passed canonical recheck and physical guard. OSQ International failed closed at CONTACT because the published OSQ Group route could not be proven to belong to the exact legal entity ООО ОЭСКЬЮ ИНТЕРНЕШНЛ."
+      "notes": "Authoritative completed 580 retained; raw floor already met without padding."
     },
     {
-      "lane": "fresh_private_industrial_company_change_archive_20_28_aug",
-      "distinct_raw": 62,
-      "prequalified_rechecked": 0,
-      "submitted_to_physical_guard": 0,
-      "net_qualified": 0,
-      "physical_duplicates": 0,
-      "notes": "Cross-day employer-name-deduped private industrial/company-change observations. Repeats and search-result rows were not counted; most failed FAST GATE/SIZE or lacked an independent S1-S3 signal."
-    },
-    {
-      "lane": "fresh_low_overlap_production_investment_26_31_aug",
-      "distinct_raw": 18,
-      "prequalified_rechecked": 1,
-      "submitted_to_physical_guard": 1,
-      "net_qualified": 0,
-      "physical_duplicates": 1,
-      "notes": "Ивановская Текстильная Компания passed deep recheck but physical guard found an existing canonical match by INN, OGRN and BRAND_DOMAIN."
+      "lane": "supplemental_fresh_regional_investment_business_change",
+      "distinct_raw": 0,
+      "submitted_to_physical_guard": 2,
+      "notes": "Supplemental search was used only to find additional fully resolvable candidates after two consecutive low-net-new hourly cycles. Search-result rows were not added to authoritative raw because cross-lane global distinctness was not proven."
     }
   ],
   "qualified_companies": [
-    "ССИ Решения"
+    "Фарм Эйд"
   ],
-  "raw_target_met": true,
-  "minimum_raw_floor_met": true,
-  "preferred_config_raw_target_met": false,
-  "normal_throughput_completion": false,
-  "supplemental_discovery_performed": true,
-  "raw_count_note": "120 distinct employer-level raw after cross-lane name dedup: 40 fresh worker-staging, 62 fresh private industrial/company-change observations and 18 fresh low-overlap production/investment observations. User hard floor 120 is met; CURRENT_WORKING_CONFIG preferred continuation target >=300 is not met. No jobs, weak-catalog padding, search-result-row padding or criteria weakening used.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
-  "physical_master_state": "592_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "592_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "593_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "593_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
