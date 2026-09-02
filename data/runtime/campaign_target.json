@@ -7,7 +7,7 @@
   "progress_added": 593,
   "remaining_to_total_target": 4407,
   "remaining": 4407,
-  "remaining_to_1000": 408,
+  "remaining_to_1000": 407,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,62 +17,53 @@
   "current_run_id": "N5K-20260902-580R1",
   "last_run_id": "N5K-20260902-580R1",
   "latest_completed_run": "N5K-20260902-580R1",
-  "latest_attempted_run": "N5K-20260902-580",
-  "latest_attempted_run_status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260902-580",
+  "latest_attempted_run": "N5K-20260902-580R1",
+  "latest_attempted_run_status": "COMPLETED",
+  "canonical_integration_run_id": "N5K-20260902-580R1",
   "hourly_baseline_count": 591,
-  "hourly_net_new": 1,
+  "hourly_net_new": 2,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-580",
+    "run_id": "N5K-20260902-580R1",
     "raw": 120,
-    "fast_gate": 10,
-    "size": 5,
-    "legal": 4,
-    "signal": 4,
-    "lpr": 3,
-    "contact": 2,
+    "fast_gate": 12,
+    "size": 7,
+    "legal": 6,
+    "signal": 6,
+    "lpr": 5,
+    "contact": 4,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded_early_reject": 118,
+    "duplicates": 2,
+    "excluded_early_reject": 117,
     "qualified_raw_pct": 0.8333,
-    "fast_gate_raw_pct": 8.3333,
+    "fast_gate_raw_pct": 10.0,
     "raw_target_met": true,
     "minimum_raw_floor_met": true,
     "preferred_config_raw_target_met": false,
     "supplemental_discovery_performed": true,
     "normal_throughput_completion": false,
-    "raw_count_note": "120 distinct employer-level raw: 40 fresh growth-news staging + 62 fresh private industrial/company-change observations + 18 fresh low-overlap production/investment observations. User hard floor 120 is met; CURRENT_WORKING_CONFIG preferred >=300 continuation target is not met. No jobs, weak-catalog padding, search-result-row padding or criteria weakening used."
+    "raw_count_note": "Authoritative employer-level raw remains 120. Supplemental recovery was performed after two consecutive low-net-new hourly cycles, but supplemental search-result rows were not added to raw without proven global cross-lane distinctness. No jobs padding or criteria weakening was used."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "fresh_growth_news_worker_staging_20260902_052303",
-      "raw": 40,
-      "prequalified_rechecked": 2,
+      "lane": "hourly_580_existing_verified",
+      "raw": 120,
+      "prequalified_rechecked": 1,
       "submitted_to_physical_guard": 1,
       "net_qualified": 1,
       "physical_duplicates": 0,
-      "next_state": "ROTATE"
+      "next_state": "SUPPLEMENTED"
     },
     {
-      "lane": "fresh_private_industrial_company_change_archive_20_28_aug",
-      "raw": 62,
-      "prequalified_rechecked": 0,
-      "submitted_to_physical_guard": 0,
-      "net_qualified": 0,
-      "physical_duplicates": 0,
-      "next_state": "ROTATE"
-    },
-    {
-      "lane": "fresh_low_overlap_production_investment_26_31_aug",
-      "raw": 18,
-      "prequalified_rechecked": 1,
-      "submitted_to_physical_guard": 1,
-      "net_qualified": 0,
+      "lane": "supplemental_fresh_regional_investment_business_change",
+      "raw": 0,
+      "prequalified_rechecked": 2,
+      "submitted_to_physical_guard": 2,
+      "net_qualified": 1,
       "physical_duplicates": 1,
-      "next_state": "ROTATE"
+      "next_state": "ROTATE_TO_OTHER_FRESH_LOW_OVERLAP_LANES"
     }
   ],
   "last_3_run_efficiency": [
@@ -93,19 +84,19 @@
       "fast_gate_raw_pct": 12.5
     },
     {
-      "run_id": "N5K-20260902-580",
+      "run_id": "N5K-20260902-580R1",
       "raw": 120,
-      "fast_gate": 10,
+      "fast_gate": 12,
       "qualified": 1,
       "qualified_raw_pct": 0.8333,
-      "fast_gate_raw_pct": 8.3333
+      "fast_gate_raw_pct": 10.0
     }
   ],
   "efficiency_change_vs_previous_run": {
     "qualified_raw_pct_points": -0.3572,
-    "net_new_change": -1,
-    "fast_gate_raw_pct_points": -4.1667,
-    "assessment": "Run 580 met the explicit 120 employer-level raw floor but not the CURRENT_WORKING_CONFIG preferred >=300 continuation target. Physical net-new=1; one deep-qualified candidate was blocked by final physical dedup."
+    "net_new_change": 0,
+    "fast_gate_raw_pct_points": -2.5,
+    "assessment": "Same-hour recovery after run 580 produced one additional physical net-new company, bringing the hour from baseline 591 to 593 (+2). The explicit raw floor 120 is met; the preferred config continuation target >=300 is not met."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -117,7 +108,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "Fresh growth-news worker staging 20260902-052303 was consumed first. SSI Solutions was independently rechecked and physically integrated. OSQ International was rejected fail-closed at CONTACT. Ивановская Текстильная Компания passed deep recheck but was blocked by physical dedup. Staged not counted is zero.",
+  "fresh_staging": "N5K-20260902-580R1 was consumed by the existing authoritative canonical writer. PharmAid was physically integrated; Larta Glass Ramenskoe was blocked by final physical dedup on INN+OGRN+exact legal name. Pending is cleared and staged not counted is zero.",
   "repair_required": null,
-  "note": "N5K-20260902-580R1 completed after physical integration: +1 net new; canonical/contactable 593/593; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260902-580R1 completed after same-hour supplemental recovery: hourly baseline 591, physical hourly net-new +2, canonical/contactable 593/593; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Authoritative raw remains 120 without search-result padding."
 }
