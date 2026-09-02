@@ -1,33 +1,33 @@
 {
-  "run_id": "N5K-20260902-590",
+  "run_id": "N5K-20260902-591",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-02T20:37:00+03:00",
+  "updated_at": "2026-09-02T21:38:00+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
     "baseline_count": 604,
     "target_count": 5000,
-    "current_canonical_count": 604,
-    "current_contactable_count": 604,
-    "progress_added": 0,
-    "remaining": 4396
+    "current_canonical_count": 605,
+    "current_contactable_count": 605,
+    "progress_added": 1,
+    "remaining": 4395
   },
   "funnel": {
-    "raw_distinct": 38,
-    "discovered": 38,
-    "fast_gate_passed": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
+    "raw_distinct": 34,
+    "discovered": 34,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
     "duplicates": 0,
-    "excluded": 38
+    "excluded": 33
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 38,
+    "raw_distinct": 34,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -38,7 +38,7 @@
     {
       "lane": "regional_investment_new_production",
       "raw": 5,
-      "duplicates_early_rejects": 5,
+      "duplicates_early_rejects": 4,
       "qualified": 0
     },
     {
@@ -49,26 +49,26 @@
     },
     {
       "lane": "regional_official_private_expansion",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0
-    },
-    {
-      "lane": "msp_scaleup_cases",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0
-    },
-    {
-      "lane": "export_growth",
-      "raw": 2,
+      "raw": 3,
       "duplicates_early_rejects": 2,
       "qualified": 0
     },
     {
+      "lane": "msp_scaleup_cases",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "export_growth",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
       "lane": "dealer_franchise_partner_expansion",
-      "raw": 5,
-      "duplicates_early_rejects": 5,
+      "raw": 4,
+      "duplicates_early_rejects": 4,
       "qualified": 0
     },
     {
@@ -79,30 +79,32 @@
     },
     {
       "lane": "new_line_workshop_factory",
-      "raw": 5,
-      "duplicates_early_rejects": 5,
+      "raw": 4,
+      "duplicates_early_rejects": 3,
       "qualified": 0
     },
     {
       "lane": "new_branches_stores_service_centers",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0
+      "raw": 3,
+      "duplicates_early_rejects": 2,
+      "qualified": 1
     },
     {
-      "lane": "investment_funding_management_change",
+      "lane": "management_commercial_transformation",
       "raw": 2,
       "duplicates_early_rejects": 2,
       "qualified": 0
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Рок Энд Милл / Rock And Mill"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "604_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "604_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "605_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "605_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }

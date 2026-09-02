@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-02T20:37:00+03:00",
+  "generated_at": "2026-09-02T21:38:00+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260902-588R1",
-  "current_run_id": "N5K-20260902-590",
+  "current_run_id": "N5K-20260902-591",
   "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
-  "canonical_pool_verified": 604,
-  "contactable_verified": 604,
+  "canonical_pool_verified": 605,
+  "contactable_verified": 605,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4396,
+  "remaining_to_target": 4395,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
@@ -16,27 +16,27 @@
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 38,
+    "raw_distinct": 34,
     "external_technical_limitation_proven": false,
     "passed": false
   },
-  "run_590": {
-    "raw_discovered": 38,
-    "fast_gate_passed": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "physically_integrated": 0,
+  "run_591": {
+    "raw_discovered": 34,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "physically_integrated": 1,
     "duplicates": 0,
-    "excluded": 38,
+    "excluded": 33,
     "lane_metrics": [
       {
         "lane": "regional_investment_new_production",
         "raw": 5,
-        "duplicates_early_rejects": 5,
+        "duplicates_early_rejects": 4,
         "qualified": 0
       },
       {
@@ -47,26 +47,26 @@
       },
       {
         "lane": "regional_official_private_expansion",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
-        "qualified": 0
-      },
-      {
-        "lane": "msp_scaleup_cases",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
-        "qualified": 0
-      },
-      {
-        "lane": "export_growth",
-        "raw": 2,
+        "raw": 3,
         "duplicates_early_rejects": 2,
         "qualified": 0
       },
       {
+        "lane": "msp_scaleup_cases",
+        "raw": 3,
+        "duplicates_early_rejects": 3,
+        "qualified": 0
+      },
+      {
+        "lane": "export_growth",
+        "raw": 3,
+        "duplicates_early_rejects": 3,
+        "qualified": 0
+      },
+      {
         "lane": "dealer_franchise_partner_expansion",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0
       },
       {
@@ -77,18 +77,18 @@
       },
       {
         "lane": "new_line_workshop_factory",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 4,
+        "duplicates_early_rejects": 3,
         "qualified": 0
       },
       {
         "lane": "new_branches_stores_service_centers",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
-        "qualified": 0
+        "raw": 3,
+        "duplicates_early_rejects": 2,
+        "qualified": 1
       },
       {
-        "lane": "investment_funding_management_change",
+        "lane": "management_commercial_transformation",
         "raw": 2,
         "duplicates_early_rejects": 2,
         "qualified": 0

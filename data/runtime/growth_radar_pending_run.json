@@ -1,73 +1,9 @@
 {
   "run_id": "N5K-20260902-591",
-  "campaign_id": "new_5000",
   "updated_at": "2026-09-02T21:38:00+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "funnel": {
-    "raw_distinct": 34,
-    "discovered": 34,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 33
-  },
-  "lane_metrics": [
-    {"lane":"regional_investment_new_production","raw":5,"duplicates_early_rejects":4,"qualified":0},
-    {"lane":"industrial_park_sez_technopark","raw":4,"duplicates_early_rejects":4,"qualified":0},
-    {"lane":"regional_official_private_expansion","raw":3,"duplicates_early_rejects":2,"qualified":0},
-    {"lane":"msp_scaleup_cases","raw":3,"duplicates_early_rejects":3,"qualified":0},
-    {"lane":"export_growth","raw":3,"duplicates_early_rejects":3,"qualified":0},
-    {"lane":"dealer_franchise_partner_expansion","raw":4,"duplicates_early_rejects":4,"qualified":0},
-    {"lane":"logistics_warehouse_commercial_property","raw":3,"duplicates_early_rejects":3,"qualified":0},
-    {"lane":"new_line_workshop_factory","raw":4,"duplicates_early_rejects":3,"qualified":0},
-    {"lane":"new_branches_stores_service_centers","raw":3,"duplicates_early_rejects":2,"qualified":1},
-    {"lane":"management_commercial_transformation","raw":2,"duplicates_early_rejects":2,"qualified":0}
-  ],
-  "qualified_companies": [
-    {
-      "Lead ID": "GR-RAM-7729477690",
-      "Brand": "Рок Энд Милл / Rock And Mill",
-      "Legal Name": "ООО \"РОК ЭНД МИЛЛ\" (ООО \"РАМ\")",
-      "INN": "7729477690",
-      "OGRN/OGRNIP": "1157746936632",
-      "Region": "Москва",
-      "City": "Москва",
-      "Segment": "Инжиниринг и консалтинг для горнодобывающей отрасли",
-      "Website": "https://rockandmill.ru/",
-      "Revenue/Scale": "Выручка 2024 около 1,4 млрд руб.; 182 сотрудника в 2024; официальный сайт сообщает о 520+ реализованных проектах и 200+ клиентах",
-      "Signal Level": "S2",
-      "Signal Summary": "6 мая 2026 компания открыла проектный офис в Красноярске для расширения работы с предприятиями горнодобывающей отрасли Сибири; в августе 2026 в Красноярске сохранялась активная вакансия профильного специалиста.",
-      "Signal Date": "2026-05-06",
-      "Signal Source": "https://companies.rbc.ru/news/iQ4BXVzeJm/rok-end-mill-otkryil-ofis-v-krasnoyarske/",
-      "Owner": "ООО \"БС ХОЛДИНГ\"",
-      "CEO": "Колесников Егор Иванович",
-      "LPR": "Колесников Егор Иванович",
-      "LPR Role": "Генеральный директор Rock And Mill",
-      "Primary Phone": "+7 499 110-14-72",
-      "Primary Email": "info@rockandmill.ru",
-      "HH Contact": "",
-      "Contact Form": "https://rockandmill.ru/contacts",
-      "Contact Type": "Опубликованные корпоративные телефон и email",
-      "Contact Source": "https://rockandmill.ru/contacts",
-      "Consulting Hypothesis": "Компания расширяет региональное присутствие и инженерную команду; наблюдаемый сигнал связан с масштабированием географии и операционной нагрузки.",
-      "contacts": [
-        {"value":"+7 499 110-14-72","channel":"phone","type":"corporate_published","source":"Rock And Mill official contacts","url":"https://rockandmill.ru/contacts","is_lpr":false,"notes":"Опубликованный общий корпоративный телефон"},
-        {"value":"info@rockandmill.ru","channel":"email","type":"corporate_published","source":"Rock And Mill company presentation","url":"https://rockandmill.ru/assets/files/docs/presentation-ram.pdf","is_lpr":false,"notes":"Опубликованный корпоративный email"}
-      ],
-      "evidence": [
-        {"type":"legal","claim":"ООО РАМ, ИНН 7729477690, ОГРН 1157746936632, действующая компания; управляющая организация/учредитель ООО БС ХОЛДИНГ.","url":"https://reputation.ru/ogrn/1157746936632","source":"Reputation.ru"},
-        {"type":"size","claim":"Выручка компании выросла примерно до 1,4 млрд руб. в 2024 году; 182 сотрудника в 2024.","url":"https://reputation.ru/ogrn/1157746936632","source":"Reputation.ru"},
-        {"type":"signal","claim":"6 мая 2026 Rock And Mill открыла проектный офис в Красноярске как часть региональной сети для усиления работы в Сибири.","url":"https://companies.rbc.ru/news/iQ4BXVzeJm/rok-end-mill-otkryil-ofis-v-krasnoyarske/","source":"РБК Компании"},
-        {"type":"lpr","claim":"В интервью 3 апреля 2026 Егор Колесников указан как генеральный директор Rock And Mill.","url":"https://gold.1prime.ru/amp/20260403/intervyu-1280697.html","source":"ПРАЙМ ЗОЛОТО"},
-        {"type":"contact","claim":"Официальный сайт публикует корпоративный телефон +7 499 110-14-72; презентация компании публикует info@rockandmill.ru.","url":"https://rockandmill.ru/contacts","source":"Rock And Mill official website"}
-      ]
-    }
-  ],
-  "external_technical_limitation": {"proven": false, "evidence": ""},
-  "notes": "Fresh rotated discovery was continued across 10 low-overlap lanes. Exact authoritative employer-level raw physically staged for this RUN is 34, still below the hard floor 120 and preferred 300 continuation threshold. Criteria were not weakened. Курский аккумуляторный завод passed size/legal/signal but was not qualified because current LPR evidence conflicts with stale staging: 2025 reporting calls Андрей Рыбянцев former CEO while current directories still list him; no unambiguous current CEO/LPR was established. Rock And Mill passed SIZE→LEGAL→SIGNAL→LPR→CONTACT and current repo searches for INN/OGRN returned no canonical match before writer. No outreach."
+  "status": "RECOVERY_REQUIRED",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "raw_distinct": 34,
+  "note": "N5K-20260902-591 integrated verified rows but cannot be COMPLETED: raw_distinct=34<120. Supplemental discovery required."
 }
