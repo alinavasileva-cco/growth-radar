@@ -1,45 +1,49 @@
 {
-  "generated_at": "2026-09-02T02:45:00+03:00",
+  "generated_at": "2026-09-02T03:29:29+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-577R1",
-  "current_run_id": "N5K-20260902-577R1",
+  "latest_completed_run_id": "N5K-20260902-578",
+  "current_run_id": "N5K-20260902-578",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 586,
-  "contactable_verified": 586,
+  "canonical_pool_verified": 587,
+  "contactable_verified": 587,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4414,
+  "remaining_to_target": 4413,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_577R1": {
-    "raw_discovered": 82,
-    "fast_gate_passed": 20,
-    "size_check_passed": 13,
-    "legal_match_passed": 10,
-    "signal_confirmed": 8,
-    "lpr_identified": 7,
-    "contact_route_found": 5,
+  "run_578": {
+    "raw_discovered": 103,
+    "fast_gate_passed": 21,
+    "size_check_passed": 10,
+    "legal_match_passed": 7,
+    "signal_confirmed": 6,
+    "lpr_identified": 5,
+    "contact_route_found": 4,
     "qualified": 1,
     "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 80,
+    "duplicates": 3,
+    "excluded": 99,
     "lane_metrics": [
       {
-        "lane": "base_577_fresh_workers",
-        "distinct_raw": 49,
+        "lane": "fresh_worker_staging_growth_news",
+        "distinct_raw": 15,
         "prequalified": 3,
-        "net_qualified_before_physical_guard": 3,
-        "notes": "All three were rejected by authoritative physical dedup in canonical writer."
+        "notes": "fresh immutable staging consumed first; worker did not assign net QUALIFIED"
       },
       {
-        "lane": "supplemental_regional_production_business_change",
-        "distinct_raw": 33,
-        "prequalified": 2,
-        "net_qualified_before_physical_guard": 2,
-        "notes": "Fresh low-overlap employer-level observations from regional investment/new production, expansion and business-change sources. Repeated saturated samples excluded; jobs not used."
+        "lane": "fresh_worker_staging_official_owner",
+        "distinct_raw": 38,
+        "prequalified": 1,
+        "notes": "fresh immutable staging consumed first; worker did not assign net QUALIFIED"
+      },
+      {
+        "lane": "supplemental_low_overlap_discovery",
+        "distinct_raw": 50,
+        "prequalified": 0,
+        "notes": "fresh regional production/investment, industrial parks, management/business-change and expansion sources; jobs not used; weak and state-linked candidates fail-closed"
       }
     ]
   }

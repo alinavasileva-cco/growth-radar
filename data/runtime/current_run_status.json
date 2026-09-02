@@ -1,61 +1,58 @@
 {
-  "run_id": "N5K-20260902-577R1",
+  "run_id": "N5K-20260902-578",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "updated_at": "2026-09-02T02:45:00+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T03:29:29+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 585,
+    "baseline_count": 586,
     "target_count": 5000,
-    "current_canonical_count": 586,
-    "current_contactable_count": 586,
+    "current_canonical_count": 587,
+    "current_contactable_count": 587,
     "progress_added": 1,
-    "remaining": 4414
+    "remaining": 4413
   },
   "funnel": {
-    "discovered": 82,
-    "fast_gate_passed": 20,
-    "size_check_passed": 13,
-    "legal_match_passed": 10,
-    "signal_confirmed": 8,
-    "lpr_identified": 7,
-    "contact_route_found": 5,
+    "discovered": 103,
+    "fast_gate_passed": 21,
+    "size_check_passed": 10,
+    "legal_match_passed": 7,
+    "signal_confirmed": 6,
+    "lpr_identified": 5,
+    "contact_route_found": 4,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 80
+    "duplicates": 3,
+    "excluded": 99
   },
   "lane_metrics": [
     {
-      "lane": "base_577_fresh_workers",
-      "distinct_raw": 49,
+      "lane": "fresh_worker_staging_growth_news",
+      "distinct_raw": 15,
       "prequalified": 3,
-      "net_qualified_before_physical_guard": 3,
-      "physical_net_new": 0,
-      "notes": "All three were rejected by authoritative physical dedup in canonical writer."
+      "notes": "fresh immutable staging consumed first; worker did not assign net QUALIFIED"
     },
     {
-      "lane": "supplemental_regional_production_business_change",
-      "distinct_raw": 33,
-      "prequalified": 2,
-      "net_qualified_before_physical_guard": 2,
-      "physical_net_new": 1,
-      "notes": "Fresh low-overlap employer-level observations from regional investment/new production, expansion and business-change sources. Repeated saturated samples excluded; jobs not used."
+      "lane": "fresh_worker_staging_official_owner",
+      "distinct_raw": 38,
+      "prequalified": 1,
+      "notes": "fresh immutable staging consumed first; worker did not assign net QUALIFIED"
+    },
+    {
+      "lane": "supplemental_low_overlap_discovery",
+      "distinct_raw": 50,
+      "prequalified": 0,
+      "notes": "fresh regional production/investment, industrial parks, management/business-change and expansion sources; jobs not used; weak and state-linked candidates fail-closed"
     }
   ],
   "qualified_companies": [
-    "Бытпласт"
+    "Стекольная Компания Реал"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
-  "physical_master_state": "586_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "586_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "587_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "587_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "raw_target_met": false,
-  "supplemental_discovery_performed": true,
-  "repair_required": "LOW_RAW_82_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "blocker": "LOW_RAW_82_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "notes": "Current-hour baseline 585; N5K-20260902-577 consumed fresh worker staging and produced 0 physical net-new; same-cycle supplemental N5K-20260902-577R1 increased conservative employer-level raw to 82 and physically added 1 company. Canonical/contactable 586/586; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Raw remains below minimum 120."
+  "blocker": null
 }
