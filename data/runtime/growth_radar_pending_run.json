@@ -1,8 +1,71 @@
 {
-  "run_id": "N5K-20260902-587",
-  "updated_at": "2026-09-02T16:32:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260902-587 integrated physically; canonical/contactable 601/601; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260902-588",
+  "updated_at": "2026-09-02T17:12:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "raw_distinct": 16,
+    "discovered": 16,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 15
+  },
+  "lane_metrics": [
+    {"lane":"fresh_growth_business_change","raw":2,"duplicates_early_rejects":1,"qualified":1,"note":"ГК Цифра; management/business-change source."},
+    {"lane":"moscow_region_new_production","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"novosibirsk_investment_new_production","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"leningrad_spb_new_production","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"rostov_krasnodar_investment","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"volga_investment_new_production","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"export_expansion","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"dealer_network_expansion","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"franchise_network_expansion","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"management_commercial_change","raw":1,"duplicates_early_rejects":1,"qualified":0}
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "GR-N5K-20260902-588-CIFRA-7704245507",
+      "Brand": "ГК Цифра",
+      "Legal Name": "ООО ЦИФРА",
+      "INN": "7704245507",
+      "OGRN/OGRNIP": "1027704005780",
+      "Region": "Москва",
+      "City": "Москва",
+      "Segment": "Промышленное ПО / цифровизация производства",
+      "Website": "https://www.zyfra.com/",
+      "Revenue/Scale": "Выручка 2,05 млрд руб. за 2023; более 500 реализованных проектов; действующая компания",
+      "Signal Level": "S2",
+      "Signal Summary": "С 9 августа 2026 генеральным директором назначен Илья Якимов; заявленный фокус — повышение операционной эффективности, продуктовый бизнес и продвижение решений в России и странах-партнерах.",
+      "Signal Date": "2026-08-06",
+      "Signal Source": "https://www.cnews.ru/news/line/2026-08-06_v_tsifre_naznachen_novyj",
+      "Owner": "",
+      "CEO": "Илья Якимов",
+      "LPR": "Илья Якимов",
+      "LPR Role": "Генеральный директор ГК Цифра",
+      "Primary Phone": "+7 (495) 665-91-31",
+      "Primary Email": "info@zyfra.com",
+      "HH Contact": "",
+      "Contact Form": "https://www.zyfra.com/ru/contacts/",
+      "Contact Type": "Корпоративный контактный маршрут",
+      "Contact Source": "Официальная страница контактов ГК Цифра",
+      "Consulting Hypothesis": "Новый CEO публично сфокусирован на операционной эффективности, продуктовом бизнесе и росте присутствия; потенциально релевантны задачи коммерческой модели, приоритизации роста и управленческой системы.",
+      "contacts": [
+        {"value":"+7 (495) 665-91-31","channel":"phone","type":"corporate","source":"ГК Цифра — официальный сайт","url":"https://www.zyfra.com/ru/contacts/","is_lpr":false,"notes":"Контакт для новых клиентов / центральный офис."},
+        {"value":"info@zyfra.com","channel":"email","type":"corporate","source":"ГК Цифра — официальный сайт","url":"https://www.zyfra.com/ru/contacts/","is_lpr":false,"notes":"Публичный корпоративный email для новых клиентов."}
+      ],
+      "evidence": [
+        {"type":"LEGAL","claim":"ООО ЦИФРА действует; ИНН 7704245507, ОГРН 1027704005780.","url":"https://check.tochka.com/company/1027704005780/","source":"Точка — досье контрагента"},
+        {"type":"SIZE","claim":"Выручка ООО ЦИФРА за 2023 год 2 054 994 000 руб.; компания действует.","url":"https://saby.ru/profile/7704245507-770901001","source":"Saby"},
+        {"type":"SIGNAL_LPR","claim":"Илья Якимов утвержден генеральным директором ГК Цифра с 9 августа 2026; фокус на операционной эффективности, продуктовом бизнесе и продвижении решений.","url":"https://www.cnews.ru/news/line/2026-08-06_v_tsifre_naznachen_novyj","source":"CNews"},
+        {"type":"CONTACT","claim":"Официально опубликованы +7 (495) 665-91-31 и info@zyfra.com для новых клиентов.","url":"https://www.zyfra.com/ru/contacts/","source":"ГК Цифра — официальный сайт"}
+      ]
+    }
+  ],
+  "notes": "Immediate hard-gate verification run. Ten low-overlap lanes were started; 16 distinct employer-level observations were actually obtained before the integration test. No padding/reuse of prior RUN raw. Deep checks included Цифра, Элтекс, Л-ПАК, Аксис and Логика молока; only Цифра had sufficient combined legal/scale/signal/LPR/contact evidence for qualification in this test. Because raw_distinct=16<120 and no external technical limitation is claimed, integration must set UNDERDONE_RECOVERY_REQUIRED rather than COMPLETED. Outreach=0.",
+  "external_technical_limitation": {"proven": false, "evidence": ""}
 }
