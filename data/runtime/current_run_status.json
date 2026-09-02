@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260902-583R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
   "updated_at": "2026-09-02T08:47:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
@@ -39,7 +39,7 @@
       "duplicates_plus_early_rejects": 0,
       "prequalified_rechecked": 1,
       "submitted_to_physical_guard": 1,
-      "notes": "Fresh 31.08.2026 regional production expansion signal. Candidate-level repo search found no INN/OGRN/legal/brand-domain match before staging. Jobs not used."
+      "notes": "Fresh 31.08.2026 regional production expansion signal. Candidate-level repo search found no indexed match, but authoritative physical writer rejected the candidate by INN, OGRN, exact legal name and brand+domain. Jobs not used."
     }
   ],
   "qualified_companies": [],
@@ -50,5 +50,14 @@
   "physical_master_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "throughput_disclosure": {
+    "raw_distinct_employer_level": 251,
+    "minimum_user_floor_120_met": true,
+    "user_supplemental_recovery_performed": true,
+    "current_config_preferred_400_800_met": false,
+    "current_config_continue_threshold_300_met": false,
+    "normal_throughput_completion": false,
+    "note": "Same-hour supplemental recovery was performed because consecutive low-net-new runs triggered recovery. One additional distinct employer was fully checked but rejected by the authoritative physical dedup guard. Exact authoritative raw is 251; no unverified observations were added merely to reach 300."
+  }
 }
