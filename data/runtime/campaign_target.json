@@ -7,7 +7,7 @@
   "progress_added": 605,
   "remaining_to_total_target": 4395,
   "remaining": 4395,
-  "remaining_to_1000": 396,
+  "remaining_to_1000": 395,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -20,90 +20,40 @@
   "latest_attempted_run": "N5K-20260902-591",
   "latest_attempted_run_id": "N5K-20260902-591",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
-  "canonical_integration_run_id": "N5K-20260902-588R1",
+  "canonical_integration_run_id": "N5K-20260902-591",
   "hourly_baseline_count": 604,
-  "hourly_net_new": 0,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-590",
-    "raw": 38,
-    "fast_gate": 0,
-    "size": 0,
-    "legal": 0,
-    "signal": 0,
-    "lpr": 0,
-    "contact": 0,
-    "qualified": 0,
+    "run_id": "N5K-20260902-591",
+    "raw": 34,
+    "fast_gate": 2,
+    "size": 2,
+    "legal": 2,
+    "signal": 2,
+    "lpr": 1,
+    "contact": 1,
+    "qualified": 1,
     "duplicates": 0,
-    "excluded": 38,
+    "excluded": 33,
     "minimum_raw_floor_met": false,
     "preferred_config_raw_target_met": false,
     "normal_throughput_completion": false,
-    "raw_count_note": "38 fresh distinct employer-level raw across 10 low-overlap lanes. No candidate was promoted past FAST GATE because full SIZE→LEGAL→SIGNAL→LPR→CONTACT verification was not completed in this cycle; criteria were not weakened and no unverified company was staged. Raw remains below hard floor 120 and preferred continue-until-300 threshold. Outreach 0."
+    "raw_count_note": "34 genuinely distinct employer-level raw across 10 rotated low-overlap lanes. Same-cycle supplemental discovery continued beyond the initial source set, but exact authoritative raw remained below the 120 hard floor and 300 preferred continuation threshold. One company passed the full funnel and was physically integrated; criteria were not weakened; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {
-      "lane": "regional_investment_new_production",
-      "raw": 5,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 5
-    },
-    {
-      "lane": "industrial_park_sez_technopark",
-      "raw": 4,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 4
-    },
-    {
-      "lane": "regional_official_private_expansion",
-      "raw": 4,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 4
-    },
-    {
-      "lane": "msp_scaleup_cases",
-      "raw": 4,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 4
-    },
-    {
-      "lane": "export_growth",
-      "raw": 2,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 2
-    },
-    {
-      "lane": "dealer_franchise_partner_expansion",
-      "raw": 5,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 5
-    },
-    {
-      "lane": "logistics_warehouse_commercial_property",
-      "raw": 3,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 3
-    },
-    {
-      "lane": "new_line_workshop_factory",
-      "raw": 5,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 5
-    },
-    {
-      "lane": "new_branches_stores_service_centers",
-      "raw": 4,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 4
-    },
-    {
-      "lane": "investment_funding_management_change",
-      "raw": 2,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 2
-    }
+    {"lane":"regional_investment_new_production","raw":5,"net_qualified":0,"duplicates_early_rejects":4},
+    {"lane":"industrial_park_sez_technopark","raw":4,"net_qualified":0,"duplicates_early_rejects":4},
+    {"lane":"regional_official_private_expansion","raw":3,"net_qualified":0,"duplicates_early_rejects":2},
+    {"lane":"msp_scaleup_cases","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"export_growth","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"dealer_franchise_partner_expansion","raw":4,"net_qualified":0,"duplicates_early_rejects":4},
+    {"lane":"logistics_warehouse_commercial_property","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"new_line_workshop_factory","raw":4,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"new_branches_stores_service_centers","raw":3,"net_qualified":1,"duplicates_early_rejects":2},
+    {"lane":"management_commercial_transformation","raw":2,"net_qualified":0,"duplicates_early_rejects":2}
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -114,8 +64,8 @@
     "management_change_commercial_transformation_fresh": 15,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "RUN N5K-20260902-590 was physically processed by the canonical writer; qualified staged not counted is zero; no unverified candidate was written to canonical/contactable.",
+  "fresh_staging": "RUN N5K-20260902-591 was physically processed by the canonical writer; Rock And Mill was integrated; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260902-591 requires recovery: raw_distinct 34<300; hard_floor_passed=False; canonical/contactable 605/605; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260902-591 requires recovery: raw_distinct 34<120 hard floor and <300 preferred continuation threshold; canonical/contactable 605/605; net_new 1; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
