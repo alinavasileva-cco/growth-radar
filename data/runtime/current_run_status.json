@@ -1,62 +1,52 @@
 {
-  "run_id": "N5K-20260902-578R1",
+  "run_id": "N5K-20260902-578R2",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-02T03:44:38+03:00",
+  "updated_at": "2026-09-02T03:52:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 587,
     "target_count": 5000,
-    "current_canonical_count": 587,
-    "current_contactable_count": 587,
-    "progress_added": 0,
-    "remaining": 4413
+    "current_canonical_count": 588,
+    "current_contactable_count": 588,
+    "progress_added": 1,
+    "remaining": 4412
   },
   "funnel": {
     "discovered": 125,
-    "fast_gate_passed": 26,
-    "size_check_passed": 12,
-    "legal_match_passed": 8,
-    "signal_confirmed": 7,
-    "lpr_identified": 6,
-    "contact_route_found": 5,
-    "qualified": 0,
+    "fast_gate_passed": 27,
+    "size_check_passed": 13,
+    "legal_match_passed": 9,
+    "signal_confirmed": 8,
+    "lpr_identified": 7,
+    "contact_route_found": 6,
+    "qualified": 1,
     "duplicates": 4,
     "excluded": 120
   },
   "lane_metrics": [
     {
-      "lane": "fresh_worker_staging_growth_news",
-      "distinct_raw": 15,
-      "prequalified": 3,
-      "notes": "Inherited from 578 only for hourly accounting; saturated samples were not re-run."
+      "lane": "hourly_distinct_raw_578_plus_recovery",
+      "distinct_raw": 125,
+      "prequalified": 6,
+      "notes": "Authoritative same-hour employer-level raw after cross-lane dedup. Saturated samples were not re-run; jobs not used."
     },
     {
-      "lane": "fresh_worker_staging_official_owner",
-      "distinct_raw": 38,
+      "lane": "supplemental_recovery_578R2_regional_investment_agro",
+      "distinct_raw": 0,
       "prequalified": 1,
-      "notes": "Inherited from 578 only for hourly accounting; saturated samples were not re-run."
-    },
-    {
-      "lane": "supplemental_low_overlap_discovery_578",
-      "distinct_raw": 50,
-      "prequalified": 0,
-      "notes": "Inherited from 578; fresh regional production/investment, management/business-change and partner/expansion sources."
-    },
-    {
-      "lane": "supplemental_recovery_578R1_regional_production_agro",
-      "distinct_raw": 22,
-      "prequalified": 1,
-      "notes": "Fresh low-overlap employer-level screening from July 2026 new-production and agro investment cohorts; cross-source employer-name dedup applied; NARTIS and other already saturated samples excluded; jobs not used."
+      "notes": "Deep resolution of a fresh candidate already contained in the 22-employer R1 low-overlap agro/production cohort; no double-counting of raw."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Воронеж-Агро"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "587_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "587_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "588_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "588_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
