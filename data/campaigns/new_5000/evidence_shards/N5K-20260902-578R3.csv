@@ -1,0 +1,5 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-0774,N5K-0774-E01,LEGAL,Действующее АО ПЛЕМЗАВОД «ПОВАДИНО»; ИНН 5009048052; ОГРН 1055001504854; генеральный директор Сергеенко Игорь Владимирович.,https://companies.rbc.ru/id/1055001504854-ao-plemzavod-povadino/,РБК Компании,2026-09-02T03:56:00+03:00,HIGH,N5K-20260902-578R3,new_5000
+N5K-0774,N5K-0774-E02,SIZE,"Выручка 2025 года 1,445 млрд ₽; прибыль 205,6 млн ₽; 191 сотрудник.",https://companies.rbc.ru/id/1055001504854-ao-plemzavod-povadino/,РБК Компании,2026-09-02T03:56:00+03:00,HIGH,N5K-20260902-578R3,new_5000
+N5K-0774,N5K-0774-E03,SIGNAL,"02.07.2026 введена молочно-товарная ферма на 1 200 голов; инвестиции около 900 млн ₽, мощность 14 тыс. тонн молока в год.",https://milknews.ru/index/moloko/povadino-fekrma-moloko.html,Milknews / данные Минсельхозпрода Московской области,2026-09-02T03:56:00+03:00,HIGH,N5K-20260902-578R3,new_5000
+N5K-0774,N5K-0774-E04,CONTACT,Опубликованы корпоративные телефоны и email pzpovadino@yandex.ru.,https://companium.ru/id/1055001504854-plemzavod-povadino,Companium,2026-09-02T03:56:00+03:00,HIGH,N5K-20260902-578R3,new_5000

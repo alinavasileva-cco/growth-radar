@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-02T03:52:00+03:00",
+  "generated_at": "2026-09-02T03:56:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-578R2",
-  "current_run_id": "N5K-20260902-578R2",
+  "latest_completed_run_id": "N5K-20260902-578R3",
+  "current_run_id": "N5K-20260902-578R3",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 588,
-  "contactable_verified": 588,
+  "canonical_pool_verified": 589,
+  "contactable_verified": 589,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4412,
+  "remaining_to_target": 4411,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_578R2": {
+  "run_578R3": {
     "raw_discovered": 125,
-    "fast_gate_passed": 27,
-    "size_check_passed": 13,
-    "legal_match_passed": 9,
-    "signal_confirmed": 8,
-    "lpr_identified": 7,
-    "contact_route_found": 6,
+    "fast_gate_passed": 28,
+    "size_check_passed": 14,
+    "legal_match_passed": 10,
+    "signal_confirmed": 9,
+    "lpr_identified": 8,
+    "contact_route_found": 7,
     "qualified": 1,
     "physically_integrated": 1,
     "duplicates": 4,
@@ -30,14 +30,8 @@
       {
         "lane": "hourly_distinct_raw_578_plus_recovery",
         "distinct_raw": 125,
-        "prequalified": 6,
-        "notes": "Authoritative same-hour employer-level raw after cross-lane dedup. Saturated samples were not re-run; jobs not used."
-      },
-      {
-        "lane": "supplemental_recovery_578R2_regional_investment_agro",
-        "distinct_raw": 0,
-        "prequalified": 1,
-        "notes": "Deep resolution of a fresh candidate already contained in the 22-employer R1 low-overlap agro/production cohort; no double-counting of raw."
+        "prequalified": 7,
+        "notes": "Same-hour authoritative employer-level raw. R3 deep-resolves another candidate already present in the R1 low-overlap cohort, so raw is not double-counted."
       }
     ]
   }
