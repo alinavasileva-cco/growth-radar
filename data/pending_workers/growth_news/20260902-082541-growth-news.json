@@ -1,0 +1,188 @@
+{
+  "worker": "growth_news",
+  "lane": "growth_news",
+  "created_at": "2026-09-02T08:25:41+03:00",
+  "immutable": true,
+  "mode": "READ_DISCOVERY_ONLY",
+  "guards": {
+    "criteria_source": "CURRENT_WORKING_CONFIG.md",
+    "criteria_changed": false,
+    "canonical_write": false,
+    "contactable_write": false,
+    "runtime_write": false,
+    "campaign_write": false,
+    "outreach": false
+  },
+  "baseline": {
+    "canonical": 596,
+    "contactable": 596,
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "source": "CURRENT_WORKING_CONFIG.md + data/runtime/current_run_status.json",
+    "source_updated_at": "2026-09-02T07:43:00+03:00"
+  },
+  "repair_dedup_logic": {
+    "full_historical_pending_required_before_discovery": false,
+    "physical_canonical_contactable_checked_via_repo_search_and_current_physical_snapshot": true,
+    "compact_runtime_checked": true,
+    "historical_pending_materialization_complete": false,
+    "final_global_dedup_owner": "canonical_writer",
+    "staged_not_counted_as_added": true
+  },
+  "metrics": {
+    "distinct_employer_level_raw": 31,
+    "fast_gate_selected_for_deep_check": 5,
+    "size_pass": 4,
+    "legal_pass": 4,
+    "signal_pass": 3,
+    "lpr_pass": 2,
+    "contact_pass": 2,
+    "prequalified_needs_final_global_dedup": 2,
+    "reject": 29,
+    "source_batches": 14,
+    "raw_target_80_150_met": false,
+    "quota_padding_used": false
+  },
+  "source_batches": [
+    {"id":"B01","family":"Moscow/Moscow-region investment and production news","raw_unique_observations":5},
+    {"id":"B02","family":"Saint Petersburg official industrial/investment news","raw_unique_observations":5},
+    {"id":"B03","family":"Tatarstan/regional investment news","raw_unique_observations":2},
+    {"id":"B04","family":"Nizhny Novgorod/regional investment news","raw_unique_observations":2},
+    {"id":"B05","family":"Krasnodar/South regional investment news","raw_unique_observations":2},
+    {"id":"B06","family":"multi-region investment portals","raw_unique_observations":2},
+    {"id":"B07","family":"business media fresh factory/investment signals","raw_unique_observations":3},
+    {"id":"B08","family":"national news fresh production expansion","raw_unique_observations":2},
+    {"id":"B09","family":"Interfax regional fresh production","raw_unique_observations":2},
+    {"id":"B10","family":"Kommersant fresh production/expansion","raw_unique_observations":1},
+    {"id":"B11","family":"Vedomosti regional/press-release production","raw_unique_observations":1},
+    {"id":"B12","family":"OEZ/resident investment projects","raw_unique_observations":1},
+    {"id":"B13","family":"regional expansion/branch search","raw_unique_observations":1},
+    {"id":"B14","family":"management/commercial transformation","raw_unique_observations":2}
+  ],
+  "raw_employers": [
+    "АО Лазерные системы","АО Фармпроект","ООО НПО Петровакс Фарм","ООО Семаргл","ГК Мелком/ООО ВЗК","РАТЕЛ/РАТЕЛ Ступино","ООО Регионтранснефть","Тамбовский завод Электроприбор","ООО Бытпласт","Логика молока","Неокор","DoorHan","Молопак","АБ-Бэттэрис","Октава ДМ","АвтоВАЗ","АГР/Jeland","Лаборатория ППШ","ГК Цифра","АЛИУМ/Биннофарм Групп","ЭкоПромСтрой-Алга","ГТ-Энергия","Цитрон","ПАО ИВА","Компания ТрансТелеКом","TData","РТК-ЦОД","Турбо Облако","Волжский завод газовых генераторов","Роквул","Техноплекс"
+  ],
+  "deep_rejects": [
+    {
+      "company":"Логика молока",
+      "status":"REJECT",
+      "failed_gate":"SIGNAL",
+      "reason":"Fresh brand/group signal confirmed, but this cycle did not establish an unambiguous legal-entity-to-signal binding suitable for worker staging."
+    },
+    {
+      "company":"ООО Регионтранснефть",
+      "inn":"6679079361",
+      "status":"REJECT",
+      "failed_gate":"LPR_CONTACT",
+      "reason":"SIZE and dated investment signal found; current cycle did not verify a concrete LPR plus published practical corporate contact route."
+    },
+    {
+      "company":"РАТЕЛ/РАТЕЛ Ступино",
+      "status":"REJECT",
+      "failed_gate":"SIZE",
+      "reason":"Fresh plant project confirmed; sufficient current operating scale for the exact legal entity was not verified in this cycle."
+    }
+  ],
+  "candidates": [
+    {
+      "status":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand":"Бытпласт",
+      "legal_name":"ООО БЫТПЛАСТ",
+      "inn":"5011018520",
+      "ogrn":"1035002350195",
+      "domain":"bytplast.ru",
+      "size":{
+        "passed":true,
+        "evidence":"2025 revenue about RUB 3.5bn; current sources classify as large enterprise; 367 employees reported by supplier profile.",
+        "urls":["https://vaskov.pro/company/5011018520","https://sledi.ru/bytplast-5011018520/","https://optsbyt.ru/supplier/bytplast"]
+      },
+      "legal":{
+        "passed":true,
+        "active":true,
+        "private":true,
+        "evidence":"Active company; INN/OGRN confirmed; private ownership reported.",
+        "urls":["https://companium.ru/id/1035002350195-bytplast","https://saby.ru/profile/5011018520-772101001"]
+      },
+      "signal":{
+        "passed":true,
+        "date":"2026-04-07",
+        "type":"production_expansion_new_line",
+        "evidence":"Company launched a new reusable-bottle production line in Yegoryevsk; investment RUB 208m; capacity 2.5m units/year.",
+        "url":"https://www.interfax-russia.ru/center/novosti-podmoskovya/bytplast-zapustil-novuyu-proizvodstvennuyu-liniyu-za-200-mln-rub-v-egorevske"
+      },
+      "lpr":{
+        "passed":true,
+        "name":"Бобров Владимир Владимирович",
+        "role":"генеральный директор",
+        "urls":["https://companium.ru/id/1035002350195-bytplast","https://saby.ru/profile/5011018520-772101001"]
+      },
+      "contact":{
+        "passed":true,
+        "route":"+7 499 270-56-95; info@bytplast.ru",
+        "published":true,
+        "url":"https://bytplast.ru/contacts/"
+      },
+      "dedup_keys":{"inn":"5011018520","ogrn":"1035002350195","exact_legal_name":"ООО БЫТПЛАСТ","brand_domain":"Бытпласт|bytplast.ru"},
+      "dedup_checks":[
+        {"key_type":"INN","query":"5011018520","repo_match":false},
+        {"key_type":"OGRN","query":"1035002350195","repo_match":false},
+        {"key_type":"EXACT_LEGAL_NAME","query":"ООО БЫТПЛАСТ","repo_match":false},
+        {"key_type":"BRAND_DOMAIN","query":"Бытпласт bytplast.ru","repo_match":false}
+      ],
+      "final_global_dedup_required":true
+    },
+    {
+      "status":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand":"Петровакс Фарм",
+      "legal_name":"ООО НПО ПЕТРОВАКС ФАРМ",
+      "inn":"7702302492",
+      "ogrn":"1037700012745",
+      "domain":"petrovax.ru",
+      "size":{
+        "passed":true,
+        "evidence":"2025 revenue about RUB 19.93bn; 829 employees.",
+        "urls":["https://companies.rbc.ru/id/1037700012745-ooo-npo-petrovaks-farm/","https://basis.myseldon.com/ru/company/1037700012745","https://reputation.ru/ogrn/1037700012745"]
+      },
+      "legal":{
+        "passed":true,
+        "active":true,
+        "evidence":"Active legal entity; INN/OGRN and general director confirmed by current company registries.",
+        "urls":["https://companies.rbc.ru/id/1037700012745-ooo-npo-petrovaks-farm/","https://basis.myseldon.com/ru/company/1037700012745"]
+      },
+      "signal":{
+        "passed":true,
+        "date":"2026-08-17",
+        "type":"new_biotech_production_building",
+        "evidence":"Construction of a biotechnology pilot-industrial production building in Podolsk completed; commissioning planned for autumn 2026.",
+        "url":"https://www.vedomosti.ru/press_releases/2026/08/17/novii-biotehnologicheskii-korpus-petrovaks-farm-vvedut-v-ekspluatatsiyu-osenyu-2026-goda"
+      },
+      "lpr":{
+        "passed":true,
+        "name":"Матвеев Александр Константинович",
+        "role":"генеральный директор",
+        "urls":["https://basis.myseldon.com/ru/company/1037700012745","https://eo.nadzor-info.ru/organization/202428"]
+      },
+      "contact":{
+        "passed":true,
+        "route":"+7 (495) 730-75-45; info@petrovax.ru",
+        "published":true,
+        "urls":["https://petrovax.ru/","https://polyoxidonium.ru/contacts/"]
+      },
+      "dedup_keys":{"inn":"7702302492","ogrn":"1037700012745","exact_legal_name":"ООО НПО ПЕТРОВАКС ФАРМ","brand_domain":"Петровакс|petrovax.ru"},
+      "dedup_checks":[
+        {"key_type":"INN","query":"7702302492","repo_match":false},
+        {"key_type":"OGRN","query":"1037700012745","repo_match":false},
+        {"key_type":"EXACT_LEGAL_NAME","query":"ООО НПО ПЕТРОВАКС ФАРМ","repo_match":false},
+        {"key_type":"BRAND_DOMAIN","query":"Петровакс petrovax.ru","repo_match":false}
+      ],
+      "final_global_dedup_required":true
+    }
+  ],
+  "notes":[
+    "Historical pending tree was not required or fully materialized before discovery.",
+    "Candidate-level repository searches were executed separately for INN, OGRN, exact legal name and brand+domain for both staged candidates.",
+    "No staged candidate is counted as added or QUALIFIED; canonical writer must perform final physical global dedup.",
+    "Raw goal 80-150 was not padded with weak catalog rows; only 31 distinct employer-level observations were supportable from the fresh result sets used in this cycle."
+  ]
+}
