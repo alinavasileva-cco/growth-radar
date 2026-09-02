@@ -1,46 +1,47 @@
 {
-  "generated_at": "2026-09-02T09:25:37+03:00",
+  "generated_at": "2026-09-02T14:27:50+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-584",
-  "current_run_id": "N5K-20260902-584",
+  "latest_completed_run_id": "N5K-20260902-585",
+  "current_run_id": "N5K-20260902-585",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 598,
-  "contactable_verified": 598,
+  "canonical_pool_verified": 599,
+  "contactable_verified": 599,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4402,
+  "remaining_to_target": 4401,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_584": {
-    "raw_discovered": 23,
-    "fast_gate_passed": 5,
-    "size_check_passed": 5,
-    "legal_match_passed": 5,
-    "signal_confirmed": 5,
-    "lpr_identified": 5,
-    "contact_route_found": 5,
-    "qualified": 2,
-    "physically_integrated": 2,
-    "duplicates": 3,
-    "excluded": 18,
+  "run_585": {
+    "raw_discovered": 17,
+    "fast_gate_passed": 3,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 1,
+    "physically_integrated": 1,
+    "duplicates": 1,
+    "excluded": 15,
     "lane_metrics": [
       {
-        "lane": "fresh_official_owner_staging_20260902_084500",
-        "raw_distinct_counted": 5,
-        "deep_pass": 5,
-        "physical_duplicates": 3,
+        "lane": "fresh_official_owner_staging_20260902_142604",
+        "raw_distinct_counted": 15,
+        "deep_pass": 2,
+        "physical_duplicates": 0,
         "qualified_after_physical_guard": 2,
-        "note": "Only five terminal PREQUALIFIED employer-level candidates are counted from staging because its larger raw discovery count was not instrumented and must not be invented."
+        "note": "Fresh immutable worker staging was consumed first. Four PREQUALIFIED candidates were independently rechecked. Semargl was rejected at FAST GATE because current official/regional sources identify it as an asset of concern Kalashnikov. Summit/MFK Summit was not promoted because the fresh pawnshop expansion signal could not be tied fail-closed to the exact MFK legal entity rather than the wider group. Lalibela Coffee and ABI Product closed the full current funnel before final physical integration guard."
       },
       {
-        "lane": "supplemental_low_overlap_fresh_business_change",
-        "raw_distinct_counted": 18,
+        "lane": "supplemental_low_overlap_fresh_production_business_change",
+        "raw_distinct_counted": 2,
         "deep_pass": 0,
+        "physical_duplicates": 0,
         "qualified_after_physical_guard": 0,
-        "note": "Distinct employer-level probes: Цифра, Элемент, ЗЭМ, Bitrobotics, Семаргл, B2B-РТС, E-Prom, Технониколь, НТЦ ИТ РОСА, МБ РУС, Wegosty, Синимекс, СДЭК, Турбо Облако, НЭК, М.Видео, ТрансТелеКом, Capital Group. None promoted without a fully closed current LEGAL/SIZE/SIGNAL/LPR/CONTACT chain."
+        "note": "Auditably counted own-discovery probes: Technoplast/MGC Group and ARAVIA. Technoplast was not promoted because the independently reproducible dated S-signal was insufficiently current/closed for this run; ARAVIA was not promoted because the public brand/domain contact route could not be tied exactly to the candidate legal entity. Additional search-result observations were not counted as raw."
       }
     ]
   }
