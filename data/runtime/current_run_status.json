@@ -1,66 +1,56 @@
 {
-  "run_id": "N5K-20260902-581",
+  "run_id": "N5K-20260902-581R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "updated_at": "2026-09-02T06:24:25+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T06:31:24+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 593,
+    "baseline_count": 594,
     "target_count": 5000,
-    "current_canonical_count": 594,
-    "current_contactable_count": 594,
+    "current_canonical_count": 595,
+    "current_contactable_count": 595,
     "progress_added": 1,
-    "remaining": 4406
+    "remaining": 4405
   },
   "funnel": {
-    "discovered": 48,
-    "fast_gate_passed": 9,
-    "size_check_passed": 5,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 3,
-    "contact_route_found": 2,
+    "discovered": 71,
+    "fast_gate_passed": 13,
+    "size_check_passed": 7,
+    "legal_match_passed": 5,
+    "signal_confirmed": 5,
+    "lpr_identified": 4,
+    "contact_route_found": 3,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 46
+    "duplicates": 0,
+    "excluded": 70
   },
   "lane_metrics": [
     {
-      "lane": "fresh_official_owner_20260902_052622",
-      "distinct_raw": 26,
-      "duplicates_plus_early_rejects": 24,
-      "prequalified_rechecked": 2,
-      "submitted_to_physical_guard": 2,
-      "net_qualified": 1,
-      "physical_duplicates": 1,
-      "notes": "Fresh immutable worker batch; Eltex and Raketa independently rechecked by canonical writer."
-    },
-    {
-      "lane": "canonical_low_overlap_supplemental_discovery",
-      "distinct_raw": 22,
-      "duplicates_plus_early_rejects": 22,
+      "lane": "hourly_581_carry_forward",
+      "distinct_raw": 48,
+      "duplicates_plus_early_rejects": 46,
       "prequalified_rechecked": 0,
       "submitted_to_physical_guard": 0,
-      "net_qualified": 0,
-      "physical_duplicates": 0,
-      "notes": "Fresh regional production/investment, dealer/franchise/export expansion and management/business-change discovery. Only resolved distinct named employers counted; no search-row padding."
+      "notes": "Authoritative employer-level raw already established by N5K-20260902-581; not re-counted as new discovery beyond this hourly cumulative baseline."
+    },
+    {
+      "lane": "fresh_growth_business_change_supplemental_581R1",
+      "distinct_raw": 23,
+      "duplicates_plus_early_rejects": 22,
+      "prequalified_rechecked": 1,
+      "submitted_to_physical_guard": 1,
+      "notes": "Fresh low-overlap production/investment and business-change sources. Only named employers with resolvable company identity were counted; jobs were not used."
     }
   ],
-  "qualified_companies": ["Ракета"],
-  "physical_duplicate_companies": ["Элтекс"],
-  "raw_target_met": false,
-  "minimum_raw_floor_met": false,
-  "preferred_config_raw_target_met": false,
-  "supplemental_discovery_performed": true,
-  "normal_throughput_completion": false,
-  "raw_count_note": "48 conservatively resolved distinct employer-level raw. Fresh staging was consumed first, then mandatory low-overlap supplemental discovery was performed. The normal 120 raw floor and CURRENT_WORKING_CONFIG preferred continuation target >=300 were not reached without padding search-result rows or weakening criteria.",
+  "qualified_companies": [
+    "Август"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
-  "physical_master_state": "594_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "594_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "595_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "595_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }

@@ -567,3 +567,7 @@ Canonical/contactable: 593/593. Integrity PASS. Orphan contacts/evidence: 0/0. O
 
 ## Latest verified run N5K-20260902-581
 Canonical/contactable: 594/594. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest verified run N5K-20260902-581R1
+Canonical/contactable: 595/595. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
