@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260902-592",
+  "run_id": "N5K-20260902-593",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-02T22:29:54+03:00",
+  "updated_at": "2026-09-02T23:27:18+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
     "baseline_count": 605,
@@ -13,8 +13,8 @@
     "remaining": 4395
   },
   "funnel": {
-    "raw_distinct": 50,
-    "discovered": 50,
+    "raw_distinct": 32,
+    "discovered": 32,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
@@ -23,11 +23,11 @@
     "contact_route_found": 1,
     "qualified": 0,
     "duplicates": 1,
-    "excluded": 49
+    "excluded": 31
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 50,
+    "raw_distinct": 32,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -37,38 +37,38 @@
   "lane_metrics": [
     {
       "lane": "regional_investment_new_production",
-      "raw": 7,
-      "duplicates_early_rejects": 6,
-      "qualified": 0
-    },
-    {
-      "lane": "industrial_park_sez_technopark",
       "raw": 5,
       "duplicates_early_rejects": 5,
       "qualified": 0
     },
     {
-      "lane": "regional_official_private_expansion",
+      "lane": "industrial_park_sez_technopark",
       "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0
+      "duplicates_early_rejects": 3,
+      "qualified": 1
     },
     {
-      "lane": "msp_scaleup_cases",
+      "lane": "regional_official_private_expansion",
       "raw": 3,
       "duplicates_early_rejects": 3,
       "qualified": 0
     },
     {
-      "lane": "export_growth",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
+      "lane": "msp_product_scaleup",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "export_capacity_growth",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
       "qualified": 0
     },
     {
       "lane": "dealer_franchise_partner_expansion",
-      "raw": 5,
-      "duplicates_early_rejects": 5,
+      "raw": 6,
+      "duplicates_early_rejects": 6,
       "qualified": 0
     },
     {
@@ -79,20 +79,20 @@
     },
     {
       "lane": "new_line_workshop_factory",
-      "raw": 7,
-      "duplicates_early_rejects": 6,
-      "qualified": 1
-    },
-    {
-      "lane": "new_branches_stores_service_centers",
-      "raw": 6,
-      "duplicates_early_rejects": 6,
+      "raw": 4,
+      "duplicates_early_rejects": 4,
       "qualified": 0
     },
     {
-      "lane": "management_commercial_transformation",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
+      "lane": "new_branches_stores_service_centers",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
+      "qualified": 0
+    },
+    {
+      "lane": "ma_private_investment",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
       "qualified": 0
     }
   ],

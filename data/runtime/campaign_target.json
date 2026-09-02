@@ -11,14 +11,14 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T22:29:54+03:00",
+  "updated_at": "2026-09-02T23:27:18+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260902-588R1",
-  "current_run_id": "N5K-20260902-592",
-  "last_run_id": "N5K-20260902-592",
+  "current_run_id": "N5K-20260902-593",
+  "last_run_id": "N5K-20260902-593",
   "latest_completed_run": "N5K-20260902-588R1",
-  "latest_attempted_run": "N5K-20260902-592",
-  "latest_attempted_run_id": "N5K-20260902-592",
+  "latest_attempted_run": "N5K-20260902-593",
+  "latest_attempted_run_id": "N5K-20260902-593",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260902-591",
   "hourly_baseline_count": 604,
@@ -117,5 +117,5 @@
   "fresh_staging": "RUN N5K-20260902-591 was physically processed by the canonical writer; Rock And Mill was integrated; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260902-592 requires recovery: raw_distinct 50<300; hard_floor_passed=False; canonical/contactable 605/605; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260902-593 requires recovery: raw_distinct 32<300; hard_floor_passed=False; canonical/contactable 605/605; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
