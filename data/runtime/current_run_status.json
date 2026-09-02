@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260902-579",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "updated_at": "2026-09-02T04:48:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
@@ -51,10 +51,15 @@
     "Фармпроект",
     "Аргументум Фарма"
   ],
+  "raw_target_met": false,
+  "normal_throughput_completion": false,
+  "supplemental_discovery_performed": true,
+  "raw_count_note": "87 distinct employer-level raw were resolved: 50 fresh growth_news staging, 22 fresh official_owner staging and 15 canonical-writer supplemental low-overlap employers. This is below the required raw minimum; search-result rows and weak catalog entries were not used as padding. Additional fresh lanes were probed, but no further employer-level candidates were counted without adequate resolution.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "591_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "591_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
