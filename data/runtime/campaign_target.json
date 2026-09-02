@@ -7,7 +7,7 @@
   "progress_added": 599,
   "remaining_to_total_target": 4401,
   "remaining": 4401,
-  "remaining_to_1000": 402,
+  "remaining_to_1000": 401,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,61 +17,53 @@
   "current_run_id": "N5K-20260902-585",
   "last_run_id": "N5K-20260902-585",
   "latest_completed_run": "N5K-20260902-585",
-  "latest_attempted_run": "N5K-20260902-584",
+  "latest_attempted_run": "N5K-20260902-585",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260902-584",
-  "hourly_baseline_count": 596,
-  "hourly_net_new": 2,
+  "canonical_integration_run_id": "N5K-20260902-585",
+  "hourly_baseline_count": 598,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-584",
-    "raw": 23,
-    "raw_scope_note": "23 auditably counted distinct employer-level candidates: 5 terminal PREQUALIFIED candidates from fresh official_owner staging plus 18 distinct supplemental low-overlap employer probes. The staging worker did not persist an exact larger raw count, so none was reconstructed or invented.",
-    "fast_gate": 5,
-    "size": 5,
-    "legal": 5,
-    "signal": 5,
-    "lpr": 5,
-    "contact": 5,
-    "qualified": 2,
-    "duplicates": 3,
-    "excluded_early_reject": 18,
-    "qualified_raw_pct": 8.6957,
-    "fast_gate_raw_pct": 21.7391,
+    "run_id": "N5K-20260902-585",
+    "raw": 17,
+    "raw_scope_note": "17 auditably counted distinct employer-level candidates: 15 from fresh official_owner staging plus 2 own supplemental low-overlap probes. Search-result rows and uninstrumented observations were not counted.",
+    "fast_gate": 3,
+    "size": 3,
+    "legal": 3,
+    "signal": 2,
+    "lpr": 2,
+    "contact": 2,
+    "qualified": 1,
+    "duplicates": 1,
+    "excluded_early_reject": 15,
+    "qualified_raw_pct": 5.8824,
+    "fast_gate_raw_pct": 17.6471,
     "raw_target_met": false,
     "minimum_raw_floor_met": false,
     "preferred_config_raw_target_met": false,
     "supplemental_discovery_performed": true,
     "normal_throughput_completion": false,
-    "raw_count_note": "LOW RAW: exact employer-level raw=23, below user floor 120 and target 250-500. Sources were switched to fresh production/investment, management/business change and partner/expansion probes. Search-result rows, weak catalogs and uninstrumented worker observations were not counted as raw."
+    "raw_count_note": "LOW RAW: exact employer-level raw=17, below user floor 120 and target 250-500. Fresh staging was consumed first and own discovery then probed fresh production/investment and business-change sources. No jobs/catalog/search-row padding."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "fresh_official_owner_staging_20260902_084500",
-      "raw": 5,
-      "net_qualified": 2,
-      "physical_duplicates": 3,
+      "lane": "fresh_official_owner_staging_20260902_142604",
+      "raw": 15,
+      "net_qualified": 1,
+      "physical_duplicates": 1,
       "next_state": "CONSUMED"
     },
     {
-      "lane": "supplemental_low_overlap_fresh_business_change",
-      "raw": 18,
+      "lane": "supplemental_low_overlap_fresh_production_business_change",
+      "raw": 2,
       "net_qualified": 0,
       "physical_duplicates": 0,
       "next_state": "ROTATE_NEXT_RUN"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260902-583",
-      "raw": 250,
-      "fast_gate": 2,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 0.8
-    },
     {
       "run_id": "N5K-20260902-583R1",
       "raw": 251,
@@ -87,13 +79,21 @@
       "qualified": 2,
       "qualified_raw_pct": 8.6957,
       "fast_gate_raw_pct": 21.7391
+    },
+    {
+      "run_id": "N5K-20260902-585",
+      "raw": 17,
+      "fast_gate": 3,
+      "qualified": 1,
+      "qualified_raw_pct": 5.8824,
+      "fast_gate_raw_pct": 17.6471
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 8.6957,
-    "net_new_change": 2,
-    "fast_gate_raw_pct_points": 20.5439,
-    "assessment": "Fresh staging yielded two physical net-new QUALIFIED after three exact physical duplicates. Raw volume was materially below floor; next RUN must continue fresh low-overlap discovery without weakening criteria or reusing saturated samples."
+    "qualified_raw_pct_points": -2.8133,
+    "net_new_change": -1,
+    "fast_gate_raw_pct_points": -4.092,
+    "assessment": "Fresh staging produced one physical net-new QUALIFIED and one exact physical duplicate. Raw volume remains materially below floor; continue only fresh low-overlap lanes without weakening criteria or reusing saturated samples."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -105,7 +105,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "Fresh official_owner staging 20260902-084500 was physically processed by the canonical writer in N5K-20260902-584; qualified staged not counted is zero; immutable source retained.",
-  "repair_required": "LOW_RAW_23_BELOW_USER_FLOOR_120_AND_TARGET_250_500_CONTINUE_FRESH_LOW_OVERLAP_NEXT_RUN",
-  "note": "N5K-20260902-585 completed after physical integration: +1 net new; canonical/contactable 599/599; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "fresh_staging": "Fresh official_owner staging 20260902-142604 was physically processed by the canonical writer in N5K-20260902-585; qualified staged not counted is zero; immutable source retained.",
+  "repair_required": "LOW_RAW_17_BELOW_USER_FLOOR_120_AND_TARGET_250_500_CONTINUE_FRESH_LOW_OVERLAP_NEXT_RUN",
+  "note": "N5K-20260902-585 completed after physical integration: +1 net new; canonical/contactable 599/599; remaining to 1000=401; integrity PASS; orphan 0/0; staged 0; outreach 0; LOW RAW disclosure recorded."
 }
