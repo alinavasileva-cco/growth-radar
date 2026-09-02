@@ -1,8 +1,123 @@
 {
-  "run_id": "N5K-20260902-583",
-  "updated_at": "2026-09-02T08:28:29+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260902-583 integrated physically; canonical/contactable 596/596; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260902-583R1",
+  "updated_at": "2026-09-02T08:47:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "campaign_id": "new_5000",
+  "funnel": {
+    "discovered": 251,
+    "fast_gate_passed": 3,
+    "size_check_passed": 3,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 250
+  },
+  "lane_metrics": [
+    {
+      "lane": "run_583_carry_forward",
+      "distinct_raw": 250,
+      "duplicates_plus_early_rejects": 250,
+      "prequalified_rechecked": 0,
+      "submitted_to_physical_guard": 0,
+      "notes": "Authoritative employer-level raw already established by N5K-20260902-583."
+    },
+    {
+      "lane": "fresh_regional_production_business_change_583R1",
+      "distinct_raw": 1,
+      "duplicates_plus_early_rejects": 0,
+      "prequalified_rechecked": 1,
+      "submitted_to_physical_guard": 1,
+      "notes": "Fresh 31.08.2026 regional production expansion signal. Candidate-level repo search found no INN/OGRN/legal/brand-domain match before staging. Jobs not used."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0784",
+      "Brand": "АСТ «Слон»",
+      "Legal Name": "ООО «АВТОСПЕЦТЕХНИКА «СЛОН»",
+      "INN": "7415093767",
+      "OGRN/OGRNIP": "1167456066865",
+      "Region": "Челябинская область",
+      "City": "Миасс",
+      "Segment": "Машиностроение / спецтехника / автоцистерны",
+      "Website": "https://astslon.ru/",
+      "Revenue/Scale": "Действующая частная компания, субъект среднего предпринимательства; выручка 2025 года 490,77 млн ₽. Новая площадка рассчитана на одновременную сборку 10 единиц техники и выпуск до 50 автоцистерн в месяц.",
+      "Signal Level": "S1",
+      "Signal Summary": "31.08.2026 подтвержден запуск в Миассе новой производственной площадки полного цикла для автоцистерн. Предприятие закупило оборудование при поддержке регионального ФРП; площадка позволяет собирать 10 единиц техники одновременно и выпускать до 50 автоцистерн в месяц.",
+      "Signal Date": "2026-08-31",
+      "Signal Source": "https://news.ati.su/news/2026/08/31/tsisterny-dlja-benzovozov-nachali-proizvodit-v-miasse-551566/",
+      "Owner": "Рогач Виталий Сергеевич",
+      "CEO": "Призенцова Юлия Александровна",
+      "LPR": "Призенцова Юлия Александровна",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "8 (3513) 26-45-00",
+      "Primary Email": "mail@astslon.ru",
+      "HH Contact": "",
+      "Contact Form": "https://astslon.ru/contacts",
+      "Contact Type": "Официальный корпоративный телефон / email / форма связи",
+      "Contact Source": "https://astslon.ru/contacts",
+      "Consulting Hypothesis": "Запуск новой производственной площадки и расширение продуктовой линейки повышают нагрузку на операционную и коммерческую модель, планирование мощностей, KPI, P&L и управление масштабированием.",
+      "contacts": [
+        {
+          "value": "mail@astslon.ru",
+          "channel": "email",
+          "type": "official_company_email",
+          "source": "Официальный сайт АСТ «Слон»",
+          "url": "https://astslon.ru/contacts",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный email; не восстановлен по шаблону."
+        },
+        {
+          "value": "8 (3513) 26-45-00",
+          "channel": "phone",
+          "type": "official_company_phone",
+          "source": "Официальный сайт АСТ «Слон»",
+          "url": "https://astslon.ru/contacts",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный телефон."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО «АВТОСПЕЦТЕХНИКА «СЛОН» действует; ИНН 7415093767, ОГРН 1167456066865; генеральный директор Призенцова Юлия Александровна.",
+          "url": "https://check.tochka.com/company/1167456066865/",
+          "source": "Точка / сведения ЕГРЮЛ"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Компания относится к среднему предпринимательству; выручка 2025 года 490,77 млн ₽.",
+          "url": "https://b2b.house/company/OOO-AST-SLON_8f2d248f-9563-4630-8489-46919e604d02/",
+          "source": "B2B.House"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "31.08.2026 опубликовано подтверждение запуска новой производственной площадки в Миассе с полным циклом производства автоцистерн и мощностью до 50 единиц в месяц.",
+          "url": "https://news.ati.su/news/2026/08/31/tsisterny-dlja-benzovozov-nachali-proizvodit-v-miasse-551566/",
+          "source": "ATI.SU / региональный ФРП"
+        },
+        {
+          "type": "LPR",
+          "claim": "На официальной странице реквизитов компании генеральным директором указана Призенцова Юлия Александровна; актуальный реестровый источник подтверждает её как руководителя с 07.08.2024.",
+          "url": "https://astslon.ru/contacts",
+          "source": "Официальный сайт АСТ «Слон»"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует корпоративные контакты 8 (3513) 26-45-00 и mail@astslon.ru.",
+          "url": "https://astslon.ru/contacts",
+          "source": "Официальный сайт АСТ «Слон»"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "raw_target_met": false,
+  "minimum_raw_floor_met": true,
+  "supplemental_discovery_performed": true,
+  "normal_throughput_completion": false,
+  "note": "Same-hour supplemental recovery because consecutive low-net-new runs triggered recovery. Cumulative authoritative raw is 251. Candidate must pass the existing physical canonical guard on Lead ID/INN/OGRN/legal/brand-domain. Criteria unchanged; jobs not used; outreach prohibited."
 }
