@@ -1,0 +1,143 @@
+{
+  "worker": "growth_news",
+  "lane": "growth_news",
+  "created_at": "2026-09-02T07:23:14+03:00",
+  "immutable": true,
+  "guards": {
+    "canonical_write": false,
+    "contactable_write": false,
+    "runtime_write": false,
+    "campaign_write": false,
+    "outreach": false,
+    "criteria_changed": false
+  },
+  "baseline": {
+    "source": "CURRENT_WORKING_CONFIG.md @ main",
+    "config_version": "2026-09-02T06:36:00+03:00",
+    "physical_canonical": 596,
+    "physical_contactable": 596,
+    "integrity": "PASS",
+    "qualified_staged_counted": 0
+  },
+  "dedup_policy": {
+    "historical_pending_full_read_required": false,
+    "pre_deep_check": ["physical canonical/contactable", "available compact runtime/index"],
+    "candidate_level_repo_search_keys": ["INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"],
+    "final_global_dedup_owner": "canonical_writer_only"
+  },
+  "source_batches": [
+    {"batch":"fresh_launches_ru","queries":4,"focus":"Sep/Aug 2026 launches and production expansion"},
+    {"batch":"franchise_and_regions","queries":2,"focus":"franchise/dealer/region expansion"},
+    {"batch":"investment_projects","queries":2,"focus":"regional investment projects"},
+    {"batch":"tatarstan","queries":1,"focus":"Aug 2026 industrial investment"},
+    {"batch":"nizhny_novgorod","queries":1,"focus":"Aug 2026 industrial investment"},
+    {"batch":"sverdlovsk","queries":1,"focus":"Aug 2026 industrial investment"},
+    {"batch":"leningrad_region","queries":1,"focus":"Aug 2026 industrial investment"},
+    {"batch":"novosibirsk","queries":1,"focus":"Aug 2026 industrial investment"},
+    {"batch":"samara","queries":1,"focus":"Aug 2026 industrial investment"},
+    {"batch":"perm","queries":1,"focus":"Aug 2026 industrial investment"},
+    {"batch":"bashkortostan","queries":1,"focus":"Aug 2026 industrial investment"},
+    {"batch":"daily_24_aug","queries":1,"focus":"24 Aug 2026 production openings"},
+    {"batch":"daily_25_26_aug","queries":2,"focus":"25-26 Aug 2026 expansion/openings"},
+    {"batch":"daily_27_29_aug","queries":3,"focus":"27-29 Aug 2026 plant openings"}
+  ],
+  "metrics": {
+    "raw_distinct_employer_level": 29,
+    "fast": 9,
+    "size": 4,
+    "legal": 3,
+    "signal": 3,
+    "lpr": 2,
+    "contact": 2,
+    "prequalified_needs_final_global_dedup": 1,
+    "reject": 28,
+    "target_80_150_met": false,
+    "quota_padding_used": false,
+    "note": "Strictly relevant fresh search results in this cycle did not support 80-150 resolved employer-level raw without padding with weak catalogs/search-result rows."
+  },
+  "raw": [
+    "ООО Завод карбидов и ферросплавов","АО Турбокомплект","ООО Семаргл","АО Концерн Калашников","Компания НОВЫЕ ТЕХНОЛОГИИ И МАТЕРИАЛЫ (НТМ)","ООО Турбокомплект (other homonyms)","ПАО Северсталь","Газпромнефть / regional production project","АО АвтоВАЗ","АО Москвич","Нижегородский металлопрокатный завод / Металлсервис","ООО ГазЭнергоКомплект","ГК Август-Агро","ООО МТК Звено","Август-Полимер","АО Химический завод им. Л.Я. Карпова","АО Мелеузовские минеральные удобрения","ПАО Надеждинский металлургический завод","ООО Литум","ООО НПК (Новосибирск)","ООО ССИ Решения","ООО Молопак","АО Форш","АО Лазерные системы","ООО Лаборатория ППШ","АО Фармпроект","ООО Группа Теплолюкс","ООО Борус","ООО АвтоСпецТехника Слон"
+  ],
+  "dedup_checks": [
+    {
+      "candidate":"АО ТУРБОКОМПЛЕКТ",
+      "keys":{"inn":"5037044130","ogrn":"1025004860638","legal_name":"АО ТУРБОКОМПЛЕКТ","brand_domain":"Турбокомплект+kamturbo.ru"},
+      "repo_search":{"inn":0,"ogrn":0,"legal_name":0,"brand_domain":0},
+      "result":"NO_MATCH_IN_AVAILABLE_REPO_SEARCH; NEEDS_FINAL_GLOBAL_DEDUP"
+    },
+    {
+      "candidate":"ООО ЗАВОД КАРБИДОВ И ФЕРРОСПЛАВОВ",
+      "keys":{"inn":"5017111075","ogrn":"1165017051924","legal_name":"ООО ЗАВОД КАРБИДОВ И ФЕРРОСПЛАВОВ","brand_domain":"Завод карбидов и ферросплавов+zavodkf.ru"},
+      "repo_search":{"inn":0,"ogrn":0,"legal_name":0,"brand_domain":0},
+      "result":"NO_MATCH_IN_AVAILABLE_REPO_SEARCH; REJECTED_AT_SIZE"
+    }
+  ],
+  "candidates": [
+    {
+      "status":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "company":"АО ТУРБОКОМПЛЕКТ",
+      "brand":"Турбокомплект",
+      "domain":"kamturbo.ru",
+      "inn":"5037044130",
+      "ogrn":"1025004860638",
+      "size":{
+        "result":"PASS",
+        "evidence":"Public company profile reports 2025 income about RUB 504.1m; established industrial manufacturer. Fresh expansion raises annual capacity from 46k to 90k turbochargers."
+      },
+      "legal":{
+        "result":"PASS",
+        "evidence":"Active JSC; INN 5037044130; OGRN 1025004860638; registered in Protvino, Moscow Region.",
+        "url":"https://companies.rbc.ru/id/1025004860638-ao-turbokomplekt/"
+      },
+      "signal":{
+        "result":"PASS",
+        "date":"2026-08-27",
+        "type":"production_expansion_new_corpus",
+        "evidence":"Opened a new production building in Protvino. Total project investment RUB 1.8bn, including RUB 1.2bn FRP loan; output planned to increase 45% to 90k turbochargers/year.",
+        "urls":["https://www1.ru/news/2026/08/27/turbokompressory-dlia-gruzovikov-i-spectexniki-iamz-tmx-i-mmz-budut-proizvodit-v-podmoskove.html","https://1prime.ru/20260827/podmoskove-872720739.html"]
+      },
+      "lpr":{
+        "result":"PASS",
+        "name":"Алексей Васильевич Барбалат",
+        "role":"генеральный директор",
+        "evidence_url":"https://companies.rbc.ru/id/1025004860638-ao-turbokomplekt/"
+      },
+      "contact":{
+        "result":"PASS",
+        "route_type":"official corporate reception/email",
+        "phone":["+7 (4967) 31-06-79","+7 (4967) 74-49-03"],
+        "email":"turbo@kamturbo.ru",
+        "evidence_url":"https://kamturbo.ru/"
+      },
+      "dedup_state":"NEEDS_FINAL_GLOBAL_DEDUP",
+      "counted_as_added":false
+    },
+    {
+      "status":"REJECT",
+      "company":"ООО ЗАВОД КАРБИДОВ И ФЕРРОСПЛАВОВ",
+      "domain":"zavodkf.ru",
+      "inn":"5017111075",
+      "ogrn":"1165017051924",
+      "size":{
+        "result":"REJECT",
+        "reason":"Current public profile shows 47 employees and only RUB 131k revenue at start of 2025. The new project creates 71 jobs and has RUB 0.6bn investment, but this does not by itself prove the current company meets the working size criterion. Strict SIZE-first gate therefore rejects without weakening criteria.",
+        "evidence_url":"https://companies.rbc.ru/id/1165017051924-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-zavod-karbidov-i-ferrosplavov/"
+      },
+      "legal":{"result":"NOT_DEEPENED_AFTER_SIZE_REJECT","known_keys_source":"https://rpn.gov.ru/regions/11/public/1001202318014310-5826666.html"},
+      "signal":{"result":"STRONG_BUT_NOT_USED_TO_OVERRIDE_SIZE","date":"2026-08-29","evidence":"Trial production planned for Sep 2026; serial production Q4; RUB 0.6bn investment; 71 jobs.","url":"https://www.bnkomi.ru/data/news/202680/"},
+      "lpr":{"result":"NOT_USED_AFTER_SIZE_REJECT"},
+      "contact":{"result":"NOT_USED_AFTER_SIZE_REJECT","official_url":"https://zavodkf.ru/contact/"},
+      "counted_as_added":false
+    }
+  ],
+  "evidence_urls": [
+    "https://www1.ru/news/2026/08/27/turbokompressory-dlia-gruzovikov-i-spectexniki-iamz-tmx-i-mmz-budut-proizvodit-v-podmoskove.html",
+    "https://1prime.ru/20260827/podmoskove-872720739.html",
+    "https://companies.rbc.ru/id/1025004860638-ao-turbokomplekt/",
+    "https://kamturbo.ru/",
+    "https://www.bnkomi.ru/data/news/202680/",
+    "https://rpn.gov.ru/regions/11/public/1001202318014310-5826666.html",
+    "https://companies.rbc.ru/id/1165017051924-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-zavod-karbidov-i-ferrosplavov/",
+    "https://zavodkf.ru/contact/"
+  ]
+}
