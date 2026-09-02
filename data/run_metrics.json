@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T21:38:00+03:00",
+  "generated_at": "2026-09-02T22:29:54+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260902-588R1",
-  "current_run_id": "N5K-20260902-591",
+  "current_run_id": "N5K-20260902-592",
   "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_pool_verified": 605,
   "contactable_verified": 605,
@@ -16,39 +16,39 @@
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 34,
+    "raw_distinct": 50,
     "external_technical_limitation_proven": false,
     "passed": false
   },
-  "run_591": {
-    "raw_discovered": 34,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
+  "run_592": {
+    "raw_discovered": 50,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 0,
-    "excluded": 33,
+    "qualified": 0,
+    "physically_integrated": 0,
+    "duplicates": 1,
+    "excluded": 49,
     "lane_metrics": [
       {
         "lane": "regional_investment_new_production",
-        "raw": 5,
-        "duplicates_early_rejects": 4,
+        "raw": 7,
+        "duplicates_early_rejects": 6,
         "qualified": 0
       },
       {
         "lane": "industrial_park_sez_technopark",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
+        "raw": 5,
+        "duplicates_early_rejects": 5,
         "qualified": 0
       },
       {
         "lane": "regional_official_private_expansion",
-        "raw": 3,
-        "duplicates_early_rejects": 2,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0
       },
       {
@@ -59,38 +59,38 @@
       },
       {
         "lane": "export_growth",
-        "raw": 3,
-        "duplicates_early_rejects": 3,
-        "qualified": 0
-      },
-      {
-        "lane": "dealer_franchise_partner_expansion",
         "raw": 4,
         "duplicates_early_rejects": 4,
         "qualified": 0
       },
       {
+        "lane": "dealer_franchise_partner_expansion",
+        "raw": 5,
+        "duplicates_early_rejects": 5,
+        "qualified": 0
+      },
+      {
         "lane": "logistics_warehouse_commercial_property",
-        "raw": 3,
-        "duplicates_early_rejects": 3,
+        "raw": 5,
+        "duplicates_early_rejects": 5,
         "qualified": 0
       },
       {
         "lane": "new_line_workshop_factory",
-        "raw": 4,
-        "duplicates_early_rejects": 3,
-        "qualified": 0
-      },
-      {
-        "lane": "new_branches_stores_service_centers",
-        "raw": 3,
-        "duplicates_early_rejects": 2,
+        "raw": 7,
+        "duplicates_early_rejects": 6,
         "qualified": 1
       },
       {
+        "lane": "new_branches_stores_service_centers",
+        "raw": 6,
+        "duplicates_early_rejects": 6,
+        "qualified": 0
+      },
+      {
         "lane": "management_commercial_transformation",
-        "raw": 2,
-        "duplicates_early_rejects": 2,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0
       }
     ]
