@@ -1,9 +1,117 @@
 {
   "run_id": "N5K-20260902-588R1",
-  "updated_at": "2026-09-02T18:43:00+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 31,
-  "note": "N5K-20260902-588R1 integrated verified rows but cannot be COMPLETED: raw_distinct=31<120. Supplemental discovery required."
+  "updated_at": "2026-09-02T18:47:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-3328490915",
+      "Brand": "ТехноСонус",
+      "Legal Name": "ООО ТЕХНОСОНУС-ЦЕНТР",
+      "INN": "3328490915",
+      "OGRN/OGRNIP": "1133328003599",
+      "Region": "Владимирская область",
+      "City": "Владимир / п. Бег",
+      "Segment": "Производство звукоизоляционных и виброизоляционных материалов",
+      "Website": "https://tn-ss.ru/",
+      "Revenue/Scale": "Выручка 1,9 млрд ₽ за 2025 год (+34%); средний бизнес; 136 сотрудников по последним доступным данным",
+      "Signal Level": "S1",
+      "Signal Summary": "В августе 2026 компания открыла новый цех VibroLOCK во Владимирской области; инвестиции превысили 120 млн ₽, включая финансирование федерального и регионального ФРП.",
+      "Signal Date": "2026-08-13",
+      "Signal Source": "https://www.oborudunion.ru/publications/releases/5961035",
+      "Owner": "Акулов Александр Александрович; Шилов Дмитрий Владимирович",
+      "CEO": "Староверкин Александр Владимирович",
+      "LPR": "Староверкин Александр Владимирович",
+      "LPR Role": "Директор",
+      "Primary Phone": "+7 (495) 128-11-33",
+      "Primary Email": "mail@tn-ss.ru",
+      "HH Contact": "",
+      "Contact Form": "https://tn-ss.ru/shops/",
+      "Contact Type": "Официальный корпоративный маршрут к руководству",
+      "Contact Source": "https://tn-ss.ru/shops/",
+      "Consulting Hypothesis": "Новый производственный цех на фоне роста выручки требует синхронизации мощности, коммерческого плана, P&L направления, KPI, управленческой отчетности и масштабирования сбыта.",
+      "contacts": [
+        {
+          "value": "mail@tn-ss.ru",
+          "channel": "Email",
+          "type": "Корпоративный маршрут",
+          "source": "Techno Sonus",
+          "url": "https://tn-ss.ru/shops/",
+          "is_lpr": false,
+          "notes": "Официальный email главного офиса"
+        },
+        {
+          "value": "+7 (495) 128-11-33",
+          "channel": "Phone",
+          "type": "Корпоративный маршрут",
+          "source": "Techno Sonus",
+          "url": "https://tn-ss.ru/shops/",
+          "is_lpr": false,
+          "notes": "Официальный телефон главного офиса"
+        },
+        {
+          "value": "https://tn-ss.ru/shops/",
+          "channel": "Web form",
+          "type": "Форма обратной связи",
+          "source": "Techno Sonus",
+          "url": "https://tn-ss.ru/shops/",
+          "is_lpr": false,
+          "notes": "Официальная форма связи"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО ТЕХНОСОНУС-ЦЕНТР, ИНН 3328490915, ОГРН 1133328003599, действует; директор Староверкин Александр Владимирович; два физических лица-учредителя по 50%.",
+          "url": "https://companies.rbc.ru/id/1133328003599-ooo-tehnosonus-tsentr/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Средний бизнес; выручка за 2025 год около 1,9 млрд ₽, рост 34%; ранее подтверждено 136 сотрудников.",
+          "url": "https://companium.ru/id/1133328003599-tekhnosonus-centr",
+          "source": "Companium / РБК Компании"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "13.08.2026 подтвержден запуск нового цеха VibroLOCK; инвестиции более 120 млн ₽.",
+          "url": "https://www.oborudunion.ru/publications/releases/5961035",
+          "source": "OborudUnion"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт публикует телефон главного офиса, email mail@tn-ss.ru и форму обратной связи.",
+          "url": "https://tn-ss.ru/shops/",
+          "source": "Techno Sonus"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "raw_distinct": 32,
+    "discovered": 32,
+    "fast_gate_passed": 4,
+    "size_check_passed": 4,
+    "legal_match_passed": 4,
+    "signal_confirmed": 4,
+    "lpr_identified": 4,
+    "contact_route_found": 4,
+    "qualified": 1,
+    "duplicates": 4,
+    "excluded": 28
+  },
+  "lane_metrics": [
+    {"lane": "fresh_growth_business_change", "raw": 5, "duplicates_early_rejects": 4, "qualified": 1},
+    {"lane": "moscow_region_new_production", "raw": 5, "duplicates_early_rejects": 4, "qualified": 1},
+    {"lane": "novosibirsk_investment_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "leningrad_spb_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "rostov_krasnodar_investment", "raw": 2, "duplicates_early_rejects": 2, "qualified": 0},
+    {"lane": "volga_investment_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "export_expansion", "raw": 2, "duplicates_early_rejects": 2, "qualified": 0},
+    {"lane": "dealer_network_expansion", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "franchise_network_expansion", "raw": 1, "duplicates_early_rejects": 1, "qualified": 0},
+    {"lane": "management_commercial_change", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0},
+    {"lane": "vladimir_frp_new_production", "raw": 1, "duplicates_early_rejects": 0, "qualified": 1}
+  ],
+  "notes": "Supplemental recovery continued. KARTAS was rejected by physical canonical dedup despite code search miss. TechnoSonus-Center is a newly deep-verified candidate. Keep recovery active below 120 hard floor and 300 preferred threshold. No outreach."
 }
