@@ -11,95 +11,68 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T07:42:00+03:00",
+  "updated_at": "2026-09-02T07:43:00+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260902-582",
   "current_run_id": "N5K-20260902-582",
   "last_run_id": "N5K-20260902-582",
   "latest_completed_run": "N5K-20260902-582",
-  "latest_attempted_run": "N5K-20260902-581R2",
+  "latest_attempted_run": "N5K-20260902-582",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260902-581R2",
-  "hourly_baseline_count": 593,
-  "hourly_net_new": 3,
+  "canonical_integration_run_id": "N5K-20260902-582",
+  "hourly_baseline_count": 596,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-581R2",
-    "raw": 82,
-    "fast_gate": 16,
-    "size": 9,
-    "legal": 7,
-    "signal": 7,
-    "lpr": 5,
-    "contact": 4,
-    "qualified": 3,
-    "duplicates": 1,
-    "excluded_early_reject": 78,
-    "qualified_raw_pct": 3.6585,
-    "fast_gate_raw_pct": 19.5122,
+    "run_id": "N5K-20260902-582",
+    "raw": 29,
+    "raw_scope_note": "Only exact employer-level raw supplied by current-hour workers; official_owner raw was null and was not reconstructed from truncated connector results.",
+    "fast_gate": 9,
+    "size": 4,
+    "legal": 3,
+    "signal": 3,
+    "lpr": 3,
+    "contact": 3,
+    "qualified": 0,
+    "duplicates": 4,
+    "excluded_early_reject": 28,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 31.0345,
     "raw_target_met": false,
     "minimum_raw_floor_met": false,
     "preferred_config_raw_target_met": false,
     "supplemental_discovery_performed": true,
     "normal_throughput_completion": false,
-    "raw_count_note": "82 conservatively resolved distinct employer-level raw across N5K-20260902-581 plus R1 and R2 recovery. Raw remains below mandatory 120; no search-result padding, saturated-sample repetition, jobs volume inflation, or criteria weakening."
+    "raw_count_note": "Current-hour growth_news worker supplied raw=29. official_owner searched multiple fresh low-overlap source families but deliberately left raw null because exact distinct employer count could not be verified. No padding or invented aggregation."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "N5K-20260902-581_initial",
-      "raw": 48,
-      "net_qualified": 1,
+      "lane": "growth_news_20260902_072314",
+      "raw": 29,
+      "net_qualified": 0,
       "physical_duplicates": 1,
       "next_state": "ROTATE"
     },
     {
-      "lane": "N5K-20260902-581R1_fresh_growth_business_change",
-      "raw": 23,
-      "net_qualified": 1,
-      "physical_duplicates": 0,
-      "next_state": "CONTINUE_LOW_OVERLAP"
-    },
-    {
-      "lane": "N5K-20260902-581R2_fresh_regional_production_business_change",
-      "raw": 11,
-      "net_qualified": 1,
-      "physical_duplicates": 0,
-      "next_state": "CONTINUE_LOW_OVERLAP"
+      "lane": "official_owner_20260902_072927",
+      "raw": null,
+      "net_qualified": 0,
+      "physical_duplicates": 1,
+      "next_state": "CONTINUE_LOW_OVERLAP_WITH_EXACT_RAW_INSTRUMENTATION"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260902-579R2",
-      "raw": 168,
-      "fast_gate": 21,
-      "qualified": 2,
-      "qualified_raw_pct": 1.1905,
-      "fast_gate_raw_pct": 12.5
-    },
-    {
-      "run_id": "N5K-20260902-580R1",
-      "raw": 120,
-      "fast_gate": 12,
-      "qualified": 1,
-      "qualified_raw_pct": 0.8333,
-      "fast_gate_raw_pct": 10.0
-    },
-    {
-      "run_id": "N5K-20260902-581R2",
-      "raw": 82,
-      "fast_gate": 16,
-      "qualified": 3,
-      "qualified_raw_pct": 3.6585,
-      "fast_gate_raw_pct": 19.5122
-    }
+    {"run_id":"N5K-20260902-580R1","raw":120,"fast_gate":12,"qualified":1,"qualified_raw_pct":0.8333,"fast_gate_raw_pct":10.0},
+    {"run_id":"N5K-20260902-581R2","raw":82,"fast_gate":16,"qualified":3,"qualified_raw_pct":3.6585,"fast_gate_raw_pct":19.5122},
+    {"run_id":"N5K-20260902-582","raw":29,"fast_gate":9,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":31.0345}
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 2.8252,
-    "net_new_change": 2,
-    "fast_gate_raw_pct_points": 9.5122,
-    "assessment": "Same-hour recovery raised physical net-new from +1 to +3 and raw from 48 to 82, but the mandatory raw floor 120 remains unmet. Continue fresh low-overlap discovery; do not repeat saturated samples."
+    "qualified_raw_pct_points": -3.6585,
+    "net_new_change": -3,
+    "fast_gate_raw_pct_points": 11.5223,
+    "assessment": "Current hour remains underdone: exact raw 29 < 120 and net-new 0. Continue fresh low-overlap discovery with exact employer-level raw instrumentation; do not repeat saturated samples."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -111,7 +84,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "N5K-20260902-581R2 physically integrated Belaya Dolina after candidate-level INN/OGRN/legal/domain guard. Qualified staged not counted is zero.",
-  "repair_required": "LOW_RAW_82_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "note": "N5K-20260902-582 completed after physical integration: +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "fresh_staging": "N5K-20260902-582 physically processed current-hour worker staging. ENHIM was rejected by physical dedup; no new rows added. Qualified staged not counted is zero.",
+  "repair_required": "LOW_RAW_EXACT_29_BELOW_MINIMUM_120_AFTER_CURRENT_HOUR_RECOVERY",
+  "note": "N5K-20260902-582 canonical writer completed physically with +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Current hour remains underdone by raw threshold."
 }
