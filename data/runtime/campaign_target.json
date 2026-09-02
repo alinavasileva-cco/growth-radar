@@ -13,12 +13,12 @@
   "campaign_status": "ACTIVE",
   "updated_at": "2026-09-02T04:35:21+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260902-579R1",
-  "current_run_id": "N5K-20260902-579R1",
-  "last_run_id": "N5K-20260902-579R1",
-  "latest_completed_run": "N5K-20260902-579R1",
-  "latest_attempted_run": "N5K-20260902-579R1",
-  "latest_attempted_run_status": "COMPLETED",
+  "last_completed_run_id": "N5K-20260902-579R2",
+  "current_run_id": "N5K-20260902-579R2",
+  "last_run_id": "N5K-20260902-579R2",
+  "latest_completed_run": "N5K-20260902-579R2",
+  "latest_attempted_run": "N5K-20260902-579R2",
+  "latest_attempted_run_status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260902-579R1",
   "hourly_baseline_count": 589,
   "hourly_net_new": 2,
@@ -26,8 +26,8 @@
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-579R1",
-    "raw": 120,
+    "run_id": "N5K-20260902-579R2",
+    "raw": 168,
     "fast_gate": 21,
     "size": 13,
     "legal": 10,
@@ -36,13 +36,14 @@
     "contact": 3,
     "qualified": 0,
     "duplicates": 1,
-    "excluded_early_reject": 119,
+    "excluded_early_reject": 167,
     "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 17.5,
+    "fast_gate_raw_pct": 12.5,
     "raw_target_met": true,
+    "minimum_raw_floor_met": true,
     "supplemental_discovery_performed": true,
-    "normal_throughput_completion": true,
-    "raw_count_note": "120 distinct employer-level raw resolved for the hourly cycle: 87 in 579 plus 33 fresh low-overlap industrial/business-change employers in 579R1. The promoted recovery candidate was rejected by authoritative physical dedup as an existing INN+OGRN duplicate."
+    "normal_throughput_completion": false,
+    "raw_count_note": "168 distinct employer-level raw resolved for the hourly cycle: 87 in 579, 33 in 579R1 and 48 additional distinct employers in 579R2 from fresh 27-31 Aug industrial and refinery-modernization sources. The explicit minimum raw floor of 120 is met; the current config's preferred >=300 continuation target is not met. No jobs, search-row padding or criteria weakening were used."
   },
   "latest_run_lane_efficiency": [
     {
@@ -52,16 +53,25 @@
       "submitted_to_physical_guard": 2,
       "net_qualified": 2,
       "physical_duplicates": 0,
-      "next_state": "SUPPLEMENTED_TO_RAW_MINIMUM"
+      "next_state": "SUPPLEMENTED"
     },
     {
-      "lane": "fresh_low_overlap_industrial_business_change_recovery",
+      "lane": "fresh_low_overlap_industrial_business_change_recovery_24_26_aug",
       "raw": 33,
       "prequalified_rechecked": 1,
       "submitted_to_physical_guard": 1,
       "net_qualified": 0,
       "physical_duplicates": 1,
-      "next_state": "ROTATE_TO_FRESH_LOW_OVERLAP_LANES"
+      "next_state": "ROTATED"
+    },
+    {
+      "lane": "fresh_industrial_and_modernization_recovery_27_31_aug",
+      "raw": 48,
+      "prequalified_rechecked": 0,
+      "submitted_to_physical_guard": 0,
+      "net_qualified": 0,
+      "physical_duplicates": 0,
+      "next_state": "ROTATE_TO_OTHER_FRESH_LOW_OVERLAP_LANES"
     }
   ],
   "last_3_run_efficiency": [
@@ -82,19 +92,19 @@
       "fast_gate_raw_pct": 22.4
     },
     {
-      "run_id": "N5K-20260902-579R1",
-      "raw": 120,
+      "run_id": "N5K-20260902-579R2",
+      "raw": 168,
       "fast_gate": 21,
       "qualified": 2,
-      "qualified_raw_pct": 1.6667,
-      "fast_gate_raw_pct": 17.5
+      "qualified_raw_pct": 1.1905,
+      "fast_gate_raw_pct": 12.5
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -0.7333,
+    "qualified_raw_pct_points": -1.2095,
     "net_new_change": -1,
-    "fast_gate_raw_pct_points": -4.9,
-    "assessment": "Hourly 579 recovery reached the raw minimum at 120. Physical hourly net-new remains +2 because the supplemental promoted candidate was already present in canonical by INN+OGRN."
+    "fast_gate_raw_pct_points": -9.9,
+    "assessment": "Hourly 579 recovery exceeded the explicit raw minimum: 168 vs 120. Physical hourly net-new remains +2 because the only supplemental candidate reaching the canonical writer was already present by INN+OGRN."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -106,7 +116,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "N5K-20260902-579R1 consumed the supplemental recovery candidate through the authoritative physical guard. Pending is cleared; staged not counted is zero.",
+  "fresh_staging": "N5K-20260902-579R2 completed supplemental discovery without another canonical writer because no additional candidate passed unchanged gates to READY_FOR_INTEGRATION. The prior 579R1 writer consumed its candidate and pending remains cleared; staged not counted is zero.",
   "repair_required": null,
-  "note": "N5K-20260902-579R1 completed same-cycle recovery: hourly raw=120, hourly baseline=589, physical hourly net-new=2, canonical/contactable 591/591; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Supplemental candidate was an existing physical INN+OGRN duplicate."
+  "note": "N5K-20260902-579R2 supplemental recovery: hourly raw=168, explicit minimum 120 met; hourly baseline=589, physical hourly net-new=2, canonical/contactable 591/591; canonical integration remains 579R1 because R2 had no new qualified row; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0."
 }
