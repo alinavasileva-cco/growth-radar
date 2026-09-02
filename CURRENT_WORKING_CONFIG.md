@@ -60,3 +60,7 @@
 - integrity PASS; orphan contacts/evidence **0 / 0**; staged **0**; active WIP **0**; outreach **0**.
 
 Полная историческая детализация сохранена в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, immutable worker-staging и Git history; она не дублируется здесь, чтобы устаревшие baseline не использовались как текущие.
+
+
+## Latest attempted run N5K-20260902-588
+Canonical/contactable: 601/601. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 16. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

@@ -1,117 +1,100 @@
 {
-  "run_id": "N5K-20260902-587",
+  "run_id": "N5K-20260902-588",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
-  "updated_at": "2026-09-02T16:32:00+03:00",
-  "stage": "COMPLETE",
+  "status": "UNDERDONE_RECOVERY_REQUIRED",
+  "updated_at": "2026-09-02T17:12:00+03:00",
+  "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
-    "baseline_count": 600,
+    "baseline_count": 601,
     "target_count": 5000,
     "current_canonical_count": 601,
     "current_contactable_count": 601,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4399
   },
   "funnel": {
-    "raw_distinct": 120,
-    "discovered": 120,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 119
+    "raw_distinct": 16,
+    "discovered": 16,
+    "fast_gate_passed": 5,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 2,
+    "contact_route_found": 2,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 15
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 120,
+    "raw_distinct": 16,
     "external_technical_limitation_proven": false,
-    "passed": true
+    "passed": false
   },
   "lane_metrics": [
     {
-      "lane": "fresh_official_owner_staging_20260902_143801",
-      "raw": 58,
+      "lane": "fresh_growth_business_change",
+      "raw": 2,
+      "duplicates_early_rejects": 1,
       "qualified": 1,
-      "note": "Fresh immutable worker staging; one candidate proceeded through full deep funnel, one documented SIZE_FAIL, remaining source-level observations were not promoted without full proof."
+      "note": "ГК Цифра; management/business-change source."
     },
     {
-      "lane": "supplemental_fresh_growth_expansion_multi_source",
-      "raw": 62,
-      "qualified": 0,
-      "note": "62 de-repeated employer-level observations from fresh production expansion, new plants/capacity, logistics/dealer expansion and business-change sources. No candidate promoted from this batch without full legal/size/LPR/contact verification.",
-      "observed_employers": [
-        "Мосэлектрощит",
-        "РВБ",
-        "Семаргл",
-        "НАРТИС",
-        "АВГ Арматура",
-        "Тосно",
-        "Группа НЭК",
-        "Родниковский свинокомплекс",
-        "TENET PLUS",
-        "Петербургское стекло",
-        "DoorHan",
-        "РГК",
-        "ГК Август",
-        "СИБУР",
-        "СибЕвроВэн",
-        "ТЕХНОНИКОЛЬ",
-        "Энхим",
-        "Октава ДМ",
-        "НПО БИТ",
-        "Веза",
-        "Гекса",
-        "Город-спутник Южный",
-        "СибБурМаш",
-        "Боровская бумажная компания",
-        "Тюменский РМЗ",
-        "Транссибирская компания",
-        "Химпроект",
-        "AGR",
-        "Магнит",
-        "AVIOR",
-        "VVP Tech",
-        "ФАВ-Восточная Европа",
-        "Yandex B2B Tech",
-        "СОЛЛЕРС",
-        "VOLGA",
-        "Айтеко",
-        "РТК-ЦОД",
-        "Selectel",
-        "Кристалл",
-        "Jeland",
-        "Грейт Волл Мотор Рус",
-        "РЕХАУ",
-        "Северсталь",
-        "Эйрена",
-        "РУСБУТИРАЛЬ",
-        "ПК ШИК",
-        "Хабаровский механический завод",
-        "Т1",
-        "Интер РАО – Машиностроение",
-        "Русские Газовые Турбины",
-        "ГК КСК",
-        "Фаберлик Нэйчурал Лабс",
-        "Любятово",
-        "Корона",
-        "ЭвоКом",
-        "ГК Атлантис",
-        "Енисейлесозавод",
-        "Бытпласт",
-        "Турбокомплект",
-        "ПСК Фарма",
-        "Чистая Линия",
-        "ПК НИТ"
-      ]
+      "lane": "moscow_region_new_production",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
+      "qualified": 0
+    },
+    {
+      "lane": "novosibirsk_investment_new_production",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
+      "qualified": 0
+    },
+    {
+      "lane": "leningrad_spb_new_production",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
+      "qualified": 0
+    },
+    {
+      "lane": "rostov_krasnodar_investment",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
+      "qualified": 0
+    },
+    {
+      "lane": "volga_investment_new_production",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
+      "qualified": 0
+    },
+    {
+      "lane": "export_expansion",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "dealer_network_expansion",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "franchise_network_expansion",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "management_commercial_change",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
+      "qualified": 0
     }
   ],
-  "qualified_companies": [
-    "ПП ВОСХОД"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -119,5 +102,5 @@
   "physical_master_state": "601_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "601_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }

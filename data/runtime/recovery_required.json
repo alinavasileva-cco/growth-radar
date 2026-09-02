@@ -1,0 +1,19 @@
+{
+  "run_id": "N5K-20260902-588",
+  "status": "RECOVERY_REQUIRED",
+  "created_at": "2026-09-02T17:12:00+03:00",
+  "reason": "AUTHORITATIVE_RAW_BELOW_MINIMUM",
+  "raw_distinct": 16,
+  "minimum_raw_distinct": 120,
+  "instruction": "Continue supplemental discovery in the same cycle using fresh low-overlap sources. Do not weaken quality gates. Do not perform outreach.",
+  "priority_source_families": [
+    "fresh_growth_business_change",
+    "official_owner_ceo",
+    "regional_investment_new_production",
+    "export_dealer_franchise",
+    "management_commercial_transformation",
+    "partner_business_change"
+  ],
+  "quality_criteria_may_be_relaxed": false,
+  "outreach_allowed": false
+}
