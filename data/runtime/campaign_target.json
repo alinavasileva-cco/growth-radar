@@ -27,84 +27,33 @@
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-593",
-    "raw": 32,
-    "fast_gate": 1,
-    "size": 1,
-    "legal": 1,
-    "signal": 1,
-    "lpr": 1,
-    "contact": 1,
+    "run_id": "N5K-20260903-594",
+    "raw": 40,
+    "fast_gate": 0,
+    "size": 0,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
     "qualified": 0,
-    "duplicates": 1,
-    "excluded": 31,
+    "duplicates": 0,
+    "excluded": 40,
     "minimum_raw_floor_met": false,
     "preferred_config_raw_target_met": false,
     "normal_throughput_completion": false,
-    "raw_count_note": "32 genuinely distinct employer-level raw across 10 rotated low-overlap lanes. Same-cycle discovery used fresh source families without generic catalog padding. One candidate passed deep verification but was rejected by physical canonical dedup. Raw remains below the 120 hard floor and 300 preferred continuation threshold; criteria unchanged; outreach 0."
+    "raw_count_note": "40 distinct employer-level raw across 10 rotated low-overlap lanes. Raw remains below the 120 hard floor and 300 continuation threshold. No external technical limitation claimed; no catalog padding; criteria unchanged; no outreach."
   },
   "latest_run_lane_efficiency": [
-    {
-      "lane": "regional_investment_new_production",
-      "raw": 5,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 5
-    },
-    {
-      "lane": "industrial_park_sez_technopark",
-      "raw": 4,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 3,
-      "physical_duplicates": 1
-    },
-    {
-      "lane": "regional_official_private_expansion",
-      "raw": 3,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 3
-    },
-    {
-      "lane": "msp_product_scaleup",
-      "raw": 1,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 1
-    },
-    {
-      "lane": "export_capacity_growth",
-      "raw": 1,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 1
-    },
-    {
-      "lane": "dealer_franchise_partner_expansion",
-      "raw": 6,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 6
-    },
-    {
-      "lane": "logistics_warehouse_commercial_property",
-      "raw": 5,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 5
-    },
-    {
-      "lane": "new_line_workshop_factory",
-      "raw": 4,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 4
-    },
-    {
-      "lane": "new_branches_stores_service_centers",
-      "raw": 2,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 2
-    },
-    {
-      "lane": "ma_private_investment",
-      "raw": 1,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 1
-    }
+    {"lane":"regional_investment_new_production","raw":7,"net_qualified":0,"duplicates_early_rejects":7},
+    {"lane":"industrial_park_sez_technopark","raw":5,"net_qualified":0,"duplicates_early_rejects":5},
+    {"lane":"regional_official_private_expansion","raw":5,"net_qualified":0,"duplicates_early_rejects":5},
+    {"lane":"msp_regional_scaleup","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
+    {"lane":"export_capacity_growth","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"dealer_franchise_partner_expansion","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
+    {"lane":"logistics_warehouse_commercial_property","raw":5,"net_qualified":0,"duplicates_early_rejects":5},
+    {"lane":"new_line_workshop_factory","raw":8,"net_qualified":0,"duplicates_early_rejects":8},
+    {"lane":"ma_private_investment","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"branches_offices_service_centers","raw":2,"net_qualified":0,"duplicates_early_rejects":2}
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -115,8 +64,8 @@
     "management_change_commercial_transformation_fresh": 15,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "RUN N5K-20260902-593 was physically processed by the canonical writer; БИОФАРМЛАБ was rejected by physical canonical dedup as an existing company; qualified staged not counted is zero.",
+  "fresh_staging": "RUN N5K-20260903-594 was physically processed by the canonical writer; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-594 requires recovery: raw_distinct 40<300; hard_floor_passed=False; canonical/contactable 605/605; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-594 requires recovery: raw_distinct 40<300; hard_floor_passed=false; canonical/contactable 605/605; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
