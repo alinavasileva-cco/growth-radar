@@ -1,15 +1,15 @@
 {
   "run_id": "N5K-20260902-581R2",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "updated_at": "2026-09-02T06:36:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 595,
+    "baseline_count": 593,
     "target_count": 5000,
     "current_canonical_count": 596,
     "current_contactable_count": 596,
-    "progress_added": 1,
+    "progress_added": 3,
     "remaining": 4404
   },
   "funnel": {
@@ -20,37 +20,48 @@
     "signal_confirmed": 7,
     "lpr_identified": 5,
     "contact_route_found": 4,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 81
+    "qualified": 3,
+    "duplicates": 1,
+    "excluded": 78
   },
   "lane_metrics": [
     {
-      "lane": "hourly_581R1_carry_forward",
-      "distinct_raw": 71,
-      "duplicates_plus_early_rejects": 70,
-      "prequalified_rechecked": 0,
-      "submitted_to_physical_guard": 0,
-      "notes": "Cumulative authoritative employer-level raw already established through N5K-20260902-581R1."
+      "lane": "N5K-20260902-581_initial",
+      "distinct_raw": 48,
+      "net_qualified": 1,
+      "physical_duplicates": 1,
+      "notes": "Initial current-hour canonical run; Raketa added, Eltex blocked by physical guard."
     },
     {
-      "lane": "fresh_regional_production_business_change_581R2",
+      "lane": "N5K-20260902-581R1_fresh_growth_business_change",
+      "distinct_raw": 23,
+      "net_qualified": 1,
+      "physical_duplicates": 0,
+      "notes": "Fresh low-overlap recovery; Avgust physically integrated."
+    },
+    {
+      "lane": "N5K-20260902-581R2_fresh_regional_production_business_change",
       "distinct_raw": 11,
-      "duplicates_plus_early_rejects": 10,
-      "prequalified_rechecked": 1,
-      "submitted_to_physical_guard": 1,
-      "notes": "Fresh named-employer signals from regional production/investment and business-change sources; jobs not used and saturated known samples excluded."
+      "net_qualified": 1,
+      "physical_duplicates": 0,
+      "notes": "Fresh low-overlap recovery; Belaya Dolina physically integrated. Jobs not used."
     }
   ],
-  "qualified_companies": [
-    "Белая Долина"
-  ],
+  "qualified_companies": ["Ракета", "Август", "Белая Долина"],
+  "physical_duplicate_companies": ["Элтекс"],
+  "raw_target_met": false,
+  "minimum_raw_floor_met": false,
+  "preferred_config_raw_target_met": false,
+  "supplemental_discovery_performed": true,
+  "normal_throughput_completion": false,
+  "raw_count_note": "82 conservatively resolved distinct employer-level raw across the initial run plus two same-hour low-overlap recovery waves. The mandatory floor 120 was not reached; search-result rows were not padded into raw, saturated samples were not repeated, jobs were not used for volume, and selection criteria were unchanged.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "LOW_RAW_82_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY"
 }
