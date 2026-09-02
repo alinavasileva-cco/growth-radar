@@ -1,19 +1,14 @@
 {
   "run_id": "N5K-20260902-588",
   "status": "RECOVERY_REQUIRED",
-  "created_at": "2026-09-02T17:12:00+03:00",
-  "reason": "AUTHORITATIVE_RAW_BELOW_MINIMUM",
+  "reason": "AUTHORITATIVE_RAW_BELOW_PREFERRED_CONTINUE_THRESHOLD",
   "raw_distinct": 16,
-  "minimum_raw_distinct": 120,
-  "instruction": "Continue supplemental discovery in the same cycle using fresh low-overlap sources. Do not weaken quality gates. Do not perform outreach.",
-  "priority_source_families": [
-    "fresh_growth_business_change",
-    "official_owner_ceo",
-    "regional_investment_new_production",
-    "export_dealer_franchise",
-    "management_commercial_transformation",
-    "partner_business_change"
-  ],
+  "hard_minimum_raw_distinct": 120,
+  "preferred_continue_until_raw_distinct": 300,
+  "hard_floor_passed": false,
+  "external_technical_limitation_proven": false,
+  "instruction": "Continue supplemental discovery in the same cycle across fresh low-overlap lanes until raw>=300 or a proven external technical limitation is recorded. Do not weaken quality gates. Do not perform outreach.",
+  "minimum_independent_lanes": 10,
   "quality_criteria_may_be_relaxed": false,
   "outreach_allowed": false
 }

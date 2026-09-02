@@ -29,7 +29,10 @@
     "minimum_authoritative_raw": 120,
     "raw_distinct": 16,
     "external_technical_limitation_proven": false,
-    "passed": false
+    "passed": false,
+    "preferred_continue_until_raw": 300,
+    "hard_floor_passed": false,
+    "preferred_throughput_passed": false
   },
   "lane_metrics": [
     {

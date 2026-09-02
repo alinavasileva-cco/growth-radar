@@ -17,9 +17,9 @@
   "current_run_id": "N5K-20260902-588",
   "last_run_id": "N5K-20260902-588",
   "latest_completed_run": "N5K-20260902-587",
-  "latest_attempted_run": "N5K-20260902-587",
+  "latest_attempted_run": "N5K-20260902-588",
   "latest_attempted_run_id": "N5K-20260902-588",
-  "latest_attempted_run_status": "COMPLETED",
+  "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260902-587",
   "hourly_baseline_count": 600,
   "hourly_net_new": 1,
@@ -69,7 +69,7 @@
     "partner_business_change_fresh": 15
   },
   "fresh_staging": "Fresh official_owner staging 20260902-143801 was physically processed by the canonical writer in N5K-20260902-587; qualified staged not counted is zero; immutable source retained.",
-  "repair_required": "PREFERRED_RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_NEXT_CYCLE",
+  "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260902-588 UNDERDONE: raw_distinct 16<120; +0 physically integrated; canonical/contactable 601/601; integrity PASS; supplemental discovery required; outreach 0."
+  "note": "N5K-20260902-588 requires recovery: raw_distinct 16<300; hard_floor_passed=False; canonical/contactable 601/601; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
