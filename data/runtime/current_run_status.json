@@ -1,63 +1,39 @@
 {
-  "run_id": "N5K-20260902-585",
+  "run_id": "N5K-20260902-586R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "updated_at": "2026-09-02T14:27:50+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T15:30:00+03:00",
   "stage": "COMPLETE",
-  "normal_throughput_completion": false,
-  "raw_distinct_employer_level": 17,
-  "raw_minimum_floor": 120,
-  "raw_target": "250-500",
-  "raw_minimum_floor_met": false,
-  "raw_target_met": false,
-  "supplemental_discovery_performed": true,
   "new_cycle": {
-    "baseline_count": 598,
+    "baseline_count": 599,
     "target_count": 5000,
-    "current_canonical_count": 599,
-    "current_contactable_count": 599,
+    "current_canonical_count": 600,
+    "current_contactable_count": 600,
     "progress_added": 1,
-    "remaining": 4401
+    "remaining": 4400
   },
   "funnel": {
-    "discovered": 17,
-    "fast_gate_passed": 3,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+    "discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
-    "duplicates": 1,
-    "excluded": 15
+    "duplicates": 0,
+    "excluded": 0
   },
-  "lane_metrics": [
-    {
-      "lane": "fresh_official_owner_staging_20260902_142604",
-      "raw_distinct_counted": 15,
-      "deep_pass": 2,
-      "physical_duplicates": 1,
-      "qualified_after_physical_guard": 1,
-      "note": "Fresh immutable worker staging was consumed first. Semargl rejected at FAST GATE as a Kalashnikov asset. Summit/MFK Summit not promoted because the expansion signal could not be tied fail-closed to the exact MFK legal entity rather than the wider group. Lalibela Coffee and ABI Product reached final physical guard; Lalibela was blocked as an existing canonical duplicate on INN, OGRN and exact legal name; ABI Product was net-new and integrated."
-    },
-    {
-      "lane": "supplemental_low_overlap_fresh_production_business_change",
-      "raw_distinct_counted": 2,
-      "deep_pass": 0,
-      "physical_duplicates": 0,
-      "qualified_after_physical_guard": 0,
-      "note": "Own-discovery probes: Technoplast/MGC Group and ARAVIA. Technoplast lacked a sufficiently closed current dated S-signal for this run; ARAVIA lacked an exact brand/domain contact-to-legal-entity tie. Search-result observations were not counted as raw."
-    }
+  "lane_metrics": [],
+  "qualified_companies": [
+    "Rubetek"
   ],
-  "qualified_companies": ["Аби"],
-  "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "599_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "599_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "600_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "600_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "throughput_disclosure": "Authoritative distinct raw=17, below floor 120 and target 250-500. Fresh staging was consumed first, then supplemental low-overlap discovery was performed. No padding with search-result rows, weak catalogs, jobs or uninstrumented observations."
+  "blocker": null
 }

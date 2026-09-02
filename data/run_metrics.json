@@ -1,48 +1,31 @@
 {
-  "generated_at": "2026-09-02T14:27:50+03:00",
+  "generated_at": "2026-09-02T15:30:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-585",
-  "current_run_id": "N5K-20260902-585",
+  "latest_completed_run_id": "N5K-20260902-586R1",
+  "current_run_id": "N5K-20260902-586R1",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 599,
-  "contactable_verified": 599,
+  "canonical_pool_verified": 600,
+  "contactable_verified": 600,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4401,
+  "remaining_to_target": 4400,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_585": {
-    "raw_discovered": 17,
-    "fast_gate_passed": 3,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 2,
+  "run_586R1": {
+    "raw_discovered": 1,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
     "qualified": 1,
     "physically_integrated": 1,
-    "duplicates": 1,
-    "excluded": 15,
-    "lane_metrics": [
-      {
-        "lane": "fresh_official_owner_staging_20260902_142604",
-        "raw_distinct_counted": 15,
-        "deep_pass": 2,
-        "physical_duplicates": 0,
-        "qualified_after_physical_guard": 2,
-        "note": "Fresh immutable worker staging was consumed first. Four PREQUALIFIED candidates were independently rechecked. Semargl was rejected at FAST GATE because current official/regional sources identify it as an asset of concern Kalashnikov. Summit/MFK Summit was not promoted because the fresh pawnshop expansion signal could not be tied fail-closed to the exact MFK legal entity rather than the wider group. Lalibela Coffee and ABI Product closed the full current funnel before final physical integration guard."
-      },
-      {
-        "lane": "supplemental_low_overlap_fresh_production_business_change",
-        "raw_distinct_counted": 2,
-        "deep_pass": 0,
-        "physical_duplicates": 0,
-        "qualified_after_physical_guard": 0,
-        "note": "Auditably counted own-discovery probes: Technoplast/MGC Group and ARAVIA. Technoplast was not promoted because the independently reproducible dated S-signal was insufficiently current/closed for this run; ARAVIA was not promoted because the public brand/domain contact route could not be tied exactly to the candidate legal entity. Additional search-result observations were not counted as raw."
-      }
-    ]
+    "duplicates": 0,
+    "excluded": 0,
+    "lane_metrics": []
   }
 }
