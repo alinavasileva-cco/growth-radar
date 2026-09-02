@@ -11,7 +11,7 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T18:43:00+03:00",
+  "updated_at": "2026-09-02T18:47:00+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260902-587",
   "current_run_id": "N5K-20260902-588R1",
@@ -71,5 +71,5 @@
   "fresh_staging": "Fresh official_owner staging 20260902-143801 was physically processed by the canonical writer in N5K-20260902-587; qualified staged not counted is zero; immutable source retained.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260902-588R1 requires recovery: raw_distinct 31<300; hard_floor_passed=False; canonical/contactable 601/601; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260902-588R1 requires recovery: raw_distinct 32<300; hard_floor_passed=False; canonical/contactable 601/601; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
