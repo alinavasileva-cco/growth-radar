@@ -1,131 +1,105 @@
 {
-  "run_id": "N5K-20260902-588R1",
+  "run_id": "N5K-20260902-589",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
-  "updated_at": "2026-09-02T18:55:00+03:00",
-  "stage": "COMPLETE",
+  "status": "UNDERDONE_RECOVERY_REQUIRED",
+  "updated_at": "2026-09-02T19:07:55+03:00",
+  "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
-    "baseline_count": 602,
+    "baseline_count": 604,
     "target_count": 5000,
     "current_canonical_count": 604,
     "current_contactable_count": 604,
-    "progress_added": 2,
+    "progress_added": 0,
     "remaining": 4396
   },
   "funnel": {
-    "raw_distinct": 305,
-    "discovered": 305,
-    "fast_gate_passed": 9,
-    "size_check_passed": 9,
-    "legal_match_passed": 9,
-    "signal_confirmed": 9,
-    "lpr_identified": 9,
-    "contact_route_found": 9,
-    "qualified": 2,
-    "duplicates": 7,
-    "excluded": 296
+    "raw_distinct": 53,
+    "discovered": 53,
+    "fast_gate_passed": 3,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
+    "lpr_identified": 2,
+    "contact_route_found": 1,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 52
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 305,
+    "raw_distinct": 53,
     "external_technical_limitation_proven": false,
-    "passed": true,
+    "passed": false,
     "preferred_continue_until_raw": 300,
-    "hard_floor_passed": true,
-    "preferred_throughput_passed": true
+    "hard_floor_passed": false,
+    "preferred_throughput_passed": false
   },
   "lane_metrics": [
     {
       "lane": "fresh_growth_business_change",
-      "raw": 5,
-      "duplicates_early_rejects": 4,
-      "qualified": 1
+      "raw": 6,
+      "duplicates_early_rejects": 6,
+      "qualified": 0
     },
     {
       "lane": "moscow_region_new_production",
-      "raw": 5,
-      "duplicates_early_rejects": 4,
-      "qualified": 1
-    },
-    {
-      "lane": "novosibirsk_investment_new_production",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "leningrad_spb_new_production",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "rostov_krasnodar_investment",
-      "raw": 2,
-      "duplicates_early_rejects": 2,
-      "qualified": 0
-    },
-    {
-      "lane": "volga_investment_new_production",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "export_expansion",
-      "raw": 2,
-      "duplicates_early_rejects": 2,
-      "qualified": 0
-    },
-    {
-      "lane": "dealer_network_expansion",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "franchise_network_expansion",
-      "raw": 1,
-      "duplicates_early_rejects": 1,
-      "qualified": 0
-    },
-    {
-      "lane": "management_commercial_change",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0
-    },
-    {
-      "lane": "vladimir_frp_new_production",
-      "raw": 1,
-      "duplicates_early_rejects": 1,
-      "qualified": 0
-    },
-    {
-      "lane": "chuvashia_new_production",
-      "raw": 1,
-      "duplicates_early_rejects": 0,
-      "qualified": 1
-    },
-    {
-      "lane": "management_productivity_current_participants",
-      "raw": 229,
-      "duplicates_early_rejects": 229,
+      "raw": 8,
+      "duplicates_early_rejects": 7,
       "qualified": 0,
-      "note": "Broad S3 probe stopped because company-level freshness/contact evidence was insufficient for qualification in this pass."
+      "note": "Биофармлаб дошёл до deep-check, но свежий практический contact route не подтверждён на том же уровне качества."
     },
     {
-      "lane": "fresh_industrial_export_logistics_supplemental",
-      "raw": 43,
-      "duplicates_early_rejects": 39,
-      "qualified": 4,
-      "note": "Fresh 2026 capacity, production, export and logistics signals; four passed full legal/size/signal/LPR/contact verification."
+      "lane": "northwest_new_production",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "volga_new_production",
+      "raw": 6,
+      "duplicates_early_rejects": 5,
+      "qualified": 0,
+      "note": "VR Robotics дошёл до SIZE и отклонён как недостаточный текущий масштаб."
+    },
+    {
+      "lane": "ural_new_production",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "south_new_production",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "central_new_production",
+      "raw": 7,
+      "duplicates_early_rejects": 7,
+      "qualified": 0
+    },
+    {
+      "lane": "official_owner_company",
+      "raw": 4,
+      "duplicates_early_rejects": 3,
+      "qualified": 1
+    },
+    {
+      "lane": "dealer_franchise_partner_expansion",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "large_transformation_probe",
+      "raw": 10,
+      "duplicates_early_rejects": 10,
+      "qualified": 0,
+      "note": "Probe-only: крупные/государственные/нецелевые работодатели не продвигались в deep funnel."
     }
   ],
-  "qualified_companies": [
-    "Титан-Полимер",
-    "РУСТАРК"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -133,5 +107,5 @@
   "physical_master_state": "604_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "604_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }

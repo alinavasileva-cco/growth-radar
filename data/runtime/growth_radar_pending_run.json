@@ -1,70 +1,9 @@
 {
   "run_id": "N5K-20260902-589",
   "updated_at": "2026-09-02T19:07:55+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-5031094336",
-      "Brand": "ULTRAFILAMENT",
-      "Legal Name": "ООО «СОЮЗТЕКСТИЛЬ-СТ»",
-      "INN": "5031094336",
-      "OGRN/OGRNIP": "1105031004935",
-      "Region": "Курская область",
-      "City": "Курск",
-      "Segment": "Технический текстиль / геотекстиль / промышленный B2B",
-      "Website": "https://ultrafilament.ru/",
-      "Revenue/Scale": "250+ сотрудников; 50 000 м² производственных площадей на актуальном официальном сайте.",
-      "Signal Level": "S1",
-      "Signal Summary": "14.07.2026 предприятие запустило новые линии по выпуску медицинских и гигиенических изделий; стоимость проекта 1,9 млрд ₽. Ранее в 2026 году мощности технических тканей и геотекстиля были увеличены с 3 до 7 млн м² в год.",
-      "Signal Date": "2026-07-14",
-      "Signal Source": "https://www.kommersant.ru/doc/8814847",
-      "Owner": "Анкудинов Юрий Валентинович — учредитель 100%",
-      "CEO": "Анкудинов Юрий Валентинович",
-      "LPR": "Анкудинов Юрий Валентинович",
-      "LPR Role": "Генеральный директор / собственник",
-      "Primary Phone": "+7 (800) 505-90-39",
-      "Primary Email": "info@ultrafilament.ru",
-      "HH Contact": "",
-      "Contact Form": "https://ultrafilament.ru/contact/",
-      "Contact Type": "Официальный корпоративный email / телефон / форма связи",
-      "Contact Source": "https://ultrafilament.ru/contact/",
-      "Consulting Hypothesis": "Быстрое расширение производственных мощностей и продуктовой линейки создаёт задачи коммерческой загрузки мощностей, B2B pipeline, маржинальности, KPI и управленческой отчётности.",
-      "contacts": [
-        {"value": "info@ultrafilament.ru", "channel": "Email", "type": "Корпоративный маршрут", "source": "ULTRAFILAMENT", "url": "https://ultrafilament.ru/contact/", "is_lpr": false, "notes": "Официальный корпоративный email"},
-        {"value": "+7 (800) 505-90-39", "channel": "Phone", "type": "Корпоративный маршрут", "source": "ULTRAFILAMENT", "url": "https://ultrafilament.ru/contact/", "is_lpr": false, "notes": "Официальный телефон"}
-      ],
-      "evidence": [
-        {"type": "LEGAL_SCALE", "claim": "ООО «Союзтекстиль-СТ»: ИНН 5031094336, ОГРН 1105031004935; действующее российское частное юрлицо; гендиректор и собственник Юрий Анкудинов; официальный сайт указывает 250+ сотрудников и 50 000 м² производства.", "url": "https://ultrafilament.ru/contact/", "source": "ULTRAFILAMENT"},
-        {"type": "SIGNAL", "claim": "14.07.2026 запущены новые производственные линии по медицинским и гигиеническим изделиям; проект 1,9 млрд ₽.", "url": "https://www.kommersant.ru/doc/8814847", "source": "Коммерсантъ"},
-        {"type": "CONTACT", "claim": "Официальная страница публикует телефон +7 (800) 505-90-39, email info@ultrafilament.ru и форму связи.", "url": "https://ultrafilament.ru/contact/", "source": "ULTRAFILAMENT"}
-      ]
-    }
-  ],
-  "qualified_staged_not_counted": 1,
-  "funnel": {
-    "raw_distinct": 53,
-    "discovered": 53,
-    "fast_gate_passed": 3,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 52
-  },
-  "lane_metrics": [
-    {"lane": "fresh_growth_business_change", "raw": 6, "duplicates_early_rejects": 6, "qualified": 0},
-    {"lane": "moscow_region_new_production", "raw": 8, "duplicates_early_rejects": 7, "qualified": 0, "note": "Биофармлаб дошёл до deep-check, но свежий практический contact route не подтверждён на том же уровне качества."},
-    {"lane": "northwest_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "volga_new_production", "raw": 6, "duplicates_early_rejects": 5, "qualified": 0, "note": "VR Robotics дошёл до SIZE и отклонён как недостаточный текущий масштаб."},
-    {"lane": "ural_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "south_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "central_new_production", "raw": 7, "duplicates_early_rejects": 7, "qualified": 0},
-    {"lane": "official_owner_company", "raw": 4, "duplicates_early_rejects": 3, "qualified": 1},
-    {"lane": "dealer_franchise_partner_expansion", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "large_transformation_probe", "raw": 10, "duplicates_early_rejects": 10, "qualified": 0, "note": "Probe-only: крупные/государственные/нецелевые работодатели не продвигались в deep funnel."}
-  ],
-  "notes": "Fresh supplemental discovery performed across 10 independent low-overlap lanes. 53 distinct employer-level raw were physically observed and deduplicated at brand/employer level from fresh 2026 sources. Hard floor 120 not reached in this cycle segment, so run must remain UNDERDONE_RECOVERY_REQUIRED after writer. Criteria were not weakened; no catalog padding; outreach 0."
+  "status": "RECOVERY_REQUIRED",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "raw_distinct": 53,
+  "note": "N5K-20260902-589 integrated verified rows but cannot be COMPLETED: raw_distinct=53<120. Supplemental discovery required."
 }
