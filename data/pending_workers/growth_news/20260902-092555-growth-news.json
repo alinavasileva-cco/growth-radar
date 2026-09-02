@@ -1,0 +1,165 @@
+{
+  "schema_version": "growth_news_worker_v2",
+  "lane": "growth_news",
+  "created_at": "2026-09-02T09:25:55+03:00",
+  "immutable": true,
+  "worker_role": "READ_DISCOVERY_ONLY",
+  "guards": {
+    "current_working_config_changed": false,
+    "canonical_master_changed": false,
+    "contactable_master_changed": false,
+    "runtime_changed": false,
+    "campaign_changed": false,
+    "outreach_performed": false,
+    "canonical_writer_authority_claimed": false
+  },
+  "baseline": {
+    "config_version": "2026-09-02T08:47:00+03:00",
+    "last_completed_run": "N5K-20260902-583R1",
+    "physical_canonical_count": 596,
+    "physical_contactable_count": 596,
+    "integrity": "PASS",
+    "source": "CURRENT_WORKING_CONFIG.md + data/runtime/current_run_status.json"
+  },
+  "dedup_policy": {
+    "historical_pending_full_materialization_required": false,
+    "pre_deep_check": "physical canonical/contactable plus compact runtime/index and candidate-level repo search",
+    "candidate_keys": ["inn", "ogrn_ogrnip", "exact_legal_name", "brand_domain"],
+    "final_global_dedup": "CANONICAL_WRITER_ONLY",
+    "staged_is_added_company": false
+  },
+  "metrics": {
+    "raw": 26,
+    "fast": 7,
+    "size": 4,
+    "legal": 3,
+    "signal": 3,
+    "lpr": 2,
+    "contact": 2,
+    "prequalified_needs_final_global_dedup": 2,
+    "reject": 24,
+    "source_batches": 8,
+    "target_80_150_met": false,
+    "target_note": "Не добивалось слабым каталогом; в raw засчитаны только реально разрешенные employer-level наблюдения из доступной свежей выдачи."
+  },
+  "source_batches": [
+    {"batch":"central_industrial_expansion_aug","region":"ЦФО","signal_type":"production_expansion","raw":4,"examples":["Курский аккумуляторный завод","Турбокомплект","ХимРар / АФС-Технологии","Мосэлектрощит"]},
+    {"batch":"moscow_robotics_new_sites_aug","region":"Москва/Московская область","signal_type":"new_site","raw":3,"examples":["Семаргл","SSI Решения","Haval Motor Manufacturing Rus"]},
+    {"batch":"siberia_regional_expansion","region":"Сибирь","signal_type":"new_office_region","raw":3,"examples":["Рок Энд Милл","Югорский лесопромышленный холдинг","Агросила"]},
+    {"batch":"northwest_new_production","region":"СЗФО","signal_type":"new_production","raw":4,"examples":["Лаборатория ППШ","Лазерные системы","Фармпроект","НПО Петровакс Фарм"]},
+    {"batch":"food_agro_capacity","region":"разные регионы РФ","signal_type":"capacity_growth","raw":3,"examples":["Лалибела кофе","Павловская птицефабрика / Русское Поле","Ариада"]},
+    {"batch":"polymers_packaging","region":"ДФО/ЮФО/Поволжье","signal_type":"investment_new_production","raw":3,"examples":["Технопласт / MGC GROUP","Астраханский трубный завод","Август-Полимер"]},
+    {"batch":"engineering_machinery","region":"ЦФО/СЗФО","signal_type":"new_product_or_capacity","raw":3,"examples":["Октава ДМ","Завод буровых технологий","Группа ГАЗ"]},
+    {"batch":"industrial_large_caps","region":"разные регионы РФ","signal_type":"investment_capacity","raw":3,"examples":["ТЕХНОНИКОЛЬ","Русские Газовые Турбины","ТАГМЕТ"]}
+  ],
+  "raw_observations": [
+    {"company":"Курский аккумуляторный завод","outcome":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP"},
+    {"company":"Рок Энд Милл","outcome":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP"},
+    {"company":"Семаргл","outcome":"REJECT","reason":"LEGAL_AMBIGUITY: в открытой выдаче несколько действующих одноименных ООО; надежная связь конкретного ИНН/ОГРН с новой робототехнической площадкой не доказана без двусмысленности"},
+    {"company":"Турбокомплект","outcome":"REJECT","reason":"KNOWN_OVERLAP_FROM_PREVIOUS_GROWTH_NEWS_CYCLE"},
+    {"company":"Мосэлектрощит","outcome":"REJECT","reason":"KNOWN_OVERLAP_FROM_PREVIOUS_GROWTH_NEWS_CYCLE"},
+    {"company":"ХимРар / АФС-Технологии","outcome":"REJECT","reason":"NOT_DEEP_CHECKED_THIS_CYCLE_AFTER_WIP_PRIORITIZATION"},
+    {"company":"SSI Решения","outcome":"REJECT","reason":"KNOWN_OVERLAP_FROM_PREVIOUS_GROWTH_NEWS_CYCLE"},
+    {"company":"Haval Motor Manufacturing Rus","outcome":"REJECT","reason":"EARLY_OVERLAP_OR_LARGE_CORPORATE_LOW_PRIORITY"},
+    {"company":"Югорский лесопромышленный холдинг","outcome":"REJECT","reason":"SOURCE_OBSERVATION_NOT_SUFFICIENT_SIGNAL_FOR_THIS_EMPLOYER"},
+    {"company":"Агросила","outcome":"REJECT","reason":"SIGNAL_NOT_DEEP_CHECKED_THIS_CYCLE"},
+    {"company":"Лаборатория ППШ","outcome":"REJECT","reason":"KNOWN_OVERLAP_FROM_PREVIOUS_GROWTH_NEWS_CYCLE"},
+    {"company":"Лазерные системы","outcome":"REJECT","reason":"KNOWN_OVERLAP_FROM_PREVIOUS_GROWTH_NEWS_CYCLE"},
+    {"company":"Фармпроект","outcome":"REJECT","reason":"KNOWN_OVERLAP_FROM_PREVIOUS_GROWTH_NEWS_CYCLE"},
+    {"company":"НПО Петровакс Фарм","outcome":"REJECT","reason":"KNOWN_OVERLAP_FROM_PREVIOUS_GROWTH_NEWS_CYCLE"},
+    {"company":"Лалибела кофе","outcome":"REJECT","reason":"NOT_DEEP_CHECKED_THIS_CYCLE_AFTER_WIP_PRIORITIZATION"},
+    {"company":"Павловская птицефабрика / Русское Поле","outcome":"REJECT","reason":"LEGAL_EMPLOYER_MAPPING_NOT_COMPLETED"},
+    {"company":"Ариада","outcome":"REJECT","reason":"SIGNAL_FOUND_BUT_LEGAL_LPR_CONTACT_CHAIN_NOT_COMPLETED"},
+    {"company":"Технопласт / MGC GROUP","outcome":"REJECT","reason":"PROJECT_ANNOUNCEMENT_FOUND_BUT_LEGAL_CHAIN_NOT_COMPLETED"},
+    {"company":"Астраханский трубный завод","outcome":"REJECT","reason":"PROJECT_ANNOUNCEMENT_FOUND_BUT_LEGAL_LPR_CONTACT_CHAIN_NOT_COMPLETED"},
+    {"company":"Август-Полимер","outcome":"REJECT","reason":"SOURCE_DATE_TEXT_CONFLICT; NOT_USED"},
+    {"company":"Октава ДМ","outcome":"REJECT","reason":"SIGNAL_FOUND_BUT_FULL_CHAIN_NOT_COMPLETED"},
+    {"company":"Завод буровых технологий","outcome":"REJECT","reason":"NEW_PRODUCT_SIGNAL_ONLY; NO_SEPARATE_EXPANSION_CHAIN_COMPLETED"},
+    {"company":"Группа ГАЗ","outcome":"REJECT","reason":"LARGE_CORPORATE_LOW_OVERLAP_PRIORITY_NOT_MET"},
+    {"company":"ТЕХНОНИКОЛЬ","outcome":"REJECT","reason":"LARGE_CORPORATE_HIGH_EXPECTED_OVERLAP"},
+    {"company":"Русские Газовые Турбины","outcome":"REJECT","reason":"LARGE_GROUP_SUBSIDIARY_HIGH_EXPECTED_OVERLAP"},
+    {"company":"ТАГМЕТ","outcome":"REJECT","reason":"NO_CURRENT_CYCLE_STRONG_GROWTH_SIGNAL_CONFIRMED"}
+  ],
+  "candidates": [
+    {
+      "status":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand":"Курский аккумуляторный завод / КАЗ",
+      "legal_name":"ООО \"КУРСКИЙ АККУМУЛЯТОРНЫЙ ЗАВОД\"",
+      "inn":"4632167682",
+      "ogrn":"1124632011217",
+      "domain":"gk-kaz.ru",
+      "size": {
+        "pass": true,
+        "evidence":"крупный производитель; открытые профили подтверждают многомиллиардную выручку, историческую численность порядка сотен сотрудников; официальный сайт называет КАЗ одним из крупнейших производителей стартерных батарей России и СНГ",
+        "urls":["https://gk-kaz.ru/","https://zachestnyibiznes.ru/company/ul/1124632011217_4632167682_OOO-KAZ"]
+      },
+      "legal": {
+        "pass": true,
+        "evidence":"действующее ООО; ИНН 4632167682; ОГРН 1124632011217",
+        "lpr":"Галедина Ольга Валерьевна — генеральный директор",
+        "urls":["https://kontragent.vbr.ru/company/ooo-kaz-1124632011217/","https://xfirm.ru/company/4632167682"]
+      },
+      "signal": {
+        "pass": true,
+        "date":"2026-08-06",
+        "type":"capacity_growth_investment",
+        "evidence":"расширение производства стартерных аккумуляторов; инвестиции более 380 млн руб.; после выхода на мощность выпуск должен увеличиться на 20%, с 1.5 до 1.8 млн батарей в год",
+        "urls":["https://www1.ru/news/2026/08/06/426748-bolee-380-mln-rublei-na-batarei-dlia-kamazov-i-uralov-kurskii-zavod-rassiril-proizvodstvo.html","https://xn--b1agjasmlcka4m.xn--p1ai/event/kurskiy-akkumulyatornyy-zavod-narastil-moshchnosti","https://gk-kaz.ru/"]
+      },
+      "lpr": {"pass":true,"name":"Галедина Ольга Валерьевна","role":"генеральный директор","source":"https://xfirm.ru/company/4632167682"},
+      "contact": {"pass":true,"route":"+7 (4712) 22-77-88; info@accumkursk.ru","published":true,"source":"https://gk-kaz.ru/contacts/"},
+      "dedup_checks": [
+        {"key":"inn:4632167682","repo_search_match":false},
+        {"key":"ogrn:1124632011217","repo_search_match":false},
+        {"key":"exact_legal_name:КУРСКИЙ АККУМУЛЯТОРНЫЙ ЗАВОД","repo_search_match":false},
+        {"key":"brand_domain:gk-kaz.ru","repo_search_match":false}
+      ],
+      "final_global_dedup_required": true
+    },
+    {
+      "status":"PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand":"Рок Энд Милл / Rock And Mill",
+      "legal_name":"ООО \"РОК ЭНД МИЛЛ\" (ООО \"РАМ\")",
+      "inn":"7729477690",
+      "ogrn":"1157746936632",
+      "domain":"rockandmill.ru",
+      "size": {
+        "pass": true,
+        "evidence":"выручка 2025 года 1.433 млрд руб.; среднесписочная численность 248; субъект среднего предпринимательства",
+        "urls":["https://b2b.house/company/OOO-RAM_50b542f3-6171-4728-a300-292968a6b3ce/","https://companies.rbc.ru/id/1157746936632-ooo-geosolyushins/"]
+      },
+      "legal": {
+        "pass": true,
+        "evidence":"действующее ООО; ИНН 7729477690; ОГРН 1157746936632",
+        "urls":["https://b2b.house/company/OOO-RAM_50b542f3-6171-4728-a300-292968a6b3ce/","https://companies.rbc.ru/id/1157746936632-ooo-geosolyushins/"]
+      },
+      "signal": {
+        "pass": true,
+        "date":"2026-05-06",
+        "type":"regional_expansion_new_office",
+        "evidence":"открыт полноценный проектный офис в Красноярске для работы с предприятиями горнодобывающей отрасли Сибири; филиал оказывает полный спектр инженерно-консалтинговых услуг",
+        "urls":["https://companies.rbc.ru/news/iQ4BXVzeJm/rok-end-mill-otkryil-ofis-v-krasnoyarske/","https://gold.1prime.ru/20260506/krasnoyarsk-1400868.html"]
+      },
+      "lpr": {
+        "pass": true,
+        "name":"Колесников Егор Иванович",
+        "role":"генеральный директор ООО \"БС Холдинг\" — управляющей организации ООО \"РАМ\"",
+        "source":"https://rockandmill.ru/assets/files/docs/politika-pdn-ram.pdf"
+      },
+      "contact": {
+        "pass": true,
+        "route":"+7 (499) 110-14-72; info@rockandmill.ru",
+        "published": true,
+        "source":"https://rockandmill.ru/assets/files/docs/presentation-ram.pdf"
+      },
+      "dedup_checks": [
+        {"key":"inn:7729477690","repo_search_match":false},
+        {"key":"ogrn:1157746936632","repo_search_match":false},
+        {"key":"exact_legal_name:РОК ЭНД МИЛЛ","repo_search_match":false},
+        {"key":"brand_domain:rockandmill.ru","repo_search_match":false}
+      ],
+      "final_global_dedup_required": true
+    }
+  ],
+  "worker_conclusion": "2 candidates staged as PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP. Neither is counted as added or net QUALIFIED. Final physical/global dedup belongs exclusively to canonical writer."
+}
