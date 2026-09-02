@@ -1,8 +1,8 @@
 {
   "run_id": "N5K-20260902-582",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
-  "updated_at": "2026-09-02T07:42:00+03:00",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
+  "updated_at": "2026-09-02T07:43:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 596,
@@ -24,14 +24,36 @@
     "duplicates": 4,
     "excluded": 28
   },
-  "lane_metrics": [],
+  "lane_metrics": [
+    {
+      "lane": "growth_news_20260902_072314",
+      "distinct_raw": 29,
+      "net_qualified": 0,
+      "physical_duplicates": 1,
+      "notes": "Worker supplied exact employer-level raw=29. Turbokomplekt was not re-staged because it was already encountered in prior canonical cycles."
+    },
+    {
+      "lane": "official_owner_20260902_072927",
+      "distinct_raw": null,
+      "net_qualified": 0,
+      "physical_duplicates": 1,
+      "notes": "Worker explicitly left raw null because source result sets were truncated; exact raw was not reconstructed or invented. ENHIM reached writer and was rejected by physical dedup."
+    }
+  ],
   "qualified_companies": [],
+  "raw_target_met": false,
+  "minimum_raw_floor_met": false,
+  "preferred_config_raw_target_met": false,
+  "supplemental_discovery_performed": true,
+  "normal_throughput_completion": false,
+  "raw_count_note": "29 is the only exact employer-level raw count supplied by current-hour workers. The official_owner worker searched multiple fresh low-overlap source families but intentionally left raw null because connector result sets were truncated. No unverified rows were added to raw merely to reach 120.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": "LOW_RAW_EXACT_29_BELOW_MINIMUM_120_AFTER_CURRENT_HOUR_RECOVERY; official_owner raw uninstrumented and not invented"
 }
