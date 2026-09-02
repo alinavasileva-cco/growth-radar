@@ -1,0 +1,3 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-0781,N5K-0781-C01,Ракета,7819320133,,Корпоративный маршрут,info@raketa.com,email,official_company_email,Официальный сайт Raketa,https://world.raketa.com/contacts,NO,HIGH,2026-09-02,Опубликованный корпоративный email.,N5K-20260902-581,new_5000
+N5K-0781,N5K-0781-C02,Ракета,7819320133,,Корпоративный маршрут,+7 (800) 600-55-34 ext. 221,phone,official_company_phone,Официальный сайт Raketa,https://world.raketa.com/contacts,NO,HIGH,2026-09-02,Опубликованный телефон завода.,N5K-20260902-581,new_5000
