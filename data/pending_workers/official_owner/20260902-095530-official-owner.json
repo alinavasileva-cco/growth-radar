@@ -1,0 +1,230 @@
+{
+  "schema_version": "official_owner_worker_v1",
+  "lane": "official_owner",
+  "created_at": "2026-09-02T09:55:30+03:00",
+  "immutable": true,
+  "worker_scope": "READ+DISCOVERY only",
+  "canonical_write_performed": false,
+  "contactable_write_performed": false,
+  "runtime_write_performed": false,
+  "campaign_write_performed": false,
+  "outreach_performed": false,
+  "worker_net_qualified": 0,
+  "baseline": {
+    "current_working_config_version": "2026-09-02T08:47:00+03:00",
+    "physical_canonical": 596,
+    "physical_contactable": 596,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0,
+    "source": "CURRENT_WORKING_CONFIG.md"
+  },
+  "dedup_policy": {
+    "historical_pending_full_tree_required_before_discovery": false,
+    "physical_canonical_contactable_checked": true,
+    "candidate_level_repo_search_keys": ["INN", "OGRN/OGRNIP", "exact legal name", "brand+domain"],
+    "final_global_dedup_owner": "canonical writer",
+    "staged_candidates_are_added": false
+  },
+  "discovery": {
+    "target_distinct_employer_raw": "70-130 if sources genuinely provide volume",
+    "source_batches": [
+      {
+        "batch": "moscow_region_fresh_factory_launches",
+        "source_family": "regional investment ministry / business press / official sites",
+        "regions_or_scope": "Moscow region",
+        "raw_observations_exact": null,
+        "duplicate_early_reject_rate_exact": null,
+        "qualified": 1,
+        "metrics_note": "Fresh actual production launches were prioritized over planned projects. GalVent passed full deep verification."
+      },
+      {
+        "batch": "northwest_agri_new_sites",
+        "source_family": "official gasification news / regional business press / company sites",
+        "regions_or_scope": "Leningrad region",
+        "raw_observations_exact": null,
+        "duplicate_early_reject_rate_exact": null,
+        "qualified": 1,
+        "metrics_note": "Exact-location and executive-name cross-check closed the Roskar employer-level identity for the newly commissioned complex."
+      },
+      {
+        "batch": "volga_private_manufacturing_expansion",
+        "source_family": "regional business-support portals / industrial associations / company sites",
+        "regions_or_scope": "Chuvashia / Volga",
+        "raw_observations_exact": null,
+        "duplicate_early_reject_rate_exact": null,
+        "qualified": 0,
+        "metrics_note": "Garmonia had a strong expansion signal but multiple same-brand related legal entities prevented a clean employer-level LEGAL closure, so it was rejected."
+      },
+      {
+        "batch": "central_russia_new_lines_and_capacity",
+        "source_family": "regional investment releases / sector press",
+        "regions_or_scope": "Central Russia",
+        "raw_observations_exact": null,
+        "duplicate_early_reject_rate_exact": null,
+        "qualified": 0,
+        "metrics_note": "High-overlap groups and already-seen companies were excluded early; Larta Glass was not staged because current legal-status sources conflicted around reorganization."
+      },
+      {
+        "batch": "fresh_2026_capacity_increases",
+        "source_family": "national business and technology press",
+        "regions_or_scope": "Russia / cross-region",
+        "raw_observations_exact": null,
+        "duplicate_early_reject_rate_exact": null,
+        "qualified": 0,
+        "metrics_note": "Search results were dominated by repeat coverage of previously reviewed companies and large/high-overlap groups; lane was rotated rather than padded."
+      },
+      {
+        "batch": "official_sites_legal_lpr_contact_resolution",
+        "source_family": "official corporate sites plus current legal/financial directories",
+        "regions_or_scope": "cross-region deep verification",
+        "raw_observations_exact": null,
+        "duplicate_early_reject_rate_exact": null,
+        "qualified": 2,
+        "metrics_note": "Used only published contact routes and current management/legal data; stale or conflicting records were excluded from decisions."
+      }
+    ],
+    "source_level_observations_count": null,
+    "distinct_employer_level_raw_count": null,
+    "count_integrity_note": "Search result sets were partially truncated and exact per-batch raw/distinct instrumentation was not reliably available. Counts are left null rather than reconstructed or invented. At least six independent source/region/signal batches were used; weak catalog rows were not used to inflate raw.",
+    "target_70_130_reached": false,
+    "target_note": "Not claimed because an auditably exact distinct employer-level raw count cannot be established from the available truncated result sets."
+  },
+  "funnel": {
+    "RAW": null,
+    "SIZE": null,
+    "LEGAL": null,
+    "SIGNAL": null,
+    "LPR": null,
+    "CONTACT": 2,
+    "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP": 2,
+    "REJECT_DEEP_CHECK_RECORDED": 2,
+    "funnel_integrity_note": "Only exact terminal counts are recorded; earlier aggregate counts are null because they were not safely instrumented."
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Фабрика Вентиляции ГалВент",
+      "legal_name": "ООО \"ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ\"",
+      "inn": "7720605108",
+      "ogrn": "1087746091410",
+      "domain": "galvent.ru",
+      "legal_status": "Действующая компания",
+      "region": "Московская область",
+      "size": {
+        "employees_reported": 525,
+        "revenue_reference_rub": 4740278000,
+        "revenue_reference_year": 2021,
+        "new_site_jobs_planned": 600,
+        "investment_rub": 1300000000,
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1087746091410-ooo-fabrika-ventilyatsii-galvent/",
+          "https://www.vedomosti.ru/press_releases/2026/08/05/podmoskovnaya-kompaniya-zapustila-novii-zavod-po-vipusku-ventilyatsionnogo-oborudovaniya"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-05",
+        "summary": "Компания запустила в Балашихе новый производственный комплекс по выпуску вентиляционного оборудования; площадка работает в полном объеме, инвестиции превысили 1,3 млрд рублей, проект предусматривает около 600 рабочих мест.",
+        "url": "https://www.vedomosti.ru/press_releases/2026/08/05/podmoskovnaya-kompaniya-zapustila-novii-zavod-po-vipusku-ventilyatsionnogo-oborudovaniya"
+      },
+      "lpr": {
+        "name": "Прахов Кирилл Валерьевич",
+        "role": "Генеральный директор и учредитель",
+        "evidence_urls": [
+          "https://reputation.ru/ogrn/1087746091410",
+          "https://www.tbank.ru/business/contractor/legal/1087746091410/"
+        ]
+      },
+      "contact": {
+        "route": "+7 495 790-76-98; galvent@galvent.su",
+        "published": true,
+        "evidence_url": "https://galvent.ru/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_exact_legal_brand_domain_combined_repo_search": "NO_MATCH",
+        "exact_legal_name_key": "ООО ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ",
+        "brand_domain_key": "Фабрика Вентиляции ГалВент|galvent.ru",
+        "final_global_pending_dedup": "REQUIRED_BY_CANONICAL_WRITER"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Птицефабрика Роскар",
+      "legal_name": "АО \"ПТИЦЕФАБРИКА РОСКАР\"",
+      "inn": "4704008395",
+      "ogrn": "1034700870687",
+      "domain": "roskar.ru",
+      "legal_status": "Действующее юридическое лицо",
+      "region": "Ленинградская область",
+      "size": {
+        "revenue_2025_rub": 14123385000,
+        "employees_2025": 1181,
+        "official_site_employees_reported": 1100,
+        "official_site_egg_output_per_year": 1500000000,
+        "evidence_urls": [
+          "https://firmoteka.ru/4704008395",
+          "https://www.roskar.ru/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-07",
+        "summary": "В Первомайском поселении Выборгского района газифицирован новый производственный комплекс птицефабрики; в официальной новости назван директор Роман Смирнов. Место и руководитель совпадают с действующим АО «Птицефабрика Роскар».",
+        "url": "https://www.gazprommap.ru/official/news/detail/item/4197/",
+        "identity_crosscheck_urls": [
+          "https://firmoteka.ru/4704008395",
+          "https://www.roskar.ru/kontakty"
+        ]
+      },
+      "lpr": {
+        "name": "Смирнов Роман Валентинович",
+        "role": "Генеральный директор",
+        "evidence_urls": [
+          "https://firmoteka.ru/4704008395",
+          "https://companies.rbc.ru/id/1034700870687-ao-ptitsefabrika-roskar/"
+        ]
+      },
+      "contact": {
+        "route": "+7 (812) 334-85-02; info@roskar.ru",
+        "published": true,
+        "evidence_url": "https://www.roskar.ru/kontakty"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_exact_legal_brand_domain_combined_repo_search": "NO_MATCH",
+        "exact_legal_name_key": "АО ПТИЦЕФАБРИКА РОСКАР",
+        "brand_domain_key": "Птицефабрика Роскар|roskar.ru",
+        "final_global_pending_dedup": "REQUIRED_BY_CANONICAL_WRITER"
+      }
+    },
+    {
+      "status": "REJECT",
+      "brand": "Гармония",
+      "region": "Чувашская Республика",
+      "reject_gate": "LEGAL",
+      "reason": "Strong 2026-08-17 factory-expansion signal and published brand contact route exist, but current public data tie the same brand/domain to multiple related active legal entities (including ООО «ГАРМОНИЯ» ИНН 2115004848 and ООО «ПКФ «ГАРМОНИЯ» ИНН 2130123776). The signal source does not resolve the new site unambiguously to one employer-level legal entity.",
+      "evidence_urls": [
+        "https://www.xn--21-9kc7b.xn--p1ai/news/v-novocheboksarske-s-gospodderzhkoy-zapushchena-novaya-proizvodstvennaya-ploshchadka/",
+        "https://garmonia-dvery.ru/contact",
+        "https://companium.ru/id/1132137000027-garmoniya",
+        "https://e-ecolog.ru/buh/2025/2130123776"
+      ]
+    },
+    {
+      "status": "REJECT",
+      "brand": "Larta Glass / Ларта Гласс Раменское",
+      "legal_name": "ООО \"ЛАРТА ГЛАСС РАМЕНСКОЕ\"",
+      "inn": "5040054932",
+      "ogrn": "1025005116014",
+      "region": "Московская область",
+      "reject_gate": "LEGAL",
+      "reason": "Fresh modernization signal exists, but current public legal sources conflict on the company's state around reorganization. Under strict LEGAL gating the candidate is not staged until current status is unambiguous.",
+      "evidence_urls": [
+        "https://companies.rbc.ru/id/1025005116014-ooo-pilkington-glass/",
+        "https://synapsenet.ru/organizacii/1025005116014-ooo-larta-glass-ramenskoe",
+        "https://prospect.com.ru/news/6986018/zavod-v-ramenskom-nachnet-vypusk-osobo-prozrachnogo-stekla-dlinoj-do-18-metrov.html"
+      ]
+    }
+  ]
+}
