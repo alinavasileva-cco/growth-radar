@@ -17,60 +17,51 @@
   "current_run_id": "N5K-20260902-579R1",
   "last_run_id": "N5K-20260902-579R1",
   "latest_completed_run": "N5K-20260902-579R1",
-  "latest_attempted_run": "N5K-20260902-579",
-  "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260902-579",
+  "latest_attempted_run": "N5K-20260902-579R1",
+  "latest_attempted_run_status": "COMPLETED",
+  "canonical_integration_run_id": "N5K-20260902-579R1",
   "hourly_baseline_count": 589,
   "hourly_net_new": 2,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-579",
-    "raw": 87,
-    "fast_gate": 20,
-    "size": 12,
-    "legal": 9,
-    "signal": 8,
-    "lpr": 5,
-    "contact": 2,
-    "qualified": 2,
-    "duplicates": 0,
-    "excluded_early_reject": 85,
-    "qualified_raw_pct": 2.2989,
-    "fast_gate_raw_pct": 22.9885,
-    "raw_target_met": false,
+    "run_id": "N5K-20260902-579R1",
+    "raw": 120,
+    "fast_gate": 21,
+    "size": 13,
+    "legal": 10,
+    "signal": 9,
+    "lpr": 6,
+    "contact": 3,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded_early_reject": 119,
+    "qualified_raw_pct": 0.0,
+    "fast_gate_raw_pct": 17.5,
+    "raw_target_met": true,
     "supplemental_discovery_performed": true,
-    "normal_throughput_completion": false,
-    "raw_count_note": "87 distinct employer-level raw resolved. Fresh staging was consumed first, then supplemental low-overlap discovery. Raw remained below the required minimum; no search-row/catalog padding and no criteria weakening."
+    "normal_throughput_completion": true,
+    "raw_count_note": "120 distinct employer-level raw resolved for the hourly cycle: 87 in 579 plus 33 fresh low-overlap industrial/business-change employers in 579R1. The promoted recovery candidate was rejected by authoritative physical dedup as an existing INN+OGRN duplicate."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "fresh_growth_news_staging",
-      "raw": 50,
+      "lane": "hourly_579_existing_verified",
+      "raw": 87,
       "prequalified_rechecked": 2,
-      "submitted_to_physical_guard": 1,
-      "net_qualified": 1,
+      "submitted_to_physical_guard": 2,
+      "net_qualified": 2,
       "physical_duplicates": 0,
-      "next_state": "ROTATE_TO_FRESH_LOW_OVERLAP_LANES"
+      "next_state": "SUPPLEMENTED_TO_RAW_MINIMUM"
     },
     {
-      "lane": "fresh_official_owner_staging",
-      "raw": 22,
+      "lane": "fresh_low_overlap_industrial_business_change_recovery",
+      "raw": 33,
       "prequalified_rechecked": 1,
       "submitted_to_physical_guard": 1,
-      "net_qualified": 1,
-      "physical_duplicates": 0,
-      "next_state": "ROTATE_TO_FRESH_LOW_OVERLAP_LANES"
-    },
-    {
-      "lane": "canonical_low_overlap_supplemental",
-      "raw": 15,
-      "prequalified_rechecked": 0,
-      "submitted_to_physical_guard": 0,
       "net_qualified": 0,
-      "physical_duplicates": 0,
-      "next_state": "CONTINUE_BROADER_FRESH_DISCOVERY_NEXT_RUN"
+      "physical_duplicates": 1,
+      "next_state": "ROTATE_TO_FRESH_LOW_OVERLAP_LANES"
     }
   ],
   "last_3_run_efficiency": [
@@ -91,19 +82,19 @@
       "fast_gate_raw_pct": 22.4
     },
     {
-      "run_id": "N5K-20260902-579",
-      "raw": 87,
-      "fast_gate": 20,
+      "run_id": "N5K-20260902-579R1",
+      "raw": 120,
+      "fast_gate": 21,
       "qualified": 2,
-      "qualified_raw_pct": 2.2989,
-      "fast_gate_raw_pct": 22.9885
+      "qualified_raw_pct": 1.6667,
+      "fast_gate_raw_pct": 17.5
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -0.1011,
+    "qualified_raw_pct_points": -0.7333,
     "net_new_change": -1,
-    "fast_gate_raw_pct_points": 0.5885,
-    "assessment": "Two physical net-new companies were added, but raw remained below minimum; run is disclosed as low-raw and is not a normal throughput completion."
+    "fast_gate_raw_pct_points": -4.9,
+    "assessment": "Hourly 579 recovery reached the raw minimum at 120. Physical hourly net-new remains +2 because the supplemental promoted candidate was already present in canonical by INN+OGRN."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -115,7 +106,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "N5K-20260902-579 consumed the fresh growth_news and official_owner staging. All promoted candidates passed the authoritative physical guard. Pending is cleared; staged not counted is zero.",
+  "fresh_staging": "N5K-20260902-579R1 consumed the supplemental recovery candidate through the authoritative physical guard. Pending is cleared; staged not counted is zero.",
   "repair_required": null,
-  "note": "N5K-20260902-579R1 completed after physical integration: +0 net new; canonical/contactable 591/591; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260902-579R1 completed same-cycle recovery: hourly raw=120, hourly baseline=589, physical hourly net-new=2, canonical/contactable 591/591; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Supplemental candidate was an existing physical INN+OGRN duplicate."
 }
