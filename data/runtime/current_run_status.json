@@ -1,63 +1,56 @@
 {
-  "run_id": "N5K-20260902-583R1",
+  "run_id": "N5K-20260902-584",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
-  "updated_at": "2026-09-02T08:47:00+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T09:25:37+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 596,
     "target_count": 5000,
-    "current_canonical_count": 596,
-    "current_contactable_count": 596,
-    "progress_added": 0,
-    "remaining": 4404
+    "current_canonical_count": 598,
+    "current_contactable_count": 598,
+    "progress_added": 2,
+    "remaining": 4402
   },
   "funnel": {
-    "discovered": 251,
-    "fast_gate_passed": 3,
-    "size_check_passed": 3,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 250
+    "discovered": 23,
+    "fast_gate_passed": 5,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 5,
+    "lpr_identified": 5,
+    "contact_route_found": 5,
+    "qualified": 2,
+    "duplicates": 3,
+    "excluded": 18
   },
   "lane_metrics": [
     {
-      "lane": "run_583_carry_forward",
-      "distinct_raw": 250,
-      "duplicates_plus_early_rejects": 250,
-      "prequalified_rechecked": 0,
-      "submitted_to_physical_guard": 0,
-      "notes": "Authoritative employer-level raw already established by N5K-20260902-583."
+      "lane": "fresh_official_owner_staging_20260902_084500",
+      "raw_distinct_counted": 5,
+      "deep_pass": 5,
+      "physical_duplicates": 3,
+      "qualified_after_physical_guard": 2,
+      "note": "Only five terminal PREQUALIFIED employer-level candidates are counted from staging because its larger raw discovery count was not instrumented and must not be invented."
     },
     {
-      "lane": "fresh_regional_production_business_change_583R1",
-      "distinct_raw": 1,
-      "duplicates_plus_early_rejects": 0,
-      "prequalified_rechecked": 1,
-      "submitted_to_physical_guard": 1,
-      "notes": "Fresh 31.08.2026 regional production expansion signal. Candidate-level repo search found no indexed match, but authoritative physical writer rejected the candidate by INN, OGRN, exact legal name and brand+domain. Jobs not used."
+      "lane": "supplemental_low_overlap_fresh_business_change",
+      "raw_distinct_counted": 18,
+      "deep_pass": 0,
+      "qualified_after_physical_guard": 0,
+      "note": "Distinct employer-level probes: Цифра, Элемент, ЗЭМ, Bitrobotics, Семаргл, B2B-РТС, E-Prom, Технониколь, НТЦ ИТ РОСА, МБ РУС, Wegosty, Синимекс, СДЭК, Турбо Облако, НЭК, М.Видео, ТрансТелеКом, Capital Group. None promoted without a fully closed current LEGAL/SIZE/SIGNAL/LPR/CONTACT chain."
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Судома",
+    "Завод Ангстрем"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "598_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "598_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null,
-  "throughput_disclosure": {
-    "raw_distinct_employer_level": 251,
-    "minimum_user_floor_120_met": true,
-    "user_supplemental_recovery_performed": true,
-    "current_config_preferred_400_800_met": false,
-    "current_config_continue_threshold_300_met": false,
-    "normal_throughput_completion": false,
-    "note": "Same-hour supplemental recovery was performed because consecutive low-net-new runs triggered recovery. One additional distinct employer was fully checked but rejected by the authoritative physical dedup guard. Exact authoritative raw is 251; no unverified observations were added merely to reach 300."
-  }
+  "blocker": null
 }
