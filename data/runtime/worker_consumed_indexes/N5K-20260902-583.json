@@ -1,0 +1,13 @@
+{
+  "run_id": "N5K-20260902-583",
+  "consumed_at": "2026-09-02T08:28:29+03:00",
+  "files": [
+    "data/pending_workers/growth_news/20260902-082541-growth-news.json"
+  ],
+  "raw_candidates": 5,
+  "prequalified_rechecked": 2,
+  "net_qualified": 0,
+  "qualified_staged_not_counted": 0,
+  "immutable_source_retained": true,
+  "note": "Fresh staging consumed before supplemental discovery; immutable source retained."
+}
