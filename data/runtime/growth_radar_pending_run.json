@@ -1,9 +1,116 @@
 {
   "run_id": "N5K-20260902-588R1",
-  "updated_at": "2026-09-02T18:14:00+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 30,
-  "note": "N5K-20260902-588R1 integrated verified rows but cannot be COMPLETED: raw_distinct=30<120. Supplemental discovery required."
+  "updated_at": "2026-09-02T18:43:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-7722424330",
+      "Brand": "KCG / КАРТАС",
+      "Legal Name": "ООО КАРТАС",
+      "INN": "7722424330",
+      "OGRN/OGRNIP": "5177746313950",
+      "Region": "Московская область",
+      "City": "Истра / Химки",
+      "Segment": "Производство компьютерной техники и электроники",
+      "Website": "https://kcg.market/",
+      "Revenue/Scale": "Выручка 610 371 000 ₽ за 2025 год; на производстве более 45 сотрудников",
+      "Signal Level": "S1",
+      "Signal Summary": "Компания инвестирует почти 200 млн ₽ в расширение действующего производства в Истре и запуск производства высокотехнологичной гофроупаковки; займ ФРП МО 50,8 млн ₽ уже одобрен.",
+      "Signal Date": "2026-07-16",
+      "Signal Source": "https://www.vedomosti.ru/press_releases/2026/07/16/visokotehnologichnoe-proizvodstvo-kompyuternih-komplektuyuschih-rasshiryaetsya-pri-podderzhke-podmoskovya",
+      "Owner": "Самус Владимир Владимирович",
+      "CEO": "Самус Владимир Владимирович",
+      "LPR": "Самус Владимир Владимирович",
+      "LPR Role": "Генеральный директор, 100% учредитель",
+      "Primary Phone": "+7 (920) 722-05-55",
+      "Primary Email": "vladimir.s@kartas.msk.ru",
+      "HH Contact": "",
+      "Contact Form": "https://kcg.market/contacts/",
+      "Contact Type": "Прямой контакт ЛПР + корпоративные маршруты",
+      "Contact Source": "https://kcg.market/samus-ru/",
+      "Consulting Hypothesis": "Расширение производства и запуск нового товарного направления создают задачи по экономике проекта, управленческой отчетности, коммерческой модели нового направления, KPI и масштабированию процессов.",
+      "contacts": [
+        {
+          "value": "vladimir.s@kartas.msk.ru",
+          "channel": "Email",
+          "type": "Прямой контакт ЛПР",
+          "source": "KCG",
+          "url": "https://kcg.market/samus-ru/",
+          "is_lpr": true,
+          "notes": "Опубликованный email генерального директора"
+        },
+        {
+          "value": "+7 (920) 722-05-55",
+          "channel": "Phone",
+          "type": "Прямой контакт ЛПР",
+          "source": "KCG",
+          "url": "https://kcg.market/samus-ru/",
+          "is_lpr": true,
+          "notes": "Опубликованный телефон генерального директора"
+        },
+        {
+          "value": "zakaz@kartas.msk.ru",
+          "channel": "Email",
+          "type": "Корпоративный маршрут сотрудничества",
+          "source": "KCG",
+          "url": "https://kcg.market/contacts/",
+          "is_lpr": false,
+          "notes": "Официальный email по заказам и сотрудничеству"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО КАРТАС, ИНН 7722424330, ОГРН 5177746313950; действующая частная компания; генеральный директор и 100% учредитель Самус Владимир Владимирович.",
+          "url": "https://companies.rbc.ru/id/5177746313950-ooo-kartas/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка за 2025 год 610 371 000 ₽; производство компании насчитывает более 45 сотрудников.",
+          "url": "https://companies.rbc.ru/amp/ogrn/5177746313950/",
+          "source": "РБК Компании / Министерство инвестиций Московской области"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "16.07.2026 объявлено расширение производства с инвестициями почти 200 млн ₽ и запуском нового производственного направления.",
+          "url": "https://www.vedomosti.ru/press_releases/2026/07/16/visokotehnologichnoe-proizvodstvo-kompyuternih-komplektuyuschih-rasshiryaetsya-pri-podderzhke-podmoskovya",
+          "source": "Ведомости / Министерство инвестиций Московской области"
+        },
+        {
+          "type": "LPR_CONTACT",
+          "claim": "На публичной карточке генерального директора Владимира Самуса опубликованы прямые телефон и email; официальный сайт также подтверждает корпоративные контакты.",
+          "url": "https://kcg.market/samus-ru/",
+          "source": "KCG"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "raw_distinct": 31,
+    "discovered": 31,
+    "fast_gate_passed": 3,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 1,
+    "duplicates": 3,
+    "excluded": 28
+  },
+  "lane_metrics": [
+    {"lane": "fresh_growth_business_change", "raw": 5, "duplicates_early_rejects": 3, "qualified": 2},
+    {"lane": "moscow_region_new_production", "raw": 5, "duplicates_early_rejects": 4, "qualified": 1},
+    {"lane": "novosibirsk_investment_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "leningrad_spb_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "rostov_krasnodar_investment", "raw": 2, "duplicates_early_rejects": 2, "qualified": 0},
+    {"lane": "volga_investment_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "export_expansion", "raw": 2, "duplicates_early_rejects": 2, "qualified": 0},
+    {"lane": "dealer_network_expansion", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "franchise_network_expansion", "raw": 1, "duplicates_early_rejects": 1, "qualified": 0},
+    {"lane": "management_commercial_change", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0}
+  ],
+  "notes": "Supplemental recovery: added one newly verified distinct candidate KCG/KARTAS after fresh expansion-source search. Keep recovery active because raw_distinct remains below hard floor 120 and preferred 300 threshold. No outreach."
 }
