@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T04:48:00+03:00",
+  "updated_at": "2026-09-02T04:35:21+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260902-579",
-  "current_run_id": "N5K-20260902-579",
-  "last_run_id": "N5K-20260902-579",
-  "latest_completed_run": "N5K-20260902-579",
+  "last_completed_run_id": "N5K-20260902-579R1",
+  "current_run_id": "N5K-20260902-579R1",
+  "last_run_id": "N5K-20260902-579R1",
+  "latest_completed_run": "N5K-20260902-579R1",
   "latest_attempted_run": "N5K-20260902-579",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260902-579",
@@ -117,5 +117,5 @@
   },
   "fresh_staging": "N5K-20260902-579 consumed the fresh growth_news and official_owner staging. All promoted candidates passed the authoritative physical guard. Pending is cleared; staged not counted is zero.",
   "repair_required": null,
-  "note": "N5K-20260902-579 physically integrated +2 net new; canonical/contactable 591/591; remaining to 1000=409; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0; raw=87 and therefore LOW RAW disclosure applies."
+  "note": "N5K-20260902-579R1 completed after physical integration: +0 net new; canonical/contactable 591/591; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

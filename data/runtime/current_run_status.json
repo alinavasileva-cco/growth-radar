@@ -1,65 +1,50 @@
 {
-  "run_id": "N5K-20260902-579",
+  "run_id": "N5K-20260902-579R1",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "updated_at": "2026-09-02T04:48:00+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T04:35:21+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 589,
+    "baseline_count": 591,
     "target_count": 5000,
     "current_canonical_count": 591,
     "current_contactable_count": 591,
-    "progress_added": 2,
+    "progress_added": 0,
     "remaining": 4409
   },
   "funnel": {
-    "discovered": 87,
-    "fast_gate_passed": 20,
-    "size_check_passed": 12,
-    "legal_match_passed": 9,
-    "signal_confirmed": 8,
-    "lpr_identified": 5,
-    "contact_route_found": 2,
-    "qualified": 2,
-    "duplicates": 0,
-    "excluded": 85
+    "discovered": 120,
+    "fast_gate_passed": 21,
+    "size_check_passed": 13,
+    "legal_match_passed": 10,
+    "signal_confirmed": 9,
+    "lpr_identified": 6,
+    "contact_route_found": 3,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 119
   },
   "lane_metrics": [
     {
-      "lane": "fresh_growth_news_staging",
-      "distinct_raw": 50,
+      "lane": "hourly_579_existing_verified",
+      "distinct_raw": 87,
       "prequalified": 2,
-      "submitted_to_physical_guard": 1,
-      "notes": "Fresh immutable growth_news batch; Lab PPS rejected by canonical writer at SIZE because current scale evidence was insufficient."
+      "submitted_to_physical_guard": 2,
+      "notes": "Authoritative completed 579 baseline retained; no historical pending-tree dependency."
     },
     {
-      "lane": "fresh_official_owner_staging",
-      "distinct_raw": 22,
+      "lane": "fresh_low_overlap_industrial_business_change_recovery",
+      "distinct_raw": 33,
       "prequalified": 1,
       "submitted_to_physical_guard": 1,
-      "notes": "Fresh immutable official_owner batch; Argumentum Pharma independently rechecked."
-    },
-    {
-      "lane": "canonical_low_overlap_supplemental",
-      "distinct_raw": 15,
-      "prequalified": 0,
-      "submitted_to_physical_guard": 0,
-      "notes": "Independent fresh discovery across production/investment, dealer/network expansion, management change, logistics expansion and partner/business-change sources. No weak candidate promoted merely to increase throughput."
+      "notes": "Fresh employer-level discovery from 24-26 Aug 2026 industrial/business-change sources; cross-source name dedup applied conservatively. Jobs not used. One candidate promoted only after legal, scale, signal, LPR and public contact-route verification."
     }
   ],
-  "qualified_companies": [
-    "Фармпроект",
-    "Аргументум Фарма"
-  ],
-  "raw_target_met": false,
-  "normal_throughput_completion": false,
-  "supplemental_discovery_performed": true,
-  "raw_count_note": "87 distinct employer-level raw were resolved: 50 fresh growth_news staging, 22 fresh official_owner staging and 15 canonical-writer supplemental low-overlap employers. This is below the required raw minimum; search-result rows and weak catalog entries were not used as padding. Additional fresh lanes were probed, but no further employer-level candidates were counted without adequate resolution.",
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
   "physical_master_state": "591_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "591_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
