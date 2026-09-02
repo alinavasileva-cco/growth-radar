@@ -12,6 +12,13 @@
     "progress_added": 0,
     "remaining": 4409
   },
+  "hourly_cycle": {
+    "baseline_count": 589,
+    "current_canonical_count": 591,
+    "current_contactable_count": 591,
+    "net_new": 2,
+    "raw": 120
+  },
   "funnel": {
     "discovered": 120,
     "fast_gate_passed": 21,
@@ -37,14 +44,19 @@
       "distinct_raw": 33,
       "prequalified": 1,
       "submitted_to_physical_guard": 1,
-      "notes": "Fresh employer-level discovery from 24-26 Aug 2026 industrial/business-change sources; cross-source name dedup applied conservatively. Jobs not used. One candidate promoted only after legal, scale, signal, LPR and public contact-route verification."
+      "notes": "Fresh employer-level discovery from 24-26 Aug 2026 industrial/business-change sources; cross-source name dedup applied conservatively. Jobs not used. One candidate promoted only after legal, scale, signal, LPR and public contact-route verification; canonical writer rejected it as an existing physical duplicate by INN+OGRN."
     }
   ],
   "qualified_companies": [],
+  "raw_target_met": true,
+  "normal_throughput_completion": true,
+  "supplemental_discovery_performed": true,
+  "raw_count_note": "120 distinct employer-level raw resolved for the hourly cycle: 87 in N5K-20260902-579 plus 33 fresh low-overlap industrial/business-change employers in 579R1. No search-result padding and no criteria weakening; jobs were not used.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "591_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "591_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
