@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260902-578",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "updated_at": "2026-09-02T03:29:29+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
@@ -29,28 +29,39 @@
       "lane": "fresh_worker_staging_growth_news",
       "distinct_raw": 15,
       "prequalified": 3,
-      "notes": "fresh immutable staging consumed first; worker did not assign net QUALIFIED"
+      "physical_net_new": 0,
+      "physical_duplicates": 3,
+      "notes": "Fresh immutable staging consumed first; all three prequalified candidates were rejected by authoritative physical dedup."
     },
     {
       "lane": "fresh_worker_staging_official_owner",
       "distinct_raw": 38,
       "prequalified": 1,
-      "notes": "fresh immutable staging consumed first; worker did not assign net QUALIFIED"
+      "physical_net_new": 1,
+      "physical_duplicates": 0,
+      "notes": "Fresh immutable staging consumed first; the prequalified candidate passed independent recheck and authoritative physical dedup."
     },
     {
       "lane": "supplemental_low_overlap_discovery",
       "distinct_raw": 50,
       "prequalified": 0,
-      "notes": "fresh regional production/investment, industrial parks, management/business-change and expansion sources; jobs not used; weak and state-linked candidates fail-closed"
+      "physical_net_new": 0,
+      "physical_duplicates": 0,
+      "notes": "Fresh regional production/investment, industrial parks, manufacturing expansion, management/business-change and partner/expansion sources; jobs not used; weak and state-linked candidates fail-closed."
     }
   ],
   "qualified_companies": [
     "Стекольная Компания Реал"
   ],
+  "raw_target_met": false,
+  "normal_throughput_completion": false,
+  "supplemental_discovery_performed": true,
+  "raw_count_note": "Conservative distinct employer-level raw=103 (<120): 15 growth_news staging + 38 official_owner staging + 50 own low-overlap discovery. Additional discovery was performed in the same run; jobs and weak catalog padding were not used; criteria were not weakened.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "587_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "587_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
