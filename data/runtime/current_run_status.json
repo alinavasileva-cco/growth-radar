@@ -2,14 +2,14 @@
   "run_id": "N5K-20260902-578R3",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-02T03:56:00+03:00",
+  "updated_at": "2026-09-02T03:58:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 588,
+    "baseline_count": 586,
     "target_count": 5000,
     "current_canonical_count": 589,
     "current_contactable_count": 589,
-    "progress_added": 1,
+    "progress_added": 3,
     "remaining": 4411
   },
   "funnel": {
@@ -20,7 +20,7 @@
     "signal_confirmed": 9,
     "lpr_identified": 8,
     "contact_route_found": 7,
-    "qualified": 1,
+    "qualified": 3,
     "duplicates": 4,
     "excluded": 120
   },
@@ -29,16 +29,25 @@
       "lane": "hourly_distinct_raw_578_plus_recovery",
       "distinct_raw": 125,
       "prequalified": 7,
-      "notes": "Same-hour authoritative employer-level raw. R3 deep-resolves another candidate already present in the R1 low-overlap cohort, so raw is not double-counted."
+      "physical_net_new": 3,
+      "physical_duplicates": 4,
+      "notes": "Hourly aggregate for 578 + R1 + R2 + R3. Raw is employer-level distinct after cross-lane dedup; saturated samples were not re-run; jobs not used."
     }
   ],
   "qualified_companies": [
+    "Стекольная Компания Реал",
+    "Воронеж-Агро",
     "Племзавод Повадино"
   ],
+  "raw_target_met": true,
+  "normal_throughput_completion": true,
+  "supplemental_discovery_performed": true,
+  "raw_count_note": "Same-hour recovery increased conservative distinct employer-level raw from 103 to 125 and physical net-new from +1 to +3 without weakening criteria or double-counting raw.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "589_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "589_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
