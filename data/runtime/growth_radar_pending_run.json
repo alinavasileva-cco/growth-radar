@@ -1,8 +1,202 @@
 {
-  "run_id": "N5K-20260902-580",
-  "updated_at": "2026-09-02T05:26:59+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260902-580 integrated physically; canonical/contactable 592/592; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260902-580R1",
+  "updated_at": "2026-09-02T05:33:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 120,
+    "fast_gate_passed": 12,
+    "size_check_passed": 7,
+    "legal_match_passed": 6,
+    "signal_confirmed": 6,
+    "lpr_identified": 5,
+    "contact_route_found": 4,
+    "qualified": 2,
+    "duplicates": 1,
+    "excluded": 117
+  },
+  "lane_metrics": [
+    {
+      "lane": "hourly_580_existing_verified",
+      "distinct_raw": 120,
+      "submitted_to_physical_guard": 1,
+      "notes": "Authoritative completed 580 retained; raw floor already met without padding."
+    },
+    {
+      "lane": "supplemental_fresh_regional_investment_business_change",
+      "distinct_raw": 0,
+      "submitted_to_physical_guard": 2,
+      "notes": "Supplemental search was used only to find additional fully resolvable candidates after two consecutive low-net-new hourly cycles. Search-result rows were not added to authoritative raw because cross-lane global distinctness was not proven."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0778",
+      "Brand": "Ларта Гласс Раменское",
+      "Legal Name": "ООО «ЛАРТА ГЛАСС РАМЕНСКОЕ»",
+      "INN": "5040054932",
+      "OGRN/OGRNIP": "1025005116014",
+      "Legal Status": "Действует / реорганизация не завершена",
+      "Region": "Московская область",
+      "City": "Раменское",
+      "Segment": "Производство листового и архитектурного стекла",
+      "Website": "https://larta.com/ru/",
+      "Revenue/Scale": "Выручка 2025 около 6,25 млрд ₽; 235 сотрудников; в модернизацию Раменского завода вложено более 6 млрд ₽",
+      "Signal Level": "S1",
+      "Signal Summary": "28.08.2026 подтверждено завершение масштабной модернизации Раменского стекольного завода: новая стекловаренная печь, обновление линии резки и упаковки, запуск линии многослойного стекла и расширение производственных возможностей.",
+      "Signal Date": "2026-08-28",
+      "Signal Source": "https://www.vedomosti.ru/press_releases/2026/08/28/bolee-6-mlrd-rublei-vlozhili-v-modernizatsiyu-stekolnogo-zavoda-v-ramenskom",
+      "Owner": "ООО «ЛАРТА ГЛАСС»",
+      "CEO": "Атюбрин Андрей Павлович",
+      "LPR": "Атюбрин Андрей Павлович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 495 369-95-00",
+      "Primary Email": "",
+      "Contact Form": "https://larta.com/ru/contact-us",
+      "Contact Type": "Официальный телефон Раменского завода / официальная форма связи",
+      "Contact Source": "https://larta.com/ru/contact-us",
+      "Number Of Contacts Found": "2",
+      "Consulting Hypothesis": "Масштабная модернизация, расширение продуктовой линейки и производственных возможностей создают задачи по загрузке мощностей, коммерческому планированию, KPI, операционной эффективности и управлению изменениями.",
+      "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ",
+      "contacts": [
+        {
+          "value": "+7 495 369-95-00",
+          "channel": "phone",
+          "type": "official corporate",
+          "source": "Larta Glass official website",
+          "url": "https://larta.com/ru/contact-us",
+          "is_lpr": false,
+          "notes": "Официальный телефон головного офиса/Раменского стекольного завода на официальном сайте группы."
+        },
+        {
+          "value": "https://larta.com/ru/contact-us",
+          "channel": "form",
+          "type": "official corporate",
+          "source": "Larta Glass official website",
+          "url": "https://larta.com/ru/contact-us",
+          "is_lpr": false,
+          "notes": "Официальная форма связи с возможностью выбора административного/коммерческого подразделения."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО ЛАРТА ГЛАСС РАМЕНСКОЕ, ИНН 5040054932, ОГРН 1025005116014; действующее юридическое лицо, генеральный директор — Атюбрин Андрей Павлович.",
+          "url": "https://reputation.ru/ogrn/1025005116014",
+          "source": "Reputation / registry-derived current company data"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Выручка 2025 около 6,25 млрд ₽; 235 сотрудников; в модернизацию предприятия вложено более 6 млрд ₽.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1025005116014/",
+          "source": "Т-Банк Бизнес / бухгалтерская отчетность"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "28.08.2026 опубликовано подтверждение завершения масштабной модернизации Раменского завода стоимостью более 6 млрд ₽ с обновлением ключевых линий и расширением производственных возможностей.",
+          "url": "https://www.vedomosti.ru/press_releases/2026/08/28/bolee-6-mlrd-rublei-vlozhili-v-modernizatsiyu-stekolnogo-zavoda-v-ramenskom",
+          "source": "Ведомости / Мининвест Московской области"
+        },
+        {
+          "type": "LPR",
+          "claim": "Атюбрин Андрей Павлович указан генеральным директором точного действующего юридического лица ООО ЛАРТА ГЛАСС РАМЕНСКОЕ.",
+          "url": "https://reputation.ru/ogrn/1025005116014",
+          "source": "Reputation / registry-derived current company data"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт Larta Glass публикует для Раменского завода телефон +7 495 369-95-00 и форму связи.",
+          "url": "https://larta.com/ru/contact-us",
+          "source": "Larta Glass official website"
+        }
+      ]
+    },
+    {
+      "Lead ID": "N5K-0779",
+      "Brand": "Фарм Эйд",
+      "Legal Name": "ООО «ФАРМ ЭЙД ЛТД»",
+      "INN": "9709002011",
+      "OGRN/OGRNIP": "1177746521864",
+      "Legal Status": "Действует",
+      "Region": "Москва / Калужская область",
+      "City": "Москва / Ворсино",
+      "Segment": "Фармацевтика / биотехнологии",
+      "Website": "https://pharmaid.com/",
+      "Revenue/Scale": "Выручка 2025 около 819,24 млн ₽; уставный капитал 500 млн ₽; проект нового биофармацевтического комплекса оценивается в 14,3 млрд ₽",
+      "Signal Level": "S1",
+      "Signal Summary": "03.06.2026 компания подписала соглашение о строительстве в индустриальном парке Ворсино биофармацевтического комплекса полного цикла; первый этап — 20 млн единиц препаратов в год, общий объем инвестиций 14,3 млрд ₽.",
+      "Signal Date": "2026-06-03",
+      "Signal Source": "https://gxpnews.net/2026/06/farm-ejd-postroit-proizvodstvo-biopreparatov-i-vakczin-za-143-mlrd-rublej-pod-kalugoj/",
+      "Owner": "Фарм Эйд Холдинг Лтд.",
+      "CEO": "Метов Азамат Олегович",
+      "LPR": "Метов Азамат Олегович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (495) 477-44-24",
+      "Primary Email": "info@pharmaid.com",
+      "Contact Form": "https://pharmaid.com/contact/",
+      "Contact Type": "Официальный корпоративный телефон / email / форма связи",
+      "Contact Source": "https://pharmaid.com/contact/",
+      "Number Of Contacts Found": "3",
+      "Consulting Hypothesis": "Строительство нового комплекса на 14,3 млрд ₽ и масштабирование производства создают задачи по операционной модели, коммерческой функции, KPI, управленческой отчетности и управлению ростом.",
+      "Final Quick Status": "МОЖНО СВЯЗЫВАТЬСЯ",
+      "contacts": [
+        {
+          "value": "+7 (495) 477-44-24",
+          "channel": "phone",
+          "type": "official corporate",
+          "source": "PharmAid official website",
+          "url": "https://pharmaid.com/contact/",
+          "is_lpr": false,
+          "notes": "Официальный телефон головного офиса exact company."
+        },
+        {
+          "value": "info@pharmaid.com",
+          "channel": "email",
+          "type": "official corporate",
+          "source": "PharmAid official website",
+          "url": "https://pharmaid.com/contact/",
+          "is_lpr": false,
+          "notes": "Официальный корпоративный email exact company/domain; не восстановлен по шаблону."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО ФАРМ ЭЙД ЛТД действует; ИНН 9709002011, ОГРН 1177746521864; генеральный директор — Метов Азамат Олегович.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1177746521864/",
+          "source": "Т-Банк Бизнес / registry data"
+        },
+        {
+          "type": "SIZE",
+          "claim": "Выручка 2025 около 819,24 млн ₽; уставный капитал 500 млн ₽; новый производственный проект оценивается в 14,3 млрд ₽.",
+          "url": "https://b2b.house/company/OOO-FARM-EJD-LTD_819a35f3-1225-4851-bc53-0c36468f764d/",
+          "source": "B2B.House / бухгалтерская отчетность"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "03.06.2026 подтвержден проект строительства биофармацевтического комплекса в Ворсино с общим объемом инвестиций 14,3 млрд ₽ и проектной мощностью первого этапа 20 млн единиц препаратов в год.",
+          "url": "https://gxpnews.net/2026/06/farm-ejd-postroit-proizvodstvo-biopreparatov-i-vakczin-za-143-mlrd-rublej-pod-kalugoj/",
+          "source": "GxP News"
+        },
+        {
+          "type": "LPR",
+          "claim": "Метов Азамат Олегович подтвержден как генеральный директор действующего ООО ФАРМ ЭЙД ЛТД.",
+          "url": "https://www.tbank.ru/business/contractor/legal/1177746521864/",
+          "source": "Т-Банк Бизнес / registry data"
+        },
+        {
+          "type": "CONTACT",
+          "claim": "Официальный сайт exact company публикует +7 (495) 477-44-24 и info@pharmaid.com.",
+          "url": "https://pharmaid.com/contact/",
+          "source": "PharmAid official website"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 2,
+  "integrity_status": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "active_wip": 0,
+  "outreach_sent": 0,
+  "note": "Same-hour supplemental recovery after two consecutive hourly cycles with net-new below 3. Authoritative raw remains 120 because supplemental search-result rows were not padded into raw without proven global cross-lane distinctness. Two fully resolved candidates are delegated to the existing physical canonical guard."
 }
