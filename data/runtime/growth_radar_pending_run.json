@@ -1,8 +1,57 @@
 {
-  "run_id": "N5K-20260902-581R2",
-  "updated_at": "2026-09-02T06:36:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260902-581R2 integrated physically; canonical/contactable 596/596; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260902-582",
+  "updated_at": "2026-09-02T07:40:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "discovered": 29,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 1,
+    "duplicates": 3,
+    "excluded": 28
+  },
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0784",
+      "Brand": "ЭНХИМ",
+      "Legal Name": "ООО \"ЭНХИМ\"",
+      "INN": "7100037800",
+      "OGRN/OGRNIP": "1237100006516",
+      "Region": "Тульская область",
+      "City": "Тула",
+      "Segment": "Промышленное производство / химия",
+      "Website": "https://enhim.com",
+      "Revenue/Scale": "Выручка 2025: 1,66 млрд руб.; 113 сотрудников; рост выручки 88,79%",
+      "Signal Level": "S1",
+      "Signal Summary": "26.06.2026 введена в эксплуатацию вторая очередь завода — цех синтеза триксиленилфосфата; после расширения мощность предприятия должна вырасти более чем в два раза; общий объем инвестиций в первую и вторую очереди — 1,9 млрд руб.",
+      "Signal Date": "2026-06-26",
+      "Signal Source": "https://www.nec.pro/press/news/enkhim-zapustil-vtoruyu-ochered-zavoda-edinstvennoe-v-rossii-proizvodstvo-ognestoykogo-turbinnogo-ma/",
+      "Owner": "",
+      "CEO": "Мазитов Сергей Васильевич",
+      "LPR": "Мазитов Сергей Васильевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (495) 799-44-04",
+      "Primary Email": "info@enhim.com",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "Официальный корпоративный маршрут",
+      "Contact Source": "https://www.nec.pro/contacts/",
+      "Consulting Hypothesis": "Масштабирование производства после ввода второй очереди: рост мощности, коммерческой функции и управленческих процессов.",
+      "contacts": [
+        {"value": "+7 (495) 799-44-04", "channel": "phone", "type": "corporate", "source": "official", "url": "https://www.nec.pro/contacts/", "is_lpr": false, "notes": "Публичный корпоративный телефон"},
+        {"value": "info@enhim.com", "channel": "email", "type": "corporate", "source": "official", "url": "https://www.nec.pro/contacts/", "is_lpr": false, "notes": "Публичный корпоративный email"}
+      ],
+      "evidence": [
+        {"type": "SIGNAL", "claim": "Введена в эксплуатацию вторая очередь завода; заявлен рост мощности более чем в два раза; инвестиции 1,9 млрд руб.", "url": "https://www.nec.pro/press/news/enkhim-zapustil-vtoruyu-ochered-zavoda-edinstvennoe-v-rossii-proizvodstvo-ognestoykogo-turbinnogo-ma/", "source": "НЭК"},
+        {"type": "LEGAL_LPR", "claim": "ООО ЭНХИМ, ИНН 7100037800, ОГРН 1237100006516; генеральный директор Мазитов Сергей Васильевич.", "url": "https://reputation.ru/ogrn/1237100006516", "source": "Reputation.ru"},
+        {"type": "SIZE", "claim": "Выручка 2025 около 1,66 млрд руб.; 113 сотрудников; рост выручки 88,79%.", "url": "https://b2b.house/company/OOO-ENXIM_48d7c183-b32e-4936-8597-ff19814c81c3/", "source": "B2B.House"},
+        {"type": "CONTACT", "claim": "Опубликованы корпоративные телефон и email.", "url": "https://www.nec.pro/contacts/", "source": "официальный сайт"}
+      ]
+    }
+  ],
+  "notes": "Current-hour canonical recovery from fresh 07:23/07:29 worker staging. Historical pending tree is not a discovery blocker. Turbokomplekt, GazEnergoKomplekt and NARTIS were not restaged because they were already encountered in prior canonical cycles; final authoritative dedup remains the writer. Criteria unchanged; outreach 0. Raw is conservatively recorded only where the worker supplied an exact employer-level count; no padding or invented aggregation from the official_owner lane with null raw instrumentation."
 }
