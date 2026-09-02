@@ -3,6 +3,7 @@
   "campaign_id": "new_5000",
   "status": "COMPLETED",
   "updated_at": "2026-09-02T05:33:00+03:00",
+  "metadata_synced_at": "2026-09-02T05:34:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 592,
