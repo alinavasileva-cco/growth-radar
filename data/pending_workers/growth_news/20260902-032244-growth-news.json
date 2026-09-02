@@ -1,0 +1,215 @@
+{
+  "worker": "growth_news",
+  "lane": "growth_news",
+  "created_at": "2026-09-02T03:22:44+03:00",
+  "config_version_seen": "2026-09-02T02:45:00+03:00",
+  "guards": {
+    "canonical_write": false,
+    "contactable_write": false,
+    "runtime_write": false,
+    "campaign_write": false,
+    "outreach": false,
+    "worker_may_assign_net_qualified": false
+  },
+  "baseline": {
+    "canonical_physical": 586,
+    "contactable_physical": 586,
+    "integrity": "PASS",
+    "qualified_staged_counted": 0
+  },
+  "metrics": {
+    "raw_distinct_employers": 15,
+    "fast": 8,
+    "size": 5,
+    "legal": 4,
+    "signal": 3,
+    "lpr": 3,
+    "contact": 3,
+    "prequalified_needs_final_global_dedup": 3,
+    "reject": 12,
+    "source_batches": 8,
+    "target_80_150_met": false,
+    "quota_padding_used": false
+  },
+  "source_batches": [
+    {"batch":"fresh_20260901","type":"fresh company/industry news","raw":2,"notes":"1 Sep 2026 manufacturing expansion; unrelated/non-Russian results rejected early"},
+    {"batch":"fresh_20260831","type":"regional investment / metallurgy","raw":2,"notes":"31 Aug investment projects"},
+    {"batch":"fresh_20260828","type":"industry manufacturing news","raw":3,"notes":"28 Aug plant openings and expansion"},
+    {"batch":"fresh_20260827","type":"regional industrial / electrical","raw":2,"notes":"27 Aug new facilities and capacity"},
+    {"batch":"moscow_region","type":"regional investment portal/business press","raw":2,"notes":"Moscow region manufacturing projects"},
+    {"batch":"south_russia","type":"industry/business press","raw":2,"notes":"Krasnodar/Rostov investment projects"},
+    {"batch":"industrial_automation","type":"industry media / official company news","raw":1,"notes":"automation/electrical equipment growth"},
+    {"batch":"transport_manufacturing","type":"business/industry media","raw":1,"notes":"transport component/new production"}
+  ],
+  "raw": [
+    "ООО «ЗАВОД НАРТИС» / НАРТИС",
+    "ООО «МОСЭЛЕКТРОЩИТ» / ООО «МЭЩ»",
+    "ООО «СТАБТЕХ» / Сайбер Электро",
+    "АО «ВОЛГАЦЕММАШ» / АО «ВЦМ»",
+    "Нижегородский металлопрокатный завод / ГК Металлсервис",
+    "ООО «ВМС-ПРИНТ»",
+    "ГК «ЭФКО»",
+    "ООО «ЭКТ» / The Act",
+    "Тракс / группа КСК",
+    "АГР",
+    "ООО «СЕМАРГЛ»",
+    "Фабрика Вентиляции ГалВент",
+    "ООО «МОЛОПАК»",
+    "ИРЗ-Фотон / Ижевский радиозавод",
+    "Ростсельмаш"
+  ],
+  "dedup_policy": {
+    "historical_pending_tree_required_before_discovery": false,
+    "canonical_and_compact_runtime_checked_first": true,
+    "candidate_level_repo_search_required": ["INN","OGRN_OR_OGRNIP","EXACT_LEGAL_NAME","BRAND_PLUS_DOMAIN"],
+    "full_pending_materialization": "not required for worker decision",
+    "final_global_dedup_owner": "canonical_writer"
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "НАРТИС",
+      "legal_name": "ООО «ЗАВОД НАРТИС»",
+      "inn": "5019029500",
+      "ogrn": "1185022004661",
+      "domain": "nartis.ru",
+      "size": {
+        "pass": true,
+        "evidence": "официально: выручка 2025 27.3 млрд руб.; 992 сотрудника; выпуск 2.1 млн единиц продукции",
+        "url": "https://www.nartis.ru/news/nartis-uvelichil-vypusk-produktsii-na-17-v-2025-godu/"
+      },
+      "legal": {
+        "pass": true,
+        "evidence": "действующее юрлицо; ИНН 5019029500; ОГРН 1185022004661",
+        "url": "https://check.tochka.com/company/1185022004661/"
+      },
+      "signal": {
+        "pass": true,
+        "date": "2026-08-27",
+        "type": "capacity_expansion_new_shop",
+        "evidence": "открыт новый цех 2000 кв.м; мощности направления зарядных станций увеличены в 10 раз; создано 60 рабочих мест",
+        "url": "https://www.nartis.ru/news/nartis-otkryl-novyy-tsekh-i-v-10-raz-uvelichil-moshchnosti-po-vypusku-zaryadnykh-stantsiy/"
+      },
+      "lpr": {
+        "pass": true,
+        "name": "Владимиров Олег Валерьевич",
+        "role": "генеральный директор",
+        "url": "https://check.tochka.com/company/1185022004661/"
+      },
+      "contact": {
+        "pass": true,
+        "route": "+7 (8202) 20-20-27; info@nartis.ru",
+        "route_type": "приёмная генерального директора / официальный email",
+        "url": "https://www.nartis.ru/contacts/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "exact_legal_name_repo_search": "NO_MATCH",
+        "brand_domain_repo_search": "NO_MATCH",
+        "final_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Мосэлектрощит",
+      "legal_name": "ООО «МОСЭЛЕКТРОЩИТ»",
+      "inn": "7731286291",
+      "ogrn": "1157746583136",
+      "domain": "moselectroshield.ru",
+      "size": {
+        "pass": true,
+        "evidence": "действующее крупное производственное предприятие; 2024 выручка 10.416 млрд руб.; официальный сайт указывает более 4000 реализованных проектов",
+        "url": "https://companies.rbc.ru/id/1157746583136-ooo-moselektroschit/"
+      },
+      "legal": {
+        "pass": true,
+        "evidence": "на 30.08.2026 организация действует; ИНН 7731286291; ОГРН 1157746583136",
+        "url": "https://companies.rbc.ru/id/1157746583136-ooo-moselektroschit/"
+      },
+      "signal": {
+        "pass": true,
+        "date": "2026-08-28",
+        "type": "new_factory_phase_capacity_expansion",
+        "evidence": "открыта третья очередь завода в Коврове; новая площадка 15.5 тыс. кв.м; инвестиции 2.8 млрд руб.; до 3000 КРУ в год",
+        "url": "https://eprussia.ru/com/news/7921069.htm"
+      },
+      "lpr": {
+        "pass": true,
+        "name": "Шемякин Николай Александрович",
+        "role": "генеральный директор",
+        "url": "https://check.tochka.com/company/1157746583136/"
+      },
+      "contact": {
+        "pass": true,
+        "route": "+7 (495) 787-43-59 доб. 301 (приёмная); info@moselectroshield.ru",
+        "route_type": "официальная приемная / corporate email",
+        "url": "https://www.moselectroshield.ru/contact/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "exact_legal_name_repo_search": "NO_MATCH",
+        "brand_domain_repo_search": "NO_MATCH",
+        "final_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Сайбер Электро",
+      "legal_name": "ООО «СТАБТЕХ»",
+      "inn": "5009123398",
+      "ogrn": "1205000038957",
+      "domain": "stab-tech.ru",
+      "size": {
+        "pass": true,
+        "evidence": "выручка 2025 283.064 млн руб.; российская инженерно-производственная компания с собственными производственными площадями и корпоративным B2B-продуктом",
+        "url": "https://companies.rbc.ru/id/1205000038957-obschestvo-s-ogranichennoj-otvetstvennostyu-stabteh/"
+      },
+      "legal": {
+        "pass": true,
+        "evidence": "на 17.07.2026 организация действует; ИНН 5009123398; ОГРН 1205000038957; правообладатель САЙБЕР ЭЛЕКТРО",
+        "url": "https://companies.rbc.ru/id/1205000038957-obschestvo-s-ogranichennoj-otvetstvennostyu-stabteh/"
+      },
+      "signal": {
+        "pass": true,
+        "date": "2026-09-01",
+        "type": "second_production_site_capacity_expansion",
+        "evidence": "запущена вторая площадка в Голицыно, вдвое больше первой линии; заявлено увеличение выпуска и масштабирование линейки российских ИБП",
+        "url": "https://www.cnews.ru/news/line/2026-09-01_dlya_sajber_elektrootkryta"
+      },
+      "lpr": {
+        "pass": true,
+        "name": "Невзоров Вадим Борисович",
+        "role": "генеральный директор",
+        "url": "https://saby.ru/profile/5009123398-503201001"
+      },
+      "contact": {
+        "pass": true,
+        "route": "+7 (495) 181-73-62; info@stab-tech.ru; sales@stab-tech.ru",
+        "route_type": "официальный общий / sales route",
+        "url": "https://stab-tech.ru/contacts/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "exact_legal_name_repo_search": "NO_MATCH",
+        "brand_domain_repo_search": "NO_MATCH",
+        "final_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status":"REJECT","brand":"Волгацеммаш","reason_stage":"LEGAL","reason":"юрлицо находится в процессе реорганизации; worker не трактует это как чистый legal PASS без дополнительной canonical/legal проверки","evidence_url":"https://companies.rbc.ru/id/1246300019393-ao-vtsm/","signal_url":"https://ww1.metalinfo.ru/ru/news/187345"},
+    {"status":"REJECT","brand":"Нижегородский металлопрокатный завод","reason_stage":"FAST","reason":"сильный проект найден, но полный SIZE→LEGAL→LPR→CONTACT в текущем цикле не завершён; не stage","signal_url":"https://www.vremyan.ru/news/609913"},
+    {"status":"REJECT","brand":"ВМС-Принт","reason_stage":"FAST","reason":"growth signal найден, но полный employer-level deep-check не завершён; не stage","signal_url":"https://riamo.ru/news/ekonomika/podmoskove-podderzhit-investproekt-v-podolske-na-1-mlrd-rublej/"},
+    {"status":"REJECT","brand":"ЭФКО","reason_stage":"FAST","reason":"групповой бренд/нужно разрешение конкретного юрлица проекта; не stage без legal-key resolution","signal_url":"https://oleoscope.com/news/jefko-investiruet-5-8-mlrd-rublej-v-zavod/"},
+    {"status":"REJECT","brand":"The Act / ООО ЭКТ","reason_stage":"FAST","reason":"инвестиционный signal найден, но полный CONTACT/LPR deep-check не завершён; не stage","signal_url":"https://www.ruhim.ru/novosti/investicii-v-rasshirenie-proizvodstva-kosmetiki-the-act.htm"},
+    {"status":"REJECT","brand":"Тракс / КСК","reason_stage":"FAST","reason":"не разрешено до конкретного самостоятельного employer legal entity с полным dedup-key set","signal_url":"https://abnews.ru/center/news/mosreg/2026/6/19/ksk-vlozhit-2-mlrd-v-vypusk-kompressorov-i-ventilyatorov-dlya-transporta-v-podmoskove"},
+    {"status":"REJECT","brand":"АГР","reason_stage":"FAST","reason":"холдинговый бренд; full legal/LPR/contact resolution не завершён в текущем цикле","signal_url":"https://iz.ru/2116187/2026-06-16/agr-zapustil-proizvodstvo-novoi-versii-krossovera-tenet-t8"},
+    {"status":"REJECT","brand":"Семаргл","reason_stage":"DEDUP","reason":"уже фигурировал в предыдущем growth_news worker cycle; low-overlap requirement, повторно не stage","signal_url":"https://www.bfm.ru/news/616125"},
+    {"status":"REJECT","brand":"ГалВент","reason_stage":"DEDUP","reason":"уже фигурировал в предыдущем growth_news worker cycle; повторно не stage","signal_url":"https://www.vedomosti.ru/press_releases/2026/08/05/podmoskovnaya-kompaniya-zapustila-novii-zavod-po-vipusku-ventilyatsionnogo-oborudovaniya"},
+    {"status":"REJECT","brand":"МолоПак","reason_stage":"DEDUP","reason":"уже фигурировал в предыдущем growth_news worker cycle; повторно не stage","signal_url":"https://www.vedomosti.ru/press_releases/2025/12/24/okolo-21-mlrd-rublei-vlozhit-molopak-v-rasshirenie-proizvodstva-upakovki-dlya-napitkov"},
+    {"status":"REJECT","brand":"ИРЗ-Фотон","reason_stage":"SIGNAL","reason":"сигнал от 19.03.2026 находится близко к границе 180 дней и текущий цикл приоритизировал более свежие сигналы; не stage без полного deep-check","signal_url":"https://www.cta.ru/news/cta/182989.html"},
+    {"status":"REJECT","brand":"Ростсельмаш","reason_stage":"SIGNAL","reason":"найденная свежая заметка касается закупочной политики, а не подтвержденного S1-S3 growth signal из заданного списка","signal_url":"https://crp.gov.ru/news/"}
+  ]
+}
