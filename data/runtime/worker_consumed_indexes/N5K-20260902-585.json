@@ -1,0 +1,14 @@
+{
+  "run_id": "N5K-20260902-585",
+  "consumed_at": "2026-09-02T14:27:50+03:00",
+  "files": [
+    "data/pending_workers/official_owner/20260902-142604-official-owner.json"
+  ],
+  "raw_candidates_counted": 15,
+  "prequalified_rechecked": 4,
+  "physical_duplicates": 1,
+  "net_qualified": 1,
+  "qualified_staged_not_counted": 0,
+  "immutable_source_retained": true,
+  "notes": "Fresh staging consumed before own supplemental discovery. Lalibela Coffee blocked by physical INN/OGRN/exact legal-name guard; ABI Product integrated. Semargl rejected at FAST GATE as a Kalashnikov asset; Summit not promoted fail-closed on exact signal-to-legal-entity linkage."
+}
