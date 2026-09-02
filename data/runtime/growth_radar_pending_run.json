@@ -1,9 +1,73 @@
 {
-  "run_id": "N5K-20260903-594",
-  "updated_at": "2026-09-03T00:27:37+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 40,
-  "note": "N5K-20260903-594 integrated verified rows but cannot be COMPLETED: raw_distinct=40<120. Supplemental discovery required."
+  "run_id": "N5K-20260903-595",
+  "updated_at": "2026-09-03T01:45:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "raw_distinct": 45,
+    "discovered": 45,
+    "fast_gate_passed": 6,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 44
+  },
+  "lane_metrics": [
+    {"lane":"regional_investment_new_production","raw":7,"duplicates_early_rejects":6,"qualified":0},
+    {"lane":"industrial_park_sez_technopark","raw":5,"duplicates_early_rejects":5,"qualified":0},
+    {"lane":"regional_official_private_expansion","raw":4,"duplicates_early_rejects":4,"qualified":0},
+    {"lane":"msp_regional_scaleup","raw":6,"duplicates_early_rejects":5,"qualified":1},
+    {"lane":"export_capacity_growth","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"dealer_franchise_partner_expansion","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"logistics_warehouse_commercial_property","raw":4,"duplicates_early_rejects":4,"qualified":0},
+    {"lane":"new_line_workshop_factory","raw":7,"duplicates_early_rejects":6,"qualified":0},
+    {"lane":"ma_private_investment","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"branches_offices_service_centers","raw":3,"duplicates_early_rejects":3,"qualified":0}
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-595-HROMOS-5249111131",
+      "Brand": "ХРОМОС Инжиниринг",
+      "Legal Name": "ООО \"ХРОМОС Инжиниринг\"",
+      "INN": "5249111131",
+      "OGRN/OGRNIP": "1105249006235",
+      "Region": "Нижегородская область",
+      "City": "Дзержинск",
+      "Segment": "Промышленное аналитическое и измерительное оборудование",
+      "Website": "https://has.ru/",
+      "Revenue/Scale": "Выручка 2025: 1,981 млрд руб.; 1 кв. 2026: 473,17 млн руб.",
+      "Signal Level": "S1",
+      "Signal Summary": "25.08.2026 компания сообщила о запуске полного цикла производства боксов контроля качества и систем продувки оболочки; ранее в июле 2026 выпуск промышленных газовых хроматографов был увеличен в 1,7 раза.",
+      "Signal Date": "2026-08-25",
+      "Signal Source": "https://www.corpmsp.ru/about/press/news/novosti-korporatsii/msp-proizvoditel-khromatografov-iz-nizhegorodskoy-oblasti-razrabotal-importozameshchayushchee-oborud/",
+      "Owner": "Пахомов Андрей Львович",
+      "CEO": "Поляков Александр Павлович",
+      "LPR": "Поляков Александр Павлович",
+      "LPR Role": "Директор",
+      "Primary Phone": "+7 (8313) 249-200",
+      "Primary Email": "mail@has.ru",
+      "HH Contact": "",
+      "Contact Form": "https://has.ru/about/",
+      "Contact Type": "Корпоративный опубликованный маршрут",
+      "Contact Source": "https://invest.has.ru/",
+      "Consulting Hypothesis": "Масштабирование нового импортозамещающего производства и рост промышленного портфеля создают задачи по коммерческой стратегии, развитию продаж и управлению ростом.",
+      "contacts": [
+        {"value":"mail@has.ru","channel":"email","type":"corporate_published","source":"ХРОМОС — официальный сайт/инвесторский раздел","url":"https://invest.has.ru/","is_lpr":false,"notes":"Официальный корпоративный e-mail эмитента"},
+        {"value":"+7 (8313) 249-200","channel":"phone","type":"corporate_published","source":"ХРОМОС — официальный сайт","url":"https://has.ru/about/","is_lpr":false,"notes":"Официальный телефон компании"}
+      ],
+      "evidence": [
+        {"type":"legal","claim":"ООО ХРОМОС Инжиниринг, ОГРН 1105249006235, действующее юрлицо; руководитель Поляков Александр Павлович","url":"https://invest.has.ru/","source":"Официальный инвесторский раздел ХРОМОС"},
+        {"type":"inn","claim":"ИНН 5249111131; ОГРН 1105249006235","url":"https://e-disclosure.azipi.ru/messages/4524977/","source":"Центр раскрытия корпоративной информации"},
+        {"type":"scale","claim":"Выручка по итогам 2025 года около 1,981 млрд руб.","url":"https://e-disclosure.azipi.ru/messages/4524977/","source":"Раскрытие эмитента"},
+        {"type":"signal","claim":"25.08.2026 запущено производство полного цикла нового импортозамещающего оборудования; за пять лет выручка выросла в 4,5 раза","url":"https://www.corpmsp.ru/about/press/news/novosti-korporatsii/msp-proizvoditel-khromatografov-iz-nizhegorodskoy-oblasti-razrabotal-importozameshchayushchee-oborud/","source":"Корпорация МСП"},
+        {"type":"lpr_contact","claim":"Руководитель Поляков Александр Павлович; опубликованы корпоративные телефон и e-mail","url":"https://invest.has.ru/","source":"Официальный инвесторский раздел ХРОМОС"}
+      ]
+    }
+  ],
+  "external_technical_limitation": {"proven": false, "evidence": ""},
+  "notes": "45 genuinely distinct employer-level raw candidates were reviewed across 10 rotated low-overlap lanes from fresh official/industry/regional sources. No generic catalog padding. Same-cycle supplemental discovery continued after the initial lanes, but raw remained below the 120 hard floor and 300 continuation threshold. Criteria unchanged; outreach 0."
 }
