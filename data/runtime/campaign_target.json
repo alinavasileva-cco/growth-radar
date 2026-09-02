@@ -17,69 +17,53 @@
   "current_run_id": "N5K-20260902-583R1",
   "last_run_id": "N5K-20260902-583R1",
   "latest_completed_run": "N5K-20260902-583R1",
-  "latest_attempted_run": "N5K-20260902-583",
+  "latest_attempted_run": "N5K-20260902-583R1",
   "latest_attempted_run_status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260902-583",
+  "canonical_integration_run_id": "N5K-20260902-583R1",
   "hourly_baseline_count": 596,
   "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-583",
-    "raw": 250,
-    "raw_scope_note": "250 distinct employer-level raw counted after cross-lane name dedup; search-result rows, obvious non-companies, foreign-only items and duplicate observations were not counted. Additional post-250 observations were not added without reproducible exact distinct-employer instrumentation.",
-    "fast_gate": 2,
-    "size": 2,
-    "legal": 0,
-    "signal": 0,
-    "lpr": 0,
-    "contact": 0,
+    "run_id": "N5K-20260902-583R1",
+    "raw": 251,
+    "raw_scope_note": "250 authoritative distinct employer-level raw from N5K-20260902-583 plus one fresh distinct employer in same-hour recovery. The new candidate was rejected only at the authoritative physical dedup guard.",
+    "fast_gate": 3,
+    "size": 3,
+    "legal": 1,
+    "signal": 1,
+    "lpr": 1,
+    "contact": 1,
     "qualified": 0,
-    "duplicates": 0,
+    "duplicates": 1,
     "excluded_early_reject": 250,
     "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 0.8,
+    "fast_gate_raw_pct": 1.1952,
     "raw_target_met": false,
     "minimum_raw_floor_met": true,
-    "user_supplemental_250_threshold_met": true,
     "preferred_config_raw_target_met": false,
     "supplemental_discovery_performed": true,
     "normal_throughput_completion": false,
-    "raw_count_note": "Fresh worker growth_news raw=5; low-overlap industry-news raw=225; regional production/investment/expansion raw=20. Authoritative total=250. CURRENT_WORKING_CONFIG prefers 400-800 and requires continued source switching below 300 while reasonably possible; a further source-switch wave was attempted but uninstrumented extra observations were not added to raw."
+    "raw_count_note": "Authoritative cumulative raw=251. A fresh regional production/business-change candidate was resolved through LEGAL/SIGNAL/LPR/CONTACT but the existing physical canonical writer found an exact duplicate on INN, OGRN, legal name and brand+domain. No padding to 300."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "growth_news_20260902_082541",
-      "raw": 5,
+      "lane": "run_583_carry_forward",
+      "raw": 250,
       "net_qualified": 0,
       "physical_duplicates": 0,
-      "next_state": "ROTATE_AFTER_FAIL_CLOSED_RECHECK"
+      "next_state": "ROTATED"
     },
     {
-      "lane": "low_overlap_industry_news_aug_2026",
-      "raw": 225,
+      "lane": "fresh_regional_production_business_change_583R1",
+      "raw": 1,
       "net_qualified": 0,
-      "physical_duplicates": 0,
-      "next_state": "ROTATE"
-    },
-    {
-      "lane": "regional_production_investment_expansion",
-      "raw": 20,
-      "net_qualified": 0,
-      "physical_duplicates": 0,
-      "next_state": "CONTINUE_WITH_EXACT_RAW_INSTRUMENTATION"
+      "physical_duplicates": 1,
+      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260902-581R2",
-      "raw": 82,
-      "fast_gate": 16,
-      "qualified": 3,
-      "qualified_raw_pct": 3.6585,
-      "fast_gate_raw_pct": 19.5122
-    },
     {
       "run_id": "N5K-20260902-582",
       "raw": 29,
@@ -95,13 +79,21 @@
       "qualified": 0,
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 0.8
+    },
+    {
+      "run_id": "N5K-20260902-583R1",
+      "raw": 251,
+      "fast_gate": 3,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 1.1952
     }
   ],
   "efficiency_change_vs_previous_run": {
     "qualified_raw_pct_points": 0.0,
     "net_new_change": 0,
-    "fast_gate_raw_pct_points": -30.2345,
-    "assessment": "Raw coverage improved from 29 to 250, but net-new remained 0. Do not lower criteria. Rotate away from low-yield samples and continue fresh low-overlap discovery with exact employer-level raw instrumentation."
+    "fast_gate_raw_pct_points": 0.3952,
+    "assessment": "Same-hour recovery produced a fully resolved candidate but physical dedup rejected it. Criteria remain unchanged. Continue only in fresh low-overlap source families; do not repeat saturated samples."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -113,7 +105,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "N5K-20260902-583 consumed fresh growth_news staging first. Two PREQUALIFIED candidates were independently rechecked; neither reached QUALIFIED. Qualified staged not counted is zero.",
-  "repair_required": "THROUGHPUT_DISCLOSURE_RAW_250_BELOW_CURRENT_CONFIG_CONTINUE_THRESHOLD_300",
-  "note": "N5K-20260902-583R1 completed after physical integration: +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "fresh_staging": "N5K-20260902-583R1 physically processed through the existing canonical writer. Qualified staged not counted is zero; pending is cleared.",
+  "repair_required": "THROUGHPUT_DISCLOSURE_RAW_251_BELOW_CURRENT_CONFIG_CONTINUE_THRESHOLD_300_AND_CONSECUTIVE_LOW_NET_NEW",
+  "note": "N5K-20260902-583R1 completed physically with +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Authoritative raw=251; supplemental recovery was performed; candidate was rejected as a physical duplicate."
 }
