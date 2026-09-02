@@ -1,0 +1,15 @@
+{
+  "run_id": "N5K-20260902-584",
+  "consumed_at": "2026-09-02T09:25:37+03:00",
+  "files": [
+    "data/pending_workers/official_owner/20260902-084500-official-owner.json"
+  ],
+  "raw_candidates_counted": 5,
+  "raw_count_scope": "Only the five terminal PREQUALIFIED employer-level candidates are counted because the immutable worker file did not persist an exact larger raw/distinct count.",
+  "prequalified_rechecked": 5,
+  "physical_duplicates": 3,
+  "net_qualified": 2,
+  "qualified_staged_not_counted": 0,
+  "immutable_source_retained": true,
+  "note": "Fresh staging consumed before supplemental discovery; physical final dedup performed by canonical writer; immutable source retained."
+}
