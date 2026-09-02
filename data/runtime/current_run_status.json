@@ -2,32 +2,32 @@
   "run_id": "N5K-20260902-588R1",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-02T18:47:00+03:00",
+  "updated_at": "2026-09-02T18:51:00+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
     "baseline_count": 601,
     "target_count": 5000,
-    "current_canonical_count": 601,
-    "current_contactable_count": 601,
-    "progress_added": 0,
-    "remaining": 4399
+    "current_canonical_count": 602,
+    "current_contactable_count": 602,
+    "progress_added": 1,
+    "remaining": 4398
   },
   "funnel": {
-    "raw_distinct": 32,
-    "discovered": 32,
-    "fast_gate_passed": 4,
-    "size_check_passed": 4,
-    "legal_match_passed": 4,
-    "signal_confirmed": 4,
-    "lpr_identified": 4,
-    "contact_route_found": 4,
-    "qualified": 0,
+    "raw_distinct": 33,
+    "discovered": 33,
+    "fast_gate_passed": 5,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 5,
+    "lpr_identified": 5,
+    "contact_route_found": 5,
+    "qualified": 1,
     "duplicates": 5,
     "excluded": 28
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 32,
+    "raw_distinct": 33,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -98,17 +98,25 @@
     {
       "lane": "vladimir_frp_new_production",
       "raw": 1,
+      "duplicates_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "chuvashia_new_production",
+      "raw": 1,
       "duplicates_early_rejects": 0,
       "qualified": 1
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Фабрика дверей Гармония"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "601_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "601_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "602_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "602_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }
