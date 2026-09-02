@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T06:36:00+03:00",
+  "generated_at": "2026-09-02T07:42:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260902-581R2",
-  "current_run_id": "N5K-20260902-581R2",
+  "latest_completed_run_id": "N5K-20260902-582",
+  "current_run_id": "N5K-20260902-582",
   "current_run_status": "COMPLETED",
   "canonical_pool_verified": 596,
   "contactable_verified": 596,
@@ -14,35 +14,18 @@
   "integrity_status": "PASS",
   "outreach_sent": 0,
   "blocker": null,
-  "run_581R2": {
-    "raw_discovered": 82,
-    "fast_gate_passed": 16,
-    "size_check_passed": 9,
-    "legal_match_passed": 7,
-    "signal_confirmed": 7,
-    "lpr_identified": 5,
-    "contact_route_found": 4,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 0,
-    "excluded": 81,
-    "lane_metrics": [
-      {
-        "lane": "hourly_581R1_carry_forward",
-        "distinct_raw": 71,
-        "duplicates_plus_early_rejects": 70,
-        "prequalified_rechecked": 0,
-        "submitted_to_physical_guard": 0,
-        "notes": "Cumulative authoritative employer-level raw already established through N5K-20260902-581R1."
-      },
-      {
-        "lane": "fresh_regional_production_business_change_581R2",
-        "distinct_raw": 11,
-        "duplicates_plus_early_rejects": 10,
-        "prequalified_rechecked": 1,
-        "submitted_to_physical_guard": 1,
-        "notes": "Fresh named-employer signals from regional production/investment and business-change sources; jobs not used and saturated known samples excluded."
-      }
-    ]
+  "run_582": {
+    "raw_discovered": 29,
+    "fast_gate_passed": 9,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 3,
+    "qualified": 0,
+    "physically_integrated": 0,
+    "duplicates": 4,
+    "excluded": 28,
+    "lane_metrics": []
   }
 }

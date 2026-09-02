@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T06:36:00+03:00",
+  "updated_at": "2026-09-02T07:42:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260902-581R2",
-  "current_run_id": "N5K-20260902-581R2",
-  "last_run_id": "N5K-20260902-581R2",
-  "latest_completed_run": "N5K-20260902-581R2",
+  "last_completed_run_id": "N5K-20260902-582",
+  "current_run_id": "N5K-20260902-582",
+  "last_run_id": "N5K-20260902-582",
+  "latest_completed_run": "N5K-20260902-582",
   "latest_attempted_run": "N5K-20260902-581R2",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260902-581R2",
@@ -113,5 +113,5 @@
   },
   "fresh_staging": "N5K-20260902-581R2 physically integrated Belaya Dolina after candidate-level INN/OGRN/legal/domain guard. Qualified staged not counted is zero.",
   "repair_required": "LOW_RAW_82_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_RECOVERY",
-  "note": "N5K-20260902-581R2 hourly cumulative result: baseline 593 -> canonical/contactable 596/596, net-new +3, integrity PASS, orphan 0/0, staged 0, active WIP 0, outreach 0. Raw 82 remains below mandatory 120."
+  "note": "N5K-20260902-582 completed after physical integration: +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
