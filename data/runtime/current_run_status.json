@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260902-589",
+  "run_id": "N5K-20260902-590",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-02T19:30:44+03:00",
+  "updated_at": "2026-09-02T20:37:00+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
     "baseline_count": 604,
@@ -13,21 +13,21 @@
     "remaining": 4396
   },
   "funnel": {
-    "raw_distinct": 54,
-    "discovered": 54,
-    "fast_gate_passed": 4,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 2,
+    "raw_distinct": 38,
+    "discovered": 38,
+    "fast_gate_passed": 0,
+    "size_check_passed": 0,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
     "qualified": 0,
-    "duplicates": 2,
-    "excluded": 52
+    "duplicates": 0,
+    "excluded": 38
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 54,
+    "raw_distinct": 38,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -36,70 +36,64 @@
   },
   "lane_metrics": [
     {
-      "lane": "fresh_growth_business_change",
-      "raw": 6,
-      "duplicates_early_rejects": 6,
-      "qualified": 0
-    },
-    {
-      "lane": "moscow_region_new_production",
-      "raw": 8,
-      "duplicates_early_rejects": 7,
-      "qualified": 0
-    },
-    {
-      "lane": "northwest_new_production",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "volga_new_production",
-      "raw": 6,
+      "lane": "regional_investment_new_production",
+      "raw": 5,
       "duplicates_early_rejects": 5,
       "qualified": 0
     },
     {
-      "lane": "ural_new_production",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "south_new_production",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "central_new_production",
-      "raw": 7,
-      "duplicates_early_rejects": 7,
-      "qualified": 0
-    },
-    {
-      "lane": "official_owner_company",
+      "lane": "industrial_park_sez_technopark",
       "raw": 4,
-      "duplicates_early_rejects": 3,
+      "duplicates_early_rejects": 4,
+      "qualified": 0
+    },
+    {
+      "lane": "regional_official_private_expansion",
+      "raw": 4,
+      "duplicates_early_rejects": 4,
+      "qualified": 0
+    },
+    {
+      "lane": "msp_scaleup_cases",
+      "raw": 4,
+      "duplicates_early_rejects": 4,
+      "qualified": 0
+    },
+    {
+      "lane": "export_growth",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
       "qualified": 0
     },
     {
       "lane": "dealer_franchise_partner_expansion",
+      "raw": 5,
+      "duplicates_early_rejects": 5,
+      "qualified": 0
+    },
+    {
+      "lane": "logistics_warehouse_commercial_property",
       "raw": 3,
       "duplicates_early_rejects": 3,
       "qualified": 0
     },
     {
-      "lane": "large_transformation_probe",
-      "raw": 10,
-      "duplicates_early_rejects": 10,
+      "lane": "new_line_workshop_factory",
+      "raw": 5,
+      "duplicates_early_rejects": 5,
       "qualified": 0
     },
     {
-      "lane": "official_msp_fresh_scaleup",
-      "raw": 1,
-      "duplicates_early_rejects": 0,
-      "qualified": 1
+      "lane": "new_branches_stores_service_centers",
+      "raw": 4,
+      "duplicates_early_rejects": 4,
+      "qualified": 0
+    },
+    {
+      "lane": "investment_funding_management_change",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
+      "qualified": 0
     }
   ],
   "qualified_companies": [],

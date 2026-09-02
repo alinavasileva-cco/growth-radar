@@ -11,14 +11,14 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T19:30:44+03:00",
+  "updated_at": "2026-09-02T20:37:00+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260902-588R1",
-  "current_run_id": "N5K-20260902-589",
-  "last_run_id": "N5K-20260902-589",
+  "current_run_id": "N5K-20260902-590",
+  "last_run_id": "N5K-20260902-590",
   "latest_completed_run": "N5K-20260902-588R1",
-  "latest_attempted_run": "N5K-20260902-589",
-  "latest_attempted_run_id": "N5K-20260902-589",
+  "latest_attempted_run": "N5K-20260902-590",
+  "latest_attempted_run_id": "N5K-20260902-590",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260902-588R1",
   "hourly_baseline_count": 604,
@@ -44,17 +44,74 @@
     "raw_count_note": "54 fresh distinct employer-level raw across 11 lanes. Supplemental candidate Ивановская Текстильная Компания passed deep verification but was rejected by physical canonical dedup; ULTRAFILAMENT was also an existing canonical duplicate. Raw remains below hard floor 120 and preferred continue-until-300 threshold. Criteria unchanged; no catalog padding; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {"lane":"fresh_growth_business_change","raw":6,"net_qualified":0,"duplicates_early_rejects":6},
-    {"lane":"moscow_region_new_production","raw":8,"net_qualified":0,"duplicates_early_rejects":7},
-    {"lane":"northwest_new_production","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"volga_new_production","raw":6,"net_qualified":0,"duplicates_early_rejects":5},
-    {"lane":"ural_new_production","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"south_new_production","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"central_new_production","raw":7,"net_qualified":0,"duplicates_early_rejects":7},
-    {"lane":"official_owner_company","raw":4,"net_qualified":0,"duplicates_early_rejects":3,"physical_duplicates":1},
-    {"lane":"dealer_franchise_partner_expansion","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"large_transformation_probe","raw":10,"net_qualified":0,"duplicates_early_rejects":10},
-    {"lane":"official_msp_fresh_scaleup","raw":1,"net_qualified":0,"duplicates_early_rejects":0,"physical_duplicates":1}
+    {
+      "lane": "fresh_growth_business_change",
+      "raw": 6,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 6
+    },
+    {
+      "lane": "moscow_region_new_production",
+      "raw": 8,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 7
+    },
+    {
+      "lane": "northwest_new_production",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "volga_new_production",
+      "raw": 6,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 5
+    },
+    {
+      "lane": "ural_new_production",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "south_new_production",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "central_new_production",
+      "raw": 7,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 7
+    },
+    {
+      "lane": "official_owner_company",
+      "raw": 4,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3,
+      "physical_duplicates": 1
+    },
+    {
+      "lane": "dealer_franchise_partner_expansion",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "large_transformation_probe",
+      "raw": 10,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 10
+    },
+    {
+      "lane": "official_msp_fresh_scaleup",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 0,
+      "physical_duplicates": 1
+    }
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -68,5 +125,5 @@
   "fresh_staging": "RUN N5K-20260902-589 staging was physically processed by the canonical writer; qualified staged not counted is zero. ULTRAFILAMENT and Ивановская Текстильная Компания were rejected by physical canonical dedup as existing companies.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260902-589 requires recovery: raw_distinct 54<120 hard floor and <300 preferred continuation threshold; canonical/contactable 604/604; net_new 0; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260902-590 requires recovery: raw_distinct 38<300; hard_floor_passed=False; canonical/contactable 604/604; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
