@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T19:07:55+03:00",
+  "generated_at": "2026-09-02T19:30:44+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260902-588R1",
   "current_run_id": "N5K-20260902-589",
@@ -16,21 +16,21 @@
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 53,
+    "raw_distinct": 54,
     "external_technical_limitation_proven": false,
     "passed": false
   },
   "run_589": {
-    "raw_discovered": 53,
-    "fast_gate_passed": 3,
-    "size_check_passed": 2,
-    "legal_match_passed": 2,
-    "signal_confirmed": 2,
-    "lpr_identified": 2,
-    "contact_route_found": 1,
+    "raw_discovered": 54,
+    "fast_gate_passed": 4,
+    "size_check_passed": 3,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
+    "lpr_identified": 3,
+    "contact_route_found": 2,
     "qualified": 0,
     "physically_integrated": 0,
-    "duplicates": 1,
+    "duplicates": 2,
     "excluded": 52,
     "lane_metrics": [
       {
@@ -43,8 +43,7 @@
         "lane": "moscow_region_new_production",
         "raw": 8,
         "duplicates_early_rejects": 7,
-        "qualified": 0,
-        "note": "Биофармлаб дошёл до deep-check, но свежий практический contact route не подтверждён на том же уровне качества."
+        "qualified": 0
       },
       {
         "lane": "northwest_new_production",
@@ -56,8 +55,7 @@
         "lane": "volga_new_production",
         "raw": 6,
         "duplicates_early_rejects": 5,
-        "qualified": 0,
-        "note": "VR Robotics дошёл до SIZE и отклонён как недостаточный текущий масштаб."
+        "qualified": 0
       },
       {
         "lane": "ural_new_production",
@@ -81,7 +79,7 @@
         "lane": "official_owner_company",
         "raw": 4,
         "duplicates_early_rejects": 3,
-        "qualified": 1
+        "qualified": 0
       },
       {
         "lane": "dealer_franchise_partner_expansion",
@@ -93,8 +91,13 @@
         "lane": "large_transformation_probe",
         "raw": 10,
         "duplicates_early_rejects": 10,
-        "qualified": 0,
-        "note": "Probe-only: крупные/государственные/нецелевые работодатели не продвигались в deep funnel."
+        "qualified": 0
+      },
+      {
+        "lane": "official_msp_fresh_scaleup",
+        "raw": 1,
+        "duplicates_early_rejects": 0,
+        "qualified": 1
       }
     ]
   }

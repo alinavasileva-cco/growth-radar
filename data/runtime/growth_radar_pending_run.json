@@ -1,71 +1,9 @@
 {
   "run_id": "N5K-20260902-589",
   "updated_at": "2026-09-02T19:30:44+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "qualified_companies": [
-    {
-      "Lead ID": "N5K-3702588935",
-      "Brand": "Ивановская Текстильная Компания",
-      "Legal Name": "ООО «ИВАНОВСКАЯ ТЕКСТИЛЬНАЯ КОМПАНИЯ»",
-      "INN": "3702588935",
-      "OGRN/OGRNIP": "1093702014350",
-      "Region": "Ивановская область",
-      "City": "Иваново",
-      "Segment": "Легкая промышленность / спецодежда / корпоративный текстиль",
-      "Website": "https://ivcompany.ru/",
-      "Revenue/Scale": "Среднее предприятие; новый московский производственный объект уже создал 100 рабочих мест, с ростом до 300; официальный сайт указывает 400+ ежегодных контрактов.",
-      "Signal Level": "S1",
-      "Signal Summary": "31.08.2026 Ивановская Текстильная Компания при поддержке Корпорации МСП открыла в Москве современное швейное производство полного цикла. Инвестиции в проект около 255 млн руб.; уже создано 100 рабочих мест, по мере развития производства планируется до 300. В 2026 году предприятие также привлекло 300 млн руб. льготного финансирования для масштабирования бизнеса.",
-      "Signal Date": "2026-08-31",
-      "Signal Source": "https://www.corpmsp.ru/about/press/news/novosti-korporatsii/v-moskve-pri-podderzhke-korporatsii-msp-otkryto-novoe-innovatsionnoe-tekstilnoe-proizvodstvo/",
-      "Owner": "Шилов Юрий Михайлович — учредитель",
-      "CEO": "Шилов Юрий Михайлович",
-      "LPR": "Шилов Юрий Михайлович",
-      "LPR Role": "Генеральный директор / собственник",
-      "Primary Phone": "8 (800) 222-12-53",
-      "Primary Email": "mail@ivcompany.ru",
-      "HH Contact": "",
-      "Contact Form": "",
-      "Contact Type": "Официальный корпоративный email / телефон",
-      "Contact Source": "https://ivcompany.ru/",
-      "Consulting Hypothesis": "Запуск нового производства и быстрый рост численности создают задачи коммерческой загрузки мощностей, масштабирования продаж, KPI, управленческой отчетности и операционной синхронизации.",
-      "contacts": [
-        {"value": "mail@ivcompany.ru", "channel": "Email", "type": "Корпоративный маршрут", "source": "Ивановская Текстильная Компания", "url": "https://ivcompany.ru/", "is_lpr": false, "notes": "Официальный корпоративный email"},
-        {"value": "8 (800) 222-12-53", "channel": "Phone", "type": "Корпоративный маршрут", "source": "Ивановская Текстильная Компания", "url": "https://ivcompany.ru/", "is_lpr": false, "notes": "Официальный корпоративный телефон"}
-      ],
-      "evidence": [
-        {"type": "LEGAL_SCALE", "claim": "ООО «Ивановская текстильная компания»: ИНН 3702588935, ОГРН 1093702014350, действующее российское юрлицо; гендиректор и учредитель Юрий Михайлович Шилов; категория МСП — средний бизнес.", "url": "https://reputation.ru/ogrn/1093702014350", "source": "Reputation / открытые реестровые данные"},
-        {"type": "SIGNAL", "claim": "31.08.2026 компания открыла в Москве новое швейное производство полного цикла; инвестиции около 255 млн руб.; создано 100 рабочих мест с планом роста до 300; в 2026 году дополнительно привлечено 300 млн руб. льготного финансирования.", "url": "https://www.corpmsp.ru/about/press/news/novosti-korporatsii/v-moskve-pri-podderzhke-korporatsii-msp-otkryto-novoe-innovatsionnoe-tekstilnoe-proizvodstvo/", "source": "Корпорация МСП"},
-        {"type": "CONTACT", "claim": "Официальный сайт публикует корпоративный email mail@ivcompany.ru и телефон 8 (800) 222-12-53.", "url": "https://ivcompany.ru/", "source": "Ивановская Текстильная Компания"}
-      ]
-    }
-  ],
-  "qualified_staged_not_counted": 1,
-  "funnel": {
-    "raw_distinct": 54,
-    "discovered": 54,
-    "fast_gate_passed": 4,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 2,
-    "qualified": 1,
-    "duplicates": 1,
-    "excluded": 52
-  },
-  "lane_metrics": [
-    {"lane": "fresh_growth_business_change", "raw": 6, "duplicates_early_rejects": 6, "qualified": 0},
-    {"lane": "moscow_region_new_production", "raw": 8, "duplicates_early_rejects": 7, "qualified": 0},
-    {"lane": "northwest_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "volga_new_production", "raw": 6, "duplicates_early_rejects": 5, "qualified": 0},
-    {"lane": "ural_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "south_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "central_new_production", "raw": 7, "duplicates_early_rejects": 7, "qualified": 0},
-    {"lane": "official_owner_company", "raw": 4, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "dealer_franchise_partner_expansion", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
-    {"lane": "large_transformation_probe", "raw": 10, "duplicates_early_rejects": 10, "qualified": 0},
-    {"lane": "official_msp_fresh_scaleup", "raw": 1, "duplicates_early_rejects": 0, "qualified": 1}
-  ],
-  "notes": "Recovery continuation for RUN N5K-20260902-589. One additional employer-level candidate was fully verified from a fresh 31.08.2026 official Corporation MSP source and passed SIZE/LEGAL/SIGNAL/LPR/CONTACT. Raw is still below the 120 hard floor, so after canonical integration the run must remain UNDERDONE_RECOVERY_REQUIRED. Criteria unchanged; no catalog padding; outreach 0."
+  "status": "RECOVERY_REQUIRED",
+  "qualified_companies": [],
+  "qualified_staged_not_counted": 0,
+  "raw_distinct": 54,
+  "note": "N5K-20260902-589 integrated verified rows but cannot be COMPLETED: raw_distinct=54<120. Supplemental discovery required."
 }
