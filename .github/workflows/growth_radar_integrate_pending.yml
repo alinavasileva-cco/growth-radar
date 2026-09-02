@@ -6,6 +6,7 @@ on:
       - 'data/runtime/growth_radar_pending_run.json'
       - '.github/workflows/growth_radar_integrate_pending.yml'
       - 'scripts/integrate_pending_run.py'
+      - 'scripts/enforce_preferred_throughput.py'
   workflow_dispatch:
 
 permissions:
@@ -29,6 +30,9 @@ jobs:
 
       - name: Integrate pending run with hard completion gate
         run: python scripts/integrate_pending_run.py
+
+      - name: Enforce preferred throughput recovery gate
+        run: python scripts/enforce_preferred_throughput.py
 
       - name: Validate canonical campaign namespace
         run: |
@@ -70,6 +74,8 @@ jobs:
           assert target.get('current_canonical_count') == len(master), target
           assert target.get('current_contactable_count') == len(contactable), target
           assert target.get('integrity_status') == 'PASS', target
+          assert target.get('latest_attempted_run_id') == runtime.get('run_id'), (target, runtime)
+          assert target.get('latest_attempted_run_status') == runtime.get('status'), (target, runtime)
           print(f'CAMPAIGN_INTEGRITY_PASS canonical={len(master)} contactable={len(contactable)} contacts={len(contacts)} evidence={len(evidence)}')
           PY
 
@@ -77,11 +83,11 @@ jobs:
         run: |
           git config user.name "growth-radar-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/campaigns/new_5000 data/runtime data/run_metrics.json CURRENT_WORKING_CONFIG.md reports scripts/integrate_pending_run.py
+          git add data/campaigns/new_5000 data/runtime data/run_metrics.json CURRENT_WORKING_CONFIG.md reports scripts/integrate_pending_run.py scripts/enforce_preferred_throughput.py
           if git diff --cached --quiet; then
             echo "No repository changes to commit."
             exit 0
           fi
-          git commit -m "Growth Radar: integrate pending run with hard gate"
+          git commit -m "Growth Radar: integrate pending run with throughput recovery gate"
           git pull --rebase origin main
           git push
