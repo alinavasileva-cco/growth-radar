@@ -1,55 +1,62 @@
 {
-  "run_id": "N5K-20260902-578R3",
+  "run_id": "N5K-20260902-579",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-02T03:58:00+03:00",
+  "updated_at": "2026-09-02T04:48:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 586,
+    "baseline_count": 589,
     "target_count": 5000,
-    "current_canonical_count": 589,
-    "current_contactable_count": 589,
-    "progress_added": 3,
-    "remaining": 4411
+    "current_canonical_count": 591,
+    "current_contactable_count": 591,
+    "progress_added": 2,
+    "remaining": 4409
   },
   "funnel": {
-    "discovered": 125,
-    "fast_gate_passed": 28,
-    "size_check_passed": 14,
-    "legal_match_passed": 10,
-    "signal_confirmed": 9,
-    "lpr_identified": 8,
-    "contact_route_found": 7,
-    "qualified": 3,
-    "duplicates": 4,
-    "excluded": 120
+    "discovered": 87,
+    "fast_gate_passed": 20,
+    "size_check_passed": 12,
+    "legal_match_passed": 9,
+    "signal_confirmed": 8,
+    "lpr_identified": 5,
+    "contact_route_found": 2,
+    "qualified": 2,
+    "duplicates": 0,
+    "excluded": 85
   },
   "lane_metrics": [
     {
-      "lane": "hourly_distinct_raw_578_plus_recovery",
-      "distinct_raw": 125,
-      "prequalified": 7,
-      "physical_net_new": 3,
-      "physical_duplicates": 4,
-      "notes": "Hourly aggregate for 578 + R1 + R2 + R3. Raw is employer-level distinct after cross-lane dedup; saturated samples were not re-run; jobs not used."
+      "lane": "fresh_growth_news_staging",
+      "distinct_raw": 50,
+      "prequalified": 2,
+      "submitted_to_physical_guard": 1,
+      "notes": "Fresh immutable growth_news batch; Lab PPS rejected by canonical writer at SIZE because current scale evidence was insufficient."
+    },
+    {
+      "lane": "fresh_official_owner_staging",
+      "distinct_raw": 22,
+      "prequalified": 1,
+      "submitted_to_physical_guard": 1,
+      "notes": "Fresh immutable official_owner batch; Argumentum Pharma independently rechecked."
+    },
+    {
+      "lane": "canonical_low_overlap_supplemental",
+      "distinct_raw": 15,
+      "prequalified": 0,
+      "submitted_to_physical_guard": 0,
+      "notes": "Independent fresh discovery across production/investment, dealer/network expansion, management change, logistics expansion and partner/business-change sources. No weak candidate promoted merely to increase throughput."
     }
   ],
   "qualified_companies": [
-    "Стекольная Компания Реал",
-    "Воронеж-Агро",
-    "Племзавод Повадино"
+    "Фармпроект",
+    "Аргументум Фарма"
   ],
-  "raw_target_met": true,
-  "normal_throughput_completion": true,
-  "supplemental_discovery_performed": true,
-  "raw_count_note": "Same-hour recovery increased conservative distinct employer-level raw from 103 to 125 and physical net-new from +1 to +3 without weakening criteria or double-counting raw.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
-  "physical_master_state": "589_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "589_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "591_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "591_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
