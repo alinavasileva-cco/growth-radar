@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T08:28:29+03:00",
+  "updated_at": "2026-09-02T08:47:00+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260902-583",
-  "current_run_id": "N5K-20260902-583",
-  "last_run_id": "N5K-20260902-583",
-  "latest_completed_run": "N5K-20260902-583",
+  "last_completed_run_id": "N5K-20260902-583R1",
+  "current_run_id": "N5K-20260902-583R1",
+  "last_run_id": "N5K-20260902-583R1",
+  "latest_completed_run": "N5K-20260902-583R1",
   "latest_attempted_run": "N5K-20260902-583",
   "latest_attempted_run_status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260902-583",
@@ -115,5 +115,5 @@
   },
   "fresh_staging": "N5K-20260902-583 consumed fresh growth_news staging first. Two PREQUALIFIED candidates were independently rechecked; neither reached QUALIFIED. Qualified staged not counted is zero.",
   "repair_required": "THROUGHPUT_DISCLOSURE_RAW_250_BELOW_CURRENT_CONFIG_CONTINUE_THRESHOLD_300",
-  "note": "N5K-20260902-583 physically integrated with +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged qualified 0; active WIP 0; outreach 0. Authoritative raw=250; normal throughput completion=false against current config throughput guidance."
+  "note": "N5K-20260902-583R1 completed after physical integration: +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
