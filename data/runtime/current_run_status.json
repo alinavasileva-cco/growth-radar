@@ -1,9 +1,16 @@
 {
   "run_id": "N5K-20260902-584",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "updated_at": "2026-09-02T09:25:37+03:00",
   "stage": "COMPLETE",
+  "normal_throughput_completion": false,
+  "raw_distinct_employer_level": 23,
+  "raw_minimum_floor": 120,
+  "raw_target": "250-500",
+  "raw_minimum_floor_met": false,
+  "raw_target_met": false,
+  "supplemental_discovery_performed": true,
   "new_cycle": {
     "baseline_count": 596,
     "target_count": 5000,
@@ -49,8 +56,10 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
+  "qualified_staged_not_counted": 0,
   "physical_master_state": "598_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "598_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "throughput_disclosure": "Authoritative distinct raw=23, below floor 120 and target 250-500. Fresh staging was consumed first, then supplemental low-overlap discovery was performed. No padding with search-result rows, weak catalogs or uninstrumented worker observations."
 }
