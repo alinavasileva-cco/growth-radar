@@ -1,0 +1,217 @@
+{
+  "schema_version": "official_owner_worker_v1",
+  "lane": "official_owner",
+  "created_at": "2026-09-02T05:26:22+03:00",
+  "immutable": true,
+  "campaign_id": "new_5000",
+  "worker_scope": {
+    "read_discovery_only": true,
+    "canonical_write": false,
+    "contactable_write": false,
+    "runtime_write": false,
+    "campaign_write": false,
+    "outreach": false,
+    "worker_net_qualified": 0
+  },
+  "config_snapshot": {
+    "source": "CURRENT_WORKING_CONFIG.md",
+    "version": "2026-09-02T04:35:21+03:00",
+    "canonical_count": 591,
+    "contactable_count": 591,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0,
+    "outreach": "forbidden"
+  },
+  "discovery_policy": {
+    "filter_order": ["SIZE", "LEGAL", "SIGNAL", "LPR", "CONTACT"],
+    "dedup_keys": ["INN", "OGRN_OGRNIP", "exact_legal_name", "brand_domain"],
+    "historical_pending_full_read_required_before_discovery": false,
+    "canonical_writer_only_can_assign_net_QUALIFIED": true
+  },
+  "funnel": {
+    "source_level_observations": 118,
+    "distinct_employer_level_raw_reviewed": 26,
+    "SIZE": 8,
+    "LEGAL": 5,
+    "SIGNAL": 4,
+    "LPR": 3,
+    "CONTACT": 2,
+    "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP": 2,
+    "REJECT": 24,
+    "worker_net_QUALIFIED": 0
+  },
+  "source_batches": [
+    {
+      "batch": "national_recent_factory_openings",
+      "source_type": "business/news search",
+      "query_theme": "August 2026 factory openings and production expansion in Russia",
+      "observations_reviewed": 20,
+      "duplicates_plus_early_rejects": 17,
+      "qualified_for_deep_check": 3,
+      "action": "rotated_after_high_noise_overlap"
+    },
+    {
+      "batch": "date_sliced_aug24_sep01",
+      "source_type": "regional/business news",
+      "query_theme": "24 Aug-1 Sep 2026 openings, expansion, automation, branches",
+      "observations_reviewed": 54,
+      "duplicates_plus_early_rejects": 48,
+      "qualified_for_deep_check": 6,
+      "action": "rotated_to_named_candidates"
+    },
+    {
+      "batch": "novosibirsk_electronics",
+      "source_type": "regional government/business publications + official company",
+      "query_theme": "Novosibirsk electronics expansion",
+      "observations_reviewed": 12,
+      "duplicates_plus_early_rejects": 10,
+      "qualified_for_deep_check": 2,
+      "action": "deep_check"
+    },
+    {
+      "batch": "saint_petersburg_manufacturing",
+      "source_type": "regional business press + official company",
+      "query_theme": "Saint Petersburg manufacturing expansion",
+      "observations_reviewed": 10,
+      "duplicates_plus_early_rejects": 8,
+      "qualified_for_deep_check": 2,
+      "action": "deep_check"
+    },
+    {
+      "batch": "volga_transport_expansion",
+      "source_type": "regional transport/business publications",
+      "query_theme": "Volga transport route expansion",
+      "observations_reviewed": 10,
+      "duplicates_plus_early_rejects": 9,
+      "qualified_for_deep_check": 1,
+      "action": "rejected_at_legal_or_ownership_fit"
+    },
+    {
+      "batch": "automation_export_leadership",
+      "source_type": "official sites + business publications",
+      "query_theme": "automation, export, leadership change",
+      "observations_reviewed": 12,
+      "duplicates_plus_early_rejects": 11,
+      "qualified_for_deep_check": 1,
+      "action": "rejected_or_held"
+    }
+  ],
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Eltex / Элтекс",
+      "legal_name": "ООО «ПРЕДПРИЯТИЕ «ЭЛТЕКС»",
+      "inn": "5410108110",
+      "ogrn": "1025403911818",
+      "domain": "eltex.ru",
+      "size_evidence": {
+        "summary": "Крупный действующий российский разработчик и производитель телекоммуникационного оборудования; официальный сайт называет Eltex крупнейшим производителем сетевого оборудования в РФ и подтверждает полный цикл производства.",
+        "urls": [
+          "https://eltex.ru/",
+          "https://eltex.ru/about/"
+        ]
+      },
+      "legal_evidence": {
+        "active": true,
+        "director": "Черников Алексей Николаевич",
+        "urls": [
+          "https://www.tbank.ru/business/contractor/legal/1025403911818/",
+          "https://check.tochka.com/company/1025403911818/"
+        ]
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-08-28",
+        "summary": "Компания заявила строительство в Новосибирской области нового высокотехнологичного комплекса радиоэлектроники. Инвестиции 8 млрд руб.; заявленная мощность до 10 тыс. изделий в год; проект предусматривает около 300 новых рабочих мест.",
+        "urls": [
+          "https://www.kommersant.ru/doc/8911581",
+          "https://nsk.rbc.ru/nsk/28/08/2026/6a9157779a7947f541fa886e"
+        ]
+      },
+      "lpr": {
+        "name": "Алексей Николаевич Черников",
+        "role": "директор / совладелец",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1025403911818/",
+          "https://www.kommersant.ru/doc/8911581"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_email_phone_form",
+        "email": "eltex@eltex.ru",
+        "phone": "+7 (383) 274-10-01",
+        "url": "https://eltex.ru/contacts/",
+        "verified_published": true
+      },
+      "dedup_checks": {
+        "repo_search_inn": "no_match",
+        "repo_search_ogrn_exact_legal_brand_domain": "no_match",
+        "final_global_physical_dedup": "required_by_canonical_writer"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Ракета",
+      "legal_name": "ООО «ПЕТРОДВОРЦОВЫЙ ЧАСОВОЙ ЗАВОД «РАКЕТА»",
+      "inn": "7819320133",
+      "ogrn": "1147847337571",
+      "domain": "raketa.com",
+      "size_evidence": {
+        "summary": "Действующее производство; бухгалтерская отчетность за 2025 год показывает баланс 1,484 млрд руб.; в деловой публикации за апрель 2026 сообщается, что бизнес принёс 109 млн руб. в 2025 году.",
+        "urls": [
+          "https://b2b.house/company/OOO-PCHZ-RAKETA_0b5ade92-3038-4233-834a-d5688ddfabc6/financial-statements/",
+          "https://amp.rbc.ru/rbcnews/business/20/04/2026/69e5f2f19a7947c65893b985"
+        ]
+      },
+      "legal_evidence": {
+        "active": true,
+        "director": "Черданцев Анатолий Александрович",
+        "urls": [
+          "https://www.tbank.ru/business/contractor/legal/1147847337571/"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-08-14",
+        "summary": "Петродворцовый часовой завод заявил план расширить производство примерно на 70% к 2029 году и увеличить выпуск механизмов до 12 тыс.; проект поддержан займом ФРП на закупку оборудования.",
+        "urls": [
+          "https://www.dp.ru/api/amp/a/2026/08/13/peterburgskij-chasovoj-zavod"
+        ]
+      },
+      "lpr": {
+        "name": "Анатолий Александрович Черданцев",
+        "role": "генеральный директор",
+        "evidence_urls": [
+          "https://www.tbank.ru/business/contractor/legal/1147847337571/"
+        ]
+      },
+      "contact": {
+        "route_type": "official_company_email_phone",
+        "email": "info@raketa.com",
+        "phone": "+7 (800) 600-55-34 ext. 221",
+        "url": "https://world.raketa.com/contacts",
+        "verified_published": true
+      },
+      "dedup_checks": {
+        "repo_search_inn": "no_match",
+        "repo_search_ogrn_exact_legal_brand_domain": "no_match",
+        "final_global_physical_dedup": "required_by_canonical_writer"
+      }
+    }
+  ],
+  "rejects_summary": [
+    {"brand": "Газпром автоматизация", "status": "REJECT", "stage": "SIZE/OWNERSHIP", "reason": "large/high-overlap non-target structure"},
+    {"brand": "ЕвроХим", "status": "REJECT", "stage": "SIZE", "reason": "large/high-overlap"},
+    {"brand": "Ростсельмаш", "status": "REJECT", "stage": "SIZE", "reason": "large/high-overlap"},
+    {"brand": "БТК Текстиль", "status": "REJECT", "stage": "SIZE/OVERLAP", "reason": "large/high-overlap candidate in current source set"},
+    {"brand": "RFL", "status": "REJECT", "stage": "LEGAL", "reason": "legal entity chain not closed to required standard in this cycle"},
+    {"brand": "Водолёт", "status": "REJECT", "stage": "LEGAL/LPR", "reason": "signal confirmed but full private legal/LPR chain not closed in this cycle"},
+    {"brand": "Liga Group", "status": "REJECT", "stage": "SIGNAL", "reason": "signal is suspension of planned plant, not qualifying growth signal"}
+  ],
+  "notes": [
+    "Historical data/pending_workers tree was not required as a precondition for discovery.",
+    "Candidate-level repo searches were used for strong candidates; no match was returned for the listed INN/OGRN/name/domain queries.",
+    "The worker does not claim either staged candidate is added to canonical. Final physical global dedup belongs to canonical writer.",
+    "The requested 70-130 distinct employer-level raw target was not reached without lowering quality; weak catalog rows were not used to inflate raw volume."
+  ]
+}
