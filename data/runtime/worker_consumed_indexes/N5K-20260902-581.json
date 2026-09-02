@@ -1,0 +1,37 @@
+{
+  "run_id": "N5K-20260902-581",
+  "campaign_id": "new_5000",
+  "consumed_at": "2026-09-02T06:24:25+03:00",
+  "canonical_writer": true,
+  "outreach": false,
+  "sources": [
+    {
+      "path": "data/pending_workers/official_owner/20260902-052622-official-owner.json",
+      "sha": "f8a0f15f7c6b114934ba30653d13e86b7623fed7",
+      "distinct_raw": 26,
+      "prequalified": 2,
+      "candidate_outcomes": [
+        {
+          "brand": "Элтекс",
+          "inn": "5410108110",
+          "ogrn": "1025403911818",
+          "outcome": "PHYSICAL_DUPLICATE",
+          "duplicate_keys": ["INN", "OGRN", "LEGAL_NAME"]
+        },
+        {
+          "brand": "Ракета",
+          "inn": "7819320133",
+          "ogrn": "1147847337571",
+          "outcome": "NET_QUALIFIED_PHYSICALLY_INTEGRATED",
+          "lead_id": "N5K-0781"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted_after_run": 0,
+  "integrity": "PASS",
+  "orphan_contacts": 0,
+  "orphan_evidence": 0,
+  "active_wip": 0,
+  "notes": "Immutable staging retained. This index records consumption only; no historical staging was deleted."
+}
