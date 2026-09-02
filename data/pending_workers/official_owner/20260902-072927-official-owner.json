@@ -1,0 +1,275 @@
+{
+  "schema_version": "official_owner_worker_v1",
+  "lane": "official_owner",
+  "created_at": "2026-09-02T07:29:27+03:00",
+  "immutable": true,
+  "worker_scope": "READ+DISCOVERY only",
+  "canonical_write_performed": false,
+  "contactable_write_performed": false,
+  "runtime_write_performed": false,
+  "campaign_write_performed": false,
+  "outreach_performed": false,
+  "worker_net_qualified": 0,
+  "baseline": {
+    "current_working_config_version": "2026-09-02T06:36:00+03:00",
+    "last_fully_completed_run": "N5K-20260902-581R2",
+    "physical_canonical": 596,
+    "physical_contactable": 596,
+    "integrity": "PASS",
+    "qualified_staged_not_counted": 0,
+    "source": "CURRENT_WORKING_CONFIG.md"
+  },
+  "dedup_policy": {
+    "historical_pending_full_tree_required_before_discovery": false,
+    "physical_canonical_contactable_checked": true,
+    "candidate_level_repo_search_keys": [
+      "INN",
+      "OGRN/OGRNIP",
+      "exact legal name",
+      "brand+domain"
+    ],
+    "final_global_dedup_owner": "canonical writer",
+    "staged_candidates_are_added": false
+  },
+  "discovery": {
+    "target_distinct_employer_raw": "70-130 if sources genuinely provide volume",
+    "source_batches": [
+      {
+        "batch": "electrical_industry_daily_news_2026-08-26_to_2026-08-30",
+        "source_family": "Elec.ru company/news archive",
+        "regions_or_scope": "Russia / electrical equipment",
+        "metrics_note": "High overlap and many product-only/non-business-signal rows; lane switched rather than padded. Exact source-row count not reconstructed from truncated connector output."
+      },
+      {
+        "batch": "regional_government_industrial_openings",
+        "source_family": "regional government press services",
+        "regions_or_scope": "Bryansk and other regions",
+        "metrics_note": "Produced one fully closed candidate: GazEnergoKomplekt."
+      },
+      {
+        "batch": "energy_industrial_group_official_news",
+        "source_family": "official company/group press rooms",
+        "regions_or_scope": "Tula / Vologda / industrial energy",
+        "metrics_note": "Produced two fully closed candidates: Enkhim and NARTIS; repeated group-company coverage collapsed at employer level."
+      },
+      {
+        "batch": "regional_investment_and_jobs_portals",
+        "source_family": "regional investment portals and employer vacancy pages",
+        "regions_or_scope": "Tula and adjacent regions",
+        "metrics_note": "Used to resolve employer/contact evidence; weak vacancy-only rows were not promoted to SIGNAL."
+      },
+      {
+        "batch": "polymer_and_manufacturing_trade_press",
+        "source_family": "sector trade publications",
+        "regions_or_scope": "Russia / polymers and manufacturing",
+        "metrics_note": "Fresh-looking republications were checked for original dates; recycled 2024 project material was rejected at SIGNAL."
+      },
+      {
+        "batch": "far_east_and_regional_investment_projects",
+        "source_family": "regional development / investment news",
+        "regions_or_scope": "Far East and regional greenfield projects",
+        "metrics_note": "Planned projects without fresh 2026 execution confirmation or a closed official contact route were rejected."
+      },
+      {
+        "batch": "business_and_industrial_press_exact_date_search",
+        "source_family": "business/industrial publications",
+        "regions_or_scope": "Russia, 2026-08-27 through 2026-09-01",
+        "metrics_note": "Used as low-overlap signal discovery and corroboration; large/high-overlap or legally ambiguous employers were not pushed through the funnel."
+      }
+    ],
+    "source_level_observations_count": null,
+    "distinct_employer_level_raw_count": null,
+    "count_integrity_note": "Connector/search result sets were truncated in parts and exact batch-level raw counts were not persistently instrumented during this worker turn. Counts are intentionally left null rather than reconstructed or invented. Strong candidates and deep rejects below are individually evidenced.",
+    "target_70_130_reached": false,
+    "target_note": "Not claimed: exact globally distinct employer-level raw count cannot be verified from the truncated result sets without inventing metrics. Discovery was continued across more than six source/region batches and weak catalog rows were not used to inflate raw."
+  },
+  "funnel": {
+    "RAW": null,
+    "SIZE": null,
+    "LEGAL": null,
+    "SIGNAL": null,
+    "LPR": null,
+    "CONTACT": 3,
+    "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP": 3,
+    "REJECT_DEEP_CHECK_RECORDED": 4,
+    "funnel_integrity_note": "Only exact, audit-safe terminal counts are recorded. Earlier-stage aggregate counts are null because they were not safely instrumented and are not reconstructed from truncated search output."
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "ЭНХИМ",
+      "legal_name": "ООО \"ЭНХИМ\"",
+      "inn": "7100037800",
+      "ogrn": "1237100006516",
+      "domain": "enhim.com",
+      "legal_status": "Действующая компания",
+      "region": "Тульская область",
+      "size": {
+        "revenue_2025_rub": 1659676000,
+        "revenue_growth_2025_pct": 88.79,
+        "employees_2025": 113,
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-ENXIM_48d7c183-b32e-4936-8597-ff19814c81c3/",
+          "https://reputation.ru/ogrn/1237100006516"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-06-26",
+        "summary": "Введена в эксплуатацию вторая очередь завода — цех синтеза триксиленилфосфата; после расширения мощность предприятия вырастет более чем в два раза. Общий объем инвестиций в первую и вторую очереди — 1,9 млрд руб.",
+        "url": "https://www.nec.pro/press/news/enkhim-zapustil-vtoruyu-ochered-zavoda-edinstvennoe-v-rossii-proizvodstvo-ognestoykogo-turbinnogo-ma/"
+      },
+      "lpr": {
+        "name": "Мазитов Сергей Васильевич",
+        "role": "Генеральный директор",
+        "evidence_url": "https://reputation.ru/ogrn/1237100006516"
+      },
+      "contact": {
+        "route": "+7 (495) 799-44-04; info@enhim.com",
+        "published": true,
+        "evidence_urls": [
+          "https://www.nec.pro/contacts/",
+          "https://invest-tula.com/press-center/vacancies/ooo-enhim/"
+        ]
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "brand_domain_repo_search": "NO_MATCH",
+        "exact_legal_name_key": "ООО ЭНХИМ",
+        "final_global_pending_dedup": "REQUIRED_BY_CANONICAL_WRITER"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "ГазЭнергоКомплект",
+      "legal_name": "ООО \"ЗАВОД НЕФТЕГАЗОВОГО И ЭНЕРГЕТИЧЕСКОГО ОБОРУДОВАНИЯ \"ГАЗЭНЕРГОКОМПЛЕКТ\"",
+      "inn": "3245516447",
+      "ogrn": "1143256015198",
+      "domain": "gazenergokomplekt.ru",
+      "legal_status": "Действующая компания",
+      "region": "Брянская область",
+      "size": {
+        "revenue_2025_rub": 15380435000,
+        "revenue_growth_2025_pct": 80.52,
+        "employees_2025": 401,
+        "evidence_urls": [
+          "https://b2b.house/company/OOO-GEK_32c7bd95-bc79-4495-9cf8-18c94c4dd300/",
+          "https://firmalyze.ru/inn/3245516447"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-28",
+        "summary": "Завершен инвестпроект и открыт третий производственный цех; площадка превышает 30 тыс. кв. м, создано более 400 рабочих мест, новые мощности должны увеличить показатели и открыть новые рынки.",
+        "url": "https://special.bryanskobl.ru/news/2026/08/28/16759"
+      },
+      "lpr": {
+        "name": "Шалатонов Александр Владимирович",
+        "role": "Генеральный директор",
+        "evidence_urls": [
+          "https://gazenergokomplekt.ru/contacts/",
+          "https://special.bryanskobl.ru/news/2026/08/28/16759"
+        ],
+        "stale_record_handling": "Более старые записи с иным руководителем не использованы; актуальный официальный сайт и свежий источник 2026 подтверждают Шалатонова."
+      },
+      "contact": {
+        "route": "+7 (4832) 30-66-55; info@gek32.ru",
+        "published": true,
+        "route_type": "Приемная генерального директора",
+        "evidence_url": "https://gazenergokomplekt.ru/contacts/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "brand_domain_repo_search": "NO_MATCH",
+        "exact_legal_name_key": "ООО ЗАВОД НЕФТЕГАЗОВОГО И ЭНЕРГЕТИЧЕСКОГО ОБОРУДОВАНИЯ ГАЗЭНЕРГОКОМПЛЕКТ",
+        "final_global_pending_dedup": "REQUIRED_BY_CANONICAL_WRITER"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "НАРТИС",
+      "legal_name": "ООО \"ЗАВОД НАРТИС\"",
+      "inn": "5019029500",
+      "ogrn": "1185022004661",
+      "domain": "nartis.ru",
+      "legal_status": "Действующая компания",
+      "region": "Вологодская область",
+      "size": {
+        "revenue_2025_rub": 27633771000,
+        "revenue_growth_2025_pct": 10.3,
+        "employees_2025_reported_by_company": 992,
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1185022004661-ooo-zavod-nartis/",
+          "https://www.nartis.ru/news/nartis-uvelichil-vypusk-produktsii-na-17-v-2025-godu/"
+        ]
+      },
+      "signal": {
+        "level": "S1",
+        "date": "2026-08-27",
+        "summary": "Введен новый цех площадью 2 000 кв. м для зарядных станций; мощности направления увеличены в 10 раз, создано 60 новых рабочих мест.",
+        "url": "https://www.nartis.ru/news/nartis-otkryl-novyy-tsekh-i-v-10-raz-uvelichil-moshchnosti-po-vypusku-zaryadnykh-stantsiy/"
+      },
+      "lpr": {
+        "name": "Владимиров Олег Валерьевич",
+        "role": "Генеральный директор",
+        "evidence_urls": [
+          "https://companies.rbc.ru/id/1185022004661-ooo-zavod-nartis/",
+          "https://www.nartis.ru/news/nartis-uvelichil-vypusk-produktsii-na-17-v-2025-godu/"
+        ]
+      },
+      "contact": {
+        "route": "+7 (8202) 20-20-27; info@nartis.ru",
+        "published": true,
+        "route_type": "Приемная генерального директора",
+        "evidence_url": "https://www.nartis.ru/contacts/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "brand_domain_repo_search": "NO_MATCH",
+        "exact_legal_name_key": "ООО ЗАВОД НАРТИС",
+        "final_global_pending_dedup": "REQUIRED_BY_CANONICAL_WRITER"
+      }
+    },
+    {
+      "status": "REJECT",
+      "brand": "Технофильтр",
+      "legal_name": "ООО НПП \"ТЕХНОФИЛЬТР\"",
+      "inn": "3329006121",
+      "ogrn": "1033303400118",
+      "gate_failed": "SIGNAL",
+      "reason": "Публикация августа 2026 повторяет проект расширения мембранного производства, исходный подтвержденный материал относится к 2024 году; свежий факт исполнения/ввода в 2026 в этом цикле не подтвержден. Устаревший сигнал не использован."
+    },
+    {
+      "status": "REJECT",
+      "brand": "Терика Восток",
+      "legal_name": "ООО \"ТЕРИКА ВОСТОК\"",
+      "inn": "2807016612",
+      "ogrn": "1252800004490",
+      "gate_failed": "SIGNAL",
+      "reason": "Найден план запуска первой линии в августе 2026, но свежий подтвержденный факт запуска/исполнения проекта в текущем цикле не найден; вперед по funnel не проведен."
+    },
+    {
+      "status": "REJECT",
+      "brand": "AM.TECH / 3D-Integration",
+      "gate_failed": "LEGAL",
+      "reason": "Бренд, домен и публичный контакт найдены, но точное действующее employer-level юрлицо с надежно замкнутыми ИНН/ОГРН не разрешено в этом цикле."
+    },
+    {
+      "status": "REJECT",
+      "brand": "Металлсервис / нижегородская производственная площадка",
+      "gate_failed": "LEGAL",
+      "reason": "Сигнал расширения производства найден, но конкретное employer-level юрлицо, ЛПР и официальный контактный маршрут не были надежно замкнуты без неоднозначности; кандидат остановлен до SIGNAL/LPR/CONTACT."
+    }
+  ],
+  "write_guard": {
+    "only_path_written": "data/pending_workers/official_owner/20260902-072927-official-owner.json",
+    "canonical_untouched": true,
+    "contactable_untouched": true,
+    "runtime_untouched": true,
+    "campaign_untouched": true,
+    "outreach_zero": true
+  }
+}
