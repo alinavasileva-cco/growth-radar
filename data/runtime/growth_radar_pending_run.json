@@ -1,10 +1,11 @@
 {
   "run_id": "N5K-20260902-582",
-  "updated_at": "2026-09-02T07:40:00+03:00",
+  "updated_at": "2026-09-02T07:42:00+03:00",
   "status": "READY_FOR_INTEGRATION",
   "qualified_staged_not_counted": 1,
   "funnel": {
     "discovered": 29,
+    "fast_gate_passed": 9,
     "size_check_passed": 4,
     "legal_match_passed": 3,
     "signal_confirmed": 3,
