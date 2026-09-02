@@ -7,7 +7,7 @@
   "progress_added": 598,
   "remaining_to_total_target": 4402,
   "remaining": 4402,
-  "remaining_to_1000": 404,
+  "remaining_to_1000": 402,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -17,61 +17,53 @@
   "current_run_id": "N5K-20260902-584",
   "last_run_id": "N5K-20260902-584",
   "latest_completed_run": "N5K-20260902-584",
-  "latest_attempted_run": "N5K-20260902-583R1",
-  "latest_attempted_run_status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260902-583R1",
+  "latest_attempted_run": "N5K-20260902-584",
+  "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
+  "canonical_integration_run_id": "N5K-20260902-584",
   "hourly_baseline_count": 596,
-  "hourly_net_new": 0,
+  "hourly_net_new": 2,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-583R1",
-    "raw": 251,
-    "raw_scope_note": "250 authoritative distinct employer-level raw from N5K-20260902-583 plus one fresh distinct employer in same-hour recovery. The new candidate was rejected only at the authoritative physical dedup guard.",
-    "fast_gate": 3,
-    "size": 3,
-    "legal": 1,
-    "signal": 1,
-    "lpr": 1,
-    "contact": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded_early_reject": 250,
-    "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 1.1952,
+    "run_id": "N5K-20260902-584",
+    "raw": 23,
+    "raw_scope_note": "23 auditably counted distinct employer-level candidates: 5 terminal PREQUALIFIED candidates from fresh official_owner staging plus 18 distinct supplemental low-overlap employer probes. The staging worker did not persist an exact larger raw count, so none was reconstructed or invented.",
+    "fast_gate": 5,
+    "size": 5,
+    "legal": 5,
+    "signal": 5,
+    "lpr": 5,
+    "contact": 5,
+    "qualified": 2,
+    "duplicates": 3,
+    "excluded_early_reject": 18,
+    "qualified_raw_pct": 8.6957,
+    "fast_gate_raw_pct": 21.7391,
     "raw_target_met": false,
-    "minimum_raw_floor_met": true,
+    "minimum_raw_floor_met": false,
     "preferred_config_raw_target_met": false,
     "supplemental_discovery_performed": true,
     "normal_throughput_completion": false,
-    "raw_count_note": "Authoritative cumulative raw=251. A fresh regional production/business-change candidate was resolved through LEGAL/SIGNAL/LPR/CONTACT but the existing physical canonical writer found an exact duplicate on INN, OGRN, legal name and brand+domain. No padding to 300."
+    "raw_count_note": "LOW RAW: exact employer-level raw=23, below user floor 120 and target 250-500. Sources were switched to fresh production/investment, management/business change and partner/expansion probes. Search-result rows, weak catalogs and uninstrumented worker observations were not counted as raw."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "run_583_carry_forward",
-      "raw": 250,
-      "net_qualified": 0,
-      "physical_duplicates": 0,
-      "next_state": "ROTATED"
+      "lane": "fresh_official_owner_staging_20260902_084500",
+      "raw": 5,
+      "net_qualified": 2,
+      "physical_duplicates": 3,
+      "next_state": "CONSUMED"
     },
     {
-      "lane": "fresh_regional_production_business_change_583R1",
-      "raw": 1,
+      "lane": "supplemental_low_overlap_fresh_business_change",
+      "raw": 18,
       "net_qualified": 0,
-      "physical_duplicates": 1,
-      "next_state": "CONTINUE_FRESH_LOW_OVERLAP"
+      "physical_duplicates": 0,
+      "next_state": "ROTATE_NEXT_RUN"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260902-582",
-      "raw": 29,
-      "fast_gate": 9,
-      "qualified": 0,
-      "qualified_raw_pct": 0.0,
-      "fast_gate_raw_pct": 31.0345
-    },
     {
       "run_id": "N5K-20260902-583",
       "raw": 250,
@@ -87,13 +79,21 @@
       "qualified": 0,
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 1.1952
+    },
+    {
+      "run_id": "N5K-20260902-584",
+      "raw": 23,
+      "fast_gate": 5,
+      "qualified": 2,
+      "qualified_raw_pct": 8.6957,
+      "fast_gate_raw_pct": 21.7391
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": 0.0,
-    "net_new_change": 0,
-    "fast_gate_raw_pct_points": 0.3952,
-    "assessment": "Same-hour recovery produced a fully resolved candidate but physical dedup rejected it. Criteria remain unchanged. Continue only in fresh low-overlap source families; do not repeat saturated samples."
+    "qualified_raw_pct_points": 8.6957,
+    "net_new_change": 2,
+    "fast_gate_raw_pct_points": 20.5439,
+    "assessment": "Fresh staging yielded two physical net-new QUALIFIED after three exact physical duplicates. Raw volume was materially below floor; next RUN must continue fresh low-overlap discovery without weakening criteria or reusing saturated samples."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -105,7 +105,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "N5K-20260902-583R1 physically processed through the existing canonical writer. Qualified staged not counted is zero; pending is cleared.",
-  "repair_required": "THROUGHPUT_DISCLOSURE_RAW_251_BELOW_CURRENT_CONFIG_CONTINUE_THRESHOLD_300_AND_CONSECUTIVE_LOW_NET_NEW",
-  "note": "N5K-20260902-584 completed after physical integration: +2 net new; canonical/contactable 598/598; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "fresh_staging": "Fresh official_owner staging 20260902-084500 was physically processed by the canonical writer in N5K-20260902-584; qualified staged not counted is zero; immutable source retained.",
+  "repair_required": "LOW_RAW_23_BELOW_USER_FLOOR_120_AND_TARGET_250_500_CONTINUE_FRESH_LOW_OVERLAP_NEXT_RUN",
+  "note": "N5K-20260902-584 completed after physical integration: +2 net new; canonical/contactable 598/598; remaining to 1000=402; integrity PASS; orphan 0/0; staged 0; outreach 0; LOW RAW disclosure recorded."
 }
