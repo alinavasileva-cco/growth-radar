@@ -1,56 +1,56 @@
 {
-  "run_id": "N5K-20260902-581R1",
+  "run_id": "N5K-20260902-581R2",
   "campaign_id": "new_5000",
   "status": "COMPLETED",
-  "updated_at": "2026-09-02T06:31:24+03:00",
+  "updated_at": "2026-09-02T06:36:00+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
-    "baseline_count": 594,
+    "baseline_count": 595,
     "target_count": 5000,
-    "current_canonical_count": 595,
-    "current_contactable_count": 595,
+    "current_canonical_count": 596,
+    "current_contactable_count": 596,
     "progress_added": 1,
-    "remaining": 4405
+    "remaining": 4404
   },
   "funnel": {
-    "discovered": 71,
-    "fast_gate_passed": 13,
-    "size_check_passed": 7,
-    "legal_match_passed": 5,
-    "signal_confirmed": 5,
-    "lpr_identified": 4,
-    "contact_route_found": 3,
+    "discovered": 82,
+    "fast_gate_passed": 16,
+    "size_check_passed": 9,
+    "legal_match_passed": 7,
+    "signal_confirmed": 7,
+    "lpr_identified": 5,
+    "contact_route_found": 4,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 70
+    "excluded": 81
   },
   "lane_metrics": [
     {
-      "lane": "hourly_581_carry_forward",
-      "distinct_raw": 48,
-      "duplicates_plus_early_rejects": 46,
+      "lane": "hourly_581R1_carry_forward",
+      "distinct_raw": 71,
+      "duplicates_plus_early_rejects": 70,
       "prequalified_rechecked": 0,
       "submitted_to_physical_guard": 0,
-      "notes": "Authoritative employer-level raw already established by N5K-20260902-581; not re-counted as new discovery beyond this hourly cumulative baseline."
+      "notes": "Cumulative authoritative employer-level raw already established through N5K-20260902-581R1."
     },
     {
-      "lane": "fresh_growth_business_change_supplemental_581R1",
-      "distinct_raw": 23,
-      "duplicates_plus_early_rejects": 22,
+      "lane": "fresh_regional_production_business_change_581R2",
+      "distinct_raw": 11,
+      "duplicates_plus_early_rejects": 10,
       "prequalified_rechecked": 1,
       "submitted_to_physical_guard": 1,
-      "notes": "Fresh low-overlap production/investment and business-change sources. Only named employers with resolvable company identity were counted; jobs were not used."
+      "notes": "Fresh named-employer signals from regional production/investment and business-change sources; jobs not used and saturated known samples excluded."
     }
   ],
   "qualified_companies": [
-    "Август"
+    "Белая Долина"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "595_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "595_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": null
 }
