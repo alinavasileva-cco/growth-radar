@@ -17,61 +17,61 @@
   "current_run_id": "N5K-20260902-583",
   "last_run_id": "N5K-20260902-583",
   "latest_completed_run": "N5K-20260902-583",
-  "latest_attempted_run": "N5K-20260902-582",
-  "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "canonical_integration_run_id": "N5K-20260902-582",
+  "latest_attempted_run": "N5K-20260902-583",
+  "latest_attempted_run_status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
+  "canonical_integration_run_id": "N5K-20260902-583",
   "hourly_baseline_count": 596,
   "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260902-582",
-    "raw": 29,
-    "raw_scope_note": "Only exact employer-level raw supplied by current-hour workers; official_owner raw was null and was not reconstructed from truncated connector results.",
-    "fast_gate": 9,
-    "size": 4,
-    "legal": 3,
-    "signal": 3,
-    "lpr": 3,
-    "contact": 3,
+    "run_id": "N5K-20260902-583",
+    "raw": 250,
+    "raw_scope_note": "250 distinct employer-level raw counted after cross-lane name dedup; search-result rows, obvious non-companies, foreign-only items and duplicate observations were not counted. Additional post-250 observations were not added without reproducible exact distinct-employer instrumentation.",
+    "fast_gate": 2,
+    "size": 2,
+    "legal": 0,
+    "signal": 0,
+    "lpr": 0,
+    "contact": 0,
     "qualified": 0,
-    "duplicates": 4,
-    "excluded_early_reject": 28,
+    "duplicates": 0,
+    "excluded_early_reject": 250,
     "qualified_raw_pct": 0.0,
-    "fast_gate_raw_pct": 31.0345,
+    "fast_gate_raw_pct": 0.8,
     "raw_target_met": false,
-    "minimum_raw_floor_met": false,
+    "minimum_raw_floor_met": true,
+    "user_supplemental_250_threshold_met": true,
     "preferred_config_raw_target_met": false,
     "supplemental_discovery_performed": true,
     "normal_throughput_completion": false,
-    "raw_count_note": "Current-hour growth_news worker supplied raw=29. official_owner searched multiple fresh low-overlap source families but deliberately left raw null because exact distinct employer count could not be verified. No padding or invented aggregation."
+    "raw_count_note": "Fresh worker growth_news raw=5; low-overlap industry-news raw=225; regional production/investment/expansion raw=20. Authoritative total=250. CURRENT_WORKING_CONFIG prefers 400-800 and requires continued source switching below 300 while reasonably possible; a further source-switch wave was attempted but uninstrumented extra observations were not added to raw."
   },
   "latest_run_lane_efficiency": [
     {
-      "lane": "growth_news_20260902_072314",
-      "raw": 29,
+      "lane": "growth_news_20260902_082541",
+      "raw": 5,
       "net_qualified": 0,
-      "physical_duplicates": 1,
+      "physical_duplicates": 0,
+      "next_state": "ROTATE_AFTER_FAIL_CLOSED_RECHECK"
+    },
+    {
+      "lane": "low_overlap_industry_news_aug_2026",
+      "raw": 225,
+      "net_qualified": 0,
+      "physical_duplicates": 0,
       "next_state": "ROTATE"
     },
     {
-      "lane": "official_owner_20260902_072927",
-      "raw": null,
+      "lane": "regional_production_investment_expansion",
+      "raw": 20,
       "net_qualified": 0,
-      "physical_duplicates": 1,
-      "next_state": "CONTINUE_LOW_OVERLAP_WITH_EXACT_RAW_INSTRUMENTATION"
+      "physical_duplicates": 0,
+      "next_state": "CONTINUE_WITH_EXACT_RAW_INSTRUMENTATION"
     }
   ],
   "last_3_run_efficiency": [
-    {
-      "run_id": "N5K-20260902-580R1",
-      "raw": 120,
-      "fast_gate": 12,
-      "qualified": 1,
-      "qualified_raw_pct": 0.8333,
-      "fast_gate_raw_pct": 10.0
-    },
     {
       "run_id": "N5K-20260902-581R2",
       "raw": 82,
@@ -87,13 +87,21 @@
       "qualified": 0,
       "qualified_raw_pct": 0.0,
       "fast_gate_raw_pct": 31.0345
+    },
+    {
+      "run_id": "N5K-20260902-583",
+      "raw": 250,
+      "fast_gate": 2,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 0.8
     }
   ],
   "efficiency_change_vs_previous_run": {
-    "qualified_raw_pct_points": -3.6585,
-    "net_new_change": -3,
-    "fast_gate_raw_pct_points": 11.5223,
-    "assessment": "Current hour remains underdone: exact raw 29 < 120 and net-new 0. Continue fresh low-overlap discovery with exact employer-level raw instrumentation; do not repeat saturated samples."
+    "qualified_raw_pct_points": 0.0,
+    "net_new_change": 0,
+    "fast_gate_raw_pct_points": -30.2345,
+    "assessment": "Raw coverage improved from 29 to 250, but net-new remained 0. Do not lower criteria. Rotate away from low-yield samples and continue fresh low-overlap discovery with exact employer-level raw instrumentation."
   },
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -105,7 +113,7 @@
     "management_change_commercial_transformation_fresh": 20,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "N5K-20260902-582 physically processed current-hour worker staging. ENHIM was rejected by physical dedup; no new rows added. Qualified staged not counted is zero.",
-  "repair_required": "LOW_RAW_EXACT_29_BELOW_MINIMUM_120_AFTER_CURRENT_HOUR_RECOVERY",
-  "note": "N5K-20260902-583 completed after physical integration: +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "fresh_staging": "N5K-20260902-583 consumed fresh growth_news staging first. Two PREQUALIFIED candidates were independently rechecked; neither reached QUALIFIED. Qualified staged not counted is zero.",
+  "repair_required": "THROUGHPUT_DISCLOSURE_RAW_250_BELOW_CURRENT_CONFIG_CONTINUE_THRESHOLD_300",
+  "note": "N5K-20260902-583 physically integrated with +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged qualified 0; active WIP 0; outreach 0. Authoritative raw=250; normal throughput completion=false against current config throughput guidance."
 }
