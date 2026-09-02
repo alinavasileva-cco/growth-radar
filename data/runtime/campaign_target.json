@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T03:29:29+03:00",
+  "updated_at": "2026-09-02T03:44:38+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260902-578",
-  "current_run_id": "N5K-20260902-578",
-  "last_run_id": "N5K-20260902-578",
-  "latest_completed_run": "N5K-20260902-578",
+  "last_completed_run_id": "N5K-20260902-578R1",
+  "current_run_id": "N5K-20260902-578R1",
+  "last_run_id": "N5K-20260902-578R1",
+  "latest_completed_run": "N5K-20260902-578R1",
   "latest_attempted_run": "N5K-20260902-578",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260902-578",
@@ -117,5 +117,5 @@
   },
   "fresh_staging": "N5K-20260902-578 consumed fresh 03:22 growth_news and 03:23 official_owner staging. Four PREQUALIFIED candidates were independently rechecked and submitted to the authoritative physical guard; three were physical duplicates and one was net-new. Pending is cleared; staged not counted is zero.",
   "repair_required": "LOW_RAW_103_BELOW_MINIMUM_120_AFTER_SUPPLEMENTAL_DISCOVERY",
-  "note": "N5K-20260902-578 completed with LOW RAW disclosure after physical integration: +1 net new; canonical/contactable 587/587; integrity PASS; orphan 0/0; staged 0; outreach 0."
+  "note": "N5K-20260902-578R1 completed after physical integration: +0 net new; canonical/contactable 587/587; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }
