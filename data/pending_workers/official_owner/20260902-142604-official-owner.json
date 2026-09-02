@@ -1,0 +1,319 @@
+{
+  "worker": "official_owner",
+  "lane": "official_owner",
+  "created_at": "2026-09-02T14:26:04+03:00",
+  "campaign_id": "new_5000",
+  "config_version_observed": "2026-09-02T09:25:37+03:00",
+  "canonical_snapshot_observed": {
+    "physical_canonical": 598,
+    "physical_contactable": 598,
+    "last_completed_run": "N5K-20260902-584",
+    "source": "CURRENT_WORKING_CONFIG.md"
+  },
+  "guardrails": {
+    "criteria_changed": false,
+    "canonical_modified": false,
+    "contactable_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false,
+    "outreach_performed": false,
+    "historical_pending_full_tree_required_before_discovery": false,
+    "status_policy": ["PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP", "REJECT"]
+  },
+  "funnel": {
+    "distinct_employer_raw": 15,
+    "size_pass": 9,
+    "legal_pass": 7,
+    "signal_pass": 6,
+    "lpr_pass": 4,
+    "contact_pass": 4,
+    "prequalified_needs_final_global_dedup": 4,
+    "reject": 11,
+    "net_qualified_claimed": 0,
+    "target_raw_70_130_reached": false,
+    "note": "Критерии не ослаблялись; цикл не добивался слабым каталогом. По доступным свежим источникам в этом проходе подтверждены 15 distinct employer-level raw, четыре прошли полный worker funnel."
+  },
+  "source_batches": [
+    {
+      "batch": "leadership-change-2026",
+      "source_type": "business press + company press",
+      "raw": 6,
+      "duplicates_plus_early_rejects": 5,
+      "qualified_worker_stage": 0,
+      "examples": ["Компания ТрансТелеКом", "АПРИ", "М.Видео", "РТК-ЦОД", "Мосгаз", "ФК Ростов"],
+      "switch_reason": "majority public/state/non-target legal-control form; lane not extended"
+    },
+    {
+      "batch": "new-production-central-russia",
+      "source_type": "official/company news + retail press",
+      "raw": 2,
+      "duplicates_plus_early_rejects": 0,
+      "qualified_worker_stage": 2,
+      "examples": ["Лалибела Кофе", "Аби"]
+    },
+    {
+      "batch": "new-production-northwest",
+      "source_type": "industrial press + legal registry evidence",
+      "raw": 1,
+      "duplicates_plus_early_rejects": 0,
+      "qualified_worker_stage": 1,
+      "examples": ["Семаргл"]
+    },
+    {
+      "batch": "regional-expansion-fintech",
+      "source_type": "official corporate site + business publication",
+      "raw": 1,
+      "duplicates_plus_early_rejects": 0,
+      "qualified_worker_stage": 1,
+      "examples": ["Summit Group / МФК Саммит"]
+    },
+    {
+      "batch": "industrial-expansion-volga-ural",
+      "source_type": "company site + technology/business press",
+      "raw": 2,
+      "duplicates_plus_early_rejects": 2,
+      "qualified_worker_stage": 0,
+      "examples": ["Инкаб Холдинг", "Бештау"],
+      "switch_reason": "Инкаб Холдинг is public-company/IPO trajectory; Бештау signal found was 2025 and not fresh enough for this cycle"
+    },
+    {
+      "batch": "auto-and-infrastructure-production",
+      "source_type": "official company news + national press",
+      "raw": 3,
+      "duplicates_plus_early_rejects": 3,
+      "qualified_worker_stage": 0,
+      "examples": ["Соллерс", "А7", "Запорожская АЭС"],
+      "switch_reason": "public/state-controlled or stale/non-target legal-control form"
+    }
+  ],
+  "dedup_policy": {
+    "physical_canonical_contactable_checked": true,
+    "compact_runtime_config_checked": true,
+    "full_historical_pending_tree_materialized": false,
+    "full_historical_pending_tree_required": false,
+    "candidate_level_repo_search_keys": ["INN", "OGRN", "exact/brand where available"],
+    "final_global_dedup_owner": "canonical writer",
+    "worker_counts_staged_as_added": false
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Lalibela Coffee / Лалибела Кофе",
+      "legal_name": "ООО \"ЛАЛИБЕЛА КОФЕ\"",
+      "inn": "7722831092",
+      "ogrn": "1147746015119",
+      "domain": "lalibelacoffee.com",
+      "size_evidence": {
+        "fact": "2025 revenue about 3.47bn RUB; active company; new factory investment 2.5bn RUB",
+        "url": "https://zachestnyibiznes.ru/company/ul/1147746015119_7722831092_OOO-LALIBELA-KOFE"
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-04-07",
+        "fact": "new coffee factory launched in Smolensk region; investment 2.5bn RUB",
+        "urls": [
+          "https://www.retail.ru/news/lalibela-kofe-vlozhila-2-5-mlrd-rubley-v-zavod-pod-smolenskom-7-aprelya-2026-276388/",
+          "https://new-retail.ru/novosti/retail/lalibela_kofe_zapustila_novyy_zavod_v_smolenskoy_oblasti/"
+        ]
+      },
+      "lpr": {
+        "name": "Дмитрий Георгиевич Гущин",
+        "role": "генеральный директор; также указан среди учредителей",
+        "evidence_url": "https://www.comfex.ru/1147746015119/%D0%BE%D0%BE%D0%BE-%D0%BB%D0%B0%D0%BB%D0%B8%D0%B1%D0%B5%D0%BB%D0%B0-%D0%BA%D0%BE%D1%84%D0%B5"
+      },
+      "contact": {
+        "route": "official general email/phone and site contact form",
+        "email": "info@lalibelacoffee.ru",
+        "phone": "+7 495 988-64-28",
+        "url": "https://lalibelacoffee.com/ru/contacts/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "brand_repo_search": "NO_MATCH",
+        "final_physical_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Summit Group / МФК Саммит",
+      "legal_name": "АО МФК \"САММИТ\"",
+      "inn": "9714073258",
+      "ogrn": "1257700155360",
+      "domain": "summitgroup.ru",
+      "size_evidence": {
+        "fact": "official investor page reports 2025 consolidated assets 7.2bn RUB and client portfolio 4.2bn RUB; federal group",
+        "url": "https://summitgroup.ru/investor/"
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-06-02",
+        "fact": "opened fifth pawnshop and first branch outside Moscow region in Astrakhan; plans more than ten new locations by end-2026 and wider regional expansion",
+        "urls": [
+          "https://companies.rbc.ru/news/TuFwakS6qv/lastochka-doletela-do-astrahani-summit-group-otkryila-pyatyij-lombard/",
+          "https://www.banki.ru/dialog/articles/60236/"
+        ]
+      },
+      "lpr": {
+        "name": "Алексей Имховик",
+        "role": "генеральный директор МФК Саммит",
+        "evidence_url": "https://summitgroup.ru/about/"
+      },
+      "contact": {
+        "route": "official investor/media/head-office routes",
+        "emails": ["ir@summitgroup.ru", "pr@summitgroup.ru"],
+        "phones": ["8 800 600 23 30", "8 800 775 25 45"],
+        "url": "https://www.summitgroup.ru/contacts/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "final_physical_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Семаргл",
+      "legal_name": "ООО \"СЕМАРГЛ\"",
+      "inn": "7814454694",
+      "ogrn": "1099847019580",
+      "domain": "semargl.pro",
+      "size_evidence": {
+        "fact": "active; 59 employees; 2025 income about 120.9m RUB",
+        "url": "https://zachestnyibiznes.ru/company/ul/1099847019580_7814454694_OOO-SEMARGL"
+      },
+      "signal": {
+        "class": "S1",
+        "date": "2026-03-16",
+        "fact": "industrial robot and automated-storage factory in St Petersburg reported 85% complete with launch planned for early summer 2026",
+        "url": "https://www.cnews.ru/news/top/2026-03-16_v_sankt-peterburge_gotovyat"
+      },
+      "lpr": {
+        "name": "Андрей Александрович Егоров",
+        "role": "генеральный директор",
+        "evidence_url": "https://zachestnyibiznes.ru/company/ul/1099847019580_7814454694_OOO-SEMARGL"
+      },
+      "contact": {
+        "route": "published corporate email/phones",
+        "email": "info@semargl.pro",
+        "phones": ["+7 812 313-50-93", "+7 812 702-10-21"],
+        "url": "https://zachestnyibiznes.ru/company/ul/1099847019580_7814454694_OOO-SEMARGL"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "brand_repo_search": "NO_MATCH",
+        "final_physical_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Аби",
+      "legal_name": "АО \"АБИ ПРОДАКТ\"",
+      "inn": "3328458132",
+      "ogrn": "1083328002780",
+      "domain": "abi.ru",
+      "size_evidence": {
+        "fact": "2025 revenue about 7.5bn RUB; 749 employees in legal entity; group site states three factories and 4700+ trained employees in H1 2026",
+        "urls": [
+          "https://reputation.ru/ogrn/1083328002780",
+          "https://abi.ru/"
+        ]
+      },
+      "signal": {
+        "class": "S2",
+        "date": "2026-04-02",
+        "fact": "more than 1bn RUB automation/robotization program for 2024-2026; eight equipment units contracted for 2026, plus new high-throughput production line agreement at PMEF 2026",
+        "urls": [
+          "https://www.retail.ru/news/abi-napravit-1-mlrd-rubley-na-avtomatizatsiyu-proizvodstv-2-aprelya-2026-276289/",
+          "https://www.retail.ru/rbc/pressreleases/abi-v-ramkakh-pmef-2026-podpisala-soglashenie-o-postavke-rossiyskoy-linii-po-proizvodstvu-polnostyu-/"
+        ]
+      },
+      "lpr": {
+        "name": "Татьяна Владимировна Трифонова",
+        "role": "генеральный директор Аби / АО АБИ ПРОДАКТ",
+        "evidence_urls": [
+          "https://www.retail.ru/news/abi-napravit-1-mlrd-rubley-na-avtomatizatsiyu-proizvodstv-2-aprelya-2026-276289/",
+          "https://reputation.ru/ogrn/1083328002780"
+        ]
+      },
+      "contact": {
+        "route": "official head-office and sales routes",
+        "emails": ["info@abi.ru", "abi.sales@abi.ru"],
+        "phone": "+7 (4922) 52-99-99",
+        "url": "https://abi.ru/contact/"
+      },
+      "dedup_checks": {
+        "inn_repo_search": "NO_MATCH",
+        "ogrn_repo_search": "NO_MATCH",
+        "final_physical_global_dedup": "REQUIRED"
+      }
+    },
+    {
+      "status": "REJECT",
+      "brand": "Инкаб Холдинг",
+      "reason": "public-company/IPO trajectory; not taken into this private-company lane despite strong 2026 expansion signal",
+      "evidence_url": "https://incab-holding.ru/press/inkab-holding-gotovitsya-k-vyhodu-na-ipo/"
+    },
+    {
+      "status": "REJECT",
+      "brand": "М.Видео",
+      "reason": "public company / non-target legal-control form for this lane",
+      "evidence_url": "https://www.1tv.ru/news/2026-03-13/536228"
+    },
+    {
+      "status": "REJECT",
+      "brand": "АПРИ",
+      "reason": "ПАО; non-target legal-control form for this lane",
+      "evidence_url": "https://www.finam.ru/publications/item/pavel-krutolapov-naznachen-generalnym-direktorom-apri-20260302-2000/"
+    },
+    {
+      "status": "REJECT",
+      "brand": "Компания ТрансТелеКом",
+      "reason": "state-linked infrastructure company; outside private-company gate",
+      "evidence_url": "https://www.cnews.ru/news/line/2026-05-29_leri_gubkin_naznachen_generalnym"
+    },
+    {
+      "status": "REJECT",
+      "brand": "РТК-ЦОД",
+      "reason": "Rostelecom group/state-linked; outside private-company gate",
+      "evidence_url": "https://www.company.rt.ru/press/news/d477081/"
+    },
+    {
+      "status": "REJECT",
+      "brand": "Соллерс",
+      "reason": "public-company group; not taken into this private-company lane",
+      "evidence_url": "https://sollers-auto.com/press-center/news/gruppa-sollers-nachala-proizvodstvo-sideniy-dlya-pikapov-sollers-v-ulyanovske/"
+    },
+    {
+      "status": "REJECT",
+      "brand": "Мосгаз",
+      "reason": "city-controlled infrastructure company; outside private-company gate",
+      "evidence_url": "https://finance.rambler.ru/business/56312814-generalnym-direktorom-ao-mosgaz-naznachen-mihail-vdovin/"
+    },
+    {
+      "status": "REJECT",
+      "brand": "ФК Ростов",
+      "reason": "sports club; sector/fit not established strongly enough for deep funnel",
+      "evidence_url": "https://news.sportbox.ru/Vidy_sporta/Futbol/Russia/premier_league/spbnews_NI2345284_Andrej_Chajka_naznachen_generalnym_direktorom_Rostova"
+    },
+    {
+      "status": "REJECT",
+      "brand": "Запорожская АЭС",
+      "reason": "ФГУП/state entity; outside private-company gate",
+      "evidence_url": "https://www.atomic-energy.ru/news/2026/06/02/166060"
+    },
+    {
+      "status": "REJECT",
+      "brand": "Бештау",
+      "reason": "available factory-launch evidence in this pass dated 2025; not advanced as a fresh 2026 signal",
+      "evidence_url": "https://www.cnews.ru/news/top/2025-03-07_v_rostove-na-donu_otkrylsya"
+    },
+    {
+      "status": "REJECT",
+      "brand": "А7",
+      "reason": "available branch-opening evidence found in this pass dated 2025 and bank-linked; not advanced",
+      "evidence_url": "https://www.psbank.ru/bank/press/news/2025/06/18-02"
+    }
+  ]
+}
