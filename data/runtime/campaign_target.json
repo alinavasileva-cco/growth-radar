@@ -27,83 +27,33 @@
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260903-594",
-    "raw": 40,
-    "fast_gate": 0,
-    "size": 0,
-    "legal": 0,
-    "signal": 0,
-    "lpr": 0,
-    "contact": 0,
+    "run_id": "N5K-20260903-595",
+    "raw": 45,
+    "fast_gate": 6,
+    "size": 3,
+    "legal": 3,
+    "signal": 3,
+    "lpr": 1,
+    "contact": 1,
     "qualified": 0,
-    "duplicates": 0,
-    "excluded": 40,
+    "duplicates": 1,
+    "excluded": 44,
     "minimum_raw_floor_met": false,
     "preferred_config_raw_target_met": false,
     "normal_throughput_completion": false,
-    "raw_count_note": "40 distinct employer-level raw across 10 rotated low-overlap lanes. Raw remains below the 120 hard floor and 300 continuation threshold. No external technical limitation claimed; no catalog padding; criteria unchanged; no outreach."
+    "raw_count_note": "45 genuinely distinct employer-level raw across 10 rotated low-overlap lanes. Supplemental discovery continued in the same cycle; raw remained below the 120 hard floor and 300 continuation threshold. One deep-verified candidate was rejected by physical canonical dedup on INN/OGRN. No catalog padding; criteria unchanged; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {
-      "lane": "regional_investment_new_production",
-      "raw": 7,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 7
-    },
-    {
-      "lane": "industrial_park_sez_technopark",
-      "raw": 5,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 5
-    },
-    {
-      "lane": "regional_official_private_expansion",
-      "raw": 5,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 5
-    },
-    {
-      "lane": "msp_regional_scaleup",
-      "raw": 1,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 1
-    },
-    {
-      "lane": "export_capacity_growth",
-      "raw": 3,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 3
-    },
-    {
-      "lane": "dealer_franchise_partner_expansion",
-      "raw": 1,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 1
-    },
-    {
-      "lane": "logistics_warehouse_commercial_property",
-      "raw": 5,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 5
-    },
-    {
-      "lane": "new_line_workshop_factory",
-      "raw": 8,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 8
-    },
-    {
-      "lane": "ma_private_investment",
-      "raw": 3,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 3
-    },
-    {
-      "lane": "branches_offices_service_centers",
-      "raw": 2,
-      "net_qualified": 0,
-      "duplicates_early_rejects": 2
-    }
+    {"lane":"regional_investment_new_production","raw":7,"net_qualified":0,"duplicates_early_rejects":6},
+    {"lane":"industrial_park_sez_technopark","raw":5,"net_qualified":0,"duplicates_early_rejects":5},
+    {"lane":"regional_official_private_expansion","raw":4,"net_qualified":0,"duplicates_early_rejects":4},
+    {"lane":"msp_regional_scaleup","raw":6,"net_qualified":0,"duplicates_early_rejects":5,"physical_duplicates":1},
+    {"lane":"export_capacity_growth","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"dealer_franchise_partner_expansion","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"logistics_warehouse_commercial_property","raw":4,"net_qualified":0,"duplicates_early_rejects":4},
+    {"lane":"new_line_workshop_factory","raw":7,"net_qualified":0,"duplicates_early_rejects":6},
+    {"lane":"ma_private_investment","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
+    {"lane":"branches_offices_service_centers","raw":3,"net_qualified":0,"duplicates_early_rejects":3}
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -114,8 +64,8 @@
     "management_change_commercial_transformation_fresh": 15,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "RUN N5K-20260903-594 was physically processed by the canonical writer; qualified staged not counted is zero.",
+  "fresh_staging": "RUN N5K-20260903-595 was physically processed by the canonical writer; ХРОМОС Инжиниринг was rejected by physical canonical dedup on INN/OGRN; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-595 requires recovery: raw_distinct 45<300; hard_floor_passed=False; canonical/contactable 605/605; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-595 requires recovery: raw_distinct 45<120 hard floor and <300 continuation threshold; canonical/contactable 605/605; net_new 0; integrity PASS; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
