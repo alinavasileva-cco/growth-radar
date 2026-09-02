@@ -11,12 +11,12 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-02T07:43:00+03:00",
+  "updated_at": "2026-09-02T08:28:29+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260902-582",
-  "current_run_id": "N5K-20260902-582",
-  "last_run_id": "N5K-20260902-582",
-  "latest_completed_run": "N5K-20260902-582",
+  "last_completed_run_id": "N5K-20260902-583",
+  "current_run_id": "N5K-20260902-583",
+  "last_run_id": "N5K-20260902-583",
+  "latest_completed_run": "N5K-20260902-583",
   "latest_attempted_run": "N5K-20260902-582",
   "latest_attempted_run_status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
   "canonical_integration_run_id": "N5K-20260902-582",
@@ -64,9 +64,30 @@
     }
   ],
   "last_3_run_efficiency": [
-    {"run_id":"N5K-20260902-580R1","raw":120,"fast_gate":12,"qualified":1,"qualified_raw_pct":0.8333,"fast_gate_raw_pct":10.0},
-    {"run_id":"N5K-20260902-581R2","raw":82,"fast_gate":16,"qualified":3,"qualified_raw_pct":3.6585,"fast_gate_raw_pct":19.5122},
-    {"run_id":"N5K-20260902-582","raw":29,"fast_gate":9,"qualified":0,"qualified_raw_pct":0.0,"fast_gate_raw_pct":31.0345}
+    {
+      "run_id": "N5K-20260902-580R1",
+      "raw": 120,
+      "fast_gate": 12,
+      "qualified": 1,
+      "qualified_raw_pct": 0.8333,
+      "fast_gate_raw_pct": 10.0
+    },
+    {
+      "run_id": "N5K-20260902-581R2",
+      "raw": 82,
+      "fast_gate": 16,
+      "qualified": 3,
+      "qualified_raw_pct": 3.6585,
+      "fast_gate_raw_pct": 19.5122
+    },
+    {
+      "run_id": "N5K-20260902-582",
+      "raw": 29,
+      "fast_gate": 9,
+      "qualified": 0,
+      "qualified_raw_pct": 0.0,
+      "fast_gate_raw_pct": 31.0345
+    }
   ],
   "efficiency_change_vs_previous_run": {
     "qualified_raw_pct_points": -3.6585,
@@ -86,5 +107,5 @@
   },
   "fresh_staging": "N5K-20260902-582 physically processed current-hour worker staging. ENHIM was rejected by physical dedup; no new rows added. Qualified staged not counted is zero.",
   "repair_required": "LOW_RAW_EXACT_29_BELOW_MINIMUM_120_AFTER_CURRENT_HOUR_RECOVERY",
-  "note": "N5K-20260902-582 canonical writer completed physically with +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; WIP 0; outreach 0. Current hour remains underdone by raw threshold."
+  "note": "N5K-20260902-583 completed after physical integration: +0 net new; canonical/contactable 596/596; integrity PASS; orphan 0/0; staged 0; outreach 0."
 }

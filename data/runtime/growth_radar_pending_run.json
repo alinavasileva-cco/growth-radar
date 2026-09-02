@@ -1,41 +1,8 @@
 {
   "run_id": "N5K-20260902-583",
   "updated_at": "2026-09-02T08:28:29+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "status": "CLEARED_AFTER_INTEGRATION",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "funnel": {
-    "discovered": 250,
-    "fast_gate_passed": 2,
-    "size_check_passed": 2,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "duplicates": 0,
-    "excluded": 250
-  },
-  "lane_metrics": [
-    {
-      "lane": "fresh_worker_growth_news",
-      "raw": 5,
-      "prequalified_rechecked": 2,
-      "qualified": 0,
-      "note": "Петровакс Фарм rejected at LEGAL: worker OGRN 1027700078400 conflicts with current RBC legal card for same INN 7702302492 showing OGRN 1037700012745. Турбокомплект fail-closed before QUALIFIED because fresh official SIGNAL/CONTACT verification did not reproduce reliably in this run."
-    },
-    {
-      "lane": "low_overlap_industry_news",
-      "raw": 225,
-      "qualified": 0,
-      "note": "Distinct employer-level raw counted after brand-name dedup from dated August 2026 industrial/electrotechnical company-news archives; rows/search-result duplicates, foreign-only items, universities/state bodies and obvious non-company items excluded from the counted floor. Deep funnel not asserted without LEGAL/SIGNAL/LPR/CONTACT verification."
-    },
-    {
-      "lane": "regional_production_investment_expansion",
-      "raw": 20,
-      "qualified": 0,
-      "note": "Supplemental low-overlap production/investment/franchise/management searches across regions; counted only resolved named companies not already counted in industry-news lane."
-    }
-  ],
-  "notes": "No criteria changed. Outreach=0. Fresh staging consumed first, then supplemental discovery. qualified=0 after fail-closed recheck. Sources include worker staging data/pending_workers/growth_news/20260902-082541-growth-news.json; https://www.elec.ru/news/2026/08/29/ ; https://www.elec.ru/news/2026/08/28/ ; https://www.elec.ru/news/2026/08/27/ ; https://www.elec.ru/news/2026/08/26/ ; https://www.elec.ru/news/2026/08/24/ ; https://www.elec.ru/news/2026/08/21/ ; https://www.elec.ru/news/2026/08/20/ ; https://www.elec.ru/news/2026/08/13/ ; https://www.elec.ru/news/2026/08/12/ ; https://www.elec.ru/news/2026/08/10/ ; https://www.elec.ru/news/2026/08/07/ ; https://www.elec.ru/news/2026/08/06/ ; https://www.elec.ru/news/2026/08/05/ ; https://www.elec.ru/news/2026/08/04/ ; https://www.elec.ru/news/2026/08/03/ ; https://www.press-release.ru/branches/equipment/ ; https://www.press-release.ru/branches/chemistry/ . Raw counting stopped at 250 distinct employer-level candidates after the required >=250 supplemental expansion threshold was reached; additional observations were not counted."
+  "note": "N5K-20260902-583 integrated physically; canonical/contactable 596/596; integrity PASS; orphan 0/0; outreach 0."
 }

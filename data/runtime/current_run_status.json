@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260902-582",
+  "run_id": "N5K-20260902-583",
   "campaign_id": "new_5000",
-  "status": "COMPLETED_WITH_LOW_RAW_DISCLOSURE",
-  "updated_at": "2026-09-02T07:43:00+03:00",
+  "status": "COMPLETED",
+  "updated_at": "2026-09-02T08:28:29+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
     "baseline_count": 596,
@@ -13,47 +13,45 @@
     "remaining": 4404
   },
   "funnel": {
-    "discovered": 29,
-    "fast_gate_passed": 9,
-    "size_check_passed": 4,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
-    "lpr_identified": 3,
-    "contact_route_found": 3,
+    "discovered": 250,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
     "qualified": 0,
-    "duplicates": 4,
-    "excluded": 28
+    "duplicates": 0,
+    "excluded": 250
   },
   "lane_metrics": [
     {
-      "lane": "growth_news_20260902_072314",
-      "distinct_raw": 29,
-      "net_qualified": 0,
-      "physical_duplicates": 1,
-      "notes": "Worker supplied exact employer-level raw=29. Turbokomplekt was not re-staged because it was already encountered in prior canonical cycles."
+      "lane": "fresh_worker_growth_news",
+      "raw": 5,
+      "prequalified_rechecked": 2,
+      "qualified": 0,
+      "note": "Петровакс Фарм rejected at LEGAL: worker OGRN 1027700078400 conflicts with current RBC legal card for same INN 7702302492 showing OGRN 1037700012745. Турбокомплект fail-closed before QUALIFIED because fresh official SIGNAL/CONTACT verification did not reproduce reliably in this run."
     },
     {
-      "lane": "official_owner_20260902_072927",
-      "distinct_raw": null,
-      "net_qualified": 0,
-      "physical_duplicates": 1,
-      "notes": "Worker explicitly left raw null because source result sets were truncated; exact raw was not reconstructed or invented. ENHIM reached writer and was rejected by physical dedup."
+      "lane": "low_overlap_industry_news",
+      "raw": 225,
+      "qualified": 0,
+      "note": "Distinct employer-level raw counted after brand-name dedup from dated August 2026 industrial/electrotechnical company-news archives; rows/search-result duplicates, foreign-only items, universities/state bodies and obvious non-company items excluded from the counted floor. Deep funnel not asserted without LEGAL/SIGNAL/LPR/CONTACT verification."
+    },
+    {
+      "lane": "regional_production_investment_expansion",
+      "raw": 20,
+      "qualified": 0,
+      "note": "Supplemental low-overlap production/investment/franchise/management searches across regions; counted only resolved named companies not already counted in industry-news lane."
     }
   ],
   "qualified_companies": [],
-  "raw_target_met": false,
-  "minimum_raw_floor_met": false,
-  "preferred_config_raw_target_met": false,
-  "supplemental_discovery_performed": true,
-  "normal_throughput_completion": false,
-  "raw_count_note": "29 is the only exact employer-level raw count supplied by current-hour workers. The official_owner worker searched multiple fresh low-overlap source families but intentionally left raw null because connector result sets were truncated. No unverified rows were added to raw merely to reach 120.",
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "qualified_staged_not_counted": 0,
   "physical_master_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "LOW_RAW_EXACT_29_BELOW_MINIMUM_120_AFTER_CURRENT_HOUR_RECOVERY; official_owner raw uninstrumented and not invented"
+  "blocker": null
 }
