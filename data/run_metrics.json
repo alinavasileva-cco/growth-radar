@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T17:12:00+03:00",
+  "generated_at": "2026-09-02T18:14:00+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260902-587",
-  "current_run_id": "N5K-20260902-588",
+  "current_run_id": "N5K-20260902-588R1",
   "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_pool_verified": 601,
   "contactable_verified": 601,
@@ -16,46 +16,45 @@
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 16,
+    "raw_distinct": 30,
     "external_technical_limitation_proven": false,
     "passed": false
   },
-  "run_588": {
-    "raw_discovered": 16,
-    "fast_gate_passed": 5,
-    "size_check_passed": 3,
-    "legal_match_passed": 3,
-    "signal_confirmed": 3,
+  "run_588R1": {
+    "raw_discovered": 30,
+    "fast_gate_passed": 2,
+    "size_check_passed": 2,
+    "legal_match_passed": 2,
+    "signal_confirmed": 2,
     "lpr_identified": 2,
     "contact_route_found": 2,
     "qualified": 0,
     "physically_integrated": 0,
-    "duplicates": 1,
-    "excluded": 15,
+    "duplicates": 3,
+    "excluded": 28,
     "lane_metrics": [
       {
         "lane": "fresh_growth_business_change",
-        "raw": 2,
-        "duplicates_early_rejects": 1,
-        "qualified": 1,
-        "note": "ГК Цифра; management/business-change source."
+        "raw": 4,
+        "duplicates_early_rejects": 3,
+        "qualified": 1
       },
       {
         "lane": "moscow_region_new_production",
-        "raw": 2,
-        "duplicates_early_rejects": 2,
-        "qualified": 0
+        "raw": 5,
+        "duplicates_early_rejects": 4,
+        "qualified": 1
       },
       {
         "lane": "novosibirsk_investment_new_production",
-        "raw": 2,
-        "duplicates_early_rejects": 2,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0
       },
       {
         "lane": "leningrad_spb_new_production",
-        "raw": 2,
-        "duplicates_early_rejects": 2,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0
       },
       {
@@ -66,20 +65,20 @@
       },
       {
         "lane": "volga_investment_new_production",
+        "raw": 3,
+        "duplicates_early_rejects": 3,
+        "qualified": 0
+      },
+      {
+        "lane": "export_expansion",
         "raw": 2,
         "duplicates_early_rejects": 2,
         "qualified": 0
       },
       {
-        "lane": "export_expansion",
-        "raw": 1,
-        "duplicates_early_rejects": 1,
-        "qualified": 0
-      },
-      {
         "lane": "dealer_network_expansion",
-        "raw": 1,
-        "duplicates_early_rejects": 1,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0
       },
       {
@@ -90,8 +89,8 @@
       },
       {
         "lane": "management_commercial_change",
-        "raw": 1,
-        "duplicates_early_rejects": 1,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0
       }
     ]
