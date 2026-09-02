@@ -30,11 +30,48 @@ jobs:
       - name: Integrate pending run with hard completion gate
         run: python scripts/integrate_pending_run.py
 
-      - name: Validate Growth Radar state
+      - name: Validate canonical campaign namespace
         run: |
-          if [ -f scripts/validate_growth_radar.py ]; then
-            python scripts/validate_growth_radar.py || exit 1
-          fi
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          root = Path('data/campaigns/new_5000')
+          def rows(name):
+              with (root / name).open('r', encoding='utf-8-sig', newline='') as f:
+                  return list(csv.DictReader(f))
+
+          master = rows('leads_master.csv')
+          contactable = rows('contactable_master.csv')
+          contacts = rows('contacts.csv')
+          evidence = rows('evidence.csv')
+          runtime = json.loads(Path('data/runtime/current_run_status.json').read_text(encoding='utf-8'))
+          target = json.loads(Path('data/runtime/campaign_target.json').read_text(encoding='utf-8'))
+
+          mids = [r.get('Lead ID','').strip() for r in master]
+          cids = [r.get('Lead ID','').strip() for r in contactable]
+          assert len(master) == len(contactable), (len(master), len(contactable))
+          assert set(mids) == set(cids), 'canonical/contactable Lead ID mismatch'
+          assert len(mids) == len(set(mids)), 'duplicate Lead ID'
+
+          inns = [r.get('INN','').strip() for r in master if r.get('INN','').strip()]
+          ogrns = [r.get('OGRN/OGRNIP','').strip() for r in master if r.get('OGRN/OGRNIP','').strip()]
+          assert len(inns) == len(set(inns)), 'duplicate INN'
+          assert len(ogrns) == len(set(ogrns)), 'duplicate OGRN/OGRNIP'
+
+          mset = set(mids)
+          assert not ({r.get('Lead ID','').strip() for r in contacts} - mset), 'orphan contacts'
+          assert not ({r.get('Lead ID','').strip() for r in evidence} - mset), 'orphan evidence'
+          assert runtime.get('integrity_status') == 'PASS', runtime
+          assert runtime.get('orphan_contacts') == 0 and runtime.get('orphan_evidence') == 0, runtime
+          assert runtime.get('active_wip') == 0, runtime
+          assert runtime.get('new_cycle',{}).get('current_canonical_count') == len(master), runtime
+          assert runtime.get('new_cycle',{}).get('current_contactable_count') == len(contactable), runtime
+          assert target.get('current_canonical_count') == len(master), target
+          assert target.get('current_contactable_count') == len(contactable), target
+          assert target.get('integrity_status') == 'PASS', target
+          print(f'CAMPAIGN_INTEGRITY_PASS canonical={len(master)} contactable={len(contactable)} contacts={len(contacts)} evidence={len(evidence)}')
+          PY
 
       - name: Commit integrated run state
         run: |
