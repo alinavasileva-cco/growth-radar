@@ -11,14 +11,14 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-03T00:27:37+03:00",
+  "updated_at": "2026-09-03T01:45:00+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260902-588R1",
-  "current_run_id": "N5K-20260903-594",
-  "last_run_id": "N5K-20260903-594",
+  "current_run_id": "N5K-20260903-595",
+  "last_run_id": "N5K-20260903-595",
   "latest_completed_run": "N5K-20260902-588R1",
-  "latest_attempted_run": "N5K-20260903-594",
-  "latest_attempted_run_id": "N5K-20260903-594",
+  "latest_attempted_run": "N5K-20260903-595",
+  "latest_attempted_run_id": "N5K-20260903-595",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260902-591",
   "hourly_baseline_count": 605,
@@ -44,16 +44,66 @@
     "raw_count_note": "40 distinct employer-level raw across 10 rotated low-overlap lanes. Raw remains below the 120 hard floor and 300 continuation threshold. No external technical limitation claimed; no catalog padding; criteria unchanged; no outreach."
   },
   "latest_run_lane_efficiency": [
-    {"lane":"regional_investment_new_production","raw":7,"net_qualified":0,"duplicates_early_rejects":7},
-    {"lane":"industrial_park_sez_technopark","raw":5,"net_qualified":0,"duplicates_early_rejects":5},
-    {"lane":"regional_official_private_expansion","raw":5,"net_qualified":0,"duplicates_early_rejects":5},
-    {"lane":"msp_regional_scaleup","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
-    {"lane":"export_capacity_growth","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"dealer_franchise_partner_expansion","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
-    {"lane":"logistics_warehouse_commercial_property","raw":5,"net_qualified":0,"duplicates_early_rejects":5},
-    {"lane":"new_line_workshop_factory","raw":8,"net_qualified":0,"duplicates_early_rejects":8},
-    {"lane":"ma_private_investment","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"branches_offices_service_centers","raw":2,"net_qualified":0,"duplicates_early_rejects":2}
+    {
+      "lane": "regional_investment_new_production",
+      "raw": 7,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 7
+    },
+    {
+      "lane": "industrial_park_sez_technopark",
+      "raw": 5,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 5
+    },
+    {
+      "lane": "regional_official_private_expansion",
+      "raw": 5,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 5
+    },
+    {
+      "lane": "msp_regional_scaleup",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    },
+    {
+      "lane": "export_capacity_growth",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "dealer_franchise_partner_expansion",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    },
+    {
+      "lane": "logistics_warehouse_commercial_property",
+      "raw": 5,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 5
+    },
+    {
+      "lane": "new_line_workshop_factory",
+      "raw": 8,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 8
+    },
+    {
+      "lane": "ma_private_investment",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "branches_offices_service_centers",
+      "raw": 2,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 2
+    }
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -67,5 +117,5 @@
   "fresh_staging": "RUN N5K-20260903-594 was physically processed by the canonical writer; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-594 requires recovery: raw_distinct 40<300; hard_floor_passed=false; canonical/contactable 605/605; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-595 requires recovery: raw_distinct 45<300; hard_floor_passed=False; canonical/contactable 605/605; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
