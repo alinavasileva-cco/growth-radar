@@ -1,7 +1,7 @@
 {
   "run_id": "N5K-20260902-583",
   "campaign_id": "new_5000",
-  "status": "COMPLETED",
+  "status": "COMPLETED_WITH_THROUGHPUT_DISCLOSURE",
   "updated_at": "2026-09-02T08:28:29+03:00",
   "stage": "COMPLETE",
   "new_cycle": {
@@ -30,7 +30,7 @@
       "raw": 5,
       "prequalified_rechecked": 2,
       "qualified": 0,
-      "note": "Петровакс Фарм rejected at LEGAL: worker OGRN 1027700078400 conflicts with current RBC legal card for same INN 7702302492 showing OGRN 1037700012745. Турбокомплект fail-closed before QUALIFIED because fresh official SIGNAL/CONTACT verification did not reproduce reliably in this run."
+      "note": "Петровакс Фарм rejected at LEGAL: worker OGRN 1027700078400 conflicts with current independently checked legal card for same INN 7702302492 showing OGRN 1037700012745. Турбокомплект fail-closed before QUALIFIED because fresh official SIGNAL/CONTACT verification did not reproduce reliably in this run."
     },
     {
       "lane": "low_overlap_industry_news",
@@ -53,5 +53,14 @@
   "physical_master_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "596_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": null
+  "blocker": null,
+  "throughput_disclosure": {
+    "raw_distinct_employer_level": 250,
+    "minimum_user_floor_120_met": true,
+    "user_supplemental_250_threshold_met": true,
+    "current_config_preferred_400_800_met": false,
+    "current_config_continue_threshold_300_met": false,
+    "normal_throughput_completion": false,
+    "note": "After reaching 250 authoritative distinct employer-level raw, an additional source-switch wave was attempted. Additional observations were not added to authoritative raw because exact distinct-employer counting was not reproducible within this run. No padding; criteria unchanged."
+  }
 }
