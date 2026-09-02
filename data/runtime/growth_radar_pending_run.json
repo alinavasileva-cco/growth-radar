@@ -1,8 +1,107 @@
 {
-  "run_id": "N5K-20260902-579",
-  "updated_at": "2026-09-02T04:48:00+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260902-579 integrated physically; canonical/contactable 591/591; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260902-579R1",
+  "updated_at": "2026-09-02T04:35:21+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "discovered": 120,
+    "fast_gate_passed": 21,
+    "size_check_passed": 13,
+    "legal_match_passed": 10,
+    "signal_confirmed": 9,
+    "lpr_identified": 6,
+    "contact_route_found": 3,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 119
+  },
+  "lane_metrics": [
+    {
+      "lane": "hourly_579_existing_verified",
+      "distinct_raw": 87,
+      "prequalified": 2,
+      "submitted_to_physical_guard": 2,
+      "notes": "Authoritative completed 579 baseline retained; no historical pending-tree dependency."
+    },
+    {
+      "lane": "fresh_low_overlap_industrial_business_change_recovery",
+      "distinct_raw": 33,
+      "prequalified": 1,
+      "submitted_to_physical_guard": 1,
+      "notes": "Fresh employer-level discovery from 24-26 Aug 2026 industrial/business-change sources; cross-source name dedup applied conservatively. Jobs not used. One candidate promoted only after legal, scale, signal, LPR and public contact-route verification."
+    }
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-0777",
+      "Brand": "Логика молока",
+      "Legal Name": "ООО ГРУППА ЛОГИКА МОЛОКА",
+      "INN": "1655498011",
+      "OGRN/OGRNIP": "1231600049196",
+      "Region": "Московская область",
+      "City": "Красногорск",
+      "Segment": "производство молочной продукции / FMCG",
+      "Website": "https://logikamoloka.ru",
+      "Revenue/Scale": "Выручка компании по итогам 2025 года 161,1 млрд ₽; новый флагманский комбинат — инвестиции до 30 млрд ₽, до 1 750 тонн сырого молока в сутки.",
+      "Signal Level": "S1",
+      "Signal Summary": "17.08.2026 компания официально объявила строительство нового флагманского молочного комбината в Глазово Московской области; проект предусматривает 11 производственных линий и инвестиции до 30 млрд ₽ в рамках Стратегии 2030.",
+      "Signal Date": "2026-08-17",
+      "Signal Source": "https://logikamoloka.ru/press-centr/news/logika-moloka-postroit-novyy-molochnyy-zavod-v-moskovskoy-oblasti/",
+      "Owner": "",
+      "CEO": "Якуб Закриев",
+      "LPR": "Якуб Закриев",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "",
+      "Primary Email": "correspondence@logmol.ru",
+      "HH Contact": "",
+      "Contact Form": "https://logikamoloka.ru/contacts/",
+      "Contact Type": "официальный корпоративный email / официальный сайт",
+      "Contact Source": "https://logikamoloka.ru/contacts/",
+      "Consulting Hypothesis": "Строительство нового флагманского завода, расширение производственных мощностей и реализация Стратегии 2030 создают задачи по управлению масштабированием, операционной модели, KPI, коммерческому планированию и межфункциональной трансформации.",
+      "contacts": [
+        {
+          "value": "correspondence@logmol.ru",
+          "channel": "email",
+          "type": "официальный корпоративный email",
+          "source": "Логика молока — официальный сайт",
+          "url": "https://logikamoloka.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Публичный корпоративный маршрут; не выдается за прямой контакт LPR."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "growth_signal",
+          "claim": "17.08.2026 Логика молока объявила строительство нового флагманского молочного комбината в Московской области с инвестициями до 30 млрд ₽ и 11 производственными линиями.",
+          "url": "https://logikamoloka.ru/press-centr/news/logika-moloka-postroit-novyy-molochnyy-zavod-v-moskovskoy-oblasti/",
+          "source": "Логика молока — официальный сайт"
+        },
+        {
+          "type": "scale",
+          "claim": "По официальным итогам 2025 года выручка Логики молока составила 161,1 млрд ₽.",
+          "url": "https://logikamoloka.ru/press-centr/news/logika-moloka-v-2025-godu-sohranila-uverennye-tempy-rosta-operacionnyh-i-finansovyh-pokazateley/",
+          "source": "Логика молока — официальный сайт"
+        },
+        {
+          "type": "legal",
+          "claim": "ООО ГРУППА ЛОГИКА МОЛОКА: ИНН 1655498011, ОГРН 1231600049196, действующая организация.",
+          "url": "https://check.tochka.com/company/1231600049196/",
+          "source": "Точка — данные ЕГРЮЛ"
+        },
+        {
+          "type": "lpr",
+          "claim": "В официальной публикации компании Якуб Закриев указан генеральным директором Логики молока.",
+          "url": "https://logikamoloka.ru/press-centr/news/logika-moloka-postroit-novyy-molochnyy-zavod-v-moskovskoy-oblasti/",
+          "source": "Логика молока — официальный сайт"
+        },
+        {
+          "type": "contact",
+          "claim": "Официальная страница контактов публикует корпоративный email correspondence@logmol.ru.",
+          "url": "https://logikamoloka.ru/contacts/",
+          "source": "Логика молока — официальный сайт"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "notes": "Same-cycle recovery for incomplete hourly 579: raw raised conservatively from 87 to 120 using fresh low-overlap employer-level industrial/business-change discovery; jobs not used; criteria unchanged; outreach disabled. Candidate-level authoritative physical dedup remains delegated to the canonical writer."
 }
