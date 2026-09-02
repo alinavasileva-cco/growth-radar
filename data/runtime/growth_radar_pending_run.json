@@ -1,9 +1,109 @@
 {
   "run_id": "N5K-20260902-588R1",
-  "updated_at": "2026-09-02T18:47:00+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 32,
-  "note": "N5K-20260902-588R1 integrated verified rows but cannot be COMPLETED: raw_distinct=32<120. Supplemental discovery required."
+  "updated_at": "2026-09-02T18:51:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-2115004848",
+      "Brand": "Фабрика дверей Гармония",
+      "Legal Name": "ООО ГАРМОНИЯ",
+      "INN": "2115004848",
+      "OGRN/OGRNIP": "1132137000027",
+      "Region": "Чувашская Республика",
+      "City": "Цивильск / Новочебоксарск",
+      "Segment": "Производство межкомнатных дверей и стеновых панелей",
+      "Website": "https://garmonia-dvery.ru/",
+      "Revenue/Scale": "Выручка 544,8 млн ₽ за 2025 год, рост 162%; около 135 сотрудников; 68 тыс. дверных комплектов в 2025 году",
+      "Signal Level": "S1",
+      "Signal Summary": "17.08.2026 фабрика открыла новую производственную площадку в Новочебоксарске. Инвестиции 215 млн ₽, создано 40 рабочих мест; предприятие внедряет бережливое производство и наращивает мощности.",
+      "Signal Date": "2026-08-17",
+      "Signal Source": "https://gfchr.org/novosti/v-novocheboksarske-s-gospodderzhkoy-zapushchena-novaya-proizvodstvennaya-ploshchadka/",
+      "Owner": "Порфирьев Сергей Дмитриевич; Порфирьев Борис Дмитриевич",
+      "CEO": "Порфирьев Сергей Дмитриевич",
+      "LPR": "Порфирьев Сергей Дмитриевич",
+      "LPR Role": "Генеральный директор, совладелец 50%",
+      "Primary Phone": "+7 (800) 250-44-90",
+      "Primary Email": "opt@garmonia-dvery.ru",
+      "HH Contact": "",
+      "Contact Form": "https://garmonia-dvery.ru/",
+      "Contact Type": "Официальный корпоративный маршрут к собственнику/руководству",
+      "Contact Source": "https://alestech.ru/factory/1758-garmonia",
+      "Consulting Hypothesis": "Запуск второй производственной площадки, быстрый рост выручки и экспорт создают задачи по управлению масштабированием, P&L площадок, KPI, производительности и коммерческому планированию.",
+      "contacts": [
+        {
+          "value": "opt@garmonia-dvery.ru",
+          "channel": "Email",
+          "type": "Корпоративный маршрут",
+          "source": "Ассоциация Лестех / официальный домен компании",
+          "url": "https://alestech.ru/factory/1758-garmonia",
+          "is_lpr": false,
+          "notes": "Опубликованный email компании"
+        },
+        {
+          "value": "+7 (800) 250-44-90",
+          "channel": "Phone",
+          "type": "Корпоративный маршрут",
+          "source": "Ассоциация Лестех",
+          "url": "https://alestech.ru/factory/1758-garmonia",
+          "is_lpr": false,
+          "notes": "Опубликованный телефон фабрики"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL",
+          "claim": "ООО ГАРМОНИЯ, ИНН 2115004848, ОГРН 1132137000027, действует; генеральный директор Сергей Порфирьев; собственники Сергей и Борис Порфирьевы по 50%.",
+          "url": "https://companies.rbc.ru/id/1132137000027-ooo-obschestvo-s-ogranichennoj-otvetstvennostyu-garmoniya/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка 544,8 млн ₽ за 2025 год, рост около 162%; 135 сотрудников; производство 68 тыс. дверных комплектов за 2025 год.",
+          "url": "https://alestech.ru/factory/1758-garmonia",
+          "source": "Ассоциация Лестех"
+        },
+        {
+          "type": "SIGNAL",
+          "claim": "17.08.2026 открыта новая производственная площадка в Новочебоксарске с инвестициями 215 млн ₽ и 40 новыми рабочими местами.",
+          "url": "https://gfchr.org/novosti/v-novocheboksarske-s-gospodderzhkoy-zapushchena-novaya-proizvodstvennaya-ploshchadka/",
+          "source": "Гарантийный фонд Чувашской Республики"
+        },
+        {
+          "type": "LPR_CONTACT",
+          "claim": "Сергей Порфирьев публично назван директором и сооснователем семейного бизнеса; опубликованы телефон и email фабрики.",
+          "url": "https://www.zivvestnik.ru/news/ehto_rezultat_kropotlivoj_posledovatelnoj_raboty/2026-05-08-12908",
+          "source": "Цивильский вестник / Ассоциация Лестех"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "raw_distinct": 33,
+    "discovered": 33,
+    "fast_gate_passed": 5,
+    "size_check_passed": 5,
+    "legal_match_passed": 5,
+    "signal_confirmed": 5,
+    "lpr_identified": 5,
+    "contact_route_found": 5,
+    "qualified": 1,
+    "duplicates": 5,
+    "excluded": 28
+  },
+  "lane_metrics": [
+    {"lane": "fresh_growth_business_change", "raw": 5, "duplicates_early_rejects": 4, "qualified": 1},
+    {"lane": "moscow_region_new_production", "raw": 5, "duplicates_early_rejects": 4, "qualified": 1},
+    {"lane": "novosibirsk_investment_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "leningrad_spb_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "rostov_krasnodar_investment", "raw": 2, "duplicates_early_rejects": 2, "qualified": 0},
+    {"lane": "volga_investment_new_production", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "export_expansion", "raw": 2, "duplicates_early_rejects": 2, "qualified": 0},
+    {"lane": "dealer_network_expansion", "raw": 3, "duplicates_early_rejects": 3, "qualified": 0},
+    {"lane": "franchise_network_expansion", "raw": 1, "duplicates_early_rejects": 1, "qualified": 0},
+    {"lane": "management_commercial_change", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0},
+    {"lane": "vladimir_frp_new_production", "raw": 1, "duplicates_early_rejects": 1, "qualified": 0},
+    {"lane": "chuvashia_new_production", "raw": 1, "duplicates_early_rejects": 0, "qualified": 1}
+  ],
+  "notes": "Supplemental recovery continued after two physical dedup skips. Garmonia is a newly deep-verified regional production candidate. Keep recovery active below 120 hard floor and 300 preferred threshold. No outreach."
 }
