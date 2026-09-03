@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-03T03:27:19+03:00",
+  "generated_at": "2026-09-03T04:27:49+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260902-588R1",
-  "current_run_id": "N5K-20260903-597",
+  "current_run_id": "N5K-20260903-598",
   "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
-  "canonical_pool_verified": 605,
-  "contactable_verified": 605,
+  "canonical_pool_verified": 606,
+  "contactable_verified": 606,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4395,
+  "remaining_to_target": 4394,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
@@ -16,45 +16,45 @@
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 24,
+    "raw_distinct": 26,
     "external_technical_limitation_proven": false,
     "passed": false
   },
-  "run_597": {
-    "raw_discovered": 24,
+  "run_598": {
+    "raw_discovered": 26,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "physically_integrated": 0,
-    "duplicates": 1,
-    "excluded": 23,
+    "qualified": 1,
+    "physically_integrated": 1,
+    "duplicates": 0,
+    "excluded": 25,
     "lane_metrics": [
       {
-        "lane": "new_line_workshop_factory",
-        "raw": 7,
-        "duplicates_early_rejects": 6,
+        "lane": "regional_investment_new_production",
+        "raw": 8,
+        "duplicates_early_rejects": 7,
         "qualified": 1
       },
       {
-        "lane": "regional_investment_new_production",
-        "raw": 2,
-        "duplicates_early_rejects": 2,
-        "qualified": 0
-      },
-      {
         "lane": "industrial_park_sez_technopark",
-        "raw": 2,
-        "duplicates_early_rejects": 2,
-        "qualified": 0
-      },
-      {
-        "lane": "dealer_franchise_partner_expansion",
         "raw": 3,
         "duplicates_early_rejects": 3,
+        "qualified": 0
+      },
+      {
+        "lane": "new_line_workshop_factory",
+        "raw": 4,
+        "duplicates_early_rejects": 4,
+        "qualified": 0
+      },
+      {
+        "lane": "export_capacity_growth",
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0
       },
       {
@@ -64,21 +64,9 @@
         "qualified": 0
       },
       {
-        "lane": "branches_offices_service_centers",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
-        "qualified": 0
-      },
-      {
-        "lane": "export_capacity_growth",
-        "raw": 1,
-        "duplicates_early_rejects": 1,
-        "qualified": 0
-      },
-      {
         "lane": "company_pressroom_owner_ceo",
-        "raw": 1,
-        "duplicates_early_rejects": 1,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0
       },
       {
@@ -88,9 +76,21 @@
         "qualified": 0
       },
       {
-        "lane": "commercial_contract_procurement_probe",
-        "raw": 0,
-        "duplicates_early_rejects": 0,
+        "lane": "branches_offices_service_centers",
+        "raw": 1,
+        "duplicates_early_rejects": 1,
+        "qualified": 0
+      },
+      {
+        "lane": "management_commercial_transformation",
+        "raw": 1,
+        "duplicates_early_rejects": 1,
+        "qualified": 0
+      },
+      {
+        "lane": "sme_growth_cases",
+        "raw": 1,
+        "duplicates_early_rejects": 1,
         "qualified": 0
       }
     ]

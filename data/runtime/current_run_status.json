@@ -1,33 +1,33 @@
 {
-  "run_id": "N5K-20260903-597",
+  "run_id": "N5K-20260903-598",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-03T03:27:19+03:00",
+  "updated_at": "2026-09-03T04:27:49+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
     "baseline_count": 605,
     "target_count": 5000,
-    "current_canonical_count": 605,
-    "current_contactable_count": 605,
-    "progress_added": 0,
-    "remaining": 4395
+    "current_canonical_count": 606,
+    "current_contactable_count": 606,
+    "progress_added": 1,
+    "remaining": 4394
   },
   "funnel": {
-    "raw_distinct": 24,
-    "discovered": 24,
+    "raw_distinct": 26,
+    "discovered": 26,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 23
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 25
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 24,
+    "raw_distinct": 26,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -36,27 +36,27 @@
   },
   "lane_metrics": [
     {
-      "lane": "new_line_workshop_factory",
-      "raw": 7,
-      "duplicates_early_rejects": 6,
+      "lane": "regional_investment_new_production",
+      "raw": 8,
+      "duplicates_early_rejects": 7,
       "qualified": 1
     },
     {
-      "lane": "regional_investment_new_production",
-      "raw": 2,
-      "duplicates_early_rejects": 2,
-      "qualified": 0
-    },
-    {
       "lane": "industrial_park_sez_technopark",
-      "raw": 2,
-      "duplicates_early_rejects": 2,
-      "qualified": 0
-    },
-    {
-      "lane": "dealer_franchise_partner_expansion",
       "raw": 3,
       "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "new_line_workshop_factory",
+      "raw": 4,
+      "duplicates_early_rejects": 4,
+      "qualified": 0
+    },
+    {
+      "lane": "export_capacity_growth",
+      "raw": 2,
+      "duplicates_early_rejects": 2,
       "qualified": 0
     },
     {
@@ -66,21 +66,9 @@
       "qualified": 0
     },
     {
-      "lane": "branches_offices_service_centers",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0
-    },
-    {
-      "lane": "export_capacity_growth",
-      "raw": 1,
-      "duplicates_early_rejects": 1,
-      "qualified": 0
-    },
-    {
       "lane": "company_pressroom_owner_ceo",
-      "raw": 1,
-      "duplicates_early_rejects": 1,
+      "raw": 2,
+      "duplicates_early_rejects": 2,
       "qualified": 0
     },
     {
@@ -90,19 +78,33 @@
       "qualified": 0
     },
     {
-      "lane": "commercial_contract_procurement_probe",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "lane": "branches_offices_service_centers",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "management_commercial_transformation",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
+      "qualified": 0
+    },
+    {
+      "lane": "sme_growth_cases",
+      "raw": 1,
+      "duplicates_early_rejects": 1,
       "qualified": 0
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "МПК-Сталь"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "605_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "605_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "606_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "606_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }

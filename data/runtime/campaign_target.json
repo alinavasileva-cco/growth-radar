@@ -2,23 +2,23 @@
   "campaign_id": "new_5000",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 605,
-  "current_contactable_count": 605,
-  "progress_added": 605,
-  "remaining_to_total_target": 4395,
-  "remaining": 4395,
+  "current_canonical_count": 606,
+  "current_contactable_count": 606,
+  "progress_added": 606,
+  "remaining_to_total_target": 4394,
+  "remaining": 4394,
   "remaining_to_1000": 395,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-03T03:27:19+03:00",
+  "updated_at": "2026-09-03T04:27:49+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260902-588R1",
-  "current_run_id": "N5K-20260903-597",
-  "last_run_id": "N5K-20260903-597",
+  "current_run_id": "N5K-20260903-598",
+  "last_run_id": "N5K-20260903-598",
   "latest_completed_run": "N5K-20260902-588R1",
-  "latest_attempted_run": "N5K-20260903-597",
-  "latest_attempted_run_id": "N5K-20260903-597",
+  "latest_attempted_run": "N5K-20260903-598",
+  "latest_attempted_run_id": "N5K-20260903-598",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260902-591",
   "hourly_baseline_count": 605,
@@ -44,16 +44,67 @@
     "raw_count_note": "24 genuinely distinct employer-level raw across 10 rotated fresh low-overlap lanes. One deep-verified candidate (Сайбер Электро / ООО СТАБТЕХ) was rejected by physical canonical dedup. Raw remains below the 120 hard floor and 300 continuation threshold; no external technical limitation claimed; criteria unchanged; no catalog padding; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {"lane":"new_line_workshop_factory","raw":7,"net_qualified":0,"duplicates_early_rejects":6,"physical_duplicates":1},
-    {"lane":"regional_investment_new_production","raw":2,"net_qualified":0,"duplicates_early_rejects":2},
-    {"lane":"industrial_park_sez_technopark","raw":2,"net_qualified":0,"duplicates_early_rejects":2},
-    {"lane":"dealer_franchise_partner_expansion","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"logistics_warehouse_commercial_property","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"branches_offices_service_centers","raw":4,"net_qualified":0,"duplicates_early_rejects":4},
-    {"lane":"export_capacity_growth","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
-    {"lane":"company_pressroom_owner_ceo","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
-    {"lane":"ma_private_investment","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
-    {"lane":"commercial_contract_procurement_probe","raw":0,"net_qualified":0,"duplicates_early_rejects":0}
+    {
+      "lane": "new_line_workshop_factory",
+      "raw": 7,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 6,
+      "physical_duplicates": 1
+    },
+    {
+      "lane": "regional_investment_new_production",
+      "raw": 2,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 2
+    },
+    {
+      "lane": "industrial_park_sez_technopark",
+      "raw": 2,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 2
+    },
+    {
+      "lane": "dealer_franchise_partner_expansion",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "logistics_warehouse_commercial_property",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "branches_offices_service_centers",
+      "raw": 4,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 4
+    },
+    {
+      "lane": "export_capacity_growth",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    },
+    {
+      "lane": "company_pressroom_owner_ceo",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    },
+    {
+      "lane": "ma_private_investment",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    },
+    {
+      "lane": "commercial_contract_procurement_probe",
+      "raw": 0,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 0
+    }
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -67,5 +118,5 @@
   "fresh_staging": "RUN N5K-20260903-597 was physically processed by the canonical writer; Сайбер Электро / ООО СТАБТЕХ was rejected by physical canonical dedup; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-597 requires recovery: raw_distinct 24<120 hard floor and <300 continuation threshold; canonical/contactable 605/605; net_new 0; integrity PASS; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-598 requires recovery: raw_distinct 26<300; hard_floor_passed=False; canonical/contactable 606/606; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
