@@ -1,9 +1,104 @@
 {
-  "run_id": "N5K-20260903-597",
-  "updated_at": "2026-09-03T03:27:19+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 24,
-  "note": "N5K-20260903-597 integrated verified rows but cannot be COMPLETED: raw_distinct=24<120. Supplemental discovery required."
+  "run_id": "N5K-20260903-598",
+  "updated_at": "2026-09-03T04:27:49+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_companies": [
+    {
+      "Lead ID": "GR-MPK-4011015912",
+      "Brand": "МПК-Сталь",
+      "Legal Name": "ООО «Малоярославецкая производственная компания - Сталь»",
+      "INN": "4011015912",
+      "OGRN/OGRNIP": "1054001008918",
+      "Region": "Калужская область",
+      "City": "с. Маклино, Малоярославецкий район",
+      "Segment": "Производство модульных зданий и металлоконструкций",
+      "Website": "https://mpkmk.com/",
+      "Revenue/Scale": "Выручка 2025: 426 716 000 руб.; собственная производственная площадка 1,2 га",
+      "Signal Level": "S1",
+      "Signal Summary": "3 июня 2026 года ООО «МПК-Сталь» и Правительство Калужской области подписали соглашение о реализации инвестпроекта по разработке и выпуску линейки беспилотных вездеходных платформ.",
+      "Signal Date": "2026-06-03",
+      "Signal Source": "https://www.investkaluga.com/media/news/kaluzhskaya-mpk-stal-podpisala-soglashenie-o-vypuske-bespilotnyh-vezdehodnyh-platform-na-pmef-2026/",
+      "Owner": "",
+      "CEO": "Карасев Дмитрий Александрович",
+      "LPR": "Карасев Дмитрий Александрович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (48431) 5-20-20",
+      "Primary Email": "info@mpkmk.com",
+      "HH Contact": "",
+      "Contact Form": "https://mpkmk.com/",
+      "Contact Type": "Опубликованные корпоративные телефон и email",
+      "Contact Source": "https://mpkmk.com/",
+      "Consulting Hypothesis": "Компания запускает новое продуктовое направление и расширяет производственную повестку; наблюдаемый сигнал связан с коммерциализацией новой линейки и ростом операционной сложности.",
+      "contacts": [
+        {
+          "value": "+7 (48431) 5-20-20",
+          "channel": "phone",
+          "type": "corporate",
+          "source": "Официальный сайт МПК-Сталь",
+          "url": "https://mpkmk.com/",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный телефон"
+        },
+        {
+          "value": "info@mpkmk.com",
+          "channel": "email",
+          "type": "corporate",
+          "source": "Официальный сайт МПК-Сталь",
+          "url": "https://mpkmk.com/",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный email"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SCALE",
+          "claim": "ООО «МПК-Сталь» действует; ИНН 4011015912, ОГРН 1054001008918; генеральный директор Карасев Дмитрий Александрович; выручка 2025 426 716 000 руб.",
+          "url": "https://companies.rbc.ru/alphabetical-catalog/companies/m-a-l/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "GROWTH_SIGNAL",
+          "claim": "3 июня 2026 года компания подписала с Правительством Калужской области соглашение о выпуске линейки беспилотных вездеходных платформ.",
+          "url": "https://www.investkaluga.com/media/news/kaluzhskaya-mpk-stal-podpisala-soglashenie-o-vypuske-bespilotnyh-vezdehodnyh-platform-na-pmef-2026/",
+          "source": "Агентство развития бизнеса Калужской области"
+        },
+        {
+          "type": "CONTACT_ROUTE",
+          "claim": "Официальный сайт публикует корпоративные телефон +7 (48431) 5-20-20 и email info@mpkmk.com.",
+          "url": "https://mpkmk.com/",
+          "source": "Официальный сайт МПК-Сталь"
+        }
+      ]
+    }
+  ],
+  "funnel": {
+    "raw_distinct": 26,
+    "discovered": 26,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 25
+  },
+  "lane_metrics": [
+    {"lane":"regional_investment_new_production","raw":8,"duplicates_early_rejects":7,"qualified":1},
+    {"lane":"industrial_park_sez_technopark","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"new_line_workshop_factory","raw":4,"duplicates_early_rejects":4,"qualified":0},
+    {"lane":"export_capacity_growth","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"logistics_warehouse_commercial_property","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"company_pressroom_owner_ceo","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"ma_private_investment","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"branches_offices_service_centers","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"management_commercial_transformation","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"sme_growth_cases","raw":1,"duplicates_early_rejects":1,"qualified":0}
+  ],
+  "external_technical_limitation": {
+    "proven": false,
+    "evidence": ""
+  },
+  "notes": "26 genuinely distinct employer-level raw candidates were verified from fresh authoritative/regional/company sources across 10 low-overlap lanes. Supplemental discovery was continued after the initial lanes but remained below both 120 hard floor and 300 preferred continuation threshold. No external technical limitation is claimed; criteria unchanged; jobs not used as primary evidence; outreach 0."
 }
