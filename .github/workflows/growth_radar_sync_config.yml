@@ -34,6 +34,7 @@ jobs:
           text = cfg_path.read_text(encoding='utf-8')
 
           run_id = runtime['run_id']
+          completed_run_id = target.get('last_completed_run_id') or target.get('latest_completed_run') or run_id
           updated_at = runtime['updated_at']
           canonical = int(runtime['new_cycle']['current_canonical_count'])
           contactable = int(runtime['new_cycle']['current_contactable_count'])
@@ -42,17 +43,34 @@ jobs:
 
           replacements = [
               (r'(?m)^\*\*Версия:\*\* .*$', f'**Версия:** {updated_at}  '),
-              (r'(?m)^\*\*Последний физически завершённый RUN:\*\* .*$', f'**Последний физически завершённый RUN:** `{run_id}`  '),
+              (r'(?m)^\*\*Последний физически завершённый RUN:\*\* .*$', f'**Последний физически завершённый RUN:** `{completed_run_id}`  '),
               (r'(?m)^\*\*Физически подтверждённый canonical/contactable:\*\* .*$', f'**Физически подтверждённый canonical/contactable:** **{canonical} / {contactable}**  '),
               (r'(?m)^\*\*Осталось до 1000:\*\* .*$', f'**Осталось до 1000:** **{remaining_1000}**  '),
               (r'(?m)^\*\*Осталось до 5000:\*\* .*$', f'**Осталось до 5000:** **{remaining_5000}**  '),
               (r'(?m)^- physical canonical/contactable count: .*$', f'- physical canonical/contactable count: **{canonical} / {contactable}**;'),
-              (r'(?m)^- последний завершённый RUN: .*$', f'- последний завершённый RUN: `{run_id}`;'),
+              (r'(?m)^- последний физически обработанный RUN: .*$', f'- последний физически обработанный RUN: `{completed_run_id}`;'),
           ]
           for pattern, replacement in replacements:
               text, n = re.subn(pattern, replacement, text, count=1)
               if n != 1:
                   raise SystemExit(f'Expected exactly one match for {pattern!r}, got {n}')
+
+          # Keep only one authoritative latest-attempted section for the current run.
+          block_pattern = rf'\n\n## Latest attempted run {re.escape(run_id)}\nCanonical/contactable:.*?(?=\n\n## Latest attempted run|\Z)'
+          text = re.sub(block_pattern, '', text, flags=re.S)
+          funnel = runtime.get('funnel') or {}
+          raw = int(funnel.get('raw_distinct', funnel.get('discovered', 0)) or 0)
+          status = runtime.get('status') or 'UNKNOWN'
+          orphan_contacts = int(runtime.get('orphan_contacts', 0) or 0)
+          orphan_evidence = int(runtime.get('orphan_evidence', 0) or 0)
+          outreach = int(runtime.get('outreach_sent', 0) or 0)
+          integrity = runtime.get('integrity_status') or 'UNKNOWN'
+          text = text.rstrip() + (
+              f'\n\n\n## Latest attempted run {run_id}\n'
+              f'Canonical/contactable: {canonical}/{contactable}. Status: {status}. '
+              f'Authoritative raw distinct: {raw}. Integrity {integrity}. '
+              f'Orphan contacts/evidence: {orphan_contacts}/{orphan_evidence}. Outreach: {outreach}.\n'
+          )
 
           cfg_path.write_text(text, encoding='utf-8')
           PY
@@ -81,3 +99,4 @@ jobs:
 # sync repair N5K-20260903-606
 # sync repair N5K-20260903-607
 # sync repair N5K-20260903-608
+# sync recovery-aware N5K-20260904-618
