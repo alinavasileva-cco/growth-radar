@@ -1,9 +1,34 @@
 {
-  "run_id": "N5K-20260903-612",
-  "updated_at": "2026-09-03T18:28:48+03:00",
-  "status": "RECOVERY_REQUIRED",
+  "run_id": "N5K-20260903-613",
+  "updated_at": "2026-09-03T19:31:25+03:00",
+  "status": "READY_FOR_INTEGRATION",
   "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 48,
-  "note": "N5K-20260903-612 integrated verified rows but cannot be COMPLETED: raw_distinct=48<120. Supplemental discovery required."
+  "funnel": {
+    "raw_distinct": 20,
+    "discovered": 20,
+    "fast_gate_passed": 0,
+    "size_check_passed": 0,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
+    "qualified": 0,
+    "duplicates": 0,
+    "excluded": 20
+  },
+  "lane_metrics": [
+    {"lane":"regional_investment_new_production","raw":2,"saturation_rotations":0},
+    {"lane":"industrial_park_sez_technopark","raw":3,"saturation_rotations":0},
+    {"lane":"regional_private_expansion","raw":2,"saturation_rotations":0},
+    {"lane":"sme_growth_cases","raw":1,"saturation_rotations":0},
+    {"lane":"export_dealer_partner_expansion","raw":1,"saturation_rotations":0},
+    {"lane":"logistics_warehouse_commercial_property","raw":1,"saturation_rotations":0},
+    {"lane":"new_line_workshop_factory","raw":4,"saturation_rotations":0},
+    {"lane":"trade_association_business_growth","raw":1,"saturation_rotations":0},
+    {"lane":"company_pressroom_owner_ceo","raw":1,"saturation_rotations":0},
+    {"lane":"branches_stores_service_centers","raw":1,"saturation_rotations":0},
+    {"lane":"private_investment_ma","raw":2,"saturation_rotations":0},
+    {"lane":"commercial_contract_growth_signal","raw":1,"saturation_rotations":0}
+  ],
+  "notes": "Fresh supplemental discovery audited 20 genuinely distinct named Russian employer-level candidates across 12 low-overlap source families. None was advanced past FAST GATE because full current size/legal/canonical-dedup prerequisites were not all established in this cycle. Criteria unchanged; no outreach. No external technical limitation claimed."
 }
