@@ -21,69 +21,41 @@
   "latest_attempted_run_id": "N5K-20260903-609",
   "latest_attempted_run_status": "RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260903-609",
-  "hourly_baseline_count": 612,
-  "hourly_net_new": 1,
+  "hourly_baseline_count": 613,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260903-608",
-    "raw": 50,
-    "fast_gate": 5,
-    "size": 1,
-    "legal": 1,
-    "signal": 1,
-    "lpr": 1,
-    "contact": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 49,
-    "minimum_raw_floor_met": false,
+    "run_id": "N5K-20260903-609",
+    "raw": 121,
+    "fast_gate": 3,
+    "size": 3,
+    "legal": 3,
+    "signal": 3,
+    "lpr": 3,
+    "contact": 2,
+    "qualified": 0,
+    "duplicates": 2,
+    "excluded": 119,
+    "minimum_raw_floor_met": true,
     "preferred_config_raw_target_met": false,
     "normal_throughput_completion": false,
-    "raw_count_note": "Exactly 50 named employer-level candidates were counted after cross-query dedup across 10 fresh low-overlap discovery families. Aggregate-only identities were excluded from raw. One candidate passed the full strict funnel and was physically integrated. raw_distinct 50 is below both the hard floor 120 and continue-until-300 threshold; no external technical limitation is claimed; criteria unchanged; outreach 0. No lane reached 20 counted candidates, so the first-20 saturation rule was not triggered."
+    "raw_count_note": "Exactly 121 distinct named employer-level candidates were audited across 12 low-overlap lanes. Hard floor 120 passed; preferred continue-until-300 threshold was not reached after supplemental discovery. Both deep-check candidates were rejected by the physical canonical writer as existing duplicates. No external technical limitation claimed; criteria unchanged; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {
-      "lane": "regional_investment_new_production",
-      "raw": 8
-    },
-    {
-      "lane": "industrial_park_sez_technopark",
-      "raw": 4
-    },
-    {
-      "lane": "regional_private_expansion",
-      "raw": 5
-    },
-    {
-      "lane": "sme_growth_cases",
-      "raw": 4
-    },
-    {
-      "lane": "export_dealer_partner_expansion",
-      "raw": 3
-    },
-    {
-      "lane": "logistics_warehouse_commercial_property",
-      "raw": 3
-    },
-    {
-      "lane": "new_line_workshop_factory",
-      "raw": 10
-    },
-    {
-      "lane": "company_pressroom_owner_ceo",
-      "raw": 5
-    },
-    {
-      "lane": "private_investment_ma",
-      "raw": 4
-    },
-    {
-      "lane": "branches_stores_service_centers",
-      "raw": 4
-    }
+    {"lane": "regional_investment_new_production", "raw": 15},
+    {"lane": "industrial_park_sez_technopark", "raw": 11},
+    {"lane": "regional_private_expansion", "raw": 10},
+    {"lane": "sme_growth_cases", "raw": 10},
+    {"lane": "export_dealer_partner_expansion", "raw": 9},
+    {"lane": "logistics_warehouse_commercial_property", "raw": 9},
+    {"lane": "new_line_workshop_factory", "raw": 20},
+    {"lane": "trade_association_business_growth", "raw": 4},
+    {"lane": "company_pressroom_owner_ceo", "raw": 10},
+    {"lane": "commercial_contract_growth_signal", "raw": 3},
+    {"lane": "branches_stores_service_centers", "raw": 10},
+    {"lane": "private_investment_ma", "raw": 10}
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -94,8 +66,8 @@
     "management_change_commercial_transformation_fresh": 15,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "RUN N5K-20260903-608 was physically processed by the canonical writer; one new company (Молзавод Мясниковский) was integrated; qualified staged not counted is zero.",
+  "fresh_staging": "RUN N5K-20260903-609 was processed by the canonical writer; both deep-check candidates were physical duplicates; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-609 requires recovery: raw_distinct 121<300; hard_floor_passed=True; canonical/contactable 613/613; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-609 requires recovery: raw_distinct 121<300; hard_floor_passed=true; canonical/contactable 613/613; net_new=0; criteria unchanged; outreach 0."
 }
