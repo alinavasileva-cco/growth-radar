@@ -11,15 +11,15 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-03T08:32:29+03:00",
+  "updated_at": "2026-09-03T09:29:25+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260903-602",
-  "current_run_id": "N5K-20260903-602",
-  "last_run_id": "N5K-20260903-602",
+  "current_run_id": "N5K-20260903-603",
+  "last_run_id": "N5K-20260903-603",
   "latest_completed_run": "N5K-20260903-602",
-  "latest_attempted_run": "N5K-20260903-602",
-  "latest_attempted_run_id": "N5K-20260903-602",
-  "latest_attempted_run_status": "RECOVERY_REQUIRED",
+  "latest_attempted_run": "N5K-20260903-603",
+  "latest_attempted_run_id": "N5K-20260903-603",
+  "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260903-602",
   "hourly_baseline_count": 608,
   "hourly_net_new": 1,
@@ -44,16 +44,36 @@
     "raw_count_note": "120 genuinely distinct employer-level raw candidates were recorded across 10 discovery lanes. Hard floor 120 was met; continuation threshold 300 was not met. One company passed the strict funnel and was physically integrated. No external technical limitation claimed; criteria unchanged; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {"lane": "regional_investment_new_production"},
-    {"lane": "industrial_park_sez_technopark"},
-    {"lane": "regional_private_expansion"},
-    {"lane": "sme_growth_cases"},
-    {"lane": "export_capacity_growth"},
-    {"lane": "dealer_franchise_partner_expansion"},
-    {"lane": "logistics_warehouse_commercial_property"},
-    {"lane": "new_line_workshop_factory"},
-    {"lane": "company_pressroom_owner_ceo"},
-    {"lane": "ma_private_investment_branches"}
+    {
+      "lane": "regional_investment_new_production"
+    },
+    {
+      "lane": "industrial_park_sez_technopark"
+    },
+    {
+      "lane": "regional_private_expansion"
+    },
+    {
+      "lane": "sme_growth_cases"
+    },
+    {
+      "lane": "export_capacity_growth"
+    },
+    {
+      "lane": "dealer_franchise_partner_expansion"
+    },
+    {
+      "lane": "logistics_warehouse_commercial_property"
+    },
+    {
+      "lane": "new_line_workshop_factory"
+    },
+    {
+      "lane": "company_pressroom_owner_ceo"
+    },
+    {
+      "lane": "ma_private_investment_branches"
+    }
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -67,5 +87,5 @@
   "fresh_staging": "RUN N5K-20260903-602 was physically processed by the canonical writer; one qualified company was integrated; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-602 requires recovery: raw_distinct 120<300; hard_floor_passed=true; canonical/contactable 609/609; net_new 1; integrity PASS; orphan contacts/evidence 0/0; active WIP 0; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-603 requires recovery: raw_distinct 46<300; hard_floor_passed=False; canonical/contactable 609/609; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }

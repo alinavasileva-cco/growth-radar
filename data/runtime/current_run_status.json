@@ -1,37 +1,37 @@
 {
-  "run_id": "N5K-20260903-602",
+  "run_id": "N5K-20260903-603",
   "campaign_id": "new_5000",
-  "status": "RECOVERY_REQUIRED",
-  "updated_at": "2026-09-03T08:32:29+03:00",
+  "status": "UNDERDONE_RECOVERY_REQUIRED",
+  "updated_at": "2026-09-03T09:29:25+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
-    "baseline_count": 608,
+    "baseline_count": 609,
     "target_count": 5000,
     "current_canonical_count": 609,
     "current_contactable_count": 609,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4391
   },
   "funnel": {
-    "raw_distinct": 120,
-    "discovered": 120,
+    "raw_distinct": 46,
+    "discovered": 46,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 119
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 45
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 120,
+    "raw_distinct": 46,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
-    "hard_floor_passed": true,
+    "hard_floor_passed": false,
     "preferred_throughput_passed": false
   },
   "lane_metrics": [
@@ -66,9 +66,7 @@
       "lane": "ma_private_investment_branches"
     }
   ],
-  "qualified_companies": [
-    "Октава ДМ"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -76,5 +74,5 @@
   "physical_master_state": "609_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "physical_contactable_state": "609_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "RAW_BELOW_300_SUPPLEMENTAL_DISCOVERY_REQUIRED"
+  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }
