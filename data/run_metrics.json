@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-04T01:28:27+03:00",
+  "generated_at": "2026-09-04T02:31:07+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260904-618",
-  "current_run_id": "N5K-20260904-618",
-  "current_run_status": "COMPLETED",
+  "latest_completed_run_id": "N5K-20260903-609",
+  "current_run_id": "N5K-20260904-619",
+  "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_pool_verified": 613,
   "contactable_verified": 613,
   "qualified_staged_not_counted": 0,
@@ -13,15 +13,15 @@
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": null,
+  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 120,
+    "raw_distinct": 45,
     "external_technical_limitation_proven": false,
-    "passed": true
+    "passed": false
   },
-  "run_618": {
-    "raw_discovered": 120,
+  "run_619": {
+    "raw_discovered": 45,
     "fast_gate_passed": 0,
     "size_check_passed": 0,
     "legal_match_passed": 0,
@@ -31,89 +31,89 @@
     "qualified": 0,
     "physically_integrated": 0,
     "duplicates": 0,
-    "excluded": 120,
+    "excluded": 45,
     "lane_metrics": [
       {
         "lane": "regional_investment_new_production",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 6,
+        "duplicates_early_rejects": 6,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "industrial_park_sez_technopark",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 6,
+        "duplicates_early_rejects": 6,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "regional_private_expansion",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "sme_growth_cases",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "export_dealer_partner_expansion",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "logistics_warehouse_commercial_property",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "new_line_workshop_factory",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 6,
+        "duplicates_early_rejects": 6,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "trade_association_business_growth",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "company_pressroom_owner_ceo",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "commercial_contract_growth_signal",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "branches_stores_service_centers",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "private_investment_ma",
-        "raw": 10,
-        "duplicates_early_rejects": 10,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       }
