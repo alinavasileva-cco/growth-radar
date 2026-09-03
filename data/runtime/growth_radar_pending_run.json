@@ -1,35 +1,9 @@
 {
   "run_id": "N5K-20260903-611",
   "updated_at": "2026-09-03T17:31:30+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "status": "RECOVERY_REQUIRED",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "funnel": {
-    "raw_distinct": 11,
-    "discovered": 11,
-    "fast_gate_passed": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "duplicates": 0,
-    "excluded": 11
-  },
-  "lane_metrics": [
-    {"lane":"regional_investment_new_production","raw":1},
-    {"lane":"industrial_park_sez_technopark","raw":1},
-    {"lane":"regional_private_expansion","raw":1},
-    {"lane":"sme_growth_cases","raw":1},
-    {"lane":"export_dealer_partner_expansion","raw":1},
-    {"lane":"logistics_warehouse_commercial_property","raw":1},
-    {"lane":"new_line_workshop_factory","raw":1},
-    {"lane":"trade_association_business_growth","raw":1},
-    {"lane":"company_pressroom_owner_ceo","raw":1},
-    {"lane":"branches_stores_service_centers","raw":1},
-    {"lane":"private_investment_ma","raw":1}
-  ],
-  "notes": "Fresh supplemental discovery was performed across 11 low-overlap source families. Only 11 employer-level candidates were admitted to this authoritative attempt after conservative repository-level duplicate screening; no candidate had the complete SIZE+LEGAL+SIGNAL+LPR+CONTACT evidence bundle verified in this execution window, so none was qualified. Criteria unchanged. No external technical limitation claimed. Outreach 0.",
-  "external_technical_limitation": {"proven": false, "evidence": ""}
+  "raw_distinct": 11,
+  "note": "N5K-20260903-611 integrated verified rows but cannot be COMPLETED: raw_distinct=11<120. Supplemental discovery required."
 }

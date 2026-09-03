@@ -11,14 +11,14 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-03T16:30:43+03:00",
+  "updated_at": "2026-09-03T17:31:30+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260903-609",
-  "current_run_id": "N5K-20260903-610",
-  "last_run_id": "N5K-20260903-610",
+  "current_run_id": "N5K-20260903-611",
+  "last_run_id": "N5K-20260903-611",
   "latest_completed_run": "N5K-20260903-609",
-  "latest_attempted_run": "N5K-20260903-610",
-  "latest_attempted_run_id": "N5K-20260903-610",
+  "latest_attempted_run": "N5K-20260903-611",
+  "latest_attempted_run_id": "N5K-20260903-611",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260903-609",
   "hourly_baseline_count": 613,
@@ -105,5 +105,5 @@
   "fresh_staging": "RUN N5K-20260903-609 was processed by the canonical writer; both deep-check candidates were physical duplicates; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-610 requires recovery: raw_distinct 34<300; hard_floor_passed=False; canonical/contactable 613/613; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-611 requires recovery: raw_distinct 11<300; hard_floor_passed=False; canonical/contactable 613/613; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }

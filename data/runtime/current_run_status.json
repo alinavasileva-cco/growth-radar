@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260903-610",
+  "run_id": "N5K-20260903-611",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-03T16:30:43+03:00",
+  "updated_at": "2026-09-03T17:31:30+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
     "baseline_count": 613,
@@ -13,21 +13,21 @@
     "remaining": 4387
   },
   "funnel": {
-    "raw_distinct": 34,
-    "discovered": 34,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
-    "lpr_identified": 1,
-    "contact_route_found": 1,
+    "raw_distinct": 11,
+    "discovered": 11,
+    "fast_gate_passed": 0,
+    "size_check_passed": 0,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
     "qualified": 0,
-    "duplicates": 1,
-    "excluded": 33
+    "duplicates": 0,
+    "excluded": 11
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 34,
+    "raw_distinct": 11,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -37,15 +37,15 @@
   "lane_metrics": [
     {
       "lane": "regional_investment_new_production",
-      "raw": 5
+      "raw": 1
     },
     {
       "lane": "industrial_park_sez_technopark",
-      "raw": 3
+      "raw": 1
     },
     {
       "lane": "regional_private_expansion",
-      "raw": 2
+      "raw": 1
     },
     {
       "lane": "sme_growth_cases",
@@ -53,30 +53,30 @@
     },
     {
       "lane": "export_dealer_partner_expansion",
-      "raw": 2
+      "raw": 1
     },
     {
       "lane": "logistics_warehouse_commercial_property",
-      "raw": 3
+      "raw": 1
     },
     {
       "lane": "new_line_workshop_factory",
-      "raw": 9
+      "raw": 1
+    },
+    {
+      "lane": "trade_association_business_growth",
+      "raw": 1
     },
     {
       "lane": "company_pressroom_owner_ceo",
-      "raw": 2
+      "raw": 1
     },
     {
-      "lane": "franchise_branch_network_expansion",
-      "raw": 4
+      "lane": "branches_stores_service_centers",
+      "raw": 1
     },
     {
       "lane": "private_investment_ma",
-      "raw": 2
-    },
-    {
-      "lane": "commercial_contract_growth_signal",
       "raw": 1
     }
   ],
