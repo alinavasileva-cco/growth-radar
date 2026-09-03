@@ -1,9 +1,101 @@
 {
-  "run_id": "N5K-20260903-596",
-  "updated_at": "2026-09-03T02:27:26+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 56,
-  "note": "N5K-20260903-596 integrated verified rows but cannot be COMPLETED: raw_distinct=56<120. Supplemental discovery required."
+  "run_id": "N5K-20260903-597",
+  "updated_at": "2026-09-03T03:27:19+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-RU-5009123398",
+      "Brand": "Сайбер Электро",
+      "Legal Name": "ООО \"СТАБТЕХ\"",
+      "INN": "5009123398",
+      "OGRN/OGRNIP": "1205000038957",
+      "Region": "Московская область",
+      "City": "Голицыно",
+      "Segment": "производство источников бесперебойного питания / силовая электроника",
+      "Website": "https://сайберэлектро.рф/",
+      "Revenue/Scale": "Выручка 2025: 283 064 000 руб.; действующая российская частная компания",
+      "Signal Level": "S1",
+      "Signal Summary": "01.09.2026 запущена вторая производственная площадка в Голицыно; объект вдвое больше первой линии, расширяет мощности и позволяет масштабировать линейку российских ИБП.",
+      "Signal Date": "2026-09-01",
+      "Signal Source": "https://сайберэлектро.рф/news/dlya-sayber-elektro-otkryta-novaya-proizvodstvennaya-ploshchadka/",
+      "Owner": "",
+      "CEO": "Невзоров Вадим Борисович",
+      "LPR": "Невзоров Вадим Борисович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (495) 181-73-62",
+      "Primary Email": "info@stab-tech.ru",
+      "HH Contact": "",
+      "Contact Form": "https://stab-tech.ru/contacts/",
+      "Contact Type": "официальный корпоративный маршрут",
+      "Contact Source": "https://stab-tech.ru/contacts/",
+      "Consulting Hypothesis": "Масштабирование второй производственной площадки и рост выпуска создают задачи по коммерческой модели роста, управленческой системе, KPI и масштабированию продаж без потери операционной управляемости.",
+      "contacts": [
+        {
+          "value": "info@stab-tech.ru",
+          "channel": "Email",
+          "type": "официальный корпоративный",
+          "source": "СтабТех — официальный сайт",
+          "url": "https://stab-tech.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Опубликованный официальный маршрут компании"
+        },
+        {
+          "value": "+7 (495) 181-73-62",
+          "channel": "Phone",
+          "type": "официальный корпоративный",
+          "source": "СтабТех — официальный сайт",
+          "url": "https://stab-tech.ru/contacts/",
+          "is_lpr": false,
+          "notes": "Опубликованный официальный маршрут компании"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE",
+          "claim": "ООО СТАБТЕХ действует; ИНН 5009123398, ОГРН 1205000038957; выручка за 2025 год 283 064 000 руб.; генеральный директор Невзоров Вадим Борисович.",
+          "url": "https://companies.rbc.ru/id/1205000038957-obschestvo-s-ogranichennoj-otvetstvennostyu-stabteh/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "S1_GROWTH_SIGNAL",
+          "claim": "01.09.2026 для бренда Сайбер Электро открыта вторая производственная площадка в Голицыно, вдвое больше первой, для увеличения выпуска и масштабирования линейки ИБП.",
+          "url": "https://сайберэлектро.рф/news/dlya-sayber-elektro-otkryta-novaya-proizvodstvennaya-ploshchadka/",
+          "source": "Сайбер Электро — официальный сайт"
+        },
+        {
+          "type": "CONTACT_ROUTE",
+          "claim": "Официально опубликованы телефон +7 (495) 181-73-62 и email info@stab-tech.ru.",
+          "url": "https://stab-tech.ru/contacts/",
+          "source": "СтабТех — официальный сайт"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "raw_distinct": 24,
+    "discovered": 24,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 23
+  },
+  "lane_metrics": [
+    {"lane":"new_line_workshop_factory","raw":7,"duplicates_early_rejects":6,"qualified":1},
+    {"lane":"regional_investment_new_production","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"industrial_park_sez_technopark","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"dealer_franchise_partner_expansion","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"logistics_warehouse_commercial_property","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"branches_offices_service_centers","raw":4,"duplicates_early_rejects":4,"qualified":0},
+    {"lane":"export_capacity_growth","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"company_pressroom_owner_ceo","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"ma_private_investment","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"commercial_contract_procurement_probe","raw":0,"duplicates_early_rejects":0,"qualified":0}
+  ],
+  "notes": "Fresh low-overlap discovery rotated across 10 source families. 24 genuinely distinct employer-level candidates were captured from current source results; no catalog padding. One candidate completed the strict deep funnel. Raw remains below 120 hard floor and below 300 continuation threshold; no external technical limitation is claimed, so this run must remain UNDERDONE_RECOVERY_REQUIRED after canonical integration. Criteria unchanged; outreach 0."
 }
