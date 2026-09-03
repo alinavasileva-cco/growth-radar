@@ -1,51 +1,9 @@
 {
   "run_id": "N5K-20260904-618",
   "updated_at": "2026-09-04T00:31:39+03:00",
-  "status": "READY_FOR_INTEGRATION",
-  "campaign_id": "new_5000",
-  "funnel": {
-    "raw_distinct": 60,
-    "discovered": 60,
-    "fast_gate_passed": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "duplicates": 0,
-    "excluded": 60
-  },
-  "lane_metrics": [
-    {"lane":"regional_investment_new_production","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"industrial_park_sez_technopark","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"regional_private_expansion","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"sme_growth_cases","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"export_dealer_partner_expansion","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"logistics_warehouse_commercial_property","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"new_line_workshop_factory","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"trade_association_business_growth","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"company_pressroom_owner_ceo","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"commercial_contract_growth_signal","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"branches_stores_service_centers","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"private_investment_ma","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0}
-  ],
-  "raw_candidates": [
-    "ЭкоПромСтрой-Алга","Туканский металлургический комплекс","Добрый картон","БР-Технология","Предприятие Элтекс",
-    "Аксис","Семаргл","Луч","Котонин","Каспий гласс",
-    "Полиметалл","Август-Агро","ДоГа","Рефрейм","Де-Фриз Резорт",
-    "НФЭС","Прерогатива","Актив","Строгановские термы","Старый город",
-    "Вкусно — и точка","Дринкит","Familia","Befree","Fix Price",
-    "FESCO","Терминал А","Айлэнд Дженерал Сервисес — Логистика","ИНТРА САХАЛИН","Газмагистраль",
-    "ТЕРКОН","HAVAL","Ларта Гласс Рязань","Зингер Тех","БРОМО",
-    "Центр упаковки","Биомедицинские Инновационные Технологии","Полиэфирная нить","Исетский кузнечно-механический завод","ТЕХНОНИКОЛЬ",
-    "B2B-РТС","Пивоварни Бочкарев","Московский мельничный комбинат № 3","Кофемания","Дамате",
-    "ИЭК Опора","СК Кварц","Русская медная компания","Профрегион","Кая-Трейд",
-    "Около","Пятерочка","Rostic’s","Монетка","Хинкальцы",
-    "AVA Group","Люксмед","ПарсЕк","НьюЛинк","Модерн Гласс"
-  ],
+  "status": "RECOVERY_REQUIRED",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "external_technical_limitation": {"proven": false, "evidence": ""},
-  "notes": "60 distinct named employer-level candidates identified across 12 low-overlap lanes from fresh public growth/change sources. None was promoted beyond FAST GATE without complete current private-company, scale and canonical-key confirmation. raw_distinct remains below 120 hard floor and below 300 continuation threshold; criteria unchanged; outreach 0."
+  "raw_distinct": 60,
+  "note": "N5K-20260904-618 integrated verified rows but cannot be COMPLETED: raw_distinct=60<120. Supplemental discovery required."
 }
