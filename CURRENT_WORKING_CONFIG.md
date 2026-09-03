@@ -1,6 +1,6 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-09-03T15:29:22+03:00  
+**Версия:** 2026-09-03T23:32:19+03:00  
 **Последний физически завершённый RUN:** `N5K-20260903-609`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **613 / 613**  
@@ -93,4 +93,4 @@ Canonical/contactable: 613/613. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritati
 
 
 ## Latest attempted run N5K-20260903-617
-Canonical/contactable: 613/613. Status: COMPLETED. Authoritative raw distinct: 120. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Canonical/contactable: 613/613. Status: RECOVERY_REQUIRED. Authoritative raw distinct: 120. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
