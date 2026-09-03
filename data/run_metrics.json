@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-03T10:30:46+03:00",
+  "generated_at": "2026-09-03T11:28:05+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260903-602",
-  "current_run_id": "N5K-20260903-604",
+  "current_run_id": "N5K-20260903-605",
   "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
-  "canonical_pool_verified": 610,
-  "contactable_verified": 610,
+  "canonical_pool_verified": 611,
+  "contactable_verified": 611,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4390,
+  "remaining_to_target": 4389,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
@@ -16,12 +16,12 @@
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 64,
+    "raw_distinct": 72,
     "external_technical_limitation_proven": false,
     "passed": false
   },
-  "run_604": {
-    "raw_discovered": 64,
+  "run_605": {
+    "raw_discovered": 72,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
@@ -31,7 +31,7 @@
     "qualified": 1,
     "physically_integrated": 1,
     "duplicates": 0,
-    "excluded": 63,
+    "excluded": 71,
     "lane_metrics": [
       {
         "lane": "regional_investment_new_production"

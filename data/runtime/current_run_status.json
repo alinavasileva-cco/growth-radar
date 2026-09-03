@@ -1,20 +1,20 @@
 {
-  "run_id": "N5K-20260903-604",
+  "run_id": "N5K-20260903-605",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-03T10:30:46+03:00",
+  "updated_at": "2026-09-03T11:28:05+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
-    "baseline_count": 609,
+    "baseline_count": 610,
     "target_count": 5000,
-    "current_canonical_count": 610,
-    "current_contactable_count": 610,
+    "current_canonical_count": 611,
+    "current_contactable_count": 611,
     "progress_added": 1,
-    "remaining": 4390
+    "remaining": 4389
   },
   "funnel": {
-    "raw_distinct": 64,
-    "discovered": 64,
+    "raw_distinct": 72,
+    "discovered": 72,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
@@ -23,11 +23,11 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 63
+    "excluded": 71
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 64,
+    "raw_distinct": 72,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -67,14 +67,14 @@
     }
   ],
   "qualified_companies": [
-    "Зерновые Линии"
+    "ТД Гефест"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "610_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "610_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "611_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "611_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }
