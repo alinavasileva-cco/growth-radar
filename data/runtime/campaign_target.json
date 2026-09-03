@@ -21,59 +21,39 @@
   "latest_attempted_run_id": "N5K-20260903-603",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260903-602",
-  "hourly_baseline_count": 608,
-  "hourly_net_new": 1,
+  "hourly_baseline_count": 609,
+  "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260903-602",
-    "raw": 120,
+    "run_id": "N5K-20260903-603",
+    "raw": 46,
     "fast_gate": 1,
     "size": 1,
     "legal": 1,
     "signal": 1,
     "lpr": 1,
     "contact": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 119,
-    "minimum_raw_floor_met": true,
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 45,
+    "minimum_raw_floor_met": false,
     "preferred_config_raw_target_met": false,
     "normal_throughput_completion": false,
-    "raw_count_note": "120 genuinely distinct employer-level raw candidates were recorded across 10 discovery lanes. Hard floor 120 was met; continuation threshold 300 was not met. One company passed the strict funnel and was physically integrated. No external technical limitation claimed; criteria unchanged; outreach 0."
+    "raw_count_note": "46 genuinely distinct employer-level raw candidates were recorded across 10 discovery lanes after initial and supplemental fresh low-overlap discovery. Hard floor 120 and continuation threshold 300 were not met. The one deep-funnel candidate was rejected by the physical canonical guard as a duplicate. No external technical limitation claimed; criteria unchanged; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {
-      "lane": "regional_investment_new_production"
-    },
-    {
-      "lane": "industrial_park_sez_technopark"
-    },
-    {
-      "lane": "regional_private_expansion"
-    },
-    {
-      "lane": "sme_growth_cases"
-    },
-    {
-      "lane": "export_capacity_growth"
-    },
-    {
-      "lane": "dealer_franchise_partner_expansion"
-    },
-    {
-      "lane": "logistics_warehouse_commercial_property"
-    },
-    {
-      "lane": "new_line_workshop_factory"
-    },
-    {
-      "lane": "company_pressroom_owner_ceo"
-    },
-    {
-      "lane": "ma_private_investment_branches"
-    }
+    {"lane": "regional_investment_new_production"},
+    {"lane": "industrial_park_sez_technopark"},
+    {"lane": "regional_private_expansion"},
+    {"lane": "sme_growth_cases"},
+    {"lane": "export_capacity_growth"},
+    {"lane": "dealer_franchise_partner_expansion"},
+    {"lane": "logistics_warehouse_commercial_property"},
+    {"lane": "new_line_workshop_factory"},
+    {"lane": "company_pressroom_owner_ceo"},
+    {"lane": "ma_private_investment_branches"}
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -84,8 +64,8 @@
     "management_change_commercial_transformation_fresh": 15,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "RUN N5K-20260903-602 was physically processed by the canonical writer; one qualified company was integrated; qualified staged not counted is zero.",
-  "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
+  "fresh_staging": "RUN N5K-20260903-603 was physically processed by the canonical writer; no new company was integrated; qualified staged not counted is zero.",
+  "repair_required": "RAW_BELOW_120_AND_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-603 requires recovery: raw_distinct 46<300; hard_floor_passed=False; canonical/contactable 609/609; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-603 requires recovery: raw_distinct 46<120 and <300; hard_floor_passed=false; canonical/contactable 609/609; net_new 0; integrity PASS; orphan contacts/evidence 0/0; active WIP 0; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
