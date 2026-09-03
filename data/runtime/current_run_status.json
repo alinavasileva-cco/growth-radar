@@ -1,33 +1,33 @@
 {
-  "run_id": "N5K-20260903-598",
+  "run_id": "N5K-20260903-599",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-03T04:27:49+03:00",
+  "updated_at": "2026-09-03T05:27:03+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
-    "baseline_count": 605,
+    "baseline_count": 606,
     "target_count": 5000,
     "current_canonical_count": 606,
     "current_contactable_count": 606,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4394
   },
   "funnel": {
-    "raw_distinct": 26,
-    "discovered": 26,
-    "fast_gate_passed": 1,
-    "size_check_passed": 1,
-    "legal_match_passed": 1,
-    "signal_confirmed": 1,
+    "raw_distinct": 30,
+    "discovered": 30,
+    "fast_gate_passed": 8,
+    "size_check_passed": 4,
+    "legal_match_passed": 3,
+    "signal_confirmed": 3,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 1,
-    "duplicates": 0,
-    "excluded": 25
+    "qualified": 0,
+    "duplicates": 1,
+    "excluded": 29
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 26,
+    "raw_distinct": 30,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -35,18 +35,68 @@
     "preferred_throughput_passed": false
   },
   "lane_metrics": [
-    {"lane":"regional_investment_new_production","raw":8,"duplicates_early_rejects":7,"qualified":1},
-    {"lane":"industrial_park_sez_technopark","raw":3,"duplicates_early_rejects":3,"qualified":0},
-    {"lane":"new_line_workshop_factory","raw":4,"duplicates_early_rejects":4,"qualified":0},
-    {"lane":"export_capacity_growth","raw":2,"duplicates_early_rejects":2,"qualified":0},
-    {"lane":"logistics_warehouse_commercial_property","raw":3,"duplicates_early_rejects":3,"qualified":0},
-    {"lane":"company_pressroom_owner_ceo","raw":2,"duplicates_early_rejects":2,"qualified":0},
-    {"lane":"ma_private_investment","raw":1,"duplicates_early_rejects":1,"qualified":0},
-    {"lane":"branches_offices_service_centers","raw":1,"duplicates_early_rejects":1,"qualified":0},
-    {"lane":"management_commercial_transformation","raw":1,"duplicates_early_rejects":1,"qualified":0},
-    {"lane":"sme_growth_cases","raw":1,"duplicates_early_rejects":1,"qualified":0}
+    {
+      "lane": "regional_investment_new_production",
+      "raw": 3,
+      "duplicates_early_rejects": 2,
+      "qualified": 1
+    },
+    {
+      "lane": "industrial_park_sez_technopark",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "regional_private_expansion",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "sme_growth_cases",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "export_capacity_growth",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "dealer_franchise_partner_expansion",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "logistics_warehouse_commercial_property",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "new_line_workshop_factory",
+      "raw": 3,
+      "duplicates_early_rejects": 2,
+      "qualified": 0
+    },
+    {
+      "lane": "company_pressroom_owner_ceo",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    },
+    {
+      "lane": "ma_private_investment_branches",
+      "raw": 3,
+      "duplicates_early_rejects": 3,
+      "qualified": 0
+    }
   ],
-  "qualified_companies": ["МПК-Сталь"],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,

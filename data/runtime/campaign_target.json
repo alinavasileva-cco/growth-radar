@@ -11,14 +11,14 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-03T04:27:49+03:00",
+  "updated_at": "2026-09-03T05:27:03+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260902-588R1",
-  "current_run_id": "N5K-20260903-598",
-  "last_run_id": "N5K-20260903-598",
+  "current_run_id": "N5K-20260903-599",
+  "last_run_id": "N5K-20260903-599",
   "latest_completed_run": "N5K-20260902-588R1",
-  "latest_attempted_run": "N5K-20260903-598",
-  "latest_attempted_run_id": "N5K-20260903-598",
+  "latest_attempted_run": "N5K-20260903-599",
+  "latest_attempted_run_id": "N5K-20260903-599",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260903-598",
   "hourly_baseline_count": 605,
@@ -44,16 +44,67 @@
     "raw_count_note": "26 genuinely distinct employer-level raw across 10 rotated fresh low-overlap lanes. МПК-Сталь passed the complete funnel and was physically integrated. Raw remains below the 120 hard floor and 300 continuation threshold; no external technical limitation claimed; criteria unchanged; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {"lane":"regional_investment_new_production","raw":8,"net_qualified":1,"duplicates_early_rejects":7,"physical_duplicates":0},
-    {"lane":"industrial_park_sez_technopark","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"new_line_workshop_factory","raw":4,"net_qualified":0,"duplicates_early_rejects":4},
-    {"lane":"export_capacity_growth","raw":2,"net_qualified":0,"duplicates_early_rejects":2},
-    {"lane":"logistics_warehouse_commercial_property","raw":3,"net_qualified":0,"duplicates_early_rejects":3},
-    {"lane":"company_pressroom_owner_ceo","raw":2,"net_qualified":0,"duplicates_early_rejects":2},
-    {"lane":"ma_private_investment","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
-    {"lane":"branches_offices_service_centers","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
-    {"lane":"management_commercial_transformation","raw":1,"net_qualified":0,"duplicates_early_rejects":1},
-    {"lane":"sme_growth_cases","raw":1,"net_qualified":0,"duplicates_early_rejects":1}
+    {
+      "lane": "regional_investment_new_production",
+      "raw": 8,
+      "net_qualified": 1,
+      "duplicates_early_rejects": 7,
+      "physical_duplicates": 0
+    },
+    {
+      "lane": "industrial_park_sez_technopark",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "new_line_workshop_factory",
+      "raw": 4,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 4
+    },
+    {
+      "lane": "export_capacity_growth",
+      "raw": 2,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 2
+    },
+    {
+      "lane": "logistics_warehouse_commercial_property",
+      "raw": 3,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 3
+    },
+    {
+      "lane": "company_pressroom_owner_ceo",
+      "raw": 2,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 2
+    },
+    {
+      "lane": "ma_private_investment",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    },
+    {
+      "lane": "branches_offices_service_centers",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    },
+    {
+      "lane": "management_commercial_transformation",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    },
+    {
+      "lane": "sme_growth_cases",
+      "raw": 1,
+      "net_qualified": 0,
+      "duplicates_early_rejects": 1
+    }
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -67,5 +118,5 @@
   "fresh_staging": "RUN N5K-20260903-598 was physically processed by the canonical writer; МПК-Сталь was integrated; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-598 requires recovery: raw_distinct 26<120 hard floor and <300 continuation threshold; canonical/contactable 606/606; net_new 1; integrity PASS; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-599 requires recovery: raw_distinct 30<300; hard_floor_passed=False; canonical/contactable 606/606; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
