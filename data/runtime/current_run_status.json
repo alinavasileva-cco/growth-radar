@@ -1,33 +1,33 @@
 {
-  "run_id": "N5K-20260903-603",
+  "run_id": "N5K-20260903-604",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-03T09:29:25+03:00",
+  "updated_at": "2026-09-03T10:30:46+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
     "baseline_count": 609,
     "target_count": 5000,
-    "current_canonical_count": 609,
-    "current_contactable_count": 609,
-    "progress_added": 0,
-    "remaining": 4391
+    "current_canonical_count": 610,
+    "current_contactable_count": 610,
+    "progress_added": 1,
+    "remaining": 4390
   },
   "funnel": {
-    "raw_distinct": 46,
-    "discovered": 46,
+    "raw_distinct": 64,
+    "discovered": 64,
     "fast_gate_passed": 1,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "duplicates": 1,
-    "excluded": 45
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 63
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 46,
+    "raw_distinct": 64,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -66,13 +66,15 @@
       "lane": "ma_private_investment_branches"
     }
   ],
-  "qualified_companies": [],
+  "qualified_companies": [
+    "Зерновые Линии"
+  ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "609_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "609_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "610_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "610_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }
