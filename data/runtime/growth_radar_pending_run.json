@@ -1,8 +1,103 @@
 {
-  "run_id": "N5K-20260903-607",
-  "updated_at": "2026-09-03T13:32:24+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260903-607 integrated physically; canonical/contactable 612/612; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260903-608",
+  "updated_at": "2026-09-03T14:27:08+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "campaign_id": "new_5000",
+  "funnel": {
+    "raw_distinct": 50,
+    "discovered": 50,
+    "fast_gate_passed": 5,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 49
+  },
+  "lane_metrics": [
+    {"lane": "regional_investment_new_production", "raw": 8},
+    {"lane": "industrial_park_sez_technopark", "raw": 4},
+    {"lane": "regional_private_expansion", "raw": 5},
+    {"lane": "sme_growth_cases", "raw": 4},
+    {"lane": "export_dealer_partner_expansion", "raw": 3},
+    {"lane": "logistics_warehouse_commercial_property", "raw": 3},
+    {"lane": "new_line_workshop_factory", "raw": 10},
+    {"lane": "company_pressroom_owner_ceo", "raw": 5},
+    {"lane": "private_investment_ma", "raw": 4},
+    {"lane": "branches_stores_service_centers", "raw": 4}
+  ],
+  "saturation_rotations": 0,
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-608-001",
+      "Brand": "Молзавод Мясниковский",
+      "Legal Name": "ОАО «Молочный завод Мясниковский»",
+      "INN": "6122002775",
+      "OGRN/OGRNIP": "1026101310465",
+      "Region": "Ростовская область",
+      "City": "с. Чалтырь",
+      "Segment": "Производство молока и молочной продукции",
+      "Website": "https://polarbear.ru/",
+      "Revenue/Scale": "Выручка 2025: 1 516 967 000 ₽; ССЧ: 291 сотрудник",
+      "Signal Level": "S1",
+      "Signal Summary": "Инвестиции 1,2 млрд ₽ в расширение производственных мощностей; планируется рост переработки с 200 до 350 тонн молока в сутки.",
+      "Signal Date": "2026-06-19",
+      "Signal Source": "https://www.rbc.ru/rostov/freenews/685530309a79473df3f7bc7f",
+      "Owner": "ООО «Белый Медведь»",
+      "CEO": "Обаян Сурен Арсенович",
+      "LPR": "Обаян Сурен Арсенович",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 (863) 232-98-31",
+      "Primary Email": "polarbear@polarbear.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "Опубликованный корпоративный маршрут через владельца/холдинг",
+      "Contact Source": "DairyNews — карточка ГК «Белый медведь», связывающая холдинг с Мясниковским молочным заводом",
+      "Consulting Hypothesis": "Диагностика коммерческой модели и операционного масштабирования при почти двукратном расширении мощности; синхронизация продаж, каналов сбыта, unit economics и P&L с новой производственной мощностью.",
+      "contacts": [
+        {
+          "value": "+7 (863) 232-98-31",
+          "channel": "phone",
+          "type": "Корпоративный телефон владельца/холдинга",
+          "source": "DairyNews",
+          "url": "https://dairy-news.ru/dairytrends/statistics/holding/belyy-medved-gk/",
+          "is_lpr": false,
+          "notes": "Практический опубликованный маршрут к владельцу предприятия"
+        },
+        {
+          "value": "polarbear@polarbear.ru",
+          "channel": "email",
+          "type": "Корпоративный email владельца/холдинга",
+          "source": "DairyNews",
+          "url": "https://dairy-news.ru/dairytrends/statistics/holding/belyy-medved-gk/",
+          "is_lpr": false,
+          "notes": "Практический опубликованный маршрут к владельцу предприятия"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "legal_and_scale",
+          "claim": "ОАО «Молочный завод Мясниковский» действует; ИНН 6122002775, ОГРН 1026101310465; генеральный директор Обаян Сурен Арсенович; выручка 2025 — 1 516 967 000 ₽; ССЧ — 291.",
+          "url": "https://companies.rbc.ru/id/1026101310465-oao-molochnyij-zavod-myasnikovskij/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "growth_signal",
+          "claim": "В 2026 году предприятие заявило инвестиции 1,2 млрд ₽ в расширение производственных мощностей; мощность переработки должна вырасти с 200 до 350 тонн молока в сутки.",
+          "url": "https://milklife.ru/company_news/16507.html",
+          "source": "MilkLife / Интерфакс"
+        },
+        {
+          "type": "ownership_and_contact",
+          "claim": "ОАО «Молочный завод Мясниковский» входит в ГК «Белый медведь»; опубликованы корпоративные телефон, email и сайт холдинга.",
+          "url": "https://dairy-news.ru/dairytrends/statistics/holding/belyy-medved-gk/",
+          "source": "DairyNews"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "notes": "Fresh discovery used 10 independent low-overlap source families. Exactly 50 named employer-level candidates were counted after cross-query dedup; aggregate-only identities were not counted. No lane reached 20 counted candidates, so the first-20 >70% saturation rule was not triggered. Criteria unchanged. raw_distinct remains below the hard floor 120 and below continue-until-300; no external technical limitation is claimed. Physical writer must therefore leave the run UNDERDONE_RECOVERY_REQUIRED / RECOVERY_REQUIRED. Outreach 0."
 }
