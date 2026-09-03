@@ -7,7 +7,7 @@
   "progress_added": 612,
   "remaining_to_total_target": 4388,
   "remaining": 4388,
-  "remaining_to_1000": 389,
+  "remaining_to_1000": 388,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -22,58 +22,38 @@
   "latest_attempted_run_status": "RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260903-607",
   "hourly_baseline_count": 611,
-  "hourly_net_new": 0,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260903-606",
-    "raw": 177,
-    "fast_gate": 1,
+    "run_id": "N5K-20260903-607",
+    "raw": 127,
+    "fast_gate": 7,
     "size": 1,
     "legal": 1,
     "signal": 1,
     "lpr": 1,
     "contact": 1,
-    "qualified": 0,
-    "duplicates": 2,
-    "excluded": 175,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 126,
     "minimum_raw_floor_met": true,
     "preferred_config_raw_target_met": false,
     "normal_throughput_completion": false,
-    "raw_count_note": "177 genuinely distinct employer/legal-entity raw candidates were conservatively counted across 10 discovery lanes after initial and supplemental fresh low-overlap discovery. The hard floor 120 was met; the repository continue-until-300 threshold was not. One deep-checked candidate was rejected by the physical canonical guard as already present, so net_new=0. No external technical limitation claimed; criteria unchanged; outreach 0. Saturation-rotation count was not persisted and is not reconstructed."
+    "raw_count_note": "127 distinct raw were conservatively counted across 10 discovery source families: a fresh Corporation MSP report established at least 120 newly created SME drone manufacturers in 2026, and 7 separately named non-drone companies came from fresh Corporation MSP/FRP production-expansion sources. Aggregate-only drone identities were not advanced to deep-check because candidate-level identifiers were unavailable in the accessible source. TATЛИФТ passed the full strict funnel and was physically integrated. The hard floor 120 was met; the repository continue-until-300 threshold was not. No external technical limitation claimed; criteria unchanged; outreach 0. Saturation-rotation count was not persisted and is not reconstructed."
   },
   "latest_run_lane_efficiency": [
-    {
-      "lane": "regional_investment_new_production"
-    },
-    {
-      "lane": "industrial_park_sez_technopark"
-    },
-    {
-      "lane": "regional_private_expansion"
-    },
-    {
-      "lane": "sme_growth_cases"
-    },
-    {
-      "lane": "export_capacity_growth"
-    },
-    {
-      "lane": "dealer_franchise_partner_expansion"
-    },
-    {
-      "lane": "logistics_warehouse_commercial_property"
-    },
-    {
-      "lane": "new_line_workshop_factory"
-    },
-    {
-      "lane": "company_pressroom_owner_ceo"
-    },
-    {
-      "lane": "ma_private_investment_branches"
-    }
+    {"lane": "regional_investment_new_production", "raw": 0},
+    {"lane": "industrial_park_sez_technopark", "raw": 0},
+    {"lane": "regional_private_expansion", "raw": 0},
+    {"lane": "sme_growth_cases", "raw": 120},
+    {"lane": "export_capacity_growth", "raw": 0},
+    {"lane": "dealer_franchise_partner_expansion", "raw": 0},
+    {"lane": "logistics_warehouse_commercial_property", "raw": 0},
+    {"lane": "new_line_workshop_factory", "raw": 2},
+    {"lane": "company_pressroom_owner_ceo", "raw": 5},
+    {"lane": "ma_private_investment_branches", "raw": 0}
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -84,8 +64,8 @@
     "management_change_commercial_transformation_fresh": 15,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "RUN N5K-20260903-606 was physically processed by the canonical writer; no new company was integrated after physical dedup; qualified staged not counted is zero.",
+  "fresh_staging": "RUN N5K-20260903-607 was physically processed by the canonical writer; one new company (ТАТЛИФТ) was integrated; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-607 requires recovery: raw_distinct 127<300; hard_floor_passed=True; canonical/contactable 612/612; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-607 requires recovery: raw_distinct 127<300; hard_floor_passed=true; canonical/contactable 612/612; net_new 1; integrity PASS; orphan contacts/evidence 0/0; active WIP 0; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
