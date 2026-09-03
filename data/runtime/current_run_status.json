@@ -1,21 +1,21 @@
 {
-  "run_id": "N5K-20260903-600",
+  "run_id": "N5K-20260903-601",
   "campaign_id": "new_5000",
-  "status": "RECOVERY_REQUIRED",
-  "updated_at": "2026-09-03T06:31:57+03:00",
+  "status": "UNDERDONE_RECOVERY_REQUIRED",
+  "updated_at": "2026-09-03T07:29:24+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
-    "baseline_count": 606,
+    "baseline_count": 607,
     "target_count": 5000,
-    "current_canonical_count": 607,
-    "current_contactable_count": 607,
+    "current_canonical_count": 608,
+    "current_contactable_count": 608,
     "progress_added": 1,
-    "remaining": 4393
+    "remaining": 4392
   },
   "funnel": {
-    "raw_distinct": 147,
-    "discovered": 147,
-    "fast_gate_passed": 1,
+    "raw_distinct": 47,
+    "discovered": 47,
+    "fast_gate_passed": 2,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -23,88 +23,88 @@
     "contact_route_found": 1,
     "qualified": 1,
     "duplicates": 0,
-    "excluded": 146
+    "excluded": 46
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 147,
+    "raw_distinct": 47,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
-    "hard_floor_passed": true,
+    "hard_floor_passed": false,
     "preferred_throughput_passed": false
   },
   "lane_metrics": [
     {
       "lane": "regional_investment_new_production",
-      "raw": 147,
-      "duplicates_early_rejects": 146,
+      "raw": 7,
+      "duplicates_early_rejects": 6,
       "qualified": 1
     },
     {
       "lane": "industrial_park_sez_technopark",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 6,
+      "duplicates_early_rejects": 6,
       "qualified": 0
     },
     {
       "lane": "regional_private_expansion",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 5,
+      "duplicates_early_rejects": 5,
       "qualified": 0
     },
     {
       "lane": "sme_growth_cases",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 4,
+      "duplicates_early_rejects": 4,
       "qualified": 0
     },
     {
       "lane": "export_capacity_growth",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 3,
+      "duplicates_early_rejects": 3,
       "qualified": 0
     },
     {
       "lane": "dealer_franchise_partner_expansion",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 3,
+      "duplicates_early_rejects": 3,
       "qualified": 0
     },
     {
       "lane": "logistics_warehouse_commercial_property",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 5,
+      "duplicates_early_rejects": 5,
       "qualified": 0
     },
     {
       "lane": "new_line_workshop_factory",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 6,
+      "duplicates_early_rejects": 6,
       "qualified": 0
     },
     {
       "lane": "company_pressroom_owner_ceo",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 4,
+      "duplicates_early_rejects": 4,
       "qualified": 0
     },
     {
       "lane": "ma_private_investment_branches",
-      "raw": 0,
-      "duplicates_early_rejects": 0,
+      "raw": 4,
+      "duplicates_early_rejects": 4,
       "qualified": 0
     }
   ],
   "qualified_companies": [
-    "ДАТАРК"
+    "Нейс-Инжиниринг / Армадон"
   ],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "607_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "607_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "608_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_contactable_state": "608_DATA_ROWS_PLUS_HEADER_CONFIRMED",
   "outreach_sent": 0,
-  "blocker": "RAW_BELOW_300_SUPPLEMENTAL_DISCOVERY_REQUIRED"
+  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
 }
