@@ -1,9 +1,110 @@
 {
-  "run_id": "N5K-20260903-601",
-  "updated_at": "2026-09-03T07:29:24+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 47,
-  "note": "N5K-20260903-601 integrated verified rows but cannot be COMPLETED: raw_distinct=47<120. Supplemental discovery required."
+  "run_id": "N5K-20260903-602",
+  "updated_at": "2026-09-03T08:32:29+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "funnel": {
+    "raw_distinct": 120,
+    "discovered": 120,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 119
+  },
+  "lane_metrics": [
+    {"lane": "regional_investment_new_production"},
+    {"lane": "industrial_park_sez_technopark"},
+    {"lane": "regional_private_expansion"},
+    {"lane": "sme_growth_cases"},
+    {"lane": "export_capacity_growth"},
+    {"lane": "dealer_franchise_partner_expansion"},
+    {"lane": "logistics_warehouse_commercial_property"},
+    {"lane": "new_line_workshop_factory"},
+    {"lane": "company_pressroom_owner_ceo"},
+    {"lane": "ma_private_investment_branches"}
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "GR-N5K-20260903-602-OKTAVA-DM",
+      "Brand": "Октава ДМ",
+      "Legal Name": "ООО \"ОКТАВА ДИЗАЙН И МАРКЕТИНГ\"",
+      "INN": "7107132531",
+      "OGRN/OGRNIP": "1197154009250",
+      "Region": "Тульская область",
+      "City": "Тула",
+      "Segment": "Радиоэлектроника / профессиональное аудио / производство коммуникационного оборудования",
+      "Website": "https://oktavadm.ru",
+      "Revenue/Scale": "Выручка 2025: 388 млн руб. (+19% год к году); малое предприятие; более 80 специалистов на новой производственной площадке",
+      "Signal Level": "S1",
+      "Signal Summary": "23 апреля 2026 года компания открыла в Туле новый завод полного цикла по производству высокотехнологичных аудиоустройств площадью более 1000 кв. м; в 2026 году компания также заявила план роста выручки ещё на 54%.",
+      "Signal Date": "2026-04-23",
+      "Signal Source": "Инвестиционный портал Тульской области / Интерфакс Россия",
+      "Owner": "ООО \"ИВЛ-ИНВЕСТ\" (100%); конечный учредитель Ирина Владимировна Лупичёва",
+      "CEO": "Стальнова Любовь Вадимовна",
+      "LPR": "Стальнова Любовь Вадимовна",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 800 775-35-59",
+      "Primary Email": "info@oktavadm.ru",
+      "HH Contact": "",
+      "Contact Form": "https://www.oktavadm.ru/contacts",
+      "Contact Type": "Официальный корпоративный маршрут",
+      "Contact Source": "Официальный сайт ООО \"Октава ДМ\"",
+      "Consulting Hypothesis": "Запуск собственного производства полного цикла и заявленный ускоренный рост создают задачи масштабирования коммерческой функции, планирования, KPI и управленческих процессов.",
+      "contacts": [
+        {
+          "value": "+7 800 775-35-59",
+          "channel": "phone",
+          "type": "Официальный корпоративный телефон",
+          "source": "Официальный сайт ООО \"Октава ДМ\"",
+          "url": "https://www.oktavadm.ru/contacts",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный маршрут связи"
+        },
+        {
+          "value": "info@oktavadm.ru",
+          "channel": "email",
+          "type": "Официальный корпоративный e-mail",
+          "source": "Официальный сайт ООО \"Октава ДМ\"",
+          "url": "https://www.oktavadm.ru/contacts",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный маршрут связи"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "LEGAL_SIZE_LPR",
+          "claim": "ООО Октава ДМ действует; ИНН 7107132531, ОГРН 1197154009250; генеральный директор Любовь Стальнова; учредитель ООО ИВЛ-Инвест 100%; ОКФС 16; категория МСП — малое предприятие.",
+          "url": "https://companies.rbc.ru/id/1197154009250-oktava-dm/",
+          "source": "РБК Компании"
+        },
+        {
+          "type": "SCALE",
+          "claim": "Выручка ООО Октава ДМ за 2025 год составила 388 млн рублей, рост 19% год к году.",
+          "url": "https://www.interfax-russia.ru/center/news/tulskaya-oktava-dm-v-2025g-uvelichila-vyruchku-na-19",
+          "source": "Интерфакс Россия"
+        },
+        {
+          "type": "GROWTH_SIGNAL",
+          "claim": "23 апреля 2026 года в Туле открыт новый завод ООО Октава ДМ по производству высокотехнологичных аудиоустройств полного цикла.",
+          "url": "https://invest-tula.com/press-center/news/18429/",
+          "source": "Инвестиционный портал Тульской области"
+        },
+        {
+          "type": "CONTACT_ROUTE",
+          "claim": "Официальный сайт публикует корпоративные телефоны и e-mail info@oktavadm.ru для связи с ООО Октава ДМ.",
+          "url": "https://www.oktavadm.ru/contacts",
+          "source": "Официальный сайт ООО Октава ДМ"
+        }
+      ]
+    }
+  ],
+  "external_technical_limitation": {
+    "proven": false,
+    "evidence": ""
+  },
+  "notes": "Authoritative employer-level raw pool capped at 120 distinct candidates after broad initial and supplemental discovery across at least 10 low-overlap source families. Hard floor met, preferred continuation threshold 300 not met; no external technical limitation claimed. Criteria unchanged. No outreach."
 }
