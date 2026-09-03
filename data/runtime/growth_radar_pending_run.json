@@ -1,9 +1,111 @@
 {
-  "run_id": "N5K-20260903-599",
-  "updated_at": "2026-09-03T05:27:03+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 30,
-  "note": "N5K-20260903-599 integrated verified rows but cannot be COMPLETED: raw_distinct=30<120. Supplemental discovery required."
+  "run_id": "N5K-20260903-600",
+  "updated_at": "2026-09-03T06:31:57+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "qualified_companies": [
+    {
+      "Lead ID": "GR-6685104520",
+      "Brand": "ДАТАРК",
+      "Legal Name": "ООО «ДАТАРК»",
+      "INN": "6685104520",
+      "OGRN/OGRNIP": "1156658103183",
+      "Region": "Свердловская область",
+      "City": "Екатеринбург",
+      "Segment": "Модульные центры обработки данных / промышленная ИТ-инфраструктура",
+      "Website": "https://datark.ru/",
+      "Revenue/Scale": "875,3 млн ₽ выручки за 2025 год; 78 сотрудников",
+      "Signal Level": "S1",
+      "Signal Summary": "8 июля 2026 года ДАТАРК сообщил о расширении производства модульных центров обработки данных: инвестиции свыше 35 млн ₽ направляются на лазерную сварку, роботизацию и окрасочно-сушильное оборудование; в 2026 году производственная мощность увеличена на 40% — до 50 модулей в год.",
+      "Signal Date": "2026-07-08",
+      "Signal Source": "Коммерсантъ / CNews / ServerNews",
+      "Owner": "Макаров Александр Анатольевич (один из учредителей)",
+      "CEO": "Тропин Евгений Анатольевич",
+      "LPR": "Тропин Евгений Анатольевич",
+      "LPR Role": "Генеральный директор",
+      "Primary Phone": "+7 343 286-17-80",
+      "Primary Email": "info@datark.ru",
+      "HH Contact": "",
+      "Contact Form": "https://datark.ru/kontakty/",
+      "Contact Type": "Опубликованный корпоративный маршрут",
+      "Contact Source": "Официальная страница контактов ДАТАРК",
+      "Consulting Hypothesis": "Наращивание производственной мощности и роботизация создают потенциальную задачу масштабирования операционных и коммерческих процессов.",
+      "contacts": [
+        {
+          "value": "info@datark.ru",
+          "channel": "email",
+          "type": "corporate",
+          "source": "Официальная страница контактов ДАТАРК",
+          "url": "https://datark.ru/kontakty/",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный email"
+        },
+        {
+          "value": "+7 343 286-17-80",
+          "channel": "phone",
+          "type": "corporate",
+          "source": "Официальная страница контактов ДАТАРК",
+          "url": "https://datark.ru/kontakty/",
+          "is_lpr": false,
+          "notes": "Опубликованный корпоративный телефон"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "signal",
+          "claim": "8 июля 2026 года сообщено о расширении производства модульных ЦОД и инвестициях свыше 35 млн ₽ в лазерную сварку, роботизацию и окрасочно-сушильное оборудование.",
+          "url": "https://www.kommersant.ru/gallery/8799293",
+          "source": "Коммерсантъ"
+        },
+        {
+          "type": "signal_capacity",
+          "claim": "В 2026 году производственная мощность ДАТАРК увеличена на 40%, до 50 модулей в год.",
+          "url": "https://servernews.ru/1126361",
+          "source": "ServerNews"
+        },
+        {
+          "type": "legal_scale_lpr",
+          "claim": "Действующее ООО «ДАТАРК», ИНН 6685104520, ОГРН 1156658103183; генеральный директор — Тропин Евгений Анатольевич; выручка 2025 года 875,3 млн ₽, 78 сотрудников.",
+          "url": "https://companium.ru/id/1156658103183-datark",
+          "source": "Companium / сведения ФНС и бухгалтерской отчетности"
+        },
+        {
+          "type": "contact",
+          "claim": "Официальный сайт публикует info@datark.ru, +7 343 286-17-80 и форму отправки заявки.",
+          "url": "https://datark.ru/kontakty/",
+          "source": "Официальный сайт ДАТАРК"
+        }
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "funnel": {
+    "raw_distinct": 147,
+    "discovered": 147,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 146
+  },
+  "lane_metrics": [
+    {"lane":"regional_investment_new_production","raw":147,"duplicates_early_rejects":146,"qualified":1},
+    {"lane":"industrial_park_sez_technopark","raw":0,"duplicates_early_rejects":0,"qualified":0},
+    {"lane":"regional_private_expansion","raw":0,"duplicates_early_rejects":0,"qualified":0},
+    {"lane":"sme_growth_cases","raw":0,"duplicates_early_rejects":0,"qualified":0},
+    {"lane":"export_capacity_growth","raw":0,"duplicates_early_rejects":0,"qualified":0},
+    {"lane":"dealer_franchise_partner_expansion","raw":0,"duplicates_early_rejects":0,"qualified":0},
+    {"lane":"logistics_warehouse_commercial_property","raw":0,"duplicates_early_rejects":0,"qualified":0},
+    {"lane":"new_line_workshop_factory","raw":0,"duplicates_early_rejects":0,"qualified":0},
+    {"lane":"company_pressroom_owner_ceo","raw":0,"duplicates_early_rejects":0,"qualified":0},
+    {"lane":"ma_private_investment_branches","raw":0,"duplicates_early_rejects":0,"qualified":0}
+  ],
+  "external_technical_limitation": {
+    "proven": false,
+    "evidence": ""
+  },
+  "notes": "Authoritative employer-level discovery yielded 147 genuinely distinct named candidates. Ten independent discovery source families were probed, with the authoritative raw pool coming from fresh regional investment/new-production announcements and cross-checks through independent official/company/business sources. One company passed the full strict funnel. Raw exceeds the 120 hard floor but remains below the 300 continuation threshold and 400–800 target; no external technical limitation is claimed; criteria unchanged; outreach 0. Per-lane saturation rotations were not separately persisted for the supplemental probes, so no rotation count is asserted."
 }
