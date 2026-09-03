@@ -1,0 +1,95 @@
+name: TEMP Export Growth Radar Emails 20260903
+
+on:
+  push:
+    paths:
+      - '.github/workflows/temp_export_growth_radar_emails_20260903.yml'
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export email contacts
+        shell: python
+        run: |
+          import csv
+          import re
+          from pathlib import Path
+
+          src = Path('data/campaigns/new_5000/contacts.csv')
+          out = Path('growth_radar_email_contacts_611.csv')
+          txt = Path('growth_radar_email_addresses_only_611.txt')
+          summary = Path('growth_radar_email_summary_611.txt')
+
+          email_re = re.compile(r'^[A-Z0-9._%+\-]+@[A-Z0-9.\-]+\.[A-Z]{2,}$', re.I)
+          rows = []
+          seen = set()
+          company_ids = set()
+
+          with src.open('r', encoding='utf-8-sig', newline='') as f:
+              reader = csv.DictReader(f)
+              for row in reader:
+                  value = (row.get('Contact Value') or '').strip()
+                  channel = (row.get('Contact Channel') or '').strip().lower()
+                  ctype = (row.get('Contact Type') or '').strip().lower()
+                  candidates = [x.strip() for x in re.split(r'[;,\s]+', value) if '@' in x]
+                  for email in candidates:
+                      email = email.strip('<>()[]{}.,;').lower()
+                      if not email_re.match(email):
+                          continue
+                      key = (row.get('Lead ID','').strip(), email)
+                      if key in seen:
+                          continue
+                      seen.add(key)
+                      company_ids.add(row.get('Lead ID','').strip())
+                      rows.append({
+                          'Lead ID': row.get('Lead ID','').strip(),
+                          'Brand': row.get('Brand','').strip(),
+                          'INN': row.get('INN','').strip(),
+                          'Person Name': row.get('Person Name','').strip(),
+                          'Person Role': row.get('Person Role','').strip(),
+                          'Email': email,
+                          'Contact Channel': row.get('Contact Channel','').strip(),
+                          'Contact Type': row.get('Contact Type','').strip(),
+                          'Contact Source': row.get('Contact Source','').strip(),
+                          'Source URL': row.get('Source URL','').strip(),
+                          'Is LPR': row.get('Is LPR','').strip(),
+                          'Reliability': row.get('Reliability','').strip(),
+                          'Date Checked': row.get('Date Checked','').strip(),
+                          'Run ID': row.get('Run ID','').strip(),
+                      })
+
+          rows.sort(key=lambda r: (r['Brand'].lower(), r['Lead ID'], r['Email']))
+          fields = ['Lead ID','Brand','INN','Person Name','Person Role','Email','Contact Channel','Contact Type','Contact Source','Source URL','Is LPR','Reliability','Date Checked','Run ID']
+          with out.open('w', encoding='utf-8-sig', newline='') as f:
+              w = csv.DictWriter(f, fieldnames=fields)
+              w.writeheader()
+              w.writerows(rows)
+
+          unique_emails = []
+          global_seen = set()
+          for r in rows:
+              if r['Email'] not in global_seen:
+                  global_seen.add(r['Email'])
+                  unique_emails.append(r['Email'])
+          txt.write_text('\n'.join(unique_emails) + ('\n' if unique_emails else ''), encoding='utf-8')
+          summary.write_text(
+              f'Email contact rows: {len(rows)}\n'
+              f'Unique email addresses: {len(unique_emails)}\n'
+              f'Companies with at least one email: {len(company_ids)}\n',
+              encoding='utf-8'
+          )
+          print(summary.read_text(encoding='utf-8'))
+
+      - name: Upload export
+        uses: actions/upload-artifact@v4
+        with:
+          name: growth-radar-email-contacts-611
+          path: |
+            growth_radar_email_contacts_611.csv
+            growth_radar_email_addresses_only_611.txt
+            growth_radar_email_summary_611.txt
+          if-no-files-found: error
+          retention-days: 1
