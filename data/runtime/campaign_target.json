@@ -11,14 +11,14 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-03T21:32:26+03:00",
+  "updated_at": "2026-09-03T22:31:15+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260903-609",
-  "current_run_id": "N5K-20260903-615",
-  "last_run_id": "N5K-20260903-615",
+  "current_run_id": "N5K-20260903-616",
+  "last_run_id": "N5K-20260903-616",
   "latest_completed_run": "N5K-20260903-609",
-  "latest_attempted_run": "N5K-20260903-615",
-  "latest_attempted_run_id": "N5K-20260903-615",
+  "latest_attempted_run": "N5K-20260903-616",
+  "latest_attempted_run_id": "N5K-20260903-616",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_integration_run_id": "N5K-20260903-614",
   "hourly_baseline_count": 613,
@@ -105,5 +105,5 @@
   "fresh_staging": "RUN N5K-20260903-614 processed by canonical writer with zero qualified additions; staged qualified not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-615 requires recovery: raw_distinct 50<300; hard_floor_passed=False; canonical/contactable 613/613; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-616 requires recovery: raw_distinct 60<300; hard_floor_passed=False; canonical/contactable 613/613; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }

@@ -1,39 +1,9 @@
 {
   "run_id": "N5K-20260903-616",
   "updated_at": "2026-09-03T22:31:15+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "status": "RECOVERY_REQUIRED",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "funnel": {
-    "raw_distinct": 60,
-    "discovered": 60,
-    "fast_gate_passed": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "duplicates": 0,
-    "excluded": 60
-  },
-  "lane_metrics": [
-    {"lane": "regional_investment_new_production", "raw": 7, "duplicates_early_rejects": 7, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "industrial_park_sez_technopark", "raw": 5, "duplicates_early_rejects": 5, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "regional_private_expansion", "raw": 5, "duplicates_early_rejects": 5, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "sme_growth_cases", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "export_dealer_partner_expansion", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "logistics_warehouse_commercial_property", "raw": 5, "duplicates_early_rejects": 5, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "new_line_workshop_factory", "raw": 8, "duplicates_early_rejects": 8, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "trade_association_business_growth", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "company_pressroom_owner_ceo", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "commercial_contract_growth_signal", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "branches_stores_service_centers", "raw": 4, "duplicates_early_rejects": 4, "qualified": 0, "saturation_rotations": 0},
-    {"lane": "private_investment_ma", "raw": 6, "duplicates_early_rejects": 6, "qualified": 0, "saturation_rotations": 0}
-  ],
-  "external_technical_limitation": {
-    "proven": false,
-    "evidence": ""
-  },
-  "notes": "Supplemental discovery in this cycle used fresh 2026 source-backed employer-level growth/change signals across 12 low-overlap lanes, including regional investment/production, SEZ/industrial parks, SME growth, export/partner expansion, logistics, new production lines, company pressrooms, contracts, branches and private investment/M&A. Exactly 60 distinct named candidates were retained as authoritative raw. No candidate was promoted past FAST GATE because current scale plus physical canonical-key dedup and all private/legal requirements were not fully verified; criteria were not relaxed. raw_distinct remains below the 120 absolute floor and below the 300 continuation threshold, so UNDERDONE recovery is required. Outreach 0."
+  "raw_distinct": 60,
+  "note": "N5K-20260903-616 integrated verified rows but cannot be COMPLETED: raw_distinct=60<120. Supplemental discovery required."
 }
