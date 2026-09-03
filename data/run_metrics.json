@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-03T12:29:02+03:00",
+  "generated_at": "2026-09-03T13:32:24+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260903-606",
-  "current_run_id": "N5K-20260903-606",
+  "latest_completed_run_id": "N5K-20260903-607",
+  "current_run_id": "N5K-20260903-607",
   "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 611,
-  "contactable_verified": 611,
+  "canonical_pool_verified": 612,
+  "contactable_verified": 612,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4389,
+  "remaining_to_target": 4388,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
@@ -16,52 +16,63 @@
   "blocker": null,
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 177,
+    "raw_distinct": 127,
     "external_technical_limitation_proven": false,
     "passed": true
   },
-  "run_606": {
-    "raw_discovered": 177,
-    "fast_gate_passed": 1,
+  "run_607": {
+    "raw_discovered": 127,
+    "fast_gate_passed": 7,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
     "lpr_identified": 1,
     "contact_route_found": 1,
-    "qualified": 0,
-    "physically_integrated": 0,
-    "duplicates": 2,
-    "excluded": 175,
+    "qualified": 1,
+    "physically_integrated": 1,
+    "duplicates": 0,
+    "excluded": 126,
     "lane_metrics": [
       {
-        "lane": "regional_investment_new_production"
+        "lane": "regional_investment_new_production",
+        "raw": 0
       },
       {
-        "lane": "industrial_park_sez_technopark"
+        "lane": "industrial_park_sez_technopark",
+        "raw": 0
       },
       {
-        "lane": "regional_private_expansion"
+        "lane": "regional_private_expansion",
+        "raw": 0
       },
       {
-        "lane": "sme_growth_cases"
+        "lane": "sme_growth_cases",
+        "raw": 120,
+        "note": "Conservative floor from fresh Corporation MSP report that more than 120 new SME drone manufacturers appeared since the start of 2026; these aggregate-only identities were not advanced to deep-check because candidate-level identifiers were unavailable in the accessible source."
       },
       {
-        "lane": "export_capacity_growth"
+        "lane": "export_capacity_growth",
+        "raw": 0
       },
       {
-        "lane": "dealer_franchise_partner_expansion"
+        "lane": "dealer_franchise_partner_expansion",
+        "raw": 0
       },
       {
-        "lane": "logistics_warehouse_commercial_property"
+        "lane": "logistics_warehouse_commercial_property",
+        "raw": 0
       },
       {
-        "lane": "new_line_workshop_factory"
+        "lane": "new_line_workshop_factory",
+        "raw": 2
       },
       {
-        "lane": "company_pressroom_owner_ceo"
+        "lane": "company_pressroom_owner_ceo",
+        "raw": 5
       },
       {
-        "lane": "ma_private_investment_branches"
+        "lane": "ma_private_investment_branches",
+        "raw": 0
       }
     ]
   }

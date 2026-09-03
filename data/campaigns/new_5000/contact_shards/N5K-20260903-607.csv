@@ -1,0 +1,4 @@
+Lead ID,Contact ID,Brand,INN,Person Name,Person Role,Contact Value,Contact Channel,Contact Type,Contact Source,Source URL,Is LPR,Reliability,Date Checked,Notes,Run ID,Campaign ID
+N5K-1648052787,N5K-1648052787-C01,ТАТЛИФТ,1648052787,,Корпоративный маршрут,+7 (800) 770-79-84,phone,corporate phone,ТАТЛИФТ официальный сайт,https://tatlift.com/contacts/,NO,HIGH,2026-09-03,Официально опубликованный корпоративный контакт.,N5K-20260903-607,new_5000
+N5K-1648052787,N5K-1648052787-C02,ТАТЛИФТ,1648052787,,Корпоративный маршрут,info@tatlift.com,email,corporate email,ТАТЛИФТ официальный сайт,https://tatlift.com/contacts/,NO,HIGH,2026-09-03,Официально опубликованный общий email.,N5K-20260903-607,new_5000
+N5K-1648052787,N5K-1648052787-C03,ТАТЛИФТ,1648052787,,Корпоративный маршрут,market@tatlift.com,email,sales email,ТАТЛИФТ официальный сайт,https://tatlift.com/contacts/,NO,HIGH,2026-09-03,Официально опубликованный маршрут отдела продаж.,N5K-20260903-607,new_5000

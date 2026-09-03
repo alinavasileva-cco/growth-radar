@@ -2,25 +2,25 @@
   "campaign_id": "new_5000",
   "baseline_count": 0,
   "total_target": 5000,
-  "current_canonical_count": 611,
-  "current_contactable_count": 611,
-  "progress_added": 611,
-  "remaining_to_total_target": 4389,
-  "remaining": 4389,
+  "current_canonical_count": 612,
+  "current_contactable_count": 612,
+  "progress_added": 612,
+  "remaining_to_total_target": 4388,
+  "remaining": 4388,
   "remaining_to_1000": 389,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-03T12:29:02+03:00",
+  "updated_at": "2026-09-03T13:32:24+03:00",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260903-606",
-  "current_run_id": "N5K-20260903-606",
-  "last_run_id": "N5K-20260903-606",
-  "latest_completed_run": "N5K-20260903-606",
-  "latest_attempted_run": "N5K-20260903-606",
-  "latest_attempted_run_id": "N5K-20260903-606",
+  "last_completed_run_id": "N5K-20260903-607",
+  "current_run_id": "N5K-20260903-607",
+  "last_run_id": "N5K-20260903-607",
+  "latest_completed_run": "N5K-20260903-607",
+  "latest_attempted_run": "N5K-20260903-607",
+  "latest_attempted_run_id": "N5K-20260903-607",
   "latest_attempted_run_status": "RECOVERY_REQUIRED",
-  "canonical_integration_run_id": "N5K-20260903-606",
+  "canonical_integration_run_id": "N5K-20260903-607",
   "hourly_baseline_count": 611,
   "hourly_net_new": 0,
   "orphan_contacts": 0,
@@ -44,16 +44,36 @@
     "raw_count_note": "177 genuinely distinct employer/legal-entity raw candidates were conservatively counted across 10 discovery lanes after initial and supplemental fresh low-overlap discovery. The hard floor 120 was met; the repository continue-until-300 threshold was not. One deep-checked candidate was rejected by the physical canonical guard as already present, so net_new=0. No external technical limitation claimed; criteria unchanged; outreach 0. Saturation-rotation count was not persisted and is not reconstructed."
   },
   "latest_run_lane_efficiency": [
-    {"lane": "regional_investment_new_production"},
-    {"lane": "industrial_park_sez_technopark"},
-    {"lane": "regional_private_expansion"},
-    {"lane": "sme_growth_cases"},
-    {"lane": "export_capacity_growth"},
-    {"lane": "dealer_franchise_partner_expansion"},
-    {"lane": "logistics_warehouse_commercial_property"},
-    {"lane": "new_line_workshop_factory"},
-    {"lane": "company_pressroom_owner_ceo"},
-    {"lane": "ma_private_investment_branches"}
+    {
+      "lane": "regional_investment_new_production"
+    },
+    {
+      "lane": "industrial_park_sez_technopark"
+    },
+    {
+      "lane": "regional_private_expansion"
+    },
+    {
+      "lane": "sme_growth_cases"
+    },
+    {
+      "lane": "export_capacity_growth"
+    },
+    {
+      "lane": "dealer_franchise_partner_expansion"
+    },
+    {
+      "lane": "logistics_warehouse_commercial_property"
+    },
+    {
+      "lane": "new_line_workshop_factory"
+    },
+    {
+      "lane": "company_pressroom_owner_ceo"
+    },
+    {
+      "lane": "ma_private_investment_branches"
+    }
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -67,5 +87,5 @@
   "fresh_staging": "RUN N5K-20260903-606 was physically processed by the canonical writer; no new company was integrated after physical dedup; qualified staged not counted is zero.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260903-606 requires recovery: raw_distinct 177<300; hard_floor_passed=true; canonical/contactable 611/611; net_new 0; integrity PASS; orphan contacts/evidence 0/0; active WIP 0; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260903-607 requires recovery: raw_distinct 127<300; hard_floor_passed=True; canonical/contactable 612/612; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
