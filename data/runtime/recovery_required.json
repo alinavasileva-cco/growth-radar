@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260903-611",
+  "run_id": "N5K-20260903-612",
   "status": "RECOVERY_REQUIRED",
   "reason": "AUTHORITATIVE_RAW_BELOW_PREFERRED_CONTINUE_THRESHOLD",
-  "raw_distinct": 11,
+  "raw_distinct": 48,
   "hard_minimum_raw_distinct": 120,
   "preferred_continue_until_raw_distinct": 300,
   "hard_floor_passed": false,

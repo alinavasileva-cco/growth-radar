@@ -1,35 +1,9 @@
 {
   "run_id": "N5K-20260903-612",
   "updated_at": "2026-09-03T18:28:48+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "status": "RECOVERY_REQUIRED",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "funnel": {
-    "raw_distinct": 48,
-    "discovered": 48,
-    "fast_gate_passed": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "duplicates": 0,
-    "excluded": 48
-  },
-  "lane_metrics": [
-    {"lane":"regional_investment_new_production","raw":8,"saturation_rotations":0},
-    {"lane":"industrial_park_sez_technopark","raw":7,"saturation_rotations":0},
-    {"lane":"regional_private_expansion","raw":5,"saturation_rotations":0},
-    {"lane":"sme_growth_cases","raw":3,"saturation_rotations":0},
-    {"lane":"export_dealer_partner_expansion","raw":4,"saturation_rotations":0},
-    {"lane":"logistics_warehouse_commercial_property","raw":4,"saturation_rotations":0},
-    {"lane":"new_line_workshop_factory","raw":8,"saturation_rotations":0},
-    {"lane":"trade_association_business_growth","raw":1,"saturation_rotations":0},
-    {"lane":"company_pressroom_owner_ceo","raw":3,"saturation_rotations":0},
-    {"lane":"branches_stores_service_centers","raw":3,"saturation_rotations":0},
-    {"lane":"private_investment_ma","raw":2,"saturation_rotations":0}
-  ],
-  "notes": "Authoritative RUN 612 discovery reviewed 48 genuinely distinct employer-level candidates from fresh low-overlap source families. No candidate was promoted to deep funnel without complete current size/legal/LPR/contact verification. Criteria were not weakened; outreach 0. Hard floor not reached, so recovery is required.",
-  "external_technical_limitation": {"proven": false, "evidence": ""}
+  "raw_distinct": 48,
+  "note": "N5K-20260903-612 integrated verified rows but cannot be COMPLETED: raw_distinct=48<120. Supplemental discovery required."
 }

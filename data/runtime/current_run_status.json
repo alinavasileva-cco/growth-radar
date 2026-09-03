@@ -1,8 +1,8 @@
 {
-  "run_id": "N5K-20260903-611",
+  "run_id": "N5K-20260903-612",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-03T17:31:30+03:00",
+  "updated_at": "2026-09-03T18:28:48+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
     "baseline_count": 613,
@@ -13,8 +13,8 @@
     "remaining": 4387
   },
   "funnel": {
-    "raw_distinct": 11,
-    "discovered": 11,
+    "raw_distinct": 48,
+    "discovered": 48,
     "fast_gate_passed": 0,
     "size_check_passed": 0,
     "legal_match_passed": 0,
@@ -23,11 +23,11 @@
     "contact_route_found": 0,
     "qualified": 0,
     "duplicates": 0,
-    "excluded": 11
+    "excluded": 48
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 11,
+    "raw_distinct": 48,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -37,47 +37,58 @@
   "lane_metrics": [
     {
       "lane": "regional_investment_new_production",
-      "raw": 1
+      "raw": 8,
+      "saturation_rotations": 0
     },
     {
       "lane": "industrial_park_sez_technopark",
-      "raw": 1
+      "raw": 7,
+      "saturation_rotations": 0
     },
     {
       "lane": "regional_private_expansion",
-      "raw": 1
+      "raw": 5,
+      "saturation_rotations": 0
     },
     {
       "lane": "sme_growth_cases",
-      "raw": 1
+      "raw": 3,
+      "saturation_rotations": 0
     },
     {
       "lane": "export_dealer_partner_expansion",
-      "raw": 1
+      "raw": 4,
+      "saturation_rotations": 0
     },
     {
       "lane": "logistics_warehouse_commercial_property",
-      "raw": 1
+      "raw": 4,
+      "saturation_rotations": 0
     },
     {
       "lane": "new_line_workshop_factory",
-      "raw": 1
+      "raw": 8,
+      "saturation_rotations": 0
     },
     {
       "lane": "trade_association_business_growth",
-      "raw": 1
+      "raw": 1,
+      "saturation_rotations": 0
     },
     {
       "lane": "company_pressroom_owner_ceo",
-      "raw": 1
+      "raw": 3,
+      "saturation_rotations": 0
     },
     {
       "lane": "branches_stores_service_centers",
-      "raw": 1
+      "raw": 3,
+      "saturation_rotations": 0
     },
     {
       "lane": "private_investment_ma",
-      "raw": 1
+      "raw": 2,
+      "saturation_rotations": 0
     }
   ],
   "qualified_companies": [],
