@@ -1,8 +1,77 @@
 {
-  "run_id": "N5K-20260903-609",
-  "updated_at": "2026-09-03T15:29:22+03:00",
-  "status": "CLEARED_AFTER_INTEGRATION",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "note": "N5K-20260903-609 integrated physically; canonical/contactable 613/613; integrity PASS; orphan 0/0; outreach 0."
+  "run_id": "N5K-20260903-610",
+  "updated_at": "2026-09-03T16:30:43+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "campaign_id": "new_5000",
+  "funnel": {
+    "raw_distinct": 34,
+    "discovered": 34,
+    "fast_gate_passed": 1,
+    "size_check_passed": 1,
+    "legal_match_passed": 1,
+    "signal_confirmed": 1,
+    "lpr_identified": 1,
+    "contact_route_found": 1,
+    "qualified": 1,
+    "duplicates": 0,
+    "excluded": 33
+  },
+  "lane_metrics": [
+    {"lane": "regional_investment_new_production", "raw": 5},
+    {"lane": "industrial_park_sez_technopark", "raw": 3},
+    {"lane": "regional_private_expansion", "raw": 2},
+    {"lane": "sme_growth_cases", "raw": 1},
+    {"lane": "export_dealer_partner_expansion", "raw": 2},
+    {"lane": "logistics_warehouse_commercial_property", "raw": 3},
+    {"lane": "new_line_workshop_factory", "raw": 9},
+    {"lane": "company_pressroom_owner_ceo", "raw": 2},
+    {"lane": "franchise_branch_network_expansion", "raw": 4},
+    {"lane": "private_investment_ma", "raw": 2},
+    {"lane": "commercial_contract_growth_signal", "raw": 1}
+  ],
+  "raw_candidates": [
+    "AGR", "5Post", "Вкусно — и точка", "Ozon", "НАРТИС", "Дринкит", "Семаргл", "Пятёрочка", "РУСБУТИРАЛЬ", "Алсигма", "DoorHan", "Юнирест / Rostic’s", "Энхим", "Renewal / ПФК Обновление", "БИДЖЕТ", "Группа ПОЛИПЛАСТИК", "Битроботикс", "АК-Проф", "ОКОЛО", "Аравия", "Новые технологии печати", "МолоПак", "КППП РУСКОН", "ПК ПЕЧАГИН", "РАТЕЛ", "СОФОС БИО", "СибЕвроВэн", "УПАКОВ-КАШИРА", "Энерготех", "Технопарк «Импульс»", "МЕТИЗ ПРОИЗВОДСТВО", "Регионтранснефть", "Петровакс Фарм", "ITMS"
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-5246051100",
+      "Brand": "РУСБУТИРАЛЬ",
+      "Legal Name": "ООО \"РУСБУТИРАЛЬ\"",
+      "INN": "5246051100",
+      "OGRN/OGRNIP": "1175275054250",
+      "Region": "Нижегородская область",
+      "City": "Бор",
+      "Segment": "Производство полимерных материалов / ПВБ-плёнка",
+      "Website": "https://rusbutyral.ru/",
+      "Revenue/Scale": "Выручка 2025: 659,6 млн руб.; 59 сотрудников; выручка +29,1% г/г",
+      "Signal Level": "S1",
+      "Signal Summary": "17.04.2026 запущена новая производственная линия ПВБ-плёнки шириной до 3300 мм; единственная линия такого формата в России.",
+      "Signal Date": "2026-04-17",
+      "Signal Source": "https://glassunion.ru/novosti/news_post/ooo-rusbutiral-zapustilo-unikalnoe-proizvodstvo-pvb-plenki-v-rossii",
+      "Owner": "Москвичев Олег Алексеевич; Ковалев Николай Евгеньевич; Крайнов Александр Юрьевич",
+      "CEO": "Киселев Олег Александрович",
+      "LPR": "Киселев Олег Александрович",
+      "LPR Role": "Директор",
+      "Primary Phone": "8-800-201-20-52",
+      "Primary Email": "ok@rusbutyral.ru",
+      "HH Contact": "",
+      "Contact Form": "https://rusbutyral.ru/contacts/",
+      "Contact Type": "DIRECTOR_EMAIL + CORPORATE_PHONE",
+      "Contact Source": "https://rusbutyral.ru/contacts/",
+      "Consulting Hypothesis": "Масштабирование коммерческой функции и каналов продаж после ввода уникальной производственной мощности; развитие B2B и экспортных направлений.",
+      "contacts": [
+        {"value": "ok@rusbutyral.ru", "channel": "EMAIL", "type": "DIRECTOR_EMAIL", "source": "Официальный сайт", "url": "https://rusbutyral.ru/contacts/", "is_lpr": true, "notes": "На официальной странице контактов обозначен как email директора."},
+        {"value": "8-800-201-20-52", "channel": "PHONE", "type": "CORPORATE_SALES_PHONE", "source": "Официальный сайт", "url": "https://rusbutyral.ru/contacts/", "is_lpr": false, "notes": "Опубликованный телефон отдела продаж."}
+      ],
+      "evidence": [
+        {"type": "LEGAL_SCALE", "claim": "ООО «РУСБУТИРАЛЬ» действует; ИНН 5246051100, ОГРН 1175275054250; выручка 2025 659,6 млн руб., 59 сотрудников.", "url": "https://companies.rbc.ru/id/1175275054250-ooo-rusbutiral/", "source": "РБК Компании"},
+        {"type": "GROWTH_SIGNAL", "claim": "17 апреля 2026 года компания запустила новую линию по выпуску ПВБ-плёнки шириной до 3300 мм.", "url": "https://glassunion.ru/novosti/news_post/ooo-rusbutiral-zapustilo-unikalnoe-proizvodstvo-pvb-plenki-v-rossii", "source": "Союз Стекольных Предприятий"},
+        {"type": "LPR_OWNER", "claim": "Директор — Киселев Олег Александрович; учредители — Москвичев Олег Алексеевич, Ковалев Николай Евгеньевич, Крайнов Александр Юрьевич.", "url": "https://companies.rbc.ru/id/1175275054250-ooo-rusbutiral/", "source": "РБК Компании"},
+        {"type": "CONTACT_ROUTE", "claim": "Официальный сайт публикует email директора ok@rusbutyral.ru и телефон отдела продаж 8-800-201-20-52.", "url": "https://rusbutyral.ru/contacts/", "source": "Официальный сайт РУСБУТИРАЛЬ"}
+      ]
+    }
+  ],
+  "qualified_staged_not_counted": 1,
+  "external_technical_limitation": {"proven": false, "evidence": ""},
+  "notes": "Authoritative discovery cycle used 11 low-overlap lanes and supplemental fresh searches. Exactly 34 distinct named employer-level candidates were counted. Criteria unchanged; jobs not used as primary evidence; outreach 0. Because raw_distinct is below 120 and no external technical limitation is proven, final status must remain UNDERDONE_RECOVERY_REQUIRED / RECOVERY_REQUIRED after canonical integration."
 }
