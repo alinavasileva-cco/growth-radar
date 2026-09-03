@@ -35,70 +35,18 @@
     "preferred_throughput_passed": false
   },
   "lane_metrics": [
-    {
-      "lane": "regional_investment_new_production",
-      "raw": 8,
-      "duplicates_early_rejects": 7,
-      "qualified": 1
-    },
-    {
-      "lane": "industrial_park_sez_technopark",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "new_line_workshop_factory",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0
-    },
-    {
-      "lane": "export_capacity_growth",
-      "raw": 2,
-      "duplicates_early_rejects": 2,
-      "qualified": 0
-    },
-    {
-      "lane": "logistics_warehouse_commercial_property",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0
-    },
-    {
-      "lane": "company_pressroom_owner_ceo",
-      "raw": 2,
-      "duplicates_early_rejects": 2,
-      "qualified": 0
-    },
-    {
-      "lane": "ma_private_investment",
-      "raw": 1,
-      "duplicates_early_rejects": 1,
-      "qualified": 0
-    },
-    {
-      "lane": "branches_offices_service_centers",
-      "raw": 1,
-      "duplicates_early_rejects": 1,
-      "qualified": 0
-    },
-    {
-      "lane": "management_commercial_transformation",
-      "raw": 1,
-      "duplicates_early_rejects": 1,
-      "qualified": 0
-    },
-    {
-      "lane": "sme_growth_cases",
-      "raw": 1,
-      "duplicates_early_rejects": 1,
-      "qualified": 0
-    }
+    {"lane":"regional_investment_new_production","raw":8,"duplicates_early_rejects":7,"qualified":1},
+    {"lane":"industrial_park_sez_technopark","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"new_line_workshop_factory","raw":4,"duplicates_early_rejects":4,"qualified":0},
+    {"lane":"export_capacity_growth","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"logistics_warehouse_commercial_property","raw":3,"duplicates_early_rejects":3,"qualified":0},
+    {"lane":"company_pressroom_owner_ceo","raw":2,"duplicates_early_rejects":2,"qualified":0},
+    {"lane":"ma_private_investment","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"branches_offices_service_centers","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"management_commercial_transformation","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"sme_growth_cases","raw":1,"duplicates_early_rejects":1,"qualified":0}
   ],
-  "qualified_companies": [
-    "МПК-Сталь"
-  ],
+  "qualified_companies": ["МПК-Сталь"],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
