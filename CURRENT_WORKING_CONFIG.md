@@ -1,7 +1,7 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-09-03T14:27:08+03:00  
-**Последний физически завершённый RUN:** `N5K-20260903-608`  
+**Версия:** 2026-09-03T15:29:22+03:00  
+**Последний физически завершённый RUN:** `N5K-20260903-609`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
 **Физически подтверждённый canonical/contactable:** **613 / 613**  
 **Qualified staged not counted:** **0**  
@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим campaign-local `leads_master/contactable_master`, contacts/evidence, pending и свежим worker-staging;
 - physical canonical/contactable count: **613 / 613**;
 - orphan contacts/evidence: **0 / 0**;
-- последний завершённый RUN: `N5K-20260903-608`;
+- последний физически обработанный RUN: `N5K-20260903-609`;
 - physical master/integration guard — финальный источник дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений при наличии более свежих подтверждённых сведений;
@@ -47,128 +47,18 @@
 19. После интеграции worker-staging помечать consumed по существующей безопасной схеме; доказательства истории не удалять.
 20. Не выполнять outreach, письма, сообщения, отклики или подготовку рассылки.
 
-## Последний RUN: N5K-20260902-587
+## Последний RUN: N5K-20260903-609
 
-- baseline: **600**;
-- canonical/contactable after: **601 / 601**;
-- net_new: **+1** — **ПП ВОСХОД**;
-- authoritative raw: **120**;
-- funnel: **120 raw → 1 fast gate → 1 SIZE → 1 LEGAL → 1 SIGNAL → 1 LPR → 1 CONTACT → 1 QUALIFIED**;
-- duplicates: **0**; excluded: **119**;
-- lanes: fresh official_owner staging **58 raw / 1 qualified**; supplemental fresh growth/expansion **62 raw / 0 qualified**;
-- hard floor 120 met; preferred throughput 400–800 and preferred continue-until-300 threshold **не достигнуты**, поэтому следующий цикл обязан расширить/ротировать fresh low-overlap lanes, а не повторять насыщенную выборку;
+- baseline: **613**;
+- canonical/contactable after: **613 / 613**;
+- net_new: **0**;
+- authoritative raw distinct/discovered: **121 / 121**;
+- funnel: **121 raw → 3 FAST GATE → 3 SIZE → 3 LEGAL → 3 SIGNAL → 3 LPR → 2 CONTACT → 0 QUALIFIED**;
+- physical duplicates: **2**; excluded: **119**;
+- lanes: **12**; saturation rotations: **0** recorded;
+- both deep-check candidates were rejected by the physical canonical writer as existing duplicates: Ивановская Текстильная Компания (INN, OGRN, BRAND_DOMAIN) and Лалибела Кофе (INN, OGRN, LEGAL_NAME);
+- hard floor **120 passed**, but preferred continue-until-300 threshold **not reached**; no external technical limitation claimed;
+- final status/stage: **RECOVERY_REQUIRED / RECOVERY_REQUIRED**;
 - integrity PASS; orphan contacts/evidence **0 / 0**; staged **0**; active WIP **0**; outreach **0**.
 
-Полная историческая детализация сохранена в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `reports/**`, immutable worker-staging и Git history; она не дублируется здесь, чтобы устаревшие baseline не использовались как текущие.
-
-
-## Latest attempted run N5K-20260902-588
-Canonical/contactable: 601/601. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 16. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-588R1
-Canonical/contactable: 601/601. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 30. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-588R1
-Canonical/contactable: 601/601. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 31. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-588R1
-Canonical/contactable: 601/601. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 32. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-588R1
-Canonical/contactable: 602/602. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 33. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-588R1
-Canonical/contactable: 604/604. Status: COMPLETED. Authoritative raw distinct: 305. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-589
-Canonical/contactable: 604/604. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 53. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-589
-Canonical/contactable: 604/604. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 54. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-590
-Canonical/contactable: 604/604. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 38. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-591
-Canonical/contactable: 605/605. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 34. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-592
-Canonical/contactable: 605/605. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 50. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260902-593
-Canonical/contactable: 605/605. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 32. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-594
-Canonical/contactable: 605/605. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 40. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-595
-Canonical/contactable: 605/605. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 45. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-596
-Canonical/contactable: 605/605. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 56. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-597
-Canonical/contactable: 605/605. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 24. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-598
-Canonical/contactable: 606/606. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 26. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-599
-Canonical/contactable: 606/606. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 30. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-600
-Canonical/contactable: 607/607. Status: COMPLETED. Authoritative raw distinct: 147. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-601
-Canonical/contactable: 608/608. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 47. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-602
-Canonical/contactable: 609/609. Status: COMPLETED. Authoritative raw distinct: 120. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-603
-Canonical/contactable: 609/609. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 46. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-604
-Canonical/contactable: 610/610. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 64. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-605
-Canonical/contactable: 611/611. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 72. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-606
-Canonical/contactable: 611/611. Status: COMPLETED. Authoritative raw distinct: 177. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-607
-Canonical/contactable: 612/612. Status: COMPLETED. Authoritative raw distinct: 127. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-608
-Canonical/contactable: 613/613. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 50. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
-
-
-## Latest attempted run N5K-20260903-609
-Canonical/contactable: 613/613. Status: COMPLETED. Authoritative raw distinct: 121. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+Полная историческая детализация сохранена в `data/campaigns/new_5000/run_log.csv`, `data/campaigns/new_5000/run_logs/**`, `data/campaigns/new_5000/run_log_corrections/**`, `reports/**`, immutable worker-staging и Git history. Устаревшие исторические baseline/status не дублируются здесь как текущая конфигурация.
