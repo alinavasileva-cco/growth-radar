@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-03T13:32:24+03:00",
+  "generated_at": "2026-09-03T14:27:08+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260903-607",
-  "current_run_id": "N5K-20260903-607",
-  "current_run_status": "COMPLETED",
-  "canonical_pool_verified": 612,
-  "contactable_verified": 612,
+  "current_run_id": "N5K-20260903-608",
+  "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
+  "canonical_pool_verified": 613,
+  "contactable_verified": 613,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4388,
+  "remaining_to_target": 4387,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": null,
+  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 127,
+    "raw_distinct": 50,
     "external_technical_limitation_proven": false,
-    "passed": true
+    "passed": false
   },
-  "run_607": {
-    "raw_discovered": 127,
-    "fast_gate_passed": 7,
+  "run_608": {
+    "raw_discovered": 50,
+    "fast_gate_passed": 5,
     "size_check_passed": 1,
     "legal_match_passed": 1,
     "signal_confirmed": 1,
@@ -31,48 +31,47 @@
     "qualified": 1,
     "physically_integrated": 1,
     "duplicates": 0,
-    "excluded": 126,
+    "excluded": 49,
     "lane_metrics": [
       {
         "lane": "regional_investment_new_production",
-        "raw": 0
+        "raw": 8
       },
       {
         "lane": "industrial_park_sez_technopark",
-        "raw": 0
+        "raw": 4
       },
       {
         "lane": "regional_private_expansion",
-        "raw": 0
+        "raw": 5
       },
       {
         "lane": "sme_growth_cases",
-        "raw": 120,
-        "note": "Conservative floor from fresh Corporation MSP report that more than 120 new SME drone manufacturers appeared since the start of 2026; these aggregate-only identities were not advanced to deep-check because candidate-level identifiers were unavailable in the accessible source."
+        "raw": 4
       },
       {
-        "lane": "export_capacity_growth",
-        "raw": 0
-      },
-      {
-        "lane": "dealer_franchise_partner_expansion",
-        "raw": 0
+        "lane": "export_dealer_partner_expansion",
+        "raw": 3
       },
       {
         "lane": "logistics_warehouse_commercial_property",
-        "raw": 0
+        "raw": 3
       },
       {
         "lane": "new_line_workshop_factory",
-        "raw": 2
+        "raw": 10
       },
       {
         "lane": "company_pressroom_owner_ceo",
         "raw": 5
       },
       {
-        "lane": "ma_private_investment_branches",
-        "raw": 0
+        "lane": "private_investment_ma",
+        "raw": 4
+      },
+      {
+        "lane": "branches_stores_service_centers",
+        "raw": 4
       }
     ]
   }
