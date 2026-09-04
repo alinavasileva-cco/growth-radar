@@ -1,33 +1,33 @@
 {
-  "run_id": "N5K-20260904-629",
+  "run_id": "N5K-20260904-630",
   "campaign_id": "new_5000",
   "status": "UNDERDONE_RECOVERY_REQUIRED",
-  "updated_at": "2026-09-04T12:22:08+03:00",
+  "updated_at": "2026-09-04T12:37:35+03:00",
   "stage": "RECOVERY_REQUIRED",
   "new_cycle": {
-    "baseline_count": 613,
+    "baseline_count": 614,
     "target_count": 5000,
     "current_canonical_count": 614,
     "current_contactable_count": 614,
-    "progress_added": 1,
+    "progress_added": 0,
     "remaining": 4386
   },
   "funnel": {
-    "raw_distinct": 43,
-    "discovered": 43,
-    "fast_gate_passed": 14,
-    "size_check_passed": 14,
-    "legal_match_passed": 10,
-    "signal_confirmed": 8,
-    "lpr_identified": 5,
-    "contact_route_found": 3,
-    "qualified": 1,
-    "duplicates": 2,
-    "excluded": 40
+    "raw_distinct": 4,
+    "discovered": 4,
+    "fast_gate_passed": 3,
+    "size_check_passed": 0,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
+    "qualified": 0,
+    "duplicates": 0,
+    "excluded": 4
   },
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 43,
+    "raw_distinct": 4,
     "external_technical_limitation_proven": false,
     "passed": false,
     "preferred_continue_until_raw": 300,
@@ -35,86 +35,19 @@
     "preferred_throughput_passed": false
   },
   "lane_metrics": [
-    {
-      "lane": "regional_new_production_central",
-      "raw": 6,
-      "duplicates_early_rejects": 4,
-      "qualified": 1,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "industrial_expansion_northwest",
-      "raw": 5,
-      "duplicates_early_rejects": 3,
-      "qualified": 1,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "robotics_automation",
-      "raw": 5,
-      "duplicates_early_rejects": 4,
-      "qualified": 0,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "export_international_expansion",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "food_fmcg_scale",
-      "raw": 4,
-      "duplicates_early_rejects": 4,
-      "qualified": 0,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "packaging_materials",
-      "raw": 4,
-      "duplicates_early_rejects": 3,
-      "qualified": 1,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "regional_industrial_volga",
-      "raw": 5,
-      "duplicates_early_rejects": 5,
-      "qualified": 0,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "moscow_region_new_sites",
-      "raw": 4,
-      "duplicates_early_rejects": 3,
-      "qualified": 1,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "management_commercial_transformation",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0,
-      "saturation_rotations": 0
-    },
-    {
-      "lane": "regional_investment_projects",
-      "raw": 3,
-      "duplicates_early_rejects": 3,
-      "qualified": 0,
-      "saturation_rotations": 0
-    }
+    {"lane":"job_intent_build_sales_zero","raw":1,"duplicates_early_rejects":1,"qualified":0,"saturation_rotations":0},
+    {"lane":"job_intent_b2b_scale","raw":1,"duplicates_early_rejects":1,"qualified":0,"saturation_rotations":0},
+    {"lane":"job_intent_new_direction","raw":1,"duplicates_early_rejects":1,"qualified":0,"saturation_rotations":0},
+    {"lane":"job_intent_channel_transformation","raw":1,"duplicates_early_rejects":1,"qualified":0,"saturation_rotations":0}
   ],
-  "qualified_companies": [
-    "Л-ПАК"
-  ],
+  "qualified_companies": [],
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "physical_master_state": "614_DATA_ROWS_PLUS_HEADER_CONFIRMED",
-  "physical_contactable_state": "614_DATA_ROWS_PLUS_HEADER_CONFIRMED",
+  "physical_master_state": "614_DATA_ROWS_PLUS_HEADER_CONFIRMED_FROM_PRE_RUN_AUTHORITY_NO_PHYSICAL_WRITE",
+  "physical_contactable_state": "614_DATA_ROWS_PLUS_HEADER_CONFIRMED_FROM_PRE_RUN_AUTHORITY_NO_PHYSICAL_WRITE",
   "outreach_sent": 0,
-  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED"
+  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
+  "report": "reports/N5K-20260904-630.md"
 }
