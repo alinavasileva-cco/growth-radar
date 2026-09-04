@@ -3,7 +3,7 @@
   "run_sequence": 631,
   "campaign_id": "new_5000",
   "status": "REPLAY_IN_PROGRESS",
-  "stage": "CANONICAL_WRITE_BLOCKED_BY_LARGE_MASTER_READ",
+  "stage": "CANONICAL_WRITE_BLOCKED_NO_PATCH_OR_STREAMING_MUTATION",
   "baseline": 614,
   "replay_total": 60,
   "checked": 23,
@@ -63,16 +63,17 @@
   "current_execution_blocker": {
     "candidate": "ООО Авто-Хэлп",
     "state": "ALL_QUALITY_GATES_EVIDENCED_PENDING_PHYSICAL_CANONICAL_WRITE",
-    "details": "Candidate evidence remains sufficient for legal/scale/signal/LPR/contact review, but it is not counted as qualified/net_new because no safe physical append to both master files has completed. GitHub fetch_file returns empty content for data/campaigns/new_5000/leads_master.csv even with line ranges; GitHub raw fetch rejects the file as too large/unsupported; direct git transport from the execution container cannot resolve github.com. The available GitHub contents and Git Data write APIs require complete replacement blob content, so using them without the current master bytes would risk corrupting canonical state.",
+    "details": "Correction: the prior claim that the large master was unreadable was wrong. The current leads_master blob can be read through GitHub Git blob API, and targeted dedup against that physical content finds no INN 7826004234. However, the available mutation APIs for an existing blob require complete replacement text supplied inline; there is no append/patch/stream-from-existing-blob mutation action, and connector response resources cannot be passed by reference into create_blob/update_file. leads_master is ~1.19 MB and contactable_master is ~1.10 MB, so a safe atomic append to both canonical masters cannot be completed in this execution environment without reconstructing/retransmitting the full files. No blind or partial replacement was attempted.",
     "targeted_dedup_attempts": ["INN 7826004234", "OGRN 1037851011120", "domain auto-help.ru"],
     "targeted_dedup_matches": 0,
     "write_paths_verified": [
-      "GitHub fetch_file full and ranged: content empty, blob SHA only",
-      "GitHub raw fetch: too large/unsupported",
-      "direct git transport from execution container: github.com DNS unavailable",
-      "GitHub contents/Git Data write paths: require complete replacement content for existing master"
+      "GitHub Git blob API: full leads_master content is readable by current blob SHA",
+      "GitHub contents update_file: existing file requires full replacement content inline",
+      "GitHub Git Data create_blob/create_tree/create_commit/update_ref: create_blob still requires full new blob content inline",
+      "No append/patch/stream-from-existing-blob mutation action is exposed by the connected GitHub tool",
+      "Repository has no .github/workflows path available for a pre-existing canonical append workflow"
     ],
-    "verified_at": "2026-09-04T19:30:18+03:00"
+    "verified_at": "2026-09-04T20:30:25+03:00"
   },
   "cursor": {
     "next_candidate": "ООО Авто-Хэлп",
