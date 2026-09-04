@@ -1,9 +1,145 @@
 {
-  "run_id": "N5K-20260904-628",
-  "updated_at": "2026-09-04T11:28:27+03:00",
-  "status": "RECOVERY_REQUIRED",
-  "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 50,
-  "note": "N5K-20260904-628 integrated verified rows but cannot be COMPLETED: raw_distinct=50<120. Supplemental discovery required."
+  "run_id": "N5K-20260904-629",
+  "updated_at": "2026-09-04T12:22:08+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "campaign_id": "new_5000",
+  "qualified_staged_not_counted": 3,
+  "funnel": {
+    "raw_distinct": 43,
+    "discovered": 43,
+    "fast_gate_passed": 14,
+    "size_check_passed": 14,
+    "legal_match_passed": 10,
+    "signal_confirmed": 8,
+    "lpr_identified": 5,
+    "contact_route_found": 3,
+    "qualified": 3,
+    "duplicates": 0,
+    "excluded": 40
+  },
+  "lane_metrics": [
+    {"lane":"regional_new_production_central","raw":6,"duplicates_early_rejects":4,"qualified":1,"saturation_rotations":0},
+    {"lane":"industrial_expansion_northwest","raw":5,"duplicates_early_rejects":3,"qualified":1,"saturation_rotations":0},
+    {"lane":"robotics_automation","raw":5,"duplicates_early_rejects":4,"qualified":0,"saturation_rotations":0},
+    {"lane":"export_international_expansion","raw":4,"duplicates_early_rejects":4,"qualified":0,"saturation_rotations":0},
+    {"lane":"food_fmcg_scale","raw":4,"duplicates_early_rejects":4,"qualified":0,"saturation_rotations":0},
+    {"lane":"packaging_materials","raw":4,"duplicates_early_rejects":3,"qualified":1,"saturation_rotations":0},
+    {"lane":"regional_industrial_volga","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"moscow_region_new_sites","raw":4,"duplicates_early_rejects":3,"qualified":1,"saturation_rotations":0},
+    {"lane":"management_commercial_transformation","raw":3,"duplicates_early_rejects":3,"qualified":0,"saturation_rotations":0},
+    {"lane":"regional_investment_projects","raw":3,"duplicates_early_rejects":3,"qualified":0,"saturation_rotations":0}
+  ],
+  "qualified_companies": [
+    {
+      "Lead ID": "N5K-7720605108",
+      "Brand": "Фабрика Вентиляции ГалВент",
+      "Legal Name": "ООО \"ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ\"",
+      "INN": "7720605108",
+      "OGRN/OGRNIP": "1087746091410",
+      "Region": "Московская область",
+      "City": "Балашиха",
+      "Segment": "Промышленное производство / вентиляционное оборудование",
+      "Website": "https://www.galvent.ru/",
+      "Revenue/Scale": "45 000 м² производственных площадей; 525 сотрудников по текущим публичным данным; более 200 000 изделий в день",
+      "Signal Level": "S1-S2",
+      "Signal Summary": "Запущен новый полномасштабный производственный комплекс вентиляционного оборудования в Балашихе; компания также сообщает о расширении мощностей и присутствия в Беларуси.",
+      "Signal Date": "2026-08-05",
+      "Signal Source": "https://www.vedomosti.ru/press_releases/2026/08/05/podmoskovnaya-kompaniya-zapustila-novii-zavod-po-vipusku-ventilyatsionnogo-oborudovaniya",
+      "Owner": "Прахов Кирилл Валерьевич",
+      "CEO": "Прахов Кирилл Валерьевич",
+      "LPR": "Прахов Кирилл Валерьевич",
+      "LPR Role": "генеральный директор и учредитель",
+      "Primary Phone": "+7 495 790-76-98",
+      "Primary Email": "galvent@galvent.su",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "official corporate email/phone",
+      "Contact Source": "https://www.galvent.ru/company/",
+      "Consulting Hypothesis": "Масштабирование производства и коммерческой функции на фоне запуска нового комплекса и расширения рынков.",
+      "contacts": [
+        {"value":"galvent@galvent.su","channel":"email","type":"corporate","source":"official company site","url":"https://www.galvent.ru/company/","is_lpr":false},
+        {"value":"+7 495 790-76-98","channel":"phone","type":"corporate","source":"official company site","url":"https://www.galvent.ru/company/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"signal","claim":"Запуск нового производственного комплекса в Балашихе в 2026 году.","url":"https://www.vedomosti.ru/press_releases/2026/08/05/podmoskovnaya-kompaniya-zapustila-novii-zavod-po-vipusku-ventilyatsionnogo-oborudovaniya","source":"Ведомости / официальный региональный пресс-релиз"},
+        {"type":"company","claim":"Официальные сведения о компании, масштабе и контактах.","url":"https://www.galvent.ru/company/","source":"ГалВент"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-7819039902",
+      "Brand": "Лазерные системы",
+      "Legal Name": "АО \"ЛАЗЕРНЫЕ СИСТЕМЫ\"",
+      "INN": "7819039902",
+      "OGRN/OGRNIP": "1187847309913",
+      "Region": "Санкт-Петербург",
+      "City": "Санкт-Петербург",
+      "Segment": "Высокотехнологичное производство / лазерные и аддитивные системы",
+      "Website": "https://www.lsystems.ru/",
+      "Revenue/Scale": "250+ специалистов; собственный высокотехнологичный производственный комплекс 6 000 м²; среднее предприятие по текущим публичным данным",
+      "Signal Level": "S1-S2",
+      "Signal Summary": "Запущен инвестиционный проект существенного расширения аддитивного производства в ОЭЗ Санкт-Петербурга.",
+      "Signal Date": "2026-06-03",
+      "Signal Source": "https://www.gov.spb.ru/gov/otrasl/c_industrial_and_trade/news/316728/",
+      "Owner": "",
+      "CEO": "Дмитрий Васильев",
+      "LPR": "Дмитрий Васильев",
+      "LPR Role": "генеральный директор",
+      "Primary Phone": "+7 812 612-02-88",
+      "Primary Email": "office@lsystems.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "official corporate email/phone",
+      "Contact Source": "https://www.lsystems.ru/",
+      "Consulting Hypothesis": "Управление ростом и коммерческим масштабированием на фоне инвестиционного расширения производственных мощностей.",
+      "contacts": [
+        {"value":"office@lsystems.ru","channel":"email","type":"corporate","source":"official company site","url":"https://www.lsystems.ru/","is_lpr":false},
+        {"value":"+7 812 612-02-88","channel":"phone","type":"corporate","source":"official company site","url":"https://www.lsystems.ru/","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"signal","claim":"Инвестиционный проект расширения аддитивного производства в ОЭЗ Санкт-Петербурга.","url":"https://www.gov.spb.ru/gov/otrasl/c_industrial_and_trade/news/316728/","source":"Администрация Санкт-Петербурга"},
+        {"type":"company","claim":"Официальные сведения о производстве, масштабе и контактах.","url":"https://www.lsystems.ru/","source":"Лазерные системы"}
+      ]
+    },
+    {
+      "Lead ID": "N5K-4825047455",
+      "Brand": "Л-ПАК",
+      "Legal Name": "ООО \"Л-ПАК\"",
+      "INN": "4825047455",
+      "OGRN/OGRNIP": "1064823063656",
+      "Region": "Липецкая область",
+      "City": "Липецк",
+      "Segment": "Промышленное производство / упаковка и гофрокартон",
+      "Website": "https://l-pak.ru/",
+      "Revenue/Scale": "21,74 млрд ₽ выручки за 2025 год и 1 586 сотрудников по текущим публичным данным; несколько производственных площадок",
+      "Signal Level": "S1",
+      "Signal Summary": "Анонсирован новый завод гофрокартона и упаковки в Тихорецке с инвестициями 9,3 млрд ₽ и более 300 планируемых рабочих мест; в феврале 2026 запущена первая очередь завода в Кашире.",
+      "Signal Date": "2026-06-08",
+      "Signal Source": "https://www.publish.ru/news/202606_20099237",
+      "Owner": "Петр Каранчук",
+      "CEO": "",
+      "LPR": "Петр Каранчук",
+      "LPR Role": "основатель ООО \"УК Л-ПАК\"; ранее публично указан как генеральный директор Л-ПАК",
+      "Primary Phone": "+7 4742 555-888",
+      "Primary Email": "l-pak@l-pak.ru",
+      "HH Contact": "",
+      "Contact Form": "",
+      "Contact Type": "official corporate email/phone",
+      "Contact Source": "https://l-pak.ru/contacts",
+      "Consulting Hypothesis": "Масштабирование операционной и коммерческой модели при запуске новых производственных площадок и резком росте производственного контура.",
+      "contacts": [
+        {"value":"l-pak@l-pak.ru","channel":"email","type":"corporate","source":"official company contact page","url":"https://l-pak.ru/contacts","is_lpr":false},
+        {"value":"+7 4742 555-888","channel":"phone","type":"corporate","source":"official company contact page","url":"https://l-pak.ru/contacts","is_lpr":false}
+      ],
+      "evidence": [
+        {"type":"signal","claim":"Новый завод упаковки в Тихорецке с инвестициями 9,3 млрд ₽.","url":"https://www.publish.ru/news/202606_20099237","source":"Publish"},
+        {"type":"signal","claim":"Запуск первой очереди завода в Кашире в феврале 2026 года.","url":"https://www.publish.ru/news/202602_20098765","source":"Publish"},
+        {"type":"company","claim":"Официальные реквизиты и опубликованный маршрут связи.","url":"https://l-pak.ru/contacts","source":"Л-ПАК"}
+      ]
+    }
+  ],
+  "external_technical_limitation": {
+    "proven": false,
+    "evidence": ""
+  },
+  "notes": "Fresh official_owner staging from 2026-09-04 12:17 was processed. Three prequalified companies were rechecked against repository search by INN with no match returned and passed to the single canonical writer. A separate fresh growth_news worker produced 120 raw but explicitly marked all 120 BLOCKED_BEFORE_FAST_GATE because its physical full-key dedup was unresolved; those blocked rows are not inflated into this authoritative funnel. Supplemental web discovery was also performed but is not counted authoritatively without completed canonical-key dedup. Criteria unchanged; outreach 0."
 }
