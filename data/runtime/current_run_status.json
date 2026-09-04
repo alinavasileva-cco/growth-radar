@@ -3,7 +3,7 @@
   "run_sequence": 631,
   "campaign_id": "new_5000",
   "status": "REPLAY_BLOCKED",
-  "stage": "CANONICAL_WRITE_BLOCKED_NO_PATCH_OR_STREAMING_MUTATION",
+  "stage": "CANONICAL_WRITE_BLOCKED_NO_SAFE_APPEND_PRIMITIVE",
   "baseline": 614,
   "replay_total": 60,
   "checked": 23,
@@ -63,23 +63,23 @@
   "current_execution_blocker": {
     "candidate": "ООО Авто-Хэлп",
     "state": "ALL_QUALITY_GATES_EVIDENCED_PENDING_PHYSICAL_CANONICAL_WRITE",
-    "details": "Fresh recheck on 2026-09-04 confirms the exact active ООО Авто-Хэлп, INN 7826004234 / OGRN 1037851011120, official domain auto-help.ru, published official contacts and current job-intent evidence. The physical leads_master is readable through Git blob API and targeted current-master dedup by INN returned zero matches. The remaining blocker is mutation capability: available GitHub update_file/create_blob actions require the complete replacement blob supplied inline and expose no append/patch/stream-from-existing-blob operation. Canonical leads_master/contactable_master cannot therefore be safely appended in this execution environment without retransmitting/reconstructing the full ~1 MB files. No blind, partial or noncanonical write was attempted.",
+    "details": "The physical leads_master is readable through the Git blob API and targeted current-master dedup by INN/OGRN/domain returned zero matches. The blocker is write capability, not read capability. Available GitHub mutation actions require complete replacement content supplied inline and expose no append/patch/stream-from-existing-blob operation. An ordinary Git transport path was also tested in this execution environment and was unavailable, so a safe canonical append cannot be completed without retransmitting/reconstructing the full canonical CSV files. No blind, partial, staging or noncanonical write was attempted.",
     "targeted_dedup_attempts": ["INN 7826004234", "OGRN 1037851011120", "domain auto-help.ru"],
     "targeted_dedup_matches": 0,
     "fresh_evidence_recheck": [
       "Exact active legal entity: ООО Авто-Хэлп, INN 7826004234, OGRN 1037851011120",
-      "Independent company source reports 2024 revenue about 656.8m RUB and 23 employees in 2025",
-      "Official site auto-help.ru publishes phone +7 (812) 363-00-00 and office@auto-help.ru",
-      "Fresh job-board copy of the ROP vacancy confirms sales-plan ownership, KPI setting and department analytics"
+      "Current scale gate previously passed in this replay and was not weakened",
+      "Official domain auto-help.ru and published practical contact were confirmed in this replay",
+      "Fresh job-intent evidence previously passed the S1-S3 gate in this replay"
     ],
     "write_paths_verified": [
       "GitHub Git blob API: physical leads_master content is readable by current blob SHA",
       "GitHub contents update_file: existing file requires full replacement content inline",
-      "GitHub Git Data create_blob/create_tree/create_commit: create_blob requires full new blob content inline",
       "No append/patch/stream-from-existing-blob mutation action is exposed by the connected GitHub tool",
-      "No pre-existing canonical append workflow is available in the repository"
+      "Ordinary Git transport from the execution environment was tested and unavailable",
+      "No staging or partial canonical workaround used"
     ],
-    "verified_at": "2026-09-04T21:30:47+03:00"
+    "verified_at": "2026-09-04T22:32:11+03:00"
   },
   "cursor": {
     "next_candidate": "ООО Авто-Хэлп",
