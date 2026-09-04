@@ -3,7 +3,7 @@
   "run_sequence": 631,
   "campaign_id": "new_5000",
   "status": "REPLAY_BLOCKED",
-  "stage": "CANONICAL_WRITE_BLOCKED_NO_SAFE_APPEND_PRIMITIVE",
+  "stage": "CANONICAL_AGGREGATE_REWRITE_BLOCKED_NO_COMPLETE_MASTER_PAYLOAD",
   "baseline": 614,
   "replay_total": 60,
   "checked": 23,
@@ -63,23 +63,25 @@
   "current_execution_blocker": {
     "candidate": "ООО Авто-Хэлп",
     "state": "ALL_QUALITY_GATES_EVIDENCED_PENDING_PHYSICAL_CANONICAL_WRITE",
-    "details": "The physical leads_master is readable through the Git blob API and targeted current-master dedup by INN/OGRN/domain returned zero matches. The blocker is write capability, not read capability. Available GitHub mutation actions require complete replacement content supplied inline and expose no append/patch/stream-from-existing-blob operation. An ordinary Git transport path was also tested in this execution environment and was unavailable, so a safe canonical append cannot be completed without retransmitting/reconstructing the full canonical CSV files. No blind, partial, staging or noncanonical write was attempted.",
+    "details": "Targeted current-master dedup by INN/OGRN/domain returned zero matches. Low-level Git write primitives (blob/tree/commit/ref) and contents update_file are available, but all require the complete updated aggregate CSV content to create the replacement blob/file. The connected read actions do not expose the large aggregate leads_master/contactable_master as a complete reusable UTF-8 payload or file reference suitable for retransmission, and no repository-native rebuild/aggregate mechanism from master_shards/contactable_shards was found. Therefore the mandatory aggregate canonical write cannot be completed safely in this environment. No shard-only, partial, reconstructed, blind, staging or noncanonical write was counted as physical integration.",
     "targeted_dedup_attempts": ["INN 7826004234", "OGRN 1037851011120", "domain auto-help.ru"],
     "targeted_dedup_matches": 0,
+    "candidate_lead_id_if_written": "N5K-7826004234",
     "fresh_evidence_recheck": [
       "Exact active legal entity: ООО Авто-Хэлп, INN 7826004234, OGRN 1037851011120",
-      "Current scale gate previously passed in this replay and was not weakened",
-      "Official domain auto-help.ru and published practical contact were confirmed in this replay",
-      "Fresh job-intent evidence previously passed the S1-S3 gate in this replay"
+      "Current scale gate passed in this replay without weakening criteria",
+      "Official domain auto-help.ru and published practical contact confirmed in this replay",
+      "Fresh job-intent evidence passed the S1-S3 gate in this replay"
     ],
     "write_paths_verified": [
-      "GitHub Git blob API: physical leads_master content is readable by current blob SHA",
-      "GitHub contents update_file: existing file requires full replacement content inline",
-      "No append/patch/stream-from-existing-blob mutation action is exposed by the connected GitHub tool",
-      "Ordinary Git transport from the execution environment was tested and unavailable",
-      "No staging or partial canonical workaround used"
+      "GitHub contents update_file requires complete replacement UTF-8 content",
+      "GitHub low-level blob/tree/commit/ref path exists but still requires complete replacement blob content",
+      "Large aggregate master is not exposed by connected read actions as a complete reusable payload/file reference",
+      "Repository code search found no rebuild/aggregate mechanism for master_shards",
+      ".github/workflows is absent on current main; no server-side aggregate rebuild workflow confirmed",
+      "No shard-only or partial canonical workaround used"
     ],
-    "verified_at": "2026-09-04T22:32:11+03:00"
+    "verified_at": "2026-09-05T00:33:00+03:00"
   },
   "cursor": {
     "next_candidate": "ООО Авто-Хэлп",
