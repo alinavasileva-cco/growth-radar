@@ -1,35 +1,9 @@
 {
   "run_id": "N5K-20260904-625",
   "updated_at": "2026-09-04T08:27:09+03:00",
-  "status": "READY_FOR_INTEGRATION",
+  "status": "RECOVERY_REQUIRED",
   "qualified_companies": [],
   "qualified_staged_not_counted": 0,
-  "funnel": {
-    "raw_distinct": 42,
-    "discovered": 42,
-    "fast_gate_passed": 0,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
-    "qualified": 0,
-    "duplicates": 0,
-    "excluded": 42
-  },
-  "lane_metrics": [
-    {"lane":"regional_investment_new_production","raw":7,"duplicates_early_rejects":7,"qualified":0,"saturation_rotations":0},
-    {"lane":"industrial_park_sez_technopark","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
-    {"lane":"regional_private_expansion","raw":4,"duplicates_early_rejects":4,"qualified":0,"saturation_rotations":0},
-    {"lane":"sme_growth_cases","raw":2,"duplicates_early_rejects":2,"qualified":0,"saturation_rotations":0},
-    {"lane":"export_dealer_partner_expansion","raw":3,"duplicates_early_rejects":3,"qualified":0,"saturation_rotations":0},
-    {"lane":"logistics_warehouse_commercial_property","raw":3,"duplicates_early_rejects":3,"qualified":0,"saturation_rotations":0},
-    {"lane":"new_line_workshop_factory","raw":4,"duplicates_early_rejects":4,"qualified":0,"saturation_rotations":0},
-    {"lane":"trade_association_business_growth","raw":2,"duplicates_early_rejects":2,"qualified":0,"saturation_rotations":0},
-    {"lane":"company_pressroom_owner_ceo","raw":4,"duplicates_early_rejects":4,"qualified":0,"saturation_rotations":0},
-    {"lane":"commercial_contract_growth_signal","raw":2,"duplicates_early_rejects":2,"qualified":0,"saturation_rotations":0},
-    {"lane":"branches_stores_service_centers","raw":4,"duplicates_early_rejects":4,"qualified":0,"saturation_rotations":0},
-    {"lane":"private_investment_ma","raw":2,"duplicates_early_rejects":2,"qualified":0,"saturation_rotations":0}
-  ],
-  "notes": "42 genuinely distinct employer-level candidates verified from fresh web discovery across 12 low-overlap source families. Supplemental discovery was continued after initial lanes, but authoritative raw remained below 120. No external technical limitation claimed. All 42 were conservatively rejected at FAST GATE because current private-company/scale/legal-fit requirements were not sufficiently confirmed for deep-check; criteria unchanged; no outreach."
+  "raw_distinct": 42,
+  "note": "N5K-20260904-625 integrated verified rows but cannot be COMPLETED: raw_distinct=42<120. Supplemental discovery required."
 }
