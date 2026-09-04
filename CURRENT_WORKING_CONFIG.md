@@ -138,3 +138,7 @@ Canonical/contactable: 613/613. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritati
 
 ## Latest attempted run N5K-20260904-628
 Canonical/contactable: 613/613. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 50. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.
+
+
+## Latest attempted run N5K-20260904-629
+Canonical/contactable: 614/614. Status: UNDERDONE_RECOVERY_REQUIRED. Authoritative raw distinct: 43. Integrity PASS. Orphan contacts/evidence: 0/0. Outreach: 0.

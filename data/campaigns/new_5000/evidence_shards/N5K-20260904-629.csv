@@ -1,0 +1,4 @@
+Lead ID,Evidence ID,Evidence Type,Claim,Source URL,Source Name,Checked At,Reliability,Run ID,Campaign ID
+N5K-4825047455,N5K-4825047455-E01,signal,"Новый завод упаковки в Тихорецке с инвестициями 9,3 млрд ₽.",https://www.publish.ru/news/202606_20099237,Publish,2026-09-04T12:22:08+03:00,HIGH,N5K-20260904-629,new_5000
+N5K-4825047455,N5K-4825047455-E02,signal,Запуск первой очереди завода в Кашире в феврале 2026 года.,https://www.publish.ru/news/202602_20098765,Publish,2026-09-04T12:22:08+03:00,HIGH,N5K-20260904-629,new_5000
+N5K-4825047455,N5K-4825047455-E03,company,Официальные реквизиты и опубликованный маршрут связи.,https://l-pak.ru/contacts,Л-ПАК,2026-09-04T12:22:08+03:00,HIGH,N5K-20260904-629,new_5000
