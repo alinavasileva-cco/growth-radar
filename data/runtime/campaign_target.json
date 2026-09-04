@@ -11,7 +11,7 @@
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
-  "updated_at": "2026-09-04T12:37:35+03:00",
+  "updated_at": "2026-09-04T12:49:51+03:00",
   "namespace": "data/campaigns/new_5000",
   "last_completed_run_id": "N5K-20260903-609",
   "current_run_id": "N5K-20260904-630",
@@ -19,17 +19,17 @@
   "latest_completed_run": "N5K-20260903-609",
   "latest_attempted_run": "N5K-20260904-630",
   "latest_attempted_run_id": "N5K-20260904-630",
-  "latest_attempted_run_status": "UNDERDONE_ROUTE144_RAW_BELOW_30",
+  "latest_attempted_run_status": "UNDERDONE_ROUTE144_QUALIFICATION_INCOMPLETE",
   "canonical_integration_run_id": "N5K-20260904-629",
   "hourly_baseline_count": 614,
   "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "active_wip": 0,
+  "active_wip": 28,
   "outreach_sent": 0,
   "latest_run_efficiency": {
     "run_id": "N5K-20260904-630",
-    "raw": 4,
+    "raw": 35,
     "fast_gate": 3,
     "size": 0,
     "legal": 0,
@@ -37,21 +37,15 @@
     "lpr": 0,
     "contact": 0,
     "qualified": 0,
-    "duplicates": 0,
+    "duplicates": 3,
     "excluded": 4,
     "route144_normal_raw_min": 30,
     "route144_normal_raw_max": 60,
-    "normal_package_reached": false,
-    "raw_count_note": "Exactly 4 employer-level candidates were sufficiently verified to count authoritatively. Broader HH listing counts were not inflated into raw because candidate-level dedup and FAST GATE were incomplete. Fresh CURRENT_WORKING_CONFIG restored RUN-144 job-intent first and removed legacy 120/300/400/800 floors and mandatory 10 lanes. No candidate reached QUALIFIED; no physical canonical write; outreach 0."
+    "normal_package_reached": true,
+    "raw_count_note": "Same logical RUN 630 resumed. Job-intent discovery reached 35 distinct employer-level raw. Three are confirmed physical canonical duplicates (Идеальный турник, IGM / ИГРОФЕСТ, FTL-cargo). Four previously reviewed candidates remain excluded. Twenty-eight nonduplicate supplemental candidates still require full legal/scale/signal/LPR/contact disposition, so the run is not completed and no qualified company is counted."
   },
-  "latest_run_lane_efficiency": [
-    {"lane":"job_intent_build_sales_zero","raw":1},
-    {"lane":"job_intent_b2b_scale","raw":1},
-    {"lane":"job_intent_new_direction","raw":1},
-    {"lane":"job_intent_channel_transformation","raw":1}
-  ],
-  "fresh_staging": "none; no worker/staging route used in N5K-20260904-630",
-  "repair_required": "NONE_SEPARATE_WRITER_FORBIDDEN; NEXT_CANONICAL_RUN_SHOULD_USE_ROUTE144_30_60_RAW",
+  "fresh_staging": "none; all active candidate work remains inside canonical RUN N5K-20260904-630",
+  "repair_required": "NONE_SEPARATE_WRITER_FORBIDDEN; RESUME_SAME_RUN_630_UNTIL_28_CANDIDATES_DISPOSITIONED",
   "recovery_required": false,
-  "note": "N5K-20260904-630 used fresh Russian HH job-intent probes under restored RUN-144 config. Authoritative raw=4, qualified/net_new=0, canonical/contactable=614/614, integrity PASS, orphans 0/0, active WIP 0, outreach 0. Run is underdone versus normal 30-60 package, but no separate recovery writer is created."
+  "note": "N5K-20260904-630 reached the route-144 normal raw package at 35 raw but remains underdone because qualification is incomplete for 28 nonduplicate candidates. Canonical/contactable remains 614/614, integrity PASS, orphan contacts/evidence 0/0, outreach 0."
 }
