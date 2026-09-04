@@ -16,23 +16,16 @@
 1. Если `data/runtime/current_run_status.json` показывает `active_wip > 0`, новый discovery запрещён.
 2. Сначала довести каждый активный кандидат текущего run_id до финального `duplicate`, `excluded` с конкретной причиной или `qualified`.
 3. Fully-qualified кандидат записывается физически сразу после прохождения всех gates; он не ждёт окончания обработки всей пачки.
-4. После `active_wip = 0` работать по одному кандидату end-to-end: discovery/replay candidate → dedup → legal → scale → signal → LPR → contact → final dedup → physical write/exclude.
+4. После `active_wip = 0` работать по одному кандидату end-to-end: replay candidate → dedup → legal → scale → signal → LPR → contact → final dedup → physical write/exclude.
 5. Норма `active_wip`: 0; временно максимум 1.
 6. Запрещено сначала собирать пачку и оставлять десятки компаний на будущий запуск.
 7. При missing evidence перед `EXCLUDED` обязательны минимум две независимые targeted попытки найти недостающий факт.
 
 ## Discovery — HH/job-intent first
 
-Основной источник — свежие русскоязычные вакансии российских работодателей, прежде всего HH, при необходимости другие российские job boards. Вакансия — бизнес-сигнал. Анализировать полный текст, а не title/ключевые слова.
+После завершения текущего replay основной источник — свежие русскоязычные вакансии российских работодателей, прежде всего HH, при необходимости другие российские job boards. Вакансия — бизнес-сигнал. Анализировать полный текст, а не title/ключевые слова.
 
-Приоритет сигналам:
-- построить/перезапустить отдел продаж;
-- CRM, воронка, KPI, скрипты, регламенты, аналитика;
-- рост выручки, прибыли, маржинальности;
-- лидогенерация / outbound B2B;
-- дилерские, партнёрские, проектные продажи;
-- построение коммерческой команды/функции;
-- вывод собственника из операционки.
+Приоритет сигналам: построить/перезапустить отдел продаж; CRM/воронка/KPI/скрипты/регламенты/аналитика; рост выручки/прибыли/маржинальности; лидогенерация/outbound B2B; дилерские/партнёрские/проектные продажи; построение коммерческой команды/функции; вывод собственника из операционки.
 
 Англоязычные лиды и вакансии исключать. Каталоги, реестры, индустриальные парки, массовые investment lists не использовать как основной discovery.
 
@@ -62,9 +55,9 @@ Qualified записывается в том же выполнении сраз�
 
 `N5K-20260904-631` — срочный replay накопленных job-intent работодателей после завершённого RUN 630. Пока replay не завершён, **новый широкий discovery запрещён**.
 
-Текущее подтверждённое состояние replay: baseline 614; replay_total 60; checked 8; remaining 52; duplicates 4; excluded 4; legal_pass 1; scale_pass 1; signal_pass 0; LPR_pass 0; contact_pass 0; qualified/net_new 0/0; canonical/contactable 614/614; integrity PASS; orphan contacts/evidence 0/0; active_wip 0; outreach 0.
+Текущее подтверждённое состояние replay: baseline 614; replay_total 60; checked 9; remaining 51; duplicates 4; excluded 5; legal_pass 2; scale_pass 1; signal_pass 0; LPR_pass 0; contact_pass 0; qualified/net_new 0/0; canonical/contactable 614/614; integrity PASS; orphan contacts/evidence 0/0; active_wip 0; outreach 0.
 
-Следующий кандидат по сохранённому cursor: **ООО Иксхантер**. Следующее выполнение обязано продолжить **тот же `N5K-20260904-631`**, а не создавать новый RUN и не запускать новый discovery.
+Следующий кандидат по сохранённому cursor: **ООО Бэкграунд**. Следующее выполнение обязано продолжить **тот же `N5K-20260904-631`**, а не создавать новый RUN и не запускать новый discovery.
 
 ROOT_CAUSE replay: (A) full-tree/global preflight + truncated connector → fail-closed до discovery; (B) batch-first → десятки WIP; (C) shallow evidence acquisition → false excludes.
 
