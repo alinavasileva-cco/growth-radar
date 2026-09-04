@@ -78,6 +78,7 @@
 - Не оставлять qualified только в pending/staging.
 - При desync исправлять его внутри того же canonical RUN, не запускать отдельную recovery-ветку.
 - RUN завершён только после физической записи в main, canonical=contactable, integrity PASS, orphan contacts=0, orphan evidence=0, active WIP=0 и проверки свежего HEAD SHA.
+- Если discovery уже достиг 30 raw, но обязательная квалификация части кандидатов ещё не завершена, **не начинать новый run_id**: продолжать тот же canonical RUN до полного disposition всех активных кандидатов и `active_wip=0`.
 
 ## Что отключено и запрещено
 
@@ -123,13 +124,18 @@
 ## Latest attempted canonical RUN N5K-20260904-630
 
 - route: restored RUN-144 job-intent first;
+- same logical run resumed; no new run_id created;
 - baseline: **614**;
-- authoritative raw: **4**;
-- funnel: **4 raw → 3 FAST GATE → 0 SIZE → 0 LEGAL → 0 SIGNAL → 0 LPR → 0 CONTACT → 0 QUALIFIED**;
-- duplicates / excluded: **0 / 4**;
-- net_new: **0**;
+- authoritative employer-level raw: **35**;
+- normal route-144 package reached: **yes (35 >= 30)**;
+- confirmed physical canonical duplicates: **3** — `Идеальный турник`, `IGM / ИГРОФЕСТ`, `FTL-cargo`;
+- fully dispositioned excluded: **4**;
+- funnel currently: **35 raw → 3 FAST GATE → 0 SIZE → 0 LEGAL → 0 SIGNAL → 0 LPR → 0 CONTACT → 0 QUALIFIED**;
+- 28 nonduplicate supplemental candidates remain inside the same RUN awaiting full legal/scale/signal/LPR/contact qualification;
+- qualified / net_new: **0 / 0**;
 - canonical/contactable: **614 / 614**;
 - remaining: **4386**;
-- integrity PASS; orphan contacts/evidence **0 / 0**; active WIP **0**; outreach **0**;
-- status/stage: `UNDERDONE_ROUTE144_RAW_BELOW_30 / UNDERDONE`;
-- no worker/staging/recovery/dedup writer created.
+- integrity PASS; orphan contacts/evidence **0 / 0**; active WIP **28**; outreach **0**;
+- status/stage: `UNDERDONE_ROUTE144_QUALIFICATION_INCOMPLETE / UNDERDONE`;
+- next execution must RESUME `N5K-20260904-630` until all 28 candidates are dispositioned and active WIP returns to 0;
+- no worker/staging/pending/recovery/dedup writer created.
