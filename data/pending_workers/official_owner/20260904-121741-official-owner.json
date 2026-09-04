@@ -1,0 +1,159 @@
+{
+  "schema_version": "official_owner_worker_v1",
+  "lane": "official_owner",
+  "created_at": "2026-09-04T12:17:41+03:00",
+  "mode": "READ_DISCOVERY_ONLY",
+  "canonical_writer": false,
+  "campaign_id": "new_5000",
+  "config_source": "CURRENT_WORKING_CONFIG.md",
+  "config_constraints": {
+    "criteria_changed": false,
+    "criteria_weakened": false,
+    "canonical_modified": false,
+    "contactable_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false,
+    "outreach_performed": false
+  },
+  "baseline_observed": {
+    "canonical_contactable": "613/613",
+    "integrity": "PASS",
+    "staged_counted_as_qualified": 0,
+    "note": "Worker staging is not net QUALIFIED. Final physical global dedup belongs to canonical writer."
+  },
+  "discovery_summary": {
+    "distinct_employer_level_raw": 43,
+    "target_range": "70-130",
+    "target_met": false,
+    "target_note": "Only employer-level candidates actually surfaced from authoritative/traceable sources in this run are counted; volume was not padded with weak directories or inferred companies.",
+    "source_batches": 10,
+    "funnel": {
+      "RAW": 43,
+      "SIZE": 14,
+      "LEGAL": 10,
+      "SIGNAL": 8,
+      "LPR": 5,
+      "CONTACT": 3,
+      "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP": 3,
+      "REJECT": 40
+    }
+  },
+  "source_batch_metrics": [
+    {"batch":"regional_new_production_central","raw":6,"duplicates_plus_early_rejects":4,"deep_checked":2,"prequalified":1},
+    {"batch":"industrial_expansion_northwest","raw":5,"duplicates_plus_early_rejects":3,"deep_checked":2,"prequalified":1},
+    {"batch":"robotics_automation","raw":5,"duplicates_plus_early_rejects":4,"deep_checked":1,"prequalified":0},
+    {"batch":"export_international_expansion","raw":4,"duplicates_plus_early_rejects":4,"deep_checked":0,"prequalified":0},
+    {"batch":"food_fmcg_scale","raw":4,"duplicates_plus_early_rejects":4,"deep_checked":1,"prequalified":0},
+    {"batch":"packaging_materials","raw":4,"duplicates_plus_early_rejects":3,"deep_checked":1,"prequalified":1},
+    {"batch":"regional_industrial_volga","raw":5,"duplicates_plus_early_rejects":5,"deep_checked":0,"prequalified":0},
+    {"batch":"moscow_region_new_sites","raw":4,"duplicates_plus_early_rejects":3,"deep_checked":1,"prequalified":1},
+    {"batch":"management_commercial_transformation","raw":3,"duplicates_plus_early_rejects":3,"deep_checked":0,"prequalified":0},
+    {"batch":"regional_investment_projects","raw":3,"duplicates_plus_early_rejects":3,"deep_checked":0,"prequalified":0}
+  ],
+  "dedup_policy": {
+    "historical_pending_full_materialization_required": false,
+    "checked_sources": ["campaign physical canonical/contactable context from CURRENT_WORKING_CONFIG", "available repository code search", "candidate-level INN", "candidate-level exact legal/brand", "candidate-level brand+domain"],
+    "final_global_dedup_required": true
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Фабрика Вентиляции ГалВент",
+      "legal_name": "ООО \"ФАБРИКА ВЕНТИЛЯЦИИ ГАЛВЕНТ\"",
+      "inn": "7720605108",
+      "ogrn": "1087746091410",
+      "domain": "galvent.ru",
+      "size": {
+        "result": "PASS",
+        "evidence": "Official company materials describe the company as a system-forming enterprise, 45,000 m2 production footprint, about 1,000 machines and more than 200,000 products/day; public company data reports 525 employees."
+      },
+      "legal": {"result":"PASS","evidence":"Active legal entity; INN 7720605108, OGRN 1087746091410."},
+      "signal": {
+        "result":"PASS",
+        "class":"S1-S2",
+        "date":"2026-08-05",
+        "summary":"Launched a new full-scale ventilation equipment production complex in Balashikha; company materials also report expanding production capacity and Belarus market presence in August 2026.",
+        "urls":["https://www.vedomosti.ru/press_releases/2026/08/05/podmoskovnaya-kompaniya-zapustila-novii-zavod-po-vipusku-ventilyatsionnogo-oborudovaniya","https://www.galvent.ru/","https://t.me/galventgalvent"]
+      },
+      "lpr": {"result":"PASS","name":"Прахов Кирилл Валерьевич","role":"генеральный директор и учредитель"},
+      "contact": {"result":"PASS","routes":["galvent@galvent.su","+7 495 790-76-98"],"published_on":"official company site","url":"https://www.galvent.ru/company/"},
+      "dedup_checks": {
+        "inn_repo_search":"NO_MATCH_RETURNED",
+        "exact_brand_repo_search":"NO_MATCH_RETURNED",
+        "brand_domain_repo_search":"NO_MATCH_RETURNED",
+        "final_global_dedup":"REQUIRED_BY_CANONICAL_WRITER"
+      },
+      "evidence_urls":["https://www.galvent.ru/company/","https://www.galvent.ru/","https://companies.rbc.ru/id/1087746091410-ooo-fabrika-ventilyatsii-galvent/","https://www.vedomosti.ru/press_releases/2026/08/05/podmoskovnaya-kompaniya-zapustila-novii-zavod-po-vipusku-ventilyatsionnogo-oborudovaniya"]
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Лазерные системы",
+      "legal_name": "АО \"ЛАЗЕРНЫЕ СИСТЕМЫ\"",
+      "inn": "7819039902",
+      "ogrn": "1187847309913",
+      "domain": "lsystems.ru",
+      "size": {"result":"PASS","evidence":"Official site states 250+ specialists and 6,000 m2 own high-tech production complex; current company registry source classifies the entity as medium business."},
+      "legal": {"result":"PASS","evidence":"Active legal entity; INN 7819039902, OGRN 1187847309913."},
+      "signal": {
+        "result":"PASS",
+        "class":"S1-S2",
+        "date":"2026-06-03",
+        "summary":"Investment project launched to materially expand additive manufacturing production in the St Petersburg SEZ.",
+        "urls":["https://www.gov.spb.ru/gov/otrasl/c_industrial_and_trade/news/316728/","https://www.lsystems.ru/"]
+      },
+      "lpr": {"result":"PASS","name":"Дмитрий Васильев","role":"генеральный директор"},
+      "contact": {"result":"PASS","routes":["office@lsystems.ru","+7 812 612-02-88"],"published_on":"official company site","url":"https://www.lsystems.ru/"},
+      "dedup_checks": {
+        "inn_repo_search":"NO_MATCH_RETURNED",
+        "brand_domain_repo_search":"NO_MATCH_RETURNED",
+        "final_global_dedup":"REQUIRED_BY_CANONICAL_WRITER"
+      },
+      "evidence_urls":["https://www.gov.spb.ru/gov/otrasl/c_industrial_and_trade/news/316728/","https://www.lsystems.ru/","https://www.lsystems.ru/about/","https://www.lsystems.ru/news/ao-lazernye-sistemy-stalo-laureatom-pres/","https://check.tochka.com/company/1187847309913/"]
+    },
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Л-ПАК",
+      "legal_name": "ООО \"Л-ПАК\"",
+      "inn": "4825047455",
+      "ogrn": "1064823063656",
+      "domain": "l-pak.ru",
+      "size": {"result":"PASS","evidence":"2025 revenue 21.74 bn RUB and 1,586 employees reported in current public company data; official site shows multiple production sites."},
+      "legal": {"result":"PASS","evidence":"Active legal entity; INN 4825047455, OGRN 1064823063656; official contact page publishes these requisites."},
+      "signal": {
+        "result":"PASS",
+        "class":"S1",
+        "date":"2026-06-08",
+        "summary":"New Tikhoretsk packaging/corrugated-board plant project announced at PMEF-2026 with 9.3 bn RUB investment and 300+ planned jobs; in February 2026 the company also launched the first stage of its Kashira plant.",
+        "urls":["https://www.publish.ru/news/202606_20099237","https://www.publish.ru/news/202602_20098765","https://l-pak.ru/contacts"]
+      },
+      "lpr": {"result":"PASS","name":"Петр Каранчук","role":"founder of ООО \"УК Л-ПАК\"; previously publicly identified as general director of Л-ПАК"},
+      "contact": {"result":"PASS","routes":["l-pak@l-pak.ru","+7 4742 555-888"],"published_on":"official company contact page","url":"https://l-pak.ru/contacts"},
+      "dedup_checks": {
+        "inn_repo_search":"NO_MATCH_RETURNED",
+        "exact_brand_repo_search":"NO_MATCH_RETURNED",
+        "final_global_dedup":"REQUIRED_BY_CANONICAL_WRITER"
+      },
+      "evidence_urls":["https://l-pak.ru/contacts","https://www.publish.ru/news/202606_20099237","https://www.publish.ru/news/202602_20098765","https://www.kommersant.ru/doc/8571702","https://companies.rbc.ru/id/1244800008815-ooo-uk-l-pak/"]
+    },
+    {
+      "status":"REJECT",
+      "brand":"LAB вкуса",
+      "legal_name":"ООО \"ЛАБОРАТОРИЯ ВКУСА ЕКБ\"",
+      "inn":"6685179205",
+      "ogrn":"1206600055166",
+      "reason_stage":"SIZE",
+      "reason":"Current MСП registry data (updated July 2026) classifies the entity as microenterprise; rejected before SIGNAL/LPR/CONTACT despite fresh expansion signals.",
+      "evidence_urls":["https://companies.rbc.ru/id/1206600055166-lab-vkusa/","https://lab-vkus.ru/","https://www.retail.ru/rbc/pressreleases/4-5-mln-portsiy-v-mesyats-kak-lab-vkusa-masshtabiruet-proizvodstvo-aziatskikh-perekusov-v-povolzhe/"]
+    },
+    {
+      "status":"REJECT",
+      "brand":"СтанкоМашСтрой (Ижевск)",
+      "legal_name":"ООО \"СТАНКОМАШСТРОЙ\"",
+      "inn":"1800030221",
+      "ogrn":"1251800001221",
+      "reason_stage":"SIZE",
+      "reason":"Current public registry source classifies the entity as microenterprise; rejected at SIZE.",
+      "evidence_urls":["https://b2b.house/company/OOO-STANKOMASHSTROJ_3722d39d-6891-44af-b257-e6a831a2dd96/"]
+    }
+  ]
+}
