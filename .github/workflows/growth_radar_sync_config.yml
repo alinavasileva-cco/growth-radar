@@ -35,6 +35,7 @@ jobs:
 
           run_id = runtime['run_id']
           completed_run_id = target.get('last_completed_run_id') or target.get('latest_completed_run') or run_id
+          processed_run_id = target.get('latest_attempted_run_id') or target.get('latest_attempted_run') or run_id
           updated_at = runtime['updated_at']
           canonical = int(runtime['new_cycle']['current_canonical_count'])
           contactable = int(runtime['new_cycle']['current_contactable_count'])
@@ -48,7 +49,7 @@ jobs:
               (r'(?m)^\*\*Осталось до 1000:\*\* .*$', f'**Осталось до 1000:** **{remaining_1000}**  '),
               (r'(?m)^\*\*Осталось до 5000:\*\* .*$', f'**Осталось до 5000:** **{remaining_5000}**  '),
               (r'(?m)^- physical canonical/contactable count: .*$', f'- physical canonical/contactable count: **{canonical} / {contactable}**;'),
-              (r'(?m)^- последний физически обработанный RUN: .*$', f'- последний физически обработанный RUN: `{completed_run_id}`;'),
+              (r'(?m)^- последний физически обработанный RUN: .*$', f'- последний физически обработанный RUN: `{processed_run_id}`;'),
           ]
           for pattern, replacement in replacements:
               text, n = re.subn(pattern, replacement, text, count=1)
@@ -101,3 +102,4 @@ jobs:
 # sync repair N5K-20260903-608
 # sync recovery-aware N5K-20260904-618
 # sync recovery-aware N5K-20260904-629
+# sync processed-run metadata fix N5K-20260904-629
