@@ -55,9 +55,9 @@ Qualified записывается в том же выполнении сраз�
 
 `N5K-20260904-631` — срочный replay накопленных job-intent работодателей после завершённого RUN 630. Пока replay не завершён, **новый широкий discovery запрещён**.
 
-Текущее подтверждённое состояние replay: baseline 614; replay_total 60; checked 15; remaining 45; duplicates 4; excluded 11; legal_pass 5; scale_pass 2; signal_pass 0; LPR_pass 0; contact_pass 0; qualified/net_new 0/0; canonical/contactable 614/614; integrity PASS; orphan contacts/evidence 0/0; active_wip 0; outreach 0.
+Текущее подтверждённое состояние replay: baseline 614; replay_total 60; checked 18; remaining 42; duplicates 4; excluded 14; legal_pass 8; scale_pass 3; signal_pass 0; LPR_pass 0; contact_pass 0; qualified/net_new 0/0; canonical/contactable 614/614; integrity PASS; orphan contacts/evidence 0/0; active_wip 0; outreach 0.
 
-Следующий кандидат по сохранённому cursor: **ООО DELASIA**. Следующее выполнение обязано продолжить **тот же `N5K-20260904-631`**, а не создавать новый RUN и не запускать новый discovery.
+Следующий кандидат по сохранённому cursor: **ООО Формула успеха**. Следующее выполнение обязано продолжить **тот же `N5K-20260904-631`**, а не создавать новый RUN и не запускать новый discovery.
 
 ROOT_CAUSE replay: (A) full-tree/global preflight + truncated connector → fail-closed до discovery; (B) batch-first → десятки WIP; (C) shallow evidence acquisition → false excludes.
 
