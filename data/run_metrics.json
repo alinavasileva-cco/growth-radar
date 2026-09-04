@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-04T05:27:00+03:00",
+  "generated_at": "2026-09-04T06:28:21+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260903-609",
-  "current_run_id": "N5K-20260904-622",
+  "current_run_id": "N5K-20260904-623",
   "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_pool_verified": 613,
   "contactable_verified": 613,
@@ -16,12 +16,12 @@
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 60,
+    "raw_distinct": 40,
     "external_technical_limitation_proven": false,
     "passed": false
   },
-  "run_622": {
-    "raw_discovered": 60,
+  "run_623": {
+    "raw_discovered": 40,
     "fast_gate_passed": 0,
     "size_check_passed": 0,
     "legal_match_passed": 0,
@@ -31,12 +31,12 @@
     "qualified": 0,
     "physically_integrated": 0,
     "duplicates": 0,
-    "excluded": 60,
+    "excluded": 40,
     "lane_metrics": [
       {
         "lane": "regional_investment_new_production",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 8,
+        "duplicates_early_rejects": 8,
         "qualified": 0,
         "saturation_rotations": 0
       },
@@ -49,29 +49,29 @@
       },
       {
         "lane": "regional_private_expansion",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "sme_growth_cases",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "export_dealer_partner_expansion",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "logistics_warehouse_commercial_property",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       },
@@ -84,22 +84,22 @@
       },
       {
         "lane": "trade_association_business_growth",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 1,
+        "duplicates_early_rejects": 1,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "company_pressroom_owner_ceo",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "commercial_contract_growth_signal",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       },
@@ -112,8 +112,8 @@
       },
       {
         "lane": "private_investment_ma",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
+        "raw": 2,
+        "duplicates_early_rejects": 2,
         "qualified": 0,
         "saturation_rotations": 0
       }
