@@ -1,0 +1,112 @@
+{
+  "worker": "official_owner_manual_urgent",
+  "created_at": "2026-09-04T11:05:00+03:00",
+  "campaign_id": "new_5000",
+  "config_version": "2026-09-04T01:28:27+03:00",
+  "canonical_snapshot": {
+    "physical_leads_master": 613,
+    "physical_contactable_master": 613,
+    "source": "CURRENT_WORKING_CONFIG.md + fresh web discovery",
+    "outreach_performed": false,
+    "canonical_modified": false,
+    "contactable_modified": false,
+    "runtime_modified": false,
+    "campaign_modified": false
+  },
+  "dedup_policy": {
+    "keys": ["inn", "ogrn_ogrnip", "exact_legal_name", "brand_plus_domain"],
+    "final_global_dedup_owner": "canonical_writer",
+    "worker_net_qualified_count": 0
+  },
+  "funnel": {
+    "distinct_employer_level_raw_resolved": 6,
+    "prequalified_needs_final_global_dedup": 1,
+    "reject_or_hold": 5
+  },
+  "source_batches": [
+    {
+      "batch": "urgent_fresh_growth_20260904",
+      "source_type": "official company + regional investment + business registry",
+      "region": "multi-region",
+      "raw_observations": 6,
+      "note": "manual supplemental discovery after repeated zero-result overnight RUNs; quality criteria unchanged"
+    }
+  ],
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Реон-Техно",
+      "legal_name": "ООО \"РЕОН-ТЕХНО\"",
+      "inn": "2127306226",
+      "ogrn": "1022100977106",
+      "domain": "reon.ru",
+      "size": {
+        "employees": 45,
+        "revenue_2025": "124286000 RUB",
+        "profit_2025": "-9195000 RUB",
+        "evidence_url": "https://companies.rbc.ru/id/1022100977106-ooo-reon-tehno/"
+      },
+      "signal": {
+        "class": "S1/S2",
+        "date": "2026-05-12",
+        "description": "Компания запустила новые станки и прессы в рамках инвестпроекта обновления производства; директор заявил, что крупные оптовые заказы теперь смогут выполняться в 3-5 раз быстрее. Наращивание мощностей обозначено как часть масштабной программы развития компании.",
+        "evidence_urls": [
+          "https://reon.ru/company/news/9467/",
+          "https://www.gubnews.ru/news_minpromtorg.php?id=8203"
+        ]
+      },
+      "lpr": {
+        "name": "Князев Алексей Анатольевич",
+        "role": "директор; учредитель",
+        "evidence_urls": [
+          "https://reon.ru/contacts/predpriyatiya/",
+          "https://companies.rbc.ru/id/1022100977106-ooo-reon-tehno/"
+        ]
+      },
+      "contact_route": {
+        "type": "official_director_email_plus_company_phone",
+        "email": "kaa@reon.ru",
+        "phone": "+7 (8352) 24 24 40",
+        "url": "https://reon.ru/contacts/predpriyatiya/",
+        "note": "На официальной странице контактов Князев Алексей Анатольевич указан как директор с опубликованным email kaa@reon.ru; контакт не реконструирован."
+      },
+      "dedup_checks": {
+        "repo_search_inn": "2127306226",
+        "repo_search_ogrn": "1022100977106",
+        "repo_search_matches": 0,
+        "final_physical_global_dedup_required": true
+      }
+    },
+    {
+      "status": "REJECT_OR_HOLD",
+      "brand": "Ивановская Текстильная Компания",
+      "reason": "physical duplicate already recorded by canonical config/run history"
+    },
+    {
+      "status": "REJECT_OR_HOLD",
+      "brand": "МолоПак",
+      "reason": "historically staged/checked; current scale materially above preferred target profile; final physical dedup required before any reuse"
+    },
+    {
+      "status": "REJECT_OR_HOLD",
+      "brand": "БиДжет",
+      "reason": "2025 revenue about 914m RUB is materially above preferred target scale despite strong expansion signal"
+    },
+    {
+      "status": "REJECT_OR_HOLD",
+      "brand": "КАРТАС / KCG",
+      "reason": "2025 revenue about 610m RUB and conflicting employee-scale evidence; outside preferred scale pending stronger target-fit justification"
+    },
+    {
+      "status": "REJECT_OR_HOLD",
+      "brand": "Завод механических деталей / ЗМД",
+      "reason": "very fresh 400m RUB expansion signal and 130.7m RUB revenue, but registry shows only 1 employee; hold for SIZE reconciliation before qualification"
+    }
+  ],
+  "notes": [
+    "Urgent supplemental batch created because overnight canonical remained 613 with repeated under-throughput/zero-result runs.",
+    "No quality criterion was relaxed.",
+    "No outreach performed.",
+    "Canonical writer must perform final physical dedup and atomic integration."
+  ]
+}
