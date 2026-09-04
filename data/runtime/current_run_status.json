@@ -1,9 +1,9 @@
 {
   "run_id": "N5K-20260904-630",
   "campaign_id": "new_5000",
-  "status": "UNDERDONE_RECOVERY_REQUIRED",
+  "status": "UNDERDONE_ROUTE144_RAW_BELOW_30",
   "updated_at": "2026-09-04T12:37:35+03:00",
-  "stage": "RECOVERY_REQUIRED",
+  "stage": "UNDERDONE",
   "new_cycle": {
     "baseline_count": 614,
     "target_count": 5000,
@@ -25,20 +25,19 @@
     "duplicates": 0,
     "excluded": 4
   },
-  "completion_gate": {
-    "minimum_authoritative_raw": 120,
+  "route_144_volume": {
+    "normal_raw_min": 30,
+    "normal_raw_max": 60,
     "raw_distinct": 4,
-    "external_technical_limitation_proven": false,
-    "passed": false,
-    "preferred_continue_until_raw": 300,
-    "hard_floor_passed": false,
-    "preferred_throughput_passed": false
+    "normal_package_reached": false,
+    "legacy_raw_floor_120_disabled": true,
+    "mandatory_10_lanes_disabled": true
   },
   "lane_metrics": [
-    {"lane":"job_intent_build_sales_zero","raw":1,"duplicates_early_rejects":1,"qualified":0,"saturation_rotations":0},
-    {"lane":"job_intent_b2b_scale","raw":1,"duplicates_early_rejects":1,"qualified":0,"saturation_rotations":0},
-    {"lane":"job_intent_new_direction","raw":1,"duplicates_early_rejects":1,"qualified":0,"saturation_rotations":0},
-    {"lane":"job_intent_channel_transformation","raw":1,"duplicates_early_rejects":1,"qualified":0,"saturation_rotations":0}
+    {"lane":"job_intent_build_sales_zero","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"job_intent_b2b_scale","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"job_intent_new_direction","raw":1,"duplicates_early_rejects":1,"qualified":0},
+    {"lane":"job_intent_channel_transformation","raw":1,"duplicates_early_rejects":1,"qualified":0}
   ],
   "qualified_companies": [],
   "integrity_status": "PASS",
@@ -48,6 +47,6 @@
   "physical_master_state": "614_DATA_ROWS_PLUS_HEADER_CONFIRMED_FROM_PRE_RUN_AUTHORITY_NO_PHYSICAL_WRITE",
   "physical_contactable_state": "614_DATA_ROWS_PLUS_HEADER_CONFIRMED_FROM_PRE_RUN_AUTHORITY_NO_PHYSICAL_WRITE",
   "outreach_sent": 0,
-  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
+  "blocker": "AUTHORITATIVE_RAW_BELOW_ROUTE144_NORMAL_PACKAGE_30",
   "report": "reports/N5K-20260904-630.md"
 }
