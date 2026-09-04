@@ -29,15 +29,15 @@
   "replay": {
     "run_id": "N5K-20260904-631",
     "replay_total": 60,
-    "checked": 8,
-    "remaining": 52,
+    "checked": 9,
+    "remaining": 51,
     "duplicates": 4,
-    "excluded": 4,
+    "excluded": 5,
     "qualified": 0,
     "net_new": 0,
-    "next_candidate": "ООО Иксхантер",
+    "next_candidate": "ООО Бэкграунд",
     "resume_same_run": true,
     "new_discovery_allowed": false
   },
-  "note": "Sequential accumulated-jobs replay is active. Eight candidates are fully dispositioned, active_wip=0, no new canonical writes in this replay segment. Resume N5K-20260904-631 with the persisted remaining pool; do not start broad discovery."
+  "note": "Sequential accumulated-jobs replay remains active. Nine candidates are fully dispositioned, active_wip=0, no new canonical writes in this replay segment. Resume N5K-20260904-631 at ООО Бэкграунд; do not start broad discovery."
 }
