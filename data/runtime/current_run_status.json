@@ -3,25 +3,26 @@
   "run_sequence": 631,
   "campaign_id": "new_5000",
   "status": "REPLAY_IN_PROGRESS",
-  "stage": "RESUME_SAME_RUN",
+  "stage": "CANONICAL_WRITE_BLOCKED_BY_LARGE_MASTER_READ",
   "baseline": 614,
   "replay_total": 60,
-  "checked": 22,
-  "fully_dispositioned": 22,
-  "remaining_replay": 38,
-  "active_wip": 0,
+  "checked": 23,
+  "fully_dispositioned": 23,
+  "remaining_replay": 37,
+  "active_wip": 1,
+  "active_candidate": "ООО Авто-Хэлп",
   "funnel": {
-    "legal_pass": 10,
-    "scale_pass": 3,
-    "signal_pass": 0,
+    "legal_pass": 11,
+    "scale_pass": 4,
+    "signal_pass": 1,
     "lpr_pass": 0,
     "contact_pass": 0,
     "qualified": 0,
     "duplicates": 4,
-    "excluded": 18
+    "excluded": 19
   },
   "duplicates": 4,
-  "excluded": 18,
+  "excluded": 19,
   "qualified": 0,
   "net_new": 0,
   "physically_added_companies": [],
@@ -38,7 +39,8 @@
     "SCALE_NOT_CONFIRMED_CURRENT": ["ООО Иксхантер", "ИП Шлячков Артем Алексеевич"],
     "SCALE_GATE_FAIL_CURRENT": ["VIEN", "ООО DELASIA", "ООО Дс-Арт", "ООО Эктем Ок", "SILENKO AUTOcratia"],
     "CURRENT_LEGAL_STATUS_FAIL": ["Эксперт Сервис"],
-    "SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER": ["ООО Формула успеха"]
+    "SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER": ["ООО Формула успеха"],
+    "OFFICIAL_SITE_OPERATING_LINK_NOT_CONFIRMED": ["ООО Текстильмаркет"]
   },
   "current_canonical_count": 614,
   "current_contactable_count": 614,
@@ -58,10 +60,17 @@
     "retry missing evidence",
     "immediate physical write"
   ],
+  "current_execution_blocker": {
+    "candidate": "ООО Авто-Хэлп",
+    "state": "ALL_QUALITY_GATES_EVIDENCED_PENDING_PHYSICAL_CANONICAL_WRITE",
+    "details": "GitHub contents connector returns empty content for data/campaigns/new_5000/leads_master.csv and raw fetch rejects the file as too large/unsupported, so the existing master cannot be safely reconstructed for an atomic append in this execution. Candidate is not counted as qualified/net_new until physically present in canonical/contactable.",
+    "targeted_dedup_attempts": ["INN 7826004234", "OGRN 1037851011120", "domain auto-help.ru"],
+    "targeted_dedup_matches": 0
+  },
   "cursor": {
-    "next_candidate": "ООО Текстильмаркет",
-    "remaining_pool_count": 38,
-    "remaining_pool": ["ООО Текстильмаркет", "ООО Авто-Хэлп", "ИП Попова", "ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
+    "next_candidate": "ООО Авто-Хэлп",
+    "remaining_pool_count": 37,
+    "remaining_pool": ["ООО Авто-Хэлп", "ИП Попова", "ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
   },
   "resume_required_same_run_id": true,
   "new_discovery_allowed": false,
