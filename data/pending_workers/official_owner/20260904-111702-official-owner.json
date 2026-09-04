@@ -1,0 +1,137 @@
+{
+  "worker": "official_owner",
+  "lane": "official_owner",
+  "created_at": "2026-09-04T11:17:02+03:00",
+  "mode": "READ_DISCOVERY_ONLY",
+  "campaign": "new_5000",
+  "config_source": "CURRENT_WORKING_CONFIG.md",
+  "config_observed_version": "2026-09-04T01:28:27+03:00",
+  "canonical_observed": 613,
+  "contactable_observed": 613,
+  "canonical_mutated": false,
+  "contactable_mutated": false,
+  "runtime_mutated": false,
+  "campaign_mutated": false,
+  "outreach_performed": false,
+  "worker_claims_net_qualified": false,
+  "discovery": {
+    "authoritative_employer_level_raw_distinct": 86,
+    "target_range": "70-130",
+    "source_batches": [
+      {"batch":"industrial_official_press","raw_distinct":14,"focus":"new plants / new production lines / localization","duplicate_or_early_reject":9,"deep_checked":5,"prequalified":1},
+      {"batch":"regional_business_media_nw_center","raw_distinct":14,"focus":"North-West / Center expansion and production","duplicate_or_early_reject":11,"deep_checked":3,"prequalified":0},
+      {"batch":"regional_business_media_south_volga","raw_distinct":14,"focus":"South / Volga investment, export, manufacturing","duplicate_or_early_reject":12,"deep_checked":2,"prequalified":0},
+      {"batch":"siberia_far_east_industrial","raw_distinct":14,"focus":"Siberia / Far East new offices, plants, export","duplicate_or_early_reject":11,"deep_checked":3,"prequalified":0},
+      {"batch":"retail_network_expansion","raw_distinct":15,"focus":"new regions / stores / franchise expansion","duplicate_or_early_reject":15,"deep_checked":0,"prequalified":0},
+      {"batch":"management_transformation_export","raw_distinct":15,"focus":"CEO change / transformation / export growth","duplicate_or_early_reject":13,"deep_checked":2,"prequalified":0}
+    ],
+    "raw_employers": [
+      "Unipro","Консист Бизнес Групп","Мосэлектрощит","АК-Проф","Компания ТрансТелеКом","ЧМК","RuAutoTrailer","DF CONTROL","Лента","Лаборатория безопасности (SafetyLab)","НАРТИС","Балтика","IVA Technologies","Юнирест / Rostic's","PitON","Семаргл","Bonum","ГК Балтик","НПО ВердаТерра","СКБ Контур","Энхим","TData","IEK GROUP","Сибур","X5 / Около","Регионтранснефть","Nordgold / Урях","Рок Энд Милл","Северсталь","Кавминводы","ПСТ Капитал","Апрель","Cadila Pharmaceuticals","АГР","Ступинский гофрокомбинат","КЛД","Автотор","НПО БИТ","ПСК Фарма","МолоПак","SHELON / Варяжский композит","Гедеон Рихтер Фарма","РТК-ЦОД","Вкусно — и точка","Молвест","Биннофарм Групп","Металлстроймаш","Дринкит / Dodo Brands","Ростелеком","Корпорация Галактика","ПЧЗ Ракета","Теремок","Fix Price","Магнит","FES retail / RE","Familia","Си Проект","ЭФКО","Ашан Ритейл Россия","Globus Россия","Азбука вкуса","Befree","Монетка","Спар Миддл Волга / Eurospar","restore:","МЭЗ Троицкий","Русская рыбопромышленная компания","ГК Изолятор","Электроточприбор","ТЭМПО-ПОРТ","АМС","Карапакс","Мосэлектрощит Ковров","НАРТИС Череповец","ПСК Фарма Дубна","ИКС Холдинг","YADRO","БС Холдинг","РАМ Инжиниринг","КИТ Судостроение Лотос","Кулон","И.Т.М.С.","Петербургский нефтяной терминал","FES retail","Familia Home","Сладкая жизнь"
+    ]
+  },
+  "funnel": {
+    "RAW_DISTINCT": 86,
+    "FAST_GATE": 15,
+    "SIZE": 8,
+    "LEGAL": 6,
+    "SIGNAL": 5,
+    "LPR": 3,
+    "CONTACT": 1,
+    "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP": 1,
+    "REJECT": 85
+  },
+  "candidates": [
+    {
+      "status": "PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP",
+      "brand": "Рок Энд Милл",
+      "legal_name": "ООО РОК ЭНД МИЛЛ",
+      "inn": "7729477690",
+      "ogrn": "1157746936632",
+      "domain": "rockandmill.ru",
+      "size_evidence": {
+        "summary": "Средний бизнес; выручка за 2025 год 1.433 млрд руб.; официальный сайт группы указывает 570+ сотрудников, 550+ проектов и присутствие в 25 регионах.",
+        "urls": ["https://companies.rbc.ru/id/1157746936632-ooo-geosolyushins/","https://rockandmill.ru/"]
+      },
+      "legal_evidence": {
+        "summary": "Действующее российское юридическое лицо; ИНН 7729477690, ОГРН 1157746936632.",
+        "urls": ["https://companies.rbc.ru/id/1157746936632-ooo-geosolyushins/","https://www.tbank.ru/business/contractor/legal/1157746936632/"]
+      },
+      "signal": {
+        "class": "S1-S2",
+        "date": "2026-05-06",
+        "summary": "Компания открыла проектный офис в Красноярске как часть региональной сети для усиления работы с горнодобывающими предприятиями Сибири; параллельно официальный сайт фиксирует масштаб 570+ сотрудников и 25 регионов присутствия.",
+        "urls": ["https://companies.rbc.ru/news/iQ4BXVzeJm/rok-end-mill-otkryil-ofis-v-krasnoyarske/","https://rockandmill.ru/"]
+      },
+      "lpr": {
+        "name": "Егор Иванович Колесников",
+        "role": "Генеральный директор ООО Рок Энд Милл",
+        "evidence_urls": ["https://t.me/s/mgri_official/14309","https://gold.1prime.ru/images/07ea/04/06/1290919.pdf"]
+      },
+      "contact": {
+        "route": "Официальная форма/телефон и опубликованный общий email компании",
+        "phone": "+7 499 110 14 72",
+        "email": "info@rockandmill.ru",
+        "evidence_urls": ["https://rockandmill.ru/contacts","https://rockandmill.ru/assets/files/docs/presentation-ram.pdf"]
+      },
+      "dedup_keys": {
+        "inn": "7729477690",
+        "ogrn": "1157746936632",
+        "exact_legal_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ РОК ЭНД МИЛЛ",
+        "brand_domain": "Рок Энд Милл|rockandmill.ru"
+      },
+      "dedup_checks": {
+        "candidate_level_repo_search_inn": "NO_MATCH_RETURNED",
+        "candidate_level_repo_search_brand_inn": "NO_MATCH_RETURNED",
+        "historical_pending_full_materialization_required": false,
+        "final_physical_global_dedup": "REQUIRED_BY_CANONICAL_WRITER"
+      }
+    },
+    {
+      "status": "REJECT",
+      "brand": "SafetyLab",
+      "legal_name": "ООО ЛАБОРАТОРИЯ БЕЗОПАСНОСТИ",
+      "inn": "7841433407",
+      "ogrn": "1107847328951",
+      "reject_stage": "SIZE",
+      "reason": "Актуальная внешняя классификация — малый бизнес, 20 сотрудников за 2025 год; при строгом SIZE-first проходе не повышал кандидата только из-за сильного инвестиционного сигнала.",
+      "evidence_urls": ["https://b2b.house/company/OOO-LABORATORIYA-BEZOPASNOSTI_a0bf68d6-ac49-4b3e-a190-059366b86e10/","https://companies.rbc.ru/amp/news/ab2252b4-30bf-44d9-92ef-0423aaa3394c/","https://www.safetylab.ru/ru/info/19"],
+      "dedup_checks": {"candidate_level_repo_search_inn":"NO_MATCH_RETURNED","candidate_level_repo_search_brand_domain":"NO_MATCH_RETURNED"}
+    },
+    {
+      "status": "REJECT",
+      "brand": "КЛД",
+      "legal_name": "ООО КЛД",
+      "inn": "3906388959",
+      "ogrn": "1203900002217",
+      "reject_stage": "SIZE",
+      "reason": "Микропредприятие: 12 сотрудников и выручка 30.3 млн руб. за 2025 год; строительство завода за 150 млн руб. не использовано для обхода SIZE gate.",
+      "evidence_urls": ["https://b2b.house/company/OOO-KLD_e40c2a84-d52a-4a46-b61a-bce1da69c40c/","https://amp.rbc.ru/regional/kaliningrad/10/07/2026/6a50e7129a7947889293d07f"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "МолоПак",
+      "legal_name": "ООО МОЛОПАК",
+      "inn": "7743513365",
+      "ogrn": "1037739986899",
+      "reject_stage": "SIZE",
+      "reason": "Текущая карточка контрагента относит юрлицо к микробизнесу; строгий SIZE-first gate сохранён несмотря на проект расширения производства.",
+      "evidence_urls": ["https://www.tbank.ru/business/contractor/legal/1037739986899/","https://www.vedomosti.ru/press_releases/2025/12/24/okolo-21-mlrd-rublei-vlozhit-molopak-v-rasshirenie-proizvodstva-upakovki-dlya-napitkov"]
+    },
+    {
+      "status": "REJECT",
+      "brand": "НПО БИТ",
+      "legal_name": "ООО НПО БИОМЕДИЦИНСКИЕ ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ",
+      "inn": "6950002832",
+      "ogrn": "1066950013657",
+      "reject_stage": "CONTACT",
+      "reason": "Юрлицо, масштаб, сигнал и ЛПР подтверждаются, но в этом цикле не получен достаточно надёжный опубликованный официальный контактный маршрут именно к компании/ЛПР; сторонний справочный email не повышал до CONTACT.",
+      "evidence_urls": ["https://saby.ru/profile/6950002832-694901001","https://spb.vedomosti.ru/business/articles/2026/05/25/1199635-npo-bit-zavod-vodoroslei"]
+    }
+  ],
+  "notes": [
+    "Historical pending tree full-body materialization was not used as a precondition for discovery.",
+    "No staged candidate is counted as added or QUALIFIED by this worker.",
+    "Only canonical writer may assign net QUALIFIED after physical final global dedup.",
+    "No canonical/contactable/runtime/campaign files were modified and no outreach was performed."
+  ]
+}
