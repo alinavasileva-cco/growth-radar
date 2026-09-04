@@ -1,9 +1,36 @@
 {
-  "run_id": "N5K-20260904-621",
-  "updated_at": "2026-09-04T04:29:00+03:00",
-  "status": "RECOVERY_REQUIRED",
+  "run_id": "N5K-20260904-622",
+  "updated_at": "2026-09-04T05:27:00+03:00",
+  "status": "READY_FOR_INTEGRATION",
+  "campaign_id": "new_5000",
   "qualified_companies": [],
-  "qualified_staged_not_counted": 0,
-  "raw_distinct": 80,
-  "note": "N5K-20260904-621 integrated verified rows but cannot be COMPLETED: raw_distinct=80<120. Supplemental discovery required."
+  "funnel": {
+    "raw_distinct": 60,
+    "discovered": 60,
+    "fast_gate_passed": 0,
+    "size_check_passed": 0,
+    "legal_match_passed": 0,
+    "signal_confirmed": 0,
+    "lpr_identified": 0,
+    "contact_route_found": 0,
+    "qualified": 0,
+    "duplicates": 0,
+    "excluded": 60
+  },
+  "lane_metrics": [
+    {"lane":"regional_investment_new_production","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"industrial_park_sez_technopark","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"regional_private_expansion","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"sme_growth_cases","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"export_dealer_partner_expansion","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"logistics_warehouse_commercial_property","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"new_line_workshop_factory","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"trade_association_business_growth","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"company_pressroom_owner_ceo","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"commercial_contract_growth_signal","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"branches_stores_service_centers","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0},
+    {"lane":"private_investment_ma","raw":5,"duplicates_early_rejects":5,"qualified":0,"saturation_rotations":0}
+  ],
+  "external_technical_limitation": {"proven": false, "evidence": ""},
+  "notes": "Fresh same-cycle web discovery rotated across 12 low-overlap source families. Exactly 60 distinct named employer-level candidates were conservatively counted from reviewed search results; no generic directory was used as primary evidence. No candidate was advanced beyond FAST GATE without complete private/size/legal/canonical-key confirmation. Criteria unchanged; outreach 0."
 }
