@@ -14,12 +14,13 @@
 ## Критическое правило: qualification-first / sequential
 
 1. Если `data/runtime/current_run_status.json` показывает `active_wip > 0`, новый discovery запрещён.
-2. Сначала довести каждый активный кандидат текущего run_id до финального `duplicate`, `excluded` с конкретной причиной или `qualified`.
-3. Fully-qualified кандидат записывается физически сразу после прохождения всех gates; он не ждёт окончания обработки всей пачки.
+2. Сначала довести активный кандидат текущего run_id до финального `duplicate`, `excluded` с конкретной причиной или `qualified` с физической canonical-записью.
+3. Fully-qualified кандидат записывается физически сразу после прохождения всех gates; он не ждёт окончания обработки пула.
 4. После `active_wip = 0` работать по одному кандидату end-to-end: replay candidate → dedup → legal → scale → signal → LPR → contact → final dedup → physical write/exclude.
 5. Норма `active_wip`: 0; временно максимум 1.
 6. Запрещено сначала собирать пачку и оставлять десятки компаний на будущий запуск.
 7. При missing evidence перед `EXCLUDED` обязательны минимум две независимые targeted попытки найти недостающий факт.
+8. Техническая невозможность физической canonical-записи не превращает прошедшего quality gates кандидата в `qualified/net_new`: он остаётся единственным active WIP до безопасной физической записи либо до появления нового факта, меняющего disposition.
 
 ## Discovery — HH/job-intent first
 
@@ -39,7 +40,7 @@
 5. реальный собственник / CEO / ЛПР;
 6. опубликованный практический контакт: phone/email/Telegram/VK/HH/form;
 7. повторный targeted global dedup;
-8. только затем `QUALIFIED`.
+8. только затем `QUALIFIED`, причём только после физической canonical/contactable записи.
 
 Предпочтительная доказательная связка: **вакансия/сигнал → официальный сайт → надёжный открытый источник по юрлицу/финансам/владельцу → официальный опубликованный контакт**.
 
@@ -57,9 +58,11 @@ Qualified записывается в том же выполнении сраз�
 
 `N5K-20260904-631` — срочный replay накопленных job-intent работодателей после завершённого RUN 630. Пока replay не завершён, **новый широкий discovery запрещён**.
 
-Текущее подтверждённое состояние replay: baseline 614; replay_total 60; checked 22; remaining 38; duplicates 4; excluded 18; legal_pass 10; scale_pass 3; signal_pass 0; LPR_pass 0; contact_pass 0; qualified/net_new 0/0; canonical/contactable 614/614; integrity PASS; orphan contacts/evidence 0/0; active_wip 0; outreach 0.
+Текущее подтверждённое состояние replay: baseline 614; replay_total 60; checked/fully dispositioned 23; remaining 37; duplicates 4; excluded 19; legal_pass 11; scale_pass 4; signal_pass 1; LPR_pass 0; contact_pass 0; qualified/net_new 0/0; canonical/contactable 614/614; integrity PASS; orphan contacts/evidence 0/0; active_wip 1; outreach 0.
 
-Следующий кандидат по сохранённому cursor: **ООО Текстильмаркет**. Следующее выполнение обязано продолжить **тот же `N5K-20260904-631`**, а не создавать новый RUN и не запускать новый discovery.
+Кандидат #23 **ООО Текстильмаркет** закрыт `EXCLUDED: OFFICIAL_SITE_OPERATING_LINK_NOT_CONFIRMED`: legal/scale/signal подтверждены, но две targeted-попытки текущей official operating-site linkage не связали ООО с ИНН `7810868310` с действующим официальным сайтом; `marrey.ru` сейчас указывает другого оператора, поэтому неподтверждённая связка не использована.
+
+Единственный active WIP и сохранённый cursor: **ООО Авто-Хэлп**. Внешняя evidence chain подтверждает действующее ООО «Авто-Хэлп» ИНН `7826004234`, ОГРН `1037851011120`, целевой масштаб, S1–S3 вакансионный сигнал, owner/CEO Михаила Борисовича Мигдаловича, домен `auto-help.ru` и опубликованные контакты. Targeted repo dedup по ИНН, ОГРН и домену не дал совпадений. Однако доступный GitHub contents connector возвращает пустое содержимое для большого `leads_master.csv`, а raw-fetch отклоняет файл как too large/unsupported; поэтому безопасная атомарная physical canonical append в этом выполнении не подтверждена. **Не считать Авто-Хэлп qualified/net_new до физической записи.** Следующее выполнение обязано продолжить тот же RUN с этого кандидата и не переходить к следующему до final physical disposition.
 
 ROOT_CAUSE replay: (A) full-tree/global preflight + truncated connector → fail-closed до discovery; (B) batch-first → десятки WIP; (C) shallow evidence acquisition → false excludes.
 
