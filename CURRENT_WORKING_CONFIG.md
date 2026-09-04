@@ -119,3 +119,17 @@
 - integrity PASS;
 - orphan contacts/evidence: 0/0;
 - active WIP: 0.
+
+## Latest attempted canonical RUN N5K-20260904-630
+
+- route: restored RUN-144 job-intent first;
+- baseline: **614**;
+- authoritative raw: **4**;
+- funnel: **4 raw → 3 FAST GATE → 0 SIZE → 0 LEGAL → 0 SIGNAL → 0 LPR → 0 CONTACT → 0 QUALIFIED**;
+- duplicates / excluded: **0 / 4**;
+- net_new: **0**;
+- canonical/contactable: **614 / 614**;
+- remaining: **4386**;
+- integrity PASS; orphan contacts/evidence **0 / 0**; active WIP **0**; outreach **0**;
+- status/stage: `UNDERDONE_ROUTE144_RAW_BELOW_30 / UNDERDONE`;
+- no worker/staging/recovery/dedup writer created.
