@@ -19,12 +19,13 @@
   "latest_completed_run": "N5K-20260903-609",
   "latest_attempted_run": "N5K-20260904-630",
   "latest_attempted_run_id": "N5K-20260904-630",
-  "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
+  "latest_attempted_run_status": "UNDERDONE_ROUTE144_RAW_BELOW_30",
   "canonical_integration_run_id": "N5K-20260904-629",
   "hourly_baseline_count": 614,
   "hourly_net_new": 0,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
+  "active_wip": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
     "run_id": "N5K-20260904-630",
@@ -38,10 +39,10 @@
     "qualified": 0,
     "duplicates": 0,
     "excluded": 4,
-    "minimum_raw_floor_met": false,
-    "preferred_config_raw_target_met": false,
-    "normal_throughput_completion": false,
-    "raw_count_note": "Exactly 4 employer-level candidates were fully enough inspected to count authoritatively in this execution. Broader HH vacancy-page counts were not inflated into raw because candidate-level dedup and FAST GATE were incomplete. RUN-144 job-intent route was used as a priority probe, while stricter CURRENT_WORKING_CONFIG hard gates remained in force. No candidate reached QUALIFIED; no physical canonical write; outreach 0."
+    "route144_normal_raw_min": 30,
+    "route144_normal_raw_max": 60,
+    "normal_package_reached": false,
+    "raw_count_note": "Exactly 4 employer-level candidates were sufficiently verified to count authoritatively. Broader HH listing counts were not inflated into raw because candidate-level dedup and FAST GATE were incomplete. Fresh CURRENT_WORKING_CONFIG restored RUN-144 job-intent first and removed legacy 120/300/400/800 floors and mandatory 10 lanes. No candidate reached QUALIFIED; no physical canonical write; outreach 0."
   },
   "latest_run_lane_efficiency": [
     {"lane":"job_intent_build_sales_zero","raw":1},
@@ -50,7 +51,7 @@
     {"lane":"job_intent_channel_transformation","raw":1}
   ],
   "fresh_staging": "none; no worker/staging route used in N5K-20260904-630",
-  "repair_required": "RAW_BELOW_120_CONTINUE_DISCOVERY_WITHOUT_PARALLEL_WRITER",
-  "recovery_required": true,
-  "note": "N5K-20260904-630 used fresh Russian HH job-intent probes under stricter current config. Authoritative raw=4, qualified/net_new=0, canonical/contactable=614/614, integrity PASS, orphans 0/0, active WIP 0, outreach 0."
+  "repair_required": "NONE_SEPARATE_WRITER_FORBIDDEN; NEXT_CANONICAL_RUN_SHOULD_USE_ROUTE144_30_60_RAW",
+  "recovery_required": false,
+  "note": "N5K-20260904-630 used fresh Russian HH job-intent probes under restored RUN-144 config. Authoritative raw=4, qualified/net_new=0, canonical/contactable=614/614, integrity PASS, orphans 0/0, active WIP 0, outreach 0. Run is underdone versus normal 30-60 package, but no separate recovery writer is created."
 }
