@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-04T09:28:27+03:00",
+  "generated_at": "2026-09-04T10:30:11+03:00",
   "campaign_id": "new_5000",
   "latest_completed_run_id": "N5K-20260903-609",
-  "current_run_id": "N5K-20260904-626",
+  "current_run_id": "N5K-20260904-627",
   "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
   "canonical_pool_verified": 613,
   "contactable_verified": 613,
@@ -16,14 +16,14 @@
   "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
   "completion_gate": {
     "minimum_authoritative_raw": 120,
-    "raw_distinct": 80,
+    "raw_distinct": 68,
     "external_technical_limitation_proven": false,
     "passed": false
   },
-  "run_626": {
-    "raw_discovered": 80,
-    "fast_gate_passed": 10,
-    "size_check_passed": 10,
+  "run_627": {
+    "raw_discovered": 68,
+    "fast_gate_passed": 0,
+    "size_check_passed": 0,
     "legal_match_passed": 0,
     "signal_confirmed": 0,
     "lpr_identified": 0,
@@ -31,89 +31,89 @@
     "qualified": 0,
     "physically_integrated": 0,
     "duplicates": 0,
-    "excluded": 80,
+    "excluded": 68,
     "lane_metrics": [
       {
         "lane": "regional_investment_new_production",
-        "raw": 12,
-        "duplicates_early_rejects": 10,
+        "raw": 9,
+        "duplicates_early_rejects": 9,
         "qualified": 0,
-        "saturation_rotations": 1
+        "saturation_rotations": 0
       },
       {
         "lane": "industrial_park_sez_technopark",
         "raw": 8,
-        "duplicates_early_rejects": 7,
+        "duplicates_early_rejects": 8,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "regional_private_expansion",
-        "raw": 6,
+        "raw": 5,
         "duplicates_early_rejects": 5,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "sme_growth_cases",
-        "raw": 6,
-        "duplicates_early_rejects": 6,
+        "raw": 7,
+        "duplicates_early_rejects": 7,
         "qualified": 0,
-        "saturation_rotations": 1
+        "saturation_rotations": 0
       },
       {
         "lane": "export_dealer_partner_expansion",
-        "raw": 8,
-        "duplicates_early_rejects": 8,
+        "raw": 4,
+        "duplicates_early_rejects": 4,
         "qualified": 0,
-        "saturation_rotations": 1
+        "saturation_rotations": 0
       },
       {
         "lane": "logistics_warehouse_commercial_property",
-        "raw": 8,
-        "duplicates_early_rejects": 8,
-        "qualified": 0,
-        "saturation_rotations": 1
-      },
-      {
-        "lane": "new_line_workshop_factory",
-        "raw": 8,
+        "raw": 5,
         "duplicates_early_rejects": 5,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
+        "lane": "new_line_workshop_factory",
+        "raw": 10,
+        "duplicates_early_rejects": 10,
+        "qualified": 0,
+        "saturation_rotations": 0
+      },
+      {
         "lane": "trade_association_business_growth",
-        "raw": 6,
-        "duplicates_early_rejects": 6,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "company_pressroom_owner_ceo",
-        "raw": 6,
+        "raw": 5,
         "duplicates_early_rejects": 5,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "commercial_contract_growth_signal",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "branches_stores_service_centers",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
+        "raw": 6,
+        "duplicates_early_rejects": 6,
         "qualified": 0,
         "saturation_rotations": 0
       },
       {
         "lane": "private_investment_ma",
-        "raw": 4,
-        "duplicates_early_rejects": 2,
+        "raw": 3,
+        "duplicates_early_rejects": 3,
         "qualified": 0,
         "saturation_rotations": 0
       }
