@@ -1,47 +1,68 @@
 {
-  "run_id": "N5K-20260904-630",
+  "run_id": "N5K-20260904-631",
+  "run_sequence": 631,
   "campaign_id": "new_5000",
-  "status": "COMPLETED_ROUTE144_NO_NET_NEW",
-  "updated_at": "2026-09-04T13:17:09+03:00",
-  "stage": "COMPLETED",
-  "new_cycle": {
-    "baseline_count": 614,
-    "target_count": 5000,
-    "current_canonical_count": 614,
-    "current_contactable_count": 614,
-    "progress_added": 0,
-    "remaining": 4386
-  },
-  "dispositioned_count": 35,
+  "status": "REPLAY_IN_PROGRESS",
+  "stage": "RESUME_SAME_RUN",
+  "baseline": 614,
+  "replay_total": 60,
+  "checked": 8,
+  "fully_dispositioned": 8,
+  "remaining_replay": 52,
+  "active_wip": 0,
   "funnel": {
-    "raw_distinct": 35,
-    "discovered": 35,
-    "fast_gate_passed": 3,
-    "size_check_passed": 0,
-    "legal_match_passed": 0,
-    "signal_confirmed": 0,
-    "lpr_identified": 0,
-    "contact_route_found": 0,
+    "legal_pass": 1,
+    "scale_pass": 1,
+    "signal_pass": 0,
+    "lpr_pass": 0,
+    "contact_pass": 0,
     "qualified": 0,
-    "duplicates": 3,
-    "excluded": 32
+    "duplicates": 4,
+    "excluded": 4
   },
-  "qualified_companies": [],
+  "duplicates": 4,
+  "excluded": 4,
+  "qualified": 0,
+  "net_new": 0,
   "physically_added_companies": [],
   "confirmed_duplicate_companies": [
-    "Идеальный турник",
-    "IGM / ИГРОФЕСТ",
-    "FTL-cargo"
+    "TATRUM=N5K-0685",
+    "Идеальный турник=N5K-0054",
+    "ООО ИГРОФЕСТ / IGM=N5K-0392",
+    "FTL-cargo=N5K-0393"
   ],
-  "integrity_status": "PASS",
+  "excluded_by_reason": {
+    "LEGAL_ENTITY_NOT_RELIABLY_LINKED": ["Авто В Руки", "ООО КВАНТУМ"],
+    "SIGNAL_NOT_S1_S3": ["ООО Мультикомпонента"],
+    "CURRENT_LEGAL_LINK_AMBIGUOUS": ["ООО ИнфраТех / OOHVAT"]
+  },
+  "current_canonical_count": 614,
+  "current_contactable_count": 614,
+  "remaining_to_5000": 4386,
+  "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "active_wip": 0,
-  "physical_master_state": "614_DATA_ROWS_PLUS_HEADER_UNCHANGED_NO_QUALIFIED_WRITE",
-  "physical_contactable_state": "614_DATA_ROWS_PLUS_HEADER_UNCHANGED_NO_QUALIFIED_WRITE",
-  "outreach_sent": 0,
-  "blocker": null,
-  "resume_required_same_run_id": false,
-  "report": "reports/N5K-20260904-630.md",
-  "head_sha_note": "HEAD SHA must be read fresh after this commit; do not infer from pre-write state"
+  "outreach": 0,
+  "root_cause": {
+    "A": "full-tree/global preflight + truncated connector -> fail-closed before discovery",
+    "B": "batch-first -> dozens of WIP candidates",
+    "C": "shallow evidence acquisition -> false excludes"
+  },
+  "permanent_fixes": [
+    "targeted dedup",
+    "sequential end-to-end",
+    "retry missing evidence",
+    "immediate physical write"
+  ],
+  "cursor": {
+    "next_candidate": "ООО Иксхантер",
+    "remaining_pool_count": 52,
+    "remaining_pool": [
+      "ООО Иксхантер", "ООО Бэкграунд", "VIEN", "Эксперт Сервис", "ООО ПАУК", "ООО СМАЙЛ", "ИП Шлячков", "ООО DELASIA", "ООО Дс-Арт", "ООО Торговая компания ТЕСТ-ДРАЙВ", "ООО Формула успеха", "ООО Эктем Ок", "ООО Кристалл", "SILENKO AUTOcratia", "ООО Текстильмаркет", "ООО Авто-Хэлп", "ИП Попова", "ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"
+    ]
+  },
+  "resume_required_same_run_id": true,
+  "new_discovery_allowed": false,
+  "report": "reports/N5K-20260904-631.md",
+  "fresh_head_sha": "READ_AFTER_FINAL_RUNTIME_WRITES"
 }
