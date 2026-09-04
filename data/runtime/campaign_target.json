@@ -29,15 +29,15 @@
   "replay": {
     "run_id": "N5K-20260904-631",
     "replay_total": 60,
-    "checked": 18,
-    "remaining": 42,
+    "checked": 22,
+    "remaining": 38,
     "duplicates": 4,
-    "excluded": 14,
+    "excluded": 18,
     "qualified": 0,
     "net_new": 0,
-    "next_candidate": "ООО Формула успеха",
+    "next_candidate": "ООО Текстильмаркет",
     "resume_same_run": true,
     "new_discovery_allowed": false
   },
-  "note": "Sequential accumulated-jobs replay remains active. Eighteen candidates are fully dispositioned, active_wip=0, no new canonical writes in this replay segment. Resume N5K-20260904-631 at ООО Формула успеха; do not start broad discovery."
+  "note": "Sequential accumulated-jobs replay remains active. Twenty-two candidates are fully dispositioned, active_wip=0, no new canonical writes in this replay segment. Resume N5K-20260904-631 at ООО Текстильмаркет; do not start broad discovery."
 }
