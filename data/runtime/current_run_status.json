@@ -6,22 +6,22 @@
   "stage": "RESUME_SAME_RUN",
   "baseline": 614,
   "replay_total": 60,
-  "checked": 15,
-  "fully_dispositioned": 15,
-  "remaining_replay": 45,
+  "checked": 18,
+  "fully_dispositioned": 18,
+  "remaining_replay": 42,
   "active_wip": 0,
   "funnel": {
-    "legal_pass": 5,
-    "scale_pass": 2,
+    "legal_pass": 8,
+    "scale_pass": 3,
     "signal_pass": 0,
     "lpr_pass": 0,
     "contact_pass": 0,
     "qualified": 0,
     "duplicates": 4,
-    "excluded": 11
+    "excluded": 14
   },
   "duplicates": 4,
-  "excluded": 11,
+  "excluded": 14,
   "qualified": 0,
   "net_new": 0,
   "physically_added_companies": [],
@@ -33,10 +33,10 @@
   ],
   "excluded_by_reason": {
     "LEGAL_ENTITY_NOT_RELIABLY_LINKED": ["Авто В Руки", "ООО КВАНТУМ"],
-    "SIGNAL_NOT_S1_S3": ["ООО Мультикомпонента", "ООО ПАУК"],
+    "SIGNAL_NOT_S1_S3": ["ООО Мультикомпонента", "ООО ПАУК", "ООО Торговая компания ТЕСТ-ДРАЙВ"],
     "CURRENT_LEGAL_LINK_AMBIGUOUS": ["ООО ИнфраТех / OOHVAT", "ООО Бэкграунд / BACKGROUND", "ООО СМАЙЛ"],
     "SCALE_NOT_CONFIRMED_CURRENT": ["ООО Иксхантер", "ИП Шлячков Артем Алексеевич"],
-    "SCALE_GATE_FAIL_CURRENT": ["VIEN"],
+    "SCALE_GATE_FAIL_CURRENT": ["VIEN", "ООО DELASIA", "ООО Дс-Арт"],
     "CURRENT_LEGAL_STATUS_FAIL": ["Эксперт Сервис"]
   },
   "current_canonical_count": 614,
@@ -58,9 +58,9 @@
     "immediate physical write"
   ],
   "cursor": {
-    "next_candidate": "ООО DELASIA",
-    "remaining_pool_count": 45,
-    "remaining_pool": ["ООО DELASIA", "ООО Дс-Арт", "ООО Торговая компания ТЕСТ-ДРАЙВ", "ООО Формула успеха", "ООО Эктем Ок", "ООО Кристалл", "SILENKO AUTOcratia", "ООО Текстильмаркет", "ООО Авто-Хэлп", "ИП Попова", "ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
+    "next_candidate": "ООО Формула успеха",
+    "remaining_pool_count": 42,
+    "remaining_pool": ["ООО Формула успеха", "ООО Эктем Ок", "ООО Кристалл", "SILENKO AUTOcratia", "ООО Текстильмаркет", "ООО Авто-Хэлп", "ИП Попова", "ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
   },
   "resume_required_same_run_id": true,
   "new_discovery_allowed": false,
