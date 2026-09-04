@@ -1,14 +1,14 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-09-04T01:28:27+03:00  
+**Версия:** 2026-09-04T12:22:08+03:00  
 **Последний физически завершённый RUN:** `N5K-20260903-609`  
 **Статус канонической базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **613 / 613**  
+**Физически подтверждённый canonical/contactable:** **614 / 614**  
 **Qualified staged not counted:** **0**  
 **Ближайший операционный рубеж:** **1000** подтверждённых contactable компаний  
 **Основная цель:** **5000** уникальных contactable компаний кампании `new_5000`  
-**Осталось до 1000:** **387**  
-**Осталось до 5000:** **4387**  
+**Осталось до 1000:** **386**  
+**Осталось до 5000:** **4386**  
 **Outreach:** запрещён
 
 ## Источник истины
@@ -16,7 +16,7 @@
 - campaign_id: `new_5000`;
 - namespace: `data/campaigns/new_5000`;
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим campaign-local `leads_master/contactable_master`, contacts/evidence, pending и свежим worker-staging;
-- physical canonical/contactable count: **613 / 613**;
+- physical canonical/contactable count: **614 / 614**;
 - orphan contacts/evidence: **0 / 0**;
 - последний физически обработанный RUN: `N5K-20260903-609`;
 - physical master/integration guard — финальный источник дедупликации;
