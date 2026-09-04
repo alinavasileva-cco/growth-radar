@@ -18,7 +18,7 @@
 - перед каждым RUN заново определять факт по свежему Git HEAD, `data/runtime/current_run_status.json`, `data/runtime/campaign_target.json`, физическим campaign-local `leads_master/contactable_master`, contacts/evidence, pending и свежим worker-staging;
 - physical canonical/contactable count: **614 / 614**;
 - orphan contacts/evidence: **0 / 0**;
-- последний физически обработанный RUN: `N5K-20260903-609`;
+- последний физически обработанный RUN: `N5K-20260904-629`;
 - physical master/integration guard — финальный источник дедупликации;
 - исторические RUN/count нельзя использовать как зашитый baseline;
 - устаревшие данные исключать из решений при наличии более свежих подтверждённых сведений;
