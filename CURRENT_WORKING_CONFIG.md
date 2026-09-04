@@ -1,141 +1,69 @@
 # Growth Radar — актуальная рабочая конфигурация
 
-**Версия:** 2026-09-04 — восстановлен маршрут N5K-20260809-144  
+**Версия:** 2026-09-04 — RUN-144 sequential qualification  
 **Кампания:** `new_5000`  
-**Статус базы:** ACTIVE / integrity PASS  
-**Физически подтверждённый canonical/contactable:** **614 / 614**  
-**Цель:** **5000** уникальных contactable компаний  
-**Осталось:** **4386**  
+**Источник истины:** физические `data/campaigns/new_5000/leads_master.csv` и `contactable_master.csv` + contacts/evidence/runtime  
+**Физический baseline перед текущим RUN:** 614 / 614  
+**Цель:** 5000 contactable компаний  
 **Outreach:** запрещён
-
-## Источник истины
-
-- Работать только с самой свежей физической базой `data/campaigns/new_5000/leads_master.csv` и `contactable_master.csv`, contacts/evidence, runtime и campaign_target.
-- Исторические числа никогда не использовать как baseline текущей базы.
-- Старые root-level master-файлы не являются источником истины для `new_5000`.
-- После каждого RUN physical canonical должен совпадать с physical contactable; orphan contacts/evidence = 0/0; integrity = PASS.
 
 ## Единственный рабочий маршрут
 
-Восстановлен маршрут исторически лучшего сопоставимого свежего RUN `N5K-20260809-144`: **30 raw → 5 новых fully-qualified компаний**, integrity PASS, repair не требовался.
+Работает один canonical writer. Маршрут восстановлен по исторически лучшему сопоставимому RUN `N5K-20260809-144` (30 raw → 5 fully-qualified, integrity PASS), но исправлен ключевой дефект текущей реализации: **запрещён batch-WIP**.
 
-Работает только **один canonical RUN**. Отдельные discovery workers, staging writers, pending integrators, recovery writers и отдельные config writers запрещены.
+## Критическое правило: qualification-first / sequential
 
-### Discovery — HH/job-intent first
+1. Если `data/runtime/current_run_status.json` показывает `active_wip > 0`, новый discovery запрещён.
+2. Сначала довести каждый активный кандидат текущего run_id до финального `duplicate`, `excluded` с конкретной причиной или `qualified`.
+3. Fully-qualified кандидат записывается физически сразу после прохождения всех gates; он не ждёт окончания обработки всей пачки.
+4. После `active_wip = 0` работать по одному кандидату end-to-end: discovery → dedup → legal → scale → signal → LPR → contact → final dedup → physical write/exclude.
+5. Норма `active_wip`: 0; временно максимум 1.
+6. Запрещено сначала собирать 30–60 raw и оставлять десятки компаний на будущий запуск.
+7. Цель 30–60 относится к числу **полностью dispositioned** компаний за законченный круг, а не просто найденных raw. Если лимит выполнения не позволяет закончить 30, лучше полностью разобрать 5–15, чем оставить очередь.
 
-1. Основной источник — свежие вакансии российских работодателей: прежде всего HH, при необходимости другие российские job boards.
-2. Вакансия используется как наблюдаемый сигнал проблемы/изменения бизнеса, а не как поиск работы.
-3. Приоритет содержательным сигналам:
-   - построить отдел продаж с нуля;
-   - запустить или перезапустить продажи;
-   - выстроить CRM, воронку, скрипты, регламенты, аналитику;
-   - увеличить выручку, прибыльность, маржинальность;
-   - создать лидогенерацию или outbound B2B;
-   - развить проектные, дилерские, партнёрские продажи;
-   - систематизировать коммерческий блок;
-   - нанять и построить команду;
-   - собственник сам ведёт продажи / нужно вывести собственника из операционки;
-   - коммерческая функция строится или перестраивается с нуля.
-4. Анализировать полный смысл вакансии, а не только title/ключевые слова.
-5. Англоязычные вакансии и лиды исключать.
+## Discovery — HH/job-intent first
 
-### Объём RUN
+Основной источник — свежие русскоязычные вакансии российских работодателей, прежде всего HH, при необходимости другие российские job boards. Вакансия — бизнес-сигнал. Анализировать полный текст, а не title/ключевые слова.
 
-- Основной пакет: **30–60 разных employer-level raw-кандидатов**.
-- Не существует обязательного raw-floor 120/300/400/800.
-- Не собирать сотни слабых кандидатов ради throughput-метрики.
-- Если первые 30 дают сильный поток — продолжить до 60.
-- При насыщении дублями менять формулировку поиска, регион или job board, оставаясь в job-intent/owner-intent маршруте.
-- Каталоги, выставочные списки, индустриальные парки, массовые региональные реестры и абстрактные инвестиционные новости не использовать как основной discovery.
+Приоритет сигналам:
+- построить/перезапустить отдел продаж;
+- CRM, воронка, KPI, скрипты, регламенты, аналитика;
+- рост выручки, прибыли, маржинальности;
+- лидогенерация / outbound B2B;
+- дилерские, партнёрские, проектные продажи;
+- построение коммерческой команды/функции;
+- вывод собственника из операционки.
 
-## Строгая квалификация — НЕ ОСЛАБЛЯТЬ
+Англоязычные лиды и вакансии исключать. Каталоги, реестры, индустриальные парки, массовые investment lists не использовать как основной discovery.
 
-Для каждого кандидата обязательна последовательность:
+## Строгая квалификация — не ослаблять
 
-1. Быстрый global dedup по текущей физической canonical/contactable базе: Lead ID, ИНН, ОГРН/ОГРНИП, exact legal entity, brand+domain.
-2. Подтвердить точное действующее российское частное юрлицо/ИП и ИНН/ОГРН.
-3. Подтвердить соответствующий целевой масштаб по актуальным строгим правилам кампании.
-4. Подтвердить реальный датированный S1–S3 сигнал и URL источника.
-5. Установить реального собственника / CEO / ЛПР.
-6. Найти практический опубликованный контактный маршрут: телефон, email, Telegram, VK, HH или форма.
-7. Повторный global dedup непосредственно перед записью.
-8. Только после всех пунктов — `QUALIFIED` / `МОЖНО СВЯЗЫВАТЬСЯ`.
+Для каждого кандидата обязательны:
+1. global dedup по Lead ID / ИНН / ОГРН / exact legal entity / brand+domain;
+2. точное действующее российское частное юрлицо/ИП + ИНН/ОГРН;
+3. строгий текущий scale gate;
+4. датированный S1–S3 сигнал с URL;
+5. реальный собственник / CEO / ЛПР;
+6. опубликованный практический контакт: phone/email/Telegram/VK/HH/form;
+7. повторный global dedup;
+8. только затем `QUALIFIED`.
 
-Никаких придуманных фактов, шаблонно восстановленных email, неподтверждённых связок бренда с юрлицом или засчитывания общего сайта без маршрута связи.
+Предпочтительная доказательная связка: **вакансия/сигнал → официальный сайт → надёжный открытый источник по юрлицу/финансам/владельцу → официальный опубликованный контакт**.
 
-## Проверка кандидата как в RUN 144
+Никаких придуманных email, неподтверждённых фактов или связок бренда с юрлицом.
 
-Предпочтительная доказательная связка:
+## Запись
 
-**вакансия/бизнес-сигнал → официальный сайт → надёжный открытый источник по юрлицу/финансам/владельцу → официальный контакт**.
+Qualified записывается в том же выполнении сразу после завершения проверки: canonical/contactable + contacts + evidence + increment/run log/runtime. После записи canonical = contactable, integrity PASS, orphan contacts/evidence = 0/0.
 
-Допустимы РБК Компании и эквивалентные открытые источники для подтверждения юрлица, масштаба и владельца. Критерии качества текущей кампании имеют приоритет над историческими, если они строже.
+Не создавать workers, staging, pending integrator, recovery writer, config writer, dedup writer или другие параллельные write-paths.
 
-## Запись результата
+## Текущий RUN
 
-- Fully-qualified уникальные компании записывать **в том же RUN напрямую** единым canonical-пакетом.
-- Обновлять актуальные master/contactable, contacts, evidence, increment/shard, run log/report, runtime, campaign_target и этот config.
-- Не оставлять qualified только в pending/staging.
-- При desync исправлять его внутри того же canonical RUN, не запускать отдельную recovery-ветку.
-- RUN завершён только после физической записи в main, canonical=contactable, integrity PASS, orphan contacts=0, orphan evidence=0, active WIP=0 и проверки свежего HEAD SHA.
-- Если discovery уже достиг 30 raw, но обязательная квалификация части кандидатов ещё не завершена, **не начинать новый run_id**: продолжать тот же canonical RUN до полного disposition всех активных кандидатов и `active_wip=0`.
+`N5K-20260904-630`: baseline 614. Последнее подтверждённое состояние до исправления: 35 raw, 3 duplicates, 4 fully excluded, **28 active_wip**, 0 qualified, canonical/contactable 614/614. Причина нулевого прироста — не отсутствие кандидатов и не сломанный scale gate, а batch-first обработка: discovery был выполнен раньше полной квалификации и оставил 28 компаний в очереди.
 
-## Что отключено и запрещено
-
-- отдельные discovery workers;
-- `PREQUALIFIED_NEEDS_FINAL_GLOBAL_DEDUP` staging как обязательный промежуточный путь;
-- отдельный pending-integrator;
-- отдельный recovery writer;
-- отдельный config writer;
-- отдельный dedup writer;
-- обязательные 10+ discovery lanes;
-- raw-floor 120/300/400/800;
-- jobs как probe-only — отменено: job-intent снова основной маршрут;
-- каталоги/реестры ради объёма;
-- outreach.
+Следующее выполнение обязано сначала закрыть эти 28 без нового discovery, физически записывая каждую qualified компанию немедленно.
 
 ## Главная метрика
 
-**Новые физически записанные QUALIFIED компании за RUN при неизменном качестве.**
-
-Исторический эталон маршрута: `N5K-20260809-144` — 30 raw, 5 qualified, 10 duplicates, 15 excluded, integrity PASS, orphan 0/0, blocker none.
-
-## Текущее физическое состояние перед восстановлением маршрута
-
-Последний фактический RUN перед переключением: `N5K-20260904-629`.
-
-- baseline: 613;
-- net_new: 1;
-- canonical/contactable: **614 / 614**;
-- raw: 43;
-- fast gate: 14;
-- size: 14;
-- legal: 10;
-- signal: 8;
-- LPR: 5;
-- contact: 3;
-- qualified: 1 — `Л-ПАК`;
-- duplicates: 2;
-- excluded: 40;
-- integrity PASS;
-- orphan contacts/evidence: 0/0;
-- active WIP: 0.
-
-## Latest attempted canonical RUN N5K-20260904-630
-
-- route: restored RUN-144 job-intent first;
-- same logical run resumed; no new run_id created;
-- baseline: **614**;
-- authoritative employer-level raw: **35**;
-- normal route-144 package reached: **yes (35 >= 30)**;
-- confirmed physical canonical duplicates: **3** — `Идеальный турник`, `IGM / ИГРОФЕСТ`, `FTL-cargo`;
-- fully dispositioned excluded: **4**;
-- funnel currently: **35 raw → 3 FAST GATE → 0 SIZE → 0 LEGAL → 0 SIGNAL → 0 LPR → 0 CONTACT → 0 QUALIFIED**;
-- 28 nonduplicate supplemental candidates remain inside the same RUN awaiting full legal/scale/signal/LPR/contact qualification;
-- qualified / net_new: **0 / 0**;
-- canonical/contactable: **614 / 614**;
-- remaining: **4386**;
-- integrity PASS; orphan contacts/evidence **0 / 0**; active WIP **28**; outreach **0**;
-- status/stage: `UNDERDONE_ROUTE144_QUALIFICATION_INCOMPLETE / UNDERDONE`;
-- next execution must RESUME `N5K-20260904-630` until all 28 candidates are dispositioned and active WIP returns to 0;
-- no worker/staging/pending/recovery/dedup writer created.
+**Новые физически записанные QUALIFIED компании при неизменном качестве и active_wip≈0.**
