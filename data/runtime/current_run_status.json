@@ -1,9 +1,9 @@
 {
   "run_id": "N5K-20260904-630",
   "campaign_id": "new_5000",
-  "status": "UNDERDONE_ROUTE144_QUALIFICATION_INCOMPLETE",
-  "updated_at": "2026-09-04T12:49:51+03:00",
-  "stage": "UNDERDONE",
+  "status": "COMPLETED_ROUTE144_NO_NET_NEW",
+  "updated_at": "2026-09-04T13:17:09+03:00",
+  "stage": "COMPLETED",
   "new_cycle": {
     "baseline_count": 614,
     "target_count": 5000,
@@ -12,6 +12,7 @@
     "progress_added": 0,
     "remaining": 4386
   },
+  "dispositioned_count": 35,
   "funnel": {
     "raw_distinct": 35,
     "discovered": 35,
@@ -23,17 +24,10 @@
     "contact_route_found": 0,
     "qualified": 0,
     "duplicates": 3,
-    "excluded": 4
-  },
-  "route_144_volume": {
-    "normal_raw_min": 30,
-    "normal_raw_max": 60,
-    "raw_distinct": 35,
-    "normal_package_reached": true,
-    "legacy_raw_floor_120_disabled": true,
-    "mandatory_10_lanes_disabled": true
+    "excluded": 32
   },
   "qualified_companies": [],
+  "physically_added_companies": [],
   "confirmed_duplicate_companies": [
     "Идеальный турник",
     "IGM / ИГРОФЕСТ",
@@ -42,11 +36,12 @@
   "integrity_status": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "active_wip": 28,
+  "active_wip": 0,
   "physical_master_state": "614_DATA_ROWS_PLUS_HEADER_UNCHANGED_NO_QUALIFIED_WRITE",
   "physical_contactable_state": "614_DATA_ROWS_PLUS_HEADER_UNCHANGED_NO_QUALIFIED_WRITE",
   "outreach_sent": 0,
-  "blocker": "ROUTE144_QUALIFICATION_NOT_FINISHED_FOR_28_NONDUPLICATE_RAW_CANDIDATES",
-  "resume_required_same_run_id": true,
-  "report": "reports/N5K-20260904-630.md"
+  "blocker": null,
+  "resume_required_same_run_id": false,
+  "report": "reports/N5K-20260904-630.md",
+  "head_sha_note": "HEAD SHA must be read fresh after this commit; do not infer from pre-write state"
 }
