@@ -63,9 +63,16 @@
   "current_execution_blocker": {
     "candidate": "ООО Авто-Хэлп",
     "state": "ALL_QUALITY_GATES_EVIDENCED_PENDING_PHYSICAL_CANONICAL_WRITE",
-    "details": "GitHub contents connector returns empty content for data/campaigns/new_5000/leads_master.csv and raw fetch rejects the file as too large/unsupported, so the existing master cannot be safely reconstructed for an atomic append in this execution. Candidate is not counted as qualified/net_new until physically present in canonical/contactable.",
+    "details": "Candidate evidence remains sufficient for legal/scale/signal/LPR/contact review, but it is not counted as qualified/net_new because no safe physical append to both master files has completed. GitHub fetch_file returns empty content for data/campaigns/new_5000/leads_master.csv even with line ranges; GitHub raw fetch rejects the file as too large/unsupported; direct git transport from the execution container cannot resolve github.com. The available GitHub contents and Git Data write APIs require complete replacement blob content, so using them without the current master bytes would risk corrupting canonical state.",
     "targeted_dedup_attempts": ["INN 7826004234", "OGRN 1037851011120", "domain auto-help.ru"],
-    "targeted_dedup_matches": 0
+    "targeted_dedup_matches": 0,
+    "write_paths_verified": [
+      "GitHub fetch_file full and ranged: content empty, blob SHA only",
+      "GitHub raw fetch: too large/unsupported",
+      "direct git transport from execution container: github.com DNS unavailable",
+      "GitHub contents/Git Data write paths: require complete replacement content for existing master"
+    ],
+    "verified_at": "2026-09-04T19:30:18+03:00"
   },
   "cursor": {
     "next_candidate": "ООО Авто-Хэлп",
