@@ -29,15 +29,15 @@
   "replay": {
     "run_id": "N5K-20260904-631",
     "replay_total": 60,
-    "checked": 9,
-    "remaining": 51,
+    "checked": 18,
+    "remaining": 42,
     "duplicates": 4,
-    "excluded": 5,
+    "excluded": 14,
     "qualified": 0,
     "net_new": 0,
-    "next_candidate": "ООО Бэкграунд",
+    "next_candidate": "ООО Формула успеха",
     "resume_same_run": true,
     "new_discovery_allowed": false
   },
-  "note": "Sequential accumulated-jobs replay remains active. Nine candidates are fully dispositioned, active_wip=0, no new canonical writes in this replay segment. Resume N5K-20260904-631 at ООО Бэкграунд; do not start broad discovery."
+  "note": "Sequential accumulated-jobs replay remains active. Eighteen candidates are fully dispositioned, active_wip=0, no new canonical writes in this replay segment. Resume N5K-20260904-631 at ООО Формула успеха; do not start broad discovery."
 }
