@@ -7,7 +7,7 @@
   "progress_added": 614,
   "remaining_to_total_target": 4386,
   "remaining": 4386,
-  "remaining_to_1000": 387,
+  "remaining_to_1000": 386,
   "qualified_staged_not_counted": 0,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
@@ -20,78 +20,40 @@
   "latest_attempted_run": "N5K-20260904-629",
   "latest_attempted_run_id": "N5K-20260904-629",
   "latest_attempted_run_status": "UNDERDONE_RECOVERY_REQUIRED",
-  "canonical_integration_run_id": "N5K-20260904-618",
+  "canonical_integration_run_id": "N5K-20260904-629",
   "hourly_baseline_count": 613,
-  "hourly_net_new": 0,
+  "hourly_net_new": 1,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach_sent": 0,
   "latest_run_efficiency": {
-    "run_id": "N5K-20260903-609",
-    "raw": 121,
-    "fast_gate": 3,
-    "size": 3,
-    "legal": 3,
-    "signal": 3,
-    "lpr": 3,
-    "contact": 2,
-    "qualified": 0,
+    "run_id": "N5K-20260904-629",
+    "raw": 43,
+    "fast_gate": 14,
+    "size": 14,
+    "legal": 10,
+    "signal": 8,
+    "lpr": 5,
+    "contact": 3,
+    "qualified": 1,
     "duplicates": 2,
-    "excluded": 119,
-    "minimum_raw_floor_met": true,
+    "excluded": 40,
+    "minimum_raw_floor_met": false,
     "preferred_config_raw_target_met": false,
     "normal_throughput_completion": false,
-    "raw_count_note": "Exactly 121 distinct named employer-level candidates were audited across 12 low-overlap lanes. Hard floor 120 passed; preferred continue-until-300 threshold was not reached after supplemental discovery. Both deep-check candidates were rejected by the physical canonical writer as existing duplicates. No external technical limitation claimed; criteria unchanged; outreach 0."
+    "raw_count_note": "Exactly 43 authoritative employer-level raw candidates from the fresh official_owner staging were integrated through the canonical writer. Three prequalified candidates reached final physical dedup; two were existing duplicates and one (Л-ПАК) was net new. A separate fresh growth_news staging contained 120 raw but explicitly marked all rows BLOCKED_BEFORE_FAST_GATE because its full physical canonical-key dedup was unresolved, so those rows were not counted in the authoritative funnel. No external technical limitation claimed; criteria unchanged; outreach 0."
   },
   "latest_run_lane_efficiency": [
-    {
-      "lane": "regional_investment_new_production",
-      "raw": 15
-    },
-    {
-      "lane": "industrial_park_sez_technopark",
-      "raw": 11
-    },
-    {
-      "lane": "regional_private_expansion",
-      "raw": 10
-    },
-    {
-      "lane": "sme_growth_cases",
-      "raw": 10
-    },
-    {
-      "lane": "export_dealer_partner_expansion",
-      "raw": 9
-    },
-    {
-      "lane": "logistics_warehouse_commercial_property",
-      "raw": 9
-    },
-    {
-      "lane": "new_line_workshop_factory",
-      "raw": 20
-    },
-    {
-      "lane": "trade_association_business_growth",
-      "raw": 4
-    },
-    {
-      "lane": "company_pressroom_owner_ceo",
-      "raw": 10
-    },
-    {
-      "lane": "commercial_contract_growth_signal",
-      "raw": 3
-    },
-    {
-      "lane": "branches_stores_service_centers",
-      "raw": 10
-    },
-    {
-      "lane": "private_investment_ma",
-      "raw": 10
-    }
+    {"lane":"regional_new_production_central","raw":6},
+    {"lane":"industrial_expansion_northwest","raw":5},
+    {"lane":"robotics_automation","raw":5},
+    {"lane":"export_international_expansion","raw":4},
+    {"lane":"food_fmcg_scale","raw":4},
+    {"lane":"packaging_materials","raw":4},
+    {"lane":"regional_industrial_volga","raw":5},
+    {"lane":"moscow_region_new_sites","raw":4},
+    {"lane":"management_commercial_transformation","raw":3},
+    {"lane":"regional_investment_projects","raw":3}
   ],
   "next_distribution_pct": {
     "jobs_probe": 5,
@@ -102,8 +64,8 @@
     "management_change_commercial_transformation_fresh": 15,
     "partner_business_change_fresh": 15
   },
-  "fresh_staging": "RUN N5K-20260904-618 processed by canonical writer with zero qualified additions; staged qualified not counted is zero.",
+  "fresh_staging": "RUN N5K-20260904-629 processed by canonical writer: 3 prequalified reached physical dedup, 1 net-new qualified integrated, 2 duplicates rejected; staged qualified not counted is zero. Separate growth_news staging with 120 blocked-before-FAST-GATE raw was reviewed but not counted authoritatively because full canonical-key dedup was unresolved.",
   "repair_required": "RAW_BELOW_300_CONTINUE_FRESH_LOW_OVERLAP_SAME_CYCLE",
   "recovery_required": true,
-  "note": "N5K-20260904-629 requires recovery: raw_distinct 43<300; hard_floor_passed=False; canonical/contactable 614/614; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
+  "note": "N5K-20260904-629 requires recovery: raw_distinct 43<300; hard_floor_passed=False; canonical/contactable 614/614; net_new=1; criteria unchanged; supplemental fresh low-overlap discovery required; outreach 0."
 }
