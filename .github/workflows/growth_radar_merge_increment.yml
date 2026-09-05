@@ -65,4 +65,5 @@ jobs:
           git config user.name 'growth-radar-bot'
           git config user.email 'growth-radar-bot@users.noreply.github.com'
           git commit -m 'data: merge Growth Radar canonical increment'
+          git pull --rebase origin main
           git push
