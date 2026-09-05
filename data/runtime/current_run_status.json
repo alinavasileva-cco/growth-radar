@@ -1,52 +1,51 @@
 {
-  "run_id": "N5K-20260906-654",
-  "run_sequence": 654,
+  "run_id": "N5K-20260906-655",
+  "run_sequence": 655,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 627,
-  "fresh_discovery_count": 16,
+  "baseline": 628,
+  "fresh_discovery_count": 4,
   "replay_count": 0,
   "fully_dispositioned": 4,
   "funnel": {
-    "legal_pass": 4,
-    "scale_pass": 3,
-    "signal_pass": 3,
-    "lpr_pass": 3,
-    "contact_pass": 2,
+    "legal_pass": 3,
+    "scale_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 1,
+    "duplicates": 0,
     "excluded": 3
   },
-  "duplicates": 1,
+  "duplicates": 0,
   "excluded": 3,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "leads": 1,
     "contactable": 1,
-    "contacts": 2,
+    "contacts": 1,
     "evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-654.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-655.json",
   "net_new": 1,
   "physically_added_companies": [
-    "ООО «САТУРН СТРОЙМАРКЕТ ЦЕНТР»"
+    "ООО «ТЕПЛОМАРКЕТ»"
   ],
-  "current_canonical_count": 628,
-  "current_contactable_count": 628,
-  "remaining_to_5000": 4372,
-  "duplicate_rate": 0.25,
-  "source_yield": "1/16 physically merged (6.25%); 1/4 fully dispositioned evidence-ready (25.00%)",
+  "current_canonical_count": 629,
+  "current_contactable_count": 629,
+  "remaining_to_5000": 4371,
+  "duplicate_rate": 0.0,
+  "source_yield": "1/4 evidence-ready (25.00%); 1/4 physically merged (25.00%)",
   "exclusion_reasons": {
-    "FINAL_DEDUP": 1,
-    "SCALE_FAIL": 1,
-    "CONTACT_NOT_PRACTICAL_FOR_COMMERCIAL_OUTREACH": 1
+    "SCALE_FAIL": 2,
+    "LEGAL_LINKAGE_NOT_PROVEN": 1
   },
-  "net_new_24h": 14,
+  "net_new_24h": 15,
   "daily_target_deviation": {
-    "vs_100": -86,
-    "vs_200": -186
+    "vs_100": -85,
+    "vs_200": -185
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -56,14 +55,14 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "kept fresh Russian-language vacancy discovery at 100% of research flow with replay_count=0",
-    "used targeted dedup only and did not require a full master read as preflight",
-    "excluded one canonical duplicate by exact INN/OGRN",
-    "kept one sub-scale candidate fail-closed without weakening the scale gate",
-    "excluded one otherwise strong candidate because the official contact source explicitly prohibited commercial offers and mailings",
-    "created one complete four-file atomic increment group using canonical headers",
-    "accepted the repo-side authoritative merge receipt only after status MERGED and added_count=1",
-    "confirmed canonical/contactable parity 628/628 and zero orphan contacts/evidence",
+    "used full vacancy text for the qualified candidate and sequential gates end-to-end",
+    "used targeted connector dedup only before safe-write and did not require full master reads",
+    "kept two sub-scale candidates fail-closed without weakening the scale gate",
+    "excluded one ambiguous brand because exact employer-to-legal linkage was not proven",
+    "created one complete four-file atomic increment group with canonical headers",
+    "accepted net_new only after repo-side receipt status MERGED with added_count=1",
+    "confirmed canonical/contactable parity 629/629 and zero orphan contacts/evidence",
     "left active_wip=0, new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260906-654.md"
+  "report": "reports/N5K-20260906-655.md"
 }
