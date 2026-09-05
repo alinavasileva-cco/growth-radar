@@ -1,52 +1,52 @@
 {
-  "run_id": "N5K-20260905-653",
-  "run_sequence": 653,
+  "run_id": "N5K-20260906-654",
+  "run_sequence": 654,
   "campaign_id": "new_5000",
-  "status": "COMPLETE_DEDUP_NOOP",
-  "stage": "RUN_COMPLETE_NO_PHYSICAL_GROWTH",
+  "status": "COMPLETE_MERGED",
+  "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
   "baseline": 627,
-  "fresh_discovery_count": 25,
+  "fresh_discovery_count": 16,
   "replay_count": 0,
-  "fully_dispositioned": 9,
+  "fully_dispositioned": 4,
   "funnel": {
-    "legal_pass": 6,
+    "legal_pass": 4,
     "scale_pass": 3,
     "signal_pass": 3,
     "lpr_pass": 3,
-    "contact_pass": 3,
-    "qualified_evidence_ready": 3,
-    "duplicates": 3,
-    "excluded": 9
+    "contact_pass": 2,
+    "qualified_evidence_ready": 1,
+    "duplicates": 1,
+    "excluded": 3
   },
-  "duplicates": 3,
-  "excluded": 9,
-  "qualified_evidence_ready": 3,
+  "duplicates": 1,
+  "excluded": 3,
+  "qualified_evidence_ready": 1,
   "increment_rows_written": {
-    "leads": 3,
-    "contactable": 3,
-    "contacts": 6,
-    "evidence": 15,
-    "note": "aggregate rescue increments N5K-20260905-651..653; final increment 653 = 1/1/2/5"
+    "leads": 1,
+    "contactable": 1,
+    "contacts": 2,
+    "evidence": 5
   },
-  "merge_receipt_status": "DEDUP_NOOP",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-653.json",
-  "net_new": 0,
-  "physically_added_companies": [],
-  "current_canonical_count": 627,
-  "current_contactable_count": 627,
-  "remaining_to_5000": 4373,
-  "duplicate_rate": 0.3333333333,
-  "source_yield": "3/25 evidence-ready (12.00%); 0/25 physically merged (0.00%)",
+  "merge_receipt_status": "MERGED",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-654.json",
+  "net_new": 1,
+  "physically_added_companies": [
+    "ООО «САТУРН СТРОЙМАРКЕТ ЦЕНТР»"
+  ],
+  "current_canonical_count": 628,
+  "current_contactable_count": 628,
+  "remaining_to_5000": 4372,
+  "duplicate_rate": 0.25,
+  "source_yield": "1/16 physically merged (6.25%); 1/4 fully dispositioned evidence-ready (25.00%)",
   "exclusion_reasons": {
-    "FINAL_DEDUP": 3,
-    "SCALE_FAIL_OR_NOT_PROVEN": 2,
-    "LEGAL_LINKAGE_NOT_PROVEN": 3,
-    "SIGNAL_NOT_DIRECT_EMPLOYER": 1
+    "FINAL_DEDUP": 1,
+    "SCALE_FAIL": 1,
+    "CONTACT_NOT_PRACTICAL_FOR_COMMERCIAL_OUTREACH": 1
   },
-  "net_new_24h": 13,
+  "net_new_24h": 14,
   "daily_target_deviation": {
-    "vs_100": -87,
-    "vs_200": -187
+    "vs_100": -86,
+    "vs_200": -186
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -55,15 +55,15 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "triggered emergency handling after consecutive zero-growth outcomes and kept diagnosis below the discovery budget",
-    "confirmed connector-side targeted code search is incomplete for large canonical masters while authoritative repo-side dedup is functioning",
-    "kept fresh Russian-language vacancy discovery dominant with replay_count=0",
-    "rotated discovery from saturated Moscow routes into regional HH-derived candidates including Ufa",
-    "qualified three candidates end-to-end using full vacancy text, exact legal linkage, scale, LPR and published contacts",
-    "accepted authoritative repo-side DEDUP_NOOP for all three candidates and did not count them as net_new",
-    "kept weaker legal-linkage and scale routes fail-closed without weakening gates",
-    "confirmed canonical/contactable parity 627/627 and zero orphan contacts/evidence",
-    "left new_discovery_allowed=true and outreach_sent=0"
+    "kept fresh Russian-language vacancy discovery at 100% of research flow with replay_count=0",
+    "used targeted dedup only and did not require a full master read as preflight",
+    "excluded one canonical duplicate by exact INN/OGRN",
+    "kept one sub-scale candidate fail-closed without weakening the scale gate",
+    "excluded one otherwise strong candidate because the official contact source explicitly prohibited commercial offers and mailings",
+    "created one complete four-file atomic increment group using canonical headers",
+    "accepted the repo-side authoritative merge receipt only after status MERGED and added_count=1",
+    "confirmed canonical/contactable parity 628/628 and zero orphan contacts/evidence",
+    "left active_wip=0, new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260905-653.md"
+  "report": "reports/N5K-20260906-654.md"
 }
