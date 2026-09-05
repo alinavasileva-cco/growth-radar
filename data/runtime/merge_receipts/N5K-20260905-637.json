@@ -1,0 +1,21 @@
+{
+  "increment": "N5K-20260905-637",
+  "status": "MERGED",
+  "added_count": 1,
+  "added_lead_ids": [
+    "n5k-0637-002"
+  ],
+  "duplicate_count": 1,
+  "duplicate_reasons": {
+    "N5K-0637-001": [
+      "inn:1841039706",
+      "ogrn:1141841001158"
+    ]
+  },
+  "integrity": {
+    "canonical_count": 618,
+    "contactable_count": 618,
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  }
+}
