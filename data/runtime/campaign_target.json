@@ -29,16 +29,16 @@
   "replay": {
     "run_id": "N5K-20260904-631",
     "replay_total": 60,
-    "checked": 41,
-    "remaining": 19,
+    "checked": 42,
+    "remaining": 18,
     "duplicates": 5,
-    "excluded": 35,
+    "excluded": 36,
     "qualified": 1,
     "net_new": 1,
     "physically_added_companies": 1,
-    "next_candidate": "Сибирская продовольственная компания",
+    "next_candidate": "Спектр-Пак Юг",
     "resume_same_run": true,
     "new_discovery_allowed": false
   },
-  "note": "Sequential accumulated-jobs replay remains active. 41 candidates are fully dispositioned. BARNES is physically confirmed as replay net-new. TS GROUP is now a current-canonical duplicate by exact INN/OGRN. Resume the same replay at Сибирская продовольственная компания; do not start broad discovery."
+  "note": "Sequential accumulated-jobs replay remains active. 42 candidates are fully dispositioned. BARNES is physically confirmed as replay net-new. TS GROUP is a current-canonical duplicate by exact INN/OGRN. Siberian Food Company was excluded as far above strict target scale. Resume the same replay at Спектр-Пак Юг; do not start broad discovery."
 }
