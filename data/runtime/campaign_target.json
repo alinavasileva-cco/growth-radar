@@ -29,16 +29,16 @@
   "replay": {
     "run_id": "N5K-20260904-631",
     "replay_total": 60,
-    "checked": 36,
-    "remaining": 24,
+    "checked": 37,
+    "remaining": 23,
     "duplicates": 4,
-    "excluded": 31,
+    "excluded": 32,
     "qualified": 1,
     "net_new": 1,
     "physically_added_companies": 1,
-    "next_candidate": "Экосмотр",
+    "next_candidate": "АкваБайт",
     "resume_same_run": true,
     "new_discovery_allowed": false
   },
-  "note": "Sequential accumulated-jobs replay remains active. 36 candidates are fully dispositioned. BARNES was physically merged as N5K-0631-001. Resume the same replay at Экосмотр; do not start broad discovery."
+  "note": "Sequential accumulated-jobs replay remains active. 37 candidates are fully dispositioned. BARNES was physically merged as N5K-0631-001. Resume the same replay at АкваБайт; do not start broad discovery."
 }
