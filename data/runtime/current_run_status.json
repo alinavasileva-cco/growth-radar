@@ -6,14 +6,14 @@
   "stage": "SEQUENTIAL_END_TO_END_REPLAY",
   "baseline": 614,
   "replay_total": 60,
-  "checked": 26,
-  "fully_dispositioned": 26,
-  "remaining_replay": 34,
+  "checked": 27,
+  "fully_dispositioned": 27,
+  "remaining_replay": 33,
   "active_wip": 1,
-  "active_candidate": "ООО Эталонное решение",
-  "funnel": {"legal_pass": 13, "scale_pass": 6, "signal_pass": 2, "lpr_pass": 1, "contact_pass": 0, "qualified": 0, "duplicates": 4, "excluded": 22},
+  "active_candidate": "ИП Магер",
+  "funnel": {"legal_pass": 14, "scale_pass": 6, "signal_pass": 2, "lpr_pass": 1, "contact_pass": 0, "qualified": 0, "duplicates": 4, "excluded": 23},
   "duplicates": 4,
-  "excluded": 22,
+  "excluded": 23,
   "qualified": 0,
   "net_new": 0,
   "physically_added_companies": [],
@@ -22,7 +22,7 @@
     "LEGAL_ENTITY_NOT_RELIABLY_LINKED": ["Авто В Руки", "ООО КВАНТУМ", "ИП Попова"],
     "SIGNAL_NOT_S1_S3": ["ООО Мультикомпонента", "ООО ПАУК", "ООО Торговая компания ТЕСТ-ДРАЙВ", "ООО ТехноИнтегратор"],
     "CURRENT_LEGAL_LINK_AMBIGUOUS": ["ООО ИнфраТех / OOHVAT", "ООО Бэкграунд / BACKGROUND", "ООО СМАЙЛ", "ООО Кристалл"],
-    "SCALE_NOT_CONFIRMED_CURRENT": ["ООО Иксхантер", "ИП Шлячков Артем Алексеевич"],
+    "SCALE_NOT_CONFIRMED_CURRENT": ["ООО Иксхантер", "ИП Шлячков Артем Алексеевич", "ООО Эталонное решение"],
     "SCALE_GATE_FAIL_CURRENT": ["VIEN", "ООО DELASIA", "ООО Дс-Арт", "ООО Эктем Ок", "SILENKO AUTOcratia"],
     "CURRENT_LEGAL_STATUS_FAIL": ["Эксперт Сервис"],
     "SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER": ["ООО Формула успеха"],
@@ -39,21 +39,20 @@
   "root_cause": {"A": "full-tree/global preflight + truncated connector -> fail-closed before discovery", "B": "batch-first -> dozens of WIP candidates", "C": "shallow evidence acquisition -> false excludes"},
   "permanent_fixes": ["targeted dedup", "sequential end-to-end", "retry missing evidence", "immediate physical write"],
   "last_disposition": {
-    "candidate": "ООО ТехноИнтегратор",
+    "candidate": "ООО Эталонное решение",
     "decision": "EXCLUDED",
-    "reason": "SIGNAL_NOT_S1_S3",
-    "exact_legal": "ООО ТЕХНОИНТЕГРАТОР, INN 7814461878, OGRN 1107847068010",
-    "current_scale": "2025 revenue 123.878m RUB; current registry confirms active company",
+    "reason": "SCALE_NOT_CONFIRMED_CURRENT",
+    "exact_legal": "ООО ЭТАЛОННОЕ РЕШЕНИЕ, INN 7810951906, OGRN 1227800100065",
     "evidence_attempts": [
-      "Current sales vacancy: ordinary manager sales role tied to increased work volume, not commercial-function build/relaunch/systematization",
-      "Current/latest employer vacancies show operational expansion (drivers/service engineering); archived ROP role also lacks a qualifying transformation mandate"
+      "Current company profile identifies the entity as microbusiness and shows zero 2024 revenue / no evidence of qualifying scale",
+      "Independent targeted search for 2025 revenue/current scale returned no reliable current financial figure; vacancy describes a broader GK but no supported aggregation to other legal entities was used"
     ],
-    "note": "Legal and scale gates pass; strict S1-S3 job-intent gate does not."
+    "note": "Exact legal identity passes; strict current scale gate cannot be established without inferring group scale from unrelated legal entities."
   },
   "cursor": {
-    "next_candidate": "ООО Эталонное решение",
-    "remaining_pool_count": 34,
-    "remaining_pool": ["ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
+    "next_candidate": "ИП Магер",
+    "remaining_pool_count": 33,
+    "remaining_pool": ["ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
   },
   "resume_required_same_run_id": true,
   "new_discovery_allowed": false,
