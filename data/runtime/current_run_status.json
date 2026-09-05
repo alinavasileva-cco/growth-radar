@@ -1,13 +1,13 @@
 {
-  "run_id": "N5K-20260905-639",
-  "run_sequence": 639,
+  "run_id": "N5K-20260905-640",
+  "run_sequence": 640,
   "campaign_id": "new_5000",
-  "status": "COMPLETE_MERGED",
-  "stage": "RUN_COMPLETE_PHYSICAL_GROWTH_CONFIRMED",
-  "baseline": 618,
-  "fresh_discovery_count": 1,
+  "status": "COMPLETE_DEDUP_NOOP",
+  "stage": "RUN_COMPLETE_NO_PHYSICAL_GROWTH_FINAL_DEDUP",
+  "baseline": 619,
+  "fresh_discovery_count": 5,
   "replay_count": 0,
-  "fully_dispositioned": 1,
+  "fully_dispositioned": 4,
   "funnel": {
     "legal_pass": 1,
     "scale_pass": 1,
@@ -15,11 +15,11 @@
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 0,
-    "excluded": 0
+    "duplicates": 1,
+    "excluded": 3
   },
-  "duplicates": 0,
-  "excluded": 0,
+  "duplicates": 1,
+  "excluded": 3,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "leads": 1,
@@ -27,18 +27,19 @@
     "contacts": 2,
     "evidence": 5
   },
-  "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-639.json",
-  "net_new": 1,
-  "physically_added_companies": [
-    "ПРО-Потолки / ООО «ПРО-ПОТОЛКИ» — INN 7802662724 / OGRN 1187847106655"
-  ],
+  "merge_receipt_status": "DEDUP_NOOP",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-640.json",
+  "net_new": 0,
+  "physically_added_companies": [],
   "current_canonical_count": 619,
   "current_contactable_count": 619,
   "remaining_to_5000": 4381,
-  "duplicate_rate": 0.0,
-  "source_yield": "1/1 physically merged (100%); 1/1 evidence-ready (100%) within follow-on fresh cycle",
-  "exclusion_reasons": {},
+  "duplicate_rate": 0.25,
+  "source_yield": "1/5 evidence-ready (20%); 0/5 physically merged (0%)",
+  "exclusion_reasons": {
+    "LEGAL_LINKAGE_NOT_PROVEN": 3,
+    "FINAL_DEDUP_EXISTING_CANONICAL": 1
+  },
   "net_new_24h": 6,
   "daily_target_deviation": {
     "vs_100": -94,
@@ -51,10 +52,10 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "opened a follow-on fresh cycle immediately after prior DEDUP_NOOP",
-    "used a current direct S1 vacancy with explicit CRM/funnel/KPI/margin/financial-result mandate",
-    "performed targeted dedup by INN, OGRN, exact legal entity and domain before write",
-    "counted growth only after repo-side MERGED receipt confirmed physical canonical increase"
+    "repo-side final dedup overruled incomplete connector-side search for Endorphin; DEDUP_NOOP was not counted as growth",
+    "continued fresh discovery despite write/merge state",
+    "failed ambiguous employer brands closed at LEGAL instead of inventing brand-to-entity linkage",
+    "rotated current HH queries toward direct B2B ROP/commercial roles with CRM/funnel/sales-system intent"
   ],
-  "report": "reports/N5K-20260905-639.md"
+  "report": "reports/N5K-20260905-640.md"
 }
