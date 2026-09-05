@@ -4,11 +4,11 @@
   "mode": "accumulated_jobs_replay",
   "status": "REPLAY_IN_PROGRESS",
   "replay_total": 60,
-  "checked": 36,
-  "fully_dispositioned": 36,
-  "remaining": 24,
+  "checked": 37,
+  "fully_dispositioned": 37,
+  "remaining": 23,
   "duplicates": 4,
-  "excluded": 31,
+  "excluded": 32,
   "legal_pass": 22,
   "scale_pass": 8,
   "signal_pass": 3,
@@ -18,15 +18,7 @@
   "net_new": 1,
   "qualified_evidence_ready": 1,
   "physically_added_companies": 1,
-  "physically_added": [
-    {
-      "lead_id": "N5K-0631-001",
-      "company": "BARNES Moscow / ООО «РКМ РЕАЛ ЭСТЕЙТ»",
-      "inn": "7707430924",
-      "ogrn": "1197746350999",
-      "receipt": "data/runtime/merge_receipts/N5K-20260904-631.json"
-    }
-  ],
+  "physically_added": [{"lead_id":"N5K-0631-001","company":"BARNES Moscow / ООО «РКМ РЕАЛ ЭСТЕЙТ»","inn":"7707430924","ogrn":"1197746350999","receipt":"data/runtime/merge_receipts/N5K-20260904-631.json"}],
   "current_canonical_count": 616,
   "current_contactable_count": 616,
   "remaining_to_5000": 4384,
@@ -34,36 +26,21 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "last_dispositioned_candidate": "ООО Панголин Карс",
-  "last_disposition": "EXCLUDED_SIGNAL_NOT_CONFIRMED_CURRENT",
-  "last_disposition_detail": "Exact legal entity confirmed as ООО «ПАНГОЛИН КАРС», INN 9701256085, OGRN 1237700524698; current 2025 revenue about 112.74m RUB and 7 employees. Two independent targeted searches for a fresh 2026 strategic/commercial build-or-scale vacancy attributable to this employer did not produce a qualifying S1-S3 signal. Partner/dealer vacancies were not attributed to the legal entity.",
+  "last_dispositioned_candidate": "Экосмотр",
+  "last_disposition": "EXCLUDED_LEGAL_ENTITY_NOT_RELIABLY_LINKED",
+  "last_disposition_detail": "Fresh 01.07.2026 Head of Marketing vacancy for the federal Ekosmotr network is confirmed at Novosibirsk, Deputatskaya 48. Two independent targeted legal-entity attempts found multiple current Ekosmotr-branded operators/entities (including ООО «ТЕХОСМОТР ЭКОСМОТР», ООО «ПИМАВТО», and regional Ekosmotr entities), but no reliable source tying the vacancy/employer record to one exact legal entity. Group scale was not transferred across entities; therefore excluded at legal-link gate.",
   "recent_dispositions": [
-    {
-      "candidate": "СИМБАТ",
-      "disposition": "EXCLUDED_SCALE_TOO_LARGE_CURRENT",
-      "detail": "Exact Moscow ООО «СИМБАТ», INN 7731351857, OGRN 1177746227306, is active. Current 2025 revenue about 7.50bn RUB and 215 employees; current sources classify it as large business. Excluded under the campaign rule excluding huge corporations/non-target scale. No stale vacancy used."
-    },
-    {
-      "candidate": "Match Makers Staffing",
-      "disposition": "EXCLUDED_SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER",
-      "detail": "Current vacancies explicitly state that Match Makers Staffing is recruiting for clients (e.g. a client company / TOP-3 digital agency). The observed management/commercial intent belongs to undisclosed clients, not to Match Makers Staffing itself. Its public corporate site is US/English-language and does not establish a Russian target legal entity for this replay candidate."
-    },
-    {
-      "candidate": "ООО Панголин Карс",
-      "disposition": "EXCLUDED_SIGNAL_NOT_CONFIRMED_CURRENT",
-      "detail": "Exact legal entity: INN 9701256085, OGRN 1237700524698; active, 2025 revenue about 112.74m RUB, 7 employees. Official Pango Cars site is current. Two targeted searches found no fresh qualifying strategic/commercial build-or-scale vacancy attributable to this legal entity; dealer/partner sales vacancies were not transferred to it."
-    }
+    {"candidate":"СИМБАТ","disposition":"EXCLUDED_SCALE_TOO_LARGE_CURRENT","detail":"Moscow ООО «СИМБАТ», INN 7731351857, OGRN 1177746227306; 2025 revenue about 7.50bn RUB and 215 employees. Excluded under explicit huge-corporation/non-target-scale rule."},
+    {"candidate":"Match Makers Staffing","disposition":"EXCLUDED_SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER","detail":"Observed vacancies explicitly recruit for client companies; intent belongs to undisclosed clients, not the staffing agency. Public corporate site is US/English-language and does not establish a Russian target legal entity."},
+    {"candidate":"ООО Панголин Карс","disposition":"EXCLUDED_SIGNAL_NOT_CONFIRMED_CURRENT","detail":"INN 9701256085, OGRN 1237700524698; 2025 revenue about 112.74m RUB and 7 employees. Two targeted searches found no fresh qualifying strategic/commercial build-or-scale vacancy attributable to this legal entity; dealer/partner signals were not transferred."},
+    {"candidate":"Экосмотр","disposition":"EXCLUDED_LEGAL_ENTITY_NOT_RELIABLY_LINKED","detail":"Fresh 01.07.2026 Head of Marketing signal exists for federal Ekosmotr network, but two targeted legal-link attempts found multiple operating legal entities and no reliable exact linkage from the vacancy to one entity. No group aggregation used."}
   ],
   "merge_receipt_status": "MERGED",
   "outreach_sent": 0,
   "new_broad_discovery_allowed": false,
-  "next_candidate": "Экосмотр",
-  "remaining_pool": ["Экосмотр","АкваБайт","ТС ГРУПП","Склад Ремонта","AYS GROUP","Сибирская продовольственная компания","Спектр-Пак Юг","Феникс-Презент","Дюна","ЕВРАЗ","Компания ОРУМ","АО ЕКАД: Южный","УБРиР","Кейтеринбург","Маслодел","Unibell","Торговая сеть Ярмарка","MAXCAPITAL","Gold technology of electronics","Complex Safety Alliance","Fijital","CharmCleo Cosmetic","Турбодефлектор","ГК АГАТ"],
-  "root_cause": {
-    "A": "full-tree/global preflight + truncated connector -> fail-closed before discovery",
-    "B": "batch-first -> dozens of WIP",
-    "C": "shallow evidence acquisition -> false excludes"
-  },
+  "next_candidate": "АкваБайт",
+  "remaining_pool": ["АкваБайт","ТС ГРУПП","Склад Ремонта","AYS GROUP","Сибирская продовольственная компания","Спектр-Пак Юг","Феникс-Презент","Дюна","ЕВРАЗ","Компания ОРУМ","АО ЕКАД: Южный","УБРиР","Кейтеринбург","Маслодел","Unibell","Торговая сеть Ярмарка","MAXCAPITAL","Gold technology of electronics","Complex Safety Alliance","Fijital","CharmCleo Cosmetic","Турбодефлектор","ГК АГАТ"],
+  "root_cause": {"A":"full-tree/global preflight + truncated connector -> fail-closed before discovery","B":"batch-first -> dozens of WIP","C":"shallow evidence acquisition -> false excludes"},
   "permanent_fixes": ["targeted dedup","sequential end-to-end","retry missing evidence","immediate physical write via repo-side complete increment merge"],
   "updated_at": "2026-09-05T12:32:16+03:00"
 }
