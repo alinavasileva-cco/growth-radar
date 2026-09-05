@@ -1,73 +1,119 @@
-# Growth Radar — актуальная рабочая конфигурация
+# Growth Radar — актуальная production-конфигурация
 
-**Версия:** 2026-09-04 — RUN-144 sequential qualification + accumulated jobs replay  
+**Версия:** 2026-09-05 — fresh discovery always-on / RUN-144 sequential qualification  
 **Кампания:** `new_5000`  
 **Источник истины:** физические `data/campaigns/new_5000/leads_master.csv` и `contactable_master.csv` + contacts/evidence/runtime  
-**Физический baseline перед replay:** 614 / 614  
-**Цель:** 5000 contactable компаний  
-**Outreach:** запрещён
+**Цель:** 5000 НОВЫХ полностью квалифицированных российских частных компаний  
+**Операционный ориентир:** 100–200 physically written net_new qualified в сутки; 5–10 за цикл при достаточном потоке  
+**Outreach:** запрещён, `outreach_sent=0`
 
-## Единственный рабочий маршрут
+## Единственный production writer
 
-Работает один canonical writer. Маршрут восстановлен по исторически лучшему сопоставимому RUN `N5K-20260809-144` (30 raw → 5 fully-qualified, integrity PASS), с обязательной sequential qualification и запретом batch-WIP.
+Работает ОДИН canonical writer. Старые discovery workers, pending_workers, staging queues, recovery writer, dedup writer, config writer и parallel canonical writers запрещены.
 
-## Критическое правило: qualification-first / sequential
+## Критическое правило — fresh discovery никогда не блокируется
 
-1. Если `data/runtime/current_run_status.json` показывает `active_wip > 0`, новый discovery запрещён.
-2. Сначала довести активный кандидат текущего run_id до финального `duplicate`, `excluded` с конкретной причиной или `qualified` с физической canonical-записью.
-3. Fully-qualified кандидат записывается физически сразу после прохождения всех gates; он не ждёт окончания обработки пула.
-4. После `active_wip = 0` работать по одному кандидату end-to-end: replay candidate → dedup → legal → scale → signal → LPR → contact → final dedup → physical write/exclude.
-5. Норма `active_wip`: 0; временно максимум 1.
-6. Запрещено сначала собирать пачку и оставлять десятки компаний на будущий запуск.
-7. При missing evidence перед `EXCLUDED` обязательны минимум две независимые targeted попытки найти недостающий факт.
-8. Техническая невозможность физической canonical-записи не превращает прошедшего quality gates кандидата в `qualified/net_new`: он остаётся единственным active WIP до безопасной физической записи либо до появления нового факта, меняющего disposition.
+`new_discovery_allowed = true` ВСЕГДА.
 
-## Discovery — HH/job-intent first
+Ни replay, ни backlog, ни recovery, ни `active_wip`, ни truncated/incomplete API/connector response, ни невозможность прочитать большой master/tree целиком НЕ МОГУТ остановить свежий discovery всего RUN.
 
-После завершения текущего replay основной источник — свежие русскоязычные вакансии российских работодателей, прежде всего HH, при необходимости другие российские job boards. Вакансия — бизнес-сигнал. Анализировать полный текст, а не title/ключевые слова.
+Минимум 80% каждого RUN — СВЕЖИЙ DISCOVERY. Максимум 20% — replay/backlog/recovery. Один проблемный кандидат может остаться неqualified/на точечный повтор, но не может держать весь RUN заложником.
 
-Приоритет сигналам: построить/перезапустить отдел продаж; CRM/воронка/KPI/скрипты/регламенты/аналитика; рост выручки/прибыли/маржинальности; лидогенерация/outbound B2B; дилерские/партнёрские/проектные продажи; построение коммерческой команды/функции; вывод собственника из операционки.
+Fail-open для discovery / fail-closed для qualification:
+- не доказан обязательный факт по одной компании → эта компания не проходит;
+- не доказан обязательный факт по одной компании ≠ остановить поиск других компаний.
 
-Англоязычные лиды и вакансии исключать. Каталоги, реестры, индустриальные парки, массовые investment lists не использовать как основной discovery.
+## Discovery — русскоязычные job-intent сигналы
+
+Приоритет №1 — свежие русскоязычные вакансии российских работодателей.
+
+Основной источник: HH. При насыщении сразу ротировать SuperJob, Работа.ру, другие российские job boards и официальные карьерные страницы.
+
+Англоязычные вакансии и лиды исключать.
+
+Анализировать ПОЛНЫЙ текст вакансии, а не только title/ключевые слова. Сильные business-intent сигналы:
+- построить/перезапустить/перестроить отдел продаж или коммерческий блок;
+- внедрить CRM, воронку, KPI, аналитику, скрипты, регламенты;
+- увеличить выручку, прибыль, маржинальность;
+- построить лидогенерацию или outbound B2B;
+- развить проектные, дилерские или партнёрские продажи;
+- запустить новое направление;
+- построить коммерческую команду;
+- масштабировать бизнес;
+- вывести собственника из операционки.
+
+Каталоги, индустриальные парки, выставочные списки и массовые региональные реестры не использовать как основной discovery.
+
+## Sequential qualification
+
+Каждый кандидат проходит полностью и последовательно:
+
+`DISCOVERY → TARGETED DEDUP → LEGAL → SCALE → SIGNAL → LPR → CONTACT → FINAL DEDUP → QUALIFIED / EXCLUDED`
+
+Норма `active_wip=0`; временно максимум 1 для текущей проверки. `active_wip` никогда не запрещает fresh discovery.
+
+Как только кандидат проходит все gates, его немедленно физически записывать в canonical; не ждать конца RUN.
+
+## Targeted dedup
+
+Проверять кандидата точечно:
+1. ИНН;
+2. ОГРН/ОГРНИП;
+3. exact legal entity;
+4. brand + domain;
+5. при необходимости phone/email.
+
+Запрещено читать целиком огромный pending/master/tree как обязательный preflight. Truncated response не является глобальным blocker.
 
 ## Строгая квалификация — не ослаблять
 
-Для каждого кандидата обязательны:
-1. targeted global dedup по Lead ID / ИНН / ОГРН / exact legal entity / brand+domain;
-2. точное действующее российское частное юрлицо/ИП + ИНН/ОГРН;
-3. строгий текущий scale gate;
-4. датированный S1–S3 сигнал с URL;
-5. реальный собственник / CEO / ЛПР;
-6. опубликованный практический контакт: phone/email/Telegram/VK/HH/form;
-7. повторный targeted global dedup;
-8. только затем `QUALIFIED`, причём только после физической canonical/contactable записи.
+QUALIFIED только при наличии:
+1. точного действующего российского частного юрлица/ИП;
+2. ИНН/ОГРН;
+3. соответствия текущему scale gate;
+4. датированного S1–S3 бизнес-сигнала с evidence URL;
+5. реального собственника/CEO/ЛПР;
+6. практического опубликованного контакта;
+7. evidence;
+8. финального dedup.
 
-Предпочтительная доказательная связка: **вакансия/сигнал → официальный сайт → надёжный открытый источник по юрлицу/финансам/владельцу → официальный опубликованный контакт**.
+Для любого недостающего обязательного факта сделать минимум две независимые targeted попытки. Не придумывать контакты, юрлица или linkage бренда.
 
-Никаких придуманных email, неподтверждённых фактов или связок бренда с юрлицом. Неполный ответ большого tree/list вызова не является основанием fail-closed для всего RUN.
+## Ротация и self-healing
 
-Отдельно: если HH/job-board аккаунт выступает рекрутером для внешнего клиента, сигнал вакансии нельзя приписывать самому аккаунту/одноимённому юрлицу без независимой доказанной operating-entity linkage.
+Если первые 20–30 СВЕЖИХ кандидатов дают <2 qualified → немедленно менять query/регион/группу вакансий/job board.
 
-## Запись
+Если duplicate rate >50% → менять source/region/query.  
+Если LEGAL fail >40% → менять способ legal linkage и источник evidence, не gate.  
+Если SIGNAL fail >50% → переходить к прямым S1 business-intent вакансиям.  
+Если LPR/CONTACT fail высок → усиливать targeted owner/CEO/contact lookup.
 
-Qualified записывается в том же выполнении сразу после завершения проверки: canonical/contactable + contacts + evidence + increment/run log/runtime. После записи canonical = contactable, integrity PASS, orphan contacts/evidence = 0/0.
+Два последовательных завершённых RUN с `net_new=0` = аварийное состояние. Диагностика максимум 20% RUN: сравнить с `N5K-20260809-144`, найти первый сломанный этап, проверить source/query/dedup/legal/signal/LPR/contact/write/config. Затем В ЭТОМ ЖЕ RUN устранить технический blocker и продолжить fresh discovery.
 
-Не создавать workers, staging, pending integrator, recovery writer, config writer, dedup writer или другие параллельные write-paths.
+Никаких обязательных raw floors 120/300/400/800. Главная метрика — **PHYSICALLY WRITTEN NET_NEW QUALIFIED**.
 
-## Текущий replay RUN
+## Physical write
 
-`N5K-20260904-631` — срочный replay накопленных job-intent работодателей после завершённого RUN 630. Пока replay не завершён, **новый широкий discovery запрещён**.
+Каждая прошедшая компания сразу должна появиться в:
+- `leads_master.csv`;
+- `contactable_master.csv`;
+- `contacts.csv`;
+- `evidence.csv`;
+- increment/shard;
+- run log/report;
+- runtime.
 
-Текущее подтверждённое состояние replay: baseline 614; replay_total 60; checked/fully dispositioned 23; remaining 37; duplicates 4; excluded 19; legal_pass 11; scale_pass 4; signal_pass 1; LPR_pass 0; contact_pass 0; qualified/net_new 0/0; canonical/contactable 614/614; integrity PASS; orphan contacts/evidence 0/0; active_wip 1; outreach 0.
+После записи:
+`canonical_count = contactable_count`; `integrity = PASS`; `orphan_contacts = 0`; `orphan_evidence = 0`.
 
-Кандидат #23 **ООО Текстильмаркет** закрыт `EXCLUDED: OFFICIAL_SITE_OPERATING_LINK_NOT_CONFIRMED`: legal/scale/signal подтверждены, но две targeted-попытки текущей official operating-site linkage не связали ООО с ИНН `7810868310` с действующим официальным сайтом; `marrey.ru` сейчас указывает другого оператора, поэтому неподтверждённая связка не использована.
+Если текущий connector не может безопасно append большой master, использовать доступный безопасный write-path/script/increment/shard и синхронизировать canonical. Невозможность записи ОДНОЙ компании не останавливает discovery.
 
-Единственный active WIP и сохранённый cursor: **ООО Авто-Хэлп**. Внешняя evidence chain подтверждает действующее ООО «Авто-Хэлп» ИНН `7826004234`, ОГРН `1037851011120`, целевой масштаб, S1–S3 вакансионный сигнал, owner/CEO Михаила Борисовича Мигдаловича, домен `auto-help.ru` и опубликованные контакты. Targeted repo dedup по ИНН, ОГРН и домену не дал совпадений. Однако доступный GitHub contents connector возвращает пустое содержимое для большого `leads_master.csv`, а raw-fetch отклоняет файл как too large/unsupported; поэтому безопасная атомарная physical canonical append в этом выполнении не подтверждена. **Не считать Авто-Хэлп qualified/net_new до физической записи.** Следующее выполнение обязано продолжить тот же RUN с этого кандидата и не переходить к следующему до final physical disposition.
+## Отчёт каждого RUN
 
-ROOT_CAUSE replay: (A) full-tree/global preflight + truncated connector → fail-closed до discovery; (B) batch-first → десятки WIP; (C) shallow evidence acquisition → false excludes.
+Фиксировать: `run_id`, `baseline`, `fresh_discovery_count`, `replay_count`, `fully_dispositioned`, `duplicates`, `legal_pass`, `scale_pass`, `signal_pass`, `LPR_pass`, `contact_pass`, `excluded`, `qualified`, `net_new`, `physically_added_companies`, `canonical_count`, `contactable_count`, `remaining_to_5000`, `duplicate_rate`, source yield, exclusion reasons, `net_new_24h`, отклонение от 100–200/day, diagnosis/corrective_actions, integrity, orphan counts, active_wip и `new_discovery_allowed=true`.
 
-Permanent fixes: targeted dedup; sequential end-to-end; retry missing evidence; immediate physical write.
+## Эталон
 
-## Главная метрика
+Исторический benchmark: `N5K-20260809-144`: 30 raw → 5 fully-qualified → integrity PASS.
 
-**Новые физически записанные QUALIFIED компании при неизменном качестве и active_wip≈0.**
+Первый ранее выявленный сломанный этап: **DISCOVERY** — replay/active_wip/raw-floor логика запрещала новый поиск. Эта архитектура удалена из production-конфигурации.
