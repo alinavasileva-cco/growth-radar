@@ -6,14 +6,14 @@
   "stage": "SEQUENTIAL_END_TO_END_REPLAY",
   "baseline": 614,
   "replay_total": 60,
-  "checked": 30,
-  "fully_dispositioned": 30,
-  "remaining_replay": 30,
+  "checked": 31,
+  "fully_dispositioned": 31,
+  "remaining_replay": 29,
   "active_wip": 1,
-  "active_candidate": "ООО УК Медицина",
-  "funnel": {"legal_pass": 17, "scale_pass": 6, "signal_pass": 2, "lpr_pass": 1, "contact_pass": 0, "qualified": 0, "duplicates": 4, "excluded": 26},
+  "active_candidate": "BARNES",
+  "funnel": {"legal_pass": 18, "scale_pass": 6, "signal_pass": 2, "lpr_pass": 1, "contact_pass": 0, "qualified": 0, "duplicates": 4, "excluded": 27},
   "duplicates": 4,
-  "excluded": 26,
+  "excluded": 27,
   "qualified": 0,
   "net_new": 0,
   "physically_added_companies": [],
@@ -23,7 +23,7 @@
     "SIGNAL_NOT_S1_S3": ["ООО Мультикомпонента", "ООО ПАУК", "ООО Торговая компания ТЕСТ-ДРАЙВ", "ООО ТехноИнтегратор"],
     "CURRENT_LEGAL_LINK_AMBIGUOUS": ["ООО ИнфраТех / OOHVAT", "ООО Бэкграунд / BACKGROUND", "ООО СМАЙЛ", "ООО Кристалл"],
     "SCALE_NOT_CONFIRMED_CURRENT": ["ООО Иксхантер", "ИП Шлячков Артем Алексеевич", "ООО Эталонное решение", "Юридическая компания До Нуля"],
-    "SCALE_GATE_FAIL_CURRENT": ["VIEN", "ООО DELASIA", "ООО Дс-Арт", "ООО Эктем Ок", "SILENKO AUTOcratia", "Клиенты есть всегда"],
+    "SCALE_GATE_FAIL_CURRENT": ["VIEN", "ООО DELASIA", "ООО Дс-Арт", "ООО Эктем Ок", "SILENKO AUTOcratia", "Клиенты есть всегда", "ООО УК Медицина"],
     "CURRENT_LEGAL_STATUS_FAIL": ["Эксперт Сервис"],
     "SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER": ["ООО Формула успеха", "ИП Магер"],
     "OFFICIAL_SITE_OPERATING_LINK_NOT_CONFIRMED": ["ООО Текстильмаркет"],
@@ -39,21 +39,21 @@
   "root_cause": {"A": "full-tree/global preflight + truncated connector -> fail-closed before discovery", "B": "batch-first -> dozens of WIP candidates", "C": "shallow evidence acquisition -> false excludes"},
   "permanent_fixes": ["targeted dedup", "sequential end-to-end", "retry missing evidence", "immediate physical write"],
   "last_disposition": {
-    "candidate": "Клиенты есть всегда",
+    "candidate": "ООО УК Медицина",
     "decision": "EXCLUDED",
     "reason": "SCALE_GATE_FAIL_CURRENT",
-    "exact_legal": "ИП Максимов Кирилл Евгеньевич, INN 771405555214, OGRNIP 316774600293115",
-    "current_operating_link": "Current 20.02.2026 privacy/offering materials and official project pages identify the same IP behind the operating brand",
+    "exact_legal": "ООО Управляющая компания Медицина, INN 7813691879, OGRN 1257800105892",
+    "current_operating_link": "Employer vacancies identify УК Медицина as the management/recruiting operator for the МИА dental network; current registry data resolves the Saint Petersburg legal entity",
     "evidence_attempts": [
-      "Current official project/legal pages establish the brand→IP linkage and active status",
-      "Independent current counterparty sources classify the IP as microbusiness; no qualifying current revenue/employee metric was found"
+      "T-Bank current contractor profile: active entity, microbusiness, owner Ленёв Андрей Иванович, CEO Мишина Анна Сергеевна",
+      "B2B.House current profile (11.08.2026): microenterprise, average headcount 1 for 2025"
     ],
-    "note": "Self-published audience/client claims were not substituted for the campaign's strict company-scale metric. Independent current registries classify the entity as microbusiness."
+    "note": "Network-level MИА claims were not aggregated into this legal entity. Strict scale is evaluated on the exact candidate legal entity, which fails current scale gate."
   },
   "cursor": {
-    "next_candidate": "ООО УК Медицина",
-    "remaining_pool_count": 30,
-    "remaining_pool": ["ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
+    "next_candidate": "BARNES",
+    "remaining_pool_count": 29,
+    "remaining_pool": ["BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
   },
   "resume_required_same_run_id": true,
   "new_discovery_allowed": false,
