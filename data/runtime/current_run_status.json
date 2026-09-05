@@ -1,48 +1,51 @@
 {
-  "run_id": "N5K-20260905-636",
-  "run_sequence": 636,
+  "run_id": "N5K-20260905-637",
+  "run_sequence": 637,
   "campaign_id": "new_5000",
-  "status": "COMPLETE_DEDUP_NOOP",
-  "stage": "RUN_COMPLETE_FINAL_DEDUP_NO_PHYSICAL_GROWTH",
+  "status": "COMPLETE_MERGED",
+  "stage": "RUN_COMPLETE_PHYSICAL_GROWTH_CONFIRMED",
   "baseline": 617,
-  "fresh_discovery_count": 2,
+  "fresh_discovery_count": 30,
   "replay_count": 0,
-  "fully_dispositioned": 2,
+  "fully_dispositioned": 4,
   "funnel": {
-    "legal_pass": 1,
-    "scale_pass": 1,
-    "signal_pass": 1,
-    "lpr_pass": 1,
-    "contact_pass": 1,
-    "qualified_evidence_ready": 1,
+    "legal_pass": 4,
+    "scale_pass": 3,
+    "signal_pass": 2,
+    "lpr_pass": 2,
+    "contact_pass": 2,
+    "qualified_evidence_ready": 2,
     "duplicates": 1,
-    "excluded": 1
+    "excluded": 2
   },
   "duplicates": 1,
-  "excluded": 1,
-  "qualified_evidence_ready": 1,
+  "excluded": 2,
+  "qualified_evidence_ready": 2,
   "increment_rows_written": {
-    "leads": 1,
-    "contactable": 1,
-    "contacts": 2,
-    "evidence": 5
+    "leads": 2,
+    "contactable": 2,
+    "contacts": 4,
+    "evidence": 10
   },
-  "merge_receipt_status": "DEDUP_NOOP",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-636.json",
-  "net_new": 0,
-  "physically_added_companies": [],
-  "current_canonical_count": 617,
-  "current_contactable_count": 617,
-  "remaining_to_5000": 4383,
-  "duplicate_rate": 0.5,
-  "source_yield": "0 physically merged / 2 fully tracked fresh candidates",
+  "merge_receipt_status": "MERGED",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-637.json",
+  "net_new": 1,
+  "physically_added_companies": [
+    "Любимый Дом / ООО «АЛМАЗ» — INN 6137006902 / OGRN 1026101716453"
+  ],
+  "current_canonical_count": 618,
+  "current_contactable_count": 618,
+  "remaining_to_5000": 4382,
+  "duplicate_rate": 0.25,
+  "source_yield": "1/30 physically merged (3.33%); 2/30 evidence-ready before repo final dedup (6.67%)",
   "exclusion_reasons": {
-    "exact_legal_entity_linkage_not_safely_established_after_targeted_attempts": 1
+    "scale_gate_fail_current": 1,
+    "full_vacancy_text_not_safely_retrieved_after_targeted_attempts": 1
   },
-  "net_new_24h": 4,
+  "net_new_24h": 5,
   "daily_target_deviation": {
-    "vs_100": -96,
-    "vs_200": -196
+    "vs_100": -95,
+    "vs_200": -195
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -51,11 +54,10 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "treated repo-side DEDUP_NOOP as authoritative and did not count the evidence-ready duplicate as net_new",
-    "kept fresh discovery enabled after the duplicate",
-    "rotated search/query/source after low qualified yield without weakening quality gates",
-    "kept unresolved AGROTEHSNAB legal linkage fail-closed and out of increment",
-    "did not count broad search-result snippets as fresh candidates unless a concrete end-to-end route was opened"
+    "kept fresh discovery dominant and rotated query family after low initial qualified yield",
+    "used full-text vacancy sources for qualification and kept incomplete-signal routes fail-closed",
+    "treated repo-side final dedup as authoritative when connector code search missed an existing canonical company",
+    "counted only receipt-confirmed physical canonical growth as net_new"
   ],
-  "report": "reports/N5K-20260905-636.md"
+  "report": "reports/N5K-20260905-637.md"
 }
