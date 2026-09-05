@@ -8,7 +8,7 @@
   "remaining_to_total_target": 4382,
   "remaining": 4382,
   "remaining_to_1000": 382,
-  "qualified_staged_not_counted": 0,
+  "qualified_staged_not_counted": 1,
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "namespace": "data/campaigns/new_5000",
@@ -19,12 +19,12 @@
   "latest_attempted_run": "N5K-20260904-631",
   "latest_attempted_run_id": "N5K-20260904-631",
   "latest_attempted_run_status": "REPLAY_IN_PROGRESS",
-  "canonical_integration_run_id": "N5K-20260904-631",
+  "canonical_integration_run_id": "N5K-20260904-631-003",
   "hourly_baseline_count": 614,
   "hourly_net_new": 4,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "active_wip": 0,
+  "active_wip": 1,
   "outreach_sent": 0,
   "replay": {
     "run_id": "N5K-20260904-631",
@@ -35,10 +35,13 @@
     "excluded": 36,
     "qualified": 1,
     "net_new": 1,
+    "qualified_evidence_ready": 3,
     "physically_added_companies": 1,
+    "active_wip_candidate": "Спектр-Пак Юг",
+    "active_wip_status": "QUALIFIED_EVIDENCE_READY_INCREMENT_COMPLETE_CANONICAL_MERGE_QUEUED",
     "next_candidate": "Спектр-Пак Юг",
     "resume_same_run": true,
     "new_discovery_allowed": false
   },
-  "note": "Sequential accumulated-jobs replay remains active. 42 candidates are fully dispositioned. BARNES is physically confirmed as replay net-new. TS GROUP is a current-canonical duplicate by exact INN/OGRN. Siberian Food Company was excluded as far above strict target scale. Resume the same replay at Спектр-Пак Юг; do not start broad discovery."
+  "note": "Sequential accumulated-jobs replay remains active. 42 candidates are fully dispositioned. Siberian Food Company was excluded above strict target scale. Spectr-Pack Yug passed quality gates and has a complete increment group N5K-20260904-631-003; canonical merge workflow 33969188502 is queued. Do not advance to Phoenix-Present until a receipt confirms MERGED or DEDUP_NOOP."
 }
