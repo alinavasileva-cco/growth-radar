@@ -1,6 +1,6 @@
 # Growth Radar — актуальная production-конфигурация
 
-**Версия:** 2026-09-05 — fresh discovery always-on / RUN-144 sequential qualification  
+**Версия:** 2026-09-05 — fresh discovery always-on / safe repo-side canonical merge  
 **Кампания:** `new_5000`  
 **Источник истины:** физические `data/campaigns/new_5000/leads_master.csv` и `contactable_master.csv` + contacts/evidence/runtime  
 **Цель:** 5000 НОВЫХ полностью квалифицированных российских частных компаний  
@@ -52,7 +52,7 @@ Fail-open для discovery / fail-closed для qualification:
 
 Норма `active_wip=0`; временно максимум 1 для текущей проверки. `active_wip` никогда не запрещает fresh discovery.
 
-Как только кандидат проходит все gates, его немедленно физически записывать в canonical; не ждать конца RUN.
+Как только кандидат проходит все gates, его немедленно направлять в safe-write pipeline; не ждать конца RUN и не останавливать discovery.
 
 ## Targeted dedup
 
@@ -92,28 +92,40 @@ QUALIFIED только при наличии:
 
 Никаких обязательных raw floors 120/300/400/800. Главная метрика — **PHYSICALLY WRITTEN NET_NEW QUALIFIED**.
 
-## Physical write
+## Physical write — безопасный repo-side merge
 
-Каждая прошедшая компания сразу должна появиться в:
+Большие master-файлы не читать/перезаписывать через connector. Для кандидатов, прошедших ВСЕ quality gates и final targeted dedup, production writer создаёт полный increment-group с единым `<RUN_ID>`:
+- `data/campaigns/new_5000/increments/<RUN_ID>_leads.csv`;
+- `data/campaigns/new_5000/increments/<RUN_ID>_contactable.csv`;
+- `data/campaigns/new_5000/increments/<RUN_ID>_contacts.csv`;
+- `data/campaigns/new_5000/increments/<RUN_ID>_evidence.csv`.
+
+Заголовок каждого increment-файла обязан ТОЧНО совпадать с соответствующим master. Неполные/WIP кандидаты в increment запрещены. Группа из менее чем четырёх файлов не считается добавлением.
+
+Repo-side workflow `.github/workflows/growth_radar_merge_increment.yml` вызывает `scripts/merge_growth_radar_increment.py`. Merge выполняется внутри GitHub runner, где большие masters доступны полностью. Перед физической записью обязательны:
+1. exact header validation;
+2. final dedup по Lead ID / ИНН / ОГРН/ОГРНИП;
+3. parity leads ↔ contactable;
+4. отсутствие orphan contacts;
+5. отсутствие orphan evidence.
+
+Только после всех проверок runner физически обновляет:
 - `leads_master.csv`;
 - `contactable_master.csv`;
 - `contacts.csv`;
-- `evidence.csv`;
-- increment/shard;
-- run log/report;
-- runtime.
+- `evidence.csv`.
+
+Затем создаётся `data/runtime/merge_receipts/<RUN_ID>.json`. `status=MERGED` и `added_count>0` либо отдельно подтверждённый физический рост master — единственное основание считать компанию `net_new/QUALIFIED`. `DEDUP_NOOP` не считается ростом. Ошибка merge = fail-closed для конкретных записей, но fresh discovery продолжает работать.
 
 После записи:
 `canonical_count = contactable_count`; `integrity = PASS`; `orphan_contacts = 0`; `orphan_evidence = 0`.
 
-Если текущий connector не может безопасно append большой master, использовать доступный безопасный write-path/script/increment/shard и синхронизировать canonical. Невозможность записи ОДНОЙ компании не останавливает discovery.
-
 ## Отчёт каждого RUN
 
-Фиксировать: `run_id`, `baseline`, `fresh_discovery_count`, `replay_count`, `fully_dispositioned`, `duplicates`, `legal_pass`, `scale_pass`, `signal_pass`, `LPR_pass`, `contact_pass`, `excluded`, `qualified`, `net_new`, `physically_added_companies`, `canonical_count`, `contactable_count`, `remaining_to_5000`, `duplicate_rate`, source yield, exclusion reasons, `net_new_24h`, отклонение от 100–200/day, diagnosis/corrective_actions, integrity, orphan counts, active_wip и `new_discovery_allowed=true`.
+Фиксировать: `run_id`, `baseline`, `fresh_discovery_count`, `replay_count`, `fully_dispositioned`, `duplicates`, `legal_pass`, `scale_pass`, `signal_pass`, `LPR_pass`, `contact_pass`, `excluded`, `qualified_evidence_ready`, `increment_rows_written`, `merge_receipt_status`, `physically_added_companies`, `net_new`, `canonical_count`, `contactable_count`, `remaining_to_5000`, `duplicate_rate`, source yield, exclusion reasons, `net_new_24h`, отклонение от 100–200/day, diagnosis/corrective_actions, integrity, orphan counts, active_wip и `new_discovery_allowed=true`.
 
 ## Эталон
 
 Исторический benchmark: `N5K-20260809-144`: 30 raw → 5 fully-qualified → integrity PASS.
 
-Первый ранее выявленный сломанный этап: **DISCOVERY** — replay/active_wip/raw-floor логика запрещала новый поиск. Эта архитектура удалена из production-конфигурации.
+Первый ранее выявленный сломанный этап: **DISCOVERY** — replay/active_wip/raw-floor логика запрещала новый поиск. Эта архитектура удалена из production-конфигурации. Второй блокер — невозможность безопасно передавать >1 MB masters через connector — устранён repo-side increment merge pipeline.
