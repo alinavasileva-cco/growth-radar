@@ -1,66 +1,58 @@
 {
-  "run_id": "N5K-20260904-631",
-  "run_sequence": 631,
+  "run_id": "N5K-20260905-632",
+  "run_sequence": 632,
   "campaign_id": "new_5000",
-  "status": "REPLAY_BLOCKED_ENVIRONMENT",
-  "stage": "CANONICAL_WRITE_BLOCKED",
+  "status": "DEGRADED_CANONICAL_WRITE_BLOCKED_FRESH_DISCOVERY_CONTINUES",
+  "stage": "RUN_COMPLETE_ZERO_PHYSICAL_WRITE",
   "baseline": 614,
-  "replay_total": 60,
-  "checked": 31,
-  "fully_dispositioned": 31,
-  "remaining_replay": 29,
-  "active_wip": 1,
-  "active_candidate": "BARNES",
-  "funnel": {"legal_pass": 19, "scale_pass": 7, "signal_pass": 3, "lpr_pass": 2, "contact_pass": 1, "qualified": 0, "duplicates": 4, "excluded": 27},
-  "duplicates": 4,
-  "excluded": 27,
+  "fresh_discovery_count": 25,
+  "replay_count": 0,
+  "fully_dispositioned": 1,
+  "funnel": {
+    "legal_pass": 1,
+    "scale_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "qualified": 0,
+    "duplicates": 0,
+    "excluded": 0
+  },
+  "duplicates": 0,
+  "excluded": 0,
   "qualified": 0,
   "net_new": 0,
   "physically_added_companies": [],
-  "confirmed_duplicate_companies": ["TATRUM=N5K-0685", "Идеальный турник=N5K-0054", "ООО ИГРОФЕСТ / IGM=N5K-0392", "FTL-cargo=N5K-0393"],
-  "excluded_by_reason": {
-    "LEGAL_ENTITY_NOT_RELIABLY_LINKED": ["Авто В Руки", "ООО КВАНТУМ", "ИП Попова"],
-    "SIGNAL_NOT_S1_S3": ["ООО Мультикомпонента", "ООО ПАУК", "ООО Торговая компания ТЕСТ-ДРАЙВ", "ООО ТехноИнтегратор"],
-    "CURRENT_LEGAL_LINK_AMBIGUOUS": ["ООО ИнфраТех / OOHVAT", "ООО Бэкграунд / BACKGROUND", "ООО СМАЙЛ", "ООО Кристалл"],
-    "SCALE_NOT_CONFIRMED_CURRENT": ["ООО Иксхантер", "ИП Шлячков Артем Алексеевич", "ООО Эталонное решение", "Юридическая компания До Нуля"],
-    "SCALE_GATE_FAIL_CURRENT": ["VIEN", "ООО DELASIA", "ООО Дс-Арт", "ООО Эктем Ок", "SILENKO AUTOcratia", "Клиенты есть всегда", "ООО УК Медицина"],
-    "CURRENT_LEGAL_STATUS_FAIL": ["Эксперт Сервис"],
-    "SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER": ["ООО Формула успеха", "ИП Магер"],
-    "OFFICIAL_SITE_OPERATING_LINK_NOT_CONFIRMED": ["ООО Текстильмаркет"],
-    "OFFICIAL_SITE_LEGAL_ENTITY_MISMATCH_CURRENT": ["ООО Авто-Хэлп"]
-  },
+  "evidence_ready_not_counted": [
+    {
+      "candidate": "ООО ИБММ ТЕХНОЛОГИИ",
+      "inn": "5032334982",
+      "ogrn": "1215000115230",
+      "state": "ALL_QUALITY_GATES_EVIDENCED_NOT_COUNTED",
+      "reason": "MANDATORY_SAFE_CANONICAL_PHYSICAL_WRITE_UNAVAILABLE"
+    }
+  ],
   "current_canonical_count": 614,
   "current_contactable_count": 614,
   "remaining_to_5000": 4386,
-  "integrity": "PASS",
+  "net_new_24h": 1,
+  "daily_target_deviation": {
+    "vs_100": -99,
+    "vs_200": -199
+  },
+  "integrity": "PASS_UNCHANGED_CANONICAL_PARITY",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
+  "orphan_counts_note": "Last runtime validation reported zero; no contacts/evidence rows were written in this run; independent full recount unavailable through connector.",
+  "active_wip": 0,
+  "new_discovery_allowed": true,
   "outreach": 0,
-  "root_cause": {"A": "full-tree/global preflight + truncated connector -> fail-closed before discovery", "B": "batch-first -> dozens of WIP candidates", "C": "shallow evidence acquisition -> false excludes"},
-  "permanent_fixes": ["targeted dedup", "sequential end-to-end", "retry missing evidence", "immediate physical write"],
-  "last_disposition": {
-    "candidate": "ООО УК Медицина",
-    "decision": "EXCLUDED",
-    "reason": "SCALE_GATE_FAIL_CURRENT"
-  },
-  "pending_candidate": {
-    "candidate": "BARNES",
-    "state": "ALL_QUALITY_GATES_EVIDENCED_PENDING_PHYSICAL_CANONICAL_WRITE",
-    "exact_legal": "ООО РКМ РЕАЛ ЭСТЕЙТ, INN 7707430924, OGRN 1197746350999",
-    "scale": "2025 revenue 133.78m RUB",
-    "signal": "13.08.2026 COO vacancy; scaling and transition to a more systematic management model; responsibility for business manageability and financial result",
-    "owner_ceo_lpr": "CEO Гордей Андреевич Илиопуло; published practical LPR contact: Deputy Director Игорь Бочаров",
-    "contact": "+7 (963) 771-07-55; i.bocharov@barn-estate.com; official company contact moscow@barn-estate.com",
-    "targeted_dedup": {"inn_7707430924": 0, "ogrn_1197746350999": 0, "exact_legal_name": 0, "domain_barnes-moscow.com": 0},
-    "write_blocker": "GitHub connector returns empty content for large leads_master/contactable_master range reads; available update_file requires complete replacement content. No safe append/patch primitive is exposed, so the mandatory simultaneous physical write to both aggregate masters cannot be completed without risking canonical truncation."
-  },
-  "cursor": {
-    "next_candidate": "BARNES",
-    "remaining_pool_count": 29,
-    "remaining_pool": ["BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
-  },
-  "resume_required_same_run_id": true,
-  "new_discovery_allowed": false,
-  "report": "reports/N5K-20260904-631.md",
-  "verified_at": "2026-09-05T06:31:24+03:00"
+  "root_cause": "Available GitHub contents writer requires complete replacement content for large masters; connector transport truncates full master/blob reads; no existing repository-side append/merge script or workflow was found.",
+  "corrective_actions": [
+    "fresh discovery remains always-on",
+    "rotate query/region/job board on low yield",
+    "strict qualification gates remain unchanged",
+    "add or expose safe repository-side canonical append/merge or connector patch/append capability before counting evidence-ready candidates"
+  ],
+  "report": "reports/N5K-20260905-632.md"
 }
