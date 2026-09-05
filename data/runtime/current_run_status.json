@@ -1,45 +1,47 @@
 {
-  "run_id": "N5K-20260905-650",
-  "run_sequence": 650,
+  "run_id": "N5K-20260905-653",
+  "run_sequence": 653,
   "campaign_id": "new_5000",
   "status": "COMPLETE_DEDUP_NOOP",
   "stage": "RUN_COMPLETE_NO_PHYSICAL_GROWTH",
   "baseline": 627,
-  "fresh_discovery_count": 4,
+  "fresh_discovery_count": 25,
   "replay_count": 0,
-  "fully_dispositioned": 4,
+  "fully_dispositioned": 9,
   "funnel": {
-    "legal_pass": 1,
-    "scale_pass": 1,
-    "signal_pass": 1,
-    "lpr_pass": 1,
-    "contact_pass": 1,
-    "qualified_evidence_ready": 1,
-    "duplicates": 1,
-    "excluded": 4
+    "legal_pass": 6,
+    "scale_pass": 3,
+    "signal_pass": 3,
+    "lpr_pass": 3,
+    "contact_pass": 3,
+    "qualified_evidence_ready": 3,
+    "duplicates": 3,
+    "excluded": 9
   },
-  "duplicates": 1,
-  "excluded": 4,
-  "qualified_evidence_ready": 1,
+  "duplicates": 3,
+  "excluded": 9,
+  "qualified_evidence_ready": 3,
   "increment_rows_written": {
-    "leads": 1,
-    "contactable": 1,
-    "contacts": 2,
-    "evidence": 5
+    "leads": 3,
+    "contactable": 3,
+    "contacts": 6,
+    "evidence": 15,
+    "note": "aggregate rescue increments N5K-20260905-651..653; final increment 653 = 1/1/2/5"
   },
   "merge_receipt_status": "DEDUP_NOOP",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-650.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-653.json",
   "net_new": 0,
   "physically_added_companies": [],
   "current_canonical_count": 627,
   "current_contactable_count": 627,
   "remaining_to_5000": 4373,
-  "duplicate_rate": 0.25,
-  "source_yield": "1/4 evidence-ready (25.00%); 0/4 physically merged (0.00%)",
+  "duplicate_rate": 0.3333333333,
+  "source_yield": "3/25 evidence-ready (12.00%); 0/25 physically merged (0.00%)",
   "exclusion_reasons": {
-    "FINAL_DEDUP": 1,
-    "LEGAL_LINKAGE_NOT_PROVEN": 2,
-    "LEGAL_LINKAGE_OR_SCALE_NOT_PROVEN": 1
+    "FINAL_DEDUP": 3,
+    "SCALE_FAIL_OR_NOT_PROVEN": 2,
+    "LEGAL_LINKAGE_NOT_PROVEN": 3,
+    "SIGNAL_NOT_DIRECT_EMPLOYER": 1
   },
   "net_new_24h": 13,
   "daily_target_deviation": {
@@ -53,15 +55,15 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "kept fresh Russian-language job-intent discovery dominant and replay_count at zero",
-    "continued fresh discovery after N5K-20260905-649 returned DEDUP_NOOP",
-    "rotated away from the saturated Moscow pool into additional employers and regions",
-    "used full vacancy text for the evidence-ready candidate",
-    "kept Maytoni, Myakishi and Cyclone fail-closed where exact employer-to-legal linkage or scale could not be safely proven",
-    "created one complete four-file safe-write increment group for the fully gated candidate",
-    "accepted authoritative repo-side final dedup by INN and OGRN and did not count the duplicate as net_new",
+    "triggered emergency handling after consecutive zero-growth outcomes and kept diagnosis below the discovery budget",
+    "confirmed connector-side targeted code search is incomplete for large canonical masters while authoritative repo-side dedup is functioning",
+    "kept fresh Russian-language vacancy discovery dominant with replay_count=0",
+    "rotated discovery from saturated Moscow routes into regional HH-derived candidates including Ufa",
+    "qualified three candidates end-to-end using full vacancy text, exact legal linkage, scale, LPR and published contacts",
+    "accepted authoritative repo-side DEDUP_NOOP for all three candidates and did not count them as net_new",
+    "kept weaker legal-linkage and scale routes fail-closed without weakening gates",
     "confirmed canonical/contactable parity 627/627 and zero orphan contacts/evidence",
-    "left new_discovery_allowed=true despite two consecutive DEDUP_NOOP outcomes"
+    "left new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260905-650.md"
+  "report": "reports/N5K-20260905-653.md"
 }
