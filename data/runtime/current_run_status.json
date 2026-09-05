@@ -6,34 +6,20 @@
   "stage": "SEQUENTIAL_END_TO_END_REPLAY",
   "baseline": 614,
   "replay_total": 60,
-  "checked": 24,
-  "fully_dispositioned": 24,
-  "remaining_replay": 36,
+  "checked": 25,
+  "fully_dispositioned": 25,
+  "remaining_replay": 35,
   "active_wip": 1,
-  "active_candidate": "ИП Попова",
-  "funnel": {
-    "legal_pass": 12,
-    "scale_pass": 5,
-    "signal_pass": 2,
-    "lpr_pass": 1,
-    "contact_pass": 0,
-    "qualified": 0,
-    "duplicates": 4,
-    "excluded": 20
-  },
+  "active_candidate": "ООО ТехноИнтегратор",
+  "funnel": {"legal_pass": 12, "scale_pass": 5, "signal_pass": 2, "lpr_pass": 1, "contact_pass": 0, "qualified": 0, "duplicates": 4, "excluded": 21},
   "duplicates": 4,
-  "excluded": 20,
+  "excluded": 21,
   "qualified": 0,
   "net_new": 0,
   "physically_added_companies": [],
-  "confirmed_duplicate_companies": [
-    "TATRUM=N5K-0685",
-    "Идеальный турник=N5K-0054",
-    "ООО ИГРОФЕСТ / IGM=N5K-0392",
-    "FTL-cargo=N5K-0393"
-  ],
+  "confirmed_duplicate_companies": ["TATRUM=N5K-0685", "Идеальный турник=N5K-0054", "ООО ИГРОФЕСТ / IGM=N5K-0392", "FTL-cargo=N5K-0393"],
   "excluded_by_reason": {
-    "LEGAL_ENTITY_NOT_RELIABLY_LINKED": ["Авто В Руки", "ООО КВАНТУМ"],
+    "LEGAL_ENTITY_NOT_RELIABLY_LINKED": ["Авто В Руки", "ООО КВАНТУМ", "ИП Попова"],
     "SIGNAL_NOT_S1_S3": ["ООО Мультикомпонента", "ООО ПАУК", "ООО Торговая компания ТЕСТ-ДРАЙВ"],
     "CURRENT_LEGAL_LINK_AMBIGUOUS": ["ООО ИнфраТех / OOHVAT", "ООО Бэкграунд / BACKGROUND", "ООО СМАЙЛ", "ООО Кристалл"],
     "SCALE_NOT_CONFIRMED_CURRENT": ["ООО Иксхантер", "ИП Шлячков Артем Алексеевич"],
@@ -50,36 +36,22 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "outreach": 0,
-  "root_cause": {
-    "A": "full-tree/global preflight + truncated connector -> fail-closed before discovery",
-    "B": "batch-first -> dozens of WIP candidates",
-    "C": "shallow evidence acquisition -> false excludes"
-  },
-  "permanent_fixes": [
-    "targeted dedup",
-    "sequential end-to-end",
-    "retry missing evidence",
-    "immediate physical write"
-  ],
+  "root_cause": {"A": "full-tree/global preflight + truncated connector -> fail-closed before discovery", "B": "batch-first -> dozens of WIP candidates", "C": "shallow evidence acquisition -> false excludes"},
+  "permanent_fixes": ["targeted dedup", "sequential end-to-end", "retry missing evidence", "immediate physical write"],
   "last_disposition": {
-    "candidate": "ООО Авто-Хэлп",
+    "candidate": "ИП Попова",
     "decision": "EXCLUDED",
-    "reason": "OFFICIAL_SITE_LEGAL_ENTITY_MISMATCH_CURRENT",
-    "exact_legal": "ООО Авто-Хэлп, INN 7826004234, OGRN 1037851011120",
-    "current_scale": "2025 headcount 23; current registry sources place revenue in the strict target range",
-    "lpr": "Мигдалович Михаил Борисович, генеральный директор and 60% owner",
+    "reason": "LEGAL_ENTITY_NOT_RELIABLY_LINKED",
     "evidence_attempts": [
-      "Current registry source Reputation.ru links INN 7826004234 to auto-help.ru and nozhin@auto-help.ru",
-      "Current official Auto-Help contacts page identifies the operating site legal entity as ООО АВТО ХЭЛП, INN 7807036632",
-      "Targeted exact-INN/OGRN searches on the official domain returned no match"
+      "Targeted repository search for exact employer label and surname returned no source record resolving full proprietor identity",
+      "Independent current vacancy searches surfaced multiple unrelated ИП Попова employers in different regions/businesses and did not identify which proprietor generated the replay signal"
     ],
-    "dedup": "INN 7826004234 / OGRN 1037851011120 / auto-help.ru targeted repository search returned no canonical match",
-    "note": "Not written: the current official operating-site legal identity conflicts with the vacancy/registry candidate legal entity. Strict quality gate kept fail-closed; no inferred group linkage used."
+    "note": "No INN/OGRNIP, full name, brand/domain or exact vacancy-to-proprietor linkage could be established without guessing."
   },
   "cursor": {
-    "next_candidate": "ИП Попова",
-    "remaining_pool_count": 36,
-    "remaining_pool": ["ИП Попова", "ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
+    "next_candidate": "ООО ТехноИнтегратор",
+    "remaining_pool_count": 35,
+    "remaining_pool": ["ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
   },
   "resume_required_same_run_id": true,
   "new_discovery_allowed": false,
