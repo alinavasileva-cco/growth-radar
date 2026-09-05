@@ -1,25 +1,25 @@
 {
-  "run_id": "N5K-20260905-647",
-  "run_sequence": 647,
+  "run_id": "N5K-20260905-648",
+  "run_sequence": 648,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 625,
-  "fresh_discovery_count": 11,
+  "baseline": 626,
+  "fresh_discovery_count": 25,
   "replay_count": 0,
-  "fully_dispositioned": 11,
+  "fully_dispositioned": 2,
   "funnel": {
-    "legal_pass": 3,
+    "legal_pass": 1,
     "scale_pass": 1,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
     "duplicates": 0,
-    "excluded": 10
+    "excluded": 1
   },
   "duplicates": 0,
-  "excluded": 10,
+  "excluded": 1,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "leads": 1,
@@ -28,24 +28,23 @@
     "evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-647.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-648.json",
   "net_new": 1,
   "physically_added_companies": [
-    "ООО «Траст ФМ»"
+    "ООО «ТОПСОН-РУ»"
   ],
-  "current_canonical_count": 626,
-  "current_contactable_count": 626,
-  "remaining_to_5000": 4374,
+  "current_canonical_count": 627,
+  "current_contactable_count": 627,
+  "remaining_to_5000": 4373,
   "duplicate_rate": 0.0,
-  "source_yield": "1/11 evidence-ready (9.09%); 1/11 physically merged (9.09%)",
+  "source_yield": "1/25 evidence-ready (4.00%); 1/25 physically merged (4.00%)",
   "exclusion_reasons": {
-    "LEGAL_LINKAGE_OR_LEGAL_FAIL": 8,
-    "SCALE_FAIL_OR_NOT_PROVEN": 2
+    "LEGAL_LINKAGE_NOT_PROVEN_OR_SCALE_NOT_PROVEN": 1
   },
-  "net_new_24h": 12,
+  "net_new_24h": 13,
   "daily_target_deviation": {
-    "vs_100": -88,
-    "vs_200": -188
+    "vs_100": -87,
+    "vs_200": -187
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -54,12 +53,14 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "used repository-confirmed canonical/contactable 625/625 as baseline instead of stale current_run_status 624/624",
-    "kept fresh Russian-language job-intent discovery as the research path; replay_count remained zero",
-    "kept ambiguous employer-to-legal-entity routes fail-closed and did not infer contacts or legal linkage",
-    "created one complete four-file safe-write increment group for Trust FM",
-    "continued fresh discovery while the repo-side merge Action was pending",
+    "used repository-confirmed canonical/contactable 626/626 as baseline",
+    "kept fresh Russian-language job-intent discovery above 80% and replay_count at zero",
+    "rotated discovery across HH and Rabota.ru after low qualified yield",
+    "used full vacancy text for TOPSON and kept optional English-as-a-plus separate from mandatory-language exclusion",
+    "kept ambiguous Stupinskiy legal routes fail-closed rather than inferring linkage",
+    "created one complete four-file safe-write increment group",
+    "continued fresh discovery while merge receipt was pending",
     "accepted authoritative MERGED receipt with added_count=1 before counting net_new"
   ],
-  "report": "reports/N5K-20260905-647.md"
+  "report": "reports/N5K-20260905-648.md"
 }
