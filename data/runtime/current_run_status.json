@@ -2,8 +2,8 @@
   "run_id": "N5K-20260904-631",
   "run_sequence": 631,
   "campaign_id": "new_5000",
-  "status": "REPLAY_RUNNING",
-  "stage": "SEQUENTIAL_END_TO_END_REPLAY",
+  "status": "REPLAY_BLOCKED_ENVIRONMENT",
+  "stage": "CANONICAL_WRITE_BLOCKED",
   "baseline": 614,
   "replay_total": 60,
   "checked": 31,
@@ -11,7 +11,7 @@
   "remaining_replay": 29,
   "active_wip": 1,
   "active_candidate": "BARNES",
-  "funnel": {"legal_pass": 18, "scale_pass": 6, "signal_pass": 2, "lpr_pass": 1, "contact_pass": 0, "qualified": 0, "duplicates": 4, "excluded": 27},
+  "funnel": {"legal_pass": 19, "scale_pass": 7, "signal_pass": 3, "lpr_pass": 2, "contact_pass": 1, "qualified": 0, "duplicates": 4, "excluded": 27},
   "duplicates": 4,
   "excluded": 27,
   "qualified": 0,
@@ -41,14 +41,18 @@
   "last_disposition": {
     "candidate": "ООО УК Медицина",
     "decision": "EXCLUDED",
-    "reason": "SCALE_GATE_FAIL_CURRENT",
-    "exact_legal": "ООО Управляющая компания Медицина, INN 7813691879, OGRN 1257800105892",
-    "current_operating_link": "Employer vacancies identify УК Медицина as the management/recruiting operator for the МИА dental network; current registry data resolves the Saint Petersburg legal entity",
-    "evidence_attempts": [
-      "T-Bank current contractor profile: active entity, microbusiness, owner Ленёв Андрей Иванович, CEO Мишина Анна Сергеевна",
-      "B2B.House current profile (11.08.2026): microenterprise, average headcount 1 for 2025"
-    ],
-    "note": "Network-level MИА claims were not aggregated into this legal entity. Strict scale is evaluated on the exact candidate legal entity, which fails current scale gate."
+    "reason": "SCALE_GATE_FAIL_CURRENT"
+  },
+  "pending_candidate": {
+    "candidate": "BARNES",
+    "state": "ALL_QUALITY_GATES_EVIDENCED_PENDING_PHYSICAL_CANONICAL_WRITE",
+    "exact_legal": "ООО РКМ РЕАЛ ЭСТЕЙТ, INN 7707430924, OGRN 1197746350999",
+    "scale": "2025 revenue 133.78m RUB",
+    "signal": "13.08.2026 COO vacancy; scaling and transition to a more systematic management model; responsibility for business manageability and financial result",
+    "owner_ceo_lpr": "CEO Гордей Андреевич Илиопуло; published practical LPR contact: Deputy Director Игорь Бочаров",
+    "contact": "+7 (963) 771-07-55; i.bocharov@barn-estate.com; official company contact moscow@barn-estate.com",
+    "targeted_dedup": {"inn_7707430924": 0, "ogrn_1197746350999": 0, "exact_legal_name": 0, "domain_barnes-moscow.com": 0},
+    "write_blocker": "GitHub connector returns empty content for large leads_master/contactable_master range reads; available update_file requires complete replacement content. No safe append/patch primitive is exposed, so the mandatory simultaneous physical write to both aggregate masters cannot be completed without risking canonical truncation."
   },
   "cursor": {
     "next_candidate": "BARNES",
