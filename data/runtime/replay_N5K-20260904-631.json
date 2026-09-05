@@ -4,13 +4,13 @@
   "mode": "accumulated_jobs_replay",
   "status": "REPLAY_IN_PROGRESS",
   "replay_total": 60,
-  "checked": 33,
-  "fully_dispositioned": 33,
-  "remaining": 27,
+  "checked": 36,
+  "fully_dispositioned": 36,
+  "remaining": 24,
   "duplicates": 4,
-  "excluded": 28,
-  "legal_pass": 20,
-  "scale_pass": 7,
+  "excluded": 31,
+  "legal_pass": 22,
+  "scale_pass": 8,
   "signal_pass": 3,
   "lpr_pass": 2,
   "contact_pass": 1,
@@ -34,19 +34,36 @@
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
-  "last_dispositioned_candidate": "ООО Селлерпро",
-  "last_disposition": "EXCLUDED_SCALE_GATE_FAIL_CURRENT",
-  "last_disposition_detail": "Fresh 03.09.2026 Head of B2B signal is strong and exact Moscow legal entity is linked by the same Игарский проезд 11 address: ООО «СЕЛЛЕРПРО», INN 0800008993, OGRN 1230800003378. Two independent current financial sources show 2025 revenue about 49.07m RUB, below strict scale gate. No unsupported group/brand aggregation used.",
+  "last_dispositioned_candidate": "ООО Панголин Карс",
+  "last_disposition": "EXCLUDED_SIGNAL_NOT_CONFIRMED_CURRENT",
+  "last_disposition_detail": "Exact legal entity confirmed as ООО «ПАНГОЛИН КАРС», INN 9701256085, OGRN 1237700524698; current 2025 revenue about 112.74m RUB and 7 employees. Two independent targeted searches for a fresh 2026 strategic/commercial build-or-scale vacancy attributable to this employer did not produce a qualifying S1-S3 signal. Partner/dealer vacancies were not attributed to the legal entity.",
+  "recent_dispositions": [
+    {
+      "candidate": "СИМБАТ",
+      "disposition": "EXCLUDED_SCALE_TOO_LARGE_CURRENT",
+      "detail": "Exact Moscow ООО «СИМБАТ», INN 7731351857, OGRN 1177746227306, is active. Current 2025 revenue about 7.50bn RUB and 215 employees; current sources classify it as large business. Excluded under the campaign rule excluding huge corporations/non-target scale. No stale vacancy used."
+    },
+    {
+      "candidate": "Match Makers Staffing",
+      "disposition": "EXCLUDED_SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER",
+      "detail": "Current vacancies explicitly state that Match Makers Staffing is recruiting for clients (e.g. a client company / TOP-3 digital agency). The observed management/commercial intent belongs to undisclosed clients, not to Match Makers Staffing itself. Its public corporate site is US/English-language and does not establish a Russian target legal entity for this replay candidate."
+    },
+    {
+      "candidate": "ООО Панголин Карс",
+      "disposition": "EXCLUDED_SIGNAL_NOT_CONFIRMED_CURRENT",
+      "detail": "Exact legal entity: INN 9701256085, OGRN 1237700524698; active, 2025 revenue about 112.74m RUB, 7 employees. Official Pango Cars site is current. Two targeted searches found no fresh qualifying strategic/commercial build-or-scale vacancy attributable to this legal entity; dealer/partner sales vacancies were not transferred to it."
+    }
+  ],
   "merge_receipt_status": "MERGED",
   "outreach_sent": 0,
   "new_broad_discovery_allowed": false,
-  "next_candidate": "СИМБАТ",
-  "remaining_pool": ["СИМБАТ","Match Makers Staffing","ООО Панголин Карс","Экосмотр","АкваБайт","ТС ГРУПП","Склад Ремонта","AYS GROUP","Сибирская продовольственная компания","Спектр-Пак Юг","Феникс-Презент","Дюна","ЕВРАЗ","Компания ОРУМ","АО ЕКАД: Южный","УБРиР","Кейтеринбург","Маслодел","Unibell","Торговая сеть Ярмарка","MAXCAPITAL","Gold technology of electronics","Complex Safety Alliance","Fijital","CharmCleo Cosmetic","Турбодефлектор","ГК АГАТ"],
+  "next_candidate": "Экосмотр",
+  "remaining_pool": ["Экосмотр","АкваБайт","ТС ГРУПП","Склад Ремонта","AYS GROUP","Сибирская продовольственная компания","Спектр-Пак Юг","Феникс-Презент","Дюна","ЕВРАЗ","Компания ОРУМ","АО ЕКАД: Южный","УБРиР","Кейтеринбург","Маслодел","Unibell","Торговая сеть Ярмарка","MAXCAPITAL","Gold technology of electronics","Complex Safety Alliance","Fijital","CharmCleo Cosmetic","Турбодефлектор","ГК АГАТ"],
   "root_cause": {
     "A": "full-tree/global preflight + truncated connector -> fail-closed before discovery",
     "B": "batch-first -> dozens of WIP",
     "C": "shallow evidence acquisition -> false excludes"
   },
   "permanent_fixes": ["targeted dedup","sequential end-to-end","retry missing evidence","immediate physical write via repo-side complete increment merge"],
-  "updated_at": "2026-09-05T11:30:39+03:00"
+  "updated_at": "2026-09-05T12:32:16+03:00"
 }
