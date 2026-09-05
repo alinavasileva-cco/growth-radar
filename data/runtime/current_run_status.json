@@ -2,27 +2,27 @@
   "run_id": "N5K-20260904-631",
   "run_sequence": 631,
   "campaign_id": "new_5000",
-  "status": "REPLAY_BLOCKED",
-  "stage": "CANONICAL_AGGREGATE_REWRITE_BLOCKED_NO_COMPLETE_MASTER_PAYLOAD",
+  "status": "REPLAY_RUNNING",
+  "stage": "SEQUENTIAL_END_TO_END_REPLAY",
   "baseline": 614,
   "replay_total": 60,
-  "checked": 23,
-  "fully_dispositioned": 23,
-  "remaining_replay": 37,
+  "checked": 24,
+  "fully_dispositioned": 24,
+  "remaining_replay": 36,
   "active_wip": 1,
-  "active_candidate": "ООО Авто-Хэлп",
+  "active_candidate": "ИП Попова",
   "funnel": {
-    "legal_pass": 11,
-    "scale_pass": 4,
-    "signal_pass": 1,
-    "lpr_pass": 0,
+    "legal_pass": 12,
+    "scale_pass": 5,
+    "signal_pass": 2,
+    "lpr_pass": 1,
     "contact_pass": 0,
     "qualified": 0,
     "duplicates": 4,
-    "excluded": 19
+    "excluded": 20
   },
   "duplicates": 4,
-  "excluded": 19,
+  "excluded": 20,
   "qualified": 0,
   "net_new": 0,
   "physically_added_companies": [],
@@ -40,7 +40,8 @@
     "SCALE_GATE_FAIL_CURRENT": ["VIEN", "ООО DELASIA", "ООО Дс-Арт", "ООО Эктем Ок", "SILENKO AUTOcratia"],
     "CURRENT_LEGAL_STATUS_FAIL": ["Эксперт Сервис"],
     "SIGNAL_NOT_ATTRIBUTABLE_TO_EMPLOYER": ["ООО Формула успеха"],
-    "OFFICIAL_SITE_OPERATING_LINK_NOT_CONFIRMED": ["ООО Текстильмаркет"]
+    "OFFICIAL_SITE_OPERATING_LINK_NOT_CONFIRMED": ["ООО Текстильмаркет"],
+    "OFFICIAL_SITE_LEGAL_ENTITY_MISMATCH_CURRENT": ["ООО Авто-Хэлп"]
   },
   "current_canonical_count": 614,
   "current_contactable_count": 614,
@@ -60,36 +61,28 @@
     "retry missing evidence",
     "immediate physical write"
   ],
-  "current_execution_blocker": {
+  "last_disposition": {
     "candidate": "ООО Авто-Хэлп",
-    "state": "ALL_QUALITY_GATES_EVIDENCED_PENDING_PHYSICAL_CANONICAL_WRITE",
-    "details": "Targeted current-master dedup by INN/OGRN/domain returned zero matches. Low-level Git write primitives (blob/tree/commit/ref) and contents update_file are available, but all require the complete updated aggregate CSV content to create the replacement blob/file. The connected read actions do not expose the large aggregate leads_master/contactable_master as a complete reusable UTF-8 payload or file reference suitable for retransmission, and no repository-native rebuild/aggregate mechanism from master_shards/contactable_shards was found. Therefore the mandatory aggregate canonical write cannot be completed safely in this environment. No shard-only, partial, reconstructed, blind, staging or noncanonical write was counted as physical integration.",
-    "targeted_dedup_attempts": ["INN 7826004234", "OGRN 1037851011120", "domain auto-help.ru"],
-    "targeted_dedup_matches": 0,
-    "candidate_lead_id_if_written": "N5K-7826004234",
-    "fresh_evidence_recheck": [
-      "Exact active legal entity: ООО Авто-Хэлп, INN 7826004234, OGRN 1037851011120",
-      "Current scale gate passed in this replay without weakening criteria",
-      "Official domain auto-help.ru and published practical contact confirmed in this replay",
-      "Fresh job-intent evidence passed the S1-S3 gate in this replay"
+    "decision": "EXCLUDED",
+    "reason": "OFFICIAL_SITE_LEGAL_ENTITY_MISMATCH_CURRENT",
+    "exact_legal": "ООО Авто-Хэлп, INN 7826004234, OGRN 1037851011120",
+    "current_scale": "2025 headcount 23; current registry sources place revenue in the strict target range",
+    "lpr": "Мигдалович Михаил Борисович, генеральный директор and 60% owner",
+    "evidence_attempts": [
+      "Current registry source Reputation.ru links INN 7826004234 to auto-help.ru and nozhin@auto-help.ru",
+      "Current official Auto-Help contacts page identifies the operating site legal entity as ООО АВТО ХЭЛП, INN 7807036632",
+      "Targeted exact-INN/OGRN searches on the official domain returned no match"
     ],
-    "write_paths_verified": [
-      "GitHub contents update_file requires complete replacement UTF-8 content",
-      "GitHub low-level blob/tree/commit/ref path exists but still requires complete replacement blob content",
-      "Large aggregate master is not exposed by connected read actions as a complete reusable payload/file reference",
-      "Repository code search found no rebuild/aggregate mechanism for master_shards",
-      ".github/workflows is absent on current main; no server-side aggregate rebuild workflow confirmed",
-      "No shard-only or partial canonical workaround used"
-    ],
-    "verified_at": "2026-09-05T00:33:00+03:00"
+    "dedup": "INN 7826004234 / OGRN 1037851011120 / auto-help.ru targeted repository search returned no canonical match",
+    "note": "Not written: the current official operating-site legal identity conflicts with the vacancy/registry candidate legal entity. Strict quality gate kept fail-closed; no inferred group linkage used."
   },
   "cursor": {
-    "next_candidate": "ООО Авто-Хэлп",
-    "remaining_pool_count": 37,
-    "remaining_pool": ["ООО Авто-Хэлп", "ИП Попова", "ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
+    "next_candidate": "ИП Попова",
+    "remaining_pool_count": 36,
+    "remaining_pool": ["ИП Попова", "ООО ТехноИнтегратор", "ООО Эталонное решение", "ИП Магер", "Юридическая компания До Нуля", "Клиенты есть всегда", "ООО УК Медицина", "BARNES", "ООО Селлерпро", "СИМБАТ", "Match Makers Staffing", "ООО Панголин Карс", "Экосмотр", "АкваБайт", "ТС ГРУПП", "Склад Ремонта", "AYS GROUP", "Сибирская продовольственная компания", "Спектр-Пак Юг", "Феникс-Презент", "Дюна", "ЕВРАЗ", "Компания ОРУМ", "АО ЕКАД: Южный", "УБРиР", "Кейтеринбург", "Маслодел", "Unibell", "Торговая сеть Ярмарка", "MAXCAPITAL", "Gold technology of electronics", "Complex Safety Alliance", "Fijital", "CharmCleo Cosmetic", "Турбодефлектор", "ГК АГАТ"]
   },
   "resume_required_same_run_id": true,
   "new_discovery_allowed": false,
   "report": "reports/N5K-20260904-631.md",
-  "fresh_head_sha_note": "Read HEAD after final state write; a file cannot contain the SHA of the commit that contains itself."
+  "verified_at": "2026-09-05T05:30:39+03:00"
 }
