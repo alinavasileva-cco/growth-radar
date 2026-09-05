@@ -1,0 +1,10 @@
+{
+  "name": "Growth Radar Outreach",
+  "short_name": "Outreach",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#f4f2eb",
+  "theme_color": "#171a14",
+  "lang": "ru",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
