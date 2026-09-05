@@ -1,0 +1,68 @@
+name: Growth Radar canonical increment merge
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/campaigns/new_5000/increments/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: growth-radar-canonical-merge
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Determine changed increment files
+        shell: bash
+        run: |
+          set -euo pipefail
+          : > /tmp/gr_changed.txt
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            find data/campaigns/new_5000/increments -maxdepth 1 -type f -name '*.csv' -print | sort > /tmp/gr_changed.txt
+          else
+            BEFORE="${{ github.event.before }}"
+            if [ -z "$BEFORE" ] || echo "$BEFORE" | grep -Eq '^0+$'; then
+              git show --pretty='' --name-only "$GITHUB_SHA" -- data/campaigns/new_5000/increments/ > /tmp/gr_changed.txt
+            else
+              git diff --name-only "$BEFORE" "$GITHUB_SHA" -- data/campaigns/new_5000/increments/ > /tmp/gr_changed.txt
+            fi
+          fi
+          cat /tmp/gr_changed.txt
+
+      - name: Merge complete increment groups safely
+        run: python scripts/merge_growth_radar_increment.py --changed-file-list /tmp/gr_changed.txt
+
+      - name: Commit canonical changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add \
+            data/campaigns/new_5000/leads_master.csv \
+            data/campaigns/new_5000/contactable_master.csv \
+            data/campaigns/new_5000/contacts.csv \
+            data/campaigns/new_5000/evidence.csv \
+            data/runtime/merge_receipts/ || true
+          if git diff --cached --quiet; then
+            echo 'No canonical changes to commit.'
+            exit 0
+          fi
+          git config user.name 'growth-radar-bot'
+          git config user.email 'growth-radar-bot@users.noreply.github.com'
+          git commit -m 'data: merge Growth Radar canonical increment'
+          git push
