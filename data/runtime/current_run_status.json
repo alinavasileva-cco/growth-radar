@@ -1,58 +1,67 @@
 {
-  "run_id": "N5K-20260905-632",
-  "run_sequence": 632,
+  "run_id": "N5K-20260905-634",
+  "run_sequence": 634,
   "campaign_id": "new_5000",
-  "status": "DEGRADED_CANONICAL_WRITE_BLOCKED_FRESH_DISCOVERY_CONTINUES",
-  "stage": "RUN_COMPLETE_ZERO_PHYSICAL_WRITE",
+  "status": "COMPLETE_MERGED",
+  "stage": "RUN_COMPLETE_PHYSICAL_WRITE_CONFIRMED",
   "baseline": 614,
   "fresh_discovery_count": 25,
-  "replay_count": 0,
-  "fully_dispositioned": 1,
+  "replay_count": 1,
+  "fully_dispositioned": 3,
   "funnel": {
-    "legal_pass": 1,
-    "scale_pass": 1,
-    "signal_pass": 1,
-    "lpr_pass": 1,
-    "contact_pass": 1,
-    "qualified": 0,
-    "duplicates": 0,
-    "excluded": 0
+    "legal_pass": 3,
+    "scale_pass": 3,
+    "signal_pass": 3,
+    "lpr_pass": 3,
+    "contact_pass": 2,
+    "qualified_evidence_ready": 1,
+    "duplicates": 1,
+    "excluded": 1
   },
-  "duplicates": 0,
-  "excluded": 0,
-  "qualified": 0,
-  "net_new": 0,
-  "physically_added_companies": [],
-  "evidence_ready_not_counted": [
+  "duplicates": 1,
+  "excluded": 1,
+  "qualified_evidence_ready": 1,
+  "increment_rows_written": {
+    "leads": 1,
+    "contactable": 1,
+    "contacts": 2,
+    "evidence": 5
+  },
+  "merge_receipt_status": "MERGED",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260905-634.json",
+  "net_new": 1,
+  "physically_added_companies": [
     {
-      "candidate": "ООО ИБММ ТЕХНОЛОГИИ",
-      "inn": "5032334982",
-      "ogrn": "1215000115230",
-      "state": "ALL_QUALITY_GATES_EVIDENCED_NOT_COUNTED",
-      "reason": "MANDATORY_SAFE_CANONICAL_PHYSICAL_WRITE_UNAVAILABLE"
+      "lead_id": "N5K-0634-001",
+      "company": "ООО ПРОФЛИСТ МАРКЕТ",
+      "inn": "4800014271",
+      "ogrn": "1244800002424"
     }
   ],
-  "current_canonical_count": 614,
-  "current_contactable_count": 614,
-  "remaining_to_5000": 4386,
-  "net_new_24h": 1,
-  "daily_target_deviation": {
-    "vs_100": -99,
-    "vs_200": -199
+  "current_canonical_count": 615,
+  "current_contactable_count": 615,
+  "remaining_to_5000": 4385,
+  "duplicate_rate": 0.3333,
+  "source_yield": "1 physically merged qualified / 25 fresh discovery candidates = 4%",
+  "exclusion_reasons": {
+    "practical_published_contact_not_safely_established_after_two_targeted_attempts": 1
   },
-  "integrity": "PASS_UNCHANGED_CANONICAL_PARITY",
+  "net_new_24h": 2,
+  "daily_target_deviation": {
+    "vs_100": -98,
+    "vs_200": -198
+  },
+  "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
-  "orphan_counts_note": "Last runtime validation reported zero; no contacts/evidence rows were written in this run; independent full recount unavailable through connector.",
   "active_wip": 0,
   "new_discovery_allowed": true,
-  "outreach": 0,
-  "root_cause": "Available GitHub contents writer requires complete replacement content for large masters; connector transport truncates full master/blob reads; no existing repository-side append/merge script or workflow was found.",
+  "outreach_sent": 0,
   "corrective_actions": [
+    "repo-side safe increment merge is now confirmed working end-to-end",
+    "repo-side final dedup remains authoritative because connector code search missed an existing INN/OGRN replay duplicate",
     "fresh discovery remains always-on",
-    "rotate query/region/job board on low yield",
-    "strict qualification gates remain unchanged",
-    "add or expose safe repository-side canonical append/merge or connector patch/append capability before counting evidence-ready candidates"
+    "after low first-batch yield, query/region/source rotation was applied without weakening qualification gates"
   ],
-  "report": "reports/N5K-20260905-632.md"
+  "report": "reports/N5K-20260905-634.md"
 }
