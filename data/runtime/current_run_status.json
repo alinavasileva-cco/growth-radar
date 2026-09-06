@@ -1,25 +1,25 @@
 {
-  "run_id": "N5K-20260906-675",
-  "run_sequence": 675,
+  "run_id": "N5K-20260906-676",
+  "run_sequence": 676,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 641,
-  "fresh_discovery_count": 3,
+  "baseline": 642,
+  "fresh_discovery_count": 12,
   "replay_count": 0,
-  "fully_dispositioned": 3,
+  "fully_dispositioned": 4,
   "funnel": {
     "legal_pass": 3,
-    "scale_pass": 2,
+    "scale_pass": 3,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
     "duplicates": 0,
-    "excluded": 2
+    "excluded": 3
   },
   "duplicates": 0,
-  "excluded": 2,
+  "excluded": 3,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "final_run_leads": 1,
@@ -28,20 +28,20 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-675.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-676.json",
   "net_new": 1,
-  "physically_added_companies": ["ООО «ГТК «ЛАДОЖСКАЯ УСАДЬБА»"],
-  "current_canonical_count": 642,
-  "current_contactable_count": 642,
-  "remaining_to_5000": 4358,
+  "physically_added_companies": ["ООО «ФОКСИ-БОКС»"],
+  "current_canonical_count": 643,
+  "current_contactable_count": 643,
+  "remaining_to_5000": 4357,
   "duplicate_rate": 0.0,
-  "source_yield": "1/3 evidence-ready (33.33%); 1/3 physically merged (33.33%)",
+  "source_yield": "1/12 evidence-ready (8.33%); 1/12 physically merged (8.33%)",
   "exclusion_reasons": {
-    "SCALE_FAIL": 1,
-    "SIGNAL_STALE": 1
+    "SIGNAL_STALE": 2,
+    "LEGAL_LINKAGE_NOT_PROVEN": 1
   },
-  "net_new_24h": 28,
-  "daily_target_deviation": {"vs_100": -72, "vs_200": -172},
+  "net_new_24h": 29,
+  "daily_target_deviation": {"vs_100": -71, "vs_200": -171},
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -50,14 +50,15 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "kept fresh Russian-language vacancy discovery dominant with replay_count=0",
-    "excluded ООО СОВЬЯКИ-ПАРК fail-closed after exact legal linkage but scale gate failure",
-    "excluded ООО АГРОФИРМА ПАРТНЕР fail-closed because the B2B sales-head signal was dated 25.08.2026 and did not meet current signal freshness",
-    "qualified ООО ГТК ЛАДОЖСКАЯ УСАДЬБА from a 04.09.2026 Russian-language commercial-director vacancy after full-text SIGNAL, exact LEGAL, SCALE, CEO/LPR and CONTACT checks",
-    "performed targeted final dedup by INN, OGRN and exact brand; no repository match was returned before safe write",
-    "created complete four-file increment group only for the evidence-ready candidate, with no partial/WIP rows",
-    "accepted ООО ГТК ЛАДОЖСКАЯ УСАДЬБА as net_new only after authoritative receipt N5K-20260906-675 returned MERGED added_count=1",
-    "confirmed canonical/contactable parity 642/642, integrity PASS and zero orphan contacts/evidence",
+    "did not reuse stale sales signals: ООО АГРОФИРМА ПАРТНЕР remained excluded because the relevant B2B sales-head vacancy is dated 25.08.2026",
+    "excluded СтройДОМ fail-closed because the accessible full-text sales-head signal is dated 30.08.2026",
+    "excluded an anonymized commercial-director vacancy fail-closed because exact employer-to-legal linkage could not be proven",
+    "qualified ООО ФОКСИ-БОКС / FOXY GROUP from a 03.09.2026 Russian-language commercial-director vacancy after full-text SIGNAL, exact LEGAL, SCALE, director/owner LPR and published practical CONTACT checks",
+    "performed targeted dedup by INN and OGRN before safe write; repository search returned no match",
+    "created a complete four-file increment group containing only the evidence-ready candidate, with no partial/WIP rows",
+    "accepted ООО ФОКСИ-БОКС as net_new only after authoritative receipt N5K-20260906-676 returned MERGED added_count=1 and duplicate_count=0",
+    "confirmed canonical/contactable parity 643/643, integrity PASS and zero orphan contacts/evidence",
     "left active_wip=0, new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260906-675.md"
+  "report": "reports/N5K-20260906-676.md"
 }
