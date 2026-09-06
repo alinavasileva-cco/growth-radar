@@ -1,25 +1,25 @@
 {
-  "run_id": "N5K-20260906-681",
-  "run_sequence": 681,
+  "run_id": "N5K-20260906-682",
+  "run_sequence": 682,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 645,
+  "baseline": 646,
   "fresh_discovery_count": 8,
   "replay_count": 0,
-  "fully_dispositioned": 2,
+  "fully_dispositioned": 4,
   "funnel": {
-    "legal_pass": 1,
+    "legal_pass": 2,
     "scale_pass": 1,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
     "duplicates": 0,
-    "excluded": 1
+    "excluded": 3
   },
   "duplicates": 0,
-  "excluded": 1,
+  "excluded": 3,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "final_run_leads": 1,
@@ -28,19 +28,20 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-681.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-682.json",
   "net_new": 1,
-  "physically_added_companies": ["ООО «МАС АЛЬБИОН»"],
-  "current_canonical_count": 646,
-  "current_contactable_count": 646,
-  "remaining_to_5000": 4354,
+  "physically_added_companies": ["ООО «ГРУППА ОТЕЛЕЙ ЛЕГЕНДА»"],
+  "current_canonical_count": 647,
+  "current_contactable_count": 647,
+  "remaining_to_5000": 4353,
   "duplicate_rate": 0.0,
   "source_yield": "1/8 evidence-ready (12.50%); 1/8 physically merged (12.50%)",
   "exclusion_reasons": {
-    "ENGLISH_LANGUAGE_REQUIREMENT": 1
+    "SCALE_GATE_NOT_PROVEN": 1,
+    "LEGAL_LINKAGE_NOT_PROVEN": 2
   },
-  "net_new_24h": 32,
-  "daily_target_deviation": {"vs_100": -68, "vs_200": -168},
+  "net_new_24h": 33,
+  "daily_target_deviation": {"vs_100": -67, "vs_200": -167},
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -48,14 +49,15 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "kept fresh Russian-language vacancy discovery dominant with replay_count=0",
-    "excluded an English-language requirement at discovery without weakening qualification gates",
-    "qualified MАС Альбион from a dated 04.09.2026 S1 sales-management signal after full-text review",
-    "verified exact employer-to-legal linkage on the official company site and confirmed current legal status, 2025 scale, private ownership, director and practical published contacts independently",
-    "performed targeted INN/OGRN/legal-name dedup before safe write while retaining repo-side merge as authoritative final dedup",
-    "created a complete four-file increment group with exact current schemas and no partial/WIP rows",
-    "counted ООО «МАС АЛЬБИОН» as net_new only after receipt N5K-20260906-681 returned MERGED added_count=1 and integrity 646/646 with zero orphans",
+    "kept fresh Russian-language job-intent discovery dominant with replay_count=0",
+    "rotated among fresh sales/commercial vacancies rather than using stale records",
+    "excluded candidates fail-closed where exact employer-to-legal linkage or strict scale could not be proven",
+    "qualified ООО «ГРУППА ОТЕЛЕЙ ЛЕГЕНДА» from a dated 04.09.2026 Russian-language sales-and-marketing leadership signal",
+    "confirmed exact legal entity, 2025 revenue scale, CEO/LPR and published practical corporate contacts through independent public sources",
+    "performed targeted INN/OGRN dedup before safe write and relied on repo-side merge for authoritative final dedup",
+    "created one complete four-file increment group with exact current schemas and no WIP rows",
+    "counted the company as net_new only after receipt N5K-20260906-682 returned MERGED added_count=1 and integrity 647/647 with zero orphans",
     "left active_wip=0, new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260906-681.md"
+  "report": "reports/N5K-20260906-682.md"
 }
