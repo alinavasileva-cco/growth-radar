@@ -1,51 +1,53 @@
 {
-  "run_id": "N5K-20260906-655",
-  "run_sequence": 655,
+  "run_id": "N5K-20260906-657",
+  "run_sequence": 657,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 628,
-  "fresh_discovery_count": 4,
+  "baseline": 629,
+  "fresh_discovery_count": 16,
   "replay_count": 0,
-  "fully_dispositioned": 4,
+  "fully_dispositioned": 5,
   "funnel": {
-    "legal_pass": 3,
-    "scale_pass": 1,
-    "signal_pass": 1,
-    "lpr_pass": 1,
-    "contact_pass": 1,
-    "qualified_evidence_ready": 1,
-    "duplicates": 0,
-    "excluded": 3
+    "legal_pass": 4,
+    "scale_pass": 3,
+    "signal_pass": 2,
+    "lpr_pass": 2,
+    "contact_pass": 2,
+    "qualified_evidence_ready": 2,
+    "duplicates": 1,
+    "excluded": 4
   },
-  "duplicates": 0,
-  "excluded": 3,
-  "qualified_evidence_ready": 1,
+  "duplicates": 1,
+  "excluded": 4,
+  "qualified_evidence_ready": 2,
   "increment_rows_written": {
     "leads": 1,
     "contactable": 1,
-    "contacts": 1,
+    "contacts": 2,
     "evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-655.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-657.json",
   "net_new": 1,
   "physically_added_companies": [
-    "ООО «ТЕПЛОМАРКЕТ»"
+    "ООО «Е8»"
   ],
-  "current_canonical_count": 629,
-  "current_contactable_count": 629,
-  "remaining_to_5000": 4371,
-  "duplicate_rate": 0.0,
-  "source_yield": "1/4 evidence-ready (25.00%); 1/4 physically merged (25.00%)",
+  "current_canonical_count": 630,
+  "current_contactable_count": 630,
+  "remaining_to_5000": 4370,
+  "duplicate_rate": 0.2,
+  "source_yield": "2/16 evidence-ready (12.50%); 1/16 physically merged (6.25%)",
   "exclusion_reasons": {
-    "SCALE_FAIL": 2,
-    "LEGAL_LINKAGE_NOT_PROVEN": 1
+    "FINAL_DEDUP": 1,
+    "SCALE_FAIL": 1,
+    "LEGAL_LINKAGE_NOT_PROVEN": 1,
+    "SIGNAL_NOT_FRESH": 1
   },
-  "net_new_24h": 15,
+  "net_new_24h": 16,
   "daily_target_deviation": {
-    "vs_100": -85,
-    "vs_200": -185
+    "vs_100": -84,
+    "vs_200": -184
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -55,14 +57,14 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "kept fresh Russian-language vacancy discovery at 100% of research flow with replay_count=0",
-    "used full vacancy text for the qualified candidate and sequential gates end-to-end",
-    "used targeted connector dedup only before safe-write and did not require full master reads",
-    "kept two sub-scale candidates fail-closed without weakening the scale gate",
-    "excluded one ambiguous brand because exact employer-to-legal linkage was not proven",
-    "created one complete four-file atomic increment group with canonical headers",
-    "accepted net_new only after repo-side receipt status MERGED with added_count=1",
-    "confirmed canonical/contactable parity 629/629 and zero orphan contacts/evidence",
+    "did not use full >1MB master reads as discovery preflight",
+    "used targeted connector dedup before safe-write and authoritative repo-side dedup for final decision",
+    "continued fresh discovery immediately after N5K-20260906-656 returned DEDUP_NOOP",
+    "kept scale, legal linkage and signal freshness gates fail-closed without weakening qualification",
+    "created complete four-file atomic increment N5K-20260906-657 with canonical headers",
+    "accepted net_new only after receipt status MERGED with added_count=1",
+    "confirmed canonical/contactable parity 630/630 and zero orphan contacts/evidence",
     "left active_wip=0, new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260906-655.md"
+  "report": "reports/N5K-20260906-657.md"
 }
