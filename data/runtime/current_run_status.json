@@ -1,13 +1,13 @@
 {
-  "run_id": "N5K-20260906-667",
-  "run_sequence": 667,
+  "run_id": "N5K-20260906-668",
+  "run_sequence": 668,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 635,
-  "fresh_discovery_count": 1,
+  "baseline": 636,
+  "fresh_discovery_count": 18,
   "replay_count": 0,
-  "fully_dispositioned": 1,
+  "fully_dispositioned": 2,
   "funnel": {
     "legal_pass": 1,
     "scale_pass": 1,
@@ -16,10 +16,10 @@
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
     "duplicates": 0,
-    "excluded": 0
+    "excluded": 1
   },
   "duplicates": 0,
-  "excluded": 0,
+  "excluded": 1,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "leads": 1,
@@ -28,17 +28,19 @@
     "evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-667.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-668.json",
   "net_new": 1,
-  "physically_added_companies": ["ООО ПКП «ПОЛИМЕР-УРАЛ»"],
-  "current_canonical_count": 636,
-  "current_contactable_count": 636,
-  "remaining_to_5000": 4364,
+  "physically_added_companies": ["ООО «ОвенКомплектАвтоматика»"],
+  "current_canonical_count": 637,
+  "current_contactable_count": 637,
+  "remaining_to_5000": 4363,
   "duplicate_rate": 0.0,
-  "source_yield": "1/1 evidence-ready (100%); 1/1 physically merged (100%)",
-  "exclusion_reasons": {},
-  "net_new_24h": 22,
-  "daily_target_deviation": {"vs_100": -78, "vs_200": -178},
+  "source_yield": "1/18 evidence-ready (5.56%); 1/18 physically merged (5.56%)",
+  "exclusion_reasons": {
+    "LEGAL_LINKAGE_NOT_PROVEN": 1
+  },
+  "net_new_24h": 23,
+  "daily_target_deviation": {"vs_100": -77, "vs_200": -177},
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -47,14 +49,14 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "kept fresh Russian-language vacancy discovery dominant with replay_count=0",
-    "selected a current direct S1 business-intent vacancy rather than stale or weak signals",
-    "reviewed the full vacancy text and required exact legal linkage, scale, dated signal, real LPR and published practical corporate contacts",
-    "performed targeted connector-side dedup by INN and exact legal entity before safe-write",
-    "used the atomic four-file safe-write increment group and relied on repo-side final dedup and relational integrity checks",
-    "replaced a blocked direct-manager contact write with published corporate contact routes without weakening the contact gate",
-    "accepted N5K-20260906-667 as net_new only after authoritative receipt returned MERGED added_count=1",
-    "confirmed canonical/contactable parity 636/636, integrity PASS and zero orphan contacts/evidence",
+    "rotated fresh HH-derived queries across Moscow, Saint Petersburg and regional sales leadership vacancies",
+    "reviewed the full business-intent text for the qualified candidate and required exact legal linkage, scale, dated signal, real LPR and published practical contact",
+    "excluded Dymov Ceramics fail-closed because the vacancy employer-to-specific-legal-entity linkage was not strict enough for canonical qualification",
+    "performed targeted pre-dedup by brand and INN before safe-write",
+    "created the complete four-file increment group N5K-20260906-668 with no partial/WIP rows",
+    "accepted the company as net_new only after authoritative receipt returned MERGED added_count=1",
+    "confirmed canonical/contactable parity 637/637, integrity PASS and zero orphan contacts/evidence",
     "left active_wip=0, new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260906-667.md"
+  "report": "reports/N5K-20260906-668.md"
 }
