@@ -1,25 +1,25 @@
 {
-  "run_id": "N5K-20260906-676",
-  "run_sequence": 676,
+  "run_id": "N5K-20260906-677",
+  "run_sequence": 677,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 642,
-  "fresh_discovery_count": 12,
+  "baseline": 643,
+  "fresh_discovery_count": 8,
   "replay_count": 0,
-  "fully_dispositioned": 4,
+  "fully_dispositioned": 2,
   "funnel": {
-    "legal_pass": 3,
-    "scale_pass": 3,
+    "legal_pass": 1,
+    "scale_pass": 1,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
     "duplicates": 0,
-    "excluded": 3
+    "excluded": 1
   },
   "duplicates": 0,
-  "excluded": 3,
+  "excluded": 1,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "final_run_leads": 1,
@@ -28,20 +28,19 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-676.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-677.json",
   "net_new": 1,
-  "physically_added_companies": ["ООО «ФОКСИ-БОКС»"],
-  "current_canonical_count": 643,
-  "current_contactable_count": 643,
-  "remaining_to_5000": 4357,
+  "physically_added_companies": ["ООО «КОМПАНИЯ «ТЕНЗОР»"],
+  "current_canonical_count": 644,
+  "current_contactable_count": 644,
+  "remaining_to_5000": 4356,
   "duplicate_rate": 0.0,
-  "source_yield": "1/12 evidence-ready (8.33%); 1/12 physically merged (8.33%)",
+  "source_yield": "1/8 evidence-ready (12.50%); 1/8 physically merged (12.50%)",
   "exclusion_reasons": {
-    "SIGNAL_STALE": 2,
-    "LEGAL_LINKAGE_NOT_PROVEN": 1
+    "LEGAL_LINKAGE_OR_SCALE_NOT_PROVEN": 1
   },
-  "net_new_24h": 29,
-  "daily_target_deviation": {"vs_100": -71, "vs_200": -171},
+  "net_new_24h": 30,
+  "daily_target_deviation": {"vs_100": -70, "vs_200": -170},
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -50,15 +49,14 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "kept fresh Russian-language vacancy discovery dominant with replay_count=0",
-    "did not reuse stale sales signals: ООО АГРОФИРМА ПАРТНЕР remained excluded because the relevant B2B sales-head vacancy is dated 25.08.2026",
-    "excluded СтройДОМ fail-closed because the accessible full-text sales-head signal is dated 30.08.2026",
-    "excluded an anonymized commercial-director vacancy fail-closed because exact employer-to-legal linkage could not be proven",
-    "qualified ООО ФОКСИ-БОКС / FOXY GROUP from a 03.09.2026 Russian-language commercial-director vacancy after full-text SIGNAL, exact LEGAL, SCALE, director/owner LPR and published practical CONTACT checks",
-    "performed targeted dedup by INN and OGRN before safe write; repository search returned no match",
-    "created a complete four-file increment group containing only the evidence-ready candidate, with no partial/WIP rows",
-    "accepted ООО ФОКСИ-БОКС as net_new only after authoritative receipt N5K-20260906-676 returned MERGED added_count=1 and duplicate_count=0",
-    "confirmed canonical/contactable parity 643/643, integrity PASS and zero orphan contacts/evidence",
+    "qualified ООО КОМПАНИЯ ТЕНЗОР / Saby from a dated 04.09.2026 sales-head signal and official full vacancy text after strict LEGAL, SCALE, LPR and CONTACT checks",
+    "removed an unverified HH employer URL before canonical merge rather than retaining an unsupported field",
+    "excluded BIORISE fail-closed because exact employer-to-current-legal linkage and current strict scale could not both be proven without assumption",
+    "performed targeted dedup by INN, OGRN and domain before safe write; connector search returned no match",
+    "created a complete four-file increment group with exact current schemas and no partial/WIP rows",
+    "accepted ООО КОМПАНИЯ ТЕНЗОР as net_new only after authoritative receipt N5K-20260906-677 returned MERGED added_count=1 and duplicate_count=0",
+    "confirmed receipt-side canonical/contactable parity 644/644, integrity PASS and zero orphan contacts/evidence",
     "left active_wip=0, new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260906-676.md"
+  "report": "reports/N5K-20260906-677.md"
 }
