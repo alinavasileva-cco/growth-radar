@@ -1,16 +1,16 @@
 {
-  "run_id": "N5K-20260906-662",
-  "run_sequence": 662,
+  "run_id": "N5K-20260906-663",
+  "run_sequence": 663,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 632,
-  "fresh_discovery_count": 12,
+  "baseline": 633,
+  "fresh_discovery_count": 2,
   "replay_count": 0,
   "fully_dispositioned": 2,
   "funnel": {
-    "legal_pass": 2,
-    "scale_pass": 2,
+    "legal_pass": 1,
+    "scale_pass": 1,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
@@ -28,19 +28,19 @@
     "evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-662.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260906-663.json",
   "net_new": 1,
-  "physically_added_companies": ["ООО СЛОН-ЭЛЕКТРОНИКС"],
-  "current_canonical_count": 633,
-  "current_contactable_count": 633,
-  "remaining_to_5000": 4367,
+  "physically_added_companies": ["ООО «ТОПЛИВНАЯ КОМПАНИЯ ОМЕГА-ОЙЛ»"],
+  "current_canonical_count": 634,
+  "current_contactable_count": 634,
+  "remaining_to_5000": 4366,
   "duplicate_rate": 0.0,
-  "source_yield": "1/12 evidence-ready and physically merged (8.33%); 1/2 fully dispositioned (50%)",
+  "source_yield": "1/2 physically merged (50%); 1/2 fully qualified (50%)",
   "exclusion_reasons": {
-    "SIGNAL_STALE": 1
+    "LEGAL_LINKAGE_EXACT_REQUISITES_NOT_PROVEN": 1
   },
-  "net_new_24h": 19,
-  "daily_target_deviation": {"vs_100": -81, "vs_200": -181},
+  "net_new_24h": 20,
+  "daily_target_deviation": {"vs_100": -80, "vs_200": -180},
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -49,13 +49,14 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "kept fresh Russian-language vacancy discovery dominant with replay_count=0",
-    "rotated discovery to fresh HH-derived regional vacancies and Russian job-board sources",
-    "excluded the Aгротехснаб vacancy from qualification because its dated signal was stale",
+    "qualified only after full vacancy-text review and strict legal/scale/signal/LPR/contact gates",
     "used two targeted repository dedup checks for the qualified candidate by INN and OGRN before safe-write",
     "wrote a complete four-file atomic increment group with canonical headers",
-    "accepted net_new only after authoritative repo-side receipt N5K-20260906-662 returned MERGED added_count=1",
-    "confirmed canonical/contactable parity 633/633, integrity PASS and zero orphans",
+    "continued fresh discovery while waiting for the repo-side merge receipt",
+    "excluded the second candidate fail-closed because exact current employer-to-legal requisites linkage was not sufficiently proven",
+    "accepted net_new only after authoritative repo-side receipt N5K-20260906-663 returned MERGED added_count=1",
+    "confirmed canonical/contactable parity 634/634, integrity PASS and zero orphans",
     "left active_wip=0, new_discovery_allowed=true and outreach_sent=0"
   ],
-  "report": "reports/N5K-20260906-662.md"
+  "report": "reports/N5K-20260906-663.md"
 }
