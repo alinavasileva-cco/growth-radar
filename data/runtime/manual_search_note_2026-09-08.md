@@ -1,0 +1,1 @@
+Manual Growth Radar discovery resumed 2026-09-08. Candidate pool under review from fresh public Russian-language sources. No company counted until legal linkage, scale, signal, LPR/contact, dedup and canonical merge checks pass.
