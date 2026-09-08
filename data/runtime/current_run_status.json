@@ -2,8 +2,8 @@
   "run_id": "N5K-20260908-776",
   "run_sequence": 776,
   "campaign_id": "new_5000",
-  "status": "COMPLETE_INCREMENT_PENDING_MERGE",
-  "stage": "SAFE_WRITE_WAITING_FOR_RECEIPT",
+  "status": "COMPLETE_DEDUP_NOOP",
+  "stage": "RUN_COMPLETE_NO_PHYSICAL_GROWTH",
   "baseline": 688,
   "fresh_discovery_count": 6,
   "replay_count": 0,
@@ -15,11 +15,11 @@
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 0,
-    "excluded": 5
+    "duplicates": 1,
+    "excluded": 6
   },
-  "duplicates": 0,
-  "excluded": 5,
+  "duplicates": 1,
+  "excluded": 6,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "cycle_leads": 1,
@@ -31,23 +31,24 @@
     "final_run_contacts": 3,
     "final_run_evidence": 5
   },
-  "merge_receipt_status": "PENDING_NOT_FOUND",
+  "merge_receipt_status": "DEDUP_NOOP",
   "merge_receipt": "data/runtime/merge_receipts/N5K-20260908-776.json",
   "net_new": 0,
   "physically_added_companies": [],
   "current_canonical_count": 688,
   "current_contactable_count": 688,
   "remaining_to_5000": 4312,
-  "duplicate_rate": 0.0,
-  "source_yield": "1/6 fresh evidence-ready (16.67%); 0/6 physically merged at report time (receipt pending)",
+  "duplicate_rate": 0.1667,
+  "source_yield": "1/6 fresh evidence-ready (16.67%); 0/6 physically merged (0%)",
   "exclusion_reasons": {
+    "FINAL_DEDUP": 1,
     "LEGAL_LINKAGE_NOT_PROVEN": 3,
     "SIGNAL_STALE_OR_OUTDATED": 1,
     "SCALE_FAIL": 1
   },
   "net_new_24h": 74,
   "daily_target_deviation": {"vs_100": -26, "vs_200": -126},
-  "integrity": "PASS_AT_BASELINE_688",
+  "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "active_wip": 0,
@@ -55,12 +56,12 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "fresh discovery remained 100% of the research stream; replay/backlog/recovery remained 0%",
-    "excluded stale August signal rather than treating current crawl/index freshness as a new business-intent date",
-    "rejected ambiguous brand-to-legal linkages fail-closed and did not infer Russian legal entities for Hunter Technology or YARD",
-    "qualified AО «ТЕЛЕОФИС» through exact official legal identifiers, strict scale, dated Russian-language commercial-director signal, real president/LPR and published practical corporate contacts",
-    "performed targeted repo dedup by INN 7726593280, OGRN 1087746486585 and teleofis.ru before safe-write; connector search returned no matches",
+    "excluded stale August vacancy evidence instead of treating current crawl/index freshness as a new signal",
+    "rejected ambiguous brand-to-legal linkages fail-closed and did not infer missing Russian legal entities",
+    "qualified AО «ТЕЛЕОФИС» to evidence-ready through exact official legal identifiers, strict scale, dated Russian-language commercial-director signal, real president/LPR and published practical corporate contacts",
+    "performed targeted connector-side dedup by INN 7726593280, OGRN 1087746486585 and teleofis.ru; no matches were returned",
     "created complete four-file increment group N5K-20260908-776 with exact canonical headers and no WIP rows",
-    "merge receipt had not appeared after repeated targeted reads; therefore no company was counted as net_new and canonical/contactable remain 688/688 at report time",
-    "active_wip=0 and new_discovery_allowed=true"
+    "authoritative repo-side merge returned DEDUP_NOOP for both INN 7726593280 and OGRN 1087746486585; company was not counted as net_new",
+    "canonical/contactable remain 688/688 with zero orphan contacts/evidence; active_wip=0 and new_discovery_allowed=true"
   ]
 }
