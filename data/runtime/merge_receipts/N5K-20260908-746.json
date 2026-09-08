@@ -1,0 +1,25 @@
+{
+  "increment": "N5K-20260908-746",
+  "status": "MERGED",
+  "added_count": 1,
+  "added_lead_ids": [
+    "n5k-0746-003"
+  ],
+  "duplicate_count": 2,
+  "duplicate_reasons": {
+    "N5K-0746-001": [
+      "inn:7731377855",
+      "ogrn:1177746793432"
+    ],
+    "N5K-0746-002": [
+      "inn:5032334982",
+      "ogrn:1215000115230"
+    ]
+  },
+  "integrity": {
+    "canonical_count": 676,
+    "contactable_count": 676,
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  }
+}
