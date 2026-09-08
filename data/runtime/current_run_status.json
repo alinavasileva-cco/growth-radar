@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260908-773",
-  "run_sequence": 773,
+  "run_id": "N5K-20260908-774",
+  "run_sequence": 774,
   "campaign_id": "new_5000",
   "status": "COMPLETE_MERGED",
   "stage": "RUN_COMPLETE_PHYSICAL_GROWTH",
-  "baseline": 685,
+  "baseline": 686,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,17 +32,17 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260908-773.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260908-774.json",
   "net_new": 1,
-  "physically_added_companies": ["ООО «ТРАНСПРОМСТРОЙ»"],
-  "current_canonical_count": 686,
-  "current_contactable_count": 686,
-  "remaining_to_5000": 4314,
+  "physically_added_companies": ["ООО «ВЕРТРО»"],
+  "current_canonical_count": 687,
+  "current_contactable_count": 687,
+  "remaining_to_5000": 4313,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 fresh physically merged (100%)",
   "exclusion_reasons": {},
-  "net_new_24h": 72,
-  "daily_target_deviation": {"vs_100": -28, "vs_200": -128},
+  "net_new_24h": 73,
+  "daily_target_deviation": {"vs_100": -27, "vs_200": -127},
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -51,12 +51,12 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "fresh discovery remained 100% of the research stream; replay/backlog/recovery remained 0%",
-    "rotated to a fresh Russian commercial-director vacancy outside the saturated prior candidate set",
-    "qualified ООО «ТРАНСПРОМСТРОЙ» through exact official-site legal linkage, strict scale, dated full-text S1, real CEO/owners and published practical contacts",
-    "performed targeted repo dedup by INN 7729791219 and OGRN 1147748015821 before safe-write; connector search returned no matches",
-    "created complete four-file increment group N5K-20260908-773 with exact canonical headers and no WIP rows",
+    "rotated to a fresh Russian industrial B2B sales-director vacancy published on 2026-09-08",
+    "qualified ООО «ВЕРТРО» through exact official-site legal linkage, strict scale, dated full-text S1, real CEO/private owners and published practical contacts",
+    "performed targeted repo dedup by INN 7728692222 and OGRN 1097746047277 before safe-write; connector search returned no matches",
+    "created complete four-file increment group N5K-20260908-774 with exact canonical headers and no WIP rows",
     "authoritative repo-side receipt returned MERGED with added_count=1 and duplicate_count=0",
-    "canonical/contactable are 686/686 with zero orphan contacts/evidence; active_wip=0 and new_discovery_allowed=true"
+    "canonical/contactable are 687/687 with zero orphan contacts/evidence; active_wip=0 and new_discovery_allowed=true"
   ],
-  "report": "reports/N5K-20260908-773.md"
+  "report": "reports/N5K-20260908-774.md"
 }
