@@ -1,25 +1,25 @@
 {
-  "run_id": "N5K-20260908-782",
-  "run_sequence": 782,
+  "run_id": "N5K-20260909-783",
+  "run_sequence": 783,
   "campaign_id": "new_5000",
-  "status": "COMPLETE_MERGED",
-  "stage": "RUN_COMPLETE_PHYSICAL_GROWTH_CONFIRMED",
-  "baseline": 690,
-  "fresh_discovery_count": 1,
+  "status": "COMPLETE_PENDING_MERGE",
+  "stage": "RUN_COMPLETE_INCREMENT_WRITTEN_AWAITING_RECEIPT",
+  "baseline": 691,
+  "fresh_discovery_count": 2,
   "replay_count": 0,
-  "fully_dispositioned": 1,
+  "fully_dispositioned": 2,
   "funnel": {
-    "legal_pass": 1,
+    "legal_pass": 2,
     "scale_pass": 1,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
     "duplicates": 0,
-    "excluded": 0
+    "excluded": 1
   },
   "duplicates": 0,
-  "excluded": 0,
+  "excluded": 1,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "cycle_leads": 1,
@@ -31,16 +31,18 @@
     "final_run_contacts": 2,
     "final_run_evidence": 5
   },
-  "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260908-782.json",
-  "net_new": 1,
-  "physically_added_companies": ["N5K-0782-001"],
+  "merge_receipt_status": "PENDING",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260909-783.json",
+  "net_new": 0,
+  "physically_added_companies": [],
   "current_canonical_count": 691,
   "current_contactable_count": 691,
   "remaining_to_5000": 4309,
   "duplicate_rate": 0.0,
-  "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%)",
-  "exclusion_reasons": {},
+  "source_yield": "1/2 fresh evidence-ready (50%); 0/2 physically merged at report time (0%)",
+  "exclusion_reasons": {
+    "SCALE_GATE_NOT_PROVEN": 1
+  },
   "net_new_24h": 77,
   "daily_target_deviation": {"vs_100": -23, "vs_200": -123},
   "integrity": "PASS",
@@ -51,10 +53,10 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "fresh discovery remained 100% of research flow; no replay/backlog/recovery used",
-    "preceding run N5K-20260908-781 reached evidence-ready but authoritative repo-side dedup returned DEDUP_NOOP on INN 7706428016 and OGRN 1157746939778; it was not counted net_new",
-    "fresh discovery continued immediately after DEDUP_NOOP without blocking the cycle",
-    "Кавказский Бювет passed exact legal, scale, dated S1 full-text signal, real owner/CEO/LPR, published contact and final targeted dedup gates",
-    "complete four-file increment N5K-20260908-782 was written with canonical headers; authoritative receipt returned MERGED added_count=1 duplicate_count=0",
-    "canonical/contactable are 691/691 with zero orphan contacts/evidence; active_wip=0 and new_discovery_allowed=true"
+    "АО УФАНЕТ passed exact legal, strict scale, dated S1 full-text signal, real CEO/LPR, published corporate contact and targeted repo dedup gates",
+    "complete four-file increment N5K-20260909-783 was written with canonical headers",
+    "merge workflow run 643 is pending; no receipt exists yet, therefore net_new remains 0 and canonical/contactable remain 691/691",
+    "fresh discovery continued while receipt was pending; Группа МЕТТАТРОН was checked end-to-end and excluded fail-closed because the current strict scale gate could not be confirmed from available evidence without weakening criteria",
+    "active_wip=0 and new_discovery_allowed=true"
   ]
 }
