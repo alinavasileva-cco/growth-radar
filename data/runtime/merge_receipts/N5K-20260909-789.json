@@ -1,0 +1,16 @@
+{
+  "increment": "N5K-20260909-789",
+  "status": "MERGED",
+  "added_count": 1,
+  "added_lead_ids": [
+    "n5k-0789-001"
+  ],
+  "duplicate_count": 0,
+  "duplicate_reasons": {},
+  "integrity": {
+    "canonical_count": 694,
+    "contactable_count": 694,
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  }
+}
