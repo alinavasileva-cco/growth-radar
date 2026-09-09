@@ -1,108 +1,54 @@
 {
-  "generated_at": "2026-09-04T12:22:08+03:00",
+  "generated_at": "2026-09-09T19:03:00+03:00",
   "campaign_id": "new_5000",
-  "latest_completed_run_id": "N5K-20260903-609",
-  "current_run_id": "N5K-20260904-629",
-  "current_run_status": "UNDERDONE_RECOVERY_REQUIRED",
-  "canonical_pool_verified": 614,
-  "contactable_verified": 614,
+  "latest_completed_run_id": "N5K-20260909-836",
+  "current_run_id": null,
+  "current_run_status": "COMPLETE_MERGED",
+  "canonical_pool_verified": 709,
+  "contactable_verified": 709,
   "qualified_staged_not_counted": 0,
   "total_target": 5000,
-  "remaining_to_target": 4386,
+  "remaining_to_target": 4291,
   "orphan_contacts": 0,
   "orphan_evidence": 0,
   "integrity_status": "PASS",
   "outreach_sent": 0,
-  "blocker": "RAW_BELOW_120_RECOVERY_REQUIRED",
-  "completion_gate": {
-    "minimum_authoritative_raw": 120,
-    "raw_distinct": 43,
-    "external_technical_limitation_proven": false,
-    "passed": false
+  "new_discovery_allowed": true,
+  "active_wip": 0,
+  "net_new_24h": 95,
+  "run_836": {
+    "baseline": 708,
+    "fresh_discovery_count": 1,
+    "replay_count": 0,
+    "fully_dispositioned": 1,
+    "legal_pass": 1,
+    "scale_pass": 1,
+    "signal_pass": 1,
+    "lpr_pass": 1,
+    "contact_pass": 1,
+    "duplicates": 0,
+    "excluded": 0,
+    "qualified_evidence_ready": 1,
+    "increment_rows_written": {"leads":1,"contactable":1,"contacts":2,"evidence":5},
+    "merge_receipt_status": "MERGED",
+    "physically_added_companies": ["Золотой электрод / ООО «ЗОЛОТОЙ ЭЛЕКТРОД»"],
+    "net_new": 1,
+    "canonical_count": 709,
+    "contactable_count": 709,
+    "remaining_to_5000": 4291,
+    "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%)",
+    "exclusion_reasons": {},
+    "integrity": "PASS",
+    "orphan_contacts": 0,
+    "orphan_evidence": 0,
+    "active_wip": 0,
+    "new_discovery_allowed": true,
+    "outreach_sent": 0
   },
-  "run_629": {
-    "raw_discovered": 43,
-    "fast_gate_passed": 14,
-    "size_check_passed": 14,
-    "legal_match_passed": 10,
-    "signal_confirmed": 8,
-    "lpr_identified": 5,
-    "contact_route_found": 3,
-    "qualified": 1,
-    "physically_integrated": 1,
-    "duplicates": 2,
-    "excluded": 40,
-    "lane_metrics": [
-      {
-        "lane": "regional_new_production_central",
-        "raw": 6,
-        "duplicates_early_rejects": 4,
-        "qualified": 1,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "industrial_expansion_northwest",
-        "raw": 5,
-        "duplicates_early_rejects": 3,
-        "qualified": 1,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "robotics_automation",
-        "raw": 5,
-        "duplicates_early_rejects": 4,
-        "qualified": 0,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "export_international_expansion",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
-        "qualified": 0,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "food_fmcg_scale",
-        "raw": 4,
-        "duplicates_early_rejects": 4,
-        "qualified": 0,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "packaging_materials",
-        "raw": 4,
-        "duplicates_early_rejects": 3,
-        "qualified": 1,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "regional_industrial_volga",
-        "raw": 5,
-        "duplicates_early_rejects": 5,
-        "qualified": 0,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "moscow_region_new_sites",
-        "raw": 4,
-        "duplicates_early_rejects": 3,
-        "qualified": 1,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "management_commercial_transformation",
-        "raw": 3,
-        "duplicates_early_rejects": 3,
-        "qualified": 0,
-        "saturation_rotations": 0
-      },
-      {
-        "lane": "regional_investment_projects",
-        "raw": 3,
-        "duplicates_early_rejects": 3,
-        "qualified": 0,
-        "saturation_rotations": 0
-      }
-    ]
+  "preceding_dedup_noop": {
+    "run_id": "N5K-20260909-835",
+    "company": "CENTEC / ООО «ПРОМА»",
+    "status": "DEDUP_NOOP",
+    "duplicate_reasons": ["inn:7842355783","ogrn:1077847231780"]
   }
 }
