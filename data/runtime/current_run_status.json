@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260910-892",
-  "run_sequence": 892,
+  "run_id": "N5K-20260910-893",
+  "run_sequence": 893,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
-  "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 732,
+  "stage": "RUN_COMPLETE_DEDUP_NOOP",
+  "baseline": 733,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -15,32 +15,34 @@
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 0,
+    "duplicates": 1,
     "excluded": 0
   },
-  "duplicates": 0,
+  "duplicates": 1,
   "excluded": 0,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "cycle_leads": 1,
     "cycle_contactable": 1,
-    "cycle_contacts": 2,
+    "cycle_contacts": 1,
     "cycle_evidence": 5,
     "final_run_leads": 1,
     "final_run_contactable": 1,
-    "final_run_contacts": 2,
+    "final_run_contacts": 1,
     "final_run_evidence": 5
   },
-  "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-892.json",
-  "net_new": 1,
-  "physically_added_companies": ["Venture Impex / ООО «ВЕНЧУР ИМПЕКС»"],
+  "merge_receipt_status": "DEDUP_NOOP",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-893.json",
+  "net_new": 0,
+  "physically_added_companies": [],
   "current_canonical_count": 733,
   "current_contactable_count": 733,
   "remaining_to_5000": 4267,
-  "duplicate_rate": 0.0,
-  "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%); authoritative duplicates 0/1",
-  "exclusion_reasons": {},
+  "duplicate_rate": 1.0,
+  "source_yield": "1/1 fresh evidence-ready (100%); 0/1 physically merged (0%); authoritative duplicates 1/1",
+  "exclusion_reasons": {
+    "final_repo_dedup": 1
+  },
   "net_new_24h": 119,
   "daily_target_deviation": {
     "vs_100": 19,
@@ -53,10 +55,11 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "Fresh discovery remained enabled for the full research cycle; replay_count=0.",
-    "N5K-20260910-892 used a current Russian-language vacancy published 2026-09-10 with direct commercial-strategy, zero-to-one distribution, Retail/B2B/HoReCa, margin-management, forecasting and team-building intent.",
-    "Legal/private status, INN/OGRN, 2025 scale, CEO/100% owner LPR and published practical corporate contacts were verified with targeted sources.",
-    "Targeted pre-write dedup by INN 9703048309, OGRN 1217700436678 and exact legal name returned no repository match; authoritative repo-side final dedup confirmed duplicate_count=0.",
-    "Receipt N5K-20260910-892 status MERGED added_count=1; canonical/contactable are 733/733 with zero orphans and new_discovery_allowed=true."
+    "Fresh discovery remained enabled; replay_count=0.",
+    "N5K-20260910-893 used a current Russian-language B2B sales-leadership vacancy with direct funnel, CRM, analytics, planning, margin and sales-system intent.",
+    "Legal status, INN/OGRN, 2025 scale, current director/owner LPR and published practical corporate email were verified with targeted sources.",
+    "Targeted pre-write repository search by INN 6318241432 and OGRN 1146318002797 returned no indexed match, but authoritative repo-side final dedup found the existing canonical record by both identifiers.",
+    "Receipt N5K-20260910-893 returned DEDUP_NOOP added_count=0 duplicate_count=1; canonical/contactable remain 733/733 with zero orphans.",
+    "Because duplicate_rate exceeded 50%, fresh discovery was immediately rotated to additional Samara/Ekaterinburg candidates rather than replay or recovery; no subsequent candidate was written without completing all gates."
   ]
 }
