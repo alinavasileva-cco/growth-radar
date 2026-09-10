@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260910-854",
-  "run_sequence": 854,
+  "run_id": "N5K-20260910-856",
+  "run_sequence": 856,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 717,
+  "baseline": 718,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,17 +32,17 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-854.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-856.json",
   "net_new": 1,
-  "physically_added_companies": ["ФУРКОМПЛЕКТ / ООО «ФУРКОМПЛЕКТ»"],
-  "current_canonical_count": 718,
-  "current_contactable_count": 718,
-  "remaining_to_5000": 4282,
+  "physically_added_companies": ["Сибирский Банный Чан / ООО «СБЧ»"],
+  "current_canonical_count": 719,
+  "current_contactable_count": 719,
+  "remaining_to_5000": 4281,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%)",
   "exclusion_reasons": {},
-  "net_new_24h": 104,
-  "daily_target_deviation": {"vs_100": 4, "vs_200": -96},
+  "net_new_24h": 105,
+  "daily_target_deviation": {"vs_100": 5, "vs_200": -95},
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
@@ -50,10 +50,9 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "N5K-20260910-852 and N5K-20260910-853 returned DEDUP_NOOP by INN+OGRN and were not counted.",
-    "After two consecutive zero-net-new completed runs, diagnosis was limited to duplicate/source routing and fresh discovery continued in the same operating cycle.",
-    "Source/region/query rotated to fresh southern-region Russian B2B sales vacancies.",
-    "ФУРКОМПЛЕКТ passed active private legal entity, strict scale, fresh dated Russian S1 sales-expansion signal with full vacancy text, current CEO LPR, published official corporate contacts, and targeted pre-write dedup.",
-    "Authoritative repo-side receipt MERGED with added_count=1 and duplicate_count=0; canonical/contactable are 718/718 with zero orphans."
+    "N5K-20260910-855 returned DEDUP_NOOP by INN+OGRN for ООО «КУЗБАССНЕФТЕТРАНС» and was not counted.",
+    "Fresh discovery continued immediately after DEDUP_NOOP without global blocking.",
+    "Сибирский Банный Чан / ООО «СБЧ» passed active private legal entity, strict scale, fresh dated Russian S1 sales-management signal with full vacancy text, current director LPR, published official corporate contacts, and targeted pre-write dedup.",
+    "Authoritative repo-side receipt N5K-20260910-856 is MERGED with added_count=1 and duplicate_count=0; canonical/contactable are 719/719 with zero orphans."
   ]
 }
