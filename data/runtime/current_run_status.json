@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260910-884",
-  "run_sequence": 884,
+  "run_id": "N5K-20260910-885",
+  "run_sequence": 885,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 728,
+  "baseline": 729,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,19 +32,19 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-884.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-885.json",
   "net_new": 1,
-  "physically_added_companies": ["Санаторий Русь / ООО «САНАТОРИЙ «РУСЬ»"],
-  "current_canonical_count": 729,
-  "current_contactable_count": 729,
-  "remaining_to_5000": 4271,
+  "physically_added_companies": ["ЮЛК Альянс / ООО «ЮЛК-АЛЬЯНС»"],
+  "current_canonical_count": 730,
+  "current_contactable_count": 730,
+  "remaining_to_5000": 4270,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%); authoritative duplicates 0/1",
   "exclusion_reasons": {},
-  "net_new_24h": 115,
+  "net_new_24h": 116,
   "daily_target_deviation": {
-    "vs_100": 15,
-    "vs_200": -85
+    "vs_100": 16,
+    "vs_200": -84
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -53,10 +53,10 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "After three consecutive DEDUP_NOOP runs, discovery was rotated to a fresh regional service-sector S1 vacancy without weakening qualification gates.",
-    "N5K-20260910-884 used a current Russian-language HeadHunter-derived full-text vacancy dated 2026-09-07 with direct CRM, funnel, analytics, sales-process and growth intent.",
-    "Exact legal linkage, private status, strict scale, current director/LPR, physical-person owner and official corporate contacts were independently verified before writing.",
-    "Targeted pre-write dedup by INN, OGRN and brand+domain returned no match; repo-side final dedup confirmed duplicate_count=0.",
-    "Receipt N5K-20260910-884 status MERGED added_count=1; canonical/contactable are 729/729 with zero orphans and new_discovery_allowed=true."
+    "Fresh discovery remained enabled and was rotated into a current Krasnodar B2B fuel-sales S1 vacancy without weakening qualification gates.",
+    "N5K-20260910-885 used a current Russian-language vacancy dated 2026-09-03 with direct sales-volume, client-base, KPI, margin-plan and commercial-team management intent.",
+    "Exact legal identity, private status, strict scale, current director/LPR, physical-person owners and published practical corporate contacts were independently verified before writing.",
+    "Targeted pre-write dedup by INN, OGRN, exact legal name and domain returned no match; repo-side final dedup confirmed duplicate_count=0.",
+    "Receipt N5K-20260910-885 status MERGED added_count=1; canonical/contactable are 730/730 with zero orphans and new_discovery_allowed=true."
   ]
 }
