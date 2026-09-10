@@ -1,9 +1,9 @@
 {
-  "run_id": "N5K-20260910-883",
-  "run_sequence": 883,
+  "run_id": "N5K-20260910-884",
+  "run_sequence": 884,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
-  "stage": "RUN_COMPLETE_DEDUP_NOOP",
+  "stage": "RUN_COMPLETE_MERGED",
   "baseline": 728,
   "fresh_discovery_count": 1,
   "replay_count": 0,
@@ -15,10 +15,10 @@
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 1,
+    "duplicates": 0,
     "excluded": 0
   },
-  "duplicates": 1,
+  "duplicates": 0,
   "excluded": 0,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
@@ -31,22 +31,20 @@
     "final_run_contacts": 2,
     "final_run_evidence": 5
   },
-  "merge_receipt_status": "DEDUP_NOOP",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-883.json",
-  "net_new": 0,
-  "physically_added_companies": [],
-  "current_canonical_count": 728,
-  "current_contactable_count": 728,
-  "remaining_to_5000": 4272,
-  "duplicate_rate": 1.0,
-  "source_yield": "1/1 fresh evidence-ready (100%); 0/1 physically merged (0%); authoritative duplicate 1/1",
-  "exclusion_reasons": {
-    "final_repo_dedup": 1
-  },
-  "net_new_24h": 114,
+  "merge_receipt_status": "MERGED",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-884.json",
+  "net_new": 1,
+  "physically_added_companies": ["Санаторий Русь / ООО «САНАТОРИЙ «РУСЬ»"],
+  "current_canonical_count": 729,
+  "current_contactable_count": 729,
+  "remaining_to_5000": 4271,
+  "duplicate_rate": 0.0,
+  "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%); authoritative duplicates 0/1",
+  "exclusion_reasons": {},
+  "net_new_24h": 115,
   "daily_target_deviation": {
-    "vs_100": 14,
-    "vs_200": -86
+    "vs_100": 15,
+    "vs_200": -85
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -55,10 +53,10 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "Fresh Russian job-intent discovery remained enabled throughout; replay/recovery budget used: 0%.",
-    "N5K-20260910-881 and N5K-20260910-882 were consecutive authoritative DEDUP_NOOP runs, triggering emergency source/region/query rotation without weakening any qualification gate.",
-    "N5K-20260910-883 used a rotated same-day/very-recent Moscow top-management source and a direct S1 commercial director vacancy with full text, legal linkage, strict scale, current CEO/LPR and official corporate contacts.",
-    "Repo-side final dedup still found the candidate already canonical by both INN 7706428016 and OGRN 1157746939778; added_count=0 and canonical/contactable remain 728/728.",
-    "The technical safe-write path remained functional and integrity stayed PASS with zero orphan contacts/evidence; new_discovery_allowed remains true."
+    "After three consecutive DEDUP_NOOP runs, discovery was rotated to a fresh regional service-sector S1 vacancy without weakening qualification gates.",
+    "N5K-20260910-884 used a current Russian-language HeadHunter-derived full-text vacancy dated 2026-09-07 with direct CRM, funnel, analytics, sales-process and growth intent.",
+    "Exact legal linkage, private status, strict scale, current director/LPR, physical-person owner and official corporate contacts were independently verified before writing.",
+    "Targeted pre-write dedup by INN, OGRN and brand+domain returned no match; repo-side final dedup confirmed duplicate_count=0.",
+    "Receipt N5K-20260910-884 status MERGED added_count=1; canonical/contactable are 729/729 with zero orphans and new_discovery_allowed=true."
   ]
 }
