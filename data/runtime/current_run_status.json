@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260910-858",
-  "run_sequence": 858,
+  "run_id": "N5K-20260910-862",
+  "run_sequence": 862,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 720,
+  "baseline": 721,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,21 +32,21 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-858.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-862.json",
   "net_new": 1,
   "physically_added_companies": [
-    "Naturi Pharm / Натури Фарм / ООО «НАТУРИ ФАРМ»"
+    "NESCO / Неско Санкт-Петербург / АО «НЕСКО САНКТ-ПЕТЕРБУРГ»"
   ],
-  "current_canonical_count": 721,
-  "current_contactable_count": 721,
-  "remaining_to_5000": 4279,
+  "current_canonical_count": 722,
+  "current_contactable_count": 722,
+  "remaining_to_5000": 4278,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%)",
   "exclusion_reasons": {},
-  "net_new_24h": 107,
+  "net_new_24h": 108,
   "daily_target_deviation": {
-    "vs_100": 7,
-    "vs_200": -93
+    "vs_100": 8,
+    "vs_200": -92
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -56,8 +56,9 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "Fresh Russian job-intent discovery remained enabled throughout the run; replay/recovery budget used: 0%.",
-    "Naturi Pharm / ООО «НАТУРИ ФАРМ» passed targeted INN/OGRN dedup, active private legal linkage, strict scale gate, fresh dated Russian S1 COO signal with full vacancy text, current owner/CEO LPR, and published official corporate contacts.",
+    "NESCO / АО «НЕСКО САНКТ-ПЕТЕРБУРГ» passed targeted INN/OGRN dedup, active private legal linkage, strict scale gate, fresh dated Russian S1 sales-expansion signal with full vacancy text, current CEO LPR, and published official corporate contacts.",
     "Safe-write increment group contains all four canonical-schema files with no partial/WIP rows.",
-    "Authoritative repo-side receipt N5K-20260910-858 is MERGED with added_count=1 and duplicate_count=0; canonical/contactable are 721/721 with zero orphans."
+    "Authoritative repo-side receipt N5K-20260910-862 is MERGED with added_count=1 and duplicate_count=0; canonical/contactable are 722/722 with zero orphans.",
+    "Prior fresh candidates N5K-20260910-859 through N5K-20260910-861 returned DEDUP_NOOP on repo-side final dedup and were not counted; source/query was rotated without weakening qualification gates."
   ]
 }
