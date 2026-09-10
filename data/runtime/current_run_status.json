@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260911-904",
-  "run_sequence": 904,
+  "run_id": "N5K-20260911-907",
+  "run_sequence": 907,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
-  "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 736,
+  "stage": "RUN_COMPLETE_DEDUP_NOOP",
+  "baseline": 737,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -15,10 +15,10 @@
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 0,
+    "duplicates": 1,
     "excluded": 0
   },
-  "duplicates": 0,
+  "duplicates": 1,
   "excluded": 0,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
@@ -31,16 +31,18 @@
     "final_run_contacts": 2,
     "final_run_evidence": 5
   },
-  "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-904.json",
-  "net_new": 1,
-  "physically_added_companies": ["Политех-Инструмент / ООО «КОМПАНИЯ ПОЛИТЕХ-ИНСТРУМЕНТ»"],
+  "merge_receipt_status": "DEDUP_NOOP",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-907.json",
+  "net_new": 0,
+  "physically_added_companies": [],
   "current_canonical_count": 737,
   "current_contactable_count": 737,
   "remaining_to_5000": 4263,
-  "duplicate_rate": 0.0,
-  "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%); authoritative duplicates 0/1",
-  "exclusion_reasons": {},
+  "duplicate_rate": 1.0,
+  "source_yield": "1/1 fresh evidence-ready (100%); 0/1 physically merged (0%); authoritative duplicates 1/1",
+  "exclusion_reasons": {
+    "final_repo_dedup": 1
+  },
   "net_new_24h": 123,
   "daily_target_deviation": {
     "vs_100": 23,
@@ -54,10 +56,11 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "Fresh discovery remained enabled throughout; replay_count=0.",
-    "The immediately preceding fresh candidate N5K-20260911-903 returned DEDUP_NOOP by both INN and OGRN and was not counted; source/query pool was rotated because duplicate rate exceeded 50%.",
-    "Used a current Russian-language HH vacancy with direct S1 commercial intent: federal sales strategy, sales/customer/assortment analytics and growth points, sales growth, new product launches, team building, pricing and dealer policy.",
-    "Targeted pre-write searches by INN 5020052905 and OGRN 1075020004520 returned no indexed repository match.",
-    "Exact active private legal entity/linkage, strict scale, CEO/co-owner LPR and published practical corporate phone/email were verified with targeted official and independent registry/financial sources.",
-    "Repo-side receipt N5K-20260911-904 returned MERGED added_count=1 duplicate_count=0; canonical/contactable increased from 736/736 to 737/737 with zero orphans."
+    "Two preceding completed runs N5K-20260911-905 and N5K-20260911-906 returned DEDUP_NOOP, triggering emergency source/region/query rotation while preserving all qualification gates.",
+    "Rotated to a fresh Russian-language B2B project-sales vacancy for ООО СЕЛЕКТ in Kazan with direct project-funnel intent.",
+    "Targeted pre-write searches by INN 1657251098 and OGRN 1181690106509 returned no indexed repository match.",
+    "Exact active private legal entity/linkage, strict scale, owner/CEO LPR and published practical corporate phone/email were verified with targeted sources.",
+    "Repo-side final dedup returned DEDUP_NOOP by both INN and OGRN; candidate was not counted as net_new. Canonical/contactable remain 737/737 with zero orphans.",
+    "new_discovery_allowed remains true; duplicate saturation is isolated to the candidate/source pool and does not block future fresh discovery."
   ]
 }
