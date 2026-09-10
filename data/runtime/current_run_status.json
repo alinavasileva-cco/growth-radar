@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260910-902",
-  "run_sequence": 902,
+  "run_id": "N5K-20260911-904",
+  "run_sequence": 904,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 735,
+  "baseline": 736,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,19 +32,19 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-902.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-904.json",
   "net_new": 1,
-  "physically_added_companies": ["4Clinic / Проф Фарм / ООО «ПРОФ ФАРМ»"],
-  "current_canonical_count": 736,
-  "current_contactable_count": 736,
-  "remaining_to_5000": 4264,
+  "physically_added_companies": ["Политех-Инструмент / ООО «КОМПАНИЯ ПОЛИТЕХ-ИНСТРУМЕНТ»"],
+  "current_canonical_count": 737,
+  "current_contactable_count": 737,
+  "remaining_to_5000": 4263,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%); authoritative duplicates 0/1",
   "exclusion_reasons": {},
-  "net_new_24h": 122,
+  "net_new_24h": 123,
   "daily_target_deviation": {
-    "vs_100": 22,
-    "vs_200": -78
+    "vs_100": 23,
+    "vs_200": -77
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -54,9 +54,10 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "Fresh discovery remained enabled throughout; replay_count=0.",
-    "Used a current Russian-language HH vacancy with direct S1 commercial-system intent: revenue ownership, plan decomposition, pipeline management, CRM/Bitrix24, conversion, average ticket, hiring and forecasting.",
-    "Targeted pre-write searches by INN 7723395515 and OGRN 1157746542524 returned no indexed repository match.",
-    "Exact legal entity/linkage, 2025 scale, CEO/sole owner LPR and published practical corporate phone/email were verified with targeted official and registry/financial sources.",
-    "Repo-side receipt N5K-20260910-902 returned MERGED added_count=1 duplicate_count=0; canonical/contactable increased from 735/735 to 736/736 with zero orphans."
+    "The immediately preceding fresh candidate N5K-20260911-903 returned DEDUP_NOOP by both INN and OGRN and was not counted; source/query pool was rotated because duplicate rate exceeded 50%.",
+    "Used a current Russian-language HH vacancy with direct S1 commercial intent: federal sales strategy, sales/customer/assortment analytics and growth points, sales growth, new product launches, team building, pricing and dealer policy.",
+    "Targeted pre-write searches by INN 5020052905 and OGRN 1075020004520 returned no indexed repository match.",
+    "Exact active private legal entity/linkage, strict scale, CEO/co-owner LPR and published practical corporate phone/email were verified with targeted official and independent registry/financial sources.",
+    "Repo-side receipt N5K-20260911-904 returned MERGED added_count=1 duplicate_count=0; canonical/contactable increased from 736/736 to 737/737 with zero orphans."
   ]
 }
