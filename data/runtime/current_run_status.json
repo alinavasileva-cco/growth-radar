@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260910-874",
-  "run_sequence": 874,
+  "run_id": "N5K-20260910-876",
+  "run_sequence": 876,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 725,
+  "baseline": 726,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,21 +32,21 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-874.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-876.json",
   "net_new": 1,
   "physically_added_companies": [
-    "СкадаСистемы / ООО «СКАДАСИСТЕМЫ»"
+    "Геркулес-Сибирь / ООО «ГЕРКУЛЕС-СИБИРЬ»"
   ],
-  "current_canonical_count": 726,
-  "current_contactable_count": 726,
-  "remaining_to_5000": 4274,
+  "current_canonical_count": 727,
+  "current_contactable_count": 727,
+  "remaining_to_5000": 4273,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%)",
   "exclusion_reasons": {},
-  "net_new_24h": 112,
+  "net_new_24h": 113,
   "daily_target_deviation": {
-    "vs_100": 12,
-    "vs_200": -88
+    "vs_100": 13,
+    "vs_200": -87
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -55,10 +55,10 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "Fresh Russian job-intent discovery remained enabled throughout the run; replay/recovery budget used: 0%.",
-    "Immediately preceding fresh candidate CENTEC / ООО «ПРОМА» was rejected by authoritative repo-side final dedup in N5K-20260910-873 with DEDUP_NOOP on both INN and OGRN; it was not counted as net_new.",
-    "ООО «СКАДАСИСТЕМЫ» passed targeted INN/OGRN/domain dedup, exact employer-to-legal linkage, strict scale gate, dated current Russian S1 signal with full vacancy text, current CEO LPR, and published official corporate contacts.",
+    "Fresh Russian job-intent discovery remained enabled throughout; replay/recovery budget used: 0%.",
+    "Immediately preceding fresh candidate Агро-Спутник / ООО «АГРО - СПУТНИК» was rejected by authoritative repo-side final dedup in N5K-20260910-875 with DEDUP_NOOP on both INN and OGRN and was not counted as net_new.",
+    "ООО «ГЕРКУЛЕС-СИБИРЬ» passed targeted INN/OGRN dedup, official employer-to-legal linkage, strict scale gate, dated current Russian S1 signal from the official career page, current director LPR, and published official corporate contacts.",
     "Safe-write increment group contains all four canonical-schema files with no partial/WIP rows.",
-    "Authoritative repo-side receipt N5K-20260910-874 is MERGED with added_count=1 and duplicate_count=0; canonical/contactable are 726/726 with zero orphans."
+    "Authoritative repo-side receipt N5K-20260910-876 is MERGED with added_count=1 and duplicate_count=0; canonical/contactable are 727/727 with zero orphans."
   ]
 }
