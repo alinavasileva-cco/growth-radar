@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260910-885",
-  "run_sequence": 885,
+  "run_id": "N5K-20260910-890",
+  "run_sequence": 890,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 729,
+  "baseline": 730,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,19 +32,19 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-885.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260910-890.json",
   "net_new": 1,
-  "physically_added_companies": ["ЮЛК Альянс / ООО «ЮЛК-АЛЬЯНС»"],
-  "current_canonical_count": 730,
-  "current_contactable_count": 730,
-  "remaining_to_5000": 4270,
+  "physically_added_companies": ["АКВАСТОК / ООО «АКВАСТОК»"],
+  "current_canonical_count": 731,
+  "current_contactable_count": 731,
+  "remaining_to_5000": 4269,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%); authoritative duplicates 0/1",
   "exclusion_reasons": {},
-  "net_new_24h": 116,
+  "net_new_24h": 117,
   "daily_target_deviation": {
-    "vs_100": 16,
-    "vs_200": -84
+    "vs_100": 17,
+    "vs_200": -83
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -53,10 +53,10 @@
   "new_discovery_allowed": true,
   "outreach_sent": 0,
   "corrective_actions": [
-    "Fresh discovery remained enabled and was rotated into a current Krasnodar B2B fuel-sales S1 vacancy without weakening qualification gates.",
-    "N5K-20260910-885 used a current Russian-language vacancy dated 2026-09-03 with direct sales-volume, client-base, KPI, margin-plan and commercial-team management intent.",
-    "Exact legal identity, private status, strict scale, current director/LPR, physical-person owners and published practical corporate contacts were independently verified before writing.",
-    "Targeted pre-write dedup by INN, OGRN, exact legal name and domain returned no match; repo-side final dedup confirmed duplicate_count=0.",
-    "Receipt N5K-20260910-885 status MERGED added_count=1; canonical/contactable are 730/730 with zero orphans and new_discovery_allowed=true."
+    "After consecutive repo-side DEDUP_NOOP results, discovery source/region/query were rotated without weakening any qualification gate.",
+    "N5K-20260910-890 used a current Russian-language HH listing dated 2026-09-09 with direct B2B branch-sales growth, client-base expansion, analytics, standards and team-management intent.",
+    "Exact active private legal entity, strict scale, current owner/director/LPR and published official branch contacts were independently verified before writing.",
+    "Targeted pre-write dedup by INN and OGRN returned no connector-search match; authoritative repo-side final dedup confirmed duplicate_count=0.",
+    "Receipt N5K-20260910-890 status MERGED added_count=1; canonical/contactable are 731/731 with zero orphans and new_discovery_allowed=true."
   ]
 }
