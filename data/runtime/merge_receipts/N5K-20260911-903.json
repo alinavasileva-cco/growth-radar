@@ -1,0 +1,19 @@
+{
+  "increment": "N5K-20260911-903",
+  "status": "DEDUP_NOOP",
+  "added_count": 0,
+  "added_lead_ids": [],
+  "duplicate_count": 1,
+  "duplicate_reasons": {
+    "N5K-0903-001": [
+      "inn:7724865932",
+      "ogrn:1137746167173"
+    ]
+  },
+  "integrity": {
+    "canonical_count": 736,
+    "contactable_count": 736,
+    "orphan_contacts": 0,
+    "orphan_evidence": 0
+  }
+}
