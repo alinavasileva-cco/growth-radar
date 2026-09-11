@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260911-909",
-  "run_sequence": 909,
+  "run_id": "N5K-20260911-910",
+  "run_sequence": 910,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 737,
+  "baseline": 738,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,19 +32,19 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-909.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-910.json",
   "net_new": 1,
-  "physically_added_companies": ["ИнфоСофт / АО «АВТОМАТИЗАЦИЯ БИЗНЕСА»"],
-  "current_canonical_count": 738,
-  "current_contactable_count": 738,
-  "remaining_to_5000": 4262,
+  "physically_added_companies": ["ГрандМоторс / АО «ГРАНДМОТОРС»"],
+  "current_canonical_count": 739,
+  "current_contactable_count": 739,
+  "remaining_to_5000": 4261,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%); authoritative duplicates 0/1",
   "exclusion_reasons": {},
-  "net_new_24h": 124,
+  "net_new_24h": 125,
   "daily_target_deviation": {
-    "vs_100": 24,
-    "vs_200": -76
+    "vs_100": 25,
+    "vs_200": -75
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -54,11 +54,11 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "Fresh discovery remained enabled throughout; replay_count=0.",
-    "N5K-20260911-907 and N5K-20260911-908 were consecutive DEDUP_NOOP runs, triggering emergency source/region/query rotation while preserving all qualification gates.",
-    "Rotated from the saturated Kazan/Ekaterinburg industrial-sales pool to a fresh Novosibirsk B2B IT-sales vacancy for ИнфоСофт / АО «АВТОМАТИЗАЦИЯ БИЗНЕСА».",
-    "Targeted pre-write searches by INN 5406807972, OGRN 1205400040130 and exact legal name returned no indexed repository match.",
-    "Exact active legal entity/linkage, strict scale, director/LPR and published practical corporate phone/email were verified with targeted sources.",
-    "Repo-side final dedup returned MERGED with added_count=1 and duplicate_count=0; canonical/contactable increased to 738/738 with zero orphans.",
+    "Rotated away from previously saturated pools and selected a fresh project-sales vacancy for ГрандМоторс.",
+    "Targeted pre-write searches by INN 7710548323 and OGRN 1047796485220 returned no indexed repository match.",
+    "Official company site confirmed exact legal linkage, INN/OGRN and published practical corporate phone/email.",
+    "Strict scale gate passed on 2025 revenue 2.283584 billion RUB; current CEO/LPR verified from current registry sources.",
+    "Repo-side final dedup returned MERGED with added_count=1 and duplicate_count=0; canonical/contactable increased to 739/739 with zero orphans.",
     "new_discovery_allowed remains true."
   ]
 }
