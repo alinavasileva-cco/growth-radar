@@ -1,25 +1,25 @@
 {
-  "run_id": "N5K-20260911-927",
-  "run_sequence": 927,
+  "run_id": "N5K-20260911-928",
+  "run_sequence": 928,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
-  "stage": "RUN_COMPLETE_DEDUP_NOOP",
+  "stage": "RUN_COMPLETE_MERGED",
   "baseline": 741,
-  "fresh_discovery_count": 1,
+  "fresh_discovery_count": 4,
   "replay_count": 0,
-  "fully_dispositioned": 1,
+  "fully_dispositioned": 4,
   "funnel": {
-    "legal_pass": 1,
+    "legal_pass": 4,
     "scale_pass": 1,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 1,
-    "excluded": 0
+    "duplicates": 0,
+    "excluded": 3
   },
-  "duplicates": 1,
-  "excluded": 0,
+  "duplicates": 0,
+  "excluded": 3,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "cycle_leads": 1,
@@ -31,22 +31,24 @@
     "final_run_contacts": 3,
     "final_run_evidence": 5
   },
-  "merge_receipt_status": "DEDUP_NOOP",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-927.json",
-  "net_new": 0,
-  "physically_added_companies": [],
-  "current_canonical_count": 741,
-  "current_contactable_count": 741,
-  "remaining_to_5000": 4259,
-  "duplicate_rate": 1.0,
-  "source_yield": "1/1 fresh evidence-ready (100%); 0/1 physically merged; 1/1 authoritative duplicate",
+  "merge_receipt_status": "MERGED",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-928.json",
+  "net_new": 1,
+  "physically_added_companies": [
+    "БЬЮТИ ТРЕНД РУС / ООО «БЬЮТИ ТРЕНД РУС»"
+  ],
+  "current_canonical_count": 742,
+  "current_contactable_count": 742,
+  "remaining_to_5000": 4258,
+  "duplicate_rate": 0.0,
+  "source_yield": "4 fresh candidates fully dispositioned; 1/4 evidence-ready (25%); 1/1 increment candidate physically merged (100%)",
   "exclusion_reasons": {
-    "final_repo_dedup": 1
+    "scale_gate": 3
   },
-  "net_new_24h": 127,
+  "net_new_24h": 128,
   "daily_target_deviation": {
-    "vs_100": 27,
-    "vs_200": -73
+    "vs_100": 28,
+    "vs_200": -72
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -56,11 +58,10 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "Fresh discovery remained enabled throughout; replay_count=0.",
-    "Runs 919 through 927 in this automation cycle were independently discovered and evidence-ready but authoritative repo-side final dedup returned DEDUP_NOOP; none was counted as net_new.",
-    "After duplicate rate exceeded 50%, source, region and query were repeatedly rotated across HH-linked sources and Rabota.ru without weakening qualification gates.",
-    "Run 927 analyzed a fresh Russian-language TPK Brik sales-leadership vacancy dated 2026-09-08 end-to-end and confirmed active private legal entity, strict scale, real director/LPR and published direct director contact.",
-    "A complete four-file increment group was written with no partial/WIP rows.",
-    "Repo-side receipt returned DEDUP_NOOP by both INN and OGRN; canonical/contactable remained 741/741 with zero orphans.",
-    "The merge pipeline is healthy; the recurring blocker is incomplete connector-side targeted visibility into large canonical masters, while authoritative runner-side dedup correctly prevents duplicate physical writes. Fresh discovery remains allowed."
+    "Discovery was rotated away from the saturated prior industrial pool into current sales-leadership vacancies in Moscow and adjacent B2B/retail segments.",
+    "Four fresh candidates were dispositioned. VIEN / ООО «НАТАЛИ - СТИЛЬ», ООО «ИНФРАТЕХ» and ООО «ИКСХАНТЕР» failed the strict scale gate and were excluded without weakening qualification criteria.",
+    "ООО «БЬЮТИ ТРЕНД РУС» passed legal, scale, dated S1 signal, LPR, practical contact and targeted pre-write dedup gates.",
+    "A complete four-file increment group was written with one lead, one contactable row, three contact rows and five evidence rows; no partial/WIP rows were included.",
+    "Repo-side final dedup and relational checks returned MERGED with added_count=1, duplicate_count=0, canonical/contactable 742/742 and zero orphans."
   ]
 }
