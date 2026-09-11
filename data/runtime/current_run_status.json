@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260911-914",
-  "run_sequence": 914,
+  "run_id": "N5K-20260911-918",
+  "run_sequence": 918,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 739,
+  "baseline": 740,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -32,19 +32,19 @@
     "final_run_evidence": 5
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-914.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-918.json",
   "net_new": 1,
-  "physically_added_companies": ["НПХ АмарантАгро / ООО НПХ «АМАРАНТАГРО»"],
-  "current_canonical_count": 740,
-  "current_contactable_count": 740,
-  "remaining_to_5000": 4260,
+  "physically_added_companies": ["НФ-Моторс / ООО «НФ-МОТОРС»"],
+  "current_canonical_count": 741,
+  "current_contactable_count": 741,
+  "remaining_to_5000": 4259,
   "duplicate_rate": 0.0,
   "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%)",
   "exclusion_reasons": {},
-  "net_new_24h": 126,
+  "net_new_24h": 127,
   "daily_target_deviation": {
-    "vs_100": 26,
-    "vs_200": -74
+    "vs_100": 27,
+    "vs_200": -73
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -54,11 +54,12 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "Fresh discovery remained enabled throughout; replay_count=0.",
-    "Runs 912 and 913 in the same automation cycle were evidence-ready but authoritative repo-side final dedup returned DEDUP_NOOP, so neither was counted as net_new.",
-    "Discovery was rotated again without weakening qualification gates, and a fresh Russian-language vacancy for NPH AmarantAgro updated 2026-09-09 was analyzed in full.",
-    "Targeted pre-write searches by INN 9701191423, OGRN 1217700603152, exact legal/brand name and domain amarion.ru returned no indexed repository match.",
-    "Current registry/BFO sources confirmed active private legal entity, strict scale, current CEO and owner; official holding contacts were published and linked to the legal entity.",
+    "Runs 915, 916 and 917 in the same automation cycle were evidence-ready but authoritative repo-side final dedup returned DEDUP_NOOP, so none was counted as net_new.",
+    "After the emergency threshold, source/region/segment were rotated again without weakening qualification gates.",
+    "A fresh Russian-language HH vacancy for NF-Motors dated 2026-09-10 was analyzed end-to-end.",
+    "Targeted pre-write searches by INN 3900009298, OGRN 1233900003700, exact legal name and domain nf-motors.ru returned no indexed repository match.",
+    "Current registry and financial sources confirmed active private legal entity, strict scale, current CEO/owner; official dealer sites provided published practical corporate contacts.",
     "A complete four-file increment group was written with no partial/WIP rows.",
-    "Repo-side receipt returned MERGED with added_count=1 duplicate_count=0; canonical/contactable increased to 740/740 with zero orphans."
+    "Repo-side receipt returned MERGED with added_count=1 duplicate_count=0; canonical/contactable increased to 741/741 with zero orphans."
   ]
 }
