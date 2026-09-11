@@ -1,10 +1,10 @@
 {
-  "run_id": "N5K-20260911-910",
-  "run_sequence": 910,
+  "run_id": "N5K-20260911-911",
+  "run_sequence": 911,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
-  "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 738,
+  "stage": "RUN_COMPLETE_DEDUP_NOOP",
+  "baseline": 739,
   "fresh_discovery_count": 1,
   "replay_count": 0,
   "fully_dispositioned": 1,
@@ -15,10 +15,10 @@
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 0,
+    "duplicates": 1,
     "excluded": 0
   },
-  "duplicates": 0,
+  "duplicates": 1,
   "excluded": 0,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
@@ -31,16 +31,18 @@
     "final_run_contacts": 2,
     "final_run_evidence": 5
   },
-  "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-910.json",
-  "net_new": 1,
-  "physically_added_companies": ["ГрандМоторс / АО «ГРАНДМОТОРС»"],
+  "merge_receipt_status": "DEDUP_NOOP",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-911.json",
+  "net_new": 0,
+  "physically_added_companies": [],
   "current_canonical_count": 739,
   "current_contactable_count": 739,
   "remaining_to_5000": 4261,
-  "duplicate_rate": 0.0,
-  "source_yield": "1/1 fresh evidence-ready (100%); 1/1 physically merged (100%); authoritative duplicates 0/1",
-  "exclusion_reasons": {},
+  "duplicate_rate": 1.0,
+  "source_yield": "1/1 fresh evidence-ready (100%); 0/1 physically merged; authoritative duplicates 1/1 (100%)",
+  "exclusion_reasons": {
+    "final_repo_dedup": 1
+  },
   "net_new_24h": 125,
   "daily_target_deviation": {
     "vs_100": 25,
@@ -54,11 +56,11 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "Fresh discovery remained enabled throughout; replay_count=0.",
-    "Rotated away from previously saturated pools and selected a fresh project-sales vacancy for ГрандМоторс.",
-    "Targeted pre-write searches by INN 7710548323 and OGRN 1047796485220 returned no indexed repository match.",
-    "Official company site confirmed exact legal linkage, INN/OGRN and published practical corporate phone/email.",
-    "Strict scale gate passed on 2025 revenue 2.283584 billion RUB; current CEO/LPR verified from current registry sources.",
-    "Repo-side final dedup returned MERGED with added_count=1 and duplicate_count=0; canonical/contactable increased to 739/739 with zero orphans.",
-    "new_discovery_allowed remains true."
+    "Selected a fresh Russian-language HeadHunter vacancy for TENET and analyzed the full vacancy text.",
+    "Targeted pre-write searches by INN 7206062613, OGRN 1237200006460 and domain tenet-zavod.ru returned no indexed repository match.",
+    "Official TENET site confirmed exact legal linkage, INN/OGRN and published practical corporate phone/email; current registry sources confirmed CEO/owner and strict scale evidence.",
+    "A complete four-file increment group was written with no partial/WIP rows.",
+    "Repo-side final dedup returned DEDUP_NOOP with duplicate_count=1 on both INN and OGRN; no company was counted as net_new.",
+    "Canonical/contactable remain 739/739 with zero orphans; new_discovery_allowed remains true."
   ]
 }
