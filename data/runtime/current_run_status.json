@@ -1,53 +1,52 @@
 {
-  "run_id": "N5K-20260911-929",
-  "run_sequence": 929,
+  "run_id": "N5K-20260911-930",
+  "run_sequence": 930,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
-  "stage": "RUN_COMPLETE_DEDUP_NOOP",
+  "stage": "RUN_COMPLETE_MERGED",
   "baseline": 742,
-  "fresh_discovery_count": 4,
+  "fresh_discovery_count": 1,
   "replay_count": 0,
-  "fully_dispositioned": 4,
+  "fully_dispositioned": 1,
   "funnel": {
-    "legal_pass": 4,
+    "legal_pass": 1,
     "scale_pass": 1,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
-    "duplicates": 1,
-    "excluded": 3
+    "duplicates": 0,
+    "excluded": 0
   },
-  "duplicates": 1,
-  "excluded": 3,
+  "duplicates": 0,
+  "excluded": 0,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "cycle_leads": 1,
     "cycle_contactable": 1,
-    "cycle_contacts": 4,
+    "cycle_contacts": 3,
     "cycle_evidence": 5,
     "final_run_leads": 1,
     "final_run_contactable": 1,
-    "final_run_contacts": 4,
+    "final_run_contacts": 3,
     "final_run_evidence": 5
   },
-  "merge_receipt_status": "DEDUP_NOOP",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-929.json",
-  "net_new": 0,
-  "physically_added_companies": [],
-  "current_canonical_count": 742,
-  "current_contactable_count": 742,
-  "remaining_to_5000": 4258,
-  "duplicate_rate": 0.25,
-  "source_yield": "4 fresh candidates fully dispositioned; 1/4 evidence-ready (25%); 0/1 increment candidate physically merged; authoritative duplicate 1/1",
-  "exclusion_reasons": {
-    "scale_gate": 3,
-    "final_repo_dedup": 1
-  },
-  "net_new_24h": 128,
+  "merge_receipt_status": "MERGED",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260911-930.json",
+  "net_new": 1,
+  "physically_added_companies": [
+    "ИТЦ РОККС / ROCCS / ООО «ЭЛТЕКС СОЛЮШЕНС»"
+  ],
+  "current_canonical_count": 743,
+  "current_contactable_count": 743,
+  "remaining_to_5000": 4257,
+  "duplicate_rate": 0.0,
+  "source_yield": "1 fresh candidate fully dispositioned; 1/1 evidence-ready (100%); 1/1 increment candidate physically merged (100%)",
+  "exclusion_reasons": {},
+  "net_new_24h": 129,
   "daily_target_deviation": {
-    "vs_100": 28,
-    "vs_200": -72
+    "vs_100": 29,
+    "vs_200": -71
   },
   "integrity": "PASS",
   "orphan_contacts": 0,
@@ -57,10 +56,10 @@
   "outreach_sent": 0,
   "corrective_actions": [
     "Fresh discovery remained enabled throughout; replay_count=0.",
-    "Four fresh candidates were dispositioned. Three failed the strict scale gate and were excluded without weakening qualification criteria.",
-    "ООО «МУСТАНГ ТЕХНОЛОГИИ КОРМЛЕНИЯ» passed legal, scale, dated S1 signal, LPR, practical contact and connector-side targeted dedup gates.",
-    "A complete four-file increment group was written with one lead, one contactable row, four contact rows and five evidence rows; no partial/WIP rows were included.",
-    "Repo-side final dedup returned DEDUP_NOOP because the company already existed by INN 7728763032 and OGRN 1117746089845. It was not counted as net_new.",
-    "Discovery was immediately rotated to a different region/segment for the next run; new_discovery_allowed remains true."
+    "After N5K-20260911-929 returned DEDUP_NOOP, discovery was rotated to B2B/B2G telecom integration in Novosibirsk without weakening qualification gates.",
+    "ИТЦ РОККС / ROCCS was linked to the current exact legal entity ООО «ЭЛТЕКС СОЛЮШЕНС» by INN 5402005576 and OGRN 1155476045670 on the official site and current registry sources.",
+    "The candidate passed strict scale, dated S1 signal, real owner/director/LPR and published practical contact gates; targeted pre-write searches by INN, OGRN, exact legal name and domain returned no indexed match.",
+    "A complete four-file increment group was written with one lead, one contactable row, three contact rows and five evidence rows; no partial/WIP rows were included.",
+    "Repo-side final dedup and relational checks returned MERGED with added_count=1, duplicate_count=0, canonical/contactable 743/743 and zero orphans."
   ]
 }
