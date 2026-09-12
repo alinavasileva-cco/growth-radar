@@ -1,0 +1,2 @@
+Run ID,Campaign ID,Started At,Completed At,Discovered,Size Check Passed,Legal Match Passed,Signal Confirmed,LPR Identified,Contact Route Found,Qualified,Duplicates,Excluded,Current Total,Remaining,Integrity,Commit SHA
+N5K-20260912-972,new_5000,2026-09-12T04:12:00+03:00,2026-09-12T04:20:00+03:00,1,1,1,1,1,1,1,0,0,757,4243,PASS,4a02b3e6cddab592a465e5c6e5042588e09ee79b
