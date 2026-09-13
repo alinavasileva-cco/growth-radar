@@ -1,25 +1,25 @@
 {
-  "run_id": "N5K-20260913-1567",
-  "run_sequence": 1567,
+  "run_id": "N5K-20260913-1569",
+  "run_sequence": 1569,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_MERGED",
-  "baseline": 794,
-  "fresh_discovery_count": 1,
+  "baseline": 795,
+  "fresh_discovery_count": 2,
   "replay_count": 0,
-  "fully_dispositioned": 1,
+  "fully_dispositioned": 2,
   "funnel": {
-    "legal_pass": 1,
+    "legal_pass": 2,
     "scale_pass": 1,
     "signal_pass": 1,
     "lpr_pass": 1,
     "contact_pass": 1,
     "qualified_evidence_ready": 1,
     "duplicates": 0,
-    "excluded": 0
+    "excluded": 1
   },
   "duplicates": 0,
-  "excluded": 0,
+  "excluded": 1,
   "qualified_evidence_ready": 1,
   "increment_rows_written": {
     "cycle_leads": 1,
@@ -32,21 +32,23 @@
     "final_run_evidence": 6
   },
   "merge_receipt_status": "MERGED",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260913-1567.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260913-1569.json",
   "net_new": 1,
   "physically_added_companies": [
-    "Птицефабрика Челябинская / Чепфа / АО «ПТИЦЕФАБРИКА ЧЕЛЯБИНСКАЯ»"
+    "Производственное объединение ЭнергоИндустрия / ООО «ПРОИЗВОДСТВЕННОЕ ОБЪЕДИНЕНИЕ ЭНЕРГОИНДУСТРИЯ»"
   ],
-  "current_canonical_count": 795,
-  "current_contactable_count": 795,
-  "remaining_to_5000": 4205,
+  "current_canonical_count": 796,
+  "current_contactable_count": 796,
+  "remaining_to_5000": 4204,
   "duplicate_rate": 0.0,
-  "source_yield": "fresh=1; legal_pass=1; scale_pass=1; signal_pass=1; lpr_pass=1; contact_pass=1; evidence_ready=1; physically_added=1; duplicate=0; excluded=0",
-  "exclusion_reasons": {},
-  "net_new_24h": 181,
-  "daily_target_deviation": {"vs_100": 81, "vs_200": -19},
-  "diagnosis": "Runs 1564, 1565 and 1566 returned authoritative DEDUP_NOOP on exact INN/OGRN while canonical integrity stayed healthy at 794/794. This confirmed discovery-pool saturation rather than a merge failure. Fresh discovery was rotated to a different industry/region in the same operating cycle; run 1567 passed all strict gates and repo-side final dedup and restored physical growth.",
-  "corrective_actions": "Continue fresh vacancy discovery with source, region and industry rotation. Treat repo-side final dedup as authoritative and keep strict legal, scale, signal, LPR and contact gates. Do not use duplicate candidates from 1564-1566 as active leads.",
+  "source_yield": "fresh=2; legal_pass=2; scale_pass=1; signal_pass=1; lpr_pass=1; contact_pass=1; evidence_ready=1; physically_added=1; duplicate=0; excluded=1",
+  "exclusion_reasons": {
+    "SCALE_FAIL": 1
+  },
+  "net_new_24h": 182,
+  "daily_target_deviation": {"vs_100": 82, "vs_200": -18},
+  "diagnosis": "Run 1568 returned authoritative DEDUP_NOOP on exact INN/OGRN while canonical integrity stayed healthy at 795/795. Fresh discovery continued immediately. The next fresh candidate, Завод генераторных установок ИСТОК, failed the strict scale gate and was excluded. Производственное объединение ЭнергоИндустрия then passed strict legal, scale, S1 signal, LPR, contact and repo-side final dedup gates and was physically merged.",
+  "corrective_actions": "Continue fresh Russian-language vacancy discovery with source, region and industry rotation. Treat repo-side final dedup as authoritative, keep strict legal/scale/signal/LPR/contact gates, and exclude below-scale candidates without weakening qualification criteria.",
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
