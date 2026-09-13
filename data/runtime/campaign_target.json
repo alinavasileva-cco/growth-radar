@@ -12,12 +12,12 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260913-1542",
+  "last_completed_run_id": "N5K-20260913-1543",
   "current_run_id": null,
-  "last_run_id": "N5K-20260913-1542",
-  "latest_completed_run": "N5K-20260913-1542",
-  "latest_attempted_run": "N5K-20260913-1542",
-  "latest_attempted_run_id": "N5K-20260913-1542",
+  "last_run_id": "N5K-20260913-1543",
+  "latest_completed_run": "N5K-20260913-1543",
+  "latest_attempted_run": "N5K-20260913-1543",
+  "latest_attempted_run_id": "N5K-20260913-1543",
   "latest_attempted_run_status": "DEDUP_NOOP",
   "canonical_integration_run_id": "N5K-20260913-1541",
   "hourly_baseline_count": 614,
@@ -44,5 +44,5 @@
     "resume_same_run": false,
     "new_discovery_allowed": true
   },
-  "note": "N5K-20260913-1542: fresh Russian-language S1 discovery for ООО «РСК ГРУПП», INN 1657223686, OGRN 1161690093608. Candidate passed LEGAL, SCALE, SIGNAL, LPR and CONTACT and complete increment was written, but authoritative repo-side final dedup returned DEDUP_NOOP by exact INN and OGRN. Canonical/contactable remain 787/787, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero."
+  "note": "N5K-20260913-1543: fresh Russian-language S1 discovery for ООО «ТЕСТ», INN 6163219914, OGRN 1206100019223. Candidate passed LEGAL, SCALE, SIGNAL, LPR and CONTACT, but authoritative repo-side final dedup returned DEDUP_NOOP by exact INN and OGRN. This was the second consecutive zero-net-new run; receipts confirm safe-write integrity PASS, so source saturation is the diagnosed blocker and discovery was rotated immediately. Canonical/contactable remain 787/787, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero."
 }
