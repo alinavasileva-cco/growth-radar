@@ -12,13 +12,13 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260914-1603",
+  "last_completed_run_id": "N5K-20260914-1610",
   "current_run_id": null,
-  "last_run_id": "N5K-20260914-1603",
-  "latest_completed_run": "N5K-20260914-1603",
-  "latest_attempted_run": "N5K-20260914-1603",
-  "latest_attempted_run_id": "N5K-20260914-1603",
-  "latest_attempted_run_status": "MERGED",
+  "last_run_id": "N5K-20260914-1610",
+  "latest_completed_run": "N5K-20260914-1610",
+  "latest_attempted_run": "N5K-20260914-1610",
+  "latest_attempted_run_id": "N5K-20260914-1610",
+  "latest_attempted_run_status": "DEDUP_NOOP",
   "canonical_integration_run_id": "N5K-20260914-1603",
   "hourly_baseline_count": 614,
   "hourly_net_new": 191,
@@ -44,5 +44,5 @@
     "resume_same_run": false,
     "new_discovery_allowed": true
   },
-  "note": "N5K-20260914-1603: fresh discovery continued after N5K-20260914-1602 returned DEDUP_NOOP for ООО «ВЕРТРО». ООО «ЮРВЕС» passed exact legal identity, strict 2025 scale, dated S1 wholesale/export sales signal, current CEO/LPR, official brand/legal linkage, published practical corporate contacts and repo-side final dedup. Receipt MERGED added_count=1. Canonical/contactable are 805/805, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero."
+  "note": "N5K-20260914-1610: fresh Stream Telecom / ООО «СЗК «ИНФОСВЯЗЬ» passed all evidence gates and a complete atomic increment was written. Authoritative repo-side final dedup returned DEDUP_NOOP on exact INN 7811404769 and OGRN 1089847160633. No physical growth: canonical/contactable remain 805/805, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero. Cycles 1604-1610 were evidence-ready but all exact canonical duplicates, so next discovery must rotate source/region/industry/query without weakening gates."
 }
