@@ -12,13 +12,13 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260914-1647",
+  "last_completed_run_id": "N5K-20260914-1652",
   "current_run_id": null,
-  "last_run_id": "N5K-20260914-1647",
-  "latest_completed_run": "N5K-20260914-1647",
-  "latest_attempted_run": "N5K-20260914-1647",
-  "latest_attempted_run_id": "N5K-20260914-1647",
-  "latest_attempted_run_status": "MERGED",
+  "last_run_id": "N5K-20260914-1652",
+  "latest_completed_run": "N5K-20260914-1652",
+  "latest_attempted_run": "N5K-20260914-1652",
+  "latest_attempted_run_id": "N5K-20260914-1652",
+  "latest_attempted_run_status": "DEDUP_NOOP",
   "canonical_integration_run_id": "N5K-20260914-1647",
   "hourly_baseline_count": 614,
   "hourly_net_new": 199,
@@ -44,5 +44,5 @@
     "resume_same_run": false,
     "new_discovery_allowed": true
   },
-  "note": "N5K-20260914-1647: after exact INN/OGRN DEDUP_NOOP on fresh evidence-ready runs 1645 and 1646, source/region/query family was rotated in the same automation cycle. Fresh candidate БумХимИнвест / ООО «БУМХИМИНВЕСТ» passed active legal, strict scale, dated direct S1 commercial-growth signal, current director Поляков Валерий Борисович, exact brand/legal linkage and practical published contacts. Complete atomic increment was written and authoritative repo-side final dedup returned MERGED with added_count=1. Canonical/contactable are 813/813, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero. Previous director Радаева Наталья Германовна was excluded as outdated."
+  "note": "N5K-20260914-1652: fresh candidate BISMAR / ООО «СТРОЙМАРКЕТ-05» passed active legal, strict scale, dated direct S1 signal that explicitly requires building the commercial block, current CEO, exact official brand/legal linkage and published corporate contacts. Complete atomic increment was written, but authoritative repo-side final dedup returned DEDUP_NOOP on exact INN/OGRN. Runs 1648-1652 were fresh evidence-ready candidates and all were already canonical; this confirms high saturation of the current source/query pools. Canonical/contactable remain 813/813, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero."
 }
