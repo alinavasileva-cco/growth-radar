@@ -1,6 +1,6 @@
 {
-  "run_id": "N5K-20260914-1623",
-  "run_sequence": 1623,
+  "run_id": "N5K-20260914-1624",
+  "run_sequence": 1624,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_DEDUP_NOOP",
@@ -32,7 +32,7 @@
     "final_run_evidence": 6
   },
   "merge_receipt_status": "DEDUP_NOOP",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260914-1623.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260914-1624.json",
   "net_new": 0,
   "physically_added_companies": [],
   "current_canonical_count": 807,
@@ -46,8 +46,8 @@
   },
   "net_new_24h": 193,
   "daily_target_deviation": {"vs_100": 93, "vs_200": -7},
-  "diagnosis": "Emergency fresh-discovery rotation reached a strong private industrial food producer, АО «Птицефабрика Челябинская»: private ownership OKFS 16, 2025 revenue 4.93bn RUB, dated direct S1 vacancy, current CEO, exact official legal linkage and published sales contacts. Repo-side final dedup nevertheless returned DEDUP_NOOP on exact INN 7430008205 and OGRN 1037401636139. Another fresh candidate was excluded on strict scale. Safe-write remains healthy; saturation remains the blocker.",
-  "corrective_actions": "Continue fresh discovery immediately with additional industry/query/source rotation, favor less obvious industrial B2B employers and direct S1 vacancies, keep strict targeted legal/scale/LPR/contact checks and no gate relaxation.",
+  "diagnosis": "Emergency rotation reached ООО МНПП «АНТРАКС», a less-obvious industrial B2B manufacturer with 2025 revenue above 1bn RUB, a dated direct S1 commercial-director vacancy, current director, official legal linkage and published sales contacts. The complete atomic increment group was written, but authoritative repo-side final dedup returned DEDUP_NOOP on exact INN 7735116935 and OGRN 1027735011468. A second fresh candidate was fail-closed on strict scale. Safe-write and integrity remain healthy; source/canonical saturation remains the blocker.",
+  "corrective_actions": "Continue fresh discovery immediately with further industry, region, query-family and job-board rotation; prioritize less obvious regional industrial B2B employers and direct S1 vacancies. Preserve strict qualification and targeted dedup; no gate relaxation.",
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
