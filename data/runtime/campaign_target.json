@@ -12,13 +12,13 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260914-1679",
+  "last_completed_run_id": "N5K-20260914-1680",
   "current_run_id": null,
-  "last_run_id": "N5K-20260914-1679",
-  "latest_completed_run": "N5K-20260914-1679",
-  "latest_attempted_run": "N5K-20260914-1679",
-  "latest_attempted_run_id": "N5K-20260914-1679",
-  "latest_attempted_run_status": "MERGED",
+  "last_run_id": "N5K-20260914-1680",
+  "latest_completed_run": "N5K-20260914-1680",
+  "latest_attempted_run": "N5K-20260914-1680",
+  "latest_attempted_run_id": "N5K-20260914-1680",
+  "latest_attempted_run_status": "DEDUP_NOOP",
   "canonical_integration_run_id": "N5K-20260914-1679",
   "hourly_baseline_count": 614,
   "hourly_net_new": 202,
@@ -44,5 +44,5 @@
     "resume_same_run": false,
     "new_discovery_allowed": true
   },
-  "note": "N5K-20260914-1679: after N5K-20260914-1678 returned authoritative DEDUP_NOOP on exact INN/OGRN, fresh discovery continued immediately in a rotated production/B2B query pool. GlassPro was linked to exact legal entity ООО «ГЛАССПРО», INN 4007021423, OGRN 1184027001025, passed strict legal, scale, dated S1, current LPR, practical contact and final dedup gates. Authoritative receipt returned MERGED added_count=1. Canonical/contactable are 816/816, integrity PASS, orphan counts zero, active WIP zero, outreach sent zero."
+  "note": "N5K-20260914-1680: fresh discovery produced strict evidence-ready ООО «ТЕНЕТ» (Тобольск), INN 7206062613 / OGRN 1237200006460, with S1 vacancy dated 2026-09-13, current owner/CEO and official practical contacts. Repo-side authoritative final dedup returned DEDUP_NOOP on exact INN/OGRN, so net_new=0 and canonical/contactable remain 816/816. Additional fresh candidate ООО ПК «ПРОФУД» was excluded at strict SCALE (2025 revenue 165.203m RUB). Integrity PASS, orphan counts zero, active WIP zero, outreach sent zero, new discovery remains allowed."
 }
