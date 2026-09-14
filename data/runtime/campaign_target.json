@@ -12,13 +12,13 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260914-1613",
+  "last_completed_run_id": "N5K-20260914-1617",
   "current_run_id": null,
-  "last_run_id": "N5K-20260914-1613",
-  "latest_completed_run": "N5K-20260914-1613",
-  "latest_attempted_run": "N5K-20260914-1613",
-  "latest_attempted_run_id": "N5K-20260914-1613",
-  "latest_attempted_run_status": "MERGED",
+  "last_run_id": "N5K-20260914-1617",
+  "latest_completed_run": "N5K-20260914-1617",
+  "latest_attempted_run": "N5K-20260914-1617",
+  "latest_attempted_run_id": "N5K-20260914-1617",
+  "latest_attempted_run_status": "DEDUP_NOOP",
   "canonical_integration_run_id": "N5K-20260914-1613",
   "hourly_baseline_count": 614,
   "hourly_net_new": 193,
@@ -44,5 +44,5 @@
     "resume_same_run": false,
     "new_discovery_allowed": true
   },
-  "note": "N5K-20260914-1613: fresh discovery found two candidates. ООО «ТАЛИВЕНДА» failed strict SCALE. ООО «АКТО» passed all gates. Initial Action failed on CSV quoting, the formatting defect was corrected, and authoritative repo-side merge returned MERGED, added_count=1. Canonical/contactable are 807/807, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero."
+  "note": "N5K-20260914-1617: fresh rotated discovery produced ООО «СЕЛЕКТ», which passed strict legal, scale, dated S1 signal, current LPR, brand-linkage and contact gates. Complete atomic increment was written, but authoritative repo-side merge returned DEDUP_NOOP on exact INN/OGRN. Canonical/contactable remain 807/807, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero. Runs 1614-1617 all ended exact final duplicates, so the next cycle must rotate source/region/query/industry without weakening gates."
 }
