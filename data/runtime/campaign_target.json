@@ -12,13 +12,13 @@
   "integrity_status": "PASS",
   "campaign_status": "ACTIVE",
   "namespace": "data/campaigns/new_5000",
-  "last_completed_run_id": "N5K-20260914-1637",
+  "last_completed_run_id": "N5K-20260914-1638",
   "current_run_id": null,
-  "last_run_id": "N5K-20260914-1637",
-  "latest_completed_run": "N5K-20260914-1637",
-  "latest_attempted_run": "N5K-20260914-1637",
-  "latest_attempted_run_id": "N5K-20260914-1637",
-  "latest_attempted_run_status": "MERGED",
+  "last_run_id": "N5K-20260914-1638",
+  "latest_completed_run": "N5K-20260914-1638",
+  "latest_attempted_run": "N5K-20260914-1638",
+  "latest_attempted_run_id": "N5K-20260914-1638",
+  "latest_attempted_run_status": "DEDUP_NOOP",
   "canonical_integration_run_id": "N5K-20260914-1637",
   "hourly_baseline_count": 614,
   "hourly_net_new": 197,
@@ -44,5 +44,5 @@
     "resume_same_run": false,
     "new_discovery_allowed": true
   },
-  "note": "N5K-20260914-1637: after exact duplicate saturation in immediately preceding fresh runs, region/query family was rotated without relaxing qualification gates. ООО «НТПЗ» passed exact active legal, strict scale, dated direct S1 new-sales-department signal, current CEO LPR, official brand/legal linkage and practical published corporate contact gates. Complete atomic increment merged successfully after authoritative repo-side final dedup and relational integrity checks. Canonical/contactable are 811/811, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero."
+  "note": "N5K-20260914-1638: fresh candidate B&B Кондитерская фабрика / АО «БИ-ЭНД-БИ (В&В)» passed active legal, strict scale, dated direct S1 commercial-scaling signal, current managing LPR, exact official brand/legal linkage and practical published contact gates. Complete atomic increment was written, but authoritative repo-side final dedup returned DEDUP_NOOP on exact INN/OGRN, so no company was physically added. Canonical/contactable remain 811/811, integrity PASS, orphan counts zero, active WIP zero, fresh discovery allowed, outreach sent zero."
 }
