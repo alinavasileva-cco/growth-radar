@@ -1,6 +1,6 @@
 {
-  "run_id": "N5K-20260914-1617",
-  "run_sequence": 1617,
+  "run_id": "N5K-20260914-1620",
+  "run_sequence": 1620,
   "campaign_id": "new_5000",
   "status": "COMPLETE",
   "stage": "RUN_COMPLETE_DEDUP_NOOP",
@@ -32,7 +32,7 @@
     "final_run_evidence": 6
   },
   "merge_receipt_status": "DEDUP_NOOP",
-  "merge_receipt": "data/runtime/merge_receipts/N5K-20260914-1617.json",
+  "merge_receipt": "data/runtime/merge_receipts/N5K-20260914-1620.json",
   "net_new": 0,
   "physically_added_companies": [],
   "current_canonical_count": 807,
@@ -45,8 +45,8 @@
   },
   "net_new_24h": 193,
   "daily_target_deviation": {"vs_100": 93, "vs_200": -7},
-  "diagnosis": "Fresh rotated discovery produced ООО «СЕЛЕКТ» with exact active Russian legal entity, strict 2025 scale, dated direct S1 project-B2B sales signal, current CEO/LPR, official brand-to-legal linkage and published practical corporate contacts. A complete atomic increment group was written. Authoritative repo-side final dedup returned DEDUP_NOOP on exact INN 1657251098 and OGRN 1181690106509, so the candidate is not counted as net_new. This followed three other fresh evidence-ready candidates in runs 1614-1616 that also returned exact final duplicates; merge integrity remains healthy and the blocker is source/canonical saturation rather than safe-write failure.",
-  "corrective_actions": "Continue fresh discovery first and rotate region, industry, query family and job board because duplicate rate is above 50%. Preserve strict legal/scale/signal/LPR/contact gates and targeted pre-dedup. Safe-write remains non-blocking and new_discovery_allowed remains true.",
+  "diagnosis": "Fresh discovery after required source/region/query rotation produced ООО «ОМСКОЕ ПРОДОВОЛЬСТВИЕ» with exact active Russian private legal entity, strict 2025 scale, dated direct S1 commercial signal, current CEO/LPR, official brand-to-legal linkage and published practical corporate contacts. A complete atomic increment group was written. Authoritative repo-side final dedup returned DEDUP_NOOP on exact INN 5507244388 and OGRN 1135543057330, so the candidate is not counted as net_new. Earlier fresh runs 1618 and 1619 in the same automation cycle also reached evidence-ready and returned exact final duplicates. Merge integrity remains healthy; the active blocker is source/canonical saturation rather than safe-write failure.",
+  "corrective_actions": "Continue fresh discovery first and rotate region, industry, query family and job board because duplicate rate remains above 50%. Preserve strict legal/scale/signal/LPR/contact gates and targeted pre-dedup. Candidates КВАЗАР-ГРУПП and Завод ЖБИ Беротек were subsequently fail-closed on scale rather than written. Safe-write remains non-blocking and new_discovery_allowed remains true.",
   "integrity": "PASS",
   "orphan_contacts": 0,
   "orphan_evidence": 0,
